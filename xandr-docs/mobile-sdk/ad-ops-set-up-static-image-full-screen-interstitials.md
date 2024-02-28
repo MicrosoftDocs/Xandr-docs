@@ -11,22 +11,23 @@ This page has Ad Ops setup instructions for serving static image "full-screen" i
 
 For developer-focused interstitial documentation, see [Show Interstitials](show-interstitials-ads-on-ios.md).
 
-## Creative settings
+## [Creative settings](#tab/creative-settings)
 
 To set up your creative, first create a creative and then configure the settings listed below:
 
 1. Under **Creative Content**, choose to **Upload a file**.
-2. Choose a **Media Type** of **Interstitial: Interstitial**.
-3. In the **Template** field, choose **Xandr: Mobile SDK Static Images** (ID 38934).
-4. If you have a landscape image you want to traffic when the user changes the orientation of their device, you can add it in the **Template** tab.
+1. Choose a **Media Type** of **Interstitial: Interstitial**.
+1. In the **Template** field, choose **Xandr: Mobile SDK Static Images** (ID 38934).
+1. If you have a landscape image you want to traffic when the user changes the orientation of their device, you can add it in the **Template** tab.
 
 :::image type="content" source="media/ad-ops-set-up-static-image.png" alt-text="A screenshot of the Template tab with the Template Option Details settings.":::
 
-## Placement settings
+## [Placement settings](#tab/placement-settings)
 
-To set up your placement, 
-1. create a placement
-2. configure the settings listed below:
+To set up your placement,
+
+1. Create a placement
+1. Configure the settings listed below.
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 

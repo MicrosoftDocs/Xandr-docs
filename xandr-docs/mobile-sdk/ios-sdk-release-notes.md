@@ -10,11 +10,21 @@ ms.date: 10/28/2023
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 8.11.0
+
+### Announcement
+
+This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will be our next major release. As previously announced, we will discontinue the practice of releasing source code updates for iOS and Android Mobile SDKs on Github. It's important to note that this is not a deprecation of our SDKs; rather, it pertains to the open-source aspect as we transition our Android and iOS Mobile SDKs to private repositories. There will be no disruptive changes from v8.x to v9.0, although it's worth noting that any future functional enhancements will be exclusively developed within the v9.x series.
+
+### New feature
+
+6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-android.md)
+
 ## 8.10.0
 
 ### New feature
 
-- 6029394: Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage).
+- 6029394 - Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage).
 
 ### Improvement/Bug fixes
 

@@ -1,22 +1,18 @@
 ---
 title: Microsoft Monetize - Mobile Carrier Codes
-description: This page gives a list of Mobile Carrier Codes. 
+description: This page gives a list of Mobile Carrier Codes sorted by country.  
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Mobile carrier codes
 
-In order to debug mobile auctions effectively, you will have to spoof
-the `carrier` parameter in a debug auction on our [Mobile Ad Call Reference](mobile-ad-call-reference.md)
-. This will simulate that an impression is coming from a
-certain telecommunications carrier.
+In order to debug mobile auctions effectively, you will have to spoof the `carrier` parameter in a debug auction on our [Mobile Ad Call Reference](mobile-ad-call-reference.md). This will simulate that an impression is coming from a certain telecommunications carrier.
 
-The following table provides a list of carrier codes sorted by country
-for your convenience.
+The following table provides a list of carrier codes sorted by country for your convenience.
 
 | Code | Name |
-|---|---|
+|--|--|
 | carrier-252 | 2degrees-NZ |
 | carrier-153 | 3-AT |
 | carrier-150 | 3-AU |

@@ -1,6 +1,6 @@
 ---
 title: Floor Rule
-description: Learn what are Floor Rules and how they enables you to view the floors with the biggest impacting blocks and how much this is changing week over week.
+description: Learn what are Floor Rules and how they enable you to view the floors with the biggest impacting blocks and how much this is changing week over week.
 ms.date: 10/28/2023
 ---
 
@@ -10,22 +10,17 @@ ms.date: 10/28/2023
 > [!NOTE]
 > This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
-A floor can be thought of as the minimum price a network or publisher
-would like to receive for a creative. Floor Rule name is the name
-configured for the Yield Management floor that caused the block. Drill
-down of this feature shows the impact on specific buyers.
+A floor can be thought of as the minimum price a network or publisher would like to receive for a creative. Floor Rule name is the name configured for the Yield Management floor that caused the block. Drill down of this feature shows the impact on specific buyers.
 
 > [!NOTE]
 > We recommend reviewing floors (at least quarterly) so that they are set at parity with other SSP platforms for the same supply.
 
 ## Filter
 
-Clicking on **Filter** next to
-**Floor Rules** opens a small window
-with the following fields:
+Clicking on **Filter** next to **Floor Rules** opens a small window with the following fields:
 
 | Filter | Description |
-|---|---|
+|--|--|
 | Floor rule | Minimum price a network or publisher like to receive for a creative. |
 | Media type | Native, Banner or Video creative |
 | Placement Group | Is part of the inventory structure and can be used to group placements within a publisher. |
@@ -34,45 +29,33 @@ with the following fields:
 Steps to make changes in the graph and the table that follows it:
 
 1. The filter has features specific to Floor Rules.
-1. Clicking on **Apply** updates the
-    graph and the table that appears after that.
-1. The graph is configurable so you can choose what you want to plot on
-    the graph, whether it is Blocked Bid Value, Error Count or Avg CPM.
-1. You can group the data on the basis of Publisher, Floor Rule, Media
-    type or Placement group.
-1. You can also select how you want the graph to be displayed whether
-    as a Bar chart or a time series Area chart.
-1. Hovering on the chart will give you information on the chart at that
-    position.
-1. The chart helps you quickly examine issues in aggregate to decide
-    where to focus.
+1. Clicking on **Apply** updates the graph and the table that appears after that.
+1. The graph is configurable so you can choose what you want to plot on the graph, whether it is Blocked Bid Value, Error Count or Avg CPM.
+1. You can group the data on the basis of Publisher, Floor Rule, Media type or Placement group.
+1. You can also select how you want the graph to be displayed whether as a Bar chart or a time series Area chart.
+1. Hovering on the chart will give you information on the chart at that position.
+1. The chart helps you quickly examine issues in aggregate to decide where to focus.
 
 ## The floor rules chart
 
-The chart enables comparison by floor along with other general
-dimensions seen in ad quality.
+The chart enables comparison by floor along with other general dimensions seen in ad quality.
 
 ## Overview
 
-There are three dropdowns under
-**Overview**. Selection in these
-dropdowns will decide the appearance of the chart.
+There are three dropdowns under **Overview**. Selection in these dropdowns will decide the appearance of the chart.
 
 | Dropdown | Description |
-|---|---|
+|--|--|
 | Compare relative scale and observe trends | View as Bar chart to compare how the metrics compare between the grouping you have selected. You can view as Area chart to see how the groupings changed over time. It specifies if there are spikes or consistent behaviour. |
 | How you want the data grouped | Focuses on how you want the data to be grouped. Grouping can be done on the basis of Publisher, Floor Rule, Media type or Placement group. |
 | Which metric is of interest | To get the metric of interest, choose between Blocked Bid value, Error Count and Avg CPM. |
 
 ## Floor rules
 
-**Floor Rules** enables you to view
-the floors with the biggest impacting blocks and how much this is
-changing week over week. The **Floor
-Rules** table have columns listed in the table below:
+**Floor Rules** enables you to view the floors with the biggest impacting blocks and how much this is changing week over week. The **Floor Rules** table have columns listed in the table below:
 
 | Field | Description |
-|---|---|
+|--|--|
 | % Δ Blocked Bid Value | The percentage change in the total value of blocked bids over the selected time range. |
 | Avg CPM | The average [CPM](../industry-reference/online-advertising-and-ad-tech-glossary.md#cpm) of the bid rejections. |
 | Blocked Bid Value | The total value of blocked bids within the selected time range. |
@@ -87,17 +70,12 @@ Rules** table have columns listed in the table below:
 
 ## Floor rule information
 
-**Floor Rule Information** enables you
-to view the settings for this floor rule.
+**Floor Rule Information** enables you to view the settings for this floor rule.
 
 ## History chart
 
-**History chart** enables you to
-visualize the trends for Blocked Bid Value, Error Count and CPM.
+**History chart** enables you to visualize the trends for Blocked Bid Value, Error Count and CPM.
 
 ## Buyers table
 
-**Buyers table** tells you who are the
-buyers most impacted by these blocks. It shows if there is an
-opportunity to speak with buyers and offer deals with more guided
-pricing terms.
+**Buyers table** tells you who are the buyers most impacted by these blocks. It shows if there is an opportunity to speak with buyers and offer deals with more guided pricing terms.

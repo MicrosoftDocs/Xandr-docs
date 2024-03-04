@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Microsoft Identity Platform Login
-description: Learn how to authenticate users for Microsoft Advertising Advertising Products using Microsoft Identity Platform. 
+description: In this page, learn how to authenticate users for Microsoft Advertising Advertising Products using Microsoft Identity Platform and what are the benefits of doing this.
 ms.date: 10/28/2023
 ---
 

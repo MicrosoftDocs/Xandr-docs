@@ -1,29 +1,20 @@
 ---
 title: Microsoft Monetize - Seller Site Domain Report
-description: In this page learn what the Seller Site Domain Report is and what information it provides to the Sellers.
+description: This page is an overview on Seller Site Domain Report. Learn how you can use this report to see what kind of web or mobile app inventory is coming through a publisher, guarantee inventory quality and understand business impact.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Seller site domain report
 
-The **Seller Site Domain** report is designed to give sellers
-information about what kind of web and mobile app inventory is coming
-through a publisher. For example, as a seller, you might distribute
-placement tags to your publishers and then want to verify that those
-tags are running on the inventory you intended. In addition, this report
-allows you to:
+The **Seller Site Domain** report is designed to give sellers information about what kind of web and mobile app inventory is coming through a publisher. For example, as a seller, you might distribute placement tags to your publishers and then want to verify that those tags are running on the inventory you intended. In addition, this report allows you to:
 
-- See what kind of web or mobile app inventory is coming through a
-  publisher so you can understand how to value it
+- See what kind of web or mobile app inventory is coming through a publisher so you can understand how to value it
 - Guarantee a certain degree of inventory quality to managed buyers
 - Optimize on domains or mobile application ID for managed campaigns
-- Understand the business impact of Microsoft Advertising audit
-  and categorization
+- Understand the business impact of Microsoft Advertising audit and categorization
 
-**Available to Members and Publishers:** This page describes both the
-member-level version **and** the publisher version; they are essentially
-the same.
+**Available to Members and Publishers:** This page describes both the member-level version **and** the publisher version; they are essentially the same.
 
 ## Time frame
 
@@ -31,8 +22,7 @@ All dates and times are given in UTC.
 
 **Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
 
@@ -61,15 +51,12 @@ However, all time ranges are not available for every report.
 
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the
-report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Currency 2.0
 
@@ -79,7 +66,7 @@ for reports. However, all intervals are not available for every report.
 ## Dimensions
 
 | Name | Description |
-|---|---|
+|--|--|
 | Age | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
 | Audit Type | The type of audit performed on the domain where the impression occurred. Possible values:<br> - `"By Seller"`: The domain was self-audited.<br> - `"By AppNexus"`: The domain was audited by AppNexus.<br> - `"By Seller & AppNexus"`: The domain was audited by both the seller and AppNexus.<br> - `"Unknown Audit Type"`: This usually means that the domain is unaudited. In some cases, this means that the domain was not auditable for technical reasons. |
 | Content Category | The name and ID of the universal content category associated with this site or placement. For more information about content categories, see [Content Categories](content-categories.md). |
@@ -102,7 +89,7 @@ for reports. However, all intervals are not available for every report.
 ## Filters
 
 | Name | Description |
-|---|---|
+|--|--|
 | Age | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
 | Audit Type | The type of audit performed on the domain where the impression occurred. Possible values:<br> - `"By Seller"`: The domain was self-audited.<br> - `"By AppNexus"`: The domain was audited by AppNexus.<br> - `"By Seller & AppNexus"`: The domain was audited by both the seller and AppNexus.<br> - `"Unknown Audit Type"`: This usually means that the domain is unaudited. In some cases, this means that the domain was not auditable for technical reasons. |
 | Content Category | The universal content category associated with this site or placement. For more information about content categories, see [Content Categories](content-categories.md). |
@@ -126,7 +113,7 @@ for reports. However, all intervals are not available for every report.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|---|---|
+|--|--|
 | Clicks | The number of clicks coming through this site or placement. |
 | Filtered Request | The total number of impressions which have been filtered out by Microsoft Advertising Inventory Quality (e.g. from a blocklisted domain, IP, etc.). |
 | Imps | The number of impressions coming through this site or placement. |
@@ -139,28 +126,14 @@ for reports. However, all intervals are not available for every report.
 
 ## Passing domains across iFrames
 
-Serving ads inside of iFrames is preferred by publishers for a number of
-reasons, to include:
+Serving ads inside of iFrames is preferred by publishers for a number of reasons, to include:
 
-- Increased Security: For security reasons, communication between
-  iFrames serving from different domains is prohibited by the browser.
-  This is known as the "Same Origin Policy". For more information, see 
-  the W3C's [Same Origin Policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) page.
-- Page Load Speed: Page load speed is guaranteed to be unaffected by
-  advertisements inside iFrames because iFrames allow asynchronous
-  loading of both page content and advertisements. This ensures that the
-  user does not have to wait for the rest of the page to load in the
-  event that serving an advertisement happens more slowly than expected.
+- Increased Security: For security reasons, communication between iFrames serving from different domains is prohibited by the browser. This is known as the "Same Origin Policy". For more information, see the W3C's [Same Origin Policy](https://www.w3.org/Security/wiki/Same_Origin_Policy) page.
+- Page Load Speed: Page load speed is guaranteed to be unaffected by advertisements inside iFrames because iFrames allow asynchronous loading of both page content and advertisements. This ensures that the user does not have to wait for the rest of the page to load in the event that serving an advertisement happens more slowly than expected.
 
-For these and other reasons, some networks provide their publishers with
-an iFrame in which to display advertisements. If this iFrame delivers
-its contents from the network's domain and not the publisher's, it can
-lead to difficulties in determining the domain on which an impression
-actually occurred.
+For these and other reasons, some networks provide their publishers with an iFrame in which to display advertisements. If this iFrame delivers its contents from the network's domain and not the publisher's, it can lead to difficulties in determining the domain on which an impression actually occurred.
 
-For example, a publisher is given a snippet of HTML code to put on their
-pages that includes an iFrame referencing a network's domain,
-`best-network.net`:
+For example, a publisher is given a snippet of HTML code to put on their pages that includes an iFrame referencing a network's domain, `best-network.net`:
 
 ``` 
             <!-- Publisher's Web Page -->
@@ -173,74 +146,35 @@ pages that includes an iFrame referencing a network's domain,
          
 ```
 
-The iFrame is located on the publisher's web page, but it is serving its
-contents from the network's domain. Because the page and the iFrame are
-hosted on different domains, the security restrictions of the "Same
-Origin Policy" apply, and communication between the publisher's page and
-the network's iFrame is forbidden. Therefore the network is unable to
-determine the actual domain of the publisher's page. As a result, the
-network passes along its own domain as the referring URL to the
-placement.
+The iFrame is located on the publisher's web page, but it is serving its contents from the network's domain. Because the page and the iFrame are hosted on different domains, the security restrictions of the "Same Origin Policy" apply, and communication between the publisher's page and the network's iFrame is forbidden. Therefore the network is unable to determine the actual domain of the publisher's page. As a result, the network passes along its own domain as the referring URL to the placement.
 
 ## To run your report
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1.  Or, from the Publishers top menu, click on **Prebid Server Premium** \>**Analytics** \> **Prebid Server Analytics**.
-1. Select the relevant report from the list. The
-    **Report** screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium** \>**Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    **Edit**), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    **Add** to include them in the
-    **Chosen** list (right).
-1. Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
-    
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
+
     > [!WARNING]
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
-      
-    - **Export, send results via email**: Run the report in the background and email the results to
-      one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      **Name this report** (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the **Your Reports**
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
+
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
 ## Related topics

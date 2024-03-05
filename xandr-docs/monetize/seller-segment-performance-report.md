@@ -1,28 +1,19 @@
 ---
 title: Microsoft Monetize - Seller Segment Performance Report
-description: Learn about Seller Segment Performance Report and how this report helps sellers.
+description: Learn how Seller Segment Performance Report helps sellers by providing data on the usage per segment, performance per segment and facilitating data clearing.  
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Seller segment performance report
 
-The **Seller Segment Performance Report** provides sellers insights into
-how their targeted segments are contributing to the overall performance
-of their line items. The report provides data on all targeted segments
-(includes and excludes) that contributed towards transacted impressions.
+The **Seller Segment Performance Report** provides sellers insights into how their targeted segments are contributing to the overall performance of their line items. The report provides data on all targeted segments (includes and excludes) that contributed towards transacted impressions.
 
 This reporting helps sellers in the following ways:
 
-- by providing data on the usage per segment, so they can understand how
-  often they used each segment and thus enable them to bill their data
-  providers and/or advertisers appropriately
-- by providing data of performance per segment, so they can analyze
-  which segments are performing well or not well and optimize
-  appropriately
-- facilitating data clearing, so that instead of them being responsible
-  for billing their data providers each month,
-  Microsoft Advertising can do it for them.
+- by providing data on the usage per segment, so they can understand how often they used each segment and thus enable them to bill their data providers and/or advertisers appropriately
+- by providing data of performance per segment, so they can analyze which segments are performing well or not well and optimize appropriately
+- facilitating data clearing, so that instead of them being responsible for billing their data providers each month, Microsoft Advertising can do it for them
 
 ## Time frame
 
@@ -30,8 +21,7 @@ All dates and times are given in UTC.
 
 **Time ranges**
 
-Time ranges define the time period of the data extracted for the report.
-The following is a complete list of time ranges available for reports.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
 
 However, all time ranges are not available for every report.
 
@@ -60,18 +50,14 @@ However, all time ranges are not available for every report.
 
 **Intervals**
 
-Intervals determine how your data is grouped together into rows in the
-report response. The following is a complete list of intervals available
-for reports. However, all intervals are not available for every report.
+Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-This report's data is retained for 100 days. The time granularity of the
-data is hourly.
+This report's data is retained for 100 days. The time granularity of the data is hourly.
 
 ## Currency 2.0
 
@@ -81,7 +67,7 @@ data is hourly.
 ## Dimensions
 
 | Column | Filter? | Description |
-|---|---|---|
+|--|--|--|
 | Bidder | Yes | The name and ID of the bidder associated with the impression, in the format "123.com (99000)". |
 | Buyer Member | Yes | The name and ID of the buyer who buys the impression, in the format "Accenture LLP (11100)" |
 | Country Code | No | The country code in which the impression took place. |
@@ -105,7 +91,7 @@ data is hourly.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Type | Example | Description |
-|---|---|---|---|
+|--|--|--|--|
 | Targeted Clicks | int | 5 | Aggregated clicks for a segment |
 | Targeted Conversions | int | 2 | Targeted conversions of a segment |
 | Targeted Impressions | int | 12 | Aggregated impressions for a segment |
@@ -120,63 +106,29 @@ data is hourly.
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1. Or, from the Publishers top menu, click on
-        **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
-1. Select the relevant report from the list. The
-    **Report** screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    **Edit**), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    **Add** to include them in the
-    **Chosen** list (right).
-1. Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
-
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
-      
-    - **Export, send results via email**: Run the report in the background and email the results to
-      one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      **Name this report** (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the **Your Reports**
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
+
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
 ## Related topics

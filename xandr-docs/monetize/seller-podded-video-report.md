@@ -34,8 +34,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - Last Month
 - Quarter to Date
 
-To run a report for a custom time frame, set the `Start Date` and `End Date` fields in your report request. For more details about these
-fields, see [Report Service](../bidders/report-service.md).
+To run a report for a custom time frame, set the `Start Date` and `End Date` fields in your report request. For more details about these fields, see [Report Service](../bidders/report-service.md).
 
 > [!NOTE]
 > The timestamp this report uses is the hour that Microsoft Advertising received the ad request for the pod. It means that if a pod was requested at hour 05 and impressions rendered at hour 07, then the pod count, impressions, and video events will report together at hour 05. It means pods that playback cross-hour boundaries are reported in the same hour, and it ensures metrics such as impressions per pod are calculated accurately on pre-cached integrations.
@@ -44,10 +43,10 @@ fields, see [Report Service](../bidders/report-service.md).
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
-- Hourly: Data is grouped into rows by the hour.
-- Daily: Data is grouped into rows by the day.
-- Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
+- **Hourly**: Data is grouped into rows by the hour.
+- **Daily**: Data is grouped into rows by the day.
+- **Monthly**: Data is grouped into rows by the month.
+- **Cumulative**: Data is grouped together in one figure, covering the entire selected time range.
 
 ## Data retention period
 
@@ -56,7 +55,7 @@ This report's data is retained for 420 days. For more information about how quic
 ## Dimensions
 
 | Column | Type | Filter? | Example | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Advertiser Default Currency | String | No | `EUR` | The default currency of the advertiser in this impression. This dimension is available only when Currency 2.0 is disabled. |
 | Advertiser Default Exchange Rate | Numeric | No |  |  |
 | Application | String | Yes |  | The application name |
@@ -107,7 +106,7 @@ This report's data is retained for 420 days. For more information about how quic
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Type | Example | Formula | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Booked Revenue Dollars | money | 578.98 | `booked_revenue_dollars` | The revenue generated from managed line items. |
 | Clicks | int | 3445 | `clicks` | The number of clicks recorded. For video we record clicks from Microsoft Advertising Invest and external DSPs. |
 | Completion rate | double | 0.85 | `video_completions / impressions` | The number of impressions that resulted in a completion. |
@@ -160,9 +159,7 @@ This report's data is retained for 420 days. For more information about how quic
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-   <br>Or<br> 
-   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 1. Select the relevant **report** from the list. The Report screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]

@@ -7,9 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Identifiers - Distinct ID report
 
-Platform Reporting on Industry IDs provides an insight into the delivery, performance and unique reach across Industry IDs (RampID,
-NetID, UID2) alongside device based IDs. The Identifiers-Distinct IDs Report allows you to understand the total number of uniques by UID2,
-RampID, No cookies, and Cookies/Device IDs.
+Platform Reporting on Industry IDs provides an insight into the delivery, performance and unique reach across Industry IDs (RampID, NetID, UID2) alongside device based IDs. The Identifiers-Distinct IDs Report allows you to understand the total number of uniques by UID2, RampID, No cookies, and Cookies/Device IDs.
 
 You can use the report to determine the following:
 
@@ -32,8 +30,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - quarter_to_date
 - lifetime
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these
-fields, see [Report Service](report-service.md).
+To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Data retention period
 
@@ -170,8 +167,7 @@ $ curl -b cookie -c cookie -s -d  @identity_reporting_distinct "https://api.appn
 
 ### Retrieve the status of the report
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookie -c cookie -s "https://api.appnexus.com/report?id=42fcca4a9bb1ad00a477374e64e2bf88"

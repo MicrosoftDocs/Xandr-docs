@@ -12,9 +12,7 @@ ms.custom: digital-platform-api
 >
 > This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
-The Instant Audience Service is a server-side method that uses a streaming architecture to add individual or small groups of users to
-segments, via the Digital Platform API. Rather than aggregating and periodically sending large batches of data using the Batch Segment
-Service, the Instant Audience Service associates' users to segments in close to real-time. Our target SLA for adding users to segments with this service is 2 minutes. This is useful if you have real-time audience remodeling requirements.
+The Instant Audience Service is a server-side method that uses a streaming architecture to add individual or small groups of users to segments, via the Digital Platform API. Rather than aggregating and periodically sending large batches of data using the Batch Segment Service, the Instant Audience Service associates' users to segments in close to real-time. Our target SLA for adding users to segments with this service is 2 minutes. This is useful if you have real-time audience remodeling requirements.
 
 ## Configure the service
 
@@ -30,7 +28,7 @@ If you're already using the Batch Segment Service, you can skip this part and pr
 
 ## Authenticate
 
-Refer to the [Authentication Service](authentication-service.md) for a general overview on how to make calls to the Xandr API. Just like any other service, you'll authenticate against [https://api.appnexus.com](https://api.appnexus.com./). However, subsequent calls will be made to the Instant Audience Service at [https://streaming-data.appnexus.com](https://streaming-data.appnexus.com/).
+Refer to the [Authentication Service](authentication-service.md) for a general overview on how to make calls to the Xandr API. Just like any other service, you'll authenticate against `https://api.appnexus.com`. However, subsequent calls will be made to the Instant Audience Service at `https://streaming-data.appnexus.com`.
 
 > [!NOTE]
 > In the authentication response, make note of the token as it will be needed for subsequent calls to the Instant Audience Service.
@@ -51,36 +49,36 @@ Example response from the Authentication Service:
 
 The token returned in the response must be included in subsequent calls to the Instant Audience Service in the authorization header or as an `access_token` query string parameter, as shown in the following examples:
 
-**Authorization header**
+### Authorization header
 
 ```
 curl -X POST -H "Authorization: hbapi:123456:9876abcd54321:nym2" https://streaming-data.appnexus.com/rt-segment
 ```
 
-**Query string**
+### Query string
 
 ```
 curl -X POST https://streaming-data.appnexus.com/rt-segment?access_token=hbapi:123456:9876abcd54321:nym2
 ```
 
-## Adding/removing users from segments
+## Add/remove users from segments
 
 After authenticating, you're now ready to add/remove a user to/from a segment, via a JSON file.
 
 > [!NOTE]
 > Be sure to wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to minimize the creation of new segments, re-use existing segments where possible or use segment `values`to further sub-divide users within existing segments. These practices will ensure successful user add/remove to/from segments. For details on creating segment `values`, see [Segment Pixels: Advanced](../monetize/segment-pixels-advanced.md) and [Segment Targeting](../monetize/segment-targeting.md) in the UI documentation.
 
-The following example demonstrates how to assign a user to two segments. In this example, the member is adding user ID 12345678900987654321 (this is a Xandr user id) to segments 10001 and 10002, setting both associations with value = 1 and expiration within 1440 minutes.
+The following example demonstrates how to assign a user to two segments. In this example, the member is adding user ID 12345678900987654321 (this is a Xandr user ID) to segments 10001 and 10002, setting both associations with value = 1 and expiration within 1440 minutes.
 
-**Example on how to assign a user to two segments**
+### Example on how to assign a user to two segments
 
-**API call**
+#### API call
 
 ```
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON payload**
+#### JSON payload
 
 ```
 {
@@ -109,7 +107,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 }
 ```
 
-**Response**
+#### Response
 
 ```
 {
@@ -155,15 +153,15 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 
 ### Additional `POST` scenarios
 
-**Using device ID (IDFA)**
+#### Using device ID (IDFA)
 
-**REST API call**
+##### REST API call (IDFA)
 
 ```
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON payload**
+##### JSON payload (IDFA)
 
 ```
 {
@@ -192,7 +190,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 }
 ```
 
-**Response**
+##### Response (IDFA)
 
 ```
 {
@@ -208,15 +206,15 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 }
 ```
 
-**Using codes for other members**
+#### Using codes for other members
 
-**REST API call**
+##### REST API call
 
 ```
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON payload**
+##### JSON payload codes for other members
 
 ```
 {
@@ -241,7 +239,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 }
 ```
 
-**Response**
+##### Response codes for other members
 
 ```
 {
@@ -262,21 +260,21 @@ In order to adhere to a maximum of two minutes activation time, the Instant Audi
 
 | Limit Type  | Description |
 |---|---|
-| **Call Rate** | Up to 100 `POST` calls per second (per member) and up to 1000 `GET` calls per second (per member). If you exceed this rate limit, the following message will be returned: *"Rate limit exceeded. You have exceeded your request limit of 1000 reads per 1 seconds to rt-segment-processed, please wait and try again or contact Xandr for higher limits"*. |
+| **Call Rate** | Up to 100 `POST` calls per second (per member) and up to 1000 `GET` calls per second (per member). If you exceed this rate limit, the following message will be returned: *"Rate limit exceeded. You have exceeded your request limit of 1000 reads per 1 seconds to rt-segment-processed, wait and try again or contact Xandr for higher limits"*. |
 | **Objects** | - Up to 1000 users per second.<br> - Up to 100 segments per user per call. |
 | **Payload Size** | The JSON payload should not exceed 1MB. |
 
 ## Examples error scenarios
 
-### Adding/removing over 1000 users in a request
+### Add/remove over 1000 users in a request
 
-**API call**
+#### API call to add or remove over 1000 users in a request
 
 ```
 curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_users.json "https://streaming-data.appnexus.com/rt-segment"
 ```
 
-**JSON payload**
+#### JSON payload for 1000 users in a request
 
 ```
 {
@@ -305,7 +303,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 }
 ```
 
-**Response**
+#### Response for 1000 users in a request
 
 ```
 {
@@ -346,7 +344,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 
 ### `seg_id` or `seg_code` and `member_id` are not provided
 
-**JSON payload**
+#### JSON payload (`seg_id`/`seg_code` and `member_id` error scenario)
 
 ```
 {
@@ -368,7 +366,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 }
 ```
 
-**Response**
+#### Response (`seg_id`/`seg_code` and `member_id` error scenario)
 
 ```
 {
@@ -420,7 +418,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 
 ### `seg_block` not provided
 
-**JSON payload**
+#### JSON payload (`seg_block` error scenario)
 
 ```
 {
@@ -433,7 +431,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 }
 ```
 
-**Response**
+#### Response (`seg_block` error scenario)
 
 ```
 {
@@ -465,7 +463,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 
 ### `user_id` is empty
 
-**JSON payload**
+#### JSON payload (`user_id` error scenario)
 
 ```
 {
@@ -486,7 +484,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/1002_use
 }
 ```
 
-**Response**
+#### Response (`user_id` error scenario)
 
 ```
 {

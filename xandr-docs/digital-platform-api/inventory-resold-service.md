@@ -7,11 +7,10 @@ ms.custom: digital-platform-api
 
 # Inventory Resold service
 
-This read-only service allows you to view inventory that has been <u>exposed</u> for resale by networks on the platform. This includes
-inventory exposed by your network and other networks.
+This read-only service allows you to view inventory that has been exposed for resale by networks on the platform. This includes inventory exposed by your network and other networks.
 
-- To <u>enable</u> your inventory for resale, use the [Site Service](site-service.md).
-- To <u>expose</u> your inventory for resale:
+- To enable your inventory for resale, use the [Site Service](site-service.md).
+- To expose your inventory for resale:
   - For inventory categories, use the [Visibility Profile Service](visibility-profile-service.md).
   - For publishers, use the [Publisher Service](publisher-service.md).
   - For whole networks, use the [Member Service](member-service.md).
@@ -46,7 +45,7 @@ inventory exposed by your network and other networks.
 
 ## Examples
 
-### Viewing all publishers, content categories, and members exposed for resale
+### View all publishers, content categories, and members exposed for resale
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-resold'
@@ -265,7 +264,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-resold'
 }
 ```
 
-### Viewing all content categories exposed for resale
+### View all content categories exposed for resale
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/inventory-source?type=content_category&category_type=standard'

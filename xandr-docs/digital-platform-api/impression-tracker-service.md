@@ -12,20 +12,20 @@ The Impression Tracker Service gives you a way to track impressions for creative
 Here's how it works:
 
 1. You use the Impression Tracker Service to create an impression tracker. The impression tracker specifies the line item and publisher to which it is associated. Optionally, it can include the specific placement or payment rule to which it is associated.
-1. You create an image or JavaScript tag with the url to the impression tracker and ask the ad server to use it as a piggyback pixel for the creative. The impression tracker url must be formatted as [https://ib.adnxs.com/imptr?id=12345&t=2](https://ib.adnxs.com/imptr?id=12345), where 12345 is the impression tracker ID and "t" represents the pixel type (where t=1 is for javascript and t=2 is for image).
-1. When the ad server serves the creative, the tracker calls [ib.adnxs.com](https://ib.adnxs.com/), and AppNexus records the impression.
+1. You create an image or JavaScript tag with the URL to the impression tracker and ask the ad server to use it as a piggyback pixel for the creative. The impression tracker URL must be formatted as [https://ib.adnxs.com/imptr?id=12345&t=2](https://ib.adnxs.com/imptr?id=12345), where 12345 is the impression tracker ID and "t" represents the pixel type (where t=1 is for javascript and t=2 is for image).
+1. When the ad server serves the creative, the tracker calls `ib.adnxs.com`, and AppNexus records the impression.
 
-**Query string parameters**
+## Query string parameters
 
-The following parameters can be passed to AppNexus in the query string of the impression tracker url:
+The following parameters can be passed to AppNexus in the query string of the impression tracker URL:
 
 | Parameter | Description |
 |:---|:---|
-| `cachebuster` | Prevents the user's browser from caching the impression tracker url. This parameter can be populated by the third-party ad server. |
+| `cachebuster` | Prevents the user's browser from caching the impression tracker URL. This parameter can be populated by the third-party ad server. |
 | `ancost` | The media cost you paid for the impression. The parameter can be populated by the third-party ad server. |
 | `redir` | The redirect URL that AppNexus will redirect to once the impression has been recorded. |
 
-**Image tag example**
+### Image tag example
 
 ```
 <!-- Imp Tracker - Test Impression Tracker - DO NOT MODIFY -->
@@ -33,7 +33,7 @@ The following parameters can be passed to AppNexus in the query string of the im
 <!-- End of Imp Tracker -->
 ```
 
-**JavaScript tag example**
+### JavaScript tag example
 
 ```
 <!-- Imp Tracker - Test Impression Tracker - DO NOT MODIFY -->
@@ -41,7 +41,7 @@ The following parameters can be passed to AppNexus in the query string of the im
 <!-- End of Imp Tracker -->
 ```
 
-**Reporting**
+## Reporting
 
 You can report on your external impressions using the [Network Analytics](network-analytics.md), [Network Publisher Analytics](network-publisher-analytics.md), and [Publisher Analytics](publisher-analytics.md) reports.
 
@@ -110,7 +110,7 @@ You can use the [Line Item Service](line-item-service.md) to get information abo
 
 ## Examples
 
-### Creating a new impression tracker
+### Create a new impression tracker
 
 ```
 $ cat imptracker
@@ -159,7 +159,7 @@ $ curl -b cookies -c cookies -X POST -d @imptracker 'https://api.appnexus.com/im
 }
 ```
 
-### Updating an impression tracker
+### Update an impression tracker
 
 In this example, the `PUT` request associates a placement to impression tracker 1425.
 
@@ -208,7 +208,7 @@ $ curl -b cookies -c cookies -X PUT -d @imptracker_update 'https://api.appnexus.
 }
 ```
 
-### Viewing impression tracker 582
+### View impression tracker 582
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?id=582'
@@ -242,7 +242,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?id=582'
 }
 ```
 
-### Viewing all impression trackers for advertiser 35081
+### View all impression trackers for advertiser 35081
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/imptracker?advertiser_id=35081'

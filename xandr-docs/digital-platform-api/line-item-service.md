@@ -10,9 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This page describes the Line Item Service for standard (legacy) line items. If you use Augmented Line Items, see [Line Item Service - ALI](line-item-service---ali.md) instead.
 
-The line items under an insertion order represent the agreed upon strategies you will be executing for the advertiser. After setting up a
-line item and optionally (depending on whether the advertiser uses insertion orders) associating it to one or more insertion orders, you
-can create campaigns to specify how to spend the money to fulfill your agreement. Line items are where you will record "booked revenue" using the `revenue_type` and `revenue_value` fields, which describe the revenue type (CPM, CPA, etc.) and amount that you will be paid by your advertisers.
+The line items under an insertion order represent the agreed upon strategies you will be executing for the advertiser. After setting up a line item and optionally (depending on whether the advertiser uses insertion orders) associating it to one or more insertion orders, you can create campaigns to specify how to spend the money to fulfill your agreement. Line items are where you will record "booked revenue" using the `revenue_type` and `revenue_value` fields, which describe the revenue type (CPM, CPA, etc.) and amount that you will be paid by your advertisers.
 
 > [!NOTE]
 > Insertion orders will eventually be mandatory. Therefore, as a best practice, Xandr encourages you to begin using insertion orders as part of your API implementation.
@@ -30,8 +28,7 @@ Xandr suggests associating your line items with insertion orders to preserve his
 >   - Leave the `start_date` and `end_date` fields (and any budget or pacing related fields) on the top-level line item object level set to `null`.
 >   - Only associate seamless line items with seamless insertion orders.
 >
-> You should also use the budget and pacing related fields in the `budget_intervals` array to specify the budget available to the line
-> item during each budget interval and how the spending of that budget should be paced.
+> You should also use the budget and pacing related fields in the `budget_intervals` array to specify the budget available to the line item during each budget interval and how the spending of that budget should be paced.
 >
 > - To create a **non-seamless** line item, you must:
 >   - Use the budget and pacing related fields and the `start_date` and `end_date` fields on the main line item object to specify the dates during which the insertion order should run, what budget is available to it during those dates and how the spending of the budget should be paced.
@@ -40,7 +37,7 @@ Xandr suggests associating your line items with insertion orders to preserve his
 >
 > Seamless line items are the preferred model. You should use the seamless line item workflow when creating new line items. You cannot convert a non-seamless line item to seamless or link non-seamless line items to seamless insertion orders (or seamless lines items to non-seamless insertion orders).
 >
-> In the UI , API `budget_intervals` are referred to as "Billing Periods".
+> In the UI, API `budget_intervals` are referred to as "Billing Periods".
 >
 > **About Performance Goals**
 >
@@ -48,7 +45,7 @@ Xandr suggests associating your line items with insertion orders to preserve his
 >
 > To set performance goals for line items with `goal_type` `"cpa"`, use the `goal_pixels` array. This array contains information about performance goal targets and thresholds. To set performance goals for line items with the `goal_type` `"cpc"` or `"ctr"`, use the `valuation` object. This object contains the performance goal threshold, which determines the bid/no bid cutoff on optimized campaigns, and the performance goal target, which represents the desired clicks or click-through rate.
 >
-> To learn more about performance goals, see "[Understanding Performance Goals](../monetize/understanding-performance-goals.md)" in the UI documentation.
+> To learn more about performance goals, see [Understanding Performance Goals](../monetize/understanding-performance-goals.md) in the UI documentation.
 
 ## REST API
 
@@ -78,7 +75,7 @@ Xandr suggests associating your line items with insertion orders to preserve his
 | `timezone` | enum | The timezone by which budget and spend are counted. For details and accepted values, see [API Timezones](api-timezones.md).<br><br>**Note:**<br>Any `PUT` calls to the `advertiser` service which include `set_child_timezone=true` in the query string will cause any timezone settings on the lower level objects (e.g., insertion orders, line items, campaigns) to be overridden with the latest timezone value for that advertiser.<br><br>**Default:** "`EST5EDT"` or the advertiser's timezone. |
 | `discrepancy_pct` | double | **Deprecated.** |
 | `publishers_allowed` | string | Specifies the type of inventory to bid on with this line item. Possible values: `real_time` or `direct`. Real-time campaigns may target inventory that is exposed for RTB by other Xandr members or by our inventory supply partners. Direct campaigns may only target publisher inventory within your network. |
-| `revenue_value` | double | The amount paid to the network by the advertiser.<br><br>**Note:**<br>This field must be set under certain conditions, but may not be set in others. In addition to the `POST`/`PUT` requirements listed in the **Required On** column, please note the following:<br> - The field **may** be populated when `revenue_type` is `cpm`, `cpc`, `cpa`, `cost_plus_margin`, `cost_plus_cpm`, `est_cpm`. However, if the `revenue_type` is `"cpa"` this field will be ignored because revenue is tracked via `post_view_revenue` or `post_click_revenue` on the pixel.<br>- The field **may not** be populated when `revenue_type` is `"none"` or `"vcpm"`.<br><br>**Required On:**<br>`POST`/`PUT`, if `revenue_type` is `"cpc"`.<br>`POST`/`PUT`, if `revenue_type` is `"flat_fee"`.<br><br>**Note:** If `"flat_fee_type"` is `"daily"` this is the value paid out per day. If `"flat_fee_type"` is `"one_time"` this is the value paid out on the final allocation date. |
+| `revenue_value` | double | The amount paid to the network by the advertiser.<br><br>**Note:**<br>This field must be set under certain conditions, but may not be set in others. In addition to the `POST`/`PUT` requirements listed in the **Required On** column, note the following:<br> - The field **may** be populated when `revenue_type` is `cpm`, `cpc`, `cpa`, `cost_plus_margin`, `cost_plus_cpm`, `est_cpm`. However, if the `revenue_type` is `"cpa"` this field will be ignored because revenue is tracked via `post_view_revenue` or `post_click_revenue` on the pixel.<br>- The field **may not** be populated when `revenue_type` is `"none"` or `"vcpm"`.<br><br>**Required On:**<br>`POST`/`PUT`, if `revenue_type` is `"cpc"`.<br>`POST`/`PUT`, if `revenue_type` is `"flat_fee"`.<br><br>**Note:** If `"flat_fee_type"` is `"daily"` this is the value paid out per day. If `"flat_fee_type"` is `"one_time"` this is the value paid out on the final allocation date. |
 | `revenue_type` | enum | The way the advertiser has agreed to pay you. Possible values are listed below.<br><br>**Note:** If `post_view_revenue` or `post_click_revenue` is set for any pixel in the `pixels` array, `revenue_type` must be `"cpa"`.<br><br> The `revenue_type` cannot be set to a value that is incompatible with any of the line item's child campaigns.<br> - `"none"`: Do not track revenue for the line item.<br> - `"cpm"`: A flat payment per 1000 impressions.<br> - `"cpc"`: A flat payment per click.<br>- `"cpa"`: A flat payment per conversion.<br>- `"cost_plus_cpm"`: Media cost (what you spend on inventory) plus an extra CPM.<br>- `"cost_plus_margin"`: Media cost (what you spend on inventory) plus a percentage of what you spend.<br>- `"flat_fee"`: A flat payment that the advertiser will pay you on a specified allocation date. That date can be daily or at the end of the flight. If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable. Note that the flat fee will not be booked on the allocation date unless the line item has served at least 1 impression. If you define a `revenue_type` of `flat_fee` you must specify a value for `flat_fee_type`.<br> - `"vcpm"`: (Publisher Ad Server only) A flat payment per 1000 viewable impressions. For more information about viewability, see [Introduction to Viewability](../invest/introduction-to-viewability.md).<br>- `"est_cpm"`: The estimated flat payment per 1000 impressions.<br><br>**Default:** `"none"` |
 | `goal_type` | enum | For line items that make use of performance goals, the way that the advertiser would like to measure campaign optimization. <br>Possible values: `"none"`, `"cpc"`, `"cpa"`, or `"ctr"`.<br><br>**Default:** `"none"` |
 | `goal_value` | double | **Deprecated.** Use `valuation` object instead. For details, see [Valuation](#valuation) below. |
@@ -97,12 +94,12 @@ Xandr suggests associating your line items with insertion orders to preserve his
 | `flat_fee_type` | string | Flat fees can be paid out daily or on the flight end date. Available values are:<br> - `one_time`: The fee will be paid on the final allocation date. The associated `revenue_value` is the value to be paid on that date. The flight cannot be longer than one month.<br>- `daily`: The fee will be paid daily. The associated `revenue_value` is the daily fee, *not* the fee for the entire flight.<br>**Default:** `one_time`<br>**Required On:** `POST`/`PUT`, if `revenue_type` is `"flat_fee"`. |
 | `labels` | array | The optional labels applied to the line item. Currently, four labels are available: `"Trafficker"`, `"Sales Rep"`, and `"Campaign Type"`. For more details, see [Labels](#labels) below.<br><br>**Note:**<br>You can report on line item labels with the [Network Analytics](network-analytics.md) and [Network Advertiser Analytics](network-advertiser-analytics.md) reports. For example, if you use the `"Trafficker`" label to specify the name of the trafficker responsible for each line item, you could run the Network Analytics report filtered by `"trafficker_for_line_item"` to focus on the line items that a particular trafficker is responsible for, or grouped by `"trafficker_for_line_item"` to rank the performance of your traffickers. |
 | `broker_fees` | array | The commissions that the network must pass to brokers when serving an ad. These commissions are deducted from the booked revenue (the amount the network receives from the advertiser) and are typically for brokering a relationship with the advertiser. They can either be a percentage of the revenue or a flat CPM. For more details, see [Broker Fees](#broker-fees) below.<br><br>**Note:**<br>Broker fees at the line item level override broker fees at the insertion order level. |
-| `pixels` | array of objects | The conversion pixels being used for CPA revenue type. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, please speak with your Xandr Implementation Consultant or Support. <br>For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
+| `pixels` | array of objects | The conversion pixels being used for CPA revenue type. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, speak with your Xandr Implementation Consultant or Support. <br>For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
 | `insertion_orders` | array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](#insertion-orders) below.<br><br>**Note:**<br>Once a line item is associated with a seamless insertion order, it cannot be associated to a non-seamless insertion order. Only seamless insertion orders may be associated with seamless line items. Only non-seamless insertions orders may be associat4ed with non-seamless line items. |
 | `goal_pixels` | array | For a line item with the `goal_type` `"cpa"`, the pixels used for conversion tracking, as well as the post-view and post-click revenue. For more details, see [Goal Pixels](#goal-pixels) and the example below for a sample of the format. |
 | imptrackers | array of objects | The third-party impression trackers associated with the line item. For more details, see [Impression Tracker Service](impression-tracker-service.md).<br>**Read Only.** |
 | `clicktrackers` | array of objects | The third-party click trackers associated with the line item. For more details, see [Click Tracker Service](click-tracker-service.md).<br>**Read Only.** |
-| `campaigns` | array of objects | The campaigns that are associated with the line item. For more details, see [Campaigns](#campaigns) below.<br><br>**Note:**<br>To associate a campaign to a line item, use the `line_item_id` field in the [Campaign Service](campaign-service.md). Please note that no more than 500 campaigns can be associated to a single line item.<br>**Read Only.** |
+| `campaigns` | array of objects | The campaigns that are associated with the line item. For more details, see [Campaigns](#campaigns) below.<br><br>**Note:**<br>To associate a campaign to a line item, use the `line_item_id` field in the [Campaign Service](campaign-service.md). Note that no more than 500 campaigns can be associated to a single line item.<br>**Read Only.** |
 | `valuation` | object | For a line item with the `goal_type` `"cpc"` or `"ctr"`, the performance goal threshold, which determines the bid/no bid cutoff on optimized campaigns, and the performance goal target, which represents the desired clicks or click-through rate. For more details, see [Valuation](#valuation) below. |
 | `creatives` | array of objects | The creatives that are associated with the line item. For more details, see [Creatives](#creatives) below. |
 | `budget_intervals` | array of objects | **Note:**<br>This array is only relevant to and required for seamless line items (if the line item is non-seamless, leave this field set to `null`).<br><br>Budget intervals enable multiple date intervals to be attached to a line item, each with corresponding budget values. For more details, see [Budget Intervals](#budget-intervals) below.<br><br>**Note:**<br>If you use `budget_intervals`, the following fields should not be used on the `line-item` object:<br> - `lifetime_pacing`<br>- `lifetime_budget`<br> - `lifetime_budget_imps`<br> - `enable_pacing`<br> - `lifetime_pacing_span`<br> - `allow_safety_pacing`<br> - `daily_budget`<br> - `daily_budget_imps`<br> - `lifetime_pacing_pct` |
@@ -154,8 +151,7 @@ You can use the read-only [Label Service](label-service.md) to view all possible
 
 ### Broker fees
 
-When a network uses a broker to serve an impression, it pays a fee to the broker for that service. This value varies between different
-networks, different brokers, and different campaigns. Therefore, the network must specify how much it will pay each broker it uses. This can also be done at the Campaign level ([Campaign Service](campaign-service.md)) or at the insertion order level ([Insertion Order Service](insertion-order-service.md)).
+When a network uses a broker to serve an impression, it pays a fee to the broker for that service. This value varies between different networks, different brokers, and different campaigns. Therefore, the network must specify how much it will pay each broker it uses. This can also be done at the Campaign level ([Campaign Service](campaign-service.md)) or at the insertion order level ([Insertion Order Service](insertion-order-service.md)).
 
 To create or edit brokers, refer to the [Broker Service](broker-service.md).
 
@@ -167,7 +163,7 @@ To create or edit brokers, refer to the [Broker Service](broker-service.md).
 | `value` | double | The value of the payment, based on the payment type. |
 | `description` | string (255) | The free-form description of the broker fee entry. |
 
-**Create a Broker fee**
+#### Create a Broker fee
 
 ```
 $ cat add-LI-broker-fees.json
@@ -198,7 +194,7 @@ $ curl -b cookies -c cookies -X PUT -d @add-LI-broker-fees.json 'https://api.app
 }
 ```
 
-**Modify a Broker fee**
+#### Modify a Broker fee
 
 ```
 $ cat modify-LI-broker-fee.json
@@ -371,8 +367,7 @@ This section applies only to Publisher Ad Server clients.
 >
 > In order for Guaranteed Delivery line items to serve, there are a number of different validations that have to be performed. The validations change depending on the type of delivery goal; they are described below.
 >
-> To see how to create a Guaranteed Delivery line item and its associated campaign (in a way that passes the validations described in this
-> section), see the *Create a guaranteed delivery line item* example.
+> To see how to create a Guaranteed Delivery line item and its associated campaign (in a way that passes the validations described in this section), see the *Create a guaranteed delivery line item* example.
 >
 > | Field | Type | Description |
 > |:---|:---|:---|
@@ -413,19 +408,64 @@ The `stats` object has been **deprecated** (as of October 17, 2016). Use the [Re
 
 To include the `first_run` and `last_run` fields in a `GET` response, pass `flight_info=true` in the query string. You can also filter for line items based on when they first and last served, as follows:
 
-**Retrieve only line items that have never served**
+#### Retrieve only line items that have never served
 
-**Retrieve only line items that first served on or after a specific date**
+<!-- Pass `never_run=true` in the query string.
 
-**Retrieve only line items that first served on or before a specific date**
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&never_run=true'
+```
 
-**Retrieve only line items that first served within a specific date range**
+> [!NOTE]
+> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01. -->
 
-**Retrieve only line items that last served on or after a specific date**
+#### Retrieve only line items that first served on or after a specific date
 
-**Retrieve only line items that last served on or before a specific date**
+<!-- Pass `min_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
-**Retrieve only line items that last served within a specific date range**
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00'
+``` -->
+
+#### Retrieve only line items that first served on or before a specific date
+
+<!-- Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
+
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_first_run=2012-08-01 00:00:00'
+``` -->
+
+#### Retrieve only line items that first served within a specific date range
+
+<!-- Pass `min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
+
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00&max_first_run=2012-08-01 00:00:00'
+``` -->
+
+#### Retrieve only line items that last served on or after a specific date
+
+<!-- Pass `min_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
+
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00'
+``` -->
+
+#### Retrieve only line items that last served on or before a specific date
+
+<!-- Pass `max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
+
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_last_run=2012-08-01 00:00:00'
+``` -->
+
+#### Retrieve only line items that last served within a specific date range
+
+<!-- Pass `min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
+
+```
+curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00&max_last_run=2012-08-01 00:00:00'
+``` -->
 
 Fields of the type date can be filtered by `nmin` and `nmax` as well. The `nmin` filter lets you find dates that are either null or after the specified date, and the `nmax` filter lets you find dates that are either null or before the specified date.
 
@@ -438,7 +478,7 @@ This field notifies you of conditions that are preventing the line item from ser
 
 To retrieve line items based on pauses, you must pass certain query string parameters in the `GET` request. See below for use cases with query string parameters and examples. Note that you can use these query string parameters both when retrieving all line items or specific line items, but the examples below only cover retrieving all line items, as that is where this feature offers the most value.
 
-**Retrieve all line items and show alerts**
+#### Retrieve all line items and show alerts
 
 Pass `show_alerts=true` in the query string. This parameter will add the `alerts` object to every line item in the response, whether or not the line item has pauses.
 
@@ -534,7 +574,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have at least one pause**
+#### Retrieve only line items that have at least one pause
 
 Pass `show_alerts=true&pauses=true` in the query string.
 
@@ -622,7 +662,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have no pauses**
+#### Retrieve only line items that have no pauses
 
 Pass `show_alerts=true&pauses=false` in the query string.
 
@@ -701,11 +741,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/campaign?show_alerts=true
 }
 ```
 
-**Retrieve only line items that have a specific pause**
+#### Retrieve only line items that have a specific pause
 
 Pass `show_alerts=true&pauses=PAUSE_ID` in the query string. For pause IDs, see the [Pauses](#pauses) table below.
 
-In this example, we use pause ID 2 to retrieve all line items with flight start dates that are in the future.
+In this example, we use pause ID `2` to retrieve all line items with flight start dates that are in the future.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=true&pauses=2'
@@ -769,11 +809,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have two or more specific pauses**
+#### Retrieve only line items that have two or more specific pauses
 
 Pass `show_alerts=true&pauses=SUM_OF_PAUSE_IDS` in the query string. For pause IDs, see the [Pauses](#pauses) table below.
 
-In this example, we add together pause ID 1 and pause ID 2 to retrieve all line items that are set to inactive and have a flight state date in the future.
+In this example, we add together pause ID `1` and pause ID `2` to retrieve all line items that are set to inactive and have a flight state date in the future.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=true&pauses=3'
@@ -874,18 +914,15 @@ Roadblocks can be set at only one level, either line item or campaign. If a road
 | `master_width` | int | The width of the master creative. Set this value only when using page-level roadblocking. For standard roadblocking, omit this field or set the value to `0`. (Do not set the value to `null`.) |
 | `master_height` | int | The height of the master creative. Set this value only when using page-level roadblocking. For standard roadblocking, omit this field or set the value to `0`. (Do not set the value to `null`.) |
 
-The master creative is the creative with a size matching the `master_height` and `master_width` specified in the roadblock object. If
-more than one creative matches that size, the system will choose one as the master.
+The master creative is the creative with a size matching the `master_height` and `master_width` specified in the roadblock object. If more than one creative matches that size, the system will choose one as the master.
 
-The master creative is used for page-level roadblocking, where one impression is recorded for the full set of creatives delivered for the
-roadblock. That recorded impression is based on the master creative. This means that if the master creative doesn't serve, no impression will be recorded. If you want to use creative-level roadblocking, where each creative delivered is counted as an impression, leave the `master_width` and `master_height` values blank.
+The master creative is used for page-level roadblocking, where one impression is recorded for the full set of creatives delivered for the roadblock. That recorded impression is based on the master creative. This means that if the master creative doesn't serve, no impression will be recorded. If you want to use creative-level roadblocking, where each creative delivered is counted as an impression, leave the `master_width` and `master_height` values blank.
 
 ## Examples
 
 ### Add a seamless line item with budget intervals
 
-In this example, we'll create a new inactive seamless line item, "Lauren's Line Item", that uses budget intervals. We have already
-created an insertion order `(238174)` with billing periods to which we want to associate the new line item. The budget intervals of the line item will be associated with those of the insertion order through the `parent_interval_id` field in the `budget_intervals` array on the line item.
+In this example, we'll create a new inactive seamless line item, `"Lauren's Line Item"`, that uses budget intervals. We have already created an insertion order `(238174)` with billing periods to which we want to associate the new line item. The budget intervals of the line item will be associated with those of the insertion order through the `parent_interval_id` field in the `budget_intervals` array on the line item.
 
 ```
 $ cat line-item
@@ -1192,8 +1229,7 @@ curl -b cookies -c cookies -X POST -d @line-item "https://api.appnexus.com/line-
 
 ### View a line item
 
-To view a specific line item, we must pass in the line item and advertiser IDs via the query string. This line item has a conversion
-pixel already set up.
+To view a specific line item, we must pass in the line item and advertiser IDs via the query string. This line item has a conversion pixel already set up.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?id=164532&advertiser_id=52049'

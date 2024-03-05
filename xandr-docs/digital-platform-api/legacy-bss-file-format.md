@@ -60,8 +60,7 @@ The following table list the possible values that may be included in the `SEG_FI
 
 ## Separators
 
-Read on for definitions of each separator type. Each separator must be different, except for `SEPARATOR1` and `SEPARATOR3`, which may be
-identical (`SEPARATOR2` and `SEPARATOR4`, cannot be identical). Each separator must be only 1 character in length.
+Read on for definitions of each separator type. Each separator must be different, except for `SEPARATOR1` and `SEPARATOR3`, which may be identical (`SEPARATOR2` and `SEPARATOR4`, cannot be identical). Each separator must be only 1 character in length.
 
 > [!CAUTION]
 > **Disallowed characters**
@@ -131,8 +130,7 @@ A client is adding user `12345678900987654321` to segments `10000` and `10001` w
 
 ### Example 2
 
-A client is adding user `12345678900987654321` to segments with codes `"auto_intender"` and `"nike_shopper"` with the default expiration time. The client is also removing (using `SEPARATOR4`) user `12345678900987654321` from segments with codes `"bicycle_intender"` and
-`"newbalance_shopper"`.
+A client is adding user `12345678900987654321` to segments with codes `"auto_intender"` and `"nike_shopper"` with the default expiration time. The client is also removing (using `SEPARATOR4`) user `12345678900987654321` from segments with codes `"bicycle_intender"` and `"newbalance_shopper"`.
 
 | Field | Value |
 |:---|:---|
@@ -215,8 +213,7 @@ A client is adding user `12345678900987654321` to segments with code `"car_like"
 
 ### Example 6
 
-A client is adding mobile user IDFA (ID for Advertisers) `AEBE52E7-03EE-455A-B3C4-E57283966239` to segments `10000`, `10001`, `10002`,
-`10003` for varying amounts of time, via the Batch Segment Service. This method often has low match rates on our platform because even if IDs are successfully submitted to our service, it doesn't mean that the device ID has actually been seen on our platform. Note, separator5 appended which designates the use of mobile identifiers. The value `"3"`, designates Apple's IDFA value—other values can be found above in the [Mobile Device ID Data Fields](#separator5) table.
+A client is adding mobile user IDFA (ID for Advertisers) `AEBE52E7-03EE-455A-B3C4-E57283966239` to segments `10000`, `10001`, `10002`, `10003` for varying amounts of time, via the Batch Segment Service. This method often has low match rates on our platform because even if IDs are successfully submitted to our service, it doesn't mean that the device ID has actually been seen on our platform. Note, separator5 appended which designates the use of mobile identifiers. The value `"3"`, designates Apple's IDFA value—other values can be found above in the [Mobile Device ID Data Fields](#separator5) table.
 
 | Field | Value |
 |:---|:---|

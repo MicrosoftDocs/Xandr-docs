@@ -15,11 +15,11 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 
 ### New feature
 
-6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-android.md)
+- 6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-android.md)
 
 ### Improvement bug fixes
 
-6273738 - Fixed HTML ad that automatically open image resources in an external browser.
+- 6273738 - Fixed HTML ad that automatically open image resources in an external browser.
 
 ## 8.10
 

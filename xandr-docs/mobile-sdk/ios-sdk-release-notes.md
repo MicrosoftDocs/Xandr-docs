@@ -18,7 +18,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 
 ### New feature
 
-6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-android.md)
+- 6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-ios.md)
 
 ## 8.10.0
 

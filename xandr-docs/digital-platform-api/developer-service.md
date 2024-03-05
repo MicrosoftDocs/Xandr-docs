@@ -1,6 +1,6 @@
 ---
 title: Developer Service
-description: Use the developer service to get the address and billing information for each developer as reference information.
+description: Use the Developer service to get the address and billing information for each developer as reference information.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -13,11 +13,11 @@ This service contains the address and billing information for each developer as 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/developer | View all developers |
-| `GET` | https://api.appnexus.com/developer?id=15 | View a specific developer |
-| `POST` | https://api.appnexus.com/developer | Add a developer: (Xandr admin only) |
-| `PUT` | https://api.appnexus.com/developer?id=19 | Modify a developer |
-| `DELETE` | https://api.appnexus.com/developer?id=19 | Delete an developer |
+| `GET` | `https://api.appnexus.com/developer` | View all developers |
+| `GET` | `https://api.appnexus.com/developer?id=15` | View a specific developer |
+| `POST` | `https://api.appnexus.com/developer` | Add a developer: (Xandr admin only) |
+| `PUT` | `https://api.appnexus.com/developer?id=19` | Modify a developer |
+| `DELETE` | `https://api.appnexus.com/developer?id=19` | Delete an developer |
 
 ## JSON fields
 

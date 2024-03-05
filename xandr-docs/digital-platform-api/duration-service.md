@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Duration Service
-description: Use the duration service to see what video content durations are registered in the system.
+description: Use the Duration service to see what video content durations are registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

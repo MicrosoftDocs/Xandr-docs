@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Device Model Service
-description: Use the read-only device model service to view the registered models of mobile devices in the system, the make, device type, device screen size, and other details.
+description: Use the read-only Device Model service to view the registered models of mobile devices in the system, the make, device type, device screen size, and other details.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Device model service
+# Digital Platform API - Device Model service
 
 Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (such as Apple) and model is generally the specific product (such as iPhone). The read-only Device Model Service allows you to see what models of mobile devices are registered in the Xandr system, as well as the make, device type (phone, tablet, or other device), device screen size, and supported capabilities (such as JavaScript creatives, Flash creatives, cookies) for each model. You can use this service to retrieve this data for targeting in mobile campaigns.
 
@@ -16,10 +16,10 @@ Mobile devices are categorized by make and model, where make is generally the ma
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/device-model | View all device models |
-| `GET` | https://api.appnexus.com/device-model?device_type=DEVICE_TYPE | View all device models of a specific type (i.e., `pc`, `phone`, or `tablet`) |
-| `GET` | https://api.appnexus.com/device-model?id=DEVICE_MODEL_ID | View a specific device model |
-| `GET` | https://api.appnexus.com/device-model/meta | Find out which fields you can filter and sort by |
+| `GET` | `https://api.appnexus.com/device-model` | View all device models |
+| `GET` | `https://api.appnexus.com/device-model?device_type=DEVICE_TYPE` | View all device models of a specific type (i.e., `pc`, `phone`, or `tablet`) |
+| `GET` | `https://api.appnexus.com/device-model?id=DEVICE_MODEL_ID` | View a specific device model |
+| `GET` | `https://api.appnexus.com/device-model/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

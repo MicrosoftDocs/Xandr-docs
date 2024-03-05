@@ -1,11 +1,11 @@
 ---
 title: Deal Line Item API Setup Guide
-description: Learn the process of creating and configuring a deal line item using the API.
+description: Learn the process of setting up an API implementation of a Deal Line Item to target a deal.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Deal line item API setup guide
+# Deal Line Item API setup guide
 
 Setting up an API implementation of a Deal Line Item to target a deal requires configuring a number of different properties on different API objects. This guide will explain the process of creating and configuring a deal line item using our API.
 
@@ -17,11 +17,11 @@ Setting up a deal line item typically involves making requests to the following 
 
 | API Endpoint | API Object | Detailed Reference |
 |:---|:---|:---|
-| https://api.appnexus.com/advertiser | advertiser | [Advertiser Service](./advertiser-service.md) |
-| https://api.appnexus.com/insertion-order | insertion-order | [Insertion Order Service](./insertion-order-service.md) |
-| https://api.appnexus.com/deal | deal | [Deal Service](./deal-service.md) |
-| https://api.appnexus.com/profile | profile | [Profile Service](./profile-service.md) |
-| https://api.appnexus.com/line-item | line-item (ALI) | [Line Item - ALI Service](./line-item-service---ali.md) |
+| `https://api.appnexus.com/advertiser` | advertiser | [Advertiser Service](./advertiser-service.md) |
+| `https://api.appnexus.com/insertion-order` | insertion-order | [Insertion Order Service](./insertion-order-service.md) |
+| `https://api.appnexus.com/deal` | deal | [Deal Service](./deal-service.md) |
+| `https://api.appnexus.com/profile` | profile | [Profile Service](./profile-service.md) |
+| `https://api.appnexus.com/line-item` | line-item (ALI) | [Line Item - ALI Service](./line-item-service---ali.md) |
 
 This guide uses cURL examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/)), but you’ll then need to adjust the examples accordingly.
 
@@ -93,7 +93,7 @@ First, you’ll need to obtain an authorization token. You must then include thi
 
 You'll need to create or access an advertiser from which to create a deal line item. For deal line items, advertisers are set up the same way as augmented line items.
 
-**JSON fields for advertiser (required and useful optional fields)**
+#### JSON fields for advertiser (required and useful optional fields)
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -115,7 +115,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/advertiser](https://api.appnexus.com/advertiser) endpoint with this advertiser JSON and an appropriate `member_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/advertiser endpoint` with this advertiser JSON and an appropriate `member_id`.
 
     ```
     $ curl -b cookies -c cookies -X POST -d @advertiser.json 'https://api.appnexus.com/advertiser?member_id=2378'
@@ -131,7 +131,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
 
 You'll need to create or access an insertion order to create a deal line item. Deal line items require a seamless insertion order (see required fields below).
 
-**JSON fields for seamless insertion order (required and useful optional fields)**
+#### JSON fields for seamless insertion order (required and useful optional fields)
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -204,7 +204,7 @@ If you don't already have an insertion order to use, create an insertion order b
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.  
+1. Make a `POST` request to the `https://api.appnexus.com/insertion-order` endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.  
 
     **Example request: no end date, no budget**
 
@@ -228,7 +228,7 @@ If you don't already have an insertion order to use, create an insertion order b
 
 You'll need to create the deal you want to associate with the deal line item.
 
-**JSON fields for deal**
+#### JSON fields for deal
 
 | Field | Type | Required or Optional | Description |
 |:---|:---|:---|:---|
@@ -238,11 +238,11 @@ You'll need to create the deal you want to associate with the deal line item.
 | `version` | int | Required | This field must be set to `"2"` in order to associate the deal to a deal line item. |
 | `auction_type` | object | Optional | The auction type of the deal (Standard/Fixed/Market). This value must match what's set on the deal line item (via `revenue_type`/`min_revenue_value`/`revenue_value`).<br><br>**Note**: This field must be set upon creation, but it is not used on deal line items. It will not be updated if the line item is updated and in the auction; only the line item values are considered. |
 
-**Useful optional JSON fields**
+#### Useful optional JSON fields
 
-**JSON fields for allowed creatives**  
+##### JSON fields for allowed creatives  
 
-**Brand** (see [Brand Service](./brand-service.md))
+###### Brand (see [Brand Service](./brand-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -252,7 +252,7 @@ You'll need to create the deal you want to associate with the deal line item.
 | `name` | string | Field within `brands`: name of the brand that is eligible for the deal |
 | `override` | boolean | Field within `brands`: Set to `true` to allow a specific brand to serve for a deal even if the ad quality profile would have blocked it. |
 
-**Brand example**  
+**Brand example**
 
 ```
 "brand_restrict": true,
@@ -270,7 +270,7 @@ You'll need to create the deal you want to associate with the deal line item.
             ] 
 ```
 
-**Language** (see [Language Service](./language-service.md))
+###### Language (see [Language Service](./language-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -298,7 +298,7 @@ You'll need to create the deal you want to associate with the deal line item.
             ]
 ```
 
-**Trust level**
+###### Trust level
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -310,7 +310,7 @@ You'll need to create the deal you want to associate with the deal line item.
 "audit_status_option": "max_trust" 
 ```
 
-**Creative category**
+###### Creative category
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -338,7 +338,7 @@ You'll need to create the deal you want to associate with the deal line item.
              "category_restrict": true
 ```
 
-**Specific creatives**
+###### Specific creatives
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -361,7 +361,7 @@ You'll need to create the deal you want to associate with the deal line item.
             ]
 ```
 
-**Media type** (see [Media Subtype Service](./media-subtype-service.md) and [Media Type Service](./media-type-service.md))
+###### Media type (see [Media Subtype Service](./media-subtype-service.md) and [Media Type Service](./media-type-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -406,7 +406,7 @@ You'll need to create the deal you want to associate with the deal line item.
              ]
 ```
 
-**Technical Attributes** (see [Technical Attribute Service](./technical-attribute-service.md))
+###### Technical Attributes (see [Technical Attribute Service](./technical-attribute-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -428,12 +428,12 @@ You'll need to create the deal you want to associate with the deal line item.
              ]
 ```
 
-**JSON fields for deal data protection** (see [Visibility Profile Service](./visibility-profile-service.md))  
+##### JSON fields for deal data protection (see [Visibility Profile Service](./visibility-profile-service.md))  
 
 > [!WARNING]
-> This beta feature is not available for all clients. Please reach out to your account manager to discuss if you have a use case.
+> This beta feature is not available for all clients. Reach out to your account manager to discuss if you have a use case.
 
-**User ID and device ID**
+###### User ID and device ID
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -474,7 +474,7 @@ You'll need to create the deal you want to associate with the deal line item.
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-**IP address**
+###### IP address
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -515,7 +515,7 @@ You'll need to create the deal you want to associate with the deal line item.
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-**URL**
+###### URL
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -553,7 +553,7 @@ You'll need to create the deal you want to associate with the deal line item.
 > curl -b cookies -c cookies -X PUT -d @deal_data_protection.json 'https://api.appnexus.com/deal?id=549271'
 ```
 
-**Add to Segment** (see [Deal Service](./deal-service.md))
+###### Add to Segment (see [Deal Service](./deal-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -592,7 +592,7 @@ You'll need to create the deal you want to associate with the deal line item.
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/deal](https://api.appnexus.com/deal) endpoint with this deal JSON and an appropriate `member_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/deal` endpoint with this deal JSON and an appropriate `member_id`.
 
     ```
     $ curl -b cookies -c cookies -X POST -d @deal.json 'https://api.appnexus.com/deal?member_id=2378'
@@ -608,7 +608,7 @@ You'll need to create the deal you want to associate with the deal line item.
 
 Next, create a deal line item profile to use in targeting with the deal line item. Be sure to note the ID for this profile for later use. See [Profile Service](./profile-service.md) for more information.
 
-**Optional JSON fields for deal line item profile**
+#### Optional JSON fields for deal line item profile
 
 There are many optional fields available in the deal line item profile for targeting with the deal line item. For example, you can target properties associated with inventory, inventory types, allowlists, blocklists, device types, and so forth. See the [Profile Service](./profile-service.md) for more information on available fields.  
 
@@ -656,7 +656,7 @@ To create a deal line item profile, do the following (see [Profile Service](./p
     }
     ```
 
-1. Make a **`POST`** request to the [https://api.appnexus.com/profile](https://api.appnexus.com/profile) endpoint with this deal profile JSON and an appropriate `advertiser_id`.  
+1. Make a **`POST`** request to the `https://api.appnexus.com/profile` endpoint with this deal profile JSON and an appropriate `advertiser_id`.  
 
     **Example: Profile creation with country, frequency recency caps, and view rate/completion rate thresholds**
 
@@ -680,7 +680,7 @@ To create a deal line item profile, do the following (see [Profile Service](./p
 
 Finally, you'll need to create the deal line item to associate the deal ID and the deal line item profile you created in [Step 5 - Create a deal line item profile](#step-5---create-a-deal-line-item-profile).
 
-**JSON fields for deal line item**
+#### JSON fields for deal line item
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -698,7 +698,7 @@ Finally, you'll need to create the deal line item to associate the deal ID and t
 | `auction_event` | object | Object for auction event type properties: The `kpi_auction_type_id`, `payment_auction_type_id`, and `revenue_auction_type_id` fields of the `auction_event` object must all be set to `1`. |
 | `bid_object_type` | enum | Must be set to `"deal"` for a deal line item. |
 
-**Useful optional JSON fields**  
+#### Useful optional JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -837,7 +837,7 @@ Finally, you'll need to create the deal line item to associate the deal ID and t
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) endpoint using this deal line item JSON and an appropriate `advertiser_id` and `member_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/line-item` endpoint using this deal line item JSON and an appropriate `advertiser_id` and `member_id`.
 
      **Example request: Deal line item no budget**
 

@@ -1,6 +1,6 @@
 ---
 title: Demand Partner Service
-description: Use the demand partner service to return all demand partners for the caller's member.
+description: Use the Demand Partner service to return all demand partners for the caller's member.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -15,11 +15,11 @@ In the context of PSP, demand partners, usually supply-side platforms (SSPs) lik
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/prebid/demand-partner | Get all demand partners. |
-| `POST` | https://api.appnexus.com/prebid/demand-partner | Create a new demand partner. |
-| `PUT` | https://api.appnexus.com/prebid/demand-partner/{id} | Update an existing demand partner. |
-| `PATCH` | https://api.appnexus.com/prebid/demand-partner/{id} | Update a portion of an existing demand partner. |
-| `DELETE` | https://api.appnexus.com/prebid/demand-partner/{id} | Delete a demand partner. |
+| `GET` | `https://api.appnexus.com/prebid/demand-partner` | Get all demand partners. |
+| `POST` | `https://api.appnexus.com/prebid/demand-partner` | Create a new demand partner. |
+| `PUT` | `https://api.appnexus.com/prebid/demand-partner/{id}` | Update an existing demand partner. |
+| `PATCH` | `https://api.appnexus.com/prebid/demand-partner/{id}` | Update a portion of an existing demand partner. |
+| `DELETE` | `https://api.appnexus.com/prebid/demand-partner/{id}` | Delete a demand partner. |
 
 ## GET
 
@@ -48,7 +48,7 @@ A successful response will return JSON array of demand partner objects.
 | `member_owner_id` | integer | Unique identifier of the member that owns the source. |
 | `status` | string | Indicates if the source is active. Requires string input of `"active"` or `"inactive"`. |
 
-**Example response**
+#### Example response
 
 ```
 [
@@ -112,7 +112,7 @@ A successful response will return JSON array of demand partner objects.
 
 Create a new demand partner.
 
-Example call using curl:
+### Example call using curl
 
 ```
 curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-partner'
@@ -125,7 +125,7 @@ curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-par
 | `name` | string | Required | The name of the demand partner. |
 | `pub_id_settings` | object | Required | The options relevant to the publisher-provided user ids. See [publisher provided ID settings table](#publisher-provided-id-settings) above. |
 
-**Example JSON**
+### Example JSON
 
 ```
 {
@@ -145,7 +145,7 @@ curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-par
 }
 ```
 
-**Response**
+### Response
 
 A successful response will return the new demand partner as a JSON object.
 
@@ -176,13 +176,13 @@ A successful response will return the new demand partner as a JSON object.
 
 Updates an existing Prebid demand partner. Include the id as last component of the path. Pass the update information as JSON in the body of the request.
 
-Example call using curl:
+### Example call using curl
 
 ```
 curl https://api.appnexus.com/prebid/demand-partner/1234
 ```
 
-**Response**
+### Response
 
 Returns updated Prebid demand partner object.
 
@@ -190,13 +190,13 @@ Returns updated Prebid demand partner object.
 
 Partially update an existing Prebid demand partner. Include the ID as last component of the path. Pass the update information as JSON in the body of the request.
 
-Example call using curl:
+### Example call using curl
 
 ```
 curl https://api.appnexus.com/prebid/demand-partner/1234
 ```
 
-**Response**
+### Response
 
 Returns the updated Prebid demand partner object.
 
@@ -204,13 +204,13 @@ Returns the updated Prebid demand partner object.
 
 Delete an existing Prebid demand partner. Include the ID as last component of the path.
 
-Example call using curl:
+### Example call using curl
 
 ```
 curl https://api.appnexus.com/prebid/demand-partner/1234
 ```
 
-**Response**
+### Response
 
 The success response of the Prebid demand partner object is returned as a JSON object with the deleted property set to true. The Prebid demand partner will no longer be available in the system. Any sub-objects will also be deleted.
 

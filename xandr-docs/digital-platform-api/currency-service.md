@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Currency Service
-description: Clients can reconcile amounts paid or received by them resulting from their transactions through the Xandr Platform.
+description: Clients can reconcile amounts paid or received by them resulting from their transactions through the Xandr platform.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -16,10 +16,10 @@ This is a read-only service that shows you the list of currencies that you can s
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/currency | View all available currencies |
-| `GET` | https://api.appnexus.com/currency?code=CURRENCY_CODE | View a specific currency |
-| `GET` | https://api.appnexus.com/currency?code=CURRENCY_CODE&show_rate=true | View a currency's exchange rate for today |
-| `GET` | https://api.appnexus.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2012-03-01 | View a currency's exchange rate for a day in the past |
+| `GET` | `https://api.appnexus.com/currency` | View all available currencies |
+| `GET` | `https://api.appnexus.com/currency?code=CURRENCY_CODE` | View a specific currency |
+| `GET` | `https://api.appnexus.com/currency?code=CURRENCY_CODE&show_rate=true` | View a currency's exchange rate for today |
+| `GET` | `https://api.appnexus.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2012-03-01` | View a currency's exchange rate for a day in the past |
 
 > [!NOTE]
 > Exchange rates are sourced **once daily** from [Oanda](https://www.oanda.com/) at approximately **3:00 a.m. UTC**.
@@ -31,12 +31,12 @@ This is a read-only service that shows you the list of currencies that you can s
 | `as_of` | string | The date and time that Oanda last updated the exchange rate in UTC. We pull the rates from [Oanda](https://www.oanda.com/foreign-exchange-data-services/en/) every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
 | `code` | string | The code for the currency. |
 | `description` | string | A description of the currency. |
-| `is_exposed` | boolean | If true, the currency is exposed. |
+| `is_exposed` | boolean | If `true`, the currency is exposed. |
 | `last_modified` | string | The date and time when the currency was last modified. (See **Note** *) |
 | `name` | string | The full name of the currency. |
 | `position` | enum | Whether the currency symbol appears before or after the amount. Possible values: `"before"` or `"after"`. |
 | `rate_per_usd` | double | The exchange rate. This is returned only when you pass `show_rate=true` in the query string. |
-| `symbol` | string | The symbol for the currency, e.g. "$" for USD |
+| `symbol` | string | The symbol for the currency, e.g. `"$"` for USD |
 
 > [!NOTE]
 > - To show conversion rates, pass `show_rate=true` in the URL. You can also retrieve a past day's rate by passing in `ymd=YYYYMMDD` via the URL.

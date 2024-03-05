@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API Internal Services
-description: This article provides a list of Digital Platform API internal services.
+description: This article provides a list of Digital Platform API Internal services.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API internal services
+# Digital Platform API Internal services
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.

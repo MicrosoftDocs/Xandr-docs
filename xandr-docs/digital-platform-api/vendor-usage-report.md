@@ -163,8 +163,7 @@ $ curl -b cookies -c cookies -X post -d @buyer_vendor_usage_analytics "https://a
 
 ### `GET` the report status from the Report service
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`ready`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `ready`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/report?id=d89151942729f768dcac4586288ff7eb'
@@ -241,6 +240,5 @@ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=d8915194
 
 > [!TIP]
 > If an error occurs during download, the response header will include an HTTP error code and message. Use `\-i` or `\-v` in your call to expose the response header.
-
 > [!NOTE]
 > There is a limit of 100,000 rows per report when you download them as XLSX and Excel file.

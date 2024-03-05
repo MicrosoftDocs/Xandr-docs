@@ -1,6 +1,6 @@
 ---
 title: User UI Service
-description: Explore the User UI service, which enables you to modify the requirement for campaign peer approval for users.
+description: Explore the User UI service, which enables you to modify the requirement for a user's campaign peer approval.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

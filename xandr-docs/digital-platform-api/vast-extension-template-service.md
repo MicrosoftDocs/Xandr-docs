@@ -7,13 +7,13 @@ ms.custom: digital-platform-api
 
 # VAST Extension Template service
 
-This service provides a template to enter and save custom extensions from a VAST file. Extensions are custom XML snippets added to the VAST file. Video players must be specially programmed to recognize and handle the data provided. Since an extension must be added manually, and to avoid having to add the same extension multiple times, you can use this service and enter the template id.
+This service provides a template to enter and save custom extensions from a VAST file. Extensions are custom XML snippets added to the VAST file. Video players must be specially programmed to recognize and handle the data provided. Since an extension must be added manually, and to avoid having to add the same extension multiple times, you can use this service and enter the template ID.
 
 In addition, custom and impbus macros are supported in the extension templates.
 
 Once you have created an extension, you must then associate it with a creative.
 
-**Example extension XML**
+## Example extension XML
 
 ```
 <Ad>

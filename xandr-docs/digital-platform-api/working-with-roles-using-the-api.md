@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Working with roles using the API
 
-A Role represents a set of capabilities (also known as permissions) that a user may have access to in the system. For example, a user may have a "Salesperson" role that needs to have read-only access to buy-side information using the **Advertisers/Orders - Read Only** permission. Since the user's access is read-only, they can view those parts of the system, but they can't make any changes.
+A Role represents a set of capabilities (also known as permissions) that a user may have access to in the system. For example, a user may have a `"Salesperson"` role that needs to have read-only access to buy-side information using the **Advertisers/Orders - Read Only** permission. Since the user's access is read-only, they can view those parts of the system, but they can't make any changes.
 
 There are two types of roles:
 
@@ -16,12 +16,11 @@ There are two types of roles:
 
 ## About custom roles
 
-Depending on the size and needs of your business, you may want to restrict access for some of your users to specific capabilities. Reasons
-you might want to do this include:
+Depending on the size and needs of your business, you may want to restrict access for some of your users to specific capabilities. Reasons you might want to do this include:
 
-- You're a publisher that contracts with a sales house to represent a particular region of your inventory, and you need to provide limited booking and reporting access
-- You want to allow salespeople to view your book of business, but you don't want them to create or manage line items themselves
-- A specific user within your organization requires one-off custom access
+- You're a publisher that contracts with a sales house to represent a particular region of your inventory, and you need to provide limited booking and reporting access.
+- You want to allow salespeople to view your book of business, but you don't want them to create or manage line items themselves.
+- A specific user within your organization requires one-off custom access.
 
 With custom roles, you can control user access so they only see the parts of your business that you choose.
 

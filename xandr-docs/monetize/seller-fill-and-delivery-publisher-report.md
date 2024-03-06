@@ -69,8 +69,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 This report's data is retained for 99 days.
 
@@ -105,8 +104,7 @@ This report's data is retained for 99 days.
 
 ## Dimensions
 
-Grouping by dimension allows you to display certain fields of reporting
-data in a particular order.
+Grouping by dimension allows you to display certain fields of reporting data in a particular order.
 
 | Name | Description |
 |--|--|

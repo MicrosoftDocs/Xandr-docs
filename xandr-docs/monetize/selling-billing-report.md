@@ -165,8 +165,8 @@ Follow these steps to run your report.
      1. **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
      1. **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
      1. **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
-     1.  **Name this report**: Give this report with its current settings a name for future reference.
-     1. Click **Run report** to send your report request.
+     1. **Name this report**: Give this report with its current settings a name for future reference.
+1. Click **Run report** to send your report request.
 
 ## Related topics
 

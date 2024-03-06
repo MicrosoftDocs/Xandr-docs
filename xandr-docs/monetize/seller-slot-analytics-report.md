@@ -1,6 +1,6 @@
 ---
 title: Seller Slot Analytics
-description: This page covers insights on Seller Slot Analytics. Learn how to run this report in this page.
+description: The Seller Slot Analytics report shows metrics for impressions within groups of ads delivered sequentially in between segments of non-commercial video programming. Learn how to run this report in this page.
 ms.date: 10/28/2023
 ---
 

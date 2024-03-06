@@ -1,6 +1,6 @@
 ---
 title: Seller Creative Review
-description: Learn how sellers can use Microsoft Monetize Seller Creative Review to review and approve creatives before they serve on seller inventory and search and sort creatives.
+description: Learn how sellers can use Microsoft Monetize Seller Creative Review to review and approve creatives before they serve on seller inventory, and search and sort creatives.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Sell-Side Video Overview
-description: In this page, learn what are our sell-side video products, how they work, and how they help clients to succeed. 
+description: This page is an overview on Sell-Side Video and discusses about the three key concepts monetization, latency, and cross-device adserving which pose a challenge to sellers.
 ms.date: 10/28/2023
 ---
 

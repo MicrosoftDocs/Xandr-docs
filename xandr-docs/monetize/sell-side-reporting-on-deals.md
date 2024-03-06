@@ -1,6 +1,6 @@
 ---
 title: Sell-Side Reporting on Deals
-description: This page lists Reports that you can use to view deal performance, revenue, profit data across multiple and specific publisher's sites.    
+description: This page lists reports that you can use to view deal performance, revenue, profit data across multiple and specific publisher's sites.    
 ms.date: 10/28/2023
 ---
 

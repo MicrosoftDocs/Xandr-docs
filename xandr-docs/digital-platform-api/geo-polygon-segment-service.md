@@ -49,7 +49,7 @@ To create a segment with geo polygons, follow below steps:
 | `short_name` | string | Short name used to describe the geo polygon segment<br><br>**Required On**: `POST` |
 | `regional_centers` | array of objects | ID or code of the region in which the geo polygon segment is available.<br>**Possible values:**<br> - `ID: 1, 2 or 3`<br> - `code: "americas", "emea", "apac"` |
 
-### CSV file format
+### `CSV` file format
 
 The CSV file has the column names as **Polygon** and **Name** and they hold the values for the defined geo-polygons.
 
@@ -58,7 +58,7 @@ The CSV file has the column names as **Polygon** and **Name** and they hold the 
 
 #### Example
 
-##### add-polygons.csv
+##### `add-polygons.csv`
 
 ```
 Polygon,Name

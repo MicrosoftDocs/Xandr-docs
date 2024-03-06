@@ -1,6 +1,6 @@
 ---
 title: Selling Inventory on a CPC and CPA Basis
-description: Maximize Microsoft Ad ecosystem by reselling inventory on CPC/CPA, ensuring higher payouts through Microsoft Monetize for risk management.
+description: Explore maximizing Microsoft Ad ecosystem by reselling inventory on CPC/CPA, ensuring higher payouts via Microsoft Monetize for effective risk management.
 ms.date: 10/28/2023
 ---
 

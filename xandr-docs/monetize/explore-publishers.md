@@ -1,6 +1,6 @@
 ---
 title: Explore Publishers
-description: The article summarizes the Publishers screen, listing and offering insights on network and publisher performance.
+description: Explore insights on network and publisher performance by summarizing the Publishers screen, revealing details for each associated publisher. 
 ms.date: 10/28/2023
 ---
 

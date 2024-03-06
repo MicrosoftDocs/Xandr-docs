@@ -1,6 +1,6 @@
 ---
 title: Choosing the Most Useful Ad Quality Rules
-description: Optimize ad display by exploring effective Ad Quality Rules based on technical attributes, content, language, buyer, and brand for tailored results.
+description: Explore optimizing ad display with effective Ad Quality Rules. Adjust settings for technical attributes, content, language, buyer, and brand.
 ms.date: 10/28/2023
 ---
 

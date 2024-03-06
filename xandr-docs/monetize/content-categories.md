@@ -1,6 +1,6 @@
 ---
 title: Content Categories
-description: Categorize inventory slices with metadata, offering details about contents in this article on content categories.
+description: Explore categorizing inventory slices, providing metadata to detail contents in this article on content categories.
 ms.date: 10/28/2023
 ---
 

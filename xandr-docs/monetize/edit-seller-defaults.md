@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Edit Seller Defaults
-description: Set seller eligibility and trust in Partner Center or My Settings for Seller Name to manage inventory effectively.
+description: Explore setting seller eligibility and trust in Partner Center or My Settings to manage inventory efficiently for Seller Name.
 ms.date: 10/28/2023
 ---
 

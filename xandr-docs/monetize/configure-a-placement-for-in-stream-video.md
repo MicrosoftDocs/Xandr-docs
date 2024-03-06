@@ -10,14 +10,13 @@ To set up an in-stream video placement, use the [Create a Placement](create-a-pl
 
 To make in-stream video available, use the following recommendations for placement setup. Some of the values defined in the Microsoft Advertising placement definition can be overridden in the query string or on-page code if necessary.
 
-1. On the **Details** tab of the placement, select **Allowed Media \> Media Types \> Video**.
+1. On the **Details** tab of the placement, select **Allowed Media** \> **Media Types** \> **Video**.
 1. Click the **Video Settings** tab.
 1. If you want this placement to define an ad pod (multiple ads within an ad break), select the **Enable Ad Podding** checkbox.
 
     > [!NOTE]
     >
-    > If you select the **Enable Ad Podding** checkbox, the detailed 
-    > configuration options for ad pods display at the bottom of the **Video > Settings** page.
+    > If you select the **Enable Ad Podding** checkbox, the detailed configuration options for ad pods display at the bottom of the **Video > Settings** page.
 
 1. From the **Position** menu, select the placement's location within the video content by selecting **Pre-roll**, **Mid-roll**, or **Post-roll**. This setting is also known as the video context.
 
@@ -26,9 +25,7 @@ To make in-stream video available, use the following recommendations for placeme
 
    > [!NOTE]
    >
-   > Only creatives shorter than or equal to the specified max duration will be
-   > served. If you enabled **Ad Podding**, the **Max Duration** value is the 
-   > total  duration for all the ads in the ad pod.
+   > Only creatives shorter than or equal to the specified max duration will be served. If you enabled **Ad Podding**, the **Max Duration** value is the total  duration for all the ads in the ad pod.
 
 1. Specify whether your player will allow skippable creatives.
 1. If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the **Skip Offset** field.

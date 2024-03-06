@@ -51,7 +51,7 @@ https://sspx-router.adnxs.com/sspx?id=1235&sspdata=ams1AAAAAAAAkQC8rFPull3JKKU9t
 
 For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the **Explore Advanced Options** section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel will look something like this:
 
-### Export Pixels
+### Export pixels
 
 Conversion Pixel - test conversion  - Call the following URL to register a server side conversion:
 

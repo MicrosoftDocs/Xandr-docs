@@ -1,6 +1,6 @@
 ---
 title: Seller Slot Analytics
-description: This page covers insights on Seller Slot Analytics.
+description: The Seller Slot Analytics report shows metrics for impressions within groups of ads delivered sequentially in between segments of non-commercial video programming. Learn how to run this report in this page.
 ms.date: 10/28/2023
 ---
 
@@ -12,28 +12,19 @@ ms.date: 10/28/2023
 
 ## Seller slot analytics
 
-The Seller Slot Analytics report shows metrics for impressions (slots)
-within groups of ads (pods) delivered sequentially in between segments
-of non-commercial video programming. You can use this report to gain
-insight in answering the following questions:
+The Seller Slot Analytics report shows metrics for impressions (slots) within groups of ads (pods) delivered sequentially in between segments of non-commercial video programming. You can use this report to gain insight in answering the following questions:
 
-- On average how many seconds per impression are being served for
-  mid-roll slot positions 1, 2 and 3?
-- How does the CPM of the first slot within a pre-roll compare to the
-  first slot within a mid-roll?
-- How many seconds has a brand served in pre-rolls compared to
-  mid-rolls?
+- On average how many seconds per impression are being served for mid-roll slot positions 1, 2 and 3?
+- How does the CPM of the first slot within a pre-roll compare to the first slot within a mid-roll?
+- How many seconds has a brand served in pre-rolls compared to mid-rolls?
 - Which slot positions is a line item delivering in?
-- What is the percentage of slots by position being consumed by my house
-  line item?
+- What is the percentage of slots by position being consumed by my house line item?
 - Which cities did a line item deliver to?
-- How does the completion rate by video context and slot position
-  compare?
+- How does the completion rate by video context and slot position compare?
 
 ## Time frame
 
-The report_interval field in the JSON request can be set to one of the
-following:
+The report_interval field in the JSON request can be set to one of the following:
 
 - `custom`
 - `today`
@@ -43,19 +34,16 @@ following:
 - `last month`
 - `quarter to date`
 
-To run a report for a custom time frame, set the `Start Date` and
-`End Date`fields in your report request. For more details about these
-fields, see [Report Service](../bidders/report-service.md).
+To run a report for a custom time frame, set the `Start Date` and `End Date`fields in your report request. For more details about these fields, see [Report Service](../bidders/report-service.md).
 
 **Data Retention**
 
-This report's data is retained for 420 days. For more information about
-how quickly reporting data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
+This report's data is retained for 420 days. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 ## Dimensions
 
 | Column | Type | Filter? | Example | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Advertiser | string | yes | `"Verizon Wireless (789)"` | The name of the advertiser. |
 | Advertiser Default Currency | string | no | `EUR` | The default currency of the advertiser in this impression. This dimension is available only when Currency 2.0 is disabled. |
 | Application | string | no |  | The application name. |
@@ -109,7 +97,7 @@ how quickly reporting data is processed, see [Availability of Reporting Data](av
 ## Metrics
 
 | Column | Type | Example | Formula | Description |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Average View Time | int | `28` | sum (creative_duration * ((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions)) / sum (starts)) | An estimate for the average duration in seconds (rounded to 0 decimal places) of the creative that was viewed. This is calculated by approximating the duration watched as the mid-point between the video events (for example, a start event would estimate that 12.5% of the creative is viewed). |
 | Average View Time Percent | percentage | `89%` | sum (((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions))∕starts) | The average view time expressed as a percentage of the total possible view time. |
 | Booked Revenue Dollars | money | `16.3519` | booked_revenue | The total revenue booked through direct advertisers (line item). |
@@ -144,61 +132,27 @@ how quickly reporting data is processed, see [Availability of Reporting Data](av
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1. Or, from the Publishers top menu, click on
-        **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
-1. Select the relevant report from the list. The
-    **Report** screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the
-    information you want. For example, rather than running a report that
-    shows impressions for all inventory sources, you may want to list
-    results for just a select few. When you select a filter (by clicking
-    **Edit**), a selection panel appears.
-    Select items in the **Available** list (left), then click
-    **Add** to include them in the
-    **Chosen** list (right).
-1. Group by Dimension. Grouping allows you to display rows of data in
-    the order you prefer.
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
     > [!WARNING]
     > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
 
-1. Choose a delivery option. Once you've selected your filters and
-    grouped by your chosen dimensions, you need to choose a delivery
-    method. Available delivery methods include:
-    - **Run now, show results in screen**: For smaller amounts of data,
-      you may want to view the report as soon as possible in your
-      browser. You can download the report in XLSX, CSV, Excel/TSV and
-      JSON format. However, there is a limit of 100,000 rows per report
-      when downloading as XLSX and Excel file.
-    - **Run in background, notify me when results are ready to view**: A
-      popup notification will let you know when the report is ready to
-      view or download.
+1. Choose a delivery option. Once you've selected your filters and grouped by your chosen dimensions, you need to choose a delivery method. Available delivery methods include:
+    - **Run now, show results in screen**: For smaller amounts of data, you may want to view the report as soon as possible in your browser. You can download the report in XLSX, CSV, Excel/TSV and JSON format. However, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file.
+    - **Run in background, notify me when results are ready to view**: A popup notification will let you know when the report is ready to view or download.
 
       > [!TIP]
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
-    - **Export, send results via email**: Run the report in the background and email the
-      results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so
-      that you can run this report again in the future. You can name
-      this template using the text entry field under
-      **Name this report** (its checkbox
-      is auto-selected when you choose this option). A saved report can
-      be rerun from the **Your Reports**
-      screen.
-    - **Add to scheduled reports**: Run this report automatically at
-      specified times and have it sent to one or more email addresses.
-    - **Name this report**: Give this report with its current settings a
-      name for future reference.
-1. Click **Run report** to send your report
-    request.
+    - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
+    - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
+    - **Name this report**: Give this report with its current settings a name for future reference.
+1. Click **Run report** to send your report request.

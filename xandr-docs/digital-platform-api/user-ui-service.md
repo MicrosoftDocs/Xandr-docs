@@ -27,12 +27,12 @@ The user UI service allows you to change whether campaign peer approval is requi
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/user-ui](https://api.appnexus.com/user-ui)<br>(User UI JSON) | Create a new user UI object for a user. |
-| `PUT` | [https://api.appnexus.com/user-ui?id=ID](https://api.appnexus.com/user-ui?id=ID)<br><br>(User UI JSON) | Modify settings via a user UI object. |
-| `GET` | [https://api.appnexus.com/user-ui](https://api.appnexus.com/user-ui) | View settings for all user UI objects. |
-| `GET` | [https://api.appnexus.com/user-ui?id=ID](https://api.appnexus.com/user-ui?id=ID) | View settings for a specific user UI object. |
-| `DELETE` | [https://api.appnexus.com/user-ui?id=ID](https://api.appnexus.com/user-ui?id=ID) | Remove settings for a user UI object. |
-| `GET` | [https://api.appnexus.com/user-ui/meta](https://api.appnexus.com/user-ui/meta) | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/user-ui`<br>(User UI JSON) | Create a new user UI object for a user. |
+| `PUT` | `https://api.appnexus.com/user-ui?id=ID`<br><br>(User UI JSON) | Modify settings via a user UI object. |
+| `GET` | `https://api.appnexus.com/user-ui` | View settings for all user UI objects. |
+| `GET` | `https://api.appnexus.com/user-ui?id=ID` | View settings for a specific user UI object. |
+| `DELETE` | `https://api.appnexus.com/user-ui?id=ID` | Remove settings for a user UI object. |
+| `GET` | `https://api.appnexus.com/user-ui/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

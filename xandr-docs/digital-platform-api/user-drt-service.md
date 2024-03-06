@@ -24,13 +24,13 @@ The central ID used by DRT is the `account_id`, which stores mapping data betwee
 
 | HTTP Method | Endpoint | Decsription |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/user-DRT](https://api.appnexus.com/user-DRT)<br>(User DRT JSON) | Create a new user DRT object for a user. |
-| `PUT` | [https://api.appnexus.com/user-DRT?id=ID](https://api.appnexus.com/user-DRT?id=ID)<br>(User DRT JSON) | Modify a user DRT object. |
-| `GET` | [https://api.appnexus.com/user-DRT](https://api.appnexus.com/user-DRT) | View DRT information for all users. |
-| `GET` | [https://api.appnexus.com/user-DRT?id=ID](https://api.appnexus.com/user-DRT?id=ID) | View DRT information for a specific user. |
-| `GET` | [https://api.appnexus.com/user-DRT?account_id=ACCOUNT_ID](https://api.appnexus.com/user-DRT?account_id=ACCOUNT_ID) | View DRT information for all users under a specific DRT account. |
-| `DELETE` | [https://api.appnexus.com/user-DRT?id=ID](https://api.appnexus.com/user-DRT?id=ID)  | Remove DRT information for a user. |
-| `GET` | [https://api.appnexus.com/user-DRT/meta](https://api.appnexus.com/user-DRT/meta) | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/user-DRT`<br>(User DRT JSON) | Create a new user DRT object for a user. |
+| `PUT` | `https://api.appnexus.com/user-DRT?id=ID`<br>(User DRT JSON) | Modify a user DRT object. |
+| `GET` | `https://api.appnexus.com/user-DRT` | View DRT information for all users. |
+| `GET` | `https://api.appnexus.com/user-DRT?id=ID` | View DRT information for a specific user. |
+| `GET` | `https://api.appnexus.com/user-DRT?account_id=ACCOUNT_ID` | View DRT information for all users under a specific DRT account. |
+| `DELETE` | `https://api.appnexus.com/user-DRT?id=ID`  | Remove DRT information for a user. |
+| `GET` | `https://api.appnexus.com/user-DRT/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

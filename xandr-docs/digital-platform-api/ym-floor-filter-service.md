@@ -10,8 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-This read-only service allows you to view a list of yield management (YM) floor rules that apply to a specific member. The response will
-include a list of YM floor rule IDs. You can use the ID to get more information on the YM floor rule settings using the [Yield Management Floor Service](yield-management-floor-service.md).
+This read-only service allows you to view a list of yield management (YM) floor rules that apply to a specific member. The response will include a list of YM floor rule IDs. You can use the ID to get more information on the YM floor rule settings using the [Yield Management Floor Service](yield-management-floor-service.md).
 
 ## REST API
 

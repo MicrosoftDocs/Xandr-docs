@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # User Group Pattern service
 
-The User Group Pattern Service allows you to divide a hypothetical audience into up to five discrete buckets, each bucket defined to cover
-a percentage of total users. The most common use case for doing this is defining user groups for A/B testing of campaign targeting strategies. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md) in documentation.
+The User Group Pattern Service allows you to divide a hypothetical audience into up to five discrete buckets, each bucket defined to cover a percentage of total users. The most common use case for doing this is defining user groups for A/B testing of campaign targeting strategies. For more information, see [Test and Control Targeting](../monetize/test-and-control-targeting.md) in documentation.
 
 > [!NOTE]
 > It is important to note that a pattern does not perform any actual targeting; it simply helps you calculate user group targeting values that you can manually apply to your campaign profiles.

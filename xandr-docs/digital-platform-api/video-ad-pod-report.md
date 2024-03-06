@@ -64,11 +64,11 @@ Data in this report is retained for 420 days.
 | `creative_duration` | int | Yes | `"10"` | The length of the ad in seconds. |
 | `max_ad_duration` | int | Yes | `"45"` | The maximum video ad duration in seconds allowed by a placement. |
 | `max_placement_duration` | int | Yes | `"60"` | The maximum placement duration in seconds. |
-| `video_player_size` | string | Yes | `"small"` | The size of the video player based on pixel width and calculated from player dimensions |
+| `video_player_size` | string | Yes | `"small"` | The size of the video player based on pixel width and calculated from player dimensions. |
 | `seller_type` | string | Yes | `"console"` | The type of seller for the ad pod. Options are console or external. |
 | `ad_slot_type` | int | Yes | `1` | The ID of the type of position (ad or bumper) within an ad pod.<br>- `0`: Normal slot<br>- `1`: Intro bumper<br>- `2`: Outro bumper |
 | `ad_slot_position` | string | Yes | `"Outro Bumper"` | The chronological order of an ad within its ad pod (placement set). |
-| `average_ad_slot_creative_duration` | int | No | `10` | The average length of creatives that were served in an ad slot |
+| `average_ad_slot_creative_duration` | int | No | `10` | The average length of creatives that were served in an ad slot. |
 | `placement_set_id` | int | No | `7` | The ID of the placement set. |
 | `device_type` | string | No | `"Laptop"` | The name for the type of device where the creative is displayed. |
 

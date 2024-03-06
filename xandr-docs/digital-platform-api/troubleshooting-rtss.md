@@ -37,6 +37,4 @@ The following table shows the possible status returned for the upload overall.
 
 ## Campaigns buying against deactivated targets
 
-Targets that have been uploaded to RTSS with `seg_ttl` values in the future could take a few hours to expire from the RTSS cache after an
-update is sent to the system. In this case, your segments may continue being added to impressions after you have updated your targeting
-parameters. This will continue until those targets have expired.
+Targets that have been uploaded to RTSS with `seg_ttl` values in the future could take a few hours to expire from the RTSS cache after an update is sent to the system. In this case, your segments may continue being added to impressions after you have updated your targeting parameters. This will continue until those targets have expired.

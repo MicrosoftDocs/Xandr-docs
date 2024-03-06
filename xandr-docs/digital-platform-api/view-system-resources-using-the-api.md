@@ -17,8 +17,7 @@ To see what system resources a member can assign to user roles, make a `GET` cal
 curl -bc 'https://api.appnexus.com/access-resource?member_id=1282'
 ```
 
-The output is an array of system resource objects. Examine it to see what system resources the member has access to and could assign to a
-role. Each resource looks like this:
+The output is an array of system resource objects. Examine it to see what system resources the member has access to and could assign to a role. Each resource looks like this:
 
 ```
 {

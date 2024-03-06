@@ -12,7 +12,7 @@ ms.custom: digital-platform-api
 
 The User DRT service was created to allow the DRT (the central user store owned & maintained by Corp-IT) to control access for users. Eventually, roles and permissions will be governed via the DRT service.
 
-The central id used by DRT is the `account_id`, which stores mapping data between the user ID and the account ID.
+The central ID used by DRT is the `account_id`, which stores mapping data between the user ID and the account ID.
 
 > [!NOTE]
 > This service is accessible only to the following types of users:
@@ -24,13 +24,13 @@ The central id used by DRT is the `account_id`, which stores mapping data betwee
 
 | HTTP Method | Endpoint | Decsription |
 |:---|:---|:---|
-| `POST` | [https://api.appnexus.com/user-DRT](https://api.appnexus.com/user-DRT)<br>(User DRT JSON) | Create a new user DRT object for a user. |
-| `PUT` | [https://api.appnexus.com/user-DRT?id=ID](https://api.appnexus.com/user-DRT?id=ID)<br>(User DRT JSON) | Modify a user DRT object. |
-| `GET` | [https://api.appnexus.com/user-DRT](https://api.appnexus.com/user-DRT) | View DRT info for all users. |
-| `GET` | [https://api.appnexus.com/user-DRT?id=ID](https://api.appnexus.com/user-DRT?id=ID) | View DRT info for a specific user. |
-| `GET` | [https://api.appnexus.com/user-DRT?account_id=ACCOUNT_ID](https://api.appnexus.com/user-DRT?account_id=ACCOUNT_ID) | View DRT info for all users under a specific DRT account. |
-| `DELETE` | [https://api.appnexus.com/user-DRT?id=ID](https://api.appnexus.com/user-DRT?id=ID)  | Remove DRT info for a user. |
-| `GET` | [https://api.appnexus.com/user-DRT/meta](https://api.appnexus.com/user-DRT/meta) | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/user-DRT`<br>(User DRT JSON) | Create a new user DRT object for a user. |
+| `PUT` | `https://api.appnexus.com/user-DRT?id=ID`<br>(User DRT JSON) | Modify a user DRT object. |
+| `GET` | `https://api.appnexus.com/user-DRT` | View DRT information for all users. |
+| `GET` | `https://api.appnexus.com/user-DRT?id=ID` | View DRT information for a specific user. |
+| `GET` | `https://api.appnexus.com/user-DRT?account_id=ACCOUNT_ID` | View DRT information for all users under a specific DRT account. |
+| `DELETE` | `https://api.appnexus.com/user-DRT?id=ID`  | Remove DRT information for a user. |
+| `GET` | `https://api.appnexus.com/user-DRT/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
@@ -84,7 +84,7 @@ $ curl -b cookies -c cookies -X POST -d @user-DRT.json 'https://api.appnexus.com
 }
 ```
 
-### Modify DRT info for a user
+### Modify DRT information for a user
 
 ```
 $ cat modify-user-DRT.json
@@ -119,7 +119,7 @@ $ curl -b cookies -c cookies -X PUT -d @modify-user-DRT.json 'https://api.appnex
 }
 ```
 
-### View DRT info for a specific user
+### View DRT information for a specific user
 
 ```
 $ curl -b cookies -c cookies -X GET 'https://api.appnexus.com/user-DRT?id=11'
@@ -144,7 +144,7 @@ $ curl -b cookies -c cookies -X GET 'https://api.appnexus.com/user-DRT?id=11'
 }
 ```
 
-### View DRT info for all user under a specific account
+### View DRT information for all user under a specific account
 
 ```
 $ curl -b cookies -c cookies -X GET 'https://api.appnexus.com/user-DRT?account_id=123'

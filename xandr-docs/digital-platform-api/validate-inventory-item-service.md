@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Validate Inventory Item service
 
-The `inventory-list/validate-inventory-item` service is used to determine whether the app bundle IDs and/or raw URLs (domains or apps)
-you provide in your inventory lists are currently supported by Xandr. This service will validate whether these URLs and app IDs are properly formed and supported as well as indicate whether they violate Xandr policies.
+The `inventory-list/validate-inventory-item` service is used to determine whether the app bundle IDs and/or raw URLs (domains or apps) you provide in your inventory lists are currently supported by Xandr. This service will validate whether these URLs and app IDs are properly formed and supported as well as indicate whether they violate Xandr policies.
 
 ## REST API
 

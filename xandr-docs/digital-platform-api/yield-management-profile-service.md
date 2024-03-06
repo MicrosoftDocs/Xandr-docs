@@ -58,7 +58,7 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the id of the technical attribute (as found in the [Technical Attribute Service](technical-attribute-service.md)) for which the modifier should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the technical attribute (as found in the [Technical Attribute Service](technical-attribute-service.md)) for which the modifier should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
 | `name` | name | This is the name of the technical attribute.<br>**Default:** `N/A` |
 | `type` | enum<br>(`'bias-pct'`,<br>`'bias-cpm'`,<br>`'floor-pct'`,<br>`'floor-cpm'`) | This determines which value to use for the modifier, represented as a percentage or a flat CPM, and what the modifier should be applied to -- the bid or the floor.<br>**Default:** `NULL`<br>**Required On:** `POST`, `PUT` |
 | `amount_pct` | double | This is the % amount the bid or floor should be modified by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'bias-pct'` or `'floor-pct'`). |
@@ -81,7 +81,7 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the id of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the bias should be applied.<br>**Default:** `None`<br>**Required On:** `POST`, `PUT` |
 | `name` | string | This is the name of the buyer member.<br>**Default:** `N/A` |
 | `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
 | `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
@@ -91,7 +91,7 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the id of the buyer group for which the bias should be applied.<br>**Default:** None<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the buyer group for which the bias should be applied.<br>**Default:** None<br>**Required On:** `POST`, `PUT` |
 | `name` | string | This is the name of the buyer group.<br>**Default:** `N/A` |
 | `type` | enum<br>(`'percent'`,`'cpm'`) | This determines which value to use for the bias, represented as a percentage or a flat CPM.<br>**Default:** `"percent"`<br>**Required On:** `POST`, `PUT` |
 | `bias_pct` | double | This is the % amount the buyer member should be adjusted by. If `bias_pct = 5`, then the net bid will be increased 5%.<br>**Default:** `0.00`<br>**Required On:** `POST`, `PUT` (if `type` is `'percent'`). |
@@ -119,21 +119,21 @@ More concretely, the Yield Management Profile is a set of rules with the followi
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the id of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the floor should be applied.<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the buyer member (as found in the [Platform Member Service](platform-member-service.md)) for which the floor should be applied.<br>**Required On:** `POST`, `PUT` |
 | `name` | array | This is the name of the buyer member. |
 
 ### Floors - Brands
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the id of the brand of the creative (as found in the [Brand Service](brand-service.md)) for which the floor should be applied.<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the brand of the creative (as found in the [Brand Service](brand-service.md)) for which the floor should be applied.<br>**Required On:** `POST`, `PUT` |
 | `name` | array | This is the name of the brand. |
 
 ### Floor - Categories
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | This is the id of the category of the creative of the creative (as found in the [Category Service](category-service.md)) for which the floor should be applied.<br>**Required On:** `POST`, `PUT` |
+| `id` | int | This is the ID of the category of the creative of the creative (as found in the [Category Service](category-service.md)) for which the floor should be applied.<br>**Required On:** `POST`, `PUT` |
 | `name` | array | This is the name of the category. |
 
 ## Example

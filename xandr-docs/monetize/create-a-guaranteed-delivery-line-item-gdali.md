@@ -66,7 +66,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic Setting
     > [!NOTE]
     > Disabling **Allow RTB Competition** can negatively affect your overall yield. **Allow RTB Competition** is not available for line items with **Exclusive** delivery type. Line items with **Exclusive** delivery type take precedence over Open Market (or RTB) demand.
 
-1. **Roadblocking**: You can enable roadblocking to serve multiple creatives together on the same page. In cases where managed publishers are using [Seller Tags (AST)](../seller-tag/seller-tag.md) to conduct a single auction for multiple ad slots on a page, you can serve multiple linked creatives by enabling **Roadblocking** for the line item.
+1. **Roadblocking**: You can enable roadblocking to serve multiple creatives together on the same page. In cases where managed publishers are using [Seller Tags (AST)](../seller-tag/seller-tag.md) to conduct a single auction for multiple ad slots on a page (or using video tags for ad pods), you can serve multiple linked creatives by enabling **Roadblocking** for the line item.
 
     One creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are available. If more than one creative per size exists, creatives will rotate through a single slot.
 

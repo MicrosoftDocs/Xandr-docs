@@ -1,11 +1,11 @@
 ---
 title: Geo Analytics Report
-description: Use the geo analytics report to break down campaign delivery and performance by geographic area.
+description: Use the Geo Analytics report to break down campaign delivery and performance by geographic area.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Geo analytics report
+# Geo Analytics report
 
 The **Geo Analytics** report allows you to break down campaign delivery and performance by geographic area. Sample use cases for this report include:
 
@@ -144,7 +144,7 @@ Data retention period for this report is 45 days.
 
 ## Examples
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
 The file should contain the `report_type` of `"geo_analytics"` as well as the columns and report_interval that you want to retrieve. For a full explanation of the fields that can be included in the file, see the [Report Service](./report-service.md).
 

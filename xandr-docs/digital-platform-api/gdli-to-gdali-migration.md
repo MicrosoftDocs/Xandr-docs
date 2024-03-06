@@ -1,6 +1,6 @@
 ---
 title: GDLI to GDALI Migration
-description: This article explains the differences between the legacy GDLI and the new GDALI, and provides links to the resources needed to migrate to using GDALIs.
+description: This article explains the differences between the legacy GDLI and the new GDALI, and provides links to the resources needed to migrate to GDALIs.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -121,7 +121,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint using this JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/insertion-order` endpoint using this JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @legacy_io_gdli.json 'https://api.appnexus.com/insertion-order?advertiser_id=3872575'
@@ -201,7 +201,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint using this JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/insertion-order` endpoint using this JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @seamless_io_gdali.json 'https://api.appnexus.com/insertion-order?advertiser_id=3872575'
@@ -333,7 +333,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
 }
 ```
 
-### Example for supply_strategies - Legacy GDLI
+### Example for `supply_strategies` - Legacy GDLI
 
 ```
 {
@@ -519,7 +519,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) endpoint using this JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/line-item` endpoint using this JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @legacy_gd_imp_cpm.json 'https://api.appnexus.com/line-item?advertiser_id=3872575'
@@ -657,7 +657,7 @@ The GDALI uses the same insertion order and line item service endpoints as the 
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/campaign](https://api.appnexus.com/campaign) endpoint using this JSON and the appropriate `advertiser_id` and `line_item_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/campaign` endpoint using this JSON and the appropriate `advertiser_id` and `line_item_id`.
 
     ```
     $ curl -b cookies -X POST -d @legacy_campaign.json 'https://api.appnexus.com/campaign?advertiser_id=3872575&line_item_id=12950674'
@@ -793,7 +793,7 @@ Further examples can be found on [Line Item Service - GDALI](./line-item-service
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) endpoint using this JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/line-item` endpoint using this JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @gd_imp_cpm.json 'https://api.appnexus.com/line-item?advertiser_id=3872575'

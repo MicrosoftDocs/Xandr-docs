@@ -1,13 +1,15 @@
 ---
 title: External Inventory Code Service
-description: The external inventory code service allows sellers to register their own codes for granular inventory breakdown and report on them during ad calls.
+description: The External Inventory Code service allows sellers to register their own codes for granular inventory breakdown and report on them during ad calls.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# External inventory code service
+# External Inventory Code service
 
-Some sellers use their own codes to break out their inventory more granularly than by Publisher \> Site \> Placement. The External Inventory Code Service allows you to register such codes with Xandr so that you can pass them on ad calls and then report on them. Here's how it works:
+Some sellers use their own codes to break out their inventory more granularly than by Publisher \> Site \> Placement. The External Inventory Code Service allows you to register such codes with Xandr so that you can pass them on ad calls and then report on them.
+
+Here's how it works:
 
 1. You must make a `POST` call to this service to register an external inventory code with Xandr prior to steps 2 and 3.
 1. You pass the code as `ext_inv_code` in the [query string of tag-based](../monetize/placement-tag-parameters.md) ad calls (see example below), or by defining an `extInvCode` value via [AST's defineTag API](../seller-tag/define-tag.md) or the [Mobile SDK's API](../mobile-sdk/support-for-external-inventory-code-and-traffic-source-code-on-android.md).
@@ -19,7 +21,7 @@ Some sellers use their own codes to break out their inventory more granularly th
     - [Network Analytics Feed](./network-analytics-feed.md) via Bulk Reporting API
     - [Log-Level Standard Feed](../log-level-data/standard-feed.md) via LLD
 
-**Example placement tag with external inventory code**
+## Example placement tag with external inventory code
 
 ```
 <script src="https://ib.adnxs.com/ttj?id=1234&ext_inv_code=ABC" type="text/javascript"></script>
@@ -29,13 +31,13 @@ Some sellers use their own codes to break out their inventory more granularly th
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/external-inv-code | View all of your external inventory codes. |
-| `GET` | https://api.appnexus.com/external-inv-code?publisher_id=PUBLISHER_ID | View all external inventory codes for a specific publisher. |
-| `GET` | https://api.appnexus.com/external-inv-code?id=ID | View a specific external inventory code. |
-| `GET` | https://api.appnexus.com/external-inv-code?code=CODE | View a specific external inventory code. |
-| `POST` | https://api.appnexus.com/external-inv-code | Add a new external inventory code. |
-| `PUT` | https://api.appnexus.com/external-inv-code?id=ID | Modify an external inventory code. |
-| `DELETE` | https://api.appnexus.com/external-inv-code?id=ID | Delete an external inventory code. |
+| `GET` | `https://api.appnexus.com/external-inv-code` | View all of your external inventory codes. |
+| `GET` | `https://api.appnexus.com/external-inv-code?publisher_id=PUBLISHER_ID` | View all external inventory codes for a specific publisher. |
+| `GET` | `https://api.appnexus.com/external-inv-code?id=ID` | View a specific external inventory code. |
+| `GET` | `https://api.appnexus.com/external-inv-code?code=CODE` | View a specific external inventory code. |
+| `POST` | `https://api.appnexus.com/external-inv-code` | Add a new external inventory code. |
+| `PUT` | `https://api.appnexus.com/external-inv-code?id=ID` | Modify an external inventory code. |
+| `DELETE` | `https://api.appnexus.com/external-inv-code?id=ID` | Delete an external inventory code. |
 
 ## JSON fields
 

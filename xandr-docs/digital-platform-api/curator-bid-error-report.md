@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Curator Bid Error Report
-description: Use the curator bid error report to gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the platform.
+description: Use the Curator Bid Error report to gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the platform.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Curator bid error report
+# Digital Platform API - Curator Bid Error report
 
 The **Curator Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count is multiplied by 100 to account for the 5% sampling. You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 
@@ -96,9 +96,9 @@ Data in this report is retained for 33 days.
 
 ## Examples
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
-The JSON file should include the `report_type` `"curator_bid_error_report"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filters for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
+The JSON file should include the `report_type` `"curator_bid_error_report"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filters for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
 ```
 $ cat curator_bid_error_report  

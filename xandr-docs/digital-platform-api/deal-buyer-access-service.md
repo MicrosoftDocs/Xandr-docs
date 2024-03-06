@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Deal Buyer Access Service
-description: The deal buyer access service allows buyers to view negotiated deals with UI sellers and external supply partners for preferential pricing, exclusive inventory, and reduced competition. 
+description: The Deal Buyer Access service allows buyers to view negotiated deals with UI sellers and external supply partners for preferential pricing, exclusive inventory, and reduced competition. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Deal buyer access service
+# Digital Platform API - Deal Buyer Access service
 
 This read-only service lets buyers view information about the negotiated deals they have with Xandr's UI sellers and external supply partners. A deal may provide a buyer preferential pricing, access to exclusive inventory, reduced competition on inventory, or other opportunities. Each deal is valid for a single buyer, but note that inventory included in a deal may be encompassed by deals with other buyers as well.
 
@@ -15,12 +15,12 @@ Buyers can use the `deal_targets` field in the [Profile Service](./profile-servi
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/deal-buyer-access | View all deals you have with sellers |
-| `GET` | https://api.appnexus.com/deal-buyer-access?seller_member_id=SELLER_MEMBER_ID  | View all deals you have with a specific seller |
-| `GET` | https://api.appnexus.com/deal-buyer-access?id=DEAL_ID  | View a specific deal |
-| `GET` | https://api.appnexus.com/deal-buyer-access?id=1,2,3 | View multiple deals by ID using a comma-separated list |
-| `GET` | https://api.adnxs.com/deal-buyer-access?search="Deal_ID,DEAL_NAME,orCODE"  | Search for a deal by name, ID, or code |
-| `GET` | https://api.appnexus.com/deal-buyer-access/meta  | Find out which fields you can filter and sort by |
+| `GET` | `https://api.appnexus.com/deal-buyer-access` | View all deals you have with sellers |
+| `GET` | `https://api.appnexus.com/deal-buyer-access?seller_member_id=SELLER_MEMBER_ID`  | View all deals you have with a specific seller |
+| `GET` | `https://api.appnexus.com/deal-buyer-access?id=DEAL_ID`  | View a specific deal |
+| `GET` | `https://api.appnexus.com/deal-buyer-access?id=1,2,3` | View multiple deals by ID using a comma-separated list |
+| `GET` | `https://api.adnxs.com/deal-buyer-access?search="Deal_ID,DEAL_NAME,orCODE"`  | Search for a deal by name, ID, or code |
+| `GET` | `https://api.appnexus.com/deal-buyer-access/meta`  | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

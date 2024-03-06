@@ -1,11 +1,11 @@
 ---
 title: Curated Deal Line Item API Setup Guide
-description: Learn the process of creating and configuring a curated deal line item using our API.
+description: Learn the process of setting up an API implementation of a curated deal line item to target a deal.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Curated deal line item API setup guide
+# Curated Deal Line Item API setup guide
 
 Setting up an API implementation of a Curated Deal Line Item to target a deal requires configuring a number of different properties on different API objects. This guide will explain the process of creating and configuring a curated deal line item using our API.
 
@@ -17,11 +17,11 @@ Setting up a curated deal line item typically involves making requests to the fo
 
 | API Endpoint | API Object | Detailed Reference |
 |:---|:---|:---|
-| https://api.appnexus.com/advertiser | advertiser | [Advertiser Service](./advertiser-service.md) |
-| https://api.appnexus.com/insertion-order | insertion-order | [Insertion Order Service](./insertion-order-service.md) |
-| https://api.appnexus.com/deal | deal | [Deal Service](./deal-service.md) |
-| https://api.appnexus.com/profile | profile | [Profile Service](./profile-service.md) |
-| https://api.appnexus.com/line-item | line-item (ALI) | [Line Item - ALI Service](./line-item-service---ali.md) |
+| `https://api.appnexus.com/advertiser` | advertiser | [Advertiser Service](./advertiser-service.md) |
+| `https://api.appnexus.com/insertion-order` | insertion-order | [Insertion Order Service](./insertion-order-service.md) |
+| `https://api.appnexus.com/deal` | deal | [Deal Service](./deal-service.md) |
+| `https://api.appnexus.com/profile` | profile | [Profile Service](./profile-service.md) |
+| `https://api.appnexus.com/line-item` | line-item (ALI) | [Line Item - ALI Service](./line-item-service---ali.md) |
 
 This guide uses cURL examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/)), but you’ll then need to adjust the examples accordingly.
 
@@ -101,7 +101,7 @@ If you don't already have an advertiser to use, create an advertiser by doing th
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/advertiser](https://api.appnexus.com/advertiser) endpoint with this advertiser JSON and an appropriate `member_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/advertiser` endpoint with this advertiser JSON and an appropriate `member_id`.
 
     ```
     $ curl -b cookies -c cookies -X POST -d @advertiser.json 'https://api.appnexus.com/advertiser?member_id=2378'
@@ -150,7 +150,7 @@ information):
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/insertion-order](https://api.appnexus.com/insertion-order) endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/insertion-order` endpoint with this insertion order JSON and an appropriate `advertiser_id` and `member_id`.
 
     **Example request: No end date, no budget**
 
@@ -194,7 +194,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/deal](https://api.appnexus.com/deal) endpoint with this deal JSON and an appropriate `member_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/deal` endpoint with this deal JSON and an appropriate `member_id`.
 
     ```
     $ curl -b cookies -c cookies -X POST -d @deal.json 'https://api.appnexus.com/deal?member_id=2378'
@@ -214,11 +214,11 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
 | `type` | object | Required | The type of deal. This field must be set to `"5"` for curated deals. |
 | `version` | int | Required | This field must be set to `"2"` in order to associate the deal to a curated deal line item. |
 
-##### Useful optional JSON fields
+#### Useful optional JSON fields
 
-###### JSON fields for allowed creatives
+##### JSON fields for allowed creatives
 
-**Brand (see [Brand Service](./brand-service.md))**
+###### Brand (see [Brand Service](./brand-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -246,7 +246,7 @@ To create a deal, do the following (see [Deal Service](./deal-service.md) for 
             ] 
 ```
 
-**Media type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))**
+###### Media type (see [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md))
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -370,7 +370,7 @@ To create a curated deal line item profile, do the following (see [Profile Serv
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/profile](https://api.appnexus.com/profile) endpoint with this curated deal profile JSON and an appropriate `advertiser_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/profile` endpoint with this curated deal profile JSON and an appropriate `advertiser_id`.
 
     **Example: Profile creation with country and view rate completion rate thresholds**
 
@@ -479,7 +479,7 @@ To create a curated deal line item, do the following (see [Line Item Service](
     }
     ```
 
-1. Make a `POST` request to the [https://api.appnexus.com/line-item](https://api.appnexus.com/line-item) endpoint using this deal line item JSON and an appropriate `advertiser_id`.
+1. Make a `POST` request to the `https://api.appnexus.com/line-item` endpoint using this deal line item JSON and an appropriate `advertiser_id`.
 
     **Example request: Curated deal line item no budget**
 

@@ -97,7 +97,7 @@ Xandr suggests associating your line items with insertion orders to preserve his
 | `pixels` | array of objects | The conversion pixels being used for CPA revenue type. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, speak with your Xandr Implementation Consultant or Support. <br>For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
 | `insertion_orders` | array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](#insertion-orders) below.<br><br>**Note:**<br>Once a line item is associated with a seamless insertion order, it cannot be associated to a non-seamless insertion order. Only seamless insertion orders may be associated with seamless line items. Only non-seamless insertions orders may be associat4ed with non-seamless line items. |
 | `goal_pixels` | array | For a line item with the `goal_type` `"cpa"`, the pixels used for conversion tracking, as well as the post-view and post-click revenue. For more details, see [Goal Pixels](#goal-pixels) and the example below for a sample of the format. |
-| imptrackers | array of objects | The third-party impression trackers associated with the line item. For more details, see [Impression Tracker Service](impression-tracker-service.md).<br>**Read Only.** |
+| `imptrackers` | array of objects | The third-party impression trackers associated with the line item. For more details, see [Impression Tracker Service](impression-tracker-service.md).<br>**Read Only.** |
 | `clicktrackers` | array of objects | The third-party click trackers associated with the line item. For more details, see [Click Tracker Service](click-tracker-service.md).<br>**Read Only.** |
 | `campaigns` | array of objects | The campaigns that are associated with the line item. For more details, see [Campaigns](#campaigns) below.<br><br>**Note:**<br>To associate a campaign to a line item, use the `line_item_id` field in the [Campaign Service](campaign-service.md). Note that no more than 500 campaigns can be associated to a single line item.<br>**Read Only.** |
 | `valuation` | object | For a line item with the `goal_type` `"cpc"` or `"ctr"`, the performance goal threshold, which determines the bid/no bid cutoff on optimized campaigns, and the performance goal target, which represents the desired clicks or click-through rate. For more details, see [Valuation](#valuation) below. |
@@ -331,7 +331,7 @@ Each object in the `budget_intervals` array contains the following fields.
 | `parent_interval_id` | int | The ID of the parent insertion order's budget interval. This is the `id` field in the `budget_intervals` array on the insertion order. Required in order for the line item's budget interval to inherit the values of the `start_date` and `end_date` fields in the insertion order's budget interval. |
 | `lifetime_budget` | double | The lifetime budget in revenue for the budget interval. The revenue currency is defined by the `currency` field on the `insertion_order` object. Set this field to `0` if you don't want the line item to spend during this budget interval.<br>This field defaults to `null` (unlimited).<br><br>**Note:**<br>If you also set the `lifetime_budget_imps` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `lifetime_budget_imps` | int | The lifetime budget in impressions for the budget interval. <br><br>**Note:** If you add line items to this insertion order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted. Set this field to `0` if you don't want the line item to spend during this budget interval.<br><br>This field defaults to `null` (unlimited).<br><br>**Note:**<br>If you also set the `lifetime_budget` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
-| lifetime_pacing | boolean | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. If `true` , you must set `lifetime_budget` or `lifetime_budget_imps`. |
+| `lifetime_pacing` | boolean | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. If `true` , you must set `lifetime_budget` or `lifetime_budget_imps`. |
 | `daily_budget` | double | The daily budget in revenue for the budget interval. The revenue currency is defined by the `currency` field on the `insertion_order` object. <br><br>**Note:** If you add line items to this insertion order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted.<br><br>This field defaults to `null` (unlimited).<br><br>**Note:**<br>If you also set the `daily_budget_imps` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `daily_budget_imps` | int | The daily budget in impressions.<br>This field defaults to `null` (unlimited).<br><br>**Note:**<br>If you also set the `daily_budget` field, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `enable_pacing` | boolean | If `true`, then spending will be paced over the course of the day. Only applicable if there is a `daily_budget`. |
@@ -410,62 +410,62 @@ To include the `first_run` and `last_run` fields in a `GET` response, pass `flig
 
 #### Retrieve only line items that have never served
 
-<!-- Pass `never_run=true` in the query string.
+Pass `never_run=true` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&never_run=true'
 ```
 
 > [!NOTE]
-> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01. -->
+> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01.
 
 #### Retrieve only line items that first served on or after a specific date
 
-<!-- Pass `min_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
+Pass `min_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00'
-``` -->
+```
 
 #### Retrieve only line items that first served on or before a specific date
 
-<!-- Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
+Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_first_run=2012-08-01 00:00:00'
-``` -->
+```
 
 #### Retrieve only line items that first served within a specific date range
 
-<!-- Pass `min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
+Pass `min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00&max_first_run=2012-08-01 00:00:00'
-``` -->
+```
 
 #### Retrieve only line items that last served on or after a specific date
 
-<!-- Pass `min_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
+Pass `min_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00'
-``` -->
+```
 
 #### Retrieve only line items that last served on or before a specific date
 
-<!-- Pass `max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
+Pass `max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_last_run=2012-08-01 00:00:00'
-``` -->
+```
 
 #### Retrieve only line items that last served within a specific date range
 
-<!-- Pass `min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
+Pass `min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
 ```
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00&max_last_run=2012-08-01 00:00:00'
-``` -->
+```
 
 Fields of the type date can be filtered by `nmin` and `nmax` as well. The `nmin` filter lets you find dates that are either null or after the specified date, and the `nmax` filter lets you find dates that are either null or before the specified date.
 
@@ -1196,7 +1196,7 @@ curl -b cookies -c cookies -X POST -d @line-item "https://api.appnexus.com/line-
 
 ### Add a performance offer line item
 
-In this example, we'll create a performance offer line item that buys both managed and cross-net inventory on a cpc basis.
+In this example, we'll create a performance offer line item that buys both managed and cross-net inventory on a CPC basis.
 
 ```
 $ cat line-item

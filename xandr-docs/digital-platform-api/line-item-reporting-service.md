@@ -18,8 +18,8 @@ Xandr admins can use this service to create the `standard_v2` line item.
 
 | HTTP Methods | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://sor-api.adnxs.net/standard_v2](http://sor-api.adnxs.net/standard_v2)<br>(standard_v2 JSON) | Add a new Augmented Targeting line item and associated profile. |
-| `PUT` | [https://sor-api.adnxs.net/standard_v2](https://sor-api.adnxs.net/standard_v2)<br>(standard_v2 JSON) | Modify an Augmented Targeting line item and associated profile. |
+| `POST` | `https://sor-api.adnxs.net/standard_v2`<br>(standard_v2 JSON) | Add a new Augmented Targeting line item and associated profile. |
+| `PUT` | `https://sor-api.adnxs.net/standard_v2`<br>(standard_v2 JSON) | Modify an Augmented Targeting line item and associated profile. |
 
 ## JSON fields
 

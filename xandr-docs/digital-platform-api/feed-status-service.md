@@ -1,11 +1,11 @@
 ---
 title: Feed Status Service
-description: Use the feed status service to check when new reporting data is available via the network analytics feed.
+description: Use the Feed Status service to check when new reporting data is available via the network analytics feed.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Feed status service
+# Feed Status service
 
 The Feed Status Service lets you check when new reporting data is available via the [Network Analytics Feed](./network-analytics-feed.md). New data becomes available when:
 
@@ -20,7 +20,7 @@ The Feed Status Service lets you check when new reporting data is available via 
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| `GET` | https://api.appnexus.com/feed-status?type=network_analytics_feed | Check the status of your Network Analytics Feed |
+| `GET` | `https://api.appnexus.com/feed-status?type=network_analytics_feed` | Check the status of your Network Analytics Feed |
 
 ## JSON fields
 

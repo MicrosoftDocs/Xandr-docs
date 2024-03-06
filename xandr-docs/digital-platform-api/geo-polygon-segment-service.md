@@ -1,11 +1,11 @@
 ---
 title: Geo Polygon Segment Service
-description: Use the geo polygon segment service to create, configure, and export geo polygon segments.
+description: Use the Geo Polygon Segment service to create, configure, and export geo polygon segments.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Geo polygon segment service
+# Geo Polygon Segment service
 
 > [!NOTE]
 > This service is in **Alpha**. This feature is subject to change without notice and is only available to select clients. If you would like to participate in the Alpha test, please contact your account manager.
@@ -22,21 +22,21 @@ To create a segment with geo polygons, follow below steps:
 1. Create a shell segment. To create the shell segment, make a POST call to the **`/geo-polygon-segment`** endpoint.
 1. Upload polygons to the shell segment. You can create a CSV file with polygons in it and make a POST call to the **`/geo-polygon-segment/{segmentID}/upload-polygon`** endpoint.
 
-## Geo polygon segment REST API
+## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/geo-polygon-segment<br>(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
-| `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/upload-polygon <br>(add-polygons.csv) | Add polygons to a segment |
-| `POST` | https://api.appnexus.com/geo-polygon-segment<br>(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
-| `POST` | https://api.appnexus.com/geo-polygon-segment/select<br><br>`POST -d '{"criteria":{},"ordering": {"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo- polygon-segment/select"` | View all geo polygon segments for a member |
-| `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View a specific geo polygon segment's details |
-| `POST` | https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View all geo polygon definitions in a segment |
-| `GET` | https://api.appnexus.com/apd-status | View recent uploads |
-| `GET` | https://api.appnexus.com/apd-status?id=%7Bapd_id%7D | View status of a specific upload |
-| `GET` | https://api.appnexus.com/geo-segment-processor/job-status | View status of a geo polygon upload |
-| `DELETE` | https://api.appnexus.com/geo-polygon-segment/{segmentID} | Delete a geo polygon segment |
-| `DELETE` | https://api.appnexus.com/geo-polygon-segment/%7BsegmentID%7D/polygon/delete<br><br>`POST -d '{"criteria":{"id":{"in":[_polygon_feature_id_]}}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/delete"` | Delete a specific feature from a geo polygon segment |
+| `POST` | `https://api.appnexus.com/geo-polygon-segment`<br><br>(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
+| `POST` | `https://api.appnexus.com/geo-polygon-segment/{segmentID}/upload-polygon`<br><br>(add-polygons.csv) | Add polygons to a segment |
+| `POST` | `https://api.appnexus.com/geo-polygon-segment`<br><br>(new-geo-polygon-segment JSON) | Create a new geo polygon segment |
+| `POST` | `https://api.appnexus.com/geo-polygon-segment/select`<br><br>`POST -d '{"criteria":{},"ordering": {"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo- polygon-segment/select"` | View all geo polygon segments for a member |
+| `POST` |`https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select`<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View a specific geo polygon segment's details |
+| `POST` |`https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select`<br><br>`POST -d '{"criteria":{},"ordering":{"direction":"desc","by":"id"}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/select"` | View all geo polygon definitions in a segment |
+| `GET` | `https://api.appnexus.com/apd-status` | View recent uploads |
+| `GET` | `https://api.appnexus.com/apd-status?id=%7Bapd_id%7D` | View status of a specific upload |
+| `GET` | `https://api.appnexus.com/geo-segment-processor/job-status` | View status of a geo polygon upload |
+| `DELETE` | `https://api.appnexus.com/geo-polygon-segment/{segmentID}` | Delete a geo polygon segment |
+| `DELETE` | `https://api.appnexus.com/geo-polygon-segment/%7BsegmentID%7D/polygon/delete`<br><br>`POST -d '{"criteria":{"id":{"in":[_polygon_feature_id_]}}}' "https://api.appnexus.com/geo-polygon-segment/{segmentID}/polygon/delete"` | Delete a specific feature from a geo polygon segment |
 
 ## JSON fields
 
@@ -49,8 +49,7 @@ To create a segment with geo polygons, follow below steps:
 | `short_name` | string | Short name used to describe the geo polygon segment<br><br>**Required On**: `POST` |
 | `regional_centers` | array of objects | ID or code of the region in which the geo polygon segment is available.<br>**Possible values:**<br> - `ID: 1, 2 or 3`<br> - `code: "americas", "emea", "apac"` |
 
-
-### CSV file format
+### `CSV` file format
 
 The CSV file has the column names as **Polygon** and **Name** and they hold the values for the defined geo-polygons.
 
@@ -59,7 +58,7 @@ The CSV file has the column names as **Polygon** and **Name** and they hold the 
 
 #### Example
 
-##### add-polygons.csv
+##### `add-polygons.csv`
 
 ```
 Polygon,Name
@@ -186,6 +185,7 @@ curl -b cookies "https://api.appnexus.com/apd-status"
 ```
 curl -b cookies "https://api.appnexus.com/apd-status?id=4d362ab8-f94d-11eb-a5ee-3cfdfec8e950"
 ```
+
 ### View upload status of geo polygon upload
 
 ```
@@ -210,7 +210,7 @@ curl -b cookies -c cookies -X POST -d
 "https://api.appnexus.com/geo-polygon-segment/31584260/polygon/delete" | json_reformat
 ```
 
-### Important points to note
+## Important points to note
 
 - The Geo Polygon Segment Service does not currently accept geo polygon definitions with holes (In geometry, a polygon with holes is an area-connected planar polygon with one external boundary and one or more interior boundaries). If a polygon definition contains a hole, the service will ignore the hole.
 - The maximum number of polygon definitions that can be hosted in a segment is 50,000.

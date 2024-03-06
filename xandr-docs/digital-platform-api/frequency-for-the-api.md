@@ -1,6 +1,6 @@
 ---
 title: Frequency for the API
-description: This article provides information on frequency and recency targeting through the API, with an example of how to use it and where to apply it.
+description: This article provides information on frequency and recency targeting through the API with an example of how to use it and where to apply it.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -17,7 +17,7 @@ When a user is shown an ad multiple times over a short period, that user can beg
 
 Xandr supports several levels of frequency targeting through the API. This targeting is specified on the [Profile Service](./profile-service.md), which can be set at the advertiser, insertion order line item, campaign, and creative level. The API frequency settings follow the format shown here:
 
-:::image type="content" source="media/supported-target.png" alt-text="Screenshot showing the format of the API frequency settings.":::
+:::image type="content" source="media/supported-target.png" alt-text="Screenshot that shows the format of the API frequency settings.":::
 
 | Setting | Profile Field | Description |
 |:---|:---|:---|
@@ -29,7 +29,7 @@ Xandr supports several levels of frequency targeting through the API. This targe
 
 The API recency settings follow the format shown here:
 
-:::image type="content" source="media/api-settings.png" alt-text="Screenshot showing the format of the API recency settings.":::
+:::image type="content" source="media/api-settings.png" alt-text="Screenshot that shows the format of the API recency settings.":::
 
 | Setting | Profile Field | Description |
 |:---|:---|:---|
@@ -37,7 +37,7 @@ The API recency settings follow the format shown here:
 
 Some additional settings related to frequency capping include the following:
 
-:::image type="content" source="media/frequency-capping.png" alt-text="Screenshot showing the additional settings related to frequency capping.":::
+:::image type="content" source="media/frequency-capping.png" alt-text="Screenshot that shows the additional settings related to frequency capping.":::
 
 | Setting | Profile Field | Description |
 |:---|:---|:---|
@@ -54,18 +54,18 @@ In addition to the preceding fields, there are three more fields that can be set
 
 ## Examples
 
-Show a creative no more than 50 times over the lifetime of the campaign, 3 times per session, and 10 times per day:
+**Show a creative no more than 50 times over the lifetime of the campaign, 3 times per session, and 10 times per day**:
 
 - `max_lifetime_imps` = 50
 - `max_session_imps` = 3
 - `max_day_imps` = 10
 
-Show a campaign up to 8 times per day but no more than once per hour:
+**Show a campaign up to 8 times per day but no more than once per hour**:
 
 - `max_day_imps` = 8
 - `min_minutes_per_imp` = 60
 
-Show a campaign no more than 3 times per hour:
+**Show a campaign no more than 3 times per hour**:
 
 - `min_minutes_per_imp` = 20 minutes
 

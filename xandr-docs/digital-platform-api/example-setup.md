@@ -1,6 +1,6 @@
 ---
 title: Example Setup
-description: This articles walks you through setup steps and common operations for network users using the API.
+description: This article walks you through setup steps and common operations for network users using the API.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

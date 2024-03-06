@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Curator Analytics Report
-description: Use the curator analytics report to get curators insight into how money is flowing from demand to supply within their curated marketplace.
+description: Use the Curator Analytics report to get curators insight into how money flows from demand to supply within their curated marketplace.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Curator analytics report
+# Digital Platform API - Curator Analytics report
 
 > [!NOTE]
 > This report is only available to curators.
@@ -25,14 +25,14 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_month
 - lifetime
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 1100 days.
 
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Time ranges including dates occurring greater than 45 days ago**
+### Time ranges including dates occurring greater than 45 days ago
 
 If you create Curator Analytics reports with the `report_interval` set to `"lifetime"`, your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails or is deleted, you can:
 
@@ -134,9 +134,9 @@ If you create Curator Analytics reports with the `report_interval` set to `"life
 
 ## Example
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
-The JSON file should include the `report_type` of `"curator_analytics"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
+The JSON file should include the `report_type` of `"curator_analytics"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
 ```
 $ cat curator_analytics
@@ -171,7 +171,7 @@ $ curl -b cookies -X POST -d @curator_analytics 'https://api.appnexus.com/report
 }
 ```
 
-### `GET` the report status from the report service**
+### `GET` the report status from the report service
 
 Make a `GET` call with the Report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 

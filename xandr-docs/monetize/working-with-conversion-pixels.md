@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Conversion Pixels
-description: The article explains a conversion pixel which is used to track user actions in response to an advertiser's creatives.
+description: Explore conversion pixel tracking, analyze user responses to creatives, and determine if conversions stem from user interactions.
 ms.date: 10/28/2023
 ---
 

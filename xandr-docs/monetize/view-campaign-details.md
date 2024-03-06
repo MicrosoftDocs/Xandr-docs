@@ -1,6 +1,6 @@
 ---
 title: View Campaign Details
-description: Navigate campaign details, gain insights on settings, metrics, and performance. Explore visualizations, creative access, and seamless campaign management for success.
+description: Explore campaign details, settings, metrics, and performance. Access visualizations, creative tools for seamless campaign success.
 ms.date: 10/28/2023
 ---
 
@@ -108,8 +108,7 @@ The exact requirements for calculating pacing depend on the quickstats interval 
 
 ## Viewing analytics graphs
 
-By default, the **Analytics** section is collapsed. Expand the section to view graphs that help you visualize the impressions served, media cost spent, revenue earned, and profit
-made (revenue - media cost) for this campaign over the last 14 days. When the campaign has a daily budget or a lifetime budget and a flight end date, the Impressions or Revenue graph shows you the impressions/revenue budgeted for each day so that you can compare the actual and budgeted amounts.
+By default, the **Analytics** section is collapsed. Expand the section to view graphs that help you visualize the impressions served, media cost spent, revenue earned, and profit made (revenue - media cost) for this campaign over the last 14 days. When the campaign has a daily budget or a lifetime budget and a flight end date, the Impressions or Revenue graph shows you the impressions/revenue budgeted for each day so that you can compare the actual and budgeted amounts.
 
 > [!NOTE]
 > You can hover over the columns (actual count) and, when available, data points (budgeted count) to see exact metrics for each day.
@@ -155,8 +154,7 @@ In the **Details** section, you can click **Settings** to view the basic setting
 
 ## Buying strategies
 
-- **Scope** - Whether the campaign is set up to buy direct inventory (**Direct**), third-party inventory (**Real Time**), or both (**Both**). Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including
-  external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
+- **Scope** - Whether the campaign is set up to buy direct inventory (**Direct**), third-party inventory (**Real Time**), or both (**Both**). Direct inventory includes only inventory managed by your network, whereas third-party inventory includes all inventory not managed by your network that has been enabled for reselling (including external supply partners such as Microsoft Advertising Exchange and Google Ad Manager).
 - **Pay-Per-Impression** - If the campaign is set up to buy third-party inventory, this section shows the specific buying strategy for paying publishers on a per-impression basis. This payment type is accepted by all sellers (Microsoft Advertising sellers and external sellers). For more details about specific CPM buying strategies, see [Create a Campaign](create-a-campaign.md) or [Buying Strategies](buying-strategies.md).
 - **Pay-Per-Click** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users click on your ads. This payment type is accepted only by participating Microsoft Advertising sellers, not by external sellers.
 - **Pay-Per-Conversion** - If the campaign is set up to buy third-party inventory, this section shows the specific strategy for paying publishers when users convert. This payment type is accepted only by participating Microsoft Advertising sellers, not by external sellers.
@@ -187,8 +185,7 @@ This section shows any comments that have been recorded with the campaign. Comme
 
 ## Viewing campaign targeting
 
-In the **Details** section, you can click **Targeting** to view the inventory and user targeting settings for the campaign. For each targeting type, inclusions and exclusions are clearly represented, as is the boolean logic within targeting types (e.g., exclude Segment 2 and Segment 3).
-The boolean logic between targeting types is always and (e.g., between Geography targeting and Segment targeting). For example, in the image below, the campaign would bid on impressions only when:
+In the **Details** section, you can click **Targeting** to view the inventory and user targeting settings for the campaign. For each targeting type, inclusions and exclusions are clearly represented, as is the boolean logic within targeting types (e.g., exclude Segment 2 and Segment 3).The boolean logic between targeting types is always and (e.g., between Geography targeting and Segment targeting). For example, in the image below, the campaign would bid on impressions only when:
 
 - The inventory is not in the **Global Blocklist** domain list AND
 - The user is in the **United States** AND

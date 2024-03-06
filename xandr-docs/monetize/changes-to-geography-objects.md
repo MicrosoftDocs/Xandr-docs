@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Changes to Geography Objects
-description: The article summarizes recent changes in geography objects available for targeting, including additions, deactivations, and modifications.
+description: Explore recent geography targeting changes, additions, deactivations, modifications in available objects.
 ms.date: 10/28/2023
 ---
 
@@ -20,107 +20,107 @@ The table below provides a summary of recent additions, deactivations, and modif
 **Recent Changes**
 
 | Date | Country | Action | Change Summary |
-|---|---|---|---|
-| 2023-12-07 | Afghanistan | Addition |  - 277 Cities |
-|  |Afghanistan  | Deactivation |  - 339 Cities |
-|  |Afghanistan  | Modification |  - 27 Cities |
-|  | Albania | Addition |  - 30 Cities |
-|  | Albania | Deactivation |  - 59 Cities |
-|  | Algeria | Addition |  - 75 Cities |
-|  | Algeria | Deactivation |  - 115 Cities |
-|  | Algeria | Modification |  - 2 Cities |
-|  | Angola | Addition |  - 41 Cities |
-|  | Angola | Deactivation |  - 20 Cities |
-|  | Angola | Modification |  - 3 Cities |
-|  | Antigua And Barbuda | Addition |  - 2 Cities<br> - 1 Region |
-|  | Antigua And Barbuda | Deactivation |  - 1 City |
-|  | Antigua And Barbuda | Modification |  - 1 City |
-|  | Argentina | Addition |  - 320 Cities |
-|  | Argentina | Deactivation |  - 376 Cities |
-|  | Argentina | Modification |  - 26 Cities |
-|  | Armenia | Addition |  - 50 Cities |
-|  | Armenia| Deactivation |  - 39 Cities |
-|  | Armenia | Modification |  - 2 Cities |
-|  | Australia | Addition |  - 200 Cities |
-|  | Australia | Deactivation |  - 50 Cities |
-|  | Australia | Modification |  - 1 City |
-|  | Austria | Addition |  - 21 Cities |
-|  | Austria | Deactivation |  - 32 Cities |
-|  | Azerbaijan | Addition |  - 83 Cities |
-|  | Azerbaijan| Deactivation |  - 74 Cities<br> - 1 Region |
-|  |  Azerbaijan| Modification |  - 4 Cities |
-|  | Bahamas | Addition |  - 8 Cities<br> - 3 Regions |
-|  | Bahamas | Deactivation |  - 8 Cities<br> - 2 Regions |
-|  | Bahamas | Modification |  - 1 City |
-|  | Bahrain | Addition |  - 1 City |
-|  | Bahrain | Deactivation |  - 2 Cities |
-|  | Bangladesh | Addition |  - 22 Cities |
-|  | Bangladesh | Deactivation |  - 1 City |
-|  | Barbados | Addition |  - 1 City |
-|  | Barbados | Deactivation |  - 1 City |
-|  | Belarus | Addition |  - 667 Cities |
-|  | Belarus | Deactivation |  - 1499 Cities |
-|  | Belarus | Modification |  - 44 Cities |
-|  | Bolivia | Addition |  - 15 Cities |
-|  | Bolivia | Deactivation |  - 17 Cities |
-|  |  Bolivia| Modification |  - 1 City |
-|  | Bosnia And Herzegovina | Addition |  - 18 Cities |
-|  | Bosnia And Herzegovina | Deactivation |  - 24 Cities |
-|  | Bosnia And Herzegovina | Modification |  - 1 City |
-|  | Brazil | Addition |  - 169 Cities |
-|  | Brazil| Deactivation |  - 120 Cities |
-|  | Brunei Darussalam | Addition |  - 1 City |
-|  | Bulgaria | Addition |  - 300 Cities |
-|  | Bulgaria | Deactivation |  - 461 Cities |
-|  | Bulgaria | Modification |  - 19 Cities |
-|  | Cambodia | Addition |  - 742 Cities |
-|  | Cambodia | Deactivation |  - 959 Cities |
-|  | Cambodia | Modification |  - 35 Cities |
-|  | Canada | Addition |  - 129 Cities |
-|  | Canada | Deactivation |  - 93 Cities |
-|  | Canada | Modification |  - 3 Cities |
-|  | Central African Republic | Addition |  - 3 Cities |
-|  | Central African Republic| Deactivation |  - 1 City |
-|  | Chad | Addition |  - 5 Cities<br> - 4 Regions |
+|--|--|--|--|
+| 2023-12-07 | Afghanistan | Addition | - 277 Cities |
+|  | Afghanistan | Deactivation | - 339 Cities |
+|  | Afghanistan | Modification | - 27 Cities |
+|  | Albania | Addition | - 30 Cities |
+|  | Albania | Deactivation | - 59 Cities |
+|  | Algeria | Addition | - 75 Cities |
+|  | Algeria | Deactivation | - 115 Cities |
+|  | Algeria | Modification | - 2 Cities |
+|  | Angola | Addition | - 41 Cities |
+|  | Angola | Deactivation | - 20 Cities |
+|  | Angola | Modification | - 3 Cities |
+|  | Antigua And Barbuda | Addition | - 2 Cities<br> - 1 Region |
+|  | Antigua And Barbuda | Deactivation | - 1 City |
+|  | Antigua And Barbuda | Modification | - 1 City |
+|  | Argentina | Addition | - 320 Cities |
+|  | Argentina | Deactivation | - 376 Cities |
+|  | Argentina | Modification | - 26 Cities |
+|  | Armenia | Addition | - 50 Cities |
+|  | Armenia | Deactivation | - 39 Cities |
+|  | Armenia | Modification | - 2 Cities |
+|  | Australia | Addition | - 200 Cities |
+|  | Australia | Deactivation | - 50 Cities |
+|  | Australia | Modification | - 1 City |
+|  | Austria | Addition | - 21 Cities |
+|  | Austria | Deactivation | - 32 Cities |
+|  | Azerbaijan | Addition | - 83 Cities |
+|  | Azerbaijan | Deactivation | - 74 Cities<br> - 1 Region |
+|  | Azerbaijan | Modification | - 4 Cities |
+|  | Bahamas | Addition | - 8 Cities<br> - 3 Regions |
+|  | Bahamas | Deactivation | - 8 Cities<br> - 2 Regions |
+|  | Bahamas | Modification | - 1 City |
+|  | Bahrain | Addition | - 1 City |
+|  | Bahrain | Deactivation | - 2 Cities |
+|  | Bangladesh | Addition | - 22 Cities |
+|  | Bangladesh | Deactivation | - 1 City |
+|  | Barbados | Addition | - 1 City |
+|  | Barbados | Deactivation | - 1 City |
+|  | Belarus | Addition | - 667 Cities |
+|  | Belarus | Deactivation | - 1499 Cities |
+|  | Belarus | Modification | - 44 Cities |
+|  | Bolivia | Addition | - 15 Cities |
+|  | Bolivia | Deactivation | - 17 Cities |
+|  | Bolivia | Modification | - 1 City |
+|  | Bosnia And Herzegovina | Addition | - 18 Cities |
+|  | Bosnia And Herzegovina | Deactivation | - 24 Cities |
+|  | Bosnia And Herzegovina | Modification | - 1 City |
+|  | Brazil | Addition | - 169 Cities |
+|  | Brazil | Deactivation | - 120 Cities |
+|  | Brunei Darussalam | Addition | - 1 City |
+|  | Bulgaria | Addition | - 300 Cities |
+|  | Bulgaria | Deactivation | - 461 Cities |
+|  | Bulgaria | Modification | - 19 Cities |
+|  | Cambodia | Addition | - 742 Cities |
+|  | Cambodia | Deactivation | - 959 Cities |
+|  | Cambodia | Modification | - 35 Cities |
+|  | Canada | Addition | - 129 Cities |
+|  | Canada | Deactivation | - 93 Cities |
+|  | Canada | Modification | - 3 Cities |
+|  | Central African Republic | Addition | - 3 Cities |
+|  | Central African Republic | Deactivation | - 1 City |
+|  | Chad | Addition | - 5 Cities<br> - 4 Regions |
 |  | Chile | Deactivation | - 3 Cities |
-|  | China | Addition |  - 66 Cities |
-|  | China | Deactivation |  - 143 Cities |
-|  | China | Modification |  - 2 Cities |
-|  | Colombia | Addition |  - 13 Cities |
-|  | Colombia | Deactivation |  - 14 Cities |
-|  | Comoros | Deactivation |  - 1 City |
-|  | Congo | Deactivation |  - 1 City |
-|  | Costa Rica | Addition |  - 16 Cities |
-|  | Costa Rica | Deactivation |  - 21 Cities |
-|  | Cote D Ivoire | Deactivation |  - 1 City |
-|  | Croatia | Addition |  - 64 Cities |
-|  | Croatia | Deactivation |  - 125 Cities |
-|  | Croatia | Modification |  - 8 Cities |
-|  | Cyprus | Addition |  - 33 Cities |
-|  | Cyprus | Deactivation |  - 82 Cities |
-|  | Cyprus | Modification |  - 3 Cities |
-|  | Czech Republic | Addition |  - 152 Cities |
-|  | Czech Republic | Deactivation |  - 232 Cities |
-|  | Democratic Republic Of The Congo | Addition |  - 5 Cities<br> - 1 Region |
-|  | Democratic Republic Of The Congo | Deactivation |  - 2 Cities |
-|  | Denmark | Addition |  - 4 Cities |
-|  | Dominican Republic | Addition |  - 6 Cities |
-|  | Dominican Republic | Deactivation |  - 8 Cities |
-|  | Ecuador | Addition |  - 23 Cities |
-|  | Ecuador | Deactivation |  - 20 Cities |
-|  | Egypt | Addition |  - 2 Cities |
-|  | El Salvador | Addition |  - 9 Cities |
-|  | El Salvador | Deactivation |  - 5 Cities |
-|  | El Salvador | Modification |  - 1 City |
-|  | Eritrea | Addition |  - 2 Cities |
-|  | Eritrea | Deactivation |  - 2 Cities |
-|  | Estonia | Addition |  - 118 Cities |
-|  | Estonia | Deactivation |  - 248 Cities |
-|  | Estonia | Modification |  - 16 Cities |
-|  | Ethiopia | Addition |  - 1 City |
-|  | Federated States Of Micronesia | Addition |  - 1 City |
-|  | Federated States Of Micronesia | Deactivation |  - 3 Cities |
-|  | Finland | Addition |  - 130 Cities |
+|  | China | Addition | - 66 Cities |
+|  | China | Deactivation | - 143 Cities |
+|  | China | Modification | - 2 Cities |
+|  | Colombia | Addition | - 13 Cities |
+|  | Colombia | Deactivation | - 14 Cities |
+|  | Comoros | Deactivation | - 1 City |
+|  | Congo | Deactivation | - 1 City |
+|  | Costa Rica | Addition | - 16 Cities |
+|  | Costa Rica | Deactivation | - 21 Cities |
+|  | Cote D Ivoire | Deactivation | - 1 City |
+|  | Croatia | Addition | - 64 Cities |
+|  | Croatia | Deactivation | - 125 Cities |
+|  | Croatia | Modification | - 8 Cities |
+|  | Cyprus | Addition | - 33 Cities |
+|  | Cyprus | Deactivation | - 82 Cities |
+|  | Cyprus | Modification | - 3 Cities |
+|  | Czech Republic | Addition | - 152 Cities |
+|  | Czech Republic | Deactivation | - 232 Cities |
+|  | Democratic Republic Of The Congo | Addition | - 5 Cities<br> - 1 Region |
+|  | Democratic Republic Of The Congo | Deactivation | - 2 Cities |
+|  | Denmark | Addition | - 4 Cities |
+|  | Dominican Republic | Addition | - 6 Cities |
+|  | Dominican Republic | Deactivation | - 8 Cities |
+|  | Ecuador | Addition | - 23 Cities |
+|  | Ecuador | Deactivation | - 20 Cities |
+|  | Egypt | Addition | - 2 Cities |
+|  | El Salvador | Addition | - 9 Cities |
+|  | El Salvador | Deactivation | - 5 Cities |
+|  | El Salvador | Modification | - 1 City |
+|  | Eritrea | Addition | - 2 Cities |
+|  | Eritrea | Deactivation | - 2 Cities |
+|  | Estonia | Addition | - 118 Cities |
+|  | Estonia | Deactivation | - 248 Cities |
+|  | Estonia | Modification | - 16 Cities |
+|  | Ethiopia | Addition | - 1 City |
+|  | Federated States Of Micronesia | Addition | - 1 City |
+|  | Federated States Of Micronesia | Deactivation | - 3 Cities |
+|  | Finland | Addition | - 130 Cities |
 |  | Finland | Deactivation | - 170 Cities |
 |  | Finland | Modification | - 4 Cities |
 |  | France | Addition | - 114 Cities |
@@ -130,7 +130,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | France | Deactivation | - 1 City |
 |  | French Southern Territories | Addition | - 1 City |
 |  | Gambia | Addition | - 1 City |
-|  | Georgia | Addition| - 39 Cities |
+|  | Georgia | Addition | - 39 Cities |
 |  | Georgia | Deactivation | - 57 Cities |
 |  | Germany | Addition | - 31 Cities |
 |  | Germany | Deactivation | - 25 Cities |
@@ -139,7 +139,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Greece | Deactivation | - 4 Cities |
 |  | Grenada | Addition | - 1 City |
 |  | Guatemala | Addition | - 4 Cities |
-|  |  Guatemala| Deactivation | - 11 Cities |
+|  | Guatemala | Deactivation | - 11 Cities |
 |  | Guinea-bissau | Addition | - 1 City |
 |  | Guinea-bissau | Deactivation | - 1 City |
 |  | Guyana | Deactivation | - 2 Cities |
@@ -155,7 +155,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | India | Deactivation | - 99 Cities |
 |  | India | Modification | - 11 Cities |
 |  | Indonesia | Addition | - 50 Cities |
-|  |  Indonesia| Deactivation | - 33 Cities |
+|  | Indonesia | Deactivation | - 33 Cities |
 |  | Indonesia | Modification | - 1 City |
 |  | Iraq | Addition | - 5 Cities |
 |  | Iraq | Deactivation | - 1 City |
@@ -184,7 +184,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Libyan Arab Jamahiriya | Deactivation | - 62 Cities |
 |  | Libyan Arab Jamahiriya | Modification | - 2 Cities |
 |  | Lithuania | Addition | - 371 Cities |
-|  | Lithuania| Deactivation | - 467 Cities |
+|  | Lithuania | Deactivation | - 467 Cities |
 |  | Lithuania | Modification | - 46 Cities |
 |  | Luxembourg | Addition | - 31 Cities |
 |  | Luxembourg | Deactivation | - 33 Cities |
@@ -206,8 +206,8 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Mexico | Deactivation | - 1830 Cities |
 |  | Mexico | Modification | - 110 Cities |
 |  | Moldova | Addition | - 83 Cities |
-|  |  Moldova | Deactivation | - 96 Cities |
-|  |  Moldova | Modification | - 1 City |
+|  | Moldova | Deactivation | - 96 Cities |
+|  | Moldova | Modification | - 1 City |
 |  | Mongolia | Addition | - 23 Cities |
 |  | Mongolia | Deactivation | - 31 Cities |
 |  | Montenegro | Deactivation | - 4 Cities |
@@ -228,14 +228,14 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | New Zealand | Deactivation | - 6 Cities |
 |  | Nicaragua | Addition | - 6 Cities |
 |  | Nicaragua | Deactivation | - 19 Cities |
-|  | Nicaragua| Modification | - 1 City |
+|  | Nicaragua | Modification | - 1 City |
 |  | Niger | Addition | - 1 City |
 |  | Nigeria | Addition | - 354 Cities |
 |  | Nigeria | Deactivation | - 300 Cities |
 |  | Nigeria | Modification | - 28 Cities |
 |  | Norway | Addition | - 37 Cities<br>- 1 Region |
-|  | Norway| Deactivation | - 45 Cities |
-|  | Norway| Modification | - 1 City |
+|  | Norway | Deactivation | - 45 Cities |
+|  | Norway | Modification | - 1 City |
 |  | Oman | Addition | - 1 City |
 |  | Pakistan | Addition | - 116 Cities |
 |  | Pakistan | Deactivation | - 123 Cities |
@@ -280,7 +280,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Serbia | Deactivation | - 222 Cities |
 |  | Serbia | Modification | - 7 Cities |
 |  | Slovakia (slovak Republic) | Addition | - 162 Cities |
-|  | Slovakia (slovak Republic)| Deactivation | - 150 Cities |
+|  | Slovakia (slovak Republic) | Deactivation | - 150 Cities |
 |  | Slovakia (slovak Republic) | Modification | - 4 Cities |
 |  | Slovenia | Addition | - 8 Cities |
 |  | Slovenia | Deactivation | - 17 Cities<br>- 1 Region |
@@ -353,10 +353,10 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Zimbabwe | Addition | - 2 Cities |
 | 2023-11-06 | Afghanistan | Addition | - 230 Cities |
 |  | Afghanistan | Deactivation | - 250 Cities |
-|  |Afghanistan  | Modification | - 23 Cities |
+|  | Afghanistan | Modification | - 23 Cities |
 |  | Albania | Addition | - 16 Cities |
 |  | Albania | Deactivation | - 29 Cities |
-|  | Albania| Modification | - 1 City |
+|  | Albania | Modification | - 1 City |
 |  | Algeria | Addition | - 68 Cities |
 |  | Algeria | Deactivation | - 89 Cities |
 |  | Angola | Addition | - 15 Cities |
@@ -385,13 +385,13 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Bangladesh | Addition | - 11 Cities |
 |  | Barbados | Addition | - 2 Cities |
 |  | Belarus | Addition | - 583 Cities |
-|  |  Belarus| Deactivation | - 836 Cities |
+|  | Belarus | Deactivation | - 836 Cities |
 |  | Belarus | Modification | - 106 Cities |
 |  | Belgium | Addition | - 1 City |
 |  | Bolivia | Addition | - 5 Cities |
-|  | Bolivia| Deactivation | - 17 Cities |
+|  | Bolivia | Deactivation | - 17 Cities |
 |  | Bosnia And Herzegovina | Addition | - 11 Cities |
-|  |  Bosnia And Herzegovina | Deactivation | - 18 Cities |
+|  | Bosnia And Herzegovina | Deactivation | - 18 Cities |
 |  | Brazil | Addition | - 196 Cities |
 |  | Brazil | Deactivation | - 104 Cities |
 |  | Brazil | Modification | - 1 City |
@@ -407,10 +407,10 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Canada | Addition | - 148 Cities |
 |  | Canada | Deactivation | - 78 Cities |
 |  | Canada | Modification | - 5 Cities |
-|  | Central African Republic | Addition |  - 1 City |
-|  | Central African Republic| Deactivation |  - 1 City |
-|  | Chad | Addition |  - 7 Cities<br> - 3 Regions |
-|  | Chad | Deactivation |  - 1 City<br> - 1 Region |
+|  | Central African Republic | Addition | - 1 City |
+|  | Central African Republic | Deactivation | - 1 City |
+|  | Chad | Addition | - 7 Cities<br> - 3 Regions |
+|  | Chad | Deactivation | - 1 City<br> - 1 Region |
 |  | Chile | Addition | - 1 City |
 |  | China | Addition | - 69 Cities |
 |  | China | Deactivation | - 52 Cities |
@@ -434,8 +434,8 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Democratic Republic Of The Congo | Addition | - 1 City<br> - 1 Region |
 |  | Democratic Republic Of The Congo | Deactivation | - 1 City<br> - 1 Region |
 |  | Denmark | Addition | - 14 Cities |
-|  | Denmark | Deactivation |  - 4 Cities |
-|  | Denmark | Modification |  - 1 City |
+|  | Denmark | Deactivation | - 4 Cities |
+|  | Denmark | Modification | - 1 City |
 |  | Djibouti | Deactivation | - 1 City<br> - 1 Region |
 |  | Dominican Republic | Addition | - 10 Cities |
 |  | Dominican Republic | Deactivation | - 7 Cities |
@@ -446,14 +446,14 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | El Salvador | Deactivation | - 5 Cities |
 |  | Eritrea | Deactivation | - 2 Cities |
 |  | Estonia | Addition | _ 85 Cities |
-|  | Estonia | Deactivation |  - 129 Cities |
-|  | Estonia | Modification |  - 11 Cities |
+|  | Estonia | Deactivation | - 129 Cities |
+|  | Estonia | Modification | - 11 Cities |
 |  | Ethiopia | Addition | - 1 City |
 |  | Ethiopia | Deactivation | - 1 City |
 |  | Federated States Of Micronesia | Addition | - 2 Cities |
 |  | Finland | Addition | - 91 Cities |
 |  | Finland | Deactivation | - 96 Cities |
-|  | Finland| Modification | - 1 City |
+|  | Finland | Modification | - 1 City |
 |  | France | Addition | - 261 Cities |
 |  | France | Deactivation | - 61 Cities |
 |  | France | Modification | - 2 Cities |
@@ -486,7 +486,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Indonesia | Addition | - 52 Cities |
 |  | Indonesia | Deactivation | - 43 Cities |
 |  | Iraq | Addition | - 3 Cities |
-|  | Iraq  | Deactivation | - 3 Cities |
+|  | Iraq | Deactivation | - 3 Cities |
 |  | Ireland | Addition | - 3 Cities |
 |  | Israel | Addition | - 1 City |
 |  | Israel | Deactivation | - 10 Cities |
@@ -518,7 +518,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Lithuania | Modification | - 27 Cities |
 |  | Luxembourg | Addition | - 25 Cities |
 |  | Luxembourg | Deactivation | - 19 Cities |
-|  | Luxembourg | Modification |  - 1 City |
+|  | Luxembourg | Modification | - 1 City |
 |  | Macedonia | Addition | - 22 Cities |
 |  | Macedonia | Deactivation | - 43 Cities<br>- 2 Regions |
 |  | Macedonia | Modification | - 4 Cities |
@@ -577,8 +577,8 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Peru | Deactivation | - 68 Cities |
 |  | Peru | Modification | - 4 Cities |
 |  | Philippines | Addition | - 1127 Cities |
-|  |  Philippines | Deactivation | - 587 Cities |
-|  |  Philippines | Modification | - 63 Cities |
+|  | Philippines | Deactivation | - 587 Cities |
+|  | Philippines | Modification | - 63 Cities |
 |  | Poland | Addition | - 361 Cities |
 |  | Poland | Deactivation | - 182 Cities |
 |  | Poland | Modification | - 12 Cities |
@@ -600,8 +600,8 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Saudi Arabia | Addition | - 2 Cities |
 |  | Saudi Arabia | Deactivation | - 3 Cities |
 |  | Serbia | Addition | - 138 Cities |
-|  |  Serbia | Deactivation | - 142 Cities |
-|  |  Serbia | Modification | - 11 Cities |
+|  | Serbia | Deactivation | - 142 Cities |
+|  | Serbia | Modification | - 11 Cities |
 |  | Slovakia (slovak Republic) | Addition | - 84 Cities |
 |  | Slovakia | Deactivation | - 90 Cities |
 |  | Slovakia | Modification | - 7 Cities |
@@ -629,7 +629,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Switzerland | Modification | - 4 Cities |
 |  | Taiwan Province Of China | Addition | - 5 Cities |
 |  | Tajikistan | Addition | - 2 Cities |
-|  |  Tajikistan| Deactivation | - 1 City |
+|  | Tajikistan | Deactivation | - 1 City |
 |  | Tanzania | Addition | - 1 City |
 |  | Thailand | Addition | - 18 Cities |
 |  | Thailand | Deactivation | - 5 Cities |
@@ -673,47 +673,47 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Zimbabwe | Addition | - 1 City |
 |  | Zimbabwe | Deactivation | - 2 Cities |
 | 2023-10-19 | Afghanistan | Addition | - 303 Cities |
-|  |Afghanistan  | Deactivation | - 298 Cities |
-|  |Afghanistan  | Modification | - 33 Cities |
+|  | Afghanistan | Deactivation | - 298 Cities |
+|  | Afghanistan | Modification | - 33 Cities |
 |  | Albania | Addition | - 29 Cities |
 |  | Albania | Deactivation | - 32 Cities |
 |  | Albania | Modification | - 2 Cities |
 |  | Algeria | Addition | - 66 Cities |
-|  |Algeria  | Deactivation | - 91 Cities |
-|  |Algeria  | Modification | - 2 Cities |
+|  | Algeria | Deactivation | - 91 Cities |
+|  | Algeria | Modification | - 2 Cities |
 |  | Angola | Addition | - 22 Cities |
-|  |Angola  | Deactivation | - 21 Cities |
+|  | Angola | Deactivation | - 21 Cities |
 |  | Antigua And Barbuda | Addition | - 1 City |
 |  | Argentina | Addition | - 277 Cities |
-|  |Argentina  | Deactivation | - 279 Cities |
-|  |Argentina  | Modification | - 34 Cities |
+|  | Argentina | Deactivation | - 279 Cities |
+|  | Argentina | Modification | - 34 Cities |
 |  | Armenia | Addition | - 53 Cities |
-|  |Armenia  | Deactivation | - 63 Cities |
+|  | Armenia | Deactivation | - 63 Cities |
 |  | Armenia | Modification | - 2 Cities |
 |  | Australia | Addition | - 132 Cities |
-|  |Australia  | Deactivation | - 69 Cities |
-|  |Australia  | Modification | - 1 City |
+|  | Australia | Deactivation | - 69 Cities |
+|  | Australia | Modification | - 1 City |
 |  | Austria | Addition | - 40 Cities |
-|  |Austria  | Deactivation | - 12 Cities |
-|  |Austria  | Modification | - 1 City |
+|  | Austria | Deactivation | - 12 Cities |
+|  | Austria | Modification | - 1 City |
 |  | Azerbaijan | Addition | - 54 Cities<br> - 1 Region |
-|  |Azerbaijan  | Deactivation | - 80 Cities<br> - 1 Region |
-|  |Azerbaijan  | Modification | - 1 City |
+|  | Azerbaijan | Deactivation | - 80 Cities<br> - 1 Region |
+|  | Azerbaijan | Modification | - 1 City |
 |  | Bahamas | Addition | - 7 Cities<br> - 1 Region |
-|  |Bahamas  | Deactivation | - 7 Cities<br> - 1 Region |
+|  | Bahamas | Deactivation | - 7 Cities<br> - 1 Region |
 |  | Bahrain | Deactivation | - 2 Cities |
 |  | Bangladesh | Addition | - 15 Cities |
 |  | Bangladesh | Deactivation | - 1 City |
 |  | Barbados | Addition | - 1 City |
 |  | Belarus | Addition | - 723 Cities |
-|  |Belarus  | Deactivation | - 964 Cities |
-|  |Belarus  | Modification | - 139 Cities |
+|  | Belarus | Deactivation | - 964 Cities |
+|  | Belarus | Modification | - 139 Cities |
 |  | Belgium | Deactivation | - 1 City |
 |  | Bolivia | Addition | - 14 Cities |
-|  |Bolivia  | Deactivation | - 9 Cities |
-|  |Bolivia  | Modification | - 1 City |
+|  | Bolivia | Deactivation | - 9 Cities |
+|  | Bolivia | Modification | - 1 City |
 |  | Bosnia And Herzegovina | Addition | - 10 Cities |
-|  |Bosnia And Herzegovina  | Deactivation | - 23 Cities |
+|  | Bosnia And Herzegovina | Deactivation | - 23 Cities |
 |  | Botswana | Addition | - 2 Cities |
 |  | Botswana | Deactivation | - 1 City |
 |  | Brazil | Addition | - 102 Cities |
@@ -747,7 +747,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Costa Rica | Deactivation | -  12 Cities |
 |  | Costa Rica | Modification | - 1 City |
 |  | Croatia | Addition | - 52 Cities |
-|  | Croatia | Deactivation |  - 81 Cities |
+|  | Croatia | Deactivation | - 81 Cities |
 |  | Croatia | Modification | - 5 Cities |
 |  | Cyprus | Addition | - 25 Cities |
 |  | Cyprus | Deactivation | - 40 Cities |
@@ -785,7 +785,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Gabon | Addition | - 8 Cities |
 |  | Georgia | Addition | - 39 Cities |
 |  | Georgia | Deactivation | - 66 Cities |
-|  | Georgia| Modification | - 2 Cities |
+|  | Georgia | Modification | - 2 Cities |
 |  | Germany | Addition | - 45 Cities |
 |  | Germany | Deactivation | - 17 Cities |
 |  | Germany | Modification | - 1 City |
@@ -809,8 +809,8 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Hungary | Deactivation | - 65 Cities |
 |  | Iceland | Deactivation | - 1 City |
 |  | India | Addition | - 90 Cities |
-|  | India  | Deactivation | - 15 Cities |
-|  | India  | Modification | - 1 City |
+|  | India | Deactivation | - 15 Cities |
+|  | India | Modification | - 1 City |
 |  | Indonesia | Addition | - 37 Cities |
 |  | Indonesia | Deactivation | - 21 Cities |
 |  | Iraq | Addition | - 2 Cities |
@@ -823,14 +823,14 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Italy | Deactivation | - 21 Cities |
 |  | Jamaica | Deactivation | - 5 Cities |
 |  | Japan | Addition | - 341 Cities |
-|  |  Japan| Deactivation | - 58 Cities |
+|  | Japan | Deactivation | - 58 Cities |
 |  | Jordan | Addition | - 2 Cities |
 |  | Jordan | Deactivation | - 2 Cities |
 |  | Kazakhstan | Addition | - 64 Cities |
-|  | Kazakhstan  | Deactivation | - 49 Cities |
-|  | Kazakhstan  | Modification | - 6 Cities |
+|  | Kazakhstan | Deactivation | - 49 Cities |
+|  | Kazakhstan | Modification | - 6 Cities |
 |  | Kyrgyzstan | Addition | - 11 Cities |
-|  | Kazakhstan  | Deactivation | - 15 Cities |
+|  | Kazakhstan | Deactivation | - 15 Cities |
 |  | Latvia | Addition | - 20 Cities |
 |  | Latvia | Deactivation | - 36 Cities |
 |  | Latvia | Modification | - 3 Cities |
@@ -934,65 +934,65 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Saudi Arabia | Deactivation | - 7 Cities |
 |  | Serbia | Addition | - 205 Cities |
 |  | Serbia | Deactivation | - 229 Cities |
-|  | Serbia| Modification |  - 12 Cities |
-|  | Slovakia (slovak Republic) | Addition |  - 96 Cities |
-|  | Slovakia (slovak Republic) | Deactivation |  - 113 Cities |
-|  | Slovakia (slovak Republic) | Modification |  - 7 Cities |
-|  | Slovenia | Addition |  - 15 Cities |
-|  | Somalia | Addition |  - 4 Cities<br> - 1 Region |
-|  | Somalia | Deactivation |  - 4 Cities |
-|  | South Africa | Addition |  - 29 Cities |
-|  | South Africa | Deactivation |  - 1 City |
-|  | South Korea | Addition |  - 2 Cities |
-|  | Spain | Addition |  - 442 Cities |
-|  | Spain | Deactivation |  - 617 Cities |
-|  | Spain | Modification |  - 26 Cities |
-|  | Sri Lanka | Addition |  - 25 Cities |
-|  | Suriname | Addition |  - 3 Cities |
-|  | Suriname | Deactivation |  - 2 Cities |
-|  | Swaziland | Addition |  - 3 Cities |
-|  | Swaziland | Deactivation |  - 3 Cities |
-|  | Sweden | Addition |  - 4 Cities |
-|  | Sweden | Deactivation |  - 4 Cities |
-|  | Switzerland | Addition |  - 66 Cities |
-|  | Switzerland | Deactivation |  - 74 Cities |
-|  | Switzerland | Modification |  - 1 City |
-|  | Taiwan Province Of China | Addition |  - 4 Cities |
-|  | Taiwan Province Of China | Deactivation |  - 1 City |
-|  | Tajikistan | Deactivation |  - 2 Cities<br> - 1 Region |
-|  | Tanzania | Addition |  - 1 City |
+|  | Serbia | Modification | - 12 Cities |
+|  | Slovakia (slovak Republic) | Addition | - 96 Cities |
+|  | Slovakia (slovak Republic) | Deactivation | - 113 Cities |
+|  | Slovakia (slovak Republic) | Modification | - 7 Cities |
+|  | Slovenia | Addition | - 15 Cities |
+|  | Somalia | Addition | - 4 Cities<br> - 1 Region |
+|  | Somalia | Deactivation | - 4 Cities |
+|  | South Africa | Addition | - 29 Cities |
+|  | South Africa | Deactivation | - 1 City |
+|  | South Korea | Addition | - 2 Cities |
+|  | Spain | Addition | - 442 Cities |
+|  | Spain | Deactivation | - 617 Cities |
+|  | Spain | Modification | - 26 Cities |
+|  | Sri Lanka | Addition | - 25 Cities |
+|  | Suriname | Addition | - 3 Cities |
+|  | Suriname | Deactivation | - 2 Cities |
+|  | Swaziland | Addition | - 3 Cities |
+|  | Swaziland | Deactivation | - 3 Cities |
+|  | Sweden | Addition | - 4 Cities |
+|  | Sweden | Deactivation | - 4 Cities |
+|  | Switzerland | Addition | - 66 Cities |
+|  | Switzerland | Deactivation | - 74 Cities |
+|  | Switzerland | Modification | - 1 City |
+|  | Taiwan Province Of China | Addition | - 4 Cities |
+|  | Taiwan Province Of China | Deactivation | - 1 City |
+|  | Tajikistan | Deactivation | - 2 Cities<br> - 1 Region |
+|  | Tanzania | Addition | - 1 City |
 |  | Thailand | Addition | 13 Cities |
-|  | Thailand | Deactivation |  - 7 Cities |
-|  | Tokelau | Addition |  - 1 City<br> - 1 Region |
-|  | Trinidad And Tobago | Addition |  - 1 City |
-|  | Tunisia | Addition |  - 14 Cities |
-|  | Tunisia | Deactivation |  - 17 Cities |
-|  | Turkey | Addition |  - 281 Cities |
-|  | Turkey| Deactivation |  - 527 Cities |
-|  | Turkey | Modification |  - 15 Cities |
-|  | Ukraine | Addition |  - 1590 Cities |
-|  | Ukraine | Deactivation |  - 1545 Cities |
-|  | Ukraine | Modification |  - 102 Cities |
-|  | United Arab Emirates | Addition |  - 3 Cities |
-|  | United Arab Emirates | Deactivation |  - 2 Cities |
-|  | United Arab Emirates | Modification |  - 1 City |
-|  | United Kingdom | Addition |  - 462 Cities |
-|  | United Kingdom | Deactivation |  - 606 Cities |
-|  | United Kingdom | Modification |  - 2 Cities |
-|  | United States | Addition |  - 55 Cities |
-|  | United States | Deactivation |  - 50 Cities |
-|  | United States | Modification |  - 7 Cities |
-|  | Uruguay | Addition |  - 7 Cities |
-|  | Uruguay | Deactivation |  - 8 Cities |
-|  | Us Minor Outlying Islands | Addition |  - 1 City<br> - 1 Region |
-|  | Uzbekistan | Addition |  - 7 Cities |
-|  | Uzbekistan | Deactivation |  - 4 Cities |
-|  | Venezuela | Addition |  - 24 Cities |
-|  | Venezuela | Deactivation |  - 21 Cities |
-|  |  Venezuela| Modification |  - 5 Cities |
-|  | Viet Nam | Addition |  - 39 Cities |
-|  | Viet Nam  | Deactivation |  - 57 Cities |
-|  | Viet Nam  | Modification |  - 74 Cities |
-|  | Yemen | Addition |  - 15 Cities |
-|  |Yemen  | Deactivation |  - 14 Cities |
-|  | Zimbabwe | Addition |  - 5 Cities |
+|  | Thailand | Deactivation | - 7 Cities |
+|  | Tokelau | Addition | - 1 City<br> - 1 Region |
+|  | Trinidad And Tobago | Addition | - 1 City |
+|  | Tunisia | Addition | - 14 Cities |
+|  | Tunisia | Deactivation | - 17 Cities |
+|  | Turkey | Addition | - 281 Cities |
+|  | Turkey | Deactivation | - 527 Cities |
+|  | Turkey | Modification | - 15 Cities |
+|  | Ukraine | Addition | - 1590 Cities |
+|  | Ukraine | Deactivation | - 1545 Cities |
+|  | Ukraine | Modification | - 102 Cities |
+|  | United Arab Emirates | Addition | - 3 Cities |
+|  | United Arab Emirates | Deactivation | - 2 Cities |
+|  | United Arab Emirates | Modification | - 1 City |
+|  | United Kingdom | Addition | - 462 Cities |
+|  | United Kingdom | Deactivation | - 606 Cities |
+|  | United Kingdom | Modification | - 2 Cities |
+|  | United States | Addition | - 55 Cities |
+|  | United States | Deactivation | - 50 Cities |
+|  | United States | Modification | - 7 Cities |
+|  | Uruguay | Addition | - 7 Cities |
+|  | Uruguay | Deactivation | - 8 Cities |
+|  | Us Minor Outlying Islands | Addition | - 1 City<br> - 1 Region |
+|  | Uzbekistan | Addition | - 7 Cities |
+|  | Uzbekistan | Deactivation | - 4 Cities |
+|  | Venezuela | Addition | - 24 Cities |
+|  | Venezuela | Deactivation | - 21 Cities |
+|  | Venezuela | Modification | - 5 Cities |
+|  | Viet Nam | Addition | - 39 Cities |
+|  | Viet Nam | Deactivation | - 57 Cities |
+|  | Viet Nam | Modification | - 74 Cities |
+|  | Yemen | Addition | - 15 Cities |
+|  | Yemen | Deactivation | - 14 Cities |
+|  | Zimbabwe | Addition | - 5 Cities |

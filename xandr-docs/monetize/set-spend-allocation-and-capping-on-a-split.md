@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Spend Allocation and Capping on a Split
-description: The article explains daily budget allocation, capping settings managing conflicts in spend allocation versus line item delivery goals.
+description: Explore daily budget, cap settings, and manage conflicts in spending allocation versus line item delivery goals.
 ms.date: 10/28/2023
 ---
 

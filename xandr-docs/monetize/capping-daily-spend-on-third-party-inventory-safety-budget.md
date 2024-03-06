@@ -16,7 +16,6 @@ A safety budget allows you to set a Network-wide cap for your daily media cost s
 While a safety budget can help prevent accidental overspend, it is not a replacement for the proper use of budgeting and even daily pacing. Best practices for budgeting include:
 
 - Applying budgets, pacing and targeting at the appropriate level.
-
 - Developing comprehensive checklists or approval processes to review your setup before going live.
 
   Ultimately, use the safety budget as an additional layer of security, but try to structure your workflow in such a way that you are never relying solely on this feature.

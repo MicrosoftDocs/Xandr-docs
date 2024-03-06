@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Impression and Click Trackers
-description: The article details off-platform ad server's impression and click trackers for tracking hosted creatives' impressions and clicks.
+description: Explore off-platform ad server's trackers, monitoring hosted creatives' impressions and clicks without colons, slashes, or semi-colons.
 ms.date: 10/28/2023
 ---
 

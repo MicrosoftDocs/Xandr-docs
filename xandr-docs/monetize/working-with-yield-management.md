@@ -1,6 +1,6 @@
 ---
 title: Working with Yield Management
-description: The article explores Yield Management tools for networks and publishers, enhancing control over impression pricing, optimizing yields, and avoiding conflicts.
+description: Explore Yield Management tools to control impression pricing, optimize yields, and prevent conflicts for networks and publishers.
 ms.date: 10/28/2023
 ---
 

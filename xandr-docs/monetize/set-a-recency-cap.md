@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set a Recency Cap
-description: The article helps you to set recency caps where you can specify impressions and frequency for controlled ad displays.
+description: Explore how to set recency caps where you can specify impressions and frequency for controlled ad displays.
 ms.date: 10/28/2023
 ---
 

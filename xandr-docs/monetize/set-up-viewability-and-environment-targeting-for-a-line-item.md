@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Viewability and Environment Targeting for a Line Item
-description: The article provides instructions on setting up viewability and environment targeting for a specific line item.
+description: Explore how to optimize ad reach by setting viewability and environment targets. Narrow campaign focus for valuable inventory.
 ms.date: 10/28/2023
 ---
 

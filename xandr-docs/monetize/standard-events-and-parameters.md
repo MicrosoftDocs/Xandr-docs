@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Standard Events and Parameters
-description: The article outlines the Standard Events and Parameters that can be tracked using the universal pixel.
+description: Explore tracking Standard Events and Parameters with the universal pixel to streamline data collection. View standard events and query parameters. 
 ms.date: 10/28/2023
 ---
 

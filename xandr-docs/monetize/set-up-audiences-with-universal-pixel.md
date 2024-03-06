@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Audiences with Universal Pixel
-description: Maximize ads with a universal pixel. Create audience segments effortlessly, establish rules, and optimize targeting in line items. 
+description: Explore maximizing ads using a universal pixel. Effortlessly create audience segments, set rules, and optimize targeting in line items.
 ms.date: 10/28/2023
 ---
 
@@ -10,7 +10,7 @@ You can set up audiences for your universal pixel using rules and conditions, th
 
 To configure an audience:
 
-1. From the top menu bar, click  **Advertisers** \> **Universal Pixel**.
+1. From the top menu bar, click **Advertisers** \> **Universal Pixel**.
 1. Select a pixel from the **Universal Pixels** page.
 
    If no pixels are defined, use the setup instructions in [Universal Pixel Basic Implementation](universal-pixel-basic-implementation.md) to create one.
@@ -19,6 +19,7 @@ To configure an audience:
 1. Provide a name for the audience.
 
    You can use this name to select an audience segment in your line item settings under **Audience Location and Targeting**.
+
 1. Under **Include people who**, create conditions to define the audience segment you  want your pixel to populate. Use AND if you want all conditions to be fulfilled to qualify a user for the segment. Use OR if any of the conditions will qualify the user.
 1. Under **Keep people in audience**, decide how long the users you have identified should remain in the audience segment you are creating.
 

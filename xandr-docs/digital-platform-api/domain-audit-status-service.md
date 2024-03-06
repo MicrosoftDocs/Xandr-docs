@@ -1,11 +1,11 @@
 ---
 title: Domain Audit Status Service
-description: Use the domain audit status service to check whether specific domains are on the platform and how Xandr has classified them.
+description: Use the Domain Audit Status service to check whether specific domains are on the platform and how Xandr has classified them.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Domain audit status service
+# Domain Audit Status service
 
 The Domain Audit Status Service lets you check whether or not specific domains are on the Xandr platform and, if they are, how Xandr has classified them. This service is particularly useful for sellers who are interested in migrating domains onto the platform but first want to make sure that the domains have not already been rejected by Xandr. Also, since audited domains generally see more fill, sellers can use this service to identify domains already on the platform that they would like Xandr to audit.
 
@@ -26,7 +26,7 @@ Here's how it works:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/url-audit-search | View the audit status of one or more domains<br><br>**Note**: This is a read-only service. Although you `POST` a JSON file, no objects are created in the system. |
+| `POST` | `https://api.appnexus.com/url-audit-search` | View the audit status of one or more domains<br><br>**Note**: This is a read-only service. Although you `POST` a JSON file, no objects are created in the system. |
 
 ## JSON fields
 
@@ -115,7 +115,7 @@ $ curl -b cookies -c cookies -X POST -d @urls 'https://api.appnexus.com/url-audi
 
 ### Determine which domains in a list have been audited
 
-In this example, we search for two domains ([auditedurl.com](https://auditedurl.com) and [notauditedurl.com](https://notauditedurl.com)). Both domains are on the platform, but information is returned only for the one that meets the query string criteria (`audit_status=audited`). The domain that does not meet the query criteria is still returned in the results, but with a `found` value of `false` because it wasn't found with the given query.
+In this example, we search for two domains (`auditedurl.com` and `notauditedurl.com`). Both domains are on the platform, but information is returned only for the one that meets the query string criteria (`audit_status=audited`). The domain that does not meet the query criteria is still returned in the results, but with a `found` value of `false` because it wasn't found with the given query.
 
 ```
 $ cat urls

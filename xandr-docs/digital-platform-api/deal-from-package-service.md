@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Deal From Package Service
-description: Buyers can browse packages using the package buyer access service and generate deals with sellers through the deal from package service. 
+description: Buyers can browse packages and generate deals with sellers using the Deal From Package service. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Deal from package service
+# Digital Platform API - Deal From Package service
 
 A package is a deal that a seller is prepared to offer to any buyer. Buyer members use the [Package Buyer Access Service](./package-buyer-access-service.md) to browse available packages and find one that meets their needs. Then buyers use the Deal From Package service to generate a deal between themselves and the seller.
 
@@ -15,8 +15,8 @@ Once you have generated a deal, you can view deal details including description 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/deal-from-package/meta | Find out which fields you can filter and sort by. |
-| `POST` | https://api.appnexus.com/deal-from-package | Create a new deal based on a package.<br><br>**Note**: When a member makes a `POST` call to this service, a deal record is generated with the member set as the buyer. |
+| `GET` | `https://api.appnexus.com/deal-from-package/meta` | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/deal-from-package` | Create a new deal based on a package.<br><br>**Note**: When a member makes a `POST` call to this service, a deal record is generated with the member set as the buyer. |
 
 ## JSON fields
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Site Domain Performance
-description: The article explains how the Site Domain Performance Report allows you to view performance and optimization data by domain or mobile app for an advertiser.
+description: Explore performance and optimization data by domain or mobile app with the Site Domain Performance Report for advertisers.
 ms.date: 10/28/2023
 ---
 

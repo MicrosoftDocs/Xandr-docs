@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Single Credential Login and Multi-Factor Authentication FAQ
-description: The article answers common questions on single credential login and Multi-Factor Authentication (MFA).
+description: Explore single credential login and MFA, answering common questions, aiming to simplify and enhance user authentication in one comprehensive solution.
 ms.date: 10/28/2023
 ---
 

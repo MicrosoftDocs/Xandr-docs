@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Seller Fill and Delivery Network Report
-description: Learn what is a Seller Fill and Delivery Network Report and how it is useful to sellers.
+description: Learn what is a Seller Fill and Delivery Network Report and how it can be used to track untransacted impressions stemming from Improper default/passback tag setup, Inventory blocklists and Video player errors.
 ms.date: 10/28/2023
 ---
 
@@ -10,12 +10,11 @@ ms.date: 10/28/2023
 The **Seller Fill and Delivery Report** was designed as a troubleshooting tool to provide sellers granular information regarding all impressions sent to Microsoft Advertising and to help diagnose delivery issues all the way down to the tag and domain level. Using the new descriptive fields, it is possible to see an approximation of overall fill rate on Microsoft Advertising using the "Total Ad Responses" and "Total Ad Requests" metrics. This report provides guidance on areas to troubleshoot but should not be used as a source of truth for billing or transacted impressions.
 
 > [!NOTE]
-> This report only provides directional guidance on potential areas to troubleshoot. Figures in this report might see slight discrepancies with other standard reports, including the Network Analytics Report and the Video Analytics Report. 
+> This report only provides directional guidance on potential areas to troubleshoot. Figures in this report might see slight discrepancies with other standard reports, including the Network Analytics Report and the Video Analytics Report.
 >
 > We recommend viewing each report independently and not comparing the directional figures from the Seller Fill and Delivery Report with other Microsoft Advertising reporting, to avoid unnecessary confusion.
 
-The data contained in this report will help pinpoint issues contributing
-to untransacted impressions stemming from:
+The data contained in this report will help pinpoint issues contributing to untransacted impressions stemming from:
 
 - Improper default/passback tag setup
 - Inventory blocklists related to IP or domain blocking
@@ -23,14 +22,13 @@ to untransacted impressions stemming from:
 - Miscellaneous causes
 
 > [!NOTE]
-> **For video sellers only :** As a result of video caching by video players, the Microsoft Advertising data pipeline allows a six-hour window to register a response from a video player after the auction is complete and the creative VAST XML has been sent to the page, before considering a video impression 'non-responsive' (Bid Sent No Response). 
+> **For video sellers only :** As a result of video caching by video players, the Microsoft Advertising data pipeline allows a six-hour window to register a response from a video player after the auction is complete and the creative VAST XML has been sent to the page, before considering a video impression 'non-responsive' (Bid Sent No Response).
 >
 > Microsoft Advertising will update some counts, for video tags only, six hours after the time of the auction. Therefore, to receive the most accurate view of video counts across dimensions, schedule your reports to run after the six-hour window for a given hour of data.
 
-The diagram below is a representation of how metrics are grouped and
-counted for this report:
+The diagram below is a representation of how metrics are grouped and counted for this report:
 
-:::image type="content" source="media/create-seller-filler-and-delivery-explanatory-graphic.png" alt-text="Screenshot of Create Seller and Delivery Explanatory Graphic .":::
+:::image type="content" source="media/create-seller-filler-and-delivery-explanatory-graphic.png" alt-text="Diagram showing how metrics are grouped and counted for Seller Fill and Delivery Network Report.":::
 
 ## Time frame
 
@@ -72,11 +70,9 @@ Intervals determine how your data is grouped together into rows in the report re
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-This report's data is retained for 403 days. The time granularity of the
-data is hourly.
+This report's data is retained for 403 days. The time granularity of the data is hourly.
 
 ## Metrics
 
@@ -84,7 +80,7 @@ data is hourly.
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Description |
-|---|---|
+|--|--|
 | Bid Sent No Reponses | Bid responses returned by Microsoft Advertising where ultimately the creative does not render.<br>The most common scenario in which this occurs is when Microsoft Advertising receives an ad request from an external system - such as a publisher ad server utilizing prebid or a traditional waterfall - and returns a response, but the external system selects a different bid.<br>Other examples of reasons this can occur include:<br> - The end user leaves the page before the impression tracker fires.<br> - An ad is requested but never loads due to lazy loading.<br> - A video player requests an ad but never plays the ad. |
 | Default No Reponses | Ad requests where a default creative was sent but no response was received from the end ad server. This could be the result of an error or an alternate default tag was chosen by the final ad server. |
 | Defaults | Ad requests where a default creative served because there were no valid bids. |
@@ -109,7 +105,7 @@ You also have the option to display monetary values in USD and the Advertiser/Bu
 ## Filters
 
 | Name | Description |
-|---|---|
+|--|--|
 | Country | The country in which the impression occured. |
 | Deal | The deal associated with the transaction for the impression. |
 | Placement | The placement on which the impression occurred. |
@@ -122,13 +118,13 @@ You also have the option to display monetary values in USD and the Advertiser/Bu
 Grouping by dimension allows you to display certain fields of reporting data in a particular order.
 
 | Name | Description |
-|---|---|
+|--|--|
 | Ad Request Call Type | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, ut, mob, ptv, openrtb) |
 | Allowed Media Types | The media types that are allowed to participate in the auction. The permitted media types is a combination that is enabled through the ad call and placement settings. Possible values are `Banner`, `Expandable` and `Native`. |
 | Country | The country in which the impression occurred. |
 | Deal | The deal associated with the transaction for the impression. |
 | Mobile Application | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, `"Angry Birds (343200656)"` or `"Angry Birds (com.rovio.angrybirds)"`.<br> - `"---"`: This means that we didn't receive a valid mobile app name as the referrer or the app has received too few impressions to be included in reporting. |
-|`OpenRTB2` Request Subdomain|  The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: This value is blank for non-OpenRTB2 call types. A blank value in OpenRTB2 indicates no subdomain was used.|
+| `OpenRTB2` Request Subdomain | The subdomain of the URL that the OpenRTB2 ad request was sent to. <br>**Note**: This value is blank for non-OpenRTB2 call types. A blank value in OpenRTB2 indicates no subdomain was used. |
 | Placement | The name and ID of the placement on which the impression occurred.<br>Note that a placement ID of `0` may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](working-with-impression-and-click-trackers.md). |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
@@ -140,15 +136,8 @@ Grouping by dimension allows you to display certain fields of reporting data in 
 
 Follow these steps to run your report.
 
-1. Select **Reporting** from the
-    appropriate top menu (depending on how your account has been
-    configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
-1. Select the relevant report from the list. The
-    **Report** screen shows the available
-    filters, dimensions, and delivery options for the report. The
-    selections you make here will determine what report data is
-    delivered to you, and how.
+1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured), or, from the Publishers top menu, click on **Prebid Server Premium** \> **Analytics** \> **Prebid Server Analytics**.
+1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of
@@ -168,9 +157,7 @@ Follow these steps to run your report.
       > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the [API](../digital-platform-api/report-service.md) for that reporting service (The limit here is 10 million rows).
 
     - **Export, send results via email**: Run the report in the background and email the results to one or more email addresses.
-    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox
-      is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports**
-      screen.
+    - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.

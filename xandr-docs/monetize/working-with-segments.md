@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Segments
-description: The article defines segment pixels that capture user information (webpages, actions, gender, location) to assign to segments. 
+description: Explore segment pixels capturing user data (webpages, actions, gender, location) for segment assignment. Reduce character count.
 ms.date: 10/28/2023
 ---
 

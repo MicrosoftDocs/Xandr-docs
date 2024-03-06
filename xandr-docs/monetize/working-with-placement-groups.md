@@ -1,6 +1,6 @@
 ---
 title: Working with Placement Groups
-description: The article details the placement group object—a mid-tier in the sell-side hierarchy. Organize and categorize placements with default criteria.
+description: Explore mid-tier placement groups, organize and categorize with default criteria to streamline sell-side hierarchy.
 ms.date: 10/28/2023
 ---
 

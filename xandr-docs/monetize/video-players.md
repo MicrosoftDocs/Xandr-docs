@@ -1,6 +1,6 @@
 ---
 title: Video Players
-description: Explore the video player offerings, uncovering ideal use cases and limitations. Learn the difference between Instream and Outstream Video for powerful ad placements. 
+description: Explore video player options, discover optimal uses, and understand Instream and Outstream Video distinctions for effective ad placement.
 ms.date: 10/28/2023
 ---
 

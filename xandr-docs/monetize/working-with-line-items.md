@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Line Items
-description: The article defines advertiser agreement in line item, budget, revenue type, performance goals. Use campaigns to fulfill spending specifics.
+description: Explore advertiser agreements, defining line item, budget, revenue type, and goals. Utilize campaigns for precise spending fulfillment.
 ms.date: 10/28/2023
 ---
 

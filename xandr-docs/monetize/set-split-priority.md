@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Split Priority
-description: The article guides prioritizing programmable splits by assigning unique priority numbers in the Split Details grid, ensuring proper impression allocation.
+description: Explore prioritizing programmable splits with unique priority numbers in Split Details grid for proper impression allocation.
 ms.date: 10/28/2023
 ---
 

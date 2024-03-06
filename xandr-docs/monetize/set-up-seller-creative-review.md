@@ -1,6 +1,6 @@
 ---
 title: Set Up Seller Creative Review
-description: Review and approve creatives in the Political category before serving on seller inventory. Seller review will extend to additional categories.
+description: Explore and approve creatives in the Political category before serving on seller inventory. Seller review will extend to additional categories.
 ms.date: 10/28/2023
 ---
 

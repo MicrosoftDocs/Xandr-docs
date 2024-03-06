@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Seller Defaults
-description: The article facilitates setting default inventory trust on the Partner Center Screen, allowing customization for individual sellers.
+description: Explore customizing default inventory trust settings on Partner Center Screen for all sellers, with options to override for individuals.
 ms.date: 10/28/2023
 ---
 
@@ -13,7 +13,7 @@ On the **Partner Center Screen**, the **Default Settings** option allows you to 
 
 ## Step 1. Get started
 
-Go to the **Partner Center** screen (**Partners \> Partner Center**) and click on the **Default Settings** button to display the **Default Settings** dialog.
+Go to the **Partner Center** screen (**Partners** \> **Partner Center**) and click on the **Default Settings** button to display the **Default Settings** dialog.
 
 ## Step 2. Update your default settings
 
@@ -34,9 +34,7 @@ Go to the **Partner Center** screen (**Partners \> Partner Center**) and click o
 >
 > Once you unblock an AppNexus Direct seller, you cannot reinstate blocking for that seller in the **Partner Center**.
 
-The **Default Inventory Trust** setting indicates whether you trust inventory reviewed only by the Microsoft Advertising platform (**Platform-reviewed**), by the Microsoft Advertising platform
-and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust**
-section in [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
+The **Default Inventory Trust** setting indicates whether you trust inventory reviewed only by the Microsoft Advertising platform (**Platform-reviewed**), by the Microsoft Advertising platform and the seller (**Seller-reviewed**), or all inventory (**All**). For more information on the different inventory trust levels, see the **Setting default inventory trust** section in [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).
 
 ## Related topics
 

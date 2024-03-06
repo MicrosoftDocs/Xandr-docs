@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Carrier Analytics Report
-description: Retrieve Carrier Analytics and analyze device performance, assess carrier impact on campaigns, and identify carriers for line items.
+description: Explore Carrier Analytics, analyze device performance, assess carrier impact on campaigns, and identify carriers for line items.
 ms.date: 10/28/2023
 ---
 
@@ -92,7 +92,7 @@ This report's data is retained for 46 days. For more information about how quick
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
 | Column | Example | Formula | Description |
-|---|---|---|---|
+|--|--|--|--|
 | 25% Video Complete | 10 |  | The total number of times the video creatives completed 25% of the entire duration. |
 | 50% Video Complete | 10 |  | The total number of times the video creatives completed 50% of the entire duration. |
 | 75% Video Complete | 10 |  | The total number of times the video creatives completed 75% of the entire duration. |

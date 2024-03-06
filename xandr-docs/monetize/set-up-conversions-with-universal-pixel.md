@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Conversions with Universal Pixel
-description: The article illustrates setting up universal pixel conversions with rules, conditions, and Microsoft Monetize reporting for effective conversion tracking.
+description: Explore setting up universal pixel conversions using rules, conditions, and Microsoft Monetize reporting for efficient tracking.
 ms.date: 10/28/2023
 ---
 
@@ -20,9 +20,11 @@ You can set up conversions for your universal pixel using rules and conditions, 
 
     > [!NOTE]
     > If you have already used a standard event as a condition for the conversion, then the conversion will be categorized with that standard event by default.
+
 1. Under **Lookback**, specify the time between an ad view or click and the conversion event during which you will attribute conversions to the ad view or click.
 
    For example, if you want to attribute any shopping cart adds that occurred in the month after viewing an ad to the ad view event, set the post view lookback to 31 days.
+
 1. Under **Count**, determine if you will limit the number of attributed conversions per user. You can also limit the number of conversions counted within a period of time.
 
    For example, you probably want to attribute multiple purchases per user within a time window to the ad, but if your conversion event is a page view for an informational site, counting multiple views might not be meaningful.

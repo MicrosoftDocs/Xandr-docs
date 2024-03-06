@@ -1,6 +1,6 @@
 ---
 title: Set Up Multi-Buyer Deals
-description: The article aids in setting up deals with multiple buyers across platforms/DSPs, including all buyers on a specific platform.
+description: Explore setting up deals with multiple buyers across platforms/DSPs, involving all buyers on a specific platform.
 ms.date: 10/28/2023
 ---
 

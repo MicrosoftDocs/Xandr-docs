@@ -1,11 +1,11 @@
 ---
 title: Designated Market Area Service
-description: Use the read-only designated market area service to retrieve the IDs of designated market areas for targeting in campaigns.
+description: Use the read-only Designated Market Area service to retrieve the IDs of designated market areas for targeting in campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Designated market area service
+# Designated Market Area service
 
 The read-only Designated Market Area (DMA) Service allows you to retrieve the IDs of designated market areas for targeting in campaigns (see `dma_targets` in the [Profile Service](./profile-service.md)).
 
@@ -13,11 +13,11 @@ The read-only Designated Market Area (DMA) Service allows you to retrieve the ID
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/dma | View all designated market areas |
-| `GET` | https://api.appnexus.com/dma?id=ID | View a specific designated market area |
-| `GET` | https://api.appnexus.com/dma?name=NAME | View a specific designated market area |
-| `GET` | https://api.appnexus.com/dma?like_name=XX | View all designated market areas in a specific state where `XX` is the state code |
-| `GET` | https://api.appnexus.com/dma/meta | Find out which fields you can filter and sort by |
+| `GET` | `https://api.appnexus.com/dma` | View all designated market areas |
+| `GET` | `https://api.appnexus.com/dma?id=ID` | View a specific designated market area |
+| `GET` | `https://api.appnexus.com/dma?name=NAME` | View a specific designated market area |
+| `GET` | `https://api.appnexus.com/dma?like_name=XX` | View all designated market areas in a specific state where `XX` is the state code |
+| `GET` | `https://api.appnexus.com/dma/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Segment Targeting on a Line Item
-description: The article guide on setting up segment targeting for precise ad campaigns, defining and targeting specific audience segments from various sources.
+description: Explore setting up segment targeting for precise ad campaigns, defining and targeting specific audience segments from various sources.
 ms.date: 10/28/2023
 ---
 
@@ -21,7 +21,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
    1. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
 
-      By default, the corresponding  ✓ icon will be automatically  selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the **-** icon to exclude the users within the segment from being targeted.
+      By default, the corresponding ✓ icon will be automatically  selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the **-** icon to exclude the users within the segment from being targeted.
 
    1. Select **And** or **Or** to add boolean operators between the segments.
 
@@ -36,7 +36,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
    1. Click **Create New Group** to add more segment groups and drag the appropriate segments into each corresponding segment group.
 
-      By default, the corresponding  ✓ icon will be automatically selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the - icon to exclude the users within the segment from being targeted.
+      By default, the corresponding ✓ icon will be automatically selected for every segment after dragging each one. You can leave the ✓ icon selected to target the users within the segment. Otherwise, click the - icon to exclude the users within the segment from being targeted.
 
    1. Select **And** or **Or** to add boolean operators between the segments and segment groups.
 

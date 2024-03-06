@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Advertisers
-description: The article highlights advertiser's pivotal role in object hierarchy — identity setup, housing orders, line items, creatives, and pixels for effective digital buying.
+description: Explore advertiser's key role in setting up identity, orders, line items, creatives, and pixels for efficient digital buying.
 ms.date: 10/28/2023
 ---
 

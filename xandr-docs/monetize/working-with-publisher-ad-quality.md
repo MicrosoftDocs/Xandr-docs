@@ -1,6 +1,6 @@
 ---
 title: Working with Ad Quality
-description: The article explains how to manage Ad Quality, in a scenario where the sellers set rules for creative attributes (buyer, brand), size or user session frequency.
+description: Explore managing Ad Quality by setting rules for attributes (buyer, brand), size, or session frequency to enhance creative effectiveness.
 ms.date: 10/28/2023
 ---
 

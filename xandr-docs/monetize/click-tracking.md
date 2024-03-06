@@ -23,8 +23,7 @@ In order for Microsoft Advertising to track a click to the corresponding impress
 
 ## Tracking clicks on hosted creatives
 
-Microsoft Advertising will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative
-Templates](creative-templates.md).
+Microsoft Advertising will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative Templates](creative-templates.md).
 
 All you have to do is enter the landing page URL in the **Landing Page** field and select the **Enable Click Tracking** checkbox if you're using Console, and a click URL with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
 
@@ -63,8 +62,7 @@ After the user is redirected to the href, such as https://www.cnn.com, the follo
 1. The click tracker is passed to the third-party ad server in the tag.
 1. The third-party ad server will take the click tracker and insert it correctly into the creative so that it will load when the creative is clicked.
 
-For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include one of the following Microsoft Advertising macros in the
-appropriate place in your URL/tag:
+For a URL-HTML, URL-JS, raw-HTML, or raw-JS creative, you will need to include one of the following Microsoft Advertising macros in the appropriate place in your URL/tag:
 
 | Macro | Description |
 |--|--|
@@ -95,7 +93,7 @@ The creative will first direct the browser to the impression bus where the click
 ## Examples of failures
 
 | Failure | Description |
-|---|---|
+|--|--|
 | Failed to click on creative that appears blank | Creative failed to render during the test due to geo fencing or third party protection. |
 | Failed to click on a creative | Creative did not respond to clicking. For example, clicking only a specific button. |
 | Creative loads landing page in the same browser window | Creative interfers with the browser navigation. |

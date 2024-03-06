@@ -25,6 +25,6 @@ For support, please contact `BidRatingsSupport@comscore.com`.
 This app has permission to access the folllowing Microsoft Advertising API services and fields for your account.
 
 | Name | Read | Create | Edit | Delete |
-|---|---|---|---|---|
+|--|--|--|--|--|
 | Segment | All | All | All | No |
 | User | All | No | No | No |

@@ -1,11 +1,11 @@
 ---
 title: Entitlement Type Service
-description: The entitlement-type service enables assigning specific code features to members through the member service, such as keyword targeting or deal discovery.
+description: Use the Entitlement Type service to assign specific code features to members through the member service, such as keyword targeting or deal discovery.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Entitlement type service
+# Entitlement Type service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -16,14 +16,14 @@ The **entitlement-type** service allows you to define a code that will be assig
 
 | HTTP Method | Enpoints | Descriptions |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/entitlement-type | View all entitlement types |
-| `POST` | https://api.appnexus.com/entitlement-type | Create an entitlement type |
-| `PUT` | https://api.appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID | Modify an entitlement type |
-| `DELETE` | https://api.appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID | Delete an entitlement type |
+| `GET` | `https://api.appnexus.com/entitlement-type` | View all entitlement types |
+| `POST` | `https://api.appnexus.com/entitlement-type` | Create an entitlement type |
+| `PUT` | `https://api.appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID` | Modify an entitlement type |
+| `DELETE` | `https://api.appnexus.com/entitlement-type?id=ENTITLEMENT_TYPE_ID` | Delete an entitlement type |
 
 ## JSON fields
 
-**General**
+### General
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|

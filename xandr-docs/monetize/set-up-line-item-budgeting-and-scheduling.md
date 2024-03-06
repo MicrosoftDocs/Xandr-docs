@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Budgeting and Scheduling
-description: The article aids line item budgeting/scheduling with parameters, revenue type, payment model, budget, flight duration, pacing for enhanced campaign management.
+description: Explore enhanced budgeting/scheduling; define parameters, revenue type, payment model, budget, flight duration for optimal campaign management.
 ms.date: 10/28/2023
 ---
 
@@ -28,7 +28,7 @@ To set up line item budgeting and scheduling:
    The following payment model types are available for selection:
 
    | Option | Description |
-   |---|---|
+   |--|--|
    | **Standard** | Select this payment model type to pay media cost on a per impression basis. Enter the amount that the advertiser will pay you per thousand impressions in the **Revenue Value** field. |
    | **Outcomes** | Select this payment model type to use Guaranteed Outcomes, so you pay only for impressions that achieve a desired outcome. Available outcome depend on the line item ad type. For more detailed information and configuration instructions, see [Guaranteed Outcomes](guaranteed-outcomes.md). |
 

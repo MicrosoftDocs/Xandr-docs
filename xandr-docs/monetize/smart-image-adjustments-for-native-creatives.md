@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Smart Image Adjustments for Native Creatives
-description: The article details Smart Image Adjustments for easy resizing of Native Creatives, adapting to various publisher criteria swiftly.
+description: Explore easy resizing with Smart Image Adjustments, adapting to diverse publisher criteria swiftly for native creatives.
 ms.date: 10/28/2023
 ---
 

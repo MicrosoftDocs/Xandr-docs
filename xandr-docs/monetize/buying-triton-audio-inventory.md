@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Buying Triton Audio Inventory
-description: Explore Triton Audio Ad Exchange, Test ads, set up campaigns to target Triton audio inventory.
+description: Explore Triton Audio Ad Exchange, test ads, set up campaigns targeting Triton audio inventory. Specify cookie preferences for player targeting.
 ms.date: 10/28/2023
 ---
 
@@ -15,8 +15,7 @@ This page provides specific information for the **Triton Audio Ad Exchange**, wh
 
 After designing your audio creative and adding your creative to Microsoft Advertising, you can test it. (See [Buying Audio Inventory](buying-audio-inventory.md)).
 
-Triton Digital has created a test station where you can test your a2x/Microsoft Advertising ads in a replica of a live environment. The test station runs a sequence of one song followed by
-one or more ads. You can test only one ad at a time.
+Triton Digital has created a test station where you can test your a2x/Microsoft Advertising ads in a replica of a live environment. The test station runs a sequence of one song followed by one or more ads. You can test only one ad at a time.
 
 > [!NOTE]
 > To access the test station, a **custom placement ID** and a **player site ID** from Triton Digital is required. To obtain these IDs, contact Triton Digital customer support.
@@ -63,7 +62,7 @@ To specify a preroll line item or campaign:
 Using inventory targeting, you can narrow the scope of your line item or campaign to include or excludedevice categories. The available device categories are listed below.
 
 | Category | Description |
-|---|---|
+|--|--|
 | Device: Computer App (23876) | Players in PC-based apps such as iTunes, Windows Media Player, Winamp, or VLC. Does not use cookies. |
 | Device: Computer Browsers (23875) | Players rendered in PC-based web browsers. Uses cookies. |
 | Device: Mobile Apps (23878) | Players in mobile device player apps. Does not use cookies. |

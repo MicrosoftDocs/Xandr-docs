@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Welcome to Mobile
-description: Discover the art of purchasing mobile devices and mastering app advertising. Navigate the evolving landscape with expert insights.
+description: Explore the art of purchasing mobile devices and mastering app advertising. Navigate the evolving landscape with expert insights.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Configure a Programmable Split
-description: The article demonstrates the utilization of programmable splits for enhancing line item targeting and dynamically adjusting bids.
+description: Explore enhanced line item targeting with programmable splits. Dynamically adjust bids, budget, and creative allocation for sophisticated targeting needs.
 ms.date: 10/28/2023
 ---
 
@@ -36,9 +36,7 @@ information on how splits work, see [Understanding Splits](understanding-splits.
 
 1. **Optional:** [Set Spend Allocation and Capping on a Split](set-spend-allocation-and-capping-on-a-split.md)
 
-    You can set percentages to designate portions of line item's daily
-    budget to your split and determine how conflicts are handled between
-    spend allocation and line item delivery goals.
+    You can set percentages to designate portions of line item's daily budget to your split and determine how conflicts are handled between spend allocation and line item delivery goals.
 
 1. **Optional:** [Use Segment Targeting with a Split](use-segment-targeting-with-a-split.md)
 

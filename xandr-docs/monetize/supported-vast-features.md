@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Supported VAST Features
-description: The article explains the VAST features (skipoffset, ad verification) across versions 2.0 to 4.0. where implementation varies based on publisher support.
+description: Explore VAST features (skipoffset, ad verification) from versions 2.0 to 4.0. Implementations vary based on publisher support.
 ms.date: 10/28/2023
 ---
 

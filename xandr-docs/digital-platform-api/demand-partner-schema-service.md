@@ -1,11 +1,11 @@
 ---
 title: Demand Partner Schema Service
-description: Use the demand partner schema service to validate which parameters are accepted by the demand partner.
+description: Use the Demand Partner Schema service to validate which parameters are accepted by the demand partner.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Demand partner schema service
+# Demand Partner Schema service
 
 The Demand Partner Schema Service validates which parameters are accepted by the demand partner. The service returns all demand partner schemas for the caller's member.
 
@@ -15,9 +15,9 @@ Demand Partner Schemas are unique per demand partner, as each demand partner wil
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/prebid/demand-partner-schemas | Return all demand partner schemas. |
+| `GET` | `https://api.appnexus.com/prebid/demand-partner-schemas` | Return all demand partner schemas. |
 
-**Example response**
+### Example response
 
 ```
 {

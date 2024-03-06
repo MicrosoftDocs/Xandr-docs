@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Share Your Packages with Buyers
-description: The article offers information for sellers to market packages by sharing links with external buyers, with a step-by-step walkthrough.
+description: Explore marketing packages by sharing links with external buyers and follow a step-by-step walkthrough for sellers.
 ms.date: 10/28/2023
 ---
 
@@ -22,7 +22,7 @@ If you have customized packages for a specific buyer, you can grab a unique link
 
 1. Click the **Preview Packages** button.
 1. On the **Packages Preview** screen, select **Select a specific buyer**, select the buyer, and click **OK**.
-1. Once you're viewing your packages from the buyer's perspective,  click the **Open \< Buyer's\> Catolog** button.
+1. Once you're viewing your packages from the buyer's perspective,  click the **Open \<Buyer's\> Catolog** button.
 1. Copy the URL in the screen that opens.
 1. Email it to the specific buyer.
 

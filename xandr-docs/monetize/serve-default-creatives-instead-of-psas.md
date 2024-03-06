@@ -1,6 +1,6 @@
 ---
 title: Serve Default Creatives Instead of PSAs
-description: The article explores default creatives over PSAs, emphasizing benefits, sustained ad revenue, user engagement in absence of suitable targeted ads.
+description: Explore default creatives over PSAs, emphasizing benefits, sustained ad revenue, user engagement in absence of suitable targeted ads.
 ms.date: 10/28/2023
 ---
 

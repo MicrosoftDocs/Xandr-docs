@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Multi-Factor Authentication (MFA)
-description: The article provides an explanation of Single Credential Login and Multi-Factor Authentication (MFA).
+description: Explore Single Credential Login, Multi-Factor Authentication (MFA), and Microsoft Advertising integration for unified, secure access methods.
 ms.date: 10/28/2023
 ---
 

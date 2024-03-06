@@ -1,6 +1,6 @@
 ---
 title: Viewing Your Target Limits 
-description: Explore Target Limits Report for insights into domain and target restrictions. Learn about the maximum allowed for each target type, optimizing your campaigns for success. 
+description: Explore Target Limits Report for target insights. Learn target type maximums to optimize campaigns for success.
 ms.date: 10/28/2023
 ---
 

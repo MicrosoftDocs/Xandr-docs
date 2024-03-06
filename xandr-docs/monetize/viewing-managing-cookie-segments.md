@@ -1,21 +1,19 @@
 ---
 title: Viewing & Managing Cookie Segments
-description: Troubleshoot efficiently by viewing/managing segments & customizing cookie details. Learn how to mimic diverse user profiles effortlessly.
+description: Explore efficient troubleshooting by viewing/managing segments, customizing cookie details, and effortlessly mimicking diverse user profiles.
 ms.date: 10/28/2023
 ---
 
 # Viewing & managing cookie segments
 
-When troubleshooting an issue, it is sometimes helpful to: (1) see what Microsoft Advertising segments you belong to; and (2) override
-certain aspects of your cookie, such as what country, region, city, postal, and DMA you are in so that you can mimic different kinds of users. This page walks you through the process.
+When troubleshooting an issue, it is sometimes helpful to: (1) see what Microsoft Advertising segments you belong to; and (2) override certain aspects of your cookie, such as what country, region, city, postal, and DMA you are in so that you can mimic different kinds of users. This page walks you through the process.
 
 > [!NOTE]
 > All browser cookie calls must use secure https protocols. Requests made using http will not generate valid results.
 
 ## Data security
 
-In order to ensure data security and privacy, when using the cookie viewer, you must include your member ID and dongle. This ensures you
-will only see the segments that belong to your member.
+In order to ensure data security and privacy, when using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member.
 
 ```
 https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE 

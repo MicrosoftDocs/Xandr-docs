@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Roles
-description: The article defines roles for user access in the system at Platform or Feature level. You can customize roles as per business requirements.
+description: Explore defining user access roles in the system at Platform or Feature level. Customize roles to meet business needs.
 ms.date: 10/28/2023
 ---
 
@@ -19,8 +19,7 @@ There are three types of roles:
 
 ## Platform roles
 
-Platform roles are created by Microsoft Advertising and cannot be changed. They have a pre-defined set of permissions that relate
-mostly to administrative and specialized tasks.
+Platform roles are created by Microsoft Advertising and cannot be changed. They have a pre-defined set of permissions that relate mostly to administrative and specialized tasks.
 
 Platform roles differ by network, but could include roles such as the following:
 
@@ -43,8 +42,7 @@ You can assign platform roles to users when you create the user account. You can
 
 ## Feature roles
 
-Like platform roles, feature roles are created by Microsoft Advertising, and the resources granted based on those roles cannot be changed by network administrators. You can, however, update the role to ensure all the appropriate users in your network have
-permissions to the feature. When a feature role is removed, all users who had access to that product or feature will retain access.
+Like platform roles, feature roles are created by Microsoft Advertising, and the resources granted based on those roles cannot be changed by network administrators. You can, however, update the role to ensure all the appropriate users in your network have permissions to the feature. When a feature role is removed, all users who had access to that product or feature will retain access.
 
 ## Custom roles
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Split FAQ
-description: The article addresses FAQs on split objects, covering spend allocation, limitations, and optimizing line items with prior max bids using CSV export/import.
+description: Explore FAQs on split objects, covering spend allocation, limitations, and optimize line items with prior max bids using CSV export/import.
 ms.date: 10/28/2023
 ---
 

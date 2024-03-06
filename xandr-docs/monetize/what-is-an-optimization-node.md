@@ -1,6 +1,6 @@
 ---
 title: What is an Optimization Node?
-description: Enhance prediction accuracy with venue-based inventory grouping. Nodes undergo Learn or Optimized phases for efficient optimization.
+description: Explore enhanced prediction by grouping inventory based on venues. Nodes undergo learning or optimization phases for efficient results.
 ms.date: 10/28/2023
 ---
 

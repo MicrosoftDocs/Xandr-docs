@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Default Buyer Settings
-description: The article allows you to configure default buyer eligibility, permitted payment types, and targeting access.
+description: Explore how to configure default buyer eligibility, on the Partner Center screem permitted payment types, and targeting access.
 ms.date: 10/28/2023
 ---
 

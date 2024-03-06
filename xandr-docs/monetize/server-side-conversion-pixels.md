@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Server-Side Conversion Pixels
-description: The article explains server-side conversion pixels, detailing how they are used in online advertising and tracking. 
+description: Explore server-side pixels, crucial for mobile conversions and overcoming app sandboxing. Reference an attribution server for data capture and conversion.
 ms.date: 10/28/2023
 ---
 
@@ -20,32 +20,41 @@ This page makes references to an attribution server. This is a server that is se
 
 - From a browser or app there is an ad call to Microsoft Advertising
 - Microsoft Advertising runs an auction
--  Microsoft Advertising passes back the winning creative along with a server-side pixel token that is unique to the auction. Here is an example server-side pixel data token: ```ams1AAAAAAAAkQC8rFPull3JKKU9tUKckv1Oj1WFMAAAAAULAAA3AAAAUQIAAD4AAA.``` Often there is a period at the end that must be included.
--   The user clicks on the creative. The landing page for the creative has special macros that include information like the server-side pixel token and mobile device IDs (if present) in the landing page URL which it receives from Microsoft Advertising An example landing page URL with the macros would look like this: 
+- Microsoft Advertising passes back the winning creative along with a server-side pixel token that is unique to the auction. Here is an example server-side pixel data token:```ams1AAAAAAAAkQC8rFPull3JKKU9tUKckv1Oj1WFMAAAAAULAAA3AAAAUQIAAD4AAA.``` Often there is a period at the end that must be included.
+- The user clicks on the creative. The landing page for the creative has special macros that include information like the server-side pixel token and mobile device IDs (if present) in the landing page URL which it receives from Microsoft AdvertisingAn example landing page URL with the macros would look like this:
+
 ```
 https://attributionserver.com/attr?id=12&idfa=${DEVICE_APPLE_IDA}&token=${SSP_DATA}
 ```
+
 The user’s device ID and the server-side pixel token replace the macros in the URL.
+
 ```
 https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckvOj1WFMAAAAAGULAAA3AAAUQIAAd$AAA
 ```
+
 - The attribution server captures the token along with any other available information.
 - The user is redirected to the App Store or an advertiser’s landing page. The user converts. In the case of a mobile app installation the user downloads the app and opens it.
 - Built into the app or conversion page is a call to the attribution server. For apps this is fired when the app is opened for the first time.
 - The attribution server determines that the Microsoft Advertising’s advertiser is attributed with the conversion. This is typically a last touch scenario.
 - The attribution server fires to Microsoft Advertising which includes the Conversion Pixel ID and the token. An example of this call would look like:
+
 ```
 https://sspx-router.adnxs.com/sspx?id=1235&sspdata=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckv1Oj1WFMAAAAAGULAAA3AAAAUQIAAD4AAA
 ```
+
  The ID parameter is the Microsoft Advertising’s ID of the pixel and sspdata is the token.
+
 - Microsoft Advertising connects the sspdata value to the token value and attributes the conversion to the correct auction.
 
 ## Getting the URL for a server-side pixel call
 
 For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the **Explore Advanced Options** section of the [Export Conversion Pixels](export-conversion-pixels.md) page. The URL that is generated when you export the pixel will look something like this:
 
-### Export Pixels
+### Export pixels
+
 Conversion Pixel - test conversion  - Call the following URL to register a server side conversion:
+
 ```
 https://sspx-router.adnxs.com/sspx?id=59633&sspdata=[SSPDATA] 
 (SSPDATA is the token received by the advertiser when the user reaches the landing page)

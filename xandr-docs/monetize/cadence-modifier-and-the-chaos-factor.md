@@ -38,8 +38,7 @@ The initial data (frequency, recency, and conversion likelihood) which makes up 
 
 - **Creative -** The creative-level cadence type measures frequency and recency of how often a user has seen the particular creative. This cadence type is recommended for generic creatives or when the creative is unlike other creatives under the advertiser.
 
-- **Default** - If the model has insufficient conversion rate information (e.g., a brand new advertiser), the table is populated with default values from Microsoft Advertising. These default
-  values are used in auctions until sufficient impressions and conversion data is obtained.
+- **Default** - If the model has insufficient conversion rate information (e.g., a brand new advertiser), the table is populated with default values from Microsoft Advertising. These default values are used in auctions until sufficient impressions and conversion data is obtained.
 
   Once initial data has been applied, the system can begin to bid on auctions. As impressions are won, the system gains additional information about when users convert impressions and adjusts the individual buckets accordingly. The borders of a bucket can shift based on statistical changes, as can the likelihood factor.
 

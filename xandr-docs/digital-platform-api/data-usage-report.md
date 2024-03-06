@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Data Usage Report
-description: The report provides details related to third-party data usage and associated costs, as well as campaigns used to target users.
+description: Use the Data Usage report to view details related to third-party data usage and associated costs, as well as campaigns used to target users.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Data usage report
+# Digital Platform API - Data Usage report
 
 This report provides gives details related to your usage of data provided by third parties (e.g., user segment providers), the costs of that data usage and line items/campaigns in which that data was used to target users.
 
@@ -61,7 +61,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 
 ## Example
 
-### Create the JSON report request
+### Create a JSON report request
 
 The JSON file should include the `report_type` of `"buyer_data_usage_analytics"`, as well as the columns (dimensions and metrics) and report_interval that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`, `hour`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

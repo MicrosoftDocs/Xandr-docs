@@ -1,13 +1,12 @@
 ---
 title: Microsoft Monetize - System Targeting
-description: The article explains targeting users based on their operating systems, browsers, language, device model, or carrier.
+description: Explore targeting options in the article, specifying operating systems, browsers, language, device model, or carrier. 
 ms.date: 10/28/2023
 ---
 
 # Microsoft Monetize - System targeting
 
-You can target users based on their operating systems, browsers, language, device model, or carrier. In the **Targeting** section of a line item or campaign, click the
-**Edit** button next to **System**.
+You can target users based on their operating systems, browsers, language, device model, or carrier. In the **Targeting** section of a line item or campaign, click the **Edit** button next to **System**.
 
 By default, all operating systems, browsers, and languages are targeted. On the **System** dialog, you can narrow your targeting to include or exclude specific systems.
 

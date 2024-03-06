@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Working with Creatives
-description: The article highlights working with creatives on ad server, leverage advanced reporting, save on fees, ensure high ad quality, and consistency.
+description: Explore ad ops optimization, collaborate with creatives, employ advanced reporting, reduce fees, ensure top ad quality, maintain consistency.
 ms.date: 10/28/2023 
 ---
 
@@ -10,8 +10,7 @@ You can traffic a wide range of creative types, from banners to increasingly per
 
 ## Hosted creatives
 
-The Microsoft Advertising platform functions as a full-service ad server built specifically for the real-time advertising business.
-Hosting your creatives with us lets you take full advantage of this technology. In addition, you gain a single source for advanced reporting data, avoid paying ad serving fees to multiple parties, and can rely on Microsoft Advertising creative standards and auditing processes to ensure high ad quality and consistency.
+The Microsoft Advertising platform functions as a full-service ad server built specifically for the real-time advertising business. Hosting your creatives with us lets you take full advantage of this technology. In addition, you gain a single source for advanced reporting data, avoid paying ad serving fees to multiple parties, and can rely on Microsoft Advertising creative standards and auditing processes to ensure high ad quality and consistency.
 
 ## Third-party creatives
 

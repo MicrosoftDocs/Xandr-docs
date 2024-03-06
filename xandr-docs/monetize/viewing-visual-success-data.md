@@ -1,6 +1,6 @@
 ---
 title: Viewing Visual Success Data
-description: Elevate campaigns with Visual Success – a tool for efficient monitoring, issue detection, and goal tracking. Explore top-line features on Line Item Details.
+description: Explore Visual Success, a tool for efficient campaign monitoring, issue detection, and goal tracking. Check top-line features in Line Item Details.
 ms.date: 10/28/2023
 ---
 

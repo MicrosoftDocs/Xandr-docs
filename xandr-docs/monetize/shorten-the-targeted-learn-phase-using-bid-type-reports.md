@@ -1,6 +1,6 @@
 ---
 title: Shorten the Targeted Learn Phase Using Bid Type Reports
-description: The guide recommends using Bid Type reports to speed up learning for new campaign goals. It only applies to the legacy line item.
+description: Explore Bid Type reports to expedite learning for new goals in campaigns and this is applicable solely to legacy line items.
 ms.date: 10/28/2023
 ---
 

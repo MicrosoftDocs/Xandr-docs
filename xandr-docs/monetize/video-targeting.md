@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Video Targeting
-description: The article helps us to know about targeting video inventory based on the playback method, player size, and position.
+description: Explore optimizing video inventory targeting by playback method, player size, and position for effective advertising.
 ms.date: 10/28/2023
 ---
 
@@ -17,9 +17,7 @@ You can target video creatives in any or all of the following ways:
 - [Target video by player width](video-targeting.md#target-video-inventory-by-player-width)
 
 > [!NOTE]
-> You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not
-> serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential.
-> By default, you will target all playback methods, player sizes and roll positions. However, you can narrow your targeting.
+> You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential. By default, you will target all playback methods, player sizes and roll positions. However, you can narrow your targeting.
 
 ## Target video inventory by position or context
 

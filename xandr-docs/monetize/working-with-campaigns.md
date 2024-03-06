@@ -1,6 +1,6 @@
 ---
 title: Working with Campaigns
-description: The article guides post-line-item setup for effective media buying campaigns. It define budget, inventory types, bidding strategies, and targeting criteria.
+description: Explore effective media buying. define budget, inventory, bidding strategies, and targeting criteria post-line-item setup for campaigns.
 ms.date: 10/28/2023
 ---
 

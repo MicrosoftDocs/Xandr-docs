@@ -18,8 +18,7 @@ When a client sets a budget, that client has determined that they need to spend 
 
 ## Types of budgeting
 
-There are many different ways to apply a budget. You can determine whether your budget is counted in revenue, cost, or in the number of impressions served. The choice of which to use is up to you, but once you make a selection, you must count the budget in that manner through the life of the insertion order, line item or
-campaign.
+There are many different ways to apply a budget. You can determine whether your budget is counted in revenue, cost, or in the number of impressions served. The choice of which to use is up to you, but once you make a selection, you must count the budget in that manner through the life of the insertion order, line item or campaign.
 
 You can apply a budget to an **Insertion Order**, a **Line Item**, or a **Campaign**:
 
@@ -39,8 +38,7 @@ The buy-side objects to which you can associate a budget (**Insertion Order**, a
 - **Insertion Orders** contain **Line Items**
 - **Line Items** contain **Campaigns**
 
-If a parent item has a budget assigned to it, and that budget is reached, all children under that parent will stop bidding on inventory, regardless of whether or not they have reached their individual budgets.
-Therefore, if one campaign in a line item spikes and exhausts the parent line item's budget, all campaigns under that line item will stop bidding, even though they haven't reached their specific budget amounts.
+If a parent item has a budget assigned to it, and that budget is reached, all children under that parent will stop bidding on inventory, regardless of whether or not they have reached their individual budgets. Therefore, if one campaign in a line item spikes and exhausts the parent line item's budget, all campaigns under that line item will stop bidding, even though they haven't reached their specific budget amounts.
 
 ## Risks of not budgeting
 

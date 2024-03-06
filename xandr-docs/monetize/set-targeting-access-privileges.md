@@ -1,6 +1,6 @@
 ---
 title: Set Targeting Access Privileges
-description: The article details setting buyer-specific targeting access, highlighting the correlation between information exposure and efficient inventory targeting.
+description: Explore setting buyer-specific access, highlighting the correlation between information exposure and efficient inventory targeting.
 ms.date: 10/28/2023
 ---
 

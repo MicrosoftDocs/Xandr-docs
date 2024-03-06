@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Viewability FAQ
-description: Unlock Microsoft Advertising Viewability insights and discover essential metrics to boost digital visibility. Learn where to find crucial info and optimize strategies.
+description: Explore Microsoft Advertising Viewability for insights, optimize strategies, and boost digital visibility by locating essential metrics.
 ms.date: 10/28/2023
 ---
 
@@ -79,8 +79,7 @@ The Microsoft Advertising Platform has robust policy and filtering for non-human
 
 Checks are applied to all platform inventory before an impression is auctioned, so the viewability script itself does not need to monitor or check for non-human or invalid traffic.
 
-The script will however check for inactive users. If there is no keyboard, mouse, scroll or other activity for 60 seconds, then the
-script considers the user to be inactive. Any ads served, for example by an auto-refresh placement, will be considered non-viewable until an activity event is detected.
+The script will however check for inactive users. If there is no keyboard, mouse, scroll or other activity for 60 seconds, then the script considers the user to be inactive. Any ads served, for example by an auto-refresh placement, will be considered non-viewable until an activity event is detected.
 
 ## Viewability rate results
 
@@ -94,8 +93,7 @@ When a placement is below the fold, after the content, or at the bottom of the p
 
 When a placement is above the fold, it is not always viewable, because:
 
-- Some users leave the page within the first seconds after the page is loaded. If the ad is in-view for less than one second, it is not
-  viewable.
+- Some users leave the page within the first seconds after the page is loaded. If the ad is in-view for less than one second, it is not viewable.
 - Some users scroll quickly to the content, so the top of the page becomes non-viewable and the 1 second threshold is not reached.
 - High banners are often partially viewable (like 300x600), but in case fewer than 50% of pixels are viewable, the banner is not viewable.
 - The page is automatically refreshed, while it is opened in a hidden tab or window.
@@ -106,7 +104,6 @@ When a placement is above the fold, it is not always viewable, because:
   - Compare it with our view-measurement rate in reporting. High measurement rates are usually more reliable.
 - Does vendor X measure the banner object or the placement?
   - The IAB's recommendation is to measure the banner object, not the placement.
-
   - We measure the object: the banner is not viewable if the object is not loaded.
 
 ### Why do I get a low viewability rate on creative X?

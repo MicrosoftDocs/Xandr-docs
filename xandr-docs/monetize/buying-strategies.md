@@ -51,8 +51,7 @@ You can bid a flat CPM. You have the option to use the [Cadence Modifier and the
 
 ## Target reach and delivery
 
-You may wish to pay the going platform rate for the inventory you desire, which means you know you will win most or some of the inventory,but you won't be over bidding. The dynamic inventory CPM is based on historical data for a particular inventory source. You can choose either the **Estimated Average Price** (EAP) or the **Estimated Clear Price**
-(ECP).
+You may wish to pay the going platform rate for the inventory you desire, which means you know you will win most or some of the inventory,but you won't be over bidding. The dynamic inventory CPM is based on historical data for a particular inventory source. You can choose either the **Estimated Average Price** (EAP) or the **Estimated Clear Price** (ECP).
 
 - EAP is an estimate of a bid that is likely to win about half of impressions, based on observing historical bids.
 - ECP is an estimate of a bid that is likely to win the impression from a given publisher, based on observing historical bids.

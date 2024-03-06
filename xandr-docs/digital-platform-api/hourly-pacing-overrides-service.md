@@ -1,11 +1,11 @@
 ---
 title: Hourly Pacing Overrides Service
-description: Use the hourly pacing overrides service to customize your line item's budget distribution within a day.
+description: Use the Hourly Pacing Overrides service to customize your line item's budget distribution within a day.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Hourly pacing overrides service
+# Hourly Pacing Overrides service
 
 The Hourly Pacing Overrides Service is used to customize your line item's budget distribution within a day. This can be set for specific days of the week or specific dates. Through this API service, you can create an individual pacing strategy (custom spend curve) to define and alter line item pacing for a particular date or day of the week. You can also create multiple pacing strategies through this API service to further customize pacing for multiple dates or days of the week.
 
@@ -13,10 +13,10 @@ The Hourly Pacing Overrides Service is used to customize your line item's budget
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID_1,LINE_ITEM_ID_2 | View pacing strategies for one or more line items. |
-| `PUT` | https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID | Add a pacing strategy for a single line item. |
-| `PUT` | https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID | Modify an existing pacing strategy. |
-| `DELETE` | https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID&when=WHEN | Delete a pacing strategy. |
+| `GET` | `https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID_1,LINE_ITEM_ID_2` | View pacing strategies for one or more line items. |
+| `PUT` |`https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID` | Add a pacing strategy for a single line item. |
+| `PUT` | `https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID` | Modify an existing pacing strategy. |
+| `DELETE` | `https://api.appnexus.com/pacing-strategy?line_item_id=LINE_ITEM_ID&when=WHEN` | Delete a pacing strategy. |
 
 ## JSON fields
 
@@ -385,7 +385,7 @@ $ cat multiple_strategies.json
 $ curl -b cookies -c cookies -X PUT -H 'Content-Type: application/json' -d @multiple_strategies.json "https://api.appnexus.com/pacing-strategy?line_item_id=1234567&line_item_id=2345678"
 ```
 
-### Define multiple pacing strategies for multiple line items using a .csv file
+### Define multiple pacing strategies for multiple line items using a `.csv` file
 
 ```
 $ cat custom_spend_strategies.csv

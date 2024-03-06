@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Sherlock - Creative Quality Control
-description: Sherlock, an automated scanning system, combats advertising malware, ensuring ad quality by detecting and addressing malicious content.
+description: Explore how Sherlock, an automated scanning system, combats advertising malware, ensuring ad quality by detecting and addressing malicious content.
 ms.date: 10/28/2023
 ---
 
@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 Microsoft Advertising takes malware extremely seriously, and we are actively working to be at the forefront of prevention in order to protect our customers.
 
-We utilize our own automated creative scanning system, Sherlock, to detect malicious content and assist our human auditors with ad quality. Sherlock simulates real traffic as accurately as possible. Because we do not wish to describe our methods to any potential bad actors, we are not currently disclosing details of the process in our documentation. For more information, please contact our Anti-Malvertising team. We also recommend that all our clients visit and explore
- [https://www.anti-malvertising.com](https://www.anti-malvertising.com) for more information and best practices on malware prevention.
+We utilize our own automated creative scanning system, Sherlock, to detect malicious content and assist our human auditors with ad quality. Sherlock simulates real traffic as accurately as possible. Because we do not wish to describe our methods to any potential bad actors, we are not currently disclosing details of the process in our documentation. For more information, please contact our Anti-Malvertising team. 
 
  > [!NOTE]
  > During the Sherlock testing process, we are actually loading each creative a few times. Because of this, you may see some very minimal activity for inactive or unaudited creatives in reporting.

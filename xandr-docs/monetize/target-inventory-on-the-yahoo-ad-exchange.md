@@ -1,6 +1,6 @@
 ---
 title: Target Inventory on the Yahoo Ad Exchange
-description: The article explains Yahoo Ad Exchange's target inventory and provides guidance on setting up campaigns to run on YAX inventory.
+description: Explore optimizing Yahoo Ad Exchange campaigns, understand target inventory, set up effective campaigns for YAX inventory.
 ms.date: 10/28/2023
 ---
 
@@ -28,8 +28,8 @@ Buyers that do not have access to the Yahoo Ad Exchange through Microsoft Advert
 
 Each creative that you want to serve on YAX inventory must meet the following requirements:
 
-- The creative must meet YAX's [size requirements](https://api.yieldmanager.com/api-1.37/doc/phpdoc/4_enum_size.md)
-- The creative must meet YAX's [language requirements](https://api.yieldmanager.com/api-1.37/doc/phpdoc/4_enum_language.md)
+- The creative must meet YAX's [size requirements](https://developer.yahooinc.com/native/guide/native-ad-specs/matrix-view/)
+- The creative must meet YAX's [language requirements](https://asia.adspecs.yahooinc.com/pages/policies-guidelines/yahoo-ad-policy/creative-content-guidelines/language)
 - The creative format must be flash, image, raw-js, raw-html, iframe-html, or url-html.
 - The creative template must be a Standard template.
 - You must submit the creative for [auditing](creative-standards.md) and it must pass.

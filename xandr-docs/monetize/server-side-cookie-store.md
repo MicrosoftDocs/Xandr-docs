@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Server Side Cookie Store
-description: The article explains the concept of a Server-side cookie store which enhances control, security for sensitive info in web apps.
+description: Explore server-side cookie store for web app control/security. Sync user data across platforms for consistent ad campaign targeting.
 ms.date: 10/28/2023
 ---
 
@@ -24,8 +24,7 @@ Let's say we are passed inventory through a server-side integration with Google 
 
 The exact method of ID mapping differs depending on our integration partner. We may perform the map through a pixel on the publisher's page, or by serving an ad to the user. We may store the User ID mapping in our database or they might store it in theirs. Here are a few example integrations.
 
-- Ad Network X stores the mapping in their database. Network X places a pixel on their publishers' pages, including mysite.com. When a user visits mysite.com, the pixel fires and Microsoft Advertising is able to mark the user as 1938 in the user's browser cookie. The pixel also redirects to Network X to let them know that Microsoft Advertising calls this user 1938 so that it can be
-  mapped to the Network's User ID and stored for future use.
+- Ad Network X stores the mapping in their database. Network X places a pixel on their publishers' pages, including mysite.com. When a user visits mysite.com, the pixel fires and Microsoft Advertising is able to mark the user as 1938 in the user's browser cookie. The pixel also redirects to Network X to let them know that Microsoft Advertising calls this user 1938 so that it can be mapped to the Network's User ID and stored for future use.
 - Exchange Y stores the mapping in their database, but they don't put our pixel on the page. Instead, the first time we serve an ad to this user, we fire a usersync pixel that adds a unique user ID to the user's browser cookie, and redirects to pass the user ID to Exchange Y.
 - For Exchange Z, Microsoft Advertising stores the ID map. In this case, the first time Microsoft Advertising serves an ad to a user, we fire off a pixel to Exchange Z, who then passes us their user ID, which we store. Now on future impressions, Exchange Z sends us their user ID, and we can look it up in our database.
 

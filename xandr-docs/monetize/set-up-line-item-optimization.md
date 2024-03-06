@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Optimization
-description: The article explains how to turn on or off optimization for a line item. If enabled, users should set performance goals, priorities, and associate the line item with relevant conversion pixels.
+description: Explore optimizing line items, set goals, priorities, and link with conversion pixels for effective performance control.
 ms.date: 10/28/2023
 ---
 
@@ -9,8 +9,7 @@ ms.date: 10/28/2023
 You can enable or disable Microsoft Advertising optimization for a line item. If you enable Microsoft Advertising optimization,you must first set a performance goal and goal priority, then associate
 the line item with conversion pixels for those goals.
 
-The **Optimization** section provides several settings related to optimization, goals, goal priority, and conversion tracking and viewability (if enabled). For more information,
-see the [Optimization Guide ALI](optimization-guide-ali.md).
+The **Optimization** section provides several settings related to optimization, goals, goal priority, and conversion tracking and viewability (if enabled). For more information, see the [Optimization Guide ALI](optimization-guide-ali.md).
 
 1. Turn on optimization.
 

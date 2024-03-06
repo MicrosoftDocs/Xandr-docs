@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Curator Segment Performance Report
-description: Use the curator segment performance report to get curators insights into how their targeted segments are contributing to the overall performance of their curated deals.
+description: Use the Curator Segment Performance report to get curators insights into how their targeted segments are contributing to the overall performance of their curated deals.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Curator segment performance report
+# Digital Platform API - Curator Segment Performance report
 
 > [!NOTE]
 > This report is only available to curators.
@@ -28,7 +28,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_month
 - last_30_days
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 429 days.
 
@@ -84,9 +84,9 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 
 ## Example
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
-The JSON file should include the `report_type` of `"curator_segment_performance"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and  specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
+The JSON file should include the `report_type` of `"curator_segment_performance"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
 ```
 $ cat curator_segment_performance

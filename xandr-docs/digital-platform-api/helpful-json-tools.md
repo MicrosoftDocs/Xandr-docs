@@ -1,6 +1,6 @@
 ---
 title: Helpful JSON Tools
-description: Learn a few tricks when using the APIs.
+description: Learn about a few tools and tricks when using the APIs.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

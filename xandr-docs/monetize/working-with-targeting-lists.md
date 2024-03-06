@@ -1,6 +1,6 @@
 ---
 title: Working with Targeting Lists
-description: The article is on targeting lists, easily group domains/apps with similar characteristics for campaign inclusion or exclusion.
+description: Explore targeting lists to easily group domains/apps with similar characteristics for campaign inclusion or exclusion.
 ms.date: 10/28/2023
 ---
 

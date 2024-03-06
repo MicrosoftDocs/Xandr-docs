@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Conversion Attribution
-description: Explore Microsoft Advertising's conversion attribution, tying user actions to ads via post-view/click. Understand pixel types, variations, and the key lookback window. 
+description: Explore Microsoft Advertising's conversion attribution, linking user actions to ads post-view/click. Grasp pixel types, variations, and the crucial lookback window.
 ms.date: 10/28/2023
 ---
 

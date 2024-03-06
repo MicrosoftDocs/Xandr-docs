@@ -1,6 +1,6 @@
 ---
 title : Microsoft Monetize - Click Track Test
-description: The article discusses the click track test as part of the pre-upload checks on the Microsoft Advertising platform. 
+description: Explore Microsoft Advertising's pre-upload checks, highlighting the click track test's role in ensuring platform integrity.
 ms.date: 10/28/2023
 ---
 
@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 ## Overview
 
-Prior to uploading to the Microsoft Advertising platform, a series of automated checks are performed on a creative to ensure that it is compliant and optimal to serve on an inventory. Click track test is one of those checks. The goal of the click track test is to ensure that a creative's tag is properly set up to measure clicks for reporting
-purposes. For a creative to pass the click track test, Microsoft Advertising's click-tracker URL must load once when the creative is clicked.
+Prior to uploading to the Microsoft Advertising platform, a series of automated checks are performed on a creative to ensure that it is compliant and optimal to serve on an inventory. Click track test is one of those checks. The goal of the click track test is to ensure that a creative's tag is properly set up to measure clicks for reporting purposes. For a creative to pass the click track test, Microsoft Advertising's click-tracker URL must load once when the creative is clicked.
 
 Note that the purpose of the click track test is not to test whether the creative clicks through properly. That can be done by simply clicking on the creative and observing its behavior. The primary intention of the test is to verify whether Microsoft Advertising has the ability to track clicks on the creative. There is a possibility that for a certain creative though the click through happens properly, it may not load in Microsoft Advertising's click tracker.
 
@@ -32,7 +31,7 @@ For a creative to pass the click track test, the above URL must fire in the netw
 ### Common click tracking test failures
 
 | Failures | Reasons and Recommended Solutions |
-|---|---|
+|--|--|
 | Failed to click on creative that appears blank | The creative may be configured with blocklists on Microsoft Advertising-domains that control where the creative is allowed to render. Ensure that your server-configurations have no blocks on the following domains:<br><br> - [adnxs.net](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)<br> - [adnxs.com](http://audit.adnxs.net/)<br> - [creative-preview-an.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)<br> - [audit.adnxs.net](http://audit.adnxs.net/) |
 | Failed to click on a creative | - The creative might not be clickable. The recommandation would be to verify the creative's behavior and update it if it is needed.<br> - The creative only has a specific area that is clickable: Our **Click Track Test** tool might not be able to detect this. If this is the case, please manually test the creative to see if Microsoft Advertising click tracker fires while a click is initiated. All the instructions are on this [page](test-click-tracking-manually.md).<br> - Microsoft Advertising performs click-track testing from a Firefox Browser. So, if your creative fails to click on Firefox environments, it will fail the test. Ensure that your creative renders and is clickable on all supported browsers such as Chrome, Firefox, Safari, and Edge. |
 | Creative loads landing page in the same browser window | Ensure that Microsoft Advertising's click macro is properly embedded within your creative's tag and that the creative clicks through to a new tab and/or window. |
@@ -42,7 +41,7 @@ For a creative to pass the click track test, the above URL must fire in the netw
 ### Common click tracking test issues
 
 | Issues | Recommended Solutions |
-|---|---|
+|--|--|
 | The creative isn't rendering during the click track test because geographic fencing or third-party protection has been enabled. | Remove any geographic fencing or third-party protection from the creative. |
 | The creative didn't respond to clicking because it may be expecting the user to click on a particular **Call to Action** button. | The user simply chose not to click the **Call to Action** button, so there's nothing you can do to resolve this issue. |
 | The creative is interfering with the browser's navigation, so its landing page is loading in the same browser window. | Contact your creative developer to resolve this issue. |

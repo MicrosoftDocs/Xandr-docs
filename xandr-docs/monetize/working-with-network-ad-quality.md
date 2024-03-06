@@ -1,6 +1,6 @@
 ---
 title: Working with Network Ad Quality
-description: Manage ad quality by setting rules based on creative attributes (buyer, brand), size, or user session frequency for inventory display control.
+description: Explore managing ad quality, set rules for creative attributes, size, or user session frequency to control inventory display. Reduce characters.
 ms.date: 10/28/2023
 ---
 

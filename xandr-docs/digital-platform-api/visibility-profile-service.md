@@ -9,8 +9,7 @@ ms.custom: digital-platform-api
 
 If you resell your inventory, the Visibility Profile Service enables you to control the level of detail you pass to buyers in your bid requests. Specifically, you can expose or hide publisher IDs and names, placement IDs and names, publisher-provided age and gender data, the universal and custom categorization of your inventory, inventory URLs, location information, and more.
 
-The default settings in your profile (i.e., `expose_age_default`, `expose_gender_default`, and so on) apply to all platform buyers and
-external bidders, but you can override the default settings for specific platform buyers and external bidders using the `buyer_members` and `bidders` arrays. For example, you might hide inventory data by default and then expose data only to specific buying members with whom you have a special business relationship. Alternately, you might expose inventory data to everyone except specific buying members whom you deem to be competitors.
+The default settings in your profile (i.e., `expose_age_default`, `expose_gender_default`, and so on) apply to all platform buyers and external bidders, but you can override the default settings for specific platform buyers and external bidders using the `buyer_members` and `bidders` arrays. For example, you might hide inventory data by default and then expose data only to specific buying members with whom you have a special business relationship. Alternately, you might expose inventory data to everyone except specific buying members whom you deem to be competitors.
 
 In addition to affecting the data that buyers see in your bid requests, visibility settings affect the data that buyers see when they report on impressions bought from you. For example, if you hide publisher IDs and names from a buyer, that buyer won't see your publisher IDs and names in reporting.
 
@@ -107,7 +106,7 @@ You use this array to define visibility rules for specific Xandr platform member
 | `expose_gender` | Boolean | If `true`, gender data is passed in your bid requests to the member.<br>**Default:** `true` |
 | `expose_universal_categories` | Boolean | **Do Not Use.** This field is ignored.<br>**Default:** `true` |
 | `expose_custom_categories` | enum | The visibility of your custom content categories in your bid requests to the member. Possible values:<br>- `none`: No custom categories are passed in your bid requests.<br>- `all`: All custom categories are passed in your bid requests.<br>- `list`: The custom categories listed in the `custom_categories` array are passed in your bid requests.<br>**Default:** `none` |
-| `custom_categories` | array of objects | The custom content categories that are passed in your bid requests to the member. For the fields in this array, see Custom Categories above.<br>**Required On:** `POST`, if `expose_custom_categories_default` is `list`. |
+| `custom_categories` | array of objects | The custom content categories that are passed in your bid requests to the member. For the fields in this array, see [Custom Categories](#custom-categories) above.<br>**Required On:** `POST`, if `expose_custom_categories_default` is `list`. |
 | `url_exposure` | enum | The visibility of inventory URLs in your bid requests to the member. Possible values:<br>- `full`: Full URLs are passed in your bid requests.<br>- `domain`: Only domains of URLs are passed in your bid requests.<br>- `hidden`: URLs are not passed in your bid requests.<br>**Default:** `full` |
 | `expose_bid_requests` | Boolean | **Do Not Use.** This field is ignored.<br>**Default:** `true` |
 | `expose_auction_id` | Boolean | **Do Not Use.** This field is ignored.<br>**Default:** `true` |
@@ -132,8 +131,7 @@ You use this array to define visibility rules for specific Xandr platform member
 
 ### Bidders
 
-You use this array to define visibility rules for specific external bidders and/or contextual data providers. Each object in the array
-represents a single bidder and contains the following fields. For formatting, see the [examples](#examples) below.
+You use this array to define visibility rules for specific external bidders and/or contextual data providers. Each object in the array represents a single bidder and contains the following fields. For formatting, see the [examples](#examples) below.
 
 > [!TIP]
 > There is no service for directly getting external bidder IDs; however, the [Platform Member Service](platform-member-service.md) gets you information about platform members, including the bidders that they are using.
@@ -148,7 +146,7 @@ represents a single bidder and contains the following fields. For formatting, se
 | `expose_gender` | Boolean | If `true`, gender data is passed in your bid requests to the bidder.<br>**Default:** `true` |
 | `expose_universal_categories` | Boolean | **Do Not Use.** This field is ignored.<br>**Default:** `true` |
 | `expose_custom_categories` | enum | The visibility of your custom content categories in your bid requests to the bidder. <br>Possible values:<br>- `none`: No custom categories are passed in your bid requests.<br>- `all`: All custom categories are passed in your bid requests.<br>- `list`: The custom categories listed in the `custom_categories` array are passed in your bid requests.<br>**Default:** `none` |
-| `custom_categories` | array of objects | The custom content categories that are passed in your bid requests to the bidder. For the fields in this array, see Custom Categories above.<br>**Required On:** `POST`, if `expose_custom_categories_default` is `list`. |
+| `custom_categories` | array of objects | The custom content categories that are passed in your bid requests to the bidder. For the fields in this array, see [Custom Categories](#custom-categories) above.<br>**Required On:** `POST`, if `expose_custom_categories_default` is `list`. |
 | `url_exposure` | enum | The visibility of inventory URLs in your bid requests to the bidder.<br>Possible values:<br>- `full`: Full URLs are passed in your bid requests.<br>- `domain`: Only domains of URLs are passed in your bid requests.<br>- `hidden`: URLs are not passed in your bid requests.<br>**Default:** `full` |
 | `expose_bid_requests` | Boolean | **Do Not Use.** This field is ignored.<br>**Default:** `true` |
 | `expose_auction_id` | Boolean | **Do Not Use.** This field is ignored.<br>**Default:** `true` |

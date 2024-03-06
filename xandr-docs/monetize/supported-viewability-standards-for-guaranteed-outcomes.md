@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Supported Viewability Standards for Guaranteed Outcomes
-description: The article defines viewability standards for guaranteed outcomes—buyer-specific, including media type, viewability definition, and vendor.
+description: Explore defined viewability standards, tailor to buyers, specifying media type, viewability criteria, and vendor for guaranteed outcomes.
 ms.date: 10/28/2023
 ---
 

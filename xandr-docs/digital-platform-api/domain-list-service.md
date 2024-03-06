@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Domain List Service
-description: Use the domain list service to define a list of domains that can be included or excluded from a campaign's targeting profile.
+description: Use the Domain List service to define a list of domains that can be included or excluded from a campaign's targeting profile.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Domain list service
+# Digital Platform API - Domain List service
 
 > [!NOTE]
 > Going forward, "allowlist" and "blocklist" terminology will be followed for our APIs. This is a part of an ongoing effort to evaluate our current terminology usage and usher in more inclusive terminology for Xandr platforms.
@@ -16,12 +16,12 @@ The Domain List service lets you define a list of domains that can be included o
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/domain-list | View all domain lists. |
-| `GET` | https://api.appnexus.com/domain-list?id=DOMAIN_LIST_ID | View a specific domain list. |
-| `GET` | https://api.appnexus.com/domain-list?search=SEARCH_TERM | Search for domain lists with names or descriptions containing certain characters. |
-| `POST` | https://api.appnexus.com/domain-list | Add a new domain list. |
-| `PUT` | https://api.appnexus.com/domain-list?id=DOMAIN_LIST_ID | Modify an existing domain list. |
-| `DELETE` | https://api.appnexus.com/domain-list?id=DOMAIN_LIST_ID | Delete an existing domain list. |
+| `GET` | `https://api.appnexus.com/domain-list` | View all domain lists. |
+| `GET` | `https://api.appnexus.com/domain-list?id=DOMAIN_LIST_ID` | View a specific domain list. |
+| `GET` | `https://api.appnexus.com/domain-list?search=SEARCH_TERM` | Search for domain lists with names or descriptions containing certain characters. |
+| `POST` | `https://api.appnexus.com/domain-list` | Add a new domain list. |
+| `PUT` | `https://api.appnexus.com/domain-list?id=DOMAIN_LIST_ID` | Modify an existing domain list. |
+| `DELETE` | `https://api.appnexus.com/domain-list?id=DOMAIN_LIST_ID` | Delete an existing domain list. |
 
 ## JSON fields
 
@@ -60,7 +60,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @domain-list 'https://api.app
 }
 ```
 
-### Viewing domain list 9
+### Viewing domain list `9`
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/domain-list?id=9'
@@ -79,7 +79,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/domain-list?id=9'
 }
 ```
 
-### Adding domain lists to profile 35 as a `"allowlist"`
+### Adding domain lists to profile `35` as a `"allowlist"`
 
 ```
 $ cat domain-list-profile

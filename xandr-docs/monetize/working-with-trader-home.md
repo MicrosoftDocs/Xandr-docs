@@ -1,6 +1,6 @@
 ---
 title: Working with Trader Home
-description: The article defines, Trader Home - a central hub for daily insights, empowering users with relevant insertion order details for quick decision-making.
+description: Explore Trader Home, a central hub for daily insights empowering users with insertion order details, aiding quick decision-making.
 ms.date: 10/28/2023
 ---
 

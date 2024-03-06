@@ -1,6 +1,6 @@
 ---
 title: Set up Prebid Server Premium
-description: The article helps you to know about the Prebid Server Premium setup, stressing the importance of following resources in a specific order.
+description: Explore Prebid Server Premium setup, prioritize resources for optimal setup, emphasizing specific order importance.
 ms.date: 10/28/2023
 ---
 

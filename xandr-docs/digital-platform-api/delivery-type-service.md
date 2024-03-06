@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Delivery Type Service
-description: Use the read-only delivery type service to see what video content delivery types are registered in the system.
+description: Use the read-only Delivery Type service to see what video content delivery types are registered in the system.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Delivery type service
+# Digital Platform API - Delivery Type service
 
 Use the read-only Delivery Type Service to see what video content delivery types are registered in the Xandr system. Video content fields can be added to line item or deal line item targeting.
 

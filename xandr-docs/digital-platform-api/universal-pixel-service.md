@@ -930,7 +930,7 @@ $ curl -b cookies -d @new-audience.json -X POST https://api.appnexus.com/univers
 }
 ```
 
-### View an audience by ID
+### Example: View an audience by ID
 
 ```
 $ curl -b cookies "https://api.appnexus.com/universal-pixel/audience/10181"
@@ -966,7 +966,7 @@ response:
 } 
 ```
 
-### Update an audience by ID
+### Example: Update an audience by ID
 
 ```
 $ cat update-audience.json 

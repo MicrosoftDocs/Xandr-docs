@@ -1,16 +1,13 @@
 ---
 title: Microsoft Monetize - Report Discrepancies
-description: Learn how to do exploration and analysis of report numbers to verify you have a legitimate discrepancy and prepare the required information before filing a case.
+description: Learn how to do exploration and analysis of report numbers to verify you have a legitimate discrepancy and prepare the information before filing a case.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Report discrepancies
 
-Comparing reports can be complex. If you find report numbers that don't
-match up, we recommend doing some exploration and analysis to verify you
-have a legitimate discrepancy and prepare the required information
-before filing a case.
+Comparing reports can be complex. If you find report numbers that don't match up, we recommend doing some exploration and analysis to verify you have a legitimate discrepancy and prepare the required information before filing a case.
 
 For detailed information about the exploration and filing process, see:
 

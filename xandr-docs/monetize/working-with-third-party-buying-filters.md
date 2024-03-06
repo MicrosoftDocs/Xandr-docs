@@ -1,6 +1,6 @@
 ---
 title: Working with Third-Party Buying Filters
-description: The article guides you using third-party buying filters, crucial for buyers managing finite budgets and selecting sites strategically.
+description: Explore third-party filters, manage budgets, strategically select sites—essential for buyers with limited resources.
 ms.date: 10/28/2023
 ---
 

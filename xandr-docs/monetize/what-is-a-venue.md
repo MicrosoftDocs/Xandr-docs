@@ -1,6 +1,6 @@
 ---
 title: What is a Venue?
-description: Optimize predictions by grouping platform inventory into venues, ensuring quick, uniform performance assessments based on user behavior variations.
+description: Explore optimizing predictions by grouping platform inventory into venues for uniform performance assessments based on user behavior variations. 
 ms.date: 10/28/2023
 ---
 
@@ -11,8 +11,7 @@ ms.date: 10/28/2023
 
 ## Overview
 
-In order to maximize the accuracy of our predictions, all of the inventory on the Microsoft Advertising platform is entered into
-groupings of like inventory buckets called venues so that:
+In order to maximize the accuracy of our predictions, all of the inventory on the Microsoft Advertising platform is entered into groupings of like inventory buckets called venues so that:
 
 1. Each venue can be expected to similarly impact response rates. For example, users visiting the New York Times website from the UK are likely to respond differently to offers than visitors from the US. Similarly, users are likely to respond differently to a front page placement on a site compared to one nested several layers deep.
 1. The venue contains enough impressions to allow us to make some determination of performance relatively quickly while still being as uniform as possible in terms of the above characteristics.
@@ -30,8 +29,7 @@ As you move further down the list, the level of granularity increases (i.e., the
 
 ## Venue creation
 
-We begin the process of venue creation by collecting data on combinations of the most granular level in the list of possible venue levels (defined above). We calculate the average of the last 14 days' worth of data to derive an average daily impression number per venue (e.g., the number of impressions that meet all of the criteria in a
-venue).
+We begin the process of venue creation by collecting data on combinations of the most granular level in the list of possible venue levels (defined above). We calculate the average of the last 14 days' worth of data to derive an average daily impression number per venue (e.g., the number of impressions that meet all of the criteria in a venue).
 
 There are two sets of criteria used to create a venue:
 
@@ -60,7 +58,7 @@ venues that get deleted are on the **Tag** level, and so the impressions are tra
 
 ## Resurrection of a deleted venue
 
-If the optimization engine creates a venue and then deletes it due to a lack of impressions, that venue is resurrected if it exceeds 100,000 average daily impressions over the previous 14 days (see Venue Creation above) to determine the method of calculating the daily average). As before with venue creation, the impression data will be transferred from
+If the optimization engine creates a venue and then deletes it due to a lack of impressions, that venue is resurrected if it exceeds 100,000 average daily impressions over the previous 14 days (see Venue Creation above) to determine the method of calculating the daily average. As before with venue creation, the impression data will be transferred from
 the parent venue to the resurrected child venue. An inactive venue is always available for resurrection, regardless of the length of time it has been inactive.
 
 Throughout the entire process of creation, deletion, and resurrection of venues, data is maintained and transferred between parent and child venues.

@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Video Mediation Demand report
 
-The **Video Mediation Demand Report** can be used by video mediation clients to evaluate performance of mediated networks and optimize
-waterfall priorities. The report incorporates mediation and financial data as well as data on individual partner waterfall performance that will be made available through updates to the video mediation framework.
+The **Video Mediation Demand Report** can be used by video mediation clients to evaluate performance of mediated networks and optimize waterfall priorities. The report incorporates mediation and financial data as well as data on individual partner waterfall performance that will be made available through updates to the video mediation framework.
 
 For instructions on retrieving a report, see [Report Service](report-service.md) or the [examples](#examples) below.
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set Up Third-Party Mobile App Install Tracking
-description: The article guides users through the process of implementing third-party mobile app install tracking.
+description: Explore third-party mobile app install tracking, set it up with an external vendor, and grasp server-side conversion tracking. Access extra documentation.
 ms.date: 10/28/2023
 ---
 
@@ -23,7 +23,7 @@ These are examples of partners that have integrated with Microsoft Advertising f
 - TapSense
 - [Tune (formerly HasOffers)](https://www.tune.com/)
 - [Adjust](https://www.adjust.com/)
-  - [Adjust Network Integrations Page](https://docs.adjust.com/en/network-integration/)
+  - [Adjust Network Integrations Page](https://help.adjust.com/en/article/integrated-partners)
   - [Adjust Partner Page (Click URL Builder)](https://partners.adjust.com/index.md)
 
 ## Set up third-party mobile app install tracking
@@ -81,6 +81,7 @@ See the diagram below for a visualization of how this process works. The numbers
 1. The user clicks on the creative. The landing page for the creative is the URL provided by the app install tracker as described in **Step 2** above.
 
 1. Microsoft Advertising logs the click and fills in the `${SSP_DATA {style="line-height: 1.6;"}}` token, as well as any device identifiers (such as `${DEVICE_APPLE_IDA {style="line-height: 1.6;"}}` and other [Creative Macros](creative-macros.md) before redirecting to the install tracking vendor's server. The install tracking vendor also logs the click, along with the now filled-in contents of the `${SSP_DATA {style="line-height: 1.6;"}}` token and device IDs. The install tracker then redirects the user to the app download page.
+
 1. The user installs the app from the app download page.
 
 1. The app notifies the tracking vendor of an install and sends along its device ID.

@@ -1,6 +1,6 @@
 ---
 title: Custom Key Value Targeting
-description: Publishers can use custom key or value targeting to help advertisers reach their intended audience through API services.
+description: Publishers can use custom key/value targeting to help advertisers reach their intended audience through API services.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -15,11 +15,11 @@ With custom key/value targeting, you can define your own keys and their correspo
 
 Targeting with custom key/value sets involves creating keys and values, then using those keys and values to create targeting expressions. In the API you use the [targeting-key](./targeting-key-service.md) and [targeting-value](./targeting-value-service.md) services to create keys and their associated values. You then use the [profile](./profile-service.md) service to create your targeting.
 
-### Defining keys and values for:
+### Defining keys and values for
 
-When you define keys using the **targeting-key** service, those keys will be available to target within our platform. Only keys that you have pre-defined using the **targeting-key** service will be available in. However, you do not need to predefine values. Using the **targeting-value** service to pre-define values will display those values in . If you don't predefine values you can either enter them directly in  or import them from a CSV (comma-separated values) file when you create your targeting. Note that while it is possible to define keys in the legacy UI, you must use the API to define new keys for availability in.
+When you define keys using the **targeting-key** service, those keys will be available to target within our platform. Only keys that you have pre-defined using the **targeting-key** service will be available in. However, you do not need to predefine values. Using the **targeting-value** service to pre-define values will display those values in. If you don't predefine values you can either enter them directly in  or import them from a CSV (comma-separated values) file when you create your targeting. Note that while it is possible to define keys in the legacy UI, you must use the API to define new keys for availability in.
 
-### Defining keys and values for the profile service:
+### Defining keys and values for the profile service
 
 You do not need to pre-define keys or values to create your targeting in the **profile** service. Including keys and values in a **profile** service targeting expression without first defining them with the **targeting-key** and **targeting-value** services will target correctly. However, when you query on keys and values using the **targeting-key** and **targeting-value** services those keys and values that were defined in the expression will not be included in the output of that query. Those keys will also not be available for reporting.
 
@@ -145,7 +145,7 @@ The value types must match the value field names. For example, you'll receive an
 > [!NOTE]
 > In the `exp` object, values are identified as strings by assigning **str** to the `vtp` field. Note that this is different from the way in which string values are defined in the **targeting-key** service. In the **targeting-key** service you assign **string** to the type field.
 
-**Parsing and building expressions**
+#### Parsing and building expressions
 
 You'll use the elements in the `exp` object to put together your targeting expressions. Let's go back to our original example:
 
@@ -209,7 +209,7 @@ These fields are both required on `PUT` and `POST` calls. You must enter the val
 
 Finally, we define our sub-expressions (`sbe`) that the `"or"` applies to. Our first sub-expression is fruit == apple. We have a `typ` of `"eq"` (equal to), a **key** of `"fruit"`, our `vtp` (value type) is a string `"str"`, and our `vst` (string value) is `"apple"`. We then do the same thing with the sub-expression fruit == orange. In other words:
 
-:::image type="content" source="media/custom-key-a.png" alt-text="Diagram explaining the sub-expressions.":::
+:::image type="content" source="media/custom-key-a.png" alt-text="Diagram that shows the sub-expressions.":::
 
 Now let's try our more complicated example:
 
@@ -217,11 +217,11 @@ Now let's try our more complicated example:
 
 This may seem a little daunting if you try to start stringing together expressions. One method we'd recommend is to start by creating a structure of your expressions, similar to this:
 
-:::image type="content" source="media/custom-key-b.png" alt-text="Diagram showing an example structure for the expressions.":::
+:::image type="content" source="media/custom-key-b.png" alt-text="Diagram that shows an example structure for the expressions.":::
 
 Once we have our expression drawn out, we can start building it in our targeting profile. We're going to start from the bottom right and work our way up.
 
-:::image type="content" source="media/custom-key-c.png" alt-text="Diagram showing how to build the expressions in the target profile.":::
+:::image type="content" source="media/custom-key-c.png" alt-text="Diagram that shows how to build the expressions in the target profile.":::
 
 Here are the expressions for city == Seattle and city == LA:
 
@@ -242,7 +242,7 @@ Here are the expressions for city == Seattle and city == LA:
 
 Next we move up one level to the OR statement, where we create city == Seattle OR city == LA.
 
-:::image type="content" source="media/or-statement.png" alt-text="Diagram illustrating the OR statement.":::
+:::image type="content" source="media/or-statement.png" alt-text="Diagram that illustrates the OR statement.":::
 
 We do this by putting both expressions within a single sub-expression (`sbe`). That sub-expression is within another expression that defines the relationship of the two expressions within the sub-expression as an `"or"` relationship (`"typ": "or"`). In other words, there is an `"or"` relationship between city == Seattle and city == LA:
 
@@ -276,11 +276,11 @@ Note that because this is an OR statment, it can also be constructed using an ar
 
 We've now completed the lower-right corner of our diagram (city == Seattle OR city == LA).
 
-:::image type="content" source="media/or-statement-b.png" alt-text="Diagram illustrating the OR expression as an array.":::
+:::image type="content" source="media/or-statement-b.png" alt-text="Diagram that illustrates the OR expression as an array.":::
 
 Now let's define our expression fruit == orange:
 
-:::image type="content" source="media/or-statement-c.png" alt-text="Diagram defining the OR expression.":::
+:::image type="content" source="media/or-statement-c.png" alt-text="Diagram that defines the OR expression.":::
 
 ```
 "exp": {
@@ -293,7 +293,7 @@ Now let's define our expression fruit == orange:
 
 That was pretty simple. Now we get to put it all together with an `"and"` expression to create fruit = orange AND (city == Seattle OR city == LA):
 
-:::image type="content" source="media/or-and-statement.png" alt-text="Diagram showing how to use the and expression to put the expressions together.":::
+:::image type="content" source="media/or-and-statement.png" alt-text="Diagram that shows how to use the AND expression to put the expressions together.":::
 
 ```
  "exp": {
@@ -336,11 +336,11 @@ That was pretty simple. Now we get to put it all together with an `"and"` expres
 
 That completes the entire right side of our diagram.
 
-:::image type="content" source="media/right-diagram-a.png" alt-text="Diagram showing the completed right-side of the expression.":::
+:::image type="content" source="media/right-diagram-a.png" alt-text="Diagram that shows the completed right-side of the expression.":::
 
 Now let's move to the left side: fruit == apple AND city == NY:
 
-:::image type="content" source="media/right-diagram-b.png" alt-text="Diagram showing the left-side of the expression.":::
+:::image type="content" source="media/right-diagram-b.png" alt-text="Diagram that shows the left-side of the expression.":::
 
 ```
  "exp": {
@@ -370,7 +370,7 @@ Now that we've had some practice, that expression went pretty quickly, right? We
 
 We've now been through both sides of our diagram; we've created (fruit == apple AND city == NY), and we've created fruit == orange AND (city == Seattle OR city == LA).  It's time to add the top-level `"or"`:
 
-:::image type="content" source="media/both-side-expression.png" alt-text="Diagram showing both side of the expression.":::
+:::image type="content" source="media/both-side-expression.png" alt-text="Diagram that shows both side of the expression.":::
 
 We tie the entire expression together at the top level by putting it all into the `key_value_targets` field:
 
@@ -529,7 +529,7 @@ Because this is an OR expression, we can easily simplify it down to a single arr
 }
 ```
 
-Note some key differences:
+**Note some key differences**:
 
 - Removed the outer `exp` with the `"or"` type. `"Or"` is implied with the array.
 - With no outer expression, we no longer need a subexpression (`sbe`) containing the two key/value string sets (fruit = apple, fruit = orange)
@@ -697,11 +697,11 @@ The **profile** service provides error-handling that will help you determine th
 
 It's possible to create an expression in the API that can't be displayed or edited in . If you want to be able to modify expressions through  after you've created them with the API, you should follow these guidelines:
 
-**Do not create an expression more than two levels deep**
+#### Do not create an expression more than two levels deep
 
 Although you can create an expression up to five levels in depth through the API,  can only work with up to two levels. You must simplify your expressions and keep them to a maximum of two levels to be able to modify them in. See [Expression Restrictions](#expression-restrictions) for a description of levels of depth.
 
-**Alternate AND and OR levels**
+#### Alternate AND and OR levels
 
 In our examples above, we alternated AND and OR levels:
 
@@ -816,7 +816,7 @@ It could be simplified - and made editable in - by writing it like this:
         ]
 }
 ```
- 
+
 ### Incorrect targeting
 
 You've followed the preceding steps and the **profile** service runs without errors, but your targeting isn't delivering the results you'd expected. Here are some steps you can take to determine the problem:

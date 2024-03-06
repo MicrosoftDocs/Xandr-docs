@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Supported Creative Macros
-description: The article explains the creative macros that can be used for all, mobile, and video impressions. Additionally, privacy and function macros are supported as well.
+description: Explore creative macros that can be used for all, mobile, and video impressions. Additionally, privacy and function macros are supported as well.
 ms.date: 10/28/2023
 ---
 
@@ -123,7 +123,7 @@ The following macros can be used specifically for mobile impressions:
 
 ## Privacy macros
 
-In order for our clients to meet their transparency, notice, and choice/consent requirements under US state privacy law, the GDPR and the ePrivacy Directive, Microsoft Advertising supports the [Global Privacy Platform](https://iabtechlab.com/gpp) and the IAB Europe Transparency & Consent Framework (the "Framework"). For more information, see [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/knowledgehub/policy/transparency-consent-framework-publishers-factsheet/). Publishers should reference [Part of Privacy Regulations](../policies-regulations/index.yml) when using macros, such as the ones noted in the table below, to surface notice, transparency, and choice to end users located in the EEA, signal approved vendors, and pass consent to Microsoft Advertising and demand sources as well as their vendors through the Microsoft Advertising Platform. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+In order for our clients to meet their transparency, notice, and choice/consent requirements under US state privacy law, the GDPR and the ePrivacy Directive, Microsoft Advertising supports the [Global Privacy Platform](https://iabtechlab.com/gpp) and the IAB Europe Transparency & Consent Framework (the "Framework"). For more information, see [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/). Publishers should reference [Part of Privacy Regulations](../policies-regulations/index.yml) when using macros, such as the ones noted in the table below, to surface notice, transparency, and choice to end users located in the EEA, signal approved vendors, and pass consent to Microsoft Advertising and demand sources as well as their vendors through the Microsoft Advertising Platform. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 
 | Macro | Description |
 |---|---|
@@ -131,7 +131,7 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 | `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
 | `${GDPR_CONSENT_STRING}` | This macro specifies the IAB GDPR consent string. If the GDPR applies, it will contain a list of user-approved vendors based on the IAB GDPR Transparency and Consent Framework. For more information, see [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
-| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br> - not given consent for their cookies to be included in the TCF string, the [adnxs-simple.com](https://adnxs-simple.com/) domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br> - given consent for their cookies to be included in the TCF string, the [adnxs.com](https://adnxs.com/) domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
+| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has:<br> - not given consent for their cookies to be included in the TCF string, the `adnxs-simple.com` domain will be used to prevent the browser from attaching cookies to subsequent ad calls.<br> - given consent for their cookies to be included in the TCF string, the `adnxs.com` domain will be used to pass cookies in the header of each ad call.<br>**Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
 | `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
 | `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * `XXXXX` can represent any numerical ID. |
 

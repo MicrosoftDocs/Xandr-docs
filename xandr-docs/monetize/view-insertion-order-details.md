@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View Insertion Order Details
-description: Discover crucial settings, metrics, and performance visuals on the Insertion Order Details screen. Enhance video viewability measurement with the VPAID wrapper.
+description: Explore vital settings, metrics, and visuals in Insertion Order Details. Boost video viewability by using the VPAID wrapper.
 ms.date: 10/28/2023
 ---
 

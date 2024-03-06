@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Switching Between User Accounts
-description: The article provides instructions on using the account switcher to switch between user accounts.
+description: Explore switching user accounts using the account switcher. After signing in, select desired accounts to switch between them effortlessly.
 ms.date: 10/28/2023
 ---
 

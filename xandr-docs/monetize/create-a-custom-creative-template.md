@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Create a Custom Creative Template
-description: Explore how to create a new custom creative template at any time. Craft new ones from scratch or duplicate existing ones for modification. 
+description: Explore creating a new custom creative template anytime by crafting from scratch or duplicating existing ones for modification.
 ms.date: 10/28/2023
 ---
 
@@ -37,7 +37,7 @@ You can also duplicate an existing template and then modify it. For more informa
    1. The **Name** field is limited to a maximum of 50 characters.=
    1. Select a macro type from the **Type** pull-down menu such as **String** and **True / False**.
    1. For example, if you select **True / False**, buyers will see the macro name followed by a checkbox.
-   1. c If you selected **Select from List**, enter a value for **Option 1**.
+   1. If you selected **Select from List**, enter a value for **Option 1**.
    1. To add more options, click **Add another option** and enter the corresponding value.
    1. If you want to require buyers to complete the macro when uploading new creatives that use this template, click the **Required** checkbox.
    1. If you do not want the macro to be required, enter the **Default Value** that will be used when buyers do not complete the macro during creative uploads.

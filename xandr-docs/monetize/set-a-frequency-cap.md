@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Set a Frequency Cap
-description: The article helps you Set frequency caps for controlled ad exposure, where you can combine daily, weekly, monthly caps strategically to limit creative displays.
+description: Explore setting frequency caps to strategically limit ad exposure, combining daily, weekly, and monthly caps for controlled creative displays.
 ms.date: 10/28/2023
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Deal List Service
-description: Deal list service facilitates search and fetching a specific or different deal lists. You can create, append and replace a deal list with comma-separated deal IDs.
+description: Deal List service facilitates search and fetching a specific or different deal lists. You can create, append and replace a deal list with comma-separated deal IDs.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Deal list service
+# Deal List service
 
 A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. Deals are primarily used to access preferred premium inventory or negotiated inventory. A deal list is a group of deals IDs categorised under a heading for targeting across line items. Deal lists allow inventory specialists to curate deals inventory for traders as well as streamline trader workflows like targeting the same set of deals across line items. If deal grouping requirements change, only making required changes in the deal list will automatically update all line items accordingly.
 
@@ -18,18 +18,18 @@ Deal List API facilitates search, add, modify, and fetching a specific or differ
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/deal-list<br>(Deal List JSON) | Add a new deal list. |
-| `PUT` | https://api.appnexus.com/deal-list<br>(Deal List JSON) | Modify a deal list. |
-| `DELETE` | https://api.appnexus.com/deal-list?id=DEAL_LIST_ID | Delete a deal list. |
-| `DELETE` | https://api.appnexus.com/deal-list?id=DEAL_LIST_ID1,DEAL_LIST_ID2,DEAL_LIST_ID3 | Delete different deal lists. |
-| `GET` | https://api.appnexus.com/deal-list | View all deal lists and deals they contain. |
-| `GET` | https://api.appnexus.com/deal-list?name=DEAL_LIST_NAME | View a deal list by name and deals it contain. |
-| `GET` | https://api.appnexus.com/deal-list?id=DEAL_LIST_ID | View a specific deal list and deals it contain. |
-| `GET` | https://api.appnexus.com/deal-list?advertiser_id=ADVERTISER_ID | View a deal list by advertiser id and deals it contain. |
-| `GET` | https://api.appnexus.com/deal-list?deal_id=DEAL_ID | View all deal lists containing a deal. |
-| `GET` | https://api.appnexus.com/deal-list?search=SEARCH_TERM<br><br>**Note**:<br>`SEARCH_TERM` may be `DEAL_ID` or `DEAL_LIST_NAME` containing certain characters. | Search a deal list by ID or name as search term. |
-| `GET` | https://api.appnexus.com/deal-list?search=SEARCH_TERM&advertiser_id=ADVERTISER_ID<br><br>**Note**:<br>`SEARCH_TERM` may be `DEAL_ID` or `DEAL_LIST_NAME` containing certain characters. | Search a deal list by ID or name as search term and accessible to a particular advertiser. |
-| `GET` | https://api.appnexus.com/deal-list?line_item_id=LINE_ITEM_ID | View all deal lists targeted by a line item. |
+| `POST` | `https://api.appnexus.com/deal-list`<br>(Deal List JSON) | Add a new deal list. |
+| `PUT` | `https://api.appnexus.com/deal-list`<br>(Deal List JSON) | Modify a deal list. |
+| `DELETE` | `https://api.appnexus.com/deal-list?id=DEAL_LIST_ID` | Delete a deal list. |
+| `DELETE` | `https://api.appnexus.com/deal-list?id=DEAL_LIST_ID1,DEAL_LIST_ID2,DEAL_LIST_ID3` | Delete different deal lists. |
+| `GET` | `https://api.appnexus.com/deal-list` | View all deal lists and deals they contain. |
+| `GET` | `https://api.appnexus.com/deal-list?name=DEAL_LIST_NAME` | View a deal list by name and deals it contain. |
+| `GET` | `https://api.appnexus.com/deal-list?id=DEAL_LIST_ID` | View a specific deal list and deals it contain. |
+| `GET` | `https://api.appnexus.com/deal-list?advertiser_id=ADVERTISER_ID` | View a deal list by advertiser id and deals it contain. |
+| `GET` | `https://api.appnexus.com/deal-list?deal_id=DEAL_ID` | View all deal lists containing a deal. |
+| `GET` | `https://api.appnexus.com/deal-list?search=SEARCH_TERM`<br><br>**Note**:<br>`SEARCH_TERM` may be `DEAL_ID` or `DEAL_LIST_NAME` containing certain characters. | Search a deal list by ID or name as search term. |
+| `GET` | `https://api.appnexus.com/deal-list?search=SEARCH_TERM&advertiser_id=ADVERTISER_ID`<br><br>**Note**:<br>`SEARCH_TERM` may be `DEAL_ID` or `DEAL_LIST_NAME` containing certain characters. | Search a deal list by ID or name as search term and accessible to a particular advertiser. |
+| `GET` | `https://api.appnexus.com/deal-list?line_item_id=LINE_ITEM_ID` | View all deal lists targeted by a line item. |
 
 ## JSON fields
 

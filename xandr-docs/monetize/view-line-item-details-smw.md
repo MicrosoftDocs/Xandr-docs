@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - View Line Item Details (SMW)
-description: Learn about the Line Items Details window that empowers you to optimize settings, troubleshoot, and visualize performance metrics for line items. 
+description: Explore Line Items Details to optimize settings, troubleshoot, and visualize performance metrics, enhancing overall efficiency. 
 ms.date: 10/28/2023
 ---
 

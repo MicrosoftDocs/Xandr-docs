@@ -1,6 +1,6 @@
 ---
 title: What is Valuation?
-description: The valuation calculates bid amounts for success events. Advertisers profit when impressions cost less than earnings from successful actions.
+description: Explore bid valuation, calculating success event bids. Advertisers gain when impressions cost less than successful actions' earnings.
 ms.date: 10/28/2023
 ---
 
@@ -9,13 +9,10 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This guide only applies to the legacy line item. If you are using the augmented line item (ALI), see [Optimization Guide ALI](optimization-guide-ali.md).
 
-Valuation is the process by which our system determines a bid amount. In order to obtain one success event (i.e., a success event is an impression which leads to the user taking the action intended by the advertiser, such as a purchase), it is necessary to display a certain
-number of impressions to users. In order to earn a profit, the advertiser must pay less for the impressions displayed to obtain the success event than the money earned by the success event. There are several components which must be measured before the valuation formula
-can be applied:
+Valuation is the process by which our system determines a bid amount. In order to obtain one success event (i.e., a success event is an impression which leads to the user taking the action intended by the advertiser, such as a purchase), it is necessary to display a certain number of impressions to users. In order to earn a profit, the advertiser must pay less for the impressions displayed to obtain the success event than the money earned by the success event. There are several components which must be measured before the valuation formula can be applied:
 
 - **P(success event):** This is the total number of clicks or conversions (depending on how a success event is defined) divided by the total impressions.
-- **value(success):** This is the average value (as determined by the advertiser) that a single success event represents. For example, if a similar campaign run by this advertiser with similar conditions (creative size, location, site, etc.) generated 250 success events
-  from which users made purchases totaling $1,000, the **value (success)** amount would be **$4**.
+- **value(success):** This is the average value (as determined by the advertiser) that a single success event represents. For example, if a similar campaign run by this advertiser with similar conditions (creative size, location, site, etc.) generated 250 success events from which users made purchases totaling $1,000, the **value (success)** amount would be **$4**.
 - **1000:** This is the factor used to adjust the cost to a **CPM** value.
 - **Cadence:** This is a factor which increases or decreases the bid amount based on how many times and how recently the user has seen the creative.
 

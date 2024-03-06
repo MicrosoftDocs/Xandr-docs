@@ -1,6 +1,6 @@
 ---
 title: Target Inventory on the Microsoft Advertising Exchange
-description: The article guides on targeting Microsoft Advertising Exchange inventory, directing campaigns effectively.
+description: Explore effective Microsoft Advertising Exchange targeting. Direct campaigns for better inventory utilization.
 ms.date: 10/28/2023
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Viewability Targeting
-description: Optimize digital ad visibility with viewability targeting. Explore pre-auction strategies using historical data for impactful campaigns.
+description: Explore viewability targeting to optimize digital ad visibility. Utilize historical data for impactful pre-auction strategies in campaigns.
 ms.date: 10/28/2023
 ---
 

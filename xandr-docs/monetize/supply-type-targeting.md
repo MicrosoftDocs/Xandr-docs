@@ -1,6 +1,6 @@
 ---
 title: Supply Type Targeting
-description: The article details supply type targeting, focusing on specific supply types through the Inventory Type field in line item setup.
+description: Explore supply type targeting specific supply types through the Inventory Type field in line item setup to streamline supply type focus.
 ms.date: 10/28/2023
 ---
 

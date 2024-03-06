@@ -1,6 +1,6 @@
 ---
 title: Setting Up 24/7 Media Inventory Through the Microsoft Ad Exchange
-description: The article provides guidance on establishing a continuous 24/7 media inventory using the Microsoft Ad Exchange.
+description: Explore 24/7 media inventory with Microsoft Ad Exchange, using Real Media Group for diverse campaigns. Adjust settings for efficiency.
 ms.date: 10/28/2023
 ---
 

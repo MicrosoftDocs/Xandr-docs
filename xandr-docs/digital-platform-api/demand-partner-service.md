@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Demand partner service
+# Demand Partner service
 
 The Demand Partner Service returns all demand partners for the caller's member. It enables the user to create a new demand partner and update or delete an existing demand partner.
 
@@ -21,7 +21,7 @@ In the context of PSP, demand partners, usually supply-side platforms (SSPs) lik
 | `PATCH` | `https://api.appnexus.com/prebid/demand-partner/{id}` | Update a portion of an existing demand partner. |
 | `DELETE` | `https://api.appnexus.com/prebid/demand-partner/{id}` | Delete a demand partner. |
 
-## GET
+## `GET`
 
 Get all or a specific demand partner. To retrieve a specific demand partner, append the demand partner ID as last component of the URL path. Returns a JSON array of demand partner objects.
 

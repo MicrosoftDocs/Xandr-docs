@@ -40,7 +40,7 @@ Mobile devices are categorized by make and model, where make is generally the ma
 | `supports_html_video` | Boolean | **Not yet available**. If `true`, the device supports HTML video creatives. If `null`, Xandr does not know whether or not the device supports HTML video. |
 | `supports_js` | Boolean | **Not yet available**. If `true`, the device supports JavaScript creatives. If `null`, Xandr does not know whether or not the device supports JavaScript. |
 
-### Codes
+### `Codes`
 
 Each object in the `codes` array contains the following fields.
 

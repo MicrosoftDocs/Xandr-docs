@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Create a Custom Role
-description: Create a custom role to control user access in Microsoft Monetize. Specify views and permissions, like limited access for external sales.
+description: Explore creating a custom role in Microsoft Monetize to manage user access, defining views and permissions, including restricted access for external sales.
 ms.date: 10/28/2023
 ---
 
@@ -12,7 +12,7 @@ Custom roles control the actions a user is allowed to take, such as the ability 
 
 ## Getting there
 
-- Select **Network > User Management > Roles** from the navigation menu.
+- Select **Network** > **User Management** > **Roles** from the navigation menu.
 - Select **Roles** from the top right corner under the member (Click on member name to get the dialog).
   
 ## Create role
@@ -31,7 +31,7 @@ Custom roles control the actions a user is allowed to take, such as the ability 
 - In **Users** field, click **Edit Associated Users**.
   A new dialog **Users** opens to specify the users for the role.
 
-- Select the user(s) to link to the custom role who will have the permissions specified by the capabilities you assign in this role. Alternatively, you can click on **Roles** under **Network > User Management** to go to **Roles** screen. There, you can click the **pencil** icon to open the **Edit Role** dialog and assign users. You can also assign an existing role when you create a new user. See [Create a User](create-a-user.md) for more information on user settings. After you assign a role to a user, it could take up to 10 minutes for the new permissions to take effect.
+- Select the user(s) to link to the custom role who will have the permissions specified by the capabilities you assign in this role. Alternatively, you can click on **Roles** under **Network** > **User Management** to go to **Roles** screen. There, you can click the **pencil** icon to open the **Edit Role** dialog and assign users. You can also assign an existing role when you create a new user. See [Create a User](create-a-user.md) for more information on user settings. After you assign a role to a user, it could take up to 10 minutes for the new permissions to take effect.
 
 ## Capabilities
 

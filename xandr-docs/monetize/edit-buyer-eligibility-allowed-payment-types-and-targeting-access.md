@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Edit Default Buyer Settings
-description: Explore Partner Center settings, update buyer options. Defaults apply if custom unset. Buyer views Partner Controls.
+description: Explore Partner Center settings, update buyer options, and let buyer views Partner Controls in the absence of custom settings.
 ms.date: 10/28/2023
 ---
 

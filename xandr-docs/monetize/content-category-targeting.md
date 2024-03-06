@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Content Category Targeting
-description: The article defines content category targeting where the argeting is only available to Standard Line Items.
+description: Explore content category targeting for Standard Line Items; it defines exclusive targeting options, enhancing precision.
 ms.date: 10/28/2023
 ---
 

@@ -19,8 +19,8 @@ You can also associate custom third-party tracking pixels with your creatives if
   
 The following tracking events are supported:
 
- | Tracking Event | Creative Type | Description |
-|---|---|---|
+| Tracking Event | Creative Type | Description |
+|--|--|--|
 | Click | All | Tracks all clicks. |
 | Error | Video and Audio | Tracks issues related to the video player. |
 | Impression | All | Tracks all impressions. |
@@ -33,7 +33,7 @@ The following tracking events are supported:
   Here's a list of pixel formats that are supported per creative type:
 
 | Creative Type | Supported Format |
-|---|---|
+|--|--|
 | Video and Audio | Image URL |
 | Native | - Image URL<br> - JavaScript URL |
 | Banner | - Image URL<br> - HTML URL<br> - JavaScript URL<br> - Raw JavaScript |

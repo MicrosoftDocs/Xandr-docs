@@ -1,6 +1,6 @@
 ---
 title: Create a Deal Campaign
-description: Create deal campaigns targeting Monetize sellers and external partners for effective promotion, mirroring standard setups.
+description: Explore creating campaigns to target Monetize sellers and external partners, mirroring standard setups for effective promotion.
 ms.date: 10/28/2023
 ---
 

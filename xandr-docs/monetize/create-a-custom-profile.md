@@ -1,6 +1,6 @@
 ---
 title: Create a Custom Profile
-description: Create a unique Ad Quality Profile for a publisher, either from scratch or based on a template. Future template changes won't affect the Custom Profile.
+description: Explore creating a distinct Ad Quality Profile for a publisher, either from scratch or using a template, ensuring immunity to future template modifications.
 ms.date: 10/28/2023
 ---
 

@@ -34,7 +34,7 @@ Buyers can configure the default manner in which they process new seller deals b
   >
   >  To set the deal review preference for new seller deals, do the following:
 
-1. Select **Partners \> Deals**.
+1. Select **Partners** \> **Deals**.
 1. On the top right of the **Deals** screen, click the edit icon on **New Deals Do Not Require Approval** (or **New Deals Require Approval** if it’s been changed previously) to open **Review Preferences**.
 1. On the **Review Preferences** page, select either:
     - **Default Active** – to accept all new deals and set their status to **Active**
@@ -69,7 +69,7 @@ When you select **Decline**, the deal is:
 
 To accept or decline one or more new deals:
 
-1. Select **Partners \> Deals**.
+1. Select **Partners** \> **Deals**.
 1. Check the box next to any deals you want to accept or decline (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code**).
 1. In the **Select** drop-down, select **Accept** or **Decline**.
 
@@ -81,7 +81,7 @@ You can manage the status of deals so you can control when each deal is availabl
 |--|--|--|--|
 | **Pending** | - Deal not passed in bidstream<br> - Not available for targeting<br> - Not included in **Target All Deals** | **Review Preferences** set to **Require Review**. | **Accept** or **Decline** deal. |
 | **Active** | - Deal passed in bidstream<br> - Available for targeting, and included in **Target All Deals**. | - **Review Preferences** set to **Default Active**.<br> - **Pending** deal is accepted.<br> - **Inactive** or **Declined** deal set to **Active**. | Set status to **Inactive** or **Declined** |
-| **Declined** |  - Deal not passed in bidstream<br> - Not available for targeting<br> - Not included in **Target All Deals** | - **Pending deal** is declined.<br> - **Active** deal set to **Declined** | Set status to **Active** or **Inactive** |
+| **Declined** | - Deal not passed in bidstream<br> - Not available for targeting<br> - Not included in **Target All Deals** | - **Pending deal** is declined.<br> - **Active** deal set to **Declined** | Set status to **Active** or **Inactive** |
 | **Inactive** | - Deal not passed in bidstream<br> - Not available for targeting<br> - Not included in **Target All Deals** | **Active** deal set to **Inactive**. | Set status to **Active** or **Declined**. |
 
 ## Change deal status

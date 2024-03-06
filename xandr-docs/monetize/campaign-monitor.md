@@ -29,7 +29,7 @@ The following metrics are selected by default:
 - **Revenue**: How much money the network made for the line item or campaign.
 - **Media Cost:** How much money the network spent on inventory.
 - **Revenue Type:** How the advertiser is paying the network.
-- **CTR:** If you have a budget and are bidding on a CPC basis, we can  calculate if you are on pace or not.
+- **CTR:** If you have a budget and are bidding on a CPC basis, we can calculate if you are on pace or not.
 - **Days Into Flight:** How many days the line item or campaign has been live and how many days are left.
 - **Estimated End Date:** The estimated end date for the line item or campaign based on past performance.
 
@@ -66,12 +66,11 @@ You can export Campaign Monitor results to a CSV file if you want to do more in-
 
 The Campaign Monitor gives you a visual of line item and campaign delivery by using pacing bars. Pacing bars are displayed any place you've set a budget. The pacing bar is used to gauge how far along you are in your budget compared to where you should be. It also tells you what % you are pacing to.
 
-The color of the pacing bar is also based on how close you are to pacing so you can quickly view a line item or campaign's health. If your pacing bar is grey it's because we
-don't have flight dates for the line item or the campaign and therefore, cannot determine how far along the line item or campaign should be. **If you'd like to see the line item or campaign pacing compared to expected pacing, please read** [Getting the Most out of Campaign Monitor](campaign-monitor.md#getting-the-most-out-of-campaign-monitor), **below**.
+The color of the pacing bar is also based on how close you are to pacing so you can quickly view a line item or campaign's health. If your pacing bar is grey it's because we don't have flight dates for the line item or the campaign and therefore, cannot determine how far along the line item or campaign should be. **If you'd like to see the line item or campaign pacing compared to expected pacing, please read** [Getting the Most out of Campaign Monitor](campaign-monitor.md#getting-the-most-out-of-campaign-monitor), **below**.
 
 | Lifetime Pacing Bar | Yesterday Pacing Bar |
-|---|---|
-| :::image type="content" source="media/lifetime-pacing.png" alt-text="Screenshot that illustrates the Lifetime Pacing bar for the lifetime data impression budget."::: | :::image type="content" source="media/yesterday-pacing.png" alt-text="Screenshot displaying the Yesterday Pacing bar for yesterday's Data-Revenue budget."::: |
+|--|--|
+| :::image type="content" source="media/lifetime-pacing.png" alt-text="Screenshot that illustrates the Lifetime Pacing bar for the lifetime data impression budget."::: | :::image type="content" source="media/yesterday-pacing.png" alt-text="Screenshot that displays the Yesterday Pacing bar for yesterday's Data-Revenue budget."::: |
 
 ## Personalizing your pacing bars
 
@@ -113,7 +112,7 @@ performance.
 In the details pane, you can view expected metrics compared to actual metrics based on a cumulative lifetime view and an individual day view. Click on the button in the **Metrics** section that corresponds to the metric you want to see in graph view.
 
 | Cummulative Lifetime Metrics | Last 14 individual Day Metrics |
-|---|---|
+|--|--|
 | :::image type="content" source="media/lifetime-metrics-graph.png" alt-text="Screenshot that explains Lifetime Pacing bar in Cummulative Lifetime Metrics."::: | :::image type="content" source="media/day-metrics-graph.png" alt-text="Screenshot that explains Yesterday Pacing bar in Last 14 individual Day Metrics."::: |
 
 ## Line item or campaign settings

@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Device Make Service
-description: Use the device make service to allow users to see registered makes of mobile devices in the system for targeting in mobile campaigns.
+description: Use the Device Make service to allow users to see registered makes of mobile devices in the system for targeting in mobile campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Device make service
+# Digital Platform API - Device Make service
 
 Mobile devices are categorized by make and model, where make is generally the manufacturer of the device (i.e., Apple) and model is generally the specific product (i.e., IPhone). The read-only Device Make Service allows you to see what makes of mobile devices are registered in the Xandr system. You can use this service to retrieve device make IDs for targeting in mobile campaigns.
 
@@ -16,10 +16,10 @@ Mobile devices are categorized by make and model, where make is generally the ma
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/device-make | View all device makes |
-| `GET` | https://api.appnexus.com/device-make?id=DEVICE_MAKE_ID | View a specific device make |
-| `GET` | https://api.appnexus.com/device-make?name=DEVICE_MAKE_NAME | View a specific device make |
-| `GET` | https://api.appnexus.com/device-make/meta | Find out which fields you can filter and sort by |
+| `GET` | `https://api.appnexus.com/device-make` | View all device makes |
+| `GET` | `https://api.appnexus.com/device-make?id=DEVICE_MAKE_ID` | View a specific device make |
+| `GET` | `https://api.appnexus.com/device-make?name=DEVICE_MAKE_NAME` | View a specific device make |
+| `GET` | `https://api.appnexus.com/device-make/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

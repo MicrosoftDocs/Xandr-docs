@@ -1,11 +1,11 @@
 ---
 title: Email Template Service
-description: Use the email template service to create and manage templates for system-generated emails.
+description: Use the Email Template service to create and manage templates for system-generated emails.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Email template service
+# Email Template service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -16,11 +16,11 @@ Administrators use this service to create and manage templates for system-genera
 
 | HTTP Method | HTTP Method | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/email-template<br><br>(`add_template` JSON) | Add a new email template |
-| `PUT` | https://api.appnexus.com/email-template<br><br>(`modify_template` JSON) | Modify an existing email template |
-| `GET` | https://api.appnexus.com/email-template | View all email templates |
-| `GET` | https://api.appnexus.com/email-template?id=EMAIL_TEMPLATE_ID | View a specific email template |
-| `DELETE` | https://api.appnexus.com/email-template?id=EMAIL_TEMPLATE_ID | Delete an email template |
+| `POST` | `https://api.appnexus.com/email-template`<br><br>(`add_template` JSON) | Add a new email template |
+| `PUT` | `https://api.appnexus.com/email-template`<br><br>(`modify_template` JSON) | Modify an existing email template |
+| `GET` | `https://api.appnexus.com/email-template` | View all email templates |
+| `GET` | `https://api.appnexus.com/email-template?id=EMAIL_TEMPLATE_ID` | View a specific email template |
+| `DELETE` | `https://api.appnexus.com/email-template?id=EMAIL_TEMPLATE_ID` | Delete an email template |
 
 ## JSON fields
 
@@ -67,7 +67,7 @@ $ curl -b cookies -c cookies -X POST -d @add_template.json "https://api.appnexus
 
 ### Modify an email template
 
-In this example, the `PUT` request updates the subject line in email template 35.
+In this example, the `PUT` request updates the subject line in email template `35`.
 
 ```
 $ cat modify_template

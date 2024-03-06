@@ -1,11 +1,11 @@
 ---
 title: Deal Buyer Setting Service
-description: Learn about the deal buyer setting service. It allows buyers to give deals an alias and assign a status, giving them more control.
+description: Learn about the Deal Buyer Setting service. It allows buyers to give deals an alias and assign a status, giving them more control.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Deal buyer setting service
+# Deal Buyer Setting service
 
 The Deal Buyer Setting Service lets buyers give deals an internal alias for clarity in the UI and assign a status to deals so buyers have more control over which deals they’re targeting. Note that these deal settings are only available to the buyers who created them and are not visible to the seller of the deal.
 
@@ -16,13 +16,13 @@ The Deal Buyer Setting Service lets buyers give deals an internal alias for clar
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/deal-buyer-setting | View all of your deal settings. |
-| `GET` | https://api.appnexus.com/deal-buyer-setting?id=ID | View a specific deal setting. |
-| `GET` | https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID | View the settings for a specific deal. |
-| `GET` | https://api.appnexus.com/deal-buyer-setting?id=1,2,3 | View multiple deal settings by ID using a comma-separated list. |
-| `GET` | https://api.appnexus.com/deal-buyer-setting/meta | Find out which fields you can filter and sort by. |
-| `POST` | https://api.appnexus.com/deal-buyer-setting | Add settings for a deal. |
-| `PUT` | https://api.appnexus.com/deal-buyer-setting?id=ID | Modify settings for a deal. |
+| `GET` | `https://api.appnexus.com/deal-buyer-setting` | View all of your deal settings. |
+| `GET` | `https://api.appnexus.com/deal-buyer-setting?id=ID` | View a specific deal setting. |
+| `GET` | `https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID` | View the settings for a specific deal. |
+| `GET` | `https://api.appnexus.com/deal-buyer-setting?id=1,2,3` | View multiple deal settings by ID using a comma-separated list. |
+| `GET` | `https://api.appnexus.com/deal-buyer-setting/meta` | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/deal-buyer-setting` | Add settings for a deal. |
+| `PUT` | `https://api.appnexus.com/deal-buyer-setting?id=ID` | Modify settings for a deal. |
 
 ## JSON fields
 
@@ -41,7 +41,7 @@ The Deal Buyer Setting Service lets buyers give deals an internal alias for clar
 
 ### Add deal setting
 
-If a deal-buyer-setting object has already been created for the deal, the POST request will return the following error message: "`The buyer_member_id, deal_id combination was not unique.`" To modify this deal-buyer-setting, first make a `GET` [https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID](https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID) request to return the deal-buyer-setting ID. Then use the deal-buyer-setting ID with a `PUT` [https://api.appnexus.com/deal-buyer-setting?id=ID](https://api.appnexus.com/deal-buyer-setting?id=ID) request to modify the deal-buyer-setting.
+If a deal-buyer-setting object has already been created for the deal, the POST request will return the following error message: "`The buyer_member_id, deal_id combination was not unique.`" To modify this deal-buyer-setting, first make a `GET` `https://api.appnexus.com/deal-buyer-setting?deal_id=DEAL_ID` request to return the deal-buyer-setting ID. Then use the deal-buyer-setting ID with a `PUT` `https://api.appnexus.com/deal-buyer-setting?id=ID` request to modify the deal-buyer-setting.
 
 ```
 $ cat deal_settings.json

@@ -1,11 +1,11 @@
 ---
 title: Developer Data Service
-description: Use the developer data service to add data about API objects.
+description: Use the Developer Data service to add data about API objects.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Developer data service
+# Developer Data service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -37,12 +37,12 @@ The Developer Data Service is only available for the following objects:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/developer-data | Add new developer data |
-| `PUT` | https://api.appnexus.com/developer-data | Modify existing developer data |
-| `GET` | [https://api.appnexus.com/developer-data?id=ID](https://api.appnexus.com/developer-data?id=ID)<br><br>[https://api.appnexus.com/developer-data?object_id=OBJECT_ID](https://api.appnexus.com/developer-data?object_id=OBJECT_ID) | View specific developer data |
-| `GET` | https://api.appnexus.com/developer-data | View all developer data |
-| `DELETE` | https://api.appnexus.com/developer-data | Delete developer data |
-| `GET` | https://api.appnexus.com/developer-data/meta | Find out which fields you can filter and sort by |
+| `POST` | `https://api.appnexus.com/developer-data` | Add new developer data |
+| `PUT` | `https://api.appnexus.com/developer-data` | Modify existing developer data |
+| `GET` | `https://api.appnexus.com/developer-data?id=ID`<br><br>`https://api.appnexus.com/developer-data?object_id=OBJECT_ID` | View specific developer data |
+| `GET` | `https://api.appnexus.com/developer-data` | View all developer data |
+| `DELETE` | `https://api.appnexus.com/developer-data` | Delete developer data |
+| `GET` | `https://api.appnexus.com/developer-data/meta` | Find out which fields you can filter and sort by |
 
 ## JSON fields
 

@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Engagement Metrics Report
-description: Use the engagement metrics report to get information about ad viewability and to identify problems that might prevent measuring an impression's viewability.
+description: Use the Engagement Metrics report to get information about ad viewability and identify problems that might prevent measuring an impression's viewability.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -13,11 +13,9 @@ The Engagement Metrics report provides information about ad viewability, as well
 
 All dates and times are given in UTC.
 
-**Time ranges**
+### Time ranges
 
-Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.
-
-However, all time ranges are not available for every report.
+Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - custom
 - current_hour
@@ -42,7 +40,7 @@ However, all time ranges are not available for every report.
 - month_to_yesterday
 - lifetime
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -112,7 +110,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Example
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
 The JSON file should include the `report_type` of `"engagement_metrics_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

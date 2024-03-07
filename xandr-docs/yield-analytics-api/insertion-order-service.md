@@ -849,6 +849,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   ```
 
 ### Get guaranteed delivery historical capacity as JSON
+
 - **Parameters**
   
   | Type | Name | Description | Required | Schema |

@@ -4,7 +4,7 @@ description: In this article, find information about the best practices to use B
 ms.date: 10/28/2023
 ---
 
-# Bidders - Batch segment service best practices 
+# Bidders - Batch segment service best practices
 
 The Batch Segment Service (BSS) allows you to send bulk feeds of external segment data to Xandr. Using BSS, you can easily integrate your first, second, or third-party audience data to create dynamic, configurable segments for sophisticated user targeting and increased ROI.
 

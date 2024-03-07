@@ -22,17 +22,19 @@ Log level data feeds include information about the following:
 **Your managed publishers' transacted impressions**
 
 This includes:
-  - Information about the impression sold (e.g., publisher ID, tag ID, and domain)
-  - Information about the user to whom the ad was served (e.g., user ID, geographic region, and user timezone)
-  - ID of the creative that served
+
+- Information about the impression sold (e.g., publisher ID, tag ID, and domain)
+- Information about the user to whom the ad was served (e.g., user ID, geographic region, and user timezone)
+- ID of the creative that served
   
 **Your managed advertisers' transacted impressions, and any resulting clicks and conversions**
 
 This includes:
-  - Information about the impression purchased such as advertiser ID, campaign ID, and creative ID
-  - Information about the user to whom the ad was served (e.g., user ID, geographic region, user timezone, and number of times the user has seen creatives from your advertiser)
-  - Information about the inventory where the impression served (e.g., Publisher ID or domain, if exposed by the seller)
-    
+
+- Information about the impression purchased such as advertiser ID, campaign ID, and creative ID
+- Information about the user to whom the ad was served (e.g., user ID, geographic region, user timezone, and number of times the user has seen creatives from your advertiser)
+- Information about the inventory where the impression served (e.g., Publisher ID or domain, if exposed by the seller)
+
 **Segment pixel fires for all of your network's owned segments**
 
 This includes network and advertiser level segments.

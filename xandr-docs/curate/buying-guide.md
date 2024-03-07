@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Buying guide
 
-This guide helps you understand the buy-side capabilities of Microsoft Curate and provides step-by-step instructions for managing all aspects of direct and third-party media buying on behalf of your advertisers. For details about network-level features that apply to all
-advertisers, see the [Network Guide](../monetize/network-guide.md). For direct agreements with sellers, see [Buying Deals](buying-deals.md).
+This guide helps you understand the buy-side capabilities of Microsoft Curate and provides step-by-step instructions for managing all aspects of direct and third-party media buying on behalf of your advertisers. For details about network-level features that apply to all advertisers, see the [Network Guide](../monetize/network-guide.md). For direct agreements with sellers, see [Buying Deals](buying-deals.md).
 
 > [!TIP]
 > New to buy-side setup tasks and concepts? Check our [Training: Microsoft Advertising's Learning Lab](../training-resources/training-microsoft-advertising-learning-lab.md) for self-paced videos and upcoming classroom and webinar sessions.

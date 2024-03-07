@@ -54,7 +54,7 @@ To retrieve the adResponseInfo object from the ad response, use the following pr
 }
 ```
 
-## Code Samples (Swift)
+## Code samples (Swift)
 
 ```
 func requestBannerAd() {

@@ -29,7 +29,7 @@ Xandr's impression bus API supports HTTP Protocol version 1.1 or later. While s
 
 Xandr API services are "RESTful." REST (Representational State Transfer) is a type of software architecture in which requests model the communication from a web browser to a web server. Below are the central REST methods used in Xandr's API Services and their uses:
 
-|  |  |
+| REST Method | Usage |
 |--|--|
 | POST | create/add |
 | GET | read/retrieve |

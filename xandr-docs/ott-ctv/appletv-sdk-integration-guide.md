@@ -32,7 +32,7 @@ You can use the following code in your pod spec file:
 
 Sample podfile:
 
-``` pre
+```
 target 'MyApp' do
 pod 'AppNexusTVOSSDK', '~> 2.0.0'
 end
@@ -42,7 +42,7 @@ end
 
 Use the following commands:
 
-``` pre
+```
 import ANTVSDK
 import AVKit //standard Audio Video Kit library
 ```
@@ -51,7 +51,7 @@ import AVKit //standard Audio Video Kit library
 
 Use the following commands:
 
-``` pre
+```
 class VMAPViewController: UIViewController, AdControllerProtocol {
 ```
 
@@ -59,7 +59,7 @@ class VMAPViewController: UIViewController, AdControllerProtocol {
 
 Use the following commands:
 
-``` pre
+```
 let appContentVideoPlayer:AVPlayer? = AVPlayer(url: URL(string: "<URL to your content video>")!)
 let appContentViewController:AVPlayerViewController? = AVPlayerViewController()
 ```
@@ -68,7 +68,7 @@ let appContentViewController:AVPlayerViewController? = AVPlayerViewController()
 
 The adController object should be scoped within UIControllerVIew. Use the following command:
 
-``` pre
+```
 let adController = AdController()
 ```
 
@@ -78,7 +78,7 @@ We provide the AdSlot object as a parameter for communication between applicatio
 
 Initial "setup" method will return `Array<AdSlot>` representing VMAP ad breaks.
 
-``` pre
+```
 @objc public class AdSlot: NSObject, Codable {
     public let breakId: String?;
     public var timeOffset: String?;
@@ -93,7 +93,7 @@ Initial "setup" method will return `Array<AdSlot>` representing VMAP ad breaks.
 
 Use this delegate method in UIViewController to account for preroll ads before content playback.
 
-``` pre
+```
 func adPlaybackControllerDidSetup(adSlots: Array<AdSlot>?) {
     if (adSlots == nil) {
         /// fatal SDK error, start playback of your app content video here
@@ -108,7 +108,7 @@ func adPlaybackControllerDidSetup(adSlots: Array<AdSlot>?) {
 
 This delegate method must be implemented in UIViewController to notify SDK you are ready for video ad playback. When the SDK determines that it is time to show a video ad, it will pause the content video and invoke this method with a single "AdSlot" object. The publisher application can then implement any ad-specific behavior. Note that this function should return `true`. If it returns `false`, the ad will not be shown.
 
-``` pre
+```
 func adPlaybackControllerShouldStartAd(adSlot: AdSlot?) -> Bool {
     return true // if publisher application allows SDK to play video ad for the "adSlot"
 }
@@ -118,7 +118,7 @@ func adPlaybackControllerShouldStartAd(adSlot: AdSlot?) -> Bool {
 
 This delegate method must be implemented in UIViewController so the SDK can notify the program that the video ad slot has finished playing all the ad creatives. When this delegate is called, the SDK will resume playback of the content video.
 
-``` pre
+```
 func adPlaybackControllerDidNotifyAdSlotEnded(adSlot: AdSlot?) {
     //do publisher application's internal work here
 }
@@ -128,7 +128,7 @@ func adPlaybackControllerDidNotifyAdSlotEnded(adSlot: AdSlot?) {
 
 Implementing these delegate methods is required. However, they can remain stub functions.
 
-``` pre
+```
 /// a delegate when sdk raised an error
 ///
 /// - Parameters:
@@ -161,7 +161,7 @@ Invoke the `setup()` method to initialize the SDK and request an ad. When the SD
 
 The following examples show how to invoke setup for VMAP, for a Xandr placement set, for a VAST URL, and for Xandr VAST placement.
 
-``` pre
+```
 // VMAP URL
 adController.setup(vmapURL:String, contentVideoPlayerViewController: AVPlayerViewController, contentVideoPlayer: AVPlayer, contentUIViewController: UIViewController, delegate: AdControllerProtocol)
 // Xandr Placement Set Id
@@ -176,7 +176,7 @@ adController.setup(appNexusMemberId: Int, appNexusPlacementId: Int, contentVideo
 
 Invoke `pauseAd()/resumeAd()` to control the video ad. `getPauseStatus()` will return the current pause state of the ad.
 
-``` pre
+```
 adController.pauseAd() //pause video ad
 adController.resumeAd() //resume video ad
 adController.getPauseStatus() //true if video ad paused, false otherwise
@@ -186,7 +186,7 @@ adController.getPauseStatus() //true if video ad paused, false otherwise
 
 To render a skip button, implement the `adPlaybackControllerDidNotifyAnEvent()` delegate method. The SDK logic adds a target to handle `UIControlEvents.primaryActionTriggered` which will call an API `skip()`. This `VideoEvent.timeToShowSkip` trusts the VAST `skipoffset` attribute.
 
-``` pre
+```
 func adPlaybackControllerDidNotifyAnEvent(adSlot: AdSlot?, event: VideoEvent?, data: String?) {
     if (event == VideoEvent.timeToShowSkip) {
          
@@ -217,7 +217,7 @@ You can use the `setOptions()` method to specify how you want the SDK to look, w
 
 All these settings are optional. The following example shows how to set them:
 
-``` pre
+```
 adController.setOptions(
     widthOfAdIndicator: 100,
     leftMarginOfAdIndicator: 200,
@@ -254,7 +254,7 @@ adController.setOptions(
 
 This example uses Swift.
 
-``` pre
+```
 import Foundation
 import ANTVSDK
 import AVKit
@@ -335,7 +335,7 @@ Use the following best practices when implementing the SDK in your app.
 
 When you call a DFP tag with ANTVSDK, the correlator ensures the publisher receives a proper response from the DFP server. Make sure you change the `correlator` parameter on your tag every time you make this call, as shown in the following example:
 
-``` pre
+```
 https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpreonly&cmsid=496&vid=short_onecue&correlator={unique random number}
 ```
 
@@ -347,7 +347,7 @@ Your application should not start the content video on its own. It should wait u
 
 tvOS ARC (Automatic Reference Counting) checks and cleans most of the used objects in ANTVSDK that are not necessary at the time when the publisher application's UIViewController is dismissed. However, to support and ensure the validity of ARC, calling `adController.dismiss()` on the `deinit` block of the publisher applications's UIViewController (as shown in the following example) is required.
 
-``` pre
+```
 deinit {
     adController.dismiss() //dismiss all objects created on ANTVSDK
 }
@@ -361,14 +361,14 @@ By default, Xcode does not support non-secure HTTP requests. Certain development
 
 A framework "ANTVSDK.framework" includes x86_64 and ARM64 binary to support both an emulator and an actual Apple TV device. In case you don't want to include the x86_64 binary in your application because of Apple AppStore guidelines, you can simply remove it using `lipo`, as shown in the following example:
 
-``` pre
+```
 cd ANTVSDK.framework
 lipo -remove x86_64 ANTVSDK -o ANTVSDK
 ```
 
 You can then check to see if the library only contains the ARM64 binary:
 
-``` pre
+```
 <username>:ANTVSDK.framework $ file ANTVSDK
 ANTVSDK: Mach-O universal binary with 1 architecture: [arm64: Mach-O 64-bit dynamically linked shared library arm64]
 ANTVSDK (for architecture arm64):   Mach-O 64-bit dynamically linked shared library arm64

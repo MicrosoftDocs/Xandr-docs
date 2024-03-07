@@ -38,7 +38,7 @@ Adding your segment file to the system is a three-step process. First, request a
 Each segment data file that is uploaded must be associated with a particular job ID. This ID is used to create the upload URL and to track the file's processing status. The first step is to send an empty `POST` request to the service.
 
 > [!NOTE]
-> This service works for both [api.appnexus.com](https://api.appnexus.com/) and for [api.adnxs.com](http://api.adnxs.com/) - it is available for both bidder and console logins.
+> This service works for both `api.appnexus.com` and for `api.adnxs.com` - it is available for both bidder and console logins.
 
 ```
 $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
@@ -74,8 +74,8 @@ The file upload URL is given in the JSON response to Step 1 by the field `upload
 > - Your segment file should not be larger than 0.5GB.
 > [!WARNING]
 > In order for the file to upload correctly, you *must* specify the MIME type in the HTTP header as "Content-Type: application/octet-stream". *Do not* use "Content-Type: application/x-www-form-urlencode" (-d or --data flags in curl). Using an incorrect MIME type will prevent the file from being processed by the API Batch Segment Service.
-> 
-> Your file must conform to the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
+>
+> Your file must conform to the Latin1 character set.
 
 ```
 $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-binary @segment_file "https://01.data-api.prod.adnxs.net/segment-upload/JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
@@ -359,13 +359,13 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 | Fields | Type | Description |
 |---|---|---|
-| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See [Batch Segment Upload Job](#batch-segment-upload-job) for details. |
+| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See [Batch Segment Upload Job](#batch-segment-upload-job) below for details. |
 | `id` | int | This is the ID of the `batch_segment_upload_job` object associated with this request. <br><br> **Default**: An automatically generated number. |
 | `status` | string | The status of the API call; successful calls return `"OK"`. |
 
 ### Batch segment upload job
 
-When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata. For more information about the required sequence of requests, see [Add a Segment File for Processing](#add-a-segment-file-for-processing).
+When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata. For more information about the required sequence of requests, see [Add a Segment File for Processing](#add-a-segment-file-for-processing) below.
 
 > [!NOTE]
 > Most metadata will only be present when `"phase" = "completed."`

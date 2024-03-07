@@ -7,6 +7,7 @@ ms.date: 10/28/2023
 # Responding to a MegaTag bid request
 
 > [!IMPORTANT]
+>
 > - **Not Supported**: The AppNexus Bidding Protocol is no longer supported; this documentation is for legacy purposes only. **We will deprecate this protocol on December 1, 2018.**
 > - If you're a new bidder integrating with AppNexus, please see the [OpenRTB 2.4 Bidding Protocol](https://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-2-4-FINAL.pdf).
 

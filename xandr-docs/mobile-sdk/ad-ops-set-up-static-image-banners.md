@@ -16,18 +16,18 @@ For developer-focused banner documentation, see [Show Banners](show-banners-on-i
 Use the following settings to set up your creative (see “Add Interstitial Creatives” in the UI documentation for more information):
 
 1. Under **Creative Content**, choose a **Third-party creative** type.
-2. Choose a **Creative format** of Third Party URL.
-3. Choose an Output Type of **Image**.
-4. Choose a **Media Type of Banner**: **Standard Banner**.
-5. In the **Template** field, choose **AppNexus: Standard**.
+1. Choose a **Creative format** of **Third Party URL**.
+1. Choose an **Output Type** of **Image**.
+1. Choose a **Media Type of Banner**: **Standard Banner**.
+1. In the **Template** field, choose **AppNexus: Standard**.
 
 ## Placement settings
 
 Use the following settings to set up your placement (see "Create a Placement" in the UI documentation for more information):
 
 1. Set the **Supply Type** to **Mobile Application**.
-2. Set the **Media Type** to **Banner**.
-3. Choose a placement size that matches the size of your desired banner ad view in the SDK (as described in the [Show Banners](show-banners-on-ios.md) developer docs).
+1. Set the **Media Type** to **Banner**.
+1. Choose a placement size that matches the size of your desired banner ad view in the SDK (as described in the [Show Banners](show-banners-on-ios.md) developer docs).
 
 ## SDK settings
 

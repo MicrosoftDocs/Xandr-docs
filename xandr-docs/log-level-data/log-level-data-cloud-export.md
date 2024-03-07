@@ -64,8 +64,7 @@ Please follow the procedures in the sections below for the cloud vendor you'd li
 > Do not manually create any manifest- or feed-related paths. Doing so will cause your export to fail to verify due to object-level ACLs.
 > The necessary paths will be automatically created by Xandr.
 
-1. **Authorization**. For each Xandr member seat, Xandr creates a unique AWS user to upload data to S3 buckets. Xandr generates a
-    suggested [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html) to [apply](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html) to your bucket that allows our AWS user access to your bucket. This policy can be used as-is, but if you already have a policy applied to your bucket, you will have to merge our policy statements with yours.
+1. **Authorization**. For each Xandr member seat, Xandr creates a unique AWS user to upload data to S3 buckets. Xandr generates a suggested [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html) to [apply](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html) to your bucket that allows our AWS user access to your bucket. This policy can be used as-is, but if you already have a policy applied to your bucket, you will have to merge our policy statements with yours.
 
 1. **Verification**. Once you apply a policy to your bucket, you must verify your permissions before your S3 Cloud Export can be activated. Click **Verify** (on the **Cloud Export to: Amazon S3** page) to run a series of tests that mimic actions that occur during an actual export. Once your export is verified, it is active. Data from the feed will automatically be exported to your S3 bucket (starting in the next hour).
 
@@ -113,8 +112,7 @@ Please follow the procedures in the sections below for the cloud vendor you'd li
 
 1. Click **New** to set up a new export or **Configure** to edit an existing export. The **Cloud Export to: Google Cloud Storage** page will be displayed.
 
-1. **Authorization**. Navigate to [Cloud Storage console](https://console.cloud.google.com/storage), select your bucket, and click **SHOW INFO PANEL**. Add our Google member `prod-lld-gcs-{XANDR MEMBER ID}@appnexus-cloud-export.iam.gserviceaccount.com`
-    to your bucket permissions and assign it [Cloud Storage IAM Role](https://cloud.google.com/storage/docs/access-control/iam-roles) (This role has the full admin access). An example of Google member for Xandr member ID 123456 is: `prod-lld-gcs-123456@appnexus-cloud-export.iam.gserviceaccount.com`
+1. **Authorization**. Navigate to [Cloud Storage console](https://console.cloud.google.com/storage), select your bucket, and click **SHOW INFO PANEL**. Add our Google member `prod-lld-gcs-{XANDR MEMBER ID}@appnexus-cloud-export.iam.gserviceaccount.com` to your bucket permissions and assign it [Cloud Storage IAM Role](https://cloud.google.com/storage/docs/access-control/iam-roles) (This role has the full admin access). An example of Google member for Xandr member ID 123456 is: `prod-lld-gcs-123456@appnexus-cloud-export.iam.gserviceaccount.com`
 
 1. **Setup**. Enter the information in the table below and click **Save**:
 
@@ -404,7 +402,7 @@ Please ensure that all lifecycle rules are set up to move manifest objects to Gl
 
 **Potential Cause**: You are revoking object-level access for non-archived manifests
 
-**Applies to**: 
+**Applies to**:
 
 - Amazon S3
 

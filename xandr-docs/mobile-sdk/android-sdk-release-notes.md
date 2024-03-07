@@ -534,7 +534,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 
 - MS-4127 Implemented ssl error handling ([Github #48](https://github.com/appnexus/mobile-sdk-android/issues/48))
 - MS-4051 Added error code to identify frequent ad refresh
-- MS-4095 Updated OMID partner name 
+- MS-4095 Updated OMID partner name
 - MS-4086 Fixed OMID Pause multiple calls during application background state
 
 ## 6.1.1

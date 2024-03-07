@@ -9,7 +9,6 @@ ms.custom: digital-platform-api
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
-
 > [!WARNING]
 > If you need to make any changes to the `num_line` or `byte` limits of a member's batch segment configuration, please file a ticket under EPIC: DMP-376, following the directions in the info section of the page. You will need to receive approval from Ewa Maciukiewicz in order to proceed with the changes.
 
@@ -38,7 +37,7 @@ A client who wants access to another member's data will have to ask that member 
 | `last_modified` | string | The time at which this object was last modified. <br><br> **Filter by**: Yes <br> **Sort by**: Yes |
 | `max_concurrent_uploads` | int | The maximum number of uploads the client may perform at once. General guide: 1 <br><br> **Required On**: `POST` <br> **Filter by**: Yes <br> **Sort by**: Yes |
 | `member_id` | int | The member ID of the client whose configuration you're editing. <br><br> **Required On**: `PUT`, `POST` <br> **Filter by**: Yes <br> **Sort by**: Yes |
-| `member_segment_access` | array of objects | The member IDs whose segments the client has access to. (Use this if you're adding users to segments on behalf of someone). For more information, see the [Member Segment Access Array](#member-segment-access-array). <br><br> **Required On**: `POST` <br> **Filter by**: No <br> **Sort by**: No |
+| `member_segment_access` | array of objects | The member IDs whose segments the client has access to. (Use this if you're adding users to segments on behalf of someone). For more information, see the [Member Segment Access Array](#member-segment-access-array) section below. <br><br> **Required On**: `POST` <br> **Filter by**: No <br> **Sort by**: No |
 | `num_error_log_lines` | int | The number of lines that will show in the error log. General guide: less than 200 <br><br> **Required On**: `POST` <br> **Filter by**: Yes <br> **Sort by**: Yes |
 | `num_invalid_before_error` | int | The number of invalid lines to accept before signalling an error. When this limit is reached, the job is killed, but everything added before the first error will go in. General guide: 50% of a client's file. When in doubt, set this very high. <br><br> **Required On**: `POST` <br> **Filter by**: Yes <br> **Sort by**: Yes |
 | `segment_fields` | array | A list of segments correlated to the `SEG` block of the file format. For more information, see [Batch Segment Service](batch-segment-service.md). <br><br> **Required On**: `POST` <br> **Filter by**: Yes <br> **Sort by**: Yes |

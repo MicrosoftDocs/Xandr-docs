@@ -1,19 +1,17 @@
 ---
 title: Video Guidance
-description: Learn how to run video inventory through Prebid Server Premium (PSP). 
+description: Learn how to run video inventory through Prebid Server Premium (PSP). This page covers concepts on Instream and Outstream along with examples.   
 ms.date: 10/28/2023
 ---
 
 
 # Video guidance
 
-This page includes guidance on running video inventory through Prebid
-Server Premium (PSP).
+This page includes guidance on running video inventory through Prebid Server Premium (PSP).
 
 ## Instream
 
-- Include the Microsoft Advertising PSP `cache.url` object in
-  the config settings as shown in the following example:
+- Include the Microsoft Advertising PSP `cache.url` object in the config settings as shown in the following example:
 
   ``` 
   pbjs.setConfig({
@@ -33,9 +31,7 @@ Server Premium (PSP).
                           
   ```
 
-- To ensure that the relevant cache key-values are returned, include the
-  `extPrebid.cache.bids[{}]` object within the `s2sConfig` as shown in
-  the following example:
+- To ensure that the relevant cache key-values are returned, include the `extPrebid.cache.bids[{}]` object within the `s2sConfig` as shown in the following example:
 
   ``` 
   extPrebid = ([
@@ -61,9 +57,7 @@ Server Premium (PSP).
 
 ## Outstream
 
-- To ensure that the ad request is made for `Prebid.js s2s` (with PSP),
-  include the renderer object within the adUnit definition as shown in
-  the following example:
+- To ensure that the ad request is made for `Prebid.js s2s` (with PSP), include the renderer object within the adUnit definition as shown in the following example:
 
   ``` 
   var adUnits = ([
@@ -121,10 +115,7 @@ Server Premium (PSP).
                           
   ```
 
-- Microsoft Advertising response includes `prebid.type=video`,
-  but if the user sets additional key-value targeting for Prebid, as
-  shown in the below example, then the `hb_format=video` key-value will
-  be sent to Google Ad Manager (GAM) and can be targeted accordingly.
+- Microsoft Advertising response includes `prebid.type=video`, but if the user sets additional key-value targeting for Prebid, as shown in the below example, then the `hb_format=video` key-value will be sent to Google Ad Manager (GAM) and can be targeted accordingly.
 
   ``` 
   {
@@ -139,12 +130,7 @@ Server Premium (PSP).
                           
   ```
 
-- To leverage passing contextual key-values into the auction, be sure to
-  upgrade to `Prebid.js` version 6.14.0 or higher, and define
-  adUnit-level keywords accordingly. To ensure that the ad request is
-  made properly for `Prebid.js s2s` (with PSP), pass adUnit-level
-  keywords to Microsoft Advertising by including the keywords
-  object within the adUnit definition as shown in the following example:
+- To leverage passing contextual key-values into the auction, be sure to upgrade to `Prebid.js` version 6.14.0 or higher, and define adUnit-level keywords accordingly. To ensure that the ad request is made properly for `Prebid.js s2s` (with PSP), pass adUnit-level keywords to Microsoft Advertising by including the keywords object within the adUnit definition as shown in the following example:
 
   ``` 
   var adUnits = ([

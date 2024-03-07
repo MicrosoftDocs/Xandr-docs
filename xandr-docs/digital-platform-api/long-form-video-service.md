@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Long Form Video service
 
-SSP customers can integrate their app or web long-form ad pod video inventory with Prebid Server Premium (PSP) using the `/prebid/lfv`
-endpoint. Long-form video durations are at least 30 minutes with potential pre, mid, and post-roll positions.
+SSP customers can integrate their app or web long-form ad pod video inventory with Prebid Server Premium (PSP) using the `/prebid/lfv` endpoint. Long-form video durations are at least 30 minutes with potential pre, mid, and post-roll positions.
 
 Microsoft Monetize Ad Server customers do not need to change their current integration into Xandr, can ignore the long-form video service, and can instead follow the [PSP Setup Steps](../monetize/integrate-with-psp.md).
 
@@ -159,7 +158,7 @@ The `eid` object supports the following request parameters.
 | `id` | Required | String | The unique user ID. |
 | `rti_partner` | Required | String | The partner ID. |
 
-### Includebrandcategory
+### Include brand category
 
 The `includebrandcategory` object supports the following request parameters.
 
@@ -182,7 +181,7 @@ The `user` object supports the following request parameters.
 
 | Parameter | Scope | Type | Description |
 |:---|:---|:---|:---|
-| `buyeruid` | Optional | Integer | The Xandr user id, if known. |
+| `buyeruid` | Optional | Integer | The Xandr user ID, if known. |
 | `yob` | Optional | Integer | The user's year of birth as a four-digit integer. |
 | `gender` | Optional | Integer | The user's gender. Accepted values are:<br>- `M`: male<br>- `F`: female<br>- `O`: Known to be other. |
 | `keywords` | Optional | String | A list of keywords representing interests or intent. |

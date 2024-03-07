@@ -1,11 +1,11 @@
 ---
 title: Operating System Extended Service
-description: The operating system extended service provides a list of specific operating system versions to target in the profile service.
+description: The Operating System Extended service provides a list of specific operating system versions to target in the profile service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Operating system extended service
+# Operating System Extended service
 
 This read-only service shows you the list of specific operating system versions that you can target in the [Profile Service](./profile-service.md).
 
@@ -16,12 +16,12 @@ This read-only service shows you the list of specific operating system versions 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/operating-system-extended | View all operating systems. |
-| `GET` | https://api.appnexus.com/operating-system-extended?search=SEARCH_TERM | View all operating systems with IDs or names containing certain characters. |
-| `GET` | https://api.appnexus.com/operating-system-extended?family_id=OS_FAMILY_ID | View all operating systems within a specific family. |
-| `GET` | https://api.appnexus.com/operating-system-extended?family_name=OS_FAMILY_NAME | View all operating systems within a specific family. |
-| `GET` | https://api.appnexus.com/operating-system-extended?id=OPERATING_SYSTEM_ID | View a specific operating system. |
-| `GET` | https://api.appnexus.com/operating-system-extended/meta | Find out which fields you can filter and sort by. |
+| `GET` | `https://api.appnexus.com/operating-system-extended` | View all operating systems. |
+| `GET` | `https://api.appnexus.com/operating-system-extended?search=SEARCH_TERM` | View all operating systems with IDs or names containing certain characters. |
+| `GET` | `https://api.appnexus.com/operating-system-extended?family_id=OS_FAMILY_ID` | View all operating systems within a specific family. |
+| `GET` | `https://api.appnexus.com/operating-system-extended?family_name=OS_FAMILY_NAME` | View all operating systems within a specific family. |
+| `GET` | `https://api.appnexus.com/operating-system-extended?id=OPERATING_SYSTEM_ID` | View a specific operating system. |
+| `GET` | `https://api.appnexus.com/operating-system-extended/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

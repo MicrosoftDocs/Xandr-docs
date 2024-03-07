@@ -1,11 +1,11 @@
 ---
 title: Optimization Override Service
-description: Use optimization override service to override a line item's default settings. The service allows you to turn off discovery and adjust the discovery fail criteria.
+description: Use the Optimization Override service to override a line item's default settings. You can turn off discovery and adjust the discovery fail criteria.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Optimization override service
+# Optimization Override service
 
 The Optimization Override service allows clients with sophisticated optimization needs to override a line item's default settings for Discovery, an optimization feature ranks inventory based on its historical CPC and stops your line item from serving on inventory that doesn't perform. Discovery uses a **fail criterion** to cap amount of budget or number of impressions spent before a section of inventory is "axed" (considered failed and removed from eligibility for this line item).
 
@@ -32,9 +32,9 @@ Optimization override can be useful if:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/discovery | Retrieve Discovery settings for all customized line items in a member.<br><br>**Note**: Information is returned only when the Discovery settings have been customized. If the Discovery settings are the default settings, no details are returned. |
-| `GET` | https://api.appnexus.com/discovery?line_item_id=LINE_ITEM_ID | Retrieve custom Discovery settings for a single line item. <br><br>**Note**: Information is returned only when the Discovery settings have been customized. If the Discovery settings are the default settings, no details are returned. |
-| `PUT` | https://api.appnexus.com/discovery?line_item_id=LINE_ITEM_ID | Update custom Discovery settings. |
+| `GET` | `https://api.appnexus.com/discovery` | Retrieve Discovery settings for all customized line items in a member.<br><br>**Note**: Information is returned only when the Discovery settings have been customized. If the Discovery settings are the default settings, no details are returned. |
+| `GET` | `https://api.appnexus.com/discovery?line_item_id=LINE_ITEM_ID` | Retrieve custom Discovery settings for a single line item. <br><br>**Note**: Information is returned only when the Discovery settings have been customized. If the Discovery settings are the default settings, no details are returned. |
+| `PUT` | `https://api.appnexus.com/discovery?line_item_id=LINE_ITEM_ID` | Update custom Discovery settings. |
 
 ## JSON fields
 

@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Inventory List service
 
-The Inventory List Service is used to create inventory lists that contain the domains and apps you wish to target. These inventory lists
-can then be associated with line items for targeting. Use the Inventory List Service to create, view, and update inventory lists. You can then add domains and apps (or app bundle IDs) to the inventory list via the [Inventory List Item Service](inventory-list-item-service.md).
+The Inventory List Service is used to create inventory lists that contain the domains and apps you wish to target. These inventory lists can then be associated with line items for targeting. Use the Inventory List Service to create, view, and update inventory lists. You can then add domains and apps (or app bundle IDs) to the inventory list via the [Inventory List Item Service](inventory-list-item-service.md).
 
 ## REST API
 

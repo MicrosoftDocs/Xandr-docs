@@ -7,8 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Identifiers - ID Combinations report
 
-Platform Reporting on Industry IDs provides an insight into the delivery, performance and unique reach across Industry IDs (RampID,
-NetID, UID2) alongside device based IDs. The Identifiers-ID Combination Report allows you to understand the breakout and overlap of cookies and IDs across impressions. This view allows you to view impressions and associated metrics per combination of ID types.
+Platform Reporting on Industry IDs provides an insight into the delivery, performance and unique reach across Industry IDs (RampID, NetID, UID2) alongside device based IDs. The Identifiers-ID Combination Report allows you to understand the breakout and overlap of cookies and IDs across impressions. This view allows you to view impressions and associated metrics per combination of ID types.
 
 You can use the report to determine the following:
 
@@ -34,8 +33,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - quarter_to_date
 - lifetime
 
-To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these
-fields, see [Report Service](report-service.md).
+To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ## Data retention period
 
@@ -123,8 +121,7 @@ This report's data is retained for 90 days. For more information about how quick
 
 ## Examples
 
-The JSON file should include the `report_type` of `seller_slot_video_report_network`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON
-file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` of `seller_slot_video_report_network`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ### Create the JSON report request
 
@@ -180,8 +177,7 @@ $ curl -b cookie -c cookie -s -d  @identity_reporting_combination "https://api.a
 
 ### Retrieve the status of the report
 
-Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is
-`"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
+Make a `GET` call with the report ID to retrieve the status of the report. Continue making this `GET` call until the `execution_status` is `"ready"`. Then use the **report-download** service to save the report data to a file, as described in the next step.
 
 ```
 $ curl -b cookie -c cookie -s "https://api.appnexus.com/report?id=52bf975d78de81b6f73035424d3d7b3d"

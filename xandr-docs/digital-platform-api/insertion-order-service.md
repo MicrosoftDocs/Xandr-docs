@@ -9,19 +9,18 @@ ms.custom: digital-platform-api
 
 Insertion orders enable you to better organize, track, and allocate budget to your line items. Additionally, budget intervals (i.e., sets of flight dates each with their own pacing and budget) can be used on insertion orders, allowing you to represent available budget in a way that more accurately reflects your contract with an advertiser. Xandr suggests using insertion orders and budget intervals.
 
-Insertion orders can be associated with one or more line items. A line item can belong to multiple insertion orders as long as the budget
-intervals on those insertion orders do not overlap.
+Insertion orders can be associated with one or more line items. A line item can belong to multiple insertion orders as long as the budget intervals on those insertion orders do not overlap.
 
 > [!NOTE]
 >
 > - Insertion orders are enabled at the Advertiser level using the [Advertiser Service](advertiser-service.md) (the `use_insertion_orders` field in that service must be set to `"true"`).
-> - Line items are created through the [Line Item Service - ALI](line-item-service---ali.md) (or [Line Item Service](line-item-service.md) for legacy line items)
+> - Line items are created through the [Line Item Service - ALI](line-item-service---ali.md) (or [Line Item Service](line-item-service.md) for legacy line items).
 >
 > **Seamless insertion orders**
 >
 > There are two types of insertion orders:
 >
-> - **Seamless** – Seamless insertion order for line items that provide additional targeting and budgeting settings. Please note that the `budget_type` setting of Seamless insertion orders may restrict associated guaranteed delivery augmented line items (GDALI) and programmatic guaranteed line items (PGLI) that have conflicting settings. We recommend using seamless insertion orders with `budget_type` set to `"flexible"` for GDALIs and PGLIs so you can associate both impression-based and revenue-based line items to the same insertion order.
+> - **Seamless** – Seamless insertion order for line items that provide additional targeting and budgeting settings. The `budget_type` setting of Seamless insertion orders may restrict associated guaranteed delivery augmented line items (GDALI) and programmatic guaranteed line items (PGLI) that have conflicting settings. We recommend using seamless insertion orders with `budget_type` set to `"flexible"` for GDALIs and PGLIs so you can associate both impression-based and revenue-based line items to the same insertion order.
 > - **Legacy** (non-seamless) – Legacy insertion order required for legacy guaranteed and non-guaranteed line items. Legacy insertion orders do not use the `budget_intervals` array and cannot be used with augmented line items (ALI), guaranteed delivery augmented line items (GDALI), and programmatic guaranteed line items (PGLI).
 >
 > The main differences in setup for each type of insertion order are as follows:
@@ -87,7 +86,7 @@ intervals on those insertion orders do not overlap.
 | `billing_code` | string | The billing code for the insertion order. This will only appear on invoices that are insertion order-specific (e.g., if you receive an invoice per insertion order). For details on invoices, see "Understanding Your Invoice" in the Finance documentation.<br>**Default:** `null` |
 | `line_items` | array of objects | The line items which are associated with the insertion order. For more information, see [Line Items](#line-items) below.<br><br>**Note:** Seamless insertion orders may only be associated with seamless line items. Non-seamless insertions orders may only be associated with non-seamless line items. |
 | `labels` | array of objects | The labels assigned to the insertion order. See [Labels](#labels) below. |
-| `broker_fees` | array of objects | **Warning:** For augmented line items (ALIs):<br>Broker fees are deprecated for augmented line items. Please create partner fees and apply them to the line item using the [Partner Fee Service](partner-fee-service.md).<br>For standard line items:<br> - Broker fees created on an insertion order only apply to standard line items. If you also use augmented line items, you will need to create and apply partner fees to ALIs using the [Partner Fee Service](partner-fee-service.md).<br> - Broker fees at the line item level override broker fees at the insertion order level.<br><br>The commissions that the network must pass to brokers when serving an ad. These commissions are deducted from the booked revenue (the amount the network receives from the advertiser) and are typically for brokering a relationship with the advertiser. They can either be a percentage of the revenue or a flat CPM. For more details, see [Broker Fees](#broker-fees) below. |
+| `broker_fees` | array of objects | **Warning:** For augmented line items (ALIs):<br>Broker fees are deprecated for augmented line items. Create partner fees and apply them to the line item using the [Partner Fee Service](partner-fee-service.md).<br>For standard line items:<br> - Broker fees created on an insertion order only apply to standard line items. If you also use augmented line items, you will need to create and apply partner fees to ALIs using the [Partner Fee Service](partner-fee-service.md).<br> - Broker fees at the line item level override broker fees at the insertion order level.<br><br>The commissions that the network must pass to brokers when serving an ad. These commissions are deducted from the booked revenue (the amount the network receives from the advertiser) and are typically for brokering a relationship with the advertiser. They can either be a percentage of the revenue or a flat CPM. For more details, see [Broker Fees](#broker-fees) below. |
 | `budget_intervals` | array of objects | **Note:** This array is only relevant to and required for seamless insertion orders (if the insertion order is non-seamless, leave this field set to `null`). <br><br>Budget intervals enable multiple date intervals to be attached to an insertion order, each with corresponding budget values. For more details, see [Budget Intervals](#budget-intervals) below.<br><br>**Note:**<br>If you use `budget_intervals`, the following fields should not be used on the top level insertion order object:<br> - `lifetime_pacing`<br> - `lifetime_budget`<br> - `lifetime_budget_imps`<br> - `enable_pacing`<br> - `lifetime_pacing_span`<br> - `allow_safety_pacing`<br> - `daily_budget`<br> - `daily_budget_imps`<br> - `lifetime_pacing_pct` |
 | `budget_type` | enum | The budget type of the insertion order. <br>Values may be `'revenue'`, `'impression'`, or `'flexible'`.<br> - If this field is set to `'impression'` then both the `lifetime_budget` and `daily_budget` fields must be set to `null`.<br> - If this field is set to `'revenue'` then both the `lifetime_budget_imps` and `daily_budget_imps` fields must be set to `null`.<br> - This field must be set when all four budget fields in the `budget_intervals` array (`lifetime_budget`, `lifetime_budget_imps`, `daily_budget`, and `daily_budget_imps`) have been set to `null`.<br> - If this field is set to `'flexible'` then the `budget_intervals` array can only have one interval and all four budget fields in the `budget_intervals` array (`lifetime_budget`, `lifetime_budget_imps`, `daily_budget`, and `daily_budget_imps`) must be set to `null`. |
 | `lifetime_pacing` | boolean | If `true`, the non-seamless insertion order will attempt to spend its overall lifetime budget evenly over the insertion order flight dates. If `true`:<br> - You must establish a `lifetime_budget` or `lifetime_budget_imps`.<br> - You must establish a `start_date` and `end_date`.<br> - You cannot set a `daily_budget`.<br> - You cannot set `enable_pacing` to `false`.<br><br>**Note:** Only applicable to non-seamless insertion orders.<br><br>**Default:** `null` |
@@ -135,7 +134,7 @@ You can use the read-only [Label Service](label-service.md) to view all possible
 > [!WARNING]
 > For augmented line items (ALIs):
 >
-> Broker fees are deprecated for augmented line items. Please create partner fees and apply them to the line item using the [Partner Fee Service](partner-fee-service.md).
+> Broker fees are deprecated for augmented line items. Create partner fees and apply them to the line item using the [Partner Fee Service](partner-fee-service.md).
 >
 > For standard line items:
 >
@@ -237,7 +236,7 @@ These fields must be filled out if you are using this insertion order for advert
 
 ## Examples
 
-### Adding a new seamless insertion order with budget intervals
+### Add a new seamless insertion order with budget intervals
 
 ```
 $ cat insertion-order.json
@@ -335,7 +334,7 @@ $ curl -b cookies -X POST -d @insertion-order.json "https://api.appnexus.com/ins
 }
 ```
 
-### Adding a new seamless insertion order with flexible budget type
+### Add a new seamless insertion order with flexible budget type
 
 ```
 $ cat insertion-order.json
@@ -422,7 +421,7 @@ curl -b cookies -X POST -d @insertion-order.json "https://api.appnexus.com/inser
 }
 ```
 
-### Adding a new non-seamless insertion order
+### Add a new non-seamless insertion order
 
 ```
 $ cat insertion-order.json
@@ -443,7 +442,7 @@ $ curl -b cookies -X POST -d @insertion-order.json "https://api.appnexus.com/ins
 }
 ```
 
-### Viewing all insertion orders for advertiser 11
+### View all insertion orders for advertiser 11
 
 ```
 $ curl -b cookies "https://api.appnexus.com/insertion-order?advertiser_id=11"
@@ -534,7 +533,7 @@ $ curl -b cookies "https://api.appnexus.com/insertion-order?advertiser_id=11"
 }
 ```
 
-### Deleting a budget interval (on a seamless insertion order)
+### Delete a budget interval (on a seamless insertion order)
 
 > [!NOTE]
 > The deletion of budget intervals on an insertion order will affect the underlying line items differently, depending on their type:
@@ -630,7 +629,7 @@ $ curl -b cookies -X PUT -d @delete-budget-interval "https://api.appnexus.com/in
 }
 ```
 
-### Modifying a budget interval (on a seamless insertion order)
+### Modify a budget interval (on a seamless insertion order)
 
 ```
 $ cat modify-budget-interval

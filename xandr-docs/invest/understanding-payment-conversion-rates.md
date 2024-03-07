@@ -12,8 +12,7 @@ The resulting conversion rate is sent as part of the bid request. If any outcome
 
 ## Auction outcome prediction
 
-The accuracy of the pre-bid outcome prediction plays a crucial role in the balance of the marketplace; that is, how much is billed to Guaranteed Outcomes buyers versus how much is paid to sellers. Given this critical role, it is important to note that pre-bid outcome
-predictions are managed as an independent feature of the Exchange and are publicly available.
+The accuracy of the pre-bid outcome prediction plays a crucial role in the balance of the marketplace; that is, how much is billed to Guaranteed Outcomes buyers versus how much is paid to sellers. Given this critical role, it is important to note that pre-bid outcome predictions are managed as an independent feature of the Exchange and are publicly available.
 
 Pre-bid outcome predictions are freely available in OpenRTB bid requests from Microsoft Advertising's exchange to all bidders and DSPs. Additionally, these predictions are generally available as an Engineered Feature of Microsoft Advertising's exchange. Buyers can use them as building blocks to develop custom algorithms using custom models (APB). Outcome predictions are also used for view-rate and completion-rate threshold targeting and vCPM optimization, both available as features of the Augmented Line Item.
 

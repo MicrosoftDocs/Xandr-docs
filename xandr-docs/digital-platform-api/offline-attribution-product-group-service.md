@@ -1,11 +1,11 @@
 ---
 title: Offline Attribution Product Group Service
-description: Offline attribution product group service helps track offline sales performance against specific product categories, brands, product lines, or specific products.
+description: The Offline Attribution Product Group service helps track offline sales performance against specific products and their categories, brands, or product lines.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Offline attribution product group service
+# Offline Attribution Product Group service
 
 The Offline Attribution Product Group Service is used to discover and locate product group information (IDs) from the Xandr product catalog. If your line item has Offline Attribution enabled, this catalog is used to track your line item's offline sales performance against a product category, brand product, product line, or specific product.
 
@@ -13,8 +13,8 @@ The Offline Attribution Product Group Service is used to discover and locate pro
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` |  https://api.appnexus.com/offline-attribution-product-group | View all product groups. |
-| `GET` |  https://api.appnexus.com/offline-attribution-product-group?search=STRING | Search for a product group by `string`. |
+| `GET` |  `https://api.appnexus.com/offline-attribution-product-group` | View all product groups. |
+| `GET` |  `https://api.appnexus.com/offline-attribution-product-group?search=STRING` | Search for a product group by `string`. |
 
 ## JSON Fields
 

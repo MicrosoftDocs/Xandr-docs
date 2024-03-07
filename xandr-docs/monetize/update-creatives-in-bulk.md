@@ -1,23 +1,21 @@
 ---
 title: Microsoft Monetize - Update Creatives in bulk
-description: Learn how to update settings for individual or multiple creatives from the Creative Manager.
+description: In this page, learn to update settings for individual or multiple creatives from the Creative Manager.
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Update Creatives in bulk
 
-You can update a variety of settings for individual or multiple
-creatives from the **Creative Manager**.
+You can update a variety of settings for individual or multiple creatives from the **Creative Manager**.
 
 1. Go to **Advertisers** \> **Creative Manager**.
 1. Select an advertiser.
 1. Select the checkboxes for the appropriate creatives that need to be updated.
 1. Click the **Bulk Edit** menu from the blue toolbar that displays and select any one of these settings:
 
-
 | Setting | Description |
-|---|---|
+|--|--|
 | **Activate** | When you activate deactivated creatives, they typically start serving within 10 - 15 seconds with a maximum wait time of approximately 60 seconds. |
 | **Associated Substantiation** | When adding or editing sensitive content, you can provide a URL to supporting documentation (substantiation) as evidence that the creative doesn't contain any false claims.<br>**Note**: This feature is currently in **Alpha/Beta**. It is still under development and may be subjected to changes without notice. Contact your Microsoft Advertising Account Representative to get it enabled. |
 | **Audit** | For more information about selecting a different audit option for a creative, see [Select an Audit Option for a Creative](select-an-audit-option-for-a-creative.md). |
@@ -36,7 +34,7 @@ creatives from the **Creative Manager**.
 | **Resubmit for SSL Audit** | When a creative is uploaded, an SSL audit is initiated. If Microsoft Advertising determines that the creative contains non-secure attributes, then the creative's SSL audit status will be processed as failed since it won't be able to serve on secure inventory. You can re-run this SSL audit to validate that the creative is secure and can serve on secure inventory. |
 | **Run a report** | After you select **Run Report**, you'll be taken to the Member **Analytics Report** settings screen where you can set additional parameters. For more information about running a report, see [Member Reporting](network-reporting.md). |
 | **Tracking** | Pixels / Tracking in our docs. For more information, see [Configuring Tracking for Creatives](configuring-tracking-for-creatives.md). |
-    
+
 ## Related topics
 
 - [Creative Types](creative-types.md)

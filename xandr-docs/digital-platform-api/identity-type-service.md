@@ -46,7 +46,7 @@ The Identity Type service in Identity Management Framework can be used to retrie
 | `requires_platform_resolution` | boolean | Is platform resolution required by an identifier for encoding and decoding.<br>**Required On:** `POST` |
 | `requires_seat_resolution` | boolean | Is seat resolution required by identifier for each bidder (RampID). |
 | `identity_resolver_check` |  |  |
-| `is_auction_usage_single_context` | boolean | The identifier context set for relevant privacy usage (CPRA). If the identifier is used to identify a user on 2 or more domains/websites, this should be set to false.<br>**Required On:** `POST` |
+| `is_auction_usage_single_context` | boolean | The identifier context set for relevant privacy usage (CPRA). If the identifier is used to identify a user on 2 or more domains/websites, this should be set to `false`.<br>**Required On:** `POST` |
 | `is_passthrough` | boolean | The master settings to allow frequency capping and audience segmentation on the platform.<br>**Default:** `False` |
 | `requires_rti_partner_match` | boolean | The field required for The Trade Desk related identifiers. |
 | `rti_partner` | boolean | The field required for The Trade Desk related identifiers. |
@@ -84,9 +84,7 @@ The master setting to control permissions to other members for audience segmenta
 
 ### External bidder control
 
-The master setting to control if the identifier can be sent to the external bidders and specify the eligible external bidders. This field
-defines default list of bidders who will be receiving the newly registered source and identifier. By default, member participants can
-use the bidders defined at the identifier level or they can override using the identity type participant API.
+The master setting to control if the identifier can be sent to the external bidders and specify the eligible external bidders. This field defines default list of bidders who will be receiving the newly registered source and identifier. By default, member participants can use the bidders defined at the identifier level or they can override using the identity type participant API.
 
 | Field | Type | Description |
 |:---|:---|:---|

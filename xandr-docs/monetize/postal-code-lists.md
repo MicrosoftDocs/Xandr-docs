@@ -8,6 +8,9 @@ ms.date: 10/28/2023
 
 ## Introduction
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal codes for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 Leveraging postal codes is a powerful way for advertisers to achieve highly granular and precise, or *hyperlocal*, targeting. Hyperlocal targeting is a key factor in driving advertising performance. Because sellers and curators often want to increase efficiency by targeting the same set of postal codes across multiple deals, the Postal Code List feature allows users to easily reuse a predefined list of postal codes.
 
 The Postal Code List feature enables users to:

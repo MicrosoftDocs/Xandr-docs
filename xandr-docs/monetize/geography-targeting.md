@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Geography targeting
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal codes for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 ## In this Section
 
 - [How Geography Targeting Works](how-geography-targeting-works.md) - Learn how geography targeting works.

@@ -7,11 +7,9 @@ ms.custom: digital-platform-api
 
 # Label service
 
-This read-only service allows you to view the labels that can be applied to your advertisers, insertion orders, line items, campaigns, and
-publishers. It also allows you to view the labels that have already been applied.
+This read-only service allows you to view the labels that can be applied to your advertisers, insertion orders, line items, campaigns, and publishers. It also allows you to view the labels that have already been applied.
 
-An example of an advertiser label is `"Salesperson"`. You might use this label to specify the name of the salesperson responsible for each of your advertisers. You might then run the Network Analytics report filtered by `"salesperson_for_advertiser"` to focus on the advertisers that a particular salesperson is responsible for, or grouped by `"salesperson_for_advertiser"` to rank the performance of your
-salespeople.
+An example of an advertiser label is `"Salesperson"`. You might use this label to specify the name of the salesperson responsible for each of your advertisers. You might then run the Network Analytics report filtered by `"salesperson_for_advertiser"` to focus on the advertisers that a particular salesperson is responsible for, or grouped by `"salesperson_for_advertiser"` to rank the performance of your salespeople.
 
 The following reports currently support labels: [Network Analytics](network-analytics.md), [Network Advertiser Analytics](network-advertiser-analytics.md), and [Advertiser Analytics](advertiser-analytics.md). For the full list of report columns associated with labels, see `"report_field"` below.
 

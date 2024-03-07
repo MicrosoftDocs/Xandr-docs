@@ -9,6 +9,9 @@ ms.date: 10/28/2023
 > [!NOTE]
 > This feature is currently available for selected clients only. If you want this feature to be enabled, reach out to your Microsoft Advertising Account Manager.
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use individuals’ demographics for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 Occasionally, publishers pass the age or gender of users in the query string of their ad calls. In these cases, you can target users based on this information.
 
 > [!WARNING]

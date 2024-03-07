@@ -6,8 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - The universal pixel
 
-The universal pixel provides insights into the interactions that users have with your website, so you can easily segment these users and measure the value of the actions they take. By providing a central configuration interface and unified pixel code, the universal pixel
-removes the need to separately define conversion pixels and segment pixels.
+The universal pixel provides insights into the interactions that users have with your website, so you can easily segment these users and measure the value of the actions they take. By providing a central configuration interface and unified pixel code, the universal pixel removes the need to separately define conversion pixels and segment pixels.
 
 The universal pixel is implemented by placing the code within the head tag (\<head\> ... \</head\>) of your advertiser's website. You can analyze user traffic in three different ways in order to segment users and track conversions:
 

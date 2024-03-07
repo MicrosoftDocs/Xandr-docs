@@ -1,11 +1,11 @@
 ---
 title: Placement Set Service
-description: Use the placement set service to support the creation and management of ad pods, linear groupings of ads designed to fit within a single video placement.
+description: Use the Placement Set service to support the creation and management of ad pods and linear groupings of ads designed to fit within a single video placement.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Placement set service
+# Placement Set service
 
 The Placement Set Service supports the creation and management of ad pods, linear groupings of ads designed to fit within a single video placement.
 
@@ -13,10 +13,10 @@ The Placement Set Service supports the creation and management of ad pods, linea
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID | View all of the placement sets for one of your publishers. |
-| `GET` | https://api.appnexus.com/placement-set?id=PLACEMENT_ID | View a specific placement set for one of your publishers. |
-| `POST` | https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID&member_id=MEMBER_ID | Add a placement set (NETWORK). <br><br>**Note**: All ad pod placements associated with a placement group must belong to placement group's publisher. |
-| `PUT` | https://api.appnexus.com/placement-set?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID&member_id=MEMBER_ID | Modify an existing placement set (NETWORK). |
+| `GET` | `https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID` | View all of the placement sets for one of your publishers. |
+| `GET` | `https://api.appnexus.com/placement-set?id=PLACEMENT_ID` | View a specific placement set for one of your publishers. |
+| `POST` | `https://api.appnexus.com/placement-set?publisher_id=PUBLISHER_ID&member_id=MEMBER_ID` | Add a placement set (NETWORK). <br><br>**Note**: All ad pod placements associated with a placement group must belong to placement group's publisher. |
+| `PUT` | `https://api.appnexus.com/placement-set?id=PLACEMENT_ID&publisher_id=PUBLISHER_ID&member_id=MEMBER_ID` | Modify an existing placement set (NETWORK). |
 
 ## JSON fields
 

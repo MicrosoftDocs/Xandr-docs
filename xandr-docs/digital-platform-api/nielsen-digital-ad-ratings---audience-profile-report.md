@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Nielsen Digital Ad Ratings - Audience Profile Report
-description: Nielsen digital ad ratings (DAR) audience profile report tracks impressions and demographics of digital ads. Demographic measuring must be enabled for use.
+description: The Nielsen Digital Ad Ratings (DAR) Audience Profile report tracks impressions and demographics of digital ads. Demographic measuring must be enabled for use.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Nielsen digital ad ratings - Audience profile report
+# Digital Platform API - Nielsen Digital Ad Ratings - Audience Profile report
 
 The Nielsen Digital Ad Ratings (DAR) - Audience Profile Report gives you insight into your line item's impressions and the demographies they're coming from. Audience demographic measuring must be enabled for your line item to utilize this report.
 
@@ -25,7 +25,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_365_days
 - year_to_date
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 365 days. Data in this report has a daily time granularity and lifetime retention. This report also displays data under the U.S. Eastern time zone.
 
@@ -69,7 +69,7 @@ Data retention period for this report is 365 days. Data in this report has a dai
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"video_indemo_audience_profile"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

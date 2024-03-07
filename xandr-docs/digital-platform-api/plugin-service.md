@@ -1,6 +1,6 @@
 ---
 title: Plugin Service
-description: Developing an app for Apps Marketplace involves building an umbrella app and specific app instances, which can be controlled through the plugin service.
+description: Developing an app for Apps Marketplace involves building an umbrella app and specific app instances, which can be controlled through the Plugin service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -22,12 +22,12 @@ When you develop an app for the Apps Marketplace, you build an umbrella app and 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/plugins<br>(plugin JSON) | Add an app.<br> - App providers. |
-| `PUT` | https://api.appnexus.com/plugin?id=PLUGIN_ID<br>(plugin JSON) | Modify an app.<br> - App providers. |
-| `GET` | https://api.appnexus.com/plugin | View all apps.<br> - App Providers.<br> - App Subscribers (will only see apps to which they are associated).<br> - Non-member Developers (will only see apps to which they are associated).<br><br>**Note**: To view all apps that a member has installed, execute a `GET` call against the **Member** service. Locate the `id` field under **plugins**. All plugins that this member has installed (regardless of whether they are associated) are listed by plugin number. |
-| `GET` | https://api.appnexus.com/plugin?id=PLUGIN_ID | View a specific app.<br> - App Providers.<br> - App Subscribers (will only see apps to which they are associated).<br> - Non-member Developers (will only see app if they are associated to it). |
-| `GET` | https://api.appnexus.com/plugin?developer_id=DEVELOPER_ID | View all apps created by a specific subscriber, developer, or non-member developer.<br> - App Subscribers.<br> - App Providers.<br> - Non-member Developers.<br><br>**Note**: If you cannot see apps that you have created, contact your Xandr representative. |
-| `DELETE` | https://api.appnexus.com/plugin | Delete an app.<br> - App Providers |
+| `POST` | `https://api.appnexus.com/plugins`<br>(plugin JSON) | Add an app.<br> - App providers. |
+| `PUT` | `https://api.appnexus.com/plugin?id=PLUGIN_ID`<br>(plugin JSON) | Modify an app.<br> - App providers. |
+| `GET` | `https://api.appnexus.com/plugin` | View all apps.<br> - App Providers.<br> - App Subscribers (will only see apps to which they are associated).<br> - Non-member Developers (will only see apps to which they are associated).<br><br>**Note**: To view all apps that a member has installed, execute a `GET` call against the **Member** service. Locate the `id` field under **plugins**. All plugins that this member has installed (regardless of whether they are associated) are listed by plugin number. |
+| `GET` | `https://api.appnexus.com/plugin?id=PLUGIN_ID` | View a specific app.<br> - App Providers.<br> - App Subscribers (will only see apps to which they are associated).<br> - Non-member Developers (will only see app if they are associated to it). |
+| `GET` | `https://api.appnexus.com/plugin?developer_id=DEVELOPER_ID` | View all apps created by a specific subscriber, developer, or non-member developer.<br> - App Subscribers.<br> - App Providers.<br> - Non-member Developers.<br><br>**Note**: If you cannot see apps that you have created, contact your Xandr representative. |
+| `DELETE` | `https://api.appnexus.com/plugin` | Delete an app.<br> - App Providers |
 
 ## JSON fields
 
@@ -62,9 +62,9 @@ When you develop an app for the Apps Marketplace, you build an umbrella app and 
 
 #### Images for `author_display_name`
 
-:::image type="content" source="media/plugin-service-a.png" alt-text="Screenshot one showing the author name displayed below the name of the app.":::
+:::image type="content" source="media/plugin-service-a.png" alt-text="Screenshot one showing the author name displayed in the selected app on the main Apps Marketplace page.":::
 
-:::image type="content" source="media/plugin-service-b.png" alt-text="Screenshot two showing the author name displayed below the name of the app.":::
+:::image type="content" source="media/plugin-service-b.png" alt-text="Screenshot two showing the author name displayed in the app's Description panel.":::
 
 ### Developer
 

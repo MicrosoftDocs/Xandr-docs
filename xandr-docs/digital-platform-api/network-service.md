@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Network Service
-description: Use the network service to view registered video content networks and add video content fields to line item or deal line item targeting.
+description: Use the Network service to view registered video content networks and add video content fields to line item or deal line item targeting.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

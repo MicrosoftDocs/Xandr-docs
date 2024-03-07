@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Operating System Family Service
-description: Operating system family service shows registered operating systems for targeting in profiles, including Android, Apple iOS, and Microsoft Windows.
+description: Use the Operating System Family service to view registered operating systems for targeting in profiles, including Android, Apple iOS, and Microsoft Windows.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Operating system family service
+# Digital Platform API - Operating System Family service
 
 This read-only service lets you see what operating systems (Android, Apple iOS, Microsoft Windows, etc.) are registered in our system. You can use this service to retrieve operating system family IDs for targeting in [profiles](./profile-service.md).
 
@@ -16,9 +16,9 @@ This read-only service lets you see what operating systems (Android, Apple iOS, 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/operating-system-family | View all operating system families. |
-| `GET` | https://api.appnexus.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID | View a specific operating system family. |
-| `GET` | https://api.appnexus.com/operating-system-family/meta | Find out which fields you can filter and sort by. |
+| `GET` | `https://api.appnexus.com/operating-system-family` | View all operating system families. |
+| `GET` | `https://api.appnexus.com/operating-system-family?id=OPERATING_SYSTEM_FAMILY_ID` | View a specific operating system family. |
+| `GET` | `https://api.appnexus.com/operating-system-family/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

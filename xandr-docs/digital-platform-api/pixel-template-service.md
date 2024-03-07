@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Pixel Template Service
-description: Use the pixel template service to find and add AppNexus-approved creative pixels from trusted providers using the pixels array.
+description: Use the Pixel Template service to find and add AppNexus-approved creative pixels from trusted providers using the pixels array.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Pixel template service
+# Digital Platform API - Pixel Template service
 
 This read-only service allows you to view information about AppNexus-approved creative pixels from trusted, commonly-used providers, such as Evidon and Brilig. Most AppNexus-approved creative pixels can be added to creatives without causing re-audit.
 
@@ -19,9 +19,9 @@ Here's how it works:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/pixel-template | View all AppNexus-approved creative pixels. |
-| `GET` | https://api.appnexus.com/pixel-template?id=PIXEL_TEMPLATE_ID | View a specific AppNexus-approved creative pixel. |
-| `GET` | https://api.appnexus.com/pixel-template?id=1,2,3 | View multiple creative pixels by ID using a comma-separated list. |
+| `GET` | `https://api.appnexus.com/pixel-template` | View all AppNexus-approved creative pixels. |
+| `GET` | `https://api.appnexus.com/pixel-template?id=PIXEL_TEMPLATE_ID` | View a specific AppNexus-approved creative pixel. |
+| `GET` | `https://api.appnexus.com/pixel-template?id=1,2,3` | View multiple creative pixels by ID using a comma-separated list. |
 
 ## JSON fields
 

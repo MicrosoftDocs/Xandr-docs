@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Object Limit Service
-description: Learn about the object limit service. Limits are set for various categories of content on the platform, including line items, campaigns, creatives, and domains.
+description: Learn about the Object Limit service. Limits are set for various categories of content on the platform, including line items, campaigns, creatives, and domains.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Object limit service
+# Digital Platform API - Object Limit service
 
 Xandr limits the number of line items, campaigns, creatives, publishers, sites, placements, packages, deals, mediated networks, and mediated bids that you can have on the platform. In addition, Xandr limits the number of domains that can be used in a single domain list, the number of certain targets that can be used in a single profile, and the number of content categories that can be assigned to a single placement. For all object types except creatives, both active and inactive objects are counted against the limit. For creatives, only non-expired objects are counted against the limit.
 
@@ -15,8 +15,8 @@ The Object Limit Service allows you to view these limits and proactively monitor
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/object-limit | View your limits and current usage for all object types. |
-| `GET` | https://api.appnexus.com/object-limit?object_type=OBJECT_TYPE | View your limit and current usage for a specific object type.<br><br>**Note**: The following object types are available: <br> - `campaign` <br> - `profile` <br> - `domain_list` <br> - `creative` <br> - `publisher` <br> - `site` <br> - `placement` <br> - `package` <br> - `deal` <br> - `mediated_network` <br> - `mediated_bid`. <br>Note that to retrieve your limit for line items, you must use `campaign_group`. |
+| `GET` | `https://api.appnexus.com/object-limit` | View your limits and current usage for all object types. |
+| `GET` | `https://api.appnexus.com/object-limit?object_type=OBJECT_TYPE` | View your limit and current usage for a specific object type.<br><br>**Note**: The following object types are available: <br> - `campaign` <br> - `profile` <br> - `domain_list` <br> - `creative` <br> - `publisher` <br> - `site` <br> - `placement` <br> - `package` <br> - `deal` <br> - `mediated_network` <br> - `mediated_bid`. <br>Note that to retrieve your limit for line items, you must use `campaign_group`. |
 
 ## JSON fields
 
@@ -181,11 +181,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/object-limit?object_type=
 }
 ```
 
-### Default limits
+## Default limits
 
 For a list of default object limits and frequently asked questions, see [API Usage Constraints](./api-usage-constraints.md).
 
-### Deleting objects
+## Deleting objects
 
 When you approach or reach your limit for line items, campaigns, publishers, sites, or placements, you can use reports such as [Network Advertiser Analytics](./network-advertiser-analytics.md) and [Network Publisher Analytics](./network-publisher-analytics.md) to identify objects that have, for example, not been modified or used in the last 30 days, and then delete those objects manually. For line items and campaigns, you can also use a query string filter to find objects based on when they first or last had impressions. See [Line Item Service](./line-item-service.md) and [Campaign Service](./campaign-service.md) for more information.
 

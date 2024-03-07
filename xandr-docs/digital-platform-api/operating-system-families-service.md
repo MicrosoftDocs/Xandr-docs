@@ -1,13 +1,13 @@
 ---
 title: Operating System-Families Service
-description: Operating system-families service lists all available operating systems for caller's member, not maintained by Prebid Server Premium. 
+description: Use the Operating System-Families service to list all available operating systems for caller's member that are not maintained by Prebid Server Premium. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Operating system families service
+# Operating System-Families service
 
-The Operating System-Families Service returns all the operating systems available for the caller's member.
+The Operating System-Families service returns all the operating systems available for the caller's member.
 
 Operating systems are a Xandr-wide list NOT maintained by Prebid Server Premium. This service can be found at [Operating System Service](./operating-system-service.md). We offer this endpoint in PSP as a convenience to users and also so we can show a list of operating systems for targeting purposes in the UI.
 
@@ -15,7 +15,7 @@ Operating systems are a Xandr-wide list NOT maintained by Prebid Server Premium.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/prebid/operating-system-families | Return all the operating system-families objects. |
+| `GET` | `https://api.appnexus.com/prebid/operating-system-families` | Return all the operating system-families objects. |
 
 ## Example response
 

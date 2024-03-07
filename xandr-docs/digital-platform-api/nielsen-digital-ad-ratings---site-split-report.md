@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Nielsen Digital Ad Ratings - Site/Split Report
-description: Nielsen digital ad ratings (DAR) Site/Split report provides insights on publisher domains and audiences for line item impressions, with audience demographic measuring required for use.
+description: The Nielsen Digital Ad Ratings (DAR) Site/Split report provides insights on publisher domains and audiences for line item impressions.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Nielsen digital ad ratings - Site/Split report
+# Digital Platform API - Nielsen Digital Ad Ratings - Site/Split report
 
 The Nielsen Digital Ad Ratings (DAR) - Site/Split Report gives you insight into the publisher domains and audiences connected to your line item's impressions. If your line item's using splits, this report also gives you information on their performance. Audience demographic measuring must be enabled for your line item to utilize this report.
 
@@ -25,7 +25,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_365_days
 - year_to_date
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 365 days. Data in this report has a daily time granularity and lifetime retention. This report also displays data under the U.S. Eastern time zone.
 
@@ -68,7 +68,7 @@ Data retention period for this report is 365 days. Data in this report has a dai
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"video_indemo_site_split"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`"csv"`, `"excel"`, or `"html"`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

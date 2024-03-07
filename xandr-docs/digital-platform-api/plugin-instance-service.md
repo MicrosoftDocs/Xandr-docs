@@ -1,11 +1,11 @@
 ---
 title: Plugin Instance Service
-description: Use the plugin instance service to create and manage umbrella and specific app instances for apps marketplace.
+description: Use the Plugin Instance service to create and manage umbrella and specific app instances for Apps marketplace.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Plugin instance service
+# Plugin Instance service
 
 When you develop an app for the Apps Marketplace, you build an umbrella app and then one or more specific app instances that plug into the workflow in different places. The Plugin Instance Service allows you to create and control these instances. For information about creating and managing an umbrella app, see the [Plugin Service](./plugin-service.md).
 
@@ -22,13 +22,13 @@ When you develop an app for the Apps Marketplace, you build an umbrella app and 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/plugin-instance<br>(plugin-instance JSON) | Add an app.<br> - App Providers.<br> - App Subscribers. |
-| `PUT` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID<br>(plugin-instance JSON) | Modify an app.<br> - App Providers. |
-| `GET` | https://api.appnexus.com/plugin-instance | View all apps instances.<br> - App Providers.<br> - App Subscribers (will only see instances to which they are associated). |
-| `GET` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID | View a specific app instance.<br> - App Providers.<br> - App Subscribers (will only see an instance if they are associated to it). |
-| `DELETE` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID | Delete an app instance.<br> - App Providers |
-| `DELETE` | https://api.appnexus.com/plugin?id=PLUGIN_INSTANCE_ID | Delete all apps installed by a subscriber. |
-| `DELETE` | https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID | Delete all apps created by a developer. |
+| `POST` | `https://api.appnexus.com/plugin-instance`<br>(plugin-instance JSON) | Add an app.<br> - App Providers.<br> - App Subscribers. |
+| `PUT` | `https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID`<br>(plugin-instance JSON) | Modify an app.<br> - App Providers. |
+| `GET` | `https://api.appnexus.com/plugin-instance` | View all apps instances.<br> - App Providers.<br> - App Subscribers (will only see instances to which they are associated). |
+| `GET` | `https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID` | View a specific app instance.<br> - App Providers.<br> - App Subscribers (will only see an instance if they are associated to it). |
+| `DELETE` | `https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID` | Delete an app instance.<br> - App Providers |
+| `DELETE` | `https://api.appnexus.com/plugin?id=PLUGIN_INSTANCE_ID` | Delete all apps installed by a subscriber. |
+| `DELETE` | `https://api.appnexus.com/plugin-instance?id=PLUGIN_INSTANCE_ID` | Delete all apps created by a developer. |
 
 ## JSON fields
 

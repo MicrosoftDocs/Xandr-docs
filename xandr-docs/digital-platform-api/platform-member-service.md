@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Platform Member Service
-description: Use the platform member service to view public information about platform members and data providers for buying and selling.
+description: Use the Platform Member service to view public information about platform members and data providers for buying and selling.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Platform member service
+# Digital Platform API - Platform Member service
 
 This is a read-only service that shows you public information about the other Xandr platform members that you can buy from and sell to. It also shows information about data providers.
 
@@ -13,9 +13,9 @@ This is a read-only service that shows you public information about the other Xa
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/platform-member | View all members that have exposed their information. |
-| `GET` | https://api.appnexus.com/platform-member?active=1 | View only active members that have exposed their information. |
-| `GET` | https://api.appnexus.com/platform-member?id=MEMBER_ID | View a specific member. |
+| `GET` | `https://api.appnexus.com/platform-member` | View all members that have exposed their information. |
+| `GET` | `https://api.appnexus.com/platform-member?active=1` | View only active members that have exposed their information. |
+| `GET` | `https://api.appnexus.com/platform-member?id=MEMBER_ID` | View a specific member. |
 
 ## JSON fields
 
@@ -59,7 +59,7 @@ This is a read-only service that shows you public information about the other Xa
 
 ## Examples
 
-### View information about member 74
+### View information about member `74`
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/platform-member?id=74'

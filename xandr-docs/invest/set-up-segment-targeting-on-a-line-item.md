@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Microsoft Invest - Set up segment targeting on a line item
 
 > [!NOTE]
-> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use individuals’ demographics—such as age, gender, relationship status or precise location — for the purpose of personalizing advertising, segmenting, or profiling customers.
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use individuals’ demographics - such as age, gender, relationship status or precise location — for the purpose of personalizing advertising, segmenting, or profiling customers.
 
 You can set up a line item to target segments that you've created, as well as segments from third-party data providers.
 

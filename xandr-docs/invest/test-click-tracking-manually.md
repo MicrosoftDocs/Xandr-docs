@@ -13,9 +13,9 @@ You can manually test click tracking if strange creative behavior or UI issues c
 > [!NOTE]
 > Ensure that the macros are in place by taking a quick look at your code to confirm that `${CLICK_URL}` or `${CLICK_URL_ENC}` appears.
 
-1. Preview the creative by accessing the [https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here) webpage.
+1. Preview the creative by accessing the `https://creative-preview-an.com/cached/creative/insert creative id here` webpage.
 
-    Insert the appropriate creative ID to the end of the URL replacing "insert creative id here". For example: [https://creative-preview-an.com/cached/creative/196745](https://creative-preview-an.com/cached/creative/196745).
+    Insert the appropriate creative ID to the end of the URL replacing "insert creative id here". For example: `https://creative-preview-an.com/cached/creative/196745`.
 
 1. Then, **right click &gt; inspect &gt; network tab**.
 1. Click on the settings (gear icon) in the top right of dev tools.

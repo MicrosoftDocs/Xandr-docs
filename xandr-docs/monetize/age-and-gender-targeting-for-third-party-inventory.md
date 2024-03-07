@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Age and gender targeting for third-party inventory
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use individuals’ demographics for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 Microsoft Advertising has an option for improving workflow when targeting a member's own age and gender data on both managed and third-party inventory.
 
 ## Workflow

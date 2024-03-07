@@ -9,8 +9,7 @@ ms.custom: digital-platform-api
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
-
-> [!NOTE]
+>
 > This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
 Xandr admins can use this service to create the `standard_v2` line item.  
@@ -19,8 +18,8 @@ Xandr admins can use this service to create the `standard_v2` line item.
 
 | HTTP Methods | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | [https://sor-api.adnxs.net/standard_v2](http://sor-api.adnxs.net/standard_v2)<br>(standard_v2 JSON) | Add a new Augmented Targeting line item and associated profile. |
-| `PUT` | [https://sor-api.adnxs.net/standard_v2](https://sor-api.adnxs.net/standard_v2)<br>(standard_v2 JSON) | Modify an Augmented Targeting line item and associated profile. |
+| `POST` | `https://sor-api.adnxs.net/standard_v2`<br>(standard_v2 JSON) | Add a new Augmented Targeting line item and associated profile. |
+| `PUT` | `https://sor-api.adnxs.net/standard_v2`<br>(standard_v2 JSON) | Modify an Augmented Targeting line item and associated profile. |
 
 ## JSON fields
 

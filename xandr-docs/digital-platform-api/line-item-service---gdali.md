@@ -10,8 +10,7 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > This page describes the Line Item Service for a Guaranteed Delivery Augmented Line Item (GDALI). While a GDALI uses the same line item service and endpoint as other types of line items (for example, [Line Item Service - ALI](line-item-service---ali.md)), there are a number of required fields that have to be configured properly to get the expected GDALI behavior.
 >
-> To create a GDALI, you must set the `line_item_subtype` field to "`gd_buying_imp"` or `"gd_buying_exclusive"`, and associate the line
-> item with a seamless insertion order via the `insertion_orders` array. For more information, see [Insertion Order Service](insertion-order-service.md).
+> To create a GDALI, you must set the `line_item_subtype` field to "`gd_buying_imp"` or `"gd_buying_exclusive"`, and associate the line item with a seamless insertion order via the `insertion_orders` array. For more information, see [Insertion Order Service](insertion-order-service.md).
 
 A line item defines your financial relationship with an advertiser, including budget, revenue type, and inventory targeting.
 
@@ -75,7 +74,7 @@ A GDALI is typically used for direct-sold business when an arrangement has been 
 | `advertiser` | object | **Read-only.** An object describing the advertiser with which this line item is associated. For details, see [Advertiser](#advertiser) below.<br>Migration Notes: NO CHANGE |
 | `labels` | array | The optional labels applied to the line item. Currently, the labels available are: `"Trafficker"` and `"Sales Rep"`. For details, see [Labels](#labels) below.<br><br>**Note:** You can report on line item labels with the [Network Analytics](network-analytics.md) and [Network Advertiser Analytics](network-advertiser-analytics.md) reports. For example, if you use the `"Trafficker"` label to specify the name of the trafficker responsible for each line item, you could run the Network Analytics report filtered by `"trafficker_for_line_item"` to focus on the line items that a particular trafficker is responsible for, or grouped by `"trafficker_for_line_item"` to rank the performance of your traffickers. <br><br>Migration Notes: NO CHANGE |
 | `broker_fees` | array | **Deprecated.** Broker fees are only eligible with legacy Insertion Order, Line Item, and Campaign objects.<br>Migration Notes: UNSUPPORTED<br>GDALIs do not support Broker Fees. |
-| `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, please speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null`<br>Migration Notes: NO CHANGE |
+| `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null`<br>Migration Notes: NO CHANGE |
 | `insertion_orders` | array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](#insertion-orders) below.<br>Migration Notes: NO CHANGE |
 | `goal_pixels` | array of objects | Do not use this field.<br>Migration Notes: UNSUPPORTED |
 | `imptrackers` | array of objects | **Read-only.** The third-party impression trackers associated with the line item. For more details, see [Impression Tracker Service](impression-tracker-service.md).<br>Migration Notes: NO CHANGE |
@@ -113,9 +112,9 @@ A GDALI is typically used for direct-sold business when an arrangement has been 
 | `viewability_vendor` | string | This field determines what provider measures the viewability of the ad unit. The only value that is currently valid is `"appnexus"`.<br>**Default:** `"appnexus"`<br>Migration Notes: ACTION REQUIRED<br>This field defaults to `appnexus`; `appnexus` is the only value that is currently valid. |
 | `is_archived` | boolean | **Read-only.** Indicates whether the line item has been automatically archived due to not being used. Once set to `true`, the value can't be changed and the only calls that can be made on the line item object are `GET` and `DELETE`.<br><br>**Note:** ALIs and GDALIs do not support this feature.<br>If a line item is automatically archived, its profile will also be archived and the only calls that may be made on either of those objects are `GET` and `DELETE`. In addition, once archived, the line item may not be associated with any insertion orders.<br><br>**Default:** `false`<br>Migration Notes: UNSUPPORTED<br>Auto-archival is not currently supported by augmented line items. |
 | `archived_on` | timestamp | **Read-only.** The date and time on which the line item was archived (i.e., when the `is_archived` field was set to `true`).<br><br>**Note:** ALIs and GDALIs do not support this feature.<br>**Default:** `null`<br>Migration Notes: UNSUPPORTED |
-| partner_fees | array | Currently unsupported by guaranteed delivery line items. For details, see [Partner Fee Service](partner-fee-service.md).<br>Migration Notes: UNSUPPORTED<br>GDALIs do not support Partner Fees. |
+| `partner_fees` | array | Currently unsupported by guaranteed delivery line items. For details, see [Partner Fee Service](partner-fee-service.md).<br>Migration Notes: UNSUPPORTED<br>GDALIs do not support Partner Fees. |
 | `delivery_goal` | array | For guaranteed delivery line items, the most important performance indicator is that the line item delivers its budget in full and evenly across its flight dates. To achieve these ends, these line items have an associated `delivery_goal`. These line items will deliver their impression or percentage goals evenly across their flight dates. This array specifies exactly what the line item's goals are.<br>For more details, see [Delivery Goal](#delivery-goal) below.<br>**Default:** `null`<br>Migration Notes: NO CHANGE |
-| `priority` | int | For a line item targeting managed inventory (`supply_strategies` `managed` is `true`), since you have already paid for inventory, there is no need to input a buying strategy. However, you can set the line item's priority to weight the line item against other direct line items within your account.<br>**Default:** `5`<br>Migration Notes: Priority was previously specified within a campaign object; GDALIs define the priority on the line item object.<br><br>**Note:** The Monetize UI sets the default value for impression `guaranteed` lines to 14, and 19 for `exclusive`. The default value for all line items created via the API is `5`. |
+| `priority` | int | For a line item targeting managed inventory (`supply_strategies` `managed` is `true`), since you have already paid for inventory, there is no need to input a buying strategy. However, you can set the line item's priority to weight the line item against other direct line items within your account.<br>**Default:** `5`<br>Migration Notes: Priority was previously specified within a campaign object; GDALIs define the priority on the line item object.<br><br>**Note:** The Microsoft Monetize UI sets the default value for impression `guaranteed` lines to 14, and 19 for `exclusive`. The default value for all line items created via the API is `5`. |
 | `auction_event` | object | An object describing the auction event at which the line item should record. GDALI's only support impression-based auction events.<br>For details, see [Auction Event](#auction-event) below.<br><br>**Note:** Omitting the `auction_event` object (or setting to null) will automatically set this object to it default impression-based value.<br>**Default:** `null`<br>Migration Notes: ACTION REQUIRED<br>Omitting the `auction_event` object (or setting to `null`) will automatically set this object to it default impression-based value. |
 | `bid_object_type` | enum | **Note:** When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `bid_object_type` field may be omitted and will default to `"creative"`.<br><br>The bid object type of the line item (e.g. `"creative"` or `"deal"`).<br>Migration Notes: ACTION REQUIRED<br>When `"line_item_subtype"` is set to `gd_buying_imp` or `gd_buying_exclusive`, the `bid_object_type` field may be omitted and will default to `"creative"`. |
 | `custom_models` |  | Currently unsupported by guaranteed delivery line items. For details, see the [Splits Service](splits-service.md) on how to associate splits to GDALIs for creative targeting use cases.<br>Migration Notes: UNSUPPORTED |
@@ -159,7 +158,7 @@ The `supply_strategies` object is used to designate which supply source you wi
 | `deals` | boolean | Designates whether you wish to target deal inventory. This includes any deals which you are are eligible to bid on. |
 | `programmatic_guaranteed` | boolean | Designates whether you wish to target a programmatic guaranteed deal with this line item. If this is set to `true`, then the `rtb`, `managed`, and `deals` fields must be set to `false`. |
 
-**Target managed inventory**
+#### Target managed inventory
 
 ```
 $ cat LI-supply-strategies.json
@@ -182,8 +181,7 @@ $ cat LI-supply-strategies.json
 
 The `delivery_goal` array contains information about the delivery goal attached to the GDALI. GDALIs will attempt to deliver against impression or percentage goals.
 
-In order for GDALIs to serve, there are a number of different validations that have to be performed. The validations change depending
-on the type of delivery goal (see `type` field below).
+In order for GDALIs to serve, there are a number of different validations that have to be performed. The validations change depending on the type of delivery goal (see `type` field below).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -194,7 +192,7 @@ on the type of delivery goal (see `type` field below).
 | `reserved` | boolean | **This is a required field.** When `true`, this line item has inventory `"reserved"` for it; in other words, the line item is set to purchase a guaranteed number or percentage of impressions on a seller's inventory during its flight.<br><br>**Note:** You will not be able to set a GDALI's `state` to `"active"` unless this field is set to `true`. |
 | `guaranteed_delivery_version` | int | **Deprecated.** This field is no longer in use. |
 
-**Apply a delivery goal to an exclusive guaranteed line item**
+#### Apply a delivery goal to an exclusive guaranteed line item
 
 ```
 $ cat LI-exclusive-delivery.json
@@ -215,7 +213,7 @@ $ cat LI-exclusive-delivery.json
 }
 ```
 
-**Apply a delivery goal to an impression guaranteed line item**
+#### Apply a delivery goal to an impression guaranteed line item
 
 ```
 $ cat LI-imp-delivery.json
@@ -245,7 +243,7 @@ The `flat_fee` object contains the following fields.
 | `flat_fee_allocation_date` | timestamp | The date when the flat fee revenue is scheduled to be allocated to publishers. <br>**Example:** `"2019-06-08 00:00:00"`.<br>This value will be `null` if the `flat_fee_type` is `daily`. |
 | `flat_fee_adjustment_id` | int | **Read-only.** The ID for any adjustments required to this flat fee. |
 
-**Apply a daily $100 flat fee to a line item**
+#### Apply a daily $100 flat fee to a line item
 
 ```
 $ cat LI-daily-flat-fee.json
@@ -261,7 +259,7 @@ $ cat LI-daily-flat-fee.json
 }
 ```
 
-**Apply a one-time flat fee to a line item**
+#### Apply a one-time flat fee to a line item
 
 ```
 $ cat LI-one-time-flat-fee.json
@@ -311,7 +309,7 @@ For more on roadblocking, see [Target Your Inventory with Roadblocking](../monet
 | `master_height` | int | The height of the master creative. This value is required when roadblock type equals `partial_roadblock`. **Note**: For all video ad types, the height must be set to `1`. |
 |`slot_type` |string|The slot position of the master creative. Possible values are: `"AD_POD_FIRST"` (First Slot), `"AD_POD_LAST"` (Last Slot), `"INTRO_BUMPER"`, `"OUTRO_BUMPER"`.|
 
-**Apply a partial roadblock to a line item**
+#### Apply a partial roadblock to a line item
 
 ```
 $ cat LI-roadblock.json
@@ -330,7 +328,7 @@ $ cat LI-roadblock.json
 }
 ```
 
-**Apply a partial roadblock to a line item with video ad type**
+#### Apply a partial roadblock to a line item with video ad type
 
 ```
 $ cat LI-roadblock.json
@@ -369,7 +367,7 @@ You can use the read-only [Label Service](label-service.md) to view all possible
 | `name` | enum | **Read-only.** The name of the label. <br>Possible values: `"Trafficker"` or `"Sales Rep"`. |
 | `value` | string (100) | The value assigned to the label. For example, for the `"Sales Rep"` label, this could be a name such as `"Michael Sellers"`. |
 
-**Apply a trafficker label to a line item**
+#### Apply a trafficker label to a line item
 
 ```
 $ cat LI-trafficker.json
@@ -459,7 +457,7 @@ The following fields are contained within the `auction_event` object.
 | `payment_auction_event_type_code` | string | Not currently supported by GDALIs. |
 | `payment_auction_type_id` | int | Not currently supported by GDALIs. |
 
-**Set $4 Viewable CPM revenue to a line item**
+#### Set $4 Viewable CPM revenue to a line item
 
 ```
 $ cat LI-viewable-cpm.json
@@ -489,7 +487,7 @@ Each object in the `creatives` array includes the following fields. To obtain in
 | `is_expired` | boolean | **Read-only.** If `true`, the creative is expired. If `false`, the creative is active. |
 | `is_prohibited` | boolean | **Read-only.** If `true`, the creative falls into a prohibited category on the Xandr platform. |
 | `width` | int | **Read-only.** The width of the creative. |
-| `audit_status` | enum | **Read-only.** The audit status of the creative. Possible values: "no_audit", "pending", "rejected", "audited", or "unauditable" . |
+| `audit_status` | enum | **Read-only.** The audit status of the creative. Possible values: `"no_audit"`, `"pending"`, `"rejected"`, `"audited"`, or `"unauditable"`. |
 | `name` | string | **Read-only.** The name of the creative. |
 | `pop_window_maximize` | boolean | **Read-only.** If `true`, the publisher's tag will maximize the window. Only relevant for creatives with format `"url-html"` and `"url-js"`. If `pop_window_maximize` is set to `true`, then neither `height` nor `width` should be set on the creative. |
 | `height` | int | **Read-only.** The height of the creative. |
@@ -521,7 +519,7 @@ The date ranges must all meet the following specifications:
 | `start_date` | timestamp | The start date of the custom date range. Format must be `YYYY-MM-DD hh:mm:ss` (hh:mm:ss should be hh:00:00). |
 | `end_date` | timestamp | The end date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (hh:mm:ss should be set to hh:59:59). |
 
-**Schedule a creative to serve during a custom budget interval**
+#### Schedule a creative to serve during a custom budget interval
 
 ```
 $cat line-item-with-custom-budget-intervals
@@ -563,8 +561,7 @@ $cat line-item-with-custom-budget-intervals
 
 ### Budget intervals
 
-When creating a new guaranteed delivery line item, ensure that the `start_date` and `end_date` of each of its `budget_intervals` array
-objects fall within one of the budget intervals defined on the parent insertion order (insertion orders are associated with line items via the `insertion_orders` array in the Line Item Service).
+When creating a new guaranteed delivery line item, ensure that the `start_date` and `end_date` of each of its `budget_intervals` array objects fall within one of the budget intervals defined on the parent insertion order (insertion orders are associated with line items via the `insertion_orders` array in the Line Item Service).
 
 > [!NOTE]
 >
@@ -596,7 +593,7 @@ Each object in the `budget_intervals` array contains the following fields.
 | `enable_pacing` | boolean | If `true`, then spending will be paced over the course of the day. Only applicable if there is a `daily_budget`. |
 | `creatives` | array | Specifies the creatives associated with this budget interval. In order to serve, creatives must also be specified in the line item `creatives` field and `all_budget_intervals` must be `false`. |
 
-**Apply budget interval to a line item**
+#### Apply budget interval to a line item
 
 ```
 $ cat LI-budget-intervals.json
@@ -625,7 +622,7 @@ $ cat LI-budget-intervals.json
 
 To include the `first_run` and `last_run` fields in a `GET` response, pass `flight_info=true` in the query string. You can also filter for line items based on when they first and last served, as follows:
 
-**Retrieve only line items that have never served**
+#### Retrieve only line items that have never served
 
 Pass `{{never_run=true}}` in the query string.
 
@@ -634,9 +631,9 @@ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100
 ```
 
 > [!NOTE]
-> You can use `{{never_run=true}}` in combination with other filters, but please note that it will always be an OR relationship. For example, if you pass both `{{never_run=true}}` and `{{min_first_run=2012-01-01 00:00:00}}` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01.
+> You can use `{{never_run=true}}` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `{{never_run=true}}` and `{{min_first_run=2012-01-01 00:00:00}}` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01.
 
-**Retrieve only line items that first served on or after a specific date**
+#### Retrieve only line items that first served on or after a specific date
 
 Pass `{{min_first_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 
@@ -644,7 +641,7 @@ Pass `{{min_first_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00'
 ```
 
-**Retrieve only line items that first served on or before a specific date**
+#### Retrieve only line items that first served on or before a specific date
 
 Pass `{{max_first_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 
@@ -652,7 +649,7 @@ Pass `{{max_first_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_first_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only line items that first served within a specific date range**
+#### Retrieve only line items that first served within a specific date range
 
 Pass `{{min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 
@@ -660,7 +657,7 @@ Pass `{{min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS}}` i
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00&max_first_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only line items that last served on or after a specific date**
+#### Retrieve only line items that last served on or after a specific date
 
 Pass `{{min_last_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 
@@ -668,7 +665,7 @@ Pass `{{min_last_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00'
 ```
 
-**Retrieve only line items that last served on or before a specific date**
+#### Retrieve only line items that last served on or before a specific date
 
 Pass `{{max_last_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 
@@ -676,7 +673,7 @@ Pass `{{max_last_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_last_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only line items that last served within a specific date range**
+#### Retrieve only line items that last served within a specific date range
 
 Pass `{{min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS}}` in the query string.
 
@@ -953,7 +950,7 @@ curl -b cookies -X PUT -d @line_item_reserve.json "https://api.appnexus.com/line
     }
     ```
 
-1. Make a `POST` request to the **[https://api.appnexus.com/line-item](https://api.appnexus.com/line-item)** endpoint using this GDALI JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the **`https://api.appnexus.com/line-item`** endpoint using this GDALI JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @gd_imp_cpm.json 'https://api.appnexus.com/line-item?advertiser_id=3872575'
@@ -1159,7 +1156,7 @@ curl -b cookies -X PUT -d @line_item_reserve.json "https://api.appnexus.com/line
     }
     ```
 
-1. Make a `POST` request to the **[https://api.appnexus.com/line-item](https://api.appnexus.com/line-item)** endpoint using this GDALI JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the **`https://api.appnexus.com/line-item`** endpoint using this GDALI JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @gd_exclusive_flat.json 'https://api.appnexus.com/line-item?advertiser_id=3872575'
@@ -1379,7 +1376,7 @@ curl -b cookies -X PUT -d @line_item_reserve.json "https://api.appnexus.com/line
     }
     ```
 
-1. Make a `POST` request to the **[https://api.appnexus.com/line-item](https://api.appnexus.com/line-item)** endpoint using this GDALI JSON and the appropriate `advertiser_id`.
+1. Make a `POST` request to the **`https://api.appnexus.com/line-item`** endpoint using this GDALI JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @gd_roadblock.json 'https://api.appnexus.com/line-item?advertiser_id=3872575'

@@ -25,12 +25,12 @@ To actually target the IP range lists you create and manage here, add them to th
 The following limitations exist for the IP Range List Service:
 
 - You can create up to 100 IP range lists.
-- A single "include" IP range list (`include` set to `true`) cannot contain more than 3500 ranges.
-- A single "exclude" IP range list (`include` set to `false`) cannot contain more than 10 ranges.
+- A single `"include"` IP range list (`include` set to `true`) cannot contain more than 3500 ranges.
+- A single `"exclude"` IP range list (`include` set to `false`) cannot contain more than 10 ranges.
 
 In addition, the following limitations exist on the [Profile Service](profile-service.md) when targeting IP Range Lists:
 
-Per profile, you can target up to 10 "include" IP range lists (`include` set to `true`) and no more than 1 "exclude" IP range list (`include` set to `false`). The excluded IP ranges must be a subset of the included IP ranges.
+Per profile, you can target up to 10 `"include"` IP range lists (`include` set to `true`) and no more than 1 `"exclude"` IP range list (`include` set to `false`). The excluded IP ranges must be a subset of the included IP ranges.
 
 ## REST API
 

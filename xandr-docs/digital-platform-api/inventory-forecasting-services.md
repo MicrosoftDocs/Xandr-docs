@@ -85,12 +85,9 @@ Roadblocks can be set on either the line item level or the campaign level, but n
 
 ##### Master creative
 
-The master creative is the creative with a size matching the `master_height` and `master_width` specified in the roadblock
-object. If more than one creative matches that size, the system will choose one as the master.
+The master creative is the creative with a size matching the `master_height` and `master_width` specified in the roadblock object. If more than one creative matches that size, the system will choose one as the master.
 
-The master creative is used for page-level roadblocking, where one impression is recorded for the full set of creatives delivered for the
-roadblock. That recorded impression is based on the master creative. This means that if the master creative doesn't serve, no impression will be recorded. If you want to use creative-level roadblocking, where each creative delivered is counted as an impression, leave
-the `master_width` and `master_height` values blank.
+The master creative is used for page-level roadblocking, where one impression is recorded for the full set of creatives delivered for the roadblock. That recorded impression is based on the master creative. This means that if the master creative doesn't serve, no impression will be recorded. If you want to use creative-level roadblocking, where each creative delivered is counted as an impression, leave the `master_width` and `master_height` values blank.
 
 For more on roadblocking, see [Target Your Inventory with Roadblocking](../monetize/target-your-inventory-with-roadblocking.md).
 
@@ -1080,8 +1077,7 @@ You'll get back JSON in the following format:
 
 #### GDALI example - Check inventory contention for GDALIs with splits
 
-To see an inventory contention forecast across splits based on your proposed targeting settings, create a JSON file in the format shown
-below:
+To see an inventory contention forecast across splits based on your proposed targeting settings, create a JSON file in the format shown below:
 
 ```
 {

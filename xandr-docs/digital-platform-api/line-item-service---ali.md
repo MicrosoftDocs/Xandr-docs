@@ -71,9 +71,9 @@ A line item defines your financial relationship with an advertiser, including bu
 | `advertiser` | object | An object describing the advertiser with which this line item is associated. For details, see [Advertiser](#advertiser) below.<br><br>**Read Only.** |
 | `labels` | array | The optional labels applied to the line item. Currently, the labels available are: `"Trafficker"` and `"Sales Rep"`. For more details, see [Labels](#labels) below.<br><br>**Note:**<br>You can report on line item labels with the [Network Analytics](network-analytics.md) and [Network Advertiser Analytics](./network-advertiser-analytics.md) reports. For example, if you use the `"Trafficker"` label to specify the name of the trafficker responsible for each line item, you could run the Network Analytics report filtered by `"trafficker_for_line_item"` to focus on the line items that a particular trafficker is responsible for, or grouped by `"trafficker_for_line_item"` to rank the performance of your traffickers. |
 | `broker_fees` | array | **Deprecated.** Use `partner_fees` instead. |
-| `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, please speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
+| `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
 | `broker_fees` | array | **Deprecated.** Use `partner_fees` instead. |
-| `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, please speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
+| `pixels` | array of objects | The conversion pixels used to track CPA revenue. Both post-click and post-view revenue may be specified. You may only attach 20 pixels to a line item. If you need to attach more, speak with your Xandr Implementation Consultant or Support. For more details, see [Pixels](#pixels) and the example below for a sample of the format.<br>**Default:** `null` |
 | `insertion_orders` | array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](#insertion-orders) below.<br><br>**Note:**<br>Once a line item is associated with a seamless insertion order, it cannot be associated to a legacy insertion order. |
 | `goal_pixels` | array of objects | For a line item with the `goal_type` `"cpa"`, the pixels used for conversion tracking, as well as the post-view and post-click revenue. For more details, see [Goal Pixels](#goal-pixels) and the example below for a sample of the format. |
 | `imptrackers` | array of objects | The third-party impression trackers associated with the line item. For more details, see [Impression Tracker Service](impression-tracker-service.md).<br>**Read Only.** |
@@ -155,7 +155,7 @@ The `supply_strategies` object is used to designate which supply source you wi
 | `deals` | boolean | Designates whether you wish to target deal inventory. This includes any deals which you are are eligible to bid on. |
 | `programmatic_guaranteed` | boolean | Designates whether you wish to target a programmatic guaranteed deal with this line item. If this is set to `true`, then the `rtb`, `managed`, and `deals` fields must be set to `false`. |
 
-**Target open exchange and 2 deals but *not* managed inventory**
+#### Target open exchange and 2 deals but *not* managed inventory
 
 ```
 {code} $ cat LI-supply-strategies.json
@@ -214,12 +214,11 @@ You can use the read-only [Label Service](label-service.md) to view all possible
 
 ### Broker fees
 
-Broker fees are deprecated for augmented line items. Please create partner fees and apply them to the line item using the [Partner Fee Service](partner-fee-service.md).
+Broker fees are deprecated for augmented line items. Create partner fees and apply them to the line item using the [Partner Fee Service](partner-fee-service.md).
 
 ### Partner fees
 
-If you need to reserve a portion of your budget for third-party costs--costs owed to parties other than the publisher--you can define
-this information with the [Partner Fee Service](partner-fee-service.md). Fees can be tracked on a CPM, cost share, or revenue share basis, and can be applied to multiple advertisers and line items, if desired. A single advertiser or line item can have multiple fees applied.
+If you need to reserve a portion of your budget for third-party costs—costs owed to parties other than the publisher—you can define this information with the [Partner Fee Service](partner-fee-service.md). Fees can be tracked on a CPM, cost share, or revenue share basis, and can be applied to multiple advertisers and line items, if desired. A single advertiser or line item can have multiple fees applied.
 
 The `partner fee` array includes the following field:
 
@@ -227,7 +226,7 @@ The `partner fee` array includes the following field:
 |:---|:---|:---|
 | `id` | int | The ID of a partner fee applied to this line item. |
 
-**Apply a fee to a line item**
+#### Apply a fee to a line item
 
 ```
 $cat LI-update.json
@@ -252,10 +251,10 @@ $curl -b cookie -X PUT -d @LI-update.json "https://api.appnexus.com/line-item?id
 }
 ```
 
-**Remove a fee from a line item**
+#### Remove a fee from a line item
 
 > [!NOTE]
-> You cannot remove a fee from a line item if `required` on the [partner fee](partner-fee-service.md) is `true`. You must first set `required` to false and then remove the fee from the line item.
+> You cannot remove a fee from a line item if `required` on the [partner fee](partner-fee-service.md) is `true`. You must first set `required` to `false` and then remove the fee from the line item.
 
 ```
 $curl -b cookie -x GET "https://api.appnexus.com/line-item?id=2345432"
@@ -391,7 +390,7 @@ The `in_demo_measurement` object enables demographic measuring and its relevant 
 > [!NOTE]
 > To utilize demographic measuring for connected TV (CTV), your line item must have a targeting configuration that exclusively targets within the United States.
 
-**An example of the `in_demo_measurement` object within a JSON response**
+#### An example of the `in_demo_measurement` object within a JSON response
 
 ```
 "in_demo_measurement": {
@@ -467,7 +466,7 @@ The `offline_attribution` object enables offline sales attribution for your line
 > [!NOTE]
 > To utilize offline sales attribution, your line item must have a targeting configuration that exclusively targets within the United States.
 
-**An example of the `offline_attribution` object within a JSON `PUT` request**
+#### An example of the `offline_attribution` object within a JSON `PUT` request
 
 ```
 $ cat line-item.json
@@ -488,7 +487,7 @@ $ cat line-item.json
 $ curl -b cookies -c cookies -X PUT -d @line-item.json "https://api.appnexus.com/line-item?id=ID_INTEGER&advertiser_id=ID_INTEGER"
 ```
 
-**An example of the `offline_attribution` object within a JSON response**
+#### An example of the `offline_attribution` object within a JSON response
 
 ```
 {
@@ -513,7 +512,7 @@ $ curl -b cookies -c cookies -X PUT -d @line-item.json "https://api.appnexus.com
 ...
 ```
 
-**An example of the `offline_attribution` object being deleted within a JSON `PUT` request**
+#### An example of the `offline_attribution` object being deleted within a JSON `PUT` request
 
 ```
 $ cat line-item.json
@@ -577,7 +576,7 @@ The date ranges must all meet the following specifications:
 | `start_date` | timestamp | The start date of the custom date range. Format must be `YYYY-MM-DD hh:mm:ss` (hh:mm:ss should be hh:00:00). |
 | `end_date` | timestamp | The end date of the budget interval. Format must be `YYYY-MM-DD hh:mm:ss` (hh:mm:ss should be set to hh:59:59). |
 
-**Schedule a creative to serve during a custom budget interval**
+#### Schedule a creative to serve during a custom budget interval
 
 ```
 $cat line-item-with-custom-budget-intervals
@@ -627,9 +626,7 @@ $cat line-item-with-custom-budget-intervals
 
 Budget intervals on an augmented line item must fall within the budget intervals defined on the line item's parent insertion order(s). Budget intervals on line items should have budgets distinct from those of the parent insertion order(s). These function as line item-specific "sub-budgets" of the budget on the corresponding insertion order budget interval.
 
-When creating a new augmented line item, ensure that the `start_date` and `end_date` of each of its `budget_intervals` array objects fall
-within one of the budget intervals defined on the parent insertion order (insertion orders are associated with line items via the
-`insertion_orders` array in the Line Item Service).
+When creating a new augmented line item, ensure that the `start_date` and `end_date` of each of its `budget_intervals` array objects fall within one of the budget intervals defined on the parent insertion order (insertion orders are associated with line items via the `insertion_orders` array in the Line Item Service).
 
 > [!NOTE]
 > The `parent_interval_id` (in the `budget_intervals` array) has been deprecated and its value will be ignored.
@@ -664,13 +661,13 @@ Each object in the `budget_intervals` array contains the following fields.
 | `lifetime_budget` | double | The lifetime budget in revenue for the budget interval. The revenue currency is defined by the `currency` field on the `insertion_order` object.<br><br>**Note:**<br>If you also set the `lifetime_budget_imps` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `lifetime_budget_imps` | double | The lifetime budget in impressions for the budget interval. <br><br>**Note:** If you add line items to this insertion order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted.<br><br>**Note:**<br>If you also set the `lifetime_budget` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `lifetime_pacing` | boolean | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. If `true`, you must set `lifetime_budget` or `lifetime_budget_imps`. |
-| `subflights`<br><br>**Note:**<br>Subflights are an **Alpha** feature. If you'd like to gain access to them for your augmented line item, please contact your Xandr account representative. | array of objects | An optional array that contains subflights you can create to further customize your budget interval's budgeting and scheduling behavior. Subflights allow you to set custom budget and pacing settings for specific days within a line item flight.<br>For more information on the `subflights` array of key-value objects, see the [Subflights](#subflights) table below.<br><br>**Note:** Line items can use no more than one subflight for any given date. |
+| `subflights`<br><br>**Note:**<br>Subflights are an **Alpha** feature. If you'd like to gain access to them for your augmented line item, contact your Xandr account representative. | array of objects | An optional array that contains subflights you can create to further customize your budget interval's budgeting and scheduling behavior. Subflights allow you to set custom budget and pacing settings for specific days within a line item flight.<br>For more information on the `subflights` array of key-value objects, see the [Subflights](#subflights) table below.<br><br>**Note:** Line items can use no more than one subflight for any given date. |
 | `daily_budget` | double | The daily budget in revenue for the budget interval. The revenue currency is defined by the `currency` field on the `insertion_order` object. <br><br>**Note:** If you add line items to this insertion order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted.<br><br>**Note:**<br>If you also set the `daily_budget_imps` field, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `daily_budget_imps` | double | The daily budget in impressions.<br><br>**Note:**<br>If the parent insertion order's `budget_type` field has been set to `"impression"` *and* the line items `revenue_type` field has been set to Viewable CPM, only the viewable impressions count against both line item and insertion order budgets.<br><br>If you also set the `daily_budget` field, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `enable_pacing` | boolean | If `true`, then spending will be paced over the course of the day. Only applicable if there is a `daily_budget`. |
 | `creatives` | array | Specifies the creatives associated with this budget interval. In order to serve, creatives must also be specified in the line item `creatives` field and `all_budget_intervals` must be `false`. |
 
-**Delete a budget interval**
+#### Delete a budget interval
 
 > [!NOTE]
 > You may remove budget intervals from an augmented line item. However, if you want to remove a budget interval from the parent insertion order, you must first remove any budget intervals (that fall within the parent insertion order's budget interval) from all augmented line items associated with the insertion order. Only then can you remove the budget interval from the insertion order. For more details, see [Insertion Order Service](insertion-order-service.md).
@@ -692,13 +689,12 @@ $ cat delete-budget-interval
 
 ### Subflights
 
-Subflights allow you to set custom budget and pacing settings for specific days within a line item flight. They're an **Alpha** feature,
-so please contact your Xandr account representative if you'd like to gain access to them for your augmented line item.
+Subflights allow you to set custom budget and pacing settings for specific days within a line item flight. They're an **Alpha** feature, so contact your Xandr account representative if you'd like to gain access to them for your augmented line item.
 
 > [!NOTE]
 > Line items can use no more than one subflight for any given date.
 
-**Create a subflight**
+#### Create a subflight
 
 ```
 $ cat create-subflight
@@ -736,7 +732,7 @@ $ cat create-subflight
 }
 ```
 
-**Delete a subflight**
+#### Delete a subflight
 
 ```
 $ cat delete-subflight
@@ -800,7 +796,7 @@ The `goal_pixels` array of objects is used when working with `goal_type` `"cpa"`
 
 To include the `first_run` and `last_run` fields in a `GET` response, pass `flight_info=true` in the query string. You can also filter for line items based on when they first and last served, as follows:
 
-**Retrieve only line items that have never served**
+#### Retrieve only line items that have never served
 
 Pass `never_run=true` in the query string.
 
@@ -809,9 +805,9 @@ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100
 ```
 
 > [!NOTE]
-> You can use `never_run=true` in combination with other filters, but please note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01.
+> You can use `never_run=true` in combination with other filters, but note that it will always be an OR relationship. For example, if you pass both `never_run=true` and `min_first_run=2012-01-01 00:00:00` in the query string, you will be looking for line items that have never served OR line items that first served on or after 2012-01-01.
 
-**Retrieve only line items that first served on or after a specific date**
+#### Retrieve only line items that first served on or after a specific date
 
 Pass `min_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
@@ -819,7 +815,7 @@ Pass `min_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00'
 ```
 
-**Retrieve only line items that first served on or before a specific date**
+#### Retrieve only line items that first served on or before a specific date
 
 Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
@@ -827,7 +823,7 @@ Pass `max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_first_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only line items that first served within a specific date range**
+#### Retrieve only line items that first served within a specific date range
 
 Pass `min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
@@ -835,7 +831,7 @@ Pass `min_first_run=YYYY-MM-DD HH:MM:SS&max_first_run=YYYY-MM-DD HH:MM:SS` in th
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_first_run=2012-01-01 00:00:00&max_first_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only line items that last served on or after a specific date**
+#### Retrieve only line items that last served on or after a specific date
 
 Pass `min_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
@@ -843,7 +839,7 @@ Pass `min_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&min_last_run=2012-01-01 00:00:00'
 ```
 
-**Retrieve only line items that last served on or before a specific date**
+#### Retrieve only line items that last served on or before a specific date
 
 Pass `max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
@@ -851,7 +847,7 @@ Pass `max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 curl -b cookies -c cookies 'https://api.appnexus.com/line-item?advertiser_id=100&flight_info=true&max_last_run=2012-08-01 00:00:00'
 ```
 
-**Retrieve only line items that last served within a specific date range**
+#### Retrieve only line items that last served within a specific date range
 
 Pass `min_last_run=YYYY-MM-DD HH:MM:SS&max_last_run=YYYY-MM-DD HH:MM:SS` in the query string.
 
@@ -870,7 +866,7 @@ To retrieve line items based on pauses, you must pass certain query string param
 > [!NOTE]
 > You can use these query string parameters both when retrieving all line items or specific line items, but the examples below only cover retrieving all line items, as that is where this feature offers the most value.
 
-**Retrieve all line items and show alerts**
+#### Retrieve all line items and show alerts
 
 Pass `show_alerts=true` in the query string. This parameter will add the `alerts` object to every line item in the response, whether or not the line item has pauses.
 
@@ -962,7 +958,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have at least one pause**
+#### Retrieve only line items that have at least one pause
 
 Pass `show_alerts=true&pauses=true` in the query string.
 
@@ -1050,7 +1046,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have no pauses**
+#### Retrieve only line items that have no pauses
 
 Pass `show_alerts=true&pauses=false` in the query string.
 
@@ -1129,7 +1125,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have a specific pause**
+#### Retrieve only line items that have a specific pause
 
 Pass `show_alerts=true&pauses=PAUSE_ID` in the query string. For pause IDs, see the [Pauses](#pauses) table below.
 
@@ -1197,7 +1193,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/line-item?show_alerts=tru
 }
 ```
 
-**Retrieve only line items that have two or more specific pauses**
+#### Retrieve only line items that have two or more specific pauses
 
 Pass `show_alerts=true&pauses=SUM_OF_PAUSE_IDS` in the query string. For pause IDs, see the [Pauses](#pauses) table below.
 
@@ -2011,7 +2007,7 @@ curl -b cookies -X POST -d  @line_item_dcp_cpc.json  "https://api.appnexus.com/l
 
 ### Create a line item with a revenue type of Viewable CPM and optimized to both a CPC and CPA goal
 
-In this example, we create a line item with a revenue type of Viewable CPM, a CPC goal of $5 and and CPA goal of $10.
+In this example, we create a line item with a revenue type of Viewable CPM, a CPC goal of $5 and CPA goal of $10.
 
 ```
 {code}$ cat line_item_dcp_vcpm_cpaopt
@@ -2397,8 +2393,7 @@ Scenario: You have negotiated a Programmatic Guaranteed deal (PG deal) with a se
     }
     ```
 
-1. Make a `POST` request to the **<https://api.appnexus.com/line-item>** endpoint using this PG buying line item JSON and the appropriate
-`advertiser_id`.
+1. Make a `POST` request to the **`https://api.appnexus.com/line-item`** endpoint using this PG buying line item JSON and the appropriate `advertiser_id`.
 
     ```
     $ curl -b cookies -X POST -d @pg_buying_line_item 'https://api.appnexus.com/line-item?advertiser_id=123'

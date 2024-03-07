@@ -146,7 +146,7 @@ Additional fields returned for specific object types.
 
 ## Examples
 
-### Looking up all of your campaigns
+### Look up all of your campaigns
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup?type=campaign'
@@ -182,7 +182,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup?type=campaign'
 }
 ```
 
-### Looking up all objects accessible to this service
+### Look up all objects accessible to this service
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/lookup'

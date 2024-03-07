@@ -7,15 +7,14 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Inventory Availability report
 
-Inventory availability reports offer insight into the types of inventory available on the platform. These reports are available by request only; please use the [support portal](https://help.xandr.com/s/login/). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Please also note:
+Inventory availability reports offer insight into the types of inventory available on the platform. These reports are available by request only; use the [support portal](https://help.xandr.com/s/login/). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Also note:
 
 - Our databases contain 30 days worth of historical inventory availability data. Reports are therefore limited to this timeframe.
-- Additional reporting restrictions may apply to mobile impressions. Please contact your Xandr representative for further information.
+- Additional reporting restrictions may apply to mobile impressions. Contact your Xandr representative for further information.
 
 ## Time frame
 
-You can run this report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about
-these fields, see [Report Service](report-service.md).
+You can run this report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](report-service.md).
 
 ### Data retention period
 
@@ -53,7 +52,7 @@ Data in this report is retained for 30 days.
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` of `"platform_inventory_avail"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` of `"platform_inventory_avail"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat platform_inventory_avail

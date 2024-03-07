@@ -110,7 +110,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type'
 }
 ```
 
-### View the `"Video"` media type (id 4)
+### View the `"Video"` media type (ID 4)
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/media-type?id=4'

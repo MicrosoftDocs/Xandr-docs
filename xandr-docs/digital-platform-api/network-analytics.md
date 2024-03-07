@@ -414,6 +414,8 @@ If you are frequently requesting network analytics reports via the API which inc
 | `marketplace_clearing_event_units_cpm` | double | `11.2` | CPM/marketplace_clearing_event_units | CPM by marketplace clearing event units |
 | `marketplace_clearing_events_booked_revenue_cpm` | double | `2.45` | total revenue/1000 events | The total revenue per 1000 events (for the associated Clearing Event). |
 | `marketplace_clearing_event_buyer_media_cost_ecpm` | double | `2.37` | total media cost/1000 events | The total media cost per 1000 events (for the associated Clearing Event). |
+| `buying_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * advertiser_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory.|
+| `selling_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * publisher_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 
 ## Custom viewable definition metrics
 

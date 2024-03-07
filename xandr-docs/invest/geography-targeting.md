@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Geography targeting
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal codes for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 You can target impressions based on the geographic location of the users viewing them.
 
 In the **Targeting** section of a line item, click the **Edit** button next to **Geography**.

@@ -1,11 +1,11 @@
 ---
 title: Partner Fee Service
-description: Use partner fee service to reserve budget for third-party costs owed to parties other than the publisher.
+description: Use the Partner Fee service to reserve budget for third-party costs owed to parties other than the publisher.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Partner fee service
+# Partner Fee service
 
 > [!NOTE]
 > Partner Fees are an enhancement and replacement for broker fees for [augmented line items (ALIs)](./line-item-service---ali.md).
@@ -24,11 +24,11 @@ Common fees you might need to budget for are:
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/partner-fee?advertiser_id=ADVERTISER_ID | View all partner fees for an advertiser. |
-| `GET` | https://api.appnexus.com/partner-fee?id=PARTNER_FEE_ID | View a specific partner fee. |
-| `POST` | https://api.appnexus.com/partner-fee | Create a new partner fee. |
-| `PUT` | https://api.appnexus.com/partner-fee?id=PARTNER_FEE_ID | Modify a partner fee. |
-| `DELETE` | https://api.appnexus.com/partner-fee?id=PARTNER_FEE_ID | Delete a partner fee.<br><br>**Note**:<br>You can only delete a fee that is not applied to any line items. |
+| `GET` | `https://api.appnexus.com/partner-fee?advertiser_id=ADVERTISER_ID` | View all partner fees for an advertiser. |
+| `GET` | `https://api.appnexus.com/partner-fee?id=PARTNER_FEE_ID` | View a specific partner fee. |
+| `POST` | `https://api.appnexus.com/partner-fee` | Create a new partner fee. |
+| `PUT` | `https://api.appnexus.com/partner-fee?id=PARTNER_FEE_ID` | Modify a partner fee. |
+| `DELETE` | `https://api.appnexus.com/partner-fee?id=PARTNER_FEE_ID` | Delete a partner fee.<br><br>**Note**:<br>You can only delete a fee that is not applied to any line items. |
 
 ## JSON fields
 

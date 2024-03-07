@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Operating System Service
-description: This article provides information on the operating system service with examples.
+description: This article provides information on the Operating System service with examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Operating system service
+# Digital Platform API - Operating System service
 
 > [!NOTE]
 > To retrieve operating system **versions** (Android 3.x, Apple iOS 6, etc.), you should use the [Operating System Extended Service](./operating-system-extended-service.md) instead of this service. To retrieve operating systems as a whole (Android, Windows, Linux, etc.), you should use the [Operating System Family Service](./operating-system-family-service.md).
@@ -14,10 +14,10 @@ ms.custom: digital-platform-api
 
 | HTTP Method | Endpoint | Example |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/operating-system | View all operating systems. |
-| `GET` | https://api.appnexus.com/operating-system?search=SEARCH_TERM | Search for operating systems with IDs or names containing certain characters. |
-| `GET` | https://api.appnexus.com/operating-system?id=OPERATING_SYSTEM_ID | View a specific operating system. |
-| `GET` | https://api.appnexus.com/operating-system/meta | Find out which fields you can filter and sort by. |
+| `GET` | `https://api.appnexus.com/operating-system` | View all operating systems. |
+| `GET` | `https://api.appnexus.com/operating-system?search=SEARCH_TERM` | Search for operating systems with IDs or names containing certain characters. |
+| `GET` | `https://api.appnexus.com/operating-system?id=OPERATING_SYSTEM_ID` | View a specific operating system. |
+| `GET` | `https://api.appnexus.com/operating-system/meta` | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 

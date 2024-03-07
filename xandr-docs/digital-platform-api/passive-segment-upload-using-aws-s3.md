@@ -31,18 +31,18 @@ Completed jobs will result in the data file being moved to the `/done` or `/fail
 
 ## FAQs
 
-1. **I have access to the AWS S3 bucket. How can I view the contents of the `/submitted` directory?**
+### I have access to the AWS S3 bucket. How can I view the contents of the `/submitted` directory?
 
-    To access the `/submitted` directory, you must create it. Ensure that there are no spaces between the forward slash (**/**) and the text characters while creating the directory.
+To access the `/submitted` directory, you must create it. Ensure that there are no spaces between the forward slash (**/**) and the text characters while creating the directory.
 
-1. **Should I create the `/done` or `/failed` subdirectories?**
+### Should I create the `/done` or `/failed` subdirectories?
 
-    No. The `/done` or `/failed` subdirectories are automatically created.
+No. The `/done` or `/failed` subdirectories are automatically created.
 
-1. **I have received my AWS S3 login credentials, but I am experiencing difficulties logging in.**
+### I have received my AWS S3 login credentials, but I am experiencing difficulties logging in.
 
-    To maintain security, the initial `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` login credentials sent to you may be missing some characters. For security purposes, we  send your credentials in two separate communications. Ensure that you have received the complete text string of your login from your Xandr contact.
+To maintain security, the initial `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` login credentials sent to you may be missing some characters. For security purposes, we  send your credentials in two separate communications. Ensure that you have received the complete text string of your login from your Xandr contact.
 
-1. **If I don't log in to AWS S3 frequently, will my credentials expire?**
+### If I don't log in to AWS S3 frequently, will my credentials expire?
 
-    No. Your `access key id` and `secret access key` for AWS S3 does not expire.
+No. Your `access key id` and `secret access key` for AWS S3 does not expire.

@@ -1,11 +1,11 @@
 ---
 title: Network Video Inventory Availability Report
-description: Buyers can use the network video inventory availability report to check if inventory meets their buying requirements and predict future success of inventory targeting.
+description: Use the Network Video Inventory Availability report to check if inventory meets your buying requirements and predict future success of inventory targeting.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Network video inventory availability report
+# Network Video Inventory Availability report
 
 Buyers can use the **Network Video Inventory Availability** report to determine whether inventory that meets their specific buying requirements is likely to be available for purchase. While most of the data in the report is historical and may not accurately reflect today's available inventory, reviewing recent availability is a good way to predict the success of inventory targeting in the future.
 
@@ -24,7 +24,7 @@ The `report_interval` field can be set to one of the following:
 - month_to_yesterday
 - last_30_days
 
-**Data retention period**
+### Data retention period
 
 Data in this report is retained for 90 days.
 
@@ -75,7 +75,7 @@ Data in this report is retained for 90 days.
 
 ## Example
 
-### Create JSON report request
+### Create a JSON report request
 
 The JSON file should include the report_type of `buyer_approximate_unique_users_hourly`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

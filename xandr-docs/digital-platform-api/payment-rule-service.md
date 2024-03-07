@@ -1,11 +1,11 @@
 ---
 title: Payment Rule Service
-description: Learn about payment rule service. A payment rule sets terms for networks to pay managed publishers.
+description: Learn about Payment Rule service. A payment rule sets terms for networks to pay managed publishers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Payment rule service
+# Payment Rule service
 
 A payment rule defines the terms by which a network pays one of its managed publishers. A network may have more than one set of payment terms with a publisher. For instance, traffic originating from certain geographic areas may have different revenue sharing agreement terms.
 
@@ -19,12 +19,12 @@ A payment rule defines the terms by which a network pays one of its managed publ
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/payment-rule?publisher_id=PUBLISHER_ID <br>(payment-rule JSON) | Add a new payment rule. |
-| `PUT` | https://api.appnexus.com/payment-rule?id=PAYMENT_RULE_ID&publisher_id=PUBLISHER_ID <br>(payment-rule JSON) | Modify an existing payment rule. |
-| `GET` | https://api.appnexus.com/payment-rule?publisher_id=PUBLISHER_ID | View all of the payment rules for a publisher. |
-| `GET` | https://api.appnexus.com/payment-rule?id=PAYMENT_RULE_ID | View a specific payment rule for a publisher. |
-| `GET` | https://api.appnexus.com/payment-rule?id=1,2,3 | View multiple payment rules by ID using a comma-separated list. |
-| `DELETE` | https://api.appnexus.com/payment-rule?id=PAYMENT_RULE_ID | Delete a payment rule. |
+| `POST` | `https://api.appnexus.com/payment-rule?publisher_id=PUBLISHER_ID` <br>(payment-rule JSON) | Add a new payment rule. |
+| `PUT` | `https://api.appnexus.com/payment-rule?id=PAYMENT_RULE_ID&publisher_id=PUBLISHER_ID` <br>(payment-rule JSON) | Modify an existing payment rule. |
+| `GET` | `https://api.appnexus.com/payment-rule?publisher_id=PUBLISHER_ID` | View all of the payment rules for a publisher. |
+| `GET` | `https://api.appnexus.com/payment-rule?id=PAYMENT_RULE_ID` | View a specific payment rule for a publisher. |
+| `GET` | `https://api.appnexus.com/payment-rule?id=1,2,3` | View multiple payment rules by ID using a comma-separated list. |
+| `DELETE` | `https://api.appnexus.com/payment-rule?id=PAYMENT_RULE_ID` | Delete a payment rule. |
 
 ## JSON fields
 

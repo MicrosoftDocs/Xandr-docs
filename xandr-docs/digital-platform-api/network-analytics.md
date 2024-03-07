@@ -371,7 +371,7 @@ If you are frequently requesting network analytics reports via the API which inc
 | `profit_margin` | money | `123.45` | (booked_revenue - total_cost)/booked_revenue | Buyer profit margin.<br><br> **Note**: This field defines "profit" as booked revenue minus total cost. |
 | `profit_advertiser_currency` | money | `123.45` | booked_revenue - total_cost | Profit in buying (advertiser) currency. |
 | `video_skips` | int | `10` | video_skips | The total number of times a user skipped the video. Use this metric for reporting when buying skippable inventory. |
-| video_starts | int | `11` | video_starts | The total number of times the first segment of the video creative was downloaded and started. |
+| `video_starts` | int | `11` | video_starts | The total number of times the first segment of the video creative was downloaded and started. |
 | `video_25_pcts` | int | `10` | video_25_pcts | The total number of times the video creatives completed 25% of the entire duration. |
 | `video_50_pcts` | int | `7` | video_50_pcts | The total number of times the video creatives completed 50% of the entire duration. |
 | `video_75_pcts` | int | `10` | video_75_pcts | The total number of times the video creatives completed 75% of the entire duration. |
@@ -383,6 +383,8 @@ If you are frequently requesting network analytics reports via the API which inc
 | `video_completion_rate` | double | `1.12359550561797%` | (video completions/total impressions) x 100 | The ratio of video completions to impressions, expressed as a percentage. |
 | `video_start_rate` | double | `1.12359550561797%` | video_start_rate | The percentage of times the first segment of the video creative was downloaded and started. |
 | `video_skip_rate` | double | `1.12359550561797%` | video_skip_rate | The percentage of times the user opted to skip the video. |
+| `buying_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * advertiser_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory.|
+| `selling_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * publisher_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 | **Metrics with local currency support** |  |  |  |  |
 | `revenue_buying_currency` | money | `123.45` | (booked_revenue + reseller_revenue) * [buying exchange rate] | The sum of booked revenue and reseller revenue in the currency the buyer used to purchase the inventory.<br><br>**Note**: Exchange rates are not yet available in reporting. |
 | `revenue_selling_currency` | money | `123.45` | (booked_revenue + reseller_revenue) * [selling exchange rate] | The sum of booked revenue and reseller revenue in the currency the seller used to sell the impression.<br><br>**Note**: Exchange rates are not yet available in reporting. |
@@ -414,8 +416,6 @@ If you are frequently requesting network analytics reports via the API which inc
 | `marketplace_clearing_event_units_cpm` | double | `11.2` | CPM/marketplace_clearing_event_units | CPM by marketplace clearing event units |
 | `marketplace_clearing_events_booked_revenue_cpm` | double | `2.45` | total revenue/1000 events | The total revenue per 1000 events (for the associated Clearing Event). |
 | `marketplace_clearing_event_buyer_media_cost_ecpm` | double | `2.37` | total media cost/1000 events | The total media cost per 1000 events (for the associated Clearing Event). |
-| `buying_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * advertiser_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory.|
-| `selling_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * publisher_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 
 ## Custom viewable definition metrics
 

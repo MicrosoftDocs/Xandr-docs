@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Set up geography targeting for a line item
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal codes for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 You must target users based on at least one geographic element such as country, region, city, metro code, or postal code. You may optionally set up other geographic inclusions or exclusions.
 
 If you have set up third-party buying filters, only inventory in countries listed in both your third-party buying filters and line item geography target settings will be targeted. If you target (include) geographies at the region, city, metro code, or postal code level, Microsoft Advertising will use these settings to derive the country target to be compared with your third-party buying filters.

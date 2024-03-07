@@ -11,7 +11,6 @@ You can improve video viewability analytics by linking a hosted video creative t
 
 > [!NOTE]
 >
-> - In order to get started with Moat tracking, fill out the Moat Form.
 > - As of now Moat integration is only available on desktop and mobile supply types.
 > - To link your Microsoft Advertising account with your Moat account you must contact a Moat representative. They may request your Microsoft Advertising member ID or seat ID.
 

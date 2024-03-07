@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Migration to Microsoft Identity Platform Login
-description: This page provides step by step guide on how to migrate existing authentication process in Microsoft Advertising products to Microsoft Identity Platform.
+description: This page provides step-by-step guide on how to migrate existing authentication process in Microsoft Advertising products to Microsoft Identity Platform.
 ms.date: 10/28/2023
 ---
 

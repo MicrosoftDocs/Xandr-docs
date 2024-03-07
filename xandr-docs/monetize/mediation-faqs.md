@@ -95,8 +95,8 @@ The Integration Type column describes how the network is integrated for mediatio
 - Server indicates that the integration occurs on the server side; works on mobile web and mobile apps, but works best on mobile apps.
 - SDK indicates that the network's SDK must be downloaded and implemented. Works only on mobile apps.
 
-> [!WARNING]
-> We will make our best effort to keep this information up to date. However, more current information may be available directly from the networks.
+  > [!WARNING]
+  > We will make our best effort to keep this information up to date. However, more current information may be available directly from the networks.
 
 | Network | Optimized for display on... | Optimized for display on... | Optimized for display on... | Reporting? | Integration Type | Contact | Downloads (SDK only) |
 |--|--|--|--|--|--|--|--|
@@ -109,21 +109,21 @@ The Integration Type column describes how the network is integrated for mediatio
 | Claymotion | X |  |  | No | Server | [Claymotion Support](mailto:adops@claymotion.in) | N/A |
 | Doubleclick for Publishers | X |  |  | No | SDK | [DFP Support](https://support.google.com/admanager/?hl=en#topic=7505988) | - [DFP SDK](https://developers.google.com/ad-manager/mobile-ads-sdk) |
 | Hunt | X | X |  | No | Server | Hunt Support | N/A |
-| iAd | X |  |  | No | SDK | [Apple Developer Support](https://developer.apple.com/support/) | - [iAd SDK](https://developer.apple.com/iad/) |
+| iAd | X |  |  | No | SDK | [Apple Developer Support](https://developer.apple.com/support/) | - [iAd SDK] |
 | InMobi | X | X |  | Yes | Server | [InMobi Support](https://support.inmobi.com/) | N/A |
-| Jumptap | X | X |  | Yes | Server | [JumpTap Support](https://support.jumptap.com/index.php/Main_Page) | N/A |
-| Millennial Media (mobile web) |  | X |  | Yes | Client | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | N/A |
-| Millennial Media (mobile app) | X |  |  | Yes | SDK | [Millennial Media Support](https://tools.mmedia.com/user/supportDevPortal) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) | [Millennial Media SDK](https://www.advertising.yahooinc.com/) |
+| Jumptap | X | X |  | Yes | Server | JumpTap Support | N/A |
+| Millennial Media (mobile web) |  | X |  | Yes | Client | Millennial Media Support | N/A |
+| Millennial Media (mobile app) | X |  |  | Yes | SDK | Millennial Media Support | Millennial Media SDK|
 | MobFox | X | X |  | Yes | Server | [MobFox Support](https://www.mobfox.com/publishers/integration/) | - [MobFox SDK](https://www.mobfox.com/publishers/integration/) |
-| MobileFuse | X | X |  | Yes | Server | [MobileFuse Support](http://aws.mobilefuse.com/contact.html) | N/A |
-| Mojiva | X | X |  | Yes | Server | [Mojiva Support](http://www.mojiva.com/support) | N/A |
-| MoPub | X |  |  | No | SDK | [MoPub Support](https://dev.twitter.com/mopub/overview) | -[MoPub iOS SDK](https://github.com/mopub/mopub-ios-sdk)<br>-[MoPub Android SDK](https://github.com/mopub/mopub-android-sdk) |
+| MobileFuse | X | X |  | Yes | Server | MobileFuse Support | N/A |
+| Mojiva | X | X |  | Yes | Server | Mojiva Support | N/A |
+| MoPub | X |  |  | No | SDK | [MoPub Support](https://dev.twitter.com/mopub/overview) | -MoPub iOS SDK<br> - MoPub Android SDK |
 | OpenX | X | X |  | No | Server | [OpenX Support](http://openx.com/support/) | N/A |
 | OpenX Ad Exchange |  | X | X | Yes | Client | [OpenX Support](http://openx.com/support/) | N/A |
 | PubMatic |  | X | X | Yes | Client | [PubMatic Support](mailto:info@PubMatic.com) | N/A |
 | Rubicon Project |  | X | X | Yes | Client | [Rubicon Support](http://www.rubiconproject.com/contact-us/) | N/A |
 | Smaato | X | X |  | Yes | Server | [Smaato Support](http://www.smaato.com/support/) | N/A |
 | Smaato (mobile web) |  | X |  | Yes | Client | [Smaato Support](http://www.smaato.com/support/) | N/A |
-| Verve | X | X |  | No | Server | [Verve Support](http://www.vervemobile.com/contact/) | N/A |
-| Vserv | X | X |  | Yes | Server | [Vserv Support](https://www.vserv.com/support-query/) | N/A |
+| Verve | X | X |  | No | Server | Verve Support | N/A |
+| Vserv | X | X |  | Yes | Server | Vserv Support | N/A |
 | Custom Mobile Network | X |  |  | No | SDK | N/A | N/A |

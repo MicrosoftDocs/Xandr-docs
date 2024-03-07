@@ -1,6 +1,6 @@
 ---
 title: Demand Issues
-description: Learn how Demand Issues show the bid rejections caused by buyer behavior like native creative does not match title, creative does not support required video protocol, the accept URL is too long and creative id was not found.    
+description: Learn how Demand Issues show the bid rejections caused by buyer behavior, like native creative does not match title, creative does not support required video protocol, the accept URL is too long and creative id was not found.    
 ms.date: 10/28/2023
 ---
 

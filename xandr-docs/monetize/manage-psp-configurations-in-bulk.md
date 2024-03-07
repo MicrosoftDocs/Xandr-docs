@@ -1,6 +1,6 @@
 ---
 title: Manage PSP Configurations in Bulk
-description: In this page Learn to create new PSP configurations in bulk and adding Demand Partners to existing configurations in bulk.
+description: In this page, learn to create new PSP configurations in bulk and adding Demand Partners to existing configurations in bulk.
 ms.date: 10/28/2023
 ---
 

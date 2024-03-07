@@ -1,6 +1,6 @@
 ---
 title: Deals
-description: This page, provides an overview on Deals in Monetize and FAQs on Bid Rejestions in UI dashboard.
+description: This page provides an overview on Deals in Monetize and FAQs on Bid Rejections in UI dashboard.
 ms.date: 10/28/2023
 ---
 
@@ -75,7 +75,7 @@ Under **Overview** there are three dropdowns. Selection of fields in these dropd
 | **Bidder** | Also known as the DSP, it is the demand partner platform submitting the bid. Buyers are associated with one bidder at a time. |
 | **Blocked Bid Value** | The total value of blocked bids within the selected time range. |
 | **Buyer** | The Microsoft Advertising member seat that submitted the bid. |
-| **Deal**| This is the negotiated deal between the seller and the buyer. |
+| **Deal** | This is the negotiated deal between the seller and the buyer. |
 | **Error Count** | The total number of bid rejections resulting from Ad Quality Rules. |
 | **Name** | The specific name of the block. For example, brand name, category name or technical attribute name that has been blocked. |
 | **Type** | The classification of the bid rejection. Possible values are Brand, Category, Tech, and Language |

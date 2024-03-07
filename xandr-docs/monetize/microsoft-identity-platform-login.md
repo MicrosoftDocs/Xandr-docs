@@ -46,7 +46,7 @@ Microsoft Advertising's integration with the Microsoft Identity Platform allows 
 - Azure Active Directory supported SSO (Preferred Method)
 - Personal Microsoft Accounts
 
-### Azure Active Directory supported SSO** (Preferred Method)
+### Azure Active Directory supported SSO (Preferred Method)
 
 Microsoft Identity Platform enables organizations to authenticate their users to various cloud and on-premise solutions using the same set of credentials. If you are yet to be integrated with Microsoft Identity Platform, you can learn more about Azure Active Directory and Single Sign On [here](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-single-sign-on).
 
@@ -58,7 +58,7 @@ If you do not have an organization level integration with Azure Active Directory
 
 1. Have a Microsoft Identity Platform account
     - If you have corporate managed account which is used to login to other Microsoft products, this should already be configured.
-    - If your corporate domain is not managed, you can register your email as a Microsoft Account [here](https://account.microsoft.com/account/Account) or from the sign in page.
+    - If your corporate domain is not managed, you can register your email as a Microsoft Account [here](https://account.microsoft.com/account/Account) or from the sign-in page.
 1. Ensure that the email associated to your Microsoft Advertising platform account matches the user principal name or email used to login to Microsoft. Contact the designated person from your organization with the role of **User Manager** to complete the following steps.
     - go to the **User Management** functionality in a Microsoft Advertising product
     - update the email IDs of users to match the user principal names or email IDs of the Microsoft Account or Azure Active Directory integration

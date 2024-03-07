@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Microsoft Advertising Exchange Inventory
-description: Learn how to reach your audiences across Microsoft properties using Microsoft Advertising Exchange (MAX). Examples of MAX are MSN and Outlook.   
+description: Learn how to reach your audiences across Microsoft properties using Microsoft Advertising Exchange (MAX). This page discusses examples of MAX, MSN and Outlook.   
 ms.date: 10/28/2023
 ---
 

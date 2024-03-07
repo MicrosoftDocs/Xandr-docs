@@ -312,7 +312,7 @@ The changes for each report are summarized in the tables below.
 
 ## Standard line items
 
-If you still use standard line items, you must use [Broker Fees](broker-fees.md) to administer third-party fees for those. You can still apply broker fees on the insertion order, line item, or campaign; however, if the insertion order has both standard and augmented line items, the broker fees **will onlyapply to the standard line items**. You must create partner fees for augmented line items even if the parent insertion order has a broker fee applied.
+If you still use standard line items, you must use [Broker Fees](broker-fees.md) to administer third-party fees for those. You can still apply broker fees on the insertion order, line item, or campaign; however, if the insertion order has both standard and augmented line items, the broker fees **will only apply to the standard line items**. You must create partner fees for augmented line items even if the parent insertion order has a broker fee applied.
 
 ## Log-Level data
 

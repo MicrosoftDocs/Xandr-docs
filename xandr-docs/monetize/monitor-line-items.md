@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Monitor Line Items
-description: This page is an overview on line items. Learn how to access the Monitoring feature from any Microsoft Monetize screen, view, search, duplicate, delete and run reports for selected line items. 
+description: This page is an overview on line items. Learn how to access the monitoring feature from any Microsoft Monetize screen, view, search, duplicate, delete and run reports for selected line items. 
 ms.date: 10/28/2023
 ---
 

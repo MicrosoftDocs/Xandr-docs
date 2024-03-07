@@ -114,7 +114,7 @@ The Integration Type column describes how the network is integrated for mediatio
 | Jumptap | X | X |  | Yes | Server | JumpTap Support | N/A |
 | Millennial Media (mobile web) |  | X |  | Yes | Client | Millennial Media Support | N/A |
 | Millennial Media (mobile app) | X |  |  | Yes | SDK | Millennial Media Support | Millennial Media SDK|
-| MobFox | X | X |  | Yes | Server | [MobFox Support](https://www.mobfox.com/publishers/integration/) | - [MobFox SDK](https://www.mobfox.com/publishers/integration/) |
+| MobFox | X | X |  | Yes | Server | MobFox Support | - MobFox SDK |
 | MobileFuse | X | X |  | Yes | Server | MobileFuse Support | N/A |
 | Mojiva | X | X |  | Yes | Server | Mojiva Support | N/A |
 | MoPub | X |  |  | No | SDK | [MoPub Support](https://dev.twitter.com/mopub/overview) | -MoPub iOS SDK<br> - MoPub Android SDK |

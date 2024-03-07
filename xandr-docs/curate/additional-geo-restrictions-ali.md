@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Additional geo restrictions
 
+> [!NOTE]
+> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal code for the purpose of personalizing advertising, segmenting, or profiling customers.
+
 In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.
 
 > [!WARNING]

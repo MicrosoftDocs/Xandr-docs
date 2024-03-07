@@ -21,8 +21,8 @@ Cases that open a browser will notify the caller via `onAdClicked` in Android 
 
 In the case of a native ad request:
 
-- Two URLs are returned: `click_url` and `click_url_fallback`. 
-    
+- Two URLs are returned: `click_url` and `click_url_fallback`.
+
     It is assumed that the caller will handle click-through URL(s) appropriately by displaying their contents to the user. The `click_url_fallback`, if defined, is used only if `click_url` cannot be resolved, for whatever reason, by the browser display system.
 - The listener/delegate callback method is: `onAdWasClicked(clickUrl, fallbackURL)` for Android; `adWasClickedWithURL:fallbackURL:` for iOS.
 

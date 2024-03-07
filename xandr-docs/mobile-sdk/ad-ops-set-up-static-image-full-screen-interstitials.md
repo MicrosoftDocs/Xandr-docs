@@ -11,7 +11,7 @@ This page has Ad Ops setup instructions for serving static image "full-screen" i
 
 For developer-focused interstitial documentation, see [Show Interstitials](show-interstitials-ads-on-ios.md).
 
-## [Creative settings](#tab/creative-settings)
+## [Creative settings]
 
 To set up your creative, first create a creative and then configure the settings listed below:
 
@@ -22,7 +22,7 @@ To set up your creative, first create a creative and then configure the setting
 
 :::image type="content" source="media/ad-ops-set-up-static-image.png" alt-text="A screenshot of the Template tab with the Template Option Details settings.":::
 
-## [Placement settings](#tab/placement-settings)
+## Placement settings
 
 To set up your placement,
 

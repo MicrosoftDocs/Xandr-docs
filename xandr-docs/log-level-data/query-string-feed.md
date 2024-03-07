@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 > [!IMPORTANT]
 > This feed has been deprecated as of January 2022.
 
-The Query String Feed provides data about the query strings that come in on your managed publishers' impressions. It contains one row for each sold impression that passes in a query string in the correct format. For more information on the required query string format, see [Query String Formatting Requirements](#query-string-formatting-requirements).
+The Query String Feed provides data about the query strings that come in on your managed publishers' impressions. It contains one row for each sold impression that passes in a query string in the correct format. For more information on the required query string format, see the [Query String Formatting Requirements](#query-string-formatting-requirements) section below.
 
 > [!NOTE]
 > You must be specially enabled to log query strings and receive this feed. This is true even if you already get a [Standard Feed](standard-feed.md). For more information contact your Xandr representative.

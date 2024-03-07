@@ -101,7 +101,7 @@ You can test that the mapping is working correctly by using a debug auction. Sen
 
 ### Example debug auction for a video impression using the OpenRTB protocol Expand source
 
-``` pre
+```
 $cat debug.json
 { 
         "id": { 

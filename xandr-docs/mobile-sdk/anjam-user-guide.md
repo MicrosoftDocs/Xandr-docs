@@ -22,6 +22,7 @@ All ANJAM functions are asynchronous. Any function that queries for a result wil
 > Using ANJAM/MRAID from within an iframe:
 >
 > In order for a creative to use ANJAM, MRAID from within an iFrame in the SDK (including when "Serve in iFrame" is checked), the creative needs to add this HTML snippet at the beginning:
+>
 > ```
 > <script src="https://acdn.adnxs.com/mobile/anjam/anjam.js"></script>
 > ```
@@ -72,7 +73,7 @@ See the documentation for `anjam.MayDeepLink()` for an example.
 ### anjam.ExternalBrowser(url)
 
 Allows the creative to override the SDK configuration and force the landing page to open in the device's native browser (as opposed to the
-default in-app browser). 
+default in-app browser).
 
 - `url`: A URL to open in the native platform browser. Similar to the `DeepLink()` call, but meant for launching web sites in the native browser.
 

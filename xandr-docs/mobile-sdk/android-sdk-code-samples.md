@@ -5,7 +5,7 @@ ms.custom: android-sdk
 ms.date : 10/28/2023
 ---
 
-# Android SDK Code Samples Overview
+# Android SDK code samples overview
 
 This section contains various code samples to help you in the development of your app.
 

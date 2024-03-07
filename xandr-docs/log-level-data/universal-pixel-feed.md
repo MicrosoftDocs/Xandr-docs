@@ -28,7 +28,7 @@ The columns below are listed in the same order in which they appear in the log-l
 
 | Column Index | Column Name | Type | Description |
 |---|---|---|---|
-| 01 | date_time | UNIX Epoch time | The time and date of the universal pixel fire. <br> (e.g., `1526057561` which would need to be translated to *Friday, May 11, 2018 4:52:41 PM (UTC)*.) <br> **Note**: <br> The EPOCH time is in **milliseconds format**, and not the standard EPOCH time. |
+| 01 | date_time | UNIX Epoch time | The time and date of the universal pixel fire. <br> (e.g., `1526057561` which would need to be translated to *Friday, May 11, 2018 4:52:41 PM (UTC)*.) <br><br> **Note**: The EPOCH time is in **milliseconds format**, and not the standard EPOCH time. |
 | 02 | pixel_uuid | string | The UUID of the universal pixel. |
 | 03 | user_id_64 | bigint | The Xandr 64-bit user ID (stored in the Xandr cookie store). <br> This field is `0` when: <br> - Xandr does not have a match for this user; or <br> - the user's browser doesn't accept cookies; or <br> - you do not have a legal basis to access and process personal data for an impression where GDPR applies <br> It will be `-1` for opt-out/non-consented users. |
 | 04 | url | string | The entire URL of the page the pixel is on. |

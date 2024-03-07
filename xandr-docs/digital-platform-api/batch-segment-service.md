@@ -77,7 +77,7 @@ The file upload URL is given in the JSON response to Step 1 by the field `upload
 > [!WARNING]
 > In order for the file to upload correctly, you *must* specify the MIME type in the HTTP header as "Content-Type: application/octet-stream"*.* *Do not* use "Content-Type: application/x-www-form-urlencode" (-d or --data flags in curl). Using an incorrect MIME type will prevent the file from being processed by the API Batch Segment Service.
 >
-> Your file must conform to the [Latin1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1) character set.
+> Your file must conform to the Latin1 character set.
 
 ```
 $ curl -v -H 'Content-Type:application/octet-stream' -b cookies -X POST --data-binary @segment_file "https://01.data-api.prod.adnxs.net/segment-upload/JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
@@ -294,7 +294,7 @@ phase": "completed",
 
 ## View your file upload history
 
-To see metadata about all of your segment file uploads within the last 30 days, make a `GET` call to the service with your `member_id` specified in the query string. The JSON response will include an array of `batch_segment_upload_job` objects. For more information about the specific fields of the `batch_segment_upload_job` object, see [JSON Fields](#json-fields).
+To see metadata about all of your segment file uploads within the last 30 days, make a `GET` call to the service with your `member_id` specified in the query string. The JSON response will include an array of `batch_segment_upload_job` objects. For more information about the specific fields of the `batch_segment_upload_job` object, see [JSON Fields](#json-fields) below.
 
 > [!NOTE]
 > File upload history is available for the last 30 days only.
@@ -353,13 +353,13 @@ m$ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 | Field | Type | Description |
 |---|---|---|
-| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See [Batch Segment Upload Job](#batch-segment-upload-job) for details. |
+| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See the [Batch Segment Upload Job](#batch-segment-upload-job) section below for details. |
 | `id` | int | This is the ID of the `batch_segment_upload_job` object associated with this request.<br> **Default**: An automatically generated number. |
 | `status` | string | The status of the API call; successful calls return `"OK"`. |
 
 ### Batch segment upload job
 
-When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata (For more information about the required sequence of requests, see [Add a Segment File for Processing](#add-a-segment-file-for-processing)).
+When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata. For more information about the required sequence of requests, see the [Add a Segment File for Processing](#add-a-segment-file-for-processing) section below.
 
 > [!NOTE]
 > Most metadata will only be present when `phase = "completed"`.
@@ -393,6 +393,6 @@ When you request the status of your processing job, the system returns a `batch_
 | `uploaded_time` | date | The time at which the file associated with this job ID was uploaded. |
 | `validated_time` | date | The time at which file validation was completed. |
 
-## Related topics
+## Related topic
 
 [Batch Segment Service - File Format](legacy-bss-file-format.md)

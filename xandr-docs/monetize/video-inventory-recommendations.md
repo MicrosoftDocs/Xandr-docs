@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Video Inventory Recommendations
-description: This page provides an overview on Video Inventory Recommendations. Video Inventory Recommendations are based on brand category-level data, the brand safety targeting, device type targeting, and country targeting specified on your line item and Inventory.   
+description: This page provides an overview on Video Inventory recommendations. Video Inventory recommendations are based on brand category-level data, the brand safety targeting, device type targeting, and country targeting specified on your line item and Inventory.   
 ms.date: 10/28/2023
 ---
 

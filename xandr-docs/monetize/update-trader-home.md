@@ -1,6 +1,6 @@
 ---
 title: Update Trader Home
-description: This page gives an overview on adding and removing cards using search and card settings in the Trader Home.  
+description: The cards in Trader Home display information about insertion orders important to you. This page gives an overview on adding and removing cards using search and card settings in the Trader Home.  
 ms.date: 10/28/2023
 ---
 

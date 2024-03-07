@@ -1,6 +1,6 @@
 ---
 title: Update Bias Rules
-description: This page provides an overview to update Bias Rules. Learn how to view, create, duplicate and delete bias rule details from the Bias Rule Manager Screen.
+description: This page provides an overview to update Bias Rules. Learn how to view, create, duplicate and delete bias rule details from the Bias Rule Manager screen.
 ms.date: 10/28/2023
 ---
 

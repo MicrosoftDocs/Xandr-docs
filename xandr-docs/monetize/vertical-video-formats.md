@@ -1,6 +1,6 @@
 ---
 title: Vertical Video Formats
-description: This page provides an overview on Vertical video formats and explains steps to setup a vertical video.   
+description: This page provides an overview on Vertical Video formats and explains steps to setup a Vertical Video.   
 ms.date: 10/28/2023
 ---
 

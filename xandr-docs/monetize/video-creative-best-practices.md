@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Video Creative Best Practices
+# Microsoft Monetize - Video creative best practices
 
 This page provides you with a list of best practices, in a question-answer format, to ensure maximum delivery and success for your VAST creatives on the Microsoft Advertising platform.
 

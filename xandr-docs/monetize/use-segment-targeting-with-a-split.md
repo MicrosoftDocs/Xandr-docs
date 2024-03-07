@@ -19,9 +19,8 @@ You can target splits based on segment presence/absence, age, or value.
     The **Edit Split** pane opens with the **Targeting** tab selected by default.
 1. In the **Segments** section, select **and** or leave **or** selected.
 1. Enter the segment ID in the search field, or select a segment from the menu that appears.
-1. Select **include**:::image type="content" source="media/splits-include.png" alt-text="Screenshot of splits include ."::: or **exclude**
-
-   :::image type="content" source="media/splits-exclude.png" alt-text="Screenshot of splits exclude .":::.
+1. Select **include**:::image type="content" source="media/splits-include.png" alt-text="Screenshot of splits include."::: or **exclude**
+   :::image type="content" source="media/splits-exclude.png" alt-text="Screenshot of splits exclude.":::.
 1. Click outside the search field to exit the segment grouping.
 1. Click the pencil icon to edit the segment's presence/absence, age, or value.
 1. Click **Add Another Group** to add another segment grouping.

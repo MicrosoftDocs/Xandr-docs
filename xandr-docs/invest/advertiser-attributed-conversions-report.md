@@ -50,8 +50,7 @@ Intervals determine how your data is grouped together into rows in the report re
 - Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
-- Cumulative: Data is grouped together in one figure, covering the
-  entire selected time range.
+- Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
 This report can retrieve data for the last 90 days.
 

@@ -22,7 +22,7 @@ Pulse is a feature on the [Campaigns](explore-campaigns.md) screen that provides
 
 It's easy to display Pulse metrics for your campaigns. From the **Campaigns** screen, click the **Pulse** button.
 
-:::image type="content" source="media/pulse-button.png" alt-text="Screenshot pulse button.":::
+:::image type="content" source="media/pulse-button.png" alt-text="Screenshot of pulse button.":::
 
 This reveals three columns - one containing sparklines, one containing spend in the last 60 seconds, and one containing impressions - that show how your campaigns are spending.
 

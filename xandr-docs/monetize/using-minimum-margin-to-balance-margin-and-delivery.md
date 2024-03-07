@@ -1,6 +1,6 @@
 ---
 title: Using Minimum Margin to Balance Margin and Delivery
-description: Learn how using minimum margin you can attain right balance between delivery and margin. This page explores steps to set up the line item so that you make as much margin as possible to deliver the budget in full.
+description: Learn how using minimum margin you can attain right balance between delivery and margin. This page explores steps to set up the line item so that you make as much margin as possible.
 ms.date: 10/28/2023
 ---
 
@@ -74,6 +74,6 @@ Line item: $5.00 CPM booked revenue and minimum margin of 20%
 
 Let's see what happens when this Campaign C bids on the three publishers.
 
-:::image type="content" source="media/min-margin-on-direct.png" alt-text="Screenshot of min margin on direct.":::
+:::image type="content" source="media/min-margin-on-direct.png" alt-text="Screenshot of Campaign C biding on the three publishers.":::
 
 Minimum Margin ensures that the direct campaign only serves on publishers where you will meet your minimum margin %.

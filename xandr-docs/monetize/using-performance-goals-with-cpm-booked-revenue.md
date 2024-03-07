@@ -36,7 +36,7 @@ First, you would set up a line item with a budget of $10,000 and a $1.00 CPM boo
 
 The setup would look something like this:
 
-:::image type="content" source="media/optimize-to-cpa.png" alt-text="Screenshot to Optimize to CPA.":::
+:::image type="content" source="media/optimize-to-cpa.png" alt-text="Screenshot to optimize to CPA.":::
 
 ### The results
 
@@ -76,7 +76,7 @@ Now let's take a look at our four optimized sites again, but this time buying wi
 
 ### The setup
 
-:::image type="content" source="media/optimize-to-margin.png" alt-text="Screenshot of Optimize to revenue.":::
+:::image type="content" source="media/optimize-to-margin.png" alt-text="Screenshot of optimize to revenue.":::
 
 ### The results
 
@@ -101,7 +101,7 @@ If you find that you are still not on track to deliver the full budget for the a
 
 With the two fields in the Performance Goals section of line item setup, you can easily increase your no-bid threshold while still tracking revenue at your client's stated CPA or CPC goal. In this scenario, you are making a strategic tradeoff between delivery and performance.
 
-:::image type="content" source="media/performance-goals.png" alt-text="Screenshot of Performance goals.":::
+:::image type="content" source="media/performance-goals.png" alt-text="Screenshot of performance goals.":::
 
 ### Trade margin for delivery
 
@@ -110,6 +110,6 @@ Adjusting the **Optimize to a % margin of booked revenue** field on the campaign
 > [!IMPORTANT]
 > You will soon be able to adjust your margin centrally on the line item for all associated campaigns.
 
-:::image type="content" source="media/margin.png" alt-text="Screenshot of Trade Margin for Delivery.":::
+:::image type="content" source="media/margin.png" alt-text="Screenshot of Trade Margin for delivery.":::
 
 By successfully managing tradeoffs between performance, margin and delivery, you can manage your line item to meet your clients' goals while also maximizing your margin.

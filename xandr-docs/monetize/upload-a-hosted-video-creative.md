@@ -1,25 +1,17 @@
 ---
 title: Microsoft Monetize - Upload a Hosted Video Creative
-description: In this page Learn how to upload VAST video creatives and other steps to work with this type of creative.  
+description: Learn how to upload VAST video creatives and other steps to work with this type of creative. This page is a step-by-step guide to add a creative, preview the creative and save the creative. 
 ms.date: 10/28/2023
 ---
 
 
 # Microsoft Monetize - Upload a hosted video creative
 
-Microsoft Advertising supports hosting VAST ([video ad serving template](https://www.iab.com/guidelines/vast/)) creatives.
-VAST is used to serve on in-stream and some non-linear placements, per
-publisher specifications. Microsoft Advertising currently
-supports VAST 2.0 and VAST 3.0. This page explains how to upload VAST
-video creatives and other considerations for working with this type of
-creative.
+Microsoft Advertising supports hosting VAST ([video ad serving template](https://www.iab.com/guidelines/vast/)) creatives. VAST is used to serve on in-stream and some non-linear placements, per publisher specifications. Microsoft Advertising currently supports VAST 2.0 and VAST 3.0. This page explains how to upload VAST video creatives and other considerations for working with this type of creative.
 
 ## Subscribing to video creative hosting
 
-If you are interested in hosting video creatives on
-Microsoft Advertising, please talk to your
-Microsoft Advertising representative about pricing, your use
-case, and technical specifics.
+If you are interested in hosting video creatives on Microsoft Advertising, please talk to your Microsoft Advertising representative about pricing, your use case, and technical specifics.
 
 > [!IMPORTANT]
 > Use of the Video Creative Hosting platform requires a contract addendum unless specified in your Master Services Agreement (MSA).
@@ -29,12 +21,10 @@ case, and technical specifics.
 - **Max Video File Size**: 100MB
 - **Minimum Bit Rate**: 2500kbps
 - **Minimum Size**: 1280x720px
-- **File Types**: x-flv, mp4, webm, x-ms-wmv, ogg, x-msvideo, mpeg,
-  quicktime, 3gpp, 3gpp2, x-m4v
+- **File Types**: x-flv, mp4, webm, x-ms-wmv, ogg, x-msvideo, mpeg, quicktime, 3gpp, 3gpp2, x-m4v
 
 > [!NOTE]
 > The letterbox is not cropped for standard size videos.
-
 
 ## Add a creative
 
@@ -49,22 +39,16 @@ case, and technical specifics.
 
 ### Step 1. Get started
 
-On the **Creative Manager** screen, click
-the **Create New** button, then select
-**Video**. The
-**Creative: New Creative** screen
-displays.
+On the **Creative Manager** screen, click the **Create New** button, then select **Video**. The **Creative: New Creative** screen displays.
 
 ### Step 2. Upload the file
 
-Select the **Hosted File** tab. Browse
-your computer, or drag and drop your file. For instructions about how to
-add a third-party hosted creative, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
+Select the **Hosted File** tab. Browse your computer, or drag and drop your file. For instructions about how to add a third-party hosted creative, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 **MP4**
 
 | Size (px) | Bit Rate (kbps) |
-|---|---|
+|--|--|
 | 1280x720 | 2500 |
 | 1280x720 | 1100 |
 | 1280x720 | 500 |
@@ -75,7 +59,7 @@ add a third-party hosted creative, see [Add a Creative](add-a-creative.md) and [
 **WebM**
 
 | Size (px) | Bit Rate (kbps) |
-|---|---|
+|--|--|
 | 1280x720 | 2000 |
 | 1280x720 | 600 |
 | 768x432 | 1500 |
@@ -84,92 +68,71 @@ add a third-party hosted creative, see [Add a Creative](add-a-creative.md) and [
 **Flash**
 
 | File Type | Size (px) | Bit Rate (kbps) |
-|---|---|---|
+|--|--|--|
 | x-flv | 768x432 | 1100 |
 | x-flv | 768x432 | 500 |
 
 ### Step 3. Preview the creative
 
-The creative preview is available for you to review once it is fully
-uploaded. You have the option to choose a different file, if required.
+The creative preview is available for you to review once it is fully uploaded. You have the option to choose a different file, if required.
 
 > [!NOTE]
 > **.mov** videos will only play in preview on the Safari browser.
 
 ### Step 4. Define the creative content
 
-The **Name** field is auto-populated with
-the name of your file. Enter a **Click-through URL** to redirect the
-user upon clicking.
+The **Name** field is auto-populated with the name of your file. Enter a **Click-through URL** to redirect the user upon clicking.
 
 ### Step 5. Select audit options
 
-On the **Creative Attributes** tab, select
-whether you want to submit the creative for
-Microsoft Advertising audit, classify the creative yourself, or
-exempt the creative from auditing entirely.
+On the **Creative Attributes** tab, select whether you want to submit the creative for Microsoft Advertising audit, classify the creative yourself, or exempt the creative from auditing entirely.
 
-- **Platform Audit** - Submit the creative for auditing by the
-  Microsoft Advertising audit team.  
-  Audit process includes:
+- **Platform Audit** - Submit the creative for auditing by the Microsoft Advertising audit team.
+
+    Audit process includes:
   - checking technical and content criteria
 
-  - offer type categorization to enable the seller protection features
-    on the platform
+  - offer type categorization to enable the seller protection features on the platform
 
   - requirements of sellers
 
-    Microsoft Advertising audit is mandatory but you can opt out
-    of other platform specific audits.
+    Microsoft Advertising audit is mandatory but you can opt out of other platform specific audits.
 
   - Select your audit **priority**.
 
     > [!NOTE]
     >  Business days are from 9:00pm Sunday to 11:59pm Friday ET.
 
-    For more information about content standards for creatives running
-    on the Microsoft Advertising platform, see [Creative Standards](creative-standards.md).
+    For more information about content standards for creatives running on the Microsoft Advertising platform, see [Creative Standards](creative-standards.md).
 
 - **Self-Audit** - Classify the creative yourself.
   
   > [!NOTE]
   > - Self-auditing may reduce access to inventory outside of the ones you manage or own, as many sellers allow only Microsoft Advertising audited creatives. For further guidance on self-classifying, see [Self-Auditing Creatives](self-auditing-creatives.md).
   > - You must check the **I confirm compliance** checkbox in order to save the creative.
- 
-- **No Audit** - An unaudited creative can run **only** on your managed
-  publishers. It will not be eligible to run on third-party inventory
-  unless the seller has opted into allowing unaudited creatives to run
-  on their inventory.
+
+- **No Audit** - An unaudited creative can run **only** on your managed publishers. It will not be eligible to run on third-party inventory unless the seller has opted into allowing unaudited creatives to run on their inventory.
 
 ### Step 6. Add companion banner creatives (optional)
 
-You can now add companion banners to your video creatives. Search for,
-and select banner ads that you have previously uploaded via the normal
-upload process.
+You can now add companion banners to your video creatives. Search for, and select banner ads that you have previously uploaded via the normal upload process.
 
 > [!NOTE]
 > You can only use banner creatives that have been previously uploaded.
 
 ### Step 7. Attach third-party and segment tracking pixels (optional)
 
-Microsoft Advertising records all impressions. If you wish to
-use another system to track impressions in addition, you can attach
-third-party tracking pixels to your creative.
+Microsoft Advertising records all impressions. If you wish to use another system to track impressions in addition, you can attach third-party tracking pixels to your creative.
 
-To attach an existing **third-party pixel** to this creative, select the
-type of pixel from the **Event** drop-down menu.
+To attach an existing **third-party pixel** to this creative, select the type of pixel from the **Event** drop-down menu.
 
 Enter **URLs** for each tracking pixel event.
 
-You can also attach **segment pixels** to your creative. Search for
-existing segment pixels and select from the list.
+You can also attach **segment pixels** to your creative. Search for existing segment pixels and select from the list.
 
 ### Step 8. Save the creative
 
-Once you have defined your creative and populated the associated fields
-as necessary, click **Save**. The creative
-will be listed under **Creatives** on the
-**Creative Manager** screen.
+Once you have defined your creative and populated the associated fields as necessary, click **Save**. The creative will be listed under **Creatives** on the **Creative Manager** screen.
 
 ## Related topics
 

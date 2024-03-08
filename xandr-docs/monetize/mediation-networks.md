@@ -19,8 +19,8 @@ To add a network:
 1. To select a supported network, choose one from the dropdown. Networks that have already been added are shown in gray and can't be added again For a list of supported networks, see [Mediation FAQs](mediation-faqs.md).
 1. If you want to integrate a mobile or web network that is not currently supported, select **Custom Mobile Network**, **Custom Web Network**, or **Custom Video Network**. Type a **Network Name** before saving. When you create a bid for this network, you will have to enter additional information about the custom network's ad placement ID and mobile advertising SDK (for a custom mobile network).
 
-> [!NOTE]
-> To change a custom network name, hover over a network in the **Network Name** list to make the **Edit** button appear. Click the button to display the Edit dialog box, then type the new name and click **Save**.
+   > [!NOTE]
+   > To change a custom network name, hover over a network in the **Network Name** list to make the **Edit** button appear. Click the button to display the Edit dialog box, then type the new name and click **Save**.
 
 ## Third-party reporting
 

@@ -25,8 +25,7 @@ A high number of present but malformed strings for a given publisher usually mea
 
 For more information about the IAB TCF, refer to the following resources:
 
-- [IAB Europe's TCF Policies](https://iabeurope.eu/iab-europe-transparency-consent-framework-policies/)
-- [IAB Europe's TCF Governance](https://iabeurope.eu/tcf-governance/)
+- [IAB Europe's TCF Policy & Governance](https://iabeurope.eu/category/policy/tcf-updates/)
 - [IAB Techlab TCF v1 and v2 Technical Spec & Implementation Guides](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework)
 - [IAB Techlab TCF RTB Spec](https://iabtechlab.com/wp-content/uploads/2018/02/OpenRTB_Advisory_GDPR_2018-02.pdf)
 

@@ -1,6 +1,6 @@
 ---
 title: Site Service
-description: Use the site service to group placements for management purposes, allowing ad quality and inventory categorization to be set at the site level.
+description: Use the Site service to group placements for management purposes, allowing ad quality and inventory categorization to be set at the site level.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -15,13 +15,13 @@ When you create a publisher, a site is automatically created. You can then modif
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/site?publisher_id=PUBLISHER_ID<br>(site JSON) | Add a site. |
-| `PUT` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>[https://api.appnexus.com/site?id=SITE_ID](https://api.appnexus.com/site?id=SITE_ID)<br>(site JSON) | Modify an existing site. |
-| `DELETE` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>[https://api.appnexus.com/site?code=SITE_CODE&publisher_code=PUBLISHER_CODE](https://api.appnexus.com/site?code=SITE_CODE&publisher_code=PUBLISHER_CODE) | Delete a site. |
-| `GET` | https://api.appnexus.com/site | View all sites for your publishers. |
-| `GET` | https://api.appnexus.com/site?publisher_id=PUBLISHER_ID | View all of the sites for one of your publishers. |
-| `GET` | https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID<br><br>[https://api.appnexus.com/site?id=SITE_ID](https://api.appnexus.com/site?id=SITE_ID) | View a specific site for one of your publishers. |
-| `GET` | https://api.appnexus.com/site?id=1,2,3 | View multiple sites by ID using a comma-separated list. |
+| `POST` | `https://api.appnexus.com/site?publisher_id=PUBLISHER_ID`<br>(site JSON) | Add a site. |
+| `PUT` | `https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID`<br><br>`https://api.appnexus.com/site?id=SITE_ID`<br>(site JSON) | Modify an existing site. |
+| `DELETE` | `https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID`<br><br>`https://api.appnexus.com/site?code=SITE_CODE&publisher_code=PUBLISHER_CODE` | Delete a site. |
+| `GET` | `https://api.appnexus.com/site` | View all sites for your publishers. |
+| `GET` | `https://api.appnexus.com/site?publisher_id=PUBLISHER_ID` | View all of the sites for one of your publishers. |
+| `GET` | `https://api.appnexus.com/site?id=SITE_ID&publisher_id=PUBLISHER_ID`<br><br>`https://api.appnexus.com/site?id=SITE_ID` | View a specific site for one of your publishers. |
+| `GET` | `https://api.appnexus.com/site?id=1,2,3` | View multiple sites by ID using a comma-separated list. |
 
 > [!NOTE]
 > `publisher_code` and `code` can be used interchangeably with `publisher_id` and `id`, respectively.

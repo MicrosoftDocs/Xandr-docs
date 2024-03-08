@@ -167,12 +167,12 @@ If your key was successfully registered, you'll receive a response similar to th
 
 ## Create a JWT signature
 
-**JWT generator pseudoCode examples**
+### JWT generator pseudoCode examples
 
 The examples below assume that the user has set certain variables to information specific to the key being used to authenticate with. For example, the `an_key_name` variable used for the `kid` header in the code below would hold the value of the `"name"` field used in the JSON object during registration of the public key with Xandr (see
 [Register Your Public Key](#register-your-public-key) above). The `username` variable used for the `sub` header value would map to the username associated with the key, etc.
 
-**Python example**
+### Python example
 
 ```
 # Generates the JWT signature, using the PyJWT library
@@ -192,7 +192,7 @@ jwt_signature = jwt.encode({
         )
 ```
 
-**NodeJS example**
+### NodeJS example
 
 ```
 var jwt = require('jsonwebtoken');

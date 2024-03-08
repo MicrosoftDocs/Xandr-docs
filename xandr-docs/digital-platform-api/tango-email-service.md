@@ -1,11 +1,11 @@
 ---
 title: Tango Email Service
-description: Use tango email and email template services to manage system emails for Tango without relying on API team for quick iteration and deployment of changes.
+description: Use the Tango Email and Email Template services to manage system emails for Tango without relying on API team for quick iteration and deployment of changes.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Tango email service
+# Tango Email service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -19,7 +19,7 @@ This service, used in combination with the [Email Template Service](./email-temp
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/tango-email<br>(`send_email` JSON) | Send a system email. |
+| `POST` | `https://api.appnexus.com/tango-email`<br>(`send_email` JSON) | Send a system email. |
 
 ## JSON fields
 

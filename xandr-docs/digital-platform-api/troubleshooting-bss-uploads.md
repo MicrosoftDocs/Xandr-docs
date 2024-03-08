@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Troubleshooting BSS Uploads
-description: Use the methods povided in this article to diagnose any problems with your segment data upload.
+description: Use the methods povided in this article to diagnose any problems with your segment data upload and troubleshoot them.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -221,7 +221,7 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/batch-segment/meta | Use this call to find out which fields you can filter and sort by. |
+| `GET` | `https://api.appnexus.com/batch-segment/meta` | Use this call to find out which fields you can filter and sort by. |
 
 | Fields | Type | Description |
 |:---|:---|:---|

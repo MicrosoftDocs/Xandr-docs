@@ -1,11 +1,11 @@
 ---
 title: Targeted Segment Analytics Report
-description: Use the targeted segment analytics report to identify the segments that are driving impressions, clicks, and conversions in in-flight campaigns.
+description: Use the Targeted Segment Analytics report to identify the segments that are driving impressions, clicks, and conversions in in-flight campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Targeted segment analytics report
+# Targeted Segment Analytics report
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -23,8 +23,7 @@ The **Targeted Segment Analytics** report is an admin-only report designed to gi
 
 This report's data is retained for 14 days, and is available in one day intervals. All dates and times are given in UTC.
 
-The `time_intervals` field in the request can be set to one of the following:
-- `last_14_days`
+The `time_intervals` field in the request can be set to `last_14_days`.
 
 ## Dimensions
 

@@ -28,16 +28,16 @@ For an list of changes from legacy to the current enhanced bidder profiles, plea
 ## REST API
 
 | HTTPS Method | Endpoint | Description |
-|---|---|---|
-| POST  | `https://api.adnxs.com/bidder-profile/BIDDER_ID` | Add a new profile |
-| PUT  | `https://api.adnxs.com/bidder-profile/BIDDER_ID/PROFILE_ID` | Modify an existing profile |
-| GET  | `https://api.adnxs.com/bidder-profile/BIDDER_ID` | To see all of the profiles attached to your bidder |
-| GET  | `https://api.adnxs.com/bidder-profile/BIDDER_ID/PROFILE_ID` | To see a specific profile attached to your bidder |
+|--|--|--|
+| POST | `https://api.adnxs.com/bidder-profile/BIDDER_ID` | Add a new profile |
+| PUT | `https://api.adnxs.com/bidder-profile/BIDDER_ID/PROFILE_ID` | Modify an existing profile |
+| GET | `https://api.adnxs.com/bidder-profile/BIDDER_ID` | To see all of the profiles attached to your bidder |
+| GET | `https://api.adnxs.com/bidder-profile/BIDDER_ID/PROFILE_ID` | To see a specific profile attached to your bidder |
 
 ## JSON fields
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `id` | int | The ID of the bidder profile. This is a read-only field. |
 | `bidder_id` | int | The ID of the bidder. This is a read-only field. |
 | `code` | string | The alternative identifier for the bidder profile, specific to the bidder. |
@@ -45,7 +45,7 @@ For an list of changes from legacy to the current enhanced bidder profiles, plea
 | `active` | Boolean | Indicates whether the profile has been activated. If false, this profile does not affect traffic sent to the bidder. |
 | `targeting` | object | The targeting rules for this bidder profile. For more details, see [Targeting](enhanced-bidder-profiles.md#targeting) below. |
 | `user_not_in_segment_action` | enum | If set to `include`: Impressions for all users are sent to the bidder.<br>If set to `exclud`: Only impressions where the user exists in a segment owned by or shared with the bidder are sent. QPS restrictions will apply to this field. The bidder doesn't have to explicitly state the segment in the segment actions.<br>**Note**: This field will be deprecated in favor of the `unknown_users_action`. |
-| `unknown_users_action` | enum | If set to `include`: Impressions for all users are sent to the bidder.<br>If set to `exclude`: Only impressions where the user has an in-house ID mapped in the Xandr cookie are sent. Mapping occurs when the bidder calls the setuid function. |  
+| `unknown_users_action` | enum | If set to `include`: Impressions for all users are sent to the bidder.<br>If set to `exclude`: Only impressions where the user has an in-house ID mapped in the Xandr cookie are sent. Mapping occurs when the bidder calls the setuid function. |  |
 | `non_audited_url_action` | enum | If set to `exclude`, all inventory that has not been audited by Xandr will be excluded. Otherwise, all inventory will be included. |
 
 ## Targeting
@@ -53,7 +53,7 @@ For an list of changes from legacy to the current enhanced bidder profiles, plea
 The targeting object contains the following fields.
 
 | Field | Type | Description |
-|---|---|---|
+|--|--|--|
 | `exchanges` | object | Exchanges and seller members included or excluded by this profile. For more details, see [Exchanges](enhanced-bidder-profiles.md#exchanges) below. |
 | `countries` | object | Countries included or excluded by this profile. For more details, see [Countries](enhanced-bidder-profiles.md#countries) below. |
 | `domain_lists` | object | Domain lists included or excluded by this profile. For more details, see [Domain Lists](enhanced-bidder-profiles.md#domain-lists) below. |
@@ -66,7 +66,7 @@ The targeting object contains the following fields.
 The exchanges object contains the following fields.
 
 | Field | Type | Description | Possible Values |
-|---|---|---|---|
+|--|--|--|--|
 | `action` | enum | Indicates whether the exchanges in the targets array (below) are included or excluded. | `include`, `exclude` |
 | `targets` | array of objects | List of exchanges included or excluded by the profile.<br>Refer to the [Exchange Service](exchange-service.md) documentation for more information about exchanges. | `{"id": 1}`, `{"id": 2}`, `{"id": 3}` |
 | `excluded_members` | array of objects | List of sellers that the bidder wants to exclude. Refer to the [Platform Member Service](platform-member-service.md) for a list of targetable members. | `{"id": 181}`, `{"id": 459}` |
@@ -77,7 +77,7 @@ The exchanges object contains the following fields.
 The countries object contains the following fields.
 
 | Field | Type | Description | Possible Values |
-|---|---|---|---|
+|--|--|--|--|
 | `action` | enum | Indicates whether the countries in the targets array (below) are included or excluded. | `include`, `exclude` |
 | `targets` | array of objects | List of countries included or excluded by the profile.. Refer to the [Country Service](country-service.md) for a list of targetable countries. | `{"id": 233}`, `{"id": 80}` |
 
@@ -86,7 +86,7 @@ The countries object contains the following fields.
 The domain lists object contains the following fields.
 
 | Field | Type | Description | Possible Values |
-|---|---|---|---|
+|--|--|--|--|
 | `action` | enum | Indicates whether the domain lists in the targets array (below) are in allowlists or blocklists. | `include`, `exclude` |
 | `targets` | array of objects | List of domain lists included or excluded by the profile. The domain list type does not affect how targeting is applied; use action to configure allowlists or blocklists. Refer to the [Domain List Service](domain-list-service.md) for a list of targetable domain lists. | `{"id": 12345}`, `{"id": 34567}` |
 
@@ -106,7 +106,7 @@ The ad types object contains the following fields. For more information on Ad Ty
 The banner object contains the following fields.
 
 | Field | Type | Description | Possible Values |
-|---|---|---|---|
+|--|--|--|--|
 | `action` | enum | Indicates whether banner-eligible impressions are included or excluded. | `include`, `exclude` |
 | `sizes` | array of objects | List of banner ad sizes included in targeting. Creative sizes cannot be excluded. | `{"width": 300, "height": 250}`, `{"width": 728, "height": 90}` |
 
@@ -115,7 +115,7 @@ The banner object contains the following fields.
 The video object contains the following fields.
 
 | Field | Type | Description | Possible Values |
-|---|---|---|---|
+|--|--|--|--|
 | `action` | enum | Indicates whether video-eligible impressions are included or excluded. | `include`, `exclude` |
 
 ### Native
@@ -131,7 +131,7 @@ The native object contains the following fields.
 The audio object contains the following fields.
 
 | Field | Type | Description | Possible Values |
-|---|---|---|---|
+|--|--|--|--|
 | `action` | enum | Indicates whether audio-eligible impressions are included or excluded. | `include`, `exclude` |
 
 ## Supply types

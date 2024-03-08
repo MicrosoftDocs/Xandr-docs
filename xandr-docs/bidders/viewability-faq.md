@@ -97,20 +97,17 @@ Our viewability script does not measure impression type blank, and default.
 
 ### What can I do to improve measurement rates?
 
-Publishers should use javascript tags or "friendly" IFrames wherever possible. When the viewability script is served into "unfriendly" iFrames, the requirement for Flash (particular on mobile) will decrease
-measurement success.
+Publishers should use javascript tags or "friendly" IFrames wherever possible. When the viewability script is served into "unfriendly" iFrames, the requirement for Flash (particular on mobile) will decrease measurement success.
 
 ### At what point does Xandr's viewability script start measuring? Will the script wait for the creative to load before measuring?
 
-Our viewability script waits for the creative content to load before measuring for viewability. This may be a source of discrepancies with other measurement vendors, in particular when the creative content is a
-large file.
+Our viewability script waits for the creative content to load before measuring for viewability. This may be a source of discrepancies with other measurement vendors, in particular when the creative content is a large file.
 
 ### Will Xandr's viewability script slow down my page load or otherwise impact my page content?
 
 No. The size of the script is approximately 20KB, and it is served from a globally distributed CDN, optimized for speed and reliability. All calls made by the script are made asynchronously.
 
-The script is tested continuously across all major browsers and operating systems to ensure, among other things, that it does not impact the page content. The script has been in use for many years, and we have
-drawn on all of that experience to ensure that we do not interfere with the user's experience.
+The script is tested continuously across all major browsers and operating systems to ensure, among other things, that it does not impact the page content. The script has been in use for many years, and we have drawn on all of that experience to ensure that we do not interfere with the user's experience.
 
 ### What does Xandr's viewability script monitor for in order to measure viewability?
 

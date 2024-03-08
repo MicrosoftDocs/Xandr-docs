@@ -1,6 +1,6 @@
 ---
 title: DV360 Buying Guide
-description: Direct publishers and buyers to connect on DV360, facilitating inventory access and targeting for efficient communication and optimization.
+description: Explore efficient connection on DV360, linking publishers and buyers for streamlined communication and optimization through inventory access and targeting.
 ms.date: 10/28/2023
 ---
 # DV360 buying guide

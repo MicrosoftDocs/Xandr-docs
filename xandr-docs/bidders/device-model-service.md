@@ -23,18 +23,18 @@ Mobile devices are categorized by make and model, where make is generally the ma
 ## JSON fields
 
 | Field | Type | Description |
-|---|---|---|
-| `codes`| array of objects |Third-party representations for the device model. See [Codes](device-model-service.md#codes) below for more details.|
-|`device_make_id`| int |The ID of the device make to which the model belongs. For example, the `iPhone` device model would belong to the `Apple` device make.|
-|`device_make_name`| string | The name of the device make to which the model belongs. |
-|`device_type`| enum | The type of device. Possible values: `pc`, `phone`, `tablet`, `tv`, `gameconsole`, `stb`, `mediaplayer`|
-|`id`| int | The ID of the device model. |
-|`name`| string | The name of the device model (such as `iPhone`).|
-|`screen_height`| int | The height of the screen on the device. |
-|`screen_width`| int | The width of the screen on the device. |
-| `supports_cookies` | Boolean | **Not yet available**. If `true`, the device supports cookies. If null, Xandr does not know whether or not the device supports cookies.|
+|--|--|--|
+| `codes` | array of objects | Third-party representations for the device model. See [Codes](device-model-service.md#codes) below for more details. |
+| `device_make_id` | int | The ID of the device make to which the model belongs. For example, the `iPhone` device model would belong to the `Apple` device make. |
+| `device_make_name` | string | The name of the device make to which the model belongs. |
+| `device_type` | enum | The type of device. Possible values: `pc`, `phone`, `tablet`, `tv`, `gameconsole`, `stb`, `mediaplayer` |
+| `id` | int | The ID of the device model. |
+| `name` | string | The name of the device model (such as `iPhone`). |
+| `screen_height` | int | The height of the screen on the device. |
+| `screen_width` | int | The width of the screen on the device. |
+| `supports_cookies` | Boolean | **Not yet available**. If `true`, the device supports cookies. If null, Xandr does not know whether or not the device supports cookies. |
 | `supports_flash` | Boolean | **Not yet supported**. If `true`, the device supports Flash creatives. If null, Xandr does not know whether or not the device supports Flash. |
-| `supports_geo` | Boolean | **Not yet available**. If `true`, the device can pass the latitude and longitude of users, when GPS data is available.  |
+| `supports_geo` | Boolean | **Not yet available**. If `true`, the device can pass the latitude and longitude of users, when GPS data is available. |
 | `supports_html_audio` | Boolean | **Not yet available**. If `true`, the device supports HTML audio creatives. If null, Xandr does not know whether or not the device supports HTML audio. |
 | `supports_html_video` | Boolean | **Not yet available**. If `true`, the device supports HTML video creatives. If null, Xandr does not know whether or not the device supports HTML video. |
 | `supports_js` | Boolean | **Not yet available**. If `true`, the device supports JavaScript creatives. If null, Xandr does not know whether or not the device supports JavaScript. |

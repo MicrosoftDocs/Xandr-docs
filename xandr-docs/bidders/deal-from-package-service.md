@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal From Package Service
-description: Choose packages via package buyer access, create deals using deal from package service—streamlining buyer-seller transactions.
+description: Explore packages, select via buyer access, create deals with package service, streamlining buyer-seller transactions.
 ms.date: 10/28/2023
 ---
 
@@ -19,7 +19,7 @@ Once you have generated a deal, you can view deal details including description 
 ## JSON fields
 
 | Name | Type | Description |
-|---|---|---|
+|--|--|--|
 | `id` | int | The ID of the deal creation record.<br> - **Default**: auto-generated number. |
 | `package_id` | int | The ID of the package from which you are generating a deal. You can use the [Package Buyer Access](package-buyer-access-service.md) Service to get package IDs.<br> - **Required On**: POST. |
 

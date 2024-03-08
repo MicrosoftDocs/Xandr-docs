@@ -1,6 +1,6 @@
 ---
 title: URL Service
-description: Replace deprecated URL service in Bidders and switch to Content Category Service.
+description: Explore updating Bidders, replacing deprecated URL service, and switching to Content Category Service.
 ms.date: 10/28/2023
 ---
 

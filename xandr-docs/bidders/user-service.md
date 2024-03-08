@@ -17,11 +17,11 @@ manage who has access to Xandr's APIs. Users are classified as by a user type of
 ## REST API
 
 | HTTP Method | Endpoint | Description |
-|---|---|---|
-| GET |`https://api.adnxs.com/user`| View all the users that you have created. |
-| GET | `https://api.adnxs.com/user/USER_ID`| View a particular user. |
+|--|--|--|
+| GET | `https://api.adnxs.com/user` | View all the users that you have created. |
+| GET | `https://api.adnxs.com/user/USER_ID` | View a particular user. |
 | POST | `https://api.adnxs.com/user` (user JSON) | Add a user. |
-| PUT |`https://api.adnxs.com/user/USER_ID` (user JSON) | Modify an existing user. |
+| PUT | `https://api.adnxs.com/user/USER_ID` (user JSON) | Modify an existing user. |
 
 To delete an existing user:  
 DELETE [https://api.adnxs.com/user/USER_ID](https://api.adnxs.com/user/USER_ID)

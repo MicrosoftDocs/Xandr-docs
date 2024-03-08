@@ -1,6 +1,6 @@
 ---
 title: December 13, 2016 - Breaking Change to Replace sizes with format on Bid Requests
-description: Explore bid request transformation and replace sizes with formats for breaking change in bid requests.
+description: Explore transforming bid requests, replacing sizes with formats for a significant change in bid requests, aligning with OpenRTB standards.
 ms.date: 10/28/2023
 ---
 

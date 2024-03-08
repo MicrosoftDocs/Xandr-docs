@@ -51,7 +51,7 @@ Placement tag macros can be used for sending page-level data to non-Microsoft Ad
 
     For more information, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
-1. Inside the **Tag** text area, enter the JavaScript that you would like to use to generate yourcreative.
+1. Inside the **Tag** text area, enter the JavaScript that you would like to use to generate your creative.
 
     The macro text "variables" available for your use include:
     - `${PT0}`

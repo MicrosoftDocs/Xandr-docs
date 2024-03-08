@@ -10,7 +10,7 @@ When a conversion pixel fires, Microsoft Advertising determines if the conversio
 
 The Attributed Conversions Report lets you see conversion pixel IDs, order IDs, when clicks or impressions were attributed, and other information related to your advertisers' attributed conversions.
 
-## Time Frame
+## Time frame
 
 All dates and times are given in UTC.
 

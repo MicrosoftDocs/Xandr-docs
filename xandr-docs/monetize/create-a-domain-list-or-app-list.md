@@ -29,24 +29,11 @@ You can create a new domain list or app list by uploading a text file, or by ent
 > [!NOTE]
 >
 > - Domains and subdomains must be separated by a comma, space, or line break. See below for [examples for domains and subdomains formatting](#examples-for-domains-and-subdomains-formatting).
-> - Wildcards (for example, `msn.*`) are not allowed in domain lists.
->   However, a top-level domain (TLD) can be added to a domain list by
->   entering it into the domain list text field without leading periods.
->   For example, to block the `.fr` domain, add `fr` without the period to
->   the list.
-> - To restrict or include an entire TLD, enter that TLD in your list. Do
->   not include the leading period "." For example, if you want to serve
->   on any site in the `.de` TLD, you should add `de` (with no leading
->   period) to your allowlist.
-> - You can only target domains (`test4.com`) or sub-domains
->   (`review.test4.com`); you can't target specific directories within
->   domains. For example, targeting `test4.com/review` is not supported.
-> - If you target a domain, it automatically targets all subdomains. For
->   example, targeting `test4.com` automatically targets
->   `review.test4.com.`
-> - Domains which begin with `"www"` will have the `"www"` substring
->   stripped out before being stored in our system. For example,
->   `"www.example.org"` will be shortened to `"example.org"`.
+> - Wildcards (for example, `msn.*`) are not allowed in domain lists. However, a top-level domain (TLD) can be added to a domain list by entering it into the domain list text field without leading periods. For example, to block the `.fr` domain, add `fr` without the period to the list.
+> - To restrict or include an entire TLD, enter that TLD in your list. Do not include the leading period "." For example, if you want to serve on any site in the `.de` TLD, you should add `de` (with no leading period) to your allowlist.
+> - You can only target domains (`test4.com`) or sub-domains (`review.test4.com`); you can't target specific directories within domains. For example, targeting `test4.com/review` is not supported.
+> - If you target a domain, it automatically targets all subdomains. For example, targeting `test4.com` automatically targets `review.test4.com.`
+> - Domains which begin with `"www"` will have the `"www"` substring stripped out before being stored in our system. For example, `"www.example.org"` will be shortened to `"example.org"`.
 
 ### Examples for domains and subdomains formatting
 

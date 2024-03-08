@@ -41,8 +41,7 @@ Second, inventory available on our platform may be tagged with content categorie
 
 Microsoft Advertising works hard to create a safe and trusted ad marketplace. We use various methods to continuously monitor traffic that passes through our impression bus, whether it comes from Microsoft Advertising tags, white-labeled tags, or third-party ad tags. This includes, but is not limited to, direct publisher relationships and media buys placed with other ad servers, networks, platforms and supply sources.
 
-In applying content policies, we do not differentiate between inventory that is monetized by the owning member or that is resold via the
-platform.
+In applying content policies, we do not differentiate between inventory that is monetized by the owning member or that is resold via the platform.
 
 Except for creatives banned by our [Part of Service Policies](../policies-regulations/index.yml), networks may run any creatives on their own inventory regardless of audit status (for more information, see [Creative Standards](creative-standards.md)). To allow this, under the Ad Quality manager for each publisher, leave **"Ban unaudited creatives for direct advertisers"** unchecked.
 
@@ -62,7 +61,7 @@ Domains listed as "unauditable" will be available for managed line items, any bu
 
 - **Website has no ads on page**: Sites that contain no visible ad units.
 
-  To contest the audit status of a site, contact us via [Customer Support](https://help.xandr.com/) and select "**Inventory Quality**" as the request type. In the request, please detail your relationship with the publisher and add a brief description of why you believe the site has not been audited correctly. 
+  To contest the audit status of a site, contact us via [Customer Support](https://help.xandr.com/) and select "**Inventory Quality**" as the request type. In the request, please detail your relationship with the publisher and add a brief description of why you believe the site has not been audited correctly.
 
 ## Inventory categorization standards
 
@@ -78,8 +77,7 @@ These are qualities of a site or page that advertisers may wish to exclude. We e
 - **Incentivized clicks**: Sites or parts of sites containing content, such as links, to be clicked on by live users who subsequently receive some reward or incentive.
 - **Non-English languages**: Sites where a significant portion of the text appears in a language other than English, and the site appears targeted to a non-English-speaking audience.
 - **Streaming media**: Sites or parts of sites containing streaming music or embedded videos or flash games.
-- **Toolbars, plug-ins or extensions**: Ad-supported browser plug-in inventory installed with user consent. More information on compliant
-  toolbars can be found in our [Part of Service Policies](../policies-regulations/index.yml).
+- **Toolbars, plug-ins or extensions**: Ad-supported browser plug-in inventory installed with user consent. More information on compliant toolbars can be found in our [Part of Service Policies](../policies-regulations/index.yml).
 - **Contextual nudity**: Non-sexual, non-vulgar nudity that appears as an incidental aspect of the site without being the focus of it.
 
 ### Intended audience

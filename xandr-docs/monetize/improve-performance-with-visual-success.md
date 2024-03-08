@@ -26,7 +26,7 @@ To access the **Insertion Order Details** screen, go to **Advertiser** > **Inser
 
 **Visual Success** features appear at the top of the screen.
 
-:::image type="content" source="media/vswithbillingperiods.png" alt-text="A screenshot of the Visual Success features for insertion orders.":::
+:::image type="content" source="media/vswithbillingperiods.png" alt-text="Screenshot of the Visual Success features for insertion orders.":::
 
 **Select a quickstats interval** to view the corresponding Visual Success data.
 
@@ -36,7 +36,7 @@ To access the **Line Item Details** screen, go to **Advertiser** > **Line Items*
 
 **Visual Success** features appear at the top of the screen.
 
-:::image type="content" source="media/vslineitem.png" alt-text="A screenshot of the Visual Success features for line items.":::
+:::image type="content" source="media/vslineitem.png" alt-text="Screenshot of the Visual Success features for line items.":::
 
 Select a quickstats interval to view the corresponding Visual Success data.
 
@@ -44,7 +44,7 @@ Select a quickstats interval to view the corresponding Visual Success data.
 
 Within the line item **Visual Success** screen, you can also see the history of changes that were made to the line item. Each blue square indicates when a change was made. Click on any of the blue squares to view the **Change History** panel which contains a list of changes made on that day.
 
-:::image type="content" source="media/change_log_visual_success.png" alt-text="A screenshot of the Change History panel on the Visual Success screen for line items.":::
+:::image type="content" source="media/change_log_visual_success.png" alt-text="Screenshot of the Change History panel on the Visual Success screen for line items.":::
 
 You can also expand each of the plus signs in the **Change History** panel to show details of what was changed.
 
@@ -91,20 +91,20 @@ Similarly, if you are spending far above or below the needed daily budget for th
 
 Sudden, sharp changes in average CTR, CPC, or CPA may indicate a problem. Check targeting, frequency capping, and other settings that limit the circumstances in which the line item can spend.
 
-:::image type="content" source="media/vstroubleshootperformance.png" alt-text="A screenshot of a sudden drop in performance for a line item.":::
+:::image type="content" source="media/vstroubleshootperformance.png" alt-text="Screenshot of a sudden drop in performance for a line item.":::
 
 > [!TIP]
 > **View Visual Success details**
-> 
+>
 > You can view specific details down to the day by hovering over one of the graphics to show exact flight, delivery, performance, and margin for that date.
-> 
-> :::image type="content" source="media/vsdetails.png" alt-text="A screenshot that shows how to view specific details for a line item.":::
-> 
+>
+> :::image type="content" source="media/vsdetails.png" alt-text="Screenshot that shows how to view specific details for a line item.":::
+>
 > **View Daily Delivery recommendations**
-> 
+>
 > You can check how many imps or how much spend is needed per day remaining in the flight to ensure full delivery.
-> 
-> :::image type="content" source="media/vsdetails-b.png" alt-text="A screenshot that shows how to view daily delivery recommendations for a line item.":::
+>
+> :::image type="content" source="media/vsdetails-b.png" alt-text="Screenshot that shows how to view daily delivery recommendations for a line item.":::
 
 ## Related topics
 

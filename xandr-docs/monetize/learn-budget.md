@@ -33,7 +33,7 @@ You can also set a daily cap amount, indicating the maximum amount of the budget
 
 We recommend using the learn budget in various ways, depending on where a campaign is in its lifecycle.
 
-:::image type="content" source="media/learn-budget.png" alt-text="A diagram that shows a graph of time against spend for a campaign.":::
+:::image type="content" source="media/learn-budget.png" alt-text="Diagram that shows a graph of time against spend for a campaign.":::
 
 ### 100% learn budget
 

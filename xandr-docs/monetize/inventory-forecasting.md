@@ -27,8 +27,7 @@ Click **Check Availability** to open the **Forecasting** pane. This pane shows y
 
 :::image type="content" source="media/gdli-availability.png" alt-text="Screenshot that shows the components of the Forecasting pane.":::
 
-For line items with a vCPM revenue type, the availability and contention forecast numbers are based on viewable impressions. For more
-information, see [Introduction to Viewability](introduction-to-viewability.md).
+For line items with a vCPM revenue type, the availability and contention forecast numbers are based on viewable impressions. For more information, see [Introduction to Viewability](introduction-to-viewability.md).
 
 ## Types of inventory forecasting
 

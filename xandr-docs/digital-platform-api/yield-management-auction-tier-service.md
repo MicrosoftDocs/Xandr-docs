@@ -37,9 +37,9 @@ The Yield Management Auction Tier Service allows you to modify the standard auct
 | `min_price` | decimal | The minimum price that must be bid by the members in the `buyer_members` array for inclusion in this tier. This can be `null` if the `member_action` is set to `"exclude"`.<br><br>**Note:** Whether a buyer has met the value of `min_price` is checked *after* AppNexus' revenue sharing fee has been removed; in other words, `min_price` is checked against their net bid. For example, if you've set `min_price` to `$2.00`, and the buyer bids `$2.00`, their net bid may be reduced to `$1.70`. This would mean they do not qualify for the tier. The solution is for buyers to take into account their revenue sharing agreement with AppNexus when submitting bids for inclusion in tiers.<br><br>**Default:** `null` |
 | `member_action` | enum | This setting determines what action is to be taken against the `buyer_members` array. Permissible values are `"include"` and `"exclude"`.<br>**Default:** `exclude` |
 | `member_id` | int | This is your member ID. |
-| `buyer_members` | array of objects | This array includes the buyers you're targeting for inclusion or exclusion in this Auction Tier. For details, see the [Buyer Members Array](#the-buyer-members-array) below.<br>**Default:** `null` |
+| `buyer_members` | array of objects | This array includes the buyers you're targeting for inclusion or exclusion in this Auction Tier. For details, see the [Buyer Members Array](#buyer-members-array) below.<br>**Default:** `null` |
 
-### The buyer members array
+### Buyer members array
 
 | Field | Type | Description |
 |:---|:---|:---|

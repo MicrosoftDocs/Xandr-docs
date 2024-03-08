@@ -64,9 +64,7 @@ public void loadLazyAd()
 
 ### onLazyAdLoaded
 
-**onLazyAdLoaded** is fired when the **loadAd** method successfully returns a lazy loaded AdUnit, that is an AdUnit with an unallocated
-webview. All other features of the AdUnit instance are available, including a populated instance of **ANAdResponseInfo**. If **loadAd**
-fails, then the same callbacks are used as for an AdUnit that was not lazy loaded.
+**onLazyAdLoaded** is fired when the **loadAd** method successfully returns a lazy loaded AdUnit, that is an AdUnit with an unallocated webview. All other features of the AdUnit instance are available, including a populated instance of **ANAdResponseInfo**. If **loadAd** fails, then the same callbacks are used as for an AdUnit that was not lazy loaded.
 
 ```
 public void onLazyAdLoaded(AdView adView)

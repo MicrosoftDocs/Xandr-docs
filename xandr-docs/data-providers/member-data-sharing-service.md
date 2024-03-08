@@ -25,14 +25,14 @@ The Member Data Sharing Service allows you to share your segments with other pla
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.adnxs.com/member-data-sharing](https://api.adnxs.com/member-data-sharing) | View all of your existing sharing records. |
-| `GET` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID) | View a specific sharing record. |
-| `GET` | [https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID)<br>where `data_member_id` = your member ID, and `buyer_member_id` = the recipient's member ID | Retrieve the sharing record ID using member ID's. |
-| `POST` | [https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID](https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID) <br>(sharing JSON)<br><br>**Note:** The member-data-sharing object cannot be an array if singular. | Create one sharing record to share segments with one member. |
-| `POST` | [https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID](https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID)<br>(sharing JSON)<br><br>**Note:** The member-data-sharings (plural) object must be an array if plural. | Create multiple sharing records to share segments with multiple members. |
-| `PUT` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID)<br><br>**Note:**<br> - This method removes all existing segments, replacing the segments with only the newly specified list.<br> - To remove one or more segments from a list, you must replace the entire list with your intended segments. | Replace the list of segments shared within a sharing record. |
-| `PUT` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true](https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true)<br><br>**Note:** Segments can only be added to the list using the "append" flag, and not deleted. | Appending segments from shared segment list within a sharing record. |
-| `DELETE` | [https://api.adnxs.com/member-data-sharing?id=RECORD_ID](https://api.adnxs.com/member-data-sharing?id=RECORD_ID) | Delete a sharing record. |
+| `GET` | `https://api.adnxs.com/member-data-sharing` | View all of your existing sharing records. |
+| `GET` | `https://api.adnxs.com/member-data-sharing?id=RECORD_ID` | View a specific sharing record. |
+| `GET` | `https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID&buyer_member_id=CLIENT_MEMBER_ID`<br>where `data_member_id` = your member ID, and `buyer_member_id` = the recipient's member ID | Retrieve the sharing record ID using member ID's. |
+| `POST` | `https://api.adnxs.com/member-data-sharing?data_member_id=MEMBER_ID` <br>(sharing JSON)<br><br>**Note:** The member-data-sharing object cannot be an array if singular. | Create one sharing record to share segments with one member. |
+| `POST` | `https://api.adnxs.com/member-data-sharings?data_member_id=MEMBER_ID`<br>(sharing JSON)<br><br>**Note:** The member-data-sharings (plural) object must be an array if plural. | Create multiple sharing records to share segments with multiple members. |
+| `PUT` | `https://api.adnxs.com/member-data-sharing?id=RECORD_ID`<br><br>**Note:**<br> - This method removes all existing segments, replacing the segments with only the newly specified list.<br> - To remove one or more segments from a list, you must replace the entire list with your intended segments. | Replace the list of segments shared within a sharing record. |
+| `PUT` | `https://api.adnxs.com/member-data-sharing?id=RECORD_ID&append=true`<br><br>**Note:** Segments can only be added to the list using the "append" flag, and not deleted. | Appending segments from shared segment list within a sharing record. |
+| `DELETE` | `https://api.adnxs.com/member-data-sharing?id=RECORD_ID` | Delete a sharing record. |
 
 > [!TIP]
 > JSON Structure:

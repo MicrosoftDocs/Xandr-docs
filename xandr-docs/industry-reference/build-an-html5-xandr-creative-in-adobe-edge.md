@@ -33,7 +33,7 @@ This guide explains how to use Adobe Edge to build HTML5 creatives that will pro
 
 1. From the **Library** panel, in the **Scripts** drop-down, click **Add JS File from URL..**. Paste [https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js](https://acdn.adnxs.com/html5-lib/1.3.0/appnexus-html5-lib.min.js) into the field and click **OK**.
 
-    :::image type="content" source="media/library-panel.png" alt-text="Screenshot of the Library Panel.":::
+    :::image type="content" source="media/library-panel.png" alt-text="Screenshot of the Library panel.":::
 
     > [!TIP]
     > Use https to ensure the creative can serve on secure inventory.

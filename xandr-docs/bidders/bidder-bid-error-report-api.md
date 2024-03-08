@@ -60,11 +60,11 @@ To run a report for a custom time frame, set the `start_date` and `end_date`�
 |:---|:---|:---|:---|:---|
 | `error_count` | int | `2340` | sum(error_count)*100 | The amount of errors logged on the Xandr platform over the timeframe selected (a randomly selected set of 1% of the errors multiplied by 100 to account for the sampling). |
 
-## Example
+## Examples
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` `bidder_bid_error_report`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](../digital-platform-api/report-service.md).
+The JSON file should include the `report_type` `bidder_bid_error_report`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](../digital-platform-api/report-service.md).
 
 ```
 $ cat bidder_bid_error

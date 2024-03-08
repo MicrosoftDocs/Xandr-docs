@@ -221,8 +221,7 @@ Furthermore, for interstitial adaptors, a failed attempt to show() should call:
 
 ## Optional callbacks
 
-The callbacks listed below should be implemented in custom adaptors for both banners and interstitials. Note that they are not strictly
-required.
+The callbacks listed below should be implemented in custom adaptors for both banners and interstitials. Note that they are not strictly required.
 
 - `- (void)adWasClicked`: The ad was clicked by the user while being displayed by the mediated SDK.
 - `- (void)willPresentAd`: The user interacts with the ad and the mediated SDK is about to present a modal view.

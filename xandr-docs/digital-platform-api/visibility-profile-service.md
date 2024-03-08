@@ -369,9 +369,7 @@ $ curl -b cookies -X POST -d @visibility_profile 'https://api.appnexus.com/visib
 
 ### Modify visibility profile 1818
 
-In this example, the `PUT` request updates visibility profile 1818 to allow only custom content category 24214 to be passed in your bid
-requests. This applies to all Xandr platform members and external bidders except platform member 9, whose visibility is defined separately
-(see `{{buyer_members}}` array in the response).
+In this example, the `PUT` request updates visibility profile 1818 to allow only custom content category 24214 to be passed in your bid requests. This applies to all Xandr platform members and external bidders except platform member 9, whose visibility is defined separately (see `{{buyer_members}}` array in the response).
 
 ```
 $ cat visibility_profile_update

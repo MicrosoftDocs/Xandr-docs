@@ -67,11 +67,9 @@ Adaptive pacing controls a line item's pacing and prevents overpaying. Using the
 
 ### Component model types and default values
 
-Before explaining how the Expected Value is calculated for each Goal Type, it will be important to note the different types of Component
-Models available to associate with [Augmented Line Items](ali-workflow-with-custom-models.md).  
+Before explaining how the Expected Value is calculated for each Goal Type, it will be important to note the different types of Component Models available to associate with [Augmented Line Items](ali-workflow-with-custom-models.md).  
   
-These are the current model types that are supported. They can be represented as either a Bonsai decision tree or a Logistic Regression
-model.
+These are the current model types that are supported. They can be represented as either a Bonsai decision tree or a Logistic Regression model.
   
 In the case that an eligible Component Model is not included for the Expected Value calculation - as described in the sections below - a default value will be provided by Xandr.
 

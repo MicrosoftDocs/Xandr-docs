@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal Sync with DV360 - FAQ
-description: The article provides answers to frequently asked questions (FAQs) regarding Deal Sync with DV360.
+description: Explore Deal Sync with DV360 FAQs. Beta product for selected sellers testing. Contact account representative to participate.
 ms.date: 10/28/2023
 ---
 

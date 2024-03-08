@@ -1,6 +1,6 @@
 ---
 title: Exchange Service
-description: Simplify bidder profiles, highlight group targeting, and streamline updates. Access premium publishers collectively with Supply targeting.
+description: Explore seller groups for efficient supply targeting, effortlessly target inventory, combine domain and member targeting, exclude/include members individually.
 ms.date: 10/28/2023
 
 ---

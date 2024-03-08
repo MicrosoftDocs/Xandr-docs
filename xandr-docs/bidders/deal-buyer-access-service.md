@@ -41,7 +41,7 @@ This read-only service lets bidders view information about the negotiated deals 
 | `id` | int | The ID of the deal. This is the field you will receive on the bid request. **Note**: If you set up a deal with an external seller and funnel it through Xandr, we will turn their code into this ID. |
 | `last_modified` | timestamp | The date and time when the deal was last modified. |
 | `name` | string (255) | The name of the deal. |
-| `seller` | object | The selling member who is offering the deal. For more details, see [Seller](deal-buyer-access-service.md#seller) below. |
+| `seller` | object | The selling member who is offering the deal. For more details, see [Seller](deal-buyer-access-service.md#seller) below.|
 | `sizes` | array of objects | The sizes of creatives that are eligible for the deal. For more details, see [Sizes](deal-buyer-access-service.md#sizes) below.<br>**Note**: If this array is not present in the response, there are no creative size requirements for the deal.|
 | `start_date` | timestamp | The day and time when the deal starts being available to the buyer. Null corresponds to "immediately". |
 | `suggested_min_bid_price` | int | The same amount as the `ask_price`.<br>**Note**: Your minimum bid should be higher than the `ask_price` to account for the auction service charges specified in your Xandr contract. For deals with external suppliers, your bid should also include additional margin to account for discrepancies. Bidding the more than the `ask_price` helps ensure that you are eligible for the deal but there is no guarantee that your bid will win. |

@@ -1,6 +1,6 @@
 ---
 title: Bidders - Deal Sync with Trade Desk - FAQ
-description: The article covers frequently asked questions (FAQs) related to deal synchronization in trade tasks.  
+description: Explore FAQs on deal synchronization in beta trade tasks. Enabled for selected sellers. Contact your  account representative to test the product.
 ms.date: 10/28/2023
 ---
 
@@ -21,11 +21,11 @@ Ask the Trade Desk buyer to confirm they have accepted the deal in the Trade Des
 
 The following details are shared with Trade Desk APIs:
 
-| - Deal Name | - Deal Type |- Currency  |
-|---|---|---|
+| - Deal Name | - Deal Type | - Currency |
+|--|--|--|
 | **- Buyer Seat ID** | **- Deal Auction Type** | **- Floor Price/Ask Price** |
 | **- Seller Name** | **- Start Date** | **- Allowed Media Types** |
-| **- Deal ID**| **- End Date** | **- Allowed Creative Sizes** |
+| **- Deal ID** | **- End Date** | **- Allowed Creative Sizes** |
 
 ## What will happen to existing Trade Desk deals that were created before enablement of deal sync?
 

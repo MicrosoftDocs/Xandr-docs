@@ -1,6 +1,6 @@
 ---
 title: User Data - FAQ
-description: Address user data concerns, sync user IDs by storing mapping tables on your servers using the /getuid pixel. Use the user ID in the redirect URL.
+description: Explore addressing user data concerns, synchronize user IDs by storing mapping tables on servers, utilize /getuid pixel, incorporate user ID in redirect URL.
 ms.date: 10/28/2023
 ---
 

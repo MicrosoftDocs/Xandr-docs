@@ -10,7 +10,7 @@ This page explains what Microsoft Monetize supply is, our purpose in launching 
 
 ## About Microsoft Monetize supply
 
-Microsoft Monetize supply includes inventory that we believe represents the most direct path to supply. This inventory is brought to you directly through the Microsoft Monetize Supply technology, and is formed at its core from our direct-to-publisher supply most frequently requested and purchased by our buyers across all formats (display, mobile, video, and native).
+Microsoft Monetize supply includes inventory that we believe represents the most direct path to supply. This inventory is brought to you directly through the Microsoft Monetize Supply technology, and is formed at its core from our  direct-to-publisher supply most frequently requested and purchased by our buyers across all formats (display, mobile, video, and native).
 
 Our mission is to provide a safe high-quality easy-to-access marketplace such that no other place can be the core of this inventory, be purchased with fewer intermediaries taking fees (or adding hops) between the buyer and the inventory owner.
 

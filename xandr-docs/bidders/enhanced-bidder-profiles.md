@@ -45,7 +45,7 @@ For an list of changes from legacy to the current enhanced bidder profiles, plea
 | `active` | Boolean | Indicates whether the profile has been activated. If false, this profile does not affect traffic sent to the bidder. |
 | `targeting` | object | The targeting rules for this bidder profile. For more details, see [Targeting](enhanced-bidder-profiles.md#targeting) below. |
 | `user_not_in_segment_action` | enum | If set to `include`: Impressions for all users are sent to the bidder.<br>If set to `exclud`: Only impressions where the user exists in a segment owned by or shared with the bidder are sent. QPS restrictions will apply to this field. The bidder doesn't have to explicitly state the segment in the segment actions.<br>**Note**: This field will be deprecated in favor of the `unknown_users_action`. |
-| `unknown_users_action` | enum | If set to `include`: Impressions for all users are sent to the bidder.<br>If set to `exclude`: Only impressions where the user has an in-house ID mapped in the Xandr cookie are sent. Mapping occurs when the bidder calls the setuid function. |  |
+| `unknown_users_action` | enum | If set to `include`: Impressions for all users are sent to the bidder.<br>If set to `exclude`: Only impressions where the user has an in-house ID mapped in the Xandr cookie are sent. Mapping occurs when the bidder calls the setuid function. |
 | `non_audited_url_action` | enum | If set to `exclude`, all inventory that has not been audited by Xandr will be excluded. Otherwise, all inventory will be included. |
 
 ## Targeting

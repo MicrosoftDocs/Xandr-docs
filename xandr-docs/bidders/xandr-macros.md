@@ -71,8 +71,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 ### European Ad inventory and providing notice, transparency and choice
 
 > [!WARNING]
-> In order for our clients to meet their transparency, notice and choice/consent requirements under US
-> state privacy law, the GDPR and the existing ePrivacy Directive, Xandr supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework").
+> In order for our clients to meet their transparency, notice and choice/consent requirements under US state privacy law, the GDPR and the existing ePrivacy Directive, Xandr supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework").
 >
 > This is a reference for publishers using the macros to surface notice,transparency and choice to end users located in applicable US states and the EEA and signal approved vendors, and where necessary pass consent and/or Do Not Share/Sell signals to Xandr and demand sources and their vendors through Xandr's platform.
 >

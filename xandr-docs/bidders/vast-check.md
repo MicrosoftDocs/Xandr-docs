@@ -69,8 +69,7 @@ player types.  
 
 ### Video duration is greater than 30 seconds
 
-No corrective action is required. Long-form creatives are flagged because they may not be eligible to serve on Instream inventory with duration limits. Targeting Outstream inventory is recommended as it will
-typically not have the same duration limits as Instream.  
+No corrective action is required. Long-form creatives are flagged because they may not be eligible to serve on Instream inventory with duration limits. Targeting Outstream inventory is recommended as it will typically not have the same duration limits as Instream.  
 
 ### Some recommended video formats not detected
 
@@ -100,15 +99,13 @@ Excerpt of a VAST document with a `<Wrapper>` element pointing to an \<InLine\
 
 **Unable to run VAST check**
 
-If VAST check is unable to run successfully, it means your creative either has no content, or cannot be scanned. You will see one of the error messages listed below. Please contact your third-party ad server
-for further troubleshooting.
+If VAST check is unable to run successfully, it means your creative either has no content, or cannot be scanned. You will see one of the error messages listed below. Please contact your third-party ad server for further troubleshooting.
 
 - There was an error with the request: VAST Wrapper URL is not valid.
 - There was an error with the request: Ad node not present in XML returned from: \[VAST URL\]. Please reach out to your third-party ad server for assistance.
 
 > [!NOTE]
-> VAST check must be able to fetch your XML in order to traffic it on our exchange. VAST check extracts
-> required metadata, such as duration and mime types, from the VAST file. Some SSPs block non-human traffic (nht). You can use the ${is_preview} macro to inform ad servers not to block our request. The value of the macro will be "1" when the call from VAST check is made.
+> VAST check must be able to fetch your XML in order to traffic it on our exchange. VAST check extracts required metadata, such as duration and mime types, from the VAST file. Some SSPs block non-human traffic (nht). You can use the ${is_preview} macro to inform ad servers not to block our request. The value of the macro will be "1" when the call from VAST check is made.
 
 There are many reasons why a VAST check cannot be completed including, but not limited to timeout errors, parser errors, or server errors. If you encounter this error, run a manual check to validate the presence of all attributes to ensure maximum delivery. Complying with a complete VAST XML file will increase the delivery potential of your video campaign.
 

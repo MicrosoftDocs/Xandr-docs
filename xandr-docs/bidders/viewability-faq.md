@@ -36,8 +36,7 @@ Stay tuned for updates as we continue to develop viewability reporting.
 
 ### What methods does Xandr use to measure viewability?
 
-Our viewability employs a best-in-class hybrid measurement methodology combining Page Geometry and Browser Optimization. When used in tandem, this hybrid method allows us to reliably measure viewability of most
-impressions.
+Our viewability employs a best-in-class hybrid measurement methodology combining Page Geometry and Browser Optimization. When used in tandem, this hybrid method allows us to reliably measure viewability of most impressions.
 
 ### In reporting, how does the Xandr view-measurement rate compare to other measurement vendors?
 

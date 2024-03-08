@@ -1,13 +1,12 @@
 ---
 title: Bidders - User Service
-description: Introduce the User Service, managing API access for individuals or groups. Categorize users as bidders or members.
+description: Explore managing API access for individuals or groups with the User Service. Categorize users as bidders or members.
 ms.date: 10/28/2023
 ---
 
 # Bidders - User service
 
-Here "user" refers to people or groups using Xandr's APIs. The User Service will allow you to
-manage who has access to Xandr's APIs. Users are classified as by a user type of either *bidder* or *member*.
+Here "user" refers to people or groups using Xandr's APIs. The User Service will allow you to manage who has access to Xandr's APIs. Users are classified as by a user type of either *bidder* or *member*.
 
 - Bidder users can be created by other bidder users.
 - A bidder-user can create and update member-users as well as update its own user info.
@@ -68,8 +67,7 @@ Authentication is always the first step when using the API Services. The authent
 
 **Create a user profile text file**
 
-To give API access to "TestUser," you will create a text file in JSON format with the username and password of the user, and the ID of either a member or bidder to which this user will belong. Below we have used
-the "cat" command to output an example user JSON file.
+To give API access to "TestUser," you will create a text file in JSON format with the username and password of the user, and the ID of either a member or bidder to which this user will belong. Below we have used the "cat" command to output an example user JSON file.
 
 ```
 $ cat user
@@ -113,10 +111,7 @@ $ curl -b cookies -c cookies -X POST --data-binary @user https://api.adnxs.com/u
 
 **Retrieve user information from the Imp Bus cache**
 
-We know from the output of the above command that the user we just added
-has been assigned ID \#59 by the Imp Bus. We can use that ID to view
-information about this particular user. To see all users that we have
-created, we would leave off the user ID.
+We know from the output of the above command that the user we just added has been assigned ID \#59 by the Imp Bus. We can use that ID to view information about this particular user. To see all users that we have created, we would leave off the user ID.
 
 ```
 $ curl -b cookies -c cookies https://api.adnxs.com/user/59

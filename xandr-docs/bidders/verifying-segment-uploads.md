@@ -1,6 +1,6 @@
 ---
 title: Bidders - Verifying Segment Uploads
-description: Verify upload success and check file status for a report with essential parameters confirming successful uploads.
+description: Explore upload success, confirm file status, and ensure essential parameters validate successful uploads.
 ms.date: 10/28/2023
 ---
 

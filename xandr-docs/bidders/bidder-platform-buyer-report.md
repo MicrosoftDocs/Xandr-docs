@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Bidder Platform Buyer report
 
-The Bidder Platform Buyer Report provides granular transaction information to buyers (down to the tag level). For instructions on retrieving this report, see the [Example](#example) below.
+The Bidder Platform Buyer Report provides granular transaction information to buyers (down to the tag level). For instructions on retrieving this report, see the [Examples](#examples) below.
 
 > [!TIP]
 > Need more than 90 days of data?

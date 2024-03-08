@@ -10,7 +10,7 @@ The Bidder Bid Error Report helps you gain insight into your rejected deman
 
 Use this report to troubleshoot buy-side and sell-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](bid-error-codes.md).
 
-For instructions on retrieving a report, see [Report Service](../digital-platform-api/report-service.md) or the [example](#example) below.
+For instructions on retrieving a report, see [Report Service](../digital-platform-api/report-service.md) or the [examples](#examples) below.
 
 ## Time frame
 

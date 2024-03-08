@@ -122,8 +122,7 @@ To set up line item budgeting and scheduling:
     - Each line item must have a single flight.
     - Flight dates must fall inside the billing period dates of the parent insertion order(s).
 
-    To set a flight, enter a start and end date, and adjust the start and end time as required. Both a start and end date are required for
-    GDALIs.
+    To set a flight, enter a start and end date, and adjust the start and end time as required. Both a start and end date are required for GDALIs.
 
     To set flight budgeting, enter a budget in the **Budget** field:
 
@@ -284,4 +283,4 @@ To save the GDALI, click one of the following options in the **Save and Reserve*
 ## Related topics
 
 - [Guaranteed Delivery (GDALI)](guaranteed-delivery-gdali.md)
-- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md) 
+- [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md)

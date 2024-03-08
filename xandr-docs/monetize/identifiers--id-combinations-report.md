@@ -138,4 +138,4 @@ Follow these steps to run your report.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 
-1.  Click **Run report** to send your report request.
+1. Click **Run report** to send your report request.

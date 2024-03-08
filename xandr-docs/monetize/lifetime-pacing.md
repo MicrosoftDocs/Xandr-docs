@@ -33,8 +33,7 @@ Underspend Catch-Up allows you to dictate how Microsoft Advertising's system dea
 
 ## Daily pacing allocation
 
-Daily Pacing Allocation determines how the daily budget should be spent in one day. Select **Evenly** if you'd like the daily budget
-to be spent evenly throughout the day.
+Daily Pacing Allocation determines how the daily budget should be spent in one day. Select **Evenly** if you'd like the daily budget to be spent evenly throughout the day.
 
 > [!NOTE]
 > Daily Pacing Allocation doesn't affect the lifetime pacing algorithm's daily budget calculations. Rather, it affects the outcome of flight spend by pacing daily budgets' spend behavior.

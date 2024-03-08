@@ -69,8 +69,7 @@ The Microsoft Advertising platform categorizes creatives by media type and media
 
 By default, the creative size for the placement is **Sizeless**, which means that creatives of any size will be allowed to serve. If you want to restrict the placement to creatives of a specific size, select the size from the **Creative Sizes** field.
 
-If your placement uses a friendly iFrame and you want the placement to resize to fit smaller or larger creatives, you can select the
-**Resize placement if creative size is different...** checkbox.
+If your placement uses a friendly iFrame and you want the placement to resize to fit smaller or larger creatives, you can select the **Resize placement if creative size is different...** checkbox.
 
 > [!NOTE]
 > This option should only be used with MegaTag, because the resizing depends on JavaScript with variables and methods that are only defined in megatag.js.

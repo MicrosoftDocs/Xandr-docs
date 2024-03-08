@@ -20,7 +20,7 @@ This page describes the pacing algorithm that governs how Guaranteed Delivery li
 
 For a guaranteed line item with a delivery goal of 1 million impressions over a 60-day flight that is set to the default pacing value of 105%, the ideal delivery curve looks like this:
 
-:::image type="content" source="media/ideal-delivery-curve.png" alt-text="A graph of days against daily delivery goal that shows the ideal delivery curve.":::
+:::image type="content" source="media/ideal-delivery-curve.png" alt-text="Graph of days against daily delivery goal that shows the ideal delivery curve.":::
 
 To achieve the ideal delivery curve, we have to control the delivery rate across a distributed system of bidders over the entire length of the flight. Broadly speaking, there are two ways to control the delivery rate:
 
@@ -35,11 +35,11 @@ Furthermore, even if it were possible to adjust bid decisions in real-time, the 
 
 To give you some idea of the volatility involved, here are the bid requests per minute across one randomly selected slice of inventory on the Microsoft Advertising platform over a 24-hour period in early 2015:
 
-:::image type="content" source="media/request-rate.png" alt-text="A graph of minutes against bid requests per minute for one random inventory over a 24-hour period.":::
+:::image type="content" source="media/request-rate.png" alt-text="Graph of minutes against bid requests per minute for one random inventory over a 24-hour period.":::
 
 Here is the win rate of a $0.10 CPM bid for a similar randomly selected slice of inventory graphed over a 24-hour period in early 2015:
 
-:::image type="content" source="media/win-rate.png" alt-text="A graph of minutes against win rate for one random inventory over a 24-hour period.":::
+:::image type="content" source="media/win-rate.png" alt-text="Graph of minutes against win rate for one random inventory over a 24-hour period.":::
 
 ### Our solution
 

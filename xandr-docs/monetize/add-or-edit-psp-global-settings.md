@@ -17,7 +17,7 @@ The following configurations can be set:
 ## Demand partner timeout
 
 The maximum time, in milliseconds, that Prebid Server Premium partners and other bidders in our marketplace are given to respond. If set, this global PSP timeout applies in place of the member-wide (or default) auction timeout, but can be overridden by setting a placement or
-request-level timeout. See [Full Timeout Hierarchy](#full-timeout-hierarchy) for more details.
+request-level timeout. See the [Full Timeout Hierarchy](#full-timeout-hierarchy) section below for more details.
 
 > [!NOTE]
 > This value should be slightly lower than any prebid.js configuration timeout set on the client side.

@@ -29,8 +29,7 @@ Click the **Save** button. On the **Campaigns** screen, the **Creatives** column
 
 ### Step 1. Select the campaigns
 
-On the [Campaigns](explore-campaigns.md) screen, check the box for each campaign to which you want to associate creatives and click
-**Actions** > **Associate to Creatives**.
+On the [Campaigns](explore-campaigns.md) screen, check the box for each campaign to which you want to associate creatives and click **Actions** > **Associate to Creatives**.
 
 ### Step 2. Select the creatives
 

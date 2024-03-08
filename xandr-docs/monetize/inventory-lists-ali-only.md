@@ -16,8 +16,7 @@ Inventory lists are a way to group the domains, apps, and app bundle IDs that yo
 - raw URL (domain): [yahoo.com](https://yahoo.com/)
 - raw URL (app): [https://itunes.apple.com/us/app/funny-pics-lol!-daily-laughs/id617263396](https://itunes.apple.com/us/app/funny-pics-lol%21-daily-laughs/id617263396)
 
-Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields within the **Inventory & Brand Safety** section for
-line items and **Supply Strategy** section for insertion orders. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) and [Create an Insertion Order](create-an-insertion-order.md) for details.
+Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields within the **Inventory & Brand Safety** section for line items and **Supply Strategy** section for insertion orders. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) and [Create an Insertion Order](create-an-insertion-order.md) for details.
 
 ### Domains
 

@@ -47,7 +47,7 @@ Provided below are some Windows Apps inventory samples:
 |--|--|--|
 | **Sizes** | - 160x600<br> - 300x250<br> - 300x600<br> - 728x90 | - 300x50<br> - 320x50<br> - 480x80<br> - 640x100 |
 | **Technical**<br>**Attributes** | - MRAID 1.0 and 2.0<br> - Hosted Images<br> - HTML<br> - HTML- iframe<br> - Javascript (in web view)**<br> - Image (Third-Party Ad Served)<br> - Flash with Backup Image only |  |
-| **Ad**<br>**Quality** | - [Microsoft CAP](https://about.ads.microsoft.com/policies)<br> - Animation Length up to 30 sec |  |
+| **Ad**<br>**Quality** | - [Microsoft CAP](https://about.ads.microsoft.com/en-us/policies/home)<br> - Animation Length up to 30 sec |  |
 
 ### How to target windows app inventory and additional information
 

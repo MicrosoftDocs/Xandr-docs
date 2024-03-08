@@ -24,6 +24,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 - **Name** - Enter the advertiser's name.
   
 - **Legal Entity Name** - Enter the name of the legal entity on whose behalf the advertisement is being displayed and who is covering the cost of the advertiser's ad. Advertisers who wish to deliver their ads to users in the EU should populate this field, since certain publishers need it in order to comply with the [Digital Services Act](digital-services-act.md). Since the end users see the legal entity name alongside the ad creative, it must be readable by humans. Your campaigns may have a limited reach or experience delivery problems if you do not supply a legitimate legal entity name.
+
 > [!NOTE]
 > The Deal Line Items linked to this Advertiser are unaffected by this field. Only managed campaigns and campaigns serving on external inventory are eligible to access this information, and publishers must use it in accordance with the Digital Services Act.
 

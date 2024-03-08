@@ -1,6 +1,6 @@
 ---
 title: Tag Parser Service
-description: Use the tag parser service to parse ad tags from Atlas, Mediamind, or DoubleClick files, but base64-encode the file first.
+description: Use the Tag Parser service to parse ad tags from Atlas, Mediamind, or DoubleClick files, but base64-encode the file first.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -16,7 +16,7 @@ When you receive a file of ad tags from Atlas, Mediamind, or DoubleClick, or whe
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/tag-parser-job<br>(tags JSON) | Parse a file of tags from Atlas, Mediamind, DoubleClick, or AppNexus. |
+| `POST` | `https://api.appnexus.com/tag-parser-job`<br>(tags JSON) | Parse a file of tags from `Atlas`, `Mediamind`, `DoubleClick`, or `AppNexus`. |
 
 ## JSON fields
 

@@ -1,11 +1,11 @@
 ---
 title: Third-Party Pixel Service
-description: Use the third-party pixel service to upload and modify third-party creative pixels, and attach them to advertisers, or creatives.
+description: Use the Third-party Pixel service to upload and modify third-party creative pixels, and attach them to advertisers, or creatives.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Third-party pixel service
+# Third-party Pixel service
 
 The third-party pixel service allows you to upload and modify third-party creative pixels, and attach them to advertisers, or creatives. You can also attach third-party creative pixels to your member.
 
@@ -13,11 +13,11 @@ The third-party pixel service allows you to upload and modify third-party creati
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/thirdparty-pixel | View all of your third-party pixels. |
-| `GET` | https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID | View a specific third-party pixel. |
-| `POST` | https://api.appnexus.com/thirdparty-pixel | Add a new third-party pixel. |
-| `PUT` | https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID | Modify an existing third-party pixel. |
-| `DELETE` | https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID | Delete an existing third-party pixel. |
+| `GET` | `https://api.appnexus.com/thirdparty-pixel` | View all of your third-party pixels. |
+| `GET` | `https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID` | View a specific third-party pixel. |
+| `POST` | `https://api.appnexus.com/thirdparty-pixel` | Add a new third-party pixel. |
+| `PUT` | `https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID` | Modify an existing third-party pixel. |
+| `DELETE` | `https://api.appnexus.com/thirdparty-pixel?id=THIRDPARTY-PIXEL_ID` | Delete an existing third-party pixel. |
 
 ## JSON fields
 

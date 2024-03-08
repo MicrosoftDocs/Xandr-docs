@@ -1,11 +1,11 @@
 ---
 title: Sync Report Service
-description: This article lists the reports that use the sync report service. This service is currently under-development.
+description: This article lists the reports that use the Sync Report service. This service is currently under-development.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Sync report service
+# Sync Report service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.

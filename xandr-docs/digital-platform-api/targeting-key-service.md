@@ -1,11 +1,11 @@
 ---
 title: Targeting Key Service
-description: Use the targeting-key and targeting-value services to define your own key/value combinations for use in targeting on line items and campaigns.
+description: Use the Targeting Key and Targeting Value services to define your own key/value combinations for use in targeting on line items and campaigns.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Targeting key service
+# Targeting Key service
 
 The **targeting-key** service works in conjunction with the **targeting-value** service to allow you to define your own key/value combinations for use in targeting on line items, campaigns, and so on. See [Custom Key Value Targeting](./custom-key-value-targeting.md) for more information.
 
@@ -13,12 +13,12 @@ The **targeting-key** service works in conjunction with the **targeting-value** 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/targeting-key<br>(`create_target_key` JSON) | Add a new targeting key. |
-| `PUT` | https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID<br>(`update_targeting_key` JSON) | Modify a targeting key. |
-| `GET` | https://api.appnexus.com/targeting-key | View all targeting keys. |
-| `GET` | https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID | View a specific targeting key. |
-| `GET` | https://api.appnexus.com/targeting-key?name=TARGETING_KEY_NAME1,TARGETING_KEY_NAME2,TARGETING_KEY_NAME3 | View a set of targeting keys by name. |
-| `DELETE` | https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID | Delete a targeting key. |
+| `POST` | `https://api.appnexus.com/targeting-key`<br>(`create_target_key` JSON) | Add a new targeting key. |
+| `PUT` | `https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID`<br>(`update_targeting_key` JSON) | Modify a targeting key. |
+| `GET` | `https://api.appnexus.com/targeting-key` | View all targeting keys. |
+| `GET` | `https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID` | View a specific targeting key. |
+| `GET` | `https://api.appnexus.com/targeting-key?name=TARGETING_KEY_NAME1,TARGETING_KEY_NAME2,TARGETING_KEY_NAME3` | View a set of targeting keys by name. |
+| `DELETE` | `https://api.appnexus.com/targeting-key?id=TARGETING_KEY_ID` | Delete a targeting key. |
 
 ## JSON fields
 
@@ -36,13 +36,13 @@ The **targeting-key** service works in conjunction with the **targeting-value** 
 
 ### Key requirements
 
-Number of keys:
+#### Number of keys
 
 - You can have up to 500 active keys at one time.
 - You can have up to 100,000 values per key.
 - You can have up to 2,500,000 total active values at one time.
 
-Key naming:
+#### Key naming
 
 - Key names are not case-sensitive.
 - Maximum key name length is 50 characters.

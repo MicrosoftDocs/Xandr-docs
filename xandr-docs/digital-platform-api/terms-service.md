@@ -1,6 +1,6 @@
 ---
 title: Terms Service
-description: Use the term service to record Tango member's acceptance of the Tango usage terms of service.
+description: Use the Terms Service to record Tango member's acceptance of the Tango usage terms of service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -16,18 +16,18 @@ This service is used to record Tango member's acceptance of the Tango usage term
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/terms-of-service<br>(`add_TOS` JSON) | Add a new terms of service acceptance record. |
-| `GET` | https://api.appnexus.com/terms-of-service | View all terms of service records. |
-| `GET` | https://api.appnexus.com/terms-of-service?id=TERMS_OF_SERVICE_ID | View a specific terms of service record. |
-| `GET` | https://api.appnexus.com/terms-of-service/meta | Find out which fields you can filter and sort by. |
+| `POST` | `https://api.appnexus.com/terms-of-service`<br>(`add_TOS` JSON) | Add a new terms of service acceptance record. |
+| `GET` | `https://api.appnexus.com/terms-of-service` | View all terms of service records. |
+| `GET` | `https://api.appnexus.com/terms-of-service?id=TERMS_OF_SERVICE_ID` | View a specific terms of service record. |
+| `GET` | `https://api.appnexus.com/terms-of-service/meta` | Find out which fields you can filter and sort by. |
 
 > [!NOTE]
 > The calls below are visible to Xandr Employees only. These calls can only be made my administrators.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `PUT` | https://api.appnexus.com/terms-of-service?id=TERMS_OF_SERVICE_ID<br>(`modify_TOS` JSON) | Modify a terms of service record. |
-| `DELETE` | https://api.appnexus.com/terms-of-service?id=TERMS_OF_SERVICE_ID | Delete a terms of service record. |
+| `PUT` | `https://api.appnexus.com/terms-of-service?id=TERMS_OF_SERVICE_ID`<br>(`modify_TOS` JSON) | Modify a terms of service record. |
+| `DELETE` | `https://api.appnexus.com/terms-of-service?id=TERMS_OF_SERVICE_ID` | Delete a terms of service record. |
 
 ## JSON fields
 
@@ -164,9 +164,9 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/terms-of-service?id=19"
 
 > [!NOTE]
 > The examples below are visible to Xandr employees only. These calls can only be made my administrators.
-> 
+>
 > ### Modify a terms of service record
-> 
+>
 > ```
 > $ cat modify_TOS
 > {
@@ -193,7 +193,7 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/terms-of-service?id=19"
 > ```
 > 
 > ### Delete a terms of service record
-> 
+>
 > ```
 > $ curl -b cookies -c cookies -X DELETE "https://api.appnexus.com/terms-of-service?id=19"
 > {

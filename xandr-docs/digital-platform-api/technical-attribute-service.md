@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Technical Attribute Service
-description: Use the technical attribute service to view the list of technical attributes that you can target in the ad profile service via ID.
+description: Use the Technical Attribute service to view the list of technical attributes that you can target in the ad profile service via ID.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Technical attribute service
+# Digital Platform API - Technical Attribute service
 
 This is a read-only service that shows you the list of technical attributes that you can target in the [Ad Profile Service](./ad-profile-service.md) via technical attribute ID.
 
@@ -13,8 +13,8 @@ This is a read-only service that shows you the list of technical attributes that
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/technical-attribute | View all technical attributes. |
-| `GET` | https://api.appnexus.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID | View a specific technical attribute. |
+| `GET` | `https://api.appnexus.com/technical-attribute` | View all technical attributes. |
+| `GET` | `https://api.appnexus.com/technical-attribute?id=TECHNICAL_ATTRIBUTE_ID` | View a specific technical attribute. |
 
 ## JSON fields
 

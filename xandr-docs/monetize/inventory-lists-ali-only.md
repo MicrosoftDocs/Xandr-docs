@@ -14,7 +14,7 @@ Inventory lists are a way to group the domains, apps, and app bundle IDs that yo
   - 617263396
   - com.magmamobile.game.Elements
 - raw URL (domain): [yahoo.com](https://yahoo.com/)
-- raw URL (app): [https://itunes.apple.com/us/app/funny-pics-lol!-daily-laughs/id617263396](https://itunes.apple.com/us/app/funny-pics-lol%21-daily-laughs/id617263396)
+- raw URL (app): [https://apps.apple.com/us/app/funny-laughs-lol-pics-jokes/id617263396](https://apps.apple.com/us/app/funny-laughs-lol-pics-jokes/id617263396)
 
 Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields within the **Inventory & Brand Safety** section for line items and **Supply Strategy** section for insertion orders. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) and [Create an Insertion Order](create-an-insertion-order.md) for details.
 
@@ -46,7 +46,7 @@ For example, here are the detail pages for the "Candy Crush" app:
 
 - Google Play: [https://play.google.com/store/apps/details?id=com.king.candycrushsaga](https://play.google.com/store/apps/details?id=com.king.candycrushsaga)
   - ID: com.king.candycrushsaga
-- iTunes: [https://itunes.apple.com/app/apple-store/id553834731](https://itunes.apple.com/app/apple-store/id55383473)
+- iTunes: [https://apps.apple.com/us/app/candy-crush-saga/id553834731](https://apps.apple.com/us/app/candy-crush-saga/id553834731)
   - ID: 553834731
 
 #### How to choose which apps to target

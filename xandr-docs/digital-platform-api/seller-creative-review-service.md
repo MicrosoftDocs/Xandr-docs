@@ -1,11 +1,11 @@
 ---
 title: Seller Creative Review Service
-description: Use the seller creative review service report to get an insight into how seller members audit the creatives.
+description: Use the Seller Creative Review service report to get an insight into how seller members audit the creatives.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Seller creative review service
+# Seller Creative Review service
 
 > [!NOTE]
 > This service currently is in **Beta**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get enabled.
@@ -18,10 +18,10 @@ Xandr works with members who care deeply about brand and reputation. For this re
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | Create a seller-creative review |
-| `GET` | https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | View the details of a seller-creative review |
-| `PUT` | https://api.appnexus.comseller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | Update a seller-creative review |
-| `DELETE` | https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID | Delete a seller-creative review |
+| `POST` | `https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID` | Create a seller-creative review |
+| `GET` | `https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID` | View the details of a seller-creative review |
+| `PUT` | `https://api.appnexus.comseller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID` | Update a seller-creative review |
+| `DELETE` | `https://api.appnexus.com/seller-creative-review?member_id=MEMBER_ID&creative_id=CREATIVE_ID` | Delete a seller-creative review |
 
 ## JSON fields
 

@@ -1,28 +1,28 @@
 ---
 title: Sld Use Subdomain Service
-description: The SLD use subdomain service allows users to add rows to the `api.sld_use_subdomain` table for tracking subdomains.
+description: The SLD Use Subdomain service allows users to add rows to the api.sld_use_subdomain table for tracking subdomains.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Sld use subdomain service
+# SLD Use Subdomain service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
 
-The Second Level Domain (SLD) Use Subdomain service is an admin-only service that allows users to add rows to the `api.sld_use_subdomain` table. This table is consumed by adserver to let them know for which second level domains they should track subdomains.  Please be careful when adding or updating objects using this service.
+The Second Level Domain (SLD) Use Subdomain service is an admin-only service that allows users to add rows to the `api.sld_use_subdomain` table. This table is consumed by adserver to let them know for which second level domains they should track subdomains. Be careful when adding or updating objects using this service.
 
 > [!WARNING]
-> \#iq-engineering must confirm all new entries to this service. DO NOT post new entries without confirmation.
+> #iq-engineering must confirm all new entries to this service. DO NOT post new entries without confirmation.
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/sld-use-subdomain<br>(template JSON) | Add a new entry to sld-use-subdomain. |
-| `PUT` |  https://api.appnexus.com/sld-use-subdomain?id=SETTING_ID<br>(template JSON)<br><br>**Note**: `SETTING_ID` is an automatically generated value for the specific table and can be retrieved via `GET`.<br> | Modify an entry in sld-use-subdomain. |
-| `DELETE` | https://api.appnexus.com/sld-use-subdomain?id=SETTING_ID | Delete an entry in sld-use-subdomain. |
-| `GET` | https://api.appnexus.com/sld-use-sudbomain?id=SETTING_ID | View a specific entry in sld-use-sudbomain. |
+| `POST` |`https://api.appnexus.com/sld-use-subdomain`<br>(template JSON) | Add a new entry to sld-use-subdomain. |
+| `PUT` |  `https://api.appnexus.com/sld-use-subdomain?id=SETTING_ID`<br>(template JSON)<br><br>**Note**: `SETTING_ID` is an automatically generated value for the specific table and can be retrieved via `GET`.<br> | Modify an entry in sld-use-subdomain. |
+| `DELETE` | `https://api.appnexus.com/sld-use-subdomain?id=SETTING_ID` | Delete an entry in sld-use-subdomain. |
+| `GET` | `https://api.appnexus.com/sld-use-sudbomain?id=SETTING_ID` | View a specific entry in sld-use-sudbomain. |
 
 ## JSON fields
 
@@ -34,7 +34,7 @@ The Second Level Domain (SLD) Use Subdomain service is an admin-only service tha
 
 ## Examples
 
-### View all sld-use-subdomains
+### View all `sld-use-subdomains`
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/sld-use-subdomain'
@@ -80,7 +80,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/sld-use-subdomain'
 }
 ```
 
-### Add a new sld-use-subdomain
+### Add a new `sld-use-subdomain`
 
 ```
 $ cat sld-use-subdomain
@@ -127,7 +127,7 @@ $ curl -b cookies -c cookies -X POST -d @sld-use-subdomain 'https://api.appnexus
 }
 ```
 
-### Modify a sld-use-subdomain
+### Modify a `sld-use-subdomain`
 
 ```
 $ cat sld-use-subdomain

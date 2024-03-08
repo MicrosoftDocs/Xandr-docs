@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller Bid Error Report
-description: Use this report to get an insight into rejected demand through a randomly selected set of errors. It helps troubleshoot sell-side and buy-side settings.
+description: Use the Seller Bid Error report to get an insight into rejected demand through a randomly selected set of errors. Helps troubleshoot sell-side and buy-side settings.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller bid error report
+# Digital Platform API - Seller Bid Error report
 
 The **Seller Bid** **Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the AppNexus platform. Error Count has been multiplied by 100 to account for the 5% sampling.
 
@@ -26,7 +26,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 403 days.
 
@@ -68,7 +68,7 @@ Data retention period for this report is 403 days.
 
 ## Example
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
 The JSON file should include the `report_type` `"seller_bid_error_report"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filters for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

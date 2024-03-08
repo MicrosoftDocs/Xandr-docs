@@ -1,11 +1,11 @@
 ---
 title: Seller Slot Analytics Report
-description: Use the seller slot snalytics report to view  metrics for impressions within groups of ads delivered sequentially in between segments of non-commercial video programming.
+description: Use the Seller Slot Analytics report to view metrics for impressions within groups of ads delivered sequentially in between segments of non-commercial video programming.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Seller slot analytics report
+# Seller Slot Analytics report
 
 > [!NOTE]
 > This functionality currently is in **Alpha**. It is still under development and may be subject to change without notice. Contact your Xandr Account Representative to get it enabled.
@@ -208,7 +208,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 
 The JSON file should include the `report_type` of `"seller_slot_video_report_network"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
-### Create the JSON report request
+### Create a JSON report request
 
 ```
 $ cat seller_slot_video_report_network

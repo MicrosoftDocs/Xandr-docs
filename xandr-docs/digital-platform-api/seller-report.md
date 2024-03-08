@@ -1,6 +1,6 @@
 ---
 title: Seller Report
-description: The seller report helps estimate inventory availability based on targeting criteria and can be filtered by geography, creative size, or audit status.
+description: The Seller report helps estimate inventory availability based on targeting criteria and can be filtered by geography, creative size, or audit status.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -9,9 +9,7 @@ ms.custom: digital-platform-api
 
 > [!NOTE]
 >
-> - This service is currently available to a limited set of clients and Microsoft employees only.
->
-> - This reporting API is currently for internal use only. This page is therefore visible only to AppNexus employees.
+> This service is currently available to a limited set of clients and Microsoft employees only.
 
 The Seller Report allows you to estimate the amount of available inventory given a set of possible targeting criteria that you specify. You can compare the overall volume of inventory available through a seller with what's available after you filter by geography, creative size, or audit status.
 
@@ -29,7 +27,7 @@ This report takes into account publisher-side settings from the [Member Service]
 >
 > Due to the high volume of impressions across our platform, the data in this report is based on a statistical sampling.
 
-**Admin users and reselling exposure logic**
+## Admin users and reselling exposure logic
 
 Calls to this report without the `member_id` query string parameter will return information about all available inventory without any reselling exposure logic applied. In addition, a separate `query` object will be returned in the JSON response that describes the database logic used to pull the data. Therefore, employees logged in as admin users will need to pass a `member_id` via the query string in order for that member's reselling exposure logic to be applied.
 
@@ -85,7 +83,7 @@ The sizes listed here correspond to those available in the Console user interfac
 
 For more information about using the sorting and pagination capabilities of this report, see the examples below and refer to the [Sync Report Service](./sync-report-service.md).
 
-**Learn more about a seller's Canadian inventory across all creative sizes**
+### Learn more about a seller's Canadian inventory across all creative sizes
 
 In the following example, we request information on all inventory available in Canada from seller ID `128`, ordered from greatest to fewest average daily impressions.
 
@@ -166,7 +164,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
 }
 ```
 
-**Learn more about available Canadian inventory for two creative sizes**
+### Learn more about available Canadian inventory for two creative sizes
 
 ```
 $ cat report-request.json
@@ -373,7 +371,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
 }
 ```
 
-**List iASH-compliant sellers by volume (from greatest to least)**
+### List iASH-compliant sellers by volume (from greatest to least)
 
 ```
 $ cat report-request.json
@@ -501,7 +499,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
 }
 ```
 
-**List the top three sellers ordered by uniques on U.S. inventory, in CSV format**
+### List the top three sellers ordered by uniques on U.S. inventory, in CSV format
 
 ```
 $ cat report-request.json
@@ -560,7 +558,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
 }
 ```
 
-**List the third-through thirteenth-highest ranking sellers by volume in New Zealand**
+### List the third-through thirteenth-highest ranking sellers by volume in New Zealand
 
 ```
 $ cat report-request.json
@@ -707,7 +705,7 @@ $ curl -b cookies -X POST -d @report-request.json "https://api.appnexus.com/sync
 }
 ```
 
-**View the highest ranking sellers of AppNexus-and-seller-reviewed inventory by volume in the United States**
+### View the highest ranking sellers of AppNexus-and-seller-reviewed inventory by volume in the United States
 
 ```
 $ cat report-request.json

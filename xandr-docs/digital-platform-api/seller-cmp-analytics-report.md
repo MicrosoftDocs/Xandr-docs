@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller CMP Analytics Report
-description: Analyze seller CMP analytics report for insights on IAB transparency & consent framework strings on ad requests to endpoints.
+description: Analyze Seller CMP Analytics report for insights on IAB transparency and consent framework strings on ad requests to endpoints.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller CMP analytics report
+# Digital Platform API - Seller CMP Analytics report
 
 The Seller CMP (Consent Management Platform) Analytics Report provides insight into the number, validity, and content of the IAB Transparency & Consent Framework (IAB TCF) strings on seller ad requests to our endpoints. This report enables sellers to answer questions like:
 
@@ -23,10 +23,10 @@ Sellers wishing to have all of their ad requests treated according to the IAB TC
 
 A high number of present but malformed strings for a given publisher usually means that the publisher's CMP is not creating or encoding the strings according to TCF specifications, and therefore are unreadable to vendors. Unreadable strings, because they do not provide clear signals to vendors, are treated as no permission for any vendor, and should be avoided.
 
-For more information about the IAB TCF, please refer to the following resources:
+For more information about the IAB TCF, refer to the following resources:
 
 - [IAB Europe's TCF Policy & Governance](https://iabeurope.eu/category/policy/tcf-updates/)
-- [AB Techlab TCF v1 and v2 Technical Spec & Implementation Guides](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework)
+- [IAB Techlab TCF v1 and v2 Technical Spec & Implementation Guides](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework)
 - [IAB Techlab TCF RTB Spec](https://iabtechlab.com/wp-content/uploads/2018/02/OpenRTB_Advisory_GDPR_2018-02.pdf)
 
 ## Time frame
@@ -68,8 +68,8 @@ Data retention period for this report is 30 days.
 | `ad_requests_gdpr_applied_blank_consent_string` | int | `988` | ad_requests_gdpr_applied_blank_consent_string | The number of incoming ad requests for which GDPR is applied, and the consent string is blank. |
 | `ad_requests_gdpr_applied_invalid_consent_string_seller_revenue` | int | `666` | ad_requests_gdpr_applied_invalid_consent_string_seller_revenue | The number of ad requests for which seller revenue attributed for the incoming impressions, GDPR is applied and the consent string is either blank or malformed. |
 | `ad_requests_gdpr_applied_valid_consent_string` | int | `863` | ad_requests_gdpr_applied_valid_consent_string | The number of incoming ad requests for which GDPR is applied, and the consent string is non-null and valid. |
-| `ad_requests_GDPR_applied_valid_consent_string_valid_cmp` | int | `564` | ad_requests_GDPR_applied_valid_consent_string_valid_cmp | The number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is registered with the IAB, as seen here: https://advertisingconsent.eu/cmp-list/ |
-| `ad_requests_gdpr_applied_valid_consent_string_invalid_cmp` | int | `787` | ad_requests_gdpr_applied_valid_consent_string_invalid_cmp | The number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is not registered with the IAB, as seen here: https://advertisingconsent.eu/cmp-list/ |
+| `ad_requests_GDPR_applied_valid_consent_string_valid_cmp` | int | `564` | ad_requests_GDPR_applied_valid_consent_string_valid_cmp | The number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is registered with the IAB, as seen [here](https://iabeurope.eu/cmp-list/) |
+| `ad_requests_gdpr_applied_valid_consent_string_invalid_cmp` | int | `787` | ad_requests_gdpr_applied_valid_consent_string_invalid_cmp | The number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is not registered with the IAB, as seen [here](https://iabeurope.eu/cmp-list/) |
 | `ad_requests_gdpr_applied_valid_consent_string_tcf_version_1` | int | `986` | ad_requests_gdpr_applied_valid_consent_string_tcf_version_1 | The number of incoming ad requests for which GDPR is applied, the consent string is valid and encoded according to TCF v1. |
 | `ad_requests_gdpr_applied_valid_consent_string_tcf_version_2` | int | `600` | ad_requests_gdpr_applied_valid_consent_string_tcf_version_2 | The number of incoming ad requests for which GDPR is applied, the consent string is valid and encoded according to TCF v2. |
 | `ad_requests_gdpr_applied_valid_consent_string_xandr_consented` | int | `998` | ad_requests_gdpr_applied_valid_consent_string_xandr_consented | The number of incoming ad requests for which GDPR is applied, and Xandr’s vendor bit (#32) is a 1 in the string for TCF v1 encoded strings |
@@ -77,15 +77,15 @@ Data retention period for this report is 30 days.
 | `pct_ad_requests_gdpr_applied_malformed_consent_string` | double | `0.77` | pct_ad_requests_gdpr_applied_malformed_consent_string | The percentage of incoming ad requests for which GDPR is applied, and the consent string is non-blank but malformed. |
 | `pct_ad_requests_gdpr_applied_blank_consent_string` | double | `0.83` | pct_ad_requests_gdpr_applied_blank_consent_string | The percentage of incoming ad requests for which GDPR is applied, and the consent string is blank. |
 | `pct_ad_requests_gdpr_applied_valid_consent_string` | double | `0.91` | pct_ad_requests_gdpr_applied_valid_consent_string | The percentage of incoming ad requests for which GDPR is applied, and the consent string is non-null and valid. |
-| `pct_ad_requests_gdpr_applied_valid_consent_string_valid_cmp` | double | `0.77` | pct_ad_requests_gdpr_applied_valid_consent_string_valid_cmp | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is registered with the IAB, as seen here: https://advertisingconsent.eu/cmp-list/ |
-| `pct_ad_requests_gdpr_applied_valid_consent_string_invalid_cmp` | double | `0.76` | pct_ad_requests_gdpr_applied_valid_consent_string_invalid_cmp | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is NOT registered with the IAB, as seen here: https://advertisingconsent.eu/cmp-list/ . |
+| `pct_ad_requests_gdpr_applied_valid_consent_string_valid_cmp` | double | `0.77` | pct_ad_requests_gdpr_applied_valid_consent_string_valid_cmp | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is registered with the IAB, as seen [here](https://iabeurope.eu/cmp-list/)  |
+| `pct_ad_requests_gdpr_applied_valid_consent_string_invalid_cmp` | double | `0.76` | pct_ad_requests_gdpr_applied_valid_consent_string_invalid_cmp | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is NOT registered with the IAB, as seen [here][https://iabeurope.eu/cmp-list/]. |
 | `pct_ad_requests_gdpr_applied_valid_consent_string_tcf_version_1` | double | `0.65` | pct_ad_requests_gdpr_applied_valid_consent_string_tcf_version_1 | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid and encoded according to TCF v1. |
 | `pct_ad_requests_gdpr_applied_valid_consent_string_tcf_version_2` | double | `0.55` | pct_ad_requests_gdpr_applied_valid_consent_string_tcf_version_2 | The percentage of incoming ad requests for which GDPR is applied, the consent string is valid and encoded according to TCF v2 |
 | `pct_ad_requests_gdpr_applied_valid_consent_string_xandr_consented` | double | `0.73` | pct_ad_requests_gdpr_applied_valid_consent_string_xandr_consented | The percentage of incoming ad requests for which GDPR is applied, and Xandr’s vendor bit (#32) is a 1 in the string for TCF v1 encoded strings. |
 
 ## Example
 
-### Create the JSON report request
+### Create a JSON report request
 
 The JSON file should include the `report_type` of `"cmp_analytics"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 
@@ -114,7 +114,7 @@ $ cat cmp_analytics
     }
 }
 ```
-### `POST` the request to the [Report Service](./report-service.md)
+### `POST` a request to the [Report Service](./report-service.md)
 
 `POST` the JSON request to get back a report ID.
 

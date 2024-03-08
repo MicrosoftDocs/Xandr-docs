@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Selecting the correct template for your creative
 
-Please use the guide below in determining which template to use for your creatives.
+Use the guide below in determining which template to use for your creatives.
 
 > [!TIP]
 > A creative's `media_url` / `content`value is plugged into the the creative template to form the code that is delivered to the user's browser. Therefore, it is essential to choose the appropriate template ID when submitting a creative. For more information about creatives, see the [Creative Service](./creative-service.md).
@@ -22,14 +22,14 @@ This template is used if your creative is a single URL that points to a piece of
 
 You will need to pass the URL in the `media_url` field and set an `id` of `1` in the template object.
 
-**Template**
+### Template
 
 ```
     <iframe frameborder="0" width="${CREATIVE_WIDTH}" height="${CREATIVE_HEIGHT}" marginheight="0" marginwidth="0" target="_blank" scrolling="no" src="${MEDIA_URL}"></iframe>  
             
 ```
 
-### ID: 1 Example
+#### ID: 1 Example
 
 **Creative**
 
@@ -58,14 +58,14 @@ This template is used if your creative is a single URL that points to a piece of
 
 You will need to pass the URL in the `media_url` field and set an `id` of `2` in the template object.
 
-**Template**
+### Template
 
 ```
 <html><body style="margin-left: 0%; margin-right: 0%; margin-top: 0%; margin-bottom: 0%"><script type="text/javascript" src="${MEDIA_URL}"></script></body></html>
       
 ```
 
-## ID: 2 Example
+#### ID: 2 Example
 
 **Creative**
 
@@ -94,14 +94,14 @@ This template is used if your creative starts and ends with Javascript component
 
 You will need to pass the Javascript code in the `content` field and set an `id` of `5` in the template object.
 
-**Template**
+### Template
 
 ```
 <html><body style="margin-left: 0%; margin-right: 0%; margin-top: 0%; margin-bottom: 0%"><script type="text/javascript">${CONTENT}</script></body></html>
       
 ```
 
-## ID: 5 Example
+#### ID: 5 Example
 
 **Creative**
 
@@ -130,14 +130,14 @@ This template is used if your creative starts and ends with HTML components, eve
 
 You will need to pass the html code in the `content` field and set an `id` of `6` in the template object.
 
-**Template**
+### Template
 
 ```
       ${CONTENT}
       
 ```
 
-## ID: 6 Example
+#### ID: 6 Example
 
 **Creative**
 

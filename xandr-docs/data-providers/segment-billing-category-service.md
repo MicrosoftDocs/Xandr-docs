@@ -32,7 +32,7 @@ The Segment Billing Category Service allows you to **map** your segments to your
 >
 > When adding or updating a mapping record, you should structure the JSON as a single object called "`segment-billing-category`". For exact formatting, see the [examples](#examples) below.
 >
-> The Segment Billing Category service works on BOTH the platform API as well as the impression bus API. Although only [api.adnxs.com](https://api.adnxs.com/) is used below, it may be replaced with [api.appnexus.com](https://api.appnexus.com/) for those clients who have access to the platform API. Only members who are on will have access to the platform API. The majority of data providers can only access the impression bus API.
+> The Segment Billing Category service works on BOTH the platform API as well as the impression bus API. Although only `api.adnxs.com` is used below, it may be replaced with `api.appnexus.com` for those clients who have access to the platform API. Only members who are on will have access to the platform API. The majority of data providers can only access the impression bus API.
 
 ## JSON fields
 

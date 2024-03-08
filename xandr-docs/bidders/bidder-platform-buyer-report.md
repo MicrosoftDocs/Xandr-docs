@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Bidder Platform Buyer report
 
-The Bidder Platform Buyer Report provides granular transaction information to buyers (down to the tag level). For instructions on retrieving this report, see the [Example](#example) below.
+The Bidder Platform Buyer Report provides granular transaction information to buyers (down to the tag level). For instructions on retrieving this report, see the [Examples](#examples) below.
 
 > [!TIP]
 > Need more than 90 days of data?
@@ -89,11 +89,11 @@ The `report_interval` field in the JSON request can be set to one of the followi
 | `view_rate` | double | `view_rate` | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 | `view_measurable_rate` | double | `view_measurable_rate` | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
-## Example
+## Examples
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` `bidder_platform_buyer`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` `bidder_platform_buyer`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat report

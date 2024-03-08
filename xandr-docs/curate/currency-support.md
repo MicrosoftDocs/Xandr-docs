@@ -113,8 +113,7 @@ Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at ap
 Users can set the transaction currency for certain buy and sell side objects (listed below under Currency Settings per Object) under their member. The buy/sell side object currency settings control one or both of the following:
 
 1. The default currency for any child objects created under the parent (e.g., Insertion Order determines the currency of its Line Items). The user can override the default currency set at the parent object.
-1. Transacting (buying or selling inventory). This is the currency of record for the object since it's what is actually logged for each
-    auction.
+1. Transacting (buying or selling inventory). This is the currency of record for the object since it's what is actually logged for each auction.
 
 For more details on the objects that have currency setting and what those settings affect, see [Currency settings per object](#currency-settings-per-object) below.
 

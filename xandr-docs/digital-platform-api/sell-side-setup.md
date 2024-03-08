@@ -43,7 +43,7 @@ The diagram below indicates the publisher fields used, sell-side objects created
 > [!NOTE]
 > The API `"site"` object is referred to as a "placement group" when created and configured using.
 
-:::image type="content" source="media/sell-side-objects.png" alt-text="Diagram that shows steps for setting up a simple sell-side implementation with publisher fields and objects created or configured.":::
+:::image type="content" source="media/sell-side-objects.png" alt-text="Diagram that shows the publisher fields used, sell-side objects created or configured, and setup steps for sell-side implementation.":::
 
 ## Best practices
 

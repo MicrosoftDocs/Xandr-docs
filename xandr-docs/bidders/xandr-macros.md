@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Xandr macros
 
-
+Macros are used to populate URLs (such as those found in creatives) with useful information. They are essentially variables that are expanded by our ad server with whatever their actual value is at the time of the ad call.
 
 This page contains information about all of the macros we support. For each macro, we list the information that that macro is replaced with during the ad call.
 
@@ -66,7 +66,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${TIMESTAMP}` | The UNIX timestamp for the auction. |
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user (e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"). |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
-| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format: <br><br>`…&extended_ids=<source_1>,<id_1>&#124;<source_2>,<id_2>&#124;…`<br><br> The separators proposed are commas between the source and the value, and a pipe symbol between different ID types and value pairs. |
+| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format: <br><br>`…&extended_ids=<source_1>,<id_1>/;<source_2>,<id_2>/;…`<br><br> The separators proposed are commas between the source and the value, and a pipe symbol between different ID types and value pairs. |
 
 ### European Ad inventory and providing notice, transparency and choice
 

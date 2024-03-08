@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Tag parser service
+# Tag Parser service
 
 When you receive a file of ad tags from Atlas, Mediamind, or DoubleClick, or when you format a list of ad tags using the AppNexus template, you can use the Tag Parser Service to parse out the name, size, and content of each tag in the file. Note that you must base64-encode the file to parse it with this service.
 

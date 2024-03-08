@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller Site Domain Report
-description: The seller site domain report helps sellers understand inventory coming through publishers, optimize domains for campaigns, and understand audit impact.
+description: The Seller Site Domain report helps sellers understand inventory coming through publishers, optimize domains for campaigns, and understand audit impact.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller site domain report
+# Digital Platform API - Seller Site Domain report
 
 The Seller Site Domain Report is designed to give sellers information about what kind of inventory is coming through a publisher. For example, as a seller, you might distribute placement tags to your publishers and then want to verify that those tags are running on the inventory you intended. In addition, this report allows you to:
 
@@ -29,7 +29,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 > [!TIP]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 60 days.
 
@@ -132,7 +132,7 @@ The iFrame is located on the publisher's web page, but it is serving its content
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 ```
 $ cat report-request.json

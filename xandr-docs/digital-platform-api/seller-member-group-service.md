@@ -1,11 +1,11 @@
 ---
 title: Seller Member Group Service
-description: Buyers can target seller member groups for access to a wider variety of inventory from newer and smaller publishers. Sellers sell inventory with one or more members.
+description: Buyers can use the Seller Member Group service to target seller member groups for access to a wider variety of inventory from newer and smaller publishers.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Seller member group service
+# Seller Member Group service
 
 > [!NOTE]
 > This service is currently available to a limited set of clients and Microsoft employees only.
@@ -18,9 +18,9 @@ Only admins can write to this service.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/seller-member-group | View a list of all seller member groups |
-| `GET` | https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID | View a specific seller member group |
-| `GET` | https://api.appnexus.com/seller-member-group?id=1,2,3 | View multiple seller member groups by ID using a comma-separated list |
+| `GET` | `https://api.appnexus.com/seller-member-group` | View a list of all seller member groups |
+| `GET` | `https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID` | View a specific seller member group |
+| `GET` | `https://api.appnexus.com/seller-member-group?id=1,2,3` | View multiple seller member groups by ID using a comma-separated list |
 
 ### Admin-only functions
 
@@ -28,9 +28,9 @@ Only Xandr employees can create, modify, or delete a seller member group.
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/seller-member-group <br>(seller member group JSON) | Add a new seller member group (admin only) |
-| `PUT` | https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID <br>(seller member group JSON) | Modify an existing seller member group (admin only) |
-| `DELETE` | https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID | Delete a seller member group (admin only) |
+| `POST` | `https://api.appnexus.com/seller-member-group` <br>(seller member group JSON) | Add a new seller member group (admin only) |
+| `PUT` | `https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID` <br>(seller member group JSON) | Modify an existing seller member group (admin only) |
+| `DELETE` | `https://api.appnexus.com/seller-member-group?id=SELLER_MEMBER_GROUP_ID` | Delete a seller member group (admin only) |
 
 ## JSON fields
 

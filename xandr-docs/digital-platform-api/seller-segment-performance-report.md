@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller Segment Performance Report
-description: The Seller Segment Performance Report tracks targeted segments' impact on overall performance and transacted impressions to help sellers understand usage per segment.
+description: Use the Seller Segment Performance Report to track targeted segments' impact on overall performance and transacted impressions to understand usage per segment.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller segment performance report
+# Digital Platform API - Seller Segment Performance report
 
 The Seller Segment Performance Report provides sellers insights into how their targeted segments are contributing to the overall performance of their line items. The report provides data on all targeted segments (includes and excludes) that contributed towards transacted impressions.This reporting helps sellers in the following ways:
 
@@ -35,7 +35,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 100 days.
 
@@ -99,7 +99,7 @@ Data retention period for this report is 100 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"seller_segment_performance"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

@@ -52,8 +52,7 @@ For a general list of best practices to follow when working with the API, see 
 
 ## Setup procedure
 
-The following steps will guide you through the process of setting up a
-GDALI with typical configurations:
+The following steps will guide you through the process of setting up a GDALI with typical configurations:
 
 - [Step 1 - Obtain an authorization token](#step-1-obtain-an-authorization-token)
 - [Step 2 - Create a seamless insertion order](#step-2-create-a-seamless-insertion-order) (if an appropriate one is not available under the advertiser)

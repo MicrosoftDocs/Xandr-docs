@@ -1,11 +1,11 @@
 ---
 title: Targeting Value Service
-description: Use the targeting-value and targeting-key services to create your own key/value combinations for targeting on-line items and campaigns. 
+description: Use the Targeting Value and Targeting Key services to create your own key/value combinations for targeting line items and campaigns. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Targeting value service
+# Targeting Value service
 
 The targeting-value service works in conjunction with the targeting-key service to allow you to create your own key/value combinations for use in targeting on line items, campaigns, and so on. See [Custom Key Value Targeting](./custom-key-value-targeting.md) for more information.
 
@@ -13,12 +13,12 @@ The targeting-value service works in conjunction with the targeting-key service 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID | View all targeting values for a specific key. |
-| `GET` | https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID&id=TARGETING_VALUE_ID | View a specific targeting value. |
-| `POST` | https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID | Add a new targeting value. |
-| `POST` | https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID | Add multiple new targeting values. |
-| `PUT` | https://api.appnexus.com/targeting-value?id=TARGETING_VALUE_ID | Modify a targeting value. |
-| `DELETE` | https://api.appnexus.com/targeting-value?id=TARGETING_VALUE_ID | Delete a targeting value. |
+| `GET` | `https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID` | View all targeting values for a specific key. |
+| `GET` | `https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID&id=TARGETING_VALUE_ID` | View a specific targeting value. |
+| `POST` | `https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID` | Add a new targeting value. |
+| `POST` | `https://api.appnexus.com/targeting-value?targeting_key_id=TARGETING_KEY_ID` | Add multiple new targeting values. |
+| `PUT` | `https://api.appnexus.com/targeting-value?id=TARGETING_VALUE_ID` | Modify a targeting value. |
+| `DELETE` | `https://api.appnexus.com/targeting-value?id=TARGETING_VALUE_ID` | Delete a targeting value. |
 
 ## JSON fields
 

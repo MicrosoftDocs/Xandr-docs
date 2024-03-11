@@ -72,11 +72,11 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `buyer_ecpm` | money | `123.45` | buyer_media_cost / imps_delivered * 1000 | The buyer's cost per impression, expressed in eCPM. |
 | `buyer_ecpm_buying_currency` | money | `123.45` | buyer_ecpm, expressed in the buyer's currency | The buyer's cost per impression in their selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
 
-## Example
+## Examples
 
 ### Create the JSON-formatted report request
 
-The JSON file should include the `report_type` `bidder_pricing_report`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (year, month, day), and specify the format in which the data should be returned (csv, excel, or html). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
+The JSON file should include the `report_type` `bidder_pricing_report`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the format in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](report-service.md).
 
 ```
 $ cat buyer_invoice_report_request.json

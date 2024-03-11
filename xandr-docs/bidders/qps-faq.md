@@ -8,8 +8,7 @@ ms.date: 10/28/2023
 
 ## Summary
 
-QPS is defined as queries per second. For external bidders, QPS is used to describe the total number of bid requests that can be sent per second. The implementation of QPS is accomplished via the field `qps_limit`, on the `bidder_instance` object. This allows the external
-bidder to set a maximum traffic to be sent to per datacenter.
+QPS is defined as queries per second. For external bidders, QPS is used to describe the total number of bid requests that can be sent per second. The implementation of QPS is accomplished via the field `qps_limit`, on the `bidder_instance` object. This allows the external bidder to set a maximum traffic to be sent to per datacenter.
 
 ## Details
 

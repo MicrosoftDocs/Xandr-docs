@@ -12,8 +12,7 @@ The **Floor Rules Manager** allows you to set your network's preferred bid amoun
 - Create a conditional floor rule to set hard and soft floors or enable Floor Optimization for specific impressions. You can target floors based on impression frequency, geography, segment, specific placement, category, placement size, buyer, brand, or creative category.
 
 > [!NOTE]
-> For more information on floors and how they work, see [Working with Yield Management](working-with-yield-management.md) and
-> [Update Floor Rules](update-floor-rules.md).
+> For more information on floors and how they work, see [Working with Yield Management](working-with-yield-management.md) and [Update Floor Rules](update-floor-rules.md).
 
 To begin, select **Partners** > **Yield Management** > **Floor Rules** from the navigation menu.
 
@@ -22,8 +21,7 @@ To begin, select **Partners** > **Yield Management** > **Floor Rules** from the 
 Create a base rule to set hard and soft floors for all of the publisher's inventory.
 
 > [!NOTE]
-> For more information on floors and how they work, see [Working with Yield Management](working-with-yield-management.md) and
-> [Update Floor Rules](update-floor-rules.md).
+> For more information on floors and how they work, see [Working with Yield Management](working-with-yield-management.md) and [Update Floor Rules](update-floor-rules.md).
 
 ### Step 1: Getting there
 
@@ -79,8 +77,7 @@ Enter the net floor values for the base rule and select the type of bids that th
 Click **Advanced Settings** to enter these additional settings:
 
 - **Code** - Codes may be helpful for networks with distinct internal names/IDs, so that the names/IDs can be associated in Monetize and then extracted for reporting purposes via our API.
-- **Reserve Price Override** - Turn this feature on to enable the publisher to override the YM Rule hard floor via the ad tag query
-  string `reserve_price` field (as per [Placement Tag Parameters](placement-tag-parameters.md) and [Target Video Attributes via Query String Parameters](target-video-attributes-via-query-string-parameters.md)) or via the ad request `bidfloor` parameter (as per [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md)). The `reserve` parameter that publishers pass must be greater than the existing hard floor in order to override it.
+- **Reserve Price Override** - Turn this feature on to enable the publisher to override the YM Rule hard floor via the ad tag query string `reserve_price` field (as per [Placement Tag Parameters](placement-tag-parameters.md) and [Target Video Attributes via Query String Parameters](target-video-attributes-via-query-string-parameters.md)) or via the ad request `bidfloor` parameter (as per [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md)). The `reserve` parameter that publishers pass must be greater than the existing hard floor in order to override it.
 
 ### Step 7. Save the base floor rule
 
@@ -147,8 +144,7 @@ Under **Targeting**, you can select the types of users you would like the rule t
 Click the **+** next to **Advanced Settings** to open the panel to complete two optional items:
 
 - **Code** - Codes may be helpful for third-party networks that use distinct internal names or IDs. Enter that name or ID in the Code box to allow it to be associated in Monetize and then extracted for reporting purposes via our API.
-- **Reserve Price Override** - Turn this feature **ON** to enable the publisher to override the YM Rule hard floor via the ad tag query
-  string reserve price field (as per [Placement Tag Parameters](placement-tag-parameters.md) and [Target Video Attributes via Query String Parameters](target-video-attributes-via-query-string-parameters.md)) or via the ad request bidfloor parameter (as per [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md)). The `reserve/bidfloor` parameter that publishers pass must be greater than the existing hard floor in order to override it for the given action.
+- **Reserve Price Override** - Turn this feature **ON** to enable the publisher to override the YM Rule hard floor via the ad tag query string reserve price field (as per [Placement Tag Parameters](placement-tag-parameters.md) and [Target Video Attributes via Query String Parameters](target-video-attributes-via-query-string-parameters.md)) or via the ad request bidfloor parameter (as per [Incoming Bid Request from SSPs](../supply-partners/incoming-bid-request-from-ssps.md)). The `reserve/bidfloor` parameter that publishers pass must be greater than the existing hard floor in order to override it for the given action.
 
 ### Step 8. Save the conditional floor rule
 

@@ -44,9 +44,7 @@ After you've selected your values, you can continue to add keys to this group or
 
 ## Creating key/value targets
 
-Let's start by walking through a very simple example. In this example we're going to target users who enjoy eating certain fruits. In
-particular, we want to target users who eat either apples or oranges. The key is fruit, and the values are apple and orange. Here are the
-steps to create this target:
+Let's start by walking through a very simple example. In this example we're going to target users who enjoy eating certain fruits. In particular, we want to target users who eat either apples or oranges. The key is fruit, and the values are apple and orange. Here are the steps to create this target:
 
 1. In the **Key/Value Targeting** dialog, click **Select Key**.
 1. Select **fruit** from the dropdown. If you don't see the key you're looking for, scroll down the dropdown list or use the search box. (This is just an example. You may not have a fruit key defined as one of your targeting options.)
@@ -85,13 +83,11 @@ We have two groups on this tree:
 
 - The group on the right side of the tree represents the first part of our statement: All users who live in either Seattle or LA (city [Seattle, LA]) AND eat oranges (fruit [orange]).
 
-- The group on the left side of the tree represents the last part of our statement: all users who live in NY (city [NY]) AND eat apples
-(fruit [apple]).
+- The group on the left side of the tree represents the last part of our statement: all users who live in NY (city [NY]) AND eat apples (fruit [apple]).
 
   We tie the two groups together with an OR, because we want to target users who are in either group. (An AND would target users who are in both groups.)
 
-  To see how to enter our target statement into the **Key/Value Targeting** dialog, we're going to step through our expression diagram
-  while we go through the dialog. (For this example we're assuming keys of fruit and city have been predefined, along with their associated values.)
+  To see how to enter our target statement into the **Key/Value Targeting** dialog, we're going to step through our expression diagram while we go through the dialog. (For this example we're assuming keys of fruit and city have been predefined, along with their associated values.)
 
 We're going to start our key/value target from the bottom-right of our expression tree:
 
@@ -157,8 +153,7 @@ We're going to start our key/value target from the bottom-right of our expressio
 
 ## Numeric key/value targeting
 
-The example in the previous section described adding keys with string values. Adding keys with numeric values is similar, but with the
-addition of more comparison operators.
+The example in the previous section described adding keys with string values. Adding keys with numeric values is similar, but with the addition of more comparison operators.
 
 When you're working with strings, the only comparison operators that really make sense are equals and not equals. For example, the expression string1 > string5 is meaningless. (Unless you're looking at things like ASCII values, which we're not.) But with numbers, we have many more options. When you select a numeric key in **Key/Value Targeting**, you can choose from the following:
 

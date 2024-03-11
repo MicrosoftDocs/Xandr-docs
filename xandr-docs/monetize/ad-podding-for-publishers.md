@@ -8,17 +8,17 @@ ms.date: 10/28/2023
 
 An ad pod specifies a sequenced group of video ads that are played back-to-back within a single video placement. In traditional television, an ad pod would correlate to a commercial break during an episode. Ad Pods can be scheduled in pre-roll, mid-roll, and post-roll placements, as shown in the following diagram.
 
-:::image type="content" source="media/ad-pod-diagram.png" alt-text="A diagram that shows the different placements of Ad Pods.":::
+:::image type="content" source="media/ad-pod-diagram.png" alt-text="Diagram that shows the different placements of Ad Pods.":::
 
 Ad pods are delivered using VMAP 1.0.1. VMAP is a wrapper for VAST ads. The following diagram shows the structure of a VMAP document.
 
-:::image type="content" source="media/ad-pod-vmap-diagram.png" alt-text="A diagram that shows the structure of a VMAP document.":::
+:::image type="content" source="media/ad-pod-vmap-diagram.png" alt-text="Diagram that shows the structure of a VMAP document.":::
 
 ## Video bumpers
 
 Video bumpers are small video ads (usually 3-10 seconds in length) at the very beginning, or at the end of an ad pod. As a Publisher, you will also be able to add bumpers to your video placements. The following diagram shows how bumpers work within an ad pod.
 
-:::image type="content" source="media/bumper-example.png" alt-text="A diagram that shows the working of bumpers in an ad pod.":::
+:::image type="content" source="media/bumper-example.png" alt-text="Diagram that shows the working of bumpers in an ad pod.":::
 
 By default, video placements do not have bumpers associated with them. Bumpers must be explicitly added to video placements. As a Publisher, you can set a default creative for bumpers. At this time, only managed campaigns can bid on bumpers.
 

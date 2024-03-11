@@ -36,7 +36,7 @@ Viewability measurement is the technological answer to a longer-lasting business
 
 The following are examples of creatives that are not viewable:
 
-:::image type="content" source="media/not-viewable.png" alt-text="A diagram that shows examples of creatives that are not viewable.":::
+:::image type="content" source="media/not-viewable.png" alt-text="Diagram that shows examples of creatives that are not viewable.":::
 
 Viewability depends on a myriad of parameters: screen size, creative loading duration, and so on.
 
@@ -48,7 +48,7 @@ Viewability measurement is, by its nature, an exhaustive measurement of every si
 
 Viewability measurement is achieved by JavaScript embedded within the creative. This script is called for each individual ad-impression. It launches automatically as the page loads, and immediately starts measuring if and when the creative is viewable.
 
-:::image type="content" source="media/viewability-tech.png" alt-text="A diagram that shows how viewability is measured.":::
+:::image type="content" source="media/viewability-tech.png" alt-text="Diagram that shows how viewability is measured.":::
 
 The primary method that the script will use to determine whether an ad is viewable is "page geometry", which takes into account the size of the screen and the size and position of the creative on the page among other factors such as scrolling and window focus. However, if only a part of the required information is available, other techniques must be used so that the measurement is consistent across all platforms.
 
@@ -56,9 +56,9 @@ The primary method that the script will use to determine whether an ad is viewab
 
 Viewability measurement must work in all environments and provide consistent results. IFrames are the most challenging of technical environments. When the creative and the measurement script are served within an IFrame, regular geometric methods cannot be applied. Alternative methods, such as browser optimization, must be developed. Depending on the technologies used by ad-viewability vendors, the potential success rate can be very limited.
 
-:::image type="content" source="media/iframe-measurement.png" alt-text="A diagram that shows the challenges of viewability measurement for creatives within IFrames.":::
+:::image type="content" source="media/iframe-measurement.png" alt-text="Diagram that shows the challenges of viewability measurement for creatives within IFrames.":::
 
-:::image type="content" source="media/viewability-tech-b.png" alt-text="A diagram that shows the success rate of viewability measurement across devices.":::
+:::image type="content" source="media/viewability-tech-b.png" alt-text="Diagram that shows the success rate of viewability measurement across devices.":::
 
 In some instances, viewability cannot be measured with success. In these cases, no assumption can be made on the viewability of the impression.
 

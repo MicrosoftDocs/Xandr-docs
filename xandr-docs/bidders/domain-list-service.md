@@ -1,6 +1,6 @@
 ---
 title: Bidders - Domain List Service
-description: Customize domain preferences, create allowlist or blocklist with a domain list service, specifying targeted or excluded domains for user activities.
+description: Explore customizing domain preferences, use a domain list service to create allowlists/blocklists, specify domains for or against user activities.
 ms.date: 10/28/2023
 ---
 

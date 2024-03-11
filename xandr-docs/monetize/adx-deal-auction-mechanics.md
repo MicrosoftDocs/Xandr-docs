@@ -44,7 +44,7 @@ The table below describes several hypothetical Google Ad Manager bid requests an
 
 If you have your own Google Ad Manager Account (most Google Ad Manager buyers do), you have access to the **Google Ad Manager RTB Breakout UI**. As a result, you may have encountered something similar to the following when troubleshooting non-delivery of deal campaigns. This table presents some reasons why, for a given deal ID, Google Ad Manager may log a substantial number of "Responses without bids for this deal".
 
-:::image type="content" source="media/interpreting-adx-bid-responses.png" alt-text="A diagram that shows some possible reasons for a large number of 'Responses without bids for this deal' being logged.":::
+:::image type="content" source="media/interpreting-adx-bid-responses.png" alt-text="Diagram that shows some possible reasons for a large number of 'Responses without bids for this deal' being logged.":::
 
 When you see **Bids not for this deal** in the **Google Ad Manager RTB Breakout**, it means that the only campaigns that have bid on Google Ad Manager impressions containing the relevant deal ID are Open-auction Campaigns.
 

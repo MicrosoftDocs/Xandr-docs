@@ -1,11 +1,11 @@
 ---
 title: Seller Pod Analytics Report
-description: Use the seller pod analytics report to view metrics for groups of ads (aka pods) delivered sequentially in between segments of non-commercial video programming.
+description: Use the Seller Pod Analytics report to view metrics for groups of ads (aka pods) delivered sequentially in between segments of non-commercial video programming.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Seller pod analytics report
+# Seller Pod Analytics report
 
 > [!NOTE]
 > This feature is currently in **Alpha**. It is still under development and may be subjected to changes without notice. Contact your Xandr Account Representative to get it enabled.
@@ -138,7 +138,7 @@ Data in this report is retained for 420 days.
 
 ## Example
 
-### Create the JSON-formatted report request
+### Create a JSON-formatted report request
 
 The JSON file should include the `report_type` of `"seller_pod_analytics_report"`, as well as the `columns` (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filters for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

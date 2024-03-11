@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller Detected Site Domain Report
-description: Use the seller detected site domain report to view details about actual domains being sold without affecting the auction itself.
+description: Use the Seller Detected Site Domain report to view details about actual domains being sold without affecting the auction itself.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller detected site domain report
+# Digital Platform API - Seller Detected Site Domain report
 
 > [!NOTE]
 > This report was deprecated in 2021.
@@ -28,7 +28,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 > [!TIP]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 7 days.
 
@@ -95,7 +95,7 @@ For example, a publisher is given a snippet of HTML code to put on their pages t
 </iframe>
 ```
 
-The iFrame is located on the publisher's web page, but it is serving its contents from the network's domain. Because the page and the iFrame are hosted on different domains, the security restrictions of the "Same Origin Policy" apply, and communication between the publisher's page and the network's iFrame is forbidden. Therefore the network is unable to determine the actual domain of the publisher's page. As a result, the network passes along its own domain as the referring URL to the placement.
+The iFrame is located on the publisher's web page, but it is serving its contents from the network's domain. Because the page and the iFrame are hosted on different domains, the security restrictions of the "Same Origin Policy" apply, and communication between the publisher's page and the network's iFrame is forbidden. Therefore, the network is unable to determine the actual domain of the publisher's page. As a result, the network passes along its own domain as the referring URL to the placement.
 
 ### Age buckets
 
@@ -118,7 +118,7 @@ The iFrame is located on the publisher's web page, but it is serving its content
 
 ## Example
 
-### Create the report request
+### Create a report request
 
 ```
 $ cat report-request.json

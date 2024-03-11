@@ -1,6 +1,6 @@
 ---
 title: Segment Service
-description: Use the segment service to create segment IDs for inventory page placement and store them in the server-side cookie store.
+description: Use the Segment service to create segment IDs for inventory page placement and store them in the server-side cookie store.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -25,16 +25,16 @@ The Segment Service lets you create segment IDs, which are then used to create s
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | https://api.appnexus.com/segment?member_id=MEMBER_ID<br><br>https://api.appnexus.com/segment <br>(segment JSON) | Add a new segment. |
-| `POST` | https://api.appnexus.com/segment?advertiser_id=ADVERTISER_ID<br><br>https://api.appnexus.com/segment?advertiser_code=ADVERTISER_CODE <br>(segment JSON) | Add a new advertiser segment. |
-| `PUT` | https://api.appnexus.com/segment?id=SEGMENT_ID<br><br>[https://api.appnexus.com/segment?code=SEGMENT_CODE](https://api.appnexus.com/segment?code=SEGMENT_CODE)<br>(segment JSON) | Modify an existing segment. |
-| `PUT` | https://api.appnexus.com/segment?id=SEGMENT_ID&advertiser_id=ADVERTISER_ID<br><br>[https://api.appnexus.com/segment?code=SEGMENT_CODE&advertiser_code=ADVERTISER_CODE](https://api.appnexus.com/segment?code=SEGMENT_CODE&advertiser_code=ADVERTISER_CODE)<br>(segment JSON) <br><br>**Tip**: To change a segment from advertiser-owned to network-owned. Make a `PUT` call, passing the segment ID and member ID ithe query string and setting `advertiser_id` to `null` in the JSON file. See [Examples](#examples) for more information. | Modify an existing advertiser segment. |
-| `GET` | https://api.appnexus.com/segment | View all segments. |
-| `GET` | https://api.appnexus.com/segment?id=1,2,3 | View multiple segments by ID using a comma-separated list. |
-| `GET` | https://api.appnexus.com/segment?id=SEGMENT_ID<br><br>[https://api.appnexus.com/segment?code=SEGMENT_CODE](https://api.appnexus.com/segment?code=SEGMENT_CODE) | View a particular segment. |
-| `GET` | https://api.appnexus.com/segment?include_shared=0 | View non-shared first party segments. |
-| `GET` | https://api.appnexus.com/segment?search=SEARCH_TERM | Search for segments with IDs, short names, or codes containing certain characters. |
-| `DELETE` | https://api.appnexus.com/segment?id=SEGMENT_ID | Delete an existing segment. |
+| `POST` | `https://api.appnexus.com/segment?member_id=MEMBER_ID`<br><br>`https://api.appnexus.com/segment` <br>(segment JSON) | Add a new segment. |
+| `POST` | `https://api.appnexus.com/segment?advertiser_id=ADVERTISER_ID`<br><br>`https://api.appnexus.com/segment?advertiser_code=ADVERTISER_CODE`<br>(segment JSON) | Add a new advertiser segment. |
+| `PUT` | `https://api.appnexus.com/segment?id=SEGMENT_ID`<br><br>`https://api.appnexus.com/segment?code=SEGMENT_CODE`<br>(segment JSON) | Modify an existing segment. |
+| `PUT` | `https://api.appnexus.com/segment?id=SEGMENT_ID&advertiser_id=ADVERTISER_ID`<br><br>`https://api.appnexus.com/segment?code=SEGMENT_CODE&advertiser_code=ADVERTISER_CODE`<br>(segment JSON) <br><br>**Tip**: To change a segment from advertiser-owned to network-owned. Make a `PUT` call, passing the segment ID and member ID ithe query string and setting `advertiser_id` to `null` in the JSON file. See [Examples](#examples) for more information. | Modify an existing advertiser segment. |
+| `GET` | `https://api.appnexus.com/segment` | View all segments. |
+| `GET` | `https://api.appnexus.com/segment?id=1,2,3` | View multiple segments by ID using a comma-separated list. |
+| `GET` | `https://api.appnexus.com/segment?id=SEGMENT_ID`<br><br>`https://api.appnexus.com/segment?code=SEGMENT_CODE` | View a particular segment. |
+| `GET` | `https://api.appnexus.com/segment?include_shared=0` | View non-shared first party segments. |
+| `GET` | `https://api.appnexus.com/segment?search=SEARCH_TERM` | Search for segments with IDs, short names, or codes containing certain characters. |
+| `DELETE` | `https://api.appnexus.com/segment?id=SEGMENT_ID` | Delete an existing segment. |
 
 ## JSON fields
 

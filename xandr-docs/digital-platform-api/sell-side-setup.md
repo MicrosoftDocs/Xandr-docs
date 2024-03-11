@@ -1,6 +1,6 @@
 ---
 title: Sell-Side Setup
-description: This article provides guidance on creating and configuring sell-side objects for a typical Xandr API setup.
+description: This article provides guidance to create and configure sell-side objects for a typical Xandr API setup.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -15,14 +15,14 @@ Setting up a publisher typically involves making requests to the following API s
 
 | API Endpoint | Sell-Side Object | Detailed Reference |
 |:---|:---|:---|
-| https://api.appnexus.com/publisher | `publisher` | [Publisher Service](./publisher-service.md) |
-| https://api.appnexus.com/site | `site` | [Site Service](./site-service.md) |
-| https://api.appnexus.com/placement | `placement` | [Placement Service](./placement-service.md) |
-| https://api.appnexus.com/payment-rule | `payment rule` | [Payment Rule Service](./payment-rule-service.md) |
-| https://api.appnexus.com/ad-profile | `ad profile` | [Ad Profile Service](./ad-profile-service.md) |
-| https://api.appnexus.com//ad-quality-rule | `ad quality rule` | [Ad Quality Rule Service](./ad-quality-rule-service.md) |
+| `https://api.appnexus.com/publisher` | `publisher` | [Publisher Service](./publisher-service.md) |
+| `https://api.appnexus.com/site` | `site` | [Site Service](./site-service.md) |
+| `https://api.appnexus.com/placement` | `placement` | [Placement Service](./placement-service.md) |
+| `https://api.appnexus.com/payment-rule` | `payment rule` | [Payment Rule Service](./payment-rule-service.md) |
+| `https://api.appnexus.com/ad-profile` | `ad profile` | [Ad Profile Service](./ad-profile-service.md) |
+| `https://api.appnexus.com//ad-quality-rule` | `ad quality rule` | [Ad Quality Rule Service](./ad-quality-rule-service.md) |
 
-This guide uses `cURL` examples for all requests. You can use other API request tools (e.g., [Postman](https://www.getpostman.com/), but you’ll then need to adjust the examples accordingly.
+This guide uses `cURL` examples for all requests. You can use other API request tools, for example, [Postman](https://www.getpostman.com/), but you’ll then need to adjust the examples accordingly.
 
 > [!NOTE]
 > For simplicity, the configuration examples provided do not customize the objects to particular use cases. See [Sell-Side Services](./sell-side-services.md) for more information on the settings available within each service.
@@ -43,7 +43,7 @@ The diagram below indicates the publisher fields used, sell-side objects created
 > [!NOTE]
 > The API `"site"` object is referred to as a "placement group" when created and configured using.
 
-:::image type="content" source="media/sell-side-objects.png" alt-text="Diagram that shows setup steps for setting up a simple sell-side implementation with publisher fields, objects created or configured, and setup steps.":::
+:::image type="content" source="media/sell-side-objects.png" alt-text="Diagram that shows the publisher fields used, sell-side objects created or configured, and setup steps for sell-side implementation.":::
 
 ## Best practices
 

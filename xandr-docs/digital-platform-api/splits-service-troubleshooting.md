@@ -1,6 +1,6 @@
 ---
 title: Splits Service Troubleshooting
-description: This article explains error messages and common issues that may occur when using the splits service.
+description: This article explains error messages and common issues that may occur when using the Splits service.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 This page explains error messages and common issues that may occur when using the [Splits Service](./splits-service.md).
 
-**Error messages**
+## Error messages
 
 This table lists common error messages and their meanings.
 

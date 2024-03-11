@@ -57,7 +57,7 @@ If the user is in iOS14 and the app has not updated to v7.6.2+ of the SDK, AdReq
 - [Conversant](https://www.conversantmedia.com/)
 - [Tune (formerly HasOffers)](https://www.tune.com/)
 - [Adjust](https://www.adjust.com/)
-  - [Adjust Network Integrations Page](https://docs.adjust.com/en/network-integration/)
+  - [Adjust Network Integrations Page](https://help.adjust.com/en/article/integrated-partners)
   - [Adjust Partner Page (Click URL Builder)](https://partners.adjust.com/index.md)
 
 Go [here](https://monetize.xandr.com/docs/set-up-third-party-mobile-app-install-tracking) (log in required) for instructions on how to integrate these vendors with your app and have them report back to your Xandr account.

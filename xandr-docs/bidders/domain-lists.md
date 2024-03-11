@@ -1,6 +1,6 @@
 ---
 title: Domain Lists
-description: Select or exclude domain lists created by the bidder to build a customizable blocklist for better control.
+description: Explore customizable blocklist options by selecting or excluding bidder-created domain lists, enhancing control over your blocklist selections.
 ms.date: 10/28/2023
 ---
 

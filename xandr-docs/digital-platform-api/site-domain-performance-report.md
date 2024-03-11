@@ -1,11 +1,11 @@
 ---
 title: Site Domain Performance Report
-description: Use the site domain performance report to view performance and optimization data by domain for a specific advertiser.
+description: Use the Site Domain Performance report to view performance and optimization data by domain for a specific advertiser.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Site domain performance report
+# Site Domain Performance report
 
 The Site Domain Performance report can be used to view performance and optimization data by domain for a specific advertiser.
 
@@ -29,7 +29,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 If you use the `start_date` and `end_date` fields to define the time range, the `start_date` must not be more than 45 days in the past. Since hourly data is not available for this report, `start_date` and `end_date` cannot be identical and must be formatted as `"YYYY-MM-DD"` rather than `"YYYY-MM-DD HH:MM:SS"`. Report data can be returned only for the UTC timezone.
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 45 days.
 
@@ -136,7 +136,7 @@ Data retention period for this report is 45 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 ```
 $ cat domain_performance

@@ -70,7 +70,7 @@ Provided below are some Windows Apps inventory samples:
 
 #### Ad quality
 
-- [Microsoft CAP](https://about.ads.microsoft.com/en-us/en/policies)
+- [Microsoft CAP](https://about.ads.microsoft.com/en-us/policies/home)
 - Animation Length up to 30 sec
 
 ### How to target Windows app inventory and additional information

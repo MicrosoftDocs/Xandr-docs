@@ -8,7 +8,8 @@ ms.custom: digital-platform-api
 # Batch Segment Service - Sample PHP script
 
 > [!NOTE]
-> This service is currently available to a limited set of clients and Microsoft employees only.
+>
+> - This service is currently available to a limited set of clients and Microsoft employees only.
 > - The content on this page is provided only as an example; we cannot robustly support PHP script implementations with clients.
 
 The following script will connect to the Batch Segment Service, request a job ID and upload URL, `POST` your segment file to the upload URL, and return yet another URL where you can check the status of your processing job.

@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller Fill and Delivery Publisher Report
-description: Sellers can use the seller fill and delivery report to troubleshoot impressions and diagnose delivery issues.
+description: Sellers can use the Seller Fill and Delivery Publisher report to troubleshoot impressions and diagnose delivery issues.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller fill and delivery publisher report
+# Digital Platform API - Seller Fill and Delivery Publisher report
 
 The Seller Fill and Delivery Report was designed as a troubleshooting tool to provide sellers granular information regarding all impressions sent to Xandr for auction and to help diagnose delivery issues all the way down to the tag and domain level. Using the new descriptive fields, it is possible to see an approximation of overall fill rate on Xandr using the “Total Ad Responses" and "Total Ad Requests” metrics.
 
@@ -16,7 +16,9 @@ The data contained in this report will help pinpoint issues contributing to untr
 - Video player errors, etc.
 
 > [!NOTE]
-> **For video sellers only**: As a result of video caching by video players, the Xandr data pipeline allows a six-hour window to register a response from a video player after the auction is complete and the creative VAST XML has been sent to the page, before considering a video impression ‘non-responsive’ (Bid Sent No Response). Xandr will update some counts, for video tags only, six hours after the time of the auction. Therefore, to receive the most accurate view of video counts across dimensions, schedule your reports to run **after** the six-hour window for a given hour of data.
+> **For video sellers only**
+>
+> As a result of video caching by video players, the Xandr data pipeline allows a six-hour window to register a response from a video player after the auction is complete and the creative VAST XML has been sent to the page, before considering a video impression ‘non-responsive’ (Bid Sent No Response). Xandr will update some counts, for video tags only, six hours after the time of the auction. Therefore, to receive the most accurate view of video counts across dimensions, schedule your reports to run **after** the six-hour window for a given hour of data.
 
 :::image type="content" source="media/seller-fill-and-delivery-publisher-report-fig-a.png" alt-text="Diagram that shows the process involved in generating the total ad responses.":::
 
@@ -43,7 +45,7 @@ The `time_granularity` of the data is `hourly`. For instructions on retrieving a
 > [!TIP]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 99 days.
 
@@ -96,7 +98,7 @@ Data retention period for this report is 99 days.
 
 ## Example
 
-### Create JSON formatted report request
+### Create a JSON formatted report request
 
 The JSON file should include the `report_type` of `"seller_fill_and_delivery_publisher"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

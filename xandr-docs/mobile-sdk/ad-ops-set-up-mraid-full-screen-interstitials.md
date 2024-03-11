@@ -16,14 +16,15 @@ For developer-focused interstitial documentation, see [Show Interstitials](show-
 To set up your MRAID creative, first create a creative and then configure the settings listed below:
 
 1. Under **Creative Content**, choose the **Third-party** creative type.
-2. Choose a **Creative format** of **Third-party tag**. Make sure to uncheck **Serve in iFrame**.
-3. When entering the MRAID creative text in the **Tag** field, make sure to reference the `mraid.js` file in the first line of your creative:
+1. Choose a **Creative format** of **Third-party tag**. Make sure to uncheck **Serve in iFrame**.
+1. When entering the MRAID creative text in the **Tag** field, make sure to reference the `mraid.js` file in the first line of your creative:
 
-  ```
-  <script src="mraid.js"></script>
-  ```
-4. Choose a **Media Type** of **Interstitial: Interstitial**.
-5. In the **Template** field, choose **Xandr: Mobile SDK** (ID 38896).
+    ```
+    <script src="mraid.js"></script>
+    ```
+
+1. Choose a **Media Type** of **Interstitial: Interstitial**.
+1. In the **Template** field, choose **Xandr: Mobile SDK** (ID 38896).
 
 Then, in the **Template** tab:
 
@@ -37,9 +38,10 @@ Then, in the **Template** tab:
 
 ## Placement settings
 
-To set up your placement, 
-1. create a placement
-2. configure the settings listed below:
+To set up your placement,
+
+1. Create a placement.
+1. Configure the settings listed below.
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 

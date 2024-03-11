@@ -26,7 +26,7 @@ Additionally, although adaptive pacing was developed to distribute spend, it is 
 
 ## Related topics
 
-- [Optimization Guide -  ALI](optimization-guide-ali.md)
+- [Optimization Guide - ALI](optimization-guide-ali.md)
 - [Lifetime Pacing](lifetime-pacing.md)
 - [Discovery](discovery.md)
 - [Valuation](valuation.md)

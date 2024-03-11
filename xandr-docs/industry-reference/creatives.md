@@ -26,7 +26,7 @@ There are many kinds of creatives used on the Internet. Some of the key types in
 
 An impression is the display of a single creative to a single user at a certain point in time. Sometimes serving a creative and serving an impression are essentially the same thing, but often the server deciding which advertiser should display a creative, the server deciding which creative should be shown, and the [CDNs](#what-are-cdns-content-delivery-networks) (content delivery network) that actually hosts and returns the creative image file are all different. In this case, the act of serving an impression and the act of serving the creative are two different events. In reporting, no matter how many servers are involved, the number of impressions and creatives served should match, if all went smoothly.
 
-:::image type="content" source="media/creatives-and-impressions.png" alt-text="Diagram of how impression tracking pixels work.":::
+:::image type="content" source="media/creatives-and-impressions.png" alt-text="Diagram that shows how impression tracking pixels work.":::
 
 This is a simple example of an advertiser that uses a CDN (Content Delivery Network) rather than an ad server to host its creatives.
 

@@ -31,8 +31,7 @@ VAST extensions are custom XML snippets that video players render.
 
 1. Click **Save**.
 
-    The extension now displays on the **Template Manager: VAST Extensions** screen. You can associate the extension with your video creatives using the **VAST Features** section of the **Create New** or **Edit** screens.
-    For more information, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
+    The extension now displays on the **Template Manager: VAST Extensions** screen. You can associate the extension with your video creatives using the **VAST Features** section of the **Create New** or **Edit** screens. For more information, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
 ## Related topics
 

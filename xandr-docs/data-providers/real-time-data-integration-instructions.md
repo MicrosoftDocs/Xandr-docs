@@ -7,9 +7,7 @@ ms.date: 10/28/2023
 
 # Real time data integration instructions
 
-Although the configuration is slightly different from regular bidders that are actually purchasing media, data providers with real time
-integrations are set up as "bidders" in our system. Once your data provider bidder has been created and you've received credentials, you
-can begin configuring it with the below steps.
+Although the configuration is slightly different from regular bidders that are actually purchasing media, data providers with real time integrations are set up as "bidders" in our system. Once your data provider bidder has been created and you've received credentials, you can begin configuring it with the below steps.
 
 ## Implement the Impression Bus API
 
@@ -32,8 +30,7 @@ Complete the following steps to begin using the Impression Bus API (api.adnxs.co
 > [!NOTE]
 > You may only create segments in your own member's seat.
 
-**Step 7:** Begin responding to ready requests with a 1 and to bid requests with segment codes. If you cannot respond within 8-10ms or do
-not have any segments for a given impression, respond with a new line:
+**Step 7:** Begin responding to ready requests with a 1 and to bid requests with segment codes. If you cannot respond within 8-10ms or do not have any segments for a given impression, respond with a new line:
 
 - Ready requests: Respond with `'1\n'`
 - Bid requests: Respond with `'segmentCode1\nsegmentCode2\n' or '\n'`

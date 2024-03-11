@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Create a placement
 
 > [!NOTE]
-> Microsoft Advertising now supports a domain, [adnxs-simple.com](http://adnxs-simple.com/), which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 
 A placement is the object in our system that represents (and is used to generate) the tag that is placed on a publisher's page.
 
@@ -69,8 +69,7 @@ The Microsoft Advertising platform categorizes creatives by media type and media
 
 By default, the creative size for the placement is **Sizeless**, which means that creatives of any size will be allowed to serve. If you want to restrict the placement to creatives of a specific size, select the size from the **Creative Sizes** field.
 
-If your placement uses a friendly iFrame and you want the placement to resize to fit smaller or larger creatives, you can select the
-**Resize placement if creative size is different...** checkbox.
+If your placement uses a friendly iFrame and you want the placement to resize to fit smaller or larger creatives, you can select the **Resize placement if creative size is different...** checkbox.
 
 > [!NOTE]
 > This option should only be used with MegaTag, because the resizing depends on JavaScript with variables and methods that are only defined in megatag.js.

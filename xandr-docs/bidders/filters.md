@@ -17,7 +17,7 @@ The following filtering options are available:
   
 | Field | Description |
 |--|--|
-|**Members**| Click within the **Members** box to filter for one or multiple members that you want to view creatives from. The drop-down lists all the members you can choose from. |
+| **Members** | Click within the **Members** box to filter for one or multiple members that you want to view creatives from. The drop-down lists all the members you can choose from. |
 | **Creative IDs** | Click within the **Creative IDs** box to filter for one or more specific creative ids.<br>**Note**: This field is comma separated. To search for multiple creative ids, type **creative id 1**, **creative id 2**, etc. |
 | **Creative Code** | Click within the **Creative Code** box to filter for one or more specific creative codes.<br>**Note**:<br> - This creative code that is entered must be exact.<br> - This field is comma separated. To search for multiple creative codes, type creative code 1, creative code 2, etc. |
 | **Creative Description** | Click within the **Creative Description** box to filter for a specific creative description. |

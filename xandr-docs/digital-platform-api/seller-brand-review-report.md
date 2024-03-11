@@ -1,11 +1,11 @@
 ---
 title: Digital Platform API - Seller Brand Review Report
-description: Use the seller brand review report to analyze brand and creative performance across all inventory, including audit status and client brand category performance.
+description: Use the Seller Brand Review report to analyze brand and creative performance across all inventory, including audit status and client brand category performance.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Digital Platform API - Seller brand review report
+# Digital Platform API - Seller Brand Review report
 
 This report provides a view of brand performance across all of your inventory. You can:
 
@@ -28,7 +28,7 @@ The `report_interval` field in the JSON request must be set to one of the follow
 > [!TIP]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
 
-**Data retention period**
+### Data retention period
 
 Data retention period for this report is 428 days.
 
@@ -124,7 +124,7 @@ Data retention period for this report is 428 days.
 
 ## Example
 
-### Create the JSON report request
+### Create a JSON report request
 
 The JSON file should include the `report_type` of `"seller_brand_review"`, as well as the columns (dimensions and metrics) and `report_interval` that you want to retrieve. You can also filter for specific dimensions, define granularity (`year`, `month`, `day`), and specify the `"format"` in which the data should be returned (`csv`, `excel`, or `html`). For a full explanation of fields that can be included in the JSON file, see the [Report Service](./report-service.md).
 

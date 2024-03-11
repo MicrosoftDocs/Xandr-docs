@@ -6,9 +6,9 @@ ms.date: 10/28/2023
 
 # Xandr macros
 
-Macros are used to populate URLs (such as those found in creatives) with useful information.  They are essentially variables that are expanded by our ad server with whatever their actual value is at the time of the ad call.
+Macros are used to populate URLs (such as those found in creatives) with useful information. They are essentially variables that are expanded by our ad server with whatever their actual value is at the time of the ad call.
 
-This page contains information about all of the macros we support.  For each macro, we list the information that that macro is replaced with during the ad call.
+This page contains information about all of the macros we support. For each macro, we list the information that that macro is replaced with during the ad call.
 
 > [!TIP]
 > For more control over URL encoding and decoding, see the section on [Function Macros](xandr-macros.md#function-macros).
@@ -24,7 +24,7 @@ This page contains information about all of the macros we support.  For each ma
 Xandr supports the following creative macros when adding creatives using the [Creative Service](creative-service.md).
 
 | Macro | Description |
-|---|---|
+|--|--|
 | `${CLICK_URL}` | The click tracking URL. |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third party adservers) |
 | `${AUCTION_ID}` | The 64-bit character string representing the individual auction that led to the impression. |
@@ -42,7 +42,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${SECOND_PRICE}` | The price that represent the second highest bid in auction. Expressed in floating point number format (e.g. 1.23) |
 | `${REFERER_URL}` | If available, the referring URL for this inventory. <br>**Note**: This field is deprecated (as of May 2016). Use ${REFERER_URL_ENC} instead. |
 | `${REFERER_URL_ENC}` | The encoded referring URL. |
-| `${BID_PRICE}` | The price bid for this impression as opposed to the price paid after price reduction.  |
+| `${BID_PRICE}` | The price bid for this impression as opposed to the price paid after price reduction. |
 | `${TAG_CODE1}` | Integration code set on the placement. |
 | `${TAG_CODE2}` | Additional integration code set on the placement. |
 | `${INV_SOURCE_ID}` | **Deprecated**. |
@@ -66,21 +66,16 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${TIMESTAMP}` | The UNIX timestamp for the auction. |
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user (e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"). |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
-| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format :<br>…&extended_ids=<source_1>,<id_1>\|<source_2>,<id_2>\|…The separators proposed being , between the source and the value, and \| between the different IDs type and value pairs. |
+| `${EXTENDED_IDS}` | The identifiers (industry IDs and publisher provided IDs) represents the user of the impression. These would be passed as received in the request, with multiple identifiers supported following the format: <br><br>`…&extended_ids=<source_1>,<id_1>\ <source_2>,<id_2>\ …`<br><br> The separators proposed are commas between the source and the value, and a pipe symbol between different ID types and value pairs. |
 
 ### European Ad inventory and providing notice, transparency and choice
 
 > [!WARNING]
-> In order for our clients to meet their transparency, notice and choice/consent requirements under US
-> state privacy law, the GDPR and the existing ePrivacy Directive, Xandr supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework").
+> In order for our clients to meet their transparency, notice and choice/consent requirements under US state privacy law, the GDPR and the existing ePrivacy Directive, Xandr supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/) (the "Framework").
 >
-> This is a reference for publishers using the macros to surface notice,transparency and choice to end users located in applicable US states and the EEA and signal approved vendors, and where necessary pass
-> consent and/or Do Not Share/Sell signals to Xandr and demand sources and their vendors through Xandr's platform.
+> This is a reference for publishers using the macros to surface notice,transparency and choice to end users located in applicable US states and the EEA and signal approved vendors, and where necessary pass consent and/or Do Not Share/Sell signals to Xandr and demand sources and their vendors through Xandr's platform.
 >
-> This resource should not be construed as legal advice and Xandr makes no guarantees about compliance
-> with any law or regulation.  Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under
-> US state law, European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is
-> intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
+> This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation.  Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under US state law, European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 >
 > Note that our [Part of Service Policies](../policies-regulations/index.yml) (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware. These Service Policies have been updated effective 1st of January 2023.
 
@@ -97,7 +92,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 The following table contains reserved macro names that are not for use by Bidder clients. They will cause conflicts with other Xandr technologies and are not to be used for custom macros.
 
 | Reserved Macro Name |
-|---|
+|--|
 | `${ADV_CODE}` |
 | `${ANCOST}` |
 | `${BASE64_UID_ENC}` |

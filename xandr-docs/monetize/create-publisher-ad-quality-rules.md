@@ -25,6 +25,7 @@ Publisher base rules are created when you create the publisher, unless you selec
 To create a publisher base rule:
 
 1. Go to the **Publisher Ad Quality** screen by selecting **Publishers** > **Ad Quality**.
+
     Alternatively, from the **Publishers** screen, click on or hover over the publisher you want to work with. Select **Ad Quality** from the **Go to** menu for that publisher.
 
 1. Click **Add base rule** (or click **Default rule** under the **Create New** button). The **Create New Base Rule** window will display.
@@ -66,8 +67,7 @@ You can apply ad quality settings based on how frequently a user has seen a crea
 
 ### Geography
 
-You may have different ad quality restrictions based on different countries (for example, varying legal restrictions by country). Depending upon which geographic targeting options you choose, you may significantly reduce the likelihood of matching an impression. When more than one targeting type is selected (for example, both Region and Zip Code), the set of matching impressions is reduced, sometimes
-significantly.
+You may have different ad quality restrictions based on different countries (for example, varying legal restrictions by country). Depending upon which geographic targeting options you choose, you may significantly reduce the likelihood of matching an impression. When more than one targeting type is selected (for example, both Region and Zip Code), the set of matching impressions is reduced, sometimes significantly.
 
 - Example 1: If both the Boston MA-Manchester NH Metro Code and the City of Manchester, NH are selected, only users who are located in both will be targeted. Therefore, users in the City of Boston will not be included at all.
 - Example 2: If both the California Region and Chicago, IL Metro Code are selected, then NO users will be targeted since the Chicago metro code does not overlap with California.

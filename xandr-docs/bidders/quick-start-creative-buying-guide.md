@@ -161,9 +161,7 @@ For details on dynamic creatives, see [Submit Auditable Dynamic Creatives](subm
 
 ### Native video
 
-In order to set up a native video creative, you must first register a video creative. You will then use the creative id from the video
-creative in the "video_assets.video_creative_id" field in the native
-creative.
+In order to set up a native video creative, you must first register a video creative. You will then use the creative id from the video creative in the "video_assets.video_creative_id" field in the native creative.
 
 #### Video registration
 

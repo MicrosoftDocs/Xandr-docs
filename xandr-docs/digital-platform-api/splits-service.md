@@ -1,6 +1,6 @@
 ---
 title: Splits Service
-description: Use the splits service to create and modify programmable splits for augmented line items, allowing for targeting, budget allocation, and creative distribution.
+description: Use the Splits service to create and modify programmable splits for augmented line items, allowing for targeting, budget allocation, and creative distribution.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -42,7 +42,7 @@ To modify an individual split, you must use the `PATCH` method as described in t
 
 Unlike other Xandr API services, the JSON for the `budget-splitters` array does not appear inside a wrapper named after the object. It appears simply as an unnamed array. For example, this is the JSON file to create a `budget-splitters` array with three splits:
 
-**Example budget-splitter object**
+### Example budget-splitter object
 
 ```
 [
@@ -108,11 +108,11 @@ Unlike other Xandr API services, the JSON for the `budget-splitters` array does 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `PUT` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits <br>(budget-splitter JSON) | Add splits to a line item which has none. |
-| `GET` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits | View all splits for a line item. |
-| `PUT` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits <br>(budget-splitter JSON) | Update all splits for a line item. |
-| `DELETE` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits | Delete all splits from a line item. This will delete all splits from the line item permanently. The information for past splits traffic will still appear in reporting. |
-| `PATCH` | https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits<br>(split-update JSON)<br><br>The split ID must appear in the split-update JSON. | Modify a single split. |
+| `PUT` | `https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits` <br>(budget-splitter JSON) | Add splits to a line item which has none. |
+| `GET` | `https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/split`s | View all splits for a line item. |
+| `PUT` | `https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits` <br>(budget-splitter JSON) | Update all splits for a line item. |
+| `DELETE` | `https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits` | Delete all splits from a line item. This will delete all splits from the line item permanently. The information for past splits traffic will still appear in reporting. |
+| `PATCH` | `https://api.appnexus.com/budget-splitter/LINE-ITEM-ID/splits`<br>(split-update JSON)<br><br>The split ID must appear in the split-update JSON. | Modify a single split. |
 
 ## JSON fields
 

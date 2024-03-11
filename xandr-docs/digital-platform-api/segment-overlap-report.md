@@ -1,16 +1,16 @@
 ---
 title: Segment Overlap Report
-description: Use the segment overlap report to view data on inventory intersection with specific segments, filtered by location, seller, or audit status. 
+description: Use the Segment Overlap report to view data on inventory intersection with specific segments, filtered by location, seller, or audit status. 
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Segment overlap report
+# Segment Overlap report
 
 > [!NOTE]
 >  - This service is currently available to a limited set of clients and Microsoft employees only.
 >
->  - This reporting API is currently for internal use only. It is therefore only visible to AppNexus employees. It supersedes the existing **Inventory Segment Daily Uniques** report, which was deprecated on 11/15/12.
+>  - It supersedes the existing **Inventory Segment Daily Uniques** report, which was deprecated on 11/15/12.
 
 The **Segment Overlap Report** allows buyers to view data about the intersection of available inventory with a particular segment, filtered by geographic area, seller, or audit status. It offers answers to questions such as:
 
@@ -24,7 +24,7 @@ The aim of this report is to show you inventory that you can actually target for
 >
 > Due to the high volume of impressions across our platform, this report is based on a statistical sampling. This means that any combinations of seller and segment which comprise fewer than 1,000 unique users will not be included in this report, as they have been determined by our analysts to lack statistical significance.
 
-**Admin Users and Visibility Logic**
+## Admin users and visibility logic
 
 > [!NOTE]
 > This section is visible only to AppNexus employees. It lists fields that clients can neither see nor edit.
@@ -38,7 +38,7 @@ The time frame covered by this report is the previous seven days, with daily upd
 ## Dimensions
 
 > [!NOTE]
-> **Wed Dec 19 2012**:
+> **Wed Dec 19 2012**
 >
 > `"inv_src"` and audit statuses other than `"appnexus_reviewed"` have been disabled at the Data level and are about to be removed from this report.
 

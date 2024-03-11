@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions (FAQ) for Enhanced Bidder Profiles
-description: The article provides an overview of Frequently Asked Questions (FAQ) related to Enhanced Bidder profiles.
+description: Explore organized seller groups, target supply, and overview FAQs on Enhanced Bidder profiles for efficient engagement.
 ms.date: 10/28/2023
 ---
 

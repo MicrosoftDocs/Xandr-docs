@@ -1,6 +1,6 @@
 ---
 title: FAQs
-description: The artricle displays a compiled list (category-wise) of frequently asked questions categorically for easy reference.
+description: Explore a compiled list (category-wise) of frequently asked questions based on specific categories for easy reference.
 ms.date: 10/28/2023
 ---
 

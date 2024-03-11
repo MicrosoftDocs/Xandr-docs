@@ -1,6 +1,6 @@
 ---
 title: Your Reports
-description: The articles explains the recent reports that you have to run, the recent report queries, and saved reports.
+description: Explore recent reports, covering report queries and saved reports, that require immediate attention and action.
 ms.date: 10/28/2023
 ---
 
@@ -14,14 +14,14 @@ This displays the recent report queries. The following information is displayed:
 
 | Created | Report Name | Status | Download |
 |--|--|--|--|
-| date report was created | Name of report type | Report loading status |Download Report in XLSX, CSV, Excel/TSF, JSON Formats |
+| date report was created | Name of report type | Report loading status | Download Report in XLSX, CSV, Excel/TSF, JSON Formats |
 
 ## Saved reports
 
 This displays any reports that are saved. The following information is displayed:
 
 | Report Name | Actions |
-|---|---|
+|--|--|
 | Name of the report template | **Run** the saved report (report will auto load in **View Report** tab).<br>**Edit** the report template and change any settings for the report (**Run Report** tab will display). |
 
 ## Scheduled reports
@@ -30,7 +30,7 @@ This displays any reports that you have scheduled to be delivered at a regular c
 
 | Report Name | Date Range | Scheduled | Actions |
 |--|--|--|--|
-| Name of scheduled Report | Date range used for data in scheduled report | Frequency of report delivery | **Run** the scheduled report (report will auto load in **View Report** tab).<br>**Edit** the report template and change any settings for the report (**Run Report** tab will display).|
+| Name of scheduled Report | Date range used for data in scheduled report | Frequency of report delivery | **Run** the scheduled report (report will auto load in **View Report** tab).<br>**Edit** the report template and change any settings for the report (**Run Report** tab will display). |
 
 ## Related topics
 

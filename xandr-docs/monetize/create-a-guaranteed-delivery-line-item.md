@@ -30,7 +30,7 @@ Under **Line Item Type**, select **Guaranteed Delivery**.
 
 If you want to have more than one campaign running under your guaranteed line item, also check the **Use campaign-level settings** checkbox (shown below). This will add a new section **Campaign Shells** to the page, where you will set up date range targeting for these campaigns.
 
-:::image type="content" source="media/line-item-type.png" alt-text="A screenshot that shows how to set up a Guaranteed Delivery Line Item to use campaign-level settings.":::
+:::image type="content" source="media/line-item-type.png" alt-text="Screenshot that shows how to set up a Guaranteed Delivery Line Item to use campaign-level settings.":::
 
 The main use cases for campaign shells are:
 
@@ -83,7 +83,7 @@ For more information about how guaranteed line items compete against each other 
 
 Enter the number of impressions you want to allocate to the line item in the **Budget** field.
 
-:::image type="content" source="media/impressions.png" alt-text="A screenshot that shows how to set up the number of impressions you want to allocate to the line item.":::
+:::image type="content" source="media/impressions.png" alt-text="Screenshot that shows how to set up the number of impressions you want to allocate to the line item.":::
 
 ### Exclusive delivery type
 
@@ -93,13 +93,13 @@ You can change the default campaign **Priority** depending on your needs. In mos
 
 Enter the percentage of matching impressions you want this line item to buy in the **Budget** field.
 
-:::image type="content" source="media/exclusive.png" alt-text="A screenshot that shows how to set up the percentage of matching impressions you want this line item to buy.":::
+:::image type="content" source="media/exclusive.png" alt-text="Screenshot that shows how to set up the percentage of matching impressions you want this line item to buy.":::
 
 ## Step 4. Set revenue type
 
 Guaranteed line items can have a **CPM**, **vCPM**, or **Fixed Fee** revenue type. vCPM is like CPM, except that it represents the cost per thousand viewable impressions.
 
-:::image type="content" source="media/rev-type-vcpm.png" alt-text="A screenshot that shows how to set up the revenue type for the line item.":::
+:::image type="content" source="media/rev-type-vcpm.png" alt-text="Screenshot that shows how to set up the revenue type for the line item.":::
 
 ### vCPM
 
@@ -140,7 +140,7 @@ For instructions on setting most of your line item's targeting, see the targetin
 
 When you first create a guaranteed line item, it's possible (and often probable) that you won't have the creatives on hand for that line item or its campaigns. To enable you to forecast on your line item before you have creatives, you can use the **Ad Size** field to identify the size (or sizes) of the impression you're targeting. You can select **Any Size**, or select a size from the dropdown list. The size you select will be added to the targeting profile for the line item.
 
-:::image type="content" source="media/ad-size.png" alt-text="A screenshot that shows how to set up the ad size to be added to the targeting profile for the line item.":::
+:::image type="content" source="media/ad-size.png" alt-text="Screenshot that shows how to set up the ad size to be added to the targeting profile for the line item.":::
 
 Because the **Ad Size** values you choose are added to your targeting profile, the values you enter here could have an impact on delivery if you leave them after you add creatives. When you select ad sizes, you're targeting impressions of that size. If you then add creatives that don't match the **Ad Size** values you entered, you may be preventing your line item from serving. For example, suppose you select the ad sizes shown in the screen above (300x250 and 728x90), then add creatives to the line item that are sizes 300x250 and 640x480. If the ad call does not include a 728x90 impression, your line item won't serve. You don't have a creative of that size, but because you targeted a 728x90 ad size and the ad call doesn't contain that size, your line item won't serve because it didn't find its target.
 
@@ -179,7 +179,7 @@ To enable roadblocking on the line item, perform the following actions:
 
 Now that you've set your targeting, you can use our forecasting tools to see how much inventory you have available that meets that targeting. Click the **Check Availability** button on the lower left of the screen, next to the **Save and Reserve** button.
 
-:::image type="content" source="media/check-availability.png" alt-text="A screenshot that shows how to navigate to check availability of inventory.":::
+:::image type="content" source="media/check-availability.png" alt-text="Screenshot that shows how to navigate to check availability of inventory.":::
 
 The forecasting pane will appear, showing you a chart with delivery goals and capacity for the current line item. Click on **Contending Line Items** to expand that section and see other line items that are contending for the same inventory.
 

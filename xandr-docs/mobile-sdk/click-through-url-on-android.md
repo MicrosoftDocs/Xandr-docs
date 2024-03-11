@@ -11,7 +11,7 @@ The term click-through refers to the capability of our Mobile SDK to handle wh
 
 ## Overview
 
-Xandr's Mobile SDK allows you to determine how the value of the `click_url` string in the bid response will be handled when the user clicks on an ad. 
+Xandr's Mobile SDK allows you to determine how the value of the `click_url` string in the bid response will be handled when the user clicks on an ad.
 
 There are three possibilities:
 

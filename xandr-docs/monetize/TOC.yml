@@ -1024,6 +1024,8 @@
           href: integrate-apps-with-psp.md
         - name: Integrate Accelerated Mobile Pages with PSP
           href: integrate-accelerated-mobile-pages-with-psp.md
+        - name: PSP Supported Formats and Integration Paths
+          href: prebid-server-premium-supported-formats-and-integration-paths.md
       - name: Add or Edit PSP Global Settings
         href: add-or-edit-psp-global-settings.md
       - name: Add or Edit a Demand Partner

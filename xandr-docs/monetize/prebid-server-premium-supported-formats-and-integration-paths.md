@@ -1,10 +1,10 @@
 ---
-title: Prebid Server Premium Supported Formats and Integration Paths
+title: PSP Supported Formats and Integration Paths
 description: In this article, learn about the advertising formats and integration methods supported by Prebid Server Premium across devices.
 ms.date: 03/11/2024
 ---
 
-# Prebid Server Premium supported formats and integration paths
+# PSP supported formats and integration paths
 
 Prebid Server Premium (PSP) supports a variety of advertising formats and integration methods as detailed below. For more information, see [Integrate with PSP](integrate-with-psp.md) and [Set up Prebid Server Premium](set-up-prebid-server-premium.md).
 

@@ -6,7 +6,7 @@ ms.date: 03/11/2024
 
 # Prebid Server Premium supported formats and integration paths
 
-Prebid Server Premium (PSP) supports a variety of advertising formats and integration methods as detailed below. For more information, see Integrate with PSP and Set up Prebid Server Premium.
+Prebid Server Premium (PSP) supports a variety of advertising formats and integration methods as detailed below. For more information, see [Integrate with PSP](integrate-with-psp.md) and [Set up Prebid Server Premium](set-up-prebid-server-premium.md.).
 
 > [!IMPORTANT]
 >
@@ -19,39 +19,39 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 | Integration Method | Banner | Native Display | Native Video | Video Outstream | Video Instream | Long-Form Video |
 |--|--|--|--|--|--|--|
 | **Microsoft Monetize Ad Server** |  |  |  |  |  |  |
-| AST (ut/v3) | Y | Y | Y | Y |  |  |
-| OpenRTB (/openrtb2) | Y | Y | Y | Y | Y | Y |
-| TinyTag (ttj) | Y |  |  |  |  |  |
-| Video Tag (/ptv or /ssptv) |  |  |  |  | Y | Y |
-| VMAP (/vmap or /ssvmap) |  |  |  |  |  | Y |
+| [AST (ut/v3)](working-with-seller-tag.md) | Y | Y | Y | Y |  |  |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
+| [TinyTag (ttj)](../bidders/tinytags.md) | Y |  |  |  |  |  |
+| [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  |  | Y | Y |
+| [VMAP (/vmap or /ssvmap)](non-prebid-integrations-with-psp.md) |  |  |  |  |  | Y |
 | **Microsoft Monetize** |  |  |  |  |  |  |
-| Client-Side Prebid   (ut/v3/prebid) | Y | Y | Y | Y | Y |  |
-| Server-Side Prebid   (openrtb2/prebid) | Y | Y | Y | Y | Y |  |
-| OpenRTB (/openrtb2) | Y | Y | Y | Y | Y | Y |
-| TinyTag (ttj) | Y |  |  |  |  |  |
-| Video Tag (/ptv or /ssptv) |  |  |  |  | Y |  |
-| Long-Form Video (/prebid/lfv   or /prebid/lfvp) |  |  |  |  |  | Y |
+| [Client-Side Prebid (ut/v3/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
+| [Server-Side Prebid (openrtb2/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
+| [TinyTag (ttj)](../bidders/tinytags.md) | Y |  |  |  |  |  |
+| [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  |  | Y |  |
+| [Long-Form Video (/prebid/lfv or /prebid/lfvp)](../digital-platform-api/long-form-video-service.md) |  |  |  |  |  | Y |
 
 ## App
 
 | Integration   Method | Banner | Native Display | Native Video | Video Outstream | Video Instream | Long-Form Video |
 |--|--|--|--|--|--|--|
 | **Microsoft Monetize Ad Server** |  |  |  |  |  |  |
-| OpenRTB (/openrtb2) | Y | Y | Y | Y | Y | Y |
-| Video Tag (/ptv or /ssptv) |  |  |  | Y | Y | Y |
-| VMAP (/vmap or /ssvmap) |  |  |  |  |  | Y |
-| Xandr Mobile SDK (ut/v3) | Y | Y | Y | Y | Y |  |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
+| [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y | Y |
+| [VMAP (/vmap or /ssvmap)](non-prebid-integrations-with-psp.md) |  |  |  |  |  | Y |
+| [Xandr Mobile SDK (ut/v3)](../mobile-sdk/xandr-mobile-sdks.md) | Y | Y | Y | Y | Y |  |
 | **Microsoft Monetize** |  |  |  |  |  |  |
-| OpenRTB (/openrtb2) | Y | Y | Y | Y | Y |  |
-| Video Tag (/ptv or /ssptv) |  |  |  | Y | Y |  |
-| Long-Form Video (/prebid/lfv   or /prebid/lfvp) |  |  |  |  |  | Y |
-| Prebid Mobile SDK   (openrtb2/prebid) | Y | Y | Y | Y | Y |  |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y |  |
+| [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y |  |
+| [Long-Form Video (/prebid/lfv or /prebid/lfvp)](../digital-platform-api/long-form-video-service.md) |  |  |  |  |  | Y |
+| [Prebid Mobile SDK (openrtb2/prebid)](integrate-apps-with-psp.md) | Y | Y | Y | Y | Y |  |
 
 ## AMP
 
 | Integration   Method | Banner |
 |--|--|
 | **Microsoft Monetize Ad Server** |  |
-| AMP (prebid/amp) | Y |
+| [AMP (prebid/amp)](integrate-accelerated-mobile-pages-with-psp.md) | Y |
 | **Microsoft Monetize** |  |
-| AMP (prebid/amp) | Y |
+| [AMP (prebid/amp)](integrate-accelerated-mobile-pages-with-psp.md) | Y |

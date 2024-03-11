@@ -24,7 +24,6 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 | TinyTag (ttj) | Y |  |  |  |  |  |
 | Video Tag (/ptv or /ssptv) |  |  |  |  | Y | Y |
 | VMAP (/vmap or /ssvmap) |  |  |  |  |  | Y |
-|  |  |  |  |  |  |  |
 | **Microsoft Monetize** |  |  |  |  |  |  |
 | Client-Side Prebid   (ut/v3/prebid) | Y | Y | Y | Y | Y |  |
 | Server-Side Prebid   (openrtb2/prebid) | Y | Y | Y | Y | Y |  |
@@ -42,7 +41,6 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 | Video Tag (/ptv or /ssptv) |  |  |  | Y | Y | Y |
 | VMAP (/vmap or /ssvmap) |  |  |  |  |  | Y |
 | Xandr Mobile SDK (ut/v3) | Y | Y | Y | Y | Y |  |
-|  |  |  |  |  |  |  |
 | **Microsoft Monetize** |  |  |  |  |  |  |
 | OpenRTB (/openrtb2) | Y | Y | Y | Y | Y |  |
 | Video Tag (/ptv or /ssptv) |  |  |  | Y | Y |  |
@@ -55,6 +53,5 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 |--|--|
 | **Microsoft Monetize Ad Server** |  |
 | AMP (prebid/amp) | Y |
-|  |  |
 | **Microsoft Monetize** |  |
 | AMP (prebid/amp) | Y |

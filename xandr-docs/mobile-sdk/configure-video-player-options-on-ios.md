@@ -1,107 +1,67 @@
 ---
 title: Configure Video Player Options on iOS
-description: In this article, find information about the video player controls that you can customize on iOS SDK.
+description: In this article, find the instructions to customize video player controls on iOS SDK.
 ms.custom: ios-sdk
 ms.date : 10/28/2023
 ---
 
 # Configure video player options on iOS
 
-`ANVideoPlayerSettings` class allows publisher app to customize some of the Ad Video Player UI/Controls.
+You can customize the following video player controls:
 
-> [!NOTE]
-> The customization is applied to all of the Video ads served through Xandr SDK both Instream and Banner Video (Outstream).
+- The clickthrough control
+- The mute button
+- The fullscreen button for outstream video
+- Volume control
 
-| Parameter | Type | Default Setting | Description |
-|--|--|--|--|
-| `showClickThruControl` | boolean | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. |
-| `clickThruText` | String | "Learn More" | Customizes the text associated with the ClickThrough Control. |
-| `showFullScreenControl` (Banner Video Only) | boolean | true | Controls the visibility of the fullscreen button for Banner Video. |
-| `showTopBar` | boolean | true | Determines whether the top bar, containing ClickThrough and Skip controls, is displayed. |
-| `showAdText` | boolean | true | Controls the visibility of the ad text next to the ClickThrough control. |
-| `adText` | String | "Ad" | Customizes the ad text on the video player. |
-| `showVolumeControl` | boolean | true | Controls the visibility of the mute/unmute control. |
-| `initialAudio` | ANInitialAudioSetting | Sound On (Instream Video), Sound Off (Banner Video) | Sets the initial audio state for Instream and Banner Videos. |
-| `showSkip` (Instream Only) | boolean | true | Controls the visibility of the Skip control for Instream Video. |
-
-## Example
-
-### [Objective C](#tab/objective-c)
+**To show or hide the ClickThru control:**
 
 ```
-// Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
-[[ANVideoPlayerSettings sharedInstance] setShowClickThruControl:NO];
- 
-// Change the ClickThrough text on the video player
-[[ANVideoPlayerSettings sharedInstance] setClickThruText:@"SampleText"];
- 
-// Show or hide fullscreen control on the player. This is applicable only for Banner Video
-[[ANVideoPlayerSettings sharedInstance] setShowFullScreenControl:YES];
- 
-// Show or hide the top bar that has (ClickThrough & Skip control)
-[[ANVideoPlayerSettings sharedInstance] setShowTopBar:YES]; 
- 
-// Show or hide the "Ad" text next to the ClickThrough control
-[[ANVideoPlayerSettings sharedInstance] setShowAdText:YES];
-[[ANVideoPlayerSettings sharedInstance] setAdText:@"Video Ad"];
- 
-// Show or hide the volume control on the player
-[[ANVideoPlayerSettings sharedInstance] setShowVolumeControl:YES];
- 
-// Decide how the ad video sound starts initially (sound on or off). By default, Instream Video will have sound enabled, while Banner Video will have sound disabled
-[[ANVideoPlayerSettings sharedInstance] setInitalAudio:Default];
-[[ANVideoPlayerSettings sharedInstance] setInitalAudio:SoundOn];
-[[ANVideoPlayerSettings sharedInstance] setInitalAudio:SoundOff];
- 
-// Show or hide the Skip control on the player
-[[ANVideoPlayerSettings sharedInstance] setShowSkip:YES];
- 
-// Change the skip description on the video player
-[[ANVideoPlayerSettings sharedInstance] setSkipDescription:@"Video Skip Demo"];
- 
-// Change the skip button text on the video player
-[[ANVideoPlayerSettings sharedInstance] setSkipLabelName:@"Test"];
- 
-// Configure the skip offset on the video player
-[[ANVideoPlayerSettings sharedInstance] setSkipOffset:2];
+@property (nonatomic,assign) BOOL showClickThruControl;
 ```
 
-### [Swift](#tab/swift)
+The default is YES. NO makes the entire video clickable.
+
+**To change the ClickThru text:**
 
 ```
-// Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
-ANVideoPlayerSettings.sharedInstance().showClickThruControl = false
- 
-// Change the ClickThrough text on the video player
-ANVideoPlayerSettings.sharedInstance().clickThruText = "SampleText"
- 
-// Show or hide fullscreen control on the player. This is applicable only for Banner Video
-ANVideoPlayerSettings.sharedInstance().showFullScreenControl = true
- 
-// Show or hide the top bar that has (ClickThrough & Skip control)
-ANVideoPlayerSettings.sharedInstance().showTopBar = true
- 
-// Show or hide the "Ad" text next to the ClickThrough control
-ANVideoPlayerSettings.sharedInstance().showAdText = true
-ANVideoPlayerSettings.sharedInstance().adText = "Video Ad"
- 
-// Show or hide the volume control on the player
-ANVideoPlayerSettings.sharedInstance().showVolumeControl = true
- 
-// Decide how the ad video sound starts initially (sound on or off). By default, Instream Video will have sound enabled, while Banner Video will have sound disabled
-ANVideoPlayerSettings.sharedInstance().initalAudio = ANInitialAudioSetting.Default
-ANVideoPlayerSettings.sharedInstance().initalAudio = ANInitialAudioSetting.SoundOn
-ANVideoPlayerSettings.sharedInstance().initalAudio = ANInitialAudioSetting.SoundOff
- 
-// Show or hide the Skip control on the player
-ANVideoPlayerSettings.sharedInstance().showSkip = true
- 
-// Change the skip description on the video player
-ANVideoPlayerSettings.sharedInstance().skipDescription = "Video Skip Demo"
- 
-// Change the skip button text on the video player
-ANVideoPlayerSettings.sharedInstance().skipLabelName = "Test"
- 
-// Configure the skip offset on the video player
-ANVideoPlayerSettings.sharedInstance().skipOffset = 2
+@property (nonatomic, strong) NSString *clickThruText;
 ```
+
+**To show or hide the fullscreen control (for Banner Video only):**
+
+```
+@property (nonatomic,assign) BOOL showFullScreenControl;
+```
+
+**To show or hide the top bar (ClickThrough and Skip controls):**
+
+```
+@property (nonatomic,assign) BOOL showTopBar;
+```
+
+**To show or hide the ad text next to the ClickThru control:**
+
+```
+@property (nonatomic,assign) BOOL showAdText;
+```
+
+**To change the ad text:**
+
+```
+@property (nonatomic, strong) NSString *adText;
+```
+
+**To show or hide the volume control:**
+
+```
+@property (nonatomic,assign) BOOL showVolumeControl;
+```
+
+**To start with video sound on or off:**
+
+```
+@property (nonatomic,assign) ANInitialAudioSetting initalAudio;
+```
+
+By default, sound will be on for InstreamVideo and off for Banner Video.

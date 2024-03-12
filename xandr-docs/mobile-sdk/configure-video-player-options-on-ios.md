@@ -14,7 +14,7 @@ ms.date : 10/28/2023
 
 | Parameter | Type | Default Setting | Description |
 |--|--|--|--|
-| `showClickThruContro`l | boolean | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. |
+| `showClickThruControl` | boolean | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. |
 | `clickThruText` | String | "Learn More" | Customizes the text associated with the ClickThrough Control. |
 | `showFullScreenControl` (Banner Video Only) | boolean | true | Controls the visibility of the fullscreen button for Banner Video. |
 | `showTopBar` | boolean | true | Determines whether the top bar, containing ClickThrough and Skip controls, is displayed. |
@@ -26,7 +26,7 @@ ms.date : 10/28/2023
 
 ## Example
 
-### Objective C (#tab/objective-c)
+### [Objective C](#tab/objective-c)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
@@ -66,7 +66,7 @@ ms.date : 10/28/2023
 [[ANVideoPlayerSettings sharedInstance] setSkipOffset:2];
 ```
 
-### Swift (#tab/swift)
+### [Swift](#tab/swift)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable

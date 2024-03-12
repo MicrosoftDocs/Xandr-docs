@@ -26,7 +26,7 @@ ms.date : 10/28/2023
 
 ## Example
 
-### Java (#tab/java)
+### [Java](#tab/java)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
@@ -66,7 +66,7 @@ ANVideoPlayerSettings.getVideoPlayerSettings().setSkipLabelName("Test");
 ANVideoPlayerSettings.getVideoPlayerSettings().setSkipOffset(2);
 ```
 
-### Kotlin (#tab/kotlin)
+### [Kotlin](#tab/kotlin)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable

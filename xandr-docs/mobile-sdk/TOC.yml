@@ -230,6 +230,8 @@
         href: listener-for-onadabouttoexpire-on-android.md
       - name: Location Controls
         href: location-controls-on-android.md
+      - name: OMID Friendly Obstruction
+        href: omid-friendly-obstruction-for-android.md
       - name: Open Ad Clicks in the Native Browser
         href: open-ad-clicks-in-the-native-browser-on-android.md
       - name: Pass Custom Keywords

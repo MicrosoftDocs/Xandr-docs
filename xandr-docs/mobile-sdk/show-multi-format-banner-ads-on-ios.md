@@ -5,7 +5,6 @@ ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---
 
-
 # Banner Video / OutStream ads on iOS
 
 > [!NOTE]
@@ -57,3 +56,7 @@ banner?.getVideoHeight()
 
 > [!NOTE]
 > The values will only be populated after the adDidReceiveAd callback is triggered.
+
+## Related topic
+
+[Customize Video Player Options](configure-video-player-options-on-ios.md)

@@ -4,7 +4,6 @@ description: A deal auction can be open or private, depending on how the seller 
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Deal auction mechanics
 
 > [!NOTE]
@@ -35,11 +34,11 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 
 :::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="Screenshot of deal bid wins.":::
 
-### Non-Deal bid wins (Example 1)
+### Non-deal bid wins (Example 1)
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-edited.png" alt-text="Screenshot of first example for non-deal bid wins.":::
 
-### Non-Deal bid wins (Example 2)
+### Non-deal bid wins (Example 2)
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b-edited.png" alt-text="Screenshot of second example for non-deal bid wins.":::
 
@@ -72,7 +71,7 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 
 :::image type="content" source="media/private-auction-high-priority-wins-fp-edited.png" alt-text="Screenshot of higher priority deal bid wins in private auction.":::
 
-### Non-Deal bid wins in open auction (no private auction winner)
+### Non-deal bid wins in open auction (no private auction winner)
 
 :::image type="content" source="media/private-auction-non-deal-bid-wins-fp-edited.png" alt-text="Screenshot of non-deal bid wins in open auction.":::
 
@@ -106,7 +105,7 @@ If you select a **Fixed Price** auction, you will need to enter an ask price. An
 
 :::image type="content" source="media/winners-pays-deal-ask-price.png" alt-text="Screenshot of fixed price deals.":::
 
-## Deal Pricing and Biases
+## Deal pricing and biases
 
 Yield management biases will still be applied to deal bids, even if you have set a price for your deal.
 

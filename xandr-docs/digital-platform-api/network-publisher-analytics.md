@@ -167,6 +167,8 @@ Data retention period for the report is 428 days.
 | `network_profit_ecpc` | money | `123.45` | (booked_revenue + reseller_revenue - total cost)/clicks | Network profit per click. |
 | `network_profit_ecpa` | money | `123.45` | (booked_revenue + reseller_revenue - total cost)/conversions | Network profit per conversion. |
 | `network_profit_margin` | money | `123.45` | (booked_revenue + reseller_revenue - total cost)/(booked_revenue + reseller_revenue) | Network profit margin. |
+| `buying_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * advertiser_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory.|
+| `selling_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * publisher_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 
 ## Example
 

@@ -5,7 +5,6 @@ ms.custom: android-sdk
 ms.date: 10/28/2023
 ---
 
-
 # Show Banner Video / OutStream Ads on Android
 
 > [!NOTE]
@@ -58,3 +57,7 @@ Publishers can query the size of the video ad using the below API.
 ((BannerAdView) bav).getBannerVideoCreativeWidth();
 ((BannerAdView) bav).getBannerVideoCreativeHeight();
 ```
+
+## Related topic
+
+[Customize Video Player Options](customize-video-player-options-on-android.md)

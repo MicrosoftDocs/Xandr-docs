@@ -29,6 +29,8 @@ The Advertiser service lets networks add, modify, and view the advertisers that 
 | Field | Type | Description |
 |:---|:---|:---|
 | `allow_safety_pacing` | boolean | **Admin-only**. If `true`, spend per minute is limited to a maximum of 1% of the lifetime budget and 5% of the daily budget. |
+| `audience_size_check_state` | enum | The state of the audience size validation check. We use an external service provided by Yield Analytics to confirm that the audience size meets our criteria for the Netflix Deal Defined Line Item targeting.<br>Possible values:<br>- `passed`<br>- `failed`<br>- `in_progress`<br>- `unchecked`<br><br>**Note:** This field is visible only for the Netflix Deal Defined Line Item. |
+| `audience_size_check_last_run` | timestamp | Timestamp of the last time the audience size validation check was done, which is when the status changed to `passed` or `failed`.<br><br>**Note:** This field is visible only for the Netflix Deal Defined Line Item. |
 | `billing_address1` | string (100) | For reference. |
 | `billing_address2` | string (100) | For reference. |
 | `billing_city` | string (100) | For reference. |

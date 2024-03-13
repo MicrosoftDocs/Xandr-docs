@@ -4,7 +4,6 @@ description: Learn what is a Deal. This page explains about the two ways to stri
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Monetize - Buying deals
 
 A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. There are two ways to strike deals with sellers:
@@ -14,7 +13,8 @@ A deal is an agreement between a buyer and a seller that provides special access
 
 Use the links below to learn more and get started.
 
-- **[Create a Deal Campaign](create-a-deal-campaign.md)**: Set up a campaign that targets one or more deals you've negotiated with sellers and/or external supply partners.
+<!--- **[Create a Deal Campaign](create-a-deal-campaign.md)**: Set up a campaign that targets one or more deals you've negotiated with sellers and/or external supply partners.-->
+- **[Create an augmented line item](./create-an-augmented-line-item-ali.md)**: Define your financial relationship with an advertiser, set up targeting for an advertising campaign, and schedule your advertisements to run.
 - **[Manage Your Deals with Sellers](manage-your-deals-with-sellers.md)**: Use the Deals screen to view the details of all your existing deals, monitor each deal's health, and trigger detailed reports.
 - **[Control Your Deals with Sellers](control-your-deals-with-sellers.md)**: Use the Deals screen to control deals received from sellers.
 - **[Deal Auction Mechanics](deal-auction-mechanics.md)**: Learn about the different types of deal auctions, open or private, and how each work.

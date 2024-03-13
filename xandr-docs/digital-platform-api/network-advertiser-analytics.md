@@ -234,6 +234,8 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `total_cost_ecpa` | money | `123.45` | total_cost/conversions | **Forthcoming**. The total cost per conversion. |
 | `profit_ecpc` | money | `123.45` | (booked_revenue - total_cost)/clicks | **Forthcoming**. Profit per click. |
 | `profit_ecpa` | money | `123.45` | ( booked_revenue - total_cost)/conversions | **Forthcoming**. Profit per conversion. |
+| `buying_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * advertiser_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory.|
+| `selling_currency_total_segment_data_costs` | money | `123.45` | total_segment_data_costs * publisher_exchange_rate | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 
 ## Example
 

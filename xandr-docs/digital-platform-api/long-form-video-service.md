@@ -396,4 +396,4 @@ curl -X "POST" -H "Content-Type: application/json" -d
 
 ## Related topic
 
-[PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)
+[PSP supported formats and integration paths](../monetize/prebid-server-premium-supported-formats-and-integration-paths.md)

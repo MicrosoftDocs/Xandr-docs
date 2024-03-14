@@ -10,7 +10,7 @@ Integrating publisher inventory with Prebid Server Premium (PSP) begins with a c
 
 ## Microsoft Monetize ad server customer integration
 
-Monetize Ad Server customers can maintain their [current integration type from page/app/server](./prebid-server-premium-supported-formats-and-integration-paths) to Microsoft Advertising, then follow the guidance on the pages below:
+Monetize Ad Server customers can maintain their [current integration type from page/app/server](./prebid-server-premium-supported-formats-and-integration-paths.md) to Microsoft Advertising, then follow the guidance on the pages below:
 
 1. [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md).
 1. [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).

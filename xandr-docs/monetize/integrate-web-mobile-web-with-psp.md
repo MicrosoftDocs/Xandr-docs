@@ -151,3 +151,4 @@ In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed unde
 - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
 - [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
+- [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)

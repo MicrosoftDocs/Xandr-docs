@@ -78,7 +78,7 @@
         href: control-ad-unit-alignment-on-ios.md
       - name: Control Landing Page Load Visibility
         href: control-landing-page-load-visibility-on-ios.md
-      - name: Configure Video Player Options
+      - name: Customize Video Player Options
         href: configure-video-player-options-on-ios.md
       - name: forceCreativeId for iOS
         href: forcecreativeId-for-ios.md
@@ -110,6 +110,8 @@
         href: request-ads-over-https-on-ios.md
       - name: Resize Ads to fit the Screen or Banner Ad View
         href: resize-ads-to-fit-the-screen-or-banner-ad-view-on-ios.md
+      - name: Resize the Banner Ad View to the Size of the Winning Creative
+        href: resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-ios.md
       - name: Set IDFA usage
         href: set-idfa-usage-for-ios.md
       - name: Set Reserve Prices

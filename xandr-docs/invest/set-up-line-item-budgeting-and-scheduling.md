@@ -98,9 +98,6 @@ To set up line item budgeting and scheduling:
 
 1. **Optional:** Click **+ Add Subflight** to create one or more subflights that you can use to further customize flight pacing and spend.
 
-    > [!NOTE]
-    > Budget subflights are an **Alpha** feature that allow you to set custom budget and pacing settings for specific days within a line item flight. If you'd like to gain access to them, please contact your Microsoft Advertising account representative.
-
     1. Enter a name for your subflight.
     1. Select a start and end date for your subflight.
 

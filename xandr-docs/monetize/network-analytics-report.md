@@ -275,6 +275,8 @@ If you are frequently requesting Network analytics reports which include dates l
 | Video Completion Rate | The ratio of video completions to impressions, expressed as a percentage (video completions/total impressions). |
 | Video Start Rate | The percentage of times the first segment of the video creative was downloaded and started. |
 | Video Skip Rate | The percentage of times the user opted to skip the video. |
+| Segment Data Costs Buying Currency | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory. |
+| Segment Data Costs Selling Currency | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 
 **Seller types**
 

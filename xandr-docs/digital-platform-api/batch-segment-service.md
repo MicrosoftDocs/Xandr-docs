@@ -22,13 +22,13 @@ Features include:
 For optimal results, it is strongly recommended to implement the best practices in [Batch Segment Service Best Practices](batch-segment-service-best-practices.md).
 
 > [!NOTE]
-> The Batch Segment Service requires configuration prior to use. Please consult [Batch Segment Service - Configuration](batch-segment-config-service.md) to learn how to configure it for your seat.
+> The Batch Segment Service requires configuration prior to use. Consult [Batch Segment Service - Configuration](batch-segment-config-service.md) to learn how to configure it for your seat.
 > [!IMPORTANT]
 > Gzip is the only file compression method supported by this service.
 
 ## Add a segment file for processing
 
-Adding your segment file to the system is a three-step process. First, request a job identification number and upload URL. Second, upload your file to the assigned upload URL. Third, check the job's processing status. Please note that for now, files are limited to at most 1800 segments on any individual line. If you have more than 1800 segments for one user, you must break that line into multiple lines.
+Adding your segment file to the system is a three-step process. First, request a job identification number and upload URL. Second, upload your file to the assigned upload URL. Third, check the job's processing status. Note that for now, files are limited to at most 1800 segments on any individual line. If you have more than 1800 segments for one user, you must break that line into multiple lines.
 
 - [Step 1. Request an upload URL and job ID](#step-1-request-an-upload-url-and-job-id)
 - [Step 2. Post the file to the upload URL](#step-2-post-the-file-to-the-upload-url)
@@ -122,9 +122,17 @@ Finally, check the processing status by sending a `GET` request. The JSON respon
 
 > [!NOTE]
 >
-> - Per AppNexus SLA, allow up to 24 hours for the file to process.
+> - Our SLA values for the file to process is:
+>
+>     | Priority  | SLA business hours |
+>     |:---|:---|
+>     | P0  | 30 minutes |
+>     | P1 | 4 hours |
+>     | P2  | 6 hours |
+>     | P3 | 9 hours |
+>
 > - If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it, e.g.:
-> `{"batch_segment_upload_job":[{"phase":"completed" }]}`
+>  `{"batch_segment_upload_job":[{"phase":"completed" }]}`
 
 ```
 $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"
@@ -214,31 +222,31 @@ The following are errors that may happen when:
 - The upload phase exceeds 90 minutes
 - You've reached one of its four upload limits (daily bytes, hourly bytes, or hourly lines limit)
 
-**Attempting to exceed daily byte upload limit**
+#### Attempting to exceed daily byte upload limit
 
 ```
  {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member exceeds maximum allowed bytes per day"]}}
 ```
 
-**Attempting to exceed hourly byte upload limit**
+#### Attempting to exceed hourly byte upload limit
 
 ```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member exceeds maximum allowed number of lines per hour"]}}
 ```
 
-**Attempting to exceed daily lines upload limit**
+#### Attempting to exceed daily lines upload limit
 
 ```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member exceeds maximum allowed number of lines per day"]}} 
 ```
 
-**Attempting to exceed hourly lines upload limit**
+#### Attempting to exceed hourly lines upload limit
 
 ```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Member exceeds maximum allowed lines per hour"]}}
 ```
 
-**Exceeding maximum time to upload**
+#### Exceeding maximum time to upload
 
 ```
 {"response":{"status":"ERROR","error_code":"RATE_LIMIT_EXCEEDED","errors":["Maximum upload time exceeded"]}}
@@ -260,7 +268,7 @@ In the `error_log_lines` field:
 
 In this case, the config expects three fields to be defined in the block: `SEG_ID`, `VALUE`, `EXPIRATION`, but the parser only found two fields - `SEG_ID` and `VALUE`, thus showing an error.
 
-**num_invalid_format and error_log_lines example**
+#### `num_invalid_format` and `error_log_lines` example
 
 ```
 "batch_segment_upload_job": {

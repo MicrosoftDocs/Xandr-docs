@@ -40,3 +40,4 @@ To set up AMP inventory with PSP:
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)
 - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
+- [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)

@@ -26,3 +26,4 @@ In this scenario, maintain the above integration methods and proceed with the [P
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
+- [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)

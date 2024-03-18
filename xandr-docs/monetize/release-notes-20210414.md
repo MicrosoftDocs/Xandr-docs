@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 **Release date**: April 14, 2021
 
-We've added a new Ad Quality technical attribute. Total Load >4MB is now available to prevent ads greater than 4MB on Chrome browsers. Eligibility of this attribute depends on the default eligibility setting for technical attributes on each member's Ad Quality profile. Most profiles are set to **Eligible**, which means Total Load >4mb will not be enforced by default, but any default setting of **Banned** will enforce the attribute.
+We've added a new Ad Quality technical attribute. Total Load >4MB is now available to prevent ads greater than 4MB on Chrome browsers. Eligibility of this attribute depends on the default eligibility setting for technical attributes on each member's Ad Quality profile. Most profiles are set to **Eligible**, which means Total Load >4mb will not be enforced by default, but any default setting of **Banned** will enforce the attributes.
 
 For more information, see:
 

@@ -122,17 +122,9 @@ Finally, check the processing status by sending a `GET` request. The JSON respon
 
 > [!NOTE]
 >
-> - Our SLA values for the file to process is:
->
->     | Priority  | SLA business hours |
->     |:---|:---|
->     | P0  | 30 minutes |
->     | P1 | 4 hours |
->     | P2  | 6 hours |
->     | P3 | 9 hours |
->
-> - If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it, e.g.:
->  `{"batch_segment_upload_job":[{"phase":"completed" }]}`
+> If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it, e.g.:
+> `{"batch_segment_upload_job":[{"phase":"completed" }]}`
+<!-- > Per AppNexus SLA, allow up to 24 hours for the file to process. -->
 
 ```
 $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=JFY8l6iMOFAFJIWCMPcy39MCt3Yleo1337618549"

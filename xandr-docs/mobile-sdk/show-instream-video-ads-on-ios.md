@@ -6,6 +6,7 @@ ms.date: 10/28/2023
 
 ---
 
+
 # Show instream video ads on iOS
 
 This page describes how to use the SDK to fetch and display instream video ads.
@@ -133,7 +134,3 @@ This means you have control over whether the video ad displays in full screen mo
 > Video Playback Controls
 >
 > In iOS, it is idiomatic to use the transport controls provided by `AVPlayerViewController` with property `showsPlaybackControls`. This method is incompatible with Xandr's Mobile SDK because, in this case, the full screen option creates a modal view which displays over all current views, obscuring the video ad container which displays over the content container. Full screen functionality for the video ad must be handled some means other than creating a modal view.
-
-## Related topic
-
-[Customize Video Player Options](configure-video-player-options-on-ios.md)

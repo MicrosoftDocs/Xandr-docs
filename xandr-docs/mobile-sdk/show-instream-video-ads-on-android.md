@@ -5,7 +5,6 @@ ms.custom: android-sdk
 ms.date: 10/28/2023
 ---
 
-
 # Show instream video ads on Android
 
 This page describes how to use the SDK to fetch and display instream video ads.
@@ -304,3 +303,7 @@ See below for a complete working example of showing an instream video ad.
 }
   
 ```
+
+## Related topic
+
+[Customize Video Player Options](customize-video-player-options-on-android.md)

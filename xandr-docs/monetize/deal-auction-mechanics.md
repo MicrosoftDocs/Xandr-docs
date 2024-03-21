@@ -25,7 +25,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 > Deal Ask Prices vs. Reserve Prices
 >
 > - If the seller has set a reserve price on their RTB inventory, the deal ask price will take priority over the reserve price.
-> - A default creative reserve price will always take priority over th placement reserve price.
+> - A default creative reserve price will always take priority over the placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
 
 ## Examples (open auction)

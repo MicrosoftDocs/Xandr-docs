@@ -43,14 +43,13 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b-edited.png" alt-text="Screenshot of second example for non-deal bid wins.":::
 
 > [!IMPORTANT]
-> **Why does this example have two floors? And why does the non-deal bid win?**
+> **Why does this example have two floors? And why did the non-deal bid win?**
 >
-> In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category.
+> In the example above, each of the deal bids has a different floor applied to it. This is because each bid is targeting a different deal and the two deals have different ask prices.
 >
-> The highest non-deal bid wins because:
->
-> - The deal does not have a deal ask price, and
-> - Neither of the deal bids met the floor targeted to their bids
+> The non-deal bid wins because neither of the deal bids met their deal floor.
+
+<!--In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category. The highest non-deal bid wins because: The deal does not have a deal ask price, and Neither of the deal bids met the floor targeted to their bids.-->
 
 ## Private auctions
 
@@ -97,13 +96,13 @@ If you have set a price for your deal, it will override other pricing mechanisms
 
 ### Deal bid meets deal floor and wins
 
-:::image type="content" source="media/deal-bid-ym-floors-fp.png" alt-text="Screenshot of deal bid meets deal floor and wins.":::
+:::image type="content" source="media/deal-bid-ym-floors-fp-edited.png" alt-text="Screenshot of deal bid meets deal floor and wins.":::
 
 ## Fixed price deals
 
 If you select a **Fixed Price** auction, you will need to enter an ask price. Any buyer who bids above this value (plus relevant fees) will be eligible to bid on the deal. The winning buyer is responsible for the fixed price plus fees. A bid is only eligible if it is above the applicable price for the deal. Any bids below the ask price will be considered ineligible for the deal and the auction. IDs on fixed price deals are ranked according to the deal's ask price (minus relevant fees).
 
-:::image type="content" source="media/winners-pays-deal-ask-price.png" alt-text="Screenshot of fixed price deals.":::
+:::image type="content" source="media/winners-pays-deal-ask-price-edited.png" alt-text="Screenshot of fixed price deals.":::
 
 ## Deal pricing and biases
 

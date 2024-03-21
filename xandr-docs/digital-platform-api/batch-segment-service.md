@@ -1,6 +1,6 @@
 ---
 title: Digital Platform API - Batch Segment Service
-description: In this article, find information about the Batch Segment Service, the possible errors that may occur, and the fields associated with it.
+description: In this article, find information about the Batch Segment Service, the possible errors that might occur, and the fields associated with it.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
@@ -39,7 +39,7 @@ Adding your segment file to the system is a three-step process. First, request a
 Each segment data file that is uploaded must be associated with a particular job ID. This ID is used to create the upload URL and to track the file's processing status. The first step is to send an empty `POST` request to the service.
 
 > [!NOTE]
-> This service works for both `api.appnexus.com` and for `api.adnxs.com` - it is available for both bidder and console logins.
+> This service works for both `api.appnexus.com` and `api.adnxs.com`. It is available for both bidder and console logins.
 
 ```
 $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
@@ -72,10 +72,10 @@ The file upload URL is given in the JSON response to Step 1 by the field `upload
 > [!NOTE]
 >
 > - You must begin your upload to the given Upload URL within five minutes, and only one URL is valid at any given time. If you wait longer than five minutes to start your upload you must request a new URL.
-> - We recommend you do not exceed one upload per minute. If you have more than 200 jobs waiting to be processed at any given time, you will be prohibited from uploading additional jobs.
+> - We recommend that you don't exceed one upload per minute. If you have more than 200 jobs waiting for processing at any given time, you will be prohibited from uploading additional jobs.
 > - Your segment file should not be larger than 0.5GB.
 > [!WARNING]
-> In order for the file to upload correctly, you *must* specify the MIME type in the HTTP header as "Content-Type: application/octet-stream"*.* *Do not* use "Content-Type: application/x-www-form-urlencode" (-d or --data flags in curl). Using an incorrect MIME type will prevent the file from being processed by the API Batch Segment Service.
+> In order for the file to upload correctly, you *must* specify the MIME type in the HTTP header as "Content-Type: application/octet-stream". *Do not* use "Content-Type: application/x-www-form-urlencode" (-d or --data flags in curl). Using an incorrect MIME type will prevent the file from being processed by the API Batch Segment Service.
 >
 > Your file must conform to the Latin1 character set.
 
@@ -255,8 +255,7 @@ In the example below, the `num_invalid_format` field displays a value of `"1"`, 
 In the `error_log_lines` field:
 
 - `num_invalid_format` indicates there was a problem parsing a line in the uploaded file.
-
-- `"failed with an illegal number of fields"` indicates that the number of fields in a `segment_fields` block did not match what was defined in the batch-segment config (see [Batch Segment Service - Configuration](batch-segment-config-service.md) for more information).
+- `"failed with an illegal number of fields"` indicates that the number of fields in a `segment_fields` block did not match what was defined in the batch-segment config. For more information, see [Batch Segment Service - Configuration](batch-segment-config-service.md).
 
 In this case, the config expects three fields to be defined in the block: `SEG_ID`, `VALUE`, `EXPIRATION`, but the parser only found two fields - `SEG_ID` and `VALUE`, thus showing an error.
 
@@ -347,13 +346,13 @@ m$ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| `GET` | `https://api.appnexus.com/batch-segment/meta` | To find out which fields you can filter and sort by, make a GET call. |
+| `GET` | `https://api.appnexus.com/batch-segment/meta` | To find out which fields you can filter and sort by, make a `GET` call. |
 
 ## JSON fields
 
 | Field | Type | Description |
 |---|---|---|
-| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. See the [Batch Segment Upload Job](#batch-segment-upload-job) section below for details. |
+| `batch_segment_upload_job` | object | The object whose fields contain metadata describing the upload and processing job. If you are using the Impbus API, this will be an array containing a single object. For details, see the [Batch Segment Upload Job](#batch-segment-upload-job) section below. |
 | `id` | int | This is the ID of the `batch_segment_upload_job` object associated with this request.<br> **Default**: An automatically generated number. |
 | `status` | string | The status of the API call; successful calls return `"OK"`. |
 
@@ -378,14 +377,14 @@ When you request the status of your processing job, the system returns a `batch_
 | `num_invalid_format` | int | The number of uploaded lines containing formatting errors (This depends upon your particular file format configuration). Duplicate lines will also be considered to be an invalid format. |
 | `num_invalid_segment` | int | The number of invalid segments in the file. Deduplicated. |
 | `num_invalid_timestamp` | int | The number of invalid timestamps in the file. |
-| `num_invalid_user` | int | This is a count of unique input lines that have an invalid or nonexistent user |
+| `num_invalid_user` | int | This is a count of unique input lines that have an invalid or nonexistent user. |
 | `num_other_error` | int | This is a placeholder value not currently in use. |
 | `num_past_expiration` | int | The number of expired segments in the file. Deduplicated. |
 | `num_unauth_segment` | int | The number of segments in the file which you are unauthorized to access. Deduplicated. |
 | `num_valid` | int | The number of valid lines in the uploaded file. Each user/segment combination is considered 1 line. |
 | `num_valid_user` | int | This is a count of unique input lines that have a valid user ID. |
 | `percent_complete` | int | The percentage of the processing that has been completed, given the current `phase` at the time of the request. |
-| `phase` | enum | The current processing status. Returns one of the following values: <br> - `"error"` <br> - `"starting"` <br> - `"uploading"` <br> - `"validating"` <br> - `"processing"` <br> - `"completed"`. |
+| `phase` | enum | The current processing status. Returns one of the following values: <br> - `"error"` <br> - `"starting"` <br> - `"uploading"` <br> - `"validating"` <br> - `"processing"` <br> - `"completed"` |
 | `segment_log_lines` | string | A string containing newline-separated lines. Each line lists a segment and how many users were successfully added to it. This field defaults to 200 lines. |
 | `start_time` | date | The time at which file upload began. |
 | `time_to_process` | decimal | How long it took to process the segment file, in minutes. |

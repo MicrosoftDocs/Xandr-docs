@@ -14,9 +14,9 @@ Features include:
 - Ability to upload compressed files
 - Error checking of segment data
 - Configurable input file format
-- Confirmation of successful upload
-- Feedback on overall processing status
-- Association of segments to users regardless of location of users
+- Confirmation of a successful upload
+- Feedback on the overall processing status
+- Association of segments to users regardless of their location
 - A high maximum data volume
 
 For optimal results, it is strongly recommended to implement the best practices in [Batch Segment Service Best Practices](batch-segment-service-best-practices.md).
@@ -67,11 +67,11 @@ $ curl -b cookies -X POST "https://api.appnexus.com/batch-segment?member_id=456"
 
 ### Step 2. Post the file to the upload URL
 
-The file upload URL is given in the JSON response to Step 1 by the field `upload_url`. You must `POST` your segment file to this URL for processing. You'll receive a JSON object that tells you if the upload succeeded. Do not hardcode the upload URL in your application - make sure to dynamically grab it from the `upload_url` field.
+The file upload URL is given in the JSON response to Step 1 in the field `upload_url`. You must `POST` your segment file to this URL for processing. You'll receive a JSON object that tells you if the upload succeeded. Do not hardcode the upload URL in your application; make sure to dynamically grab it from the `upload_url` field.
 
 > [!NOTE]
 >
-> - You must begin your upload to the given Upload URL within five minutes, and only one URL is valid at any given time. If you wait longer than five minutes to start your upload you must request a new URL.
+> - You must begin your upload to the given Upload URL within five minutes, and only one URL is valid at any given time. If you wait longer than five minutes to start your upload, you must request a new URL.
 > - We recommend that you don't exceed one upload per minute. If you have more than 200 jobs waiting for processing at any given time, you will be prohibited from uploading additional jobs.
 > - Your segment file should not be larger than 0.5GB.
 > [!WARNING]
@@ -118,7 +118,7 @@ curl -b cookie -c cookie -X POST -s -d '' "https://api.appnexus.com/batch-segmen
 
 ### Step 3. Check the job status
 
-Finally, check the processing status by sending a `GET` request. The JSON response contains information such as how long the file took to process and the number of errors, if any. Note that you should wait until `phase="completed"` before looking at the results fields such as `num_valid`. For more detailed information, see [JSON Fields](#json-fields) below.
+Finally, check the processing status by sending a `GET` request. The JSON response contains information such as how long the file took to process and the number of errors, if any. Note that you should wait until `phase="completed"` before looking at the results fields, such as `num_valid`. For more detailed information, see [JSON Fields](#json-fields) below.
 
 > [!NOTE]
 >
@@ -210,9 +210,9 @@ $ curl -b cookies "https://api.appnexus.com/batch-segment?member_id=456&job_id=J
 
 The following are errors that may happen when:
 
-- You've canceled the upload
-- The upload phase exceeds 90 minutes
-- You've reached one of its four upload limits (daily bytes, hourly bytes, or hourly lines limit)
+- You've canceled the upload.
+- The upload phase exceeds 90 minutes.
+- You've reached one of its four upload limits (daily bytes, hourly bytes, or hourly lines limit).
 
 #### Attempting to exceed daily byte upload limit
 
@@ -257,7 +257,7 @@ In the `error_log_lines` field:
 - `num_invalid_format` indicates there was a problem parsing a line in the uploaded file.
 - `"failed with an illegal number of fields"` indicates that the number of fields in a `segment_fields` block did not match what was defined in the batch-segment config. For more information, see [Batch Segment Service - Configuration](batch-segment-config-service.md).
 
-In this case, the config expects three fields to be defined in the block: `SEG_ID`, `VALUE`, `EXPIRATION`, but the parser only found two fields - `SEG_ID` and `VALUE`, thus showing an error.
+In this case, the config expects three fields to be defined in the block: `SEG_ID`, `VALUE`, and `EXPIRATION`, but the parser only found two fields - `SEG_ID` and `VALUE`, thus showing an error.
 
 #### `num_invalid_format` and `error_log_lines` example
 
@@ -358,7 +358,7 @@ m$ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 
 ### Batch segment upload job
 
-When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending upon which request you're making to the service, it will contain some or all of the following metadata. For more information about the required sequence of requests, see the [Add a Segment File for Processing](#add-a-segment-file-for-processing) section below.
+When you request the status of your processing job, the system returns a `batch_segment_upload_job` object (if you are a data provider, this will be an array containing a single object). Depending on which request you're making to the service, it will contain some or all of the following metadata. For more information about the required sequence of requests, see the [Add a Segment File for Processing](#add-a-segment-file-for-processing) section below.
 
 > [!NOTE]
 > Most metadata will only be present when `phase = "completed"`.
@@ -367,27 +367,27 @@ When you request the status of your processing job, the system returns a `batch_
 |---|---|---|
 | `completed_time` | date | The time at which file processing was completed. |
 | `created_on` | date | The creation date of this object. |
-| `error_code` | int | If `phase='error'`, this error code describes the type of error encountered. Note that an error code will only be shown here if there was an error with the uploading, validating, or processing of the file itself (i.e., does not include invalid format or invalid segment errors). Common errors are caused by unreadable files and exceeding defined object limits. <br> Returns `null` if no errors were found. |
-| `error_log_lines` | string | A string containing newline-separated lines. Each line lists a validation error or the reason for an error while uploading your file. You can choose how many lines (200 by default) appear in this field. |
+| `error_code` | int | If `phase='error'`, this error code describes the type of error encountered. Note that an error code will only be shown here if there was an error with the uploading, validating, or processing of the file itself (i.e., it does not include invalid format or invalid segment errors). Common errors are caused by unreadable files and exceeding defined object limits. <br> Returns `null` if no errors were found. |
+| `error_log_lines` | string | A string containing newline-separated lines. Each line lists a validation error or the reason for an error while uploading your file. You can choose how many lines (by default, 200) appear in this field. |
 | `id` | int | The unique identifier of this object. |
 | `job_id` | string | A string of alphanumeric characters that uniquely identifies the processing job associated with this file. |
 | `last_modified` | date | The most recent modification date of this object (usually via `POST`). |
 | `member_id` | int | Your member ID. |
 | `num_inactive_segment` | int | The number of inactive segments in the file. Deduplicated. |
-| `num_invalid_format` | int | The number of uploaded lines containing formatting errors (This depends upon your particular file format configuration). Duplicate lines will also be considered to be an invalid format. |
+| `num_invalid_format` | int | The number of uploaded lines containing formatting errors (this depends upon your particular file format configuration). Duplicate lines will also be considered an invalid format. |
 | `num_invalid_segment` | int | The number of invalid segments in the file. Deduplicated. |
 | `num_invalid_timestamp` | int | The number of invalid timestamps in the file. |
 | `num_invalid_user` | int | This is a count of unique input lines that have an invalid or nonexistent user. |
-| `num_other_error` | int | This is a placeholder value not currently in use. |
+| `num_other_error` | int | This is a placeholder value that is not currently in use. |
 | `num_past_expiration` | int | The number of expired segments in the file. Deduplicated. |
-| `num_unauth_segment` | int | The number of segments in the file which you are unauthorized to access. Deduplicated. |
-| `num_valid` | int | The number of valid lines in the uploaded file. Each user/segment combination is considered 1 line. |
+| `num_unauth_segment` | int | The number of segments in the file that you are unauthorized to access. Deduplicated. |
+| `num_valid` | int | The number of valid lines in the uploaded file. Each user/segment combination is considered one line. |
 | `num_valid_user` | int | This is a count of unique input lines that have a valid user ID. |
 | `percent_complete` | int | The percentage of the processing that has been completed, given the current `phase` at the time of the request. |
 | `phase` | enum | The current processing status. Returns one of the following values: <br> - `"error"` <br> - `"starting"` <br> - `"uploading"` <br> - `"validating"` <br> - `"processing"` <br> - `"completed"` |
 | `segment_log_lines` | string | A string containing newline-separated lines. Each line lists a segment and how many users were successfully added to it. This field defaults to 200 lines. |
 | `start_time` | date | The time at which file upload began. |
-| `time_to_process` | decimal | How long it took to process the segment file, in minutes. |
+| `time_to_process` | decimal | Duration of segment file processing, measured in minutes. |
 | `upload_url` | string | The URL where you'll upload your segment data file. |
 | `uploaded_time` | date | The time at which the file associated with this job ID was uploaded. |
 | `validated_time` | date | The time at which file validation was completed. |

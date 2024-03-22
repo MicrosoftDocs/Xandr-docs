@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Industry ID support matrix for sellers
 
-This page provides a summary of the Industry IDs and handlers that are supported by Microsoft Invest and Monetize. It also provides information on the level of support provided for each of the IDs listed, and whether you can use the platform to onboard audiences and frequency cap using Ramp IDs and lists other IDs that can be used to onboard audiences.
+This page provides a summary of the Industry IDs and handlers that are supported by Microsoft Invest and Microsoft Monetize, or Microsoft Monetize only. It also provides information on the level of support provided for each of the IDs listed, and whether you can use the platform to onboard audiences and frequency cap using Ramp IDs.
 
 | ID Solution |Source Name |Endpoint Supported |Regional Availability of Solution | Support level |Frequency Capping Capabilities  |Audience Onboarding/Activation Capabilities |Attribution Capabilities |Publisher Setup |Microsoft Publisher Enablement |External Bidder Enablement |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|

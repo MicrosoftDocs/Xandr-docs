@@ -224,7 +224,7 @@ If the `supported_media_type` is `"video"` or the `supported_media_subtypes` is 
 | `minbitrate` | int | The minimum bitrate in kbps. |
 | `mf_min_width` | int | The minimum width of the video creative. |
 | `mf_min_height` | int | The minimum height of the video creative. |
-| `aspect ratios` | array of objects | The creative aspect ratio that can serve for a video placement. The array contains `ratio_width` and `ratio_height`. |
+| `aspect_ratios` | array of objects | The creative aspect ratio that can serve for a video placement. The array contains `ratio_width` and `ratio_height`. |
 
 ### Video bumpers
 

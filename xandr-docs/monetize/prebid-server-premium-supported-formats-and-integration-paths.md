@@ -20,9 +20,9 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 |--|--|--|--|--|--|--|
 | **Microsoft Monetize Ad Server** |  |  |  |  |  |  |
 | [AST (ut/v3)](working-with-seller-tag.md) | Y | Y | Y | Y |  |  |
-| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [TinyTag (ttj)](../bidders/tinytags.md) | Y |  |  |  |  |  |
-| [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  |  | Y | Y |
+| [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y | Y |
 | [VMAP (/vmap or /ssvmap)](non-prebid-integrations-with-psp.md) |  |  |  |  |  | Y |
 | **Microsoft Monetize** |  |  |  |  |  |  |
 | [Client-Side Prebid (ut/v3/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
@@ -37,15 +37,15 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 | Integration   Method | Banner | Native Display | Native Video | Video Outstream | Video Instream | Long-Form Video |
 |--|--|--|--|--|--|--|
 | **Microsoft Monetize Ad Server** |  |  |  |  |  |  |
+| [Xandr Mobile SDK (ut/v3)](../mobile-sdk/xandr-mobile-sdks.md) | Y | Y | Y | Y | Y |  |
 | [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
 | [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y | Y |
 | [VMAP (/vmap or /ssvmap)](non-prebid-integrations-with-psp.md) |  |  |  |  |  | Y |
-| [Xandr Mobile SDK (ut/v3)](../mobile-sdk/xandr-mobile-sdks.md) | Y | Y | Y | Y | Y |  |
 | **Microsoft Monetize** |  |  |  |  |  |  |
+| [Prebid Mobile SDK (openrtb2/prebid)](integrate-apps-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y |  |
 | [Long-Form Video (/prebid/lfv or /prebid/lfvp)](../digital-platform-api/long-form-video-service.md) |  |  |  |  |  | Y |
-| [Prebid Mobile SDK (openrtb2/prebid)](integrate-apps-with-psp.md) | Y | Y | Y | Y | Y |  |
 
 ## AMP
 

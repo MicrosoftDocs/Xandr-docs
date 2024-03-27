@@ -122,8 +122,8 @@ Finally, check the processing status by sending a `GET` request. The JSON respon
 
 > [!NOTE]
 >
-> Per Xandr SLA, allow up to 24 hours for the file to process.
-> If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it, e.g.:
+> - Per Xandr SLA, allow up to 24 hours for the file to process.
+> - If you are a data provider using the Impbus API, note that the `batch_segment_upload_job` field will be an array with a single object inside of it, for example:
 > `{"batch_segment_upload_job":[{"phase":"completed" }]}`
 
 ```

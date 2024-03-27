@@ -4,7 +4,6 @@ description: This page covers prerequisites and steps to setup a Programmatic Gu
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Create a programmatic guaranteed buying line item
 
 A programmatic guaranteed buying line item (PG line item) provides you with a workflow specifically designed for buying a programmatic guaranteed deal (PG deal).
@@ -77,7 +76,7 @@ Click the **edit** icon to associate conversion tracking pixels with this PG lin
 
 ### Creative requirements for this PG deal
 
-The creative requirements for the PG deal for this PG line item are associated to display here.
+The creative requirements for the PG deal associated with this PG line item are displayed here.
 
 > [!IMPORTANT]
 > The PG line item must be associated with a PG deal for the **Creative Requirements for this PG Deal** to display (see [Basic Setup](#basic-setup) to assign a PG deal to the PG line item). The seller of the PG deal configures these creative requirements, and settings in the PG line item can't change them. You must have at least one associated creative for each media type and ad size listed for the PG deal.

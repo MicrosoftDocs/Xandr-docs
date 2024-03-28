@@ -27,7 +27,7 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 | **Microsoft Monetize** |  |  |  |  |  |  |
 | [Client-Side Prebid (ut/v3/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [Server-Side Prebid (openrtb2/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
-| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [TinyTag (ttj)](../bidders/tinytags.md) | Y |  |  |  |  |  |
 | [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  |  | Y |  |
 | [Long-Form Video (/prebid/lfv or /prebid/lfvp)](../digital-platform-api/long-form-video-service.md) |  |  |  |  |  | Y |
@@ -38,7 +38,7 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 |--|--|--|--|--|--|--|
 | **Microsoft Monetize Ad Server** |  |  |  |  |  |  |
 | [Xandr Mobile SDK (ut/v3)](../mobile-sdk/xandr-mobile-sdks.md) | Y | Y | Y | Y | Y |  |
-| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y | Y |
+| [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y | Y |
 | [VMAP (/vmap or /ssvmap)](non-prebid-integrations-with-psp.md) |  |  |  |  |  | Y |
 | **Microsoft Monetize** |  |  |  |  |  |  |

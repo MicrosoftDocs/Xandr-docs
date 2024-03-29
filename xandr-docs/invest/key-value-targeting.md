@@ -238,9 +238,9 @@ The following restrictions are enforced when entering or importing values:
 
 ## Wildcards
 
-You can use the \* wildcard symbol to target multiple values. For example, let's say that rather than targeting apples, you wanted the option to target specific types of apples. You could have a key of fruit with values that include granny smith apple, red delicious apple, honeycrisp apple. To target a specific type of apple you would enter the value honeycrisp apple. If you decide you want to target all apples, you would use a wildcard in your value: \*apple.
+You can use the \* wildcard symbol to target multiple values. For example, let's say that rather than targeting apples, you wanted the option to target specific types of apples. You could have a key of fruit with values that include granny smith apple, red delicious apple, honeycrisp apple. To target a specific type of apple you would enter the value honeycrisp apple. If you decide you want to target all apples, you would use a wildcard in your value: *apple.
 
-You can use up to two wildcards in a value. So if for some reason your values had been entered as delicious apple red and delicious apple golden, you could find all delicious apples with the value delicious apple*, and all apples of any type with the value *apple*.
+You can use up to two wildcards in a value. So if for some reason your values had been entered as delicious apple red and delicious apple golden, you could find all delicious apples with the value delicious apple*, and all apples of any type with the value * apple *.
 
 ## Group restrictions
 

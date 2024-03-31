@@ -34,11 +34,11 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 
 :::image type="content" source="media/open-auction-deal-wins-fp.png" alt-text="Screenshot of deal bid wins.":::
 
-### Non-deal bid wins (Example 1)
+### Non-deal bid wins (example 1)
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-edited.png" alt-text="Screenshot of first example for non-deal bid wins.":::
 
-### Non-deal bid wins (Example 2)
+### Non-deal bid wins (example 2)
 
 :::image type="content" source="media/open-auction-non-deal-wins-fp-b-edited.png" alt-text="Screenshot of second example for non-deal bid wins.":::
 

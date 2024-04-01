@@ -1,10 +1,10 @@
 ---
-title: Industry ID Support Matrix for Sellers
-description: This article provides summary of the kind of Industry IDs and handlers that are supported.
+title: Microsoft Monetize - Industry ID Support Matrix for Sellers
+description: This article provides summary of the kind of Industry IDs and handlers that are supported by Microsoft Monetize.
 ms.date: 10/28/2023
 ---
 
-# Industry ID support matrix for sellers
+# Microsoft Monetize - Industry ID support matrix for sellers
 
 This page provides a summary of the Industry IDs and handlers that are supported by Microsoft Invest and Microsoft Monetize, or Microsoft Monetize only. It also provides information on the level of support provided for each of the IDs listed, and whether you can use the platform to onboard audiences and frequency cap using Ramp IDs.
 

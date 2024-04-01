@@ -14,6 +14,9 @@ This function sets the Impression Bus endpoint to which ad requests are made.
 setEndpoint('endpoint', true|false)
 ```
 
+> [!IMPORTANT]
+> If you are looking to use the `setEndpoint` function to force the usage of the simple domain, it's recommended to also disable the AST `userSync` feature in the `setPageOpts`.  This will prevent AST from dropping the `userSync` script at the end of the auction, which will align to your likely desired usage of the simple domain (i.e., to not drop cookies regardless of the user's consent choices).
+
 The parameter listed below can be sent as an argument in the function.
 
 | Parameter | Type | Description |

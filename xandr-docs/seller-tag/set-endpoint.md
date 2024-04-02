@@ -15,7 +15,7 @@ setEndpoint('endpoint', true|false)
 ```
 
 > [!IMPORTANT]
-> If you are looking to use the `setEndpoint` function to force the usage of the simple domain, it's recommended to also disable the AST `userSync` feature in the `setPageOpts`.  This will prevent AST from dropping the `userSync` script at the end of the auction, which will align to your likely desired usage of the simple domain (i.e., to not drop cookies regardless of the user's consent choices).
+> If you plan to use the `setEndpoint` function to ensure the use of the simple domain, it's advisable to disable the AST `userSync` feature in the `setPageOpts`. This action will ensure that the `userSync` script remains intact throughout the auction process, in accordance with your preference to maintain cookie integrity regardless of the user's consent choices.
 
 The parameter listed below can be sent as an argument in the function.
 

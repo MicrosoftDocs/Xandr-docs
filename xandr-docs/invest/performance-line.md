@@ -7,7 +7,7 @@ ms.date: 04/04/2024
 # Performance line
 
 > [!NOTE]
-> This feature is currently in **Alpha** and may undergo changes without notice. Contact your Microsoft Advertising Account Representative to enable it.
+> This feature is currently in **Alpha** and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
 This document outlines how to serve performance campaigns from Microsoft Invest users using the MSAN Bidder. The goal is to potentially improve Return on Ad Spend (ROAS). It not only accesses Microsoft's advertising inventory but also utilizes bidding strategies available within the MSAN (Microsoft Audience Network) to optimize performance.
 
@@ -42,7 +42,7 @@ The Performance Insertion Order maps 1:1 with the MSAN campaign and allows clien
 | Field  | Description  |
 |:---------|:---------|
 | **Name** | The name of the insertion order. You can later search for and report on the insertion order using this name. |
-| **External Code** (optional) | An external code used for reporting. (Microsoft Advertising also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores, or dashes. It's not case-sensitive (upper- and lower-case characters are treated the same). |
+| **External Code** (optional) | An external code used for reporting. Microsoft Advertising also assigns an internal code automatically. The code may only contain alphanumeric characters, periods, underscores, or dashes. It's not case-sensitive (upper- and lower-case characters are treated the same). |
 | **Billing Code** (optional) | An internal billing code you want to appear on invoices for this insertion order if you receive insertion-order-specific invoices. For details on invoices, see [Understanding Your Invoice](understanding-your-invoice.md). |
 | **State** | The state of the insertion order. If set to **Active**, child line items and campaigns are eligible to serve. |
 | **Billing Periods** |  Billing periods allow you to allocate portions of your marketing budget to discrete periods of time. You can associate an external code with a billing period for reporting and invoicing. Any line item flight dates must occur within the dates of the parent insertion order's billing periods.<br><br> You may set both a start and an end date (**Set Dates**) or set a start date without an end date (**No Dates**). If you select **No End Date**, you can only create a single billing period on the insertion order, but you may still specify multiple flights with end dates on the line item. If you select **Set Dates**, you can create up to 52 billing periods. |

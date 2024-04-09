@@ -55,6 +55,7 @@ A successful response will return JSON containing all the Prebid configs for the
 | `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `demand_partner_settings` | array | The demand partner properties. For the items contained in the `demand_partner_settings` object, see the [demand partner settings](#demand-partner-settings) table below. |
 | `id` | integer | A unique identifier for the config object being returned. This id is then referred to as `prebid_settings_id` in other endpoints of this API. |
+| `label` | string | The name of the default Prebid price bucket tier. For more information, see [Price Granularity](https://docs.prebid.org/adops/price-granularity.html).|
 | `last_modified` | string | The most recent modification date of the config object. |
 | `member_id` | integer | The caller's member id. |
 | `price_granularity` | object | The price bucket granularity setting that will be used for this member. For items contained in a price_granularity object, see the [price granularity](#price-granularity) properties table below. |

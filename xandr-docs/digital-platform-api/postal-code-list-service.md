@@ -14,6 +14,8 @@ The Postal Code List service enables users to:
 - Search, create, fetch, and delete a specific or different postal code list, include and exclude postal code lists containing a number of postal codes (by postal code ID).
 - Enable include and exclude postal code list targeting on the line item and split level.
 
+> [!IMPORTANT]
+> The maximum number of postal codes lists allowed per member is 8,000.
 > [!NOTE]
 > All query parameters in the postal code list service support a list of comma-separated values. For example, to delete a set of postal code lists, a comma-separated list of IDs can be passed as query parameters.
 

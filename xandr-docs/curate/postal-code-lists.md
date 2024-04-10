@@ -2,6 +2,7 @@
 title: Microsoft Curate - Postal Code Lists
 description: Utilize postal codes for precise hyperlocal targeting, enhancing advertiser strategies with detailed postal code lists.
 ---
+
 # Microsoft Curate - Postal code lists
 
 ## Introduction
@@ -28,10 +29,10 @@ Postal codes can be added to a list by either:
 - Copying and pasting in a dialog box.
 - Bulk uploading a CSV, Excel, or Text file.
 
-The maximum number of postal codes allowed in a list is 100,000.
-
-> [!NOTE]
-> For USA, you can target the full 9-digit postal code (also known as zip +4). For example, "10010-7456".
+> [!IMPORTANT]
+>
+> - The maximum number of postal codes allowed in a list is 100,000.
+> - The maximum number of postal codes lists allowed per member is 8,000.
 
 **Create a new postal code list:**
 
@@ -48,8 +49,10 @@ The maximum number of postal codes allowed in a list is 100,000.
     - **Copy and Paste**: If you select this option, on the next page you can enter the postal codes to include in the Postal Code List. The codes need to be separated by a comma or hard return. When you're done, click **Next**.
     - **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, click **Next**.
 
-  > [!NOTE]
-   > You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time. For USA, you can target the full 9-digit postal code (also known as zip +4). For example, you can target "10010-7456".
+    > [!NOTE]
+    >
+    > - You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time.
+    > - For USA, you can target the full 9-digit postal code (also known as zip +4). For example, you can target "10010-7456".
 
 6.On the **Review Location Target** page, the following tabs are available:
     - **Successfully Imported** displays the list of postal codes that were successfully imported to the Postal Code List with the **Code**, **Country Name**, **Country ID** of each postal code.

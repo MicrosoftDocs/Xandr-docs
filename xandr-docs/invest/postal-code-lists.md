@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 
 > [!NOTE]
 > If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal codes for the purpose of personalizing advertising, segmenting, or profiling customers.
-    
+
 Leveraging postal codes is a powerful way for advertisers to achieve highly granular and precise, or *hyperlocal*, targeting. Hyperlocal targeting is a key factor in driving advertising performance. Because buyers often want to increase efficiency by targeting the same set of postal codes across different objects (line items and splits), the Postal Code List feature allows them to reuse a list of postal codes across different line items and splits.
 
 The Postal Code List feature enables traders to:
@@ -30,10 +30,10 @@ Postal codes can be added to a list by either:
 - Copying and pasting in a dialog box.
 - Bulk uploading a CSV, Excel, or Text file.
 
-The maximum number of postal codes allowed in a list is 100,000.
-
-> [!NOTE]
-> For USA, you can target the full 9-digit postal code (also known as zip +4). For example, "10010-7456".
+> [!IMPORTANT]
+>
+> - The maximum number of postal codes allowed in a list is 100,000.
+> - The maximum number of postal codes lists allowed per member is 8,000.
 
 ### Create a new postal code list
 
@@ -49,7 +49,9 @@ The maximum number of postal codes allowed in a list is 100,000.
     - **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, click **Next**.
 
     > [!NOTE]
-    > You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time. For USA, you can target the full 9-digit postal code (also known as zip +4). For example, you can target "10010-7456".
+    >
+    > - You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time.
+    > - For USA, you can target the full 9-digit postal code (also known as zip +4). For example, you can target "10010-7456".
 
 1. On the **Review Location Target** page, the following tabs are available:
     - **Successfully Imported** displays the list of postal codes that were successfully imported to the Postal Code List with the **Code**, **Country Name**, **Country ID** of each postal code.

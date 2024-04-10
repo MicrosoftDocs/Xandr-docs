@@ -14,7 +14,7 @@ The **Domain Audit Status** tool is available under **Network** > **Tools** > **
 
 To check the audit status of your domains, follow these steps:
 
-1. Navigate to the **Network** > **Tools** menu and select **Domain Audit Status**. This redirects you to the **Domain Audit Status** screen.
+1. Go to the **Network** > **Tools** menu and select **Domain Audit Status**. This redirects you to the **Domain Audit Status** screen.
 1. Under **Search Domains**, enter the domains you would like to check. Separate multiple values with commas or line breaks. Alternatively, select the **Upload** button to upload a CSV file containing up to 4,000 domains.
 1. Click **Submit** to run the tool.
 
@@ -27,11 +27,11 @@ After the domains are submitted for verification, the page shows the following i
 | **Domain** | The submitted domain. |
 | **Audit Status** | The current audit status of the domain. Possible statuses:<ul><li>Audited</li><li>Pending</li><li>Unable to Audit</li><li>Rejected</li><li>Ad Serving</li><li>Unaudited</li><li>Masked</li></ul> |
 | **Reason** | If the audit status is **Unable to Audit** or **Rejected**, this field provides a reason for the assigned audit status. This status can be used for more context on the decision and to troubleshoot any issues. |
-| **Audience** | The intended audience of the domain, as determined by Microsoft Monetize. Possible values:<ul><li>mature</li><li>young adult</li><li>children</li><li>general</li></ul><br>If the audit status is **Rejected**, this field will be `null`. |
+| **Audience** | The intended audience of the domain, as determined by Microsoft Monetize. Possible values:<ul><li>mature</li><li>young adult</li><li>children</li><li>general</li></ul>If the audit status is **Rejected**, this field will be `null`. |
 
 ### Audit Status definitions
 
-| Field | Description |
+| Status | Description |
 |:--|:--|
 | **Audited** | The domain has been reviewed and passed an audit. |
 | **Pending** | The domain has been submitted for audit but hasn't yet been reviewed. |

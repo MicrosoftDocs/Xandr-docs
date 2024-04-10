@@ -70,6 +70,8 @@
     items:
     - name: Working with Network Tools
       href: working-with-network-tools.md
+    - name: Domain Audit Status
+      href: domain-audit-status.md
     - name: Managing Your Inventory Reselling Exposure
       href: managing-your-inventory-reselling-exposure.md
     - name: Manage Custom Content Categories

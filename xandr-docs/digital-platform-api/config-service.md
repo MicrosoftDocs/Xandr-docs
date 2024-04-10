@@ -125,6 +125,7 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 
 | Property | Type | Description |
 |:---|:---|:---|
+| `label` | string | The name of the default Prebid price bucket tier. For more information, see [Price Granularity](https://docs.prebid.org/adops/price-granularity.html).|
 | `ranges` | object | Container object describing the price granularity range. |
 | `ranges.max` | integer | The maximum length of the range. |
 | `ranges.increment` | float | The amount to increment through the range. |

@@ -9,9 +9,23 @@ ms.custom: digital-platform-api
 
 This article provides information about the constraints faced whilst using the APIs.
 
-## Input and output throttling
+## Throttling
 
-To ensure good performance, all accounts are limited. We categorize these rate limits into read and write requests and they are enforced programmatically by the API’s response with the HTTP 429 (Too Many Requests) response code. If you require more reads or writes per minute, please reach out to your Xandr account representative.
+To prevent abuse of the API services, a rate limit is enforced for each service. The specific rate limit will depend on the endpoint being called by a user. This approach differs from the previous rate limiting, which focused on client limits. These limits are adjusted over time, so specific details are not provided. However, the rate-limited response will provide the necessary information to adjust your calls or scripts accordingly.
+
+If you exceed the throttling limit, the API will respond with either the HTTP 429 (Too Many Requests – indicating you've made too many calls to this service) or the HTTP 503 (Service Unavailable – meaning the service is overwhelmed with requests and can't take more) response code. It will also provide relevant headers to help you understand why this happened and what to do next.
+
+## Rate limit headers
+
+When you receive a 429 error, it indicates that the request was rate-limited. For a 503 response, you'll need to check the headers to confirm if it was due to rate limiting. Look for the first listed header below, which signals that the 503 was caused by rate limiting.
+
+1. `x-ratelimit-code`: This corresponds to the HTTP code returned when the call was rate-limited.
+     1. A 429 indicates that the user has exceeded the per-user limit set by the service.
+     1. A 503 indicates that the service is enforcing a rate limit based on total calls at that time.
+     1. For both codes, a 'retry-after' header is included to specify when to attempt the request again.
+1. `retry-after`: time in seconds to wait before retrying the request.
+1. `x-ratelimit-count`: This shows the total number of calls the user has made within the limit period. Users can use this information to adjust call patterns when they encounter rate-limited requests.
+     1. This header is included only if the status code is 429.
 
 ### Error messages
 

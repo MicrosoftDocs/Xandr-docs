@@ -17,7 +17,7 @@ When users encounter rate-limited requests, the API will respond with one of two
 
 1. The HTTP 429 (Too Many Requests) indicates the user has exceeded the maximum user calls to this service.
 
-     1. This always signifies a rate-limited response, but for specific details, refer to the headers and the response. Some applications may impose additional limitations that trigger a 429 error, but they will provide additional information regarding the location and reason for the limit.
+     1. This always indicates a rate-limited response, but for specific details, refer to the headers and the response. Some applications may impose additional limitations that trigger a 429 error, but they will provide additional information regarding the location and reason for the limit.
 
      1. General platform rate-limited requests will include the `x-ratelimit-code` header.
 
@@ -25,51 +25,46 @@ When users encounter rate-limited requests, the API will respond with one of two
 
      1. If the 503 is from rate limiting, a ` x-ratelimit-code` header will be present.
 
-If you are experiencing more rate-limited-calls than anticipated, please contact you Xandr account representative.  
+If you are experiencing more rate-limited-calls than anticipated, please contact your Xandr account representative.  
 
 ### Error messages
 
-If you exceed the throttling limit, the API will respond with the HTTP 429 or HTTP 503 response code. 
+If you exceed the throttling limit, the API will respond with the HTTP 429 or HTTP 503 response code.
 
-If you're using a script, you should check for the 429 response code or a 503 code that also includes the `x-ratelimit-code` header. If you receive this code, sleep your script for the number returned in the Retry-After field of the response header. This field tells you how long before the throttle limit is reset and you can continue sending API requests. 
+If you're using a script, you should check for the 429 response code or a 503 code that also includes the `x-ratelimit-code` header. If you receive this code, sleep your script for the number returned in the `Retry-After` field of the response header. This field tells you how long before the throttle limit is reset and you can continue sending API requests.
 
 ### 429 error headers
 
 Requests limited at the user level will return a 429 with the following rate limit headers:
 
   1. `x-ratelimit-code`: Corresponds to the http code returned when the call was rate limited.
-
-  1. `retry-after`: time in seconds to wait before retrying the request.
-
-  1. `x-ratelimit-count`: the total count in calls the user has made within the limit period. Users can use this number to tune call patterns when seeing ratelimited requests.
-
+  1. `retry-after`: This shows the time in seconds to wait before retrying the request.
+  1. `x-ratelimit-count`: This shows the total count in calls the user has made within the limit period. Users can refer to this number to adjust their call patterns when seeing rate-limited requests.
   1. `x-an-user-id`: The user ID that was limited.
 
 Example 429 rate limited request headers:
 
 ```
-< HTTP/1.1 429 Too Many Requests
-< Server: nginx/1.11.10
-< Date: Fri, 02 Feb 2018 15:58:18 GMT
-< Content-Type: application/json; charset=utf-8
-< Content-Length: 358
-< Connection: keep-alive
-< Retry-After: 9
-< X-AN-RequestId: 9f53184f6e2c3cb9
-< X-Count-Read: user:113,member:113,serviceHostUser:113,serviceHostMember:113,hostUser:113,hostMember:113,ip:0
-< X-Count-Write: user:0,member:0,serviceHostUser:0,serviceHostMember:0,hostUser:0,hostMember:0,ip:0
-< X-Rate-Limits: cru=113;crm=113;cwu=0;cwm=0;lru=1000;lrm=1000;lwu=60;lwm=60
-< X-Ratelimit-Read: 1000
-< X-Ratelimit-System: 1000-Default
-< X-Ratelimit-Write: 60
+< HTTP/1.1 429 Too Many Requests 
+< Server: nginx/1.11.10 
+< Date: Fri, 02 Feb 2024 15:58:18 GMT 
+< Content-Type: application/json; charset=utf-8 
+< Content-Length: 358 
+< Connection: keep-alive 
+< Retry-After: 9 
+< x-b3-traceid: 9f53184f6e2c3cb9 
+< x-ratelimit-code: 429 
+< x-an-user-id: 1234 
+< x-ratelimit-count: 1000 
+< retry-after: 24 
 ```
+
 ### 503 error headers
 
 Requests limited at the service level will return a 503 with the following rate limit headers: 
 
 1. `x-ratelimit-code`: Corresponds to the http code returned when the call was rate limited. 
-
-1. `retry-after`: time in seconds to wait before retrying the request.
+1. `retry-after`: This shows the time in seconds to wait before retrying the request.
 
 Example 503 rate limited request headers:
 

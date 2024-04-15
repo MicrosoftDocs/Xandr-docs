@@ -11,7 +11,7 @@ ms.custom: digital-platform-api
 
 To prevent abuse of the API services, a rate limit is enforced for each service. The specific rate limit will depend on the endpoint being called by a user. This approach differs from the previous rate limiting, which focused on client limits. These limits are adjusted over time, so specific details are not provided. However, the rate-limited response will provide the necessary information to adjust your calls or scripts accordingly.
 
-If you exceed the throttling limit, the API will respond with either the HTTP 429 (Too Many Requests – indicating you've made too many calls to this service) or the HTTP 503 (Service Unavailable – meaning the service is overwhelmed with requests and can't take more) response code. It will also provide relevant headers to help you understand why this happened and what to do next.
+If you exceed the throttling limit, the API will respond with either the HTTP 429 (Too Many Requests – indicating the user has made too many calls to this service) or the HTTP 503 (Service Unavailable – meaning the service is overwhelmed with requests and can't take more) response code. It will also provide relevant headers to help you understand why this happened and what to do next.
 
 ## Rate limit headers
 
@@ -21,25 +21,9 @@ When you receive a 429 error, it indicates that the request was rate-limited. Fo
      1. A 429 indicates that the user has exceeded the per-user limit set by the service.
      1. A 503 indicates that the service is enforcing a rate limit based on total calls at that time.
      1. For both codes, a 'retry-after' header is included to specify when to attempt the request again.
-1. `retry-after`: time in seconds to wait before retrying the request.
+1. `retry-after`: This shows the time in seconds to wait before retrying the request.
 1. `x-ratelimit-count`: This shows the total number of calls the user has made within the limit period. Users can use this information to adjust call patterns when they encounter rate-limited requests.
      1. This header is included only if the status code is 429.
-
-### Error messages
-
-If the throttling limit is exceeded, the API will respond with an error message in the response contents in addition to the HTTP 429 response code. An example of the error message is below:
-
-```
-{
-  "response": {
-    "error_id": "SYSTEM",
-    "error": "You have exceeded your request limit of 100 per 60 seconds for this user, please wait and try again or contact AppNexus for higher limits",
-    "error_description": "rate limit has been exceeded",
-    "error_code": "RATE_EXCEEDED",
-    ...
-  }
-}
-```
 
 ## Pagination
 

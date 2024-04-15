@@ -29,11 +29,23 @@ If you are experiencing more rate-limited-calls than anticipated, please contact
 
 ### Error messages
 
-If you exceed the throttling limit, the API will respond with the HTTP 429 (Too Many Requests) response code.
+If you exceed the throttling limit, the API will respond with the HTTP 429 or HTTP 503 response code. 
 
-If you're using a script, you should check for the 429 response code. If you receive this code, sleep your script for the number returned in the `Retry-After` field of the response header. This field tells you how long before your throttle limit is reset and you can continue processing API commands.
+If you're using a script, you should check for the 429 response code or a 503 code that also includes the `x-ratelimit-code` header. If you receive this code, sleep your script for the number returned in the Retry-After field of the response header. This field tells you how long before the throttle limit is reset and you can continue sending API requests. 
 
-### 429 error header
+### 429 error headers
+
+Requests limited at the user level will return a 429 with the following rate limit headers:
+
+  1. `x-ratelimit-code`: Corresponds to the http code returned when the call was rate limited.
+
+  1. `retry-after`: time in seconds to wait before retrying the request.
+
+  1. `x-ratelimit-count`: the total count in calls the user has made within the limit period. Users can use this number to tune call patterns when seeing ratelimited requests.
+
+  1. `x-an-user-id`: The user ID that was limited.
+
+Example 429 rate limited request headers:
 
 ```
 < HTTP/1.1 429 Too Many Requests
@@ -51,6 +63,39 @@ If you're using a script, you should check for the 429 response code. If you rec
 < X-Ratelimit-System: 1000-Default
 < X-Ratelimit-Write: 60
 ```
+### 503 error headers
+
+Requests limited at the service level will return a 503 with the following rate limit headers: 
+
+1. `x-ratelimit-code`: Corresponds to the http code returned when the call was rate limited. 
+
+1. `retry-after`: time in seconds to wait before retrying the request.
+
+Example 503 rate limited request headers:
+
+ ```
+< HTTP/1.1 429 Too Many Requests 
+< Server: nginx/1.11.10 
+< Date: Fri, 02 Feb 2024 15:58:18 GMT 
+< Content-Type: application/json; charset=utf-8 
+< Content-Length: 358 
+< Connection: keep-alive 
+< Retry-After: 9 
+< x-b3-traceid: 9f53184f6e2c3cb9 
+< x-ratelimit-code: 503 
+< retry-after: 24 
+```
+
+### Deprecated headers
+
+The following headers in responses are deprecated and will be removed in the future. They do not provide any relevant information anymore. Please adjust any scripts using them to utilize the new headers as described above.
+
+- x-count-read
+- x-count-write
+- x-rate-limits
+- x-ratelimit-read
+- x-ratelimit-write
+- x-ratelimit-system
 
 ### Debug parameter
 

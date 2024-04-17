@@ -5,13 +5,12 @@ ms.date: 04/17/2024
 ms.custom: digital-platform-api
 ---
 
+# Smart Audience Line
+
 > [!NOTE]
 > This feature is currently in Alpha and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
 The Smart Line serves to optimize the performance campaign for Invest users by utilizing MSAN Bidder that offers potentially higher Return on Ad Spend (ROAS). Our aim is not solely to achieve a specific supply volume, but to capitalize on bidding strategies accessible within MSAN.
-
-## Architecture 
-The Service is designed to subscribe to a change in data stream, where Invest introduces a new Line Item subtype called "Smart Line Item,” for buying Microsoft Audience Network with automated CPC optimization. This designation will serve to indicate Line Items that should initiate a synchronization process. 
 
 The process begins when the advertiser invokes the Buy Side API to set up the following objects: 
 - Smart Insertion Order(s)

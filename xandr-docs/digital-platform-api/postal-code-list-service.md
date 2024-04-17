@@ -17,7 +17,7 @@ The Postal Code List service enables users to:
 > [!IMPORTANT]
 >
 > - The maximum number of postal codes lists allowed per member is 8,000.
-> - Postal code lists that have not been modified in the past 6 months and are not associated with Line Items that have served in the last 6 months are eligible to be deleted by Xandr.
+> - Postal code lists that have not been modified in the past six months and are not associated with Line Items that have served in the last six months are eligible to be deleted by Xandr.
 > [!NOTE]
 > All query parameters in the postal code list service support a list of comma-separated values. For example, to delete a set of postal code lists, a comma-separated list of IDs can be passed as query parameters.
 

@@ -53,7 +53,7 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 
 ### Insertion order example
 
-Create a JSON file and populate it with the appropriate values. For more information on creating an insertion order, see [Insertion orders and line items](https://learn.microsoft.com/en-us/xandr/digital-platform-api/08---insertion-orders-and-line-items)
+Create a JSON file and populate it with the appropriate values. For more information on creating an insertion order, see [Insertion orders and line items](08---insertion-orders-and-line-items)
 
 ```
 {  

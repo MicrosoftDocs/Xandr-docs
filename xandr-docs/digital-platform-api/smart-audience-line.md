@@ -98,7 +98,7 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 | `line_item_subtype` |  enum | The is the subtype of the Smart Line Item and cannot be changed after the line item is created. This needs to be set to `enhanced_performance` while creating a Smart Line Item. |
 |`ad_types`| array of strings | The type of creative used for this line item. This must be set to native. <br> **Required On:** POST/PUT |
 | `advertiser_id`| int | The ID of the advertiser to which the line item belongs. |
-| `profile_id`| int | A profile is a generic set of rules for targeting inventory. You may associate an optional `profile_id` with this line item. For details, see the [Profile Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service). |
+| `profile_id`| int | A profile is a generic set of rules for targeting inventory. You may associate an optional `profile_id` with this line item. For details, see the [Profile Service](profile-service.md). |
 | `bid_cpc` | int | The maximum amount paid per click for a Smart Line Item |
 |`insertion_orders`| array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](https://learn.microsoft.com/en-us/xandr/digital-platform-api/line-item-service---ali#insertion-orders) below.<br> **Note:** Once a line item is associated with a seamless insertion order, it cannot be associated to a legacy insertion order |
 

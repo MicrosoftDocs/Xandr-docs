@@ -51,9 +51,9 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 |`lifetime_budget_imps`| int | The lifetime budget in impressions.<br> **Note:** If you add line items to the Smart Insertion Order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted. Only applicable to non-seamless insertion orders.<br> **Default:** null (unlimited) |
 |`lifetime_pacing`| boolean | If enabled, the insertion order will attempt to spend its overall lifetime budget evenly over the insertion order flight dates. If true:<br> - You must establish a lifetime_budget or lifetime_budget_imps.<br> - You must establish a start_date and end_date.<br> - You cannot set a daily_budget.<br> - You cannot set enable_pacing to false.<br> <br> **Required:** To be set to False  |
 
-## Insertion order example
+### Insertion order example
 
-### Create a JSON file and populate it with the appropriate values. 
+Create a JSON file and populate it with the appropriate values. For more information on creating an insertion order, see [Insertion orders and line items](https://learn.microsoft.com/en-us/xandr/digital-platform-api/08---insertion-orders-and-line-items)
 
 ```
 {  
@@ -102,9 +102,9 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 | `bid_cpc` | int | The maximum amount paid per click for a Smart Line Item |
 |`insertion_orders`| array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](https://learn.microsoft.com/en-us/xandr/digital-platform-api/line-item-service---ali#insertion-orders) below.<br> **Note:** Once a line item is associated with a seamless insertion order, it cannot be associated to a legacy insertion order |
 
-## Smart line item example
+### Smart line item example
 
-### Create a JSON file and populate it with the appropriate values. 
+Create a JSON file and populate it with the appropriate values. For more information on creating a line item, see [Insertion orders and line items](https://learn.microsoft.com/en-us/xandr/digital-platform-api/08---insertion-orders-and-line-items)
 
 ```
 {  
@@ -122,7 +122,7 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 ```
 
 ## Profile Service 
-A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/campaign-service). <br>
+A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/campaign-service). <br> For more information on Profile service, see [Profile Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service)
 > [!NOTE]
 > Profile ID will only be used on the line-item level by an enhanced_performance Line Items.
 

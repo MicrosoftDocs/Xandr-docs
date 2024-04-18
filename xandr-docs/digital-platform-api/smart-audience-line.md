@@ -53,7 +53,7 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 
 ### Insertion order example
 
-Create a JSON file and populate it with the appropriate values. For more information on creating an insertion order, see [Insertion orders and line items](08---insertion-orders-and-line-items.md)
+Create a JSON file and populate it with the appropriate values.  For more information, see [Insertion orders and line items](08---insertion-orders-and-line-items.md)
 
 ```
 {  
@@ -104,7 +104,7 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 
 ### Smart line item example
 
-Create a JSON file and populate it with the appropriate values. For more information on creating a line item, see [Insertion orders and line items](08---insertion-orders-and-line-items.md)
+Create a JSON file and populate it with the appropriate values. For more information, see [Insertion orders and line items](08---insertion-orders-and-line-items.md)
 
 ```
 {  
@@ -122,7 +122,7 @@ Create a JSON file and populate it with the appropriate values. For more informa
 ```
 
 ## Profile Service 
-A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](campaign-service.md). <br> For more information on Profile service, see [Profile Service](profile-service.md)
+A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](campaign-service.md). <br> For more information, see [Profile Service](profile-service.md)
 > [!NOTE]
 > Profile ID will only be used on the line-item level by an enhanced_performance Line Items.
 

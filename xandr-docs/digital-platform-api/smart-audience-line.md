@@ -20,7 +20,7 @@ The process begins when the advertiser invokes the Buy Side API to set up the fo
 ## Smart Insertion Order(s)
 Smart Insertion Orders are for performance buying on Microsoft Audience Network only. It can only be associated to Smart Audience Line Items. Spend from this Insertion Order will not be factored into the member-level budget enforcement. 
 
-## REST API
+## REST API - Smart Insertion Order
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
@@ -30,7 +30,7 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 | `GET` | `https://api.appnexus.com/insertion-order?advertiser_id=ADVERTISER_ID` | View all the Smart Insertion Order(s) for one of your advertisers. |
 | `GET` | `https://api.appnexus.com/insertion-order?id=INSERTIONORDER_ID` | View a specific Smart Insertion Order for one of your advertisers. |
 
-## JSON fields
+## JSON fields - Smart Insertion Order
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
@@ -80,7 +80,7 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 ## Smart Line Item(s)
 Smart Line Item(s) are set up for buying Microsoft Audience Network with automated CPC optimization. A Smart Insertion Order is required to associate budgeting and flighting controls to be associated before setting up a Smart Line Item. The line items under a Smart Insertion Order represent the agreed upon strategies you will be executing for the advertiser.  
 
-## REST API
+## REST API - Smart Line Item
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
@@ -89,7 +89,7 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 |`GET` | `https://api.appnexus.com/line-item?advertiser_id=ADVERTISER_ID` <br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE` | View all the Smart Line Item(s) for one of your advertisers. |
 |`DELETE` | `https://api.appnexus.com/line-item?id=LINEITEM_ID&advertiser_id=ADVERTISER_ID`<br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE`<br> **Warning:** Deletion is Recursive and Permanent. Deleting a Smart Line Item will also delete all its associated budget intervals, and splits. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (e.g., revenue budget, tracking, cost budget and targeting). | Delete a Smart Line Item |
 
-## JSON fields
+## JSON fields - Smart Line Item
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
@@ -123,10 +123,10 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 
 ## Profile Service 
 A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/campaign-service). <br>
-> [!NOTE]: 
-> Profile ID will only be used on the line-item level by an enhanced_performance Line Items. 
+> [!NOTE]
+> Profile ID will only be used on the line-item level by an enhanced_performance Line Items.
 
-## REST API
+## REST API - Profile Service 
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
@@ -139,7 +139,7 @@ A profile is a set of targeting parameters, such as gender, age, geography, and 
 |`GET` | `https://api.appnexus.com/profile?id=PROFILE_ID&advertiser_id=ADVERTISER_ID&member_id=MEMBER_ID` | View a specific profile for one of your advertisers. |
 | `GET` | `https://api.appnexus.com/profile?code=PROFILE_CODE&advertiser_code=ADVERTISER_CODE` | View a specific profile for one of your advertisers. |
  
-## JSON fields
+## JSON fields - Profile Service 
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|

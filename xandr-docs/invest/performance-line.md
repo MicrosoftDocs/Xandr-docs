@@ -42,10 +42,10 @@ The Performance Insertion Order maps 1:1 with the MSAN campaign and allows clien
 | Field  | Description  |
 |:---------|:---------|
 | **Name** | The name of the insertion order. You can later search for and report on the insertion order using this name. |
-| **External Code** (optional) | An external code used for reporting. Microsoft Advertising also assigns an internal code automatically. The code may only contain alphanumeric characters, periods, underscores, or dashes. It's not case-sensitive (upper- and lower-case characters are treated the same). |
+| **External Code** (optional) | An external code used for reporting. Microsoft Advertising also assigns an internal code automatically. The code might only contain alphanumeric characters, periods, underscores, or dashes. It's not case-sensitive (upper- and lower-case characters are treated the same). |
 | **Billing Code** (optional) | An internal billing code you want to appear on invoices for this insertion order if you receive insertion-order-specific invoices. For details on invoices, see [Understanding Your Invoice](understanding-your-invoice.md). |
 | **State** | The state of the insertion order. If set to **Active**, child line items and campaigns are eligible to serve. |
-| **Billing Periods** |  Billing periods allow you to allocate portions of your marketing budget to discrete periods of time. You can associate an external code with a billing period for reporting and invoicing. Any line item flight dates must occur within the dates of the parent insertion order's billing periods.<br><br> You may set both a start and an end date (**Set Dates**) or set a start date without an end date (**No Dates**). If you select **No End Date**, you can only create a single billing period on the insertion order, but you may still specify multiple flights with end dates on the line item. If you select **Set Dates**, you can create up to 52 billing periods. |
+| **Billing Periods** |  Billing periods allow you to allocate portions of your marketing budget to discrete periods of time. You can associate an external code with a billing period for reporting and invoicing. Any line item flight dates must occur within the dates of the parent insertion order's billing periods.<br><br> You can set both a start and an end date (**Set Dates**) or set a start date without an end date (**No Dates**). If you select **No End Date**, you can only create a single billing period on the insertion order, but you can still specify multiple flights with end dates on the line item. If you select **Set Dates**, you can create up to 52 billing periods. |
 | **Budget** | Determines how quickly budget is spent over the lifetime of the insertion order. Set a custom daily budget to define your own pacing. Budgeting components are limited to one budget interval; MSAN campaigns don't support multiple intervals. Both a start date and a budget must be set.<br><br>**Important:**<br>You can set budgets at the line item level, but your insertion order budget takes precedence. When your insertion order budget runs out, all objects under the insertion order will stop buying impressions, whether or not they have reached their own budget limits. |
 | **Bid Strategy** | Determines how much advertisers want to spend on ad placements. The field is set to enhanced CPC by default and cannot be changed.<br>**Read-only.**|
 
@@ -57,8 +57,8 @@ You can create a new performance line item from the **Create New Line Item** scr
 
 1. Select **Line Items** > **Create New** or click **+New** from the Line Items screen. The **Create New Line Item** screen displays.
 1. Select the **Microsoft Enhanced Performance** option under **Line Item Type**.
-1. Search and select an advertiser from the **Advertiser** text field.
-1. Search and select the appropriate PIO from the **Insertion Order** text field.
+1. Search and select an advertiser from the **Advertiser** field.
+1. Search and select the appropriate PIO from the **Insertion Order** field.
 1. Click **Next**.
 1. Fill out the **Basic Settings**, which include information such as the name and state. The **Insertion Order** field has the pre-selected PIO. The **Ad type** is a read-only field set to **Native** by default.
 1. In the **Budgeting & Scheduling** section, set the **Daypart** details for the line item. **Budget** and **Flight** details are inherited from the currently selected parent PIO. For more information, see [Set up Line Item Budgeting and Scheduling](./set-up-line-item-budgeting-and-scheduling.md).

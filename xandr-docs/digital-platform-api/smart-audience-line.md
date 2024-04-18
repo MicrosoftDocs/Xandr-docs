@@ -53,7 +53,7 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 
 ## Insertion order example
 
-### Make a file containing JSON and add the correct values. Necessary fields include advertiser ID and name.
+### Create a JSON file and populate it with the appropriate values. 
 
 ```
 {  
@@ -95,14 +95,16 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 |:---|:---|:---|
 |`name`| string | The name of the line item.<br> **Required On:** POST |
 |`line_item_type` | enum | The type of line item. This must be set to standard_v2 for Smart Line Item(s).  |
-| `line_item_subtype` |  enum | The is the subtype of the Smart Line Item and cannot be changed after the line item is created. For Invest buyers, the supported values are as follows:<br> - **standard_buying:** Augmented line item eligible to serve on managed, RTB, or deals. Omitting the line_item_subtype on `POST` requests will default to this subtype behaviour.<br> - **pg_buying:** Eligible only to transact on PG deals. If the subtype is passed on the POST, the line_item_type, bid_object_type, delivery_model_type, and supply_strategies fields are not required.<br> - **standard_curated:** For curated deal line items. For more details, see `line_item_subtype` in [Curated Deal Line Item API Setup Guide](https://learn.microsoft.com/en-us/xandr/digital-platform-api/curated-deal-ad-quality-api-setup-guide).<br> **Default:** standard_buying |
-|`ad_types`| array of strings | The type of creative used for this line item is native. <br> **Required On:** POST/PUT |
+| `line_item_subtype` |  enum | The is the subtype of the Smart Line Item and cannot be changed after the line item is created. This needs to be set to `enhanced_performance` while creating a Smart Line Item. |
+|`ad_types`| array of strings | The type of creative used for this line item. This must be set to native. <br> **Required On:** POST/PUT |
 | `advertiser_id`| int | The ID of the advertiser to which the line item belongs. |
 | `profile_id`| int | A profile is a generic set of rules for targeting inventory. You may associate an optional `profile_id` with this line item. For details, see the [Profile Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service). |
 | `bid_cpc` | int | The maximum amount paid per click for a Smart Line Item |
 |`insertion_orders`| array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](https://learn.microsoft.com/en-us/xandr/digital-platform-api/line-item-service---ali#insertion-orders) below.<br> **Note:** Once a line item is associated with a seamless insertion order, it cannot be associated to a legacy insertion order |
 
-### Payload
+## Smart line item example
+
+### Create a JSON file and populate it with the appropriate values. 
 
 ```
 {  
@@ -113,7 +115,7 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
   		 "ad_types": ["native"],  
         "advertiser_id": 123,  
         "profile_id": 999,  
-        "bid_cpc": 1234567890123.45,  
+        "bid_cpc": 12.45,  
   		 "insertion_orders": [{"id": 23444}],  
     }  
 } 
@@ -147,8 +149,8 @@ A profile is a set of targeting parameters, such as gender, age, geography, and 
 |`country_action`| enum | Action to be taken on the country_targetslist. Possible values:<br> - include<br> - exclude.<br> **Default:** exclude |
 | `country_targets` | array of objects | The country IDs to be either excluded or included in a profile, as defined by the country_action field. You can use the [Country Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/country-service) to retrieve a list of country IDs. For more details and format, see [Country Targets](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service#country-targets).<br> **Required On:** POST/PUT, when country_actionis include. |
 |`daypart_targets`| array of objects | The day parts during which to serve the campaign. For more details, see Daypart Targets below.<br> **Note:** If you do not set any daypart targets, the campaign will serve on all days of the week at all times. |
-| `device_type_targets` | array of strings | The types of devices to either include in or exclude from your targeting, as defined by the device_type_action field.<br> Possible values: <br> - phone <br> - tablet <br> - pc <br> - tv <br> - gameconsole <br> - stb <br> - mediaplayer <br> <br> For format, see [Device Type Targets](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service#device-type-targets) |
-|`device_type_action` | enum | Action to be taken on device_type_targets. device_type can only be defined using `device_type_action = include`, and can only target the following device types: <br> - `'pc'`, <br> - `'phone'`, <br> - `'tablet'`, <br> **Possible values:** include or exclude. <br> **Default:** exclude |
+| `device_type_targets` | array of strings | The types of devices to either include in or exclude from your targeting, as defined by the device_type_action field.<br> Possible values: <br> - phone <br> - tablet <br> - pc <br> <br> For format, see [Device Type Targets](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service#device-type-targets) |
+|`device_type_action` | enum | Action to be taken on device_type_targets. `device_type` can only be defined using `device_type_action = include`, and can only target the device types mentioned above:  <br> **Possible values:** include or exclude. <br> **Default:** exclude |
 |`gender_targets`| object | The gender targeting used for the profile. Possible values for gender are m(male) or f(female). The allow_unknown field is available as a Boolean in order to account for ad calls where the gender of the user is not available. See the [Gender Targets](https://learn.microsoft.com/en-us/xandr/digital-platform-api/profile-service#device-type-targets). |
 | `postal_code_targets` | object | The postal code IDs to target. IDs can be fetched using the [Postal Code Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/postal-code-service). |
 | `postal_code_action_include` | array of objects | The postal code list IDs to target. IDs can be fetched using the [Postal Code List Service](https://learn.microsoft.com/en-us/xandr/digital-platform-api/postal-code-list-service) |

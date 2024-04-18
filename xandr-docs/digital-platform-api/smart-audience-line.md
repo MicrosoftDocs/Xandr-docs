@@ -36,18 +36,24 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 |:---|:---|:---|
 | `name` | string(255) | The name of the Smart Insertion Order.<br> **Required On:** `POST` |
 | `advertiser_id` | int |The ID of the advertiser.<br>**Required On**: `POST` |
-| `start_date` | timestamp | The start date and time during which the Insertion Order should run.Limited to (00:00:00) |
-| `end_date` | timestamp | The end date and time of the Smart Insertion Order. Limited to (23:59:59) |
 | `daily_budget` | double | The daily budget in revenue. The revenue currency is defined by the currency field.<br> **Note:** If you add line items to the Smart Insertion Order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted. <br> **Default:** null (unlimited) |
-|`daily_budget_imps`| int | The daily budget in impressions.<br> **Default:** null (unlimited) |
-|`enable_pacing`| boolean | If true, then spending will be paced over the course of the day. Only applicable if there is a daily_budget. |
-|`lifetime_budget`| double | The lifetime budget in revenue. The revenue currency is defined by the currency field.<br> **Default:** null (unlimited) |
-|`lifetime_budget_imps`| int | The lifetime budget in impressions.<br> **Note:** If you add line items to the Smart Insertion Order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted. Only applicable to non-seamless insertion orders.<br> **Default:** null (unlimited) |
-|`lifetime_pacing`| boolean | If true, the insertion order will attempt to spend its overall lifetime budget evenly over the insertion order flight dates. If true:<br> - You must establish a lifetime_budget or lifetime_budget_imps.<br> - You must establish a start_date and end_date.<br> - You cannot set a daily_budget.<br> - You cannot set enable_pacing to false.<br> **Default:** null |
 | `enhanced_performance` | boolean | When this field is set to true, it will be used for a Smart  Insertion Order which is sent to MSAN. <br> **Required:** True |
 
+### Budget Interval
 
-### Payload
+| Field | Type (Length) | Description |
+|:---|:---|:---|
+| `start_date` | timestamp | The start date and time during which the Insertion Order should run.Limited to (00:00:00) |
+| `end_date` | timestamp | The end date and time of the Smart Insertion Order. Limited to (23:59:59) |
+|`daily_budget_imps`| int | The daily budget in impressions.<br> **Default:** null (unlimited) |
+|`enable_pacing`| boolean | If enabled, then spending will be paced over the course of the day. Only applicable if there is a daily_budget.<br> **Required:** To be set to False |
+|`lifetime_budget`| double | The lifetime budget in revenue. The revenue currency is defined by the currency field.<br> **Default:** null (unlimited) |
+|`lifetime_budget_imps`| int | The lifetime budget in impressions.<br> **Note:** If you add line items to the Smart Insertion Order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted. Only applicable to non-seamless insertion orders.<br> **Default:** null (unlimited) |
+|`lifetime_pacing`| boolean | If enabled, the insertion order will attempt to spend its overall lifetime budget evenly over the insertion order flight dates. If true:<br> - You must establish a lifetime_budget or lifetime_budget_imps.<br> - You must establish a start_date and end_date.<br> - You cannot set a daily_budget.<br> - You cannot set enable_pacing to false.<br> <br> **Required:** To be set to False  |
+
+## Insertion order example
+
+### Make a file containing JSON and add the correct values. Necessary fields include advertiser ID and name.
 
 ```
 {  

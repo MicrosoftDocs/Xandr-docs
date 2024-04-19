@@ -9,23 +9,23 @@ ms.date: 04/04/2024
 > [!NOTE]
 > This feature is currently in **Alpha** and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
-This document outlines how to serve performance campaigns from Microsoft Invest users using the MSAN Bidder. The goal is to potentially improve Return on Ad Spend (ROAS). It not only accesses Microsoft's advertising inventory but also utilizes bidding strategies available within the MSAN (Microsoft Audience Network) to optimize performance.
+This document outlines how to serve performance campaigns from Microsoft Invest customers using the Microsoft Audience Network (MSAN) Bidder. The goal is to potentially improve Return on Ad Spend (ROAS). It not only accesses advertising inventory but also utilizes bidding strategies available within the MSAN to optimize performance.
 
-Advertisers set up two main objects in the Microsoft Invest DSP:
+Advertisers set up two main objects in the Microsoft Invest Demand Side Platform (DSP):
 
 - Performance Insertion Orders (PIO): Maps 1:1 with MSAN campaigns.
 - Performance Line Items (PLI): Maps 1:1 with MSAN Ad Group.
 
 ## Performance lifecycle overview
 
-When a user creates a performance line item in Microsoft Invest, it undergoes processing through various services:
+When a customer creates a performance line item in Microsoft Invest, it undergoes processing through various services:
 
 1. Microsoft Invest Buy-side setup UI.
 1. Microsoft Invest Buy-side API.
 1. MSAN API (translates objects from Microsoft Invest API to MSAN Data Model).
 1. MSAN Bidder.
 
-The PIO and PLI have specific features for budgeting, configurations, and targeting. Once a user sets up these objects in the Microsoft Invest UI, they are sent to an object translation layer that maps the Xandr data model to fields within the MSAN data model. These objects are then saved and synchronized to both the Console and Azure production databases, ensuring that all relevant systems are synchronized and up-to-date with the latest data. Once saved on the MSAN side, the MSAN bidder utilizes automated bidding for the advertiser’s campaigns.
+The PIO and PLI have specific features for budgeting, configurations, and targeting. Once a customer sets up these objects in the Microsoft Invest UI, they are sent to an object translation layer that maps the Xandr data model to fields within the MSAN data model. These objects are then saved and synchronized to both the Console and Azure production databases, ensuring that all relevant systems are synchronized and up-to-date with the latest data. Once saved on the MSAN side, the MSAN bidder utilizes automated bidding for the advertiser’s campaigns.
 
 ## Create a Performance Insertion Order
 
@@ -35,7 +35,7 @@ The Performance Insertion Order maps 1:1 with the MSAN campaign and allows clien
 1. Fill out the **Basic Settings**, which include information such as name, budget, and billing details. For more information on these settings, see [Basic Settings](#basic-settings).
 1. Optionally, assign reporting labels. The labels (**Trafficker**, **Sales Rep**, and **Insertion Order Type**) then appear in the [Member Analytics Report](network-analytics-report.md). For more information, see [Reporting Labels](reporting-labels.md).
 1. Optionally, add comments to the insertion order.
-1. Click **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order. Updates are now sent to the Buyside API, which handles the translation from the Xandr data model to the MSAN data model.
+1. Select **Save** to save the insertion order. Alternatively, select the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order. Updates are now sent to the Buyside API, which handles the translation from the Xandr data model to the MSAN data model.
 
 ### Basic Settings
 
@@ -55,20 +55,20 @@ The Performance Line Item maps 1:1 with MSAN Ad Group and allows clients to conf
 
 You can create a new performance line item from the **Create New Line Item** screen.
 
-1. Select **Line Items** > **Create New** or click **+New** from the Line Items screen. The **Create New Line Item** screen displays.
+1. Select **Line Items** > **Create New** or select **+New** from the Line Items screen. The **Create New Line Item** screen displays.
 1. Select the **Microsoft Enhanced Performance** option under **Line Item Type**.
 1. Search and select an advertiser from the **Advertiser** field.
 1. Search and select the appropriate PIO from the **Insertion Order** field.
-1. Click **Next**.
+1. Select **Next**.
 1. Fill out the **Basic Settings**, which include information such as the name and state. The **Insertion Order** field has the pre-selected PIO. The **Ad type** is a read-only field set to **Native** by default.
 1. In the **Budgeting & Scheduling** section, set the **Daypart** details for the line item. **Budget** and **Flight** details are inherited from the currently selected parent PIO. For more information, see [Set up Line Item Budgeting and Scheduling](./set-up-line-item-budgeting-and-scheduling.md).
 1. In the **Targeting** section, set the geography, age, gender, and device type targeting for a line item.
-     1. **Geography:** Target users by country, region, state, city, metro code, postal code, and political districts.
+     1. **Geography:** Target customers by country, region, state, city, metro code, postal code, and political districts.
      1. **Age:** Target to only specific preset age ranges, or you can define custom age ranges.
      1. **Gender:** Target to one gender or the other.
          > [!TIP]
          > If you target specific ages or a specific gender, you should consider selecting **Unknown Age** or **Unknown Gender** as well to avoid severely restricting reach.
-     1. **Audience Segments:** Target curated lists of users determined to be in the market and ready to buy within a particular category. When you use Microsoft Audience Segments, you can only associate hosted creatives with this line item, limiting the use of third-party pixels and measurements. For more information, see [Microsoft In-Market Audiences](./microsoft-in-market-audiences.md).
+     1. **Audience Segments:** Target curated lists of customers determined to be in the market and ready to buy within a particular category. When you use Microsoft Audience Segments, you can only associate hosted creatives with this line item, limiting the use of third-party pixels and measurements. For more information, see [Microsoft In-Market Audiences](./microsoft-in-market-audiences.md).
      1. **Device Type:** Select the checkboxes for each device type that you plan to target. For more information on device types, see [Device Type Targeting](./device-type-targeting-ali.md).
      > [!TIP]
      > **Predictive targeting**
@@ -76,4 +76,4 @@ You can create a new performance line item from the **Create New Line Item** scr
      > This feature on the MSAN side helps find more audiences that are similar to the current selection under the campaign, widening the target audience for impressions.
 1. In the **Creatives** section, associate the appropriate creatives with your line item.
 1. In the **Reporting Labels & Comments** section, you can optionally assign custom reporting labels (**Trafficker**, **Sales Rep**, **Line Item Type**, and **OMS ID**) to a line item, as well as add comments to a line item for your reference.
-1. Click **Save** to save the line item.
+1. Select **Save** to save the line item.

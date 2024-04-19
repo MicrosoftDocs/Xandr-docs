@@ -378,14 +378,7 @@
         href: troubleshoot-your-programmatic-guaranteed-buying-line-item-bid-performance.md
       - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
         href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
-    - name: Deal Line Item
-      items:
-      - name: Create a Deal Line Item
-        href: create-a-deal-line-item.md
-      - name: Understanding Multi-Buyer Deals
-        href: understanding-multi-buyer-deals.md
-      - name: Set Up Multi-Buyer Deals
-        href: set-up-multi-buyer-deals.md
+    
     - name: Create a Standard Line Item
       href: create-a-standard-line-item.md
     - name: Update Line Items
@@ -1136,9 +1129,9 @@
       href: onboarding-mobile-supply.md
     - name: Onboarding Video Supply
       href: onboarding-video-supply.md
-    - name: Xandr's Seller Tag (AST)
+    - name: Seller Tag (AST)
       items:
-      - name: Working with Xandr's Seller Tag (AST)
+      - name: Working with Seller Tag (AST)
         href: working-with-seller-tag.md
       - name: Buy-Side Page Caps
         href: buy-side-page-caps.md
@@ -1314,6 +1307,14 @@
       href: define-deal-creative-criteria.md
     - name: Add Reporting Labels and Comments to a Line Item
       href: add-reporting-labels-and-comments-to-a-line-item.md
+  - name: Deal Line Item
+    items:
+    - name: Create a Deal Line Item
+      href: create-a-deal-line-item.md
+    - name: Understanding Multi-Buyer Deals
+      href: understanding-multi-buyer-deals.md
+    - name: Set Up Multi-Buyer Deals
+      href: set-up-multi-buyer-deals.md
   - name: Guaranteed Delivery (GDALI)
     items:
     - name: Overview

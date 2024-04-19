@@ -259,7 +259,7 @@
       - name: Set Up Cross-Device Attribution
         href: set-up-cross-device-attribution.md
       - name: Cross-Device Reporting
-        href: cross-device-reporting.md    
+        href: cross-device-reporting.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits

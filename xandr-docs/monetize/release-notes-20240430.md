@@ -9,7 +9,7 @@ ms.topic: release-notes
 
 **Release date**: April 30, 2024
 
-Users of Microsoft Monetize can now use the **Domain Audit Status** tool to check the current audit status of their domains.
+Customers of Microsoft Monetize can now use the **Domain Audit Status** tool to check the current audit status of their domains.
 
 For more information, see [Domain Audit Status](./domain-audit-status.md).
 

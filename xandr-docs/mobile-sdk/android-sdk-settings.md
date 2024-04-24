@@ -33,7 +33,7 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java1)
 
 ##### Regular Init method
 
@@ -58,7 +58,7 @@ SDKSettings.init(this, new SDKSettings.InitListener() {
 //Boolean values false/true are optional and as per usage
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin1)
 
 ##### Regular Init method
 
@@ -97,7 +97,7 @@ SDKSettings.init(this, {
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java2)
 
 ```
 List<ANUserId> userIds = new ArrayList<>();
@@ -121,7 +121,7 @@ SDKSettings.setUserIds(userIds);
 SDKSettings.setPublisherUserId("PublisherUserId-foobar");
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin2)
 
 ```
 val userIds: MutableList<ANUserId> = ArrayList()
@@ -156,7 +156,7 @@ The SDK uses City/DMA/Country information from standard feed (log level data) fo
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java3)
 
 ```
 //Setter
@@ -168,7 +168,7 @@ SDKSettings.getGeoOverrideCountryCode();
 SDKSettings.getGeoOverrideZipCode();
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin3)
 
 ```
 //Setter
@@ -198,14 +198,14 @@ The `digitsAfterDecimal` argument will cause all location information to be inte
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java4)
 
 ```
 SDKSettings.setLocationDecimalDigits(2);
 SDKSettings.setLocationEnabledForCreative(false);  
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin4)
 
 ```
 SDKSettings.setLocationDecimalDigits(2)
@@ -223,14 +223,14 @@ SDKSettings.setLocationEnabledForCreative(false)
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java5)
 
 ```
 // enable the Background threading
 SDKSettings.enableBackgroundThreading(true);
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin5)
 
 ```
 // enable the Background threading
@@ -251,7 +251,7 @@ For any AdRequest, Xandr Mobile SDK checks in the device or OS environment level
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java6)
 
 ```
 //Setter
@@ -260,7 +260,7 @@ SDKSettings.setDoNotTrack(true);
 SDKSettings.getDoNotTrack();
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin6)
 
 ```
 //Setter
@@ -279,7 +279,7 @@ The Google Advertising ID (AAID) for devices is an Android provided ID to track 
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java7)
 
 ```
 // To Set the disableAAIDUsage
@@ -288,7 +288,7 @@ SDKSettings.disableAAIDUsage(false);
 SDKSettings.isAAIDUsageDisabled()
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin7)
 
 ```
 // To Set the disableAAIDUsage
@@ -305,13 +305,13 @@ SDKSettings.isAAIDUsageDisabled()
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java8)
 
 ```
 SDKSettings.setAuctionTimeout(500)
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin8)
 
 ```
 SDKSettings.setAuctionTimeout(500)
@@ -325,13 +325,13 @@ SDKSettings.setAuctionTimeout(500)
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java9)
 
 ```
 SDKSettings.enableTestMode(true);
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin9)
 
 ```
 SDKSettings.enableTestMode(true)
@@ -345,13 +345,13 @@ SDKSettings.enableTestMode(true)
 
 ### Example
 
-#### [Java](#tab/java)
+#### [Java](#tab/java10)
 
 ```
 SDKSettings.setContentLanguage("EN")
 ```
 
-#### [Kotlin](#tab/kotlin)
+#### [Kotlin](#tab/kotlin10)
 
 ```
 SDKSettings.setContentLanguage("EN")

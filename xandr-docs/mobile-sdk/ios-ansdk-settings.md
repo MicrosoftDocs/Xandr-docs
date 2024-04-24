@@ -34,7 +34,7 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec1)
 
 ```
 [[ANSDKSettings sharedInstance] optionalSDKInitialization:^(BOOL isSDKInitialized) {
@@ -46,7 +46,7 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
   }];
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift1)
 
 ```
 ANSDKSettings.sharedInstance().optionalSDKInitialization { (isSDKInitialized) in
@@ -76,7 +76,7 @@ ANSDKSettings.sharedInstance().optionalSDKInitialization { (isSDKInitialized) in
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec2)
 
 ```
 // User Id from External Third Party Sources
@@ -96,7 +96,7 @@ ANSDKSettings.sharedInstance.publisherUserId = @"foobar-publisherfirstpartyid";
 ANSDKSettings.sharedInstance.disableIDFVUsage = NO;
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift2)
 
 ```
 // User Id from External Third Party Sources
@@ -139,7 +139,7 @@ The SDK uses City/DMA/Country information from standard feed (log level data) fo
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec3)
 
 ```
 //Set
@@ -151,7 +151,7 @@ NSString* countryCode = ANSDKSettings.sharedInstance.geoOverrideCountryCode;
 NSString* zipCode = ANSDKSettings.sharedInstance.geoOverrideZipCode
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift3)
 
 ```
 //Set
@@ -181,7 +181,7 @@ The `precision` parameter will cause all location information to be internally r
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec4)
 
 ```
 CLLocation *location = [locationManager location];
@@ -193,7 +193,7 @@ NSDate *now = [NSDate date];
   precision: 4];
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift4)
 
 ```
 if let location = locationManager.location {
@@ -220,13 +220,13 @@ For any AdRequest, Xandr Mobile SDK checks in the device or OS environment level
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec5)
 
 ```
 [ANSDKSettings sharedInstance].doNotTrack = YES;
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift5)
 
 ```
 ANSDKSettings.sharedInstance().doNotTrack = true
@@ -242,13 +242,13 @@ The Identifier for Advertisers (IDFA) is an Apple provided ID to track the users
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec6)
 
 ```
 [ANSDKSettings sharedInstance].disableIDFAUsage = YES;
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift6)
 
 ```
 ANSDKSettings.sharedInstance().disableIDFAUsage = true
@@ -262,13 +262,13 @@ ANSDKSettings.sharedInstance().disableIDFAUsage = true
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec7)
 
 ```
 [[ANSDKSettings sharedInstance] setAuctionTimeout:500];
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift7)
 
 ```
 ANSDKSettings.sharedInstance().auctionTimeout = 500
@@ -282,13 +282,13 @@ ANSDKSettings.sharedInstance().auctionTimeout = 500
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec8)
 
 ```
 ANSDKSettings.sharedInstance.enableTestMode = YES;
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift8)
 
 ```
 ANSDKSettings.sharedInstance().enableTestMode = true
@@ -321,7 +321,7 @@ To add a friendly obstruction, remove a friendly obstruction, or remove all frie
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec9)
 
 ```
 ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
@@ -340,7 +340,7 @@ ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
 [adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift9)
 
 ```
 ANSDKSettings.sharedInstance().enableOMIDOptimization = true
@@ -368,13 +368,13 @@ adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 
 ### Example
 
-#### [Objective C](#tab/objective-c)
+#### [Objective C](#tab/objectivec10)
 
 ```
 ANSDKSettings.sharedInstance.contentLanguage = @"EN";
 ```
 
-#### [Swift](#tab/swift)
+#### [Swift](#tab/swift10)
 
 ```
 ANSDKSettings.sharedInstance().contentLanguage = "EN"

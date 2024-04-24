@@ -27,8 +27,7 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 | `POST` |`https://api.appnexus.com/insertion-order?advertiser_id=ADVERTISER_ID`<br>(insertion order JSON) | Add a new Smart Insertion Order. |
 | `PUT` |  `https://api.appnexus.com/insertion-order?id=INSERTIONORDER_ID&advertiser_id=ADVERTISER_ID`<br>(insertion order JSON)<br> | Modify an existing Smart Insertion Order. |
 | `DELETE` | `https://api.appnexus.com/insertion-order?id=INSERTIONORDER_ID&advertiser_id=ADVERTISER_ID`<br> **Important:** Deleting an insertion order does not necessarily mean that associated line items will be deleted as the relationship between an insertion order and line item can be many to many. Also, deletion of an insertion order results in deletion of the associated budget intervals. | Delete a Smart Insertion Order. |
-| `GET` | `https://api.appnexus.com/insertion-order?advertiser_id=ADVERTISER_ID` | View all the Smart Insertion Order(s) for one of your advertisers. |
-| `GET` | `https://api.appnexus.com/insertion-order?id=INSERTIONORDER_ID` | View a specific Smart Insertion Order for one of your advertisers. |
+| `GET` | `https://api.appnexus.com/insertion-order?enhanced_performance=true&advertiser_id=ADVERTISER_ID` | View all the Smart Insertion Order(s) for one of your advertisers. |
 
 ## JSON fields - Smart Insertion Order
 
@@ -36,20 +35,15 @@ Smart Insertion Orders are for performance buying on Microsoft Audience Network 
 |:---|:---|:---|
 | `name` | string(255) | The name of the Smart Insertion Order.<br> **Required On:** `POST` |
 | `advertiser_id` | int |The ID of the advertiser.<br>**Required On**: `POST` |
-| `daily_budget` | double | The daily budget in revenue. The revenue currency is defined by the currency field.<br> **Note:** If you add line items to the Smart Insertion Order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted. <br> **Default:** null (unlimited) |
 | `enhanced_performance` | boolean | When this field is set to true, it will be used for a Smart  Insertion Order which is sent to MSAN. <br> **Required:** True |
 
 ### Budget Interval
 
 | Field | Type (Length) | Description |
 |:---|:---|:---|
+| `daily_budget` | double | The daily budget in revenue. The revenue currency is defined by the currency field.<br> **Note:** If you add line items to the Smart Insertion Order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted. <br> **Default:** null (unlimited) |
 | `start_date` | timestamp | The start date and time during which the Insertion Order should run.Limited to (00:00:00) |
 | `end_date` | timestamp | The end date and time of the Smart Insertion Order. Limited to (23:59:59) |
-|`daily_budget_imps`| int | The daily budget in impressions.<br> **Default:** null (unlimited) |
-|`enable_pacing`| boolean | If enabled, then spending will be paced over the course of the day. Only applicable if there is a daily_budget.<br> **Required:** To be set to False |
-|`lifetime_budget`| double | The lifetime budget in revenue. The revenue currency is defined by the currency field.<br> **Default:** null (unlimited) |
-|`lifetime_budget_imps`| int | The lifetime budget in impressions.<br> **Note:** If you add line items to the Smart Insertion Order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted. Only applicable to non-seamless insertion orders.<br> **Default:** null (unlimited) |
-|`lifetime_pacing`| boolean | If enabled, the insertion order will attempt to spend its overall lifetime budget evenly over the insertion order flight dates. If true:<br> - You must establish a lifetime_budget or lifetime_budget_imps.<br> - You must establish a start_date and end_date.<br> - You cannot set a daily_budget.<br> - You cannot set enable_pacing to false.<br> <br> **Required:** To be set to False  |
 
 ### Insertion order example
 
@@ -86,7 +80,7 @@ Smart Line Item(s) are set up for buying Microsoft Audience Network with automat
 |:---|:---|:---|
 |`POST` | `https://api.appnexus.com/line-item?advertiser_id=ADVERTISER_ID`<br> (line item JSON) | Add a new Smart Line Item. |
 |`PUT` | `https://api.appnexus.com/line-item?id=LINEITEM_ID&advertiser_id=ADVERTISER_ID` <br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE` <br> (line item JSON) | Modify an existing Smart Line Item |
-|`GET` | `https://api.appnexus.com/line-item?advertiser_id=ADVERTISER_ID` <br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE` | View all the Smart Line Item(s) for one of your advertisers. |
+|`GET` | `https://api.appnexus.com/line-item?line_item_subtype=enhanced_performance&advertiser_id=ADVERTISER_ID` <br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE` | View all the Smart Line Item(s) for one of your advertisers. |
 |`DELETE` | `https://api.appnexus.com/line-item?id=LINEITEM_ID&advertiser_id=ADVERTISER_ID`<br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE`<br> **Warning:** Deletion is Recursive and Permanent. Deleting a Smart Line Item will also delete all its associated budget intervals, and splits. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (e.g., revenue budget, tracking, cost budget and targeting). | Delete a Smart Line Item |
 
 ## JSON fields - Smart Line Item
@@ -148,12 +142,12 @@ A profile is a set of targeting parameters, such as gender, age, geography, and 
 |`city_target`| array of objects | The IDs of cities to be either included or excluded in a profile, as defined by the city_action field. You can use the [City Service](city-service.md) to retrieve a list of city IDs. For more details and format, see [City Targets](profile-service.md#city-targets) below.<br> **Required On:** POST/PUT, when `city_action` is include. |
 |`country_action`| enum | Action to be taken on the country_targetslist. Possible values:<br> - include<br> - exclude.<br> **Default:** exclude |
 | `country_targets` | array of objects | The country IDs to be either excluded or included in a profile, as defined by the country_action field. You can use the [Country Service](country-service.md) to retrieve a list of country IDs. For more details and format, see [Country Targets](profile-service.md#country-targets).<br> **Required On:** POST/PUT, when country_actionis include. |
-|`daypart_targets`| array of objects | The day parts during which to serve the campaign. For more details, see Daypart Targets below.<br> **Note:** If you do not set any daypart targets, the campaign will serve on all days of the week at all times. |
+|`daypart_targets`| array of objects | The day parts during which to serve the campaign. For more details, see [Daypart Targets](profile-service.md#daypart-targets).<br> **Note:** If you do not set any daypart targets, the campaign will serve on all days of the week at all times. |
 | `device_type_targets` | array of strings | The types of devices to either include in or exclude from your targeting, as defined by the device_type_action field.<br> Possible values: <br> - phone <br> - tablet <br> - pc <br> <br> For format, see [Device Type Targets](profile-service.md#device-type-targets) |
 |`device_type_action` | enum | Action to be taken on device_type_targets. `device_type` can only be defined using `device_type_action = include`, and can only target the device types mentioned above:  <br> **Possible values:** include or exclude. <br> **Default:** exclude |
 |`gender_targets`| object | The gender targeting used for the profile. Possible values for gender are m(male) or f(female). The allow_unknown field is available as a Boolean in order to account for ad calls where the gender of the user is not available. See the [Gender Targets](profile-service.md#device-type-targets). |
 | `postal_code_targets` | object | The postal code IDs to target. IDs can be fetched using the [Postal Code Service](postal-code-service.md). |
-| `postal_code_action_include` | array of objects | The postal code list IDs to target. IDs can be fetched using the [Postal Code List Service](postal-code-list-service.md) |
+| `postal_code_action_include` | array of objects | The Postal Code List API will allow buyers to create a list of postal codes and reuse it across different objects for targeting. See [Postal Code List Service](postal-code-list-service.md) |
 |`region_action` | enum | Action to be taken on the region_targets list.<br> Possible values: <br> - include <br> - exclude <br> **Default:** exclude |
 |`region_targets`|array of objects | The region/state IDs to be either excluded or included in a profile, as defined by the region_action field. You can use the [Region Service](https://nam06.safelinks.protection.outlook.com/GetUrlReputation) to retrieve a list of region IDs. For more details and format, see [Region Targets](profile-service.md#region-targets).<br> **Required On:** POST/PUT, when `region_action` is include. |
 | `segment_group_target` | array of objects | The segment groups to target. Whereas the `segment_targets` array allows you to define Boolean logic between individual segments, this array allows you to establish groups of segments, defining Boolean logic between the groups as well as between the segments within each group. You define the Boolean logic between groups with the `segment_boolean_operator` field outside of the array; you define the Boolean logic between segments in a group with the `boolean_operator` field within the group object. For more details, see [Segment Group Targets](profile-service.md#segment-group-targets). Segment group targets can only define 1 exclude group and 1 include group, and these two can only be OR’ed. Only 'In-Market' segments are allowed to be targeted. <br> **Note:** Null segments cannot be added. You may not add null segments to this array using `POST` or `PUT`. |

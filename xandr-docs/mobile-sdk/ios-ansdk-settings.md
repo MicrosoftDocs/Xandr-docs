@@ -54,6 +54,8 @@ ANSDKSettings.sharedInstance().optionalSDKInitialization { (isSDKInitialized) in
 }
 ```
 
+---
+
 ## User ID(s) mapping
 
 > [!IMPORTANT]
@@ -70,8 +72,8 @@ ANSDKSettings.sharedInstance().optionalSDKInitialization { (isSDKInitialized) in
 
 > [!NOTE]
 >
-> - Publisher ID and User ID are global settings. 
-> - It is sufficient to set the User ID(s) once per app session as these values would be used in all consecutive ad requests in the same session. 
+> - Publisher ID and User ID are global settings.
+> - It is sufficient to set the User ID(s) once per app session as these values would be used in all consecutive ad requests in the same session.
 > - Xandr does not store these values across different app sessions.
 
 ### Example
@@ -128,6 +130,8 @@ ANSDKSettings.sharedInstance().publisherUserId = "foobar-publisherfirstpartyid"
 ANSDKSettings.sharedInstance().disableIDFVUsage = false
 ```
 
+---
+
 ## Support for overriding country codes and zip codes
 
 The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes. However, these values need to be overwritten from reverser geocoded latitude and longitude data to keep the data sanity intact. If those values are not overwritten, log level data will point to the IP-address based locations and eventually will project wrong data set, especially with mobile data.
@@ -162,6 +166,8 @@ ANSDKSettings.sharedInstance().geoOverrideZipCode = "10010"
 let countryCode = ANSDKSettings.sharedInstance().geoOverrideCountryCode;
 let zipCode = ANSDKSettings.sharedInstance().geoOverrideZipCode
 ```
+
+---
 
 ## Location controls
 
@@ -210,6 +216,8 @@ if let location = locationManager.location {
 ANSDKSettings.sharedInstance().locationEnabledForCreative = false
 ```
 
+---
+
 ## Publisher side user opt-out
 
 For any AdRequest, Xandr Mobile SDK checks in the device or OS environment level and populates the value for limitAdTracking (LMT) in the background automatically. If LMT=true, it indicates that the user opts out from tracking at the device or OS settings. However, the publishers retain information about their users' opt-in/out of tracking and thus are required to pass that information if their user has opted out to comply with their privacy regulations. To facilitate this, publisher side user opt-out feature has been introduced to the Mobile SDK.
@@ -231,6 +239,8 @@ For any AdRequest, Xandr Mobile SDK checks in the device or OS environment level
 ```
 ANSDKSettings.sharedInstance().doNotTrack = true
 ```
+
+---
 
 ## Set IDFA usage
 
@@ -254,6 +264,8 @@ The Identifier for Advertisers (IDFA) is an Apple provided ID to track the users
 ANSDKSettings.sharedInstance().disableIDFAUsage = true
 ```
 
+---
+
 ## Set the auction timeout
 
 | Property | Description |
@@ -274,6 +286,8 @@ ANSDKSettings.sharedInstance().disableIDFAUsage = true
 ANSDKSettings.sharedInstance().auctionTimeout = 500
 ```
 
+---
+
 ## Set test mode
 
 | Property | Description |
@@ -293,6 +307,8 @@ ANSDKSettings.sharedInstance.enableTestMode = YES;
 ```
 ANSDKSettings.sharedInstance().enableTestMode = true
 ```
+
+---
 
 ## OMID-friendly obstruction
 
@@ -360,6 +376,8 @@ nativeAdResponse?.registerView(
 adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 ```
 
+---
+
 ## Set content language
 
 | Property | Description |
@@ -379,3 +397,5 @@ ANSDKSettings.sharedInstance.contentLanguage = @"EN";
 ```
 ANSDKSettings.sharedInstance().contentLanguage = "EN"
 ```
+
+---

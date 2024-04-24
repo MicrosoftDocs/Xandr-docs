@@ -76,6 +76,8 @@ SDKSettings.init(this, {
 }, false, true, false, false)
 ```
 
+---
+
 ## User ID(s) mapping
 
 > [!IMPORTANT]
@@ -145,6 +147,8 @@ SDKSettings.setUserIds(userIds)
 SDKSettings.setPublisherUserId("PublisherUserId-foobar")
 ```
 
+---
+
 ## Support for overriding country codes and zip codes
 
 The SDK uses City/DMA/Country information from standard feed (log level data) for reporting purposes. However, these values need to be overwritten from reverser geocoded latitude and longitude data to keep the data sanity intact. If those values are not overwritten, log level data will point to the IP-address based locations and eventually will project wrong data set, especially with mobile data.
@@ -180,6 +184,8 @@ SDKSettings.getGeoOverrideCountryCode()
 SDKSettings.getGeoOverrideZipCode()
 ```
 
+---
+
 ## Location controls
 
 | Function | Description |
@@ -212,6 +218,8 @@ SDKSettings.setLocationDecimalDigits(2)
 SDKSettings.setLocationEnabledForCreative(false)
 ```
 
+---
+
 ## Background threading
 
 > [!IMPORTANT]
@@ -241,6 +249,8 @@ SDKSettings.init(this) {
 }
 ```
 
+---
+
 ## Publisher side user opt-out
 
 For any AdRequest, Xandr Mobile SDK checks in the device or OS environment level and populates the value for limitAdTracking (LMT) in the background automatically. If LMT=true, it indicates that the user opts out from tracking at the device or OS settings. However, the publishers retain information about their users' opt-in/out of tracking and thus required to pass that information if their user has opted out to comply with their privacy regulations. To facilitate the same, publisher side user opt-out feature is introduced in Mobile SDK.
@@ -268,6 +278,8 @@ SDKSettings.setDoNotTrack(true)
 //Getter
 SDKSettings.getDoNotTrack()
 ```
+
+---
 
 ## Set AAID usage
 
@@ -297,6 +309,8 @@ SDKSettings.disableAAIDUsage(false)
 SDKSettings.isAAIDUsageDisabled()
 ```
 
+---
+
 ## Set the auction timeout
 
 | Function | Description |
@@ -316,6 +330,8 @@ SDKSettings.setAuctionTimeout(500)
 ```
 SDKSettings.setAuctionTimeout(500)
 ```
+
+---
 
 ## Set test mode
 
@@ -337,6 +353,8 @@ SDKSettings.enableTestMode(true);
 SDKSettings.enableTestMode(true)
 ```
 
+---
+
 ## Set content language
 
 | Function | Description |
@@ -356,3 +374,5 @@ SDKSettings.setContentLanguage("EN")
 ```
 SDKSettings.setContentLanguage("EN")
 ```
+
+---

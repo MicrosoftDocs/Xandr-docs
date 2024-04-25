@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Domain Audit Status
+title: Domain Audit Status for Microsoft Monetize
 description: Find the release note for Domain Audit Status.
 ms.date: 04/15/2024
 ms.topic: release-notes
 ---
 
-# Microsoft Monetize - Domain Audit Status
+# Domain Audit Status for Microsoft Monetize
 
 **Release date**: April 30, 2024
 

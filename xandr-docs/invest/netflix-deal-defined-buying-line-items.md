@@ -43,23 +43,23 @@ You must also have access to one or more Netflix PMP deals to target. Sellers mu
 
 To access a Netflix PMP deal, do the following:
 
-1. Click **My Deals** in the **Inventory** menu.
+1. Select **My Deals** in the **Inventory** menu.
 1. In the **My Deals** screen, ensure that the **Deal Type** is set to **PMP**.
 1. Choose the appropriate deal from the **My Deals** screen.
 1. Select the desired **Advertiser** and **Insertion Order**.
-1. Click **Go To Line Item Create** to launch the page to create the **Deal Defined Line Item**.
+1. Select **Go To Line Item Create** to launch the page to create the **Deal Defined Line Item**.
 
 ## Start a new deal defined line item
 
 To create a new Deal Defined line item without going through the **My Deals** interface, do the following:
 
-1. Click **Create New** in the **Line Item** menu.
+1. Select **Create New** in the **Line Item** menu.
 1. On the **Create New Line Item** screen, select **Augmented Line Item** > **Deal Defined** under **Line Item Type**.
 
    > [!IMPORTANT]
    > You must have an **Advertiser** and **Insertion Order** associated with the Line item in the Advertiser and Insertion Order sections. If necessary, select an Advertiser and Insertion Order.
 
-1. Click **Next** to open the **Create a Deal Defined Line Item** screen.
+1. Select **Next** to open the **Create a Deal Defined Line Item** screen.
 
 ## Buying Netflix via PMP on Microsoft Invest
 
@@ -103,8 +103,8 @@ Select the Creative Rotation Strategy:
 ### Associated creatives
 
 1. Search for the creative name or the ID, to open the **Associated Creatives** dialog.
-1. Select the creatives you want to associate with your PG line item from the **Available Creatives** list by clicking on the check next to the name. Selected creatives will appear in the **Selected Creatives** list. Ensure that you have at least one associated creative for each media type and ad size listed in the **Creative Requirements for the PG Deal**. For more information on how to add creatives, see [Add a Creative](./add-a-creative.md) and [Creative CTV Guidelines and Specifications](./creative-ctv-guidelines-and-specifications.md).
-1. When you finish making your selections, click **Save**.
+1. Select the creatives you want to associate with your PG line item from the **Available Creatives** list by selecting the check next to the name. Selected creatives will appear in the **Selected Creatives** list. Ensure that you have at least one associated creative for each media type and ad size listed in the **Creative Requirements for the PG Deal**. For more information on how to add creatives, see [Add a Creative](./add-a-creative.md) and [Creative CTV Guidelines and Specifications](./creative-ctv-guidelines-and-specifications.md).
+1. When you finish making your selections, select **Save**.
 
 ## Related topics
 

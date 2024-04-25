@@ -1698,7 +1698,7 @@
   items:
   - name: Overview
     href: release-notes.md
-  - name: April 30, 2024 - GA for Domain Audit Status
+  - name: April 30, 2024 - Domain Audit Status
     href: release-notes-20240430.md
   - name: November 16, 2023 - Monetize Insights, Total Revenue
     href: release-notes-20231116.md

@@ -188,6 +188,9 @@ For `string` data types, the recommended length of the field varies depending on
 | 135 | feature_costs | optional double | **Unit**: microcents <br> `1 microcent is equivalent to 1E-8 dollars.` <br> `For Example : 200 microcent = 200/100000000 = 0.000002 dollar` <br> These are costs incurred when using a platform feature such as cross-device. | Buyer |
 | 136 | fallback_ad_index | optional int | Fallback occurs when multiple SSPs get the opportunity to return a video creative and their responses are evaluated in a waterfall hierarchy. Default value is `-1`. | Seller |
 | 137 | region_id | int32 | The ID of the region. To map region IDs to names, use the [Region Service](../digital-platform-api/region-service.md). | Both |
+| 138 | is_private_auction | int32 | Indicates whether the auction was conducted within a Protected Audience API auction.<br>The possible values are: <br> - `0` = False <br> - `1` = True | Both |
+| 139 | private_auction_eligible | int32 | Indicates whether the inventory associated with this auction was eligible for a Protected Audience API auction.<br>The possible values are: <br> - `0` = False <br> - `1` = True| Both |
+| 140 | chrome_traffic_label | Enum | The Chrome label assigned for Privacy Sandbox testing, as explained [here](https://developers.google.com/privacy-sandbox/relevance/setup/web/chrome-facilitated-testing?mkt_tok=MjA0LUtaRy02ODUAAAGSpRSDWhlrfehHwCpqN8M4QmgkQgWXDQjbHOkEzJN5au1qzg2LxHPVs2EI9upbZLpE3d6O7J97Q2F1Y7-1HchIEfSb3pKGyyKyWEt3FbNGACfTFg). <br>**Note**: A null value may indicate that either none were sent or that the user is not associated with any labels.| Both |
 
 ### extended_ids
 

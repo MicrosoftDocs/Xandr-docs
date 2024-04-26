@@ -30,3 +30,4 @@ The following additional tools are available from the **Network** > **Tools** me
 | [Object Limits](viewing-your-object-limits.md) | Microsoft Advertising limits the number of items you can have on the platform. View the Object Limits Report to see these limits and proactively monitor your current usage. |
 | [Manage Network Priorities](manage-network-priorities.md) | With this tool you can set network priorities that guide line item and campaign setup. |
 | [Create a Third-Party Network Pixel for Your Creatives](create-a-third-party-network-pixel-for-your-creatives.md) | Create and add pixels that can then be applied to creatives under any advertiser in the network. |
+| [Domain Audit Status](domain-audit-status.md) | Use this tool to check the audit status of your domains. |

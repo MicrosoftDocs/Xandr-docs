@@ -1,164 +1,28 @@
 ---
 title: Smart Audience Line
-description: The Smart Audience Line serves to optimize the performance campaign for Invest users by utilizing MSAN Bidder that offers potentially higher ROAS.
+description: This document outlines how the Smart audience line serves performance campaigns for Microsoft Invest to enhance ROAS.
 ms.date: 04/17/2024
 ms.custom: digital-platform-api
 ---
 
-# Smart Audience Line
+# Smart audience line
 
 > [!NOTE]
 > This feature is currently in Alpha and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
-The Smart Line serves to optimize the performance campaign for Invest users by utilizing MSAN Bidder that offers potentially higher Return on Ad Spend (ROAS). Our aim is not solely to achieve a specific supply volume, but to capitalize on bidding strategies accessible within MSAN.
+This article outlines how the Smart audience line serves performance campaigns for Microsoft Invest customers with the aim of enhancing Return on Ad Spend (ROAS). It involves accessing advertising inventory and leveraging bidding strategies to optimize performance.
 
-The process begins when the advertiser invokes the Buy Side API to set up the following objects: 
+## Process flow
+The process begins with the advertiser configuring the following components within the Microsoft Invest Demand Side Platform (DSP):
+
 - Smart Insertion Order(s)
 - Smart Line Item(s)
-- Creative(s) 
+- Profile
+- Creative(s)
 
-## Smart Insertion Order(s)
-Smart Insertion Orders are for performance buying on Microsoft Audience Network only. It can only be associated to Smart Audience Line Items. Spend from this Insertion Order will not be factored into the member-level budget enforcement. 
+When the customer implements the Smart audience line feature to set up the objects in Microsoft Invest, specific attributes for budgeting, configurations, and targeting parameters are incorporated into the Smart Insertion Order and Smart Line Item. These parameters are sent to an object translation layer, which then integrates performance demand from Microsoft Invest into Microsoft Ads. Once saved on the Microsoft Ads platform, the bidder leverages automated bidding strategies to execute the advertiser's campaigns.
 
-## REST API - Smart Insertion Order
-
-| HTTP Method | Endpoint | Description |
-|:---|:---|:---|
-| `POST` |`https://api.appnexus.com/insertion-order?advertiser_id=ADVERTISER_ID`<br>(insertion order JSON) | Add a new Smart Insertion Order. |
-| `PUT` |  `https://api.appnexus.com/insertion-order?id=INSERTIONORDER_ID&advertiser_id=ADVERTISER_ID`<br>(insertion order JSON)<br> | Modify an existing Smart Insertion Order. |
-| `DELETE` | `https://api.appnexus.com/insertion-order?id=INSERTIONORDER_ID&advertiser_id=ADVERTISER_ID`<br> **Important:** Deleting an insertion order does not necessarily mean that associated line items will be deleted as the relationship between an insertion order and line item can be many to many. Also, deletion of an insertion order results in deletion of the associated budget intervals. | Delete a Smart Insertion Order. |
-| `GET` | `https://api.appnexus.com/insertion-order?enhanced_performance=true&advertiser_id=ADVERTISER_ID` | View all the Smart Insertion Order(s) for one of your advertisers. |
-
-## JSON fields - Smart Insertion Order
-
-| Field | Type (Length) | Description |
-|:---|:---|:---|
-| `name` | string(255) | The name of the Smart Insertion Order.<br> **Required On:** `POST` |
-| `advertiser_id` | int |The ID of the advertiser.<br>**Required On**: `POST` |
-| `enhanced_performance` | boolean | When this field is set to true, it will be used for a Smart  Insertion Order which is sent to MSAN. <br> **Required:** True |
-
-### Budget Interval
-
-| Field | Type (Length) | Description |
-|:---|:---|:---|
-| `daily_budget` | double | The daily budget in revenue. The revenue currency is defined by the currency field.<br> **Note:** If you add line items to the Smart Insertion Order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted. <br> **Default:** null (unlimited) |
-| `start_date` | timestamp | The start date and time during which the Insertion Order should run.Limited to (00:00:00) |
-| `end_date` | timestamp | The end date and time of the Smart Insertion Order. Limited to (23:59:59) |
-
-### Insertion order example
-
-Create a JSON file and populate it with the appropriate values.  For more information, see [Insertion orders and line items](08---insertion-orders-and-line-items.md)
-
-```
-{  
-    "insertion-order": {  
-        "name": "My Performance IO",  
-        "advertiser_id": 123,  
-        "budget_intervals": [  
-            {  
-                "start_date": "2030-10-10 00:00:00",  
-                "end_date": "2030-10-12 23:59:59",  
-                "daily_budget": 100,  
-                "daily_budget_imps": null,  
-                "enable_pacing": false,  
-                "lifetime_budget": null,  
-                "lifetime_budget_imps": null,  
-                "lifetime_pacing": false  
-            }  
-        ],  
-  "enhanced_performance": true  
-    }  
-} 
-```
-
-## Smart Line Item(s)
-Smart Line Item(s) are set up for buying Microsoft Audience Network with automated CPC optimization. A Smart Insertion Order is required to associate budgeting and flighting controls to be associated before setting up a Smart Line Item. The line items under a Smart Insertion Order represent the agreed upon strategies you will be executing for the advertiser.  
-
-## REST API - Smart Line Item
-
-| HTTP Method | Endpoint | Description |
-|:---|:---|:---|
-|`POST` | `https://api.appnexus.com/line-item?advertiser_id=ADVERTISER_ID`<br> (line item JSON) | Add a new Smart Line Item. |
-|`PUT` | `https://api.appnexus.com/line-item?id=LINEITEM_ID&advertiser_id=ADVERTISER_ID` <br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE` <br> (line item JSON) | Modify an existing Smart Line Item |
-|`GET` | `https://api.appnexus.com/line-item?line_item_subtype=enhanced_performance&advertiser_id=ADVERTISER_ID` <br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE` | View all the Smart Line Item(s) for one of your advertisers. |
-|`DELETE` | `https://api.appnexus.com/line-item?id=LINEITEM_ID&advertiser_id=ADVERTISER_ID`<br> `https://api.appnexus.com/line-item?code=LINE-ITEM_CODE&advertiser_code=ADVERTISER_CODE`<br> **Warning:** Deletion is Recursive and Permanent. Deleting a Smart Line Item will also delete all its associated budget intervals, and splits. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (e.g., revenue budget, tracking, cost budget and targeting). | Delete a Smart Line Item |
-
-## JSON fields - Smart Line Item
-
-| Field | Type (Length) | Description |
-|:---|:---|:---|
-|`name`| string | The name of the line item.<br> **Required On:** POST |
-|`line_item_type` | enum | The type of line item. This must be set to standard_v2 for Smart Line Item(s).  |
-| `line_item_subtype` |  enum | The is the subtype of the Smart Line Item and cannot be changed after the line item is created. This needs to be set to `enhanced_performance` while creating a Smart Line Item. |
-|`ad_types`| array of strings | The type of creative used for this line item. This must be set to native. <br> **Required On:** POST/PUT |
-| `advertiser_id`| int | The ID of the advertiser to which the line item belongs. |
-| `profile_id`| int | A profile is a generic set of rules for targeting inventory. You may associate an optional `profile_id` with this line item. For details, see the [Profile Service](profile-service.md). |
-| `bid_cpc` | int | The maximum amount paid per click for a Smart Line Item |
-|`insertion_orders`| array of objects | Objects containing metadata for the insertion orders this line item is associated with. For more information, see [Insertion Orders](line-item-service---ali.md#insertion-orders) below.<br> **Note:** Once a line item is associated with a seamless insertion order, it cannot be associated to a legacy insertion order |
-
-### Smart line item example
-
-Create a JSON file and populate it with the appropriate values. For more information, see [Insertion orders and line items](08---insertion-orders-and-line-items.md)
-
-```
-{  
-    "line-item": {  
-       	"name": "My Performance LI", 	
-		"line_item_type": "standard_v2",  
-  		"line_item_subtype": "enhanced_performance",  
-  		 "ad_types": ["native"],  
-        "advertiser_id": 123,  
-        "profile_id": 999,  
-        "bid_cpc": 12.45,  
-  		 "insertion_orders": [{"id": 23444}],  
-    }  
-} 
-```
-
-## Profile Service 
-A profile is a set of targeting parameters, such as gender, age, geography, and frequency. It can be applied to several objects in the system, most of which are listed below. The most common use of the profile service is to run a campaign; you create a profile and then associate it with the [Campaign Service](campaign-service.md). <br> For more information, see [Profile Service](profile-service.md)
-> [!NOTE]
-> Profile ID will only be used on the line-item level by an enhanced_performance Line Items.
-
-## REST API - Profile Service 
-
-| HTTP Method | Endpoint | Description |
-|:---|:---|:---|
-|`POST`|`https://api.appnexus.com/profile?advertiser_id=ADVERTISER_ID&member_id=MEMBER_ID`<br>(profile JSON) | Add a new profile. |
-| `POST` | `https://api.appnexus.com/profile?advertiser_code=ADVERTISER_CODE`<br>(profile JSON) | Add a new profile.  |
-|`PUT` | `https://api.appnexus.com/profile?id=PROFILE_ID&advertiser_id=ADVERTISER_ID&member_id=MEMBER_ID`<br> (profile JSON) | Modify an existing profile. |
-| `PUT` | `https://api.appnexus.com/profile?code=PROFILE_CODE&advertiser_code=ADVERTISER_CODE`<br> (profile JSON) | Modify an existing profile. |
-| `GET` | `https://api.appnexus.com/profile?advertiser_id=ADVERTISER_ID&member_id=MEMBER_ID` | View all of the profiles for one of your advertisers.
-|`GET` | `https://api.appnexus.com/profile?advertiser_code=ADVERTISER_CODE` | View all of the profiles for one of your advertisers. |
-|`GET` | `https://api.appnexus.com/profile?id=PROFILE_ID&advertiser_id=ADVERTISER_ID&member_id=MEMBER_ID` | View a specific profile for one of your advertisers. |
-| `GET` | `https://api.appnexus.com/profile?code=PROFILE_CODE&advertiser_code=ADVERTISER_CODE` | View a specific profile for one of your advertisers. |
- 
-## JSON fields - Profile Service 
-
-| Field | Type (Length) | Description |
-|:---|:---|:---|
-|`age_targets` |array of strings | The list of age ranges to target for this profile. The allow_unknown field is available as a Boolean in order to account for ad calls where the age of the user is not available. For more description and examples, see the Age Targets section below. Only the following ranges are allowed: <br>- `['low' => 18, 'high' => 24]`,<br> -`['low' => 25, 'high' => 34]`,<br> -`['low' => 35, 'high' => 49]`,<br> -`['low' => 50, 'high' => 64]`,<br> -`['low' => 65, 'high' => 100]` |
-|`city_action` | enum | Action to be taken on the city_targets list. Possible values:<br> - include <br> - exclude.<br> **Default:** exclude |
-|`city_target`| array of objects | The IDs of cities to be either included or excluded in a profile, as defined by the city_action field. You can use the [City Service](city-service.md) to retrieve a list of city IDs. For more details and format, see [City Targets](profile-service.md#city-targets) below.<br> **Required On:** POST/PUT, when `city_action` is include. |
-|`country_action`| enum | Action to be taken on the country_targetslist. Possible values:<br> - include<br> - exclude.<br> **Default:** exclude |
-| `country_targets` | array of objects | The country IDs to be either excluded or included in a profile, as defined by the country_action field. You can use the [Country Service](country-service.md) to retrieve a list of country IDs. For more details and format, see [Country Targets](profile-service.md#country-targets).<br> **Required On:** POST/PUT, when country_actionis include. |
-|`daypart_targets`| array of objects | The day parts during which to serve the campaign. For more details, see [Daypart Targets](profile-service.md#daypart-targets).<br> **Note:** If you do not set any daypart targets, the campaign will serve on all days of the week at all times. |
-| `device_type_targets` | array of strings | The types of devices to either include in or exclude from your targeting, as defined by the device_type_action field.<br> Possible values: <br> - phone <br> - tablet <br> - pc <br> <br> For format, see [Device Type Targets](profile-service.md#device-type-targets) |
-|`device_type_action` | enum | Action to be taken on device_type_targets. `device_type` can only be defined using `device_type_action = include`, and can only target the device types mentioned above:  <br> **Possible values:** include or exclude. <br> **Default:** exclude |
-|`gender_targets`| object | The gender targeting used for the profile. Possible values for gender are m(male) or f(female). The allow_unknown field is available as a Boolean in order to account for ad calls where the gender of the user is not available. See the [Gender Targets](profile-service.md#device-type-targets). |
-| `postal_code_targets` | object | The postal code IDs to target. IDs can be fetched using the [Postal Code Service](postal-code-service.md). |
-| `postal_code_action_include` | array of objects | The Postal Code List API will allow buyers to create a list of postal codes and reuse it across different objects for targeting. See [Postal Code List Service](postal-code-list-service.md) |
-|`region_action` | enum | Action to be taken on the region_targets list.<br> Possible values: <br> - include <br> - exclude <br> **Default:** exclude |
-|`region_targets`|array of objects | The region/state IDs to be either excluded or included in a profile, as defined by the region_action field. You can use the [Region Service](https://nam06.safelinks.protection.outlook.com/GetUrlReputation) to retrieve a list of region IDs. For more details and format, see [Region Targets](profile-service.md#region-targets).<br> **Required On:** POST/PUT, when `region_action` is include. |
-| `segment_group_target` | array of objects | The segment groups to target. Whereas the `segment_targets` array allows you to define Boolean logic between individual segments, this array allows you to establish groups of segments, defining Boolean logic between the groups as well as between the segments within each group. You define the Boolean logic between groups with the `segment_boolean_operator` field outside of the array; you define the Boolean logic between segments in a group with the `boolean_operator` field within the group object. For more details, see [Segment Group Targets](profile-service.md#segment-group-targets). Segment group targets can only define 1 exclude group and 1 include group, and these two can only be OR’ed. Only 'In-Market' segments are allowed to be targeted. <br> **Note:** Null segments cannot be added. You may not add null segments to this array using `POST` or `PUT`. |
-
-## Creatives
-The Creative Service can be used to add creatives to our system. All creatives must be attached to an advertiser or publisher. Microsoft works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements (creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the Creative Service. For more information, see [Creative Service](creative-service.md). <br>
-
-When associating a creative with a Smart Line Item:  
-- It must have `native_attribute` set, with an `image_asset` of type “main_image”  
-    - The width of this image asset must be greater than 703 pixels, and the height must be greater than 368 pixels. 
-
- 
-
-
+## Related topics
+- [Smart Insertion Order(s) Service](smart-insertion-order-service.md)
+- [Smart Line Item(s) Service](smart-line-item-service.md)
+- [Enhancement in Profile and Creative Services](enhancements-in-profile-and-creative-services.md)

@@ -238,7 +238,15 @@
     - name: Line Item Service - ALI
       href: line-item-service---ali.md
     - name: Smart Audience Line 
-      href: smart-audience-line.md
+      items:
+      - name: Overview
+        href: smart-audience-line.md
+      - name: Smart Insertion Order Service
+        href: smart-insertion-order-service.md
+      - name: Smart Line Item Service
+        href: smart-line-item-service.md
+      - name: Enhancements in Profile and Creative Services
+        href: enhancements-in-profile-and-creative-services.md
     - name: Mobile App Instance List Service
       href: mobile-app-instance-list-service.md
     - name: Optimization Override Service

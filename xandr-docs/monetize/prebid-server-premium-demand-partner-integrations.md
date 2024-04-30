@@ -134,13 +134,14 @@ Additional resources on demand partners:
 | Kivi Ads | kiviads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Krushmedia | krushmedia | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Kubient | kubient | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| Liftoff (Vungle) | vungle | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: Yes |
+| Liftoff (Vungle) | liftoff | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: Yes |
 | LemmaDigital | lemmadigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Limelight Digital | limelightDigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | LM KiviAds | lm_kiviads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | LockerDome | lockerdome | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | Logan | logan | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Logicad for Publishers | logicad | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
+| Loyal | loyal | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Luna Media | lunamedia | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Madvertise | madvertise | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | mabidder | mabidder | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
@@ -173,6 +174,7 @@ Additional resources on demand partners:
 | PulsePoint | pulsepoint | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | PWBid | pwbid | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Quantumdex | quantumdex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
+| ReadPeak | readpeak | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: Yes <br>**Site**: Yes |
 | Relevant Digital | relevantdigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | RevContent | revcontent | No | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | RhythmOne | rhythmone | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
@@ -189,6 +191,7 @@ Additional resources on demand partners:
 | Silverpush | silverpush | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Smaato | smaato | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Smart AdServer | smartadserver | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+| Smrtconnect | smrtconnect | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Smarthub | smarthub | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | SmartRTB | smartrtb | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | smartx | smartx | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |

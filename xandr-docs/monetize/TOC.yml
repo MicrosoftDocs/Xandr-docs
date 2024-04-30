@@ -1313,6 +1313,8 @@
     items:
     - name: Create a Deal Line Item
       href: create-a-deal-line-item.md
+    - name: Create a Simplified Deal Line Item
+      href: create-a-simplified-deal-line-item.md 
     - name: Understanding Multi-Buyer Deals
       href: understanding-multi-buyer-deals.md
     - name: Set Up Multi-Buyer Deals

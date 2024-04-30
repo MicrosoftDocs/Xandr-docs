@@ -78,6 +78,8 @@ Deal line items have the following targeting options:
 
 ### Advanced settings
 
+In the **Advanced Settings** section, enter any optional advanced settings that are useful.
+
 #### Advanced targeting
 
 The **Advanced Targeting** section offers advanced settings and targeting options to ensure your deal reaches the intended audience.
@@ -139,7 +141,7 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
 
   - **Brand**
     - **Brand** tab: Only selected brands will be allowed to serve; any brands not selected will not be allowed. If no brands are selected, all brands that follow ad quality rules are allowed.
-    - **Ad Quality Settings tab**: Select the brands for which you want to override ad quality settings. When you select **Ignore**, the brand will be allowed on the deal despite ad quality settings. All brands defaults to **Follow**, so they comply with ad quality settings.
+    - **Ad Quality Settings** tab: Select the brands for which you want to override ad quality settings. When you select **Ignore**, the brand will be allowed on the deal despite ad quality settings. All brands defaults to **Follow**, so they comply with ad quality settings.
   - **Language**
     - **Language** tab: Only selected languages will be allowed to serve; any languages not selected will not be allowed. If no languages are selected, all languages that follow ad quality rules are allowed.
     - **Ad Quality Settings** tab: Select the languages in which you want to override ad quality settings. When you select **Ignore**, the language will be allowed on the deal despite ad quality settings. All languages defaults to **Follow**, so they comply with ad quality settings.

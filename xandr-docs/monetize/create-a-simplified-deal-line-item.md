@@ -37,7 +37,7 @@ You can create a new deal line item from the **Advertisers** screen.
 
 In the **Basic Setup** section, enter the following details for the deal line item:
 
-- **Deal Name**: Enter a deal name (this deal name is exposed to the buyer).
+- **Deal Name**: Enter a deal name (this deal name is revealed to the buyer).
 - **Deal Code**: Enter the deal code (optional, typically used by external sellers for deal mapping).
 - **Deal Description**: Enter a description for your deal (optional).
 
@@ -46,7 +46,7 @@ In the **Basic Setup** section, enter the following details for the deal line it
 The **Deal details** section offers a detailed overview of the key components that define your deal.
 
 - **Buyer**: Choose a buyer for the deal. Select the **Edit (pencil icon)** option under **Buyer**. On the **Buyer** screen, select an available buyer (search by name or ID). You cannot change the selected buyer after the deal line item is created and saved. For multi-buyer deals, see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md).
-- **Deal Trust Level**: Indicates what level of audit status you want to permit for creatives to serve on a deal. For more information, see the **Trust Level** section in [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md).
+- **Deal Trust Level**: Specifies the level of audit status you want to permit for creatives to serve on a deal. For more information, see the **Trust Level** section in [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md).
 - **Ad Type**: Select the type of ad you plan to use. You can select more than one ad type. Possible values are **Banner**, **Video**, **Audio**, and **Native**.
     > [!NOTE]
     >
@@ -57,7 +57,7 @@ The **Deal details** section offers a detailed overview of the key components th
     1. Enter the appropriate values for the **Width** and **Height** fields.
     1. Select the **Add Size and Save Size to Member** option. This action automatically saves your custom ad size for future use.
     1. Select **Save**.
-- **Deal Priority**: The deal's ranking in the auction. When a deal priority sits above the network "no reselling priority," the buyer's bid takes precedence over open exchange. When a deal priority sits below, the buyer competes with bids from the open exchange.
+- **Deal Priority**: Specifies the deal's ranking in the auction. When a deal priority sits above the network "no reselling priority," the buyer's bid takes precedence over open exchange. When a deal priority sits below, the buyer competes with bids from the open exchange.
 - **Pricing Strategy**: Specifies the payment method agreed upon by the advertiser. You can select one of the following revenue types:
   - **Floor Price**: Enter the hard floor price that will apply to the buyer of the deal.
   - **Fixed Price**: Enter the amount that the advertiser will pay you per thousand impressions.
@@ -153,7 +153,7 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
 
 #### Reporting labels and comments
 
-In the **Reporting Labels and Comments** section, you can optionally assign custom reporting labels (**Trafficker**, **Sales Rep**, **Line Item Type**, and **OMS ID**) to a line item, and add comments to a line item for your reference. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. For more information, see [Reporting Guide](reporting-guide.md).
+In the **Reporting Labels and Comments** section, you can optionally assign custom reporting labels (**Trafficker**, **Sales Rep**, **Line Item Type**, and **OMS ID**) to a line item. You can also and add comments to a line item for your reference. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. For more information, see [Reporting Guide](reporting-guide.md).
 
 #### Associated objects
 

@@ -51,7 +51,7 @@ The **Deal details** section offers a detailed overview of the key components th
     > [!NOTE]
     >
     > Selecting **Ad Type** determines the availability of other settings (e.g.,**Targeting \>  Completion Rate Threshold**). **Ad Type** selections are automatically synced with the **Media Type** of deal impressions.
-- **Ad Size**: You can select the standard ad sizes, or you can also create a custom one. To create a custom ad size:
+- **Ad Size**: Select the standard ad size, or you can also create a custom one. To create a custom ad size:
     1. Select the **Custom** tab.
     1. Select **Add Size**.
     1. Enter the appropriate values for the **Width** and **Height** fields.
@@ -92,9 +92,9 @@ The **Advanced Targeting** section offers advanced settings and targeting option
 - **Allowlist**: Search and select an allowlist you would like to apply to this line item. You can select from network/member-level allowlists or [create an allowlist](inventory-targeting-ali.md) directly from the line item. Once applied, you can also view or export the allowlist.
 - **Blocklist**: Search and select a blocklist (by default, the Microsoft Advertising blocklist is always applied). Any inventory in the blocklists you apply for is automatically excluded and not bid on by this line item. You can select from network/member-level blocklists or [Inventory Lists](inventory-lists-ali-only.md) directly from the line item. Once applied, you can also view or export the blocklist.
 - **Viewability Threshold**: Select the **Viewability Threshold** checkbox and enter a percentage to buy impressions based on their predicted viewability.
-- **System targeting**: You can target users based on their operating systems, browsers, language, device model, or carrier. For more information, see [System targeting](system-targeting.md).
-- **Demographics**: You can target specific segments of the audience based on characteristics such as age and gender. For more information, see [Demography targeting](demography-targeting.md).
-- **Page properties**: You can target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. For more information, see [Page properties targeting](page-properties-targeting.md).
+- **System targeting**: Target users based on their operating systems, browsers, language, device model, or carrier. For more information, see [System targeting](system-targeting.md).
+- **Demographics**: Target specific segments of the audience based on characteristics such as age and gender. For more information, see [Demography targeting](demography-targeting.md).
+- **Page properties**: Target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. For more information, see [Page properties targeting](page-properties-targeting.md).
 - **Ads.txt**: Select this checkbox to only target web inventory authorized in a publisher's ads.txt file.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ The **Budgeting and Scheduling** section defines how you will pay for media and 
     - **Set Lifetime**: Enter a lifetime budget for the line item. This will be the total budget available to the line item for all its flight dates. The deal line item permits buyers to spend quickly, but it stops when the buyer reaches the spending limit.
     - **Set Per Flight**: When selected, a **Budget** field displays each of the line item's flight dates in the **Flights** section. Use the **Flights** field to set the budget for the flight dates.
   - If you select **Daily Budget**, enter the maximum daily budget to use.
-- **Flights**: Flights permits you set up limited deals with start and end dates as well as “evergreen deals” with no end date. To create one or more flights:
+- **Flights**: Flights permits you to create limited deals with start and end dates, and “evergreen deals” with no end date. To create one or more flights:
 
   1. Select either **Set Dates** or **No End Date**. This option is not available if the **Lifetime Budget** is set.
 
@@ -130,14 +130,14 @@ The **Budgeting and Scheduling** section defines how you will pay for media and 
     >
     > You cannot change the **Start Date** of a flight once that date has passed. You can add multiple flights to any deal line item.
   
-- **Daypart Targeting**: You can target users based on the day and time when they see impressions. For more information, see [Daypart targeting](daypart-targeting.md).
+- **Daypart Targeting**: Target users based on the day and time when they see impressions. For more information, see [Daypart targeting](daypart-targeting.md).
 
 #### Deal ad quality
 
 The **Deal Ad Quality** section defines ad quality settings you wish to establish for a particular network and publisher.
 
 - **Creative Review**: Select the **Only allow seller-approved creatives** checkbox to ensure that only creatives that you explicitly approve will run.
-- **Creative Attributes**: You can edit the creative attributes for a deal. To edit the following creative attributes, select **Edit** under each attribute, choose the appropriate values, and then select **Set**. For more information, see [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md).
+- **Creative Attributes**: Edit the creative attributes for a deal. To edit the following creative attributes, select **Edit** under each attribute, choose the appropriate values, and then select **Set**. For more information, see [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md).
 
   - **Brand**
     - **Brand** tab: Only selected brands will be allowed to serve; any brands not selected will not be allowed. If no brands are selected, all brands that follow ad quality rules are allowed.
@@ -160,8 +160,8 @@ In the **Reporting Labels and Comments** section, you can optionally assign cust
 The **Associated Objects** section defines objects and entities that are associated with the deal line item.
 
 - **Line Item Name**: Enter the name for the line item.
-- **Advertiser Summary**: You can review your preselected advertiser details and make changes if needed. However, once the deal is created and saved, you cannot change the advertiser.
-- **Insertion Order Summary**: You can review your preselected insertion order details and make changes if needed, even after creating and saving the deal.
+- **Advertiser Summary**: Review your preselected advertiser details and make changes if needed. However, once the deal is created and saved, you cannot change the advertiser.
+- **Insertion Order Summary**: Review your preselected insertion order details and make changes if needed, even after creating and saving the deal.
 
 ### Deal summary
 

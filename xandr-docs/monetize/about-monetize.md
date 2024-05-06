@@ -35,19 +35,14 @@ Monetize has a number of features that allow you to maintain business and techni
 
 As an ad server user, you have access to your end-to-end setup of advertiser and publisher information. You can set up publishers and available inventory, as well as advertisers and their selling specifications. With an ad server, you can set up and manage your buy-side systems and your sell-side systems, as well as manage forecasting, priorities, and many other types of functionality between the two.
 
-## Technical details
+## Technical details - process flow
 
-The Microsoft Advertising platform is a real-time bidding system and ad server. The main processing system here is called the "impression bus". The impression bus receives ad requests, applies data to the request, receives bids, makes decisions, serves creatives, logs auctions, etc.
-
-Ad calls come in via our inventory supply partners: exchanges, SSPs, ad networks, and a few valued publishers. Some of the ad calls are client-side, meaning there is a Microsoft Advertising tag on the page, and we get the call directly. Others are server-side, meaning our partners initially field the call and then contact us asking for a bid.
-
-Once we get the call, we overlay segment data from our server-side cookie store. Data is added to the cookie store either through segment pixels or by clients sending us a file of data. We also contact third-party data providers and overlay any available data.
-
-We contact all of the bidders on our platform. The ad call includes whatever user data belongs to each bidder, and information about the inventory. Bidders have a certain number of milliseconds in which to respond with a bid and the creative they want to serve.
-
-Monetize serves as our proprietary bidder, which has a suite of features including campaigns and targeting, bidding algorithms, multi-currency support, and all the other features of a premium ad server. It can be accessed by either a UI or an API.
-
-The impression bus decides which bid wins based on the amount of the bid and any preferences the publisher has about what they want served on their page. If the call was client-side, Microsoft Advertising serves the ad. If it was server-side, Microsoft Advertising passes the bid and the location of the creative to the partner who will ultimately serve the ad.
+- **Ad Calls Initiation**: Ad calls are received from various inventory supply partners, including exchanges, SSPs, ad networks, and valued publishers. These calls can be either client-side (directly from Microsoft Advertising tag on the page) or server-side (initially handled by partners then forwarded to Microsoft Advertising).
+- **Data Overlay**: Upon receiving the ad call, Microsoft Advertising overlays segment data from its server-side cookie store. This data is accumulated either through segment pixels or by clients sending data files. Third-party data providers may also contribute additional data.
+- **Bid Request to Bidders**: Microsoft Advertising contacts all bidders on its platform, providing them with the ad call data, including user data and inventory information. Bidders have a limited time frame (milliseconds) to respond with a bid and the creative they intend to serve.
+- **Monetize Bidder Processing**: Microsoft Advertising's proprietary bidder, Monetize, processes the bid request. Monetize offers various features such as campaigns, targeting options, bidding algorithms, and multi-currency support. It can be accessed either through a user interface (UI) or an Application Programming Interface (API).
+- **Bid Evaluation by Impression Bus**: The impression bus evaluates the bids received, considering factors such as bid amount and any preferences set by the publisher regarding ad serving. Based on these criteria, the impression bus determines the winning bid.
+- **Ad Serving**: If the ad call originated client-side, Microsoft Advertising serves the ad directly to the user. If the ad call was server-side, Microsoft Advertising communicates the winning bid and the location of the creative to the partner responsible for ultimately serving the ad.
 
 ## Get started
 

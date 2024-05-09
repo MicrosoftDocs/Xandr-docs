@@ -8,10 +8,9 @@
       #href: xandr-sdk-app.md
     - name: Impression Counting Methods
       items:
-        - name: Impression Counting Mechanism - Mobile SDK v7.0 and below
+        - name: Impression Counting Methods
           href: impression-counting-methods.md
-        - name: Impression Counting Mechanism - Mobile SDK v8.0 and above
-          href: updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md
+        
 - name : iOS SDK
   items:
     - name: Overview

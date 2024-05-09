@@ -7,7 +7,7 @@ ms.date : 10/28/2023
 
 # Impression counting methods
 
-The Mobile SDK uses different impression tracking mechanisms for various Ad formats. In this page, find the methods that apply to Mobile SDK versions 8.0 and above and to Mobile SDK versions 7.0 and below.
+The Mobile SDK uses different impression tracking mechanisms for various Ad formats. In this page, find the methods that apply to Mobile SDK versions 8.0 and above and to Mobile SDK versions 7.22 and below.
 
 ## Impression counting mechanism - Mobile SDK v8.0 and above
 
@@ -39,7 +39,7 @@ Impression counting is summarized as follows:
 
 ### Counting Methodology: Mobile SDK version 7.22.0 and older
 
-The Mobile SDK v7.0 continues to use the old impression counting mechanism for various Ad formats. For more information, see [Impression Counting Methods](impression-counting-methods.md).
+The Mobile SDK v7.22 continues to use the old impression counting mechanism for various Ad formats. For more information, see [Impression Counting Methods](impression-counting-methods.md).
 
 ### Counting Methodology: Mobile SDK version v8.0 and above -->
 
@@ -52,9 +52,9 @@ The Mobile SDK v7.0 continues to use the old impression counting mechanism for v
 | Interstitial | Count on Render | Default |
 | Video | Count on Video Start | Default |
 
-## Impression counting using Mobile SDK V7.0 and below
+## Impression counting using Mobile SDK V7.22 and below
 
-The Mobile SDK uses the following impression tracking mechanisms for versions 7.0 and earlier.
+The Mobile SDK uses the following impression tracking mechanisms for versions 7.22 and earlier.
 
 | Type | Counting Method | AdUnits | How to enable |
 |:---|:---|:---|:---|

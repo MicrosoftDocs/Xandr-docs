@@ -84,26 +84,20 @@
         href: forcecreativeId-for-ios.md
       - name: Get Facebook Demand for Native
         href: get-facebook-demand-for-native-on-ios.md
-      - name: Initialize SDK Settings
-        href: initialize-sdk-settings-in-ios.md
+      - name: iOS ANSDK Settings
+        href: ios-ansdk-settings.md
       - name: Lazy Load
         href: lazy-load-for-ios.md
       - name: Listen to Native Ad Events
         href: listen-to-native-ad-events-on-ios.md
       - name: Listener for AdAboutToExpire
         href: listener-for-adabouttoexpire-on-ios.md
-      - name: Location Controls
-        href: location-controls-on-ios.md
       - name: Localize Browser Button
         href: localize-browser-button.md
-      - name: OMID-Friendly Obstruction
-        href: omid-friendly-obstruction-for-ios.md
       - name: Open AD Clicks in the Native Browser
         href: open-ad-clicks-in-the-native-browser-on-ios.md
       - name: Pass Custom Keywords
         href: pass-custom-keywords-on-ios.md
-      - name: Publisher Side User Opt-Out
-        href: publisher-side-user-opt-out-for-ios.md
       - name: Receive Ad View Status Events
         href: receive-ad-view-status-events-on-ios.md
       - name: Request Ads Over HTTPS
@@ -112,25 +106,14 @@
         href: resize-ads-to-fit-the-screen-or-banner-ad-view-on-ios.md
       - name: Resize the Banner Ad View to the Size of the Winning Creative
         href: resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-ios.md
-      - name: Set IDFA usage
-        href: set-idfa-usage-for-ios.md
       - name: Set Reserve Prices
         href: set-reserve-prices-on-ios.md
-      - name: Set Test Mode
-        href: set-test-mode-for-ios.md
-      - name: Set the Auction Timeout
-        href: set-the-auction-timeout-for-ios.md
-      - name: Support for Overriding Country and Zip Codes
-        href: support-for-overriding-country-and-zip-codes-for-ios.md
       - name: Support to Pass Traffic Source and External Inventory Codes in Ad Request
         href: support-to-pass-traffic-source-and-external-inventory-codes-in-ad-request-for-ios.md
       - name: Toggle PSAs
         href: toggle-psas-on-ios.md
-      - name: User ID(s) Mapping
-        href: user-id-s-mapping-on-ios.md
     - name: FAQ (iOS 14.0)
       href: ios-14-0-faq.md
-    
     - name: SDK Privacy
       href: sdk-privacy-for-ios.md
     - name: Migrating iOS SDK v7 to 8.0
@@ -198,14 +181,12 @@
         href: add-targeting-parameters-on-android.md
       - name: Allow Multiple Ad Sizes for Banner Ad View
         href: allow-multiple-ad-sizes-to-serve-into-a-banner-ad-view-on-android.md
+      - name: Android SDK Settings
+        href: android-sdk-settings.md
       - name: API for Exiting Banner Video from Fullscreen
         href: api-for-exiting-banner-video-from-fullscreen.md
       - name: Support for External Inventory Codes in Ad Request
         href: support-for-external-inventory-code-and-traffic-source-code-on-android.md
-      - name: Support for Overriding Country and Zip Codes
-        href: support-for-overriding-country-codes-and-zip-codes-on-android.md
-      - name: Background Threading
-        href: background-threading-on-android.md
       - name: Click-Through URL
         href: click-through-url-on-android.md
       - name: Configure SDK Logging
@@ -222,24 +203,18 @@
         href: forcecreativeid-for-android.md
       - name: Get Facebook Demand for Native
         href: get-facebook-demand-for-native-on-android.md
-      - name: Initialize SDK Settings
-        href: initialize-sdk-settings-in-android.md
       - name: Lazy Load
         href: lazy-load-for-android.md
       - name: Listen to Native Ad Events
         href: listen-to-native-ad-events-on-android.md
       - name: Listener for AdAboutToExpire
         href: listener-for-onadabouttoexpire-on-android.md
-      - name: Location Controls
-        href: location-controls-on-android.md
       - name: OMID Friendly Obstruction
         href: omid-friendly-obstruction-for-android.md
       - name: Open Ad Clicks in the Native Browser
         href: open-ad-clicks-in-the-native-browser-on-android.md
       - name: Pass Custom Keywords
         href: pass-custom-keywords-on-android.md
-      - name: Publisher Side User Opt-Out
-        href: publisher-side-user-opt-out-for-android.md
       - name: Receive Ad View Status Events
         href: receive-ad-view-status-events-on-android.md
       - name: Request Ads Over HTTPS
@@ -248,18 +223,10 @@
         href: resize-ads-to-fit-the-screen-or-banner-ad-view-on-android.md
       - name: Resize the Banner Ad View to the Size of the Winning Creative
         href: resize-the-banner-ad-view-to-the-size-of-the-winning-creative-on-android.md
-      - name: Set AAID usage
-        href: set-aaid-usage-for-android.md
       - name: Set Reserve Prices
         href: set-reserve-prices-on-android.md
-      - name: Set Test Mode
-        href: set-test-mode-for-android.md
-      - name: Set the Auction Timeout
-        href: set-the-auction-timeout-for-android.md
       - name: Toggle PSAs
         href: toggle-psas-on-android.md
-      - name: User ID(s) Mapping
-        href: user-id-s-mapping-on-android.md
     - name: SDK Privacy for Android
       href: sdk-privacy-for-android.md
     - name: Migrating Android SDK v7 to 8.0

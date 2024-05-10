@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Buyer Deal Metrics
-description: In this article, learn what a Buyer Deal Metrics Report is and how you can run this report to view information like deal metrics, performance, and rejection reasons.
+description: Discover the definition of a Buyer Deal Metrics Report and how to generate it to access details such as deal metrics, performance, and reasons for rejection.
 ms.date: 10/28/2023
 ---
 
@@ -58,6 +58,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Seller | Yes | The seller that sold the deal. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
 | Ask Price | No | The ask price for the deal. |
+| LI Id | Yes | The ID of the line item. |
 | Start Date | No | The day and time when the deal starts being available to the buyer. |
 | End Date | No | The day and time when the deal stops being available to the buyer. |
 | Deal Type Name | No | Whether the deal is a public deal or a private deal. |

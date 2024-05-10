@@ -63,6 +63,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Deal Auction Type Name | No | Whether the auction was a second price auction or a fixed price auction. |
 | Deal Type Name | No | Whether the deal is a public deal or a private deal. |
 | End Date | No | The day and time when the deal stops being available to the buyer. |
+| LI Id | Yes | The ID of the line item. |
 | Package ID | No | The ID of the package, if the deal is associated with a package. |
 | Priority | No | For a private auction only, the priority the seller assigned to the deal. |
 | Seller | Yes | The seller that sold the deal. |

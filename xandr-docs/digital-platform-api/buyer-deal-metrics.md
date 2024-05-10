@@ -39,6 +39,7 @@ Data retention period for this report is 30 days.
 | `deal_name` | Yes | The deal associated with the transaction for the impression. |
 | `deal_type_name` | Yes | The deal type for a particular deal. Deal type options are Open Auction, Private Auction, Curated, First Look, or Programmatic Guaranteed. |
 | `end_date` | Yes | The day and time when the deal stops being available to the buyer. |
+| `line_item_id` | Yes | The ID of the line item. |
 | `package_id` | Yes | The ID of the package, if the deal is associated with a package. The integer value of the package that the deal was created from. This value will be 0 if the deal was not created from a package. |
 | `priority` | Yes | For a private auction only, the priority the seller assigned to the deal. |
 | `seller_member_id` | Yes | The ID of the seller that sold the deal. |

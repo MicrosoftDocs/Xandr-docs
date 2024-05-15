@@ -1,47 +1,47 @@
 ---
 title: Create a Simplified Deal Line Item
-description: Explore the process of creating a simplified Deal Line Item, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
+description: Explore the process of creating a simplified deal line item, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
 ms.date: 04/29/2024
 ---
 
-# Create a simplified Deal Line Item
+# Create a simplified deal line item
 
 > [!NOTE]
 > This feature is currently in **Beta** and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
 
-Publishers using Microsoft Monetize can utilize Deal Line Items to set up deals with their advertisers. This helps them offer the latest features available on the Microsoft Monetize platform to their buyers.
+Publishers using Microsoft Monetize can utilize deal line items to set up deals with their advertisers. This helps them offer the latest features available on the Microsoft Monetize platform to their buyers.
 
 ## Prerequisites
 
-Before you begin, ensure that you've created the objects that hold all your deals. It's recommended to complete this step only once, as we advise creating all your Deal Line Items under the same Advertiser and Insertion Order for efficiency. If you haven't done this yet, follow the steps outlined in the pages below:
+Before you begin, ensure that you've created the objects that hold all your deals. It's recommended to complete this step only once, as we advise creating all your deal line items under the same advertiser and insertion order for efficiency. If you haven't done this yet, follow the steps outlined in the pages below:
 
 - [Advertiser](create-an-advertiser.md)
-- [Seamless Insertion Order](create-an-insertion-order.md): Create an Insertion Order with **Flexible Budget Type**, **No End Date**, **Unlimited Budget**, **Set pacing on the line item** settings.
+- [Seamless insertion order](create-an-insertion-order.md): Create an insertion order with **Flexible Budget Type**, **No End Date**, **Unlimited Budget**, **Set pacing on the line item** settings.
 
 > [!NOTE]
-> Legacy insertion orders aren't supported with the Deal Line Item. The settings you select on the insertion order applies to *all* line items under the insertion order.
+> Legacy insertion orders aren't supported with the deal line item. The settings you select on the insertion order applies to *all* line items under the insertion order.
 
-## Create a Deal Line Item from scratch
+## Create a deal line item from scratch
 
-You can create a new Deal Line Item from the **Line Items** screen.
+You can create a new deal line item from the **Line Items** screen.
 
 1. Go to **Advertisers > Line Items**.
 1. On the **Line Items** screen, select **Deal Line Item** from the **+ New** drop-down menu.
-1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from template, see [Create a Deal Line Item from template](#create-a-deal-line-item-from-template).
-1. Search (by name or ID) and select the desired Advertiser and Insertion Order for the respective **Advertiser** and **Insertion Order** fields.
+1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from a template, see [Create a deal line item from template](#create-a-deal-line-item-from-template).
+1. Search (by name or ID) and select the desired advertiser and insertion order for the respective **Advertiser** and **Insertion Order** fields.
 
     > [!TIP]
-    > - When you select the **Make Default Advertiser** and **Make Default Insertion Order** checkboxes, the form automatically saves the Advertiser and Insertion Order details. This information is pre-populated for future deal creation. However, you can still modify it if necessary.
-    > - The Advertiser and Insertion Order details are saved locally and will be cleared when you clear your browser's cookies.
+    > - When you select the **Make Default Advertiser** and **Make Default Insertion Order** checkboxes, the form automatically saves the advertiser and insertion order details. This information is pre-populated for future deal creation. However, you can still modify it if necessary.
+    > - The advertiser and insertion order details are saved locally and will be cleared when you clear your browser's cookies.
 1. Select **Next**.
 
 ### Basic settings
 
-In the **Basic Settings** section, enter the following details for the Deal Line Item:
+In the **Basic Settings** section, enter the following details for the deal line item:
 
-- **Deal Name**: Enter a deal name (this deal name is transparent to the buyer).
-- **Deal Code**: Enter the deal code (optional, typically used by external sellers for deal mapping).
-- **Deal Description**: Enter a description for your deal (this description is transparent to buyers).
+- **Deal Name**: Enter a deal name. This deal name is transparent to the buyer.
+- **Deal Code**: Enter the deal code. Optional, typically used by external sellers for deal mapping.
+- **Deal Description**: Enter a description for your deal. This description is transparent to buyers.
 
 #### Deal details
 
@@ -73,12 +73,12 @@ The **Deal details** section offers a detailed overview of the key components th
   - **Floor Price**: Enter the hard floor price that will apply to the buyer of the deal.
   - **Fixed Price**: Enter the amount that the advertiser will pay you per thousand impressions.
     > [!NOTE]
-    > You can now modify a **Fixed Price** even after saving the Deal Line Item.
+    > You can now modify a **Fixed Price** even after saving the deal line item.
   - **Market Price**: Select this option to use yield management floors if they are available; if they are not available, no floors will be applied to the auction.
 
 #### Deal targeting
 
-A Deal Line Item has the following targeting options:
+A deal line item has the following targeting options:
 
 - **Device Type**: Select the devices you plan to target. You can select more than one device type. Possible values are **Desktops & Laptops**, **Tablets**, **Mobile**, and **CTV**. For more information, see [Device Type Targeting](device-type-targeting-ali.md).
 - **Inventory Type**: Set which inventory types you wish to target. You can select one or all of the following inventory types:
@@ -104,48 +104,48 @@ When you set **Video** as your **Ad Type**, the **Video Targeting** section auto
 
 The **Advanced Targeting** section offers advanced settings and targeting options to ensure your deal reaches the intended audience.
 
-- **Blocklist**: Search and select a blocklist (by default, the Microsoft Advertising blocklist is always applied). Any inventory in the blocklists you apply for is automatically excluded and not bid on by this Deal Line Item. You can select from network/member-level blocklists or [Inventory Lists](inventory-lists-ali-only.md) directly from the Deal Line Item. Once applied, you can also view or export the blocklist.
-- **Allowlist**: Search and select an allowlist you would like to apply to this Deal Line Item. You can select from network/member-level allowlists or [create an allowlist](inventory-targeting-ali.md) directly from the Deal Line Item. Once applied, you can also view or export the allowlist.
+- **Blocklist**: Search and select a blocklist (by default, the Microsoft Advertising blocklist is always applied). Any inventory in the blocklists you apply for is automatically excluded and not bid on by this deal line item. You can select from network/member-level blocklists or [Inventory Lists](inventory-lists-ali-only.md) directly from the deal line item. Once applied, you can also view or export the blocklist.
+- **Allowlist**: Search and select an allowlist you would like to apply to this deal line item. You can select from network/member-level allowlists or [create an allowlist](inventory-targeting-ali.md) directly from the deal line item. Once applied, you can also view or export the allowlist.
    > [!NOTE]
    > The use of Inventory Lists (e.g., allowlists, blocklists) constrains whatever **Inventory Type** selections you make. For example, if you target an allowlist, the **Inventory Type** option you select is limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory Type** option you select serves everything but the domains/apps in that blocklist.
 - **Viewability Threshold**: Select the **Viewability Threshold** checkbox and enter a percentage to sell inventory based on their predicted viewability. <!-- Need to confirm "sell inventory". -->
 - **System targeting**: Target users based on their operating systems, browsers, language, device model, or carrier. For more information, see [System targeting](system-targeting.md).
 - **Demographics**: Target specific segments of the audience based on characteristics such as age and gender. For more information, see [Demography targeting](demography-targeting.md).
 - **Page properties**: Target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. For more information, see [Page properties targeting](page-properties-targeting.md).
-- **Frequency and Recency**: A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and Recency** caps can be set on Deal Line Items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the Frequency and Recency toggle to **Caps on** and enter the appropriate **Frequency** and **Recency** settings. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
+- **Frequency and Recency**: A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and Recency** caps can be set on deal line items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the Frequency and Recency toggle to **Caps on** and enter the appropriate **Frequency** and **Recency** settings. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 - **Ads.txt**: Select this checkbox to only target web inventory authorized in a publisher's ads.txt file.
-- **COPPA**: Select this checkbox to only target COPPA-compliant inventory.
+- **COPPA**: Select this checkbox to only target COPPA-compliant inventory. For more information, see [Set up line item inventory and brand safety](set-up-line-item-inventory-and-brand-safety.md).
 
 #### Budgeting and scheduling
 
 The **Budgeting and Scheduling** section reflects a specific agreement between you and the advertiser.
 
-- **Budget Type**: As most deals are created under a **Flexible Insertion Order**, you can choose either **Revenue** or **Impressions** as the **Budget Type** at the Deal Line Item level.
+- **Budget Type**: As most deals are created under a **Flexible Insertion Order**, you can choose either **Revenue** or **Impressions** as the **Budget Type** at the deal line item level.
 
   > [!NOTE]
   >
-  > - When you create a Deal Line Item, it inherits its budget type from the parent insertion order, and this impacts the revenue types available on the Deal Line Item. For example, if the budget type of an insertion order is **Impressions**, the child Deal Line Item can only set up budgets using impressions.
-  > - If you can't view the options at the Deal Line Item level, it's due to a specific **Budget Type** set in the parent insertion order.<!-- Need to confirm "specific". -->
-- **Budget**: Set the Deal Line Item's **Budget**. Select **Unlimited Budget**, **Lifetime Budget**, or **Daily Budget**. The unit of the budget is determined by the **Budget Type**.
+  > - When you create a deal line item, it inherits its budget type from the parent insertion order, and this impacts the revenue types available on the deal line item. For example, if the budget type of an insertion order is **Impressions**, the child deal line item can only set up budgets using impressions.
+  > - If you can't view the options at the deal line item level, it's due to a specific **Budget Type** set in the parent insertion order.
+- **Budget**: Set the deal line item's **Budget**. Select **Unlimited Budget**, **Lifetime Budget**, or **Daily Budget**. The unit of the budget is determined by the **Budget Type**.
 
   > [!NOTE]
-  > Budget settings are acting only as a cap as Deal Line Items are not pacing.<!-- Need to confirm this note. -->
+  > Budget settings act only as a cap, as deal line items aren't pacing.
 
   - If you select **Lifetime Budget**, then select one of the following:
-    - **Set Lifetime**: Enter a lifetime budget for the Deal Line Item. This will be the total budget available to the Deal Line Item for all its flight dates. The Deal Line Item will keep sending requests to the buyer until the budget runs out.
-    - **Set Per Flight**: When selected, a **Budget** field displays each of the Deal Line Item's flight dates in the **Flights** section. Use the **Flights** field to set the budget for the flight dates.
+    - **Set Lifetime**: Enter a lifetime budget for the deal line item. This will be the total budget available to the deal line item for all its flight dates. The deal line item will keep sending requests to the buyer until the budget runs out.
+    - **Set Per Flight**: When selected, a **Budget** field displays each of the deal line item's flight dates in the **Flights** section. Use the **Flights** field to set the budget for the flight dates.
   - If you select **Daily Budget**, enter the maximum daily budget to use.
 - **Flights**: Flights permits you to create limited deals with start and end dates, and “evergreen deals” with no end date. To create one or more flights:
 
   1. Select either **Set Dates** or **No End Date**. If the **Lifetime Budget** is set, then the **No End Date** option isn't available for selection.
 
-     - **Set Dates**: Enter a **Start Date** and **End Date** for each of the Deal Line Item's flights. The hour settings for **Start Date** and **End Date** defaults to **12:00 AM** and **11:59 PM**, respectively (you can override the defaults). Flights might not overlap with one another. All flight dates must fall within the billing period dates of the parent insertion order and be a minimum of one day in duration. In addition, if you selected **Lifetime Budget \>  Set Per Flight** in the **Budget** section, you must enter a value for the **Budget** of each flight.
-     - **No End Date**: Enter the **Start Date** for the Deal Line Item. You might not create additional flights for this Deal Line Item because it has no end date.
+     - **Set Dates**: Enter a **Start Date** and **End Date** for each of the deal line item's flights. The hour settings for **Start Date** and **End Date** defaults to **12:00 AM** and **11:59 PM**, respectively (you can override the defaults). Flights might not overlap with one another. All flight dates must fall within the billing period dates of the parent insertion order and be a minimum of one day in duration. In addition, if you selected **Lifetime Budget \>  Set Per Flight** in the **Budget** section, you must enter a value for the **Budget** of each flight.
+     - **No End Date**: Enter the **Start Date** for the deal line item. You might not create additional flights for this deal line item because it has no end date.
   1. Select **Add Another Flight** if you want additional flights. This option is not available if you select **No End Date**.
 
     > [!NOTE]
     >
-    > You cannot change the **Start Date** or the **End Date** of a flight once that date has passed. You can add multiple flights to any Deal Line Item.
+    > You cannot change the **Start Date** or the **End Date** of a flight once that date has passed. You can add multiple flights to any deal line item.
   
 - **Daypart Targeting**: Target users based on the day and time when they see impressions. For more information, see [Daypart targeting](daypart-targeting.md).
 
@@ -173,11 +173,11 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
 
 #### Reporting labels and comments
 
-In the **Reporting Labels and Comments** section, you can optionally assign custom reporting labels (**Trafficker**, **Sales Rep**, **Line Item Type**, and **OMS ID**) to a Deal Line Item. You can also add comments to a Deal Line Item for your reference. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. For more information, see [Reporting Guide](reporting-guide.md).
+In the **Reporting Labels and Comments** section, you can optionally assign custom reporting labels (**Trafficker**, **Sales Rep**, **Line Item Type**, and **OMS ID**) to a deal line item. You can also add comments to a deal line item for your reference. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. For more information, see [Reporting Guide](reporting-guide.md).
 
 #### Associated objects
 
-The **Associated Objects** section defines objects and entities that are associated with the Deal Line Item.
+The **Associated Objects** section defines objects and entities that are associated with the deal line item.
 
 - **Line Item Name**: Enter the name for the line item (this name isn't visible to buyers). If this field is empty, the Line Item will be automatically named the same as the Deal.
 - **Advertiser Summary**: Review your preselected advertiser details and make changes if needed. However, once the deal is created and saved, you cannot change the advertiser.
@@ -190,20 +190,49 @@ The **Deal Summary** pane offers a detailed overview of the deal, dynamically po
 > [!NOTE]
 > By default, the **Deal Summary** pane displays the required fields that must be configured.
 
-### Save the Deal Line Item
+### Save the deal line item
 
-Select **Save** to save the Deal Line Item, or **Save and Duplicate** if you wish to duplicate this Deal Line Item.
+Select **Save** to save the deal line item, or **Save and Duplicate** if you wish to duplicate this deal line item.
 
 > [!NOTE]
-> Using **Save and Duplicate** is the preferred method for duplicating Deal Line Items.
+> Using **Save and Duplicate** is the preferred method for duplicating deal line items.
 
-## Create a Deal Line Item from template
+## Create a deal line item from template
 
-You can also create a new deal by selecting the **Create from Template** option under **Creation Mode**.
+This feature enables publishers to create a new deal line item using an existing one as a template. The following sections outlines the three ways to accomplish this task.
+
+### Use the pre-selection screen
+
+You can create a new deal from the pre-selection screen by selecting the **Create from Template** option under **Creation Mode**.
 
 1. Go to **Advertisers > Line Items**.
 1. On the **Line Items** screen, select **Deal Line Item** from the **+ New** drop-down menu.
 1. On the **Create New Deal** screen, select the **Create from Template** option under **Creation Mode**.
 1. Use the **Deal Template Selection** field to search and select a deal template using either a Line Item ID or name.
 1. Review the summary of settings and select **Select This Template**. This action applies all the template settings to your deal settings.
-1. Review the settings and summary of your deal, and then select **Save** to save the Deal Line Item. Alternatively, select **Save and Duplicate** if you wish to duplicate this Deal Line Item.
+1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
+
+### Use the monitoring grid view
+
+1. Search for the deal line item you wish to use as a template.
+1. Hover over the deal line item name, and two icons will appear. Select the **Use as Template** icon.
+1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
+
+### Use the monitoring settings pane
+
+1. Search for the deal line item you wish to use as template.
+1. Click on the deal line item name to expand the **Settings** pane.
+1. Select the **Use as Template** option located at the upper-right corner of the page.
+1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
+
+> [!NOTE]
+>
+> - When you create a new deal line item from a template using any of the three ways, it will automatically be placed under the same advertiser and insertion order of the original deal line item. If you're using multiple advertiser and insertion orders and need to update them, you can make the changes directly in the creation form from the **Associated Objects** section in the **Advanced Settings**.
+>
+> - If you want to create multiple deals from a template, use the **Save and Duplicate** option after you've created the first deal line item. This feature creates a deal line item and opens a new form pre-populated with the same settings.
+
+## Related topics
+
+- [Create a deal line item](create-a-deal-line-item.md)
+- [Set up multi-buyer deals](set-up-multi-buyer-deals.md)
+- [Understanding multi-buyer deals](understanding-multi-buyer-deals.md)

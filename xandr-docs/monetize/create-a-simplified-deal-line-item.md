@@ -45,7 +45,7 @@ In the **Basic Settings** section, enter the following details for the deal line
 
 #### Deal details
 
-The **Deal details** section offers a detailed overview of the key components that define your deal.
+The **Deal Details** section offers a detailed overview of the key components that define your deal.
 
 - **Buyer**: Select a buyer for the deal by clicking on the **Edit (pencil icon)** option under **Buyer**. From the **Buyer** screen, choose an available buyer by searching their name or ID.
 
@@ -98,7 +98,7 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 When you set **Video** as your **Ad Type**, the **Video Targeting** section automatically appears as the first section in **Advanced Settings**.
 
 - **Video Player Targeting**: Target video inventory based on the position, playback method, player width, video framework, and creative duration. For more information, see [Video Player Targeting](video-player-targeting.md).
-- **Completion Rate Threshold**: Select the **Completion Rate Threshold** checkbox and enter a percentage to sell inventory based on their predicted video completion. <!-- Need to confirm "sell inventory". -->
+- **Completion Rate Threshold**: Select the **Completion Rate Threshold** checkbox and enter a percentage to sell inventory based on their predicted video completion.
 
 #### Advanced targeting
 
@@ -108,11 +108,11 @@ The **Advanced Targeting** section offers advanced settings and targeting option
 - **Allowlist**: Search and select an allowlist you would like to apply to this deal line item. You can select from network/member-level allowlists or [create an allowlist](inventory-targeting-ali.md) directly from the deal line item. Once applied, you can also view or export the allowlist.
    > [!NOTE]
    > The use of Inventory Lists (e.g., allowlists, blocklists) constrains whatever **Inventory Type** selections you make. For example, if you target an allowlist, the **Inventory Type** option you select is limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory Type** option you select serves everything but the domains/apps in that blocklist.
-- **Viewability Threshold**: Select the **Viewability Threshold** checkbox and enter a percentage to sell inventory based on their predicted viewability. <!-- Need to confirm "sell inventory". -->
+- **Viewability Threshold**: Select the **Viewability Threshold** checkbox and enter a percentage to sell inventory based on their predicted viewability.
 - **System targeting**: Target users based on their operating systems, browsers, language, device model, or carrier. For more information, see [System targeting](system-targeting.md).
 - **Demographics**: Target specific segments of the audience based on characteristics such as age and gender. For more information, see [Demography targeting](demography-targeting.md).
 - **Page properties**: Target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. For more information, see [Page properties targeting](page-properties-targeting.md).
-- **Frequency and Recency**: A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and Recency** caps can be set on deal line items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the Frequency and Recency toggle to **Caps on** and enter the appropriate **Frequency** and **Recency** settings. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
+- **Frequency and Recency**: A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and Recency** caps can be set on deal line items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the **Frequency and Recency** toggle to **Caps on** and enter the appropriate **Frequency** and **Recency** settings. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 - **Ads.txt**: Select this checkbox to only target web inventory authorized in a publisher's ads.txt file.
 - **COPPA**: Select this checkbox to only target COPPA-compliant inventory. For more information, see [Set up line item inventory and brand safety](set-up-line-item-inventory-and-brand-safety.md).
 
@@ -162,13 +162,13 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
   - **Language**
     - **Language** tab: Only selected languages will be allowed to serve; any languages not selected will not be allowed. If no languages are selected, all languages that follow ad quality rules are allowed.
     - **Ad Quality Settings** tab: Select the languages in which you want to override ad quality settings. When you select **Ignore**, the language will be allowed on the deal despite ad quality settings. All languages defaults to **Follow**, so they comply with ad quality settings.
-  - **Creative Category**
+  - **Media Type**: Select the media types you want to include on the deal.
+    > [!NOTE]
+    > **Ad Type** selections automatically sync and pre-populate the **Media Type** selection of deal impressions.
+  - - **Creative Category**
     - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative categories are selected, all creative categories that follow ad quality rules are allowed.
     - **Ad Quality Settings** tab: Select the creative categories in which you want to override ad quality settings. When you select **Ignore**, the creative category will be allowed on the deal despite ad quality settings. All creative categories defaults to **Follow**, so they comply with ad quality settings.
   - **Specific Creatives**: Include specific creatives to either **Approve** (always allow) or **Block** (always block) the deal.
-  - **Media Type**: Select the media types you want to include on the deal.
-    > [!NOTE]
-    > **Ad Type** selections automatically sync with the **Media Type** of deal impressions.
   - **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select **Ignore**, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes defaults to **Follow**, so they comply with ad quality settings.
 
 #### Reporting labels and comments
@@ -180,8 +180,8 @@ In the **Reporting Labels and Comments** section, you can optionally assign cust
 The **Associated Objects** section defines objects and entities that are associated with the deal line item.
 
 - **Line Item Name**: Enter the name for the line item (this name isn't visible to buyers). If this field is empty, the Line Item will be automatically named the same as the Deal.
-- **Advertiser Summary**: Review your preselected advertiser details and make changes if needed. However, once the deal is created and saved, you cannot change the advertiser.
-- **Insertion Order Summary**: Review your preselected insertion order details and make changes if needed, even after creating and saving the deal.
+- **Advertiser Summary**: Review your pre-selected advertiser details and make changes if needed. However, once the deal is created and saved, you cannot change the advertiser.
+- **Insertion Order Summary**: Review your pre-selected insertion order details and make changes if needed, even after creating and saving the deal.
 
 ### Deal summary
 
@@ -197,13 +197,13 @@ Select **Save** to save the deal line item, or **Save and Duplicate** if you wis
 > [!NOTE]
 > Using **Save and Duplicate** is the preferred method for duplicating deal line items.
 
-## Create a deal line item from template
+## Create a deal line item from a template
 
 This feature enables publishers to create a new deal line item using an existing one as a template. The following sections outlines the three ways to accomplish this task.
 
 ### Use the pre-selection screen
 
-You can create a new deal from the pre-selection screen by selecting the **Create from Template** option under **Creation Mode**.
+You can create a new deal line item from the pre-selection screen by selecting the **Create from Template** option under **Creation Mode**.
 
 1. Go to **Advertisers > Line Items**.
 1. On the **Line Items** screen, select **Deal Line Item** from the **+ New** drop-down menu.
@@ -215,13 +215,13 @@ You can create a new deal from the pre-selection screen by selecting the **Creat
 ### Use the monitoring grid view
 
 1. Search for the deal line item you wish to use as a template.
-1. Hover over the deal line item name, and two icons will appear. Select the **Use as Template** icon.
+1. In the **Line Name** column, hover over the deal line item, and two icons will appear. Select the **Use as Template** icon.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
 
 ### Use the monitoring settings pane
 
 1. Search for the deal line item you wish to use as template.
-1. Click on the deal line item name to expand the **Settings** pane.
+1. In the **Line Name** column, click on the deal line item to expand the **Settings** pane.
 1. Select the **Use as Template** option located at the upper-right corner of the page.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
 

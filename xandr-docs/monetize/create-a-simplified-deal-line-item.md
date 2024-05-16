@@ -27,7 +27,7 @@ You can create a new deal line item from the **Line Items** screen.
 
 1. Go to **Advertisers > Line Items**.
 1. On the **Line Items** screen, select **Deal Line Item** from the **+ New** drop-down menu.
-1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from a template, see [Create a deal line item from template](#create-a-deal-line-item-from-template).
+1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from a template, see [Create a deal line item from a template](#create-a-deal-line-item-from-a-template).
 1. Search (by name or ID) and select the desired advertiser and insertion order for the respective **Advertiser** and **Insertion Order** fields.
 
     > [!TIP]
@@ -40,7 +40,7 @@ You can create a new deal line item from the **Line Items** screen.
 In the **Basic Settings** section, enter the following details for the deal line item:
 
 - **Deal Name**: Enter a deal name. This deal name is transparent to the buyer.
-- **Deal Code**: Enter the deal code. Optional, typically used by external sellers for deal mapping.
+- **Deal Code**: Optional, enter the deal code to report on a deal using your own code. The code might contain alphanumeric characters, periods, underscores, or dashes. The code you enter must be unique, and it is not case-sensitive (uppercase and lowercase characters are treated the same). No two line items can use the same code per advertiser. This feature is typically used by external sellers for deal mapping.
 - **Deal Description**: Enter a description for your deal. This description is transparent to buyers.
 
 #### Deal details
@@ -165,7 +165,7 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
   - **Media Type**: Select the media types you want to include on the deal.
     > [!NOTE]
     > **Ad Type** selections automatically sync and pre-populate the **Media Type** selection of deal impressions.
-  - - **Creative Category**
+  - **Creative Category**
     - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative categories are selected, all creative categories that follow ad quality rules are allowed.
     - **Ad Quality Settings** tab: Select the creative categories in which you want to override ad quality settings. When you select **Ignore**, the creative category will be allowed on the deal despite ad quality settings. All creative categories defaults to **Follow**, so they comply with ad quality settings.
   - **Specific Creatives**: Include specific creatives to either **Approve** (always allow) or **Block** (always block) the deal.
@@ -179,7 +179,7 @@ In the **Reporting Labels and Comments** section, you can optionally assign cust
 
 The **Associated Objects** section defines objects and entities that are associated with the deal line item.
 
-- **Line Item Name**: Enter the name for the line item (this name isn't visible to buyers). If this field is empty, the Line Item will be automatically named the same as the Deal.
+- **Line Item Name**: Enter the name for the line item (this name isn't visible to buyers). If this field is empty, the line item will be automatically named the same as the deal.
 - **Advertiser Summary**: Review your pre-selected advertiser details and make changes if needed. However, once the deal is created and saved, you cannot change the advertiser.
 - **Insertion Order Summary**: Review your pre-selected insertion order details and make changes if needed, even after creating and saving the deal.
 
@@ -199,7 +199,7 @@ Select **Save** to save the deal line item, or **Save and Duplicate** if you wis
 
 ## Create a deal line item from a template
 
-This feature enables publishers to create a new deal line item using an existing one as a template. The following sections outlines the three ways to accomplish this task.
+This feature enables publishers to create a new deal line item using an existing deal as a template. The following sections outlines the three ways to accomplish this task.
 
 ### Use the pre-selection screen
 
@@ -220,7 +220,7 @@ You can create a new deal line item from the pre-selection screen by selecting t
 
 ### Use the monitoring settings pane
 
-1. Search for the deal line item you wish to use as template.
+1. Search for the deal line item you wish to use as a template.
 1. In the **Line Name** column, click on the deal line item to expand the **Settings** pane.
 1. Select the **Use as Template** option located at the upper-right corner of the page.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.

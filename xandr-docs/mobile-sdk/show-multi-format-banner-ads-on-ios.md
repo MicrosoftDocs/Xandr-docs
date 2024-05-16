@@ -1,6 +1,6 @@
 ---
 title: Banner Video / OutStream Ads on iOS
-description: The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. This page talks about constraints in doing so. Also learn steps to enable a mix of VAST video and HTML banner Ads.  
+description: The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. This page talks about constraints in doing so. Also, learn steps to enable a mix of VAST video and HTML banner Ads.  
 ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---

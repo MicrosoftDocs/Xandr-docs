@@ -1,6 +1,6 @@
 ---
 title: Show Instream Video Ads on Android
-description: This page describes how to use the SDK to fetch and display instream video ads in Android.
+description: On this page learn how to use the SDK to fetch and display instream video ads in Android.
 ms.custom: android-sdk
 ms.date: 10/28/2023
 ---

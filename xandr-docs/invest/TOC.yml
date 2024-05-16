@@ -470,7 +470,7 @@
       href: buying-triton-audio-inventory.md
   - name: Microsoft Inventory
     items:
-    - name: Buying Microsoft Inventory
+    - name: Overview
       href: buying-microsoft-inventory.md
     - name: Buying MSN Inventory
       href: buying-msn-inventory.md
@@ -484,8 +484,6 @@
       href: buying-microsoft-video-inventory.md
     - name: Buying Microsoft Windows App Inventory
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
-    - name: Programmatic Buying on Xbox for Marketers
-      href: programmatic-buying-on-xbox-for-marketers.md
   - name: Native Inventory
     items:
     - name: Buying Native Inventory

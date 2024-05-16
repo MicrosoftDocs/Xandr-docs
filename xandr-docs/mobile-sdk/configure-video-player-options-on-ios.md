@@ -7,10 +7,10 @@ ms.date : 10/28/2023
 
 # Customize video player options on iOS
 
-`ANVideoPlayerSettings` class allows publisher app to customize some of the Ad Video Player UI/Controls.
+`ANVideoPlayerSettings` class lets the publisher app to customize some of the Ad Video Player UI/Controls.
 
 > [!NOTE]
-> The customization is applied to all of the Video ads served through Xandr SDK both Instream and Banner Video (Outstream).
+> The customization is applied to all the Video ads served through Xandr SDK both Instream and Banner Video (Outstream).
 
 | Property | Default Setting | Description |
 |---|---|---|

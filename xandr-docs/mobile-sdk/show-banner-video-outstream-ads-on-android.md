@@ -1,6 +1,6 @@
 ---
 title: Show Banner Video / OutStream Ads on Android
-description: This page explains steps by which Xandr mobile SDK supports serving multiple creative formats through a single banner entry point. 
+description: This page explains the steps by which Xandr mobile SDK supports serving multiple creative formats through a single banner entry point. 
 ms.custom: android-sdk
 ms.date: 10/28/2023
 ---

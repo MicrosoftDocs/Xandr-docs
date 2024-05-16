@@ -55,7 +55,17 @@ An AppNexus disableIDFVUsage  is a boolean value which exclude the IDFV field in
 
 Xandr supports User ID(s) from the below external sources:
 
+- NetID
+- Utiq
+- ID5
 - Criteo
+- Unified ID 1.0 Trade Desk ID
+- Hydron ID (Audigent)
+- Publink (Epsilon)
+- SharedID
+- EUID
+- Yahoo Connect ID
+- Panorama ID
 - The Trade Desk
 - NetID
 - LiveRamp  
@@ -67,7 +77,7 @@ You can set **User ID** by
 - creating an array of **ANUserId** objects, and
 - assigning the array of objects to the **`userIdArray`** property
   of `ANSDKSettings` in Mobile SDK API.
- 
+
 | Property     | Type    | Attribute | Description                                                             |
 |-------------|---------|-----------|-------------------------------------------------------------------------|
 | `userIdArray` | `NSArray` | readwrite | Specifies a dictionary containing objects that hold User ID parameters. |

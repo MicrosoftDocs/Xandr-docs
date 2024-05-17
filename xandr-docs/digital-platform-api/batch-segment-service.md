@@ -393,7 +393,7 @@ When you request the status of your processing job, the system returns a `batch_
 | `validated_time` | date | The time at which file validation was completed. |
 
 > [!NOTE]
-> Targeting uploaded IDs will also encompass related IDs linked to the same user. Consequently, you may encounter IDs that were not uploaded in LLD. In such instances, the ID is associated with the same user as the uploaded ID through a related device ID.
+> Targeting may, in some cases, encompass related IDs linked to the same user. In such instances, the identifier(s) in exposure logs represent the same user as the uploaded ID.
 
 ## Related topic
 

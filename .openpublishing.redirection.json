@@ -1,0 +1,14 @@
+{
+    "redirections": [
+        {
+            "source_path": "xandr-docs/invest/programmatic-buying-on-xbox-for-marketers.md",
+            "redirect_url": "xandr-docs/invest/buying-microsoft-inventory.md",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/programmatic-buying-on-xbox-for-marketers.md",
+            "redirect_url": "xandr-docs/monetize/buying-microsoft-inventory.md",
+            "redirect_document_id": false
+        }
+    ]
+}

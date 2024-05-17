@@ -1,10 +1,11 @@
 ---
-title: Microsoft Monetize - Programmatic Buying on Xbox for Marketers
-description: In this article, learn the creative requirements, best practices, and recommendations for banner design in an Xbox environment.
+title: Microsoft Invest - Programmatic Buying on Xbox for Marketers
+description: In this article, understand the advantages of the Xbox programmatic and learn the creative requirements, best practices, and recommendations for banner design in an Xbox environment.
 ms.date: 10/28/2023
+author: rupambaruah-xandr
 ---
 
-# Microsoft Monetize - Programmatic buying on Xbox for marketers
+# Microsoft Invest - Programmatic buying on Xbox for marketers
 
 ## Introduction
 
@@ -36,7 +37,7 @@ All creative is subject to final approval by Xbox prior to going live.
 - VAST 2.0 ONLY
 - Recommended Duration: 15 sec – 1 min (Creatives of up to 3 min can be accommodated upon request)
 - Bitrate: 10-12 Mbps
-- File Type: H.264 mpeg-dash or ProRes(*.MP4 or .MOV*)
+- File Type: H.264 mpeg-dash or ProRes (.MP4 or .MOV)
 - Frame Size: 1920x1080
 - Frame Rate: 29.97
 - Audio Spec: AAC, 48000Hz, Stereo, Audio
@@ -59,21 +60,21 @@ To keep Banner design clean and simple:
 
 - Avoid small condensed copy - Readers will view from 6’-10’ away, so keeping visual elements minimal is key.
 
-    :::image type="content" source="media/xbox-bestpractices-a.png" alt-text="Screenshots of recommended and not recommended visual elements in banner design.":::
+    :::image type="content" source="media/xbox-bestpractices-a.png" alt-text="Screenshots of recommended and not recommended visual elements in the banner design.":::
 
 - Do not create a “button” within a selectable ad unit since all tiles have an active system-generated “focus” state.
 
 - Do not use CTAs that reference direct interaction with the placement (“press A” etc.).
 
-    :::image type="content" source="media/xbox-bestpractices-b.png" alt-text="Screenshots of correct and incorrect CTAs that ask for direct interaction with the banner by pressing a key.":::
+  :::image type="content" source="media/xbox-bestpractices-b.png" alt-text="Screenshots of correct and incorrect CTAs that ask for direct interaction with the banner by pressing a button.":::
 
 - Do not use CTAs that reference direct interaction with the placement (“Click Here”, “Click Now!” etc.).
 
-    :::image type="content" source="media/xbox-bestpractices-c.png" alt-text="Screenshots of correct and incorrect CTAs that ask for direct interaction with the banner by clicking on it.":::
+  :::image type="content" source="media/xbox-bestpractices-c.png" alt-text="Screenshots of correct and incorrect CTAs that ask for direct interaction with the banner by clicking a button.":::
 
 - Do not mimic system tiles on the dash (i.e. Xbox green tiles with iconography similar to those that are on the Xbox One dash).
 
-    :::image type="content" source="media/xbox-bestpractices-d.png" alt-text="Screenshots of correct and incorrect use of iconography in banner design.":::
+  :::image type="content" source="media/xbox-bestpractices-d.png" alt-text="Screenshots of correct and incorrect use of iconography in the banner design.":::
 
 ## Designing for the Xbox environment
 
@@ -81,7 +82,7 @@ To keep Banner design clean and simple:
 
 Banners with CTAs typically drive better engagement with users. Following are some examples of CTAs that are concise but powerful.
 
-:::image type="content" source="media/banner-recommendations.png" alt-text="Screenshots with examples of powerful CTAs in banners.":::
+:::image type="content" source="media/banner-recommendations.png" alt-text="Screenshots with examples of strong CTAs in banners.":::
 
 ### Design requirements to keep in mind
 
@@ -92,5 +93,5 @@ Banners with CTAs typically drive better engagement with users. Following are so
 - Maximum White - RGB 234, 235, 235 or Hex#ebebeb
 - Maximum Black - RGB 15, 15, 15 or Hex#0f0f0f
 - No use of buttons or button-like imagery, including calls to action such as “Click here” or click indicator arrows.
-- Banners should not feature any Xbox consoles unless having received explicit permissions from MS advertising to use those images on-console.
-- Banners cannot feature any competitor products, including other gaming consoles, phone, tablet or other devices, or other MS products.
+- Banners should not feature any Xbox consoles unless having received explicit permissions from MS advertising to use those images  on-console.
+- Banners cannot feature any competitor products, including other gaming consoles, phone, tablet, other devices, or other MS products.

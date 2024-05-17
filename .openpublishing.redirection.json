@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "xandr-docs/invest/programmatic-buying-on-xbox-for-marketers.md",
-            "redirect_url": "xandr-docs/invest/index.yml",
+            "redirect_url": "xandr-docs/invest/buying-microsoft-inventory.md",
             "redirect_document_id": true
         },
     ]

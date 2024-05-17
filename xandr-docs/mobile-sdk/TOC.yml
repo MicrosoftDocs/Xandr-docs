@@ -4,13 +4,11 @@
   items:
     - name: Overview
       href: xandr-mobile-sdks.md
+    - name: Impression Counting Methods
+      href: impression-counting-methods.md
     #- name: The Mobile SDK App
       #href: xandr-sdk-app.md
-    - name: Impression Counting Methods
-      items:
-        - name: Impression Counting Methods
-          href: impression-counting-methods.md
-        
+            
 - name : iOS SDK
   items:
     - name: Overview

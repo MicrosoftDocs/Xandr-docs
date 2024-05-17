@@ -2,6 +2,7 @@
 title: Microsoft Invest - Programmatic Buying on Xbox for Marketers
 description: In this article, understand the advantages of the Xbox programmatic and learn the creative requirements, best practices, and recommendations for banner design in an Xbox environment.
 ms.date: 10/28/2023
+author: rupambaruah-xandr
 ---
 
 # Microsoft Invest - Programmatic buying on Xbox for marketers

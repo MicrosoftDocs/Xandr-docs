@@ -138,7 +138,7 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
 
 - **Why do I see some IDs in LLD that were not uploaded via BSS?**
 
-   Targeting uploaded IDs will also include related IDs linked to the same user. Consequently, you may encounter IDs that were not uploaded in LLD. In such cases, the ID is associated with the same user as the uploaded ID through a related device ID.
+   Targeting uploaded IDs will also target related IDs linked to the same user. As a result, you may see IDs that were not uploaded in LLD. When this occurs, the ID was linked to the same user as the uploaded ID via a related device ID.
 
 ## Related topics
 

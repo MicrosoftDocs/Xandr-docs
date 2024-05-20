@@ -117,7 +117,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
   | Key Name | Data type | Description |
   |--|--|--|
   | `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN" |
-  | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  |
+  | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  
 
 ## Digital Services Act (DSA)
 

@@ -10,6 +10,32 @@ ms.date: 10/28/2023
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 8.11.4
+ 
+### Improvement/Bug Fixes
+- 7295371: Privacy Manifest update and fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
+
+## 8.11.3
+ 
+### Improvement/Bug Fixes
+- 7295362: Privacy Manifest update
+
+
+## 8.11.2
+ 
+### Improvement/Bug Fixes
+- 7112599: Fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
+
+## 8.11.1
+
+### Improvement/Bug Fixes
+- 5663009: Added support for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift). 
+
+### Mediation partner updates
+- 7151757: Upgrade of the Facebook Audience Network to version 6.15.0.
+- 7151765: Upgraded Google AdMob SDK from 10.10.0 to 11.2.0.
+
+
 ## 8.11.0
 
 ### Announcement

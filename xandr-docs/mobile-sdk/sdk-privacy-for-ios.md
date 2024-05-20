@@ -117,7 +117,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
   | Key Name | Data type | Description |
   |--|--|--|
   | `IABGPP_HDR_GppString` | string | Full consent string in its encoded form. e.g "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN" |
-  | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  |
+  | `IABGPP_GppSID` | string | Section ID(s) considered to be in force. Multiple IDs are separated by underscore, e.g. “2_3” |  
 
 ## Digital Services Act (DSA)
 
@@ -332,3 +332,7 @@ let videoAdDSAResponseInfo? : String = (self.videoAd.?.adResponseInfo?.dsaRespon
 // For nativeAd once didReceiveResponse is callback
 let nativeAdDSAResponseInfo : String = (self.nativeAdResponse.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from nativeAd
 ```
+
+## Apple privacy manifest
+
+Apple privacy manifest describe the data your app or third-party SDK collects. Starting with SDK version 8.11.4, we have added support for the Apple Privacy Manifest file requirement for third-party SDKs. To automatically receive the Privacy Manifest file, publishers' apps must use SDK version 8.11.4 or higher. For more information, see [Apple privacy manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift)

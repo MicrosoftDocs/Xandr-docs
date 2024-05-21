@@ -50,6 +50,11 @@ Viewability measurement on the following native inventory is supported:
 
 The Microsoft Advertising viewability script is currently enabled for all banner, native, and video creatives. For more information about how viewability works for video, see [Video Viewability](video-viewability.md).
 
+### How do we measure viewability for native video creatives?
+
+Native is considered as a display object. The video object for a native video is included in the native object.
+Therefore, we will measure Native video viewability as display object.
+
 ### Why would some supported inventory not be measurable?
 
 The possible causes could be:

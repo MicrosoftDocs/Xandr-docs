@@ -43,3 +43,6 @@ Features include:
   Alternately, you could implement [Passive Segment Upload Using AWS S3](passive-segment-upload-using-aws-s3.md). The preferred format is Avro.
 
 - Step 4: Check the status of your file and correct any errors shown in the error logs. You can also see exactly how many valid user IDs you added to each segment in the segment logs.
+
+> [!NOTE]
+> Targeting may, in some cases, encompass related IDs linked to the same user. In such instances, the identifier(s) in exposure logs represent the same user as the uploaded ID.

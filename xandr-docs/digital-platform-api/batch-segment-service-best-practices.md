@@ -136,6 +136,10 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
 
     Sure! Submit a case through our [Customer Support Portal](http://help.xandr.com/). Note that while the job status reports are kept with 30 days of jobs history, we only save the actual file of data for 3 days. Please be sure to submit your case as soon as possible after uploading so that we can look at the data you uploaded.
 
+- **Why do I see some IDs in LLD that were not uploaded via BSS?**
+
+   Targeting uploaded IDs will also target related IDs linked to the same user. As a result, you may see IDs that were not uploaded in LLD. When this occurs, the ID was linked to the same user as the uploaded ID via a related device ID.
+
 ## Related topics
 
 - [Batch Server-Side Segmentation](batch-server-side-segmentation.md)

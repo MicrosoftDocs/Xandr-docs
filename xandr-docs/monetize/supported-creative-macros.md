@@ -20,6 +20,7 @@ The following macros can be used for all impressions:
 | `${CLICK_URL}` | The click tracking URL. For example: `https://xandr.com` |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example: `https%3A%2F%2Fxandr.com` |
 
+
 The following macros can be used in creative third-party tags and landing page URLs:
 
 | Macro | Description |
@@ -50,6 +51,7 @@ The following macros can be used in creative third-party tags and landing page U
 | `${DATACENTER}` | The data center ID (1 = NYM, 2 = LAX, 3 = AMS, 4 = FRA, 5 = SIN). |
 | `${DEAL_ID}` | The Microsoft Advertising Deal ID associated with the winning bid if applicable. If there is no deal, this macro will return `0`. |
 | `${ECP}` | The publisher-side estimated clear price (ECP) for the auction. |
+| `${EXTENDED_IDS}` | The Universal ID values passed by the seller, which the buyer has permission to view.|
 | `${GENDER}` | The gender of the user if available. Possible values include:<br> - `f` (female)<br> - `m` (male)<br> - `u` (unknown) |
 | `${INV_SOURCE_ID}` | **Deprecated** |
 | `${IO_CODE}` | The insertion order code of the served impression. |

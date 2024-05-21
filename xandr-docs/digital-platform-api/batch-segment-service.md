@@ -392,6 +392,9 @@ When you request the status of your processing job, the system returns a `batch_
 | `uploaded_time` | date | The time at which the file associated with this job ID was uploaded. |
 | `validated_time` | date | The time at which file validation was completed. |
 
+> [!NOTE]
+> Targeting may, in some cases, encompass related IDs linked to the same user. In such instances, the identifier(s) in exposure logs represent the same user as the uploaded ID.
+
 ## Related topic
 
 [Batch Segment Service - File Format](legacy-bss-file-format.md)

@@ -52,7 +52,7 @@ The Microsoft Advertising viewability script is currently enabled for all banner
 
 ### How do we measure viewability for native video creatives?
 
-Native is considered a display object. The video object for a native video is included in the native object. Therefore, we will measure native video viewability as a display object.
+Native is considered a display object. The video object for a native video creative is included in the native object. Therefore, we will measure native video viewability as a display object.
 
 ### Why would some supported inventory not be measurable?
 

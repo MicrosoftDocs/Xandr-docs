@@ -52,7 +52,7 @@ The Microsoft Advertising viewability script is currently enabled for all banner
 
 ### How do we measure viewability for native video creatives?
 
-Native ads are considered display objects, with the video object (e.g., a VAST XML video asset) embedded within the native object. Therefore, we measure the viewability of native video creatives by applying the viewability measurement standard for display ads: 50% of the creative's area needs to be in view for **one** continuous second.
+Native ads are considered display objects, with the video object (e.g., a VAST XML video asset) embedded within the native object. Therefore, we measure the viewability of native video creatives by applying the viewability measurement standard for display ads: 50% of the creative's area needs to be in view for one continuous second.
 
 ### Why would some supported inventory not be measurable?
 

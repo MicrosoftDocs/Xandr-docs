@@ -32,7 +32,7 @@ The following table outlines reasons why a creative may be rejected from serving
 
 | Failure Reason | Description | Recommendations |
 |--|--|--|
-<!--| Political creative does not contain clear “paid for by” disclaimer | US political creatives without “paid for” disclaimer | Update the creative and add the “paid for” disclaimer |-->
+
 | Creative brand does not match creative landing page | The brand that the creative displays and the brand of the landing page are not the same or related | It is recommended to use the creative Brand website as a landing page. |
 | Declared tag size does not match creative’s actual dimensions | Incorrect creative tag size. The size in Microsoft Advertising UI does not match the actual size of the creative. | - Check if the declared size in the UI matches your creative size. If not, please update the declared size to make it match with your creative size.<br> - In case of a high impact or expandable creative: It is recommended to upload and create the creative as a standard banner with 1x1 (or 1x2) size. This way, we won’t look at the primary size and will focus on the expandable creative size. |
 | Creative/Landing Page prompts download | Creative or landing page prompts user to download a file | Creative that contains content that depicts, contains, or provides access to any files that execute or download without intentional user interaction are prohibited. Policy here: |

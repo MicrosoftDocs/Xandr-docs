@@ -18,7 +18,7 @@ Our reporting is based on the IAB standard definition: 50% of the area of the cr
 
 Adserver clients can now use the Engagement Metrics report to access a wide variety of metrics. We are focused on making the most actionable viewability data widely and easily available.
 
-### Microsoft Advertising Viewability Script Functionality
+### Microsoft Advertising Viewability Script functionality
 
 The following questions address the Microsoft Advertising viewability script, how it works, what it measures, and its limitations.
 

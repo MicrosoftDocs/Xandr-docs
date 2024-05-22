@@ -95,7 +95,7 @@ To contest the audit status of a site, contact us via the [Customer Support form
 
 These are qualities of a site or page that advertisers may wish to exclude from an order. They are loosely based on similarly named IASH categories. Xandr is not an IASH certified member and does not guarantee that inventory meets IASH contract requirements. We encourage all members, including IASH certified members to use these categories and descriptions when self classifying their own inventory.
 
-- **Political**: Editorial content that is predominantly aimed at furthering the cause of any political party, organized campaign, or informal pressure group.
+<!--- **Political**: Editorial content that is predominantly aimed at furthering the cause of any political party, organized campaign, or informal pressure group.-->
 - **Social media**: A website platform primarily intended for independent publication by site users of personal thoughts and links, and interaction among its members.
 - **Photo & video sharing**: Independent publication by site users of photographs and videos utilizing a tool provided by the site.
 - **Forums (moderated)**: Online forums, comments areas, discussion groups, and newsgroups where people exchange ideas about a common interest, where user’s comments are subject to editorial control or moderation by a Site Publisher, or require the user to log in or supply personally identifying information like an email address. Moderation may occur either before or after the user's contribution is posted.

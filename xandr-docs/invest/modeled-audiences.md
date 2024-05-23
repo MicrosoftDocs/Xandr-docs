@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Modeled audiences
 
-Modeled Audience is a feature available for Microsoft Invest that allows advertisers to take their first-party segments and expand them to similar users for targeting. Modeled Audiences uses Microsoft first-party data and advanced machine learning techniques to create new audience segments with similar characteristics and behaviors as users in your first-party segments.
+Modeled Audience is a new feature available for Microsoft Invest that allows advertisers to take their first-party segments and expand them to similar users for targeting. Modeled Audiences uses Microsoft first-party data and advanced machine learning techniques to create new audience segments with similar characteristics and behaviors as users in your first-party segments.
 
 ## Set up a modeled audience
 
@@ -16,7 +16,9 @@ Modeled Audience is a feature available for Microsoft Invest that allows adverti
 1. Select a **Seed Segment** from the drop-down menu.
 
     > [!NOTE]
-    > Only eligible seed segments (first-party segment with over 7,000 daily active users) are displayed in the drop-down menu. If your seed segment meets these criteria but does not appear in the drop-down menu, the system might lack sufficient data for modeling. To ensure eligibility, it is recommended to run your seed segment in a campaign for at least seven days.
+    >
+    > - Only eligible seed segments (first-party segment with over 7,000 daily active users) are displayed in the drop-down menu.
+    > - If your seed segment meets these criteria but does not appear in the drop-down menu, the system might lack sufficient data for modeling. To ensure eligibility, it is recommended to run your seed segment in a campaign for at least seven days.
 
 1. Select one of the **Segment Reach** options for the modeled segment:
     - **More Precise**: Includes approximately the top one-third (1/3) of the users in the modeled segment.

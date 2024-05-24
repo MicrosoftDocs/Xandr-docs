@@ -1,7 +1,7 @@
 ---
 title: Modeled Audiences
 description: In this article, learn about modeled audiences and how advertisers can take their first-party segments and expand them to similar users for targeting.
-ms.date: 10/28/2023
+ms.date: 05/24/2024
 ---
 
 # Modeled audiences
@@ -27,7 +27,7 @@ Modeled Audience is a new feature available for Microsoft Invest that allows adv
 1. Select **Save Modeled Segment** to save your modeled segment. The newly generated segment model will be available within the next 48-72 hours, along with its estimated size.
 
 > [!NOTE]
-> **Beta release restrictions:**
+> **Restrictions:**
 >
 > - A modeled audience can only be created and edited in the line item view.
 > - Modeled audiences are not supported for data marketplace or third-party segments.

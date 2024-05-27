@@ -9,6 +9,11 @@
             "source_path": "xandr-docs/monetize/programmatic-buying-on-xbox-for-marketers.md",
             "redirect_url": "xandr-docs/monetize/buying-microsoft-inventory.md",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/mobile-sdk/updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md",
+            "redirect_url": "xandr-docs/mobile-sdk/impression-counting-methods.md",
+            "redirect_document_id": false
         }
     ]
 }

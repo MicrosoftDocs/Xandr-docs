@@ -13,8 +13,8 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 | ID Solution |Source Name |Supported Endpoint | Support level |Frequency Capping Capabilities  |Audience Onboarding/Activation Capabilities |
 |:---|:---|:---|:---|:---|:---|
 |Criteo|[criteo.com](https://www.criteo.com/)| AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** |No |No|
-|Unified ID 1.0 (aka TradeDesk ID, TTID) |[adserver.org](adserver.org)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** |
-|NetID |[netid.de](netid.de)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Full support (SSP + DSP support)* |Yes |Yes |
+|Unified ID 1.0 (aka TradeDesk ID, TTID) |[adserver.org](https://adserver.org)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** |
+|NetID |[netid.de](https://netid.de)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Full support (SSP + DSP support)* |Yes |Yes |
 |LiveRamp RampID |[liveramp. com](https://liveramp.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Full support (SSP + DSP support)* | Yes | Yes |
 |UID2.0 |[uidapi.com](https://www.thetradedesk.com/us/about-us/industry-initiatives/unified-id-solution-2-0) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)**  |No |No |
 |UID2.0 via LiveRamp <br><br>**Note**: Reach out to a Microsoft Monetize representative to enable UID2.0 via Liveramp.|[uidapi.com](https://www.thetradedesk.com/us/about-us/industry-initiatives/unified-id-solution-2-0)  | AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)**  | No  | No |

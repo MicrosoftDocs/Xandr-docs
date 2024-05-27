@@ -766,6 +766,8 @@
       href: buy-side-reporting-on-deals.md
   - name: Understanding Bid Rejections
     href: understanding-bid-rejections.md
+  - name: Universal ID Support Matrix for Buyers
+    href: universal-id-support-matrix-for-buyers.md
 - name: Viewability
   items:
     - name: Overview

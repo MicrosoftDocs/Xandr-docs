@@ -33,7 +33,7 @@ Impression counting is summarized as follows:
 | Direct-Sold Insertion Orders | Kept | Xandr will count an impression when one pixel of the ad creative is visible on a device’s screen (referred to as "Viewable Impression" counting). |
 | Xandr Marketplace Transactions | Resold | Xandr will use “Viewable Impression” counting for DSP partners that support it. For all other exchange demand, impression counting will remain unchanged and will continue to follow the “begin to render” methodology, where the impression will be counted when an ad is fully downloaded and loaded on to the view, irrespective of the user’s screen. |
 
-## Impression tracking mechanisms
+### Impression tracking mechanisms
 
 <!--Following sections explain about various impression counting methodologies:
 

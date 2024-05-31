@@ -1,7 +1,7 @@
 ---
 title: Create a Simplified Deal Line Item
 description: Explore the process of creating a simplified deal line item, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
-ms.date: 04/29/2024
+ms.date: 05/31/2024
 ---
 
 # Create a simplified deal line item
@@ -68,7 +68,7 @@ The **Deal Details** section offers a detailed overview of the key components th
   - **Priority Level**: This advanced feature offers the flexibility to prioritize deals within the auction. A higher priority number supersedes a lower one. The selectable priority range is preset based on your **Private Auction** or **Open Auction** selection. Every deal is assigned a default priority, reducing the need for frequent changes.
   
     > [!NOTE]
-    > If you're using Microsoft Monetize for creating other Line Item types (GDALI, ALI, etc.), this priorioty system is shared across all Line Item types.
+    > If you're using Microsoft Monetize for creating other Line Item types (GDALI, ALI, etc.), this priority system is shared across all Line Item types.
 - **Pricing Strategy**: Specifies the price agreed upon by the advertiser. You can select one of the following revenue types:
   - **Floor Price**: Enter the hard floor price that will apply to the buyer of the deal.
   - **Fixed Price**: Enter the amount that the advertiser will pay you per thousand impressions.
@@ -158,18 +158,18 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
 
   - **Brand**
     - **Brand** tab: Only selected brands will be allowed to serve; any brands not selected will not be allowed. If no brands are selected, all brands that follow ad quality rules are allowed.
-    - **Ad Quality Settings** tab: Select the brands for which you want to override ad quality settings. When you select **Ignore**, the brand will be allowed on the deal despite ad quality settings. All brands defaults to **Follow**, so they comply with ad quality settings.
+    - **Ad Quality Settings** tab: Select the brands for which you want to override ad quality settings. When you select **Ignore**, the brand will be allowed on the deal despite ad quality settings. All brands default to **Follow**, so they comply with ad quality settings.
   - **Language**
     - **Language** tab: Only selected languages will be allowed to serve; any languages not selected will not be allowed. If no languages are selected, all languages that follow ad quality rules are allowed.
-    - **Ad Quality Settings** tab: Select the languages in which you want to override ad quality settings. When you select **Ignore**, the language will be allowed on the deal despite ad quality settings. All languages defaults to **Follow**, so they comply with ad quality settings.
+    - **Ad Quality Settings** tab: Select the languages in which you want to override ad quality settings. When you select **Ignore**, the language will be allowed on the deal despite ad quality settings. All languages default to **Follow**, so they comply with ad quality settings.
   - **Media Type**: Select the media types you want to include on the deal.
     > [!NOTE]
     > **Ad Type** selections automatically sync and pre-populate the **Media Type** selection of deal impressions.
   - **Creative Category**
     - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative categories are selected, all creative categories that follow ad quality rules are allowed.
-    - **Ad Quality Settings** tab: Select the creative categories in which you want to override ad quality settings. When you select **Ignore**, the creative category will be allowed on the deal despite ad quality settings. All creative categories defaults to **Follow**, so they comply with ad quality settings.
+    - **Ad Quality Settings** tab: Select the creative categories in which you want to override ad quality settings. When you select **Ignore**, the creative category will be allowed on the deal despite ad quality settings. All creative categories default to **Follow**, so they comply with ad quality settings.
   - **Specific Creatives**: Include specific creatives to either **Approve** (always allow) or **Block** (always block) the deal.
-  - **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select **Ignore**, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes defaults to **Follow**, so they comply with ad quality settings.
+  - **Technical Attributes**: Select the technical attributes on which you want to override ad quality settings. When you select **Ignore**, the technical attribute will be allowed on the deal despite ad quality settings. All technical attributes default to **Follow**, so they comply with ad quality settings.
 
 #### Reporting labels and comments
 

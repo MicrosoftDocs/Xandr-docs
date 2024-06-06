@@ -258,8 +258,6 @@
       href: adx-deal-auction-mechanics.md
   - name: Understanding Bid Rejections
     href: understanding-bid-rejections.md
-  - name: Universal ID Support Matrix for Sellers
-    href: universal-id-support-matrix-for-sellers.md
 - name: Buying Guide
   items: 
   - name: Overview
@@ -1348,6 +1346,8 @@
       href: seller-creative-review-list.md
     - name: Approve and Reject Creatives
       href: approve-and-reject-creatives.md
+  - name: Universal ID Support Matrix for Sellers
+    href: universal-id-support-matrix-for-sellers.md
 - name: Viewability
   items:
   - name: Introduction to Viewability

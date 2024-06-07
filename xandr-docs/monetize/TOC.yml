@@ -1349,6 +1349,8 @@
       href: seller-creative-review-list.md
     - name: Approve and Reject Creatives
       href: approve-and-reject-creatives.md
+  - name: Universal ID Support Matrix for Sellers
+    href: universal-id-support-matrix-for-sellers.md
 - name: Viewability
   items:
   - name: Introduction to Viewability

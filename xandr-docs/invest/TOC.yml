@@ -506,6 +506,8 @@
       href: data-cost-calculation-mechanics.md
     - name: Data Marketplace FAQ(s)
       href: data-marketplace-faq.md
+  - name: Universal ID Support Matrix for Buyers
+    href: universal-id-support-matrix-for-buyers.md
 - name: Buy Side Targeting
   items:
   - name: Daypart Targeting

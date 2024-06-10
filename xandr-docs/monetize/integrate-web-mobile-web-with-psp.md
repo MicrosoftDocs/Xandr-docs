@@ -29,8 +29,8 @@ To set up Prebid.js with Send Top Bid:
 
     This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Advertising this way.
 
-> [!NOTE]
-> When using Prebid.js 9.0 or higher, include the **anPspParamsConverter module in every Prebid.js build** for pages that use Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
+   > [!NOTE]
+   > When using Prebid.js 9.0 or higher, include the **anPspParamsConverter module in every Prebid.js build** for pages that use Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
 
 1. Call the Microsoft Advertising SSP client-side using the `/ut/v3/prebid` endpoint.
 
@@ -54,8 +54,8 @@ To set up Prebid.js with Send All Bids:
 
     This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Advertising this way.
 
-> [!NOTE]
-> When using Prebid.js 9.0 or higher, include the **anPspParamsConverter module in every Prebid.js build** for pages that use Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
+   > [!NOTE]
+   > When using Prebid.js 9.0 or higher, include the **anPspParamsConverter module in every Prebid.js build** for pages that use Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
 
 1. Call the Microsoft Advertising SSP client-side using the `/openrtb2/prebid` endpoint
 

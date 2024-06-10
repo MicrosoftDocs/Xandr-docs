@@ -33,6 +33,19 @@ public static void registerTracking(final NativeAdResponse response, final View 
 public static void registerTracking(final NativeAdResponse response, final View container, final List<View> views, final NativeAdEventListener listener, final List<View> friendlyObstructionsList)
 ```
 
+You can pass a boolean indicating whether to enable OMID optimization. Set to true to enable OMID optimization, which triggers visibility checks and manages the OMID ad session.
+
+```
+public static void registerTracking(final NativeAdResponse response, final View view, final NativeAdEventListener listener, final List friendlyObstructionsList, final boolean enableOMIDOptimization)
+
+public static void registerTracking(final NativeAdResponse response, final View container, final List views, final NativeAdEventListener listener, final List friendlyObstructionsList, final boolean enableOMIDOptimization)
+
+public static void registerTracking(final NativeAdResponse response, final View view, final NativeAdEventListener listener, final boolean enableOMIDOptimization)
+
+public static void registerTracking(final NativeAdResponse response, final View container, final List views, final NativeAdEventListener listener, final boolean enableOMIDOptimization)
+```
+
+
 ### Tracking of ad events - NativeAdEventListener
 
 API with methods to track the ad events such as:

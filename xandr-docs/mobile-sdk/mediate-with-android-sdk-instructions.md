@@ -33,20 +33,17 @@ This section lists the networks that we support with mediation adaptors, as well
 
 To mediate these networks, you'll need a supported release of our SDK, and a mediation adaptor that allows our SDK to communicate with the network's SDK. The easiest way to get the SDK and adaptors is to use Maven from your `build.gradle` as shown in the example below. The first block includes the dependencies for the SDK itself. The second block lists adaptors to mediate other SDKs. Note that these are top-level blocks, not part of the buildscript block. You can include or exclude any of the adaptors in the second block. Including an adaptor causes it to automatically include the appropriate 3rd party SDK (which is downloaded from our CDN at Gradle sync time).
 
-Finally, note that the `[8,9)` notation means that when your app is compiled, the latest version of the SDK in the 8.x series will be included. When we release a new version of the SDK, all that you'll have to do to get the new version is recompile your app.
+Finally, note that the `[9,10)` notation means that when your app is compiled, the latest version of the SDK in the 9.x series will be included. When we release a new version of the SDK, all that you'll have to do to get the new version is recompile your app.
 
 ```
 repositories {
     mavenCentral()
-      maven {
-        url 'https://cdn.adnxs.com/anx-sdk/maven'
-    }
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.appnexus.opensdk:appnexus-sdk:[8,9)'
-    implementation 'com.appnexus.opensdk.mediatedviews:appnexus-googleplay-mediation:[8,9)'
-    implementation 'com.appnexus.opensdk.mediatedviews:appnexus-smartadserver-mediation:[8,9)'
+    implementation 'com.appnexus.opensdk:appnexus-sdk:[9,10)'
+    implementation 'com.appnexus.opensdk.mediatedviews:appnexus-googleplay-mediation:[9,10)'
+    implementation 'com.appnexus.opensdk.mediatedviews:appnexus-smartadserver-mediation:[9,10)'
 }
 ```
 

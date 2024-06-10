@@ -35,9 +35,7 @@ In order to show ads, you must have a valid Xandr placement ID. This is a numeri
 
 ### Step 1. Get the SDK
 
-There are several ways to get our SDK:
-
-- Install via Maven from your `build.gradle` file as shown below. Note that the `[8,9)` notation means that when your app is compiled, the latest version of the SDK in the 8.x release series will be included. When we release a new version of the SDK, all you have to do to get the new version is recompile your app. If you want to include mediation adaptors for other SDKs in your `build.gradle`, see the section **Let us Mediate other Networks** of [Mediate with Android](mediate-with-android-sdk-instructions.md).
+Install via Maven from your `build.gradle` file as shown below. Note that the `[9,10)` notation means that when your app is compiled, the latest version of the SDK in the 9.x release series will be included. When we release a new version of the SDK, all you have to do to get the new version is recompile your app. If you want to include mediation adaptors for other SDKs in your `build.gradle`, see the section **Let us Mediate other Networks** of [Mediate with Android](mediate-with-android-sdk-instructions.md).
   
   > [!NOTE]
   > These are top-level blocks, not part of the buildscript block.
@@ -52,7 +50,7 @@ There are several ways to get our SDK:
 > }
 > 
 > dependencies {
->     implementation 'com.appnexus.opensdk:appnexus-sdk:[8,9)'
+>     implementation 'com.appnexus.opensdk:appnexus-sdk:[9,10)'
 > }
 >    
 > ```

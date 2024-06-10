@@ -10,7 +10,7 @@ ms.date : 10/28/2023
 ## 9.0
 
 ### New Feature
-- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` method [Listen to native ad events on Android](https://learn.microsoft.com/en-us/xandr/mobile-sdk/listen-to-native-ad-events-on-android).
+- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` method [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).
 
 
 ### Improvement/Bug Fixes

@@ -179,7 +179,7 @@ To target Microsoft Casual Games inventory when setting up a Augmented Line Item
 1. In the Split panel, click the Select Condition drop down and enable **Publisher**.
 1. In the **Publisher** text field, enter **679569** and click the **Add** button.
 
-### Target packages
+<!--### Target packages
 
 To target Microsoft Casual Games inventory, use the [Package Marketplace](get-deals-from-seller-packages.md):
 
@@ -204,7 +204,7 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](get-de
 
 1. Click **Get Deals** to generate the Deal ID to target.
 
-    For more information, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).
+    For more information, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).-->
 
 ### Target Microsoft casual games through the API
 

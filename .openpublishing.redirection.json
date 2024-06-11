@@ -17,12 +17,12 @@
         },
         {
             "source_path": "xandr-docs/monetize/create-a-package.md",
-            "redirect_url": "xandr-docs/monetize/selling-deals.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
             "redirect_document_id": false
         },
         {
             "source_path": "xandr-docs/monetize/manage-your-packages.md",
-            "redirect_url": "xandr-docs/monetize/selling-deals.md",
+            "redirect_url": "xandr/monetize/selling-deals",
             "redirect_document_id": false
         },
         {

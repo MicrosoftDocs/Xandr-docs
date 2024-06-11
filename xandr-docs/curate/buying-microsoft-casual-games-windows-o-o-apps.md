@@ -167,7 +167,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 There are three different ways you can target Microsoft Casual Games:
 
 - [Target Microsoft Casual Games in Campaign Setup](#target-microsoft-casual-games-in-campaign-setup)
-- [Target Packages](#target-packages)
+<!-- [Target Packages](#target-packages)-->
 - [Target Microsoft Casual Games through the API](#target-microsoft-casual-games-through-the-api)
 
 For information on general inventory targeting, see [Buying Microsoft Inventory](buying-microsoft-inventory.md).

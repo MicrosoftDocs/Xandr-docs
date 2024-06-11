@@ -125,5 +125,5 @@ If you are a network that also represents sellers, click the **Sellers** button 
 
 - [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md)
 - [Create a Custom Deal](create-a-custom-deal.md)
-- [Create a Package](create-a-package.md)
+<!-- [Create a Package](create-a-package.md)-->
 - [Sell-Side Reporting on Deals](sell-side-reporting-on-deals.md)

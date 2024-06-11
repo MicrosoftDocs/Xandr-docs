@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 You can buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory using our Package Marketplace.
 
 - For more general information about buying deals, see [Buying Microsoft Deals](buying-microsoft-deals.md).
-- For more information about buying deals from seller packages, see [Get Deals from Seller Packages](../invest/get-deals-from-seller-packages.md).
+<!-- For more information about buying deals from seller packages, see [Get Deals from Seller Packages](../invest/get-deals-from-seller-packages.md).-->
 - To create a more customized deal, or if you have any further questions about buying Microsoft programmatic deals, contact GSETsales@xandr.com.
 
 1. Go to **Partners &gt; Package Marketplace**.

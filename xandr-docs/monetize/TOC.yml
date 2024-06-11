@@ -196,12 +196,6 @@
     items:
     - name: Overview
       href: selling-deals.md
-    - name: Create a Package
-      href: create-a-package.md
-    - name: Manage Your Packages
-      href: manage-your-packages.md
-    - name: Share Your Packages with Buyers
-      href: share-your-packages-with-buyers.md
     - name: Create a Custom Deal
       href: create-a-custom-deal.md
     - name: Override Ad Quality Settings on a Deal
@@ -244,8 +238,6 @@
     items:
     - name: Overview
       href: buying-deals.md
-    - name: Get Deals from Seller Packages
-      href: get-deals-from-seller-packages.md
     - name: Negotiate Deals with Sellers
       href: negotiate-deals-with-sellers.md
     - name: Manage Your Deals with Sellers

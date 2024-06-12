@@ -28,7 +28,7 @@ To set up AMP inventory with PSP:
     </amp-ad> 
     ```
 
-1. Exclude any demand partners that are supported through PSP from the rtc-config. Retain vendors like `prebidappnexuspsp` and any partners who do not support PSP.
+1. Exclude any demand partners that are [supported through PSP](prebid-server-premium-demand-partner-integrations.md) from the `rtc-config`. Retain vendors like `prebidappnexuspsp` and any partners who do not support PSP.
 1. Set up [PSP-supported demand partners](prebid-server-premium-demand-partner-integrations.md) in Monetize by navigating to **Publishers** > **Prebid Server Premium** > **Demand Partner Configurations**. For more information, see [Add, Edit, or Delete a PSP Configuration](add-edit-or-delete-a-psp-configuration.md).
 
     > [!IMPORTANT]

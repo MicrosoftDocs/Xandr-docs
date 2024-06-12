@@ -25,6 +25,7 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |EUID |[euid.eu](https://partner.thetradedesk.com/v3/portal/euid/overview) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** | No |  No |
 |Yahoo Connect |[yahoo.com](https://www.yahoo.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** |No |No |
 |Utiq |[utiq.com](https://utiq.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)**  |No  |No  |
+|Panorama ID |[crwdcntrl.net](https://crwdcntrl.net) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |Passthrough SSP support only**  |No |No |
 
 > [!NOTE]
 >
@@ -32,4 +33,4 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 >
 > - *Full support (SSP + DSP support): The ID is supported in both Microsoft Monetize and Microsoft Invest. This means Microsoft Invest buyers can use the ID for audience segments, frequency and recency caps, and attribution.
 >
-> - **Passthrough (SSP support Only): The ID is only supported in Microsoft Monetize. This means that the identifier for frequency/recency capping, segments, and attribution is not used, but the ID to third-party Bidders/DSPs that may support these identifiers is passed.
+> - **Passthrough (SSP support Only): The ID is only supported in Microsoft Monetize. This means that the identifier is not used by Microsoft Invest for frequency/recency capping, segments, and attribution, but the identifier is passed on to third-party Bidders/DSPs that may support these capabilities.

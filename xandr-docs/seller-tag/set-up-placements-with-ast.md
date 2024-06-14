@@ -125,6 +125,7 @@ In the body of the page, specify the location of each placement using `div` tags
             apntag.showTag('apn_ad_slot_1');
         });
         </script>
+    </div>
     
     <br>
     <div id='apn_ad_slot_2'>
@@ -133,6 +134,7 @@ In the body of the page, specify the location of each placement using `div` tags
             apntag.showTag('apn_ad_slot_2');
         });
         </script>
+    </div>
     
  
 </body>

@@ -487,7 +487,7 @@ Xandr supports the following fields in the `geo` object:
 | `lat` | float | Specifies the latitude of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. This can range from `-90` to `90`. South is negative. |
 | `lon` | float | Specifies the longitude of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. This can range from `-180` to `180`. West is negative. |
 | `country` | string | Country code using ISO-3166-1-alpha-3.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information. |
-| `zip` | string | Zip or postal code.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information. |
+| `zip` | string | Zip or postal code.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information.|
 
 ### User extension object
 
@@ -495,8 +495,8 @@ Xandr supports the following field in the `user.ext` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://iabeurope.eu/).<br><br>**Note**: Field is not enforced until May 25, 2018. |
-| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
+| `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://iabeurope.eu/).<br><br>**Note**: Field is not enforced until May 25, 2018.|
+| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object).|
 
 ### Regs object
 

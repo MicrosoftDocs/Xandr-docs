@@ -469,7 +469,6 @@ Xandr supports the following fields in the `user` object:
 | `keywords` | string | Comma separated list of keywords about the user. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for `car_make` and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for `car_make=ford`.<br>- a querystring mapping segment with `my_other_value` as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Contact your Xandr representative to enable this feature. |
 | `geo` | object | Location of the user’s home base defined by a Geo object. This is not necessarily their current location.<br><br>**Note**: By default, this field is not supported. Contact support or your account representative for more information. |
 | `ext` | object | Used for identifying Xandr-specific extensions to OpenRTB for the `user` object. |
-| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
 
 ### eid object
 
@@ -497,6 +496,7 @@ Xandr supports the following field in the `user.ext` object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://iabeurope.eu/).<br><br>**Note**: Field is not enforced until May 25, 2018. |
+| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
 
 ### Regs object
 

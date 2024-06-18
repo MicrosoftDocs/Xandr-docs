@@ -77,9 +77,9 @@ In the **Basic Setup** section, enter the basic details for the curated deal lin
    > [!NOTE]
    > You cannot change the selected buyer after the curated deal line item is created and saved.
 
-5. Click **Add**.
-6. Enter the deal code in **Code** (optional, this is typically used by external buyers for deal mapping).
-7. Enter a description for your deal in the **Description**  box (optional).
+1. Click **Add**.
+1. Enter the deal code in **Code** (optional, this is typically used by external buyers for deal mapping).
+1. Enter a description for your deal in the **Description**  box (optional).
 
 Details for the newly created or existing deal display in **Deal Details** including:
 
@@ -218,6 +218,8 @@ Do not use (not supported for curated deal line items).
 
 You can target curated deal line items in the same way you can target augmented line items. See [Buy-Side Targeting](buy-side-targeting.md) for detailed setup information on targeting. See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 
+> [!NOTE]
+> Cross-device enhanced by Microsoft will be automatically enabled for your curated deal at no cost if you target a segment. If you prefer not to benefit from cross-device on your curated deal, please contact your account representative to opt out of this feature.
 > [!NOTE]
 > Thresholds (**Viewability Threshold** or **Completion Rate Threshold**) create a hard limit for curated deal line item targeting. Any impressions with a predicted view or completion rate below the threshold won’t be matched on the curated deal. Because the threshold you choose is the minimum view/completion you will achieve, expect to see an average view/completion rate 10-15% higher than the threshold you set.
 

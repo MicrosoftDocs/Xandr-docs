@@ -100,8 +100,8 @@ Xandr supports the following fields in the `imp` object, which describe the impr
 | `secure` | integer | Indicates whether the impression requires secure HTTPS URL creative assets and markup. If omitted, the secure state is unknown but non-secure HTTP support can be assumed.<br>`0`: the impression is not secure<br>`1`: the impression is secure |
 | `bidfloor` | float | Minimum bid for this impression expressed in CPM.<br><br>**Note**: The `bidfloor` field should be the publisher's net CPM floor price on incoming ad requests. This floor price must be greater than the existing hard floor, set on the platform, in order to override it for the given auction. |
 | `bidfloorcur` | string | Specifies the currency for this bid using ISO-4217 alphabetic codes. Defaults to `USD` if not specified. |
-| `pmp` | object | Specifies information about a private marketplace deal that is in effect for this impression. See [Private Marketplace Object](#private-marketplace-object) below. |
-| `ext` | object | Used for identifying Xandr-specific extensions to the impression object. See [Impression Extension Object](#impression-extension-object) below. |
+| `pmp` | object | Specifies information about a private marketplace deal that is in effect for this impression. See [Private Marketplace Object](#private-marketplace-object) below.|
+| `ext` | object | Used for identifying Xandr-specific extensions to the impression object. See [Impression Extension Object](#impression-extension-object) below.|
 
 ### Impression extension object
 
@@ -142,8 +142,8 @@ Xandr supports the following field in the `format` object of the `banner` ob
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `w` | integer | Specifies the width of the creative, in pixels. |
-| `h` | integer | Specifies the height of the creative, in pixels. |
+| `w` | integer | Specifies the width of the creative, in pixels.|
+| `h` | integer | Specifies the height of the creative, in pixels.|
 
 ### Video object
 
@@ -283,7 +283,7 @@ Xandr supports the following fields in the `title` object in the `assets` object
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `len` | integer | Maximum length of the text in the title. |
+| `len` | integer | Maximum length of the text in the title.|
 
 ### Image object
 
@@ -296,7 +296,7 @@ Xandr supports the following fields in the `img` object of the `assets` object:
 | `wmin` | integer | Specifies the minimum requested width of the image, in pixels. If included, this value should be used for any rescaling of images by the client. Either `w` or `wmin` must be included. If both are included, we will first try to find a creative that matches the exact width. If no creative matches the exact width, we will then use the minimum width. |
 | `h` | integer | Specifies the height of the image, in pixels. Either `h` or `hmin` must be included. |
 | `hmin` | integer | Specifies the minimum requested height of the image, in pixels. If included, this value should be used for any rescaling of images by the client. Either `h` or `hmin` must be included. If both are included, we will first try to find a creative that matches the exact height. If no creative matches the exact height, we will then use the minimum height. |
-| `mimes` | array of strings | Specifies the image content MIME types supported. Should be empty, as all image types are supported. |
+| `mimes` | array of strings | Specifies the image content MIME types supported. Should be empty, as all image types are supported.|
 
 ### Assets data object
 
@@ -469,7 +469,6 @@ Xandr supports the following fields in the `user` object:
 | `keywords` | string | Comma separated list of keywords about the user. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for `car_make` and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for `car_make=ford`.<br>- a querystring mapping segment with `my_other_value` as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Contact your Xandr representative to enable this feature. |
 | `geo` | object | Location of the user’s home base defined by a Geo object. This is not necessarily their current location.<br><br>**Note**: By default, this field is not supported. Contact support or your account representative for more information. |
 | `ext` | object | Used for identifying Xandr-specific extensions to OpenRTB for the `user` object. |
-| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object). |
 
 ### eid object
 
@@ -488,7 +487,7 @@ Xandr supports the following fields in the `geo` object:
 | `lat` | float | Specifies the latitude of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. This can range from `-90` to `90`. South is negative. |
 | `lon` | float | Specifies the longitude of the device, as derived from the device's location services (such as cell tower triangulation or GPS) or IP address. This can range from `-180` to `180`. West is negative. |
 | `country` | string | Country code using ISO-3166-1-alpha-3.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information. |
-| `zip` | string | Zip or postal code.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information. |
+| `zip` | string | Zip or postal code.<br><br>**Note**: By default, this field is not supported. Your account can be enabled to add support for this field, in which case country + zip will be used to determine location information. Contact support or your account representative for more information.|
 
 ### User extension object
 
@@ -496,7 +495,8 @@ Xandr supports the following field in the `user.ext` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://iabeurope.eu/).<br><br>**Note**: Field is not enforced until May 25, 2018. |
+| `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://iabeurope.eu/).<br><br>**Note**: The field is not enforced until May 25, 2018.|
+| `eids` | object array | This object can contain one or more UIDs from a single source or a technology provider. Extended Identifiers support in OpenRTB allows buyers to use audience data in real time bidding. For more information, see [eid Object](#eid-object).|
 
 ### Regs object
 

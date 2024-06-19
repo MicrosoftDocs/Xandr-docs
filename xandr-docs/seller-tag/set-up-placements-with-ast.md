@@ -119,7 +119,7 @@ In the body of the page, specify the location of each placement using `div` tags
 ```
 <body>
     <div id='apn_ad_slot_1'>
-        <script type="text/javascript">
+      <script type="text/javascript">
         apntag.anq.push(function() {
             //signal to script that this DOM element has been loaded and is ready to be populated with an ad
             apntag.showTag('apn_ad_slot_1');
@@ -129,7 +129,7 @@ In the body of the page, specify the location of each placement using `div` tags
     
     <br>
     <div id='apn_ad_slot_2'>
-        <script type="text/javascript">
+      <script type="text/javascript">
         apntag.anq.push(function() {
             apntag.showTag('apn_ad_slot_2');
         });

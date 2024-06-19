@@ -161,12 +161,11 @@ By default, your curated deal line item will target all universal categories. Ho
 1. On the **Universal Categories** tab, include or exclude custom categories.
     - The **Categories** lists shows all top-level universal categories defined by Microsoft Advertising. You can either include or exclude top-level categories or drill into a category to view its child
       categories.
-    - The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories. 
+    - The **Sub-Categories** list shows all child universal categories in the context of their parent categories. You can either include or exclude sub-categories.
      > [!NOTE]
-   > When you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
-
-      > [!NOTE]
-   > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
+     > When you exclude a top-level category, its sub-categories are not available for further inclusion or exclusion.
+     > [!NOTE]
+     > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
 1. Click **Add**.
 
@@ -188,8 +187,7 @@ By default, your curated deal line item will target all custom categories. Howev
 By default, your curated line item will target all sellers. However, you can narrow targeting to include or exclude specific sellers. Additionally, if a seller has chosen to expose their publishers via the open exchange, you can include or exclude specific publishers:
 
 1. On the **Seller Inventory** tab, include or exclude sellers.
-    - Click on a seller to view the publishers they have exposed for
-      targeting and include or exclude specific publishers.
+    - Click on a seller to view the publishers they have exposed for targeting and include or exclude specific publishers.
 
 ## Inventory type
 

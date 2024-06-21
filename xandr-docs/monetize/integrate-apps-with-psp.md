@@ -54,7 +54,7 @@ To set up Prebid Mobile SDK with PSP:
    PrebidMobile.setCustomStatusEndpoint(https://ib.adnxs.com/status)
    ```
 
-1. If offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` just after SDK initialization.
+1. When offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` immediately after SDK initialization.
 
 <!--## Non-SDK
 

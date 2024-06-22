@@ -13,6 +13,7 @@ The links below provide guidance on integrating inventory with Prebid Server Pre
 - [Set Up Prebid Server Premium](set-up-prebid-server-premium.md)
 - [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
 - [Prebid Server Premium Analytics](prebid-server-premium-analytics.md)
+- [Prebid Server Premium Request Response Sampler](prebid-server-premium-request-response-sampler.md)
 - [Prebid Server Premium Services (APIs)](../digital-platform-api/prebid-server-premium-services.md)
 
 > [!IMPORTANT]

@@ -6,9 +6,9 @@ ms.date: 10/28/2023
 
 # Integrate with PSP
 
-Integrating publisher inventory with Prebid Server Premium (PSP) begins with a connection to the publisher's ad server. If a customer uses the Microsoft Monetize Ad Server as their ad server, they are classified as a Microsoft Monetize Ad Server publisher. If a customer is on an external ad server, such as Google Ad Manager, they are considered a direct supply or SSP publisher. See below for guidance for each type of customer.
+Integrating publisher inventory with Prebid Server Premium (PSP) begins with a connection to the publisher's ad server. If a customer uses the Microsoft Monetize Ad Server as their ad server, they are classified as a Microsoft Monetize Ad Server publisher. If a customer is on an external ad server, such as Google Ad Manager, they are considered a direct supply or SSP publisher. See below for guidance for each type of customer, as well as [PSP common issues and best practices](psp-common-issues-and-best-practices.md) .
 
-## Microsoft Monetize ad server customer integration
+## Microsoft Monetize Ad Server customer integration
 
 Monetize Ad Server customers can maintain their [current integration type from page/app/server](./prebid-server-premium-supported-formats-and-integration-paths.md) to Microsoft Advertising, then follow the guidance on the pages below:
 

@@ -8,6 +8,7 @@ ms.date: 10/28/2023
 
 Prebid Server Premium (PSP) setup should be completed following each of the resources below in order:
 
+1. [PSP common issues and best practices](psp-common-issues-and-best-practices.md)
 1. [Integrate with PSP](integrate-with-psp.md)
 1. [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md)
 1. [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)

@@ -22,6 +22,8 @@ There is an exception for accelerated mobile pages (AMP) inventory. Microsoft Mo
 
 SSP customers can integrate with Microsoft Advertising, and in turn, PSP, across the following types of inventory:
 
+## Related topics
+
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)
 - [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)

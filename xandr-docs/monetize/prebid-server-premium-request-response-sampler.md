@@ -6,7 +6,7 @@ ms.date: 06/22/2024
 
 # Prebid Server Premium Request Response Sampler
 
-Prebid Server Premium's core functions are to send publisher bid requests to demand partners (typically SSPs), collect bid responses, auction responses, and forward them to Microsoft Monetize. The Request Response Sampler Tool provides examples of these JSON objects, and is best used with the PSP Health Analytics report to find instances of prevalent errors as defined in the report's documentation. Share samples with demand partners to optimize activity and unlock additional revenue.
+Prebid Server Premium's core functions are to send publisher bid requests to demand partners (typically SSPs), collect bid responses, auction responses, and forward them to Microsoft Monetize. The Request Response Sampler Tool provides examples of these JSON objects, and is best used with the PSP Health Analytics report to find instances of prevalent errors as defined in [the report's documentation](prebid-server-premium-health-analytics-report.md). Share samples with demand partners to optimize activity and unlock additional revenue.
 
 > [!IMPORTANT]
 > Samples from the tool may contain data for multiple demand partners. Thoroughly review and filter any output from the tool before sending it to ensure demand partners only receive data relevant to their platform.
@@ -39,8 +39,8 @@ To use the Request Response Sampler Tool:
 
 ## Related topics
 
-- [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
-- [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
-- [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
-- [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
-- [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)
+- [Prebid Server Premium Analytics](prebid-server-premium-analytics.md)
+- [Prebid Server Premium](prebid-server-premium.md)
+- [Prebid Server Premium Health Analytics Report](prebid-server-premium-health-analytics-report.md)
+- [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
+- [PSP Supported Formats and Integration Paths](prebid-server-premium-supported-formats-and-integration-paths.md)

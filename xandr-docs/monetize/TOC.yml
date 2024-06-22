@@ -996,7 +996,7 @@
     - name: Overview
       href: prebid-server-premium.md
     - name: Prebid Server Premium Setup
-    items:
+      items:
     - name: Overview
       href: psp-common-issues-and-best-practices.md
     - name: PSP Common Issues and Best Practices

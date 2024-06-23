@@ -57,26 +57,4 @@ You can either incorporate the latest release or main branch into your app or yo
 # For the latest version of our SDK
   https://github.com/appnexus/mobile-sdk-ios-spm
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The links below provide guidance on integrating inventory with Prebid Server Premium (PSP), adjusting settings and demand partner mappings, and leveraging platform analytics:
-
-- [Set Up Prebid Server Premium](set-up-prebid-server-premium.md)
-- [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
-- [Prebid Server Premium Analytics](prebid-server-premium-analytics.md)
-- [Prebid Server Premium Services (APIs)](../digital-platform-api/prebid-server-premium-services.md)
-
-> [!IMPORTANT]
-> At this time, not all clients have access to PSP. If you would like more information, please contact your Microsoft Advertising Representative.
+```

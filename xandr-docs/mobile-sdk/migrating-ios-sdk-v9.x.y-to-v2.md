@@ -7,11 +7,6 @@ ms.date: 10/28/2023
 
 # Migrating iOS SDK v9.X.Y to v2
 
-- [Requirments](]ios-sdk-integration-instructions#requirements.md)
-- [Installation](ios-sdk-integration-instructions#installation.md)
-- [Set up for mediation (optional)](ios-sdk-integration-instructions#set-up-for-mediation-optional.md)
-- [Related Topics](ios-sdk-integration-instructions.md#related-topics)
-
 This page describes how to integrate our iOS SDK within your Xcode project, as well as how to display ads in your app. For instructions on displaying different ad types, see our respective [Ad Unit](ios-sdk-ad-units.md) pages.
 
 ## Requirements
@@ -39,7 +34,7 @@ If you are unfamiliar with CocoaPods review their [documentation](https://cocoap
       pod init
       ```
 
-1. Using a text editor, open the newly created podfile. Set the platform version to 12.0 and add `pod `AppNexusSDX`` to the target.
+1. Using a text editor, open the newly created podfile. Set the platform version to 12.0 and add `pod`AppNexusSDX`` to the target.
 
     ```
     # iOS: Podfile config to include our SDK
@@ -101,15 +96,15 @@ Download and unzip the latest version of our [SDK](https://adsdkdevstand.azureed
 
 This file will contain the following four frameworks and two mediation adapters. Ensure you are only using the framework that best suits your needs. The AppNexusSDK is our recommendation for general use.
 
-    | Framework | Description |
-    |---|---|
-    | AppNexusSDK | Supports all ad types. |
-    | AppNexusNativeSDK | This framework only supports native ads on **iOS**. |
-    | AppNexusNativeMacOSSDK | This framework only supports native ads on MacOS. |
-    | ANSmartAdapter | A mediation adapter for Smart Ad Server. |
-    | ANGoogleAdapter | A mediation adapter for Google's AdMob. |
-    | ANFacebookCSRAdapter | A mediation adapter for Facebook Audience Network. |
-    | ANSDKResources.bundle | This contains necessary files which or SDK utilizes. |
+| Framework | Description |
+|---|---|
+| AppNexusSDK | Supports all ad types. |
+| AppNexusNativeSDK | This framework only supports native ads on **iOS**. |
+| AppNexusNativeMacOSSDK | This framework only supports native ads on MacOS. |
+| ANSmartAdapter | A mediation adapter for Smart Ad Server. |
+| ANGoogleAdapter | A mediation adapter for Google's AdMob. |
+| ANFacebookCSRAdapter | A mediation adapter for Facebook Audience Network. |
+| ANSDKResources.bundle | This contains necessary files which or SDK utilizes. |
 
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.
@@ -119,9 +114,9 @@ This file will contain the following four frameworks and two mediation adapters.
     1. Scroll down to **Embedded Binaries**.
     1. Click the `+` icon and select `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
 
-<!-->:::image type="content" source="media/abc.png" alt-text="A screenshot that shows how to choose options for adding these files.":::
+<!-->:::image type="content" source="media/abc.png" alt-text="A screenshot that shows how to choose options for adding these files.":::-->
 
-:::image type="content" source="media/xyz.png" alt-text="A screenshot that shows how to choose options for adding these files.":::-->
+<!-->:::image type="content" source="media/xyz.png" alt-text="A screenshot that shows how to choose options for adding these files.":::-->
 
 ## Swift Package Manager
 

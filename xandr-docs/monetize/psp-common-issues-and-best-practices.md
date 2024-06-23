@@ -49,4 +49,3 @@ When investigating connections from web pages to Monetize, common errors seen in
 - [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
 - [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
-- [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)

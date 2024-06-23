@@ -1,0 +1,130 @@
+---
+title: Migrating iOS SDK v9.X.Y to v2
+description: Learn how to integrate the AppNexusSDK into your iOS app using CocoaPods, Carthage, or XCFramework with detailed instructions.
+ms.custom: ios-sdk
+ms.date: 10/28/2023
+---
+
+# Migrating iOS SDK v9.X.Y to v2
+
+- [Requirments](]ios-sdk-integration-instructions#requirements.md)
+- [Installation](ios-sdk-integration-instructions#installation.md)
+- [Set up for mediation (optional)](ios-sdk-integration-instructions#set-up-for-mediation-optional.md)
+- [Related Topics](ios-sdk-integration-instructions.md#related-topics)
+
+This page describes how to integrate our iOS SDK within your Xcode project, as well as how to display ads in your app. For instructions on displaying different ad types, see our respective [Ad Unit](ios-sdk-ad-units.md) pages.
+
+## Requirements
+
+- This SDK requires Xcode version 15.0 or higher.
+- Your app should target iOS 12.0 or higher.
+- In order to show ads, you must have a valid Xandr placement ID and member ID.
+
+## Installation
+
+There are four ways to get our SDK:
+
+[CocoaPods](ios-sdk-integration-instructions.md#cocoapods)
+[Carthage](ios-sdk-integration-instructions.md#carthage)
+[XCFramework](ios-sdk-integration-instructions.md#xcframework)
+[Swift Package Manager](ios-sdk-integration-instructions.md#swift-package-manager)
+
+### CocoaPods
+
+If you are unfamiliar with CocoaPods review their [documentation](https://cocoapods.org/). Once you have CocoaPods installed:
+
+1. Use Terminal or your command line editor of choice, navigate to the root directory of your project and create a podfile.
+
+      ```
+      pod init
+      ```
+
+1. Using a text editor, open the newly created podfile. Set the platform version to 12.0 and add `pod `AppNexusSDX`` to the target.
+
+    ```
+    # iOS: Podfile config to include our SDK
+    platform :ios, '12.0'
+    project 'FunBanner'
+    target 'FunBanner' do
+      pod 'AppNexusSDK'
+    end
+
+1. Save your changes and return to the Terminal and enter:
+
+    ```
+    pod install
+    ```
+
+1. CocoaPods downloads the Xandr SDK and creates a workspace (`.xcworkspace`) in the project directory. If your project is currently open, close it and open the xcworkspace.
+
+### Carthage
+
+If you are unfamiliar with Carthage review their [documentation](https://github.com/Carthage/Carthage/blob/master/README.md).
+Once you've installed Carthage on your computer:
+
+1. Open the Terminal app and navigate to the root directory of your project. Create a Cartfile.
+
+   ```
+   touch Cartfile
+   ```
+
+1. Open the file in Xcode to edit it.
+
+    ```
+    open -a Xcode Cartfile
+    ```
+
+1. Add the following lines to the Cartfile.
+
+    ```
+    # iOS: Carthage config to include our SDK
+    binary "https://acdn.adnxs.com/mobile/mtest/adoreleasetest/9.0.0/carthage/AppNexusSDK.json"
+    binary "https://acdn.adnxs.com/mobile/mtest/adoreleasetest/9.0.0/carthage/OMSDK_Microsoft.json"
+    ```
+
+    > [!TIP]
+    > You can use editor's other than Xcode to edit the Cartfile but be aware that other editing programs such as TextEdit might automatically include smart quotes instead of straight quotes. Carthage does not recognize content within smart quotes and not perform correctly.
+
+1. Save the Cartfile. Run the following command to update dependencies:
+
+      ```
+      carthage update --use-xcframeworks
+      ```
+
+1. To use `AppNexusSDK` SDK, add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** (**Target** → **General** → **Embedded Binaries**) section by clicking the `+` icon.
+1. Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries** (**Target** → **General** → **Embedded Binaries**) section by clicking the `+` icon.
+1. If you are using Carthage for an application, select **Embed & Sign**, otherwise **Do Not Embed**.
+
+## XCFramework
+
+Download and unzip the latest version of our [SDK](https://adsdkdevstand.azureedge.net/dev/mobile/mtest/adoreleasetest/9.0.0-alpha.9/static/sdks.zip) from our CDN.
+
+This file will contain the following four frameworks and two mediation adapters. Ensure you are only using the framework that best suits your needs. The AppNexusSDK is our recommendation for general use.
+
+    | Framework | Description |
+    |---|---|
+    | AppNexusSDK | Supports all ad types. |
+    | AppNexusNativeSDK | This framework only supports native ads on **iOS**. |
+    | AppNexusNativeMacOSSDK | This framework only supports native ads on MacOS. |
+    | ANSmartAdapter | A mediation adapter for Smart Ad Server. |
+    | ANGoogleAdapter | A mediation adapter for Google's AdMob. |
+    | ANFacebookCSRAdapter | A mediation adapter for Facebook Audience Network. |
+    | ANSDKResources.bundle | This contains necessary files which or SDK utilizes. |
+
+1. Open the app’s Xcode project or workspace.
+1. Go to the app target’s **General** configuration page.
+1. To use the AppNexusSDK SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section  by following these steps:
+    1. Navigate to your project's Target settings.
+    1. Go to **General** tab.
+    1. Scroll down to **Embedded Binaries**.
+    1. Click the `+` icon and select `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
+
+<!-->:::image type="content" source="media/abc.png" alt-text="A screenshot that shows how to choose options for adding these files.":::
+
+:::image type="content" source="media/xyz.png" alt-text="A screenshot that shows how to choose options for adding these files.":::-->
+
+## Swift Package Manager
+
+1. Copy the URL [GitHub](https://github.com/appnexus/mobile-sdk-ios-spm) and enter is in your Xcode project's Package Dependencies. You can either install the latest released version or the main branch.
+
+## Swift Package Manager - Google AdMob Mediation adapters

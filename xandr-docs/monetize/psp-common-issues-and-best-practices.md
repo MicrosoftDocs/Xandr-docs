@@ -40,7 +40,7 @@ When investigating connections from web pages to Monetize, common errors seen in
 
 ## Prebid Server Premium architecture
 
-:::image type="content" source="media/psp-architecture-slide.png" alt-text="A screenshot of Prebid Server Premium architecture.":::
+:::image type="content" source="media/psp-architecture-diagram-slide.png" alt-text="A screenshot of Prebid Server Premium architecture.":::
 
 ## Related topics
 

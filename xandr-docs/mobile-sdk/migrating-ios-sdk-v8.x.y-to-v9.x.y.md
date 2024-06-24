@@ -41,7 +41,7 @@ binary "https://adsdkdevstand.azureedge.net/dev/mobile/mtest/adoreleasetest/9.0.
 
 ## XCFramework
 
-- To access the frameworks from our CDN, use these links:
+To access the frameworks from our CDN, use these links:
 
 ```
 

@@ -5,18 +5,18 @@ ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---
 
-# Migrating iOS SDK v8.X.Y to v9.X.Y
+# Migrating iOS SDK v8.x to v9.0
 
-Starting with SDK v9.0, we will no longer release source code updates for the Android/iOS Mobile SDKs on GitHub. Instead, all new SDK updates will be exclusively published through the methods referenced in our implementation guide.
+Starting with SDK v9.0, there are no longer release source code updates for the Android/iOS Mobile SDKs on GitHub. Instead, all new SDK updates are exclusively published through the methods referenced in implementation guide.
 
-Refer the detailed integration instructions for first-time implementations in the [iOS SDK Integration Instructions](ios-sdk-integration-instructions.md).
+You can refer the detailed integration instructions for first-time implementations in the [iOS SDK Integration Instructions](ios-sdk-integration-instructions.md).
 
 > [!NOTE]
 > There are no breaking changes while upgrading the SDK from 8.x to 9.0.
 
 ## CocoaPods
 
-There are no changes to our support of CocoaPods. Your podfile should look like this:
+There are no changes for support of CocoaPods. Your podfile should look like this:
 
 ```
 

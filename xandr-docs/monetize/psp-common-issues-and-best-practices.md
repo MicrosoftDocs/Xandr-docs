@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # PSP common issues and best practices
 
-The below sections explains the common challenges when integrating and setting up PSP, along with best practices for maximizing performance and resolving issues. Key focuses include managing connections from inventory to Monetize, troubleshooting developer tools errors, and optimizing collaboration with demand partners.
+The below section explains the common challenges when integrating and setting up PSP, along with best practices for maximizing performance and resolving issues. Key focuses include managing connections from inventory to Monetize, troubleshooting developer tools errors, and optimizing collaboration with demand partners.
 
 ## Connections from Inventory to Monetize
 
@@ -39,6 +39,8 @@ When investigating connections from web pages to Monetize, common errors seen in
 - **Response code 204** - When viewing sample bid responses in the PSP Requests Sampler tab, response code 204 from a demand partner means "no bid." This could simply mean there is no demand for the inventory, or that the buyers expect certain signals in bid requests that are not present.
 
 ## Prebid Server Premium architecture
+
+This section outlines the architectural framework of Prebid Server Premium (PSP). Understanding this architecture will aid in effective integration, troubleshooting, and performance enhancement.
 
 :::image type="content" source="media/psp-architecture-diagram-slide.png" alt-text="A screenshot of Prebid Server Premium architecture.":::
 

@@ -19,10 +19,10 @@ This page describes how to integrate our iOS SDK within your Xcode project, as w
 
 There are four ways to get our SDK:
 
-[CocoaPods](ios-sdk-integration-instructions.md#cocoapods)
-[Carthage](ios-sdk-integration-instructions.md#carthage)
-[XCFramework](ios-sdk-integration-instructions.md#xcframework)
-[Swift Package Manager](ios-sdk-integration-instructions.md#swift-package-manager)
+- [CocoaPods](ios-sdk-integration-instructions.md#cocoapods)
+- [Carthage](ios-sdk-integration-instructions.md#carthage)
+- [XCFramework](ios-sdk-integration-instructions.md#xcframework)
+- [Swift Package Manager](ios-sdk-integration-instructions.md#swift-package-manager)
 
 ### CocoaPods
 
@@ -114,12 +114,8 @@ This file will contain the following four frameworks and two mediation adapters.
     1. Scroll down to **Embedded Binaries**.
     1. Click the `+` icon and select `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
 
-<!-->:::image type="content" source="media/abc.png" alt-text="A screenshot that shows how to choose options for adding these files.":::-->
-
-<!-->:::image type="content" source="media/xyz.png" alt-text="A screenshot that shows how to choose options for adding these files.":::-->
-
 ## Swift Package Manager
 
-1. Copy the URL [GitHub](https://github.com/appnexus/mobile-sdk-ios-spm) and enter is in your Xcode project's Package Dependencies. You can either install the latest released version or the main branch.
+1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter is in your Xcode project's Package Dependencies. You can either install the latest released version or the main branch.
 
 ## Swift Package Manager - Google AdMob Mediation adapters

@@ -1,11 +1,11 @@
 ---
-title: Migrating iOS SDK v9.X.Y to v2
+title: SDK integration instructions v9.0
 description: Learn how to integrate the AppNexusSDK into your iOS app using CocoaPods, Carthage, or XCFramework with detailed instructions.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---
 
-# Migrating iOS SDK v9.X.Y to v2
+# SDK integration instructions v9.0
 
 This page describes how to integrate our iOS SDK within your Xcode project, as well as how to display ads in your app. For instructions on displaying different ad types, see our respective [Ad Unit](ios-sdk-ad-units.md) pages.
 
@@ -115,16 +115,16 @@ This file will contain the following four frameworks and two mediation adapters.
     - Navigate to **Target** > **General** > **Embedded Binaries**.
     - Click the `+` icon and select the `.xcframework` and `.bundle` files.
 
-    :::image type="content" source="media/choose-option-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
+    :::image type="content" source="media/copy-items.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
 
-    :::image type="content" source="media/choose-option2-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose frameworks, libraries, and embedded content.":::
+    :::image type="content" source="media/import-framework.png" alt-text="A screenshot that shows how to choose frameworks, libraries, and embedded content.":::
 
 ## Swift Package Manager
 
 1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
 
-   :::image type="content" source="media/swift-package-manager.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
+   :::image type="content" source="media/import-spm.pn" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
 
-   :::image type="content" source="media/swift-package-manager-support-ios-sdk.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
+   :::image type="content" source="media/add-dependency.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
 
 ## Swift Package Manager - Google AdMob Mediation adapters

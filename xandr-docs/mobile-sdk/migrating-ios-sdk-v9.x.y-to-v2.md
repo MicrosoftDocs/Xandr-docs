@@ -86,9 +86,13 @@ Once you've installed Carthage on your computer:
       carthage update --use-xcframeworks
       ```
 
-1. To use `AppNexusSDK` SDK, add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** (**Target** → **General** → **Embedded Binaries**) section by clicking the `+` icon.
-1. Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries** (**Target** → **General** → **Embedded Binaries**) section by clicking the `+` icon.
-1. If you are using Carthage for an application, select **Embed & Sign**, otherwise **Do Not Embed**.
+To use `AppNexusSDK` SDK, follow these steps:
+    1. Add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** section of your Xcode project.
+        - Navigate to **Target** → **General** → **Embedded Binaries**.
+        - Click the `+` icon and select the `.xcframework` files.
+    2. If you are using Carthage:
+        - Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries** section.
+        - Ensure you select **Embed & Sign** for application targets; for other targets, select **Do Not Embed**.
 
 ## XCFramework
 
@@ -99,16 +103,16 @@ This file will contain the following four frameworks and two mediation adapters.
 | Framework | Description |
 |---|---|
 | AppNexusSDK | Supports all ad types. |
-| AppNexusNativeSDK | This framework only supports native ads on **iOS**. |
+| AppNexusNativeSDK | This framework only supports native ads on **iOS**.|
 | AppNexusNativeMacOSSDK | This framework only supports native ads on MacOS. |
-| ANSmartAdapter | A mediation adapter for Smart Ad Server. |
-| ANGoogleAdapter | A mediation adapter for Google's AdMob. |
+| ANSmartAdapter | A mediation adapter for Smart Ad Server.|
+| ANGoogleAdapter | A mediation adapter for Google's AdMob.|
 | ANFacebookCSRAdapter | A mediation adapter for Facebook Audience Network. |
 | ANSDKResources.bundle | This contains necessary files which or SDK utilizes. |
 
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.
-1. To use the AppNexusSDK SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section  by following these steps:
+1. To use the AppNexusSDK SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section by following these steps:
     1. Navigate to your project's Target settings.
     1. Go to **General** tab.
     1. Scroll down to **Embedded Binaries**.
@@ -124,6 +128,6 @@ This file will contain the following four frameworks and two mediation adapters.
 
 :::image type="content" source="media/swift-package-manager.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
 
-:::image type="content" source="media/swift-package-manager-support-ios-sdk.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
+:::image type="content" source="media/swift-package-manager-support-ios-sdk.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
 
 ## Swift Package Manager - Google AdMob Mediation adapters

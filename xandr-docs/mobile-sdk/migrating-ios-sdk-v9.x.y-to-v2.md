@@ -87,10 +87,11 @@ Once you've installed Carthage on your computer, follow these steps:
       ```
 
 1. To use `AppNexusSDK` SDK, add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** section:
+
     - Navigate to **Target** → **General** → **Embedded Binaries**.
     - Click the `+` icon and select the `.xcframework` files.
     - If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**.
-
+  
 ## XCFramework
 
 Download and unzip the latest version of our [SDK](https://adsdkdevstand.azureedge.net/dev/mobile/mtest/adoreleasetest/9.0.0-alpha.9/static/sdks.zip) from our CDN.
@@ -110,9 +111,9 @@ This file will contain the following four frameworks and two mediation adapters.
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.
 1. To use the `AppNexusSDK` SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section:
-    1. Navigate to your project's Target settings.
-    1. Navigate to **Target** > **General** > **Embedded Binaries**.
-    1. Click the `+` icon and select the `.xcframework` and `.bundle` files.
+    - Navigate to your project's Target settings.
+    - Navigate to **Target** > **General** > **Embedded Binaries**.
+    - Click the `+` icon and select the `.xcframework` and `.bundle` files.
 
     :::image type="content" source="media/choose-option-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
 

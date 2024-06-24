@@ -87,9 +87,9 @@ Once you've installed Carthage on your computer, follow these steps:
       ```
 
 1. To use `AppNexusSDK` SDK, add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** section:
-        - Navigate to **Target** → **General** → **Embedded Binaries**.
-        - Click the `+` icon and select the `.xcframework` files.
-        - If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**. 
+    - Navigate to **Target** → **General** → **Embedded Binaries**.
+    - Click the `+` icon and select the `.xcframework` files.
+    - If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**.
 
 ## XCFramework
 
@@ -114,16 +114,16 @@ This file will contain the following four frameworks and two mediation adapters.
     1. Navigate to **Target** > **General** > **Embedded Binaries**.
     1. Click the `+` icon and select the `.xcframework` and `.bundle` files.
 
-:::image type="content" source="media/choose-option-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
+    :::image type="content" source="media/choose-option-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
 
-:::image type="content" source="media/choose-option2-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose frameworks, libraries, and embedded content.":::
+    :::image type="content" source="media/choose-option2-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose frameworks, libraries, and embedded content.":::
 
 ## Swift Package Manager
 
 1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
 
-:::image type="content" source="media/swift-package-manager.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
+   :::image type="content" source="media/swift-package-manager.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
 
-:::image type="content" source="media/swift-package-manager-support-ios-sdk.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
+   :::image type="content" source="media/swift-package-manager-support-ios-sdk.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
 
 ## Swift Package Manager - Google AdMob Mediation adapters

@@ -55,7 +55,7 @@ If you are unfamiliar with CocoaPods review their [documentation](https://cocoap
 ### Carthage
 
 If you are unfamiliar with Carthage review their [documentation](https://github.com/Carthage/Carthage/blob/master/README.md).
-Once you've installed Carthage on your computer:
+Once you've installed Carthage on your computer, follow these steps:
 
 1. Open the Terminal app and navigate to the root directory of your project. Create a Cartfile.
 
@@ -63,7 +63,7 @@ Once you've installed Carthage on your computer:
    touch Cartfile
    ```
 
-1. Open the file in Xcode to edit it.
+1. Open the Cartfile in Xcode to edit it.
 
     ```
     open -a Xcode Cartfile
@@ -86,13 +86,10 @@ Once you've installed Carthage on your computer:
       carthage update --use-xcframeworks
       ```
 
-To use `AppNexusSDK` SDK, follow these steps:
-    1. Add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** section of your Xcode project.
+1. To use `AppNexusSDK` SDK, add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** section:
         - Navigate to **Target** → **General** → **Embedded Binaries**.
         - Click the `+` icon and select the `.xcframework` files.
-    2. If you are using Carthage:
-        - Drag the built `.xcframework` bundles from `Carthage/Build` into **Embedded Binaries** section.
-        - Ensure you select **Embed & Sign** for application targets; for other targets, select **Do Not Embed**.
+        - If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**. 
 
 ## XCFramework
 
@@ -112,11 +109,10 @@ This file will contain the following four frameworks and two mediation adapters.
 
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.
-1. To use the AppNexusSDK SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section by following these steps:
+1. To use the `AppNexusSDK` SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section:
     1. Navigate to your project's Target settings.
-    1. Go to **General** tab.
-    1. Scroll down to **Embedded Binaries**.
-    1. Click the `+` icon and select `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
+    1. Navigate to **Target** > **General** > **Embedded Binaries**.
+    1. Click the `+` icon and select the `.xcframework` and `.bundle` files.
 
 :::image type="content" source="media/choose-option-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
 

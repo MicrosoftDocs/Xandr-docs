@@ -114,8 +114,16 @@ This file will contain the following four frameworks and two mediation adapters.
     1. Scroll down to **Embedded Binaries**.
     1. Click the `+` icon and select `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
 
+:::image type="content" source="media/choose-option-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
+
+:::image type="content" source="media/choose-option2-migrate-iOS-SDK-v9-v2.png" alt-text="A screenshot that shows how to choose frameworks, libraries, and embedded content.":::
+
 ## Swift Package Manager
 
-1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter is in your Xcode project's Package Dependencies. You can either install the latest released version or the main branch.
+1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
+
+:::image type="content" source="media/swift-package-manager.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
+
+:::image type="content" source="media/swift-package-manager-support-ios-sdk.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
 
 ## Swift Package Manager - Google AdMob Mediation adapters

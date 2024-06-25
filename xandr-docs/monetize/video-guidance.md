@@ -16,7 +16,7 @@ This page includes guidance on running video inventory through Prebid Server Pre
   ``` 
   pbjs.setConfig({
      "cache":{
-        "url":"https://ib.adnxs.com/prebid/cache"
+        "url":"https://prebid.adnxs.com/pbc/v1/cache"
      },
      "debug":true,
      "enableSendAllBids":true,

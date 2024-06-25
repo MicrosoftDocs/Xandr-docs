@@ -123,7 +123,7 @@ This file will contain the following four frameworks and two mediation adapters.
 
 1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
 
-   :::image type="content" source="media/import-spm.pn" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
+   :::image type="content" source="media/import-spm.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
 
    :::image type="content" source="media/add-dependency.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
 

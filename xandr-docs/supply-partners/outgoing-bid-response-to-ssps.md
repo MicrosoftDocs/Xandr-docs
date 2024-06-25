@@ -26,6 +26,70 @@ Xandr currently supports the following fields in the bid response object:
 | `id` | string | The seller's auction ID. This is the same as the ID of the bid request to which this is a response. |
 | `seatbid` | array of objects | Used for identifying `seatbid` objects. See [Seat Bid Object](#seat-bid-object) below. |
 
+### Bid response
+
+Object: Bid
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `ext.dsa` | object | DSA Ad Transparency informatio.|
+
+Object: DSA
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `behalf` | string  | Advertiser Transparency: Free UNICODE text string with a name of whose behalf the ad is displayed. Maximum 100 characters. |
+| `paid` | string | Advertiser Transparency: Free UNICODE text string of who paid for the ad. Must always be included even if it's the same as what is listed in the behalf attribute. Maximum 100 characters.|
+|transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
+|adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
+
+Object: Transparency
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `domain` | string  | Domain of the entity that applied user parameters.|
+| `params` | array of integer | Array of buy-side applied user parameter targeting (using [the list provided by DSA Transparency Taskforce](https://github.com/InteractiveAdvertisingBureau/openrtb/diffs/0?base_sha=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&branch=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&head_user=lamrowena&name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&pull_number=152&qualified_name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&sha1=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&sha2=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&short_path=5ab9e62&unchanged=expanded&w=false#user_parameters)). Include support for multiple vendors who may add their own user-targeting parameters. |
+
+Sample  OpenRTB 2.6 Bid Response with DSA transparency:
+
+```
+{ 
+    "id": "1234567890", 
+    "bidid": "abc1123", 
+    "seatbid": [ 
+        { 
+            "seat": "512", 
+            "bid": [ 
+                { 
+                    "id": "1", 
+
+                    "nurl": "http://adserver.com/winnotice?impid=102", 
+                    "iurl": "http://adserver.com/pathtosampleimage", 
+                    "adomain": [ 
+                        "advertiserdomain.com" 
+                    ], 
+                    "ext": { 
+                        "dsa": { 
+                            "behalf": "Advertiser", 
+                            "paid": "Advertiser", 
+                            "transparency": { 
+                                "domain": "dsp1domain.com", 
+                                "params": [ 
+                                    1, 
+                                    2 
+                                ] 
+                            }, 
+                            "adrender": 1 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    ] 
+} 
+```
+
+
 ### Seat bid object
 
 By default, Xandr will return a single `seatbid` object in the bid response. Xandr can also return multiple `seatbid` objects (multiple bids). Please contact your account representative for more details.

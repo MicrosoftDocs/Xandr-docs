@@ -105,7 +105,7 @@ We support the following fields in the `imp` object, which describe the impres
 | `video` | object | Required if this impression is offered as a video ad. See [Video Object](#video-object) below. |
 | `audio` | object | Required if this impression is offered as an audio ad. See [Audio Object](#audio-object) below. |
 | `native` | object | Required if this impression is offered as a native ad. See [Native Object](#native-object) below |
-| `instl` | integer | Indicates whether the impression is interstitial or full screen. We only support "0" at this time.<br> - `0`: The impression is not interstitial or full screen.<br> - `1`: The impression is interstitial or full screen. |
+| `instl` | integer | Indicates whether the impression is interstitial or full screen. <br> - `0`: The impression is not interstitial or full screen (default).<br> - `1`: The impression is interstitial or full screen. |
 | `tagid` | string | Specifies an identifier for the specific ad placement or ad tag that was used to initiate the auction. This is our platform's placement ID. Omitted if seller visibility settings prohibit sharing. |
 | `bidfloor` | float | Minimum bid for this impression expressed in CPM.<br>Xandr sends the publisher's gross open market floor price in the `bidfloor` field in outgoing bid requests to DSPs downstream. (This includes relevant Xandr seller and buyer fees). This is applicable when the `bidfloor` is set on the publisher's incoming ad request and/or when a publisher's placement reserve price is set. |
 | `bidfloorcur` | string | Currency specified using ISO-4217 alpha codes. This may be different from bid currency returned by bidder if this is allowed by the exchange. |

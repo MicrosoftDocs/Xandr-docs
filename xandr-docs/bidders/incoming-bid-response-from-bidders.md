@@ -37,6 +37,69 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `bid` | array of objects | **Required**: An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](./outgoing-bid-request-to-bidders.md).<br><br>**Note**: If supported by an exchange, one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
 | `seat` | string | **Required**: The ID of the member whose creative is chosen by the bidder and corresponds to the Xandr `member_id`. Also used to populate the `${AUCTION_SEAT_ID}` macro in the win notify URL and creative or pixel payload.<br><br>**Note**: <br> - For DSPs migrated to Buyer Seat ID bidding, they can use buyer IDs native to their own systems. These identifiers will be registered as Seat Codes in Xandr systems.<br> - This feature is currently in Closed Beta. If you are interested in participating, reach out to your Xandr representative. |
 
+### Bid response
+
+Object: Bid
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `ext.dsa` | object | DSA Ad Transparency informatio.|
+
+Object: DSA
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `behalf` | string  | Advertiser Transparency: Free UNICODE text string with a name of whose behalf the ad is displayed. Maximum 100 characters. |
+| `paid` | string | Advertiser Transparency: Free UNICODE text string of who paid for the ad. Must always be included even if it's the same as what is listed in the behalf attribute. Maximum 100 characters.|
+|transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
+|adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
+
+Object: Transparency
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `domain` | string  | Domain of the entity that applied user parameters.|
+| `params` | array of integer | Array of buy-side applied user parameter targeting (using [the list provided by DSA Transparency Taskforce](https://github.com/InteractiveAdvertisingBureau/openrtb/diffs/0?base_sha=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&branch=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&head_user=lamrowena&name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&pull_number=152&qualified_name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&sha1=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&sha2=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&short_path=5ab9e62&unchanged=expanded&w=false#user_parameters)). Include support for multiple vendors who may add their own user-targeting parameters. |
+
+Sample  OpenRTB 2.6 Bid Response with DSA transparency:
+
+```
+{ 
+    "id": "1234567890", 
+    "bidid": "abc1123", 
+    "seatbid": [ 
+        { 
+            "seat": "512", 
+            "bid": [ 
+                { 
+                    "id": "1", 
+
+                    "nurl": "http://adserver.com/winnotice?impid=102", 
+                    "iurl": "http://adserver.com/pathtosampleimage", 
+                    "adomain": [ 
+                        "advertiserdomain.com" 
+                    ], 
+                    "ext": { 
+                        "dsa": { 
+                            "behalf": "Advertiser", 
+                            "paid": "Advertiser", 
+                            "transparency": { 
+                                "domain": "dsp1domain.com", 
+                                "params": [ 
+                                    1, 
+                                    2 
+                                ] 
+                            }, 
+                            "adrender": 1 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    ] 
+} 
+```
+
 ### Bid object
 
 | Field | Type | Description |

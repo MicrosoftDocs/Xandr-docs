@@ -1037,6 +1037,8 @@
       href: prebid-server-premium-demand-partner-integrations.md
     - name: Prebid Server Premium Analytics
       href: prebid-server-premium-analytics.md
+    - name: Prebid Server Premium Request Response Sampler
+      href: prebid-server-premium-request-response-sampler.md
   - name: Explore the Monetization Dashboard
     href: explore-the-monetization-dashboard.md
   - name: Publishers

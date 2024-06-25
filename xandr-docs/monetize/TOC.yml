@@ -997,12 +997,13 @@
       href: prebid-server-premium.md
     - name: Prebid Server Premium Setup
       items:
-    - name: Overview
-      href: psp-common-issues-and-best-practices.md
-    - name: PSP Common Issues and Best Practices
-      items:
       - name: Setting Up Prebid Server Premium
         href: set-up-prebid-server-premium.md
+        items:
+      - name: Overview
+        href: psp-common-issues-and-best-practices.md
+      - name: PSP Common Issues and Best Practices
+        items:
       - name: Integrate with PSP
         items:
         - name: Overview

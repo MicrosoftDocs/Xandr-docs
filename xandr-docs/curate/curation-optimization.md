@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Curation optimization
 
-With the growth of the programmatic industry, systems must process a greater volume of auctions with increasingly complex information. For example, there are now industry IDs, schains, and, in recent years, curated deals incorporated into the auction.
+With the growth of the programmatic industry, systems must process a greater volume of auctions with more and more information. For example, there are now industry IDs, schains, and, in recent years, curated deals incorporated into the auction.
 
 In programmatic auctions, each participating system has a fixed amount of time (a few milliseconds) to process the auction and respond. Therefore, each system must ensure it processes auctions as efficiently as possible, and deprioritizing unnecessary information is one way to drive efficiency.
 
@@ -16,7 +16,7 @@ This ensures that each auction focuses on processing the most valuable curated d
 
 ## Curator's role
 
-Curators don’t need to take additional actions to benefit from Curation Optimization. Curators should be aware that if there is a lack of bidding activity or low levels of spend on a curated deal, both you and the buyer may observe a decrease in matched impressions and bid requests over time. This isn't due to the available supply but rather the sampling applied to the deal.
+Curators don’t need to take additional actions to benefit from Curation Optimization. Curators should be aware that if there is a lack of bidding activity or low levels of spend on a curated deal, both you and the buyer may observe a decrease in impressions matched and bid requests over time. This isn't due to the available supply but rather the sampling applied to the deal.
 
 ### Best practices to follow
 

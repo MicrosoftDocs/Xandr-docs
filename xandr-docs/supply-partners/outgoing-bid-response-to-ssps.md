@@ -89,8 +89,6 @@ Sample  OpenRTB 2.6 Bid Response with DSA transparency:
 } 
 ```
 
-
-
 ### Seat bid object
 
 By default, Xandr will return a single `seatbid` object in the bid response. Xandr can also return multiple `seatbid` objects (multiple bids). Please contact your account representative for more details.

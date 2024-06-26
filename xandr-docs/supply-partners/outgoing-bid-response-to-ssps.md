@@ -4,7 +4,6 @@ description: Learn about different fields like Native object, Bid object, Asset 
 ms.date: 10/28/2023
 ---
 
-
 # Outgoing bid response to SSPs
 
 > [!NOTE]
@@ -21,20 +20,21 @@ Xandr currently supports the following fields in the bid response object:
 
 | Field | Type | Description |
 |--|--|--|
-| `bidid` | string | A randomly-generated bid response ID to assist tracking. |
-| `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, USD is assumed. |
-| `id` | string | The seller's auction ID. This is the same as the ID of the bid request to which this is a response. |
-| `seatbid` | array of objects | Used for identifying `seatbid` objects. See [Seat Bid Object](#seat-bid-object) below. |
+| `bidid` | string | The bid response ID to assist tracking for bidders. This value is chosen by the bidder for cross-reference. <br> **Note**: This is used only to populate the macro `${AUCTION_BID_ID}`. We do not store this information. |
+| `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, default is USD. Also used for the macro `${AUCTION_CURRENCY}` in the win notify URL and creative or pixel payload. |
+| `id` | string | **Required**: The ID of the bid request to which this is a response. |
+| `seatbid` | array of objects |Required if a bid is made: Used for identifying seatbid objects. See [Seat Bid Object](#seat-bid-object) for more information. |
+| `ext` |  |Used for identifying platform-specific extensions to OpenRTB for the bid response object. |
 
-### Bid response
+**Bid Response Extension Object**
 
-Object: Bid
+We support the following fields in the ext object to support platform-specific extensions to the bid `responseobject`: 
 
-| Attribute | Type | Description |
-|:---|:---|:---|
-| `ext.dsa` | object | DSA Ad Transparency informatio.|
+| Field | Type | Description |
+|--|--|--|
+| `dsa` | object | Extension for DSA transparency information.|
 
-Object: DSA
+**DSA extension object**
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -43,7 +43,7 @@ Object: DSA
 |transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
 |adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
 
-Object: Transparency
+**Object: Transparency**
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -88,6 +88,7 @@ Sample  OpenRTB 2.6 Bid Response with DSA transparency:
     ] 
 } 
 ```
+
 
 
 ### Seat bid object

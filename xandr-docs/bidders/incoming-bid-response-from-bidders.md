@@ -27,6 +27,7 @@ Xandr expects all calls to return HTTP code 200 except for an empty bid response
 | `seatbid` | array of objects | **Required if a bid is made**: Used for identifying seatbid objects. See [Seat Bid Object](#seat-bid-object) for more information. |
 |`bidid` | string | The bid response ID to assist tracking for bidders. This value is chosen by the bidder for cross-reference.<br><br> **Note**: This is used only to populate the macro `${AUCTION_BID_ID}`. We do not store this information. |
 | `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, default is USD. Also used for the macro `${AUCTION_CURRENCY}` in the win notify URL and creative or pixel payload. |
+| `ext` | string | Used for identifying platform-specific extensions to the OpenRTB bid response object.|
 
 ### Seat bid object
 
@@ -37,15 +38,30 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `bid` | array of objects | **Required**: An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](./outgoing-bid-request-to-bidders.md).<br><br>**Note**: If supported by an exchange, one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
 | `seat` | string | **Required**: The ID of the member whose creative is chosen by the bidder and corresponds to the Xandr `member_id`. Also used to populate the `${AUCTION_SEAT_ID}` macro in the win notify URL and creative or pixel payload.<br><br>**Note**: <br> - For DSPs migrated to Buyer Seat ID bidding, they can use buyer IDs native to their own systems. These identifiers will be registered as Seat Codes in Xandr systems.<br> - This feature is currently in Closed Beta. If you are interested in participating, reach out to your Xandr representative. |
 
-### Bid response
+### Bid object
 
-Object: Bid
-
-| Attribute | Type | Description |
+| Field | Type | Description |
 |:---|:---|:---|
-| `ext.dsa` | object | DSA Ad Transparency informatio.|
+| `id` | string | **Required**: The ID for the bid object; this is chosen by the bidder for tracking and debugging purposes. Useful when multiple bids are submitted for a single impression for a given seat. |
+| `impid` | string | **Required**: The ID of the impression object to which this bid applies. Should match the `id` field from the bid request's impression object. Can be used to populate the `${AUCTION_IMP_ID}` macro. |
+| `price` | float | **Required**: The bid price expressed in CPM. Also used to populate the `${AUCTION_PRICE}` macro.<br><br>If the `bid_payment_type` is not set to `"Impression"`, then price will be the eCPM price for the bid, and the `payment_type_price` will be used to populate the `${{AUCTION_PRICE} macro.PRICE}` macro.<br><br>**Note**: `bid_payment_type` is not enabled for all clients. Reach out to your account representative for this feature.<br><br>**Warning**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
+| `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](./creative-service.md). This ID references the actual ad to be served if the bid wins. Can be used to populate the $`{AUCTION_AD_ID}` macro. If both `adid` and `crid` are passed, `adid` takes precedence. |
+| `nurl` | string | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, which indicates that we won the auction. Responses will be sent server side. This occurs at the same time when we record the impression. The max length is 2000 characters with macros expanded.<br><br>The following macros are supported in the notify URL:<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the bid object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative<br>`${AN_PAYMENT_TYPE}` - ID of the payment type of bid specified in the `bid_payment_type` field of the bid response<br><br>**Note**: <br> - This macro is not enabled for all clients. Please reach out to your account representative for this feature.<br> - Only the macros in the preceding list can be used in the notify URL, no other macros are supported in the bid response. |
+| `lurl` | string | **Warning**: This feature is currently in closed beta testing and is not available to all bidder integrations. If you would like to use this field in the bid response, please reach out to your account representative or file a support ticket at [https://help.xandr.com](https://help.xandr.com/s/login/).<br><br>Loss notice URL called by Xandr when a bid is known to have been lost. Substitution macros may be included. Responses will be sent server side.<br><br>The following macros are supported in the loss notice URL.<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_LOSS}` - Loss reason codes<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cu`r field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative.<br><br>For the full list of loss reason codes that are supported in the `${AUCTION_LOSS}` macro, see [Loss Reason Codes](./loss-reason-codes.md). |
+| `crid` | string | The creative ID from the bidder's system. Used to reference a Xander creative based on the creative code as set via the [Creative Service](./creative-service.md). If both `adid` and `crid` are passed, `adid` takes precedence. |
+| `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
+| `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
+| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Response Extension Object](#bid-response-extension-object). |
 
-Object: DSA
+### Bid response extension object
+
+We support the following fields in the ext object to support platform-specific extensions to the `bid responseobject`:
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `dsa` | object | DSA object |
+
+### DSA extension object
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -54,7 +70,7 @@ Object: DSA
 |transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
 |adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
 
-Object: Transparency
+### Object: Transparency  
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -99,29 +115,6 @@ Sample  OpenRTB 2.6 Bid Response with DSA transparency:
     ] 
 } 
 ```
-
-### Bid object
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | string | **Required**: The ID for the bid object; this is chosen by the bidder for tracking and debugging purposes. Useful when multiple bids are submitted for a single impression for a given seat. |
-| `impid` | string | **Required**: The ID of the impression object to which this bid applies. Should match the `id` field from the bid request's impression object. Can be used to populate the `${AUCTION_IMP_ID}` macro. |
-| `price` | float | **Required**: The bid price expressed in CPM. Also used to populate the `${AUCTION_PRICE}` macro.<br><br>If the `bid_payment_type` is not set to `"Impression"`, then price will be the eCPM price for the bid, and the `payment_type_price` will be used to populate the `${{AUCTION_PRICE} macro.PRICE}` macro.<br><br>**Note**: `bid_payment_type` is not enabled for all clients. Reach out to your account representative for this feature.<br><br>**Warning**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
-| `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](./creative-service.md). This ID references the actual ad to be served if the bid wins. Can be used to populate the $`{AUCTION_AD_ID}` macro. If both `adid` and `crid` are passed, `adid` takes precedence. |
-| `nurl` | string | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, which indicates that we won the auction. Responses will be sent server side. This occurs at the same time when we record the impression. The max length is 2000 characters with macros expanded.<br><br>The following macros are supported in the notify URL:<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the bid object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative<br>`${AN_PAYMENT_TYPE}` - ID of the payment type of bid specified in the `bid_payment_type` field of the bid response<br><br>**Note**: <br> - This macro is not enabled for all clients. Please reach out to your account representative for this feature.<br> - Only the macros in the preceding list can be used in the notify URL, no other macros are supported in the bid response. |
-| `lurl` | string | **Warning**: This feature is currently in closed beta testing and is not available to all bidder integrations. If you would like to use this field in the bid response, please reach out to your account representative or file a support ticket at [https://help.xandr.com](https://help.xandr.com/s/login/).<br><br>Loss notice URL called by Xandr when a bid is known to have been lost. Substitution macros may be included. Responses will be sent server side.<br><br>The following macros are supported in the loss notice URL.<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_LOSS}` - Loss reason codes<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cu`r field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative.<br><br>For the full list of loss reason codes that are supported in the `${AUCTION_LOSS}` macro, see [Loss Reason Codes](./loss-reason-codes.md). |
-| `crid` | string | The creative ID from the bidder's system. Used to reference a Xander creative based on the creative code as set via the [Creative Service](./creative-service.md). If both `adid` and `crid` are passed, `adid` takes precedence. |
-| `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
-| `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
-| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Response Extension Object](#bid-response-extension-object). |
-
-### Bid response extension object
-
-Xandr supports a single object in the `ext` object to support platform-specific extensions.
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `appnexus` | object | Specifies the platform-specific extensions to the OpenRTB bid response. See [AppNexus Object](#appnexus-object). |
 
 ### AppNexus object
 

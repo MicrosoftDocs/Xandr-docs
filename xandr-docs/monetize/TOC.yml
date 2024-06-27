@@ -1025,6 +1025,8 @@
           href: manage-a-psp-configuration.md
         - name: Manage PSP Configurations in Bulk
           href: manage-psp-configurations-in-bulk.md
+      - name: PSP Common Issues and Best Practices
+        href: psp-common-issues-and-best-practices.md
       - name: Prebid Server Premium Data Passthrough
         href: prebid-server-premium-data-passthrough.md
       - name: Prebid Server Premium Identity & User Syncing

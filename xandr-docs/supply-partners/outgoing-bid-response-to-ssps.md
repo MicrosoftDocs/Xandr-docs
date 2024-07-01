@@ -26,9 +26,43 @@ Xandr currently supports the following fields in the bid response object:
 | `seatbid` | array of objects |Required if a bid is made: Used for identifying seatbid objects. See [Seat Bid Object](#seat-bid-object) for more information. |
 | `ext` |  |Used for identifying platform-specific extensions to OpenRTB for the bid response object. |
 
-**Bid Response Extension Object**
+### Seat bid object
 
-We support the following fields in the ext object to support platform-specific extensions to the bid `responseobject`: 
+By default, Xandr will return a single `seatbid` object in the bid response. Xandr can also return multiple `seatbid` objects (multiple bids). Please contact your account representative for more details.
+
+Xandr supports the following fields in the `seatbid` object:
+
+> [!NOTE]
+> We will not group bids by their seat ids. For example, if there are three bids from the same seat, we will send three seatbid objects.
+
+| Field | Type | Description |
+|--|--|--|
+| `bid` | array of objects | An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](incoming-bid-request-from-ssps.md). Note that one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
+| `seat` | string | Either the `seat_id` passed in the bid request query string (if one was provided) or the Xandr buyer `member_id`. |
+
+### Bid object
+
+| Field | Type | Description |
+|--|--|--|
+| `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
+| `adm` | string | The rendered creative markup to be delivered. Native creatives are returned in this field as a JSON-encoded string. See [Native Object](#native-object) below.<br>**Note**: SSPs can opt to have markup delivered to the win notification (nurl) instead by `specifying` "markup_delivery": 1 in the bid request. |
+| `adomain` | array of strings | A list of URLs associated with the brand of the creative in the bid. |
+| `attr` | array of integers | Set of attributes describing the creative. Refer to section 5.3 of the IAB specification for a list of attributes. |
+| `cat` | array of strings | IAB content categories of the creative. Refer to section 5.1 of the IAB specification for a list of content categories. |
+| `cid` | string | The Xandr buyer's member ID. |
+| `crid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
+| `dealid` | string | The seller's deal ID (Xandr deal code) from the deal object in the [Bid Request](incoming-bid-request-from-ssps.md), if this bid relates to a deal.<br>If the deal does not have a Xandr deal code then we will omit this field. |
+| `ext` | object | Used for identifying Xandr-specific extensions to the OpenRTB bid response. See [Extension Object](#extension-object) below. |
+| `h` | integer | The height of the creative, in pixels. |
+| `id` | string | The unique ID for the bid object; this is chosen by Xandr for tracking and debugging purposes. |
+| `impid` | string | The ID of the impression object to which this bid applies. Will match the `id` field from the bid request's `impression` object. |
+| `iurl` | string | A preview URL for the creative in the bid. |
+| `price` | float | The bid price expressed in CPM.<br>**Note**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
+| `w` | integer | The width of the creative, in pixels. |
+
+**Bid extension object**
+
+We support the following fields in the `bid.ext` object:
 
 | Field | Type | Description |
 |--|--|--|
@@ -88,40 +122,6 @@ Sample  OpenRTB 2.6 Bid Response with DSA transparency:
     ] 
 } 
 ```
-
-### Seat bid object
-
-By default, Xandr will return a single `seatbid` object in the bid response. Xandr can also return multiple `seatbid` objects (multiple bids). Please contact your account representative for more details.
-
-Xandr supports the following fields in the `seatbid` object:
-
-> [!NOTE]
-> We will not group bids by their seat ids. For example, if there are three bids from the same seat, we will send three seatbid objects.
-
-| Field | Type | Description |
-|--|--|--|
-| `bid` | array of objects | An array of bid objects; each bid object relates to an Impression Object in the [Bid Request](incoming-bid-request-from-ssps.md). Note that one Impression Object can have many bid objects. See [Bid Object](#bid-object) for more information. |
-| `seat` | string | Either the `seat_id` passed in the bid request query string (if one was provided) or the Xandr buyer `member_id`. |
-
-### Bid object
-
-| Field | Type | Description |
-|--|--|--|
-| `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
-| `adm` | string | The rendered creative markup to be delivered. Native creatives are returned in this field as a JSON-encoded string. See [Native Object](#native-object) below.<br>**Note**: SSPs can opt to have markup delivered to the win notification (nurl) instead by `specifying` "markup_delivery": 1 in the bid request. |
-| `adomain` | array of strings | A list of URLs associated with the brand of the creative in the bid. |
-| `attr` | array of integers | Set of attributes describing the creative. Refer to section 5.3 of the IAB specification for a list of attributes. |
-| `cat` | array of strings | IAB content categories of the creative. Refer to section 5.1 of the IAB specification for a list of content categories. |
-| `cid` | string | The Xandr buyer's member ID. |
-| `crid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](../bidders/creative-service.md). This ID references the actual ad to be served if the bid wins. |
-| `dealid` | string | The seller's deal ID (Xandr deal code) from the deal object in the [Bid Request](incoming-bid-request-from-ssps.md), if this bid relates to a deal.<br>If the deal does not have a Xandr deal code then we will omit this field. |
-| `ext` | object | Used for identifying Xandr-specific extensions to the OpenRTB bid response. See [Extension Object](#extension-object) below. |
-| `h` | integer | The height of the creative, in pixels. |
-| `id` | string | The unique ID for the bid object; this is chosen by Xandr for tracking and debugging purposes. |
-| `impid` | string | The ID of the impression object to which this bid applies. Will match the `id` field from the bid request's `impression` object. |
-| `iurl` | string | A preview URL for the creative in the bid. |
-| `price` | float | The bid price expressed in CPM.<br>**Note**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
-| `w` | integer | The width of the creative, in pixels. |
 
 ### Native object
 

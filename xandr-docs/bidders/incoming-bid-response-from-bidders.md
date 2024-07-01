@@ -53,9 +53,9 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
 | `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Response Extension Object](#bid-response-extension-object). |
 
-### Bid response extension object
+### Bid extension object
 
-We support the following fields in the ext object to support platform-specific extensions to the `bid responseobject`:
+We support the following fields in the `bid.ext` object:
 
 | Field | Type | Description |
 |:---|:---|:---|

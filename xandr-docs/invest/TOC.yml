@@ -260,6 +260,16 @@
         href: set-up-cross-device-attribution.md
       - name: Cross-Device Reporting
         href: cross-device-reporting.md
+  - name: Trader Home
+    items:
+    - name: Overview
+      href: trader-home.md
+    - name: Getting Started with Trader Home
+      href: getting-started-with-trader-home.md
+    - name: Explore Trader Home
+      href: explore-trader-home.md
+    - name: Explore Insertion Orders Page
+      href: explore-insertion-orders-page.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits
@@ -992,6 +1002,10 @@
   items:
     - name: Overview
       href: release-notes.md
+    - name: 2023 - 2024
+      items:
+        - name: July 01, 2024 - Trader Home
+          href: release-notes-20240701.md
     - name: 2022 - 2023
       items:
         - name: May 22, 2023 - Platform support additional CTV Identifiers

@@ -5,7 +5,7 @@
   - name: Overview
     href: ../bidders/impression-bus-api.md
   - name: Onboarding
-    href: ../bidders/api-onboarding.md.md
+    href: ../bidders/api-onboarding.md
   - name: Semantics
     href: ../bidders/api-semantics.md
   - name: Usage Constraints

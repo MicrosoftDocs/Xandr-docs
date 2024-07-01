@@ -10,6 +10,8 @@
     href: api-semantics.md
   - name: Best Practices
     href: api-best-practices.md
+  - name: Breaking Changes
+    href: breaking-changes.md
 - name: Tutorials
   items:
   - name: Authentication
@@ -24,8 +26,6 @@
     href: api-timezones.md
   - name: Report Pagination
     href: report-pagination.md
-  - name: Breaking Changes
-    href: breaking-changes.md
   - name: Helpful JSON Tools
     href: helpful-json-tools.md
 - name: Ad Tech Concepts

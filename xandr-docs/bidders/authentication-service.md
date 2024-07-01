@@ -59,7 +59,9 @@ curl -v -X POST --data-binary @auth https://api.adnxs.com/auth
 }
 ```
 
-This token can now be used to make a request from the API:
+### STEP 3: Using the token for API calls
+
+The token can now be used to make a request from the API:
 
 ```
 $ curl -H "Authorization: 622cee5f8c99c81e87614e9efc63eddb" https://api.adnxs.com/member
@@ -100,5 +102,13 @@ $ curl -b cookies https://api.adnxs.com/member
     }
 }
 ```
+## Authentication frequency
+
+After authenticating, your token remains valid for 2 hours. You do not need to re-authenticate within this time.
 > [!NOTE]
-> You can authenticate successfully 10 times within a 5-minute period. Any subsequent authentication attempts within those 5 minutes result in an error.
+> If you do re-authenticate, be aware of the following limitation:
+>
+> 1. The API permits you to authenticate successfully 10 times per 5-minute period.
+> 1. Any subsequent authentication attempts within those 5 minutes will result in an error.
+> [!TIP]
+> It is best practice to listen for the "NOAUTH" `error_id` in your call responses and re-authenticate only after receiving it.

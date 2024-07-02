@@ -1,6 +1,6 @@
 ---
 title: Throttling Pagination and Filtering - Impression Bus API
-description: In this article, learn about the concepts such as, Throttling, Pagination, and Filtering, accompanied by examples.
+description: In this article, learn about the concepts such as, Throttling, Pagination, and Filtering in Impression Bus API, accompanied by examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

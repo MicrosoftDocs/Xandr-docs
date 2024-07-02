@@ -27,9 +27,9 @@ Reporting currently defaults to Eastern Time except for Network Billing, which i
 
 ## Member service
 
-If the parent member's timezone is changed through the [Member Service](./member-service.md), the child object timezones do not change. You cannot make a member's timezone "trickle down" after a change. You would have to change your existing advertiser timezones through the [Advertiser Service](./advertiser-service.md).
+If the parent member's timezone is changed through the [Member Service](./member-service.md), the child object timezones do not change. You cannot make a member's timezone "trickle down" after a change.
 
-## Advertiser service
+<!--## Advertiser service
 
 If an advertiser is created without a timezone, it will take on the timezone of its member parent.
 
@@ -41,7 +41,7 @@ When you change an advertiser's timezone, you can choose whether or not to make 
 - [Line Item Service](line-item-service.md)
 - [Campaign Service](campaign-service.md)
 - [Publisher Service](publisher-service.md)
-- [Payment Rule Service](payment-rule-service.md)
+- [Payment Rule Service](payment-rule-service.md)-->
 
 ## Accepted timezone values for objects
 
@@ -636,4 +636,4 @@ When you use the [Report Service](./report-service.md) to request a report, you 
 
 ## Further reading
 
-Dates and Times in Reporting: A more high-level, UI-specific page on this information. Customer login to [Monetize](https://monetize.xandr.com/docs/dates-and-times-in-reporting) or [Invest](https://invest.xandr.com/docs/dates-and-times-in-reporting) is required.
+Dates and Times in Reporting: A more high-level, UI-specific page on this information. Customer login to [Monetize](https://monetize.xandr.com) or [Invest](https://invest.xandr.com/) is required. Refer to [dates and times in reporting](../monetize/dates-and-times-in-reporting.md) for more details.

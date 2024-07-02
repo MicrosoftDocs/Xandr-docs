@@ -60,7 +60,7 @@ Xandr supports the following fields in the `seatbid` object:
 | `price` | float | The bid price expressed in CPM.<br>**Note**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
 | `w` | integer | The width of the creative, in pixels. |
 
-**Bid extension object**
+### Bid extension object
 
 We support the following fields in the `bid.ext` object:
 
@@ -68,7 +68,7 @@ We support the following fields in the `bid.ext` object:
 |--|--|--|
 | `dsa` | object | Extension for DSA transparency information.|
 
-**DSA extension object**
+### DSA extension object
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -77,7 +77,7 @@ We support the following fields in the `bid.ext` object:
 |transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
 |adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
 
-**Object: Transparency**
+### Object: Transparency
 
 | Attribute | Type | Description |
 |:---|:---|:---|
@@ -195,7 +195,7 @@ Used to define the link for a native asset. When clicked, the user is taken to t
 | `fallback` | string | A fallback URL to be used if the URL is not supported by the device. |
 | `url` | string | (Required) The landing URL for the clickable link. |
 
-**Event trackers response object**
+### Event trackers response object
 
 Xandr supports the following fields in the `event trackers response` object (Native 1.2 only):
 

@@ -1,6 +1,6 @@
 ---
 title: Helpful JSON Tools for APIs
-description: Learn about a few tools and tricks when using the APIs.
+description: Learn about a few tools and tricks when using the Impression Bus APIs.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

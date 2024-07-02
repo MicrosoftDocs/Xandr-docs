@@ -1,6 +1,6 @@
 ---
 title: Impression Bus API Report Pagination
-description: Explore the Report Pagination feature, which permits API users to fetch lengthy reports, preventing timeouts during processing.
+description: Explore the Report Pagination feature, which permits Impression Bus API users to fetch lengthy reports, preventing timeouts during processing.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

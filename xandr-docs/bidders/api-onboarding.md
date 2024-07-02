@@ -1,6 +1,6 @@
 ---
 title: Impression Bus API onboarding process
-description: Integrate with APIs by following the instructions in the API onboarding process.
+description: Integrate with Impression Bus APIs by following the instructions in the API onboarding process.
 ms.date: 07/01/2024
 ---
 
@@ -10,8 +10,6 @@ Customers who plan to integrate with Xandr APIs need to complete the following s
 
 > [!NOTE]
 > The Xandr API endpoints are accessible only to current customers. If you're not currently a Xandr customer but are interested in becoming one, [request a consultation](https://about.ads.microsoft.com/en-us/solutions/xandr/contact-xandr).
-
-To know more about Xandr's API, go to [Reference](./reference.md) page.
 
 ## Get API access
 
@@ -35,7 +33,7 @@ After you've been granted access, you can use the following endpoints:
 
 ## Read the documentation
 
-The API documentation provides insight into the structure of the API and will help you determine the best approach for integration as well as provide details on typical use cases. Read through the [Reference](./reference.md) to find information and examples for the individual services that are available to you.
+The API documentation provides insight into the structure of the API and will help you determine the best approach for integration as well as provide details on typical use cases.
 
 > [!TIP]
 > **API change information**

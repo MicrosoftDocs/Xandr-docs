@@ -15,7 +15,7 @@ A bidder will send a bid response after it receives a [Bid Request](./outgoing-b
 
 Refer to the following links to locate the objects that you need more information on.
 
-[Bid request object](#bid-response-object) | [Seat Bid Object](#seat-bid-object) | [Bid Object](#bid-object) | [Bid Response Extension Object](#bid-response-extension-object) | [AppNexus Object](#appnexus-object) | [Custom Macro Object](#custom-macro-object) | [Bid Payment Type Object](#bid-payment-type-object) |
+[Bid request object](incoming-bid-response-from-bidders.md#bid-response-object) | [Seat Bid Object](incoming-bid-response-from-bidders.md#seat-bid-object)| [Bid Object](incoming-bid-response-from-bidders.md#bid-object) | [Bid Response Extension Object](incoming-bid-response-from-bidders.md#bid-response-extension-object) | [AppNexus Object](incoming-bid-response-from-bidders.md#appnexus-object)| [Custom Macro Object](incoming-bid-response-from-bidders.md#custom-macro-object)| [Bid Payment Type Object](incoming-bid-response-from-bidders.md#bid-payment-type-object)|
 
 Xandr expects all calls to return HTTP code 200 except for an empty bid response (no bid), which will return HTTP code 204. We currently support the following fields in the bid response object.
 

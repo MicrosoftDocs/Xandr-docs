@@ -15,7 +15,7 @@ A bidder will send a bid response after it receives a [Bid Request](./outgoing-b
 
 Refer to the following links to locate the objects that you need more information on.
 
-[Bid request object](incoming-bid-response-from-bidders.md#bid-response-object) | [Seat Bid Object](incoming-bid-response-from-bidders.md#seat-bid-object)| [Bid Object](incoming-bid-response-from-bidders.md#bid-object) | [Bid Response Extension Object](incoming-bid-response-from-bidders.md#bid-response-extension-object) | [AppNexus Object](incoming-bid-response-from-bidders.md#appnexus-object)| [Custom Macro Object](incoming-bid-response-from-bidders.md#custom-macro-object)| [Bid Payment Type Object](incoming-bid-response-from-bidders.md#bid-payment-type-object)|
+[Bid response object](incoming-bid-response-from-bidders.md#bid-response-object) | [Seat Bid Object](incoming-bid-response-from-bidders.md#seat-bid-object)| [Bid Object](incoming-bid-response-from-bidders.md#bid-object) | [Bid Extension Object](incoming-bid-response-from-bidders.md#bid-extension-object) | [AppNexus Object](incoming-bid-response-from-bidders.md#appnexus-object)| [Custom Macro Object](incoming-bid-response-from-bidders.md#custom-macro-object)| [Bid Payment Type Object](incoming-bid-response-from-bidders.md#bid-payment-type-object)|
 
 Xandr expects all calls to return HTTP code 200 except for an empty bid response (no bid), which will return HTTP code 204. We currently support the following fields in the bid response object.
 
@@ -51,7 +51,7 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `crid` | string | The creative ID from the bidder's system. Used to reference a Xander creative based on the creative code as set via the [Creative Service](./creative-service.md). If both `adid` and `crid` are passed, `adid` takes precedence. |
 | `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
 | `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
-| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Response Extension Object](#bid-response-extension-object). |
+| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Extension Object](#bid-extension-object). |
 
 ### Bid extension object
 

@@ -64,7 +64,7 @@ PSP supports pass-through of device IDs such as IDFAs and AAIDs. No action is ne
 
 ### Common industry identifiers
 
-PSP supports pass-through of select industry identifiers supported by Microsoft Monetize such as UID 2.0. When a given industry ID is supported, it generally does not require action on the part of the publisher to be passed to demand partners. Contact your Microsoft Advertising Representative for more details.
+PSP supports pass-through of select industry identifiers supported by Microsoft Monetize such as UID 2.0. When a given industry ID is supported, it generally does not require action on the part of the publisher to be passed to demand partners. Contact your Microsoft Advertising Representative for more details. For more information, see the [supported industry identifiers for Microsoft Monetize](universal-id-support-matrix-for-sellers.md).
 
 ### Publisher provided identifiers
 

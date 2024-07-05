@@ -15,7 +15,7 @@ A bidder will send a bid response after it receives a [Bid Request](./outgoing-b
 
 Refer to the following links to locate the objects that you need more information on.
 
-[Bid request object](#bid-response-object) | [Seat Bid Object](#seat-bid-object) | [Bid Object](#bid-object) | [Bid Response Extension Object](#bid-response-extension-object) | [AppNexus Object](#appnexus-object) | [Custom Macro Object](#custom-macro-object) | [Bid Payment Type Object](#bid-payment-type-object) |
+[Bid response object](incoming-bid-response-from-bidders.md#bid-response-object) | [Seat Bid Object](incoming-bid-response-from-bidders.md#seat-bid-object)| [Bid Object](incoming-bid-response-from-bidders.md#bid-object) | [Bid Extension Object](incoming-bid-response-from-bidders.md#bid-extension-object) | [AppNexus Object](incoming-bid-response-from-bidders.md#appnexus-object)| [Custom Macro Object](incoming-bid-response-from-bidders.md#custom-macro-object)| [Bid Payment Type Object](incoming-bid-response-from-bidders.md#bid-payment-type-object)|
 
 Xandr expects all calls to return HTTP code 200 except for an empty bid response (no bid), which will return HTTP code 204. We currently support the following fields in the bid response object.
 
@@ -27,6 +27,7 @@ Xandr expects all calls to return HTTP code 200 except for an empty bid response
 | `seatbid` | array of objects | **Required if a bid is made**: Used for identifying seatbid objects. See [Seat Bid Object](#seat-bid-object) for more information. |
 |`bidid` | string | The bid response ID to assist tracking for bidders. This value is chosen by the bidder for cross-reference.<br><br> **Note**: This is used only to populate the macro `${AUCTION_BID_ID}`. We do not store this information. |
 | `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, default is USD. Also used for the macro `${AUCTION_CURRENCY}` in the win notify URL and creative or pixel payload. |
+| `ext` | string | Used for identifying platform-specific extensions to the OpenRTB bid response object.|
 
 ### Seat bid object
 
@@ -50,15 +51,70 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `crid` | string | The creative ID from the bidder's system. Used to reference a Xander creative based on the creative code as set via the [Creative Service](./creative-service.md). If both `adid` and `crid` are passed, `adid` takes precedence. |
 | `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
 | `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
-| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Response Extension Object](#bid-response-extension-object). |
+| `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Extension Object](#bid-extension-object). |
 
-### Bid response extension object
+### Bid extension object
 
-Xandr supports a single object in the `ext` object to support platform-specific extensions.
+We support the following fields in the `bid.ext` object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `appnexus` | object | Specifies the platform-specific extensions to the OpenRTB bid response. See [AppNexus Object](#appnexus-object). |
+| `dsa` | object | DSA object |
+
+### DSA extension object
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `behalf` | string  | Advertiser Transparency: Free UNICODE text string with a name of whose behalf the ad is displayed. Maximum 100 characters. |
+| `paid` | string | Advertiser Transparency: Free UNICODE text string of who paid for the ad. Must always be included even if it's the same as what is listed in the behalf attribute. Maximum 100 characters.|
+|transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
+|adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
+
+### Object: Transparency  
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `domain` | string  | Domain of the entity that applied user parameters.|
+| `params` | array of integer | Array of buy-side applied user parameter targeting (using [the list provided by DSA Transparency Taskforce](https://github.com/InteractiveAdvertisingBureau/openrtb/diffs/0?base_sha=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&branch=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&head_user=lamrowena&name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&pull_number=152&qualified_name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&sha1=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&sha2=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&short_path=5ab9e62&unchanged=expanded&w=false#user_parameters)). Include support for multiple vendors who may add their own user-targeting parameters. |
+
+Sample  OpenRTB 2.6 Bid Response with DSA transparency:
+
+```
+{ 
+    "id": "1234567890", 
+    "bidid": "abc1123", 
+    "seatbid": [ 
+        { 
+            "seat": "512", 
+            "bid": [ 
+                { 
+                    "id": "1", 
+
+                    "nurl": "http://adserver.com/winnotice?impid=102", 
+                    "iurl": "http://adserver.com/pathtosampleimage", 
+                    "adomain": [ 
+                        "advertiserdomain.com" 
+                    ], 
+                    "ext": { 
+                        "dsa": { 
+                            "behalf": "Advertiser", 
+                            "paid": "Advertiser", 
+                            "transparency": { 
+                                "domain": "dsp1domain.com", 
+                                "params": [ 
+                                    1, 
+                                    2 
+                                ] 
+                            }, 
+                            "adrender": 1 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    ] 
+} 
+```
 
 ### AppNexus object
 

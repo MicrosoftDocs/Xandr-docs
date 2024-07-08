@@ -1006,6 +1006,10 @@
      # items:
         #- name: July 01, 2024 - Trader Home
          # href: release-notes-20240701.md
+    - name: 2024 - 2025
+      items:
+        - name: July 8, 2024 - Modeled Audiences
+          href: release-notes-20240708.md
     - name: 2022 - 2023
       items:
         - name: May 22, 2023 - Platform support additional CTV Identifiers

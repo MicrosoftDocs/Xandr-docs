@@ -11,14 +11,14 @@ ms.date: 10/28/2023
 
 ### How do I offer deals to buyers?
 
-As a seller, you can use deals to provide buyers special access to your inventory and/or data. For example, a deal might provide preferential pricing on inventory, access to exclusive inventory, reduced competition on inventory, or other opportunities.
+As a seller, you can use deals to provide buyers special access to your inventory and/or data. For example, a deal might provide preferential pricing on inventory, access to exclusive inventory, reduced competition on inventory, or other opportunities. For more details, see [Create a Custom Deal](create-a-custom-deal.md).
 
-There are two ways to offer deals to buyers:
+<!--There are two ways to offer deals to buyers:
 
 - **Packages**: Packages are pre-made combinations of your inventory and/or data. Buyers can browse your packages and create deals from them "off-the-shelf", or they can use your packages as a jumping-off point for deal negotiations.
-- **Deals**: In cases where your packages don't meet a buyer's needs, you can create a one-off custom deal for the buyer. For more details, see [Create a Package](create-a-package.md) and [Create a Custom Deal](create-a-custom-deal.md).
+- **Deals**: In cases where your packages don't meet a buyer's needs, you can create a one-off custom deal for the buyer. For more details, see [Create a Package](create-a-package.md) and [Create a Custom Deal](create-a-custom-deal.md).-->
 
-### Where can I view and manage my packages and deals?
+<!--### Where can I view and manage my packages and deals?
 
 You can use the **Packages** screen to search your packages, view details about specific packages, edit package settings, create new packages, preview how your packages look to buyers, share your packages with buyers, and more. For more details, see [Manage Your Packages](manage-your-packages.md).
 
@@ -26,7 +26,7 @@ You can use the **Deals** screen to view deal details, monitor each deal's healt
 
 ### What can I include in a package or deal?
 
-You can select specific inventory, segments, sizes, or brands to include in your deal. For more information, see [Create a Package](create-a-package.md) and [Create a Custom Deal](create-a-custom-deal.md).
+You can select specific inventory, segments, sizes, or brands to include in your deal. For more information, see [Create a Package](create-a-package.md) and [Create a Custom Deal](create-a-custom-deal.md).-->
 
 ### Can I create a guaranteed deal for a buyer?
 
@@ -52,10 +52,11 @@ Deal prices take priority over floor prices. If you have a deal with no ask pric
 
 ### How do I get deals from sellers?
 
-A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. As a Monetize buyer, there are two ways to strikes deals with sellers:
+A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. As a Monetize buyer, you can kick off negotiations for one-off deals with sellers.
+<!--there are two ways to strikes deals with sellers:
 
 - [Get Deals from Seller Packages](get-deals-from-seller-packages.md) - Browse Monetize sellers' pre-made combinations of inventory and/or data and immediately convert them into deals or use them as a jumping-off point for custom deal negotiations
-- [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md) - If you don't find packages that meet your needs, kick off negotiations for one-off deals with sellers.
+- [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md) - If you don't find packages that meet your needs, kick off negotiations for one-off deals with sellers.-->
 
 ### Where can I view and manage my deals?
 

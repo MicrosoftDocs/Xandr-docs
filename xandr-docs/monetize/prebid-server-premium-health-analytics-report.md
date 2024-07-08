@@ -100,7 +100,7 @@ Data in this report is retained for the past 33 days of activity.
 | User Matched Requests Rate | The number of user matched requests divided by the number of bid requests sent to demand partners. |
 | Valid Bids On Impression Rate | The number of valid bids divided by the number of bid requests sent to demand partners. |
 | Valid Bids On Imps | The number of bids received from demand partners that do not trigger errors, have a creative ID, and have a bid above $0. There may be multiple bids counted for each auction when multiple demand partners return bids. |
-| Win Rate | This metric should only be used with the demand partner dimension applied. It is the percentage of how many times a demand partner delivered an impression when considering all opportunities a demand partner had to win the auction. The calculation is the number of impressions delivered divided by the number of bid requests sent to demand partners. |
+| Win Rate | This metric should only be used with the demand partner dimension applied. It represents the percentage of impressions delivered by a demand partner relative to the total bid responses received. The calculation involves dividing the number of impressions delivered by the demand partner by the total number of bid responses received.|
 
 ## Error types
 

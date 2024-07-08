@@ -25,8 +25,8 @@ landingContent:
         links:
           - text: Impression Counting Mechanism
             url: impression-counting-methods.md
-          - text: Impression Counting Mechanism (v8.0 and above)
-            url: updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md
+          #- text: Impression Counting Mechanism (v8.0 and above)
+            #url: updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md
   - title: iOS SDK
     linkLists:
       - linkListType: overview

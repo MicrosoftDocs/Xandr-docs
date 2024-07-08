@@ -200,7 +200,7 @@ Complete the **Associated Creatives** section to set your creative rotation pref
 
 - [Buying Deals](buying-deals.md)
 - [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md)
-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
+<!-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)-->
 - [Deal Auction Mechanics](deal-auction-mechanics.md)
 - [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md)
 - [Partnership Details Screen - Buyer View](partnership-details-screen-buyer-view.md)

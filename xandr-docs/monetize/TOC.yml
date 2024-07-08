@@ -196,12 +196,6 @@
     items:
     - name: Overview
       href: selling-deals.md
-    - name: Create a Package
-      href: create-a-package.md
-    - name: Manage Your Packages
-      href: manage-your-packages.md
-    - name: Share Your Packages with Buyers
-      href: share-your-packages-with-buyers.md
     - name: Create a Custom Deal
       href: create-a-custom-deal.md
     - name: Override Ad Quality Settings on a Deal
@@ -244,8 +238,6 @@
     items:
     - name: Overview
       href: buying-deals.md
-    - name: Get Deals from Seller Packages
-      href: get-deals-from-seller-packages.md
     - name: Negotiate Deals with Sellers
       href: negotiate-deals-with-sellers.md
     - name: Manage Your Deals with Sellers
@@ -1033,6 +1025,8 @@
           href: manage-a-psp-configuration.md
         - name: Manage PSP Configurations in Bulk
           href: manage-psp-configurations-in-bulk.md
+      - name: PSP Common Issues and Best Practices
+        href: psp-common-issues-and-best-practices.md
       - name: Prebid Server Premium Data Passthrough
         href: prebid-server-premium-data-passthrough.md
       - name: Prebid Server Premium Identity & User Syncing
@@ -1045,6 +1039,8 @@
       href: prebid-server-premium-demand-partner-integrations.md
     - name: Prebid Server Premium Analytics
       href: prebid-server-premium-analytics.md
+    - name: Prebid Server Premium Request Response Sampler
+      href: prebid-server-premium-request-response-sampler.md
   - name: Explore the Monetization Dashboard
     href: explore-the-monetization-dashboard.md
   - name: Publishers
@@ -1311,6 +1307,8 @@
     items:
     - name: Create a Deal Line Item
       href: create-a-deal-line-item.md
+    - name: Create a Simplified Deal Line Item
+      href: create-a-simplified-deal-line-item.md 
     - name: Understanding Multi-Buyer Deals
       href: understanding-multi-buyer-deals.md
     - name: Set Up Multi-Buyer Deals
@@ -1347,6 +1345,8 @@
       href: seller-creative-review-list.md
     - name: Approve and Reject Creatives
       href: approve-and-reject-creatives.md
+  - name: Universal ID Support Matrix for Sellers
+    href: universal-id-support-matrix-for-sellers.md
 - name: Viewability
   items:
   - name: Introduction to Viewability

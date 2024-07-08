@@ -25,7 +25,7 @@ In general, Send Top Bid should be used by default if you do not have bidder-spe
 
 To set up Prebid.js with Send Top Bid:
 
-1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Microsoft Advertising (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
+1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid/prebidjs.html) that uses the [Microsoft Advertising (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
 
     This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Advertising this way.
 
@@ -50,6 +50,9 @@ To set up Prebid.js with Send All Bids:
 1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Microsoft Advertising (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
 
     This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Advertising this way.
+
+   > [!NOTE]
+   > When using Prebid.js 9.0 or higher, include the **anPspParamsConverter module in every Prebid.js build** for pages that use Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
 
 1. Call the Microsoft Advertising SSP client-side using the `/openrtb2/prebid` endpoint
 

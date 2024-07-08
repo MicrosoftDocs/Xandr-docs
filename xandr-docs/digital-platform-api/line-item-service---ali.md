@@ -661,7 +661,6 @@ Each object in the `budget_intervals` array contains the following fields.
 | `lifetime_budget` | double | The lifetime budget in revenue for the budget interval. The revenue currency is defined by the `currency` field on the `insertion_order` object.<br><br>**Note:**<br>If you also set the `lifetime_budget_imps` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `lifetime_budget_imps` | double | The lifetime budget in impressions for the budget interval. <br><br>**Note:** If you add line items to this insertion order, any spend already associated with those line items before they are added to the insertion order is NOT counted against the lifetime budget of the insertion order. Only spend that occurs while the line item is a child of the insertion order is counted.<br><br>**Note:**<br>If you also set the `lifetime_budget` field in this array, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `lifetime_pacing` | boolean | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. If `true`, you must set `lifetime_budget` or `lifetime_budget_imps`. |
-| `subflights`<br><br>**Note:**<br>Subflights are an **Alpha** feature. If you'd like to gain access to them for your augmented line item, contact your Xandr account representative. | array of objects | An optional array that contains subflights you can create to further customize your budget interval's budgeting and scheduling behavior. Subflights allow you to set custom budget and pacing settings for specific days within a line item flight.<br>For more information on the `subflights` array of key-value objects, see the [Subflights](#subflights) table below.<br><br>**Note:** Line items can use no more than one subflight for any given date. |
 | `daily_budget` | double | The daily budget in revenue for the budget interval. The revenue currency is defined by the `currency` field on the `insertion_order` object. <br><br>**Note:** If you add line items to this insertion order, any impressions associated to those line items when they are added to the insertion order are NOT counted under the lifetime budget of the insertion order. Only impressions that occur while the line item is a child of the insertion order are counted.<br><br>**Note:**<br>If you also set the `daily_budget_imps` field, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `daily_budget_imps` | double | The daily budget in impressions.<br><br>**Note:**<br>If the parent insertion order's `budget_type` field has been set to `"impression"` *and* the line items `revenue_type` field has been set to Viewable CPM, only the viewable impressions count against both line item and insertion order budgets.<br><br>If you also set the `daily_budget` field, whichever budget is exhausted first will cause spending to stop. Best practice is to only set one of these fields. |
 | `enable_pacing` | boolean | If `true`, then spending will be paced over the course of the day. Only applicable if there is a `daily_budget`. |
@@ -686,13 +685,6 @@ $ cat delete-budget-interval
   }
 }
 ```
-
-### Subflights
-
-Subflights allow you to set custom budget and pacing settings for specific days within a line item flight. They're an **Alpha** feature, so contact your Xandr account representative if you'd like to gain access to them for your augmented line item.
-
-> [!NOTE]
-> Line items can use no more than one subflight for any given date.
 
 #### Create a subflight
 

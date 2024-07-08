@@ -2,30 +2,30 @@
   href: index.yml
 - name: Getting Started
   items:
-  - name: API Getting Started
+  - name: Overview
     href: api-getting-started.md
-  - name: API Onboarding Process
+  - name: Onboarding
     href: api-onboarding-process.md
-  - name: API Semantics
+  - name: Semantics
     href: api-semantics.md
-  - name: API Best Practices
+  - name: Best Practices
     href: api-best-practices.md
+  - name: Breaking Changes
+    href: breaking-changes.md
 - name: Tutorials
   items:
-  - name: API Authentication
+  - name: Authentication
     href: 04---api-authentication.md
   - name: Token-Based Authentication
     href: token-based-api-authentication.md
   - name: Throttling, Pagination and Filtering
     href: 05---throttling-pagination-and-filtering.md
-  - name: API Usage Constraints
+  - name: Usage Constraints
     href: api-usage-constraints.md
-  - name: API Timezones
+  - name: Timezones
     href: api-timezones.md
   - name: Report Pagination
     href: report-pagination.md
-  - name: Breaking Changes
-    href: breaking-changes.md
   - name: Helpful JSON Tools
     href: helpful-json-tools.md
 - name: Ad Tech Concepts

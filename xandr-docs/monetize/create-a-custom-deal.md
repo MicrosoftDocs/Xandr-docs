@@ -11,7 +11,7 @@ As a seller, you can create a custom deal for a specific buyer that applies to s
 > [!NOTE]
 > Before you create a custom deal, you should communicate with the buyer to ensure you're using the correct buyer ID. If you plan to use a buyer seat ID from an external DSP, you should also check the Buyer Seat Migration Status reference table in [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).
 
-If you would like to create a package for buyers to browse and generate their own deals, see [Create a Package](create-a-package.md).
+<!--If you would like to create a package for buyers to browse and generate their own deals, see [Create a Package](create-a-package.md).-->
 
 This page describes the properties you can define when creating a deal.
 

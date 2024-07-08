@@ -2,12 +2,42 @@
     "redirections": [
         {
             "source_path": "xandr-docs/invest/programmatic-buying-on-xbox-for-marketers.md",
-            "redirect_url": "xandr-docs/invest/buying-microsoft-inventory.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/invest/buying-microsoft-inventory",
             "redirect_document_id": false
         },
         {
             "source_path": "xandr-docs/monetize/programmatic-buying-on-xbox-for-marketers.md",
-            "redirect_url": "xandr-docs/monetize/buying-microsoft-inventory.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/buying-microsoft-inventory",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/mobile-sdk/updated-impression-counting-mechanism-mobile-sdk-v8-0-and-above.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/mobile-sdk/impression-counting-methods",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/create-a-package.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/manage-your-packages.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/share-your-packages-with-buyers.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/get-deals-from-seller-packages.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/invest/get-deals-from-seller-packages.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/invest/negotiate-deals-with-sellers",
             "redirect_document_id": false
         }
     ]

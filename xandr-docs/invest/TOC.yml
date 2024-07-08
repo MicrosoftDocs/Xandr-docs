@@ -260,6 +260,16 @@
         href: set-up-cross-device-attribution.md
       - name: Cross-Device Reporting
         href: cross-device-reporting.md
+ # - name: Trader Home
+  #  items:
+   # - name: Overview
+    #  href: trader-home.md
+    #- name: Getting Started with Trader Home
+    #  href: getting-started-with-trader-home.md
+    #- name: Explore Trader Home
+     # href: explore-trader-home.md
+    #- name: Explore Insertion Orders Page
+     # href: explore-insertion-orders-page.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits
@@ -506,6 +516,8 @@
       href: data-cost-calculation-mechanics.md
     - name: Data Marketplace FAQ(s)
       href: data-marketplace-faq.md
+  - name: Universal ID Support Matrix for Buyers
+    href: universal-id-support-matrix-for-buyers.md
 - name: Buy Side Targeting
   items:
   - name: Daypart Targeting
@@ -754,8 +766,6 @@
       href: appnexus-direct-for-buyers.md
   - name: Buying Deals
     items:
-    - name: Get Deals from Seller Packages
-      href: get-deals-from-seller-packages.md
     - name: Negotiate Deals with Sellers
       href: negotiate-deals-with-sellers.md
     - name: Manage Your Deals with Sellers
@@ -992,9 +1002,13 @@
   items:
     - name: Overview
       href: release-notes.md
+    #- name: 2023 - 2024
+     # items:
+        #- name: July 01, 2024 - Trader Home
+         # href: release-notes-20240701.md
     - name: 2024 - 2025
       items:
-        - name: May 24, 2024 - Modeled Audiences
+        - name: July 8, 2024 - Modeled Audiences
           href: release-notes-20240524.md
     - name: 2022 - 2023
       items:

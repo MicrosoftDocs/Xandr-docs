@@ -121,5 +121,5 @@ To assign a **Deal Alias** to a deal, do the following:
 
 - [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md)
 - [Partnership Details Screen](partnership-details-screen-buyer-view.md)
-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
+<!-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)-->
 - [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md)

@@ -17,7 +17,7 @@ This page explains how to negotiate and set up deals with sellers and external s
 
 ## Deals with sellers
 
-As a buyer, the best way to find deals is to browse seller packages, which are pre-made combinations of inventory and/or data that can be immediately converted into deals or can be used as a jumping-off point for custom deal negotiations. For more details, see [Get Deals from Seller Packages](./get-deals-from-seller-packages.md).
+As a buyer, you can setup deals with sellers.
 
 ## Deals with external supply partners
 

@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Prebid Demand Partner Params service
 
-The Prebid Demand Partner Params Service allows users to view, add, remove, enable, and disable specific partners on PSP configurations. Configurations are managed via the [Config Service](config-service.md). A demand partner must be enabled in the [Cross-Partner Settings Service](cross-partner-settings-service.md) to receive requests.
+The Prebid Demand Partner Params Service allows users to view, add, remove, enable, and disable specific partners on PSP configurations. Configurations are managed via the [Config Service](config-service.md). A demand partner must be enabled in the [Cross-Partner Settings Service](../digital-platform-api/cross-partner-settings-service.md) before they can be added to any configurations in the params service and before they can receive bid requests through Prebid Server Premium (PSP). Attempting to add a partner who is not present in the Cross-Partner Settings will result in an error.
 
 > [!NOTE]
 > While a partner may be disabled via this service at the configuration level, any future changes to the partner in the [Cross-Partner Settings Service](cross-partner-settings-service.md) will override individual configurations and enable/disable the partner across all configurations. Details on the parameters supported by each partner can be found in the [Demand Partner Schema Service](demand-partner-schema-service.md).

@@ -15,6 +15,7 @@ Prebid Server Premium (PSP) setup should be completed following each of the reso
 
 Additional guidance for PSP setup:
 
+ - [PSP common issues and best practices](psp-common-issues-and-best-practices.md)
  - [Video Guidance](video-guidance.md)
  - [Price Bucket Currency](price-bucket-currency.md)
  - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
@@ -22,3 +23,11 @@ Additional guidance for PSP setup:
 
   > [!NOTE]
   > At this time, not all clients have access to PSP. If you would like more information, please contact your Microsoft Advertising Representative.
+
+## Related topics
+
+- [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
+- [Integrate Apps with PSP](integrate-apps-with-psp.md)
+- [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
+- [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
+- [Long Form Video Service](../digital-platform-api/long-form-video-service.md)

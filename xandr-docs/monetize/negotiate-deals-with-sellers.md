@@ -15,9 +15,9 @@ Microsoft Advertising Buyers can negotiate custom deals with sellers to obtain:
 
 This page explains how to negotiate and set up deals with sellers and external supply partners.
 
-## Deals with sellers
+<!--## Deals with sellers
 
-As a buyer, the best way to find deals is to browse seller packages, which are pre-made combinations of inventory and/or data that can be immediately converted into deals or can be used as a jumping-off point for custom deal negotiations. For more details, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).
+As a buyer, the best way to find deals is to browse seller packages, which are pre-made combinations of inventory and/or data that can be immediately converted into deals or can be used as a jumping-off point for custom deal negotiations. For more details, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).-->
 
 ## Deals with external supply partners
 
@@ -41,6 +41,6 @@ You must negotiate deals with these supply partners offline and save them in the
 ## Related topics
 
 - [Buying Deals](buying-deals.md)
-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
+<!--- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)-->
 - [Deal Targeting (ALI)](deal-targeting-ali.md)
 - [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md)

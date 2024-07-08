@@ -48,6 +48,14 @@ To set up Prebid Mobile SDK with PSP:
     VideoAdUnit adUnit = new VideoAdUnit("Your placement id", 640, 480, VideoAdUnit.PlacementType.IN_BANNER);
     ```
 
+1. In the Initialize SDK documentation section, note the PSP status endpoint to use is `https://ib.adnxs.com/status`. Implemented, this would be:
+
+   ```
+   PrebidMobile.setCustomStatusEndpoint("https://ib.adnxs.com/status")
+   ```
+
+1. When offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` immediately after SDK initialization.
+
 <!--## Non-SDK
 
 ### Context

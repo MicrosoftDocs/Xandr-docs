@@ -25,5 +25,5 @@ For each of these reports, you can group by Deal to report on multiple deals at 
 ## Related topics
 
 - [Buying Deals](buying-deals.md)
-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
+<!-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)-->
 - [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md)

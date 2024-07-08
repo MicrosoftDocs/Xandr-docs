@@ -228,6 +228,8 @@
       href: sdk-privacy-for-android.md
     - name: Migrating Android SDK v7 to 8.0
       href: migrating-android-sdk-v7-to-8-0.md
+    - name: Migrating Android SDK v8 to 9.0
+      href: migrating-android-sdk-v8-to-9.0.md
 
 - name: Universal Pixel SDK
   items:

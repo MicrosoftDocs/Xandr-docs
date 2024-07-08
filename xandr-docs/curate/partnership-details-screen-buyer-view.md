@@ -83,9 +83,9 @@ If you would like to make changes to a deal, send the seller a message to discus
 
 You can run a report to see how your deals are performing. See [Buy Side Reporting On-Deals](../monetize/buy-side-reporting-on-deals.md) for more information.
 
-## Viewing packages
+<!--## Viewing packages
 
-**Packages** display the number of packages available to you. Sellers package their inventory to provide special access to their premium inventory, discounted rates, or other opportunities. Click the number under **Packages** to review each package's description, price, and sizes in the **Package Marketplace** to determine if you are interested. Then, add the packages you are interested in to your cart to generate deals. For more information on generating a deal from a package, see [Get Deals From Seller Packages](../monetize/get-deals-from-seller-packages.md).
+**Packages** display the number of packages available to you. Sellers package their inventory to provide special access to their premium inventory, discounted rates, or other opportunities. Click the number under **Packages** to review each package's description, price, and sizes in the **Package Marketplace** to determine if you are interested. Then, add the packages you are interested in to your cart to generate deals. For more information on generating a deal from a package, see [Get Deals From Seller Packages](../monetize/get-deals-from-seller-packages.md).-->
 
 ## Requesting a custom deal
 

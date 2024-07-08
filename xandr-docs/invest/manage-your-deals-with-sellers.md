@@ -76,5 +76,5 @@ If you are a network that also represents buyers, click the **Buyers** button to
 
 - [Control Your Deals with Sellers](control-your-deals-with-sellers.md)
 - [Partnership Details Screen](partnership-details-screen-buyer-view.md)
-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)
+<!-- [Get Deals from Seller Packages](get-deals-from-seller-packages.md)-->
 - [Buy-Side Reporting on Deals](buy-side-reporting-on-deals.md)

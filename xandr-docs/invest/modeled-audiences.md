@@ -1,7 +1,7 @@
 ---
 title: Modeled Audiences
 description: In this article, learn about modeled audiences and how advertisers can take their first-party segments and expand them to similar users for targeting.
-ms.date: 05/24/2024
+ms.date: 07/08/2024
 ---
 
 # Modeled audiences

@@ -11,7 +11,7 @@ Modeled Audience is a new feature available for Microsoft Invest that allows adv
 ## Set up a modeled audience
 
 1. In the Microsoft Invest UI, select the line item for your advertiser.
-1. Select the **Edit** option, and then select the **Audience & Location Targeting** option on the left pane ​or **Targeting** within the **Edit Split** view.
+1. Select the **Edit** option, and then select the **Audience & Location Targeting** option on the left pane.
 1. An **Audience and Location Segments** panel is displayed on the right side of the screen. Next, select **Create Modeled Audience** from the targeting model.
 1. Select a **Seed Segment** from the drop-down menu.
 
@@ -29,7 +29,7 @@ Modeled Audience is a new feature available for Microsoft Invest that allows adv
 > [!NOTE]
 > **Restrictions:**
 >
-> - A modeled audience can only be created and edited in the line item or split view.
+> - A modeled audience can only be created and edited in the line item view.
 > - Modeled audiences are not supported for data marketplace or third-party segments.
 > - Only one segment can be used as the seed for a modeled audience.
 > - The seed segment must be an advertiser-owned first-party segment.

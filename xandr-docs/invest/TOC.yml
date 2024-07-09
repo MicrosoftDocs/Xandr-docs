@@ -260,16 +260,16 @@
         href: set-up-cross-device-attribution.md
       - name: Cross-Device Reporting
         href: cross-device-reporting.md
-    - name: Trader Home
-      items:
-      - name: Overview
-        href: trader-home.md
-      - name: Getting Started with Trader Home
-        href: getting-started-with-trader-home.md
-      - name: Explore Trader Home
-        href: explore-trader-home.md
-      - name: Explore Insertion Orders Page
-        href: explore-insertion-orders-page.md
+  - name: Trader Home
+    items:
+    - name: Overview
+      href: trader-home.md
+    - name: Getting Started with Trader Home
+      href: getting-started-with-trader-home.md
+    - name: Explore Trader Home
+      href: explore-trader-home.md
+    - name: Explore Insertion Orders Page
+      href: explore-insertion-orders-page.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits

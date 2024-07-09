@@ -16,11 +16,11 @@ ms.date: 10/28/2023
 > For migrating iOS SDK v8.x to v9.0, refer to the [migration documentation](migrating-ios-sdk-v8.x.y-to-v9.x.y.md).
 
 ### New Feature
-- 5736950 Made our webview inspectable when log level is set to debug or higher
+- 5736950: Made our webview inspectable when log level is set to debug or higher
 ### Improvement/ Bug Fixes
-- 746525343 Fixed Google Adapter Bug - Accessing Files
-- 6892506 Fixed drop in (OMID) viewability events
-- 6891512 Fixed Cocoapod integration in Flutter environment
+- 746525343: Fixed Google Adapter Bug - Accessing Files
+- 6892506: Fixed drop in (OMID) viewability events
+- 6891512: Fixed Cocoapod integration in Flutter environment
 
 ## 8.11.4
  

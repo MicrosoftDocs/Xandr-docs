@@ -91,4 +91,3 @@ The line item grid below the Insertion Order and Analytics section details all l
 ## Related topics
 - [Explore Trader Home](explore-trader-home.md)
 - [Getting Started with Trader Home](getting-started-with-trader-home.md)
-- [Explore Trader Home](explore-trader-home.md)

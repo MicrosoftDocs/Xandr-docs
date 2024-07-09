@@ -96,7 +96,7 @@ Once you've installed Carthage on your computer, follow these steps:
   
 ## XCFramework
 
-Download and unzip the latest version of AppNexusSDK.xcframework.zip of our SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
+Download and unzip the latest version of AppNexusSDK.xcframework.zip of iOS SDK from [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
 
 This file contains the following four frameworks and two mediation adapters. Ensure you are only using the framework that best suits your needs. The AppNexusSDK is the recommendation for general use.
 

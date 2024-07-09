@@ -48,7 +48,7 @@ As of SDK v9.0, the framework is moved to the CDN URL listed below and you can u
 
 ```
 
-- https://adsdkprod.azureedge.net/mobile/ios/releases/9.0.0/static.zip
+- https://adsdkprod.azureedge.net/mobile/ios/releases/9.0.0/static/sdks.zip
 ```
 
 ## Swift Package Manager

@@ -39,6 +39,11 @@
             "source_path": "xandr-docs/invest/get-deals-from-seller-packages.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/invest/negotiate-deals-with-sellers",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/invest/release-notes-20240701.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/invest/release-notes",
+            "redirect_document_id": false
         }
     ]
 }

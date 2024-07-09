@@ -13,7 +13,7 @@ ms.date: 10/28/2023
 ## 9.0
 
 > [!NOTE]
-> For migrating, iOS SDK v8.x to v9.0, refer to the [migration documentation](migrating-ios-sdk-v8.x.y-to-v9.x.y.md).
+> For migrating iOS SDK v8.x to v9.0, refer to the [migration documentation](migrating-ios-sdk-v8.x.y-to-v9.x.y.md).
 
 ### New Feature
 - 5736950 Made our webview inspectable when log level is set to debug or higher

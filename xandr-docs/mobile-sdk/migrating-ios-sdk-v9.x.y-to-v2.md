@@ -73,8 +73,9 @@ Once you've installed Carthage on your computer, follow these steps:
 
     ```
     # iOS: Carthage config to include our SDK
-    binary "https://acdn.adnxs.com/mobile/mtest/adoreleasetest/9.0.0/carthage/AppNexusSDK.json"
-    binary "https://acdn.adnxs.com/mobile/mtest/adoreleasetest/9.0.0/carthage/OMSDK_Microsoft.json"
+    binary "https://adsdkprod.azureedge.net/mobile/ios/releases/carthage/AppNexusSDK.json"
+    binary "https://adsdkprod.azureedge.net/mobile/ios/releases/carthage/OMSDK_Microsoft.json"
+    
     ```
 
     > [!TIP]

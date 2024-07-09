@@ -2,6 +2,7 @@
 title:  Microsoft Invest - Explore Trader Home
 description: Explore Trader Home page gives you quick access to the insertion order and line-item details and essential metrics. 
 ms.date: 06/30/2024
+ms.author: shsrinivasan
 ---
 
 # Microsoft Invest - Explore Trader Home

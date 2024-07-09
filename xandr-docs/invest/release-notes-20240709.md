@@ -3,6 +3,7 @@ title: July 09, 2024 - Trader Home
 description: Trader Home offers advertisers a centralized hub to manage insertion orders and line items, providing a clear view of the pacing information and performance through real-time insights and detailed metrics.
 ms.date: 07/09/2024
 ms.topic: release-notes
+ms.author: shsrinivasan
 ---
 
 # July 09, 2024 - Trader Home

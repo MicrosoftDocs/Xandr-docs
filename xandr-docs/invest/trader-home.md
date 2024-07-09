@@ -2,6 +2,7 @@
 title: Microsoft Invest - Trader Home
 description: Trader Home serves as the central hub for advertisers, offering a streamlined interface to provide real-time insights and critical information.
 ms.date: 06/30/2024
+ms.author: shsrinivasan
 ---
 
 # Microsoft Invest - Trader Home

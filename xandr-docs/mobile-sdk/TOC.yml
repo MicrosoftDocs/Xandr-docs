@@ -19,10 +19,20 @@
       items:
      # - name: Overview
       #  href: ios-sdk-integration.md
-      - name: iOS SDK Intialization v8.0
+      - name: iOS SDK Intialization
         href: ios-sdk-initialization-v8-0.md
       - name: iOS SDK Integration Instructions
-        href: ios-sdk-integration-instructions.md
+        items:
+        - name: Integration of v8.x
+          href: ios-sdk-integration-instructions.md
+        - name: Integration of v9.0
+          href: migrating-ios-sdk-v9.x.y-to-v2.md
+    - name: Migration
+      items:
+      - name: Migrating iOS SDK v8.x to 9.0
+        href: migrating-ios-sdk-v8.x.y-to-v9.x.y.md
+      - name: Migrating iOS SDK v7 to 8.0
+        href: migrating-ios-sdk-v7-to-8-0.md
     - name: Mediation
       items:
       - name: Overview
@@ -113,8 +123,7 @@
       href: ios-14-0-faq.md
     - name: SDK Privacy
       href: sdk-privacy-for-ios.md
-    - name: Migrating iOS SDK v7 to 8.0
-      href: migrating-ios-sdk-v7-to-8-0.md
+    
 
 - name : Android SDK
   items:

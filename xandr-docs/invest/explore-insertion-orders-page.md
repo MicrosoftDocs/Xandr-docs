@@ -8,7 +8,7 @@ ms.date: 06/30/2024
 
 The Insertion Orders page is a central hub for advertisers, offering a streamlined interface to provide insights by giving advertisers a single place where they can monitor their Insertion Orders as well as view metrics about the associated Line Items under those Insertion Orders.
 
-### Insertion Order Context and Menu
+### Insertion order context and menu
 
 - When the user clicks the hamburger icon on the Insertion Order sub-navigation, the Insertion Order menu slides out from the left side of the screen. This displays all the insertion orders associated with a particular advertiser. 
 - Users can search directly for an Insertion Order by name or ID, as well as filter by state: 
@@ -16,7 +16,7 @@ The Insertion Orders page is a central hub for advertisers, offering a streamlin
     - Favourite
 - Upon selecting another Insertion Order, the page reloads, updating the sub-navigation bar, details section, and grid to reflect the context of the new Insertion Order.
 
-### Analytics and Settings Buttons
+### Analytics and settings buttons
 
 To load the Insertion Order details, the user can click the **Settings** button in the top-right corner. This will open the Settings tab and display the Insertion Order details.
 
@@ -54,7 +54,7 @@ The right hand side Y-axis will represent the second metric. The values supporte
 | Listens | Listen-through targeting allows traders to target audio inventory with a projected percentage of audio completions. The listen-through rate is defined as the number of audio completions / number of ad impressions for a particular line item. |
 | Margins | The designated currency amount paid to a network as compensation for managed-advertising services. |
 
-### Billing Period Progress
+### Billing period progress
 
 - Click the Billing Period dropdown to view a list of each billing period under different metrics. 
 - When you select an option, the Analytics tab updates to reflect the metrics values for that Insertion order (on the chart) and the average metrics information for the billing period progress and average metrics section. 
@@ -68,7 +68,7 @@ The right hand side Y-axis will represent the second metric. The values supporte
 | Month to Date | It defines the time period for the data extracted for the report from the last month to the current date. |
 | Custom | It defines the time period for the data extracted for the report for the custom date range specified by the user. |
 
-### Average Metrics
+### Average metrics
 The average metrics section aggregates data across the billing period or lifetime to display an average daily value for each metric.
 
 | Metrics | Description |
@@ -84,7 +84,7 @@ The average metrics section aggregates data across the billing period or lifetim
 | Avg View Rate | Target inventory based on a projected percentage of viewed impressions. Viewability rate is defined as the percentage of impressions that were viewable out of the total number of impressions measured for viewability. |
 
 
-## Line Item Grid
+## Line item grid
 The line item grid below the Insertion Order and Analytics section details all line items associated with a particular insertion order. It supports features such as search, filtering, and bulk editing. Users can pull reports by clicking the "Download Report" button, enabling them to view and gain insights into the campaign's performance during the length of the flight duration.
 
 

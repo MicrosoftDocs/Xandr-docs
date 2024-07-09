@@ -6,7 +6,7 @@ ms.date: 06/30/2024
 
 # Microsoft Invest - Trader Home
 
-Trader Home serves as the central hub for advertisers, offering a streamlined interface to provide real-time insights and critical information. It enables advertisers to make quick, and informed decisions about relevant objects such as insertion orders and line items.
+Trader Home serves as the central hub for advertisers, offering a streamlined interface to provide real-time pacing information and performance metrics, for enhanced campaign management. It enables advertisers to make quick, and informed decisions by providing real-time insights and critical information about relevant objects such as insertion orders and line items.
 
 This document outlines the capabilities of Trader Home and provides step-by-step instructions for utilizing its features. For detailed information on advertiser-level functionalities, refer to the [Buying Guide](buying-guide.md).
 

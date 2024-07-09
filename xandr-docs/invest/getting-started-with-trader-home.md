@@ -2,6 +2,7 @@
 title: Getting Started with Trader Home
 description: Trader Home page gives you quick access to the insertion order and line-item details and essential metrics. 
 ms.date: 06/30/2024
+ms.author: shsrinivasan
 ---
 
 # Getting started with Trader Home

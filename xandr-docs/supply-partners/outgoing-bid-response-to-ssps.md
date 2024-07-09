@@ -4,7 +4,6 @@ description: Learn about different fields like Native object, Bid object, Asset 
 ms.date: 10/28/2023
 ---
 
-
 # Outgoing bid response to SSPs
 
 > [!NOTE]
@@ -21,10 +20,11 @@ Xandr currently supports the following fields in the bid response object:
 
 | Field | Type | Description |
 |--|--|--|
-| `bidid` | string | A randomly-generated bid response ID to assist tracking. |
-| `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, USD is assumed. |
-| `id` | string | The seller's auction ID. This is the same as the ID of the bid request to which this is a response. |
-| `seatbid` | array of objects | Used for identifying `seatbid` objects. See [Seat Bid Object](#seat-bid-object) below. |
+| `bidid` | string | The bid response ID to assist tracking for bidders. This value is chosen by the bidder for cross-reference. <br> **Note**: This is used only to populate the macro `${AUCTION_BID_ID}`. We do not store this information. |
+| `cur` | string | The bid currency using ISO-4217 alphabetic codes. If omitted, default is USD. Also used for the macro `${AUCTION_CURRENCY}` in the win notify URL and creative or pixel payload. |
+| `id` | string | **Required**: The ID of the bid request to which this is a response. |
+| `seatbid` | array of objects |Required if a bid is made: Used for identifying seatbid objects. See [Seat Bid Object](#seat-bid-object) for more information. |
+| `ext` |  |Used for identifying platform-specific extensions to OpenRTB for the bid response object. |
 
 ### Seat bid object
 
@@ -59,6 +59,69 @@ Xandr supports the following fields in the `seatbid` object:
 | `iurl` | string | A preview URL for the creative in the bid. |
 | `price` | float | The bid price expressed in CPM.<br>**Note**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
 | `w` | integer | The width of the creative, in pixels. |
+
+### Bid extension object
+
+We support the following fields in the `bid.ext` object:
+
+| Field | Type | Description |
+|--|--|--|
+| `dsa` | object | Extension for DSA transparency information.|
+
+### DSA extension object
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `behalf` | string  | Advertiser Transparency: Free UNICODE text string with a name of whose behalf the ad is displayed. Maximum 100 characters. |
+| `paid` | string | Advertiser Transparency: Free UNICODE text string of who paid for the ad. Must always be included even if it's the same as what is listed in the behalf attribute. Maximum 100 characters.|
+|transparency| array of object|Array of objects of the entities that applied user parameters and the parameters they applied. |
+|adrender |integer |Flag to indicate that buyer/advertiser will render their own DSA transparency information inside the creative. <br> `0` = buyer/advertiser will not render<br> `1` = buyer/advertiser will render.|
+
+### Object: Transparency
+
+| Attribute | Type | Description |
+|:---|:---|:---|
+| `domain` | string  | Domain of the entity that applied user parameters.|
+| `params` | array of integer | Array of buy-side applied user parameter targeting (using [the list provided by DSA Transparency Taskforce](https://github.com/InteractiveAdvertisingBureau/openrtb/diffs/0?base_sha=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&branch=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&head_user=lamrowena&name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&pull_number=152&qualified_name=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&sha1=7751c1fc24cee4f81633dc687c41b5bd26cb9bbb&sha2=1e1d5ad36c07bc8a41c97ac5e8113df91d3f95ca&short_path=5ab9e62&unchanged=expanded&w=false#user_parameters)). Include support for multiple vendors who may add their own user-targeting parameters. |
+
+Sample  OpenRTB 2.6 Bid Response with DSA transparency:
+
+```
+{ 
+    "id": "1234567890", 
+    "bidid": "abc1123", 
+    "seatbid": [ 
+        { 
+            "seat": "512", 
+            "bid": [ 
+                { 
+                    "id": "1", 
+
+                    "nurl": "http://adserver.com/winnotice?impid=102", 
+                    "iurl": "http://adserver.com/pathtosampleimage", 
+                    "adomain": [ 
+                        "advertiserdomain.com" 
+                    ], 
+                    "ext": { 
+                        "dsa": { 
+                            "behalf": "Advertiser", 
+                            "paid": "Advertiser", 
+                            "transparency": { 
+                                "domain": "dsp1domain.com", 
+                                "params": [ 
+                                    1, 
+                                    2 
+                                ] 
+                            }, 
+                            "adrender": 1 
+                        } 
+                    } 
+                } 
+            ] 
+        } 
+    ] 
+} 
+```
 
 ### Native object
 
@@ -132,7 +195,7 @@ Used to define the link for a native asset. When clicked, the user is taken to t
 | `fallback` | string | A fallback URL to be used if the URL is not supported by the device. |
 | `url` | string | (Required) The landing URL for the clickable link. |
 
-**Event trackers response object**
+### Event trackers response object
 
 Xandr supports the following fields in the `event trackers response` object (Native 1.2 only):
 

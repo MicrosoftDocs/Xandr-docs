@@ -1002,8 +1002,10 @@
   items:
     - name: Overview
       href: release-notes.md
-    - name: 2023 - 2024
+    - name: 2024 - 2025
       items:
+        - name: July 8, 2024 - Modeled Audiences
+          href: release-notes-20240708.md
         - name: July 09, 2024 - Trader Home
           href: release-notes-20240709.md
     - name: 2022 - 2023

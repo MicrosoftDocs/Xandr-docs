@@ -1,13 +1,13 @@
 ---
-title: iOS SDK Initialization v8.0
+title: iOS SDK Initialization
 description: In this article, learn about iOS SDK initialization v8.0, API signatures, and examples for better understanding.
 ms.custom: ios-sdk
 ms.date : 10/28/2023
 ---
 
-# iOS SDK initialization v8.0
+# iOS SDK initialization
 
-Publishers with iOS SDK v8.0, are required to initialize Mobile SDK before making an ad request. When using Mobile SDK for iOS SDK v8, the `init()` method must be called prior to any other SDK operations. Without this initialization no Ad request will go through and the SDK would throw an exception.
+Publishers with iOS SDK v8.0 and above, are required to initialize Mobile SDK before making an ad request. When using Mobile SDK for iOS SDK v8.0 and above, the `init()` method must be called prior to any other SDK operations. Without this initialization no Ad request will go through and the SDK would throw an exception.
 
 ## API signature
 

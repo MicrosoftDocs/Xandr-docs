@@ -62,7 +62,7 @@ The right pane window displays the insertion order and its associated line items
 
 ## Related topics
 - [Explore Insertion Order(s) Page](explore-insertion-orders-page.md)
-- [Trader Home](trader-home.md)
+- [Trader Home - Overview](trader-home.md)
 
 
 

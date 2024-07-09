@@ -8,7 +8,7 @@ ms.date: 06/30/2024
 
 The right pane window displays the insertion order and its associated line items details for the advertiser selected in the left pane
 
-### Insertion Order Card View
+### Insertion order card view
 
 - To enhance visibility, the right panel displays all insertion order(s) associated with an advertiser. This panel is infinitely scrollable, ensuring that you never lose sight of any important data. 
 - Each Insertion Order card on the dashboard is color-coded, providing a quick visual indicator for any issues with its pacing status. 
@@ -22,7 +22,7 @@ The right pane window displays the insertion order and its associated line items
 - You can customize the metrics in each card using the **Modify Cards** button on the top right corner, allowing customization with up to 5 different custom metrics.
 
 
-**Standard Metrics**
+**Standard metrics**
 
 | Metrics | Description |
 |:---|:---|
@@ -31,7 +31,7 @@ The right pane window displays the insertion order and its associated line items
 | Yesterday | It defines the time period for the data extracted for yesterday’s report. |
 | Today | It defines the time period for the data extracted for today’s report. |
 
-**Custom Metrics**
+**Custom metrics**
 
 | Metrics | Description |
 |:---|:---|
@@ -43,7 +43,7 @@ The right pane window displays the insertion order and its associated line items
 
 - In the Trader Home, each Insertion orders card features a “Favourite” option. This enables you to quickly bookmark your most important or frequently accessed Insertion Orders by clicking the “star” icon at the bottom of the card
 
-### Sorting and Filtering
+### Sorting and filtering
 
 - By default, the Insertion order list is sorted by “Recently Modified” and filtered on Active state, making it easier to manage and analyze the campaigns.
 - Users can further customize the view by using filters, enabling refinement of the Insertion orders list based on their statuses:
@@ -62,7 +62,7 @@ The right pane window displays the insertion order and its associated line items
 
 ## Related topics
 - [Explore Insertion Order(s) Page](explore-insertion-orders-page.md)
-- [Trader Home](trader-home.md)
+- [Trader Home - Overview](trader-home.md)
 
 
 

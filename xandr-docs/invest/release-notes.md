@@ -9,7 +9,7 @@ ms.topic: release-notes
 
 Read about the latest updates to Microsoft Invest.
 
-- [July 01, 2024: Trader Home](release-notes-20240701.md)
+- [July 09, 2024: Trader Home](release-notes-20240709.md)
 - [May 22, 2023: Platform support additional CTV Identifiers](release-notes-20230522.md)
 - [April 11, 2023: GA for Creative Manager](release-notes-20230411.md)
 - [December 7, 2022: New Feature - Insertion Order (IO) Duplication](release-notes-20221207-2.md)

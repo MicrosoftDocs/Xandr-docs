@@ -2,7 +2,7 @@
 title: SDK integration instructions v9.0
 description: Learn how to integrate the AppNexusSDK into your iOS app using CocoaPods, Carthage, or XCFramework with detailed instructions.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 07/09/2023
 ---
 
 # SDK integration instructions v9.0
@@ -73,8 +73,9 @@ Once you've installed Carthage on your computer, follow these steps:
 
     ```
     # iOS: Carthage config to include our SDK
-    binary "https://acdn.adnxs.com/mobile/mtest/adoreleasetest/9.0.0/carthage/AppNexusSDK.json"
-    binary "https://acdn.adnxs.com/mobile/mtest/adoreleasetest/9.0.0/carthage/OMSDK_Microsoft.json"
+    binary "https://adsdkprod.azureedge.net/mobile/ios/releases/carthage/AppNexusSDK.json"
+    binary "https://adsdkprod.azureedge.net/mobile/ios/releases/carthage/OMSDK_Microsoft.json"
+    
     ```
 
     > [!TIP]
@@ -89,14 +90,15 @@ Once you've installed Carthage on your computer, follow these steps:
 1. To use `AppNexusSDK` SDK, add the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework` to the **Embedded Binaries** section:
 
     - Navigate to **Target** → **General** → **Embedded Binaries**.
-    - Click the `+` icon and select the `.xcframework` files.
-    - If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**.
+    - Click the `+` icon and sadd the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework`.
+    
+1. If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**.
   
 ## XCFramework
 
-Download and unzip the latest version of our [SDK](https://adsdkdevstand.azureedge.net/dev/mobile/mtest/adoreleasetest/9.0.0-alpha.9/static/sdks.zip) from our CDN.
+Download and unzip the latest version of AppNexusSDK.xcframework.zip of iOS SDK from [here](https://adsdkprod.azureedge.net/mobile/ios/releases/9.0.0/static/sdks.zip).
 
-This file will contain the following four frameworks and two mediation adapters. Ensure you are only using the framework that best suits your needs. The AppNexusSDK is our recommendation for general use.
+This file contains the following four frameworks and two mediation adapters. Ensure you are only using the framework that best suits your needs. The AppNexusSDK is the recommendation for general use.
 
 | Framework | Description |
 |---|---|
@@ -121,10 +123,8 @@ This file will contain the following four frameworks and two mediation adapters.
 
 ## Swift Package Manager
 
-1. Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
+Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
 
-   :::image type="content" source="media/import-spm.png" alt-text="A screenshot that shows how you copy the url and and enter it into your Xcode project's Package Dependencies.":::
+   :::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
 
-   :::image type="content" source="media/add-dependency.png" alt-text="A screenshot that shows how Swift Package manager support for IOS SDKs.":::
-
-## Swift Package Manager - Google AdMob Mediation adapters
+   :::image type="content" source="media/ios-sdk-integration-instructions-j.png" alt-text="Screenshot of the Choose Package Repository screen.":::

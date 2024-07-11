@@ -19,9 +19,9 @@
       items:
      # - name: Overview
       #  href: ios-sdk-integration.md
-      - name: iOS SDK Intialization
+      - name: Intialization Guide
         href: ios-sdk-initialization-v8-0.md
-      - name: iOS SDK Integration
+      - name: Integration Guide
         href: migrating-ios-sdk-v9.x.y-to-v2.md
     - name: Migration
       items:

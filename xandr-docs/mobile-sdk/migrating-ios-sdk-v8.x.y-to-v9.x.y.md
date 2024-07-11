@@ -1,19 +1,19 @@
 ---
-title: Migrating iOS SDK v8.X.Y to v9.X.Y
+title: Migrating iOS SDK v8.x to v9.0.0
 description: Learn how to integrate the latest Mobile SDKs for iOS using CocoaPods, Carthage, XCFramework, and Swift Package Manager.
 ms.custom: ios-sdk
 ms.date: 07/09/2023
 ---
 
-# Migrating iOS SDK v8.x to v9.0
+# Migrating iOS SDK v8.x to v9.0.0
 
 > [!NOTE]
 > Refer to the detailed integration guide for first time implementations in the [iOS SDK Integration Instructions](ios-sdk-integration-instructions.md).
 
-Starting with SDK v9.0, there are no longer release source code updates for the Android/iOS Mobile SDKs on GitHub. Instead, all new SDK updates are exclusively published through the methods referenced in implementation guide.
+Starting with SDK v9.0.0, there are no longer release source code updates for the Android/iOS Mobile SDKs on GitHub. Instead, all new SDK updates are exclusively published through the methods referenced in implementation guide.
 
 > [!NOTE]
-> There are no breaking changes while upgrading the SDK from 8.x to 9.0.
+> There are no breaking changes while upgrading the SDK from 8.x to 9.0.0.
 
 ## CocoaPods
 
@@ -31,7 +31,7 @@ end
 
 ## Carthage
 
-As of SDK v9.0, the framework is moved away from GitHub and to access binary only framework, use the URLs listed in the example Cartfile below.
+As of SDK v9.0.0, the framework is moved away from GitHub and to access binary only framework, use the URLs listed in the example Cartfile below.
 
 Your cartfile should look like this:
 
@@ -44,7 +44,7 @@ binary "https://adsdkprod.azureedge.net/mobile/ios/releases/carthage/OMSDK_Micro
 
 ## XCFramework
 
-As of SDK v9.0, the framework is moved to the CDN URL listed below and you can use the following link to access the static framework.
+As of SDK v9.0.0, the framework is moved to the CDN URL listed below and you can use the following link to access the static framework.
 
 ```
 

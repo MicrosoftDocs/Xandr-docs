@@ -25,7 +25,7 @@
         href: migrating-ios-sdk-v9.x.y-to-v2.md
     - name: Migration
       items:
-      - name: Migrating iOS SDK v8.x to 9.0
+      - name: Migrating iOS SDK v8.x to 9.0.0
         href: migrating-ios-sdk-v8.x.y-to-v9.x.y.md
       - name: Migrating iOS SDK v7 to 8.0
         href: migrating-ios-sdk-v7-to-8-0.md

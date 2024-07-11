@@ -110,19 +110,28 @@ Download the latest iOS SDK v9.0.0 from [Azure CDN](https://adsdkprod.azureedge.
 
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.
-1. To use the `AppNexusSDK` SDK, add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle` to the Embedded Binaries section:
+1. To use the `AppNexusSDK`, you need to add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
+1. To import the `AppNexusSDK.xcframework`,
     - Navigate to your project's Target settings.
-    - Navigate to **Target** > **General** > **Embedded Binaries**.
-    - Click the `+` icon and select the `.xcframework` and `.bundle` files.
+    - Navigate to **Target** > **General**.
+    - Click the `+` button under the **Frameworks, Libraries, and Embedded Content** section.
+    - Click **Add Other** and then **Add Files**.
+    - Choose the `AppNexusSDK.xcframework` file and click **Open**.
 
-    :::image type="content" source="media/copy-items.png" alt-text="A screenshot that shows how to choose options for adding the files.":::
+    :::image type="content" source="media/add-appnexus-xcf.png" alt-text="A screenshot that shows how to add AppNexus SDK in XCF.":::
+1. To include the `ANSDKResources.bundle`,
+    - Navigate to **Target** > **Build Phase**.
+    - Expand the **Copy Bundle Resources** row and click the `+` icon.
+    - Choose the `ANSDKResources.bundle` file and click **Open**.
 
-    :::image type="content" source="media/import-framework.png" alt-text="A screenshot that shows how to choose frameworks, libraries, and embedded content.":::
+    :::image type="content" source="media/add-andkresources.png" alt-text="A screenshot that shows how to add ANDK Resource bundle in XCF.":::
 
 ## Swift Package Manager
 
-Copy the URL https://github.com/appnexus/mobile-sdk-ios-spm and enter it into your Xcode project's Package Dependencies. You can install either the latest released version or the main branch.
-
-   :::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
-
-   :::image type="content" source="media/ios-sdk-integration-instructions-j.png" alt-text="Screenshot of the Choose Package Repository screen.":::
+1. Go to **Package Dependencies** under your Xcode project and click on the `+` button.
+   :::image type="content" source="media/swift-pkg-mgr-01.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
+1. Copy and paste the URL https://github.com/appnexus/mobile-sdk-ios-spm in the search box and press `Enter/Return`.
+   :::image type="content" source="media/swift-pkg-mgr-02.png" alt-text="Screenshot shows the steps to search a Swift Package package.":::
+1. In **Choose Package Products for mobile-sdk-ios-spm** pop up window, different package products will be present. Select **AppNexusSDK** and click `Add Package`.
+    :::image type="content" source="media/swift-pkg-mgr-03.png" alt-text="Screenshot shows the pop up for Swift Package package.":::
+1. The selected package will be displayed and click on `Add Package` to save the configuration in **Package Dependencies**.

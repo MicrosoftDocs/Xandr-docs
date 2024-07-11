@@ -120,12 +120,12 @@ If you are unfamiliar with Carthage review their [installation and user guides]
 ### Swift Package Manager
 
 1. Copy the URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) and check the latest
-  version of SDK in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases).
+  version of SDK in [Release notes](ios-sdk-release-notes.md).
 1. Open the app’s Xcode project or workspace. Select **Project → Swift Package** and click on **+ icon**.
    :::image type="content" source="media/ios-sdk-integration-instructions-i.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
 1. Paste the Github URL [https://github.com/appnexus/mobile-sdk-ios.git](https://github.com/appnexus/mobile-sdk-ios.git) mentioned earlier in search bar of **Choose Package Repository** screen and click **Next**.
    :::image type="content" source="media/ios-sdk-integration-instructions-j.png" alt-text="Screenshot of the Choose Package Repository screen.":::
-1. Select the appropriate version from the drop-down (checked in [Github Releases page](https://github.com/appnexus/mobile-sdk-ios/releases) as mentioned earlier) and click **Next**.
+1. Select the appropriate version from the drop-down (checked in [Release notes](ios-sdk-release-notes.md) as mentioned earlier) and click **Next**.
    :::image type="content" source="media/ios-sdk-integration-instructions-k.png" alt-text="Screenshot of the Choose Package Options screen.":::
 1. Select the applicable **Package Product** and click **Finish** to complete the setup.
    :::image type="content" source="media/ios-sdk-integration-instructions-l.png" alt-text="Screenshot of the Finish screen.":::

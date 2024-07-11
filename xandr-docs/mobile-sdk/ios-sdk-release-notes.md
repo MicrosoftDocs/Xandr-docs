@@ -10,10 +10,10 @@ ms.date: 10/28/2023
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
-## 9.0
+## 9.0.0
 
 > [!NOTE]
-> As of v9.0 release, the source code is moved to private repositories as already announced. You can refer to the [migration guide](migrating-ios-sdk-v8.x.y-to-v9.x.y.md) to understand how to utilize the binary framework.
+> As of v9.0.0 release, the source code is moved to private repositories as already announced. You can refer to the [migration guide](migrating-ios-sdk-v8.x.y-to-v9.x.y.md) to understand how to utilize the binary framework.
 
 ### New Feature
 - 5736950: Made our webview inspectable when log level is set to debug or higher
@@ -52,7 +52,7 @@ ms.date: 10/28/2023
 
 ### Announcement
 
-This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will be our next major release. As previously announced, we will discontinue the practice of releasing source code updates for iOS and Android Mobile SDKs on Github. It's important to note that this is not a deprecation of our SDKs; rather, it pertains to the open-source aspect as we transition our Android and iOS Mobile SDKs to private repositories. There will be no disruptive changes from v8.x to v9.0, although it's worth noting that any future functional enhancements will be exclusively developed within the v9.x series.
+This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 will be our next major release. As previously announced, we will discontinue the practice of releasing source code updates for iOS and Android Mobile SDKs on Github. It's important to note that this is not a deprecation of our SDKs; rather, it pertains to the open-source aspect as we transition our Android and iOS Mobile SDKs to private repositories. There will be no disruptive changes from v8.x to v9.0.0, although it's worth noting that any future functional enhancements will be exclusively developed within the v9.x series.
 
 ### New feature
 

@@ -96,19 +96,17 @@ Once you've installed Carthage on your computer, follow these steps:
   
 ## XCFramework
 
-Download the SDKs from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.0.0/static/sdks.zip).
-
-The file contains the following four frameworks and two mediation adapters. Ensure you are only using the framework that best suits your needs. The AppNexusSDK is the recommendation for general use.
+Download the latest iOS SDK v9.0.0 from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.0.0/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
 
 | Framework | Description |
 |---|---|
 | AppNexusSDK | Supports all ad types. |
 | AppNexusNativeSDK | This framework only supports native ads on **iOS**.|
-| AppNexusNativeMacOSSDK | This framework only supports native ads on MacOS. |
+| AppNexusNativeMacOSSDK | This framework only supports native ads on **MacOS**. |
 | ANSmartAdapter | A mediation adapter for Smart Ad Server.|
 | ANGoogleAdapter | A mediation adapter for Google's AdMob.|
-| ANFacebookCSRAdapter | A mediation adapter for Facebook Audience Network. |
-| ANSDKResources.bundle | This contains necessary files which or SDK utilizes. |
+| ANFacebookCSRAdapter | A client side rendering adapter for Facebook Audience Network. |
+| ANSDKResources.bundle | This contains necessary files which the SDK utilizes. |
 
 1. Open the app’s Xcode project or workspace.
 1. Go to the app target’s **General** configuration page.

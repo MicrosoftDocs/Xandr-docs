@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Universal ID Support Matrix for Sellers
+title: Microsoft Monetize - Universal ID Support
 description: This article provides summary of the Universal IDs that are supported by Microsoft Monetize.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Universal ID support matrix for sellers
+# Microsoft Monetize - Universal ID support 
 
 This page summarizes the Universal IDs supported by Microsoft Monetize. All integrations are with a Universal ID solution provider (not facilitated by Microsoft), and Microsoft Publisher Enablement is not necessary. Universal IDs supported by our SSP are passed to DSP bidders by default.
 

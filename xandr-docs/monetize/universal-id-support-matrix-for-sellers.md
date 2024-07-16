@@ -26,7 +26,7 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |Yahoo Connect |[yahoo.com](https://www.yahoo.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** |No |No |
 |Utiq |[utiq.com](https://utiq.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)**  |No  |No  |
 |Panorama ID |[crwdcntrl.net](https://crwdcntrl.net) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |Passthrough SSP support only**  |No |No |
-|Utiq MartechPass |[utiq-mtp.com](https://utiq-mtp.com) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |*This ID is used as a publisher first party ID, not as a cross-publisher Universal ID. Monetize member approval and enablement is required to utilize this ID. Please reach out to your Monetize Account Manager if interested**  |*Requires enablement  |*Requires enablement  |
+|Utiq MartechPass |`utiq-mtp.com` |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |*This ID is used as a publisher first party ID, not as a cross-publisher Universal ID. Monetize member approval and enablement is required to utilize this ID. Please reach out to your Monetize Account Manager if interested**  |*Requires enablement  |*Requires enablement  |
 
 > [!NOTE]
 >

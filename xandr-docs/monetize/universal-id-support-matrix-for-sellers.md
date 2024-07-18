@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Universal ID Support Matrix for Sellers
+title: Microsoft Monetize - Universal ID Support
 description: This article provides summary of the Universal IDs that are supported by Microsoft Monetize.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Universal ID support matrix for sellers
+# Microsoft Monetize - Universal ID support 
 
 This page summarizes the Universal IDs supported by Microsoft Monetize. All integrations are with a Universal ID solution provider (not facilitated by Microsoft), and Microsoft Publisher Enablement is not necessary. Universal IDs supported by our SSP are passed to DSP bidders by default.
 
@@ -26,6 +26,7 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |Yahoo Connect |[yahoo.com](https://www.yahoo.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)** |No |No |
 |Utiq |[utiq.com](https://utiq.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)**  |No  |No  |
 |Panorama ID |[crwdcntrl.net](https://crwdcntrl.net) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |Passthrough SSP support only**  |No |No |
+|Utiq MartechPass |`utiq-mtp.com` |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |*This ID is used as a publisher first-party ID, not as a cross-publisher universal ID. Monetize member approval and enablement is required to use this ID. Please reach out to your Monetize account manager if interested.* |*Requires enablement*  |*Requires enablement*  |
 
 > [!NOTE]
 >

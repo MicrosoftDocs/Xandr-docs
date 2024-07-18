@@ -44,6 +44,7 @@ Data retention period for this report is 99 days.
 | `hour` | date | no | `"2018-02-01-09:54"` | The hour of the auction. |
 | `month` | date | no | `"2018-02"` | The month of the auction. |
 | `day` | date | yes | `"2018-02-01"` | The day of the auction. |
+| `device_type_name` | string | yes | `"mobile phones"` | The name of the category of device (desktops & laptops, mobile phones, etc.). |
 | `seller_member_id` | int | yes | `123` | The ID of the seller member. |
 | `seller_member_name` | string | no | `"Cool Seller Inc"` | The name of the seller member. |
 | `publisher_id` | int | yes | `789` | The ID of the publisher on whose inventory the request originated. |
@@ -54,11 +55,10 @@ Data retention period for this report is 99 days.
 | `placement_name` | string | no | `"My Placement"` | The name of the placement through which the request originated. |
 | `ad_size` | string | yes | `300x250` | The dimensions of the ad slot. |
 | `supply_type` | string | yes | `"web"` | The category of inventory (web, mobile web, or app). App includes CTV and mobile. |
-| `device_type_id` | int | yes | `1` | The category of device.<br>- `0` = Unknown<br>- `1` = PC<br>- `2` = Phone<br>- `3` = Tablet<br>- `4` = TV<br>- `5` = Game Console<br>- `6` = Media Player<br>- `7` = Set Top Box |
+| `device_type_id` | int | yes | `1` | The category of device.<br>- `0` = Unknown<br>- `1` = desktops & laptops<br>- `2` = mobile phones<br>- `3` = Tablet<br>- `4` = tv<br>- `5` = game consoles<br>- `6` = media players<br>- `7` = set top box |
 | `media_type_id` | int | yes | `1` | The ID of the category of creative on transacted impressions. |
-| `allowed_media_type_id` | int | no | `1` | The ID of the category of creative enabled by the publisher on the Monetize placement. |
 | `media_type` | string | no | `"Banner"` | The category of creative on transacted impressions. For example: banner, video, native. |
-| `allowed_media_type` | string | no | `"Banner"` | The category of creative enabled by the publisher on the Monetize placement. For example: banner, video, native. |
+| `allowed_media_types_bitmap_name` | string | no | `"Banner"` | The category of creative enabled by the publisher on the Monetize placement. For example: banner, video, native. |
 | `device_os_family_id` | int | yes | `2` | The ID of the operating system of the device. For example, Microsoft Windows, Apple iOS, etc. |
 | `device_os_family_name` | string | no | `"Android"` | The name of the operating system of the device. For example, Microsoft Windows, Apple iOS, etc. |
 | `device_os_family` | string | no | `"Android (2)"` | A string consisting of the device OS family name and ID. |
@@ -80,10 +80,15 @@ Data retention period for this report is 99 days.
 | `demand_partner` | string | no | `"PubMatic (PSP) (9645)"` | A string consisting of the demand partner name and ID. |
 | `bid_error_type` | int | yes | `21` | The ID of the category of error related to the bid response. For more detail, see the [Error Types](#error-types) table below. |
 | `bid_error_type_name` | string | no | `"NO_BID_PRICE"` | The category of error related to the bid response. For more detail, see the [Error Types](#error-types) table below. |
+| `bid_reject_error_code` | string | yes | `"31"` | The code indicating the reason why a bid was rejected.|
+| `call_type` | string | yes | `/ut/v3/prebid` |Indicates the type of call, such as inbound, outbound, or internal. |
 | `external_creative_id` | string | yes | `987654` | The external ID associated with the creative served. |
 | `inventory_url` | string | no | `"myurl.com/(1234)"` | The mapped URL from the detected domain on the ad call and the ID in parentheses. |
 | `inventory_url_id` | string | yes | `1234` | The mapped URL ID from the detected domain on the ad call. |
 | `inventory_url_name` | string | yes | `1234` | The mapped URL from the detected domain on the ad call. |
+| `psp_config_id` | int | no | `1000` | A unique identifier for the Payment Service Provider configuration. |
+| `uap_response_error_type_id` | string | yes | `TIMEOUT` | A unique identifier for the type of error in the UAP (Universal API Platform) response.|
+
 
 ## Metrics
 
@@ -91,13 +96,11 @@ Data retention period for this report is 99 days.
 |:---|:---|:---|:---|:---|
 | `bid_requests_sent` | int | See Description. | `3990674680` | The number of requests sent from Prebid Server Premium to Demand Partners. |
 | `bid_responses_received` | int | See Description. | `381809500` | The number of bid responses received by Prebid Server Premium from Demand Partners. |
-| `valid_bids_on_imps` | int | See Description. | `378935000` | The number of bids received from PSP Demand Partners that do not trigger errors, have a creative ID, and have a bid above $0. There may be multiple bids counted for each auction when multiple PSP Demand Partners return bids. |
-| `valid_bids_on_imps_rate` | double | valid_bids_on_imps / bid_requests_sent | `0.09` | The number of valid bids divided by the number of bid requests sent to Demand Partners. |
-| `bids_submitted_to_ad_server` | int | See Description. | `54021580` | The number of ad requests that had a valid Prebid bid that was not subject to any additional Xandr rejections returned to the ad server. This number is counted after the Xandr auction process that evaluates bids received from all sources. The reduced volume between `valid_bids_on_imps` and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](../monetize/integrate-web-mobile-web-with-psp.md). |
+| `valid_bid_on_imps` | int | See Description. | `378935000` | The number of bids received from PSP Demand Partners that do not trigger errors, have a creative ID, and have a bid above $0. There may be multiple bids counted for each auction when multiple PSP Demand Partners return bids. |
+| `valid_bid_on_imp_rate` | double | valid_bid_on_imps / bid_requests_sent | `0.09` | The number of valid bids divided by the number of bid requests sent to Demand Partners. |
+| `bids_submitted_to_ad_server` | int | See Description. | `54021580` | The number of ad requests that had a valid Prebid bid that was not subject to any additional Xandr rejections returned to the ad server. This number is counted after the Xandr auction process that evaluates bids received from all sources. The reduced volume between `valid_bid_on_imps` and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](../monetize/integrate-web-mobile-web-with-psp.md). |
 | `bid_errors` | int | See Description. | `149908040` | The number of errors in bid responses from Demand Partners. |
 | `bid_errors_rate` | double | bid_errors / bid_requests_sent | `0.04` | The number of bid errors divided by the number of bid requests sent to Demand Partners. |
-| `timeout_errors` | int | See Description. | `60673400` | The number of errors where a Demand Partner did not respond within the timeout limit. For more information on timeouts see [Add or Edit PSP Global Settings](../monetize/add-or-edit-psp-global-settings.md). |
-| `timeout_errors_rate` | double | timeout_errors / bid_requests_sent | `0.01` | The number of timeout errors divided by the number of bid requests sent to Demand Partners. |
 | `no_bids` | int | See Description. | `3461831640` | The number of times Demand Partners did not bid on a request. This does not include bid errors. |
 | `no_bid_rate` | double | no_bids / bid_requests_sent | `0.87` | The number of times Demand Partners did not bid divided by the number of bid requests sent to Demand Partners. |
 | `average_response_time` | double | See Description. | `228.02` | The average time Demand Partners took to respond to bid requests. |

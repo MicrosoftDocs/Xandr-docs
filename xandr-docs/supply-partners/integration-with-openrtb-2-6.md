@@ -32,7 +32,7 @@ The OpenRTB 2.6 protocol introduces several changes and updates to the top-level
 |:---|:---|:---|
 |`imp`| array of objects | (Required). The impressions offered in this bid request. See [Impression Object](#impression-object) below. |
 
-### Object: Imp
+### Impression object
 
 The `Imp` object defines an ad placement or impression being auctioned. A single bid request can include multiple `Imp` objects, which is useful for exchanges that support selling all ad positions on a given page. Each Imp object requires an ID, allowing bids to reference them individually.
 
@@ -47,7 +47,7 @@ As a part of the OpenRTB 2.6 implementation, Xandr has added the following field
 | `video` | object | This field is required if the impression is offered as a video ad. See [Video Object](#video-object) below. |
 
 
-### Object: Video
+### Video object
 
 The `Video` object represents a video impression. While many of its fields are non-essential for minimally viable transactions, they are included to provide fine control when necessary. Video in OpenRTB generally adheres to the VAST standard. Consequently, companion ads are supported by optionally including an array of `Banner` objects that define these companion ads. For more details, see [Banner object](https://github.com/InteractiveAdvertisingBureau/openrtb2.x/blob/main/2.6.md#326---object-banner-)
 

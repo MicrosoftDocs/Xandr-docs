@@ -62,7 +62,7 @@ Buyers upload one media file and Microsoft Advertising works on its transcoding.
 | Resolution | The resolution must be one of the following:<br> - 1280 x 720<br> - 1920 x 1080 |
 | File Type | The file must be formatted as one of the following:<br> - MP4<br> - MOV |
 | Duration Conformance | The video and audio durations must be identical with a tolerance of 500 ms. |
-| Duration (in seconds) | The duration must be one of the following:<br> - 10 seconds<br> - 15 seconds<br> - 20 seconds (Spain market only)<br> - 30 seconds<br> - 60 seconds |
+| Duration (in seconds) | The duration must be one of the following:<br> - 10 seconds<br> - 15 seconds<br> - 20 seconds <br> - 30 seconds<br> - 60 seconds |
 | Audio Sample Rate | The audio sample rate must be 48kHz. |
 | Audio Sample Bit Depth for PCM | The audio sample bit depth must be one of the following:<br> - 16 bit<br> - 24 bit |
 | Audio Codec | PCM is the preferred audio codec. However, AAC-LC is accepted. |

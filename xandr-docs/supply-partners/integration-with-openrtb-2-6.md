@@ -30,7 +30,7 @@ The OpenRTB 2.6 protocol introduces several changes and updates to the top-level
 
 | Field | Type | Description |
 |:---|:---|:---|
-|`imp`| array of objects | (Required). The impressions offered in this bid request. See [Impression Object](#impression-object) below. <br> **Note:** The `imp` is not a new field in the OpenRTB 2.6 protocol guide. It is included in this document solely as a reference to the `rwdd` field in the below [section](#impression-object). |
+|`imp`| array of objects | (Required). The impressions offered in this bid request. See [Impression Object](#impression-object) below. <br><br> **Note:** The `imp` is not a new field in the OpenRTB 2.6 protocol guide. It is included in this document solely as a reference to the `rwdd` field in the below [section](#impression-object). |
 
 ### Impression object
 
@@ -44,7 +44,7 @@ As a part of the OpenRTB 2.6 implementation, Xandr has added the following field
 | Field | Type | Description |
 |:---|:---|:---|
 |`rwdd`| integer | This field indicates whether the user receives a reward for viewing the ad, with 0 representing "no" and 1 representing "yes." Typically, video ad implementations grant rewards such as access to an additional news article for free, an extra life in a game, or a sponsored ad-free music session. The reward is usually provided after the video ad is fully viewed. |
-| `video` | object | This field is required if the impression is offered as a video ad. See [Video Object](#video-object) below. <br> **Note:** The `video` is not a new field in the OpenRTB 2.6 protocol guide. It is included in this document solely as a reference to the `plcmt` field in the below [section](#video-object). |
+| `video` | object | This field is required if the impression is offered as a video ad. See [Video Object](#video-object) below. <br><br> **Note:** The `video` is not a new field in the OpenRTB 2.6 protocol guide. It is included in this document solely as a reference to the `plcmt` field in the below [section](#video-object). |
 
 
 ### Video object

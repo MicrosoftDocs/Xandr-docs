@@ -23,6 +23,8 @@
     href: client-hints-for-ssp-clients.md
   - name: Define Ad Quality Rules
     href: define-ad-quality-rules.md
+  - name: Intergration with OpenRTB 2.6 Protocol
+    href: integration-with-openrtb-2-6.md
   - name: RTB Eligibility Requirements
     items:
     - name: Overview

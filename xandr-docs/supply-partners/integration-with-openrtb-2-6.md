@@ -26,7 +26,7 @@ x-openrtb-version : 2.6
 The OpenRTB 2.6 protocol introduces several changes and updates to the top-level objects and their associated fields that were previously supported by OpenRTB 2.4. The following sections detail these changes and updates, outlining the specific objects and fields that have been modified or added as a part of the OpenRTB 2.6 implementation.
 
 >[!NOTE]
-> Any field(s) not listed here remains supported in its original location as documented in the [OpenRTB 2.4 protocol] (incoming-bid-request-from-ssps.md).
+> Any field(s) not listed here remains supported in its original location as documented in the [OpenRTB 2.4 protocol](incoming-bid-request-from-ssps.md).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -37,7 +37,7 @@ The OpenRTB 2.6 protocol introduces several changes and updates to the top-level
 The `Imp` object defines an ad placement or impression being auctioned. A single bid request can include multiple `Imp` objects, which is useful for exchanges that support selling all ad positions on a given page. Each Imp object requires an ID, allowing bids to reference them individually.
 
 >[!NOTE]
-> Any field(s) not listed here remains supported in its original location as documented in the [OpenRTB 2.4 protocol] (incoming-bid-request-from-ssps.md).
+> Any field(s) not listed here remains supported in its original location as documented in the [OpenRTB 2.4 protocol](incoming-bid-request-from-ssps.md).
 
 As a part of the OpenRTB 2.6 implementation, Xandr has added the following field(s) to the `Imp Object`. 
 

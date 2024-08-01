@@ -12,7 +12,7 @@ The **Network Video Analytics** report can be used to view video event metrics f
 > [!NOTE]
 >
 > - Video metrics are recorded for VAST creatives only.
-> - For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#example) below.
+> - For instructions on retrieving a report, see [Report Service](./report-service.md) or the [examples](#examples) below.
 
 ## Time frame
 
@@ -163,9 +163,10 @@ Data in this report is retained for 420 days.
 | `75_pcts` | int | `567` | 75% complete | The total number of times the video completed 75% of the entire duration of time. |
 | `completions` | int | `989` | 100% complete | The total number of times the video played for the entire duration of time. |
 | `completion_rate` | double | `85.45` | completions / imps | The number of video completions divided by the number of impressions. |
+| `render_rate` | double | `60%` | render_rate | The percentage of videos delivered based on the number of ad responses delivered to the user's browser. (Impressions / Ad responses) |
 | `revenue_per_video_complete` | double | `15.869` | revenue / completions | The revenue per video completion. |
 | `cost_per_video_complete` | double | `2.056` | cost / completions | The cost per video completion. |
-| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. |
+<!-- | `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. | -->
 | `imps_viewed` | int | `30,450` | imps_viewed | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 2 consecutive seconds. |
 | `view_measured_imps` | int | `10,120` | view_measured_imps | The total number of impressions that were measured for viewability. |
 | `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |

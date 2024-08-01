@@ -166,7 +166,6 @@ Data in this report is retained for 420 days.
 | `render_rate` | double | `60%` | render_rate | The percentage of videos delivered based on the number of ad responses delivered to the user's browser. (Impressions / Ad responses) |
 | `revenue_per_video_complete` | double | `15.869` | revenue / completions | The revenue per video completion. |
 | `cost_per_video_complete` | double | `2.056` | cost / completions | The cost per video completion. |
-<!-- | `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. | -->
 | `imps_viewed` | int | `30,450` | imps_viewed | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 2 consecutive seconds. |
 | `view_measured_imps` | int | `10,120` | view_measured_imps | The total number of impressions that were measured for viewability. |
 | `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
@@ -188,6 +187,7 @@ Data in this report is retained for 420 days.
 | `Average View Time` | int | `28` | sum (creative_duration * ((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions)) / sum (starts)) | An estimate for the average duration in seconds (rounded to 0 decimal places) of the creative that was viewed. This is calculated by approximating the duration watched as the mid-point between the video events (for example, a start event would estimate that 12.5% of the creative is viewed). |
 | `Average View Time Percent` | percentage | `89%` | sum (((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions))∕starts) | The average view time expressed as a percentage of the total possible view time. |
 | `fill_rate` | double |`85.00` |(imps_resold+imps_kept)/total_ad_requests |The percentage of total impressions (both resold and retained) out of the total number of ad requests sent to Xandr for auction. |
+<!-- | `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. | -->
 
 ### Creative frequency buckets
 

@@ -6,9 +6,6 @@ ms.date: 10/28/2023
 
 # Bidders - Deal sync with DV360 - Publisher guide
 
-> [!NOTE]
-> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, reach out to your Xandr account representative.
-
 ## Overview
 
 Xandr's integration with the Display & Video 360 (DV360) Seller API automatically synchronizes the deals created in Microsoft Monetize with the Google DV360 system. This enables a more seamless deal transaction between Microsoft Monetize publishers and DV360 buyers.
@@ -42,15 +39,6 @@ Updates to newly created deals (post deal sync enablement) automatically get upl
 - New deals are uploaded up to 1 hour after being created.
 - Updates to existing deals are uploaded up to 1 hour after it is created (depending on when the last sync script ran).
 - Buyer acceptance statuses are synchronized every hour.
-
-## What is changing?
-
-While there are no changes to how a publisher create deals in Monetize UI, publishers should be aware of which type of deals are automatically synchronized and which deals still continue to follow the manual workflow.
-
-- All new deals created in the alpha are synchronized with DV360, with the exceptions of:
-  - Multi-Buyer Deals that are created at the Bidder level.
-  - Deals created with a DV360 Buyer Member ID instead of a Bidder Seat ID DV360 Partner ID.
-- In a later phase, we plan to begin synchronizing older deals that match the above criteria.
 
 ## Best practices for deal set up
 

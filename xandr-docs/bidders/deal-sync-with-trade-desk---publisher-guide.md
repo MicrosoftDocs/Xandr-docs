@@ -8,9 +8,6 @@ ms.date: 10/28/2023
 
 ## Overview
 
-> [!NOTE]
-> This product is currently in **Beta** stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, please reach out to your Xandr account representative.
-
 Xandr's integration with the Trade Desk Proposal API automatically synchronizes the deals created in Microsoft Monetize with the Trade Desk systems. This enables a more seamless deal transaction between Microsoft Monetize publishers and Trade Desk buyers.
 
 > [!NOTE]
@@ -42,15 +39,6 @@ Updates to newly created deals (post deal sync enablement) automatically get upl
 - New deals will be uploaded up to 3 hours after being created.
 - Updates to existing deals will be will be uploaded up to 3 hours after updates are done (depending on when the last sync script ran).
 - Buyer acceptance statuses will take a few hours to properly sync.
-
-### What is changing?
-
-While there are no changes to how a publisher create deals in Monetize UI, publishers should be aware of which type of deals are automatically synchronized and which deals still continue to follow the manual workflow.
-
-- All new deals created in the alpha are synchronized with Trade Desk, with the exceptions of:
-  - Multi-Buyer Deals that are created at the Bidder level.
-  - Deals created with a Trade Desk Buyer Member ID instead of a Bidder Seat ID Trade Desk Partner ID.
-  - Deals created prior to the seller's enablement of deal sync with Trade Desk.
 
 ## Best practices for deal setup
 

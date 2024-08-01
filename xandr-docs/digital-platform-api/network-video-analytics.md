@@ -1,7 +1,7 @@
 ---
 title: Network Video Analytics
 description: Use the Network Video Analytics report to view video event metrics for network members and granular analytics for specific advertisers/publishers.
-ms.date: 10/28/2023
+ms.date: 08/01/2023
 ms.custom: digital-platform-api
 ---
 
@@ -10,8 +10,9 @@ ms.custom: digital-platform-api
 The **Network Video Analytics** report can be used to view video event metrics for a network member. To drill down into more granular analytics for a specific advertiser or publisher, see the [Network Video Advertiser Analytics](./network-advertiser-video-analytics.md) and [Network Video Publisher Analytics](./network-publisher-video-analytics.md) reports.
 
 > [!NOTE]
+>
 > - Video metrics are recorded for VAST creatives only.
-> - For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
+> - For instructions on retrieving a report, see [Report Service](./report-service.md) or the [example](#example) below.
 
 ## Time frame
 
@@ -120,10 +121,9 @@ Data in this report is retained for 420 days.
 | `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 
-
-
 > [!NOTE]
 > The data for the following dimensions is only available if the publisher has implemented video taxonomy.
+>
 > - `video_delivery_type`
 > - `video_content_genre`
 > - `video_program_type`
@@ -255,7 +255,7 @@ Data in this report is retained for 420 days.
 | `1` | medium |
 | `2` | large |
 
-## Example
+## Examples
 
 ### Create a JSON formatted report request
 

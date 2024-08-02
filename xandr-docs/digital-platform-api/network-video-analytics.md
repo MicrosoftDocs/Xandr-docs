@@ -70,7 +70,7 @@ Data in this report is retained for 420 days.
 | `publisher_currency` | string | Yes | `"USD"` | The currency of the publisher. |
 | `site_id` | int | Yes | `194` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |
 | `site_name` | string | No | `"Site Name"` | The name of the site. |
-| `site` | string | No | `"Site Name (194)"` | Deprecated (as of October 17, 2016). |
+| `site` | string | No | `"Site Name (194)"` | **Deprecated** (as of October 17, 2016). |
 | `placement_id` | int | Yes | `456` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
 | `placement_name` | string | No | `"Ivillage 160x600"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
 | `placement_code` | string | No | `"Ivillage Code"` | The custom code for the placement. |
@@ -113,7 +113,7 @@ Data in this report is retained for 420 days.
 | `video_program_type` | string | No | `"series"` | The higher level categorization of the video program's format on which the ad will be played. For example, `Movie`, `Series`, `Special`, `Show`, `Event`, `Clip`, etc. |
 | `video_content_rating` | string | No | `"teens"` | The publisher-identified audience group for which the content is rated. For example, `All`, `Children (7+)` , `Teens (13+)`, `Young Adults (14+)`, or `Adults (18+)`. |
 | `content_duration_secs` | int | Yes | `480` | The length of the video content in seconds. |
-| `device_type` | string | Yes | <br> - `Desktops & Laptops`<br> - `Mobile Phones`<br> - `Tablets`<br> - `TV`<br> - `Game Consoles`<br> - `Media Players`<br> - `Set Top Box`<br> - `Other Devices` | The type of device where the creative was set to play. |
+| `device_type` | string | Yes | - `Desktops & Laptops`<br> - `Mobile Phones`<br> - `Tablets`<br> - `TV`<br> - `Game Consoles`<br> - `Media Players`<br> - `Set Top Box`<br> - `Other Devices` | The type of device where the creative was set to play. |
 | `video_content_duration` | int | Yes | `100` | The length of the video content in seconds. |
 | `video_content_language` | string | No | `"Spanish"` | The language of the video program in which ad will be played. For example, `Spanish`. |
 | `video_content_network` | string | No | `"AMC"` | The network delivering the video content. For example, `9 Story`, `CBC`, `Disney`, `AMC`, `Fox`, etc. |
@@ -150,7 +150,7 @@ Data in this report is retained for 420 days.
 | `rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
 | `rpm_including_fees` | money | `2.60548314606741` | (revenue_including_fees / imps) x 1000 | **To be deprecated**. The revenue minus commissions per 1000 impressions. |
 | `total_network_rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
-| `ppm` | money | `0.944966292134831` | (profit / imps) x 1000 | To be deprecated. The profit per 1000 impressions. |
+| `ppm` | money | `0.944966292134831` | (profit / imps) x 1000 | **To be deprecated**. The profit per 1000 impressions. |
 | `ppm_including_fees` | money | `0.662460674157303` | (profit_including_fees / imps) x 1000 | **To be deprecated**. The profit including additional fees per 1000 impressions. |
 | `cpm_including_fees` | money | `2.60548314606741` | (cost_including_fees / imps) x 1000 | **To be deprecated**. The cost including additional fees per 1000 impressions. |
 | `errors` | int | `5` | errors | The total number of times an error occurred. |

@@ -1,6 +1,6 @@
 ---
 title: Adform Buying Guide
-description: In this article, find information on how Xandr publishers communicate with their buyers about accessing and targeting Microsoft Monetize's publisher inventory using Adform as their DSP. 
+description: In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. 
 ms.author: shsrinivasan
 ms.date: 07/22/2024
 ---

@@ -1,7 +1,7 @@
 ---
 title: Network Video Analytics
 description: Use the Network Video Analytics report to view video event metrics for network members and granular analytics for specific advertisers/publishers.
-ms.date: 10/28/2023
+ms.date: 08/01/2023
 ms.custom: digital-platform-api
 ---
 
@@ -10,8 +10,9 @@ ms.custom: digital-platform-api
 The **Network Video Analytics** report can be used to view video event metrics for a network member. To drill down into more granular analytics for a specific advertiser or publisher, see the [Network Video Advertiser Analytics](./network-advertiser-video-analytics.md) and [Network Video Publisher Analytics](./network-publisher-video-analytics.md) reports.
 
 > [!NOTE]
+>
 > - Video metrics are recorded for VAST creatives only.
-> - For instructions on retrieving a report, please see [Report Service](./report-service.md) or the [example](#example) below.
+> - For instructions on retrieving a report, see [Report Service](./report-service.md) or the [examples](#examples) below.
 
 ## Time frame
 
@@ -69,7 +70,7 @@ Data in this report is retained for 420 days.
 | `publisher_currency` | string | Yes | `"USD"` | The currency of the publisher. |
 | `site_id` | int | Yes | `194` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |
 | `site_name` | string | No | `"Site Name"` | The name of the site. |
-| `site` | string | No | `"Site Name (194)"` | Deprecated (as of October 17, 2016). |
+| `site` | string | No | `"Site Name (194)"` | **Deprecated** (as of October 17, 2016). |
 | `placement_id` | int | Yes | `456` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
 | `placement_name` | string | No | `"Ivillage 160x600"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
 | `placement_code` | string | No | `"Ivillage Code"` | The custom code for the placement. |
@@ -112,7 +113,7 @@ Data in this report is retained for 420 days.
 | `video_program_type` | string | No | `"series"` | The higher level categorization of the video program's format on which the ad will be played. For example, `Movie`, `Series`, `Special`, `Show`, `Event`, `Clip`, etc. |
 | `video_content_rating` | string | No | `"teens"` | The publisher-identified audience group for which the content is rated. For example, `All`, `Children (7+)` , `Teens (13+)`, `Young Adults (14+)`, or `Adults (18+)`. |
 | `content_duration_secs` | int | Yes | `480` | The length of the video content in seconds. |
-| `device_type` | string | Yes | <br> - `Desktops & Laptops`<br> - `Mobile Phones`<br> - `Tablets`<br> - `TV`<br> - `Game Consoles`<br> - `Media Players`<br> - `Set Top Box`<br> - `Other Devices` | The type of device where the creative was set to play. |
+| `device_type` | string | Yes | - `Desktops & Laptops`<br> - `Mobile Phones`<br> - `Tablets`<br> - `TV`<br> - `Game Consoles`<br> - `Media Players`<br> - `Set Top Box`<br> - `Other Devices` | The type of device where the creative was set to play. |
 | `video_content_duration` | int | Yes | `100` | The length of the video content in seconds. |
 | `video_content_language` | string | No | `"Spanish"` | The language of the video program in which ad will be played. For example, `Spanish`. |
 | `video_content_network` | string | No | `"AMC"` | The network delivering the video content. For example, `9 Story`, `CBC`, `Disney`, `AMC`, `Fox`, etc. |
@@ -120,10 +121,9 @@ Data in this report is retained for 420 days.
 | `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 
-
-
 > [!NOTE]
 > The data for the following dimensions is only available if the publisher has implemented video taxonomy.
+>
 > - `video_delivery_type`
 > - `video_content_genre`
 > - `video_program_type`
@@ -150,7 +150,7 @@ Data in this report is retained for 420 days.
 | `rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
 | `rpm_including_fees` | money | `2.60548314606741` | (revenue_including_fees / imps) x 1000 | **To be deprecated**. The revenue minus commissions per 1000 impressions. |
 | `total_network_rpm` | money | `2.60548314606741` | (revenue / imps) x 1000 | The revenue per 1000 impressions. |
-| `ppm` | money | `0.944966292134831` | (profit / imps) x 1000 | To be deprecated. The profit per 1000 impressions. |
+| `ppm` | money | `0.944966292134831` | (profit / imps) x 1000 | **To be deprecated**. The profit per 1000 impressions. |
 | `ppm_including_fees` | money | `0.662460674157303` | (profit_including_fees / imps) x 1000 | **To be deprecated**. The profit including additional fees per 1000 impressions. |
 | `cpm_including_fees` | money | `2.60548314606741` | (cost_including_fees / imps) x 1000 | **To be deprecated**. The cost including additional fees per 1000 impressions. |
 | `errors` | int | `5` | errors | The total number of times an error occurred. |
@@ -163,9 +163,9 @@ Data in this report is retained for 420 days.
 | `75_pcts` | int | `567` | 75% complete | The total number of times the video completed 75% of the entire duration of time. |
 | `completions` | int | `989` | 100% complete | The total number of times the video played for the entire duration of time. |
 | `completion_rate` | double | `85.45` | completions / imps | The number of video completions divided by the number of impressions. |
+| `render_rate` | double | `60%` | render_rate | The percentage of videos delivered based on the number of ad responses delivered to the user's browser. (Impressions / Ad responses) |
 | `revenue_per_video_complete` | double | `15.869` | revenue / completions | The revenue per video completion. |
 | `cost_per_video_complete` | double | `2.056` | cost / completions | The cost per video completion. |
-| `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. |
 | `imps_viewed` | int | `30,450` | imps_viewed | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 2 consecutive seconds. |
 | `view_measured_imps` | int | `10,120` | view_measured_imps | The total number of impressions that were measured for viewability. |
 | `view_rate` | double | `58%` | view_rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
@@ -187,6 +187,7 @@ Data in this report is retained for 420 days.
 | `Average View Time` | int | `28` | sum (creative_duration * ((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions)) / sum (starts)) | An estimate for the average duration in seconds (rounded to 0 decimal places) of the creative that was viewed. This is calculated by approximating the duration watched as the mid-point between the video events (for example, a start event would estimate that 12.5% of the creative is viewed). |
 | `Average View Time Percent` | percentage | `89%` | sum (((0.125 × starts) + (0.25 × first_quartiles) + (0.25 × second_quartiles) + (0.25 × third_quartiles) + (0.125 × completions))∕starts) | The average view time expressed as a percentage of the total possible view time. |
 | `fill_rate` | double |`85.00` |(imps_resold+imps_kept)/total_ad_requests |The percentage of total impressions (both resold and retained) out of the total number of ad requests sent to Xandr for auction. |
+<!-- | `served` | int | `87649` | video impressions served | The total number of video impressions served.<br><br>**Note**: An `Imp` refers to when the video player loads the video and starts the first frame. **Videos Served** refers to the VAST document being served in response to a request from the video player. | -->
 
 ### Creative frequency buckets
 
@@ -255,7 +256,7 @@ Data in this report is retained for 420 days.
 | `1` | medium |
 | `2` | large |
 
-## Example
+## Examples
 
 ### Create a JSON formatted report request
 

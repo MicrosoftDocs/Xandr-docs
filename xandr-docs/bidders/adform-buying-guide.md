@@ -231,27 +231,6 @@ To successfully run PG line items, follow these steps:
 
 All created RTB tags for creatives are sent to inventory sources for approval. Whether you just created a new RTB tag or want to troubleshoot already created tags, you can check RTB Approval Status from the right-side panel in the **Tags Overview** page. A creative gets submitted for Xandr’s approval when it gets assigned to a line item that is actively targeting Xandr inventory.
 
-Here are the different statuses you might see: 
-
-- **Not Supported** - status shown for ad types that are not supported.
-- **Not Sent** - initial status for supported banner types. The tag can be sent.
-- **In Progress** - once the tag is sent for approval, the status is set to In Progress.
-- **Approved** - tag was approved by inventory source.
-- **Rejected** - if the ad does not comply with specific inventory source requirements, it cannot be used in bidding. The ad must be modified and re-sent for approval.
-
-> [!NOTE]
-> When Third Party Ads are used, the tag approval process can take longer because tags have to go through additional auditing measures in order to verify that no malicious content is being served. This process can take up to 24 hours.
->
-> It is highly recommended to assign the creatives to corresponding line items a few days prior to campaign start.
-
-## Buyer identification using buyer seat IDs
-
-Adform supports Xandr's Buyer Seat ID feature. Member breakouts and virtual seats are no longer used for each Adform buyer.
-
-Deals should be set up using Adform Agency or Advertiser Seat IDs. Buyers should confirm their buyer seat ID when requesting a deal from a publisher. If buyers are not aware of their seat id, please contact [Adform support](mailto:support@adform.com).
-
-If a seller is unable to find the seat ID shared by the buyer in the SSP, submit a request to [Xandr Support](https://help.xandr.com/s/) for the buyer seat ID to be added.
-
 To check the RTB tag approval status in Adform Platform:
 
 1. Click **Campaigns** > **Tags** in the left sidebar.
@@ -266,7 +245,11 @@ To check the RTB tag approval status in Adform Platform:
     You can view the percentage and number of inventories that have assigned this status to your tags.
 1. Click the bottom arrow to expand each status category and view the list of inventories that assigned this status.
 
-Using third-party ads extends the tag approval process, as tags must undergo additional auditing to ensure no malicious content is served. This process can take up to 24 hours. Since some exchanges may take up to 48 hours to approve tags, assign banners to corresponding line items few days before the campaign starts.
+> [!NOTE]
+> - Using third-party ads extends the tag approval process, as tags must undergo additional auditing to ensure no malicious content is served. This process can take up to 24 hours. Since some exchanges may take up to 48 hours to approve tags, assign banners to corresponding line items few days before the campaign starts.
+>
+> - It is highly recommended to assign the creatives to corresponding line items a few days prior to campaign start.
+
 
 ## Resend tags for approval
 

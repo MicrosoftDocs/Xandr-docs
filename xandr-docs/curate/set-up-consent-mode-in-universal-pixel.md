@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Set up Consent Mode in Universal Pixel
-description: In this article, learn how to set up consent mode in Universal Pixel, which provides control over the reading and writing of both first-party and third-party cookies based on customer consent.
+description: Explore this article to learn how to set up consent mode in Universal Pixel, which provides control over the reading and writing of both first-party and third-party cookies based on customer consent.
 ms.date: 08/05/2024
 ---
 

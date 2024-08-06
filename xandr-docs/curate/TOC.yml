@@ -149,6 +149,8 @@
       href: universal-pixel-basic-implementation.md
     - name: Universal Pixel Code Structure
       href: universal-pixel-code-structure.md
+    - name: Universal Pixel Consent Mode
+      href: set-up-consent-mode-in-universal-pixel.md
     - name: Events and Parameters
       items:
       - name: Using Events and Parameters

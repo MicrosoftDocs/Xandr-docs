@@ -11,6 +11,8 @@ ms.date: 10/28/2023
 Xandr's integration with the Trade Desk Proposal API automatically synchronizes the deals created in Microsoft Monetize with the Trade Desk systems. This enables a more seamless deal transaction between Microsoft Monetize publishers and Trade Desk buyers.
 
 > [!NOTE]
+> All deals created with TTD Partner Ids after August 14, 2023, will automatically sync to the TTD platform, as
+> all Monetize sellers and curators will be enabled for this product (no additional enablement required).
 > You can manually set up deals with Trade Desk, but this requires buyers to manually register publisher deals in the Trade Desk user interface. Details of the manual process can be found in [Trade Desk Buying Guide](trade-desk-buying-guide.md). The manual process of setting up deals can result in delays and issues due to human error.
 
 The key benefits of using an automatic synchronization process are:

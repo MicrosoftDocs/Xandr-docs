@@ -7,17 +7,22 @@ ms.date : 10/28/2023
 
 # Android SDK release notes
 
+## 9.0.1
+
+### Improvement/Bug Fixes
+
+- 7812193 - Fixed a StackOverflowError crash that occurred when the native ad failed.
+
 ## 9.0
 
 ### New Feature
-- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` method [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).
 
+- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` method [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).
 
 ### Improvement/Bug Fixes
 
 - 7390161 Fixed Banner autorefresh when `OnAdFailed()` occurs.
 - 7390147 Fixed OMID AdEvents error messages on autorefresh.
-
 
 ## 8.11
 

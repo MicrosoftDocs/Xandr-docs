@@ -1,13 +1,10 @@
 ---
 title: Bidders - DV360 Buyer UI Deal Acceptance Workflows
-description: Explore DV360 Buyer UI deal acceptance workflows. In Beta stage, open for testing by selected sellers. Contact the account representatives to participate.
+description: Explore DV360 Buyer UI deal acceptance workflows. Open for testing by selected sellers. Contact your account representative to participate.
 ms.date: 10/28/2023
 ---
 
 # Bidders - DV360 Buyer UI deal acceptance workflows
-
-> [!NOTE]
-> This product is currently in Beta stage and has been enabled for selected sellers who have chosen to participate in the beta testing. If you would like to test out this product, please reach out to your Xandr account representative.
 
 ## Overview
 

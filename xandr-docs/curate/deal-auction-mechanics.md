@@ -1,7 +1,7 @@
 ---
 title: Microsoft Curate - Deal Auction Mechanics
 description: This article provides information on deal mechanics based on the first-price auction.
-ms.date: 11/10/2023
+ms.date: 08/13/2024
 ---
 
 # Microsoft Curate - Deal auction mechanics
@@ -23,6 +23,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 
 > [!NOTE]
 > **Deal Ask Prices vs. Reserve Prices**
+>
 > - If the seller has set a reserve price on their RTB inventory, the deal ask price will take priority over the reserve price.
 > - A default creative reserve price will always take priority over the placement reserve price.
 > - A dynamic floor will always take priority over the placement and default creative reserve price.
@@ -46,6 +47,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 >
 > In the example above, each of the deal bids has a different floor applied to it. This can happen when the seller uses floor rule demand filtering to target the floor to a specific buyer, brand, or offer category.
 > The highest non-deal bid wins because:
+>
 > - The deal does not have a deal ask price, and
 > - Neither of the deal bids met the floor targeted to their bids
 
@@ -58,15 +60,15 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 - If a buyer targeting the deal submits a bid higher than the deal's ask price and higher than any other private auction bids, that buyer wins the auction, paying the bid price.
 - If no private auction bids clear their ask prices, the highest bid in the open auction wins, paying the bid price.
 
-### Examples
+### Examples (private auction)
 
 #### Deal bid wins in private auction (no open auction held)
 
-:::image type="content" source="media/private-auction-deal-wins-fp.png" alt-text="Screenshot that shows an example for deal bid wins in private auction.":::
+:::image type="content" source="media/private-auction-deal-wins-example-fp-edited.png" alt-text="Screenshot that shows an example for deal bid wins in private auction.":::
 
 #### Higher priority deal bid wins in private auction (no open auction held)
 
-:::image type="content" source="media/private-auction-high-priority-wins-fp.png" alt-text="Screenshot that shows an example for priority deal bid wins in private auction.":::
+:::image type="content" source="media/private-auction-high-priority-wins-example-fp-edited.png" alt-text="Screenshot that shows an example for priority deal bid wins in private auction.":::
 
 #### Non-deal bid wins in open auction (no private auction winner)
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Deal Auction Mechanics
 description: A deal auction can be open or private, depending on how the seller defined the deal. Learn about open and private auctions with examples in this page.
-ms.date: 10/28/2023
+ms.date: 08/13/2024
 ---
 
 # Microsoft Monetize - Deal auction mechanics
@@ -64,11 +64,11 @@ If none of the private deal buyers win, the auction is opened to buyers targetin
 
 ### Deal bid wins in private auction (no open auction held)
 
-:::image type="content" source="media/private-auction-deal-wins-fp-edited.png" alt-text="Screenshot of deal bid wins in private auction.":::
+:::image type="content" source="media/private-auction-deal-wins-example-fp-edited.png" alt-text="Screenshot of deal bid wins in private auction.":::
 
 ### Higher priority deal bid wins in private auction (no open auction held)
 
-:::image type="content" source="media/private-auction-high-priority-wins-fp-edited.png" alt-text="Screenshot of higher priority deal bid wins in private auction.":::
+:::image type="content" source="media/private-auction-high-priority-wins-example-fp-edited.png" alt-text="Screenshot of higher priority deal bid wins in private auction.":::
 
 ### Non-deal bid wins in open auction (no private auction winner)
 

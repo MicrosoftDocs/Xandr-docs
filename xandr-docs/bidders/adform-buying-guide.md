@@ -256,7 +256,7 @@ To check the RTB tag approval status in Adform Platform:
 To resend your tags to the publisher for approval after making adjustments, follow these steps:
 
 1. Go to the Tags page and select the tags you want to resend.
-1. Click  :::image type="content" source="media/adform-emailbutton.png" width="200px" height="200px" alt-text="Screenshot of Email button."::: button.
+1. Click  :::image type="content" source="media/adform-emailbutton.png" alt-text="Screenshot of Email button."::: button.
 1. Choose one of the following options:
     1. Send to all inventory sources: Resends your tags to all publishers, regardless of their approval status.
     1. Send to inventory sources that returned the following status: Resends your tags to publishers that rejected the tag or are still in progress of approving it.

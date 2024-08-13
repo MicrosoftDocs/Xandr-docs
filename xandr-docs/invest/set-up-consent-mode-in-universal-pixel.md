@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Set up Consent Mode in Universal Pixel
 description: Learn how to set up consent mode in Universal Pixel, which provides control over the reading and writing of both first-party and third-party cookies based on customer consent.
-ms.date: 08/05/2024
+ms.date: 08/13/2024
 ---
 
 # Microsoft Invest - Set up consent mode in Universal Pixel
@@ -20,7 +20,9 @@ Use the `ad_storage` property in Universal Pixel to configure consent mode. The 
 | `ad_storage` | `denied` | Third-party cookies are not read and written. |
 
 > [!NOTE]
-> For noscript pixie calls, ensure that you update the URLs with the correct consent parameters.
+> If you prefer to signal Universal Pixel events using `<noscript>` URLs, either in scenarios where JavaScript isn't supported or when URL-based signals are desired, ensure that you include the `"consent"` parameter in the `/pixie` URL. This parameter should reflect the customer preferences, with a value of `1` for consent granted or `0` for consent denied.
+>
+> For example: `https://ib.adnxs.com/pixie?pi=REPLACE_WITH_UP_PIXEL_ID&e=PageView&script=0&consent=REPLACE_WITH_A_1_OR_0`
 
 ## Examples
 

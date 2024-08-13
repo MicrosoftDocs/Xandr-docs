@@ -20,18 +20,18 @@ With SDK v8.0, there are two counting methods that can be applied for impression
 | Counting Method | Description |
 |--|--|
 | Begin-to-render | The impression is counted when an ad is fully downloaded and loaded on to the view, irrespective of the user’s screen. |
-| Viewable Impression | The impression is counted when one or more pixels of the ad's creative is visible on a device’s screen. |
+| 1px-in-view | The impression is counted when one or more pixels of the ad's creative is visible on a device’s screen. |
 
-### Viewable impression tracking mechanism
+### 1px-in-view tracking mechanism
 
-The move to counting based on ad container visibility strengthens the definition of an impression equating to an ad seen by the user on their device. Viewable impression counting however, is not standard across the industry and may create discrepancies with third party impression metrics. Based on the transaction types below, Xandr takes a hybrid approach to reduce discrepancies with partners as the industry moves to viewable impression tracking mechanism, for mobile in app inventory.
+The move to counting based on ad container visibility strengthens the definition of an impression equating to an ad seen by the user on their device. 1px-in-view counting however, is not standard across the industry and may create discrepancies with third party impression metrics. Based on the transaction types below, Xandr takes a hybrid approach to reduce discrepancies with partners as the industry moves to 1px-in-view tracking mechanism, for mobile in app inventory.
 
 Impression counting is summarized as follows:
 
 | Transaction Type | Impression Type | Counting Method |
 |--|--|--|
-| Direct-Sold Insertion Orders | Kept | Xandr will count an impression when one pixel of the ad creative is visible on a device’s screen (referred to as "Viewable Impression" counting). |
-| Xandr Marketplace Transactions | Resold | Xandr will use “Viewable Impression” counting for DSP partners that support it. For all other exchange demand, impression counting will remain unchanged and will continue to follow the “begin to render” methodology, where the impression will be counted when an ad is fully downloaded and loaded on to the view, irrespective of the user’s screen. |
+| Direct-Sold Insertion Orders | Kept | Xandr will count an impression when one pixel of the ad creative is visible on a device’s screen (referred to as "1px-in-view" counting). |
+| Xandr Marketplace Transactions | Resold | Xandr will use “1px-in-view” counting for DSP partners that support it. For all other exchange demand, impression counting will remain unchanged and will continue to follow the “begin to render” methodology, where the impression will be counted when an ad is fully downloaded and loaded on to the view, irrespective of the user’s screen. |
 
 ### Impression tracking mechanisms
 
@@ -45,9 +45,9 @@ The Mobile SDK v7.22 continues to use the old impression counting mechanism for 
 
 | AdUnits | Impression Type | Enablement by Impression Type |
 |--|--|--|
-| Banner | Viewable Impression | Default for Impression type = Kept Default for Impression type = Resold (limited DSP partners) |
+| Banner | 1px-in-view | Default for Impression type = Kept Default for Impression type = Resold (limited DSP partners) |
 | Banner | Begin to Render | Default for Impression Type = Resold |
-| Native | Viewable Impression | Default for Impression type = Kept Default for Impression type = Resold (limited DSP partners) |
+| Native | 1px-in-view | Default for Impression type = Kept Default for Impression type = Resold (limited DSP partners) |
 | Native | Begin to Render | Default for Impression Type = Resold |
 | Interstitial | Count on Render | Default |
 | Video | Count on Video Start | Default |
@@ -69,6 +69,6 @@ Viewability and impression counting are two different entities. Impression count
 
 The definition of impression counting has evolved over the years. Initially an impression was counted when it was rendered on the page or it was downloaded to the user page. However, it was not necessary that the ad was viewed though it was downloaded. So even if the ad was downloaded in the background the impression count was considered.
 
-This method of impression counting becomes irrelevant as advertisers want accurate counts to understand how many ads are actually served to the user which means how many ads are actually downloaded as well as viewed by the user. This is what viewable impression counts. Viewable impression counting applies for all managed demand and for certain bidders like DV 360. The logic applies only for mobile app impressions and not for mobile web or web pages as these still count when the ad is rendered or downloaded to the page.
+This method of impression counting becomes irrelevant as advertisers want accurate counts to understand how many ads are actually served to the user which means how many ads are actually downloaded as well as viewed by the user. This is what 1px-in-view counts. 1px-in-view counting applies for all managed demand and for certain bidders like DV 360. The logic applies only for mobile app impressions and not for mobile web or web pages as these still count when the ad is rendered or downloaded to the page.
 
 For more information about generic impression counting, see [Impression counting](../industry-reference/impression-counting.md).

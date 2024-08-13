@@ -78,19 +78,19 @@ For deal inventory source targeting, please refer to the [Targeting deals](#targ
 
 In the **Inventory tab**, you can manage your inventory sources, deals, domains, and apps by including or excluding them from your targeting list, as well as setting bid multipliers and bid prices in order to achieve the best campaign performance results.
 
-:::image type="content" source="media/adform-a.png" alt-text="Screenshot of the Inventory tab on Adform.":::
+:::image type="content" source="media/adform-inventorytab.png" alt-text="Screenshot of the Inventory tab on Adform.":::
 
 In the **Inventory sources** section, you can see the count of all the inventory sources that are selected for your line item. By default, all inventory sources are selected. You can edit the list of inventory sources by clicking on the **Update Selection** button.
 
 Once you click on this button, a side panel with the Inventory Marketplace opens, where you can see the list of all the available inventory sources. In this list, the main inventory source “**Xandr – Monetize SSP (AppNexus)**” will be displayed.
 
-:::image type="content" source="media\adform-b.png" alt-text="Screenshot of the Inventory Sources section on Adform.":::
+:::image type="content" source="media/adform-inventorysources.png" alt-text="Screenshot of the Inventory Sources section on Adform.":::
 
 ## Targeting deals
 
 In the **Deals** section, you can see the count of all the deals selected for your line item. You can edit the list of deals by clicking on the **Update Selection** button.
 
-:::image type="content" source="media\adform-c.png" alt-text="Screenshot of the deal count in the Deals section on Adform.":::
+:::image type="content" source="media/adform-targettingdeals.png" alt-text="Screenshot of the deal count in the Deals section on Adform.":::
 
 The following deal types will be automatically synchronised within the buyer account once they have been created by the seller:
 
@@ -169,7 +169,7 @@ Once you create the deal, you can add it to your programmatic line item targetin
 
 1. On the deal section page, click on the Update Selection button. A side panel with the Marketplace opens, where you can see the list of all available deals.
 
-    :::image type="content" source="media/adform-d.png" alt-text="Screenshot of the list of available deals in the Deals section on Adform.":::
+    :::image type="content" source="media/adform-deals.png" alt-text="Screenshot of the list of available deals in the Deals section on Adform.":::
 
 1. Select the deals you want to add to your programmatic line item.
 
@@ -184,7 +184,7 @@ To successfully run PG line items, follow these steps:
 
 1. If a line item has been previously created, pause the line item.
 
-    :::image type="content" source="media/adform-e.png" alt-text="Screenshot of setting the line item status to Paused on Adform.":::
+    :::image type="content" source="media/adform-lineitem.png" alt-text="Screenshot of setting the line item status to Paused on Adform.":::
 
 1. Negotiate a deal, offline or online using Xandr's UI.
 
@@ -193,7 +193,7 @@ To successfully run PG line items, follow these steps:
     Please follow the below requirements:
     - Line item pacing should be set as **ASAP** to buy every PG impression.
 
-        :::image type="content" source="media/adform-f.png" alt-text="Screenshot of the line item spend pacing on Adform.":::
+        :::image type="content" source="media/adform-pgimpressions.png" alt-text="Screenshot of the line item spend pacing on Adform.":::
 
     - Line item pricing model should be
         - set as **CPM**,
@@ -201,7 +201,7 @@ To successfully run PG line items, follow these steps:
         - include all the fees that may apply.
     No optimisation should be added to the line item.
 
-        :::image type="content" source="media/adform-g.png" alt-text="Screenshot of the line item pricing model on Adform.":::
+        :::image type="content" source="media/adform-cpm.png" alt-text="Screenshot of the line item pricing model on Adform.":::
 
     - Line item budget needs to be large enough to buy all the agreed impressions.
     - Line item should not have any targeting, Brand Safety or Contextual Targeting selected.
@@ -214,15 +214,15 @@ To successfully run PG line items, follow these steps:
 
 1. Add received deal ID(s) to the line item setup and disable **Open Exchange**.
 
-    :::image type="content" source="media/adform-h.png" alt-text="Screenshot of the deal targeting selection on Adform.":::
+    :::image type="content" source="media/adform-inventory.png" alt-text="Screenshot of the deal targeting selection on Adform.":::
 
-    :::image type="content" source="media/adform-i.png" alt-text="Screenshot of the deal inventory source listing on Adform.":::
+    :::image type="content" source="media/adform-dealid.png" alt-text="Screenshot of the deal inventory source listing on Adform.":::
 
-    :::image type="content" source="media/adform-j.png" alt-text="Screenshot of the deal type listing on Adform.":::
+    :::image type="content" source="media/adform-inventorytags.png" alt-text="Screenshot of the deal type listing on Adform.":::
 
 1. Activate the line item only after the tags are approved. See [Approval status of RTB tags](#check-approval-status-of-rtb-tags) for more information.
 
-    :::image type="content" source="media/adform-k.png" alt-text="Screenshot of setting the line item status to Active on Adform.":::
+    :::image type="content" source="media/adform-rtbtags.png" alt-text="Screenshot of setting the line item status to Active on Adform.":::
 
 > [!NOTE]
 > For requests regarding PG campaigns, please reach out to [Adform support](mailto:support@adform.com).
@@ -243,7 +243,7 @@ To check the RTB tag approval status in Adform Platform:
     1. **Not Sent:** This is the initial status of the tag before sending it for approval.
     <br>
     You can view the percentage and number of inventories that have assigned this status to your tags.
-1. Click the bottom arrow to expand each status category and view the list of inventories that assigned this status.
+1. Click the  :::image type="content" source="media/adform-dropdown.png" alt-text="Screenshot of drop down button."::: button to expand each status category and view the list of inventories that assigned this status.
 
 > [!NOTE]
 > - Using third-party ads extends the tag approval process, as tags must undergo additional auditing to ensure no malicious content is served. This process can take up to 24 hours. Since some exchanges may take up to 48 hours to approve tags, assign banners to corresponding line items few days before the campaign starts.
@@ -256,7 +256,7 @@ To check the RTB tag approval status in Adform Platform:
 To resend your tags to the publisher for approval after making adjustments, follow these steps:
 
 1. Go to the Tags page and select the tags you want to resend.
-1. Click Email button.
+1. Click  :::image type="content" source="media/adform-emailbutton.png" alt-text="Screenshot of Email button."::: button.
 1. Choose one of the following options:
     1. Send to all inventory sources: Resends your tags to all publishers, regardless of their approval status.
     1. Send to inventory sources that returned the following status: Resends your tags to publishers that rejected the tag or are still in progress of approving it.
@@ -273,7 +273,7 @@ To resend your tags to the publisher for approval after making adjustments, foll
 If you are running your campaigns in an open auction and your tag is not working, it might be due to using a complex banner. Banners such as expanding, floating, or 3D banners typically require a separate agreement with the publisher. To resolve this, set up an individual deal with the publisher instead of bidding in an open auction. By creating a deal, you can agree on specific placements that support your banners, ensuring that your banner will be displayed properly.
 
 1. Why Aren't My Banner Changes Being Applied?
-Once you make changes to a banner and save it, you must republish it to apply those changes. Depending on the type of banner you are creating, to publish the banner, click the **Submit** or "Email" button.
+Once you make changes to a banner and save it, you must republish it to apply those changes. Depending on the type of banner you are creating, to publish the banner, click the **Submit** or :::image type="content" source="media/adform-emailbutton.png" alt-text="Screenshot of Email button."::: button.
 
 1. Why Were Banners Removed From My Line Item?
 Third-party and HTML ads are automatically removed from inactive line items that haven't been scheduled to run for the past three days (72 hours). This is done because these ad types use more resources and can slow down the platform. To get them running again, reassign the ads to your line items and create new tags.

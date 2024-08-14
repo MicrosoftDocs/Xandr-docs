@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Instant Audience Service
 description: In this article, learn about the Instant Audience service, their JSON fields, and ways to authenticate and configure the service.
-ms.date: 10/28/2023
+ms.date: 08/14/2024
 ms.custom: digital-platform-api
 ---
 
@@ -131,7 +131,7 @@ curl -X POST-H "Authorization: hbapi:123456:9876abcd54321:nym2"-d @json/segment.
 |:---|:---|:---|
 | `user_id` | string | This would either be the Xandr `user_id` or an id based on the domain, such as `"AEBE52E7-03EE-455A-B3C4-E57283966239"`, as an example of a device identifier.<br>**Required:** At least one. |
 | `seg_block` | array | Array of segment blocks for segments to associate with the user (see segment block structure below).<br>**Required:** At least one. |
-| `domain` | string | Type of identifier being used in the request, such as Xandr user ID (represented with `null`) or device identifier (`idfa`, `sh1udid`, `md5udid`, `openudid`, and `aaid`).<br><br>**Note:**<br>Do not use `sha1mac`, which was **deprecated** in 2019. |
+| `domain` | string | Type of identifier being used in the request, such as Xandr user ID (represented with `null`) or device identifier (`idfa`, `sah1udid`, `md5udid`, `openudid`, and `aaid`).<br><br>**Note:**<br>Do not use `sha1mac`, which was **deprecated** in 2019. |
 
 **`seg_block array`**
 

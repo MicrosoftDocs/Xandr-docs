@@ -33,7 +33,7 @@ This section provides an example for setting up and updating the consent setting
 To set the default consent settings for every webpage on your website, use the following code:
 
 ```
-<script 
+<script> 
 
 !function(e,i){if(!e.pixie){var n=e.pixie=function(e,i,a){n.actionQueue.push({action:e,actionValue:i,params:a})};n.actionQueue=[];var a=i.createElement("script");a.async=!0,a.src="//acdn.adnxs.com/dmp/up/pixie.js";var t=i.getElementsByTagName("head")[0];t.insertBefore(a,t.firstChild)}}(window,document); 
 

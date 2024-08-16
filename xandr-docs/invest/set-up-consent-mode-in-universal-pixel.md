@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Set up Consent Mode in Universal Pixel
 description: Learn how to set up consent mode in Universal Pixel, which provides control over the reading and writing of both first-party and third-party cookies based on customer consent.
-ms.date: 08/13/2024
+ms.date: 08/16/2024
 ---
 
 # Microsoft Invest - Set up consent mode in Universal Pixel
@@ -33,16 +33,14 @@ This section provides an example for setting up and updating the consent setting
 To set the default consent settings for every webpage on your website, use the following code:
 
 ```
-<script 
+<script>
+!function(e,i){if(!e.pixie){var n=e.pixie=function(e,i,a){n.actionQueue.push({action:e,actionValue:i,params:a})};n.actionQueue=[];var a=i.createElement("script");a.async=!0,a.src="//acdn.adnxs.com/dmp/up/pixie.js";var t=i.getElementsByTagName("head")[0];t.insertBefore(a,t.firstChild)}}(window,document);
 
-!function(e,i){if(!e.pixie){var n=e.pixie=function(e,i,a){n.actionQueue.push({action:e,actionValue:i,params:a})};n.actionQueue=[];var a=i.createElement("script");a.async=!0,a.src="//acdn.adnxs.com/dmp/up/pixie.js";var t=i.getElementsByTagName("head")[0];t.insertBefore(a,t.firstChild)}}(window,document); 
+pixie('consent', 'default', { 'ad_storage':  'denied', 'wait_for_update': 1000});
 
-pixie(‘consent’, ‘default’, { ‘ad_storage’:  ‘denied’, ‘wait_for_update’: 1000}); 
+pixie('init', 'REPLACE_WITH_UP_PIXEL_ID');
 
-pixie('init', ‘REPLACE_WITH_UP_PIXEL_ID'); 
-
-pixie('event', 'PageView'); 
-
+pixie('event', 'PageView');
 </script>
 
 <noscript><img width="1" height="1" style="display:none;" src="https://ib.adnxs.com/pixie?pi=REPLACE_WITH_UP_PIXEL_ID&e=PageView&script=0&consent=REPLACE_WITH_A_1_OR_0" />

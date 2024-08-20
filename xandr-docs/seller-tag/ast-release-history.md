@@ -12,7 +12,7 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
-| [0.63.3](https://acdn.adnxs.com/ast/alpha/0.63.3/ast.js) | - Various updates to (FLEDGE) private auction workflows in Chrome (in beta status). <br> - Added additional data for core AST telemetry events. <br> - Fixed issues with Native Assembly ads in AST SafeFrame. | 20 August 2024 |
+| [0.63.3](https://acdn.adnxs.com/ast/alpha/0.63.3/ast.js) | - Various updates to (FLEDGE) private auction workflows in Chrome (in beta status). <br> - Added additional data for core AST telemetry events. <br> - Fixed issues with Native Assembly ads in AST SafeFrame. | 12 August 2024 |
 | [0.62.4](https://acdn.adnxs.com/ast/static/0.62.4/ast.js) | - Add support to run (FLEDGE) private auctions in Chrome (in beta status) <br> - Add `msft_tag` field to `defineTag` <br> - Add `rewardedAds` field to `defineTag` <br> - Fix `adRequestFailure` error logic to trigger only on active tags <br> - Update SafeFrame HTML title attribute for accessibility readers | 10 June 2024 |
 | [0.61.2](https://acdn.adnxs.com/ast/static/0.61.2/ast.js) | - Add support for DSA Transparency <br> - Remove tracking iframe and pixels when refresh is called <br> - Improve error handling when encountering a HTTP error | 14 February 2024 |
 | [0.60.1](https://acdn.adnxs.com/ast/static/0.60.1/ast.js) | - Integrate telemetry logging in AST <br> - Add content language field in `setPageOpts` <br> - Improve logic on specific null checks | 15 December 2023 |

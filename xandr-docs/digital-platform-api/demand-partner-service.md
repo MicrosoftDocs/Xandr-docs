@@ -11,7 +11,7 @@ The Demand Partner Service returns all demand partners for the caller's member. 
 
 In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction.
 
-Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner). Setting a demand partner to enabled: false pauses all bid requests that partner across all configurations until the setting is restored to true. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations).
+Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner.md). Setting a demand partner to enabled: false pauses all bid requests that partner across all configurations until the setting is restored to true. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations.md).
 
 ## REST API
 

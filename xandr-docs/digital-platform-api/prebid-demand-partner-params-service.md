@@ -16,11 +16,11 @@ The Prebid Demand Partner Params Service allows users to view, add, remove, enab
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | - [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}) | Get all Prebid demand partners for a specific Prebid setting. |
-| `GET` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Get a specific Prebid demand partner configuration. Include the `param ID` as the last URL path component. |
+| `GET` | - [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}) | Get all Prebid demand partners for a specific Prebid configuration. |
+| `GET` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Get a specific Prebid demand partner parameter. Include the `param ID` as the last URL path component. |
 | `POST` | [https://api.appnexus.com/prebid/prebid-demand-partner-params](https://api.appnexus.com/prebid/prebid-demand-partner-params) | Create new demand partner parameters. For cURL example and response, see [`POST`](#post) section below. |
 | `PUT` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Update a specific Prebid demand partner parameter. Include the `param ID` as the last component of the URL path. |
-| `DELETE` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | "Delete a specific Prebid demand partner param. Include the `param ID` as the last URL path component. |
+| `DELETE` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Delete a specific Prebid demand partner parameter. Include the `param ID` as the last URL path component. |
 
 ## `GET`
 
@@ -42,11 +42,6 @@ curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/p
 
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}
 
-GET https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}
- 
-//or 
-
-GET https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}&member_id={member_id}
 ```
 
 ### Response
@@ -98,6 +93,7 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
 
 #### Example JSON request
 
+```
 {
     "prebid_settings_id": 196038,
     "member_id": 13859,
@@ -110,6 +106,7 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
     },
     "enabled": 1
 }
+```
 
 ### Parameters
 
@@ -157,6 +154,7 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
 
 ### Example JSON request
 
+```
 {
     "member_id": 13859,
     "prebid_settings_id": 196038,
@@ -169,6 +167,7 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
     },
     "enabled": 0
 }
+```
 
 ### `PUT`: Response
 

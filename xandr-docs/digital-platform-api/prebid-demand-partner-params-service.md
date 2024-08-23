@@ -16,7 +16,7 @@ The Prebid Demand Partner Params Service allows users to view, add, remove, enab
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | - [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}) | Get all Prebid demand partners for a specific Prebid configuration. |
+| `GET` | - [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}) | Get all Prebid demand partner parameters for a specific Prebid configuration. |
 | `GET` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Get a specific Prebid demand partner parameter. Include the `param ID` as the last URL path component. |
 | `POST` | [https://api.appnexus.com/prebid/prebid-demand-partner-params](https://api.appnexus.com/prebid/prebid-demand-partner-params) | Create new demand partner parameters. For cURL example and response, see [`POST`](#post) section below. |
 | `PUT` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Update a specific Prebid demand partner parameter. Include the `param ID` as the last component of the URL path. |

@@ -28,8 +28,6 @@ Returns all or a specific set of demand partner parameters within a PSP configur
 
 ### Example call using cURL to return a specific param
 
-Append the config ID as the last component of the URL.
-
 ```
 
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}

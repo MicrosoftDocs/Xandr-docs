@@ -34,7 +34,7 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
 | `enabled` | boolean | Indicates if the demand partner is enabled or disabled. |
 | `id` | integer | The demand partner ID specific to the caller's member. |
 | `last_modified` | string | The date that the demand partner object was modified. |
-|||
+| `last_modified_by` | string | The user who last modified the demand partner object. |
 | `member_id` | integer | The member ID. |
 | `name` | string | The name of the demand partner. |
 | `pub_id_settings` | object | The options relevant to the publisher-provided user IDs. See the [publisher provided ID settings](#publisher-provided-id-settings) table below. |
@@ -55,10 +55,10 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     {
         "bid_cpm_adjustment": 2,
         "deleted": false,
-        "demand_partner_id": null,
         "enabled": true,
         "id": 102,
         "last_modified": "2019-09-13T17:39:36Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "adform",
         "pub_id_settings": {
@@ -75,10 +75,10 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     {
         "bid_cpm_adjustment": 1,
         "deleted": false,
-        "demand_partner_id": 2,
         "enabled": true,
         "id": 65,
         "last_modified": "2018-11-02T15:33:54Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "appnexus",
         "pub_id_settings": null
@@ -86,10 +86,10 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     {
         "bid_cpm_adjustment": 1,
         "deleted": false,
-        "demand_partner_id": null,
         "enabled": true,
         "id": 68,
         "last_modified": "2018-11-02T18:32:03Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "openx",
         "pub_id_settings": null
@@ -97,10 +97,10 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     {
         "bid_cpm_adjustment": 1,
         "deleted": false,
-        "demand_partner_id": null,
         "enabled": true,
         "id": 69,
         "last_modified": "2018-11-02T18:32:31Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "ix",
         "pub_id_settings": null
@@ -118,7 +118,7 @@ Create a new demand partner.
 curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-partner'
 ```
 
-| Name | Type | Scope | Description |
+| Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `bid_cpm_adjustment` | integer | Required | The bid CPM adjustment. |
 | `enabled` | boolean | Required | Indicates if the demand partner is enabled or disabled. |
@@ -153,10 +153,10 @@ A successful response will return the new demand partner as a JSON object.
 {
     "bid_cpm_adjustment": 1,
     "deleted": false,
-    "demand_partner_id": null,
     "enabled": true,
     "id": 999,
     "last_modified": "2020-02-25T18:32:31Z",
+    "last_modified_by":"user123",
     "member_id": 9325,
     "name": "test-demand-partner",
     "pub_id_settings": {
@@ -182,6 +182,18 @@ Updates an existing Prebid demand partner. Include the id as last component of t
 curl https://api.appnexus.com/prebid/demand-partner/1234
 ```
 
+### JSON example
+
+```
+{
+    "id": 2065,
+    "name": "openx",
+    "enabled": 0,
+    "bid_cpm_adjustment": 1,
+    "pub_id_settings": null
+  }
+```
+
 ### Response
 
 Returns updated Prebid demand partner object.
@@ -189,6 +201,13 @@ Returns updated Prebid demand partner object.
 ## PATCH
 
 Partially update an existing Prebid demand partner. Include the ID as last component of the path. Pass the update information as JSON in the body of the request.
+
+```
+{
+    "enabled": 0,
+    "bid_cpm_adjustment": 1
+}
+```
 
 ### Example call using curl
 

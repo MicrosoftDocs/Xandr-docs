@@ -11,7 +11,7 @@ The Demand Partner Service returns all demand partners for the caller's member. 
 
 In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction.
 
-Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner.md). Setting a demand partner to `enabled: false` pauses all bid requests that partner across all configurations until the setting is restored to true. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations.md).
+Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner.md). Setting a demand partner to `enabled: false` pauses all bid requests to that partner across all configurations until the setting is restored to true. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations.md).
 
 ## REST API
 
@@ -26,6 +26,8 @@ Before a demand partner can be added to a configuration, they must be enabled vi
 ## `GET`
 
 Get all or a specific demand partner. To retrieve a specific demand partner, append the demand partner ID as last component of the URL path. Returns a JSON array of demand partner objects.
+
+### Response
 
 | Property | Type | Description |
 |:---|:---|:---|
@@ -186,7 +188,7 @@ curl https://api.appnexus.com/prebid/demand-partner/1234
 
 ```
 {
-    "id": 2065,
+    "id": 1234,
     "name": "openx",
     "enabled": 0,
     "bid_cpm_adjustment": 1,

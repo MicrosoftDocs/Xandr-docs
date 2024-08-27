@@ -48,6 +48,9 @@ To enable cross-device tracking and measurement, select the identity graph you w
 
 When the line item starts running, the selected device graph will be applied for frequency capping purposes, conversion attribution, and audience extension.
 
+> [!NOTE]
+> Cross-device audience targeting for CTV devices is now available in the US and EU.
+
 ## Related topics
 
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

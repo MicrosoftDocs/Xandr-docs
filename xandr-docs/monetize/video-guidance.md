@@ -209,4 +209,4 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
 - [PSP supported formats and integration paths](prebid-server-premium-supported-formats-and-integration-paths.md)
-- [Integration with OpenRTB 2.6 protocol](integration-with-openrtb-2-6.md)
+- [Integration with OpenRTB 2.6 protocol](../supply-partners/integration-with-openrtb-2-6.md)

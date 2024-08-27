@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Cross-Partner Settings service
 
-The Cross-Partner Settings Service allows for the retrieval and editing of the the member-wide settings for a member in PSP. They contain global bidder timeouts, price granularity details for bids, and currency settings. Cross Partner Settings are [Global Settings in the UI](../monetize/add-or-edit-psp-global-settings.md).
+The Cross-Partner Settings Service allows for the retrieval and editing of the the member-wide settings for a member in Prebid Server Premium (PSP). They contain global bidder timeouts, price granularity details for bids, and currency settings. Cross Partner Settings are [Global Settings in the UI](../monetize/add-or-edit-psp-global-settings.md).
 
 ## REST API
 
@@ -20,11 +20,11 @@ The Cross-Partner Settings Service allows for the retrieval and editing of the t
 
 ## `GET`
 
-Get all the cross-partner settings. In order for the request to be valid user session data must be included.
+Retrieve all of the global PSP settings for the member. In order for the request to be valid user session data must be included.
 
 ### Response
 
-A successful response will return JSON containing the cross-partner settings for the passed member.
+A successful response will return JSON containing the member-wide settings.
 
 | Property | Type | Description |
 |---|---|---|
@@ -100,7 +100,14 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 
 Create a new cross-partner setting.
 
-### `POST`: Example call using curl
+### `POST` example call using curl
+
+```
+curl https://api.appnexus.com/prebid/cross-partner-settings
+```
+
+
+### `POST` example JSON
 
 ```
 {
@@ -126,8 +133,8 @@ Create a new cross-partner setting.
       "precision":2,
       "currency_code":"USD"
    }
-}            
-            
+}
+
 ```
 
 ### `POST`: Parameters
@@ -139,7 +146,7 @@ Create a new cross-partner setting.
 
 ### `POST`: Price granularity
 
-Price granularity defines the CPM price buckets into which demand partner bids will be grouped. For more information, see [Prebid documentation](https://docs.prebid.org/adops/price-granularity.html).
+Price granularity defines the CPM price buckets into which demand partner bids will be grouped in the ad server. For more information, see [Prebid documentation](https://docs.prebid.org/adops/price-granularity.html).
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -148,7 +155,7 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 | `ranges.max` | integer | Required | The maximum length of the range. |
 | `ranges.increment` | float | Required | The amount to increment through the range. |
 | `precision` | integer | Required | The number of decimal places to round the price. Two is the default, so a price of 2.1234 would be rounded to two decimal places, 2.12. |
-| `currency_code` | string | Required | String containing desired currency code for price bucket calculations. Must be a part of the [Xandr-approved list of currencies](../monetize/currency-support.md). |
+| `currency_code` | string | Required | String containing desired currency code for price bucket calculations. Must be a part of the [Microsoft-approved list of currencies](../monetize/currency-support.md). |
 
 ## PUT
 

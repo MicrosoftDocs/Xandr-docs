@@ -16,73 +16,66 @@ The Prebid Demand Partner Params Service allows users to view, add, remove, enab
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.appnexus.com/prebid/prebid-demand-partner-params](https://api.appnexus.com/prebid/prebid-demand-partner-params) | Get all Prebid demand partner configs. |
-| `GET` | - [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id})<br>- [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}&member_id={member_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}&member_id={member_id}) | Get all Prebid demand partners for a specific Prebid setting. |
-| `GET` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Get a specific Prebid demand partner config. Include the `prebidSettingsId` as the last URL path component. |
+| `GET` | - [https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}](https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}) | Get all Prebid demand partner parameters for a specific Prebid configuration. |
+| `GET` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Get a specific Prebid demand partner parameter. Include the `param ID` as the last URL path component. |
 | `POST` | [https://api.appnexus.com/prebid/prebid-demand-partner-params](https://api.appnexus.com/prebid/prebid-demand-partner-params) | Create new demand partner parameters. For cURL example and response, see [`POST`](#post) section below. |
-| `PUT` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Update an existing Prebid demand partner config. |
-| `DELETE` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Delete a specific Prebid demand partner config. Include the `prebidSettingsId` as the last URL path component. |
+| `PUT` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Update a specific Prebid demand partner parameter. Include the `param ID` as the last component of the URL path. |
+| `DELETE` | [https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}](https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}) | Delete a specific Prebid demand partner parameter. Include the `param ID` as the last URL path component. |
 
 ## `GET`
 
-Returns all or a specific Prebid demand partner config params for the caller's member. For a specific Prebid demand partner config include the `prebidSettingsId` as the last URL path component. Results are returned as JSON.
+Returns all or a specific set of demand partner parameters within a PSP configuration. Include either the `prebid_settings_id` (configuration) or the ID of the parameters as the last component of the URL.
 
-### Example call using cURL to return a specific config
-
-Append the config ID as the last component of the URL.
+### Example call using cURL to return a specific param
 
 ```
-curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidSettingsId}
-```
 
-### Return all Prebid Demand Partner Config Params for a specific prebid setting
+curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}
 
 ```
-GET https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}
- 
-//or 
 
-GET https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}&member_id={member_id}
+### Example call using cURL to return all params for a specific config
+
+```
+
+curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/prebid-demand-partner-params?prebid_settings_id={prebid_settings_id}
+
 ```
 
 ### Response
 
-A successful response will return JSON containing all the Prebid configs for the member or the requested Prebid config.
+A successful response will return all parameters for the requested Prebid configuration or a specific requested parameter.
 
 | Property | Type | Description |
 |:---|:---|:---|
 | `deleted` | boolean | Indicates whether the params object for this partner has been deleted. |
 | `enabled` | boolean | Indicates if the Prebid demand partner params are enabled or disabled. |
-| `id` | integer | The caller's ID. |
+| `id` | integer | The unique identifier for the set of parameters associated with the demand partner in the PSP configuration. |
 | `last_modified` | string | The most recent modification date of the demand partner config params. |
 | `last_modified_by` | string | The person who made the last modifications to the demand partner params. |
 | `member_id` | integer | The caller's member ID. |
 | `name` | object | The name of the demand partner. |
 | `params` | object | An object containing the parameters supported by the partner and the mapped values. Supported parameters can be found [here](demand-partner-schema-service.md). |
-| `prebid_settings_id` | integer | The Prebid setting object's ID. |
+| `prebid_settings_id` | integer | The unique identifier of the PSP configuration. |
 
 ### Response example
 
 ```
 [
-   {
-      "id":104,
-      "prebid_settings_id":30,
-      "name":"improvedigital",
-      "member_id":7293,
-      "params":{
-         "size":null,
-         "keyValues":null,
-         "placementId":567594,
-         "publisherId":null,
-         "placementKey":null
-      },
-      "enabled":true,
-      "deleted":false,
-      "last_modified_by":"test123",
-      "last_modified":"2019-09-03T22:48:58.135Z"
-   }
-]            
+  {
+    "id": 1718542,
+    "member_id": 13859,
+    "prebid_settings_id": 196038,
+    "name": "appnexus",
+    "params": {
+      "placement_id": 123456
+    },
+    "enabled": 0,
+    "deleted": 0,
+    "last_modified_by": "user123",
+    "last_modified": "2024-08-22T21:45:05.000Z"
+  }
+]         
             
 ```
 
@@ -96,45 +89,82 @@ Enables the creation of a new Prebid Demand Partner Param object.
 curl -d @demand-partner-params.json -X POST --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/prebid-demand-partner-params'
 ```
 
+#### Example JSON request
+
+```
+{
+    "prebid_settings_id": 196038,
+    "member_id": 13859,
+    "name": "adform",
+    "params": {
+        "inv": null,
+        "mid": "11111111",
+        "mname": null,
+        "priceType": null
+    },
+    "enabled": 1
+}
+```
+
 ### Parameters
 
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the Prebid demand partner. |
 | `enabled` | boolean | Required | Indicates if the Prebid demand partner params are enabled or disabled. |
-| `member_id` | integer | Required | The caller's member ID. |
+| `member_id` | integer | Required |  The ID of the member associated with the configuration. |
 | `params` | object | Required | An object containing the parameters supported by the partner and the mapped values. Supported parameters can be found [here](demand-partner-schema-service.md). |
-| `prebid_settings_id` | integer | Required | The `prebid_settings` ID. |
+| `prebid_settings_id` | integer | Required | The unique identifier for the PSP configuration.|
 
 ### `POST`: Example response
 
 ```
 [
-   {
-      "id":3333333,
-      "prebid_settings_id":222222,
-      "name":"appnexus",
-      "member_id":11111,
-      "params":{
-         "placement_id":123456
-      },
-      "enabled":true,
-      "deleted":false,
-      "last_modified_by":"user@domain.com",
-      "last_modified":"2023-05-01T18:23:09.045Z"
-   }
-]            
+  {
+    "id": 1718543,
+    "member_id": 13859,
+    "prebid_settings_id": 196038,
+    "name": "adform",
+    "params": {
+      "inv": null,
+      "mid": "11111111",
+      "mname": null,
+      "priceType": null
+    },
+    "enabled": 1,
+    "deleted": 0,
+    "last_modified_by": "user123",
+    "last_modified": "2024-08-22T22:40:21.000Z"
+  }
+]         
             
 ```
 
 ## `PUT`
 
-Updates an existing Prebid demand partner param. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
+Overwrites an existing Prebid demand partner parameter. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
 ### `PUT`: Example call using cURL
 
 ```
 curl -d @config-update.json -X PUT --header "Content-Type: application/json https://api.appnexus.com/prebid/prebid-demand-partner-params/{prebidDemandPartnerParamId}
+```
+
+### Example JSON request
+
+```
+{
+    "member_id": 13859,
+    "prebid_settings_id": 196038,
+    "name": "adform",
+    "params": {
+        "inv": null,
+        "mid": "11111111",
+        "mname": null,
+        "priceType": null
+    },
+    "enabled": 0
+}
 ```
 
 ### `PUT`: Response

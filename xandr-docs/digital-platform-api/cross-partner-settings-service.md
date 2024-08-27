@@ -32,7 +32,7 @@ A successful response will return JSON containing the member-wide settings.
 | `deleted` | boolean | Indicates if the cross-partner setting has been deleted. |
 | `id` | integer | Unique identifier for the cross-partner setting object. |
 | `last_modified` | string | The last modification date of the cross-partner setting object. |
-| `last_modified by` | string | The user who last modified the cross-partner setting object. |
+| `last_modified_by` | string | The user who last modified the cross-partner setting object. |
 | `member_id` | integer | Unique identifier of the member the cross-partner setting object belongs to. |
 | `price_granularity` | object | Defines the CPM price buckets into which demand partners' bids will be grouped in the ad server. See the [price granularity table](#price-granularity) below. |
 

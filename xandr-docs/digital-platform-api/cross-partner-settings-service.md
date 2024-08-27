@@ -20,7 +20,7 @@ The Cross-Partner Settings Service allows for the retrieval and editing of the t
 
 ## `GET`
 
-Retrieve all of the global PSP settings for the member. In order for the request to be valid user session data must be included.
+Retrieve all of the global PSP settings for the member. 
 
 ### Response
 

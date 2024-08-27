@@ -22,22 +22,22 @@ Guidance on setting up the Prebid.js "send top bid" integration can be found [he
 Guidance on setting up the *Prebid.js* send all bids integration [can be found here](../monetize/integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `/openrtb2/prebid` integration:
 
 1. Ensure the *Prebid.js* version is 8.47.0 or higher is being used.
-1. Set `*video.plcmt` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--plcmt-subtypes---video-):
+1. Set `video.plcmt` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--plcmt-subtypes---video-):
 
-    - instream
-    - accompanying content
-    - interstitial
-    - no content/standalone
+    - 1 instream
+    - 2 accompanying content
+    - 3 interstitial
+    - 4 no content/standalone
 
-1. Set `video.placement` based on the values listed here
+1. Set `video.placement` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--placement-subtypes---video-)
 
-    - instream
-    - in-banner
-    - in-article
-    - in-feed
-    - interstitial/slider/floating
+    - 1 instream
+    - 2 in-banner
+    - 3 in-article
+    - 4 in-feed
+    - 5 interstitial/slider/floating
   
-1. Set **video.startdelay** based on the values listed here
+1. Set `video.startdelay` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--start-delay-modes-)
 
     - `>0` mid-roll (value indicates start delay in second)
     - `0` pre-roll

@@ -37,6 +37,8 @@ To set up Prebid.js with Send Top Bid:
 
     For more information, see [Add, Edit, or Delete a PSP Configuration](add-edit-or-delete-a-psp-configuration.md).
 
+1. For video-specific nuances, see the guidance [here](video-guidance.md).
+
 ## Prebid.js send all bids
 
 ### Context
@@ -92,10 +94,10 @@ Make the below changes to the s2sConfig:
     > [!NOTE]
     > This value should be greater than your Microsoft Advertising (PSP) auction timeout. If the value is lower, there is a risk that the client-side timeout will hit before Microsoft Advertising responds with a bid, potentially preventing receipt of demand from Microsoft Advertising. For more information, see the Demand Partner Timeout section in [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md).
 
-See below for a **s2sConfig** example:
+   See below for a **s2sConfig** example:
 
-```
-pbjs.setConfig({
+   ```
+   pbjs.setConfig({
    "s2sConfig":{
       "accountId":9325,
       "bidders":[
@@ -110,14 +112,16 @@ pbjs.setConfig({
             "pricegranularity":"dense",
             "includebidderkeys":true,
             "includewinners":true
+               }
+            }
          }
-      }
-   }
-})        
-        
-```
+   })        
 
-When using Send All Bids, report on the key values in an external ad server, such as Google Ad Manager (GAM), by defining key values appropriately and setting them as reportable. GAM documentation can be found [here](https://support.google.com/admanager/answer/7352444?hl=en).
+   ```
+
+   When using Send All Bids, report on the key values in an external ad server, such as Google Ad Manager (GAM), by defining key values appropriately and setting them as reportable. GAM documentation can be found [here](https://support.google.com/admanager/answer/7352444?hl=en).
+
+1. For video-specific nuances, see the guidance [here](video-guidance.md).
 
 <!--## Non-prebid
 
@@ -155,3 +159,4 @@ In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed unde
 - [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 - [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)
+- [Integration with OpenRTB 2.6 protocol](../supply-partners/integration-with-openrtb-2-6.md)

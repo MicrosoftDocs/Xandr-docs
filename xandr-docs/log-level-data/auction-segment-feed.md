@@ -18,6 +18,9 @@ Each feed is delivered hourly and will be retained for 7 days. The feed will be
 
 If you enable the auction segment feed, it will be in your feed list along with all your other log level data feeds. See [Log Level Data Feeds](log level-data-feeds.md) for more information.
 
+> [!NOTE]
+> Microsoft Advertising may need to remove values for certain log level data (LLD) fields in order to comply with current data sharing restrictions.
+
 | Column Index | Column Name | Type | Description |
 |---|---|---|---|
 | 1 | date_time | UNIX Epoch time | The time and date of impression (e.g., `1526057561` which would need to be translated to *Friday, May 11, 2018 4:52:41 PM (UTC)*) . |

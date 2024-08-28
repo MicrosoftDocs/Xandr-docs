@@ -24,6 +24,9 @@ The columns below are listed in the same order in which they appear in the log-l
 
 ## Columns
 
+> [!NOTE]
+> Microsoft Advertising may need to remove values for certain log level data (LLD) fields in order to comply with current data sharing restrictions.
+
 | Column Index | Column Name | Type | Description | Visibility |
 |---|---|---|---|---|
 | 01 | date_time | UNIX Epoch time | The time and date truncated to the hour that the record was processed by Xandr. For cross-hour events, for example, starting at 12:59 and finishing at 13:01, the hour recorded would be the last event's hour, which is 13 in this example. | Both |

@@ -41,6 +41,9 @@ For `string` data types, the recommended length of the field varies depending on
 
 ## Columns
 
+> [!NOTE]
+> Microsoft Advertising may need to remove values for certain log level data (LLD) fields in order to comply with current data sharing restrictions.
+
 | Column Index | Column Name | Type | Description |
 |---|---|---|---|
 | 01 | auction_id_64 | bigint | The Xandr unique auction identifier. |

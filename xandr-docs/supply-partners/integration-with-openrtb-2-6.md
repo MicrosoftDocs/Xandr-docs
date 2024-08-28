@@ -63,7 +63,11 @@ As part of the OpenRTB 2.6 implementation, Xandr has added the following field(s
 
 ### Using `Plcmt` and `Placement` fields together
 
-Ensure both the `placement` and `plcmt` fields are included in your request. Refer to the table below to determine the correct values. Start by comparing your OpenRTB 2.4/2.5 placement values with their corresponding fields in OpenRTB 2.6. This works for all placements apart from instream, `Accompanying Content` is a new value meant to subdivide what used to be `Instream`.
+The OpenRTB 2.6 specification replaces the `placement` field (`imp.video.placement`) from OpenRTB 2.4/2.5 with the `plcmt` field (`imp.video.plcmt`). However, some bidders may still use OpenRTB 2.4/2.5. To maximize demand sources, include both the `placement` and `plcmt` fields in your requests.
+
+Refer to the table below to find the correct values. Start by comparing your OpenRTB 2.4/2.5 `placement` values with their corresponding "plcmt" fields in OpenRTB 2.6. Note that Instream placements are now divided into "Instream" and a new "Accompanying Content" value.
+
+In addition to the `plcmt` and `placement` fields, include the `context` field in the AppNexus video extension object (`imp.video.ext.appnexus.context`) in your bid requests. This field provides crucial information about the video's position (e.g., pre-roll, mid-roll, or post-roll) that the `plcmt` or `placement` fields alone do not convey (see the "Xandr Extension" column below). Ensure your bid requests include all three fields.
 
 | Video Ad type | Description | OpenRTB 2.4/2.5 | OpenRTB 2.6 | Xandr extensions |
 |:---|:---|:---|:---|:---|

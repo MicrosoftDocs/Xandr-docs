@@ -53,10 +53,9 @@ In addition to "standard" segments, QuickStats are also available for the follow
 |---|---|
 | **Name** | This is the segment name. |
 | **ID** | This is the segment Microsoft Advertising ID. |
-| **Data Provider** | This is the data provider name. |
-| **Price** | This column displays the price a buyer has paid for a segment. It allows the buyer to toggle between these two options:<br> - CPM (default)<br> - % Media Cost |
-| **Active Users** | This is the count of active users in a segment over a 24-hour period. |
-| **Daily Loads** | The average number of times a user is added to a segment. (This is also known as 'segment fires'.)<br>This allows you to see growth and reduction of segments. |
+| **Imps** | This is the estimated daily global impression reach. |
+| **Users** | This is the estimated daily global user reach. |
+| **Daily Loads** | This is the daily number of users added to a segment via the batch segment service or pixel fires. <br> **Note**: Real-time segments will always display zero loads. |
 
 > [!NOTE]
 > The contextual segments (from contextual or real-time data providers) will not show loads in this report. This is because contextual segments do not actually involve a pixel being fired. Instead, they are added to an impression in real time.

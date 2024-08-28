@@ -4,12 +4,51 @@ description: Learn how to run video inventory through Prebid Server Premium (PSP
 ms.date: 10/28/2023
 ---
 
-
 # Video guidance
 
 This page includes guidance on running video inventory through Prebid Server Premium (PSP).
 
-## Instream
+## Web **Prebid.js** send top bid
+
+Guidance on setting up the Prebid.js "send top bid" integration can be found [here](integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `/ut/v3/prebid` integration:
+
+1. Ensure the **Prebid.js** version is 8.47.0 or higher is being used.
+1. Set `tags.video.context` based on the [values listed in the table](../supply-partners/integration-with-openrtb-2-6.md) under the section **Using "Plcmt and Placement fields together" > Xandr extensions** column.
+1. Set `tags.video.startdelay`.
+1. Configure other fields, such as `minduration`, `maxduration`, `playback_method`, `skippable`, and so on, as normal.
+
+## Web **Prebid.js** send all bids
+
+Guidance on setting up the *Prebid.js* send all bids integration [can be found here](../monetize/integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `/openrtb2/prebid` integration:
+
+1. Ensure the *Prebid.js* version is 8.47.0 or higher is being used.
+1. Set `video.plcmt` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--plcmt-subtypes---video-):
+
+    - `1` instream
+    - `2` accompanying content
+    - `3` interstitial
+    - `4` no content/standalone
+
+1. Set `video.placement` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--placement-subtypes---video-)
+
+    - `1` instream
+    - `2` in-banner
+    - `3` in-article
+    - `4` in-feed
+    - `5` interstitial/slider/floating
+  
+1. Set `video.startdelay` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--start-delay-modes-)
+
+    - `>0` mid-roll (value indicates start delay in second)
+    - `0`  pre-roll
+    - `-1` generic mid-roll
+    - `-2` generic post-roll
+
+1. If needed or preferred, instead of setting `video.plcmt` and `video.placement` in the bid request, the `imp.video.ext.appnexus.context` field can be used based on [values listed here](../supply-partners/integration-with-openrtb-2-6.md). The final request to demand partners will include `video.placement` and `video.plcmt` based on the logic [in the documentation](../supply-partners/integration-with-openrtb-2-6.md).
+1. Set other fields, such as `minduration`, `maxduration`, `playbackmethod`, `skip`, and so on, as normal.
+1. For more information on Monetize's support for OpenRTB 2.6, [see this page](../supply-partners/integration-with-openrtb-2-6.md).
+
+### Instream
 
 - Include the Microsoft Advertising PSP `cache.url` object in the config settings as shown in the following example:
 
@@ -55,7 +94,7 @@ This page includes guidance on running video inventory through Prebid Server Pre
                           
   ```
 
-## Outstream
+### Outstream
 
 - To ensure that the ad request is made for `Prebid.js s2s` (with PSP), include the renderer object within the adUnit definition as shown in the following example:
 
@@ -164,3 +203,10 @@ This page includes guidance on running video inventory through Prebid Server Pre
   ```
 
 - For more information, see [Ad Unit specific data](https://docs.prebid.org/features/firstPartyData.html#supplying-adunit-specific-data) and [auction-level keywords](https://docs.prebid.org/dev-docs/bidders/appnexus.html#appnexus-auction-keywords).
+
+## Related topics
+
+- [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
+- [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
+- [PSP supported formats and integration paths](prebid-server-premium-supported-formats-and-integration-paths.md)
+- [Integration with OpenRTB 2.6 protocol](../supply-partners/integration-with-openrtb-2-6.md)

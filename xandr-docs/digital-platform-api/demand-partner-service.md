@@ -11,6 +11,8 @@ The Demand Partner Service returns all demand partners for the caller's member. 
 
 In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction.
 
+Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner.md). Setting a demand partner to `enabled: false` pauses all bid requests to that partner across all configurations until the setting is restored to `true`. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations.md).
+
 ## REST API
 
 | HTTP Method | Endpoint | Description |
@@ -25,16 +27,16 @@ In the context of PSP, demand partners, usually supply-side platforms (SSPs) lik
 
 Get all or a specific demand partner. To retrieve a specific demand partner, append the demand partner ID as last component of the URL path. Returns a JSON array of demand partner objects.
 
-A successful response will return JSON array of demand partner objects.
+### Response
 
-| Field | Type | Description |
+| Property | Type | Description |
 |:---|:---|:---|
 | `bid_cpm_adjustment` | integer | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in auction. This does not change the actual bid or revenue payout, only the ranking of the bid in the auction. The default value is 1.00. In this case all partners' bids compete equally with no adjustments. The adjustment can be used to account for partner fees or for optimization. If you need CPM adjustments at a level more granular than Demand Partner, see [Create a Bias Rule](../monetize/create-a-bias-rule.md). |
 | `deleted` | boolean | This indicates that the demand partner object has been deleted from the system. |
-| `demand_partner_id` | integer | The ID of the demand partner on the Xandr platform.<br>**Note**: This now returns `null`. |
 | `enabled` | boolean | Indicates if the demand partner is enabled or disabled. |
 | `id` | integer | The demand partner ID specific to the caller's member. |
 | `last_modified` | string | The date that the demand partner object was modified. |
+| `last_modified_by` | string | The user who last modified the demand partner object. |
 | `member_id` | integer | The member ID. |
 | `name` | string | The name of the demand partner. |
 | `pub_id_settings` | object | The options relevant to the publisher-provided user IDs. See the [publisher provided ID settings](#publisher-provided-id-settings) table below. |
@@ -55,10 +57,10 @@ A successful response will return JSON array of demand partner objects.
     {
         "bid_cpm_adjustment": 2,
         "deleted": false,
-        "demand_partner_id": null,
         "enabled": true,
         "id": 102,
         "last_modified": "2019-09-13T17:39:36Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "adform",
         "pub_id_settings": {
@@ -75,10 +77,10 @@ A successful response will return JSON array of demand partner objects.
     {
         "bid_cpm_adjustment": 1,
         "deleted": false,
-        "demand_partner_id": 2,
         "enabled": true,
         "id": 65,
         "last_modified": "2018-11-02T15:33:54Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "appnexus",
         "pub_id_settings": null
@@ -86,10 +88,10 @@ A successful response will return JSON array of demand partner objects.
     {
         "bid_cpm_adjustment": 1,
         "deleted": false,
-        "demand_partner_id": null,
         "enabled": true,
         "id": 68,
         "last_modified": "2018-11-02T18:32:03Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "openx",
         "pub_id_settings": null
@@ -97,10 +99,10 @@ A successful response will return JSON array of demand partner objects.
     {
         "bid_cpm_adjustment": 1,
         "deleted": false,
-        "demand_partner_id": null,
         "enabled": true,
         "id": 69,
         "last_modified": "2018-11-02T18:32:31Z",
+        "last_modified_by":"user123",
         "member_id": 9325,
         "name": "ix",
         "pub_id_settings": null
@@ -118,7 +120,7 @@ Create a new demand partner.
 curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-partner'
 ```
 
-| Name | Type | Scope | Description |
+| Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `bid_cpm_adjustment` | integer | Required | The bid CPM adjustment. |
 | `enabled` | boolean | Required | Indicates if the demand partner is enabled or disabled. |
@@ -153,10 +155,10 @@ A successful response will return the new demand partner as a JSON object.
 {
     "bid_cpm_adjustment": 1,
     "deleted": false,
-    "demand_partner_id": null,
     "enabled": true,
     "id": 999,
     "last_modified": "2020-02-25T18:32:31Z",
+    "last_modified_by":"user123",
     "member_id": 9325,
     "name": "test-demand-partner",
     "pub_id_settings": {
@@ -182,6 +184,18 @@ Updates an existing Prebid demand partner. Include the id as last component of t
 curl https://api.appnexus.com/prebid/demand-partner/1234
 ```
 
+### JSON example
+
+```
+{
+    "id": 1234,
+    "name": "openx",
+    "enabled": 0,
+    "bid_cpm_adjustment": 1,
+    "pub_id_settings": null
+  }
+```
+
 ### Response
 
 Returns updated Prebid demand partner object.
@@ -189,6 +203,13 @@ Returns updated Prebid demand partner object.
 ## PATCH
 
 Partially update an existing Prebid demand partner. Include the ID as last component of the path. Pass the update information as JSON in the body of the request.
+
+```
+{
+    "enabled": 0,
+    "bid_cpm_adjustment": 1
+}
+```
 
 ### Example call using curl
 

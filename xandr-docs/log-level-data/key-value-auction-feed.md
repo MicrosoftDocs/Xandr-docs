@@ -24,6 +24,9 @@ When using Xandr's seller tag, omit the **kw** prefix. AST has the keyword obje
 
 ## Columns
 
+> [!NOTE]
+> Microsoft Advertising may need to remove values for certain log level data (LLD) fields in order to comply with current data sharing restrictions.
+
 | Column Index | Column Name | Type | Description |
 |---|---|---|---|
 | 1 | date_time | UNIX Epoch time | The time and date of impression (e.g., `1526057561` which would need to be translated to *Friday, May 11, 2018 4:52:41 PM (UTC)*). |

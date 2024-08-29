@@ -43,10 +43,10 @@ To enable cross-device tracking and measurement, select the identity graph you w
 
 - Tapad (Global excluding EU) graph to use Tapad's information to target and attribute across multiple devices.
 
-> [!NOTE]
-> Cross-device audience targeting for CTV devices is only available in the United States.
-
 When the line item starts running, the selected device graph will be applied for frequency capping purposes, conversion attribution, and audience extension.
+
+> [!NOTE]
+> Cross-device audience targeting for CTV devices is now available in the US and EU.
 
 ## Related topics
 

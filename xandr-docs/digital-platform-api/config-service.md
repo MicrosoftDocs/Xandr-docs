@@ -132,7 +132,7 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 | `ranges.max` | integer | The maximum length of the range. |
 | `ranges.increment` | float | The amount to increment through the range. |
 | `precision` | integer | The number of decimal places to which the price is rounded. The default is two decimal places, so a price of 2.1234 would be rounded to 2.12. |
-| `currency_code` | string | A string containing the desired currency code for price bucket calculations. It must be part of the [Microsoft-approved list of currencies](../monetize/currency-support.mdcurrency-support.md). |
+| `currency_code` | string | A string containing the desired currency code for price bucket calculations. It must be part of the [Microsoft-approved list of currencies](../monetize/currency-support.md). |
 
 ### Pagination
 

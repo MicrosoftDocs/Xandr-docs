@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Config service
 
-The Config Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are objects used to facilitate PSP spend on a particular Xandr Targeting Object (placement, placement group, publisher). Each config has an array of demand partner parameters attached to it, as a way to indicate which of the external PSP demand partners should facilitate spend for that config.
+The Configuration Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are objects that map Monetize inventory to demand partners, allowing the partners to identify the inventory in bid requests. Each configuration includes an array of demand partner parameters attached which specify the values partners will receive. Note that the partners must first be added at the global level via the [demand partner service](demand-partner-service.md). Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
 
 ## REST API
 
@@ -26,7 +26,7 @@ Returns all Prebid configurations for the caller's member. Results are returned 
 
 ### Parameters
 
-| Parameter | Scope | Type | Description |
+| Property | Scope | Type | Description |
 |:---|:---|:---|:---|
 | `status_filter` | string | Optional | Filter results based on whether a config is enabled or disabled. Pass the `status_filter` argument in the query and set the value to either *enabled* or *disabled*. |
 
@@ -41,51 +41,52 @@ curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/c
 Append the config id as the last component of the URL.
 
 ```
-curl --header "Content-Type: application/json"https://api.appnexus.com/prebid/config/{id}
+curl --header "Content-Type: application/json"https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
 ### Responses
 
-A successful response will return JSON containing all the Prebid configs for the member or the requested Prebid config.
+A successful response will return JSON containing the member's cross-partner settings and all of their PSP configurations. Including a specific `prebidSettingsId` in the query string will lead to a response containing only that configuration.
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `bidder_timeout_ms` | integer | The timeout in milliseconds. |
+| `bidder_timeout_ms` | integer | This is defined in the [cross-partner-settings service](cross-partner-settings-service.md). |
 | `configs` | array | Container with the configs objects for the member or a specific config object. For items contained in a config object, see the [config properties](#config-properties) table below. |
 | `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `demand_partner_settings` | array | The demand partner properties. For the items contained in the `demand_partner_settings` object, see the [demand partner settings](#demand-partner-settings) table below. |
-| `id` | integer | A unique identifier for the config object being returned. This id is then referred to as `prebid_settings_id` in other endpoints of this API. |
+| `id` | integer | When the request does not specify a `prebidSettingsId`, the first ID in the response represents the unique [cross-partner settings ID](cross-partner-settings-service.md) for the member. The [configs object](config-service.md#config-properties) includes the id values of each configuration. |
 | `last_modified` | string | The most recent modification date of the config object. |
-| `member_id` | integer | The caller's member id. |
-| `price_granularity` | object | The price bucket granularity setting that will be used for this member. For items contained in a price_granularity object, see the [price granularity](#price-granularity) properties table below. |
+| `last_modified_by` | string | The user who made the last modification to the configuration object. |
+| `member_id` | integer | The ID of the member associated with the configurations. |
+| `price_granularity` | object | Defines the CPM price buckets into which demand partner bids will be grouped in the ad server. See the [price granularity](#price-granularity) table below. Object is managed via the [cross-partner-settings service](cross-partner-settings-service.md).|
 | `total_configs` | integer | The number of configs returned. |
 
 ### Demand partner settings
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `bid_cpm_adjustment` | float | Multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in auction. |
+| `bid_cpm_adjustment` | float | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in the auction. See the [Demand Partner Service](demand-partner-service.md) for more information. |
 | `enabled` | boolean | Indicates if the demand partner has been enabled or disabled. |
 | `id` | integer | The id for the demand partner settings. |
-| `name` | string | The name of the demand partner. |
+| `name` | string | The name of the demand partner. See the [Demand Partner Service](demand-partner-service.md) for more information.|
 
 ### Config properties
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `demand_partner_config_params` | array | Container with the demand partners' config parameters. For items contained in a demand_partner_config_params object, see the [demand partner configs properties](#demand-partner-configs-properties) table below. |
+| `demand_partner_config_params` | array | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#demand-partner-configs-properties) table below. |
 | `enabled` | boolean | Indicates if the config is enabled or disabled. |
-| `id` | integer | The id of the config. |
+| `id` | integer | This ID is then referred to as `prebid_settings_id` in other endpoints of the API.|
 | `last_modified` | string | The most recent modification date of the config. Formatted as date-time. |
 | `media_types` | object | The media types associated with the config. For items contained in a media_types object, see the [media types](#media-types) properties table below. |
-| `member_id` | integer | The member_id associated with the config. |
+| `member_id` | integer | The ID of the member associated with the configurations.|
 | `name` | string | The name of the config. |
-| `targeting_level_code` | integer | The rank of the type of object in the targeting hierarchy. Placement has `targeting_level_code` 0, placement group is 1, publisher is 2. |
-| `targeting_id` | integer | The id of the object the configuration is associated with. Requests will be sent to Demand Partners when that object or an object matching the criteria is in the request. |
-| `targeting_level_name` | string | The name of the level (example: publisher) |
+| `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `1` placement  <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile|
+| `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations in the [PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically.|
+| `targeting_level_name` | string | The name of the level (example: publisher). |
 | `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
-| `last_modified_by` | string | The person who made the last modifications to the demand partner params. |
-| `targeting_metadata` | object | Includes modifiers for the targeting object. For items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table below. |
+| `last_modified_by` | string | The user who made the last modification to the configuration object.|
+| `targeting_metadata` | object | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required.** |
 
 ### Media types
 
@@ -104,6 +105,7 @@ The media type object determines which formats (currently banner, native, and vi
 | Property | Type | Description |
 |:---|:---|:---|
 | `os_family_ids` | array | Demand Partners will only receive requests for this configuration where these operating systems are present. Operating systems represented by integer ids from the [Operating System-Families Service](operating-system-families-service.md). |
+| `priority` | integer | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the `targeting_id` is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
 
 ### Demand partner configs properties
 
@@ -116,27 +118,27 @@ The media type object determines which formats (currently banner, native, and vi
 | `last_modified_by` | string | The person who made the last modifications to the `demand_partner_config`. |
 | `member_id` | integer | The member_id associated with the `demand_partner_config`. |
 | `name` | string | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
-| `params` | object | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md). |
+| `params` | object | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
 | `prebid_settings_id` | integer | The ID of the config which can contain multiple demand partner parameter mappings. |
 
 ### Price granularity
 
-Price granularity defines the CPM price buckets into which demand partner bids will be grouped. This is defined in the [Cross-Partner Settings Service](cross-partner-settings-service.md).
+Price granularity defines the CPM price buckets into which demand partner bids will be grouped in the ad server. This is defined in the [Cross-Partner Settings Service](cross-partner-settings-service.md).
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `label` | string | The name of the default Prebid price bucket tier. For more information, see [Price Granularity](https://docs.prebid.org/adops/price-granularity.html).|
+| `label` | string | The type of scale as defined in [Prebid documentation](https://docs.prebid.org/adops/price-granularity.html) (low, medium, high, auto, dense, custom). See the [cross-partner-settings service](cross-partner-settings-service.md).|
 | `ranges` | object | Container object describing the price granularity range. |
 | `ranges.max` | integer | The maximum length of the range. |
 | `ranges.increment` | float | The amount to increment through the range. |
-| `precision` | integer | The number of decimal places in the price granularity ranges. |
-| `currency_code` | string | The currency of the price buckets. |
+| `precision` | integer | The number of decimal places to which the price is rounded. The default is two decimal places, so a price of 2.1234 would be rounded to 2.12. |
+| `currency_code` | string | A string containing the desired currency code for price bucket calculations. It must be part of the [Microsoft-approved list of currencies](../monetize/currency-support.mdcurrency-support.md). |
 
 ### Pagination
 
 The number of responses can be limited by passing the `num_elements` argument. Which element to start viewing can be set through the `start_element` argument.
 
-| Field | Type | Description |
+| Property | Type | Description |
 |:---|:---|:---|
 | `start_element` | int | The number at which to start counting. |
 | `num_elements` | int | How many elements to return. For example, start at object # 4 and return 3 objects, or # 4, 5, 6. |
@@ -149,201 +151,173 @@ The elements returned will be indexed from the 10th through the twenty-fifth.
 GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ```
 
-### Click to view a sample JSON response
+### Example response
 
 ```
+
 {
-   "bidder_timeout_ms":750,
-   "configs":[
+  "id": 450,
+  "member_id": 13859,
+  "bidder_timeout_ms": 500,
+  "price_granularity": {
+    "label": "Auto",
+    "currency_code": "USD",
+    "precision": 2,
+    "ranges": [
       {
-         "deleted":false,
-         "demand_partner_config_params":[
-            {
-               "deleted":false,
-               "enabled":true,
-               "id":24682,
-               "last_modified":"2020-02-20T15:48:36Z",
-               "last_modified_by":"auser@9325",
-               "member_id":9325,
-               "name":"appnexus",
-               "params":{
-                  "invCode":null,
-                  "inv_code":null,
-                  "keywords":null,
-                  "member":null,
-                  "placementId":null,
-                  "placement_id":null,
-                  "position":null,
-                  "private_sizes":null,
-                  "reserve":null,
-                  "targetingId":4887810,
-                  "trafficSourceCode":null,
-                  "traffic_source_code":null,
-                  "use_pmt_rule":null
-               },
-               "prebid_settings_id":5084
-            },
-            {
-               "deleted":false,
-               "enabled":true,
-               "id":24681,
-               "last_modified":"2020-02-20T15:48:36Z",
-               "last_modified_by":"auser@9325",
-               "member_id":9325,
-               "name":"pubmatic",
-               "params":{
-                  "adSlot":null,
-                  "keywords":null,
-                  "publisherId":"test123",
-                  "wrapper":null
-               },
-               "prebid_settings_id":5084
-            }
-         ],
-         "enabled":true,
-         "id":5084,
-         "last_modified":"2020-02-20T15:48:36Z",
-         "last_modified_by":"auser@9325",
-         "media_types":{
-            "sizes":[
-               {
-                  "height":150,
-                  "is_standard":false,
-                  "width":180
-               },
-               {
-                  "height":250,
-                  "is_standard":false,
-                  "width":300
-               }
-            ],
-            "type":"banner"
-         },
-         "member_id":9325,
-         "name":"Targeting Test",
-         "targeting_id":4887810,
-         "targeting_level_code":1,
-         "targeting_level_name":"site",
-         "targeting_metadata":{
-            "os_family_ids":[
-               ""
-            ]
-         }
+        "max": 5,
+        "increment": 0.05
       },
       {
-         "deleted":false,
-         "demand_partner_config_params":[
-            {
-               "deleted":false,
-               "enabled":true,
-               "id":14370,
-               "last_modified":"2020-02-14T15:17:53Z",
-               "last_modified_by":"auser@9325",
-               "member_id":9325,
-               "name":"pubmatic",
-               "params":{
-                  "adSlot":"Test Slot",
-                  "keywords":null,
-                  "publisherId":"9325",
-                  "wrapper":null
-               },
-               "prebid_settings_id":1930
-            },
-            {
-               "deleted":false,
-               "enabled":true,
-               "id":14371,
-               "last_modified":"2020-02-14T15:17:53Z",
-               "last_modified_by":"auser@9325",
-               "member_id":9325,
-               "name":"appnexus",
-               "params":{
-                  "invCode":null,
-                  "inv_code":null,
-                  "keywords":null,
-                  "member":null,
-                  "placementId":null,
-                  "placement_id":null,
-                  "position":null,
-                  "private_sizes":null,
-                  "reserve":null,
-                  "targetingId":3589320,
-                  "trafficSourceCode":null,
-                  "traffic_source_code":null,
-                  "use_pmt_rule":null
-               },
-               "prebid_settings_id":1930
-            }
-         ],
-         "enabled":true,
-         "id":1930,
-         "last_modified":"2020-02-14T15:17:53Z",
-         "last_modified_by":"auser@9325",
-         "media_types":{
-            "sizes":[
-               {
-                  "height":600,
-                  "width":160
-               }
-            ],
-            "type":"banner"
-         },
-         "member_id":9325,
-         "name":"Test - Harish",
-         "targeting_id":3589320,
-         "targeting_level_code":1,
-         "targeting_level_name":"site",
-         "targeting_metadata":{
-            "os_family_ids":[
-               4
-            ]
-         }
+        "max": 10,
+        "increment": 0.1
+      },
+      {
+        "max": 20,
+        "increment": 0.5
       }
-   ],
-   "deleted":false,
-   "demand_partner_settings":{
-      "adform":{
-         "bid_cpm_adjustment":2,
-         "enabled":true,
-         "id":102
+    ]
+  },
+  "deleted": 0,
+  "last_modified_by": "user123",
+  "last_modified": "2024-08-21T16:37:24.000Z",
+  "demand_partner_settings": {
+    "appnexus": {
+      "id": 2045,
+      "bid_cpm_adjustment": 0.7,
+      "enabled": 1
+    },
+    "openx": {
+      "id": 2065,
+      "bid_cpm_adjustment": 1,
+      "enabled": 0
+    },
+    "ix": {
+      "id": 2106,
+      "bid_cpm_adjustment": 0.9,
+      "enabled": 1
+    },
+    "adform": {
+      "id": 2110,
+      "bid_cpm_adjustment": 1,
+      "enabled": 1
+    }
+  },
+  "total_configs": 2,
+  "configs": [
+    {
+      "id": 87053,
+      "member_id": 13859,
+      "name": "ConfigName1",
+      "targeting_level_code": 1,
+      "targeting_id": 25172737,
+      "enabled": 1,
+      "media_types": {
+        "sizes": [],
+        "types": [
+          "video"
+        ]
       },
-      "appnexus":{
-         "bid_cpm_adjustment":1,
-         "enabled":true,
-         "id":65
+      "targeting_metadata": {
+        "os_family_ids": []
       },
-      "appnexus-video":{
-         "bid_cpm_adjustment":4,
-         "enabled":true,
-         "id":118
-      },
-      "triplelift_native":{
-         "bid_cpm_adjustment":1,
-         "enabled":true,
-         "id":320
-      },
-      "verizonmedia":{
-         "bid_cpm_adjustment":1,
-         "enabled":true,
-         "id":240
-      }
-   },
-   "id":2,
-   "last_modified":"2020-02-12T18:06:33Z",
-   "member_id":9325,
-   "price_granularity":{
-      "label":"Medium",
-      "precision":2,
-      "ranges":[
-         {
-            "increment":0.1,
-            "max":20
-         }
+      "deleted": 0,
+      "last_modified_by": "user123",
+      "last_modified": "2024-07-17T18:17:56.000Z",
+      "targeting_level_name": "placement",
+      "demand_partner_config_params": [
+        {
+          "id": 619584,
+          "member_id": 13859,
+          "prebid_settings_id": 87053,
+          "name": "ix",
+          "params": {
+            "size": null,
+            "siteId": "yyy.com"
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:40.000Z"
+        }
       ]
-   },
-   "total_configs":36
-}               
-            
+    },
+    {
+      "id": 87784,
+      "member_id": 13859,
+      "name": "ConfigName2",
+      "targeting_level_code": 1,
+      "targeting_id": 25175861,
+      "enabled": 1,
+      "media_types": {
+        "sizes": [],
+        "types": [
+          "banner",
+          "video",
+          "native"
+        ]
+      },
+      "targeting_metadata": {
+        "os_family_ids": []
+      },
+      "deleted": 0,
+      "last_modified_by": "user123",
+      "last_modified": "2024-07-31T21:34:34.000Z",
+      "targeting_level_name": "placement",
+      "demand_partner_config_params": [
+        {
+          "id": 619080,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "openx",
+          "params": {
+            "unit": "3456",
+            "platform": null,
+            "delDomain": "abc.com",
+            "customFloor": null,
+            "customParams": null
+          },
+          "enabled": 0,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-08-21T21:10:28.000Z"
+        },
+        {
+          "id": 619081,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "ix",
+          "params": {
+            "size": null,
+            "siteId": "abc.com"
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:06.000Z"
+        },
+        {
+          "id": 625915,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "adform",
+          "params": {
+            "inv": null,
+            "mid": "1414158",
+            "mname": null,
+            "priceType": null
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:09.000Z"
+        }
+      ]
+    }
+  ]
+}
+
+       
 ```
 
 ## `POST`
@@ -362,21 +336,20 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the configuration. |
 | `enabled` | boolean | Required | Indicates if the config is enabled or disabled. |
-| `demand_partner_config_params` | array | Required | An array containing demand_partner_config_params objects. For items contained in a `demand_partner_config_params` object, see the [demand partner configs properties](#post-demand-partner-configs-properties) table below. |
+| `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#demand-partner-configs-properties) table below.|
 | `media_types` | object | Required | The media_types associated with the config. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
-| `targeting_id` | integer | Required | The id of the object the configuration is associated with. Requests will be sent to Demand Partners when that object or an object matching the criteria is in the request. |
-| `targeting_level_code` | integer | Required | The rank of the type of object in the targeting hierarchy. Placement has `targeting_level_code` 0, placement group is 1, publisher is 2. |
-| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. For items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#post-targeting-metadata-properties) table below. |
+| `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations [in the PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically. |
+| `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1`
+Placement <br> - `2` Placement group/site <br> - `3` Publisher <br> - `4` Line item/targeting profile |
+| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
 
 ### `POST`: Demand partner configs properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `deleted` | boolean | Required | If `true`, indicates that the config object is not available for use but its data is still viewable. |
-| `member_id` | integer | Required | The member_id associated with the `demand_partner_config`. |
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
-| `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Service](demand-partner-service.md). |
-| `prebid_settings_id` | integer | Required | The ID of the config which can contain multiple demand partner parameter mappings. |
+| `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
+
 
 ### `POST`: Media types
 
@@ -395,40 +368,41 @@ The media type object determines which formats (currently banner, native, and vi
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `os_family_ids` | array | Optional | Demand Partners will only receive requests for this configuration where these operating systems are present. Operating systems represented by integer ids from the [Operating System-Families Service](operating-system-families-service.md). |
+| `priority` | integer | Optional | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the targeting_id is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
 
-### Click to view a sample JSON request
+### Example JSON request
 
 ```
 {
-   "name":"test_configuration",
-   "enabled":false,
-   "demand_partner_config_params":[
-      {
-         "deleted":false,
-         "enabled":true,
-         "id":7466,
-         "member_id":9325,
-         "name":"rubicon",
-         "params":{
-            "accountId":1001,
-            "inventory":null,
-            "siteId":113932,
-            "video":null,
-            "visitor":null,
-            "zoneId":535510
-         }
-      }
-   ],
-   "media_types":{
-      "sizes":[
-         {
-            "height":600,
-            "width":160
-         }
-      ],
-      "type":"banner"
-   }
-}            
+    "name": "ConfigName1",
+    "targeting_level_code": 4,
+    "targeting_id": 25401118,
+    "enabled": true,
+    "media_types": {
+        "sizes": [
+            {
+                "height": 300,
+                "width": 250
+            }
+        ],
+        "types": [
+            "banner",
+            "video",
+            "native"
+        ]
+    },
+    "targeting_metadata": {
+        "priority": 20
+    },
+    "demand_partner_config_params": [
+        {
+            "name": "appnexus",
+            "params": {
+                "placement_id": 123456
+            }
+        }
+    ]
+}           
             
 ```
 
@@ -436,76 +410,97 @@ The media type object determines which formats (currently banner, native, and vi
 
 A successful response will return the new config object.
 
-### `POST`: Click to view a sample JSON response
+### `POST`: Example JSON response
 
 ```
 [
-   {
-      "deleted":false,
-      "demand_partner_config_params":[
-         {
-            "deleted":false,
-            "enabled":true,
-            "id":24679,
-            "last_modified":"2020-02-19T17:53:36.674Z",
-            "last_modified_by":"azacarias@9325",
-            "member_id":9325,
-            "name":"rubicon",
-            "params":{
-               "accountId":1001,
-               "inventory":null,
-               "siteId":113932,
-               "video":null,
-               "visitor":null,
-               "zoneId":535510
-            },
-            "prebid_settings_id":5083
-         },
-         {
-            "deleted":false,
-            "enabled":true,
-            "id":24680,
-            "last_modified":"2020-02-19T17:53:36.674Z",
-            "last_modified_by":"azacarias@9325",
-            "member_id":9325,
-            "name":"appnexus",
-            "params":{
-               
-            },
-            "prebid_settings_id":5083
-         }
+  {
+    "id": 196038,
+    "member_id": 13859,
+    "name": "ConfigName1",
+    "targeting_level_code": 4,
+    "targeting_id": 22378872,
+    "enabled": 1,
+    "media_types": {
+      "sizes": [
+        {
+          "height": 300,
+          "width": 250
+        }
       ],
-      "enabled":false,
-      "id":5083,
-      "last_modified":"2020-02-19T17:53:36.674Z",
-      "last_modified_by":"azacarias@9325",
-      "media_types":{
-         "sizes":[
-            {
-               "height":600,
-               "width":160
-            }
-         ],
-         "type":"banner"
-      },
-      "member_id":9325,
-      "name":"test_configuration",
-      "targeting_id":null,
-      "targeting_level_code":null,
-      "targeting_metadata":null
-   }
-]                
+      "types": [
+        "banner",
+        "native",
+        "video"
+      ]
+    },
+    "targeting_metadata": {
+      "priority": 20
+    },
+    "deleted": 0,
+    "last_modified_by": "user123",
+    "last_modified": "2024-08-22T21:24:40.000Z",
+    "demand_partner_config_params": [
+      {
+        "id": 1718542,
+        "member_id": 13859,
+        "prebid_settings_id": 196038,
+        "name": "appnexus",
+        "params": {
+          "placement_id": 123456
+        },
+        "enabled": 1,
+        "deleted": 0,
+        "last_modified_by": "user123",
+        "last_modified": "2024-08-22T21:24:40.000Z"
+      }
+    ]
+  }
+]          
                 
 ```
 
 ## `PUT`
 
-Updates an existing Prebid config. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
+Overwrite an existing Prebid config. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
-### `PUT`: Example call using curl
+### `PUT`: Example JSON request
 
 ```
-curl -d @config-update.json -X PUT --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
+{
+    "name": "ConfigName1",
+    "targeting_level_code": 4,
+    "targeting_id": 22378872,
+    "enabled": 0,
+    "media_types": {
+        "sizes": [
+            {
+                "height": 300,
+                "width": 250
+            }
+        ],
+        "types": [
+            "banner",
+            "native",
+            "video"
+        ]
+    },
+    "targeting_metadata": {
+        "priority": 20
+    },
+    "demand_partner_config_params": [
+        {
+            "id": 1718542,
+            "member_id": 13859,
+            "prebid_settings_id": 196038,
+            "name": "appnexus",
+            "params": {
+                "placement_id": 123456
+            },
+            "enabled": 1
+        }
+    ]
+}
 ```
 
 ### `PUT`: Response
@@ -514,21 +509,30 @@ Returns a Prebid config object.
 
 ## `PATCH`
 
-Partially update an existing Prebid config. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request.
+Partially update an existing Prebid config. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request. The request must include a top-level `config` object that contains the other elements to be updated.
 
-### `PATCH`: Example call using curl
+### `PATCH`: Example JSON request
 
 ```
-curl -d @config-update.json -X PATCH --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
+{
+    "config": {
+        "enabled": 0,
+        "media_types": {
+            "types": [
+                "banner"
+            ]
+        }
+    }
+}
 ```
 
 ### `PATCH`: Response
 
-Returns a Prebid config object.
+Returns a Prebid configuration object.
 
 ## `DELETE`
 
-Delete an existing Prebid config. Include the `prebidSettingsId` as the last component of the path.
+Delete an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path.
 
 ### `DELETE`: Example call using curl
 
@@ -538,7 +542,7 @@ curl -X DELETE https://api.appnexus.com/prebid/config/{prebidSettingsId}
 
 ### `DELETE`: Response
 
-On success, the config indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
+On success, the configuration indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
 
 ## Related topics
 

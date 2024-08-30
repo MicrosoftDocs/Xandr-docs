@@ -54,7 +54,7 @@ A successful response will return JSON containing the member's cross-partner set
 | `configs` | array | Container with the configs objects for the member or a specific config object. For items contained in a config object, see the [config properties](#config-properties) table below. |
 | `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `demand_partner_settings` | array | The demand partner properties. For the items contained in the `demand_partner_settings` object, see the [demand partner settings](#demand-partner-settings) table below. |
-| `id` | integer |  - When the request does not specify a `prebidSettingsId`, the first ID in the response represents the unique [cross-partner settings ID](cross-partner-settings-service.md) for the member. The [configs object](config-service.md#config-properties) includes the id values of each configuration. <br> - When the request specifies a `prebidSettingsId`, that will be the unique identifier in the response. This id is then referred to as prebid_settings_id in other endpoints of this API. |
+| `id` | integer |  - When the request does not specify a `prebidSettingsId`, the first ID in the response represents the unique [cross-partner settings ID](cross-partner-settings-service.md) for the member. The [configs object](#config-properties) includes the id values of each configuration. <br> - When the request specifies a `prebidSettingsId`, that will be the unique identifier in the response. This id is then referred to as prebid_settings_id in other endpoints of this API. |
 | `last_modified` | string | The most recent modification date of the config object. |
 | `last_modified_by` | string | The user who made the last modification to the configuration object. |
 | `member_id` | integer | The ID of the member associated with the configurations. |
@@ -70,7 +70,7 @@ A successful response will return JSON containing the member's cross-partner set
 | `id` | integer | The id for the demand partner settings. |
 | `name` | string | The name of the demand partner. See the [Demand Partner Service](demand-partner-service.md) for more information.|
 
-### Configuration properties
+### Config properties
 
 | Property | Type | Description |
 |:---|:---|:---|

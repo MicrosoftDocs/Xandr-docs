@@ -55,7 +55,7 @@ When you create a publisher, a site is automatically created. You can then modif
 
 #### Footnotes
 
-¹ **Deprecation Note:**: The `supply_type` field is deprecated. While this field will continue to default to "web", its value is ignored as the supply type is detected automatically by Xandr in each auction. Users should rely on Xandr’s automatic detection rather than specifying the supply type manually.
+¹ **Deprecation Note**: The `supply_type` field is deprecated. While this field will continue to default to "web", its value is ignored as the supply type is detected automatically by Xandr in each auction. Users should rely on Xandr’s automatic detection rather than specifying the supply type manually.
 
 ## Marketplace map
 

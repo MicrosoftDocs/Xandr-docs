@@ -12,11 +12,11 @@ Publishers create placement groups to organize and maintain placements. Values a
 
 - **From the Publishers tab**:
 
-    Select **Placement Manager**, then select the publisher you want to work with from the **Select Publisher** dialog. Select **Create New** > **Placement Group** from the dropdown menu. The **Create New Placement Group** dialog will appear.
+    Select **Inventory Manager**, then select the publisher you want to work with from the **Select Publisher** dialog. Select **Create New** > **Placement Group** from the dropdown menu. The **Create New Placement Group** dialog will appear.
 
 - **From the Inventory tab**:
 
-    Select **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. You can also select **Inventory** from the main navigation window, find the publisher you want to work with, then click the button under **Placements** for that publisher. Both of these actions will open the **Placement Manager**. Select **Create New** > **Placement Group** from the dropdown menu. The **Create New Placement Group** dialog will appear.
+    Select **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. You can also select **Inventory** from the main navigation window, find the publisher you want to work with, then click the button under **Placements** for that publisher. Both of these actions will open the **Inventory Manager**. Select **Create New** > **Placement Group** from the dropdown menu. The **Create New Placement Group** dialog will appear.
 
 ## Step 2. Define the placement group details
 

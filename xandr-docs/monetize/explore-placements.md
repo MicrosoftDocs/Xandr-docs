@@ -1,16 +1,16 @@
 ---
 title: Explore Placements
-description: Explore Placement Manager, discover key metrics, quick access to details, and default creatives for all placements. 
+description: Explore Inventory Manager, discover key metrics, quick access to details, and default creatives for all placements. 
 ms.date: 10/28/2023
 ---
 
 # Explore placements
 
-The **Placement Manager** screen shows you essential metrics about all placements for a specific publisher, provides quick access to each placement's details and default creatives as well as placement tag exporting, and offers bulk editing and reporting options.
+The **Inventory Manager** screen shows you essential metrics about all placements for a specific publisher, provides quick access to each placement's details and default creatives as well as placement tag exporting, and offers bulk editing and reporting options.
 
-## Getting to the placement manager screen
+## Getting to the Inventory Manager screen
 
-From the **Publishers** tab: Go to **Publishers >  Placement Manager**.
+From the **Publishers** tab: Go to **Publishers >  Inventory Manager**.
 From the **Inventory** tab: Go to **Partners >  Placement**.
 
 ## Customizing data view

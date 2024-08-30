@@ -1,11 +1,11 @@
 ---
 title: Config Service
-description: In this article, learn about the Config service, their REST API, parameters, JSON requests, and responses with thorough examples.
+description: In this article, learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Config service
+# Configuration service
 
 The Configuration Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are objects that map Monetize inventory to demand partners, allowing the partners to identify the inventory in bid requests. Each configuration includes an array of demand partner parameters attached which specify the values partners will receive. Note that the partners must first be added at the global level via the [demand partner service](demand-partner-service.md). Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
 
@@ -13,12 +13,12 @@ The Configuration Service enables the retrieval, creation, and editing of Prebid
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) | Return all of the Prebid configs. |
-| `GET` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Return a specific Prebid config. |
+| `GET` | [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) | Return all of the Prebid configurations. |
+| `GET` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Return a specific Prebid configurations. |
 | `POST` | [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) | Add a new Prebid config. |
-| `PUT` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update an existing Prebid config. |
-| `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of an existing Prebid config. |
-| `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid config. |
+| `PUT` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update an existing Prebid configurations. |
+| `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of an existing Prebid configurations. |
+| `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid configurations. |
 
 ## `GET`
 
@@ -28,7 +28,7 @@ Returns all Prebid configurations for the caller's member. Results are returned 
 
 | Property | Scope | Type | Description |
 |:---|:---|:---|:---|
-| `status_filter` | string | Optional | Filter results based on whether a config is enabled or disabled. Pass the `status_filter` argument in the query and set the value to either *enabled* or *disabled*. |
+| `status_filter` | string | Optional | Filter results based on whether a configuration is enabled or disabled. Pass the `status_filter` argument in the query and set the value to either *enabled* or *disabled*. |
 
 ### Example call using curl with status filter arguments
 
@@ -36,9 +36,9 @@ Returns all Prebid configurations for the caller's member. Results are returned 
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/config?status_filter=enabled
 ```
 
-### Example call using curl to return a specific config
+### Example call using curl to return a specific configuration
 
-Append the config id as the last component of the URL.
+Append the config ID as the last component of the URL.
 
 ```
 curl --header "Content-Type: application/json"https://api.appnexus.com/prebid/config/{prebidSettingsId}
@@ -59,7 +59,7 @@ A successful response will return JSON containing the member's cross-partner set
 | `last_modified_by` | string | The user who made the last modification to the configuration object. |
 | `member_id` | integer | The ID of the member associated with the configurations. |
 | `price_granularity` | object | Defines the CPM price buckets into which demand partner bids will be grouped in the ad server. See the [price granularity](#price-granularity) table below. Object is managed via the [cross-partner-settings service](cross-partner-settings-service.md).|
-| `total_configs` | integer | The number of configs returned. |
+| `total_configs` | integer | The number of configurations returned. |
 
 ### Demand partner settings
 
@@ -70,22 +70,22 @@ A successful response will return JSON containing the member's cross-partner set
 | `id` | integer | The id for the demand partner settings. |
 | `name` | string | The name of the demand partner. See the [Demand Partner Service](demand-partner-service.md) for more information.|
 
-### Config properties
+### Configuration properties
 
 | Property | Type | Description |
 |:---|:---|:---|
+| `deleted` | boolean | If `true`, indicates that the configuration object is not available for use but its data is still viewable. |
 | `demand_partner_config_params` | array | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#demand-partner-configs-properties) table below. |
-| `enabled` | boolean | Indicates if the config is enabled or disabled. |
-| `id` | integer | This ID is then referred to as `prebid_settings_id` in other endpoints of the API.|
-| `last_modified` | string | The most recent modification date of the config. Formatted as date-time. |
-| `media_types` | object | The media types associated with the config. For items contained in a media_types object, see the [media types](#media-types) properties table below. |
+| `enabled` | boolean | Indicates if the configuration is enabled or disabled. |
+| `id` | integer | This ID is referred to as `prebid_settings_id` in other endpoints of the API.|
+| `last_modified` | string | The most recent modification date of the configuration. Formatted as date-time. |
+| `last_modified_by` | string | The user who made the last modification to the configuration object.|
+| `media_types` | object | The media types associated with the configurations. For items contained in a media_types object, see the [media types](#media-types) properties table below. |
 | `member_id` | integer | The ID of the member associated with the configurations.|
-| `name` | string | The name of the config. |
+| `name` | string | The name of the configuration. |
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `1` placement  <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile|
 | `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations in the [PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically.|
 | `targeting_level_name` | string | The name of the level (example: publisher). |
-| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
-| `last_modified_by` | string | The user who made the last modification to the configuration object.|
 | `targeting_metadata` | object | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required.** |
 
 ### Media types
@@ -111,15 +111,15 @@ The media type object determines which formats (currently banner, native, and vi
 
 | Property | Type | Description |
 |:---|:---|:---|
+| `deleted` | boolean | If `true`, indicates that the configuration object is not available for use but its data is still viewable. |
 | `enabled` | boolean | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md). |
-| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
 | `id` | integer | The id of the parameter mappings for the specific demand partner. |
 | `last_modified` | string | The most recent modification date of the `demand_partner_config`. |
 | `last_modified_by` | string | The person who made the last modifications to the `demand_partner_config`. |
 | `member_id` | integer | The member_id associated with the `demand_partner_config`. |
 | `name` | string | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
-| `prebid_settings_id` | integer | The ID of the config which can contain multiple demand partner parameter mappings. |
+| `prebid_settings_id` | integer | The ID of the configuration which can contain multiple demand partner parameter mappings. |
 
 ### Price granularity
 
@@ -127,12 +127,12 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 
 | Property | Type | Description |
 |:---|:---|:---|
+| `currency_code` | string | A string containing the desired currency code for price bucket calculations. It must be part of the [Microsoft-approved list of currencies](../monetize/currency-support.md). |
 | `label` | string | The type of scale as defined in [Prebid documentation](https://docs.prebid.org/adops/price-granularity.html) (low, medium, high, auto, dense, custom). See the [cross-partner-settings service](cross-partner-settings-service.md).|
+| `precision` | integer | The number of decimal places to which the price is rounded. The default is two decimal places, so a price of 2.1234 would be rounded to 2.12. |
 | `ranges` | object | Container object describing the price granularity range. |
 | `ranges.max` | integer | The maximum length of the range. |
 | `ranges.increment` | float | The amount to increment through the range. |
-| `precision` | integer | The number of decimal places to which the price is rounded. The default is two decimal places, so a price of 2.1234 would be rounded to 2.12. |
-| `currency_code` | string | A string containing the desired currency code for price bucket calculations. It must be part of the [Microsoft-approved list of currencies](../monetize/currency-support.md). |
 
 ### Pagination
 
@@ -140,8 +140,9 @@ The number of responses can be limited by passing the `num_elements` argument. W
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `start_element` | int | The number at which to start counting. |
 | `num_elements` | int | How many elements to return. For example, start at object # 4 and return 3 objects, or # 4, 5, 6. |
+| `start_element` | int | The number at which to start counting. |
+
 
 #### Example call to limit to fifteen results and to start the results at the tenth element
 
@@ -322,7 +323,7 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 
 ## `POST`
 
-Enables the creation of a new config object.
+Enables the creation of a new configurations object.
 
 ### Example call using curl
 
@@ -334,14 +335,13 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `name` | string | Required | The name of the configuration. |
+| `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#post-demand-partner-configs-properties) table below.|
 | `enabled` | boolean | Required | Indicates if the config is enabled or disabled. |
-| `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#demand-partner-configs-properties) table below.|
 | `media_types` | object | Required | The media_types associated with the config. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
+| `name` | string | Required | The name of the configuration. |
 | `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations [in the PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically. |
-| `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1`
-Placement <br> - `2` Placement group/site <br> - `3` Publisher <br> - `4` Line item/targeting profile |
-| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
+| `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1` placement <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile |
+| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#post-targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
 
 ### `POST`: Demand partner configs properties
 
@@ -349,7 +349,6 @@ Placement <br> - `2` Placement group/site <br> - `3` Publisher <br> - `4` Line i
 |:---|:---|:---|:---|
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
-
 
 ### `POST`: Media types
 
@@ -464,6 +463,12 @@ A successful response will return the new config object.
 
 Overwrite an existing Prebid config. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
+### `PUT`: Example call using curl
+
+```
+curl -d @config-update.json -X PUT --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
+```
+
 ### `PUT`: Example JSON request
 
 ```
@@ -510,6 +515,12 @@ Returns a Prebid config object.
 ## `PATCH`
 
 Partially update an existing Prebid config. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request. The request must include a top-level `config` object that contains the other elements to be updated.
+
+### PATCH: Example call using curl
+
+```
+curl -d @config-update.json -X PATCH --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
+```
 
 ### `PATCH`: Example JSON request
 

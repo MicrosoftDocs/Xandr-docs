@@ -26,17 +26,6 @@ In the **Create New Placement Group** dialog on the **Placement Group Details** 
 - **Code**: Enter a code that you can use for organizational or reference information. This is not shared with buyers. This option is available only if you select the **Code (Advanced)** setting in this section.
 - **Domain**: Enter the top level domain name. This is not shared with buyers. This setting is optional.
 
-You must also select the appropriate **Supply Type** from the dropdown:
-
-- **Standard Website**: Select this option if the available inventory is part of a display website.
-- **Mobile Optimized Website**: Select this option if the available inventory is part of a website that has been created specifically for viewing on a mobile device.
-- **Mobile Application**: Select this option if the available inventory is part of a mobile app.
-
-> [!NOTE]
-> Only traffic matching the placement group's supply type can serve within that placement group.
->
-> For example, if a seller labels their placement group as **Standard Website** but the traffic coming through that placement group is both standard website as well as mobile optimized, any campaign targeting **Mobile Application** placement groups will not be able to serve on this inventory.
-
 ## Step 3. Select your marketplace settings
 
 You can designate the Microsoft Advertising Marketplaces in which you want the inventory associated with this placement group to be available.

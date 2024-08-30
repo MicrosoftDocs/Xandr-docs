@@ -45,7 +45,7 @@ When you create a publisher, a site is automatically created. You can then modif
 | `audited` | boolean | Whether the site has been audited. |
 | `publisher_join` | array |  |
 | `publisher_name` | string (100) | Name of the publisher the site is under |
-| `supply_type` | string | Specifies whether this is a site viewed on a desktop browser (`web`), a site viewed on a mobile browser (`mobile_web`), or an app run on a mobile device (`mobile_app`). This distinction allows the buyer to target campaigns to the particular supply type where they want to advertise, for example, an advertiser may upload creatives optimized for mobile browsers with mobile landing pages.<br><br>**Note**: As of **February 13th, 2018**, the supply type configured in each auction is detected automatically by Xandr. As a result, the selection you make here will be overridden by the supply type detected. This selection will eventually be removed from the UI.<br><br>**Default**: `web`<br><br>**Note**: **This note is visible to Xandr employees only**: Admins can set this to `facebook_sidebar` as well. <br> [See note¹](#footnotes).
+| `supply_type` | string | **Deprecated**. While this field will continue to default to "web", its value is ignored as the supply type is detected automatically by Xandr in each auction. Users should rely on Xandr’s automatic detection rather than specifying the supply type manually. <br><br> Specifies whether this is a site viewed on a desktop browser (`web`), a site viewed on a mobile browser (`mobile_web`), or an app run on a mobile device (`mobile_app`). This distinction allows the buyer to target campaigns to the particular supply type where they want to advertise, for example, an advertiser may upload creatives optimized for mobile browsers with mobile landing pages.<br><br>**Note**: As of **February 13th, 2018**, the supply type configured in each auction is detected automatically by Xandr. As a result, the selection you make here will be overridden by the supply type detected. This selection will eventually be removed from the UI.<br><br>**Default**: `web`<br><br>**Note**: **This note is visible to Xandr employees only**: Admins can set this to `facebook_sidebar` as well. 
 | `creative_format_action` | string | - `exclude`: Allow all creative formats to serve on this site except those specified in the `creative_formats` array<br> - `include`: Only all creatives to serve whose format is included in the list specified in `creative_formats`<br><br>**Default**: `exclude`. <br>Some mobile application supply sources do not support all creative formats available on Xandr. |
 | `creative_formats` | array of strings | The creative formats to be excluded or included in this site.<br><br>**Default**: `text` |
 | `allowed_click_actions` | array of strings | Tells the buyer what types of click actions on creatives are supported. Mobile web and apps often allow additional click actions beyond click to a website, such as click-to-call, click-to-sms, click-to-email, and click-to-map.<br><br>**Default**: `click-to-web only` |
@@ -55,7 +55,7 @@ When you create a publisher, a site is automatically created. You can then modif
 
 #### Footnotes
 
-¹ **Deprecation Note**: The `supply_type` field is deprecated. While this field will continue to default to "web", its value is ignored as the supply type is detected automatically by Xandr in each auction. Users should rely on Xandr’s automatic detection rather than specifying the supply type manually.
+¹ 
 
 ## Marketplace map
 

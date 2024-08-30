@@ -53,10 +53,6 @@ When you create a publisher, a site is automatically created. You can then modif
 | `mobile_app_instance` | multi-object | The [Mobile App Instance](./mobile-app-instance-service.md) associated with this site. This field can only be set when `supply_type` is `mobile_app`. See [Mobile App Instance](#mobile-app-instance) below for the internal field definitions.<br><br>**Required On**: `POST`, for sites with a `supply_type` of `mobile_app`. |
 | `mobile_app_instance_id` | int | The ID of the mobile app instance associated with this site. This field is only associated with sites with a `supply_type` of `mobile_app`. |
 
-#### Footnotes
-
-¹ 
-
 ## Marketplace map
 
 | Parameter | Type | Description |

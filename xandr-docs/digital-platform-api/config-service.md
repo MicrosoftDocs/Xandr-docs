@@ -14,11 +14,11 @@ The Configuration Service enables the retrieval, creation, and editing of Prebid
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) | Return all of the Prebid configurations. |
-| `GET` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Return a specific Prebid configurations. |
+| `GET` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Return specific Prebid configurations. |
 | `POST` | [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) | Add a new Prebid configuration. |
-| `PUT` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update an existing Prebid configurations. |
-| `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of an existing Prebid configurations. |
-| `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid configurations. |
+| `PUT` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update an existing Prebid configuration. |
+| `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of the existing Prebid configurations. |
+| `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid configuration. |
 
 ## `GET`
 
@@ -336,7 +336,7 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#post-demand-partner-configs-properties) table below.|
-| `enabled` | boolean | Required | Indicates if the configuration is enabled or disabled. |
+| `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
 | `media_types` | object | Required | The media_types associated with the configuration. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
 | `name` | string | Required | The name of the configuration. |
 | `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations [in the PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically. |

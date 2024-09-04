@@ -18,7 +18,7 @@ The following steps will guide you through exporting placement tags.
 
 **For Publisher clients:** Navigate to **Partners** >  **Placements** and select a publisher. Check the boxes next to placements that you want to export, click **More Actions**, then select **Export Tags**. This displays the **Export Placement Tags** dialog.
 
-**For all other clients:** Navigate to **Publisher** >  **Placement Manager**, check the boxes next to placements that you want to export, click **More Actions**, then select **Export Tags**. This displays the **Export Placement Tags** dialog.
+**For all other clients:** Navigate to **Publisher** >  **Inventory Manager**, check the boxes next to placements that you want to export, click **More Actions**, then select **Export Tags**. This displays the **Export Placement Tags** dialog.
 
 ## Step 2. Modify the tag options
 

@@ -10,7 +10,7 @@ When creating a programmatic guaranteed (PG) deal that uses third-party ad serve
 
 PG deals that use a third-party ad server for pacing require a single, exclusive placement to be made only for that deal. The placement must also be the only placement contained within a single placement group. To create the placement:
 
-1. Click **Publishers** > **Placement Manager**.
+1. Click **Publishers** > **Inventory Manager**.
 
 1. Select a publisher.
 

@@ -22,9 +22,9 @@ You can delete placements from the Microsoft Advertising system in just two step
 
 ## Step 1. Get started with placements
 
-**Publisher-only clients:** Select **Placements** from the **Inventory** menu in the main navigation menu, then select the publisher you want to work with from the Select a Publisher dialog. This opens the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
+**Publisher-only clients:** Select **Placements** from the **Inventory** menu in the main navigation menu, then select the publisher you want to work with from the Select a Publisher dialog. This opens the **Inventory Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
-**All other clients:** Go to **Publishers** \> **Placement Manager** and select the publisher you want to work with. This will open the **Placement List** for that publisher. Click the box(es) next to the placement or placements you want to delete.
+**All other clients:** Go to **Publishers** \> **Inventory Manager** and select the publisher you want to work with. This will open the **Placement List** for that publisher. Click the box(es) next to the placement or placements you want to delete.
 
 ## Step 2. Confirm deletion
 
@@ -39,9 +39,9 @@ A placement is an open slot on a publisher website where an advertiser creative 
 
 ## Step 1. Get started with moving placements
 
-**Publisher-only clients:** Select **Inventory** \> **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
+**Publisher-only clients:** Select **Inventory** \> **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Inventory Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
-**All other clients:** Go to **Publishers** \> **Placement Manager** and select the publisher you want to work with. This will open the **Placement List** for that publisher. Click the box(es) next to the placement or placements you want to move.
+**All other clients:** Go to **Publishers** \> **Inventory Manager** and select the publisher you want to work with. This will open the **Placement List** for that publisher. Click the box(es) next to the placement or placements you want to move.
 
 ## Step 2. Move the desired placements to a different placement group
 
@@ -57,9 +57,9 @@ When you want to create a number of similar placements, you can save time by dup
 
 ## Step 1. Get started with duplicating placements
 
-**Publisher-only clients:** Select **Inventory** \> **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
+**Publisher-only clients:** Select **Inventory** \> **Placements**, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Inventory Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
-**All other clients:** Go to **Publishers** \> **Placement Manager** and select the publisher you want to work with. This will open the **Placement List** for that publisher. Click the box(es) next to the placement or placements you want to duplicate.
+**All other clients:** Go to **Publishers** \> **Inventory Manager** and select the publisher you want to work with. This will open the **Placement List** for that publisher. Click the box(es) next to the placement or placements you want to duplicate.
 
 ## Step 2. Confirm duplicate
 
@@ -71,7 +71,7 @@ Once you have renamed your placement and confirmed the duplication, your duplica
 
 ## Set a reserve price
 
-You can set a reserve price, which is the minimum net amount the placement will accept for placing a creative, for the placement from the **Placement Manager** screen in the **Default Creatives** pane. Under **Reserve Price Settings**, click **Edit**, then complete the selections in the **Reserve Price Settings** dialog that appears as below:
+You can set a reserve price, which is the minimum net amount the placement will accept for placing a creative, for the placement from the **Inventory Manager** screen in the **Default Creatives** pane. Under **Reserve Price Settings**, click **Edit**, then complete the selections in the **Reserve Price Settings** dialog that appears as below:
 
 - **Reserved price based on**: Select the criteria of calculating the reserved price from total **Network revenue** or total **Publisher revenue**.
 - **Reserved price applies to**: Select whether reserved price is applied to :

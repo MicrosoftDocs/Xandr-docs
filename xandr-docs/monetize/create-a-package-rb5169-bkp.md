@@ -78,7 +78,7 @@ By default, any size impression will be included. Click **Edit** to open the **S
 
 When you have selected the sizes to be included, click **Set** to return to the previous screen.
 
-Check **Allow deal to include private sizes** to allow impressions from this deal to serve on the additional placement sizes that you have specified in the **Placement Manager**.
+Check **Allow deal to include private sizes** to allow impressions from this deal to serve on the additional placement sizes that you have specified in the **Inventory Manager**.
 
 > [!TIP]
 > If you allow private sizes, buyers won't see the additional sizes. Include the private sizes in the **Description** field.
@@ -99,7 +99,7 @@ To limit deals to a specific set of media types, click **Edit** in the **Media T
 1. Click the **Media Subtypes** tab to select specific media subjects (sorted by ID).
 1. Click **Set** to save your selections.
 
-Check **Allow deal to include private media types** to allow impressions from this package to serve on the additional media types that you have specified in the **Placement Manager**.
+Check **Allow deal to include private media types** to allow impressions from this package to serve on the additional media types that you have specified in the **Inventory Manager**.
 
 ## Step 5. Set the ask price
 

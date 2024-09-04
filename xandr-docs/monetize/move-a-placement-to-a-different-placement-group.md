@@ -12,7 +12,7 @@ A placement is an open slot on a publisher website where an advertiser creative 
 
 **Publisher-only clients:** Select **Placements** from the **Inventory** menu in the main navigation menu, then select the publisher you want to work with from the **Select a Publisher** dialog.
 
-**All other clients:** Go to **Publishers** \> **Placement Manager**. This takes you to the **Placement Manager** screen, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
+**All other clients:** Go to **Publishers** \> **Inventory Manager**. This takes you to the **Inventory Manager** screen, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
 ## 2. Move the desired placements to a different placement group
 

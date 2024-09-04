@@ -18,7 +18,7 @@ In order to prevent serving blanks or [Default PSAs](default-psas.md), you can s
 
 - **Price floors based on gross network revenue or publisher revenue**
 
-  You can choose whether bids are compared to your price floor as your network revenue and the publisher's revenue combined, or just the publisher's revenue. You can access these options in the **Default Creatives** pane of the **Placement Manager** screen.
+  You can choose whether bids are compared to your price floor as your network revenue and the publisher's revenue combined, or just the publisher's revenue. You can access these options in the **Default Creatives** pane of the **Inventory Manager** screen.
 
 > [!NOTE]
 > You cannot assign default creatives to placements that allow interstitial creatives.
@@ -33,7 +33,7 @@ In order to prevent serving blanks or [Default PSAs](default-psas.md), you can s
 
 ## Step 1. Select the placement
 
-Under **Publishers** > **Placement Manager**, select the placement to which you want to add a default creative by clicking anywhere in the row. This displays the placement details and any default creatives already assigned to the placement.
+Under **Publishers** > **Inventory Manager**, select the placement to which you want to add a default creative by clicking anywhere in the row. This displays the placement details and any default creatives already assigned to the placement.
 
 In the **Default Creatives** pane, click **Add**. This opens the **Add Default Creative** dialog.
 

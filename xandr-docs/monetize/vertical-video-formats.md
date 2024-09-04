@@ -17,7 +17,7 @@ To set up vertical video:
 
 1. Create a video placement that includes the width and height of the creative.
     > [!NOTE]
-    >  If you want to filter out bids that don't correspond to the preferred aspect ratio, set the aspect ratio on the placement using the Video Settings tab of the Placement Manager and select the **Buyer creatives must match aspect ratio** checkbox.
+    >  If you want to filter out bids that don't correspond to the preferred aspect ratio, set the aspect ratio on the placement using the Video Settings tab of the Inventory Manager and select the **Buyer creatives must match aspect ratio** checkbox.
 
 1. In the `rendererOptions` parameter of the `defineTag` element in the AST, specify the desired aspect ratio as shown in the example:
 

@@ -14,7 +14,7 @@ If your default creative is not SSL audited and your placement is run as secure 
 
 To submit your creative for SSL audit,
 
-1. Navigate to **Publishers** \> **Placement Manager**, then select the placement to which you want to add a secure default creative by clicking anywhere in the row. This displays the placement details and any default creatives already assigned to the placement.
+1. Navigate to **Publishers** \> **Inventory Manager**, then select the placement to which you want to add a secure default creative by clicking anywhere in the row. This displays the placement details and any default creatives already assigned to the placement.
 
 1. In the **Default Creatives** pane, click **Add**. This opens the **Add Default Creative** dialog. Be sure to check the **Allow SSL** box.
 

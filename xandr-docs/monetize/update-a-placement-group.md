@@ -11,9 +11,9 @@ You can delete placement groups, and also move placements to a different placeme
 
 ## Get started
 
-**Publisher-only clients:** Select **Placements** from the **Inventory** menu in the main navigation menu, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
+**Publisher-only clients:** Select **Placements** from the **Inventory** menu in the main navigation menu, then select the publisher you want to work with from the **Select a Publisher** dialog. This opens the **Inventory Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
-**All other clients:** Go to **Publishers** \> **Placement Manager**. This takes you to the **Placement Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
+**All other clients:** Go to **Publishers** \> **Inventory Manager**. This takes you to the **Inventory Manager**, which shows both the **Placement Group List** and the **Placement List** under each placement group for the publisher.
 
 ## Move existing placements to a different placement group
 

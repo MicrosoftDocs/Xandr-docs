@@ -20,9 +20,9 @@ When you create a placement, you go through the following steps:
 
 ## Step 1. Getting started
 
-Depending on which version of Monetize you use, you can access the **Placement Manager** screen by doing one of the following:
+Depending on which version of Monetize you use, you can access the **Inventory Manager** screen by doing one of the following:
 
-- From the **Publishers** tab, navigate to **Publishers** > **Placement Manager**.
+- From the **Publishers** tab, navigate to **Publishers** > **Inventory Manager**.
 - From the **Inventory** tab, navigate to **Partners** > **Placement**.
 
 Select a publisher if prompted, click the **Create New** button and select **Placement**, and then select the associating placement group for the placement. The **Create New Placement** dialog displays.
@@ -96,7 +96,7 @@ The creative's VAST version must be compatible with the VAST player that the cre
 
 To add the VAST player version when creating a new placement:
 
-1. Click the **Create New** button from the **Placement Manager** screen.
+1. Click the **Create New** button from the **Inventory Manager** screen.
 1. Select **Placement**.
 1. Search for an existing placement group and select from the list of results.
 1. Scroll down to the **Allowed Media** section on the **Details** tab.
@@ -108,7 +108,7 @@ To add the VAST player version when creating a new placement:
 
 To add the VAST player version for an existing placement:
 
-1. Select the appropriate placement from the **Placement Manager** screen.
+1. Select the appropriate placement from the **Inventory Manager** screen.
 1. Click the **Video Settings** tab.
 1. Select the appropriate **Player Vast version** from the menu.
 1. Click the **Save** button.
@@ -182,4 +182,4 @@ If you want a piggyback pixel to fire when a creative serves on the placement, e
 
 ## Step 9. Save the placement
 
-To finish adding the placement to the Microsoft Advertising platform, click the **Save** button. The placement is then added to the **Placement List** in the **Placement Manager**.
+To finish adding the placement to the Microsoft Advertising platform, click the **Save** button. The placement is then added to the **Placement List** in the **Inventory Manager**.

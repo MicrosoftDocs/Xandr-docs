@@ -25,7 +25,7 @@ The following information about the activity of each publisher associated to you
 
 - **Name** - The name of the publisher.
 - **ID** - The unique identification number of the publisher.
-- **Placements** - The number of placements defined for the publisher. This information is displayed on a button; clicking this button will take you to the Placement Manager for that publisher. (See [Explore Placements](explore-placements.md) for more on using the Placement Manager.)
+- **Placements** - The number of placements defined for the publisher. This information is displayed on a button; clicking this button will take you to the Inventory Manager for that publisher. (See [Explore Placements](explore-placements.md) for more on using the Inventory Manager.)
 - **Currency** - The currency units being displayed for the publisher. The default is USD (United States  Dollar). You can change your settings to display all currency values, such as Revenue and Profit, in the local currency of each publisher. Note that as with all columns on this screen you can hide the Currency column from view. See Configuring Publisher Display below for information on configuring the currencies and columns that are displayed.
 - **Network (member name)** -
   - **Revenue** - The total revenue for the network. This value includes the sum of booked and resold revenue.

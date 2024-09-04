@@ -13,7 +13,7 @@ This page focuses only on video placement tags. For more information and complet
 
 ## Step 1. Select the placements to export
 
-Navigate to **Publisher** > **Placement Manager**, check the boxes next to placements that you want to export, click the **More Actions** button, and then select **Export** Tags. This displays the **Export Placement Tags** dialog.
+Navigate to **Publisher** > **Inventory Manager**, check the boxes next to placements that you want to export, click the **More Actions** button, and then select **Export** Tags. This displays the **Export Placement Tags** dialog.
 
 ## Step 2. Modify the tag options
 

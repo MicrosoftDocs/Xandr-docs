@@ -14,7 +14,7 @@ With **Microsoft Advertising Exchange**, Microsoft Advertising offers exclusive 
 - Access real users in immersive and engaging environments.
 
 > [!NOTE]
-> Microsoft has a Creative Acceptance Policy that applies to all advertisements on all Microsoft platforms and properties. For more details, see [Microsoft Windows Inventory Policies](https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies).
+> Microsoft has a Creative Acceptance Policy that applies to all advertisements on all Microsoft platforms and properties. For more details, see [Microsoft Advertising Policies](https://help.ads.microsoft.com/#apex/ads/ext60205).
 
 ## Target Microsoft inventory
 

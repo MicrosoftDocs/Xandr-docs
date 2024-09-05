@@ -28,7 +28,7 @@ To set up and listen to a test ad:
     > These impressions will not becharged since this is a testing platform.
 1. In the **Targeting** section, select **Inventory** > **3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
 1. Click **Include** and then **Add**.
-1. Go to the following URL: [https://player.listenlive.co/xxxx](https://player.listenlive.co/xxxx), where xxxx is the site ID provided by Triton Digital.
+1. Go to the following URL: `https://player.listenlive.co/xxxx`, where `xxxx` is the site ID provided by Triton Digital.
 
 ## Target Triton inventory
 

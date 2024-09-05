@@ -92,7 +92,7 @@ To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 1. Search for Microsoft **Run of Windows PC Apps** and **Run of Windows Phone Apps**.
 1. Click **Get Deals** and this will generate a Deal ID to target.
 
-### Targeting criteria information
+### Information about targeting criteria
 
 | Targeting Criteria | Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |
 |:-------------------|:------------------------------------|:---------------------------------|

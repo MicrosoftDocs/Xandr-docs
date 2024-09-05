@@ -16,8 +16,8 @@ If a creative has been altered on the Microsoft Advertising platform after succe
 
 Since Microsoft Advertising charges a fee for each audited creative and buyers may incur additional fees for a failed audit, it's important to test the creative's functionality and review the compliance policies prior to submission. Creatives can be tested by putting a valid Microsoft Advertising ID at the end of the following URLs:
 
-- [https://creative-preview-an.com/cached/creative/insert creative id here](https://creative-preview-an.com/cached/creative/insert%20creative%20id%20here) **for Secure Previews**
-- [http://creative-preview-an.com/cached/creative/insert creative id here](http://creative-preview-an.com/cached/creative/insert%20creative%20id%20here) **for Non Secure Previews**
+- `https://creative-preview-an.com/cached/creative/insert creative id here` **for Secure Previews**
+- `http://creative-preview-an.com/cached/creative/insert creative id here` **for Non Secure Previews**
 
 Questions or appeals regarding creatives audited in excess of 30 days cannot be considered. These creatives should simply be resubmitted to our queue for audit.
 
@@ -26,9 +26,9 @@ Questions or appeals regarding creatives audited in excess of 30 days cannot be 
 
 We recommend that buyers choose the platform audit option when adding creatives on the Microsoft Advertising platform. However, they can choose to self-audit their creative, but should be careful when opting out of platform audits since many sellers only accept Microsoft Advertising audited creatives. Self-auditing may reduce access to inventory outside of one's network. Self-audited creatives that are submitted for platform audit may see some classification changes. For more information, see [Self-Auditing Creatives](self-auditing-creatives.md). Buyers don't have to submit creatives for audit when:
 
-- the creatives will only run directly with the publisher.
-- the creatives will run on resold inventory, so the buyer doesn't have to submit those creatives for audit since publishers may allow unaudited creatives to run.
-- the creatives are not ready to serve. For example, the buyer wants to edit the content later, or the third-party offer has not been activated.
+- The creatives will only run directly with the publisher.
+- The creatives will run on resold inventory, so the buyer doesn't have to submit those creatives for audit since publishers may allow unaudited creatives to run.
+- The creatives are not ready to serve. For example, the buyer wants to edit the content later, or the third-party offer has not been activated.
 
 ## Timeline and priority for audit
 
@@ -94,9 +94,9 @@ For a full description of the Microsoft Advertising auditing process and the con
 
 Bulk submissions are audited as efficiently as possible without interfering with the auditing of regular submissions. Microsoft Advertising can audit:
 
-- a submission of 3K+ creatives in an hour
-- a submission of 5K+ in the span of 2 hours
-- a submission of 8K+ in the span of 4 hours
+- A submission of 3K+ creatives in an hour
+- A submission of 5K+ in the span of 2 hours
+- A submission of 8K+ in the span of 4 hours
 
 For more information, see [Creative Audit Best Practices](best-practices-for-submitting-creatives-for-audit.md).
 
@@ -108,11 +108,11 @@ Buyers can choose to receive automatic notification emails about their creatives
 
 If your creative has not run and has not been modified in 45 days, then it will be automatically deactivated and will not serve on any inventory. Email notifications will go out automatically to the corresponding members regarding those deactivated creatives. Buyers do not have to re-submit deactivated creatives for auditing. They can simply reactivate them.
 
-## Third-Party tracking pixels
+## Third-party tracking pixels
 
 Adding a pixel directly to an existing creative will normally cause the creative to be re-audited. However, since third-party tracking pixels go through an independent audit process, you can add third-party tracking pixels to creatives without causing the creatives themselves to be re-audited. For more information about third-party tracking pixels, see [Third-Party Tracking Pixels for Creatives](third-party-tracking-pixels-for-creatives.md).
 
-## PSA-Enabled creative verification
+## PSA-enabled creative verification
 
 Creatives that use a supported verification vendor to block delivery of a creative on certain content will be labeled "PSA Enabled". Instead of the actual creative, PSA-enabled creatives serve as backup creatives in the event of a block by the verification vendor. Supported verification vendors include DoubleVerify, AdXpose, AdSafe Media, and Brand.net.
 Microsoft Advertising has worked with each of these verification vendors to ensure that their tags can be configured for use on our platform. The buyer's verification vendor should be able to help with setting up an appropriate backup creative for Microsoft Advertising.

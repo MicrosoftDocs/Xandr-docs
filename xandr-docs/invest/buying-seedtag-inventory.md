@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buying Seedtag Inventory
+title: Microsoft Invest - Buy Seedtag Inventory
 description: In this article, you'll learn how to display your creative via Seedtag inventory. Seedtag inventory is available programmatically.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying seedtag inventory
+# Microsoft Invest - Buy Seedtag inventory
 
 > [!NOTE]
 > [Buying Native Inventory](./buying-native-inventory.md) provides instructions for a global approach in which you reach all sellers simultaneously with a single line item. Scaling is the approach we recommend over the seller-specific settings shown here.

@@ -69,7 +69,7 @@ Any legacy SDK before Windows 8.1 lacks support for mobile standard third-party 
 
 As an Microsoft Advertising Buyer, you may still access legacy SDK inventory by uploading an image creative to Microsoft Advertising and specifying a landing page. For more information on uploading a hosted image as a creative, see [Add Banner Creatives](./banner-and-html5-creatives.md).
 
-## Targeting instructions
+## Instructions for targeting
 
 To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **PubID** via Standard Line Item - Campaign:
 

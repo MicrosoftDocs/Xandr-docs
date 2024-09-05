@@ -140,7 +140,7 @@ This report's data is retained for 420 days.
 | VAST 900 Error Count | The number of undefined errors. |
 | VAST 901 Error Count | The number of general VPAID errors. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

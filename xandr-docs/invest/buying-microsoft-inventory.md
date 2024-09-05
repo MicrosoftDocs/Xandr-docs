@@ -16,7 +16,7 @@ With **Microsoft Advertising Exchange**, Microsoft Advertising offers exclusive 
 > [!NOTE]
 > Microsoft has a Creative Acceptance Policy that applies to all advertisements on all Microsoft platforms and properties. For more details, see [Microsoft Windows Inventory Policies](https://about.ads.microsoft.com/en-us/solutions/ad-products/display-advertising/creative-acceptance-policies).
 
-## Targeting Microsoft inventory
+## Target Microsoft inventory
 
 To target Microsoft inventory, you need to create an inventory list that includes the **Microsoft Advertising Exchange (280)** advertiser. For full details, see [Inventory Lists](inventory-lists-ali-only.md).
 
@@ -28,7 +28,7 @@ To target Microsoft inventory, you need to create an inventory list that include
 > 1. Select the **Include**.
 > 1. Click **Add**.
 
-## Buying from specific Microsoft publishers
+## Buy from specific Microsoft publishers
 
 Use the following documentation to learn more about buying specific Microsoft inventory:
 

@@ -122,7 +122,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | 9 | External Impression | An impression from an impression tracker. |
 | 10 | External Click | A click from a click tracker. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

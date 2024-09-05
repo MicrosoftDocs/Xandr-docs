@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buying Triton Audio Inventory
+title: Microsoft Invest - Buy Triton Audio Inventory
 description: In this article, you’ll find information on the Triton Audio Ad Exchange, including testing ads and setting up a line item to target audio inventory. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying Triton audio inventory
+# Microsoft Invest - Buy Triton audio inventory
 
 This page provides specific information for the **Triton Audio Ad Exchange**, which includes testing your ads and setting up a line item to target **Triton** audio inventory.
 

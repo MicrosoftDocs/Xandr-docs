@@ -121,7 +121,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Reject Other Data Protection Count | The total number of bids rejected for data security reasons not listed above. |
 | Submitted Bids | The number of bids which were eligible in the final auction. For deals with Microsoft Advertising sellers, this value is equal to the number of bids minus the number of rejected bids. For deals with SSPs, this value is equal to the number of bids submitted to the SSP for the final auction. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report. Refer to **Dimensions** and **Metrics** section above for more information about the definitions of the data fields.
 

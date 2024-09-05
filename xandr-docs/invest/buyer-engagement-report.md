@@ -84,7 +84,7 @@ Some dimensions have *attributes*. Dimension attributes are a more granular elem
 | Video Completion Rate | The ratio of video completions to total impressions, expressed as a percentage. <br> Video Completion Rate = Video Completions / Total Impressions |
 | Viewable Completion Rate | The ratio of in-view creative/impression completions to total impressions, expressed as a percentage. <br> Viewable Completion Rate = Viewable and Completed Video Impressions / Measurable Video Impressions |
 
-## To run your report
+## Run your report
 
 Follow these steps to run the report:
 

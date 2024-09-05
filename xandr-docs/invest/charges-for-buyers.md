@@ -4,7 +4,7 @@ description: This article explains about the buyer auction service charge. The c
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Charges for Buyers
+# Microsoft Invest - Charges for buyers
 
 ## Buyer Auction Service Charge (BASC)
 

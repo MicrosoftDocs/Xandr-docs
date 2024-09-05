@@ -23,7 +23,7 @@ The documents in the **Working with Mobile Advertisers** section give you the in
 
   How to set up your rich media creatives to run on mobile devices.
 
-## Working with mobile advertisers
+## Work with mobile advertisers
 
 - **[Running Cost per Install Offers](running-cost-per-install-offers.md)**  
 

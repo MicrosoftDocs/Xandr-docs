@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Applying Media Types and Templates to Banner Creatives
+title: Microsoft Invest - Apply Media Types and Templates to Banner Creatives
 description: Apply media types, standard Microsoft Advertising, and custom templates to your banner creatives.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Applying media types and templates to banner creatives
+# Microsoft Invest - Apply media types and templates to banner creatives
 
 You can apply media types, standard Microsoft Advertising, and custom templates to your banner creatives from the **Create New** screen. You can apply the following media types to your banner creatives:
 

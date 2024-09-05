@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Add Creatives in Bulk to the Creative Manager
+title: Microsoft Invest - Add Creatives in Bulk to Creative Manager
 description: In this article, learn how to add multiple third-party hosted and native creatives in bulk to the Creative Manager.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Add creatives in bulk to the Creative Manager
+# Microsoft Invest - Add creatives in bulk to Creative Manager
 
 You can add multiple third-party hosted and native creatives to the **Creative Manager** simultaneously by either uploading a spreadsheet or the creative files directly from your computer. Only secure content is supported.
 

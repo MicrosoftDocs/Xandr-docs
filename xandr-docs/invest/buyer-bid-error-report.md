@@ -84,7 +84,7 @@ This report's data is retained for 33 days. For more information about how quick
 |---|---|
 | Error Count | The amount of errors logged on the Microsoft Advertising platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
 
-## How to run your report
+## Run your report
 
 Follow these steps to run your report.
 

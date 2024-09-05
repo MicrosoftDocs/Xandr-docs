@@ -93,7 +93,7 @@ This report can retrieve data for the last 90 days.
 | Impression Time    | The time at which the impression occurred.                                     |
 | Time of Conversion | The time at which the conversion occurred.                                     |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

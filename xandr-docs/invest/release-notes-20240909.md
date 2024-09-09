@@ -1,6 +1,6 @@
 ---
 title: September 9, 2024 - Microsoft Owned and Operated (O&O) Packages in Inventory Library 
-description: Find the release note for the new feature introduced in the Microsoft Invest UI - Modeled Audiences.
+description: Find the release note for the new feature introduced in the Microsoft Invest UI - Microsoft Owned and Operated (O&O) Packages in Inventory Library.
 ms.date: 09/09/2024
 ms.topic: release-notes
 ms.author: shsrinivasan

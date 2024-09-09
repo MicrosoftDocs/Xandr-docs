@@ -10,6 +10,7 @@ ms.author: shsrinivasan
 
 Read about the latest updates to Microsoft Invest.
 
+- [September 09, 2024: Microsoft Owned and Operated (O&O) Packages in Inventory Library](release-notes-20240909.md)
 - [July 09, 2024: Trader Home](release-notes-20240709.md)
 - [May 22, 2023: Platform support additional CTV Identifiers](release-notes-20230522.md)
 - [April 11, 2023: GA for Creative Manager](release-notes-20230411.md)

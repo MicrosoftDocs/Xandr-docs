@@ -1006,10 +1006,12 @@
       href: release-notes.md
     - name: 2024 - 2025
       items:
-        - name: July 8, 2024 - Modeled Audiences
-          href: release-notes-20240708.md
+        - name: September 09, 2024 - Microsoft Owned and Operated (O&O) Packages in Inventory Library 
+          href: release-notes-20240909.md
         - name: July 09, 2024 - Trader Home
           href: release-notes-20240709.md
+        - name: July 8, 2024 - Modeled Audiences
+          href: release-notes-20240708.md
     - name: 2022 - 2023
       items:
         - name: May 22, 2023 - Platform support additional CTV Identifiers

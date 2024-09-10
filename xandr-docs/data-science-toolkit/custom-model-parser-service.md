@@ -35,7 +35,7 @@ $ cat decision_tree.txt |base64
 IyBUaGlzIHRyZWUgZGV0ZXJtaW5lcyBhIGJpZCBwcmljZSBhcyBmb2xsb3dzOgojIDEuIElmIHRoZSB1c2VyIGlzIGluIENhbGlmb3JuaWEsIGFuZCB0aGUgaG91ciBpcyBiZXR3ZWVuIDEycG0gYW5kIDE0cG0gdGhlcmUsIGJpZCAkMS41MC4KIyAyLiBJZiB0aGUgdXNlciBpcyBpbiBOZXcgWW9yaywgYW5kIHRoZSBob3VyIGlzIGJldHdlZW4gMWFtIGFuZCAzYW0gdGhlcmUsIGJpZCAkMC4xMC4KIyAzLiBPdGhlcndpc2UsIGJpZCAkMC41MC4KCmlmIGV2ZXJ5IHJlZ2lvbiA9ICJVUzpDQSIsIHVzZXJfaG91ciByYW5nZSAoMTIsMTQpOgoJMS41CmVsaWYgZXZlcnkgcmVnaW9uID0gIlVTOk5ZIiwgdXNlcl9ob3VyIHJhbmdlICgxLDMpOgoJMC4xCmVsc2U6CgkwLjU=
 ```
 
-## Step 2. Create a JSON file containing your encoded tree
+## Step 2. Create a JSON file that contains your encoded tree
 
 Create a JSON file as shown below. The main object must contain a `custom-model-parser` object with the encoded tree as a string in the `model_text` field.
 
@@ -49,7 +49,7 @@ $ cat check_tree.json
 }
 ```
 
-## Step 3. `POST` the file to the custom model parser service
+## Step 3. `POST` file to custom model parser service
 
 Make a `POST` call to the Custom Model Parser Service as shown below.
 
@@ -57,7 +57,7 @@ Make a `POST` call to the Custom Model Parser Service as shown below.
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
 ```
 
-## Step 4. Check the response
+## Step 4. Check response
 
 - [Tree is valid](#tree-is-valid)
 - [Tree is not valid](#tree-is-not-valid)

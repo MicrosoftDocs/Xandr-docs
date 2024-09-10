@@ -6,13 +6,13 @@ ms.date: 10/28/2023
 ---
 
 
-# Data Science Toolkit - Custom models Pre-Implementation and troubleshooting guide
+# Data Science Toolkit - Custom models pre-implementation and troubleshooting guide
 
 This page describes best practices to prepare for custom model implementation as well as a guide to some common issues that can arise from using custom models.
 
-## Pre-Implementation best practices
+## Pre-implementation best practices
 
-### The purpose of custom models
+### Purpose of custom models
 
 Custom Models are designed for determining how to price impressions, not how to target them. For targeting impressions, you should continue to use the [Targeting](../invest/buy-side-targeting.md) section of the line item set up in  or the [Profile Service](../digital-platform-api/profile-service.md) for targeting via the API. However, the targeting on the line item needs to match the features in the custom model​. A discrepancy between the two can result in limited delivery on a line.
 
@@ -24,12 +24,12 @@ Custom Models are designed for determining how to price impressions, not how to 
 - Label leaves to report on [Log-level data](../log-level-data/log-level-data-feeds.md). This will help you accurately work out how you have bid.
 - If you want to not bid in certain situations, use a bid value or multiplier of "no_bid" not "0".
 
-### Dealing with capacity
+### Deal with capacity
 
 - Update your old model instead of creating a new model every few minutes.​
 - Have a script that periodically deletes unused models
 
-### Using log-level data
+### Use log-level data
 
 In order to use custom models successfully, you must update the models based on performance. This can be done with two log-level data feeds:
 
@@ -42,7 +42,7 @@ You can also collect data from the log-level data feeds listed [here](../log-le
 
 Follow these troubleshooting steps if a line item is not delivering the expected results and has a custom model attached:
 
-### Step 1: Determine if the custom model is the issue
+### Step 1: Determine if custom model is the issue
 
 If a line item is not delivering as expected it is possible the attached custom model is causing the issue. We recommend that prior to troubleshooting the custom model that uses confirm that the line item set up is not causing the delivery issue. Some general items to check on the line item and its parent objects are:
 
@@ -54,7 +54,7 @@ For additional information on troubleshooting your augmented line item please se
 
 If troubleshooting the line item does not resolve the performance issues continue with the steps below to troubleshoot the custom model.
 
-### Step 2. Check if the line item is eligible to bid
+### Step 2. Check if line item is eligible to bid
 
 Custom models can prevent a line item from spending if the features used to determine how much to bid are excluded by the line item's targeting. Some examples of this occurrence are:
 

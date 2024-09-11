@@ -13,7 +13,7 @@ Decision trees work well for simple discrete models that map into traditional ta
 
 Logistic regression is the basic approach to predict the probability of a binary response (click or don't click; buy or don't buy) from a combination of multiple signals. By utilizing logistic regression data scientists can run more expressive models that produce more accurate predictions and that can be quickly trained at a high scale. By building tailored algorithms, clients with sophisticated data science tools can achieve better performance than the built-in optimization provided by Xandr and can run complex offline models in real-time.
 
-## The formula for logistic regression
+## Formula for logistic regression
 
 Logistic regression is a classification algorithm. It is used to predict a binary outcome (such as will click, will not click) based on a set of independent variables.
 
@@ -133,7 +133,7 @@ We would get an equation with the following weighting:
 
 In order to define the mapping from categorical feature to weight, Xandr uses API calls to create and update lookup tables. The logistic regression model itself will refer to these tables and not to a vector of one-hot encoded variables. The model may also directly refer to cardinal or real values, including segment age, segment value, and frequency or recency information for an advertiser, a creative, or a line item.
 
-## Sample workflow
+## Sample process overview
 
 Let's use the information from above to create a sample workflow.
 

@@ -161,7 +161,7 @@ else:
     creative_macros["TestMacro"]: "yourvaluegoeshere"
 ```
 
-### Step 3. Upload the custom model
+### Step 3. Upload custom model
 
 In this example, we upload the custom model.
 
@@ -207,7 +207,7 @@ $ curl -b cookies -X POST -d @custom-model "https://api.appnexus.com/custom-mode
 
 For more information, see [Custom Model Service](./custom-model-service.md).
 
-### Step 4. Associate the custom model with the line item
+### Step 4. Associate custom model with line item
 
 In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to 'nonvaluation'.
 

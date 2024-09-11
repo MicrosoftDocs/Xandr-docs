@@ -1,6 +1,6 @@
 ---
 title: Data Science Toolkit - Incrementality and Xandr
-description: In this page, Learn what is incrementality and how Xandr offers clients with data science capabilities, like the ability to measure incrementality. 
+description: In this page, learn what is incrementality and how Xandr offers clients with data science capabilities, like the ability to measure incrementality. 
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
@@ -8,9 +8,7 @@ ms.date: 10/28/2023
 
 # Data Science Toolkit  - Incrementality and Xandr
 
-## Measuring incrementality
-
-### How is Incrementality measured?
+## Measure incrementality
 
 The basic idea behind measuring incrementality is to split users into test and control groups and only show ads to users in the test group. The goal is to see if the users in the test group spend more money on the advertiser's products than the users who were not exposed to ads.
 
@@ -24,7 +22,7 @@ There are several options for control group testing, each comes with varying cos
 - **Holdout Group**  - Another way is to arbitrarily create a first-party data audience group, which you will negatively target in your line item settings and use as your control group. Though not costing any money this option will likely not lead to very accurate results. Excluding the control group will prevent the return of any bid request information, such as domain or device, which means it might be difficult to ensure that your Test & Control Groups are statistically similar.
 - **Ghost Bidding** - An improved approach is to not serve an ad to the user but log that we could have served an ad to them. Analysis can then be performed on the resulting data set. This is the best and the most accurate approach that will allow your Data Science team to design a clean test and does not require wasting a percentage of your budget on PSA Banners.
 
-### Xandr ghost bidding and the incrementality feed
+### Xandr ghost bidding and incrementality feed
 
 Xandr offers clients with data science capabilities the ability to measure incrementality. We provide the mechanism in Invest to split an audience into a test group (the group exposed to ads) and a control group (the group not exposed to ads). The test uses the same targeting and bidding approach for each group. This enables advertisers t analyze the revenue driven by users from each group to determine incremental lift from users exposed to ads. We provide the necessary data in a Log-Level Incrementality feed that logs DSP auctions won by each of the audience groups. In the case of the control groups, the “winning” bid is pulled from the auction so that the audience is not exposed to the ad. The feed contains one row per impression.
 
@@ -39,7 +37,7 @@ This is the default method. Xandr splits the target audience into test and cont
 > [!NOTE]
 > Setting the same key on different line items means that the same test and control groups will be used for these line items.
 
-### How to set up a line item for incrementality?
+### Set up a line item for incrementality
 
 1. Go to  **Line Item \> Basic Setup \> Incrementality** and select **“Use control group”**.
 1. Assign a key and a percentage of users to assign to the control group.
@@ -60,7 +58,7 @@ You can also choose to create your own grouping of test and control users using 
 
 For additional information on working with Segment Values see [Batch Segment Service](../bidders/bss-avro-file-format.md).
 
-**Why custom groupings are beneficial:**
+**Why custom groupings are beneficial?**
 
 - You have your own subset of the Xandr total audience pool and want to have more oversight into how the test and control groups are split.
 - You have insights about how Xandr cookie IDs map to individual consumers. If Xandr is unaware of this mapping when determining which users end up in test/control, we will contaminate your measurement with cookies that cross from test/control that should be aligned to a mapped consumer.
@@ -71,15 +69,15 @@ For additional information on working with Segment Values see [Batch Segment Ser
 
 Ensure you are starting with a well-framed hypothesis. The testing of incrementality should be done to answer a hypothesis on incremental lift for a specific campaign. A hypothesis that is too general will not provide adequate test results and not enable you to have actionable responses to those results.  
 
-### Minimizing contamination
+### Minimize contamination
 
 Contamination can be defined as a situation where users in the control group are unintentionally exposed to advertising. Minimizing contamination is crucial for a clean test. When you are designing your test, consider the following to help minimize contamination:
 
-### Ensure the control group is not exposed to external buyers or DSPs running a similar campaign
+### Ensure control group is not exposed to external buyers or DSPs running a similar campaign
 
 It is important to ensure that users that are assigned to the control group in our platform are not exposed to ads from external buyers, or other DSPs running the same campaign.
 
-### How to mitigate?
+**How to mitigate?**
 
 - The ideal scenario is to ensure that Xandr is the only DSP running a particular campaign. It is important to think about this during your test planning and control group setup.
 - If it is not possible to isolate users in the control group then consider geofencing your campaign. To do this, run your campaign exclusively on Xandr in certain geographical locations, while other buyers/DSPs on the plan target a different region. For example, if the campaign is to run in the United States, give Xandr exclusivity in certain states and have other buyers/DSPs run in the remaining states.
@@ -90,7 +88,7 @@ It is important to ensure that users that are assigned to the control group in o
 
 It is likely that the marketing budget for a campaign will not be isolated to programmatic activity and there will be other channels, such as television, radio, search, or others being utilized for the particular campaign. In this situation, incrementality is the measurement of the impact for the campaign you are testing, in the context of all related advertising. The resulting lift will be smaller but your analysis will present a real-world measurement.
 
-### How to mitigate?
+**How to mitigate?**
 
 Ensure that the "background" advertising is the same for the test and control groups.
 
@@ -98,7 +96,7 @@ Ensure that the "background" advertising is the same for the test and control gr
 
 If your campaign has multiple line items, for example, one for prospecting and another for retargeting, it is important to ensure that there is no cross-contamination between them.
 
-### How to mitigate?
+**How to mitigate?**
 
 Setting the same key across all of your line items in the test will ensure that they all use the same user segmentation, making it impossible for one line item to target control group users from a different line item.
 
@@ -112,7 +110,7 @@ It is important to note that the default, randomized user segmentation does not 
 - Apply your own cross-device graph retrospectively, when cleaning up the data.
 - You can also limit the test to just one device type and assume that one person would typically only own one device of the same type. This is the most intrusive way and will likely have an impact on campaign performance.
 
-### Effectively comparing test and control groups
+### Effectively compare test and control groups
 
 In ghost bidding, the randomization of users into test and control groups, either by the client or by Xandr, happens offline before bids are submitted. This means that not all of the test users will be exposed to an ad and the portion of users exposed to an ad in the test group are subject to a win bias.
 
@@ -132,7 +130,7 @@ The test group can now be thought of as being split into two subsets, exposed an
 
 For example, it is likely that a user in the Test Group (Not Exposed) might be highly valuable to other buyers. This means that the win bias could produce a negative lift measurement if not considered carefully.
 
-### How to ensure that the test and control groups you compare are statistically similar?
+### Ensure that test and control groups you compare are statistically similar
 
 We generally recommend doing the following to ensure that the Test & Control Groups that you are comparing are statistically similar. Keep in mind how you make your groups statistically similar will likely depend on your hypothesis, the goals you're trying to achieve, and your data science team's approach:
 
@@ -198,7 +196,7 @@ The sample size required for acceptance/rejection of the null hypothesis for KPI
 - Desired power β.
 - Type of the test: [one-tailed or two-tailed test](https://stats.oarc.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/).
 
-### Setting the control group percentage
+### Set control group percentage
 
 The control group percentage, whether it is set through the Line Item settings in Microsoft Invest or the platform's API, cannot exceed 20 percent.  We recommend a percentage between 10 and 20 for best results.
 
@@ -212,7 +210,7 @@ Since the control group users bids are pulled and they never served ads, [freque
 
 :::image type="content" source="./media/datascience-g.png" alt-text="Diagram of how the Cadence Modifier impacts Bid Value.":::
 
-### How to mitigate?
+**How to mitigate?**
 
 - Use Custom Models to override the Cadence Modifier and set it to one. This will ensure the same bidding behavior for both test and control groups.
 - Use a flat bid for your test and optimize manually.

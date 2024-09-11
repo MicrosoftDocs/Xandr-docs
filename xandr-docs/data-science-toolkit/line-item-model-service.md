@@ -3,7 +3,6 @@ title: Data Science Toolkit - Line Item Model Service
 description: Learn how Line Item Model service provides distinction between client uploaded models and Xandr generated models, and why this distinction is important.
 ms.custom: data-science
 ms.date: 10/28/2023
-
 ---
 
 # Data Science Toolkit - Line item model service

@@ -5,7 +5,7 @@ ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
-# Data Science Toolkit - The Bonsai language
+# Data Science Toolkit - Bonsai language
 
 The Bonsai language is designed to write decision tree logic for custom predictive models. This page explains the syntax and core semantics of the Bonsai Language. For additional reference, we've also provided the full grammar
 in Backus-Naur Form notation.

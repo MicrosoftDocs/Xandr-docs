@@ -13,7 +13,7 @@ The Log-Level Custom Model Feed gives you specific information on models associ
 
 The columns below are listed in the same order in which they appear in the log-level feed file (top to bottom here, left to right in the file).
 
-## Integer Key
+## Integer key
 
 - tinyint = 1 byte (8 bit)
 - smallint = 2 byte (16 bit)

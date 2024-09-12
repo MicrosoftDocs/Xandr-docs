@@ -131,7 +131,7 @@ Specifies information about an external user to whom the ads will be shown.
 
 ### Pass universal IDs in Monetize
 
-You can pass a universal ID to Monetize through AST.js using one of two methods: the **mapped identifier method** (older) or the **extendedIDs method** (newer).
+You can pass a universal ID to Monetize through AST.js using one of two methods: the **mapped identifier method** (older) or the **`extendedIDs` method** (newer).
 
 #### Mapped identifier method
 
@@ -147,9 +147,9 @@ This method allows you to pass a limited number of Universal IDs. The list of su
 }
 ```
 
-#### Extended IDs method
+#### `ExtendedIDs` method
 
-The extendedIDs method is more flexible and supports all Universal IDs and Publisher Provided Identifiers (PPIDs). Use this method to pass identifiers dynamically.
+The `extendedIDs` method is more flexible and supports all [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md) and Publisher Provided Identifiers (PPIDs). Use this method to pass identifiers dynamically.
 
 **Example JSON**
 
@@ -170,12 +170,12 @@ In this example:
 - `source`is the domain or provider that manages the Universal ID.
 - `id`is the identifier provided by the source.
 
-The extended ID method is recommended for all current and future Universal ID formats. It offers flexibility for publishers who want to handle various first-party ID solutions.
+The `extendedID` method is recommended for all current and future Universal ID formats. It offers flexibility for publishers who want to handle various first-party ID solutions.
 
 #### Choose the right method
 
 - Use the mapped identifier method only if your Universal ID is supported by the legacy AST.js mapping.
-- Use the extended ID method for broader compatibility and future-proofing.
+- Use the `extendedID` method for broader compatibility and future-proofing.
 
 > [!NOTE]
 > You can plan your migration to the `extendedIDs` method to ensure compatibility with all current and future identity solutions.

@@ -21,7 +21,6 @@ Planner supports real-time data provider segments from the Microsoft Advertising
 
 - comScore
 - IAS
-- Grapeshot
 - DoubleVerify
 - Peer39
 - Adloox

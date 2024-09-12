@@ -44,7 +44,6 @@ The following tracking events are supported:
   > [!NOTE]
   > The more segment pixels that you add to a creative will result in more latency for end users.
 
-- **[Moat Video Viewability Measurement](moat-video-viewability-measurement.md)**: You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**).
 - **AdChoices**: You can append the AdChoices icon to your creatives, giving your audience control over how information about their interests is used for relevant advertising.
 
   > [!NOTE]

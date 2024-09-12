@@ -14,7 +14,7 @@ This page describes how, when, and for how long reporting data is or becomes ava
 
 ## Data processing
 
-Reporting data is generally available in the UI and API within two hours of the close of a given hour. All data in a given hour is aggregated across the entire platform at once. Therefore, timing for nearly all reports is not specific to certain objects or fields. However, a few reports run on different schedules.
+Reporting data is typically available in the UI and API within 3 to 4 hours for hourly aggregated reports, and within 6 hours after midnight UTC for daily reports. All data for a given hour is aggregated across the entire platform at once, so timing for most reports isn't specific to certain objects or fields. However, a few reports follow different schedules.
 
 ## Events (clicks, conversions, video completions)
 

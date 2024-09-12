@@ -133,7 +133,7 @@ Specifies information about an external user to whom the ads will be shown.
 
 You can pass a universal ID to Monetize through AST.js using one of two methods: the **mapped identifier method** (older) or the **extendedIDs method** (newer).
 
-#### Mapped identifier method (Older)
+#### Mapped identifier method
 
 This method allows you to pass a limited number of Universal IDs. The list of supported IDs is hardcoded in the `AST.js` code. Use this method when the Universal ID is among the supported types.
 
@@ -147,7 +147,7 @@ This method allows you to pass a limited number of Universal IDs. The list of su
 }
 ```
 
-#### Extended IDs method (newer)
+#### Extended IDs method
 
 The extendedIDs method is more flexible and supports all Universal IDs and Publisher Provided Identifiers (PPIDs). Use this method to pass identifiers dynamically.
 

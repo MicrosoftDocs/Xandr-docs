@@ -127,7 +127,58 @@ Specifies information about an external user to whom the ads will be shown.
 | `id` | string | The cookie or platform native identifier |
 | `type` | string | The source value of the provider that provides the included ID. Supported identity solutions:<br> - `criteo`: criteo's identity solution.<br> - `liveramp`: Liveramp's identity solution.<br> - `netid`: european cross-device enabled advertising identifier.<br> - `ttd`: the trade desk 1.0 identity solution.<br> - `uid2`: uid2 identity solution. |
 | `extendedIDs` | type | The publisher defined first party IDs. |
-| `eids` | array of objects | The eids value is only compliant with the extendedID type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
+| `eids` | array of objects | The eids value is only compliant with the extendedIDs type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
+
+### Pass universal IDs in Monetize
+
+You can pass a universal ID to Monetize through `AST.js` using one of two methods: the **mapped identifier method** (older) or the **`extendedIDs` method** (newer).
+
+#### Mapped identifier method
+
+This method allows you to pass a limited number of [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md). The list of supported IDs is hardcoded in the `AST.js` code. Use this method when the [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md) is among the supported types.
+
+**Example JSON**
+
+```
+
+{
+  "type": "liveramp",
+  "id": "0d7e95c7-4783-4278-acf9-99809d0c5a61"
+}
+```
+
+#### `ExtendedIDs` method
+
+The `extendedIDs` method is more flexible and supports all [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md) and Publisher Provided Identifiers (PPIDs). Use this method to pass identifiers dynamically.
+
+**Example JSON**
+
+```
+{
+  "type": "extendedIDs",
+  "eids": [
+    {
+      "source": "liveramp.com",
+      "id": "2d7e95c7-4783-4278-acf9-99809d0c5a62"
+    }
+  ]
+}
+```
+
+In this example:
+
+- `source`is the domain or provider that manages the Universal ID.
+- `id`is the identifier provided by the source.
+
+The `extendedIDs` method is recommended for all current and future [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md) formats. It offers flexibility for publishers who want to handle various first-party ID solutions.
+
+#### Choose the right method
+
+- Use the mapped identifier method only if your Universal ID is supported by the legacy `AST.js` mapping.
+- Use the `extendedIDs` method for broader compatibility and future-proofing.
+
+> [!NOTE]
+> You can plan your migration to the `extendedIDs` method to ensure compatibility with all current and future identity solutions.
 
 ### Device object
 

@@ -12,9 +12,9 @@ creatives simultaneously.
 
 Feel free to leverage the following spreadsheet templates:
 
-- [Microsoft Advertising Third-Party Creative Template](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2F6%2Ff%2F7%2F6f755603-e9af-4148-9e52-02e1fb7262b0%2FMicrosoft Advertising%2Fxandr-generic-template-third-party.xlsx&wdOrigin=BROWSELINK)
-- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/xandr-generic-template-hosted.xlsx)
-- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Microsoft Advertising/xandr-generic-template-native.xlsx)
+- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-third-party.xlsx)
+- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-hosted.xlsx)
+- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-native.xlsx)
 
 > [!NOTE]
 > Only XLS and XLSX file formats are supported with a file size limit of 8 MB.

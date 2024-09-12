@@ -144,6 +144,6 @@ viewability script where applicable and the VAST only version of the creative wh
 
 Viewability measurement is included in the [Advertiser Video Analytics Report](advertiser-video-analytics-report.md) and [Member Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual tag/placement or site domain. This enables clients to update targeting to either include or exclude high or poor performing placements.
 
-**How does Microsoft Advertising viewability compare with other third party viewability vendors such as MOAT, Integral Ad Science, and DoubleVerify?**
+**How does Microsoft Advertising viewability compare with other third party viewability vendors such as Integral Ad Science, and DoubleVerify?**
 
 The Microsoft Advertising viewability measurement aligns closely with third party vendors and should be used as a helpful proxy to help optimize for higher viewability.

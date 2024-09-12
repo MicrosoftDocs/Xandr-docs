@@ -414,7 +414,7 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
 
 - Control the placement and the content that surrounds your ad with a high impact unit available for both native display and video.
 - Ad Adjacency - Create a buffer between your ad placement and any other sponsored placement, surrounding your brand message by high, organic content.
-- Taboola maintains partnerships and integration with IAS, supporting MOAT and DoubleVerify.
+- Taboola maintains partnerships and integration with IAS, supporting DoubleVerify.
 
 **Native creative best practices**
 

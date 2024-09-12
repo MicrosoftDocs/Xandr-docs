@@ -129,20 +129,15 @@ Specifies information about an external user to whom the ads will be shown.
 | `extendedIDs` | type | The publisher defined first party IDs. |
 | `eids` | array of objects | The eids value is only compliant with the extendedID type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
 
-### Passing Universal IDs in Monetize
+### Pass Universal IDs in Monetize
 
-When passing a Universal ID to Monetize via AST.js, publishers can use one of two methods:
-
-1. **Mapped identifier method** (older)
-1. **ExtendedID method** (newer)
-
-Below are details for both methods:
+You can pass a Universal ID to Monetize via AST.js using one of two methods: the **mapped identifier method** (older) or the **extendedIDs method** (newer).
 
 #### Mapped identifier method (Older)
 
-This method allows passing a limited number of Universal IDs. The list of supported IDs is hardcoded in the AST.js code. It is suitable for cases where the Universal ID is among the supported types.
+This method allows you to pass a limited number of Universal IDs. The list of supported IDs is hardcoded in the `AST.js` code. Use this method when the Universal ID is among the supported types.
 
-**JSON Format Example**
+**JSON format Example**
 
 ```
 
@@ -152,9 +147,9 @@ This method allows passing a limited number of Universal IDs. The list of suppor
 }
 ```
 
-##### ExtendedIDs Method (newer)
+#### Extended IDs method (newer)
 
-This method offers more flexibility and supports all Universal IDs and PPIDs (Publisher Provided Identifiers). Instead of mapping identifiers directly in the AST.js code, publishers can pass them dynamically in the extendedIDs object.
+The extendedIDs method is more flexible and supports all Universal IDs and Publisher Provided Identifiers (PPIDs). Use this method to pass identifiers dynamically.
 
 **JSON format example**
 
@@ -170,17 +165,17 @@ This method offers more flexibility and supports all Universal IDs and PPIDs (Pu
 }
 ```
 
-In the above example:
+In this example:
 
-- **source**: The domain or source value of the provider handling the Universal ID.
-- **id**: The identifier assigned by the provider.
+- `source`is the domain or provider that manages the Universal ID.
+- `id`is the identifier provided by the source.
 
-The `extendedIDs` method is the recommended approach as it supports all current and future Universal ID formats and offers flexibility for publishers who want to handle various first-party ID solutions.
+The extended ID method is recommended for all current and future Universal ID formats. It offers flexibility for publishers who want to handle various first-party ID solutions.
 
-#### Choosing between methods
+#### Choose the right method
 
-- **Mapped Identifier Method**: Use this method only if your Universal ID is supported by the legacy AST.js mapping. Its support is limited, and it is being phased out.
-- **ExtendedIDs Method**: This is the preferred method for all Universal IDs, offering broader compatibility and flexibility.
+- Use the mapped identifier method only if your Universal ID is supported by the legacy AST.js mapping.
+- Use the extended ID method for broader compatibility and future-proofing.
 
 > [!NOTE]
 > You can plan your migration to the `extendedIDs` method to ensure compatibility with all current and future identity solutions.

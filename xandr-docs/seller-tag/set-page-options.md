@@ -131,7 +131,7 @@ Specifies information about an external user to whom the ads will be shown.
 
 ### Pass Universal IDs in Monetize
 
-You can pass a Universal ID to Monetize via AST.js using one of two methods: the **mapped identifier method** (older) or the **extendedIDs method** (newer).
+You can pass a universal ID to Monetize through AST.js using one of two methods: the **mapped identifier method** (older) or the **extendedIDs method** (newer).
 
 #### Mapped identifier method (Older)
 

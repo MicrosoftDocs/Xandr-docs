@@ -55,7 +55,6 @@ Yes, reach metrics are currently supported for both types of segments. A limited
 
 - Peer39
 - comScore
-- Grapeshot
 - DoubleVerify
 - Integral Ad Science
 - Adloox
@@ -89,8 +88,6 @@ It depends on the brand safety segment provider whether you should be targeting 
 | **Double Verify** | Authentic Brand Safety = **Include** ![Check mark.](media/check.png) | AND |
 | **Double Verify** | Standard Brand Safety = **Include** ![Check mark.](media/check.png) | AND |
 | **IAS** | **Include** ![Check mark.](media/check.png) | AND |
-| **Grapeshot/Oracle Contextual** | **Exclude** ![Exclude mark.](media/exclude.png) | AND/OR |
-| **Grapeshot/Oracle Contextual** | **Include** ![Check mark.](media/check.png) | AND/OR |
 | **GumGum** | **Exclude** ![Exclude mark.](media/exclude.png) | OR |
 | **ComScore** | "Brand Suitability” and “Fact Check” = **Exclude** ![Exclude mark.](media/exclude.png) | AND |
 | **ComScore** | Brand Protection Safe from” and “Content Ratings” = **Include** ![Check mark.](media/check.png) | AND |

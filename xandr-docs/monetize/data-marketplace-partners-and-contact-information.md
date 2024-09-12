@@ -45,7 +45,6 @@ The data marketplace contains the data of a large number of partners which suppo
 | Foursquare | [https://foursquare.com/](https://foursquare.com/) |
 | Goldfish Ads | [https://www.goldfishads.com/](https://www.goldfishads.com/) |
 | Gourmet Ads & Healthy Ads | [https://www.gourmetads.com/](https://www.gourmetads.com/) |
-| Grapeshot | See Oracle row in this table |
 | GumGum Verity | [https://gumgum.com/](https://gumgum.com/) |
 | Hybrid Theory Global LTD (Azerion) | [https://www.azerion.com/](https://www.azerion.com/) |
 | hyScore.io GmbH | [https://hyscore.io/](https://hyscore.io/) |
@@ -64,7 +63,6 @@ The data marketplace contains the data of a large number of partners which suppo
 | Nano Interactive | [https://www.nanointeractive.com/](https://www.nanointeractive.com/) |
 | Navegg | [https://www.navegg.com/en](https://www.navegg.com/en) |
 | Nielsen Marketing Cloud (eXelate) | [https://www.nielsen.com/](https://www.nielsen.com/) |
-| Oracle Data Cloud (BlueKai, Datalogix, AddThis, Crosswise, MOAT, & Grapeshot) | [https://www.oracle.com/cx/advertising/what-is-data-cloud/](https://www.oracle.com/cx/advertising/what-is-data-cloud/) |
 | owner IQ | [https://www.owneriq.com/](https://www.owneriq.com/) |
 | OnAudience Ltd. | [https://www.onaudience.com/](https://www.onaudience.com/) |
 | OS Data Solutions | [https://osdatasolutions.de](https://osdatasolutions.de)/ |

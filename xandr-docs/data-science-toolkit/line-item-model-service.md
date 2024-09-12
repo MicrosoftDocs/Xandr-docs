@@ -18,7 +18,7 @@ The Line Item Model service is used to associate custom models to the custom m
 
 ### End points
 
-- **Domain**: [https://api.appnexus.com](https://api.appnexus.com/)
+- **Domain**: `https://api.appnexus.com/`
 - **Path**: `/line-item-model`
 
 ### Authentication

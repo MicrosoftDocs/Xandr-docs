@@ -31,7 +31,7 @@ For more information about each option, click its name in the **Option** column.
 
 Reporting modules are accessible to all Microsoft Monetize clients. Key features and caveats include:
 
-- 2-3 hour reporting delay depending on the report (except daily reports which close the following day).
+- Hourly aggregated reports usually have a 3 to 4 hour delay, while daily aggregated reports are typically available within 6 hours after midnight UTC. These times are approximate, so data integrations with the reporting API should be designed to handle potential delays in data availability. Any platform incidents causing data delays will be communicated on the status page.
 - Data aggregation to hourly or daily granularity depending on the report.
 - Lookback windows are limited and vary depending on the fields being analyzed.
 - No auction level impression data.

@@ -129,6 +129,62 @@ Specifies information about an external user to whom the ads will be shown.
 | `extendedIDs` | type | The publisher defined first party IDs. |
 | `eids` | array of objects | The eids value is only compliant with the extendedID type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
 
+### Passing Universal IDs in Monetize
+
+When passing a Universal ID to Monetize via AST.js, publishers can use one of two methods:
+
+1. **Mapped identifier method** (older)
+1. **ExtendedID method** (newer)
+
+Below are details for both methods:
+
+#### Mapped identifier method (Older)
+
+This method allows passing a limited number of Universal IDs. The list of supported IDs is hardcoded in the AST.js code. It is suitable for cases where the Universal ID is among the supported types.
+
+**JSON Format Example**
+
+```
+
+{
+  "type": "liveramp",
+  "id": "0d7e95c7-4783-4278-acf9-99809d0c5a61"
+}
+```
+
+##### ExtendedIDs Method (newer)
+
+This method offers more flexibility and supports all Universal IDs and PPIDs (Publisher Provided Identifiers). Instead of mapping identifiers directly in the AST.js code, publishers can pass them dynamically in the extendedIDs object.
+
+**JSON format example**
+
+```
+{
+  "type": "extendedIDs",
+  "eids": [
+    {
+      "source": "liveramp.com",
+      "id": "2d7e95c7-4783-4278-acf9-99809d0c5a62"
+    }
+  ]
+}
+```
+
+In the above example:
+
+- **source**: The domain or source value of the provider handling the Universal ID.
+- **id**: The identifier assigned by the provider.
+
+The `extendedIDs` method is the recommended approach as it supports all current and future Universal ID formats and offers flexibility for publishers who want to handle various first-party ID solutions.
+
+#### Choosing between methods
+
+- **Mapped Identifier Method**: Use this method only if your Universal ID is supported by the legacy AST.js mapping. Its support is limited, and it is being phased out.
+- **ExtendedIDs Method**: This is the preferred method for all Universal IDs, offering broader compatibility and flexibility.
+
+> [!NOTE]
+> You can plan your migration to the `extendedIDs` method to ensure compatibility with all current and future identity solutions.
+
 ### Device object
 
 Specifies a mobile device on which the ads will be shown.

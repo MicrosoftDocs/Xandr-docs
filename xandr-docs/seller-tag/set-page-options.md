@@ -127,7 +127,7 @@ Specifies information about an external user to whom the ads will be shown.
 | `id` | string | The cookie or platform native identifier |
 | `type` | string | The source value of the provider that provides the included ID. Supported identity solutions:<br> - `criteo`: criteo's identity solution.<br> - `liveramp`: Liveramp's identity solution.<br> - `netid`: european cross-device enabled advertising identifier.<br> - `ttd`: the trade desk 1.0 identity solution.<br> - `uid2`: uid2 identity solution. |
 | `extendedIDs` | type | The publisher defined first party IDs. |
-| `eids` | array of objects | The eids value is only compliant with the extendedID type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
+| `eids` | array of objects | The eids value is only compliant with the extendedIDs type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
 
 ### Pass universal IDs in Monetize
 

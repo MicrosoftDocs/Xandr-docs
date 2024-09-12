@@ -29,7 +29,7 @@ For a quick overview of the pricing terms that go into calculating the fees and 
 
 For more details about pricing terms, review your contract or see [Understanding Your Pricing Terms](understanding-your-pricing-terms.md).
 
-## Give users access to billing information
+## Grant users access to billing information
 
 Only Member-level users can be given access to billing information. To do so: Assign the user the **Financial Observer** role. Note that this grants the user the ability to install apps as well as view billing information. For more details, see [Create a User](create-a-user.md).
 

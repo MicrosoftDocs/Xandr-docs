@@ -4,7 +4,7 @@ description: In this article, learn what a Buyer Bid Error Report is and how you
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buyer bid error report
+# Microsoft Invest - Buyer Bid Error report
 
 The **Buyer Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform. Error Count has been multiplied by 100 to account for the 5% sampling.
 

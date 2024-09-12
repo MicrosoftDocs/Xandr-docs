@@ -129,7 +129,7 @@ Specifies information about an external user to whom the ads will be shown.
 | `extendedIDs` | type | The publisher defined first party IDs. |
 | `eids` | array of objects | The eids value is only compliant with the extendedID type (all other defined types should use the existing id string defined above). The objects inside this eids array have 2 parameters, id and source:<br> - `id`: identical to the existing ID value in its purpose and description. <br> - `source`: the source or technology provider utilized by the publisher to handle the first party ID; generally expressed as a domain. See the example below. |
 
-### Pass Universal IDs in Monetize
+### Pass universal IDs in Monetize
 
 You can pass a universal ID to Monetize through AST.js using one of two methods: the **mapped identifier method** (older) or the **extendedIDs method** (newer).
 
@@ -137,7 +137,7 @@ You can pass a universal ID to Monetize through AST.js using one of two methods:
 
 This method allows you to pass a limited number of Universal IDs. The list of supported IDs is hardcoded in the `AST.js` code. Use this method when the Universal ID is among the supported types.
 
-**JSON format Example**
+**Example JSON**
 
 ```
 
@@ -151,7 +151,7 @@ This method allows you to pass a limited number of Universal IDs. The list of su
 
 The extendedIDs method is more flexible and supports all Universal IDs and Publisher Provided Identifiers (PPIDs). Use this method to pass identifiers dynamically.
 
-**JSON format example**
+**Example JSON**
 
 ```
 {

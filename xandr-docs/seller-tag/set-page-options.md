@@ -170,12 +170,12 @@ In this example:
 - `source`is the domain or provider that manages the Universal ID.
 - `id`is the identifier provided by the source.
 
-The `extendedID` method is recommended for all current and future [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md) formats. It offers flexibility for publishers who want to handle various first-party ID solutions.
+The `extendedIDs` method is recommended for all current and future [Universal IDs](../monetize/universal-id-support-matrix-for-sellers.md) formats. It offers flexibility for publishers who want to handle various first-party ID solutions.
 
 #### Choose the right method
 
 - Use the mapped identifier method only if your Universal ID is supported by the legacy `AST.js` mapping.
-- Use the `extendedID` method for broader compatibility and future-proofing.
+- Use the `extendedIDs` method for broader compatibility and future-proofing.
 
 > [!NOTE]
 > You can plan your migration to the `extendedIDs` method to ensure compatibility with all current and future identity solutions.

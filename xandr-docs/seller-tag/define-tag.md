@@ -207,7 +207,7 @@ Where field marked `required: true` will be required on the bid response object.
 
 `required: <true | false>`
 
-## Example
+## Example 1
 
 ```
 ...
@@ -254,7 +254,7 @@ address: {required: false}
 }
 ```
 
-## Example
+## Example 2
 
 ```
 apntag.defineTag({

@@ -207,6 +207,25 @@ Where field marked `required: true` will be required on the bid response object.
 
 `required: <true | false>`
 
+## Example
+
+```
+...
+    address: {required: false},
+    custom: {
+        data: [{
+            type: 501,
+            required: false
+        }],
+        images: [{
+            type: 505,
+            required: false
+        }]
+    }
+}
+
+```
+
 **Format:**
 
 ```
@@ -306,20 +325,4 @@ apntag.defineTag({
                sandboxAttributes: ['allow-same-origin', 'allow-scripts', 'allow-presentation']
               }
         });
-```
-
-```
-
-    address: {required: false},
-    custom: {
-        data: [{
-            type: 501,
-            required: false
-        }],
-        images: [{
-            type: 505,
-            required: false
-        }]
-    }
-}
 ```

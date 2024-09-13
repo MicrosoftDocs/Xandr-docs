@@ -67,7 +67,7 @@ An array of objects with the following available fields:
 - `required: <true | false>`
 - `max_length: <integer>`
 
-#### images
+#### image
 
 An array of object with the following available fields:
 

@@ -209,26 +209,10 @@ Where field marked `required: true` will be required on the bid response object.
 
 ## Example 1
 
-```
-...
-    address: {required: false},
-    custom: {
-        data: [{
-            type: 501,
-            required: false
-        }],
-        images: [{
-            type: 505,
-            required: false
-        }]
-    }
-}
-
-```
-
 **Format:**
 
 ```
+    
 native: {
 title: {required: true},
 body: {required: false, max_length: 300},
@@ -250,8 +234,20 @@ price: {required: false},
 salePrice: {required: false},
 rating: {required: true},
 phone: {required: false},
-address: {required: false}
+address: {required: false},
+    custom: {
+        data: [{
+            type: 501,
+            required: false
+        }],
+        images: [{
+            type: 505,
+            required: false
+        }]
+    }
 }
+
+
 ```
 
 ## Example 2

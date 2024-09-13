@@ -55,6 +55,28 @@ The parameters listed below can be sent as arguments in the function.
 
 ### Native Ad resources
 
+#### Custom
+
+Can contain two sub-objects named **data** and **images**.  See below for further details on these properties.
+
+#### Data
+
+An array of objects with the following available fields:
+
+- `type: <integer>` note - Must be greater than 500.
+- `required: <true | false>`
+- `max_length: <integer>`
+
+#####Images
+
+An array of object with the following available fields:
+
+- `type: <integer>` - Must be greater than 500
+- `required: <true | false>`
+- `size: {width: <integer>, height: <integer>}`
+- `min_size: {width: <integer>, height: <integer>}`
+- `mimes: [<string>, <string2>, ...]`
+
 #### title
 
 `required: <true | false>`
@@ -285,3 +307,4 @@ apntag.defineTag({
               }
         });
 ```
+

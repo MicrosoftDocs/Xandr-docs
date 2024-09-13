@@ -13,14 +13,14 @@ Using the **Audience Planner** page, you can identify products with overlapping 
 
 By analyzing overlapping impressions, you can compare how impressions are shared between a selected focus product, or set of target attributes and the products that overlap it.
 
-1. On the **Products Dashboard** page, in the Products Tasks panel, click **Analyze Overlaps**. The Audience Planner page appears.
+1. On the **Products Dashboard** page, in the Products Tasks panel, select **Analyze Overlaps**. The Audience Planner page appears.
 
 1. In the **Configuration** panel on the left side of the page, select the criteria for your analysis as follows:
 
       > [!IMPORTANT]
       > By default, the analysis on the right side of the page is refreshed automatically as you select your configuration criteria. To manually update your analysis instead, change the **Update** field from **Automatic** to **Manual**. You will then be prompted to update when you make changes to your configuration.
 
-    - In the **Focus Product or Attribute** fields, click the link for the current selection (e.g., None). In the Focus Product or Attribute dialog that appears, choose either the product you want to analyze (on the **Products** tab), or choose a set of target attributes on which to focus your analysis (on the **Attributes** tab). Click **Update**.
+    - In the **Focus Product or Attribute** fields, select the link for the current selection (e.g., None). In the Focus Product or Attribute dialog that appears, choose either the product you want to analyze (on the **Products** tab), or choose a set of target attributes on which to focus your analysis (on the **Attributes** tab). Select **Update**.
     - In the **Primary Metric** field, select **Overlapping Impressions**.
     - Specify whether you want to show non-overlapping impressions.
       Choose whether you want analysis results to be sorted in ascending or descending order.
@@ -46,7 +46,7 @@ By analyzing overlapping impressions, you can compare how impressions are shared
     > - Overlap as % of Focus = The percentage of overlapping impressions shared by the focus product and comparison product. This is based on the capacity of the focus product.
     > - Overlap as % of Comparison = The percentage of overlapping impressions shared by the focus product and comparison product. This is based on the capacity of the comparison product.
 
-1. To view the analysis in a table instead of the default chart view, above the Configuration panel, click on the list view button. The analysis chart is redisplayed as a product list - with performance metrics for the focus product and each overlapping product.
+1. To view the analysis in a table instead of the default chart view, above the Configuration panel, select the list view button. The analysis chart is redisplayed as a product list - with performance metrics for the focus product and each overlapping product.
 
 ## Analyze overlapping audiences
 
@@ -61,15 +61,15 @@ The image below details how to understand the chart when looking at overlapping 
 >
 > Overlap as a percentage of the comparison product / Overlap as a percentage of the baseline product.
 
-1. On the **Products Dashboard** page, in the Products Tasks panel, click **Analyze Overlaps**. The Audience Planner page appears by default. The product list is filtered to show active rate card products.
+1. On the **Products Dashboard** page, in the Products Tasks panel, select **Analyze Overlaps**. The Audience Planner page appears by default. The product list is filtered to show active rate card products.
 
 1. In the **Configuration** panel on the left side of the page, select the criteria for your analysis as follows:
 
     > [!IMPORTANT]
-    > By default, the analysis on the right side of the page is refreshed automatically as you select your criteria. You can turn off this feature and update your analysis manually by clicking **Automatic** in the **Update** field and selecting **Manual** from the drop-down list that appears.
+    > By default, the analysis on the right side of the page is refreshed automatically as you select your criteria. You can turn off this feature and update your analysis manually by selecting **Automatic** in the **Update** field and selecting **Manual** from the drop-down list that appears.
 
-    - In the **Focus Product or Attribute** field, click the link for the current selection (e.g., None). In the Focus Product or Attribute dialog that appears, choose either the product you want to analyze (on the **Products** tab), or choose a set of target attributes on which to base your analysis (on the **Attributes** tab).
-      Click **Update**.
+    - In the **Focus Product or Attribute** field, select the link for the current selection (e.g., None). In the Focus Product or Attribute dialog that appears, choose either the product you want to analyze (on the **Products** tab), or choose a set of target attributes on which to base your analysis (on the **Attributes** tab).
+      Select **Update**.
     - In the **Primary Metric** field, select **Audience Index**.
     - By default, the baseline for your analysis is the full analyzed network. To use a specific product instead, select one in the **Baseline Product** field.
     - Specify whether you want analysis results to be sorted in ascending or descending order.
@@ -86,7 +86,7 @@ The image below details how to understand the chart when looking at overlapping 
 
 1. To see details on how the audience index for a product in the analysis chart compares to the audience index for the baseline product, mouse over the bar for the product. A tooltip appears.
 
-1. To view the analysis in a table instead of the default chart view, above the Configuration panel, click on the list view button. The analysis chart is redisplayed as a product list with performance metrics for the focus product, and each overlapping product.
+1. To view the analysis in a table instead of the default chart view, above the Configuration panel, select on the list view button. The analysis chart is redisplayed as a product list with performance metrics for the focus product, and each overlapping product.
 
 ## Related topics
 

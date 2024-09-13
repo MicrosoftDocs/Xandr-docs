@@ -5,11 +5,11 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the audience planner page
+# Anatomy of Audience Planner page
 
 The Audience Planner page on the **Products** tab shows an analysis of how products in your network overlap.
 
-## About the audience planner interface
+## About Audience Planner page
 
 The Audience Planner page is comprised of the following four panels:
 
@@ -22,12 +22,12 @@ The Audience Planner page is comprised of the following four panels:
     > [!NOTE]
     > By default, this panel is displayed in a chart view, with each bar in the chart representing an overlapping product based on the primary metric you selected. To see overlapping impressions and audience index values side by side, as well as capacity, availability, sell-through rate, and more for each overlapping product, view the analysis in a table (referred to as list view) by clicking above the Configuration panel. From the list view, you can also check availability based on overlapping products.
 
-- **Product** – This panel, which appears when you click a product in the Analysis panel, shows high-level information about the product. This includes the product type, rate card, status, and targeting characteristics.
+- **Product** – This panel, which appears when you select a product in the Analysis panel, shows high-level information about the product. This includes the product type, rate card, status, and targeting characteristics.
 
     > [!NOTE]
-    > - Change the analysis to focus on the selected product by clicking **Set as Focus**.
-    > - Make the selected product the baseline for audience index analysis by clicking **Set as Baseline**.
-    > - View the full details of the selected product by clicking **Product Visibility**.
+    > - Change the analysis to focus on the selected product by selecting **Set as Focus**.
+    > - Make the selected product the baseline for audience index analysis by selecting **Set as Baseline**.
+    > - View the full details of the selected product by selecting **Product Visibility**.
 
 ## Related topics
 

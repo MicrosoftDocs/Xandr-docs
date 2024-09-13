@@ -1,22 +1,22 @@
 ---
-title: Anatomy of the Forecast Management Page
+title: Anatomy of Forecast Management Page
 description: In this article, learn the layout of the Forecast Management page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the forecast management page
+# Anatomy of Forecast Management page
 
 The Forecast Management page on the **Capacity** tab lists all of your products and the current month's impression capacity forecast. From here, you can view a product's details and access its Forecast Visibility page.
 
-## About the forecast management interface
+## Forecast Management page
 
 There are four sections on the **Forecast Management** page:
 
 - **Configuration panel** – Export the forecast and adjust the time period.
 - **Filter panel** – Add and remove product attributes to limit the Products list.
-- **Products list** – Displays your products, based on the applied filters. Click a specific product to view its details in the **Product detail preview**.
-- **Product detail preview** – This displays a preview of the product selected in the **Products list**. From here you can click the product's name or **View** > **Forecast Visibility** to view the Capacity Forecast.
+- **Products list** – Displays your products, based on the applied filters. Select a specific product to view its details in the **Product detail preview**.
+- **Product detail preview** – This displays a preview of the product selected in the **Products list**. From here you can select the product's name or **View** > **Forecast Visibility** to view the Capacity Forecast.
 
 ## Related topics
 

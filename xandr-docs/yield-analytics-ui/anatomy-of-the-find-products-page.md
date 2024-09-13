@@ -1,15 +1,15 @@
 ---
-title: Anatomy of the Find Products Page
+title: Anatomy of Find Products Page
 description: In this article, learn the layout of the Find Products page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the find products page
+# Anatomy of Find Products page
 
 The Find Products page on the **Products** tab shows a searchable list of products across your network.
 
-## About the find products interface
+## Find Products page
 
 The **Find Products** page consists of two main panels:
 

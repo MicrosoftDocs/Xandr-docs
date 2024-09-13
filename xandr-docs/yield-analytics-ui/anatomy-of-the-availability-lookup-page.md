@@ -5,11 +5,11 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the availability lookup page
+# Anatomy of Availability Lookup page
 
 On the Availability Lookup page on the **Availability** tab, you can search for available inventory using a variety of criteria, including attributes from existing products, attributes from a product group, and custom defined attributes. You can also open saved lookups, save new lookups, and create batches to search for inventory across products and run the lookup in the background.
 
-## About the availability lookup interface
+## About Availability Lookup page
 
 The Availability Lookup page is comprised of the following four panels:
 

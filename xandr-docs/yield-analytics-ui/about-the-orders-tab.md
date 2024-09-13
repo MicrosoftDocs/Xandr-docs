@@ -5,11 +5,11 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# About the orders tab
+# About Orders tab
 
 Use the **Orders** tab to investigate orders and order lines that are underdelivering.
 
-## Using the orders tab
+## Use Orders tab
 
 From the **Orders** tab, you can:
 

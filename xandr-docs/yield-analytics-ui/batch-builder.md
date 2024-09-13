@@ -9,11 +9,11 @@ ms.custom: yield-analytics-ui
 
 The **Batch Builder** allows you to collect multiple lookups that you can then run as a batch. This is particularly useful if you want to run a large number of lookups, or if you want to save and reuse a set of lookups either on a scheduled or ad hoc basis.
 
-## Saving a batch
+## Save a batch
 
 - Open a batch that is already saved. Make any desired changes to it.
-- When you are finished, click **Save**.
-- Clicking this accesses the **Save Batch** screen. This screen has these fields:
+- When you are finished, select **Save**.
+- Selecting this accesses the **Save Batch** screen. This screen has these fields:
   - Save as New (radio button)
   - Replace Existing (radio button)
   - Name (text box)
@@ -21,12 +21,12 @@ The **Batch Builder** allows you to collect multiple lookups that you can then r
   - Description (text box)
   - Permissions (table)
 
-- After making selections, click **Save** to save this batch. Now when you click the **Open** button, you will see this batch.
+- After making selections, select **Save** to save this batch. Now when you select the **Open** button, you will see this batch.
 
-## Opening/sending a batch
+## Open/send a batch
 
-- Click **Open**. Your saved batches are displayed.
-- Click **Send**. This accesses the **Send a Lookup Report** screen. This screen has these fields:
+- Select **Open**. Your saved batches are displayed.
+- Select **Send**. This accesses the **Send a Lookup Report** screen. This screen has these fields:
   - Recurrence (drop-down menu)
   - One-Time (radio button)
     - Immediately
@@ -36,9 +36,9 @@ The **Batch Builder** allows you to collect multiple lookups that you can then r
   - Attachment (drop down menu)
 - Make your selections to schedule and send your batch.
 
-## Running a batch
+## Run a batch
 
-- Clicking **Run** accesses the **Batch Queue**.
+- Selecting **Run** accesses the **Batch Queue**.
 - It clears the batch off the **Batch Builder** screen. It now appears in superscript on the **Batch Queue** tab. (1 item)
 - The batch runs in a queue in the background. You can continue to do other work.
 

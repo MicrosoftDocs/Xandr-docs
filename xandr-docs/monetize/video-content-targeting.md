@@ -4,7 +4,6 @@ description: When a publisher is integrated with video taxonomy, video content c
 ms.date: 10/28/2023
 ---
 
-
 # Video content targeting
 
 For publishers that have adopted video taxonomy and provide Microsoft Advertising with information about the content where ads reside, Deal line items can target video inventory based on criteria such as the genre of the content, content duration, the type of program, and delivery type (live or Video on Demand).

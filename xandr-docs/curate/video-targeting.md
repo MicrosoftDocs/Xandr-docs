@@ -10,13 +10,17 @@ ms.date: 11/14/2023
 
 You can target video inventory based on the playback method, player size, and position.
 
+> [!NOTE]
+> Video content targeting requires content metadata integration. Please contact your Microsoft account manager for enablement. If you are not integrated with video content metadata, values passed in content object fields will not be transmitted to DSP partners.
+
 In the **Viewability & Environment Targeting** section of a line item, click the pencil icon next to **Video Player**.
 
 You can target video creatives in any or all of the following ways:
 
-- [Target video inventory by position](#target-video-inventory-by-position-or-context)
-- [Target video inventory by playback method](#target-video-inventory-by-playback-method)
-- [Target video by player width](#target-video-inventory-by-player-width)
+- [Microsoft Curate - Video targeting](#microsoft-curate---video-targeting)
+  - [Target video inventory by position or context](#target-video-inventory-by-position-or-context)
+  - [Target video inventory by playback method](#target-video-inventory-by-playback-method)
+  - [Target video inventory by player width](#target-video-inventory-by-player-width)
 
 > [!NOTE]
 > You should avoid using both VAST creatives and in-banner or interstitial video creatives within the same video campaign. An in-banner or interstitial video creative will not serve when you target by position. Setting any of the three video targeting parameters (i.e., **Playback Method**, **Player Size**, or **Position**) will restrict inventory to only those that satisfy the specified parameters and thus significantly limit your delivery potential. By default, you will target all playback methods, player sizes and roll positions. However, you can narrow your targeting.

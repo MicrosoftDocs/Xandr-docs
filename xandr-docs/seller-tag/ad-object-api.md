@@ -49,6 +49,12 @@ When source is real-time bidding (rtb), the Ad Object includes the ad; when sour
 
 **Data objects:** Ad Object is the same as for `adAvailable`.
 
+### adCodeRenderStart
+
+**Callback Function Signature:** `function(adObj) {}`
+
+**Data objects:** Ad Object is the same as for `adAvailable`.
+
 ### adNoBid
 
 **Callback Function Signature:** `function(adObj){}`

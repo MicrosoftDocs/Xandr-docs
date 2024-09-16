@@ -4,13 +4,12 @@ description: When a publisher is integrated with video taxonomy, video content c
 ms.date: 10/28/2023
 ---
 
-
 # Video content targeting
 
 For publishers that have adopted video taxonomy and provide Microsoft Advertising with information about the content where ads reside, Deal line items can target video inventory based on criteria such as the genre of the content, content duration, the type of program, and delivery type (live or Video on Demand).
 
 > [!NOTE]
-> This feature is in **Closed Beta**. It is subject to change without notice and is only available to select clients. Please consult your Account Manager if you'd like to be added to the beta test.
+> Video content targeting requires content metadata integration. Please contact your Microsoft account manager for enablement. If you are not integrated with video content metadata, values passed in content object fields will not be transmitted to DSP partners.
 
 If a publisher is integrated with video taxonomy, video content can now be precisely targeted on a deal. Targeting is based on available detail about the specific video content, including the type of programming, the subject matter, the scheduled airtime, and more. In order for Video Content data to be targetable based on this information, the publisher must set up a Video Taxonomy implementation with Microsoft Advertising. If you're a video publisher and would like to implement this functionality, please contact your account manager.
 

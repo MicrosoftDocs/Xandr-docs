@@ -31,6 +31,30 @@ public ANAdResponseInfo getAdResponseInfo()
 | `cpmPublisherCurrency` | Double | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | String | The currency code of the publishers' currency. For example, USD |
 
+> [!NOTE]
+> `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
+>
+> #### Code sample (Objective C)
+>
+> ```
+> //Video Ad
+> AdResponseInfo adResponseInfo = videoAd.getAdResponseInfo()
+> //Native Ad
+> AdResponseInfo adResponseInfo = nativeAdResponse.getAdResponseInfo()
+> //Insterstitial Ad View
+> AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
+> ```
+>
+> #### Code sample (Swift)
+>
+> ```
+> //Video Ad
+> val adResponseInfo = videoAd.adResponseInfo
+> //Native Ad
+> val adResponseInfo = nativeAdResponse.adResponseInfo
+> //Insterstitial Ad View
+> val adResponseInfo = interstitial.adResponseInfo
+> ```
 
 
 ### Code sample
@@ -79,27 +103,4 @@ override fun onAdLoaded(ad: AdView?) {
 }
 ```
 
-> [!NOTE]
-> `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
->
-> #### Code sample (Objective C)
->
-> ```
-> //Video Ad
-> AdResponseInfo adResponseInfo = videoAd.getAdResponseInfo()
-> //Native Ad
-> AdResponseInfo adResponseInfo = nativeAdResponse.getAdResponseInfo()
-> //Insterstitial Ad View
-> AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
-> ```
->
-> #### Code sample (Swift)
->
-> ```
-> //Video Ad
-> val adResponseInfo = videoAd.adResponseInfo
-> //Native Ad
-> val adResponseInfo = nativeAdResponse.adResponseInfo
-> //Insterstitial Ad View
-> val adResponseInfo = interstitial.adResponseInfo
-> ```
+> 

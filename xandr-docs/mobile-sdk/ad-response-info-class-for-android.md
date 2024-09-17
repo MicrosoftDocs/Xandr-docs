@@ -79,11 +79,10 @@ override fun onAdLoaded(ad: AdView?) {
 }
 ```
 
-
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
 >
-> #### [Java](#tab/java1)
+> #### Code sample (Objective C)
 >
 > ```
 > //Video Ad
@@ -94,7 +93,7 @@ override fun onAdLoaded(ad: AdView?) {
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
 > ```
 >
-> #### [Kotlin](#tab/kotlin1)
+> #### Code sample (Swift)
 >
 > ```
 > //Video Ad

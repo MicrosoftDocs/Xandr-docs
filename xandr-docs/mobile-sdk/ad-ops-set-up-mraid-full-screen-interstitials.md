@@ -3,6 +3,7 @@ title: Ad Ops - Set Up MRAID Full Screen Interstitials
 description: In this article, find Ad Ops setup instructions for serving MRAID full screen interstitials on Xandr mobile SDKs.
 ms.custom: android-sdk
 ms.date : 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Ad Ops - Set up MRAID full screen interstitials
@@ -11,7 +12,7 @@ This page has Ad Ops setup instructions for serving MRAID full screen interstiti
 
 For developer-focused interstitial documentation, see [Show Interstitials](show-interstitials-ads-on-ios.md).
 
-## Creative settings
+## Set up Creatives
 
 To set up your MRAID creative, first create a creative and then configure the settings listed below:
 
@@ -36,7 +37,7 @@ Then, in the **Template** tab:
 
 :::image type="content" source="media/ad-ops-set-up-mraid.png" alt-text="A screenshot of the Template tab with the Template Option Details settings.":::
 
-## Placement settings
+## Set up placements
 
 To set up your placement,
 
@@ -45,7 +46,7 @@ To set up your placement,
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 
-## SDK settings
+## Set up ad size
 
 Make sure the SDK is sending the 1x1 ad size on the ad call (it does send this size by default).
 

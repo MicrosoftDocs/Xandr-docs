@@ -3,6 +3,7 @@ title: Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)
 description: In this article, find Ad Ops setup instructions for serving responsive HTML interstitials (non-MRAID) on Xandr mobile SDKs.
 ms.custom: android-sdk
 ms.date : 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Ad Ops - Set up HTML responsive interstitials (non-MRAID)
@@ -11,7 +12,7 @@ This page has Ad Ops setup instructions for serving responsive HTML interstitial
 
 For developer-focused interstitial documentation, see [Show Interstitials](show-interstitials-ads-on-ios.md).
 
-## Creative settings
+## Set up creatives
 
 To set up your creative, follow the general instructions in the UI documentation for adding interstitial creatives and include the following settings:
 
@@ -21,13 +22,13 @@ To set up your creative, follow the general instructions in the UI documentation
 4. Choose a **Media Type** of **Interstitial: Interstitial**.
 5. In the **Template** field, choose **Xandr: Mobile SDK** (ID 38895).
 
-## Placement settings
+## Set up placements
 
 To set up your placement, follow the general instructions under "Create a Placement" in the UI documentation and include the following settings:
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 
-## SDK settings
+## Set up ad size
 
 Make sure the SDK is sending the 1x1 ad size on the ad call (it does send this size by default).
 

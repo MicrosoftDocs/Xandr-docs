@@ -3,6 +3,7 @@ title: Ad Ops - Set Up Static Image Full Screen Interstitials
 description: In this article, find Ad Ops setup instructions for serving static image full-screen interstitials on Xandr mobile SDKs.
 ms.custom: android-sdk
 ms.date : 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Ad Ops - Set up static image full screen interstitials
@@ -11,7 +12,7 @@ This page has Ad Ops setup instructions for serving static image "full-screen" i
 
 For developer-focused interstitial documentation, see [Show Interstitials](show-interstitials-ads-on-ios.md).
 
-## [Creative settings]
+## Set up creatives
 
 To set up your creative, first create a creative and then configure the settings listed below:
 
@@ -22,7 +23,7 @@ To set up your creative, first create a creative and then configure the setting
 
 :::image type="content" source="media/ad-ops-set-up-static-image.png" alt-text="A screenshot of the Template tab with the Template Option Details settings.":::
 
-## Placement settings
+## Set up placements
 
 To set up your placement,
 
@@ -31,7 +32,7 @@ To set up your placement,
 
 In the **Allowed Media** section, select the **Other** button and include the **Interstitial: Interstitial** media type.
 
-## SDK settings
+## Set up SDK
 
 Make sure the SDK is sending the 1x1 ad size on the ad call (it does send this size by default).
 

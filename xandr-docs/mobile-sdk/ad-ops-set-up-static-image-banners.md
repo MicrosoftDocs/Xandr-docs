@@ -3,6 +3,7 @@ title: Ad Ops - Set up Static Image Banners
 description: In this article, find Ad Ops setup instructions for serving banners on Xandr mobile SDKs.
 ms.custom: android-sdk
 ms.date : 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Ad Ops - Set up static image banners
@@ -11,7 +12,7 @@ This page has Ad Ops setup instructions for serving banners on our Xandr [Mobile
 
 For developer-focused banner documentation, see [Show Banners](show-banners-on-ios.md).
 
-## Creative settings
+## Set up creatives
 
 Use the following settings to set up your creative (see “Add Interstitial Creatives” in the UI documentation for more information):
 
@@ -21,7 +22,7 @@ Use the following settings to set up your creative (see “Add Interstitial Crea
 1. Choose a **Media Type of Banner**: **Standard Banner**.
 1. In the **Template** field, choose **AppNexus: Standard**.
 
-## Placement settings
+## Set up placements
 
 Use the following settings to set up your placement (see "Create a Placement" in the UI documentation for more information):
 
@@ -29,7 +30,7 @@ Use the following settings to set up your placement (see "Create a Placement" in
 1. Set the **Media Type** to **Banner**.
 1. Choose a placement size that matches the size of your desired banner ad view in the SDK (as described in the [Show Banners](show-banners-on-ios.md) developer docs).
 
-## SDK settings
+## Set up SDK 
 
 Follow the developer documentation in [Show Banners](show-banners-on-ios.md).
 

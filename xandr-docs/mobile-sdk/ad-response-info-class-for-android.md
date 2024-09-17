@@ -1,15 +1,15 @@
 ---
-title: Ad Response Info Class for Android
+title: adResponseInfo Class for Android
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for Android Mobile SDK.
 ms.custom: android-sdk
 ms.date : 10/28/2023
 ---
 
-# Ad response info class for Android
+# adResponseInfo class for Android
 
 ## Overview
 
-The adResponseInfo class is a convenience class created to hold Universal Tag response properties that are relevant to publishers. When an `AdUnit` is returned from the `loadAd` method without an error, either as a fully defined `adObject` or as a no bid response, an `ANAdResponseInfo` is instantiated as an `adResponseInfo` property of the returned Ad Unit.
+The `adResponseInfo` class is a convenience class created to hold Universal Tag response properties that are relevant to publishers. When an `AdUnit` is returned from the `loadAd` method without an error, either as a fully defined `adObject` or as a no bid response, an `ANAdResponseInfo` is instantiated as an `adResponseInfo` property of the returned Ad Unit.
 
 To retrieve the adResponseInfo object from the ad response:
 
@@ -31,7 +31,9 @@ public ANAdResponseInfo getAdResponseInfo()
 | `cpmPublisherCurrency` | Double | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | String | The currency code of the publishers' currency. For example, USD |
 
-## Code sample (Java)
+## Example
+
+### [Java](#tab/java1)
 
 ```
 // Request Banner Ad
@@ -53,7 +55,7 @@ public void onAdLoaded(AdView bav) {
 }
 ```
 
-## Code sample (Kotlin)
+### [Kotlin](#tab/kotlin1)
 
 ```
 // Request Banner Ad
@@ -78,7 +80,7 @@ override fun onAdLoaded(ad: AdView?) {
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
 >
-> **Code sample (Java)**
+> ### [Java](#tab/java2)
 >
 > ```
 > //Video Ad
@@ -89,7 +91,7 @@ override fun onAdLoaded(ad: AdView?) {
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
 > ```
 >
-> **Code sample (Kotlin)**
+> ### [Kotlin](#tab/kotlin2)
 >
 > ```
 > //Video Ad

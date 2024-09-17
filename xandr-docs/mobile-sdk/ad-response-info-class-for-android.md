@@ -31,9 +31,11 @@ public ANAdResponseInfo getAdResponseInfo()
 | `cpmPublisherCurrency` | Double | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | String | The currency code of the publishers' currency. For example, USD |
 
-## Example
 
-### [Java](#tab/java1)
+
+### Code sample
+
+#### [Java](#tab/java1)
 
 ```
 // Request Banner Ad
@@ -55,7 +57,7 @@ public void onAdLoaded(AdView bav) {
 }
 ```
 
-### [Kotlin](#tab/kotlin1)
+#### [Kotlin](#tab/kotlin1)
 
 ```
 // Request Banner Ad
@@ -77,10 +79,11 @@ override fun onAdLoaded(ad: AdView?) {
 }
 ```
 
+
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
 >
-> ### [Java](#tab/java2)
+> #### [Java](#tab/java1)
 >
 > ```
 > //Video Ad
@@ -91,7 +94,7 @@ override fun onAdLoaded(ad: AdView?) {
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
 > ```
 >
-> ### [Kotlin](#tab/kotlin2)
+> #### [Kotlin](#tab/kotlin1)
 >
 > ```
 > //Video Ad

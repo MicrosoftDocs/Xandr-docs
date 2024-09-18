@@ -36,7 +36,7 @@ Not all impressions are successfully measured, because of one, or more of the fo
 | Viewability Metric | Definition |
 |:---|:---|
 | Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a creative are in-view during 1 consecutive second. |
-| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). |
 
 > [!NOTE]
 > An impression that could not be measured will not have a viewability status.

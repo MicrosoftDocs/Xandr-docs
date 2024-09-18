@@ -247,7 +247,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | Commissions | The total commissions that come out of your booked revenue. Commissions are $0. |
 | Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
 | View-Measured Imps | The total number of impressions that were measured for viewability. |
-| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
+| Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 | Clearing Event Booked Revenue Per Event | The total booked revenue per clearing event. |
 | Clearing Events Booked Revenue CPM | The booked revenue in CPM per event. |

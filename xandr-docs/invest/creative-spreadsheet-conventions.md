@@ -12,17 +12,19 @@ creatives simultaneously.
 
 Feel free to leverage the following spreadsheet templates:
 
-- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-third-party.xlsx)
-- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-hosted.xlsx)
-- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-native.xlsx)
+- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/e8a333c9-76b7-4c88-9068-60733aceb1dd/xandr-generic-template-third-party.xlsx)
+- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/e8a333c9-76b7-4c88-9068-60733aceb1dd/xandr-generic-template-hosted.xlsx)
+- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/e8a333c9-76b7-4c88-9068-60733aceb1dd/xandr-generic-template-native.xlsx)
 
 > [!NOTE]
 > Only XLS and XLSX file formats are supported with a file size limit of 8 MB.
 
 ## Third-Party creatives
 
-When you prepare your Excel files for upload, the following information must be included in your file: creative name, content tag, and secure
-content tag. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
+When you prepare your Excel files for upload, the following information
+must be included in your file: creative name, content tag, and secure
+content tag. For automatic column mappings, follow these column name
+mapping conventions when creating your Excel file:
 
 | Mapping Option | Column Name |
 |---|---|

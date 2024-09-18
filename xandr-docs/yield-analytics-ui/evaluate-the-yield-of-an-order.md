@@ -13,15 +13,15 @@ The following article explais about evaluation and other processes to measure th
 
 Use the **Orders** tab and Evaluate Orders to see how a proposal is expected to deliver and be consumed.
 
-1. On the **Orders** tab, in the **Order Tasks** panel, click **Evaluate Orders**.
+1. On the **Orders** tab, in the **Order Tasks** panel, select **Evaluate Orders**.
 1. Use the **Filters** panel to find the proposal to evaluate:
     - The Time Period filter searches the order's start date.
     - The Order, Order Status, Advertiser, Agency, Industry, and Salesperson filters search parameters imported from your order management system.
     - The Flags filter searches for orders that have pricing (! Price) or availability (! Avails) flags.
-1. Click on the order in the **Orders** panel list to select it. A preview of the order appears in the **Order details** panel below.
-1. In the **Order details** panel, click the name of the order to open it in **Evaluate Orders**, or click **View** and select **Evaluate Orders**.
+1. Select on the order in the **Orders** panel list to select it. A preview of the order appears in the **Order details** panel below.
+1. In the **Order details** panel, select the name of the order to open it in **Evaluate Orders**, or select **View** and select **Evaluate Orders**.
 1. In the **Key Metrics** panel of the **Order Analytics** tab of the **Evaluate Orders** page, view the bar charts to compare the selected order to all other orders, making any additional changes:
-    1. Change the comparison basis by clicking **All Customers** and selecting one of the following four values:
+    1. Change the comparison basis by selecting **All Customers** and selecting one of the following four values:
         - All Customers
         - This Industry
         - This Agency
@@ -30,19 +30,19 @@ Use the **Orders** tab and Evaluate Orders to see how a proposal is expected
 1. On the **Order Composition** panel, view the two pie charts:
     - The Contracted Revenue by Pricing Type chart shows how much of the order's revenue is associated with CPM vs. CPD placements.
     - The Contracted Revenue by Contract Type pie chart shows how much of the order's revenue is associated with standard placements vs. sponsorships.
-1. Click the **Order Lines** tab to evaluate order lines in the focus order. This uses filters to find specific order lines, and flags to highlight pricing or availability issues.
+1. Select the **Order Lines** tab to evaluate order lines in the focus order. This uses filters to find specific order lines, and flags to highlight pricing or availability issues.
 
 ## Add a proposal to a scenario
 
 You can add a proposal or an order to Scenario Manager to better understand how it impacts other orders.
 
-1. On the **Orders** tab, in the **Order Tasks** panel, click **Evaluate Orders**.
-1. In the **Evaluate Orders Search** page, in the **Orders** panel, click on the order.
-1. In the **Order preview** panel, click the order's name to open it in **Evaluate Orders**.
-1. Click **Add to Scenario** at the top of the page. The order is added to a scenario.
+1. On the **Orders** tab, in the **Order Tasks** panel, select **Evaluate Orders**.
+1. In the **Evaluate Orders Search** page, in the **Orders** panel, select on the order.
+1. In the **Order preview** panel, select the order's name to open it in **Evaluate Orders**.
+1. Select **Add to Scenario** at the top of the page. The order is added to a scenario.
 1. Go to **Scenario Manager** to run the scenario.
 
-## Using alternative products to solve pricing/availability issues
+## Use alternative products to solve pricing/availability issues
 
 Alternative products are available in Evaluate Orders to help resolve ! Price and ! Avails flags.
 
@@ -56,15 +56,15 @@ The score for an alternate product indicates how closely it's related to the o
 
 ### View alternate products
 
-In the **Product Details** panel, click the **Alternate Products** tab.
+In the **Product Details** panel, select the **Alternate Products** tab.
 
 ### Add an alternate product to a proposal
 
-1. Click the **Add** button to the left of the product's name. A new order line with the selected product is created at the top of the **Order Line Listing** above the **Product Details**.
+1. Select the **Add** button to the left of the product's name. A new order line with the selected product is created at the top of the **Order Line Listing** above the **Product Details**.
 1. Enter or change the order line parameters (e.g., Start date, End date, Imps) as needed.
-1. Click **Update**.
+1. Select **Update**.
 
-To remove the order line, click **Edit** and clear the **Included** checkbox.
+To remove the order line, select **Edit** and clear the **Included** checkbox.
 
 ## Flags in evaluate orders
 

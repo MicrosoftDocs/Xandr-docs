@@ -11,10 +11,10 @@ If you have administrative permissions, you can remove the scheduling from saved
 
 This option is available only when a saved lookup has been scheduled.
 
-1. On the **Admin Tools** menu, click **View Saved Lookups**. The **View Saved Lookups** page appears, displaying a list of all saved availability lookups.
+1. On the **Admin Tools** menu, select **View Saved Lookups**. The **View Saved Lookups** page appears, displaying a list of all saved availability lookups.
 1. (Optional) Search for the saved lookup using the search toolbar.
-1. Click and select **Remove Scheduling**.
-1. Click **Remove** to confirm the removal.
+1. Select **Remove Scheduling**.
+1. Select **Remove** to confirm the removal.
 
 ## Related topics
 

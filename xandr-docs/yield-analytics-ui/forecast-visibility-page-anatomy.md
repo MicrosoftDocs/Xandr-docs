@@ -5,15 +5,15 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of forecast visibility page
+# Anatomy of Forecast Visibility page
 
-The Forecast Visibility page on the **Capacity** tab shows a forecast of how a product's impressions will be consumed. It's displayed when you click a product in the **Impression Capacity** widget, or when you select a product on the **Forecast Management** page and select **View** > **Forecast Visibility**.
+The Forecast Visibility page on the **Capacity** tab shows a forecast of how a product's impressions will be consumed. It's displayed when you select a product in the **Impression Capacity** widget, or when you select a product on the **Forecast Management** page and select **View** > **Forecast Visibility**.
 
-## Forecast visibility interface
+## Forecast Visibility interface
 
 There are four sections on the **Forecast Visibility** page:
 
-- **Product Detail** – Displays the product that's being forecasted. Click **Show Product Details** to view additional information.
+- **Product Detail** – Displays the product that's being forecasted. Select **Show Product Details** to view additional information.
 - **Configuration panel** – Used to export the forecast, change the display from a chart to tabular data, and adjust the time period.
 - **Capacity Forecast** – Displays your baseline/seasonal forecast, which includes holidays.
 - **Adjustments Influencing Forecast** – Add or edit a manual or seasonal adjustment.

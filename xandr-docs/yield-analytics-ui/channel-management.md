@@ -23,7 +23,7 @@ The Channel Breakdown shows a visual pie-chart of your channels.  It can be **
 > [!TIP]
 > This pie represents the percentages of your SSP channels. It does not represent your full revenue stack.
 
-You also have the ability to change the date ranges by clicking **Last Week**.
+You also have the ability to change the date ranges by selecting **Last Week**.
 
 ## Channel comparison
 
@@ -51,7 +51,7 @@ Channel - The SSP that the channel is associated with.
 
 ## View all
 
-Click **View All** to access the **Reports** screen.
+Select **View All** to access the **Reports** screen.
 
 ## Reports
 

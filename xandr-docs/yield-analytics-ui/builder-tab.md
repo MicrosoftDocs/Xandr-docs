@@ -1,6 +1,6 @@
 ---
 title: Builder Tab
-description: The article explains how you can access builder tab and build your target expressions on the builder screen.
+description: The article explains how you can access builder tab and build your target expressions on builder screen.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
@@ -13,14 +13,14 @@ Clicking the **Builder** tab accesses the Builder screen. This is where you bu
 
 | Button/Field | Description |
 |--|--|
-| Target Expression Editor | Clicking the Target Expression verbiage allows you to view the target expression on a user-friendly screen. Target expressions are often very lengthy, and could be hundreds of lines long. The target expression is editable from this screen. You can make changes and click **Update**. The **Create Product** screen is displayed, and the values are updated accordingly. |
-| Select Attributes or Product | Target expressions are either built from an existing product(s), or the particular attributes must be specified. Clicking **Select Attributes** accesses the Select Attributes screen. From this screen, you are able to choose attributes. Likewise, clicking **Product** accesses the Select Product screen, where you can choose products.<br>Clicking the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
+| Target Expression Editor | Clicking the Target Expression verbiage allows you to view the target expression on a user-friendly screen. Target expressions are often very lengthy, and could be hundreds of lines long. The target expression is editable from this screen. You can make changes and select **Update**. The **Create Product** screen is displayed, and the values are updated accordingly. |
+| Select Attributes or Product | Target expressions are either built from an existing product(s), or the particular attributes must be specified. Clicking **Select Attributes** accesses the Select Attributes screen. From this screen, you are able to choose attributes. Likewise, selecting **Product** accesses the Select Product screen, where you can choose products.<br>Clicking the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
 | Vary By | This allows you to vary base targeting criteria by selected variant targeting criteria. It builds multiple targeting strings by combining each variant with the base targeting. Using the Vary By option will create multiple products – one for each unique combination of vary by attributes and values.|
 | Undo | This clears the last action that you entered. |
 | Clear All | This clears all of your entries, and allows you to start over.|
 | Create Product | This will create the product(s) using the configured settings. It will turn your lookup expression into a product.|
 
-## Building a target expression using attributes
+## Build a target expression using attributes
 
 There are two methods of building a target expression:
 
@@ -45,19 +45,19 @@ This method is recommended if you do not know specifically what you are looking 
 - There is also a **Select All** button, if you would like to select all the attributes listed in that window.
 - The result of the search is displayed in the right-hand window.
 - The right-hand window also has include/exclude functionality. You can exclude attributes from your final selection.
-- When you are satisfied with your selection, click **Update**. You will now see the attributes listed on the Builder screen.
-- If you would like to delete an attribute, mouse-over the attribute and click on the `x` in the upper right-hand corner.
+- When you are satisfied with your selection, select **Update**. You will now see the attributes listed on the Builder screen.
+- If you would like to delete an attribute, mouse-over the attribute and select on the `x` in the upper right-hand corner.
 - If you want to add other attributes, select Attributes again, and the entire list is displayed again. The previous selections will still be displayed in the right-hand column.
 
-## Building a target expression for products
+## Build a target expression for products
 
 - You can select a product as base targeting and then add additional targeting as described in one of the two attribute methods above.
-- If you have existing products in the system that you want to look up, then click **Select Product**. This accesses the Select Product screen, which displays a list of products.
+- If you have existing products in the system that you want to look up, then select **Select Product**. This accesses the Select Product screen, which displays a list of products.
 - You can start your search by Name or Product ID.
 - The additional four options in the search criteria are: Contains, Starts with, Ends with, Equals.
 - There are five checkboxes at the top of the screen: Rate Card, Reporting, Seasonal, Custom, Inactive. By default, Rate Card and Reporting are selected. These filters are used to narrow down your search, especially if you have a lot of products.
 - Click **Cancel** to cancel this entry.
-- When you are satisfied with your selection, click **Update**.
+- When you are satisfied with your selection, select **Update**.
 
 ## Related topics
 

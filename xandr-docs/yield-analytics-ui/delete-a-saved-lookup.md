@@ -9,10 +9,10 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can delete saved availability lookups. This erases all related information, including any scheduling and batch processed results.
 
-1. On the **Admin Tools** menu, click **View Saved Lookups**. The **View Saved Lookups** page appears, displaying a list of all saved availability lookups.
+1. On the **Admin Tools** menu, select **View Saved Lookups**. The **View Saved Lookups** page appears, displaying a list of all saved availability lookups.
 1. (Optional) Search for the saved lookup using the search toolbar.
-1. Click and select **Delete Lookup**.
-1. Click **Delete** to confirm the deletion.
+1. Select **Delete Lookup**.
+1. Select **Delete** to confirm the deletion.
 
 ## Related topics
 

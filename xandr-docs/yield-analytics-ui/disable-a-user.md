@@ -9,10 +9,10 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can disable user accounts to prevent previously active users from logging in to Yield Analytics.
 
-1. On the **Admin Tools** menu, click **Users**. The **Users** page appears, displaying a list of all user accounts.
-1. In the **Username** column, click the username for the user you want to disable. The **Edit User** page appears.
+1. On the **Admin Tools** menu, select **Users**. The **Users** page appears, displaying a list of all user accounts.
+1. In the **Username** column, select the username for the user you want to disable. The **Edit User** page appears.
 1. Clear the **Enabled** check box.
-1. Click **Save**.
+1. Select **Save**.
 
 ## Related topics
 

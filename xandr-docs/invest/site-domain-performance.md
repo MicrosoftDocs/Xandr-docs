@@ -75,7 +75,7 @@ For more information about how quickly report data is processed, see [Availabili
 | Remarketing Segment | No | Indicator of whether this is a remarketing campaign. |
 | Age | Yes | The age of the user associated with the impression. For impressions older than 100 days, the age will be "unknown". |
 | Gender | Yes | The gender of the user. For impressions older than 100 days, the gender will be "unknown". |
-| Fold Position | Yes | The fold position of the impression (i.e., where on the page the placement is located). <br> Possible values for impressions: <br> - unknown <br> - above <br> - below |
+| Fold Position | Yes | The fold position of the impression (i.e., where on the page the placement is located). <br> Possible values for impressions: <br> - unknown <br> - above <br> - below. |
 | Operating System Family | Yes | The operating system family (e.g., Apple Mac, Chrome OS) associated with the impressions. |
 | Operating System | Yes | The name and ID of the operating system of the device where the impression occurred. |
 | Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are `"web"`, `"mobile_app"`, and `"mobile_web"`. |

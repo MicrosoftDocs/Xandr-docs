@@ -27,7 +27,7 @@ When you prepare your Excel files for upload, the following information must be 
 | Name | For automatic Name mappings, use one of the following column names in your Excel file: <br> - **Name** <br> - **File Name** <br> - **Placement Name** |
 | Secure Content | For automatic Secure Content mappings, use one of the following column names in your Excel file: <br> - **Tag Content Secure** <br> - **Tag Content** <br> - **JavaScript Tag** <br> - **Legacy JavaScript Tag** <br> - **URL** <br> - **Secure URL** |
 | Size (optional) | For automatic Size mappings, use one of the following column names in your Excel file: <br> - **Dimensions** <br> - **Size** |
-| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker** <br> - **Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel** |
+| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker** <br> - **Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel**. |
 
 ## Hosted creatives
 

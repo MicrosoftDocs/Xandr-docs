@@ -21,10 +21,8 @@ Feel free to leverage the following spreadsheet templates:
 
 ## Third-Party creatives
 
-When you prepare your Excel files for upload, the following information
-must be included in your file: creative name, content tag, and secure
-content tag. For automatic column mappings, follow these column name
-mapping conventions when creating your Excel file:
+When you prepare your Excel files for upload, the following information must be included in your file: creative name, content tag, and secure
+content tag. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
 
 | Mapping Option | Column Name |
 |---|---|

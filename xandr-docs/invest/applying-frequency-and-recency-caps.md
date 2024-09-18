@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Applying Frequency and Recency Caps
+title: Microsoft Invest - Apply Frequency and Recency Caps
 description: Apply frequency and recency caps at different levels with the most restrictive setting taking precedence. Caps apply according to the strictest settings available. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Applying frequency and recency caps
+# Microsoft Invest - Apply frequency and recency caps
 
 You can apply frequency and recency caps at the advertiser, insertion order, line item, and creative levels, or any combination of these levels. When using frequency targeting at multiple levels, the most restrictive setting always takes precedence.
 

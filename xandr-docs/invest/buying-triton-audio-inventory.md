@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buying Triton Audio Inventory
+title: Microsoft Invest - Buy Triton Audio Inventory
 description: In this article, you’ll find information on the Triton Audio Ad Exchange, including testing ads and setting up a line item to target audio inventory. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying Triton audio inventory
+# Microsoft Invest - Buy Triton audio inventory
 
 This page provides specific information for the **Triton Audio Ad Exchange**, which includes testing your ads and setting up a line item to target **Triton** audio inventory.
 
@@ -28,7 +28,7 @@ To set up and listen to a test ad:
     > These impressions will not becharged since this is a testing platform.
 1. In the **Targeting** section, select **Inventory** > **3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
 1. Click **Include** and then **Add**.
-1. Go to the following URL: [https://player.listenlive.co/xxxx](https://player.listenlive.co/xxxx), where xxxx is the site ID provided by Triton Digital.
+1. Go to the following URL: `https://player.listenlive.co/xxxx`, where `xxxx` is the site ID provided by Triton Digital.
 
 ## Target Triton inventory
 

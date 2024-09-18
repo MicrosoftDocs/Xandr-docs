@@ -16,7 +16,7 @@
       href: managing-notification-recipients.md
     - name: Viewing Your Object Limits
       href: viewing-your-object-limits.md
-    - name: Capping Daily Spend on Third-Party Inventory (Safety Budget)
+    - name: Cap Daily Spend on Third-Party Inventory (Safety Budget)
       href: capping-daily-spend-on-third-party-inventory-safety-budget.md
     - name: Member-Level Geography Targeting
       href: member-level-geography-targeting.md
@@ -408,11 +408,11 @@
         href: testing-client-side-impression-tracking.md
     - name: A Comparison of Mobile App vs. Web
       href: a-comparison-of-mobile-vs-web.md
-    - name: Adapting Display Strategies to Mobile Buying
+    - name: Adapt Display Strategies to Mobile Buying
       href: adapting-display-strategies-to-mobile-buying.md
     - name: Mobile Inventory
       items:
-      - name: Buying Mobile Inventory
+      - name: Buy Mobile Inventory
         href: buying-mobile-inventory.md
       - name: Buy Mobile Inventory via RTB
         href: buy-mobile-inventory-via-rtb.md
@@ -440,7 +440,7 @@
       href: mobile-buying-faq.md
   - name: Video Inventory
     items:
-    - name: Buying Video Inventory
+    - name: Buy Video Inventory
       href: buying-video-inventory.md
     - name: Video Creative Best Practices
       href: video-creative-best-practices.md
@@ -456,13 +456,13 @@
       href: use-recommendations-to-target-video-inventory.md
     - name: OTT Video Inventory
       items:
-      - name: Buying OTT Video Inventory
+      - name: Buy an OTT Video Inventory
         href: buying-ott-video-inventory.md
       - name: OTT Video Creative Specifications
         href: ott-video-creative-specifications.md
-      - name: Buying ESPN Inventory
+      - name: Buy an ESPN Inventory
         href: buying-espn-inventory.md
-      - name: Buying Hulu Inventory
+      - name: Buy Hulu Inventory
         href: buying-hulu-inventory.md
       - name: CTV Video Buying Best Practices
         href: ctv-video-buying-best-practices.md
@@ -474,37 +474,37 @@
       href: comparison-of-video-complete-buying-strategies.md
   - name: Audio Inventory
     items:
-    - name: Buying Audio Inventory
+    - name: Buy an Audio Inventory
       href: buying-audio-inventory.md
-    - name: Buying Spotify Audio Inventory
+    - name: Buy Spotify Audio Inventory
       href: buying-spotify-audio-inventory.md
-    - name: Buying Triton Audio Inventory
+    - name: Buy Triton Audio Inventory
       href: buying-triton-audio-inventory.md
   - name: Microsoft Inventory
     items:
     - name: Overview
       href: buying-microsoft-inventory.md
-    - name: Buying MSN Inventory
+    - name: Buy MSN Inventory
       href: buying-msn-inventory.md
-    - name: Buying Microsoft Casual Games (Windows O&O Apps)
+    - name: Buy Microsoft Casual Games (Windows O&O Apps)
       href: buying-microsoft-casual-games-windows-o-o-apps.md
-    - name: Buying Microsoft Deals
+    - name: Buy Microsoft Deals
       href: buying-microsoft-deals.md
-    - name: Buying Microsoft Outlook.com Inventory
+    - name: Buy Microsoft Outlook.com Inventory
       href: buying-microsoft-outlook-com-inventory.md
-    - name: Buying Microsoft Video Inventory
+    - name: Buy Microsoft Video Inventory
       href: buying-microsoft-video-inventory.md
-    - name: Buying Microsoft Windows App Inventory
+    - name: Buy Microsoft Windows App Inventory
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
   - name: Native Inventory
     items:
-    - name: Buying Native Inventory
+    - name: Buy Native Inventory
       href: buying-native-inventory.md
     - name: Native Inventory Seller Specifications
       href: native-inventory-seller-specifications.md
-    - name: Buying GumGum Inventory
+    - name: Buy GumGum Inventory
       href: buying-gumgum-inventory.md
-    - name: Buying Seedtag Inventory
+    - name: Buy Seedtag Inventory
       href: buying-seedtag-inventory.md
   - name: Political Advertising
     href: political-advertising.md
@@ -538,7 +538,7 @@
     items:
     - name: Overview
       href: frequency-and-recency-caps.md
-    - name: Applying Frequency and Recency Caps
+    - name: Apply Frequency and Recency Caps
       href: applying-frequency-and-recency-caps.md
     - name: Set a Frequency Cap
       href: set-a-frequency-cap.md
@@ -740,7 +740,7 @@
       href: update-a-custom-creative-template.md
     - name: Delete a Custom Creative Template
       href: delete-a-custom-creative-template.md
-    - name: Applying Media Types and Templates to Banner Creatives
+    - name: Apply Media Types and Templates to Banner Creatives
       href: applying-media-types-and-templates-to-banner-creatives.md
   - name: Creative Macros
     items:
@@ -830,7 +830,7 @@
       href: understanding-viewability-rates-for-guaranteed-views.md
     - name: Understanding Billing and Costs for Guaranteed Outcomes
       href: understanding-billing-and-costs-for-guaranteed-outcomes.md
-    - name: Analyzing CTR and Conversion Rate for Guaranteed Outcomes
+    - name: Analyze CTR and Conversion Rate for Guaranteed Outcomes
       href: analyzing-ctr-and-conversion-rate-for-guaranteed-outcomes.md
     - name: Using a Viewability Rate Target for Guaranteed Views
       href: using-a-viewability-rate-target-for-guaranteed-views.md

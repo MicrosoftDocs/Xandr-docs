@@ -42,7 +42,7 @@ To learn more about Microsoft's various video creative specifications, see the f
 - [Microsoft Creative Specifications](https://advertising.microsoft.com/creative-specs)
 - [Microsoft Creative Acceptance Policy](https://advertising.microsoft.com/creative-acceptance-policy)
 
-## Targeting Microsoft video inventory
+## Target Microsoft video inventory
 
 Each video inventory type can be targeted using RTB or Deals. To target Microsoft video inventory, follow the guidelines listed in the table below:
 

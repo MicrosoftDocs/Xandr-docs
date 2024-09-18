@@ -15,7 +15,7 @@ Historically, frequency capping for digital advertising has entirely relied on t
 
 Though the AFM model is built using data-containing identifiers, it doesn't actually require users to pass any- identifiers within ad requests to function. This allows advertisers to meet their reach and **unique impression** goals without dependency on device environment. Assuming a user has visited "website A," Microsoft Advertising can predict the likelihood that the user will visit "website B." In fact, Microsoft Advertising can determine the probability of a user having visited multiple websites (website B, C, and D), given that they've already visited website A. Ultimately, Microsoft Advertising can estimate how many creatives have already been delivered to a user within a particular time frame, based on the website from which the ad request was received.
 
-## How to enable AFM?
+## Instructions for AFM activation
 
 AFM will be automatically activated to help adhere to your frequency cap on impressions without identifiers once you toggle **Expand reach to anonymous users** and select a daily frequency cap on your Line item.
 

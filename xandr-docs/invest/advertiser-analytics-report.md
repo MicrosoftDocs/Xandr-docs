@@ -287,7 +287,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | Custom Viewable Imps | The number of measured impressions that were viewable, per the member-level custom definition configuration (for more details, contact your Microsoft Advertising account representative). |
 | Custom Viewability Rate | The percentage of impressions that were viewable, per the member-level custom definition configuration, out of the total number of impressions measured for viewability. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

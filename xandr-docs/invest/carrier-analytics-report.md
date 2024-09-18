@@ -12,7 +12,7 @@ The Carrier Analytics report enables you to retrieve buy-side and sell-side perf
 
 All dates and times are given in UTC.
 
-**Time ranges**
+## Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
@@ -39,7 +39,7 @@ Time ranges define the time period of the data extracted for the report. The fol
 - Month to Yesterday
 - Lifetime
 
-**Intervals**
+## Intervals
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
@@ -134,7 +134,7 @@ This report's data is retained for 46 days. For more information about how quick
 | Video Start Rate | `1.12359550561797%` |  | The percentage of times the first segment of the video creative was downloaded and started. |
 | Video Skip Rate | `1.12359550561797%` |  | The percentage of times the user opted to skip the video. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 
@@ -162,7 +162,7 @@ Follow these steps to run your report.
     - **Name this report**: Give this report with its current settings a name for future reference.
 1. Click **Run report** to send your report request.
 
-## **Related topics**
+## Related topics
 
 - [Device Analytics Report](./device-analytics-report.md)
 - [Buying Mobile Inventory](./buying-mobile-inventory.md)

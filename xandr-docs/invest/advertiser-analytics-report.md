@@ -249,6 +249,8 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | View-Measured Imps | The total number of impressions that were measured for viewability. |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
+| Video Views | If you use the CPM bid strategy on the Microsoft Advertising Platform, online video views count each instance a potential customer plays your video for two continuous seconds with more than 50% of the screen in view. If you use the CPCV bid strategy for CTV, video views count each time a potential customer plays your video for 15 continuous seconds or clicks on the video, whichever occurs first. <br> **NOTE:** When you select CPCV as the bidding strategy, you pay for either a video view or a click, whichever occurs first. Video views exclude click interactions with the ad, which are captured under the Clicks metric. | 
+| Video Completion Rate | On the Microsoft Advertising Platform, video completion rate represents the ratio of completed video views to the total number of video impressions. <br> **NOTE:** Discrepancies in video views impressions may occur due to technical issues on the publisher's side, which can affect the reported percentages. |
 | Clearing Event Booked Revenue Per Event | The total booked revenue per clearing event. |
 | Clearing Events Booked Revenue CPM | The booked revenue in CPM per event. |
 | Booked Revenue vCPM | The booked revenue, expressed as a viewable CPM. |

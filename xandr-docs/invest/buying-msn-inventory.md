@@ -44,7 +44,7 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 > [!NOTE]
 > SSL creative required.
 
-## Targeting instructions
+## Instructions for targeting
 
 For information on general inventory targeting, review the following documentation:
 

@@ -105,6 +105,8 @@
     href: deal-lists-for-curated-deals.md
   - name: Create a Curated Deal Line Item
     href: create-a-curated-deal-line-item.md
+  - name: Create a Simplified Deal Line Item
+    href: create-a-simplified-deal-line-item.md
   - name: Curator Margins
     href: curator-margins.md
   - name: Curated Deal Floors

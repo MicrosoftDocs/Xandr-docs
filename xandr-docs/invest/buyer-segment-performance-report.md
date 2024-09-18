@@ -129,7 +129,7 @@ Reports automatically group by all selected dimensions.
 | Video Start Rate | double | 1.12359550561797% |  | The percentage of times the first segment of the video creative was downloaded and started. |
 | Video Skip Rate | double | 1.12359550561797% |  | The percentage of times the user opted to skip the video. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

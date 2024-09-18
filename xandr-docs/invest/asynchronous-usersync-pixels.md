@@ -4,8 +4,7 @@ description: Learn how a technical upgrade has enabled User syncing to happen af
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Asynchronous usersync pixels  
+# Microsoft Invest - Asynchronous usersync pixels
 
 We've made a technical upgrade to the way we perform [User ID Syncing with External Partners](user-id-syncing-with-external-partners.md) so that user syncing happens after a publisher's page has completely finished loading. This allows us to fire more usersync pixels per ad call without disrupting the user experience of visitors to the publisher's site. This change will benefit publishers by increasing spend platform-wide as usersyncing clients will have an increased match rate, allowing them to bid higher CPMs using their proprietary data on more users.
 
@@ -21,7 +20,7 @@ The important takeaways are:
 1. The queue of available usersync pixels will run out quickly (and pixels will stop loading).
 1. There should be no increase in publisher page load times - in fact, with this change page load times should slightly improve.
 
-## How it works
+## Workflow
 
 We attach a bit of JavaScript code to the publisher's page that will only run after the rest of the page's content has been loaded by the browser. Once a web page (or iFrame) has finished loading, this code calls our server asking for a usersync pixel. When that pixel returns and is loaded, the Javascript calls back to Microsoft Advertising again, asking for another usersync pixel. For any given tag this loop repeats a maximum of ten times, and usersyncing will stop once there are no more usersync pixels available or the queue of available pixels is exhausted. After the loop finishes, the user should be fully synced across Microsoft Advertising and all of our external partners.
 

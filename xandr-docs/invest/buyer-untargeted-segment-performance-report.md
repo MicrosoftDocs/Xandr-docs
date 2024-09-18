@@ -109,7 +109,7 @@ Reports automatically group by all selected dimensions.
 | Profit eCPM | money | 0.4949 | **During the transition period:** (Booked Revenue - Media Cost) / Imps * 1000 <br/> **After the transition period:** (Booked Revenue - Total Cost) / Imps * 1000 | Profit per thousand impressions. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 | Commissions | money | 0 | **During the transition period:** Commissions + equivalent partner_fees. <br/> **After the transition period:** $0. Commissions created on ALIs prior to this date will be automatically migrated to **partner_fees**. Previous data will not be impacted. | Fees that come out of the booked revenue. <br/> **During the transition period:** Commissions + equivalent partner fees. <br/> **After the transition period:** $0. Commissions created on ALIs prior to this date will be automatically migrated to partner fees. Previous data will not be impacted. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

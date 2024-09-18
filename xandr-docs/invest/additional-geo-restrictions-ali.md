@@ -4,7 +4,7 @@ description: Learn about the geographic targeting restrictions for impressions t
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Additional Geo restrictions
+# Microsoft Invest - Additional geo restrictions
 
 > [!NOTE]
 > If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal code for the purpose of personalizing advertising, segmenting, or profiling customers.

@@ -101,7 +101,7 @@ This report's data is retained for 90 days. For more information about how quick
 | Media Cost CPM |  | The media cost per 1000 impressions. |
 | Revenue CPM | (reseller_revenue + booked_revenue) / imps * 1000 | The revenue per 1000 impressions. |
 
-## How to run your report
+## Run your report
 
 Follow these steps to run your report.
 

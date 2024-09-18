@@ -4,8 +4,7 @@ description: On the Deals screen, learn how to set deal review preferences, acce
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Control your deals with sellers  
+# Microsoft Invest - Control your deals with sellers
 
 You can control deals received from sellers on the **Deals** screen. You can:
 
@@ -17,11 +16,11 @@ You can control deals received from sellers on the **Deals** screen. You can:
 > [!NOTE]
 > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
-## Getting to the deals screen
+## Locate the deals screen
 
 To reach the **Deals with Sellers** screen, select **Partners** \> **Deals** and select the **Sellers** tab.
 
-## Setting deal review preferences
+## Set deal review preferences
 
 Buyers can configure the default manner in which they process new seller deals by selecting one of the following settings:
 
@@ -29,8 +28,9 @@ Buyers can configure the default manner in which they process new seller deals b
 - **Require Review**: new seller deals will be set to **Pending** status by default when received until the deals are reviewed by the buyer and accepted or declined (see [Accepting or Declining Deals](#accepting-or-declining-deals)).
 
 > [!NOTE]
-> - **Default Active** is the default setting if no deal review preference is set. 
-> - Changing the review preference only affects new deals. It does not change the status of existing deals. 
+>
+> - **Default Active** is the default setting if no deal review preference is set.
+> - Changing the review preference only affects new deals. It does not change the status of existing deals.
 
 To set the deal review preference for new seller deals, do the following:
 
@@ -41,7 +41,7 @@ To set the deal review preference for new seller deals, do the following:
     - **Require Review** – to require review of all new deals before accepting or declining them
 1. Click **Save**.
 
-## Accepting or declining deals
+## Accept or decline deals
 
 If you have set your buyer review preference to **Require Review** see [Setting Deal Review Preferences](#setting-deal-review-preferences), you can then review new deals and accept or decline them. You can also accept or decline deals that are in any status (i.e., **Pending**, **Active**, **Inactive**, or **Declined**). Accepting deals changes the deal status to **Active** and declining deals changes the deal status to **Declined**.
 
@@ -73,7 +73,7 @@ To accept or decline one or more new deals:
 1. Check the box next to any deals you want to accept or decline (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code**).
 1. In the **Select** drop-down, select **Accept** or **Decline**.
 
-## Managing deal status
+## Manage deal status
 
 You can manage the status of deals so you can control when each deal is available for targeting. A deal can have a status of **Pending**, **Active**, **Declined**, or **Inactive**. The following table provides a description of each status, when the status occurs, and available actions you can perform given the status of the deal:
 
@@ -96,11 +96,11 @@ To change the status of deals you receive from sellers to **Active**, **Inactive
 1. In the **Deal Controls** section, click the edit icon and select a status from the **Acceptance Status** drop-down.
 1. Click **Save**.
 
-## Setting groups of deals to active or declined Status
+## Set groups of deals to Active or Declined status
 
-While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the **Select** drop-down to set them to **Active** status, or **Decline** to set them to **Declined** status (see [Accepting or Declining Deals](#accepting-or-declining-deals)).
+While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the **Select** drop-down to set them to **Active** status, or **Decline** to set them to **Declined** status (see [Accept or Decline Deals](#accept-or-decline-deals)).
 
-## Assigning a deal alias
+## Assign a deal alias
 
 You can assign a **Deal Alias** to use as a buyer internal name for seller deals so you can manage these deals by a name you provide for it. The alias you assign to a deal appears in the **Deal Alias** column of the **Deals with Sellers** page along with the **Deal Name** that the seller provided for the deal.
 

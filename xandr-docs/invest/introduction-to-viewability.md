@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This page provides an overview of viewability in digital media as well as information about why viewability is important, how it works, and current Microsoft Advertising support for viewability.
 
-## What is viewability and why is it important?
+## Viewability and its importance
 
 Marketers buy media to reach "eyeballs" in an effort to create awareness for their brand and influence consumers. If a marketer's advertisement goes unseen, there is no opportunity for the message to have an impact. An ad being seen by a human is therefore a fundamental requirement for all advertising. Digital media presents a unique and exciting opportunity to directly measure whether an ad was in-view of a consumer.
 
@@ -26,7 +26,7 @@ Viewability could also allow buyers to use new attribution models for post-view 
 
 Because more and more buyers value media based on viewability metrics, publishers have incentive to be aware of how viewable their sites are. Understanding and managing viewability for inventory presents the opportunity to create high viewability packages and improve overall inventory quality.
 
-## How does viewability measurement work for display ads?
+## Viewability measurement process for display ads
 
 Viewability measurement is the technological answer to a longer-lasting business need. In order for a creative to be viewable, all the following conditions must be met:
 
@@ -62,7 +62,7 @@ Viewability measurement must work in all environments and provide consistent res
 
 In some instances, viewability cannot be measured with success. In these cases, no assumption can be made on the viewability of the impression.
 
-### Using viewability data
+### Analysis and usage of viewability data
 
 Several aggregations are feasible from impression-level viewability data. The most common metrics include:
 

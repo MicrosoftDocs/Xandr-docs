@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Managing Notification Recipients
+title: Microsoft Invest - Manage Notification Recipients
 description: In this article, learn how to manage notification alerts for creative audit, object limit, inventory deactivation, and toolbar flags.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Managing notification recipients
+# Microsoft Invest - Manage notification recipients
 
 From the Member menu, you can control who receives email notifications from Microsoft Advertising for various alerts, including creative audit, object limit, inventory deactivation, and toolbar flag alerts using your notification settings.
 

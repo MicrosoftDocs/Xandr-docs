@@ -13,7 +13,7 @@ A geo radius segment is a list of latitude, longitude, and radius data. You can 
 > [!NOTE]
 > There is a maximum limit of 10k geo radius segments per member.
 
-## Creating a geo radius segment
+## Create a geo radius segment
 
 There are five steps to creating a geo radius segment:
 

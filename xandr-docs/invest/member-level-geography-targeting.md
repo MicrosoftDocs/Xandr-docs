@@ -13,7 +13,7 @@ When you apply member-level targeting, the settings will be applied globally to 
 > [!NOTE]
 > These settings apply only to inventory bought through open exchange. They have no impact on managed inventory.
 
-## Getting started
+## Get started
 
 Geography settings are available from the **Member Settings** screen (hover over your member name in the upper-right corner of the menu bar and click **Member Settings**).
 

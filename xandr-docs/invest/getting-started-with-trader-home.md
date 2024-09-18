@@ -1,11 +1,11 @@
 ---
-title: Getting Started with Trader Home
+title: Get Started with Trader Home
 description: Trader Home page gives you quick access to the insertion order and line-item details and essential metrics. 
 ms.date: 06/30/2024
 ms.author: shsrinivasan
 ---
 
-# Getting started with Trader Home
+# Get started with Trader Home
 
 Trader Home page gives you quick access to the Insertion order and Line item details and essential metrics. This section helps you get started.
 
@@ -17,9 +17,7 @@ Trader Home displays a card for each insertion order you have added for a specif
 
 - **Removing an advertiser from Trader Home:** To remove a specific advertiser from the Trader Home page, unclick the **star** icon next against a particular Advertiser from the **Advertiser’s screen**.
 
-
-
 ## Related topics
+
 - [Explore Trader Home](explore-trader-home.md)
 - [Explore Insertion Order(s) Page](explore-insertion-orders-page.md)
-

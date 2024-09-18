@@ -160,7 +160,7 @@ You may also choose to display currency values in the Advertiser/Buying and/or P
 | 10 | External Click | A click from a click tracker. |
 | 11 | Insertion | Your creative served on third-party inventory where it persists across page-loads and sessions. <br><br> **Note:** This impression type is currently only for Facebook News Feed creatives. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

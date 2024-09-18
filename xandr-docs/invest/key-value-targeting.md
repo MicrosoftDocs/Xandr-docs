@@ -10,13 +10,13 @@ Publishers often have custom data about users (age, gender, income, interests, l
 
 With custom key/value targeting, you can define your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key value sets that can be used in advertising campaigns to target specific types of customers.
 
-## Pre-defining keys and values
+## Pre-define keys and values
 
 Before you can target on key/value sets, you must have keys predefined. This can be done through the API [Targeting Key Service](../digital-platform-api/targeting-key-service.md).
 
-Values do not need to be predefined; they can be created or imported when you define your key/value targeting (see the [Creating New Values](#creating-new-values) section for more information). However, values can be predefined by using the API [Targeting Value Service](../digital-platform-api/targeting-value-service.md).
+Values do not need to be predefined; they can be created or imported when you define your key/value targeting (see the [Create New Values](#create-new-values) section for more information). However, values can be predefined by using the API [Targeting Value Service](../digital-platform-api/targeting-value-service.md).
 
-## Targeting on line items
+## Line items targeting
 
 Targeting can be set on the line item. You can set up targeting when you create the line item, and you can also add or change your targeting settings by editing the line item.
 
@@ -31,18 +31,18 @@ Within the **Inventory & Brand Safety** section of your line item, select the pe
 
 Let's take a moment to explore what, exactly, key/value sets are. The key is the category, or the thing you're targeting. Examples of keys are cars, countries, and cities. The values are the particular elements within that category that you want to target. Examples of values within the countries key (or category) would be USA, Canada, and Mexico. So how do we target on these? By defining the values within each key that we want to target, and combining those key/value sets into one target audience.
 
-## Setting up key/value targeting - overview
+## Set up key/value targeting - overview
 
 At the top of the **Key/Value Targeting** dialog you'll have the option to **Target any** or **all of the following key/value groups**. This option allows you to define whether the user must meet all the key/value requirements you specify, or whether you're targeting users who meet any one of the requirements. (In mathematical terms, it's the difference between an OR relationship and an AND relationship.) We'll explain this option in more detail in the next sections.
 
 When you first open the **Key/Value Targeting** dialog you'll see a group with a **Select Key** dropdown. When you click **Select Key**, you'll choose a key from the list. This will open a new section where you can select the values for that key. You can choose to **Select Pre-Defined Values** or **Bulk Select Values**.
 
 - **Select Pre-Defined Values**: The values displayed under this tab were added through the API **targeting-value** service. Click the checkbox next to each value you want to target with this key.
-- **Bulk Select Values**: This tab gives you the option of defining your own values for this target. If you're working with a large set of values for the given key, you can import those values from a CSV file. Click the **Import values from file** button to select the file. Only unique values will be added; any duplicate values will be ignored. You can also enter values into the text box on this tab, one value per line. See [Creating New Values](#creating-new-values) for more information.
+- **Bulk Select Values**: This tab gives you the option of defining your own values for this target. If you're working with a large set of values for the given key, you can import those values from a CSV file. Click the **Import values from file** button to select the file. Only unique values will be added; any duplicate values will be ignored. You can also enter values into the text box on this tab, one value per line. See [Create New Values](#create-new-values) for more information.
 
 After you've selected your values, you can continue to add keys to this group or create a new group. When you've finished adding all your keys, values and groups, click **Add**.
 
-## Creating key/value targets
+## Create key/value targets
 
 Let's start by walking through a very simple example. In this example we're going to target users who enjoy eating certain fruits. In particular, we want to target users who eat either apples or oranges. The key is fruit, and the values are apple and orange. Here are the steps to create this target:
 
@@ -58,7 +58,7 @@ You've just created your key/value target.
 > [!WARNING]
 > You might need to scroll down to see the **Done** button. If you click **Add** after selecting your values, the target will be saved as-is and take you back to the **Edit/Create Line Item** window. That wouldn't be a problem in this simple example, but as you'll see in our next example, having to reopen the **Key/Value Targeting** dialog after each value entry may get tedious.
 
-## Building targeting groups
+## Build targeting groups
 
 Now let's say we want to get a little more complicated. What if you want to target based on fruit and the city in which it's eaten? We'll start by writing out a targeting statement. We want to target:
 
@@ -173,20 +173,20 @@ Here's an example of using all the preceding numeric targeting:
 
 :::image type="content" source="media/numeric-kv-targeting.png" alt-text="A screenshot of the key/value targeting dialog with examples of numeric targeting.":::
 
-### Modifying a key/value target
+### Modify a key/value target
 
 You can create only one key/value target per line item. To change the values associated with a given key, click the pencil icon on the right side of the key box in the **Key/Value Targeting** dialog. You can remove all or part of the target expression by clicking the X in the upper-right corner of each group or key box .
 
 > [!WARNING]
 > If you click the X to remove a key/value set or a group, you cannot undo that action. You must add the key/value set or group again.
 
-## Creating new values
+## Create new values
 
 In the preceding examples, we added values by selecting them in the **Select Pre-Defined Values** tab. The values that are displayed on this tab are populated using the [targeting-value](../digital-platform-api/targeting-value-service.md) API service. You can also enter new values to target, either by importing them from a file or by entering them individually. After you select a key, select the **Bulk Select Values** tab.
 
 Pre-defined values will be available any time you select the associated key. Values you define here will be available only on the key/value set on which you define them.
 
-### Importing values
+### Import values
 
 If you're targeting your key on a large number of values, you can bulk import them from a CSV (comma-separated values) file. Your CSV file can **not** contain comma-separated values. The application will look for files with a .csv extension, but the file you import must be a plain-text file containing one value per line. For example, if your key is **city**, you might want to import a file that looks like this:
 
@@ -204,7 +204,7 @@ Tokyo
 
 If you do put commas in your CSV file, you'll receive an error when you attempt to import that file.
 
-### Entering new values
+### Enter new values
 
 You can enter individual values to target with the specified key. Simply type the values you want to target for that key in the text box, one value per line.
 

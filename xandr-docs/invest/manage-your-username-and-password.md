@@ -12,11 +12,11 @@ This page explains how to manage your username and password in Microsoft Invest.
 - Retrieving your username if you've forgotten it.
 - Resetting your password if you've forgotten it or if it's expired and you need a new one.
 
-## Logging in after being locked out
+## Unlock and log in
 
 If you've entered the incorrect username or password three times, you will be locked out from Microsoft Invest. The lockout will last for a period of **five minutes**. You can attempt to log in again after waiting five minutes.
 
-## Retrieving your username
+## Retrieve your username
 
 If you cannot sign in to Microsoft Invest due to a forgotten username, follow these steps:
 
@@ -28,13 +28,13 @@ Within a few minutes, you'll receive an email including all of the usernames ass
 
 If you don't see the email in your inbox, be sure to check your spam folder. If you still don't see it, the email address you entered might not be valid. Try again and submit a support request on our [Customer Support Portal](https://help.xandr.com/) if you continue to have problems.
 
-## Resetting your password
+## Reset your password
 
 Microsoft Invest passwords must be changed at least once every 120 days. After 120 days, the password will no longer be valid and you will be prompted to create a new one.
 
 If you cannot sign in to Microsoft Invest because the password was reset, or if you have forgotten your password, follow the steps below:
 
-### Creating a new password
+### Create a new password
 
 To change your password either after it expires, or if you have [forgotten your password](#requesting-a-forgotten-password):
 
@@ -48,7 +48,7 @@ To change your password either after it expires, or if you have [forgotten your 
 1. Retype the password to confirm it and click **Submit**.
 1. You will be redirected to the login page of Microsoft Invest, where you can sign in with your username and new password. You will also receive a confirmation email of the password reset.
 
-### Requesting a forgotten password
+### Request a forgotten password
 
 1. If you forgot your password, go to the login page of Microsoft Invest and click **Reset Password**.
 1. Enter your username and click **Send Email**.
@@ -57,7 +57,7 @@ To change your password either after it expires, or if you have [forgotten your 
 > [!NOTE]
 > If you don't see the email in your inbox, be sure to check your spam folder. If you still don't see it, the email address you entered might not be valid. Try again and submit a support request on our [Customer Support Portal](https://help.xandr.com/) if you continue to have problems.
 
-## Changing your password or email address
+## Change your password or email address
 
 If you need to update either your password or your email, follow the steps below.
 

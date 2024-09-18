@@ -16,7 +16,7 @@ You can improve video viewability analytics by linking a hosted video creative t
 
 This guide explains the process of enabling Moat Attention Metrics for your video creative.
 
-## For a new video creative
+## New video creative
 
 Integration with Moat's reporting is a seamless step in the process of uploading a new creative. Follow the below steps to do the needful:
 
@@ -35,7 +35,7 @@ Integration with Moat's reporting is a seamless step in the process of uploading
   > [!NOTE]
   > The data collected may take up to 24 hours to populate your Moat dashboard.
 
-## For an existing video creative
+## Manage existing video creative
 
 Existing hosted video creatives can also be linked to Moat Attention Metrics. Find the **Moat Attention Metrics** checkbox by navigating to the **Creative Manager**, select your creative and click on the **Full Edit** button. The checkbox is under **Verification** section of **Pixels (optional)** panel. Check the box to include metrics about this creative in your Moat dashboard.
 

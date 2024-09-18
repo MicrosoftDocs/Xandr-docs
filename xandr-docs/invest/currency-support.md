@@ -174,7 +174,7 @@ Once an auction has been completed, you can review the details related to it in 
 
 Line Item and Campaign revenue metrics can be displayed in Transaction Currency, however all other grids and monetary metrics are displayed in USD only. Be sure to note which currency your data is being displayed in and if it's not in your Transaction Currency, use the reports (listed above) to view auction details in the your Transaction Currency.
 
-## When media cost and related fees are converted for use in billing?
+## Conversion of media costs and related fees for billing
 
 The conversion of media cost and fees to the billing currency will be based on either daily conversion rates or a month-end conversion rate.
 

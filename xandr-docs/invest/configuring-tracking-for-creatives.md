@@ -1,11 +1,10 @@
 ---
-title: Microsoft Invest - Configuring Tracking for Creatives
+title: Microsoft Invest - Configure Tracking for Creatives
 description: Learn to set tracking parameters like frequency and recency caps, third-party tracking pixels and segment pixels in this page.   
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Configuring tracking for creatives  
+# Microsoft Invest - Configure tracking for creatives
 
 When adding creatives, you can set a variety of tracking parameters from the **Pixels (optional)** section, such as frequency and recency caps, third-party tracking pixels, and segment pixels.
 

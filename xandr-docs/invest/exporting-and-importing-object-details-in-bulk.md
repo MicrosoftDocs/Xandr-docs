@@ -1,10 +1,10 @@
 ---
-title: Exporting and Importing Object Details in Bulk
+title: Export and Import Object Details in Bulk
 description: In this article, learn how to export and import details for multiple line items, creatives, segment groups, splits, and split segment groups simultaneously.
 ms.date: 10/28/2023
 ---
 
-# Exporting and importing object details in bulk
+# Export and import object details in bulk
 
 Instead of creating or updating one object at a time, you can export and import details for multiple line items, creatives, segment groups, splits, and split segment groups simultaneously into the **Insertion Orders** and **Line Items** grids using one Excel file.
 
@@ -15,14 +15,14 @@ and improves efficiency:
 - Duplicate existing object configurations so that you only have to update minor details such as dates and identifiers.
 - Audit object configurations to identify areas that need to be set up more strategically to improve bottom lines.
 
-## Exporting object details
+## Export object details
 
 You can export object details from the **Insertion Orders** and **Line Items** grids by selecting the appropriate checkboxes for the corresponding objects and clicking **Export**. A **Bulk Uploader Tool Results** dialog displays stating whether the export was successful or unsuccessful. If the export was successful, an XLSX file is generated with all the related object details and downloadable from your browser. If the export was unsuccessful due to connection or configuration issues, please contact your account manager.
 
 > [!NOTE]
 > Insertion order details can only be exported using the **Insertion Orders** grid. When exporting object details from the **Insertion Orders** grid, you can include child line items and all associated creative, segment group, split, and split segment group details by selecting the **Include child Line Items in export file** checkbox from the **Bulk Exporter Tool** dialog.
 
-## Importing object details
+## Import object details
 
 To make the import process seamless, we've created a [bulk importer template](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Template.xlsx) for you to use when gathering the necessary details. You can also use the exported XLSX file by simply updating the object details within it as needed. We've created [Bulk Importer Template Guidelines](bulk-importer-template-guidelines.md) to help you format each parameter correctly within the bulk importer template. To reference the correct identifiers and codes that you want to include in the bulk importer template, use our [bulk importer lists](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/Xandr/Bulk-Importer-Lists.xlsx).
 

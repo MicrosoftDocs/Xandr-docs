@@ -104,7 +104,7 @@ This report's data is retained for 90 days. For more information about how quick
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
-## How to run your report
+## Run your report
 
 Follow these steps to run your report.
 

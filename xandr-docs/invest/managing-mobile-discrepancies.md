@@ -4,7 +4,7 @@ description: In this article, understand the factors that might cause discrepanc
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Managing mobile discrepancies
+# Microsoft Invest - Manage mobile discrepancies
 
 There are a few factors that can play a role in causing more discrepancies on mobile devices than in display advertising:
 
@@ -12,7 +12,7 @@ There are a few factors that can play a role in causing more discrepancies on mo
 - Varying degrees of support for rich media creatives by different combinations of mobile ad SDKs, operating systems, and devices
 - Limited connectivity and bandwidth constraints that can affect how rich media creatives are loaded by apps, and how conversions are  attributed
 
-## How we count mobile impressions
+## Count mobile impressions
 
 For mobile impressions our ad server will wait longer to count an impression than it would for a standard display impression. This applies to all mobile creatives across all inventory types. This means that mobile apps using advertising SDKs such as [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md) can pre-fetch rich media creatives before they need to be shown to the user. This pre-fetching by the SDK is performed due to the connection bandwidth and battery constraints that mobile devices operate under.
 

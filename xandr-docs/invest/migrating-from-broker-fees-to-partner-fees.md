@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Migrating from Broker Fees to Partner Fees
+title: Microsoft Invest - Migrate from Broker Fees to Partner Fees
 description: In this article, learn how to migrate from broker fees to partner fees, including reporting changes, transition periods, and affected reports.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Migrating from broker fees to partner fees
+# Microsoft Invest - Migrate from broker fees to partner fees
 
 > [!IMPORTANT]
 > Partner Fees are an enhancement and replacement for [Broker Fees](broker-fees.md) for augmented line items (ALIs) and programmatic guaranteed line items (PGLIs).
@@ -17,7 +17,7 @@ If you're migrating from [Broker Fees](broker-fees.md), you'll find partner fees
 
 All serving fees on existing augmented line items have already been converted to partner fees. You can view them in the **Fees** section of the line item. If you have Member-level access, hover over your member name in the upper-right corner of the menu bar and click **Fees** to access the **Fees** screen.
 
-## Reporting changes
+## Changes in reports
 
 With partner fees, several new metrics have been added to reports and there has been a standardization of how metrics are named and calculated across different reports. This resulted in the deprecation of some metrics and changes in the definitions of others.
 

@@ -1,9 +1,10 @@
 ---
-title: Microsoft Invest - Configuring a Line Item to Buy Guaranteed Outcomes
+title: Microsoft Invest - Configure a Line Item to Buy Guaranteed Outcomes
 description: In this page, learn how to configure a line item to buy Guaranteed Views and Guaranteed Completes.
 ms.date: 10/28/2023
 ---
-# Microsoft Invest - Configuring a line item to buy Guaranteed outcomes  
+
+# Microsoft Invest - Configure a line item to buy guaranteed outcomes
 
 Guaranteed outcomes are only available on Augmented Line Items (ALI). When creating an ALI to buy guaranteed views or completes, use the settings under Basic Setup.
 

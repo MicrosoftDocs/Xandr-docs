@@ -12,12 +12,12 @@ By selecting **Deals** in the **Inventory & Brand Safety Targeting &gt; Supply S
 
 When you select the **Deals** option in the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection of the **Create New Line Item** or **Edit Line Item** screen, you will have the option to target either all the available deals for that line item, or specific deals from sellers using the configurations detailed below.
 
-### To target all deals available to you
+### Target all deals available to you
 
 1. In the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection, select **Deals** under **Supply Source**.
 1. Select **All Deals**.
 
-### To target specific deals available to you
+### Target specific deals available to you
 
 1. In the **Inventory & Brand Safety Targeting &gt; Supply Source** subsection, select **Deals** in the **Supply Source** section.
 

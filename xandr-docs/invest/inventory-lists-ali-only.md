@@ -6,8 +6,6 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Inventory lists
 
-## Introduction
-
 Inventory lists are a way to group the domains, apps, and app bundle IDs that you want to target or exclude on your insertion orders and line items. Each inventory list must be either an allowlist (for restricting targeting) or blocklist (for excluding) and can contain any combination of domains, apps, or app bundle IDs. Examples of items that may be included in your inventory lists are:
 
 - app bundle IDs:
@@ -18,7 +16,7 @@ Inventory lists are a way to group the domains, apps, and app bundle IDs that yo
 
 Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields within the **Inventory & Brand Safety** section for line items and **Supply Strategy** section for insertion orders. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) and [Create an Insertion Order](create-an-insertion-order.md) for details.
 
-### Domains
+## Domains
 
 - You can target domains (`test4.com`) and subdomains (`review.test4.com`), but you can't target specific directories within domains (`test4.com/review`) by default. For example, targeting `test4.com/review` is not supported as a standard practice in the system. However, such directories can be targeted on a case by case basis as exceptions.
 - The process of targeting of domains (`test4.com`) and subdomains (`review.test4.com`) depends on whether the subdomains are mapped or not. A subdomain is mapped if it has an ID associated with it. In that case, the subdomain can be allowed or blocked within a list independent of the top-level domain.
@@ -29,16 +27,16 @@ Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields wit
 
 - Domains that begin with `www` will have the `www` substring stripped out before being stored in our system. For example, `www.example.org` will be shortened to `example.org`.
 
-### Apps
+## Apps
 
-#### App bundle ID (App ID)
+### App bundle ID (App ID)
 
 An app bundle ID (or app ID) is just a unique identifier for a specific app. App IDs are defined differently depending on whether the app runs on iOS or Android:
 
 - Every iOS app has a unique iTunes ID
 - Every Android app has a unique Android Package Name
 
-#### How to find app IDs
+### Locate app IDs
 
 To find the IDs for an Android or IOS app, find the app's detail page - the easiest way is to do a web search. The URL of the app store's detail page will show the app's ID.
 
@@ -49,11 +47,11 @@ For example, here are the detail pages for the "Candy Crush" app:
 - iTunes: [https://itunes.apple.com/app/apple-store/id553834731](https://itunes.apple.com/app/apple-store/id553834731)
   - ID: 553834731
 
-#### How to choose which apps to target
+### Determine apps for targeting
 
 To identify specific mobile apps to target, we recommend targeting the region you're interested in, activating your campaign, and after a few days running the [Site Domain Performance](site-domain-performance.md) report, which will show you the apps that you've been reaching. You can then update your targeting to include or exclude specific apps to meet your needs.
 
-### Key to domain/app audit flags
+## Key to domain/app audit flags
 
 Each domain or app in a list can have one of the following audit statuses:
 
@@ -65,8 +63,8 @@ Each domain or app in a list can have one of the following audit statuses:
 
 > [!NOTE]
 >
->- For audit status "`--`" or "`Unsupported`", creatives will be delivered through managed inventory or deals. They will not be delivered in open exchange unless you have allowed unauditable creatives for the line item.
->- The domains with audit status of either **Approved** or "**--**" are available for use in the augmented line item inventory lists.
+> - For audit status "`--`" or "`Unsupported`", creatives will be delivered through managed inventory or deals. They will not be delivered in open exchange unless you have allowed unauditable creatives for the line item.
+> - The domains with audit status of either **Approved** or "**--**" are available for use in the augmented line item inventory lists.
 
 ## Create a new inventory list
 

@@ -10,14 +10,14 @@ ms.custom: yield-analytics-ui
 When you email a report to yourself or designated recipients you can send it immediately or on a recurring schedule.
 
 1. On the **Availability Lookup** page, create a new lookup and save it.
-1. On the toolbar, click **Send**. The **Send a Lookup Report** dialog appears.
+1. On the toolbar, select **Send**. The **Send a Lookup Report** dialog appears.
 1. On the **Recurrence** dropdown list, select how frequently you want the lookup to be sent, or select **None** to send the lookup immediately without scheduling it.
 1. In the **Send To** box, enter the email address for each recipient, separating each address with a comma. You can include up to 50 email addresses. To send a report to more than 50 addresses, use a distribution list.
 1. (Optional) In the **Message** box, type any comments you want to include in the email.
 1. (Optional) As needed, clear the checkboxes for items to be included in the email.
     - If you're sharing the lookup with someone who doesn't have access to Yield Analytics, the recipient can't receive a URL Link to access the report.
     - If you're sending the lookup as an attachment, it includes the lookup results as an attachment to the email.
-1. Click **Send**.
+1. Select **Send**.
 
 The lookup results link will only display results while the forecast is still valid (i.e., has not expired).
 

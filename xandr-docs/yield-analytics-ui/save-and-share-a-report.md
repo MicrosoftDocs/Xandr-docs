@@ -10,14 +10,14 @@ ms.custom: yield-analytics-ui
 Reports must be saved to be shared with other people.
 
 1. Create a new report or open an existing one.
-1. On the toolbar, click **Save**. The **Save Analysis** dialog appears.
+1. On the toolbar, select **Save**. The **Save Analysis** dialog appears.
 1. Select either **Save as New** or **Replace Existing** report.
 1. Enter the report **Name**, **Description**, and **Category** as needed.
     - When naming the report, consider your company's naming conventions and remember that report names are used for searching.
-    - To add a new report category, click **Add New** to the right of the **Category** dropdown list.
+    - To add a new report category, select **Add New** to the right of the **Category** dropdown list.
 1. (Optional) To make this report your default report, select the **Set as default** checkbox.
-1. To share the report with users in other groups, click the **click here** link. Then select the group(s) from the list that appears.
-1. Click **Save**.
+1. To share the report with users in other groups, select the **click here** link. Then select the group(s) from the list that appears.
+1. Select **Save**.
 
 If you're sharing the report with someone who doesn't have access to yield analytics, the recipient doesn't receive a URL to access the report.
 

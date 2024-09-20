@@ -1,12 +1,12 @@
 ---
-title: Microsoft Curate - Buying Microsoft Outlook.com Inventory
+title: Microsoft Curate - Buy Microsoft Outlook.com Inventory
 description: In this article, learn about Microsoft Outlook.com inventory's volume, availability, creative specifications, and targeting instructions.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Buying Microsoft Outlook.com inventory
+# Microsoft Curate - Buy Microsoft Outlook.com inventory
 
-You can buy Microsoft Outlook.com inventory on the Microsoft Advertising platform.
+You can buy Microsoft Outlook.com inventory on the Microsoft Advertising Platform.
 
 ## Inventory overview
 
@@ -18,7 +18,7 @@ Outlook.com combines the best of Outlook and Hotmail to offer a clutter-free env
 1. **Simple, yet visual**: Simple creatives deliver imagery that stands out against a clean environment
 
 > [!NOTE]
-> Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buying Microsoft Deals](buying-microsoft-deals.md).
+> Packages bundled with Microsoft user data are available through the packages marketplace. For more information, see [Buy Microsoft Deals](buying-microsoft-deals.md).
 
 ## Availability and volume
 
@@ -37,9 +37,9 @@ The recommended minimum creative dimensions are 160px x 600px.
 > [!NOTE]
 > SSL creative required.
 
-## Targeting instructions
+## Target instructions
 
-For information on general inventory targeting, see [Buying Microsoft Inventory](buying-microsoft-inventory.md) and [Domain Targeting](../monetize/domain-targeting.md).
+For information on general inventory targeting, see [Buy Microsoft Inventory](buying-microsoft-inventory.md) and [Domain Targeting](../monetize/domain-targeting.md).
 
 To target Outlook.com inventory,
 
@@ -48,10 +48,10 @@ To target Outlook.com inventory,
 1. Click **Add Domains** to add it to the included domains list.
 1. Click **Add**.
 
-For instructions on how to target the Outlook app, see [Buying Microsoft Windows App Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
+For instructions on how to target the Outlook app, see [Buy Microsoft Windows App Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
 
 > [!IMPORTANT]
-> For more information on how to add a Microsoft Outlook versatile creative, see [adding a Microsoft Outlook versatile creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md).
+> For more information on how to add a Microsoft Outlook versatile creative, see [Add a Microsoft Outlook versatile creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md).
 
 ## More questions?
 

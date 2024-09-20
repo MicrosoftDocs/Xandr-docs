@@ -17,7 +17,7 @@ Curator margin types are configured on a [curated deal line item](create-a-curat
 - **Percentage** - The percentage of the buyer’s bid (Curator Revenue) which will be taken as curator margin.
 - **CPM** - A fixed CPM deducted from the buyer’s bid (Curator Revenue) which will be taken as curator margin.
 
-## How margins are accounted?
+## Accounting for margins
 
 Margins are a markdown in which the buyer bid is taken at face value, the margin is deducted (as well as any curator tech fees), and the remaining revenue is sent to the seller. The formula for any markdown in our system is **markdown amount = bid \* (1 – margin rate)**. This happens in the following order:
 

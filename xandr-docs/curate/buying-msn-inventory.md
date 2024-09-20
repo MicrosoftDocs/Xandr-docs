@@ -1,16 +1,16 @@
 ---
-title: Microsoft Curate - Buying MSN Inventory
+title: Microsoft Curate - Buy MSN Inventory
 description: The article provides an overview of inventory, discussing its availability, volumes, various industry verticals, and formats with detailed specifications.
 ---
 
-# Microsoft Curate - Buying MSN inventory
+# Microsoft Curate - Buy MSN inventory
 
 ## Inventory overview
 
 MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class premium content from top media providers, with high-value experiences through personalized content synchronized across devices.
 
 > [!TIP]
-> Packages bundled with Microsoft user data are available through the packages marketplace. See [Buying Microsoft Deals](buying-microsoft-deals.md).
+> Packages bundled with Microsoft user data are available through the packages marketplace. See [Buy Microsoft Deals](buying-microsoft-deals.md).
 
 ## Availability and volume
 
@@ -43,12 +43,11 @@ MSN is Microsoft's portal, inspiring consumers through trusted, best-in-class pr
 > [!NOTE]
 > SSL creative required.
 
-## Targeting instructions
+## Instructions for targeting
 
-For information on general inventory targeting, review the following
-documentation:
+For information on general inventory targeting, review the following documentation:
 
-- [Buying Microsoft Inventory](buying-microsoft-inventory.md)
+- [Buy Microsoft Inventory](buying-microsoft-inventory.md)
 - [Domain Targeting](../monetize/domain-targeting.md)
 
 To target MSN.com inventory:
@@ -58,7 +57,7 @@ To target MSN.com inventory:
 1. Click **Add Domains** to add it to the included domains list.
 1. Click **Add**.
 
-For instructions on how to target the MSN app, see [Buying Microsoft Windows App Ad Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
+For instructions on how to target the MSN app, see [Buy Microsoft Windows App Ad Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
 
 ## More questions?
 

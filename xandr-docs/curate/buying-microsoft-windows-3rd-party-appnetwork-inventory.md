@@ -1,9 +1,9 @@
 ---
-title: Microsoft Curate - Buying Microsoft Windows 3rd Party AppNetwork Inventory
+title: Microsoft Curate - Buying Microsoft Windows 3rd Party App Network Inventory
 description: The article provides an overview about Microsoft Windows 3rd party AppNetwork inventory, availability and volume, its formats and specifications, and tragetting instructions.
 ---
 
-# Microsoft Curate - Buying Microsoft Windows 3rd party AppNetwork inventory
+# Microsoft Curate - Buy Microsoft Windows 3rd party AppNetwork inventory
 
 ## Inventory overview
 
@@ -25,7 +25,7 @@ Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Mi
 
 ## Formats and specifications
 
-**Creative specs**
+### Creative specs**
 
 | Creative Size | Windows AppNetwork | Windows Phone AppNetwork |
 |--|--|--|
@@ -58,7 +58,7 @@ Ad Quality:
 - [Microsoft CAP](https://about.ads.microsoft.com/en-us/resources/policies)
 - Animation Length up to 30 sec
 
-**Legacy ads SDK creative specs**
+### Legacy ads SDK creative specs
 
 Legacy SDK (versions prior to Windows 10) currently represents 55% of total impressions on the Windows 3rd Party AppNetwork (Windows 7 has 35% of total traffic, Windows 8.1 10% etc.). This percentage is steadily decreasing as Windows 10 adoption continues.
 
@@ -70,7 +70,7 @@ Microsoft Advertising and specifying a landing page. For more
 information on uploading a hosted image as a creative, see
 [Add Banner Creatives](https://staging.console.appnexus.com/docs/add-banner-creatives).
 
-## Targeting instructions
+## Instructions for targeting
 
 To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **PubID** via Standard Line Item - Campaign:
 
@@ -94,7 +94,7 @@ To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 1. Search for Microsoft **Run of Windows PC Apps** and **Run of Windows Phone Apps**.
 1. Click **Get Deals** and this will generate a Deal ID to target.
 
-**Targeting criteria information**
+### Information about targeting criteria
 
 | Information Criteria| Windows AppNetwork (Desktop/Tablet) | Windows Phone AppNetwork (Phone) |
 |---|---|---|
@@ -126,14 +126,13 @@ Microsoft Deals](buying-microsoft-deals.md) for more.
 
 ## Extra information
 
-**User identification (Microsoft Ad ID)**
+### User identification (Microsoft Ad ID)
 
 All Microsoft Windows App inventory includes a mobile-specific device identifier called the Windows Ad ID. This identifier is similar to other mobile app identifiers like IDFA or Google Play in that it is persistent across apps on the same device, compliant to the user's OS-level privacy settings.
 
-For Windows 10 inventory, Microsoft also provides the Microsoft Advertising ID (UUID64) corresponding to the user's
-default browser where available. This process is called user-syncing, and enables advertisers to track users across devices. **User-sync is available on 82% of Windows 10 impressions, and better enables category targeting, frequency cap, conversion tracking and more.**
+For Windows 10 inventory, Microsoft also provides the Microsoft Advertising ID (UUID64) corresponding to the user's default browser where available. This process is called user-syncing, and enables advertisers to track users across devices. **User-sync is available on 82% of Windows 10 impressions, and better enables category targeting, frequency cap, conversion tracking and more.**
 
-**App-Install Attribution (Window Store ID)**
+### App install attribution (Window Store ID)
 
 For buyers running campaigns with a CPA goal of an App installation, the third-party app installation vendors Tune, Adjust, and Kochava support Windows Apps attribution tracking through Microsoft Advertising. If you are using a third-party ad server, you will be tracking conversions in that third-party ad server, which will require its own integration with Tune, Adjust, or Kochava for conversion attribution. We will continue onboarding additional attribution vendors. If you rely upon a specific attribution vendor that is not supported today, please contact your Microsoft Advertising Account Representative.
 

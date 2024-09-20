@@ -1,12 +1,12 @@
 ---
-title: Microsoft Curate - Introduction to Viewability
-description: Learn what is Viewability and how it is useful to the Buy-Side and Sell-Side. This page also covers how viewability measurement works and what are the technical challenges that you need to overcome.
+title: Microsoft Curate - Measure Viewability for Display Ads
+description: Learn about Viewability, its importance for Buy-Side/Sell-Side, measurement, and related technical challenges.
 ms.date: 11/14/2023
 
 ---
 
 
-# Microsoft Curate - Introduction to viewability
+# Microsoft Curate - Measure viewability for display ads
 
 This page provides an overview of viewability in digital media as well as information about why viewability is important, how it works, and current Microsoft Advertising support for viewability.
 
@@ -16,7 +16,7 @@ Marketers buy media to reach "eyeballs" in an effort to create awareness for the
 
 Today, viewability is commonly used to assess the quality and value of digital media, and it is often included as a mandatory goal in advertisers' campaigns.
 
-## Buy-Side impact
+## Buy-side impact
 
 Viewability is useful to the buy side because it allows buyers to select websites that provide good quality exposure. Branding campaigns can focus on viewability as a key performance indicator. Maximizing ad viewability is a goal for the media buyer.
 
@@ -24,11 +24,11 @@ Additionally, viewability can be used to boost the performance of direct respons
 
 Viewability could also allow buyers to use new attribution models for post-view conversions.
 
-## Sell-Side impact
+## Sell-side impact
 
 Because more and more buyers value media based on viewability metrics, publishers have incentive to be aware of how viewable their sites are. Understanding and managing viewability for inventory presents the opportunity to create high viewability packages and improve overall inventory quality.
 
-## Working of viewability measurement for Display Ads
+## Viewability measurement in display ads
 
 Viewability measurement is the technological answer to a longer-lasting business need. In order for a creative to be viewable, all the following conditions must be met:
 
@@ -64,7 +64,7 @@ Viewability measurement must work in all environments and provide consistent res
 
 In some instances, viewability cannot be measured with success. In these cases, no assumption can be made on the viewability of the impression.
 
-## Using viewability data
+## Use viewability data
 
 Several aggregations are feasible from impression-level viewability data. The most common metrics include:
 

@@ -1,6 +1,6 @@
 ---
 title: Integrate Apps with PSP
-description: In this article, find information about how to integrate app inventory with PSP.
+description: Learn how to integrate app inventory with PSP. This article provides detailed information and useful resources for integration.
 ms.date: 10/28/2023
 ---
 
@@ -48,13 +48,52 @@ To set up Prebid Mobile SDK with PSP:
     VideoAdUnit adUnit = new VideoAdUnit("Your placement id", 640, 480, VideoAdUnit.PlacementType.IN_BANNER);
     ```
 
-1. In the Initialize SDK documentation section, note the PSP status endpoint to use is `https://ib.adnxs.com/status`. Implemented, this would be:
+1. Requests to Microsoft must include `ext.prebid.targeting` as an array with the following fields set to true: **includebidderkeys**, **includewinners**, and **includeformat** as shown in the following example:
+
+    ```
+    
+    "ext": {
+      "prebid": {
+          "targeting": {
+              "includeformat": true,
+              "includebidderkeys": true,
+              "includewinners": true
+
+     }
+
+   }
+
+}
 
    ```
    PrebidMobile.setCustomStatusEndpoint("https://ib.adnxs.com/status")
    ```
 
 1. When offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` immediately after SDK initialization.
+
+### Targeting key values
+
+As noted above, it is recommended to set all three parameters (`includebidderkeys`, `includewinners`, `includeformat`) to true to receive the most information from PSP in the form of targeting key values.
+
+In the `s2sConfig`, at least one of `includewinners` or `includebidderkeys` must be set to true to receive any targeting keys.
+
+If `includewinners` is true, the following targeting keys will be received:
+
+- `"hb_bidder": "appnexus"`,
+- `"hb_env": "mobile-app"`,
+- `"hb_pb": "0.00"`,
+- `"hb_size": "600x500"`
+
+If `includebidderkeys` is true, the following targeting keys will be received:
+
+- `"hb_bidder_appnexus": "appnexus"`,
+- `"hb_env_appnexus": "mobile-app"`,
+- `"hb_pb_appnexus": "0.00"`,
+- `"hb_size_appnexus": "600x500"`
+
+If `includeformat` is also set to true **in addition to either of the above parameters**, this key will be received as well:
+
+- `"hb_format_appnexus": "banner"`
 
 <!--## Non-SDK
 

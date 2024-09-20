@@ -17,14 +17,14 @@ Users who access Sales Manager using the Chrome browser are able to take advanta
 
 1. Open the Chrome application.
 1. Navigate to the following link: [Yieldex Analytics Sales Manager Extension Overview](https://chrome.google.com/webstore/detail/yieldex-analytics-sales-m/ingnfjfbgglccomoildaalnppeifljlk).
-1. Click **Add to Chrome** to install the plugin.
-1. On the dialog that appears, click **Add extension** to confirm the installation.
+1. Select **Add to Chrome** to install the plugin.
+1. On the dialog that appears, select **Add extension** to confirm the installation.
 1. View the Yield Analytics Sales Manager Extension in Chrome.
-1. Click on the Customize and control Google Chrome link in the menu bar. (<b>Note:</b> This is the three vertical dots link.)
-1. Select **More Tools**, and click **Extensions**.
-    1. Click on the Details link of the Yield Analytics Sales Manager Extension to view the configuration options.
+1. Select on the Customize and control Google Chrome link in the menu bar. (<b>Note:</b> This is the three vertical dots link.)
+1. Select **More Tools**, and select **Extensions**.
+    1. Select on the Details link of the Yield Analytics Sales Manager Extension to view the configuration options.
     1. If you intend to use the extension in incognito mode, you must enable the incognito control on the details page.
-        1. Click on the Extension options link to set up your account.
+        1. select on the Extension options link to set up your account.
         1. Enter the same Username and Password that are used for accessing the Yield Analytics user interface.
         1. Enter the full Customer URL that is used for accessing your customer instance of the Yield Analytics user interface. This should be entered without the https:// portion of the URL.
         1. Once entered, login changes are saved automatically.
@@ -35,13 +35,13 @@ Users who access Sales Manager using the Chrome browser are able to take advanta
 The Yield Analytics Sales Manager Extension should update automatically when a new version is pushed to the Chrome Web Store.  In the case where you want the plugin to update on demand, the following steps can be taken to manually control the process.
 
 1. View installed Chrome Extensions.
-1. Click on the Customize and control Google Chrome link in the menu bar. (<b>Note:</b> This is the three vertical dots link.)
+1. Select on the Customize and control Google Chrome link in the menu bar. (<b>Note:</b> This is the three vertical dots link.)
 
-    Select **More Tools**, and click **Extensions**.
-    1. Enable Developer Mode by clicking on the configuration option in the upper right-hand corner of the extension page.
-    1. A new series of options will appear on the Extension page including an UPDATE option.  Clicking this link will force all installed extensions to update to their latest versions.
+    Select **More Tools**, and select **Extensions**.
+    1. Enable Developer Mode by selecting on the configuration option in the upper right-hand corner of the extension page.
+    1. A new series of options will appear on the Extension page including an UPDATE option. Selecting this link will force all installed extensions to update to their latest versions.
 
-If you are unable to force an update to your list of extensions you can choose to remove the Yield Analytics Sales Manager Extension by clicking on the Remove link on the extension and following the Installation Instructions process.
+If you are unable to force an update to your list of extensions you can choose to remove the Yield Analytics Sales Manager Extension by selecting on the Remove link on the extension and following the Installation Instructions process.
 
 ## Where can you find Yield Analytics results?
 

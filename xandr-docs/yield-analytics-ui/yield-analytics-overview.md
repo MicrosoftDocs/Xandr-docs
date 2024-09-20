@@ -31,7 +31,7 @@ We integrate with an ad server, as well as many other systems. This includes:
 
 Yield Analytics integrates with the above systems and pulls the information into our system. We take log-level data. This means that rather than just looking at a certain set or “sampling” of data, Yield Analytics analyzes every single impression that ran through the ad server, video server, or any of the systems mentioned in the bullet points above. We run analytics on the data to forecast and emulate.
 
-### Forecasting
+### Forecast
 
 Forecasting for the client’s system - Yield Analytics not only analyzes for your site, but correlates that information to certain products within your system. We look at specific sites, sections, different audiences, etc. to better estimate how many impressions are going to be needed at those locations.
 
@@ -51,11 +51,11 @@ A typical ad server will look at a sample set of data. This means that instead o
 
 Yield Analytics takes a census-based approach, which means we are looking and analyzing every single impression that goes through your system. This assists with two things:
 
-- **Forecasting highly targeted line items**
+- **Forecast highly targeted line items**
 
 Within an ad server, since you are working with a sample set of data, some of those highly-targeted impressions may be missed. But Yield Analytics is looking at every single impression. Historically, it will give you the correct amount of impressions that have served at that particular line item – and then also accurately forecast it.
 
-- **Future forecasting**
+- **Future forecast**
 
 If it is desired to do forecasting far into the future, Yield Analytics is looking at a larger set of the data so we have a better understanding of the behavior of your site. When you want to forecast three to six months in advance – Yield Analytics is going to have a better understanding of your system to determine the correct numbers for when you are requesting that forecasting information.
 
@@ -93,7 +93,7 @@ If a query is made within Yield Analytics that involves thousands of line items,
 > [!NOTE]
 > Yield Analytics only processes once per day, because of how large the log file is. It is impractical to do it more than that, because yield analyzes every single impression in the system.
 
-## Forecasting
+## Forecast
 
 The primary thing Yield Analytics is known for is forecasting. This includes:
 

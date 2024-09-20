@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 ## Product permission enhancements
 
-- When selecting Parent Products to a User Group on the Permissions page, you have the ability to view current associated overlaps. This is helpful when considering a Permission Product. Click on **View Overlaps**.
+- When selecting Parent Products to a User Group on the Permissions page, you have the ability to view current associated overlaps. This is helpful when considering a Permission Product. Select **View Overlaps**.
 - Availability Lookup has additional analysis and result information when deducing Child/Twin Product relationships for Dynamic Availability Lookups. The (i) icon provides information for these cases:
   - Where there is no Capacity (0) and Availability (0), values are visible in the row.
   - Where the Dynamic Lookup expresses an Overlap Type which is not a Twin, Self or Child, information on the Overlaps analyzed is provided.

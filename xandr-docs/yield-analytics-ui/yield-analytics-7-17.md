@@ -17,12 +17,12 @@ We have created an option to "Update All" datasets, when there are multiple data
 1. Add dataset
     1. \*Update All\* immediately visible
     1. This should be a clone of the current dataset
-1. Click \*Update All\* (each filter type)
+1. Select \*Update All\* (each filter type)
     1. Initial dataset
         1. Standard date range should be set on other DS's
     1. Subsequent/cloned dataset
         1. Custom date range should be set on other DS's (including initial)
-1. Click \*Update\* (each filter type, w/multi datasets)
+1. Select \*Update\* (each filter type, w/multi datasets)
     1. Filter should update on the current dataset only.
 1. Open saved report
     1. Single dataset

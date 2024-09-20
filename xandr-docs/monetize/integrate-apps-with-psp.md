@@ -59,11 +59,9 @@ To set up Prebid Mobile SDK with PSP:
               "includebidderkeys": true,
               "includewinners": true
 
-     }
-
-   }
-
-}
+         }
+       }
+    }
 
    ```
    PrebidMobile.setCustomStatusEndpoint("https://ib.adnxs.com/status")

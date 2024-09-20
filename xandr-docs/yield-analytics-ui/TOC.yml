@@ -1,18 +1,18 @@
 - name: Yield Analytics UI Documentation
   href: index.yml
-- name: Getting Started
+- name: Get Started
   href: yield-analytics-overview.md
-- name: Setting Up Permissions
+- name: Set Up Permissions
   href: setting-up-permissions.md
 - name: Common Journey Maps
   items:
   - name: Overview
     href: common-journey-maps.md
-  - name: Dealing with Campaign Under-Delivery
+  - name: Deal with Campaign Under-Delivery
     href: dealing-with-campaign-under-delivery.md
-  - name: Fulfilling a Proposed Campaign
+  - name: Fulfill a Proposed Campaign
     href: fulfilling-a-proposed-campaign.md
-  - name: Pricing a Proposed Campaign
+  - name: Price a Proposed Campaign
     href: pricing-a-proposed-campaign.md
   - name: Common Report Configurations
     href: common-report-configurations.md
@@ -162,7 +162,7 @@
     href: anatomy-of-the-forecast-management-page.md
   - name: Adjustments
     items:
-    - name: Adding and Editing Adjustments
+    - name: Add and Edit Adjustments
       href: adding-and-editing-adjustments.md
     - name: Add a Manual Adjustment to a Product
       href: add-a-manual-adjustment-to-a-product.md
@@ -170,11 +170,11 @@
       href: edit-a-manual-adjustment.md
     - name: Edit a Seasonal Adjustment for a Seasonal Product
       href: edit-a-seasonal-adjustment-for-a-seasonal-product.md
-- name: Working With Scenarios 
+- name: Work With Scenarios 
   items:
   - name: Overview
     href: working-with-scenarios-overview.md
-  - name: About Using Scenario Manager
+  - name: Scenario Manager
     href: about-using-scenario-manager.md
   - name: View and Work With Scenario Manager
     href: view-and-work-with-scenario-manager.md
@@ -188,13 +188,13 @@
       href: run-an-existing-order-through-scenario-manager.md
     - name: Run a Potential Order Through Scenario Manager
       href: run-a-potential-order-through-scenario-manager.md
-  - name: Interpreting Scenario Manager Results
+  - name: Interpret Scenario Manager Results
     href: interpreting-scenario-manager-results.md
 - name: Ad Servers
   items:
   - name: Freewheel Priority Values in Yield Analytics
     href: freewheel-priority-values-in-yield-analytics.md
-  - name: Working With Multiple Ad Servers
+  - name: Work With Multiple Ad Servers
     href: working-with-multiple-ad-servers.md
 - name: User Preferences
   href: user-preferences.md
@@ -202,11 +202,11 @@
   items:
   - name: Overview
     href: administration-overview.md
-  - name: Working With Users
+  - name: Work With Users
     href: working-with-users.md
-  - name: Working With User Groups
+  - name: Work With User Groups
     href: working-with-user-groups.md
-  - name: Working with Saved Reports
+  - name: Work with Saved Reports
     href: working-with-saved-reports.md
 - name: Integrations
   items:
@@ -218,7 +218,7 @@
   items:
   - name: Overview
     href: channel-management.md
-  - name: Working with Channel Metrics
+  - name: Work with Channel Metrics
     href: working-with-channel-metrics.md
 - name: At-Risk Management Chart and Solution Paths
   href: at-risk-management-chart-and-solution-paths.md
@@ -232,7 +232,7 @@
     href: availability-overview-old-workflow.md
 - name: Saved Availability Lookups
   items:
-  - name: Working With Saved Availability Lookups
+  - name: Work With Saved Availability Lookups
     href: working-with-saved-availability-lookups.md
   - name: Schedule an Availability Lookup
     href: schedule-an-availability-lookup.md

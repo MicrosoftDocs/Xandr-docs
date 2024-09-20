@@ -21,7 +21,7 @@ This guide explains the process of enabling Moat Attention Metrics for your vide
 Integration with Moat's reporting is a seamless step in the process of uploading a new creative. Follow the below steps to do the needful:
 
 - Select your Advertiser and go to **Creative Manager** screen.
-- Select on **New** drop-down and select **Video** from the list to create a new video creative.
+- Select **New** drop-down and select **Video** from the list to create a new video creative.
 - In **Video Creative: Create New** screen, you can:
   - Either upload a video file under **Hosted File** section. You can upload the video file by dragging it onto the area labeled **Drop File Here To Upload** or by selecting the **Select File** button and browsing through your files. For more information about the steps involved in this setup, check out [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md).
   - Or enter the link for a video under **Third-Party URL** section and select **Continue**.

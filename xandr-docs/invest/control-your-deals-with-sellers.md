@@ -16,7 +16,7 @@ You can control deals received from sellers on the **Deals** screen. You can:
 > [!NOTE]
 > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
-## Locate the deals screen
+## Locate the Deals screen
 
 To reach the **Deals with Sellers** screen, select **Partners** \> **Deals** and select the **Sellers** tab.
 

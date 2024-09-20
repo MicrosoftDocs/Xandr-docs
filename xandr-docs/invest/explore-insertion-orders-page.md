@@ -40,7 +40,7 @@ The right hand side Y-axis will represent the second metric. The values supporte
 | Metrics | Description |
 |:---|:---|
 | `Impressions` | Number of impressions for all campaigns under the line item. |
-| `Viewable Impressions` | The number of measured impressions that were viewable, per the IAB Viewability definition. <br>An an impression is considered viewable if 50% of the pixels are in-view for one consecutive second. |
+| `Viewable Impressions` | The number of measured impressions that were viewable, per the IAB Viewability definition. <br> An impression is considered viewable if 50% of the pixels are in-view for one consecutive second. |
 | `Revenue` | Revenue the advertiser has paid or will pay your network as a result of campaigns under the line item. |
 | `CPM` | The standard basic pricing model for online advertising in which advertisers pay for every 1,000 impressions of their served creative. |
 | `Clicks` | Number of clicks for all campaigns under the line item. |

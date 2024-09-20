@@ -17,7 +17,7 @@ The right pane window displays the Insertion order and its associated Line items
 > [!NOTE]
 > The orange bar at the top of the card indicates pacing status: under pacing when it is less than or equal to 89%, and over pacing when it is greater than or equal to 150%.
 
-## Insertion order metrics
+### Insertion order metrics
 
 - Each card displays metrics to help you assess the status of your Insertion order. The Insertion order card offers easy access to the pacing health and requirements for successful delivery of your campaigns.
 - Each Insertion order card serves as a snapshot of an individual Insertion order, providing key performance metrics at a glance, such as pacing, yesterday's spend, and today's spend.

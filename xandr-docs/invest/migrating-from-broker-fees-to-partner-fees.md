@@ -15,7 +15,7 @@ If you're migrating from [Broker Fees](broker-fees.md), you'll find partner fees
 - A particular partner fee can be made required or optional for all an advertiser's augmented line items.
 - Partner fees cannot be applied to insertion orders.
 
-All serving fees on existing augmented line items have already been converted to partner fees. You can view them in the **Fees** section of the line item. If you have Member-level access, hover over your member name in the upper-right corner of the menu bar and click **Fees** to access the **Fees** screen.
+All serving fees on existing augmented line items have already been converted to partner fees. You can view them in the **Fees** section of the line item. If you have Member-level access, hover over your member name in the upper-right corner of the menu bar and select **Fees** to access the **Fees** screen.
 
 ## Changes in reports
 

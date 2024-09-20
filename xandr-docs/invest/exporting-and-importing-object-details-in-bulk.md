@@ -17,7 +17,7 @@ and improves efficiency:
 
 ## Export object details
 
-You can export object details from the **Insertion Orders** and **Line Items** grids by selecting the appropriate checkboxes for the corresponding objects and clicking **Export**. A **Bulk Uploader Tool Results** dialog displays stating whether the export was successful or unsuccessful. If the export was successful, an XLSX file is generated with all the related object details and downloadable from your browser. If the export was unsuccessful due to connection or configuration issues, please contact your account manager.
+You can export object details from the **Insertion Orders** and **Line Items** grids by selecting the appropriate checkboxes for the corresponding objects and selecting **Export**. A **Bulk Uploader Tool Results** dialog displays stating whether the export was successful or unsuccessful. If the export was successful, an XLSX file is generated with all the related object details and downloadable from your browser. If the export was unsuccessful due to connection or configuration issues, please contact your account manager.
 
 > [!NOTE]
 > Insertion order details can only be exported using the **Insertion Orders** grid. When exporting object details from the **Insertion Orders** grid, you can include child line items and all associated creative, segment group, split, and split segment group details by selecting the **Include child Line Items in export file** checkbox from the **Bulk Exporter Tool** dialog.
@@ -29,7 +29,7 @@ To make the import process seamless, we've created a [bulk importer template](ht
 > [!NOTE]
 > Only XLS and XLSX file formats are supported. The Excel file won't be imported if it's over 100 KB. To prevent any bulk upload processing issues, try not to include too many object details in your Excel file.
 
-Once you've made the necessary updates to the bulk importer template or exported XLSX file, save it and click **Import** from either the
+Once you've made the necessary updates to the bulk importer template or exported XLSX file, save it and select **Import** from either the
 **Insertion Orders** grid or **Line Items** grid depending upon the details that you're importing. A **Bulk Uploader Tool Results** dialog displays with a list of all the objects that were imported successfully, as well as any objects that couldn't be imported due to formatting issues, errorenous data, and/or incompatible data combinations.
 
 > [!NOTE]

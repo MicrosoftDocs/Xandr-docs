@@ -60,17 +60,17 @@ By default, you see all current deals. Use the filters in the left column to fil
 
 ## View a specific deal's details
 
-Click on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired.
+Select on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired.
 
 ## Generate deal reports
 
-Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then click **Show in Reporting**. A new tab opens displaying the [Member Analytics Report](network-analytics-report.md) with the selected deals as filters and **Deal** selected as a dimension.
+Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then select **Show in Reporting**. A new tab opens displaying the [Member Analytics Report](network-analytics-report.md) with the selected deals as filters and **Deal** selected as a dimension.
 
-Click **Run Report** in the reporting screen to run the report with these settings, or set additional settings as desired and then click **Run Report**.
+Select **Run Report** in the reporting screen to run the report with these settings, or set additional settings as desired and then select **Run Report**.
 
 ## Switch to seller mode
 
-If you are a network that also represents buyers, click the **Buyers** button to view all of the deals you have as a seller.
+If you are a network that also represents buyers, select the **Buyers** button to view all of the deals you have as a seller.
 
 ## Related topics
 

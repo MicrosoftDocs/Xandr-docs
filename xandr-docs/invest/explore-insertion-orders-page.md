@@ -40,10 +40,10 @@ The right hand side Y-axis will represent the second metric. The values supporte
 | Metrics | Description |
 |:---|:---|
 | `Impressions` | Number of impressions for all campaigns under the line item. |
-| `Viewable Impressions` | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second |
+| `Viewable Impressions` | The number of measured impressions that were viewable, per the IAB Viewability definition. <br>An an impression is considered viewable if 50% of the pixels are in-view for one consecutive second. |
 | `Revenue` | Revenue the advertiser has paid or will pay your network as a result of campaigns under the line item. |
 | `CPM` | The standard basic pricing model for online advertising in which advertisers pay for every 1,000 impressions of their served creative. |
-| `Click`s` | Number of clicks for all campaigns under the line item. |
+| `Clicks` | Number of clicks for all campaigns under the line item. |
 | `CPC` | A payment model in which advertisers pay each time a user clicks on their creative. |
 | `CTR` | Percentage of impressions that resulted in clicks for this campaign. |
 | `Views` | Views denotes the number of views an ad gets when a website or web application is loaded by the user's device. |
@@ -57,8 +57,8 @@ The right hand side Y-axis will represent the second metric. The values supporte
 
 ## Progress of the Billing Period
 
-- Select the **Billing Period** dropdown to view a list of each billing period under different metrics. 
-- When you select an option, the Analytics tab updates to reflect the metrics values for that Insertion order (on the chart) and the average metrics information for the billing period progress and average metrics section. 
+- Select the **Billing Period** dropdown to view a list of each billing period under different metrics.
+- When you select an option, the Analytics tab updates to reflect the metrics values for that Insertion order (on the chart) and the average metrics information for the billing period progress and average metrics section.
 - The Billing Period Progress bar represents the pacing of the Insertion order, showing how much of the budget has been spent in relation to how much should be spent at this point in the current billing period.
 
 | Metrics | Description |

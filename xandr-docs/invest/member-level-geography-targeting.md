@@ -15,24 +15,24 @@ When you apply member-level targeting, the settings will be applied globally to 
 
 ## Get started
 
-Geography settings are available from the **Member Settings** screen (hover over your member name in the upper-right corner of the menu bar and click **Member Settings**).
+Geography settings are available from the **Member Settings** screen (hover over your member name in the upper-right corner of the menu bar and select **Member Settings**).
 
 From the **Member Settings** screen, you can view any settings that have already been applied.
 
-To add or modify the settings, click the edit icon (the pencil) next to **Geography Targeting** to open the **Edit Geography Targeting** window.
+To add or modify the settings, select the edit icon (the pencil) next to **Geography Targeting** to open the **Edit Geography Targeting** window.
 
 ## Add or modify geography settings
 
 To add a country:
 
-1. From the **Edit Geography Targeting** window, type the name of the country you want to add. As you type, countries matching the entered text appear.
+1. From the **Edit Geography Targeting** window, enter the name of the country you want to add. As you enter, countries matching the entered text appear.
 1. Select the country you want to add. The country will appear in the **Selected** list below the search box.
-1. Click **Save**.
+1. Select **Save**.
 
 To remove a country:
 
-1. From the **Edit Geography Targeting** window, click the **X** to the right of any country in the **Selected** list you want to remove.
-1. Click **Save**.
+1. From the **Edit Geography Targeting** window, select the **X** to the right of any country in the **Selected** list you want to remove.
+1. Select **Save**.
 
 ## Related topics
 

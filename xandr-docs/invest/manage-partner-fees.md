@@ -12,12 +12,12 @@ The Partner Fees page allows you to create, view, modify, and delete fees. You c
 
 ## View fee details
 
-1. Go to the **Fees** screen (hover over your member name in the upper-right corner of the menu bar and click **Fees**). The **Fees** table lists basic fee information, including vendor, type, value, calculation method, which advertisers the fee is eligible for, and whether the fee is required for all the advertiser's line items.
-1. For additional details, click on the fee. The **Fee Details** pane includes a longer fee description, supply type, the line items associated with the fee and their status (upcoming, in progress, or completed), and the history of the fee's creation and updates.
+1. Go to the **Fees** screen (hover over your member name in the upper-right corner of the menu bar and select **Fees**). The **Fees** table lists basic fee information, including vendor, type, value, calculation method, which advertisers the fee is eligible for, and whether the fee is required for all the advertiser's line items.
+1. For additional details, select on the fee. The **Fee Details** pane includes a longer fee description, supply type, the line items associated with the fee and their status (upcoming, in progress, or completed), and the history of the fee's creation and updates.
 
 ## Modify a fee
 
-On the **Partner Fee** page or the **Partner Fee** details pane, click **Edit** (the pencil icon). You can modify:
+On the **Partner Fee** page or the **Partner Fee** details pane, select **Edit** (the pencil icon). You can modify:
 
 - Fee vendors
 - [Fee Type](fee-type.md)
@@ -32,5 +32,5 @@ For more information, see [Create a Partner Fee](create-a-partner-fee.md).
 > [!NOTE]
 > You cannot delete a partner fee that is associated with a line item.
 
-1. Go to the **Fees** screen (hover over your member name in the upper-right corner of the menu bar and click **Fees**).
+1. Go to the **Fees** screen (hover over your member name in the upper-right corner of the menu bar and select **Fees**).
 1. Select the partner fee, then select **Actions** > **Delete**.

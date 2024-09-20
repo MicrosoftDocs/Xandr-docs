@@ -35,28 +35,28 @@ Let's take a moment to explore what, exactly, key/value sets are. The key is the
 
 At the top of the **Key/Value Targeting** dialog you'll have the option to **Target any** or **all of the following key/value groups**. This option allows you to define whether the user must meet all the key/value requirements you specify, or whether you're targeting users who meet any one of the requirements. (In mathematical terms, it's the difference between an OR relationship and an AND relationship.) We'll explain this option in more detail in the next sections.
 
-When you first open the **Key/Value Targeting** dialog you'll see a group with a **Select Key** dropdown. When you click **Select Key**, you'll choose a key from the list. This will open a new section where you can select the values for that key. You can choose to **Select Pre-Defined Values** or **Bulk Select Values**.
+When you first open the **Key/Value Targeting** dialog you'll see a group with a **Select Key** dropdown. When you select **Select Key**, you'll choose a key from the list. This will open a new section where you can select the values for that key. You can choose to **Select Pre-Defined Values** or **Bulk Select Values**.
 
-- **Select Pre-Defined Values**: The values displayed under this tab were added through the API **targeting-value** service. Click the checkbox next to each value you want to target with this key.
-- **Bulk Select Values**: This tab gives you the option of defining your own values for this target. If you're working with a large set of values for the given key, you can import those values from a CSV file. Click the **Import values from file** button to select the file. Only unique values will be added; any duplicate values will be ignored. You can also enter values into the text box on this tab, one value per line. See [Create New Values](#create-new-values) for more information.
+- **Select Pre-Defined Values**: The values displayed under this tab were added through the API **targeting-value** service. Select the checkbox next to each value you want to target with this key.
+- **Bulk Select Values**: This tab gives you the option of defining your own values for this target. If you're working with a large set of values for the given key, you can import those values from a CSV file. Select the **Import values from file** button to select the file. Only unique values will be added; any duplicate values will be ignored. You can also enter values into the text box on this tab, one value per line. See [Create New Values](#create-new-values) for more information.
 
-After you've selected your values, you can continue to add keys to this group or create a new group. When you've finished adding all your keys, values and groups, click **Add**.
+After you've selected your values, you can continue to add keys to this group or create a new group. When you've finished adding all your keys, values and groups, select **Add**.
 
 ## Create key/value targets
 
 Let's start by walking through a very simple example. In this example we're going to target users who enjoy eating certain fruits. In particular, we want to target users who eat either apples or oranges. The key is fruit, and the values are apple and orange. Here are the steps to create this target:
 
-1. In the **Key/Value Targeting** dialog, click **Select Key**.
+1. In the **Key/Value Targeting** dialog, select **Select Key**.
 1. Select **fruit** from the dropdown. If you don't see the key you're looking for, scroll down the dropdown list or use the search box. (This is just an example. You may not have a fruit key defined as one of your targeting options.)
-1. In the **Select Pre-Defined Values** tab, click the checkboxes next to **apple** and **orange**. (As with keys, you can type the name or label in the search box to find values quickly.)
+1. In the **Select Pre-Defined Values** tab, select the checkboxes next to **apple** and **orange**. (As with keys, you can enter the name or label in the search box to find values quickly.)
 1. Notice that **apple** and **orange** have been added to the **Selected Values** list at the bottom.
-1. Click **Done**.
-1. Click **Add**.
+1. Select **Done**.
+1. Select **Add**.
 
 You've just created your key/value target.
 
 > [!WARNING]
-> You might need to scroll down to see the **Done** button. If you click **Add** after selecting your values, the target will be saved as-is and take you back to the **Edit/Create Line Item** window. That wouldn't be a problem in this simple example, but as you'll see in our next example, having to reopen the **Key/Value Targeting** dialog after each value entry may get tedious.
+> You might need to scroll down to see the **Done** button. If you select **Add** after selecting your values, the target will be saved as-is and take you back to the **Edit/Create Line Item** window. That wouldn't be a problem in this simple example, but as you'll see in our next example, having to reopen the **Key/Value Targeting** dialog after each value entry may get tedious.
 
 ## Build targeting groups
 
@@ -94,20 +94,20 @@ We have two groups on this tree:
 
  :::image type="content" source="media/ui-operator-diagram-step-a.png" alt-text="The expression tree with the bottom-right entry of the right side group highlighted - city [Seattle, LA].":::
 
-1. Click **Select Key**.
+1. Select **Select Key**.
 1. Select **city** from the dropdown.
-1. In the **Select Pre-Defined Values** tab, click the boxes next to **Seattle** and **LA**.
-1. Click **Done**. (Be careful to click **Done** and not **Add**. Clicking **Add** will save the key/value target and close the **Key/Value Targeting** dialog.)
+1. In the **Select Pre-Defined Values** tab, select the boxes next to **Seattle** and **LA**.
+1. Select **Done**. (Be careful to select **Done** and not **Add**. Selecting **Add** will save the key/value target and close the **Key/Value Targeting** dialog.)
 
     Now we move to the left:
 
      :::image type="content" source="media/ui-operator-diagram-step-b.png" alt-text="The expression tree with the bottom-left entry of the right side group highlighted - fruit [orange].":::
 
-1. Click **Add key**.
-1. Click **Select Key**.
+1. Select **Add key**.
+1. Select **Select Key**.
 1. Select **fruit** from the dropdown.
-1. Click the box next to **orange**.
-1. Click **Done**.
+1. Select the box next to **orange**.
+1. Select **Done**.
 
     Our target now looks like this:
 
@@ -124,7 +124,7 @@ We have two groups on this tree:
 
     :::image type="content" source="media/ui-operator-diagram-group.png" alt-text="The expression tree with the entries of the right side group highlighted.":::
 
-    Now it's time to start our group on the left. This means we need to create another group. Click **Add group**. Notice that the operator between groups has been set to **or**. Looking at our diagram, that's exactly what we want between our groups.
+    Now it's time to start our group on the left. This means we need to create another group. Select **Add group**. Notice that the operator between groups has been set to **or**. Looking at our diagram, that's exactly what we want between our groups.
 
     :::image type="content" source="media/ui-operator-diagram-step-f.png" alt-text="The expression tree with the or relationship between the left side group and the right side group highlighted.":::
 
@@ -132,26 +132,26 @@ We have two groups on this tree:
 
     :::image type="content" source="media/ui-operator-diagram-step-d.png" alt-text="The expression tree with the bottom-right entry of the left side group highlighted - city [NY].":::
 
-1. Click **Select Key**.
+1. Select **Select Key**.
 1. Select **city** from the dropdown.
-1. Click the box next to **NY**.
-1. Click **Done**.
+1. Select the box next to **NY**.
+1. Select **Done**.
 
     Now enter the final key/value set in the expression.
 
     :::image type="content" source="media/ui-operator-diagram-step-e.png" alt-text="The expression tree with the bottom-left entry of the left side group highlighted - fruit [apple].":::
 
-1. Click **Add key**.
-1. Click **Select Key**.
+1. Select **Add key**.
+1. Select **Select Key**.
 1. Select **fruit**.
-1. Click the box next to **apple**.
-1. Click **Done**.
+1. Select the box next to **apple**.
+1. Select **Done**.
 
     Your **Key/Value Targeting** should look like this:
 
     :::image type="content" source="media/key-value-dialog-exp.png" alt-text="A screenshot of the key/value targeting dialog with the values of city and fruit from both the groups of the expression tree selected.":::
 
-    Click **Add** to save your key/value target.
+    Select **Add** to save your key/value target.
 
 ## Numeric key/value targeting
 
@@ -167,7 +167,7 @@ When you're working with strings, the only comparison operators that really make
 | less than | Any value that is less than the selected value will be targeted. | height (inches) must be less than 72 <br> height (inches) < 72 |
 | less than or equal | Any value that is less than or equal to the selected value will be targeted. | temperature must be less than or equal to 32 <br> temperature <= 32 |
 
-For all options other than **one of**, you must type in a value. As you type any matching predefined values will be displayed, but you don't have to use a predefined value, you can enter any numeric value.
+For all options other than **one of**, you must enter a value. As you enter, any matching predefined values will be displayed, but you don't have to use a predefined value, you can enter any numeric value.
 
 Here's an example of using all the preceding numeric targeting:
 
@@ -175,10 +175,10 @@ Here's an example of using all the preceding numeric targeting:
 
 ### Modify a key/value target
 
-You can create only one key/value target per line item. To change the values associated with a given key, click the pencil icon on the right side of the key box in the **Key/Value Targeting** dialog. You can remove all or part of the target expression by clicking the X in the upper-right corner of each group or key box .
+You can create only one key/value target per line item. To change the values associated with a given key, select the pencil icon on the right side of the key box in the **Key/Value Targeting** dialog. You can remove all or part of the target expression by selecting the X in the upper-right corner of each group or key box .
 
 > [!WARNING]
-> If you click the X to remove a key/value set or a group, you cannot undo that action. You must add the key/value set or group again.
+> If you select the X to remove a key/value set or a group, you cannot undo that action. You must add the key/value set or group again.
 
 ## Create new values
 
@@ -206,7 +206,7 @@ If you do put commas in your CSV file, you'll receive an error when you attempt 
 
 ### Enter new values
 
-You can enter individual values to target with the specified key. Simply type the values you want to target for that key in the text box, one value per line.
+You can enter individual values to target with the specified key. Simply enter the values you want to target for that key in the text box, one value per line.
 
 A key can have a maximum of 999 values. To add more values to a given key, you can combine keys with the same name with `or` expressions, as shown here:
 

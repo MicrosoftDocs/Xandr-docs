@@ -80,7 +80,7 @@ Make the below changes to the s2sConfig:
        {
           "targeting":{
              "includebidderkeys":true,
-             "includewinners":true
+             "includewinners":true,
              "includeformat":true
           }
        }
@@ -143,7 +143,7 @@ If `includebidderkeys` is true, the following targeting keys will be received:
 - `"hb_pb_appnexus": "0.00"`,
 - `"hb_size_appnexus": "600x500"`
 
-If `includeformat` is also set to true in addition to either of the above parameters, this key will be received as well:
+If `includeformat` is also set to true **in addition to either of the above parameters**, this key will be received as well:
 
 - `"hb_format_appnexus": "banner"`
 

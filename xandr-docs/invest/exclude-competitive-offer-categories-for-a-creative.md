@@ -10,7 +10,7 @@ When adding creatives, you can apply competitive exclusions from the **Competiti
 
 You can also set offer category exclusions at the advertiser level. For additional information about setting competitive exclusions at the advertiser level, see [Competitive Exclusions](competitive-exclusions.md).
 
-1. Click in the **Offer Categories** subsection.
+1. Select in the **Offer Categories** subsection.
 1. Search for specific offer categories and select the appropriate checkboxes.
 
 ## Related topic

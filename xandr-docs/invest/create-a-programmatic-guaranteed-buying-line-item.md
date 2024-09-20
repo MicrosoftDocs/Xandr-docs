@@ -30,13 +30,13 @@ The following tasks are recommended but not required:
 
 To create a new PG line item, do the following:
 
-1. Click **Create New** in the **Line Item** menu or section. If prompted, select an advertiser in the **Select an Advertiser** screen. The **Create New Line Item screen** opens.
+1. Select **Create New** in the **Line Item** menu or section. If prompted, select an advertiser in the **Select an Advertiser** screen. The **Create New Line Item screen** opens.
 1. On the **Create New Line Item** screen, select **Programmatic Guaranteed** under **Line Item Type**.
 
    > [!IMPORTANT]
    > You must have an **advertiser** and **insertion order** associated with the line item in the Advertiser and Insertion Order sections. If necessary, select an advertiser and insertion order.
 
-1. Click **Next** to open the **Create a Programmatic Guaranteed Line Item** screen.
+1. Select **Next** to open the **Create a Programmatic Guaranteed Line Item** screen.
 
 ## Basic setup
 
@@ -54,7 +54,7 @@ In the **Basic Setup** section, enter the following details for the PG line item
     - **Impressions**: Number of impressions reserved for this PG deal.
     - **Price**: Price of impressions for this PG deal.
   - **Geo Targeting**: Location of geo-targeting used by this PG deal.
-- **Insertion Order**: The insertion order associated with this PG line item. If you create the line item from the **Insertion Order Details** screen, the insertion order is automatically associated. Otherwise, click **Edit** to associate the line item with an insertion order.
+- **Insertion Order**: The insertion order associated with this PG line item. If you create the line item from the **Insertion Order Details** screen, the insertion order is automatically associated. Otherwise, select **Edit** to associate the line item with an insertion order.
   
   > [!NOTE]
   > PG line items **override** insertion order budgets, all levels of targeting, and any established frequency caps to ensure you fulfill your agreement with the publisher. PG line items **do not override** insertion order flight dates. You can keep a PG line item from being spent by setting it to **"Inactive"** at any time.
@@ -70,7 +70,7 @@ You can use conversion tracking on PG line items; see [Create a Conversion Pixel
 
 ## Conversion tracking
 
-Click the **edit** icon to associate conversion tracking pixels with this PG line item. Note that these pixels aren't used by optimization but can be used to track the line item's performance.
+Select the **edit** icon to associate conversion tracking pixels with this PG line item. Note that these pixels aren't used by optimization but can be used to track the line item's performance.
 
 ## Associated creatives
 
@@ -100,11 +100,11 @@ Select the creative rotation strategy you want to use:
 1. Select the creatives you want to associate with your PG line item from the **Search creative name or ID** list by checking the box next to the name, or enter multiple creatives using the **Paste List of IDs**. Selected creatives will appear in the **Creatives Associated** list. Ensure that you have at least one associated creative for each media type and ad size listed in the **Creative Requirements for this PG Deal**.
 1. Select specific flights or custom dates that fall within the date range for the Programmatic Guaranteed deal to schedule when associated creatives will serve by doing the following, if necessary:
 
-   1. Select the corresponding checkbox for a creative and click the **pencil icon** in the Dates section.
-   1. Choose **All Flight** or click the **Select Dates** button from the **Associate Dates** dialog if the creative will serve during specific flights.
+   1. Select the corresponding checkbox for a creative and select the **pencil icon** in the Dates section.
+   1. Choose **All Flight** or select the **Select Dates** button from the **Associate Dates** dialog if the creative will serve during specific flights.
    1. Select start and end dates to specify a date range that doesn't include any dates before the start date or after the end date of the deal. For example, if the flight has a start date of November 1 and an end date of December 1, then the custom date range cannot be any date before November 1 or after December 1. You can add multiple flights using the **Add Another** button.
-   1. Click **Apply**.
-1. When you finish making your selections, click **Save**.
+   1. Select **Apply**.
+1. When you finish making your selections, select **Save**.
 
 ## Reporting labels
 
@@ -119,7 +119,7 @@ Reporting labels allow you to report by metrics that are important to your busin
 
 ## Fees
 
-Click inside the **Associated Fees** search box to see a list of eligible third-party partner fees, or search for a fee name and select the desired fee. Fees required for all of the advertiser's line items are already applied automatically and are indicated by a lock icon.
+Select inside the **Associated Fees** search box to see a list of eligible third-party partner fees, or search for a fee name and select the desired fee. Fees required for all of the advertiser's line items are already applied automatically and are indicated by a lock icon.
 
 For more information, see [Partner Fees](partner-fees.md).
 
@@ -137,7 +137,7 @@ The **Projected Impact Overview** calculates the projected spend, media cost, pa
 
 ## Review and save changes
 
-Review the PG line item configuration and click **Save**.
+Review the PG line item configuration and select **Save**.
 
 ## Related topics
 

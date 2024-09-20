@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Step 1: Get started
 
-Go to the Segment Pixel list in the **Segments** screen (**Audiences** > **Segments**), select the check box next to the segment pixel that you want to export, click **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
+Go to the Segment Pixel list in the **Segments** screen (**Audiences** > **Segments**), select the check box next to the segment pixel that you want to export, select **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
 
 ## Step 2: Select the pixel format
 
@@ -31,7 +31,7 @@ In the Advanced Options section, you can select additional values to include in 
 
 ## Step 5: Generate the tags
 
-Click the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
+Select the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
 
 An image pixel looks something like this:
 

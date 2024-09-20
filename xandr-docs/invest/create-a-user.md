@@ -4,8 +4,7 @@ description: Learn to create users and assign them to various roles that gives u
 ms.date: 10/28/2023
 ---
 
-
-#  Microsoft Invest - Create a user 
+#  Microsoft Invest - Create a user
 
 You can create users and assign them to various roles. Each role gives the user a different level of access to your account. For each user you can personalize the formats used for decimals and large numbers. This page walks you through the process.
 
@@ -15,11 +14,11 @@ Network users have access to various areas and functionality of your Network bas
 
 ## User details
 
-**Getting There**
+### Get started
 
-You add **network** users in the Network section of Microsoft Invest. Click on your Member name in the top right of the navigation menu and select **Member Users**. This brings up the **Member Users** screen. Click the **+ New** button to open the **Create User** dialog.
+You add **network** users in the Network section of Microsoft Invest. Select your Member name in the top right of the navigation menu and select **Member Users**. This brings up the **Member Users** screen. Select the **+ New** button to open the **Create User** dialog.
 
-**Enter contact information**
+### Enter contact information
 
 From the **User Details** tab, enter the user's **Contact Information**.
 > [!NOTE]
@@ -27,7 +26,7 @@ From the **User Details** tab, enter the user's **Contact Information**.
 >
 > If the State is set to **Inactive**, the user will not be able to log in.
 
-**Select numerical formatting**
+### Select numerical formatting
 
 Within the **Contact Information** section you'll also find options for numeric formatting. From the **Reporting Decimal Format** and **Numerical Format** dropdowns, select the formats that are conventional in the user's geographical location. Numbers throughout Invest DSP will be displayed in the format chosen here for this user.
 
@@ -38,12 +37,12 @@ Within the **Contact Information** section you'll also find options for numeric 
 
 - **Numerical Format** - Select the thousand separator and decimal mark for numbers everywhere in Invest DSP except in reporting. This setting controls both how numbers appear to the user as well as how numbers can be entered by the user.
 
-**Provide API username and app permissions**
+### Provide API username and app permissions
 
 - **Login Credentials**: Enter a username. The username should not contain any special characters such as $, \#, and ". This will be the username the user can use to sign into the Microsoft Advertising API. For accessing the Microsoft Advertising Digital Platform UI products, the user's email will be used via the Microsoft Identity Platform to authenticate.
 - **Permissions**: If this user needs to view billing information in Invest DSP, select the **Admin User** checkbox.
 
-## Roles & permissions
+## Roles and permissions
 
 On the **Roles & Permission** tab, select the user role with the appropriate access rights for this particular user.
 
@@ -61,8 +60,8 @@ Check the **User must have peer approval to activate campaigns** checkbox if you
 
 You can create users for advertisers that want to run reports for themselves. Only users with the **User Manager** and/or **Network Advertiser Manager** role can create an Advertiser User. Note that this is not the same as the Invest DSP Advertiser Manager user: an advertiser user does not see data about any other advertisers and does not have editing capabilities. The following steps walk you through the creation process.
 
-1. Click on your member name in the top right of the navigation menu and select **Advertiser Users**.
-1. On the Advertiser Users screen, click **Add User**. This opens the **Create New User** dialog.
+1. Select your member name in the top right of the navigation menu and select **Advertiser Users**.
+1. On the Advertiser Users screen, select **Add User**. This opens the **Create New User** dialog.
 1. In the **Contact Information** section, enter the user's information. Also, select whether a point or comma should be used for decimals in the reports received by this user. The user **State** defaults to **Active**. Setting the state to **Inactive** will prevent the user from logging in.
 1. In the **Login Credentials** section, enter the username that the user will use to log in to Invest DSP. The username should not contain any special characters such as $, \#, and ". The username and password will be sent to the email address entered in the **Contact Information** section.
-1. To finish creating the new advertiser user, click **Save**. The user is then added to the list of advertiser users.
+1. To finish creating the new advertiser user, select **Save**. The user is then added to the list of advertiser users.

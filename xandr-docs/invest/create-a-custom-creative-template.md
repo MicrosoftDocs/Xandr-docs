@@ -4,15 +4,14 @@ description: Learn steps to create a new custom creative template either from sc
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Create a custom creative template 
+# Microsoft Invest - Create a custom creative template
 
 You can create a new custom creative template from scratch at any time.
 
 You can also duplicate an existing template and then modify it. For more information, see [Duplicate an Existing Custom Creative Template](duplicate-an-existing-custom-creative-template.md).
 
-1. Navigate to the **Creative Templates** screen by clicking **Creative \> Templates**.
-1. Click **New**.
+1. Navigate to the **Creative Templates** screen by selecting **Creative \> Templates**.
+1. Select **New**.
 1. Provide the following information:
     1. **Name**: The name of the creative template, which helps buyers identify the creative template when uploading creatives that match this template's media type and format.
 
@@ -28,7 +27,7 @@ You can also duplicate an existing template and then modify it. For more informa
        > [!NOTE]
        > If you include custom macros in the template code, the >must begin with the `#` symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded `adnxs.com` references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain (`adnxs.com` or `adnxs-simple.com`) will be used when the auction takes place.
 
-1. To add custom macros, expand the **Custom macros** section if necessary, click **Add Macros**, and do the following.
+1. To add custom macros, expand the **Custom macros** section if necessary, select **Add Macros**, and do the following.
 
    > [!NOTE]
    > You can add up to 20 custom macros. If the template is being used by any active creatives, you cannot add additional custom macros.
@@ -36,18 +35,18 @@ You can also duplicate an existing template and then modify it. For more informa
     1. Enter a name for this macro in the **Name** field that buyers will see when they upload creatives that use this template.
 
         The **Name** field is limited to a maximum of 50 characters.
-    1. Select a macro type from the **Type** pull-down menu such as **String** and **True / False**. 
+    1. Select a macro type from the **Type** pull-down menu such as **String** and **True / False**.
 
        For example, if you select **True / False**, buyers will see the macro name followed by a checkbox.
 
     1. If you selected **Select from List**, enter a value for **Option 1**.
 
-        To add more options, click **Add another option** and enter the corresponding value.
+        To add more options, select **Add another option** and enter the corresponding value.
 
-    1. If you want to require buyers to complete the macro when uploading new creatives that use this template, click the **Required** checkbox.
+    1. If you want to require buyers to complete the macro when uploading new creatives that use this template, select the **Required** checkbox.
     1. If you do not want the macro to be required, enter the **Default Value** that will be used when buyers do not complete the macro during creative uploads.
 1. Repeat step 4 to add each individual custom macro.
-1. Click **Save**.
+1. Select **Save**.
 
     The new creative template is active by default and can be applied to new creatives.
 

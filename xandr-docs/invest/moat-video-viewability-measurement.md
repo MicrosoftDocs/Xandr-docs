@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Moat video viewability measurement
 
-You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**). To do so, you must link your account with Moat and opt in via Microsoft Invest UI. Through this integration, if you are an existing Moat client, you can measure Moat's attention metrics for your video creatives. If you are not a Moat client, you can still activate Moat measurement. However, you will need to reach out to Moat in order to view their measurement data. To know more about Moat measurement, you can visit this [link](https://www.oracle.com/cx/advertising/measurement/).
+You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**). To do so, you must link your account with Moat and opt in via Microsoft Invest UI. Through this integration, if you are an existing Moat client, you can measure Moat's attention metrics for your video creatives. If you are not a Moat client, you can still activate Moat measurement. However, you will need to reach out to Moat in order to view their measurement data. To know more about Moat measurement, you can visit this [link](https://www.oracle.com/a/ocom/docs/measurement-innovation-how-to-evolve-your-ad-measurement-strategy-guide.pdf).
 
 > [!NOTE]
 >
@@ -21,10 +21,10 @@ This guide explains the process of enabling Moat Attention Metrics for your vide
 Integration with Moat's reporting is a seamless step in the process of uploading a new creative. Follow the below steps to do the needful:
 
 - Select your Advertiser and go to **Creative Manager** screen.
-- Click on **New** drop-down and select **Video** from the list to create a new video creative.
+- Select on **New** drop-down and select **Video** from the list to create a new video creative.
 - In **Video Creative: Create New** screen, you can:
-  - Either upload a video file under **Hosted File** section. You can upload the video file by dragging it onto the area labeled **Drop File Here To Upload** or by clicking the **Select File** button and browsing through your files. For more information about the steps involved in this setup, check out [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md).
-  - Or enter the link for a video under **Third-Party URL** section and click **Continue**.
+  - Either upload a video file under **Hosted File** section. You can upload the video file by dragging it onto the area labeled **Drop File Here To Upload** or by selecting the **Select File** button and browsing through your files. For more information about the steps involved in this setup, check out [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md).
+  - Or enter the link for a video under **Third-Party URL** section and select **Continue**.
 - Once the file is uploaded, you will find the **Moat Attention Metrics** checkbox under **Verification** section of **Pixels (optional)** panel. Check the **Moat Attention Metrics** checkbox to include metrics about this creative in your Moat dashboard.
   
   > [!NOTE]
@@ -37,7 +37,7 @@ Integration with Moat's reporting is a seamless step in the process of uploading
 
 ## Manage existing video creative
 
-Existing hosted video creatives can also be linked to Moat Attention Metrics. Find the **Moat Attention Metrics** checkbox by navigating to the **Creative Manager**, select your creative and click on the **Full Edit** button. The checkbox is under **Verification** section of **Pixels (optional)** panel. Check the box to include metrics about this creative in your Moat dashboard.
+Existing hosted video creatives can also be linked to Moat Attention Metrics. Find the **Moat Attention Metrics** checkbox by navigating to the **Creative Manager**, select your creative and select on the **Full Edit** button. The checkbox is under **Verification** section of **Pixels (optional)** panel. Check the box to include metrics about this creative in your Moat dashboard.
 
 ## Post setup
 

@@ -4,14 +4,13 @@ description: This page is a step-by-step guide to create a conversion pixel.
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Create a conversion pixel  
+# Microsoft Invest - Create a conversion pixel
 
 A conversion pixel is used to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. This page walks you through the process of creating a conversion pixel.
 
 ## Step 1. Get started
 
-Go to the **Conversion Pixels** screen (**Audiences \> Conversion Pixel**) and click the **+ New** button. This opens the **Create New Pixel** dialog.
+Go to the **Conversion Pixels** screen (**Audiences \> Conversion Pixel**) and select the **+ New** button. This opens the **Create New Pixel** dialog.
 
 ## Step 2. Enter the conversion pixel details
 
@@ -62,7 +61,7 @@ Add piggyback pixels with the following in mind:
 
 ## Step 7. Save the conversion pixel
 
-To finish adding the conversion pixel to the Microsoft Advertising platform, click the **Save** button. The pixel is then added to the Conversion Pixels list, where you can add it to your line item.
+To finish adding the conversion pixel to the Microsoft Advertising platform, select the **Save** button. The pixel is then added to the Conversion Pixels list, where you can add it to your line item.
 
  > [!TIP]
  > The conversion pixel can be attached to a line item for valuation.

@@ -11,7 +11,7 @@ The Insertion Orders page is a central hub for advertisers, offering a streamlin
 
 ## Insertion order context and menu
 
-- Clicking the hamburger icon on the Insertion order sub-navigation causes the Insertion order menu to slide out from the left side of the screen. This action displays all Insertion orders associated with a particular advertiser.
+- Selecting the hamburger icon on the Insertion order sub-navigation causes the Insertion order menu to slide out from the left side of the screen. This action displays all Insertion orders associated with a particular advertiser.
 - Users can search directly for an Insertion order by name or ID, as well as filter by state:
 
   - Active, or
@@ -20,8 +20,8 @@ The Insertion Orders page is a central hub for advertisers, offering a streamlin
 
 ## Analytics and settings buttons
 
-- Click the **Settings** button in the top-right corner to load the Insertion order details. This opens the **Settings** tab and displays the Insertion order details.
-- Click the **Analytics** tab in the top-right corner to load the analytics details. This displays the chart section, featuring a dual Y-axis bar and line graph based on two metrics that is selected.
+- Select the **Settings** button in the top-right corner to load the Insertion order details. This opens the **Settings** tab and displays the Insertion order details.
+- Select the **Analytics** tab in the top-right corner to load the analytics details. This displays the chart section, featuring a dual Y-axis bar and line graph based on two metrics that is selected.
 
 > [!NOTE]
 > The default value of these metrics are always going to be Revenue and CPC.
@@ -33,7 +33,7 @@ The left hand side Y-axis will represent the first metric. The values supported 
 | `Media Cost` | Cost your network has spent buying media for campaigns under the line item. Media Cost always appears in USD (the currency in which Microsoft Advertising transacts). |
 | `Viewable Impressions` | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second. |
 | `Impressions` | Number of impressions for all campaigns under the line item. |
-| `Revenue` | Revenue the advertiser has paid or will pay your network as a result of campaigns under the line item. | 
+| `Revenue` | Revenue the advertiser has paid or will pay your network as a result of campaigns under the line item. |
 
 The right hand side Y-axis will represent the second metric. The values supported are:
 
@@ -41,7 +41,7 @@ The right hand side Y-axis will represent the second metric. The values supporte
 |:---|:---|
 | `Impressions` | Number of impressions for all campaigns under the line item. |
 | `Viewable Impressions` | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in-view during 1 consecutive second |
-| `Revenue` | Revenue the advertiser has paid or will pay your network as a result of campaigns under the line item. | 
+| `Revenue` | Revenue the advertiser has paid or will pay your network as a result of campaigns under the line item. |
 | `CPM` | The standard basic pricing model for online advertising in which advertisers pay for every 1,000 impressions of their served creative. |
 | `Click`s` | Number of clicks for all campaigns under the line item. |
 | `CPC` | A payment model in which advertisers pay each time a user clicks on their creative. |
@@ -57,7 +57,7 @@ The right hand side Y-axis will represent the second metric. The values supporte
 
 ## Progress of the Billing Period
 
-- Click the **Billing Period** dropdown to view a list of each billing period under different metrics. 
+- Select the **Billing Period** dropdown to view a list of each billing period under different metrics. 
 - When you select an option, the Analytics tab updates to reflect the metrics values for that Insertion order (on the chart) and the average metrics information for the billing period progress and average metrics section. 
 - The Billing Period Progress bar represents the pacing of the Insertion order, showing how much of the budget has been spent in relation to how much should be spent at this point in the current billing period.
 
@@ -87,7 +87,7 @@ The average metrics section aggregates data across the billing period or lifetim
 
 ## Line item grid
 
-The line item grid below the Insertion order and **Analytics** section details all Line items associated with a particular Insertion order. It supports features such as search, filtering, and bulk editing. It enables users to pull reports by clicking the **Download Report** button, enabling them to view and gain insights into the campaign's performance during the length of the flight duration.
+The line item grid below the Insertion order and **Analytics** section details all Line items associated with a particular Insertion order. It supports features such as search, filtering, and bulk editing. It enables users to pull reports by selecting the **Download Report** button, enabling them to view and gain insights into the campaign's performance during the length of the flight duration.
 
 ## Related topics
 

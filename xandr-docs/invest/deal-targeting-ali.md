@@ -29,15 +29,15 @@ When you select the **Deals** option in the **Inventory & Brand Safety Targeting
 
     | Targeting Option | Steps |
     |:---|:---|
-    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**.<br><br> **Tip:** You can also click the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
-    | **Deal Lists** | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the **green check**, or exclude deals by clicking the **red dash**. |
+    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br> b. Include deals by selecting the **green check**, or exclude deals by selecting the **red dash**.<br><br> **Tip:** You can also select the eye button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
+    | **Deal Lists** | a. Search for available deal lists by ID or name to target.<br> b. Include deals by selecting the **green check**, or exclude deals by selecting the **red dash**. |
 
     > [!NOTE]
     > You may either include deals OR exclude deals, and deal lists, but not both. Include and exclude functionality has to be consistent at line item level. For example, you can't include a deal list and exclude a deal from the deal list on the line item.
     >
     > Deal lists and deals follow the line item and split level targeting constraints. If a deal list and associated deals are excluded at the line item level, splits will not be able to target that inventory regardless of any selections made. Whereas if a deal or deal list is included at the line item level, then split targeting will be respected.
 
-1. Click **Save**.
+1. Select **Save**.
 
 ## Target deals and deal lists at the Programmable Split level
 
@@ -45,7 +45,7 @@ You can specify the deals and/or deal lists to include, or exclude in programmab
 
 1. Select **Deals** or/and **Deal Lists** under **Inventory** within the **Select Targeting** menu in the **Programmable Splits** section of the **Create New Line Item** and **Edit Line Item** screens.
 
-1. Click the **pen** icon next to **Any** under **Deals** or/and **Deal Lists** to go to the **Edit Split** pop-up.
+1. Select the **pen** icon next to **Any** under **Deals** or/and **Deal Lists** to go to the **Edit Split** pop-up.
 
 1. In the **Deals/Deal Lists** search field, enter a **Deal List ID** or **Deal ID**, or **Name** to search for deals and deal lists.
 
@@ -55,7 +55,7 @@ You can specify the deals and/or deal lists to include, or exclude in programmab
 
 1. If you would like to exclude deal lists or deals, select **Exclude All** in the menu.
 
-1. Click **Apply** to save the configuration.
+1. Select **Apply** to save the configuration.
 
 > [!NOTE]
 > If you're targeting both deal(s) and deal list(s) within the same split, the boolean logic between them will be AND.

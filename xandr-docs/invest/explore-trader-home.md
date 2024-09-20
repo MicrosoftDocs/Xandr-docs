@@ -42,7 +42,7 @@ The right pane window displays the Insertion order and its associated Line items
     | CPC | Payment per click.|
     | Margin | Cost (what you spend on inventory) plus a percentage of what the advertiser spends. |
 
-- In the Trader Home, each Insertion order card features a “Favourite” option. This enables you to quickly bookmark your most important or frequently accessed Insertion Order by clicking the “star” icon at the bottom of the card.
+- In the Trader Home, each Insertion order card features a “Favourite” option. This enables you to quickly bookmark your most important or frequently accessed Insertion Order by selecting the “star” icon at the bottom of the card.
 
 ## Sort and filter
 

@@ -4,8 +4,7 @@ description: In this page, learn to create an impression tracker, associate it w
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Create an impression tracker 
+# Microsoft Invest - Create an impression tracker
 
 Impression trackers are used to track user impressions on creatives served by off-platform (non-Microsoft Advertising) ad servers.
 
@@ -14,19 +13,19 @@ This document describes how to create an impression tracker and export it for us
 ## Step 1. Create an impression tracker
 
 1. Navigate to the **Impression Trackers** screen (**Creative \> Impression Trackers**) and select an appropriate advertiser if prompted.
-2. On the **Impression Trackers** screen, click **+ New** to open the **Create New Impression Tracker** dialog.
-3. In the **Imp Tracker Details** section, enter the name of the impression tracker. You can click **Advanced Options** if you'd like to assign your own custom code to this impression tracker.
+2. On the **Impression Trackers** screen, select **+ New** to open the **Create New Impression Tracker** dialog.
+3. In the **Imp Tracker Details** section, enter the name of the impression tracker. You can select **Advanced Options** if you'd like to assign your own custom code to this impression tracker.
 
 ## Step 2. Associate with a line item (required)
 
-Impression trackers are associated with line items. Under the **Line Item Association** section, click **Edit** to choose the line item you'd like to associate this impression tracker with. You can also search for a line item.
+Impression trackers are associated with line items. Under the **Line Item Association** section, select **Edit** to choose the line item you'd like to associate this impression tracker with. You can also search for a line item.
 
 > [!NOTE]
 > Once a line item is associated with an impression tracker, you can report on the impressions coming through that tracker. You can separate impression and click trackers bygrouping by **Impression Type** in [Member Reporting](network-reporting.md).
 
 ## Step 3. Associate with a publisher (required)
 
-Under **Publisher Settings**, click **Edit** and choose the publisher you'd like to associate this impression tracker with.
+Under **Publisher Settings**, select **Edit** and choose the publisher you'd like to associate this impression tracker with.
 
 ## Step 4. Associate with a placement (optional)
 
@@ -38,7 +37,7 @@ Because you are required to associate your impression tracker with a publisher, 
 
 ## Step 6. Export the impression tracker
 
-Finally, export the impression tracker by clicking the checkbox to its left, and selecting **More Actions \>  Export tags** from the menu to the right of the **Create Imp Tracker** button.
+Finally, export the impression tracker by selecting the checkbox to its left, and selecting **More Actions \>  Export tags** from the menu to the right of the **Create Imp Tracker** button.
 
 The **Export Trackers** dialog will appear. Under **Basic Options**, you can choose to export a JavaScript tag or a secure pixel.
 
@@ -50,7 +49,7 @@ The **Advanced Options** section presents several different macros that you can 
 
 The exported impression tracker will look something like the following (this tracker includes placeholders for the macros `CACHEBUSTER`, `ANCOST` and `REDIRECT_URL` from the **Advanced Options** section of the export dialog shown above).
 
-``` 
+```
 <!-- Imp Tracker DO NOT MODIFY --> <img src="media/imptr?id=2766&cachebuster=[CACHEBUSTER]&ancost=[ANCOST]&t=2&redir=[REDIRECT_URL]" width="1" height="1" /> <!-- End of Imp Tracker --> 
 ```
 

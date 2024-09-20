@@ -4,8 +4,7 @@ description: Learn how to create and export a click tracker for use with creativ
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Create a click tracker 
+# Microsoft Invest - Create a click tracker
 
 Click trackers are used to track user clicks on creatives served by off-platform (non-Microsoft Advertising) ad servers.
 
@@ -13,20 +12,20 @@ This document describes how to create and export a click tracker for use with cr
 
 ## Step 1. Create a click tracker
 
-Navigate to the **Click Trackers** screen (**Creative\>  Click Trackers**) and click the **Create Click Tracker** button.
+Navigate to the **Click Trackers** screen (**Creative\>  Click Trackers**) and select the **Create Click Tracker** button.
 
-The **Create new Click Tracker** dialog will appear. In the **Click Tracker Details** section, enter the name of the click tracker. You can click **Advanced Options** if you'd like to assign your own custom **Code** and **Landing Page URL** to this click tracker.
+The **Create new Click Tracker** dialog will appear. In the **Click Tracker Details** section, enter the name of the click tracker. You can select **Advanced Options** if you'd like to assign your own custom **Code** and **Landing Page URL** to this click tracker.
 
 ## Step 2. Associate with a line item (required)
 
-Click trackers are associated with line items. In the **Line Item Association** section, click **Edit** to choose the line item you'd like to associate this click tracker with. You can also search for a line item by name.
+Click trackers are associated with line items. In the **Line Item Association** section, select **Edit** to choose the line item you'd like to associate this click tracker with. You can also search for a line item by name.
 
 > [!IMPORTANT]
 > Once a line item is associated with a click tracker, you can report on the clicks coming through that tracker at the line item level. You can separate impression and click trackers by grouping by **Impression Type** in [Member Reporting](network-reporting.md).
 
 ## Step 3. Associate with a publisher (required)
 
-Under **Publisher Settings**, click **Edit** and choose the publisher you'd like to associate this click tracker with.
+Under **Publisher Settings**, select **Edit** and choose the publisher you'd like to associate this click tracker with.
 
 ## Step 4. Associate with a placement (optional)
 
@@ -38,7 +37,7 @@ Because you are required to associate your click tracker with a publisher, you c
 
 ## Step 6. Export the click tracker
 
-Finally, export the click tracker by clicking the checkbox to its left, and selecting **More Actions \> Export Tags** from the menu to the right of the **Create Click Tracker** button.
+Finally, export the click tracker by selecting the checkbox to its left, and selecting **More Actions \> Export Tags** from the menu to the right of the **Create Click Tracker** button.
 
 The **Export Trackers** dialog will appear. Under **Basic Options**, you can choose to export a JavaScript tag or a secure pixel.
 
@@ -66,4 +65,4 @@ The table below lists the parameters you can add to the click tracker and their 
 
 ## Related topics
 
- [Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md)
+[Clicktrackers Feed](../digital-platform-api/clicktrackers-feed.md)

@@ -19,7 +19,7 @@ The procedures outlined in this section elucidate the steps to make a data provi
 To access a particular data provider's segment offering:
 
 1. Navigate to the Segments screen **Audiences** > **Segments**
-1. Click **Manage Data Providers**. If you don't see this option, contact your Account Manager.
+1. Select **Manage Data Providers**. If you don't see this option, contact your Account Manager.
 1. Select the data providers for whom you want the data cost to be cleared directly by Microsoft. Each activated data provider (whose data cost will be cleared by Microsoft) will appear checked and highlighted.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Your invoices contain the Cost of Data row. This row is a sum of all third-party
 
 ### Set data costs to display in grid views
 
-To set your Insertion Order or Line Item grid views to display your third-party data costs, click on the column settings button (for each object) and select Third-party Costs on the Configure Columns screen that appears. As a result of selecting this option, the aggregated totals of all third-party data costs will appear within your grid views.
+To set your Insertion Order or Line Item grid views to display your third-party data costs, select the column settings button (for each object) and select Third-party Costs on the Configure Columns screen that appears. As a result of selecting this option, the aggregated totals of all third-party data costs will appear within your grid views.
 
 ### Data cost metric on the insertion order grid view
 

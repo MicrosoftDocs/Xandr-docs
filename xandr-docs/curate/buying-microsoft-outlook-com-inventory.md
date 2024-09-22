@@ -37,7 +37,7 @@ The recommended minimum creative dimensions are 160px x 600px.
 > [!NOTE]
 > SSL creative required.
 
-## Target instructions
+## Instructions for targeting
 
 For information on general inventory targeting, see [Buy Microsoft Inventory](buying-microsoft-inventory.md) and [Domain Targeting](../monetize/domain-targeting.md).
 

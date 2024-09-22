@@ -25,7 +25,7 @@ Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Mi
 
 ## Formats and specifications
 
-### Creative specs**
+### Creative specs
 
 | Creative Size | Windows AppNetwork | Windows Phone AppNetwork |
 |--|--|--|

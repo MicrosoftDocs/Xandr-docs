@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Buy Microsoft Inventory
-description: In this article, learn how to buy, create, and target Microsoft inventory.
+description: Learn how to buy, create, and target Microsoft inventory. This article explains ways to buy inventory from a specific Microsoft publisher.
 ms.date: 10/28/2023
 ---
 

@@ -25,8 +25,7 @@ For step-by-step instructions on customizing your profile, see [Customize Your S
 
 ## Set buyer defaults
 
-You can establish default buyer eligibility, allowed payment types, and targeting access settings for all demand partners within the
-**Default Settings** dialog.
+You can establish default buyer eligibility, allowed payment types, and targeting access settings for all demand partners within the **Default Settings** dialog.
 
 For step-by-step instructions on setting your default settings, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 

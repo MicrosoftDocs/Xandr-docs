@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Buy Microsoft Casual Games (Windows O&O Apps)
-description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.
+description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.Discover a variety of fun and engaging game options for users.
 ms.date: 10/28/2023
 ---
 
@@ -37,11 +37,11 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 Minesweeper is the classic puzzle game that has been a part of Windows for more than 20 years, now reimagined for Windows 8 and 10. Featuring adjustable difficulty, classic Minesweeper gameplay, and a brand new Adventure mode, Microsoft Minesweeper is better than ever.
 
-**Game Play and Game Completion screens** - Above the fold, right side of game screen.
+**Game Play and Game Completion Screens** - Above the fold, right side of game screen.
 
 :::image type="content" source="media/minesweepergame.png" alt-text="Screenshot of Microsoft Minesweeper Game Play and Game Completion screen.":::
 
-**Daily Challenge Menu sreens** - Above the fold, right side of menu screens.
+**Daily Challenge Menu Screens** - Above the fold, right side of menu screens.
 
 :::image type="content" source="media/minesweeperdaily.png" alt-text="Screenshot of Microsoft Minesweeper Daily Challenge menu screen.":::
 
@@ -51,11 +51,11 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 Users can play hundreds of puzzles in three exciting game modes: Classic Jigsaw, Jigsaw Jam, and Daily Challenges. Intuitive controls make Microsoft Jigsaw great using a mouse and keyboard, and excellent on touch screens. With multiple game modes, downloadable puzzle packs, and the ability to create custom puzzles, Microsoft Jigsaw provides hours of entertainment.
 
-**Game Play and Game Completion screens** - Above the fold, bottom right.
+**Game Play and Game Completion Screens** - Above the fold, bottom right.
 
 :::image type="content" source="media/jigsawgame.png" alt-text="Screenshot of Microsoft Jigsaw Game Play and Game Completion screen.":::
 
-**Menu screens** - Below the fold, right side of the menu screens.
+**Menu Screens** - Below the fold, right side of the menu screens.
 
 :::image type="content" source="media/jigsawmenu.png" alt-text="Screenshot of Microsoft Jigsaw menu screen.":::
 
@@ -65,11 +65,11 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 The new Microsoft Sudoku is the popular logic puzzle game that makes the most of a Windows device. With five difficulty levels, fresh daily challenges, achievements and leaderboards, Microsoft Sudoku provides hundreds of brain training puzzles for players of all ages.
 
-**Game Play and Game Completion screens** - Above the fold, bottom left.
+**Game Play and Game Completion Screens** - Above the fold, bottom left.
 
 :::image type="content" source="media/sudokugame.png" alt-text="Screenshot of Microsoft Sudoku Game Play and Game Completion screen.":::
 
-**Menu screens** - Below the fold, right side of the menu screens.
+**Menu Screens** - Below the fold, right side of the menu screens.
 
 :::image type="content" source="media/sudokumenu.png" alt-text="Screenshot of Microsoft Sudoku menu screen.":::
 
@@ -79,11 +79,11 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 Microsoft Mahjong is the classic matching game with beautiful imagery, intuitive controls, and all the features that fans of Mahjong come to expect.
 
-**Menu screens** - Below the fold, right side of menu screens.
+**Menu Screens** - Below the fold, right side of menu screens.
 
 :::image type="content" source="media/mahjongmenu.png" alt-text="Screenshot of Microsoft Mahjong menu screen.":::
 
-**Daily Challenge screens** - Above the fold, right side of screens.
+**Daily Challenge Screens** - Above the fold, right side of screens.
 
 :::image type="content" source="media/mahjongdaily.png" alt-text="Screenshot of Microsoft Mahjong Daily Challenge screen.":::
 
@@ -93,11 +93,11 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds on the Microsoft Minesweeper for Windows Adventure mode experience.
 
-**Main menu screen** - Below the fold, right side of screen.
+**Main menu Screen** - Below the fold, right side of screen.
 
 :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Microsoft Treasure Hunt menu screen.":::
 
-**Game Play and Game Completion screens** - Above the fold, right side of screen.
+**Game Play and Game Completion Screens** - Above the fold, right side of screen.
 
 :::image type="content" source="media/treasuregame.png" alt-text="Screenshot of Microsoft Treasure Game Play and Game Completion screen.":::
 
@@ -112,7 +112,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 ## Formats and specifications
 
-### Microsoft Solitaire Collection
+### Microsoft Solitaire Collection's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -123,37 +123,37 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > 728x90 only available on Windows 10
 
-### Microsoft Minesweeper
+### Microsoft Minesweeper's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-### Microsoft Jigsaw
+### Microsoft Jigsaw's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-### Microsoft Sudoku
+### Microsoft Sudoku's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-### Microsoft Mahjong
+### Microsoft Mahjong's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 
-### Microsoft Treasure Hunt
+### Microsoft Treasure Hunt's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        | X       |        |        |
 
-### Microsoft Ultimate Word Game
+### Microsoft Ultimate Word Game's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|

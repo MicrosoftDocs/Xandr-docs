@@ -1,15 +1,15 @@
 ---
-title: Anatomy of the Order Visibility Page
+title: Anatomy of Order Visibility Page
 description: In this article, learn the layout of the Order Visibility page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the order visibility page
+# Anatomy of Order Visibility page
 
-The Order Visibility page on the **Orders** tab shows basic information about the order, as well as the order lines it contains. Click an order line's name to display its **Order Line Visibility** page. This shows the order line's flighting and delivery, as well as any competing order lines.
+The Order Visibility page on the **Orders** tab shows basic information about the order, as well as the order lines it contains. Select an order line's name to display its **Order Line Visibility** page. This shows the order line's flighting and delivery, as well as any competing order lines.
 
-## About the order visibility page
+## Order Visibility page
 
 There are several sections on the **Order Visibility** page:
 
@@ -24,7 +24,7 @@ There are several sections on the **Order Visibility** page:
     - Add to Scenario - Available only if you use Scenario Manager. View how changing the order line's priority affects related products.
     - View in Reports - View order line information on the **Reports** tab.
 
-- **Order details panel** - Displays the latest details for the order. Data in this section is not affected by filters elsewhere on the screen. Click the down arrow next to the panel heading to expand and collapse as needed.
+- **Order details panel** - Displays the latest details for the order. Data in this section is not affected by filters elsewhere on the screen. Select the down arrow next to the panel heading to expand and collapse as needed.
   - **Basics** - Displays basic information about the order. This includes the order name, flight dates, order line ID, order and advertiser links, industry, and salesperson.
 
 - **Dashboard** – Displays a quick overview of order performance with metrics you commonly use for order analysis. Wherever applicable, both lifetime and date range values are displayed for each metric, so you can easily compare information. These values are automatically updated based on the date range you select in the header, and color-coded to match the performance chart. The following metrics are displayed in the dashboard:
@@ -47,9 +47,9 @@ There are several sections on the **Order Visibility** page:
 
 - **Order Lines** – Displays a summary or expanded view of all lines in the order. If you choose to view cancelled lines, these lines will be included in metric data in the **Dashboard** and **Performance chart**. Order lines projected to underdeliver are flagged with a warning.
 
-## Reporting on orders
+## Report on orders
 
-If you use the **Reports** tab, click the Advertiser name in the order Basics panel to open a pre-configured report to analyze the order. For consistent reporting, the **Dashboard** uses the same metrics that are available in the **Reports** tab.
+If you use the **Reports** tab, select the Advertiser name in the order Basics panel to open a pre-configured report to analyze the order. For consistent reporting, the **Dashboard** uses the same metrics that are available in the **Reports** tab.
 
 ## Related topics
 

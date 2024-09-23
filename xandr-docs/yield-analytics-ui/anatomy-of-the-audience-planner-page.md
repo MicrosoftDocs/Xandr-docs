@@ -1,5 +1,5 @@
 ---
-title: Anatomy of the Audience Planner Page
+title: Anatomy of Audience Planner Page
 description: In this article, learn the layout of the Audience Planner page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui

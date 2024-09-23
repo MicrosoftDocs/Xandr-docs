@@ -1,11 +1,11 @@
 ---
-title: Anatomy of the Products Dashboard Page
+title: Anatomy of Products Dashboard Page
 description: In this article, learn the layout of the Products Dashboard page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the products dashboard page
+# Anatomy of Products Dashboard page
 
 The Products Dashboard page is the primary view for the **Product** tab. It provides a summary of:
 
@@ -14,9 +14,9 @@ The Products Dashboard page is the primary view for the **Product** tab. It p
 - Product performance across products
 
 > [!TIP]
-> From any of the pages within the **Products** tab, you can click a product to see its full details on the **Product Visibility** page.
+> From any of the pages within the **Products** tab, you can select a product to see its full details on the **Product Visibility** page.
 
-## About the products dashboard interface
+## Products Dashboard page
 
 The **Products Dashboard** page consists of the following three widgets:
 

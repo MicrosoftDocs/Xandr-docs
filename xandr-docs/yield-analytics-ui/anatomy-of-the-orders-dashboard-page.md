@@ -17,7 +17,7 @@ The **Orders Dashboard** is comprised of the following three widgets:
 
 - **Consumed Impressions** – Displays a pie chart of the percentage of consumed impressions by order, order line, or advertiser for the specified date range.
 
-- **Order performance** – Displays multiple performance metrics filtered by order or order line, for the selected date range (the default is for the previous day). You can click on a specific order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
+- **Order performance** – Displays multiple performance metrics filtered by order or order line, for the selected date range (the default is for the previous day). You can select a specific order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
 
 For each widget, you can:
 

@@ -1,11 +1,11 @@
 ---
-title: About Reporting
+title: About Reports
 description: In this article, learn what reports are, how to create reports, and the different criteria to create reports.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# About reporting
+# About reports
 
 When you first access the **Reports** tab, you can open a number of predefined reports that answer specific inquiries (e.g., What is the sell-through of my network?). In addition, you can build your own custom reports. You can save, schedule, and share them.
 

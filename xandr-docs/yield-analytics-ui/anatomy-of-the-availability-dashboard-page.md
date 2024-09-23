@@ -1,5 +1,5 @@
 ---
-title: Anatomy of the availability pages
+title: Anatomy of availability pages
 description: In this article, learn the layout of the Availability Dashboard page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui

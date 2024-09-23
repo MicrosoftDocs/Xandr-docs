@@ -89,7 +89,7 @@ This report's data is retained for 33 days. For more information about how quick
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    1. Or, from the **Publishers** top menu, select on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**
+    1. Or, from the **Publishers** top menu, select **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
     > [!IMPORTANT]

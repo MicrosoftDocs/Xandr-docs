@@ -38,7 +38,7 @@ Using the **Inventory Library**, buyers can add premium video catalog (PVC) deal
         - **All Advertisers**
         - **Specific Advertisers** (requires that you search and select the appropriate advertisers)
 
-    1. select **Save**.
+    1. Select **Save**.
 1. To add PVC deals to an existing deal list:
     1. Select the **Existing Deal List** option.
     1. Search and select the appropriate deal list.

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buy GumGum inventory
 
-You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://www.gumgum.com/image-recognition/in-image-advertising), which are available programmatically through Microsoft Advertising. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
+You can enhance user engagement via [GumGum](https://www.gumgum.com) "in-image" or "in-screen" units, which are available programmatically through Microsoft Advertising. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
 
 ## Upload a third-party creative
 

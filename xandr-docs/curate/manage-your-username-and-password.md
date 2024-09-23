@@ -14,7 +14,7 @@ This page explains how to manage your username and password in Microsoft Curate.
 - Retrieving your username if you've forgotten it.
 - Resetting your password if you've forgotten it or if it's expired and you need a new one.
 
-## Log in after being locked out
+## Unlock account and log in
 
 If you've entered the incorrect username or password three times, you will be locked out from Curate. The lockout will last for a period of **five minutes**. You can attempt to log in again after waiting five minutes.
 

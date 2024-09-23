@@ -14,7 +14,7 @@ As a seller, you can manage all deals you have with buyers on the **Deals** scre
 
 You can also manage your deals with a specific buyer on the [Partnership Details Screen](partnership-details-screen-buyer-view.md).
 
-## Get to the Deals screen
+## Access the Deals screen
 
 To reach the **Deals** screen, select **Inventory** \> **Seller Deals** in the main navigation.
 

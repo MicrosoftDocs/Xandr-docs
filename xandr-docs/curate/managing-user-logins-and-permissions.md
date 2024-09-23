@@ -12,7 +12,7 @@ With the consolidation of Microsoft Advertising to the Microsoft family, we have
 
 For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
-## Account Management tasks
+## Account Management procedures
 
 - [Manage Your Username and Password](manage-your-username-and-password.md)
 
@@ -24,7 +24,7 @@ For more details, visit [Microsoft Identity Platform Login](microsoft-identity-p
 
 ## Access control
 
-- [Getting Started with Roles](getting-started-with-roles.md)
+- [Get Started with Roles](getting-started-with-roles.md)
 
   Read an introduction to using Roles for user access control.
 

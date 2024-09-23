@@ -10,7 +10,7 @@ On the **Partner Center** screen, the **Default Settings** option allows you to 
 
 For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
-## Get there
+## Access the Partner Center screen
 
 **Publisher clients:** select **Marketplace** \>  **Partner Center**.
 

@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This document outlines some scenarios where questions may arise in the minds of users while using Microsoft Identity Platform.
 
-## I do n't have a Microsoft Account
+## I don't have a Microsoft Account
 
 You can register for a free Microsoft Personal Account with any existing email you have access to. Go to [this link](https://account.microsoft.com/account) to register or manage your Microsoft Account.
 

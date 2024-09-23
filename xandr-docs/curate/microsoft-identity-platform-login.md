@@ -4,7 +4,7 @@ description: In this article, learn about using the Microsoft Identity Platform 
 ms.date : 10/28/2023
 ---
 
-# Microsoft Curate - Microsoft Identity Platform login
+# Microsoft Curate - Identity Platform login
 
 This document outlines an overview of authenticating users for Microsoft Advertising Advertising Products using Microsoft Identity Platform.
 

@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 On the **Partner Center** screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
 
-## Get to the **Partner Center** screen
+## Access **Partner Center** screen
 
 Go to **Admin** > **Partner Center** to reach the **Partner Center** screen.
 

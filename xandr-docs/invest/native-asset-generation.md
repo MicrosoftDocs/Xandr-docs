@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Native Asset Generation
-description: This article outlines the process of Native Asset Generation.
+description: This article outlines the process of Native Asset Generation for Microsoft Invest.
 ms.date: 09/23/2024
 ms.author: shsrinivasan
 ---

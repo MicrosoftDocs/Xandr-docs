@@ -211,7 +211,7 @@ This step changes depending on the type of custom model you are using and whethe
 
 #### Bid price model
 
-Using the API
+Use the API
 
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
@@ -338,7 +338,7 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
 
 #### Bid modifier model
 
-Using the API
+Use the API
 
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 

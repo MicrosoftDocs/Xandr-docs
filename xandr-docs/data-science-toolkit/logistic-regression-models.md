@@ -179,7 +179,7 @@ You determine the weights for each feature:
 
 This is all the data you need to call the AppNexus API.
 
-## What happens at auction time
+## Overview of auction time process
 
 Once the line item passes targeting, Xandr uses its logistic regression model to determine a bid price:
 

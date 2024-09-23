@@ -5,7 +5,7 @@ ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
-# Data Science Toolkit - Line item model service
+# Data Science Toolkit - Line Item Model service
 
 The Line Item Model service is used to associate custom models to the custom models array. Compared to the standard Line Item service, the Line Item Model service allows for the distinction between client uploaded models and Xandr generated models. The distinction between client and Xandr models is important for the following:
 

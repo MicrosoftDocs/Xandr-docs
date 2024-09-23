@@ -1,12 +1,12 @@
 ---
-title: Microsoft Curate - Using Events and Parameters
+title: Microsoft Curate - Use Events and Parameters
 description: Learn how Standard events allow you to capture the interactions that matter most to an advertiser. You can enhance events by adding additional information in the form of parameters.  
 ms.date: 11/15/2023
 
 ---
 
 
-#  Microsoft Curate - Using events and parameters
+#  Microsoft Curate - Use events and parameters
 
 After you have configured your universal pixel, you can add value by configuring it to identify events, such as adding an item to a shopping cart. Standard events allow you to capture the interactions that matter most to an advertiser. You can enhance events by adding additional information in the form of parameters.
 

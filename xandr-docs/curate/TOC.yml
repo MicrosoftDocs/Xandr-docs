@@ -1,237 +1,237 @@
-- name: Microsoft Curate product dcumentation
+- name: Microsoft Curate Product Documentation
   href: index.yml
-- name: Get started
+- name: Get Started
   items:
   - name: About Microsoft Curate
     href: about-curate.md
-  - name: Object hierarchy
+  - name: Object Hierarchy
     href: object-hierarchy.md
-  - name: Third-party inventory
+  - name: Third-Party Inventory
     items:
-    - name: Work with third-party inventory
+    - name: Work with Third-Party Inventory
       href: working-with-third-party-inventory.md
-    - name: Traffic quality
+    - name: Traffic Quality
       href: traffic-quality.md
-    - name: View your object limits
+    - name: View Your Object Limits
       href: viewing-your-object-limits.md
-  - name: User logins and permissions
+  - name: User Logins and Permissions
     items:
-    - name: Microsoft identity platform login
+    - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md
-    - name: Microsoft Identity Platform login troubleshooting
+    - name: Microsoft Identity Platform Login Troubleshooting
       href: microsoft-identity-platform-login-troubleshooting.md
-    - name: Manage user logins and permissions
+    - name: Manage User Logins and Permissions
       href: managing-user-logins-and-permissions.md
-    - name: Username and password
+    - name: Username and Password
       items:
-      - name: Manage your username and password
+      - name: Manage Your Username and Password
         href: manage-your-username-and-password.md
-      - name: Create a user
+      - name: Create a User
         href: create-a-user.md
-      - name: Edit a member user
+      - name: Edit a Member User
         href: edit-a-network-user.md
-      - name: Get started with roles
+      - name: Get Started with Roles
         href: getting-started-with-roles.md
-      - name: Member users screen
+      - name: Member Users Screen
         href: network-users-screen.md
   
   - name: Curate API
     href: digital-platform-ui-api-info.md
-- name: Partner center guide
+- name: Partner Center Guide
   items:
   - name: Overview
     href: partner-center-guide.md
-  - name: Seller guide
+  - name: Seller Guide
     items:
-    - name: Manage relationships with buyers
+    - name: Manage Relationships with Buyers
       href: managing-relationships-with-buyers.md
-    - name: Partner Center screen - seller view
+    - name: Partner Center Screen - Seller View
       href: partner-center-screen-seller-view.md
-    - name: Partnership details screen - seller view
+    - name: Partnership Details Screen - Seller View
       href: partnership-details-screen-seller-view.md
-    - name: Customize your seller profile
+    - name: Customize your Seller Profile
       href: customize-your-seller-profile.md
-    - name: Set default buyer eligibility, allowed payment types, and targeting access
+    - name: Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
       href: set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md
-    - name: Edit buyer eligibility, allowed payment types, and targeting access
+    - name: Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
       href: edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md
   - name: Buyer guide
     items:
-    - name: Manage relationships with sellers
+    - name: Manage Relationships with Sellers
       href: managing-relationships-with-sellers.md
-    - name: Partner center screen
+    - name: Partner Center Screen
       href: partner-center-screen-buyer-view.md
-    - name: Partnership details screen
+    - name: Partnership Details Screen
       href: partnership-details-screen-buyer-view.md
-    - name: Customize your buyer profile
+    - name: Customize your Buyer Profile
       href: customize-your-buyer-profile.md
-    - name: Set seller defaults
+    - name: Set Seller Defaults
       href: set-seller-defaults.md
-    - name: Edit seller defaults
+    - name: Edit Seller Defaults
       href: edit-seller-defaults.md
-    - name: Microsoft Advertising Direct for buyers
+    - name: Microsoft Advertising Direct for Buyers
       href: appnexus-direct-for-buyers.md
-  - name: Deals with buyers
+  - name: Deals with Buyers
     items:
-    - name: Manage your deals with buyers
+    - name: Manage your Deals with Buyers
       href: manage-your-deals-with-buyers.md
-    - name: Negotiate deals with buyers
+    - name: Negotiate Deals with Buyers
       href: negotiate-deals-with-buyers.md
-    - name: Understand buyer seat IDs
+    - name: Understand Buyer Seat IDs
       href: understanding-buyer-seat-ids.md
-    - name: External DSPs using buyer seat IDs
+    - name: External DSPs using Buyer Seat IDs
       href: external-dsps-using-buyer-seat-ids.md
-    - name: Deal auction mechanics
+    - name: Deal Auction Mechanics
       href: deal-auction-mechanics.md
-  - name: Buying deals
+  - name: Buying Deals
     items:
     - name: Overview
       href: buying-deals.md
-    - name: Negotiate deals with sellers
+    - name: Negotiate Deals with Sellers
       href: negotiate-deals-with-sellers.md
-    - name: Manage your deals with sellers
+    - name: Manage your Deals with Sellers
       href: manage-your-deals-with-sellers.md
-    - name: Control your deals with sellers
+    - name: Control your Deals with Sellers
       href: control-your-deals-with-sellers.md
-  - name: Understand bid rejections
+  - name: Understand Bid Rejections
     href: understanding-bid-rejections.md
-- name: Sell curated Deals
+- name: Sell Curated Deals
   items:
   - name: Overview
     href: selling-curated-deals.md
-  - name: Curated deals
+  - name: Curated Deals
     href: curated-deals.md
-  - name: Deal lists for curated deals
+  - name: Deal Lists for Curated Deals
     href: deal-lists-for-curated-deals.md
-  - name: Create a curated deal line item
+  - name: Create a Curated Deal Line Item
     href: create-a-curated-deal-line-item.md
   - name: Curator Margins
     href: curator-margins.md
-  - name: Curated deal floors
+  - name: Curated Deal Floors
     href: curated-deal-floors.md
-- name: Curation optimization
+- name: Curation Optimization
   href: curation-optimization.md
 - name: Buying Guide
   items:
   - name: Overview
     href: buying-guide.md
-  - name: Understand debug auction
+  - name: Understand Debug Auction
     href: understanding-the-debug-auction.md
-  - name: Work with advertisers
+  - name: Work with Advertisers
     items:
     - name: Overview
       href: working-with-advertisers.md
-    - name: Create an advertiser
+    - name: Create an Advertiser
       href: create-an-advertiser.md
-    - name: Explore and manage advertisers
+    - name: Explore and Manage Advertisers
       href: explore-and-manage-advertisers.md
-    - name: View advertiser details
+    - name: View Advertiser Details
       href: view-advertiser-details.md
-  - name: Work with insertion orders
+  - name: Work with Insertion Orders
     items:
     - name: Overview
       href: working-with-insertion-orders.md
-    - name: Explore insertion orders
+    - name: Explore Insertion Orders
       href: explore-insertion-orders.md
-    - name: View insertion order details
+    - name: View Insertion Order Details
       href: view-insertion-order-details.md
-    - name: Create an insertion order
+    - name: Create an Insertion Order
       href: create-an-insertion-order.md
-    - name: Update insertion orders
+    - name: Update Insertion Orders
       href: update-insertion-orders.md
-  - name: Currency support
+  - name: Currency Support
     href: currency-support.md
-  - name: Universal pixel
+  - name: Universal Pixel
     items:
     - name: Overview
       href: the-universal-pixel.md
-    - name: Universal pixel basic implementation
+    - name: Universal Pixel Basic Implementation
       href: universal-pixel-basic-implementation.md
-    - name: Universal pixel code structure
+    - name: Universal Pixel Code Structure
       href: universal-pixel-code-structure.md
-    - name: Universal pixel consent mode
+    - name: Universal Pixel Consent Mode
       href: set-up-consent-mode-in-universal-pixel.md
-    - name: Events and parameters
+    - name: Events and Parameters
       items:
-      - name: Use events and parameters
+      - name: Use Events and Parameters
         href: using-events-and-parameters.md
-      - name: Create event code from the UI
+      - name: Create Event Code from the UI
         href: create-event-code-from-the-ui.md
-      - name: Create event code manually
+      - name: Create Event Code Manually
         href: create-event-code-manually.md
-      - name: Standard events and parameters
+      - name: Standard Events and Parameters
         href: standard-events-and-parameters.md
-      - name: Create custom events and parameters
+      - name: Create Custom Events and Parameters
         href: create-custom-events-and-parameters.md
-    - name: Universal pixel audiences and conversions
+    - name: Universal Pixel Audiences and Conversions
       items:
       - name: Overview
         href: universal-pixel-audiences-and-conversions.md
-      - name: Set up audiences with universal pixel
+      - name: Set up Audiences with Universal Pixel
         href: set-up-audiences-with-universal-pixel.md
-      - name: Set up conversions with universal pixel
+      - name: Set up Conversions with Universal Pixel
         href: set-up-conversions-with-universal-pixel.md
-      - name: Universal pixel rule conditions
+      - name: Universal Pixel Rule Conditions
         href: universal-pixel-rule-conditions.md
-    - name: Universal pixel reporting
+    - name: Universal Pixel Reporting
       href: universal-pixel-reporting.md
-    - name: Universal pixel object limits
+    - name: Universal Pixel Object Limits
       href: universal-pixel-object-limits.md
   - name: Buy Side Targeting
     items:
     - name: Overview
       href: buy-side-targeting.md
-    - name: App targeting
+    - name: App Targeting
       href: app-targeting.md
-    - name: Content category targeting
+    - name: Content Category Targeting
       href: content-category-targeting.md
-    - name: Daypart targeting
+    - name: Daypart Targeting
       href: daypart-targeting.md
-    - name: Device type targeting
+    - name: Device Type Targeting
       href: device-type-targeting-ali.md
-    - name: Inventory performance targeting
+    - name: Inventory Performance Targeting
       href: inventory-performance-targeting.md
-    - name: Inventory lists
+    - name: Inventory Lists
       href: inventory-lists-ali-only.md
-    - name: Mobile user segment targeting
+    - name: Mobile User Segment Targeting
       href: mobile-user-segment-targeting.md
-    - name: Segment targeting
+    - name: Segment Targeting
       href: segment-targeting.md
-    - name: Geography targeting
+    - name: Geography Targeting
       items:
-      - name: Set up geography targeting for a line item
+      - name: Set up Geography Targeting for a Line Item
         href: set-up-geography-targeting-for-a-line-item.md
-      - name: Additional geo restrictions
+      - name: Additional Geo Restrictions
         href: additional-geo-restrictions-ali.md
-      - name: Use postal code lists
+      - name: Use Postal Code Lists
         href: postal-code-lists.md
-    - name: System targeting
+    - name: System Targeting
       href: system-targeting.md
-    - name: Microsoft advertising exchange inventory
+    - name: Microsoft Advertising Exchange Inventory
       href: microsoft-advertising-exchange-inventory.md
-    - name: Video targeting
+    - name: Video Targeting
       href: video-targeting.md
-    - name: Viewability targeting
+    - name: Viewability Targeting
       href: viewability-targeting.md
-  - name: Work with segments
+  - name: Work with Segments
     items:
     - name: Overview
       href: working-with-segments.md
-    - name: Audience data
+    - name: Audience Data
       items:
-      - name: Onboard your audience data
+      - name: Onboard your Audience Data
         href: onboarding-your-audience-data.md
-      - name: Client-side segmentation
+      - name: Client-side Segmentation
         href: client-side-segmentation.md
-      - name: Create a segment pixel
+      - name: Create a Segment Pixel
         href: create-a-segment-pixel.md
-      - name: Export a segment pixel
+      - name: Export a Segment Pixel
         href: export-a-segment-pixel.md
-    - name: Birthday cookies
+    - name: Birthday Cookies
       href: birthday-cookies.md
-    - name: Segment pixels - advanced
+    - name: Segment pixels - Advanced
       href: segment-pixels-advanced.md
-    - name: Pass in user data offline
+    - name: Pass in User Data Offline
       items: 
       - name: Overview
         href: pass-in-user-data-offline.md
@@ -239,53 +239,53 @@
         href: user-id-mapping-with-getuid-and-mapuid.md
       - name: View User Mapping Visual and Walk-Through
         href: user-mapping-visual-and-walk-through.md
-    - name: Location manager
+    - name: Location Manager
       items:
       - name: Overview
         href: location-manager.md
-      - name: Geo radius segments
+      - name: Geo Radius Segments
         href: geo-radius-segments.md
-  - name: Microsoft inventory
+  - name: Microsoft Inventory
     items:
-    - name: Buy Microsoft inventory
+    - name: Buy Microsoft Inventory
       href: buying-microsoft-inventory.md
-    - name: Buy MSN inventory
+    - name: Buy MSN Inventory
       href: buying-msn-inventory.md
-    - name: Buy Microsoft Casual Games (Windows O&O apps)
+    - name: Buy Microsoft Casual Games (Windows O&O Apps)
       href: buying-microsoft-casual-games-windows-o-o-apps.md
-    - name: Buy Microsoft deals
+    - name: Buy Microsoft Deals
       href: buying-microsoft-deals.md
-    - name: Buy Microsoft Outlook.com inventory
+    - name: Buy Microsoft Outlook.com Inventory
       href: buying-microsoft-outlook-com-inventory.md
-    - name: Buy Microsoft video inventory
+    - name: Buy Microsoft Video Inventory
       href: buying-microsoft-video-inventory.md
-    - name: Buy Microsoft Windows 3rd Party AppNetwork inventory
+    - name: Buy Microsoft Windows 3rd Party AppNetwork Inventory
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
-  - name: Political advertising
+  - name: Political Advertising
     href: political-advertising.md
 - name: Monitoring
   items:
   - name: Overview
     href: monitoring.md
-  - name: Monitor line items
+  - name: Monitor Line Items
     items:
     - name: Overview
       href: monitor-line-items.md
-    - name: View line item details
+    - name: View Line Item Details
       href: view-line-item-details-smw.md
-    - name: Set line item
+    - name: Set Line Item
       href: line-item-settings.md
-  - name: Troubleshoot line items
+  - name: Troubleshoot Line Items
     items:
     - name: Overview
       href: curate-troubleshooting-line-items.md
-    - name: Troubleshoot reports
+    - name: Troubleshoot Reports
       href: curate-troubleshooting-reports.md
-    - name: Impression funnel
+    - name: Impression Funnel
       href: curate-impression-funnel.md
-    - name: Impression funnel - seller deals
+    - name: Impression Funnel - seller Deals
       href: impression-funnel-seller-deals-curate.md
-    - name: Sample bid requests
+    - name: Sample Bid Requests
       href: curate-sample-bid-requests.md
 - name: Viewability
   items:
@@ -293,11 +293,11 @@
     href: introduction-to-viewability.md
   - name: Reports
     href: reporting-on-viewability.md
-  - name: vCPM payment type
+  - name: vCPM Payment Type
     href: vcpm-payment-type.md
-  - name: Measurement of video viewability using VPAID wrapper
+  - name: Measurement of Video Viewability using VPAID Wrapper
     href: video-viewability.md
-  - name: Description of methodology (DOM)
+  - name: Description of Methodology (DOM)
     href: ad-viewability-description-of-methodology-dom.md
   - name: FAQ
     href: viewability-faq.md
@@ -305,57 +305,57 @@
   items:
   - name: Overview
     href: reporting-guide.md
-  - name: Understand reporting concepts
+  - name: Understand Reporting Concepts
     items:
     - name: Overview
       href: general-reporting-concepts.md
-    - name: Dimensions, metrics, filter, and group
+    - name: Dimensions, Metrics, Filter, and Group
       href: dimensions-metrics-filtering-and-grouping.md
-    - name: Report dates and times
+    - name: Report Dates and Times
       href: dates-and-times-in-reporting.md
-    - name: Choose transactional reporting options
+    - name: Choose Transactional Reporting Options
       href: transactional-reporting-options.md
-    - name: Throttle reports
+    - name: Throttle Reports
       href: report-throttling.md
-    - name: Count impressions
+    - name: Count Impressions
       href: impression-counting.md
-  - name: Report data availability
+  - name: Report Data Availability
     href: availability-of-reporting-data.md
-  - name: Curate reports
+  - name: Curate Reports
     items:
     - name: Overview
       href: curator-reporting.md
     - name: Buyer Deal Metrics 
       href: buyer-deal-metrics.md
-    - name: Curator analytics report
+    - name: Curator Analytics Report
       href: curator-analytics-report.md
-    - name: Curator bid error report
+    - name: Curator Bid Error Report
       href: curator-bid-error-report.md
-    - name: Curate billing report
+    - name: Curate Billing Report
       href: curator-billing-report.md
-    - name: Curator segment performance report
+    - name: Curator Segment Performance Report
       href: curator-segment-performance-report.md
-    - name: Seller deal metrics
+    - name: Seller Deal Metrics
       href: seller-deal-metrics.md
-    - name: Member video analytics report
+    - name: Member Video Analytics Report
       href: network-video-analytics-report.md
 - name: Planner
   items:
   - name: Overview
     href: planner.md
-  - name: Create and activate a plan
+  - name: Create and Activate a Plan
     href: create-and-activate-a-plan.md
-  - name: Planner analytics
+  - name: Planner Analytics
     href: planner-analytics.md
-  - name: Sources of planner information
+  - name: Sources of Planner Information
     href: sources-of-planner-information.md
-  - name: Troubleshoot planner
+  - name: Troubleshoot Planner
     href: planner-troubleshooting.md
-- name: Release notes
+- name: Release Notes
   items:
   - name: Overview
     href: release-notes-curate.md
-  - name: June 26, 2023 - Open Beta for Seller Deal troubleshooting
+  - name: June 26, 2023 - Open Beta for Seller Deal Troubleshooting
     href: release-notes-curate-20230626.md
-  - name: June 27, 2023 - New advertiser and Insertion Order screens in Microsoft Curate UI
+  - name: June 27, 2023 - New Advertiser and Insertion Order Screens in Microsoft Curate UI
     href: release-notes-curate-20230627.md

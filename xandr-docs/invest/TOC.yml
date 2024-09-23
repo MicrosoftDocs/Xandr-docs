@@ -664,8 +664,12 @@
         href: creative-ctv-guidelines-and-specifications.md
     - name: Creative Spreadsheet Conventions
       href: creative-spreadsheet-conventions.md
-    - name: Add a Creative 
-      href: add-a-creative.md
+    - name: Creatives
+      items:
+      - name: Add a Creative
+        href: add-a-creative.md
+      - name: Native Asset Generation
+        href: native-asset-generation.md
     - name: Add Creatives in Bulk
       href: add-creatives-in-bulk.md
     - name: Update Creatives in bulk

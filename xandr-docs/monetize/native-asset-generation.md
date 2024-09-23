@@ -16,10 +16,10 @@ With Native Asset generation:
 - You can increase efficiency by using AI to generate advertising assets at scale, including headlines, descriptions, and images, reducing the time and effort required to create content. 
 - You can manage campaigns more effectively by swiftly adapting to market changes or consumer behaviour with optimized assets that resonate with your target audience and drive engagement. 
 
-> [!INFORMATION]
+> [!NOTE]
 > Microsoft Advertising will not incur additional costs for the use of this feature. It is provided free of charge.
 
-## Process of Native Asset generation 
+## Native Asset generation process
 
 The Native Asset generation is a streamlined process that guarantees a diverse range of text and image options, enhancing the quality of the generated Native ad assets.  
 1. **Crawling and rendering:** The system retrieves raw HTML from the target page and stores it temporarily. A headless browser then renders this page to ensure precise data retrieval. 

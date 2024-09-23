@@ -47,7 +47,7 @@ You must select CPM as your **Buying Strategy**. You can select any option under
 
 ## Upload a third-party creative
 
-Navigate to the **Creative Manager** screen. Click on the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
+Navigate to the **Creative Manager** screen. Select the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
 
 - Type: **Third-party creative**
 - Creative Format: **Third-party tag**

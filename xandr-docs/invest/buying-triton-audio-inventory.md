@@ -27,22 +27,22 @@ To set up and listen to a test ad:
     > [!NOTE]
     > These impressions will not becharged since this is a testing platform.
 1. In the **Targeting** section, select **Inventory** > **3rd Party Inventory** targeting and enter your custom placement ID using the **text** mode.
-1. Click **Include** and then **Add**.
+1. Select **Include** and then **Add**.
 1. Go to the following URL: `https://player.listenlive.co/xxxx`, where `xxxx` is the site ID provided by Triton Digital.
 
 ## Target Triton inventory
 
 After setting up your line item, you can target all Triton inventory or specific categories of Triton inventory.
 
-In the **Targeting** section under **Inventory**, click **Edit**. This opens the **Inventory Targeting** dialog.
+In the **Targeting** section under **Inventory**, select **Edit**. This opens the **Inventory Targeting** dialog.
 
 ## Target all Triton inventory
 
-In the **Inventory Targeting** dialog, under **3rd Party Inventory** > **Sellers**, search for "Triton". Include the seller called **Triton Digital** by clicking on the green checkmark icon.
+In the **Inventory Targeting** dialog, under **3rd Party Inventory** > **Sellers**, search for "Triton". Include the seller called **Triton Digital** by selecting on the green checkmark icon.
 
 ## Target specific categories of Triton audio inventory
 
-Alternatively, you can narrow the inventory to specific formats. Click **Triton Digital** in the **Sellers** view to see a list of all the categories.You are now in the **Publishers and Categories** view. Select the format categories you want to include.
+Alternatively, you can narrow the inventory to specific formats. Select **Triton Digital** in the **Sellers** view to see a list of all the categories.You are now in the **Publishers and Categories** view. Select the format categories you want to include.
 
 You can narrow the inventory type by excluding categories such as ad type, asset type etc. You can also exclude categories that you don't want instead of including categories that you do.
 
@@ -53,7 +53,7 @@ If you want to play only preroll ads, exclude the midroll category.
 To specify a preroll line item:
 
 1. In the inventory list for Triton Digital, search for **Midroll**.
-1. Click the minus icon to exclude the **Midroll** category.
+1. Select the minus icon to exclude the **Midroll** category.
 
 ## Device categories
 

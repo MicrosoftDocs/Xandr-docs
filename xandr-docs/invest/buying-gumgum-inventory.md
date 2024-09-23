@@ -10,7 +10,7 @@ You can enhance user engagement via [GumGum "in-image" or "in-screen" units](htt
 
 ## Upload a third-party creative
 
-Navigate to the **Creative Manager** screen. Click on the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
+Navigate to the **Creative Manager** screen. Select the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
 
 - **Type : Third Party Creative**
 - **Creative Format**: **Third-Party Tag**
@@ -51,4 +51,4 @@ Enter the creative ad HTML code into the field in the bottom-half panel and sele
 
 ### Step 3: Preview
 
-Click **preview**.
+Select **preview**.

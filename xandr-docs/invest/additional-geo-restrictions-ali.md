@@ -14,7 +14,7 @@ In addition to country, you can also restrict the impressions you target based o
 > [!WARNING]
 > Although restricting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes. Also, depending upon which geographic restriction options you choose, you may significantly reduce the likelihood of a match and thus jeopardize delivery.
 
-To restrict the impressions you target based on other geographic details of the users viewing them, click **Additional Geo Restrictions** next to **Geography** in the **Audience & Location Targeting** section of your line item and follow the instructions for the relevant geographic targeting option referenced below:
+To restrict the impressions you target based on other geographic details of the users viewing them, select **Additional Geo Restrictions** next to **Geography** in the **Audience & Location Targeting** section of your line item and follow the instructions for the relevant geographic targeting option referenced below:
 
 - Restrict users by country, region, or city
 - Restrict users by metro code
@@ -35,7 +35,7 @@ When creating ALIs, you will be required to include at least one geographic loca
 - The **Cities** list shows all of the cities that can be targeted. You can either include or exclude cities.
 
 > [!TIP]
-> Click the column headers to sort counties, regions, or cities by name or ID, or use the search field to find a particular location.
+> Select the column headers to sort counties, regions, or cities by name or ID, or use the search field to find a particular location.
 > [!WARNING]
 > Do not add conflicting geographic targeting at multiple levels. For example, if you are including the United States, Canada, and Mexico, and then you also include US zip codes, only the US zip codes targeted will be served. In this scenario, zip code targeting will automatically limit the targeting to the US only. Similarly, do not target both the region of Arizona and the metro code of New York, because geo restrictions are an AND relationship.
 
@@ -122,7 +122,7 @@ If your list contains postal/zip codes that don't exist in the Microsoft Adverti
 
 You can include and exclude postal code lists and individual postal codes from targeting on a line item.
 
-To target specific postal code lists available to you, click on the **Postal Codes** section within **Additional Geo Restrictions**, and then use the **Postal Code List** tab. You can search for available postal code lists by ID or name, and then click the **green check** to include a list or the **red dash** to exclude a list. For the United States, you can target the full 9-digit postal code (also known as zip +4). For example, 10010-7456.
+To target specific postal code lists available to you, select the **Postal Codes** section within **Additional Geo Restrictions**, and then use the **Postal Code List** tab. You can search for available postal code lists by ID or name, and then select the **green check** to include a list or the **red dash** to exclude a list. For the United States, you can target the full 9-digit postal code (also known as zip +4). For example, 10010-7456.
 
 ## Restrict users by political districts
 

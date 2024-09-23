@@ -26,7 +26,7 @@ The following are guidelines specific to creative standards required for Google 
 
 - Must be SSL compliant. Serving on secure inventory is selected by default. Do NOT make any changes to the setting when you are creating
   a new creative.
-- Click the **Run Check** button to have our VAST check scan your XML document. For more details, see [VAST Check](vast-check.md).
+- Select the **Run Check** button to have our VAST check scan your XML document. For more details, see [VAST Check](vast-check.md).
 
   For more information about adding in-stream video creatives, see [Add a Creative](add-a-creative.md) and [Upload a Hosted Video Creative](upload-a-hosted-video-creative.md).
 

@@ -75,22 +75,22 @@ To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **
 
 1. In the **Device and Supply Type** section, select **all device types** to target.
 1. Select **Default** to target **Web, Mobile Web,** and **App Placements**.
-1. In the **Inventory** section, click **Edit**.
+1. In the **Inventory** section, select **Edit**.
 1. On the **3rd Party Inventory** &gt; **Publishers & Categories** subtab, target **pubID** **348882** for **Windows AppNetwork** and/or **pubID** **336212** for **Windows Phone App Network**.
-1. Click **Add**.
+1. Select **Add**.
 
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** via Augmented Line Item - Programmatic Splits:
 
 1. Leave the default device type selected and Inventory Type should be set to **Apps & Web**.
 1. On the **Programmatic Split**, select **Publisher** and add **348882** & **336212** for desktop and phone apps respectively for inclusion.
-1. Click **Add**.
+1. Select **Add**.
 
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** by deal:
 
 1. Navigate to **Package MarketPlace** from the **Partners** ribbon.
 1. Select seller as **Microsoft Advertising Exchange (280)**.
 1. Search for Microsoft **Run of Windows PC Apps** and **Run of Windows Phone Apps**.
-1. Click **Get Deals** and this will generate a Deal ID to target.
+1. Select **Get Deals** and this will generate a Deal ID to target.
 
 ### Information about targeting criteria
 

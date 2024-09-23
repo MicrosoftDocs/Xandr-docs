@@ -25,11 +25,11 @@ Using the **Inventory Library**, buyers can add premium video catalog (PVC) deal
     - **Brand Safety**: Includes all brand sensitivity designations that this premium video inventory can be categorized under.
     - **Floor Price**: Allows for a minimum value of 0. The maximum value allowed will depend upon the premium video inventory that's available to you within the Inventory Library. A floor price is the minimum bid price that a seller is willing to accept for a bid on premium video inventory.
 1. Select the appropriate PVC deals.
-1. From the **Action Center** pane, click **More Info** to display the weighted floor price average along with the high, median, and low floor price values.
+1. From the **Action Center** pane, select **More Info** to display the weighted floor price average along with the high, median, and low floor price values.
 
    You can add more PVC deals to the **Action Center** pane at any time by repeating steps 2 and 3.
 
-1. After all PVC deals have been added to the **Action Center** pane, add them to a new or existing deal list by clicking **Add to Deal List**.
+1. After all PVC deals have been added to the **Action Center** pane, add them to a new or existing deal list by selecting **Add to Deal List**.
 1. To add PVC deals to a new deal list:
     1. Select the **New Deal List** option.
     1. Enter a name for the new deal list.
@@ -38,7 +38,7 @@ Using the **Inventory Library**, buyers can add premium video catalog (PVC) deal
         - **All Advertisers**
         - **Specific Advertisers** (requires that you search and select the appropriate advertisers)
 
-    1. Click **Save**.
+    1. select **Save**.
 1. To add PVC deals to an existing deal list:
     1. Select the **Existing Deal List** option.
     1. Search and select the appropriate deal list.
@@ -46,8 +46,8 @@ Using the **Inventory Library**, buyers can add premium video catalog (PVC) deal
         - **All Advertisers**
         - **Specific Advertisers** (requires that you search and select the appropriate advertisers)
 
-    1. Click **Save**.
-1. Click **Go to Deal Lists** to view the deal list.
+    1. Select **Save**.
+1. Select **Go to Deal Lists** to view the deal list.
 
     The selected PVC deals are now active. For more information about deal lists, see [Deal Lists](deal-lists.md).
 

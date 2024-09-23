@@ -80,7 +80,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, select the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
@@ -249,7 +249,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | View-Measured Imps | The total number of impressions that were measured for viewability. |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
-| Video Views | If you use the CPM bid strategy on the Microsoft Advertising Platform, online video views count each instance a potential customer plays your video for two continuous seconds with more than 50% of the screen in view. If you use the CPCV bid strategy for CTV, video views count each time a potential customer plays your video for 15 continuous seconds or clicks on the video, whichever occurs first. <br> **NOTE:** When you select CPCV as the bidding strategy, you pay for either a video view or a click, whichever occurs first. Video views exclude click interactions with the ad, which are captured under the Clicks metric. | 
+| Video Views | If you use the CPM bid strategy on the Microsoft Advertising Platform, online video views count each instance a potential customer plays your video for two continuous seconds with more than 50% of the screen in view. If you use the CPCV bid strategy for CTV, video views count each time a potential customer plays your video for 15 continuous seconds or clicks on the video, whichever occurs first. <br> **NOTE:** When you select CPCV as the bidding strategy, you pay for either a video view or a click, whichever occurs first. Video views exclude click interactions with the ad, which are captured under the Clicks metric. |
 | Video Completion Rate | On the Microsoft Advertising Platform, video completion rate represents the ratio of completed video views to the total number of video impressions. <br> **NOTE:** Discrepancies in video views impressions may occur due to technical issues on the publisher's side, which can affect the reported percentages. |
 | Clearing Event Booked Revenue Per Event | The total booked revenue per clearing event. |
 | Clearing Events Booked Revenue CPM | The booked revenue in CPM per event. |
@@ -295,13 +295,13 @@ Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been
     configured).
-    1. Or, from the Publishers top menu, click on **Prebid Server Premium &gt; Analytics &gt; Prebid Server Analytics**
+    1. Or, from the Publishers top menu, select **Prebid Server Premium &gt; Analytics &gt; Prebid Server Analytics**
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in
     the order you prefer.
 
@@ -324,7 +324,7 @@ Follow these steps to run your report.
       this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.
 
 ## Related topic
 

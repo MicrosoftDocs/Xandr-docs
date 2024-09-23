@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Open Beta for Native Asset Generation 
-description: Find the release note for Domain Audit Status.
+description: Find the release note for Native Asset Generation.
 ms.date: 09/23/2024
 ms.topic: release-notes
 ---

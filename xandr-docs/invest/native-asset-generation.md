@@ -1,6 +1,6 @@
 ---
 title: Microsoft Invest - Native Asset Generation
-description: This article outlines the process of Native Asset Generation, that streamlines the creation of advertising assets by automating the generation of images and text based on user inputs or webpage content.
+description: This article outlines the process of Native Asset Generation.
 ms.date: 09/23/2024
 ms.author: shsrinivasan
 ---

@@ -15,10 +15,8 @@ This page provides high-level guidance on the types of user identifiers availabl
 
 Publishers do not need to take any specific action regarding PSP to sync user cookies. The integration with Microsoft Monetize will synchronize Microsoft Advertising cookies, along with a rotation of pixels from the Monetize marketplace and Prebid Demand Partners (typically SSPs). Prebid Server Demand Partners are automatically synced through the userSync endpoints they [provide in GitHub](https://github.com/prebid/prebid-server/tree/master/static/bidder-info). If no endpoint is provided in a partner's .yaml file, they must actively contact Microsoft Advertising to supply a URL for implementation.
 
-User-matched request count and rate metrics currently only be reviewed by Demand Partner in the [PSP Health Analytics Report](prebid-server-premium-health-analytics-report.md).
-
 > [!NOTE]
-> These metrics currently only include cookies, not more persistent identifiers such as industry IDs (examples: RampID, UID 2.0) or publisher-provided IDs (PPIDs). The presence of device IDs is also not reflected in these metrics.
+> User-matched request count and rate metrics currently only be reviewed by Demand Partner in the [PSP Health Analytics Report](prebid-server-premium-health-analytics-report.md). These metrics include cookies, not more persistent identifiers such as industry IDs (examples: RampID, UID 2.0) or publisher-provided IDs (PPIDs). The presence of device IDs is also not reflected in these metrics.
 
 ### Prebid.js
 

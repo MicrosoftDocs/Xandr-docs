@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Best practices - product group
+# Best practices - Product group
 
 Product groups are helpful to organize your account, allowing you to work faster and more efficiently.
 
@@ -17,7 +17,7 @@ You can use groups as:
 
 Example: If you select a product group instead of a specific product, Yield Analytics will automatically pull in all products assigned to that group and add them to an availability lookup. If you apply a product group filter in reporting, you can quickly breakout or limit the data in that report - to the products in that group.
 
-## Best practices and recommendations for managing product groups
+## Best practices and recommendations to manage product groups
 
 - Assign every product in your system to at least one group, or reconsider why you need the product in the first place.
 - Use a naming convention: A naming convention should be applied to your product groups as well as your products. In many cases, you can simply repurpose your product naming convention. If you name things as **Site_Section_Platform_Adsize**, it is suggested to name a site group as **Site_All Products** and a section group as **Site_Section_All Products**, etc.

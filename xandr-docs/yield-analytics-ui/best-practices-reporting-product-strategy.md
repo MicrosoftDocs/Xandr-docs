@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 ## Reporting products overview
 
-Reporting products are products that are generally not sold, but are used for reporting purposes only.Reporting products can be used as shortcuts to:
+Reporting products are products that are generally not sold, but are used for reporting purposes only. Reporting products can be used as shortcuts to:
 
 - Aggregating meaningful pools of inventory
 - Breaking out consumption and optimizing campaigns

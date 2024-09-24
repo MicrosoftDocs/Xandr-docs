@@ -36,13 +36,13 @@
     href: products-overview.md
   - name: Products Dashboard
     items:
-    - name: Anatomy of the Products Dashboard Page
+    - name: Anatomy of Products Dashboard Page
       href: anatomy-of-the-products-dashboard-page.md
-    - name: Anatomy of the Find Products Page
+    - name: Anatomy of Find Products Page
       href: anatomy-of-the-find-products-page.md
-    - name: Anatomy of the Audience Planner Page
+    - name: Anatomy of Audience Planner Page
       href: anatomy-of-the-audience-planner-page.md
-    - name: Anatomy of the Product Visibility Page
+    - name: Anatomy of Product Visibility Page
       href: anatomy-of-the-product-visibility-page.md
   - name: Find and View a List of Products
     href: find-and-view-a-list-of-products.md
@@ -60,9 +60,9 @@
       href: builder-tab.md
   - name: Organize Products
     href: organize-products.md
-  - name: View the Full Details of a Product
+  - name: View Full Details of a Product
     href: view-the-full-details-of-a-product.md
-  - name: Edit the Details of a Product
+  - name: Edit Details of a Product
     href: edit-the-details-of-a-product.md
   - name: Best Practices - Product Group
     href: best-practices-product-group.md
@@ -70,11 +70,11 @@
   items: 
   - name: Overview
     href: reports-overview.md
-  - name: About Reporting
+  - name: About Reports
     href: about-reporting.md
   - name: Reports Tab
     items:
-    - name: Anatomy of the Reports Tab
+    - name: Anatomy of Reports Tab
       href: anatomy-of-the-reports-tab.md
     - name: Create a New Report
       href: create-a-new-report.md
@@ -104,11 +104,11 @@
   items:
   - name: Overview
     href: orders-overview.md
-  - name: About the Orders Tab
+  - name: About Orders Tab
     href: about-the-orders-tab.md
   - name: Orders Dashboard
     items:
-    - name: Anatomy of the Orders Dashboard Page
+    - name: Anatomy of Orders Dashboard Page
       href: anatomy-of-the-orders-dashboard-page.md
     - name: Check Consumed Impressions
       href: check-consumed-impressions.md
@@ -120,23 +120,23 @@
       href: view-order-information-for-a-specific-parent-product.md
   - name: Find Orders
     href: find-orders.md
-  - name: Anatomy of the Order Visibility Page
+  - name: Anatomy of Order Visibility Page
     href: anatomy-of-the-order-visibility-page.md
   - name: Find an Order Line
     href: find-an-order-line.md
-  - name: Anatomy of the Order Line Visibility Page
+  - name: Anatomy of Order Line Visibility Page
     href: anatomy-of-the-order-line-visibility-page.md
-  - name: View the Full Details of an Order or Order Line
+  - name: View Full Details of an Order or Order Line
     href: view-the-full-details-of-an-order-or-order-line.md
   - name: Solve Delivery Issues with Order Line Visibility
     href: solve-delivery-issues-with-order-line-visibility.md
   - name: Evaluate Orders
     items:
-    - name: Anatomy of the Evaluate Orders Page
+    - name: Anatomy of Evaluate Orders Page
       href: anatomy-of-the-evaluate-orders-page.md
-    - name: Evaluate the Yield of an Order
+    - name: Evaluate Yield of an Order
       href: evaluate-the-yield-of-an-order.md
-    - name: Anatomy of the Evaluate Orders Search Page
+    - name: Anatomy of Evaluate Orders Search Page
       href: anatomy-of-the-evaluate-orders-search-page.md
   - name: Import Order Template
     href: import-order-template.md
@@ -148,17 +148,17 @@
     href: about-forecasts-and-adjustments.md
   - name: Capacity Dashboard
     items:
-    - name: Anatomy of the Capacity Dashboard
+    - name: Anatomy of Capacity Dashboard
       href: anatomy-of-the-capacity-dashboard-page.md
     
     - name: Yield Analytics Seasonality FAQs
       href: yield-analytics-seasonality-faqs.md
     
-  - name: Anatomy of the Forecast Visibility Page
+  - name: Anatomy of Forecast Visibility Page
     href: forecast-visibility-page-anatomy.md
   - name: View Your Products Forecast
     href: view-your-products-forecast.md
-  - name: Anatomy of the Forecast Management Page
+  - name: Anatomy of Forecast Management Page
     href: anatomy-of-the-forecast-management-page.md
   - name: Adjustments
     items:
@@ -180,7 +180,7 @@
     href: view-and-work-with-scenario-manager.md
   - name: Scenario Manager
     items:
-    - name: Anatomy of the Scenario Manager Page
+    - name: Anatomy of Scenario Manager Page
       href: anatomy-of-the-scenario-manager-page.md
     - name: Run an Existing Order Line Through Scenario Manager
       href: run-an-existing-order-line-through-scenario-manager.md
@@ -224,7 +224,7 @@
   href: at-risk-management-chart-and-solution-paths.md
 - name: Availability Dashboard
   items:
-  - name: Anatomy of the Availability Pages
+  - name: Anatomy of Availability Pages
     href: anatomy-of-the-availability-dashboard-page.md
   - name: Check Availability
     href: check-availability-for-a-combination-of-targeting-attributes.md
@@ -238,7 +238,7 @@
     href: schedule-an-availability-lookup.md
   - name: View and Search for Saved Availability Lookups
     href: view-and-search-for-saved-availability-lookups.md
-  - name: Remove the Scheduling From a Saved Lookup
+  - name: Remove Scheduling From a Saved Lookup
     href: remove-the-scheduling-from-a-saved-lookup.md
   - name: Delete a Saved Lookup
     href: delete-a-saved-lookup.md

@@ -1,11 +1,11 @@
 ---
-title: Change How a Report is Displayed
+title: Change Report Display
 description: Explore report customization options for enhanced data display, modifying visual representation effectively.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Change how a report is displayed
+# Change report display
 
 You have several options to change how reports are displayed:
 

@@ -1,6 +1,6 @@
 ---
 title: Integrate Apps with PSP
-description: In this article, find information about how to integrate app inventory with PSP.
+description: Learn how to integrate app inventory with PSP. This article provides detailed information and useful resources for integration.
 ms.date: 10/28/2023
 ---
 

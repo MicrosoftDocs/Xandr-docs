@@ -73,14 +73,15 @@ Make the below changes to the s2sConfig:
 
 1. Set **allowUnknownBidderCodes** to **true**.
 
-1. Include both **includebidderkeys** and **includewinners** in the **extPrebid targeting** object as shown in the following example:
+1. Include both **includebidderkeys**, **includewinners**, and **includeformat** in the **extPrebid targeting** object as shown in the following example:
 
     ```
     extPrebid = ([
        {
           "targeting":{
              "includebidderkeys":true,
-             "includewinners":true
+             "includewinners":true,
+             "includeformat":true
           }
        }
     ])            
@@ -111,7 +112,8 @@ Make the below changes to the s2sConfig:
          "targeting":{
             "pricegranularity":"dense",
             "includebidderkeys":true,
-            "includewinners":true
+            "includewinners":true,
+            "includeformat":true
                }
             }
          }
@@ -122,6 +124,28 @@ Make the below changes to the s2sConfig:
    When using Send All Bids, report on the key values in an external ad server, such as Google Ad Manager (GAM), by defining key values appropriately and setting them as reportable. GAM documentation can be found [here](https://support.google.com/admanager/answer/7352444?hl=en).
 
 1. For video-specific nuances, see the guidance [here](video-guidance.md).
+
+### Targeting key values
+
+As noted above, it is recommended to set all three parameters (`includebidderkeys`, `includewinners`, `includeformat`) to true to receive the most information from PSP in the form of targeting key values.
+
+In the `s2sConfig`, at least one of `includewinners` or `includebidderkeys` must be set to true to receive any targeting keys.
+
+If `includewinners` is true, the following targeting keys will be received:
+
+- `"hb_bidder": "appnexus"`,
+- `"hb_pb": "0.00"`,
+- `"hb_size": "600x500"`
+
+If `includebidderkeys` is true, the following targeting keys will be received:
+
+- `"hb_bidder_appnexus": "appnexus"`,
+- `"hb_pb_appnexus": "0.00"`,
+- `"hb_size_appnexus": "600x500"`
+
+If `includeformat` is also set to true **in addition to either of the above parameters**, this key will be received as well:
+
+- `"hb_format_appnexus": "banner"`
 
 <!--## Non-prebid
 

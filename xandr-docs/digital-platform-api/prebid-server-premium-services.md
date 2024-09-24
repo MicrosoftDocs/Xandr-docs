@@ -22,4 +22,4 @@ To leverage the PSP UI instead of APIs, review the documentation below:
 - [Add, Edit, or Delete a PSP Configuration](../monetize/add-edit-or-delete-a-psp-configuration.md)
 
 > [!NOTE]
-> At this time, not all clients have access to PSP. If you would like more information, contact your Xandr Representative.
+> At this time, not all clients have access to PSP. For more information, please contact your Microsoft Advertising representative.

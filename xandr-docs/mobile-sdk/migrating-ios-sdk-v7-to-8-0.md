@@ -3,6 +3,7 @@ title: Migrating iOS SDK v7 to 8.0
 description: Publishers using iOS SDK v8.0 must initialize Xandr SDK before making an ad request to avoid exceptions.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Migrating iOS SDK v7 to 8.0

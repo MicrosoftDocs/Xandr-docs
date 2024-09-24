@@ -97,15 +97,15 @@ When tracking an event (both standard event and custom event), optionally you ca
 
 An application context
 
-**Initialization code sample:**
+#### Initialization code sample:**
 
-**Kotlin**
+##### [Kotlin](#tab/kotlin1)
 
 ``` 
 Pixie.initialize("2dad9dcd-de80-4dd1-b900-f4349082ab57",context)
 ```
 
-**Java**
+##### [Java](#tab/java1)
 
 ``` 
 Pixie.initialize("2dad9dcd-de80-4dd1-b900-f4349082ab57",context);
@@ -119,15 +119,13 @@ Event.PAGE_VIEW
 
 The specific page that was visited. 
 
-**Code sample:** 
-
-**Kotlin**
+#### [Kotlin](#tab/kotlin2)
 
 ``` 
 Pixie.fireEvent(Event.PAGE_VIEW,context)
 ```
 
-**Java**
+#### [Java](#tab/java2)
 
 ``` 
 Pixie.fireEvent(Event.PAGE_VIEW,context);
@@ -141,16 +139,14 @@ Event.LANDING_PAGE
 
 Track landing pages' views.
 
-**Code sample:**
-
-**Kotlin**
+#### [Kotlin](#tab/kotlin3)
 
 ``` 
 val landingPageParams = PixieParams(Value = "5.99", Currency = "USD", ItemId = "product_5,product_6", ItemName = "apparel,accessory", ItemType = "shirt,belt")
 Pixie.fireEvent(Event.LANDING_PAGE,landingPageParams,context)
 ```
 
-**Java**
+#### [Java](#tab/java3)
 
 ``` 
 PixieParams landingPageParams = new PixieParams("5.99","USD","product_5,product_6", "apparel,accessory","shirt,belt");
@@ -167,21 +163,21 @@ Track key page views (ex: product page, landing page, article).
 
 **Code sample:**
 
-**Kotlin**
+#### [Kotlin](#tab/kotlin4)
 
 ``` 
 val itemViewParams = PixieParams(Value = "5.99", Currency = "USD", ItemId = "product_5,product_6", ItemName = "apparel,accessory", ItemType = "shirt,belt")
 Pixie.fireEvent(Event.ITEM_VIEW,itemViewParams,context)
 ```
 
-**Java**
+#### [Java](#tab/java4)
 
 ``` 
 PixieParams itemViewParams = new PixieParams("5.99","USD","product_5,product_6", "apparel,accessory","shirt,belt");
 Pixie.fireEvent(Event.ITEM_VIEW,itemViewParams,context);
 ```
 
-## Track add to cart event
+### Track add to cart event
 
 ``` 
 Event.ADD_TO_CART
@@ -190,16 +186,15 @@ Event.ADD_TO_CART
 Track when items are added to a shopping cart (ex: click, landing page
 on Add to Cart button).
 
-**Code sample:**
 
-**Kotlin**
+#### [Kotlin](#tab/kotlin5)
 
 ``` 
 val addToCartParams = PixieParams(Value = "5.99", Currency = "USD", ItemId = "product_5,product_6", ItemName = "apparel,accessory", ItemType = "shirt,belt")
 Pixie.fireEvent(Event.ADD_TO_CART,addToCartParams,context)
 ```
 
-**Java**
+#### [Java](#tab/java4)
 
 ``` 
 PixieParams addToCartParams = new PixieParams("5.99","USD","product_5,product_6", "apparel,accessory","shirt,belt");
@@ -214,16 +209,14 @@ Event.INITIATE_CHECKOUT
 
 Track when people enter the checkout flow (ex: click, landing page on checkout button).
 
-**Code sample:**
-
-**Kotlin**
+#### [Kotlin](#tab/kotlin6)
 
 ``` 
 val initiateCheckOutParams = PixieParams(Value = "5.99", Currency = "USD", ItemId = "product_5,product_6", ItemName = "apparel,accessory", ItemType = "shirt,belt")
 Pixie.fireEvent(Event.INITIATE_CHECKOUT,initiateCheckOutParams,context)
 ```
 
-**Java**
+#### [Java](#tab/java6)
 
 ``` 
 PixieParams initiateCheckOutParams = new PixieParams("5.99","USD","product_5,product_6", "apparel,accessory","shirt,belt");
@@ -236,16 +229,15 @@ Event.ADD_PAYMENT_INFO
 
 Track when payment information is added in the checkout flow (ex: click, landing page on billing info)
 
-**Code sample:**
-
-**Kotlin**
+#### [Kotlin](#tab/kotlin7)
 
 ``` 
 val addPaymentInfo = PixieParams(Value = "5.99", Currency = "USD", ItemId = "product_5,product_6", ItemName = "apparel,accessory", ItemType = "shirt,belt")
 Pixie.fireEvent(Event.ADD_PAYMENT_INFO,addPaymentInfoParams,context)
 ```
 
-**Java**
+#### [Java](#tab/java7)
+
 
 ``` 
 PixieParams addPaymentInfoParams = new PixieParams("5.99","USD","product_5,product_6", "apparel,accessory","shirt,belt");
@@ -260,16 +252,14 @@ Event.PURCHASE
 
 Track purchases or checkout flow completions (ex: Landing on "Thank You" or confirmation page).
 
-**Code sample:**
-
-**Kotlin**
+#### [Kotlin](#tab/kotlin8)
 
 ``` 
 let purchaseParams = PixieParams(value = "5.99", currency = "USD", itemId = "product_5,product_6", itemName = "apparel,accessory", itemType = "shirt,belt")
 Pixie.fireEvent(Event.PURCHASE, eventParams:purchaseParams)
 ```
 
-**Java**
+#### [Java](#tab/java8)
 
 ``` 
 PixieParams *purchaseParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];
@@ -284,16 +274,15 @@ Event.LEAD
 
 Track when someone expresses interest in your offering (ex: form submission, sign up for trial, registration).
 
-**Code sample:**
 
-**Kotlin**
+#### [Kotlin](#tab/kotlin9)
 
 ``` 
 val leadParams = PixieParams(Value = "5.99", Currency = "USD")
 Pixie.fireEvent(Event.LEAD,leadParams,context)
 ```
 
-**Java**
+#### [Java](#tab/java9)
 
 ``` 
 PixieParams leadParams =  new PixieParams();
@@ -306,9 +295,8 @@ Pixie.fireEvent(Event.LEAD,leadParams,context);
 
 Custom Events enable publishers to create their own events to track and submit. To create a custom event, initiate a PixelParams object with the data to be submitted and pass that object, along with a string identifier to the Pixie SDK fireEvent method. Custom event data can also be sent in key-value pairs by using the put method of the PixelParams object.
 
-**Code samples:**
 
-**Kotlin**
+#### [Kotlin](#tab/kotlin10)
 
 ``` 
 val customPixieParams = PixieParams(Value = "5.99", Currency = "USD")
@@ -318,7 +306,7 @@ customPixieParams.put("type", "subscribe,newuser")
 Pixie.fireEvent("TestCustomEvent", customPixieParams, context)
 ```
 
-**Java**
+#### [Java](#tab/java10)
 
 ``` 
 PixieParams customPixieParams=new PixieParams();

@@ -3,6 +3,7 @@ title: SDK Privacy for Android
 description: Mobile SDKs include client support for Global Privacy Platform, General Data Protection Regulations, and the California Consumer Protection Act.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # SDK privacy for Android
@@ -166,7 +167,7 @@ transparencyList.add(new ANDSATransparencyInfo("example.net", new ArrayList<>(Ar
 ANDSASettings.setTransparencyList(transparencyList);
 ```
 
-#### Retrieve the DSA values set in SDK
+#### Retrieve DSA values set in SDK
 
 ```
 ANDSASettings.getDSARequired()
@@ -176,7 +177,7 @@ ANDSASettings.getTransparencyList()
 
 ### Retrieve DSA Response values
 
-#### Code Sample Java
+#### [Java](#tab/java1)
 
 ```
 // Request Banner Ad
@@ -221,7 +222,7 @@ int adRender = dsaResponseInfo.getAdRender();
 }
 ```
 
-#### Code Sample Kotlin
+#### [Kotlin](#tab/kotlin1)
 
 ```
 // Request Banner Ad
@@ -268,6 +269,10 @@ val adRender: Int = dsaResponseInfo.adRender
 > [!NOTE]
 > ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 
+### Code sample (Video ad)
+
+#### [Java](#tab/java2)
+
 ```
 Java
 //Video Ad
@@ -277,6 +282,8 @@ ANDSAResponseInfo dsaResponseInfo = nativeAdResponse.getAdResponseInfo().getDSAR
 //Insterstitial Ad View
 ANDSAResponseInfo dsaResponseInfo = interstitial.getAdResponseInfo().getDSAResponseInfo()
 ```
+
+#### [Kotlin](#tab/kotlin2)
 
 ```
 Kotlin

@@ -2,7 +2,7 @@
 title: Ad Ops - Set Up Static Image Full Screen Interstitials
 description: In this article, find Ad Ops setup instructions for serving static image full-screen interstitials on Xandr mobile SDKs.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
 ms.author: shsrinivasan
 ---
 

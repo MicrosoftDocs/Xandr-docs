@@ -5,7 +5,7 @@ ms.custom: ios-sdk
 ms.date : 10/28/2023
 ---
 
-# iOS SDK Integration Overview
+# iOS SDK integration overview
 
 This section describes how to integrate our iOS SDK.
 

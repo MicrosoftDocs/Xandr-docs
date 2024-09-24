@@ -2,7 +2,8 @@
 title: Customize Video Player Options on iOS
 description: In this article, find information about the video player controls that you can customize on iOS SDK.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Customize video player options on iOS
@@ -26,7 +27,7 @@ ms.date : 10/28/2023
 
 ## Example
 
-### [Objective C](#tab/objective-c)
+### [Objective C](#tab/objectivec1)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable

@@ -3,6 +3,7 @@ title: Pass Custom Keywords on Android
 description: This article provides information on passing custom keywords on Android. Custom keywords are used to attach arbitrary key-value pairs to the request body of the ad call.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Pass custom keywords on Android

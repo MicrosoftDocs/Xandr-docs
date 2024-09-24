@@ -2,7 +2,8 @@
 title: adResponseInfo Class for Android
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for Android Mobile SDK.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # adResponseInfo class for Android
@@ -34,7 +35,7 @@ public ANAdResponseInfo getAdResponseInfo()
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
 >
-> #### Code sample (Objective C)
+> #### Code sample (Java)
 >
 > ```
 > //Video Ad
@@ -45,7 +46,7 @@ public ANAdResponseInfo getAdResponseInfo()
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
 > ```
 >
-> #### Code sample (Swift)
+> #### Code sample (Kotlin)
 >
 > ```
 > //Video Ad
@@ -57,7 +58,7 @@ public ANAdResponseInfo getAdResponseInfo()
 > ```
 
 
-### Code sample
+### Example
 
 #### [Java](#tab/java1)
 

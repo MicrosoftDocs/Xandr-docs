@@ -1,17 +1,18 @@
 ---
-title: Ad Response Info Class for iOS
+title: adResponseInfo Class for iOS
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for iOS Mobile SDK.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# Ad response info class for iOS
+# adResponseInfo class for iOS
 
-This article explains about the ad response info class in iOS Mobile SDK.
+This article explains about the `adResponseInfo` class in iOS Mobile SDK.
 
 The [ANAdResponseInfo class](https://github.com/appnexus/mobile-sdk-ios/blob/master/sdk/sourcefiles/public-headers/ANAdResponseInfo.h) is a read-only public convenience class created to hold Universal Tag response properties that are relevant to publishers. When an `AdUnit` is returned from the `loadAd` method without an error, either as a fully defined `adObject` or as a no bid response, an `ANAdResponseInfo` is instantiated as a `adResponseInfo` property of the returned Ad Unit.
 
-To retrieve the adResponseInfo object from the ad response, use the following properties:
+To retrieve the `adResponseInfo` object from the ad response, use the following properties:
 
 ``` 
 @property (nonatomic, readwrite, strong, nullable) ANAdResponseInfo *adResponseInfo;
@@ -31,7 +32,36 @@ To retrieve the adResponseInfo object from the ad response, use the following pr
 | `cpmPublisherCurrency` | NSNumber | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | NSString | The currency code of the publishers' currency. For example, USD |
 
-## Code samples (Objective C)
+> [!NOTE]
+> AdResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
+>
+> #### Code sample (Objective C)
+>
+> ```
+> // For interstitialAd once adDidReceiveAd is callback
+>   NSString* interstitialAdCreativeId = self.interstitialAd.adResponseInfo.creativeId; // same will be followed to get other adResponseInfo from interstitialAd
+>  // For videoAd once adDidReceiveAd is callback
+>   NSString* videoAdCreativeId = self.videoAd.adResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
+>  // For nativeAd once didReceiveResponse is callback
+>   ANAdResponseInfo nativeAdResponseInfo = nativeAdResponse;
+>    NSString* nativeAdCreativeId = nativeAdResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
+> ```
+>
+> #### Code sample (Swift)
+>
+> ```
+> // For interstitialAd once adDidReceiveAd is callback
+>   let interstitialAdCreativeId : String = (self.interstitialAd.?.adResponseInfo?.creativeId)! // same will be followed to get other adResponseInfo from interstitialAd
+>  // For videoAd once adDidReceiveAd is callback
+>   let videoAdCreativeId : String = (self.videoAd.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from videoAd
+>  // For nativeAd once didReceiveResponse is callback
+>   let nativeAdCreativeId : String = (self.nativeAdResponse.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from nativeAd
+> ```
+
+
+
+### Example
+#### [Objective C](#tab/objectivec1)
 
 ```
 - (void)requestBannerAd
@@ -54,7 +84,7 @@ To retrieve the adResponseInfo object from the ad response, use the following pr
 }
 ```
 
-## Code samples (Swift)
+#### [Swift](#tab/swift1)
 
 ```
 func requestBannerAd() {
@@ -76,29 +106,3 @@ func requestBannerAd() {
        let bannerPublisherCurrencyCode = (self.banner?.adResponseInfo?.publisherCurrencyCode)!
 }
 ```
-
-> [!NOTE]
-> AdResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
->
-> **Code sample (Objective C)**
->
-> ```
-> // For interstitialAd once adDidReceiveAd is callback
->   NSString* interstitialAdCreativeId = self.interstitialAd.adResponseInfo.creativeId; // same will be followed to get other adResponseInfo from interstitialAd
->  // For videoAd once adDidReceiveAd is callback
->   NSString* videoAdCreativeId = self.videoAd.adResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
->  // For nativeAd once didReceiveResponse is callback
->   ANAdResponseInfo nativeAdResponseInfo = nativeAdResponse;
->    NSString* nativeAdCreativeId = nativeAdResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
-> ```
->
-> **Code sample (Swift)**
->
-> ```
-> // For interstitialAd once adDidReceiveAd is callback
->   let interstitialAdCreativeId : String = (self.interstitialAd.?.adResponseInfo?.creativeId)! // same will be followed to get other adResponseInfo from interstitialAd
->  // For videoAd once adDidReceiveAd is callback
->   let videoAdCreativeId : String = (self.videoAd.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from videoAd
->  // For nativeAd once didReceiveResponse is callback
->   let nativeAdCreativeId : String = (self.nativeAdResponse.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from nativeAd
-> ```

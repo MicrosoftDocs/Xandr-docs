@@ -3,6 +3,7 @@ title: Publisher-side User Opt-Out for Android
 description: The publisher side user opt-out feature in Mobile SDK allows publishers to set users' choice of opt-in/out for Android from tracking in the ad requests.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Publisher side user opt-out for Android
@@ -12,6 +13,7 @@ ms.date: 10/28/2023
 The publisher side user opt-out feature provides a new API call in Mobile SDK which enables the publishers to set the information of  users' choice of opt-in/out from tracking in the `AdRequests`. For any `AdRequest`, Xandr Mobile SDK checks in the device or OS environment level and populates the value for `limitAdTracking` (LMT) in the background automatically (If `LMT=true`, it indicates that the user opts out from tracking at the device or OS settings). However, the publishers retain information about their users' opt-in/out of tracking and thus required to pass that information if their user has opted out to comply with their privacy regulations. To facilitate the same, publisher side user opt-out feature is introduced in Mobile SDK.
 
 ## Methods
+The following methods are supported in this feature:
 
 ### setDoNotTrack
 

@@ -2,7 +2,8 @@
 title: Dismiss Interstitials on User Click
 description: In this article, learn how to dismiss interstitial ads when users click, including instructions, methods, and examples.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Dismiss interstitials on user click
@@ -12,6 +13,7 @@ By default, when a user clicks an interstitial ad and is taken to the landing pa
 To change this behavior so that the interstitial ad view is dismissed when the user clicks on the ad, the following methods are available on the `InterstitialAdView`:
 
 ## Methods
+The following methods are supported in this feature:
 
 | Method | Description |
 |:---|:---|

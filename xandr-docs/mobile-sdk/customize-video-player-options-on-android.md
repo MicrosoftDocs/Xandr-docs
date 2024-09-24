@@ -2,7 +2,8 @@
 title: Customize Video Player Options on Android
 description: In this article, find information about the video player controls that you can customize on Android devices.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Customize video player options on Android
@@ -26,7 +27,7 @@ ms.date : 10/28/2023
 
 ## Example
 
-### [Java](#tab/java)
+### [Java](#tab/java1)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
@@ -66,7 +67,7 @@ ANVideoPlayerSettings.getVideoPlayerSettings().setSkipLabelName("Test");
 ANVideoPlayerSettings.getVideoPlayerSettings().setSkipOffset(2);
 ```
 
-### [Kotlin](#tab/kotlin)
+### [Kotlin](#tab/kotlin1)
 
 ```
 // Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable

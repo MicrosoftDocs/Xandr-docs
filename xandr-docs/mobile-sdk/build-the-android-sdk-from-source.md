@@ -2,14 +2,15 @@
 title: Build the Android SDK From Source
 description: In this article, find instructions for including the source code of our Android SDK in your project and building it.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Build the Android SDK from source
 
 This page has instructions for including the source code of our Android SDK in your project and building it.
 
-If you just want to install using Maven or download a JAR, see the Android section of [Integrate the SDK](android-sdk-integration-instructions.md).
+To install using Maven or to download a JAR, see [Integrate the SDK](android-sdk-integration-instructions.md).
 
 ## Step 1. Clone the repo
 

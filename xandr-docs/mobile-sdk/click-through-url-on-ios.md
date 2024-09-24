@@ -2,12 +2,13 @@
 title: Click-Through URL on iOS
 description: In this article, learn what click-through refers to and the methods used to implement it on iOS with examples.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Click-through URL on iOS
 
-The term click-through refers to the capability of our Mobile SDK to handle what happens when the user clicks on an ad. This document describes how click-through works and provides examples on how to implement this feature for iOS.
+The term click-through refers to the capability of our Mobile SDK to handle what happens when the user clicks on an ad. This document describes how click-through works and provides examples on ways to implement this feature for iOS.
 
 Xandr's Mobile SDK allows you to determine how the value of the `click_url` string in the bid response will be handled when the user clicks on an ad.
 

@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 This page includes guidance on using currencies other than USD with Prebid Server Premium (PSP).
 
-Price bucket currency specifies the currency used for price buckets and **does not apply to Microsoft Monetize Ad Server customers**. Specifically, targeting keys, not bids, are converted into the selected currency. Select the currency that aligns with the line items in the publisher's ad server. Any currency [supported by Microsoft Advertising](currency-support.md)can be chosen.
+Price bucket currency specifies the currency used for price buckets and **does not apply to Microsoft Monetize Ad Server customers**. Specifically, targeting keys, not bids, are converted into the selected currency. Choose the currency that aligns with the line items in the publisher's ad server. Any currency [supported by Microsoft Advertising](currency-support.md) can be selected.
 
 > [!IMPORTANT]
 > This is independent of the Monetize currency selection and only applies to Prebid Server Premium (PSP) auctions.

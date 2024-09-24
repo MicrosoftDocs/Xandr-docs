@@ -1,11 +1,10 @@
 ---
-title: Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+title: Measure Demographic Targeting Success with Nielsen Digital Ad Ratings
 description: In this page, learn how you can activate Nielsen DAR for your line item and gain insight on the demographics of your targeted audiences.   
 ms.date: 10/28/2023
 ---
 
-
-# Measuring demographic targeting success with Nielsen Digital Ad Ratings
+# Measure demographic targeting success with Nielsen Digital Ad Ratings
 
 When creating or editing an augmented line item, you have the option to enable Nielsen Digital Ad Ratings (DAR), which will measure your line item's performance in reaching its targeted demographic group.
 

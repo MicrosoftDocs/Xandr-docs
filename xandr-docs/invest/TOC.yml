@@ -192,7 +192,7 @@
         href: associate-creatives-with-a-line-item.md
       - name: Enable Third-Party Measurement Features on a Line Item
         items:
-        - name: Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+        - name: Measure Demographic Targeting Success with Nielsen Digital Ad Ratings
           href: nielsen-digital-ad-ratings.md
         - name: Metrics for Nielsen Digital Ad Ratings
           href: nielsen-dar-metrics.md

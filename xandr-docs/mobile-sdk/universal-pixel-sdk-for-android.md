@@ -194,7 +194,7 @@ val addToCartParams = PixieParams(Value = "5.99", Currency = "USD", ItemId = "pr
 Pixie.fireEvent(Event.ADD_TO_CART,addToCartParams,context)
 ```
 
-#### [Java](#tab/java4)
+#### [Java](#tab/java5)
 
 ``` 
 PixieParams addToCartParams = new PixieParams("5.99","USD","product_5,product_6", "apparel,accessory","shirt,belt");

@@ -61,4 +61,4 @@ If the user is in iOS14 and the app has not updated to v7.6.2+ of the SDK, AdReq
   - [Adjust Network Integrations Page](https://help.adjust.com/en/article/integrated-partners)
   - [Adjust Partner Page (Click URL Builder)](https://partners.adjust.com/index.md)
 
-Go [here](https://monetize.xandr.com/docs/set-up-third-party-mobile-app-install-tracking) (log in required) for instructions to integrate these vendors with your app and have them report back to your Xandr account.
+Go [here](../monetize/set-up-third-party-mobile-app-install-tracking) (log in required) for instructions to integrate these vendors with your app and have them report back to your Xandr account.

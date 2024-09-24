@@ -3,7 +3,7 @@ title: OMID-Friendly Obstruction for iOS
 description: The Open Measurement SDK enables third-party viewability and verification measurement for mobile ads without multiple SDKs. Publishers can get data on ad viewability.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
-ms.author: shsrinvasan
+ms.author: shsrinivasan
 ---
 
 # OMID friendly obstruction for iOS

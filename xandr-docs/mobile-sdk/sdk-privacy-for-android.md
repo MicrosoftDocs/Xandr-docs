@@ -269,9 +269,9 @@ val adRender: Int = dsaResponseInfo.adRender
 > [!NOTE]
 > ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 
-### Code sample (Video ad)
+## Code sample (Video ad)
 
-#### [Java](#tab/java2)
+### [Java](#tab/java2)
 
 ```
 Java
@@ -283,7 +283,7 @@ ANDSAResponseInfo dsaResponseInfo = nativeAdResponse.getAdResponseInfo().getDSAR
 ANDSAResponseInfo dsaResponseInfo = interstitial.getAdResponseInfo().getDSAResponseInfo()
 ```
 
-#### [Kotlin](#tab/kotlin2)
+### [Kotlin](#tab/kotlin2)
 
 ```
 Kotlin

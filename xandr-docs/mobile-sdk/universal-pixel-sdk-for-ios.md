@@ -3,6 +3,7 @@ title: Universal pixel SDK for iOS
 description: This article provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Universal pixel SDK for iOS

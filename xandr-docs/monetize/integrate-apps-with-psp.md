@@ -55,7 +55,7 @@ To set up Prebid Mobile SDK with PSP:
    ```
 
 1. When offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` immediately after SDK initialization.
-1. Proceed with [PSP Setup](non-prebid-integrations-with-psp.md) steps.
+1. Proceed with [PSP Setup](set-up-prebid-server-premium.md) steps.
 
 <!--## Non-SDK
 

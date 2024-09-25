@@ -130,7 +130,7 @@ The Digital Services Act (DSA) oversees online intermediaries and platforms, whe
 
 ### Set DSA Values in the SDK
 
-#### SDK will then pass these values to the ad call
+- SDK passes values to ad call
 
 ```
 /**
@@ -167,7 +167,7 @@ transparencyList.add(new ANDSATransparencyInfo("example.net", new ArrayList<>(Ar
 ANDSASettings.setTransparencyList(transparencyList);
 ```
 
-#### Retrieve DSA values set in SDK
+- Retrieve DSA values set in SDK
 
 ```
 ANDSASettings.getDSARequired()
@@ -176,6 +176,9 @@ ANDSASettings.getTransparencyList()
 ```
 
 ### Retrieve DSA Response values
+
+> [!NOTE]
+> ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 
 #### [Java](#tab/java1)
 
@@ -265,9 +268,6 @@ for (i in 0 until transparencyList.size) {
  */
 val adRender: Int = dsaResponseInfo.adRender
 ```
-
-> [!NOTE]
-> ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 
 ## Code sample (Video ad)
 

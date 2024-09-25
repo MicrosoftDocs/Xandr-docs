@@ -14,5 +14,5 @@ Microsoft Advertising's Prebid Server Premium (PSP) is a self-service, server-si
 - [Prebid Server Premium Request Response Sampler](prebid-server-premium-request-response-sampler.md)
 - [Prebid Server Premium Services (APIs)](../digital-platform-api/prebid-server-premium-services.md)
 
-> [!IMPORTANT]
+> [!NOTE]
 > Prebid Server Premium is not available to all customers. Please contact Microsoft Advertising to request access.

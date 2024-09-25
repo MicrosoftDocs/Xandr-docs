@@ -1,24 +1,24 @@
 ---
 title: Integrate Apps with PSP
 description: Learn how to integrate app inventory with PSP. This article provides detailed information and useful resources for integration.
-ms.date: 10/28/2023
+ms.date: 09/25/2024
 ---
 
 # Integrate apps with PSP
 
-Prebid Server Premium (PSP) supports three options for SSP customers to integrate app inventory:
+Prebid Server Premium (PSP) supports three options for Direct Supply customers to integrate app inventory:
 
 - Prebid Mobile SDK
 - [Non-SDK](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 
-Microsoft Monetize Ad Server customers do not need to change their current integration into Microsoft Advertising and can instead follow the steps mentioned in [Integrate with PSP](integrate-with-psp.md).
+Microsoft Monetize Ad Server customers do not need to change their current integration into Microsoft Monetize and can instead follow the steps mentioned in [Integrate with PSP](integrate-with-psp.md).
 
 ## Prebid mobile SDK
 
 ### Context
 
-For SSP customers using a mobile app integrated with the Prebid Mobile SDK, Microsoft Advertising sends all bids when the app calls the `/openrtb2/prebid` endpoint, regardless of their ad server line item setup, which may be consolidated (top bid) or bidder-specific (all bids). Microsoft Advertising's Prebid bid response includes Prebid key-values (bidder, price, deal, etc.) for Microsoft Advertising SSP and each SSP demand partner that submitted a valid bid into the PSP auction along with the standard top bid key-values.
+For Direct Supply customers using a mobile app integrated with the Prebid Mobile SDK, Microsoft Monetize sends all bids when the app calls the `/openrtb2/prebid` endpoint, regardless of their ad server line item setup, which may be consolidated (top bid) or bidder-specific (all bids). Microsoft Monetize's Prebid bid response includes Prebid key-values (bidder, price, deal, etc.) for Microsoft Monetize SSP and each SSP demand partner that submitted a valid bid into the PSP auction along with the standard top bid key-values.
 
 ### Implementation
 
@@ -34,7 +34,7 @@ To set up Prebid Mobile SDK with PSP:
     PrebidMobile.setPrebidServerHost(custom); 
     ```
 
-1. While setting up your Prebid Server Account, use your `member id` as the `account id` as shown below:
+1. While setting up the Prebid Server account, use the publisher's `member id` as the `account id` as shown below:
 
     ```
     PrebidMobile.setPrebidServerAccountId("Your member id");
@@ -55,6 +55,7 @@ To set up Prebid Mobile SDK with PSP:
    ```
 
 1. When offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` immediately after SDK initialization.
+1. Proceed with [PSP Setup](non-prebid-integrations-with-psp.md) steps.
 
 <!--## Non-SDK
 

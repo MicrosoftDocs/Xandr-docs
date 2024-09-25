@@ -24,7 +24,7 @@ request-level timeout. See the [Full Timeout Hierarchy](#full-timeout-hierarchy)
 
 ### Request-level timeouts
 
-- Timeout for AMP inventory can alternatively be set at the request level via the timeout field and override any higher level timeouts (placement, PSP, member). Contact Microsoft Advertising to have Microsoft Monetize's settings updated to allow the timeout field to override other timeouts.
+- Timeout for AMP inventory can alternatively be set at the request level via the timeout field and override any higher level timeouts (placement, PSP, member). Contact Microsoft Advertising to have Monetize's settings updated to allow the timeout field to override other timeouts.
 - Monetize Ad Server clients can similarly set the request-level timeout via the `auction_timeout_ms` field. Request-level timeout values longer than 450 ms will be floored to 450 ms.
 
 ### Full timeout hierarchy
@@ -73,7 +73,7 @@ This specifies the currency used for price buckets and **does not apply to Monet
 
 Targeting keys:
 
-- When using the /openrtb2/prebid (and have specifically set it to override targeting keys in response) or /ut/v3/prebid endpoints, targeting keys within bid responses use the transaction currency that you have set via the [Publisher Service API](../digital-platform-api/publisher-service.md). If you need to override that currency selection, use the [Prebid.js currency module](https://docs.prebid.org/dev-docs/modules/currency.html#currency-module).
+- When using the `/openrtb2/prebid` (and have specifically set it to override targeting keys in response) or `/ut/v3/prebid` endpoints, targeting keys within bid responses use the transaction currency that you have set via the [Publisher Service API](../digital-platform-api/publisher-service.md). If you need to override that currency selection, use the [Prebid.js currency module](https://docs.prebid.org/dev-docs/modules/currency.html#currency-module).
 - When using another integration method, targeting keys within bids use the currency selected for PSP price buckets independently of the [Publisher Service API](../digital-platform-api/publisher-service.md).
 
 ## Related topics

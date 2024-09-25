@@ -26,7 +26,7 @@ Follow these steps to create a new PSP configuration:
 
  A PSP configuration can be set at the Placement, Placement Group (site), or Publisher (all child Placements and Placement Groups) level. If an auction matches multiple configurations, the configuration at the lowest level of the hierarchy will be selected. For example, if an auction matches one configuration at a Publisher level and a different configuration at the Placement level, the Placement configuration will be selected.
 
-Follow these steps to restrict configuration to be triggered only when the selected Placement/Placement Group/Publisher ID is included in an auction:
+Follow these steps to restrict configurations to be triggered only when the selected Placement/Placement Group/Publisher ID is included in an auction:
 
 1. Select **Placement**, **Placement Group**, or **Publisher**.
 
@@ -36,8 +36,8 @@ Follow these steps to restrict configuration to be triggered only when the selec
 
     | Options | Settings |
     |---|---|
-    | **Operating System (OS)** | To set the OS for the configuration click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Microsoft Advertising detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
-    | **Ad Size Selection** | To specify which ad sizes will be allowed for this configuration, click in the **Ad Size Selection** field and select some ad sizes, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when the auction includes one of the selected ad sizes. The **Ad Size Selection** menu includes all standard sizes as well as any custom sizes saved to the member seat. <br><br> Follow these steps to add new custom sizes: <br> a. Select **Network** > **Tools** > **General** from the top menu. This will display the **Tools: General** page. <br> b. Select **Custom Sizes** from the horizontal sub-menu. <br> c. Click the **New custom size** button. This will display the **Custom Size Details** popover. <br> d. Enter values for **Width** and **Height** text fields and click the check box to make this a standard size. <br> e. Click the **Save** button. |
+    | **Operating System (OS)** | To set the operating system for the configuration click in the **Search OS** text field and select an operating system, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Microsoft Advertising detects the corresponding operating system from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
+    | **Ad Size Selection** | To specify which ad sizes will be allowed for this configuration, click in the **Ad Size Selection** field and select some ad sizes, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when the auction includes one of the selected ad sizes. The **Ad Size Selection** menu includes all standard sizes as well as any custom sizes saved to the Monetize member seat. <br><br> Follow these steps to add new custom sizes: <br> a. Select **Network** > **Tools** > **General** from the top menu. This will display the **Tools: General** page. <br> b. Select **Custom Sizes** from the horizontal sub-menu. <br> c. Click the **New custom size** button. This will display the **Custom Size Details** popover. <br> d. Enter values for **Width** and **Height** text fields and click the check box to make this a standard size. <br> e. Click the **Save** button. |
 
     If these optional settings are left blank, then any auction for the selected Placement/Placement Group/Publisher ID will trigger the corresponding PSP configuration to be used in the auction and enable PSP to call the associated Demand Partners.
 
@@ -51,7 +51,7 @@ Follow these steps to restrict configuration to be triggered only when the selec
     > - If the media type is set properly, ensure that the Demand Partner is added in the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
     > - Check that the partner shows up as `Enabled` in that list.
     >
-    > A full list of available Demand Partners can be viewed at [Prebid](https://docs.prebid.org/dev-docs/pbs-bidders.html).
+    > A full list of available Demand Partners can be viewed at [Prebid](prebid-server-premium-demand-partner-integrations.md).
 
 1. Once a Demand Partner is selected from the dropdown, new input fields will appear representing the parameters, both required and optional, that each demand partner's adapter accepts. Fill in the values of the required parameters and any desired optional parameters based on the fields in the UI. To get a broader picture of partners and their adapter schemas leverage the [Demand Partner Schema API Service](../digital-platform-api/demand-partner-schema-service.md).
 

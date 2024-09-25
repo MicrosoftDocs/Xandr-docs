@@ -14,7 +14,7 @@ To reach this screen, select **Inventory \> Partners**.
 
 ## View seller contact info and description
 
-Select a seller and select **Show Profile** to view profile information the seller has provided, including the main contact's name, phone number, email address, and a description of their business. You can contact the seller directly by sending a message within the **Activity Stream**. For more information about the **Activity Stream**, see [Communicating with the seller](#communicating-with-the-seller).
+Select a seller and select **Show Profile** to view profile information the seller has provided, including the main contact's name, phone number, email address, and a description of their business. You can contact the seller directly by sending a message within the **Activity Stream**. For more information about the **Activity Stream**, see [Communicate with the seller](#communicate-with-the-seller).
 
 > [!IMPORTANT]
 > If the seller has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.

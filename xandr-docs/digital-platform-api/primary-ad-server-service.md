@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 The Primary Ad Server Service returns all the primary ad servers for the caller's member. It enables the creation, updating and deleting of primary ad servers.
 
-The primary ad server makes the ultimate decision of what ads will be shown on the publishers inventory. In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction. Xandr holds another auction across its demand sources, including PSP demand partner(s)'s bid(s). If Microsoft Monetize is not the primary ad server, the results of that auction are passed to the primary (external) ad server.
+The primary ad server makes the ultimate decision of what ads will be shown on the publishers inventory. In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction. Monetize holds another auction across its demand sources, including PSP demand partner(s)'s bid(s). If Microsoft Monetize is not the primary ad server, the results of that auction are passed to the primary (external) ad server.
 
 ## REST API
 

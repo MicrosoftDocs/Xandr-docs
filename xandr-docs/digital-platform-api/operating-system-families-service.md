@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 The Operating System-Families service returns all the operating systems available for the caller's member.
 
-Operating systems are a Xandr-wide list NOT maintained by Prebid Server Premium. This service can be found at [Operating System Service](./operating-system-service.md). We offer this endpoint in PSP as a convenience to users and also so we can show a list of operating systems for targeting purposes in the UI.
+Operating systems are a Monetize-wide list NOT maintained by Prebid Server Premium. This service can be found at [Operating System Service](./operating-system-service.md). We offer this endpoint in PSP as a convenience to users and also so we can show a list of operating systems for targeting purposes in the UI.
 
 ## REST API
 

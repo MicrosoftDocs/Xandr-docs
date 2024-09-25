@@ -207,7 +207,7 @@ If the `supported_media_type` is `"video"` or the `supported_media_subtypes` is 
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the video creative. |
+| `id` | int |A unique ID for the video settings object.|
 | `width` | int | The width of the video creative. |
 | `max_duration_secs` | int | The maximum duration of a video ad that is allowed to be played on the placement.<br> - If `maximum_number_ads` is > `1`, then the max duration applies to the entire length of an ad pod (a linear grouping of more than one ad designed to fill a single placement).<br><br>**Note**: This field must be set in order to enable ad pods. |
 | `maximum_ad_duration_secs` | int | The maximum video ad duration in seconds of any single ad that can be played on the placement. This only applies to ad pods. |

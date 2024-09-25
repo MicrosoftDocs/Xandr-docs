@@ -37,7 +37,7 @@ To set up Prebid.js with Send Top Bid:
     For more information, see [Add, Edit, or Delete a PSP Configuration](add-edit-or-delete-a-psp-configuration.md).
 
 1. For video-specific nuances, see the guidance [here](video-guidance.md).
-1. Proceed with [PSP Setup steps](non-prebid-integrations-with-psp.md).
+1. Proceed with [PSP Setup steps](set-up-prebid-server-premium.md).
 
 
 ## Prebid.js send all bids
@@ -125,7 +125,7 @@ Make the below changes to the s2sConfig:
    When using Send All Bids, report on the key values in an external ad server, such as Google Ad Manager (GAM), by defining key values appropriately and setting them as reportable. GAM documentation can be found [here](https://support.google.com/admanager/answer/7352444?hl=en).
 
 1. For video-specific nuances, see the guidance [here](video-guidance.md).
-1. Proceed with [PSP Setup steps](non-prebid-integrations-with-psp.md).
+1. Proceed with [PSP Setup steps](set-up-prebid-server-premium.md).
 
 ### Targeting key values
 

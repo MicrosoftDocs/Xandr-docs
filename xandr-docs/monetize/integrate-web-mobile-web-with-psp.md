@@ -13,7 +13,7 @@ Prebid Server Premium (PSP) supports four options for Direct Supply customers to
 - [Non-prebid](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 
-Monetize Ad Server customers do not need to change their current integration into Microsoft Monetize and can instead follow the [PSP Setup Steps](integrate-with-psp.md).
+Monetize Ad Server customers do not need to change their current integration into Microsoft Monetize and can instead follow the [PSP Setup Steps](set-up-prebid-server-premium.md).
 
 ## Prebid.js send top bid
 

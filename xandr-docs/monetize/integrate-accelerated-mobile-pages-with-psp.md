@@ -38,7 +38,7 @@ To set up AMP inventory with PSP:
     > - All relevant ad sizes are included on the creatives in GAM.
     > - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Microsoft Monetize.
 
-  1. Proceed with [PSP Setup steps](non-prebid-integrations-with-psp.md)
+  1. Proceed with [PSP Setup steps](set-up-prebid-server-premium.md)
 
 ## Related topics
 

@@ -334,13 +334,12 @@ The following are some recommended creative best practices for serving on Plista
 | Icon (sizes in pixels) | - Logo <br> - 1x1 ratio <br> - Maximum 150x150 |
 | Image (sizes in pixels) | - 1.91:1 ratio <br> - 1200x628 |
 
-You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing *Xandr_creative_id* with your creative ID.l
+You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing *Xandr_creative_id* with your creative ID.
 
-| Website | Category | Desktop? | Tablet? |  | Smartphone? |  | Preview URL |
-|:---|:---|:---|:---|:---|:---|:---|:---|
-|  |  |  | Web | App | Web | App |  |
-| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id](https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID](https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID) |
-| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id](https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id) |
+| Website | Category | Desktop? | Tablet Web? | Tablet App? | Smartphone Web? | Smartphone App? | Preview URL |
+|:--|:--|:--|:--|:--|:--|:--|:--|
+| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [Link](https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [Link](https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID) |
+| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [Link](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [Link](https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id) |
 
 When you set up your targeting, you'll need to target **Schibsted Media Group (3296)** and the **domains** listed in the available inventory table.
 
@@ -460,7 +459,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 1578 |
-| Landing Page | [www.web.de/www.gmx.de/www.1und1.de](https://web.de/www.gmx.de/www.1und1.de) |
+| Landing Page | `https://web.de/www.gmx.de/www.1und1.de` |
 | Title | 25 character maximum (including spaces) |
 | Description | 45 character maximum (including spaces) |
 | Icon (sizes in pixels) | Not supported |

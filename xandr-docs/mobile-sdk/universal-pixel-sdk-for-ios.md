@@ -137,7 +137,7 @@ Standard Event strings are defined within the Event class. See the [Standard Ev
 ### Code samples
 
 
-#### [Swift](#tab/swift1)
+**Swift**
 
 ```
 import PixieSDK
@@ -147,7 +147,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         }
 ```
 
-#### [Objective C](#tab/objectivec1)
+**Objective C**
 
 ```
 @import PixieSDK;
@@ -167,13 +167,13 @@ The specific page that was visited.
 
 ### Code samples
 
-#### [Swift](#tab/swift2)
+**Swift**
 
 ```
 Pixie.fireEvent(Event.PAGE_VIEW)
 ```
 
-#### [Objective C](#tab/objectivec2)
+**Objective C**
 
 ```
 [Pixie fireEvent:Event.PAGE_VIEW eventParams:nil];
@@ -186,16 +186,17 @@ Event.LANDING_PAGE`
 ```
 
 Track landing pages views.
+
 ### Code samples
 
-#### [Swift](#tab/swift3)
+**Swift**
 
 ```
 let landingPageParams = PixieParams(value: "5.99", currency: "USD", itemId: "product_5,product_6", itemType: "apparel,accessory", itemName: "shirt,belt")
 Pixie.fireEvent(Event.LANDING_PAGE, eventParams:landingPageParams)
 ```
 
-#### [Objective C](#tab/objectivec3)
+**Objective C**
 
 ```
 PixieParams *landingPageParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"]; [Pixie fireEvent:Event.LANDING_PAGE eventParams:landingPageParams];
@@ -211,14 +212,14 @@ Track key page views (For example: product page, landing page, article).
 
 ### Code samples
 
-#### [Swift](#tab/swift4)
+**Swift**
 
 ```
 let itemViewParams = PixieParams(value: "5.99", currency: "USD", itemId: "product_5,product_6", itemType: "apparel,accessory", itemName: "shirt,belt")
                Pixie.fireEvent(Event.ITEM_VIEW, eventParams:itemViewParams)
 ```
 
-#### [Objective C](#tab/objectivec4)
+**Objective C**
 
 ```
 PixieParams *itemViewParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];
@@ -235,14 +236,14 @@ Track when items are added to a shopping cart (For example: **click**, landing p
 
 ### Code sample
 
-#### [Swift](#tab/swift5)
+**Swift**
 
 ```
 let addToCartParams = PixieParams(value: "5.99", currency: "USD", itemId: "product_5,product_6", itemType: "apparel,accessory", itemName: "shirt,belt")
                Pixie.fireEvent(Event.ADD_TO_CART, eventParams:addToCartParams)
 ```
 
-#### [Objective C](#tab/objectivec5)
+**Objective C**
 
 ```
 PixieParams *addToCartParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];
@@ -259,14 +260,14 @@ Track when people enter the checkout flow (For example: click, landing page on c
 
 ### Code sample
 
-#### [Swift](#tab/swift6)
+**Swift**
 
 ```
 let initiateCheckOutParams = PixieParams(value: "5.99", currency: "USD", itemId: "product_5,product_6", itemType: "apparel,accessory", itemName: "shirt,belt")
                Pixie.fireEvent(Event.INITIATE_CHECKOUT, eventParams: initiateCheckOutParams)
 ```
 
-#### [Objective C](#tab/objectivec6)
+**Objective C**
 
 ```
 PixieParams *initiateCheckOutParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];
@@ -283,14 +284,14 @@ Track when payment information is added in the checkout flow (For example: click
 
 ### Code sample
 
-#### [Swift](#tab/swift7)
+**Swift**
 
 ```
 let addPaymentInfoParams = PixieParams(value: "5.99", currency: "USD", itemId: "product_5,product_6", itemType: "apparel,accessory", itemName: "shirt,belt")
                Pixie.fireEvent(Event.ADD_PAYMENT_INFO, eventParams: addPaymentInfoParams)
 ```
 
-#### [Objective C](#tab/objectivec7)
+**Objective C**
 
 ```
 PixieParams *addPaymentInfo = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];
@@ -307,14 +308,14 @@ Track purchases or checkout flow completions (For example: Landing on **Thank Yo
 
 ### Code sample
 
-#### [Swift](#tab/swift8)
+**Swift**
 
 ```
 let purchaseParams = PixieParams(value: "5.99", currency: "USD", itemId: "product_5,product_6", itemType: "apparel,accessory", itemName: "shirt,belt") 
    Pixie.fireEvent(Event.PURCHASE, eventParams: purchaseParams)
 ```
 
-#### [Objective C](#tab/objectivec8)
+**Objective C**
 
 ```
 PixieParams *purchaseParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];
@@ -331,14 +332,14 @@ Track when someone expresses interest in your offering (For example: form submis
 
 ### Code sample
 
-#### [Swift](#tab/swift9)
+**Swift**
 
 ```
 let leadParams = PixieParams(value: "5.99", currency: "USD")
 Pixie.fireEvent(Event.LEAD, eventParams: leadParams)
 ```
 
-#### [Objective C](#tab/objectivec9)
+**Objective C**
 
 ```
 PixieParams *leadParams = [[PixieParams alloc] init];
@@ -353,7 +354,7 @@ Custom Events enable publishers to create their own events to track and submit. 
 
 ### Code samples
 
-#### [Swift](#tab/swift10)
+**Swift**
 
 ```
 let customPixieParams = PixieParams()
@@ -366,7 +367,7 @@ customPixieParams.put("type", "subscribe,newuser")
 Pixie.fireEvent("TestCustomEvent", eventParams: customPixieParams) ```
 ```
 
-#### [Objective C](#tab/objectivec10)
+**Objective C**
 
 ```
 PixieParams *customPixieParams = [[PixieParams alloc] init];
@@ -383,13 +384,13 @@ customPixieParams.itemName = @"shirt,belt";
 
 Pixie SDK comes with a debug mode feature that enables logging during development. This can be turned on by setting the debugMode variable to true. All logging will be disabled in the release build.
 
-#### [Swift](#tab/swift11)
+**Swift**
 
 ```
 Pixie.shared.debugMode = true
 ```
 
-#### [Objective C](#tab/objectivec11)
+**Objective C**
 
 ```
 Pixie.shared.debugMode = true;

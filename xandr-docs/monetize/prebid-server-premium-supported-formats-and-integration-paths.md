@@ -10,9 +10,9 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 
 > [!IMPORTANT]
 >
-> - Microsoft Monetize Ad Server customers do not need to change their integration method to call PSP, except for AMP.
-> - Microsoft Monetize customers generally need to update Prebid.js or Prebid Mobile SDK to call PSP, although other methods are supported.
-> - Native support is only available for native assets. Rendered native assets may come through as banner media type.
+> - Microsoft Monetize Ad Server customers do not need to change their integration method to call PSP, except for [AMP](integrate-accelerated-mobile-pages-with-psp.md)
+> - Microsoft Monetize customers generally need to update Prebid.js or Prebid Mobile SDK to call PSP, although other methods are supported
+> - Native support is only available for native assets. Rendered native assets may come through as banner media type
 
 ## Web and mobile web
 

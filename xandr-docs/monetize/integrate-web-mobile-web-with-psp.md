@@ -18,7 +18,7 @@ Monetize Ad Server customers do not need to change their current integration int
 ## Prebid.js send top bid
 
 ### Context
-In general, Send Top Bid should be used by default when publishers do not have bidder-specific line items already set up in their ad server, or if they do not need all bids for reporting purposes. By using the Send Top Bid option, the winning bid response will indicate Monetize as the winner with a buyer member ID as normal even if a separate SSP Demand Partner won through Prebid Server Premium. The publisher's ad server will see Monetize as the winner if this top bid wins the ad server auction. Publishers can determine which SSP won, either Monetize or another Demand Partner via Prebid Server Premium, by utilizing Monetize's [reporting and analytics](../monetize/prebid-server-premium-analytics) and cross-referencing the other SSP Demand Partners' reporting.
+In general, Send Top Bid should be used by default when publishers do not have bidder-specific line items already set up in their ad server, or if they do not need all bids for reporting purposes. By using the Send Top Bid option, the winning bid response will indicate Monetize as the winner with a buyer member ID as normal even if a separate SSP Demand Partner won through Prebid Server Premium. The publisher's ad server will see Monetize as the winner if this top bid wins the ad server auction. Publishers can determine which SSP won, either Monetize or another Demand Partner via Prebid Server Premium, by utilizing Monetize's [reporting and analytics](prebid-server-premium-analytics.md) and cross-referencing the other SSP Demand Partners' reporting.
 
 ### Implementation
 
@@ -37,7 +37,7 @@ To set up Prebid.js with Send Top Bid:
     For more information, see [Add, Edit, or Delete a PSP Configuration](add-edit-or-delete-a-psp-configuration.md).
 
 1. For video-specific nuances, see the guidance [here](video-guidance.md).
-1. Proceed with [PSP Setup steps](../monetize/non-prebid-integrations-with-psp).
+1. Proceed with [PSP Setup steps](non-prebid-integrations-with-psp.md).
 
 
 ## Prebid.js send all bids
@@ -125,7 +125,7 @@ Make the below changes to the s2sConfig:
    When using Send All Bids, report on the key values in an external ad server, such as Google Ad Manager (GAM), by defining key values appropriately and setting them as reportable. GAM documentation can be found [here](https://support.google.com/admanager/answer/7352444?hl=en).
 
 1. For video-specific nuances, see the guidance [here](video-guidance.md).
-1. Proceed with [PSP Setup steps](../monetize/non-prebid-integrations-with-psp).
+1. Proceed with [PSP Setup steps](non-prebid-integrations-with-psp.md).
 
 ### Targeting key values
 

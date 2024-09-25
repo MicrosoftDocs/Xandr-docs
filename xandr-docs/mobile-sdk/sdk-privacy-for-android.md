@@ -180,7 +180,7 @@ ANDSASettings.getTransparencyList()
 > [!NOTE]
 > ANDSAResponseInfo can be retrieved using Video Ad instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
 
-#### [Java](#tab/java1)
+#### Code sample Java
 
 ```
 // Request Banner Ad
@@ -225,7 +225,7 @@ int adRender = dsaResponseInfo.getAdRender();
 }
 ```
 
-#### [Kotlin](#tab/kotlin1)
+#### Code Sample Kotlin
 
 ```
 // Request Banner Ad
@@ -271,7 +271,7 @@ val adRender: Int = dsaResponseInfo.adRender
 
 ## Code sample (Video ad)
 
-### [Java](#tab/java2)
+### [Java](#tab/java1)
 
 ```
 Java
@@ -283,7 +283,7 @@ ANDSAResponseInfo dsaResponseInfo = nativeAdResponse.getAdResponseInfo().getDSAR
 ANDSAResponseInfo dsaResponseInfo = interstitial.getAdResponseInfo().getDSAResponseInfo()
 ```
 
-### [Kotlin](#tab/kotlin2)
+### [Kotlin](#tab/kotlin1)
 
 ```
 Kotlin

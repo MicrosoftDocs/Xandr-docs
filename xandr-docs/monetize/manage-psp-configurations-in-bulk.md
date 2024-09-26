@@ -35,7 +35,7 @@ If these optional settings are left blank, then any auction for the selected Pla
     > - Ensure the proper media type(s) are selected.
     > - Ensure the **Demand Partner** is enabled in the Global Settings page as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
     > - Check that the partner shows up as `Enabled` in that list.
-    > A full list of Demand Partners is available [here](https://docs.prebid.org/dev-docs/pbs-bidders.html).
+    > A full list of Demand Partners is available [here](prebid-server-premium-demand-partner-integrations.md).
 
 1. Once a **Demand Partner** is selected from the dropdown, new input fields will appear representing the parameters, both required and optional, that each demand partner's adapter accepts.
       1. Required parameters will automatically be checked and cannot be excluded from the spreadsheet.
@@ -65,7 +65,7 @@ Submit the complete template to Microsoft Advertising for processing, unless ins
 
 ## Add demand partners to existing configurations in bulk
 
-Follow these steps to add demand partners to PSP configurations in bulk:
+Follow below steps to add demand partners to PSP configurations in bulk:
 
 1. In the Monetize UI, go to the **Publishers** menu and click **Prebid Server Premium**. This loads the default **Demand Partner Configurations** screen.
 1. Use the multi-select checkboxes to choose the configurations to which the demand partner will be added.
@@ -91,7 +91,7 @@ If these optional settings are left blank, then any auction for the selected Pla
 1. Type to search or select a demand partner from the **Select a Demand Partner** dropdown.
 
     > [!NOTE]
-    > Follow these tips if the desired Demand Partner is not included in the list:
+    > Follow below tips if the desired Demand Partner is not included in the list:
     > - Ensure the proper media type(s) are selected.
     > - Ensure the Demand Partner is enabled in the Global Settings page as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
     > - Check that the partner shows up as `Enabled` in that list. A full list of Demand Partners is available  [here](prebid-server-premium-demand-partner-integrations.md).

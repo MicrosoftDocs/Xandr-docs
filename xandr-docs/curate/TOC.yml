@@ -177,7 +177,7 @@
       href: universal-pixel-reporting.md
     - name: Universal Pixel Object Limits
       href: universal-pixel-object-limits.md
-  - name: Buy Side Targeting
+  - name: Buy-Side Targeting 
     items:
     - name: Overview
       href: buy-side-targeting.md
@@ -315,7 +315,7 @@
       href: dates-and-times-in-reporting.md
     - name: Choose Transactional Reporting Options
       href: transactional-reporting-options.md
-    - name: Throttle Reports
+    - name: Report Throttling
       href: report-throttling.md
     - name: Count Impressions
       href: impression-counting.md

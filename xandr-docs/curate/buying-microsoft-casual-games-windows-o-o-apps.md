@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Buy Microsoft Casual Games (Windows O&O Apps)
-description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.Discover a variety of fun and engaging game options for users.
+description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.  Discover a variety of fun and engaging game options for users.
 ms.date: 10/28/2023
 ---
 
@@ -93,7 +93,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds on the Microsoft Minesweeper for Windows Adventure mode experience.
 
-**Main menu Screen** - Below the fold, right side of screen.
+**Main menu screen** - Below the fold, right side of screen.
 
 :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Microsoft Treasure Hunt menu screen.":::
 

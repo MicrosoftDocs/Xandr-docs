@@ -103,7 +103,7 @@ following:
 While you can change the status of each deal to **Active** or **Declined** using the **Deal Controls** of each deal, you can only make these changes one deal at a time. If you have a group of deals that you’d like to set to **Active** or **Declined** status, you can check the box next to these deals and click **Accept** in the Select drop-down to set them to **Active** status, or **Decline** to set them to
 **Declined** status [Accept or decline deals](control-your-deals-with-sellers.md#accept-or-decline-deals).
 
-## Assign a deal alias
+## Assign a Deal Alias
 
 You can assign a **Deal Alias** to use as a buyer internal name for seller deals so you can manage these deals by a name you provide for it. The alias you assign to a deal appears in the **Deal Alias** column of the **Deals with Sellers** page along with the **Deal Name** that the seller provided for the deal.
 

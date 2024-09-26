@@ -12,7 +12,7 @@ On the **Partner Center** screen you can view your partners, search all buyers, 
 
 Select **Admin** > **Partner Center**.
 
-## Switch to buyer mode
+## Switch to Buyers mode
 
 If you are a network that also represents buyers, the **Buyers** and **Sellers** tabs display. Click **Buyers** to view the **Partner Center** as a seller looking for buyers.
 

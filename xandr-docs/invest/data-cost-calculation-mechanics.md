@@ -24,7 +24,7 @@ The diagram below illustrates this process. In this process, a relevant segment 
 
 Key steps in assessing data cost:
 
-1. A list of relevant segments is provided in the bid request
+1. A list of relevant segments is provided in the bid request.
 1. Used segments are determined based upon the segments which caused Microsoft Invest to submit a bid. The list of relevant segments, the buyer's targeted segments and boolean AND/OR decisioning logic the buyer has selected are all determining factors.
 1. The auction is run and the impression is won by the line item (see [Win the Auction](#win-the-auction)).
 1. Data costs for used segments are determined based on each data provider's rate cards and pricing rules.
@@ -49,7 +49,7 @@ If multiple segments are targeted with a line item or campaign, the boolean AND/
 - If the segments are ANDed, only an ad request that is relevant to ALL segments will generate a bid.
 - If the the segments are ORed, an ad request that is relevant to ANY of the targeted segments will generate a bid.
 
-#### Target segments using the AND boolean
+#### Target segments using AND boolean
 
 - If the ad request is relevant in ALL targeted segments, a bid will be made.
 
@@ -64,7 +64,7 @@ If multiple segments are targeted with a line item or campaign, the boolean AND/
   > [!NOTE]
   > Since the ad request is required to be relevant for ALL targeted segments using the AND boolean, the buyer will be charged for the use of ALL segments if the impression is won.
 
-#### Target segments using the OR boolean
+#### Target segments using OR boolean
 
 - If the ad request is relevant to ANY segment, a bid will be made using the relevant segment.
 

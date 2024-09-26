@@ -16,7 +16,7 @@ You can control deals received from sellers on the **Deals** screen. You can:
 > [!NOTE]
 > For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
-## Locate the Deals screen
+## Locate Deals screen
 
 To reach the **Deals with Sellers** screen, select **Partners** \> **Deals** and select the **Sellers** tab.
 
@@ -112,7 +112,7 @@ To assign a **Deal Alias** to a deal, do the following:
 > [!NOTE]
 > The **Deal Alias** field is limited to 254 characters.
 
-1. Select **Partners** \> **Deals** and **select** the **Sellers** tab.
+1. Select **Partners** \> **Deals** and select the **Sellers** tab.
 1. Select anywhere in the row of the deal you want to assign a **Deal Alias** to (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code** to find a specific deal).
 1. In the **Deal Controls** section, select the edit icon and enter the internal name in the **Deal Alias** field.
 1. Select **Save**.

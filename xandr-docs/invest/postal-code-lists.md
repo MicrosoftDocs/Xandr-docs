@@ -6,8 +6,6 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Postal code lists
 
-## Introduction
-
 > [!NOTE]
 > If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal codes for the purpose of personalizing advertising, segmenting, or profiling customers.
 
@@ -44,10 +42,10 @@ Postal codes can be added to a list by either:
     1. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The maximum number of characters allowed is 255.
     1. **Code**: (optional) Enter a code for the Postal Code List.
     1. **Description**: (optional) Enter a description for the Postal Code List that gives a brief definition of the postal code location target. For example, enter "Postal Code List for Noor-Holland region in the city of Amsterdam, Netherlands".
-1. Click **Next**.
+1. Select **Next**.
 1. On the **Location Target Features** page, select one of the following options:
-    - **Copy and Paste**: If you select this option, on the next page you can enter the postal codes to include in the Postal Code List. The codes need to be separated by a comma or hard return. When you're done, click **Next**.
-    - **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, click **Next**.
+    - **Copy and Paste**: If you select this option, on the next page you can enter the postal codes to include in the Postal Code List. The codes need to be separated by a comma or hard return. When you're done, select **Next**.
+    - **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, select **Next**.
 
     > [!NOTE]
     >
@@ -57,7 +55,7 @@ Postal codes can be added to a list by either:
 1. On the **Review Location Target** page, the following tabs are available:
     - **Successfully Imported** displays the list of postal codes that were successfully imported to the Postal Code List with the **Code**, **Country Name**, **Country ID** of each postal code.
     - **Did Not Import** displays postal codes that failed to import properly.
-1. Click **Save** to complete the setup.
+1. Select **Save** to complete the setup.
 
 ## Target postal code lists and postal codes on line items
 
@@ -74,10 +72,10 @@ To target specific Postal Code Lists and Postal Codes:
 
     | Value | Steps |
     |---|---|
-    | Postal Code Lists | - Search by ID or Name for available Postal Code Lists to target <br> - Either include or exclude the postal code list for the line item for targeting. Click the **green check** to include a list and click the **red dash** to exclude a list. <br> - After you select a postal code list, it displays the particulars of the list such as Name and ID under the section **Selected Postal Codes**. You can use the **Remove all** button if necessary. <br> - You can add multiple postal code lists to include or exclude for the line item using this search option. |
+    | Postal Code Lists | - Search by ID or Name for available Postal Code Lists to target <br> - Either include or exclude the postal code list for the line item for targeting. Select the **green check** to include a list and select the **red dash** to exclude a list. <br> - After you select a postal code list, it displays the particulars of the list such as Name and ID under the section **Selected Postal Codes**. You can use the **Remove all** button if necessary. <br> - You can add multiple postal code lists to include or exclude for the line item using this search option. |
     | Postal Codes | - Copy and paste the postal codes or import a file of postal codes you want to target following the instructions in step 5 in the **To create a new Postal Code List** section above. You can add upto 100,000 postal codes in this dialog box. <br> - You can include or exclude a postal code from targeting for a split. |
 
-1. Click **Save** to complete the setup.
+1. Select **Save** to complete the setup.
 
 ## Related topic
 

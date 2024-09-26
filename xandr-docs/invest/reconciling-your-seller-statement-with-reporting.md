@@ -1,17 +1,17 @@
 ---
-title: Microsoft Invest - Reconciling your Seller Statement with Reporting
+title: Microsoft Invest - Reconcile your Seller Statement with Reporting
 description: In this article, learn how to confirm the (Managed) Ad Serving fee on your invoice using the Selling Billing Report.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Reconciling your seller statement with reporting
+# Microsoft Invest - Reconcile your seller statement with reporting
 
 ## Run the seller billing report
 
 In the UI, run the Selling Billing Report to view your Seller Revenue on your seller activity statement. You can also use the Selling Billing Report to confirm your (Managed) Ad Serving fee on your invoice.
 
 1. On the Member reporting screen, select **Selling Billing Report** in the **Type** dropdown.
-1. Enter a date in the **Range** field that corresponds to the period start and end date on your invoice, and then click **Run report**.
+1. Enter a date in the **Range** field that corresponds to the period start and end date on your invoice, and then select **Run report**.
 
 ## Confirm invoice values (selling)
 

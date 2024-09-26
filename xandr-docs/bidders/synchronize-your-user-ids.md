@@ -139,15 +139,30 @@ Additionally, if TCF signals cannot be provided when calling our URLs, partners 
 
 Please see the examples below for how to use the **consent** parameter in URLs:
 
-Example with user consent:
+### Example of a `getuid` call with user consent
 
 ```
 https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&consent=1
 
 ```
-Example without user consent:
+
+### Example of a `getuid` call  without user consent
 
 ```
 https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&consent=0
+
+```
+
+### Example of a `setuid` call with user consent
+
+```
+https://ib.adnxs.com/setuid?entity=[BIDDER_ID]&code=[UID]&consent=1
+
+```
+
+### Example of a setuid call  without user consent
+
+```
+https://ib.adnxs.com/setuid?entity=[BIDDER_ID]&code=[UID]&consent=0
 
 ```

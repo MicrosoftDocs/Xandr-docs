@@ -51,7 +51,7 @@ Follow these steps to restrict configurations to be triggered only when the sele
     > - If the media type is set properly, ensure that the Demand Partner is added in the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
     > - Check that the partner shows up as `Enabled` in that list.
     >
-    > A full list of available Demand Partners can be viewed at [Prebid](prebid-server-premium-demand-partner-integrations.md).
+    > A full list of available Demand Partners is available [here](prebid-server-premium-demand-partner-integrations.md).
 
 1. Once a Demand Partner is selected from the dropdown, new input fields will appear representing the parameters, both required and optional, that each demand partner's adapter accepts. Fill in the values of the required parameters and any desired optional parameters based on the fields in the UI. To get a broader picture of partners and their adapter schemas leverage the [Demand Partner Schema API Service](../digital-platform-api/demand-partner-schema-service.md).
 

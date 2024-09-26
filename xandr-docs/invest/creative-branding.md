@@ -4,8 +4,7 @@ description: In this page, Learn what is Creative Branding and which are the exi
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Creative branding 
+# Microsoft Invest - Creative branding
 
 Microsoft Advertising maintains and monitors a brand list, ensuring duplicate brands and URLs are deleted or reassigned in order to maintain consistency.
 
@@ -13,7 +12,7 @@ A brand is a proprietary classification assigned to creatives. Within the Micros
 
 During the creative audit process, a brand name/URL are associated with every creative. If the appropriate brand exists within the Microsoft Advertising system, the creative will be assigned a URL associated with the existing brand. If the appropriate brand does not exist within the Microsoft Advertising system, the creative will be assigned to a comparable existing brand based on the creative content and the creative's associated landing page.
 
-## Existing brand content categories
+## Brand content categories
 
 When a brand is created, it is given a name, an associated URL, and a brand content category. This brand content category attempts to best describe the offering of the parent company. Brand content categories can be used to include or exclude creatives from serving.
 

@@ -20,17 +20,17 @@ In order for Microsoft Advertising to track a click to the corresponding impress
 
     In this example, the Microsoft Advertising click tracker is followed by the Microsoft Advertising homepage. When the link is loaded, a click is recorded on Microsoft Advertising, and then there is a redirect to the Microsoft Advertising homepage.
 
-## Tracking clicks on hosted creatives
+## Track clicks on hosted creatives
 
 Microsoft Advertising will configure the click tracking for hosted creatives such as JPGs, GIFs, and PNGs since they are wrapped in our creative templates. Our templates are set up in such a way that a dynamically-generated click tracker is correctly populated in the creative content. For more information, see [Creative Templates](./creative-templates.md).
 
 All you have to do is enter the landing page URL in the **Landing Page** field, and a click URL with encoded information about the creative will be automatically appended to the creative. When a user clicks the URL, the user's browser will first request the URL from adnxs.com. The encoded information in the URL will be recorded by the server. The user's browser will be redirected to the landing page configured for the creative.
 
-## Tracking third-party clicks on URLs for hosted creatives
+## Track third-party clicks on URLs for hosted creatives
 
 Most third-party click tracking URLs will automatically redirect to the landing page, so all you have to do is enter the click tracking URL directly in the **Landing Page** field. After clicking the creative, the tracker will load and redirect to the landing page.
 
-## Tracking clicks on third-party tags
+## Track clicks on third-party tags
 
 A simple third-party tag is made up of two parts:
 

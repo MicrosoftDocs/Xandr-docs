@@ -6,9 +6,7 @@ ms.date: 10/28/2023
 
 # Prebid Server Premium
 
-Microsoft Advertising's Prebid Server Premium (PSP) is a self-service, server-side solution offering control over unified auctions that maximizes revenue for publishers' inventory. As part of Monetize, users can manage settings, optimize partners, and review analytics within the Microsoft Monetize UI or via our APIs. PSP is supported across channels (web, mobile web, mobile app, over-the-top) and formats (display, native, video).
-
-The links below provide guidance on integrating inventory with Prebid Server Premium (PSP), adjusting settings and demand partner mappings, and leveraging platform analytics:
+Microsoft Advertising's Prebid Server Premium (PSP) is a self-service, server-side solution designed to maximize publisher revenue through unified auctions. Running on the open-source Prebid Server Go, PSP provides transparency into auction mechanics, visibility into winning and losing bids, and access to over 200 demand partners, enabling competition with bidders from the Monetize marketplace. PSP’s integration with the Monetize platform offers publishers flexible, UI-based controls over how inventory is packaged and sent to demand partners. The Monetize Insights dashboard and reporting tools surface optimization opportunities tailored to PSP demand. PSP is supported across multiple channels (web, mobile web, mobile app, over-the-top, accelerated mobile pages) and formats (display, native, video).
 
 - [Set Up Prebid Server Premium](set-up-prebid-server-premium.md)
 - [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
@@ -16,5 +14,5 @@ The links below provide guidance on integrating inventory with Prebid Server Pre
 - [Prebid Server Premium Request Response Sampler](prebid-server-premium-request-response-sampler.md)
 - [Prebid Server Premium Services (APIs)](../digital-platform-api/prebid-server-premium-services.md)
 
-> [!IMPORTANT]
-> At this time, not all clients have access to PSP. If you would like more information, please contact your Microsoft Advertising Representative.
+> [!NOTE]
+> Prebid Server Premium is not available to all customers. Please contact Microsoft Advertising to request access.

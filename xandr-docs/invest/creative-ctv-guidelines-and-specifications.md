@@ -4,10 +4,9 @@ description: Learn about guidelines and specifications that your creatives shoul
 ms.date: 10/28/2023
 ---
 
+# Microsoft Invest - Creative CTV guidelines and specifications
 
-# Microsoft Invest - Creative CTV guidelines and specifications 
-
-To serve on Microsoft Advertising publisher's CTV inventory, your creatives must meet the guidelines and specification requirements, as well as Microsoft Advertising creative standards and any other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not under the **View CTV Eligibility** section . If not, you can click **More Details**, to see which requirements need to be adjusted in order to serve on Microsoft Advertising’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.
+To serve on Microsoft Advertising publisher's CTV inventory, your creatives must meet the guidelines and specification requirements, as well as Microsoft Advertising creative standards and any other guidelines that may apply. While uploading your creatives, you can see whether your creatives meet the specified CTV requirements or not under the **View CTV Eligibility** section . If not, you can select **More Details**, to see which requirements need to be adjusted in order to serve on Microsoft Advertising’s premium publisher’s CTV inventory. The CTV specification validations and approval indicators will be present throughout the Line item and Creative workflows in various tooltips and issues columns, as well.
 
 For more information, see [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md) and [Creative Standards](creative-standards.md).
 
@@ -109,4 +108,4 @@ Buyers upload one media file and Microsoft Advertising works on its transcoding.
 
 ## Related topics
 
-- [Creative Guidelines and Specifications](creative-guidelines-and-specifications.md)
+[Creative Guidelines and Specifications](creative-guidelines-and-specifications.md)

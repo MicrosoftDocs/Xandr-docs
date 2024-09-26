@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # PSP common issues and best practices
 
-The page explains the common challenges when integrating and setting up Prebid Server Premium (PSP), along with best practices for maximizing performance and resolving issues. Key focus areas are managing connections from inventory to Monetize, troubleshooting developer tools errors, and optimizing collaboration with demand partners.
+This page highlights some of the common challenges when integrating and setting up Prebid Server Premium (PSP), along with best practices for maximizing performance and resolving issues. Key focus areas are managing connections from inventory to Monetize, troubleshooting developer tools errors, and optimizing collaboration with demand partners.
 
 ## Connections from Inventory to Monetize
 

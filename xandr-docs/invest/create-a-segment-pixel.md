@@ -4,8 +4,7 @@ description: This page provides a step-by-step guide to create a segment pixel w
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Create a segment pixel 
+# Microsoft Invest - Create a segment pixel
 
 A segment pixel marks a user as belonging to a certain target audience based on the web pages they visit, the actions they take (such as making a purchase), or data such as gender or location.
 
@@ -16,12 +15,12 @@ Navigate to the **Segments** screen (**Audiences** \> **Segments**).
 > [!IMPORTANT]
 > Segment pixels can be created at the advertiser level (that is, they're only viewable and targetable by the specific advertiser), or the member level (available for targeting to all advertisers). You can move a segment from advertiser level to member level by changing the `advertiser_id` to `"null"` via the [segment service](../digital-platform-api/segment-service.md).
 
-Click the **+ New** button. This opens the **Create New Segment** window.
+Select the **+ New** button. This opens the **Create New Segment** window.
 
 ## Step 2: Enter the segment pixel details
 
 1. In the **Details** section, enter a name that communicates the purpose of the segment pixel.
-1. Click **+ Advanced Options: Code** if you wish to enter a segment code. You may wish to refer to your segments by "codes" so they match your internal naming system. You can assign a code at the time of creation or afterwards. Codes are case sensitive, so if the code on the segment is lower case, then the code in your pixel querystring must also be lower case. Codes can include the following characters:  
+1. Select **+ Advanced Options: Code** if you wish to enter a segment code. You may wish to refer to your segments by "codes" so they match your internal naming system. You can assign a code at the time of creation or afterwards. Codes are case sensitive, so if the code on the segment is lower case, then the code in your pixel querystring must also be lower case. Codes can include the following characters:  
     - alphanumeric
     - underscores (\_)
     - hyphens (-)
@@ -36,6 +35,7 @@ Piggybacking allows you to chain one or more pixels to the new segment pixel. Wh
 
 > [!IMPORTANT]
 > Add piggyback pixels with the following in mind:
+>
 > 1. If you are using the feature that adds users to segments when they view or click on a creative ("On click, add user to the following segments"), piggyback pixels for these segments will NOT fire.
 > 1. Image pixels can only piggyback off other image pixels and JavaScript pixels can only piggyback off other JavaScript pixels.
 > 1. Image pixels can have only one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.

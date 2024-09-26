@@ -10,7 +10,7 @@ Once you've finished setting up conversion pixels, you can export the tags and g
 
 ## Step 1. Get started
 
-Go to the **Conversion Pixels** screen (**Audiences** > **Conversion Pixel**), select the checkboxes next to the conversion pixels that you want to export, click **More Actions**, and select **Export**. This displays the **Export Pixels** dialog.
+Go to the **Conversion Pixels** screen (**Audiences** > **Conversion Pixel**), select the checkboxes next to the conversion pixels that you want to export, select **More Actions**, and select **Export**. This displays the **Export Pixels** dialog.
 
 ## Step 2. Select the pixel format
 
@@ -40,15 +40,15 @@ Select **Use a server-side pixel** to generate a URL that you can call, instead 
 > [!NOTE]
 > If you have selected this option you will not be able to select the **Add user to segments** or **Remove user from segments** options, or the **Include a redirect URL** parameter. For more information on server-side conversion pixels, see [Server-Side Conversion Pixels](server-side-conversion-pixels.md).
 
-- Select **Add user to segments on call** to generate a pixel that will add the user to segments once they have converted. After selecting this option, click Add near the desired segments to move them from the Available Segments area to the Targeted Segments area. For more information, see "Segment Users Once They Have Converted" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
+- Select **Add user to segments on call** to generate a pixel that will add the user to segments once they have converted. After selecting this option, select Add near the desired segments to move them from the Available Segments area to the Targeted Segments area. For more information, see "Segment Users Once They Have Converted" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
-- Select **Remove user from segments on call** to generate a pixel that will remove the user from segments once they have converted. After selecting this option, click Add near the desired segments to move them from the Available Segments area to the Targeted Segments area. For more information, see "Segment Users Once They Have Converted" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
+- Select **Remove user from segments on call** to generate a pixel that will remove the user from segments once they have converted. After selecting this option, select Add near the desired segments to move them from the Available Segments area to the Targeted Segments area. For more information, see "Segment Users Once They Have Converted" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
 - Select any or all of the pixel parameters to add dynamic revenue, ID or SKU, or a redirect URL to the pixel tag. For more information, see the "Order ID/SKU", "Dynamic Revenue Values", and "Redirect URL" under [Conversion Pixels Advanced](conversion-pixels-advanced.md).
 
 ## Step 5. Generate the tags
 
-Click the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
+Select the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
 
 An image pixel looks like this, with a t=2 parameter:
 

@@ -49,7 +49,7 @@ Smaller creatives tend to be in view--having at least 50% of a creative's pixels
 
 ## Remove creatives with low viewability rates from your line item
 
-If some of your line item's associated creatives have low viewability performance, it may be best to remove them, so that only higher-performing creatives are being served. To analyze your creatives' viewability performance, click **Creative** in the nav bar to open the **Creatives** screen, where you can view the **Viewability Rate%** for any of your advertiser's or line item's creatives.
+If some of your line item's associated creatives have low viewability performance, it may be best to remove them, so that only higher-performing creatives are being served. To analyze your creatives' viewability performance, select **Creative** in the nav bar to open the **Creatives** screen, where you can view the **Viewability Rate%** for any of your advertiser's or line item's creatives.
 
 ## Use blocklists to stop targeting domains with low viewability rates
 

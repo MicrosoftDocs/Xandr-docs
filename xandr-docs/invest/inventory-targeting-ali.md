@@ -12,7 +12,7 @@ If you selected **Managed** under **Supply Strategy** (in the **Basic Setup** se
 - [Custom Categories](#target-custom-categories)
 - [Direct Inventory](direct-inventory-targeting-ali.md)
 
-To target specific inventory, open the **Inventory & Brand Safety** section. Then click **Edit** next to **Managed Inventory**. Use these settings to limit the inventory your line item will target.
+To target specific inventory, open the **Inventory & Brand Safety** section. Then select **Edit** next to **Managed Inventory**. Use these settings to limit the inventory your line item will target.
 
 ## Universal and custom categories
 
@@ -30,7 +30,7 @@ By default, your line item will target all universal categories. However, you ca
     > [!IMPORTANT]
     > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-1. Click **Add**.
+1. Select **Add**.
 
 ### Target custom categories
 
@@ -41,7 +41,7 @@ By default, your line item will target all custom categories. However, you can n
     > [!IMPORTANT]
     > When targeting more than one custom category, the categories have an OR relationship. For example, if you include "Custom Category 1" and "Custom Category 2", you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-1. Click **Add**.
+1. Select **Add**.
 
 ## Related topics
 

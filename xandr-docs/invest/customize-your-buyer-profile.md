@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Step 1: Get started
 
-Click the **My Profile** button to open the **My Buyer Profile** dialog. Basic information about your member displays:
+Select the **My Profile** button to open the **My Buyer Profile** dialog. Basic information about your member displays:
 
 - **ID** - The unique identification number for your member.
 - **Name** - Your member name.
@@ -33,7 +33,7 @@ Complete the following fields:
 
 ## Step 3: Record your changes
 
-When all changes have been made, click **Save** at the bottom of the dialog. Your changes are recorded and you are returned to the **Partner Center** screen.
+When all changes have been made, select **Save** at the bottom of the dialog. Your changes are recorded and you are returned to the **Partner Center** screen.
 
 ## Related topics
 

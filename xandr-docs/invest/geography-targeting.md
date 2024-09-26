@@ -11,7 +11,7 @@ ms.date: 10/28/2023
 
 You can target impressions based on the geographic location of the users viewing them.
 
-In the **Targeting** section of a line item, click the **Edit** button next to **Geography**.
+In the **Targeting** section of a line item, select the **Edit** button next to **Geography**.
 
 Follow the instructions for the relevant geographic targeting option below.
 
@@ -38,7 +38,7 @@ By default, you will target users in all geographic locations. On the **Country/
 - The **Cities** list shows all of the cities that can be targeted. You can either include or exclude cities.
 
 > [!TIP]
-> Click the column headers to sort countries, regions, or cities by name or ID, or use the **search** field to find a particular location.
+> Select the column headers to sort countries, regions, or cities by name or ID, or use the **search** field to find a particular location.
 > [!WARNING]
 > Do not add conflicting geographic targeting at multiple levels. For example, if you are including the United States, Canada, and Mexico, and then you also include US zip codes, your campaign will only serve the US zip codes targeted. In this scenario, zip code targeting will automatically limit the targeting to the US only. Similarly, do not target both the region of Arizona and the metro code of New York, because targeting is an AND relationship.
 > [!IMPORTANT]

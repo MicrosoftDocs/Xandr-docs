@@ -31,11 +31,11 @@ Once you've found packages that you are interested in, there are two ways to get
 
 ### Option 1. Generate deals "off-the-shelf"
 
-Click **Add to Cart** next to each package that you want to convert into a deal. Then click **Get Deals** to instantly convert the packages into deals between you and the seller and to receive deal IDs that you can target.
+Select **Add to Cart** next to each package that you want to convert into a deal. Then select **Get Deals** to instantly convert the packages into deals between you and the seller and to receive deal IDs that you can target.
 
 ### Option 2. Request a custom deal
 
-If you are interested in a package but would like to ask the seller to make modifications, click **Request a Custom Deal**, enter your message, and then click **Submit**. Your message will be posted in the seller's [Partnership Details Screen](./partnership-details-screen-buyer-view.md). Continue to use the Activity Stream to negotiate with the seller.
+If you are interested in a package but would like to ask the seller to make modifications, select **Request a Custom Deal**, enter your message, and then select **Submit**. Your message will be posted in the seller's [Partnership Details Screen](./partnership-details-screen-buyer-view.md). Continue to use the Activity Stream to negotiate with the seller.
 
 ## Step 3. Target deals
 

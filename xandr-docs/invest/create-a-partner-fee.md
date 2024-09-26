@@ -4,19 +4,18 @@ description: This page is a step-by-step guide to create a partner fee from the 
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Create a partner fee  
+# Microsoft Invest - Create a partner fee
 
 You must have [Network-level access](getting-started-with-roles.md) to perform this task.
 
-1. Go to the **Fees** screen (hover over your member name in the upper-right corner of the menu bar and click **Fees**).
-1. Click **+ New**.
-1. Fill out the fee overview and click **Next**.
+1. Go to the **Fees** screen (hover over your member name in the upper-right corner of the menu bar and select **Fees**).
+1. Select **+ New**.
+1. Fill out the fee overview and select **Next**.
     1. Enter a fee name that will make sense to other people.
     1. Select a fee vendor. If your vendor isn't listed, select one of the custom vendors to represent them.
     1. Select a fee type. For more information, see [Fee Type](fee-type.md).
     1. Optionally enter a longer fee description.
-1. Define the fee calculation and click **Next**. For more information, see [Fee Calculations](fee-calculations.md).
+1. Define the fee calculation and select **Next**. For more information, see [Fee Calculations](fee-calculations.md).
     1. Select **%** (percentage) or **CPM**. If you select **CPM**, select a currency.
 
        > [!NOTE]

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Managing Relationships with Sellers
+title: Microsoft Invest - Manage Relationships with Sellers
 description: In this article, explore valuable insights on how a buyer can use the Partner Center to manage relationships with specific sellers.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Managing relationships with sellers
+# Microsoft Invest - Manage relationships with sellers
 
 Buyers use the **Partner Center** to foster and manage relationships with specific sellers.
 
@@ -13,6 +13,6 @@ As a buyer, you can use the **Partner Center** to:
 - Communicate with sellers directly in Microsoft Invest using the Activity Stream.
 - Leverage more overall spend for targeting access and/or lower impression prices.
 - Track spend on a specific seller's inventory to gain insight into the partnership and trends.
-- [Partner Center Screen](partner-center-screen-buyer-view.md) - View your preferred partners, search all sellers, set preferred sellers, and review impression and click statistics for each seller.
+- [Partner Center Screen](partner-center-screen-buyer-view.md) - View your preferred partners, search all sellers, set preferred sellers, and review impression and select statistics for each seller.
 - [Partnership Details Screen](partnership-details-screen-buyer-view.md) - Review and manage your relationship with a specific seller by tracking overall spend trends, view your top brands on the seller's inventory, view the seller's top publishers from whom you have purchased inventory, view seller statistics, and send messages directly to the seller in Microsoft Invest.
 - [Customize Your Buyer Profile](customize-your-buyer-profile.md) - Step-by-step instructions for editing the profile information that displays to sellers on your Partner Details page.

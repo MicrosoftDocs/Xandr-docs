@@ -10,29 +10,29 @@ This documentation provides step by step guide on how to migrate existing authen
 
 1. Go to product login screen using [Microsoft Invest Login url](https://invest.xandr.com/login).
 
-1. Click on **Sign in with Microsoft** button.
+1. Select **Sign in with Microsoft** button.
 
     :::image type="content" source="media/a.png" alt-text="Screenshot of Microsoft Invest sign in window.":::
 
 1. In **Action Required: Create a Microsoft Account** screen, you can:
 
-    - Click on **Create Microsoft Account** button and proceed.
+    - Select **Create Microsoft Account** button and proceed.
 
-    - Click on **Remind me tomorrow** to delay the migration process.
+    - Select **Remind me tomorrow** to delay the migration process.
 
       > [!NOTE]
-      > This option to delay the migration is available till 16 June, 2023 and a countdown is displayed next to **Remind me tomorrow** to show how many days are remaining till then. Post June 16, you will have the option to click on **Create Microsoft Account** only.
+      > This option to delay the migration is available till 16 June, 2023 and a countdown is displayed next to **Remind me tomorrow** to show how many days are remaining till then. Post June 16, you will have the option to select **Create Microsoft Account** only.
 
       :::image type="content" source="media/b.png" alt-text="Screenshot of action required window.":::
 
-1. In the **Sign In page**, enter Email ID associated with your Microsoft Advertising account login and click **Next**. If you have registered a different email ID for Microsoft products, ensure that Microsoft Advertising platform account matches the email used to login to Microsoft. If they do not match, contact the designated person with the role of User Manager from your organization to do the needful or you can raise a ticket in [Microsoft Advertising Support portal](https://help.xandr.com/).
+1. In the **Sign In page**, enter Email ID associated with your Microsoft Advertising account login and select **Next**. If you have registered a different email ID for Microsoft products, ensure that Microsoft Advertising platform account matches the email used to login to Microsoft. If they do not match, contact the designated person with the role of User Manager from your organization to do the needful or you can raise a ticket in [Microsoft Advertising Support portal](https://help.xandr.com/).
 
      :::image type="content" source="media/c.png" alt-text="Screenshot of Microsoft sign in window.":::
 
      > [!NOTE]
      > If you do not have a Microsoft account, you can create using **Create one!** link in the page.
 
-1. Enter the password and click on **Sign in** to proceed.
+1. Enter the password and select **Sign in** to proceed.
 
      :::image type="content" source="media/d.png" alt-text="Screenshot of password window.":::
 

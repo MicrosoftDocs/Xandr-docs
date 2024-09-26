@@ -22,7 +22,7 @@ As a result:
 - Traders spend less time making allocation decisions about inventory that is working well.
 - Line items achieve their goals faster with less human effort.
 
-## How Discovery works
+## Discovery workflow
 
 This is how Discovery works:
 
@@ -33,7 +33,7 @@ This is how Discovery works:
 > [!NOTE]
 > If you change your line item goals, Discovery uses the line item's existing data to re-evaluate inventory against the new goal.
 
-## Ranking
+## Process of ranking
 
 The sections of inventory that Discovery tests are called "Discovery nodes". A node is defined by a combination of tag + inventory URL, except for CPA prospecting, where a node is defined by inventory URL only. As soon as we see that a single impression has been served against a Discovery node, we look up that Discovery node in our ranking system so we can determine whether the line item should keep testing it.
 
@@ -49,7 +49,7 @@ From there we rank RTB inventory into five buckets: super good, good, less good,
 
 If the current line item hasn't purchased any impressions in a node, the node is considered "explore inventory". A line item will always serve on a minimum of 1% explore inventory in order to discover new, potentially performant inventory sources and to feed our eligibility list. We will increase that percentage if the line item is not meeting its delivery goal.
 
-## Axing
+## Process of axing
 
 "Axing" is the term we use to describe the process of eliminating Discovery nodes as nonperformant. Axing decisions are based on a combination of:
 
@@ -79,7 +79,7 @@ In order to account for this risk, a Discovery node's pass criterion changes dep
 
 If a node has one click at or below $1 of spend, the pass criterion increases to $2. If a node has two clicks at or below $2 of spend, the pass criterion increases to $3. If the node has 3 clicks at or below $3 spend, the node passes, unless the line item's CPC goal change.(In that case, as with any changes to the goal, Discovery will automatically reevaluate nodes against the new criteria.)
 
-## How axing interacts with goal priorities
+## Interaction between axing and goal priorities
 
 On the line item, you choose a goal priority: delivery, performance, or margin. When you choose **Performance** (the default), axing uses the default pass and fail criteria described above. When you choose **Delivery**, we implement a dynamic fail criterion calculation and also modify the criterion with an [Adaptive Pacing](adaptive-pacing.md) modifier, which can go up to 2.0. In other words, if a line item is not meeting its delivery goal, then Discovery will keep incrementally increasing the fail criterion threshold until it does.
 

@@ -12,7 +12,7 @@
   items: 
   - name: Working with Member Settings
     items:
-    - name: Managing Notification Recipients
+    - name: Manage Notification Recipients
       href: managing-notification-recipients.md
     - name: Viewing Your Object Limits
       href: viewing-your-object-limits.md
@@ -22,7 +22,7 @@
       href: member-level-geography-targeting.md
     - name: Create a Third-Party Member Pixel for Your Creatives
       href: create-a-third-party-network-pixel-for-your-creatives.md
-  - name: Managing User Logins and Permissions
+  - name: Manage User Logins and Permissions
     items:
     - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md
@@ -34,7 +34,7 @@
       href: create-a-user.md
     - name: Edit a Member User
       href: edit-a-network-user.md
-    - name: Getting Started with Roles
+    - name: Get Started with Roles
       items:   
       - name: Overview
         href: getting-started-with-roles.md
@@ -64,7 +64,7 @@
         href: fee-type.md
       - name: Fee Calculations
         href: fee-calculations.md
-      - name: Migrating from Broker Fees to Partner Fees
+      - name: Migrate from Broker Fees to Partner Fees
         href: migrating-from-broker-fees-to-partner-fees.md
       - name: Broker Fees
         href: broker-fees.md
@@ -98,7 +98,7 @@
     href: using-the-buyer-monitoring-grids.md
   - name: Bulk Edit Actions
     href: bulk-edit-actions.md
-  - name: Exporting and Importing Object Details in Bulk
+  - name: Export and Import Object Details in Bulk
     items:
     - name: Overview
       href: exporting-and-importing-object-details-in-bulk.md
@@ -198,7 +198,7 @@
           href: nielsen-dar-metrics.md
         - name: Activate Nielsen Digital Ad Ratings for a Line Item
           href: activate-nielsen-digital-ad-ratings-for-a-line-item.md
-        - name: Enabling Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
+        - name: Enable Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
           href: enabling-sales-impact-with-nielsen-catalina-solutions.md
         - name: Activate Nielsen Sales Impact for a Line Item
           href: activate-nielsen-sales-impact-for-a-line-item.md
@@ -264,7 +264,7 @@
     items:
     - name: Overview
       href: trader-home.md
-    - name: Getting Started with Trader Home
+    - name: Get Started with Trader Home
       href: getting-started-with-trader-home.md
     - name: Explore Trader Home
       href: explore-trader-home.md
@@ -416,7 +416,7 @@
         href: buying-mobile-inventory.md
       - name: Buy Mobile Inventory via RTB
         href: buy-mobile-inventory-via-rtb.md
-      - name: Managing Mobile Discrepancies
+      - name: Manage Mobile Discrepancies
         href: managing-mobile-discrepancies.md
       - name: Run Rich Media Creatives on Mobile Inventory
         href: run-rich-media-creatives-on-mobile-inventory.md
@@ -552,7 +552,7 @@
     items:
     - name: Overview  
       href: geography-targeting.md
-    - name: How Geography Targeting Works
+    - name: Geography Targeting Process
       href: how-geography-targeting-works.md
     - name: Invalid Postal and ZIP Codes
       href: invalid-postal-codes.md
@@ -614,7 +614,7 @@
   items:
   - name: Working with Creatives 
     href: working-with-creatives.md
-  - name: Exploring Creatives
+  - name: Explore Creatives
     href: exploring-creatives.md
   - name: Creative Types
     items:
@@ -688,7 +688,7 @@
       href: smart-image-adjustments-for-native-creatives.md
   - name: Tracking for Creatives   
     items:
-    - name: Configuring Tracking for Creatives
+    - name: Configure Tracking for Creatives
       href: configuring-tracking-for-creatives.md
     - name: Click Tracking
       items:
@@ -734,7 +734,7 @@
     items:
     - name: Overview
       href: creative-templates.md
-    - name: Managing Creative Templates
+    - name: Manage Creative Templates
       href: managing-creative-templates.md
     - name: Create a Custom Creative Template
       href: create-a-custom-creative-template.md
@@ -760,7 +760,7 @@
     href: creative-faq.md
 - name: Partner Center Guide
   items:
-  - name: Managing Relationships with Sellers
+  - name: Manage Relationships with Sellers
     items:
     - name: Partner Center Screen
       href: partner-center-screen-buyer-view.md       
@@ -814,7 +814,7 @@
   items:
     - name: Overview
       href: guaranteed-outcomes.md
-    - name: How Guaranteed Outcomes Work
+    - name: Guaranteed Outcomes Mechanism and Bid Process
       href: how-guaranteed-outcomes-work.md
     - name: Guaranteed Outcomes Auction Mechanics
       href: guaranteed-outcomes-auction-mechanics.md
@@ -826,7 +826,7 @@
       href: supported-viewability-standards-for-guaranteed-outcomes.md
     - name: Supported Video Completion Standards
       href: supported-video-completion-standards.md
-    - name: Configuring a Line Item to Buy Guaranteed Outcomes
+    - name: Configure a Line Item to Buy Guaranteed Outcomes
       href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
     - name: Reporting on Guaranteed Outcomes
       href: reporting-on-guaranteed-outcomes.md

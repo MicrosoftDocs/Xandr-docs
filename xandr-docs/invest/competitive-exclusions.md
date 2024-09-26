@@ -4,7 +4,7 @@ description: Use the competitive exclusions settings to prevent creatives from s
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - competitive exclusions
+# Microsoft Invest - Competitive exclusions
 
 You can use competitive exclusions to prevent creatives with competitive brands or offer categories from serving alongside each other.
 

@@ -14,5 +14,5 @@ You can create a programmable split when creating or editing an augmented line i
 
 | Context | Procedure |
 |:-|:-|
-| **On a line item with no existing programmable splits** | a. Under **How many Splits do you want to start with**, enter the number of splits you wish to create (the default is 3).<br> b. Click ***Start**.<br> &nbsp;&nbsp;A grid will appear listing each split you've created.<br> c. Select and set the properties for each split. |
-| **On a line item with existing programmable splits** | a. In the grid, click **New**.<br> b. Select and set the properties for the split.<br> Repeat the process for each new split you create. |
+| **On a line item with no existing programmable splits** | a. Under **How many Splits do you want to start with**, enter the number of splits you wish to create (the default is 3).<br> b. Select ***Start**.<br> &nbsp;&nbsp;A grid will appear listing each split you've created.<br> c. Select and set the properties for each split. |
+| **On a line item with existing programmable splits** | a. In the grid, select **New**.<br> b. Select and set the properties for the split.<br> Repeat the process for each new split you create. |

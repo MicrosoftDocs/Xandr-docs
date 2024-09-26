@@ -16,7 +16,7 @@ Ensure you understand these basics before proceeding (each of these concepts is 
     - Although USD is the default currency, Microsoft Advertising supports the **buying and selling ("transacting")** of impressions as well as **billing** in a number of different non-USD currencies.
     - Microsoft Advertising performs all calculations in USD. To support non-USD use cases, we convert in and out of USD (as needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
 1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates exchange rates platform-wide on a daily basis based on the most current [Oanda](https://www.oanda.com/) rates.
-1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction took place. However, in the following scenarios, we use the month-end rate to bill. For a full list, see [When Media Cost and Related Fees are Converted for use in Billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing) below:
+1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction took place. However, in the following scenarios, we use the month-end rate to bill. For a full list, see [Conversion of media costs and related fees for billing](#conversion-of-media-costs-and-related-fees-for-billing) below:
     - The transaction currency differs from the billing currency.
     - We can't easily associate a fee back to an auction (e.g., Ad Serving Fees, Minimums, Log Level Data Fees, etc.).
 
@@ -174,7 +174,7 @@ Once an auction has been completed, you can review the details related to it in 
 
 Line Item and Campaign revenue metrics can be displayed in Transaction Currency, however all other grids and monetary metrics are displayed in USD only. Be sure to note which currency your data is being displayed in and if it's not in your Transaction Currency, use the reports (listed above) to view auction details in the your Transaction Currency.
 
-## When media cost and related fees are converted for use in billing?
+## Conversion of media costs and related fees for billing
 
 The conversion of media cost and fees to the billing currency will be based on either daily conversion rates or a month-end conversion rate.
 

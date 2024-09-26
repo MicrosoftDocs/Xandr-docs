@@ -120,7 +120,7 @@ For more details on the objects that have currency setting and what those settin
 > [!NOTE]
 > While you are able to set currency on many objects, the only two which are actually used to buy and sell are those set on the **Line Item** (for the buy side) and **Publisher** (for the sell side). The currencies set on these two objects are what is actually logged by and used for transacting on the platform.
 
-### Currency configuration per object
+### Currency settings per object
 
 The table below explains when you can set currencies and the effects of those settings.
 

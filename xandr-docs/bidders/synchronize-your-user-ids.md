@@ -135,7 +135,7 @@ Next step: [Receiving a Notify Request](receive-a-notify-request.md)
 
 > [!NOTE]
 > For both endpoints, if TCF parameters are passed in the redirect URL, Xandr will utilize these parameters to determine if a cookie sync can be performed. If the signals received are interpreted as having insufficient legal basis, Xandr will be unable to process the cookie sync request, and it will return the following error message: "Request failed due to privacy signals."
-> Additionally, if TCF signals cannot be provided when calling our URLs, partners must append the **consent** parameter to the URL. The **consent** parameter accepts binary values: **1** if the user has given consent, and **0** if consent has been denied. This parameter must be included to perform user syncs in certain geographical areas.
+Additionally, if TCF signals cannot be provided when calling our URLs, partners must append the **consent** parameter to the URL. The **consent** parameter accepts binary values: **1** if the user has given consent, and **0** if consent has been denied. This parameter must be included to perform user syncs in certain geographical areas.
 
 Please see the examples below for how to use the **consent** parameter in URLs:
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Buy Microsoft Casual Games (Windows O&O Apps)
-description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.  Discover a variety of fun and engaging game options for users.
+description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps. Discover a variety of fun and engaging game options for users.
 ms.date: 10/28/2023
 ---
 

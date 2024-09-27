@@ -2,7 +2,7 @@
 title: Show Interstitials on Android
 description: This page gives an overview on instructions and code samples for showing interstitial ads on Android.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 09/27/2024
 ---
 
 # Show interstitials on Android
@@ -23,6 +23,8 @@ This page has instructions and code samples for showing interstitial ads on Andr
 ## Overview
 
 Showing interstitial ads is a little more work. In addition to setting up an `InterstitialAdView` with your placement ID, you must implement the `AdListener` interface, which includes methods that tell you when an interstitial ad has successfully finished loading, or when the request has failed.
+
+Interstitial Ad Unit supports VAST Video creatives as of version 9.1.0. The code example below is suitable to request and render a video creative if the implemented placement is enabled for video demand.
 
 Furthermore, actually showing interstitial ads to users is a two-step process:
 

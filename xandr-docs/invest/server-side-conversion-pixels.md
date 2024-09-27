@@ -15,7 +15,7 @@ For instance, if the conversion is a user downloading and installing an app from
 
 This page makes references to an attribution server. This is a server that is set up to capture the server-side pixel token data, attribute a conversion, and notify Microsoft Advertising of a successful conversion.
 
-## How server-side pixels work
+## Server-side pixel functionality
 
 <!--:::image type="content" source="./media/ssp-kb-article-graphic-revised.png" alt-text="Diagram explaining the server-side pixel conversion.":::-->
 - From a browser or app there is an ad call to Microsoft Advertising.
@@ -25,15 +25,15 @@ This page makes references to an attribution server. This is a server that is se
   Often there is a period at the end that must be included.
 - The user clicks on the creative. The landing page for the creative has special macros that include information like the server-side pixel token and mobile device IDs (if present) in the landing page URL which it receives from Microsoft Advertising An example landing page URL with the macros would look like this:
 
-```
-https://attributionserver.com/attr?id=12&idfa=${DEVICE_APPLE_IDA}&token=${SSP_DATA}
-```
+    ```
+    https://attributionserver.com/attr?id=12&idfa=${DEVICE_APPLE_IDA}&token=${SSP_DATA}
+    ```
 
-The user’s device ID and the server-side pixel token replace the macros in the URL.
+    The user’s device ID and the server-side pixel token replace the macros in the URL.
 
-```
-https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckvOj1WFMAAAAAGULAAA3AAAUQIAAd$AAA
-```
+    ```
+    https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckvOj1WFMAAAAAGULAAA3AAAUQIAAd$AAA
+    ```
 
 - The attribution server captures the token along with any other available information.
 - The user is redirected to the App Store or an advertiser’s landing page. The user converts. In the case of a mobile app installation the user downloads the app and opens it.
@@ -41,13 +41,14 @@ https://attributionserver.com/attr?id=12&idfa=adw-231234-550&token=ams1AAAAAAAAk
 - The attribution server determines that the Microsoft Advertising’s advertiser is attributed with the conversion. This is typically a last touch scenario.
 - The attribution server fires to Microsoft Advertising which includes the Conversion Pixel ID and the token. An example of this call would look like:
 
-```
-https://sspx-router.adnxs.com/sspx?id=1235&sspdata=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckv1Oj1WFMAAAAAGULAAA3AAAAUQIAAD4AAA
-```
- The ID parameter is the Microsoft Advertising’s ID of the pixel and sspdata is the token.
+    ```
+    https://sspx-router.adnxs.com/sspx?id=1235&sspdata=ams1AAAAAAAAkQC8rFPull3JKKU9tUKckv1Oj1WFMAAAAAGULAAA3AAAAUQIAAD4AAA
+    ```
+
+    The ID parameter is the Microsoft Advertising’s ID of the pixel and sspdata is the token.
 - Microsoft Advertising connects the sspdata value to the token value and attributes the conversion to the correct auction.
 
-## Getting the URL for a server-side pixel call
+## Locate the URL for a server-side pixel call
 
 For server-side conversion pixels, you'll need to generate a URL that you can call, instead of an HTML-based pixel that is placed on a publisher's web page. To do this, consult the **Explore Advanced Options** section of the [Export Conversion Pixels](./export-conversion-pixels.md) page. The URL that is generated when you export the pixel will look something like this:
 
@@ -62,7 +63,7 @@ https://sspx-router.adnxs.com/sspx?id=59633&sspdata=[SSPDATA]
 
 <!--:::image type="content" source="./media/serverside-conversion-revised.png" alt-text="Screenshot of the URL that is generated when you export the pixel.":::-->
 
-## Adding parameters to an server-side pixel call
+## Add parameters to a server-side pixel call
 
 You can add the following parameters to any SSPX call:
 
@@ -81,11 +82,11 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 > [!NOTE]
 > The sspx handler is supported over only in secure (https://secure.adnxs.com/sspx) mode.
 
-## Testing a server-side pixel
+## Test a server-side pixel
 
 1. Serve yourself a line item on a test page using a test placement. The line item must include a landing page with the SSP token.
 
-1. Click through the ad and see the token populate in the URL.
+1. Select the ad and see the token populate in the URL.
 
 1. Copy the token from the http header and fire it back to Microsoft Advertising using the command line. The call for this looks like
 

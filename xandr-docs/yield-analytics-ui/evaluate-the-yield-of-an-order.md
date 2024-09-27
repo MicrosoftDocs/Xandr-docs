@@ -18,7 +18,7 @@ Use the **Orders** tab and Evaluate Orders to see how a proposal is expected
     - The Time Period filter searches the order's start date.
     - The Order, Order Status, Advertiser, Agency, Industry, and Salesperson filters search parameters imported from your order management system.
     - The Flags filter searches for orders that have pricing (! Price) or availability (! Avails) flags.
-1. Select on the order in the **Orders** panel list to select it. A preview of the order appears in the **Order details** panel below.
+1. Select the order in the **Orders** panel list. A preview of the order appears in the **Order details** panel below.
 1. In the **Order details** panel, select the name of the order to open it in **Evaluate Orders**, or select **View** and select **Evaluate Orders**.
 1. In the **Key Metrics** panel of the **Order Analytics** tab of the **Evaluate Orders** page, view the bar charts to compare the selected order to all other orders, making any additional changes:
     1. Change the comparison basis by selecting **All Customers** and selecting one of the following four values:
@@ -37,7 +37,7 @@ Use the **Orders** tab and Evaluate Orders to see how a proposal is expected
 You can add a proposal or an order to Scenario Manager to better understand how it impacts other orders.
 
 1. On the **Orders** tab, in the **Order Tasks** panel, select **Evaluate Orders**.
-1. In the **Evaluate Orders Search** page, in the **Orders** panel, select on the order.
+1. In the **Evaluate Orders Search** page, in the **Orders** panel, select the order.
 1. In the **Order preview** panel, select the order's name to open it in **Evaluate Orders**.
 1. Select **Add to Scenario** at the top of the page. The order is added to a scenario.
 1. Go to **Scenario Manager** to run the scenario.

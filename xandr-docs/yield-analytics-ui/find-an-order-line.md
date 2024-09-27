@@ -13,8 +13,8 @@ You can search for a specific order line, or search all order lines to find at-r
 1. (Optional) On the **Filter** panel, specify any filter criteria:
     - To filter the orders list by date: Select **This Month** in the **Date Range** filter. Specify a standard or custom time period. Select **Update**.
     - To filter the order list by status: Select **Includes x Values** in the **Status** filter. Select a status to select or deselect it. Select **Update**.
-    - To filter the list on the type of contract (e.g., sponsorship or bulk): Select **None Selected** in the **Contract Type** filter. Select one or more contract types to select them. Select **Update**.
-    - To filter the list on the inventory (e.g., guaranteed): Select **None Selected** in the **Inventory Class** filter. Select on one or more types of inventory to select them. Select **Update**.
+    - To filter the list on the type of contract (e.g., sponsorship or bulk): Select **None Selected** in the **Contract Type** filter. Select one or more contract types. Select **Update**.
+    - To filter the list on the inventory (e.g., guaranteed): Select **None Selected** in the **Inventory Class** filter. Select one or more types of inventory. Select **Update**.
 1. In the search box in the toolbar above the order list, type a search term. Change the search options as needed, and then press **Enter**. The order list is redisplayed to show only the orders that match your search criteria.
     - By default, the search returns orders that contain the search term you entered. To change the type of search, on the drop-down list to the left of the search box, select **Contains** and select a different option (e.g., to search for orders that starts with the search term you typed, select **Starts With**).
     - By default, the search is run against the advertiser, order name, order ID, order line, and order line ID. To narrow the search to just one of these, select **All** in the drop-down list to the right of the search box and select a different option (e.g., to search for orders by order name only, select **Order**).

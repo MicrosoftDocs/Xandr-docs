@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Edit report categories
 
-1. Go to the **Analyzer Screen** and select on the open button located on the top left hand corner.
+1. Go to the **Analyzer Screen** and select the open button located on the top left hand corner.
 1. Use the search and filter options to find the **Analyzer Report** you would like to edit.
 1. Select the **Reports Name** to open it.
 1. At the top of the **Edit Saved Analysis** screen select the save button. You will have options to change the **Report's Name**, **Description**, and **Category**.

@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 The Forecast Visibility page on the **Capacity** tab shows a forecast of how a product's impressions will be consumed. It's displayed when you select a product in the **Impression Capacity** widget, or when you select a product on the **Forecast Management** page and select **View** > **Forecast Visibility**.
 
-## Forecast Visibility interface
+## Forecast Visibility page
 
 There are four sections on the **Forecast Visibility** page:
 

@@ -13,13 +13,13 @@ You can open the following types of reports:
 - Reports that you created and saved.
 - Reports that other users created and shared with your user group.
 
-## To open a report
+## Open a report
 
 1. On the **Reports** tab, on the toolbar, select **Open**.
 1. In the **Open Analysis** dialog, to search for a specific report by its title, enter text in the search box and press **Enter**.
 
     Or, expand a report type section to view all of the category's reports.
-1. Select on the report name to open it.
+1. Select the report name to open it.
 1. Edit the configuration, metrics, and/or filters as needed.
 1. To save your changes, select **Save** on the toolbar. The **Save Analysis** dialog appears.
 1. Select to either **Save as New** or **Replace Existing** report. Then update the report Name, Description, and Category as needed. To add a new report category, select **Add New** to the right of the Category drop-down list.

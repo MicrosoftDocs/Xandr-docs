@@ -139,7 +139,7 @@ Here’s the explanation for what the options do:
 > [!NOTE]
 > If you are adding a new attribute across segments (and it doesn’t exist in any segment), it does not matter if you use the **Duplicate Attribute** or **Add Attribute Values** option. They will result in the same targeting.
 
-## Building a lookup/target expression using attributes
+## Build a lookup/target expression with attributes
 
 There are a few methods of building a lookup/target expression:
 
@@ -163,7 +163,7 @@ This method is recommended if you do not know specifically what you are looking 
 - The result of the search is displayed in the right-hand window.
 - The right-hand window also has include/exclude functionality. You can exclude attributes from your final selection.
 - When you are satisfied with your selection, select **Update**. You will now see the attributes listed on the **Lookup Builder** screen.
-- If you would like to delete an attribute, mouse-over the attribute and select on the **x** in the upper right-hand corner.
+- If you would like to delete an attribute, mouse-over the attribute and select **x** in the upper right-hand corner.
 - If you want to add other attributes, select **Attributes** again, and the entire list is displayed again. The previous selections will still be displayed in the right-hand column.
 
 ### Method 3
@@ -171,7 +171,7 @@ This method is recommended if you do not know specifically what you are looking 
 - Select **Add Attribute** to add an attribute directly from the **Lookup Builder** screen.
 - This accesses a text window, where you can add the attribute’s name. Start typing and it will display a list of what is available to you.
 
-## Building a lookup/target expression for products
+## Build a lookup/target expression for products
 
 - You can select a product as base targeting and then add additional targeting as described in one of the three attribute methods above.
 - If you have existing products in the system that you want to look up, then select **Select Product**. This accesses the **Select Product** screen, which displays a list of products.

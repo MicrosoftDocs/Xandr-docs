@@ -43,7 +43,7 @@ Reports can be delivered through various automated options as well as on an ad h
 
 The aggregation, filtering and processing of the data available via UI reporting can be conducted automatically using API scripts. This method allows you to store data for longer than is possible in Curate reporting. Certain reporting services offer more granular data via the API; there is also the ability to use [Bulk Reporting Feeds](../digital-platform-api/bulk-reporting-feeds.md) to synchronize offline data sets with Microsoft Advertising-aggregated data over the last 30 days. In addition, there is a custom `code` field that can be used for filtering and reporting through the API to map Curate objects back to objects in an external system or data store. Buyers will often store data pulled via the API offline to present to clients in delivery or metrics dashboards.
 
-## Log-Level data
+## Log-level data
 
 Each feed has different parameters that can be valuable to clients looking for auction-level granularity or metrics not available in Curate reporting. To handle this data, you must be able to support offline aggregation and large scale storage capabilities. See [Log-level Data (LLD) Feeds](../log-level-data/log-level-data-feeds.md) for more details.
 

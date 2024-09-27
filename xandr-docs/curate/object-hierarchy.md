@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Object Hierarchy
-description: In this article, learn about the main objects that you work with to buy and sell media.
+description: Learn about the key objects in Microsoft Curate for managing media buys and sales, including members, advertisers, and creatives.
 ms.date: 10/28/2023
 ---
 

@@ -4,24 +4,24 @@ description: Explore Seller View's Partnership Details screen for effective revi
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Partnership details screen - Seller view
+# Microsoft Curate - Partnership Details screen - Seller view
 
-On the Partnership details screen you can review and manage your relationship with a specific buyer. You can track overall revenue trends, view the buyer's top brands on your inventory, view your top publishers for the buyer, view the privileges you have granted for the buyer, view active and upcoming deals, and create new deals for buyers.
+On the Partnership Details screen you can review and manage your relationship with a specific buyer. You can track overall revenue trends, view the buyer's top brands on your inventory, view your top publishers for the buyer, view the privileges you have granted for the buyer, view active and upcoming deals, and create new deals for buyers.
 
-## Getting to the partnership details screen
+## Access Partnership Details screen
 
 **Publisher clients**: Select **Marketplace > Partner Center All other clients**: Select **Partners** >  **Partner Center**.
 
 Then click on a buyer.
 
-## Viewing buyer contact info and description
+## View buyer contact info and description
 
-View information the buyer has provided, including the main contact's name, phone number, and email address, and a description of their business. You can contact the buyer directly in Curate by sending a message within the Activity Stream. For more information about the Activity Stream, see [Communicating with the Buyer](partnership-details-screen-seller-view.md#communicating-with-the-buyer).
+View information the buyer has provided, including the main contact's name, phone number, and email address, and a description of their business. You can contact the buyer directly in Curate by sending a message within the Activity Stream. For more information about the Activity Stream, see [Communicate with the Buyer](partnership-details-screen-seller-view.md#communicate-with-the-buyer).
 
 > [!IMPORTANT]
 > If the buyer has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.
 
-## Viewing buyer performance on your inventory
+## View buyer performance on your inventory
 
 View statistics in the **Dashboard** to see how the buyer is performing on your inventory. These statistics are updated every 24 hours. The graph and two tables may update at separate times, therefore text at the top of each section notes when the last update occurred.
 
@@ -43,7 +43,7 @@ A table lists the buyer's top brands that have purchased your inventory, listed 
 
 A table lists your top publishers that the buyer has purchased inventory from, listed in order from most to least revenue. This information tells you which of your publishers are performing best with the buyer.
 
-### Communicating with the buyer
+### Communicate with the buyer
 
 In the **Activity Stream**, the **Messages** tab shows messages between you and the buyer along with the number of days since the message was posted. You can use the **Activity Stream** to introduce yourself to a new buyer, offer targeting access in exchange for increased spend, check in with the buyer to see how their targeting access is working for them, or request changes to your eligibility and inventory trust.
 
@@ -57,9 +57,9 @@ In this section you can:
 
 Click on the **Notifications** tab in the **Activity Stream** to view system messages.
 
-## Viewing partner settings
+## View partner settings
 
-In the **Partner Controls** tab you can view and manage the settings you have set for the buyer. This information gives you insight into your ability to transact with the buyer on Curate. Contact the seller [Communicating with the Buyer](partnership-details-screen-seller-view.md#communicating-with-the-buyer) to request changes to your eligibility or inventory trust.
+In the **Partner Controls** tab you can view and manage the settings you have set for the buyer. This information gives you insight into your ability to transact with the buyer on Curate. Contact the seller [Communicate with the Buyer](partnership-details-screen-seller-view.md#communicate-with-the-buyer) to request changes to your eligibility or inventory trust.
 
 ## View your settings for the buyer
 
@@ -75,16 +75,14 @@ The **Partner Controls** tab is also visible to the buyer. They can see the sett
 
 The eligibility and inventory trust the buyer has set for you display in the **Buyer's Settings for Me** section.
 
-## Editing partner settings
+## Edit partner settings
 
-Click **Edit** in the **Partner Controls** tab to manage the eligibility, allowed payment types, and targeting access you have set
-for the buyer. These settings can be managed in the **Partner Center** screen as well as here in the Partner Controls tab; however,
-you can only view the buyer's current settings here within the **Partner Controls** tab. For step-by-step instructions on editing the a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+Click **Edit** in the **Partner Controls** tab to manage the eligibility, allowed payment types, and targeting access you have set for the buyer. These settings can be managed in the **Partner Center** screen as well as here in the Partner Controls tab; however, you can only view the buyer's current settings here within the **Partner Controls** tab. For step-by-step instructions on editing the a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
 > [!NOTE]
 > If you do not set custom settings for the buyer, your default settings will apply. For more information on setting default settings, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
-## Viewing deals
+## View deals
 
 View all of your deals with the buyer, historical and current, in the Deals tab. Each deal displays with additional details:
 
@@ -93,7 +91,7 @@ View all of your deals with the buyer, historical and current, in the Deals tab.
 - **Name** - A name you enter for your deal. Select a name that will help remind you of what the deal includes.
 
 - **ID** - The deal ID.
-
+  
 - **Created by** - The first and last name of the seller user that created the deal.
 
 - **Start and End Date** - The start and end dates for the deal.
@@ -119,10 +117,9 @@ View all of your deals with the buyer, historical and current, in the Deals tab.
 
   Currently active deals show within the **Current** section. Deals that are upcoming, that you have canceled or have expired show within their respective sections. Click on a deal to display the **Details Pane**, where all of the deal's details are visible.
 
-## Monitoring deal health
+## Monitor deal health
 
-Deal health statistics provide insight into how your deals are performing. If the number of deal impressions you have shown to the
-buyer is low, there may be an issue with your deal settings or with your inventory. If the number of deal impressions the buyer has bid on is low, the buyer may have campaign setup issues.
+Deal health statistics provide insight into how your deals are performing. If the number of deal impressions you have shown to the buyer is low, there may be an issue with your deal settings or with your inventory. If the number of deal impressions the buyer has bid on is low, the buyer may have campaign setup issues.
 
 ## Create a new deal
 
@@ -130,19 +127,17 @@ Negotiate a deal that meets yours and the buyer's needs by selecting **with Buye
 
 ## Edit a deal
 
-Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and
-then click on the edit icon to make the deal editable.
+Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and then click on the edit icon to make the deal editable.
 
 After you have made the necessary updates, click **Save** to save your changes. To exit edit mode, click **Cancel**.
 
 ## Cancel a deal
 
-If a current or upcoming deal no longer works for you, you can cancel it at any time. Check the checkbox near a deal, and then click
-**Actions >  Cancel Deals**.
+If a current or upcoming deal no longer works for you, you can cancel it at any time. Check the checkbox near a deal, and then click **Actions >  Cancel Deals**.
 
-## Reporting on deals
+## Report on deals
 
-Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then click **Actions >  Show in Reporting**.
+Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then click **Actions** >  **Show in Reporting**.
 
 ## Related topic
 

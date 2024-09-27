@@ -4,7 +4,7 @@ description: In this article, learn about Buying Deals and find links to get sta
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Buying deals
+# Microsoft Curate - Buy deals
 
 A deal is an agreement between a buyer and a seller that provides special access to inventory and/or data. A buyer can strike deals with sellers in the following way:
 

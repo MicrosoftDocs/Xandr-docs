@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Managing User Logins and Permissions
-description: In this article, find links to resources on how to create and manage your users.
+title: Microsoft Curate - Manage User Logins and Permissions
+description: Learn how to manage users, set up passwords, and integrate authentication with Microsoft Identity Platform.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Managing user logins and permissions
+# Microsoft Curate - Manage user logins and permissions
 
 The pages mentioned in this section describe how to create and manage your users and set up their passwords and permissions.
 
@@ -12,7 +12,7 @@ With the consolidation of Microsoft Advertising to the Microsoft family, we have
 
 For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 
-## How tos
+## Account Management procedures
 
 - [Manage Your Username and Password](manage-your-username-and-password.md)
 
@@ -24,7 +24,7 @@ For more details, visit [Microsoft Identity Platform Login](microsoft-identity-p
 
 ## Access control
 
-- [Getting Started with Roles](getting-started-with-roles.md)
+- [Get Started with Roles](getting-started-with-roles.md)
 
   Read an introduction to using Roles for user access control.
 

@@ -16,10 +16,9 @@ With the consolidation of Microsoft Advertising to the Microsoft family, we have
 
 **Single Sign On** - Organizations that integrate with the Microsoft Identity Platform to enable Single Sign On (SSO) with other Microsoft products will be benefited by this approach as capabilities such as corporate control of credentials, access rules, etc. will be applicable to Microsoft Advertising product logins also.
 
-**Account Switcher** - Users with access to multiple accounts on the Microsoft Advertising Platform will be able to switch between different accounts
-seamlessly without being required to sign out and sign back in.
+**Account Switcher** - Users with access to multiple accounts on the Microsoft Advertising Platform will be able to switch between different accounts seamlessly without being required to sign out and sign back in.
 
-## Microsoft Advertising platform support of Microsoft Identity Platform
+## Microsoft Advertising Platform supports Microsoft Identity Platform
 
 Currently, the following Microsoft Advertising products support authentication using the Microsoft Identity Platform:
 

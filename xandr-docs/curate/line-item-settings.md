@@ -2,7 +2,6 @@
 title: Microsoft Curate - Line Item Settings
 description: Learn how the Settings tab of the Line Item Details pane displays information for the selected line item including settings, essential metrics, and performance visualizations.
 ms.date: 11/14/2023
-
 ---
 
 
@@ -26,7 +25,7 @@ The **Settings** tab of the Line Item Details pane displays information for the 
 | **Insertion Order Summary** | Details about the insertion order the line item is associated with. Details include: **Name**, **State**, **Currency**, **Budget Type**, **Total Lifetime**, **Pacing**, and **Billing Periods**. For more information, see [Create an Insertion Order](create-an-insertion-order.md). |
 | **Inventory and Brand Safety** | Details about **Inventory and Brand Safety settings** for the line item. For more information about inventory and brand safety in line items, see [Create a Curated Deal Line Item](create-a-curated-deal-line-item.md). |
 | **Reporting Labels** | Details about **Trafficker**, **Sales Rep**, and **Line Item Type** reporting labels for the line item. If available, these labels can be used when running reports. For example, if a salesperson is associated with the line item, the report will be grouped by salesperson to compare line item performance across salespersons. |
-| **Targeting** | Details about line item targeting including: **Geography**, **Device Type**, **Key/Value**, **Daypart**, **System**, **Segment**, **Page Properties**, **Demographics**, and **Viewability Threshold**. For more information on line item targeting, see [Buy-SideTargeting](buy-side-targeting.md). |
+| **Targeting** | Details about line item targeting including: **Geography**, **Device Type**, **Key/Value**, **Daypart**, **System**, **Segment**, **Page Properties**, **Demographics**, and **Viewability Threshold**. For more information on line item targeting, see [Buy-Side Targeting](buy-side-targeting.md). |
 
 ## Related topics
 

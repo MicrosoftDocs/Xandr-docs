@@ -10,11 +10,11 @@ On the **Partner Center** screen, the **Default Settings** option allows you to 
 
 For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
-## Getting there
+## Access the Partner Center screen
 
-**Publisher clients:** select **Marketplace \>  Partner Center**.
+**Publisher clients:** select **Marketplace** \>  **Partner Center**.
 
-**All other clients:** select **Partners \>  Partner Center**.
+**All other clients:** select **Partners** \>  **Partner Center**.
 
 ### Step 1: Get started
 
@@ -48,5 +48,5 @@ Click the **Save** button to record updates to your settings.
 
 ## Related topics
 
-- [Managing Relationships with Buyers](managing-relationships-with-buyers.md)
+- [Manage Relationships with Buyers](managing-relationships-with-buyers.md)
 - [Partner Center Screen - Seller View](partner-center-screen-seller-view.md)

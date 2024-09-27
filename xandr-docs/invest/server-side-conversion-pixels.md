@@ -80,7 +80,7 @@ https://sspx-router.adnxs.com/sspx?id=25619&order_id=1234&value=5678&sspdata=ams
 ```
 
 > [!NOTE]
-> The sspx handler is supported over only in secure (https://secure.adnxs.com/sspx) mode.
+> The sspx handler is supported over only in secure (`https://secure.adnxs.com/sspx`) mode.
 
 ## Test a server-side pixel
 

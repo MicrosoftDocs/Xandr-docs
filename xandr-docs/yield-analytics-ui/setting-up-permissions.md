@@ -12,7 +12,7 @@ ms.custom: yield-analytics-ui
 
 1. Under the **Admin Tools** section, select **Permissions**. From this screen, you can add a new group or edit an existing group.
 1. To add a new group, select the **Add Group** button.
-1. To edit an existing group, select on the **group(s)** that you would like to edit.
+1. To edit an existing group, select  the **group(s)** that you would like to edit.
 
 ## Product Permissions tab
 

@@ -1,11 +1,11 @@
 ---
-title: Using Alternative Products to Solve Pricing or Availability Issues
+title: Use Alternative Products to Solve Pricing or Availability Issues
 description: This article explains how to use alternative products to solve pricing or availability issues.
 ms.date: 11/07/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Using alternative products to solve pricing/availability issues
+# Use alternative products to solve pricing/availability issues
 
 Alternative products are available in Evaluate Orders to help resolve! Price and Avails flags!
 

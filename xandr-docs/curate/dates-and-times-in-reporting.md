@@ -27,11 +27,11 @@ Advertisers inherit the time zone of the member when they are first created, unl
 
 When you change an advertiser's time zone, you can choose to apply the change to existing child objects. New objects that are created after the change (line items, creatives) will inherit the parent advertiser's time zone.
 
-## A note on Eastern Daylight Time and Eastern Standard Time
+## Note on Eastern Daylight Time (EDT) and Eastern Standard Time (EST)
 
 In our reporting system, ET (Eastern Time) will automatically take Daylight Saving Time into account. Eastern Daylight Time (EDT) will always mean UTC - 4 hours. Eastern Standard Time (EST) will always mean UTC - 5 hours.
 
-## Daylight savings and reporting
+## Daylight saving and reporting
 
 > [!IMPORTANT]
 > Certain regions have different naming conventions for annual time changes. For simplicity, we will refer to any such changes as Daylight Saving Time.
@@ -53,7 +53,7 @@ Let's imagine that I took a trip in March, 2018 to visit an Microsoft Advertisin
 
 Let's look at an example from New York City. On Sunday, November 4, 2018 at 06:00 UTC, 02:00 EDT reverts to 01:00 EST. Therefore, November 4, 2018 is a 25-hour day. If I were to run a report for the day of the change (2018-11-04) that begins at 00:00 EDT, I would see an extra hour (2018-11-05 00:00 EDT) at the end of the report.
 
-### Further Complications of DST
+### Further complications of DST
 
 Different regions observe DST changes at different times each year. Additionally, certain sub-regions may not adhere to the policies of their governing region. For example, neither Arizona nor Hawaii observe Daylight Saving Time like the rest of the individual states in the USA. Microsoft Advertising reporting adheres to DST using time zones, not geographies, so we cannot account for these individual region differences within time zones.
 

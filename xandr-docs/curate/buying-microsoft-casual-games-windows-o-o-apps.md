@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Buying Microsoft Casual Games (Windows O&O Apps)
-description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps.
+title: Microsoft Curate - Buy Microsoft Casual Games (Windows O&O Apps)
+description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps. Discover a variety of fun and engaging game options for users.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Buying Microsoft Casual Games (Windows O&O apps)
+# Microsoft Curate - Buy Microsoft Casual Games (Windows O&O apps)
 
 ## Inventory overview
 
@@ -93,7 +93,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 Classic puzzle gaming with exciting new features, Microsoft Treasure Hunt builds on the Microsoft Minesweeper for Windows Adventure mode experience.
 
-**Main Menu Screen** - Below the fold, right side of screen.
+**Main menu screen** - Below the fold, right side of screen.
 
 :::image type="content" source="media/treasuremain.png" alt-text="Screenshot of Microsoft Treasure Hunt menu screen.":::
 
@@ -112,7 +112,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 ## Formats and specifications
 
-### Microsoft Solitaire Collection
+### Microsoft Solitaire Collection's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -123,37 +123,37 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > 728x90 only available on Windows 10
 
-### Microsoft Minesweeper
+### Microsoft Minesweeper's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-### Microsoft Jigsaw
+### Microsoft Jigsaw's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-### Microsoft Sudoku
+### Microsoft Sudoku's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        |         |        |        |
 
-### Microsoft Mahjong
+### Microsoft Mahjong's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       | X      |         |        |        |
 
-### Microsoft Treasure Hunt
+### Microsoft Treasure Hunt's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
 | Windows Desktop PCs & Tablets | X       |        | X       |        |        |
 
-### Microsoft Ultimate Word Game
+### Microsoft Ultimate Word Game's format and specifications
 
 | Platform                      | 300x250 | 728x90 | 300x600 | 480x80 | 320x50 |
 |:------------------------------|:--------|:-------|:--------|:-------|:-------|
@@ -162,7 +162,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > SSL creative required for all Microsoft Casual Games.
 
-## Targeting instructions
+## Instructions for targeting
 
 There are three different ways you can target Microsoft Casual Games:
 
@@ -170,9 +170,9 @@ There are three different ways you can target Microsoft Casual Games:
 <!-- [Target Packages](#target-packages)-->
 - [Target Microsoft Casual Games through the API](#target-microsoft-casual-games-through-the-api)
 
-For information on general inventory targeting, see [Buying Microsoft Inventory](buying-microsoft-inventory.md).
+For information on general inventory targeting, see [Buy Microsoft Inventory](buying-microsoft-inventory.md).
 
-### Target Microsoft Casual Games in Campaign Setup
+### Target Microsoft Casual Games in campaign setup
 
 To target Microsoft Casual Games inventory when setting up a line item or campaign:
 

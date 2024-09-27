@@ -123,7 +123,7 @@ Data retention period for this report is 1100 days.
 | Buyer Cost Per Video Complete | Curator Revenue divided by Video Completions. |
 | Buyer CPM | Curator Revenue divided by Imps, expressed as a CPM. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

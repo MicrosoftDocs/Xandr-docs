@@ -35,9 +35,9 @@ Postal codes can be added to a list by either:
 > - The maximum number of postal codes lists allowed per member is 8,000.
 > - Postal code lists that have not been modified in six months and are not associated with line items that have served in the last six months are eligible to be deleted by Microsoft Advertising.
 
-**Create a new postal code list:**
+### Create a new postal code list
 
-1. Select **Audiences >  Location Manager**.
+1. Select **Audiences** >  **Location Manager**.
 2. On the Location Manager page, select **New >  Postal Code List**.
 3. Provide the following details in the **Create A Location Target** page:
     1. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The maximum number of characters allowed is 255.

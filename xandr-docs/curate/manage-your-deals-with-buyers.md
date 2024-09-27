@@ -14,11 +14,11 @@ As a seller, you can manage all deals you have with buyers on the **Deals** scre
 
 You can also manage your deals with a specific buyer on the [Partnership Details Screen](partnership-details-screen-buyer-view.md).
 
-## Getting to the Deals Screen
+## Access the Deals screen
 
-To reach the **Deals** screen, select **Inventory \>  Seller Deals** in the main navigation.
+To reach the **Deals** screen, select **Inventory** \> **Seller Deals** in the main navigation.
 
-## Viewing basic and advanced deal metrics
+## View basic and advanced deal metrics
 
 The following details display for each deal. Columns that show an arrow in the header when you hover over them are sortable.
 
@@ -32,7 +32,7 @@ The following details display for each deal. Columns that show an arrow in the h
 - **Bid Rate** - The buyer's participation rate in the deal, which is the percentage of auctions in which the buyer bid.
 
   > [!NOTE]
-  >  When the Microsoft Advertising Impbus is doing the bidding for on-platform deals, all deals will be eligible for participation because they will have already passed quality and other eligibility checks on the platform. When third-party deals are active, the total number of bids may be greater than the number of bids marked eligible.
+  > When the Microsoft Advertising Impbus is doing the bidding for on-platform deals, all deals will be eligible for participation because they will have already passed quality and other eligibility checks on the platform. When third-party deals are active, the total number of bids may be greater than the number of bids marked eligible.
 
 - **Final Bids** - The total number of auctions on which a buyer submitted eligible bids to participate in the deal.
 - **Imps Sold** - The total number of imps sold on a given deal.
@@ -43,7 +43,7 @@ The following details display for each deal. Columns that show an arrow in the h
   - **Reason** - The reason bids were rejected.
 
     > [!NOTE]
-    > For more information on bid rejections, Impbus error codes, and  actions buyers and sellers can take to resolve errors, see [Understanding Bid Rejections](understanding-bid-rejections.md).
+    > For more information on bid rejections, Impbus error codes, and  actions buyers and sellers can take to resolve errors, see [Understand Bid Rejections](understanding-bid-rejections.md).
 
 - **Avg. Net Bid**- The average net bid CPM over all bids received. This figure does not include fees.
 - **Floor**- The average floor price applied to all bids received, including both the deal floor and YM floors.
@@ -56,27 +56,27 @@ The following details display for each deal. Columns that show an arrow in the h
   - **Suggested Min Bid** - The minimum bid value that will clear the seller's deal floor, net of fees.
   - **From Package** - Indicates whether or not the deal was generated from a package. Deals associated with a package are affected if the package's status changes.
 
-## Filtering and searching for deals
+## Filter and search for deals
 
 By default, you see all current deals. Use the **Filters** in the left column to filter by deal status or buyers, or use the search boxes to search for specific deals or buyers.
 
-## Monitoring deal health
+## Monitor deal health
 
 Review the statistics for your deals to see how they are performing. If the number of deal impressions shown is low, there may be an issue with your deal settings or with your inventory. If the number of deal impressions the buyer has bid on is low, the buyer may have campaign setup issues.
 
-## Viewing a specific deal's details
+## View a specific deal's details
 
 Click on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired. You can edit or duplicate a deal directly from the **Details** pane using the **Edit** or **Duplicate** button.
 
-## Creating a new deal
+## Create a new deal
 
 Click **New** to create a deal. For step-by-step instructions on creating a deal, see [Create a Curated Deal Line Item](create-a-curated-deal-line-item.md).
 
-## Duplicating a deal
+## Duplicate a deal
 
 Use the duplicate feature to easily create a new deal that is similar to an existing deal, or to create the same deal for a different buyer. Hover over the deal you would like to copy in order to display the duplicate icon, and then click on the duplicate icon to display the **Create Deal** panel.
 
-## Editing a deal
+## Edit a deal
 
 Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and then click on the edit icon to make the deal editable.
 
@@ -85,20 +85,20 @@ Current and upcoming deals can be edited at any time. Hover over the deal you wo
 
 After you have made the necessary updates, click **Save** to save your changes. To exit edit mode, click **Cancel**.
 
-## Canceling a deal
+## Cancel a deal
 
-If a current or upcoming deal no longer works for you, you can cancel it at any time. Check the checkbox near a deal, and then click **Actions \> Cancel Deals**.
+If a current or upcoming deal no longer works for you, you can cancel it at any time. Check the checkbox near a deal, and then click **Actions** \> **Cancel Deals**.
 
 > [!WARNING]
 > Campaigns targeting the deal will stop serving when you cancel the deal. Use the Activity Stream on the  [Partnership Details Screen](partnership-details-screen-buyer-view.md) to communicate with the buyer before canceling the deal.
 
-## Reporting on deals
+## Report on deals
 
-You can run reports to see how your deals are performing. Check the checkbox near the desired deals, and then click **Actions \> Show in Reporting**.
+You can run reports to see how your deals are performing. Check the checkbox near the desired deals, and then click **Actions** \> **Show in Reporting**.
 
 Click **Run Report** in the reporting screen to run the report with these settings, or select additional settings as desired and then click **Run Report**.
 
-## Reporting on creatives served
+## Report on creatives served
 
 To see which creatives have already served through a particular deal, click on the name of the deal you wish to review. In the details pane that opens below, under **Allowed Creatives**, click the link under the **Creatives Served** header.
 
@@ -106,7 +106,7 @@ This will open the reporting tab, where you can run a Seller Brand Review report
 
 Click **Run Report** to run the report with these settings, or select additional settings as desired and then click **Run Report**.
 
-## Switching to buyer mode
+## Switch to buyer mode
 
 If you are a network that also represents **sellers**, click the Sellers button to view all of the deals you have as a buyer.
 

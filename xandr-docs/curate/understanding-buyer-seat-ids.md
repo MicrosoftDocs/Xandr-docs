@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Understanding Buyer Seat IDs
-description: Learn about buyer seat IDs. Buyer Seat IDs allow external DSPs to use proprietary buyer IDs for the buyers they manage, rather than using a Microsoft Advertising member ID.
+title: Microsoft Curate - Understand Buyer Seat IDs
+description: Learn about Buyer Seat IDs, which let external DSPs use proprietary buyer IDs instead of Microsoft Advertising member IDs.
 ms.date: 11/15/2023
 ---
 
-# Microsoft Curate - Understanding buyer seat IDs
+# Microsoft Curate - Understand buyer seat IDs
 
 Buyer Seat IDs allow external DSPs to use proprietary buyer IDs for the buyers they manage, rather than using a Microsoft Advertising member ID. If a DSP has implemented this feature, you can choose between member and seat IDs when creating a deal and reporting on buyers.
 
@@ -17,4 +17,4 @@ Before you can set up deals with a DSP's buyer seats, the DSP needs to register 
 
 If a DSP hasn't registered a seat or submitted bids with it before, you won't see the seat when you're trying to set up a deal. If you experience this problem, reach out to the buyer and have them work with the DSP to get the seat registered with Microsoft Advertising.
 
-You may encounter seat IDs that are not yet eligible for creating deals. To ensure a successful deal, check the reference table in [External DSPs Using Buyer Seat IDs](./external-dsps-using-buyer-seat-ids.md).
+You may encounter seat IDs that are not yet eligible for creating deals. To ensure a successful deal, check the reference table in [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).

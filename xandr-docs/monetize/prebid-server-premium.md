@@ -1,6 +1,6 @@
 ---
 title: Prebid Server Premium
-description: In this article, find information about Prebid Server Premium (PSP) and links to resources about PSP.
+description: Learn how Microsoft Advertising's Prebid Server Premium boosts publisher revenue with unified auctions and access to 200+ demand partners.
 ms.date: 10/28/2023
 ---
 

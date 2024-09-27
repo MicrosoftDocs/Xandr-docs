@@ -114,7 +114,7 @@ Pricing analysis is where clients get some of the biggest value from Yield Analy
 - Pricing discrepancies
 - Yield Analytics increase potential for specific products
 
-## KPI reporting (Key performance indicators)
+## KPI reports (Key performance indicators)
 
 Since Yield Analytics is merging data across many different platforms, we make combined insights across an array of dimensions.
 
@@ -171,7 +171,7 @@ The Rate Card Product is something that is frequently sold by the sales team tha
 > [!NOTE]
 > If the client has an order management system integrated with Yield Analytics, that information needs to get pushed over from the order management system to our system. If they do not have an order management system, they can create all the Rate Card Products within Yield Analytics.
 
-## Reporting
+## Reports
 
 This is a product created specifically for reporting purposes. They are products based on the desired types of reports clients want to run. Yield Analytics will look at what the reporting product is and look at the targeting attribute. Then we will access the ad server to find line items that had some aspect of that targeting attribute. We then pull the information and reflect it in the reports. Some examples are:
 

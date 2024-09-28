@@ -17,7 +17,7 @@ Inventory lists are a way to group the domains, apps, and app bundle IDs that yo
   - com.magmamobile.game.Elements
 - raw URL (domain):
   [yahoo.com](https://sg.yahoo.com/?p=us&guccounter=1&guce_referrer=aHR0cHM6Ly9kb2NzLnhhbmRyLmNvbS9idW5kbGUvY3VyYXRlX2N1cmF0ZS1zdGFuZGFyZC9wYWdlL3RvcGljcy9pbnZlbnRvcnktbGlzdHMtYWxpLW9ubHkuaHRtbA&guce_referrer_sig=AQAAAMSoXxyw3IEmTV0V-VHeMJVlfGxL_SiW9qW1TXmUnxbXG-dIQlBveckoB3VFQsJYErKnqj0y0ZyGh86t-ZlmJyLBvHAOLi2-irA1ujjG0yk1Ozc_psHpUpLrV1FU4TZqTeWGamHONbF1Z-EuWrgQt9rALpQPk9kGkC61tvEhJk0K)
-- raw URL (app): [ Funny Laughs LOL!](https://apps.apple.com/us/app/funny-laughs-lol-pics-jokes/id617263396)
+- raw URL (app): [Funny Laughs LOL!](https://apps.apple.com/us/app/funny-laughs-lol-pics-jokes/id617263396)
 
 Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields within the **Inventory & Brand Safety** section for line items and **Supply Strategy** section for insertion orders.
 
@@ -34,14 +34,14 @@ Inventory Lists can be applied via the **Allowlist** or **Blocklist** fields wit
 
 ## Apps
 
-**App Bundle ID (App ID)**
+### App Bundle ID (App ID)
 
 An app bundle ID (or app ID) is just a unique identifier for a specific app. App IDs are defined differently depending on whether the app runs on iOS or Android:
 
 - Every iOS app has a unique iTunes ID
 - Every Android app has a unique Android Package Name
 
-**How to find App IDs**
+### Find App IDs
 
 To find the IDs for an Android or IOS app, find the app's detail page - the easiest way is to do a web search. The URL of the app store's detail page will show the app's ID.
 
@@ -52,11 +52,11 @@ For example, here are the detail pages for the "Candy Crush" app:
 - iTunes: [App Store: Candy Crush Saga](https://apps.apple.com/us/app/candy-crush-saga/id553834731)
   - ID: 553834731
 
-**How to choose which apps to target**
+### Select target apps
 
 To identify specific mobile apps to target, we recommend targeting the region you're interested in, activating your campaign, and after a few days running the [Site Domain Performance](../invest/site-domain-performance.md) report, which will show you the apps that you've been reaching. You can then update your targeting to include or exclude specific apps to meet your needs.
 
-## Key to Domain/App audit flags
+## Key to Domain or App audit flags
 
 Each domain or app in a list can have one of the following audit statuses:
 
@@ -74,9 +74,9 @@ Each domain or app in a list can have one of the following audit statuses:
 ## Create a new inventory list
 
 1. Go to the **Inventory Lists** screen. Select **Inventory \> Inventory Lists**.
-1. Click **New**. The **Create List** window displays.
+1. Select **New**. The **Create List** window displays.
 1. Enter a name for the inventory list.
-1. Click **Add list description** to add a description if necessary.
+1. Select **Add list description** to add a description if necessary.
 1. Select the **List Type**:
     - **Allowlist** (for restriction)
     - **Blocklist** (for exclusion)
@@ -87,25 +87,25 @@ Each domain or app in a list can have one of the following audit statuses:
       > The inventory lists that are set to **Required for all** will only be applied to third-party inventory.
 
     - **Specific Advertiser** - the inventory list will only be available for selection on the insertion orders and line items of a specific advertiser (select a specific advertiser in the **Select one** drop-down).
-1. Click **Next**.
-1. Click either:
+1. Select **Next**.
+1. Select either:
     - **Copy and paste domains & apps** to enter or paste a list of domains and/or apps to be included in this inventory list.
     - **Import from file** to import a list of domains and/or apps to be included in this inventory list.
 
       > [!NOTE]
-      >  The maximum number of domains and/or apps per inventory list is limited to 100,000.
+      > The maximum number of domains and/or apps per inventory list is limited to 100,000.
 
-1. Click **Validate Domains & Apps**. The list will be checked to ensure that:
+1. Select **Validate Domains & Apps**. The list will be checked to ensure that:
     - None of the domains or apps you entered violate Microsoft Advertising policies.
     - Unsupported URLs are flagged. Unsupported means the Microsoft Advertising targeting system hasn't audited these URLs yet so that you won't be able to serve on them.
     - Invalid URL formats (i.e., non-http or non-https) are removed from the list.
-1. Click **Next**. The domains and apps you entered will be listed along with **Flags** for each ( see [Key to Domain/App Audit Flags](#key-to-domainapp-audit-flags) for more information). If the list is large, use the arrows to advance through the pages. Note the following:
-    - Unsupported domains or apps will be flagged.
-    - You can also remove any domains or apps that violate Microsoft Advertising policies by clicking **Remove**. However, you will never serve on them even if you leave them in the list.
-    - Select **Include subdomains** to include subdomains. For example, if you selected this option for "mydomain.com", you would also serve on its subdomains such as "mydomain.com/foo" and "foo.mydomain.com".
-1. Click **Create List**. The inventory list is created and displays in **Inventory Lists**.
+1. Select **Next**. The domains and apps you entered will be listed along with **Flags** for each ( see [Key to Domain or App audit flags](#key-to-domain-or-app-audit-flags) for more information). If the list is large, use the arrows to advance through the pages. Note the following:
+    a. Unsupported domains or apps will be flagged.
+    b. You can also remove any domains or apps that violate Microsoft Advertising policies by selecting **Remove**. However, you will never serve on them even if you leave them in the list.
+    c. Select **Include subdomains** to include subdomains. For example, if you selected this option for "mydomain.com", you would also serve on its subdomains such as "mydomain.com/foo" and "foo.mydomain.com".
+1. Select **Create List**. The inventory list is created and displays in **Inventory Lists**.
 
-## Export an Inventory List
+1. ## Export an inventory List
 
 1. Go to the **Inventory Lists** screen. Select **Inventory \> Inventory Lists**.
 1. Locate the list(s) you want to export.
@@ -124,7 +124,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
 1. Select the checkbox next to the list that you want to duplicate.
 1. Select **Duplicate List(s)** from the **Actions** menu.
 1. On the **Duplicate List(s)** screen, enter a **Duplicate Name** and a **Description** (optional) for the list(s).
-1. Click **Duplicate**. The duplicate of any list(s) you selected displays in **Inventory Lists**.
+1. Select **Duplicate**. The duplicate of any list(s) you selected displays in **Inventory Lists**.
 
 ## Search for inventory lists
 
@@ -132,7 +132,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
 
 1. Locate the desired inventory list.
 
-1. Click on its row to see more details.
+1. Select on its row to see more details.
 
 ## Delete an inventory list
 
@@ -143,39 +143,39 @@ The list(s) you selected will be downloaded to your local drive. If you exported
 1. Locate the inventory list that you want to delete and select the corresponding checkbox. (You can select more than one.)
 1. You can now do any of the following:
     - **Add**: Add domains/apps to the list.
-      1. Click **Add**.
+      1. Select **Add**.
       1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 8-10 in the [Create a New Inventory List](#create-a-new-inventory-list) section for more information.
-      1. Click **Save**.
+      1. Select **Save**.
     - **Replace**: Replace the current domains/apps in the inventory list with a new list of domains/apps.
-      1. Click **Replace**.
+      1. Select **Replace**.
       1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 8-10 in the [Create a New Inventory List](#create-a-new-inventory-list) section for more information.
-      1. Click **Save**.
+      1. Select **Save**.
     - **Remove**: Remove domains/apps from the list.
        > [!WARNING]
        > This action cannot be undone.
       1. Select the checkbox of each domain or app that you want to remove.
-      1. Click **Remove**.
-      1. Click **Delete**.
+      1. Select **Remove**.
+      1. Select **Delete**.
     - **Search**: Search for domains/apps in the list.
       1. Use the search field to locate specific domains or apps in the list.
 
 ## Edit an existing inventory list
 
-1. Go to the **Inventory Lists** screen. Select **Inventory \> Inventory Lists**.
-1. Click the row of the inventory list that you want to edit. The domains and/or apps in the list are displayed in the lower portion of the screen. The actions that you can perform on an inventory list with respect to domains/apps include:
+1. Go to the **Inventory Lists** screen. Select **Inventory** \> **Inventory Lists**.
+1. Select the row of the inventory list that you want to edit. The domains and/or apps in the list are displayed in the lower portion of the screen. The actions that you can perform on an inventory list with respect to domains/apps include:
     - **Add**: Add domains and/or apps to the list.
-      1. Click **Add**.
+      1. Select **Add**.
       1. Enter the domains/apps that you wish to add (or import them from an existing file). See steps 7-9 in the [Create a New Inventory List](#create-a-new-inventory-list) section.
     - **Remove**: Remove domains or apps from the list.
        > [!WARNING]
        > This action cannot be undone.
 
       1. Select the checkbox of each domain or app that you want to remove.
-      1. Click **Remove**.
-      1. Click **Delete Domains & Apps**.
+      1. Select **Remove**.
+      1. Select **Delete Domains & Apps**.
     - **Search**: Search for domains or apps in the list.
       - Use the search field to locate specific domains or apps in the list.
-1. To edit the details of the inventory list, click the pencil icon next to the inventory list name and ID.
+1. To edit the details of the inventory list, select the pencil icon next to the inventory list name and ID.
 1. Do any of the following:
     - Update the name and description.
     - Change whether this inventory list will be available for selection on the line items of **Any Advertiser** or only on those of a **Specific Advertiser**.

@@ -59,26 +59,26 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
    > Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.
 
 1. Optionally, add comments to the insertion order.
-1. Click **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
+1. Select **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
 
 ## Basic setup
 
 In the Basic Setup section, you enter basic information about the insertion order, such as its name and its budget and billing details. Settings are:
 
-**Name**
+### Name
 
 The name for the insertion order. You will later be able to search for and report on the insertion order using this name.
 
-**External Code** (optional)
+### External code (optional)
 
 An external code used for reporting. (Microsoft Advertising also
 assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
 
-**Billing Code** (optional)
+### Billing code (optional)
 
 An internal billing code you want to appear on invoices for this insertion order, if you receive insertion-order-specific invoices. For details on invoices, see [Understanding Your Invoice](../monetize/understanding-your-invoice.md).
 
-**State**
+### State
 
 The state of the insertion order. If "Active", child line items and campaigns will be eligible to serve.
 
@@ -86,7 +86,7 @@ The state of the insertion order. If "Active", child line items and campaigns wi
 > To avoid spending before you're ready, set the state to "Inactive" until everything related to the buy
 > has been set up and verified.
 
-**Currency**
+### Currency
 
 If not set, the insertion order will inherit the advertiser's currency. You cannot change the currency after saving the insertion order.
 
@@ -94,11 +94,11 @@ If not set, the insertion order will inherit the advertiser's currency. You cann
 > As a best practice, align currency
 > to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
 
-**Viewability Standard**
+### Viewability standard
 
 The viewability standard used for this insertion order. Defaults to **IAB** (Internal Advertising Bureau). For more information, see [Introduction to Viewability](introduction-to-viewability.md).
 
-**Budget Type**
+### Budget type
 
 Determines whether the budget will be allocated by revenue (money) or by impression. All billing periods must have the same budget type.
 
@@ -186,8 +186,7 @@ We reserve the right to implement additional screening at any time.
 | **Treasurer Name** | Treasurer for the committee purchasing the ads, or the person whose role mostly closely resembles a treasurer. |
 | **State Registration Form** | New York and New Jersey require copies of state registration forms from independent expenditure committees making purchases. Creatives won't serve in those states until the form is uploaded. |
 
-You must check
-**I certify that all information provided herein is accurate and up to date, and acknowledge and agree that** Microsoft Advertising **is relying on the accuracy of this information**. before you can save the insertion order.
+You must check **I certify that all information provided herein is accurate and up to date, and acknowledge and agree that** Microsoft Advertising **is relying on the accuracy of this information**. before you can save the insertion order.
 
 ## Related topics
 

@@ -25,7 +25,7 @@ Before you begin, ensure that you've created the objects that hold all your deal
 
 You can create a new deal line item from the **Curated Deals** screen.
 
-1. Go to **Packages > Curated Deals**.
+1. Go to **Packages** > **Curated Deals**.
 1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from a template, see [Create a deal line item from a template](#create-a-deal-line-item-from-a-template).
 1. Search (by name or ID) and select the desired advertiser and insertion order for the respective **Advertiser** and **Insertion Order** fields.
 
@@ -46,7 +46,7 @@ In the **Basic Settings** section, enter the following details for the deal line
 
 The **Deal Details** section offers a detailed overview of the key components that define your deal.
 
-- **Buyer**: Select a buyer for the deal by clicking on the **Edit (pencil icon)** option under **Buyer**. From the **Buyer** screen, choose an available buyer by searching their name or ID.
+- **Buyer**: Select a buyer for the deal by selecting the **Edit (pencil icon)** option under **Buyer**. From the **Buyer** screen, choose an available buyer by searching their name or ID.
 
     > [!TIP]
     > If the list of buyers is extensive, select the **DSP** first before searching for the **Buyer** to narrow down the options.
@@ -82,7 +82,7 @@ The **Deal Details** section offers a detailed overview of the key components th
     > [!NOTE]
     > If you're using Microsoft Curate for creating other Line Item types (GDALI, ALI, etc.), this priority system is shared across all Line Item types. -->
 
-#### Deal targeting
+#### Target deals
 
 A deal line item has the following targeting options:
 
@@ -242,7 +242,7 @@ You can create a new deal line item from the pre-selection screen by selecting t
 ### Use the monitoring settings pane
 
 1. Search for the deal line item you wish to use as a template.
-1. In the **Line Name** column, click on the deal line item to expand the **Settings** pane.
+1. In the **Line Name** column, select the deal line item to expand the **Settings** pane.
 1. Select the **Use as Template** option located at the upper-right corner of the page.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
 

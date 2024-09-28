@@ -21,8 +21,8 @@ Curated deal line items offer the following features:
 
 You will need to create or have access to the following buy-side objects:
 
-- Advertiser: see [Work with Advertisers](working-with-advertisers.md)
-- Insertion order (seamless): see [Work with Insertion Orders](working-with-insertion-orders.md)
+- Advertiser: see [Working with Advertisers](working-with-advertisers.md)
+- Insertion order (seamless): see [Working with Insertion Orders](working-with-insertion-orders.md)
 
   > [!NOTE]
   > - Legacy insertion orders are not supported with curated deal line items.
@@ -33,13 +33,13 @@ You will need to create or have access to the following buy-side objects:
 
 From the **Advertiser Details** screen, you can create a curated deal line item from either the **Insertion Orders** screen or **Line Items** screen:
 
-### Insertion Orders screen
+**Insertion orders screen**
 
 1. From the **Advertiser Details** screen, click **Insertion Orders** to view the advertiser's insertion orders.
 1. Click on an insertion order from the list to view the **Insertion Order** details screen.
 1. In the **Line Items** section, click **New Deal Line Item**.
 
-### Line Items screen
+**Line items screen**
 
 1. From the **Advertiser Details** screen, click **Line Items** to view the advertiser's line items.
 1. Click **New Deal Line Item**.
@@ -152,7 +152,7 @@ You can specify the following inventory and brand safety settings for the curate
 
 ## Inventory
 
-### Universal categories
+**Universal categories**
 
 Universal categories are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well.
 
@@ -169,7 +169,7 @@ By default, your curated deal line item will target all universal categories. Ho
 
 1. Click **Add**.
 
-### Seller categories
+**Seller categories**
 
 **Seller Categories** are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers or curators to target.
 
@@ -182,7 +182,7 @@ By default, your curated deal line item will target all custom categories. Howev
 
 2. Click **Add**.
 
-### Seller inventory
+**Seller inventory**
 
 By default, your curated line item will target all sellers. However, you can narrow targeting to include or exclude specific sellers. Additionally, if a seller has chosen to expose their publishers via the open exchange, you can include or exclude specific publishers:
 

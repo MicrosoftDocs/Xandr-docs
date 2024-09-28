@@ -16,7 +16,7 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 > [!NOTE]
 > External DSPs not identified in this table have not yet migrated to buyer seat IDs.
 
-For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
+For more information, see [Understand Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
 | Bidder ID | Bidder Name | Seat ID Bidding Status | Seat ID Deal Status |
 |--|--|--|--|

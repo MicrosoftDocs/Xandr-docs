@@ -8,13 +8,13 @@ Creating an advertiser object is the first step before you can start running ad 
 
 ## Step 1. Start a new advertiser
 
-On the **Advertisers** screen, click the **+New** button.
+On the **Advertisers** screen, select the **+New** button.
 
 This opens the **Create New Advertiser** screen, where you define all relevant details for your advertiser.
 
 > [!TIP]
-> You can expand or collapse each section of the screen. To expand or collapse all sections at once, click
-> the **Expand All** or **Collapse All** link in the upper right.
+> You can expand or collapse each section of the screen. To expand or collapse all sections at once, select
+the **Expand All** or **Collapse All** link in the upper right.
 
 ## Step 2. Fill out basic setup
 
@@ -37,11 +37,9 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 - **Political Advertising** - If you are releasing advertisements related to an election, ballot initiative, or political candidate in
   the United States, you must specify that here. You must also certify that all such advertising has been paid for, or will be paid for, with U.S. currency from financial institutions in the United States, and that no portion of the payment is provided by foreign nationals or foreign principals
 
-  If you select **I'm running political advertising on all IOs under this advertiser**, then all insertion orders will have the
-  **Political Advertising** section enabled by default. You can optionally disable this on an individual insertion order.
+  If you select **I'm running political advertising on all IOs under this advertiser**, then all insertion orders will have the **Political Advertising** section enabled by default. You can optionally disable this on an individual insertion order.
 
-  If you select **Use political advertising details template**, then all insertion orders with political advertising enabled will automatically use the political advertising details from the template you will create on the insertion order. You
-  can optionally modify these details on an individual insertion order.
+  If you select **Use political advertising details template**, then all insertion orders with political advertising enabled will automatically use the political advertising details from the template you will create on the insertion order. You can optionally modify these details on an individual insertion order.
 
   You will be asked to specify more details about your political advertisements when you [Create an Insertion Order](create-an-insertion-order.md). For more information about political advertising, see [Political Advertising](political-advertising.md).
 
@@ -59,10 +57,7 @@ What you enter here will not affect any insertion orders that have already been 
 
 This section contains the details of the person or organization that is purchasing ads on Microsoft Advertising. For example, a candidate, an agency, or a political consultant.
 
-The required fields must be filled out for any state or local political advertising that will or could serve in California,
-Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level
-that will or could serve in Washington State. If your political ad will not be served in any of those states, you may
-enter "N/A”. For more information on political advertising, see [Political Advertising](political-advertising.md).
+The required fields must be filled out for any state or local political advertising that will or could serve in California, Illinois, Maryland, Nevada, New Jersey, New York, Virginia, or Washington, or for political advertising at the federal level that will or could serve in Washington State. If your political ad will not be served in any of those states, you may enter "N/A”. For more information on political advertising, see [Political Advertising](political-advertising.md).
 
 We reserve the right to implement additional screening at any time.
 
@@ -102,10 +97,8 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 
   > [!WARNING]
   > Warning regarding preexisting line items
-  > >
-  >If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
+  > If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
 
 ## Step 5. Save the advertiser
 
-To finish adding the advertiser to the platform, click the
-**Save** button. On the Advertiser Details screen, you can continue to set up more objects required to buy inventory for the advertiser.
+To finish adding the advertiser to the platform, select the **Save** button. On the Advertiser Details screen, you can continue to set up more objects required to buy inventory for the advertiser.

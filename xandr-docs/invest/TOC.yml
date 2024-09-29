@@ -708,8 +708,6 @@
         href: create-a-third-party-advertiser-pixel-for-your-creatives.md
     - name: Associate Segment Pixels with Creatives
       href: associate-segment-pixels-with-creatives.md
-    - name: Moat Video Viewability Measurement
-      href: moat-video-viewability-measurement.md
   - name: Auditing Creatives
     items:   
     - name: Overview
@@ -1000,8 +998,6 @@
       href: requirements-for-filing-a-support-case-for-report-discrepancies.md
 - name: Apps
   items:
-    - name: grapeshot
-      href: grapeshot.md
     - name: comScore Agent
       href: comscore-agent.md
 - name: Release Notes

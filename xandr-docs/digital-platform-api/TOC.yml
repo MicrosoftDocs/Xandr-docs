@@ -295,8 +295,6 @@
       href: frequency-for-the-api.md
     - name: User Group Pattern Service
       href: user-group-pattern-service.md
-  - name: Moat Video Viewability Setup - API
-    href: moat-video-viewability-setup---api.md
   - name: Read-Only Services
     items:
     - name: Ad Server Service

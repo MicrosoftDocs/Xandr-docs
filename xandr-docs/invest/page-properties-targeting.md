@@ -21,13 +21,13 @@ Page properties targeting allows you to target impressions based on the creative
     - **Unknown** - Undetermined location on the page.
 1. Click the toggle to enable query-string targeting (all query strings are targeted by default).
     1. Choose to **Include** or **Exclude** either **all** or **any** of the query strings you wish to declare.
-    1. Enter valid a query string into the text box.
-    1. Click **+Add Another String** to additional query strings. Repeat this step as many times as is necessary.
+    1. Enter a valid query string into the text box.
+    1. Click **+Add Another String** to add additional query strings. Repeat this step as many times as necessary.
 1. Click **Save**.
 
 > [!TIP]
 > Page Properties can be set by buyers in Microsoft Invest:
 >
-> 1. **Above the Fold**: This section of your site is what customers first see when they land on a page, typically considered the header.
-> 1. **Below the Fold**: This portion of a webpage becomes visible only after customers scroll down.
+> 1. **Above the Fold**: This section of the webpage is what customers first see when they land on a page, typically considered the header.
+> 1. **Below the Fold**: This section of the webpage becomes visible only after customers move further down the page.
 > 1. **Unknown**: This is the default setting.

@@ -158,7 +158,7 @@ When you set up your Inventory Targeting, include the following:
 | Platform Audit (Creative Attributes tab) | Not required |
 | Video | Not supported |
 
-For additional information about LiveIntent API, see [LiveIntent Landing Page](https://support.liveintent.com/hc/en-us/articles/360015338292-Programmatic-Bidding-API).
+For additional information about LiveIntent API, see [LiveIntent Landing Page](https://support.liveintent.com/programmatic-bidding-api/).
 
 ## Mittmedia
 

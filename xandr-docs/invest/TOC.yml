@@ -786,7 +786,7 @@
   items:
     - name: Overview
       href: introduction-to-viewability.md
-    - name: Viewability Reporting
+    - name: Viewability Reports
       href: reporting-on-viewability.md
     - name: vCPM Payment Type
       href: vcpm-payment-type.md
@@ -860,7 +860,7 @@
         href: charges-for-buyers.md
       - name: Charges for Sellers
         href: charges-for-sellers.md
-    - name: Reconcile Your Invoice with Reporting
+    - name: Reconcile Your Invoice with Reports
       href: reconciling-your-invoice-with-reporting.md
     - name: Payment
       href: payment-to-xandr.md
@@ -874,7 +874,7 @@
       href: digital-selling.md
     - name: Understanding Your Seller Statement
       href: understanding-your-seller-statement.md
-    - name: Reconcile your Seller Statement with Reporting
+    - name: Reconcile your Seller Statement with Reports
       href: reconciling-your-seller-statement-with-reporting.md
     - name: Getting Paid
       href: getting-paid-by-xandr.md

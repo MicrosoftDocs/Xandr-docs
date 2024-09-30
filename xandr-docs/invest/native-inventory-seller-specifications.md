@@ -17,11 +17,11 @@ outline the requirements for individual sellers and allow you to compare require
 Creatives that will serve on native inventory require specific settings when the creative is added. To add a creative, navigate to the
 **Creative Manager** screen. Select **Create New** and create a single creative.
 
-## Inventory targeting
+## Target your inventory
 
 When you set up your line item you need to target your inventory to reach the seller's inventory. See [Buy-Side Targeting](./buy-side-targeting.md) for more information.
 
-## Settings by seller
+## Seller-specific guidelines and settings
 
 Shown below are seller-specific guidelines and requirements that you must follow to serve on that seller's inventory. All sellers listed here use a **Type** of **Native**.
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Reconcile your Seller Statement with Reporting
+title: Microsoft Invest - Reconcile your Seller Statement with Reports
 description: Explore this article to learn how to confirm the (Managed) Ad Serving fee on your invoice using the Selling Billing Report.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Reconcile your seller statement with reporting
+# Microsoft Invest - Reconcile your seller statement with reports
 
 ## Run the seller billing report
 

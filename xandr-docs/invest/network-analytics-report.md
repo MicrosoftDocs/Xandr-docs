@@ -71,7 +71,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 - To use this new feature, set the **Real Time Data** field to **Included**. This will cause the data in your report to contain both real-time and the more fully reconciled batch file data. If you want the report to break out the real-time data from batch file data, select the **Real-Time status** checkbox.
 - Do not use information in the real-time data portion of your report to bill your clients as that data may change slightly once fully reconciled within 2 to 4 hours. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](./availability-of-reporting-data.md).
 
-#### Time ranges including dates occurring greater than 45 days ago
+#### Time ranges with dates exceeding 45 days
 
 If you create a Member analytics report with the **Range** field set to "Lifetime", "Quarter to Date" or "Custom" (where the end date is greater than 45 days from today), your report (regardless of metrics included) will be added to a special queue for "resource-intensive" reports. As a result, the report may take longer than usual to complete. In addition, these resource-intensive reports may, due to the amount of data being requested, fail before being completed. If your report fails to complete, you will receive a notification. If your report request fails, you can:
 

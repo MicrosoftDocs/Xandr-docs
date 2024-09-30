@@ -71,7 +71,7 @@ The **Impression Bus** passes along the data it has about the impression and the
 
 The **Data Warehouse** receives information about the impression and the user from the **Impression Bus**. As you can see from the diagram, the **User Data** store is now located within the **Data Warehouse**. This allows for faster integration and processing of the data provided by the **Impression Bus**.
 
-### Step 4: Conversion-related data is made available for reporting, optimization, and budget
+### Step 4: Conversion-related data is made available for reports, optimization, and budget
 
 The **Data Warehouse** has finished processing and integrating the information on the impression and the converted user passed along from the **Impression Bus**. At this point, the impression- and conversion-related data is made available to the Microsoft Advertising Platform for reporting, optimization, and budget purposes.
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Conversion Reporting
+title: Microsoft Invest - Conversion Reports
 description: In this article, learn about conversion pixels and how you can use reports to troubleshoot your advertiser's conversion pixels.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Conversion reporting
+# Microsoft Invest - Conversion reports
 
 You can use reports to troubleshoot your conversion pixels and thoroughly analyze conversion data.
 

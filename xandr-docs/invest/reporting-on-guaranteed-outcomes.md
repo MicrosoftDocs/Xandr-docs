@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Guaranteed Outcomes Reporting
+title: Microsoft Invest - Guaranteed Outcomes Reports
 description: In this article, learn how to identify Guaranteed Outcomes transaction data through specific Clearing Events associated with the purchased outcomes.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Guaranteed Outcomes reporting
+# Microsoft Invest - Guaranteed Outcomes reports
 
 Throughout Microsoft Invest reporting, transaction data from Guaranteed Outcomes is identifiable by the underlying Clearing Event associated with the type of outcome purchased. For the list of supported Clearing Events, see [Supported Viewability Standards for Guaranteed Outcomes](supported-viewability-standards-for-guaranteed-outcomes.md) and [Supported Video Completion Standards](supported-video-completion-standards.md).
 

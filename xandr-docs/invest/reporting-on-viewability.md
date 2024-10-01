@@ -4,7 +4,7 @@ description: In this article, learn about viewability measurement metrics, how t
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest -  Viewability Reports
+# Microsoft Invest -  Viewability reports
 
 This page defines viewability metrics that are available and best practices for making optimal use of them.
 

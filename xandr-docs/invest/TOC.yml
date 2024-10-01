@@ -378,7 +378,7 @@
         href: offline-conversion-attribution.md
     - name: Conversion Pixels Advanced
       href: conversion-pixels-advanced.md
-    - name: Conversion Reporting
+    - name: Conversion Reports
       href: reporting-on-conversions.md
     - name: Server-Side Conversion Pixels
       href: server-side-conversion-pixels.md
@@ -828,7 +828,7 @@
       href: supported-video-completion-standards.md
     - name: Configuring a Line Item to Buy Guaranteed Outcomes
       href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
-    - name: Guaranteed Outcomes Reporting
+    - name: Guaranteed Outcomes Reports
       href: reporting-on-guaranteed-outcomes.md
     - name: Understanding Viewability Rates for Guaranteed Views
       href: understanding-viewability-rates-for-guaranteed-views.md

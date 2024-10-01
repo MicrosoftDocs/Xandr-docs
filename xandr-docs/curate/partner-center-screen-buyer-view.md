@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 # Microsoft Curate - Partner Center screen - Buyer view
 
-On the **Partner Center** screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
+On the **Partner Center** screen you can view your preferred partners, search all sellers, and review impression and select statistics for each seller.
 
 ## Access **Partner Center** screen
 
@@ -13,7 +13,7 @@ Go to **Admin** > **Partner Center** to reach the **Partner Center** screen.
 
 ## Manage your profile
 
-Click the **My Profile** button to edit the information that sellers will see on your **Partner Details** page. Your profile provides information about your company which helps sellers understand how you could be useful as a partner.
+Select the **My Profile** button to edit the information that sellers will see on your **Partner Details** page. Your profile provides information about your company which helps sellers understand how you could be useful as a partner.
 
 ## View sellers
 
@@ -59,11 +59,11 @@ Use the filters to search the **Sellers** list for a seller that meets your part
   a primary market.
 - **Seller Eligibility** - Eligibility settings you have defined for sellers.
 
-Click the Hide Search Filters "**\<**" icon to collapse the section and provide more space to view your partner lists.
+Select the Hide Search Filters "**\<**" icon to collapse the section and provide more space to view your partner lists.
 
 ## View partnership details
 
-Click on a partner's name to view Partner Details so you can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals. See [Partnership Details Screen](../monetize/partnership-details-screen-buyer-view.md).
+Select a partner's name to view Partner Details so you can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals. See [Partnership Details Screen](../monetize/partnership-details-screen-buyer-view.md).
 
 ## Related topics
 

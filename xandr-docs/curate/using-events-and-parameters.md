@@ -15,7 +15,7 @@ After you have configured your universal pixel, you can add value by configuring
 
 For example, using the standard event `AddtoCart`, you can track when users add an item to a shopping cart. Using parameters, you can configure the `AddToCart` standard event to also gather the product ID, product name, and total cart/purchase value. This information can provide you with better insights for building audience segments and more granular tracking of user interactions.
 
-Standard events are implemented as snippets of code placed on relevant webpages that indicate when users perform typical actions. For example, if you place the code snippet on the landing page where a user arrives after they click **Add to Cart**, the pixel is triggered by the script code, and the event can be tracked.
+Standard events are implemented as snippets of code placed on relevant webpages that indicate when users perform typical actions. For example, if you place the code snippet on the landing page where a user arrives after they select **Add to Cart**, the pixel is triggered by the script code, and the event can be tracked.
 
 The following table shows the benefits of adding events and parameters to the basic pixel implementation.
 

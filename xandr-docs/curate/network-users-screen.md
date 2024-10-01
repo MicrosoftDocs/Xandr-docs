@@ -10,7 +10,7 @@ The Member Users screen shows you basic information about your network-level use
 
 ## View member user details
 
-Navigate to the **Member Users** screen (hover over your member name in the upper-right corner of the menu bar and click **Member Users**). You'll see the following details about each user:
+Navigate to the **Member Users** screen (hover over your member name in the upper-right corner of the menu bar and select **Member Users**). You'll see the following details about each user:
 
 - **ID**: The unique user identification number of the user.
 - **Username**: The unique name by which the system knows the user.
@@ -32,7 +32,7 @@ To view the details of a specific Member User, select the user in the table. Thi
 
 ## Edit an existing user
 
-To edit an existing user, select the user in the table and click **Full Edit**.
+To edit an existing user, select the user in the table and select **Full Edit**.
 
 ## Activate or deactivate users
 

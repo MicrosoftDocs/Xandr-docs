@@ -6,7 +6,7 @@ ms.date : 10/28/2023
 
 # Microsoft Curate - Partner Center screen - Seller view
 
-On the **Partner Center** screen you can view your partners, search all buyers, manage your profile, manage your default buyer settings, and review impression and click statistics for each buyer.
+On the **Partner Center** screen you can view your partners, search all buyers, manage your profile, manage your default buyer settings, and review impression and select statistics for each buyer.
 
 ## Access Partner Center screen
 
@@ -14,11 +14,11 @@ Select **Admin** > **Partner Center**.
 
 ## Switch to Buyers mode
 
-If you are a network that also represents buyers, the **Buyers** and **Sellers** tabs display. Click **Buyers** to view the **Partner Center** as a seller looking for buyers.
+If you are a network that also represents buyers, the **Buyers** and **Sellers** tabs display. Select **Buyers** to view the **Partner Center** as a seller looking for buyers.
 
 ## Manage your profile
 
-Click the **My Profile** button to edit the information that demand partners will see on your Partner Details page. Your profile provides information about your company which helps demand partners understand how you could be useful as a partner. The **My Seller Profile** dialog also displays an overview of the audit quality of your inventory. You can see how much of your inventory has been self-audited
+Select the **My Profile** button to edit the information that demand partners will see on your Partner Details page. Your profile provides information about your company which helps demand partners understand how you could be useful as a partner. The **My Seller Profile** dialog also displays an overview of the audit quality of your inventory. You can see how much of your inventory has been self-audited
 (**Seller-reviewed**) and how much has been audited by Microsoft Advertising (**Platform-reviewed**).
 
 For step-by-step instructions on customizing your profile, see [Customize Your Seller Profile](customize-your-seller-profile.md).
@@ -80,11 +80,11 @@ Use the filters to search the **Buyers** list for a buyer that meets your partne
 
 - **Targeting Access** - Targeting access you have exposed to buyers.
 
-  Click the Hide Search Filters "**\<**" icon to collapse the section and provide more viewing space for your partner lists.
+  Select the Hide Search Filters "**\<**" icon to collapse the section and provide more viewing space for your partner lists.
 
 ## View partnership details
 
-Click on a buyer's name to view the **Partner Details** screen for that buyer. You can then review and manage your relationship with the buyer, view spending trends, and access any active or upcoming deals.
+Select a buyer's name to view the **Partner Details** screen for that buyer. You can then review and manage your relationship with the buyer, view spending trends, and access any active or upcoming deals.
 
 See [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md) for more information.
 

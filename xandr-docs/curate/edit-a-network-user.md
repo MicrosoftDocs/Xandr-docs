@@ -10,7 +10,7 @@ This page walks you through the steps required to edit a Member user, including 
 
 ## Step 1. Select the user
 
-On the **Member Users** screen (hover over your member name in the upper-right corner of the menu bar and click **Member Users**), click the row of the user whose permissions you want to change to expose the **User Details** pane. Then click the pencil (Edit) icon.
+On the **Member Users** screen (hover over your member name in the upper-right corner of the menu bar and select **Member Users**), select the row of the user whose permissions you want to change to expose the **User Details** pane. Then select the pencil (Edit) icon.
 
 This opens the **Edit \[User\]** dialog.
 
@@ -37,7 +37,7 @@ For users whose role includes Advertiser or Publisher Manager, you can also modi
 
 ## Step 5. Save the user
 
-Once you have finished making any changes in both the **User Details** and **Roles & Permissions** tabs, click the **Save** button to save your changes and return to the **Member Users** screen.
+Once you have finished making any changes in both the **User Details** and **Roles & Permissions** tabs, select the **Save** button to save your changes and return to the **Member Users** screen.
 
 ## Related topics
 

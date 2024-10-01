@@ -11,11 +11,11 @@ ms.date: 10/28/2023
 
 This page offers tips and recommendations for how to use and create Microsoft Advertising segments for mobile users. Because traditional cookies are not used in in-app mobile inventory, segment targeting relies on different processes. In the sections below, you can learn about targeting in-app mobile users and the limitations of this kind of targeting.
 
-## How to create segments of mobile users on Microsoft Advertising
+## Create segments of mobile users on Microsoft Advertising
 
 There are three methods for creating mobile in-app user segments on Microsoft Advertising:
 
-### Method 1: Add users who view or click on a creative to a segment
+### Method 1: Add users who view or select a creative to a segment
 
 When uploading a creative, you can choose to add users to a segment "on-view" or "on-click." This functionality works the exact same way in mobile and display.
 

@@ -10,11 +10,11 @@ ms.date: 11/15/2023
 
 The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 
-## Getting to the Advertiser Details Screen
+## Access the Advertiser Details screen
 
-On the **Advertisers** screen, click the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
+On the **Advertisers** screen, select the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
 
-## Viewing advertiser settings
+## View advertiser settings
 
 The settings that display here can be edited by clicking **Edit** at the top of the **Advertisers** screen. For more information, see [Create an Advertiser](create-an-advertiser.md).
 
@@ -50,7 +50,7 @@ Displays insertion orders associated with the advertiser.
 
 Displays line items associated with the advertiser.
 
-## Viewing child object details
+## View child object details
 
 To view child object details:
 

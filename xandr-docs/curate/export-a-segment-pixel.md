@@ -10,7 +10,7 @@ Follow the steps provided on this page to export a segment pixel.
 
 ## Step 1: Get started
 
-Go to the Segment Pixel list in the **Segments** screen (**Audiences** \>  **Segment Manager**), select the checkbox next to the segment pixel that you want to export, click **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
+Go to the Segment Pixel list in the **Segments** screen (**Audiences** \>  **Segment Manager**), select the checkbox next to the segment pixel that you want to export, select **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
 
 ## Step 2: Select the pixel format
 

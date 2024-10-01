@@ -20,7 +20,7 @@ There are five steps to creating a geo radius segment:
 
 ### Step 1. Get started
 
-Open the [Location Manager](location-manager.md) page and click **New** to open the **Create Geo Radius Segment** dialog.
+Open the [Location Manager](location-manager.md) page and select **New** to open the **Create Geo Radius Segment** dialog.
 
 ### Step 2. Create a new Geo Radius Segment
 

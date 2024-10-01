@@ -18,7 +18,7 @@ The reporting options described here have different levels of resource requireme
 
 The table below provides an overview of the transactional reporting options we offer. It also lists features, resource requirements, and has links to detailed documentation.
 
-For more information about each option, click its name in the **Option** column.
+For more information about each option, select its name in the **Option** column.
 
 | Option | Documentation | Resource Level | Requirements | Features |
 |:---|:---|:---|:---|:---|
@@ -58,7 +58,7 @@ This impression data stream is available realtime, unlike the other reporting op
 
 Note that these macros can include raw data grabbed from the impressions (unlike Log Level Data which includes parameters processed by Microsoft Advertising). For example, creative macros like `${USER_AGENT}` and `${REFERRER_URL}` will include raw strings of the impressions' full referrer (not just the domain) and user agent from the HTTP header (not just device make, operating system, browser, and model information) which can be valuable.
 
-The same creative macros would also function for landing page URL parameters to store click information.
+The same creative macros would also function for landing page URL parameters to store select information.
 
 ## Related topics
 

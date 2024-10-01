@@ -22,7 +22,7 @@ You can create and manage Deal Lists at the Member and Advertiser level. A d
     1. **Description**: Enter a description for the deal list which can offer a brief definition for it. For example, Deal list for Ford USA advertisers.
     1. **Available to**: *(Optional)* Select whether the deal list is specific to particular advertisers, or if it is available to all advertisers under the current member. If the deal list is available only to particular advertisers, enter the advertiser details by searching for the name or ID of the advertisers. You can add one or more advertisers in this field.
     1. **Deals**: Add deals to the deal list. There are multiple options for adding deals to the list:
-        1. **Search and Add**: Search deals by ID, name or alias. Post selection of a deal, it displays the particulars about the deal such as **Name**, **ID**, **Buyer Deal Status (Active/Inactive)** and **Seller member**. You can also click the **eye** button to view further details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start** and **End dates**, etc. You can add multiple deals using this search option.
+        1. **Search and Add**: Search deals by ID, name or alias. Post selection of a deal, it displays the particulars about the deal such as **Name**, **ID**, **Buyer Deal Status (Active/Inactive)** and **Seller member**. You can also select the **eye** button to view further details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start** and **End dates**, etc. You can add multiple deals using this search option.
         1. **Import**: Allows you to bulk import a list of deals from a CSV file to a deal list.
         1. **Paste Deal IDs**: Add the Deal IDs by entering them manually, each ID separated by a comma or hard return.
 
@@ -53,7 +53,7 @@ Select **All Deals**.
 
     | Menu Option | Steps |
     |:---|:---|
-    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br>b. Include deals by clicking the :::image type="icon" source="./media/check-edited.png":::.<br><br> **Tip**: You can also click the **eye** button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
+    | **Deals** | a. Search for available deals by name, alias, ID, or code to target.<br>b. Include deals by clicking the :::image type="icon" source="./media/check-edited.png":::.<br><br> **Tip**: You can also select the **eye** button to view additional details about the deal such as **Currency**, **Type**, **Sizes**, **Brands**, **Media Types**, **Start Date**, and **End Date**. |
     | **Deal Lists** | a. Search for available deal lists by ID or name to target.<br> b. Include deals by clicking the :::image type="icon" source="./media/check-edited.png":::. |
 
    > [!NOTE]

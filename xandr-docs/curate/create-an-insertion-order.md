@@ -10,7 +10,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 ## Create a new insertion order
 
-1. On the **Advertiser Details** screen, select **Create New \>  Insertion Order**.
+1. On the **Advertiser Details** screen, select **Create New** \>  **Insertion Order**.
 
    > [!NOTE]
    > You can only create insertion orders under advertisers for which insertion orders are enabled. See [Create an Advertiser](create-an-advertiser.md) for more details.
@@ -59,7 +59,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
    > Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.
 
 1. Optionally, add comments to the insertion order.
-1. Select **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
+1. Select **Save** to save the insertion order. Alternatively, select the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
 
 ## Basic setup
 

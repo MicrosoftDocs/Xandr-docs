@@ -18,7 +18,7 @@ For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting A
 
 ### Step 1: Get started
 
-From the **Partner Center**, click the **Default Settings** button to display the **Default Settings** dialog.
+From the **Partner Center**, select the **Default Settings** button to display the **Default Settings** dialog.
 
 ### Step 2: Update your default settings
 
@@ -40,11 +40,11 @@ This indicates the information each member receives when targeting your inventor
 
 For more information on the different targeting access options, see the **Setting default targeting access** section within [Setting Buyer Defaults](partner-center-screen-seller-view.md).
 
-For **Categories (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Select** beneath the **Category (Custom)** option to display the list of categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
+For **Categories (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Select** beneath the **Category (Custom)** option to display the list of categories. Select a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, select the **X** next to the category name. When you have finished selecting custom categories, select **Add** to save your changes.
 
 ### Step 3: Save your settings
 
-Click the **Save** button to record updates to your settings.
+Select the **Save** button to record updates to your settings.
 
 ## Related topics
 

@@ -35,7 +35,7 @@ Complete the following fields:
 
 ## Step 3. Record your changes
 
-When all changes have been made, Select **Save** at the bottom of the dialog. Your changes are recorded and you are returned to the **Partner Center** screen.
+When all changes have been made, select **Save** at the bottom of the dialog. Your changes are recorded and you are returned to the **Partner Center** screen.
 
 ## Related topics
 

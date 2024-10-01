@@ -17,12 +17,12 @@ Things you can do on this page include:
 - Drill down into line items to configure or troubleshoot
 - Create and edit insertion orders
 
-## Get to the Insertion Orders screen
+## Access the Insertion Orders screen
 
 To get to the **Insertion Orders** screen:
 
-- On the **Advertisers** screen, find the advertiser for which you want to view insertion orders and click the button in the **Ins Orders** column.
-- In **Advertiser's Details** view, click on **Insertion Orders**.
+- On the **Advertisers** screen, find the advertiser for which you want to view insertion orders and select the button in the **Ins Orders** column.
+- In **Advertiser's Details** view, select **Insertion Orders**.
 
 ## Filter your insertion orders
 
@@ -64,7 +64,7 @@ This opens the **Modify Columns** dialog. From there you can use the checkboxes 
 
 ## View insertion order details
 
-To view advanced details about an insertion order, click the insertion order's name. See [View Insertion Order Details](./view-insertion-order-details.md) for more information.
+To view advanced details about an insertion order, select the insertion order's name. See [View Insertion Order Details](./view-insertion-order-details.md) for more information.
 
 ## Search by name/ID
 
@@ -72,7 +72,7 @@ You can use the search field at the top of the screen to find all insertion orde
 
 ## Report on insertion orders
 
-You can initiate a report for one or more insertion orders directly from this screen. Select the checkbox for each insertion order that you want to report on and click **Run Report**.
+You can initiate a report for one or more insertion orders directly from this screen. Select the checkbox for each insertion order that you want to report on and select **Run Report**.
 
 ## Related topics
 

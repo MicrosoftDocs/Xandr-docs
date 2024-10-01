@@ -28,7 +28,7 @@ There are query string parameters that tell the impression bus the user agent, c
 
 Our ad server uses the device's User Agent to determine the operating system. This gives us two ways to spoof the OS: using query string parameters, or using developer tools.
 
-### Using query string parameters
+### Use query string parameters
 
 By passing in a different value for the `ua` query string parameter, we can tell the impression bus what operating system we use, since the impression bus determines the device OS from the User Agent. In this example, we set the User Agent so that we appear to be running an iPhone:
 
@@ -36,7 +36,7 @@ By passing in a different value for the `ua` query string parameter, we can tell
 https://mobile..com/mob?id=1280178&size=320x50&debug_member=2048&dongle=DEBUG_AUTH&ua=Mozilla/5.0%20(iPhone;%20CPU%20iPhone%20OS%206_0%20like%20Mac%20OS%20X)%20AppleWebKit/536.26%20(KHTML,%20like%20Gecko)%20Version/6.0%20Mobile/10A5376e%20Safari/8536.25
 ```
 
-### Using developer tools
+### Use developer tools
 
 Chrome offers the ability to spoof many different devices directly in the header of the HTTP request. To enable it, do the following:
 

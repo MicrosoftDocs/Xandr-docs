@@ -13,9 +13,9 @@ The **Seller Site Domain** report is designed to give sellers information about 
 - Optimize on domains or mobile application ID for managed campaigns
 - Understand the business impact of Microsoft Advertising audit and categorization
 
-**Available to members and publishers** 
+<!-- **Available to members and publishers**  -->
 
-This page describes both the member-level version **and** the publisher version; they are essentially the same.
+This page describes both the **member-level** and the **publisher** version; they are essentially the same.
 
 ## Time frame
 
@@ -60,14 +60,14 @@ Intervals determine how your data is grouped together into rows in the report re
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, select **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
 | Name | Description |
 |:---|:---|
 | Content Category | The name and ID of the universal content category associated with this site or placement. |
-| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br>Note: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across iFrames](#passing-domains-across-iframes) below. |
+| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed.<br>Note: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Pass Domains Across iFrames](#pass-domains-across-iframes) below. |
 | Mobile Application | For mobile app impressions, the Apple App Store or Google Play name and ID of the mobile application where the impression occurred, for example, `"Angry Birds (343200656)"` or `"Angry Birds (com.rovio.angrybirds)" "---"`: This means that we didn't receive a valid mobile app name as the referrer or the app has received too few impressions to be included in reporting. |
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
@@ -123,7 +123,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 | Viewability Measurement Rate | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps) |
 
-## Passing domains across iFrames
+## Pass domains across iFrames
 
 Serving ads inside of iFrames is preferred by publishers for a number of reasons, to include:
 
@@ -146,19 +146,19 @@ For example, a publisher is given a snippet of HTML code to put on their pages t
 
 The iFrame is located on the publisher's web page, but it is serving its contents from the network's domain. Because the page and the iFrame are hosted on different domains, the security restrictions of the "Same Origin Policy" apply, and communication between the publisher's page and the network's iFrame is forbidden. Therefore the network is unable to determine the actual domain of the publisher's page. As a result, the network passes along its own domain as the referring URL to the placement.
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
    <br>Or<br>
-   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
+   From the Publishers top menu, select **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
     > [!WARNING]
@@ -180,7 +180,7 @@ Follow these steps to run your report.
 
     - **Name this report**: Give this report with its current settings a name for future reference.
 
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.
 
 ## Related topics
 

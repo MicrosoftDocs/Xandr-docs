@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Reporting on Conversions
+title: Microsoft Invest - Conversion Reports
 description: In this article, learn about conversion pixels and how you can use reports to troubleshoot your advertiser's conversion pixels.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Reporting on conversions
+# Microsoft Invest - Conversion reports
 
 You can use reports to troubleshoot your conversion pixels and thoroughly analyze conversion data.
 
@@ -41,14 +41,14 @@ The Advertiser Attributed Conversions report allows you to view conversion pixel
 
 This report can retrieve data for the last 33 days, but the timestamps will always be in the UTC timezone, so you'll need to translate the UTC time to your standard timezone. If you pull a report for "yesterday", however, the report will run for "yesterday" relative to your standard timezone.
 
-To access this report directly from the **Conversion Pixels** screen, check the box for each pixel that you want to report on and then click **More Actions &gt; Run Report**.
+To access this report directly from the **Conversion Pixels** screen, check the box for each pixel that you want to report on and then select **More Actions &gt; Run Report**.
 
 This takes you to the Advertiser Attributed Conversions report, where the pixels you selected are preset as filters and **Conversion Pixel** is preset as a dimension. Note that you can also access the report directly from the **Advertiser Reporting** screen (**Reporting &gt; Advertiser Reports**).
 
 > [!NOTE]
 > When exporting the Advertiser Attributed Conversions report to Excel, long numbers (including User ID and Auction ID) are converted to floating point format, and any digit after digit 15 will be converted to zero. For example, a User ID of 102083040601081716 will be converted to 102083040601081000 which is not a valid Microsoft Advertising User ID. If you need to pull valid User or Auction IDs, you can copy them manually or use the API version of this report.
 
-For more information about this report, including a full list of dimensions, metrics, and filters, see [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md). For details on running this report via the API, click [here](../digital-platform-api/advertiser-attributed-conversions.md). You may also be interested in the [Member Attributed Conversions Report](member-attributed-conversions-report.md), which provides this information on a different level and includes Universal Pixel attribution information.
+For more information about this report, including a full list of dimensions, metrics, and filters, see [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md). For details on running this report via the API, see [here](../digital-platform-api/advertiser-attributed-conversions.md). You may also be interested in the [Member Attributed Conversions Report](member-attributed-conversions-report.md), which provides this information on a different level and includes Universal Pixel attribution information.
 
 ## Related topics
 

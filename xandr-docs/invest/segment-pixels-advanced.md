@@ -78,7 +78,7 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 
 ## Examples
 
-### Adding segment pixels using segment ID
+### Add segment pixels using segment ID
 
 ```
 <img src="media/seg?add=1,2,4" width=1 height=1/> 
@@ -92,7 +92,7 @@ If using codes, your member id is required.
 <img src="media/seg?add_code=auto1,travel5&member=10" width=1 height=1/> 
 ```
 
-### Adding and removing segments in one call
+### Add and remove segments in one call
 
 ```
 <img src="media/seg?add=1,2,4&remove=3" width=1 height=1/> 
@@ -104,8 +104,9 @@ If using codes, your member id is required.
 <img src="media/pixel?id=1243" width=1 height=1 /> 
 ```
 
-## Targeting segment values
+## Target segment values
 
-This is how to target values in segments: 
-- When you create a line item, click the **Targeting** tab. 
+This is how to target values in segments:
+
+- When you create a line item, select the **Targeting** tab.
 - In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.

@@ -1,14 +1,14 @@
 ---
 title: Measure Demographic Targeting Success with Nielsen Digital Ad Ratings
 description: In this page, learn how you can activate Nielsen DAR for your line item and gain insight on the demographics of your targeted audiences.   
-ms.date: 09/19/2023
+ms.date: 09/30/2024
 ---
 
 # Measure demographic targeting success with Nielsen Digital Ad Ratings
 
 When creating or editing an augmented line item, you have the option to enable Nielsen Digital Ad Ratings (DAR), which will measure your line item's performance in reaching its targeted demographic group.
 
-Microsoft Invest allows you to [activate Nielsen DAR for your line item](activate-nielsen-digital-ad-ratings-for-a-line-item.md) to gain insight on the demographics of your targeted audiences. At a $0.25 CPM, Nielsen DAR provides demographic measurements on your line items' targeted audiences. [Nielsen DAR's demographic metrics](nielsen-dar-metrics.md) are especially useful for digital video buyers who wish to measure advertising effectiveness using industry-standard metrics across both TV and digital channels.
+Microsoft Invest allows you to [activate Nielsen DAR for your line item](activate-nielsen-digital-ad-ratings-for-a-line-item.md) to gain insight on the demographics of your targeted audiences. At a $0.30 CPM, Nielsen DAR provides demographic measurements on your line items' targeted audiences. [Nielsen DAR's demographic metrics](nielsen-dar-metrics.md) are especially useful for digital video buyers who wish to measure advertising effectiveness using industry-standard metrics across both TV and digital channels.
 
 > [!NOTE]
 > Nielsen DAR has no effect on your line item's targeting and performance.

@@ -4,7 +4,6 @@ description: Learn how to use Nielsen Digital Ad Ratings (DAR) - Site/Split Repo
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Nielsen Digital Ad Ratings (Site/Split report)
 
 The **Nielsen Digital Ad Ratings (DAR) - Site/Split Report** gives you insight into the publisher domains and audiences connected to your line item's impressions. If your line item's using splits, this report also gives you information on their performance.
@@ -67,7 +66,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Line Item | **Required.** The ID and (optional) name of a line item. For more information about line items, see [Working with Line Items](working-with-line-items.md). |
 | Demographic Group | **Required.** Filter for demographic groups sorted by sex and age range. |
 
-## To Run your report
+## Run your report
 
 Follow these steps to run the report:
 
@@ -77,7 +76,7 @@ Follow these steps to run the report:
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
   
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
    > [!WARNING]
@@ -90,7 +89,7 @@ Follow these steps to run the report:
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.
 
 ## Related topics
 

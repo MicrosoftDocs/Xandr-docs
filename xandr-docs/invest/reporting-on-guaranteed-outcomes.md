@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Reporting on Guaranteed Outcomes
+title: Microsoft Invest - Guaranteed Outcomes Reports
 description: In this article, learn how to identify Guaranteed Outcomes transaction data through specific Clearing Events associated with the purchased outcomes.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Reporting on Guaranteed Outcomes
+# Microsoft Invest - Guaranteed Outcomes reports
 
 Throughout Microsoft Invest reporting, transaction data from Guaranteed Outcomes is identifiable by the underlying Clearing Event associated with the type of outcome purchased. For the list of supported Clearing Events, see [Supported Viewability Standards for Guaranteed Outcomes](supported-viewability-standards-for-guaranteed-outcomes.md) and [Supported Video Completion Standards](supported-video-completion-standards.md).
 
@@ -30,7 +30,7 @@ The Clearing Event data in Microsoft Invest analytics reporting is available as 
 > [!TIP]
 > To eliminate the noise of other impression types in reporting, use the report filters to select Impression Type=RTB. This configuration ensures the report will only be generated for RTB impressions (the only impression type eligible for Guaranteed Outcomes)
 
-## Billing report
+## Generate a billing report
 
 Data for Guaranteed Views activity are similarly available in the Buyer Billing Report. For more information, see the report [documentation](buying-billing-report.md), as well as the related [Understanding Your Invoice](understanding-your-invoice.md) documentation.
 

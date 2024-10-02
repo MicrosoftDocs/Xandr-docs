@@ -1,7 +1,7 @@
 ---
 title: Curator Margins
 description: In this article, learn about the Curator margins, their different types, and how they are calculated.
-ms.date: 10/28/2023
+ms.date: 09/17/2024
 ---
 
 # Curator margins
@@ -19,11 +19,16 @@ Curator margin types are configured on a [curated deal line item](create-a-curat
 
 ## Understand margin account
 
-Margins are a markdown in which the buyer bid is taken at face value, the margin is deducted (as well as any curator tech fees), and the remaining revenue is sent to the seller. The formula for any markdown in our system is **markdown amount = bid \* (1 – margin rate)**. This happens in the following order:
+Margins are a markdown in which the buyer bid is taken at face value, the margin is deducted (as well as any Curator Tech Fees), and the remaining revenue is sent to the seller auction. The formula for any markdown in our system is **markdown amount = bid \* (1 – margin rate)**. This happens in the following order:
 
 1. The buyer bid has buyer fees removed. This value is reported as Curator Revenue.
-1. From Curator Revenue, curator margin is deducted (if relevant) and curator tech fees are taken.
+1. From Curator Revenue, Curator Margin is deducted (if relevant) and Curator Tech Fees are taken.
 1. The remaining value is reported as Curator Net Media Cost (see [Curator Analytics Report](curator-analytics-report.md)) and is the bid sent to the seller auction, where seller fees are deducted before all bids are ranked in the final auction.
+
+> [!NOTE]
+> If margins are set too high, deals might not serve because, when combined with Curator Tech Fees, the total deduction can reduce the bid by 100% or more. To prevent this, the Microsoft Curate platform enforces a maximum margin rate when curators configure a curated deal.
+>
+> If you have any questions about this policy, reach out to your account representative.
 
 ## Related topics
 

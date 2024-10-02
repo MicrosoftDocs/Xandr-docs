@@ -61,7 +61,7 @@ To create a new Deal Defined line item without going through the **My Deals** in
 
 1. Select **Next** to open the **Create a Deal Defined Line Item** screen.
 
-## Buying Netflix via PMP on Microsoft Invest
+## Buy Netflix via PMP on Microsoft Invest
 
 The primary difference between a **Deal Defined Line Item** and a standard **Augmented Line Item** is the deal relationship. Only one deal is allowed on a Deal Defined line item, and the settings of that deal determine which targeting settings are displayed for you to configure. Because there is only one deal targeted, the buyer must ensure to take the suggested minimum bid of the deal (ask price + BASC) into account when formulating their bidding strategy. When using maximum revenue bids, the maximum must be higher than this suggestion to win.
 

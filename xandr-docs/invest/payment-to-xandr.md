@@ -4,7 +4,6 @@ description: In this page, learn about invoices, payment instructions and billin
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Payment
 
 ## Microsoft Advertising invoice information
@@ -19,6 +18,6 @@ For general information on your invoice, see [Understanding your Invoice](unders
 
 Refer to the specific payment instructions on your invoice for the most up-to-date information
 
-## Billing reports in the UI
+## Generate billing reports in the UI
 
 You can get billing reports broken out by time period, inventory source, advertisers and publishers (for networks) and many other metrics. Billing reports are available through the UI and the API.

@@ -20,7 +20,7 @@ The parameters listed below can be sent as arguments in the function.
 | Parameter | Type | Description |
 |:---|:---|:---|
 | `dsa` | object | Object that specifies settings in conjunction with the Digital Services Act (DSA). See [DSA Object for details below](#dsa-object).|
-| `msft` | object | Object that contains request values unique to Microsoft. See [Set Page Options - Microsoft Object](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Set-Page-Options---Microsoft-Object.aspx#msft-object).|
+| `msft` | object | Object that contains request values unique to Microsoft. <br> See [Set Page Options - Microsoft Object](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Set-Page-Options---Microsoft-Object.aspx#msft-object).|
 | `member` | number | The member ID. |
 | `publisherId` | number | The `publisherId` can be used when using an inventory code. This ensures the right publisher is used to help pick the correct default placement. |
 | `user` | object | Object that specifies information about an external user. See [User Object](#user-object) details below. |

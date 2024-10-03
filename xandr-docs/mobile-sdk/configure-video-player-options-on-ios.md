@@ -16,10 +16,10 @@ ms.date : 10/01/2024
 |---|---|---|
 | **BOOL** `showClickThruControl` | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. | Instream/Banner Video |
 | **NSString** `*clickThruText` | "Learn More" | Customizes the text associated with the ClickThrough Control. |Instream/Banner Video |
-| **BOOL** `showFullScreenControl` (Banner Video Only) | true | Controls the visibility of the fullscreen button for Banner Video. | Banner Video |
+| **BOOL** `showFullScreenControl` (Banner Video Only) | true | Controls the visibility of the fullscreen button. | Banner Video |
 | **BOOL** `showTopBar` | true | Determines whether the top bar, containing ClickThrough and Skip controls, is displayed. | Instream/Banner Video |
-| **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream/Banner Video |
-| **NSString** `*adText` | "Ad" | Customizes the ad text on the video player. | Instream/Banner Video |
+| **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream/Banner Video/Interstitial |
+| **NSString** `*adText` | "Ad" | Customizes the ad text on the video player. | Instream/Banner Video/Interstitial |
 | **BOOL** `showVolumeControl` | true | Controls the visibility of the mute/unmute control. | Instream/Banner Video |
 | **ANInitialAudioSetting** `initalAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state. | Instream/Banner Video |
 | **BOOL** `showSkip` | true | Controls the visibility of the Skip control. | Instream |

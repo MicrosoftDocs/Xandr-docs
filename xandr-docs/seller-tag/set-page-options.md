@@ -19,8 +19,9 @@ The parameters listed below can be sent as arguments in the function.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| `dsa` | object | Object that specifies settings in conjunction with the Digital Services Act (DSA). See [DSA Object for details below](#dsa-object).
-| `msft` | object | Object that contains request values unique to Microsoft. See [MSFT Object details below](#msft-object). |
+| `dsa` | object | Object that specifies settings in conjunction with the Digital Services Act (DSA). See [DSA Object for details below](#dsa-object).|
+| `msft` | object | Object that contains request values unique to Microsoft. See [MSFT Object details](
+https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Set-Page-Options---Microsoft-Object.aspx#msft-object). |
 | `member` | number | The member ID. |
 | `publisherId` | number | The `publisherId` can be used when using an inventory code. This ensures the right publisher is used to help pick the correct default placement. |
 | `user` | object | Object that specifies information about an external user. See [User Object](#user-object) details below. |
@@ -68,19 +69,6 @@ Specifies information related to the Digital Services Act. For the ideal values 
 | `dsarequired` | number | Flag to indicate if DSA information should be made available.
 | `pubrender` | number | Flag to indicate if the publisher will render the DSA Transparency info.
 | `transparency` | Array of objects | Array of objects of the entities that applied user parameters and the parameters they applied.
-
-### MSFT object
-
-Specifies information and settings unique to Microsoft.
-
-| Parameter | Type | Description |
-|---|---|---|
-|vertical|string|A string value that describes current page or app.|
-|`audience_mode`|string|A string that reflects current status of the audience for the page.|
-|`ocid`|string|A string ID that is separately derived and passed through in the request.|
-|`msn_signals`|Array of Objects|An array of objects, each supporting the following keys and value types:  <br>  - `tf_name`: string <br> - `val`: string. <br>`tf_name` refers to the name of the traffic filter signal and  `val` refers to the actual value for this signal.|
-|`impressed_crids`|Array of strings|An array of string values representing MSAN creative IDs which should not be included.|
-| `toptout` | number | A number representing the status of the end user's MSFT opt-out choices (e.g., `0`, `1`, etc.) |
 
 ### Schain object
 

@@ -75,7 +75,12 @@ Specifies information and settings unique to Microsoft.
 
 | Parameter | Type | Description |
 |---|---|---|
-| `toptout` | number | A number that represents the status of the end user's MSFT optout choices (eg `0`, `1`, etc) |
+|vertical|string|A string value that describes current page or app.|
+|`audience_mode`|string|A string that reflects current status of the audience for the page.|
+|`ocid`|string|A string ID that is separately derived and passed through in the request.|
+|`msn_signals`|Array of Objects|An array of objects, each supporting the following keys and value types:  <br>  - `tf_name`: string <br> - `val`: string. <br>`tf_name` refers to the name of the traffic filter signal and  `val` refers to the actual value for this signal.|
+|`impressed_crids`|Array of strings|An array of string values representing MSAN creative IDs which should not be included.|
+| `toptout` | number | A number representing the status of the end user's MSFT opt-out choices (e.g., `0`, `1`, etc.) |
 
 ### Schain object
 

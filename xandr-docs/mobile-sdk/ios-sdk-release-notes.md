@@ -31,11 +31,11 @@ ms.date: 10/01/2024
 > [!NOTE]
 > As of v9.0.0 release, the source code is moved to private repositories as already announced. You can refer to the [migration guide](migrating-ios-sdk-v8.x.y-to-v9.x.y.md) to understand how to utilize the binary framework.
 
-### New feature (9.0.0)
+### New feature
 
 - 5736950: Made our webview inspectable when log level is set to debug or higher.
 
-### Improvement/Bug fixes (9.0.0)
+### Improvement/Bug fixes
 
 - 746525343: Fixed Google Adapter Bug - Accessing Files.
 - 6892506: Fixed drop in (OMID) viewability events.
@@ -43,25 +43,25 @@ ms.date: 10/01/2024
 
 ## 8.11.4
 
-### Improvement/Bug fixes (8.11.4)
+### Improvement/Bug fixes
 
 - 7295371: Privacy Manifest update and fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ## 8.11.3
 
-### Improvement/Bug fixes (8.11.3)
+### Improvement/Bug fixes
 
 - 7295362: Privacy Manifest update.
 
 ## 8.11.2
 
-### Improvement/Bug fixes (8.11.2)
+### Improvement/Bug fixes
 
 - 7112599: Fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ## 8.11.1
 
-### Improvement/Bug fixes (8.11.1)
+### Improvement/Bug fixes
 
 - 5663009: Added support for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
@@ -76,17 +76,17 @@ ms.date: 10/01/2024
 
 This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 will be our next major release. As previously announced, we will discontinue the practice of releasing source code updates for iOS and Android Mobile SDKs on Github. It's important to note that this is not a deprecation of our SDKs; rather, it pertains to the open-source aspect as we transition our Android and iOS Mobile SDKs to private repositories. There will be no disruptive changes from v8.x to v9.0.0, although it's worth noting that any future functional enhancements will be exclusively developed within the v9.x series.
 
-### New feature (8.11.0)
+### New feature
 
 - 6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-ios.md)
 
 ## 8.10.0
 
-### New feature (8.10.0)
+### New feature
 
 - 6029394 - Added support for setting content language in Ad Request. New API introduced in SDKSettings setContentLanguage(String contentLanguage).
 
-### Improvement/Bug fixes (8.10.0)
+### Improvement/Bug fixes
 
 - 6015112: Upgraded OMSDK from 1.4.8 to 1.4.9 (Microsoft namespace).
 - 5766029: Resolve the issue with the OutStream iPad video of size 400x980 not rendering properly.
@@ -94,12 +94,12 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 
 ## 8.9.0
 
-### Improvement/Bug fixes (8.9.0)
+### Improvement/Bug fixes
 
 - 5663106: Upgraded OMSDK from 1.4.2 to 1.4.8.
 - 5732707: Addressed issue with Video Orientation Sizes getting applied to HTML Banner creatives.
 
-### Mediation partner updates (8.9.0)
+### Mediation partner updates
 
 - 5622329: Upgraded Google AdMob SDK from 10.3.0 to 10.10.0.
 - 5622334: Upgraded Smart Ad Server SDK from 7.17.1 to 7.22.0.

@@ -17,9 +17,9 @@ As soon as a single credential login has been created for you, you will receive 
 
 This task explains how to set up your single credential login.
 
-1. Click on the link shared in the welcome mail.
-1. Click **Set your password**.
-1. After clicking on the link, follow the on-screen prompts to set your password.
+1. Select on the link shared in the welcome mail.
+1. Select **Set your password**.
+1. After selecting on the link, follow the on-screen prompts to set your password.
 
     Consider these requirements for setting up your password:
     - Must be at least 8 characters in length.

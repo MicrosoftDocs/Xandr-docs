@@ -13,8 +13,8 @@ This guide helps you understand the buy-side capabilities of Microsoft Curate an
 
 ## In this guide
 
-- [Working with Advertisers](working-with-advertisers.md): The advertiser object is the top level of the buy-side hierarchy (Advertiser > Insertion Orders > Line Items). Before you can set up line items to define your financial agreement and then start running campaigns and serving creatives on behalf of an advertiser, you must set up the advertiser itself.
-- [Working with Insertion Orders](working-with-insertion-orders.md): Insertion orders allow you to bucket line items under an advertiser (Advertiser > Insertion Order > Line Items).
+- [Work with Advertisers](working-with-advertisers.md): The advertiser object is the top level of the buy-side hierarchy (Advertiser > Insertion Orders > Line Items). Before you can set up line items to define your financial agreement and then start running campaigns and serving creatives on behalf of an advertiser, you must set up the advertiser itself.
+- [Work with Insertion Orders](working-with-insertion-orders.md): Insertion orders allow you to bucket line items under an advertiser (Advertiser > Insertion Order > Line Items).
 - [Buy-Side Targeting](buy-side-targeting.md): You can apply a wide range of targeting strategies to line items or campaigns. These strategies are essential for ensuring a return on your ad spending by making sure you reach relevant audiences.
-- [Working with Segments](working-with-segments.md): Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment for future targeting.
+- [Work with Segments](working-with-segments.md): Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment for future targeting.
 - [Introduction to Viewability](introduction-to-viewability.md): Understand how Microsoft Advertising measures ad views, and optimize the chances of your audience viewing your creatives.

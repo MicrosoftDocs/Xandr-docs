@@ -13,7 +13,7 @@ On the **Partner Center** Screen, the **Default Settings** option allows you to 
 
 ## Step 1: Get started
 
-Go to the **Partner Center** screen (**Partners \> Partner Center**) and click on the **Default Settings** button to display the **Default Settings** dialog.
+Go to the **Partner Center** screen (**Partners** \> **Partner Center**) and select on the **Default Settings** button to display the **Default Settings** dialog.
 
 ## Step 2: Update your default settings
 
@@ -39,5 +39,5 @@ The **Default Inventory Trust** setting indicates whether you trust inventory re
 ## Related topics
 
 - [Edit Seller Defaults](edit-seller-defaults.md)
-- [Managing Relationships with Sellers](managing-relationships-with-sellers.md)
+- [Manage Relationships with Sellers](managing-relationships-with-sellers.md)
 - [Partner Center Screen](partner-center-screen-buyer-view.md)

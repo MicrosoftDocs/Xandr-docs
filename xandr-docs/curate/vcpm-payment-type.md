@@ -10,7 +10,7 @@ ms.date: 11/15/2023
 
 Viewable CPM (vCPM) is a payment type that allows buyers to pay only for impressions that are measured "viewable" (read our [Introduction to Viewability](introduction-to-viewability.md) for more information on viewability measurement). vCPM is similar to CPC and CPA payment types in that the impression does not incur a cost until a post-auction event occurs. For vCPM, the post-auction event is a signal that the impression was viewable. Once that event is received, the buyer will pay the full value of the vCPM bid.
 
-## Buying inventory on a vCPM basis
+## Buy inventory on a vCPM basis
 
 To use the vCPM payment type, select **Viewable CPM** as your revenue type and enter your bid price.
 
@@ -29,11 +29,11 @@ Buyers submit bids at a vCPM rate, just as they would with CPC or CPA. In order 
 1. vCPM bid won the auction because the eCPM was still higher than the CPM bid of $4.00. However, there was no payout because the impression was not viewed.
 1. The CPM bid won the bid. The 20% estimated view rate translates to an eCPM for Bid 1 that is lower than the CPM bid.
 
-## Reporting on payment types
+## Report on payment types
 
 **Payment Type** is an available **Filter** and **Dimension** in analytics reporting.
 
-To generate a report for all vCPM buying activity, click **Edit** on the **Payment Type** filter and select the **vCPM** option.
+To generate a report for all vCPM buying activity, select **Edit** on the **Payment Type** filter and select the **vCPM** option.
 
 Alternatively, to generate a report broken down by Payment Type, select the **Payment Type** checkbox in the **Dimension** column.
 

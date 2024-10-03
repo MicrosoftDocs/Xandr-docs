@@ -74,11 +74,11 @@ Select **New** to create a deal. For step-by-step instructions on creating a dea
 
 ## Duplicate a deal
 
-Use the duplicate feature to easily create a new deal that is similar to an existing deal, or to create the same deal for a different buyer. Hover over the deal you would like to copy in order to display the duplicate icon, and then Select on the duplicate icon to display the **Create Deal** panel.
+Use the duplicate feature to easily create a new deal that is similar to an existing deal, or to create the same deal for a different buyer. Hover over the deal you would like to copy in order to display the duplicate icon, and then Select the duplicate icon to display the **Create Deal** panel.
 
 ## Edit a deal
 
-Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and then Select on the edit icon to make the deal editable.
+Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and then Select the edit icon to make the deal editable.
 
 > [!WARNING]
 > Campaigns targeting the deal will be immediately affected by the changes you make. Use the Activity Stream on the [Partnership Details Screen](partnership-details-screen-buyer-view.md) to communicate with the buyer before making changes to the deal dates, auction type, inventory, segment, creative size, or brand.
@@ -100,7 +100,7 @@ Select **Run Report** in the reporting screen to run the report with these setti
 
 ## Report on creatives served
 
-To see which creatives have already served through a particular deal, Select on the name of the deal you wish to review. In the details pane that opens below, under **Allowed Creatives**, Select the link under the **Creatives Served** header.
+To see which creatives have already served through a particular deal, Select the name of the deal you wish to review. In the details pane that opens below, under **Allowed Creatives**, Select the link under the **Creatives Served** header.
 
 This will open the reporting tab, where you can run a Seller Brand Review report that has been pre-populated with the right filters and dimensions for you.
 

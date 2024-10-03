@@ -132,7 +132,7 @@ The list(s) you selected will be downloaded to your local drive. If you exported
 
 1. Locate the desired inventory list.
 
-1. Select on its row to see more details.
+1. Select its row to see more details.
 
 ## Delete an inventory list
 

@@ -1,12 +1,12 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol for Bidders
 description: Explore this article to learn how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 09/19/2024
+ms.date: 10/03/2024
 ---
 
 # Integration with OpenRTB 2.6 protocol for Bidders
 
-This page outlines how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types. This document highlights the top-level objects that have changes or updates, including new fields that are added or implemented. Additionally, it outlines the fields that have been transitioned from their previous location in OpenRTB 2.4/2.5 to their new location in OpenRTB 2.6.
+This page outlines how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for sending and receiving impressions across all media types. This document highlights the top-level objects that have changes or updates, including new fields that are added or implemented. Additionally, it outlines the fields that have been transitioned from their previous location in OpenRTB 2.4/2.5 to their new location in OpenRTB 2.6.
 
 ## Implementation
 
@@ -23,7 +23,7 @@ x-openrtb-version : 2.6
 ``` -->
 
 > [!NOTE]
-> Bidders must be enabled for OpenRTB 2.6 to start receiving the OpenRTB 2.6 fields listed below. Otherwise, the system will default to version 2.4. To update this setting, contact your account representative or submit a ticket through the support portal.
+> Bidders must be enabled for OpenRTB 2.6 to start receiving the OpenRTB 2.6 fields listed below. Otherwise, the system will default to version 2.4 or 2.5. To update this setting, contact your account representative or submit a ticket through the support portal.
 
 ## Top-level bid request object
 

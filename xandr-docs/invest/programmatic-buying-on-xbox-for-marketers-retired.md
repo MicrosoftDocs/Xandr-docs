@@ -7,8 +7,6 @@ author: rupambaruah-xandr
 
 # Microsoft Invest - Programmatic buying on Xbox for marketers
 
-## Introduction
-
 Xbox is leading the transformation in the living room for both gaming and entertainment while making impactful connections to consumers along the way. Brands can interact with an engaged audience on the largest screen in the home to deliver immersive experiences and effective results, maximizing the return on video content investments.
 
 Xbox allows buyers to create impactful advertising experiences unlike any other:
@@ -32,7 +30,7 @@ For more questions on buying programmatic on Xbox, contact your OATH / AppNexus 
 
 All creative is subject to final approval by Xbox prior to going live.
 
-### Video creative requirements
+## Video creative requirements
 
 - VAST 2.0 ONLY
 - Recommended Duration: 15 sec – 1 min (Creatives of up to 3 min can be accommodated upon request)
@@ -45,7 +43,7 @@ All creative is subject to final approval by Xbox prior to going live.
 - 1080p HD recommended, 720p acceptable
 - SSL ONLY
 
-### Native banner creative requirements
+## Native banner creative requirements
 
 (EXACT SIZES ONLY)
 
@@ -76,7 +74,7 @@ To keep Banner design clean and simple:
 
   :::image type="content" source="media/xbox-bestpractices-d.png" alt-text="Screenshots of correct and incorrect use of iconography in the banner design.":::
 
-## Designing for the Xbox environment
+## Design for the Xbox environment
 
 ### Recommendations
 

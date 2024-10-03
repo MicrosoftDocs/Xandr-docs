@@ -19,29 +19,27 @@ Self-audited creatives are only eligible to run on sellers' inventory that have 
 An ecosystem of standardized audit practices and open trust settings will greatly increase liquidity for every member on the
 Microsoft Advertising platform. If a seller feels like they can no longer control the types of creatives that serve on their inventory, their first action will be to reduce the trust level of the buying member and effectively limit access to their supply. Standardization will ultimately benefit everyone by leading to more liquidity.
 
-## Applying sensitive categories to generic creatives
+## Apply sensitive categories to generic creatives
 
 One of the hardest parts of self-auditing creatives is identifying the correct sensitive categories, especially for generic creatives.
 
 > [!NOTE]
 > If you ever have questions about how creatives should be categorized, feel free to reach out to [selfaudit@appnexus.com](mailto:selfaudit@appnexus.com).
 
-## Correctly categorizing download offers
+## Categorize download offers correctly
 
-It is important to recognize the difference between the **Download/Watch/Play Button** sensitive category and the **Software and Web Apps** offer category. Apply the **Download/Watch/Play Button** sensitive category when the creative features a download or watch or play button. Apply the **Software and Web Apps** offer category when the landing page of the creative represents any type of
-download offer except a toolbar download.
+It is important to recognize the difference between the **Download/Watch/Play Button** sensitive category and the **Software and Web Apps** offer category. Apply the **Download/Watch/Play Button** sensitive category when the creative features a download or watch or play button. Apply the **Software and Web Apps** offer category when the landing page of the creative represents any type of download offer except a toolbar download.
 
 For generic creatives, whenever possible, choose additional categories that describe the landing page. Examples of popular categories include: dating, free giveaways, ringtones/mobile downloads, online games, pharmaceuticals, and supplements.
 
-## Selecting brand and offer categories
+## Select brand and offer categories
 
 In addition to applying sensitive categories to your self-audited creatives, the correct brand and corresponding offer category should also be selected. Many sellers ban creatives with an "unknown" brand as they assume it means the creatives have not been audited correctly.
 
 > [!NOTE]
 > Brand search is case sensitive. It is advised to start the search with a Capital letter.
 
-When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at [https://help.xandr.com](https://help.xandr.com). Be sure to set the **Request Type** to
-**Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
+When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at [https://help.xandr.com](https://help.xandr.com). Be sure to set the **Request Type** to **Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
 
 If you have multiple brands to add, you can submit an Excel spreadsheet that includes the information above for each brand.
 

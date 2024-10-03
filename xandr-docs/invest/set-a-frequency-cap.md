@@ -14,13 +14,13 @@ Combining frequency caps could increase the restrictions on how often a creative
 
 An exception to this would be if the month ended mid-week. Because weeks are defined as Sunday through Saturday and a month is a calendar month, in this scenario a user could be shown one impression on Sunday and one on Tuesday. If the month then ends on Wednesday, the user could be shown two more impressions by Saturday. At that point, the monthly cap has been met twice, once for each month in that week, and the weekly cap of four has been met.
 
-1. Under the **Audience & Location Targeting** > **Frequency & Recency** subsection, click the toggle.
+1. Under the **Audience & Location Targeting** > **Frequency & Recency** subsection, select the toggle.
 
 1. Under **Frequency (how many)**, enter the number of impressions (imps) to show and select a timeframe. For example, to show a user a maximum of four impressions within one week, enter **4** in the text field and select **week** from the pull-down menu.
 
-1. To add additional timeframes, click **Add another cap**. You can apply one frequency cap per timeframe. The following table describes the time period settings available for frequency caps:
+1. To add additional timeframes, select **Add another cap**. You can apply one frequency cap per timeframe. The following table describes the time period settings available for frequency caps:
 
-    | **Timeframe** | **Description** |
+    | Timeframe | Description |
     |:---|:---|
     | **hour** | The maximum number of times a creative can be served to a user within a one-hour period. |
     | **day** | The maximum number of times a creative can be served to a user within one day. |
@@ -30,11 +30,11 @@ An exception to this would be if the month ended mid-week. Because weeks are def
 
 1. Set the following settings:
 
-    | **Settings** | **Description** |
+    | Settings | Description |
     |:---|:---|
     | **Serve only 1 imp per page** | Use this setting to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions. This option is network-specific and may not be available for your network (member). |
     | **Include users without cookies** | Once you set a frequency cap, you can choose to show creatives to users without cookies. There is no way to identify these users, so if you turn on this option your frequency and recency caps will not apply to any user without cookies. However, if you select not to include users without cookies you could limit your delivery. If you toggle this option and have set a daily frequency cap, [Advanced Frequency Management](./advanced-frequency-management.md) will be applied to help adhere to your daily frequency cap. |
 
 ## Related topic
 
-- [Frequency and Recency Examples](./frequency-and-recency-examples.md)
+[Frequency and Recency Examples](./frequency-and-recency-examples.md)

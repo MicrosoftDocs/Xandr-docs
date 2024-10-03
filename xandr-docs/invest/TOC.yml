@@ -70,7 +70,7 @@
         href: broker-fees.md
     - name: Currency Support
       href: currency-support.md
-    - name: Reporting Labels
+    - name: Run a Report using Reporting Labels
       href: reporting-labels.md
   - name: Working with Third-Party Inventory
     items:
@@ -192,7 +192,7 @@
         href: associate-creatives-with-a-line-item.md
       - name: Enable Third-Party Measurement Features on a Line Item
         items:
-        - name: Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+        - name: Measure Demographic Targeting Success with Nielsen Digital Ad Ratings
           href: nielsen-digital-ad-ratings.md
         - name: Metrics for Nielsen Digital Ad Ratings
           href: nielsen-dar-metrics.md
@@ -378,7 +378,7 @@
         href: offline-conversion-attribution.md
     - name: Conversion Pixels Advanced
       href: conversion-pixels-advanced.md
-    - name: Reporting on Conversions
+    - name: Conversion Reports
       href: reporting-on-conversions.md
     - name: Server-Side Conversion Pixels
       href: server-side-conversion-pixels.md
@@ -420,7 +420,7 @@
         href: managing-mobile-discrepancies.md
       - name: Run Rich Media Creatives on Mobile Inventory
         href: run-rich-media-creatives-on-mobile-inventory.md
-      - name: Running Cost per Install Offers
+      - name: Run Cost per Install Offers
         href: running-cost-per-install-offers.md
       - name: Set Up Third-Party Mobile App Install Tracking
         href: set-up-third-party-mobile-app-install-tracking.md
@@ -708,8 +708,6 @@
         href: create-a-third-party-advertiser-pixel-for-your-creatives.md
     - name: Associate Segment Pixels with Creatives
       href: associate-segment-pixels-with-creatives.md
-    - name: Moat Video Viewability Measurement
-      href: moat-video-viewability-measurement.md
   - name: Auditing Creatives
     items:   
     - name: Overview
@@ -786,7 +784,7 @@
   items:
     - name: Overview
       href: introduction-to-viewability.md
-    - name: Reporting on Viewability
+    - name: Viewability Reports
       href: reporting-on-viewability.md
     - name: vCPM Payment Type
       href: vcpm-payment-type.md
@@ -828,7 +826,7 @@
       href: supported-video-completion-standards.md
     - name: Configure a Line Item to Buy Guaranteed Outcomes
       href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
-    - name: Reporting on Guaranteed Outcomes
+    - name: Guaranteed Outcomes Reports
       href: reporting-on-guaranteed-outcomes.md
     - name: Understanding Viewability Rates for Guaranteed Views
       href: understanding-viewability-rates-for-guaranteed-views.md
@@ -860,7 +858,7 @@
         href: charges-for-buyers.md
       - name: Charges for Sellers
         href: charges-for-sellers.md
-    - name: Reconciling Your Invoice with Reporting
+    - name: Reconcile Your Invoice with Reports
       href: reconciling-your-invoice-with-reporting.md
     - name: Payment
       href: payment-to-xandr.md
@@ -874,7 +872,7 @@
       href: digital-selling.md
     - name: Understanding Your Seller Statement
       href: understanding-your-seller-statement.md
-    - name: Reconciling your Seller Statement with Reporting
+    - name: Reconcile your Seller Statement with Reports
       href: reconciling-your-seller-statement-with-reporting.md
     - name: Getting Paid
       href: getting-paid-by-xandr.md
@@ -1000,8 +998,6 @@
       href: requirements-for-filing-a-support-case-for-report-discrepancies.md
 - name: Apps
   items:
-    - name: grapeshot
-      href: grapeshot.md
     - name: comScore Agent
       href: comscore-agent.md
 - name: Release Notes

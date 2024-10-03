@@ -8,16 +8,16 @@ ms.date: 11/16/2023
 
 # Microsoft Curate - User ID mapping with getUID and mapUID
 
-You may have internal offline data about users that you need to insert into the Microsoft Advertising [Server Side Cookie Store](../invest/server-side-cookie-store.md) so that it is available for decisioning. If so, we must first map your internal user IDs and Microsoft Advertising user IDs in order to be able to match user IDs on future requests. Depending on whether you will store the mapping in your system or in ours, there are two ways to do this through pixel calls: mapUID and getUID.
+You may have internal offline data about users that you need to insert into the Microsoft Advertising [Server Side Cookie Store](../invest/server-side-cookie-store.md) so that it is available for decisioning. If so, we must first map your internal user IDs and Microsoft Advertising user IDs in order to be able to match user IDs on future requests. Depending on whether you will store the mapping in your system or in ours, there are two ways to do this through pixel calls: `mapUID` and `getUID`.
 
-The **getUID** service retrieves the Microsoft Advertising ID so you can coordinate it with your own in-house ID server side or in your own cookie space. Then you can pass in an offline data feed that says, "update Microsoft Advertising user ABC with the following segment data." The **mapUID** service passes your internal ID to us for mapping to the Microsoft Advertising ID within the Microsoft Advertising cookie store.
+The `getUID` service retrieves the Microsoft Advertising ID so you can coordinate it with your own in-house ID server side or in your own cookie space. Then you can pass in an offline data feed that says, "update Microsoft Advertising user ABC with the following segment data." The `mapUID` service passes your internal ID to us for mapping to the Microsoft Advertising ID within the Microsoft Advertising cookie store.
 
 > [!NOTE]
 > Note that the Microsoft Advertising user ID macro described below is `$UID`. Unlike many of our other macros, it does not have curly braces.
 
 ## A basic mapping example
 
-|  |  |
+| Advertiser  | User ID |
 |--|--|
 | **Prostarr User ID** | PS123 |
 | **Xandr User ID** | 2894234234 |
@@ -25,7 +25,7 @@ The **getUID** service retrieves the Microsoft Advertising ID so you can coordin
 
 If the advertiser Prostarr tells us that user `PS123` is in segment `0005`, this will mean nothing to us. Instead, they have to tell us that user `2894234234` is in segment `0005`.
 
-To do this, Prostarr has done a previous mapping of all Microsoft Advertising and Prostarr Sportswear user IDs using the GetUID service and stored that mapping in its internal database. A GetUID call looks like
+To do this, Prostarr has done a previous mapping of all Microsoft Advertising and Prostarr Sportswear user IDs using the GetUID service and stored that mapping in its internal database. A `GetUID` call looks like
 
 ``` 
 https://ib.adnxs.com/getuid?URL 
@@ -106,7 +106,7 @@ The `$UID` macro will be replaced with the Microsoft Advertising user ID by the 
  https://ad.adserver.com/pixel?adnxs_uid=19241908471992&geo=35&referrer=https://www.website.com 
 ```
 
-## Use case: piggyback on a pixel call
+## Use case: Piggyback on a pixel call
 
 An easy way to create this mapping is to piggyback the getUID Service off of one of your existing pixel calls. You can adjust your pixel so that when the pixel call is made, there will be an immediate redirect to the Microsoft Advertising getUID service, which will pass back the user ID within the URL indicated by Microsoft Advertising Curate.
 
@@ -155,7 +155,7 @@ https://ib.adnxs.com/mapuid?member=123&user=ABC;DEF;GHI
 
 The average time to live (TTL) for mapUID mappings is around 2.5 weeks. Therefore it's very important that you fire the mapUID pixel as frequently as possible and on as many pages as possible to keep your mappings live.
 
-## Piggybacking a segment call off of a mapUID call
+## Piggyback a segment call off a mapUID call
 
 You can add user IDs to one or more segments in the Microsoft Advertising cookie store at the same time that you map their ID to ours.
 
@@ -173,11 +173,11 @@ To pass in values for each segment use colons. (This example used segment codes 
 https://ib.adnxs.com/mapuid?member=123&user=[USER_ID]&seg_code=[code1]:[code1value],[code2]:[code2value],[code3]:[code3value] 
 ```
 
-## Sending us your segment data offline
+## Send us your segment data offline
 
 For more information about how to send us your segment data offline, see the API's [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 
 ## Related topics
 
-- [user id syncing with external partners](../invest/user-id-syncing-with-external-partners.md)
-- [asynchronous usersync pixels](../invest/asynchronous-usersync-pixels.md)
+- [User ID syncing with external partners](../invest/user-id-syncing-with-external-partners.md)
+- [Asynchronous user sync pixels](../invest/asynchronous-usersync-pixels.md)

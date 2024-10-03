@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Curator Billing Report
-description: Explore this article to understand the Curator Billing report, including its metrics, dimensions, and a detailed guide on running a report.
+description: Explore this article to understand the Curator billing report, including its metrics, dimensions, and a detailed guide on running a report.
 ms.date: 10/28/2023
 ---
 
@@ -89,7 +89,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Curator Auction Service Deductions | The amount Microsoft Advertising charged to the curator as a deduction at auction time. |
 | Curator Auction Fees | The amount Microsoft Advertising charged to the curator as a fee at auction time. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

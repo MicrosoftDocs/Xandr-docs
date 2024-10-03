@@ -16,8 +16,8 @@ Ensure you understand these basics before proceeding (each of these concepts is 
     - Although USD is the default currency, Microsoft Advertising supports the **buying and selling ("transacting")** of impressions as well as **billing** in a number of different non-USD currencies.
     - Microsoft Advertising performs all calculations in USD. To support non-USD use cases, we convert in and out of USD (as needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
 1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates exchange rates platform-wide on a daily basis based on the most current [Oanda](https://www.oanda.com/) rates.
-1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction took place. However, in the following scenarios, we use the month-end rate to bill (for a full list, see [When Media Cost and Related Fees are Converted for use in Billing?](#when-media-cost-and-related-fees-are-converted-for-use-in-billing) below):
-    - The transaction currency differs from the billing currency.
+1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction took place. However, in the following scenarios, we use the month-end rate to bill (for a full list, see [Convert during the Auction](#convert-during-the-auction) below):
+    a. The transaction currency differs from the billing currency.
     - We can't easily associate a fee back to an auction (e.g., Ad Serving Fees, Minimums, Log Level Data Fees, etc.).
 
 ## Base currency (USD)
@@ -110,17 +110,17 @@ Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at ap
 
 ## Account setup
 
-Users can set the transaction currency for certain buy and sell side objects (listed below under Currency Settings per Object) under their member. The buy/sell side object currency settings control one or both of the following:
+Users can set the transaction currency for certain buy and sell side objects (listed below under Currency conversion per Object) under their member. The buy/sell side object currency settings control one or both of the following:
 
 1. The default currency for any child objects created under the parent (e.g., Insertion Order determines the currency of its Line Items). The user can override the default currency set at the parent object.
 1. Transacting (buying or selling inventory). This is the currency of record for the object since it's what is actually logged for each auction.
 
-For more details on the objects that have currency setting and what those settings affect, see [Currency settings per object](#currency-settings-per-object) below.
+For more details on the objects that have currency setting and what those settings affect, see [Currency Conversion per object](#currency-conversion-per-object) below.
 
 > [!NOTE]
 > While you are able to set currency on many objects, the only two which are actually used to buy and sell are those set on the **Line Item** (for the buy side) and **Publisher** (for the sell side). The currencies set on these two objects are what is actually logged by and used for transacting on the platform.
 
-### Currency settings per object
+### Currency conversion per object
 
 The table below explains when you can set currencies and the effects of those settings.
 
@@ -137,7 +137,7 @@ The table below explains when you can set currencies and the effects of those se
 | **Placement Groups** | **Default:** Inherits the value from the Network or Publisher setting.<br> **Settable?:** User can't update the currency for Placement Groups (refer to the Publisher to view the currency). |  |
 | **Placements** | **Default:** Inherits the value from the Network or Publisher setting.<br> **Settable?:** User can't update the currency for placements (refer to the Publisher to view the currency). |  |
 
-## Start transacting using multiple currencies
+## Transact with multiple currencies
 
 Once you've set the currency for your member and any objects (e.g., Insertion Orders, Line Items, Campaigns) for which you want to have a different currency, you can start buying and selling inventory.
 
@@ -152,13 +152,13 @@ Once you've set the currency for your member and any objects (e.g., Insertion Or
 1. To enforce any Publisher floors, Microsoft Advertising converts the local currency floor price to USD, then compares the floor to the net bids (already converted to USD) to eliminate unwanted bids.
 1. The auction is run and all results are logged in USD. In addition, Microsoft Advertising logs the Transaction Currency (Publisher currency) and the applicable exchange rate at the time of auction.
 
-### Conversions made during the auction
+### Convert during the auction
 
 We convert all non-USD bids (e.g., if Line Item has been set to a currency other than USD) into USD (Base Currency) so we can compare bids in the same unit of measurement. All these converted bids are sent through our auction logic and the winning bid is priced appropriately in USD. Finally, after the auction is complete, we log all results in USD, along with your Transaction Currency and the applicable exchange rate that was used to initially convert the bid into USD.
 
 When viewing your auction activity via reporting or log level data feeds, you have the option to view monetary fields in either USD or the Transaction Currency (labeled Buying Currency in reports). To display reports in the Transaction Currency(ies), we convert the USD values to the Transaction Currency using the rates logged for each auction. This provides you with the most accurate local currency values which you can then use for forecasting and billing reconciliation.
 
-## Reporting and analytics
+## Overview of reporting and analytics
 
 Once an auction has been completed, you can review the details related to it in your Transaction Currency using reporting, log level data or within specific locations in the UI (e.g., Quick Stats, Grids, etc.).
 
@@ -174,11 +174,11 @@ Once an auction has been completed, you can review the details related to it in 
 
 Line Item and Campaign revenue metrics can be displayed in Transaction Currency, however all other grids and monetary metrics are displayed in USD only. Be sure to note which currency your data is being displayed in and if it's not in your Transaction Currency, use the reports (listed above) to view auction details in the your Transaction Currency.
 
-## When media cost and related fees are converted for use in billing
+## Convert media costs and related fees for billing
 
 The conversion of media costs and fees to the billing currency will be based on either daily conversion rates or a month-end conversion rate. To determine which will be used and which fees will be affected, see the following sections.
 
-### Daily conversions (depends)
+### Daily conversions (based on conditions)
 
 - **When used?:** If the Transaction Currency (currency logged at auction time) *is the same* as the Billing Currency.
 - **How applied?:** When these criteria are met, we convert from USD to the Billing Currency using the rates logged for each auction. This provides our clients with the most accurate local currency billing and reconciles with our reporting and data feeds which support local currency.
@@ -200,7 +200,7 @@ The conversion of media costs and fees to the billing currency will be based on 
     - Imp Tracker Fee
     - Click Tracker Fee
 
-### Month-end conversion (depends)
+### Month-end conversion (based on conditions)
 
 - **When used?:** If the Transaction Currency (currency logged at auction time) *is different from* the Billing Currency.
 - **How applied?:** We calculate the fee in USD and convert from USD to the desired Billing Currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.
@@ -222,7 +222,7 @@ The conversion of media costs and fees to the billing currency will be based on 
     - Imp Tracker Fee
     - Click Tracker Fee
 
-### Month-end conversion (always)
+### Month-end conversion (automatic)
 
 - **When used?:** Always (only for the fees listed in this column).
 - **How applied?:** We calculate the fee in USD and convert from USD to the desired billing currency using the month end rate. You can access this rate by asking our API Currency Service for the rate on the last day of a given month.

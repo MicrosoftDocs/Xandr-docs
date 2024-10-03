@@ -13,17 +13,17 @@ Page properties targeting allows you to target impressions based on the creative
 > - To enable or disable page property targeting for your seat, submit a Product Support ticket.
 > - As sellers provide tag position and query strings, these targeting options are typically utilized when buying direct inventory.
 
-1. In the **Targeting** section of your line item, click the pencil icon in the **Page Properties** row.
+1. In the **Targeting** section of your line item, select the pencil icon in the **Page Properties** row.
     1. The **Page Properties Targeting** dialog displays.
 1. Select checkboxes for the specific creative tag positions that you wish target (all tag positions are targeted by default):
     - **Above the Fold** - The top half of the page.
     - **Below the Fold** - The bottom half of the page.
     - **Unknown** - Undetermined location on the page.
-1. Click the toggle to enable query-string targeting (all query strings are targeted by default).
+1. Select the toggle to enable query-string targeting (all query strings are targeted by default).
     1. Choose to **Include** or **Exclude** either **all** or **any** of the query strings you wish to declare.
     1. Enter a valid query string into the text box.
-    1. Click **+Add Another String** to add additional query strings. Repeat this step as many times as necessary.
-1. Click **Save**.
+    1. Select **+Add Another String** to add additional query strings. Repeat this step as many times as necessary.
+1. Select **Save**.
 
 > [!TIP]
 > Page Properties can be set by buyers in Microsoft Invest:

@@ -2,14 +2,14 @@
 title: Show Interstitials on Android
 description: This page gives an overview on instructions and code samples for showing interstitial ads on Android.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 09/27/2024
 ---
 
 # Show interstitials on Android
 
 This page has instructions and code samples for showing interstitial ads on Android.
 
-> [!NOTE]
+<!-- > [!NOTE]
 > Interstitial Ad Views and Placement/Creative Media Types
 >
 > Most of the time, the placements used in your SDK interstitial ad views should be configured to allow the *Banner* media type. This will give you the maximum amount of demand. You may still choose the *interstitial* media type depending on the type of ad you want to show, e.g.:
@@ -18,7 +18,7 @@ This page has instructions and code samples for showing interstitial ads on Andr
 > - [Ad Ops - Set Up Static Image Full Screen Interstitials](ad-ops-set-up-static-image-full-screen-interstitials.md)
 > - [Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)](ad-ops-set-up-html-responsive-interstitials-non-mraid.md)
 >
-> Likewise, creatives that serve into interstitial views in the SDK should usually be created with the Banner media type (keeping in mind the exceptions listed above).
+> Likewise, creatives that serve into interstitial views in the SDK should usually be created with the Banner media type (keeping in mind the exceptions listed above). -->
 
 ## Overview
 
@@ -33,6 +33,14 @@ Furthermore, actually showing interstitial ads to users is a two-step process:
 > The close button appears after ten seconds by default. You can set the delay using `InterstitialAdView.setCloseButtonDelay(int closeButtonDelay)`.
 
 For more information, see the code sample below.
+
+## Creative media types supported in Interstitial Ad Unit
+
+| Media Type | Description |
+|:---|:---|
+| Banner | Recommended for most interstitial placements to maximize demand. Suitable for static or animated banners. |
+| Interstitial | Used for full-screen ads, including static images, MRAID, and HTML responsive formats.<br><ul><li>[Ad Ops - Set Up MRAID Full Screen Interstitials](ad-ops-set-up-mraid-full-screen-interstitials.md)</li><li>[Ad Ops - Set Up Static Image Full Screen Interstitials](ad-ops-set-up-static-image-full-screen-interstitials.md)</li><li> [Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)](ad-ops-set-up-html-responsive-interstitials-non-mraid.md)</li></ul> |
+| VAST Video | Supports video ads as of version 9.1.0. Ideal for serving video creatives when placement is enabled for video demand. |
 
 ## Code sample
 
@@ -114,7 +122,7 @@ public class MainActivity extends Activity implements AdListener {
 }
 ```
 
-## Using custom interstitial sizes
+## Use custom interstitial sizes
 
 By default, if you don't specify an ad size, the SDK will fetch ads in any of the sizes below that are less than or equal to the size of the device's screen.
 

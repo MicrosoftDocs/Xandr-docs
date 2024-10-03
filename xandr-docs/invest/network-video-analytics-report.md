@@ -55,7 +55,7 @@ Data in this report is retained for 420 days.
 ## Currency 2.0
 
 > [!NOTE]
-> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, click the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
+> By enabling **Currency 2.0**, you can select a currency for each individual report if you prefer not to use **USD** as the default currency. The report will show all the monetary fields in your report using the selected currency. For example, if you select **Advertiser**, select the **Currency 2.0** toggle to enable it, and select **Japanese Yen (JPY)** from the **Currency** menu, the report will show all monetary data in JPY, including data associated with child objects such as line items.
 
 ## Dimensions
 
@@ -105,7 +105,8 @@ Data in this report is retained for 420 days.
 | Code 3 | No | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 
 > [!NOTE]
->  - In addition, you can also filter on a particular number of impressions using the **Minimum Impressions** filter.
+>
+> - In addition, you can also filter on a particular number of impressions using the **Minimum Impressions** filter.
 > - The data for the video related dimensions (Video Content Duration, Video Content Genre, Video Content Language, Video Content Network, Video Content Rating, Video Delivery Type, and Video Program Type) are only available if the publisher has implemented video taxonomy.
 
 ## Metrics
@@ -200,19 +201,19 @@ Data in this report is retained for 420 days.
 | 9 | External Impression | An impression from an impression tracker. |
 | 10 | External Click | A click from a click tracker. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
    <br>Or<br>
-   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
+   From the Publishers top menu, select **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
     > [!WARNING]
@@ -234,4 +235,4 @@ Follow these steps to run your report.
 
     - **Name this report**: Give this report with its current settings a name for future reference.
 
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.

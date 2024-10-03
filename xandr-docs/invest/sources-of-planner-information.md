@@ -4,7 +4,7 @@ description: In this article, learn where Planner gets data from and what data p
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Sources of Planner information
+# Microsoft Invest - Sources of planner information
 
 Impression estimates are based on a seven-day sample of data, defined at the daily level. Planner stores seven days' worth of samples, resulting in a rolling weekly snapshot that is updated once per day.
 

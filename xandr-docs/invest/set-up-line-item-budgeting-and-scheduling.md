@@ -3,6 +3,7 @@ title: Microsoft Invest - Set Up Line Item Budgeting and Scheduling
 description: In this article, follow our step-by-step instructions to add revenue type, payment model, budget, flight, daily pacing allocation, underspend catch-up, and daypart details for the line item.
 ms.date: 10/28/2023
 ---
+
 # Microsoft Invest - Set up line item budgeting and scheduling
 
 You can add revenue type, payment model, budget, flight, daily pacing allocation, underspend catch-up, and daypart details for the line item.
@@ -39,7 +40,7 @@ To set up line item budgeting and scheduling:
     |---|---|
     | **CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand impressions. Enter the amount that the advertiser will pay you per thousand impressions in the **Revenue Value** field. |
     | **CPC** | Select this revenue type if the advertiser will pay you a flat amount per click. This option is only available if the line item's **Budget Type** is set to **Revenue**. Enter the amount that the advertiser will pay you per click in the **Revenue Value** field. |
-    | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to the Microsoft Advertising viewability measurement. Enter the amount in the **Revenue Value** field. <br><br> **Note**: If you select **Viewable CPM** (vCPM), you also have the opportunity to pay only for impressions that have been shown to be viewable. To do that, click **Outcomes** > **Guaranteed Views** under **Payment Model**. |
+    | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to the Microsoft Advertising viewability measurement. Enter the amount in the **Revenue Value** field. <br><br> **Note**: If you select **Viewable CPM** (vCPM), you also have the opportunity to pay only for impressions that have been shown to be viewable. To do that, select **Outcomes** > **Guaranteed Views** under **Payment Model**. |
     | **CPCV** | Select this revenue type if the advertiser will pay you for videos that have been viewed through completion. Enter the amount that the advertiser will pay you per completed video in the **Revenue Value** field. This setting is available under **Revenue Type** only when **Video** is selected as the **Ad Type** and **Completes** is selected as the **Payment Model**. |
 
     **Flexible Revenue** pricing models indicate that your revenue may fluctuate depending on media/cost/spend. Those options are:
@@ -68,11 +69,11 @@ To set up line item budgeting and scheduling:
 
     You can add a new flight by copying the billing period dates from the parent insertion order or by manually setting the start and end dates.
 
-    1. To copy the flight dates from the parent insertion order, click **Copy from insertion order**.
+    1. To copy the flight dates from the parent insertion order, select **Copy from insertion order**.
 
         You can still edit the copied dates and add more flights.
 
-    1. To set up flights manually, enter a start and end date. If you don't want to set an end date, click **No end date**.
+    1. To set up flights manually, enter a start and end date. If you don't want to set an end date, select **No end date**.
 
         The **No end date** option is only available if you selected the **Set budget on individual flights** for the line item and if the parent insertion order has no end date.
 
@@ -96,12 +97,12 @@ To set up line item budgeting and scheduling:
         | **Pacing percent** | This setting dictates how your flight relatively distributes and spends its allocated budget. Pacing percent values may be 50%-150%. <br> If the pacing is set to 100%, the budget is split evenly over every day in the flight. If the pacing is higher than 100%, the flight spends more per day at the beginning of the flight and less at the end. The reverse occurs if the pacing is lower than 100%. |
         | **Daily budget** | The amount of budget spent per day. <br> The budget can be currency, imps, completes, or views, depending on the budget type and payment model you selected earlier. |
 
-1. **Optional:** Click **+ Add Subflight** to create one or more subflights that you can use to further customize flight pacing and spend.
+1. **Optional:** Select **+ Add Subflight** to create one or more subflights that you can use to further customize flight pacing and spend.
 
     1. Enter a name for your subflight.
     1. Select a start and end date for your subflight.
 
-        Alternatively, you can click **Copy from flight** to copy the start and end dates of the parent flight.
+        Alternatively, you can select **Copy from flight** to copy the start and end dates of the parent flight.
 
         > [!NOTE]
         > Line items can use no more than one subflight for any given date.
@@ -135,20 +136,20 @@ To set up line item budgeting and scheduling:
     | **Evenly (default)** | Leave this button selected if you want the daily budget distributed evenly throughout the day based on the available impressions within a specific geographic area. |
     | **ASAP** | Select this button if you want to spend the budget as quickly as possible. This will allow the line item to spend as impressions become available rather than following a spend curve based on available impressions for a specific geographic area. This will also result in [Adaptive Pacing](adaptive-pacing.md) not bid shading impressions. <br><br> **Warning**: Overspend is more likely to occur when ASAP is selected. |
 
-    1. **Optional:** If desired, click **+New** to activate **Hourly Pacing Overrides**.
+    1. **Optional:** If desired, select **+New** to activate **Hourly Pacing Overrides**.
 
         Activating **Hourly Pacing Overrides** lets you override your line item's default pacing behavior to manually set hour-to-hour pacing for specific dates or days of the week.
 
-        Upon clicking **+New**, the **Create Custom Pacing Allocation Curve** dialog displays.
+        Upon selecting **+New**, the **Create Custom Pacing Allocation Curve** dialog displays.
 
-    1. Click **Select Dates** or **Select Days of Week** depending on whether you want to pace hourly for a particular date range or certain days of the week.
+    1. Select **Select Dates** or **Select Days of Week** depending on whether you want to pace hourly for a particular date range or certain days of the week.
 
     1. Drag the line graph to allocate pacing percentages for certain hours, or enter percent values into hour slots' text fields.
 
         > [!NOTE]
         > Hourly pacing percent allocations must equal 100%.
 
-    1. Click **Save**.
+    1. Select **Save**.
 
 1. Use the **Budget Overview** graph to see how your lifetime budget will be distributed across the active dates in your flight.
 

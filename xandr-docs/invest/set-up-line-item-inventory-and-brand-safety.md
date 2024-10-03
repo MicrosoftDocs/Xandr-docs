@@ -55,17 +55,17 @@ You can use the **Inventory & Brand Safety Targeting** section to specify the ty
 
     Brand safety segments are pre-defined by third-party verification vendors. These segments help apply additional quality controls to the inventory that you are targeting such as exclude drugs. They are used to limit the placements/pages you will be able to target as opposed to other kinds of segments that are used to target specific groups of users.
 
-    1. Click the pencil icon.
+    1. Select the pencil icon.
     1. Select the desired third-party verification vendor such as comScore or DoubleVerify.
 
         If you have selected **Open Exchange** as one of your supply sources and have not already applied an allowlist, you should select at least one brand safety segment. Once selected, the segments are automatically included or excluded based on their intended use.
 
         > [!NOTE]
-        > To view all of your brand safety segment selections, click **Summary**.
+        > To view all of your brand safety segment selections, select **Summary**.
 
     1. Select the checkbox for each segment that you want to apply (charges will apply).
 
-    1. Click **Save**.
+    1. Select **Save**.
 
         If you select more than one brand safety segment, a segment group will be automatically created for each one (under **Targeting** > **Segments**) and they will be ANDed together.
 

@@ -21,8 +21,11 @@ ms.date : 10/01/2024
 | **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream/Banner Video |
 | **NSString** `*adText` | "Ad" | Customizes the ad text on the video player. | Instream/Banner Video |
 | **BOOL** `showVolumeControl` | true | Controls the visibility of the mute/unmute control. | Instream/Banner Video |
-| **ANInitialAudioSetting** `initalAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state for Instream and Banner Videos. | Instream/Banner Video |
-| **BOOL** `showSkip` (Instream Video Only) | true | Controls the visibility of the Skip control for Instream Video. | Instream |
+| **ANInitialAudioSetting** `initalAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state. | Instream/Banner Video |
+| **BOOL** `showSkip` | true | Controls the visibility of the Skip control. | Instream |
+| **NSString** `*skipDescription` | "Skip in %%TIME%%s" | Customizes Skip Description. | Instream |
+| **NSString** `*skipLabelName` | "Skip ad" | Customizes Skip Label. | Instream |
+| **NSInteger** `*skipOffset` | "5 seconds" | Customizes Skip Offset. | Instream |
 
 ## Example
 

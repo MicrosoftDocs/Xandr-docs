@@ -12,17 +12,19 @@ ms.date: 10/01/2024
 
 ## 9.1.0
 
-### New feature (9.1.0)
+### New feature
 
 - 7601090: Support for VAST Video Ads in Interstitial Ad Unit.
 
-### Improvement/Bug fixes (9.1.0)
+### Improvement/Bug fixes
 
 - 7931257: ANSDKResources.bundle causing Unexpected CFBundleExecutable Key issue during AppStore upload.
 - 7905366: Warnings as Errors causes build failure in Swift.
 - 6525343: Can't import Google mediation adapter classes when using Swift Package Manager + Swift.
 - 8098254: Upgrade of the Facebook Audience Network to version 6.15.1.
 - 8082032: Addressed crash where adWillClose is required for interstitial banner.
+- 8179513: Addresses an issue with Banner Video displaying black in iOS18.
+- 8202865: Updated SmartAdServer dependency to 7.24.2.
 
 ## 9.0.0
 

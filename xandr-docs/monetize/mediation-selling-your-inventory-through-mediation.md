@@ -21,7 +21,7 @@ To start selling inventory through mediation, customers must:
 
 - Have access to the **Mediation** tab in the Monetize Ad Server account. Contact Microsoft Advertising if this is not already enabled.
 - Add the relevant partners [as networks](mediation-networks.md).
-- [Create Bids](mediation-bids) representing demand from the Networks.
+- [Create Bids](mediation-bids.md) representing demand from the Networks.
 
 ### How mediation works
 

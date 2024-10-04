@@ -1,24 +1,26 @@
 ---
 title: Creative Custom Request Template Service
 description: In this article, learn about the Creative Custom Request Template service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/28/2023
+ms.date: 10/04/2024
 ms.custom: digital-platform-api
 ---
 
 # Creative Custom Request Template service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients and Microsoft employees only.
+> Mediation is only available to Microsoft Monetize Ad Server customers.
 
-To support mobile ad server mediation, Xandr uses a mediated creative type. Unlike standard creatives, which reside as static content on a server, mediated creatives are configurable containers that fetch server side content. The Creative Custom Request Template Service is used to build the requests that populate these mediated creatives. It does this by managing a set of custom templates, each of which will correspond to a different ad server, and which is associated with a template "type" defined by the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md).
+For context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
+
+Mediation partners, also known as custom request partners, can be identified and defined through the [Creative Custom Request Partner Service](creative-custom-request-partner-service.md). These partners are assigned to customer-specific Networks via the [UI](../monetize/mediation-networks.md) or [Mediated Network Service](mediated-network-service.md).
+
+To support mobile ad server mediation, Monetize uses a mediated creative type. Unlike standard creatives, which reside as static content on a server, mediated creatives are configurable containers that fetch server-side content. The Creative Custom Request Template Service is used to build the requests that populate these mediated creatives. The service does this by managing a set of custom templates, each of which corresponds to a different creative custom request partner, and which is associated with a template "type" defined by the [Creative Custom Request Template Type Service](./creative-custom-request-template-type-service.md).
 
 This document describes the fields made available by this API service, as well as providing usage examples. See the [Examples](#examples) section below.
 
 > [!NOTE]
 >
-> - For more information about mediated creatives, see the [Creative Service](creative-service.md).
->
-> - For a list of supported query string parameters and macros, see [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md).
+> For more information about mediated creatives, see the [Creative Service](creative-service.md).
 
 ## REST API
 
@@ -37,35 +39,40 @@ This document describes the fields made available by this API service, as well a
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
+| `GET`  | [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | View all custom request templates available to the member. |
+| `GET` | - [https://api.appnexus.com/creative-custom-request-template?member_id=0](https://api.appnexus.com/creative-custom-request-template?member_id=0)<br> - [https://api.appnexus.com/creative-custom-request-template?member_id=MEMBER_ID](https://api.appnexus.com/creative-custom-request-template?member_id=MEMBER_ID) | View available fields to filter and sort. |
+| `GET` |  [https://api.appnexus.com/creative-custom-request-template/meta](https://api.appnexus.com/creative-custom-request-template/meta) | Find out which fields you can filter and sort by. |
 | `POST` |  [https://api.appnexus.com/creative-custom-request-template](https://api.appnexus.com/creative-custom-request-template) | Create a custom request template. |
-| `GET`  | [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | View a specific custom request template. |
-| `GET` | - [https://api.appnexus.com/creative-custom-request-template?member_id=0](https://api.appnexus.com/creative-custom-request-template?member_id=0)<br> - [https://api.appnexus.com/creative-custom-request-template?member_id=YOUR_MEMBER_ID](https://api.appnexus.com/creative-custom-request-template?member_id=YOUR_MEMBER_ID) | View all of the custom request templates you have permission to view. |
 | `PUT` |  [https://api.appnexus.com/creative-custom-request-template](https://api.appnexus.com/creative-custom-request-template) | Update a custom request template. |
 | `DELETE` |  [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | Delete a custom request template. |
-| `GET` |  [https://api.appnexus.com/creative-custom-request-template/meta](https://api.appnexus.com/creative-custom-request-template/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
-| Name | Type | Description |
+| Field | Type | Description |
 |:---|:---|:---|
 | `macros` | array of objects | These are the macros (or query string parameters) that will be sent on the request. See [Macros](#macros).<br>**Sort by:** No<br>**Filter by:** No |
 | `id` | int | The ID of this template.<br>**Required On:** `PUT`  <br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `type_id` | int | The ID of the [Creative Custom Request Template Type](creative-custom-request-template-type-service.md) associated with this template.<br>**Default:** `null` <br>**Required On:** `POST` <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `type_id` | int | The ID from the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md).<br>**Default:** `null` <br>**Required On:** `POST` <br>**Sort by:** Yes<br>**Filter by:** Yes |
 | `member_id` | int | The member ID whose mediation creatives will be associated with this template. For more information see the [Creative Service](creative-service.md) and the [Member Service](member-service.md).<br>**Default:** `0` <br>**Sort by:** Yes<br>**Filter by:** Yes |
 | `media_subtype_id` | int | The media subtype ID for this template. Derived from the [Media Subtype](#media-subtype) object below.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `hostname` | string | The hostname of the ad server we're building a mediation request for.<br>**Default:** `null`<br>**Required On:** `POST` <br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `uri` | string | The full URI of the external ad server to which we'll send our request.<br>**Default:** `null`<br>**Required On:** `POST`, `PUT` if `is_client` is `false`. <br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `port` | int | The port on the external ad server to which we'll send our request.<br>**Default:** `80`<br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `is_post` | Boolean | Whether the HTTP request we're making is a `POST`.<br>**Default:** `false`<br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `content` | string | The content payload we're sending with the request. For example, this may be a string of JSON or XML.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `timeout_ms` | int | The timeout supported by that ad server (Or the timeout we're going to impose on waiting for that ad server).<br>**Default:** `0`<br>**Sort by:** Yes<br>**Filter by:** Yes |
-| `is_client` | Boolean | Whether the request is originating from an HTTP client (for example, an SDK).<br>**Default:** `false`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `hostname` | string | The mediation partner host to be called for demand.<br>**Default:** `null`<br>**Required On:** `POST` <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `uri` | string | The mediation partner host endpoint to be called for demand.<br>**Default:** `null`<br>**Required On:** `POST`, `PUT` if `is_client` is `false`. <br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `port` | int | The mediation partner host port to be called for demand.<br>**Default:** `80`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `is_post` | Boolean | Whether the request for demand is a `POST`.<br>**Default:** `false`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `content` | string | The payload included in the request. Examples: JSON, XML.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `timeout_ms` | int | The timeout either given by the partner or to be enforced by Microsoft Monetize.<br>**Default:** `0`<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `is_client` | Boolean | Whether the request originates from the client-side. Example: An SDK.<br>**Default:** `false`<br>**Sort by:** Yes<br>**Filter by:** Yes |
 | `media_subtype` | array | The display style of creatives that can use this template. Each media subtype belongs to a superordinate media type. For example, the "Standard Banner" media subtype belongs to the "Banner" media type. For more details, see [Media Subtype](#media-subtype) below.<br>**Sort by:** No<br>**Filter by:** No |
 | `last_modified` | date | The date and time at which this object was last updated.<br>**Sort by:** Yes<br>**Filter by:** Yes |
+| `integration_type` | string | The type of integration with the mediation partner. Examples: SDK, Server-side, Sync-web-client. |
+| `creative_custom_request_partner_id` | int | The ID of the mediation partner. For more information, see [Creative Custom Request Partner Service](creative-custom-request-partner-service.md). |
+| `active` | boolean | Whether the template is available for use. |
+| `supply_types` | array | The type of demand available from the mediation partner (`web`, `mobile_web`, `mobile_app`). |
+| `passback` | object | If no acceptable bid is received for a request, this `passback` can be added to the ad tag to allow the next system in line to bid. Add the Network's passback, listed here, to an ad tag to use this option. |
 
 ## Macros
 
-| Name | Type | Description |
+| Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of this macro.<br>**Default:** `null` <br>**Sort by:** Yes<br>**Filter by:** Yes |
 | `template_id` | int | The Creative Custom Request Template this macro is associated with.<br>**Default:** `null`<br>**Sort by:** Yes<br>**Filter by:** Yes |
@@ -77,7 +84,7 @@ This document describes the fields made available by this API service, as well a
 
 ### Media subtype
 
-You can use the [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md) to view all supported media subtypes and the media types to which they belong. For a general definition of each supported media type, see [Supported Media Types](media-type-service.md).
+All available options can be viewed in the [Media Subtype Service](media-subtype-service.md) and [Media Type Service](media-type-service.md).
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -88,9 +95,9 @@ You can use the [Media Subtype Service](media-subtype-service.md) and [Media Typ
 
 ## Examples
 
-### View all creative request templates (that you have permissions to view)
+### View all creative request templates
 
-In the example below, note the difference between how standard Xandr macros are displayed in the `uri` field, e.g., `* $\{USER_IP\}` and how the custom macros defined on a per-ad-server basis by this service are displayed: `* \#\{MK_SITEID\}`. You can see definitions for each macro in the `macros` array of objects below. You will only be able to view request templates belonging to your own member ID or public templates belonging to member ID `0`.
+In the example below, note the difference between how standard Microsoft Monetize macros are displayed in the `uri` field, e.g., `* $\{USER_IP\}` and how the custom macros defined on a per-ad-server basis by this service are displayed: `* \#\{MK_SITEID\}`. Definitions for each macro are in the macros array of objects below.
 
 ```
 
@@ -327,12 +334,12 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template?id=2
 
 ### Create a request template
 
-Create a JSON file specifying the fields of your request template.
+Create a JSON file specifying the fields of the request template.
 
 > [!NOTE]
 > The `type_id` field is required on `POST`.
 
-For more information about the request template types, see the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md). For documentation of the ad request parameters and macros we support for integration with external mobile ad servers, see [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md).
+For more information about the request template types, see the [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md).
 
 ```
 {code}
@@ -405,7 +412,7 @@ $ curl -b cookies -X POST -d @create.json https://api.appnexus.com/creative-cust
 
 ### Update a request template
 
-First, create a JSON file with only those parameters you'd like to update.
+First, create a JSON file with only the parameters to be updated.
 
 > [!NOTE]
 > You must include the `id` of the request template being updated.
@@ -419,6 +426,12 @@ $ cat update.json
 
 Make the `PUT` call, including the JSON update.
 
+A successful `PUT` call requires:
+
+- Specifying the ID of the request template in the JSON file.
+- Not adding any query string parameters (like `?id=123`) to the request (see example below).
+
+<!-- 
 > [!NOTE]
 > In order to make a successful `PUT` call, you must do the following:
 >
@@ -432,11 +445,11 @@ $ curl -b cookies -X PUT -d @update.json https://api.appnexus.com/creative-custo
 ```
 
 > [!NOTE]
-> A successful `PUT` call will not return any JSON response.
+> A successful `PUT` call will not return any JSON response. -->
 
 ### Delete a request template
 
-Deleting a request template is straightforward unlike the `PUT` call above, you will need to specify the ID of the template you want to delete.
+Deleting a request simply requires the template ID in the query string.
 
 ```
 {code}
@@ -446,5 +459,7 @@ $ curl -b cookies -X DELETE https://api.appnexus.com/creative-custom-request-tem
 
 ## Related topics
 
+- [Mediated Bid Service](mediated-bid-service.md)
+- [Mediated Network Service](mediated-network-service.md)
+- [Creative Custom Request Partner Service](./creative-custom-request-partner-service.md)
 - [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md)
-- [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md)

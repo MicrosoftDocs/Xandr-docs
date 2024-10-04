@@ -39,9 +39,9 @@ This document describes the fields made available by this API service, as well a
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET`  | [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | View all custom request templates available to the member. |
-| `GET` | - [https://api.appnexus.com/creative-custom-request-template?member_id=0](https://api.appnexus.com/creative-custom-request-template?member_id=0)<br> - [https://api.appnexus.com/creative-custom-request-template?member_id=MEMBER_ID](https://api.appnexus.com/creative-custom-request-template?member_id=MEMBER_ID) | View available fields to filter and sort. |
-| `GET` |  [https://api.appnexus.com/creative-custom-request-template/meta](https://api.appnexus.com/creative-custom-request-template/meta) | Find out which fields you can filter and sort by. |
+| `GET`  | [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | View a specific custom request template. |
+| `GET` | - [https://api.appnexus.com/creative-custom-request-template?member_id=0](https://api.appnexus.com/creative-custom-request-template?member_id=0)<br> - [https://api.appnexus.com/creative-custom-request-template?member_id=MEMBER_ID](https://api.appnexus.com/creative-custom-request-template?member_id=MEMBER_ID) | View all custom request templates available to the member. |
+| `GET` |  [https://api.appnexus.com/creative-custom-request-template/meta](https://api.appnexus.com/creative-custom-request-template/meta) | View available fields to filter and sort. |
 | `POST` |  [https://api.appnexus.com/creative-custom-request-template](https://api.appnexus.com/creative-custom-request-template) | Create a custom request template. |
 | `PUT` |  [https://api.appnexus.com/creative-custom-request-template](https://api.appnexus.com/creative-custom-request-template) | Update a custom request template. |
 | `DELETE` |  [https://api.appnexus.com/creative-custom-request-template?id=123](https://api.appnexus.com/creative-custom-request-template?id=123) | Delete a custom request template. |
@@ -463,3 +463,5 @@ $ curl -b cookies -X DELETE https://api.appnexus.com/creative-custom-request-tem
 - [Mediated Network Service](mediated-network-service.md)
 - [Creative Custom Request Partner Service](./creative-custom-request-partner-service.md)
 - [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md)
+- [Creative Template Service](creative-template-service.md)
+- [Creative Service](creative-service.md)

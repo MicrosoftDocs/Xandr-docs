@@ -1,6 +1,6 @@
 ---
 title: Selling Your Inventory Through Mediation
-description: This page explains how mediation works, and walks you through the process of using our system to set up mediation with external ad networks. 
+description: Learn how mediation works, and walks you through the process of using our system to set up mediation with external ad networks. 
 ms.date: 10/28/2023
 ---
 
@@ -8,45 +8,38 @@ ms.date: 10/28/2023
 # Selling your inventory through mediation
 
 > [!NOTE]
-> Mediation is available only to Microsoft Monetize Ad Server customers.
+> Mediation is only available to Microsoft Monetize Ad Server customers.
 
-Mediation is a process by which you allocate inventory to buyers that are not directly integrated with our exchange. This is necessary in order to get access to certain demand sources (mobile ad networks in particular). We help you manage your mediation efforts by providing the following features:
+## Microsoft Monetize ad server mediation
 
-- See the performance of all of the networks you work with in one place
-- Built-in support for integrating with popular networks
-- Support for custom network integrations
+Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](prebid-server-premium.md) to compete for publisher inventory. Both known partners, such as Google, and custom networks are supported.
 
-This page explains how mediation works and walks you through the process of using our system to set up mediation with external ad networks. The focus is on networks we support, but you can create custom networks to perform any kind of integration you want.
+This page explains how mediation works and guides you through setting up mediation with external ad networks using Monetize.
 
-## Getting started
+### Getting started
 
-To start selling your inventory through mediation, you must:
+To start selling inventory through mediation, customers must:
 
-1. Have the **Mediation** tab enabled for your Microsoft Advertising Monetize Ad Server account. You'll need to contact your Microsoft Advertising representative.
-1. From the list of supported networks in the **Mediation** tab, add the networks for which you have accounts. For instructions, see [Mediation Networks](mediation-networks.md).
-1. Once you've created your networks, switch to the bids page and begin creating bids. For instructions, see [Mediation Bids](mediation-bids.md).
-1. Activate your bids to start selling.
+- Have access to the **Mediation** tab in the Monetize Ad Server account. Contact Microsoft Advertising if this is not already enabled.
+- Add the relevant partners as **Networks**.
+- Create **Bids** representing demand from the Networks.
 
-## How mediation works
+### How mediation works
 
-At a high level, here's how mediation works:
+The high-level mediation workflow is as follows:
 
-1. You [Mediation Networks](mediation-networks.md) to our system that represents a mediated ad network.
-1. You [Mediation Bids](mediation-bids.md) which is used to rank that network in auctions for your inventory. The bid should represent the amount you think the network is likely to pay for your inventory.
-1. The auction is run, with the bid price you set used to rank the mediated bid against other bids coming in from the exchange in real-time.
-1. The mediated network either returns an ad or not. If no ad is returned or the network does not respond in time, we move on to the next highest bid in the auction.
+1. Publisher sends a bid request to Monetize.
+1. Monetize evaluates the bid request against mediated Bids to determine eligibility based on the Bid’s targeting.
+1. Monetize Ad Server runs the auction for the impression, ranking bids from marketplace bidders and mediated Bids. Mediated Bids use a fixed CPM entered by the publisher, representing the amount they expect the Network to pay.
+1. If a mediated Bid wins the auction, `mediation.js` is loaded on the page, which calls the Ad Tag previously entered by the publisher.
+1. If the Mediated Network partner bids, the ad is rendered. If they do not bid in time, the next highest bid from the Monetize auction is used.
 
-Because the mediated networks are not connected directly to the exchange, they are not submitting bids in real time. Therefore it's very important for the bids you create to be kept as accurate and up-to-date as possible. Otherwise, an inaccurate mediated bid could win auctions over other, higher bids that would make you more money.
-
-To illustrate this point, the diagram below represents an auction with three bids. The top bid (marked in green) is a mediated bid for $2.00 from a network called CoolAds. Because the CoolAds bid is higher than the other bids coming in, it wins the auction. However, CoolAds may not actually be paying you $2.00, and you won't find out until well after the auction when you check the daily totals from the CoolAds servers.
+For more detailed examples of the request and response process, refer to [Integrating for Mediation](mediation-integrating-for-mediation.md).
 
 > [!NOTE]
-> For more information about how mediated bids interact with the other demand types in auctions, see [How Auctions Work for Sellers](mediation-how-auctions-work-for-sellers.md).
-
-:::image type="content" source="media/ssp-auction-example-a.png" alt-text="Screenshot of an auction with three bids.":::
+> Information the user should notice even if skimming Mediated Networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real-time. Publishers must regularly review reports from each Network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
 
 ## Related topics
 
-- [How Auctions Work for Sellers](mediation-how-auctions-work-for-sellers.md)
 - [Integrating for Mediation](mediation-integrating-for-mediation.md)
-- [Mediation FAQs](mediation-faqs.md)
+- [Mediation services](../digital-platform-api/mediation-services.md)

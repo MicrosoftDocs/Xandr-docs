@@ -4,13 +4,12 @@ description: Learn how mediation works, and walks you through the process of usi
 ms.date: 10/28/2023
 ---
 
-
 # Selling your inventory through mediation
 
 > [!NOTE]
 > Mediation is only available to Microsoft Monetize Ad Server customers.
 
-## Microsoft Monetize ad server mediation
+## Microsoft Monetize Ad Server mediation
 
 Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](prebid-server-premium.md) to compete for publisher inventory. Both known partners, such as Google, and custom networks are supported.
 
@@ -37,7 +36,7 @@ The high-level mediation workflow is as follows:
 For more detailed examples of the request and response process, refer to [Integrating for Mediation](mediation-integrating-for-mediation.md).
 
 > [!NOTE]
-> Information the user should notice even if skimming Mediated Networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real-time. Publishers must regularly review reports from each Network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
+> Mediated Networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real-time. Publishers must regularly review reports from each Network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
 
 ## Related topics
 

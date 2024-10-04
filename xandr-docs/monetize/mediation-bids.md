@@ -15,7 +15,7 @@ Once a [network is created](mediation-networks.md), mediated bids must be set up
 - Which publisher bid requests to Monetize are relevant to the network
 - Which ad tags to use to call the network
 
-Each bid includes a publisher-defined CPM, which is the amount the network partner is likely to pay for the inventory. For more information about how mediation works, see [Selling Your Inventory through Mediation](mediation-selling-your-inventory-through-mediation).
+Each bid includes a publisher-defined CPM, which is the amount the network partner is likely to pay for the inventory. For more information about how mediation works, see [Selling Your Inventory through Mediation](mediation-selling-your-inventory-through-mediation.md).
 
 Setup is also required in each network's platform, as covered in [Integrating for Mediation](mediation-integrating-for-mediation.md).
 

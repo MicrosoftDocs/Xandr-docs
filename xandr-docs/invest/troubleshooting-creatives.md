@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Troubleshooting Creatives
+title: Microsoft Invest - Troubleshoot Creatives
 description: In this article, learn how to troubleshoot your creatives and analyze error messages, types, descriptions, and resolutions in detail.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Troubleshooting creatives
+# Microsoft Invest - Troubleshoot creatives
 
 > [!NOTE]
 > This feature is part of a functionality that is presently in Open Beta. It is currently under development and may be subjected to change without notice. Contact your Microsoft Advertising Account Representative to get it enabled.
@@ -13,12 +13,12 @@ The Troubleshooting tab on the **Creative Manager** window provides troubleshoot
 
 To access the **Troubleshooting Tab**:
 
-1. Navigate to the **Creative Manager** pane by clicking on **Creative &gt; Creatives**.
+1. Navigate to the **Creative Manager** pane by selecting **Creative &gt; Creatives**.
 1. Select an advertiser.
 1. Select the appropriate creative for which you need to view the troubleshooting information. This will open up the **details** panel.
-1. Click on the **Troubleshooting Tab** on the **details** panel to view the troubleshooting information under the **Creative Setup Analysis** pane.
+1. Select the **Troubleshooting Tab** on the **details** panel to view the troubleshooting information under the **Creative Setup Analysis** pane.
 
-## Troubleshooting tab - Creative set up analysis
+## Creative set up analysis (Troubleshooting tab)
 
 ### Errors
 

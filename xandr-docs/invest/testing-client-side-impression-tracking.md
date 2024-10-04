@@ -1,14 +1,14 @@
 ---
-title: Microsoft Invest - Testing Client-Side Impression Tracking
+title: Microsoft Invest - Test Client-Side Impression Tracking
 description: Learn the detailed steps and best practices to ensure accurate and reliable client-side impression tracking in your campaigns.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Testing client-side impression tracking
+# Microsoft Invest - Test client-side impression tracking
 
 Microsoft Advertising only allows impressions to be counted client-side for requests generated through the **/ssmob** call.
 
-## How was this implemented?
+## Implementation approach
 
 Microsoft Advertising appends an impression tracking pixel to the ad response.
 
@@ -42,7 +42,7 @@ An example of a response with client side impression tracking enabled and levera
 { "status": "ok", "ads": \[ { "type": "banner", "width": 320, "height": 50, "content": "<script type=\"text/javascript\">document.write('<a href=\"https://nym1.mobile.adnxs.com/click?exSuR-F6hD97FK5H4XqEPwAAAAAAAPA_exSuR-F6hD97FK5H4XqEPyw0QojXijsK2dvE52vmRVQKSn9UAAAAAAk0NQBkCgAAZAoAAAIAAABqyBkBQAcHABIAAQBVU0QAVVNEAEABMgA1eQAA5fEBBQMCAQIAAJIAZCGhmgAAAAA./cnd=%21YAbKPAiVxtsCEOqQ5wgYwI4cIAQ./referrer=https%3A%2F%2Fapps.mobile.adnxs.com/clickenc=https%3A%2F%2Fwww.appnexus.com%2F\" target=\"_blank\"><img width=\"320\" height=\"50\" style=\"border-style: none\" src=\"https://cdn.adnxs.com/p/bf/7c/a2/50/bf7ca2500111608c8eeead50b3738d2a.jpg\"/></a>');document.write('<scr' + 'ipt src=\"https://cdn.adnxs.com/ANX_async_usersync.js\"></scr'+'ipt>');</script>",", "imptracker": "https://nym1.mobile.adnxs.com/it?e=wqT\_3QLlAajcAAAAAgDWAAUIsr79owUQjNaPqOv\_1Y9xGPKMvdDzgfK3eyABKi0JAAAABQIAEQUGDAAAABkBBRAAAPA\_IQkJCAAAKREJ8JAwjYzuATjkFEDlAUgCUIGipAFY2YEhYBVotfIBcAB4AIABAZIBA1VTRJgBwAKgATKoAQGwAQC4AQXAAQHIAQDQAQDYAQDgAQDwAQDYAgDgAvTyGeoCHGh0dHA6Ly9hcHBzLm1vYmlsZS5hZG54cy5jb22AAwCIAwGQAwCYAxagAwGqAwCwAwC4AwDAA5AcyAMA&dlo=1&referrer=https%3A%2F%2Fapps.mobile.adnxs.com" } \] } 
 ```
 
-## What steps do I need to take?
+## Steps to follow
 
 Ask your publishers if they are **parsing** the ad response. If the answer is **no**, there is no further action required.
 
@@ -50,7 +50,7 @@ If the answer is **yes,** then you must append the parameter **&tmpl_id=21** to 
 
 Additionally, if the publisher is parsing, it is critical that you **test** the **Separate Field** option prior to the breaking change. By testing, you can ensure that your publisher does not experience any issues in recording transacted impressions.
 
-## What is parsing and why do I care?
+## Parsing and its importance
 
 Parsing is an action taken by the publisher's server that divides out the response provided by Microsoft Advertising into different pieces prior to delivering the content.
 
@@ -58,7 +58,7 @@ For example, a publisher may separate out the creative image and landing page fr
 
 It has been found that most publishers that parse can **not** support a response where the pixel is appended to the end of the "content" field (Default Implementation). This occurs because the publisher parses the "content" and drops the impression tracking pixel. This results in impression volumes dropping to zero within Microsoft Advertising.
 
-## How do I test?
+## Test instructions
 
 In order to test the client-side impression tracking functionality, you simply need to append the parameter **&cs=1** to the **/ssmob** tag.
 
@@ -68,9 +68,9 @@ Example Tag to Test with **Separate Field** Option:
 https://mobile.adnxs.com/ssmob?id=12345&size=320x50&cs=1&tmpl_id=21&format=json 
 ```
 
-## Can I test even if my publisher doesn't parse?
+## Verify testing without parsing a publisher
 
-Absolutely, and it is definitely encouraged, publishers do not experience any issues at scale prior to the full launch of the client side impression tracking functionality.
+You can definitely test even if a publisher doesn't parse, and it is highly encouraged to ensure that publishers do not face any issues at scale prior to the full launch of the client side impression tracking functionality.
 
 Example Tag to Test with **Default** Option:
 
@@ -78,7 +78,7 @@ Example Tag to Test with **Default** Option:
 https://mobile.adnxs.com/ssmob?id=12345&size=320x50&cs=1 
 ```
 
-## How will I know if the test was successful?
+## Define success metrics for the test
 
 You and your publisher will count the same number of impressions delivered.
 

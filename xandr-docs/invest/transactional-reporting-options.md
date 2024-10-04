@@ -18,7 +18,7 @@ The reporting options described here have different levels of resource requireme
 
 The table below provides an overview of the transactional reporting options we offer. It also lists features, resource requirements, and has links to detailed documentation.
 
-For more information about each option, click its name in the **Option** column.
+For more information about each option, select its name in the **Option** column.
 
 | Option | Documentation | Resource Level | Requirements | Features |
 |:---|:---|:---|:---|:---|

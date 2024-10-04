@@ -404,7 +404,7 @@
         href: mobile-ad-call-reference.md
       - name: Mobile Carrier Codes
         href: mobile-carrier-codes.md
-      - name: Testing Client-Side Impression Tracking
+      - name: Test Client-Side Impression Tracking
         href: testing-client-side-impression-tracking.md
     - name: A Comparison of Mobile App vs. Web
       href: a-comparison-of-mobile-vs-web.md
@@ -446,7 +446,7 @@
       href: video-creative-best-practices.md
     - name: Upload a Hosted Video Creative
       href: upload-a-hosted-video-creative.md
-    - name: Troubleshooting VAST Creative Display Issues
+    - name: Troubleshoot VAST Creative Display Issues
       href: troubleshooting-vast-creative-display-issues.md
     - name: VAST Check
       href: vast-check.md
@@ -752,7 +752,7 @@
       href: auto-macro-insertion.md
     - name: Supported Creative Macros
       href: supported-creative-macros.md
-  - name: Troubleshooting Creatives
+  - name: Troubleshoot Creatives
     href: troubleshooting-creatives.md
   - name: Creative FAQ
     href: creative-faq.md
@@ -778,7 +778,7 @@
       href: control-your-deals-with-sellers.md
     - name: Buy-Side Reporting on Deals
       href: buy-side-reporting-on-deals.md
-  - name: Understanding Bid Rejections
+  - name: Understand Bid Rejections
     href: understanding-bid-rejections.md
 - name: Viewability
   items:
@@ -816,7 +816,7 @@
       href: how-guaranteed-outcomes-work.md
     - name: Guaranteed Outcomes Auction Mechanics
       href: guaranteed-outcomes-auction-mechanics.md
-    - name: Understanding Payment Conversion Rates
+    - name: Understand Payment Conversion Rates
       href: understanding-payment-conversion-rates.md
     - name: Guaranteed Outcomes Results Over Time (Examples)
       href: guaranteed-outcomes-results-over-time-examples.md
@@ -830,7 +830,7 @@
       href: reporting-on-guaranteed-outcomes.md
     - name: Understanding Viewability Rates for Guaranteed Views
       href: understanding-viewability-rates-for-guaranteed-views.md
-    - name: Understanding Billing and Costs for Guaranteed Outcomes
+    - name: Understand Billing and Costs for Guaranteed Outcomes
       href: understanding-billing-and-costs-for-guaranteed-outcomes.md
     - name: Analyze CTR and Conversion Rate for Guaranteed Outcomes
       href: analyzing-ctr-and-conversion-rate-for-guaranteed-outcomes.md
@@ -876,7 +876,7 @@
       href: reconciling-your-seller-statement-with-reporting.md
     - name: Getting Paid
       href: getting-paid-by-xandr.md
-  - name: Understanding Invalid Traffic
+  - name: Understand Invalid Traffic
     href: understanding-invalid-traffic.md
   - name: Foreign Exchange Margin
     href: foreign-exchange-margin.md

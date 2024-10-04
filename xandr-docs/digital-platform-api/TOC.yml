@@ -567,6 +567,8 @@
         href: mediated-network-service.md
       - name: Mediated Bid Service
         href: mediated-bid-service.md
+      - name: Creative Custom Request Partner Service
+        href: creative-custom-request-partner-service.md
     - name: Native Layout Service
       href: native-layout-service.md
     - name: Package Service

@@ -12,9 +12,7 @@ This section describes the Xandr mediation APIs.
 > [!NOTE]
 > Mediation is only available to Microsoft Monetize Ad Server customers.
 
-Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](../monetize/prebid-server-premium.md) to compete for publisher inventory. Both known partners, such as Google, as well as custom networks are supported.
-
-For context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
+ Microsoft Monetize Ad Server mediation enables demand from sources that aren't integrated with the Monetize exchange or [Prebid Server Premium](../monetize/prebid-server-premium.md) to compete for publisher inventory. This includes both established partners like Google and custom networks. For additional information on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
 
 To get started with mediation using API services, see:
 

@@ -10,7 +10,7 @@ ms.date: 10/28/2023
 > [!NOTE]
 > Mediation is available only to Microsoft Monetize Ad Server customers.
 
-Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or Prebid Server Premium to compete for publisher inventory. Both known partners, such as Google, as well as custom networks are supported.
+Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](prebid-server-premium) to compete for publisher inventory. Both known partners, such as Google, as well as custom networks are supported.
 
 To call each partner for demand, they must first be created as Networks within the Monetize account.
 
@@ -31,9 +31,14 @@ To create a Network:
 
 Setup is also required in each Network’s platform, as covered in Integrating for Mediation.
 
+### Reporting
+
+In Monetize reports, Mediated Networks appear as Advertisers, and Bids are displayed as Line Items (both as filters and dimensions).
+
 ## Related topics
 
 - [Selling Your Inventory through Mediation](mediation-selling-your-inventory-through-mediation.md)
 - [Integrating for Mediation](mediation-integrating-for-mediation.md)
 - [Mediation Bids](mediation-bids.md)
-- [Mediated Network Service](mediated-network-service.md)
+- [Mediated Network Service](../digital-platform-api/mediated-network-service.md)
+  

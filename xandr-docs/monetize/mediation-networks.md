@@ -14,7 +14,7 @@ Microsoft Monetize Ad Server mediation allows demand from sources not integrated
 
 To call each partner for demand, they must first be created as Networks within the Monetize account.
 
-To create a Network:
+To create a network:
 
 1. From the Monetize navigation menu, select **Mediation > Networks**. This will load the **Ad Networks overview** screen.
 2. Click the **New** button to open the **Add a Network** dialog.

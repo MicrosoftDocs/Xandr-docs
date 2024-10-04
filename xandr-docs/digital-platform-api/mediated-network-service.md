@@ -8,20 +8,22 @@ ms.custom: digital-platform-api
 # Mediated Network service
 
 > [!NOTE]
-> Only available to Microsoft Monetize Ad Server customers.
+> Mediation is only available to Microsoft Monetize Ad Server customers.
 
-This service is used to create and maintain mediated networks. Use this service to define your integration with an external network.
+Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](../monetize/prebid-server-premium) to compete for publisher inventory. Both known partners, such as Google, as well as custom networks are supported. To call each partner for demand, they must first be created as networks [via the Monetize UI](../monetize/mediation-networks) or the Mediated Network service detailed below. It is recommended to use no more than 3 or 4 networks in the waterfall for a given impression. Using more networks increases ad serving latency and adversely impacts user experience. For more context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation).
+
+Setup is also required in each Network’s platform, as covered in [Integrating for Mediation](../monetize/mediation-integrating-for-mediation). [Monetize reports](../monetize/reporting-guide) include Mediated Networks as Advertisers and Bids as Line Items (both filters and dimensions).
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
-| `POST` | `https://api.appnexus.com/mediated-network` <br>(+ JSON payload) | Add a new mediated network |
-| `PUT` | `https://api.appnexus.com/mediated-network?id=ID` <br>(+ JSON payload) | Modify a mediated network |
 | `GET` | `https://api.appnexus.com/mediated-network` | View all mediated networks |
-| `GET` | `https://api.appnexus.com/mediated-network?id=ID` | View a specific mediated network |
-| `DELETE` | `https://api.appnexus.com/mediated-network?id=ID` | Delete a mediated network |
-| `GET` | `https://api.appnexus.com/mediated-network/meta` | Find out which fields you can filter and sort by |
+| `GET` | `https://api.appnexus.com/mediated-network?id=NETWORK_ID` | View a specific mediated network |
+| `GET` | `https://api.appnexus.com/mediated-network/meta` | Retrieve available fields to filter and sort |
+| `POST` | `https://api.appnexus.com/mediated-network` | Add a new mediated network |
+| `PUT` | `https://api.appnexus.com/mediated-network?id=NETWORK_ID` | Modify a mediated network |
+| `DELETE` | `https://api.appnexus.com/mediated-network?id=NETWORK_ID` | Delete a mediated network |
 
 ## JSON fields
 
@@ -29,16 +31,13 @@ This service is used to create and maintain mediated networks. Use this service 
 |:---|:---|:---|
 | `id` | int | The system-generated unique ID for this network.<br><br>**Required On**: `PUT` |
 | `name` | string | The name of the network, as supplied by the user.<br><br>**Required On**: `POST` |
-| `credentials` | string | **Read-only**. A system-generated unique value that securely identifies the network. Credentials are encrypted after a `POST` or `PUT` and cannot be decrypted. |
 | `advertiser_id` | int | **Read-only**. The unique, system-generated ID of the advertiser associated with this mediated network. |
-| `member_id` | int | **Read-only**. Every advertiser object in our system is associated with a parent [member](./member-service.md). The unique, system-generated ID of the member to which the advertiser described by `advertiser_id` belongs. (And by extension, this mediated network as well.) |
-| `active` | boolean | Active mediation networks target and purchase media in auctions.<br><br>**Default**: `false` |
-| `is_data_integration_active` | boolean | Whether reporting data is currently being pulled from this network's systems into ours.<br><br>**Default**: `false` |
-| `creative_custom_request_partner_id` | int | The *Creative Custom Request Partner* this mediated network is associated with.<br><br>**Required On**: `POST` |
+| `member_id` | int | **Read-only**. Every Monetize advertiser object is associated with a parent [member](./member-service). The unique, system-generated ID of the member to which the advertiser and network described by `advertiser_id` belongs. |
+| `active` | boolean | Controls whether bids in this network request demand from the partner.<br><br>**Default**: `false` |
+| `creative_custom_request_partner_id` | int | The partner platform the network is associated with. See creative [custom request partner service](./creative-custom-request-partner-service) for more information.<br><br>**Required On**: `POST`|
 | `default_bid_currency` | string | The currency to be used for bids from this network.<br><br>**Default**: `USD` |
-| `processed_on` | date | **Read-only**. The date and time at which this mediated network's associated line item was updated with metrics (revenue, imps, clicks) pulled from the external network's reporting system. |
 | `last_modified` | date | **Read-only**. The date and time at which the mediated network object was last modified. |
-| `network_type` | string | The type of mediated network this is. Allowed values:<br>- `mobile`: This network is focused on purchasing mobile (in-app?) inventory.<br> - `banner`: This network is focused on purchasing web inventory.<br><br>**Default**: `mobile` |
+| `network_type` | string | The type of mediated network. Allowed values:<br>- `mobile`: The network is focused on purchasing mobile inventory.<br> - `banner`: The network is focused on purchasing web inventory.<br><br>**Default**: `mobile` |
 
 ## Examples
 
@@ -65,14 +64,11 @@ $ curl -b cookies -c cookies -X POST -d @add-network.json 'https://api.appnexus.
         "mediated-network":{
             "id":371,
             "name":"JMS Test 2",
-            "credentials":null,
             "advertiser_id":110692,
             "member_id":4209,
             "active":true,
-            "is_data_integration_active":false,
             "creative_custom_request_partner_id":1,
             "default_bid_currency": "USD",
-            "processed_on":"1970-01-01 00:00:01",
             "last_modified":"2014-04-28 14:59:11",
             "bid_count":0,
             "network_type":"mobile"
@@ -105,15 +101,11 @@ $ curl -b cookies -c cookies -X PUT -d @update-network.json 'https://sand.api.ap
         "mediated-network":{
             "id":368,
             "name":"Integration Test TEST1398457680380",
-            "credentials":"OlkWxzZaQjVpgMRd\/\/o6cbUgjuNYkrP\/toKzFRdR9gnpQ2upKNhDu5mQrr871RCjBbjsNlyO6hN2fVNg4VV
-             LiMix2mrky38F\/M30uEIVo0zQzmVJ8K4Uz0UyLVagVwdsgNPx9sAN0LZD+ZskyXQx6R4dZCjQD9mKHLT+nJ2Usfs=",
             "advertiser_id":110648,
             "member_id":4209,
             "active":false,
-            "is_data_integration_active":false,
             "creative_custom_request_partner_id":1,
             "default_bid_currency": "USD",
-            "processed_on":"1970-01-01 00:00:01",
             "last_modified":"2014-04-28 14:56:48",
             "bid_count":0,
             "network_type":"mobile"
@@ -137,14 +129,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network
             {
                 "id":89,
                 "name":"Doubleclick for Publishers",
-                "credentials":null,
                 "advertiser_id":110021,
                 "member_id":4209,
                 "active":false,
-                "is_data_integration_active":false,
                 "creative_custom_request_partner_id":28,
                 "default_bid_currency": "USD",
-                "processed_on":"1970-01-01 00:00:01",
                 "last_modified":"2014-04-18 23:37:01",
                 "bid_count":0,
                 "network_type":"mobile"
@@ -152,14 +141,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network
             {
                 "id":90,
                 "name":"Tim's Custom Network",
-                "credentials":null,
                 "advertiser_id":110022,
                 "member_id":4209,
                 "active":false,
-                "is_data_integration_active":false,
                 "creative_custom_request_partner_id":22,
                 "default_bid_currency": "EUR",
-                "processed_on":"1970-01-01 00:00:01",
                 "last_modified":"2014-04-18 23:37:01",
                 "bid_count":0,
                 "network_type":"mobile"
@@ -167,14 +153,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network
             {
                 "id":210,
                 "name":"Amazon",
-                "credentials":null,
                 "advertiser_id":110203,
                 "member_id":4209,
                 "active":false,
-                "is_data_integration_active":false,
                 "creative_custom_request_partner_id":25,
                 "default_bid_currency": "EUR",
-                "processed_on":"1970-01-01 00:00:01",
                 "last_modified":"2014-04-18 23:32:36",
                 "bid_count":1,
                 "network_type":"mobile"
@@ -198,15 +181,11 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/mediated-network?id=368' 
         "mediated-network":{
             "id":368,
             "name":"Integration Test TEST1398457680380",
-            "credentials":"OlkWxzZaQjVpgMRd\/\/o6cbUgjuNYkrP\/toKzFRdR9gnpQ2upKNhDu5mQrr871RCjBbjsNlyO6hN2fVNg4VVL
-             iMix2mrky38F\/M30uEIVo0zQzmVJ8K4Uz0UyLVagVwdsgNPx9sAN0LZD+ZskyXQx6R4dZCjQD9mKHLT+nJ2Usfs=",
             "advertiser_id":110648,
             "member_id":4209,
             "active":true,
-            "is_data_integration_active":false,
             "creative_custom_request_partner_id":1,
             "default_bid_currency": "USD",
-            "processed_on":"1970-01-01 00:00:01",
             "last_modified":"2014-04-25 20:28:07",
             "bid_count":0,
             "network_type":"mobile"

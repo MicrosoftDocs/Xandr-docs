@@ -10,9 +10,9 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > Mediation is only available to Microsoft Monetize Ad Server customers.
 
-Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](../monetize/prebid-server-premium) to compete for publisher inventory. Both known partners, such as Google, as well as custom networks are supported. To call each partner for demand, they must first be created as networks [via the Monetize UI](../monetize/mediation-networks) or the Mediated Network service detailed below. It is recommended to use no more than 3 or 4 networks in the waterfall for a given impression. Using more networks increases ad serving latency and adversely impacts user experience. For more context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation).
+Microsoft Monetize Ad Server mediation allows demand from sources not integrated into the Monetize exchange or [Prebid Server Premium](../monetize/prebid-server-premium.md) to compete for publisher inventory. This includes both well-known partners like Google and custom networks. To call each partner for demand, they must first be created as networks [via the Monetize UI](../monetize/mediation-networks.md) or the Mediated Network service outlined below. It is recommended to limit the number of networks in the waterfall to no more than 3 or 4 for each impression. Having more networks can lead to increased ad serving latency and negatively affect user experience. For additional information on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
 
-Setup is also required in each Network’s platform, as covered in [Integrating for Mediation](../monetize/mediation-integrating-for-mediation). [Monetize reports](../monetize/reporting-guide) include Mediated Networks as Advertisers and Bids as Line Items (both filters and dimensions).
+Setup is also required in each Network’s platform, as outlined in [Integrating for Mediation](../monetize/mediation-integrating-for-mediation.md). In addition, [Monetize reports](../monetize/reporting-guide.md) include Mediated Networks as Advertisers and Bids as Line Items (both filters and dimensions).
 
 ## REST API
 
@@ -32,9 +32,9 @@ Setup is also required in each Network’s platform, as covered in [Integrating 
 | `id` | int | The system-generated unique ID for this network.<br><br>**Required On**: `PUT` |
 | `name` | string | The name of the network, as supplied by the user.<br><br>**Required On**: `POST` |
 | `advertiser_id` | int | **Read-only**. The unique, system-generated ID of the advertiser associated with this mediated network. |
-| `member_id` | int | **Read-only**. Every Monetize advertiser object is associated with a parent [member](./member-service). The unique, system-generated ID of the member to which the advertiser and network described by `advertiser_id` belongs. |
+| `member_id` | int | **Read-only**. Every Monetize advertiser object is associated with a parent [member](./member-service.md). The unique, system-generated ID of the member to which the advertiser and network described by `advertiser_id` belongs. |
 | `active` | boolean | Controls whether bids in this network request demand from the partner.<br><br>**Default**: `false` |
-| `creative_custom_request_partner_id` | int | The partner platform the network is associated with. See creative [custom request partner service](./creative-custom-request-partner-service) for more information.<br><br>**Required On**: `POST`|
+| `creative_custom_request_partner_id` | int | The partner platform the network is associated with. See creative [custom request partner service](./creative-custom-request-partner-service.md) for more information.<br><br>**Required On**: `POST`|
 | `default_bid_currency` | string | The currency to be used for bids from this network.<br><br>**Default**: `USD` |
 | `last_modified` | date | **Read-only**. The date and time at which the mediated network object was last modified. |
 | `network_type` | string | The type of mediated network. Allowed values:<br>- `mobile`: The network is focused on purchasing mobile inventory.<br> - `banner`: The network is focused on purchasing web inventory.<br><br>**Default**: `mobile` |

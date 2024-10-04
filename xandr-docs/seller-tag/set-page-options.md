@@ -61,7 +61,7 @@ apntag.setPageOpts({
 
 ### DSA object
 
-Specifies information related to the Digital Services Act. For the ideal values to use for each of the fields, refer to the [IAB Spec](https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/extensions/community_extensions/dsa_transparency.md)
+Specifies information related to the Digital Services Act. For the ideal values to use for each of the fields, refer to the [IAB Spec](https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/extensions/community_extensions/dsa_transparency.md).
 
 | Parameter | Type | Description |
 |---|---|---|

@@ -1,18 +1,25 @@
 ---
 title: Mediated Bid Service
 description: Use the Mediated Bid service to create and view mediated bids.
-ms.date: 10/28/2023
+ms.date: 10/04/2024
 ms.custom: digital-platform-api
 ---
 
 # Mediated Bid service
 
 > [!NOTE]
-> Only available to Microsoft Monetize Ad Server customers.
+> Mediation is only available to Microsoft Monetize Ad Server customers.
 
-This service is used to create and view mediated bids. Mediated bids are an abstraction over a particular line item, campaign, and creative combination that we've created to represent demand from mediated networks in our auction.
+Once a Network has been created via the [Monetize UI](../monetize/mediation-networks.md) or [Mediated Network Service](./mediated-network-service.md), Mediated Bids must be set up via the [Monetize UI](../monetize/mediation-bids.md) or the Mediated Bid Service detailed below to define:
 
-Every bid is associated with a mediated network. For more information about mediated networks, see the [Mediated Network Service](./mediated-network-service.md).
+- Which publisher bid requests to Monetize are relevant to the Network
+- Which Ad Tags to use to call the Network
+
+Each Bid includes a publisher-defined CPM, the amount the Network partner is likely to pay for the inventory. For more information about how mediation works, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
+
+For more context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md)
+
+Setup is also required in each Network’s platform, as covered in [Integrating for Mediation](../monetize/mediation-integrating-for-mediation.md). [Microsoft Monetize reports](../monetize/reporting-guide.md) include Mediated Networks as Advertisers and Bids as Line Items (both filters and dimensions).
 
 ## REST API
 
@@ -20,24 +27,23 @@ Every bid is associated with a mediated network. For more information about medi
 |:---|:---|:---|
 | `GET` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` | View all of a member's bids. |
 | `GET` | `https://api.appnexus.com/mediated-bid?id=BID_ID` | View a specific bid. |
-| `POST` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` <br>(+ JSON payload) | Create a new bid. |
-| `PUT` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` <br>(+ JSON payload) | Modify a bid. |
+| `POST` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` | Create a new bid. |
+| `PUT` | `https://api.appnexus.com/mediated-bid?member_id=MEMBER_ID` | Modify a bid. |
 | `DELETE` | `http://api.apnexus.com/mediated-bid?id=BID_ID` | Delete a bid. |
 
 ## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | A unique ID for this bid. |
-| `type` | string | The type of bid. Always `"mobile"`.<br><br>**Default**: `mobile`<br>**Required On**: `POST` only; not applicable in `PUT` |
+| `id` | int | The system-generated unique ID for this bid. |
+| `type` | string | The type of bid. Always `"mobile"`.<br>**Required On**: `POST` only; not applicable in `PUT` |
 | `name` | string | The user-supplied name of the bid.<br><br>**Required On**: `POST` |
-| `active` | Boolean | Whether this mediated bid is able to participate in auctions.<br><br>**Default**: `true`<br>**Required On**: `PUT` |
+| `active` | Boolean | Controls whether the bid requests demand from the partner.<br><br>**Default**: `true`<br>**Required On**: `PUT` |
 | `member_id` | int | The unique ID number of the member associated with this bid. |
 | `line_item_id` | int | The unique ID of the line item associated with this bid. |
 | `campaign_id` | int | The unique ID of the campaign associated with this bid. |
 | `creative_id` | int | The unique ID of the creative associated with this bid. |
 | `profile_id` | int | The unique ID of the targeting profile associated with this bid. |
-| `auto_bid_adjustments_enabled` | Boolean | If enabled, Xandr will use an algorithm to determine the best estimate of what the network will pay and automatically update the bid as conditions change. |
 | `last_modified` | date time | **Read-only**. The date and time that this bid object was last modified. |
 | `mediated_network` | object | Information about the mediated network to which this bid is associated. For field definitions, see the [Mediated Network Service](./mediated-network-service.md). |
 | `mediated_network_id` | int | The unique ID of the mediated network to which this bid is associated. For field definitions, see the [Mediated Network Service](./mediated-network-service.md).<br><br>**Required On**: `POST` |
@@ -45,10 +51,11 @@ Every bid is associated with a mediated network. For more information about medi
 | `line-item` | object | Information about the line item to which this bid is associated. For field definitions, see the [Line Item Service](./line-item-service.md).<br><br>**Required On**: `POST` |
 | `profile` | object | Information about the profile to which this bid is associated. For field definitions, see the [Profile Service](./profile-service.md). |
 | `creative` | object | Information about the creative associated with this bid. For field definitions, see the [Creative Service](./creative-service.md).<br><br>**Required On**: `POST` |
-| `reporting_macros` | array of objects | See the [Reporting Macros](#reporting-macros) section below. |
-| `label` | array of objects | The user-supplied label attached to this bid. This is an arbitrary string with no purpose other than sorting in the UI. |
+| `label` | string | The user-supplied label attached to this bid. This is an arbitrary string with no purpose other than sorting in the UI. |
+<!-- | `auto_bid_adjustments_enabled` | Boolean | If enabled, Xandr will use an algorithm to determine the best estimate of what the network will pay and automatically update the bid as conditions change. |
+| `reporting_macros` | array of objects | See the [Reporting Macros](#reporting-macros) section below. | -->
 
-## Reporting macros
+<!-- ## Reporting macros
 
 | Name | Type | Sort by? | Filter by? |
 |:---|:---|:---|:---|
@@ -62,11 +69,11 @@ Every bid is associated with a mediated network. For more information about medi
 
 | Name | Type | Sort by? | Filter by? |
 |:---|:---|:---|:---|
-| `name` | string | Yes | No |
+| `name` | string | Yes | No | -->
 
 ## Examples
 
-### See all of a member's bids
+### View all of a member's bids
 
 ```
 $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
@@ -2114,10 +2121,24 @@ $ curl -b cookies -X DELETE 'https://api.appnexus.com/mediated-bid?member_id=437
 }
 ```
 
+## Bids and campaign priorities
+
+Mediated Bids have priority 5 in the auction, which is required for mediation to function. Any line items of lower priority will not compete unless the Networks do not return ads.
+
+Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Use the Monetize mediation Bids tab, detailed on this page, or the [Mediated Bid Service](./mediated-bid-service.md) to manage Bids. Changing the priority of the objects will break mediation.
+
+When using the API:
+
+Do not update advertisers, augmented line items, campaigns, or creatives with the words "Mediated" or "Mediation" in their names.
+
+Creative used for mediation has the `is_mediation` flag set to `true`. When updating a line item or campaign, check its creatives array to confirm if one of the creatives is a mediation creative. If it is, do not update the line item or campaign.
+
 ## Related topics
 
+- [API Semantics](./api-semantics.md)
+- [API Best Practices](./api-best-practices.md)
+- [Mediated Network Service](./mediated-network-service.md)
 - [Line Item Service](./line-item-service.md)
 - [Campaign Service](./campaign-service.md)
 - [Creative Service](./creative-service.md)
 - [Profile Service](./profile-service.md)
-- [Mediated Network Service](./mediated-network-service.md)

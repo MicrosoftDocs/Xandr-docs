@@ -28,7 +28,11 @@ The options available to target inventory by position, also called context:
   - **Mid-roll** - Inventory that hosts video creatives that play in the middle of the user selected video of choice.
   - **Post-roll** - Inventory that hosts video creatives that play after the user selected video of choice.
   - **No roll position defined** - Target inventory where no position information has been provided.
-- **Outstream** - Video ads are embedded within the body of a web page.
+- **Interstitial** - Inventory that covers the entire screen or a portion of it and remains visible at all times while displayed (cannot be scrolled out of view).
+- **In-article** - Inventory that dynamically loads and plays between paragraphs of editorial content, presenting a standalone branded message.
+- **In-banner** - Inventory within a web banner, using the banner space to deliver a video experience instead of static or rich media formats. It relies on existing display ad inventory for its delivery.
+- **In-feed** - Inventory placed within content, social, or product feeds.
+
 
 ## Target video inventory by playback method
 

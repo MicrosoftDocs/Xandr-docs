@@ -42,7 +42,7 @@ To set up each web Network:
 > For example:
 >
 > - **HTML**: The JavaScript might need to be wrapped in `<script>` tags to upload as HTML
-> - **URL**: If a URL is required, use `http://cdn.adnxs.com/mediation/noad.md` or the secure version: h`ttps://cdn.adnxs.com/mediation/noad.md`
+> - **URL**: If a URL is required, use `http://cdn.adnxs.com/mediation/noad.md` or the secure version: `https://cdn.adnxs.com/mediation/noad.md`
 
 ### Web request and response process
 

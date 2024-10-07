@@ -20,7 +20,7 @@ This page describes the end-to-end process of setting up mediation connections i
 
 > [!NOTE]
 >
-> - Mediated Networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real time. Publishers must regularly review reports from each network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
+> - Mediated Networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real time. Publishers must regularly review reports from each network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated bid could win auctions over higher bids from other sources.
 > - The examples below are simplified for learning purposes and do not account for all the complex interactions and edge cases involved in real auctions.
 > - If a mediated Network does not return an ad, even the second-highest bid might not serve for a variety of reasons. Example: The brand of a real-time bidding (RTB) buyer’s creative is banned in the publisher ad quality settings. The impression would then go to the third-highest bidder.
 
@@ -51,8 +51,8 @@ When following the standard setup described above, the web request and response 
 1. Monetize Ad Server responds differently depending on the auction outcome:
 
     a. If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly.
-    b. If the winning bid is a mediated Bid, Monetize responds to the page's request with a list of mediated Bids (a waterfall), as well as a JavaScript file `mediation.js`, which manages the waterfall directly from the browser.
-    c. **For the rest of this example, assume the winning bid is a mediated Bid**.
+    b. If the winning bid is a mediated bid, Monetize responds to the page's request with a list of mediated Bids (a waterfall), as well as a JavaScript file `mediation.js`, which manages the waterfall directly from the browser.
+    c. **For the rest of this example, assume the winning bid is a mediated bid**.
 1. `mediation.js`, running in the browser, calls the mediated Networks in the order specified by the waterfall. For each network:
     a. If the Network returns an ad, the ad is served, and `mediation.js` notifies Monetize Ad Server to report the impression.
     b. If the Network does not return an ad, the Network calls the function mediation.noad(), which causes `mediation.js` to call the next network in the waterfall.
@@ -129,7 +129,7 @@ When following the standard setup described above, the server-side request and r
 1. The tag on the page calls the Microsoft Monetize Ad Server
 1. Monetize Ad Server runs an auction across its demand sources. Mediated Bids are ranked in the auction according to the Bid CPM entered by the publisher, alongside RTB bids.
 1. Monetize Ad Server responds differently depending on the auction outcome:
-    a. If a mediated Bid wins, it attempts to load an ad from the mediated Network. If the mediated Network does not return an ad, the impression goes to the next highest bid (the next network in the waterfall, or an RTB buyer).
+    a. If a mediated bid wins, it attempts to load an ad from the mediated Network. If the mediated Network does not return an ad, the impression goes to the next highest bid (the next network in the waterfall, or an RTB buyer).
     b. If an RTB bid wins, Monetize will serve the ad from the RTB buyer directly.
 
 ## Related topics

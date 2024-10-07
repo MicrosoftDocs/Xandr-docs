@@ -1,7 +1,7 @@
 ---
 title: Mediated Bid Service
 description: Use the Mediated Bid service to create and view mediated bids.
-ms.date: 10/04/2024
+ms.date: 10/07/2024
 ms.custom: digital-platform-api
 ---
 
@@ -10,10 +10,10 @@ ms.custom: digital-platform-api
 > [!NOTE]
 > Mediation is only available to Microsoft Monetize Ad Server customers.
 
-Once a Network has been created via the [Monetize UI](../monetize/mediation-networks.md) or [Mediated Network Service](./mediated-network-service.md), Mediated Bids must be set up via the [Monetize UI](../monetize/mediation-bids.md) or the Mediated Bid Service detailed below to define:
+Once a Network has been created via the [Microsoft Monetize UI](../monetize/mediation-networks.md) or [Mediated Network Service](./mediated-network-service.md), Mediated Bids must be set up via the [Microsoft Monetize UI](../monetize/mediation-bids.md) or the Mediated Bid Service detailed below to define:
 
-- Which publisher bid requests to Monetize are relevant to the Network
-- Which Ad Tags to use to call the Network
+- Which publisher bid requests to Microsoft Monetize are relevant to the Network
+- Which Ad tags to use to call the Network
 
 Each Bid includes a publisher-defined CPM, the amount the Network partner is likely to pay for the inventory. For more information about how mediation works, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
 
@@ -97,7 +97,6 @@ $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
                 "profile_id":358973,
                 "suggested_bid_price": 25.4,
                 "suggested_bid_price_confidence": 0.6,
-                "auto_bid_adjustments_enabled": true,
                Â "last_modified":"2014-05-12 23:18:37",
                 "mediated_network":{
                     "id":455,
@@ -478,7 +477,6 @@ $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
                 "profile_id":358980,
                 "suggested_bid_price": null,
                 "suggested_bid_price_confidence": null,
-                "auto_bid_adjustments_enabled": false,
                Â "last_modified":"2014-05-12 23:18:37",
                 "mediated_network":{
                     "id":456,
@@ -867,7 +865,6 @@ $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
                 "profile_id":358987,
                 "suggested_bid_price": null,
                 "suggested_bid_price_confidence": null,
-                "auto_bid_adjustments_enabled": false,
                Â "last_modified":"2014-05-22 18:03:53",
                 "mediated_network":{
                     "id":457,
@@ -1231,7 +1228,8 @@ $ curl -b cookies 'https://api.appnexus.com/mediated-bid?member_id=4371'
                     "currency":"USD"
                 }
             }
-
+        ]
+    }
 }
 ```
 
@@ -1720,7 +1718,6 @@ $ curl -b cookies -X PUT -d @edit-mediated-bid.json 'https://api.appnexus.com/me
             "profile_id":363989,
             "suggested_bid_price": 25.4,
              "suggested_bid_price_confidence": 0.6,
-             "auto_bid_adjustments_enabled": true,
              "last_modified":"2014-06-10 14:11:41",
             "mediated_network":{
                 "id":319,
@@ -2125,13 +2122,13 @@ $ curl -b cookies -X DELETE 'https://api.appnexus.com/mediated-bid?member_id=437
 
 Mediated Bids have priority 5 in the auction, which is required for mediation to function. Any line items of lower priority will not compete unless the Networks do not return ads.
 
-Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Use the Monetize mediation Bids tab, detailed on this page, or the [Mediated Bid Service](./mediated-bid-service.md) to manage Bids. Changing the priority of the objects will break mediation.
+Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Use the Microsoft Monetize mediation Bids tab, detailed on this page, or the [Mediated Bid Service](./mediated-bid-service.md) to manage bids. Changing the priority of the objects will break mediation.
 
-When using the API:
+When using the API, confirm the following:
 
-Do not update advertisers, augmented line items, campaigns, or creatives with the words "Mediated" or "Mediation" in their names.
-
-Creative used for mediation has the `is_mediation` flag set to `true`. When updating a line item or campaign, check its creatives array to confirm if one of the creatives is a mediation creative. If it is, do not update the line item or campaign.
+- Do not update advertisers, augmented line items, campaigns, or creatives with the words "Mediated" or "Mediation" in their names.
+- Creative used for mediation has the `is_mediation` flag set to `true`.
+- Before updating a line item or campaign, check its creatives array to confirm if one of the creatives is a mediation creative. If it's a mediation creative, do not update the line item or campaign.
 
 ## Related topics
 

@@ -28,7 +28,7 @@ To start selling inventory through mediation, customers must:
 The high-level mediation workflow is as follows:
 
 1. The publisher sends a bid request to Monetize.
-1. Monetize evaluates the bid request against mediated Bids to determine eligibility based on the Bid’s targeting.
+1. Monetize evaluates the bid request against mediated Bids to determine eligibility based on the bid’s targeting.
 1. The Monetize Ad Server runs the auction for the impression, ranking bids from marketplace bidders and mediated bids. Mediated bids use a fixed CPM entered by the publisher, representing the amount they expect the network to pay.
 1. If a mediated bid wins the auction, `mediation.js` is loaded on the page, which calls the ad tag previously entered by the publisher.
 1. If the mediated Network partner bids, the ad is rendered. If they do not bid in time, the next highest bid from the Monetize auction is used.

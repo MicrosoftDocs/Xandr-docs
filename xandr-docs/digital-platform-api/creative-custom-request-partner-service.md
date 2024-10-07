@@ -1,7 +1,7 @@
 ---
 title: Creative Custom Request Partner Service
 description: In this article, learn about the Creative Custom Request Partner service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/04/2024
+ms.date: 10/07/2024
 ms.custom: digital-platform-api
 ---
 
@@ -86,8 +86,6 @@ For a list of this object's fields and their definitions, see the [Creative Cust
                 "macro_type":"standard",
                 "member_id":null,
                 "last_modified":"2014-03-21 21:43:33",
-                "creative_custom_request_partner_credentials":null,
-                "creative_custom_request_partner_integration":null,
                 "creative_custom_request_templates":[
                     {
                         "id":14,
@@ -243,46 +241,6 @@ For a list of this object's fields and their definitions, see the [Creative Cust
                 "macro_type":"standard",
                 "member_id":null,
                 "last_modified":"2014-04-23 22:24:46",
-                "creative_custom_request_partner_credentials":[
-                    {
-                        "id":42,
-                        "creative_custom_request_partner_id":17,
-                        "name":"username",
-                        "is_required":true,
-                        "is_obscured":false,
-                        "last_modified":"2014-04-23 22:24:46",
-                        "type":"string"
-                    },
-                    {
-                        "id":43,
-                        "creative_custom_request_partner_id":17,
-                        "name":"password",
-                        "is_required":true,
-                        "is_obscured":true,
-                        "last_modified":"2014-04-23 22:24:46",
-                        "type":"string"
-                    }
-                ],
-                "creative_custom_request_partner_integration":[
-                    {
-                        "id":15,
-                        "creative_custom_request_partner_id":17,
-                        "supported":true,
-                        "active":true,
-                        "last_modified":"2014-05-13 19:29:42",
-                        "data_timezone":"GMT",
-                        "data_granularity":"daily"
-                    },
-                    {
-                        "id":39,
-                        "creative_custom_request_partner_id":17,
-                        "supported":true,
-                        "active":true,
-                        "last_modified":"2014-05-13 19:29:45",
-                        "data_timezone":"GMT",
-                        "data_granularity":"daily"
-                    }
-                ],
                 "creative_custom_request_templates":null
             },
 }
@@ -306,46 +264,6 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative-custom-request-p
             "macro_type":"standard",
             "member_id":null,
             "last_modified":"2014-04-23 22:24:46",
-            "creative_custom_request_partner_credentials":[
-                {
-                    "id":42,
-                    "creative_custom_request_partner_id":17,
-                    "name":"username",
-                    "is_required":true,
-                    "is_obscured":false,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                },
-                {
-                    "id":43,
-                    "creative_custom_request_partner_id":17,
-                    "name":"password",
-                    "is_required":true,
-                    "is_obscured":true,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                }
-            ],
-            "creative_custom_request_partner_integration":[
-                {
-                    "id":15,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:42",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                },
-                {
-                    "id":39,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:45",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                }
-            ],
             "creative_custom_request_templates":null
         }
     }
@@ -379,8 +297,6 @@ $ curl -b cookies -c cookies -X POST -d @custom-creative-request-partner-service
             "macro_type":"standard",
             "member_id":null,
             "last_modified":"2014-06-02 17:55:27",
-            "creative_custom_request_partner_credentials":null,
-            "creative_custom_request_partner_integration":null,
             "creative_custom_request_templates":null
         }
     }
@@ -411,46 +327,6 @@ $ curl -b cookies -c cookies -X PUT -d @edit-ccr-partner-service.json 'https://a
             "macro_type":"standard",
             "member_id":3261,
             "last_modified":"2014-06-03 14:36:49",
-            "creative_custom_request_partner_credentials":[
-                {
-                    "id":42,
-                    "creative_custom_request_partner_id":17,
-                    "name":"username",
-                    "is_required":true,
-                    "is_obscured":false,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                },
-                {
-                    "id":43,
-                    "creative_custom_request_partner_id":17,
-                    "name":"password",
-                    "is_required":true,
-                    "is_obscured":true,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                }
-            ],
-            "creative_custom_request_partner_integration":[
-                {
-                    "id":15,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:42",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                },
-                {
-                    "id":39,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:45",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                }
-            ],
             "creative_custom_request_templates":null
         }
     }

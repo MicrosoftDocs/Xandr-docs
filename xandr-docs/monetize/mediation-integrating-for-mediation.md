@@ -142,6 +142,6 @@ When following the standard setup described above, the server-side request and r
 - [Selling Your Inventory through Mediation](mediation-selling-your-inventory-through-mediation.md)
 - [Mediation Networks](mediation-networks.md)
 - [Mediation Bids](mediation-bids.md)
-- [Android Custom Adaptors](android-custom-adaptors.md)
-- [iOS Custom Adaptors](ios-custom-adaptors.md)
+- [Android Custom Adaptors](../mobile-sdk/android-custom-adaptors.md)
+- [iOS Custom Adaptors](../mobile-sdk/ios-custom-adaptors.md)
   

@@ -51,9 +51,9 @@ When following the standard setup described above, the web request and response 
 1. The tag on the page calls the Microsoft Monetize Ad Server.
 1. Monetize Ad Server runs an auction across its demand sources. Mediated bids are ranked according to the Bid CPM entered by the publisher, alongside RTB bids.
 1. Monetize Ad Server responds differently depending on the auction outcome:
-    a. If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly.
-    b. If the winning bid is a mediated bid, Monetize responds to the page's request with a list of mediated Bids (a waterfall), as well as a JavaScript file `mediation.js`, which manages the waterfall directly from the browser.
-    c. **For the rest of this example, assume the winning bid is a mediated bid**.
+   1. If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly.
+   1. If the winning bid is a mediated bid, Monetize responds to the page's request with a list of mediated Bids (a waterfall), as well as a JavaScript file `mediation.js`, which manages the waterfall directly from the browser.
+   1. **For the rest of this example, assume the winning bid is a mediated bid**.
 1. `mediation.js`, running in the browser, calls the mediated Networks in the order specified by the waterfall. For each network:
     a. If the Network returns an ad, the ad is served, and `mediation.js` notifies Monetize Ad Server to report the impression.
     b. If the Network does not return an ad, the Network calls the function mediation.noad(), which causes `mediation.js` to call the next network in the waterfall.
@@ -95,10 +95,10 @@ To set up each app SDK Network:
     a. In the Monetize UI, follow guidance to set up [Mediation Networks](mediation-networks.md) to represent each partner.
     b. In the Monetize UI, follow guidance to set up [Mediation Bids](mediation-bids.md) to represent the Network’s demand for specific inventory.
 1. If the desired mobile ad network **does not have a supported mediation adaptor**, publisher engineers must write a custom adaptor that allows the Microsoft SDK to communicate with the ad network's SDK. Once the adaptor is available, the custom mobile Network can be created along with bids.
-    a. Create [Android Custom Adaptors](../mobile-sdk/android-custom-adaptors.md)
-    b. Create [iOS Custom Adaptor](../mobile-sdk/ios-custom-adaptors.md)
-    c. In the Monetize UI, follow guidance to set up [Mediation Networks](mediation-networks.md) to represent each partner, specifically as a Custom Mobile Network.
-    d. In the Monetize UI, follow guidance to set up [Mediation Bids](mediation-bids.md) to represent the Network’s demand for specific inventory.
+    1. Create [Android Custom Adaptors](../mobile-sdk/android-custom-adaptors.md)
+    1. Create [iOS Custom Adaptor](../mobile-sdk/ios-custom-adaptors.md)
+    1. In the Monetize UI, follow guidance to set up [Mediation Networks](mediation-networks.md) to represent each partner, specifically as a Custom Mobile Network.
+    1. In the Monetize UI, follow guidance to set up [Mediation Bids](mediation-bids.md) to represent the Network’s demand for specific inventory.
 1. Once Bids have been created and enabled, requests will be sent to network partners for demand.
 
 ### App request and response process

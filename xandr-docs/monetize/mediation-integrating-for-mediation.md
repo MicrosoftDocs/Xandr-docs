@@ -55,8 +55,8 @@ When following the standard setup described above, the web request and response 
    1. If the winning bid is a mediated bid, Monetize responds to the page's request with a list of mediated Bids (a waterfall), as well as a JavaScript file `mediation.js`, which manages the waterfall directly from the browser.
    1. **For the rest of this example, assume the winning bid is a mediated bid**.
 1. `mediation.js`, running in the browser, calls the mediated Networks in the order specified by the waterfall. For each network:
-    a. If the Network returns an ad, the ad is served, and `mediation.js` notifies Monetize Ad Server to report the impression.
-    b. If the Network does not return an ad, the Network calls the function mediation.noad(), which causes `mediation.js` to call the next network in the waterfall.
+   1. If the Network returns an ad, the ad is served, and `mediation.js` notifies Monetize Ad Server to report the impression.
+   1. If the Network does not return an ad, the Network calls the function `mediation.noad()`, which causes `mediation.js` to call the next network in the waterfall.
 
 ## Web browser support
 

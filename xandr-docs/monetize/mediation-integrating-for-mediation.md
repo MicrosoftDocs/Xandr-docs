@@ -38,9 +38,11 @@ To set up each web Network:
 1. Once Bids have been created and enabled, requests will be sent to the network partners for demand.
 
 > [!NOTE]
-> The JavaScript format might vary slightly depending on the requirements of the mediation network's UI. For example:
-     - **HTML**: The JavaScript might need to be wrapped in `<script>` tags to upload as HTML
-     - **URL**: If a URL is required, use `http://cdn.adnxs.com/mediation/noad.md` or the secure version: h`ttps://cdn.adnxs.com/mediation/noad.md`
+> The JavaScript format might vary slightly depending on the requirements of the mediation network's UI.
+> For example:
+>
+> - **HTML**: The JavaScript might need to be wrapped in `<script>` tags to upload as HTML
+> - **URL**: If a URL is required, use `http://cdn.adnxs.com/mediation/noad.md` or the secure version: h`ttps://cdn.adnxs.com/mediation/noad.md`
 
 ### Web request and response process
 

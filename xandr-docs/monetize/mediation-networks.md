@@ -20,12 +20,12 @@ To create a network:
 2. Click the **New** button to open the **Add a Network** dialog.
 3. Select a predefined partner, such as **Google Ad Exchange**, or choose a custom option (**Custom Web/Mobile/Video Network**) to integrate a partner not yet built into Monetize mediation. **Custom networks** require additional information during Bid setup, such as an ad placement ID and, for mobile, the advertising SDK.
 4. Select the appropriate currency for the partner.
-5. Enter a name for the network. A mediated network is created as a managed advertiser. If you try to use the same name as an existing advertiser, an error will occur. You must rename the original advertiser or choose a different name for the Network.
-6. Click **Save** to return to the list of networks, or click **Save and Create Bid** to move directly to creating the first bid for the Network.
+5. Enter a name for the network. A mediated network is created as a managed advertiser. If you try to use the same name as an existing advertiser, an error will occur. You must rename the original advertiser or choose a different name for the network.
+6. Click **Save** to return to the list of networks, or click **Save and Create Bid** to move directly to creating the first bid for the network.
 7. After saving, click the edit (pencil) icon to change the name of the network if needed.
 
    > [!TIP]
-   > It is recommended to use no more than 3 or 4 Networks in the waterfall for a given impression. Using more networks increases ad serving latency and adversely impacts user experience.
+   > It is recommended to use no more than 3 or 4 networks in the waterfall for a given impression. Using more networks increases ad serving latency and adversely impacts user experience.
 
 ## Network platform setup
 

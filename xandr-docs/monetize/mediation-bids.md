@@ -21,7 +21,7 @@ Setup is also required in each network's platform, as covered in [Integrating fo
 
 ## Step 1: Go to the Create Bid page
 
-From the Monetize navigation menu, select **Mediation** \> **Bids**. This will load the **Bids Overview** screen.
+From the Monetize navigation menu, select **Mediation** \> **Bids**. This will load the Bids overview screen.
 
 ## Step 2: Define basic settings
 
@@ -29,7 +29,7 @@ The following basic settings will apply to all bids created in the current scree
 
 **State**: Choose whether the bid is active (can participate in auctions) or inactive (cannot participate in auctions).
 
-**Waterfall label**: An optional label to track bids that target the same inventory / audience combination. Available as a column and filter on the Bids Overview page.
+**Waterfall label**: An optional label to track bids that target the same inventory / audience combination. Available as a column and filter on the Bids overview page.
 
 **Flight Dates**: Control the lifetime of the Bid to run during a specific time frame, or indefinitely by choosing **No End Date**.
 
@@ -49,8 +49,9 @@ The following information is required for every Bid:
 Publishers must regularly review reporting from each network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
 
 **Response Timeout**: Controls how long the network partner is given to respond to the bid request
-If the timeout is too low, revenue could be lost from bids earlier in the waterfall
-If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
+
+    - If the timeout is too low, revenue could be lost from bids earlier in the waterfall
+    - If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
 
 **Media Subtype**: The type of creative to be requested from the network (Standard Banner, In-Feed Standard, Standard VAST, etc). If the network supports multiple subtypes, each subtype must be created as a separate Bid with its own Ad Tags.
 
@@ -77,7 +78,7 @@ Some mediated networks require their equivalent of a Monetize placement ID in th
 When creating a mediated bid for a custom mobile network, additional information is required to connect to the third-party network's mobile SDK.
 
 - **Support SSL**: Controls whether the Bid can serve via HTTPS. Enabling requires a separate, secure version of the ad tag. This only applies to display and mobile web creatives.
-- **Device class name**: The Android or iOS class name taken from the code for the SDK. For example, M`ediatedBannerAdView`. This field is optional for Monetize, but may be required for the integration with the network to function.
+- **Device class name**: The Android or iOS class name taken from the code for the SDK. For example, `ediatedBannerAdView`. This field is optional for Monetize, but may be required for the integration with the network to function.
 - **Network ID**: A required, unique ID that represents the location in an app where an ad can be shown. In Monetize, this is a "placement", but many networks use other terminology. The ID should not be reused across multiple Bids.
 - **Network Parameter**: Optional, arbitrary data available if the network needs to receive more information to function.
   
@@ -94,10 +95,10 @@ The following targeting settings will apply to all the Bids created in the curre
 
 When a publisher’s bid request is received, Monetize evaluates the bid request against mediated Bids to determine which, if any, are eligible based on the Bid’s targeting.
 
-- **Inventory Targeting**: Target inventory objects, categories, and lists
+- **Inventory Targeting**: Target inventory objects, categories, and lists.
   
-  - When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
-  - When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request Bids on inventory that is in either category.
+      - When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
+      - When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request Bids on inventory that is in either category.
 
 - **Geography Targeting**: Limit which bid requests are sent to networks based on the detected geographic location of the user.
 - **System Targeting**: Target technical attributes detected in the bid request such as operating system, browser, language, device model.

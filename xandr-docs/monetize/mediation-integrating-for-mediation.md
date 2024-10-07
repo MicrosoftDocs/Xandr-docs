@@ -51,7 +51,6 @@ When following the standard setup described above, the web request and response 
 1. The tag on the page calls the Microsoft Monetize Ad Server.
 1. Monetize Ad Server runs an auction across its demand sources. Mediated bids are ranked according to the Bid CPM entered by the publisher, alongside RTB bids.
 1. Monetize Ad Server responds differently depending on the auction outcome:
-
     a. If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly.
     b. If the winning bid is a mediated bid, Monetize responds to the page's request with a list of mediated Bids (a waterfall), as well as a JavaScript file `mediation.js`, which manages the waterfall directly from the browser.
     c. **For the rest of this example, assume the winning bid is a mediated bid**.

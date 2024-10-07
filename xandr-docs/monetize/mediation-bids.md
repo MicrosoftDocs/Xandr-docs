@@ -48,10 +48,10 @@ The following information is required for every Bid:
 **Bid CPM**: The price the network partner is likely to pay for the inventory. Mediated networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real time.
 Publishers must regularly review reporting from each network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
 
-**Response Timeout**: Controls how long the network partner is given to respond to the bid request
+**Response Timeout**: Controls how long the network partner is given to respond to the bid request:
 
-    - If the timeout is too low, revenue could be lost from bids earlier in the waterfall
-    - If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
+- If the timeout is too low, revenue could be lost from bids earlier in the waterfall
+- If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
 
 **Media Subtype**: The type of creative to be requested from the network (Standard Banner, In-Feed Standard, Standard VAST, etc). If the network supports multiple subtypes, each subtype must be created as a separate Bid with its own Ad Tags.
 
@@ -95,10 +95,10 @@ The following targeting settings will apply to all the Bids created in the curre
 
 When a publisher’s bid request is received, Monetize evaluates the bid request against mediated Bids to determine which, if any, are eligible based on the Bid’s targeting.
 
-- **Inventory Targeting**: Target inventory objects, categories, and lists.
+- **Inventory Targeting**: Target inventory objects, categories, and lists:
   
-      - When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
-      - When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request Bids on inventory that is in either category.
+  - When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
+  - When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request Bids on inventory that is in either category.
 
 - **Geography Targeting**: Limit which bid requests are sent to networks based on the detected geographic location of the user.
 - **System Targeting**: Target technical attributes detected in the bid request such as operating system, browser, language, device model.

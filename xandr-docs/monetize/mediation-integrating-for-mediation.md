@@ -114,7 +114,7 @@ When following the standard setup described above, the app request and response 
 1. Monetize Ad Server responds differently depending on the auction outcome:
     - If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly
     - Otherwise, Monetize returns a list of mediated Networks (a waterfall) which Microsoft Advertising's SDK will use to communicate with other ad networks SDKs installed on the device
-1. The Microsoft Advertising SDK calls the mediated Networks' SDKs running on the same device in the order specified by the waterfall response from Monetize Ad Server
+1. The Microsoft Advertising SDK calls the mediated Networks' SDKs running on the same device in the order specified by the waterfall response from Monetize Ad Server.
 1. Each of the mediated SDKs listed in the waterfall has an opportunity to respond with an ad. The mediated SDK that serves, notifies the Microsoft Advertising SDK to report the impression.
 
 ### Server-side mediation

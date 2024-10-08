@@ -2,7 +2,8 @@
 title: Listen to Native Ad Events on iOS
 description: In this article, learn about the NativeAdEventListener feature in iOS, including its scope, methods, and examples.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Listen to native ad events on iOS
@@ -16,6 +17,8 @@ A publisher can opt for the SDK to handle various ad events such as AdClick, occ
 The scope of this feature is limited to native creatives only.
 
 ## Methods
+The following methods are supported in this feature:
+
 
 ### Register for tracking of ad events - registerViewForTracking
 

@@ -5,7 +5,7 @@ ms.custom: ios-sdk
 ms.date: 10/01/2024
 ---
 
-# Show Interstitial Ads on iOS
+# Show interstitial ads on iOS
 
 This page has instructions and code samples for showing interstitial ads on iOS.
 
@@ -44,7 +44,7 @@ The interstitial code samples below show how to request ads using the placement 
  
 ```
 
-### Code sample (Objective C)
+### [Objective C](#tab/objectivec1)
 
 ```
 // iOS: ObjC code to show an interstitial ad
@@ -73,7 +73,7 @@ The interstitial code samples below show how to request ads using the placement 
 @end
 ```
 
-### Code sample (Swift)
+### [Swift](#tab/swift1)
 
 ```
 

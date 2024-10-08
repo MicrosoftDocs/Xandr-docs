@@ -3,6 +3,7 @@ title: Multi Ad Request for iOS
 description: This article provides instructions and code samples for using ANMultiAdRequest to initiate multiple auctions in a single server response. 
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Multi ad request for iOS
@@ -21,6 +22,7 @@ Users can select from one of three initialization methods. All require a `member
 > The `ANMultiAdRequest` instance will reject `AdUnits` with `memberId` values different from their own.
 
 ### Initialization methods
+The following methods are supported in this feature:
 
 #### Initialize with a list of one or more `AdUnits`
 

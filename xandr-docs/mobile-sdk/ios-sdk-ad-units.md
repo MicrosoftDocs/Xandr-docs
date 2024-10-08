@@ -2,10 +2,11 @@
 title: iOS SDK Ad Units Overview
 description: In this article, learn about iOS SDK ad units and explore how to incorporate different ad units or interact with our interfaces within your iOS application.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# iOS SDK Ad Units Overview
+# iOS SDK ad units overview
 
 This section describes how to include various ad units or work with our interfaces within your iOS app. All ad units are subclasses of the [ANAdUnit](show-interstitials-ads-on-ios.md) class.
 

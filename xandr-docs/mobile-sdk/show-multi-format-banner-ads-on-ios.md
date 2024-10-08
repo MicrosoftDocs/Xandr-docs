@@ -5,7 +5,7 @@ ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---
 
-# Banner Video / OutStream ads on iOS
+# Banner video/OutStream ads on iOS
 
 > [!NOTE]
 > This offering is currently in Alpha and is subject to change.
@@ -17,7 +17,7 @@ Some constraints:
 - Video mediation is not yet supported.
 - You cannot currently configure video player options, such as starting video with audio on/off or the presence of a volume button, for a mobile placement with the application UI.
 
-## Show a mix of VAST video and HTML banner Ads
+## Show a mix of VAST video and HTML banner ads
 
 1. Before you begin, you must [integrate the iOS SDK](ios-sdk-integration.md) with your project.
 2. Next, enable Video Ads in your App for ANBannerAdView.

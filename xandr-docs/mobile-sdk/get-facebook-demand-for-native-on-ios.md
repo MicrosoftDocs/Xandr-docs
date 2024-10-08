@@ -2,7 +2,8 @@
 title: Get Facebook Demand for Native on iOS
 description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on iOS devices.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Get Facebook demand for native on iOS
@@ -12,7 +13,7 @@ This document describes the process for retrieving native ad assets to display i
 > [!NOTE]
 > This SDK requires Xcode version 15.0 or higher and your app should target iOS version 12.0 or higher.
 
-## Ensure that the proper SDKs are installed
+## SDK installation
 
 The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. Use [CocoaPods](https://cocoapods.org/).
 <!-- There are two ways to install our SDK:

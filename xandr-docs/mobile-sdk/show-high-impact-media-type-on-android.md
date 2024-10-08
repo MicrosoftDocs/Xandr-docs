@@ -16,6 +16,7 @@ ms.date: 10/28/2023
 This page has instructions and code samples for showing a high impact media as banner ad view in Xandr Mobile SDK for Android.
 
 ## Methods
+The following methods are supported in this feature:
 
 **setAllowHighImpactDemand**
 

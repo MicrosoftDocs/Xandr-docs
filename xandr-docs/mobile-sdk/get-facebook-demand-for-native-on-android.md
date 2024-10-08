@@ -2,14 +2,15 @@
 title: Get Facebook Demand for Native on Android
 description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on Android devices.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Get Facebook demand for native on Android
 
 This article describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK in following steps:
 
-## Ensure proper SDKs installed
+## SDK installation
 
 The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, see our [release page](android-sdk-release-notes.md). In the dependencies section of the `build.gradle` of your project add these two lines:
 

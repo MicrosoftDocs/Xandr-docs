@@ -2,7 +2,8 @@
 title: iOS SDK Initialization
 description: In this article, learn about iOS SDK initialization v8.0, API signatures, and examples for better understanding.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # iOS SDK initialization
@@ -27,7 +28,7 @@ The API signature for initializing the SDK is exposed using Xandr Ad. For exampl
 
 ## Examples
 
-### Objective-C
+### [Objective C](#tab/objectivec1)
 
 ```
 @implementation AppDelegate
@@ -45,7 +46,7 @@ The API signature for initializing the SDK is exposed using Xandr Ad. For exampl
 }
 ```
 
-### Swift
+#### [Swift](#tab/swift1)
 
 ```
 class AppDelegate: UIResponder, UIApplicationDelegate {

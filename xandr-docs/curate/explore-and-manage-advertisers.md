@@ -45,7 +45,7 @@ The **Ins Orders**, **Line Items**, and **Campaigns** columns show you the numbe
 
 ## Filter details
 
-The **Advanced Filters** menu lets you filter for advertisers based on **State**, **Advertiser Name**, and **External Code**. You can select **Inactive** or **Active** from the **State** menu. Click on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose. You can also select **Active filter** from **Select a Setting** menu, so only active advertisers are listed. Note that inactive advertisers are shown with names, IDs, and stats in italics.
+The **Advanced Filters** menu lets you filter for advertisers based on **State**, **Advertiser Name**, and **External Code**. You can select **Inactive** or **Active** from the **State** menu. Select **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose. You can also select **Active filter** from **Select a Setting** menu, so only active advertisers are listed. Note that inactive advertisers are shown with names, IDs, and stats in italics.
 
 ## Search by name/ID
 

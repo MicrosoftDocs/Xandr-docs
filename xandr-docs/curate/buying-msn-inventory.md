@@ -53,7 +53,7 @@ For information on general inventory targeting, review the following documentati
 To target MSN.com inventory:
 
 1. On the **Specific Domains** tab, select **Include**.
-1. Type **msn.com**.
+1. Enter **msn.com**.
 1. Select **Add Domains** to add it to the included domains list.
 1. Select **Add**.
 

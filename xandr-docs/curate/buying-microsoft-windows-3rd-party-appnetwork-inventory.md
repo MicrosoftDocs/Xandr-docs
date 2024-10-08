@@ -80,7 +80,7 @@ To target **Windows AppNetwork and/or Windows Phone AppNetwork** inventory by **
 
 To target **Windows AppNetwork** and/or **Windows Phone AppNetwork** via Augmented Line Item - Programmatic Splits:
 
-1. Leave the default device type selected and Inventory Type should be set to Apps & Web
+1. Leave the default device type selected and **Inventory Type** should be set to **Apps & Web**.
 1. On the Programmatic Split – Select Publisher and add **348882** & **336212** for desktop and phone apps respectively for inclusion.
 1. Select **Add**.
 

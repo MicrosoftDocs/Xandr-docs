@@ -13,7 +13,7 @@ On the **Partner Center** Screen, the **Default Settings** option allows you to 
 
 ## Step 1: Get started
 
-Go to the **Partner Center** screen (**Partners** \> **Partner Center**) and select on the **Default Settings** button to display the **Default Settings** dialog.
+Go to the **Partner Center** screen (**Partners** \> **Partner Center**) and select the **Default Settings** button to display the **Default Settings** dialog.
 
 ## Step 2: Update your default settings
 

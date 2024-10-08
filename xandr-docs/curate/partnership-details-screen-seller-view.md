@@ -127,7 +127,7 @@ Negotiate a deal that meets yours and the buyer's needs by selecting **with Buye
 
 ## Edit a deal
 
-Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and then  select the edit icon to make the deal editable.
+Current and upcoming deals can be edited at any time. Hover over the deal you would like to update in order to display the edit icon, and then select the edit icon to make the deal editable.
 
 After you have made the necessary updates, select **Save** to save your changes. To exit edit mode, select **Cancel**.
 

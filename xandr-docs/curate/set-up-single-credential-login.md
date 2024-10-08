@@ -17,7 +17,7 @@ As soon as a single credential login has been created for you, you will receive 
 
 This task explains how to set up your single credential login.
 
-1. Select on the link shared in the welcome mail.
+1. Select the link shared in the welcome mail.
 1. Select **Set your password**.
 1. After selecting on the link, follow the on-screen prompts to set your password.
 

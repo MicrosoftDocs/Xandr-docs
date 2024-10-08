@@ -243,7 +243,7 @@ Microsoft Advertising records impressions when the impression is transacted on t
 
 In certain situations, the user may abandon the web page after the impression was counted, but prior to delivery of the ad content. In this case, the impression is counted in the "imps" metrics, but the impression is not counted as "viewable impression".
 
-### Logging techniques
+### Techniques for log management
 
 The Microsoft Advertising script periodically transfers data to a collection platform. Data transfers contain partial information about ad viewability that is then aggregated on the platform.
 

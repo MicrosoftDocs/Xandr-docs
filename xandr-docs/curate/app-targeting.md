@@ -4,7 +4,7 @@ description: In this article, understand what App Targeting is and the different
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - App targeting
+# Microsoft Curate - App target options
 
 > [!NOTE]
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).

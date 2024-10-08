@@ -27,13 +27,10 @@ From the Monetize navigation menu, select **Mediation** \> **Bids**. This will l
 
 The following basic settings will apply to all bids created in the current screen.
 
-**State**: Choose whether the bid is active (can participate in auctions) or inactive (cannot participate in auctions).
-
-**Waterfall label**: An optional label to track bids that target the same inventory / audience combination. Available as a column and filter on the Bids overview page.
-
-**Flight Dates**: Control the lifetime of the Bid to run during a specific time frame, or indefinitely by choosing **No End Date**.
-
-**Daily Budget Cap**: Limit the bid to a certain number of filled impressions or a certain amount of revenue per day. Note that unfilled impressions (passbacks) do not count towards the budget cap.
+- **State**: Choose whether the bid is active (can participate in auctions) or inactive (cannot participate in auctions).
+- **Waterfall label**: An optional label to track bids that target the same inventory / audience combination. Available as a column and filter on the Bids overview page.
+- **Flight Dates**: Control the lifetime of the Bid to run during a specific time frame, or indefinitely by choosing **No End Date**.
+- **Daily Budget Cap**: Limit the bid to a certain number of filled impressions or a certain amount of revenue per day. Note that unfilled impressions (passbacks) do not count towards the budget cap.
 
 ## Step 3: Define bid specific settings
 
@@ -41,36 +38,24 @@ The **Bid Setup** section allows the creation of one or more bids, each with the
 
 The following information is required for every Bid:
 
-**Network**: Choose an eligible network from the dropdown. Depending on the type of network, several new fields may appear to provide unique information about the creatives required for that network.
-
-**Bid Name**: The name that will appear for the Bid in the Monetize UI and reporting. This should be reasonably descriptive to differentiate from other Bids.
-
-**Bid CPM**: The price the network partner is likely to pay for the inventory. Mediated networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real time.
+- **Network**: Choose an eligible network from the dropdown. Depending on the type of network, several new fields may appear to provide unique information about the creatives required for that network.
+- **Bid Name**: The name that will appear for the Bid in the Monetize UI and reporting. This should be reasonably descriptive to differentiate from other Bids.
+- **Bid CPM**: The price the network partner is likely to pay for the inventory. Mediated networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real time.
 Publishers must regularly review reporting from each network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
-
-**Response Timeout**: Controls how long the network partner is given to respond to the bid request:
-
-- If the timeout is too low, revenue could be lost from bids earlier in the waterfall.
-- If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
-
-**Media Subtype**: The type of creative to be requested from the network (Standard Banner, In-Feed Standard, Standard VAST, etc). If the network supports multiple subtypes, each subtype must be created as a separate Bid with its own Ad Tags.
-
-**Ad Size**: The dimensions of the banner creative (example: `300x250`).
-
-**Custom Creative Request Template**: Some network partners offer multiple different creatives formats, which can be selected here.
-
-**Ad Tag**: The non-secure (HTTP) tag used to call the network for demand.
-
-**Support SSL**: Controls whether the Bid can serve via HTTPS. Enabling requires a separate, secure version of the ad tag. This only applies to display and mobile web creatives.
-
-**Secure Ad Tag**: The secure (HTTPS) tag used to call the network for demand.
+- **Response Timeout**: Controls how long the network partner is given to respond to the bid request:
+      - If the timeout is too low, revenue could be lost from bids earlier in the waterfall.
+      - If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
+- **Media Subtype**: The type of creative to be requested from the network (Standard Banner, In-Feed Standard, Standard VAST, etc). If the network supports multiple subtypes, each subtype must be created as a separate Bid with its own Ad Tags.
+- **Ad Size**: The dimensions of the banner creative (example: `300x250`).
+- **Custom Creative Request Template**: Some network partners offer multiple different creatives formats, which can be selected here.
+- **Ad Tag**: The non-secure (HTTP) tag used to call the network for demand.
+- **Support SSL**: Controls whether the Bid can serve via HTTPS. Enabling requires a separate, secure version of the ad tag. This only applies to display and mobile web creatives.
+- **Secure Ad Tag**: The secure (HTTPS) tag used to call the network for demand.
 
 The following informational fields are provided for each bid:
 
-**SSL Status**: Reflects audit status of the ad tag in the platform (pending, approved, failed, disabled). Only approved tags can serve.
-
-**Passback**: If no acceptable Bid is received for a request, a passback can be added to the ad tag to allow the next system in line to bid. Add the network's passback, listed here, to the ad tag to use this option.
-
+- **SSL Status**: Reflects audit status of the ad tag in the platform (pending, approved, failed, disabled). Only approved tags can serve.
+- **Passback**: If no acceptable Bid is received for a request, a passback can be added to the ad tag to allow the next system in line to bid. Add the network's passback, listed here, to the ad tag to use this option.
 Some mediated networks require their equivalent of a Monetize placement ID in the ad request. In some cases, multiple IDs are required. The Monetize Bids UI will prompt for the appropriate IDs from each network to ensure proper setup.
 
 ## Custom mobile network bids

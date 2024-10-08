@@ -19,10 +19,6 @@ To get started with mediation using API services, see:
 - [Mediated Network Service](./mediated-network-service.md)
 - [Mediated Bid Service](./mediated-bid-service.md)
  
-The following diagram provides a high-level overview of how these API services connect with each other and the outside world.
-
-:::image type="content" source="media/mediation-service-fig-a.png" alt-text="Diagram that provides a high-level overview of how the mediation services connect with each other and the outside world.":::
-
 ## Related topics
 
 - [API Best Practices](./api-best-practices.md)

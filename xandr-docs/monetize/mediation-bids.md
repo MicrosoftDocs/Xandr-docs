@@ -43,8 +43,10 @@ The following information is required for every Bid:
 - **Bid CPM**: The price the network partner is likely to pay for the inventory. Mediated networks are not connected directly to the Monetize exchange and do not submit bids into the auction in real time.
 Publishers must regularly review reporting from each network and adjust Bid CPM values to ensure they represent a realistic price. Otherwise, an inaccurate mediated Bid could win auctions over higher bids from other sources.
 - **Response Timeout**: Controls how long the network partner is given to respond to the bid request:
+
       - If the timeout is too low, revenue could be lost from bids earlier in the waterfall.
       - If the timeout is too high, page load times may suffer or the number of sequential bids that can participate within a single mediation waterfall could be limited.
+  
 - **Media Subtype**: The type of creative to be requested from the network (Standard Banner, In-Feed Standard, Standard VAST, etc). If the network supports multiple subtypes, each subtype must be created as a separate Bid with its own Ad Tags.
 - **Ad Size**: The dimensions of the banner creative (example: `300x250`).
 - **Custom Creative Request Template**: Some network partners offer multiple different creatives formats, which can be selected here.

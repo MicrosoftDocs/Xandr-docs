@@ -97,7 +97,7 @@ When a publisher’s bid request is received, Monetize evaluates the bid request
 
 To improve performance, consider creating separate bids by placement, ad size, geography, and operating system.
 
-## Step 5: Save your settings
+## Step 5: Save bid
 
 Click the **Save** button at the top of the screen to create the bid(s).
 

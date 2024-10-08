@@ -95,8 +95,8 @@ To set up each app SDK Network:
     a. In the Monetize UI, follow guidance to set up [Mediation Networks](mediation-networks.md) to represent each partner.
     b. In the Monetize UI, follow guidance to set up [Mediation Bids](mediation-bids.md) to represent the Network’s demand for specific inventory.
 1. If the desired mobile ad network **does not have a supported mediation adaptor**, publisher engineers must write a custom adaptor that allows the Microsoft SDK to communicate with the ad network's SDK. Once the adaptor is available, the custom mobile Network can be created along with bids.
-    1. Create [Android Custom Adaptors](../mobile-sdk/android-custom-adaptors.md)
-    1. Create [iOS Custom Adaptor](../mobile-sdk/ios-custom-adaptors.md)
+    1. Create [Android Custom Adaptors](../mobile-sdk/android-custom-adaptors.md).
+    1. Create [iOS Custom Adaptor](../mobile-sdk/ios-custom-adaptors.md).
     1. In the Monetize UI, follow guidance to set up [Mediation Networks](mediation-networks.md) to represent each partner, specifically as a Custom Mobile Network.
     1. In the Monetize UI, follow guidance to set up [Mediation Bids](mediation-bids.md) to represent the Network’s demand for specific inventory.
 1. Once Bids have been created and enabled, requests will be sent to network partners for demand.
@@ -108,8 +108,8 @@ When following the standard setup described above, the app request and response 
 1. The Microsoft Advertising SDK calls Monetize Ad Server.
 1. Monetize Ad Server runs an auction across its demand sources. Mediated Bids are ranked in the auction according to the Bid CPM entered by the publisher, alongside RTB bids.
 1. Monetize Ad Server responds differently depending on the auction outcome:
-      1. If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly
-      1. Otherwise, Monetize returns a list of mediated Networks (a waterfall) which Microsoft Advertising's SDK will use to communicate with other ad networks SDKs installed on the device
+      1. If the winning bid is an RTB bid, Monetize serves the ad from the RTB buyer directly.
+      1. Otherwise, Monetize returns a list of mediated Networks (a waterfall) which Microsoft Advertising's SDK will use to communicate with other ad networks SDKs installed on the device.
 1. The Microsoft Advertising SDK calls the mediated Networks' SDKs running on the same device in the order specified by the waterfall response from Monetize Ad Server.
 1. Each of the mediated SDKs listed in the waterfall has an opportunity to respond with an ad. The mediated SDK that serves notifies the Microsoft Advertising SDK to report the impression.
 

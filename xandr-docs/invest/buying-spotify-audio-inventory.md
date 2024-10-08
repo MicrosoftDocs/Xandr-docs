@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buying Spotify Audio Inventory
+title: Microsoft Invest - Buy Spotify Audio Inventory
 description: This article provides information on spotify audio, including creative specifications, audio inventory targeting, available supply, deals, and reporting options.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying spotify audio inventory
+# Microsoft Invest - Buy Spotify audio inventory
 
 This page provides specific information for **Spotify Audio** which includes, creative specifications, setting up a line item to target **Spotify** audio inventory, information regarding the available supply, what data is available through deals and reporting options.
 
@@ -17,7 +17,7 @@ This page provides specific information for **Spotify Audio** which includes, cr
 - **Audit**: Creatives must be submitted to Microsoft Advertising audit and be fully SSL compliant
 - **Alcohol:** Allowed only with 21+ age targeting
 
-## Adding an audio creative
+## Add an audio creative
 
 On the **Creative Manager** screen, click the **Create New** button, then select **Audio**.
 
@@ -45,7 +45,7 @@ The following categories are available via deals:
 - Current song Genre
 - Current song playlist
 
-## Reporting options
+## Options for reporting
 
 Standard creative reporting is available for Spotify Audio.
 

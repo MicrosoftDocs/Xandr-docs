@@ -1,12 +1,11 @@
 ---
 title: Impression Funnel (Seller Deals)
-description: Learn how the Impression Funnel panel on the Troubleshooting tab enables you to view the metrics of a curated deal and assess its overall performance. This page covers fields like time, columns, and values present in the Impression Funnel (Seller Deals) table.
+description: Learn how the Impression Funnel panel shows curated deal metrics, including time, columns, and values.
 ms.date: 11/14/2023
 
 ---
 
-
-# Impression Funnel: Seller Deals 
+# Impression Funnel: Seller deals 
 
 > [!NOTE]
 > This functionality currently is in Open Beta. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
@@ -20,7 +19,7 @@ The **Impression Funnel: Seller Deals** panel contains a table that allows you t
 - **Seller deals with the lowest win rates**: To check if an issue is preventing the buyer from winning impressions effectively through a
   seller deal.
 
-## Impression Funnel: Seller Deals
+## Impression Funnel: Seller deals
 
 ### Time
 

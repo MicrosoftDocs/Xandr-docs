@@ -1,10 +1,9 @@
 ---
-title: Microsoft Curate - Selling Curated Deals
+title: Microsoft Curate - Sell Curated Deals
 description: In this article, learn how sellers can create curated deals, understand why they're useful, and how to use them effectively.
 ms.date: 10/28/2023
 ---
-
-# Microsoft Curate - Selling curated deals
+# Microsoft Curate - Sell curated deals
 
 As a seller, you can create [Curated Deals](curated-deals.md) to provide buyers special access to inventory and/or data. For example, a curated deal might provide preferential pricing on inventory, access to exclusive inventory, audience or contextual data, or other opportunities.
 

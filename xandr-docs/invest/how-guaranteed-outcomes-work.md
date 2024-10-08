@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - How Guaranteed Outcomes Work
+title: Microsoft Invest - Guaranteed Outcomes Mechanism and Bid Process
 description: This article explains how Guaranteed Outcomes work. The outcome-based bids from the buyer are translated into impression-based CPM revenue for the seller.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - How Guaranteed Outcomes work
+# Microsoft Invest - Guaranteed Outcomes mechanism and bid process
 
 The following overview describes the logic of Guaranteed Outcomes:
 
@@ -16,4 +16,4 @@ The following overview describes the logic of Guaranteed Outcomes:
 
 ## Related topic
 
-- [Guaranteed Outcomes](./guaranteed-outcomes.md)
+[Guaranteed Outcomes](./guaranteed-outcomes.md)

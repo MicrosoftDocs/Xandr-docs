@@ -4,7 +4,6 @@ description: In this page, learn what is Offline Attribution report and how it h
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Offline attribution report
 
 The Offline Attribution report lets you track your line item's offline sales performance. This report is only available for Microsoft Invest clients that have **Offline Attribution** enabled on their line items.
@@ -13,7 +12,7 @@ The Offline Attribution report lets you track your line item's offline sales per
 
 NCS data uses the time zone(s) where offline sales take place, so you don't need to make a time zone selection when generating this report.
 
-**Time Ranges**
+### Time ranges
 
 Time ranges define the time period of the data extracted for the report. Here are the ranges available for this report:
 
@@ -26,7 +25,7 @@ Time ranges define the time period of the data extracted for the report. Here ar
 > [!NOTE]
 > When making a **Range** selection, note that NCS reports requested between Sunday and Tuesday won't include NCS data from the current week.
 
-**Intervals**
+### Intervals
 
 Intervals determine how your data is grouped into rows in the report response.
 
@@ -75,7 +74,7 @@ Some dimensions have *attributes*. Dimension attributes are a more granular elem
 | Imps (viewed) | Impressions that are considered viewable as defined by the Interactive Advertising Bureau (IAB): For at least one second, 50% of a creative's pixels (or 30% for a creative with at least 242,500 pixels) must render on a screen. |
 | 100% Complete | For a video creative, the number of times the video creative was viewed to completion. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run the report:
 
@@ -84,7 +83,7 @@ Follow these steps to run the report:
     > [!IMPORTANT]
     > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
 
    > [!WARNING]
@@ -97,7 +96,7 @@ Follow these steps to run the report:
     - **Save as report template**: Save your selected report settings so that you can run this report again in the future. You can name this template using the text entry field under **Name this report** (its checkbox is auto-selected when you choose this option). A saved report can be rerun from the **Your Reports** screen.
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.
 
 ## Related topics
 

@@ -1,18 +1,17 @@
 ---
-title: Microsoft Invest - Configuring Tracking for Creatives
+title: Microsoft Invest - Configure Tracking for Creatives
 description: Learn to set tracking parameters like frequency and recency caps, third-party tracking pixels and segment pixels in this page.   
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Configuring tracking for creatives  
+# Microsoft Invest - Configure tracking for creatives
 
 When adding creatives, you can set a variety of tracking parameters from the **Pixels (optional)** section, such as frequency and recency caps, third-party tracking pixels, and segment pixels.
 
-- **[Click Tracking](click-tracking.md)**: The system automatically runs a click tracking test when the creative is uploaded. If the system fails to automatically run a click tracking test for your creative when using the single creative workflow to upload one creative, you can manually click the **Run Test** button from the **Pixels (optional)** section.
+- **[Click Tracking](click-tracking.md)**: The system automatically runs a click tracking test when the creative is uploaded. If the system fails to automatically run a click tracking test for your creative when using the single creative workflow to upload one creative, you can manually select the **Run Test** button from the **Pixels (optional)** section.
   
   > [!NOTE]
-  > If the click tracking test is unsuccessful, which is indicated by a red **X**, re-upload the file or update the landing page URL and click the **try again** link that displays in the **Pixels (optional)** section.
+  > If the click tracking test is unsuccessful, which is indicated by a red **X**, re-upload the file or update the landing page URL and select the **try again** link that displays in the **Pixels (optional)** section.
 
 - **[Frequency and Recency Caps](frequency-and-recency-caps.md)**: You can specify the number of times and pace in which a creative can be shown to a given user. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 - **[Third-Party Tracking Pixels for Creatives](third-party-tracking-pixels-for-creatives.md)**: You can create third-party tracking pixels at either the advertiser or Member level and then associate them with your creatives. You can also associate custom third-party tracking pixels with your creatives if you want to use another system to track impressions by selecting the **Format** (**Image URL, HTML URL, JavaScript URL,** or **Raw JavaScript**) for the pixel and entering URLs (**Secure** and **Non-Secure**) for each tracking event. The following tracking events are supported:
@@ -40,8 +39,6 @@ When adding creatives, you can set a variety of tracking parameters from the **P
   
   > [!NOTE]
   > The more segment pixels that you add to a creative will result in more latency for end users.
-
-- **[Moat Video Viewability Measurement](moat-video-viewability-measurement.md)**: You can improve video viewability analytics by linking a hosted video creative to Moat's viewability measurement and reporting (also known as **Moat Attention Metrics**).
 
 - **AdChoices**: You can append the AdChoices icon to your creatives, giving your audience control over how information about their interests is used for relevant advertising.
   

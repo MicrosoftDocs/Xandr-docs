@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - How Geography Targeting Works
+title: Microsoft Invest - Geography Targeting Process
 description: This article explains how geography targeting works. Geography targeting is supported by Digital Envoy's IP lookup service.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - How geography targeting works
+# Microsoft Invest - Geography targeting process
 
 Geography targeting is supported by an IP lookup service provided by [Digital Envoy](https://www.digitalelement.com/). This service maps IP addresses to known countries, regions, cities, metro codes, and postal codes. We currently use [Digital Envoy's NetAcuity Pulse](https://www.digitalelement.com/solutions/netacuity-pulse/) database. Note that GPS coordinates, when available, are not derived from IP addresses but are provided directly from certain environments when users consent to share their location (for example, in mobile apps).
 

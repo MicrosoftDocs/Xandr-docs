@@ -1,6 +1,6 @@
 ---
 title: About Microsoft Curate
-description: In this article, understand what Microsoft Curate is and the benefits of using it.
+description: Learn how Microsoft Curate allows curators to enhance sellers' inventory with proprietary assets and create unique offerings for buyers.
 ms.date: 10/28/2023
 ---
 

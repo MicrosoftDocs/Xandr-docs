@@ -2,8 +2,6 @@
 title: Mediate with iOS
 description: This article provides information on mediation with iOS. Mediation lets you sell ad impressions through multiple networks to generate more revenue.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
-ms.author: shsrinivasan
 ---
 
 # Mediate with iOS
@@ -23,7 +21,7 @@ This section lists the networks that we provide mediation adaptors for, and the 
 | Adaptor | Version | Banner | Interstitial | Native | Docs |
 |:---|:---|:---|:---|:---|:---|
 | AdMob and DFP | 10.10.0  | Yes | Yes | Yes | [Google Mobile Ads - iOS Document](https://developers.google.com/admob/ios/mediation) |
-| SmartAdServer | 7.22.0  | Yes | Yes | No | [SmartAdServer Documentation](https://documentation.smartadserver.com/displaySDK/) |
+| SmartAdServer | 7.24.2  | Yes | Yes | No | [SmartAdServer Documentation](https://documentation.smartadserver.com/displaySDK/) |
 
 ## Prerequisites
 

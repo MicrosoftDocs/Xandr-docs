@@ -4,12 +4,11 @@ description: Learn how creative rotation and manual weighting works in this page
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Creative rotation (ALI) 
+# Microsoft Invest - Creative rotation (ALI)
 
 When multiple creatives of the same size are trafficked to a line item, you can set a creative delivery strategy using the **Creative Rotation** settings in the **Associated Creatives** section on the **Create New Line Item** and **Edit Line Item** screens.
 
-## How creative rotation works
+## Creative rotation workflow
 
 The following table outlines the available creative rotation strategies and describes how they work.
 
@@ -18,12 +17,12 @@ The following table outlines the available creative rotation strategies and desc
 
 | Creative Rotation Strategy | Description |
 |:-|:-|
-| Manually weight creatives | The rotation is based on a user-supplied weight. If you select the manual weighting option, you'll have the option to set the creative weight when you edit the creative. The allowed weight is between 1 and 999. The default weight is 10.<br>The allocation percentage is determined by dividing this creative's weight by the sum of the weights of all same-sized creatives. For example, if you set the weight of a 300x50 creative to 30, and the weights of all 300x50 creatives on the line item total 100, this creative will bid on that line item's behalf 30% of the time. For more information, see [How Manual Weighting Works](#how-manual-weighting-works). |
+| Manually weight creatives | The rotation is based on a user-supplied weight. If you select the manual weighting option, you'll have the option to set the creative weight when you edit the creative. The allowed weight is between 1 and 999. The default weight is 10.<br>The allocation percentage is determined by dividing this creative's weight by the sum of the weights of all same-sized creatives. For example, if you set the weight of a 300x50 creative to 30, and the weights of all 300x50 creatives on the line item total 100, this creative will bid on that line item's behalf 30% of the time. For more information, see [Manual creative weighing workflow](#manual-creative-weighting-workflow). |
 | Inherit creative weight from splits | The rotation is based on a user-supplied weight that is defined per split. Impressions are allocated per split with weights assigned to the splits themselves. For example, if a split has a spend allocation of 50%, 50% of impressions will go to that split. If multiple creatives are associated with a split, impressions are distributed evenly among the associated creatives. |
 | Auto-optimize creative weight | The creative within a size bucket with the highest click-through-rate (CTR) delivers the most. This is the default setting.<br>Microsoft Advertising assigns weights per creative for nodes (tag and inventory URL combinations) that have at least 50,000 impressions and 10 clicks served by the line item. When the creative is new, default weights are assigned instead. |
 | Evenly weight creatives | Impressions are allocated evenly across same-sized creatives, which is handled automatically by our system. |
 
-## How manual weighting works
+## Manual creative weighting workflow
 
 Let's say your line item has the following creatives competing to serve and you've selected the **Manually weight creatives** option:
 

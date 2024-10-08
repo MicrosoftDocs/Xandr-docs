@@ -1,29 +1,29 @@
 ---
 title: Long Form Video Service
 description: In this article, learn about the Long Form Video service, their request and response process, and parameters with an example.
-ms.date: 10/28/2023
+ms.date: 09/25/2024
 ms.custom: digital-platform-api
 ---
 
 # Long Form Video service
 
-SSP customers can integrate their app or web long-form ad pod video inventory with Prebid Server Premium (PSP) using the `/prebid/lfv` endpoint. Long-form video durations are at least 30 minutes with potential pre, mid, and post-roll positions.
+Direct Supply customers can integrate their app or web long-form ad pod video inventory with Prebid Server Premium (PSP) using the `/prebid/lfv` endpoint. Long-form video durations are at least 30 minutes with potential pre, mid, and post-roll positions.
 
-Microsoft Monetize Ad Server customers do not need to change their current integration into Xandr, can ignore the long-form video service, and can instead follow the [PSP Setup Steps](../monetize/integrate-with-psp.md).
+Microsoft Monetize Ad Server customers do not need to change their current integration into Microsoft Monetize, can ignore the long-form video service, and can instead follow the [PSP Setup Steps](../monetize/integrate-with-psp.md).
 
 ## Request and response process
 
 The following steps outline the long-form video request and response process:
 
-1. Publishers submit a long-form video request to Xandr's Impression Bus (ImpBus) via the `/prebid/lfv` endpoint. This request contains `POST` values for the ad pod such as ad duration, video width and height, and optional properties such as brand category for competitive separation.
+1. Publishers submit a long-form video request to Microsoft Monetize's Impression Bus (ImpBus) via the `/prebid/lfv` endpoint. This request contains `POST` values for the ad pod such as ad duration, video width and height, and optional properties such as brand category for competitive separation.
 1. ImpBus unpacks the request and determines the number of ad slots to fill within the ad pod.
 1. The configurations from Monetize are retrieved and an OpenRTB request with the requested number of ad slots is created by ImpBus.
-1. ImpBus submits the OpenRTB request to all Xandr bidders, including PSP demand partners and Microsoft Invest
+1. ImpBus submits the OpenRTB request to all Microsoft Monetize bidders, including PSP demand partners and Microsoft Invest
     1. The Prebid demand partners return bids, each with a unique IAB subcategory.
-    1. Microsoft Invest and external bidders have a unique Xandr brand category associated with every bid which are converted to an IAB subcategory. For more information, see [Adserver Category Mapping Service](adserver-category-mapping-service.md).
-1. ImpBus runs the auction for the Xandr marketplace to determine the winning Xandr bid.
+    1. Microsoft Invest and external bidders have a unique Microsoft Monetize brand category associated with every bid which are converted to an IAB subcategory. For more information, see [Adserver Category Mapping Service](adserver-category-mapping-service.md).
+1. ImpBus runs the auction for the Microsoft Monetize marketplace to determine the winning Microsoft Monetize bid.
 1. Based on the publisher and ad server configuration retrieved in step three, ImpBus translates the IAB subcategories to the primary ad server categories (Freewheel or Google Ad Manager). For more information, see [Adserver Category Mapping Service](adserver-category-mapping-service.md).
-    1. For Xandr bids, ImpBus will translate from the Xandr category to the IAB subcategory and finally to the primary ad server category.
+    1. For Microsoft Monetize bids, ImpBus will translate from the Microsoft Monetize category to the IAB subcategory and finally to the primary ad server category.
 1. The bids are deduped based on the tuple values for price bucket, primary ad server category, and duration.
 1. For each unique bid, ImpBus caches the unique VAST XML.
 1. Key-value targeting pairs are generated for each bid for `hb_pb`, `hb_pb_cat_dur,` and `hb_cache_id`.
@@ -181,7 +181,7 @@ The `user` object supports the following request parameters.
 
 | Parameter | Scope | Type | Description |
 |:---|:---|:---|:---|
-| `buyeruid` | Optional | Integer | The Xandr user ID, if known. |
+| `buyeruid` | Optional | Integer | The Microsoft Monetize user ID, if known. |
 | `yob` | Optional | Integer | The user's year of birth as a four-digit integer. |
 | `gender` | Optional | Integer | The user's gender. Accepted values are:<br>- `M`: male<br>- `F`: female<br>- `O`: Known to be other. |
 | `keywords` | Optional | String | A list of keywords representing interests or intent. |

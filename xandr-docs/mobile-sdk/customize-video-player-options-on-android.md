@@ -2,8 +2,6 @@
 title: Customize Video Player Options on Android
 description: In this article, find information about the video player controls that you can customize on Android devices.
 ms.custom: android-sdk
-ms.date: 10/28/2023
-ms.author: shsrinivasan
 ---
 
 # Customize video player options on Android
@@ -13,17 +11,20 @@ ms.author: shsrinivasan
 > [!NOTE]
 > The customization is applied to all of the Video ads served through Xandr SDK both Instream and Banner Video(Outstream).
 
-| Function | Default Setting | Description |
-|---|---|---|
-| `void shouldShowClickThroughControl` <br> (**boolean** `showClickThroughControl`) | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable |
-| `void setClickThroughText` <br> (**string** `clickThroughText`) | "Learn More" | Customizes the text associated with the ClickThrough Control |
-| `void shouldShowFullScreenControl` <br> (**boolean** `showFullScreenControl`)  (Banner Video Only) | true | Controls the visibility of the fullscreen button for Banner Video |
-| `void shouldShowTopBar` <br> (**boolean** `showTopBar`) | true | Determines whether the top bar, containing ClickThrough and Skip controls, is displayed |
-| `void shouldShowAdText` <br> (**boolean** `showAdText`) | true | Controls the visibility of the ad text next to the ClickThrough control |
-| `void setAdText` <br> (**string** `adText`) | "Ad" | Customizes the ad text on the video player |
-| `void shouldShowVolumeControl` <br> (**boolean** `showVolumeControl`) | true | Controls the visibility of the mute/unmute control |
-| `void setInitialAudio` <br> (**ANInitialAudioSetting** `initialAudio`) | Sound On (Instream), Sound Off ( Banner Video) | Sets the initial audio state for Instream and Banner Videos |
-| `void shouldShowSkip` <br> (**boolean** `showSkip`) (Instream Video Only) | true | Controls the visibility of the Skip control for Instream Video |
+| Function | Default Setting | Description | Ad Units supporting the Setting |
+|:---|:---|:---|
+| `void shouldShowClickThroughControl` <br> (**boolean** `showClickThroughControl`) | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. | Instream / Banner Video |
+| `void setClickThroughText` <br> (**string** `clickThroughText`) | "Learn More" | Customizes the text associated with the ClickThrough Control. | Instream / Banner Video |
+| `void shouldShowFullScreenControl` <br> (**boolean** `showFullScreenControl`)  (Banner Video Only) | true | Controls the visibility of the fullscreen button. |Banner Video|
+| `void shouldShowTopBar` <br> (**boolean** `showTopBar`) | true | Determines whether the top bar, containing ClickThrough and Skip controls is displayed. |Instream / Banner Video|
+| `void shouldShowAdText` <br> (**boolean** `showAdText`) | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream / Banner Video / Interstitial |
+| `void setAdText` <br> (**string** `adText`) | "Ad" | Customizes the ad text on the video player. |Instream / Banner Video / Interstitial|
+| `void shouldShowVolumeControl` <br> (**boolean** `showVolumeControl`) | true | Controls the visibility of the mute/unmute control. |Instream / Banner Video|
+| `void setInitialAudio` <br> (**ANInitialAudioSetting** `initialAudio`) | Sound On (Instream), Sound Off (Banner Video) | Sets the initial audio state. |Instream / Banner Video|
+| `void shouldShowSkip` <br> (**boolean** `showSkip`) (Instream Video Only) | true | Controls the visibility of the Skip control. |Instream / Interstitial|
+| `void setSkipDescription` (**String** `skipDescription`) | "Skip in %%TIME%%s" | Customizes Skip Description. | Instream / Interstitial |
+| `void setSkipLabelName` (**String** `skipLabelName`) | "Skip ad" | Customizes Skip Label. | Instream / Interstitial |
+| `void setSkipOffset` (**Integer** `skipOffset`) | "5 seconds" | Customizes Skip Offset.| Instream / Interstitial |
 
 ## Example
 

@@ -10,7 +10,7 @@ You can target users within segments by using Boolean expressions. Users get add
 
 You can set up segment targeting by going to the **Audience & Location Targeting** > **Audience & Location Segments** subsection within the **Create New Line Item** screen or **Edit Line Item** screen. The **Audience & Location Segments** subsection displays all segments belonging to the advertiser for the associated line item as well as segments defined at the Member level.
 
-## Creating boolean expressions between segment groups and segments
+## Create boolean expressions between segment groups and segments
 
 You can use the following Boolean operators to narrow or broaden your targeting scope:
 

@@ -1,18 +1,18 @@
 ---
-title: Microsoft Invest - Reporting Labels
+title: Microsoft Invest - Run a Report using Reporting Labels
 description: In this article, learn how to assign and run reports using reporting labels as a filter or a dimension in Member Analytics and Advertiser Analytics.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Reporting labels
+# Microsoft Invest - Run a report using Reporting Labels
 
 Reporting Labels allow you to report by metrics that are important to your business. You can assign an Account Manager, a Salesperson, and Advertiser Type, allowing you to report by these labels in order to better assess performance. You can also assign a Trafficker, Sales Rep, and Type (Insertion Order of Line Item) to your insertion order or line item.
 
-## Assigning labels
+## Assign Reporting Labels
 
 You assign Reporting Labels on the **Create/Edit** screen under Reporting Labels. It will take about 30 minutes for the labels to show up in reporting.
 
-## Reporting on labels
+## Generate a report with Reporting Labels
 
 You can run reports using Reporting Labels as a filter or a dimension in Member Analytics and Advertiser Analytics. This allows you to assess performance more easily.
 

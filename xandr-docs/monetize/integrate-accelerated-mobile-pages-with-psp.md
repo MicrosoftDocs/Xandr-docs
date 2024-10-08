@@ -10,7 +10,7 @@ Both Microsoft Monetize Ad Server and Direct Supply customers must follow the be
 
 ## Context
 
-When a publisher calls Microsoft Advertising using the `/prebid/amp` endpoint, Microsoft Advertising responds with key-values for each adapter and the top bid. This happens regardless of whether the client has a consolidated or bidder-specific line item setup. Microsoft Advertising Prebid bid response includes Prebid key-values (bidder, price, deal, and so on) for each SSP (Microsoft Advertising and/or SSP demand partners with PSP) that submitted a valid bid into the auction.
+When a publisher calls Microsoft Monetize using the `/prebid/amp` endpoint, Microsoft Monetize responds with key-values for each adapter and the top bid. This happens regardless of whether the client has a consolidated or bidder-specific line item setup. Microsoft Monetize Prebid bid response includes Prebid key-values (bidder, price, deal, and so on) for each SSP (Microsoft Monetize and/or SSP demand partners with PSP) that submitted a valid bid into the auction.
 
 ## Implementation
 
@@ -28,7 +28,7 @@ To set up AMP inventory with PSP:
     </amp-ad> 
     ```
 
-1. Exclude any demand partners that are [supported through PSP](prebid-server-premium-demand-partner-integrations.md) from the `rtc-config`. Retain vendors like `prebidappnexuspsp` and any partners who do not support PSP.
+1. Exclude any demand partners that are [supported through PSP](prebid-server-premium-demand-partner-integrations.md) from the `rtc-config`. Retain `prebidappnexuspsp` and any partners who do not support PSP.
 1. Set up [PSP-supported demand partners](prebid-server-premium-demand-partner-integrations.md) in Monetize by navigating to **Publishers** > **Prebid Server Premium** > **Demand Partner Configurations**. For more information, see [Add, Edit, or Delete a PSP Configuration](add-edit-or-delete-a-psp-configuration.md).
 
     > [!IMPORTANT]
@@ -36,7 +36,9 @@ To set up AMP inventory with PSP:
     >
     > - Enable the checkbox **Serve into a SafeFrame** of Prebid Universal Creatives set up in GAM. This ensures viewability tracking.
     > - All relevant ad sizes are included on the creatives in GAM.
-    > - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Microsoft Advertising.
+    > - Any optional `hb_bidder` targeting must include all relevant PSP demand partners, not just Microsoft Monetize.
+
+  1. Proceed with [PSP Setup steps](set-up-prebid-server-premium.md)
 
 ## Related topics
 

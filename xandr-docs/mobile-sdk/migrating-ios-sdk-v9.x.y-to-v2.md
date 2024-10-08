@@ -1,14 +1,12 @@
 ---
-title: SDK integration instructions v9.0.0
+title: SDK integration instructions v9.1.0
 description: Learn how to integrate the AppNexusSDK into your iOS app using CocoaPods, Carthage, or XCFramework with detailed instructions.
 ms.custom: ios-sdk
-ms.date: 07/09/2023
-ms.author: shsrinivasan
 ---
 
-# SDK integration instructions v9.0.0
+# SDK integration instructions v9.1.0
 
-This page describes how to integrate iOS Mobile SDK v9.0.0 within your Xcode project, as well as how to display ads in your app. For instructions on displaying different ad types, see respective [Ad Unit](ios-sdk-ad-units.md) pages.
+This page describes how to integrate iOS Mobile SDK v9.1.0 within your Xcode project, as well as how to display ads in your app. For instructions on displaying different ad types, see respective [Ad Unit](ios-sdk-ad-units.md) pages.
 
 ## Requirements
 
@@ -97,7 +95,7 @@ Once you've installed Carthage on your computer, follow these steps:
   
 ## XCFramework
 
-Download the latest iOS SDK v9.0.0 from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.0.0/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
+Download the latest iOS SDK v9.1.0 from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.1.0/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
 
 | Framework | Description |
 |---|---|

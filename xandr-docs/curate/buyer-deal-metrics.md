@@ -1,15 +1,15 @@
 ---
-title: Microsoft Curate - Buyer Deal Metrics
+title: Microsoft Curate - Buyer Deal Metrics Report
 description: In this article, learn what a Buyer Deal Metrics Report is and how you can run this report to view information like deal metrics, performance, and rejection reasons.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Buyer deal metrics
+# Microsoft Curate - Buyer Deal Metrics report
 
 > [!NOTE]
 > As of May 3, 2021, Imps Matched and Bid Requests will be randomly sampled at a rate of 10 percent. The sampled values will be multiplied by 10 to give a reasonable estimate in all screens where these two metrics are reported. No other deal metrics will be affected.
 
-The Buyer Deal Metrics report provides key information about deal metrics, performance, and rejection reasons that is relevant to buyers.
+The Buyer Deal Metrics Report provides key information about deal metrics, performance, and rejection reasons that is relevant to buyers.
 
 ## Time frame
 
@@ -125,7 +125,7 @@ However, all intervals are not available for every report.
 | Reject Other Data Protection Count | The total number of bids rejected for data security reasons not listed above. |
 | Submitted Bids | The number of bids which were eligible in the final auction. For deals with Microsoft Advertising sellers, this value is equal to the number of bids minus the number of rejected bids. For deals with SSPs, this value is equal to the number of bids submitted to the SSP for the final auction. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report. Refer to [Dimensions](#dimensions) and [Metrics](#metrics) sections above for more information about the definitions of the data fields.
 

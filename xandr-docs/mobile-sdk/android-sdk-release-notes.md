@@ -2,11 +2,15 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
-ms.date: 10/28/2023
-ms.author: shsrinivasan
 ---
 
 # Android SDK release notes
+
+## 9.1.0
+
+### New Feature
+
+- 7667039 - Support for VAST Video Ads in Interstitial Ad Unit.
 
 ## 9.0.1
 

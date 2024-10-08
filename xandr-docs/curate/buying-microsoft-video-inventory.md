@@ -1,9 +1,9 @@
 ---
-title: Microsoft Curate - Buying Microsoft Video Inventory 
+title: Microsoft Curate - Buy Microsoft Video Inventory 
 description: Explore how Microsoft video inventory blends programmatic buying's targeting with interactive ad formats. Learn types and creative specifications.
 ---
 
-# Microsoft Curate - Buying Microsoft video inventory
+# Microsoft Curate - Buy Microsoft video inventory
 
 Microsoft video inventory combines the targeting effectiveness of programmatic buying with interactive ad formats.
 
@@ -41,21 +41,22 @@ To learn more about Microsoft's various video creative specifications, see the f
 - [Microsoft Creative Specifications](https://advertising.microsoft.com/creative-specs)
 - [Microsoft Creative Acceptance Policy](https://advertising.microsoft.com/creative-acceptance-policy)
 
-## Targeting Microsoft video inventory
+## Target Microsoft video inventory
 
 Each video inventory type can be targeted using RTB or Deals. To target Microsoft video inventory, follow the guidelines listed in the table below:
 
 | Targeting Method | Guideline |
 |--|--|
-| RTB | - **For MSN**: In your inventory list, include the msn.com domain. For more information, see [Buying MSN Inventory](buying-msn-inventory.md).<br> - **For Windows**: In your inventory list, target **Windows AppNetwork (348882)**. For more information, see [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).<br>Depending on market availability, buyers can also target the In-stream and Outstream video position as described in [Video Targeting](video-targeting.md). |
+| RTB | - **For MSN**: In your inventory list, include the msn.com domain. For more information, see [Buy MSN Inventory](buying-msn-inventory.md).<br> - **For Windows**: In your inventory list, target **Windows AppNetwork (348882)**. For more information, see [Buy Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).<br>Depending on market availability, buyers can also target the In-stream and Outstream video position as described in [Video Targeting](video-targeting.md). |
 | Deals | - Contact your Verizon representatives if you want to target deals in the following markets: US, Canada, UK, Germany, Spain, Italy, France, Brazil, and Japan.<br> - Contact your Microsoft Advertising account representative if you want to target deals in the following markets: Austria, Belgium, Denmark, Finland, Ireland, Netherlands, Norway, Portugal, Sweden, Switzerland, and all emerging markets. |
 | External Bidder | - When targeting msn.com, add **msn.com** to the targeted domain list using the [Inventory List Item Service](../digital-platform-api/inventory-list-item-service.md). All MSN domains will be captured by the parent msn.com domain.<br> - When targeting video bid requests, we highly recommend that bidders listen to the [Video AppNexus Object](../bidders/outgoing-bid-request-to-bidders.md) within the Video Extension Object to distinguish In-stream, Outstream, and Bannerstream bid requests. Without listening to this object, it is difficult to differentiate Bannerstream inventory since Bannerstream is a proprietary Microsoft Advertising format.
+
 > [!NOTE]
 > Information the user should notice even if skimming If you choose to filter by creative size, the list of creative sizes must be exhaustive. Include 1x1 as a permitted size since all of our video inventory appears as 1x1. For more information, see our [Bidder Profile - FAQ](..\bidders\bidder-profile---faq.md).
 
 ## Availability and volume
 
-To see the latest availability and volume metrics for a particular product and market, download the latest: [Excel file](https://xandr-be-prod.zoominsoftware.io/bundle/curate_curate-standard/page/attachments/buying-microsoft-video-inventory/msft-video-volume-by-format-final-june-2017.xlsx).
+To see the latest availability and volume metrics for a particular product and market, download the latest: [Excel file](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdownload.microsoft.com%2Fdownload%2Fe%2Fe%2F5%2Fee544211-092a-45c4-8076-57b5c5aaceb3%2F28%2520Dec%25202023%2Fmsft-video-volume-by-format-final-june-2017.xlsx&wdOrigin=BROWSELINK).
 
 Here are some quick volume metric highlights:
 
@@ -69,4 +70,4 @@ Here are some quick volume metric highlights:
 
 ## Related topic
 
-[Buying Microsoft Inventory](buying-microsoft-inventory.md)
+[Buy Microsoft Inventory](buying-microsoft-inventory.md)

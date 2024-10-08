@@ -17,7 +17,7 @@ Occasionally, publishers pass the age or gender of users in the query string of 
 > [!WARNING]
 > User age and gender are passed for a small portion of impressions. Targeting specific age groups and/or genders will drastically limit reach.
 
-1. In the **Demographics** section in the **Audience & Location Targeting** section of the augmented line item, click the pencil icon next to **Demographics**.
+1. In the **Demographics** section in the **Audience & Location Targeting** section of the augmented line item, select the pencil icon next to **Demographics**.
 1. By default, any age or gender is targeted. For **Age**, you can narrow your targeting to only specific preset age ranges, or you can define custom age ranges.
 1. For **Gender**, you can narrow your targeting to one gender or the other.
 

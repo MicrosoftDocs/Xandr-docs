@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Safety Budget and Third-Party Inventory
+title: Microsoft Invest - Cap Daily Spend on Third-Party Inventory (Safety Budget)
 description: Learn how to set and manage a safety budget, which can be 5-10 times the daily spend. A safety budget limits daily media cost spend on third-party inventory.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Capping daily spend on third-party inventory (safety budget)
+# Microsoft Invest - Cap daily spend on third-party inventory (safety budget)
 
 > [!WARNING]
 > Safety budgets are meant for CPM bidding and do not take CPA and CPC spending into account.
@@ -22,7 +22,7 @@ Ultimately, use the safety budget as an additional layer of security, but try to
 
 This page walks you through the process of setting your safety budget and selecting which users should be alerted when you reach 80% of your safety budget and again when it has been hit.
 
-## Getting to the safety budget
+## Get to the safety budget
 
 Safety Budget settings are available under your Member Settings.
 

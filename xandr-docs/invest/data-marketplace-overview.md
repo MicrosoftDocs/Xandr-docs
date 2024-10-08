@@ -4,7 +4,7 @@ description: In this article, find information about the workflow, filtering, an
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Data Marketplace overview
+# Microsoft Invest - Data marketplace overview
 
 The data marketplace consolidates data offerings from a diverse range of integrated third-party data providers. It facilitates automatic clearing for data purchased on our platform. The available data caters to various use cases and encompasses both cookie-based and non-cookie-based segments.
 
@@ -19,18 +19,18 @@ The procedures outlined in this section elucidate the steps to make a data provi
 To access a particular data provider's segment offering:
 
 1. Navigate to the Segments screen **Audiences** > **Segments**
-1. Click **Manage Data Providers**. If you don't see this option, contact your Account Manager.
+1. Select **Manage Data Providers**. If you don't see this option, contact your Account Manager.
 1. Select the data providers for whom you want the data cost to be cleared directly by Microsoft. Each activated data provider (whose data cost will be cleared by Microsoft) will appear checked and highlighted.
 
 > [!NOTE]
 > If you ever choose to deactivate a data provider, you must first remove all active targeting of their segments. Once you have removed any targeting that is using these segments, log in to the [Customer Support Portal](https://help.xandr.com/) and create a ticket to complete the deactivation.
 
-### Determining if a segment will be cleared within the data marketplace
+### Determine if a segment will be cleared within the data marketplace
 
 - If the **Price** column in the **Segment Manager** or **Segment Chooser** lists a value for the segment, that segment will be cleared as part of the Data Marketplace.
 - If **--** is displayed in the **Price** column in the **Segment Manager** next to a segment, that segment is not supported by the Data Marketplace. If you opt to utilize these unsupported segments for audience targeting, you will need to agree upon an established billing process with the data provider.
 
-### Setting segment targeting
+### Set segment targeting
 
 1. When selecting targeting options on the line item, navigate to the "Data Marketplace" section under "**Audience**"
 1. The available segments (along with prices, when available) will then be displayed on the **Segments** screen. It is possible to filter for different data providers in the menu.
@@ -75,9 +75,9 @@ To offer clarification, the following are some of the metrics that appear in the
 
 Your invoices contain the Cost of Data row. This row is a sum of all third-party data costs incurred for that month. To verify that these invoice values are accurate, compare them to the data in your [Data Usage Report](data-usage-report.md). For more details on invoices, see [Understanding Your Invoice](understanding-your-invoice.md).
 
-### Setting data costs to display in grid views
+### Set data costs to display in grid views
 
-To set your Insertion Order or Line Item grid views to display your third-party data costs, click on the column settings button (for each object) and select Third-party Costs on the Configure Columns screen that appears. As a result of selecting this option, the aggregated totals of all third-party data costs will appear within your grid views.
+To set your Insertion Order or Line Item grid views to display your third-party data costs, select the column settings button (for each object) and select Third-party Costs on the Configure Columns screen that appears. As a result of selecting this option, the aggregated totals of all third-party data costs will appear within your grid views.
 
 ### Data cost metric on the insertion order grid view
 

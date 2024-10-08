@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Microsoft Advertising has brandsafe creative policies, but in order to run ads through the Google Ad Manager, you must also follow the requirements below.
 
-## Enabling your Microsoft Advertising member seat for Google Ad Manager buying
+## Enable your Microsoft Advertising member seat for Google Ad Manager buying
 
 Microsoft Advertising member seats do not have access to Google Ad Manager by default; the ability to buy Google Ad Manager inventory requires a separate enablement process for each Microsoft Advertising member seat. There are two types of setups:
 
@@ -34,7 +34,7 @@ Google maintains a list of technology vendors that are approved to run on Ad Exc
 
 In order to buy Google Ad Manager inventory, creatives must also meet Google's standards and policy requirements, and must pass a separate audit in the Google Ad Manager system. You can find more information on this process in [Google Ad Manager Creative Audit Process](adx-creative-audit-process.md).
 
-## Transacting deals with Google Ad Manager
+## Transaction of deals with Google Ad Manager
 
 For instructions on how to transact deals with specific sellers on Google Ad Manager, see [Negotiate Deals with Sellers](negotiate-deals-with-sellers.md).
 

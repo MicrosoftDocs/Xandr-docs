@@ -56,7 +56,7 @@ Enter basic details for the new deal:
   - **Standard Auction** - This is the standard auction type.
   - **Fixed Price** - If you select a fixed-price auction, you will need to enter an ask price. Any buyer who bids above this value will be eligible to bid on the deal. The winning buyer is responsible for the fixed price plus their fees.
     > [!NOTE]
-    > The ask price for Fixed Price deals can now be updated after creation. Please notify the buyer of any price changes, as they will not receive an automated notification. Failing to inform buyers of price increases may halt their line items and impact your revenue flow.
+    > The ask price for Fixed Price deals can only be updated via the API after creation. Please notify the buyer of any price changes, as they will not receive an automated notification. Failing to inform buyers of price increases may halt their line items and impact your revenue flow.
 - **Priority** - For a private auction only, you can assign certain higher priority to certain deals. Higher numbers mean higher priority and will always win an auction over a lower priority deal. The default priority setting is 5. Deal priority only applies to private auctions.
   
   For more information on the different auction types, see [Deal Auction Mechanics](deal-auction-mechanics.md).

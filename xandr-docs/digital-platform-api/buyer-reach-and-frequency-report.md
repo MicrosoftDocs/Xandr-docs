@@ -68,7 +68,6 @@ Data in this report is retained for 90 days.
 | `creative_id` | int | Yes | `444` | The ID of the creative that we're reporting on the frequency and/or recency of. |
 | `creative_name` | string | No | `"Q1 2017 728x90"` | The name of the creative that we're reporting on the frequency and/or recency of. |
 | `insertion_order_id` | int | Yes | `321` | The ID of the insertion order under which the impression was purchased. |
-| `insertion_order` | string | No | `"FirstIO(321)"` | The ID and name of the insertion order under which the impression was purchased. |
 | `device_type` | string | Yes | `"Desktops and Laptops"` | The type of the device where the impression has occurred. |
 | `frequency_cap_type` | string | No | `"Classical"`, `"Advanced"`, or `"None"` | The type of frequency cap used to limit over-delivery to individual users. When an ID was available in the request, `"Classical"` is the default frequency cap type. `"Advanced"` refers to "Advanced Frequency Management" feature. |
 

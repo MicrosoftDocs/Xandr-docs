@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Adapting Display Strategies to Mobile Buying
+title: Microsoft Invest - Adapt Display Strategies to Mobile Buying
 description: Understand how the technical limitations of mobile buying affects your overall strategy and what you can do to adapt.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Adapting display strategies to mobile buying
+# Microsoft Invest - Adapt display strategies to mobile buying
 
 This article aims to help buyers who are already familiar with display buying and would like to start to [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md).The goal of this article is to help buyers understand how the [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md) can affect their overall strategy, and what they can do to adapt.
 

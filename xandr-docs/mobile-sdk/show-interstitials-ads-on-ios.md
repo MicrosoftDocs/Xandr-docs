@@ -2,7 +2,7 @@
 title: Show Interstitial Ads on iOS
 description: This page gives an overview on the instructions and code samples that are required for showing interstitial ads on iOS.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/01/2024
 ---
 
 # Show interstitial ads on iOS
@@ -22,6 +22,14 @@ Showing interstitial ads requires a little bit of more effort. In addition to im
   > The close button appears after ten seconds by default. You can set the delay using `ANInterstitialAd.setCloseDelay`.
 
 For more information, see the code sample below.
+
+## Creative media types supported in Interstitial Ad Unit
+
+| Media Type | Description |
+|:---|:---|
+| Banner | Recommended for most interstitial placements to maximize demand. Suitable for static or animated banners. |
+| Interstitial | Used for full-screen ads, including static images, MRAID, and HTML responsive formats.<br><ul><li>[Ad Ops - Set Up MRAID Full Screen Interstitials](ad-ops-set-up-mraid-full-screen-interstitials.md)</li><li>[Ad Ops - Set Up Static Image Full Screen Interstitials](ad-ops-set-up-static-image-full-screen-interstitials.md)</li><li> [Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)](ad-ops-set-up-html-responsive-interstitials-non-mraid.md)</li></ul> |
+| VAST Video | Supports video ads as of version 9.1.0. Ideal for serving video creatives when placement is enabled for video demand. |
 
 ## Code sample
 

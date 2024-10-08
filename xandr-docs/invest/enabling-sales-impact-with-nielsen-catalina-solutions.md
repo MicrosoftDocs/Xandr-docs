@@ -1,10 +1,10 @@
 ---
-title: Enabling Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
+title: Enable Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
 description: In this article, understand the advantages of activating Nielsen's Sales Impact tracking for your line item.
 ms.date: 10/28/2023
 ---
 
-# Enabling sales impact for line item delivery with Nielsen Catalina Solutions
+# Enable sales impact for line item delivery with Nielsen Catalina Solutions
 
 If you activate Nielsen's Sales Impact tracking for your line item, you can analyze how your served creatives have influenced physical, in-store product purchases among your target audiences.
 

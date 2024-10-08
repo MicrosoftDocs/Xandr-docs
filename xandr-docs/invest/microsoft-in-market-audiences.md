@@ -12,10 +12,10 @@ In-market Audiences are global, and available in more than 90 markets. Take a lo
 
 ## Set up Microsoft segment targeting on a line item
 
-1. Click on the **Audience & Location Targeting** subsection option on the left pane within the **Create New Line Item** screen or **Edit Line Item** screen.
-1. An **Audience and Location Segments** panel is displayed on the right. Now, click on **Microsoft** from the targeting model.
+1. Select on the **Audience & Location Targeting** subsection option on the left pane within the **Create New Line Item** screen or **Edit Line Item** screen.
+1. An **Audience and Location Segments** panel is displayed on the right. Now, select on **Microsoft** from the targeting model.
 1. Select a segment on the left to start building your audience.
-1. Click **Save**.
+1. Select **Save**.
 
 ## Special considerations for Microsoft In-Market audiences
 

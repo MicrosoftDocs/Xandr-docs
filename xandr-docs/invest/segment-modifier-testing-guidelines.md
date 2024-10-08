@@ -24,7 +24,7 @@ One of the key elements of segment modifier is that the client is responsible fo
 
 Microsoft Advertising can measure lift on a high level or guide performance testing best practices.
 
-## Testing best practices
+## Best practices for testing
 
 The best way to test segment modifier (or any buying strategy) is to use the Test/Control method, also known as A/B testing.
 

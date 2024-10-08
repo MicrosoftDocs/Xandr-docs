@@ -2,8 +2,6 @@
 title: Customize Video Player Options on iOS
 description: In this article, find information about the video player controls that you can customize on iOS SDK.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
-ms.author: shsrinivasan
 ---
 
 # Customize video player options on iOS
@@ -13,17 +11,20 @@ ms.author: shsrinivasan
 > [!NOTE]
 > The customization is applied to all the Video ads served through Xandr SDK both Instream and Banner Video (Outstream).
 
-| Property | Default Setting | Description |
+| Property | Default Setting | Description | Ad Units supporting the Setting |
 |---|---|---|
-| **BOOL** `showClickThruControl` | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable |
-| **NSString** `*clickThruText` | "Learn More" | Customizes the text associated with the ClickThrough Control |
-| **BOOL** `showFullScreenControl` (Banner Video Only) | true | Controls the visibility of the fullscreen button for Banner Video |
-| **BOOL** `showTopBar` | true | Determines whether the top bar, containing ClickThrough and Skip controls, is displayed |
-| **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control |
-| **NSString** `*adText` | "Ad" | Customizes the ad text on the video player |
-| **BOOL** `showVolumeControl` | true | Controls the visibility of the mute/unmute control |
-| **ANInitialAudioSetting** `initalAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state for Instream and Banner Videos |
-| **BOOL** `showSkip` (Instream Video Only) | true | Controls the visibility of the Skip control for Instream Video |
+| **BOOL** `showClickThruControl` | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. | Instream/Banner Video |
+| **NSString** `*clickThruText` | "Learn More" | Customizes the text associated with the ClickThrough Control. |Instream/Banner Video |
+| **BOOL** `showFullScreenControl` (Banner Video Only) | true | Controls the visibility of the fullscreen button. | Banner Video |
+| **BOOL** `showTopBar` | true | Determines whether the top bar, containing ClickThrough and Skip controls, is displayed. | Instream/Banner Video |
+| **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream/Banner Video/Interstitial |
+| **NSString** `*adText` | "Ad" | Customizes the ad text on the video player. | Instream/Banner Video/Interstitial |
+| **BOOL** `showVolumeControl` | true | Controls the visibility of the mute/unmute control. | Instream/Banner Video |
+| **ANInitialAudioSetting** `initalAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state. | Instream/Banner Video |
+| **BOOL** `showSkip` | true | Controls the visibility of the Skip control. | Instream |
+| **NSString** `*skipDescription` | "Skip in %%TIME%%s" | Customizes Skip Description. | Instream |
+| **NSString** `*skipLabelName` | "Skip ad" | Customizes Skip Label. | Instream |
+| **NSInteger** `*skipOffset` | "5 seconds" | Customizes Skip Offset. | Instream |
 
 ## Example
 

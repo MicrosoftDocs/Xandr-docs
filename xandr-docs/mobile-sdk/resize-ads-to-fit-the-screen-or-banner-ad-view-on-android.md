@@ -1,11 +1,12 @@
 ---
-title: Resize Ads to Fit the Screen or Banner Ad View on Android
+title: Resize Ads to Fit Screen or Banner Ad View on Android
 description: Learn how to expand ad creative to fit banner ad view, device screen width, and container view with instructions provided in this article.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# Resize ads to fit the screen or banner ad view on Android
+# Resize ads to fit screen or banner ad view on Android
 
 Depending on where advertising fits into your application, you might want to expand the ad creative to fill the banner ad view in which it is displayed, or to fit the device's screen width.
 
@@ -15,9 +16,10 @@ This page has instructions for:
 - Resizing the ad to fit the device's screen width
 - Constraining the ad to the container view (superview)
 
-## Resize ad to fit the banner ad view
+## Resize ad to fit banner ad view
 
 ### Methods
+The following methods are supported in this feature:
 
 | Method | Description |
 |:---|:---|
@@ -34,7 +36,7 @@ bav.setResizeAdToFitContainer(true);
 bav.getResizeAdToFitContainer();  // true
 ```
 
-## Resize ad to fit the screen width
+## Resize ad to fit screen's width
 
 ### Methods
 

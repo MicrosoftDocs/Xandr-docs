@@ -3,6 +3,7 @@ title: Lazy Load for iOS
 description: In this article, learn about the Lazy Load feature in iOS, including its scope, methods, properties, and examples.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Lazy Load for iOS
@@ -43,6 +44,7 @@ Lazy Load enhances the Mobile SDK public API with a property which indicates wh
 ```
 
 ## Method
+The following methods are supported in this feature:
 
 ### loadLazyAd
 
@@ -62,7 +64,9 @@ Loads the webview of a lazy-loaded AdUnit and fires all trackers, including thir
 (void)lazyAdDidReceiveAd:(nonnull id)ad;
 ```
 
-## Example - Objective C
+## Example
+
+### [Objective C](#tab/objectivec1)
 
 ```
 @property  (nonatomic, strong, nullable)  ANBannerAdView  *lazyBanner;
@@ -115,7 +119,7 @@ Loads the webview of a lazy-loaded AdUnit and fires all trackers, including thir
 }
 ```
 
-## Example - Swift
+### [Swift](#tab/swift1)
 
 ```
 import UIKit

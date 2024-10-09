@@ -35,7 +35,7 @@ Mobile SDK allows the publishers to override the country codes and zip codes. Th
 
 The properties can be accessed:
 
-**Objective C**
+### [Objective C](#tab/objectivec1)
 
 ``` 
 //Set
@@ -47,7 +47,7 @@ NSString* countryCode = ANSDKSettings.sharedInstance.geoOverrideCountryCode;
 NSString* zipCode = ANSDKSettings.sharedInstance.geoOverrideZipCode
 ```
 
-**Swift**
+### [Swift](#tab/swift1)
 
 ``` 
 //Set

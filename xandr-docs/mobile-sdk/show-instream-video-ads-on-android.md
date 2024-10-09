@@ -158,7 +158,7 @@ public String getCreativeURL()  //Provide the actual creative loaded
 public VideoOrientation getVideoOrientation()  //Provide the Orientation of the Video rendered. Possible video orientations can be square, portrait, landscape or none
 ```
 
-## Determine Ad play progress
+## Determine ad play progress
 
 You can determine how far the adPlay has progressed by retrieving the amount of time that has elapsed since the ad began playing:
 

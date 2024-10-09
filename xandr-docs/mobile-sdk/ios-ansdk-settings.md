@@ -2,7 +2,8 @@
 title: iOS ANSDK Settings
 description: In this article, find information about the various iOS ANSDK settings to help you in the development of your app. 
 ms.custom: ios-sdk
-ms.date : 04/22/2024
+ms.date: 04/22/2024
+ms.author: shsrinivasan
 ---
 
 # iOS ANSDK settings

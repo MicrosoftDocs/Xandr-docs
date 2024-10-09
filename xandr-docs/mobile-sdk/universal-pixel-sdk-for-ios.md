@@ -3,6 +3,7 @@ title: Universal pixel SDK for iOS
 description: This article provides instructions on how publishers can integrate and install the Universal Pixel SDK (Pixie SDK) for iOS.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Universal pixel SDK for iOS
@@ -135,7 +136,6 @@ Standard Event strings are defined within the Event class. See the [Standard Ev
 
 ### Code samples
 
-#### Initialization code sample
 
 **Swift**
 
@@ -186,6 +186,7 @@ Event.LANDING_PAGE`
 ```
 
 Track landing pages views.
+
 ### Code samples
 
 **Swift**
@@ -314,7 +315,7 @@ let purchaseParams = PixieParams(value: "5.99", currency: "USD", itemId: "produc
    Pixie.fireEvent(Event.PURCHASE, eventParams: purchaseParams)
 ```
 
-### Objective C
+**Objective C**
 
 ```
 PixieParams *purchaseParams = [[PixieParams alloc] initWithValue:@"5.99" currency:@"USD" itemId:@"product_5,product_6" itemType:@"apparel,accessory" itemName:@"shirt,belt"];

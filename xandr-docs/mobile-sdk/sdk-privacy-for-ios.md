@@ -123,11 +123,13 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
 
 The Digital Services Act (DSA) oversees online intermediaries and platforms, where its primary objective is to curb illegal and harmful activities on the internet and to mitigate the dissemination of disinformation. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
 
-### Set DSA Values in the SDK:
+### Set DSA Values in SDK:
 
 SDK will then pass these values to the ad call.
 
-**Code Sample - Objective C**
+### Code sample
+
+#### [Objective C](#tab/objectivec1)
 
 ```
 /**
@@ -158,7 +160,7 @@ NSMutableArray<ANDSATransparencyInfo *> *transparencyList = [NSMutableArray arra
 [ANDSASettings.sharedInstance setTransparencyList:transparencyList];
 ```
 
-**Code Sample - Swift**
+#### [Swift](#tab/swift1)
 
 ```
 /**
@@ -193,7 +195,7 @@ transparencyList.append(info2)
 ANDSASettings.sharedInstance().transparencyList = transparencyList
 ```
 
-### Retrieve the DSA values set in SDK
+### Retrieve DSA values set in SDK
 
 ```
 // Objective C
@@ -219,7 +221,8 @@ let params = transparencyInfo.dsaparams ?? []
 
 ### Retrieve DSA Response values:
 
-**Code Sample - Objective C**
+#### [Objective C](#tab/objectivec2)
+
 
 ```
 - (void)requestBannerAd
@@ -262,7 +265,7 @@ NSInteger adRender = self.banner.adResponseInfo.dsaResponseInfo.adRender;
 
 ```
 
-**Code Sample - Swift**
+#### [Swift](#tab/swift2)
 
 ```
 
@@ -310,9 +313,12 @@ let adRender : NSInteger = (self.banner?.adResponseInfo?.dsaResponseInfo?.adRend
 > [!NOTE]
 > ANDSAResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View
 
+### Code sample
+
+#### [Objective C](#tab/objectivec3)
+
 ```
 
-Objective C
 // For interstitialAd once adDidReceiveAd is callback
 NSString* interstitialAdDSAResponseInfo = self.interstitialAd.adResponseInfo.dsaResponseInfo; // same will be followed to get other dsaResponseInfo from interstitialAd
 // For videoAd once adDidReceiveAd is callback
@@ -322,9 +328,10 @@ ANAdResponseInfo nativeAdResponseInfo = nativeAdResponse;
 NSString* nativeAdDSAResponseInfo = nativeAdResponseInfo.dsaResponseInfo; // same will be followed to get other dsaResponseInfo from videoAd
 ```
 
+#### [Swift](#tab/swift3)
+
 ```
 
-// Swift
 // For interstitialAd once adDidReceiveAd is callback
 let interstitialAdDSAResponseInfo? : String = (self.interstitialAd.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from interstitialAd
 // For videoAd once adDidReceiveAd is callback

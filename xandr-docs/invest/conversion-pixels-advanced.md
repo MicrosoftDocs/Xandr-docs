@@ -1,16 +1,15 @@
 ---
 title: Microsoft Invest - Conversion Pixels Advanced
 description: Learn about options that are available while creating and exporting conversion pixels. This page also covers different conversion pixel parameters.  
-ms.date: 10/28/2023
+ms.date: 10/09/2024
 ---
 
-
-# Microsoft Invest - Conversion pixels advanced  
+# Microsoft Invest - Conversion pixels advanced
 
 When creating and exporting conversion pixels, there are some advanced options available.
 
- > [!TIP]
- > Most of the below options can be performed during pixel export in Invest DSP. For details on pixel export, see [Export Conversion Pixels](export-conversion-pixels.md). You cannot use the `other` parameter during pixel export.
+> [!TIP]
+> Most of the below options can be performed during pixel export in Invest DSP. For details on pixel export, see [Export Conversion Pixels](export-conversion-pixels.md). You cannot use the `other` parameter during pixel export.
 
 ## Use secure pixels
 
@@ -34,6 +33,7 @@ This pixel adds the user to two segments, and removes them from one:
 
 > [!NOTE]
 > There are two ways to add a user to a segment after a conversion:
+>
 > 1. Add a user at the same time the conversion pixel is fired
 > 1. Add a Segment pixel as a piggyback to the conversion pixel.
 >
@@ -50,6 +50,7 @@ You can report on this data using the [Advertiser Attributed Conversions Report]
 ``` 
 <img src="media/px?id=1&order_id=[ORDER_ID]&t=2" width="1" height="1" /> 
 ```
+
 ### Dynamic revenue values: value
 
 You can pass in dynamic revenue values which will show up in reporting as post-click and post-view revenue. This is most often used to pass in the advertiser's revenue and keep it separate from the network's revenue. To see these dynamic values in reporting, select "PC/PV Revenue" as a **dimension** on your Attributed Conversions report, or select "Post View Revenue" and "Post Click Revenue" as **metrics** in your Analytics Report. Note that the "Revenue" metric in Analytics reports will not be affected by dynamic revenue values - it is static and pulled from the Post-view revenue and Post-click revenue values entered at the Line Item level. Note that for a CPA line item, we cannot optimize to a moving target, so we will optimize to the static value entered at the line item level.
@@ -61,14 +62,12 @@ You can pass in dynamic revenue values which will show up in reporting as post-c
 > [!WARNING]
 > The revenue value passed in must be a purely numerical value in order for it to be properly logged in reporting. For example, 10 would be valid, but $10 would not.
 
-### Redirect URL/piggybacking: redir
+### Redirect URL/Piggybacking: redir
 
 You can piggyback off the Microsoft Advertising conversion pixel and notify your internal or third-party server about conversion events. When you create a conversion pixel in Invest DSP, you can input the URL of your pixel and mark it as image or JavaScript. Please note that following restrictions:
 
 - Image pixels can only piggyback off other other image pixels, and JavaScript pixels can only piggyback other JavaScript pixels.
-
 - Image pixels can only have one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.
-
 - There are no character limits to piggybacked pixels in Microsoft Invest, but browser/server URL limits may apply.
 
   ``` 
@@ -83,6 +82,32 @@ You can report on this data using the [Advertiser Attributed Conversions Report]
 
 ``` 
 <img src="media/px?id=1&other=[EXTERNAL_DATA]&t=2" width="1" height="1" /> 
+```
+
+## Privacy considerations
+
+To comply with privacy regulations, the inclusion of privacy signals in URL parameters is mandatory in certain geographical regions, such as the European Economic Area (EEA). Clients must provide either TCF parameters or the consent parameter to ensure personal information is processed correctly, allowing services to function as intended.
+
+When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the user's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates user consent and `0` indicates consent denial.
+
+It is the client's responsibility to ensure that these parameters reflect the user's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
+
+Example `img` tag with TCF consent parameters:
+
+```
+<img src="https://ib.adnxs.com/px?id=1234&t=2&gdpr=1&gdpr_consent=XXX" width=1 height=1></img>
+```
+
+Example `img` tag with binary consent parameters for denied consent:
+
+```
+<img src="https://ib.adnxs.com/px?id=1234&t=2&consent=0" width=1 height=1></img>
+```
+
+Example `img` tag with binary consent parameters for granted consent:
+
+```
+<img src="https://ib.adnxs.com/px?id=1234&t=2&consent=1" width=1 height=1></img>
 ```
 
 ## Related topics

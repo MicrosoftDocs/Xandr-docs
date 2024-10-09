@@ -17,8 +17,6 @@ Once a Network has been created via the [Microsoft Monetize UI](../monetize/medi
 
 Each Bid includes a publisher-defined CPM, the amount the Network partner is likely to pay for the inventory. For more information about how mediation works, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
 
-For more context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md)
-
 Setup is also required in each Network’s platform, as covered in [Integrating for Mediation](../monetize/mediation-integrating-for-mediation.md). [Microsoft Monetize reports](../monetize/reporting-guide.md) include Mediated Networks as Advertisers and Bids as Line Items (both filters and dimensions).
 
 ## REST API
@@ -2122,7 +2120,7 @@ $ curl -b cookies -X DELETE 'https://api.appnexus.com/mediated-bid?member_id=437
 
 Mediated Bids have priority 5 in the auction, which is required for mediation to function. Any line items of lower priority will not compete unless the Networks do not return ads.
 
-Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Use the Microsoft Monetize mediation Bids tab, detailed on this page, or the [Mediated Bid Service](./mediated-bid-service.md) to manage bids. Changing the priority of the objects will break mediation.
+Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Changing the priority of the objects will break mediation.
 
 When using the API, confirm the following:
 

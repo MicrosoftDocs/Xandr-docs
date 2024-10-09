@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Segment Pixels - Advanced
 description: Learn how to manually create secure pixels and place them on HTTPS pages. Insecure pixels must be placed on HTTP pages.
-ms.date: 10/28/2023
+ms.date: 10/09/2024
 ---
 
 # Microsoft Invest - Segment pixels - Advanced
@@ -110,3 +110,29 @@ This is how to target values in segments:
 
 - When you create a line item, select the **Targeting** tab.
 - In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.
+
+## Privacy considerations
+
+To comply with privacy regulations, the inclusion of privacy signals in URL parameters is mandatory in certain geographical regions, such as the European Economic Area (EEA). Clients must provide either TCF parameters or the consent parameter to ensure personal information is processed correctly, allowing services to function as intended.
+
+When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the customer's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates customer consent and `0` indicates consent denial.
+
+It is the client's responsibility to ensure that these parameters reflect the customer's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
+
+Example `img` tag with TCF consent parameters:
+
+```
+<img src="https://ib.adnxs.com/seg?add=1234&t=2&gdpr=1&gdpr_consent=XXX" width=1 height=1></img>
+```
+
+Example `img` tag with binary consent parameters for denied consent:
+
+``` 
+<img src="https://ib.adnxs.com/seg?add=1234&t=2&consent=0" width=1 height=1></img>
+```
+
+Example `img` tag with binary consent parameters for granted consent:
+
+```
+<img src="https://ib.adnxs.com/seg?add=1234&t=2&consent=1" width=1 height=1></img>
+```

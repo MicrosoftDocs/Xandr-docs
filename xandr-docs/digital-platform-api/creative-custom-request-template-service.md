@@ -24,7 +24,7 @@ This document describes the fields made available by this API service, as well a
 
 ## REST API
 
-> [!NOTE]
+<!-- > [!NOTE]
 > This information is for Xandr employees. If you are an employee and an admin user, your permissions are as follows:
 >
 > - You will see the global templates.
@@ -35,7 +35,7 @@ This document describes the fields made available by this API service, as well a
 > If you are a member you will be able to view the following templates:
 >
 > - Global templates (those belonging to `member_id`=0).
-> - Your own templates, i.e., those associated with your `member_id`.
+> - Your own templates, i.e., those associated with your `member_id`. -->
 
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|

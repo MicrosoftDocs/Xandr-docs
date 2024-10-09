@@ -23,8 +23,7 @@ The UI allows you to create secure pixels, which should be used on HTTPS webpage
 
 ## Segment users once they have converted
 
-You can add or remove a user from one or more segments at the same time the conversion pixel is fired. One case in which you might want to segment users after conversion is if you do not want to advertise to users who have already purchased a product. Once a user has converted and been added to a segment, you can exclude that segment from being
-targeted in your line item or campaign. Please note that whether or not a user is subject to segment actions is independent of whether or not the conversion was attributed.
+You can add or remove a user from one or more segments at the same time the conversion pixel is fired. One case in which you might want to segment users after conversion is if you do not want to advertise to users who have already purchased a product. Once a user has converted and been added to a segment, you can exclude that segment from being targeted in your line item or campaign. Please note that whether or not a user is subject to segment actions is independent of whether or not the conversion was attributed.
 
 This pixel adds the user to two segments, and removes them from one:
 
@@ -93,9 +92,9 @@ You can report on this data using the [Advertiser Attributed Conversions Report]
 
 To comply with privacy regulations, the inclusion of privacy signals in URL parameters is mandatory in certain geographical regions, such as the European Economic Area (EEA). Clients must provide either TCF parameters or the consent parameter to ensure personal information is processed correctly, allowing services to function as intended.
 
-When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the user's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates user consent and `0` indicates consent denial.
+When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the customer's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates customer consent and `0` indicates consent denial.
 
-It is the client's responsibility to ensure that these parameters reflect the user's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
+It is the client's responsibility to ensure that these parameters reflect the customer's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
 
 Example `img` tag with TCF Consent parameters:
 

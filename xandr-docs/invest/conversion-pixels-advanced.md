@@ -27,7 +27,7 @@ You can add or remove a user from one or more segments at the same time the conv
 
 This pixel adds the user to two segments, and removes them from one:
 
-``` 
+```
  <img src="media/px?id=8371&seg=12192,12304&remove=23145&t=2" width="1" height="1" /> 
 ```
 
@@ -47,7 +47,7 @@ You can pass in an order ID or SKU in your pixel and then see this data in conve
 
 You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) or the [log-level-data](../log-level-data/log-level-data-feeds.md), if you subscribe to our Log-Level Data.
 
-``` 
+```
 <img src="media/px?id=1&order_id=[ORDER_ID]&t=2" width="1" height="1" /> 
 ```
 
@@ -55,7 +55,7 @@ You can report on this data using the [Advertiser Attributed Conversions Report]
 
 You can pass in dynamic revenue values which will show up in reporting as post-click and post-view revenue. This is most often used to pass in the advertiser's revenue and keep it separate from the network's revenue. To see these dynamic values in reporting, select "PC/PV Revenue" as a **dimension** on your Attributed Conversions report, or select "Post View Revenue" and "Post Click Revenue" as **metrics** in your Analytics Report. Note that the "Revenue" metric in Analytics reports will not be affected by dynamic revenue values - it is static and pulled from the Post-view revenue and Post-click revenue values entered at the Line Item level. Note that for a CPA line item, we cannot optimize to a moving target, so we will optimize to the static value entered at the line item level.
 
-``` 
+```
 <img src="media/px?id=1&value=[REVENUE]&t=2" width="1" height="1" /> 
 ```
 
@@ -70,7 +70,7 @@ You can piggyback off the Microsoft Advertising conversion pixel and notify your
 - Image pixels can only have one piggyback pixel. If you need to piggyback multiple pixels, be sure to use a JavaScript pixel.
 - There are no character limits to piggybacked pixels in Microsoft Invest, but browser/server URL limits may apply.
 
-  ``` 
+  ```
   <img src="media/px?id=1&redir=[REDIRECT_URL]&t=2" width="1" height="1" /> 
   ```
 
@@ -80,7 +80,7 @@ You can include an extra field to pass into your pixel and then see this data in
 
 You can report on this data using the [Advertiser Attributed Conversions Report](advertiser-attributed-conversions-report.md) as well as the [Log-Level Data Feeds](../log-level-data/log-level-data-feeds.md), if you subscribe to our Log-Level Data Feeds.
 
-``` 
+```
 <img src="media/px?id=1&other=[EXTERNAL_DATA]&t=2" width="1" height="1" /> 
 ```
 
@@ -88,9 +88,9 @@ You can report on this data using the [Advertiser Attributed Conversions Report]
 
 To comply with privacy regulations, the inclusion of privacy signals in URL parameters is mandatory in certain geographical regions, such as the European Economic Area (EEA). Clients must provide either TCF parameters or the consent parameter to ensure personal information is processed correctly, allowing services to function as intended.
 
-When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the user's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates user consent and `0` indicates consent denial.
+When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the customer's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates customer consent and `0` indicates consent denial.
 
-It is the client's responsibility to ensure that these parameters reflect the user's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
+It is the client's responsibility to ensure that these parameters reflect the customer's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
 
 Example `img` tag with TCF consent parameters:
 

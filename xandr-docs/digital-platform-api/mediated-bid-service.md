@@ -2120,7 +2120,7 @@ $ curl -b cookies -X DELETE 'https://api.appnexus.com/mediated-bid?member_id=437
 
 Mediated Bids have priority 5 in the auction, which is required for mediation to function. Any line items of lower priority will not compete unless the Networks do not return ads.
 
-Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Changing the priority of the objects will break mediation.
+Back-end objects associated with Bids, such as augmented line items and campaigns, should not be modified directly. Use the Microsoft Monetize [mediation Bids tab](../monetize/mediation-bids.md), or the Mediated Bid Service, detailed on this page, to manage bids. Changing the priority of the objects will break mediation.
 
 When using the API, confirm the following:
 

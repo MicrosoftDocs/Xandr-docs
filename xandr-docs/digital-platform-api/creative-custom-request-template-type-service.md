@@ -136,4 +136,6 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template-type
 ## Related topics
 
 - [Creative Custom Request Template Service](creative-custom-request-template-service.md)
-- [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md)
+- [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md)
+- [Mediated Network Service](mediated-network-service.md)
+- [Mediated Bid Service](mediated-bid-service.md)

@@ -52,8 +52,8 @@
   href: ../creative-custom-request-template-service.md
 - name: Creative Custom Request Template Parameters
   href: ../creative-custom-request-template-parameters.md
-- name: Creative Custom Request Template Type Service
-  href: ../creative-custom-request-template-type-service.md
+# - name: Creative Custom Request Template Type Service
+#   href: ../creative-custom-request-template-type-service.md
 - name: Content Search Service
   href: ../content-search-service.md
 - name: Developer Data Service

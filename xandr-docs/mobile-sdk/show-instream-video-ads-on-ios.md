@@ -16,7 +16,7 @@ Include the SDK in your project. As of the [version 3.0 release](https://github
 
 ## Steps to show instream ads
 
-### Step 1: Initialize the video ad Object
+### Step 1: Initialize the video ad object
 
 A video ad can be fetched and displayed with as few as three methods `initWithPlacementId:`, `loadAdWithDelegate:` and `playAdWithContainer:withDelegate:`.
 Defining the delegates for loading and playback will provide granular feedback for the video ad lifecycle.

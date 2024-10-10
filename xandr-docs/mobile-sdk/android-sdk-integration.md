@@ -2,12 +2,13 @@
 title: Android SDK Integration Overview
 description: In this article, find links to resources that provide instructions on integrating our Android SDK with your project. 
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Android SDK Integration Overview
 
-This section provides instructions on integrating our Android SDK with your project.
+This section provides instructions to integrate Android SDK with your project.
 
 | Topics | Description |
 |---|---|

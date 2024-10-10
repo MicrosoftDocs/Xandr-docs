@@ -2,10 +2,11 @@
 title: iOS Mediation Overview
 description: In this article, learn about iOS mediation and how to mediate an iOS app for the latest release.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# iOS Mediation Overview
+# iOS mediation overview
 
 Mediation lets you sell ad impressions through multiple networks to generate more revenue. This is initiated by your main (mediating) SDK which calls out to one or more mediated SDKs in a "waterfall"-like process. If your main SDK can't show an ad for some reason, it can iterate over the list of mediated SDKs and contact them in the order you specify. This will continue until the impression is filled or you've run out of mediated SDKs.
 

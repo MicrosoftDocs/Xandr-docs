@@ -5,7 +5,7 @@ ms.custom: android-sdk
 ms.date: 10/28/2023
 ---
 
-# Show Banner Video / OutStream Ads on Android
+# Show banner video/OutStream ads on Android
 
 > [!NOTE]
 > This offering is currently in Alpha and is subject to change.
@@ -17,11 +17,11 @@ Some constraints:
 - Video mediation is not yet supported.
 - You cannot currently configure video player options, such as starting video with audio on/off or the presence of a volume button, for a mobile placement with the Console UI.
 
-## Show a mix of VAST Video and HTML Banner Ads
+## Show a mix of VAST Video and HTML banner ads
 
 Before you begin, you must [integrate the SDK](android-sdk-integration-instructions.md) with your project.
 
-Next, enable Video Ads in your App for BannerAdView.
+Next, enable video ads in your App for BannerAdView.
 
 ``` 
 banner.shouldAllowVideoDemand = true;
@@ -34,7 +34,7 @@ The selection of either VAST video or regular HTML banner ads in the app is dete
 
 ## Video orientation
 
-**Video Player Size:**
+**Video player size:**
 
 Publishers have the option to set predetermined player sizes for different video orientations (portrait, landscape, and square) before loading the video ad using the **loadAd**() function. When the video assets are received, the SDK will automatically play the video ad in the appropriate pre-set player size based on its aspect ratio. If these pre-set values are not defined, the SDK will default to using the primary AdSize of **BannerAdview** as the player size.
 

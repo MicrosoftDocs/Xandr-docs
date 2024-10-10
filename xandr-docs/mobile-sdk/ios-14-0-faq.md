@@ -1,11 +1,12 @@
 ---
-title: iOS 14.0 FAQ
+title: iOS 14.0 FAQ(s)
 description: In this article, explore the frequently asked questions (FAQs) about Apple's iOS 14.0 release in relation to the iOS SDK.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# iOS 14.0 FAQ
+# iOS 14.0 FAQ(s)
 
 This document provides an FAQ in regards to the release of Apple's iOS 14.0 in relation to the Xandr iOS SDK. Specific questions on iOS 14.0 should be researched on the [Apple release site](https://www.apple.com/ios/ios-14-preview/).
 
@@ -60,4 +61,4 @@ If the user is in iOS14 and the app has not updated to v7.6.2+ of the SDK, AdReq
   - [Adjust Network Integrations Page](https://help.adjust.com/en/article/integrated-partners)
   - [Adjust Partner Page (Click URL Builder)](https://partners.adjust.com/index.md)
 
-Go [here](https://monetize.xandr.com/docs/set-up-third-party-mobile-app-install-tracking) (log in required) for instructions on how to integrate these vendors with your app and have them report back to your Xandr account.
+Go here (log in required) for instructions to integrate these vendors with your app and have them report back to your Xandr account.

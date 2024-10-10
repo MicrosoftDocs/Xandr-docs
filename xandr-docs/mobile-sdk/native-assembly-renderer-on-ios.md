@@ -3,6 +3,7 @@ title: Native Assembly Renderer on iOS
 description: The native assembly renderer simplifies the use of Banner Native, allowing users to implement native advertising without requiring developers to rebuild their apps.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Native assembly renderer on iOS

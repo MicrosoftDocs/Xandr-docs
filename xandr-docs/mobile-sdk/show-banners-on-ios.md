@@ -29,7 +29,9 @@ The following code samples are simple ones and don't take advantage of all of th
 -(instancetype)initWithFrame:(CGRect)frame memberId:(NSInteger)memberId inventoryCode:(NSString *)inventoryCode adSize:(CGSize)size;
 
 ``` 
-## Example of use (Objective C)
+## Example
+
+### [Objective C](#tab/objectivec1)
 
 ```
 // iOS: ObjC to show a banner ad
@@ -62,7 +64,7 @@ The following code samples are simple ones and don't take advantage of all of th
 
 ```
 
-## Example of use (Swift)
+### [Swift](#tab/swift1)
 
 ``` 
 // iOS: Swift to show a banner ad

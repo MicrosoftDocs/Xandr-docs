@@ -2,14 +2,16 @@
 title: Add Targeting Parameters on iOS
 description: In this article, learn how to add targeting parameters for ads on iOS.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Add targeting parameters on iOS
 
 ## User location
 
-In this snippet, we create an `ANLocation` object and set its latitude and longitude. We also set the horizontal accuracy, which is the size of one side of the "rectangle" inside which the user is located. Finally, we set the ad view's location property to our `ANLocation` object.
+In this snippet, we create an `ANLocation` object, set its latitude and longitude, and define the horizontal accuracy. This accuracy represents the size of one side of the "rectangle" where the user is located. Finally, we set the ad view's location property to the `ANLocation` object.
+
 
 ```
 // The ANLocation object is built from the properties of the 
@@ -32,7 +34,10 @@ By default, the iOS SDK does not automatically send location information. In ord
 
 ## Age and gender
 
-Age and gender can be added to the banner ad view directly as shown below. Note that age is an `NSString`, and can contain a numeric age, a birth year, or a hyphenated age range. For example, it could be "56", "1974", or "25-35".
+You can add age and gender directly to the banner ad view as shown below. 
+> [!NOTE]
+> Age is an NSString that can contain a numeric age, a birth year, or a hyphenated age range. For example, "56", "1974", or "25-35".
+
 
 ```
 banner.age = @"42";

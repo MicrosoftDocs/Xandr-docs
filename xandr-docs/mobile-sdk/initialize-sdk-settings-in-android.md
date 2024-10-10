@@ -2,7 +2,8 @@
 title: Initialize SDK Settings in Android
 description: In this article, learn how to initialize SDK settings on Android devices using a method and an example for better understanding.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Initialize SDK settings in Android
@@ -12,6 +13,7 @@ ms.date : 10/28/2023
 SDKSettings in Xandr Mobile SDK is a API that can be called to activate OMID, fetch User Agent and AAID (Google Advertising ID) for devices. The initialization `init()` method passes these parameters as arguments in the SDK. However, fetching of User Agent involves instantiating a WebView to get the User Agent string on the UI thread. However this contributes for a delayed app start up apart from retrieving and setting the AAID on a worker thread. To mitigate this situation and to improve the app launch performance, an additional flexible `init()` method is provided using which you can disable fetching of User Agent and AAID for devices optionally.
 
 ## Method
+The following methods are supported in this feature:
 
 ### init()
 

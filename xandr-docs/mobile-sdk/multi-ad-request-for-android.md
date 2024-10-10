@@ -3,6 +3,7 @@ title: Multi Ad Request for Android
 description: This article has instructions and code samples for initiating and configuring multi ad reqguest for Android.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Multi ad request for Android
@@ -21,6 +22,8 @@ Users can select from one of two initialization methods. Both require a memberI
 > The `MultiAdRequest` instance will reject `AdUnits` with `memberId` values different from their own.
 
 ### Initialization methods
+The following methods are supported in this feature:
+
 
 #### Initialize with a list of `AdUnits` and call the `load` method
 

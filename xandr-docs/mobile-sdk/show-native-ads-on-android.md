@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Show native Ads on Android
+# Show native ads on Android
 
 > [!NOTE]
 > Native impression counting methodology follows the count-on-render methodology that is used for banner creatives - an impression will fire as soon as the native advertisement renders, regardless of its length of time on the screen. This will ensure greater accuracy and better deliverability thus improving overall yield.

@@ -3,6 +3,7 @@ title: Native Assembly Renderer for Android
 description: The native assembly renderer simplifies the use of Banner Native, allowing it to behave like web display banners. It simplifies generating Native display.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Native assembly renderer for Android

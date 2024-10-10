@@ -3,6 +3,7 @@ title: Migrating iOS SDK v8.x to v9.0.0
 description: Learn how to integrate the latest Mobile SDKs for iOS using CocoaPods, Carthage, XCFramework, and Swift Package Manager.
 ms.custom: ios-sdk
 ms.date: 07/09/2023
+ms.author: shsrinivasan
 ---
 
 # Migrating iOS SDK v8.x to v9.0.0

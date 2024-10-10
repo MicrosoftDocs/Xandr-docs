@@ -2,10 +2,11 @@
 title: Android SDK Ad Units Overview
 description: In this article, find links to resources that describe how to implement the various ad units available within the Android SDK.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# Android SDK Ad Units Overview
+# Android SDK ad units overview
 
 This section describes how to implement the various ad units available within the Android SDK.
 

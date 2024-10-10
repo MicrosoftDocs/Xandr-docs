@@ -1,16 +1,18 @@
 ---
 title: Creative Custom Request Template Type Service
 description: In this article, learn about the Creative Custom Request Template Type service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/28/2023
+ms.date: 10/04/2024
 ms.custom: digital-platform-api
 ---
 
 # Creative Custom Request Template Type service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients and Microsoft employees only.
+> Mediation is only available to Microsoft Monetize Ad Server customers.
 
-The Creative Custom Request Template Type Service is a read-only service that lists the specific types of creative custom request templates needed to integrate with various ad servers. When you create a new custom request template using the [Creative Custom Request Template Service](creative-custom-request-template-service.md), you must specify that your template is one of the types listed by this service. Together they describe how to make requests to that ad server that use the correct query string parameters and are populated with the correct creative macros.
+For context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
+
+The Creative Custom Request Template Type Service is a read-only service that lists the specific types of creative custom request templates needed to integrate with various mediation partners. When creating a new [custom request template](creative-custom-request-template-service.md) using the Creative Custom Request Template Service, one of the types listed by this service must be specified. Together they describe how to make requests to the mediation partner with the correct query string parameters and creative macros.
 
 For more information, see the [Creative Custom Request Template Service](creative-custom-request-template-service.md).
 
@@ -20,7 +22,7 @@ For more information, see the [Creative Custom Request Template Service](creativ
 |:---|:---|:---|
 | `GET`  | [https://api.appnexus.com/creative-custom-request-template-type](https://api.appnexus.com/creative-custom-request-template-type) | View all template types. |
 | `GET` | [https://api.appnexus.com/creative-custom-request-template-type?id=TEMPLATE_TYPE_ID](https://api.appnexus.com/creative-custom-request-template-type?id=TEMPLATE_TYPE_ID) | View an individual template type. |
-| `GET` | [https://api.appnexus.com/creative-custom-request-template-type/meta](https://api.appnexus.com/creative-custom-request-template-type/meta) | See all of the available fields, and whether they can be filtered or sorted. |
+| `GET` | [https://api.appnexus.com/creative-custom-request-template-type/meta](https://api.appnexus.com/creative-custom-request-template-type/meta) | View available fields to filter and sort. |
 
 ## JSON fields
 
@@ -134,4 +136,6 @@ $ curl -b cookies https://api.appnexus.com/creative-custom-request-template-type
 ## Related topics
 
 - [Creative Custom Request Template Service](creative-custom-request-template-service.md)
-- [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md)
+- [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md)
+- [Mediated Network Service](mediated-network-service.md)
+- [Mediated Bid Service](mediated-bid-service.md)

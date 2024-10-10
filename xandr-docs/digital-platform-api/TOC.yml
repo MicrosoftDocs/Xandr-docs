@@ -569,6 +569,10 @@
         href: mediated-bid-service.md
       - name: Creative Custom Request Partner Service
         href: creative-custom-request-partner-service.md
+      - name: Creative Custom Request Template Service
+        href: creative-custom-request-template-service.md
+      - name: Creative Custom Request Template Type Service
+        href: creative-custom-request-template-type-service.md
     - name: Native Layout Service
       href: native-layout-service.md
     - name: Package Service

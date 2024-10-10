@@ -2,7 +2,8 @@
 title: iOS Custom Adaptors
 description: In this article, learn about iOS custom adaptors and the code you must write to create your own custom adaptors.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # iOS custom adaptors

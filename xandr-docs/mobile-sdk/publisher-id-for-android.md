@@ -3,6 +3,7 @@ title: Publisher ID for Android
 description: Use the publisher_id parameter of the Universal Tag service to indicate what action should occur when an ad request fails at the placement level.
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Publisher ID for Android
@@ -24,13 +25,13 @@ When an invalid placement code is called:
 
 The [AdUnit](./android-sdk-ad-units.md) class has two methods for setting and retrieving `publisherId`.
 
-### Setter Method
+### Setter method
 
 ```
 public void setPublisherId(int publisherId)
 ```
 
-### Getter Method
+### Getter method
 
 ```
 public int getPublisherId() 

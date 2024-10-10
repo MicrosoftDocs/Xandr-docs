@@ -2,10 +2,11 @@
 title: iOS SDK Overview
 description: Explore the iOS Mobile SDK, which offers an end-to-end solution for mobile app publishers.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# iOS SDK Overview
+# iOS SDK overview
 
 > [!IMPORTANT]
 > iOS 14 is the minimum supported iOS version for SDK.

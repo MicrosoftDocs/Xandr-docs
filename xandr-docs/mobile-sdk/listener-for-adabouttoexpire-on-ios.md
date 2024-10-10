@@ -2,7 +2,8 @@
 title: Listener for AdAboutToExpire on iOS
 description: In this article, learn about the Listener for AdAboutToExpire in iOS, including its properties, methods, and examples.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Listener for AdAboutToExpire on iOS
@@ -47,6 +48,7 @@ self.adRequest.delegate = self;
 ```
 
 ## Methods
+The following methods are supported in this feature:
 
 ### (void)adWillExpire and (void)adDidExpire
 

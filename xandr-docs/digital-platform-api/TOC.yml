@@ -567,6 +567,8 @@
         href: mediated-network-service.md
       - name: Mediated Bid Service
         href: mediated-bid-service.md
+      - name: Creative Custom Request Template Service
+        href: creative-custom-request-template-service.md
       - name: Creative Custom Request Template Type Service
         href: creative-custom-request-template-type-service.md
     - name: Native Layout Service

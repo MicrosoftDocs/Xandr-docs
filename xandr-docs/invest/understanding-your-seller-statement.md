@@ -1,11 +1,10 @@
 ---
-title: Microsoft Invest - Understanding Your Seller Statement
+title: Microsoft Invest - Understand Your Seller Statement
 description: In this page, learn about the three types of seller statements and a description of the different fields present in these statements.  
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Understanding your seller statement
+# Microsoft Invest - Understand your seller statement
 
 As a member who sells inventory on Microsoft Advertising's platform, you receive a monthly statement indicating the amount of revenue you have earned. This page explains the three types of seller statements. Your contract terms define the type of statement you will receive.
 
@@ -49,7 +48,7 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 1. **Net to be Paid to Seller on (DATE)** - The difference between the **Seller Revenue** and any **Adjustments**. This is the exact amount the Seller will receive in payment from Microsoft Advertising less any bank fees incurred from the Seller’s bank (which Microsoft Advertising can't know in advance).
 :::image type="content" source="./media/seller-remittance-statement-sanitized.png" alt-text="Screenshot of Net amount to be paid to seller.":::
 
-## Netting statment
+## Statement of netting
 
 > [!NOTE]
 > You only receive a Netting Statement if you conduct both buying and selling activity with Microsoft Advertising, have contractually agreed to netting and notified the Client Finance team to enable netting for your account.

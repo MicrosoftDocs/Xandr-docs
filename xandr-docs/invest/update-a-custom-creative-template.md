@@ -4,7 +4,6 @@ description: Learn steps to modify code and macros in your own custom templates.
 ms.date: 10/28/2023
 ---
 
-
 #  Microsoft Invest - Update a custom creative template
 
 Although you cannot modify the standard Microsoft Advertising creative templates, you can modify the rendering code and macros in your own custom templates.
@@ -12,12 +11,12 @@ Although you cannot modify the standard Microsoft Advertising creative templates
 > [!WARNING]
 > Your changes immediately affect any creatives that are already using the template. If your changes cause these creatives to stop rendering properly, their audit status will be changed to "rejected" and they will stop serving on most third-party inventory.
 
-1. Navigate to the **Creative Templates** screen by clicking **Creative \> Templates**.
-1. From the grid, click the custom template that needs to be updated.
+1. Navigate to the **Creative Templates** screen by selecting **Creative \> Templates**.
+1. From the grid, select the custom template that needs to be updated.
 
     The **Creative Template Details** pane displays.
 
-1. Click **Edit**.
+1. Select **Edit**.
 1. Update any of the following fields:
     1. **Name**: The name of the creative template, which helps buyers identify the creative template when uploading creatives that match this template's media type and format.
 
@@ -32,7 +31,7 @@ Although you cannot modify the standard Microsoft Advertising creative templates
        > If you include custom macros in the template code, they must begin with the `#`symbol. If you include standard macros in the template code, they must begin with the `$` symbol. Be sure to replace any hard-coded `adnxs.com` references within the **Template Code** field with the `${XANDR_DOMAIN}` macro to ensure that the appropriate domain (`adnxs.com`) or (`adnxs-simple.com`) will be used when the auction takes place.
 
 1. Expand the **Custom macros** section if necessary.
-1. If no custom macros exist in the **Custom macros** section, or if you want to add more custom macros, click **Add Macros** and do the following:
+1. If no custom macros exist in the **Custom macros** section, or if you want to add more custom macros, select **Add Macros** and do the following:
 
     > [!NOTE]
     > You can add up to 20 custom macros. If the template is being used by any active creatives, you cannot add additional custom macros.
@@ -47,13 +46,13 @@ Although you cannot modify the standard Microsoft Advertising creative templates
 
     1. If you selected **Select from List**, enter a value for **Option 1**.
 
-        To add more options, click **Add another option** and enter the corresponding value.
+        To add more options, select **Add another option** and enter the corresponding value.
 
-    1. If you want to require buyers to complete the macro when uploading new creatives that use this template, click the **Required** checkbox.
+    1. If you want to require buyers to complete the macro when uploading new creatives that use this template, select the **Required** checkbox.
     1. If you do not want the macro to be required, enter the **Default Value** that will be used when buyers do not complete the macro during creative uploads.
 1. Repeat step 6 to add each individual custom macro.
 1. Update the details for any of the existing custom macros if necessary.
-1. Click **Save**.
+1. Select **Save**.
 
 ## Related topics
 

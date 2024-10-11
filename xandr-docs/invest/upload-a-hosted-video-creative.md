@@ -4,12 +4,11 @@ description: This page explains steps to upload VAST video creatives and other c
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Upload a hosted video creative
 
 Microsoft Advertising supports hosting VAST ([video ad serving template](https://www.iab.com/guidelines/vast/)) creatives. VAST is used to serve on in-stream and some non-linear placements, per publisher specifications. Microsoft Advertising currently supports VAST 2.0 and VAST 3.0. This page explains how to upload VAST video creatives and other considerations for working with this type of creative.
 
-## Subscribing to video creative hosting
+## Subscribe to video creative hosting
 
 If you are interested in hosting video creatives on Microsoft Advertising, please talk to your Microsoft Advertising representative about pricing, your use case, and technical specifics.
 
@@ -39,13 +38,13 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ### Step 1. Get started
 
-On the **Creative Manager** screen, click the **Create New** button, then select **Video**. The **Creative: New Creative** screen displays.
+On the **Creative Manager** screen, select the **Create New** button, then select **Video**. The **Creative: New Creative** screen displays.
 
 ### Step 2. Upload the file
 
 Select the **Hosted File** tab. Browse your computer, or drag and drop your file. For instructions about how to add a third-party hosted creative, see [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 
-**MP4**
+#### MP4
 
 | Size (px) | Bit Rate (kbps) |
 |--|--|
@@ -56,16 +55,16 @@ Select the **Hosted File** tab. Browse your computer, or drag and drop your file
 | 768x432 | 1100 |
 | 768x432 | 500 |
 
-**WebM**
+#### WebM
 
 | Size (px) | Bit Rate (kbps) |
 |--|--|
 | 1280x720 | 2000 |
 | 1280x720 | 600 |
 | 768x432 | 1500 |
-| 768x432 | 500 |  |
+| 768x432 | 500 |
 
-**Flash**
+#### Flash
 
 | File Type | Size (px) | Bit Rate (kbps) |
 |--|--|--|
@@ -81,16 +80,16 @@ The creative preview is available for you to review once it is fully uploaded. Y
 
 ### Step 4. Define the creative content
 
-The **Name** field is auto-populated with the name of your file. Enter a **Click-through URL** to redirect the user upon clicking.
+The **Name** field is auto-populated with the name of your file. Enter a **Click-through URL** to redirect the user upon selecting.
 
 ### Step 5. Select audit options
 
 On the **Creative Attributes** tab, select whether you want to submit the creative for Microsoft Advertising audit, classify the creative yourself, or exempt the creative from auditing entirely.
 
 - **Platform Audit** - Submit the creative for auditing by the Microsoft Advertising audit team. Audit process includes:
-  - checking technical and content criteria
-  - offer type categorization to enable the seller protection features on the platform
-  - requirements of sellers
+  - Checking technical and content criteria.
+  - Offer type categorization to enable the seller protection features on the platform.
+  - Requirements of sellers.
 
     Microsoft Advertising audit is mandatory but you can opt out of other platform specific audits.
 
@@ -127,7 +126,7 @@ You can also attach **segment pixels** to your creative. Search for existing seg
 
 ### Step 8. Save the creative
 
-Once you have defined your creative and populated the associated fields as necessary, click **Save**. The creative will be listed under **Creatives** on the **Creative Manager** screen.
+Once you have defined your creative and populated the associated fields as necessary, select **Save**. The creative will be listed under **Creatives** on the **Creative Manager** screen.
 
 ## Related topics
 

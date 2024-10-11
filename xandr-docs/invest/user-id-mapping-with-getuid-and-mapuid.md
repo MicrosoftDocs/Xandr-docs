@@ -15,7 +15,7 @@ The **getUID** service retrieves the Microsoft Advertising ID so you can coordin
 
 ## Basic mapping example
 
-|  |  |
+| Field  | ID/Value |
 |:---|:---|
 | **Prostarr User ID** | `PS123` |
 | **Microsoft Advertising User ID** | `2894234234` |

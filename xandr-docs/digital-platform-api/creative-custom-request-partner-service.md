@@ -1,25 +1,20 @@
 ---
 title: Creative Custom Request Partner Service
 description: In this article, learn about the Creative Custom Request Partner service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/28/2023
+ms.date: 10/07/2024
 ms.custom: digital-platform-api
 ---
 
 # Creative Custom Request Partner service
 
 > [!NOTE]
-> This service is currently available to a limited set of clients and Microsoft employees only.
+> Mediation is only available to Microsoft Monetize Ad Server customers.
 
-This service is used to define custom request partners that sellers on our platform can send ad requests to via mediation. Custom request partners are usually ad networks that are not connected to our exchange, but that sellers on our platform would like to sell to nonetheless.
+For context on mediation, see [Selling Your Inventory through Mediation](../monetize/mediation-selling-your-inventory-through-mediation.md).
 
-Custom request partners can be integrated with either:
+Mediation partners, also known as custom request partners, can be identified and defined through this service. These partners are assigned to customer-specific Networks via the [UI](../monetize/mediation-networks.md) or [Mediated Network Service](mediated-network-service.md).
 
-- All members, meaning any member can send mediation ad requests to this partner.
-- A single, specific member only. This means that only that member can send mediation ad requests to this partner.
-
-Most custom request partners are made available for all members to sell to (as of the time of this writing in Q3 2014).
-
-This service allows you to define many of the necessary details involved with integrating an external network with our systems. It works in concert with the [Mediated Bid Service](mediation-services.md), [Mediated Network Service](mediated-network-service.md), and others. For more information, see the pages listed in the [Related Topics](#related-topics) section.
+Each partner is also associated with templates defined in the [Creative Custom Request Template Service](creative-custom-request-template-service.md).
 
 ## REST API
 
@@ -27,8 +22,8 @@ This service allows you to define many of the necessary details involved with in
 |---|---|---|
 | `GET` | [https://api.appnexus.com/creative-custom-request-partner](https://api.appnexus.com/creative-custom-request-partner) | View all partners. |
 | `GET` | [https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID](https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID) | View a specific partner. |
-| `POST` | [https://api.appnexus.com/creative-custom-request-partner](https://api.appnexus.com/creative-custom-request-partner)<br>(+ JSON payload) | Create a new partner. |
-| `PUT` | [https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID](https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID)<br>(+ JSON payload) | Update a partner. |
+| `POST` | [https://api.appnexus.com/creative-custom-request-partner](https://api.appnexus.com/creative-custom-request-partner) | Create a new partner. |
+| `PUT` | [https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID](https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID)| Update a partner. |
 | `DELETE` | [https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID](https://api.appnexus.com/creative-custom-request-partner?id=NETWORK_ID) | Delete a partner. |
 
 ## JSON fields
@@ -40,11 +35,11 @@ This service allows you to define many of the necessary details involved with in
 | `macro_type` | string | Indicates the type of macros used to define the partner. Allowed values:<br> - `standard`: The integration is not via a user-defined **Custom Network**, and has access to our standard creative macros to build the request. This can include supported SDK integrations.<br> - `customsdk`: The integration is with a user-created **Custom Mobile Network**.<br> - `customweb`: The integration is with a user-created **Custom Web Network**.<br> - `customvideo`: The integration is with a user-created **Custom Video Network**.<br>**Default:** `standard` <br>**Required On:** `POST` |
 | `member_id` | int | Determines who can use this custom creative request partner. A value of `0` indicates that any member can integrate with (i.e., use mediation to sell to) this partner. If the value is a particular non-zero member ID, the partner is only available to that member.<br>**Default:** `0` |
 | `last_modified` | datetime | **Read Only.** The date and time that this record was last changed. |
-| `creative_custom_request_partner_credentials` | array | This array contains information about the authentication credentials required for this custom request partner. This can be `null` if no credential information is required. For more details, see [Creative Custom Request Partner Credentials](#creative-custom-request-partner-credentials) below. |
-| `creative_custom_request_partner_integration` | array | This array indicates whether the partner is supported and active. This can be `null` if no integration information is required. For more details, see [Creative Custom Request Integration](#creative-custom-request-integration) below. |
-| `creative_custom_request_templates` | array | This array contains details about the macros that will be used by this custom partner. This can be `null` if no macro information is required. For more details, see [Creative Custom Request Template](#creative-custom-request-template) below. |
+| `creative_custom_request_templates` | array | This array contains details about the macros that will be used by this custom partner. This can be `null` if no macro information is required. For more details, see [Creative Custom Request Template Service](creative-custom-request-template-service.md). |
+<!-- | `creative_custom_request_partner_credentials` | array | This array contains information about the authentication credentials required for this custom request partner. This can be `null` if no credential information is required. For more details, see [Creative Custom Request Partner Credentials](#creative-custom-request-partner-credentials) below. |
+| `creative_custom_request_partner_integration` | array | This array indicates whether the partner is supported and active. This can be `null` if no integration information is required. For more details, see [Creative Custom Request Integration](#creative-custom-request-integration) below. | -->
 
-### Creative custom request partner credentials
+<!-- ### Creative custom request partner credentials
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -70,7 +65,7 @@ This service allows you to define many of the necessary details involved with in
 
 ### Creative custom request template
 
-For a list of this object's fields and their definitions, see the [Creative Custom Request Template Service](creative-custom-request-template-service.md).
+For a list of this object's fields and their definitions, see the [Creative Custom Request Template Service](creative-custom-request-template-service.md). -->
 
 ## Examples
 
@@ -91,8 +86,6 @@ For a list of this object's fields and their definitions, see the [Creative Cust
                 "macro_type":"standard",
                 "member_id":null,
                 "last_modified":"2014-03-21 21:43:33",
-                "creative_custom_request_partner_credentials":null,
-                "creative_custom_request_partner_integration":null,
                 "creative_custom_request_templates":[
                     {
                         "id":14,
@@ -248,46 +241,6 @@ For a list of this object's fields and their definitions, see the [Creative Cust
                 "macro_type":"standard",
                 "member_id":null,
                 "last_modified":"2014-04-23 22:24:46",
-                "creative_custom_request_partner_credentials":[
-                    {
-                        "id":42,
-                        "creative_custom_request_partner_id":17,
-                        "name":"username",
-                        "is_required":true,
-                        "is_obscured":false,
-                        "last_modified":"2014-04-23 22:24:46",
-                        "type":"string"
-                    },
-                    {
-                        "id":43,
-                        "creative_custom_request_partner_id":17,
-                        "name":"password",
-                        "is_required":true,
-                        "is_obscured":true,
-                        "last_modified":"2014-04-23 22:24:46",
-                        "type":"string"
-                    }
-                ],
-                "creative_custom_request_partner_integration":[
-                    {
-                        "id":15,
-                        "creative_custom_request_partner_id":17,
-                        "supported":true,
-                        "active":true,
-                        "last_modified":"2014-05-13 19:29:42",
-                        "data_timezone":"GMT",
-                        "data_granularity":"daily"
-                    },
-                    {
-                        "id":39,
-                        "creative_custom_request_partner_id":17,
-                        "supported":true,
-                        "active":true,
-                        "last_modified":"2014-05-13 19:29:45",
-                        "data_timezone":"GMT",
-                        "data_granularity":"daily"
-                    }
-                ],
                 "creative_custom_request_templates":null
             },
 }
@@ -311,46 +264,6 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/creative-custom-request-p
             "macro_type":"standard",
             "member_id":null,
             "last_modified":"2014-04-23 22:24:46",
-            "creative_custom_request_partner_credentials":[
-                {
-                    "id":42,
-                    "creative_custom_request_partner_id":17,
-                    "name":"username",
-                    "is_required":true,
-                    "is_obscured":false,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                },
-                {
-                    "id":43,
-                    "creative_custom_request_partner_id":17,
-                    "name":"password",
-                    "is_required":true,
-                    "is_obscured":true,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                }
-            ],
-            "creative_custom_request_partner_integration":[
-                {
-                    "id":15,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:42",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                },
-                {
-                    "id":39,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:45",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                }
-            ],
             "creative_custom_request_templates":null
         }
     }
@@ -384,8 +297,6 @@ $ curl -b cookies -c cookies -X POST -d @custom-creative-request-partner-service
             "macro_type":"standard",
             "member_id":null,
             "last_modified":"2014-06-02 17:55:27",
-            "creative_custom_request_partner_credentials":null,
-            "creative_custom_request_partner_integration":null,
             "creative_custom_request_templates":null
         }
     }
@@ -416,46 +327,6 @@ $ curl -b cookies -c cookies -X PUT -d @edit-ccr-partner-service.json 'https://a
             "macro_type":"standard",
             "member_id":3261,
             "last_modified":"2014-06-03 14:36:49",
-            "creative_custom_request_partner_credentials":[
-                {
-                    "id":42,
-                    "creative_custom_request_partner_id":17,
-                    "name":"username",
-                    "is_required":true,
-                    "is_obscured":false,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                },
-                {
-                    "id":43,
-                    "creative_custom_request_partner_id":17,
-                    "name":"password",
-                    "is_required":true,
-                    "is_obscured":true,
-                    "last_modified":"2014-04-23 22:24:46",
-                    "type":"string"
-                }
-            ],
-            "creative_custom_request_partner_integration":[
-                {
-                    "id":15,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:42",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                },
-                {
-                    "id":39,
-                    "creative_custom_request_partner_id":17,
-                    "supported":true,
-                    "active":true,
-                    "last_modified":"2014-05-13 19:29:45",
-                    "data_timezone":"GMT",
-                    "data_granularity":"daily"
-                }
-            ],
             "creative_custom_request_templates":null
         }
     }
@@ -482,6 +353,5 @@ $ curl -b cookies -c cookies -X PUT -d @edit-ccr-partner-service.json 'https://a
 - [Mediated Network Service](mediated-network-service.md)
 - [Creative Custom Request Template Service](creative-custom-request-template-service.md)
 - [Creative Custom Request Template Type Service](creative-custom-request-template-type-service.md)
-- [Creative Custom Request Template Parameters](creative-custom-request-template-parameters.md)
 - [Creative Template Service](creative-template-service.md)
 - [Creative Service](creative-service.md)

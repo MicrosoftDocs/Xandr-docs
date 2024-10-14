@@ -1,10 +1,10 @@
 ---
-title: Use the Buyer Monitoring Grids
+title: Use Buyer Monitoring Grids
 description: Use the buyer monitoring grids to monitor delivery and performance for insertion orders and line items across advertisers.
 ms.date: 10/28/2023
 ---
 
-# Use the buyer monitoring grids
+# Use buyer monitoring grids
 
 Microsoft Invest consists of these three grids: **Advertisers**, **Insertion Orders**, and **Line Items**. These buyer monitoring grids help campaign managers monitor delivery and performance for insertion orders and line items across advertisers.
 

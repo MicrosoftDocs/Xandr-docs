@@ -109,7 +109,7 @@ If you opt into receiving **billing period-specific invoicing**, you will receiv
 
 If you have more than one member account, you can choose to receive a consolidated invoice for the buying activity across of your member accounts. For more details on this feature, contact your Account Manager.
 
-## Statement of netting
+## Understand the netting statement
 
 If you both buy and sell inventory with Microsoft Advertising, you can opt into having Microsoft Advertising “net” this activity rather than receiving both monthly invoices and payments from Microsoft Advertising. The netting statement document lists the amount you have spent as a buyer and the amount of revenue you have earned as a seller. Microsoft Advertising then deducts the amount that you owe as a buyer based on your buy-side payment terms from the revenue you have earned based on your sell-side payment terms in order to determine the net amount that you will owe or be paid by Microsoft Advertising. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 

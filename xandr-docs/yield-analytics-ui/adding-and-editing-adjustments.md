@@ -1,11 +1,11 @@
 ---
-title: Adding and Editing Adjustments
+title: Add and Edit Adjustments
 description: In this article, learn how to add or edit seasonal adjustments and manual adjustments.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Adding and editing adjustments
+# Add and edit adjustments
 
 New Seasonality Adjustments can be added to the system by working with your Client Services Manager. Existing Seasonality Adjustments can be modified through the **Adjust Seasonal Forecast** tab.
 

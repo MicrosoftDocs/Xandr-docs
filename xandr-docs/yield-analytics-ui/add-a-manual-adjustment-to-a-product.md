@@ -11,11 +11,11 @@ Add a manual adjustment to a specific product to make a temporary override to it
 
 1. Check the impression capacity for the product for which you want to add a manual adjustment.  
 
-    Or, in the **Capacity Tasks** panel, click **Adjust Manual Forecast**, select the product in the **Products** panel, and then in the Product detail preview click **View** > **Forecast Visibility**.
+    Or, in the **Capacity Tasks** panel, select **Adjust Manual Forecast**, select the product in the **Products** panel, and then in the Product detail preview select **View** > **Forecast Visibility**.
 
-1. On the Forecast Visibility page, below the Capacity Forecast, in the **Adjustments Influencing Forecast** section, click the **Add/Edit** button. The page is redisplayed with the **Edit Manual Adjustment** section at the top.
+1. On the Forecast Visibility page, below the Capacity Forecast, in the **Adjustments Influencing Forecast** section, select the **Add/Edit** button. The page is redisplayed with the **Edit Manual Adjustment** section at the top.
 
-1. In the **Edit Manual Adjustment** section, click **Add New**. A new adjustment row appears.
+1. In the **Edit Manual Adjustment** section, select **Add New**. A new adjustment row appears.
 
 1. In the **Name** column, enter a name for the adjustment.
 
@@ -33,9 +33,9 @@ Add a manual adjustment to a specific product to make a temporary override to it
     - Active – The change takes effect on the dates you selected.
     - Inactive – The change doesn't take effect until you edit the adjustment to make it active.
   
-1. (Optional) Click **Preview Changes** to see the adjustment applied in the Capacity Forecast area, as the Modified Manual Adjusted Forecast (Unsaved Changes) line. The original forecast is still displayed in blue. Child products affected by the adjustment appear in the **Affected Rate Card Products** list below the forecast.
+1. (Optional) Select **Preview Changes** to see the adjustment applied in the Capacity Forecast area, as the Modified Manual Adjusted Forecast (Unsaved Changes) line. The original forecast is still displayed in blue. Child products affected by the adjustment appear in the **Affected Rate Card Products** list below the forecast.
 
-1. Make any additional changes as needed to the adjustment, and then click **Save**. The manual adjustment line turns orange, and the original forecast line stays blue.
+1. Make any additional changes as needed to the adjustment, and then select **Save**. The manual adjustment line turns orange, and the original forecast line stays blue.
 
 The changes to the forecast are only reflected in the Forecast Management area. They are not reflected in other parts of Yield Analytics or in the actual placement of ads until the system processes data overnight.
 

@@ -72,7 +72,7 @@ You should never need to see this URL, since it's called by the install tracking
 > [!NOTE]
 > The sspx handler is supported over non-secure (`http://adnxs.com/sspx`) and secure (`https://secure.adnxs.com/sspx`) modes.
 
-## Workflow
+## Process overview
 
 When your creative's landing page URL is set up correctly, the install tracking process works as follows.
 

@@ -10,7 +10,7 @@ Consent mode in Universal Pixel allows you to configure cookie access based on c
 
 This document outlines how you can set up consent mode in Universal Pixel. However, it's your responsibility to comply with local legal requirements and industry practices.
 
-## Workflow
+## Process overview
 
 Use the `ad_storage` property in Universal Pixel to configure consent mode. The possible values for `ad_storage` are listed as follows:
 

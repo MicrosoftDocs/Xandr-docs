@@ -1,32 +1,32 @@
 ---
-title: Setting Up Permissions
+title: Set Up Permissions
 description: This article provides instructions to set up user group permissions. 
 ms.date: 11/07/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Setting up permissions
+# Set up permissions
 
 > [!TIP]
 > There is no correlation between feature permissions and product permissions. If you belong to multiple groups, and one group has a set of feature permissions and a set of product permissions, then there is no correlation between those two. You will never have feature permissions somehow tied to those product permissions. If you belong to multiple groups, your feature permissions will collapse, and your product permissions will collapse. Both still run independently.
 
-1. Under the **Admin Tools** section, click **Permissions**. From this screen, you can add a new group or edit an existing group.
-1. To add a new group, click the **Add Group** button.
-1. To edit an existing group, click on the **group(s)** that you would like to edit.
+1. Under the **Admin Tools** section, select **Permissions**. From this screen, you can add a new group or edit an existing group.
+1. To add a new group, select the **Add Group** button.
+1. To edit an existing group, select  the **group(s)** that you would like to edit.
 
 ## Product Permissions tab
 
-1. Click the **Product Permissions** tab to access options for the product that you want to give that user permissions to.
+1. select the **Product Permissions** tab to access options for the product that you want to give that user permissions to.
 1. The products that are shown default to Rate Card and Reporting products. You can also select Custom products to be shown as well.
 1. Select the products you want to give the user access to. These will be the only products that they will see throughout the system.
-1. Click **Save**.
+1. Select **Save**.
 
 > [!TIP]
 > This implicitly includes products that are child products. The system will run in the background and look for any child products that belong to that parent product.
 
 ## Product search
 
-Click **Products** > **Find Products** to search for products. You will see greatly narrowed search results for this User Group.
+Select **Products** > **Find Products** to search for products. You will see greatly narrowed search results for this User Group.
 
 This is also true for the **Analyzer** page. Your search results will be greatly reduced from what the results previously were.
 
@@ -74,7 +74,7 @@ Here are some other points to remember:
 
 ## Additional information
 
-### Organizing products
+### Organize products
 
 When you are organizing products, here are some points to remember:
 

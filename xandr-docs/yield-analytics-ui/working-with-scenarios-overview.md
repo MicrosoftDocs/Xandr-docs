@@ -1,11 +1,11 @@
 ---
-title: Working With Scenarios Overview
+title: Work With Scenarios Overview
 description: Learn the different functionalities of a Scenario Manager in this page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Working with scenarios overview
+# Work with scenarios overview
 
 Use Scenario Manager to run simulations of how modifications to an order line would affect its delivery, as well as the delivery of any competing and overlapping order lines.
 

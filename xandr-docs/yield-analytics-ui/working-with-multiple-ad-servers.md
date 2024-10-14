@@ -5,7 +5,7 @@ ms.date: 11/08/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Working with multiple ad servers
+# Work with multiple ad servers
 
 The Yield Analytics interface supports the use of multiple ad servers (e.g., if you use one for mobile, one for video, etc.). This makes it easier to work with each one separately or all together.
 
@@ -13,18 +13,18 @@ The Yield Analytics interface supports the use of multiple ad servers (e.g., if 
 
 If you use multiple ad servers, you can specify which one is the default.
 
-1. In the upper-right corner of any page, click your name, and then click **Preferences**. The **Preferences** page loads.
-1. In the **Set Defaults** panel, in the **Ad server for filters** field, click the link for the current setting and then select one of the following ad servers from the dropdown list that appears:
+1. In the upper-right corner of any page, select your name, and then select **Preferences**. The **Preferences** page loads.
+1. In the **Set Defaults** panel, in the **Ad server for filters** field, select the link for the current setting and then select one of the following ad servers from the dropdown list that appears:
     - **DFPP**
     - **FreeWheel**
     - **AdMarvel**
-1. Click **Save Defaults**.
+1. Select **Save Defaults**.
 
 ## About priority labels
 
 You can customize priority labels, which are searchable, organized from high to low, and displayed throughout Yield Analytics. In addition, Yield Analytics can hide priority labels that you don't use. Contact your services representative for more information.
 
-## Filtering with multiple ad servers
+## Filter with multiple ad servers
 
 When you specify an ad server (e.g., for an availability lookup), the rest of the filter options and lookup criteria are automatically restricted to show only the products, attributes, and values for the ad server. This helps you more easily locate the product you want. It also eliminates potential duplicate instances (e.g., if two products for different ad servers are named the same thing, only one will appear).
 

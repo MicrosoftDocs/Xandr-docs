@@ -9,9 +9,9 @@ ms.custom: yield-analytics-ui
 
 By default, the **Orders Dashboard** page displays at-risk impressions, consumed impressions, and order performance for your entire network. However, you can view them for a specified parent product.
 
-1. At the top of the **Orders Dashboard** page, click **Analyzed Network**.
+1. At the top of the **Orders Dashboard** page, select **Analyzed Network**.
 1. In the **Parent Product Filter** dialog that appears, select the parent product for the order, or type in the box to find a specific product.
-1. Click **Update**.
+1. Select **Update**.
 
 To reset the **Orders Dashboard** to your entire analyzed network, enter **Analyzed Network** in the **Parent Product Filter** dialog.
 

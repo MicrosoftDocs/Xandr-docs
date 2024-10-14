@@ -12,10 +12,10 @@ Manual adjustments impact the product you're adjusting as well as all overlappin
 > [!NOTE]
 > Check with your Client Services manager before editing any existing adjustments.
 
-1. Display the Forecast Visibility page for the product with the adjustment. Or, on the Capacity Dashboard, in the Manual Adjustments & Holidays widget, click on the adjustment.
-1. On the Forecast Management page, in the **Adjustments Influencing Forecast** section, click the **Add/Edit** button.
+1. Display the Forecast Visibility page for the product with the adjustment. Or, on the Capacity Dashboard, in the Manual Adjustments & Holidays widget, select on the adjustment.
+1. On the Forecast Management page, in the **Adjustments Influencing Forecast** section, select the **Add/Edit** button.
 1. In the **Edit Manual Adjustment** section, make any changes to the adjustment's values.
-1. Click **Save**.
+1. Select **Save**.
 
 ## Related topics
 

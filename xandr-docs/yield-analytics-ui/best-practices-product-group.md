@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Best practices - product group
+# Best practices - Product group
 
 Product groups are helpful to organize your account, allowing you to work faster and more efficiently.
 
@@ -17,7 +17,7 @@ You can use groups as:
 
 Example: If you select a product group instead of a specific product, Yield Analytics will automatically pull in all products assigned to that group and add them to an availability lookup. If you apply a product group filter in reporting, you can quickly breakout or limit the data in that report - to the products in that group.
 
-## Best Practices & Recommendations for managing product groups
+## Best practices and recommendations to manage product groups
 
 - Assign every product in your system to at least one group, or reconsider why you need the product in the first place.
 - Use a naming convention: A naming convention should be applied to your product groups as well as your products. In many cases, you can simply repurpose your product naming convention. If you name things as **Site_Section_Platform_Adsize**, it is suggested to name a site group as **Site_All Products** and a section group as **Site_Section_All Products**, etc.
@@ -34,7 +34,7 @@ Example: Create a few groups for your finance team that help them pull site leve
 
 1. Navigate to the **Products** tab.
 2. Select **Organize Products**.
-3. In the **Filter** window, click **New**.
+3. In the **Filter** window, select **New**.
 4. Name and save your new group.
 
 ### How do I remove a product group?
@@ -50,12 +50,12 @@ Example: Create a few groups for your finance team that help them pull site leve
 1. Navigate to the **Products** tab.
 1. Select **Organize Products**.
 1. Select the group you would like to assign a product to. This accesses the **Edit Product** screen.
-1. Click **Add**. This accesses a screen where you can search and add the products. It is recommended to add or remove products from the group screen rather than product by product.
+1. Select **Add**. This accesses a screen where you can search and add the products. It is recommended to add or remove products from the group screen rather than product by product.
 
 An alternative way to assign a product to a group is from the **Product Visibility** screen:
 
 1. Select **Edit Product** under the Product Details section.
-1. Click **Select** under the **Associated Product Groups** on the **Product Details** screen.
+1. Select **Select** under the **Associated Product Groups** on the **Product Details** screen.
 1. A screen where you can add a new group, or remove the product from a group is accessed.
 
 ### How do I remove a product from a group?
@@ -63,9 +63,9 @@ An alternative way to assign a product to a group is from the **Product Visibili
 1. Navigate to the **Products** tab.
 1. Select **Organize Products**.
 1. Select the group you would like to remove a product from. This accesses the **Edit Product** screen.
-1. Click **Remove**. This accesses a screen where you can search and remove the products. It is recommended to add or remove products from the group screen rather than product by product. An alternative way to remove a product from a group is from the **Product Visibility** screen.
+1. Select **Remove**. This accesses a screen where you can search and remove the products. It is recommended to add or remove products from the group screen rather than product by product. An alternative way to remove a product from a group is from the **Product Visibility** screen.
 1. Select **Edit Product** under the Product Details section.
-1. Click **Select** under the **Associated Product Groups** on the Product Details screen.
+1. Select **Select** under the **Associated Product Groups** on the Product Details screen.
 1. A screen where you remove the product from a group is accessed.
 
 ### Can I assign a product to more than one group?

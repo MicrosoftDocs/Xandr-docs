@@ -18,8 +18,7 @@ You can use Scenario Manager to:
 - Analyze what happens if you add new order lines that may compete with existing ones.
 - See how creating a new order line from an existing product would forecast and impact other order lines.
 
-## What you can change with Scenario Manager
-
+## Changes you can make with Scenario Manager
 Use Scenario Manager to see how changing an order or order line's scheduling (e.g., priority, start/end dates, impressions) would impact its delivery, as well as other products' delivery.
 
 You can't make changes to targeting (e.g., position or geotargeting). Changes made in Scenario Manager are not pushed to the ad server or order management system.

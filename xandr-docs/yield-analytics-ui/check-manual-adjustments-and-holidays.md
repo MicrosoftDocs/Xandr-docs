@@ -9,14 +9,14 @@ ms.custom: yield-analytics-ui
 
 The Manual Adjustments & Holidays widget displays any upcoming holidays forecast adjustments.
 
-1. On the **Capacity Dashboard** page, in the **Manual Adjustments & Holidays** widget, click **Next x Day(s)**.
-1. (Optional) Specify a standard or custom date range and click **Update**. The list of adjustments appears.
-1. Click an adjustment to view its details. View the full product details by clicking **Show Product Details**.
-1. Make any changes to the adjustment's options (e.g., Start date, Status) by clicking on them and specifying the new value.
+1. On the **Capacity Dashboard** page, in the **Manual Adjustments & Holidays** widget, select **Next x Day(s)**.
+1. (Optional) Specify a standard or custom date range and select **Update**. The list of adjustments appears.
+1. Select an adjustment to view its details. View the full product details by selecting **Show Product Details**.
+1. Make any changes to the adjustment's options (e.g., Start date, Status) by selecting on them and specifying the new value.
 1. (Optional) In the **Capacity Forecast** panel, make any additional changes to the report:
-    - Click a forecast line key under the chart to hide it.
-    - Adjust the consumption date range or time period metrics by clicking on them.
-    - Click **Export** to export the report to CSV or Excel.
+    - Select a forecast line key under the chart to hide it.
+    - Adjust the consumption date range or time period metrics by selecting on them.
+    - Select **Export** to export the report to CSV or Excel.
     - Change the display of the report from a chart to tabular data.
 
 ## Related topics

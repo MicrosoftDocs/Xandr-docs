@@ -7,7 +7,7 @@ ms.custom: yield-analytics-ui
 
 # Lookup builder
 
-Clicking the **Lookup Builder** tab accesses the **Lookup Builder** screen. This is where you build any of your lookups, regardless of how you are going to run them (batch or individual).
+Selecting the **Lookup Builder** tab accesses the **Lookup Builder** screen. This is where you build any of your lookups, regardless of how you are going to run them (batch or individual).
 
 There are filters on the left-hand side of the screen. They are Configuration filters and Advanced filters.
 
@@ -17,7 +17,7 @@ In the **Configuration** panel on the left side of the page, select the high-l
 
 ### Date range
 
-This field determines the timeframe for the availability lookup. By default, the lookup is for the Next Month. Click the icon to the right of the Next Month verbiage to access the **Date Range** screen.
+This field determines the timeframe for the availability lookup. By default, the lookup is for the Next Month. Select the icon to the right of the Next Month verbiage to access the **Date Range** screen.
 
 > [!NOTE]
 > Availability lookup is always forward-facing. You cannot do lookups in the past. The default is Next Month, but you can change it to anything that you want into the future.
@@ -32,11 +32,11 @@ This field determines the timeframe for the availability lookup. By default, th
 
 Between Next and Month(s) is a window for you to enter a numerical value. This is to designate how many months, days, etc. that you are selecting.
 
-**Custom** – Clicking this accesses the calendar. You can select the "from” and “to” date ranges on the calendar, or enter the dates in the text boxes below the calendar. The selected date range is visible at bottom of **Date Range** screen.
+**Custom** – Selecting this accesses the calendar. You can select the "from” and “to” date ranges on the calendar, or enter the dates in the text boxes below the calendar. The selected date range is visible at bottom of **Date Range** screen.
 
-**Cancel** - Clicking this cancels your entries, and allows you to re-enter the information.
+**Cancel** - Selecting this cancels your entries, and allows you to re-enter the information.
 
-**Update** - Clicking this Updates your date range information.
+**Update** - Selecting this updates your date range information.
 
 ### Group By
 
@@ -67,7 +67,7 @@ This field determines the ad server priority for your availability lookup. By de
 
 ### Frequency Cap
 
-This field determines the maximum number of times an ad should appear for a given user for a specified number of minutes, hours, days, weeks, months, or for the lifetime of the ad. Available impressions and capacity are adjusted based on the cap you set. To set a frequency cap, click the current selection. Then in the **Frequency Cap** dialog that appears, type the maximum number of views for the timeframe you want (e.g., for a weekly frequency of 3, set the frequency cap to be 3 views per 1 week).
+This field determines the maximum number of times an ad should appear for a given user for a specified number of minutes, hours, days, weeks, months, or for the lifetime of the ad. Available impressions and capacity are adjusted based on the cap you set. To set a frequency cap, select the current selection. Then in the **Frequency Cap** dialog that appears, type the maximum number of views for the timeframe you want (e.g., for a weekly frequency of 3, set the frequency cap to be 3 views per 1 week).
 
 ### Viewable
 
@@ -91,20 +91,20 @@ This setting will allow you to see displaced availability in addition to the sta
 
 | Button/Field | Description |
 |:---|:---|
-| Open | Clicking this accesses Lookup Templates that you have previously saved. A Lookup Template is a way to save and reuse a particular lookup configuration. This is distinct from a saved batch, which allows you to reuse the resulting target expressions rather than the configuration itself. |
-| Save | Clicking this accesses the **Save Lookup Template** screen. This screen has these fields:<br> - Save as New (radio button)<br> - Replace Existing (radio button)<br> - Name (text box)<br> - Category (pull-down menu)<br> - Description (text box)<br> - Permissions (table)<br><br>After making selections, click **Save** to save this template. Now when you click the **Open** button, you will see this template. |
+| Open | Selecting this accesses Lookup Templates that you have previously saved. A Lookup Template is a way to save and reuse a particular lookup configuration. This is distinct from a saved batch, which allows you to reuse the resulting target expressions rather than the configuration itself. |
+| Save | Selecting this accesses the **Save Lookup Template** screen. This screen has these fields:<br> - Save as New (radio button)<br> - Replace Existing (radio button)<br> - Name (text box)<br> - Category (pull-down menu)<br> - Description (text box)<br> - Permissions (table)<br><br>After making selections, select **Save** to save this template. Now when you select the **Open** button, you will see this template. |
 | Attribute and Product View/Product Group View | There are two different views that are accessibile from a drop-down menu: <br>The **Attribute and Product View** (default) and the **Product Group** View. The latter is specific to product groups.  |
-| Target Expression Editor | Clicking the small icon to the right of the Attribute and Product View verbiage allows you to view the target expression on a user-friendly screen. Target expressions are often very lengthy, and could be hundreds of lines long. The target expression is editable from this screen. You can make changes and click **Update**. The **Lookup Builder** screen is displayed, and the values are updated accordingly. |
+| Target Expression Editor | Selecting the small icon to the right of the Attribute and Product View verbiage allows you to view the target expression on a user-friendly screen. Target expressions are often very lengthy, and could be hundreds of lines long. The target expression is editable from this screen. You can make changes and select **Update**. The **Lookup Builder** screen is displayed, and the values are updated accordingly. |
 | Vary By | This allows you to vary base targeting criteria by selected variant targeting criteria. It builds multiple targeting strings by combining each variant with the base targeting. |
 | Undo | This clears the last action that you entered. |
 | Clear All | This clears all of your entries, and allows you to start over. |
-| Select Attributes or Product | Lookups are either built from an existing product(s), or the particular attributes must be specified. Clicking **Select Attributes** accesses the **Select Attributes** screen. From this screen, you are able to choose attributes. Likewise, clicking **Product accesses** the **Select Product** screen, where you can choose products.<br>Clicking the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
+| Select Attributes or Product | Lookups are either built from an existing product(s), or the particular attributes must be specified. Selecting **Select Attributes** accesses the **Select Attributes** screen. From this screen, you are able to choose attributes. Likewise, selecting **Product accesses** the **Select Product** screen, where you can choose products.<br>Selecting the information icon to the right of the Select Attribute or Product verbiage provides very basic general information about the workflow. |
 
 ## Copy/delete attributes and values across segments
 
 You can copy and delete attributes/values across different segments with an availability lookup.
 
-If you have a multi-segment lookup then you will have access to the following options by clicking the sprocket icon shown below:
+If you have a multi-segment lookup then you will have access to the following options by selecting the sprocket icon shown below:
 
 > [!NOTE]
 > If the sprocket icon showed below is grayed-out, this means the lookup is not a multi-segment lookup. You will not be able to access any options.
@@ -139,7 +139,7 @@ Here’s the explanation for what the options do:
 > [!NOTE]
 > If you are adding a new attribute across segments (and it doesn’t exist in any segment), it does not matter if you use the **Duplicate Attribute** or **Add Attribute Values** option. They will result in the same targeting.
 
-## Building a lookup/target expression using attributes
+## Build a lookup/target expression with attributes
 
 There are a few methods of building a lookup/target expression:
 
@@ -147,13 +147,13 @@ There are a few methods of building a lookup/target expression:
 
 This method is recommended if you know exactly what you are looking for, and your target expression is small.
 
-Click **Type Attribute**. This allows you to type directy into the window. Start typing, and a list of the available attributes appears. Scroll down the list and select the attributes you desire. Select **Enter**, and it automatically goes to the next one.
+Select **Type Attribute**. This allows you to type directy into the window. Start typing, and a list of the available attributes appears. Scroll down the list and select the attributes you desire. Select **Enter**, and it automatically goes to the next one.
 
 ### Method 2
 
 This method is recommended if you do not know specifically what you are looking for. You can start by doing a high-level search, and drill down further until you get the results you are looking for.
 
-- Click **Select Attributes**. This accesses the **Select Attributes** screen. There are three main windows and three search windows.
+- Select **Select Attributes**. This accesses the **Select Attributes** screen. There are three main windows and three search windows.
 - The list in the left-hand window is every attribute that you have available to you.
 - There is extensive search capaibility. The **Contains and Search** window at the top of the screen allow you to drill down into the search.
 - The four options in the search criteria are: Contains, Starts with, Ends with, Equals.
@@ -162,29 +162,29 @@ This method is recommended if you do not know specifically what you are looking 
 - There is also a **Select All** button, if you would like to select all the attributes listed in that window.
 - The result of the search is displayed in the right-hand window.
 - The right-hand window also has include/exclude functionality. You can exclude attributes from your final selection.
-- When you are satisfied with your selection, click **Update**. You will now see the attributes listed on the **Lookup Builder** screen.
-- If you would like to delete an attribute, mouse-over the attribute and click on the **x** in the upper right-hand corner.
+- When you are satisfied with your selection, select **Update**. You will now see the attributes listed on the **Lookup Builder** screen.
+- If you would like to delete an attribute, mouse-over the attribute and select **x** in the upper right-hand corner.
 - If you want to add other attributes, select **Attributes** again, and the entire list is displayed again. The previous selections will still be displayed in the right-hand column.
 
 ### Method 3
 
-- Click **Add Attribute** to add an attribute directly from the **Lookup Builder** screen.
+- Select **Add Attribute** to add an attribute directly from the **Lookup Builder** screen.
 - This accesses a text window, where you can add the attribute’s name. Start typing and it will display a list of what is available to you.
 
-## Building a lookup/target expression for products
+## Build a lookup/target expression for products
 
 - You can select a product as base targeting and then add additional targeting as described in one of the three attribute methods above.
-- If you have existing products in the system that you want to look up, then click **Select Product**. This accesses the **Select Product** screen, which displays a list of products.
+- If you have existing products in the system that you want to look up, then select **Select Product**. This accesses the **Select Product** screen, which displays a list of products.
 - You can start your search by **Name** or **Product ID**.
 - The additional four options in the search criteria are: Contains, Starts with, Ends with, Equals.
 - There are five checkboxes at the top of the screen: Rate Card, Reporting, Seasonal, Custom, Inactive. By default, Rate Card and Reporting are selected. These filters are used to narrow down your search, especially if you have a lot of products.
-- If you wanted to start with a product, and then add additional attributes and attribute values, you can do that from the **Lookup Builder** screen. Select an attribute from the middle column, and click **Update**. The new attribute value will now be shown in the **Lookup Builder** screen.
+- If you wanted to start with a product, and then add additional attributes and attribute values, you can do that from the **Lookup Builder** screen. Select an attribute from the middle column, and select **Update**. The new attribute value will now be shown in the **Lookup Builder** screen.
 
 ### Run/add to batch
 
 Once you have built your lookup(s), you can either Run it directly or you can Add to Batch.
 
-- Run - This is for individual lookups. When you click **Run**, a message appears at the top of the screen that says **Currently running 1 lookup item(s)**. Supertext is also displayed on the **Lookup Results** tab that says (1 item). Proceed to **Lookup Results** for next steps.
+- Run - This is for individual lookups. When you select **Run**, a message appears at the top of the screen that says **Currently running 1 lookup item(s)**. Supertext is also displayed on the **Lookup Results** tab that says (1 item). Proceed to **Lookup Results** for next steps.
 - Add to Batch - This is used when you are building numerous target expressions that are grouped together. It allows you to run them, and continue to work on other tasks. It runs in a different thread in the background.
 
 ## Related topics

@@ -5,7 +5,7 @@ ms.date: 11/06/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Reporting options for dimension, primary and secondary metrics
+# Report options for dimension, primary and secondary metrics
 
 The most commonly used dimension and metric options are noted with an asterisk.
 

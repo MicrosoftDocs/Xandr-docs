@@ -97,7 +97,7 @@ Values in `bucket_index0` must always be smaller than `(2 ^ hash_table_size_l
 
 Currently, the values in `bucket_index1` are ignored as this is to be used for future expansion. If a value is sent for `bucket_index1`, it must be `0`. The parameter is optional.
 
-#### Hash Table Keys
+#### Hash Table keys
 
 For each of your Hash Table keys, you will need a uint32 value. These values should be the ID of respective object that you are referencing from our system - `domain_id`, for instance, rather than the domain string value. These uint32 keys are then transformed into a byte array (little-endian), and hashed.
 

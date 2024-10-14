@@ -1,15 +1,15 @@
 ---
-title: Anatomy of the Order Line Visibility Page
+title: Anatomy of Order Line Visibility Page
 description: In this article, learn the layout of the Order Line Visibility page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the order line visibility page
+# Anatomy of Order Line Visibility page
 
 The Order Line Visibility page on the **Orders** tab shows an order line's details, flighting, and delivery, as well as any competing order lines.
 
-## About the order line visibility page
+## Order Line Visibility page
 
 There are several sections on the **Order Line Visibility** page:
 
@@ -24,7 +24,7 @@ There are several sections on the **Order Line Visibility** page:
     - Add to Scenario - Available only if you use Scenario Manager. View how changing the order line's priority affects related products.
     - View in Reports - View order line information on the **Reports** tab.
 
-- **Order line details panel** - Displays the latest details for the line. Data in this section is not affected by filters elsewhere on the screen. Click the down arrow next to the panel heading to expand and collapse each section as needed.
+- **Order line details panel** - Displays the latest details for the line. Data in this section is not affected by filters elsewhere on the screen. Select the down arrow next to the panel heading to expand and collapse each section as needed.
   - **Basics** - Displays basic information including the order line, flight dates, order line ID, order and advertiser links, industry, and salesperson.
   - **Targeting** - Displays targeting information for the order line including sold as, trafficked as, expression, priority, frequency, and flight method.
   - **Contract** - Displays contract and pricing type, rate, and inventory class for the order line.
@@ -51,7 +51,7 @@ There are several sections on the **Order Line Visibility** page:
   - The horizontal axis displays the flight date range, whereas the vertical axes reflect the metric you selected.
   - Data is color-coded for easy analysis and matches the colors in the dashboard section. When you mouse over any data point on the chart, a tool tip is displayed that describes the metric data.
   - A green vertical line on the graph represents the historical/forecast boundary.
-  - Changes made to order line targeting are expressed in the chart using "T" icons. Click the icon to view the details in the **History** tab.
+  - Changes made to order line targeting are expressed in the chart using "T" icons. Select the icon to view the details in the **History** tab.
 
 - **Tabs**  
   - **Competition** (default) - Displays a list of all competing order lines, with links to view their details. For example, if you want to know why a line item is expected to underperform for a certain date, you can check for any competing sponsorships on that day. You can then proactively optimize to run the order line in another space (e.g, change the geotargeting to the entire state instead of a specific city). You can choose to display competing lines by priority and time. Expand a row to view order and order ID information for the competing line.

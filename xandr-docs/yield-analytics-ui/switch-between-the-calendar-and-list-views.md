@@ -12,9 +12,9 @@ The **View Calendar** page can be displayed in two views:
 - A calendar view that shows a graphical high-level overview of each day on the selected month's calendar.
 - A list view that shows the month in a table where each row can be expanded to drill down for detailed information for a given day.
 
-To switch from the calendar view (default) to the list view, click on the calendar toolbar.
+To switch from the calendar view (default) to the list view, select the calendar toolbar.
 
-To switch from the list view to the calendar view, click on the calendar toolbar.
+To switch from the list view to the calendar view, select the calendar toolbar.
 
 ## Related topics
 

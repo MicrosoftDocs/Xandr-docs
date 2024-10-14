@@ -27,7 +27,7 @@ Some ad servers have multiple options, while others have a more restrictive set 
 > [!TIP]
 > For OAS (Open AdStream), you would use the All option to facilitate Strict Companions.
 >
-> Select the product that you want to use to build your Roadblock. Then click on the Advance link on the bottom-right of the screen in the top modal. After the options expand, click on the Create Product Variants option.
+> Select the product that you want to use to build your Roadblock. Then select the Advance link on the bottom-right of the screen in the top model. After the options expand, select the Create Product Variants option.
 
 :::image type="content" source="media/j.png" alt-text="Screenshot to select the product to build your Roadblock.":::
 

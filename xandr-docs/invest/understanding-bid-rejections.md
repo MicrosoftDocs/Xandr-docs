@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Understanding Bid Rejections
+title: Microsoft Invest - Understand Bid Rejections
 description: In this article, explore bid rejection causes, understand errors, and learn how buyers and sellers can resolve issues effectively.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Understanding bid rejections
+# Microsoft Invest - Understand bid rejections
 
 There are many reasons a bid might be rejected. Rejected bids show up on the **Deals** screen in the **Ineligible Bids** column and are shown in greater detail in the **Rejections** section of the **Deal Details** screen. The **Bid Rejections** table lists out error IDs you might encounter when a bid is rejected, the cause of the errors, and what actions buyers and/or sellers should take to resolve these errors.
 

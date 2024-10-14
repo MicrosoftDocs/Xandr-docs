@@ -17,9 +17,8 @@ This document outlines the capabilities of Trader Home and provides step-by-step
 - **Real-Time Insights**: Stay informed with up-to-date metrics and data, ensuring you can respond to changes promptly.
 - **Quick Access**: Easily navigate to Insertion order and Line item details, facilitating smooth workflow and task management.
 - **Viewing Insertion Orders and Line-items**: The main dashboard provides a summary of your Insertion orders and Line items, displaying key metrics.
-- **Detailed Metrics**: Click on any Insertion order or Line item to view detailed metrics and performance data.
+- **Detailed Metrics**: Select any Insertion order or Line item to view detailed metrics and performance data.
 - **Actionable Insights**: Use the provided insights to adjust your strategies and optimize your campaigns effectively.
-
 
 ## Related topics
 

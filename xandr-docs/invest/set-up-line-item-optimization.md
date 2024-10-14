@@ -86,7 +86,7 @@ The **Optimization** section provides several settings related to optimization, 
 
 1. Add conversion tracking.  
 
-    Click **Edit** to associate conversion tracking pixels to this line item. These pixels can be used to track the line item’s performance.
+    Select **Edit** to associate conversion tracking pixels to this line item. These pixels can be used to track the line item’s performance.
 
     > [!NOTE]
     > If you have selected CPA optimization, the targeted conversion pixel must be one of the conversion tracking pixels selected here.

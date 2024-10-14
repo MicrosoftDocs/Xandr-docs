@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Dealing with campaign under-deliveryl
+# Deal with campaign under-delivery
 
 Diagnosing and solving under-delivery concerns can be a complex task. This is because there are often a number of possible root causes and barriers that make it difficult to make decisions strictly based on revenue.Unlike ad server reports, Yield Analytics can provide a tremendous amount of transparency into all the competing campaigns. Depending on the business concerns a publisher must satisfy in order to make a decision, it can sometimes be a lengthy path to gather all the necessary intel.
 
@@ -23,7 +23,7 @@ Diagnosing and solving under-delivery concerns can be a complex task. This is be
 
 1. Since there are a few causes to the problem, there are a few ways to start to diagnose it. If we assume the problem is on the demand side, the recommended starting point is by looking up the order line in question. We do this by going to the Orders tab, and searching for the Order Line ID.
 
-1. Click on the desired order line, and use the performance details screen to understand when the delivery issue surfaced, and if it is expected to get better or worse.
+1. Select on the desired order line, and use the performance details screen to understand when the delivery issue surfaced, and if it is expected to get better or worse.
 
 1. If it is determined the problem will persist through the life of the order line, then look at the competing order lines in the bottom section, and which order lines are competing most. Yield Analytics will complete a number of useful metrics.
    - To show how many impressions any one order line is demanding from the same product
@@ -31,7 +31,7 @@ Diagnosing and solving under-delivery concerns can be a complex task. This is be
    - If that order line is on schedule or not.
    - By looking at the start/end dates of the highest competing order lines, you can identify if a large order line in competition with the focus order line matches - when the focus order line delivery started to fall below quota. If there are order lines that have a high degree of competition and are delivering to their quota at the same rate as the focus product, the product itself is likely oversold.
 
-1. Even though it may have been identified why something is under-­delivering, if it is suspected the product itself is oversold, click on the **Trafficked As** product in the Order Line details. (You could have also started from here to diagnose the problem).
+1. Even though it may have been identified why something is under-­delivering, if it is suspected the product itself is oversold, select on the **Trafficked As** product in the Order Line details. (You could have also started from here to diagnose the problem).
 
 1. Look at the Allocated Inventory section on the Product Visibility screen to identify how the product capacity and demand is trending in aggregate. You can see:
    - If capacity has recently fallen. This could represent organic traffic trends, or in extreme cases a technical problem. (Tags being removed from the page or otherwise corrupted by a publisher’s technical teams). If it has fallen, by how much and when?

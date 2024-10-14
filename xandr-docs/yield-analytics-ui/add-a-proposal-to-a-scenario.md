@@ -9,10 +9,10 @@ ms.custom: yield-analytics-ui
 
 You can add a proposal or an order to Scenario Manager to better understand how it impacts other orders.
 
-1. On the **Orders** tab, in the Order Tasks panel, click **Evaluate Orders**.
+1. On the **Orders** tab, in the Order Tasks panel, select **Evaluate Orders**.
 1. In the **Evaluate Orders Search** page, in the Orders panel, click on the order.
-1. In the Order preview panel, click the order's name to open it in Evaluate Orders.
-1. Click **Add to Scenario** at the top of the page. The order is added to a scenario.
+1. In the Order preview panel, select the order's name to open it in Evaluate Orders.
+1. Select **Add to Scenario** at the top of the page. The order is added to a scenario.
 1. Go to Scenario Manager to run the scenario.
 
 ## Related topics

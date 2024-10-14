@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Understanding Payment Conversion Rates
+title: Microsoft Invest - Understand Payment Conversion Rates
 description: In this article, learn about payment conversion rates, auction outcome prediction, market-making fees, and their calculations.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Understanding payment conversion rates
+# Microsoft Invest - Understand payment conversion rates
 
 For eligible impressions, (see [Guaranteed Outcomes Auction Mechanics](guaranteed-outcomes-auction-mechanics.md)), the Exchange calculates an outcome-based bid-to-CPM conversion rate before sending the bid request. The conversion rate is a percentage that represents the predicted likelihood of an outcome on a given impression once the market-making fee has been withheld.
 
@@ -22,7 +22,7 @@ The outcome predictions are modeled across the entire platform as accurately as 
 
 Microsoft Advertising provides a service of creating liquidity between buyers and sellers. In doing so, we incur risk, as well as costs from external measurement partners. Thus, we charge a Market-Making Fee for this service. The target Market-Making Fee for Guaranteed Outcomes is 10%. However, the actual Market-Making Fee may vary slightly due to Prediction Variability.
 
-## Marketing-making fee calculation
+## Market-making fee calculation
 
 Market-Making Fee = Fixed Percentage + Prediction Variability
 

@@ -15,7 +15,7 @@ We continue to work on enhancing the reporting screen. Here are the highlights f
 
 - Page resizes correctly when switching between table and charts.
 - Start/end dates in custom calendar update correctly.
-- Every modal that has an input text field should open with focus on that field, to prevent the user from having to click in it.
+- Every model that has an input text field should open with focus on that field, to prevent the user from having to click in it.
 - Sponsorship Calendar Date Controls - Allows you to view the Sponsorship calendar using different date ranges within the month.
 - Sponsorship Calendar Priority and Frequency Capping - Allows you to apply priority and frequency caps to your Sponsorship Calendar. This is to enhance the data you are able to view.
 

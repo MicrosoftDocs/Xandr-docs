@@ -11,7 +11,7 @@ You can set the name, state, and ad type, as well as associate additional insert
 1. Enter the name that you will use to search for and report on the line item.
    The name of the line item must be unique per advertiser.
   
-1. Click **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically).
+1. Select **+External Code** and enter a code if you want to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically).
    External codes must follow these guidelines:
     - They can contain only alphanumeric characters, periods, underscores or dashes.
     - Codes are not case-sensitive (upper-case and lower-case characters are treated the same).
@@ -24,12 +24,12 @@ You can set the name, state, and ad type, as well as associate additional insert
     > If a user's settings require them to receive approval before activating a line item, a banner message will display stating that peer approval is required.
 
 1. Associate additional insertion orders to the line item by doing the following:
-    1. Click the pencil icon above the existing insertion order that displays.
+    1. Select the pencil icon above the existing insertion order that displays.
        A list of corresponding insertion orders displays automatically.
     1. Search for additional existing insertion orders if necessary.
     1. Select the corresponding check marks to associate the necessary insertion orders that display.
        You won't be able to select particular insertion orders if their billing periods overlap or conflict with the billing periods of the insertion order that was previously associated to the line item.
-    1. Click **Save**.
+    1. Select **Save**.
 
 1. Leave **Banner** selected as the **Ad Type** or select a different option.
 

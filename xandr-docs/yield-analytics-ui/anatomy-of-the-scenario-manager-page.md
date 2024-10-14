@@ -1,22 +1,22 @@
 ---
-title: Anatomy of the Scenario Manager Page
+title: Anatomy of Scenario Manager Page
 description: In this article, learn the layout of the Scenario Manager page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the scenario manager page
+# Anatomy of Scenario Manager page
 
 The Scenario Manager page is where you can see how modified order lines, or orders - would impact revenue gain and loss for existing order lines.
 
-## The scenario manager tabs
+## Scenario Manager tabs
 
 There are two tabs in **Scenario Manager**:
 
 - **Scenario Changes** – Use this tab to select orders and order lines to run through Scenario Manager.
 - **Scenario Summary** – Displays the scenario results.
 
-## About the scenario changes tab interface
+## Scenario Changes tab
 
 Scenario Manager's **Scenario Changes** tab is comprised of the following sections:
 
@@ -24,7 +24,7 @@ Scenario Manager's **Scenario Changes** tab is comprised of the following sect
 - **Modified Order Lines** – Displays the order lines that you have added to Scenario Manager.
 - **New Order Lines** – Displays the projected forecast for the order lines that you run through Scenario Manager.
 
-## About the scenario summary tab interface
+## Scenario Summary tab
 
 Scenario Manager's **Scenario Summary** tab is comprised of the following sections:
 

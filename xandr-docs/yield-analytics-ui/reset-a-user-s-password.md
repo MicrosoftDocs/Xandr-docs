@@ -9,9 +9,9 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can reset a user's password.
 
-1. On the **Admin Tools** menu, click **Users**. The **Users** page appears, displaying a list of all user accounts.
-1. In the **Username** column, click the username for the user you want to update. The **Edit User** page appears.
-1. In the **Password** field, type the new password. Retype it in the **Confirm Password** field, and then click **Save**.
+1. On the **Admin Tools** menu, select **Users**. The **Users** page appears, displaying a list of all user accounts.
+1. In the **Username** column, select the username for the user you want to update. The **Edit User** page appears.
+1. In the **Password** field, type the new password. Retype it in the **Confirm Password** field, and then select **Save**.
 
 ## Related topics
 

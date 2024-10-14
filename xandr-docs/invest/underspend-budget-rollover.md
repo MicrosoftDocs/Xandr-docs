@@ -21,7 +21,7 @@ A flight has an underspent budget when its delivered impressions or revenue is l
 1. Go to the line item's BMW grid view for your advertiser. Here, you will see the new **Underspend** icon in the **Flight Budget Delivery** column.
 1. Select the underspend line item from the LI list. This will take you to the exact flights that has underspent budget.
 1. Edit the line item. You will find a **Rollover** button with details about how much budget was underspent on each underspent flight.
-1. Click on the **Rollover** button. This will take you to the **Rollover Underspend** screen.
+1. Select the **Rollover** button. This will take you to the **Rollover Underspend** screen.
 1. Do one of the following:
     - If you have an active or future flight, then select **Rollover**. You will find a dropdown that has all the flights for your line item. Select the flight from the dropdown to which you want the budget to be rolled over. For example, you can roll over a budget of $1,259.73 from Flight 2 to Flight 4.
     - If you don't have any active or future flights, then select **Extend**. You will find an **End Date** field. Update this field to a future date and continue your budgeting.

@@ -5,7 +5,7 @@ ms.date: 11/08/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Working with channel metrics
+# Work with channel metrics
 
 The **Channels** tab provides high-level metrics for integrated Supply-Side Platform (SSPs) along with adserver data. It is a useful tool to contrast guaranteed verses pre-emptible volumes and pricing, in addition to comparing multiple SSP's effectiveness.
 

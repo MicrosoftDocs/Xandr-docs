@@ -9,9 +9,9 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can delete a user group.
 
-1. On the **Admin Tools** menu, click **Permissions**. The **Permissions** page appears, displaying the **Groups** panel with a table of all existing user groups.
-1. Click the user group you want to delete. The Group: **[Group Name]** panel appears. **[Group Name]** is the name of the group you selected.
-1. At the bottom of the page, click **Delete**. On the dialog that appears, click **OK**.
+1. On the **Admin Tools** menu, select **Permissions**. The **Permissions** page appears, displaying the **Groups** panel with a table of all existing user groups.
+1. Select the user group you want to delete. The Group: **[Group Name]** panel appears. **[Group Name]** is the name of the group you selected.
+1. At the bottom of the page, select **Delete**. On the dialog that appears, select **OK**.
 
 ## Related topics
 

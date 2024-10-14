@@ -5,7 +5,7 @@ ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
-# Data Science Toolkit - Using custom models to pass macros to dynamic creative optimizations
+# Data Science Toolkit - Use custom models to pass macros to dynamic creative optimizations
 
 This document provides a solution to use a macro combined with a non-valuation custom model to ensure the Dynamic Creative Optimizations (DCO) receives all the segments the user has been targeted on.
 
@@ -13,7 +13,7 @@ This document provides a solution to use a macro combined with a non-valuation c
 
 There are two solutions to ensuring the DCO receives all the segments the user has been targeted on.
 
-### Utilize the split's custom values
+### Utilize split's custom values
 
 In, users can utilize the splits [custom value feature](../invest/create-a-programmable-split.md) (log-in required) to create a key-value pair and use the key as a macro.
 
@@ -27,7 +27,7 @@ In, users can utilize the splits [custom value feature](../invest/create-a-progr
 - Only allows a limited number of splits per ALI (100 splits only in ).
 - You can only have one key-value pair per split and therefore, only one custom macro per split.
 
-### Use the non-valuation custom model
+### Use non-valuation custom model
 
 Use a [non-valuation custom model](nonvaluation-custom-model.md) to create custom macros that to pass to the DCO. This solution is more flexible than using the split's custom value feature as it enables the user to create as many macros as needed for each condition.
 

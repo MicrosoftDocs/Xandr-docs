@@ -17,14 +17,14 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
     The **Audience & Location Segments** subsection displays all segments belonging to the advertiser for the associated line item as well as segments defined at the Member level.
 
-1. Click one of the following tabs:
+1. Select one of the following tabs:
     - **My Audience Segments**
     - **Third Party Segments**
 
 1. To target users within one segment group, do the following:
     1. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
 
-        By default, the corresponding **✓** icon will be automatically selected for every segment after dragging each one. You can leave the **✓** icon selected to target the users within the segment. Otherwise, click the **-** icon to exclude the users within the segment from being targeted.
+        By default, the corresponding **✓** icon will be automatically selected for every segment after dragging each one. You can leave the **✓** icon selected to target the users within the segment. Otherwise, select the **-** icon to exclude the users within the segment from being targeted.
 
     1. Select **And** or **Or** to add boolean operators between the segments.
 
@@ -35,9 +35,9 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
 1. To target users within multiple segment groups, do the following:
     1. Drag the appropriate segments that display on the left into Segment Group 1 on the right.
-    1. Click **Create New Group** to add more segment groups and drag the appropriate segments into each corresponding segment group.
+    1. Select **Create New Group** to add more segment groups and drag the appropriate segments into each corresponding segment group.
 
-        By default, the corresponding **✓** icon will be automatically selected for every segment after dragging each one. You can leave the **✓** icon selected to target the users within the segment. Otherwise, click the **-** icon to exclude the users within the segment from being targeted.
+        By default, the corresponding **✓** icon will be automatically selected for every segment after dragging each one. You can leave the **✓** icon selected to target the users within the segment. Otherwise, select the **-** icon to exclude the users within the segment from being targeted.
 
     1. Select **And** or **Or** to add boolean operators between the segments and segment groups.
 
@@ -51,7 +51,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
 
     A boolean expression for this scenario would look something like this: (Require A OR Require B) AND (Exclude C) AND (Exclude D).
 
-1. **Optional:** To further refine your segment targeting, hover over any of the segments and click the pencil icon:
+1. **Optional:** To further refine your segment targeting, hover over any of the segments and select the pencil icon:
 
     | Setting | Description |
     |---|---|
@@ -61,7 +61,7 @@ For more information, see [Segment Targeting](segment-targeting.md).
     > [!NOTE]
     > The options that are available from the **Fired** and **Value** menus may vary based on the data provider's offering. Microsoft Advertising has only defined these options for segments that you've created.
 
-1. Click **Save**.
+1. Select **Save**.
 
 ## Related topics
 

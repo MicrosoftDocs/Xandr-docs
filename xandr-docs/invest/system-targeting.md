@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - System targeting
 
-You can target users based on their operating systems, browsers, language, device model, or carrier. In the **Targeting** section of a line item, click the **Edit** button next to **System**.
+You can target users based on their operating systems, browsers, language, device model, or carrier. In the **Targeting** section of a line item, select the **Edit** button next to **System**.
 
 By default, all operating systems, browsers, and languages are targeted. On the **System** dialog, you can narrow your targeting to include or exclude specific systems.
 

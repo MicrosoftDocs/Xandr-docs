@@ -8,10 +8,10 @@ ms.date: 10/28/2023
 
 You can define a split by specifying the targeting goals you want it to meet.
 
-1. Click the pencil icon that displays in the **Name** column for the corresponding split.
-1. Click the **Setup** tab and set the **Bid Multiplier**.
-1. Click the **Targeting** tab and select the types of targeting you want to apply using the dropdown menu.
-    By default, the targeting goal for a selected category is met if the impression includes any of the values you specify. Click the **Include Any** menu to change this to **Exclude All**.
+1. Select the pencil icon that displays in the **Name** column for the corresponding split.
+1. Select the **Setup** tab and set the **Bid Multiplier**.
+1. Select the **Targeting** tab and select the types of targeting you want to apply using the dropdown menu.
+    By default, the targeting goal for a selected category is met if the impression includes any of the values you specify. Select the **Include Any** menu to change this to **Exclude All**.
 
     This table lists all the features you can use to define a split:
 

@@ -1,16 +1,16 @@
 ---
-title: Data Science Toolkit - Bonsai Custom Model Workflow
-description: In this article, explore a detailed guide to the Bonsai custom model workflow with step-by-step instructions and code examples.
+title: Data Science Toolkit - Bonsai Custom Model Process Overview
+description: In this article, explore a detailed guide to the Bonsai custom model process overview with step-by-step instructions and code examples.
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
 
-# Data Science Toolkit - Bonsai custom model workflow
+# Data Science Toolkit - Bonsai custom model process overview
 
-This page describes a typical Bonsai custom model workflow and provides code examples.
+This page describes a typical Bonsai custom model process overview and provides code examples.
 
 > [!NOTE]
-> The Closed Beta workflow requires using the API. Closed Beta clients are expected to have completed our [API Onboarding Process](../digital-platform-api/api-onboarding-process.md) before getting started.
+> The Closed Beta process requires using the API. Closed Beta clients are expected to have completed our [API Onboarding Process](../digital-platform-api/api-onboarding-process.md) before getting started.
 
 ## Step 1: Identify your requirements
 

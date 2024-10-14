@@ -41,7 +41,7 @@ The following sellers do not currently have any allowlist requirements:
 
 ## Step 2. Upload native creatives
 
-Navigate to the **Creative Manager** screen, click **Create New** > **Single creative**. This will bring up the **Create New Creative** dialog.
+Navigate to the **Creative Manager** screen, select **Create New** > **Single creative**. This will bring up the **Create New Creative** dialog.
 
 To maximize reach for your creatives across native inventory sources, here are some general guidelines we recommend:
 

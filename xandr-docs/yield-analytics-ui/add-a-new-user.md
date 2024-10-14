@@ -9,10 +9,10 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can add a new user account.
 
-1. On the **Admin Tools** menu, click **Users**. The Users page appears, displaying a list of all user accounts.
-1. At the bottom left of the list, click **Add User**. The New User page appears.
+1. On the **Admin Tools** menu, select **Users**. The Users page appears, displaying a list of all user accounts.
+1. At the bottom left of the list, select **Add User**. The New User page appears.
 1. In the **Username** field, type the ID the user will use to log in to Yield Analytics.
-1. In the **Password** field, type a password for the new ID. Retype it in the **Confirm Password** field, and then click **Save**.
+1. In the **Password** field, type a password for the new ID. Retype it in the **Confirm Password** field, and then select **Save**.
 
 ## Related topics
 

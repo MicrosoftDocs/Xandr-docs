@@ -54,7 +54,7 @@ The values for the input fields are determined by Xandr optimization. For more i
 | `estimated_clearing_price` | float, integer | The 80th percentile price for this impression.   |
 | `uniform` | float, integer | A uniform random number between `0` and `1` (`0` included, `1` excluded). |
 
-## Using segments as the input for compute()
+## Use segments as input for compute()
 
 You can perform calculations using the value or age of the user in a first-party or third-party segment to determine a bid value. If the user is not present in the segment, no bid is made. Use the [Segment Service](../digital-platform-api/segment-service.md) to retrieve segment IDs.
 
@@ -63,7 +63,7 @@ You can perform calculations using the value or age of the user in a first-party
 | `segment[ID].value`<br> | float, integer | The value of the user in a first-party or third-party segment. If the user is not present in the segment, no bid will be made.<br>`ID` is the segment ID. |
 | `segment[ID].age` | float, integer | The age of a user in a first-party or third-party segment. If the user is not present in the segment, no bid will be made.<br>`ID` is the segment ID. |
 
-## Using frequency or recency as inputs for compute()
+## Use frequency or recency as inputs for compute()
 
 You can perform calculations using frequency or recency to determine a bid value.
 

@@ -17,7 +17,7 @@ The final bid submitted in an auction is further modified based on multiple addi
 - Partner fees
 - Margin
 
-## Predicting clicks
+## Predict clicks
 
 CPC and CTR goals optimize to clicks. The features and signals used to predict the likelihood of clicks are:
 
@@ -31,7 +31,7 @@ CPC and CTR goals optimize to clicks. The features and signals used to predict t
 - How frequently the user has been served impressions from this advertiser
 - How recently the user has been served impressions from this advertiser
 
-## Predicting only post-click conversions
+## Predict only post-click conversions
 
 CPA goals can be set to optimize only to post-click conversions. In that case, the features and signals used to predict the likelihood of post-click conversions are:
 
@@ -45,7 +45,7 @@ CPA goals can be set to optimize only to post-click conversions. In that case, t
 - How frequently the user has been served impressions from this advertiser
 - How recently the user has been served impressions from this advertiser
 
-## Predicting post-click and post-view conversions
+## Predict post-click and post-view conversions
 
 You can set a CPA goal that optimizes to both post-click and post-view conversions for both retargeting line items (line items that target customers who have already shown an interest in the advertiser) and prospecting line items (line items that target a broader spread of potential customers who may become interested in the brand). The different types of line items use different features and signals to predict the likelihood of conversion events.
 
@@ -63,7 +63,7 @@ For prospecting line items, the features and signals used to predict these event
 - How frequently the user has been served impressions from this advertiser
 - How recently the user has been served impressions from this advertiser
 
-## Predicting views
+## Predict views
 
 vCPM goals optimize to views. The features used to predict the likelihood of views are:
 
@@ -71,7 +71,7 @@ vCPM goals optimize to views. The features used to predict the likelihood of vie
 - Inventory URL
 - Operating system
 
-## Predicting video completes
+## Predict video completes
 
 CPCV and VCR goals optimize to video completes, which occur when a video is played for its entire duration. The features and signals used to predict the likelihood of video completes are:
 

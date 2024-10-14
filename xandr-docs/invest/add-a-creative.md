@@ -17,12 +17,12 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
 1. Select an advertiser.
 
-1. Click **New** and select the appropriate creative type from the menu that displays.
+1. Select **New** and select the appropriate creative type from the menu that displays.
 
     The **Create New** screen displays.
 
 1. Provide the creative file using one of the following methods:
-    - If the creative is being hosted with Microsoft Advertising, upload the file by clicking the **Select Files** button to upload the appropriate assets.
+    - If the creative is being hosted with Microsoft Advertising, upload the file by selecting the **Select Files** button to upload the appropriate assets.
       > [!NOTE]
       > For native creatives, you can upload a main image and icon simultaneously.
 
@@ -33,18 +33,18 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
     - **Third-Party URL**: For video and audio creatives that are being trafficked through a third-party ad server.
 
     > [!TIP]
-    > When uploading creative files, you can hold down the **Command** (if using a Mac) or **CTRL** (if using a PC) key until you've selected all the necessary files from your computer, and then click **Open**.
+    > When uploading creative files, you can hold down the **Command** (if using a Mac) or **CTRL** (if using a PC) key until you've selected all the necessary files from your computer, and then select **Open**.
     >
     > For native creatives, keep the following in mind:
     > - You can also upload images and icons using the **Composition** section. You can specify which native image and icon file should be used by selecting one of the files that were previously uploaded from the **Image** and **Icon** menus.
-    > - To replace any of the selected files, click the **Image** and **Icon** menus in the **Composition** section and click **Select Files** or **Enter a URL**.
+    > - To replace any of the selected files, select the **Image** and **Icon** menus in the **Composition** section and select **Select Files** or **Enter a URL**.
 
 1. Provide basic information for the creative in the **Basic Setup** section:
     1. Enter a new name for the creative in the **Name** field, or leave the original name that currently displays.
-    1. Enter a landing page URL in the **Landing Page** field that the users will be redirected to when clicking the creative, or select the **Set on the Line Item level** radio button to set it at the line item level. For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md).
+    1. Enter a landing page URL in the **Landing Page** field that the users will be redirected to when selecting the creative, or select the **Set on the Line Item level** radio button to set it at the line item level. For more information, see [Dynamic Landing Pages](dynamic-landing-pages.md).
     1. For banner creatives, select a media type from the menu pull-down.
 
-        A standard Microsoft Advertising template is selected by default. You can click the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
+        A standard Microsoft Advertising template is selected by default. You can select the **X** in the search field next to the menu pull-down and select a different template. For more information, see [Applying Media Types and Templates to Banner Creatives](applying-media-types-and-templates-to-banner-creatives.md).
     1. For HTML5 creatives, select one of the following media types: **Standard**, **Interstitial**, or **Expandable**.
     1. For HTML5 and banner creatives, select a creative size.
 
@@ -57,19 +57,19 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
     For more information, see [Video Creatives](video-creatives.md) and [Audio Creatives](audio-creatives.md).
 
-1. For native creatives, enable automatic resizing of the main native creative and icon by clicking the **Allow smart image adjustments** toggle and selecting one of the following radio buttons:
+1. For native creatives, enable automatic resizing of the main native creative and icon by selecting the **Allow smart image adjustments** toggle and selecting one of the following radio buttons:
     - **Include white bars to fill placement**: Adds white space above and below the image and icon within the placement.
     - **Crop image to fit placement**: Enlarges or reduces the size of the image and icon so that they fill the entire placement.
 
-    You can preview the image and icon files to determine which of these options are most appropriate before saving by clicking **Preview adjusted examples** and selecting one of the following radio buttons:
+    You can preview the image and icon files to determine which of these options are most appropriate before saving by selecting **Preview adjusted examples** and selecting one of the following radio buttons:
     - **Include white bars to fill placement**
     - **Crop image to fit placement**
 
     Two previews, one with the widest extreme and the other with the tallest extreme, display for each option. For more information, see [Smart Image Adjustments for Native Creatives](smart-image-adjustments-for-native-creatives.md).
 
-    Additionally, you can add details for the native image and icon files in the **Composition** section. Click the **Additional Assets** menu to add additional fields. For more information about each asset specification, see [Native Creative Asset Specifications](native-creative-asset-specifications.md).
+    Additionally, you can add details for the native image and icon files in the **Composition** section. Select the **Additional Assets** menu to add additional fields. For more information about each asset specification, see [Native Creative Asset Specifications](native-creative-asset-specifications.md).
 
-1. Click the **Preview** button in the left pane to preview the creative.
+1. Select the **Preview** button in the left pane to preview the creative.
 
     For native creatives, the **Preview** button won't display until the landing page URL has been added.
 
@@ -83,7 +83,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
 1. [Select the appropriate audit option](select-an-audit-option-for-a-creative.md).
 
-1. Click **Save**.
+1. Select **Save**.
 
 ## Related topics
 

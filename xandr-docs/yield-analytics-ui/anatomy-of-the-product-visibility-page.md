@@ -1,19 +1,19 @@
 ---
-title: Anatomy of the Product Visibility Page
+title: Anatomy of Product Visibility Page
 description: In this article, learn the layout of the Product Visibility page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the product visibility page
+# Anatomy of Product Visibility page
 
 The Product Visibility page on the **Products** tab shows you the full details of a product. This includes allocated inventory and allocated order lines.
 
-## About the product visibility interface
+## Product Visibility page
 
 The **Product Visibility** page is comprised of the following five panels:
 
-- **Filters** – This panel, which appears at the top of the page, is where you can refine the criteria for the analyses in the **Allocated Inventory** and **Allocated Order Line** panels. For example, you can change the default time period to look back 30 days instead of ahead 30 days, change the daily breakout to be week, month, quarter, or year, change the start and end dates, etc. As you make changes, you must click **Update** for them to be accepted. Download metrics for the product to an Excel worksheet by clicking **Export** in this panel.  
+- **Filters** – This panel, which appears at the top of the page, is where you can refine the criteria for the analyses in the **Allocated Inventory** and **Allocated Order Line** panels. For example, you can change the default time period to look back 30 days instead of ahead 30 days, change the daily breakout to be week, month, quarter, or year, change the start and end dates, etc. As you make changes, you must select **Update** for them to be accepted. Download metrics for the product to an Excel worksheet by selecting **Export** in this panel.  
 
 - **Product Details** – This panel, which appears beneath the Filters panel, shows the general details and attributes defined for the product. This includes the product name, product type, rate card, floor CPM, and targeting.  
 
@@ -26,7 +26,7 @@ The **Product Visibility** page is comprised of the following five panels:
   - **Starving Order Lines** - This is to see order lines that are underdelivering for the product.
   - **Potential Competition** - This is to see order lines potentially competing for the product's impressions.
 
-Download order line data to an Excel worksheet by clicking **Export** on the from the **Allocating Order Lines** tab.
+Download order line data to an Excel worksheet by selecting **Export** on the from the **Allocating Order Lines** tab.
 
 ## Related topics
 

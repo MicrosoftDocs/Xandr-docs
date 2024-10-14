@@ -11,11 +11,11 @@ You may have internal offline data about users that you need to insert into the 
 The **getUID** service retrieves the Microsoft Advertising ID so you can coordinate it with your own in-house ID server side or in your own cookie space. Then you can pass in an offline data feed that says, "update Microsoft Advertising user ABC with the following segment data." The **mapUID** service passes your internal ID to us for mapping to the Microsoft Advertising ID within the Microsoft Advertising cookie store.
 
 > [!NOTE]
-> Note that the Microsoft Advertising user ID macro described below is `$UID`. Unlike many of our other macros, it does not have curly braces.
+> The Microsoft Advertising user ID macro described below is `$UID`. Unlike many of our other macros, it does not have curly braces.
 
-## A basic mapping example
+## Basic mapping example
 
-|  |  |
+| Field  | ID/Value |
 |:---|:---|
 | **Prostarr User ID** | `PS123` |
 | **Microsoft Advertising User ID** | `2894234234` |
@@ -34,7 +34,7 @@ where the URL is the the one you want the mapping directed to. This pixel is pla
 > [!TIP]
 > For a detailed walk-through of how this works, see the [User Mapping Visual and Walk-Through](./user-mapping-visual-and-walk-through.md).
 
-## The getUID service
+## getUID service
 
 A URL of your choice will receive a client-side call with the Microsoft Advertising user ID as a querystring parameter. During the ad call, Microsoft Advertising redirects the user to the member's desired URL. The Impression Bus inserts the Microsoft Advertising user ID into the URL, either by replacing a `$UID` macro, or by appending it to the end of the URL. When the user does not have an Microsoft Advertising cookie, `"0"` is returned and Microsoft Advertising attempts to create one. However, if the user is encountering the getuid call for the first time, `"0"` will not be returned.
 
@@ -90,7 +90,7 @@ where `callback` is the callback function as defined on the query string. You wi
 ABC({"uid":1680598911678123849}) 
 ```
 
-## A getUID example
+## getUID example
 
 In most cases, it will be necessary to pass the user ID into a specified parameter within the query string of the URL. To accomplish this, you may use the `$UID` macro:
 
@@ -104,7 +104,7 @@ The `$UID` macro will be replaced with the Microsoft Advertising user ID by the 
  https://ad.adserver.com/pixel?adnxs_uid=19241908471992&geo=35&referrer=https://www.website.com 
 ```
 
-## Use case: piggyback on a pixel call
+## Use case: Piggyback on a pixel call
 
 An easy way to create this mapping is to piggyback the getUID Service off of one of your existing pixel calls. You can adjust your pixel so that when the pixel call is made, there will be an immediate redirect to the Microsoft Advertising getUID service, which will pass back the user ID within the URL indicated by Microsoft Invest.
 
@@ -129,7 +129,7 @@ https://ad.adserver.com/pixel?id=234123&adnxs_uid=19241908471992
 
 When `adserver.com` receives this call, the Microsoft Advertising user ID can be inserted into `adserver.com`'s server-side user data store where this mapping of user IDs can be used by future impression and pixel calls through the Microsoft Advertising Impression Bus.
 
-## The mapUID service
+## mapUID service
 
 > [!TIP]
 > The mapUID service has fees associated with it. If you're interested in using this option, speak with your Microsoft Advertising representative.
@@ -154,7 +154,7 @@ https://ib.adnxs.com/mapuid?member=123&user=ABC;DEF;GHI
 
 The average time to live (TTL) for mapUID mappings is around 2.5 weeks. Therefore, it's very important that you fire the mapUID pixel as frequently as possible and on as many pages as possible to keep your mappings live.
 
-## Piggybacking a segment call off of a mapUID call
+## Piggyback a segment call off of a mapUID call
 
 You can add user IDs to one or more segments in the Microsoft Advertising cookie store at the same time that you map their ID to ours.
 
@@ -172,7 +172,7 @@ To pass in values for each segment use colons. This example uses segment codes i
 https://ib.adnxs.com/mapuid?member=123&user=[USER_ID]&seg_code=[code1]:[code1value],[code2]:[code2value],[code3]:[code3value] 
 ```
 
-## Sending us your segment data offline
+## Send us your segment data offline
 
 For more information about how to send us your segment data offline, see the API's [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 

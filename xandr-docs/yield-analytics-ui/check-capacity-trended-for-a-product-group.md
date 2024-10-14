@@ -11,7 +11,7 @@ Use the **Capacity Trended** widget to quickly view how your whole network, or
 
 1. On the **Capacity Dashboard** page, view the **Capacity Trended** widget for your entire network. The exact capacity figure is displayed when you mouse over a specific time period's green bar.
 1. To view the trended capacity for a specific product, select it from the drop-down menu. You can filter the available products by typing in the box.
-1. (Optional) Click **View All** to open the Consumed Impressions report on the **Reports** tab.
+1. (Optional) Select **View All** to open the Consumed Impressions report on the **Reports** tab.
 
 ## Related topics
 

@@ -13,17 +13,17 @@ You can view the full details of an order or order line, displayed on the **Orde
 
 The following are some common ways to access the **Order Visibility** page:
 
-- On the **Orders Dashboard** page, display any of the three widgets **By Order**. Then click on a specific order.
-- On the **Orders Dashboard** page, click **Find Orders** and click on a specific order.
-- On the **Order Line Visibility** page, click on a specific order.
+- On the **Orders Dashboard** page, display any of the three widgets **By Order**. Then select a specific order.
+- On the **Orders Dashboard** page, select **Find Orders** and select a specific order.
+- On the **Order Line Visibility** page, select a specific order.
 
 ## View the full details of an order line
 
 The following are some common ways to access the **Order Line Visibility** page:
 
-- On the **Orders Dashboard** page, display any of the three widgets **By Order Line**. Then click on a specific order line.
-- On the **Orders Dashboard** page, click **Find Order Lines**. Click on a specific order line.
-- On the **Order Visibility** page, click on a specific order line.
+- On the **Orders Dashboard** page, display any of the three widgets **By Order Line**. Then select a specific order line.
+- On the **Orders Dashboard** page, select **Find Order Lines**. Select a specific order line.
+- On the **Order Visibility** page, select a specific order line.
 
 ## Related topics
 

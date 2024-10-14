@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Fulfilling a proposed campaign
+# Fulfill a proposed campaign
 
 Fulfilling a campaign is a core, and (usually) straightforward request in Yield Analytics. Determining what else can be offered when products are oversold is more complex. Yield Analytics can quantify overlaps and incremental inventory, but it usually takes a 'human touch' to find the right suggestion.
 

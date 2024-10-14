@@ -5,11 +5,11 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Best Practices - reporting product strategy
+# Best practices - Reporting product strategy
 
-## What are reporting products?
+## Reporting products overview
 
-Reporting products are products that are generally not sold, but are used for reporting purposes only. Reporting products can be used as shortcuts to:
+Reporting products are products that are generally not sold, but are used for reporting purposes only. Reporting products can be used as shortcuts to:
 
 - Aggregating meaningful pools of inventory
 - Breaking out consumption and optimizing campaigns
@@ -17,7 +17,7 @@ Reporting products are products that are generally not sold, but are used for re
 
 Reporting products are created in, and typically exist in Yield Analytics only. This is contrary to rate-card products or custom products, which are typically imported from the ad server or order management system.
 
-## Creating useful reporting products
+## Create useful reporting products
 
 There are a few rules that we recommend in creating reporting products:
 
@@ -40,7 +40,7 @@ An example of possible rate card products:
 A reporting product could be named:
 **TC_Desktop_USOnly_News_Startups_Apps_AllSizes**
 
-In this way, the core of the product is identical between the rate card products and the reporting product. The site parameter has only been changed. If you needed to find the reporting product that was a parent to one of the rate card products, you’d immediately know how it would be named. It would be based on the rate card product name.
+In this way, the core of the product is identical between the rate card products and the reporting product. The site parameter has only been changed. If you needed to find the reporting product that was a parent to one of the rate card products, you’d immediately know how it would be named. It would be based on the rate card product name.
 
 ## Create reporting products using combinations of inventory assets
 

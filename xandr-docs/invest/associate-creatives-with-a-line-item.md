@@ -26,17 +26,17 @@ From the **Creatives** section, you can associate creatives with an augmented li
       > [!TIP]
       > You can also place your cursor in the **Search creative name or ID** search field and existing creatives that are associated to the same advertiser as the ALI will display.
 
-    - Select the **Paste List of IDs** button and enter all  the associated creative IDs separated by commas or hard returns in the  modal and click **Add**.
+    - Select the **Paste List of IDs** button and enter all  the associated creative IDs separated by commas or hard returns in the  modal and select **Add**.
 
       Each associated creative displays at the bottom of the **Associated Creatives** subsection, with associated active creatives on the first tab and associated inactive creatives on the second tab. Creatives will automatically serve for all flights unless you apply specific flights or custom dates that fall within the date ranges for a specific flight. When creatives are scheduled to serve for all flights and additional flights are added to the ALI, the creatives will continue to serve until the last flight ends.
 
 1. Enter a value in the **Weight** field for each corresponding creative if the **Manually weight creatives** radio button was selected.
 1. Select specific flights or custom dates that fall within the date ranges for these specific flights to schedule when associated creatives will serve by doing the following if necessary:
-    1. Select corresponding checkboxes for the necessary creatives and click **Associate dates**. You can select multiple checkboxes if several of the creatives will serve during the same flights or custom dates.
-    1. Click the **Select dates** button from the **Associate Dates** dialog if the creative will serve during specific flights.
+    1. Select corresponding checkboxes for the necessary creatives and select **Associate dates**. You can select multiple checkboxes if several of the creatives will serve during the same flights or custom dates.
+    1. Select the **Select dates** button from the **Associate Dates** dialog if the creative will serve during specific flights.
     1. Select any of the available checkboxes to apply specific flights, or select the **Custom date range** checkbox and select start and end dates to specify a date range that doesn't include any dates before the start date or after the end date for one of the available flights. For example, if the flight has a start date of November 1 and an end date of December 1, then the custom date range cannot be any date before November 1 or after December 1.
-    1. Click **Apply**.
-1. Enter a **Landing Page URL** that the user will be redirected to upon clicking each creative.
+    1. Select **Apply**.
+1. Enter a **Landing Page URL** that the user will be redirected to upon selecting each creative.
 
 ## Related topics
 

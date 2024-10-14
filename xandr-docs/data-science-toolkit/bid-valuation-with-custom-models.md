@@ -24,7 +24,7 @@ expressed as:
 
 With the exception of Adaptive Pacing users have the option to customize each of the different components of the Bid Value:
 
-### Expected Value (EV)
+### Expected value (EV)
 
 The Expected Value (EV) of a variable is described as the sum of all possible factors that can impact a Bid Value, each multiplied by the probability of its occurrence.
 

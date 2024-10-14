@@ -92,9 +92,9 @@
     href: ad-buying-with-xandr.md
   - name: Basic Buy-side Setup Procedures
     href: basic-buy-side-setup-procedures.md
-  - name: Understanding the Debug Auction
+  - name: Understand the Debug Auction
     href: understanding-the-debug-auction.md
-  - name: Using the Buyer Monitoring Grids
+  - name: Use Buyer Monitoring Grids
     href: using-the-buyer-monitoring-grids.md
   - name: Bulk Edit Actions
     href: bulk-edit-actions.md
@@ -274,7 +274,7 @@
     items:
     - name: Working with Programmable Splits
       href: working-with-programmable-splits.md
-    - name: Understanding Splits
+    - name: Understand Splits
       href: understanding-splits.md
     - name: Configure a Programmable Split
       href: configure-a-programmable-split.md
@@ -338,7 +338,7 @@
       href: set-up-consent-mode-in-universal-pixel.md
     - name: Events and Parameters
       items:
-      - name: Using Events and Parameters
+      - name: Use Events and Parameters
         href: using-events-and-parameters.md
       - name: Create Event Code from the UI
         href: create-event-code-from-the-ui.md
@@ -358,7 +358,7 @@
         href: set-up-conversions-with-universal-pixel.md
       - name: Universal Pixel Rule Conditions
         href: universal-pixel-rule-conditions.md
-    - name: Universal Pixel Reporting
+    - name: Universal Pixel Report
       href: universal-pixel-reporting.md
     - name: Universal Pixel Object Limits
       href: universal-pixel-object-limits.md
@@ -404,7 +404,7 @@
         href: mobile-ad-call-reference.md
       - name: Mobile Carrier Codes
         href: mobile-carrier-codes.md
-      - name: Testing Client-Side Impression Tracking
+      - name: Test Client-Side Impression Tracking
         href: testing-client-side-impression-tracking.md
     - name: A Comparison of Mobile App vs. Web
       href: a-comparison-of-mobile-vs-web.md
@@ -446,7 +446,7 @@
       href: video-creative-best-practices.md
     - name: Upload a Hosted Video Creative
       href: upload-a-hosted-video-creative.md
-    - name: Troubleshooting VAST Creative Display Issues
+    - name: Troubleshoot VAST Creative Display Issues
       href: troubleshooting-vast-creative-display-issues.md
     - name: VAST Check
       href: vast-check.md
@@ -752,7 +752,7 @@
       href: auto-macro-insertion.md
     - name: Supported Creative Macros
       href: supported-creative-macros.md
-  - name: Troubleshooting Creatives
+  - name: Troubleshoot Creatives
     href: troubleshooting-creatives.md
   - name: Creative FAQ
     href: creative-faq.md
@@ -778,7 +778,7 @@
       href: control-your-deals-with-sellers.md
     - name: Buy-Side Reporting on Deals
       href: buy-side-reporting-on-deals.md
-  - name: Understanding Bid Rejections
+  - name: Understand Bid Rejections
     href: understanding-bid-rejections.md
 - name: Viewability
   items:
@@ -816,7 +816,7 @@
       href: how-guaranteed-outcomes-work.md
     - name: Guaranteed Outcomes Auction Mechanics
       href: guaranteed-outcomes-auction-mechanics.md
-    - name: Understanding Payment Conversion Rates
+    - name: Understand Payment Conversion Rates
       href: understanding-payment-conversion-rates.md
     - name: Guaranteed Outcomes Results Over Time (Examples)
       href: guaranteed-outcomes-results-over-time-examples.md
@@ -828,13 +828,13 @@
       href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
     - name: Guaranteed Outcomes Reports
       href: reporting-on-guaranteed-outcomes.md
-    - name: Understanding Viewability Rates for Guaranteed Views
+    - name: Understand Viewability Rates for Guaranteed Views
       href: understanding-viewability-rates-for-guaranteed-views.md
-    - name: Understanding Billing and Costs for Guaranteed Outcomes
+    - name: Understand Billing and Costs for Guaranteed Outcomes
       href: understanding-billing-and-costs-for-guaranteed-outcomes.md
     - name: Analyze CTR and Conversion Rate for Guaranteed Outcomes
       href: analyzing-ctr-and-conversion-rate-for-guaranteed-outcomes.md
-    - name: Using a Viewability Rate Target for Guaranteed Views
+    - name: Use a Viewability Rate Target for Guaranteed Views
       href: using-a-viewability-rate-target-for-guaranteed-views.md
     - name: Monthly Prediction Variability Data
       href: monthly-prediction-variability-data.md
@@ -846,11 +846,11 @@
     items:
     - name: Overview
       href: digital-buying.md
-    - name: Understanding Your Invoice
+    - name: Understand Your Invoice
       href: understanding-your-invoice.md
     - name: Pricing Terms
       items:
-      - name: Understanding Your Pricing Terms
+      - name: Understand Your Pricing Terms
         href: understanding-your-pricing-terms.md
       - name: Buyer Auction Service Charge Mechanics
         href: buyer-auction-service-charge-mechanics.md
@@ -870,13 +870,13 @@
     items:
     - name: Overview
       href: digital-selling.md
-    - name: Understanding Your Seller Statement
+    - name: Understand Your Seller Statement
       href: understanding-your-seller-statement.md
     - name: Reconcile your Seller Statement with Reports
       href: reconciling-your-seller-statement-with-reporting.md
     - name: Getting Paid
       href: getting-paid-by-xandr.md
-  - name: Understanding Invalid Traffic
+  - name: Understand Invalid Traffic
     href: understanding-invalid-traffic.md
   - name: Foreign Exchange Margin
     href: foreign-exchange-margin.md
@@ -966,7 +966,7 @@
         href: creative-frequency-and-recency-report.md
       - name: Offline Attribution Report
         href: offline-attribution-report.md
-      - name: Site Domain Performance
+      - name: Site Domain Performance Report
         href: site-domain-performance.md
   - name: Billing Reporting 
     items:

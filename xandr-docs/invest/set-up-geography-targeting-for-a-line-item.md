@@ -13,8 +13,8 @@ Microsoft Advertising will use these settings to derive the country target to be
 
 To set up line item geography targeting:
 
-1. From the **Audience & Location Targeting** section, click in the **Geography** field and select the applicable checkboxes for country-level targeting.
-1. Click **+Additional Geo Restrictions** to set up or import additional geographical restrictions if necessary.
+1. From the **Audience & Location Targeting** section, select the **Geography** field and select the applicable checkboxes for country-level targeting.
+1. Select **+Additional Geo Restrictions** to set up or import additional geographical restrictions if necessary.
 
 ## Related topics
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Understanding Billing and Costs for Guaranteed Outcomes
+title: Microsoft Invest - Understand Billing and Costs for Guaranteed Outcomes
 description: Explore Guaranteed Outcomes billing covering the buyer's media costs per outcome, with potential impression-based CPM fees.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Understanding billing and costs for Guaranteed Outcomes
+# Microsoft Invest - Understand billing and costs for Guaranteed Outcomes
 
 Guaranteed Outcomes currently only covers a buyer's media cost, which is accrued on a per-outcome basis. Additional impression-based CPM costs may still apply, particularly if those fees are billed outside of Microsoft Advertising. For example, an ad serving fee may be charged on a CPM basis, regardless of the outcome of a given impression.
 

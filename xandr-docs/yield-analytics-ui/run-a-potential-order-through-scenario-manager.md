@@ -22,9 +22,9 @@ There are three main steps to using Scenario Manager to run a simulated new or
 You can add the product to Scenario Manager from the **Find Products** page. Or, complete the following process:
 
 1. On the **Scenario Manager** page, from the **Scenario Time frame** dropdown menu, specify the time period for the scenario.
-1. In the **Change Type** dropdown menu, choose **Select product for order line creation** and click **Go**.
+1. In the **Change Type** dropdown menu, choose **Select product for order line creation** and select **Go**.
 1. On the **Find Products** page that is displayed, use the filer criteria to find the specific product.
-1. Click for the product and select **Add to Scenario**.
+1. Select for the product and select **Add to Scenario**.
 1. Return to **Scenario Manager**.
 
 The product that you added to Scenario Manager is displayed in the **New Order Lines** section.
@@ -33,7 +33,7 @@ The product that you added to Scenario Manager is displayed in the **New Orde
 
 Make the changes that you want to simulate.
 
-1. Select the checkbox for the product and click the **Edit** button.
+1. Select the checkbox for the product and select the **Edit** button.
 1. In the **Edit Values** dialog, make changes to any of the following values:
     - Order
     - Advertiser
@@ -47,17 +47,17 @@ Make the changes that you want to simulate.
     - Impressions
     - State
 
-1. Click **Update**.
+1. Select **Update**.
 1. (Optional) Repeat the above steps to create any additional new order lines for additional products.
 
-If you include multiple new order lines in your simulation, you can apply the same changes to all of them at once by selecting their checkboxes, clicking the **Edit** button, making the changes, and clicking **Update**.
+If you include multiple new order lines in your simulation, you can apply the same changes to all of them at once by selecting their checkboxes, selecting the **Edit** button, making the changes, and selecting **Update**.
 
 ## Run and analyze the scenario
 
 Run the scenario when you have finished editing one or more order lines. When the scenario is done running, you can analyze it to determine how it will impact delivery.
 
-1. Click the **Run Scenario** button. The **Scenario** link in the upper-right corner of the page displays spinning arrows while Scenario Manager is running. You can let Scenario Manager run in the background while working on other tasks and tabs.
-1. When the scenario has completed, click the **Scenario Summary** tab. This allows you to view a summary of revenue Gain, Losses, and Net Gain Loss, together with data for the number of order lines, orders, and products impacted by the modifications.
+1. Select the **Run Scenario** button. The **Scenario** link in the upper-right corner of the page displays spinning arrows while Scenario Manager is running. You can let Scenario Manager run in the background while working on other tasks and tabs.
+1. When the scenario has completed, select the **Scenario Summary** tab. This allows you to view a summary of revenue Gain, Losses, and Net Gain Loss, together with data for the number of order lines, orders, and products impacted by the modifications.
 
 ## Related topics
 

@@ -26,7 +26,7 @@ To target Microsoft inventory, you need to create an inventory list that include
 > 1. On the **3rd Party Inventory** tab, select Sellers.
 > 1. Enter **Microsoft Advertising Exchange (280)**.
 > 1. Select the **Include**.
-> 1. Click **Add**.
+> 1. Select **Add**.
 
 ## Buy from specific Microsoft publishers
 

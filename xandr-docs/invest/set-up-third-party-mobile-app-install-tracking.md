@@ -8,9 +8,9 @@ ms.date: 10/28/2023
 
 This page explains how to set up third-party mobile app install tracking with an external vendor; it also describes the process by which those installs are reported back to Microsoft Advertising by the vendor. Finally, it covers how server-side conversion tracking works in general, as well as providing links to further documentation.
 
-## App install tracking vendors
+## Vendors for app install tracking
 
-These are examples of partners that have integrated with Microsoft Advertising for app install tracking. For any questions please reach out to these partners directly.
+These are examples of partners that have integrated with Microsoft Advertising for app install tracking. For any questions reach out to these partners directly.
 
 - [Flurry](https://www.flurry.com/)
 - Sam4Mobile
@@ -72,7 +72,7 @@ You should never need to see this URL, since it's called by the install tracking
 > [!NOTE]
 > The sspx handler is supported over non-secure (`http://adnxs.com/sspx`) and secure (`https://secure.adnxs.com/sspx`) modes.
 
-## How it works
+## Process overview
 
 When your creative's landing page URL is set up correctly, the install tracking process works as follows.
 

@@ -25,7 +25,7 @@ For a detailed explanation of the fields and values in an invoice or seller stat
 
 ## View your pricing terms
 
-For a quick overview of the pricing terms that go into calculating the fees and charges in your invoices and statements, select **Billing** under your Member settings and then click the **Pricing** tab.
+For a quick overview of the pricing terms that go into calculating the fees and charges in your invoices and statements, select **Billing** under your Member settings and then select the **Pricing** tab.
 
 For more details about pricing terms, review your contract or see [Understanding Your Pricing Terms](understanding-your-pricing-terms.md).
 
@@ -35,7 +35,7 @@ Only Member-level users can be given access to billing information. To do so: As
 
 ## Check your credit status
 
-To review the credit status of your account and/or the balance or unbilled activity of your member, select **Billing** under your Member settings. Click the **Credit Status** tab.
+To review the credit status of your account and/or the balance or unbilled activity of your member, select **Billing** under your Member settings. Select the **Credit Status** tab.
 
 The information displayed on this tab is divided into two sections, those that apply to your member and those that apply to your parent account. There may be more than one member per account.
 

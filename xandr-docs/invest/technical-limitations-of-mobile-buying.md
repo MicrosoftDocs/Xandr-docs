@@ -12,7 +12,7 @@ In [Welcome to Mobile](welcome-to-mobile.md), we provided an overview of the dif
 - Limited post-view conversion attribution capabilities.
 - Geographic targeting.
 
-## User identification and frequency capping
+## Identify user and cap frequency
 
 Frequency capping on mobile devices works on a per-device basis; in other words, if you switch devices, your frequency cap is reset. This is because reliably identifying users across multiple devices is currently an unsolved problem. For example, if you see an ad multiple times from your Android phone and hit the frequency cap defined by the line item serving that ad, you shouldn't see that ad anymore. If you switch to your iPad later in the evening for some bedtime reading, you won't be identified as the same user by the line item, and you may see ads from that same line item again.
 
@@ -20,7 +20,7 @@ In addition, very strict frequency caps are less reliable than they are on web i
 
 Also, third-party cookies are not always available on mobile devices, since not all mobile browsers accept these cookies. For more information, see [Mobile Targeting and Attribution Challenges](mobile-targeting-and-attribution-challenges.md). In ord6er to compensate for the lack of third-party cookies, Microsoft Advertising associates the device IDs used by different apps running on the same device with the same Microsoft Advertising cookie ID; this lets us do frequency capping across apps and the browser on the same device. For example, an app might pass in the device ID value `idfa=123` on a mobile ad call. If Microsoft Advertising has already seen that device and associated it with a cookie ID, frequency capping and user identification will work normally. Furthermore, a single Microsoft Advertising cookie ID can be mapped to many different device IDs. That way if a device sends us an `idfa` from one app, an `openudid` from another, we can still tie it all back to the same Microsoft Advertising ID for user identification and frequency capping purposes. For more information about the device ID parameters that can be sent to Microsoft Advertising using our mobile ad call, see the [Mobile Ad Call Reference](mobile-ad-call-reference.md).
 
-## Device targeting and reporting caveats
+## Target device and report caveats
 
 In some cases, mobile device targeting (and subsequent reporting) will display logical inconsistencies. For example, an iPhone could be mapped to an iPad user agent (UA). This inconsistency can occur because of the following technical issues:
 

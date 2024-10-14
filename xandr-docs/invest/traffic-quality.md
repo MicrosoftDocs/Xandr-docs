@@ -26,7 +26,7 @@ What is the issue and what objects does it affect? For example, which advertiser
 - Include when the observed behavior began and if it is still happening.
 - Note that historical changes in performance are far more difficult to diagnose as the behavior can no longer be observed live.
 
-### Step 3: Run an Analytics Report, breaking results out by various dimensions
+### Step 3: Run an Analytics report, breaking results out by various dimensions
 
 For details, see [Member Analytics Report](network-analytics-report.md).
 

@@ -2,43 +2,44 @@
 title: Android SDK Integration Instructions
 description: In this article, find step-by-step instructions on how to integrate our Android SDK with your project.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Android SDK integration instructions
 
-This page describes how to integrate our SDK with your project.
+This page describes how to integrate the SDK with your project.
 
 For instructions on showing different ad types, see:
 
 - [Show Banners on Android](show-banners-on-android.md)
 - [Show Interstitials on Android](show-interstitials-on-android.md)
 
-Follow the instructions in this section to set up our SDK to show ads in your app.
+This section provides instructions to set up the SDK to display ads in your app.
 
 ## Requirements
 
 This SDK requires Android 4 or later, and Android SDK version 14 or higher.
 
-In order to show ads, you must have a valid Xandr placement ID. This is a numeric ID that represents a context in an application where ads can be shown.
+In order to show ads, you must have a valid Xandr placement ID. This is a numeric ID that represents a context in an app where ads can be shown.
 
 > [!TIP]
->
 > - **Google Play**
->
->     In order to enable the Android Advertising ID (AAID) for frequency capping and mobile app targeting, you must include Google Play Services as a dependency of your app. Xandr's SDK will still function without Google Play Services, but you won't have access to those features.
+> To enable the Android Advertising ID (AAID) for frequency capping and mobile app targeting, you must include Google Play Services as a dependency of your app. Xandr's SDK will still function without Google Play Services, but you won't have access to those features.
+
 > - **Android Studio and Gradle**
->
->     These instructions assume you are using Android Studio and Gradle. Most of the required `AndroidManifest.xml` entries (except the Location permissions) and ProGuard changes are automatically added to your app. If you are using other build systems, the steps may vary.
+> These instructions assume you are using Android Studio and Gradle. Most of the required `AndroidManifest.xml` entries (except the location permissions) and ProGuard changes are automatically added to your app. If you are using other build systems, the steps may vary.
 
 ## Installation
 
 ### Step 1. Get the SDK
 
-Install via Maven from your `build.gradle` file as shown below. Note that the `[9,10)` notation means that when your app is compiled, the latest version of the SDK in the 9.x release series will be included. When we release a new version of the SDK, all you have to do to get the new version is recompile your app. If you want to include mediation adaptors for other SDKs in your `build.gradle`, see the section **Let us Mediate other Networks** of [Mediate with Android](mediate-with-android-sdk-instructions.md).
-  
-  > [!NOTE]
-  > These are top-level blocks, not part of the buildscript block.
+Install via Maven from your `build.gradle` file as shown below. 
+
+> [!NOTE] 
+> - These are top-level blocks, not part of the buildscript block.
+> - The `[9,10)` notation means that when your app is compiled, the latest version of the SDK in the 9.x release series will be included. When we release a new version of the SDK, all you have to do to get the new version is recompile your app. If you want to include mediation adaptors for other SDKs in your `build.gradle`, see the section **Let us Mediate other Networks** of [Mediate with Android](mediate-with-android-sdk-instructions.md).
+
 
 > [!WARNING]
 > The compile command is no longer supported by Gradle, it has been replaced with the implementation command.

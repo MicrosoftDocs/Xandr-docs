@@ -1,28 +1,28 @@
 ---
-title: Anatomy of the Orders Dashboard Page
+title: Anatomy of Orders Dashboard Page
 description: In this article, learn the layout of the Orders Dashboard page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the orders dashboard page
+# Anatomy of Orders Dashboard page
 
-The Orders Dashboard page is the primary view for the **Orders** tab. This provides a summary of revenue against goal, consumed impressions, and how orders are performing. It is displayed automatically when you click the **Orders** tab.
+The Orders Dashboard page is the primary view for the **Orders** tab. This provides a summary of revenue against goal, consumed impressions, and how orders are performing. It is displayed automatically when you select the **Orders** tab.
 
-## About the orders dashboard interface
+## Orders Dashboard page
 
 The **Orders Dashboard** is comprised of the following three widgets:
 
-- **Revenue Against Goal** – Displays the difference between earned revenue and scheduled revenue in absolute terms for each order, order line, or advertiser for the selected date range. Click an order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
+- **Revenue Against Goal** – Displays the difference between earned revenue and scheduled revenue in absolute terms for each order, order line, or advertiser for the selected date range. Select an order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
 
 - **Consumed Impressions** – Displays a pie chart of the percentage of consumed impressions by order, order line, or advertiser for the specified date range.
 
-- **Order performance** – Displays multiple performance metrics filtered by order or order line, for the selected date range (the default is for the previous day). You can select a specific order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
+- **Order performance** – Displays multiple performance metrics filtered by order or order line, for the selected date range (the default is for the previous day). You can select on a specific order or order line to open a detailed view at the order's performance, as well as its order lines' consumption and competition.
 
 For each widget, you can:
 
-- Click **Reset** to reset the widget.
-- Click **View All** to run the related full report (e.g., Saved Analysis - Impressions At Risk) in the **Reports** tab.
+- Select **Reset** to reset the widget.
+- Select **View All** to run the related full report (e.g., Saved Analysis - Impressions At Risk) in the **Reports** tab.
 
 To the left of the widgets is the **Orders Tasks** panel, which contains links to find orders and order lines, and to evaluate orders.
 

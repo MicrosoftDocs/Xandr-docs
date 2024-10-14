@@ -11,7 +11,7 @@ ms.date: 10/28/2023
 
 Microsoft Advertising has an option for improving workflow when targeting a member's own age and gender data on both managed and third-party inventory.
 
-## Workflow
+## Process overview
 
 Buyers can easily target inventory where the publisher provides age and gender data in the query strings of their ad calls. This feature is typically used for managed buying of a member's own data. Buyers can set this in the **Demographics** section in the **Audience & Location Targeting** section of the augmented line item.
 
@@ -21,7 +21,7 @@ A buyer can use their age and gender user data to target both managed and third-
 1. Once created, the member contacts Microsoft Advertising Support to request a one-time member setting change to make those segment IDs the default age and gender segments for the member.
 1. After the age and gender segments are defined, the member can use demographics targeting to target age and gender using the member's own segment data on managed or third-party inventory.
 
-## How it works
+## Workflow
 
 Once enabled, demographic targeting in Microsoft Invest will apply to inventory from managed publishers as well as third-party publishers. In the case of impressions where the publisher passes age and gender data in the ad call:
 

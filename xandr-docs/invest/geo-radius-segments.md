@@ -13,13 +13,13 @@ A geo radius segment is a list of latitude, longitude, and radius data. You can 
 > [!NOTE]
 > There is a maximum limit of 10k geo radius segments per member.
 
-## Creating a geo radius segment
+## Create a geo radius segment
 
 There are five steps to creating a geo radius segment:
 
 ### Step 1. Get started
 
-Open the [Location Manager](./location-manager.md) page and click **New** to open the **Create Geo Radius Segment** dialog.
+Open the [Location Manager](./location-manager.md) page and select **New** to open the **Create Geo Radius Segment** dialog.
 
 ### Step 2. Create a new geo radius segment
 
@@ -31,7 +31,7 @@ Fill in the following fields:
 | **Code** | User-defined code for calling the geo radius segment, e.g. GEO123 | Optional |
 | **Description** | Description of geo radius segment | Optional |
 
-Click **Next**.
+Select **Next**.
 
 ### Step 3. Choose the method to add geo radius segment features
 
@@ -50,8 +50,8 @@ Click **Next**.
       48.376928,-54.986546,8
       ```
 
-1. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
-1. Click **Next**.
+1. Select **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
+1. Select **Next**.
 
 #### Import from file
 
@@ -69,11 +69,11 @@ Click **Next**.
    48.376928,-54.986546,8
    ```
 
-1. Click **Next**.
+1. Select **Next**.
 
 ### Step 4. Review geo radius segment features and create geo radius segment
 
-Review the **Related Geo Features** of the geo radius segment. Click **Create Geo Radius Segment** to finish creating the geo radius segment.
+Review the **Related Geo Features** of the geo radius segment. Select **Create Geo Radius Segment** to finish creating the geo radius segment.
 
 ### Step 5. Note the segment ID for use in line item targeting
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buyer Deal Metrics
+title: Microsoft Invest - Buyer Deal Metrics Report
 description: Discover the definition of a Buyer Deal Metrics Report and how to generate it to access details such as deal metrics, performance, and reasons for rejection.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buyer deal metrics
+# Microsoft Invest - Buyer Deal Metrics report
 
 > [!NOTE]
 > As of May 3, 2021, Imps Matched and Bid Requests will be randomly sampled at a rate of 10 percent. The sampled values will be multiplied by 10 to give a reasonable estimate in all screens where these two metrics are reported. No other deal metrics will be affected.
@@ -121,7 +121,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Reject Other Data Protection Count | The total number of bids rejected for data security reasons not listed above. |
 | Submitted Bids | The number of bids which were eligible in the final auction. For deals with Microsoft Advertising sellers, this value is equal to the number of bids minus the number of rejected bids. For deals with SSPs, this value is equal to the number of bids submitted to the SSP for the final auction. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report. Refer to **Dimensions** and **Metrics** section above for more information about the definitions of the data fields.
 

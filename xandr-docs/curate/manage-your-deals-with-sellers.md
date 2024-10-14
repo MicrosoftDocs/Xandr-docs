@@ -14,11 +14,11 @@ You can also manage your deals with a specific seller on the Partner Details scr
 > [!NOTE]
 > Information the user should notice even if skimmingNote: For information on setting deal preferences, declining deals, managing the status of deals, and assigning internal names (deal alias) to deals see [Control Your Deals with Sellers](control-your-deals-with-sellers.md).
 
-## Getting to the Deals Screen
+## Access the Deals screen
 
 To reach the **Deals** screen, select **Inventory \> Seller Deals**.
 
-## Viewing basic and advanced deal metrics
+## View basic and advanced deal metrics
 
 The following details display for each deal. Columns that show an arrow in the header when you hover over them are sortable.
 
@@ -55,21 +55,21 @@ The following details display for each deal. Columns that show an arrow in the h
   - **Suggested Min Bid** - The minimum bid value that will clear the seller's deal floor, net of fees.
   - **From Package** - Indicates whether or not the deal was generated from a package. Deals associated with a package are affected if the package's status changes.
 
-## Filtering and searching for deals
+## Filter and search for deals
 
 By default, you see all current deals. Use the filters in the left column to filter by deal status or sellers, or use the search boxes to search for specific deals or sellers.
 
-## Viewing a specific deal's details
+## View a specific deal's details
 
 Click on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired.
 
-## Reporting on deals
+## Generate deal reports
 
 Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then click **Show in Reporting**. A new tab opens displaying the [Network Analytics Report](../monetize/network-analytics-report.md) with the selected deals as filters and **Deal** selected as a dimension.
 
 Click **Run Report** in the reporting screen to run the report with these settings, or set additional settings as desired and then click **Run Report**.
 
-## Switching to seller mode
+## Switch to seller mode
 
 If you are a network that also represents buyers, click the **Buyers** button to view all of the deals you have as a seller.
 

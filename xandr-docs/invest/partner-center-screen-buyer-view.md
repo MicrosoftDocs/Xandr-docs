@@ -4,24 +4,23 @@ description: This page covers navigation of different fields in the Partner cent
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Partner center screen
 
 On the **Partners** screen you can view your preferred partners, search all sellers, and review impression and click statistics for each seller.
 
-## Getting to the partners screen
+## Locate Partners screen
 
 Go to **Inventory \> Partners** to reach the **Partners** screen.
 
-## Managing your profile
+## Manage your profile
 
-Click the **My Profile** button to edit the information that sellers will see on your **Partner Details** page. Your profile provides information about your company which helps sellers understand how you could be useful as a partner.
+Select the **My Profile** button to edit the information that sellers will see on your **Partner Details** page. Your profile provides information about your company which helps sellers understand how you could be useful as a partner.
 
-## Viewing sellers
+## View sellers
 
-The **Sellers** tab lists all sellers, both Invest DSP members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
+The **Sellers** tab lists all sellers, both Invest DSP members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Search for Sellers](#search-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
 
-## Platform-Wide avails
+## Platform-wide avails
 
 - **Avg. Daily Imps** - The average of the number of impressions the seller has sold across the entire platform for the past 7 days.
 - **Avg. Daily Uniques** - The average of the number of impressions shown to unique user IDs that the seller has sold across the entire platform for the past 7 days.
@@ -50,7 +49,7 @@ The **Sellers** tab lists all sellers, both Invest DSP members and external supp
 - **Deals** - Number of deals available to you from this seller.
 - **Join Date** - Shows the date a member was added. If less than a year, the exact date will show; if over a year, the join date will show as **+1 year**.
 
-## Searching for sellers
+## Search for sellers
 
 Use the filters to search the **Sellers** list for a seller that meets your partnership needs. You can filter the list of sellers by:
 
@@ -58,11 +57,11 @@ Use the filters to search the **Sellers** list for a seller that meets your part
 - **Primary Market** - The country in which the seller sold 50% or more of their total RTB impressions. Sellers who do not sell 50% or more in a single country will not have a primary market.
 - **Seller Eligibility** - Eligibility settings you have defined for sellers.
 
-Click the Hide Search Filters "**\<**" icon to collapse the section and provide more space to view your partner lists.
+Select the Hide Search Filters "**\<**" icon to collapse the section and provide more space to view your partner lists.
 
-## Viewing partnership details
+## View partnership details
 
-Click on a partner's name to view Partner Details so you can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals. See [Partnership Details Screen](partnership-details-screen-buyer-view.md), for more information.
+Select a partner's name to view Partner Details so you can manage your relationship with a specific seller by reviewing spending trends, packages, and active and upcoming deals. For more information, see [Partnership Details Screen](partnership-details-screen-buyer-view.md).
 
 ## Related topics
 

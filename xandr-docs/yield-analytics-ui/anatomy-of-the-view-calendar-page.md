@@ -1,15 +1,15 @@
 ---
-title: Anatomy of the View Calendar Page
+title: Anatomy of View Calendar Page
 description: In this article, learn the layout of the View Calendar page.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the view calendar page
+# Anatomy of View Calendar page
 
 The View Calendar page on the Availability tab shows a daily summary of future availability by month.
 
-## About the view calendar interface
+## View Calendar page
 
 The View Calendar page can be displayed in two views:
 

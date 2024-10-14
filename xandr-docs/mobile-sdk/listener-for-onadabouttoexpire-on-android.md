@@ -2,7 +2,8 @@
 title: Listener for onAdAboutToExpire on Android
 description: In this article, learn about the Listener for onAdAboutToExpire in Android, including its properties, methods, and examples.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Listener for onAdAboutToExpire on Android
@@ -33,6 +34,8 @@ Settings.NATIVE_AD_ABOUT_TO_EXPIRE_INTERVAL = <time in ms>; // Example: 2 * 60 *
 > The variable for about to expire time interval must be set before making a Native Ad request, so that the response can adapt to the values set in this variable. If it is not set explicitly, default value (60\*1000 milliseconds) will be considered.
 
 ## Methods
+The following methods are supported in this feature:
+
 
 ### Register with NativeAdEventListener
 

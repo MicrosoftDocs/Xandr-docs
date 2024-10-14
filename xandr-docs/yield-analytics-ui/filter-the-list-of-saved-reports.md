@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Filter the list of saved reports
+# Filter list of saved reports
 
 To filter the list of saved reports, you will want to search either based on category that the report is in, or by the report name itself.
 

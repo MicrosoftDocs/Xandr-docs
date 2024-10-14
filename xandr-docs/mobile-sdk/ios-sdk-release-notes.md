@@ -2,7 +2,6 @@
 title: iOS SDK Release Notes
 description: Explore information about the iOS SDK release notes.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
 ---
 
 # iOS SDK release notes
@@ -10,43 +9,65 @@ ms.date: 10/28/2023
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.1.0
+
+### New feature
+
+- 7601090: Support for VAST Video Ads in Interstitial Ad Unit.
+
+### Improvement/Bug fixes
+
+- 7931257: ANSDKResources.bundle causing Unexpected CFBundleExecutable Key issue during AppStore upload.
+- 7905366: Warnings as Errors causes build failure in Swift.
+- 6525343: Can't import Google mediation adapter classes when using Swift Package Manager + Swift.
+- 8098254: Upgrade of the Facebook Audience Network to version 6.15.1.
+- 8082032: Addressed crash where adWillClose is required for interstitial banner.
+- 8179513: Addresses an issue with Banner Video displaying black in iOS18.
+- 8202865: Updated SmartAdServer dependency to 7.24.2.
+
 ## 9.0.0
 
 > [!NOTE]
 > As of v9.0.0 release, the source code is moved to private repositories as already announced. You can refer to the [migration guide](migrating-ios-sdk-v8.x.y-to-v9.x.y.md) to understand how to utilize the binary framework.
 
-### New Feature
-- 5736950: Made our webview inspectable when log level is set to debug or higher
-### Improvement/ Bug Fixes
-- 746525343: Fixed Google Adapter Bug - Accessing Files
-- 6892506: Fixed drop in (OMID) viewability events
-- 6891512: Fixed Cocoapod integration in Flutter environment
+### New feature
+
+- 5736950: Made our webview inspectable when log level is set to debug or higher.
+
+### Improvement/Bug fixes
+
+- 746525343: Fixed Google Adapter Bug - Accessing Files.
+- 6892506: Fixed drop in (OMID) viewability events.
+- 6891512: Fixed Cocoapod integration in Flutter environment.
 
 ## 8.11.4
- 
-### Improvement/Bug Fixes
+
+### Improvement/Bug fixes
+
 - 7295371: Privacy Manifest update and fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ## 8.11.3
- 
-### Improvement/Bug Fixes
-- 7295362: Privacy Manifest update
 
+### Improvement/Bug fixes
+
+- 7295362: Privacy Manifest update.
 
 ## 8.11.2
- 
-### Improvement/Bug Fixes
+
+### Improvement/Bug fixes
+
 - 7112599: Fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ## 8.11.1
 
-### Improvement/Bug Fixes
-- 5663009: Added support for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift). 
+### Improvement/Bug fixes
+
+- 5663009: Added support for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ### Mediation partner updates
+
 - 7151757: Upgrade of the Facebook Audience Network to version 6.15.0.
 - 7151765: Upgraded Google AdMob SDK from 10.10.0 to 11.2.0.
-
 
 ## 8.11.0
 
@@ -72,7 +93,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 
 ## 8.9.0
 
-### Improvement/Bug fixes (8.9.0)
+### Improvement/Bug fixes
 
 - 5663106: Upgraded OMSDK from 1.4.2 to 1.4.8.
 - 5732707: Addressed issue with Video Orientation Sizes getting applied to HTML Banner creatives.
@@ -91,7 +112,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 
 ## 8.8.0
 
-### New features
+### New features (8.8.0)
 
 - MS-5345: Enabled lazy loading for banner native rendering.
 - MS-5351: Support both static and dynamic AppNexus SDK framework/library.
@@ -116,7 +137,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 
 - MS-5281: Added Swift Package Manager support for Google Mediation Adapter.
 
-### Mediation / CSR partner updates
+### Mediation/CSR partner updates
 
 - Upgraded Google AdMob SDK from 9.14.0 to 10.3.0.
 
@@ -137,7 +158,7 @@ Update version to match Android SDK. No changes from 8.3.0.
 - MS-5208, MS-5214: Upgraded OMSDK from 1.3.31 to 1.4.2.
 - MS-5197: Added iPad multiwindow support for Google AdMob mediation. For more information, see [Mediate with iOS](mediate-with-ios.md).
 
-### Mediation/CSR partner updates
+### Mediation/CSR partner updates (8.3.0)
 
 - MS-5210, MS-5213: Upgraded Google AdMob SDK from 9.4.0 to 9.14.0.
 
@@ -615,7 +636,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 
 At Xandr we listen to our users' feedback to help us develop the products that provide the best solutions for their needs. Based on that feedback, we are proud to announce the release of v6.0, a major upgrade to our iOS Mobile SDK.
 
-### BREAKING CHANGES
+### Breaking changes
 
 Some changes made in v6.0 are breaking and may require existing users who wish to upgrade from previous versions to follow our [migration guide](ios-mediation.md).
 

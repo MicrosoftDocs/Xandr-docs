@@ -43,7 +43,7 @@ The table below lists the FX Margin Rates per currency. These rates are subject 
 | Turkish Lira (TRY) | 4.00% | 4.00% | 4.00% | 4.00% | 4.00% | 4.00% | 4.00% | 9.40% | 3.60% |
 | Vietnamese Dong (VND) | 4.00% | 4.00% | 4.00% | 4.00% | 4.00% | 4.00% | 4.00% | 2.10% | 2.30% |
 
-## How is FX margin applied?
+## FX margin application and calculation guidelines
 
 - FX margin is only charged on non-USD media costs that Microsoft Advertising clears.
   - For Buyers, this is any non-USD "Cost of Media" on the invoice.
@@ -74,4 +74,4 @@ To protect contract terms privacy, Microsoft Advertising does not expose sell-si
 
 ## Related topic
 
-- [Currency Support](./currency-support.md)
+[Currency Support](./currency-support.md)

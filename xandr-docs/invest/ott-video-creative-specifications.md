@@ -4,8 +4,7 @@ description: In this page, learn about recommended OTT video creative specificat
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - OTT video creative specifications  
+# Microsoft Invest - OTT video creative specifications
 
 An OTT (Over-the-Top video) creative is designed to be displayed before, after, or during in-stream video content delivered over the internet. Typically, OTT video content is played on a Connected TV (CTV). CTV can include a TV that is connected to the internet via an external device (for example a Blu-Ray player or a gaming console), or a Smart Television. OTT content is generally viewed by engaged users watching high-quality video content in a full-screen mode. OTT advertising is considered premium digital video inventory. It's the highest-quality format you can purchase programmatically, with completion rates as high as 90%. To uphold the quality of the viewing experience, creative requirements for OTT inventory are stricter than standard web-based video supply.
 
@@ -25,11 +24,11 @@ VPAID is not supported for OTT placements, and FLV, WebM and VPAID media types w
 - Do not include segment pixels in your inline VAST code, because they will not load in the SDK.
 - To use creatives of a different duration than 15 or 30 seconds, reach out to the publisher.
 
-## Checking your creative's specifications
+## Check creative's specifications
 
-To view the specifications of a particular creative in the XML code, paste its third-party VAST URL or the [Microsoft Advertising hosting URL](http://ib.adnxs.com/cr?id=CREATIVE_ID&format=vast) into a browser. The VAST Check functionality in Invest DSP will also verify that all creatives meet the requirements for duration, format, OTT bitrate, and resolution.
+To view the specifications of a particular creative in the XML code, paste its third-party VAST URL or the Microsoft Advertising hosting URL (`http://ib.adnxs.com/cr?id=CREATIVE_ID&format=vast`) into a browser. The VAST Check functionality in Invest DSP will also verify that all creatives meet the requirements for duration, format, OTT bitrate, and resolution.
 
-## Publisher-Specific OTT creative requirements
+## Publisher-specific OTT creative requirements
 
 Some publishers, such as Hulu and ESPN, have specific requirements and processes. Your creatives should meet the specific requirements for those publishers as well as the base requirements described in this topic.
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buying OTT Video Inventory
+title: Microsoft Invest - Buy an OTT Video Inventory
 description: Microsoft Invest offers direct access to OTT video supply from publishers. Its programmatic platform allows for buying over-the-top video inventory at scale.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying OTT video inventory
+# Microsoft Invest - Buy an OTT video inventory
 
 Microsoft Invest allows you to buy or sell ad inventory on OTT ("over-the-top") video properties. As part of our combined offering, OTT inventory provides direct access to OTT video supply from publishers such as ESPN, CNN, Newsy, PlutoTV, TubiTV, and many others. You can also access programmatic CTV supply on major CTV SSPs such as FreeWheel, Telaria, and SpotX. As a key element of optimized media planning, purchasing inventory on OTT content and/or CTV devices maximizes your reach to drive cost efficiencies and ROI.
 
@@ -17,7 +17,7 @@ OTT premium digital video:
 
 Microsoft Advertising offers a programmatic platform that allows for buying OTT video inventory at scale. Based on our access to Microsoft Advertising Media's extensive premium video supply sources and their audiences, we are currently developing advanced first-party/third-party programmatic audience targeting, measurement, and attribution capabilities, allowing household-level demographic and audience targeting across CTV supply.
 
-## Getting started
+## Get started
 
 Currently, OTT video inventory is primarily available through Deals, and it only supports VAST video creatives. VAST video creatives wrapped in VPAID are generally not supported on OTT video inventory. Standard video reporting is available for impressions, quartiles, and completion rates. You should contact your Microsoft Advertising account manager for help with initial outreach to key publishers and deal setup.
 

@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Ad Server Category Mapping service
 
-The Ad Server Category Mapping Service returns all or a specific ad server category mapping. It enables creation, update and deletion of ad server category mappings. These map Xandr content categories to [IAB subcategory codes](https://www.iab.com/guidelines/iab-quality-assurance-guidelines-qag-taxonomy/) for the ad server category mapping. The IAB subcategory code is part of the [IAB Content Taxonomy](https://www.iab.com/guidelines/content-taxonomy/) that helps buyers understand seller inventory, and in turn, helps sellers better monetize their supply.
+The Ad Server Category Mapping Service returns all or a specific ad server category mapping. It enables creation, update and deletion of ad server category mappings. These map Monetize content categories to [IAB subcategory codes](https://www.iab.com/guidelines/iab-quality-assurance-guidelines-qag-taxonomy/) for the ad server category mapping. The IAB subcategory code is part of the [IAB Content Taxonomy](https://www.iab.com/guidelines/content-taxonomy/) that helps buyers understand seller inventory, and in turn, helps sellers better monetize their supply.
 
 ## REST API
 

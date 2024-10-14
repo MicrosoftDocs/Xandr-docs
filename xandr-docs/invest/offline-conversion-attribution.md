@@ -4,8 +4,7 @@ description: Learn what is Offline Conversion Attribution, advantages of using i
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Offline conversion attribution  
+# Microsoft Invest - Offline conversion attribution
 
 "Offline" attribution is [conversion attribution](conversion-attribution.md) that involves pushing all of the data processing required for conversion attribution "offline" to the Microsoft Advertising data warehouse.
 
@@ -18,7 +17,7 @@ Offline attribution provides:
 > [!IMPORTANT]
 > The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [conversion attribution](conversion-attribution.md).
 
-## Conversion attribution, "Online" vs. "Offline"
+## Conversion attribution: "Online" vs. "Offline"
 
 The following diagram shows the major components involved in the conversion attribution process, as well as the steps that occur between a user converting and that conversion being attributed and made available in reporting. The left side of the diagram shows the previous "online" conversion attribution process. The right side of the diagram shows the current "offline" process.
 
@@ -60,19 +59,19 @@ The **Data Warehouse** has finished post-processing the limited amount of inform
 
 ## Current Method ("Offline")
 
-### Step 1. Conversion pixel loads
+### Step 1: Conversion pixel loads
 
 The user's browser loads the conversion landing page, which fires the conversion pixel hosted by the **Impression Bus**.
 
-### Step 2. Impression-level data is sent to the Data Warehouse
+### Step 2: Impression-level data is sent to the Data Warehouse
 
 The **Impression Bus** passes along the data it has about the impression and the user to the **Data Warehouse**.
 
-### Step 3. Conversion is attributed, other data is processed
+### Step 3: Conversion is attributed, other data is processed
 
 The **Data Warehouse** receives information about the impression and the user from the **Impression Bus**. As you can see from the diagram, the **User Data** store is now located within the **Data Warehouse**. This allows for faster integration and processing of the data provided by the **Impression Bus**.
 
-### Step 4. Conversion-related data is made available for reporting, optimization, and budget
+### Step 4: Conversion-related data is made available for reports, optimization, and budget
 
 The **Data Warehouse** has finished processing and integrating the information on the impression and the converted user passed along from the **Impression Bus**. At this point, the impression- and conversion-related data is made available to the Microsoft Advertising Platform for reporting, optimization, and budget purposes.
 

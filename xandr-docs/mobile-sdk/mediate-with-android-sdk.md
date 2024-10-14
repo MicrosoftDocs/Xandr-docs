@@ -3,6 +3,7 @@ title: Mediate with Android SDK
 description: This article provides information on how to mediate with Android SDK. 
 ms.custom: android-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Mediate with Android SDK

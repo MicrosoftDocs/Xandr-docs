@@ -1,11 +1,10 @@
 ---
-title: Microsoft Curate - Viewing Your Object Limits
-description: In this page, learn how to explore the Object Limits Report that allows you to view the limits set on the number of objects that you can have on a platform. This page also covers FAQs on Object Limits.  
+title: Microsoft Curate - View Your Object Limits
+description: On this page, Learn to use the Object Limits Report to view object limits and find FAQs about them on this page.  
 ms.date: 11/16/2023
 ---
 
-
-# Microsoft Curate - Viewing your object limits
+# Microsoft Curate - View your object limits
 
 Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
 
@@ -15,11 +14,11 @@ Both active and inactive objects are counted against the object limit. For creat
 > **Automatic archiving of objects:**
 > Objects that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If an object is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., Insertion Order \> Line Item) will also be archived and no additional child objects can be created beneath the archived parent object.
 
-## Getting to the object limits report
+## Access the Object Limits report
 
 Your object limits report is available under your Member Settings.
 
-## Object limits report
+## Object Limits report
 
 The **Object Limits Report** section lists the types of objects that are limited and provides the following data for each:
 

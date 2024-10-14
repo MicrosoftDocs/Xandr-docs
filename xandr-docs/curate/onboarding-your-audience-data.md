@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Onboarding Your Audience Data
-description: In this article, find links to resources on the three ways to onboard your audience data.
+title: Microsoft Curate - Onboard Your Audience Data
+description: This article provides links to resources detailing three effective methods for onboarding your audience data seamlessly.
 ms.date : 10/28/2023
 ---
 
-# Microsoft Curate - Onboarding your audience data
+# Microsoft Curate - Onboard your audience data
 
 There are three ways to onboard your audience data:
 

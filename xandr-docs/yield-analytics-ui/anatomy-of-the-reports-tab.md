@@ -1,15 +1,15 @@
 ---
-title: Anatomy of the Reports Tab
+title: Anatomy of Reports Tab
 description: In this article, learn the layout of the Reports tab.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the reports tab
+# Anatomy of Reports tab
 
 The Reports tab has one view, where you can run reports on metrics to research anything from how a product is delivering, to how salespeople are performing.
 
-## About the reports tab
+## Reports tab
 
 The **Reports** tab is comprised of the following sections:
 

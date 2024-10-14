@@ -15,13 +15,13 @@ outline the requirements for individual sellers and allow you to compare require
 ## Creative settings
 
 Creatives that will serve on native inventory require specific settings when the creative is added. To add a creative, navigate to the
-**Creative Manager** screen. Click **Create New** and create a single creative.
+**Creative Manager** screen. Select **Create New** and create a single creative.
 
-## Inventory targeting
+## Target your inventory
 
 When you set up your line item you need to target your inventory to reach the seller's inventory. See [Buy-Side Targeting](./buy-side-targeting.md) for more information.
 
-## Settings by seller
+## Seller-specific guidelines and settings
 
 Shown below are seller-specific guidelines and requirements that you must follow to serve on that seller's inventory. All sellers listed here use a **Type** of **Native**.
 
@@ -32,7 +32,7 @@ If a parameter is not mentioned in the tables below, enter whatever values make 
 
 ## AdYouLike
 
-|    |    |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 7664 |
 | Landing Page | [https://support.adyoulike.com/](https://support.adyoulike.com/) |
@@ -53,7 +53,7 @@ If a parameter is not mentioned in the tables below, enter whatever values make 
 
 ## Axelspringer
 
-|    |    |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 7823 |
 | Title | 25 characters recommended |
@@ -63,7 +63,7 @@ If a parameter is not mentioned in the tables below, enter whatever values make 
 
 ## Figaro Medias
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 3273 |
 | Title | 25 character maximum |
@@ -74,7 +74,7 @@ If a parameter is not mentioned in the tables below, enter whatever values make 
 
 ## Kargo
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 8173 |
 | Title | - Length: 25 characters maximum<br> - is_required: yes |
@@ -87,7 +87,7 @@ If a parameter is not mentioned in the tables below, enter whatever values make 
 
 ## L'Agora
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 7037 |
 | Title |  - 25 character maximum<br> - Advertiser/brand name preferred<br> - Could be used to resume the offer or service or as a Call to Action |
@@ -101,7 +101,7 @@ L'Agora native adspaces or widgets are displayed alongside page content, which p
 
 ### Creative guidelines and best practices
 
-|  |  |
+| Category | Best Practices and Guidelines |
 |:---|:---|
 | **Text** |  - We highly recommend short text that is easy to understand with attractive offers.<br> - May not contain contact details as telephone number.<br> - Do not overuse capital letters or exclamation marks. |
 | **Images** | - Images must be clearly relevant to the product or service being advertised.<br> - There should be a clear, simple, attractive, and logical link between the image and the copy.<br> - Avoid images with text embedded directly in the image. The text could easily be distorted depending on the adjustments made when the image is rendered.<br> - Images that represent your target (images of people) generate high engagement.<br> - Images that represent your product perform well. Don't mislead users by showing products that are not available or are not the ones that you are selling.<br> - Sexually suggestive images are not allowed. Images should be appropriate for a general audience.<br> - Opt for bright, eye-catching images. Avoid black and white images, as they will tend to blend in with the other elements of the galleries around them.<br> - The resolution of the image is important. Low quality images will appear blurry and adversely affect the impact of the ad.<br> - Images must not contain your logo.<br> - Images must not have borders.<br> - Images must be static (no movement). |
@@ -126,7 +126,7 @@ Generally speaking, L'Agora does not allow you to promote any products or servic
 
 ## Leboncoin
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 3296 |
 | Title | 50 character maximum (mobile) |
@@ -146,7 +146,7 @@ When you set up your Inventory Targeting, include the following:
 
 ## LiveIntent
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 8171 |
 | Title | 50 characters maximum; 25 characters minimum |
@@ -158,11 +158,11 @@ When you set up your Inventory Targeting, include the following:
 | Platform Audit (Creative Attributes tab) | Not required |
 | Video | Not supported |
 
-For additional information about LiveIntent API, see [LiveIntent Landing Page](https://support.liveintent.com/hc/en-us/articles/360015338292-Programmatic-Bidding-API).
+For additional information about LiveIntent API, see [LiveIntent Landing Page](https://support.liveintent.com/programmatic-bidding-api/).
 
 ## Mittmedia
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 9234 |
 | Title | 60 character maximum |
@@ -175,7 +175,7 @@ For additional information about LiveIntent API, see [LiveIntent Landing Page](h
 
 ## Mopub
 
-|  |  |
+| Parameter   | Value/Limit   |
 |:---|:---|
 | Member ID | 1813 |
 | Title | 25 character maximum |
@@ -199,7 +199,7 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 
 ## MSN
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 280 |
 | Title | 25 character maximum |
@@ -217,7 +217,7 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 
 ## Nativo
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 8035 |
 | Title | - 60 characters recommended <br> - 80 character maximum |
@@ -233,7 +233,7 @@ Nativo is not responsible for securing or enforcing the copyright, trademark or 
 
 This is not an exhaustive list of prohibited or restricted content on the Nativo platform. This list does not constitute, and should not be used as a replacement for, legal advice. Each brand is solely responsible for determining the legality of its ad content. If you have any questions about legal issues related to your Content, including with respect to clearance obligations or Nativo truth-in-advertising requirements, you must consult your own legal counsel.
 
-|||
+| Content Category | Description |
 |:---|:---|
 | **Prohibited Content** | The following types of Content are NOT permitted on the Nativo platform: <br> - Adult Content, Products, or Services <br> - Children under 13 <br> - Dangerous Items <br> - Defamation and Libel <br> - “False News” <br> - Fear or Scare Tactics <br> - Free Streaming Sites- <br> - “Get Rich Quick” Pyramid Schemes <br> - Hateful Content <br> - Herbal or Homeopathic Remedies <br> - Illegal Activity <br> - Illicit Drugs <br> - Illicit Drug Paraphernalia <br> - Name or Likeness of an Individual <br> - Online Poker/Gambling <br> - Pay Per Call (900 numbers) <br> - Politics & Religion <br> - Pregnancy and Fertility Related Products <br> - Psychics <br> - Replicas <br> - Sensitive Health Topics <br> - Spam and Mail Fraud <br> - Surveillance Equipment <br> - Tobacco <br> - Third-Party Rights Violation |
 | **Restricted Content** | The following types of Content will be flagged for further review by Nativo: <br> - Alcohol <br> - Brick and Mortar Gambling & Gaming <br> - Claim Substantiation <br> - Contraceptives <br> - Cryptocurrencies <br> - Dating Services <br> - Diamonds and Jewelry <br> - Endorsement and Testimonials <br> - Financial Services <br> - Green Products <br> - Loan companies <br> - Made in USA Products <br> - Online Pharmacies <br> - Pharmaceutical and Medical Procedures <br> - Political <br> - Profanity <br> - Rehab Providers <br> - State Lotteries <br> - Supplements <br> - Weight Loss Claims |
@@ -243,7 +243,7 @@ This is not an exhaustive list of prohibited or restricted content on the Nativo
 
 ## Outbrain
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 7597 |
 | Title | - 40 characters or less recommended <br> - 60 character maximum |
@@ -260,7 +260,7 @@ Outbrain's network exposes all-direct-code-on-page widgets that are customized p
 
 ### Guidelines and best practices
 
-|||
+| Category | Best Practices and Guidelines |
 |:---|:---|
 | **Best Practices** | - Properly label your content <br> - Draw from social media when determining what types of headlines to use <br> - Use copy to smoothly lead the reader to your intended next step <br> - Do Not use inaccurate, misleading, or overly sensational headlines or ad copy <br> - Do Not write headlines that are "too good to be true" <br> - Do Not create articles with duplicate content based on another affiliate offer <br> - Do Not encourage accidental clicks by implementing ads (or images) that appear to be organic content |
 | **Content Guidelines - Prohibited Categories** | - Adult <br> - Controlled or Illegal Substances <br> - Hate, Violence, or Discrimination <br> - Gambling <br> - Fake News <br> - Malware <br> - Religion (Cannot promote one religion over another) <br> - Unsafe Products or Supplements |
@@ -273,7 +273,7 @@ Outbrain's network exposes all-direct-code-on-page widgets that are customized p
 
 ## Plista
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 7790 |
 | Title | - 25 characters recommended <br> - 50 character maximum |
@@ -283,7 +283,7 @@ Outbrain's network exposes all-direct-code-on-page widgets that are customized p
 | Call to Action Text | Not supported |
 | Sponsored By | - 50 character maximum <br> - Required: Must be the brand name |
 
-### Best practices
+### Plista: Best practices
 
 The following are some recommended creative best practices for serving on Plista:
 
@@ -298,7 +298,7 @@ The following are some recommended creative best practices for serving on Plista
 
 ## Ringier
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 9178 |
 | Title | 25 characters maximum |
@@ -308,7 +308,7 @@ The following are some recommended creative best practices for serving on Plista
 
 ## Sanoma Finland
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 7459 |
 | Landing Page | Required |
@@ -317,7 +317,7 @@ The following are some recommended creative best practices for serving on Plista
 | Image (sizes in pixels) | - 2:1 ratio, 1200x628 recommended <br> - File types: jpg, png <br><br> **Note**: images will be scaled down to accommodate placement size |
 | Sponsored By | Required |
 
-### Best practices
+### Sanoma Finland: Best practices
 
 - Land your ads on the client's content instead of a product page.
 - Ensure that the ad matches the landing page content.
@@ -327,26 +327,25 @@ The following are some recommended creative best practices for serving on Plista
 
 ## Schibsted Norway
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 1860 |
 | Title | 50 character maximum |
 | Icon (sizes in pixels) | - Logo <br> - 1x1 ratio <br> - Maximum 150x150 |
 | Image (sizes in pixels) | - 1.91:1 ratio <br> - 1200x628 |
 
-You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing *Xandr_creative_id* with your creative ID.l
+You can serve native creatives on Schibsted Norway's desktop, mobile web and mobile app inventory. You can preview your native creatives to see what they'll look like on Schibsted websites. Use the following URLs, replacing *Xandr_creative_id* with your creative ID.
 
-| Website | Category | Desktop? | Tablet? |  | Smartphone? |  | Preview URL |
-|:---|:---|:---|:---|:---|:---|:---|:---|
-|  |  |  | Web | App | Web | App |  |
-| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id](https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID](https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID) |
-| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id](https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id) |
+| Website | Category | Desktop? | Tablet Web? | Tablet App? | Smartphone Web? | Smartphone App? | Preview URL |
+|:--|:--|:--|:--|:--|:--|:--|:--|
+| [e24.no](https://e24.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [Link](https://e24.no/?ast_override_div=ad-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [Link](https://e24.no/?ast_override_div=ad-board_3:APPNEXUS_CREATIVE_ID) |
+| [vg.no](https://www.vg.no/) | News | Y | Y | Y | Y | Y | **Desktop**: [Link](https://www.vg.no/?ast_override_div=ad-front-smartboard_1:Xandr_creative_id) <br> **Mobile web**: [Link](https://www.vg.no/?ast_override_div=ad-front-board_1:Xandr_creative_id) |
 
 When you set up your targeting, you'll need to target **Schibsted Media Group (3296)** and the **domains** listed in the available inventory table.
 
 ## Sharethrough
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 3425 |
 | Title | - 90 character maximum <br> - The Title is where the bulk of storyline gets told and should be as long as possible to engage the user |
@@ -366,7 +365,7 @@ You can preview your creative in the [Sharethrough Native Ad Generator](https://
 
 ## Taboola
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 3364 |
 | Landing Page | Landing URL character maximum is 2048 |
@@ -417,7 +416,7 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
 
 ### Native creative best practices
 
-|||
+| Category | Best Practices and Guidelines |
 |:---|:---|
 | **Image Best Practices** | - People are always preferable - Even better if they're at medium zoom from the shoulders-up, or even closer. <br> - Avoid image clutter. Clean images with a single center of focus will help you stand out. <br> - Utilize eye-catching colors to attract the user's attention. |
 | **Title Best Practices** | - Taboola recommends running titles that are 35 - 45 characters, 60 maximum <br> - Your title can be a powerful targeting tool. <br> - Call out your audience or your product when possible. <br> - Front-load titles with an eye-catching main point. <br> - Numbered lists can be a good way to entice a user to click. <br> - Intrigue and mystery can help draw in users. <br> - Don't forget that titles should be capitalized, just as you would an article headline. |
@@ -425,7 +424,7 @@ Taboola's inventory is exclusive via hard-coded placements through multi-year pu
 > [!NOTE]
 > To know more, you can visit [Taboola's Native and Video Creative Best Practices](https://help.taboola.com/hc/en-us/articles/360026664414-Programmatic-Creative-Best-Practices).
 
-### Advertising policies
+### Ad policies
 
 Refer to Taboola's [Help Center](https://help.taboola.com/hc/en-us/categories/115001003987) to review the Advertising Policies which include restricted or prohibited content, products, and services.
 
@@ -439,7 +438,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 
 ## TripleLift
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 1314 |
 | Title | 30 character maximum |
@@ -449,7 +448,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 
 ### General guidelines
 
-|  |  |
+| Category | Guidelines |
 |:---|:---|
 | **Third-Party Trackers** | All 3rd party trackers are accepted as long as they are 1x1 image tag. All trackers must be secure (https://). |
 | **Creative technical attributes** | The creative has to be self-audited or platform-audited with the technical attributes **Image** (Technical attribute ID 1) and **Native: In-Feed Standard** (Technical Attribute ID 93) in order to pass TripleLift's Ad Quality Profile on the Microsoft Advertising platform. |
@@ -457,10 +456,10 @@ Reach out to your Taboola representative if you have any questions. If you do no
 
 ## UIM
 
-|  |  |
+| Parameter | Value/Limit |
 |:---|:---|
 | Member ID | 1578 |
-| Landing Page | [www.web.de/www.gmx.de/www.1und1.de](https://web.de/www.gmx.de/www.1und1.de) |
+| Landing Page | `https://web.de/www.gmx.de/www.1und1.de` |
 | Title | 25 character maximum (including spaces) |
 | Description | 45 character maximum (including spaces) |
 | Icon (sizes in pixels) | Not supported |
@@ -469,8 +468,8 @@ Reach out to your Taboola representative if you have any questions. If you do no
 
 ### Recommendations and guidelines
 
-|||
-|---|---|
+| Category | Recommendations and Guidelines |
+|:---|:---|
 | **General Recommendations** | - Note that a semi-transparent overlay with your text is placed over the image. It occupies approximately 300x100 pixels in the lower image area. <br> - Our headline = 1 line and the description = 2 lines <br> - Only German language |
 | **Teaser Text Guidelines** | - No special characters in your text <br> - No exclamation marks |
 | **Image Guidelines** | - No purely text-based graphics <br> - No plain text as image <br> - No frame around your image <br> - No pure logo as image <br> - No important image component in the margin, as image can be scaled on smaller screens. Position important parts centrally. <br> - Image has to be static, not animated = GIF/JPEG 40KB maximum. |

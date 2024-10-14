@@ -4,7 +4,7 @@ description: In this article, learn what a Buyer Engagement Report is and how yo
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buyer engagement report
+# Microsoft Invest - Buyer Engagement report
 
 The Buyer Engagement Report gives you insight into the viewable duration of your display and video creatives.
 
@@ -84,7 +84,7 @@ Some dimensions have *attributes*. Dimension attributes are a more granular elem
 | Video Completion Rate | The ratio of video completions to total impressions, expressed as a percentage. <br> Video Completion Rate = Video Completions / Total Impressions |
 | Viewable Completion Rate | The ratio of in-view creative/impression completions to total impressions, expressed as a percentage. <br> Viewable Completion Rate = Viewable and Completed Video Impressions / Measurable Video Impressions |
 
-## To run your report
+## Run your report
 
 Follow these steps to run the report:
 

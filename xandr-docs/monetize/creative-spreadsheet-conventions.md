@@ -10,9 +10,9 @@ We support the use of spreadsheet templates for uploading multiple creatives sim
 
 Feel free to leverage the following spreadsheet templates:
 
-- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-third-party.xlsx)
-- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-hosted.xlsx)
-- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/c4d4b36f-48d8-41dd-ae66-a5edd9d75905/xandr-generic-template-native.xlsx)
+- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/e8a333c9-76b7-4c88-9068-60733aceb1dd/xandr-generic-template-third-party.xlsx)
+- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/e8a333c9-76b7-4c88-9068-60733aceb1dd/xandr-generic-template-hosted.xlsx)
+- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/e8a333c9-76b7-4c88-9068-60733aceb1dd/xandr-generic-template-native.xlsx)
 
 > [!NOTE]
 > Only XLS and XLSX file formats are supported with a file size limit of 8 MB.
@@ -27,7 +27,7 @@ When you prepare your Excel files for upload, the following information must be 
 | Name | For automatic Name mappings, use one of the following column names in your Excel file: <br> - **Name** <br> - **File Name** <br> - **Placement Name** |
 | Secure Content | For automatic Secure Content mappings, use one of the following column names in your Excel file: <br> - **Tag Content Secure** <br> - **Tag Content** <br> - **JavaScript Tag** <br> - **Legacy JavaScript Tag** <br> - **URL** <br> - **Secure URL** |
 | Size (optional) | For automatic Size mappings, use one of the following column names in your Excel file: <br> - **Dimensions** <br> - **Size** |
-| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker** <br> - **Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel** |
+| Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker** <br> - **Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel**. |
 
 ## Hosted creatives
 

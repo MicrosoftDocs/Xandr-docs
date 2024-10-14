@@ -52,7 +52,7 @@ Microsoft Identity Platform enables organizations to authenticate their users to
 
 ### Personal Microsoft accounts
 
-If you do not have an organization level integration with Azure Active Directory or the Microsoft Identity Platform, you can still use the Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more details about this process, click [here](https://account.microsoft.com/account/Account).
+If you do not have an organization level integration with Azure Active Directory or the Microsoft Identity Platform, you can still use the Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more details about this process, see [here](https://account.microsoft.com/account/Account).
 
 ## Prerequisites for signing in with the Microsoft Identity Platform
 

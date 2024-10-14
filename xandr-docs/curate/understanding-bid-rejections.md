@@ -1,15 +1,15 @@
 ---
-title: Microsoft Curate - Understanding Bid Rejections
+title: Microsoft Curate - Understand Bid Rejections
 description: This article lists out error IDs you might encounter when a bid is rejected, the cause of the errors, and the actions you can take to resolve these errors.
 ms.date: 11/15/2023
 ---
 
-# Microsoft Curate - Understanding bid rejections
+# Microsoft Curate - Understand bid rejections
 
 There are many reasons a bid might be rejected. Rejected bids show up on the **Deals** screen in the **Ineligible Bids** column and are shown in greater detail in the **Rejections** section of the **Deal Details** screen. The **Bid Rejections** table lists out error IDs you might encounter when a bid is rejected, the cause of the errors, and what actions buyers and/or sellers should take to resolve these errors.
 
 > [!IMPORTANT]
-> **About Impbus Error IDs, Error Messages, and Bid Rejection Reasons**
+> **About Impbus error IDs, error messages, and bid rejection reasons**
 >
 > Each bid rejection reason has a distinct error ID or set of error IDs connected to it. The **Impbus Error ID** shows up as a validation in the Impbus API and in the API and UI Bid Error Report. The **Error Message** shows up in the Bid Error Reports as well as in the **Rejections** section of the **Deal Details** screen.
 

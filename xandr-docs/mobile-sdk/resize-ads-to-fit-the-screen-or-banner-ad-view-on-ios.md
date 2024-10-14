@@ -1,21 +1,23 @@
 ---
-title: Resize Ads to Fit the Screen or Banner Ad View on iOS
+title: Resize Ads to Fit Screen or Banner Ad View on iOS
 description: Learn how to expand ad creative to fit banner ad view and device screen width with instructions provided in this article.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
-# Resize ads to fit the screen or banner ad view on iOS
+# Resize ads to fit screen or banner ad view on iOS
 
-Depending on where advertising fits into your application, you might want to expand the ad creative to fill the banner ad view in which it is displayed, or to fit the device's screen width.
+Depending on where advertising fits into your application, you might want to expand the ad creative to fill the banner ad view in which it's displayed, or to fit the device's screen width.
 
-## Resize ad to fit the banner ad view
+## Resize ad to fit banner ad view
+
 
 ### Properties
 
 | Property | Description |
 |:---|:---|
-| `shouldResizeAdToFitContainer` | Determines whether the creative should resize to fill the banner ad view in which it is displayed. This feature will cause ad creatives that are smaller than the view size to 'stretch' to the current size. This may cause image quality degradation for the benefit of having an ad occupy the entire ad view. Defaults to `NO`. |
+| `shouldResizeAdToFitContainer` | Determines whether the creative should resize to fill the banner ad view in which it's displayed. This feature ensures ad creatives that are smaller than the view size to 'stretch' to the current size. This may cause image quality degradation for the benefit of having an ad occupy the entire ad view. Defaults to `NO`. |
 
 ### Example
 
@@ -30,7 +32,7 @@ banner.shouldResizeAdToFitContainer = YES;
 [banner loadAd];
 ```
 
-## Constrain to the container view
+## Constrain to container's view
 
 By default `ANBannerAdView` is set to constrain to the size of the creative that is returned. But for some custom sizes you might want the `ANBannerAdView` to be constrained to its superview.
 

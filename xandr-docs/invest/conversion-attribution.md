@@ -4,8 +4,7 @@ description: This page covers the conversion attribution process and the three t
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Conversion attribution  
+# Microsoft Invest - Conversion attribution
 
 When an advertiser's conversion pixel loads, Microsoft Advertising determines if that pixel load can be associated with a user, and if so, whether the user has converted in response to having previously viewed or clicked one of the advertiser's creatives. This process is called conversion attribution.
 
@@ -13,7 +12,7 @@ Microsoft Advertising performs conversion attribution using the "post-view/post-
 
 Whichever type of pixel you use, an important concept to understand is the pixel's lookback window (referred to as its **Expiration**). The lookback window is set by the advertiser for each conversion pixel. It determines how far back in time to search the user's cookie data for evidence of a view or click of the advertiser's creative. If a view or click occurred within the lookback window, it is given credit for the conversion.
 
-## The conversion attribution process
+## Conversion attribution process
 
 ### Step 1. The user's browser loads the conversion landing page and fires the conversion pixel
 

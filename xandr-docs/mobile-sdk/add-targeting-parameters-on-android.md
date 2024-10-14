@@ -2,12 +2,13 @@
 title: Add Targeting Parameters on Android
 description: In this article, learn how to add targeting parameters for ads on Android.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Add targeting parameters on Android
 
-This article explains about how to target user location, age and gender for delivery of Ads.
+This article explains how to target user location, age and gender for delivery of ads.
 
 ## User location
 
@@ -45,7 +46,7 @@ com.appnexus.opensdk.utils.SDKSettings.setLocationEnabled(false);
 
 ## Age and gender
 
-You may want to target ads by age and gender. To do that, add the age and gender to an `AdView` implementing the following code:
+To target ads by age and gender, add the age and gender to `AdView` and implement the following code:
 
 ```
 // Set the user's age.  This can be a number, a year, or a

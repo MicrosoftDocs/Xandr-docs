@@ -9,10 +9,10 @@ ms.custom: yield-analytics-ui
 
 The **Forecast Management** page displays a snapshot of your products' impressions forecast for the month specified by the **Time Period** filter.
 
-- To view the **Forecast Management** page for all products, click **Adjust Manual Forecast** in the **Capacity Tasks** panel.
-- To view the **Forecast Management** page for seasonal products, click **Adjust Seasonal Forecast** in the **Capacity Tasks** panel.
+- To view the **Forecast Management** page for all products, select **Adjust Manual Forecast** in the **Capacity Tasks** panel.
+- To view the **Forecast Management** page for seasonal products, select **Adjust Seasonal Forecast** in the **Capacity Tasks** panel.
 
-From the **Forecast Management** page you can click a specific product and select **View** > **Forecast Visibility** to view its **Forecast Visibility** page to add adjustments.
+From the **Forecast Management** page you can select a specific product and select **View** > **Forecast Visibility** to view its **Forecast Visibility** page to add adjustments.
 
 ## Related topics
 

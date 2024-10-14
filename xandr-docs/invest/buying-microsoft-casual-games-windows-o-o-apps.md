@@ -160,7 +160,7 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 > [!NOTE]
 > SSL creative required for all Microsoft Casual Games.
 
-## Targeting instructions
+## Instructions for targeting
 
 There are three different ways you can target Microsoft Casual Games:
 

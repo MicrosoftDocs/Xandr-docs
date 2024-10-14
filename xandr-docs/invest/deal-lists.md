@@ -15,26 +15,26 @@ You can create and manage Deal Lists at the Member and Advertiser level. A deal 
 ### Create a New Deal List
 
 1. In the **Inventory** menu, select **Deal Lists** from the dropdown.
-1. Click **New** in the **Deal List** page.
+1. Select **New** in the **Deal List** page.
 1. Provide the following details in the **Create a New Deal List** page:
     1. **Name:** Enter the name of the deal list.
     1. **Description:** Enter a description for the deal list which can offer a brief definition for it. For example, Deal list for Ford USA advertisers.
     1. **Available to:** *(Optional)* Select whether the deal list is specific to particular advertisers, or if it is available to all advertisers under the current member. If the deal list is available only to particular advertisers, enter the advertiser details by searching for the name or ID of the advertisers. You can add one or more advertisers in this field.
     1. **Deals:** Add deals to the deal list. There are multiple options for adding deals to the list:
-        - **Search and Add:** Search deals by ID, name or alias. Post selection of a deal, it displays the particulars about the deal such as Name, ID, Buyer Deal Status (Active/Inactive) and Seller member. You can also click the **eye** button to view further details about the deal such as Currency, Type, Sizes, Brands, Media Types, Start and End dates, etc. You can add multiple deals using this search option.
+        - **Search and Add:** Search deals by ID, name or alias. Post selection of a deal, it displays the particulars about the deal such as Name, ID, Buyer Deal Status (Active/Inactive) and Seller member. You can also select the **eye** button to view further details about the deal such as Currency, Type, Sizes, Brands, Media Types, Start and End dates, etc. You can add multiple deals using this search option.
         - **Import:** Allows you to bulk import a list of deals from a CSV file to a deal list.
         - **Paste Deal IDs:** Add the Deal IDs by entering them manually, each ID separated by a comma or hard return.
 
         > [!NOTE]
         > Deals with pending, active, or null deal acceptance status can be added to a deal list. Inactive or Declined deals are ineligible deals which cannot be added to a deal list.
 
-1. Once all deal IDs are added, click **Save** to complete the setup.
+1. Once all deal IDs are added, select **Save** to complete the setup.
 
 ### Edit a Deal List
 
-1. Click on the name of the deal list in the **Deal List** page. This will display the details of the deal list with the deals it contains.
-1. Click **Add** to include more deals to the deal list. To add deals to the deal list, follow the instructions in the **Create a New Deal List** section above.
-1. To remove an existing deal from the deal list, click the check box next to the deal and then click **Remove**. A confirmation window will be displayed. Click **Save** to delete the deal from the list.
+1. Select on the name of the deal list in the **Deal List** page. This will display the details of the deal list with the deals it contains.
+1. Select **Add** to include more deals to the deal list. To add deals to the deal list, follow the instructions in the **Create a New Deal List** section above.
+1. To remove an existing deal from the deal list, select the check box next to the deal and then select **Remove**. A confirmation window will be displayed. Select **Save** to delete the deal from the list.
 
 ## Target deal lists - Supply strategy
 

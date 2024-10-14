@@ -1,11 +1,11 @@
 ---
-title: Pricing a Proposed Campaign
+title: Price a Proposed Campaign
 description: In this article, learn information about the pricing of a proposed campaign.
 ms.date: 10/28/2023
 ms.custom: yield-analytics-ui 
 ---
 
-# Pricing a proposed campaign
+# Price a proposed campaign
 
 Unlike consumption data (which comes directly from ad server logs), working with pricing requires more diligence on the part of the publisher. This is to ensure their revenue data in Yield Analytics is correct, since that data relies on manual input. Many times, publishers input contracted revenue as their rate, or input SOV as the impression goal. Both of these create extreme outliers (in terms of eCPM data) and can misrepresent the truth. Once you feel confident in the quality of your revenue data, you can extract valuable pricing insights with the following path.
 

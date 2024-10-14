@@ -16,7 +16,7 @@ The `publisher_id` parameter enables publishers to indicate what action should 
 1. publisher level default placement
 1. member level default placement
 
-### How it works
+### Process
 
 When an invalid placement code is called:
 
@@ -27,29 +27,29 @@ When an invalid placement code is called:
 
 The [AdUnit](./ios-sdk-ad-units.md) class has following two methods for setting and retrieving `publisherId`:
 
-### Setter Method
+### Setter method
 
-#### Code Sample (Swift)
+#### [Swift](#tab/swift1)
 
 ```
 public func setPublisherId (publisherId:Int)
 ```
 
-#### Code Sample (Objective C)
+#### [Objective C](#tab/objectivec1)
 
  ```
 - (void)setPublisherId:(NSInteger)publisherId;
  ```
 
-### Getter Method
+### Getter method
 
-#### Code Sample (Swift)
+#### [Swift](#tab/swift2)
 
 ```
 publisherId:Int
 ```
 
-#### Code Sample (Objective C)
+#### [Objective C](#tab/objectivec2)
 
 ```
 (NSInteger) publisherId;

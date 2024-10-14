@@ -2,10 +2,15 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
-ms.date : 10/28/2023
 ---
 
 # Android SDK release notes
+
+## 9.1.0
+
+### New Feature
+
+- 7667039 - Support for VAST Video Ads in Interstitial Ad Unit.
 
 ## 9.0.1
 
@@ -17,7 +22,7 @@ ms.date : 10/28/2023
 
 ### New Feature
 
-- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` method [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).
+- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` methods [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).
 
 ### Improvement/Bug Fixes
 

@@ -5,13 +5,13 @@ ms.date: 10/28/2023
 ms.custom: yield-analytics-ui
 ---
 
-# Anatomy of the availability pages
+# Anatomy of availability pages
 
 The following article details about various availability related pages.
 
-## Anatomy of the availability dashboard page
+## Anatomy of Availability Dashboard page
 
-The Availability Dashboard page is the primary view for the **Availability** tab. This provides a summary of available revenue, available sell-through, and how available inventory is trending. It is displayed automatically when you click the **Availability** tab.
+The Availability Dashboard page is the primary view for the **Availability** tab. This provides a summary of available revenue, available sell-through, and how available inventory is trending. It is displayed automatically when you select the **Availability** tab.
 
 The Availability Dashboard page is comprised of the following three widgets:
 
@@ -27,7 +27,7 @@ To the left of the widgets is the **Availability Tasks** panel. This is where 
 
 Below the Availability Tasks panel is the Processing Summary panel. This is a read-only panel that indicates when the availability forecast and order data were last updated.
 
-## Anatomy of the availability lookup page
+## Anatomy of Availability Lookup page
 
 On the Availability Lookup page on the **Availability** tab, you can search for available inventory using a variety of criteria, including attributes from existing products, attributes from a product group, and custom defined attributes. You can also open saved lookups, save new lookups, and create batches to search for inventory across products and run the lookup in the background.
 
@@ -38,7 +38,7 @@ The Availability Lookup page is comprised of the following four panels:
 - **Lookup Request** – This panel is populated with the product(s) and attribute(s) you select in the Lookup Criteria panel. You can look up available inventory using a search for products that match all of a set of specified attributes and/or any of a set of specified attributes.
 - **Availability Report** – This panel shows a list of the available inventory that meets your lookup criteria. For each product with available impressions, the list provides the product name, product ID, rate card CPM, ad targeting, total impressions, and total capacity. From this panel, you can access full product details for existing inventory. For available impressions that match your lookup but for which a product doesn't yet exist, you can create a new product. You can also export your lookup into an Excel spreadsheet (XLS) or comma-separated values (CSV) file.
 
-## Anatomy of the view calendar page
+## Anatomy of View Calendar page
 
 The View Calendar page on the Availability tab shows a daily summary of future availability by month.
 

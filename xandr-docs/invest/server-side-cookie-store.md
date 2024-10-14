@@ -17,7 +17,7 @@ Traditionally user data is stored in the user's browser cookie, but in many auct
 > [!NOTE]
 > For an exact listing of the cookies set by the Microsoft Advertising Platform, and detailed information on what they contain, see [Cookies](http://appnexus.com/cookies).
 
-## Mapping user IDs
+## Map user IDs
 
 If we had a tag from Microsoft Advertising on every page for every impression that passed through our platform, we would have access to the cookie for every user we see. But we don't.
 
@@ -29,7 +29,7 @@ The exact method of ID mapping differs depending on our integration partner. We 
 - Exchange Y stores the mapping in their database, but they don't put our pixel on the page. Instead, the first time we serve an ad to this user, we fire a usersync pixel that adds a unique user ID to the user's browser cookie, and redirects to pass the user ID to Exchange Y.
 - For Exchange Z, Microsoft Advertising stores the ID map. In this case, the first time Microsoft Advertising serves an ad to a user, we fire off a pixel to Exchange Z, who then passes us their user ID, which we store. Now on future impressions, Exchange Z sends us their user ID, and we can look it up in our database.
 
-## Cross datacenter syncing
+## Sync data across datacenters
 
 One thing we are highly focused on is making sure all user data is available in all Microsoft Advertising data centers. We currently have datacenters in Los Angeles, the New York metro region, and Amsterdam, and users are routed to the topologically closest one. This means that users in the middle of the United States might be sometimes routed to New York and sometimes Los Angeles. Or, in the event of a networking blip at one datacenter, all traffic would be routed to the other datacenter.
 
@@ -45,4 +45,4 @@ You can also update segment data at any time without having access to the user v
 
 ## Related topic
 
-- [User ID Mapping with getUID and mapUID](./user-id-mapping-with-getuid-and-mapuid.md)
+[User ID Mapping with getUID and mapUID](./user-id-mapping-with-getuid-and-mapuid.md)

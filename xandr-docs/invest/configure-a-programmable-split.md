@@ -19,7 +19,7 @@ When you create an [augmented line item (ALI)](create-an-augmented-line-item-ali
 You define a split by specifying the inventory you want available for it, using any combination of split settings. These include geography, inventory performance, and segment information. If you choose, you can also specify bidding or valuation rules, budget allocations, bidding priority, and/or creative selection for each split. For more background information on how splits work, see [Understanding Splits](understanding-splits.md).
 
 > [!NOTE]
-> Split changes are only applied when you click **Review and Save** on the line item.
+> Split changes are only applied when you select **Review and Save** on the line item.
 
 1. [Create a Programmable Split](create-a-programmable-split.md)
 

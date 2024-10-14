@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Exploring Creatives
+title: Microsoft Invest - Explore Creatives
 description: In this article, learn about the Creative Manager screen where you can view creatives that are associated to a particular advertiser, add and update creatives, as well as view information about each creative. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Exploring creatives
+# Microsoft Invest - Explore creatives
 
 You can work with creatives from the **Creative Manager** screen. From there you can view the creatives that are associated to a particular advertiser as well as add and update creatives.
 

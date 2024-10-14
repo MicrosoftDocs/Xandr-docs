@@ -1,11 +1,11 @@
 ---
-title: Microsoft Curate - Managing Relationships with Buyers
+title: Microsoft Curate - Manage Relationships with Buyers
 description: This page walks you through different ways by which you can use Partner Center that manages your relationships with specific buyers. 
 ms.date: 11/14/2023
 ---
 
 
-# Microsoft Curate - Managing relationships with buyers
+# Microsoft Curate - Manage relationships with buyers
 
 Sellers use the **Partner Center** to foster and manage relationships with specific buyers.
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Buying Native Inventory
+title: Microsoft Invest - Buy Native Inventory
 description: This article provides steps for buying native inventory. Native ads allow publishers to control user's experience by integrating advertising within their inventory.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Buying native inventory
+# Microsoft Invest - Buy native inventory
 
 Native ads seamlessly integrate advertising into a placement's context. In contrast with traditional HTML/JavaScript ads, native ads specify the ad content but not how to display it. This lets publishers control their user's experience by integrating advertising within their inventory, and it affords advertisers higher quality inventory to choose from. This guide contains steps for buying native inventory.
 

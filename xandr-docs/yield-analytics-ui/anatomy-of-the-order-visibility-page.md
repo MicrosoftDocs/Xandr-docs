@@ -9,7 +9,7 @@ ms.custom: yield-analytics-ui
 
 The Order Visibility page on the **Orders** tab shows basic information about the order, as well as the order lines it contains. Select an order line's name to display its **Order Line Visibility** page. This shows the order line's flighting and delivery, as well as any competing order lines.
 
-## About Order Visibility page
+## Order Visibility page
 
 There are several sections on the **Order Visibility** page:
 

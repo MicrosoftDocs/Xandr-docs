@@ -14,7 +14,7 @@ You can create or edit splits in bulk by importing a CSV specifying the details 
 > When you import a CSV, it replaces all of the existing splits on your line item. To keep targeting the existing splits, they must be specified in the spreadsheet with the same split IDs.
 
 1. Go to **Line Item** > **Programmable Splits**.
-1. Click **Actions** > **Import CSV** to import a CSV file or **Actions** > **Export CSV** to export a CSV file.
+1. Select **Actions** > **Import CSV** to import a CSV file or **Actions** > **Export CSV** to export a CSV file.
 
 ## CSV rules
 

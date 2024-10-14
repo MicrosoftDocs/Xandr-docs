@@ -12,17 +12,17 @@
   items: 
   - name: Working with Member Settings
     items:
-    - name: Managing Notification Recipients
+    - name: Manage Notification Recipients
       href: managing-notification-recipients.md
     - name: Viewing Your Object Limits
       href: viewing-your-object-limits.md
-    - name: Capping Daily Spend on Third-Party Inventory (Safety Budget)
+    - name: Cap Daily Spend on Third-Party Inventory (Safety Budget)
       href: capping-daily-spend-on-third-party-inventory-safety-budget.md
     - name: Member-Level Geography Targeting
       href: member-level-geography-targeting.md
     - name: Create a Third-Party Member Pixel for Your Creatives
       href: create-a-third-party-network-pixel-for-your-creatives.md
-  - name: Managing User Logins and Permissions
+  - name: Manage User Logins and Permissions
     items:
     - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md
@@ -34,7 +34,7 @@
       href: create-a-user.md
     - name: Edit a Member User
       href: edit-a-network-user.md
-    - name: Getting Started with Roles
+    - name: Get Started with Roles
       items:   
       - name: Overview
         href: getting-started-with-roles.md
@@ -64,13 +64,13 @@
         href: fee-type.md
       - name: Fee Calculations
         href: fee-calculations.md
-      - name: Migrating from Broker Fees to Partner Fees
+      - name: Migrate from Broker Fees to Partner Fees
         href: migrating-from-broker-fees-to-partner-fees.md
       - name: Broker Fees
         href: broker-fees.md
     - name: Currency Support
       href: currency-support.md
-    - name: Reporting Labels
+    - name: Run a Report using Reporting Labels
       href: reporting-labels.md
   - name: Working with Third-Party Inventory
     items:
@@ -98,7 +98,7 @@
     href: using-the-buyer-monitoring-grids.md
   - name: Bulk Edit Actions
     href: bulk-edit-actions.md
-  - name: Exporting and Importing Object Details in Bulk
+  - name: Export and Import Object Details in Bulk
     items:
     - name: Overview
       href: exporting-and-importing-object-details-in-bulk.md
@@ -192,13 +192,13 @@
         href: associate-creatives-with-a-line-item.md
       - name: Enable Third-Party Measurement Features on a Line Item
         items:
-        - name: Measuring Demographic Targeting Success with Nielsen Digital Ad Ratings
+        - name: Measure Demographic Targeting Success with Nielsen Digital Ad Ratings
           href: nielsen-digital-ad-ratings.md
         - name: Metrics for Nielsen Digital Ad Ratings
           href: nielsen-dar-metrics.md
         - name: Activate Nielsen Digital Ad Ratings for a Line Item
           href: activate-nielsen-digital-ad-ratings-for-a-line-item.md
-        - name: Enabling Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
+        - name: Enable Sales Impact for Line Item Delivery with Nielsen Catalina Solutions
           href: enabling-sales-impact-with-nielsen-catalina-solutions.md
         - name: Activate Nielsen Sales Impact for a Line Item
           href: activate-nielsen-sales-impact-for-a-line-item.md
@@ -264,7 +264,7 @@
     items:
     - name: Overview
       href: trader-home.md
-    - name: Getting Started with Trader Home
+    - name: Get Started with Trader Home
       href: getting-started-with-trader-home.md
     - name: Explore Trader Home
       href: explore-trader-home.md
@@ -378,7 +378,7 @@
         href: offline-conversion-attribution.md
     - name: Conversion Pixels Advanced
       href: conversion-pixels-advanced.md
-    - name: Reporting on Conversions
+    - name: Conversion Reports
       href: reporting-on-conversions.md
     - name: Server-Side Conversion Pixels
       href: server-side-conversion-pixels.md
@@ -408,19 +408,19 @@
         href: testing-client-side-impression-tracking.md
     - name: A Comparison of Mobile App vs. Web
       href: a-comparison-of-mobile-vs-web.md
-    - name: Adapting Display Strategies to Mobile Buying
+    - name: Adapt Display Strategies to Mobile Buying
       href: adapting-display-strategies-to-mobile-buying.md
     - name: Mobile Inventory
       items:
-      - name: Buying Mobile Inventory
+      - name: Buy Mobile Inventory
         href: buying-mobile-inventory.md
       - name: Buy Mobile Inventory via RTB
         href: buy-mobile-inventory-via-rtb.md
-      - name: Managing Mobile Discrepancies
+      - name: Manage Mobile Discrepancies
         href: managing-mobile-discrepancies.md
       - name: Run Rich Media Creatives on Mobile Inventory
         href: run-rich-media-creatives-on-mobile-inventory.md
-      - name: Running Cost per Install Offers
+      - name: Run Cost per Install Offers
         href: running-cost-per-install-offers.md
       - name: Set Up Third-Party Mobile App Install Tracking
         href: set-up-third-party-mobile-app-install-tracking.md
@@ -440,7 +440,7 @@
       href: mobile-buying-faq.md
   - name: Video Inventory
     items:
-    - name: Buying Video Inventory
+    - name: Buy Video Inventory
       href: buying-video-inventory.md
     - name: Video Creative Best Practices
       href: video-creative-best-practices.md
@@ -456,13 +456,13 @@
       href: use-recommendations-to-target-video-inventory.md
     - name: OTT Video Inventory
       items:
-      - name: Buying OTT Video Inventory
+      - name: Buy an OTT Video Inventory
         href: buying-ott-video-inventory.md
       - name: OTT Video Creative Specifications
         href: ott-video-creative-specifications.md
-      - name: Buying ESPN Inventory
+      - name: Buy an ESPN Inventory
         href: buying-espn-inventory.md
-      - name: Buying Hulu Inventory
+      - name: Buy Hulu Inventory
         href: buying-hulu-inventory.md
       - name: CTV Video Buying Best Practices
         href: ctv-video-buying-best-practices.md
@@ -474,37 +474,37 @@
       href: comparison-of-video-complete-buying-strategies.md
   - name: Audio Inventory
     items:
-    - name: Buying Audio Inventory
+    - name: Buy an Audio Inventory
       href: buying-audio-inventory.md
-    - name: Buying Spotify Audio Inventory
+    - name: Buy Spotify Audio Inventory
       href: buying-spotify-audio-inventory.md
-    - name: Buying Triton Audio Inventory
+    - name: Buy Triton Audio Inventory
       href: buying-triton-audio-inventory.md
   - name: Microsoft Inventory
     items:
     - name: Overview
       href: buying-microsoft-inventory.md
-    - name: Buying MSN Inventory
+    - name: Buy MSN Inventory
       href: buying-msn-inventory.md
-    - name: Buying Microsoft Casual Games (Windows O&O Apps)
+    - name: Buy Microsoft Casual Games (Windows O&O Apps)
       href: buying-microsoft-casual-games-windows-o-o-apps.md
-    - name: Buying Microsoft Deals
+    - name: Buy Microsoft Deals
       href: buying-microsoft-deals.md
-    - name: Buying Microsoft Outlook.com Inventory
+    - name: Buy Microsoft Outlook.com Inventory
       href: buying-microsoft-outlook-com-inventory.md
-    - name: Buying Microsoft Video Inventory
+    - name: Buy Microsoft Video Inventory
       href: buying-microsoft-video-inventory.md
-    - name: Buying Microsoft Windows App Inventory
+    - name: Buy Microsoft Windows App Inventory
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
   - name: Native Inventory
     items:
-    - name: Buying Native Inventory
+    - name: Buy Native Inventory
       href: buying-native-inventory.md
     - name: Native Inventory Seller Specifications
       href: native-inventory-seller-specifications.md
-    - name: Buying GumGum Inventory
+    - name: Buy GumGum Inventory
       href: buying-gumgum-inventory.md
-    - name: Buying Seedtag Inventory
+    - name: Buy Seedtag Inventory
       href: buying-seedtag-inventory.md
   - name: Political Advertising
     href: political-advertising.md
@@ -538,7 +538,7 @@
     items:
     - name: Overview
       href: frequency-and-recency-caps.md
-    - name: Applying Frequency and Recency Caps
+    - name: Apply Frequency and Recency Caps
       href: applying-frequency-and-recency-caps.md
     - name: Set a Frequency Cap
       href: set-a-frequency-cap.md
@@ -552,7 +552,7 @@
     items:
     - name: Overview  
       href: geography-targeting.md
-    - name: How Geography Targeting Works
+    - name: Geography Targeting Process
       href: how-geography-targeting-works.md
     - name: Invalid Postal and ZIP Codes
       href: invalid-postal-codes.md
@@ -614,7 +614,7 @@
   items:
   - name: Working with Creatives 
     href: working-with-creatives.md
-  - name: Exploring Creatives
+  - name: Explore Creatives
     href: exploring-creatives.md
   - name: Creative Types
     items:
@@ -664,8 +664,12 @@
         href: creative-ctv-guidelines-and-specifications.md
     - name: Creative Spreadsheet Conventions
       href: creative-spreadsheet-conventions.md
-    - name: Add a Creative 
-      href: add-a-creative.md
+    - name: Process to add Creatives
+      items:
+      - name: Add a Creative
+        href: add-a-creative.md
+      - name: Native Asset generation
+        href: native-asset-generation.md
     - name: Add Creatives in Bulk
       href: add-creatives-in-bulk.md
     - name: Update Creatives in bulk
@@ -684,7 +688,7 @@
       href: smart-image-adjustments-for-native-creatives.md
   - name: Tracking for Creatives   
     items:
-    - name: Configuring Tracking for Creatives
+    - name: Configure Tracking for Creatives
       href: configuring-tracking-for-creatives.md
     - name: Click Tracking
       items:
@@ -704,8 +708,6 @@
         href: create-a-third-party-advertiser-pixel-for-your-creatives.md
     - name: Associate Segment Pixels with Creatives
       href: associate-segment-pixels-with-creatives.md
-    - name: Moat Video Viewability Measurement
-      href: moat-video-viewability-measurement.md
   - name: Auditing Creatives
     items:   
     - name: Overview
@@ -730,7 +732,7 @@
     items:
     - name: Overview
       href: creative-templates.md
-    - name: Managing Creative Templates
+    - name: Manage Creative Templates
       href: managing-creative-templates.md
     - name: Create a Custom Creative Template
       href: create-a-custom-creative-template.md
@@ -740,7 +742,7 @@
       href: update-a-custom-creative-template.md
     - name: Delete a Custom Creative Template
       href: delete-a-custom-creative-template.md
-    - name: Applying Media Types and Templates to Banner Creatives
+    - name: Apply Media Types and Templates to Banner Creatives
       href: applying-media-types-and-templates-to-banner-creatives.md
   - name: Creative Macros
     items:
@@ -756,7 +758,7 @@
     href: creative-faq.md
 - name: Partner Center Guide
   items:
-  - name: Managing Relationships with Sellers
+  - name: Manage Relationships with Sellers
     items:
     - name: Partner Center Screen
       href: partner-center-screen-buyer-view.md       
@@ -782,7 +784,7 @@
   items:
     - name: Overview
       href: introduction-to-viewability.md
-    - name: Reporting on Viewability
+    - name: Viewability Reports
       href: reporting-on-viewability.md
     - name: vCPM Payment Type
       href: vcpm-payment-type.md
@@ -810,7 +812,7 @@
   items:
     - name: Overview
       href: guaranteed-outcomes.md
-    - name: How Guaranteed Outcomes Work
+    - name: Guaranteed Outcomes Mechanism and Bid Process
       href: how-guaranteed-outcomes-work.md
     - name: Guaranteed Outcomes Auction Mechanics
       href: guaranteed-outcomes-auction-mechanics.md
@@ -822,15 +824,15 @@
       href: supported-viewability-standards-for-guaranteed-outcomes.md
     - name: Supported Video Completion Standards
       href: supported-video-completion-standards.md
-    - name: Configuring a Line Item to Buy Guaranteed Outcomes
+    - name: Configure a Line Item to Buy Guaranteed Outcomes
       href: configuring-a-line-item-to-buy-guaranteed-outcomes.md
-    - name: Reporting on Guaranteed Outcomes
+    - name: Guaranteed Outcomes Reports
       href: reporting-on-guaranteed-outcomes.md
     - name: Understanding Viewability Rates for Guaranteed Views
       href: understanding-viewability-rates-for-guaranteed-views.md
     - name: Understanding Billing and Costs for Guaranteed Outcomes
       href: understanding-billing-and-costs-for-guaranteed-outcomes.md
-    - name: Analyzing CTR and Conversion Rate for Guaranteed Outcomes
+    - name: Analyze CTR and Conversion Rate for Guaranteed Outcomes
       href: analyzing-ctr-and-conversion-rate-for-guaranteed-outcomes.md
     - name: Using a Viewability Rate Target for Guaranteed Views
       href: using-a-viewability-rate-target-for-guaranteed-views.md
@@ -856,7 +858,7 @@
         href: charges-for-buyers.md
       - name: Charges for Sellers
         href: charges-for-sellers.md
-    - name: Reconciling Your Invoice with Reporting
+    - name: Reconcile Your Invoice with Reports
       href: reconciling-your-invoice-with-reporting.md
     - name: Payment
       href: payment-to-xandr.md
@@ -870,7 +872,7 @@
       href: digital-selling.md
     - name: Understanding Your Seller Statement
       href: understanding-your-seller-statement.md
-    - name: Reconciling your Seller Statement with Reporting
+    - name: Reconcile your Seller Statement with Reports
       href: reconciling-your-seller-statement-with-reporting.md
     - name: Getting Paid
       href: getting-paid-by-xandr.md
@@ -996,8 +998,6 @@
       href: requirements-for-filing-a-support-case-for-report-discrepancies.md
 - name: Apps
   items:
-    - name: grapeshot
-      href: grapeshot.md
     - name: comScore Agent
       href: comscore-agent.md
 - name: Release Notes
@@ -1006,6 +1006,8 @@
       href: release-notes.md
     - name: 2024 - 2025
       items:
+        - name: September 23, 2024 - Open Beta for Native Asset Generation 
+          href: release-notes-20240923.md
         - name: September 09, 2024 - Microsoft Owned and Operated (O&O) Packages in Inventory Library 
           href: release-notes-20240909.md
         - name: July 09, 2024 - Trader Home

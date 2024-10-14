@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Managing Creative Templates
+title: Microsoft Invest - Manage Creative Templates
 description: In this article, find out how to manage creative templates and how to view standard creative templates.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Managing creative templates
+# Microsoft Invest - Manage creative templates
 
 You can use the **Creative Templates** screen to view all corresponding details for each standard and custom creative template.
 
@@ -16,7 +16,7 @@ The following columns display on the **Creative Templates** screen for each crea
 - **Template Owner**: The name of the person who created the creative template. Microsoft Advertising is the owner of all standard templates. Your network owns all custom templates.
 - **State**: The status of the creative template, which is either **Active** or **Inactive**.
 
-To obtain the following details about any of the creative templates, click a corresponding row and the **Creative Template Details** pane displays:
+To obtain the following details about any of the creative templates, select a corresponding row and the **Creative Template Details** pane displays:
 
 - **Creative Format**: Defines the creative resource type that can use this template, such as iframe or External File.
 - **Template Code**: Specifies how the creative should be rendered.

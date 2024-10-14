@@ -2,7 +2,6 @@
 title: Mediate with iOS
 description: This article provides information on mediation with iOS. Mediation lets you sell ad impressions through multiple networks to generate more revenue.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
 ---
 
 # Mediate with iOS
@@ -22,7 +21,7 @@ This section lists the networks that we provide mediation adaptors for, and the 
 | Adaptor | Version | Banner | Interstitial | Native | Docs |
 |:---|:---|:---|:---|:---|:---|
 | AdMob and DFP | 10.10.0  | Yes | Yes | Yes | [Google Mobile Ads - iOS Document](https://developers.google.com/admob/ios/mediation) |
-| SmartAdServer | 7.22.0  | Yes | Yes | No | [SmartAdServer Documentation](https://documentation.smartadserver.com/displaySDK/) |
+| SmartAdServer | 7.24.2  | Yes | Yes | No | [SmartAdServer Documentation](https://documentation.smartadserver.com/displaySDK/) |
 
 ## Prerequisites
 
@@ -45,7 +44,7 @@ To mediate these networks, you'll need the following:
   - You can install the binary builds of the adaptors that are included with our [official releases](https://github.com/appnexus/mobile-sdk-ios/releases). You can also build the adaptors yourself from [source](https://github.com/appnexus/mobile-sdk-ios/tree/master/mediation/mediatedviews).
   - If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list: -->
 
-## Instantiating mediation adaptors
+## Instantiate mediation adaptors
 
 If you use the following adaptor, you need to initialize the adaptor's SDK as early as possible in the lifecycle of the application. A perfect place to do this is in the app delegate. The code samples below show how to do this.
 

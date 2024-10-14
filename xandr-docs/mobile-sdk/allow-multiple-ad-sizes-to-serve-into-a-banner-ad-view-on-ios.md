@@ -2,7 +2,8 @@
 title: Allow Multiple Ad Sizes to Serve into a Banner Ad View on iOS
 description: In this article, learn how to allow multiple ad sizes to serve into a banner ad view on iOS.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Allow multiple ad sizes to serve into a banner ad view on iOS
@@ -20,7 +21,7 @@ To allow multiple ad sizes to serve into a banner ad view on iOS, use the `setA
 As shown in the example below, the sizes array needs to be an `NSArray` of `NSValue` objects wrapping `CGSize` structs, as described in the [NSValue documentation](https://developer.apple.com/documentation/foundation/nsvalue/1624511-valuewithcgsize):
 
 ```
-// Create the banner ad view and add it as a subview
+// Create a banner ad view and add it as a subview
 ANBannerAdView *banner = [ANBannerAdView adViewWithFrame:rect placementId:@"1326299" adSize:size];
 
 banner.rootViewController = self;
@@ -29,10 +30,10 @@ CGSize size1 = CGSizeMake(300,  50);
 CGSize size2 = CGSizeMake(300, 250);
 NSArray *sizes = @[[NSValue valueWithCGSize:size1], [NSValue valueWithCGSize:size2]];
 
-// Pass the ad sizes array to the banner ad view.
+// Pass ad sizes array to banner ad view.
 [banner setAdSizes:sizes];
 [self.view addSubview:banner];
 
-// Load an ad!
+// Load an ad
 [banner loadAd];
 ```

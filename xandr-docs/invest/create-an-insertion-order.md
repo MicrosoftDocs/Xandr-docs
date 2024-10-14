@@ -4,7 +4,6 @@ description: This page is a step-by-step guide to create a new insertion order a
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Create an insertion order
 
 Insertion orders enable you to better organize, track, and allocate budget to your line items. Associating your line items with insertion orders allows you to preserve historical pacing and performance data across line items under a single insertion order, and to streamline your setup for long-standing advertiser relationships.
@@ -13,7 +12,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 ## Create a new insertion order
 
-1. Click the **Create New** button from the **Insertion Orders** menu, then select the appropriate advertiser.
+1. Select the **Create New** button from the **Insertion Orders** menu, then select the appropriate advertiser.
 
     You can also search for the advertiser if necessary.
 
@@ -62,7 +61,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 1. Optionally, add comments to the insertion order.
 
-1. Click **Save** to save the insertion order. Alternatively, click the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
+1. Select **Save** to save the insertion order. Alternatively, select the arrow next to **Save** and select **Save and Create Line Item** to go directly to creating a line item associated with this insertion order.
 
 ## Basic setup
 

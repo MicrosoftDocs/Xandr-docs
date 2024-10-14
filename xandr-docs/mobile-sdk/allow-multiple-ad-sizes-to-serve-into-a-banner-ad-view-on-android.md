@@ -2,7 +2,8 @@
 title: Allow Multiple Ad Sizes to Serve into a Banner Ad View on Android
 description: In this article, learn how to allow multiple ad sizes to serve into a banner ad view on Android.
 ms.custom: android-sdk
-ms.date : 10/28/2023
+ms.date: 10/28/2023
+ms.author: shsrinivasan
 ---
 
 # Allow multiple ad sizes to serve into a banner ad view on Android
@@ -23,18 +24,18 @@ To allow multiple ad sizes to serve into a banner ad view on Android, use the fo
 BannerAdView bav = new BannerAdView(this);
 bav.setPlacementID("1326299");
 
-// Build up the ad sizes array.
+// Build up ad sizes array.
 ArrayList<AdSize> sizes = new ArrayList<AdSize>();
 sizes.add(new AdSize(300,  50));
 sizes.add(new AdSize(300, 250));
 
-// Pass the ad sizes array to the banner ad view.
+// Pass ad sizes array to banner ad view.
 bav.setAdSizes(sizes);
 
-// Add the AdView to our layout.
+// Add AdView to our layout.
 FrameLayout layout = (FrameLayout)findViewById(android.R.id.content);
 layout.addView(bav);
 
-// Load an ad!
+// Load an ad
 bav.loadAd();
 ```

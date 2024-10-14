@@ -7,11 +7,9 @@ ms.custom: digital-platform-api
 
 # Ad Sizes service
 
-The Ad Size Service returns the ad sizes which are accepted by the member associated with the config.
+The Ad Size Service returns the ad sizes that are accepted by the member associated with the Prebid Server Premium (PSP) configuration. These Ad sizes are set at the member level and derived from `standard_sizes` field in the [Member Service](./member-service.md) documentation. Ad sizes cannot be set in PSP and are instead retrieved via the endpoint described below.
 
-Ad Sizes come from the `standard_sizes` returned from the Member Service (See [Member Service](./member-service.md)). Sizes are set at the member level. Since the sizes cannot be set in PSP, we add an endpoint in PSP to fetch member sizes for user convenience, and so we can surface them in the PSP UI.
-
-`is_standard` means that the size is a standard size for a creative, and it is not a custom size added to the member.
+The `is_standard` field indicates that the size is a standard size for a creative and not a custom size added to the member.
 
 ## REST API
 

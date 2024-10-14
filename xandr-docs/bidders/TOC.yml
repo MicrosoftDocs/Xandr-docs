@@ -175,6 +175,8 @@
     href: outgoing-bid-request-to-bidders.md
   - name: Incoming Bid Response from Bidder
     href: incoming-bid-response-from-bidders.md
+  - name: Integration with OpenRTB 2.6 Protocol for Bidders
+    href: integration-with-openrtb-2-6.md
   - name: Bid Error Codes
     href: bid-error-codes.md
   - name: Loss Reason Codes

@@ -170,7 +170,7 @@ Then the consumption types for the order lines can be represented as follows:
 - Contained – The Champion order line is "contained" to the Sports product, since it is directly targeted to the Football section which is entirely contained within the Sports section.
 - Indirect – The Times order line is "indirect" to the Sports product, since it is directly targeted to Geo=New York. This partially overlaps with the Sports section.
 
-### Consumption-to-schedule Percentage
+### Consumption-to-schedule percentage
 
 A measure of pacing per schedule. For future time periods, this number takes into account the expected consumption based on the allocation forecast. Guaranteed order lines with pricing types CPM, CPD, and CPC are subject to this calculation.
 
@@ -186,7 +186,7 @@ This metric is also calculated for cost-per-click (CPC) order lines:
 
 Formula: (Delivered clicks / Scheduled clicks) x 100
 
-### Consumption-to-schedule Percentage (lifetime)
+### Consumption-to-schedule percentage (lifetime)
 
 This is the same as the Consumption-to-schedule percentage metric, except that this metric aggregates over the lifetime of all order lines and is not bound by the time period. When the lifetime metric is used, the time period filter is only used to filter to order lines delivering in the selected time period.
 

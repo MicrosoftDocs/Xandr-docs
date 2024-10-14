@@ -8,8 +8,8 @@ ms.date: 10/28/2023
 
 You can set recency caps from the **Audience & Location Targeting** section within the **Create New Line Item** and **Edit Line Item** screens.
 
-1. Under the **Audience & Location Targeting** > **Frequency & Recency** subsection, click the toggle if it's not already selected.
-1. Under **Recency (how often)**, click the **Add another cap** button.
+1. Under the **Audience & Location Targeting** > **Frequency & Recency** subsection, select the toggle if it's not already selected.
+1. Under **Recency (how often)**, select the **Add another cap** button.
 1. Enter the number of impressions (imps) to show and select how often to show them. For example, to ensure that a user doesn't see a creative more than one time every two days, enter **2** in the text field and select **days** from the pull-down menu.
 
    > [!NOTE]
@@ -19,7 +19,7 @@ You can set recency caps from the **Audience & Location Targeting** section with
 
 1. Set the following settings:
 
-    | **Settings** | **Description** |
+    | Settings | Description |
     |:---|:---|
     | **Serve only 1 imp per page** | Use this setting to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions. This option is network-specific and may not be available for your network (member). |
     | **Include users without cookies** | Once you set a frequency cap, you can choose to show creatives to users without cookies. There is no way to identify these users, so if you turn on this option your frequency and recency caps will not apply to any user without cookies. However, if you select not to include users without cookies you could limit your delivery. If you toggle this option and have set a daily frequency cap, [Advanced Frequency Management](./advanced-frequency-management.md) will be applied to help adhere to your daily frequency cap. |

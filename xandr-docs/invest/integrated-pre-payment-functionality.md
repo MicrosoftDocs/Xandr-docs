@@ -16,13 +16,13 @@ Pre-payment Functionality enables buyers to make credit card payments from withi
 To initiate the payment process, do the following:
 
 1. Within the **Microsoft Invest UI** switch over to member or account into which you want the pre-payment to be applied to
-1. Navigate to the **Billing UI** and click on **Make a Payment** button.
+1. Navigate to the **Billing UI** and select on **Make a Payment** button.
 1. Enter the amount to be applied to your account in the credit card payment form. The email address is auto-populated with the billing contact that is recorded with Microsoft Advertising.
-1. Click on **Pay as guest** to open the credit card payment form in a new window.
+1. Select **Pay as guest** to open the credit card payment form in a new window.
 Customers have the option to sign in as a guest or sign up to Plastiq, if they would prefer their details to be saved.
-1. Enter the Card Holder’s name and phone number, verify if the member ID is accurate, and click on **Continue**.
-1. Enter the card details and the appropriate billing address and click on **Continue**, to complete your card details.
-1. Review the payment information and other details and click on **Submit payment**, to complete the payment process.
+1. Enter the Card Holder’s name and phone number, verify if the member ID is accurate, and select **Continue**.
+1. Enter the card details and the appropriate billing address and select **Continue**, to complete your card details.
+1. Review the payment information and other details and select **Submit payment**, to complete the payment process.
 1. The total member balance update is displayed along with the payment ID which can be noted for future reference.
 1. An email is sent to the users once the payment is completed.
 

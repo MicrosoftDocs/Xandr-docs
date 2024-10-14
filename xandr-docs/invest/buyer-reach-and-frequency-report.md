@@ -87,7 +87,7 @@ Intervals determine how your data is grouped together into rows in the report re
 > [!NOTE]
 > [Advanced Frequency Management (AFM)](advanced-frequency-management.md), which is currently in **beta**, does not take universal identifier (Universal ID) into account. This is subject to change as the feature would move into GA. Line items utilising Universal ID targeting should avoid using AFM until this is completely adapted.
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

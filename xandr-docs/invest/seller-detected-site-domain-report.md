@@ -15,9 +15,9 @@ The report is best utilized as an investigation tool. That is, a seller runs the
 
 In addition, sellers mostly cares about the tags or publishers that are giving them the most revenue - there may be a long tail that is not worth the time to investigate. So, a seller runs this report to see their best performing tags or publishers as well as whether a tag or publisher is problematic.
 
-**Available to Members and Publishers**
+<!-- **Available to Members and Publishers** -->
 
-This page describes both the member-level version **and** the publisher version; they are essentially the same.
+This page describes both the **member-level** and the **publisher** version; they are essentially the same.
 
 ## Time frame
 
@@ -82,7 +82,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 | Name | Description |
 |:---|:---|
-| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. <br><br> **Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Passing Domains Across iFrames](#passing-domains-across-iframes) below. |
+| Site Domain | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: `"deals.unknown"` or `"managed.unknown"`. These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. <br><br> **Note**: In some cases, this field will be populated with a domain that is different than where the impression actually occurred, such as an ad server domain. For more information about why this happens, see [Pass Domains Across iFrames](#pass-domains-across-iframes) below. |
 | Publisher | The name and ID of the publisher on whose site the impression occurred. |
 | Placement Group | The name and ID of the placement group where the impression occurred. |
 | Placement | The name and ID of the placement on which the impression occurred.<br> Note that a placement ID of 0 may appear for 3rd-party impression trackers. For more information about impression trackers, see [Working with Impression and Click Trackers](./working-with-impression-and-click-trackers.md). |
@@ -91,7 +91,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Detected Site Domain Audit Status | Specifies the audit status of the detected site domain .Permissible values are Audited, Blocklisted, AdServer, Unauditable, Pending, and Unaudited. |
 | Blocked Inventory | Specifies if the impression is in a blocklist. |
 
-## Passing domains across iFrames
+## Pass domains across iFrames
 
 Serving ads inside of iFrames is preferred by publishers for a number of reasons, to include:
 
@@ -108,19 +108,19 @@ For example, a publisher is given a snippet of HTML code to put on their pages t
 
 The iFrame is located on the publisher's web page, but it is serving its contents from the network's domain. Because the page and the iFrame are hosted on different domains, the security restrictions of the "Same Origin Policy" apply, and communication between the publisher's page and the network's iFrame is forbidden. Therefore the network is unable to determine the actual domain of the publisher's page. As a result, the network passes along its own domain as the referring URL to the placement.
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
    <br>Or<br>
-   From the Publishers top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
+   From the Publishers top menu, select **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
    > [!IMPORTANT]
    > For an explanation of how grouping and filtering work, see [Dimensions, Metrics, Filtering, and Grouping](./dimensions-metrics-filtering-and-grouping.md).
 
-1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer.
     > [!WARNING]
@@ -142,7 +142,7 @@ Follow these steps to run your report.
 
     - **Name this report**: Give this report with its current settings a name for future reference.
 
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.
 
 ## Related topics
 

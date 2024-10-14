@@ -9,10 +9,10 @@ ms.custom: yield-analytics-ui
 
 If you have administrative permissions, you can view saved availability lookups.
 
-1. On the **Admin Tools** menu, click **View Saved Lookups**. The **View Saved Lookups** page appears, displaying a list of all saved availability lookups.
+1. On the **Admin Tools** menu, select **View Saved Lookups**. The **View Saved Lookups** page appears, displaying a list of all saved availability lookups.
 1. (Optional) In the search box in the toolbar above the lookups list, type a search term, change the search options as needed, and then press **Enter**. The lookup list is redisplayed to show only the availability lookups that match your search criteria.  
-   - By default, the search returns lookups that contain the search term you entered. To change the type of search, on the dropdown list to the left of the search box, click **Contains** and select a different option (e.g., to search for lookups that starts with the search term you typed, select **Starts With**).
-   - By default, the search is run against the name of the lookup, and the name of the user who created it. To narrow the search to just one of these, click **All** in the dropdown list to the right of the search box and select a different option (e.g., to search for lookups by lookup name only, select **Name**).
+   - By default, the search returns lookups that contain the search term you entered. To change the type of search, on the dropdown list to the left of the search box, select **Contains** and select a different option (e.g., to search for lookups that starts with the search term you typed, select **Starts With**).
+   - By default, the search is run against the name of the lookup, and the name of the user who created it. To narrow the search to just one of these, select **All** in the dropdown list to the right of the search box and select a different option (e.g., to search for lookups by lookup name only, select **Name**).
 
 ## Related topics
 

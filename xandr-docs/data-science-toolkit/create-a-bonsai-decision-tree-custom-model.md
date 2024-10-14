@@ -30,7 +30,7 @@ The Bid Modifier model uses a decision tree to adjust a campaign's optimization-
 > [!NOTE]
 > The bids calculated by the model are always expressed in the currency set on the advertiser, even if you have specified a different currency for the campaign.
 
-## Workflow
+## Process overview
 
 > [!NOTE]
 > The Alpha workflow requires using the API. Alpha clients are expected to have completed our [API Onboarding Process](../digital-platform-api/api-onboarding-process.md) before getting started.
@@ -115,7 +115,7 @@ $ cat check_tree.json
 }
 ```
 
-#### Example: `POST` to the `custom-model-parser` service
+#### Example: `POST` to `custom-model-parser` service
 
 ```
 $ curl -b cookies -c cookies -X POST -d @check_tree.json 'https://api.appnexus.com/custom-model-parser'
@@ -211,7 +211,7 @@ This step changes depending on the type of custom model you are using and whethe
 
 #### Bid price model
 
-Using the API
+Use the API
 
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 
@@ -338,7 +338,7 @@ Use the [Campaign Service](../digital-platform-api/campaign-service.md) to ass
 
 #### Bid modifier model
 
-Using the API
+Use the API
 
 Use the [Campaign Service](../digital-platform-api/campaign-service.md) to assign your custom model to a campaign. Be sure to:
 

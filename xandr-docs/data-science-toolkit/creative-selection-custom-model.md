@@ -12,7 +12,7 @@ By default, Xandr randomly distributes the creatives associated with a line item
 > [!NOTE]
 > This functionality is only available for the [Augmented Line Item](../digital-platform-api/line-item-service---ali.md).
 
-## How does weighting work?
+## Weighting process
 
 In each leaf, you list creative IDs and their weights. Weights may be integers between 0-1000. The allocation percentage of a creative is determined by dividing the creative's weight by the sum of the weight of all eligible creatives.
   
@@ -37,7 +37,7 @@ leaf_name: "NAME"
 creatives: {ID: WEIGHT, ID: WEIGHT, ID: WEIGHT} 
 ```
 
-## API workflow
+## API process overview
 
 ### Step 1: Create an augmented line item
 
@@ -71,7 +71,7 @@ $curl -b cookies -X POST -s -d @ali "https://api.appnexus.com/line-item?advertis
 
 For more information, see [ALI Workflow with Custom Models](ali-workflow-with-custom-models.md).
 
-### Step 2: Attach creative IDs to the augmented line item
+### Step 2: Attach creative IDs to augmented line item
 
 In this example, we associate three creatives to our line item.
 
@@ -166,7 +166,7 @@ else:
         creatives: {12347: 1}
 ```
 
-### Step 4: Upload the custom model
+### Step 4: Upload custom model
 
 In this example, we upload the custom model.
 
@@ -213,7 +213,7 @@ $ curl -b cookies -X POST -d @custom-model "https://api.appnexus.com/custom-mode
 
 For more information, see [Custom Model Service](custom-model-service.md).
 
-### Step 5: Associate the custom model with the line item
+### Step 5: Associate custom model with line item
 
 In this example, we associate the custom model with the line item by setting the `type` field in the line item's `custom_models` array to '`creative_selection`'.
 

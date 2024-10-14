@@ -1,6 +1,6 @@
 - name: Data Science Toolkit Reference Documentation
   href: index.yml 
-- name: Getting Started
+- name: Get Started
   href: data-science-toolkit-guide.md
 - name: Custom Models
   items:
@@ -38,9 +38,9 @@
          href: logistic-regression-model-api-resources.md
     - name: Custom Models Pre-Implementation and Troubleshooting Guide
       href: custom-models-pre-implementation-and-troubleshooting-guide.md
-    - name: Using Custom Models to Pass Macros to Dynamic Creative Optimizations
+    - name: Use Custom Models to Pass Macros to Dynamic Creative Optimizations
       href: using-custom-models-to-pass-macros-to-dynamic-creative-optimizations.md
-    - name: The Bonsai Language
+    - name: Bonsai Language
       items:
        - name: Overview
          href: the-bonsai-language.md

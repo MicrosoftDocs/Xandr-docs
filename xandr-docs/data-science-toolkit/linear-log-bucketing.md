@@ -15,7 +15,7 @@ For example, we want to build a custom model which uses the cookie age feature. 
 
 To do this, Xandr uses a technique called linear-log bucketing.
 
-## How linear-log bucketing works
+## Linear-log bucketing process overview
 
 Linear-log bucketing combines the approaches taken by linear bucketing and log bucketing.
 

@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 # Data Science Toolkit - Incrementality
 
-## What is Incrementality?
+## Overview
 
 Advertisers want to ensure the effectiveness of their advertising campaigns and that they are getting the best return on their advertising spend. The Return on Advertising Spend model (ROAS), with its simplified Revenue/Cost equation, provides a generalized view of the success of a campaign. However, the ROAS model misses the complexity of modern advertising and quantifies every user and inventory platform equally. Attribution models such as Last-touch and Multi-touch can provide a more detailed means to measure the impact of a campaign, but they do not prove causality and fail to answer the question: *"Is my campaign driving people to spend money on my product, or would they have converted anyway?”*
 

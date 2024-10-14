@@ -1,6 +1,6 @@
 ---
 title: Data Science Toolkit - Custom Models
-description: This page provides an overview on how to get started using Custom Models for the various use-cases like Bid Valuation, Creative Selection and Non Valuation Purposes.    
+description: This page provides an overview of how to get started with Custom Models for various use cases, including Bid Valuation, Creative Selection, and Non-Valuation Purposes.    
 ms.custom: data-science
 ms.date: 10/28/2023
 ---
@@ -46,13 +46,13 @@ else:
 
 Please refer to our [Creative Selection Custom Models](creative-selection-custom-model.md) documentation for more information on this use case.
 
-**Non-Valuation custom models**
+**Non-valuation custom models**
 
 Non-valuation custom models do not affect bid valuation. They're used to insert custom creative macros into impression tracking calls, which can eventually be used for other functions, such as affecting Learn status.
 
 Please refer to our [Non-Valuation Custom Models](nonvaluation-custom-model.md) documentation for more information on this use case.
 
-## Getting started
+## Get started
 
 **Step 1: Decide on your use case**
 
@@ -69,18 +69,18 @@ Learn more about the two language types we support and select the one that match
 - [Bonsai Language](the-bonsai-language.md)
 - [Logistic Regression Models](logistic-regression-models.md)
 
-**Step 3: Learn how to upload custom models via the API**
+**Step 3: Learn how to upload custom models via API**
 
 Once you have built a Bonsai decision tree or Logistic Regression Model, learn how to attach them to your ALI and which API services to use:
 
 - [ALI Workflow with Custom Models](ali-workflow-with-custom-models.md)
 - [Custom Model API Reference](custom-model-api-reference.md)
 
-**Step 4: Learn how to use the Log-Level custom model feed**
+**Step 4: Learn how to use log-level custom model feed**
 
 When your ALI or campaign, with attached Custom Models, is live, it is useful to analyze and report on them. The [Log-Level Custom Model Feed](log-level-custom-model-feed.md) enables users to review specific data on models associated with your ALI or campaign and the values calculated by each model.
 
-## Related items
+## Related topics
 
 - [ALI Workflow with Custom Models](ali-workflow-with-custom-models.md)
 - [Bid Valuation With Custom Models](bid-valuation-with-custom-models.md)

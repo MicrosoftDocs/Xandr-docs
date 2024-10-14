@@ -70,15 +70,15 @@ $ curl -b dcc -c dcc -X POST -s -d '@json/custom-model.json' "https://api-test.a
 }
 ```
 
-## Creating an ALI through the API
+## Create an ALI through API
 
 Custom models are designed to enable Xandr API users to add decision-making logic to the valuation models, non-valuation models, and creative delivery of their Augmented Line Items or campaigns. For instructions on creating an ALI, [review the documentation](../digital-platform-api/line-item-service---ali.md).
 
-## Associating a custom model with an ALI
+## Associate a custom model with an ALI
 
 On augmented line items, there is an array field titled, '`custom_models`' which lists custom models associated with a Line Item. Instructions for associating a custom model with an ALI can be found in the [Line Item Model Service documentation](line-item-model-service.md).
 
-### Targeting IP addresses
+### Target IP addresses
 
 Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
 

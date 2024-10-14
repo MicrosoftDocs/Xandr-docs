@@ -1,9 +1,8 @@
 ---
 title: Monetize Insights for Publishers
 description: This page gives an overview of Microsoft Monetize UI for publishers. Learn about demand channels which are clickable navigation tiles, global filters and settings, Ad Quality, Deals and Floor Rules in this module. 
-ms.date: 10/28/2023
+ms.date: 10/14/2024
 ---
-
 
 # Monetize insights for publishers
 
@@ -18,7 +17,7 @@ These are clickable navigation tiles. It shows revenue for the last 7 days as co
 - **Open Exchange**
 - **Curation**
 
-**Specific insights for the channel**
+## Specific insights for the channel
 
 Selecting a channel in **Demand Channels** will show the insights for that specific demand in the navigation tiles.
 
@@ -28,12 +27,12 @@ Filter applies to everything on the screen. It filters by **Publisher**, **Place
 
 ## Global settings
 
-Global Settings has two fields under it:
+<!-- Global Settings has two fields under it:
 
 - **Currency**
-- **Date**
+- **Date** -->
 
-The date has been fixed to 7 days view and 7 days prior to that.
+The **Date** has been fixed to 7 days view and 7 days prior to that.
 
 > [!NOTE]
 > Currently, these settings are under development and are unselectable.
@@ -43,9 +42,9 @@ The date has been fixed to 7 days view and 7 days prior to that.
 **Ad Quality** shows revenue-impacting blocks to help in identifying and evaluating opportunities to adjust ad quality settings. **Ad Quality** contains controls for brand safety, technical attributes and other parameters that can act to block a bid in the auction.
 
 > [!NOTE]
-> As an organization, we recommend you to regularly view your Ad Quality settings (at least quarterly) to make sure that are appropriate and consistent with settings configured in the other SSPs (that you may also be using to monetize inventory). Generally, the blocked bid value overestimates potential revenue impact and is influenced by the price and frequency of the bids that have been blocked.
+> As an organization, we recommend you to regularly view your Ad Quality settings (at least quarterly) to make sure that are appropriate and consistent with settings configured in the other SSPs (that you may also be using to monetize inventory). Generally, the blocked bid opportunity overestimates potential revenue impact and is influenced by the price and frequency of the bids that have been blocked.
 
-The value displayed on **Ad Quality** tab is the sum of all blocked bid prices. For example, a $5.8m of blocked bid value in last 7 days, up 11% compared to prior week shows that bids with that value have been blocked. This can be used to directionally assess magnitude of potential revenue opportunities. The 11% increase could be seen as significant and warrant further investigation by using the Ad Quality tab to understand if a specific bid rejection is causing this increase.
+The value displayed on **Ad Quality** tab is the sum of all blocked bid prices. For example, a $5.8m of blocked bid opportunity in last 7 days, up 11% compared to prior week shows that bids with that value have been blocked. This can be used to directionally assess magnitude of potential revenue opportunities. The 11% increase could be seen as significant and warrant further investigation by using the Ad Quality tab to understand if a specific bid rejection is causing this increase.
 
 For more information on **Ad Quality**, go to [Ad Quality](monetize-insights-ad-quality.md).
 

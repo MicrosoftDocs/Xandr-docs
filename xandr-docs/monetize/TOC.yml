@@ -1045,8 +1045,22 @@
       href: prebid-server-premium-analytics.md
     - name: Prebid Server Premium Request Response Sampler
       href: prebid-server-premium-request-response-sampler.md
-  - name: Explore the Monetization Dashboard
-    href: explore-the-monetization-dashboard.md
+  # - name: Explore the Monetization Dashboard
+  #   href: explore-the-monetization-dashboard.md
+    - name: Monetize Insights
+      items:
+      - name: Monetize Insights for Publishers
+        href: monetize-insights-for-publishers.md
+      - name: Monetize Insights for Total Revenue
+        href: monetize-insights-total-revenue.md
+      - name: Ad Quality
+        href: monetize-insights-ad-quality.md
+      - name: Deals
+        href: monetize-insights-deals.md
+      - name: Demand Issues
+        href: monetize-insights-demand-issues.md
+      - name: Floor Rule
+        href: monetize-insights-floor-rules.md
   - name: Publishers
     items:
     - name: Working with Publishers
@@ -1077,20 +1091,6 @@
         href: native-assembly-faq.md
     - name: Publisher Requirements for Smart Image Adjustments
       href: publisher-requirements-for-smart-image-adjustments.md
-    - name: Monetize Insights
-      items:
-      - name: Monetize Insights for Publishers
-        href: monetize-insights-for-publishers.md
-      - name: Monetize Insights for Total Revenue
-        href: monetize-insights-total-revenue.md
-      - name: Ad Quality
-        href: monetize-insights-ad-quality.md
-      - name: Deals
-        href: monetize-insights-deals.md
-      - name: Demand Issues
-        href: monetize-insights-demand-issues.md
-      - name: Floor Rule
-        href: monetize-insights-floor-rules.md
   - name: Placement Groups
     items:
     - name: Working with Placement Groups

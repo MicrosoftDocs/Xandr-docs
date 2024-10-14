@@ -1,14 +1,10 @@
 ---
 title: Floor Rule
 description: Learn what are Floor Rules and how they enable you to view the floors with the biggest impacting blocks and how much this is changing week over week.
-ms.date: 10/28/2023
+ms.date: 10/14/2024
 ---
 
-
 # Floor rule
-
-> [!NOTE]
-> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
 A floor can be thought of as the minimum price a network or publisher would like to receive for a creative. Floor Rule name is the name configured for the Yield Management floor that caused the block. Drill down of this feature shows the impact on specific buyers.
 
@@ -30,7 +26,7 @@ Steps to make changes in the graph and the table that follows it:
 
 1. The filter has features specific to Floor Rules.
 1. Clicking on **Apply** updates the graph and the table that appears after that.
-1. The graph is configurable so you can choose what you want to plot on the graph, whether it is Blocked Bid Value, Error Count or Avg CPM.
+1. The graph is configurable so you can choose what you want to plot on the graph, whether it is Blocked Bid Opportunity, Error Count or Avg CPM.
 1. You can group the data on the basis of Publisher, Floor Rule, Media type or Placement group.
 1. You can also select how you want the graph to be displayed whether as a Bar chart or a time series Area chart.
 1. Hovering on the chart will give you information on the chart at that position.
@@ -48,7 +44,7 @@ There are three dropdowns under **Overview**. Selection in these dropdowns will 
 |--|--|
 | Compare relative scale and observe trends | View as Bar chart to compare how the metrics compare between the grouping you have selected. You can view as Area chart to see how the groupings changed over time. It specifies if there are spikes or consistent behaviour. |
 | How you want the data grouped | Focuses on how you want the data to be grouped. Grouping can be done on the basis of Publisher, Floor Rule, Media type or Placement group. |
-| Which metric is of interest | To get the metric of interest, choose between Blocked Bid value, Error Count and Avg CPM. |
+| Which metric is of interest | To get the metric of interest, choose between Blocked Bid Opportunity, Error Count and Avg CPM. |
 
 ## Floor rules
 
@@ -56,14 +52,14 @@ There are three dropdowns under **Overview**. Selection in these dropdowns will 
 
 | Field | Description |
 |--|--|
-| % Δ Blocked Bid Value | The percentage change in the total value of blocked bids over the selected time range. |
+| % Δ Blocked Bid Opportunity | The percentage change in the total value of blocked bids over the selected time range. |
 | Avg CPM | The average [CPM](../industry-reference/online-advertising-and-ad-tech-glossary.md#cpm) of the bid rejections. |
-| Blocked Bid Value | The total value of blocked bids within the selected time range. |
+| Blocked Bid Opportunity | The total value of blocked bids within the selected time range. |
 | Buyer | The Microsoft Advertising member seat that submitted the bid. |
 | Error Count | The total number of bid rejections resulting from Ad Quality Rules. |
 | Issue | Issues for a buyer on specific publishers. |
 | Publisher | An object within our system to group inventory, normally by publication. |
-| Δ Blocked Bid Value | The change in the total value of blocked bids over the selected time range. |
+| Δ Blocked Bid Opportunity | The change in the total value of blocked bids over the selected time range. |
 
 > [!NOTE]
 > Click on any row to zoom into more contextual details on the block.
@@ -74,7 +70,7 @@ There are three dropdowns under **Overview**. Selection in these dropdowns will 
 
 ## History chart
 
-**History chart** enables you to visualize the trends for Blocked Bid Value, Error Count and CPM.
+**History chart** enables you to visualize the trends for Blocked Bid Opportunity, Error Count and CPM.
 
 ## Buyers table
 

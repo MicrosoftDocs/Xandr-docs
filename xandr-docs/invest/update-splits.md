@@ -4,25 +4,24 @@ description: In the Edit Line Item screen learn how you can duplicate a split, a
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest - Update splits
 
 The below topics cover all that you can do to update splits.
 
 ## Edit a split
 
-You can edit splits from the **Edit Line Item** screen. Expand the **Programmable Splits** section. Select a split from the Splits table or click on the pencil icon next to the split name.
+You can edit splits from the **Edit Line Item** screen. Expand the **Programmable Splits** section. Select a split from the Splits table or select the pencil icon next to the split name.
 
 ## Duplicate a split
 
-1. Select the split(s) you'd like to duplicate and click **Actions \> Duplicate Selected**.
+1. Select the split(s) you'd like to duplicate and select **Actions \> Duplicate Selected**.
 1. By default, the new splits have the same names as the original splits but with "COPY" as a prefix. If necessary, update the names for the new splits.
 
 Once you duplicate a split, you will need to manually readjust allocations and priorities.
 
 ## Activate/Deactivate a split
 
-Select the split(s) you'd like to activate or deactivate and click **Actions \> Activate Selected** or **Actions \> Deactivate Selected**.
+Select the split(s) you'd like to activate or deactivate and select **Actions \> Activate Selected** or **Actions \> Deactivate Selected**.
 
 When you activate a split:
 
@@ -38,19 +37,19 @@ For more information, see [Create an Augmented Line Item](create-an-augmented-li
 
 ## Delete a split
 
-Select the split(s) you'd like to activate or deactivate and click **Actions \> Delete Selected**.
+Select the split(s) you'd like to activate or deactivate and select **Actions \> Delete Selected**.
 
 > [!NOTE]
 > You cannot recreate a deleted split. Deleted splits will still appear in reporting.
 
 ## Remove all splits
 
-Select the split(s) you'd like to activate or deactivate and click **Actions \> Remove All Splits**.
+Select the split(s) you'd like to activate or deactivate and select **Actions \> Remove All Splits**.
 
 > [!NOTE]
 > You cannot recreate a deleted split. Deleted splits will still appear in reporting.
 
-## Related topic
+## Related topics
 
 - [Configure a Programmable Split](configure-a-programmable-split.md)
 - [Understanding Splits](understanding-splits.md)

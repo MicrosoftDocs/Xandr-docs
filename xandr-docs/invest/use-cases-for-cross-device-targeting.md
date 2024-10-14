@@ -4,16 +4,15 @@ description: Learn how cross-device targeting and measurement can provide better
 ms.date: 10/28/2023
 ---
 
-
 # Microsoft Invest  - Use cases for cross-device targeting and measurement
 
 Cross-device targeting and measurement can effectively address several key goals for advertisers, including per-user frequency capping, expanding an ad's reach to users who favor different devices, and attributing conversions that take place on a different device from the initial ad view.
 
-## Frequency capping per consumer, across devices
+## Cap frequency per consumer across devices
 
 You don't want your customers to feel pestered or fatigued by seeing the same ad everywhere they go. By enabling cross-device targeting, you can set a frequency cap for how many times a person sees an ad on their mobile device, desktop device, and tablet. For example, if you set your ad frequency to twice a day and a consumer already saw it twice on a mobile device, the ad will not appear on a tablet or desktop for that later in the day.
 
-## Extending audience reach to new devices
+## Extend audience reach to new devices
 
 Your users or customers might be clustered on one type of device: for example, you might currently have primarily mobile users, but want to take advantage of higher conversion rates associated with desktop users. Cross-device targeting broadens your reach by allowing you to reach the same users on more devices. For example, if conversion rates are higher for your product line on desktop, being able to target your mobile users when they move to desktop can boost your conversion rates.
 

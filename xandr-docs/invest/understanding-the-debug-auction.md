@@ -1,15 +1,14 @@
 ---
-title: Microsoft Invest - Understanding the Debug Auction
+title: Microsoft Invest - Understand the Debug Auction
 description: Learn how to run a debug auction and how to read the output you receive. This page also runs you through steps to interpret the debug auction log and the possible debug auction result. 
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Understanding the debug auction
+# Microsoft Invest - Understand the debug auction
 
 To understand what is happening behind the scenes during an auction, you can run a debug auction. This page explains how to run a debug auction and how to read the output you receive.
 
-## Running a debug auction
+## Run a debug auction
 
 A debug auction simulates a real auction without actually logging or serving anything and shows the results in your browser. The log shows the impression bus communicating with all active bidders (including Microsoft Advertising) and then shows the member-specific decisioning.
 
@@ -18,19 +17,19 @@ A debug auction can be run using the following calls:
 > [!NOTE]
 > All debug auction and browser cookie override calls must use secure https protocols. Requests made using http will not generate valid results.
 
-**Production/Beta environment:**
+### Production/Beta environment
 
 ``` 
 https://ib.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Client-Testing environment:**
+### Client-testing environment
 
 ``` 
 https://ib-test.adnxs.com/tt?id=[TAG_ID]&size=[WIDTH]x[HEIGHT]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASSWORD] 
 ```
 
-**Video creatives:**
+### Video creatives
 
 Make sure to use a **ptv** tag instead of a **tt** tag while running a debug auction for video creatives.
 
@@ -71,11 +70,11 @@ https://ib.adnxs.com/ptv?id=[TAG_ID]&debug_member=[BUYER_MEMBER_ID]&dongle=[PASS
 | DMA | Overrides a cookie's current Designated Market Area (DMA) geo code with whatever is passed as a value. For example: "DMA=501". A DMA divides geographical regions by their television and radio markets. See [here](https://developers.google.com/google-ads/api/data/geotargets) for info on how to obtain a region's DMA code. |
 
 > [!NOTE]
-> If you are trying to spoof a particular region or city, you must include the most general to most specific geographically. For city targeting, you need to include the country, region (state), and city. For example:` &country=US&region=NY&city=New York`. Remember to type out the full city name.
+> If you are trying to spoof a particular region or city, you must include the most general to most specific geographically. For city targeting, you need to include the country, region (state), and city. For example: `&country=US&region=NY&city=New York`. Remember to type out the full city name.
 
 ## Example
 
-``` 
+```
 https://ib.adnxs.com/tt?id=3457&debug_member=999&dongle=MyDongle 
 https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&referrer=https://www.appnexus.com 
 ```
@@ -92,7 +91,7 @@ https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&r
 When debugging a particular ad campaign, it may help that your browser's cookie contains or excludes the specific user criteria being targeting (e.g. country or segment). Please see the below table for information on how to view/modify your cookie.
 
 > [!IMPORTANT]
->If using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member. You can click on the **Debug** button on any placement and to see your member ID and dongle in the querystring.
+>If using the cookie viewer, you must include your member ID and dongle. This ensures you will only see the segments that belong to your member. You can select the **Debug** button on any placement and to see your member ID and dongle in the querystring.
 
 | Action | URL |
 |--|--|
@@ -100,7 +99,7 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 | Add/remove yourself to/from segments | [Add to Segment](https://ib.adnxs.com/seg?add=SEGMENT_ID) <br> [Remove from Segment](https://ib.adnxs.com/seg?remove=SEGMENT_ID) <br>where SEGMENT_ID is the ID of the targeted segment |
 | Override cookie geography data | [Override cookie geography data](https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTALwhere)Lwhere MEMBER_ID is your member ID, DONGLE is your member-specific dongle, COUNTRY is the targeted country code, REGION is the targeted region code, DMA is the targeted numeric metropolitan code, CITY is the targeted city name, and POSTAL is the targeted postal code (Note that to set city geo, you must set country, region in addition.) |
 
-## Interpreting the debug auction log
+## Interpret the debug auction log
 
 - This is a sample debug log run by an Ad Network for a placement that it exposed for reselling.
 - This particular debug log was run in a deprecated sandbox environment, so URLs are slightly different than they would be in the production server.
@@ -152,7 +151,7 @@ Finally, we show the highest net bid, and the member and creative that would hav
 | PSA | The auction did not have a winner, and a PSA was shown in place of an ad | PSA |
 | Default | The auction did not have a winner, and a default creative was shown in place of an ad | Default |
 
-## Quick reference: debug auction data
+## Quick reference: Debug auction data
 
 | Debug Data | Visible to Sellers and in Direct Auctions | Visible to RTB Buyers |
 |--|--|--|
@@ -233,7 +232,7 @@ Finally, we show the highest net bid, and the member and creative that would hav
 | Visibility Profile ID | Yes | Yes |
 | Winning bid | Yes | Yes |
 
-## Running a test auction
+## Run a test auction
 
 In addition to debug auctions, which simulate real auctions without logging or serving ads, you can also run a test auction. Test auctions are designed to allow clients to test if their ads are being delivered as expected and verify that everything is configured correctly.
 
@@ -241,7 +240,7 @@ Like a debug auction, in a test auction Microsoft Advertising does not transact 
 
 To run a test auction, add the `test=1` parameter to an ad call; for example:
 
-``` 
+```
 https://ib.adnxs.com/tt?id=1234&test=1 
 ```
 

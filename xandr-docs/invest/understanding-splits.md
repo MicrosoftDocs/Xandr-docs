@@ -1,15 +1,15 @@
 ---
-title: Microsoft Invest - Understanding Splits
+title: Microsoft Invest - Understand Splits
 description: In this article, learn what a split is in advertising, how to create a split, and how to optimize it for highly effective ad campaigns.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Understanding splits
+# Microsoft Invest - Understand splits
 
 > [!NOTE]
 > This page explains what splits are and how they work. For step-by-step instructions on creating a split, see [Configure a Programmable Split](configure-a-programmable-split.md).
 
-## What is a split?
+## Split
 
 When you create a [line item](create-an-augmented-line-item-ali.md), you specify the inventory you'd like to target, the budget you'd like to spend over the line item's flight, how you want to track revenue, and how to use Microsoft Advertising optimization. If you choose, you can also split up the line item inventory with **programmable splits**, which you can use to:
 

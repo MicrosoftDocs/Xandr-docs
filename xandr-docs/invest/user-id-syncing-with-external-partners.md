@@ -10,7 +10,7 @@ This document describes the user ID syncing that Microsoft Advertising initiates
 
 **Asynchronous Usersync Pixels**: We've updated how usersync pixels are fired from publishers' pages to increase user match rates without affecting page load times. For more detailed information about this change, see [Asynchronous Usersync Pixels](./asynchronous-usersync-pixels.md).
 
-## Why we sync user IDs with our external partners
+## Sync user IDs with our external partners
 
 There are three kinds of platform partners with whom we need to sync user IDs: supply partners, demand partners, and data providers. To sync user IDs, we use "usersync pixels."
 
@@ -35,7 +35,7 @@ The only information collected with usersync pixels is a user ID. We do not use 
 We believe collecting this information benefits all members. Usersyncing enhances the pool of available inventory for buyers, helps monetize inventory for sellers, and generally lifts all boats. If you would like to limit usersyncing, you can turn it off for Supply Partners, Demand Partners, or Data Providers in the Publisher details under **Advanced** >  **User ID Syncing**. To limit
 specific ad technology providers from appearing on your digital property, create an ad quality rule at the Publisher level and ban each provider under **Ad Profile** > **Ad Servers**.
 
-## How we sync with Usersync pixels
+## Sync with usersync pixels
 
 When we see a user with no Microsoft Advertising ID (whether in the Microsoft Advertising browser cookie or passed to us in an ad call), we think of this as "the first time we've seen that user." This may be because we really never have seen them before, because they cleared their cookies, or because their browser doesn't accept third-party cookies.
 

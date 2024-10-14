@@ -1,15 +1,14 @@
 ---
-title: Microsoft Invest - Understanding Your Invoice
+title: Microsoft Invest - Understand Your Invoice
 description: This page describes the types of invoices generated, how they look, and what are the different fields present inside the invoice.
 ms.date: 10/28/2023
 ---
 
-
-# Microsoft Invest - Understanding your invoice
+# Microsoft Invest - Understand your invoice
 
 Annotated descriptions of the contents of your Microsoft Advertising invoices.
 
-## Understanding your invoice
+## Understand your invoice
 
 All members who buy inventory through one of the Microsoft Advertising Digital Platform UI products will receive an invoice every month indicating the amount they have spent. There are several types of invoices; this page explains each one.
 
@@ -41,7 +40,7 @@ Your invoice lists the amount you have spent on Microsoft Advertising's platform
      > [!NOTE]
      > To avoid being charged finance fees on overdue balances, be sure to make payments on time. To review how Microsoft Advertising calculates finance fees, see [Billing FAQ](billing-faq.md). Your finance fee amount is specified in the Payments; Payment Obligations section of your Microsoft Advertising Master Services Agreement.
 
-1. **Billing Start / Billing End Date** - The start and end date of the activity period covered in this invoice (including time zone). The time zone reflects what you use to tie out to reporting.
+1. **Billing Start/Billing End Date** - The start and end date of the activity period covered in this invoice (including time zone). The time zone reflects what you use to tie out to reporting.
 
 1. **Description of Charges** - An itemized list of the fees and charges for which you are being billed. This list may vary depending on your activity for the month. For information on how to reconcile these charges with your billing reports, see [Reconciling Your Invoice with Reporting](reconciling-your-invoice-with-reporting.md). Below are examples of some of these charges with descriptions:
     1. **Console Service Fee** - Monthly charge for access to our platform. This charge can be found in your Service Agreement.
@@ -75,7 +74,7 @@ Your invoice lists the amount you have spent on Microsoft Advertising's platform
 
 1. **Payment Instructions** - Information to help you submit your payment via check or wire. To ensure your wire payment is applied correctly, submit it to the account listed on your statement. For more information, see [Payment to Microsoft Advertising](payment-to-xandr.md).
 
-## Advertiser-Specific, Insertion order-specific, and billing Period-specific invoices
+## Advertiser-specific, Insertion order-specific, and billing period-specific invoices
 
 You have the option to receive advertiser-, insertion order-, or billing period-specific invoices (e.g., to separate specific costs and fees for an advertiser's billing department). To opt into receiving these more specific invoices, contact your Microsoft Advertising representative.
 
@@ -110,7 +109,7 @@ If you opt into receiving **billing period-specific invoicing**, you will receiv
 
 If you have more than one member account, you can choose to receive a consolidated invoice for the buying activity across of your member accounts. For more details on this feature, contact your Account Manager.
 
-## Netting Statement
+## Understand the netting statement
 
 If you both buy and sell inventory with Microsoft Advertising, you can opt into having Microsoft Advertising “net” this activity rather than receiving both monthly invoices and payments from Microsoft Advertising. The netting statement document lists the amount you have spent as a buyer and the amount of revenue you have earned as a seller. Microsoft Advertising then deducts the amount that you owe as a buyer based on your buy-side payment terms from the revenue you have earned based on your sell-side payment terms in order to determine the net amount that you will owe or be paid by Microsoft Advertising. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 

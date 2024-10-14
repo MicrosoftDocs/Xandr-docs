@@ -30,7 +30,7 @@ Creating a mobile campaign involves defining:
 
 ## Step 1. Start a new campaign
 
-On the **Advertiser Details** screen, click **Create New** > **Campaign**.
+On the **Advertiser Details** screen, select **Create New** > **Campaign**.
 
 You can find **Create New** > **Campaign** on the insertion order, line item, and campaign screens under the advertiser as well.
 
@@ -38,7 +38,7 @@ This opens the initial **Create New Campaign** screen.
 
 ## Step 2. Select the parent line item
 
-In the **Select a Line Item** section, select the line item under which you want to create your campaign and then click **Continue**. If you are creating your campaign directly from a line item or there is only one line item associated with the advertiser, the line item is selected by default.
+In the **Select a Line Item** section, select the line item under which you want to create your campaign and then select **Continue**. If you are creating your campaign directly from a line item or there is only one line item associated with the advertiser, the line item is selected by default.
 
 You can use the search field to find a particular line item by name or ID. Also, all active and inactive line items are listed by default, but you can use the filter to the right of the search field to show just active or inactive line items.
 
@@ -46,7 +46,7 @@ You can use the search field to find a particular line item by name or ID. Also,
 
 In the **Campaign Type** section, select **Buy direct/third-party inventory**. This will reveal the full workflow for setting up a campaign.
 
-You can expand or collapse each section of the screen as you like. To expand or collapse all sections at once, click the **Expand All** or **Collapse All** link in the upper right.
+You can expand or collapse each section of the screen as you like. To expand or collapse all sections at once, select the **Expand All** or **Collapse All** link in the upper right.
 
 > [!NOTE]
 > Changing the campaign type will reset your workflow and available targeting options.
@@ -93,7 +93,7 @@ To run the campaign on inventory from other members of the Microsoft Advertising
 
 Post-view conversions cannot currently be tracked across Safari mobile browsers or in apps. If you use the "Optimize to a predicted CPA goal" strategy, please do so only for post-click scenarios. For more information about why this is so, see [Technical Limitations of Mobile Buying](technical-limitations-of-mobile-buying.md).
 
-Post-click conversion tracking works in mobile browsers just like it does in web browsers. In mobile apps, however, post-click conversions can be tracked only when the user performs the action (the conversion) from an app's built-in web view. After clicking an ad in an app, if the user converts in a separate mobile browser (after having closed the app), the correlation to the click in the app cannot be tracked.
+Post-click conversion tracking works in mobile browsers just like it does in web browsers. In mobile apps, however, post-click conversions can be tracked only when the user performs the action (the conversion) from an app's built-in web view. After selecting an ad in an app, if the user converts in a separate mobile browser (after having closed the app), the correlation to the click in the app cannot be tracked.
 
 When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, set a **Performance Goal** on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
 
@@ -169,7 +169,7 @@ For mobile web campaigns, checking **Show to users without cookies** is currentl
 
 If your buying strategy uses the Microsoft Advertising optimization engine, you can adjust **Optimization Levers** to influence how optimization works for your campaign, for example, how much you bid during the Learn phase, how many success events (clicks or conversions) it takes to move from the Learn phase to the Optimized phase, as well as whether you want to optimize to the campaign bidding strategy before optimizing to the line item booked revenue.
 
-To access optimization levers, click the **Edit** button under **Buying Strategies** > **OTHER OPTIONS**.
+To access optimization levers, select the **Edit** button under **Buying Strategies** > **OTHER OPTIONS**.
 
 If you do not have access to optimization levers and are interested in learning more about about them, please contact your Microsoft Advertising account representative.
 
@@ -207,7 +207,7 @@ In the **Associated Creatives** section, you can select a **Creative Rotation** 
 - **Auto-optimize creative weight**: When this option is chosen, 75% of delivery is allocated to the creative with the highest click-through rate; all remaining creatives of the same size receive equal allocations of the remaining 25% of overall delivery.
 - **Manually weight creatives**: By selecting this option, you will be able to manually set a weight (between 0 and 1000).
 
-Click **Edit** and select the creatives that you want to run for the campaign. Also, if you want to define a dynamic landing page to be used by multiple creatives associated to the campaign, enter the **Landing Page URL** and then make sure the creatives are set up to use a dynamic landing page. Note that you can set a dynamic landing page at the line item level as well. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
+Select **Edit** and select the creatives that you want to run for the campaign. Also, if you want to define a dynamic landing page to be used by multiple creatives associated to the campaign, enter the **Landing Page URL** and then make sure the creatives are set up to use a dynamic landing page. Note that you can set a dynamic landing page at the line item level as well. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
 
 ## Step 11. Enter comments
 
@@ -223,18 +223,18 @@ If you owe serving fees to third parties for services such as creative hosting o
 
 To add a new serving fee:
 
-1. Click the **Add Fee** button.
+1. Select the **Add Fee** button.
 2. In the **Broker** field, select the relevant broker or create a new broker.
 3. In the **Description** field, enter details about the serving fee.
 4. Select the **Fee Type** (CPM or Cost Share) and enter the relevant **Fee Value** (dollar amount for CPM, percentage for Revenue Share).
-5. Click **Add**.
+5. Select **Add**.
 
 > [!IMPORTANT]
 > Per broker, you can add no more than one CPM serving fee and one Cost Share serving fee.
 
 ## Step 13. Review and save your campaign
 
-Confirm that the campaign details are correct and then click the **Save** button to finish adding the campaign to Microsoft Advertising.
+Confirm that the campaign details are correct and then select the **Save** button to finish adding the campaign to Microsoft Advertising.
 
 ## Step 14. Complete peer approval
 
@@ -247,7 +247,7 @@ Confirm that the campaign details are correct and then click the **Save** button
 
 If your campaigns use the peer approval feature, in order to switch a campaign's status from Inactive to Active, you will need peer approval from another user. In the **Create New Campaign** screen in the **Approved By** field, you will see a message alerting you to the need for peer approval and will be unable to save the campaign in an active state.
 
-To approve the campaign, another user from your team must log in, go to the **Campaigns** screen, select the desired campaign and click **Edit**. This will open the **Edit Campaign** screen. On the **Edit Campaign** screen, the alternate user must check the **Approved By** checkbox. Once this step is completed, the campaign can be set to **Active** by any user on your team.
+To approve the campaign, another user from your team must log in, go to the **Campaigns** screen, select the desired campaign and select **Edit**. This will open the **Edit Campaign** screen. On the **Edit Campaign** screen, the alternate user must check the **Approved By** checkbox. Once this step is completed, the campaign can be set to **Active** by any user on your team.
 
 ## Related topics
 

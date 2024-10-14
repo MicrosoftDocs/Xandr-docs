@@ -6,11 +6,11 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Buy GumGum inventory
 
-You can enhance user engagement via [GumGum "in-image" or "in-screen" units](https://www.gumgum.com/image-recognition/in-image-advertising), which are available programmatically through Microsoft Advertising. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
+You can enhance user engagement via [GumGum](https://www.gumgum.com) "in-image" or "in-screen" units, which are available programmatically through Microsoft Advertising. GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.
 
 ## Upload a third-party creative
 
-Navigate to the **Creative Manager** screen. Click on the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
+Navigate to the **Creative Manager** screen. Select the **Create New** button and select your creative type from the menu. In the **New Creative** dialog box select the following values:
 
 - **Type : Third Party Creative**
 - **Creative Format**: **Third-Party Tag**
@@ -51,4 +51,4 @@ Enter the creative ad HTML code into the field in the bottom-half panel and sele
 
 ### Step 3: Preview
 
-Click **preview**.
+Select **preview**.

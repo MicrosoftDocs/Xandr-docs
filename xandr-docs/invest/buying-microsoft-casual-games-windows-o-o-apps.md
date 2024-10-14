@@ -176,18 +176,18 @@ To target Microsoft Casual Games inventory when setting up a line item or campai
 
 1. In the **Device and Supply Type** section, target all device types (Desktop & Laptops, Tablets, and Phones).
 1. In the **Inventory Quality** section, select **Serve on any inventory**.
-1. In the Inventory section, click **Edit**.
+1. In the Inventory section, select **Edit**.
 1. On the **3rd Party Inventory**, search **Microsoft Advertising Exchange (280)**.
 1. On the **Search for Publishers**, select **Microsoft Casual Games (679569)**.
-1. Click **Add**.
+1. Select **Add**.
 
 To target Microsoft Casual Games inventory when setting up a Augmented Line Item:
 
 1. In the **Basic Setup** section, select **Open Exchange**.
 1. In the **Programmable Splits** section, create **1 new split**.
 1. On the new **Split 1** line, select the **Pencil edit** icon next to the name.
-1. In the Split panel, click the **Select Condition** drop down and enable **Publisher**.
-1. In the **Publisher** text field, enter **679569** and click the **Add** button.
+1. In the Split panel, select the **Select Condition** drop down and enable **Publisher**.
+1. In the **Publisher** text field, enter **679569** and select the **Add** button.
 
 ### Target packages
 
@@ -209,9 +209,9 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](get-de
     | 6341 | Run of Microsoft Casual Games Apps Package -- Microsoft Bingo                |
     | 6342 | Run of Microsoft Casual Games Apps Package -- Microsoft Jackpot              |
 
-1. Click **Add to Cart**.
+1. Select **Add to Cart**.
 
-1. Click **Get Deals** to generate the Deal ID to target.
+1. Select **Get Deals** to generate the Deal ID to target.
 
      For more information, see [Get Deals from Seller Packages](get-deals-from-seller-packages.md).
 

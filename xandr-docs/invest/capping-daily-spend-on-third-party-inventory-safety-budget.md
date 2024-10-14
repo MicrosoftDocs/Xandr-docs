@@ -42,4 +42,4 @@ Select users who have the authority and knowledge to make changes to budget deta
 
 ## Save your settings
 
-Click **Save** at the bottom of the page.
+Select **Save** at the bottom of the page.

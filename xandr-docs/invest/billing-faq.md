@@ -36,7 +36,7 @@ With the exception of the first week of every month during the financial close, 
 
 ### How can I check my credit status?
 
-To view the credit status of your member and parent account, click **Billing** under your member name (upper right). The **Credit Status** tab will contain your outstanding balance and credit. The credit you have remaining is associated with your parent account. Your account may have more than one member associated with it. The credit limit is shared across all members under the parent account.
+To view the credit status of your member and parent account, select **Billing** under your member name (upper right). The **Credit Status** tab will contain your outstanding balance and credit. The credit you have remaining is associated with your parent account. Your account may have more than one member associated with it. The credit limit is shared across all members under the parent account.
 
 ## Invoices
 

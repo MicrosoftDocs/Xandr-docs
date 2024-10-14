@@ -11,8 +11,8 @@ You can assign specific creatives for a split to deliver.
 
 1. Assign creatives to the line item.
 1. In the **Split Details** view, select **Use Creatives**.
-1. In the **Split Edit** pane, click on the **Behavior** tab and select the appropriate creatives.
-1. Click **Apply**.
+1. In the **Split Edit** pane, select on the **Behavior** tab and select the appropriate creatives.
+1. Select **Apply**.
 
 - [Add a creative](add-a-creative.md)
 - [Add Creatives in Bulk](add-creatives-in-bulk.md)

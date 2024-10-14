@@ -19,7 +19,7 @@ This page provides specific information for **Spotify Audio** which includes, cr
 
 ## Add an audio creative
 
-On the **Creative Manager** screen, click the **Create New** button, then select **Audio**.
+On the **Creative Manager** screen, select the **Create New** button, then select **Audio**.
 
 Follow the steps outlined in [Add a Creative](./add-a-creative.md) and [Add Creatives in Bulk](./add-creatives-in-bulk.md).
 

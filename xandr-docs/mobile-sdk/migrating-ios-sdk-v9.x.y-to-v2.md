@@ -90,7 +90,7 @@ Once you've installed Carthage on your computer, follow these steps:
 
     - Navigate to **Target** → **General** → **Embedded Binaries**.
     - Click the `+` icon and sadd the `AppNexusSDKDynamic.xcframework` and `OMSDK_AppNexus.xcframework`.
-    
+
 1. If you are using Carthage for an application, select **Embed & Sign**. Otherwise select **Do Not Embed**.
   
 ## XCFramework

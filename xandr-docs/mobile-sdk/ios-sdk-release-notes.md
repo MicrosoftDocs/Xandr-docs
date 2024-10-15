@@ -9,6 +9,13 @@ ms.custom: ios-sdk
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.1.1
+
+### Improvement/Bug Fixes
+
+- 8213496: Resolved issues causing crashes in *AdFetcher* when utilizing *MultiAdRequest*.
+- 8235734: Fixed an issue where both `adDidReceivedAd` and `adDidReceiveNativeAd` callbacks were triggered for *Banner Native* ads.
+
 ## 9.1.0
 
 ### New feature

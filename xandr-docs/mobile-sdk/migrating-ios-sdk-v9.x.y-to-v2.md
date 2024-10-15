@@ -95,7 +95,7 @@ Once you've installed Carthage on your computer, follow these steps:
   
 ## XCFramework
 
-Download the latest iOS SDK v9.1.0 from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.1.0/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
+Download the latest iOS SDK v9.1.0 from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.1.1/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
 
 | Framework | Description |
 |---|---|

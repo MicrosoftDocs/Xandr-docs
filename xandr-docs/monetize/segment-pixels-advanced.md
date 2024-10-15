@@ -1,9 +1,8 @@
 ---
 title: Microsoft Monetize - Segment Pixels (Advanced)
 description: Learn what segment pixels are required by advertisers. This page covers description on secure pixels that are placed in HTTP pages, JavaScript pixels and conversion pixels.
-ms.date: 10/28/2023
+ms.date: 10/09/2024
 ---
-
 
 # Microsoft Monetize - Segment pixels (Advanced)
 
@@ -80,13 +79,13 @@ These parameters can be auto-added through the UI, in the pixel export screen.
 
 ## Examples
 
-**Adding segment pixels using segment ID**
+### Add segment pixels using segment ID
 
 ``` 
 <img src="media/seg?add=1,2,4" width=1 height=1/> 
 ```
 
-**Segment pixels using segment code**
+### Segment pixels using segment code
 
 If using codes, your member id is required.
 
@@ -94,18 +93,44 @@ If using codes, your member id is required.
 <img src="media/seg?add_code=auto1,travel5&member=10" width=1 height=1/> 
 ```
 
-**Adding and removing segments in one call**
+### Add and remove segments in one call
 
 ``` 
 <img src="media/seg?add=1,2,4&remove=3" width=1 height=1/> 
 ```
 
-**Redirect to another URL/Pixel**
+### Redirect to another URL/Pixel
 
 ``` 
 <img src="media/pixel?id=1243" width=1 height=1 /> 
 ```
 
-## Targeting segment values
+## Target segment values
 
 This is how to target values in segments: - When you create a line item or campaign, click the **Targeting** tab. - In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.
+
+## Privacy considerations
+
+To comply with privacy regulations, the inclusion of privacy signals in URL parameters is mandatory in certain geographical regions, such as the European Economic Area (EEA). Clients must provide either TCF parameters or the consent parameter to ensure personal information is processed correctly, allowing services to function as intended.
+
+When working with CMPs that support TCF signals, clients must include the parameters `gdpr=1` (when GDPR applies) and `gdpr_consent=<CONSENT-STRING>` in the respective URLs. These values must be dynamically set based on the customer's privacy choices. If TCF signals are not available, the consent parameter must be used, where `1` indicates customer consent and `0` indicates consent denial.
+
+It is the client's responsibility to ensure that these parameters reflect the customer's privacy preferences. Failure to provide the correct signals will prevent the processing of the request and might impact service functionality.
+
+Example `img` tag with TCF consent parameters:
+
+```
+<img src="https://ib.adnxs.com/seg?add=1234&t=2&gdpr=1&gdpr_consent=XXX" width=1 height=1></img>
+```
+
+Example `img` tag with binary consent parameters for denied consent:
+
+``` 
+<img src="https://ib.adnxs.com/seg?add=1234&t=2&consent=0" width=1 height=1></img>
+```
+
+Example `img` tag with binary consent parameters for granted consent:
+
+```
+<img src="https://ib.adnxs.com/seg?add=1234&t=2&consent=1" width=1 height=1></img>
+```

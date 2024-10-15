@@ -16,7 +16,7 @@ Then select a buyer.
 
 ## View buyer contact info and description
 
-View information the buyer has provided, including the main contact's name, phone number, and email address, and a description of their business. You can contact the buyer directly in Curate by sending a message within the Activity Stream. For more information about the Activity Stream, see [Communicate with the Buyer](partnership-details-screen-seller-view.md#communicate-with-the-buyer).
+View information the buyer has provided, including the main contact's name, phone number, and email address, and a description of their business. You can contact the buyer directly in Curate by sending a message within the Activity Stream. For more information about the Activity Stream, see [Communicate with Buyer](partnership-details-screen-seller-view.md#communicate-with-buyer).
 
 > [!IMPORTANT]
 > If the buyer has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.
@@ -59,7 +59,7 @@ Select the **Notifications** tab in the **Activity Stream** to view system messa
 
 ## View partner settings
 
-In the **Partner Controls** tab you can view and manage the settings you have set for the buyer. This information gives you insight into your ability to transact with the buyer on Curate. Contact the seller [Communicate with the Buyer](partnership-details-screen-seller-view.md#communicate-with-the-buyer) to request changes to your eligibility or inventory trust.
+In the **Partner Controls** tab you can view and manage the settings you have set for the buyer. This information gives you insight into your ability to transact with the buyer on Curate. Contact the seller [Communicate with the Buyer](partnership-details-screen-seller-view.md#communicate-with-buyer) to request changes to your eligibility or inventory trust.
 
 ## View your settings for buyer
 

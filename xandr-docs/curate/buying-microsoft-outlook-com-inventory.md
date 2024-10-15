@@ -43,10 +43,10 @@ For information on general inventory targeting, see [Buy Microsoft Inventory](bu
 
 To target Outlook.com inventory,
 
-1. On the **Specific Domains** tab, click **Include**.
+1. On the **Specific Domains** tab, select **Include**.
 1. Enter **Outlook.com**.
-1. Click **Add Domains** to add it to the included domains list.
-1. Click **Add**.
+1. Select **Add Domains** to add it to the included domains list.
+1. Select **Add**.
 
 For instructions on how to target the Outlook app, see [Buy Microsoft Windows App Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
 

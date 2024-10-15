@@ -3,7 +3,7 @@ title: Microsoft Curate - Create Event Code from the UI
 description: Generate event code using universal pixel UI, instructing web developer without punctuation constraints.
 ---
 
-# Microsoft Curate - Create event code from the UI
+# Microsoft Curate - Create event code from UI
 
 You can use the universal pixel UI to generate event code and send it to your web developer.
 
@@ -20,3 +20,4 @@ To create and export universal pixel script code containing your desired events 
 - [Create Event Code Manually](create-event-code-manually.md)
 - [Standard Events and Parameters](standard-events-and-parameters.md)
 - [Create Custom Events and Parameters](create-custom-events-and-parameters.md)
+  

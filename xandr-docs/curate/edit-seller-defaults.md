@@ -23,10 +23,10 @@ Microsoft Advertising Direct is a group of 100+ sellers we have identified as mo
 
 ### Step 1. Get started
 
-Go to the **Partner Center** screen (**Admin** \> **Partner Center**) and click on a seller's name:
+Go to the **Partner Center** screen (**Admin** \> **Partner Center**) and select a seller's name:
 
-- To edit a single seller's settings, click **Edit** in the **My Settings for {Seller Name}** section to display seller settings.
-- To edit multiple sellers, select the checkbox of the sellers you want to edit and click **Edit Selected Sellers** to display the **Edit Partner Controls** section. Any changes you make will be applied to all checked sellers.
+- To edit a single seller's settings, select **Edit** in the **My Settings for {Seller Name}** section to display seller settings.
+- To edit multiple sellers, select the checkbox of the sellers you want to edit and select **Edit Selected Sellers** to display the **Edit Partner Controls** section. Any changes you make will be applied to all checked sellers.
 
 ### Step 2. Update settings
 
@@ -54,7 +54,7 @@ To apply seller defaults (see [Set Seller Defaults](set-seller-defaults.md)):
 
 ## Step 3. Save your changes
 
-When all changes have been made, click **Apply**.
+When all changes have been made, select **Apply**.
 
 ## Related topics
 

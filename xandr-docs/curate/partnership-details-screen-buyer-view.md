@@ -16,7 +16,7 @@ On the Partnership Details screen you can review and manage your relationship wi
 
 ## View seller contact info and description
 
-Select a seller and select **Show Profile** to view profile information the seller has provided, including the main contact's name, phone number, email address, and a description of their business. You can contact the seller directly by sending a message within the **Activity Stream**. For more information about the **Activity Stream**, see [Communicate with the Seller](partnership-details-screen-buyer-view.md#communicate-with-the-seller).
+Select a seller and select **Show Profile** to view profile information the seller has provided, including the main contact's name, phone number, email address, and a description of their business. You can contact the seller directly by sending a message within the **Activity Stream**. For more information about the **Activity Stream**, see [Communicate with the Seller](partnership-details-screen-buyer-view.md#communicate-with-seller).
 
 > [!IMPORTANT]
 > If the seller has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.
@@ -74,7 +74,7 @@ and past deals from the seller. Each deal displays with additional details, see 
 
 ## Edit a deal
 
-If you would like to make changes to a deal, send the seller a message to discuss your needs (see [Communicate with the Seller](partnership-details-screen-buyer-view.md#communicate-with-the-seller)). The seller can then edit the deal.
+If you would like to make changes to a deal, send the seller a message to discuss your needs (see [Communicate with the Seller](partnership-details-screen-buyer-view.md#communicate-with-seller)). The seller can then edit the deal.
 
 ## Report on deals
 

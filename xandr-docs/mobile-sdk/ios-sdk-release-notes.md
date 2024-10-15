@@ -13,8 +13,8 @@ ms.custom: ios-sdk
 
 ### Improvement/Bug Fixes
 
-- 8213496: Resolved issues causing crashes in *AdFetcher* when utilizing *MultiAdRequest*.
-- 8235734: Fixed an issue where both `adDidReceivedAd` and `adDidReceiveNativeAd` callbacks were triggered for *Banner Native* ads.
+- 8213496: Resolved issues causing crashes in AdFetcher when utilizing MultiAdRequest.
+- 8235734: Fixed an issue where both adDidReceivedAd and adDidReceiveNativeAd callbacks were triggered for *Banner Native* ads.
 
 ## 9.1.0
 

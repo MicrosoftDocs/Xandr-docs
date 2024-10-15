@@ -27,7 +27,7 @@ When uploading a creative, you can choose to add users to a segment "on-view" or
 
 *Requires API access and [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 
-### Method 3: Use the batch segment service to upload your own list of device IDs*
+### Method 3: Use batch segment service to upload your own list of device IDs*
 
 - If you have a list of device IDs gathered from your advertisers or external attribution tracking system, you can also add these to segments using the [Batch Segment Service](../digital-platform-api/batch-segment-service.md).
 - Be sure to use [`SEPARATOR5`](../digital-platform-api/legacy-bss-file-format.md) to designate that you will be uploading device IDs instead of the standard Microsoft Advertising user IDs.

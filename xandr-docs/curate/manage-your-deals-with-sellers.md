@@ -9,12 +9,12 @@ ms.date: 11/14/2023
 
 You can manage all deals you have with sellers on the **Deals** screen. You can view basic and advanced deal metrics, monitor each deal's health, and run detailed reports.
 
-You can also manage your deals with a specific seller on the Partner Details screen, see [Partnership Details Screen](partnership-details-screen-buyer-view.md) for more information.
+You can also manage your deals with a specific seller on the **Partner Details** screen, see [Partnership Details Screen](partnership-details-screen-buyer-view.md) for more information.
 
 > [!NOTE]
 > Information the user should notice even if skimmingNote: For information on setting deal preferences, declining deals, managing the status of deals, and assigning internal names (deal alias) to deals see [Control Your Deals with Sellers](control-your-deals-with-sellers.md).
 
-## Access the Deals screen
+## Access Deals screen
 
 To reach the **Deals** screen, select **Inventory** \> **Seller Deals**.
 

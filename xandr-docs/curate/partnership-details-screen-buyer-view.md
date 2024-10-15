@@ -21,7 +21,7 @@ Select a seller and select **Show Profile** to view profile information the sell
 > [!IMPORTANT]
 > If the seller has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.
 
-## View your performance on the seller's inventory
+## View your performance on seller's inventory
 
 select a seller to view statistics about how your ad campaigns are performing on the seller's inventory. These statistics update every 24 hours.
 
@@ -38,7 +38,7 @@ There is a data point for every day. Hover over a data point to see the date it 
 
 A table lists the seller's top publishers from whom you have purchased inventory, listed in order from most to least spend. This information tells you which of the seller's publishers you are performing best on.
 
-## Communicate with the seller
+## Communicate with seller
 
 In the **Activity Stream**, the Messages tab shows messages between you and the seller along with the number of days since the message was posted. You can use the **Activity Stream** to introduce yourself to a new seller, request changes to your eligibility, allowed payment types, and targeting access, or discuss why your targeting access isn't working for you.
 
@@ -50,11 +50,11 @@ In this section you can:
 
 Select the **Notifications** tab in the **Activity Stream** to view system messages.
 
-## View your settings for the seller
+## View seller settings
 
 The seller eligibility and inventory trust settings display in the **My Settings for {Seller Name}** section.
 
-## View the seller's settings for you
+## View seller's settings for you
 
 The eligibility (**My Eligibility**), **Allowed Payment Types**, and **Targeting Access** settings the seller has set for you display in the **{Seller Name} Settings for Me** section. The **Targeting Access** settings show you what the seller has exposed or hidden and include the following:
 
@@ -92,7 +92,7 @@ If you see a package in the **Package Marketplace** that interests you but needs
 
 If you are interested in the packaged inventory, you can generate deals between you and the seller. Select **Add to Cart** near the desired packages, then select **Get Deals** to create deals that you can target.
 
-## Target a deal from the Packages tab
+## Target a deal from Packages tab
 
 If you generated a deal from a package, your deal ID is displayed in the **Selected Packages** section, see [Get Deals from Seller Packages](../monetize/get-deals-from-seller-packages-rb5169-bkp.md) for more information.
 

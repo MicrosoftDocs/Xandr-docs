@@ -25,7 +25,7 @@ When you select a completed plan from the list in the main **Planning** screen, 
 | **Targeting Dimensions** shows your projected impressions filtered by the dimensions defined in the plan. | Provides a list of the projected top sellers and apps that match your inventory requirements, sortable by domain/app or seller. |
 | **Targeting Breakdown** visualizes an overview of the data in **Targeting Dimensions**, so you can quickly understand where drop-off is occurring, especially when your Total Estimated Reach is low. | Provides a list of the projected top sellers and apps that match your inventory requirements, sortable by domain/app or seller. |
 
-## Create/edit view
+## Create or edit view
 
 When you create or edit a plan, you have access to detailed interactive visualizations that analyze the factors in your projected line item performance and recommend inventory based on your settings. Changing the settings in the left pane lets you estimate the impact of your adjustments to budget, targeting, and other line item criteria.
 

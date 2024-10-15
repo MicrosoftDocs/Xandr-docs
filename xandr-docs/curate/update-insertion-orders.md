@@ -14,7 +14,7 @@ There are several actions you can take on existing insertion orders to update th
 
 You can edit an insertion order directly from the **Insertion Orders** screen. You can also edit insertion orders from the **Insertion Order Details** screen. Select either the **Edit** icon at the top of the screen or the **Edit** link in the **Details** section. (See [View Insertion Order Details](view-insertion-order-details.md) for more information on the **Details** screen.)
 
-## Activate or Deactivate an insertion order
+## Activate or deactivate an insertion order
 
 Check the box next to each insertion order that you want to activate or deactivate and select **Activate** or **Deactivate**.
 

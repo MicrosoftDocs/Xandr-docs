@@ -16,7 +16,7 @@ Navigate to the **Segments** screen **(Audiences > Segment Manager)**.
 
 Select the **+ New** button. This opens the **Create New Segment** window.
 
-## Step 2: Enter the segment pixel details
+## Step 2: Enter segment pixel details
 
 1. In the **Details** section, enter a name that communicates the purpose of the segment pixel.
 1. Select **+Advanced Options: Code** if you wish to enter a segment code. You may wish to refer to your segments by "codes" so they match your internal naming system. You can assign a code at the time of creation or afterwards. Codes are case sensitive, so if the code on the segment is lower case, then the code in your pixel querystring must also be lower case). Codes can include the following characters:  

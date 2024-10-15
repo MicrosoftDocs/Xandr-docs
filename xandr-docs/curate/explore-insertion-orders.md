@@ -17,7 +17,7 @@ Things you can do on this page include:
 - Drill down into line items to configure or troubleshoot
 - Create and edit insertion orders
 
-## Access the Insertion Orders screen
+## Access Insertion Orders screen
 
 To get to the **Insertion Orders** screen:
 

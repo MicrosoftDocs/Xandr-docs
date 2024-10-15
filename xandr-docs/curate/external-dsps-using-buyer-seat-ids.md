@@ -4,7 +4,6 @@ description: This page covers the Buyer Seat Migration Status reference table wh
 ms.date: 11/14/2023
 ---
 
-
 # Microsoft Curate - External DSPs using buyer seat IDs
 
 Not every buyer seat ID that you'll see when creating deals is currently eligible for deal creation. Before you create a custom deal with an external DSP using buyer seat IDs, you should check the Buyer Seat Migration Status reference table and communicate with the buyer to ensure you're using the correct IDs.

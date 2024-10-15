@@ -67,7 +67,7 @@ All of the examples below will use the same underlying "database", which contain
 
 You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/xandr/tiny-db.csv) the example in CSV format.
 
-## Filtering examples
+## Filter examples
 
 The examples in this section illustrate how data set sizes are affected by filtering. Filtering is useful for several reasons:
 

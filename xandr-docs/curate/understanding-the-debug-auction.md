@@ -3,7 +3,7 @@ title: Microsoft Curate - Understand the Debug Auction
 description: Learn how to run a debug auction and read the output you receive.
 ms.date: 11/16/2023
 ---
-# Microsoft Curate - Understand the debug auction
+# Microsoft Curate - Understand debug auction
 
 To understand what is happening behind the scenes during an auction, you can run a debug auction. This page explains how to run a debug auction and how to read the output you receive.
 
@@ -98,7 +98,7 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 | Add/remove yourself to/from segments | `https://ib.adnxs.com/seg?add=SEGMENT_ID<br>https://ib.adnxs.com/seg?remove=SEGMENT_ID` where `SEGMENT_ID` is the ID of the targeted segment                                                                                                                                                                                                                                                                                                                                                            |
 | Override cookie geography data       | `https://ib.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&country=COUNTRY&region=REGION&dma=DMA&city=CITY&postal=POSTAL` where `MEMBER_ID` is your member ID, `DONGLE` is your member-specific dongle, `COUNTRY` is the targeted country code, `REGION` is the targeted region code, `DMA` is the targeted numeric metropolitan code, `CITY` is the targeted city name, and `POSTAL` is the targeted postal code (note that to set city geo, you must set country, region in addition) |
 
-## Interpret the Debug Auction log
+## Interpret Debug Auction log
 
 - This is a sample debug log run by an Ad Network for a placement that it exposed for reselling.
 - This particular debug log was run in a deprecated sandbox environment, so URLs are slightly different than they would be in the production server.

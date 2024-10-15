@@ -105,9 +105,9 @@ Each domain or app in a list can have one of the following audit statuses:
     c. Select **Include subdomains** to include subdomains. For example, if you selected this option for "mydomain.com", you would also serve on its subdomains such as "mydomain.com/foo" and "foo.mydomain.com".
 1. Select **Create List**. The inventory list is created and displays in **Inventory Lists**.
 
-1. ## Export an inventory List
+## Export an inventory list
 
-1. Go to the **Inventory Lists** screen. Select **Inventory \> Inventory Lists**.
+1. Go to the **Inventory Lists** screen. Select **Inventory** \> **Inventory Lists**.
 1. Locate the list(s) you want to export.
 1. Select the checkbox next to the list that you want to export. (You can select up to five lists.)
 1. Select **Export List** from the **Actions** menu.

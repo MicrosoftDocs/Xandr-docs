@@ -33,13 +33,13 @@ You will need to create or have access to the following buy-side objects:
 
 From the **Advertiser Details** screen, you can create a curated deal line item from either the **Insertion Orders** screen or **Line Items** screen:
 
-### Insertion orders screen
+### Insertion Orders screen
 
 1. From the **Advertiser Details** screen, select **Insertion Orders** to view the advertiser's insertion orders.
 1. Select an insertion order from the list to view the **Insertion Order** details screen.
 1. In the **Line Items** section, select **New Deal Line Item**.
 
-### Line items screen
+### Line Items screen
 
 1. From the **Advertiser Details** screen, select **Line Items** to view the advertiser's line items.
 1. Select **New Deal Line Item**.
@@ -212,7 +212,7 @@ Select an allowlist you would like to apply to this line item. You may select fr
 
 Do not use (not supported for curated deal line items).
 
-## Targeting
+## Targeting options
 
 You can target curated deal line items in the same way you can target augmented line items. See [Buy-Side Targeting](buy-side-targeting.md) for detailed setup information on targeting. See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 
@@ -241,6 +241,6 @@ Enter any reporting labels if desired. Reporting labels let you associate a pers
 
 Enter any comments for this curated deal line item.
 
-## Save the curated deal line item
+## Save line item for curated deal
 
 Select **Save** to save the curated deal line item or **Save and Duplicate** to save the curated deal line item and duplicate the settings to a new line item.

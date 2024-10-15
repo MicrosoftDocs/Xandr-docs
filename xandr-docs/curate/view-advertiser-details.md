@@ -10,7 +10,7 @@ ms.date: 11/15/2023
 
 The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 
-## Access the Advertiser Details screen
+## Access Advertiser Details screen
 
 On the **Advertisers** screen, select the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
 

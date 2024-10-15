@@ -16,7 +16,7 @@ This page explains the technology behind our video viewability measurement.
 
 The Microsoft Advertising video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
 
-### The Microsoft Advertising Video Viewability Measurement
+### Microsoft Advertising Video Viewability Measurement
 
 To enable viewability measurement, Microsoft Advertising wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
 
@@ -138,10 +138,10 @@ No, your video creatives are enabled for viewability measurement by default.
 
 No, it will not. Microsoft Advertising will serve the viewability script where applicable and the VAST only version of the creative where VPAID is not allowed, to ensure maximum reach.
 
-### How can I optimize to more highly viewable inventory?
+### What can be done to optimize for more highly viewable inventory?
 
 Viewability measurement is included in the [Advertiser Video Analytics Report](../invest/advertiser-video-analytics-report.md) and [Member Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual tag/placement or site domain. This enables clients to update targeting to either include or exclude high or poor performing placements.
 
-### How does Microsoft Advertising viewability compare with other third party viewability vendors such as Integral Ad Science, and DoubleVerify?
+### What is the comparison of Microsoft Advertising viewability with third-party vendors like Integral Ad Science and DoubleVerify?
 
 The Microsoft Advertising viewability measurement aligns closely with third party vendors and should be used as a helpful proxy to help optimize for higher viewability.

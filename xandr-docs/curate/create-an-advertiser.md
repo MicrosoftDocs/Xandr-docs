@@ -99,6 +99,6 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
   > Warning regarding preexisting line items
   > If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
 
-## Step 5. Save the advertiser
+## Step 5. Save advertiser
 
 To finish adding the advertiser to the platform, select the **Save** button. On the Advertiser Details screen, you can continue to set up more objects required to buy inventory for the advertiser.

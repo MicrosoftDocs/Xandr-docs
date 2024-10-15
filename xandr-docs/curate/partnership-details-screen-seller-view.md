@@ -43,7 +43,7 @@ A table lists the buyer's top brands that have purchased your inventory, listed 
 
 A table lists your top publishers that the buyer has purchased inventory from, listed in order from most to least revenue. This information tells you which of your publishers are performing best with the buyer.
 
-### Communicate with the buyer
+### Communicate with buyer
 
 In the **Activity Stream**, the **Messages** tab shows messages between you and the buyer along with the number of days since the message was posted. You can use the **Activity Stream** to introduce yourself to a new buyer, offer targeting access in exchange for increased spend, check in with the buyer to see how their targeting access is working for them, or request changes to your eligibility and inventory trust.
 
@@ -61,7 +61,7 @@ Select the **Notifications** tab in the **Activity Stream** to view system messa
 
 In the **Partner Controls** tab you can view and manage the settings you have set for the buyer. This information gives you insight into your ability to transact with the buyer on Curate. Contact the seller [Communicate with the Buyer](partnership-details-screen-seller-view.md#communicate-with-the-buyer) to request changes to your eligibility or inventory trust.
 
-## View your settings for the buyer
+## View your settings for buyer
 
 The eligibility, allowed payment types, and targeting access settings you have set for the buyer display in the **My Settings for Buyer** section. For more information on each of these settings, see [Setting Buyer Defaults](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).     For step-by-step instructions on editing a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
 
@@ -106,8 +106,7 @@ View all of your deals with the buyer, historical and current, in the Deals tab.
 - **Description** - A description you enter for your deal. Enter a description that will help the buyer understand what the deal includes, keeping in mind the buyer can see all of your deal settings except for Inventory and Segment.
 
 - **Inventory** - The inventory the deal applies to. Select **Run of seller** for the deal to apply to all of the seller's inventory,
-  **Category** for the deal to apply to the selected Universal and/or Custom Categories, or **Publisher** for the deal to apply to
-  the selected publishers.
+  **Category** for the deal to apply to the selected Universal and/or Custom Categories, or **Publisher** for the deal to apply to the selected publishers.
 
 - **Segment** - The segment the deal applies to.
 

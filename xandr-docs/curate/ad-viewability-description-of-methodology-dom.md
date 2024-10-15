@@ -1,17 +1,17 @@
 ---
-title: Microsoft Curate - Ad Viewability - Description of Methodology (DOM)
+title: Microsoft Curate - Ad Viewability Methodology (DOM)
 description: In this module, understand the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Curate - Ad Viewability: Description of Methodology (DOM)
+# Microsoft Curate - Ad viewability methodology (DOM)
 
 This document is meant to describe the Microsoft Advertising viewability measurement process and methodology. It is designed for Microsoft Advertising clients, prospects, and partners only.
 
 ## Introduction
 
-### Scope of the document
+### Scope and purpose
 
 Ad viewability measurement is a complex issue. It must take into account various and changing specificities, such as:
 
@@ -100,7 +100,7 @@ Microsoft Advertising ad viewability is independent from publisher or agency ad 
 - Weborama
 - Any other ad servers which accept third part script
 
-#### Known limitations
+#### Known limitations: Third-party script support
 
 All desktop ad servers allow third party scripts, except some browser toolbars also reject JavaScript.
 
@@ -131,7 +131,7 @@ Since Microsoft Advertising serves the creative, the script call is generated na
   - Android browser
 - Windows mobile
 
-#### Known limitations
+#### Known limitations: JavaScript requirement
 
 **JavaScript** must be enabled in the browser of the internet user. If JavaScript is not enabled, the impression cannot be measured.
 
@@ -141,7 +141,7 @@ Microsoft Advertising does not conduct any form of sampling.
 
 ### Impression counting
 
-#### Script call
+#### Script delivery
 
 The Microsoft Advertising script is delivered by a CDN that automatically chooses the closest server to ensure quick delivery of the script. Script delivery, however, is not used to count the number of impressions served.
 
@@ -218,7 +218,7 @@ The Microsoft Advertising script monitors the following events and browser statu
 - Banner object load / non-load
 - Mouse / keyboard activity / inactivity
 
-#### Known limitations
+#### Known limitations: Viewability and measurement constraints
 
 - Microsoft Advertising considers only the window that is in focus as visible. This methodological choice matches the norms of internet audience measurement.
 - When two monitors are used, if an out-of-focus browser window is visible on one monitor, the impression may be considered non-viewable even if the user may see it.
@@ -292,7 +292,7 @@ If a random request is generated, Microsoft Advertising checks for consistency o
 
 Microsoft Advertising uses a list of robot names that is checked against the user agent of the request. User agents that do not correspond to real browsers are filtered out.
 
-#### Known limitations
+#### Known limitations: Robot traffic detection
 
 Some robots do not use their real user agent name. They pretend to be a regular browser. In this case, their traffic may not be correctly filtered out using the above mentioned method.
 
@@ -447,6 +447,6 @@ However, it is possible to run the [Site Domain Performance](../monetize/site-do
 
 Depending on the level of granularity, the data collected by Microsoft Advertising are stored for a specific period of time. See [Availability of Reporting Data](availability-of-reporting-data.md) for more information.
 
-### Changes in the Description of Methodology
+### Changes in description of methodology
 
 Major changes to the methodology can be communicated to clients through Microsoft Advertising product communication mailing lists.

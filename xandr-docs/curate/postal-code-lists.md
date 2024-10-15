@@ -21,8 +21,7 @@ Certain legitimate ZIP or postal codes are unrecognizable or invalid within the 
 
 ## Manage postal code lists
 
-You can create a Postal Code List at the Member level. A Postal Code List may contain one or more postal codes. Postal
-codes can be added to multiple Postal Code Lists. However, a postal code can be added only once to a single Postal Code List.
+You can create a Postal Code List at the Member level. A Postal Code List may contain one or more postal codes. Postal codes can be added to multiple Postal Code Lists. However, a postal code can be added only once to a single Postal Code List.
 
 Postal codes can be added to a list by either:
 
@@ -38,7 +37,7 @@ Postal codes can be added to a list by either:
 ### Create a new postal code list
 
 1. Select **Audiences** >  **Location Manager**.
-1. On the Location Manager page, select **New** >  **Postal Code List**.
+1. On the **Location Manager** page, select **New** >  **Postal Code List**.
 1. Provide the following details in the **Create A Location Target** page:
     a. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The maximum number of characters allowed is 255.
     b. **Code**: (optional) Enter a code for the Postal Code List.

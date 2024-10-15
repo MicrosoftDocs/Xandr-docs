@@ -95,7 +95,7 @@ Once you've installed Carthage on your computer, follow these steps:
   
 ## XCFramework
 
-Download the latest iOS SDK v9.1.0 from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.1.1/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
+Download the latest iOS SDK v9.x from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.1.1/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
 
 | Framework | Description |
 |---|---|
@@ -108,9 +108,9 @@ Download the latest iOS SDK v9.1.0 from [Azure CDN](https://adsdkprod.azureedge.
 | ANSDKResources.bundle | This contains necessary files which the SDK utilizes. |
 
 1. Open the app’s Xcode project or workspace.
-1. Go to the app target’s **General** configuration page.
-1. To use the `AppNexusSDK`, you need to add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
-1. To import the `AppNexusSDK.xcframework`,
+2. Go to the app target’s **General** configuration page.
+3. To use the `AppNexusSDK`, you need to add the `AppNexusSDK.xcframework` and `ANSDKResources.bundle`.
+4. To import the `AppNexusSDK.xcframework`,
     - Navigate to your project's Target settings.
     - Navigate to **Target** > **General**.
     - Click the `+` button under the **Frameworks, Libraries, and Embedded Content** section.
@@ -118,7 +118,7 @@ Download the latest iOS SDK v9.1.0 from [Azure CDN](https://adsdkprod.azureedge.
     - Choose the `AppNexusSDK.xcframework` file and click **Open**.
 
     :::image type="content" source="media/add-appnexus-xcf.png" alt-text="A screenshot that shows how to add AppNexus SDK in XCF.":::
-1. To include the `ANSDKResources.bundle`,
+5. To include the `ANSDKResources.bundle`,
     - Navigate to **Target** > **Build Phase**.
     - Expand the **Copy Bundle Resources** row and click the `+` icon.
     - Choose the `ANSDKResources.bundle` file and click **Open**.

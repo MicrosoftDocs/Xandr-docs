@@ -387,7 +387,7 @@ Each object is checked for:
 - object presence calculations (called 'Display Rate')
 - detecting a non-standard size for an ad
 
-#### At the impression level
+#### At impression level
 
 Each impression is checked for:
 
@@ -398,7 +398,7 @@ Each impression is checked for:
 - control on absolute duration, at least 1 pixel, (used for performance and fraud detection)
 - technical control on script's context
 
-#### At the group level
+#### At group level
 
 On each group of data (member, placement, and creative) the following tests are run:
 

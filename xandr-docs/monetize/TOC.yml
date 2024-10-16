@@ -1339,16 +1339,16 @@
       href: viewing-managing-cookie-segments.md
   - name: Global Privacy Platform
     href: global-privacy-platform.md
-  - name: Seller Creative Review
-    items:
-    - name: Overview
-      href: seller-creative-review.md
-    - name: Set Up Seller Creative Review
-      href: set-up-seller-creative-review.md
-    - name: Seller Creative Review List
-      href: seller-creative-review-list.md
-    - name: Approve and Reject Creatives
-      href: approve-and-reject-creatives.md
+  # - name: Seller Creative Review
+  #   items:
+  #   - name: Overview
+  #     href: seller-creative-review.md
+  #   - name: Set Up Seller Creative Review
+  #     href: set-up-seller-creative-review.md
+  #   - name: Seller Creative Review List
+  #     href: seller-creative-review-list.md
+  #   - name: Approve and Reject Creatives
+  #     href: approve-and-reject-creatives.md
   - name: Universal ID Support Matrix for Sellers
     href: universal-id-support-matrix-for-sellers.md
 - name: Viewability

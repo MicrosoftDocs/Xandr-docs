@@ -2,7 +2,7 @@
 title: Supply Partners - IAB Content Taxonomy Support
 description: This article provides an extensive list of supported Interactive Advertising Bureau (IAB) content categories.
 ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/09/2024
 ---
 
 # Supply Partners - IAB content taxonomy support
@@ -14,6 +14,7 @@ This page contains an extensive list of Interactive Advertising Bureau (IAB) con
 > from the [Digital Audio Ad Serving Template (DAAST)](https://iabtechlab.com/standards/digital-audio-ad-serving-template-daast/) (now deprecated and replaced by VAST).
 >
 > **Spec References**:
+>
 > - The complete list for IAB v1 specifications are listed [here](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fiabtechlab.com%2Fwp-content%2Fuploads%2F2021%2F10%2FContent-Taxonomy-1.0.xlsx&amp;wdOrigin=BROWSELINK).
 > - The supplemental DAAST content categories are listed [here](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.iab.com%2Fwp-content%2Fuploads%2F2015%2F06%2FDAASTAdCategories.xlsx&amp;wdOrigin=BROWSELINK).
 
@@ -446,3 +447,27 @@ This page contains an extensive list of Interactive Advertising Bureau (IAB) con
 | State of Emergency Profiteering | 181 |  | N/A | N/A | N/A |
 | Food and Drink: Restaurants/Delivery Services | 182 | IAB8-9 | IAB V1.0 | Food & Drink | Dining Out |
 | Premium Services: Power Utilities | 183 | IAB3-5 | IAB V1.0 | Business | Construction |
+| Misc. Other | 36 | IAB24 | 1.0 | Uncategorized | N/A |
+| Mild or Suggestive Profanity | 128 | IAB25-4 | 1.0 | Profane Content | Non-Standard Content |
+| HIV home tests | 150 | IAB7-3 | 1.0 | AIDS/HIV | Health & Fitness |
+| Weight Loss: Supplements | 160 | IAB7-44 | 1.0 | Weight Loss | Health & Fitness |
+| Pharmaceuticals and Supplements: Topical | 185 | IAB7-50 | 1.0 | Vitamins / Supplements | Health & Fitness |
+| Pharmaceuticals and Supplements: Ingestible | 186 | IAB7-50 | 1.0 | Vitamins / Supplements | Health & Fitness |
+| Lawsuits | 190 | IAB11-2 | 1.0 | Legal Issues | Law, Gov't & Politics |
+| Gambling: Education | 192 | IAB1-8 (DAAST) | 1.0 | Gambling/Casino | Arts & Entertainment |
+| Pharmacy | 205 | IAB7-51 | 1.0 | Pharmacy | Health & Fitness |
+| Addiction Treatment Center | 207 | IAB7-42 | 1.0 | Substance Abuse | Health & Fitness |
+| Beer | 208 | IAB8-5 | 1.0 | Cocktails/Beer | Food & Drink |
+| Wine | 209 | IAB8-18 | 1.0 | Wine | Food & Drink |
+| Liquor | 210 | IAB8-5 | 1.0 | Cocktails/Beer | Food & Drink |
+| Pregnancy Test | 699 | IAB6-7 | 1.0 | Pregnancy | Family & Parenting |
+| Prenatal Sex Determination | 700 | IAB6-7 | 1.0 | Pregnancy | Family & Parenting |
+| Morning After Pills | 701 | IAB6-7 | 1.0 | Pregnancy | Family & Parenting |
+| Creative is a game | 82 | IAB9-30 | 1.0 | Video & Computer Games | Hobbies & Interests |
+| Un-disclosed subscription services | 116 | IAB26-3 | 1.0 | Spyware/Malware | Illegal Content |
+| Medical Devices | 148 | IAB3-3 | 1.0 | Biotech/Biomedical | Business |
+| Clinical Trial Recruitment | 149 | IAB3-3 | 1.0 | Biotech/Biomedical | Business |
+| Paternity Test | 151 | IAB6-7 | 1.0 | Pregnancy | Family & Parenting |
+| Plastic Surgery | 155 | IAB7-46 | 1.0 | Cosmetic Surgery | Health & Fitness |
+| Clickbait | 694 | IAB25-7 | 1.0 | Incentivized | Non-Standard Content |
+| Image Defect: General | 695 | IAB25-6 | 1.0 | Under Construction | Non-Standard Content |

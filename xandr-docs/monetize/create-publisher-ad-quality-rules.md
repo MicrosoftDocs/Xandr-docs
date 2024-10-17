@@ -65,6 +65,21 @@ On the **Targeting** tab of the **Create New Conditional Rule** dialog you can d
 
 You can apply ad quality settings based on how frequently a user has seen a creative. For example, you might want to have stricter ad quality requirements for the first impression shown to a user on any given day, but after that the settings in the Publisher Base Rule might suffice. See [Frequency and Recency Caps](frequency-and-recency-caps.md) for more information.
 
+### Page Properties (Tags)
+
+You can apply ad quality settings based on where the tag (i.e., placements) is located on the page, or a specific query string passed in the URL.
+
+### Size
+You may have different ad quality rules for different creative sizes. 
+
+### Inventory Targeting 
+
+You may have different ad quality requirements for different placements or placement groups, for example, stricter ad quality for a home page.
+
+### Key Value Targeting
+
+You may have different ad quality requirements based on key value pairs. Learn more about [Key Value Targeting](key-value-targeting.md).
+
 ### Geography
 
 You may have different ad quality restrictions based on different countries (for example, varying legal restrictions by country). Depending upon which geographic targeting options you choose, you may significantly reduce the likelihood of matching an impression. When more than one targeting type is selected (for example, both Region and Zip Code), the set of matching impressions is reduced, sometimes significantly.
@@ -106,10 +121,3 @@ If your list of zip codes is formatted incorrectly, you will be presented with a
 
 You may have different ad quality rules for different creative sizes.
 
-### Tags
-
-You can target tags (i.e., placements) based upon their location on the page, or a specific query string passed in the URL.
-
-### Placement
-
-You may have different ad quality requirements for different placements, for example, stricter ad quality for a home page.

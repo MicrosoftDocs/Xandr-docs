@@ -27,6 +27,16 @@ You can view your Network Profile settings here. To edit them, you'll need to go
 
 You can view and edit your Base and Conditional Rules here. If those rules inherit from a template, they will be marked as such. When a rule inherits from a template, it cannot be edited except by a network administrator. For more information, see [Create Publisher Ad Quality Rules](create-publisher-ad-quality-rules.md).
 
+## Creative Approval
+
+### Bidders
+
+This feature is in "Closed Beta". Edit the trust levels associated with bidders and their buyer seats. To check which external DSPs are using Buyer Seat IDs see [External DSPs Using Buyer Seat IDs](./external-dsps-using-buyer-seat-ids.md).
+
+### Review Creatives
+
+**Review Creatives** tab you can search for creatives based on criteria such as who they're managed by or where they served. You can then approve or ban those creatives.
+
 ## Ad quality standards
 
 This section is where you can determine which creatives serve on your inventory based on their creative attributes. You can also set frequency caps based on those attributes.
@@ -61,10 +71,6 @@ Choose to serve only those creatives that are hosted on a specific set of ad ser
 ### Frequency caps
 
 Apply per-user frequency caps to creatives based on their technical attributes. You can also set frequency caps on creatives belonging to a sensitive category, e.g. "Alcoholic Beverages and References."
-
-### Creative approval
-
-Under the **Creative Approval** tab you can search for creatives based on criteria such as who they're managed by or where they served. You can then approve or ban those creatives.
 
 ### Common searches
 

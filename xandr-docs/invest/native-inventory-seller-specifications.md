@@ -204,7 +204,7 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 | Member ID | 280 |
 | Title | 25 character maximum |
 | Description | 300 character maximum |
-| Icon (sizes in pixels) | 1:1 aspect ration |
+| Icon (sizes in pixels) | 1:1 aspect ratio |
 | Image (sizes in pixels) | 1200x627 |
 | Sponsored By | 25 character maximum |
 

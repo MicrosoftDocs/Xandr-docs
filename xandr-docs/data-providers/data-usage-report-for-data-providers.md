@@ -43,8 +43,6 @@ The `report_interval` field in the JSON request must be set to one of the foll
 | geo_country | string | yes | yes | `"US"` | The code of the geographical country associated with the impression. |
 | geo_country_name | string | no | no | `"United States"` | The name of the geographical country associated with the impression. |
 | geo_country_code | string | yes | yes | `"CA"` | A two-character string denoting the country associated with the impression. For a complete listing of allowed values, see ISO 3166-1 country codes. |
-| campaign_id | int | yes | yes | `31` | The ID of the campaign associated with the impressions that used third-party data targeting. |
-| campaign_name | string | no | no | `"Prospect Campaign"` | The name of the campaign associated with the impressions that used third-party data targeting. |
 | line_item_id | int | yes | yes | `12345` | The ID of the line item associated with impressions that use third-party data targeting. |
 | line_item_name | string | no | no | `line item name` | The name of the line item associated with impressions that use third-party data targeting. |
 | data_provider_id | int | yes | yes | `517` | The ID of the third-party that provided the targeting data. |

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Native Inventory Seller Specifications
 description: Explore using Native Inventory Seller Specs for a global approach. Reach all sellers at once with a single campaign for efficient advertising.
-ms.date: 10/28/2023
+ms.date: 10/17/2024
 ---
 
 # Microsoft Monetize - Native inventory seller specifications
@@ -157,7 +157,7 @@ When you set up your Inventory Targeting, include the following:
 | Platform Audit (Creative Attributes tab) | Not required |
 | Video | Not supported |
 
-For additional information about LiveIntent API, see [LiveIntent Landing Page](https://support.liveintent.com/hc/en-us/articles/360015338292-Programmatic-Bidding-API).
+For additional information about LiveIntent API, see [LiveIntent Landing Page](https://support.liveintent.com/programmatic-bidding-api/).
 
 ### Mittmedia
 
@@ -203,7 +203,7 @@ Mopub native ads match the look and feel of an app's user interface. Here are a 
 | Member ID | 280 |
 | Title | 25 character maximum |
 | Description | 300 character maximum |
-| Icon (sizes in pixels) | 1:1 aspect ration |
+| Icon (sizes in pixels) | 1:1 aspect ratio |
 | Image (sizes in pixels) | 1200x627 |
 | Sponsored By | 25 character maximum |
 
@@ -442,7 +442,7 @@ Reach out to your Taboola representative if you have any questions. If you do no
 | Title | 25 character maximum |
 | Description | 90 character maximum |
 | Icon (sizes in pixels) | Not supported |
-| Image (sizes in pixels) | - Recommended 600x500<br>Under 1 MB<br> - Aspect ration between 1.91:1 and 2.1:1 is recommended<br> - Preferred file type: jpg<br> - Taboola Widget Field: Thumbnail |
+| Image (sizes in pixels) | - Recommended 600x500<br>Under 1 MB<br> - Aspect ratio between 1.91:1 and 2.1:1 is recommended<br> - Preferred file type: jpg<br> - Taboola Widget Field: Thumbnail |
 | Call to Action Text | Not supported |
 | Sponsored By | Not supported |
 

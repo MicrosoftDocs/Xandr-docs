@@ -1,7 +1,7 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol for Bidders
 description: Explore this article to learn how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 10/03/2024
+ms.date: 10/16/2024
 ---
 
 # Integration with OpenRTB 2.6 protocol for Bidders
@@ -36,7 +36,7 @@ The OpenRTB 2.6 protocol introduces several changes and updates to the top-level
 |:---|:---|:---|
 |`imp`| array of objects | (Required). The impressions offered in this bid request. See [Impression Object](#impression-object) below. <br><br> **Note:** The `imp` is not a new field in the OpenRTB 2.6 protocol guide. It is included in this document solely as a reference to the `rwdd` field in the below [section](#impression-object). |
 
-### Impression object
+## Impression object
 
 The `Imp` object defines an ad placement or impression being auctioned. A single bid request can include multiple `Imp` objects, which is useful for exchanges that support selling all ad positions on a given page. Each Imp object requires an ID, allowing bids to reference them individually.
 
@@ -50,20 +50,20 @@ As a part of the OpenRTB 2.6 implementation, Xandr has added the following field
 |`rwdd`| integer | This field indicates whether the user receives a reward for viewing the ad, with `0` representing "no" and `1` representing "yes." Typically, video ad implementations grant rewards such as access to an additional news article for free, an extra life in a game, or a sponsored ad-free music session. The reward is usually provided after the video ad is fully viewed. |
 | `video` | object | This field is required if the impression is offered as a video ad. See [Video Object](#video-object) below. <br><br> **Note:** The `video` is not a new field in the OpenRTB 2.6 protocol guide. It is included in this document solely as a reference to the `plcmt` field in the below [section](#video-object). |
 
-### Video object
+## Video object
 
 The `Video` object represents a video impression. While many of its fields are non-essential for minimally viable transactions, they are included to provide fine control when necessary. Video in OpenRTB generally adheres to the VAST standard. Consequently, companion ads are supported by optionally including an array of `Banner` objects that define these companion ads. For more details, see [Banner object](https://github.com/InteractiveAdvertisingBureau/openrtb2.x/blob/main/2.6.md#326---object-banner-)
 
 > [!NOTE]
 > Any field(s) not listed here remains supported in its original location as documented in the [OpenRTB 2.4 protocol](outgoing-bid-request-to-bidders.md).
 
-#### Video ad pods
+### Video ad pods
 
 Starting in version 2.6, OpenRTB now supports "pod bidding" for video and audio content streams. An ad pod refers to an ad break, similar to those seen in TV or heard on radio, containing one or more in-stream creative assets that play sequentially within the content stream. OpenRTB 2.6 enhances previous versions' capabilities by allowing multiple ad requests within a single bid request, indicating they are related.
 
 Pod bidding signals provide additional information about the pod and its impression opportunities, such as the sequence of ad impressions, total pod length, maximum number of ads per pod, multiple pod associations, and more.
 
-##### Implementation caveat
+#### Implementation caveat
 
 We currently support all pod types on the sell side; however, on the buy side, all requests are converted to structured pods in bid requests sent to bidders. This is because our platform currently only processes structured pods.
 
@@ -77,7 +77,7 @@ As part of the OpenRTB 2.6 implementation, Xandr has added the following field(s
 | `Video.slotinpod` | integer <br> **Default**: `0` | For video ad pods, this value indicates that the seller can guarantee delivery against the indicated slot position in the pod. For guidance on the use of this field, refer to List: Slot Position in Pod in AdCOM 1.0. |
 | `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, see [Use `Plcmt`, `Placement`, and `Context` fields together](#use-plcmt-placement-and-context-fields-together). |
 
-### Use `Plcmt`, `Placement`, and `Context` fields together
+## Use `Plcmt`, `Placement`, and `Context` fields together
 
 The OpenRTB 2.6 specification replaces the `placement` field (`imp.video.placement`) from OpenRTB 2.4/2.5 with the `plcmt` field (`imp.video.plcmt`). However, some sellers might still use OpenRTB 2.4/2.5.
 <!-- To maximize demand sources, include both the `placement` and `plcmt` fields in your requests. -->
@@ -98,7 +98,7 @@ Refer to the table below to find the correct values. Start by comparing your Ope
 | `Interstitial` | This ad format plays video without accompanying video content. During playback, it must maintain primary focus on the page, occupy the majority of the viewport, and remain fixed without scrolling out of view. This can occur in placements such as in-app video or slideshows. | `imp.instl = 1 ,imp.video.placement = 5` | `imp.video.plcmt = 3` | imp.video.ext.appnexus.context = 7 (interstitial) |
 | `Accompanying Content`| Pre-roll, mid-roll, and post-roll ads that are played before, during, or after streaming video content. The video player loads and plays before, between, or after paragraphs of text or graphical content, and starts playing only when it enters the viewport. Accompanying content should only start playback upon entering the viewport. It may convert to a Pre-roll, mid-roll, and post-roll ads play before, during, or after streaming video content. The video player loads and initiates playback before, between, or after paragraphs of text or graphical content, beginning only when it comes into view. Accompanying content starts playback when it enters the viewport. The player may convert to a floating or sticky position as it scrolls off the page. <br> <br> **NOTE:** The start delay determines the context (pre-roll, mid-roll, or post-roll) to use when placement = 1 and plcmt = 2. | `imp.video.placement = 1` | `imp.video.plcmt = 2` | imp.video.ext.appnexus.context = 8  (pre-roll) , imp.video.ext.appnexus.context = 9  (mid-roll), imp.video.ext.appnexus.context = 10 (post-roll) |
 
-### Updated field locations
+## Updated field locations
 
 A number of fields have moved from the old location in OpenRTB 2.4/2.5 to the new location in OpenRTB 2.6.
 

@@ -16,7 +16,7 @@ You can enable or disable Household Attribution for a Line item. To use Househol
 
 | Name | Description |
 |---|---|
-| Pixels | Create and use a [Conversion Pixel](create-a-conversion-pixel.md) or a [Universal Pixel](the-universal-pixel), to track conversions on your website or application. |
+| Pixels | Create and use a [Conversion Pixel](create-a-conversion-pixel.md) or a [Universal Pixel](the-universal-pixel.md), to track conversions on your website or application. |
 | Cookieless targeting | Toggle Cookieless Targeting to “on”, in the Line-item settings, to allow Microsoft to use IP addresses as an alternative identifier, enabling attribution in cookieless environments. |
 
 

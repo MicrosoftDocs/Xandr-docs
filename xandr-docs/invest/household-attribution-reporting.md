@@ -11,7 +11,7 @@ A number of reports and feeds contain information about Household Attribution re
 - The [Network Analytics Report](network-analytics-report.md) can be used to view the IP-based conversions and the IP-based conversion rate for your CTV campaigns.  
     - Post View Conversions: IP & Post Click Conversions: IP 
     - The Network Analytics report, represents the post view or post click conversions as the sum of Microsoft user ID-based and IP-based conversions. 
-- In the [Standard Feed](standard-feed.md) there are conversion event types each with a different variant. The following can be summed together to calculate total conversions. 
+- In the [Standard Feed](../log-level-data/standard-feed.md) there are conversion event types each with a different variant. The following can be summed together to calculate total conversions. 
     - Variant types: 
         - Post-click conversions 
         - Post-view conversions 

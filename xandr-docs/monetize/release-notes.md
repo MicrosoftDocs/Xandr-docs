@@ -10,6 +10,7 @@ ms.topic: release-notes
 
 Read about the latest updates to Monetize.
 
+- [October 18, 2024: Household Attribution](release-notes-20241018.md)
 - [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)
 - [November 16, 2023: Monetize Insights, Total Revenue](release-notes-20231116.md)
 - [April 11, 2023: GA for Creative Manager](release-notes-20230411.md)

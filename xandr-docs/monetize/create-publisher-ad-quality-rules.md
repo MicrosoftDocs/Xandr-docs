@@ -117,7 +117,4 @@ If your list of zip codes is formatted incorrectly, you will be presented with a
 - Colons in Ranges: Use hyphens rather than colons to denote ranges, for example, '10001-10010'.
 - Descending Ranges: Descending ranges of zip codes are not supported. Use ascending ranges instead, for example, '12561-12804'.
 
-### Size
-
-You may have different ad quality rules for different creative sizes.
 

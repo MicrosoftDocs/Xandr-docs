@@ -260,6 +260,16 @@
         href: set-up-cross-device-attribution.md
       - name: Cross-Device Reporting
         href: cross-device-reporting.md
+    - name: Household Attribution
+      items:
+      - name: Overview
+        href: household-attribution.md
+      - name: Set up Household Attribution
+        href: set-up-household-attribution.md
+      - name: Household Attribution Reporting
+        href: household-attribution-reporting.md
+      - name: Household Attribution FAQs
+        href: household-attribution-faq.md
   - name: Trader Home
     items:
     - name: Overview
@@ -1006,6 +1016,8 @@
       href: release-notes.md
     - name: 2024 - 2025
       items:
+        - name: October 18, 2024 - Household Attribution
+          href: release-notes-20241018.md
         - name: September 23, 2024 - Open Beta for Native Asset Generation 
           href: release-notes-20240923.md
         - name: September 09, 2024 - Microsoft Owned and Operated (O&O) Packages in Inventory Library 

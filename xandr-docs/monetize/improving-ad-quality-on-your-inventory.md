@@ -21,7 +21,7 @@ You can use the following controls to determine what ads are allowed to serve on
 | **Categories** | Determine which creative categories are eligible to serve (for example, "Airlines" or "Apparel"). |
 | **Frequency Caps** | Apply per-user frequency caps to creatives based on their technical attributes. You can also set frequency caps on creatives belonging to a sensitive category (for example, "Alcoholic Beverages and References"). |
 | **Languages** | Include or exclude creatives based on the language of the creative. |
-|**Phrases (Beta)**| Disallow native ads based on recurring keywords and phrases found in link text and descriptions. **Note**: These settings do not apply to dynamic creatives. |
+|**Phrases (Beta)**| Disallow native ads based on recurring keywords and phrases found in link text and descriptions. <br> **Note**: These settings do not apply to dynamic creatives. |
 | **Technical Attributes** | Determine the eligibility of creatives based on technical attributes (for example, "Expandable" or "Flash"). |
 
 ## Related topics

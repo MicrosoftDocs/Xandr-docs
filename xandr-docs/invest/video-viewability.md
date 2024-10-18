@@ -4,18 +4,18 @@ description: Learn the technology behind video viewability measurement.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Measurement of Video Viewability using VPAID Wrapper
+# Microsoft Invest - Measurement of video viewability using VPAID wrapper
 
 This page explains the technology behind our video viewability measurement.
 
 > [!IMPORTANT]
 > Viewability for video creatives on Microsoft Advertising is measured using OMSDK for Web and App, and if it's not available we fall back to the VPAID wrapper measurement which is avalable for Web only but not for App.
 
-## What is Video Viewability?
+## What is video viewability?
 
 The Microsoft Advertising video viewability measurement is based on the IAB guidelines, which state that 50% of the surface of a video ad must be in-view for a minimum of 2 seconds.
 
-**Microsoft Advertising Video Viewability measurement**
+### Microsoft Advertising video viewability measurement
 
 To enable viewability measurement, Microsoft Advertising wraps video ads with a VPAID component which is responsible for loading and playing the ad. In addition, the VPAID wrapper manages, tracks and measures viewability by dropping the viewability measurement script on the page. The VPAID component then notifies the measurement script of any ad related events such as starts, pauses, resumes, etc.
 
@@ -36,7 +36,7 @@ When viewability is enabled, the VPAID wrapper is served by default. If the play
 
 The Microsoft Advertising VPAID wrapper will always serve when the player is able to play VPAID creatives. At present, only desktop web and mobile web are supported. Viewability measurement on both instream and outstream positions is supported.
 
-**AdServing lifecycle**
+### AdServing lifecycle
 
 1. A **video tag** is embedded within a video player on a publisher's website.
 1. Consumer loads the website and the video ad tag makes a **bid request** to Microsoft Advertising servers.
@@ -52,11 +52,11 @@ The Microsoft Advertising VPAID wrapper will always serve when the player is abl
 
 :::image type="content" source="media/viewability.png" alt-text="Screenshot of Viewability":::
 
-**VPAID Wrapper functions**
+#### VPAID wrapper functions
 
 In addition to viewability measurement, the VPAID wrapper is responsible for loading and parsing the VAST document by identifying creatives and collecting tracking pixels. While the video ad is being played, the wrapper calls tracking events that are specified in the VAST document, such as pause, resume, pause on click etc. The VPAID wrapper is also responsible for managing click-through URLs and adjusting the volume of the video ad according to the volume set on the player.
 
-**VPAID Wrapper specifications**
+#### VPAID wrapper specifications
 
 The VPAID wrapper has the following specifications:
 
@@ -66,11 +66,11 @@ The VPAID wrapper has the following specifications:
 - Downloads the VAST document, selects the media file to play, manages tracking events, forwards VPAID Events
 - Desktop web and mobile web measurement
 
-## Reporting - UI
+## UI - Reporting
 
 The following metrics are now available in the Advertiser Video Analytics Report, Publisher Video Analytics Report, and Member Video Analytics Report. (See [Analytics Reporting](analytics-reporting.md) for more information.)
 
-**Viewability Measurement Metrics**
+### Viewability measurement metrics
 
 | Viewability Metrics | Definition |  
 |--|--|
@@ -80,14 +80,14 @@ The following metrics are now available in the Advertiser Video Analytics Report
 > [!NOTE]
 > Viewability Measurement Rate is not directly comparable to other measurement vendors since our total impression count is higher. Our measurement rate is not an indicator of the technical quality of the measurement. For more information, see the [Viewability FAQ](viewability-faq.md)
 
-**Viewability Metrics**
+#### Viewability metrics
 
 | Viewability Metrics | Definition |
 |--|--|
 | Viewable Imps | The number of measured impressions that were viewable, per the IAB Viewability definition, which states that 50% of the pixels of a video creative are in-view during 2 consecutive seconds. |
 | Viewability Rate | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps) |
 
-## Reporting - API
+## API - Reporting
 
 The following Video viewability metrics are available via the API in the [Network Video Analytics](../digital-platform-api/network-video-analytics.md), [Network Publisher Video Analytics](../digital-platform-api/network-publisher-video-analytics.md) and [Network Advertiser Video Analytics](../digital-platform-api/network-advertiser-video-analytics.md) reports:
 
@@ -109,41 +109,41 @@ The [Video Events Feed](../log-level-data/video-events-feed.md) now has the the 
 
 This section lists out frequently asked questions regarding video viewability.
 
-**Will viewability work on both Microsoft Advertising hosted creatives and third-party hosted creatives?**
+### Will viewability work on both Microsoft Advertising hosted creatives and third-party hosted creatives?
 
 Yes, Microsoft Advertising provides viewability measurement across all video creatives for free.
 
-**What happens if I upload a VAST creative?**
+### What happens if I upload a VAST creative?
 
 Microsoft Advertising adds a VPAID viewability wrapper and will deliver the viewability measurement across players that accept VPAID. The video creative is served as a VAST creative with no viewability measurement to players that only accept VAST.
- 
-**Will viewability measurement work on mobile web and mobile app supply?**
+
+### Will viewability measurement work on mobile web and mobile app supply?
 
 Desktop, mobile web and mobile app supply are supported.
 
-**What happens if I upload a VPAID creative?**
+### What happens if I upload a VPAID creative?
 
 Microsoft Advertising includes the VPAID viewability wrapper, thus increasing the number of wrappers on the creative, and the creative will measure viewability across players that allow for VPAID.
 
-**Will it cause latency?**
+### Will it cause latency?
 
 Using a VPAID wrapper generates some additional latency since the player must first download the VPAID wrapper from Microsoft Advertising
 CDN (\\150ms). Once the wrapper is downloaded, the time taken to load a video ad with a wrapper will be the same as one loaded without.
 Viewability components are run asynchronously and do not affect the ad.
 
-**Do I have to do anything to enable viewability for my creatives?**
+### Do I have to do anything to enable viewability for my creatives?
 
 No, your video creatives are enabled for viewability measurement by default.
 
-**Will viewability restrict reach?**
+### Will viewability restrict reach?
 
 No, it will not. Microsoft Advertising will serve the
 viewability script where applicable and the VAST only version of the creative where VPAID is not allowed, to ensure maximum reach.
 
-**How can I optimize to more highly viewable inventory?**
+### How can I optimize to more highly viewable inventory?
 
 Viewability measurement is included in the [Advertiser Video Analytics Report](advertiser-video-analytics-report.md) and [Member Video Analytics Report](network-video-analytics-report.md), which provide reporting down to the individual tag/placement or site domain. This enables clients to update targeting to either include or exclude high or poor performing placements.
 
-**How does Microsoft Advertising viewability compare with other third party viewability vendors such as Integral Ad Science, and DoubleVerify?**
+### How does Microsoft Advertising viewability compare with other third party viewability vendors such as Integral Ad Science, and DoubleVerify?
 
 The Microsoft Advertising viewability measurement aligns closely with third party vendors and should be used as a helpful proxy to help optimize for higher viewability.

@@ -114,7 +114,7 @@ If VAST check returns this message, the creative was scanned but contains errors
 
 **Actions to take:**
 
-- Click **Run check again** button to initiate the re-scanning of the creative XML document.
+- Select **Run check again** button to initiate the re-scanning of the creative XML document.
 
    :::image type="content" source="./media/run-check-again.png" alt-text="Screenshot of the Run Check Again button.":::
 
@@ -136,7 +136,7 @@ If VAST check returns this message, the creative was scanned but contains errors
 
 **Actions to take:**
 
-- Click **Run check again** button to initiate the re-scanning of the creative XML document.
+- Select **Run check again** button to initiate the re-scanning of the creative XML document.
 
   :::image type="content" source="./media/run-check-again.png" alt-text="Diagram that shows the Run Check Again button.":::
 

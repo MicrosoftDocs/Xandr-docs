@@ -10,6 +10,7 @@ ms.author: shsrinivasan
 
 Read about the latest updates to Microsoft Invest.
 
+- [October 18, 2024: Household Attribution](release-notes-20241018.md)
 - [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)
 - [September 09, 2024: Microsoft Owned and Operated (O&O) Packages in Inventory Library](release-notes-20240909.md)
 - [July 09, 2024: Trader Home](release-notes-20240709.md)

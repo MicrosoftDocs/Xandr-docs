@@ -29,4 +29,3 @@ Read about the latest updates to Microsoft Invest.
 - [July 14, 2021: New Targeting Enhancements](release-notes-20210714-2.md)
 - [July 14, 2021: Introducing Our New Bulk Export and Import Functionality](release-notes-20210714-1.md)
 - [June 14, 2021: Introducing a New ALI](release-notes-20210614.md)
-- [June 9, 2021: Open Beta for Video Inventory Recommendations](release-notes-20210609.md)

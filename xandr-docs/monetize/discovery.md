@@ -98,6 +98,7 @@ To help line items with click-based goals weed out poor performing inventory and
 
 Booked revenue on the node \> 2 (fail criterion) \* (conversions + 1)
 
+<!--
 ## Optimization override service
 
-Clients with sophisticated optimization needs can disable discovery or adjust the Discovery fail criterion on line items with CPC or post-click CPA goals by using the [Optimization Override Service](../digital-platform-api/optimization-override-service.md).
+Clients with sophisticated optimization needs can disable discovery or adjust the Discovery fail criterion on line items with CPC or post-click CPA goals by using the Optimization Override Service.-->

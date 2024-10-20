@@ -25,7 +25,6 @@ ms.custom: digital-platform-api
 - [Line Item Service](line-item-service.md)
 - [Line Item Service - ALI](line-item-service---ali.md)
 - [Mobile App Instance List Service](mobile-app-instance-list-service.md)
-- [Optimization Override Service](optimization-override-service.md)
 - [Partner Fee Service](partner-fee-service.md)
 - [Postal Code List Service](postal-code-list-service.md)
 - [Registration Form Service](registration-form-service.md)

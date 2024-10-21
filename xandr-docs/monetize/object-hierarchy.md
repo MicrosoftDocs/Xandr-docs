@@ -8,20 +8,6 @@ ms.date: 10/28/2023
 
 This page introduces the main objects that you work with to buy and sell media.
 
-## Buy-side hierarchy
-
-Key differences of an [Augmented Line Item (ALI)](augmented-line-items-ali.md) compared to Standard Line Item are:
-
-- ALIs require Insertion Orders (not optional).
-- Targeting, budgeting, bidding strategies, and optimization strategies that were associated with campaigns are set on the line item level.
-- ALIs do not use campaigns.
-
-### Standard line item
-
-The following image illustrates the standard line item.
-
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="Diagram that defines buy-side hierarchy.":::
-
 ### Augmented line item
 
 The following image illustrates the augmented line item.
@@ -33,7 +19,6 @@ The following image illustrates the augmented line item.
 The [Network](network-guide.md) represents your account as a whole. At this level:
 
 - You decide who's eligible to sell to you and what level of inventory audit you require [seller settings](set-seller-defaults.md).
-- You create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns [targeting lists](working-with-targeting-lists.md).
 - You put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.
 
 ## Advertiser
@@ -53,17 +38,6 @@ You can have many insertion orders under a single advertiser.
 The [line item(s)](working-with-line-items.md) under an advertiser or insertion order represent the agreed upon strategies you will be executing for the advertiser. It contains information that the advertiser specifies, such as how much your advertiser has budgeted toward an offering, or which targeting the advertiser requires.
 
 You can have many line items under a single advertiser or insertion order.
-
-There are several types of line items you may use depending on your business model:
-
-- [Standard Line Item](create-a-standard-line-item.md) (with no Insertion Order)
-- [Standard Line Item](working-with-line-items.md) (under an Insertion Order)
-- [Augmented Line Item](create-an-augmented-line-item-ali.md) (under an Insertion Order) **Recommended**. Augmented line items do not use campaigns. For an overview, see [Augmented Line Items](augmented-line-items-ali.md).
-
-## Campaign (standard line items only)
-
-The [campaign](working-with-campaigns.md) dictates your tactics for driving performance to meet your advertisers' goals dictated on the line item. Campaigns house the settings you dictate such as optimized targeting strategies and bidding.
-You can have many campaigns under a single line item.
 
 ## Creative
 

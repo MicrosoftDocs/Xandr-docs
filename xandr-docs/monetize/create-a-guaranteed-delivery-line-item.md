@@ -71,7 +71,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic setting
 
 9. **Takeover**:  By enabling this takeover, you can block all other demand from serving. This guarantees that no other ads will be displayed, providing complete exclusivity to the advertiser.
 
-10. **Roadblocking**: You can enable roadblocking to serve multiple creatives together on the same page. In cases where managed publishers are using [Seller Tags (AST)](../seller-tag/seller-tag/seller-tag.md) to conduct a single auction for multiple ad slots on a page (or using video tags for ad pods), you can serve multiple linked creatives by enabling **Roadblocking** for the line item.
+10. **Roadblocking**: You can enable roadblocking to serve multiple creatives together on the same page. In cases where managed publishers are using [Seller Tags (AST)](../seller-tag/seller-tag.md) to conduct a single auction for multiple ad slots on a page (or using video tags for ad pods), you can serve multiple linked creatives by enabling **Roadblocking** for the line item.
 One creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are available. If more than one creative per size exists, creatives will rotate through a single slot.
 Delivery of the **Master Creative** is used for pacing and budgeting. Defining **Master Creative** and **Companion Creative** sizes is used for forecasting and reservation purposes. Roadblock delivery is based on the creatives associated with the line item. For more information, see [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblocking.md).
 

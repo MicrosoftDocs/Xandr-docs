@@ -63,7 +63,7 @@ You can define bias values for specific buyers and for specific buyer groups.
 - Define bias amounts for specific buyers
 - Define bias amounts for buyer groups
 
-Biases can either be positive (preference) or negative(deterrent) values and defined as either a percentage or CPM.
+Biases can either be positive (preference) or negative (deterrent) values and defined as either a percentage or CPM.
 
 - Percentage - The buyer's bids will be modified by a certain percent.
 - CPM - The buyer's CPM bid will be modified by a specific amount.

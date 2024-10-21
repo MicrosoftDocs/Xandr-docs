@@ -33,7 +33,6 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
        > [!TIP]
        > As a best practice, align currency to the billing currency in order to achieve the best possible local currency experience. See [Currency Support](currency-support.md).
-
     - Select a viewability standard.
     - Select a budget type.
     - Optionally, set up billing periods and pacing. For more information, see [Billing Periods](#billing-periods) and [Pacing](#pacing).

@@ -92,7 +92,7 @@ Delivery of the **Master Creative** is used for pacing and budgeting. Defini
 
 1. **Ad Size**: When you first create a GDALI, it's possible that you won't have creatives available for it yet. To enable you to forecast on your line item before you have available creatives, you can use the **Ad Size** field to identify the size (or sizes) of the impression you intend to deliver on. Forecasts (displayed in the forecasting footer at the bottom of the **Create New Guaranteed Delivery Line Item** screen) will consider the **Ad Size** specified here, as well as the sizes of any actual creatives associated with the line item. By default, this field displays "Any Size", indicating that the line item may forecast, and reserve inventory based on all ad sizes.
 
-The **Ad Size** values you choose are added to your targeting profile.
+   The **Ad Size** values you choose are added to your targeting profile.
 
 > [!WARNING]
 > The values you enter here could have an impact on delivery if they do not match the creatives associated to the line item. When you select ad sizes under **Ad Size**, you're targeting impressions of those sizes. If you then add creatives that don't match the **Ad Size** values you entered, you may be preventing your line item from serving. For example, if you select **300 x 250** as the line item’s ad size and then add a **300 x 600** creative to the line item, the ad call must contain both 300 x 250 and **300 x 600** as available **Ad Size** values on the ad call for your line item to be eligible to serve. To be eligible, the ad call must satisfy the targeting of the line item which includes both the ad size(s) and the creative size(s).
@@ -128,7 +128,6 @@ To set up line item budgeting and scheduling:
 1. **Flight**: Set up a flight by specifying its start and end dates, budgeting, and pacing. Flights are subject to the following constraints:
 
    - Each line item must have a single flight.
-
    - Flight dates must fall inside the billing period dates of the parent insertion order(s).
 
    To set a flight, enter a start and end date, and adjust the start and end time as required. Both a start and end date are required for GDALIs.
@@ -156,7 +155,6 @@ To set up line item budgeting and scheduling:
 1. **Underspend Catch-Up**: Select an option:
 
    - **Evenly**: Unspent daily budget will be distributed evenly throughout the remainder of the flight.
-
    - **ASAP** (default): Unspent daily budget will be spent as quickly as possible based on your line item settings to ensure the highest probability of delivering your budget in its entirety.
 
 1. **Daypart**: Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md).
@@ -240,8 +238,8 @@ To set up line item budgeting and scheduling:
 
 1. **Demographic targeting**: Publishers may optionally pass the age or gender of users in the query string of their ad calls. In these cases, you can target users based on this information. To set up demographic targeting:
 
-- Click on the pencil icon under **Demographics** to open the **Demographics Targeting** screen (the default setting is **any age**; **any gender**).
-- Select appropriate **Age** and **Gender** settings. For more information, see [Demography Targeting](demography-targeting.md).
+   - Click on the pencil icon under **Demographics** to open the **Demographics Targeting** screen (the default setting is **any age**; **any gender**).
+   - Select appropriate **Age** and **Gender** settings. For more information, see [Demography Targeting](demography-targeting.md).
 
 ## Creatives
 

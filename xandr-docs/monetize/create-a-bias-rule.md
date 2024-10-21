@@ -1,7 +1,7 @@
 ---
 title: Create a Bias Rule
 description: Optimize auctions:, apply bias, set buyer rules, use conditional impressions. Define biases (frequency, geography, placement) without altering winning bids.
-ms.date: 10/28/2023
+ms.date: 10/21/2024
 ---
 
 # Create a bias rule
@@ -21,9 +21,12 @@ For more information on biases and how they work, see [Working with Yield Manage
 
 ## Create a base bias rule
 
+> [!NOTE]
+> The legacy Bias Rules UI has been deprecated. To create your base rule, use the [Yield Management Bias Service](../digital-platform-api/yield-management-bias-service.md).
+
 Create a base rule to affect specific buyer's or buyer group's bids on all of the publisher's inventory.
 
-### Getting there
+<!-- ### Getting there
 
 **Publisher-only clients:** Select **Partners** \>  **Yield Management** \>  **Floor rules** in the menu bar, and then select a publisher if you are prompted.
 
@@ -35,12 +38,12 @@ Select a publisher when you are prompted. This opens the **Bias Rule Manager**.
 
 ### Step 2. Open the create new base rule dialog
 
-Click **Create New \>  Base Rule**, or click on the **Create a base rule** link within the **Bias** section of the screen to open the **Create New Base Rule** dialog.
+Click **Create New \>  Base Rule**, or click on the **Create a base rule** link within the **Bias** section of the screen to open the **Create New Base Rule** dialog. -->
 
 > [!NOTE]
 > You can only create one base rule. If a base rule exists, you will not be able to create a new base rule. Instead, you can edit or delete the existing rule.
 
-### Step 3. Enter base rule details
+### Base rule details
 
 Enter the basic details for the base rule.
 
@@ -49,18 +52,23 @@ Enter the basic details for the base rule.
 - **Description** - Enter a rule description for reference.
 - **Additional Options: Code** - If you click **Additional Options (Advanced)** you will have the option of entering a code. Codes may be helpful for networks with distinct internal names/IDs, so that the names/IDs can be associated in Monetize and then extracted for reporting purposes via our API.
 
-### Step 4. Save the base bias rule
+<!-- ### Step 4. Save the base bias rule
 
-Once you have entered the rule details, click **Save**. The rule will then display under **Bias Rule** on the **Bias Rule Manager** screen. The base rule will be selected and the **Buyers** and **Buyer Groups** tables will display in the **Bias Settings** section.
+Once you have entered the rule details, click **Save**. The rule will then display under **Bias Rule** on the **Bias Rule Manager** screen. The base rule will be selected and the **Buyers** and **Buyer Groups** tables will display in the **Bias Settings** section. -->
 
-### Step 5. Define bias amounts
+### Define bias amounts
 
 You can define bias values for specific buyers and for specific buyer groups.
 
 - Define bias amounts for specific buyers
 - Define bias amounts for buyer groups
 
-### Define bias amounts for specific buyers
+Biases can either be positive (preference) or negative(deterrent) values and defined as either a percentage or CPM.
+
+- Percentage - The buyer's bids will be modified by a certain percent.
+- CPM - The buyer's CPM bid will be modified by a specific amount.
+
+<!-- ### Define bias amounts for specific buyers
 
 Click **Edit** in the **Buyers** table to display the **Buyer Bias Settings** dialog. Use the name and bias type filters to locate the desired buyer, and then click **edit**
 near the buyer.
@@ -90,13 +98,13 @@ Select a bias type from the dropdown in the **Bias Type** column, and then enter
 - **CPM** - CPM bids from buyers in the group will be modified by a specific amount.
 
 When you have entered the desired bias amount for the buyer group, click the **Save** button within the row.
-When you have entered all of the needed bias amounts per buyer group, click **Close** to finish editing the base rule.
+When you have entered all of the needed bias amounts per buyer group, click **Close** to finish editing the base rule. -->
 
 ## Create a conditional bias rule
 
 Create a conditional rule to affect buyer's or buyer group's bids on specific impressions. You can define a per-buyer bias by impression frequency, geography, segment, specific placement, category, or placement size.
 
-### Getting there
+<!-- ### Getting there
 
 **Publisher-only clients:** Select **Partners \> Yield Management \> Floor rules** in the menu bar, and then select a publisher if you are prompted.
 
@@ -118,9 +126,9 @@ Enter the basic details for the conditional rule.
 - **Priority** - Select the desired priority for the rule, Priority 5 is selected by default. It is recommended to leave lower priorities (1-4)
   for network-wide rules and use higher priorities (5-9) for your publisher-specific rules. It is a good idea to reserve priority 10 for special cases that may arise, such as emergencies or blockers.
 - **Description** - Enter a rule description for reference.
-- **Additional Options: Code** - If you click **Additional Options (Advanced)** you will have the option of entering a code. Codes may be helpful for networks with distinct internal names/IDs, so that the names/IDs can be associated in Monetize and then extracted for reporting purposes via our API.
+- **Additional Options: Code** - If you click **Additional Options (Advanced)** you will have the option of entering a code. Codes may be helpful for networks with distinct internal names/IDs, so that the names/IDs can be associated in Monetize and then extracted for reporting purposes via our API. -->
 
-### Step 4. Set audience targeting (optional)
+<!-- ### Step 4. Set audience targeting (optional)
 
 In the **Audience Targeting** tab, you can select the types of users (audience) you would like the rule to apply to.
 
@@ -196,9 +204,9 @@ Check the **Show segment codes** checkbox to display an additional **Code** colu
 
 Check the **Show values** checkbox to display an additional **Value** column within the table where you can specify portions of the segment that the rule should apply to. Click **edit** in the **Value** column, select a value type from the **Value** dropdown, enter the value(s), and then click **Set**. This feature is only relevant if the segment you are targeting is a query string segment where parameters have been defined. For example, let's say you have defined a travel segment that has 2 travel_location parameters: US and Canada. If you would like the floor rule to apply to the users within the segmentintending to travel to the US, you can select **equal to** in the **Value** dropdown and then enter US in the text field.
 
-Rather than targeting any or all of the selected segments, you can click on the **Boolean Logic** header to apply more complex logic.
+Rather than targeting any or all of the selected segments, you can click on the **Boolean Logic** header to apply more complex logic. -->
 
-### Step 5. Set supply targeting (optional)
+<!-- ### Step 5. Set supply targeting (optional)
 
 In the **Supply Targeting** tab, you can select specific inventory you would like the rule to apply to. You can target specific placements, content categories, or placement sizes.
 
@@ -225,7 +233,7 @@ Select **Specific sizes**... to create a bias rule that applies to inventory of 
 
 ### Step 6. Save the conditional bias rule
 
-Once you have defined the rule targeting, click **Save**. The rule will then display in the conditional rules section on the **Bias Rule Manager** screen.
+Once you have defined the rule targeting, click **Save**. The rule will then display in the conditional rules section on the **Bias Rule Manager** screen. -->
 
 ### Related topics
 

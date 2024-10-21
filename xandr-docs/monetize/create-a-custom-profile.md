@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 A Custom Ad Quality Profile contains a collection of ad quality settings for one publisher. You can create a Custom Profile from scratch or you can use an existing [publisher template](create-a-publisher-template.md) as a starting point. If you base your Custom Profile off of an existing template, keep in mind that future changes to that template
 will not be applied to the Custom Profile. Use a Custom Profile if you want to maintain unique ad quality settings for one publisher.
 
-## Step 1. Create or Update a Base or Conditional Rule
+## Step 1. Create or update a Base or Conditional rule
 
 To create a new Custom Profile, select **Publishers \>  Ad Quality** from the top navigation menu. This will take you to the Publisher Ad Quality screen. To edit an existing rule, click on a rule from the list at the upper left-hand side of the screen. When the rule is highlighted, click the Full Edit button on the lower right. To create a new rule, follow the directions in [Create Publisher Ad Quality Rules](create-publisher-ad-quality-rules.md).
 
@@ -34,6 +34,9 @@ You can determine which creatives will be eligible to serve on your inventory ba
 
 ### Bidders
 
+> [!NOTE]
+> This feature is currently in Closed Beta.
+
 You can manage bidders and individual bidder seats that serve on your inventory by defining trust level settings here. Choose from
 
 | Trust Level | Description |
@@ -44,12 +47,12 @@ You can manage bidders and individual bidder seats that serve on your inventory 
 | Maximum | Bypass ad quality standards, do not require platform audit. |
 | Banned | Ban all creatives from this buyer. |
 
-The bidders and their seats are mapped to the existing buyer IDs, and all trust settings are inherited by both. Updating trust settings to either one of the sections (Buyers or Bidders) will update trust settings for the same bidder or seat in both sections.
+The bidders and their seats are mapped to the existing Xandr Member IDs. Updating trust settings to either one of the sections (Buyers or Bidders) will update trust settings for the mapped bidder or seat in both sections. 
 
 > [!NOTE]
 > Updating the trust level for Bidders will apply the same trust level to all Seats. However, Bidder trust can be overridden by updating Seat-level trust settings from Use Bidder to another trust level.
 
-The default trust setting for Bidders is inherited from the Buyers section and any adjustments to the trust settings should be made in the Buyer’s section. To know more about Buyer Seat IDs, see: [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
+The default trust setting for Bidders is inherited from the default trust setting for Buyers. To know more about Buyer Seat IDs, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
 ### Buyers
 
@@ -71,7 +74,7 @@ Depending upon the category the creative falls into, you may choose to mark it a
 - **Banned**: The creative will not serve.
 - **Default**: Reuse the default settings (i.e., mark as **Eligible**).
 
-### Technical Attributes
+### Technical attributes
 
 You may allow or disallow certain creatives based upon technical attributes such as whether the creative is an expandable, or whether it plays audio. Choose from:
 

@@ -35,28 +35,28 @@ You can set the name, state, and ad type of the GDALI from the **Basic setting
 
    - Click **Save**.
 
-2. **Name**: Enter a unique name for the line item that you will use for searching and reporting.
+1. **Name**: Enter a unique name for the line item that you will use for searching and reporting.
 
    > [!NOTE]
    > The name of the line item must be unique per advertiser.
 
-3. **External Code**: (Optional)  If you wish to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically), click **+External Code** and enter a code. External codes must follow these guidelines:
+1. **External Code**: (Optional)  If you wish to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically), click **+External Code** and enter a code. External codes must follow these guidelines:
 
     - They can only contain alphanumeric characters, periods, underscores or dashes.
     - Codes are not case-sensitive (uppercase and lowercase characters are treated the same).
     - No two objects can use the same code per advertiser. For example, two line items cannot both use the code "ABC."
-4. **State**: Set the line item state to Active or Inactive. We recommend that you set the state to Inactive until everything for the line item has been set up and verified.
+1. **State**: Set the line item state to Active or Inactive. We recommend that you set the state to Inactive until everything for the line item has been set up and verified.
 
-5. **Ad Type**: Select one or more appropriate ad types for the line item.
+1. **Ad Type**: Select one or more appropriate ad types for the line item.
 
    The ad type must match the creative types that you will associate with the line item and will also be used to improve forecasting accuracy. You can select one or more Ad Types.
 
-6. **Delivery Type**: Select a line item delivery type.
+1. **Delivery Type**: Select a line item delivery type.
 
    - **Impressions** - this delivery type has an impression-based goal and typically has priorities that range from 11-17.
    - **Exclusive** - this delivery type has a percentage-based (or "share-of-voice") goal and typically runs at higher priorities that range from 18-20.
 
-7. **Priority**: Set a priority for the line item in the **Priority** drop-down menu. Flexible priorities allow users to manage delivery across line items. To optimize yield, it's recommended that you consolidate GDALIs within a single priority tier below the reselling priority (your reselling priority is indicated to the right of the **Priority** drop-down).
+1. **Priority**: Set a priority for the line item in the **Priority** drop-down menu. Flexible priorities allow users to manage delivery across line items. To optimize yield, it's recommended that you consolidate GDALIs within a single priority tier below the reselling priority (your reselling priority is indicated to the right of the **Priority** drop-down).
 
     > [!NOTE]
     > The default priority depends on the delivery type:
@@ -64,25 +64,26 @@ You can set the name, state, and ad type of the GDALI from the **Basic setting
     > - Impressions delivery types have a default priority of 14.
     > - Exclusive delivery types have a default priority of 19.
 
-8. **Allow RTB Competition**: If you have assigned the Impressions delivery type to the line item, the **Allow RTB Competition** feature is enabled by default. When enabled with a priority below reselling priority, a guaranteed line item will compete with Open Market (or RTB) demand to maximize yield while ensuring full delivery of the budget. For more information, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md). Although not recommended, disabling **Allow RTB Competition** will restrict competition in the auction to only direct line items.
+1. **Allow RTB Competition**: If you have assigned the Impressions delivery type to the line item, the **Allow RTB Competition** feature is enabled by default. When enabled with a priority below reselling priority, a guaranteed line item will compete with Open Market (or RTB) demand to maximize yield while ensuring full delivery of the budget. For more information, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md). Although not recommended, disabling **Allow RTB Competition** will restrict competition in the auction to only direct line items.
 
    > [!NOTE]
    > Disabling Allow RTB Competition can negatively affect your overall yield. Allow RTB Competition is not available for line items with Exclusive delivery type. Line items with Exclusive delivery type take precedence over Open Market (or RTB) demand.
 
-9. **Takeover**:  By enabling this takeover, you can block all other demand from serving. This guarantees that no other ads will be displayed, providing complete exclusivity to the advertiser.
+1. **Takeover**:  By enabling this takeover, you can block all other demand from serving. This guarantees that no other ads will be displayed, providing complete exclusivity to the advertiser.
 
-10. **Roadblocking**: You can enable roadblocking to serve multiple creatives together on the same page. In cases where managed publishers are using [Seller Tags (AST)](../seller-tag/seller-tag.md) to conduct a single auction for multiple ad slots on a page (or using video tags for ad pods), you can serve multiple linked creatives by enabling **Roadblocking** for the line item.
+1. **Roadblocking**: You can enable roadblocking to serve multiple creatives together on the same page. In cases where managed publishers are using [Seller Tags (AST)](../seller-tag/seller-tag.md) to conduct a single auction for multiple ad slots on a page (or using video tags for ad pods), you can serve multiple linked creatives by enabling **Roadblocking** for the line item.
 One creative for each size must be eligible to serve on the page. All creatives will serve if ad slots are available. If more than one creative per size exists, creatives will rotate through a single slot.
 Delivery of the **Master Creative** is used for pacing and budgeting. Defining **Master Creative** and **Companion Creative** sizes is used for forecasting and reservation purposes. Roadblock delivery is based on the creatives associated with the line item. For more information, see [Target Your Inventory with Roadblocking](target-your-inventory-with-roadblocking.md).
 
     To enable **Roadblocking** for line item with other ad types (non video):
 
-      - Click **Enable Roadblocking** to the on position.
-      - Select a Master Creative size from the dropdown.
-      - Select a Companion Creative size from the dropdown.
-      - (Optional) Click **+ Add Companion** to include additional Companion Creative sizes.
+   - Click **Enable Roadblocking** to the on position.
+   - Select a Master Creative size from the dropdown.
+   - Select a Companion Creative size from the dropdown.
+   - (Optional) Click **+ Add Companion** to include additional Companion Creative sizes.
 
-     To enable Roadblocking for line item with video ad type:
+   To enable Roadblocking for line item with video ad type:
+
     1. Click **Enable Roadblocking** to turn it on.
 
     1. Select a **Master Creative Slot Position** from the dropdown. You can select one of these options: **Intro Bumper**, **Outro Bumper**, **First Slot**, or **Last Slot**. This is a mandatory field for line item with video ad type. Video roadblock line items are identified by the slot position and not the ad size of the master creative. This is because the ad size is automatically set to 1x1 for all videos.

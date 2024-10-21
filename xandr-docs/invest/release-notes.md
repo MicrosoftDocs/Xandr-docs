@@ -10,6 +10,7 @@ ms.author: shsrinivasan
 
 Read about the latest updates to Microsoft Invest.
 
+- [October 21, 2024: Microsoft Invest DSP UI Localization](release-notes-20241021.md)
 - [October 18, 2024: Household Attribution](release-notes-20241018.md)
 - [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)
 - [September 09, 2024: Microsoft Owned and Operated (O&O) Packages in Inventory Library](release-notes-20240909.md)

@@ -1,6 +1,6 @@
 ---
 title: October 21, 2024 – Microsoft Invest DSP UI Localization
-description: Find the release note for household attribution on Microsoft Invest.
+description: Find the release note on Microsoft Invest DSP UI Localization
 ms.date: 10/21/2024
 ms.topic: release-notes
 ms.author: shsrinivasan

@@ -13,7 +13,7 @@ As part of our ongoing commitment to deliver global products and services, the M
 **Key benefits**:
 - Simplified navigation through a fully localized User Interface.
 - Streamlined campaign management with localized troubleshooting tools.
-- Help documentation to support platform navigation and comprehension. For more information on the localized help documentation, refer [Microsoft Invest Product Documentation](https://learn.microsoft.com/ja-jp/xandr/invest/).
+- Localized Help documentation to support platform navigation and comprehension. 
 
 > [!NOTE]
 > **The following User Interface fields or elements remain unchanged in their original language:**

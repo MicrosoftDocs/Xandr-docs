@@ -11,7 +11,7 @@ This article will guide you through the multi-factor authentication set up proce
 When signing in for the first time, you will be directed through the process for setting up your Multi-Factor Authentication (MFA) account. You will receive a notification to **Download Auth0 Guardian for free**. There will be two primary selections (App Store for Apple and Google Play), and one alternative selection (Google Authenticator) available. You can select any of them.
 
 > [!NOTE]
-> If you have already downloaded one of the two choices of primary selections, click **I've already downloaded it** verbiage to alert the system.
+> If you have already downloaded one of the two choices of primary selections, select **I've already downloaded it** verbiage to alert the system.
 
 This task explains how to set up your MFA account.
 
@@ -20,11 +20,11 @@ This task explains how to set up your MFA account.
     If you have trouble scanning, there is a placeholder available to enter your passcode. You also have the option of using Guardian.
 
 1. A recovery code screen is displayed. In the event that you need to log in without your device, you will need this recovery code. Note this code, and keep it somewhere safe.
-1. Click the arrow **\>** to continue.
+1. Select the arrow **\>** to continue.
 
     A notification is displayed that you have successfully set up multi-factor authentication.
 
-1. When you log in to the application, enter your email address and password and click **Next**.
+1. When you log in to the application, enter your email address and password and select **Next**.
 1. If using Google Authenticator, open your MFA application to access the one-time six digit code. Enter this six-digit code to authenticate and log in.
 
     > [!NOTE]
@@ -38,5 +38,5 @@ You can use your MFA credentials to log in to your digital application user acco
 
 ## Related topics
 
-- [Troubleshooting Multi-Factor Authentication (MFA)](troubleshooting-multi-factor-authentication-mfa.md)
+- [Troubleshoot Multi-Factor Authentication (MFA)](troubleshooting-multi-factor-authentication-mfa.md)
 - [Single Credential Login and Multi-Factor Authentication FAQ](single-credential-login-and-multi-factor-authentication-faq.md)

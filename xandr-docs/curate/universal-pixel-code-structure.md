@@ -1,16 +1,16 @@
 ---
 title: Microsoft Curate - Universal Pixel Code Structure
-description: This article explains about the code structure of the universal pixel.
+description: Learn the code structure of the universal Pixel for general and custom event deployments on advertiser websites.
 ms.date: 11/16/2023
 ---
 
-# Microsoft Curate - Universal pixel code structure
+# Microsoft Curate - Universal Pixel code structure
 
-The general universal pixel code to be deployed in the `<head>` tag on each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest.
+The general Universal Pixel code to be deployed in the `<head>` tag on each page of the advertiser website is different from the pixel code required for standard and custom events, which is deployed only on pages of interest.
 
-## Universal pixel initialization code
+## Universal Pixel initialization code
 
-The following code sample shows the structure of the universal pixel code that you can deploy in the `<head>` tag of an advertiser's web page. You should include the universal pixel initialization script only once per page. Note that the `PageView` event is the default event for page view tracking, and is included on all pages.
+The following code sample shows the structure of the Universal Pixel code that you can deploy in the `<head>` tag of an advertiser's web page. You should include the Universal Pixel initialization script only once per page. Note that the `PageView` event is the default event for page view tracking, and is included on all pages.
 
 The pixel code always includes a `<noscript>` version for browsers that don’t accept JavaScript.
 

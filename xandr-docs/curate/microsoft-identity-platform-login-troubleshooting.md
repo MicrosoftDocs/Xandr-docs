@@ -23,7 +23,7 @@ Upon logging in, if you receive an error saying your email does not match any ac
 
 You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Microsoft Advertising Account Representative or Microsoft Advertising Support on our [Customer Support Portal](https://help.xandr.com/s/login/).
 
-## I can't access the API with my Microsoft credentials
+## I can't access API with my Microsoft credentials
 
 Currently Microsoft Advertising APIs do not support Microsoft credentials. To view the username and reset the password for the API, log in to one of the Microsoft Advertising products in your browser, and navigate to **Account Settings** from the top right navigation dropdown. On this page, you'll be able to see the accounts to which you have access and what the corresponding username is. You can trigger a password reset for each of the accounts here.
 
@@ -33,7 +33,7 @@ For improved security, Microsoft Advertising discourages the use of shared crede
 
 Microsoft Advertising suggests updating the account's email address to that of an individual person with the Microsoft Advertising User Manager, or by contacting your Microsoft Advertising Account Representative or Microsoft Advertising Support on our [Customer Support Portal](https://help.xandr.com/s/login/).
 
-## I don't see all the accounts I have access to in the Seat Switcher or Account Settings page
+## I don't see all accounts I have access to in Seat Switcher or Account Settings page
 
 This scenario signifies that the email or user principal name used to sign in to Microsoft does not match the user or account you are looking for. Troubleshooting of this issue requires updating the users registered in the Microsoft Advertising Platform to match the email address or user principal name that you use to sign into Microsoft.
 

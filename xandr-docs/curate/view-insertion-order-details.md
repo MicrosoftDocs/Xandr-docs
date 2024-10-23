@@ -10,9 +10,9 @@ ms.date: 11/15/2023
 
 The **Insertion Order Details** screen displays settings for a specific insertion order, essential metrics, and performance visualizations.
 
-## Getting to the Insertion Order Details Screen
+## Access Insertion Order Details screen
 
-From the **Insertion Orders** screen, click the name of the insertion order whose details you want to view. The **Insertion Order Details** screen will be displayed. The screen contains three main sections:
+From the **Insertion Orders** screen, select the name of the insertion order whose details you want to view. The **Insertion Order Details** screen will be displayed. The screen contains three main sections:
 
 - **Settings**: Provides basic information about the insertions order such as budgeting, billing, supply strategy, and reporting labels.
 - **Edit**: Edits an insertion order.
@@ -20,7 +20,7 @@ From the **Insertion Orders** screen, click the name of the insertion order whos
 - **Line Items**: Provides a list of the line items currently associated with the insertion order.
 - **Associated Objects**: Provides a list of associated objects with the insertion order.
 
-## Viewing Insertion Order settings
+## View Insertion Order settings
 
 The settings that display here are read-only and can be edited by clicking **Edit** at the top of the **Insertion Order Details** screen. For more information, see [Create an Insertion Order](create-an-insertion-order.md).
 
@@ -38,7 +38,7 @@ The settings that display here are read-only and can be edited by clicking **Edi
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the **Details** pane.
+1. Select the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

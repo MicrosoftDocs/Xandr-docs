@@ -35,14 +35,14 @@ From the **Advertiser Details** screen, you can create a curated deal line item 
 
 ### Insertion Orders screen
 
-1. From the **Advertiser Details** screen, click **Insertion Orders** to view the advertiser's insertion orders.
-1. Click on an insertion order from the list to view the **Insertion Order** details screen.
-1. In the **Line Items** section, click **New Deal Line Item**.
+1. From the **Advertiser Details** screen, select **Insertion Orders** to view the advertiser's insertion orders.
+1. Select an insertion order from the list to view the **Insertion Order** details screen.
+1. In the **Line Items** section, select **New Deal Line Item**.
 
 ### Line Items screen
 
-1. From the **Advertiser Details** screen, click **Line Items** to view the advertiser's line items.
-1. Click **New Deal Line Item**.
+1. From the **Advertiser Details** screen, select **Line Items** to view the advertiser's line items.
+1. Select **New Deal Line Item**.
 
 ## Deal type
 
@@ -52,7 +52,7 @@ In the **Deal Type** section, select **Curate a Deal**.
 
 In the **Basic Setup** section, enter the basic details for the curated deal line item.
 
-- **Insertion Orders** - The insertion order associated to the line item. If you create the line item from the **Insertion Order Details** screen, the insertion order is automatically associated. Otherwise, click **Edit** to associate the line item with an insertion order.
+- **Insertion Orders** - The insertion order associated to the line item. If you create the line item from the **Insertion Order Details** screen, the insertion order is automatically associated. Otherwise, select **Edit** to associate the line item with an insertion order.
 - **Ad Type** - Select the type of ad you plan to use. Possible values are  **Banner**, **Video** (includes audio types as well), and **Native**.
   
    > [!NOTE]
@@ -71,13 +71,13 @@ In the **Basic Setup** section, enter the basic details for the curated deal lin
 
 1. Select **Create a Deal**.
 1. Enter a **Deal Name** (this curated deal name is exposed to the buyer).
-1. Click **Edit** under **Buyer** to choose a buyer for the deal.
+1. Select **Edit** under **Buyer** to choose a buyer for the deal.
 1. On the **Select Buyer** screen, select an available buyer (you can search by Name or ID).
 
    > [!NOTE]
    > You cannot change the selected buyer after the curated deal line item is created and saved.
 
-1. Click **Add**.
+1. Select **Add**.
 1. Enter the deal code in **Code** (optional, this is typically used by external buyers for deal mapping).
 1. Enter a description for your deal in the **Description**  box (optional).
 
@@ -93,11 +93,11 @@ Details for the newly created or existing deal display in **Deal Details** inclu
 > [!NOTE]
 > You may select **Choose Existing** when creating a curated deal, but this is not recommended unless you have already inactivated the original line item associated with the deal. For ease of maintenance, it is recommend that you use only one curated deal line item per curated deal. If you do choose to use an existing curated deal for this curated deal line item:
 >
-  > 1. Click **Select Deal** to choose an existing deal.
-  > 1. On the **Select a Deal** screen, select a deal (you can search by Name or ID) and click **Select**.
+  > 1. Select **Select Deal** to choose an existing deal.
+  > 1. On the **Select a Deal** screen, select a deal (you can search by Name or ID) and select **Select**.
   > 1. Edit the **Deal Name** if desired. Please note that this name is shared with the buyer.
   >
-  > If you select the wrong deal you can click **Deselect** to open the **Select a Deal** screen again and select the deal you want.
+  > If you select the wrong deal you can select **Deselect** to open the **Select a Deal** screen again and select the deal you want.
 
 ## Revenue type
 
@@ -133,7 +133,7 @@ Flights let you set up limited deals with start and end dates as well as “ever
 1. Select either **Set Dates** or **No End Date**.
     - **Set Dates**: Enter a **Start Date** and **End Date** for each of the line item's flights. The hour settings for **Start Date** and **End Date** will default to 12:00 AM and 11:59 PM respectively (you can override the defaults). Flights may not overlap one another. All flight dates must fall within the billing period dates of the parent insertion order and be a minimum of one day in duration.
     - **No End Date**: Enter the **Start Date** for the line item. You may not create additional flights for this line item because it has no end date.
-1. Click **Add Another Flight** if you want additional flights (this option is not available if you select **No End Date**).
+1. Select **Add Another Flight** if you want additional flights (this option is not available if you select **No End Date**).
 
    > [!NOTE]
    > You cannot change the **Start Date** of a flight once that date has passed. You can, however, add multiple flights to any curated deal line item.
@@ -167,7 +167,7 @@ By default, your curated deal line item will target all universal categories. Ho
      > [!NOTE]
      > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-1. Click **Add**.
+1. Select **Add**.
 
 ### Seller categories
 
@@ -180,14 +180,14 @@ By default, your curated deal line item will target all custom categories. Howev
    > [!NOTE]
    > When targeting more than one custom category, the categories have an OR relationship. For example, if you include "Custom Category 1" and "Custom Category 2", you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
-2. Click **Add**.
+2. Select **Add**.
 
 ### Seller inventory
 
 By default, your curated line item will target all sellers. However, you can narrow targeting to include or exclude specific sellers. Additionally, if a seller has chosen to expose their publishers via the open exchange, you can include or exclude specific publishers:
 
 1. On the **Seller Inventory** tab, include or exclude sellers.
-    - Click on a seller to view the publishers they have exposed for targeting and include or exclude specific publishers.
+    - Select a seller to view the publishers they have exposed for targeting and include or exclude specific publishers.
 
 ## Inventory type
 
@@ -212,7 +212,7 @@ Select an allowlist you would like to apply to this line item. You may select fr
 
 Do not use (not supported for curated deal line items).
 
-## Targeting
+## Targeting options
 
 You can target curated deal line items in the same way you can target augmented line items. See [Buy-Side Targeting](buy-side-targeting.md) for detailed setup information on targeting. See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 
@@ -223,25 +223,24 @@ You can target curated deal line items in the same way you can target augmented 
 
 ### Geography
 
-To quickly target countries, click in the **Geography** field and select the relevant checkboxes. To set up more advanced geography restrictions click **Additional Geo Restrictions**.
+To quickly target countries, select in the **Geography** field and select the relevant checkboxes. To set up more advanced geography restrictions select **Additional Geo Restrictions**.
 See [Additional Geo Restrictions](additional-geo-restrictions-ali.md) for more details.
 
 ## Deal creative criteria
 
-You can edit the following creative attributes for a curated deal by clicking **Edit** under the attribute,
-selecting the appropriate values, and clicking **Set**:
+You can edit the following creative attributes for a curated deal by selecting **Edit** under the attribute,
+selecting the appropriate values, and selecting **Set**:
 
 - **Media type**
 
 ## Reporting labels
 
-Enter any reporting labels if desired. Reporting labels let you
-associate a person or other metadata with advertisers. You can then run reports using these labels. See [Reporting Guide](reporting-guide.md) for more information.
+Enter any reporting labels if desired. Reporting labels let you associate a person or other metadata with advertisers. You can then run reports using these labels. See [Reporting Guide](reporting-guide.md) for more information.
 
 ## Comments
 
 Enter any comments for this curated deal line item.
 
-## Save the curated deal line item
+## Save line item for curated deal
 
-Click **Save** to save the curated deal line item or **Save and Duplicate** to save the curated deal line item and duplicate the settings to a new line item.
+Select **Save** to save the curated deal line item or **Save and Duplicate** to save the curated deal line item and duplicate the settings to a new line item.

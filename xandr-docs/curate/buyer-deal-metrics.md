@@ -140,7 +140,7 @@ Follow these steps to run your report. Refer to [Dimensions](#dimensions) and [M
 
 1. Select the relevant filters to limit the data displayed to just the information you want.
 
-    For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking **Edit**), a selection panel appears. Select items in the **Available** list (left), then click **Add** to include them in the **Chosen** list (right).
+    For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 
 1. Group by dimension.
 
@@ -159,4 +159,4 @@ Follow these steps to run your report. Refer to [Dimensions](#dimensions) and [M
     - **Add to scheduled reports**: Run this report automatically at specified times and have it sent to one or more email addresses.
     - **Name this report**: Give this report with its current settings a name for future reference.
 
-1. Click **Run report** to send your report request.
+1. Select **Run report** to send your report request.

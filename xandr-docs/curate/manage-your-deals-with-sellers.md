@@ -9,14 +9,14 @@ ms.date: 11/14/2023
 
 You can manage all deals you have with sellers on the **Deals** screen. You can view basic and advanced deal metrics, monitor each deal's health, and run detailed reports.
 
-You can also manage your deals with a specific seller on the Partner Details screen, see [Partnership Details Screen](partnership-details-screen-buyer-view.md) for more information.
+You can also manage your deals with a specific seller on the **Partner Details** screen, see [Partnership Details Screen](partnership-details-screen-buyer-view.md) for more information.
 
 > [!NOTE]
 > Information the user should notice even if skimmingNote: For information on setting deal preferences, declining deals, managing the status of deals, and assigning internal names (deal alias) to deals see [Control Your Deals with Sellers](control-your-deals-with-sellers.md).
 
-## Access the Deals screen
+## Access Deals screen
 
-To reach the **Deals** screen, select **Inventory \> Seller Deals**.
+To reach the **Deals** screen, select **Inventory** \> **Seller Deals**.
 
 ## View basic and advanced deal metrics
 
@@ -61,17 +61,17 @@ By default, you see all current deals. Use the filters in the left column to fil
 
 ## View a specific deal's details
 
-Click on a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired.
+Select a deal to display the **Details** pane, where all of the deal's details are visible. You can use the slider to resize the pane as desired.
 
 ## Generate deal reports
 
-Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then click **Show in Reporting**. A new tab opens displaying the [Network Analytics Report](../monetize/network-analytics-report.md) with the selected deals as filters and **Deal** selected as a dimension.
+Run a report to see how your deals are performing. Check the checkbox near the desired deals, and then select **Show in Reporting**. A new tab opens displaying the [Network Analytics Report](../monetize/network-analytics-report.md) with the selected deals as filters and **Deal** selected as a dimension.
 
-Click **Run Report** in the reporting screen to run the report with these settings, or set additional settings as desired and then click **Run Report**.
+Select **Run Report** in the reporting screen to run the report with these settings, or set additional settings as desired and then select **Run Report**.
 
 ## Switch to seller mode
 
-If you are a network that also represents buyers, click the **Buyers** button to view all of the deals you have as a seller.
+If you are a network that also represents buyers, select the **Buyers** button to view all of the deals you have as a seller.
 
 ## Related topics
 

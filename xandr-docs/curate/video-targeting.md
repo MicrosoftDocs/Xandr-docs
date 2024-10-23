@@ -1,23 +1,23 @@
 ---
-title: Microsoft Curate - Video Targeting
+title: Microsoft Curate - Target Video Inventory
 description: This page covers two ways to target video inventory, by position or context and by playback method.
 ms.date: 11/14/2023
 
 ---
 
 
-# Microsoft Curate - Video targeting
+# Microsoft Curate - Target video inventory
 
 You can target video inventory based on the playback method, player size, and position.
 
 > [!NOTE]
 > Video content targeting requires content metadata integration. Please contact your Microsoft account manager for enablement. If you are not integrated with video content metadata, values passed in content object fields will not be transmitted to DSP partners.
 
-In the **Viewability & Environment Targeting** section of a line item, click the pencil icon next to **Video Player**.
+In the **Viewability & Environment Targeting** section of a line item, select the pencil icon next to **Video Player**.
 
 You can target video creatives in any or all of the following ways:
 
-- [Microsoft Curate - Video targeting](#microsoft-curate---video-targeting)
+- [Microsoft Curate - Target video inventory](#microsoft-curate---target-video-inventory)
   - [Target video inventory by position or context](#target-video-inventory-by-position-or-context)
   - [Target video inventory by playback method](#target-video-inventory-by-playback-method)
   - [Target video inventory by player width](#target-video-inventory-by-player-width)
@@ -41,9 +41,9 @@ The options available to target inventory by position, also called context:
 You can target inventory that accepts creatives with the following playback methods:
 
 - **Auto-play, sound on** - Video creative starts playing with sound on as soon as the page loads.
-- **Auto-play, sound off** - Video creative starts playing with sound off as soon as the page loads. Sound comes on when the user clicks on the creative.
+- **Auto-play, sound off** - Video creative starts playing with sound off as soon as the page loads. Sound comes on when the user selects on the creative.
 - **Auto-play, sound unknown** - Video creative starts playing as soon as the page loads, but no sound information is specified.
-- **Click-to-play** - Video creative is static on the page till the user clicks to play.
+- **Click-to-play** - Video creative is static on the page till the user selects to play.
 - **Mouse-over** - Video starts playing when the user moves the mouse over the creative.
 - **No playback method provided** - Target inventory where no initiation method information is provided (e.g., YouTube inventory).
 
@@ -64,4 +64,4 @@ Player inventory is available across all supply types (web, mobile web, and mobi
 > [!TIP]
 > For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not classified.
 
-You can either click the graphic to make a selection or check the appropriate checkbox.
+You can either select the graphic to make a selection or check the appropriate checkbox.

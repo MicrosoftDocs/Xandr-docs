@@ -25,7 +25,7 @@ Before you begin, ensure that you've created the objects that hold all your deal
 
 You can create a new deal line item from the **Curated Deals** screen.
 
-1. Go to **Packages > Curated Deals**.
+1. Go to **Packages** > **Curated Deals**.
 1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from a template, see [Create a deal line item from a template](#create-a-deal-line-item-from-a-template).
 1. Search (by name or ID) and select the desired advertiser and insertion order for the respective **Advertiser** and **Insertion Order** fields.
 
@@ -46,7 +46,7 @@ In the **Basic Settings** section, enter the following details for the deal line
 
 The **Deal Details** section offers a detailed overview of the key components that define your deal.
 
-- **Buyer**: Select a buyer for the deal by clicking on the **Edit (pencil icon)** option under **Buyer**. From the **Buyer** screen, choose an available buyer by searching their name or ID.
+- **Buyer**: Select a buyer for the deal by selecting the **Edit (pencil icon)** option under **Buyer**. From the **Buyer** screen, choose an available buyer by searching their name or ID.
 
     > [!TIP]
     > If the list of buyers is extensive, select the **DSP** first before searching for the **Buyer** to narrow down the options.
@@ -82,7 +82,7 @@ The **Deal Details** section offers a detailed overview of the key components th
     > [!NOTE]
     > If you're using Microsoft Curate for creating other Line Item types (GDALI, ALI, etc.), this priority system is shared across all Line Item types. -->
 
-#### Deal targeting
+#### Target deals
 
 A deal line item has the following targeting options:
 
@@ -137,7 +137,7 @@ The **Advanced Targeting** section offers advanced settings and targeting option
 - **Page properties**: Target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. For more information, see [Page properties targeting](page-properties-targeting.md).
 - **Frequency and Recency**: A frequency cap is the total number of ads shown to a user. A recency cap is the pace at which ads are shown to a user. **Frequency and Recency** caps can be set on deal line items (as well as on the parent insertion order and advertiser). To apply frequency and recency caps, set the **Frequency and Recency** toggle to **Caps on** and enter the appropriate **Frequency** and **Recency** settings. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md). -->
 
-#### Scheduling
+#### Schedule agreement
 
 The **Scheduling** section reflects a specific agreement between you and the advertiser.
 
@@ -212,7 +212,7 @@ The **Deal Summary** pane offers a detailed overview of the deal, dynamically po
 > [!NOTE]
 > By default, the **Deal Summary** pane displays the required fields that must be configured.
 
-### Save the deal line item
+### Save deal line item
 
 Select **Save** to save the deal line item, or **Save and Duplicate** if you wish to duplicate this deal line item.
 
@@ -223,7 +223,7 @@ Select **Save** to save the deal line item, or **Save and Duplicate** if you wis
 
 This feature enables publishers to create a new deal line item using an existing deal as a template. The following sections outlines the three ways to accomplish this task.
 
-### Use the pre-selection screen
+### Use pre-selection screen
 
 You can create a new deal line item from the pre-selection screen by selecting the **Create from Template** option under **Creation Mode**.
 
@@ -233,16 +233,16 @@ You can create a new deal line item from the pre-selection screen by selecting t
 1. Review the summary of settings and select **Select This Template**. This action applies all the template settings to your deal settings.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
 
-### Use the monitoring grid view
+### Use monitoring grid view
 
 1. Search for the deal line item you wish to use as a template.
 1. In the **Line Name** column, hover over the deal line item, and two icons will appear. Select the **Use as Template** icon.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
 
-### Use the monitoring settings pane
+### Use monitoring settings pane
 
 1. Search for the deal line item you wish to use as a template.
-1. In the **Line Name** column, click on the deal line item to expand the **Settings** pane.
+1. In the **Line Name** column, select the deal line item to expand the **Settings** pane.
 1. Select the **Use as Template** option located at the upper-right corner of the page.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the deal line item. Alternatively, select **Save and Duplicate** if you wish to duplicate this deal line item.
 

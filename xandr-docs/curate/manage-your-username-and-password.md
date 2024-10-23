@@ -22,11 +22,11 @@ If you've entered the incorrect username or password three times, you will be lo
 
 If you cannot sign in to Microsoft Curate due to a forgotten username, follow these steps:
 
-1. Go to the login page of Microsoft Advertising Curate and click **Reset Password**.
+1. Go to the login page of Microsoft Advertising Curate and select **Reset Password**.
 
-1. On the **Reset Password** screen, click **Forgot Username**?
+1. On the **Reset Password** screen, select **Forgot Username**?
 
-1. Enter your email address and click **Send Email**.
+1. Enter your email address and select **Send Email**.
 
     Within a few minutes, you'll receive an email including all of the usernames associated with the email address you entered. Each username is listed with its status so that you can more easily identify your current username.
 
@@ -49,14 +49,14 @@ To change your password either after it expires, or if you have [forgotten your 
     - At least one lowercase letter (a-z)
     - At least one digit (0-9)
     - At least one special character (such as \#, $, ? %, &)
-1. Retype the password to confirm it and click **Submit**.
+1. Retype the password to confirm it and select **Submit**.
 1. You will be redirected to the login page of Microsoft Advertising Curate, where you can sign in with your username and new password. You will also receive a confirmation email of the password reset.
 
 ### Request a forgotten password
 
-1. If you forgot your password, go to the login page of Microsoft Advertising Curate and click **Reset Password**.
-1. Enter your username and click **Send Email**.
-1. Within a few minutes, you'll receive an email including a link. Click the link to create a new password as described above. Note that the link remains valid for 16 hours.
+1. If you forgot your password, go to the login page of Microsoft Advertising Curate and select **Reset Password**.
+1. Enter your username and select **Send Email**.
+1. Within a few minutes, you'll receive an email including a link. Select the link to create a new password as described above. Note that the link remains valid for 16 hours.
 
 > [!NOTE]
 > If you don't see the email in your inbox, be sure to check your spam folder. If you still don't see it, the email address you entered might not be valid. Try again and submit a support request at [Customer Care](https://help.xandr.com/) if you continue to have problems.

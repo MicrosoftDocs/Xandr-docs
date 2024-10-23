@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Viewability FAQ
-description: Learn all about Viewability FAQs in this page.   
+description: Discover viewability metrics and reporting insights in this FAQ module, including data and measurement methods.
 ms.date: 11/16/2023
 
 
@@ -15,7 +15,7 @@ Learn concepts on Viewability FAQ in this module.
 
 The following questions address where to find Microsoft Advertising viewability data and the key metrics associated with it.
 
-## In reporting, what is the definition used for viewable impressions?
+## In reporting, what definition is used for viewable impressions?
 
 Our reporting is based on the IAB standard definition: 50% of the area of the creative (30% of the area of a large size creative) in view for 1 continuous second.
 
@@ -68,17 +68,17 @@ The possible causes could be:
 
 "blank" and "default"
 
-## When does the Microsoft Advertising viewability script start measuring? Will the script wait for the creative to load before measuring?
+## When does Microsoft Advertising viewability script start measuring? Will script wait for creative to load before measuring?
 
 The Microsoft Advertising viewability script waits for the creative content to load before measuring for viewability. This may be a source of discrepancies with other measurement vendors, in particular when the creative content is a large file.
 
-## Will the Microsoft Advertising viewability script slow down my page load or otherwise impact my page content?
+## Will Microsoft Advertising viewability script slow down my page load or otherwise impact my page content?
 
 No. The script, which is approximately 20KB, is served from a globally distributed CDN that is optimized for speed and reliability. All script calls are made asynchronously.
 
 The viewability script is tested continuously across all major browsers and operating systems to ensure, among other things, that it does not impact the page content. The script has been in use since 2007, and extensive real-world usage confirms the ad viewer’s experience is not impacted.
 
-## How does the Microsoft Advertising viewability script determine whether a human is viewing the ad?
+## How does Microsoft Advertising viewability script determine whether a human is viewing ad?
 
 The Microsoft Advertising Platform has robust policy and filtering for non-human and other invalid traffic.
 

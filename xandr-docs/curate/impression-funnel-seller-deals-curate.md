@@ -43,21 +43,21 @@ The **Impression Funnel: Seller Deals** table includes the following columns:
 
 The **Impression Funnel: Seller Deals** columns can include up to three different kinds of values.
 
-You can hover over a column header and click the **ellipsies** button. From the **Sort** pop-up window you can choose the appropriate values to sort the columns.
+You can hover over a column header and select the **ellipsies** button. From the **Sort** pop-up window you can choose the appropriate values to sort the columns.
 
 | Type of value | Description | Example |
 |--|--|--|
-| Amount | This is the middle value in the cell and explains the amount for this metric. | In the **Bid Requests** column, this value describes the number of bid requests. <br> Click the **ellipsies > Bid Request** button to sort the column by this value. |
-| Impression funnel change | This is the top value in the cell and explains how this metric has changed compared to the previous step in the funnel. This value is available for the metrics: <br>- Bid Requests <br>- Bids <br> - Wins <br> - Renders | In the **Bid Requests** column, this value describes bid requests as a proportion of imps matched. <br> Click the **ellipsies > Bid Request Rate** button to sort the column by this value. |
-| Relative change as a percentage | This is the bottom value in the cell and explains how this metric has changed over time. <br> This value updates according to the selected time period. <br> The value appears in **red**, if the percentage chnage is less than **3%** and **green**, if it is greater than **+3%**. | In the **Bid Requests** column when **Last Hour** is selected, this value describes the percentage change in the number of bid requests that occurred in the last hour versus the preceding hour. <br> Click the **ellipsies > Relative Change** button to sort the column by this value. |
-| Relative change as an amount | This is the bottom value in the cell and explains how this metrics has changed over time. <br> This value updates according to the selected time period. | In the **Bid Requests** column when **Last Hour** is selected, this value describes change in the number of bid requests which occurred in the last hour versus the preceding hour. <br> Click the **ellipsies > Total Change** button to sort the column by this value. |
+| Amount | This is the middle value in the cell and explains the amount for this metric. | In the **Bid Requests** column, this value describes the number of bid requests. <br> Select the **ellipsies > Bid Request** button to sort the column by this value. |
+| Impression funnel change | This is the top value in the cell and explains how this metric has changed compared to the previous step in the funnel. This value is available for the metrics: <br>- Bid Requests <br>- Bids <br> - Wins <br> - Renders | In the **Bid Requests** column, this value describes bid requests as a proportion of imps matched. <br> Select the **ellipsies > Bid Request Rate** button to sort the column by this value. |
+| Relative change as a percentage | This is the bottom value in the cell and explains how this metric has changed over time. <br> This value updates according to the selected time period. <br> The value appears in **red**, if the percentage chnage is less than **3%** and **green**, if it is greater than **+3%**. | In the **Bid Requests** column when **Last Hour** is selected, this value describes the percentage change in the number of bid requests that occurred in the last hour versus the preceding hour. <br> Select the **ellipsies > Relative Change** button to sort the column by this value. |
+| Relative change as an amount | This is the bottom value in the cell and explains how this metrics has changed over time. <br> This value updates according to the selected time period. | In the **Bid Requests** column when **Last Hour** is selected, this value describes change in the number of bid requests which occurred in the last hour versus the preceding hour. <br> Select the **ellipsies > Total Change** button to sort the column by this value. |
 
 > [!NOTE]
 > To download the data from the table, you can navigate to the **Troubleshooting Reports** panel.
 >
-> - Click on the **Troubleshooting Reports** panel.
-> - From the **Report Type** field click on **Deal Metrics Report** and select **Seller Deal** from the **Breakout Deal Metrics By** field and click **Run Report** to generate the report.
-> - Click on **Export to CSV**, to download the report in CSV format.
+> - Select the **Troubleshooting Reports** panel.
+> - From the **Report Type** field, select **Deal Metrics Report**. Then select **Seller Deal** from the **Breakout Deal Metrics By** field and select **Run Report** to generate the report.
+> - Select **Export to CSV**, to download the report in CSV format.
 
 ## Related topics
 

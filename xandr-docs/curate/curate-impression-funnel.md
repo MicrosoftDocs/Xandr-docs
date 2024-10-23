@@ -16,7 +16,7 @@ You can use the **Impression Funnel** to:
 
 The Impression Funnel includes the following settings and metrics:
 
-- **Buyers** - The buyers associated with the line item. Click the **Edit** icon to change buyers.
+- **Buyers** - The buyers associated with the line item. Select the **Edit** icon to change buyers.
   
   > [!NOTE]
   > Selecting a buyer filters the **Impression Funnel** issues and suggested actions to that specific buyer.

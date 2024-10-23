@@ -4,7 +4,6 @@ description: Learn how you can use geo radius segments for geographical targetin
 ms.date: 11/14/2023
 ---
 
-
 # Microsoft Curate - Geo Radius Segments
 
 A geo radius segment is a list of latitude, longitude, and radius data. You can use geo radius segments for geographical targeting of multiple user locations. When you create a geo radius segment, you add latitude, longitude, and radius data either manually (copy and paste) or by importing a file. Once the geo radius segment is created, these locations are easily targetable on your line item using the segment ID (see [Segment Targeting](segment-targeting.md)) for more information.
@@ -20,7 +19,7 @@ There are five steps to creating a geo radius segment:
 
 ### Step 1. Get started
 
-Open the [Location Manager](location-manager.md) page and click **New** to open the **Create Geo Radius Segment** dialog.
+Open the [Location Manager](location-manager.md) page and select **New** to open the **Create Geo Radius Segment** dialog.
 
 ### Step 2. Create a new Geo Radius Segment
 

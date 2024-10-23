@@ -4,7 +4,7 @@ description: In this article, understand what App Targeting is and the different
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - App targeting
+# Microsoft Curate - App target options
 
 > [!NOTE]
 > This form of targeting is only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
@@ -16,28 +16,28 @@ When your campaign is set to serve on mobile app inventory (see [Supply Type Tar
 
 ## Target predefined app lists
 
-1. In the **Targeting** section, click **Edit** next to **Inventory**.
+1. In the **Targeting** section, select **Edit** next to **Inventory**.
 1. On the **App Lists** tab, include or exclude relevant lists. Note that it is not possible to include some app lists and exclude others; all targeted app lists must be either included or excluded.
 
     > [!NOTE]
     > There is an OR relationship, not an AND relationship, between included app lists and included individual apps.
 
-1. Click **Add**.
+1. Select **Add**.
 
 ## Target specific mobile apps
 
-1. In the **Targeting** section, click **Edit** next to **Inventory**.
+1. In the **Targeting** section, select **Edit** next to **Inventory**.
 1. On the **Specific Apps** tab, target up to 25 specific app IDs as follows:
     1. Enter the app IDs in a list separated by lines or commas.
-    1. Click **Add Apps**.
+    1. Select **Add Apps**.
     1. Choose whether to **Include** or **Exclude** the app IDs. Note that it is not possible to include some apps and exclude others; all targeted apps must be either included or excluded.
 
         > [!NOTE]
         > There is an OR relationship, not an AND relationship, between included domain lists and included individual domains.
 
-1. Click **Add**.
+1. Select **Add**.
 
-## How to find app IDs
+## Find app IDs
 
 To find the ID for an Android or IOS app, locate the app's detail webpage by searching for the app in the relevant online store (e.g., iTunes or Google Play).
 

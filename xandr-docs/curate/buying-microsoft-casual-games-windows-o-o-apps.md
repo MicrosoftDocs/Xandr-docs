@@ -164,11 +164,11 @@ For more information, see [Formats and Specifications](#formats-and-specificatio
 
 ## Instructions for targeting
 
-There are three different ways you can target Microsoft Casual Games:
+There are two different ways you can target Microsoft Casual Games:
 
 - [Target Microsoft Casual Games in Campaign Setup](#target-microsoft-casual-games-in-campaign-setup)
 <!-- [Target Packages](#target-packages)-->
-- [Target Microsoft Casual Games through the API](#target-microsoft-casual-games-through-the-api)
+- [Target Microsoft Casual Games through API](#target-microsoft-casual-games-through-api)
 
 For information on general inventory targeting, see [Buy Microsoft Inventory](buying-microsoft-inventory.md).
 
@@ -178,18 +178,18 @@ To target Microsoft Casual Games inventory when setting up a line item or campai
 
 1. In the **Device and Supply Type** section, target all device types (Desktop & Laptops, Tablets, and Phones).
 1. In the **Inventory Quality** section, select **Serve on any inventory**.
-1. In the **Inventory** section, click **Edit**.
+1. In the **Inventory** section, select **Edit**.
 1. On the **3rd Party Inventory**, search **Microsoft Advertising Exchange (280)**.
 1. On the **Search for Publishers**, select **Microsoft Casual Games (679569)**.
-1. Click **Add**.
+1. Select **Add**.
 
 To target Microsoft Casual Games inventory when setting up an Augmented Line Item:
 
 1. In the **Basic Setup** section, select **Open Exchange**.
 1. In the **Programmable Splits** section, create **1 new split**.
 1. On the new **Split 1** line select the Pencil edit icon next to the name.
-1. In the **Split** panel, click the **Select Condition** drop down and enable **Publisher**.
-1. In the **Publisher** text field, enter **679569** and click the **Add** button.
+1. In the **Split** panel, select the **Select Condition** drop down and enable **Publisher**.
+1. In the **Publisher** text field, enter **679569** and Select the **Add** button.
 
 <!--### Target Packages
 
@@ -215,7 +215,7 @@ To target Microsoft Casual Games inventory, use the [Package Marketplace](../mon
 
 1. Click **Get Deals** to generate the Deal ID to target.-->
 
-### Target Microsoft Casual Games through the API
+### Target Microsoft Casual Games through API
 
 You can target Microsoft Casual Games through the API on the [Profile Service](../digital-platform-api/profile-service.md). To target placements on specific games, use the IDs below in the `site_targets` array.
 

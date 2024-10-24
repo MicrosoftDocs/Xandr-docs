@@ -21,8 +21,7 @@ Certain legitimate ZIP or postal codes are unrecognizable or invalid within the 
 
 ## Manage postal code lists
 
-You can create a Postal Code List at the Member level. A Postal Code List may contain one or more postal codes. Postal
-codes can be added to multiple Postal Code Lists. However, a postal code can be added only once to a single Postal Code List.
+You can create a Postal Code List at the Member level. A Postal Code List may contain one or more postal codes. Postal codes can be added to multiple Postal Code Lists. However, a postal code can be added only once to a single Postal Code List.
 
 Postal codes can be added to a list by either:
 
@@ -38,17 +37,15 @@ Postal codes can be added to a list by either:
 ### Create a new postal code list
 
 1. Select **Audiences** >  **Location Manager**.
-2. On the Location Manager page, select **New >  Postal Code List**.
-3. Provide the following details in the **Create A Location Target** page:
-    1. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The maximum number of characters allowed is 255.
-    2. **Code**: (optional) Enter a code for the Postal Code List.
-    3. **Description**: (optional) Enter a description for the Postal Code List that gives a brief
-        definition of the postal code location target. For example, enter "Postal Code List for Noor-Holland region in the city of
-        Amsterdam, Netherlands".
-4. Click **Next**.
-5. On the **Location Target Features** page, select one of the following options:
-    - **Copy and Paste**: If you select this option, on the next page you can enter the postal codes to include in the Postal Code List. The codes need to be separated by a comma or hard return. When you're done, click **Next**.
-    - **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, click **Next**.
+1. On the **Location Manager** page, select **New** >  **Postal Code List**.
+1. Provide the following details in the **Create A Location Target** page:
+    a. **Name**: Enter the name of the Postal Code List. For example, enter "NetherlandsLoc1". The maximum number of characters allowed is 255.
+    b. **Code**: (optional) Enter a code for the Postal Code List.
+    c. **Description**: (optional) Enter a description for the Postal Code List that gives a brief definition of the postal code location target. For example, enter "Postal Code List for Noor-Holland region in the city of Amsterdam, Netherlands".
+1. Select **Next**.
+1. On the **Location Target Features** page, select one of the following options:
+    a. **Copy and Paste**: If you select this option, on the next page you can enter the postal codes to include in the Postal Code List. The codes need to be separated by a comma or hard return. When you're done, select **Next**.
+    b. **Import from file**: If you select this option, on the next page you can browse for and upload a CSV, Excel, or Text file that contains the postal codes. Once uploaded, select **Next**.
 
     > [!NOTE]
     >
@@ -58,7 +55,7 @@ Postal codes can be added to a list by either:
 6.On the **Review Location Target** page, the following tabs are available:
     - **Successfully Imported** displays the list of postal codes that were successfully imported to the Postal Code List with the **Code**, **Country Name**, **Country ID** of each postal code.
     - **Did Not Import** displays postal codes that failed to import properly.
-7. Click **Save** to complete the setup.
+7. Select **Save** to complete the setup.
 
 ## Target postal code lists and postal codes on line items
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Reporting on Viewability
+title: Microsoft Curate - Report on Viewability
 description: In this article, explore viewability definitions, metrics, reports, best practices, and learn how to incorporate viewability metrics.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Reporting on viewability
+# Microsoft Curate - Report on viewability
 
 This page defines viewability metrics that are available and best practices for making optimal use of them.
 
@@ -41,17 +41,17 @@ Not all impressions are successfully measured, because of one, or more of the fo
 > [!NOTE]
 > An impression that could not be measured will not have a viewability status.
 
-## Viewability reporting
+## Viewability report
 
 ### Reports with viewability metrics
 
 Viewability metrics are included in several reports in the reporting system:
 
-### How to add viewability metrics?
+### Add viewability metrics
 
 Go to the appropriate tab and select **Reporting** from the navigation menu. Select the type of report from the drop-down menu.
 
-Viewability indicators are located in the **Metrics** section. Click the **Edit** button to select the desired indicators.
+Viewability indicators are located in the **Metrics** section. select the **Edit** button to select the desired indicators.
 
 > [!TIP]
 > For an explanation of how metrics work, see [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
@@ -68,7 +68,7 @@ For more information, see [Log-Level Data Feeds](../log-level-data/log-level-dat
 
 ## Best practices
 
-### Viewable Imps and Viewability Rate
+### Viewable Imps and viewability rate
 
 If you select **Viewable Imps** and **Viewability Rate**, it is recommended that you add **View-Measured Imps** as well.
 

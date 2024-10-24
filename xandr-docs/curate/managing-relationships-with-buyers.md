@@ -17,7 +17,7 @@ As a seller, you can use the **Partner Center** to:
 - Track revenue from a specific buyer to gain insight into the partnership and trends
 - [Partner Center Screen - Seller View](partner-center-screen-seller-view.md)  
 
-    View your preferred partners, search all buyers, manage your profile, manage your default buyer controls, edit a specific buyer's controls, set preferred buyers, and review impression and click statistics for each buyer.
+    View your preferred partners, search all buyers, manage your profile, manage your default buyer controls, edit a specific buyer's controls, set preferred buyers, and review impression and select statistics for each buyer.
 - [Partnership Details Screen](partnership-details-screen-buyer-view.md)
 
     Review and manage your relationship with a specific buyer by tracking overall revenue trends, view the buyer's top brands on your inventory, view your top publishers for the buyer, view buyer statistics, and send messages directly to the buyer in Curate.

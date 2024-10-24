@@ -39,7 +39,7 @@ Features that are yet to be supported by Microsoft Advertising are:
 - Automatic Provisioning of Users
 - Account Linking between multiple email addresses
 
-## Authentication options with the Microsoft Identity Platform
+## Authentication options with Microsoft Identity Platform
 
 Microsoft Advertising's integration with the Microsoft Identity Platform allows users to authenticate with two options:
 
@@ -52,9 +52,9 @@ Microsoft Identity Platform enables organizations to authenticate their users to
 
 ### Personal Microsoft accounts
 
-If you do not have an organization level integration with Microsoft Entra (formerly Azure Active Directory) or the Microsoft Identity Platform, you can still use the Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more details about this process, click [here](https://account.microsoft.com/account/Account).
+If you do not have an organization level integration with Microsoft Entra (formerly Azure Active Directory) or the Microsoft Identity Platform, you can still use the Microsoft Identity Platform by registering your email address as a Microsoft Account, or creating a new account with Microsoft. For more details about this process, select [here](https://account.microsoft.com/account/Account).
 
-## Prerequisites for signing in with the Microsoft Identity Platform
+## Prerequisites for signing in with Microsoft Identity Platform
 
 - Have a Microsoft Identity Platform account
   - If you have a corporate managed account which is used to login to other Microsoft products, this should already be configured.

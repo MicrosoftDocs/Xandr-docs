@@ -48,7 +48,7 @@ Segment pixels belong either to the entire network or to a specific advertiser. 
 
 ### Conversion pixel
 
-A conversion pixel is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the user clicking on or viewing one of the advertiser's creatives previously.
+A conversion pixel is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the user selecting or viewing one of the advertiser's creatives previously.
 
 You can have many conversion pixels under a single advertiser. You associate each conversion pixel to many line items.
 

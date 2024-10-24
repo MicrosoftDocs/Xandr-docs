@@ -10,13 +10,13 @@ Follow the steps provided on this page to export a segment pixel.
 
 ## Step 1: Get started
 
-Go to the Segment Pixel list in the **Segments** screen (**Audiences** \>  **Segment Manager**), select the checkbox next to the segment pixel that you want to export, click **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
+Go to the Segment Pixel list in the **Segments** screen (**Audiences** \>  **Segment Manager**), select the checkbox next to the segment pixel that you want to export, select **More Actions**, and select **Export pixels**. This displays the **Export Pixels** dialog.
 
-## Step 2: Select the pixel format
+## Step 2: Select pixel format
 
 We recommend that you select **Use a JavaScript tag**. Selecting **Generate non-secure pixel** can result in browser warnings and/or the pixel not firing.
 
-## Step 3: Select the delivery options
+## Step 3: Select delivery options
 
 In the **Delivery Options** section, select whether you want to generate the tags on screen, or whether you would rather send the tags via email. If you select to email the tags, you can enter up to 10 email addresses, separated by commas.
 
@@ -31,7 +31,7 @@ In the **Advanced Options** section, you can select additional values to include
   - **Include dynamic value**: Values are non-negative integers that can be associated and stored with the user at the time of firing the pixel. The same value can be the same across segments in the pixel ("across all segments" option) or they can be specific to each segment in the pixel ("for each segment" option).
   - **Include a redirect URL**: Redirect URL used to piggyback another pixel.
 
-## Step 5: Generate the tags
+## Step 5: Generate tags
 
 Click the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
 

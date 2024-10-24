@@ -1,5 +1,5 @@
 ---
-title: Microsoft Curate - Buying Deals
+title: Microsoft Curate - Buy Deals
 description: In this article, learn about Buying Deals and find links to get started with buying deals.
 ms.date: 10/28/2023
 ---

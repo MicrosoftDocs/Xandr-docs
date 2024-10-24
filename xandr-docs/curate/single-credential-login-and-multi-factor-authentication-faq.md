@@ -49,15 +49,15 @@ No. Once a user has been entered in the new system, their previous credentials a
   - Special Characters (for example, !@#$%^&\*)
 - No more than 2 identical characters in a row (for example, "aaa" not allowed).
 
-## When does the single credential login and multi-factor authentication password expire?
+## When does single credential login and multi-factor authentication password expire?
 
 365 days after it was set or last changed.
 
-## Will users be notified when the single credential login and multi-factor authentication password is about to expire?
+## Will users be notified when single credential login and multi-factor authentication password is about to expire?
 
 Yes. They will receive a password expiry warning email 21 days and 5 days prior to expiry, and an expired notification email on expiry.
 
-## How can a user switch out the MFA app they are using for a different one?
+## How can a user switch out MFA app they are using for a different one?
 
 Product Support can reset the users MFA account via the single credential login tool. The user will be prompted to setup their MFA account again the next time they successfully sign in to a Microsoft Advertising Digital Platform application with their username and password.
 

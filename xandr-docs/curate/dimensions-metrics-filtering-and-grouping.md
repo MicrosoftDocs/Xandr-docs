@@ -28,7 +28,7 @@ The key recommendations of this document are as follows:
 | **Filtering** | Filtering removes dimensions you don't care about. This reduces the size of the data set. For example, you might want to see only those impressions that occurred on weekends in a certain region of France.<br><br>**Tip**: Filter out as much irrelevant data as possible – smaller data is faster data. |
 | **Grouping** | Reports automatically group by all selected dimensions. Grouping causes the dimensions to be output in a specific order. This can be useful for understanding relationships between dimensions. For example, you can see how the different line items under an advertiser are performing.<br><br>Since the report automatically applies grouping to dimensions, selecting many dimensions can generate a very large data set. For every additional dimension you select, the data set becomes larger.<br><br>**Tip**: Select as few dimensions as possible. The more dimensions you select, the larger the data set becomes. |
 
-## Visualizing the process
+## Visualize the process
 
 The diagram below gives a simplified view of the process that generates the data set that you receive.
 
@@ -40,7 +40,7 @@ In **Step 3**, our systems generate the report. You have the option to view the 
 
 :::image type="content" source="media/filtering-and-grouping.png" alt-text="Diagram that shows a simplified view of the process that generates the data set that you receive.":::
 
-## A tiny example database
+## Tiny database example
 
 All of the examples below will use the same underlying "database", which contains two dimensions: **Advertiser** and **Line Item**; and two metrics: **Impressions** and **Clicks**. Here it is in its entirety:
 
@@ -67,7 +67,7 @@ All of the examples below will use the same underlying "database", which contain
 
 You can also [download](https://download.microsoft.com/download/6/f/7/6f755603-e9af-4148-9e52-02e1fb7262b0/xandr/tiny-db.csv) the example in CSV format.
 
-## Filtering examples
+## Filter examples
 
 The examples in this section illustrate how data set sizes are affected by filtering. Filtering is useful for several reasons:
 

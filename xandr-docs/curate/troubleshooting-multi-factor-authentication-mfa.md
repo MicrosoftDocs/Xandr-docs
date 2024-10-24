@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Troubleshooting Multi-Factor Authentication (MFA)
+title: Microsoft Curate - Troubleshoot Multi-Factor Authentication (MFA)
 description: This article provides solutions to the most common issues associated with MFA. 
 ms.date: 11/15/2023
 ---
 
-# Microsoft Curate - Troubleshooting Multi-Factor Authentication (MFA)
+# Microsoft Curate - Troubleshoot Multi-Factor Authentication (MFA)
 
 You can find answers to the most common issues associated with MFA.
 
@@ -43,7 +43,7 @@ If you arrived to the MFA one-time code input screen, but do not input a valid c
 
 Some users are reporting that the app that they are using for MFA authentication is no longer providing them with the MFA code. Many of these users are using [Auth0 Guardian](https://auth0.com/docs/login/mfa/auth0-guardian) app.
 
-**Solution**: Unlike [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DAndroid) which provides a new MFA code for each authentication attempt, Auth0 Guardian instead sends the user a push notification - NOT a code. The user needs to open or access this notification and click **Allow** to complete the MFA authentication process.
+**Solution**: Unlike [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en&co=GENIE.Platform%3DAndroid) which provides a new MFA code for each authentication attempt, Auth0 Guardian instead sends the user a push notification - NOT a code. The user needs to open or access this notification and select **Allow** to complete the MFA authentication process.
 
 ## Don't delete MFA app
 

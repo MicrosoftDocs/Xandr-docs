@@ -12,7 +12,7 @@ The **Line Items** screen displays **Upcoming**, **In Progress**, and **Complete
 
 To access the **Monitoring** feature from any Microsoft Curate screen:
 
-1. Click the **Package** menu and select **Curated Deals**.
+1. Select the **Package** menu and select **Curated Deals**.
 1. In the **Line Items** window, select an appropriate progress tab (**Upcoming**, **In Progress**, or **Completed**) to view line items.
 
 ## View line items
@@ -41,17 +41,17 @@ There are several ways to search for line items from the **Line Items** window. 
 If you don't have a line item name, line item ID, deal name, or deal ID to search with, you can use the pagination feature at the bottom of the **Line Items** window to page through the rows of line items. The pagination feature lets you:
 
 - select the number of rows that you want to display per page by selecting a value from the **Rows per page** menu.
-- enter a specific page in the designated text field or click the arrows to navigate from page to page.
+- enter a specific page in the designated text field or select the arrows to navigate from page to page.
 
 ## Apply filters
 
 You can create and save filters to search for line items. Once created and saved, you can apply a filter using the **Select a Filter** drop-down list. To create and save a new filter:
 
-1. In the **Line Items** window, click **Advanced Filters**.
+1. In the **Line Items** window, select **Advanced Filters**.
 
 1. Make your selections.
 
-1. Click the arrow to the right of the **Apply** button.
+1. Select the arrow to the right of the **Apply** button.
 
 1. Select **Apply and Save As**.
 
@@ -65,16 +65,16 @@ You can create and save filters to search for line items. Once created and saved
     > [!NOTE]
     > The default filter will apply each time you access the **Line Items** window.
 
-1. Click **Apply** and **Save As** to save the filter.
+1. Select **Apply** and **Save As** to save the filter.
 
-    All saved filters appear in the **Select a Filter** drop-down. To remove an applied filter, click **Clear All**. To edit an applied filter, click **Edit** to open the **Advanced Filters** dialog (see Step 2 above).
+    All saved filters appear in the **Select a Filter** drop-down. To remove an applied filter, select **Clear All**. To edit an applied filter, select **Edit** to open the **Advanced Filters** dialog (see Step 2 above).
 
 You can edit saved filters at any time. To edit a saved filter:
 
-1. In the **Line Items** window, click **Advanced Filters**.
-1. In the **Advanced Filters** dialog, select a filter using the **Select a Filter** drop-down.
+1. In the **Line Items** window, select **Advanced Filters**.
+1. In the **Advanced Filters** dialog, select a filter using the **Select a Filter** dropdown.
 1. Once a filter is selected, you have options to **Deselect Filter**, **Make Default**, **Rename**, or **Delete**. You can also make any changes to the filter configurations displayed as you scroll through the **Advanced Filters** dialog.
-1. Click **Apply and Save** to apply your changes and save the filter.
+1. Select **Apply and Save** to apply your changes and save the filter.
 
 ## Sort columns
 
@@ -82,28 +82,28 @@ You can sort most line item rows in the **Line Items** window into ascending or 
 
 ## Select column views
 
-You can select any available column views in the **Select a View** drop-down. To reset the column view when a view is selected, click the drop-down arrow next to the selected view and click **Select a View**.
+You can select any available column views in the **Select a View** drop-down. To reset the column view when a view is selected, select the drop-down arrow next to the selected view and select **Select a View**.
 
 ## Modify and save column views
 
 You can modify and save column views. Saving a column view makes it available in the **Select a View** drop-down list. To modify a column view:
 
-1. In the **Line Items** window, click **Modify Columns**.
+1. In the **Line Items** window, select **Modify Columns**.
 1. In the **Modify Columns** dialog, select an existing column view from the **Select a Setting** drop-down or use the current view.
-1. Click the appropriate progress tab (**Upcoming**, **In Progress**, or **Completed**).
+1. Select the appropriate progress tab (**Upcoming**, **In Progress**, or **Completed**).
 1. Select (to show) or deselect (to hide) any column checkboxes. You can also choose **Select all**/**Deselect all** to select or deselect all columns for the progress tab.
 1. Optionally, you can rearrange the columns by dragging and dropping them.
 1. Do one of the following:
-    - To apply the view to the current session, click **Apply**.
+    - To apply the view to the current session, select **Apply**.
     - To apply and save the view so it's available in the **Select a View** drop-down list:
       1. Select the drop-down arrow next to **Apply** and select **Apply and Save As**.
       1. Enter a name for the new column setting in **New Setting Name**.
       1. Optionally, check **Make Default** if you want this column setting to be the default view.
-      1. Click **Apply and Save As**.
+      1. Select **Apply and Save As**.
 
 ## View line item details
 
-To view the details of a line item listed in the **Line Items** window, click anywhere in the line item row to display the Line Item Details. See [View Line Item Details](view-line-item-details-smw.md) for more information.
+To view the details of a line item listed in the **Line Items** window, select anywhere in the line item row to display the Line Item Details. See [View Line Item Details](view-line-item-details-smw.md) for more information.
 
 ## Duplicate, cancel reservation, delete, or run report for selected line items
 

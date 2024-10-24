@@ -14,7 +14,7 @@ Both active and inactive objects are counted against the object limit. For creat
 > **Automatic archiving of objects:**
 > Objects that have not served or been edited in more than 180 days and that are not scheduled to serve in the future are automatically archived. If an object is in the "archived" state, it cannot spend or be edited. However, it can still be copied, deleted or used in reports (or exported for use in an external reporting tool). In addition, once an object is archived, any child objects it may own (e.g., Insertion Order \> Line Item) will also be archived and no additional child objects can be created beneath the archived parent object.
 
-## Access the Object Limits report
+## Access Object Limits report
 
 Your object limits report is available under your Member Settings.
 

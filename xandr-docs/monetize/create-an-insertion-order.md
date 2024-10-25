@@ -63,7 +63,7 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 1. Optionally, assign reporting labels. The labels (**Trafficker**, **Sales Rep**, and **Insertion Order Type**) will then appear in the [Network Analytics Report](network-analytics-report.md). For more information, see [Reporting Labels](reporting-labels.md).
 
-1. Optionally, associate existing augmented line items with the insertion order. For instructions on how to associate legacy line items, see [View Line Item Details](view-line-item-details.md).
+1. Optionally, associate existing augmented line items with the insertion order.
 
     > [!NOTE]
     > Any budget or impressions that occurred before the line item was associated to the insertion order do not count towards the lifetime budget of the insertion order.

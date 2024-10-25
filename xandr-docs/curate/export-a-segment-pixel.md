@@ -33,7 +33,7 @@ In the **Advanced Options** section, you can select additional values to include
 
 ## Step 5: Generate tags
 
-Click the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
+Select the **Generate Tags** button. Depending on the delivery option selected, the tags either are displayed on the screen or emailed to the addresses specified.
 
 An image pixel looks something like this:
 

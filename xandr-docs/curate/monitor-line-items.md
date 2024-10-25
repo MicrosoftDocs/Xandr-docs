@@ -78,7 +78,7 @@ You can edit saved filters at any time. To edit a saved filter:
 
 ## Sort columns
 
-You can sort most line item rows in the **Line Items** window into ascending or descending order by clicking each column label.
+You can sort most line item rows in the **Line Items** window into ascending or descending order by selecting each column label.
 
 ## Select column views
 
@@ -110,7 +110,7 @@ To view the details of a line item listed in the **Line Items** window, select a
 You can duplicate, cancel reservation, delete, or run a report for selected line items by doing the following:
 
 1. In the **Line Items** window for each progress tab (**Upcoming**, **In Progress**, or **Completed**), select the checkbox to the left of any line items.
-1. When line items are selected, the **Line Items selected** bar is available at the top of the **Line Items** window with the following available actions you can perform by clicking on the action:
+1. When line items are selected, the **Line Items selected** bar is available at the top of the **Line Items** window with the following available actions you can perform by selecting on the action:
     - **Duplicate** - you can duplicate one or more line items simultaneously.
     - **Cancel Reservation** - for Guaranteed Delivery Line Items (GDLI) and Programmatic Guaranteed Line Items (PGLI), you can cancel the reservation of one or more of these line items.
     - **Delete** - you can delete one or more line items simultaneously.

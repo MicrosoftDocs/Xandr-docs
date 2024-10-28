@@ -33,7 +33,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 483 | MSAN | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 172 | Nextroll (Adroll) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 44 | Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 328 | StackAdapt | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 328 | StackAdapt | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals <br> **Note**: StackAdapt is set up to transact through a single buyer seat only.|
 | 82 | The Trade Desk | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 183 | Verizon Media Group | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 399 | Zemanta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |

@@ -31,6 +31,10 @@ You can view and edit your Base and Conditional Rules here. If those rules inher
 
 This section is where you can determine which creatives serve on your inventory based on their creative attributes. You can also set frequency caps based on those attributes.
 
+### Bidders
+
+This feature is currently in Closed Beta. Edit the trust levels associated with bidders and their buyer seats. To check which external DSPs are using Buyer Seat IDs see [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md).
+
 ### Buyers
 
 Edit the trust levels associated with individual buying members.
@@ -62,18 +66,18 @@ Choose to serve only those creatives that are hosted on a specific set of ad ser
 
 Apply per-user frequency caps to creatives based on their technical attributes. You can also set frequency caps on creatives belonging to a sensitive category, e.g. "Alcoholic Beverages and References."
 
-### Creative approval
+### Review Creatives
 
-Under the **Creative Approval** tab you can search for creatives based on criteria such as who they're managed by or where they served. You can then approve or ban those creatives.
+The **Review Creatives** tab lets you search for creatives based on criteria such as who they're managed by or where they served. You can then approve or ban those creatives.
 
-### Common searches
+#### Common searches
 
 This section provides a convenient interface to some common search parameters, including:
 
 - **Creatives that have served:** Search for creatives that have served on your network's inventory within a specified time period.
 - **Creatives that have been uploaded:** Search for creatives of a specific brand status that have been uploaded within a specified time period.
 
-### Advanced options
+#### Advanced options
 
 This section allows you to perform more complicated searches, including:
 

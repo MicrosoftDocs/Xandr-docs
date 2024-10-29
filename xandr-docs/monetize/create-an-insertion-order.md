@@ -83,7 +83,7 @@ The name for the insertion order. You will later be able to search for and repor
 
 An external code used for reporting. (Microsoft Advertising also assigns an internal code automatically.) The code may only contain alphanumeric characters, periods, underscores or dashes. It is not case-sensitive (upper- and lower-case characters are treated the same).
 
-No two objects at the same level (like line items or campaigns) can use the same code. For example, two lines items cannot both use code "XYZ", but a single line item and its child campaign can.
+No two objects at the same level can use the same code. For example, two lines items cannot both use code "XYZ".
 
 ### Billing code (optional)
 
@@ -91,7 +91,7 @@ An internal billing code you want to appear on invoices for this insertion order
 
 ### State
 
-The state of the insertion order. If "**Active**", child line items and campaigns will be eligible to serve.
+The state of the insertion order. If "**Active**", child line items will be eligible to serve.
 
 > [!TIP]
 > To avoid spending before you're ready, set the state to "**Inactive**" until everything related to the buy has been set up and verified.

@@ -67,7 +67,7 @@ You can set the name, state, and ad type of the GDALI from the **Basic setting
 1. **Allow RTB Competition**: If you have assigned the Impressions delivery type to the line item, the **Allow RTB Competition** feature is enabled by default. When enabled with a priority below reselling priority, a guaranteed line item will compete with Open Market (or RTB) demand to maximize yield while ensuring full delivery of the budget. For more information, see [Open Dynamic Allocation and Flexible Priorities](open-dynamic-allocation-and-flexible-priorities.md). Although not recommended, disabling **Allow RTB Competition** will restrict competition in the auction to only direct line items.
 
    > [!NOTE]
-   > Disabling Allow RTB Competition can negatively affect your overall yield. Allow RTB Competition is not available for line items with Exclusive delivery type. Line items with Exclusive delivery type take precedence over Open Market (or RTB) demand.
+   > Disabling **Allow RTB Competition** can negatively affect your overall yield. **Allow RTB Competition** is not available for line items with **Exclusive** delivery type. Line items with **Exclusive** delivery type take precedence over Open Market (or RTB) demand.
 
 1. **Takeover**:  By enabling this takeover, you can block all other demand from serving. This guarantees that no other ads will be displayed, providing complete exclusivity to the advertiser.
 
@@ -97,7 +97,7 @@ Delivery of the **Master Creative** is used for pacing and budgeting. Defini
 > [!WARNING]
 > The values you enter here could have an impact on delivery if they do not match the creatives associated to the line item. When you select ad sizes under **Ad Size**, you're targeting impressions of those sizes. If you then add creatives that don't match the **Ad Size** values you entered, you may be preventing your line item from serving. For example, if you select **300 x 250** as the line item’s ad size and then add a **300 x 600** creative to the line item, the ad call must contain both 300 x 250 and **300 x 600** as available **Ad Size** values on the ad call for your line item to be eligible to serve. To be eligible, the ad call must satisfy the targeting of the line item which includes both the ad size(s) and the creative size(s).
 >
-> If you enable **Roadblocking**, the **Ad Size** field will no longer be displayed and **Master Creative** and **Companion Creative** sizes selected under Roadblocking will be used instead of Ad Size values. Forecasting on roadblocks will check availability for each of the Master Creative and Companion Creative sizes and return the value of the impression availability for the creative size with the lowest availability.
+> If you enable **Roadblocking**, the **Ad Size** field will no longer be displayed and **Master Creative** and **Companion Creative** sizes selected under **Roadblocking** will be used instead of **Ad Size** values. Forecasting on roadblocks will check availability for each of the **Master Creative** and **Companion Creative** sizes and return the value of the impression availability for the creative size with the lowest availability.
 
 To add ad size values:
 

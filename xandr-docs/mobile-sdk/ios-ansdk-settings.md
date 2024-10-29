@@ -24,7 +24,7 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
 | `BOOL disableIDFAUsage` | Excludes the IDFA field in ad request. <br><br> See [Set IDFA usage](#set-idfa-usage) below for more details. |
 | `NSUInteger auctionTimeout` | Sets the timeout period in milliseconds. <br><br> See [Set the Auction Timeout](#set-the-auction-timeout) below for more details. |
 | `BOOL enableTestMode` | Sets YES or NO for the AdRequests to be executed in the test mode. <br><br> See [Set Test Mode](#set-test-mode) below for more details. |
-| `BOOL enableOMIDOptimization` | Indicates if Open-Measurement Optimization is enabled or not. <br><br> See [OMID-Friendly Obstruction](#omid-friendly-obstruction) below for more details. |
+| `BOOL enableOMIDOptimization` | Enables Open-Measurement Optimization. <br><br> See [OMID Optimization](#omid-optimization) below for more details. |
 | `NSString *contentlanguage` | Sets the code for the content's language. <br><br> See [Set Content Language](#set-content-language) below for more details. |
 
 ## Initialize SDK settings
@@ -311,13 +311,15 @@ ANSDKSettings.sharedInstance().enableTestMode = true
 
 ---
 
-## OMID-friendly obstruction
+## OMID Optimization
 
-The Open Measurement Software Development Kit (OM SDK) is designed to facilitate third party viewability and verification measurement for ads served to mobile app environments without requiring multiple Ad Verification Service Providers (Measurement Provider) SDKs.
+The Open Measurement Software Development Kit (OM SDK) from the IAB enables third-party viewability and verification for ads in mobile app environments. The Open Measurement Interface Definition (OMID) facilitates the collection of data regarding ad viewability on mobile devices. Certain UI elements, such as close buttons and logos, are excluded from viewability calculations. This exclusion ensures accurate measurement while preserving the integrity of essential ad components. For more details, visit the IAB [OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
+
+<!--The Open Measurement Software Development Kit (OM SDK) is designed to facilitate third party viewability and verification measurement for ads served to mobile app environments without requiring multiple Ad Verification Service Providers (Measurement Provider) SDKs.
 
 Open Measurement Interface Definition (OMID) is an open measurement API provided by IAB. In short, it enables a publisher to get data on the viewability of an ad within a mobile device. For more detailed information about OMID, visit the IAB site [here](https://iabtechlab.com/standards/open-measurement-sdk/).
 
-Friendly obstructions are the views that OMID will exclude from all viewability calculations when added to the OMID Session. When a UI element needs to be considered as a part of the ad, that can be added as a friendly obstruction to prevent it from counting towards coverage of the ad. For example, any native element such as a close button, some logo text, or other object that needs to be considered as a part of an ad (and not be counted for viewability measurement) should be registered as a friendly obstruction. This applies to any ancestor or peer views in the view hierarchy.
+Friendly obstructions are the views that OMID will exclude from all viewability calculations when added to the OMID Session. When a UI element needs to be considered as a part of the ad, that can be added as a friendly obstruction to prevent it from counting towards coverage of the ad. For example, any native element such as a close button, some logo text, or other object that needs to be considered as a part of an ad (and not be counted for viewability measurement) should be registered as a friendly obstruction. This applies to any ancestor or peer views in the view hierarchy.!-->
 
 The OMID API enables:
 
@@ -338,6 +340,8 @@ To add a friendly obstruction, remove a friendly obstruction, or remove all frie
 
 ### Example
 
+<!--
+
 #### [Objective C](#tab/objectivec9)
 
 ```
@@ -356,7 +360,6 @@ ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
 // Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
 [adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];
 ```
-
 #### [Swift](#tab/swift9)
 
 ```
@@ -378,6 +381,8 @@ adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 ```
 
 ---
+
+!-->
 
 ## Set content language
 

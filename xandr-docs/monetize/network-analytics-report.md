@@ -98,6 +98,7 @@ If you are frequently requesting Network analytics reports which include dates l
 |--|--|--|
 | Adjustments | No | Changes to Network reported revenue based on factors such as revenue, conversions, clicks, or impressions reported by their advertisers or agencies' ad servers. |
 | Buyer | Yes | The buyer of this impression.<br>**Note**: The name might be "Default"; or "Default Error", which means that there was no buyer for the impression, and a default creative was served. |
+| Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | Seller | Yes | The seller of this impression. |
 | Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information about the different seller types, see "Seller Types" below. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |

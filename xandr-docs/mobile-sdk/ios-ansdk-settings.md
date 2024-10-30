@@ -313,30 +313,17 @@ ANSDKSettings.sharedInstance().enableTestMode = true
 
 ## OMID Optimization
 
-The Open Measurement Software Development Kit (OM SDK) from the IAB enables third-party viewability and verification for ads in mobile app environments. The Open Measurement Interface Definition (OMID) facilitates the collection of data regarding ad viewability on mobile devices. Certain UI elements, such as close buttons and logos, are excluded from viewability calculations. This exclusion ensures accurate measurement while preserving the integrity of essential ad components. For more details, visit the IAB [OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
+The Open Measurement Software Development Kit (OM SDK), provided by the IAB, facilitates third-party viewability and verification measurement for ads served in mobile app environments. This integration enables publishers to access reliable data on ad viewability without requiring multiple Ad Verification Service Provider SDKs. For more details, visit the [IAB OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
 
-The Open Measurement Software Development Kit (OM SDK) is designed to facilitate third party viewability and verification measurement for ads served to mobile app environments without requiring multiple Ad Verification Service Providers (Measurement Provider) SDKs.
-
-Open Measurement Interface Definition (OMID) is an open measurement API provided by IAB. In short, it enables a publisher to get data on the viewability of an ad within a mobile device. For more detailed information about OMID, visit the IAB site [here](https://iabtechlab.com/standards/open-measurement-sdk/).
+Through the Open Measurement Interface Definition (OMID), an open measurement API, publishers can assess the visibility of ads on mobile devices and ensure accurate measurement of ad performance. For more detailed information about OMID, visit the IAB site [here](https://iabtechlab.com/standards/open-measurement-sdk/).
 
 <!-- Friendly obstructions are the views that OMID will exclude from all viewability calculations when added to the OMID Session. When a UI element needs to be considered as a part of the ad, that can be added as a friendly obstruction to prevent it from counting towards coverage of the ad. For example, any native element such as a close button, some logo text, or other object that needs to be considered as a part of an ad (and not be counted for viewability measurement) should be registered as a friendly obstruction. This applies to any ancestor or peer views in the view hierarchy.!-->
 
-The OMID API enables:
-
-- Adding a friendly obstruction
-- Removing a friendly obstruction
-- Removing all friendly obstructions
-
-In addition to the above-mentioned functionalities, the OM SDK facilitates a property (`enableOMIDOptimization`) that enables optimization.
-
-To add a friendly obstruction, remove a friendly obstruction, or remove all friendly obstruction for Banner, Interstitial, and Video AdUnits, you need to pass the view as an argument to the API.
-
-> [!NOTE]
-> Native AdUnits do not support remove API.
+The OM SDK facilitates a property (`enableOMIDOptimization`) which enables viewability optimization for mobile ads.
 
 | Property | Description |
 |--|--|
-| `BOOL enableOMIDOptimization` | Indicates if Open-Measurement Optimization for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is NO. <br><br> When set as "YES", the OM SDK takes care of performing Open-Measurement Optimization. Here, as part of optimization, viewability is tracked until an ad is fully visible to the user. Once the ad ceases to be visible, viewability tracking stops. <br><br> **Note**: This API supports only banner and native ad types. |
+| `BOOL enableOMIDOptimization` | Indicates if Open-Measurement Optimization for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is **NO**. <br><br> When set as **YES**, the OM SDK takes care of performing Open-Measurement Optimization. Here, as part of optimization, viewability is tracked until an ad is fully visible to the user. Once the ad ceases to be visible, viewability tracking stops. <br><br> **Note**: This API supports only banner and native ad types. |
 
 ### Example
 

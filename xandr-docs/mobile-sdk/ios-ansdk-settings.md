@@ -315,11 +315,11 @@ ANSDKSettings.sharedInstance().enableTestMode = true
 
 The Open Measurement Software Development Kit (OM SDK) from the IAB enables third-party viewability and verification for ads in mobile app environments. The Open Measurement Interface Definition (OMID) facilitates the collection of data regarding ad viewability on mobile devices. Certain UI elements, such as close buttons and logos, are excluded from viewability calculations. This exclusion ensures accurate measurement while preserving the integrity of essential ad components. For more details, visit the IAB [OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
 
-<!--The Open Measurement Software Development Kit (OM SDK) is designed to facilitate third party viewability and verification measurement for ads served to mobile app environments without requiring multiple Ad Verification Service Providers (Measurement Provider) SDKs.
+The Open Measurement Software Development Kit (OM SDK) is designed to facilitate third party viewability and verification measurement for ads served to mobile app environments without requiring multiple Ad Verification Service Providers (Measurement Provider) SDKs.
 
 Open Measurement Interface Definition (OMID) is an open measurement API provided by IAB. In short, it enables a publisher to get data on the viewability of an ad within a mobile device. For more detailed information about OMID, visit the IAB site [here](https://iabtechlab.com/standards/open-measurement-sdk/).
 
-Friendly obstructions are the views that OMID will exclude from all viewability calculations when added to the OMID Session. When a UI element needs to be considered as a part of the ad, that can be added as a friendly obstruction to prevent it from counting towards coverage of the ad. For example, any native element such as a close button, some logo text, or other object that needs to be considered as a part of an ad (and not be counted for viewability measurement) should be registered as a friendly obstruction. This applies to any ancestor or peer views in the view hierarchy.!-->
+<!-- Friendly obstructions are the views that OMID will exclude from all viewability calculations when added to the OMID Session. When a UI element needs to be considered as a part of the ad, that can be added as a friendly obstruction to prevent it from counting towards coverage of the ad. For example, any native element such as a close button, some logo text, or other object that needs to be considered as a part of an ad (and not be counted for viewability measurement) should be registered as a friendly obstruction. This applies to any ancestor or peer views in the view hierarchy.!-->
 
 The OMID API enables:
 
@@ -340,49 +340,19 @@ To add a friendly obstruction, remove a friendly obstruction, or remove all frie
 
 ### Example
 
-<!--
-
 #### [Objective C](#tab/objectivec9)
 
 ```
 ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
  
-// Examples for Adding a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-[adObject addOpenMeasurementFriendlyObstruction:friendlyObstructionView];
- 
-// Example for Adding a Friendly Obstruction for Native AdUnit
-[self.nativeResponse
-    registerViewForTracking:self.nativeView
-    withRootViewController:self clickableViews:@[]
-    openMeasurementFriendlyObstructions:@[friendlyObstructionView1, friendlyObstructionView2, ...]
-    error:nil];
- 
-// Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-[adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];
 ```
+
 #### [Swift](#tab/swift9)
 
 ```
 ANSDKSettings.sharedInstance().enableOMIDOptimization = true
  
-// Examples for Adding a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-adObject.addOpenMeasurementFriendlyObstruction(friendlyObstructionView)
- 
-// Example for Adding a Friendly Obstruction for Native AdUnit
-nativeAdResponse?.registerView(
-   forTracking: nativeView!,
-   withRootViewController: self,
-   clickableViews: [],
-   openMeasurementFriendlyObstructions: [friendlyObstructionView1, friendlyObstructionView2, ...]
-)
- 
-// Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 ```
-
----
-
-!-->
 
 ## Set content language
 

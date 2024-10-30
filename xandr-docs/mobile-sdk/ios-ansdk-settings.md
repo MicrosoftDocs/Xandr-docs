@@ -323,7 +323,7 @@ The OM SDK facilitates a property (`enableOMIDOptimization`) which enables viewa
 
 | Property | Description |
 |--|--|
-| `BOOL enableOMIDOptimization` | Indicates if Open-Measurement Optimization for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is **NO**. <br><br> When set as **YES**, the OM SDK takes care of performing Open-Measurement Optimization. Here, as part of optimization, viewability is tracked until an ad is fully visible to the user. Once the ad ceases to be visible, viewability tracking stops. <br><br> **Note**: This API supports only banner and native ad types. |
+| `BOOL enableOMIDOptimization` | Indicates whether Open-Measurement Optimization for viewability and verification measurement is enabled for ads. If it is not enabled, enabling it is recommended. Default value is **NO**. <br><br> When set as **YES**, the OM SDK takes care of performing Open-Measurement Optimization. Here, as part of optimization, viewability is tracked until an ad is fully visible to the user. Once the ad ceases to be visible, viewability tracking stops. <br><br> **Note**: This API supports only banner and native ad types. |
 
 ### Example
 

@@ -16,10 +16,12 @@ You can use the following controls to determine what ads are allowed to serve on
 |---|---|
 | **Ad Servers** | Determine whether to serve only those creatives that are hosted on a specific set of ad server domains. For more information about creating collections of eligible or banned ad servers, see [Ad Server Settings](ad-server-settings.md). |
 | **Brands** | Allow or exclude creatives based on the brands they are associated with. You can apply a filter to see only new brands. |
+|**Bidders**| (In Closed Beta) Edit the trust levels associated with bidders and their buyer seats. To check which external DSPs are using Buyer Seat IDs see [External DSPs Using Buyer Seat IDs](external-dsps-using-buyer-seat-ids.md). |
 | **Buyers** | Edit the trust levels associated with individual buying members. |
 | **Categories** | Determine which creative categories are eligible to serve (for example, "Airlines" or "Apparel"). |
 | **Frequency Caps** | Apply per-user frequency caps to creatives based on their technical attributes. You can also set frequency caps on creatives belonging to a sensitive category (for example, "Alcoholic Beverages and References"). |
 | **Languages** | Include or exclude creatives based on the language of the creative. |
+|**Phrases (Beta)**| Disallow native ads based on recurring keywords and phrases found in link text and descriptions. <br> **Note**: These settings do not apply to dynamic creatives. |
 | **Technical Attributes** | Determine the eligibility of creatives based on technical attributes (for example, "Expandable" or "Flash"). |
 
 ## Related topics

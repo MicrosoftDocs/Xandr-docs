@@ -63,6 +63,7 @@ Data in this report is retained for 420 days.
 | `publisher_currency` | string | yes | `"USD"` | The currency of the publisher. |
 | `site_id` | int | yes | `194` | The ID of the site.<br><br>**Note**: For impressions older than 100 days, the `site_id` will be `0`. |
 | `site_name` | string | no | `"Site Name"` | The name of the site. |
+| `deal_code` | string | No | `External seller deal code` | The custom code for the deal. For deals with external supply partners, this string typically identifies the deal. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `geo_country` | string | yes | `"US"` | The geographic country code. |

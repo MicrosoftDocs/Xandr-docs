@@ -69,6 +69,7 @@ Data in this report is retained for 420 days.
 | `placement_name` | string | No | `"Photos 728x90"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
 | `placement` | string | No | `"Photos 728x90 (123)"` | **Deprecated**. |
 | `placement_code` | string | No | `"Placement Code"` | The custom code for the placement. |
+| `deal_code` | string | No | `External seller deal code` | The custom code for the deal. For deals with external supply partners, this string typically identifies the deal. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated**. |

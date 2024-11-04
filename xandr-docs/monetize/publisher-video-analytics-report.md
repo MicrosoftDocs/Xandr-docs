@@ -69,6 +69,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 | Brand | Yes | The brand associated with the creative. |
 | Country | Yes | The country in which the impression took place. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
+| Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | Site Domain | Yes | The site domain of an impression |
 | Application ID | Yes | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
 | Selling Currency | No | The seller/publisher currency associated with the video impressions sold. This dimension is available only when Currency 2.0 is disabled. |

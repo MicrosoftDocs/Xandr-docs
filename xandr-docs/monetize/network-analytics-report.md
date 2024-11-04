@@ -163,6 +163,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | Billing Period: Billing Period: Revenue Budget (lifetime) Buying Currency | No | The lifetime revenue budget of the insertion order's billing period. This dimension is available only when Currency 2.0 is disabled. |
 | Billing Period: External Code | No | The custom code for the billing period. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
+| Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | Adv: Salesperson (reporting label) | Yes | The salesperson associated with this advertiser's account. This is a reporting label. |
 | Adv: Account Manager (reporting label) | Yes | The account manager associated with this advertiser's account. This is a reporting label. |
 | Advertiser Type (advertiser) | Yes | The type of the advertiser who purchased this impression. This is a reporting label. |

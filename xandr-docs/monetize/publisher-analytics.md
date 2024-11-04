@@ -82,6 +82,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 | Campaign | No | The campaign that was used to purchase the impression. For more information about campaigns, see [Working with Campaigns](working-with-campaigns.md). |
 | Country | Yes | The country where the impression occurred. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
+| Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | External Code | No | The name and ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). |
 | Filtered Request Reason | No | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
 | Impression Type | Yes | The type of impression that occurred. For the definitions of each impression type, see the [Impression Type Definitions](#impression-type-definitions) section below. |

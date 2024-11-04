@@ -106,7 +106,7 @@ Create a conditional rule to affect buyer's or buyer group's bids on specific im
 
 ## Bias rule targeting
 
-You can target bias rules using profiles created via the Profile Service. The following targeting parameters are applicable to a Bias Rule.
+You can target bias rules using profiles created via the [Profile Service](../digital-platform-api/profile-service.md). The following targeting parameters are applicable to a Bias Rule.
 
 ### Frequency
 
@@ -123,7 +123,7 @@ You can target specific countries, regions, metro codes, cities, or zip codes.
 >
 > Users of geographic targeting should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes.
 >
-> Microsoft Advertising uses the IP lookup service provided by [MaxMind](http://www.maxmind.com). For more information, read about their [GeoIP Technology](http://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](http://www.maxmind.com/app/contact).
+> Microsoft Advertising uses the IP lookup service provided by [MaxMind](https://www.maxmind.com). For more information, read about their [GeoIP Technology](https://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](https://www.maxmind.com/company/contact-us).
 >
 > **Geographic targeting and boolean logic**
 >
@@ -135,7 +135,7 @@ You can target specific countries, regions, metro codes, cities, or zip codes.
 
 ### Segments
 
-By default, if you are targeting multiple segments, users must be associated with all of the targeted segments in order for the rule to apply. You can change this to any of the targeted segments via the Profile Service. For more information, see [Segment Targeting](../digital-platform-api/profile-service.md#segment-targets).
+By default, if you are targeting multiple segments, users must be associated with **all** of the targeted segments in order for the rule to apply. You can change this to **any** of the targeted segments via the [Profile Service](../digital-platform-api/profile-service.md). For more information, see [Segment Targeting](../digital-platform-api/profile-service.md#segment-targets).
 
 For segments, you can also define the length of time users have to belong to the segment in order for the rule to apply.
 

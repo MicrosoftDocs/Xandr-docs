@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Insertion Orders
+title: Microsoft Invest - Work with Insertion Orders
 description: In this article, learn about working with Insertion orders that allow you to easily manage collections of line items that may share a common budget, time span, and business terms. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with insertion orders
+# Microsoft Invest - Work with insertion orders
 
 Insertion orders allow you to easily manage collections of line items that may share a common budget, time span, and business terms. Insertion orders are a standard part of the [Object Hierarchy](object-hierarchy.md). An insertion order can contain one or more line items. For example, you may want to set a common budget and billing periods for several line items, but have each line item target a different region or buy different types of media.
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Conversion Pixels
+title: Microsoft Invest - Work with Conversion Pixels
 description: In this article, learn about working with conversion pixels that are used to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with conversion pixels
+# Microsoft Invest - Work with conversion pixels
 
 A conversion pixel is used to track user actions in response to an advertiser's creatives, such as registering at a site or making a
 purchase. When a conversion pixel fires, we determine if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the user clicking on or viewing one of the advertiser's creatives previously.

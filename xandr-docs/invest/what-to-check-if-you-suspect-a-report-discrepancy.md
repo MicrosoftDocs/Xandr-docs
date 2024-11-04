@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - What to Check if You Suspect a Discrepancy
+title: Microsoft Invest - Checklist for Suspected Discrepancies
 description: Learn about the common potential causes for report discrepancies. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - What to check if you suspect a discrepancy
+# Microsoft Invest - Checklist for suspected discrepancies
 
 Report discrepancies have a number of common causes. Before you begin a fuller investigation, consider common potential causes like time frames, time zone differences, measurement units, macro configuration errors, and differences in how ad servers count impressions.
 
@@ -22,4 +22,3 @@ either a misconfiguration, or of unlike things being compared.
 | Page drop-offs or slow load times on specific publishers or placements. | Page drop-offs occur when: <br> - a viewer leaves a page before a creative being loaded <br> - something prevents the creative from loading completely (such as a loss of network connection or a crashed browser). <br> Discrepancies caused by these problems typically occur when a creative is loaded into a placement at the bottom of a page: in other words, at the end of the normal chain of page load events. When pages load slowly, users are more likely to navigate away before the ad tag loads. Mobile campaigns have a higher likelihood of page drop-off, especially when served over a carrier connection over a wifi connection. |
 | "Unknown" domains. | Not all publishers expose their domains in reports. If you see lots of "Unknown" impressions in a Site Domain Report, you can run an [Advertiser Analytics Report](advertiser-analytics-report.md) grouped by seller, publisher, and placement, and compare Microsoft Advertising and third-party reports by publisher and placement. |
 | Click numbers don't match due to the `${CLICK_URL}` implementation. | Double-check your `${CLICK_URL}` macro. It’s also very important to insert click macros to both `<script>` and `<noscript>` parts in third-party ad server tags. For more information, see [Click Tracking](click-tracking.md). |
-

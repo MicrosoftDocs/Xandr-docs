@@ -1,0 +1,42 @@
+---
+title: Set GPID (Global Placement ID)
+description: This article provides links to various code samples to help you in the development of your app.
+ms.custom: android-sdk
+ms.date: 10/28/2023
+ms.author: brighosh
+---
+
+# Set GPID (Global Placement ID)
+
+The page Provides a way for publishers to specify their own global publisher identifier to represent the placement.
+
+## Code Samples
+
+### Android Code Sample: JAVA
+
+```java
+banner.setGpid("Test_GlobalPlacementId");
+```
+
+### Android Code Sample: Kotlin
+
+```kotlin
+
+banner.gpid = "Test_GlobalPlacementId"
+
+```
+
+### iOS Code Sample: Objective-C
+
+```objectivec
+
+
+banner.gpid = @"Test_GlobalPlacementId";
+```
+
+### iOS Code Sample: Swift
+
+```swift
+
+banner.gpid = "Test_GlobalPlacementId"
+```

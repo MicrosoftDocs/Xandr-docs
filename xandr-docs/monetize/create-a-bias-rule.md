@@ -104,6 +104,50 @@ When you have entered all of the needed bias amounts per buyer group, click **Cl
 
 Create a conditional rule to affect buyer's or buyer group's bids on specific impressions. You can define a per-buyer bias by impression frequency, geography, segment, specific placement, category, or placement size.
 
+## Bias rule targeting
+
+You can target bias rules using profiles created via the Profile Service. The following targeting parameters are applicable to a Bias Rule.
+
+### Frequency
+
+You can choose whether to exclusively serve to users with known identifiers or also serve to anonymous (cookieless) users.
+
+### Geography
+
+You can target specific countries, regions, metro codes, cities, or zip codes.
+
+> [!WARNING]
+> Be careful which geographic targeting options you choose; you may significantly reduce the likelihood of matching an impression. For more information, see the note below.
+> [!IMPORTANT]
+> **A note on the accuracy of geographic targeting by IP address**
+>
+> Users of geographic targeting should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes.
+>
+> Microsoft Advertising uses the IP lookup service provided by [MaxMind](http://www.maxmind.com). For more information, read about their [GeoIP Technology](http://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](http://www.maxmind.com/app/contact).
+>
+> **Geographic targeting and boolean logic**
+>
+> When more than one targeting type is selected (e.g. both **Region** and **Zip Code**), the set of matching impressions is reduced, sometimes significantly. For example, if both the Boston MA-Manchester NH **Metro Code** and the **City** of Manchester, NH are selected, only users who are located in both will be targeted. Therefore, users in the **City** of Boston will not be included at all. Another example: if both the California **Region** and Chicago, IL **Metro Code** are selected, then NO users will be targeted  since the Chicago metro code does not overlap with California.
+
+- Regions are a more granular target than Country. Generally speaking, regions are based upon whatever method the country in question uses to divide itself into parts. For example, regions within the United States are states. Canada is divided into its provinces, and India is divided into its states and union territories.
+- Metro codes are smaller than regions and are only available for US inventory. Available metro codes range from large cities such as New York, NY and Chicago, IL, to smaller cities such as Rochester, NY, Birmingham, AL, and Pittsburgh, PA.
+- A City is different than a Metro Code. It may be larger or smaller, depending upon your selection. Unlike metro codes, cities are not limited to US inventory. Cities from all around the world are represented, ranging from Tel Aviv, Israel to Kuala Lumpur, Malaysia.
+
+### Segments
+
+By default, if you are targeting multiple segments, users must be associated with all of the targeted segments in order for the rule to apply. You can change this to any of the targeted segments via the Profile Service. For more information, see [Segment Targeting](../digital-platform-api/profile-service.md#segment-targets).
+
+For segments, you can also define the length of time users have to belong to the segment in order for the rule to apply.
+
+### Supply
+
+You can target specific placements, content categories, or placement sizes.
+
+> [!NOTE]
+> If you target a specific placement, this rule will only apply to bids on that placement.
+
+For content categories, you can specify if you want to allow unknown content categories for inventory that hasn't been categorized.
+
 <!-- ### Getting there
 
 **Publisher-only clients:** Select **Partners \> Yield Management \> Floor rules** in the menu bar, and then select a publisher if you are prompted.

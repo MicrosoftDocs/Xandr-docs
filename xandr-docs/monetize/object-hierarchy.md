@@ -8,20 +8,6 @@ ms.date: 10/28/2023
 
 This page introduces the main objects that you work with to buy and sell media.
 
-## Buy-side hierarchy
-
-Key differences of an [Augmented Line Item (ALI)](augmented-line-items-ali.md) compared to Standard Line Item are:
-
-- ALIs require Insertion Orders (not optional).
-- Targeting, budgeting, bidding strategies, and optimization strategies that were associated with campaigns are set on the line item level.
-- ALIs do not use campaigns.
-
-### Standard line item
-
-The following image illustrates the standard line item.
-
-:::image type="content" source="media/buy-side-object-hierarchy.png" alt-text="Diagram that defines buy-side hierarchy.":::
-
 ### Augmented line item
 
 The following image illustrates the augmented line item.
@@ -33,7 +19,6 @@ The following image illustrates the augmented line item.
 The [Network](network-guide.md) represents your account as a whole. At this level:
 
 - You decide who's eligible to sell to you and what level of inventory audit you require [seller settings](set-seller-defaults.md).
-- You create lists of domains and apps for efficient allowlist or blocklist targeting in campaigns [targeting lists](working-with-targeting-lists.md).
 - You put in place a cap on how much you are willing to spend per day on third-party inventory [safety budget](capping-daily-spend-on-third-party-inventory-safety-budget.md) and more.
 
 ## Advertiser
@@ -44,7 +29,7 @@ You can have many advertisers in your network.
 
 ## Insertion order
 
-An [insertion order](working-with-insertion-orders.md) represents a financial agreement you have with your advertiser that specifies what they would like you to execute. The insertion order contains information such as the total budget an advertiser allocates to you for a period of time, or which third party verification the advertiser utilizes. Insertion orders also allow you to group line items and campaigns accordingly.
+An [insertion order](working-with-insertion-orders.md) represents a financial agreement you have with your advertiser that specifies what they would like you to execute. The insertion order contains information such as the total budget an advertiser allocates to you for a period of time, or which third party verification the advertiser utilizes. Insertion orders also allow you to group line items accordingly.
 
 You can have many insertion orders under a single advertiser.
 
@@ -54,35 +39,24 @@ The [line item(s)](working-with-line-items.md) under an advertiser or insertion 
 
 You can have many line items under a single advertiser or insertion order.
 
-There are several types of line items you may use depending on your business model:
-
-- [Standard Line Item](create-a-standard-line-item.md) (with no Insertion Order)
-- [Standard Line Item](working-with-line-items.md) (under an Insertion Order)
-- [Augmented Line Item](create-an-augmented-line-item-ali.md) (under an Insertion Order) **Recommended**. Augmented line items do not use campaigns. For an overview, see [Augmented Line Items](augmented-line-items-ali.md).
-
-## Campaign (standard line items only)
-
-The [campaign](working-with-campaigns.md) dictates your tactics for driving performance to meet your advertisers' goals dictated on the line item. Campaigns house the settings you dictate such as optimized targeting strategies and bidding.
-You can have many campaigns under a single line item.
-
 ## Creative
 
 A [creative](exploring-creatives.md) is an actual ad, hosted either by Microsoft Advertising or by a third-party ad server. The Microsoft Advertising platform enables you to traffic a wide range of [creative types](add-creatives-in-bulk.md), from banners to rich media types like interstitials and expandables.
 
-Creatives belong to a specific advertiser. You can associate each creative to many line items or campaigns under an advertiser.
+Creatives belong to a specific advertiser. You can associate each creative to many line items under an advertiser.
 
 ## Segment Pixel
 
-A [segment pixel](working-with-segments.md) is placed on web pages to collect data about users, such as pages they visit, actions they take, or qualities such as gender, location, and wealth. When a segment pixel fires, the user is added to a segment, which can later be targeted in campaigns to attempt to reach the user again (retargeting).
+A [segment pixel](working-with-segments.md) is placed on web pages to collect data about users, such as pages they visit, actions they take, or qualities such as gender, location, and wealth. When a segment pixel fires, the user is added to a segment, which can later be targeted in line items to attempt to reach the user again (retargeting).
 
-Segment pixels belong either to the entire network or to a specific advertiser. Network-level segments are available for targeting in all campaigns under all advertisers. Advertiser-level segments are available for targeting only in campaigns under that specific advertiser.
+Segment pixels belong either to the entire network or to a specific advertiser. Network-level segments are available for targeting in all line items under all advertisers. Advertiser-level segments are available for targeting only in line items under that specific advertiser.
 
 ## Conversion pixel
 
 A [conversion pixel](working-with-conversion-pixels.md) is placed on web pages to track user actions in response to an advertiser's creatives, such as registering at a site or making a purchase. When a conversion pixel fires, Microsoft Advertising determines if the conversion (the registration, the purchase, etc.) can be "attributed", or tied to the
 user clicking on or viewing one of the advertiser's creatives previously [conversion attribution](conversion-attribution.md).
 
-You can have many conversion pixels under a single advertiser. You associate each conversion pixel to many line items (for tracking payment or performance goals on a CPA basis) or campaigns (for valuing impressions based on CPA optimization data).
+You can have many conversion pixels under a single advertiser. You associate each conversion pixel to many line items (for tracking payment or performance goals on a CPA basis).
 
 ## Third-Party creative pixel
 
@@ -154,6 +128,6 @@ You can have many placement groups under a single publisher.
 
 ## Placement
 
-A [placement](working-with-placements.md) represents a piece of web or mobile inventory where a creative with matching specifications can serve. At this level, you select the size and types of creatives that can serve on the placement, set a reserve price, and self-classify the placement with categories and sensitive attributes for campaign targeting and reporting.
+A [placement](working-with-placements.md) represents a piece of web or mobile inventory where a creative with matching specifications can serve. At this level, you select the size and types of creatives that can serve on the placement, set a reserve price, and self-classify the placement with categories and sensitive attributes for line item targeting and reporting.
 
 You can have many placements under a single placement group.

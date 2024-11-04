@@ -3,7 +3,7 @@ title: Set GPID (Global Placement ID)
 description: This article provides links to various code samples to help you in the development of your app.
 ms.custom: android-sdk
 ms.date: 10/28/2023
-ms.author: brighosh
+ms.author: shivannis
 ---
 
 # Set GPID (Global Placement ID)

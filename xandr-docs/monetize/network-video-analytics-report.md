@@ -75,10 +75,11 @@ Data in this report is retained for 420 days.
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Brand | Yes | The brand associated with the creative. Microsoft Advertising keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "`Resold`", no information is available in the Brand field for this report. |
 | Country | Yes | The country in which the impression took place. |
-| Deal | Yes | The deal associated with the transaction for the impression. |
 | Creative | Yes | The creative served for the impression. |
 | Creative Recency | Yes | How recently the creative was viewed by the user. For more information, see the [Creative Frequency and Recency Report](creative-frequency-and-recency-report.md). |
 | Creative Frequency | Yes | How many times the creative has been viewed by the user. For more information, see [Creative Frequency and Recency Report](creative-frequency-and-recency-report.md) page. |
+| Deal | Yes | The deal associated with the transaction for the impression. |
+| Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | IO: Trafficker (reporting label) | Yes | The trafficker associated with this insertion order. This is an insertion order reporting label. |
 | IO: Sales Rep (reporting label) | Yes | The sales rep associated with this insertion order. This is an insertion order reporting label. |
 | Site Domain | Yes | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "`deals.unknown`" or "`managed.unknown`". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |

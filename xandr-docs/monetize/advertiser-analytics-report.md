@@ -113,6 +113,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](working-with-creatives.md). <br><br> **Note**: For impressions older than 100 days, creatives will be aggregated into one row with `0` as the ID and a generic name. |
 | Creative Code | No | Optional code associated with the creative that ran. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
+| Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | Flight | No | The line item flight under which the impression was purchased. |
 | Flight: End Date | No | The end date of the flight under which the impression was purchased. |
 | Flight: Imp Budget (daily) | No | The daily budget in impressions for the flight. |

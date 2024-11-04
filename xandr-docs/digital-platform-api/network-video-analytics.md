@@ -90,6 +90,7 @@ Data in this report is retained for 420 days.
 | `brand` | string | No | `"Ace Hardware (3)"` | **Deprecated** (as of October 17, 2016). |
 | `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
 | `geo_country_name` | string | No | `"United States"` | The name of the geographic country. |
+| `deal_code` | string | No | `External seller deal code` | The custom code for the deal. For deals with external supply partners, this string typically identifies the deal. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated** (as of October 17, 2016). |

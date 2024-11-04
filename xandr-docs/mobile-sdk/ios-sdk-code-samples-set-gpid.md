@@ -1,6 +1,6 @@
 ---
 title: Set GPID (Global Placement ID)
-description: Learn how to set a Global Placement ID (GPID) for both Android platform, with code samples to assist in your app development.
+description: Learn how to set a Global Placement ID (GPID) for iOS platforms, with code samples to assist in your app development.
 ms.custom: android-sdk
 ms.date: 10/28/2023
 ---

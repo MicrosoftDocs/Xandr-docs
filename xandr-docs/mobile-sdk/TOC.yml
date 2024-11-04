@@ -177,8 +177,8 @@
       items:
       - name: Overview
         href: android-sdk-code-samples.md
-          - name: Set GPID (Global Placement ID)
-            href: android-sdk-code-samples-set-gpid.md
+       - name: Set GPID (Global Placement ID)
+         href: android-sdk-code-samples-set-gpid.md
       - name: Add a Transition Animation
         href: add-a-transition-animation-on-android.md
       - name: Add Targeting Parameters

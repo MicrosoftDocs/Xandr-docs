@@ -8,13 +8,13 @@ ms.date: 10/28/2023
 
 The **Advertiser Details** screen shows you the settings and essential metrics for a specific advertiser, provides visualizations of the advertiser's performance, and offers quick access to the advertiser's child objects.
 
-## Getting to the Advertiser Details screen
+## Locate the Advertiser Details screen
 
-On the **Advertisers** screen, click the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
+On the **Advertisers** screen, select the name of the advertiser for which you want to view advanced details. This takes you to the **Advertiser Details** screen.
 
-## Viewing advertiser settings
+## View advertiser settings
 
-The settings that display here can be edited by clicking **Edit** at the top of the **Advertisers** screen. For more information, see
+The settings that display here can be edited by selecting **Edit** at the top of the **Advertisers** screen. For more information, see
 [Create an Advertiser](create-an-advertiser.md).
 
 ## Basic setup
@@ -50,10 +50,9 @@ Indicates whether a **Salesperson**, **Account Manager**, or **Advertiser Type**
 
 Displays the billing address for the advertiser. This helps you maintain all of your advertiser information in one system. Microsoft Advertising does not bill advertisers for you, and billing information is not included in reporting.
 
-## Frequency & Recency
+## Frequency and Recency
 
-Displays frequency and recency caps applied to the advertiser. For more information, see [Frequency
-and Recency Caps](frequency-and-recency-caps.md)</a>.
+Displays frequency and recency caps applied to the advertiser. For more information, see [Frequency and Recency Caps](frequency-and-recency-caps.md).
 
 ## Associated insertion orders
 
@@ -63,11 +62,11 @@ Displays insertion orders associated with the advertiser.
 
 Displays line items associated with the advertiser.
 
-## Viewing child object details
+## View child object details
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the **Details** pane.
+1. Select the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

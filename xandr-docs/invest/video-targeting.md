@@ -11,7 +11,7 @@ You can target video inventory based on the playback method, player size, and po
 > [!NOTE]
 > Video content targeting requires content metadata integration. Please contact your Microsoft account manager for enablement. If you are not integrated with video content metadata, values passed in content object fields will not be transmitted to DSP partners.
 
-In the **Viewability & Environment Targeting** section of a line item, click the pencil icon next to **Video Player**.
+In the **Viewability & Environment Targeting** section of a line item, select the pencil icon next to **Video Player**.
 
 You can target video creatives in any or all of the following ways:
 
@@ -51,6 +51,7 @@ You can target inventory that accepts creatives with the following playback meth
 - **No playback method provided** - Target inventory where no initiation method information is provided (e.g., YouTube inventory).
 
 > [!NOTE]
+>
 > - For maximum delivery and reach, we recommend that you include **No initiation method provided** in your targeting since some inventory (such as Google Ad Manager) is not classified.
 > - Playback method targeting is not available for Google Ad Manager (181).
 
@@ -59,12 +60,11 @@ You can target inventory that accepts creatives with the following playback meth
 Player inventory is available across all supply types (web, mobile web, and mobile app). The following player sizes are available to target:
 
 - **Large -** primarily large-format web inventory (minimum width of 640 pixels)
-- **Medium -** includes most smartphone player inventory for mobile apps
-  (minimum width of 320 pixels, maximum width of 639 pixels)
+- **Medium -** includes most smartphone player inventory for mobile apps (minimum width of 320 pixels, maximum width of 639 pixels)
 - **Small -** primarily in-banner inventory (maximum width of 319 pixels)
 - **No player width provided**
 
 > [!TIP]
 > For maximum delivery and reach, we recommend that you include **No player width provided** in your targeting, because some inventory (such as Google Ad Manager) is not classified.
 
-You can either click the graphic to make a selection or select the appropriate checkbox.
+You can either select the graphic to make a selection or select the appropriate checkbox.

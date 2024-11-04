@@ -8,16 +8,16 @@ ms.date: 10/28/2023
 
 The **Insertion Order Details** screen displays settings for a specific insertion order, essential metrics, and performance visualizations.
 
-## Getting to the Insertion Order Details screen
+## Locate the Insertion Order Details screen
 
-Select the appropriate tab from the **Insertion Orders** menu (**Upcoming**, **In Progress**, or **Completed**). From the **Insertion Orders** grid, click anywhere within a row to view details for a specific insertion order.
+Select the appropriate tab from the **Insertion Orders** menu (**Upcoming**, **In Progress**, or **Completed**). From the **Insertion Orders** grid, select anywhere within a row to view details for a specific insertion order.
 
 > [!TIP]
 > You can use the search field at the top of the **Insertion Orders** screen to search for a specific insertion order or navigate from page to page using the pagination functionality at the bottom of the screen. For more information, see [Searching for Objects](using-the-buyer-monitoring-grids.md).
 
-## Viewing insertion order settings
+## View insertion order settings
 
-The settings that display here are read-only and can be edited by clicking **Edit** at the top of the **Insertion Order Details** screen. For more information, see [Create an Insertion Order](create-an-insertion-order.md).
+The settings that display here are read-only and can be edited by selecting **Edit** at the top of the **Insertion Order Details** screen. For more information, see [Create an Insertion Order](create-an-insertion-order.md).
 
 | Setting | Description |
 |--|--|
@@ -29,11 +29,11 @@ The settings that display here are read-only and can be edited by clicking **Edi
 | Supply Strategy | Displays the insertion order's inventory type targeting, inventory lists, and viewability standard. |
 | Associated Line Items | Displays line items associated with the insertion order. |
 
-## Viewing child object details
+## View child object details
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the **Details** pane.
+1. Select the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

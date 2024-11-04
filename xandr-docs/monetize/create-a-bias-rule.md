@@ -123,7 +123,7 @@ You can target specific countries, regions, metro codes, cities, or zip codes.
 >
 > Users of geographic targeting should expect some degree of inaccuracy; though targeting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes.
 >
-> Microsoft Advertising uses the IP lookup service provided by [MaxMind](https://www.maxmind.com). For more information, read about their [GeoIP Technology](https://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](https://www.maxmind.com/company/contact-us).
+> Microsoft Advertising uses the IP lookup service provided by [MaxMind](https://www.maxmind.com). For more information, read about their [GeoIP Technology](https://www.maxmind.com/en/geolocation_landing) or [contact MaxMind directly](https://www.maxmind.com/en/company/contact-us).
 >
 > **Geographic targeting and boolean logic**
 >

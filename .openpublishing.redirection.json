@@ -64,6 +64,11 @@
             "source_path": "xandr-docs/monetize/using-multiple-campaigns-with-a-guaranteed-line-item.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/create-a-guaranteed-delivery-line-item",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/geography-targeting.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/how-geography-targeting-works",
+            "redirect_document_id": false
         }
     ]
 }

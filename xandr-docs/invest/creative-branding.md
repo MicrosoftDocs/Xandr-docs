@@ -78,7 +78,6 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Print and Publications** | This brand represents newspapers, magazines, and other publications. This brand applies to creatives that advertise:<br> - Magazines and periodicals<br> - Newspapers<br> - Publishers |
 | **Quizzes and Surveys** | This brand offers questionnaires and survey. |
 | **Real Estate** | This brand represents the sale, rental, and management of property. This brand applies to creatives that advertise:<br> - Apartment and retail buildings for rent or sale<br> - House and apartment classifieds<br> - Realtors and real Estate Agencies |
-| **Real Estate** | This brand represents the sale, rental, and management of property. This brand applies to creatives that advertise:<br> - Apartment and retail buildings for rent or sale<br> - House and apartment classifieds<br> - Realtors and real Estate Agencies |
 | **Religion** | This brand represents religious and faith based organizations. |
 | **Retail** | This brand primarily sells a large array of products across categories. This brand applies to creatives that advertise:<br> - Bookstores<br> - Department stores<br> - Online shopping aggregates<br> - Pawn shops |
 | **Ringtones and Mobile Subscriptions** | This brand offers downloadable ringtones and subscription-based services for mobile devices. |

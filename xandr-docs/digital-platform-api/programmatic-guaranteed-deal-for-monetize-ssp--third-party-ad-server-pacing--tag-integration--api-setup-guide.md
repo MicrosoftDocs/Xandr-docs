@@ -755,7 +755,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `insertion_orders` | array | Required | Array containing the insertion order ID you want to associate this deal line item to.<br><br>**Note:** PG deal line items can only use a single insertion order. |
 | `name` | string | Required | Name of the deal line item.<br><br>**Note:** The buyer won't see this. |
 | `state` | enum | Required | State of the PG deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
-| `priority` | int | Required | Set this field's value to `"5"` for a PG deal. |
+| `priority` | int | Required | Set this field's value to "20" for pacing a PG deal in the third-party ad server. |
 | `ad_types` | array | Required | The type of creative used for this deal line item. Possible values:<br>`"banner"`<br><br>**Note:** Currently, you can only use banner (display) creatives for PG deals for SSP (third-party ad server targeting and pacing). |
 | `line_item_type` | enum | Required | Must be set to `"standard_v2"` to create a PG deal line item. |
 | `profile_id` | int | Required | Profile ID associated with the deal line item ([Step 5 - Create a deal line item profile](#step-5-create-a-deal-line-item-profile)). |

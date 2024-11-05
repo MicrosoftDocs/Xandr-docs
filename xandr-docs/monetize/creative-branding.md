@@ -70,8 +70,8 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Office Supplies** | This brand primarily sells products for use in an office. |
 | **Online Advertising Agencies** | This brand represents an online advertising agency. |
 | **Online Games** | This brand offers browser-based online games. This brand applies to creatives that advertise: <br> - Free-to-play flash games <br> - Freemium games <br> - Subscription online-only games |
-| **Pets** | This brand sells primarily products and services for pets and pet owners. This brand applies to creatives that advertise: <br> - Livestock-related services <br> - Pet adoption <br> - Pet information and guides <br> - Pet supplies <br> - Veterinarians |
-| **Pharmaceuticals and supplements** | This brand primarily sells or manufactures prescriptions, over-the-counter medications, and/or supplements. |
+| **Pets** | This brand sells primarily products and services for Pets and pet owners. This brand applies to creatives that advertise: <br> - Livestock-related services <br> - Pet adoption <br> - Pet information and guides <br> - Pet supplies <br> - Veterinarians |
+| **Pharmaceuticals and Supplements** | This brand primarily sells or manufactures prescriptions, over-the-counter medications, and/or supplements. |
 | **Premium Services** | This brand offers high-level services. This brand applies to creatives that advertise: <br> - Architects and contractors <br> - Event planning services <br> - Home services such as maids, handymen, and exterminators <br> - Industrial HVAC <br> - Mailing and delivery services <br> - Solar, wind, and alternative power |
 | **Premium Services: End of Life Services** | This brand represents services related to end-of-life/palliative care, including hospices and funeral homes. |
 | **Premium Services: Power Utilities** | This brand represents utilities. This brand applies to creatives that advertise electric, heat, steam, and water companies. |

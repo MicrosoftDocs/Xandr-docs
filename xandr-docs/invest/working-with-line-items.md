@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Line Items
+title: Microsoft Invest - Work with Line Items
 description: Learn about working with line items.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with line items
+# Microsoft Invest - Work with line items
 
 A line item defines your financial agreement with an advertiser, including how much the advertiser has allocated for you to spend
 (budget) and the basis on which the advertiser has agreed to pay you (revenue type).

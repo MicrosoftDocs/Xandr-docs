@@ -54,6 +54,16 @@
             "source_path": "xandr-docs/monetize/guaranteed-delivery-line-item-faq-gdali.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/guaranteed-delivery-gdali",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/guaranteed-delivery.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/create-a-guaranteed-delivery-line-item",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/using-multiple-campaigns-with-a-guaranteed-line-item.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/create-a-guaranteed-delivery-line-item",
+            "redirect_document_id": false
         }
     ]
 }

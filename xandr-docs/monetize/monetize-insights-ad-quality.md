@@ -1,14 +1,10 @@
 ---
 title: Ad Quality
 description: In this page, learn what is an Ad Quality and how it gets configured when the client joins our platform.
-ms.date: 10/28/2023
+ms.date: 10/14/2024
 ---
 
-
 # Ad quality
-
-> [!NOTE]
-> This feature is part of a functionality that is currently in **Beta**. It is still under development and may be subject to change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
 **Ad Quality** shows revenue-impacting blocks to help identify and evaluate opportunities to adjust ad quality settings. They are settings that the publisher has for brand safety. It gets configured when the client joins our platform and then may not be re-evaluated frequently. In the **Ad Quality** tab:
 
@@ -16,13 +12,13 @@ ms.date: 10/28/2023
 - there are direct links to rule management settings.
 
 > [!NOTE]
-> As an organization, we recommend you to regularly view your Ad Quality settings (at least quarterly) to make sure that are appropriate and consistent with settings configured in the other SSPs (that you may also be using to monetize inventory). Generally, the blocked bid value overestimates potential revenue impact and is influenced by the price and frequency of the bids that have been blocked.
+> As an organization, we recommend you to regularly view your Ad Quality settings (at least quarterly) to make sure that are appropriate and consistent with settings configured in the other SSPs (that you may also be using to monetize inventory). Generally, the blocked bid opportunity overestimates potential revenue impact and is influenced by the price and frequency of the bids that have been blocked.
 >
 > If an Ad Quality (AQ) is set as `default_brand_status:banned` but the parent brand is set as `status:trusted`, the child brand overrides the setting in `default_brand_status` and it will be able to serve unless it is explicitly banned in the Ad Profile's brand override list.
 
 ## Ad quality summary
 
-The value mentioned on **Ad Quality** tab is the blocked bid value. A $5.8M of blocked bid value in last 7 days, up 11% compared to prior week does not provide a direct revenue number but can be used directionally to assess opportunities.
+The value mentioned on **Ad Quality** tab is the blocked bid opportunity. A $5.8M of blocked bid opportunity in last 7 days, up 11% compared to prior week does not provide a direct revenue number but can be used directionally to assess opportunities.
 
 ## Filter
 
@@ -42,7 +38,7 @@ Steps to make changes in the graph and the table that follows it:
 
 1. The filter has features specific to Ad Quality.
 1. Clicking on **Apply** updates the graph and the table that appears after that.
-1. The graph is configurable so you can choose what you want to plot on the graph, whether it is Blocked Bid Value, Error Count or Avg CPM.
+1. The graph is configurable so you can choose what you want to plot on the graph, whether it is Blocked Bid Opportunity, Error Count or Avg CPM.
 1. You can group the data on the basis of Publisher, Ad Quality Rule, Rejection Type, Bid Rejection, Media Type or Placement Group.
 1. You can also select how you want the graph to be displayed whether as a Bar chart or a time series Area chart.
 1. Hovering on the chart will give you information on the chart at that position.
@@ -59,7 +55,7 @@ There are three dropdowns which decide how your chart appears depending on your 
 |--|--|
 | Compare relative scale and observe trends | View as a bar chart to compare how the metrics compare between the grouping you have selected. You can also view as an area chart to see how the groupings changed over time. It specifies if there are spikes or consistent behaviour. |
 | How you want the data grouped | Focuses on how you want the data to be grouped. Grouping can be done on the basis of Publisher, Ad quality rule, Rejection type, Bid rejection, Media type or Placement group. |
-| Which metric is of interest | To get the metric of interest, choose between Blocked bid value, Error count and Avg CPM. |
+| Which metric is of interest | To get the metric of interest, choose between Blocked bid opportunity, Error count and Avg CPM. |
 
 ## Bid rejections table
 
@@ -67,16 +63,16 @@ The table contains rejections that are grouped according to different publishers
 
 | Field | Description |
 |--|--|
-| % Δ Blocked Bid Value | The percentage change of the blocked bid value week over week. Sort by this value to see the biggest relative changes between time periods. |
+| % Δ Blocked Bid Opportunity | The percentage change of the blocked bid opportunity week over week. Sort by this value to see the biggest relative changes between time periods. |
 | Ad Quality Rule | What type of creative is it, and where is it being blocked within your inventory. |
 | Avg CPM | The average bid price of the rejections. |
 | Bid Rejection Name | This is the specific block reason. For example, if brand Fizzy Drinks is blocked due to its brand, the name of the brand will show here. |
 | Bid Rejection Type | The general reason for the block, such as Technical Attribute, Category or Brand. |
-| Blocked Bid Value | The sum of all bid prices. Directional to gauge potential impact. Incremental bid value to existing revenue and multiple bids not accounted for. |
+| Blocked Bid Opportunity | The sum of all bid prices. Directional to gauge potential impact. Incremental bid value to existing revenue and multiple bids not accounted for. |
 | Error Count | The total number of bid rejections resulting from Ad Quality Rules. |
 | Media Type | Native, Banner or Video creative. |
 | Publisher | An object within our system to group inventory, normally by publication. |
-| Δ Blocked Bid Value | The change in dollars of the Blocked Bid Value in the last 7 days compared to 7 days prior to it. Sort by this value to see the biggest changes between time periods. |
+| Δ Blocked Bid Opportunity | The change in dollars of the Blocked Bid Opportunity in the last 7 days compared to 7 days prior to it. Sort by this value to see the biggest changes between time periods. |
 
 > [!NOTE]
 > Click on any row to zoom into more contextual details on the block.

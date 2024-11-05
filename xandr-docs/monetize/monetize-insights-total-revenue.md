@@ -1,9 +1,8 @@
 ---
 title: Monetize Insights for Total Revenue
 description: This page gives an overview of Total Revenue tab of Monetize Insights and how you can use it to monitor business performance and key performance indicators (KPIs).  
-ms.date: 10/28/2023
+ms.date: 10/14/2024
 ---
-
 
 # Monetize insights for total revenue
 

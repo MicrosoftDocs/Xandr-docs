@@ -9,33 +9,20 @@ ms.date: 10/28/2023
 
 The page Provides a way for publishers to specify their own global publisher identifier to represent the placement.
 
-## Code Samples
+## Example
 
-### Android Code Sample: JAVA
+### [Java](#tab/java1)
 
 ```java
 banner.setGpid("Test_GlobalPlacementId");
 ```
 
-### Android Code Sample: Kotlin
+### [Kotlin](#tab/kotlin1)
+
+
 
 ```kotlin
 
 banner.gpid = "Test_GlobalPlacementId"
 
-```
-
-### iOS Code Sample: Objective-C
-
-```objectivec
-
-
-banner.gpid = @"Test_GlobalPlacementId";
-```
-
-### iOS Code Sample: Swift
-
-```swift
-
-banner.gpid = "Test_GlobalPlacementId"
 ```

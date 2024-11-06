@@ -1197,8 +1197,8 @@
       href: floor-rule-targeting.md
     - name: Create a Bias Rule
       href: create-a-bias-rule.md
-    - name: Update Bias Rules
-      href: update-bias-rules.md
+    # - name: Update Bias Rules
+    #   href: update-bias-rules.md
     - name: Floor Optimization
       href: floor-optimization.md
   - name: Video Inventory

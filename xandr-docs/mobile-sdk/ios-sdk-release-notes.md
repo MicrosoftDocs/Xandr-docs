@@ -9,6 +9,13 @@ ms.custom: ios-sdk
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.2.0
+
+### Improvement/Bug Fixes
+
+- 8196240: Added support for Global Placement ID (GPID).
+- 8191691: Addressed several memory leaks.
+
 ## 9.1.1
 
 ### Improvement/Bug Fixes

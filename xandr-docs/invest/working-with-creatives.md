@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Creatives
+title: Microsoft Invest - Work with Creatives
 description: In this article, learn how to work with Creatives. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with creatives
+# Microsoft Invest - Work with creatives
 
 You can traffic a wide range of creative types, from banners to increasingly pervasive rich media types, through the Microsoft Advertising platform. Only secure content is supported.
 

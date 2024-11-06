@@ -10,11 +10,11 @@
       href: digital-platform-ui-api-info.md
 - name: Member Settings
   items: 
-  - name: Working with Member Settings
+  - name: Work with Member Settings
     items:
     - name: Manage Notification Recipients
       href: managing-notification-recipients.md
-    - name: Viewing Your Object Limits
+    - name: View Your Object Limits
       href: viewing-your-object-limits.md
     - name: Cap Daily Spend on Third-Party Inventory (Safety Budget)
       href: capping-daily-spend-on-third-party-inventory-safety-budget.md
@@ -38,7 +38,7 @@
       items:   
       - name: Overview
         href: getting-started-with-roles.md
-      - name: Working with Roles
+      - name: Work with Roles
         href: working-with-roles.md 
       - name: Create a Custom Role
         href: create-a-custom-role.md
@@ -72,7 +72,7 @@
       href: currency-support.md
     - name: Run a Report using Reporting Labels
       href: reporting-labels.md
-  - name: Working with Third-Party Inventory
+  - name: Work with Third-Party Inventory
     items:
     - name: Exchanges and Aggregators
       items:
@@ -118,7 +118,7 @@
         href: bulk-importer-guidelines-for-split-segment-groups.md
   - name: Advertisers
     items:
-    - name: Working with Advertisers
+    - name: Work with Advertisers
       href: working-with-advertisers.md
     - name: Create an Advertiser
       href: create-an-advertiser.md
@@ -128,7 +128,7 @@
       href: view-advertiser-details.md
   - name: Insertion Orders
     items:
-    - name: Working with Insertion Orders
+    - name: Work with Insertion Orders
       href: working-with-insertion-orders.md
     - name: View Insertion Order Details
       href: view-insertion-order-details.md
@@ -140,7 +140,7 @@
       href: duplicate-an-insertion-order.md
   - name: Working with Line Items
     items:
-    - name: Working with Line Items
+    - name: Work with Line Items
       href: working-with-line-items.md
     - name: Troubleshoot Your Augmented Line Item Delivery and Bid Performance
       href: troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md
@@ -282,7 +282,7 @@
       href: explore-insertion-orders-page.md
   - name: Programmable Splits
     items:
-    - name: Working with Programmable Splits
+    - name: Work with Programmable Splits
       href: working-with-programmable-splits.md
     - name: Understand Splits
       href: understanding-splits.md
@@ -300,7 +300,7 @@
       href: split-faqs.md
   - name: Segments
     items:
-    - name: Working with Segments
+    - name: Work with Segments
       href: working-with-segments.md    
     - name: Onboarding Your Audience Data
       items:
@@ -374,7 +374,7 @@
       href: universal-pixel-object-limits.md
   - name: Conversion Pixels
     items:
-    - name: Working with Conversion Pixels
+    - name: Work with Conversion Pixels
       href: working-with-conversion-pixels.md
     - name: Create a Conversion Pixel
       href: create-a-conversion-pixel.md
@@ -396,7 +396,7 @@
       href: set-up-a-combined-segment-and-conversion-pixel.md
   - name: Impression and Click Trackers
     items:
-    - name: Working with Impression and Click Trackers
+    - name: Work with Impression and Click Trackers
       href: working-with-impression-and-click-trackers.md
     - name: Create a Click Tracker
       href: create-a-click-tracker.md
@@ -618,7 +618,7 @@
       href: optimization-faq.md
 - name: Creatives
   items:
-  - name: Working with Creatives 
+  - name: Work with Creatives 
     href: working-with-creatives.md
   - name: Explore Creatives
     href: exploring-creatives.md
@@ -996,7 +996,7 @@
     href: availability-of-reporting-data.md
   - name: Report Discrepancies
     items:   
-    - name: What to Check if You Suspect a Discrepancy
+    - name: Checklist for Suspected Discrepancies
       href: what-to-check-if-you-suspect-a-report-discrepancy.md
     - name: Prepare to Request a Report Discrepancy Investigation
       href: prepare-to-file-a-report-discrepancy-support-case.md

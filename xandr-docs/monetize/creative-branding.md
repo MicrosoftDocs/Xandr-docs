@@ -34,7 +34,6 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Family and Parenting** | This brand offers services, advice, and/or information related to families and child-rearing. |
 | **Family Planning** | This brand represents all family planning services including preconception counseling, education, and general reproductive and fertility health care. |
 | **Financial** | This brand represents accredited banking, investment, and long-term loan organizations. |
-| **Financial: Cryptocurrency** | This brand represents all services related to any digital currency used as an alternative payment method or as an investment. |
 | **Financial: Forex** | This brand represents Forex trade. This brand applies to creatives that advertise: <br> - Binary trading <br> - Foreign exchange currency markets <br> - FX market |
 | **Firearms and Weapons** | This brand offers weapons, ammunition, and/or firearm sales and services. This brand applies to creatives that advertise: <br> - Firearm stores <br> - Firing ranges <br> - Gun education and licensing <br> - Gun manufacturers <br> - Gun shows |
 | **Fitness and Health** | This brand represents gyms and personal fitness/health services. This brand applies to creatives that advertise: <br> - Dieticians and health consultants <br> - Fitness machines <br> - Gyms and spas <br> - Personal trainers |
@@ -71,12 +70,8 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Office Supplies** | This brand primarily sells products for use in an office. |
 | **Online Advertising Agencies** | This brand represents an online advertising agency. |
 | **Online Games** | This brand offers browser-based online games. This brand applies to creatives that advertise: <br> - Free-to-play flash games <br> - Freemium games <br> - Subscription online-only games |
-| **Pets** | This brand sells primarily products and services for pets and pet owners. This brand applies to creatives that advertise: <br> - Livestock-related services <br> - Pet adoption <br> - Pet information and guides <br> - Pet supplies <br> - Veterinarians |
-| **Pharmaceuticals: Herbal Supplements** | This brand offers FDA-approved medicinal or dietary supplements. |
-| **Pharmaceuticals: Non-Prescription** | This brand primarily offers or manufactures over-the-counter drugs. |
-| **Pharmaceuticals: Prescription** | This brand primarily sells or manufactures prescriptions medications. This brand applies to creatives that advertise: <br> - Doctor-administered procedures <br> - Prescription drugs |
-| **Pharmaceuticals: Steroid-Like Supplements** | This brand offers herbal supplement that claims to replicate the effects of steroids. |
-| **Politics** | This brand represents political news and political campaigns or agendas. This brand applies to creatives that advertise: <br> - Political events and fundraisers <br> - Political issue campaigns <br> - Political sites and blogs <br> - Promotion of political ideology or party |
+| **Pets** | This brand sells primarily products and services for Pets and pet owners. This brand applies to creatives that advertise: <br> - Livestock-related services <br> - Pet adoption <br> - Pet information and guides <br> - Pet supplies <br> - Veterinarians |
+| **Pharmaceuticals and Supplements** | This brand primarily sells or manufactures prescriptions, over-the-counter medications, and/or supplements. |
 | **Premium Services** | This brand offers high-level services. This brand applies to creatives that advertise: <br> - Architects and contractors <br> - Event planning services <br> - Home services such as maids, handymen, and exterminators <br> - Industrial HVAC <br> - Mailing and delivery services <br> - Solar, wind, and alternative power |
 | **Premium Services: End of Life Services** | This brand represents services related to end-of-life/palliative care, including hospices and funeral homes. |
 | **Premium Services: Power Utilities** | This brand represents utilities. This brand applies to creatives that advertise electric, heat, steam, and water companies. |
@@ -95,7 +90,6 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Telecommunications** | Brand represents a telecommunication company. This brand applies to creatives that advertise: <br> - Cable, DirecTV, and satellite <br> - GPS devices and services <br> - Mobile telephones and service <br> - Phone and internet |
 | **Television** | This brand represents a television show or network. |
 | **Ticket Resellers** | This brand represents resale of tickets for admission to events. |
-| **Tobacco and Smoking Products** | This brand primarily sells or manufactures tobacco and smoking/tobacco-related products. This brand applies to creatives that advertise: <br> - Cigarette, cigar, hookah, pipes, and paraphernalia <br> - E-cigarettes <br> - Nicotine patches and gum |
 | **Toolbars** | This brand represents any landing page with a toolbar or browser extension as an offering. |
 | **Toys and Games** | This brand primarily sells toys and games. |
 | **Travel Destinations** | This brand represents a tourist destination. This brand applies to creatives that advertise: <br> - Location-specific activities and events <br> - Parks and attractions <br> - Tourist-oriented city guides |

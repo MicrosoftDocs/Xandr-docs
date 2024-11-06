@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Programmable Splits
+title: Microsoft Invest - Work with Programmable Splits
 description: Learn about Programmable splits.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with programmable splits
+# Microsoft Invest - Work with programmable splits
 
 > [!NOTE]
 > Programmable splits are only available for [Augmented Line Items (ALIs)](augmented-line-items-ali.md).

@@ -8,15 +8,15 @@ ms.date: 10/28/2023
 
 The **Line Item Details** screen displays settings for a specific line item, essential metrics and performance visualizations, and related objects that may have been set up under the line item.
 
-## Getting to the Line Item Details pane
+## Locate the Line Item Details pane
 
-Select the appropriate tab (Upcoming, In Progress, or Completed) from the **Line Items** menu. From the **Line Items** grid, click anywhere within one of the rows to view details for a specific line item.
+Select the appropriate tab (Upcoming, In Progress, or Completed) from the **Line Items** menu. From the **Line Items** grid, select anywhere within one of the rows to view details for a specific line item.
 
 You can use the search field at the top of the **Line Items** screen to search for a specific line item or navigate from page to page using the pagination functionality at the bottom of the screen. For more information, see [Searching for Objects](using-the-buyer-monitoring-grids.md).
 
-## Viewing line item settings
+## View line item settings
 
-The settings that display here are read-only and can be edited by clicking **Edit** at the top of the **Line Items Details** screen. For
+The settings that display here are read-only and can be edited by selecting **Edit** at the top of the **Line Items Details** screen. For
 more information, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 
 | Settings | Description |
@@ -36,7 +36,7 @@ more information, see [Create an Augmented Line Item](create-an-augmented-line-i
 | Reporting Labels | Indicates whether a **Trafficker**, **Salesperson**, or **Line Item Type** has been associated to the line item. If so, these labels can be used when running reports. For example, if a salesperson is associated with the line item, the report will be grouped by salesperson to compare line item performance across salespersons. |
 | Comments | Displays any comments that have been recorded with the line item. Comments are for reference only and do not affect line item delivery. |
 
-## Viewing line item analytics
+## View line item analytics
 
 The **Analytics** tab provides detailed metric information in the form of graphs and charts so that you can:
 
@@ -47,15 +47,15 @@ The **Analytics** tab provides detailed metric information in the form of graphs
 
 For more information, see [Monitor Splits](monitor-splits.md).
 
-## Troubleshooting line item delivery and bid performance
+## Troubleshoot line item delivery and bid performance
 
 The **Troubleshooting** tab displays a prioritized list of top issues and bid performance messages to help you improve your line item delivery and impression count. For more information, see [Troubleshoot Your Augmented Line Item Delivery and Bid Performance](troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md) and [Bid Performance Messages for Augmented Line Items](bid-performance-messages-for-augmented-line-items.md).
 
-## Viewing child object details
+## View child object details
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the **Details** pane.
+1. Select the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

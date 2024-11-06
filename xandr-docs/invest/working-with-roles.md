@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Roles
+title: Microsoft Invest - Work with Roles
 description: In this article, learn about roles.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with roles
+# Microsoft Invest - Work with roles
 
 Roles determine what the users can view and perform in the Microsoft Advertising system, and can be applied at the Platform or Feature level. You can also create custom roles depending on the need of the business.
 
@@ -35,8 +35,9 @@ You can assign platform roles to users when you create the user account. You can
 
 > [!IMPORTANT]
 > If you do NOT have a Team setup, the following applies to the **Network Advertiser Manager** and the **Network Publisher Manager** roles:
->- If a user has either one of the above mentioned roles; that is the ONLY role the user can have. Neither of the roles can be assigned in conjunction with any other role.
->- After you have created a user with one of the roles, you will NOT be able to edit the role.
+>
+> - If a user has either one of the above mentioned roles; that is the ONLY role the user can have. Neither of the roles can be assigned in conjunction with any other role.
+> - After you have created a user with one of the roles, you will NOT be able to edit the role.
 
 ## Feature roles
 

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Invest - Working with Segments
+title: Microsoft Invest - Work with Segments
 description: In this article, learn about segment pixels. 
 ms.date: 10/28/2023
 ---
 
-# Microsoft Invest - Working with Segments
+# Microsoft Invest - Work with Segments
 
 Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and
 wealth, to assign that user to a group called a segment. Segment data is written to and extracted from the server-side cookie store via segment pixels.
@@ -35,7 +35,7 @@ advertisers. An advertiser-level segment is only available to that advertiser's 
 We store all cookie data server side in our [Server Side Cookie Store](server-side-cookie-store.md). This way it is accessible for all impressions. Soon we will
 enable access to our customers cookie store data at any time, outside of ad calls. Customers can also traffic in offline user data to our cookie store so that it can be usable during ad calls. Please see [Pass in User Data Offline](pass-in-user-data-offline.md) for details.
 
-## Segment load reporting
+## Generate report on segment load
 
 These metrics are associated with each segment over the selected time period. You can change the time period using the dropdown menu.
 

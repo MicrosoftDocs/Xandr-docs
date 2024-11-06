@@ -131,6 +131,6 @@ Download the latest iOS SDK v9.x from [Azure CDN](https://adsdkprod.azureedge.ne
    :::image type="content" source="media/swift-pkg-mgr-01.png" alt-text="Screenshot shows the steps to open a Swift Package project.":::
 1. Copy and paste the URL https://github.com/appnexus/mobile-sdk-ios-spm in the search box and press `Enter/Return`.
    :::image type="content" source="media/swift-pkg-mgr-02.png" alt-text="Screenshot shows the steps to search a Swift Package package.":::
-1. In **Choose Package Products for mobile-sdk-ios-spm** pop up window, different package products will be present. Select **AppNexusSDK** and select `Add Package`.
+1. In **Choose Package Products for mobile-sdk-ios-spm** pop up window, different package products will be present. Select **AppNexusSDK** and click `Add Package`.
     :::image type="content" source="media/swift-pkg-mgr-03.png" alt-text="Screenshot shows the pop up for Swift Package package.":::
 1. The selected package will be displayed and click on `Add Package` to save the configuration in **Package Dependencies**.

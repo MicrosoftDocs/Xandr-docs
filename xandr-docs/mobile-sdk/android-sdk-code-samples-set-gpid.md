@@ -11,18 +11,18 @@ The page Provides a way for publishers to specify their own global publisher ide
 
 ## Example
 
-### [Java](#tab/java1)
+### Android Code Sample: JAVA
+
+#### [Java](#tab/java1)
 
 ```java
 banner.setGpid("Test_GlobalPlacementId");
 ```
 
-### [Kotlin](#tab/kotlin1)
+### Android Code Sample: Kotlin
 
-
+#### [Kotlin](#tab/kotlin1)
 
 ```kotlin
-
 banner.gpid = "Test_GlobalPlacementId"
-
 ```

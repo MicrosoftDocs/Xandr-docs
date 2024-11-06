@@ -11,17 +11,18 @@ The page Provides a way for publishers to specify their own global publisher ide
 
 ## Example
 
-### [Objective-C](#tab/objectivec)
+### iOS Code Sample: Obj-C
+
+#### [Objective-C](#tab/objectivec)
 
 ```objectivec
-
-
 banner.gpid = @"Test_GlobalPlacementId";
 ```
 
-### [Swift](#tab/swift1)
+### iOS Code Sample: Swift
+
+#### [Swift](#tab/swift1)
 
 ```swift
-
 banner.gpid = "Test_GlobalPlacementId"
 ```

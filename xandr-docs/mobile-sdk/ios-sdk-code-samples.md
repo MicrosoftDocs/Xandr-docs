@@ -22,6 +22,7 @@ This section contains various code samples to help you in the development of you
 | [Control Landing Page Load Visibility](control-landing-page-load-visibility-on-ios.md) | How to configure the landing page load behavior on ad clicks. |
 | [Force Creative ID](forcecreativeid-for-ios.md) | How to specify the ID of a creative that should be forced to appear in a placement. |
 | [Get Facebook Demand for Native](get-facebook-demand-for-native-on-ios.md) | How to get assets for Facebook native ads. |
+| [Global Placement ID (GPID)](ios-sdk-code-samples-set-gpid.md) | Allows publishers to define their own global publisher identifier to represent a placement on iOS. |
 | [iOS ANSDK Settings](ios-ansdk-settings.md)|List all details about the methods or properties, input parameters, returned values, restrictions, guidelines, and examples for the iOS ANSDK settings |
 | [Lazy Loading an Ad Unit](lazy-load-for-ios.md) | How to lazy load an ad unit to control when trackers, including 3rd party trackers, are fired. |
 | [Listen to Native Ad Events](listen-to-native-ad-events-on-ios.md) | How to listen to events, such as Ad Click, in native ads. |

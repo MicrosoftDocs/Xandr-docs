@@ -69,6 +69,32 @@
             "source_path": "xandr-docs/monetize/geography-targeting.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/how-geography-targeting-works",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/mediation-how-auctions-work-for-sellers.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/mediation-selling-your-inventory-through-mediation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/mediation-faqs.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/mediation-selling-your-inventory-through-mediation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/mediation-set-up-mobile-in-app-video-mediation.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/mediation-selling-your-inventory-through-mediation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/monetize/mediation-bid-setup-best-practices.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/mediation-selling-your-inventory-through-mediation",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/digital-platform-api/creative-custom-request-template-parameters.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/digital-platform-api-internal-services",
+            "redirect_document_id": false
         }
+        
     ]
 }

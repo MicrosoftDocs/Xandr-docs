@@ -13,7 +13,7 @@ ms.custom: ios-sdk
 
 ### Improvement/Bug Fixes
 
-- 8196240: Added support for Global Placement ID (GPID).
+- 8196240: Added support for [Global Placement ID (GPID)](ios-sdk-code-samples-set-gpid.md).
 - 8191691: Addressed several memory leaks.
 
 ## 9.1.1

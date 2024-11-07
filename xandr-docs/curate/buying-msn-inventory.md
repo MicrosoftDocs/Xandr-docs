@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Buy MSN Inventory
 description: The article provides an overview of inventory, discussing its availability, volumes, various industry verticals, and formats with detailed specifications.
+ms.date: 10/28/2024
 ---
 
 # Microsoft Curate - Buy MSN inventory

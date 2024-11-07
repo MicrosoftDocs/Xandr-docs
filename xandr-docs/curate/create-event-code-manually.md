@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Create Event Code Manually
 description: The article describes how you can manually create event code based on a template and deploy it on your website.
+ms.date: 10/28/2024
 ---
 # Microsoft Curate - Create event code manually
 

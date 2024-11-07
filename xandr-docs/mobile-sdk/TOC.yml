@@ -67,6 +67,8 @@
       items:
       - name: Overview
         href: ios-sdk-code-samples.md
+      - name: Set GPID (Global Placement ID)
+        href: ios-sdk-code-samples-set-gpid.md
       - name: Add a Transistion Animation
         href: add-a-transition-animation-on-ios.md
       - name: Add Targeting Parameters
@@ -177,6 +179,8 @@
       items:
       - name: Overview
         href: android-sdk-code-samples.md
+      - name: Set GPID (Global Placement ID)
+        href: android-sdk-code-samples-set-gpid.md
       - name: Add a Transition Animation
         href: add-a-transition-animation-on-android.md
       - name: Add Targeting Parameters

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Curate - Content Category Targeting
 description: Target universal and custom categories, emphasizing Standard Line Item exclusivity for content category targeting. 
-ms.date: 10/28/2023
+ms.date: 10/28/2024
 ---
 
 # Microsoft Curate - Content category targeting

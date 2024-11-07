@@ -10,7 +10,7 @@ ms.custom: android-sdk
 
 ### Improvement/Bug Fixes
 
-- 8345778: Added support for [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md)
+- 8345772: Added support for [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md)
 
 ## 9.1.0
 

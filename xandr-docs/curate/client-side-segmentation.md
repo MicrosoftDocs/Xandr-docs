@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Client-Side Segmentation
 description: Track audience by placing client-side pixels on websites to monitor user visits and actions, forming targeted segments.
+ms.date: 10/28/2024
 ---
 # Microsoft Curate - Client-side segmentation
 

@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Create an Insertion Order
 description: Organize, track, and allocate budgets efficiently by creating insertion orders. Linking line items preserves historical data and streamlines setup.
+ms.date: 10/28/2024
 ---
 # Microsoft Curate - Create an insertion order
 

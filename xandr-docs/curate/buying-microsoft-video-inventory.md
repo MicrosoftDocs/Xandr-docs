@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Buy Microsoft Video Inventory 
 description: Explore how Microsoft video inventory blends programmatic buying's targeting with interactive ad formats. Learn types and creative specifications.
+ms.date: 10/28/2024
 ---
 
 # Microsoft Curate - Buy Microsoft video inventory

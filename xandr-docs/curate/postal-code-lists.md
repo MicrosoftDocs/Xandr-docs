@@ -1,6 +1,7 @@
 ---
 title: Microsoft Curate - Postal Code Lists
 description: Utilize postal codes for precise hyperlocal targeting, enhancing advertiser strategies with detailed postal code lists.
+ms.date: 10/28/2024
 ---
 
 # Microsoft Curate - Postal code lists

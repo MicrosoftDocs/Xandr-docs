@@ -10,7 +10,7 @@ ms.custom: android-sdk
 
 ### Improvement/Bug Fixes
 
-- 8345778: Added support for GPID (Global Placement Id)
+- 8345778: Added support for [GPID (Global Placement Id)](https://learn.microsoft.com/en-us/xandr/mobile-sdk/android-sdk-code-samples-set-gpid)
 
 ## 9.1.0
 

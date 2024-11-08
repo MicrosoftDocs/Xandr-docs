@@ -1269,20 +1269,12 @@
     items:
     - name: Overview
       href: mediation-selling-your-inventory-through-mediation.md
-    - name: How Auctions Work for Sellers
-      href: mediation-how-auctions-work-for-sellers.md
     - name: Mediation Networks
       href: mediation-networks.md
     - name: Mediation Bids
       href: mediation-bids.md
-    - name: Mediation Bid Setup Best Practices
-      href: mediation-bid-setup-best-practices.md
     - name: Integrating for Mediation
       href: mediation-integrating-for-mediation.md
-    - name: Mediation FAQs
-      href: mediation-faqs.md
-    - name: Set Up Mobile In-App Video Mediation
-      href: mediation-set-up-mobile-in-app-video-mediation.md
   - name: PG Deal With Third-Party Ad Server Pacing And Tag Integration
     items:
     - name: Create a PG Deal With Third-Party Ad Server Pacing And Tag Integration

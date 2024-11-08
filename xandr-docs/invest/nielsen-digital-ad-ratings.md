@@ -13,7 +13,7 @@ Microsoft Invest allows you to [activate Nielsen DAR for your line item](activat
 > [!NOTE]
 > Nielsen DAR has no effect on your line item's targeting and performance.
 
-Nielsen DAR is available when targeting desktop and mobile audiences within the following countries: Australia, Belgium, Brazil, Bulgaria, Canada, Czech Republic, France, Germany, Hong Kong, Hungary, India, Indonesia, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Philippines, Poland, Puerto Rico, Singapore, South Africa, Spain, Taiwan Province of China, Thailand, Turkey, United Arab Emirates, United Kingdom, and the United States.
+Nielsen DAR is available when targeting desktop and mobile audiences within the following countries: Australia, Belgium, Brazil, Bulgaria, Canada, Czech Republic, France, Germany, Hong Kong, Hungary, India, Indonesia, Ireland, Israel, Italy, Japan, Malaysia, Mexico, New Zealand, Norway, Philippines, Poland, Puerto Rico, Singapore, South Africa, Spain, Taiwan, Thailand, Turkey, United Arab Emirates, United Kingdom, and the United States.
 
 <!-- > [!NOTE]
 > CTV and computer device types are only measurable when targeting audiences in the United States. -->

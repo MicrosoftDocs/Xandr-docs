@@ -711,12 +711,8 @@
     href: campaign-monitor.md
   - name: Guaranteed Delivery
     items:
-    - name: Overview
-      href: guaranteed-delivery.md
     - name: Create a Guaranteed Delivery Line Item
       href: create-a-guaranteed-delivery-line-item.md
-    - name: Using Multiple Campaigns with a Guaranteed Line Item
-      href: using-multiple-campaigns-with-a-guaranteed-line-item.md
     - name: Guaranteed Delivery Auction Mechanics
       href: guaranteed-delivery-auction-mechanics.md
     - name: Guaranteed Delivery Pacing
@@ -782,8 +778,6 @@
   - name: Geography Targeting
     items:
     - name: Overview
-      href: geography-targeting.md
-    - name: How Geography Targeting Works
       href: how-geography-targeting-works.md
     - name: Invalid Postal and ZIP Codes
       href: invalid-postal-codes.md
@@ -1321,8 +1315,6 @@
       href: guaranteed-delivery-gdali.md
     - name: Create a Guaranteed Delivery Line Item (GDALI)
       href: create-a-guaranteed-delivery-line-item-gdali.md
-    - name: Guaranteed Delivery Line Item FAQ (GDALI)
-      href: guaranteed-delivery-line-item-faq-gdali.md
   - name: Floor Prices
     href: floor-prices.md
   - name: Inventory Standards and Auditing

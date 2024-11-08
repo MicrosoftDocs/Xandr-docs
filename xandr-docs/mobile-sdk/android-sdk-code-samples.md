@@ -26,6 +26,7 @@ This section contains various code samples to help you in the development of you
 | [External User ID Mapping](user-id-s-mapping-on-android.md) | Describes the process to map your own user ID to a Xandr user ID. |
 | [Force Creative ID](forcecreativeid-for-android.md) | Describes the proocess to specify the ID of a creative that should be forced to appear in a placement. |
 | [Get Facebook Demand for Native](get-facebook-demand-for-native-on-android.md) | Describes the process to get assets for Facebook native ads. |
+| [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md) | Describes the method for publishers to define their own global publisher identifier to represent a placement on Android. |
 | [Lazy Loading an Ad Unit](lazy-load-for-android.md) | Describes the process to lazy load an ad unit to control when trackers, including 3rd party trackers, are fired. |
 | [Listener for Ad About To Expire](listener-for-onadabouttoexpire-on-android.md) | Listener for ads which are about to expire and are expired. |
 | [OMID Friendly Obstruction](omid-friendly-obstruction-for-android.md) | Describes the process to obstruct views from the Open Measurement Software Development Kit. |

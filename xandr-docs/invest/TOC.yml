@@ -530,7 +530,6 @@
   items:
   - name: Anonymous Reach Expansion
     href: anonymous-reach-expansion.md
-  items:
   - name: Daypart Targeting
     href: daypart-targeting.md
   - name: Demography Targeting

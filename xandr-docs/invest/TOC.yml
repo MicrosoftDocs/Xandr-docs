@@ -528,6 +528,8 @@
     href: universal-id-support-matrix-for-buyers.md
 - name: Buy Side Targeting
   items:
+  - name: Anonymous Reach Expansion
+    href: anonymous-reach-expansion.md
   - name: Daypart Targeting
     href: daypart-targeting.md
   - name: Demography Targeting

@@ -76,7 +76,7 @@ Data in this report is retained for the past 33 days of activity.
 | Media Type | Yes | The category of creative on transacted impressions. For example: `banner`, `video`, `native`. |
 | Placement | Yes | The name and ID of the placement through which the request originated. |
 | Placement Group | Yes | The placement group (a collection of placements) that includes the placement through which the request originated. |
-| PSP Config | No | Unique identifier for the [PSP configuration](../monetize/add-edit-or-delete-a-psp-configuration.md). Currently only reportable on Bid Responses Received, Valid Bids On Imps, and Imps (delivered). Will be updated to cover other metrics in the future. |
+| PSP Config | Yes | Unique identifier for the [PSP configuration](../monetize/add-edit-or-delete-a-psp-configuration.md). Currently only reportable on Bid Responses Received, Valid Bids On Imps, and Imps (delivered). Will be updated to cover other metrics in the future. |
 | Publisher | Yes | The publisher on whose inventory the request originated. |
 | SDK Version | Yes | The version of the software development kit present in the app. |
 | Supply Type | Yes | The category of inventory (`web`, `mobile web`, or `app`). App includes CTV and mobile. |

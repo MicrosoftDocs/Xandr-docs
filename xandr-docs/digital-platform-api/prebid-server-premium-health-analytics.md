@@ -79,7 +79,7 @@ Data retention period for this report is 99 days.
 | `month` | date | no | `"2018-02"` | The month of the auction. |
 | `placement_id` | int | yes | `456` | The ID of the placement through which the request originated. |
 | `placement_name` | string | no | `"My Placement"` | The name of the placement through which the request originated. |
-| `psp_config_id` | int | no | `10000` |  Unique identifier for the PSP configuration via the [config service](../digital-platform-api/config-service.md). Currently only reportable on `bid_responses_received`, `valid_bids_on_imps`, and `imps_delivered`. Will be updated to cover other metrics in the future. |
+| `psp_config_id` | int | yes | `10000` |  Unique identifier for the PSP configuration via the [config service](../digital-platform-api/config-service.md). Currently only reportable on `bid_responses_received`, `valid_bid_on_imps`, and `imps_delivered`. Will be updated to cover other metrics in the future. |
 | `publisher_id` | int | yes | `789` | The ID of the publisher on whose inventory the request originated. |
 | `publisher_name` | string | no | `"Neat Publisher Ltd"` | The name of the publisher on whose inventory the request originated. |
 | `sdk_version` | string | yes | `"pbjs-5.20.3"` | The version of the software development kit present in the app. |
@@ -101,9 +101,9 @@ Data retention period for this report is 99 days.
 | `bid_request_error_rate` | double | bid_request_errors / bid_requests_sent | `0.05`| The number of bid request errors divided by the number of bid requests sent to Demand Partners.|
 | `bid_request_errors` | int | See Description. | `200` |The number of specific errors generated from bid requests. See [Bid request error types](#bid-request-error-types) table below for a description and potential resolution for each value. |
 | `bid_requests_sent` | int | See Description. | `3990674680` | The number of requests sent from Prebid Server Premium to Demand Partners. |
-| `bid_rejection_error_rate` | int | bid_rejection_errors / bid_responses_received. | `0.06` | The number of bid rejection errors divided by the number of bid responses received from demand partners.|
-| `bid_rejection_errors` | int | See Description. | `300` | The number of specific errors from the demand partner's bid response. See bid error codes for a description and potential resolution for each value.|
-| `bid_rate` | int |  bid_responses_received / bid_requests_sent. | `0.08` | The number of bid responses received from demand partners divided by the number of bid requests sent.|
+| `bid_rejection_error_rate` | int | bid_rejection_errors / bid_responses_received | `0.06` | The number of bid rejection errors divided by the number of bid responses received from demand partners.|
+| `bid_rejection_errors` | int | See Description. | `300` | The number of specific errors from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for a description and potential resolution for each value.|
+| `bid_rate` | int |  bid_responses_received / bid_requests_sent | `0.08` | The number of bid responses received from demand partners divided by the number of bid requests sent.|
 | `bid_responses_received` | int | See Description. | `381809500` | The number of specific errors from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for a description and potential resolution for each value. |
 | `bids_submitted_to_ad_server` | int | See Description. | `54021580` | The number of ad requests that had a valid Prebid bid that was not subject to any additional Microsoft rejections returned to the ad server. This number is counted after the Microsoft auction process that evaluates bids received from all sources. The reduced volume between `valid_bid_on_imps` and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](../monetize/integrate-web-mobile-web-with-psp.md). |
 | `bidder_user_matched_requests` | int | See Description. | `1849169240` | The number of requests where a user identifier was present.<br><br>**Note:** This metric currently only includes cookies for web and mobile web. |
@@ -121,11 +121,11 @@ Data retention period for this report is 99 days.
 
 | Code | Error | Description | Remedy |
 |:---|:---|:---|:---|
-| 0 | NONE | No error. | None needed. |
-| 1 | INTERNAL | There is a server-side error from the Demand Partner, such as a 400 status code. | The Seller should work with Microsoft to collect a specific example code to share with the Demand Partner for investigation. |
-| 2 | TIMEOUT | The Demand Partner did not respond within the timeout limit. | Either increase timeout settings to allow for a longer response time or contact the Demand Partner to inform them of the restriction. For more information on timeouts, see [Add or Edit PSP Global Settings](../monetize/add-or-edit-psp-global-settings.md). |
-| 3 | CLIENT | The Demand Partner's Prebid Server adapter generated an error. | For significant quantities of this error type, the Seller should contact Microsoft support to diagnose issues by looking at the internal Microsoft logs. An example of this error could be that video supply has been sent to an adapter that does not support it. |
-| 4 | PARSE | The Demand Partner has formatted the bid response incorrectly. | The Seller should work with Microsoft and the Demand Partner to determine and resolve the specific formatting issue. |
+| 0 | `NONE` | No error. | None needed. |
+| 1 | `INTERNAL` | There is a server-side error from the Demand Partner, such as a 400 status code. | The Seller should work with Microsoft to collect a specific example code to share with the Demand Partner for investigation. |
+| 2 | `TIMEOUT` | The Demand Partner did not respond within the timeout limit. | Either increase timeout settings to allow for a longer response time or contact the Demand Partner to inform them of the restriction. For more information on timeouts, see [Add or Edit PSP Global Settings](../monetize/add-or-edit-psp-global-settings.md). |
+| 3 | `CLIENT` | The Demand Partner's Prebid Server adapter generated an error. | For significant quantities of this error type, the Seller should contact Microsoft support to diagnose issues by looking at the internal Microsoft logs. An example of this error could be that video supply has been sent to an adapter that does not support it. |
+| 4 | `PARSE` | The Demand Partner has formatted the bid response incorrectly. | The Seller should work with Microsoft and the Demand Partner to determine and resolve the specific formatting issue. |
 
 > [!NOTE]
 > For bid response error types, see [Bid Error Codes](../bidders/bid-error-codes.md).

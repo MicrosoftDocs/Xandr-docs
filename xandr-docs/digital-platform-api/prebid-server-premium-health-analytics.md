@@ -51,7 +51,7 @@ Data retention period for this report is 99 days.
 | `bidder_name` | string | no | `Prebid Server` | The name of the bidder (Prebid Server). |
 | `browser_code_id` | int | yes | `5414` | The ID of the specific version of the browser. |
 | `browser_code_name` | string | no | `"da-chrome-107.0"` | The name of the specific version of the browser. |
-| `call_type` | string | yes | `/ut/v3/prebid` |The [type of handler](../monetize/prebid-server-premium-supported-formats-and-integration-paths.md) used to send the bid request to Monetize (e.g., //v3/prebid, openrtb2/prebid).|
+| `call_type` | string | yes | `/ut/v3/prebid` |The [type of handler](../monetize/prebid-server-premium-supported-formats-and-integration-paths.md) used to send the bid request to Monetize "(e.g., `/ut/v3/prebid`, `openrtb2/prebid`)".|
 | `cookies_present` | boolean | yes | yes |Indicates whether or not a cookie was present in the bid request.|
 | `datacenter_id` | string | yes | `"ams3"` | The ID of the data center used to route the request to demand partners. |
 | `day` | date | yes | `"2018-02-01"` | The day of the auction. |

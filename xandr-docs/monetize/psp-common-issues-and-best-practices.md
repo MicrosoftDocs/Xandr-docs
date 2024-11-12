@@ -34,6 +34,7 @@ When investigating connections from web pages to Monetize, common errors seen in
 - **Configuration Targeting**: Ensure the targeting of configurations covers all scenarios. For example, if there is only one configuration targeting the United States, but a publisher sends requests for inventory in Germany, the requests for Germany will not be passed to PSP demand partners.
 - **Best Practice**: Use a default/global/run-of-site configuration with a low configuration rank. More specific configurations with a higher rank can supersede this to send buyers better signals and increase revenue.
 - **Response code 204**: When viewing sample bid responses in the PSP Requests Sampler tab, response code 204 from a demand partner means "no bid." This could simply mean there is no demand for the inventory, or that the buyers expect certain signals in bid requests that are not present.
+- **Video Duration**:  To ensure Monetize considers a bid, demand partners' bids must include the video creative duration in either bid.dur (for OpenRTB 2.6) or ext.prebid.video.duration (if OpenRTB 2.6 is not yet supported). Please note that duration is not currently parsed from XML.
 
 ## Prebid Server Premium architecture
 

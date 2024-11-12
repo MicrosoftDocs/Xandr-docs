@@ -204,6 +204,10 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
 
 - For more information, see [Ad Unit specific data](https://docs.prebid.org/features/firstPartyData.html#supplying-adunit-specific-data) and [auction-level keywords](https://docs.prebid.org/dev-docs/bidders/appnexus.html#appnexus-auction-keywords).
 
+## Demand partner response
+
+To ensure Monetize considers a bid, demand partners' bids must include the video creative duration in either bid.dur (for OpenRTB 2.6) or ext.prebid.video.duration (if OpenRTB 2.6 is not yet supported). Please note that the duration is not parsed from XML.
+
 ## Related topics
 
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)

@@ -17,24 +17,28 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-| Bidder ID | Bidder Name | Seat ID Bidding Status | Seat ID Deal Status |
-|--|--|--|--|
-| 254 | Active Agent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 351 | Adelphic (formerly known as Viant) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 91 | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 20 | Amobee (formerly known as Turn) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 475 | Amobee TV | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 463 | Deepintent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 101 | DV360 (formerly known as DBM) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 34 | Epsilon/Conversant | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 54 | iPromote | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 96 | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 8 | MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 483 | MSAN | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 172 | Nextroll (Adroll) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 44 | Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 328 | StackAdapt | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals <br> **Note**: StackAdapt is set up to transact through a single buyer seat only.|
+| Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|Supports Deal Buyer Entity ID|Category|
+|--|--|--|--|---|---|
+| 8 | MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 13| OwnerIQ |Pending|pending |1|members|
+| 17 |Roku OneView|N/A|N/A|1|members|
+| 18 | Zeta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 20 |Amobee(formerly known as Turn)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|
+| 33|Peer39|N/A|N/A|1|members|
+| 34 | Epsilon/Conversant | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 44 | Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+|48|Proximic|N/A|N/A|1|members
+| 54 | iPromote | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
 | 82 | The Trade Desk | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 91 | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 96 | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 101 | DV360 (formerly known as DBM) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 172 | Nextroll (Adroll) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 183 | Verizon Media Group | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 254 | Active Agent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 328 | StackAdapt | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 351 | Adelphic (formerly known as Viant) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 399 | Zemanta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 18 | Zeta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 463 | Deepintent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 475 | Amobee TV | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| 483 | MSAN | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |

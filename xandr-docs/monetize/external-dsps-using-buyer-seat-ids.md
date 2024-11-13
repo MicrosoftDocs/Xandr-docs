@@ -19,32 +19,32 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 
 | Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|Supports Deal Buyer Entity ID|Category|
 |--|--|--|--|---|---|
-| 8 | MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-| 13| OwnerIQ |Pending|pending |1|members|
-| 17 |Roku OneView|N/A|N/A|1|members|
-| 18 | Zeta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-| 20 |Amobee(formerly known as Turn)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|
-| 33 |Peer39 |N/A |N/A |1 |members|
-| 34 | Epsilon/Conversant | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-| 44 | Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-|48|Proximic|N/A|N/A|1|members|
-|52|Criteo|N/A|N/A|1|members|
-| 54 | iPromote | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-| 65|eyeReturn|N/A|N/A|1|members|
-| 66|Simpli.fi|N/A|N/A|1|members|
-| 74|ClickDistrict (Platform 161 / Verve DSP)|N/A|N/A|1|members|
-| 78|Accordant Media, LLC|N/A|N/A|1|members|
-| 82| The Trade Desk | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-| 87|Buzzlogic|N/A|N/A|1|members|
-| 89|Grapeshot|N/A|N/A|1|members|
-| 91 | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
-| 94|AdGear|N/A|N/A|1|members|
-| 96 | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
-| 98|DoubleVerify|N/A|N/A|1|members|
-|100|sociomantic|labs GmbH|N/A|N/A|1|members|
-|101|DV360 (formerly known as DBM)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals||N/A|N/A|
-|107|Bidtheatre|N/A|N/A|1|members|
-|112|Delta Projects|N/A|N/A|1|members|
+| 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 13  |OwnerIQ |N/A|N/A |1|members|
+| 17  |Roku OneView|N/A|N/A|1|members|
+| 18  |Zeta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 20  |Amobee(formerly known as Turn)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|
+| 33  |Peer39 |N/A |N/A |1 |members|
+| 34  |Epsilon/Conversant | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 44  |Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 48  |Proximic|N/A|N/A|1|members|
+| 52  |Criteo|N/A|N/A|1|members|
+| 54  |iPromote | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 65  |eyeReturn|N/A|N/A|1|members|
+| 66  |Simpli.fi|N/A|N/A|1|members|
+| 74  |ClickDistrict (Platform 161 / Verve DSP)|N/A|N/A|1|members|
+| 78  |Accordant Media, LLC|N/A|N/A|1|members|
+| 82  | The Trade Desk | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 87  |Buzzlogic|N/A|N/A|1|members|
+| 89  |Grapeshot|N/A|N/A|1|members|
+| 91  | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
+| 94  |AdGear|N/A|N/A|1|members|
+| 96  | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
+| 98  |DoubleVerify|N/A|N/A|1|members|
+|100  |sociomantic|labs GmbH|N/A|N/A|1|members|
+|101  |DV360 (formerly known as DBM)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals||N/A|N/A|
+|107  |Bidtheatre|N/A|N/A|1|members|
+|112  |Delta Projects|N/A|N/A|1|members|
 |114|AcuityAds|N/A|N/A|1|members|
 |120|Integral Ad Science|N/A|N/A|1|members|
 |122|Dealer.com|N/A|N/A|1|members|
@@ -152,7 +152,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 457 | YJ Test                                | 1 | members | N/A | members |
 | 461 | Beemray OY (Data Provider)             | 1 | members | N/A | members |
 | 462 | appnexus-video                         | 1 | members | N/A | members |
-| 463 | Deepintent | Bidding with seats on 100% of traffic| Eligible for Seat ID Deals |N/A|N/A|
+| 463 | Deepintent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
 | 464 | SMARTSTREAM.TV GmbH                    | 1 | members | N/A | members |
 | 465 | ITN Holdings, LLC                      | 1 | members | N/A | members |
 | 466 | Craid Inc.                             | 1 | members | N/A | members |

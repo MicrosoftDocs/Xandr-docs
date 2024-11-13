@@ -56,23 +56,27 @@ Data in this report is retained for the past 33 days of activity.
 | Column | Filter? | Description |
 |---|---|---|
 | Ad Size | Yes | The dimensions of the ad slot. |
-| Allowed Media Type | No | The category of creative enabled by the publisher on the Monetize placement. For example: `banner`, `video`, `native`. |
+| Allowed Media Types | No | The category of creative enabled by the publisher on the Monetize placement. For example: `banner`, `video`, `native`. |
 | Application | Yes | The specific application used on the device. |
 | Bidder | No | The bidder (Prebid Server). |
-| Browser Code Name | No | The specific version of the browser. |
+| Bid Rejection Error | Yes | The specific error generated from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for descriptions and potential resolution for each value.|
+| Bid Request Error | Yes | The specific error generated from the bid request. See [Bid request error types](#bid-request-error-types) table below for a description and potential resolution for each value.|
+| Browser Code | No | The specific version of the browser. |
+| Call Type | Yes | The [type of handler](../monetize/prebid-server-premium-supported-formats-and-integration-paths.md) that was used to send the bid request to Monetize (e.g., `/ut/v3/prebid`, `openrtb2/prebid`). |
 | Country Name | Yes | The name of the country in which the impression served. For example, `United States`. |
+|Cookies Present|No|Indicates whether or not a cookie was present in the bid request.|
 | Datacenter | Yes | The data center used to route the request to demand partners. |
 | Demand Partner | Yes | The partner to which the request was sent and from which the response (if any) was received. |
 | Device Browser | Yes | The browser used on the device. For example, `Chrome`, `Safari`, etc. |
 | Device OS Extended | Yes | The specific version of the operating system. For example, `iOS 16.0.0`. |
 | Device OS Family | Yes | The operating system of the device. For example, `Microsoft Windows`, `Apple iOS`, etc. |
 | Device Type | Yes | The category of device. For example, `desktops`, `mobile phones`, etc. |
-| Error | Yes | The category of error related to the bid response. For details, see the [Error Types](#error-types) section below. |
 | External Creative | Yes | The external ID associated with the creative served. |
 | Inventory URL | Yes | The mapped URL from the detected domain on the ad call and the ID in parentheses. For example, `"myurl.com/(1234)"` |
 | Media Type | Yes | The category of creative on transacted impressions. For example: `banner`, `video`, `native`. |
 | Placement | Yes | The name and ID of the placement through which the request originated. |
 | Placement Group | Yes | The placement group (a collection of placements) that includes the placement through which the request originated. |
+| PSP Config | Yes | Unique identifier for the [PSP configuration](../monetize/add-edit-or-delete-a-psp-configuration.md). Currently only reportable on Bid Responses Received, Valid Bids On Imps, and Imps (delivered). Will be updated to cover other metrics in the future. |
 | Publisher | Yes | The publisher on whose inventory the request originated. |
 | SDK Version | Yes | The version of the software development kit present in the app. |
 | Supply Type | Yes | The category of inventory (`web`, `mobile web`, or `app`). App includes CTV and mobile. |
@@ -86,10 +90,14 @@ Data in this report is retained for the past 33 days of activity.
 |---|---|
 | Average Clear Price | The sum of bid price for delivered impressions divided by the number of bid requests sent. |
 | Average Response Time | The average time demand partners took to respond to bid requests. |
+| Bid Rate|The number of bid responses received from demand partners divided by the number of bid requests sent.|
+|Bid Rejection Error Rate| The number of bid rejection errors divided by the number of bid responses received from demand partners.|
+|Bid Rejection Errors| The number of specific errors from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for a description and potential resolution for each value.|
+|Bid Request Error Rate |  The number of bid request errors divided by the number of bid requests sent to Demand Partners.|
+| Bid Request Errors| The number of specific errors generated from bid requests. See [Bid request error types](#bid-request-error-types) table below for a description and potential resolution for each value.|
 | Bid Requests Sent | The number of requests sent from Prebid Server Premium to demand partners. |
 | Bid Responses Received | The number of bid responses received by Prebid Server Premium from demand partners. |
 | Bids Submitted to Ad Server | The number of ad requests that had a valid Prebid bid that was not subject to any additional Microsoft Advertising rejections returned to the ad server. This number is counted after the Microsoft Advertising auction process that evaluates bids received from all sources. The reduced volume between Valid Bids on Imps and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](integrate-web-mobile-web-with-psp.md). |
-| Errors | The number of errors in bid responses from demand partners. |
 | Errors Rate | The number of bid errors divided by the number of bid requests sent to demand partners. |
 | Imps (delivered) | The number of impressions successfully delivered and ads rendered. Note this report is based on sample log data multiplied to estimate the full volume of PSP activity and does not represent final delivery. |
 | No Bid Rate | The number of times demand partners did not bid divided by the number of bid requests sent to demand partners. |
@@ -98,11 +106,11 @@ Data in this report is retained for the past 33 days of activity.
 | Total Buyer Spend | The media cost to buyers of impressions delivered. <br><br> **Note**: This report is based on sample log data multiplied to estimate full volume of PSP activity and does not represent final delivery. |
 | User Matched Requests | The number of requests where a user identifier was present. Note this metric currently only includes cookies for web and mobile web. |
 | User Matched Requests Rate | The number of user matched requests divided by the number of bid requests sent to demand partners. |
-| Valid Bids On Impression Rate | The number of valid bids divided by the number of bid requests sent to demand partners. |
-| Valid Bids On Imps | The number of bids received from demand partners that do not trigger errors, have a creative ID, and have a bid above $0. There may be multiple bids counted for each auction when multiple demand partners return bids. |
+| Valid Bid On Imps | The number of bids received from demand partners that do not trigger errors, have a creative ID, and have a bid above $0. There may be multiple bids counted for each auction when multiple demand partners return bids. |
+| Valid Bids On Impression Rate | The number of valid bids divided by the number of bid responses received from demand partners. |
 | Win Rate | This metric should only be used with the demand partner dimension applied. It represents the percentage of impressions delivered by a demand partner relative to the total bid responses received. The calculation involves dividing the number of impressions delivered by the demand partner by the total number of bid responses received.|
 
-## Error types
+## Bid request error types
 
 | Code | Error | Description | Remedy |
 |---|---|---|---|
@@ -111,17 +119,9 @@ Data in this report is retained for the past 33 days of activity.
 | 2 | `TIMEOUT` | Demand Partner did not respond within the timeout limit. | Either increase timeout settings to allow for a longer response time or contact Demand Partner to inform them of the restriction. For more information on timeouts, see [Add or Edit PSP Global Settings](add-or-edit-psp-global-settings.md). |
 | 3 | `CLIENT` | Demand Partner's Prebid Server adapter generated an error. | For significant quantities of this error type, Seller should contact Microsoft Advertising support to diagnose issues by looking at the internal Microsoft Advertising logs. An example of this error could be that video supply has been sent to an adapter that does not support it. |
 | 4 | `PARSE` | Demand Partner has formatted the bid response incorrectly. | Seller should work with Microsoft Advertising and Demand Partner to determine and resolve the specific formatting issue. |
-| 21 | `NO_BID_PRICE` | No price received from Demand Partner. | Seller should notify Demand Partner of the issue. |
-| 22 | `NO_CREATIVE_ID` | No creative ID received from Demand Partner. | Seller should notify Demand Partner of the issue. |
-| 23 | `NEC_ERROR` | The bid was rejected during the Microsoft Advertising auction process. | The bid was successfully received from Demand Partner, but the bid was rejected within the Microsoft Advertising auction. Seller can use the seller bid error report to diagnose specific rejections occurring on their supply. |
-| 24 | `CREATIVE_WRONG_SIZE` | Demand Partner is bidding with a creative size that doesn't match the tag size. | Seller should review the creative size and notify Demand Partner regarding the mismatch. |
-| 70 | `MEMBER_NOT_ELIGIBLE` | Seller's settings are blocking the Buyer's member from participating in the auction. | Seller should notify the buyer that they are currently blocked from bidding. |
-| 84 | `CATEGORY_REQ_ALLOWLIST` | The category of the creative is sensitive and requires addition to the allowlist. | Seller should work with Buyer to determine if the creative warrants addition to the allowlist. |
-| 132 | `DYN_CREATIVE_INCOMPATIBLE_TYPE` | Dynamic ad-markup bidding is not supported for certain PSP demand partners that require client-side rendering when a Seller doesn't support it. | Seller should correct their setup to align with client-side rendering requirements, on both supply and PSP sides. |
-| 150 | `SELLER_MEMBER_NO_CONTRACT` | Seller's contract isn't set up properly. | Seller should work with Microsoft Advertising to remedy the contract issue. |
 
 > [!NOTE]
-> For additional possible error codes, see [Bid Error Codes](../bidders/bid-error-codes.md).
+> For bid response error types, see [Bid Error Codes](../bidders/bid-error-codes.md).
 
 ## To run your report
 

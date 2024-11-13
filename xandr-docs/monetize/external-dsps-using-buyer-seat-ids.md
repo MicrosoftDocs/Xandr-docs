@@ -130,7 +130,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 |405|Hawk (TabMo SAS)|1|members|N/A| members |
 |408|Smadex SL|1|members|N/A|members|
 |402| Lerta Business Inc.|1| members | N/A | members |
-| 405 | Hawk (TabMo SAS) | 1 | members | N/A | members |
+| 405 | Hawk (TabMo SAS) | N/A | 1 | members |
 | 408 | Smadex SL                              | 1 | members | N/A | members |
 | 421 | AN Data Science Internal               | 1 |         | 1   |         |
 | 423 | Smartology                             | 1 | members | N/A | members |

@@ -17,13 +17,13 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-| A | B | C| D | F |
+|Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|supports_deal_buyer_entity_id|category|
 |--|--|--|--|--|--|
 | 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |1|N/A|
 | 13  |OwnerIQ |N/A|N/A |1|members|
 | 17  |Roku OneView|N/A|N/A|1|members|
-| 18  |Zeta | Bidding with seats on 100% of traffic|Eligible for Seat ID Deals| |3|members_and_seats|
-| 20  |Amobee(formerly known as Turn)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals||N/A|N/A|
+| 18  |Zeta | Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|3|members_and_seats|
+| 20  |Amobee(formerly known as Turn)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|
 | 33  |Peer39 |N/A |N/A |1 |members|
 | 34  |Epsilon/Conversant |Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|3|members_and_seats|
 | 44  |Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
@@ -37,19 +37,19 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 82  | The Trade Desk | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
 | 87  |Buzzlogic|N/A|N/A|1|members|
 | 89  |Grapeshot|N/A|N/A|1|members|
-| 91  | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
+| 91  | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
 | 94  |AdGear|N/A|N/A|1|members|
 | 96  | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |3| members_and_seats|
 | 98  |DoubleVerify|N/A|N/A|1|members|
 |100  |sociomantic|labs GmbH|N/A|N/A|1|members|
-|101  |DV360 (formerly known as DBM)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals||N/A|N/A|
+|101  |DV360 (formerly known as DBM)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|
 |107  |Bidtheatre|N/A|N/A|1|members|
 |112  |Delta Projects|N/A|N/A|1|members|
 |114|AcuityAds|N/A|N/A|1|members|
 |120|Integral Ad Science|N/A|N/A|1|members|
 |122|Dealer.com|N/A|N/A|1|members|
 |123|Vizury Interactive Solutions Pvt. Ltd.|N/A|N/A|1|members|
-|125|FOutClient01Bidder|N/A|N/A||1|members|
+|125|FOutClient01Bidder|N/A|N/A|1|members|
 |137|Semcasting|N/A|N/A|1|member|
 |139|adtheorent_bidder|N/A|N/A|1|members|
 |145|AdPilot|N/A|N/A|1|members|
@@ -104,7 +104,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 |333|Bidtellect|N/A|N/A|1|members|
 |335|Emerse Sverige AB|N/A|N/A|1|members|
 |337|Schibsted|N/A|N/A|1|members|
-|341|Mindlytix SAS|N/A|N/A||1|members|
+|341|Mindlytix SAS|N/A|N/A|1|members|
 |347|Digital To Store Limited|N/A|N/A|1|members|
 |349|apd_scylla N/A|N/A|1|members|
 |351|Adelphic(formerly known as Viant)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|

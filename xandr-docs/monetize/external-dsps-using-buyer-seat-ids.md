@@ -17,8 +17,8 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-| Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|Supports Deal Buyer Entity ID|Category|
-|--|--|--|--|---|---|--|
+| Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|Supports Deal Buyer Entity-ID|Category|
+|--|--|--|--|--|--|
 | 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |1|N/A|
 | 13  |OwnerIQ |N/A|N/A |1|members|
 | 17  |Roku OneView|N/A|N/A|1|members|

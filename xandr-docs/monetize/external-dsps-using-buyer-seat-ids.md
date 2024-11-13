@@ -22,14 +22,14 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
 | 13  |OwnerIQ |N/A|N/A |1|members|
 | 17  |Roku OneView|N/A|N/A|1|members|
-| 18  |Zeta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
-| 20  |Amobee(formerly known as Turn)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|N/A|N/A|
+| 18  |Zeta | Bidding with seats on 100% of traffic |3|members_and_seats| Eligible for Seat ID Deals|
+| 20  |Amobee(formerly known as Turn)|N/A|N/A|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|
 | 33  |Peer39 |N/A |N/A |1 |members|
-| 34  |Epsilon/Conversant | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 34  |Epsilon/Conversant |3|members_and_seats|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|
 | 44  |Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
 | 48  |Proximic|N/A|N/A|1|members|
 | 52  |Criteo|N/A|N/A|1|members|
-| 54  |iPromote | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |N/A|N/A|
+| 54  |iPromote | 3 | members_and_seats| Bidding with seats on 100% of traffic | Eligible for Seat ID Deals|
 | 65  |eyeReturn|N/A|N/A|1|members|
 | 66  |Simpli.fi|N/A|N/A|1|members|
 | 74  |ClickDistrict (Platform 161 / Verve DSP)|N/A|N/A|1|members|
@@ -39,7 +39,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 89  |Grapeshot|N/A|N/A|1|members|
 | 91  | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
 | 94  |AdGear|N/A|N/A|1|members|
-| 96  | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals ||N/A|N/A|
+| 96  | Media.net |3 | members_and_seats  Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
 | 98  |DoubleVerify|N/A|N/A|1|members|
 |100  |sociomantic|labs GmbH|N/A|N/A|1|members|
 |101  |DV360 (formerly known as DBM)|Bidding with seats on 100% of traffic|Eligible for Seat ID Deals||N/A|N/A|
@@ -56,7 +56,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 |158|Adobe - Display|1|members|N/A|N/A|
 |160|AppNexus Testing Data Provider Bidder|1|members|N/A|N/A|
 |164|LiquidM Technology GmbH|1|members|N/A|N/A|
-|172| Nextroll (Adroll) | Bidding with seats on 100% of traffic|Eligible for Seat ID Deals||N/A|N/A|
+|172| Nextroll (Adroll) 3 | members_and_seats | Bidding with seats on 100% of traffic|Eligible for Seat ID Deals|
 |177|Adloox (Data Provider)|1|members|N/A|N/A|
 |179|El Toro (Data Provider)|1|members|N/A|N/A|
 |180|Crimson Tangerine Ltd.|1|members|N/A|N/A|
@@ -215,9 +215,6 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 580 | HK POWER ENGINE LIMITED                            | 1 | members           | N/A | N/A |
 | 581 | R&R Digital Pty Ltd                                | 1 | members           | N/A | N/A |
 | 582 | Opera Software Ireland Ltd                         | 1 | members           | N/A | N/A |
-| 18  | Zeta DSP                                           | 3 | members_and_seats | N/A | N/A |
-| 34  | Epsilon                                            | 3 | members_and_seats | N/A | N/A |
-| 54  | iPromote                                           | 3 | members_and_seats | N/A | N/A |
 | 96  | Media.Net                                          | 3 | members_and_seats | N/A | N/A |
 | 129 | Platform Services Test Bidder                      | 3 | members_and_seats | N/A | N/A |
 | 172 | NextRoll                                           | 3 | members_and_seats | N/A | N/A |

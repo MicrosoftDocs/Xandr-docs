@@ -17,7 +17,7 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-| Bidder ID | Bidder Name | Seat ID Bidding Status | Seat ID Deal Status | supports_deal_buyer_entity_id | Category |
+| A | B | C| D | F |
 |--|--|--|--|--|--|
 | 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |1|N/A|
 | 13  |OwnerIQ |N/A|N/A |1|members|

@@ -19,7 +19,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 
 |Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|supports_deal_buyer_entity_id|category|
 |--|--|--|--|--|--|
-| 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |1|seats|
+| 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |2|seats|
 | 13  |OwnerIQ |N/A|N/A |1|members|
 | 17  |Roku OneView | N/A | N/A |1 |members|
 | 18  | Zeta DSP  | N/A | N/A | 3 | members_and_seats |
@@ -78,7 +78,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 |240|Ubimo|N/A|N/A|1|members|
 |245|Media IQ Digital Ltd|N/A|N/A|1|members|
 |247|Addictive Mobility|N/A|N/A|1|members|
-| 254 | Active Agent | N/A | N/A | 2 | seats             |
+|254 | Active Agent | N/A | N/A | 2 | seats |
 |256|Platform Integrations Test RTDP (Data Provider)|N/A|N/A|1|members|
 |259|dw_bidder_capacity|N/A|N/A|1|members|
 |260|Triapodi LTD|N/A|N/A|1|members|
@@ -221,14 +221,3 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 580 | HK POWER ENGINE LIMITED                            | N/A | N/A | 1 | members           |
 | 581 | R&R Digital Pty Ltd                                | N/A | N/A | 1 | members           |
 | 582 | Opera Software Ireland Ltd                         | N/A | N/A | 1 | members           |
-
-
-
-
-
-
-
-
-|
-
-

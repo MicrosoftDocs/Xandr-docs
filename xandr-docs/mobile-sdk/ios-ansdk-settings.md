@@ -363,13 +363,15 @@ nativeAdResponse?.registerView(
 adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 ```
 
-```
+---
 
-## Set content language
+### Set content language
 
 | Property | Description |
 |--|--|
 | `NSString *contentlanguage` | Sets the two-letter ANSI code for the content's language; for example, `EN`. |
+
+---
 
 ### Example
 
@@ -386,4 +388,3 @@ ANSDKSettings.sharedInstance().contentLanguage = "EN"
 ```
 
 ---
-

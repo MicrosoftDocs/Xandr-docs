@@ -94,6 +94,11 @@
             "source_path": "xandr-docs/digital-platform-api/creative-custom-request-template-parameters.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/digital-platform-api-internal-services",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/data-providers/instant-audience-service.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/data-providers/streaming-server-side-segmentation",
+            "redirect_document_id": false
         }
         
     ]

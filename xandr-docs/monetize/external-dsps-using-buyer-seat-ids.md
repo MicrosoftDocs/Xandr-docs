@@ -17,207 +17,93 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-|Bidder ID|Bidder Name|Seat ID Bidding Status|Seat ID Deal Status|supports_deal_buyer_entity_id|category|
-|--|--|--|--|--|--|
-| 8   |MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |2|seats|
-| 13  |OwnerIQ |N/A|N/A |1|members|
-| 17  |Roku OneView | N/A | N/A |1 |members|
-| 18  | Zeta DSP  | N/A | N/A | 3 | members_and_seats |
-| 20  | Amobee (Nexxen) | N/A | N/A | 2 | seats |
-| 33  | Peer39 | N/A | N/A | 1 | members |
-| 34  | Epsilon | N/A | N/A | 3 | members_and_seats |
-| 44  | Quantcast  | N/A | N/A | 2 | seats  |
-| 48  |Proximic|N/A|N/A|1|members|
-| 52  |Criteo|N/A|N/A|1|members|
-| 54  | iPromote | N/A | N/A | 3 | members_and_seats |
-| 65  |eyeReturn|N/A|N/A|1|members|
-| 66  |Simpli.fi|N/A|N/A|1|members|
-| 74  |ClickDistrict (Platform 161 / Verve DSP)|N/A|N/A|1|members|
-| 78  |Accordant Media, LLC|N/A|N/A|1|members|
-| 82  | The Trade Desk | N/A | N/A | 2 | seats  |
-| 87  |Buzzlogic|N/A|N/A|1|members|
-| 89  |Grapeshot|N/A|N/A|1|members|
-| 91  | AdForm | N/A | N/A | 2 | seats |
-| 94  |AdGear|N/A|N/A|1|members|
-| 96  | Media.Net   | N/A | N/A | 3 | members_and_seats |
-| 98  |DoubleVerify|N/A|N/A|1|members|
-|100  |sociomantic labs GmbH| N/A| N/A| 1| members|
-|101 | Display & Video 360 | N/A | N/A | 2 | seats |
-|107  |Bidtheatre|N/A|N/A|1|members|
-|112  |Delta Projects|N/A|N/A|1|members|
-|114|AcuityAds|N/A|N/A|1|members|
-|120|Integral Ad Science|N/A|N/A|1|members|
-|122|Dealer.com|N/A|N/A|1|members|
-|123|Vizury Interactive Solutions Pvt. Ltd.|N/A|N/A|1|members|
-|125|FOutClient01Bidder|N/A|N/A|1|members|
-|129| Platform Services Test Bidder| N/A | N/A | 3 | members_and_seats |
-|133| Basis Technologies | N/A | N/A | 2 | seats |
-|137|Semcasting|N/A|N/A|1|member|
-|139|adtheorent_bidder|N/A|N/A|1|members|
-|145|AdPilot|N/A|N/A|1|members|
-|158|Adobe - Display|N/A|N/A|1|members|
-|160|AppNexus Testing Data Provider Bidder|N/A|N/A|1|members|
-|164|LiquidM Technology GmbH|N/A|N/A|1|members|
-|172 | NextRoll  | N/A | N/A | 3 | members_and_seats |
-|177|Adloox (Data Provider)|N/A|N/A|1|members|
-|179|El Toro (Data Provider)|N/A|N/A|1|members|
-|180|Crimson Tangerine Ltd.|N/A|N/A|1|members|
-|182 | PTM Internal Test Bidder 2 | N/A | N/A | 3 | members_and_seats |
-|183 | Yahoo DSP  | N/A | N/A | 2 | seats  |
-|188 | Amazon Advertising | N/A | N/A | 3 | members_and_seats |
-|194|Mediarithmics|N/A|N/A|1|members|
-|197|mbr targeting GmbH|N/A|N/A|1|members|
-|216|Mobile Listening Bidder|N/A|N/A|1|members|
-|218|The Weather Channel, LLC (Data Provider)|N/A|N/A|1|members|
-|222|Rockerbox, Inc|N/A|N/A|1|members|
-|225|MaxPoint Interactive|N/A|N/A|1|members|
-|226|4Info, Inc. (Cadent)|N/A|N/A|1|members|
-|228|BlueCava, Inc.|N/A|N/A|1|members|
-|230|TradeLab (Data Provider)|N/A|N/A|1|members|
-|236|Opt Out Advertising B.V.|N/A|N/A|1|members|
-|240|Ubimo|N/A|N/A|1|members|
-|245|Media IQ Digital Ltd|N/A|N/A|1|members|
-|247|Addictive Mobility|N/A|N/A|1|members|
-|254 | Active Agent | N/A | N/A | 2 | seats |
-|256|Platform Integrations Test RTDP (Data Provider)|N/A|N/A|1|members|
-|259|dw_bidder_capacity|N/A|N/A|1|members|
-|260|Triapodi LTD|N/A|N/A|1|members|
-|264|Samba RDP|N/A|N/A|1|members|
-|268|Civolution B.V. (Data Provider)|N/A|N/A|1|members|
-|271|Accordant Media, LLC - 2|N/A|N/A|1|members|
-|276|So-net Media Networks|N/A|N/A|1|members|
-|283|adsquare GmbH|N/A|N/A|1|members|
-|290|AppNexus Floor Optimization1|members|N/A|N/A|
-|291|Deqwas Inc.|N/A|N/A|1|members|
-|297|LDMobile (netADge)|N/A|N/A|1|members|
-|301|Adserver Test (Data Provider)|N/A|N/A|1|members|
-|302|remerge bidder|N/A|N/A|1|members|
-|304|Factual Inc (Data Provider)|N/A|N/A|1|members|
-|305|Exponential Interactive, Inc.|N/A|N/A|1|members|
-|306|AdDaptive Intelligence, Inc.|N/A|N/A|1|members|
-|313|TradeLab2|N/A|N/A|1|members|
-|315|RTB House|N/A|N/A|1|members|
-|319|A.Mob|N/A|N/A|1|members|
-|320|Travel Audience GmbH|N/A|N/A|1|members|
-|326|Integral Ad Science (Data Provider 2)|N/A|N/A|1|members|
-|327|AppNexus Programmable Data (Data Provider)|N/A|N/A|1|members|
-|328 | StackAdapt  | N/A | N/A | 2 | seats  |
-|329|Accordant Media, LLC|N/A|N/A|1|members|
-|331|Beeswax|N/A|N/A|1|members|
-|332|Mediasmart Mobile S.L.|N/A|N/A|1|members|
-|333|Bidtellect|N/A|N/A|1|members|
-|335|Emerse Sverige AB|N/A|N/A|1|members|
-|337|Schibsted|N/A|N/A|1|members|
-|341|Mindlytix SAS|N/A|N/A|1|members|
-|347|Digital To Store Limited|N/A|N/A|1|members|
-|349|apd_scylla|N/A|N/A|1|members|
-|351| Adelphic (Viant)|N/A|N/A|2|seats|
-|353|Jaduda GmbH|N/A|N/A|1|members|
-|359|Biga Bid Media Ltd|N/A|N/A|1|members|
-|360|Chalk Digital, Inc.|N/A|N/A|1|members|
-|363|Kobler AS|N/A|N/A|1|members|
-|368|TAPTAP Networks, S.L|N/A|N/A|1|members|
-|370|Blis Media Ltd.|N/A|N/A|1|members|
-|373|LinkedIn Bidder|N/A|N/A|1|members|
-|375|RhythmOne LLC|N/A|N/A|1|members|
-|376|Mobile Professionals B.V.|N/A|N/A|1|members|
-|384|Appier Inc.|N/A|N/A|1|members|
-|385|Hybrid Adtech Inc|N/A|N/A|1|members|
-|386|Nanigans Bidder|N/A|N/A|1|members|
-|388|Bidswitch|N/A|N/A|1|members|
-|389|AdElement, Inc.|N/A|N/A|1|members|
-|390|Adello Group AG|N/A|N/A|1|members|
-|394|Localsensor B.V.|N/A|N/A|1|members|
-|397|Adtube AS|N/A|N/A|1|members|
-|399|Zemanta| N/A | N/A | 2 | seats|
-|402|Lerta Business Inc.|N/A|members|1|members|
-|405|Hawk (TabMo SAS)|N/A| members |1|members|
-| 408 | Smadex SL | N/A | N/A | 1 | members           |
-| 421 | AN Data Science Internal 1  | N/A | N/A | 1 | members           |
-| 423 | Smartology  | N/A | N/A | 1 | members           |
-| 425 | Arago DSP  | N/A | N/A | 1 | members           |
-| 427 | Adobe - Video  | N/A | N/A | 3 | members_and_seats |
-| 430 | Yandex Europe AG| N/A | N/A | 1 | members           |
-| 431 | Kika Tech Inc                                      | N/A | N/A | 1 | members           |
-| 435 | ReadPeak                                           | N/A | N/A | 1 | members           |
-| 437 | SundaySky, Inc.                                    | N/A | N/A | 1 | members           |
-| 438 | M1D (BidSwitch)                                    | N/A | N/A | 1 | members           |
-| 440 | YDN                                                | N/A | N/A | 1 | members           |
-| 442 | Knorex Pte. Ltd.                                   | N/A | N/A | 1 | members           |
-| 443 | Prebid Server                                      | N/A | N/A | 1 | members           |
-| 446 | Dynalyst                                           | N/A | N/A | 1 | members           |
-| 448 | US3                                                | N/A | N/A | 1 | members           |
-| 449 | OC GROUP TECNOLOGIA DA INFORMACAO LTDA             | N/A | N/A | 1 | members           |
-| 451 | National Media Connection                          | N/A | N/A | 1 | members           |
-| 453 | Pocketmath, Inc.                                   | N/A | N/A | 1 | members           |
-| 454 | digiseg apn gateway                                | N/A | N/A | 1 | members           |
-| 457 | YJ Test                                            | N/A | N/A | 1 | members           |
-| 461 | Beemray OY (Data Provider)                         | N/A | N/A | 1 | members           |
-| 462 | appnexus-video                                     | N/A | N/A | 1 | members           |
-| 463 | DeepIntent, Inc.                                   | N/A | N/A | 2 | seats             |
-| 464 | SMARTSTREAM.TV GmbH                                | N/A | N/A | 1 | members           |
-| 465 | ITN Holdings, LLC                                  | N/A | N/A | 1 | members           |
-| 466 | Craid Inc.                                         | N/A | N/A | 1 | members           |
-| 467 | NetSeer, Inc. (Data Provider)                      | N/A | N/A | 1 | members           |
-| 468 | Eyeview Inc.                                       | N/A | N/A | 1 | members           |
-| 471 | SQUARED (Data Provider Test 12)                    | N/A | N/A | 1 | members           |
-| 472 | Semasio GmbH (Data Provider)                       | N/A | N/A | 1 | members           |
-| 473 | Axel Springer Teaser Ad GmbH                       | N/A | N/A | 1 | members           |
-| 474 | DO NOT USE - Kayla's test                          | N/A | N/A | 1 | members           |
-| 475 | Amobee TV| Bidding with seats on 100% of traffic| Eligible for Seat ID Deals| N/A| N/A |
-| 480 | Mnet_bidder_2.0                                    | N/A | N/A | 1 | members           |
-| 481 | PLAYGROUND XYZ (Data Provider)                     | N/A | N/A | 1 | members           |
-| 482 | MadHive Inc.                                       | N/A | N/A | 1 | members           |
-| 483 | MSAN                                               | N/A | N/A | 3 | members_and_seats |
-| 484 | AdLede (Data Provider)                             | N/A | N/A | 1 | members           |
-| 488 | Emetriq GmbH RT (Data Provider)                    | N/A | N/A | 1 | members           |
-| 490 | test-1                                             | N/A | N/A | 1 | members           |
-| 492 | Test (can be deleted)                              | N/A | N/A | 1 | members           |
-| 493 | onetest2-rp-1(can be deleted)                      | N/A | N/A | 1 | members           |
-| 494 | PulsePoint, Inc.                                   | N/A | N/A | 2 | seats             |
-| 508 | Nano Interactive GmbH (Data Provider)              | N/A | N/A | 1 | members           |
-| 512 | Test1Bdr                                           | N/A | N/A | 1 | members           |
-| 514 | Test2                                              | N/A | N/A | 1 | members           |
-| 522 | Silver Bullet Media Services (Data Provider)       | N/A | N/A | 1 | members           |
-| 523 | Inmar-OIQ, LLC                                     | N/A | N/A | 1 | members           |
-| 524 | GCN INC                                            | N/A | N/A | 1 | members           |
-| 526 | GUM GUM Inc (Data Provider)                        | N/A | N/A | 1 | members           |
-| 528 | Qwarry (Data Provider)                             | N/A | N/A | 1 | members           |
-| 534 | Ericson Emodo                                      | N/A | N/A | 1 | members           |
-| 539 | Sirdata SAS (Data Provider)                        | N/A | N/A | 1 | members           |
-| 541 | Seedtag Advertising SL (Data Provider)             | N/A | N/A | 1 | members           |
-| 542 | ALLIANCE GRAVITY DATA MEDIA (Data Provider)        | N/A | N/A | 1 | members           |
-| 543 | Adelaide Metrics Inc. (Data Provider)              | N/A | N/A | 1 | members           |
-| 545 | Audigent (Data Provider)                           | N/A | N/A | 1 | members           |
-| 546 | Cognitiv Corp, a Delaware corp (Data Provider)     | N/A | N/A | 1 | members           |
-| 550 | Proxistore (Data Provider)                         | N/A | N/A | 1 | members           |
-| 551 | CTV AppNexus Programmable Data (Data Provider)     | N/A | N/A | 1 | members           |
-| 552 | non CTV AppNexus Programmable Data (Data Provider) | N/A | N/A | 1 | members           |
-| 554 | MarketOps                                          | N/A | N/A | 1 | members           |
-| 555 | Predictive Audiences RealTime APD                  | N/A | N/A | 1 | members           |
-| 556 | MNTN                                               | N/A | N/A | 1 | members           |
-| 557 | Ravel Technologies (Data Provider)                 | N/A | N/A | 1 | members           |
-| 558 | Audigent (Test)                                    | N/A | N/A | 1 | members           |
-| 559 | Choreograph RTDP (Data Provider)                   | N/A | N/A | 1 | members           |
-| 560 | Decide                                             | N/A | N/A | 1 | members           |
-| 561 | Goldfish Ads, LLC (Data Provider)                  | N/A | N/A | 1 | members           |
-| 562 | Gecko Technologies DMCC                            | N/A | N/A | 3 | members_and_seats |
-| 563 | Dable Inc                                          | N/A | N/A | 1 | members           |
-| 564 | Jio Platforms Limited                              | N/A | N/A | 1 | members           |
-| 565 | Jio Platforms Limited                              | N/A | N/A | 1 | members           |
-| 566 | ShareThis Inc.                                     | N/A | N/A | 1 | members           |
-| 567 | Mobvista International Technology Limited          | N/A | N/A | 1 | members           |
-| 568 | Taboola Inc.                                       | N/A | N/A | 1 | members           |
-| 569 | Programmatic Mechanics Pontiac DSP                 | N/A | N/A | 3 | members_and_seats |
-| 571 | Adhese                                             | N/A | N/A | 1 | members           |
-| 572 | Engageya Tracknomics                               | N/A | N/A | 3 | members_and_seats |
-| 573 | ALGORIX TECHNOLOGY PTE LTD (Bidder)                | N/A | N/A | 1 | members           |
-| 574 | NASMEDIA Co., LTD                                  | N/A | N/A | 1 | members           |
-| 575 | Mediamath Acquisition Corporation dba Infillion    | N/A | N/A | 1 | members           |
-| 576 | Eskimi UAB                                         | N/A | N/A | 1 | members           |
-| 577 | Nativo Inc                                         | N/A | N/A | 1 | members           |
-| 578 | RTB House S.A. (Data Provider)                     | N/A | N/A | 1 | members           |
-| 579 | Taboola Inc.                                       | N/A | N/A | 1 | members           |
-| 580 | HK POWER ENGINE LIMITED                            | N/A | N/A | 1 | members           |
-| 581 | R&R Digital Pty Ltd                                | N/A | N/A | 1 | members           |
-| 582 | Opera Software Ireland Ltd                         | N/A | N/A | 1 | members           |
+|     Bidder ID    |     Bidder Name    |      Buyer Seat Status     |     Deal Support Type    |
+|---|---|---|---|
+|     8    |      MediaMath                                     |      Using   Seats           |      Seats                 |
+|     17    |      Roku   OneView                                  |      Using   Members         |      Members               |
+|     18    |      Zeta   DSP                                      |      Using   Seats           |      Members & Seats     |
+|     20    |      Amobee   (Nexxen)                               |      Using   Seats           |      Seats                 |
+|     34    |      Epsilon                                       |      Using   Seats           |      Members & Seats     |
+|     44    |      Quantcast                                     |      Using   Seats           |      Seats                 |
+|     52    |      Criteo                                        |      Using   Members         |      Members               |
+|     54    |      iPromote                                      |      Using   Seats           |      Members & Seats     |
+|     66    |      Simpli.fi                                     |      Using   Members         |      Members               |
+|     74    |      ClickDistrict (Platform   161 / Verve DSP)      |      Using   Members         |      Members               |
+|     82    |      The Trade   Desk                                |      Using   Seats           |      Seats                 |
+|     91    |      AdForm                                        |      Using   Seats           |      Seats                 |
+|     94    |      AdGear                                        |      Using   Members         |      Members               |
+|     96    |      Media.Net                                     |      Using   Seats           |      Members & Seats     |
+|     101    |      Display & Video   360                           |      Using   Seats           |      Seats                 |
+|     107    |      Bidtheatre                                    |      Using   Members         |      Members               |
+|     112    |      Delta   Projects                                |      Using   Members         |      Members               |
+|     114    |      AcuityAds                                     |      Using   Members         |      Members               |
+|     122    |      Dealer.com                                    |      Using   Members         |      Members               |
+|     125    |      FOutClient01Bidder                            |      Using   Members         |      Members               |
+|     133    |      Basis   Technologies                            |      Using   Seats           |      Seats                 |
+|     139    |      adtheorent_bidder                             |      Using   Members         |      Members               |
+|     145    |      AdPilot                                       |      Using   Members         |      Members               |
+|     158    |      Adobe -   Display                               |      Using   Members         |      Members               |
+|     172    |      NextRoll                                      |      Using   Seats           |      Members & Seats     |
+|     180    |      Crimson Tangerine   Ltd.                        |      Using   Members         |      Members               |
+|     183    |      Yahoo   DSP                                     |      Using   Seats           |      Seats                 |
+|     188    |      Amazon   Advertising                            |      Using   Seats           |      Members & Seats     |
+|     225    |      MaxPoint   Interactive                          |      Using   Members         |      Members               |
+|     226    |      4Info, Inc.   (Cadent)                          |      Using   Members         |      Members               |
+|     228    |      BlueCava,   Inc.                                |      Using   Members         |      Members               |
+|     236    |      Opt Out Advertising   B.V.                      |      Using   Members         |      Members               |
+|     254    |      Active   Agent                                  |      Using   Seats           |      Seats                 |
+|     276    |      So-net Media   Networks                         |      Using   Members         |      Members               |
+|     291    |      Deqwas Inc.                                   |      Using   Members         |      Members               |
+|     305    |      Exponential Interactive,   Inc.                 |      Using   Members         |      Members               |
+|     315    |      RTB   House                                     |      Using   Members         |      Members               |
+|     319    |      A.Mob                                         |      Using   Members         |      Members               |
+|     320    |      Travel Audience   GmbH                          |      Using   Members         |      Members               |
+|     328    |      StackAdapt                                    |      Using   Seats           |      Seats                 |
+|     331    |      Beeswax                                       |      Using   Members         |      Members               |
+|     332    |      Mediasmart Mobile   S.L.                        |      Using   Members         |      Members               |
+|     333    |      Bidtellect                                    |      Using   Members         |      Members               |
+|     347    |      Digital To Store   Limited                      |      Using   Members         |      Members               |
+|     351    |      Adelphic   (Viant)                              |      Using   Seats           |      Seats                 |
+|     353    |      Jaduda GmbH                                   |      Using   Members         |      Members               |
+|     360    |      Chalk Digital,   Inc.                           |      Using   Members         |      Members               |
+|     363    |      Kobler   AS                                     |      Using   Members         |      Members               |
+|     368    |      TAPTAP Networks,   S.L                          |      Using   Members         |      Members               |
+|     373    |      LinkedIn   Bidder                               |      Using   Members         |      Members               |
+|     376    |      Mobile Professionals   B.V.                     |      Using   Members         |      Members               |
+|     384    |      Appier   Inc.                                   |      Using   Members         |      Members               |
+|     385    |      Hybrid Adtech   Inc                             |      Using   Members         |      Members               |
+|     389    |      AdElement,   Inc.                               |      Using   Members         |      Members               |
+|     390    |      Adello Group   AG                               |      Using   Members         |      Members               |
+|     394    |      Localsensor   B.V.                              |      Using   Members         |      Members               |
+|     399    |      Zemanta                                       |      Using   Seats           |      Seats                 |
+|     405    |      Hawk (TabMo   SAS)                              |      Using   Members         |      Members               |
+|     425    |      Arago   DSP                                     |      Using   Members         |      Members               |
+|     427    |      Adobe -   Video                                 |      Using   Members         |      Members & Seats     |
+|     435    |      ReadPeak                                      |      Using   Members         |      Members               |
+|     437    |      SundaySky,   Inc.                               |      Using   Members         |      Members               |
+|     440    |      YDN                                           |      Using   Members         |      Members               |
+|     442    |      Knorex Pte.   Ltd.                              |      Using   Members         |      Members               |
+|     443    |      Prebid Server                                 |      Using   Members         |      Members               |
+|     446    |      Dynalyst                                      |      Using   Members         |      Members               |
+|     449    |      OC GROUP TECNOLOGIA DA   INFORMACAO LTDA        |      Using   Members         |      Members               |
+|     463    |      DeepIntent,   Inc.                              |      Using   Seats           |      Seats                 |
+|     473    |      Axel Springer Teaser Ad   GmbH                  |      Using   Members         |      Members               |
+|     480    |      Mnet_bidder_2.0                               |      Using   Seats           |      Members               |
+|     482    |      MadHive   Inc.                                  |      Using   Seats           |      Members               |
+|     483    |      MSAN                                          |      Using   Seats           |      Members & Seats     |
+|     494    |      PulsePoint,   Inc.                              |      Using   Seats           |      Seats                 |
+|     529    |      Baidu (Hong Kong)   Limited                     |      Using   Seats           |      Seats                 |
+|     530    |      Cognitiv                                      |      Using   Seats           |      Seats                 |
+|     537    |      OctillionMediaLLC                             |      Using   Seats           |      Seats                 |
+|     544    |      MGID   Inc                                      |      Using   Seats           |      Seats                 |
+|     554    |      MarketOps                                     |      Using   Members         |      Members               |
+|     562    |      Gecko Technologies   DMCC                       |      Using   Seats           |      Members & Seats     |
+|     563    |      Dable   Inc                                     |      Using   Members         |      Members               |
+|     565    |      Jio Platforms   Limited                         |      Using   Members         |      Members               |
+|     567    |      Mobvista International   Technology Limited     |      Using   Members         |      Members               |
+|     568    |      Taboola   Native                                |      Using   Members         |      Members               |
+|     569    |      Programmatic Mechanics   Pontiac DSP            |      Using   Seats           |      Members & Seats     |
+|     571    |      Adhese                                        |      Using   Seats           |      Members               |
+|     573    |      ALGORIX TECHNOLOGY PTE LTD   (Bidder)           |      Using   Members         |      Members               |
+|     577    |      Nativo   Inc                                    |      Using   Members         |      Members               |
+|     580    |      HK POWER ENGINE   LIMITED                       |      Using   Members         |      Members               |

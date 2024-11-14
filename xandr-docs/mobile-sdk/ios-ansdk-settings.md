@@ -321,7 +321,7 @@ To address reported performance issues when using OMSDK for viewability measurem
 |--|--|
 | `BOOL enableOMIDOptimization` | Set YES or NO for the OMID Optimization to be enabled. Default value is NO. <br><br> **Note**: This API supports only banner and native ad types. |
 
-### Examples
+### Example
 
 #### [Objective C](#tab/objectivec9)
 
@@ -364,14 +364,6 @@ adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
  
 ```
 
-## Set content language
-
-| Property | Description |
-|--|--|
-| `NSString *contentlanguage` | Sets the two-letter ANSI code for the content's language; for example, `EN`. |
-
-### Examples
-
 #### [Objective C](#tab/objectivec10)
 
 ```
@@ -385,3 +377,9 @@ ANSDKSettings.sharedInstance().contentLanguage = "EN"
 ```
 
 ---
+
+## Set content language
+
+| Property | Description |
+|--|--|
+| `NSString *contentlanguage` | Sets the two-letter ANSI code for the content's language; for example, `EN`. |

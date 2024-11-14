@@ -17,9 +17,9 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understand Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-|     Bidder ID    |     Bidder Name    |      Buyer Seat Status     |     Deal Support Type    |
+| Bidder ID |     Bidder Name    |      Buyer Seat Status     |     Deal Support Type    |
 |---|---|---|---|
-|     8    |      MediaMath                                     |      Using   Seats           |      Seats                 |
+|     8    |      MediaMath    |      Using   Seats           |      Seats                 |
 |     17    |      Roku   OneView                                  |      Using   Members         |      Members               |
 |     18    |      Zeta   DSP                                      |      Using   Seats           |      Members & Seats     |
 |     20    |      Amobee   (Nexxen)                               |      Using   Seats           |      Seats                 |

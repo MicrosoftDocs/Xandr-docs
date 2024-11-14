@@ -361,8 +361,17 @@ nativeAdResponse?.registerView(
  
 // Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
 adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
- 
 ```
+
+```
+
+## Set content language
+
+| Property | Description |
+|--|--|
+| `NSString *contentlanguage` | Sets the two-letter ANSI code for the content's language; for example, `EN`. |
+
+### Example
 
 #### [Objective C](#tab/objectivec10)
 
@@ -378,8 +387,3 @@ ANSDKSettings.sharedInstance().contentLanguage = "EN"
 
 ---
 
-## Set content language
-
-| Property | Description |
-|--|--|
-| `NSString *contentlanguage` | Sets the two-letter ANSI code for the content's language; for example, `EN`. |

@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Line Items Troubleshooting 
+title: Microsoft Curate - Troubleshooting Line Items 
 description: In this article, learn how to use the Troubleshooting tab within the Line Item Details pane to troubleshoot a line item.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Line items troubleshooting
+# Microsoft Curate - Troubleshooting Line items
 
 The **Troubleshooting** tab of the **Line Item Details** pane provides troubleshooting information and tools for the selected deal line item in the **Impression Funnel**, **Troubleshooting Reports**, and **Bid Request Sampler** sections.
 

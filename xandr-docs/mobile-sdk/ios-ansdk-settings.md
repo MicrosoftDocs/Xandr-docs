@@ -313,7 +313,7 @@ ANSDKSettings.sharedInstance().enableTestMode = true
 
 ## OMID Optimization
 
-The IAB's Open Measurement SDK (OM SDK) enhances ad viewability and verification in mobile apps by allowing publishers to use a single SDK,  eliminating the need for multiple SDKs from Ad Verification Services. For more details, visit the [IAB OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
+The IAB's Open Measurement SDK (OM SDK) enhances third party ad viewability and verification measurement in mobile apps by allowing publishers to use a single SDK,  eliminating the need for multiple SDKs. For more details, visit the [IAB OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
 
 To address reported performance issues when using OMSDK for viewability measurement, we’ve introduced an OMID optimization option, which is off by default. Enabling this option causes the stopOMIDAdSession function to trigger when 100% of the ad is on screen. This improves app performance but reduces the duration of ad viewability measurement.
 
@@ -327,20 +327,7 @@ To address reported performance issues when using OMSDK for viewability measurem
 
 ```
 ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
- 
-// Examples for Adding a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-[adObject addOpenMeasurementFriendlyObstruction:friendlyObstructionView];
- 
-// Example for Adding a Friendly Obstruction for Native AdUnit
-[self.nativeResponse
-    registerViewForTracking:self.nativeView
-    withRootViewController:self clickableViews:@[]
-    openMeasurementFriendlyObstructions:@[friendlyObstructionView1, friendlyObstructionView2, ...]
-    error:nil];
- 
-// Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-[adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];
- 
+
 ```
 
 #### [Swift](#tab/swift9)
@@ -348,19 +335,6 @@ ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
 ```
 ANSDKSettings.sharedInstance().enableOMIDOptimization = true
  
-// Examples for Adding a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-adObject.addOpenMeasurementFriendlyObstruction(friendlyObstructionView)
- 
-// Example for Adding a Friendly Obstruction for Native AdUnit
-nativeAdResponse?.registerView(
-   forTracking: nativeView!,
-   withRootViewController: self,
-   clickableViews: [],
-   openMeasurementFriendlyObstructions: [friendlyObstructionView1, friendlyObstructionView2, ...]
-)
- 
-// Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 ```
 
 ---

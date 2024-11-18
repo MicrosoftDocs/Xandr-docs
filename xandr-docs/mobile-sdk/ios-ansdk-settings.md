@@ -24,7 +24,7 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
 | `BOOL disableIDFAUsage` | Excludes the IDFA field in ad request. <br><br> See [Set IDFA usage](#set-idfa-usage) below for more details. |
 | `NSUInteger auctionTimeout` | Sets the timeout period in milliseconds. <br><br> See [Set the Auction Timeout](#set-the-auction-timeout) below for more details. |
 | `BOOL enableTestMode` | Sets YES or NO for the AdRequests to be executed in the test mode. <br><br> See [Set Test Mode](#set-test-mode) below for more details. |
-| `BOOL enableOMIDOptimization` | Indicates if Open-Measurement Optimization is enabled or not. <br><br> See [OMID-Friendly Obstruction](#omid-friendly-obstruction) below for more details. |
+| `BOOL enableOMIDOptimization` | Enables Open-Measurement Optimization. <br><br> See [OMID Optimization](#omid-optimization) below for more details. |
 | `NSString *contentlanguage` | Sets the code for the content's language. <br><br> See [Set Content Language](#set-content-language) below for more details. |
 
 ## Initialize SDK settings
@@ -311,30 +311,15 @@ ANSDKSettings.sharedInstance().enableTestMode = true
 
 ---
 
-## OMID-friendly obstruction
+## OMID Optimization
 
-The Open Measurement Software Development Kit (OM SDK) is designed to facilitate third party viewability and verification measurement for ads served to mobile app environments without requiring multiple Ad Verification Service Providers (Measurement Provider) SDKs.
+The IAB's Open Measurement SDK (OM SDK) enhances third party ad viewability and verification measurement in mobile apps by allowing publishers to use a single SDK,  eliminating the need for multiple SDKs. For more details, visit the [IAB OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
 
-Open Measurement Interface Definition (OMID) is an open measurement API provided by IAB. In short, it enables a publisher to get data on the viewability of an ad within a mobile device. For more detailed information about OMID, visit the IAB site [here](https://iabtechlab.com/standards/open-measurement-sdk/).
-
-Friendly obstructions are the views that OMID will exclude from all viewability calculations when added to the OMID Session. When a UI element needs to be considered as a part of the ad, that can be added as a friendly obstruction to prevent it from counting towards coverage of the ad. For example, any native element such as a close button, some logo text, or other object that needs to be considered as a part of an ad (and not be counted for viewability measurement) should be registered as a friendly obstruction. This applies to any ancestor or peer views in the view hierarchy.
-
-The OMID API enables:
-
-- Adding a friendly obstruction
-- Removing a friendly obstruction
-- Removing all friendly obstructions
-
-In addition to the above-mentioned functionalities, the OM SDK facilitates a property (`enableOMIDOptimization`) that enables optimization.
-
-To add a friendly obstruction, remove a friendly obstruction, or remove all friendly obstruction for Banner, Interstitial, and Video AdUnits, you need to pass the view as an argument to the API.
-
-> [!NOTE]
-> Native AdUnits do not support remove API.
+To address reported performance issues when using OMSDK for viewability measurement, we’ve introduced an OMID optimization option, which is off by default. Enabling this option causes the stopOMIDAdSession function to trigger when 100% of the ad is on screen. This improves app performance but reduces the duration of ad viewability measurement.
 
 | Property | Description |
 |--|--|
-| `BOOL enableOMIDOptimization` | Indicates if Open-Measurement Optimization for viewability and verification measurement for ads served is enabled and if not, enable the same. Default value is NO. <br><br> When set as "YES", the OM SDK takes care of performing Open-Measurement Optimization. Here, as part of optimization, viewability is tracked until an ad is fully visible to the user. Once the ad ceases to be visible, viewability tracking stops. <br><br> **Note**: This API supports only banner and native ad types. |
+| `BOOL enableOMIDOptimization` | Set YES or NO for the OMID Optimization to be enabled. Default value is NO. <br><br> **Note**: This API supports only banner and native ad types. |
 
 ### Example
 
@@ -342,19 +327,7 @@ To add a friendly obstruction, remove a friendly obstruction, or remove all frie
 
 ```
 ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
- 
-// Examples for Adding a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-[adObject addOpenMeasurementFriendlyObstruction:friendlyObstructionView];
- 
-// Example for Adding a Friendly Obstruction for Native AdUnit
-[self.nativeResponse
-    registerViewForTracking:self.nativeView
-    withRootViewController:self clickableViews:@[]
-    openMeasurementFriendlyObstructions:@[friendlyObstructionView1, friendlyObstructionView2, ...]
-    error:nil];
- 
-// Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-[adObject removeOpenMeasurementFriendlyObstruction:friendlyObstructionView];
+
 ```
 
 #### [Swift](#tab/swift9)
@@ -362,28 +335,17 @@ ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
 ```
 ANSDKSettings.sharedInstance().enableOMIDOptimization = true
  
-// Examples for Adding a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-adObject.addOpenMeasurementFriendlyObstruction(friendlyObstructionView)
- 
-// Example for Adding a Friendly Obstruction for Native AdUnit
-nativeAdResponse?.registerView(
-   forTracking: nativeView!,
-   withRootViewController: self,
-   clickableViews: [],
-   openMeasurementFriendlyObstructions: [friendlyObstructionView1, friendlyObstructionView2, ...]
-)
- 
-// Examples for Removing a Friendly Obstruction for AdUnits (Banner, Interstitial and Video)
-adObject.removeOpenMeasurementFriendlyObstruction(friendlyObstructionView)
 ```
 
 ---
 
-## Set content language
+### Set content language
 
 | Property | Description |
 |--|--|
 | `NSString *contentlanguage` | Sets the two-letter ANSI code for the content's language; for example, `EN`. |
+
+---
 
 ### Example
 

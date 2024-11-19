@@ -12,6 +12,7 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [0.66.0](https://acdn.adnxs.com/ast/static/0.66.0/ast.js) | - Update owner and reference URLs used for Fledge. | 18 November 2024 |
 | [0.65.0](https://acdn.adnxs.com/ast/static/0.65.0/ast.js) | - Update fledge logic to use `deprecateURN` function instead of `auctionConfig` approach. <br> - Include `geooverride` information for AST context Interest Groups.| 4 November 2024 |
 | [0.64.7](https://acdn.adnxs.com/ast/static/0.64.7/ast.js) | - Various updates to include additional data in AST telemetry. <br> - Update the version of telemetry package used by AST. <br> - Additional updates to (FLEDGE) private auction workflows for Chrome (in beta status). <br> - Support custom native assets for MSN. <br> - Add new AST event `adCodeRenderStart`. | 13 September 2024 |
 | [0.63.3](https://acdn.adnxs.com/ast/static/0.63.3/ast.js) | - Various updates to (FLEDGE) private auction workflows in Chrome (in beta status). <br> - Added additional data for core AST telemetry events. <br> - Fixed issues with Native Assembly ads in AST SafeFrame. | 12 August 2024 |

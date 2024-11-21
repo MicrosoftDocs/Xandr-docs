@@ -73,7 +73,7 @@ Select the information that should be exposed to the buyers when they are target
 > [!NOTE]
 > Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag.
 
-For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Select a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, select the **X** next to the category name. When you have finished selecting custom categories, select **Add** to save your changes.
+For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Select a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, select **X** next to the category name. When you have finished selecting custom categories, select **Add** to save your changes.
 
 ### Step 5. Save your changes
 

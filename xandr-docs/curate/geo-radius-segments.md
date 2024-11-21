@@ -79,7 +79,7 @@ Select **Next**.
 
 ### Step 4. Review Geo Radius Segment features and create Geo Radius Segment
 
-Review the **Related Geo Features** of the geo radius segment. select **Create Geo Radius Segment** to finish creating the geo radius segment.
+Review the **Related Geo Features** of the geo radius segment. Select **Create Geo Radius Segment** to finish creating the geo radius segment.
 
 ### Step 5. Note the segment ID for use in line item targeting
 

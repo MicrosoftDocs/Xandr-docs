@@ -33,7 +33,7 @@ You can create and manage Deal Lists at the Member and Advertiser level. A d
 
 ### Edit a deal list
 
-1. Select on the name of the deal list on the **Deal List** page. This will display the details of the deal list with the deals it contains.
+1. Select the name of the deal list on the **Deal List** page. This will display the details of the deal list with the deals it contains.
 1. Select **Add** to include more deals to the deal list. To add deals to the deal list, follow the instructions in the **Create a New Deal List** section above.
 1. To remove an existing deal from the deal list, select the checkbox next to the deal and then select **Remove**. A confirmation window will be displayed. Select **Save** to delete the deal from the list.
 

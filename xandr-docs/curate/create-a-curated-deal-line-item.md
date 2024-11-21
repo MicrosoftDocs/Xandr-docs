@@ -27,7 +27,7 @@ You will need to create or have access to the following buy-side objects:
   > [!NOTE]
   > - Legacy insertion orders are not supported with curated deal line items.
   > - Insertion orders must be configured with an unlimited budget for curated deal line items
-  > - Settings you select on the insertion order will apply to *all* curated deal line items under the insertion order.
+  > - Settings you select the insertion order will apply to *all* curated deal line items under the insertion order.
 
 ## Create a new curated deal line item
 

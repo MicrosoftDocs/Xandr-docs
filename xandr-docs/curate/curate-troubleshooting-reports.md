@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Reports Troubleshooting 
+title: Microsoft Curate - Troubleshoot Reports 
 description: In this article, learn step-by-step instructions to set up and run Troubleshooting reports that can help you troubleshoot deal line items.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Report troubleshooting
+# Microsoft Curate - Troubleshoot reports
 
 **Troubleshooting Reports** provides you easy access to set up and run reports that can help you troubleshoot deal line items. These reports are simplified versions of the most common reports available. You can use these reports to further investigate any issues surfaced in the **Impression Funnel** section. For more information, see [Impression Funnel](curate-impression-funnel.md).
 

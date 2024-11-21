@@ -26,7 +26,7 @@ To get to the **Insertion Orders** screen:
 
 ## Filter your insertion orders
 
-The **Advanced Filters** menu lets you filter for insertion orders based on Advertiser, State, Type, Insertion Order Name, Flight Start and End Date, and External Code. Select on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
+The **Advanced Filters** menu lets you filter for insertion orders based on Advertiser, State, Type, Insertion Order Name, Flight Start and End Date, and External Code. Select **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
 
 ## View stats
 

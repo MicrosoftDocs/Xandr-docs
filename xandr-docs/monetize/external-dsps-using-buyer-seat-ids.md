@@ -17,9 +17,10 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-|     Bidder ID    |     Bidder Name    |      Buyer Seat Status     |     Deal Support Type    |
+| Bidder ID | Bidder Name | Buyer Seat Status | Deal Support Type |
 |---|---|---|---|
 | 8 | MediaMath | Using Seats | Seats |
+| 17 | Roku OneView| Using Members  | Members |
 | 18 | Zeta DSP | Using Seats | Members & Seats |
 | 20 | Amobee (Nexxen) | Using Seats | Seats |
 | 34 | Epsilon | Using Seats | Members & Seats |
@@ -37,8 +38,9 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 328 | StackAdapt | Using Seats | Seats |
 | 351 | Adelphic (Viant) | Using Seats | Seats |
 | 399 | Zemanta | Using Seats | Seats |
-| 427 | Adobe - Video | Using Members | Members & Seats |
 | 463 | DeepIntent, Inc. | Using Seats | Seats |
+| 480 | Mnet_bidder_2.0  | Using  Seats | Members |
+| 482 | MadHive Inc.     | Using  Seats | Members |
 | 483 | MSAN | Using Seats | Members & Seats |
 | 494 | PulsePoint, Inc. | Using Seats | Seats |
 | 529 | Baidu (Hong Kong) Limited | Using Seats | Seats |

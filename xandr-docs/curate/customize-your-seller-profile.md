@@ -10,7 +10,7 @@ On the **Partner Center** screen, you can edit the profile information that disp
 
 ## Step 1. Get started
 
-Go to the **Partner Center** screen (**Partners** > **Partner Center**), select the **Buyers** tab, and click the **My Profile** button to open the **My Seller Profile** dialog. Basic information about your member displays:
+Go to the **Partner Center** screen (**Partners** > **Partner Center**), select the **Buyers** tab, and select the **My Profile** button to open the **My Seller Profile** dialog. Basic information about your member displays:
 
 - **ID** - The unique identification number for your member.
 - **Name** - Your member name.
@@ -40,7 +40,7 @@ Complete the following fields:
 
 ## Step 3. Record your changes
 
-When all changes have been made, click **Save** at the bottom of the dialog. Your changes are saved and you are returned to the **Partner Center** screen.
+When all changes have been made, select **Save** at the bottom of the dialog. Your changes are saved and you are returned to the **Partner Center** screen.
 
 ## Related topics
 

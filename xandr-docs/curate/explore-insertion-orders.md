@@ -26,7 +26,7 @@ To get to the **Insertion Orders** screen:
 
 ## Filter your insertion orders
 
-The **Advanced Filters** menu lets you filter for insertion orders based on Advertiser, State, Type, Insertion Order Name, Flight Start and End Date, and External Code. Click on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
+The **Advanced Filters** menu lets you filter for insertion orders based on Advertiser, State, Type, Insertion Order Name, Flight Start and End Date, and External Code. Select **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purpose.
 
 ## View stats
 
@@ -58,7 +58,7 @@ The following stats are shown for each insertion order. Note that the data alway
 
 ## Modify columns
 
-You can choose the columns that are displayed by clicking the **Modify Columns** button.
+You can choose the columns that are displayed by selecting the **Modify Columns** button.
 
 This opens the **Modify Columns** dialog. From there you can use the checkboxes to select or deselect the columns you want to display. If you want the columns to appear in a certain order, then you can drag and drop the columns at your desired location.
 

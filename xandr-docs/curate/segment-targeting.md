@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Segment targeting
 
-You can target users within segments by using Boolean expressions. Users get added to segments after they've viewed or clicked a particular creative.
+You can target users within segments by using Boolean expressions. Users get added to segments after they've viewed or selected a particular creative.
 
 You can set up segment targeting by going to the **Audience & Location Targeting \> Audience & Location Segments** subsection within the **Create New Line Item** screen or **Edit Line Item** screen. The **Audience & Location Segments** subsection displays all segments belonging to the advertiser for the associated line item as well as segments defined at the Member level.
 

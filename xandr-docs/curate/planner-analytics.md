@@ -32,7 +32,7 @@ When you create or edit a plan, you have access to detailed interactive visualiz
 | **Graph** | **Description** |
 |---|---|
 | **Inventory Pricing** | Shows the performance of various price points for your targeted inventory. |
-| **Supply Strategy** | Shows which types of targeted inventory perform best for your line item. Clicking **View Inventory Report** shows a downloadable breakdown of the top recommended sellers and apps. |
+| **Supply Strategy** | Shows which types of targeted inventory perform best for your line item. Selecting **View Inventory Report** shows a downloadable breakdown of the top recommended sellers and apps. |
 | **Ad Type** | Shows which ad types are projected to perform best for your targeted inventory. |
 | **Device Type** | Shows which targeted devices perform best for your targeted inventory. |
 | **Cross Device** | If you enabled cross-device, shows the estimated gain in reach that was attributable to cross-device user tracking. |

@@ -16,7 +16,7 @@ On the **Advertisers** screen, select the name of the advertiser for which you w
 
 ## View advertiser settings
 
-The settings that display here can be edited by clicking **Edit** at the top of the **Advertisers** screen. For more information, see [Create an Advertiser](create-an-advertiser.md).
+The settings that display here can be edited by selecting **Edit** at the top of the **Advertisers** screen. For more information, see [Create an Advertiser](create-an-advertiser.md).
 
 ## Basic setup
 
@@ -54,7 +54,7 @@ Displays line items associated with the advertiser.
 
 To view child object details:
 
-1. Click the **Associated Objects** menu on the right of the **Details** pane.
+1. Select the **Associated Objects** menu on the right of the **Details** pane.
 1. Select the appropriate object category such as **Creatives**.
 
 ## Related topics

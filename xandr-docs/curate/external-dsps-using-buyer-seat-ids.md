@@ -20,7 +20,6 @@ For more information, see [Understand Buyer Seat IDs](understanding-buyer-seat-i
 | Bidder ID | Bidder Name | Buyer Seat Status | Deal Support Type |
 |---|---|---|---|
 | 8 | MediaMath | Using Seats | Seats |
-| 17 | Roku OneView| Using Members  | Members |
 | 18 | Zeta DSP | Using Seats | Members & Seats |
 | 20 | Amobee (Nexxen) | Using Seats | Seats |
 | 34 | Epsilon | Using Seats | Members & Seats |

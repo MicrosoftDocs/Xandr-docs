@@ -31,7 +31,7 @@ Fill in the following fields:
 | **Description** | Description of geo radius segment | Optional |
 | **Name** | Name for geo radius segment | Required |
 
-Click **Next**.
+Select **Next**.
 
 ### Step 3. Choose the method to add Geo Radius Segment features
 
@@ -56,8 +56,8 @@ Click **Next**.
       48.376928,-54.986546,8  
       ```
 
-1. Click **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
-1. Click **Next**.
+1. Select **Validate Input Formatting** to ensure that the information is in the correct format. If the information is in the correct format, the **Next** button is enabled.
+1. Select **Next**.
 
 **Import from file**
 
@@ -75,11 +75,11 @@ Click **Next**.
     48.376928,-54.986546,8 
     ```
 
-1. Click **Next**.
+1. Select **Next**.
 
 ### Step 4. Review Geo Radius Segment features and create Geo Radius Segment
 
-Review the **Related Geo Features** of the geo radius segment. Click **Create Geo Radius Segment** to finish creating the geo radius segment.
+Review the **Related Geo Features** of the geo radius segment. Select **Create Geo Radius Segment** to finish creating the geo radius segment.
 
 ### Step 5. Note the segment ID for use in line item targeting
 

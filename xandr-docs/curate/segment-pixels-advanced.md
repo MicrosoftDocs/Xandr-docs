@@ -111,7 +111,7 @@ If using codes, your member id is required.
 
 This is how to target values in segments:
 
-- When you create a line item, click the **Targeting** tab.
+- When you create a line item, select the **Targeting** tab.
 - In the **Targeted Segments** window, go to the **Value** selection. See the above table for the `value` definition.
 
 ## Privacy considerations

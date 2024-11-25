@@ -18,7 +18,10 @@ To get started with mediation using API services, see:
 
 - [Mediated Network Service](./mediated-network-service.md)
 - [Mediated Bid Service](./mediated-bid-service.md)
- 
+- [Creative Custom Request Partner service](creative-custom-request-partner-service.md)
+- [Creative Custom Request Template service](creative-custom-request-template-service.md)
+- [Creative Custom Request Template Type service](creative-custom-request-template-type-service.md)
+
 ## Related topics
 
 - [API Best Practices](./api-best-practices.md)

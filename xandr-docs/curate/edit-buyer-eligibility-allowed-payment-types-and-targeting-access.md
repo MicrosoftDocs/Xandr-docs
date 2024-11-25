@@ -19,7 +19,7 @@ Follow the steps below to edit a buyer's settings.
 
 ### Step 1. Get started
 
-Go to the **Partnership Details** screen (**Partner Center** screen, then click on a buyer's name) and click on the **Partner Controls** tab. Then click **Edit** to make the settings editable.
+Go to the **Partnership Details** screen (**Partner Center** screen, then select a buyer's name) and select the **Partner Controls** tab. Then select **Edit** to make the settings editable.
 
 ### Step 2. Update buyer eligibility
 
@@ -41,11 +41,11 @@ You will have the option to expose domains or full URLs to external buyers.
 > [!NOTE]
 > Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag.
 
-For **Categories (Custom)**, there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then click **Edit** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
+For **Categories (Custom)**, there is the additional option to expose specific categories. To select specific custom categories, choose **Expose Custom** and then select **Edit** to display the list of custom categories. select a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, select the **X** next to the category name. When you have finished selecting custom categories, select **Add** to save your changes.
 
 ### Step 5. Save your changes
 
-When all changes have been made, click **Apply**.
+When all changes have been made, select **Apply**.
 
 ## Edit setting for multiple buyers
 
@@ -53,7 +53,7 @@ Follow the steps below to edit the settings for multiple buyers.
 
 ### Step 1. Get started
 
-Go to the **Partner Center** screen (**Network** > **Partner Center** screen), select at least one buyer and then click **Edit Selected Buyers** to display the **Edit Buyer Controls** section. The changes you make will be applied to all of the selected buyers.
+Go to the **Partner Center** screen (**Network** > **Partner Center** screen), select at least one buyer and then select **Edit Selected Buyers** to display the **Edit Buyer Controls** section. The changes you make will be applied to all of the selected buyers.
 
 ### Step 2. Update buyer eligibility
 
@@ -73,8 +73,8 @@ Select the information that should be exposed to the buyers when they are target
 > [!NOTE]
 > Age and gender targeting information can only be shared if you include the Microsoft Advertising age and gender macro when exporting your placement tag.
 
-For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Click on a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, click on the **X** next to the category name. When you have finished selecting custom categories, click **Add** to save your changes.
+For **Category (Custom)** there is the additional option to expose specific categories. To select specific custom categories, choose **Selected** to display the list of custom categories. Select a category in the **Available Items** area to add it to the **Selected Items** area. To remove a category from the **Selected Items** area, select **X** next to the category name. When you have finished selecting custom categories, select **Add** to save your changes.
 
 ### Step 5. Save your changes
 
-When all changes have been made, click the **Apply Changes** button.
+When all changes have been made, select the **Apply Changes** button.

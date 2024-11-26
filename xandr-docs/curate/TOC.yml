@@ -18,7 +18,7 @@
     items:
     - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md
-    - name: Microsoft Identity Platform Login Troubleshooting
+    - name: Troubleshoot Microsoft Identity Platform Login 
       href: microsoft-identity-platform-login-troubleshooting.md
     - name: Manage User Logins and Permissions
       href: managing-user-logins-and-permissions.md
@@ -357,7 +357,7 @@
   items:
   - name: Overview
     href: release-notes-curate.md
-  - name: June 26, 2023 - Open Beta for Seller Deal Troubleshooting
+  - name: June 26, 2023 - Troubleshoot Seller Deal in Open Beta
     href: release-notes-curate-20230626.md
   - name: June 27, 2023 - New Advertiser and Insertion Order Screens in Microsoft Curate UI
     href: release-notes-curate-20230627.md

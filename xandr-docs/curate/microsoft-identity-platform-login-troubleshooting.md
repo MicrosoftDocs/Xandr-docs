@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Microsoft Identity Platform Login Troubleshooting
+title: Microsoft Curate - Troubleshoot Microsoft Identity Platform login
 description: In this article, find answers to some of the most common scenarios that might occur while using the Microsoft Identity Platform.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Curate - Microsoft Identity Platform login troubleshooting
+# Microsoft Curate - Troubleshoot Microsoft Identity Platform login
 
 This document outlines some scenarios where questions may arise in the minds of users while using Microsoft Identity Platform.
 

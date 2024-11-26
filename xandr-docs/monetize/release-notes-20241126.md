@@ -35,12 +35,15 @@ The Blocked Bid Value metric in Microsoft Monetize Insight for the Bid Rejection
 ## FAQ
 
 **Has the Seller Bid Error report changed?**
+
 No, the Seller Bid Error report has not been changed. This is still the best place to see the full spectrum of errors, regardless of their likely revenue impact.
 
 **How is impact calculated on non-transacting impressions?**
+
 The blocked impact only looks at rejections on transacted impressions.
 
 **How are pCPM line items and PG deals considered?**
+
 As pCPM bids do not reflect the revenue of the line item, bids from PG Deals and GDALIs are not included in the blocked impact dataset.
 
 ### Related topics

@@ -18,9 +18,9 @@ The Blocked Bid Value metric in Microsoft Monetize Insight for the Bid Rejection
 
     **Scenario 1**:
 
-         - Bid A: $4.5 CPM, rejected 1,000,000 times over the course of a week due to Ad Quality.
-         - Bid B: $4.00 CPM, won the impression.
-         - **Blocked bid impact**: $500 (0.5/1,000 * 1,000,000).
+     - Bid A: $4.5 CPM, rejected 1,000,000 times over the course of a week due to Ad Quality.
+     - Bid B: $4.00 CPM, won the impression.
+     - **Blocked bid impact**: $500 (0.5/1,000 * 1,000,000).
   
     **Scenario 2**:
 

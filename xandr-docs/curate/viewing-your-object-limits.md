@@ -33,7 +33,7 @@ The **Object Limits Report** section lists the types of objects that are limited
 
 ## FAQs
 
-***How will I know that I am approaching my limit for an object?***
+***What indicates that you are nearing your object limit?***
 
 We send you an email notification when you reach 85%, 95%, and 100% of your limit for an object. You can change the email addresses that receive notifications via your Member Settings.
 

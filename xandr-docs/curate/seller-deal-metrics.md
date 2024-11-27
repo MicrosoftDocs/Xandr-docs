@@ -132,7 +132,7 @@ Data retention period for this report is 30 days.
 | Reject Other Count | The total number of bids rejected for reasons other than data security not listed above. |
 | Reject Other Data Protection Count | The total number of bids rejected for data security reasons not listed above. |
 
-## To run your report
+## Run your report
 
 Follow these steps to run your report.
 

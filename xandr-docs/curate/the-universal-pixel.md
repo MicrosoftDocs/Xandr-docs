@@ -1,12 +1,12 @@
 ---
-title: Microsoft Curate - The Universal Pixel
+title: Microsoft Curate - Universal Pixel
 description: The universal pixel allows for easy segmentation and measurement of user interactions on a website through a central configuration interface and unified pixel code.
 ms.date: 11/15/2023
 ---
 
-# Microsoft Curate - Universal Pixel
+# Microsoft Curate - Universal pixel
 
-The Universal Pixel provides insights into the interactions that users have with your website, so you can easily segment these users and measure the value of the actions they take. By providing a central configuration interface and unified pixel code, the Universal Pixell removes the need to separately define conversion pixels and segment pixels.
+The Universal pixel provides insights into the interactions that users have with your website, so you can easily segment these users and measure the value of the actions they take. By providing a central configuration interface and unified pixel code, the Universal Pixell removes the need to separately define conversion pixels and segment pixels.
 
 The Universal Pixel is implemented by placing the code within the head tag (\<head\> ... \</head\>) of your advertiser's website. You can analyze user traffic in three different ways in order to segment users and track conversions:
 

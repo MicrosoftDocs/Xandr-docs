@@ -23,7 +23,7 @@ You can use your existing API credentials for API access. The only change is tha
 > [!NOTE]
 > Not all of our current accounts have been migrated into this new way of authenticating. This only applies to accounts who have already been migrated into the new system.
 
-## Why is this change happening?
+## What is causing this change?
 
 Overall, we are simplifying how users manage their accounts in order to address a number of long-standing pain points with how users access Microsoft Advertising’s digital platform applications. For example:
 
@@ -33,7 +33,7 @@ Overall, we are simplifying how users manage their accounts in order to address 
 
 To make new accounts more secure, Microsoft Advertising’s new Information Security Policies (XISP) require all Microsoft Advertising applications be protected by a second authenication factor of authentication.
 
-## What isn't changing?
+## What remains unchanged?
 
 This new authentication method only applies to users who access our applications via the UI. Users will continue accessing their API user accounts using their individual sets of authentication credentials. Changes to how users authenticate into their API accounts will be made to API access in the near future.
 

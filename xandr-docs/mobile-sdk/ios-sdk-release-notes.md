@@ -2,12 +2,19 @@
 title: iOS SDK Release Notes
 description: Explore information about the iOS SDK release notes.
 ms.custom: ios-sdk
+ms.date : 11/27/2024
 ---
 
 # iOS SDK release notes
 
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
+
+## 9.2.1
+
+### Improvement/Bug Fixes
+
+- 8489975: Resolved an issue with static framework integration when uploading to the App Store.
 
 ## 9.2.0
 

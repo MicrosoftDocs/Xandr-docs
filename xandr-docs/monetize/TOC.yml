@@ -1689,6 +1689,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: November 26, 2024 - Enhanced Blocked Bid Value Metric
+    href: release-notes-20241126.md
   - name: October 18, 2024 - Household Attribution
     href: release-notes-20241018.md
   - name: September 23, 2024 - Open Beta for Native Asset Generation 

@@ -62,22 +62,22 @@ Intervals determine how your data is grouped together into rows in the report re
 | `seller_member_name` | string | No | The name of the selling member. |
 | `advertiser_id` | int | Yes | The ID of the advertiser object associated to the served impressions. |
 | `advertiser_name` | string | No | The name of the advertiser object associated to the served impressions. |
-| `line_item_id` | int | Yes | The ID of the line item under which the impressions were purchased. The buy-side hierarchy is Line Item > Campaign. |
-| `line_item_name` | string | No | The name of the line item under which the impressions were purchased. The buy-side hierarchy is   Line Item > Campaign. |
-| `campaign_id` | int | Yes | The   ID of the campaign that purchased the impressions. |
-| `campaign_name` | string | No | The   name of the campaign that purchased the impressions. |
+| `line_item_id` | int | Yes | The ID of the line item under which the impressions were purchased. The buy-side hierarchy is **Line Item** > **Campaign**. |
+| `line_item_name` | string | No | The name of the line item under which the impressions were purchased. The buy-side hierarchy is **Line Item** > **Campaign**. |
+| `campaign_id` | int | Yes | The ID of the campaign that purchased the impressions. |
+| `campaign_name` | string | No | The name of the campaign that purchased the impressions. |
 | `imp_type` | int | Yes | The name of the impression type which was occurred.  |
 | `imp_type_id` | int | Yes | The ID of the impression type which was occurred.  |
-| `insertion_order_id` | int | Yes | The ID of the insertion order under which the impressions were purchased. The buy-side hierarchy is Insertion Order > Line Item > Campaign. |
-| `insertion_order_name` | string | No | The name of the insertion order under which the impressiond were purchased. The buy-side hierarchy is Insertion Order > Line Item > Campaign. |
+| `insertion_order_id` | int | Yes | The ID of the insertion order under which the impressions were purchased. The buy-side hierarchy is **Insertion Order** > **Line Item** > **Campaign**. |
+| `insertion_order_name` | string | No | The name of the insertion order under which the impressiond were purchased. The buy-side hierarchy is **Insertion Order** > **Line Item** > **Campaign**. |
 | `publisher_id` | int | Yes | The ID of the  publisher object on which the the   impressions were occurred. |
-| `publisher_name` | string | No | The name of the  publisher object on which the the   impressions were occurred. |
+| `publisher_name` | string | No | The name of the  publisher object on which the the impressions were occurred. |
 | `placement_id` | int | Yes | The ID of the placement or the open slot on publisher website where the advertiser's   creative with matching specifications was served. |
 | `placement_name` | string | No | The name of the placement or the open slot on publisher website where the advertiser's   creative with matching specifications was served. |
 | `member_id` | int | Yes | The ID of the member for which report is generated. |
 | `creative_id` | int | No | The ID of the creative served for the impression. |
 | `creative_name` | string | No | The name of the creative served for the impression. |
-| `mediatype` | string | No | The name of the media type associated with the creative   that served on the impression. |
+| `mediatype` | string | No | The name of the media type associated with the creative that served on the impression. |
 | `media_type_id` | int | Yes | The ID of the media type associated with the creative that served on the impression. |
 | `device_type` | string | Yes | The type of device on which the impression was served. Possible values:  <br>  - Desktops & Laptops  <br> - Tablets  <br> - Mobile Phones <br> - TV  <br> - Game Consoles <br> - Set Top Box   <br> - Media Players  <br> - Other Devices |
 | `day` | date | Yes | The day of the auction. |

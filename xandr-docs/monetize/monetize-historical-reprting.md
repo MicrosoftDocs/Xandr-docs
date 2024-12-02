@@ -151,7 +151,7 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 - **Publisher name**
 - **Impression type**
 
-:::image type="content" source="media/data-availability-filters.png" alt-text="The screenshot illustrates Intervals, which define how data is grouped in the report, such as hourly, daily, monthly, or cumulative.":::
+:::image type="content" source="media/data-availability-filters.png" alt-text="The screenshot shows filter options to include or exclude data for specific dimensions.":::
 
 ## Dimensions and Metrics
 
@@ -359,7 +359,7 @@ Users can filter and group data using various **dimensions** and **metrics**.
 | Filtered Request Reason | filtered_request_reason | both | string | False | Request / Response | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
 | Filtered Request Reason Id | filtered_request_reason_id | both | int | False | Request / Response | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
 
-# Revenue types
+### Revenue types
 
 Revenue types supported by the new reports include:
 
@@ -379,7 +379,7 @@ Revenue types supported by the new reports include:
 | **Estimated CPM**  | The estimated payment per 1000 impressions.            |
 | **CPVM**           | A flat payment per 1000 viewable impressions.          |
 
-# Impression types
+### Impression types
 
 The following impression types are reported:
 
@@ -397,7 +397,7 @@ The following impression types are reported:
 | 10    | External Click       | A click from a click tracker.                       |
 | 11    | Insertion            | Your creative served on third-party inventory where it persists across page-loads and sessions. |
 
-# Run your reports
+### Run your reports
 
 Follow these steps to generate your report:
 
@@ -538,7 +538,8 @@ Once the report is ready, download the data using the report-download service.
 ### Example request
 
 ```
-{code}$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv{code} 
+
+{code}$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv{code}
 ```
 
 > [!NOTE]

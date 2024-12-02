@@ -522,7 +522,6 @@ After submitting a report request, use the GET method to check the status.
 
 ### Response
  
-
   - execution_status: Shows the current status (pending, ready, etc.).
 
 > [!TIP]
@@ -535,8 +534,8 @@ Once the report is ready, download the data using the report-download service.
 
 ### Example request
 
-```
-`$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv`
+```bash
+curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv
 
 ```
 

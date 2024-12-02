@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Monetize Historical Reporting
+title: Monetize Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
 ms.date: 10/18/2024
 ms.author: shsrinivasan
 ---
 
-# Microsoft Monetize - Monetize historical reporting
+# Monetize historical reporting
 
 ## Overview
 
@@ -538,9 +538,10 @@ Once the report is ready, download the data using the report-download service.
 ### Example request
 
 ```
+$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv{code}
 
-{code}$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv{code}
 ```
+
 
 > [!NOTE]
 > The following points outline key considerations for file downloads and API usage:

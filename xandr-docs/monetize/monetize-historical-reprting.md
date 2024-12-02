@@ -537,19 +537,18 @@ Once the report is ready, download the data using the report-download service.
 
 ### Example request
 
-```
-$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv{code}
+`$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv`
 
 ```
-
 
 > [!NOTE]
 > The following points outline key considerations for file downloads and API usage:
+>
 > - File Format: Ensure the downloaded file’s extension (e.g., .csv, .xlsx) matches the format specified in the request.
 > - Error Handling: Use -i or -v in your curl call to display response headers and identify any HTTP errors.
 > - Limitations: Reports downloaded as .xlsx or Excel files are limited to 100,000 rows. For larger datasets, use the API limit of 10 million rows.
 
-## Related topics 
+## Related topics
 
 [Microsoft Monetize - Impression counting](impression-counting.md)
 [Mobile SDK - Impression counting methods](../mobile-sdk/impression-counting-methods.md)

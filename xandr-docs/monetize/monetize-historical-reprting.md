@@ -533,10 +533,9 @@ After submitting a report request, use the GET method to check the status.
 
 Once the report is ready, download the data using the report-download service.
 
- 
-
 ### Example request
 
+```
 `$ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv`
 
 ```
@@ -550,10 +549,10 @@ Once the report is ready, download the data using the report-download service.
 
 ## Related topics
 
-[Microsoft Monetize - Impression counting](impression-counting.md)
-[Mobile SDK - Impression counting methods](../mobile-sdk/impression-counting-methods.md)
-[Microsoft Monetize - Introduction to viewability](introduction-to-viewability.md)
-[Microsoft Monetize - Availability of reporting data](availability-of-reporting-data.md)
-[Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
-[Microsoft Monetize - Report throttling](report-throttling.md)
-[Digital Platform API - Report service](../digital-platform-api/report-service.md)
+- [Microsoft Monetize - Impression counting](impression-counting.md)
+- [Mobile SDK - Impression counting methods](../mobile-sdk/impression-counting-methods.md)
+- [Microsoft Monetize - Introduction to viewability](introduction-to-viewability.md)
+- [Microsoft Monetize - Availability of reporting data](availability-of-reporting-data.md)
+- [Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
+- [Microsoft Monetize - Report throttling](report-throttling.md)
+- [Digital Platform API - Report service](../digital-platform-api/report-service.md)

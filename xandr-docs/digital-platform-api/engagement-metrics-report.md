@@ -54,59 +54,75 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Dimensions
 
-| Column | Type | Filter? | Example | Description |
-|:---|:---|:---|:---|:---|
-| `advertiser` | string | no | `"Verizon Wireless (789)"` | The advertiser whose creative is served on impression. |
-| `publisher` | string | no | `"Publisher XYZ 347967"` | The publisher on whose inventory this impression has occurred. |
-| `placement` | string | no | `"FP 728x90 (567)"` | A placement is an open slot on a publisher website where an advertiser creative with matching specifications can serve. |
-| `insertion_order` | string | no | `"InsertionOrderABC648359"` | The insertion order under which this impression was purchased. The buy-side hierarchy is Insertion Order > Line Item > Campaign. |
-| `line_item` | string | no | `"LineItemDEF947764"` | The line item under which this impression was purchased. The buy-side hierarchy is Line Item > Campaign. |
-| `campaign` | string | no | `Campaign` | The campaign which purchased this impression. |
-| `creative` | string | no | `"Q1 2010 - 728x90 (554)"` | The creative served for the impression. |
-| `media_type` | string | no | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The media type associated with the creative that served on this impression. |
-| `impression_type` | string | yes | `"External Impression"` | See Impression Types for definitions of the different types of impressions. |
-| `device_type` | string | yes | `"Mobile Phones"` | The type of device on which the impression was served. Possible values:<br> - `Desktops & Laptops`<br> - `Tablets`<br> - `Mobile Phones`<br> - `TV`<br> - `Game Consoles`<br> - `Set Top Box`<br> - `Media Players`<br> - `Other Devices` |
-| `operating_system_family` | string | yes | `"Android"` | The name of the operating system family associated with the device the impression was served on. |
-| `buyer` | string | no |  | The name of the buyer associate with the impression. |
-| `seller` | string | no |  | The name of the seller associated with the impression. |
-| `minimum_impressions` | int | yes |  | The minimum number of impressions you'd like to filter by. For example, you may want to see only impressions and unique from members whose volume exceeds 100,000 impressions over the selected time range. |
+| Column | Type | Filter? | Description |
+|---|---|---|---|
+| `buyer_member_id` | int | Yes | The ID of the buying member of the impressions. |
+| `seller_member_id` | int | Yes | The ID of the selling member. |
+| `buyer_member_name` | string | No | The name of the buying member of the impressions. |
+| `seller_member_name` | string | No | The name of the selling member. |
+| `advertiser_id` | int | Yes | The ID of the advertiser object associated to the served impressions. |
+| `advertiser_name` | string | No | The name of the advertiser object associated to the served impressions. |
+| `line_item_id` | int | Yes | The ID of the line item under which the impressions were purchased. The buy-side hierarchy is Line Item > Campaign. |
+| `line_item_name` | string | No | The name of the line item under which the impressions were purchased. The buy-side hierarchy is   Line Item > Campaign. |
+| `campaign_id` | int | Yes | The   ID of the campaign that purchased the impressions. |
+| `campaign_name` | string | No | The   name of the campaign that purchased the impressions. |
+| `imp_type` | int | Yes | The name of the impression type which was occurred.  |
+| `imp_type_id` | int | Yes | The ID of the impression type which was occurred.  |
+| `insertion_order_id` | int | Yes | The ID of the insertion order under which the impressions were purchased. The buy-side hierarchy is Insertion Order > Line Item > Campaign. |
+| `insertion_order_name` | string | No | The name of the insertion order under which the impressiond were purchased. The buy-side hierarchy is Insertion Order > Line Item > Campaign. |
+| `publisher_id` | int | Yes | The ID of the  publisher object on which the the   impressions were occurred. |
+| `publisher_name` | string | No | The name of the  publisher object on which the the   impressions were occurred. |
+| `placement_id` | int | Yes | The ID of the placement or the open slot on publisher website where the advertiser's   creative with matching specifications was served. |
+| `placement_name` | string | No | The name of the placement or the open slot on publisher website where the advertiser's   creative with matching specifications was served. |
+| `member_id` | int | Yes | The ID of the member for which report is generated. |
+| `creative_id` | int | No | The ID of the creative served for the impression. |
+| `creative_name` | string | No | The name of the creative served for the impression. |
+| `mediatype` | string | No | The name of the media type associated with the creative   that served on the impression. |
+| `media_type_id` | int | Yes | The ID of the media type associated with the creative that served on the impression. |
+| `device_type` | string | Yes | The type of device on which the impression was served. Possible values:  <br>  - Desktops & Laptops  <br> - Tablets  <br> - Mobile Phones <br> - TV  <br> - Game Consoles <br> - Set Top Box   <br> - Media Players  <br> - Other Devices |
+| `day` | date | Yes | The day of the auction. |
+| `operating_system_family_id` | int | Yes | The ID of the operating system family associated with the device where the impression was   served on. |
+| `operating_system_family_name` | string | No | The name of the operating system family associated with the device where the impression was served on. |
+| `split_id`| int | Yes | The ID of the split that purchased the impressions in this data set. Splits are   only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be null. |
+| `split_name` | string | No | The name of the split that purchased the impressions in this data set. Splits are   only applicable to augmented line items. For any reports that contain campaigns, the `split_id` (if included) will be null. |
+|`campaign_group_type_id` | int | Yes | The ID of the campiagn group of which the campaign that purchaed the impression is a part of. |
 
 ## Metrics
 
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
-| Column | Type | Example | Formula | Description |
-|:---|:---|:---|:---|:---|
-| `imps` | int | `75000` | imps | The total number of impressions (served and resold). |
-| `measurable_imps` | int | `6500` |  | The total number of impressions that were measured for viewability. |
-| `viewed_imps` | int | `1872` | viewed_impsview_non_measurable_reason | The number of measured impressions that were viewable according to the IAB Viewability definition, which states that an impression is viewable if 50% of the pixels are in view for 1 continuous second. |
-| `viewability_measurement_rate` | double | `45`% | View Measured Imps / Imps | The percentage of impressions measured for viewability out of the total number of impressions. (View Measured Imps / Imps). |
-| `viewability_rate` | double | `58%` | Viewed Imps / View Measured Imps | The percentage of impressions that were viewable out of the total number of impressions measured for viewability. (Viewed Imps / View Measured Imps). |
-| `in_view_duration` | time | `35` | not applicable | The `average in_view duration` (in seconds) measured for which impressions met the IAB Viewability definition. |
-| `not_measured_imps` (`unsupported_cross-domain_iframe`) | int | `115` | not applicable | The number of impressions not measured because the creative cannot be measured because the ad was served in a cross-domain iframe and the browser was not supported. All modern browsers are supported but certain old versions may not be supported. |
-| `not_measured_imps` (`creative_not_found`) | int | `85` | not applicable | The number of impressions not measured because the creative could not be found by the viewability script on the page. For example, this could occur if the div is being replaced or the creative isn't located within five seconds. |
-| `not_measured_imps` (`script_not_initialized`) | int | `35` | not applicable | The number of impressions not measured because the measurement script did not initialize. This could occur for very short sessions when a user leaves a page before the other component (like the OS in mobile apps) can provide feedback on viewability. |
-| `not_measured_imps` (`no_script_callback`) | int | `200` | not applicable | The number of impressions not measured because no callback was received from the measurement script. For example, this could occur if the script hasn't executed. |
-| `not_measured_imps` (`unsupported_in-app_SDK`) | int | `175` | not applicable | The number of impressions not measured because the in-app SDK for the specific inventory is not supported. Please visit the [Viewability FAQ](../monetize/viewability-faq.md) to learn about supported in-app SDKs. |
-| `not_measured_imps` (`unsupported_native_integration`) | int | `200` |  | The number of impressions not measured because the specific type of native inventory is not supported. Please visit the [Viewability FAQ](../monetize/viewability-faq.md) to learn about supported native supply. |
-| `not_measured_imps` (`unsupported_media_type`) | int | `135` | not applicable | The number of impressions not measured because the media type is not supported. Please visit the [Viewability FAQ](../monetize/viewability-faq.md) to learn about supported media types. |
-| `not_measured_imps` (`unsupported_supply_type`) | int | `120` | not applicable | The number of impressions not measured because the supply type is not supported. Please visit the [Viewability FAQ](../monetize/viewability-faq.md) to learn about supported supply types. |
-| `not_measured_imps` (`unsupported_impression_type`) | int | `145` | not applicable | The number of impressions not measured because the imp type is not supported. Please visit the [Viewability FAQ](../monetize/viewability-faq.md) to learn about supported impression types. |
-| `not_measured_imps` (`unknown`) | int | `115` | not applicable | The number of impressions not measured because of an unknown reason. |
-| `not_viewed_imps` (`creative_not_loaded`) | int | `125` | not applicable | The number of impressions not viewed because the creative did not load before the web page was closed. For example, when a user leaves the web page within one second of the creative being loaded. |
-| `not_viewed_imps` (`not_visible_per_SDK`) | int | `80` | not applicable | The number of impressions not viewed because in-app SDK responded with not visible signal. For example, the Open Measurement Software Development Kit (OM SDK) reported the ad as non-viewable. |
-| `not_viewed_imps` (`hidden_browser`) | int | `60` | not applicable | The number of impressions not viewed because either the browser was not in focus, or the browser tab was hidden. |
-| `not_viewed_imps` (`creative_hidden_by _css/html`) | int | `125` | not applicable | The number of impressions not viewed because the creative was explicitly hidden by CSS or HTML on the webpage. For more details, check your ads' recent style changes. |
-| `not_viewed_imps` (`out_of_viewport`) | int | `95` | not applicable | The number of impressions not viewed because the creative was outside the visible area of a webpage on a display device. Ensure that the creative is visible and not at the bottom of the page. |
-| `not_viewed_imps` (`insufficient_surface_area`) | int | `100` | not applicable | The number of impressions not viewed because the surface threshold based on IAB definition was not met. |
-| `not_viewed_imps` (`insufficient_duration`) | int | `50` | not applicable | The number of impressions not viewed because time threshold based on IAB definition was not met. |
-| `not_viewed_imps` (`unknown`) | int | `75` | not applicable | The number of impressions not viewed because of an unknown reason. |
-| `in_view_duration` (`greater_than_0%_pixels`) | time | `10` | not applicable | The average duration (in seconds) for which impressions displaying greater than 0% of the pixels in the creative remained in view. |
-| `in_view_duration` (`greater_than_25%_pixels`) | time | `15` | not applicable | The average duration (in seconds) for which impressions displaying greater than 25% of the pixels in the creative remained in view. |
-| `in_view_duration` (`greater_than_50%_pixels`) | time | `35` | not applicable | The average duration (in seconds) for which impressions displaying greater than 50% of the pixels in the creative remained in view. |
-| `in_view_duration` (`greater_than_75%_pixels`) | time | `20` | not applicable | The average duration (in seconds) for which impressions displaying greater than 75% of the pixels in the creative remained in view. |
-| `in_view_duration` (`equal_to_100%_pixels`) | time | `40` | not applicable | The average duration (in seconds) for which impressions displaying 100% of the pixels in the creative remained in view. |
+| Column | Type | Formula | Description |
+|---|---|---|---|
+| `imps` | int | imps | The total number of impressions (served and resold). |
+| `viewed_imps` | int | viewed_imps | The number of measured impressions that were viewable according to the IAB   Viewability definition, which states that an impression is viewable if 50% of the pixels are in view for 1 continuous second. |
+| `view_measurable_rate` | double | view_measurable_imps/imps | The percentage of impressions measured for viewability out of the total number of impressions. |
+| `view_rate` | double | viewed_imps/view_measurable_imps | The percentage of impressions that were viewable out of the total number of impressions measured for viewability.  |
+| `viewed_imps` | int | viewed_imps | The total number of impressions that were measured for viewability. |
+| `nvt_unknown_imps` | int | nvt_unknown_imps | The number of impressions not viewed because of unknow reasons. |
+| `nmt_not_initialised_imps` | int | nmt_not_initialised_imps | The number of impressions not measured because the measurement script did not initialize. This could occur for very short sessions when a user leaves a page before the other component (like the OS in mobile apps) can provide feedback on viewability. |
+| `nmt_unknown_imps` | int | nmt_unknown_imps | The number of impressions not measured because of unknow reasons. |
+| `view_iab_durat`ion | double | view_iab_duration | The average duration (in seconds) measured for which impressions met the IAB Viewability   definition. |
+| `nvt_crea_not_loaded_imps` | int | nvt_crea_not_loaded_imps | The number of impressions not viewed because the creative could not be loaded by the viewability script on the page. For example, this could occur if the div   is being replaced or the creative isn't located within five seconds. |
+| `nvt_sdk_imps` | int | nvt_sdk_imps | The number of impressions not viewed because in-app SDK responded with a not visible signal. For example, the Open Measurement Software Development Kit (OM SDK) reported the ad as non-viewable. |
+| `nvt_hidden_crea_imps` | int | nvt_hidden_crea_imps | The number of impressions not viewed because the creative was explicitly hidden   by CSS or HTML on the webpage. For more details, check your ads' recent style   changes. |
+| `nvt_out_viewport_imps` | int | nvt_out_viewport_imps | The number of impressions not viewed because the creative was outside the visible area of a webpage on a display device. Ensure that the creative is visible and not at the bottom of the page. |
+| `nvt_surface_imps` |int | nvt_surface_imps | The number of impressions not viewed because the surface threshold based on IAB   definition was not met. |
+| `nvt_duration_imps` |int | nvt_duration_imps | The number of impressions not viewed because time threshold based on IAB   definition was not met. |
+| `nmt_imp_type_imps` |int | nmt_imp_type_imps | The number of impressions not measured because the impression  type is not supported. Please visit the   Viewability FAQ to learn about supported media types. |
+| `nmt_media_type_imps` |int | nmt_media_type_imps | The   number of impressions not measured because the media type is not supported. Please visit the Viewability FAQ to learn about supported media types. |
+| `nmt_supply_type_imps` |int | nmt_supply_type_imps | The number of impressions not measured because the supply type is not supported. Please visit the Viewability FAQ to learn about supported supply types. |
+| `nmt_cross_domain_imps` | int | nmt_cross_domain_imps | The number of impressions not measured because the creative cannot be measured because the ad was served in a cross-domain iframe and the browser was not   supported. All modern browsers are supported but certain old versions may not be supported. |
+| `nmt_no_crea_imps` | int | nmt_no_crea_imps | The number of impressions not measured because the creative could not be found by   the viewability script on the page. For example, this could occur if the div   is being replaced or the creative isn't located within five seconds. |
+| `nmt_sdk_imps` | int | nmt_sdk_imps | The number of impressions not measured because the in-app SDK for the specific   inventory is not supported. Please visit the Viewability FAQ to learn about supported in-app SDKs. |
+| `nmt_no_callback_imps` | int | nmt_no_callback_imps | The number of impressions not measured because no callback was received from the   measurement script. For example, this could occur if the script hasn't executed. |
+| `nmt_native_imps` | int | nmt_native_imps | The number of impressions not measured because the specific type of native   inventory is not supported. |
+| `nvt_hidden_browser_imps` | int | nvt_hidden_browser_imps | The number of impressions not viewed because either the browser was not in focus, or the browser tab was hidden. |
+| `view_duration_gt_0pct` | double | view_duration_gt_0pct | The average duration (in seconds) for which impressions displaying greater than 0% of the pixels in the creative remained in view. |
+| `view_duration_gt_25pct` | double | view_duration_gt_25pct | The average duration (in seconds) for which impressions displaying greater than 25% of the pixels in the creative remained in view. |
+| `view_duration_gt_25pct`| double | view_duration_gt_25pct | The average duration (in seconds) for which impressions displaying greater than 50% of the pixels in the creative remained in view. |
+| `view_duration_gt_75pct` | double | view_duration_gt_75pct | The average duration (in seconds) for which impressions displaying greater than 75% of the pixels in the creative remained in view. |
+| `view_duration_eq_100pct` | double | view_duration_eq_100pct | The average duration (in seconds) for which impressions displaying 100% of the pixels in the creative remained in view. |
 
 ## Example
 

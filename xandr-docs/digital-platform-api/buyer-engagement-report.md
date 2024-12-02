@@ -79,7 +79,7 @@ Data in this report has a daily time granularity and is retained for five weeks.
 | `average_viewable_duration` | double | Total Viewable Duration/Viewable Imps | The average number of seconds for which the creative was in view according to IAB viewability criteria. |
 | `total_viewable_duration` | int | N/A | The total number of seconds for which the creative was in view according to IAB viewability criteria. |
 | `video_completion_rate` | double | Video Completion Rate = Video Completions/Total Impressions | The ratio of video completions to total impressions, expressed as a percentage. |
-| `video_completion`s | int | N/A | The total number of video creatives played for their entire duration |
+| `video_completions` | int | N/A | The total number of video creatives played for their entire duration |
 | `view_measurable_imps` | int | N/A | The total number of impressions that were measured for viewability |
 | `view_measurable_rate`| double |  View Measurable Imps / Imps | The percentage of impressions measured for viewability out of the total number of impressions. |
 | `view_rate` | double | Viewed Imps / View Measurable Imps | The percentage of impressions that were viewable out of the total number of impressions measured for viewability.|

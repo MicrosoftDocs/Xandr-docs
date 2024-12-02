@@ -552,9 +552,8 @@ Once the report is ready, download the data using the report-download service.
 
 [Microsoft Monetize - Impression counting](impression-counting.md)
 [Mobile SDK - Impression counting methods](../mobile-sdk/impression-counting-methods.md)
-[Microsoft Monetize - Introduction to viewability](introduction-to-viewability.md) 
+[Microsoft Monetize - Introduction to viewability](introduction-to-viewability.md)
 [Microsoft Monetize - Availability of reporting data](availability-of-reporting-data.md)
-[Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping)
+[Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
 [Microsoft Monetize - Report throttling](report-throttling.md)
-[Digital Platform API - Report service](../digital-platform-api/report-service.md) 
-
+[Digital Platform API - Report service](../digital-platform-api/report-service.md)

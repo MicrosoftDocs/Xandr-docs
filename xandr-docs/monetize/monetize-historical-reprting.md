@@ -502,7 +502,7 @@ After submitting a report request, use the GET method to check the status.
 
 ```
 {code}$ curl -b cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69' 
-```
+
 { 
 
    "response":{ 
@@ -519,13 +519,13 @@ After submitting a report request, use the GET method to check the status.
       "execution_status":"ready" 
    } 
 }
-
+```
 ### Response
  
-  - execution_status: Shows the current status (pending, ready, etc.).
+  - **execution_status**: Shows the current status (pending, ready, etc.).
 
 > [!TIP]
-> Continue polling until execution_status is ready.
+> Continue polling until `execution_status` is ready.
 
 ## GET the report data from the report download service 
  
@@ -538,13 +538,11 @@ Once the report is ready, download the data using the report-download service.
 curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv
 
 ```
+## Notes and tips
 
-> [!NOTE]
-> The following points outline key considerations for file downloads and API usage:
->
-> - File Format: Ensure the downloaded file’s extension (e.g., .csv, .xlsx) matches the format specified in the request.
-> - Error Handling: Use -i or -v in your curl call to display response headers and identify any HTTP errors.
-> - Limitations: Reports downloaded as .xlsx or Excel files are limited to 100,000 rows. For larger datasets, use the API limit of 10 million rows.
+  - **File Format**: Ensure the downloaded file’s extension (e.g., .csv, .xlsx) matches the format specified in the request.
+  - **Error Handling**: Use -i or -v in your curl call to display response headers and identify any HTTP errors.
+  - **Limitations**: Reports downloaded as .xlsx or Excel files are limited to 100,000 rows. For larger datasets, use the API limit of 10 million rows.
 
 ## Related topics
 

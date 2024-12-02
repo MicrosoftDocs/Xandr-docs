@@ -17,24 +17,34 @@ Before you try to set up a deal using a buyer seat ID, please use the Seat ID De
 
 For more information, see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md).
 
-| Bidder ID | Bidder Name | Seat ID Bidding Status | Seat ID Deal Status |
-|--|--|--|--|
-| 254 | Active Agent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 351 | Adelphic (formerly known as Viant) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 91 | Adform | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 20 | Amobee (formerly known as Turn) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 475 | Amobee TV | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 463 | Deepintent | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 101 | DV360 (formerly known as DBM) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 34 | Epsilon/Conversant | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 54 | iPromote | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 96 | Media.net | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 8 | MediaMath | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 483 | MSAN | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 172 | Nextroll (Adroll) | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 44 | Quantcast | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 328 | StackAdapt | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals <br> **Note**: StackAdapt is set up to transact through a single buyer seat only.|
-| 82 | The Trade Desk | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 183 | Verizon Media Group | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 399 | Zemanta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
-| 18 | Zeta | Bidding with seats on 100% of traffic | Eligible for Seat ID Deals |
+| Bidder ID | Bidder Name | Buyer Seat Status | Deal Support Type |
+|---|---|---|---|
+| 8 | MediaMath | Using Seats | Seats |
+| 18 | Zeta DSP | Using Seats | Members & Seats |
+| 20 | Amobee (Nexxen) | Using Seats | Seats |
+| 34 | Epsilon | Using Seats | Members & Seats |
+| 44 | Quantcast | Using Seats | Seats |
+| 54 | iPromote | Using Seats | Members & Seats |
+| 82 | The Trade Desk | Using Seats | Seats |
+| 91 | AdForm | Using Seats | Seats |
+| 96 | Media.Net | Using Seats | Members & Seats |
+| 101 | Display & Video 360 | Using Seats | Seats |
+| 133 | Basis Technologies | Using Seats | Seats |
+| 172 | NextRoll | Using Seats | Members & Seats |
+| 183 | Yahoo DSP | Using Seats | Seats |
+| 188 | Amazon Advertising | Using Seats | Members & Seats |
+| 254 | Active Agent | Using Seats | Seats |
+| 328 | StackAdapt | Using Seats | Seats |
+| 351 | Adelphic (Viant) | Using Seats | Seats |
+| 399 | Zemanta | Using Seats | Seats |
+| 463 | DeepIntent, Inc. | Using Seats | Seats |
+| 480 | Mnet_bidder_2.0  | Using  Seats | Members |
+| 482 | MadHive Inc.     | Using  Seats | Members |
+| 483 | MSAN | Using Seats | Members & Seats |
+| 494 | PulsePoint, Inc. | Using Seats | Seats |
+| 529 | Baidu (Hong Kong) Limited | Using Seats | Seats |
+| 530 | Cognitiv | Using Seats | Seats |
+| 537 | OctillionMediaLLC | Using Seats | Seats |
+| 544 | MGID Inc | Using Seats | Seats |
+| 562 | Gecko Technologies DMCC | Using Seats | Members & Seats |
+| 569 | Programmatic Mechanics Pontiac DSP | Using Seats | Members & Seats |

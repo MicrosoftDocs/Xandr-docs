@@ -137,13 +137,13 @@ $ cat engagement_metrics_network
     {
         "report_type":"engagement_metrics_network",
         "columns":[
-            "advertiser",
-            "insertion_order",
-            "creative",
+            "advertiser_id",
+            "insertion_order_id",
+            "creative_id",
             "device_type",
             "imps",
-            "in_view_duration",
-            "viewability_rate"
+            "view_iab_duration  ",
+            "view_rate"
         ],
         "report_interval":"last_7_days",
         "format":"csv"
@@ -175,8 +175,8 @@ $ curl -b cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db4208
       "report":{
          "name":null,
          "created_on":"2010-05-25 19:19:53",
-         "json_request":"{\"report\":{\"report_type\":\"engagement_metrics_network\",\"columns\":[\"advertiser\",
-            \"insertion_order\",\"creative\",\"device_type\",\"imps\",\"in_view_duration\",\"viewability_rate\"],
+         "json_request":"{\"report\":{\"report_type\":\"engagement_metrics_network\",\"columns\":[\"advertiser_id\",
+            \"insertion_order_id\",\"creative_id\",\"device_type\",\"imps\",\"view_iab_duration\",\"view_rate\"],
             \"report_interval\":\"last_7_days\"}}",
          "url": "report-download?id=b97897a7864dd8f34e7457226c7af592"
       },

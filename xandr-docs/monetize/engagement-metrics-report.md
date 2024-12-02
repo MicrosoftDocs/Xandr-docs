@@ -71,8 +71,8 @@ Intervals determine how your data is grouped together into rows in the report re
 | `Placement`  | string | No | The name of the campaign that purchased the impressions. |
 | `Media Type` | string | No | The name of the impression type which had occurred.  |
 | `Impression Type` | string | Yes | The ID of the impression type which had occurred.  |
-| `Device Type` | string | Yes | The ID of the insertion order under which the impression was purchased. The buy-side hierarchy is Insertion Order > Line Item > Campaign. |
-| `Operating System Family` | string | Yes | The name of the insertion order under which the impression was purchased. The buy-side hierarchy is Insertion Order> Line Item > Campaign. |
+| `Device Type` | string | Yes | The ID of the insertion order under which the impression was purchased. The buy-side hierarchy is **Insertion Order** > **Line Item** > **Campaign**. |
+| `Operating System Family` | string | Yes | The name of the insertion order under which the impression was purchased. The buy-side hierarchy is **Insertion Order** > **Line Item** > **Campaign**. |
 
 ## Metrics
 
@@ -98,7 +98,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | `Not Measured Imps (unsupported impression type)` | int | N/A |The number of impressions not measured because the imp type is not supported. Please visit the Viewability FAQ to learn about supported impression types. |
 | `Not Measured Imps (unknown)`| int | N/A |The number of impressions not measured because of an unknown reason. |
 | `Not Viewed Imps (creative not loaded)` | int | N/A | The number of impressions not viewed because the creative did not load before the web page was closed. For example, when a user leaves the web page within one second of the creative being loaded. |
-| `Not Viewed Imps (not visible per SDK)` | int | N/A |The number of impressions not viewed because in-app SDK responded with not   visible signal. For example, the Open Measurement Software Development Kit   (OM SDK) reported the ad as non-viewable. |
+| `Not Viewed Imps (not visible per SDK)` | int | N/A |The number of impressions not viewed because in-app SDK responded with not visible signal. For example, the Open Measurement Software Development Kit (OM SDK) reported the ad as non-viewable. |
 | `Not Viewed Imps (hidden browser)`| int | N/A | The number of impressions not viewed because either the browser was not in focus, or the browser tab was hidden. |
 | `Not Viewed Imps (creative hidden by CSS/HTML)` | int | N/A | The number of impressions not viewed because the creative was explicitly hidden   by CSS or HTML on the webpage. For more details, check your ads' recent style   changes. |
 | `Not Viewed Imps (out of viewport)` | int | N/A | The number of impressions not viewed because the creative was outside the visible area of a webpage on a display device. Ensure that the creative is visible and not at the bottom of the page. |

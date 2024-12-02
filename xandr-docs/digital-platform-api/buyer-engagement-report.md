@@ -35,7 +35,7 @@ Data in this report has a daily time granularity and is retained for five weeks.
 |---|---|---|---|
 | `buyer_member_id` | int | Yes | The ID of the buying member of the impressions. |
 | `seller_member_id` | int | Yes | The ID of the selling member. |
-1. | `size` | string | Yes | The size of the   creative that was served. |
+| `size` | string | Yes | The size of the creative that was served. |
 | `seller_member_name` | string | No | The name of the selling member. |
 | `advertiser_id` | int | Yes | The ID of the advertiser object associated to the served impressions. |
 | `advertiser_name` | string | No | The name of the advertiser object associated to the served impressions. |
@@ -47,19 +47,19 @@ Data in this report has a daily time granularity and is retained for five weeks.
 | `imp_type_id` | int | Yes | TheID for the type of impression that served (associated types in parentheses): <br> - 1 ("Blank"): No creative served <br> - 2 ("PSA"): A public service announcement served because there   were no valid bids and no default creative was available <br> - 3 ("Default Error"): A default creative served due to a timeout issue <br> - 4 ("Default"): A default creative served because there were no valid bids <br> - 5 ("Kept"): Your advertiser's creative served on your publisher's site <br> - 6 ("Resold"): Your publisher's impression was sold to a   third-party buyer<br> - 7 ("RTB"): Your advertiser's creative served on third-party   inventory <br> - 8 ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative <br> - 9 ("External Impression"): An impression from an impression tracker <br> - 10 ("External Click"): A click from a click tracker <br> - 11 ("Insertion"): Your creative served on third-party inventory, where it persists across page-loads and sessions. This impression type is currently only for Facebook News Feed creatives. |
 | `insertion_order_id` | int | Yes | The ID of the  insertion order under which the impressions were purchased. The buy-side   hierarchy is **Insertion Order** > **Line Item** > **Campaign**. |
 | `insertion_order_name` | string | No | The name of the insertion order under which the impressions were purchased. The buy-side   hierarchy is  **Insertion Order** > **Line Item** > **Campaign**. |
-| `publisher_id` | int | Yes | The ID of the   publisher object on whose inventory the impressions were occurred. |
+| `publisher_id` | int | Yes | The ID of the publisher object on whose inventory the impressions were occurred. |
 | `publisher_name` | string | No | The name of the publisher object on whose inventory the impressions were occurred. |
-| `placement_id` | int | Yes | The ID of the placement or the open slot on publisher website where the advertiser's   creative with matching specifications was served. |
-| `placement_name` | string | No | The name of the placement or the open slot on publisher website where the advertiser's   creative with matching specifications was served. |
+| `placement_id` | int | Yes | The ID of the placement or the open slot on publisher website where the advertiser's creative with matching specifications was served. |
+| `placement_name` | string | No | The name of the placement or the open slot on publisher website where the advertiser's creative with matching specifications was served. |
 | `member_id` | int | Yes | The ID of the member for which report is generated. |
 | `creative_id` | int | No | The ID of the creative served for the impression. For impressions older than 14 months, creatives will be aggregated   into one row with 0 as the creative ID. <br> **Note**: For external click or impression trackers, creative_id will be "External Clicks" or "External Imps". |
 | `creative_name` | string | No | The name of the   creative served for the impression. |
-| `mediatype` | string | No | The name of the media type associated with the creative   that served on the impression. |
-| `mediatype_id` | int | Yes | The ID of the media  type associated with the creative that served on the impression. |
+| `mediatype` | string | No | The name of the media type associated with the creative that served on the impression. |
+| `mediatype_id` | int | Yes | The ID of the media type associated with the creative that served on the impression. |
 | `device_type` | string | Yes | The   type of device on which the impression was served. Possible values: <br> - Desktops & Laptops <br> - Tablets  <br>  - Mobile Phones <br> - TV  <br> - Game Consoles <br> - Set Top Box  <br> - Media Players <br> - Other Devices |
 | `day` | date | Yes | The day of the auction. |
 | `operating_system_family_id` | int | Yes | The ID of the operating system family associated with the device where the impression was served on. |
-| `operating_system_family_name` | string | No | The name of the   operating system family associated with the device where the impression was served on. |
+| `operating_system_family_name` | string | No | The name of the operating system family associated with the device where the impression was served on. |
 | `split_id` | int | Yes | The ID of the split that purchased the impressions in this data set. Splits are   only applicable to augmented line items. For any reports that contain campaigns, thethe split_id (if included) will be null. |
 | `split_name` | string | No | The name of the split that purchased the impressions in this data set. Splits are   only applicable to augmented line items. For any reports that contain campaigns, the split_id (if included) will be null. |
 | `domain_id` |   |   | The ID of the domain on which the impression was occurred. |

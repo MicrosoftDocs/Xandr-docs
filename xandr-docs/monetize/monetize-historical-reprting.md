@@ -218,10 +218,10 @@ Users can filter and group data using various **dimensions** and **metrics**.
 | `Advertiser ID` (Selectable via "Show IDs as separate column" option)| `advertiser_id`| both| int| True | Buyside | The ID of the advertiser that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
 | `Advertiser Name` (Selectable via "Show IDs as separate column" option)| `advertiser_name`|both| string | False| Buyside| The name of the advertiser that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
 | `Bidder`| `bidder`| both| int | False| Buyside| The Bidder object (in most cases this is a DSP).|
-| Bidder ID (Selectable via "Show IDs as separate column" option)| bidder_id| both| int| True| Buyside| The ID of the Xandr Bidder object (in most cases this is a DSP).|
-| `Bidder Name` (Selectable via "Show IDs as separate column" option)| bidder_name| both| int| False| Buyside | The name of the Xandr Bidder object (in most cases this is a DSP).|
+| `Bidder ID` (Selectable via "Show IDs as separate column" option)| `bidder_id`| both| int| True| Buyside| The ID of the Xandr Bidder object (in most cases this is a DSP).|
+| `Bidder Name` (Selectable via "Show IDs as separate column" option)| `bidder_name`| both| int| False| Buyside | The name of the Xandr Bidder object (in most cases this is a DSP).|
 | `Billing Period`| `billing_period_id` | both | int | True| Buyside| The ID of the Billing Period |
-| `Billing Period.Booked Imps Budget Daily`| billing_period.booked_imps_budget_daily| both| int| False | Buyside | The daily impression budget of the insertion order's billing period.|
+| `Billing Period. Booked Imps Budget Daily`| `billing_period.booked_imps_budget_daily`| both| int| False | Buyside | The daily impression budget of the insertion order's billing period.|
 | `Billing Period.Booked Imps Budget Lifetime`| `billing_period.booked_imps_budget_lifetime` | both | int| False | Buyside | The lifetime impression budget of the insertion order's billing period.|
 | `Billing Period.Start Date`| `billing_period.start_date`| both| datetime| False| Buyside| The earliest date of the insertion order's billing period. Note: Alpha-Beta Notice: This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.|
 | `Billing Period.End Date`| `billing_period.end_date` | both| datetime| False| Buyside| The last date of the insertion order's billing period. Note: Alpha-Beta Notice: This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |

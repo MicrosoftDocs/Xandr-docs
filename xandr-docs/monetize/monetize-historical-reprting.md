@@ -17,7 +17,7 @@ The Historical report already covers most of the data that is available in the l
 
 Currently, the new reporting UI only provides access to the Historical report for Network users. Access to all existing report types will be added during the Alpha, along with support for Publisher and Advertiser users.
 
-### New report types and User interface for Monetize
+### New report types and user interface for Monetize
 
 The new **Historical report** in the new Microsoft Monetize reporting UI offers comprehensive data across a wide range of dimensions and metrics. This report will replace several legacy Network and Advertiser/Publisher reports, enhancing and simplifying reporting capabilities.
 
@@ -526,7 +526,7 @@ After submitting a report request, use the GET method to check the status.
 > [!TIP]
 > Continue polling until `execution_status` is ready.
 
-## GET the report data from the report download service 
+## GET the report data from the report download service
  
 
 Once the report is ready, download the data using the report-download service.

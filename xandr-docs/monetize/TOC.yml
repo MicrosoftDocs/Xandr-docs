@@ -1581,6 +1581,8 @@
         href: identifiers--id-combinations-report.md
       - name: Key Value Analytics Report
         href: key-value-analytics-report.md
+      - name: Monetize Historical Reporting 
+        href: monetize-historical-reprting.md
       - name: Multi-Key Value Analytics Report
         href: multi-key-value-analytics-report.md
       - name: Multi-Buyer Seller Deal Metrics

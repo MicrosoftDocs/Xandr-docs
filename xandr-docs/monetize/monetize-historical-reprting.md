@@ -5,7 +5,7 @@ ms.date: 10/18/2024
 ms.author: shsrinivasan
 ---
 
-# Monetize historical reporting
+# Monetize Historical Reporting
 
 ## Overview
 
@@ -258,9 +258,9 @@ Users can filter and group data using various **dimensions** and **metrics**.
 | `Li Subtype` | `li_subtype`| both| string | True| Buyside| The line item subtype (e.g., Augmented, Deal, Guaranteed). |
 | `Li Subtype ID`(Selectable via "Show IDs as separate column" option) | `li_subtype_id`| both| int| False| Buyside| The line item subtype ID.|
 | `Li Subtype Name` (Selectable via "Show IDs as separate column" option)| `li_subtype_name`| both| string| False | Buyside| The line item subtype name. |
-| `Salesrep For Line Item`| `salesrep_for_line_item` | both| string| True| Reporting Labels 	| A custom reporting label field containing the sales representative. You may only select one reporting label per report.|
-| `Trafficker For Line Item` | `trafficker_for_line_item`| both| string | True| Reporting Labels 	| A custom reporting label field containing the trafficker. You may only select one reporting label per report. 	|
-| `Type For Line Item` | `type_for_line_item`| both 	| string | True| Reporting Labels 	| A custom reporting label field used to list the line item type (e.g., Retargeting LI). This is not the same as the Type attribute described above. You may only select one reporting label per report.|
+| `Salesrep For Line Item`| `salesrep_for_line_item` | both| string| True| Reporting Labels| A custom reporting label field containing the sales representative. You may only select one reporting label per report.|
+| `Trafficker For Line Item` | `trafficker_for_line_item`| both| string | True| Reporting Labels| A custom reporting label field containing the trafficker. You may only select one reporting label per report. |
+| `Type For Line Item` | `type_for_line_item`| both| string | True| Reporting Labels| A custom reporting label field used to list the line item type (e.g., Retargeting LI). This is not the same as the Type attribute described above. You may only select one reporting label per report.|
 | `Insertion Order Type Label`| `insertion_order_type` | both| string | True| Reporting Labels 	| A custom reporting label field used to list the insertion order type (e.g., Branding IO). This is not the same as the Type attribute described above. You may only select one reporting label per report.|
 | `Insertion Order.Sales Rep Label` | `insertion_order.sales_rep_label`| both| string | True| Reporting Labels| A customer reporting label field used to list the sales representative associated with the insertion order. You may only select one reporting label per report.|
 | `Insertion Order.Trafficker Label` | `insertion_order.trafficker_label`| both| string| True| Reporting Labels| A customer reporting label field used to list the trafficker associated with the insertion order. You may only select one reporting label per report.|
@@ -279,11 +279,11 @@ Users can filter and group data using various **dimensions** and **metrics**.
 | `Publisher Name` (Selectable via "Show IDs as separate column" option)| `publisher_name`| both| string | False | Sellside| The name of the Xandr Publisher for the impression. |
 | `Brand`| `brand`| monetize_creative_brand_analytics| string | False| Creative| The Brand as determined by the Xandr creative audit or self assigned for managed traffic |
 | `Brand ID` (Selectable via "Show IDs as separate column" option)| `brand_id`|monetize_creative_brand_analytics| int| True | Creative | The ID for the Brand as determined by the Xandr creative audit or self assigned for managed traffic |
-| `Brand Name` (Selectable via "Show IDs as separate column" option)| `brand_name` | monetize_creative_brand_analytics 	| string 	| False 	| Creative 	| The name for the Brand as determined by the Xandr creative audit or self assigned for managed traffic 	|
-| `Brand Category ID` | `brand_category_id`| monetize_creative_brand_analytics| int|True| Creative 	| The parent category ID for the creative's assigned brand 	|
-| `Brand Category Name` | `brand_category_name`      | monetize_creative_brand_analytics | string | False   | Creative | The parent category name for the creative's assigned brand                                         |
-| `Creative` | `creative` | monetize_creative_brand_analytics | string | False   | Creative | Creative that served. It will only be populated for managed impressions.                           |
-| `Creative ID` (Selectable via "Show IDs as separate column" option) | `creative_id` | monetize_creative_brand_analytics | int    | True    | Creative | The Xandr ID for the creative that served.                                                         |
+| `Brand Name` (Selectable via "Show IDs as separate column" option)| `brand_name` | monetize_creative_brand_analytics| string | False | Creative | The name for the Brand as determined by the Xandr creative audit or self assigned for managed traffic|
+| `Brand Category ID` | `brand_category_id`| monetize_creative_brand_analytics| int|True| Creative| The parent category ID for the creative's assigned brand|
+| `Brand Category Name` | `brand_category_name` | monetize_creative_brand_analytics | string | False   | Creative | The parent category name for the creative's assigned brand                                         |
+| `Creative` | `creative` | monetize_creative_brand_analytics | string | False   | Creative | Creative that served. It will only be populated for managed impressions.|
+| `Creative ID` (Selectable via "Show IDs as separate column" option) | `creative_id`| monetize_creative_brand_analytics | int| True| Creative | The Xandr ID for the creative that served.                                                         |
 | `Creative Name` (Selectable via "Show IDs as separate column" option) | `creative_name` | monetize_creative_brand_analytics | string | False | Creative | The Xandr name for the creative that served. The name will only be populated for managed impressions. |
 | `Creative Code`  | `creative_code` | monetize_creative_brand_analytics | string | False| Creative | The code of the creative. |
 | `Creative Media Type` | `creative_type` | both| string | False   | Creative | The media type of the creative that transacted                                                     |
@@ -298,10 +298,10 @@ Users can filter and group data using various **dimensions** and **metrics**.
 | `Audit Type ID` (Selectable via "Show IDs as separate column" option) | `audit_type_id` | monetize_supply_analytics | int | True | Inventory | The ID of the type of audit performed on the domain where the impression occurred.|
 | `Audit Type Name` (Selectable via "Show IDs as separate column" option) | `audit_type_name` | monetize_supply_analytics | string | False | Inventory | The name of the type of audit performed on the domain where the impression occurred. |
 | `Browser`| `browser` | monetize_supply_analytics| string  | False   | Inventory   | The Name and ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service. |
-| `Browser ID` (Selectable via "Show IDs as separate column" option) | `browser_id`           | monetize_supply_analytics  | int     | True    | Inventory   | The ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service.         |
+| `Browser ID` (Selectable via "Show IDs as separate column" option) | `browser_id`| monetize_supply_analytics  | int     | True    | Inventory   | The ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service.         |
 |`Content Category`| `content_category` | monetize_supply_analytics  | string  | False   | Inventory   | The ID and name of the universal content category associated with the audited domain.                                           |
 | `Content Category ID` (Selectable via "Show IDs as separate column" option) | `content_category_id` | monetize_supply_analytics  | int | True    | Inventory   | The ID of the universal content category associated with the audited domain.                                                   |
-| `Content Category Name` (Selectable via "Show IDs as separate column" option) | `content_category_name` | monetize_supply_analytics  | string  | False   | Inventory   | The name of the universal content category associated with the audited domain.  |
+| `Content Category Name` (Selectable via "Show IDs as separate column" option) | `content_category_name` | monetize_supply_analytics  | string  | False   | Inventory   | The name of the universal content category associated with the audited domain.|
 | `Fold Position` | `fold_position`| monetize_supply_analytics  | string  | False   | Inventory   | The fold position, i.e. where on the page the placement is located. For allowed values, see fold_position_id.                |
 | `Fold Position Id`| `fold_position_id`  | monetize_supply_analytics  | int     | True    | Inventory   | The ID of the fold position, i.e. where on the page the placement is located. Possible values for impressions: 0 = "unknown", 1 = "above", 2 = "below". |
 | `Supply Type` | `supply_type_id` | both | int     | True    | Inventory   | The ID of the type of inventory.                                                                                             |
@@ -334,10 +334,10 @@ Users can filter and group data using various **dimensions** and **metrics**.
 | `Operating System Family` | `operating_system_family` | monetize_supply_analytics  | string  | False   | Device| The name of the operating system family (e.g., Android, Microsoft Windows) of the device followed by the ID (Microsoft Advertising format). |
 | `Operating System Family ID` (Selectable via "Show IDs as separate column" option) | `operating_system_family_id` | monetize_supply_analytics| int | True | Device | The ID of the operating system family associated with the device the impression was served on. |
 | `Operating System Family Name` (Selectable via "Show IDs as separate column" option) | `operating_system_family_name` | monetize_supply_analytics  | string  | False   | Device | The name of the operating system family associated with the device the impression was served on. |
-| `Curator Member`| `curator_member` | both   | string  | False   | Curation     | The ID of the curator that was present in the transaction |
+| `Curator Member`| `curator_member` | both| string| False| Curation | The ID of the curator that was present in the transaction |
 | `Curator Member ID` (Selectable via "Show IDs as separate column" option) | `curator_member_id` | both  | int | True | Curation  | The ID of the curator that was present in the transaction |
 | `Curator Member Name` (Selectable via "Show IDs as separate column" option) | `curator_member_name` | both  | string  | False| Curation | The name of the curator that was present in the transaction |
-| `Is Curated` | `is_curated`  | both  | boolean | True    | Curation     | True if the transaction occurred via a curator |
+| `Is Curated` | `is_curated`  | both  | boolean | True | Curation| True if the transaction occurred via a curator |
 | `Demand Channel`  | `demand_channel` | both  | string  | False   | Transaction  | The type of demand that bought the impression. Possible values: Managed (imp_type=5), PSP (bidder_id=443), Standard Deal, Priority Deal, PG Deal, Curation (curator_member_id > 0) and Open Exchange (imp_type=6). |
 | `Demand Channel ID` (Selectable via "Show IDs as separate column" option) | `demand_channel_id`  | both | int | True| Transaction  | The type of demand that bought the impression. Possible values: Managed (imp_type=5), PSP (bidder_id=443), Standard Deal, Priority Deal, PG Deal, Curation (curator_member_id > 0) and Open Exchange (imp_type=6). |
 | `Demand Channel Name` (Selectable via "Show IDs as separate column" option) | `demand_channel_name`| both  | string  | False   | Transaction  | The type of demand that bought the impression. Possible values: Managed (imp_type=5), PSP (bidder_id=443), Standard Deal, Priority Deal, PG Deal, Curation (curator_member_id > 0) and Open Exchange (imp_type=6). |
@@ -537,11 +537,12 @@ Once the report is ready, download the data using the report-download service.
 curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv
 
 ```
+
 ## Notes and tips
 
-  - **File Format**: Ensure the downloaded file’s extension (e.g., .csv, .xlsx) matches the format specified in the request.
-  - **Error Handling**: Use -i or -v in your curl call to display response headers and identify any HTTP errors.
-  - **Limitations**: Reports downloaded as .xlsx or Excel files are limited to 100,000 rows. For larger datasets, use the API limit of 10 million rows.
+- **File Format**: Ensure the downloaded file’s extension (e.g., .csv, .xlsx) matches the format specified in the request.
+- **Error Handling**: Use -i or -v in your curl call to display response headers and identify any HTTP errors.
+- **Limitations**: Reports downloaded as .xlsx or Excel files are limited to 100,000 rows. For larger datasets, use the API limit of 10 million rows.
 
 ## Related topics
 

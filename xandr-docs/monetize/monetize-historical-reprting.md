@@ -445,7 +445,7 @@ Users can modify report columns:
    > [!WARNING]
    > Large datasets may take longer to process. Group data by only the necessary dimensions to optimize performance.
 
-## API Report
+## API report
 
 ### Create a JSON formatted report request
 
@@ -518,8 +518,9 @@ After submitting a report request, use the GET method to check the status.
    } 
 }
 ```
+
 ### Response
- 
+
   - **execution_status**: Shows the current status (pending, ready, etc.).
 
 > [!TIP]

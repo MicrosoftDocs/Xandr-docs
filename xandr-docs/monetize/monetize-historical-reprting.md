@@ -11,9 +11,9 @@ ms.author: shsrinivasan
 
 ### Project status
 
-The new reporting UI and the Historical Report are currently in Alpha, enabled for select clients. Please contact your account manager if you require further information.
+The new Microsoft Monetize reporting UI and the Historical report are currently in Alpha, enabled for select clients. Please contact your account manager if you require further information.
 
-The Historical report already covers most of the data that is available in the legacy reporting. During the Alpha phase for this report, we will be adding additional dimensions and metrics to close out key outstanding feature gaps compared to the legacy reports. Data is available from **10th October 2024** in the Historical report generally, and earlier in 2024 for clients involved in the Alpha.
+The Historical report already includes most of the data that is available in the legacy reporting. During the Alpha phase, we will be adding additional dimensions and metrics to close outstanding key feature gaps compared to the legacy reports. Data in the Historical Report is available from 10th October 2024 generally, and from earlier in 2024 for clients involved in the Alpha.
 
 Currently, the new reporting UI only provides access to the Historical report for Network users. Access to all existing report types will be added during the Alpha, along with support for Publisher and Advertiser users.
 
@@ -23,19 +23,16 @@ The new **Historical report** in the new Microsoft Monetize reporting UI offers 
 
 The Historical report is built from two datasets that are accessible from one UI, with dimension and metric incompatibilities shown to the user as they make selections. In the API, the datasets are available independently as two report types.
 
-This update’s expanded range enables a more granular understanding of data across multiple aspects of delivery and inventory, with new reportable combinations of dimensions that were not possible before, such as placement and device.
+The updated, expanded range enables a more granular understanding of data across multiple aspects of delivery and inventory, with new reportable combinations of dimensions that were not possible before, such as placement and device.
 
-The new UI is a significant upgrade, reducing the number of report types a user needs to interact with. It provides features to improve usability, such as:
-
-- Categorization of Dimensions and Metrics.
-- Comprehensive search capability.
+The new UI is a significant upgrade, reducing the number of report types a user needs to interact with, providing features to improve usability such as categorization of Dimensions and Metrics and comprehensive search capability.
 
 ## New features
 
 ### Report enhancements
 
 - **Bringing together the new Delivery and Inventory analytics reports into one **Historical report builder** experience**:
-      - Consolidate reporting for better performance insights.
+      - Consolidated reporting for better performance insights.
       - Broader coverage of metrics and dimensions.
 
 | Legacy UI Name      | New UI Report Name | API Name                          |
@@ -50,7 +47,7 @@ The new UI is a significant upgrade, reducing the number of report types a user 
 
 ### Improved navigation
 
-Access reports with fewer clicks, enhancing usability.
+Access reports with fewer clicks for enhanced usability.  
 
 ## Deprecation of legacy reports
 

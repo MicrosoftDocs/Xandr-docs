@@ -1535,6 +1535,8 @@
       href: report-throttling.md
     - name: Impression Counting
       href: impression-counting.md
+  - name: Monetize Historical Reporting 
+    href: monetize-historical-reprting.md    
   - name: Analytics Reporting
     items:
     - name: Network Reporting

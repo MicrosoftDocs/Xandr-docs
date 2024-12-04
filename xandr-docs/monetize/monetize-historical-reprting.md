@@ -419,7 +419,7 @@ Follow these steps to generate your report:
 1. Click **Run Report**.
 
    > [!WARNING]
-   > Dangerous certain consequences of an actionThe more dimensions you group by, the larger the dataset returned. This may impact processing time.
+   > The more dimensions you group by, the larger the dataset returned. This may impact processing time.
 
 ## Report results
 

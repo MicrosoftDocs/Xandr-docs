@@ -32,11 +32,12 @@ The new UI is a significant upgrade, reducing the number of report types a user 
 ### Report enhancements
 
 - **Bringing together the new Delivery and Inventory analytics reports into one **Historical report builder** experience**:
+
       - Consolidated reporting for better performance insights.
       - Broader coverage of metrics and dimensions.
 
-| Legacy UI Name      | New UI Report Name | API Name                          |
-|---------------------|-------------------|-----------------------------------|
+| Legacy UI Name      | New UI Report Name | API Name                           |
+|---------------------|-------------------|-----------------------------------  |
 | Delivery Analytics  | Historical Report | `monetize_creative_brand_analytics` |
 | Inventory Analytics | Historical Report | `monetize_supply_analytics`         |
 

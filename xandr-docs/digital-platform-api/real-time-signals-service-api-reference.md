@@ -3,6 +3,7 @@ title: Real-Time Signals Service API Reference
 description: Explore the Real-Time Signals Service (RTSS) for uploading ID-to-segment data or other key-value data, facilitating the addition of segments to bid requests.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Real-time Signals Service API reference
@@ -14,13 +15,17 @@ The Real-Time Signals Service (RTSS) is used to upload ID-to-segment data or oth
 
 ## API usage
 
-### Base URL
+### Regional endpoint URLs
 
-The base URL for all RTSS methods is listed below:
+The `regional` endpoint URLs for all RTSS methods is listed below:
 
-```
-https://api.appnexus.com/apd-api
-```
+| Region | API Endpoint | Detailed reference |
+|:---|:---|:---|
+| Global | `https://api.appnexus.com/apd-api/` | The default endpoint resolves based on the uploader's origin and directs to either AMER, EMEA or APAC. |
+| Americas and EMEA | `https://api.appnexus.com/apd-api-americas/` <br> or `https://api.appnexus.com/apd-api-emea/` | Data published to AMER is automatically replicated to EMEA. Uploads to these datacenters are shared, eliminating the need to upload the same file twice for both regions. |
+| APAC | `https://api.appnexus.com/apd-api-apac/` | APAC datacenters operate independently and are not connected to AMER or EMEA.|
+
+
 
 ### Authentication
 
@@ -28,7 +33,7 @@ Authentication is performed through the [Digital Platform API authentication ser
 
 ### HTTP headers
 
-The following HTTP headers must be appended to your `apd-api` calls:
+The following HTTP headers must be appended to your `regional` endpoint calls:
 
 | Method | Required HTTP Headers |
 |:---|:---|
@@ -477,7 +482,7 @@ Events are segments which could become active instantly across all data centers,
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL Path | All Methods | `123` |
 | `segval_list` | Array of Objects | A list of segments with associated values | JSON Body | `POST` | `[ { "seg_id": 123, "seg_ttl": "20m", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | List of segment IDs | Query string | `GET`, `DELETE` | `https://api.appnexus.com/apd-api/members/958/events?segment_list=123,345` |
+| `segment_list` | Array of Segment IDs | List of segment IDs | Query string | `GET`, `DELETE` | `https://api.appnexus.com/apd-api/members/958/events?segment_list=123,345` <br> or <br> `https://api.appnexus.com/apd-api-emea/members/958/events?segment_list=123,345`|
 
 ### Response (Events)
 
@@ -638,6 +643,12 @@ keytype,key,action,segment
 curl -X POST --header 'Content-Type: multipart/form-data' \
 -F file=@"member-1-test.csv.gz"  'https://api.appnexus.com/apd-api/members/1/uploads'
 ```
+or
+
+```
+curl -X POST --header 'Content-Type: multipart/form-data' \ -F file=@"member-1-test.csv.gz"  'https://api.appnexus.com/apd-api-emea/members/1/uploads'
+```
+
 
 ##### JSON response
 

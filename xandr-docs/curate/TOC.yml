@@ -309,7 +309,7 @@
     href: reporting-guide.md
   - name: Understand Reporting Concepts
     items:
-    - name: Overview
+    - name: Overview of Reporting Concepts
       href: general-reporting-concepts.md
     - name: Dimensions, Metrics, Filter, and Group
       href: dimensions-metrics-filtering-and-grouping.md

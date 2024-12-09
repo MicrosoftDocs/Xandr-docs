@@ -22,5 +22,5 @@ To set up the pixel, you'll create the pixel code, deploy it on your website, se
 ## Related topics
 
 - [Universal Pixel Audiences and Conversions](./universal-pixel-audiences-and-conversions.md)
-- [Universal Pixel Reporting](./universal-pixel-reporting.md)
+- [Report on Universal Pixels](./universal-pixel-reporting.md)
 - [Universal Pixel Log-Level Data](../log-level-data/universal-pixel-feed.md)

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - View Insertion Order Details
-description: This page explains steps to get to the Insertion Order Details screen which contains three main sections, and editing the Insertion Order settings.   
+description: This page explains steps to locate the Insertion Order Details screen which contains three main sections, and editing the Insertion Order settings.   
 ms.date: 11/15/2023
 
 ---

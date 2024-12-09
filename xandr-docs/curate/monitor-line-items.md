@@ -122,5 +122,5 @@ You can duplicate, cancel reservation, delete, or run a report for selected line
 
 ## Related topics
 
-- [Troubleshooting Line Items](curate-troubleshooting-line-items.md)
+- [Troubleshoot Line Items](curate-troubleshooting-line-items.md)
 - [View Line Item Details](view-line-item-details-smw.md)

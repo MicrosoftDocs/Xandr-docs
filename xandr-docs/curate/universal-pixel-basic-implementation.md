@@ -33,4 +33,4 @@ Configure your pixel code using the UI.
 ## Related topics
 
 - [Universal Pixel Code Structure](./universal-pixel-code-structure.md)
-- [Universal Pixel Reporting](./universal-pixel-reporting.md)
+- [Report on Universal Pixels](./universal-pixel-reporting.md)

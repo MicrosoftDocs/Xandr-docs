@@ -33,11 +33,11 @@ The **Object Limits Report** section lists the types of objects that are limited
 
 ## FAQs
 
-***What indicates that you are nearing your object limit?***
+### How will I know that I am approaching my limit for an object?
 
 We send you an email notification when you reach 85%, 95%, and 100% of your limit for an object. You can change the email addresses that receive notifications via your Member Settings.
 
-***What if I reach my limit for an object?***
+### What if I reach my limit for an object?
 
 When you approach or reach your limit for any object other than creatives, you should delete any inactive, unused, or unnecessary instances. These deleted objects will continue to appear in reporting but cannot be undeleted.
 
@@ -46,10 +46,10 @@ When you approach or reach your limit for creatives, you should remove non-expir
 > [!NOTE]
 > Removing expired creatives will not impact your creative count.
 
-***What if I am already over my limit?***
+### What if I am already over my limit?
 
 If you need to create additional objects but have already met or exceeded your limit as listed above, please delete unused objects.
 
-***Can my limit be raised?***
+### Can my limit be raised?
 
 In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Please contact your Microsoft Advertising representative to discuss this option.

@@ -66,4 +66,4 @@ If you do not have an organization level integration with Microsoft Entra (forme
 
 ## Related topic
 
-[Microsoft Identity Platform Login Troubleshooting](microsoft-identity-platform-login-troubleshooting.md)
+[Troubleshoot Microsoft Identity Platform Login](microsoft-identity-platform-login-troubleshooting.md)

@@ -122,6 +122,8 @@ If you opt into receiving **billing period-specific invoicing**, you will receiv
 > - To display the advertiser's address in the **Bill To** region of your Advertiser-, Insertion Order-, Billing Period-specific invoices, you must update the fields in the **Billing Information** section of the advertiser. If you leave these fields blank, your Advertiser-, Insertion Order-, or Billing Period-specific invoices will only show your member billing address.
 > - To include a billing code on your insertion order- or billing code-specific invoices, you must enter it in the **Basic Details** section of the insertion order.
 
+If you are a customer who has signed a new agreement with Microsoft Advertising, you can still avail of **Insertion Order**, **Advertiser** and **Member-specific invoices** but you will **not** be able to choose **billing period-specific invoices** once you have cutover.
+
 ## Invoice consolidation ("Rollup")
 
 If you have more than one member account, you can choose to receive a consolidated invoice for the buying activity across of your member accounts. For more details on this feature, contact your Account Manager.

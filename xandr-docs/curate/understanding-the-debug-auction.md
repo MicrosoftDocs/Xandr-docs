@@ -110,7 +110,7 @@ When debugging a particular ad campaign, it may help that your browser's cookie 
 
 Microsoft Advertising's bidder gives more detailed debug text, beginning with "Debug text from bidder 2" (live). This output includes information such as the bidder version, the region information, and user information. Excerpts from a live debug auction are below:
 
-:::image type="content" source="media/debug-auction-geo-b.png" alt-text="Screenshot of the debug auction log showing more detailed debug text.":::
+:::image type="content" source="media/debug-auction-geo-detailed.png" alt-text="Screenshot of the debug auction log showing more detailed debug text.":::
 
 This debug information continues, including information such as the segments that the user is in and other relevant objects.
 

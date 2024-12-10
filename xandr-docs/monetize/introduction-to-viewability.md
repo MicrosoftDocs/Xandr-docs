@@ -58,7 +58,7 @@ Viewability measurement must work in all environments and provide consistent res
 
 :::image type="content" source="media/iframe-measurement.png" alt-text="Diagram that shows the challenges of viewability measurement for creatives within IFrames.":::
 
-:::image type="content" source="media/viewability-tech-b.png" alt-text="Diagram that shows the success rate of viewability measurement across devices.":::
+:::image type="content" source="media/viewability-tech-final.png" alt-text="Diagram that shows the success rate of viewability measurement across devices.":::
 
 In some instances, viewability cannot be measured with success. In these cases, no assumption can be made on the viewability of the impression.
 

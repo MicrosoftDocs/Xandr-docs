@@ -40,7 +40,7 @@ When a piece of inventory included in an "open auction" deal comes up for auctio
 
 #### Non-deal bid wins - example 2
 
-:::image type="content" source="./media/open-auction-non-deal-wins-fp-b.png" alt-text="Screenshot that shows the second example for non-deal bid wins.":::
+:::image type="content" source="./media/open-auction-non-deal-wins-fp-final.png" alt-text="Screenshot that shows the second example for non-deal bid wins.":::
 
 > [!IMPORTANT]
 > **Why does this example have two floors? And why does the non-deal bid win?**

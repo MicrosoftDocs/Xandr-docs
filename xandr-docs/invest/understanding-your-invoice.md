@@ -6,15 +6,11 @@ ms.date: 10/28/2023
 
 # Microsoft Invest - Understand your invoice
 
-Annotated descriptions of the contents of your Microsoft Advertising invoices.
-
-## Understand your invoice
-
 All members who buy inventory through one of the Microsoft Advertising Digital Platform UI products will receive an invoice every month indicating the amount they have spent. There are several types of invoices; this page explains each one.
 
 Network users with the Financial Observer or DSP Billing role in our Digital Platform UI products can access invoices and seller statements directly within the app, including the pricing terms used when calculating fees and charges on invoices.
 
-## Invoice
+## Xandr Invoice
 
 Here's an example of what a typical invoice will look like (see descriptions of annotations below):
 
@@ -74,6 +70,27 @@ Your invoice lists the amount you have spent on Microsoft Advertising's platform
 
 1. **Payment Instructions** - Information to help you submit your payment via check or wire. To ensure your wire payment is applied correctly, submit it to the account listed on your statement. For more information, see [Payment to Microsoft Advertising](payment-to-xandr.md).
 
+## Microsoft Advertising invoice
+
+If you are an Invest customer and you have signed a contract with Microsoft Advertising, your invoice will come from a Microsoft entity. Below is a summary of the changes to your invoice:
+
+:::image type="content" source="media/tax-invoice.png" alt-text="The screenshot shows a summary of changes to Microsoft Advertising invoices, highlighting updates related to tax invoices for Invest customers who have signed a contract with Microsoft Advertising.":::
+
+| Number | Name | Description |
+|:---:|---|---|
+| 1 | Invoice number | A unique identifier for the invoice. |
+| 2 | Customer | Your unique customer ID (member or network ID). Refer to your customer number in all correspondence. |
+| 3 | Date | The date the invoice was generated. <br><br>**Note**<br>*Microsoft Advertising creates invoices within the first five business days of the month following the activity. For example, an invoice for activity in September 2018 would be prepared within the first five business days of October 2018*. |
+| 4 | Billing period | The month during which inventory was purchased on Microsoft Advertising's platform. |
+| 5 | Bill-to | The billing account that identifies the name and address responsible for the payment. |
+| 6 | Sold-to | The name and address of the contracting party with Microsoft Advertising. Often the same entity as "bill-to," unless the contracting party designates a different entity. |
+| 7 | Payment terms | The number of days after the invoice date when the payment is due, as specified in the payment terms section of your Microsoft Advertising service exhibit. |
+| 8 | Billing start and end date | The start and end dates of the activity period covered in this invoice (including time zone). The time zone reflects what you use to tie out to reporting. |
+| 9 | Description of charges | An itemized list of the fees and charges for which you are billed. Charges may vary depending on your activity for the month. <br><br>For details on reconciling these charges with your billing reports, see *Reconciling Your Invoice with Reporting*. Below are examples of some of these charges with descriptions: <br><br> a) **Console Service fee**: A monthly charge for access to the platform. This charge is specified in your service agreement. <br> b) **Cost of Media**: The amount owed to Microsoft Advertising for inventory purchased during the billing period. <br><br>&nbsp;&nbsp;**Note**: Each fee to the buyer is displayed as its own discrete line item, alongside its respective SKU: <br> &nbsp;&nbsp; - Cost of Media <br> &nbsp;&nbsp; - Cost of Media: Buyer Auction Service deduction <br> &nbsp;&nbsp; - Cost of Media: Buyer External Deduction <br> &nbsp;&nbsp; - Cost of Media: Cost of Exchange Trade Media – Buyer <br> &nbsp;&nbsp; - Cost of Media: DSP Service Deduction <br> &nbsp;&nbsp; - Cost of Media: Exchange Fee (Deduction) <br> &nbsp;&nbsp; - Cost of Media: FX Margin Buyer Deduction <br><br> c) **Views/Completes**: The amount owed to Microsoft Advertising for display impressions and video completes purchased through the Viewable Marketplace (e.g., *Views - Standard Display*, *Completes - Standard Video*). For details on confirming invoice values related to Viewable Marketplace activity, refer to *[Reconciling Your Invoice with Reporting]*. <br> d) **Buyer auction service fee**: Typically, a fee for impressions purchased from third parties, such as Google or Yahoo!. This fee is charged in addition to the media cost. The fee percentage is specified in the *Summary of Standard Microsoft Advertising Service Charges/Fees* section of your Microsoft Advertising Service Exhibit. For more information about buyer auction service charges, see *Buyer Auction Service Charge*. <br> e) **Seller Auction Service fee (SASC)**: This fee applies only to selling activity and only if the seller has the SASC set as a fee instead of a deduction in their contract terms with Microsoft Advertising. The fee is charged directly by Microsoft Advertising for impressions sold. <br> f) **Ad Serving fee (only charged to sellers)**: This fee is charged for kept, blank, default, and/or PSA impressions. It appears as a separate line item on your invoice and can be reconciled with the Selling Billing Report in the user interface (UI). By default, these charges do not appear in the report. To view them, select **Filtered requests** under **Metrics**. <br> g) **Priority/Creative audit fee**: This fee is charged for each creative audit performed by Microsoft Advertising, including both initial audits and re-audits. The creative audit fee, specified in the **Summary of Standard Microsoft Advertising Service Charges/Fees** section of your Microsoft Advertising Service Exhibit, reflects the standard audit rate with standard turnaround time. The priority audit fee, specified in the **Ad Unit Auditing Fee** section of your Microsoft Advertising Service Exhibit, is a higher fee incurred for expedited turnaround time when requested. <br> h) **Creative Overage fee**: This fee is charged for serving creatives that exceed the maximum size specified in the **Summary of Standard Microsoft Advertising Service Charges/Fees** section of your Microsoft Advertising Service Exhibit. For each oversized creative, the difference between the maximum size (in your contract) and the size of the creative is multiplied by: <br>&nbsp;&nbsp; 1. the number of impressions where the creative served <br>&nbsp;&nbsp; 2. The bandwidth charge specified in your contract <br> **Example**: <br> If the maximum creative size in your contract is 10 KB, your bandwidth fee is $1.00 per KB, and a 20 KB creative served 4 times, the creative overage fee would be calculated as: <br> &nbsp;&nbsp; `((10 KB x 4) x $1.00) = $40` <br> i) **Data fees**: This fee is charged for information purchased from a third party via the Microsoft Advertising Data Marketplace. <br> Unless you have a contractual direct clearing arrangement with the third party from whom you purchased the data, Microsoft Advertising is responsible for the payment to the third party. Your payments for this data should be sent to Microsoft Advertising. <br>  j) **Video creative hosting**: This fee is charged for video inventory purchased through Microsoft Advertising's platform.|
+| 10 | Tax | The charge for any applicable local taxes. |
+| 11 | Total | The total amount due to Microsoft Advertising (e.g., all charges plus taxes). |
+| 12 | Payment instructions | Information to help you submit your payment. To ensure your wire payment is applied correctly, submit it to the account listed on your statement.|
+
 ## Advertiser-specific, Insertion order-specific, and billing period-specific invoices
 
 You have the option to receive advertiser-, insertion order-, or billing period-specific invoices (e.g., to separate specific costs and fees for an advertiser's billing department). To opt into receiving these more specific invoices, contact your Microsoft Advertising representative.
@@ -104,6 +121,8 @@ If you opt into receiving **billing period-specific invoicing**, you will receiv
 >
 > - To display the advertiser's address in the **Bill To** region of your Advertiser-, Insertion Order-, Billing Period-specific invoices, you must update the fields in the **Billing Information** section of the advertiser. If you leave these fields blank, your Advertiser-, Insertion Order-, or Billing Period-specific invoices will only show your member billing address.
 > - To include a billing code on your insertion order- or billing code-specific invoices, you must enter it in the **Basic Details** section of the insertion order.
+
+If you are a customer who has signed a new agreement with Microsoft Advertising, you can still avail of **Insertion Order**, **Advertiser** and **Member-specific invoices** but you will **not** be able to choose **billing period-specific invoices** once you have cutover.
 
 ## Invoice consolidation ("Rollup")
 

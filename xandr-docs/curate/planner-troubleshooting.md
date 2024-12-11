@@ -1,10 +1,10 @@
 ---
-title: Microsoft Curate - Planner Troubleshooting
+title: Microsoft Curate - Troubleshoot Planner
 description: Troubleshoot targeting issues - No reach means no match. Check for conflicting parameters and refer to breakdown visualization for insights. Adjust if too restrictive.
 ms.date : 10/28/2023
 ---
 
-# Microsoft Curate - Planner troubleshooting
+# Microsoft Curate - Troubleshoot planner
 
 ## Estimated Reach = 0
 

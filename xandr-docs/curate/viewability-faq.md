@@ -78,7 +78,7 @@ No. The script, which is approximately 20KB, is served from a globally distribut
 
 The viewability script is tested continuously across all major browsers and operating systems to ensure, among other things, that it does not impact the page content. The script has been in use since 2007, and extensive real-world usage confirms the ad viewer’s experience is not impacted.
 
-## How does Microsoft Advertising viewability script determine whether a human is viewing ad?
+## what does the Microsoft Advertising videwabilty script do to determine is a human is viewing ad?
 
 The Microsoft Advertising Platform has robust policy and filtering for non-human and other invalid traffic.
 

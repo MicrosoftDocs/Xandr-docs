@@ -39,5 +39,5 @@ Bid requests (if any) are listed in the **Bid Request** section. You can do the 
 ## Related topics
 
 - [Monitor Line Items](monitor-line-items.md)
-- [Troubleshooting Line Items](curate-troubleshooting-line-items.md)
+- [Troubleshoot Line Items](curate-troubleshooting-line-items.md)
 - [View Line Item Details](view-line-item-details-smw.md)

@@ -62,6 +62,6 @@ The same creative macros would also function for landing page URL parameters to 
 
 ## Related topics
 
-- [General Reporting Concepts](general-reporting-concepts.md)
+- [Overview of Reporting Concepts](general-reporting-concepts.md)
 - [Report Service](../digital-platform-api/report-service.md)
 - [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md)

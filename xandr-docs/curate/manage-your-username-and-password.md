@@ -42,14 +42,14 @@ If you cannot sign in to Microsoft Curate because the password was reset, or if 
 
 To change your password either after it expires, or if you have [forgotten your password](#request-a-forgotten-password):
 
-1. In the **Reset Password** dialog, type a new password. Passwords must contain:
+1. In the **Reset Password** dialog, enter a new password. Passwords must contain:
     - 10 or more characters
     - 65 or fewer characters
     - At least one capital letter (A-Z)
     - At least one lowercase letter (a-z)
     - At least one digit (0-9)
     - At least one special character (such as \#, $, ? %, &)
-1. Retype the password to confirm it and select **Submit**.
+1. Re-enter the password to confirm it and select **Submit**.
 1. You will be redirected to the login page of Microsoft Advertising Curate, where you can sign in with your username and new password. You will also receive a confirmation email of the password reset.
 
 ### Request a forgotten password

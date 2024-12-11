@@ -37,4 +37,4 @@ Report request \# 6 is placed in the queue, since there are already 5 report req
 
 ## Related topic
 
-[General Reporting Concepts](general-reporting-concepts.md)
+[Overview of Reporting Concepts](general-reporting-concepts.md)

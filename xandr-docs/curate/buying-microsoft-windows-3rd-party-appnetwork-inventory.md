@@ -124,7 +124,7 @@ Microsoft Deals](buying-microsoft-deals.md) for more.
 
 ## Extra information
 
-### User identification (Microsoft Ad ID)
+### Identify users with Microsoft Ad ID
 
 All Microsoft Windows App inventory includes a mobile-specific device identifier called the Windows Ad ID. This identifier is similar to other mobile app identifiers like IDFA or Google Play in that it is persistent across apps on the same device, compliant to the user's OS-level privacy settings.
 

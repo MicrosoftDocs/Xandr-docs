@@ -60,7 +60,7 @@ Viewability measurement must work in all environments and provide consistent res
 
 :::image type="content" source="media/iframe-measurement.png" alt-text="Screenshot of IFrame.":::
 
-:::image type="content" source="media/viewability-tech-b.png" alt-text="Screenshot of rounded estimation based on Premium+RTB.":::
+:::image type="content" source="media/viewability-tech-final.png" alt-text="Screenshot of rounded estimation based on Premium+RTB.":::
 
 In some instances, viewability cannot be measured with success. In these cases, no assumption can be made on the viewability of the impression.
 

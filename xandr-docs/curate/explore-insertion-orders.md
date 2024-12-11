@@ -19,7 +19,7 @@ Things you can do on this page include:
 
 ## Access Insertion Orders screen
 
-To get to the **Insertion Orders** screen:
+To locate the **Insertion Orders** screen:
 
 - On the **Advertisers** screen, find the advertiser for which you want to view insertion orders and select the button in the **Ins Orders** column.
 - In **Advertiser's Details** view, select **Insertion Orders**.

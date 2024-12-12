@@ -6,7 +6,7 @@
   items:
   - name: Login
     items:
-    - name: Logging in to the Portal
+    - name: Logging in to the Customer Support Portal
       href: xcs-logging-in-to-the-customer-support-portal.md
     - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md

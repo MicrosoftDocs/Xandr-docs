@@ -1,11 +1,11 @@
 ---
-title: Customer Support Portal - Identity Platform Login Troubleshooting
+title: Customer Support Portal - Microsoft Identity Platform Login Troubleshooting
 description: In this article, explore the different scenarios in which users might have questions while setting up the Microsoft Identity Platform login account.
 ms.date: 11/12/2024
 ms.author: shsrinivasan
 ---
 
-# Customer Support Portal - Identity Platform login troubleshooting
+# Customer Support Portal - Microsoft Identity Platform login troubleshooting
 
 This document outlines some scenarios where questions may arise in the minds of users while using Microsoft Identity Platform.
 
@@ -15,7 +15,7 @@ You can register for a free Microsoft Personal Account with any existing email y
 
 If you company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
 
-- [Azure Active Directory](https://azure.microsoft.com/products/active-directory)
+- [Microsoft Entra (formerly Azure Active Directory)](https://azure.microsoft.com/products/active-directory)
 - [Single Sign On](/azure/active-directory/manage-apps/what-is-single-sign-on)
 
 ## After logging into a Microsoft Advertising product, I receive an error saying my email does not match any accounts and I don't have access

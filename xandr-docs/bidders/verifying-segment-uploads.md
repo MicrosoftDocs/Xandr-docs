@@ -13,7 +13,7 @@ There are a few ways to confirm that your uploads are successful.
   | Parameters | Description |
   |---|---|
   | `num_valid` | The number of valid user-segment pairs in the file. |
-  | `num_valid_user` | The total number of valid user IDs in the file. |
+  | `num_valid_user` | The total number of valid user IDs in the file. Each user can be resolved in up to three regions. Each resolved region counts as one. Therefore the total number of valid users can exceed the number of distinct user-segment pairs. |
   | `num_invalid_user` | The total number of invalid user IDs in the file. |
   | `segment_log_lines` | The number of unique valid users added to each segment. The format is `[SEGMENT ID]-[NUMBER OF USERS]`.<br>**Note**: This field is limited to 999 lines in your file. If you have more than 999 segments in the job, some of them will not be shown. |
 

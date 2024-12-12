@@ -38,6 +38,8 @@ Cross-device capability enhances targeting and attribution using information fro
 
 - Tapad's graph, which combines curated data with machine learning.
 
+> [!NOTE]
+> Cross-device audience targeting for CTV devices is now available in the US and EU.
 > [!WARNING]
 > Cross-device functionality is available to sellers when running line items that purchase inventory from the ad exchange using RTB. It's not available when sellers are running managed campaigns on their own inventory.
 

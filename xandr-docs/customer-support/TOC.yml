@@ -5,7 +5,13 @@
 - name: Functionalities
   items:
   - name: Login
-    href: xcs-logging-in-to-the-customer-support-portal.md
+    items:
+    - name: Logging in to the Customer Support Portal
+      href: xcs-logging-in-to-the-customer-support-portal.md
+    - name: Microsoft Identity Platform Login
+      href: microsoft-identity-platform-login.md
+    - name: Microsoft Identity Platform Login Troubleshooting
+      href: microsoft-identity-platform-login-troubleshooting.md
   - name: Report Outages
     href: xcs-reporting-outages.md
   - name: Search the Knowledge Base

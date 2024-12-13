@@ -130,7 +130,7 @@ If you have more than one member account, you can choose to receive a consolidat
 
 ## Understand the netting statement
 
-If you both buy and sell inventory with Microsoft Advertising, you can opt to have Microsoft Advertising “net” this activity. This means you will receive a single statement instead of separate monthly invoices and payments. The netting statement lists the amount you have spent as a buyer and the revenue you have earned as a seller. Microsoft Advertising then deducts the amount you owe as a buyer (based on your buy-side payment terms) from the revenue you have earned as a seller (based on your sell-side payment terms) to determine the net amount you owe or will be paid. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
+If you both buy and sell inventory with Microsoft Advertising, you can choose to have Microsoft Advertising “net” this activity. This means you will receive a single statement instead of separate monthly invoices and payments. The netting statement lists the amount you have spent as a buyer and the revenue you have earned as a seller. Microsoft Advertising then deducts the amount you owe as a buyer (based on your buy-side payment terms) from the revenue you have earned as a seller (based on your sell-side payment terms), determining the net amount you owe or will be paid. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 
 If you have migrated to a new Microsoft Advertising contract, please note that Invest and Monetize now have separate contracts and invoices. As a result, netting will be discontinued, and you will need to review both invoices.
 
@@ -140,7 +140,7 @@ If you are a customer who has signed a new contract with Microsoft Advertising, 
 
 :::image type="content" source="media/sample-creditnote.png" alt-text="Screenshot of Credit Memo Annotated.":::
 
-| Number | Name    | Description  |
+| Number | Name | Description  |
 |--------|----------------------|-----------------------------------------------------------------------------|
 | 1 | Credit note description | The first line shows the total amount to be credited and the original invoice number. The adjustment details field shows the breakdown of the line items for which you are being credited. |
 | 2 | Gross credit amount | The amount for which you are receiving a credit.|

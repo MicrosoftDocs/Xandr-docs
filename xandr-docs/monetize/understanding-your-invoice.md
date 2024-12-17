@@ -1,6 +1,6 @@
 ---
 title: Microsoft Monetize - Understand Your Invoice
-description: This page describes the types of invoices generated, how they look, and what are the different fields present inside the invoice.
+description: This page describes the types of invoices generated, their appearance, and the fields included in them.
 ms.date: 10/28/2023
 ---
 

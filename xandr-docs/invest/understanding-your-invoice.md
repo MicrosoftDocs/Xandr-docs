@@ -142,7 +142,7 @@ If you are a customer who has signed a new contract with Microsoft Advertising, 
 
 | Number | Name | Description  |
 |--------|----------------------|-----------------------------------------------------------------------------|
-| 1 | Credit note description | The first line shows the total amount to be credited and the original invoice number. The adjustment details field shows the breakdown of the line items for which you are being credited. |
+| 1 | Credit note details | The first line shows the total amount to be credited and the original invoice number. The adjustment details field provides the breakdown of the line items for which you are being credited. |
 | 2 | Gross credit amount | The amount for which you are receiving a credit.|
 
 ## Related topics

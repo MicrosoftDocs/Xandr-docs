@@ -147,7 +147,7 @@ If Microsoft Advertising issues you a credit or debit, you will receive a credit
 
 If you are a customer who has signed a new contract with Microsoft Advertising, your billing documents will be issued by a Microsoft entity. Below is an example of a credit note for a customer who has transitioned to Microsoft Advertising:
 
-:::image type="content" source="media/tax-invoice.png" alt-text="The screenshot shows a sample Credit Memo.":::
+:::image type="content" source="media/sample-creditnote.png" alt-text="The screenshot shows a sample Credit Note.":::
 
 | Number | Name | Description  |
 |--------|----------------------|-----------------------------------------------------------------------------|

@@ -141,13 +141,13 @@ If Microsoft Advertising issues you a credit or debit, you will receive a credit
 1. **Description** - The list of items for which you are receiving a credit. The original invoice number for which the credit memo is being generated will also be shown. If that invoice is still open (i.e., not yet fully paid), the credit memo will be applied to that invoice. If the invoice is fully paid, Microsoft Advertising can apply the amount of the credit to another invoice (after receiving your approval to do so).
 1. **Balance/Credit** - The amount that has been credited to your account.
 
-:::image type="content" source="media/credit-memo-annotated.png" alt-text="Screenshot of Credit Memo Annotated.":::
+:::image type="content" source="media/credit-memo-annotated.png" alt-text="The Screenshot shows the Credit Memo Annotated.":::
 
 ## Microsoft Credit Note
 
 If you are a customer who has signed a new contract with Microsoft Advertising, your billing documents will be issued by a Microsoft entity. Below is an example of a credit note for a customer who has transitioned to Microsoft Advertising:
 
-:::image type="content" source="media/sample-creditnote.png" alt-text="Screenshot of Credit Memo Annotated.":::
+:::image type="content" source="media/sample-creditnote.png" alt-text="The screenshot displays the sample Credit Memo.":::
 
 | Number | Name | Description  |
 |--------|----------------------|-----------------------------------------------------------------------------|

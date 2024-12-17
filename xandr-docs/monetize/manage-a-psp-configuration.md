@@ -19,20 +19,20 @@ To edit a PSP configuration, follow these steps:
    This does not change the status of configurations; it only filters which ones are visible in the table.
 
 1. Use the search box in the upper-right corner to filter configurations by:
-    a. Configuration name
-    b. Configuration ID
-    c. Targeting ID
+   1. Configuration name
+   1. Configuration ID
+   1. Targeting ID
 
 1. Click the name or row of the configuration to edit.  
    The side preview panel opens, showing targeting and demand partners applied to the configuration.
 
 1. To view and edit all options available during configuration setup, click the **Edit** icon in the upper-right corner of the side panel.
 
-    1. Alternatively, click the **Edit** (pencil) icon next to **Configuration Details** to quickly edit the name or **Enabled/Disabled** status.
+   1. Alternatively, click the **Edit** (pencil) icon next to **Configuration Details** to quickly edit the name or **Enabled/Disabled** status.
 
-    1. To quickly edit a demand partner’s parameters:
-       a. Expand the partner in the side panel.
-       b. Click the **Edit** (pencil) icon.
+   1. To quickly edit a demand partner’s parameters:
+      1. Expand the partner in the side panel.
+      1. Click the **Edit** (pencil) icon.
 
 1. To add a new demand partner:
     1. Click **Add Demand Partner**.
@@ -53,14 +53,14 @@ Disabling a configuration stops bid requests for the applied inventory and deman
    This does not change the status of configurations; it only filters which ones are visible in the table.
 
 1. Use the search box in the upper-right corner to filter configurations by:
-    a. Configuration name  
-    b. Configuration ID  
-    c. Targeting ID  
+   1. Configuration name  
+   1. Configuration ID  
+   1. Targeting ID  
 
 1. Select the corresponding checkboxes next to the configurations, and then choose the desired option from the **Actions** drop-down menu:
-    a. **Enable**  
-    b. **Disable**  
-    c. **Delete**  
+   1. **Enable**  
+   1. **Disable**  
+   1. **Delete**  
 
 Alternatively, to delete an individual configuration from the configuration side preview panel, click Delete in the upper right corner.
 

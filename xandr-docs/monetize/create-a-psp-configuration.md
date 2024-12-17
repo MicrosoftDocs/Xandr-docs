@@ -111,7 +111,7 @@ To restrict which banner bid requests demand partners receive by the size of the
 
 #### Operating systems targeting (Legacy)
 
-To restrict which bid requests demand partners receive by the operating system of the user, click the selection field to view a list of options. For more information, see the [Operating System-Families API Service](https://learn.microsoft.com/xandr).
+To restrict which bid requests demand partners receive by the operating system of the user, click the selection field to view a list of options. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md).
 
 ## Demand partners
 
@@ -128,7 +128,7 @@ For a demand partner to receive bid requests for the inventory defined in the se
 > If the desired demand partner is not listed:
 >
 > - Ensure a media type the partner supports is selected.
-> - Ensure the demand partner is added on the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](https://learn.microsoft.com/xandr).
+> - Ensure the demand partner is added on the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md).
 >
 > A full list of available PSP demand partners and their supported media types is available [here](prebid-server-premium-demand-partner-integrations.md).
 > [!NOTE]

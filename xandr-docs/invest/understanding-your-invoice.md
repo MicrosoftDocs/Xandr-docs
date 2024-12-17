@@ -134,7 +134,7 @@ If you both buy and sell inventory with Microsoft Advertising, you can choose to
 
 If you have migrated to a new Microsoft Advertising contract, please note that Invest and Monetize now have separate contracts and invoices. As a result, netting will be discontinued, and you will need to review both invoices.
 
-## Credit Note
+## Microsoft Credit Note
 
 If you are a customer who has signed a new contract with Microsoft Advertising, your billing documents will be issued by a Microsoft entity. Below is an example of a credit note for a customer who has transitioned to Microsoft Advertising:
 
@@ -142,7 +142,7 @@ If you are a customer who has signed a new contract with Microsoft Advertising, 
 
 | Number | Name | Description  |
 |--------|----------------------|-----------------------------------------------------------------------------|
-| 1 | Credit note details | The first line shows the total amount to be credited and the original invoice number. The adjustment details field provides the breakdown of the line items for which you are being credited. |
+| 1 | Credit note description | The first line shows the total amount to be credited and the original invoice number. The adjustment details field provides the breakdown of the line items for which you are being credited. |
 | 2 | Gross credit amount | The amount for which you are receiving a credit.|
 
 ## Related topics

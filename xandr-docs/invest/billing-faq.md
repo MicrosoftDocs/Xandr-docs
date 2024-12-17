@@ -32,6 +32,8 @@ To notify us that you have overpaid and specify whether you prefer a refund or a
 
 ### When are credits processed? When will I receive a separate credit memo as opposed to an itemized credit on my invoice?
 
+With the exception of the first week of every month (during the financial close), credit memos are processed and issued weekly, once the relevant Microsoft Advertising business group has approved the credit amount. If your credit is for activity in the current month and has been approved through by the relevant Microsoft Advertising business group (when your invoice is prepared), the credit will appear on your invoice. If your credit is for a prior month (for which the invoice has already been issued), you will receive a separate credit memo (also referred to as a credit note).
+
 If you have signed a new contract with Microsoft Advertising and have completed the cutover, the cadence at which you receive credit memos will change slightly. Microsoft issues all billing documents during the billing run at the beginning of each month. This includes credit memos and invoices that have been credited and rebilled. You will receive a separate credit memo at this time. Please refer to [Understanding your credit note](understanding-your-invoice.md#xandr-credit-note) for more information.
 
 ### How can I check my credit status?

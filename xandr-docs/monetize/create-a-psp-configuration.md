@@ -89,7 +89,7 @@ When a top-level category is excluded, its sub-categories are not available for 
 
 **Key/Value**: Target bid requests containing specific key values. Key values must be defined in **Monetize** > **Network** > [Key Values](https://monetize.xandr.com/tools-key-value) first.
 
-**Banner size targeting**: Restrict which banner bid requests demand partners receive by the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** > **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
+**Banner size targeting**: Restrict which banner bid requests demand partners receive based on the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** > **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
 
 #### Environment targeting
 
@@ -111,7 +111,7 @@ To restrict which banner bid requests demand partners receive by the size of the
 
 #### Operating systems targeting (Legacy)
 
-To restrict which bid requests demand partners receive by the operating system of the user, click the selection field to view a list of options. For more information, see the [Operating System-Families API Service](https://learn.microsoft.com/en-us/xandr/).
+To restrict which bid requests demand partners receive by the operating system of the user, click the selection field to view a list of options. For more information, see the [Operating System-Families API Service](https://learn.microsoft.com/xandr).
 
 ## Demand partners
 
@@ -128,7 +128,7 @@ For a demand partner to receive bid requests for the inventory defined in the se
 > If the desired demand partner is not listed:
 >
 > - Ensure a media type the partner supports is selected.
-> - Ensure the demand partner is added on the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](https://learn.microsoft.com/en-us/xandr/).
+> - Ensure the demand partner is added on the **Global Settings** page under **Demand Partners**, as described in [Add or Edit a Demand Partner](https://learn.microsoft.com/xandr).
 >
 > A full list of available PSP demand partners and their supported media types is available [here](prebid-server-premium-demand-partner-integrations.md).
 > [!NOTE]

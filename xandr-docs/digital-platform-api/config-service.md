@@ -24,7 +24,7 @@ Demand partner parameters can be found:
 - On the Prebid site with full context and details
 - In the PSP demand partner schema service
 
-The documentation below describes how to create and manage configurations via API. Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration).
+The documentation below describes how to create and manage configurations via API. Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
 
 ## REST API
 

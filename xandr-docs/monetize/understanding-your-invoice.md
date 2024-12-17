@@ -132,7 +132,18 @@ If you have more than one member account, you can choose to receive a consolidat
 
 If you both buy and sell inventory with Microsoft Advertising, you can opt into having Microsoft Advertising “net” this activity rather than receiving both monthly invoices and payments from Microsoft Advertising. The netting statement document lists the amount you have spent as a buyer and the amount of revenue you have earned as a seller. Microsoft Advertising then deducts the amount that you owe as a buyer based on your buy-side payment terms from the revenue you have earned based on your sell-side payment terms in order to determine the net amount that you will owe or be paid by Microsoft Advertising. For more details, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 
-## Credit Note
+If you have migrated to a new Microsoft Advertising contract, please note that Invest and Monetize now have separate contracts and invoices. As a result, netting will be discontinued, and you will need to review both invoices.
+
+## Xandr Credit Note
+
+If Microsoft Advertising issues you a credit or debit, you will receive a credit memo listing the credit/debit amount. If a credited amount can be applied to an outstanding balance, it will be applied. If it is not clear where to apply this credit, the amount will be listed on your account as a credit. Note that invoices will not be reissued when a credit amount is agreed upon. Instead, you will receive a separate credit memo once the credit is processed.
+
+1. **Description** - The list of items for which you are receiving a credit. The original invoice number for which the credit memo is being generated will also be shown. If that invoice is still open (i.e., not yet fully paid), the credit memo will be applied to that invoice. If the invoice is fully paid, Microsoft Advertising can apply the amount of the credit to another invoice (after receiving your approval to do so).
+1. **Balance/Credit** - The amount that has been credited to your account.
+
+:::image type="content" source="media/credit-memo-annotated.png" alt-text="Screenshot of Credit Memo Annotated.":::
+
+## Microsoft Credit Note
 
 If Microsoft Advertising issues you a credit or debit, you will receive a credit memo listing the credit/debit amount. If a credited amount can be applied to an outstanding balance, it will be applied. If it is not clear where to apply this credit, the amount will be listed on your account as a credit. Note that invoices will not be reissued when a credit amount is agreed upon. Instead, you will receive a separate credit memo once the credit is processed.
 

@@ -89,7 +89,7 @@ When a top-level category is excluded, its sub-categories are not available for 
 
 **Key/Value**: Target bid requests containing specific key values. Key values must be defined in **Monetize** > **Network** > [Key Values](https://monetize.xandr.com/tools-key-value) first.
 
-**Banner size targeting**: Restrict which banner bid requests demand partners receive based on the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** > **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
+**Banner size targeting**: Restrict which banner bid requests demand partners receive based on the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** -> **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
 
 #### Environment targeting
 
@@ -107,7 +107,7 @@ After setting the **Targeting Method** as **Placement**, **Placement Group**, or
 
 ### Banner Ad size targeting (Legacy)
 
-To restrict which banner bid requests demand partners receive by the size of the ad slot, click the selection field to view a list of options. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** > **General** > **Custom Sizes** > **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
+To restrict which banner bid requests demand partners receive by the size of the ad slot, click the selection field to view a list of options. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** -> **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
 
 #### Operating systems targeting (Legacy)
 
@@ -144,7 +144,7 @@ Once live, review [Prebid Server Premium Analytics](prebid-server-premium-analyt
 
 ## Run of site configurations
 
-To ensure any inventory not captured by other configurations is sent to demand partners, consider creating a run-of-site or fallback configuration where the **Targeting Method** is **Targeting Profile** with no other, or limited geographic targeting, applied.**Before enabling such a configuration**, ensure:
+To ensure any inventory not captured by other configurations is sent to demand partners, consider creating a run-of-site or fallback configuration where the **Targeting Method** is **Targeting Profile** with no other, or limited geographic targeting, applied. **Before enabling such a configuration**, ensure:
 
 - **Demand partner parameters** are populated; otherwise, no bid requests will be sent.
 - **Configuration priority level** is set to 1 or another low value.

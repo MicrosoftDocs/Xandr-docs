@@ -7,7 +7,24 @@ ms.custom: digital-platform-api
 
 # Configuration service
 
-The Configuration Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are objects that map Monetize inventory to demand partners, allowing the partners to identify the inventory in bid requests. Each configuration includes an array of demand partner parameters attached which specify the values partners will receive. Note that the partners must first be added at the global level via the [demand partner service](demand-partner-service.md). Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
+Once inventory has been [Integrated with Prebid Server Premium (PSP)](../monetize/integrate-with-psp.md), [Cross-Partner Settings](../digital-platform-api/cross-partner-settings-service.md) have been reviewed, and [Demand partners](../digital-platform-api/demand-partner-service.md) have been enabled, inventory must be mapped to demand partners via PSP configurations. These mappings allow PSP to send bid requests with demand partners’ parameters so the partners can identify the inventory and better represent it to their buyers, increasing yield and honoring publisher settings such as floors and ad quality.
+
+- Each configuration targets a portion of publisher inventory in Monetize, either by a set of flexible targeting (geography, inventory type, key value, etc.) or by explicitly specifying Monetize objects (placement, placement group, publisher)
+- Each configuration includes one or more demand partners the publisher would like to bid on the inventory
+- Each demand partner specifies the required and optional parameters they want to receive in their [open-source Prebid Server Go adapter](https://docs.prebid.org/dev-docs/pbs-bidders.html), which are surfaced in PSP. These allow the partner to match the bid request to objects in their platform
+- Publishers fill out demand partner parameters with values mapped to objects in each partner’s platform, typically another supply-side platform (SSP)
+
+## Demand partner requirements
+
+All demand partners the publisher would like to bid on the inventory defined in a PSP configuration must be added to the same configuration. Before creating the first set of configurations, review requirements with each of the planned PSP demand partners to determine a mapping strategy. Some partners pull information dynamically from the bid request (ad size, geographic location, language, etc.) while others may require separate parameter mappings, and in turn, PSP configurations. If a demand partner requires very granular mapping to objects in their platform, that will determine how other partners are mapped and how many configurations are required. The better a demand partner can identify the inventory (either through the bid request or static Prebid parameters), the more information they can provide to their buyers, increasing publisher revenue.
+
+Demand partner parameters can be found:
+
+- In the PSP configuration UI, as detailed below
+- On the Prebid site with full context and details
+- In the PSP demand partner schema service
+
+The documentation below describes how to create and manage configurations via API. Configurations can also be managed through the UI.
 
 ## REST API
 
@@ -142,7 +159,6 @@ The number of responses can be limited by passing the `num_elements` argument. W
 |:---|:---|:---|
 | `num_elements` | int | How many elements to return. For example, start at object # 4 and return 3 objects, or # 4, 5, 6. |
 | `start_element` | int | The number at which to start counting. |
-
 
 #### Example call to limit to fifteen results and to start the results at the tenth element
 
@@ -557,9 +573,13 @@ On success, the configuration indicated will be returned as a JSON object with t
 
 ## Related topics
 
+- PSP Campaign Objects Service ([temporary Sharepoint link](https://microsoftapc.sharepoint.com/:u:/r/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU). Learn link TBD)
 - [Demand Partner Schema Service](demand-partner-schema-service.md)
 - [Demand Partner Service](demand-partner-service.md)
 - [Prebid Demand Partner Params Service](prebid-demand-partner-params-service.md)
 - [Ad Sizes Service](ad-sizes-service.md)
 - [Media Type Service](media-type-service.md)
-- [Add, Edit, or Delete a PSP Configuration](../monetize/add-edit-or-delete-a-psp-configuration.md)
+- [Cross-Partner Settings Service](../digital-platform-api/cross-partner-settings-service.md)
+- [Create a New PSP Configuration](../create-a-psp-configuration.md)
+- [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
+- [Common Issues and Best Practices](../psp-common-issues-and-best-practices.md)

@@ -215,7 +215,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 ## Related topics
 
-- [Configuration Service](config-service.mdvice)
+- [Configuration Service](config-service.md)
 - [Cross-Partner Settings Service](cross-partner-settings-service.md)
 - [Demand Partner Service](demand-partner-service.md)
 - [Demand Partner Schema Service](demand-partner-schema-service.md)

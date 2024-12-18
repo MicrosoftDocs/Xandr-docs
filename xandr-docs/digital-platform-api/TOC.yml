@@ -599,6 +599,8 @@
           href: bidder-info-service.md
         - name: Config Service
           href: config-service.md
+        - name: Config Object Service
+          href: campaign-object-service.md
         - name: Cross-Partner Settings Service
           href: cross-partner-settings-service.md
         - name: Demand Partner Schema Service

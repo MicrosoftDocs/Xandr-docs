@@ -1,11 +1,11 @@
 ---
 title: Campaign Object Service
-description: In this article, learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
+description: Learn about the Campaign Object Service API for creating PSP configurations with targeting, demand mapping, and automation in Monetize.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Prebid Server Premium (PSP) Configuration
+# Campaign Objects Service
 
 The **Prebid Server Premium (PSP) UI** allows configuration creation, including targeting (geographic location, device, key value, etc.) and demand partner mapping, in a single workflow. See [Create a New PSP Configuration](../monetize/create-a-psp-configuration.md) for context and UI guidance.
 
@@ -21,9 +21,7 @@ These are PSP-specific shell objects that do not deliver but are necessary for t
 
 It is recommended to manage these configurations and their targeting in the [PSP UI](../monetize/create-a-psp-configuration.md), but for large publishers or those with automation, **API interaction** is required or at least preferred.
 
----
-
-## High-Level Workflow
+## High-level workflow
 
 1. Make a **POST** request to `https://api.appnexus.com/prebid/psp-campaign-objects`  
     a. with the desired targeting.
@@ -149,7 +147,7 @@ POST: Parameters
       }
    ```
 
-1. The [configuration service](config-service.com) will respond confirming the details of the objects (configuration, and optionally demand partner configuration parameters) created
+1. The [configuration service](config-service.md) will respond confirming the details of the objects (configuration, and optionally demand partner configuration parameters) created
 
 ## PUT
 

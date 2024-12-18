@@ -42,7 +42,7 @@ To edit a PSP configuration, follow these steps:
 
 1. After editing the desired settings, click **Save**.
 
-## Enable, disable, or delete configurations
+### Enable, disable, or delete configurations
 
 Disabling a configuration stops bid requests for the applied inventory and demand partners. To resume bid requests, toggle the configuration back to **Enabled** and save.
 

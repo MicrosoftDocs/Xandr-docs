@@ -37,9 +37,9 @@ It is recommended to manage these configurations and their targeting in the [PSP
 | `POST` | [https://api.appnexus.com/prebid/psp-campaign-objects](https://api.appnexus.com/prebid/psp-campaign-objects) | Create PSP targeting and all prerequisite objects (advertiser, insertion order, line item, profile). |
 | `PUT` | [https://api.appnexus.com/prebid/psp-campaign-objects?profileId={ProfileID}&lineItemId={LineItemID}}](https://api.appnexus.com/prebid/psp-campaign-objects?profileId={ProfileID}&lineItemId={LineItemID}}) | Overwrite PSP targeting. |
 
-## `POST`
+### POST
 
-### POST: Parameters
+#### POST: Parameters
 
 | Property | Type| Description|
 |---|---|---|
@@ -48,7 +48,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 | lineItem | object| The automatically created line item to carry the targeting profile for evaluation. DO NOT DELETE this object or any associated configurations will break. See line item service documentation for more information.|
 | profile | object| The profile created based on the input from the initial POST call. Determines which publisher bid requests will initiate the PSP configuration. See profile service documentation for structure and details.|
 
-### POST Response
+#### POST Response
 
 | Property| Type| Description |
 |---|---|---|
@@ -57,7 +57,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 | lineItem| object | The automatically created line item to carry the targeting profile for evaluation. DO NOT DELETE this object or any associated configurations will break. See line item service documentation for more information. |
 | profile| object| The profile created based on the input from the initial POST call. Determines which publisher bid requests will initiate the PSP configuration. See profile service documentation for structure and details.|
 
-### Creating objects
+#### Creating objects
 
 1. Make a **POST** request to [`https://api.appnexus.com/prebid/psp-campaign-objects`](https://api.appnexus.com/prebid/psp-campaign-objects).
 
@@ -70,7 +70,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
     1. Values to populate within the profile can be found in **read-only services**, such as the [country service](country-service.md). These are linked in the [profile service documentation](profile-service.md).
 
-   ### Example profile request
+   #### Example profile request
 
    ```
     {
@@ -121,7 +121,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
         1. Each auction uses one configuration.  
         1. If the targeting of multiple configurations overlaps, the `targeting_metadata.priority` determines which configuration is chosen, with **20** being the highest priority.
 
-   ### Example configuration request
+   #### Example configuration request
 
    Append the configuration ID as the last component of the URL.
 
@@ -159,9 +159,9 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 1. The [configuration service](config-service.md) will respond confirming the details of the objects (configuration, and optionally demand partner configuration parameters) created.
 
-## `PUT`
+### PUT
 
-### Editing objects
+#### Editing objects
 
 1. Retrieve the details of the profile created earlier by the PSP campaign objects service. Refer to the [profile service documentation](profile-service.md):
      1. If the `advertiser.id` from the previous call to the PSP campaign objects service is not known is not known, refer to the [advertiser service documentation](advertiser-service.md). Make a **GET** request to `https://api.appnexus.com/advertiser`.
@@ -173,7 +173,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
      1. Include a top-level [profile object](profile-service.md).
      1. The profile object must contain any desire.
 
-   ### Example call using curl
+   #### Example call using curl
 
    ```
    {

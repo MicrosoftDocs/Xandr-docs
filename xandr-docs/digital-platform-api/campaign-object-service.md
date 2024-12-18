@@ -61,10 +61,13 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 1. Make a **POST** request to [`https://api.appnexus.com/prebid/psp-campaign-objects`](https://api.appnexus.com/prebid/psp-campaign-objects).
 
-    1. Include a top-level [profile object](profile-service.md)
+    1. Include a top-level [profile object](profile-service.md).
     1. The profile object must include a `name` string.
     1. The profile object must contain any desired targeting as documented in the [profile service](profile-service.md).
-    1. Note on the [profile service documenatation](profile-service.md) like certain fields, like `country_targets`, include a corresponding `_action` field, such as `country_action`. The `_action` field is set to **include** or **exclude**.  If set to **include**, the corresponding object/array (e.g., `country_targets`) must be populated for the targeting to function.
+
+        > [!NOTE]
+        > In the [profile service documenatation](profile-service.md) certain fields, such as `country_targets`, include a corresponding `_action` field, like `country_action`. The _action field can be set to either **include** or **exclude**. If set to **include**, the corresponding object or array (e.g., country_targets) must be populated for the targeting to work properly.
+
     1. Values to populate within the profile can be found in **read-only services**, such as the [country service](country-service.md). These are linked in the [profile service documentation](profile-service.md).
 
    ### Example profile request

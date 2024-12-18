@@ -573,7 +573,7 @@ On success, the configuration indicated will be returned as a JSON object with t
 
 ## Related topics
 
-- PSP Campaign Objects Service ([temporary Sharepoint link](https://microsoftapc.sharepoint.com/:u:/r/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU). Learn link TBD)
+- [PSP Campaign Objects Service](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?ga=1)
 - [Demand Partner Schema Service](demand-partner-schema-service.md)
 - [Demand Partner Service](demand-partner-service.md)
 - [Prebid Demand Partner Params Service](prebid-demand-partner-params-service.md)

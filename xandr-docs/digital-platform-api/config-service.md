@@ -37,23 +37,23 @@ The documentation below describes how to create and manage configurations via AP
 | `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of the existing Prebid configurations. |
 | `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid configuration. |
 
-## `GET`
+### GET
 
 Returns all Prebid configurations for the caller's member. Results are returned as JSON.
 
-### Parameters
+#### Parameters
 
 | Property | Scope | Type | Description |
 |:---|:---|:---|:---|
 | `status_filter` | string | Optional | Filter results based on whether a configuration is enabled or disabled. Pass the `status_filter` argument in the query and set the value to either *enabled* or *disabled*. |
 
-### Example call using curl with status filter arguments
+#### Example call using curl with status filter arguments
 
 ```
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/config?status_filter=enabled
 ```
 
-### Example call using curl to return a specific configuration
+#### Example call using curl to return a specific configuration
 
 Append the configuration ID as the last component of the URL.
 
@@ -61,7 +61,7 @@ Append the configuration ID as the last component of the URL.
 curl --header "Content-Type: application/json"https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### Responses
+#### Responses
 
 A successful response will return JSON containing the member's cross-partner settings and all of their PSP configurations. Including a specific `prebidSettingsId` in the query string will lead to a response containing only that configuration.
 
@@ -168,7 +168,7 @@ The elements returned will be indexed from the 10th through the twenty-fifth.
 GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ```
 
-### Example response
+#### Example response
 
 ```
 
@@ -337,17 +337,17 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
        
 ```
 
-## `POST`
+### POST
 
 Enables the creation of a new configurations object.
 
-### Example call using curl
+#### Example call using curl
 
 ```
 curl -d @config.json -X POST --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/config'
 ```
 
-### `POST`: Parameters
+#### POST: Parameters
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -359,14 +359,14 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1` placement <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile |
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#post-targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
 
-### `POST`: Demand partner configs properties
+#### POST: Demand partner configs properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
 
-### `POST`: Media types
+#### POST: Media types
 
 The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand partners.
 
@@ -378,14 +378,14 @@ The media type object determines which formats (currently banner, native, and vi
 | `sizes.is_standard` | boolean | Optional | Denotes whether the size has been defined as standard by the member. |
 | `types` | array | Required | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
-### `POST`: Targeting metadata properties
+#### POST: Targeting metadata properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `os_family_ids` | array | Optional | Demand Partners will only receive requests for this configuration where these operating systems are present. Operating systems represented by integer ids from the [Operating System-Families Service](operating-system-families-service.md). |
 | `priority` | integer | Optional | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the targeting_id is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
 
-### Example JSON request
+#### Example JSON request
 
 ```
 {
@@ -421,11 +421,11 @@ The media type object determines which formats (currently banner, native, and vi
             
 ```
 
-### Response
+#### Response
 
 A successful response will return the new configuration object.
 
-### `POST`: Example JSON response
+#### POST: Example JSON response
 
 ```
 [
@@ -475,17 +475,17 @@ A successful response will return the new configuration object.
                 
 ```
 
-## `PUT`
+### PUT
 
 Overwrite an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
-### `PUT`: Example call using curl
+#### PUT: Example call using curl
 
 ```
 curl -d @config-update.json -X PUT --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### `PUT`: Example JSON request
+#### PUT: Example JSON request
 
 ```
 {
@@ -524,21 +524,21 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
 }
 ```
 
-### `PUT`: Response
+#### PUT: Response
 
 Returns a Prebid configuration object.
 
-## `PATCH`
+### PATCH
 
 Partially update an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request. The request must include a top-level `config` object that contains the other elements to be updated.
 
-### PATCH: Example call using curl
+#### PATCH: Example call using curl
 
 ```
 curl -d @config-update.json -X PATCH --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### `PATCH`: Example JSON request
+#### PATCH: Example JSON request
 
 ```
 {
@@ -553,21 +553,21 @@ curl -d @config-update.json -X PATCH --header "Content-Type: application/json ht
 }
 ```
 
-### `PATCH`: Response
+#### PATCH: Response
 
 Returns a Prebid configuration object.
 
-## `DELETE`
+### DELETE
 
 Delete an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path.
 
-### `DELETE`: Example call using curl
+#### DELETE: Example call using curl
 
 ```
 curl -X DELETE https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### `DELETE`: Response
+#### DELETE: Response
 
 On success, the configuration indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
 

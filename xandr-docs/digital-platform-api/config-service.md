@@ -20,9 +20,9 @@ All demand partners the publisher would like to bid on the inventory defined in 
 
 Demand partner parameters can be found:
 
-- In the PSP configuration UI, as detailed below, or [in the UI](../monetize/add-edit-or-delete-a-psp-configuration.md)
-- [On the Prebid site](https://docs.prebid.org/dev-docs/pbs-bidders.html) with full context and details
-- In the [PSP demand partner schema service](demand-partner-schema-service.md)
+- In the PSP configuration UI, as detailed below, or within the [UI](../monetize/add-edit-or-delete-a-psp-configuration.md) itself.
+- [On the Prebid site](https://docs.prebid.org/dev-docs/pbs-bidders.html) which provides full context and details.
+- In the [PSP demand partner schema service](demand-partner-schema-service.md).
 
 The documentation below describes how to create and manage configurations via API. Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
 

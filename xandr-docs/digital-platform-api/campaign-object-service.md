@@ -21,14 +21,14 @@ These are PSP-specific shell objects that do not deliver but are necessary for t
 
 It is recommended to manage these configurations and their targeting in the [PSP UI](../monetize/create-a-psp-configuration.md), but for large publishers or those with automation, **API interaction** is required or at least preferred.
 
-## High-level workflow
+**High-level workflow**
 
 1. Make a `POST` request to `https://api.appnexus.com/prebid/psp-campaign-objects` with the desired targeting.
 1. Record the `lineItem.id` value.
 1. Make a `POST`/`PUT`/`PATCH` request to `https://api.appnexus.com/prebid/config` where the `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.
 
 > [!NOTE]
-> Do not delete any of the objects created by this service. Deleting the advertiser, insertion order, line items, or profiles associated with PSP configurations will break the configurations, prevent bid requests from being sent to demand partners, and prevent monetization of the affected inventory through PSP.
+> **Do not delete any of the objects created by this service**. Deleting the advertiser, insertion order, line items, or profiles associated with PSP configurations will break the configurations, prevent bid requests from being sent to demand partners, and prevent monetization of the affected inventory through PSP.
 
 ## REST API
 

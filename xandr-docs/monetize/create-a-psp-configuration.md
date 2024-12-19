@@ -52,7 +52,8 @@ Select one of the options below which determine how the inventory is selected.
 - **Placement, Placement Group, or Publisher**: This legacy option allows a single object (placement, placement group and all its placements, or a publisher and all its child objects) to be targeted. Each object (ID) can only be targeted in a single configuration.
 
 > [!NOTE]
-> Auction configuration selection:
+> **Auction configuration selection**:
+>
 > Each auction only uses one PSP configuration and its set of demand partner parameters. If an auction matches multiple configurations, the configuration at the highest level of the hierarchy will be selected. The hierarchy from highest to lowest is:
 >
 > 1. Targeting Profile (if available, any lower configurations are ignored)
@@ -98,7 +99,7 @@ When a publisher is excluded, its placement groups and placements are not availa
 
 When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request bids on inventory in either category.
 
-You can refine your targeting using the following options:
+To further refine targeting, the following options can be used:
 
 **Inventory type**: Select bid requests for web or app inventory. Default allows both web and app.
 

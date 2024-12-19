@@ -117,6 +117,10 @@
     href: curator-supply-shaping.md
   - name: Introduction to Splits
     href: intro-to-splits.md
+  - name: Create splits
+    href: create-splits.md
+  - name: Custom Margins 
+    href: custom-margin.md 
 - name: Curation Optimization
   href: curation-optimization.md
 - name: Buying Guide

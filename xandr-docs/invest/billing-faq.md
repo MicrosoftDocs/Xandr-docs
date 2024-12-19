@@ -90,7 +90,7 @@ If you have signed a new Microsoft Advertising contract and would like to reques
 
 Yes. To request an entity name change, use the [Business Support page](https://help.xandr.com/s/login/) (be sure to select "My Account Questions" as the **Request Type**) to enter your new billing name and/or address and provide a reason for the change.
 
-If you have signed a new Microsoft Advertising contract and would like to request an entity name change, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com) with a reason for the change.
+If you have signed a new Microsoft Advertising contract and would like to request an entity name change, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com) with the reason for the change.
 
 ## Reporting
 

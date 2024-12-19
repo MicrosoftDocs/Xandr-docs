@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Introduction to Splits
-description: 
+description: Learn how Supply Shaping refines targeting for curated deals using prioritized splits processed during ad calls.
 ms.date: 11/14/2023
 ---
 
@@ -24,7 +24,7 @@ Each split has a priority, its own targeting criteria and optional settings. The
     1. If the catch-all split disabled the curated deal will not be added to the auction.
     1. The platform prepares a bid request for the auction and sends it to buyers.
 
-Some important things to remember: 
+Some important things to remember:
 
 - A split’s targeting can only be more restrictive than its deal line item’s targeting. For example, if the deal line item targets the United States and the split targets Canada, the split’s targeting criteria will never be met.
 - If two splits have overlapping targeting, the split with the higher priority will always serve on the overlapping inventory. It’s best to create splits with non-overlapping targeting to make the deal line item easier to manage.

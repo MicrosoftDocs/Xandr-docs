@@ -65,6 +65,8 @@ In the Selling Billing Report, the **Resold Revenue** metric indicates how much 
 
 You have the option to receive advertiser-specific and/or insertion order-specific invoices (see [Understanding Your Invoice](understanding-your-invoice.md) for more details on the information that appears in these types of invoices). To enable this option, contact your Microsoft Advertising representative. To include your advertiser's address information in the **Bill To** region of your advertiser-specific invoices, provide the information when you create an advertiser in the UI. Invoices are not currently broken out by campaign, but you can configure the Buying Billing Report to obtain this information.
 
+If you have signed a new contract with Microsoft Advertising and completed the cutover, you can still choose to have your invoice broken out by member, advertiser, and insertion order. However, the billing period breakout will no longer be available.
+
 ### Why is there a discrepancy between what Google Ad Manager bills me for cost of media and Microsoft Advertising's reporting?
 
 The media cost you are billed for by Google Ad Manager should not be significantly different from the Cost of Media associated with the Google Ad Manager seller in your Buying Billing Report. However, minor discrepancies (up to 10%) are to be expected. If discrepancies are larger than 10%, there may be several causes. For additional information on potential causes of discrepancy and solutions, contact your Microsoft Advertising representative.
@@ -82,9 +84,13 @@ Part of the Microsoft Advertising platform's role is to track, consolidate, and 
 
 To request changes, login to the [Customer Support Portal](https://help.xandr.com/s/login/) and navigate to the **Client Finance** section. The distribution lists will be updated for the following month's invoice cycle.
 
+If you have signed a new Microsoft Advertising contract and would like to request changes, please send an email to [gfsmastr@microsoft.com](gfsmastr@microsoft.com). The distribution lists will be updated for the following month's invoice cycle.
+
 ### Can I update the billing name that appears on the invoice and have it resent?
 
 Yes. To request an entity name change, use the [Business Support page](https://help.xandr.com/s/login/) (be sure to select "My Account Questions" as the **Request Type**) to enter your new billing name and/or address and provide a reason for the change.
+
+If you have signed a new Microsoft Advertising contract and would like to request an entity name change, please send an email to [gfsmastr@microsoft.com](gfsmastr@microsoft.com) with a reason for the change.
 
 ## Reporting
 
@@ -120,6 +126,8 @@ Netting is offered to clients who buy and sell with Microsoft Advertising. Clien
 - apply their revenue to their invoices and then pay what is left on the invoice (e.g., for clients with buy-side costs that exceed their sell-side revenue).
 
 If you would like to enable monthly netting on your account, please submit a request through our [Customer Support Portal](https://help.xandr.com/s/login/). To learn more about netting, see the [Understanding Your Seller Statement](understanding-your-seller-statement.md).
+
+If you are a customer who has migrated to a new Microsoft Advertising contract, please note that, as Invest and Monetize now have separate contracts and invoices, netting will be discontinued. You will need to review both invoices.
 
 ### Why was I suspended and when will I get paid?
 

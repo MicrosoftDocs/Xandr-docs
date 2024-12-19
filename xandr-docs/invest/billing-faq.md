@@ -84,13 +84,13 @@ Part of the Microsoft Advertising platform's role is to track, consolidate, and 
 
 To request changes, login to the [Customer Support Portal](https://help.xandr.com/s/login/) and navigate to the **Client Finance** section. The distribution lists will be updated for the following month's invoice cycle.
 
-If you have signed a new Microsoft Advertising contract and would like to request changes, please send an [email](mailto:gfsmastr@microsoft.com). The distribution lists will be updated for the following month's invoice cycle.
+If you have signed a new Microsoft Advertising contract and would like to request changes, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com). The distribution lists will be updated for the following month's invoice cycle.
 
 ### Can I update the billing name that appears on the invoice and have it resent?
 
 Yes. To request an entity name change, use the [Business Support page](https://help.xandr.com/s/login/) (be sure to select "My Account Questions" as the **Request Type**) to enter your new billing name and/or address and provide a reason for the change.
 
-If you have signed a new Microsoft Advertising contract and would like to request an entity name change, please send an [email](mailto:gfsmastr@microsoft.com) with a reason for the change.
+If you have signed a new Microsoft Advertising contract and would like to request an entity name change, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com) with a reason for the change.
 
 ## Reporting
 

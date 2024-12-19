@@ -52,13 +52,14 @@ Select one of the options below which determine how the inventory is selected.
 - **Placement, Placement Group, or Publisher**: This legacy option allows a single object (placement, placement group and all its placements, or a publisher and all its child objects) to be targeted. Each object (ID) can only be targeted in a single configuration.
 
 > [!NOTE]
-> Auction configuration selection
+> Auction configuration selection:
 > Each auction only uses one PSP configuration and its set of demand partner parameters. If an auction matches multiple configurations, the configuration at the highest level of the hierarchy will be selected. The hierarchy from highest to lowest is:
 >
 > 1. Targeting Profile (if available, any lower configurations are ignored)
 > 1. Placement
 > 1. Placement Group
 > 1. Publisher
+>
 > When multiple Targeting Profile configurations are eligible, the user-defined **Priority** setting of the configuration is used to determine which configuration to use. When multiple Targeting Profile configurations of the same Priority are present, the configuration with the higher (more recent) ID will be used in the auction.
 
 ### Targeting profile options (recommended)
@@ -75,15 +76,29 @@ Select a value, 1 being the lowest, 20 being the highest, to inform Monetize whi
 
 #### Geography targeting
 
-Select bid requests based on varying granularities of geographic targeting such as country, region, city, metro code, postal code, and latitude/longitude.
+Select bid requests based on varying granularities of geographic targeting, such as:
+
+- Country
+- Region
+- City
+- Metro code
+- Postal code
+- Latitude/longitude
 
 #### Inventory targeting
 
-**Supply source**: Select bid requests based on one or more Monetize objects (placement, placement group, publisher), content categories, specific domains, or apps.
+**Supply source**: Select bid requests based on one or more of the following:
+
+- Monetize objects (placement, placement group, publisher)
+- Content categories
+- Specific domains
+- Apps
 
 When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
 
 When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request bids on inventory in either category.
+
+You can refine your targeting using the following options:
 
 **Inventory type**: Select bid requests for web or app inventory. Default allows both web and app.
 
@@ -92,6 +107,8 @@ When a top-level category is excluded, its sub-categories are not available for 
 **Banner size targeting**: Restrict which banner bid requests demand partners receive based on the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** -> **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
 
 #### Environment targeting
+
+- **Device Type Targeting**: Target broad categories of user devices. Mobile includes phones and tablets. CTV includes televisions, set top boxes, and game consoles.
 
 - **Systems Targeting**: Target technical attributes detected in the bid request such as operating system, browser, language, device model, and mobile carrier.
 
@@ -115,11 +132,11 @@ To restrict which bid requests demand partners receive by the operating system o
 
 ## Demand partners
 
-For a demand partner to receive bid requests for the inventory defined in the section above, they must be added to the configuration. While there is no technical limit to the number of partners that can be included in a configuration, the more partners there are, the lower their win rates tend to be, and some may start to bid less often if at all. Best practice is to start testing with 3 to 4 demand partners then gradually add more, while continuously optimizing and removing any under-performing partners.
+For a demand partner to receive bid requests for the inventory defined in the section above, they must be added to the configuration. While there is no technical limit to the number of partners that can be included in a configuration, the more partners there are, the lower their win rates tend to be, and some may start to bid less often if at all. Best practice is to start testing with 3 to 4 demand partners then gradually add more, while [continuously optimizing](prebid-server-premium-analytics.md) and removing any under-performing partners.
 
 1. Click **Add Demand Partner** to view the side panel.
-1. Click in the selection box to view a list of demand partners enabled in PSP Global Settings or type to search by name.
-1. Click to select a demand partner. Their required and optional parameters are displayed. Partner parameters are also available in the Demand Partner Schema API Service and on the Prebid site.
+1. Click in the selection box to view a list of demand partners enabled in [PSP Global Settings](add-or-edit-a-demand-partner.md) or type to search by name.
+1. Click to select a demand partner. Their required and optional parameters are displayed. Partner parameters are also available in the [Demand Partner Schema API Service](../digital-platform-api/demand-partner-schema-service.md) and on the [Prebid site](https://docs.prebid.org/dev-docs/pbs-bidders.html).
 1. Referencing identifiers and values from the partner’s platform, fill out their required and optional parameters.
 1. Click **Save**.
 1. Click **Add Demand Partner** to add additional partners. More partners can be added at any time.

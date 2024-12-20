@@ -89,12 +89,10 @@ Select bid requests based on varying granularities of geographic targeting, such
 #### Inventory targeting
 
 - **Supply source**: Select bid requests based on one or more of the following:
-
   - Monetize objects (placement, placement group, publisher)
   - Content categories
   - Specific domains
   - Apps
-
     When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
     When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request bids on inventory in either category.
     To further refine targeting, the following options can be used:

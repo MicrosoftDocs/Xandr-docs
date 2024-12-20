@@ -9,13 +9,13 @@ ms.date: 11/14/2023
 ## Overview
 
 > [!NOTE]
-> If you are interested in using Supply Shaping, please contact your Microsoft Advertising account representative.
+> To use Supply Shaping, please contact your Microsoft Advertising account representative.
 
-When you make a curated deal, you configure the inventory and any audiences you wish to target. When the Microsoft Advertising platform receives an ad call, if your curated deal’s targeting criteria are met, your curated deal is added to the auction and sent to the buyer for them to bid on.
+When you make a curated deal, you configure the inventory and the audiences you wish to target. When the Microsoft Advertising platform receives an ad call, if your curated deal’s targeting criteria are met, your curated deal is added to the auction and sent to the buyer so they can bid on it.
 
 By default, your curated deal behaves the same way for every ad call:
 
-- If its targeting criteria are met, it is added to the auction.
+- If the targeting criteria are met, the deal is added to the auction.
 - If you’ve configured a floor or margin on your curated deal, these settings are used in the auction.
 
 There are scenarios where you might want your curated deal to behave differently for certain ad calls. For example:
@@ -27,3 +27,10 @@ There are scenarios where you might want your curated deal to behave differently
 **Supply Shaping** is designed to help with these scenarios. It allows you to create splits to target inventory and audiences in a granular fashion and define custom margins, floors, and spend allocations for each split.  
 
 To get started, see the [Introduction to Splits](intro-to-splits.md) page.
+
+- [Curated Deal Floors](curated-deal-floors.md)
+- [Curator Margins](curator-margins.md)
+- [Introduction to splits](intro-to-splits.md)
+- [Create Splits](create-splits.md)
+- [Monitor Splits](monitor-splits.md)
+- [Report On Splits](report-on-splits.md)

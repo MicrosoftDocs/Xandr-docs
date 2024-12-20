@@ -17,8 +17,8 @@ Follow the steps below to configure Supply Shaping effectively:
     1. Deactivate a split if it is not needed temporarily.
     1. Delete a split if it’s no longer needed at all.
 1. Click the **New** button to add more splits to the entry grid.
-1. Use the checkboxes at the top of the entry grid to define further settings for your splits. These settings are described in the following sections.
-1. Click the **enable catch-all** toggle to turn on the catch-all split. See the [Introduction to Splits](intro-to-splits.md) page for more information about the catch-all split.
+1. Use the checkboxes at the top of the entry grid to define further settings for your splits. These settings are described in the subsequent sections.
+1. Enable the **catch-all split toggle** to turn on the catch-all split. For more information about the catch-all split, See the [Introduction to Splits](intro-to-splits.md) page.
 
 ## Custom margins
 
@@ -30,7 +30,7 @@ You can customize margins for each split if your Curate seat and user have the n
 
 ## Custom floors
 
-If you’ve setup your deal line item with a Floor Price in the Basic Settings section, the Use Custom Floors checkbox will be available. Check the box to add the Floor column to the entry grid. 
+If you’ve setup your deal line item with a Floor Price in the Basic Settings section, the Use Custom Floors checkbox will be available. Check the box to add the Floor column to the entry grid.
 
 When using custom floors, you must enter an explicit floor value for each split. The splits do not inherit a floor value from their deal line item.
 
@@ -43,9 +43,9 @@ Enabling the **Use Spend Allocations** checkbox allows you to configure a percen
 
 When configuring spend allocations there are two types of splits:
 
-- **Capped** splits where you enter an explicit, non-zero percentage which the algorithm will try to respect during every hour where the deal is delivering.
+- **Capped** splits, where you enter an explicit, non-zero percentage which the algorithm tries to respect during every hour where the deal is delivering.
 
-- **Uncapped** splits where you do not enter an explicit percentage. All uncapped splits are considered as a group which can deliver any remaining spend allocation not already taken by the capped splits. For example, if you have 1 capped split at 80% and 2 uncapped splits, the algorithm will allow the latter to contribute 20% of spend through the deal based on their availability. Note that the catch-all split, if enabled, is always uncapped.
+- **Uncapped** splits, where you do not enter an explicit percentage. All uncapped splits are considered as a group that can deliver any remaining spend allocation not already taken by the capped splits. For example, if you have one capped split at 80% and two uncapped splits, the algorithm allows the latter to contribute 20% of spend through the deal based on their availability. Note that the catch-all split, if enabled, is always uncapped.
 
 Your total spend allocation percentages must be less than or equal to 100%. When the total is less than 100% the remaining allocation is shared amongst uncapped splits.
 
@@ -74,5 +74,13 @@ When you configure new spend allocations or edit existing spend allocations, the
 
 ### Common scenarios
 
-- **No spend on the curated deal** – if you’ve configured spend allocations for a curated deal but the buyer is not currently spending, the algorithm will not set any participation rates. All splits will participate at 100% until the algorithm has 1 hour of data to determine the natural spend allocation.
-- **No spend on a split** – if a split has a capped spend allocation but is not generating any spend, the algorithm will continue to try to respect its configured allocation without preventing us splits from delivering. However, a capped split with zero spend will severely limit the curated deal’s overall delivery.
+- **No spend on the curated deal** – If you’ve configured spend allocations for a curated deal but the buyer is not currently spending, the algorithm will not set any participation rates. All splits will participate at 100% until the algorithm has 1 hour of data to determine the natural spend allocation.
+- **No spend on a split** – If a split has a capped spend allocation but is not generating any spend, the algorithm will continue to try to respect its configured allocation without preventing us splits from delivering. However, a capped split with zero spend will severely limit the curated deal’s overall delivery.
+
+## Related topics
+
+- [Introduction To Splits](intro-to-splits.md)
+- [Curated Deal Floors](curated-deal-floors.md)
+- [Curator Margins](curator-margins.md)
+- [Curator Supply Shaping](curator-supply-shaping.md)
+- [Curator Analytics Report](curator-analytics-report.md)

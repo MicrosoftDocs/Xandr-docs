@@ -20,7 +20,6 @@ The following macros can be used for all impressions:
 | `${CLICK_URL}` | The click tracking URL. For example: `https://xandr.com` |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example: `https%3A%2F%2Fxandr.com` |
 
-
 The following macros can be used in creative third-party tags and landing page URLs:
 
 | Macro | Description |

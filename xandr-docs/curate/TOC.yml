@@ -119,8 +119,10 @@
     href: intro-to-splits.md
   - name: Create splits
     href: create-splits.md
-  - name: Custom Margins 
-    href: custom-margin.md 
+  - name: Momitor Splits 
+    href: monitor-splits.md
+  - name: Report on Splits
+    href: report-on-splits.md
 - name: Curation Optimization
   href: curation-optimization.md
 - name: Buying Guide

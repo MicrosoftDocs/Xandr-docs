@@ -30,7 +30,7 @@ To get started, see the [Introduction to Splits](intro-to-splits.md) page.
 
 - [Curated Deal Floors](curated-deal-floors.md)
 - [Curator Margins](curator-margins.md)
-- [Introduction to splits](intro-to-splits.md)
+- [Introduction to Splits](intro-to-splits.md)
 - [Create Splits](create-splits.md)
 - [Monitor Splits](monitor-splits.md)
 - [Report On Splits](report-on-splits.md)

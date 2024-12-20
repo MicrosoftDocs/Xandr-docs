@@ -140,6 +140,8 @@ If you are frequently requesting network analytics reports via the API which inc
 | `type_for_line_item` | string | Yes | `"Branding IO"` | A custom reporting field describing the type of line item. See the `labels` field in the [Line Item Service](./line-item-service.md) for more information. You may only select one reporting label per report. |
 | `salesrep_for_line_item` | string | Yes | `"Patricia Martin"` | A custom reporting field containing the sales representative for the line item. See the `labels` field in the [Line Item Service](./line-item-service.md) for more information. You may only select one reporting label per report. |
 | `trafficker_for_line_item` | string | Yes | `"George Martin"` | A custom reporting field containing the trafficker for the line item. See the `labels` field in the [Line Item Service](./line-item-service.md) for more information. You may only select one reporting label per report. |
+| `is_curated` | Yes | Indicates whether an impression was sold involving a Curator Member. Returns `true` if a Curator Member is involved, otherwise `false`. |
+| `curator_member` | No | The Curator for the impression. |
 | `campaign_id` | int | Yes | `222` | The ID of the campaign. |
 | `campaign_name` | string | No | `"Default Campaign"` | The name of the campaign. |
 | `campaign_code` | string | No | `"Default Campaign Code"` | The custom code for the campaign. |

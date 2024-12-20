@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate - Report on Splits
-description: Learn about monitoring curated deal splits using the Supply Shaping grid. Analyze spend, performance, and optimize delivery effectively.
+description: Learn about the Curator Analytics report's Split dimension to analyze curated impressions and refine targeting or create new splits.
 ms.date: 11/14/2023
 ---
 

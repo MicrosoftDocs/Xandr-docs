@@ -4,7 +4,7 @@ description: Learn to enable Supply Shaping, configure splits, set priorities, a
 ms.date: 11/14/2023
 ---
 
-# Microsoft Curate - Create Splits
+# Microsoft Curate - Create splits
 
 Supply Shaping allows you to optimize your curated deals by defining specific splits and settings.
 

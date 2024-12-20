@@ -12,7 +12,7 @@ Prebid Server Premium (PSP) configurations can be edited at any time. For more c
 
 To edit a PSP configuration, follow these steps:
 
-1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**.The **Demand Partner Configurations** screen appears.
+1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**. The **Demand Partner Configurations** screen appears.
 
 1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**. This does not change the status of configurations; it only filters which ones are visible in the table.
 
@@ -38,7 +38,7 @@ To edit a PSP configuration, follow these steps:
 
 Disabling a configuration stops bid requests for the applied inventory and demand partners. To resume bid requests, toggle the configuration back to **Enabled** and save.
 
-1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**. The **Demand Partner Configurations** screen appears.
+1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**.  The **Demand Partner Configurations** screen appears.
 1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**. This does not change the status of configurations; it only filters which ones are visible in the table.
 1. Use the search box in the upper-right corner to filter configurations by:
 

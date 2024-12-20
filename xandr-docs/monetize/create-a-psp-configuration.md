@@ -88,24 +88,22 @@ Select bid requests based on varying granularities of geographic targeting, such
 
 #### Inventory targeting
 
-**Supply source**: Select bid requests based on one or more of the following:
+- **Supply source**: Select bid requests based on one or more of the following:
 
-- Monetize objects (placement, placement group, publisher)
-- Content categories
-- Specific domains
-- Apps
+  - Monetize objects (placement, placement group, publisher)
+  - Content categories
+  - Specific domains
+  - Apps
 
-When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
+    When a publisher is excluded, its placement groups and placements are not available for further inclusion or exclusion. When a placement group is excluded, its placements are not available for targeting.
+    When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request bids on inventory in either category.
+    To further refine targeting, the following options can be used:
 
-When a top-level category is excluded, its sub-categories are not available for further inclusion or exclusion. When targeting more than one universal category, the categories have an OR relationship. For example, targeting "Custom Category 1" and "Custom Category 2" would request bids on inventory in either category.
+- **Inventory type**: Select bid requests for web or app inventory. Default allows both web and app.
 
-To further refine targeting, the following options can be used:
+- **Key/Value**: Target bid requests containing specific key values. Key values must be defined in **Monetize** > **Network** > [Key Values](https://monetize.xandr.com/tools-key-value) first.
 
-**Inventory type**: Select bid requests for web or app inventory. Default allows both web and app.
-
-**Key/Value**: Target bid requests containing specific key values. Key values must be defined in **Monetize** > **Network** > [Key Values](https://monetize.xandr.com/tools-key-value) first.
-
-**Banner size targeting**: Restrict which banner bid requests demand partners receive based on the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** -> **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
+- **Banner size targeting**: Restrict which banner bid requests demand partners receive based on the size of the ad slot. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** -> **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
 
 #### Environment targeting
 

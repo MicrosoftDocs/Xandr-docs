@@ -12,16 +12,16 @@ Prebid Server Premium (PSP) configurations can be edited at any time. For more c
 
 To edit a PSP configuration, follow these steps:
 
-1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**.  
-   The **Demand Partner Configurations** screen appears.
-1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**.  
-   This does not change the status of configurations; it only filters which ones are visible in the table.
+1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**.The **Demand Partner Configurations** screen appears.
+
+1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**. This does not change the status of configurations; it only filters which ones are visible in the table.
+
 1. Use the search box in the upper-right corner to filter configurations by:
    1. Configuration name
    1. Configuration ID
    1. Targeting ID
-1. Click the name or row of the configuration to edit.  
-   The side preview panel opens, showing targeting and demand partners applied to the configuration.
+
+1. Click the name or row of the configuration to edit. The side preview panel opens, showing targeting and demand partners applied to the configuration.
 1. To view and edit all options available during configuration setup, click the **Edit** icon in the upper-right corner of the side panel.
    1. Alternatively, click the **Edit** (pencil) icon next to **Configuration Details** to quickly edit the name or **Enabled/Disabled** status.
    1. To quickly edit a demand partner’s parameters:
@@ -38,14 +38,14 @@ To edit a PSP configuration, follow these steps:
 
 Disabling a configuration stops bid requests for the applied inventory and demand partners. To resume bid requests, toggle the configuration back to **Enabled** and save.
 
-1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**.  
-   The **Demand Partner Configurations** screen appears.
-1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**.  
-   This does not change the status of configurations; it only filters which ones are visible in the table.
+1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**. The **Demand Partner Configurations** screen appears.
+1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**. This does not change the status of configurations; it only filters which ones are visible in the table.
 1. Use the search box in the upper-right corner to filter configurations by:
+
    1. Configuration name  
    1. Configuration ID  
    1. Targeting ID  
+
 1. Select the corresponding checkboxes next to the configurations, and then choose the desired option from the **Actions** drop-down menu:
    1. **Enable**  
    1. **Disable**  
@@ -61,16 +61,13 @@ To permanently remove the partner from all current configurations, delete the pa
 
 If a demand partner will not be used again on a specific configuration and needs to be removed, follow these steps:  
 
-1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**.  
-   The **Demand Partner Configurations** screen appears.  
-1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**.  
-   This does not change the status of configurations; it only filters which ones are visible in the table.  
+1. In the **Monetize** navigation bar, select the **Publishers** menu, and then click **Prebid Server Premium**. The **Demand Partner Configurations** screen appears.  
+1. (Optional) Click the **All Statuses** menu to filter visible configurations by **Enabled** or **Disabled**.  This does not change the status of configurations; it only filters which ones are visible in the table.  
 1. Use the search box in the upper-right corner to filter configurations by:
     a. Configuration name  
     b. Configuration ID  
     c. Targeting ID  
-1. Click on the name or row of the configuration to be edited.  
-   The side preview panel appears, showing the targeting and demand partners applied to the configuration.  
+1. Click on the name or row of the configuration to be edited. The side preview panel appears, showing the targeting and demand partners applied to the configuration.  
 1. Click **Edit** in the upper-right corner of the side panel.  
 1. In the **Demand Partners** section, hover over the row of the partner to be removed.  
 1. Click **Delete Demand Partner**.  

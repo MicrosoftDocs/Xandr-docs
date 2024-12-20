@@ -14,6 +14,8 @@ Payment terms are typically net 30 from the date of invoice. Refer to your contr
 
 For general information on your invoice, see [Understanding your Invoice](understanding-your-invoice.md).
 
+If you have signed a new Microsoft Advertising contract, the invoices will maintain the same cadence. For more information on payment terms, please refer to the [Understanding your invoice](understanding-your-invoice.md) section.
+
 ## Payment instructions
 
 Refer to the specific payment instructions on your invoice for the most up-to-date information

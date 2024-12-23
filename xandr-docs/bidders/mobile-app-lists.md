@@ -12,7 +12,7 @@ Mobile app instance bundle ID targeting is now available in the Bidder UI. These
 
 A bundle ID is a string of characters that advertisers and ad platforms use to identify specific mobile apps, based on the operating system of the device. This is generally the application’s unique identifier on their relevant app stores. The mobile app bundle ID targeting alpha allows third-party bidders to target or block app traffic using app store domains and bundle IDs. Users can now log in to the Bidder UI or use the API to add, edit, or delete blocklists and allowlists using mobile app bundle IDs.
 
-## Creating, Editing, and Deleting an App Bundle List
+## Create, Edit, and Delete an App Bundle List
 
 Follow these steps to add, manage, or delete an app bundle list using the UI:
 

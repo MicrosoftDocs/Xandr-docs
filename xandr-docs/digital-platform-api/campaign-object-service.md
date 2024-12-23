@@ -50,7 +50,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 | Property| Type| Description |
 |---|---|---|
 |`advertiser`| object| The automatically created advertiser to house all PSP objects. See [advertiser service documentation](advertiser-service.md) for more information. Deletion is blocked at the platform level.|
-|`insertionOrder` | object | The automatically created insertion order to house all PSP line items. See [insertion order service documentation](insertion-order-service.md) for more information.|
+|`insertionOrder` | object | The automatically created insertion order to house all PSP line items. See [insertion order service documentation](insertion-order-service.md) for more information. Deletion is blocked at the platform level.|
 |`lineItem`| object | The automatically created line item to carry the targeting profile for evaluation. **DO NOT DELETE this object** or any associated configurations will break. See [line item service documentation](line-item-service---ali.md) for more information. |
 |`profile`| object| The profile created based on the input from the initial POST call. Determines which publisher bid requests will initiate the PSP configuration. DO NOT DELETE this object or any associated configurations will break. See [profile service documentation](profile-service.md) for structure and details.|
 

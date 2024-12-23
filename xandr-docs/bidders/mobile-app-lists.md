@@ -22,7 +22,7 @@ Follow these steps to add, manage, or delete an app bundle list using the UI:
 
 :::image type="content" source="media/bidder-wide-settings.png" alt-text="Screenshot that explains the Bidder settings.":::
 
-:::image type="content" source="media/app-bundle-list.png" alt-text="Screenshot that explains the Bidder settings.":::
+:::image type="content" source="media/app-bundle-list.png" alt-text="Screenshot that explains the App Bundle list.":::
 
 Once you have located the **App Bundle Lists** section, you can use the navigation controls to edit, delete, view, or add a new app bundle list:
 
@@ -87,7 +87,7 @@ Yes, this is technically possible. However, mobile app bundle lists and domain l
 ## Related topics
 
 - [Bidder Platform User Interface](bidder-platform-user-interface.md)
-- [Domain List](domain-list.md)
+- [Domain Lists](domain-lists.md)
 - [Profiles Screen](profiles-screen.md)
 - [Creating a New Bidder Profile](creating-a-new-bidder-profile.md)
 - [Editing a Bidder Profile](editing-a-bidder-profile.md)

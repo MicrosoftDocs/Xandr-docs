@@ -109,7 +109,7 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | Attribute | Type   | Description                                                                 |
 |-----------|--------|-----------------------------------------------------------------------------|
 | id | string | A unique identifier assigned by the publisher. This may not be unique across all supply sources. |
-| name | string | Network the content is on (e.g., a TV network like “ABC”). **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md).                 |
+| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md).                 |
 | domain| string | The primary domain of the network (e.g., “abc.com” for the network ABC). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
 
 ## Object: Channel

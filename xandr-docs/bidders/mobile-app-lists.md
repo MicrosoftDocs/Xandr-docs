@@ -78,6 +78,12 @@ PUT -- https://api.adnxs.com/app-bundle-list/22  (22 is the ID)
 
 ```
 
+### FAQ
+
+**Can I target a mobile app and a domain app at the same time?**
+
+Yes, this is technically possible. However, mobile app bundle lists and domain lists have an AND relationship. If you are already targeting a domain list, create a separate profile to target the app list.
+
 ## Related topics
 
 - [Bidder Platform User Interface](bidder-platform-user-interface.md)

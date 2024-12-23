@@ -98,22 +98,21 @@ Refer to the table below to find the correct values. Start by comparing your Ope
 | `Interstitial` | This ad format plays video without accompanying video content. During playback, it must maintain primary focus on the page, occupy the majority of the viewport, and remain fixed without scrolling out of view. This can occur in placements such as in-app video or slideshows. | `imp.instl = 1 ,imp.video.placement = 5` | `imp.video.plcmt = 3` | imp.video.ext.appnexus.context = 7 (interstitial) |
 | `Accompanying Content`| Pre-roll, mid-roll, and post-roll ads that are played before, during, or after streaming video content. The video player loads and plays before, between, or after paragraphs of text or graphical content, and starts playing only when it enters the viewport. Accompanying content should only start playback upon entering the viewport. It may convert to a Pre-roll, mid-roll, and post-roll ads play before, during, or after streaming video content. The video player loads and initiates playback before, between, or after paragraphs of text or graphical content, beginning only when it comes into view. Accompanying content starts playback when it enters the viewport. The player may convert to a floating or sticky position as it scrolls off the page. <br> <br> **NOTE:** The start delay determines the context (pre-roll, mid-roll, or post-roll) to use when placement = 1 and plcmt = 2. | `imp.video.placement = 1` | `imp.video.plcmt = 2` | imp.video.ext.appnexus.context = 8  (pre-roll) , imp.video.ext.appnexus.context = 9  (mid-roll), imp.video.ext.appnexus.context = 10 (post-roll) |
 
-### Object: Network
+## Object: Network
 
 This object describes the network an ad will be displayed on. A **network** is defined as the parent entity of the **Channel** object’s entity for the purposes of organizing Channels. Examples are companies that own and/or license a collection of content channels (e.g., Viacom, Discovery, CBS, WarnerMedia, Turner, and others) or studios that create such content and self-distribute content.
 
 The **name** is a human-readable field, while **domain** and **id** can be used for reporting and targeting purposes.
 
-#### Network attributes
+### Network attributes
 
 | Attribute | Type   | Description                                                                 |
 |-----------|--------|-----------------------------------------------------------------------------|
-| id | string | A unique identifier assigned by the publisher. This may not be unique across all supply sources. **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md).|
-| name | string | Network the content is on (e.g., a TV network like “ABC”).                  |
+| id | string | A unique identifier assigned by the publisher. This may not be unique across all supply sources. |
+| name | string | Network the content is on (e.g., a TV network like “ABC”). **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md).                 |
 | domain| string | The primary domain of the network (e.g., “abc.com” for the network ABC). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
-| ext  | object | Placeholder for exchange-specific extensions to OpenRTB.                   |
 
-### Object: Channel
+## Object: Channel
 
 This object describes the channel an ad will be displayed on. A Channel is defined as the entity that curates a content library or stream within a brand name for viewers. Examples are specific view-selectable "channels" within linear and streaming television (e.g., MTV, HGTV, CNN, BBC One) or a specific stream of audio content commonly called "stations."
 
@@ -126,7 +125,6 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | `id` | string   | A unique identifier assigned by the publisher. This may not be a unique identifier across all supply sources. |
 | `name` | string   | Channel the content is on (e.g., a local channel like "WABC-TV"). |
 | `domain`| string   | The primary domain of the channel (e.g., "abc7ny.com" in the case of the local channel WABC-TV). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
-| `ext` | object   | Placeholder for exchange-specific extensions to OpenRTB. |
 
 ## Updated field locations
 

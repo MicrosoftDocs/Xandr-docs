@@ -46,17 +46,12 @@ These columns are useful when optimizing for specific buyer KPIs. Adjust margins
 
 ### Deal Metrics troubleshooting report
 
-  1. Click the **Troubleshooting** tab.
-  1. Open the **Troubleshooting Reports** panel.
-  1. Select **Deal Metrics** as the report type and **Split** under **Breakout Deal Metrics** By.
+  1. Select the **Troubleshooting** tab and then open the **Troubleshooting Reports** panel.
+  1. Under **Report Type**, select **Deal Metrics**, and under **Breakout Deal Metrics By**, select Split.
 
-This report provides insights into:
+This report provides the availability of each split based on **Imps Matched** and **Bid Requests** metrics. It also shows buyer bidding activity using the **Bids** and ****Imps Won** metrics and highlights splits generating significant volumes of **Ineligible Bids**.
 
-- **Imps Matched** and **Bid Requests**: Availability metrics for each split.
-- **Bids** and **Imps Won**: Buyer bidding activity on each split.
-- **Ineligible Bids**: High volumes of these may indicate issues to address.
-
-You can also use the **Modify Columns** button to include metrics like **Participation Rate**, helping you track its evolution over time.
+Select the **Modify Columns** button to add other metrics, such as **Participation Rate**, to track how each split's rate has evolved over time.
 
 ## Related topics
 

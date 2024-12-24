@@ -6,7 +6,7 @@ ms.date: 11/14/2023
 
 # Microsoft Curate - Report on splits
 
-The Curator Analytics report includes a Split dimension allowing you to see in detail what impressions have been curated by each split. By using the other dimensions in this report you can identify if it could be beneficial to refine your splits’ targeting or breakout new splits.
+The **Curator Analytics** report includes a **Split** dimension allowing you to see in detail what impressions have been curated by each split. By using the other dimensions in this report you can identify if it could be beneficial to refine your splits’ targeting or breakout new splits.
 
 See the [Curator Analytics Report](curator-analytics-report.md) page for more information.
 

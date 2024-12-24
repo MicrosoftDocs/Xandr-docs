@@ -17,7 +17,7 @@ By default, your curated deal behaves the same way for every ad call: If its tar
 
 There are scenarios where you might want your curated deal to behave differently for certain ad calls. For example:
 
-- Certain tranches of inventory or certain audience segments might be driving better performance for your buyer’s campaign. If you take a margin, you might want to reduce it on these tranches or segments to drive more delivery.  
+- Certain tranches of inventory or certain audience segments may be driving better performance for your buyer’s campaign. If you take a margin, you may want to reduce it on these tranches or segments to drive more delivery.  
 - Alternatively, to further drive delivery on inventory and audiences performing well for your buyer, you might wish to send them different bidding guidance by using a higher floor price.  
 - Certain publishers might be sending a larger volume of ad calls than others, meaning they have a larger representation within the curated deal’s delivery. For certain publishers, even if they meet the curated deal’s targeting criteria, you might want to curate only a portion of their auctions to ensure a more even representation across publishers.
 

@@ -28,6 +28,8 @@ There are scenarios where you might want your curated deal to behave differently
 
 To get started, see the [Introduction to Splits](intro-to-splits.md) page.
 
+## Related topics
+
 - [Curated Deal Floors](curated-deal-floors.md)
 - [Curator Margins](curator-margins.md)
 - [Introduction to Splits](intro-to-splits.md)

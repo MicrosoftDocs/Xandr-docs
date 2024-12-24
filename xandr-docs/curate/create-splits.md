@@ -6,7 +6,7 @@ ms.date: 11/14/2023
 
 # Microsoft Curate - Create splits
 
-Supply Shaping allows you to optimize your curated deals by defining specific splits and settings.
+Use Supply Shaping to optimize curated deals by defining specific splits and settings.
 
 Follow the steps below to configure Supply Shaping effectively:
 
@@ -35,7 +35,7 @@ If you’ve setup your deal line item with a Floor Price in the Basic Settings s
 When using custom floors, you must enter an explicit floor value for each split. The splits do not inherit a floor value from their deal line item.
 
 > [!NOTE]
-> for DSPs where the Microsoft Advertising platform automatically syncs deals, the floor you configure for the deal line item under the Basic Settings section is used when syncing the deal with the DSP. Custom floors defined on splits are only sent on the bid request, auction-by-auction.
+> For DSPs where the Microsoft Advertising platform automatically syncs deals, the floor you configure for the deal line item under the Basic Settings section is used when syncing the deal with the DSP. Custom floors defined on splits are only sent on the bid request, auction-by-auction.
 
 ## Spend allocations
 
@@ -49,7 +49,7 @@ When configuring spend allocations there are two types of splits:
 
 Your total spend allocation percentages must be less than or equal to 100%. When the total is less than 100% the remaining allocation is shared amongst uncapped splits.
 
-### How the spend allocation algorithm works
+### Spend allocation algorithm
 
 There are three different types of allocations which the spend allocation algorithm considers: 
 

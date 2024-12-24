@@ -30,10 +30,10 @@ The grid has two main column groups:
 
    **Actions to Improve Deal Delivery**:
 
-    - Lower this split’s configured allocation to bring it closer to its natural allocation.
-    - Expand the targeting of this split to give it more potential to generate spend.
-    - Reduce the margin on the split to enhance bid competitiveness.
-    - Investigate and address high proportions of ineligible bids.
+    - Lower the configured allocation for this split to bring it closer to its natural allocation.
+    - Expand the targeting for this split to give it more potential to generate spend.
+    - Reduce the margin for the split to enhance bid competitiveness.
+    - Investigate and address high ineligible bid proportions.
 
 1. **Analytics**
 

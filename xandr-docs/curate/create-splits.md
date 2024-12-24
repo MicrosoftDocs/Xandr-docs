@@ -30,7 +30,7 @@ You can customize margins for each split if your Curate seat and user have the n
 
 ## Custom floors
 
-If you’ve setup your deal line item with a Floor Price in the Basic Settings section, the Use Custom Floors checkbox will be available. Check the box to add the Floor column to the entry grid.
+If you’ve setup your deal line item with a **Floor Price** in the **Basic Settings** section, the **Use Custom Floors** checkbox will be available. Check the box to add the **Floor** column to the entry grid.
 
 When using custom floors, you must enter an explicit floor value for each split. The splits do not inherit a floor value from their deal line item.
 
@@ -51,7 +51,7 @@ Your total spend allocation percentages must be less than or equal to 100%. When
 
 ### Spend allocation algorithm
 
-There are three different types of allocations which the spend allocation algorithm considers: 
+There are three different types of allocations which the spend allocation algorithm considers:
 
 - **Natural allocation** – this is the relative spend each split achieves if the algorithm does nothing. For example, a split targeting a large seller might naturally generate 80% of spend through the deal while a split targeting a small seller generates 20%.
 - **Configured allocation** – this is the relative spend you want each split to represent which usually deviates in some way from the natural allocation. For example, a split naturally generates 80% of spend through the deal but you want it to represent 50%.

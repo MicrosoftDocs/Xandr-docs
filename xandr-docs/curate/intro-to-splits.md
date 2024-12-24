@@ -12,7 +12,7 @@ Each split has a priority, its own targeting criteria, and optional settings. Th
 
 1. The platform checks if the deal line item’s targeting criteria are met. If so, the platform starts checking the deal line item’s splits in ascending order of priority.
 
-1. If a split’s targeting criteria are met, it is selected, and its settings are used to add the curated deal to the auction. If the split is configured with a custom margin, it will be used instead of the deal line item’s margin setting. Similarly, if the split has a custom floor it will be used instead of the deal line item’s floor.
+1. If a split’s targeting criteria are met, it is selected, and its settings are used to add the curated deal to the auction. If the split is configured with a custom margin, it will be used instead of the deal line item’s margin setting. Similarly, if the split has a custom floor, it will be used instead of the deal line item’s floor.
 
 1. The selected split’s its settings are used to add the curated deal to the auction. If the split is configured with a custom margin it will be used instead of the deal line item’s margin setting. Similarly if the split has a custom floor it will be used instead of the deal line item’s floor.
 

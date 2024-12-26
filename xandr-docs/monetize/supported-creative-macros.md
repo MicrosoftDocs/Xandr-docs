@@ -20,7 +20,6 @@ The following macros can be used for all impressions:
 | `${CLICK_URL}` | The click tracking URL. For example: `https://xandr.com` |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third-party ad servers). For example: `https%3A%2F%2Fxandr.com` |
 
-
 The following macros can be used in creative third-party tags and landing page URLs:
 
 | Macro | Description |
@@ -87,6 +86,29 @@ The following macros can be used in creative third-party tags and landing page U
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
 | `${USER_STATE}` | The character string of the user's state or region.<br> - **In the USA**: 2 letter abbreviation<br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated).<br>For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+
+## Content ID creative support
+
+The content_ID creative macro enables detailed reporting at the content level, rather than just relying on bundle IDs. When the content_ID is embedded in a creative, a third-party (3P) tag is triggered, which calls the Peer39 platform to process the macro data.
+
+The data flow works as follows:
+
+- The `content_ID` macro in the creative triggers a 3P tag.
+- The 3P tag calls the Peer39 platform, which processes the data and generates content-level reporting.
+- This reporting allows advertisers to understand exactly where their ads ran, providing more detailed insights into content targeting.
+
+### Data Flow and reporting
+
+The Peer39 platform processes the macro data, which is then used for reporting purposes. Advertisers can see where their ads were displayed at the content level, rather than just tracking the ad through bundle IDs. This enables enhanced reporting for content-specific advertising.
+
+#### Publisher and market targeting
+
+Currently, key publishers such as **DirecTV**, **Philo**, and **Xumo** are targeted to send in the `content_ID` signal. GroupM has been actively testing the Peer39 pixel in North America:
+
+- Canada: 100% of campaigns are using the Peer39 pixel for content-level reporting.
+- United States: Approximately 30-40% of campaigns are using the Peer39 pixel.
+
+GroupM is planning to expand testing and application in the US and other regions. Additionally, Mexico is showing interest in using the Peer39 pixel for content-level targeting and reporting in the near future.
 
 ## Creative macros for video impressions
 

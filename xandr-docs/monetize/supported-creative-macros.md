@@ -89,26 +89,43 @@ The following macros can be used in creative third-party tags and landing page U
 
 ## Content ID creative support
 
-The content_ID creative macro enables detailed reporting at the content level, rather than just relying on bundle IDs. When the content_ID is embedded in a creative, a third-party (3P) tag is triggered, which calls the Peer39 platform to process the macro data.
+The **content_ID** creative macro enables content-level reporting for ads. This macro allows advertisers to track exactly where their ads are shown, instead of relying on bundle IDs.
+
+When the creative includes the `content_ID` macro, it triggers a third-party (3P) tag embedded in the creative. This tag calls **Peer39**, which processes the macro data to generate reports. Advertisers can then view detailed reports showing the specific content where their ads were displayed.
+
+### Data flow and reporting
 
 The data flow works as follows:
 
-- The `content_ID` macro in the creative triggers a 3P tag.
-- The 3P tag calls the Peer39 platform, which processes the data and generates content-level reporting.
-- This reporting allows advertisers to understand exactly where their ads ran, providing more detailed insights into content targeting.
+- The `content_ID` macro in the creative triggers a **3P tag**.
+- The tag communicates with **Peer39**, which processes the macro data for content-specific reporting.
+- The macro data is used to generate content-level reports, allowing advertisers to view exactly where their ads ran.
+This level of reporting provides more detailed insights than traditional bundle ID tracking, helping advertisers optimize their content-level targeting and campaign performance.
 
-### Data Flow and reporting
+### Publisher and market targeting
 
-The Peer39 platform processes the macro data, which is then used for reporting purposes. Advertisers can see where their ads were displayed at the content level, rather than just tracking the ad through bundle IDs. This enables enhanced reporting for content-specific advertising.
+The following publishers are targeted to send the content_ID signal for reporting:
 
-#### Publisher and market targeting
+- **DirecTV**
+- **Philo**
+- **Xumo**
 
-Currently, key publishers such as **DirecTV**, **Philo**, and **Xumo** are targeted to send in the `content_ID` signal. GroupM has been actively testing the Peer39 pixel in North America:
+**GroupM Nexus ATV** has tested the Peer39 pixel in the following regions:
 
-- Canada: 100% of campaigns are using the Peer39 pixel for content-level reporting.
-- United States: Approximately 30-40% of campaigns are using the Peer39 pixel.
+**Canada**: 100% of campaigns use the Peer39 pixel for reporting.
+**United States**: Approximately 30-40% of campaigns use the Peer39 pixel for reporting.
 
-GroupM is planning to expand testing and application in the US and other regions. Additionally, Mexico is showing interest in using the Peer39 pixel for content-level targeting and reporting in the near future.
+The next phase includes continuing tests in Canada and the US, with a gradual move toward applying the Peer39 pixel to all campaigns. Mexico has also expressed interest in using the Peer39 pixel for content-level targeting and reporting.
+
+### Global expansion plans
+
+Finecast (part of **GroupM Nexus ATV**) plans to assess the global need for the Peer39 pixel and standardize its usage across markets. Currently, GroupM operates in **20 markets** globally, with plans to expand into 11 new markets within the next 3-6 months, including the UK.
+
+According to internal assessments, the use of the Peer39 pixel could contribute **$14** million in additional growth globally, supporting GroupM’s current growth trajectory and its programmatic buying strategy.
+
+### Usage and impact updates
+
+GroupM Nexus ATV plans to expand the usage of the Peer39 pixel and will continue to evaluate its impact throughout 2024. Users can expect updates on global market availability and adoption as the testing progresses.
 
 ## Creative macros for video impressions
 

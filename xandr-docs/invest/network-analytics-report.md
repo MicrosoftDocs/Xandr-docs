@@ -119,6 +119,8 @@ If you are frequently requesting Member analytics reports which include dates lo
 | IO: Type (reporting label) | Yes | A custom reporting label field used to list the insertion order type (e.g., Branding IO). This is not the same as the **Type** attribute described above. You may only select one reporting label per report. |
 | IO: Sales Rep (reporting label) | Yes | A customer reporting label field used to list the sales representative associated with the insertion order. You may only select one reporting label per report. |
 | IO: Trafficker (reporting label) | Yes | A customer reporting label field used to list the trafficker associated with the insertion order. You may only select one reporting label per report. |
+| Is Curated | Yes | Indicates whether an impression was sold involving a Curator Member. Returns `true` if a Curator Member is involved, otherwise `false`. |
+| Curator member | No | The Curator for the impression. |
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Line Item: Type | No | The line item type (e.g., Standard, Augmented). |
 | Line Item: State | No | The state of the line item (e.g., active, inactive). |

@@ -59,7 +59,7 @@ There are three different types of allocations which the spend allocation algori
 
 The spend allocation algorithm aims to influence the natural allocation so that the achieved allocation is as close as possible to the configured allocation. To do this the algorithm sets a participation rate for each split.
 
-As a recap, when the Microsoft Advertising platform receives an ad call it checks if it meets a deal line item’s targeting criteria. If so, it checks the deal line item’s splits and selects the first split whose targeting criteria aer met (see the Introduction to Splits page for more information).
+As a recap, when the Microsoft Advertising platform receives an ad call it checks if it meets a deal line item’s targeting criteria. If so, it checks the deal line item’s splits and selects the first split whose targeting criteria are met (see the Introduction to Splits page for more information).
 
 If a split has been selected but is below its participation rate threshold, its curated deal won’t be added to the auction. This allows the algorithm to intervene when a split’s achieved allocation is higher than its configured allocation. By adding the curated deal to fewer auctions, it can reduce the buyer spend on that split.
 

@@ -101,7 +101,6 @@ Yes, this is technically possible. However, mobile App Bundle lists and domain l
 - [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
 - [Countries](countries.md)
 - [Ad Types](ad-types.md)
-- [Supply Types](../bidders/)
 - [Exchanges and Members](exchanges-and-members.md)
 - [Unknown Users](unknown-users.md)
 - [Sensitive Attributes](sensitive-attributes.md)

@@ -14,7 +14,7 @@ A bundle ID is a string of characters that advertisers and ad platforms use to i
 
 ## Create, edit, and delete an app bundle list
 
-Follow these steps to add, manage, or delete an app bundle list using the UI:
+To add, manage, or delete an app bundle list in the UI, follow these steps:
 
 1. Navigate to the **[Bidder UI](https://bidder.xandr.com/)**.
 1. Select the **Bidder settings** tab.
@@ -28,7 +28,7 @@ Once you have located the **App Bundle Lists** section, you can use the navigati
 
 :::image type="content" source="media/test-bidder-bundle-list2.png" alt-text="Screenshot that explains the Bidder bundle list.":::!
 
-To block or allow a specific app bundle list, go to the Profiles tab, select the bidder profile you want to edit, and scroll to the App bundle list dropdown. From the dropdown, select the bundle list you want to block or target.
+To block or allow a specific app bundle list, go to the **Profiles** tab, select the bidder profile you want to edit, and scroll to the App bundle list dropdown. From the dropdown, select the bundle list you want to block or target.
 
 :::image type="content" source="media/new-bidder-profile.png" alt-text="Screenshot that explains the Bidder profile.":::
 

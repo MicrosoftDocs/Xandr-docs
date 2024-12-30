@@ -1,30 +1,30 @@
 ---
 title: Mobile App Lists
-description: Use the Bidder UI to manage mobile App Bundle ID lists for targeting or blocking app traffic using unique app identifiers from app stores.
+description: Use the Bidder UI to manage mobile app bundle ID lists for targeting or blocking app traffic using unique app identifiers from app stores.
 ms.date: 10/28/2023
 ---
 
-# Mobile App Lists
+# Mobile app lists
 
-## Mobile app instance Bundle ID targeting
+## Mobile app instance bundle ID targeting
 
-Mobile app instance bundle ID targeting is now available in the Bidder UI. These are lists that are created, managed, and targeted by the bidder. This functionality allows you to select the mobile app lists you want, or do not want.
+Mobile app instance bundle ID targeting is now available in the Bidder UI. Users can create, manage, and target these lists through the Bidder platform. This feature enables advertisers to include or exclude specific mobile app lists.
 
-A bundle ID is a string of characters that advertisers and ad platforms use to identify specific mobile apps, based on the operating system of the device. This is generally the application’s unique identifier on their relevant app stores. The mobile App Bundle ID targeting alpha allows third-party bidders to target or block app traffic using app store domains and bundle IDs. Users can now log in to the Bidder UI or use the API to add, edit, or delete blocklists and allowlists using mobile App Bundle IDs.
+A bundle ID is a string of characters that advertisers and ad platforms use to identify specific mobile apps, based on the operating system of the device. This is generally the application’s unique identifier on their relevant app stores. The mobile app bundle ID targeting alpha allows third-party bidders to target or block app traffic using app store domains and bundle IDs. Users can now sign in to the Bidder UI or use the API to add, edit, or delete blocklists and allowlists using mobile app bundle IDs.
 
 ## Create, edit, and delete an app bundle list
 
-To add, manage, or delete an App Bundle list in the UI:
+To add, manage, or delete an app bundle list in the UI:
 
 1. Navigate to the **[Bidder UI](https://bidder.xandr.com/)**.
 1. Select the **Bidder Settings** tab.
-1. Scroll down to the **App Bundle lists** section.
+1. Scroll down to the **app bundle lists** section.
 
 :::image type="content" source="media/bidder-wide-settings.png" alt-text="Screenshot that explains the Bidder Settings tab.":::
 
-:::image type="content" source="media/app-bundle-list.png" alt-text="Screenshot that explains the App Bundle list.":::
+:::image type="content" source="media/app-bundle-list.png" alt-text="Screenshot that explains the app bundle list.":::
 
-Once you have located the **App Bundle Lists** section, you can use the navigation controls to edit, delete, view, or add a new App Bundle list:
+Once you have located the **App bundle lists** section, you can use the navigation controls to edit, delete, view, or add a new app bundle list:
 
 :::image type="content" source="media/test-bidder-bundle-list2.png" alt-text="Screenshot that explains the Bidder Bundle list.":::
 
@@ -69,26 +69,31 @@ POST -- https://api.adnxs.com/app-bundle-list?bidder_id=129 ,
 To edit an existing bundle list, use the following PUT request.
 
 ```
+
+PUT https://api.adnxs.com/app-bundle-list/22
+
 {
-PUT -- https://api.adnxs.com/app-bundle-list/22  (22 is the ID)
     "app-bundle-list": {
-  "id": 22,
-  "bidder_id": 129,
+        "id": 22,
+        "bidder_id": 129,
         "name": "Test Bidder Bundle List 2",
         "description": "Not another bundle list",
         "bundles": [
-            "com.test.com", "memcache.8", "memcache.9"
+            "com.test.com",
+            "memcache.8",
+            "memcache.9"
         ]
     }
 }
+
 
 ```
 
 ### FAQ
 
-**Can I target a mobile app and a domain app at the same time?**
+**Is it possible to target both mobile app and domain lists simultaneously?**
 
-Yes, this is technically possible. However, mobile App Bundle lists and domain lists have an AND relationship. If you are already targeting a domain list, create a separate profile to target the app list.
+Yes, this is technically possible. However, mobile app bundle lists and domain lists have an AND relationship. If you are already targeting a domain list, create a separate profile to target the app list.
 
 ## Related topics
 

@@ -57,7 +57,8 @@ POST -- https://api.adnxs.com/app-bundle-list?bidder_id=129 ,
         "name": "Mem List 2",
         "description": "Not another bundle list",
         "bundles": [
-            "item1", "item2"
+            "item1",
+            "item2"
         ]
     }
 }

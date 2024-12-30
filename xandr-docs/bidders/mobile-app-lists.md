@@ -50,7 +50,7 @@ To create a new bundle list, use the following `POST` request.
 > You must specify the `bidder_id`.
 
 ```
-POST -- https://api.adnxs.com/app-bundle-list?bidder_id=129 , 
+POST -- https://api.adnxs.com/app-bundle-list?bidder_id=129 
 {
     "app-bundle-list": {
         "bidder_id": 129,

@@ -6,11 +6,11 @@ ms.date: 11/14/2023
 
 # Microsoft Curate - Create splits
 
-Use Supply Shaping to optimize curated deals by defining specific splits and settings.
+Use **Supply Shaping** to optimize curated deals by defining specific splits and settings.
 
-Follow the steps below to configure Supply Shaping effectively:
+Follow the steps below to configure **Supply Shaping** effectively:
 
-1. From the **Supply Shaping** panel, click the toggle to enable Supply Shaping for your curated deal. The splits entry grid will appear.
+1. From the **Supply Shaping** panel, click the toggle to enable **Supply Shaping** for your curated deal. The **splits** entry grid will appear.
 1. From the **Targeting** dropdown, select which targeting criteria you want to define for your splits. This will add a column to the entry grid from which you can configure the targeting for each split.
 1. Select a split to display the action bar, allowing you to:
     1. Move a split higher or lower in the priority order.
@@ -18,7 +18,7 @@ Follow the steps below to configure Supply Shaping effectively:
     1. Delete a split if it’s no longer needed at all.
 1. Click the **New** button to add more splits to the entry grid.
 1. Use the checkboxes at the top of the entry grid to define further settings for your splits. These settings are described in the subsequent sections.
-1. Enable the **catch-all split toggle** to turn on the catch-all split. For more information about the catch-all split, See the [Introduction to Splits](intro-to-splits.md) page.
+1. Enable the **catch-all split toggle** to turn on the catch-all split. For more information on **catch-all split**, See the [Introduction to Splits](intro-to-splits.md) page.
 
 ## Custom margins
 

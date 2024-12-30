@@ -9,7 +9,7 @@ ms.date: 11/14/2023
 You can monitor the delivery and performance of curated deal splits using two approaches:
 
 1. Supply Shaping Grid
-1. Deal Metrics Troubleshooting Report
+1. **Deal Metrics Troubleshooting** Report
 
 ## Supply shaping grid
 

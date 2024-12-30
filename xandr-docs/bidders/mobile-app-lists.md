@@ -44,7 +44,7 @@ Below are sample API calls for creating a new list and updating an existing list
 
 ### Create a new bundle list
 
-To create a new bundle list, use the following `POST` request.  
+Use the `POST` method to create a new app bundle list. The `bidder_id` must be included as a query parameter in the URL.
 
 > [!NOTE]
 > You must specify the `bidder_id`.
@@ -67,7 +67,7 @@ POST -- https://api.adnxs.com/app-bundle-list?bidder_id=129
 
 ### Edit an existing bundle list
 
-To edit an existing bundle list, use the following PUT request.
+Use the `PUT` method to update an existing app bundle list. The `id` in the URL corresponds to the app bundle list you want to modify.
 
 ```
 

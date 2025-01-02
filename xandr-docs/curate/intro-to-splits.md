@@ -37,4 +37,4 @@ Some important things to remember:
 - [Curator Supply Shaping](curator-supply-shaping.md)
 - [Create Splits](create-splits.md)
 - [Monitor Splits](monitor-splits.md)
-- [Report On Splits](report-on-splits.md)
+- [Split Report Details](report-on-splits.md)

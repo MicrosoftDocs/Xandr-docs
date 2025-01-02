@@ -34,4 +34,4 @@ To get started, see the [Introduction to Splits](intro-to-splits.md) page.
 - [Introduction to Splits](intro-to-splits.md)
 - [Create Splits](create-splits.md)
 - [Monitor Splits](monitor-splits.md)
-- [Report On Splits](report-on-splits.md)
+- [Split Report Details](report-on-splits.md)

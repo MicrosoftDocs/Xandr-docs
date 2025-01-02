@@ -60,4 +60,4 @@ Select the **Modify Columns** button to add other metrics, such as **Participati
 - [Curator Margins](curator-margins.md)
 - [Curator Supply Shaping](curator-supply-shaping.md)
 - [Create Splits](create-splits.md)
-- [Report on Splits](report-on-splits.md)
+- [Split Report Details](report-on-splits.md)

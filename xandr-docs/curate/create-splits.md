@@ -84,3 +84,4 @@ When you configure new spend allocations or edit existing spend allocations, the
 - [Curator Margins](curator-margins.md)
 - [Curator Supply Shaping](curator-supply-shaping.md)
 - [Curator Analytics Report](curator-analytics-report.md)
+- [Report on Splits](report-on-splits.md)

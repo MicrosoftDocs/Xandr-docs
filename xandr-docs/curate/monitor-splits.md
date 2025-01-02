@@ -49,7 +49,7 @@ These columns are useful when optimizing for specific buyer KPIs. Adjust margins
   1. Select the **Troubleshooting** tab and then open the **Troubleshooting Reports** panel.
   1. Under **Report Type**, select **Deal Metrics**, and under **Breakout Deal Metrics By**, select Split.
 
-This report provides the availability of each split based on **Imps Matched** and **Bid Requests** metrics. It also shows buyer bidding activity using the **Bids** and ****Imps Won** metrics and highlights splits generating significant volumes of **Ineligible Bids**.
+This report provides the availability of each split based on **Imps Matched** and **Bid Requests** metrics. It also shows buyer bidding activity using the **Bids** and **Imps Won** metrics and highlights splits generating significant volumes of **Ineligible Bids**.
 
 Select the **Modify Columns** button to add other metrics, such as **Participation Rate**, to track how each split's rate has evolved over time.
 
@@ -60,4 +60,4 @@ Select the **Modify Columns** button to add other metrics, such as **Participati
 - [Curator Margins](curator-margins.md)
 - [Curator Supply Shaping](curator-supply-shaping.md)
 - [Create Splits](create-splits.md)
-- [Report On Splits](report-on-splits.md)
+- [Report on Splits](report-on-splits.md)

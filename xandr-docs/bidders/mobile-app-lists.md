@@ -92,9 +92,11 @@ PUT https://api.adnxs.com/app-bundle-list/22
 
 ### FAQ
 
-**Is it possible to target both mobile app and domain lists simultaneously?**
+**Can I target both a mobile app list and a domain list simultaneously in the same bidder profile?**
 
-Yes, this is technically possible. However, mobile app bundle lists and domain lists have an AND relationship. If you are already targeting a domain list, create a separate profile to target the app list.
+While this is technically possible, please note that mobile app bundle lists and domain lists have an AND relationship. For example, if an app list and a domain list are both positively targeted (action = include) in the same profile, both conditions must be true for a request to pass.
+
+However, because requests typically originate from either mobile or web (not both), a single request rarely satisfies both conditions. Therefore, if you are targeting a domain list, we recommend creating a separate profile to target the app list.
 
 ## Related topics
 

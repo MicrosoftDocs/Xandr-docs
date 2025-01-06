@@ -82,5 +82,5 @@ If a demand partner will not be used again on a specific configuration and needs
 - [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)
 - [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
 - [Config Service](../digital-platform-api/config-service.md)
-- [PSP Campaign Objects Service](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?ga=1)
+- [PSP Campaign Objects Service](../digital-platform-api/campaign-object-service.md)
 - [Common Issues and Best Practices](psp-common-issues-and-best-practices.md)

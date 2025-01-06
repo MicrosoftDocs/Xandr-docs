@@ -8,14 +8,14 @@ ms.date: 11/14/2023
 
 ## Overview
 
-Supply Shaping enables advertisers to customize how curated deals behave during ad calls. Supply Shaping allows advertisers to optimize curated deals by customizing margins, floor prices, and spend allocations for specific inventory and audience segments.
+Supply Shaping enables advertisers to customize how curated deals behave in auctions. Supply Shaping allows advertisers to optimize curated deals by customizing margins, floor prices, and spend allocations for specific inventory and audience segments.
 
 > [!NOTE]
 > To use Supply Shaping, contact your Microsoft Advertising account representative.
 
-When you create a curated deal, you configure the inventory and the audiences you want to target. When the Microsoft Advertising platform receives an ad call, if your curated deal’s targeting criteria are met, your curated deal is added to the auction and sent to the buyer so they can bid on it.
+When you create a curated deal, you configure the inventory and the audiences you want to target. When the Microsoft Advertising platform receives an ad call, the platform add's it to the auction and sent to the buyer so they can bid on it.
 
-By default, curated deals respond uniformly to all ad calls. If the curated deal meets the targeting criteria, the platform adds it to the auction. If you have configured a floor or margin on your curated deal, these same settings are used in the auction.
+By default, curated deals behave the same way for every ad calls. If the curated deal's targeting criteria are met, the platform adds it to the auction. If you have configured a floor or margin on your curated deal, these same settings are used in the auction.
 
 There are scenarios where you might want your curated deal to behave differently for certain ad calls. For example:
 

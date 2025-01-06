@@ -22,9 +22,9 @@ Follow the steps below to configure **Supply Shaping** effectively:
 
 ## Custom margins
 
-You can customize margins for each split if your Curate seat and user have the necessary permissions. Follow the steps below to enable and configure custom margins.
+Follow the steps below to enable and configure custom margins.
 
-1. If your Curate seat and user are permissioned to take a margin, the **Use Custom Margins** checkbox will be available. Check the box to add the **Margin** column to the splits entry grid.
+1. The **Use Custom Margins** checkbox will be available. Check the box to add the **Margin** column to the splits entry grid.
 1. By default, each split will use the same margin value defined for your deal line item in the **Basic Settings** section. You can override this margin value by setting a specific value on each split.
 1. Your splits always use the same **Margin Type**—either percentage or CPM—that you selected for your deal line item in the **Basic Settings** section.
 
@@ -75,7 +75,7 @@ When you configure new spend allocations or edit existing spend allocations, the
 ### Common scenarios
 
 - **No spend on the curated deal** – If you’ve configured spend allocations for a curated deal but the buyer is not currently spending, the algorithm will not set any participation rates. All splits will participate at 100% until the algorithm has 1 hour of data to determine the natural spend allocation.
-- **No spend on a split** – If a split has a capped spend allocation but is not generating any spend, the algorithm will continue to try to respect its configured allocation without preventing us splits from delivering. However, a capped split with zero spend will severely limit the curated deal’s overall delivery.
+- **No spend on a split** – If a split has a capped spend allocation but is not generating any spend, the algorithm will continue to try to respect its configured allocation without preventing other splits from delivering. However, a capped split with zero spend will severely limit the curated deal’s overall delivery.
 
 ## Related topics
 

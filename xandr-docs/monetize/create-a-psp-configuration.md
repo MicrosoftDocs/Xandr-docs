@@ -19,7 +19,7 @@ All demand partners the publisher would like to bid on the inventory defined in 
 
 Demand partner parameters can be found:
 
-- In the PSP configuration UI, as detailed below
+- In the PSP configuration UI, as detailed below:
 - [On the Prebid site](https://docs.prebid.org/dev-docs/pbs-bidders.html) with full context and details
 - In the [PSP demand partner schema service](../digital-platform-api/demand-partner-schema-service.md)
 
@@ -174,5 +174,5 @@ To ensure any inventory not captured by other configurations is sent to demand p
 - [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)
 - [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
 - [Config Service](../digital-platform-api/config-service.md)
-- [PSP Campaign Objects Service](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU&CID=26bfef5d-df3c-4bca-9c36-1cab65d70630)
+- [PSP Campaign Objects Service](../digital-platform-api/campaign-object-service.md)
 - [Common Issues and Best Practices](psp-common-issues-and-best-practices.md)

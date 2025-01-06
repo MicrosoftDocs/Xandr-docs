@@ -101,7 +101,7 @@ A successful response will return JSON containing the member's cross-partner set
 | `member_id` | integer | The ID of the member associated with the configurations.|
 | `name` | string | The name of the configuration. |
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `1` placement  <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile|
-| `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype created by the [PSP campaign objects service](https://microsoftapc.sharepoint.com/:u:/r/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU). When creating configurations in the [PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically.|
+| `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype created by the [PSP campaign objects service](campaign-object-service.md), these objects are created and linked automatically.|
 | `targeting_level_name` | string | The name of the level (example: publisher). |
 | `targeting_metadata` | object | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required.** |
 
@@ -355,7 +355,7 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
 | `media_types` | object | Required | The media_types associated with the configuration. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
 | `name` | string | Required | The name of the configuration. |
-| `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a “psp” subtype created by the [PSP campaign objects service](https://microsoftapc.sharepoint.com/:u:/r/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU). When creating configurations in the [PSP UI](../monetize/create-a-psp-configuration.md), these objects are created and linked automatically. |
+| `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a “psp” subtype created by the [PSP campaign objects service](campaign-object-service.md). When creating configurations in the [PSP UI](../monetize/create-a-psp-configuration.md), these objects are created and linked automatically. |
 | `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1` placement <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile |
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#post-targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
 
@@ -573,13 +573,13 @@ On success, the configuration indicated will be returned as a JSON object with t
 
 ## Related topics
 
-- [PSP Campaign Objects Service](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?ga=1)
+- [PSP Campaign Objects Service](campaign-object-service.md)
 - [Demand Partner Schema Service](demand-partner-schema-service.md)
 - [Demand Partner Service](demand-partner-service.md)
 - [Prebid Demand Partner Params Service](prebid-demand-partner-params-service.md)
 - [Ad Sizes Service](ad-sizes-service.md)
 - [Media Type Service](media-type-service.md)
-- [Cross-Partner Settings Service](../digital-platform-api/cross-partner-settings-service.md)
+- [Cross-Partner Settings Service](cross-partner-settings-service.md)
 - [Create a New PSP Configuration](../monetize/create-a-psp-configuration.md)
 - [Prebid Server Premium Demand Partner Integrations](../monetize/prebid-server-premium-demand-partner-integrations.md)
 - [Common Issues and Best Practices](../monetize/psp-common-issues-and-best-practices.md)

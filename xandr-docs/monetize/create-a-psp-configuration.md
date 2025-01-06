@@ -19,7 +19,7 @@ All demand partners the publisher would like to bid on the inventory defined in 
 
 Demand partner parameters can be found:
 
-- In the PSP configuration UI, as detailed below
+- In the PSP configuration UI, as detailed below:
 - [On the Prebid site](https://docs.prebid.org/dev-docs/pbs-bidders.html) with full context and details
 - In the [PSP demand partner schema service](../digital-platform-api/demand-partner-schema-service.md)
 

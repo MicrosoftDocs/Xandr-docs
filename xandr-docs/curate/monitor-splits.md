@@ -8,8 +8,8 @@ ms.date: 11/14/2023
 
 You can monitor the delivery and performance of curated deal splits using two approaches:
 
-1. **Supply Shaping** Grid
-1. **Deal Metrics Troubleshooting** Report
+1. **Supply Shaping** grid
+1. **Deal Metrics Troubleshooting** report
 
 ## Supply shaping grid
 
@@ -20,27 +20,27 @@ The grid has two main column groups:
 
 ### 1. Spend allocations
 
-    The Spend Allocations group is the first group of columns in the grid and shows you data from the last 24 hours:
+The Spend Allocations group is the first group of columns in the grid and shows you data from the last 24 hours:
 
-    - **Natural** – The spend each split would have achieved without the spend allocation algorithm. It effectively represents the maximum possible spend for the split.
-    - **Configured** – The desired spend allocation set during split creation or editing.
-    - **Achieved** – The actual spend delivered due to the allocation algorithm's participation rates.
+- **Natural** – The spend each split would have achieved without the spend allocation algorithm. It effectively presents the maximum possible spend for the split.
+- **Configured** – The desired spend allocation set during split creation or editing.
+- **Achieved** – The actual spend delivered due to the allocation algorithm's participation rates.
 
-   Use these columns to identify the limiting splits— the splits where its configured allocation is furthest above the natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must adjust other splits to meet this allocation.
+  Use these columns to identify the limiting splits— the splits where its configured allocation is furthest above the natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must adjust other splits to meet this allocation.
 
   **Actions to improve deal delivery**:
 
-    - Lower the configured allocation for this split to bring it closer to its natural allocation.
-    - Expand the targeting for this split to give it more potential to generate spend.
-    - Reduce the margin for the split to enhance bid competitiveness.
-    - Investigate and address high ineligible bid rates.
+- Lower the configured allocation for this split to bring it closer to its natural allocation.
+- Expand the targeting for this split to give it more potential to generate spend.
+- Reduce the margin for the split to enhance bid competitiveness.
+- Investigate and address high ineligible bid rates.
 
 ### 2. Analytics
 
-   This group provides lifetime deal data, including:
+This group provides lifetime deal data, including:
 
-    - Performance metrics such as CPM, CPC, CTR, and viewability.
-    - Custom Margin and Custom Floor settings for each split.
+- Performance metrics such as CPM, CPC, CTR, and viewability.
+- Custom Margin and Custom Floor settings for each split.
 
 These columns are useful when optimizing for specific buyer KPIs. Adjust margins or floors to boost delivery for splits meeting the desired KPIs.
 

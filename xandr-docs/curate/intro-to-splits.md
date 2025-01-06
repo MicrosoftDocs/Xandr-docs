@@ -22,6 +22,7 @@ Each split has a priority, its own targeting criteria, and optional settings. Th
 
     - If the catch-all split is enabled, it will be selected. As in **step 2**, its margin and floor settings are used to add the curated deal to the auction.
     - If the catch-all split is disabled, the curated deal will not be added to the auction.
+
 1. The platform prepares a bid request for the auction and sends it to buyers.
 
 Some important things to remember:

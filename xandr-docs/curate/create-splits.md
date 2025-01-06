@@ -8,7 +8,7 @@ ms.date: 11/14/2023
 
 Use **Supply Shaping** to optimize curated deals by defining specific splits and settings.
 
-Follow the steps below to configure **Supply Shaping** effectively:
+To configure **Supply Shaping**, you can do the following actions in any order based on your needs:
 
 1. From the **Supply Shaping** panel, click the toggle to enable **Supply Shaping** for your curated deal. The **splits** entry grid will appear.
 1. From the **Targeting** dropdown, select which targeting criteria you want to define for your splits. This will add a column to the entry grid from which you can configure the targeting for each split.

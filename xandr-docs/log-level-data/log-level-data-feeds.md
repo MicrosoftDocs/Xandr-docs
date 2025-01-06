@@ -88,7 +88,6 @@ The table below lists which feeds are available via LLD, the feed handle for eac
 | Feed | Feed Handle | Columns |
 |---|---|---|
 | Auction Categories Feed | `auction_category_feed` | [View](auction-categories-feed.md) |
-| Auction Segment Feed | `auction_segment_feed` | [View](auction-segment-feed.md) |
 | Bid Landscape Feed | `bid_landscape_feed` | [View](bid-landscape-feed.md) |
 | Buyer Transparency Feed | `brand_transparency_feed` | [View](buyer-transparency-feed.md) |
 | Conversion Pixel Feed | `pixel_feed` | [View](conversion-pixel-feed.md) |

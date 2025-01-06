@@ -14,8 +14,6 @@
   items:
   - name: Auction Categories Feed
     href: auction-categories-feed.md
-  - name: Auction Segment Feed
-    href: auction-segment-feed.md
   - name: Bid Landscape Feed
     href: bid-landscape-feed.md
   - name: Buyer Transparency Feed

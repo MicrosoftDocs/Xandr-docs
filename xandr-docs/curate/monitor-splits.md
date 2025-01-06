@@ -28,12 +28,12 @@ The Spend Allocations group is the first group of columns in the grid and shows 
 
   Use these columns to identify the limiting splits— the splits where its configured allocation is furthest above the natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must adjust other splits to meet this allocation.
 
-  **Actions to improve deal delivery**:
+**Actions to improve deal delivery**:
 
-  - Lower the configured allocation for this split to bring it closer to its natural allocation.
-  - Expand the targeting for this split to give it more potential to generate spend.
-  - Reduce the margin for the split to enhance bid competitiveness.
-  - Investigate and address high ineligible bid rates.
+- Lower the configured allocation for this split to bring it closer to its natural allocation.
+- Expand the targeting for this split to give it more potential to generate spend.
+- Reduce the margin for the split to enhance bid competitiveness.
+- Investigate and address high ineligible bid rates.
 
 ### 2. Analytics
 

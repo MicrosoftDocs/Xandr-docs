@@ -27,7 +27,7 @@ To edit a PSP configuration, follow these steps:
    1. To quickly edit a demand partner’s parameters:
       1. Expand the partner in the side panel.
       1. Click the **Edit** (pencil) icon.
-1. To add a new demand partner:
+1. To add a **new** demand partner:
     1. Click **Add Demand Partner**.
     1. In the selection box, view the list of demand partners enabled in [PSP Global Settings](add-or-edit-a-demand-partner.md), or type to search by name.
     1. Select a demand partner. Required and optional parameters appear. Partner parameters are also available in the [Demand Partner Schema API Service](../digital-platform-api/demand-partner-schema-service.md) and on the [Prebid](https://docs.prebid.org/dev-docs/pbs-bidders.html) site.
@@ -82,5 +82,5 @@ If a demand partner will not be used again on a specific configuration and needs
 - [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)
 - [Prebid Server Premium Demand Partner Integrations](prebid-server-premium-demand-partner-integrations.md)
 - [Config Service](../digital-platform-api/config-service.md)
-- [PSP Campaign Objects Service](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?ga=1)
+- [PSP Campaign Objects Service](../digital-platform-api/campaign-object-service.md)
 - [Common Issues and Best Practices](psp-common-issues-and-best-practices.md)

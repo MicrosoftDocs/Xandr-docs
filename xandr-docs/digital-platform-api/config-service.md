@@ -5,9 +5,26 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Configuration service
+# Configuration Service
 
-The Configuration Service enables the retrieval, creation, and editing of Prebid Server Premium (PSP) configurations. PSP configurations are objects that map Monetize inventory to demand partners, allowing the partners to identify the inventory in bid requests. Each configuration includes an array of demand partner parameters attached which specify the values partners will receive. Note that the partners must first be added at the global level via the [demand partner service](demand-partner-service.md). Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
+Once inventory has been [Integrated with Prebid Server Premium (PSP)](../monetize/integrate-with-psp.md), [Cross-Partner Settings](../digital-platform-api/cross-partner-settings-service.md) have been reviewed, and [Demand partners](../digital-platform-api/demand-partner-service.md) have been enabled, inventory must be mapped to demand partners via PSP configurations. These mappings allow PSP to send bid requests with demand partners’ parameters so the partners can identify the inventory and better represent it to their buyers, increasing yield and honoring publisher settings such as floors and ad quality.
+
+- Each configuration targets a portion of publisher inventory in Monetize, either by a set of flexible targeting (geography, inventory type, key value, etc.) or by explicitly specifying Monetize objects (placement, placement group, publisher)
+- Each configuration includes one or more demand partners the publisher would like to bid on the inventory
+- Each demand partner specifies the required and optional parameters they want to receive in their [open-source Prebid Server Go adapter](https://docs.prebid.org/dev-docs/pbs-bidders.html), which are surfaced in PSP. These allow the partner to match the bid request to objects in their platform
+- Publishers fill out demand partner parameters with values mapped to objects in each partner’s platform, typically another supply-side platform (SSP)
+
+## Demand partner requirements
+
+All demand partners the publisher would like to bid on the inventory defined in a PSP configuration must be added to the same configuration. Before creating the first set of configurations, review requirements with each of the planned PSP demand partners to determine a mapping strategy. Some partners pull information dynamically from the bid request (ad size, geographic location, language, etc.) while others may require separate parameter mappings, and in turn, PSP configurations. If a demand partner requires very granular mapping to objects in their platform, that will determine how other partners are mapped and how many configurations are required. The better a demand partner can identify the inventory (either through the bid request or static Prebid parameters), the more information they can provide to their buyers, increasing publisher revenue.
+
+Demand partner parameters can be found:
+
+- In the PSP configuration service, as detailed below, or [within the UI](../monetize/add-edit-or-delete-a-psp-configuration.md) itself.
+- [On the Prebid site](https://docs.prebid.org/dev-docs/pbs-bidders.html) which provides full context and details.
+- In the [PSP demand partner schema service](demand-partner-schema-service.md).
+
+The documentation below describes how to create and manage configurations via API. Configurations can also be managed [through the UI](../monetize/add-edit-or-delete-a-psp-configuration.md).
 
 ## REST API
 
@@ -20,23 +37,23 @@ The Configuration Service enables the retrieval, creation, and editing of Prebid
 | `PATCH` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Update a portion of the existing Prebid configurations. |
 | `DELETE` | [https://api.appnexus.com/prebid/config/{prebidSettingsId}](https://api.appnexus.com/prebid/config/{prebidSettingsId}) | Delete an existing Prebid configuration. |
 
-## `GET`
+### GET
 
 Returns all Prebid configurations for the caller's member. Results are returned as JSON.
 
-### Parameters
+#### Parameters
 
 | Property | Scope | Type | Description |
 |:---|:---|:---|:---|
 | `status_filter` | string | Optional | Filter results based on whether a configuration is enabled or disabled. Pass the `status_filter` argument in the query and set the value to either *enabled* or *disabled*. |
 
-### Example call using curl with status filter arguments
+#### Example call using curl with status filter arguments
 
 ```
 curl --header "Content-Type: application/json" https://api.appnexus.com/prebid/config?status_filter=enabled
 ```
 
-### Example call using curl to return a specific configuration
+#### Example call using curl to return a specific configuration
 
 Append the configuration ID as the last component of the URL.
 
@@ -44,7 +61,7 @@ Append the configuration ID as the last component of the URL.
 curl --header "Content-Type: application/json"https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### Responses
+#### Responses
 
 A successful response will return JSON containing the member's cross-partner settings and all of their PSP configurations. Including a specific `prebidSettingsId` in the query string will lead to a response containing only that configuration.
 
@@ -84,7 +101,7 @@ A successful response will return JSON containing the member's cross-partner set
 | `member_id` | integer | The ID of the member associated with the configurations.|
 | `name` | string | The name of the configuration. |
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `1` placement  <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile|
-| `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations in the [PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically.|
+| `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype created by the [PSP campaign objects service](https://microsoftapc.sharepoint.com/:u:/r/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU). When creating configurations in the [PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically.|
 | `targeting_level_name` | string | The name of the level (example: publisher). |
 | `targeting_metadata` | object | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required.** |
 
@@ -143,7 +160,6 @@ The number of responses can be limited by passing the `num_elements` argument. W
 | `num_elements` | int | How many elements to return. For example, start at object # 4 and return 3 objects, or # 4, 5, 6. |
 | `start_element` | int | The number at which to start counting. |
 
-
 #### Example call to limit to fifteen results and to start the results at the tenth element
 
 The elements returned will be indexed from the 10th through the twenty-fifth.
@@ -152,7 +168,7 @@ The elements returned will be indexed from the 10th through the twenty-fifth.
 GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ```
 
-### Example response
+#### Example response
 
 ```
 
@@ -321,17 +337,17 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
        
 ```
 
-## `POST`
+### POST
 
 Enables the creation of a new configurations object.
 
-### Example call using curl
+#### Example call using curl
 
 ```
 curl -d @config.json -X POST --header "Content-Type: application/json" 'https://api.appnexus.com/prebid/config'
 ```
 
-### `POST`: Parameters
+#### POST: Parameters
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
@@ -339,18 +355,18 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
 | `media_types` | object | Required | The media_types associated with the configuration. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
 | `name` | string | Required | The name of the configuration. |
-| `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype line item attached to a profile. When creating configurations [in the PSP UI](../monetize/add-edit-or-delete-a-psp-configuration.md), these objects are created and linked automatically. |
+| `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a “psp” subtype created by the [PSP campaign objects service](https://microsoftapc.sharepoint.com/:u:/r/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?csf=1&web=1&share=EYGZNmETFyZMvtU0ojz-_6gBQJRs4otnzWsolwOuCQ4GPg&e=ZGrmhU). When creating configurations in the [PSP UI](../monetize/create-a-psp-configuration.md), these objects are created and linked automatically. |
 | `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1` placement <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile |
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#post-targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
 
-### `POST`: Demand partner configs properties
+#### POST: Demand partner configs properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
 
-### `POST`: Media types
+#### POST: Media types
 
 The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand partners.
 
@@ -362,14 +378,14 @@ The media type object determines which formats (currently banner, native, and vi
 | `sizes.is_standard` | boolean | Optional | Denotes whether the size has been defined as standard by the member. |
 | `types` | array | Required | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
-### `POST`: Targeting metadata properties
+#### POST: Targeting metadata properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `os_family_ids` | array | Optional | Demand Partners will only receive requests for this configuration where these operating systems are present. Operating systems represented by integer ids from the [Operating System-Families Service](operating-system-families-service.md). |
 | `priority` | integer | Optional | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the targeting_id is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
 
-### Example JSON request
+#### Example JSON request
 
 ```
 {
@@ -405,11 +421,11 @@ The media type object determines which formats (currently banner, native, and vi
             
 ```
 
-### Response
+#### Response
 
 A successful response will return the new configuration object.
 
-### `POST`: Example JSON response
+#### POST: Example JSON response
 
 ```
 [
@@ -459,17 +475,17 @@ A successful response will return the new configuration object.
                 
 ```
 
-## `PUT`
+### PUT
 
 Overwrite an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
-### `PUT`: Example call using curl
+#### PUT: Example call using curl
 
 ```
 curl -d @config-update.json -X PUT --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### `PUT`: Example JSON request
+#### PUT: Example JSON request
 
 ```
 {
@@ -508,21 +524,21 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
 }
 ```
 
-### `PUT`: Response
+#### PUT: Response
 
 Returns a Prebid configuration object.
 
-## `PATCH`
+### PATCH
 
 Partially update an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request. The request must include a top-level `config` object that contains the other elements to be updated.
 
-### PATCH: Example call using curl
+#### PATCH: Example call using curl
 
 ```
 curl -d @config-update.json -X PATCH --header "Content-Type: application/json https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### `PATCH`: Example JSON request
+#### PATCH: Example JSON request
 
 ```
 {
@@ -537,29 +553,33 @@ curl -d @config-update.json -X PATCH --header "Content-Type: application/json ht
 }
 ```
 
-### `PATCH`: Response
+#### PATCH: Response
 
 Returns a Prebid configuration object.
 
-## `DELETE`
+### DELETE
 
 Delete an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path.
 
-### `DELETE`: Example call using curl
+#### DELETE: Example call using curl
 
 ```
 curl -X DELETE https://api.appnexus.com/prebid/config/{prebidSettingsId}
 ```
 
-### `DELETE`: Response
+#### DELETE: Response
 
 On success, the configuration indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
 
 ## Related topics
 
+- [PSP Campaign Objects Service](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Prebid-Server-Premium-(PSP)---Flexible-Configurations---PSP-campaign-objects-service.aspx?ga=1)
 - [Demand Partner Schema Service](demand-partner-schema-service.md)
 - [Demand Partner Service](demand-partner-service.md)
 - [Prebid Demand Partner Params Service](prebid-demand-partner-params-service.md)
 - [Ad Sizes Service](ad-sizes-service.md)
 - [Media Type Service](media-type-service.md)
-- [Add, Edit, or Delete a PSP Configuration](../monetize/add-edit-or-delete-a-psp-configuration.md)
+- [Cross-Partner Settings Service](../digital-platform-api/cross-partner-settings-service.md)
+- [Create a New PSP Configuration](../monetize/create-a-psp-configuration.md)
+- [Prebid Server Premium Demand Partner Integrations](../monetize/prebid-server-premium-demand-partner-integrations.md)
+- [Common Issues and Best Practices](../monetize/psp-common-issues-and-best-practices.md)

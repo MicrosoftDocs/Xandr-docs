@@ -7,30 +7,30 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Country service
 
-The read-only Country Service allows you to see information about the countries registered in the Xandr system. You can use this service to retrieve the ID for targeting in campaigns (see `country_targets` in the [Profile Service](profile-service.md)).
+The read-only Country Service allows you to see information about the countries/regions registered in the Xandr system. You can use this service to retrieve the ID for targeting in campaigns (see `country_targets` in the [Profile Service](profile-service.md)).
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |---|---|---|
-| `GET` | [https://api.appnexus.com/country](https://api.appnexus.com/country) | View all countries. |
-| `GET` | [https://api.appnexus.com/country?id=ID](https://api.appnexus.com/country?id=ID) | View a specific country by ID. |
-| `GET` | [https://api.appnexus.com/country?name=NAME](https://api.appnexus.com/country?name=NAME) | View a specific country by NAME. |
-| `GET` | [https://api.appnexus.com/country?code=CODE](https://api.appnexus.com/country?code=CODE) | View a specific country by CODE. |
+| `GET` | [https://api.appnexus.com/country](https://api.appnexus.com/country) | View all countries/regions. |
+| `GET` | [https://api.appnexus.com/country?id=ID](https://api.appnexus.com/country?id=ID) | View a specific country/region by ID. |
+| `GET` | [https://api.appnexus.com/country?name=NAME](https://api.appnexus.com/country?name=NAME) | View a specific country/region by NAME. |
+| `GET` | [https://api.appnexus.com/country?code=CODE](https://api.appnexus.com/country?code=CODE) | View a specific country/region by CODE. |
 | `GET` | [https://api.appnexus.com/country/meta](https://api.appnexus.com/country/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the country. |
-| `name` | string | The name of the country. |
-| `code` | string | The ISO code for the country. |
-| `active` | Boolean | If true, the country is available for targeting. If false, there is no geolocation data for the country and so delivery is not possible. |
+| `id` | int | The ID of the country/region. |
+| `name` | string | The name of the country/region. |
+| `code` | string | The ISO code for the country/region. |
+| `active` | Boolean | If true, the country/region is available for targeting. If false, there is no geolocation data for the country/region and so delivery is not possible. |
 
 ## Examples
 
-### View all countries
+### View all countries/regions
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/country'
@@ -65,7 +65,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/country'
 }
 ```
 
-### View a specific country by ID
+### View a specific country/region by ID
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/country?id=59'
@@ -85,7 +85,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/country?id=59'
 }
 ```
 
-### View a specific country by code
+### View a specific country/region by code
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/country?code=DE'
@@ -107,7 +107,7 @@ $ curl -b cookies -c cookies 'https://api.appnexus.com/country?code=DE'
 }
 ```
 
-### View all countries that contain "United" in their names
+### View all countries/regions that contain "United" in their names
 
 ```
 $ curl -b cookies -c cookies 'https://api.appnexus.com/country?like_name=United'

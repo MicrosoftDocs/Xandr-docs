@@ -68,7 +68,7 @@ If you create Curator Analytics reports with the `report_interval` set to `"life
 | `curator_member_name` | string | No | `"My Account"` | Member name of the curator account |
 | `day` | date | Yes | `"2020-02-01"` | The day of the auction |
 | `device_type` | string | Yes | `"desktops & laptops"` | Device type on which the impression was served. Possible values are:<br> - `"desktops & laptops"`<br> - `"tablets"`<br> - `"mobile phones"`<br> - `"tv"`<br> - `"game consoles"`<br> - `"set top box"`<br> - `"media players"`<br> - `"other devices"` |
-| `geo_country` | string | Yes | `"US"` | The country in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
+| `geo_country` | string | Yes | `"US"` | The country/region in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country/region information is not provided. |
 | `hour` | date | Yes | `"2020-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
 | `media_type` | string | No | `"banner"` | Media type associated with the creative that served on this impression. Possible values are:<br> - `"banner"`<br> - `"pop"`<br>- `"interstitial"`<br> - `"video"`<br> - `"text"`<br> - `"expandable"`<br> - `"skin"`<br> - `"facebook"`<br> - `"image and text"`<br> - `"high impact"`<br> - `"native"`<br> - `"audio"`<br> - `"Unknown"` |
 | `member_currency` | string | Yes | `"USD"` | The currency associated with the curator member's seat |

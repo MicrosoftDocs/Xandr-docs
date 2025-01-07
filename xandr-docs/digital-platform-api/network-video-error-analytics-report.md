@@ -76,8 +76,8 @@ Data in this report is retained for 420 days.
 | `deal_name` | string | No | `"My Deal"` | The name of the deal. |
 | `deal` | string | No | `"My Deal(123)"` | The name and ID of the deal. |
 | `device_type` | string | Yes | `"Mobile"` | The type of device where the impression occurred. |
-| `geo_country` | string | Yes | `001` | The code for the geographic country. |
-| `geo_country_name` | string | No | `"USA"` | The name of the geographic country. |
+| `geo_country` | string | Yes | `001` | The code for the geographic country/region. |
+| `geo_country_name` | string | No | `"USA"` | The name of the geographic country/region. |
 | `imp_type` | string | Yes | `RTB` | The type of impression. An integer value which translates as follows:<br>`1` = Blank<br>`2` = PSA<br>`3` = Default Error<br>`4` = Default<br>`5` = Kept<br>`6` = Resold<br>`7` = RTB<br>`8` = PSA Error<br>`9` = External Impression<br>`10` = External Click |
 | `imp_type_id` | int | Yes | `7` | The ID of the associated impression type. Possible values:<br>`0` = Video event error<br>`1` = Blank: "200 OK" response (blank) served.<br>`2` = PSA: A public service announcement served because no other creative was eligible.<br>`3` = Default Error: A default creative served due to timeout issue.<br>`4` = Default: A default creative served because no campaigns bid or no other creative was eligible.<br>`5` = Kept: One of your managed advertisers served a creative.<br>`6` = Resold: The impression was sold to a third-party buyer.<br>`7` = RTB: Your creative served on third-party inventory.<br>`8` = PSA Error: A public service announcement served due to timeout issue.<br>`9` = External Impression: An impression from an impression tracker.<br>`10` = External Click: A click from a click tracker. |
 | `insertion_order_id` | int | Yes | `123` | The ID of the insertion order. |

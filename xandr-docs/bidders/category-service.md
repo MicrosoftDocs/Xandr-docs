@@ -36,7 +36,7 @@ The read-only Category Service allows you to view all categories that are regist
 | `requires_allowlist_on_managed` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on managed inventory.<br>**Default:** `false` |
 | `is_brand_eligible` | boolean | If `true`, then the category is eligible to be associated with brands within the audit process.<br>**Default:** `true` |
 | `requires_allowlist` | boolean | Whether brands or creatives in this category require allowlisting in order to serve.<br>**Default:** `false` |
-| `countries_and_brands` | array of objects | This array contains brand allowlist settings grouped by country. For more information, see "[Countries and Brands](#countries-and-brands)" below. |
+| `countries_and_brands` | array of objects | This array contains brand allowlist settings grouped by country or region. For more information, see "[Countries and Brands](#countries-and-brands)" below. |
 
 ### Countries and brands
 
@@ -44,8 +44,8 @@ The read-only Category Service allows you to view all categories that are regist
 |:---|:---|:---|
 | `brand_id` | int | The ID of the brand. |
 | `brand_name` | string | The name of the brand. |
-| `brand` | multi_object | An object containing information about the brand allowlisted in this country. For more information, see "[Brand](#regions-and-brands)" below. |
-| `country` | string | A 2-character string referencing the country in which the brand is allowlisted. For a list of supported codes, refer the ISO 3166-1 country codes. |
+| `brand` | multi_object | An object containing information about the brand allowlisted in this country or region. For more information, see "[Brand](#regions-and-brands)" below. |
+| `country` | string | A 2-character string referencing the country or region in which the brand is allowlisted. For a list of supported codes, refer the ISO 3166-1 country codes. |
 
 ### Regions and brands
 

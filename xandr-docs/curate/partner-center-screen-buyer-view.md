@@ -54,8 +54,8 @@ See [Search for Sellers](partner-center-screen-buyer-view.md#search-for-sellers)
 Use the filters to search the **Sellers** list for a seller that meets your partnership needs. You can filter the list of sellers by:
 
 - **Name/ID** - A specific seller's name or member ID.
-- **Primary Market** - The country in which the seller sold 50% or more of their total RTB impressions.
-  Sellers who do not sell 50% or more in a single country will not have
+- **Primary Market** - The country or region in which the seller sold 50% or more of their total RTB impressions.
+  Sellers who do not sell 50% or more in a single country or region will not have
   a primary market.
 - **Seller Eligibility** - Eligibility settings you have defined for sellers.
 

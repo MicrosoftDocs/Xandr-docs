@@ -62,8 +62,8 @@ In some cases Analytics reports can show delivery that does not match Lifetime Q
 | `pub_rule` | string | no | `"My Publisher Rule (736)"` | **Deprecated** (as of October 17, 2016). |
 | `pub_rule_code` | string | no | `"My Publisher Rule Code"` |  |
 | `seller_member_id` | int | yes | `456` | The ID of the selling member. |
-| `geo_country` | string | yes | `"US"` | The code of the geographical country. |
-| `geo_country_name` | string | no | `"United States"` | The name of the geographical country. |
+| `geo_country` | string | yes | `"US"` | The code of the geographical country/region. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country/region. |
 | `size` | string | yes | `"728x90"` | The size of the placement/creative served. |
 | `placement_id` | int | yes | `546` | The ID of the placement. <br><br>**Note:** For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
 | `placement_name` | string | no | `"300x250 Business"` | The name of the placement. Note that, for impressions older than 100 days, placements will be aggregated into one row with "All placement data older than 100 days" as the placement_name. |

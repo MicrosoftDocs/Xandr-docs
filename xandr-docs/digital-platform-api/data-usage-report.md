@@ -30,10 +30,10 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 
 | Column | Type | Filter? | Example | Description |
 |:---|:---|:---|:---|:---|
-| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression.|
+| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country/region associated with the impression.|
 | `campaign` | string | no | `"Prospect Campaign (31)"` | **Deprecated** (as of October 17, 2016). |
 | `data_provider` | string | no | `"Peer 39 (Data Provider) (517)"` | **Deprecated** (as of October 17, 2016). |
-| `geo_country` | string | yes | `"US"` | The code of the geographical country associated with the impression. |
+| `geo_country` | string | yes | `"US"` | The code of the geographical country/region associated with the impression. |
 | `targeted_segment_ids` | string | no | `"935035, 935146"` | The comma-separated list of IDs for each of the segments used when targeting. |
 | `day` | date | yes | `"2010-02-01"` | The day at which the auction associated with the impression occurred |
 | `hour` | date | yes | `"2010-02-01 05:00:00"` | The hour at which the auction associated with the impression occurred. |
@@ -44,7 +44,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 | `month` | date | yes | `"2010-02"` | The month at which the auction associated with the impression occurred |
 | `data_provider_name` | string | no | `"Peer 39 (Data Provider)"` | The name and ID of the third-party that provided the targeting data. |
 | `campaign_name` | string | no | `"Prospect Campaign"` | The name of the campaign associated with the impression that used third-party data targeting. |
-| `geo_country_name` | string | no | `"United States"` | The name of the geographical country associated with the impression. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country/region associated with the impression. |
 | `line_item_name` | string | no | `"Fall Apparel"` | The name of the line item associated with the impression that used third-party data targeting. |
 | `split_name` | string | Yes | `"Mobile Split A"` | The name of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any reports that contain campaigns, the `split_name` (if included) will be `null`. |
 

@@ -101,7 +101,7 @@ Use the targeting parameters below for your specific requirements.
 |  | Finland | fi.msn.com (26154), FI-001 (26155) | Content Category & Domain (MSN.COM) + Country Geo (FI) |
 |  | France | FR-001 (20368), fr.msn.com (25629) | Content Category & Domain (MSN.COM) + Country Geo (FR) |
 |  | Germany | DE-001 (20359), de.msn.com (25628) | Content Category |
-|  | Hong Kong | HK-001 (25532), hk.msn.com (25533) | Content Category |
+|  | Hong Kong SAR | HK-001 (25532), hk.msn.com (25533) | Content Category |
 |  | India | in.msn.com (25639), IN-001 (27044) | Content Category & Domain (MSN.COM) + Country Geo (IN) |
 |  | Indonesia | ID-001 (28093), ID.msn.com (28094) | Content Category & Domain (MSN.COM) + Country Geo (ID) |
 |  | Ireland | IE-001 (27607), ie.msn.com (27608) | Content Category |
@@ -123,7 +123,7 @@ Use the targeting parameters below for your specific requirements.
 |  | Switzerland | ch.msn.com (25637), CH-001 (24939), | Content Category & Domain (MSN.COM) + Country Geo (CH) |
 |  | Taiwan | tw.msn.com (25536), TW-001 (25537) | Content Category |
 |  | Thailand | th.msn.com (25643), TH-001 (26050) | Content Category & Domain (MSN.COM) + Country Geo (TH) |
-|  | Turkey | TR-001 (25438), tr.msn.com (25439) | Content Category |
+|  | Türkiye | TR-001 (25438), tr.msn.com (25439) | Content Category |
 |  | UK | UK-001 (20383), uk.msn.com (25630) | Content Category & Domain (MSN.COM) + Country Geo (UK) |
 |  | US | US-001 (20395), us.msn.com (25625) | Content Category |
 

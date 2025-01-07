@@ -42,7 +42,7 @@ For more information, see [Understanding Buyer Seat IDs](understanding-buyer-sea
 | 482 | MadHive Inc.     | Using  Seats | Members |
 | 483 | MSAN | Using Seats | Members & Seats |
 | 494 | PulsePoint, Inc. | Using Seats | Seats |
-| 529 | Baidu (Hong Kong) Limited | Using Seats | Seats |
+| 529 | Baidu (Hong Kong SAR) Limited | Using Seats | Seats |
 | 530 | Cognitiv | Using Seats | Seats |
 | 537 | OctillionMediaLLC | Using Seats | Seats |
 | 544 | MGID Inc | Using Seats | Seats |

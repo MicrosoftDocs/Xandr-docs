@@ -80,7 +80,7 @@ On augmented line items, there is an array field titled, '`custom_models`' which
 
 ### Target IP addresses
 
-Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
+Customers in countries or regions that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
 
 ### Multiple custom models
 

@@ -35,7 +35,7 @@ A line item defines your financial relationship with an advertiser, including bu
 >
 > **About Geography Targeting**
 >
-> For Augmented Line Item, it is mandatory to set at least one country as geography targeting. To add geography targeting, see **Country Targets** under **Targeting** section in the **[Profile Service](profile-service.md)** page.
+> For Augmented Line Item, it is mandatory to set at least one country/region as geography targeting. To add geography targeting, see **Country Targets** under **Targeting** section in the **[Profile Service](profile-service.md)** page.
 
 ## JSON fields
 

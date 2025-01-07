@@ -24,7 +24,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
       - `"member_targets": [{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}]`
 - **Filtering by country**
   - Set up a global "include" or "exclude" using the `"country_action"` parameter.
-  - Add the countries that you would like to include or exclude to the `"country_targets"` array as objects.
+  - Add the countries or regions that you would like to include or exclude to the `"country_targets"` array as objects.
     - `"country_targets": [{"country": "GB"},{"country": "US"},{"country": "DE"}]`
 - **Filtering by segment**
   - Set the `"segment_boolean_operator"` parameter to either "and or "or".
@@ -150,13 +150,13 @@ Create the profile that you want to be your parent profile using the [Legacy Bid
 
 This depends on your business logic. Common examples include:
 
-- Setup 1 - Filter on segments and countries at parent level, include seller-specific restrictions at child levels.
-  - Parent profile: Include segment 1 and segment 2; include countries A, B, C and D.
-  - Child profile 1: Include seller E; include domain list F; include countries B and C.
-  - Child profile 2: Include sellers F, G, exclude domain list H; allow all countries.
-  - Child Profile 3: Include sellers I, J, K; include countries A and D, include domain list L.
-- Setup 2 - Filter on countries, exclude sellers at the parent level.
-  - Parent profile: Include countries A, B, C; exclude sellers D and E.
+- Setup 1 - Filter on segments and countries or regions at parent level, include seller-specific restrictions at child levels.
+  - Parent profile: Include segment 1 and segment 2; include countries or regions A, B, C and D.
+  - Child profile 1: Include seller E; include domain list F; include countries or regions  B and C.
+  - Child profile 2: Include sellers F, G, exclude domain list H; allow all countries or regions.
+  - Child Profile 3: Include sellers I, J, K; include countries or regions A and D, include domain list L.
+- Setup 2 - Filter on countries or regions, exclude sellers at the parent level.
+  - Parent profile: Include countries or regions A, B, C; exclude sellers D and E.
   - No child profiles.
 - Setup 3 - Filter on domain list only.
   - Parent profile: Include domain list A.

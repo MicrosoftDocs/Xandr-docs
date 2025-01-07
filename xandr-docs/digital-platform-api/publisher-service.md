@@ -60,7 +60,7 @@ curl -b cookies -c cookies "https://api.appnexus.com/publisher?id=2,3,5,8,13,21&
 | `billing_city` | string (100) | The city of the billing address.<br>**Required On:** `POST`/`PUT`, if `inventory_relationship` is set to `direct`. |
 | `billing_state` | string (100) | The state of the billing address.<br>**Required On:** `POST`/`PUT`, if `inventory_relationship` is set to `direct`. |
 | `billing_zip` | string (100) | The zip code of the billing address.<br>**Required On:** `POST`/`PUT`, if `inventory_relationship` is set to `direct`. |
-| `billing_country` | string (100) | The country of the billing address.<br>**Required On:** `POST`/`PUT`, if `inventory_relationship` is set to `direct`. |
+| `billing_country` | string (100) | The country/region of the billing address.<br>**Required On:** `POST`/`PUT`, if `inventory_relationship` is set to `direct`. |
 | `accept_supply_partner_usersync` | boolean | If `true`, the publisher accepts usersync pixels from platform supply partners. (Recommended) |
 | `accept_demand_partner_usersync` | boolean | If `true`, the publisher accepts usersync pixels from platform demand partners. (Recommended) |
 | `accept_data_provider_usersync` | boolean | If `true`, the publisher accepts usersync pixels from platform data providers. (Recommended) |

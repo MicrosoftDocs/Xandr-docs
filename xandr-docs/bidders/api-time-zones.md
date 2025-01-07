@@ -278,10 +278,8 @@ The following timezone values are accepted for members, advertiser, and the othe
 - Asia/Beirut  
 - Asia/Bishkek  
 - Asia/Brunei  
-- Asia/Calcutta  
 - Asia/Choibalsan  
-- Asia/Chongqing  
-- Asia/Chungking  
+- Asia/Chongqing
 - Asia/Colombo  
 - Asia/Dacca  
 - Asia/Damascus  
@@ -294,6 +292,7 @@ The following timezone values are accepted for members, advertiser, and the othe
 - Asia/Hong_Kong
 - Asia/Hovd
 - Asia/Ho_Chi_Minh
+- Asia/Ho Chi Minh City
 - Asia/Irkutsk
 - Asia/Istanbul
 - Asia/Jakarta  
@@ -303,12 +302,12 @@ The following timezone values are accepted for members, advertiser, and the othe
 - Asia/Karachi
 - Asia/Kashgar
 - Asia/Kathmandu
+- Asia/Kolkata (Calcutta)
 - Asia/Krasnoyarsk
 - Asia/Kuala_Lumpur
 - Asia/Kuching
 - Asia/Kuwait  
 - Asia/Macao
-- Asia/Macau
 - Asia/Magadan
 - Asia/Makassar
 - Asia/Manila
@@ -322,7 +321,6 @@ The following timezone values are accepted for members, advertiser, and the othe
 - Asia/Pyongyang
 - Asia/Qatar
 - Asia/Qyzylorda
-- Asia/Rangoon
 - Asia/Riyadh
 - Asia/Saigon
 - Asia/Sakhalin
@@ -344,6 +342,7 @@ The following timezone values are accepted for members, advertiser, and the othe
 - Asia/Vientiane  
 - Asia/Vladivostok
 - Asia/Yakutsk
+- Asia/Yangon (Rangoon)
 - Asia/Yekaterinburg
 - Asia/Yerevan  
 - Atlantic/Azores
@@ -457,7 +456,7 @@ The following timezone values are accepted for members, advertiser, and the othe
 - Europe/Istanbul  
 - Europe/Jersey  
 - Europe/Kaliningrad  
-- Europe/Kiev  
+- Europe/Kyiv 
 - Europe/Lisbon  
 - Europe/Ljubljana  
 - Europe/London  
@@ -577,7 +576,7 @@ The following timezone values are accepted for members, advertiser, and the othe
 - ROC  
 - ROK  
 - Singapore
-- Turkey
+- Türkiye
 - UCT
 - Universal  
 - US/Alaska  

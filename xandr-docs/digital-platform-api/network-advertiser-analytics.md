@@ -89,8 +89,8 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated**. |
 | `deal_code` | string | No | `"External seller deal code"` | The custom code for the deal. For deals with external supply partners, this is generally the string that you use to identify the deal. |
 | `size` | string | Yes | `"728x90"` | Size of the creative/placement |
-| `geo_country` | string | Yes | `"US"` | Geographic country code |
-| `geo_country_name` | string | No | `"Unites States"` | Name of the country |
+| `geo_country` | string | Yes | `"US"` | Geographic country/region code |
+| `geo_country_name` | string | No | `"Unites States"` | Name of the country/region |
 | `creative_recency_bucket` | string | Yes | `"11-20"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Network Creative Frequency & Recency](./network-creative-frequency-and-recency.md) report to view creative recency data. |
 | `creative_recency_bucket_id` | string | No | `"4"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Network Creative Frequency & Recency](./network-creative-frequency-and-recency.md) report to view creative recency data. |
 | `creative_frequency_bucket` | string | Yes | `"15-30 minutes"` | **Deprecated**. If you request this dimension, only a default value will be returned. Please use the [Network Creative Frequency & Recency](./network-creative-frequency-and-recency.md) report to view creative frequency data. |
@@ -154,8 +154,8 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `seller_type` | string | Yes | `"Real Time"`, `"Direct"` | The type of media sold by the seller. |
 | `media_type` | string | Yes | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of the creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | yes | `2` | **Read-only**. The ID of the media type to which the subtype belongs. |
-| `venue_id` | int | Yes | `1805` | The ID of the cluster of domain, site, tag, and user country that the Xandr optimization system uses to determine bid valuations. |
-| `venue` | string | Yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country that the Xandr optimization system uses to determine bid valuations. |
+| `venue_id` | int | Yes | `1805` | The ID of the cluster of domain, site, tag, and user country/region that the Xandr optimization system uses to determine bid valuations. |
+| `venue` | string | Yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country/region that the Xandr optimization system uses to determine bid valuations. |
 | `predict_type_rev` | int | Yes | `2` | The optimization phase of the campaign. Possible values:<br>`-2` = No predict phase<br>`-1` = Base predict phase<br>`0` = Learn giveup<br>`1` = Learn<br>`2` = Throttled<br>`3` = Optimized<br>`4` = Biased<br>`5` = Optimized 1<br>`8` = Optimized giveup<br>`9` = Base bid below giveup |
 | `advertiser_type` | string | Yes | `"Local"` | The type of advertiser. See the `"labels"` field in the [Advertiser Service](./advertiser-service.md) for more details. |
 | `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |

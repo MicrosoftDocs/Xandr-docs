@@ -23,12 +23,12 @@ To enable cross-device tracking and measurement, select the identity graph you w
   Microsoft Advertising graph in Europe and the U.S. and to work closely with new market-leading data partners.
   
   > [!IMPORTANT]
-  > European cross device coverage is currently limited to the following key countries:
+  > European cross device coverage is currently limited to the following key countries or regions:
   >
   > - France
   > - Italy
   > - Germany
-  > - Great Britain
+  > - United Kingdom
   > - Spain
   > - Switzerland
   > - Austria

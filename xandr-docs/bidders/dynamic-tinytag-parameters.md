@@ -36,10 +36,10 @@ Identification either by ID or by member and code (see [Calling TinyTags Via Co
 | `truncate_ip` | If `1` or `true`, the last octet of the user's IP address will be truncated in the bid request. Use this flag for ad tags in jurisdictions where IP address is considered personally identifiable information. (The full IP address will continue to be used for operational purposes and security, of course.) For more details about Privacy and Xandr's platform, see Archive 2022 - Privacy and the Xandr Platform. | `truncate_ip=1` |
 | `prevent_rtb` | Indicates if non-deal RTB should be blocked. Possible values:<br>`0`: Use Xandr's platform API settings.<br>`1`: All RTB is blocked and Xandr's platform API settings are ignored.<br>If both `prevent_rtb` and `prevent_deals` are set to `1`, no bid requests will be sent. | `prevent_rtb=1` |
 | `prevent_deals` | Indicates if all deals should be blocked. Possible values:<br> - `0`: Use Xandr's platform API settings<br> - `1`: All deals are blocked and Xandr's platform API settings are ignored.<br>If both `prevent_rtb` and prevent_deals are set to `1`, no bid requests will be sent. | `prevent_deals=0` |
-| `gdpr` | Indicates if GDPR regulations or TCF logics are applied, or whether a user is located in a GDPR impacted country (EEA country). | `1 if yes, 0 if no.` |
+| `gdpr` | Indicates if GDPR regulations or TCF logics are applied, or whether a user is located in a GDPR impacted country or region (EEA country or region). | `1 if yes, 0 if no.` |
 | `gdpr_consent` | Indicates the actual IAB GDPR consent string. It implies which TCF vendors are permitted to process personal data and under which conditions. | `CO2jXwtO2jXwtB7AAAENAtC4AIAAAEJAAAqIAQAAAAAEAIAAAAACAAA.YAAAAAAAAAA` |
 | `gpp` | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions. | `gpp=DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN` |
-| `gpp_sid` | Indicates which regulation/s or GPP logic/s are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP. | `gpp_sid=6,7` |
+| `gpp_sid` | Indicates which regulation/s or GPP logic/s are to be applied, or whether a user is located in a country or region (EEA country or region) with a framework that is part of the GPP. | `gpp_sid=6,7` |
 
 ## Example usage
 

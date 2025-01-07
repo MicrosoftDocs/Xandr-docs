@@ -23,8 +23,8 @@ Mobile carriers, also known as wireless carriers or mobile network operators, ow
 |:---|:---|:---|
 | `id` | int | The ID of the mobile carrier. |
 | `name` | string | The name of the mobile carrier. |
-| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country in which the carrier operates. |
-| `country_name` | string | The name of the country in which the carrier operates. |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country or region in which the carrier operates. |
+| `country_name` | string | The name of the country or region in which the carrier operates. |
 | `codes` | array of objects | Third-party representations for the mobile carrier. See "Codes" below for more details. |
 
 ## Codes

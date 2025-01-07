@@ -73,7 +73,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Brand | Yes | The brand associated with the creative. Microsoft Advertising keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "Resold", no information is available in the Brand field for this report. |
-| Country | Yes | The country in which the impression took place. |
+| Country | Yes | The country or region in which the impression took place. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
 | Creative | Yes | The creative served for the impression. |
 | Creative Recency | Yes | How recently the creative was viewed by the user. For more information, see the [Creative Frequency and Recency Report](../monetize/creative-frequency-and-recency-report.md). |

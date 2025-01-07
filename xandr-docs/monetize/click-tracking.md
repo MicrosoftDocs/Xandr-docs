@@ -76,7 +76,7 @@ https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=${C
 ```
 
 Here "click" is the DoubleClick variable for accepting external click URLs. When the full URL string above is passed from Microsoft Advertising to the user's browser, the impression bus 
-will replace `${CLICK_URL}` with the actual click Microsoft Advertising URL, which is easily identified by the large number of capital A's present in the string. The Microsoft Advertising click URL will look something like this:
+will replace `${CLICK_URL}` with the actual click Microsoft Advertising URL, which is easily identified by the large number of uppercase A's present in the string. The Microsoft Advertising click URL will look something like this:
 
 ```
 https://nym1-ib.adnxs.com/click2?AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA__________-No5xOAAAAAAEAAAAAAAAAAAAAAAAAAABd8gsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAcAsHNwAAAAA./clickenc=

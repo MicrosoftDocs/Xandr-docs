@@ -22,7 +22,7 @@ There's no single right way to set up your bidder profile ([Legacy Bidder Profil
       `"member_targets": [{"id": "100","action": "exclude"},{"id": "101","action": "exclude"}]`
 - **Filtering by country**
   - Set up a global `"include"` or `"exclude"` using the `"country_action"` parameter.
-  - Add the countries that you would like to include or exclude to the `"country_targets"` array as objects.
+  - Add the countries or regions that you would like to include or exclude to the `"country_targets"` array as objects.
     - `"country_targets": [{"country": "GB"},{"country": "US"},{"country": "DE"}]`
 - **Filtering by size**
   - Include the list of creative sizes for which your bidder has creatives. This list should be exhaustive if you choose to filter by creative size.

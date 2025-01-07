@@ -50,8 +50,8 @@ Data retention period for this report is 30 days.
 | `publisher_name` | string | no | `"Neat Publisher Ltd"` | The name of the publisher. |
 | `publisher` | string | no | `"Neat Publisher Ltd (789)"` | A string consisting of the publisher name and publisher ID. |
 | `size` | string | yes | `300x250` | The width and height of the placement associated with the impression. |
-| `geo_country` | string | yes | `"US"` | The country abbreviation. |
-| `geo_country_name` | string | no | `"United States"` | The name of the geographical country. |
+| `geo_country` | string | yes | `"US"` | The country/region abbreviation. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country/region. |
 | `site_id` | int | yes | `555` | The ID of the site. For more information, see the [Site Service](site-service.md). |
 | `site_name` | string | no | `"My Site"` | The name of the site. For more information, see the [Site Service](site-service.md). |
 | `site` | string | no | `"My Site (555)"` | A string containing the name and ID of the site. For more information, see the [Site Service](site-service.md). |

@@ -42,8 +42,8 @@ The `report_interval` field in the JSON request can be set to one of the followi
 | `cleared_direct` | int | No | Yes | If this is set to 1, then the impression was successfully served on direct inventory. Possible values: <br> - `0` = not direct inventory <br> - `1` = direct inventory |
 | `day` | date | Yes | Yes | Day. |
 | `gender` | string | No | Yes | The gender of the user. |
-| `geo_country` | string | No | Yes | The display name of the country followed by the ID (Xandr format). |
-| `geo_country_name` | string | No | No | Country. |
+| `geo_country` | string | No | Yes | The display name of the country or region followed by the ID (Xandr format). |
+| `geo_country_name` | string | No | No | Country or region. |
 | `hour` | date | Yes | Yes | The hour of the auction. <br><br> **Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
 | `imp_type` | string | No | Yes | The type of impression served. Possible values: <br> - `1` = blank <br> - `2` = PSA <br> - `3` = default error <br> - `4` = default <br> - `5` = kept <br> - `6` = resold <br> - `7` = RTB <br> - `8` = PSA resulting from a default error <br> - `9` = external impression <br> - `10` = external click |
 | `is_delivered` | boolean | No | Yes | If true, the impression was served successfully. |

@@ -48,15 +48,15 @@ Data retention period for this report is 365 days. Data in this report has a dai
 | `platform` | string | Yes | `"desktop"`, `"mobile"`, or `"connected device"` | Filter for the type of device used. |
 | `nielsen_campaign_ref` | string | No | `"scm1521250"` | The Nielsen campaign reference ID. |
 | `start_date` | date | No | `2021-04-26`  | The date on which Nielsen first started collecting data. |
-| `country_name` | string | No | `"United States"` | Country where impressions were recorded.
-| `country_code` | string | Yes | `91` | The code representing a country where impressions were recorded. |
+| `country_name` | string | No | `"United States"` | Country/region where impressions were recorded.
+| `country_code` | string | Yes | `91` | The code representing a country/region where impressions were recorded. |
 | `split_name` | string | No | `"My Split"` | The name of a line item's split. |
 
 ## Metrics
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `population` | int | `11080000` | N/A | Based on census-provided data, the number of people in the country included in a given demographic. |
+| `population` | int | `11080000` | N/A | Based on census-provided data, the number of people in the country/region included in a given demographic. |
 | `total_imps` | int | `89` | N/A | The total number of impressions your line item has made. |
 | `on_target_imps` | int | `32` | On Target Impressions = Impressions Seen by Target Demographic ÷ Total Impression Count for your Line Item | The number of impressions served to your desired demographic group that are within your selected reporting dimensions. |
 | `imps_share` | double | `0.5128205128205128` | Impressions Share (%) = Demographic Impressions ÷ Total Number of Impressions Across all Demographic Groups × 100 | Based on the line item's total impression count, the percentage that served to your targeted demographic. |

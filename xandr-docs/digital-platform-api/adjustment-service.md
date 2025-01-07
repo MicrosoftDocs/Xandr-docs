@@ -93,7 +93,7 @@ Status can be one of the following values:
 | Field | Type | Described |
 |:---|:---|:---|
 | `clicks` | int | Optional value for number of clicks over the adjustment period. |
-| `country` | string | The two-letter code for the country for which impression data will be adjusted. |
+| `country` | string | The two-letter code for the country or region for which impression data will be adjusted. |
 | `height` | int | The height of placements for which data will be adjusted. |
 | `imp_types` | string | **Default**: `"kept"`<br><br>The types of impressions for which data will be adjusted. Possible values:<br> - `"default"`: A default creative served because no campaigns bid or no other creative was eligible.<br> - `"kept"`: One of your managed advertisers served a creative.<br> - `"resold"`: The impression was sold to a third-party buyer. |
 | `imps` | int | Optional value for the number of impressions over the adjustment period. |
@@ -185,7 +185,7 @@ $ cat adjustment
 
 *Report before adjustment*
 
-| Publisher | Site | Placement | Payment Rule | Country | Size | Media Type | Payment Type | Media Cost | Imps |
+| Publisher | Site | Placement | Payment Rule | Country/Region | Size | Media Type | Payment Type | Media Cost | Imps |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
 | NY Post | Business | Home Page | $1 CPM | US | 728x90 | Banner | Owner CPM | 1 | 1000 |
 | NY Post | Business | Home Page | $1 CPM | CA | 728x90 | Banner | Owner CPM | 0.5 | 500 |
@@ -218,7 +218,7 @@ $ curl -b cookies -c cookies -X POST -d @adjustment 'https://api.appnexus.com/ad
 
 *Report after adjustment*
 
-| Adjustment ID | Publisher | Site | Placement | Payment Rule | Country | Size | Media Type | Payment Type | Media Cost | Imps |
+| Adjustment ID | Publisher | Site | Placement | Payment Rule | Country/Region | Size | Media Type | Payment Type | Media Cost | Imps |
 |:---|:---|:---|*:---|:---|:---|:---|:---|:---|:---|:---|
 | 0 | NY Post | Business | Home Page | $1 CPM | US | 728x90 | Banner | Owner CPM | 1 | 1000 |
 | 1 | NY Post | Business | Home Page | $1 CPM | US | 728x90 | Banner | Owner CPM | -0.322033898305085 | -125 |

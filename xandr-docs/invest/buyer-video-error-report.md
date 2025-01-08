@@ -83,7 +83,7 @@ This report's data is retained for 420 days.
 | Video Player Size | Y | The size of the player based on width in pixels, e.g., 'small', 'medium', 'large'. |
 | Creative Duration | N | The length of the video creative, in seconds. |
 | Bidder Name | N | The name of the bidder associated with the impression. |
-| Country | Y | The country in which the impression took place. |
+| Country | Y | The country/region in which the impression took place. |
 | Seller | N | The name of the seller associated with the impression. |
 | Supply Type | Y | The supply type for the impression - Web, Mobile Web, or Mobile App. |
 

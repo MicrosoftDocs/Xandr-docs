@@ -163,7 +163,7 @@ We reserve the right to implement additional screening at any time.
 |--|--|
 | **Address** | Address of the person, group, organization, or business that is advertising. |
 | **City** | City of the person, group, organization, or business that is advertising. |
-| **Country** | Country of the person, group, organization, or business that is advertising. |
+| **Country** | Country/region of the person, group, organization, or business that is advertising. |
 | **Independent Expenditure Committee** | Select this if any ads are being paid for by an independent expenditure committee: a political committee that makes only independent expenditures; that is, it spends money on political communications that expressly advocate the election or defeat of a clearly identified candidate and does not coordinate with a candidate, a candidate’s authorized committee, or an agent of the candidate. |
 | **Organization Name** | Name of the person, group, organization, or business that is paying you to advertise on Microsoft Advertising. |
 | **Payment Method** | How the political organization pays you. Options are:<br>**- Bank account (direct deposit)**<br>**- Check**<br>**- Credit or debit card**<br>**- Other**. If this is selected, you must specify details. |

@@ -39,9 +39,9 @@ Data retention period for this report is 60 days.
 | `day` | date | yes | `"2010-02-01"` | The day at which the auction associated with the impression occurred. |
 | `hour` | date | yes | `"2010-02-01 05:00:00"` | The hour at which the auction associated with the impression occurred. |
 | `buyer_member_id` | int | yes | `643` | The ID of the member that used the data provided by the third-party vendor (e.g., user segment providers). |
-| `geo_country` | string | yes | `"US"` | The code of the geographical country associated with the impression. |
-| `geo_country_name` | string | no | `"United States"` | The name of the geographical country associated with the impression. |
-| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country associated with the impression.|
+| `geo_country` | string | yes | `"US"` | The code of the geographical country/region associated with the impression. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country/region associated with the impression. |
+| `geo_country_code` | string | yes | `"CA"` | A two-character string denoting the country/region associated with the impression.|
 | `campaign_id` | int | yes | `31` | The ID of the campaign associated with the impression that used third-party data targeting. |
 | `campaign_name` | string | no | `"Prospect Campaign"` | The name of the campaign associated with the impression that used third-party data targeting. |
 | `campaign` | string | no | `"Prospect Campaign (31)"` | The name and ID of the campaign associated with the impression. |

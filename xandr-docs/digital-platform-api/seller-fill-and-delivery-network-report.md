@@ -69,8 +69,8 @@ The `time_granularity` of the data is `hourly`. For instructions on retrieving a
 | `publisher_id` | int | Yes | `44389` | The ID associated with the publisher on whose site the impression occurred. |
 | `publisher_name` | string | No | `"LOL - US"` | The name of the publisher on whose site the impression occurred. |
 | `publisher` | string | Yes | `"LOL - US (44389)"` | A full description of the publisher on whose site the impression occurred, including the `publisher_name` and `publisher_id`. |
-| `geo_country` | string | Yes | `"US"` | The code of the geographical country. |
-| `geo_country_name` | string | No | `"United States"` | The name of the geographical country. |
+| `geo_country` | string | Yes | `"US"` | The code of the geographical country/region. |
+| `geo_country_name` | string | No | `"United States"` | The name of the geographical country/region. |
 | `site_id` | int | Yes | `223936` | The ID of the [site](./site-service.md) containing this placement. |
 | `site_name` | string | No | `"Total-Web Email"` | The name of the [site](./site-service.md) where the impression occurred. |
 | `site` | string | No | `"Total-Web Email (223936)"` | A full description of the [site](./site-service.md) where the impression occurred, including the `site_name` and `site_id`. |

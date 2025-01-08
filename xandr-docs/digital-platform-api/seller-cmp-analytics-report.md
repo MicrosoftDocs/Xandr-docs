@@ -63,7 +63,7 @@ Data retention period for this report is 30 days.
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `ad_requests_gdpr_country` | int | `10000` | ad_requests_gdpr_country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country, or the impression contained a consent string. |
+| `ad_requests_gdpr_country` | int | `10000` | ad_requests_gdpr_country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country/region, or the impression contained a consent string. |
 | `ad_requests_gdpr_applied` | int | `970` | ad_requests_gdpr_applied | The number of incoming ad requests for which TCF logic was applied. We apply TCF logic if the IAB OpenRTB Specified flag `gdpr` is set to `1` or if the `gdpr` flag is omitted but the request includes a `gdpr_consent` field. If your digital properties intend to use TCF for all GDPR-covered inventory, this number should be close to `num_ad_requests_gdpr_country`. |
 | `ad_requests_gdpr_applied_malformed_consent_string` | int | `876` | ad_requests_gdpr_applied_malformed_consent_string | The number of incoming ad requests for which GDPR is applied, and the consent string is non-blank but malformed. |
 | `ad_requests_gdpr_applied_blank_consent_string` | int | `988` | ad_requests_gdpr_applied_blank_consent_string | The number of incoming ad requests for which GDPR is applied, and the consent string is blank. |

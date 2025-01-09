@@ -16,7 +16,8 @@ These linked pages contain instructions on using the various API Services relate
 | [Ad Server Category Mapping Service](adserver-category-mapping-service.md) | Allows the mapping of Xandr content categories to IAB subcategories. |
 | [Ad Size Service](ad-sizes-service.md) | Returns the acceptable ad sizes for the member associated with the config. |
 | [Bidder Info Service](bidder-info-service.md) | Returns the capabilities of each bidder. |
-| [Config Service](config-service.md) | Instructions for viewing, creating, and editing configurations which map Xandr inventory to demand partner inventory. |
+| [Campaign Object Service](campaign-object-service.md) | Provides instructions for targeting Monetize inventory as input for the [configuration service](config-service.md). |
+| [Configuration Service](config-service.md) | Instructions for viewing, creating, and editing configurations which map Xandr inventory to demand partner inventory. |
 | [Cross-Partner Settings Service](cross-partner-settings-service.md) | Instructions for viewing and editing the member's global settings which apply across all demand partners. |
 | [Demand Partner Service](demand-partner-service.md) | Instructions for adding and editing demand partners. |
 | [Demand Partner Schema Service](demand-partner-schema-service.md) | Returns the parameters accepted by the demand partner. |

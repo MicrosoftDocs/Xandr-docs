@@ -20,13 +20,13 @@ To add, manage, or delete an app bundle list in the UI:
 1. Select the **Bidder Settings** tab.
 1. Scroll down to the **app bundle lists** section.
 
-:::image type="content" source="media/bidder-wide-settings.png" alt-text="Screenshot that explains the Bidder Settings tab.":::
+:::image type="content" source="media/bidder-settings.png" alt-text="Screenshot explaining the Bidder Settings tab.":::
 
-:::image type="content" source="media/app-bundle-list.png" alt-text="Screenshot that explains the app bundle list.":::
+:::image type="content" source="media/app-bundle-lists.png" alt-text="Screenshot that explains the app bundle list.":::
 
 Once you have located the **App bundle lists** section, you can use the navigation controls to edit, delete, view, or add a new app bundle list:
 
-:::image type="content" source="media/test-bidder-bundle-list2.png" alt-text="Screenshot that explains the Bidder Bundle list.":::
+:::image type="content" source="media/test-bidder-bundle-lists.png" alt-text="Screenshot that explains the Bidder Bundle list.":::
 
 To block or target an app bundle list:
 

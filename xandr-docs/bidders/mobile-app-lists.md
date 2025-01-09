@@ -35,7 +35,7 @@ To block or target an app bundle list:
 1. Scroll to the **App bundle list** dropdown.
 1. From the dropdown, select the bundle list to block or target.
 
-:::image type="content" source="media/new-bidder-profile.png" alt-text="Screenshot that explains the Bidder profile.":::
+:::image type="content" source="media/new-bidder-profiles.png" alt-text="Screenshot that explains the Bidder profile.":::
 
 ### Bulk upload or edit bundle lists
 

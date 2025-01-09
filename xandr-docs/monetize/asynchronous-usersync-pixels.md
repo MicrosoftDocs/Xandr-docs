@@ -47,9 +47,9 @@ In order for our clients to meet their transparency, notice and choice/consent r
 
 ### `${GDPR_APPLIES}`
 
-Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. `1` if yes and `0` if no.
+Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country/region, or if we have a GDPR-required signal passed with the request. `1` if yes and `0` if no.
 
-A `"0"` may be received from an EEA country. It is the publisher's choice to signal in this manner.
+A `"0"` may be received from an EEA country/region. It is the publisher's choice to signal in this manner.
 
 ### `${GDPR_CONSENT_STRING}`
 

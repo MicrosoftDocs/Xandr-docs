@@ -39,6 +39,7 @@ Exchanges are groups of sellers (members) organized to allow for easier supply 
 - [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
 - [Countries](countries.md)
 - [Domain Lists](domain-lists.md)
+- [Mobile App Lists](mobile-app-lists.md)
 - [Ad Types](ad-types.md)
 - [Supply Types](supply-types.md)
 - [Unknown Users](unknown-users.md)

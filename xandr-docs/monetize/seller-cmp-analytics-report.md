@@ -90,7 +90,7 @@ Data for this report is grouped into rows by the day.
 | Column | Description |
 |--|--|
 | Ad Requests GDPR Applied | The number of incoming ad requests for which Microsoft Advertising applied TCF logic. Microsoft Advertising applies TCF logic if the IAB OpenRTB Specified flag gdpr is set to 1 or if the gdpr flag is omitted but the request includes a gdpr_consent field. If your digital properties intend to use TCF for all GDPR-covered inventory, this number should be close to Ad Requests GDPR Country. |
-| Ad Requests GDPR Country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country, or the impression contained a consent string. |
+| Ad Requests GDPR Country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country/region, or the impression contained a consent string. |
 | Blank Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), but the string was either blank or the field gdpr_consent was omitted. This number should ideally be zero. |
 | Invalid CMP Impressions | Number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is NOT registered with the IAB, as seen at [https://iabeurope.eu/cmp-list/](https://iabeurope.eu/cmp-list/). |
 | Malformed Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), but the string received could not be decoded. This number should ideally be zero. |

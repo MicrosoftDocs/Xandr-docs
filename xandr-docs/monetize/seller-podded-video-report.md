@@ -64,7 +64,7 @@ This report's data is retained for 420 days. For more information about how quic
 | Browser | String | Yes | `webOS Browser (33)` | The name of the browser. |
 | Call Type | String | Yes |  | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, ut, mob, ptv, openrtb) |
 | City | String | Yes | `Vienna` | The city in which the user is located. |
-| Country | String | Yes | `"France"` | The country of the user's location, both name and code, in the format "France". The string "250" can appear in cases where we don't know the country or if the country doesn't map correctly to a location in our database. |
+| Country | String | Yes | `"France"` | The country/region of the user's location, both name and code, in the format "France". The string "250" can appear in cases where we don't know the country/region or if the country/region doesn't map correctly to a location in our database. |
 | Device Type | String | Yes | `"set top box"` | The type of device on which the impression was served. Possible values are:<br> - "desktops & laptops"<br> - "tablets"<br> - "mobile phones"<br> - "tv"<br> - "game consoles"<br> - "set top box"<br> - "media players"<br> - "other devices" |
 | Inventory URL | String | No |  | The URL of the inventory or application package. |
 | Language | String | No | `German (6)` | The language of the creative. |

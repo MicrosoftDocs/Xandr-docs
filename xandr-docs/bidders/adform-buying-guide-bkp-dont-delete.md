@@ -4,9 +4,9 @@ description: In partnership with Adform, Microsoft has created this guide to hel
 ms.author: shsrinivasan
 ms.date: 07/22/2024
 ---
-<!--
-# Adform buying guide 
 
+# Adform buying guide Backup
+<!--
 In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. This information has been created in collaboration with and approved by the Adform team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. 
 
 We recommend that if buyers are having issues, or if they need help using the Adform platform, their first point of contact should be the Adform team.

@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 In order to debug mobile auctions effectively, you will have to spoof the `carrier` parameter in a debug auction on our [Mobile Ad Call Reference](mobile-ad-call-reference.md). This will simulate that an impression is coming from a certain telecommunications carrier.
 
-The following table provides a list of carrier codes sorted by country for your convenience.
+The following table provides a list of carrier codes sorted by country/region for your convenience.
 
 | Code | Name |
 |--|--|

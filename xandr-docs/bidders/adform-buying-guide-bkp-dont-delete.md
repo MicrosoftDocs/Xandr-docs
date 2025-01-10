@@ -1,11 +1,11 @@
 ---
 title: Adform Buying Guide-Backup
-description: In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. 
+description: In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP Backup. 
 ms.author: shsrinivasan
 ms.date: 07/22/2024
 ---
-
-# Adform buying guide
+<!--
+# Adform buying guide 
 
 In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. This information has been created in collaboration with and approved by the Adform team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. 
 
@@ -296,3 +296,4 @@ If an Adform buyer has issues serving on Xandr inventory, we recommend that they
 ## Adform and TCF compliance
 
 Adform only supports TCF 2.0 traffic. Non-TCF 2.0 traffic will be treated as no consent given. Adform is still able to bid on non-TCF 2.0 traffic but only with non-personalised ads.
+-->

@@ -94,7 +94,7 @@ Data for this report is grouped into rows by the day.
 | Blank Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), but the string was either blank or the field gdpr_consent was omitted. This number should ideally be zero. |
 | Invalid CMP Impressions | Number of incoming ad requests for which GDPR is applied, the consent string is valid, and the CMP used to generate the impression is NOT registered with the IAB, as seen at [https://iabeurope.eu/cmp-list/](https://iabeurope.eu/cmp-list/). |
 | Malformed Consent Strings | The number of ad requests where Microsoft Advertising applied TCF logic ("GDPR applied"), but the string received could not be decoded. This number should ideally be zero. |
-| Percent Ad Requests GDPR Applied | The percentage of incoming ad requests from GDPR-implementing countries for which GDPR is applied. |
+| Percent Ad Requests GDPR Applied | The percentage of incoming ad requests from GDPR-implementing countries/regions for which GDPR is applied. |
 | Percent Bad Consent Strings | The percentage of incoming ad requests for which GDPR is applied and the consent string is non-blank and malformed. |
 | Percent Blank Consent Strings | The percentage of incoming ad requests for which GDPR is applied and the consent string is blank. |
 | Percent TCF Version 1 Impressions | The percentage of incoming ad requests for which GDPR is applied and the consent string is valid and encoded according to TCF v1. |

@@ -31,6 +31,7 @@ When you close the Ad Types tab, a summary is shown in the upper right-hand corn
 - [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
 - [Countries](countries.md)
 - [Domain Lists](domain-lists.md)
+- [Mobile App Lists](mobile-app-lists.md)
 - [Supply Types](supply-types.md)
 - [Exchanges and Members](exchanges-and-members.md)
 - [Unknown Users](unknown-users.md)

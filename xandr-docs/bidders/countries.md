@@ -25,6 +25,7 @@ When you close the **Countries** tab, a summary is shown in the upper right-hand
 - [Additional Functions](additional-functions.md)
 - [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
 - [Domain Lists](domain-lists.md)
+- [Mobile App Lists](mobile-app-lists.md)
 - [Ad Types](ad-types.md)
 - [Supply Types](supply-types.md)
 - [Exchanges and Members](exchanges-and-members.md)

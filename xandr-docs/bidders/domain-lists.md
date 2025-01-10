@@ -30,6 +30,7 @@ If you want to view a portion of what is included with your domain list, click 
 - [Additional Functions](additional-functions.md)
 - [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
 - [Countries](countries.md)
+- [Mobile App Lists](mobile-app-lists.md)
 - [Ad Types](ad-types.md)
 - [Supply Types](supply-types.md)
 - [Exchanges and Members](exchanges-and-members.md)

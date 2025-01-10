@@ -1,5 +1,5 @@
 ---
-title: Adform Buying Guide
+title: Adform Buying Guide-Backup
 description: In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. 
 ms.author: shsrinivasan
 ms.date: 07/22/2024

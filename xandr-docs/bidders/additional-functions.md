@@ -49,6 +49,7 @@ We appreciate your feedback! You can submit feedback by clicking **Submit Feedb
 - [Unknown Users](unknown-users.md)
 - [Countries](countries.md)
 - [Domain Lists](domain-lists.md)
+- [Mobile App Lists](mobile-app-lists.md)
 - [Ad Types](ad-types.md)
 - [Supply Types](supply-types.md)
 - [Exchanges and Members](exchanges-and-members.md)

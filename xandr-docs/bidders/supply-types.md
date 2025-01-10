@@ -25,6 +25,7 @@ When you close the **Supply Types** tab, a summary is shown in the upper right-h
 - [Bidder Profile Targeting Options](bidder-profile-targeting-options.md)
 - [Countries](countries.md)
 - [Domain Lists](domain-lists.md)
+- [Mobile App Lists](mobile-app-lists.md)
 - [Ad Types](ad-types.md)
 - [Exchanges and Members](exchanges-and-members.md)
 - [Unknown Users](unknown-users.md)

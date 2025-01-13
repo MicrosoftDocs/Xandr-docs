@@ -1,25 +1,23 @@
-- name: Customer Support Portal Guide
+- name: Microsoft Advertising Customer Support Portal Guide 
   href: index.yml
-- name: Overview
-  href: xcs-xandr-customer-support-home.md
+- name: Get Started
+  items:
+  - name: Overview
+    href: xcs-xandr-customer-support-home.md
+- name: Login to Microsoft Advertising Customer Support Portal 
+  items:
+  - name: Overview
+    href: xcs-logging-in-to-the-customer-support-portal.md
+  - name: Microsoft Identity Platform Login
+    href: microsoft-identity-platform-login.md
+  - name: Microsoft Identity Platform Login Troubleshooting
+    href: microsoft-identity-platform-login-troubleshooting.md
 - name: Functionalities
   items:
-  - name: Login
-    items:
-    - name: Logging in to the Customer Support Portal
-      href: xcs-logging-in-to-the-customer-support-portal.md
-    - name: Microsoft Identity Platform Login
-      href: microsoft-identity-platform-login.md
-    - name: Microsoft Identity Platform Login Troubleshooting
-      href: microsoft-identity-platform-login-troubleshooting.md
-  - name: Report Outages
-    href: xcs-reporting-outages.md
-  - name: Search the Knowledge Base
-    href: xcs-searching-the-knowledge-base.md
   - name: Open a New Case
     href: xcs-opening-a-new-case.md
   - name: Update a Case
     href: xcs-updating-a-case.md
-  - name: Update Profile, Settings and Password
-    href: xcs-updating-my-profile.md
+- name: Microsoft Advertising Customer Support Portal FAQs 
+  href: xcs-customer-support-portal-faqs.md
  

@@ -1,13 +1,15 @@
 ---
-title: Adform Buying Guide-Backup
-description: In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP Backup. 
+title: Adform Buying Guide
+description: In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. 
 ms.author: shsrinivasan
-ms.date: 07/22/2024
+ms.date: 01/10/2025
 ---
 
-# Adform buying guide Backup
-<!--
-In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. This information has been created in collaboration with and approved by the Adform team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. 
+# Adform buying guide
+
+In partnership with Adform, Microsoft has created this guide to help Monetize publishers communicate with their buyers about accessing and targeting Monetize’ publisher inventory using Adform as their DSP. This information has been created in collaboration with and approved by the Adform team. 
+> [!NOTE] 
+> The platforms can and will change regularly. We will do our best to update this guide as needed. 
 
 We recommend that if buyers are having issues, or if they need help using the Adform platform, their first point of contact should be the Adform team.
 
@@ -35,7 +37,6 @@ Most publishers are accessible by targeting the main inventory source “**Xandr
 | CPX Interactive |
 | Canadian Programmatic Marketplace |
 | Dailymotion |
-| Adform Xandr |
 | FigaroMedias |
 | Hi-Media |
 | IDG Tech Network |
@@ -67,12 +68,12 @@ Most publishers are accessible by targeting the main inventory source “**Xandr
 | Zodiak Active |
 | bRealTime Select |
 
-The above list will help buyers check the Xandr publisher they are trying to deliver on and what inventory source it is included under. For example, if a buyer wants to deliver on Seznam and Microsoft on the open exchange, they should ensure that Seznam.cz and Microsoft Ad Exchange inventory sources are targeted in their line item. 
+The above list will help buyers check the Xandr publisher they are trying to deliver on and what inventory source it is included under. For example, if a buyer wants to deliver on Seznam and Microsoft on the open exchange, they should ensure that Seznam.cz and Microsoft Ad Exchange inventory sources are targeted in their Line item. 
 
 For deal inventory source targeting, please refer to the [Targeting deals](#targeting-deals) section.
 
 > [!NOTE]
-> All inventory sources are enabled by default and buyers can access all open auction inventory available.
+> All inventory sources are enabled by default. Buyers need to ensure they are targeting those inventory sources to access all open auction inventory available.
 
 ## Targeting Xandr inventory on Adform
 
@@ -80,7 +81,7 @@ In the **Inventory tab**, you can manage your inventory sources, deals, domains,
 
 :::image type="content" source="media/adform-inventorytab.png" alt-text="Screenshot of the Inventory tab on Adform.":::
 
-In the **Inventory sources** section, you can see the count of all the inventory sources that are selected for your line item. By default, all inventory sources are selected. You can edit the list of inventory sources by clicking on the **Update Selection** button.
+In the **Inventory sources** section, you can see the count of all the inventory sources that are selected for your Line item. By default, all inventory sources are selected. You can edit the list of inventory sources by clicking on the **Update Selection** button.
 
 Once you click on this button, a side panel with the Inventory Marketplace opens, where you can see the list of all the available inventory sources. In this list, the main inventory source “**Xandr – Monetize SSP (AppNexus)**” will be displayed.
 
@@ -88,7 +89,7 @@ Once you click on this button, a side panel with the Inventory Marketplace opens
 
 ## Targeting deals
 
-In the **Deals** section, you can see the count of all the deals selected for your line item. You can edit the list of deals by clicking on the **Update Selection** button.
+In the **Deals** section, you can see the count of all the deals selected for your Line item. You can edit the list of deals by clicking on the **Update Selection** button.
 
 :::image type="content" source="media/adform-targettingdeals.png" alt-text="Screenshot of the deal count in the Deals section on Adform.":::
 
@@ -96,16 +97,19 @@ The following deal types will be automatically synchronised within the buyer acc
 
 - **Single-buyer deals**: deals will be synced to the selected seat.
 - **Multi-buyer deals**: deals will be synced to the selected seats.
-- **Bidder level deals**: deals are public and accessible to everyone. So, any clients can accept the deal in Deal Management UI and add it to line item.
+- **Bidder level deals**: deals are public and accessible to everyone. So, any clients can accept the deal in Deal Management UI and add it to Line item.
 
 The following deal types need to be created manually:
 
 - Curated deals
-- Automated deal types (can be manually created if the automatic sync fails)
 
-### Deal Sync (automated deal creation)
+If Automatic sync fails, automated deal types can be created manually.
 
-If you work with publishers that use Microsoft Monetize, preferred deals, PG, and private auction deals might be available in your Adform DSP account automatically through Deal Sync (please see [Manually Created Deals](#manually-created-deals-including-curated-deals) for exclusions).
+### Deal sync (automated deal creation)
+
+Deals generated by sellers/publishers through Microsoft Monetize (regardless of inventory source) will be available in your Adform DSP account automatically through Deal Sync. This applies to Preferred, PG and Private deals. Please see [Automated Deal Sync](#targeting-deal-syncs) for more details. Curate deals created through Microsoft Curate will need to be set up manually. Please see [Manually Created Deals](#manually-created-deals-including-curated-deals) for more details
+
+
 
 #### Targeting deal syncs
 
@@ -115,13 +119,13 @@ If you work with publishers that use Microsoft Monetize, preferred deals, PG, an
 1. Adform automatically imports all the deals.
 1. Search the **Deal list** to find the deal ID that the publisher has provided to you.
 1. Approve the deal.
-1. Add the deal to your programmatic line item.
+1. Add the deal to your programmatic Line item.
 
-You won't be able to select the deal in your programmatic line item unless it has an "**Approved”** status. If you are unable to find the deals, reach out to [Adform support](mailto:support@adform.com).
+You won't be able to select the deal in your programmatic Line item unless it has an "**Approved”** status. If you are unable to find the deals, reach out to [Adform support](mailto:support@adform.com).
 
 ### Manually created deals (including Curated deals)
 
-Curate deals and deals under the "**Xandr – Monetize SSP (AppNexus)**” source need to be created manually.
+Curate deals need to be created manually.
 
 #### Creating a deal manually
 
@@ -138,7 +142,6 @@ Curate deals and deals under the "**Xandr – Monetize SSP (AppNexus)**” sourc
     The deal ID can be up to 100 characters.
 
     > [!IMPORTANT]
-    >
     > - You can’t change the deal ID once you save the deal.
     > - Deal IDs are always unique across all SSPs and exchanges.
 
@@ -149,8 +152,8 @@ Curate deals and deals under the "**Xandr – Monetize SSP (AppNexus)**” sourc
 1. To specify a single advertiser that can access the deal, click on **Select** and then choose the advertiser. By default, Adform selects **All**.
 
 1. In the **Pricing** section, specify the **Type** of deal: **Private** or **Preferred**.
-
-    This is for your information only. The type of the deal is agreed upon with the publisher.
+    > [!NOTE] 
+    > The type of the deal is agreed upon with the publisher.
 
 1. In the **Price** field, enter the agreed floor price. This is for your information only.
 
@@ -159,29 +162,84 @@ Curate deals and deals under the "**Xandr – Monetize SSP (AppNexus)**” sourc
 After you create the deal, Adform shows it in the **Deals** list as an accepted deal.
 
 > [!IMPORTANT]
->
 > - The only information you can change once you create a deal is the deal’s name.
 > - You can’t delete a deal after you've created it, but you can reject it in the Deals list.
 
 #### Targeting manually created deals
 
-Once you create the deal, you can add it to your programmatic line item targeting setup.
+Once you create the deal, you can add it to your programmatic Line item targeting setup.
 
-1. On the deal section page, click on the Update Selection button. A side panel with the Marketplace opens, where you can see the list of all available deals.
+1. On the deal section page, click on the **Update Selection** button. A side panel with the Marketplace opens, where you can see the list of all available deals.
 
     :::image type="content" source="media/adform-deals.png" alt-text="Screenshot of the list of available deals in the Deals section on Adform.":::
 
-1. Select the deals you want to add to your programmatic line item.
+1. Select the deals you want to add to your programmatic Line item.
 
 1. Once all deals have been selected, click on the “**Apply Changes**” button to save.
 
 > [!IMPORTANT]
 > The Xandr Monetize Inventory Source limitation for deal sync is aimed to be resolved in 2024.
 
-## Programmatic guaranteed (PG) line items
+## Programmatic Guaranteed (PG) Line items
 
-To successfully run PG line items, follow these steps:
+There are three ways to initiate the setup of a new programmatic guaranteed line item in a campaigns list:
+- Next to the order's name, click  > **Create programmatic guaranteed line item**.
+- Next to the campaign's name, click  > **Create programmatic guaranteed line item**. If the campaign has more than one order, in the side panel, select a parent order for the new line item. Then click **Create**.
+- In the toolbar, click **Create** > **Programmatic guaranteed line item**. In the side panel, select a parent advertiser, campaign, and order for the new line item. Then click **Create**.
 
+:::image type="content" source="media/adform-cpm.png" alt-text="Screenshot of the line item pricing model on Adform.":::
+
+- Line item budget needs to be large enough to buy all the agreed impressions.
+
+To create a programmatic guaranteed line item, define these general settings:
+
+1. In the **Line Item Details** section, enter the name of your line item. Develop a convention for your Line item names to keep them organized and recognizable in the list.
+1. Select the **Status** of the Line item. To start bidding with this Line item, select **Active**; to stop bidding, select **Paused**. We recommend to select **Paused** while creating the Line item. Only select **Active** after you have defined all the Line item settings.
+1. In the **Schedule** section, click the Line item schedule link.
+1. In the side panel, select the dates in the calendar.
+1. In the date list below the calendar, to modify the time for each day, edit the fields in the **Time range** column
+1. Click **Apply**
+1. In the Programmatic Budget Flights section, select the **Budget type**. Programmatic guaranteed Line items can have one of the two types:
+    1. **Monetary Budget**: The delivery of this Line item is capped by monetary limitations.
+    1. **Impressions**: The delivery of this Line item is defined by the number of impressions that should be reached.
+To lock the programmatic guaranteed line item budget and ensure effective delivery, the campaign, order, and Line item must have matching budget types, and budget goals set to **Total**.
+1. Enter a **Start date** and **End date** for the budget flight.
+1. Enter the **Budget** for the budget flight. To ensure that the programmatic guaranteed Line item delivers as agreed in the deal, the following settings are set by default and can't be edited:
+    - **Parent Budget and Pacing** is turned off.
+    - Pacing is set to **ASAP**.
+    - Goal is set to **Total**.
+1. To add multiple budget flights, click **Add Flight** and repeat the steps 8-9.
+1. In the **Buying Strategy** section, enter the **Max CPM**. Make sure MAX CPM is higher the programmatic guaranteed deal price including all the fees. To ensure effective programmatic guaranteed Line item delivery, by default, programmatic guaranteed Line item has the **Branding** strategy and the **Bid Flat (fixed CPM)** and they can't be edited.
+1. Activate the Line item only after the tags are approved. See **Approval status of RTB tags** for more information.
+    
+## Set up inventory targeting
+
+In the Inventory tab, manage the deals that your programmatic guaranteed line items target. Typically, only one deal is assigned to a programmatic guaranteed line item, but it's also possible to assign multiple deals based on your needs. To target a deal, first, you need to either set it up manually or enable automatic deal import.
+
+To target a programmatic guaranteed deal:
+1.	Click **Update Selection**.	
+
+:::image type="content" source="media/update-selection.png" alt-text="Screenshot of Update selection screen on Adform.":::
+
+1. In the **Deals** side panel, select the Xandr deal that you agreed on with the publisher. (All programmatic guaranteed deals have the **Preferred** type assigned.) You can search for the specific deal using its deal ID.
+
+:::image type="content" source="media/deal-side-panel.png" alt-text="Screenshot of deals side panel on Adform.":::
+
+1. You can only select a deal if it has an **Approved** status. Make sure you don't select open exchanges and target only deals of interest.
+1. If you want to set a specific bid price for the deal, click **Set Bid Price**. Alternatively, you can also edit the bid price in the Inventory tab, after you apply the changes in the Deals side panel. The price set for the deal in the line item inventory settings overrides the price and the algorithm selected in general settings.
+1. In the **Bid Price** side panel, enter the bid price agreed with the publisher.
+1. In the **Bid Price** side panel, click **Apply Changes**.
+1. In the **Deals** side panel, click **Apply Changes**.
+
+> [!NOTE]
+> - Create tags for approval at least 48 hours before the campaign start date. 
+> - Tags should include all banner sizes that the deal was negotiated for.
+
+> [!NOTE]
+> For requests regarding PG campaigns, please reach out to [Adform support](mailto:support@adform.com)
+
+
+<!--
 1. If a line item has been previously created, pause the line item.
 
     :::image type="content" source="media/adform-lineitem.png" alt-text="Screenshot of setting the line item status to Paused on Adform.":::
@@ -226,10 +284,12 @@ To successfully run PG line items, follow these steps:
 
 > [!NOTE]
 > For requests regarding PG campaigns, please reach out to [Adform support](mailto:support@adform.com).
+-->
+
 
 ## Check approval status of RTB tags
 
-All created RTB tags for creatives are sent to inventory sources for approval. Whether you just created a new RTB tag or want to troubleshoot already created tags, you can check RTB Approval Status from the right-side panel in the **Tags Overview** page. A creative gets submitted for Xandr’s approval when it gets assigned to a line item that is actively targeting Xandr inventory.
+All created RTB tags for creatives are sent to inventory sources for approval. Whether you just created a new RTB tag or want to troubleshoot already created tags, you can check RTB Approval Status from the right-side panel in the **Tags Overview** page. A creative gets submitted for Xandr’s approval when it gets assigned to a Line item that is actively targeting Xandr inventory.
 
 To check the RTB tag approval status in Adform Platform:
 
@@ -240,15 +300,12 @@ To check the RTB tag approval status in Adform Platform:
     1. **Approved:** The inventory source has approved the tag.
     1. **In Progress:** Adform has sent the tag to the inventory source and is awaiting approval.
     1. **Not Supported:** The ad type or the tag isn't supported by the inventory source.
-    1. **Not Sent:** This is the initial status of the tag before sending it for approval.
-    <br>
-    You can view the percentage and number of inventories that have assigned this status to your tags.
+    1. **Not Sent:** This is the initial status of the tag before sending it for approval. You can view the percentage and number of inventories that have assigned this status to your tags.
 1. Click the  :::image type="content" source="media/adform-dropdown.png" alt-text="Screenshot of drop down button."::: button to expand each status category and view the list of inventories that assigned this status.
 
 > [!NOTE]
 > - Using third-party ads extends the tag approval process, as tags must undergo additional auditing to ensure no malicious content is served. This process can take up to 24 hours. Since some exchanges may take up to 48 hours to approve tags, assign banners to corresponding line items few days before the campaign starts.
->
-> - It is highly recommended to assign the creatives to corresponding line items a few days prior to campaign start.
+> - It is highly recommended to assign the creatives to corresponding Line items a few days prior to campaign start.
 
 
 ## Resend tags for approval
@@ -265,7 +322,7 @@ To resend your tags to the publisher for approval after making adjustments, foll
 > [!NOTE] 
 > Contact [Adform support](mailto:support@adform.com) if your tag is approved but statistics aren't collected.
 
-## FAQ(s) and Troubleshooting
+## FAQ(s) and troubleshooting
 
 ### FAQ(s)
 
@@ -286,9 +343,9 @@ If an Adform buyer has issues serving on Xandr inventory, we recommend that they
 1. If they cannot resolve the issue using Adform, Adform will open a ticket with Xandr platform support.
 1. Sellers can reach out to [Xandr Support](https://help.xandr.com/s/) or to their Xandr account manager.
 
-## Buyer identification using buyer seat IDs
+## Buyer identification using Buyer Seat ID
 
-- Adform supports Xandr's Buyer Seat ID feature. Member breakouts and virtual seats are no longer used for each Adform buyer.
+- Adform supports Xandr's **Buyer Seat ID** feature. Member breakouts and virtual seats are no longer used for each Adform buyer.
 - Deals should be set up using Adform Agency or Advertiser Seat IDs. Buyers should confirm their buyer seat ID when requesting a deal from a publisher. If buyers are not aware of their seat id, please contact [Adform support](mailto:support@adform.com).
 - If a seller is unable to find the seat ID shared by the buyer in the SSP, submit a request to [Xandr Support](https://help.xandr.com/s/) for the buyer seat ID to be added.
 
@@ -296,4 +353,3 @@ If an Adform buyer has issues serving on Xandr inventory, we recommend that they
 ## Adform and TCF compliance
 
 Adform only supports TCF 2.0 traffic. Non-TCF 2.0 traffic will be treated as no consent given. Adform is still able to bid on non-TCF 2.0 traffic but only with non-personalised ads.
--->

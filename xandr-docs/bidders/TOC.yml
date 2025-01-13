@@ -115,6 +115,8 @@
     href: trade-desk-buying-guide.md
   - name: Deal Sync with Trade Desk - Publisher Guide
     href: deal-sync-with-trade-desk---publisher-guide.md
+  - name: Adform Buying Guide
+    href: adform-buying-guide.md
 - name: Bidder Integration
   items:
   - name: Overview

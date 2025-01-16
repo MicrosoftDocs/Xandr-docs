@@ -19,7 +19,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 
 **Recent Changes**
 
-| Date | Country | Action | Change Summary |
+| Date | Country/Region | Action | Change Summary |
 |--|--|--|--|
 | 2023-12-07 | Afghanistan | Addition | - 277 Cities |
 |  | Afghanistan | Deactivation | - 339 Cities |
@@ -318,9 +318,9 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Tunisia | Addition | - 21 Cities |
 |  | Tunisia | Deactivation | - 45 Cities |
 |  | Tunisia | Modification | - 1 City |
-|  | Turkey | Addition | - 580 Cities |
-|  | Turkey | Deactivation | - 702 Cities |
-|  | Turkey | Modification | - 21 Cities |
+|  | Türkiye | Addition | - 580 Cities |
+|  | Türkiye | Deactivation | - 702 Cities |
+|  | Türkiye | Modification | - 21 Cities |
 |  | Turkmenistan | Addition | - 2 Cities<br> - 1 Region |
 |  | Tuvalu | Addition | - 1 City<br> - 1 Region |
 |  | Ukraine | Addition | - 1706 Cities |
@@ -637,9 +637,9 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Trinidad And Tobago | Addition | - 5 Cities |
 |  | Tunisia | Addition | - 5 Cities |
 |  | Tunisia | Deactivation | - 22 Cities |
-|  | Turkey | Addition | - 183 Cities |
-|  | Turkey | Deactivation | - 420 Cities |
-|  | Turkey | Modification | - 12 Cities |
+|  | Türkiye | Addition | - 183 Cities |
+|  | Türkiye | Deactivation | - 420 Cities |
+|  | Türkiye | Modification | - 12 Cities |
 |  | Ukraine | Addition | - 1356 Cities |
 |  | Ukrain | Deactivation | - 1278 Cities |
 |  | Ukrain | Modification | - 75 Cities |
@@ -967,9 +967,9 @@ The table below provides a summary of recent additions, deactivations, and modif
 |  | Trinidad And Tobago | Addition | - 1 City |
 |  | Tunisia | Addition | - 14 Cities |
 |  | Tunisia | Deactivation | - 17 Cities |
-|  | Turkey | Addition | - 281 Cities |
-|  | Turkey | Deactivation | - 527 Cities |
-|  | Turkey | Modification | - 15 Cities |
+|  | Türkiye | Addition | - 281 Cities |
+|  | Türkiye | Deactivation | - 527 Cities |
+|  | Türkiye | Modification | - 15 Cities |
 |  | Ukraine | Addition | - 1590 Cities |
 |  | Ukraine | Deactivation | - 1545 Cities |
 |  | Ukraine | Modification | - 102 Cities |

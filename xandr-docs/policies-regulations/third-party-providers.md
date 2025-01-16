@@ -382,7 +382,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | AcuityAds | Addictive Mobility | AdElement, Inc. | Adello Group AG | Adelphic |
 | AdForm | AdGear | Admixser Eu gmbH | Adobe - Display | Adobe - Video |
 | AdPilot | adtheorent_bidder | Adtube AS | Amazon Advertising | Amobee |
-| AmobeeTV | AN Data Science Internal 1 | Appier Inc. | Axel Springer Teaser Ad GmbH | Baidu (Hong Kong) Limited |
+| AmobeeTV | AN Data Science Internal 1 | Appier Inc. | Axel Springer Teaser Ad GmbH | Baidu (Hong Kong SAR) Limited |
 | Basis Technologies | Beeswax | Bidswitch | Bidtellect | Bidtheatre |
 | Biga Bid Media Ltd | Blis Media Ltd. | Chalk Digital, Inc. | ClickDistrict | Cognitiv |
 | Craid Inc. | Crimson Tangerine Ltd. | Criteo | Dealer.com | DeepIntent, Inc. |

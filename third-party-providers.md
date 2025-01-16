@@ -2546,7 +2546,7 @@ class="table">
 <td class="entry">AN Data Science Internal 1</td>
 <td class="entry">Appier Inc.</td>
 <td class="entry">Axel Springer Teaser Ad GmbH</td>
-<td class="entry">Baidu (Hong Kong) Limited</td>
+<td class="entry">Baidu (Hong Kong SAR) Limited</td>
 </tr>
 <tr class="even row">
 <td class="entry">Basis Technologies</td>

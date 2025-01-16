@@ -121,7 +121,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the **Split** column (if included) will be null. |
 | Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](working-with-creatives.md). <br><br>**Note:** For impressions older than 100 days, creatives will be aggregated into one row with `0` as the ID and a generic name. |
 | Media Type | Yes | The media type associated with the creative that served on this impression. |
-| Country | Yes | The country in which the impression took place. |
+| Country | Yes | The country/region in which the impression took place. |
 | Size | Yes | The size of the creative, e.g., 320x50. There may be situations where the size listed in the report does not match the size of the placement. This happens when Promo Sizes come into the equation. When a creative serves into a placement fulfilling a size in the Promo Sizes Array, the size reported is the `size` of the creative, which could be different from the promo size or the placement's size. |
 | Bid Type | Yes | See [Bid Types](#bid-types) below for definitions of the different types of bids. |
 | Advertiser Currency | Yes | The default currency of the advertiser who purchased this impression. This is set when an advertiser is created. For more information, see [Create an Advertiser](create-an-advertiser.md). <br><br> **Tip:** To display the cost/revenue in the local currency, select **Adv. Currency** as a dimension. <br/> This dimension is available only when Currency 2.0 is disabled. |

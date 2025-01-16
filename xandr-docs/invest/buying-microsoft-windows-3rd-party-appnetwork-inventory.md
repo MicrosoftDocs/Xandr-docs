@@ -24,7 +24,7 @@ Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Mi
 - 13 billion monthly impressions worldwide.
 
 > [!TIP]
-> Inventory Research with specific break-downs of Windows App inventory by size & country can be accessed via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
+> Inventory Research with specific break-downs of Windows App inventory by size and country/region can be accessed via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
 
 ## Formats and specifications
 

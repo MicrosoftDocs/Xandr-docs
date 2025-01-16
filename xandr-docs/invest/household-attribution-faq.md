@@ -39,8 +39,8 @@ If someone resets their router or their ISP assigns a new IP address between the
 Xandr does not truncate IP addresses before anonymizing and storing them. IP addresses from impressions are first hashed/anonymized and then stored for up to 30 days. Only IP addresses that meet all privacy requirements are used in this process.  
 
  
-### Is this feature available in all countries? 
-Yes, this feature is available worldwide, with the exception of countries on Microsoft's exclusion list. 
+### Is this feature available in all countries/regions? 
+Yes, this feature is available worldwide, with the exception of countries/regions on Microsoft's exclusion list. 
 
  
 ### Is this feature compliant with GDPR and CCPA regulations?  

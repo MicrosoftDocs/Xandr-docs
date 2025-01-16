@@ -62,7 +62,7 @@ For more information about how quickly report data is processed, see [Availabili
 | Advertiser | Yes | The advertiser that used the third-party data and incurred these costs. |
 | Buying Currency | Yes | The buying currency used for the transaction that incurred the third-party data usage costs. |
 | Campaign | Yes | The campaign that used the third-party data and incurred these costs. (Does not apply to all advertisers.) |
-| Country | Yes | The country that the impression is from. |
+| Country | Yes | The country/region that the impression is from. |
 | Data Provider | Yes | The name and ID of the provider associated with the third-party costs. |
 | Insertion Order | Yes | The insertion order that used the third-party data and incurred these costs. |
 | Line Items | Yes | The line item that used the third-party data and incurred these costs. |

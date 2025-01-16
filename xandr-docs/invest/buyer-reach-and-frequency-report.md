@@ -64,7 +64,7 @@ Intervals determine how your data is grouped together into rows in the report re
 | Media Type | Yes | The media type is the general display style of the creative. |
 | Device Type | Yes | The device type on which creative is displayed to the end users such as mobiles, laptops, tablets etc. |
 | Supply Type | Yes | The supply type is the method of rendering the creative on a device. For example, for mobiles or tablets the supply type is mobile app, whereas for laptops or desktops it is web app. |
-| Country | Yes | The targeted country of the advertisement |
+| Country | Yes | The targeted country/region of the advertisement |
 | Frequency Cap Type | No | The type of frequency cap used to limit overdelivery to individual users. When an ID is available in the request, `Classical` is the default frequency cap type. `Advanced` refers to the Advanced Frequency Management feature. |
 
 ## Metrics

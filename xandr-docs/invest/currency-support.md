@@ -1,6 +1,7 @@
 ---
 title: Microsoft Invest - Currency Support
 description: In this article, learn about the supported currencies, covering all essential concepts, intricate processes, and various settings associated with it.
+ms.author: shsrinivasan
 ms.date: 10/28/2023
 ---
 
@@ -15,7 +16,7 @@ Ensure you understand these basics before proceeding (each of these concepts is 
 1. **Base Currency:** Microsoft Advertising' default currency is USD.
     - Although USD is the default currency, Microsoft Advertising supports the **buying and selling ("transacting")** of impressions as well as **billing** in a number of different non-USD currencies.
     - Microsoft Advertising performs all calculations in USD. To support non-USD use cases, we convert in and out of USD (as needed) using the latest exchange rates from our [API Currency Service](../digital-platform-api/currency-service.md).
-1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates exchange rates platform-wide on a daily basis based on the most current [Oanda](https://www.oanda.com/) rates.
+1. **Supported Local Currencies and Exchange Rates:** Our [API Currency Service](../digital-platform-api/currency-service.md) updates exchange rates platform-wide on a daily basis based on the most current [Refinitiv](https://www.lseg.com/en/fx) rates.
 1. **Transaction and Billing Currency and Account Setup:** Microsoft Advertising distinguishes between the currencies you transact in (currencies you select in the Digital Platform UI/API for buying/selling) and the currency you are billed in (currency in which you are invoiced or paid). Generally, Microsoft Advertising bills clients for fees/charges based on the daily conversion rate logged at the time the relevant auction took place. However, in the following scenarios, we use the month-end rate to bill. For a full list, see [Conversion of media costs and related fees for billing](#conversion-of-media-costs-and-related-fees-for-billing) below:
     - The transaction currency differs from the billing currency.
     - We can't easily associate a fee back to an auction (e.g., Ad Serving Fees, Minimums, Log Level Data Fees, etc.).
@@ -26,44 +27,31 @@ Microsoft Advertising uses USD as the default currency (also referred to as "bas
 
 ## Supported currencies
 
-Microsoft Advertising supports the non-USD currencies listed below.
+If you have signed a contract with Microsoft Advertising, the following non-USD currencies are supported.
 
 | Currency | Transaction | Billing |
 |:---|:---|:---|
-| Albanian Lek (ALL) | X |  |
-| Algerian Dinar (DZD) | X |  |
-| Angolan Kwanza (AOA) | X |  |
 | Argentine Peso (ARS) | X | X |
 | Australian Dollar (AUD) | X | X |
-| Bangladeshi Taka (BDT) | X |  |
-| Bosnia-Herzegovinian Convertible Mark (BAM) | X |  |
 | Brazilian Real (BRL) | X | X |
 | British Pound (GBP) | X | X |
-| Bulgarian Lev (BGN) | X |  |
 | Canadian Dollar (CAD) | X | X |
 | Chilean Peso (CLP) | X |  |
 | Chinese Yuan (CNY) | X |  |
 | Colombian Peso (COP) | X |  |
-| Croatian Kuna (HRK) | X |  |
 | Czech Koruna (CZK) | X | X |
 | Danish Krone (DKK) | X | X |
 | Egyptian Pound (EGP) | X |  |
 | Euro (EUR) | X | X |
-| Guatemalan Quetzal (GTQ) | X |  |
 | Hong Kong Dollar (HKD) | X | X |
 | Hungarian Forint (HUF) | X | X |
 | Indian Rupee (INR) | X | X |
 | Indonesian Rupiah (IDR) | X | X |
 | Israeli Shekel (ILS) | X |  |
-| Jamaican Dollar (JMD) | X |  |
 | Japanese Yen (JPY) | X | X |
 | Kazakhstani Tenge (KZT) | X |  |
-| Kenyan Shilling (KES) | X |  |
-| Kuwaiti Dinar (KWD) | X |  |
-| Macedonian Denar (MKD) | X |  |
 | Malaysian Ringgit (MYR) | X | X |
 | Mexican Peso (MXN) | X | X |
-| Moroccan Dirham (MAD) | X |  |
 | New Zealand Dollar (NZD) | X | X |
 | Nigerian Naira (NGN) | X |  |
 | Norwegian Krone (NOK) | X | X |
@@ -73,7 +61,6 @@ Microsoft Advertising supports the non-USD currencies listed below.
 | Polish Złoty (PLN) | X | X |
 | Qatari Riyal (QAR) | X |  |
 | Romanian Leu (RON) | X |  |
-| Russian Ruble (RUB) | X | X |
 | Saudi Riyal (SAR) | X |  |
 | Serbian Dinar (RSD) | X |  |
 | Singapore Dollar (SGD) | X | X |
@@ -88,7 +75,6 @@ Microsoft Advertising supports the non-USD currencies listed below.
 | Ukrainian Hryvnia (UAH) | X |  |
 | United Arab Emirates Dirham (AED) | X |  |
 | United States Dollar (USD) | X | X |
-| Uruguayan Peso (UYU) | X |  |
 | Vietnamese Dong (VND) | X | X |
 
 - **Transaction Currency** is the currency used to buy or sell inventory on the platform.
@@ -103,7 +89,7 @@ Microsoft Advertising supports the non-USD currencies listed below.
 
 ## Exchange rates
 
-Exchange Rates are sourced once daily from [Oanda](https://www.oanda.com/) at approximately 3:00 a.m. UTC. All Microsoft Advertising applications (bidder, budgeting, billing, etc.) use the [API Currency Service](../digital-platform-api/currency-service.md) (also available to clients) to access the latest rates. This service provides centralized, consistent, and uniform exchange rates across the entire platform. The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Microsoft Advertising Platform and may not be used by clients for any other purpose.
+Exchange Rates: Exchange Rates are sourced once daily from [Refinitiv](https://www.lseg.com/en/fx) at approximately 3:00 a.m. UTC. All Microsoft Advertising applications (bidder, budgeting, billing, etc.) use the [API Currency Service](../digital-platform-api/currency-service.md) (also available to clients) to access the latest rates. This service provides centralized, consistent, and uniform exchange rates across the entire platform. The API Currency Service is available to clients solely to reconcile amounts paid or received by them resulting from their transactions through the Microsoft Advertising Platform and may not be used by clients for any other purpose.
 
 > [!NOTE]
 > Due to the distributed nature of our systems, new rates will not be populated across all of our servers simultaneously.

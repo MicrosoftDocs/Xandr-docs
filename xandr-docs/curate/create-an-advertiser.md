@@ -72,7 +72,7 @@ We reserve the right to implement additional screening at any time.
 | **City** | City of the person, group, organization, or business that is advertising. |
 | **State, Province, or Region** | State, province, or region of the person, group, organization, or business that is advertising. |
 | **ZIP or Postal Code** | ZIP or postal code of the person, group, organization, or business that is advertising. |
-| **Country** | Country of the person, group, organization, or business that is advertising. |
+| **Country** | Country or region of the person, group, organization, or business that is advertising. |
 | **Phone** | Phone number of the person, group, organization, or business that is advertising. |
 | **Independent Expenditure Committee** | Select this if any ads are being paid for by an independent expenditure committee: a political committee that makes only independent expenditures; that is, it spends money on political communications that expressly advocate the election or defeat of a clearly identified candidate and does not coordinate with a candidate, a candidate’s authorized committee, or an agent of the candidate. |
 | **Treasurer Name** | Treasurer for the committee purchasing the ads, or the person whose role mostly closely resembles a treasurer. |

@@ -81,11 +81,11 @@ The following macros can be used in creative third-party tags and landing page U
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. The user agent often identifies information such as the application, operating system, and software vendor acting on behalf of the user. For example: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4. |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${USER_CITY}` | The character string of the user's city. |
-| `${USER_COUNTRY}` | The character string of the user's country. |
+| `${USER_country/region}` | The character string of the user's country/region. |
 | `${USER_ID}` | The Microsoft Advertising 64-bit character string representing the user for the impression. |
 | `${USER_IP}` | The IP address of the user, which is truncated. |
 | `${USER_LOCALE}` | The language and dialect (aa-DD) reported by the user's device. For example, en-ZA represents English (en) used in South Africa (ZA). |
-| `${USER_STATE}` | The character string of the user's state or region. <br> - **In the USA**: 2 letter abbreviation <br> - **Outside of USA**: An encoded URL with the user's country followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated). <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
+| `${USER_STATE}` | The character string of the user's state or region. <br> - **In the USA**: 2 letter abbreviation <br> - **Outside of USA**: An encoded URL with the user's country/region followed by the user's region ID (FIPS 10-4 or Microsoft Advertising-generated). <br> For example, the region surrounding Riva, Latvia is LV%3A25 (encoding for LV:A25). |
 
 ## Creative macros for video impressions
 
@@ -128,12 +128,12 @@ In order for our clients to meet their transparency, notice, and choice/consent 
 
 | Macro | Description |
 |---|---|
-| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. Possible values include: <br> - `0` for no <br> - `1` for yes <br><br> **Note**: `0` may be received from an EEA country. It is the publisher's choice to signal in this manner. |
+| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. It specifically indicates whether the user is located in a GDPR impacted country/region, or if we have a GDPR-required signal passed with the request. Possible values include: <br> - `0` for no <br> - `1` for yes <br><br> **Note**: `0` may be received from an EEA country/region. It is the publisher's choice to signal in this manner. |
 | `${GDPR}` | This is an alias for `${GDPR_APPLIES}`, and behaves in the same manner. |
 | `${GDPR_CONSENT_STRING}` | This macro specifies the IAB GDPR consent string. If the GDPR applies, it will contain a list of user-approved vendors based on the IAB GDPR Transparency and Consent Framework. For more information, see [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This macro is an alias for `${GDPR_CONSENT_STRING}`, and behaves in the same manner. |
-| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has: <br> - not given consent for their cookies to be included in the TCF string, the `adnxs-simple.com` domain will be used to prevent the browser from attaching cookies to subsequent ad calls. <br> - given consent for their cookies to be included in the TCF string, the `adnxs.com` domain will be used to pass cookies in the header of each ad call. <br><br> **Note**: This macro should only be used if you plan on serving impressions in countries that require consent for cookies. |
-| `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
+| `${XANDR_DOMAIN}` | Dynamically retrieves the appropriate Microsoft Advertising domain based on the cookie consent settings included in the TCF string. If the user has cookies enabled from their browser settings but has: <br> - not given consent for their cookies to be included in the TCF string, the `adnxs-simple.com` domain will be used to prevent the browser from attaching cookies to subsequent ad calls. <br> - given consent for their cookies to be included in the TCF string, the `adnxs.com` domain will be used to pass cookies in the header of each ad call. <br><br> **Note**: This macro should only be used if you plan on serving impressions in countries/regions that require consent for cookies. |
+| `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country/region affected by legislation covered by the GPP. |
 | `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user. <br><br> **Note**: * XXXXX can represent any numerical ID. |
 
 ## Function macros
@@ -179,7 +179,7 @@ According to Article 26 of the DSA, online platforms, including Microsoft Advert
 | `${DSA_REQUIRED}` | Indicates if DSA information should be made available.<br>Possible values include:<br> - `0`: Not required.<br> - `1`: Required. Bid responses with or without DSA object will be accepted.<br>- `2`: Required. Bid responses without DSA object will not be accepted.<br>- `3`: Required. Bid responses without DSA object will not be accepted. Here, the publisher is an Online Platform. |
 | `${DSA_BEHALF}` | The free UNICODE text string with a name on whose behalf the ad is being displayed. This macro is populated from the DSA bid response.<br>For example, `Advertiser`. |
 | `${DSA_PAID}` | The free UNICODE text string of who paid for the ad. This macro is populated from the DSA bid response.<br>For example, `Advertiser`. |
-| `${DSA_PARAMS}` | The combination of integer values representing user parameters, separated by an underscore “_”.<br>For example, `1_2_3`.<br>Possible values include:<br>- `1`: Information on your online activity indicating your similarity to groups targeted by the advertiser. For example, age group, gender, education level, or interests.<br>- `2`: Information on the setting in which you view a specific advertisement. For example, website content, device type, IP address, location (country or city).<br>- `3`: Information on your precise geographic location, with an accuracy of approximately 500 meters. |
+| `${DSA_PARAMS}` | The combination of integer values representing user parameters, separated by an underscore “_”.<br>For example, `1_2_3`.<br>Possible values include:<br>- `1`: Information on your online activity indicating your similarity to groups targeted by the advertiser. For example, age group, gender, education level, or interests.<br>- `2`: Information on the setting in which you view a specific advertisement. For example, website content, device type, IP address, location (country/region or city).<br>- `3`: Information on your precise geographic location, with an accuracy of approximately 500 meters. |
 
 ## Related topic
 

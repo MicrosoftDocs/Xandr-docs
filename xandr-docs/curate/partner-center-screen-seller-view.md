@@ -72,7 +72,7 @@ Use the filters to search the **Buyers** list for a buyer that meets your partne
 
 - **Name/ID** - A specific buyer's name or member ID.
 
-- **Primary Market** - The country in which the buyer purchased 50% or more of their total RTB impressions. Buyers who do not purchase 50% or more in a single country will not have a primary market.
+- **Primary Market** - The country or region in which the buyer purchased 50% or more of their total RTB impressions. Buyers who do not purchase 50% or more in a single country or region will not have a primary market.
 
 - **Buyer Eligibility** - Eligibility settings you have defined for buyers.
 

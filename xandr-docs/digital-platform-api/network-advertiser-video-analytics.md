@@ -74,8 +74,8 @@ Data in this report is retained for 420 days.
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated**. |
 | `size` | string | Yes | `"728x90"` | Size of the creative/placement |
-| `geo_country` | string | Yes | `"US"` | Geographic country code |
-| `geo_country_name` | string | No | `"Unites States"` | Name of the country |
+| `geo_country` | string | Yes | `"US"` | Geographic country/region code |
+| `geo_country_name` | string | No | `"Unites States"` | Name of the country/region |
 | `creative_recency_bucket` | string | Yes | `"11-20"` | The bucket for how recently the creative was displayed. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
 | `creative_recency_bucket_id` | string | No | `"4"` | The ID of the creative recency bucket. See [Creative Recency Buckets](#creative-recency-buckets) below for possible values. |
 | `creative_frequency_bucket` | string | Yes | `"15-30 minutes"` | The bucket for how frequently the creative was displayed. See [Creative Frequency Buckets](#creative-frequency-buckets) below for possible values. |

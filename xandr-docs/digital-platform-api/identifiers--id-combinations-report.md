@@ -62,7 +62,7 @@ This report's data is retained for 90 days. For more information about how quick
 | `deal_id` | int | Yes | `123` | The Deal delivered against. |
 | `device_type` | string | Yes | `"tablet"` | The device type on which creative is displayed to the end-users such as mobiles, laptops, tablets, etc. |
 | `flight_id` | int | No | `123456` | The start and end date of flight in a billing period under an insertion order. |
-| `geo_country` | string | Yes | `"US"` | The targeted country of the advertisement. |
+| `geo_country` | string | Yes | `"US"` | The targeted country/region of the advertisement. |
 | `id_types` | string | No |  | The individual identifier combinations that are available in the auction. See [possible values](#id_types-possible-values) below. |
 | `imp_type` | string | Yes | `"Blank"` | The type of impression. |
 | `insertion_order` | string | No | `"My Insertion Order"` | The name of insertion order under which the impression was purchased. |

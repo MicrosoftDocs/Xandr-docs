@@ -85,8 +85,8 @@ Data retention period for the report is 420 days.
 | `brand_id` | int | Tes | `3` | The ID of the brand associated with a creative.<br><br>`Note`: For `imp_type_id = 6`, no information is available in the brand_id field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `brand_name` | string | No | `"Ace Hardware"` | The name of the brand associated with a creative.<br><br>**Note**: For `imp_type_id = 6`, no information is available in the `brand_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `brand` | string | No | `"Ace Hardware (3)"` | The name and ID of the brand associated with a creative. |
-| `geo_country` | string | Yes | `"US"` | The code for the geographic country in which the impression took place. |
-| `geo_country_name` | string | No | `"United States"` | The name of the geographic country in which the impression took place. |
+| `geo_country` | string | Yes | `"US"` | The code for the geographic country/region in which the impression took place. |
+| `geo_country_name` | string | No | `"United States"` | The name of the geographic country/region in which the impression took place. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal associated with the transaction for the impression.<br><br>**Note**: For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal associated with the transaction for the impression. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | The name and ID of the deal associated with the transaction for the impression. |

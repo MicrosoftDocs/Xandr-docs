@@ -488,7 +488,7 @@ We support the following fields in the `geo` object:
 |:---|:---|:---|
 | `lat` | float | Specifies the latitude of the device, as derived from the device's location services. This can range from `-90` to `90`. South is negative. |
 | `lon` | float | Specifies the longitude of the device, as derived from the device's location services. This can range from -`180` to `180`. West is negative. |
-| `country` | string | Specifies the country name, according to ISO-3166-1 Alpha-3. |
+| `country` | string | Specifies the country or region name, according to ISO-3166-1 Alpha-3. |
 | `region` | string | Region code using ISO-3166-2; 2-letter state code if USA. |
 | `city` | string | Specifies the city name. Omitted if seller visibility settings prohibit sharing. |
 | `zip` | string | Specifies the ZIP or postal code where the device is located. Omitted if seller visibility settings prohibit sharing. |
@@ -585,7 +585,7 @@ We support the following fields in the `regs` object:
 | `coppa` | integer | Indicates if this request is subject to the United States Children's Online Privacy Protection Act (COPPA).<br> - `0`: Not subject to COPPA. Treat as a normal auction.<br> - `1`: Subject to COPPA. Limit what is allowed for targeting and logging as required. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the reg object. |
 | `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
-| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
+| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country or region (EEA country or region) with a framework that is part of the GPP.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
 
 ### Regs extension object
 
@@ -596,7 +596,7 @@ We support the following field in the `regs.ext` object:
 | `gdpr` | integer | Optional. Signals whether or not the request is subject to General Data Protection Regulation (GDPR) regulations. Possible values:<br> - `0`: No, the request is not subject to GDPR regulations.<br> - `1`: Yes, the request is subject to GDPR regulations.<br>No value indicates Unknown. |
 | `us_privacy` | string | The U.S. Privacy String currently supports CCPA compliance by passing the follow information in the string: <br>**Specification Version**<br>Number (1 char in string)<br>The version of this string specification used to encode the string<br><br>**Explicit Notice/ Opportunity to Opt Out**<br>ENUM (`N` = No, `Y` = Yes, `-` = Not Applicable)<br>Has explicit notice been provided as required by 1798.115(d) of the CCPA and the opportunity to opt out of the sale of their data pursuant to 1798.120 and 1798.135 of the CCPA<br><br>**Opt-Out Sale**<br>ENUM (`N` = No, `Y` = Yes, `-` = Not Applicable)<br>Has user opted-out of the sale of his or personal information pursuant to 1798.120 and 1798.135<br><br>**LSPA**<br>ENUM (`N` = No, `Y` = Yes, `-` = Not Applicable)<br>Publisher is a signatory to the IAB Limites those terms are defined in the Agreement.  d Service Provider Agreement (LSPA) and the publisher declares that the transaction is covered as a “Covered Opt Out Transaction” or a “Non Opt Out Transaction” as those terms are defined in the Agreement.  s those terms are defined in the Agreement.   |
 | `gpp` |  | Indicates the actual IAB GPP consent string. It implies which vendors are permitted to process personal data and under which conditions.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
-| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country (EEA country) with a framework that is part of the GPP.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
+| `gpp_sid` |  | Optional: indicates which regulations or GPP logics are to be applied, or whether a user is located in a country or region (EEA country or region) with a framework that is part of the GPP.<br>Example:<br>`{ "Regs": { "ext": { "gpp": "DBACNYA~CPXxRfAPXxRfAAfKABENB-CgAAAAAAAAAAYgAAAAAAAA~1YNN", "gpp_sid": [2,6]} } }` |
 | `dsa` |  | Indicates whether the request is subject to the Digital Services Act (DSA). For more details, see [here](https://github.com/InteractiveAdvertisingBureau/openrtb/blob/main/extensions/community_extensions/dsa_transparency.md).<br><br>Example:<br>`{ dsarequired: 1, pubrender: 0, transparency: [ { domain: 'request.tomato.com', dsaparams: [ 1 ] },{ domain: 'request2.tomato.com', dsaparams: [ 1, 2, 3 ] }],datatopub: 1 }` |
 
 ### Source object

@@ -23,4 +23,4 @@ There are a few ways to confirm that your uploads are successful.
   - US: `https://ib.nym1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID`
   - EU: `https://ib.ams1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID`
   - Asia: `https://ib.sin1.adnxs.com/cookie?member_id=MEMBER_ID&amp;dongle=DONGLE&amp;uid=USER_ID`
-- If you have access to the Xandr UI, use the Segment Inventory Overlap report to gauge how many impressions you can expect to see by segment, seller, and country. Note that you’ll need to wait a few days after creating new segments before data will show up in this report.
+- If you have access to the Xandr UI, use the Segment Inventory Overlap report to gauge how many impressions you can expect to see by segment, seller, and country/region. Note that you’ll need to wait a few days after creating new segments before data will show up in this report.

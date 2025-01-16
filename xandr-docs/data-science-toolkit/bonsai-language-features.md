@@ -18,7 +18,7 @@ This page lists the Bonsai Language features that you can use to evaluate impr
 
 ### Country
 
-Evaluate impressions based on the user's country.
+Evaluate impressions based on the user's country or region.
 
 **Keyword**: `country`
 
@@ -385,7 +385,7 @@ else:
 Evaluates impressions based on IP address.
 
 > [!NOTE]
-> Customers in countries that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
+> Customers in countries or regions that conform to GDPR regulations should be aware that when targeting IP addresses or IP ranges, either in your line item, Bonsai tree, or logistic regression model, there is a possibility the address may be truncated. For details on this process, see our [Service Policies](../policies-regulations/index.yml).
 
 **Keyword**: `ip_address`
 
@@ -1368,7 +1368,7 @@ else:
 
 ## Compound features
 
-The simple features above let you evaluate a single aspect of the impression (country, cookie age, mobile app, etc.). The compound [Segment](#segment) and [Frequency/Recency](#frequencyrecency) features are more nuanced; they let you evaluate multiple attributes of these features, such as the age of a segment or the segment value.
+The simple features above let you evaluate a single aspect of the impression (country/region, cookie age, mobile app, etc.). The compound [Segment](#segment) and [Frequency/Recency](#frequencyrecency) features are more nuanced; they let you evaluate multiple attributes of these features, such as the age of a segment or the segment value.
 
 ### Segment
 

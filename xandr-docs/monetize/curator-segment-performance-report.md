@@ -63,8 +63,8 @@ Intervals determine how your data is grouped together into rows in the report re
 |--|--|--|
 | Bidder | Yes | Name / ID of the bidder who bought on the transaction |
 | Buyer | Yes | Member name / ID of the buyer who bought on the transaction |
-| Country Code | Yes | The country code of the country that the ad was rendered in (e.g., "US", "FR", "UK", etc.) |
-| Country Name | Yes | The name of the country that the ad was rendered in (e.g., "United States", "France", "United Kingdom", etc.) |
+| Country Code | Yes | The country code of the country/region that the ad was rendered in (e.g., "US", "FR", "UK", etc.) |
+| Country Name | Yes | The name of the country/region that the ad was rendered in (e.g., "United States", "France", "United Kingdom", etc.) |
 | Curated Deal | Yes | Curated deal name / ID |
 | Curated Deal Line Item | Yes | Line item name / ID of the curator member object that owns the deal line item associated with the curated deal |
 | Device Type | Yes | The device type associated with the creative that served on this impression |

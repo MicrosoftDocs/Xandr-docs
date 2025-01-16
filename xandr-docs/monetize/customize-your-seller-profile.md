@@ -34,7 +34,7 @@ Complete the following fields:
 - **City** - Enter the city in which the primary contact is located.
 - **Region** - Enter the state or province in which the primary contact is located.
 - **Postal Code** - Enter the postal (zip) code in which the primary contact is located.
-- **Country** - Enter the country in which the primary contact is located.
+- **Country** - Enter the country/region in which the primary contact is located.
 - **Company Info** - Enter any additional information about your company that may be relevant.
 - **Use the same information for my buyer profile**- Select this checkbox to use this same information when a seller is viewing your buyer profile in the **Partner Center** screen.
 - **Inventory Trust chart**- View an overview of the audit quality of your inventory. You can see the number of impressions as well as the percentage of your inventory that has been self-audited (**Seller-reviewed**) or audited by Microsoft Advertising (**Platform-reviewed**). The statistics for **All** inventory will include your audited and unaudited inventory.

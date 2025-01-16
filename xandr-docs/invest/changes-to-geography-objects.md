@@ -18,7 +18,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 
 ### Recent changes
 
-| Date | Country | Action | Change Summary |
+| Date | Country/Region | Action | Change Summary |
 |:---|:---|:---|:---|
 | 2023-08-28 | Afghanistan | Addition | 244 Cities |
 | 2023-08-28 | Afghanistan | Deactivation | 231 Cities |
@@ -285,9 +285,9 @@ The table below provides a summary of recent additions, deactivations, and modif
 | 2023-08-28 | Thailand | Deactivation | 3 Cities |
 | 2023-08-28 | Tunisia | Addition | 11 Cities |
 | 2023-08-28 | Tunisia | Deactivation | 5 Cities |
-| 2023-08-28 | Turkey | Addition | 343 Cities |
-| 2023-08-28 | Turkey | Deactivation | 260 Cities |
-| 2023-08-28 | Turkey | Modification | 34 Cities |
+| 2023-08-28 | Türkiye | Addition | 343 Cities |
+| 2023-08-28 | Türkiye | Deactivation | 260 Cities |
+| 2023-08-28 | Türkiye | Modification | 34 Cities |
 | 2023-08-28 | Ukraine | Addition | 1315 Cities |
 | 2023-08-28 | Ukraine | Deactivation | 1041 Cities |
 | 2023-08-28 | Ukraine | Modification | 114 Cities |
@@ -331,7 +331,7 @@ The table below provides a summary of recent additions, deactivations, and modif
 | 2023-08-03 | Argentina | Modification | 36 Cities |
 | 2023-08-03 | Armenia | Addition | 44 Cities |
 | 2023-08-03 | Armenia | Deactivation | 33 Cities |
-| 2023-08-03 | Asia (unknown Country) | Deactivation | 1 Country |
+| 2023-08-03 | Asia (unknown Country or Region) | Deactivation | 1 Country |
 | 2023-08-03 | Australia | Addition | 36 Cities |
 | 2023-08-03 | Australia | Deactivation | 32 Cities |
 | 2023-08-03 | Australia | Modification | 1 City |
@@ -573,9 +573,9 @@ The table below provides a summary of recent additions, deactivations, and modif
 | 2023-08-03 | Thailand | Deactivation | 1 City |
 | 2023-08-03 | Tunisia | Addition | 9 Cities |
 | 2023-08-03 | Tunisia | Deactivation | 10 Cities |
-| 2023-08-03 | Turkey | Addition | 309 Cities |
-| 2023-08-03 | Turkey | Deactivation | 307 Cities |
-| 2023-08-03 | Turkey | Modification | 46 Cities |
+| 2023-08-03 | Türkiye | Addition | 309 Cities |
+| 2023-08-03 | Türkiye | Deactivation | 307 Cities |
+| 2023-08-03 | Türkiye | Modification | 46 Cities |
 | 2023-08-03 | Ukraine | Addition | 1179 Cities |
 | 2023-08-03 | Ukraine | Deactivation | 1041 Cities |
 | 2023-08-03 | Ukraine | Modification | 103 Cities |
@@ -852,9 +852,9 @@ The table below provides a summary of recent additions, deactivations, and modif
 | 2023-07-20 | Tunisia | Addition | 17 Cities |
 | 2023-07-20 | Tunisia | Deactivation | 12 Cities |
 | 2023-07-20 | Tunisia | Modification | 2 Cities |
-| 2023-07-20 | Turkey | Addition | 614 Cities |
-| 2023-07-20 | Turkey | Deactivation | 393 Cities |
-| 2023-07-20 | Turkey | Modification | 15 Cities |
+| 2023-07-20 | Türkiye | Addition | 614 Cities |
+| 2023-07-20 | Türkiye | Deactivation | 393 Cities |
+| 2023-07-20 | Türkiye | Modification | 15 Cities |
 | 2023-07-20 | Ukraine | Addition | 1524 Cities |
 | 2023-07-20 | Ukraine | Deactivation | 1402 Cities |
 | 2023-07-20 | Ukraine | Modification | 62 Cities |

@@ -1,6 +1,6 @@
 ---
 title: Bidders - Country Service
-description: Learn how the Country Service allows you to see information about the countries registered in the Xandr system. This page covers examples with code to view all countries, view by ID and view by country code.
+description: Learn how the Country Service allows you to see information about the countries or regions registered in the Xandr system. This page covers examples with code to view all countries or regions, view by ID and view by country code.
 ms.date: 11/20/2023
 
 ---
@@ -8,29 +8,29 @@ ms.date: 11/20/2023
 
 # Bidders - Country service
 
-The read-only Country Service allows you to see information about the countries registered in the Xandr system. You can use this service to retrieve the IDs for targeting in [profiles](legacy-bidder-profile-service.md).
+The read-only Country Service allows you to see information about the countries or regions registered in the Xandr system. You can use this service to retrieve the IDs for targeting in [profiles](legacy-bidder-profile-service.md).
 
 ## REST API
 
 | HTTP Method | Endpoint | Description |
 |--|--|--|
-| GET | [https://api.adnxs.com/country](https://api.adnxs.com/country) | View all countries. |
-| GET | [https://api.adnxs.com/country?id=ID](https://api.adnxs.com/country?id=ID) | View a specific country. |
-| GET | [https://api.adnxs.com/country?name=NAME](https://api.adnxs.com/country?name=NAME) | View a specific country. |
-| GET | [https://api.adnxs.com/country?code=CODE](https://api.adnxs.com/country?code=CODE) | View a specific country. |
+| GET | [https://api.adnxs.com/country](https://api.adnxs.com/country) | View all countries or regions. |
+| GET | [https://api.adnxs.com/country?id=ID](https://api.adnxs.com/country?id=ID) | View a specific country or region. |
+| GET | [https://api.adnxs.com/country?name=NAME](https://api.adnxs.com/country?name=NAME) | View a specific country or region. |
+| GET | [https://api.adnxs.com/country?code=CODE](https://api.adnxs.com/country?code=CODE) | View a specific country or region. |
 | GET | [https://api.adnxs.com/country/meta](https://api.adnxs.com/country/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
 
 | Field | Type | Description |
 |--|--|--|
-| `code` | enum | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country. |
-| `id` | int | The ID of the country. |
-| `name` | string | The name of the country. |
+| `code` | enum | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country or region. |
+| `id` | int | The ID of the country or region. |
+| `name` | string | The name of the country or region. |
 
 ## Examples
 
-**View all countries**
+**View all countries or regions**
 
 ``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country'
@@ -65,7 +65,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country'
 }         
 ```
 
-**View a specific country by ID**
+**View a specific country or region by ID**
 
 ``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country?id=59'
@@ -87,7 +87,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country?id=59'
 }
 ```
 
-**View a specific country by code**
+**View a specific country or region by code**
 
 ``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country?code=DE'
@@ -111,7 +111,7 @@ $ curl -b cookies -c cookies 'https://api.adnxs.com/country?code=DE'
 }
 ```
 
-**View all countries that contain "United" in their names**
+**View all countries or regions that contain "United" in their names**
 
 ``` 
 $ curl -b cookies -c cookies 'https://api.adnxs.com/country?like_name=United'

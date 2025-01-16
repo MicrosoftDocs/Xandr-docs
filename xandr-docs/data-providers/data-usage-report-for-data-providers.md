@@ -40,9 +40,9 @@ The `report_interval` field in the JSON request must be set to one of the foll
 | buyer_member_id | int | yes | yes | `643` | The ID of the member that used the third-party data. |
 | buyer_member_name | string | yes | yes | `"Buyer A"` | The name of the member that used the third-party data. |
 | advertiser_name | string | yes | yes | `"Advertiser"` | The name of the advertiser that used the third-party-data. |
-| geo_country | string | yes | yes | `"US"` | The code of the geographical country associated with the impression. |
-| geo_country_name | string | no | no | `"United States"` | The name of the geographical country associated with the impression. |
-| geo_country_code | string | yes | yes | `"CA"` | A two-character string denoting the country associated with the impression. For a complete listing of allowed values, see ISO 3166-1 country codes. |
+| geo_country | string | yes | yes | `"US"` | The code of the geographical country or region associated with the impression. |
+| geo_country_name | string | no | no | `"United States"` | The name of the geographical country or region associated with the impression. |
+| geo_country_code | string | yes | yes | `"CA"` | A two-character string denoting the country or region associated with the impression. For a complete listing of allowed values, see ISO 3166-1 country codes. |
 | line_item_id | int | yes | yes | `12345` | The ID of the line item associated with impressions that use third-party data targeting. |
 | line_item_name | string | no | no | `line item name` | The name of the line item associated with impressions that use third-party data targeting. |
 | data_provider_id | int | yes | yes | `517` | The ID of the third-party that provided the targeting data. |

@@ -72,8 +72,8 @@ Intervals determine how your data is grouped together into rows in the report re
 | Media Type | Yes | The media type associated with the creative that served on this impression. |
 | Supply Type | Yes | The supply type of the ad that was rendered. Possible values: "web", "mobile_web", or "mobile_app". |
 | Device Type | Yes | The device type associated with the creative that served on this impression. |
-| Country Code | Yes | The country code of the country that the ad was rendered in (e.g., "US", "FR", "UK", etc.). |
-| Country Name | Yes | The name of the country that the ad was rendered in (e.g., "United States", "France", "United Kingdom", etc.). |
+| Country Code | Yes | The country code of the country or region that the ad was rendered in (e.g., "US", "FR", "UK", etc.). |
+| Country Name | Yes | The name of the country or region that the ad was rendered in (e.g., "United States", "France", "United Kingdom", etc.). |
 
 ## Metrics
 

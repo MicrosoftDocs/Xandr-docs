@@ -16,7 +16,7 @@ Document to cover all changes between legacy bidder profiles and Enhanced Bidder
 |--|--|--|--|
 | # of Fields | 30+ targetable fields | 11 targetable fields | [Enhanced Bidder Profiles](enhanced-bidder-profiles.md) |
 | Ad Type Targeting | - No explicit way to target or block ad types <br> - User could target the 1x1 size for native/video creatives | - Explicit ad type targeting field <br> - User must explicitly exclude an ad type in the bidder profile to not receive that type of traffic | [Hierarchy and Ad Type Targeting](hierarchy-and-ad-type-targeting-for-enhanced-bidder-profiles.md) |
-| Country Targeting | Can include/exclude a list of countries | Behavior remains the same as legacy profile behavior |  |
+| Country Targeting | Can include/exclude a list of countries or regions | Behavior remains the same as legacy profile behavior |  |
 | Domain List Targeting | Can include/exclude domain lists | Behavior remains the same as legacy profile |  |
 | Inventory Attributes Targeting | Can include/exclude inventory attributes | Behavior remains the same as legacy profile |  |
 | Nonaudited Url Action | If this is set to "exclude", all inventory that has not been audited by Xandr will be excluded. Otherwise, all inventory will be included. | Behavior remains the same as legacy profile |  |

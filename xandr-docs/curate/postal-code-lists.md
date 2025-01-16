@@ -50,7 +50,7 @@ Postal codes can be added to a list by either:
 
     > [!NOTE]
     >
-    > - You need to select the country to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country at a time.
+    > - You need to select the country or region to which the postal codes belong before using the **Copy and Paste** or **Import from file** option. You can only upload postal codes from one country or region at a time.
     > - For USA, you can target the full 9-digit postal code (also known as zip +4). For example, you can target "10010-7456".
 
 6.On the **Review Location Target** page, the following tabs are available:

@@ -116,7 +116,7 @@ The fields for the `postal_code_targets` object in the `profile` service are def
 | Field | Type | Description |
 |:---|:---|:---|
 | `code` | string | The postal code can be an alphanumeric string of up to 14 characters and can contain a space or hyphen. |
-| `country_id` | string | The [ISO code](https://www.maxmind.com/en/iso3166) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_id` | string | The [ISO code](https://www.maxmind.com/en/iso3166) for the country/region to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
 
 ##### Example
 

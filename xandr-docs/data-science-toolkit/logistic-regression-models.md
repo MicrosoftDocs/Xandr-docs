@@ -140,34 +140,34 @@ Let's use the information from above to create a sample workflow.
 Suppose you set up an exploratory campaign to gather training data with a small budget. You wish to optimize a given retargeting line item to minimize cost-per-click.  Each impression won generates a row in the [Log Level Data Feeds](../log-level-data/log-level-data-feeds.md) with the `is_click` column set to `false`. When a click is eventually generated, an identical row is generated in the data feed with the `is_click` column set to `true`. You partition the data between the training, validation, and testing sets by looking at the last few bits of `user_id_64`.  The `user_id_64` determines which part the data will be assigned to. You eventually determine that the key variables are:
 
 - The user's browser (categorical)
-- The user's country and day of the week (higher-order categorical)
-- The combination of the publisher and the user's country (higher-order categorical)
+- The user's country/region and day of the week (higher-order categorical)
+- The combination of the publisher and the user's country/region (higher-order categorical)
 - The amount of time since an ad for that advertiser was last showed to that user (advertiser recency, a cardinal value)
 
-Since there aren't that many browsers, it's reasonable to have one weight for each browser in your training set. The cross-product and country and day of the week is also reasonably small. The combination of publisher and country, however, has a high cardinality, so you arbitrarily decide to train that with a hashed table of 4096 entries. Finally, the line item's daily frequency is a cardinal value.
+Since there aren't that many browsers, it's reasonable to have one weight for each browser in your training set. The cross-product and country/region and day of the week is also reasonably small. The combination of publisher and country/region, however, has a high cardinality, so you arbitrarily decide to train that with a hashed table of 4096 entries. Finally, the line item's daily frequency is a cardinal value.
 
 For each row in LLD, you first filter out rows that do not come from your training campaign. Now that you have defined the events you're
 interested in, you can extract the variables:
 
 - browser ID
-- country ID
+- country/region ID
 - user's day of the week (by adding the timezone offset to the impression's timestamp and mapping that to a 7-day week)
 - publisher ID
 - advertiser recency, with a max of one hour (if this is the first ad we're showing to this user, the recency defaults to one hour)
 
-You reserve one feature ID for recency and 4096 IDs for the hashed (publisher:country), and dynamically generate feature IDs for each browser and (country:day of week) pair. The hashed feature needs one more extra step: you take the two IDs (publisher and country), write them out to a little endian vector of 8 32-bit integers, and find the [bucket](./linear-log-bucketing.md) with MurmurHash3_x86_32(vector, 32, 0xC0FFEE) % 4096 (0xC0FFEE is an arbitrary seed). That gives you a (sparse) vector of feature values for each row, so you can count the number of impressions and the number of clicks for each such vector.
+You reserve one feature ID for recency and 4096 IDs for the hashed (publisher:country/region), and dynamically generate feature IDs for each browser and (country/region:day of week) pair. The hashed feature needs one more extra step: you take the two IDs (publisher and country/region), write them out to a little endian vector of 8 32-bit integers, and find the [bucket](./linear-log-bucketing.md) with MurmurHash3_x86_32(vector, 32, 0xC0FFEE) % 4096 (0xC0FFEE is an arbitrary seed). That gives you a (sparse) vector of feature values for each row, so you can count the number of impressions and the number of clicks for each such vector.
 
 After a day of slowly buying impressions, you try the logistic regression model you trained on (a subset of) LLD. The sparse vector of feature values is a one-hot encoding of the feature space. You must convert back from this encoding to the more logical functions from categorical value to weight (lookup tables). To do this join the table of feature to feature ID and the vector of weights to get the following:
 
 | Feature | Index | Weight |
 |:---|:---|:---|
 | Advertiser recency | 0 | -0.2 |
-| publisher:country-bucket 0  | 1 | 1.4 |
-| publisher:country-bucket 1 | 2 | -2.1 |
+| publisher:country/region-bucket 0  | 1 | 1.4 |
+| publisher:country/region-bucket 1 | 2 | -2.1 |
 | ... | ... | ... |
-| publisher:country-bucket 4095 | 4096 | -0.5 |
+| publisher:country/region-bucket 4095 | 4096 | -0.5 |
 | browser=safari | 4097 | 5.2 |
-| country:day-of-week=US:monday | 4098 | 0.7 |
+| country/region:day-of-week=US:monday | 4098 | 0.7 |
 | ... | ... | ... |
 
 You determine the weights for each feature:
@@ -175,7 +175,7 @@ You determine the weights for each feature:
 - Advertiser-recency: You read the weight directly from the trained model.
 - The hashed table: You read the weights for the 4096 features and put them in an array.
 - Browser: You walk the dynamic map from feature to ID, the features are the keys and the ID the values, and build a lookup table from browser ID to non-zero weight (with zero as the default) to create a list of browser to weight mappings.
-- Country:day of week: You walk the dynamic map from feature to ID and build a lookup table from browser ID to non-zero weight (with zero as the default) to create a list of browser to weight mappings.
+- Country/region:day of week: You walk the dynamic map from feature to ID and build a lookup table from browser ID to non-zero weight (with zero as the default) to create a list of browser to weight mappings.
 
 This is all the data you need to call the AppNexus API.
 

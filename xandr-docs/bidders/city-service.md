@@ -8,15 +8,15 @@ ms.date: 11/20/2023
 
 # Bidders - City service
 
-The read-only City Service allows you to see information about the cities registered in the Xandr system, including the region, designated market area, and country to which each city belongs. You can use this service to retrieve the IDs of cities for targeting in campaigns (see `city_targets` in the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md)).
+The read-only City Service allows you to see information about the cities registered in the Xandr system, including the region, designated market area, and country or region to which each city belongs. You can use this service to retrieve the IDs of cities for targeting in campaigns (see `city_targets` in the [Enhanced Bidder Profiles](enhanced-bidder-profiles.md)).
 
 ## REST API
 
 | HTTP Methods | Endpoint | Example |
 |--|--|--|
 | GET | [https://api.adnxs.com/city](https://api.adnxs.com/city) | View all cities. |
-| GET | [https://api.adnxs.com/city?country_code=COUNTRY_CODE](https://api.adnxs.com/city?country_code=COUNTRY_CODE) | View all cities in a specific country. |
-| GET | [https://api.adnxs.com/city?country_name=COUNTRY_NAME](https://api.adnxs.com/city?country_name=COUNTRY_NAME) | View all cities in a specific country. |
+| GET | [https://api.adnxs.com/city?country_code=COUNTRY_CODE](https://api.adnxs.com/city?country_code=COUNTRY_CODE) | View all cities in a specific country or region. |
+| GET | [https://api.adnxs.com/city?country_name=COUNTRY_NAME](https://api.adnxs.com/city?country_name=COUNTRY_NAME) | View all cities in a specific country or region. |
 | GET | [https://api.adnxs.com/city?dma_id=DMA_ID](https://api.adnxs.com/city?dma_id=DMA_ID) | View all cities in a specific designated market area. |
 | GET | [https://api.adnxs.com/city?dma_name=DMA_NAME](https://api.adnxs.com/city?dma_name=DMA_NAME) | View all cities in a specific designated market area. |
 | GET | [https://api.adnxs.com/city?id=ID](https://api.adnxs.com/city?id=ID) | View a specific city. |
@@ -27,8 +27,8 @@ The read-only City Service allows you to see information about the cities regist
 
 | Field | Type | Description |
 |--|--|--|
-| `country_code` | enum | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
-| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `country_code` | enum | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country or region to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_name` | string | The name of the country or region to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country or region names. |
 | `dma_id` | int | The ID of the designated market area to which the city belongs. You can use the [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) to retrieve a complete list of dma IDs. |
 | `dma_name` | string | The name of the designated market area to which the city belongs. You can use the [Designated Market Area Service](../digital-platform-api/designated-market-area-service.md) to retrieve a complete list of dma names. |
 | `id` | int | The ID of the city. |

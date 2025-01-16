@@ -111,7 +111,7 @@ Use the targeting parameters below across different regions for your specific re
 
 #### Americas
 
-| Country | Content Category | Microsoft Advertising Curate Targeting |
+| Country/Region | Content Category | Microsoft Advertising Curate Targeting |
 |---|---|---|
 | Argentina and Uruguay | AR-001 (25668), ar.msn.com (25669) | Content Category |
 | Brazil | BR-001 (20353), br.msn.com (25624) | Content Category |
@@ -124,7 +124,7 @@ Use the targeting parameters below across different regions for your specific re
 
 #### EMEA
 
-| Country | Content Category | Microsoft Advertising Curate Targeting |
+| Country/Region | Content Category | Microsoft Advertising Curate Targeting |
 |---|---|---|
 | Austria | AT-001 (24941), at.msn.com (25636) | Content Category & Domain (MSN.COM) + Country Geo (AT) |
 | Belgium | BE-001-Dutch (20348), be.msn.com (25633), BE-004-French (20350) | Content Category |
@@ -141,16 +141,16 @@ Use the targeting parameters below across different regions for your specific re
 | Spain | ES-001 (20365), es.msn.com (27206) | Content Category & Domain (MSN.COM) + Country Geo (ES) |
 | Sweden | SE-001 (20380), se.msn.com (26245) | Content Category & Domain (MSN.COM) + Country Geo (SE) |
 | Switzerland | ch.msn.com (25637), CH-001 (24939), | Content Category & Domain (MSN.COM) + Country Geo (CH) |
-| Turkey | TR-001 (25438), tr.msn.com (25439) | Content Category |
+| Türkiye | TR-001 (25438), tr.msn.com (25439) | Content Category |
 | UK | UK-001 (20383), uk.msn.com (25630) | Content Category & Domain (MSN.COM) + Country Geo (UK) |
 
 #### APAC
 
-| Country | Content Category | Microsoft Advertising Curate Targeting |
+| Country/Region | Content Category | Microsoft Advertising Curate Targeting |
 |---|---|---|
 | Australia | AU-001 (20276) | Content Category |
 | China * Launch Q2 | CN-001 (27305), cn.msn.com (27306) | Content Category & Domain (MSN.COM) + Country Geo (CN) |
-| Hong Kong | HK-001 (25532), hk.msn.com (25533) | Content Category |
+| Hong Kong SAR | HK-001 (25532), hk.msn.com (25533) | Content Category |
 | India | in.msn.com (25639), IN-001 (27044) | Content Category & Domain (MSN.COM) + Country Geo (IN) |
 | Indonesia | ID-001 (28093), ID.msn.com (28094) | Content Category & Domain (MSN.COM) + Country Geo (ID) |
 | Japan | JP-001 (22822), jp.msn.com (25626) | Content Category & Domain (MSN.COM) + Country Geo (JP) |

@@ -85,8 +85,8 @@ Data retention period for the report is 428 days.
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
 | `deal` | string | No | `"Private deal for buyer 1085 with floor of $2.50 (45)"` | **Deprecated**. |
 | `deal_code` | string | No | `"External seller deal code"` | The custom code for the deal. |
-| `geo_country` | string | yes | `"US"` | The geographic country code. |
-| `geo_country_name` | string | no | `"Unites States"` | The name of the country. |
+| `geo_country` | string | yes | `"US"` | The geographic country/region code. |
+| `geo_country_name` | string | no | `"Unites States"` | The name of the country/region. |
 | `size` | string | no | `"300x250"` | The size of the creative served. |
 | `placement_id` | int | yes | `546` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
 | `placement_name` | string | no | `"300x250 Business"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
@@ -105,7 +105,7 @@ Data retention period for the report is 428 days.
 | `media_type` | string | no |  `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of the creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | yes | `2` | **Read-only**. The ID of the media type to which the subtype belongs. |
 | `adjustment_id` | int | yes | `890` | The ID of the adjustment used to make changes to the media cost and/or impressions, clicks, and conversions you see in reporting for a publisher. |
-| `venue` | string | yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country that Xandr' optimization system uses to determine bid valuations. A campaign cannot targeted a venue explicitly. |
+| `venue` | string | yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country/region that Xandr' optimization system uses to determine bid valuations. A campaign cannot targeted a venue explicitly. |
 | `predict_rev_type` | int | yes | `2` | The optimization phase of a campaign that served on the publisher's inventory. Possible values:<br>`-2` = No predict phase<br>`-1` = Base predict phase<br>`0` = Learn giveup<br>`1` = Learn<br>`2` = Throttled<br>`3` = Optimized<br>`4` = Biased<br>`5` = Optimized 1<br>`8` = Optimized giveup<br>`9` = Base bid below giveup |
 
 ## Metrics

@@ -191,7 +191,7 @@ Information on the user and the overall bid request.
 | Field | Scope | Type | Description |
 |---|---|---|---|
 | `ip_address` | all | string | The IP address of the user. |
-| `country` | some | string | The country of the user based on IP address, if it can be determined. |
+| `country` | some | string | The country or region of the user based on IP address, if it can be determined. |
 | `region` | some | string | The region (state/province) of the user based on IP address, if it can be determined. |
 | `city` | some | string | The city of the user based on IP address. |
 | `postal_code_id` | some | int | The ID of the postal code of the user, based on IP address. |
@@ -224,7 +224,7 @@ Information on the user and the overall bid request.
 |---|---|---|---|
 | `app_id` | some | string | Global App Id for Android and iOS devices (For example, for Angry Birds app: "app_id": "com.rovio.angrybirds" for an Android device, "app_id" : "343200656" or "com.clickgamer.AngryBirds" for an iOS device). |
 | `loc` | some | string | Location of the user, provided in terms of latitude and longitude. Expressed in the format "snnn.ddd,snnn.ddd", for example +123.456 or -456.123. South and west are represented as negative. There can be a maximum of 5 decimal places of precision. |
-| `carrier` | some | int | Identifier for the carrier. A mapping of IDs to carrier names and countries will be available from the carrier read-only service. A special carrier "WIFI" will exist for users connecting via WiFi. |
+| `carrier` | some | int | Identifier for the carrier. A mapping of IDs to carrier names and countries or regions will be available from the carrier read-only service. A special carrier "WIFI" will exist for users connecting via WiFi. |
 | `device_make` | some | int | The ID of the device make on which the ad will be shown. You can use this to manufacturer of the device on which the ad will be shown. For more information see the [Device Make Service](../digital-platform-api/device-make-service.md). |
 | `device_model` | some | int | The ID of the device model on which the ad will be shown. For more information, see the [Device Model Service](../digital-platform-api/device-model-service.md). |
 | `device_type` | some | int | The ID of the type of device on which the ad will be shown. This is represented by an integer, and can be looked up using the [Device Model Service](../digital-platform-api/device-model-service.md). Allowed values, and their meanings:<br> - `1` = "pc" <br> - `2` = "phone" <br> - `3` = "tablet" |

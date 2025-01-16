@@ -42,18 +42,18 @@ Data retention period for this report is 365 days. Data in this report has a dai
 | `line_item.name` | string | Yes | `"My Line Item"` | name of the line item. |
 | `ymd` | date | Yes | `2021-05-02` | The year, month, and day of the last available day for data. |
 | `member_id` | int | Yes | `14545978` | ID of the member. |
-| `country_code` | string | Yes | `"DE" - Germany` | The corresponding code for a country where impressions for your line item occurred. |
+| `country_code` | string | Yes | `"DE" - Germany` | The corresponding code for a country/region where impressions for your line item occurred. |
 | `demographic_group` | string | Yes | `"male 25-29"` | A demographic group sorted by sex and age range. |
 | `platform` | string | Yes | `"desktop"`, `"mobile"`, or `"connected device"` | Filter for the type of device used. |
 | `nielsen_campaign_ref` | string | No | `"scm1521250"` | The Nielsen campaign reference ID. |
 | `start_agg_date` | date | No | `2021-04-26`  | The date on which Nielsen first started collecting data. |
-| `country_name` | string | No | `"United States"` | Country where the impression was recorded. |
+| `country_name` | string | No | `"United States"` | Country/region where the impression was recorded. |
 
 ## Metrics
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `population` | int | `11080000` | N/A | Based on census-provided data, the number of people in the country included in a given demographic |
+| `population` | int | `11080000` | N/A | Based on census-provided data, the number of people in the country/region included in a given demographic |
 | `total_imps` | int | `132297` | N/A | The total number of impressions your line item has made. |
 | `on_target_imps` | int | `10588` | On Target Impressions = Impressions Seen by Target Demographic ÷ Total Impression Count for your Line Item | The number of impressions served to your desired demographic group that are within your selected reporting dimensions. |
 | `imps_share` | double | `5.910942802935819` | Impressions Share (%) = Demographic Impressions ÷ Total Number of Impressions Across all Demographic Groups × 100 | Based on the line item's total impression count, the percentage that served to your targeted demographic. |

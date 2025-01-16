@@ -66,8 +66,8 @@ Data in this report is retained for 420 days.
 | `deal_code` | string | No | `External seller deal code` | The custom code for the deal. For deals with external supply partners, this string typically identifies the deal. |
 | `deal_id` | int | Yes | `2345` | The ID of the deal. For more information about negotiated deals between buyers and sellers, see [Deal Service](./deal-service.md) and [Deal Buyer Access Service](./deal-buyer-access-service.md). |
 | `deal_name` | string | No | `"Private deal for buyer 1085 with floor of $2.50"` | The name of the deal. |
-| `geo_country` | string | yes | `"US"` | The geographic country code. |
-| `geo_country_name` | string | no | `"United States"` | The name of the country. |
+| `geo_country` | string | yes | `"US"` | The geographic country/region code. |
+| `geo_country_name` | string | no | `"United States"` | The name of the country/region. |
 | `placement_id` | int | yes | `546` | The ID of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `-1` as the `placement_id`. |
 | `placement_name` | string | no | `"300x250 Business"` | The name of the placement.<br><br>**Note**: For impressions older than 100 days, placements will be aggregated into one row with `"All placement data older than 100 days"` as the `placement_name`. |
 | `placement_code` | string | no | `"300x250 Business Code"` | The custom code for the placement. |

@@ -73,7 +73,7 @@ Data in this report is retained for 420 days.
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Creative | Yes | The creative that served on this impression. For more information about creatives, see [Working with Creatives](./working-with-creatives.md). <br>**Note**: For impressions older than 100 days, creatives will be aggregated into one row with `0` as the ID and a generic name.</br> |
 | Creative Duration | No | The duration of the video creative in seconds. |
-| Country | Yes | The country in which the impression took place. |
+| Country | Yes | The country/region in which the impression took place. |
 | Insertion Order | Yes | The insertion order under which this impression was purchased. |
 | Creative Recency | Yes | How recently the creative was viewed by the user. For more information, see [Creative Frequency and Recency Report](./creative-frequency-and-recency-report.md). |
 | Creative Frequency | Yes | How many times the creative has been viewed by the user. For more information, see Creative Frequency Definitions in the [Creative Frequency and Recency Report](./creative-frequency-and-recency-report.md) page. |

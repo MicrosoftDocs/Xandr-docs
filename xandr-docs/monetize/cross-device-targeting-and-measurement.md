@@ -16,11 +16,11 @@ Cross-device capability enhances targeting and attribution using information fro
 - Microsoft Advertising's identity graph, which covers the United States and Europe. The Microsoft Advertising United States and Europe graphs are powered by market-leading data partners.
   
   > [!IMPORTANT]
-  > European cross device coverage is currently limited to the following key countries:
+  > European cross device coverage is currently limited to the following key countries or regions:
   > - France
   > - Italy
   > - Germany
-  > - Great Britain
+  > - United Kingdom
   > - Spain
   > - Switzerland
   > - Austria

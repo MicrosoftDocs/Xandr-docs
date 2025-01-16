@@ -37,7 +37,7 @@ Sellers will categorize sites and placements using the [Content Category Service
 | `requires_allowlist_on_external` | boolean | Whether brands or creatives in this category require allowlisting in order to serve on external (i.e., RTB) inventory. |
 | `last_modified` | timestamp | The date and time when the category was last modified. |
 | `is_brand_eligible` | boolean | If true, Xandr's audit team may associate the category with brands. |
-| countries_and_brands | array of objects | This array contains brand allowlist settings grouped by country. For more information, see [Countries and Brands](#countries-and-brands) below. |
+| countries_and_brands | array of objects | This array contains brand allowlist settings grouped by country/region. For more information, see [Countries and Brands](#countries-and-brands) below. |
 
 ### Countries and brands
 
@@ -45,8 +45,8 @@ Sellers will categorize sites and placements using the [Content Category Service
 |:---|:---|:---|
 | `brand_id` | int | The ID of the brand. |
 | `brand_name` | string | The name of the brand. |
-| `brand` | multi_object | An object containing information about the brand allowlisted in this country. For more information, see [Brand](#brand) below. |
-| `country` | string | A 2-character string referencing the country in which the brand is allowlisted.|
+| `brand` | multi_object | An object containing information about the brand allowlisted in this country/region. For more information, see [Brand](#brand) below. |
+| `country` | string | A 2-character string referencing the country/region in which the brand is allowlisted.|
 
 ### Brand
 
@@ -101,9 +101,9 @@ $ curl -b cookies "https://api.appnexus.com/category"
     "categories": [
       {
         "allowlist": {
-          "countries_and_brands": [
+          "country or region_and_brands": [
           ],
-          "countries": [
+          "country or region": [
           ]
         },
         "requires_allowlist": false,
@@ -117,9 +117,9 @@ $ curl -b cookies "https://api.appnexus.com/category"
       },
       {
         "allowlist": {
-          "countries_and_brands": [
+          "country or region_and_brands": [
           ],
-          "countries": [
+          "country or region": [
           ]
         },
         "requires_allowlist": false,

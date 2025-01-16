@@ -14,7 +14,7 @@ Buyers of inventory may optimize their purchasing logic using any of the fields 
 
 - `selling_member_id` - The member ID of the seller.
 - `url` - The most granular information about the url of the impression that can be passed to the bidder. This is determined by the seller's business rules and the data that was passed to Xandr for that impression.
-- `country` - The country from which the user is viewing the impression.
+- `country` - The country or region from which the user is viewing the impression.
 
 Additional data that may be used for optimization includes the following:
 

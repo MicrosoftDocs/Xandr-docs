@@ -63,7 +63,7 @@ Data retention period for this report is 30 days.
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `ad_requests_gdpr_country` | int | `10000` | ad_requests_gdpr_country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country, or the impression contained a consent string. |
+| `ad_requests_gdpr_country` | int | `10000` | ad_requests_gdpr_country | The number of incoming ad requests for which the impression originated from a GDPR-implementing country/region, or the impression contained a consent string. |
 | `ad_requests_gdpr_applied` | int | `970` | ad_requests_gdpr_applied | The number of incoming ad requests for which TCF logic was applied. We apply TCF logic if the IAB OpenRTB Specified flag `gdpr` is set to `1` or if the `gdpr` flag is omitted but the request includes a `gdpr_consent` field. If your digital properties intend to use TCF for all GDPR-covered inventory, this number should be close to `num_ad_requests_gdpr_country`. |
 | `ad_requests_gdpr_applied_malformed_consent_string` | int | `876` | ad_requests_gdpr_applied_malformed_consent_string | The number of incoming ad requests for which GDPR is applied, and the consent string is non-blank but malformed. |
 | `ad_requests_gdpr_applied_blank_consent_string` | int | `988` | ad_requests_gdpr_applied_blank_consent_string | The number of incoming ad requests for which GDPR is applied, and the consent string is blank. |
@@ -74,7 +74,7 @@ Data retention period for this report is 30 days.
 | `ad_requests_gdpr_applied_valid_consent_string_tcf_version_1` | int | `986` | ad_requests_gdpr_applied_valid_consent_string_tcf_version_1 | The number of incoming ad requests for which GDPR is applied, the consent string is valid and encoded according to TCF v1. |
 | `ad_requests_gdpr_applied_valid_consent_string_tcf_version_2` | int | `600` | ad_requests_gdpr_applied_valid_consent_string_tcf_version_2 | The number of incoming ad requests for which GDPR is applied, the consent string is valid and encoded according to TCF v2. |
 | `ad_requests_gdpr_applied_valid_consent_string_xandr_consented` | int | `998` | ad_requests_gdpr_applied_valid_consent_string_xandr_consented | The number of incoming ad requests for which GDPR is applied, and Xandr’s vendor bit (#32) is a 1 in the string for TCF v1 encoded strings |
-| `pct_ad_requests_gdpr_country_gdpr_applied` | double | `0.87` | pct_ad_requests_gdpr_country_gdpr_applied | The percentage of incoming ad requests from GDPR-implementing countries for which GDPR is applied. |
+| `pct_ad_requests_gdpr_country_gdpr_applied` | double | `0.87` | pct_ad_requests_gdpr_country_gdpr_applied | The percentage of incoming ad requests from GDPR-implementing countries/regions for which GDPR is applied. |
 | `pct_ad_requests_gdpr_applied_malformed_consent_string` | double | `0.77` | pct_ad_requests_gdpr_applied_malformed_consent_string | The percentage of incoming ad requests for which GDPR is applied, and the consent string is non-blank but malformed. |
 | `pct_ad_requests_gdpr_applied_blank_consent_string` | double | `0.83` | pct_ad_requests_gdpr_applied_blank_consent_string | The percentage of incoming ad requests for which GDPR is applied, and the consent string is blank. |
 | `pct_ad_requests_gdpr_applied_valid_consent_string` | double | `0.91` | pct_ad_requests_gdpr_applied_valid_consent_string | The percentage of incoming ad requests for which GDPR is applied, and the consent string is non-null and valid. |

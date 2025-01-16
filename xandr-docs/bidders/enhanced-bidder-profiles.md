@@ -55,7 +55,7 @@ The targeting object contains the following fields.
 | Field | Type | Description |
 |--|--|--|
 | `exchanges` | object | Exchanges and seller members included or excluded by this profile. For more details, see [Exchanges](enhanced-bidder-profiles.md#exchanges) below. |
-| `countries` | object | Countries included or excluded by this profile. For more details, see [Countries](enhanced-bidder-profiles.md#countries) below. |
+| `countries` | object | Countries or regions included or excluded by this profile. For more details, see [Countries](enhanced-bidder-profiles.md#countries) below. |
 | `domain_lists` | object | Domain lists included or excluded by this profile. For more details, see [Domain Lists](enhanced-bidder-profiles.md#domain-lists) below. |
 | `ad_types` | object | Ad types (e.g., Banner, Video) included or excluded by this profile. For more details, see [Ad Types](enhanced-bidder-profiles.md#ad-types) below. |
 | `supply_types` | object | Supply types (e.g., Desktop, Mobile App) included or excluded by this profile. For more details, see [Supply Types](enhanced-bidder-profiles.md#supply-types) below. |
@@ -78,8 +78,8 @@ The countries object contains the following fields.
 
 | Field | Type | Description | Possible Values |
 |--|--|--|--|
-| `action` | enum | Indicates whether the countries in the targets array (below) are included or excluded. | `include`, `exclude` |
-| `targets` | array of objects | List of countries included or excluded by the profile.. Refer to the [Country Service](country-service.md) for a list of targetable countries. | `{"id": 233}`, `{"id": 80}` |
+| `action` | enum | Indicates whether the countries or regions in the targets array (below) are included or excluded. | `include`, `exclude` |
+| `targets` | array of objects | List of countries or regions included or excluded by the profile.. Refer to the [Country Service](country-service.md) for a list of targetable countries or regions. | `{"id": 233}`, `{"id": 80}` |
 
 ## Domain lists
 

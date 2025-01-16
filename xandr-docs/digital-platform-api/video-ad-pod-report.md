@@ -54,8 +54,8 @@ Data in this report is retained for 420 days.
 | `creative_id` | int | Yes | `9` | The ID of a creative served in the pod. |
 | `creative_name` | string | No | `"MyCreative"` | The name of a creative served in the pod. |
 | `creative` | string | No | `"MyCreative(9)"` | The name and ID of a creative served in the pod. |
-| `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
-| `geo_country_name` | string | No | `"United States"` | The name of the geographic country. |
+| `geo_country` | string | Yes | `"US"` | The code for the geographic country/region. |
+| `geo_country_name` | string | No | `"United States"` | The name of the geographic country/region. |
 | `content_category_id` | int | Yes | `3` | The ID of the content category associated with the ad pod in the placement or placement group. |
 | `content_category` | string | No | `"Travel"` | The name of the content category associated with the ad pod in the placement or placement group. |
 | `video_context` | string | Yes | `"bannerstream"` | When the video creative was served in the pod. |

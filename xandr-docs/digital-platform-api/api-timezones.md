@@ -634,4 +634,4 @@ When you use the [Report Service](./report-service.md) to request a report, you 
 
 ## Further reading
 
-Dates and Times in Reporting: A more high-level, UI-specific page on this information. Customer login to [Monetize](https://monetize.xandr.com/docs/dates-and-times-in-reporting) or [Invest](https://invest.xandr.com/docs/dates-and-times-in-reporting) is required.
+Dates and Times in Reporting: For more high-level, UI-specific page on this information, see [Dates and times in reporting](../invest/dates-and-times-in-reporting).

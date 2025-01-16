@@ -81,10 +81,10 @@ Reference: [Authentication Service](authentication-service.md) and [Bidder Servi
 
 ##### Step 1.2: For all active profile objects, `GET` profile/\[profile id\] through legacy Bidder Profile Service API
 
-Each profile has an allowlist and/or blocklist of items. There are usually “action” and “targets” per member, country, etc.
+Each profile has an allowlist and/or blocklist of items. There are usually “action” and “targets” per member, country or region, etc.
 
 - "...\_action" can be set to “include” or “exclude”.
-- "...\_targets" can have a list of IDs for seller member, country, etc.
+- "...\_targets" can have a list of IDs for seller member, country or region, etc.
 
 Reference: [Legacy Bidder Profile Service](legacy-bidder-profile-service.md)
 
@@ -119,7 +119,7 @@ There are multiple deprecated fields in the legacy Profile API service. We recom
 To make it easier to set up the new Enhanced Bidder Profiles, for each of these fields, list included/excluded attributes:
 
 - Seller Members
-- Countries
+- Countries/Regions
 - Domain Lists
 - Sizes
 - Supply Types
@@ -163,7 +163,7 @@ Remember to evaluate the parent & child profile logic: All incoming traffic from
 To make it easier to set up the new Enhanced Bidder Profiles, for each of these fields, list included/excluded attributes:
 
 - Seller Members
-- Countries
+- Countries/Regions
 - Domain Lists
 - Sizes
 - Supply Types
@@ -218,7 +218,7 @@ Impression must meet requirements of a single profile to be sent to your bidder.
 | Targeting | Legacy Bidder Profile API fields | Enhanced Bidder Profile UI & API fields |
 |:---|:---|:---|
 | Seller Members/Groups | `member_targets` and `seller_member_group_targets` fields in API | Exchanges and Members tab in. All seller members belong to one of the three Exchanges, and you can see which seller members belong to each Exchange in.<br>`exchanges` field in API (For member-level control, use `excluded_members` and `included_members` arrays under exchanges). |
-| Countries | `country_action` field has `include` or `exclude`.<br>`country_targets` array has a list of countries. | Countries tab in.<br>`countries` field in API. (Use `action` and `targets` under `countries`. For targets, use ids retrieved from [Country Service](country-service.md).) |
+| Countries | `country_action` field has `include` or `exclude`.<br>`country_targets` array has a list of countries or regions. | Countries tab in.<br>`countries` field in API. (Use `action` and `targets` under `countries`. For targets, use ids retrieved from [Country Service](country-service.md).) |
 | Domain Lists | `domain_list_action` field has `include` or `exclude`.<br>`domain_list_targets` array has a list of domain list. Use [Domain List Service](domain-list-service.md) to create, view, or edit domains. | Domain Lists tab in (To edit domains, use [Domain List Service](domain-list-service.md)).<br>`domain_lists` field in API. (Use `action` and `targets` under `domain_lists`. For targets, use ids retrieved from [Domain List Service](domain-list-service.md).) |
 | Sizes (and Ad Types) | `size_targets` array (include only). | Ad Types tab in. You can first select Ad Types to include. If you include Banner ad type, you can select sizes to include.<br>`ad_types` field in API. For each ad type, set `action` to `include` or `exclude`. For `banner` ad type, you can include sizes in the `sizes` array. |
 | Supply Types | `supply_type_action` field has `include` or `exclude`.<br>`supply_type_targets` array has web, mobile web, or mobile app. | Supply Types tab in .<br>`supply_types` field in API. (Use `action` and `targets` under `supply_types`. For targets, possible values are `web`, `mobile_web`, and `mobile_app`.) |

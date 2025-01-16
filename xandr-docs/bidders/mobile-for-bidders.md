@@ -78,7 +78,7 @@ The Xandr Notify request is essential to tracking when an impression is served, 
 |:---|:---|:---|:---|
 | `app_id` | some | string | Global App ID for Android and iOS devices.<br>For example, for Angry Birds app:<br>Android device:<br> `"app_id" : "com.rovio.angrybirds"`<br>iOS device:<br> `"app_id" : "343200656"` or `"com.clickgamer.AngryBirds"` |
 | `loc` | some | string | Location of the user, provided in terms of latitude and longitude. <br>Expressed in the format `"snnn.ddd,snnn.ddd"`, for example `+123.456` or `-456.123`. South and west are represented as negative. There can be a maximum of 5 decimal places of precision. |
-| `carrier` | some | int | The ID for the carrier. You can use the [Carrier Service](carrier-service.md) to map carrier IDs to names and countries. A special carrier "WIFI" exists for users connecting via WiFi. |
+| `carrier` | some | int | The ID for the carrier. You can use the [Carrier Service](carrier-service.md) to map carrier IDs to names and countries or regions. A special carrier "WIFI" exists for users connecting via WiFi. |
 | `device_make` | some | int | The ID of the device make on which the ad will be shown. You can use the [Device Make Service](device-make-service.md) to map device make IDs to names. |
 | `device_model` | some | int | The ID of the device model on which the ad will be shown. You can use the [Device Model Service](device-model-service.md) to map device model IDs to names. |
 | `device_type` | some | int | The ID of the type of device on which the ad will be shown. This is represented by an integer, and can be looked up using the [Device Model Service](device-model-service.md). Allowed values, and their meanings:<br> - `1` = "pc"<br> - `2` = "phone"<br> - `3` = "tablet" |

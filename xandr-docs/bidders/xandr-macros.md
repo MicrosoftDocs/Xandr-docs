@@ -81,12 +81,12 @@ Xandr supports the following creative macros when adding creatives using the [C
 
 | Macro | Description |
 |--|--|
-| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. 1 if yes, 0 if no. |
+| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country or region, or if we have a GDPR-required signal passed with the request. 1 if yes, 0 if no. |
 | `${GDPR}` | Offers same functionally as `${GDPR_APPLIES}`. |
 | `${GDPR_CONSENT_STRING}` | This is the IAB GDPR consent string. If the GDPR applies, then this will have a list of user approved vendors based on the [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
 | `${GDPR_CONSENT}` | This is the IAB GDPR consent string according to TCF 1.0 official specification. It is included to maintain backwards compatibility for client convenience. |
 | `${GDPR_CONSENT_[0-9]+}` | For example, GDPR_CONSENT_1, GDPR_CONSENT_12345 etc. These all resolve to the same GDPR consent string as explained above in `'${GDPR_CONSENT_STRING}'`. |
-| `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp/) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
+| `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp/) should be applied. Specifically, it indicates whether the user is located in a country or region affected by legislation covered by the GPP. |
 | `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp/) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br>**Note**: * XXXXX can represent any numerical id |
 
 The following table contains reserved macro names that are not for use by Bidder clients. They will cause conflicts with other Xandr technologies and are not to be used for custom macros.

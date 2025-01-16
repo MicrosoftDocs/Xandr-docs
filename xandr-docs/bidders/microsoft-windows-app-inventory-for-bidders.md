@@ -22,7 +22,7 @@ Microsoft Windows App inventory is fully integrated with the Microsoft Advertisi
 - Available in every MAX market.
 - 50/50 mix of impressions Windows and Windows Phone device impressions.
 
-For detailed inventory availability by size and country, contact your Xandr account representative and ask to receive periodic Mobile Inventory Availability Reports via e-mail.
+For detailed inventory availability by size and country or region, contact your Xandr account representative and ask to receive periodic Mobile Inventory Availability Reports via e-mail.
 
 ## Creative formats and specifications
 

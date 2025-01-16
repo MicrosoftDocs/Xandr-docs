@@ -23,7 +23,7 @@ By default, all operating systems, browsers, and languages are targeted. On the 
   > The language that is targeted here for excluding and including is the browser language, not the language of the content.
 
 - The **Device Model** tab shows all the device makes and models available for targeting. You can either include or exclude devices.
-- The **Carrier** tab shows all the carriers and the countries where they are available. You can either include or exclude carriers.
+- The **Carrier** tab shows all the carriers and the countries or regions where they are available. You can either include or exclude carriers.
 - The **Summary** tab shows a summary of the selected targeting settings.
 
 > [!WARNING]

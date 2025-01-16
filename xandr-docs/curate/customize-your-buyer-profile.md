@@ -29,7 +29,7 @@ Complete the following fields:
 - **City** - Enter the city in which the primary contact is located.
 - **Region** - Enter the state or province in which the primary contact is located.
 - **Postal Code** - Enter the postal (zip) code in which the primary contact is located.
-- **Country** - Enter the country in which the primary contact is located.
+- **Country** - Enter the country or region in which the primary contact is located.
 - **Company Info** - Enter any additional information about your company that may be relevant.
 - **Use the same information for my seller profile** - Select this checkbox to use this same information when a seller is viewing your buyer profile in the **Partner Center** screen.
 

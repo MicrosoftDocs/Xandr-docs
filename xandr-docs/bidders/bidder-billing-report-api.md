@@ -39,8 +39,8 @@ The `report_interval` field in the JSON request can be set to one of the follo
 | `seller_member_id` | int | Yes | Yes | `456` | Internal ID of the seller member. |
 | `seller_member_name` | string | No | No | `"That Seller"` | Display name of the seller member. |
 | `publisher_id` | int | Yes | Yes | `321` | Internal ID of the publisher. |
-| `geo_country` | string | Yes | Yes | `"US"` | The code for the geographic country. |
-| `geo_country_name` | string | No | No | `"United States"` | The name of the geographic country. |
+| `geo_country` | string | Yes | Yes | `"US"` | The code for the geographic country or region. |
+| `geo_country_name` | string | No | No | `"United States"` | The name of the geographic country or region. |
 | `deal_id` |  int | Yes | Yes  | `123`  | The internal ID of the deal. |
 | `deal_name` | string | No | No | `"Deal A"` | The display name of the deal. |
 | `direct_cleared` | int | Yes | Yes | `0`, `1` | Whether or not the buyer pays the seller directly for the cost of media. If `0`, Xandr collects the cost of media from the buyer and pays the seller. If `1`, the buyer pays the seller directly for the cost of media.<br><br>**Tip:** Buyers can match the cost of media on their invoice by filtering out "cleared direct" transactions. |

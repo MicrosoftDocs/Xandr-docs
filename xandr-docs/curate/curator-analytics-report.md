@@ -82,7 +82,7 @@ Data retention period for this report is 1100 days.
 | Placement | Yes | Placement name/ID of the seller where the curated transaction served on. |
 | Seller Deal | No | The seller deal name/ID being included in a curated deal.<br><br>**Note:** If applicable, since not all curated deals will include a seller. |
 | Size | Yes | The size of the creative (e.g., 320x50). |
-| Country | Yes | The country in which the impression took place. For impression requests for which Microsoft Advertising received no indication that the ad was rendered (i.e., non-transacted), country information is not provided. |
+| Country | Yes | The country or region in which the impression took place. For impression requests for which Microsoft Advertising received no indication that the ad was rendered (i.e., non-transacted), country or region information is not provided. |
 | Site Domain | No | Site Domain/App where the curated transaction served on. |
 | Mobile Application | No | The mobile application associated with the creative that served on this impression. |
 | Media Type | No | The media type associated with the creative that served on this impression. |

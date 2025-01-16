@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Bidders - Region service
 
-The read-only Region Service allows you to see information about the regions and states registered in the Xandr system, including the country to which each region/state belongs. You can use this service to retrieve region IDs for targeting in [profiles](legacy-bidder-profile-service.md).
+The read-only Region Service allows you to see information about the regions and states registered in the Xandr system, including the country or region to which each region/state belongs. You can use this service to retrieve region IDs for targeting in [profiles](legacy-bidder-profile-service.md).
 
 ## REST API
 
@@ -23,9 +23,9 @@ The read-only Region Service allows you to see information about the regions and
 | Field | Type | Description |
 |---|---|---|
 | `code` | enum | The ISO or FIPS code for the region. |
-| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
-| `country_id` | int | The ID of the country to which the region belongs. |
-| `country_name` | string | The name of the country to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country or region to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_id` | int | The ID of the country or region to which the region belongs. |
+| `country_name` | string | The name of the country or region to which the region belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
 | `id` | int | The ID of the region. |
 | `name` | string | The name of the region. |
 
@@ -34,7 +34,7 @@ The read-only Region Service allows you to see information about the regions and
 ### View all regions in Germany
 
 ```
-$ curl -b cookies -c cookies 'https://api.adnxs.com/region?country_code=DE'
+$ curl -b cookies -c cookies 'https://api.adnxs.com/region?country or region_code=DE'
 {
     "response": {
         "status": "OK",

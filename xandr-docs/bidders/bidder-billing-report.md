@@ -41,7 +41,7 @@ Select the **filters** you want to be used to generate the report. Click the 
 | **Publisher** | Select to filter by internal ID of the publisher, which is one level more detailed than seller member. |
 | **Buying Currency** | Select to filter by the buyer member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
 | **Impression Type** | Select to filter by the type of impression served. Possible values:<br> - 1 = blank<br> - 2 = PSA<br> - 3 = default error<br> - 4 = default<br> - 5 = kept<br> - 6 = resold<br> - 7 = RTB<br> - 8 = PSA resulting from a default error<br> - 9 = external impression<br> - 10 = external click |
-| **Country** | Select to filter by the country the impression originated from. |
+| **Country** | Select to filter by the country or region the impression originated from. |
 
 ## Dimensions
 

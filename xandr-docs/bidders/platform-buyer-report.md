@@ -45,7 +45,7 @@ Select the **filters** you want to be used to generate the report. Click the **
 | **Buyer Currency** | Select to filter by the buyer member's selected currency. For a list of supported currencies, see [Supported Currencies](supported-currencies.md). |
 | **Buyer Member** | Select to filter by the internal ID of the buyer member. |
 | **Content Category** | Select to filter by content category that the inventory where the impression occurred was associated with. For more information about content categories, see the [Content Category Service](content-category-service.md). |
-| **Country** | Select to filter by the country the impression originated from |
+| **Country** | Select to filter by the country or region the impression originated from |
 | **Creative** | Select to filter by ID of the creative that served on the impression where the "event" you're counting occurred. For more information about creatives, see the [Creative Service](creative-service.md). |
 | **Creative Size** | Select to filter by the size of the creative. |
 | **Impression Type** | Select to filter by the type of impression served. Possible values: <br> - 1 = blank <br> - 2 = PSA <br> - 3 = default error <br> - 4 = default <br> - 5 = kept <br> - 6 = resold <br> - 7 = RTB <br> - 8 = PSA resulting from a default error <br> - 9 = external impression <br> - 10 = external click |
@@ -69,7 +69,7 @@ Select the **dimensions** you want to be used to generate the report. Click the 
 | **Buyer Seat Code** | The Custom Buyer Seat ID (submitted by DSP) that was used to bid on the impression |
 | **Buyer Seat Name** | The display name for the buyer seat code |
 | **Content Category** | Category that the inventory where the impression occurred was associated with. For more information about content categories, see the [Content Category Service](content-category-service.md). |
-| **Country** | The country the impression originated from |
+| **Country** | The country or region the impression originated from |
 | **Creative** | ID of the creative that served on the impression where the "event" you're counting occurred. For more information about creatives, see the [Creative Service](creative-service.md). |
 | **Creative Size** | Size of the creative served |
 | **Impression Type** | Type of impression served. Possible values: <br> - 1 = blank <br> - 2 = PSA <br> - 3 = default error <br> - 4 = default <br> - 5 = kept <br> - 6 = resold <br> - 7 = RTB <br> - 8 = PSA resulting from a default error <br> - 9 = external impression <br> - 10 = external click |

@@ -27,9 +27,9 @@ Blocked categories are sent in the bid request in the `bcat` field. (Note that t
 
 ## Data format
 
-### What is the format of the country in the bid_request?
+### What is the format of the country or region in the bid_request?
 
-The country is based on the ISO 3166-1 Alpha-3 code. The mappings can be found in the Alpha-3 code column in the [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#search).
+The country or region is based on the ISO 3166-1 Alpha-3 code. The mappings can be found in the Alpha-3 code column in the [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#search).
 
 ### Where can I find the DMA in the bid_request?
 
@@ -58,9 +58,9 @@ The following FAQs apply only to Xandr's legacy bidding protocol and OpenRTB 2.0
 
 There are two types of inventory audits that can be applied to an impression: 1) Xandr's platform audit and 2) seller self-classification. The "`inventory_audits`" under the "bid_info" section contains Xandr's platform audit. The "`inventory_audits`" under the "tag_info" section contains the seller self-classification. The reason they are in different locations is because the platform audit is determined by the site domain of the referrer URL that comes through on the bid request and is assigned dynamically to each impression, whereas the seller self-classification is applied on a tag-by-tag basis and is entered into our backend.
 
-### What is the format of the country in the bid_request?
+### What is the format of the country or region in the bid_request?
 
-The country is the two-letter country code. The mappings can be found under the Alpha-2 code in the [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#search).
+The country or region is the two-letter country or region code. The mappings can be found under the Alpha-2 code in the [ISO Online Browsing Platform](https://www.iso.org/obp/ui/#search).
 
 ### What is the format of the DMA in the bid_request?
 
@@ -68,7 +68,7 @@ The DMA is a number. You'll need to email [The Nielsen Company](mailto:mediapros
 
 ### What is the format of the postal code in the bid_request?
 
-The postal code is a Xandr ID corresponding to a postal code in a specific country.
+The postal code is a Xandr ID corresponding to a postal code in a specific country or region.
 
 ### How do I determine the creative attributes the seller does not allow?
 

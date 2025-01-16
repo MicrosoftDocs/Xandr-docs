@@ -47,8 +47,8 @@ The `report_interval` field in the JSON request can be set to one of the followi
 | `publisher_name` | string | Yes | The display name of the publisher. |
 | `publisher` | string | Yes | **Deprecated**. |
 | `size` | string | Yes | The size of the creative. |
-| `geo_country` | string | Yes | The display name of the country followed by the ID (Xandr format). |
-| `geo_country_name` | string | Yes | The country where the event being counted (e.g., click) occurred. |
+| `geo_country` | string | Yes | The display name of the country or region followed by the ID (Xandr format). |
+| `geo_country_name` | string | Yes | The country or region  where the event being counted (e.g., click) occurred. |
 | `content_category_id` | int | Yes | The ID of the content category that the inventory where the impression occurred was associated with. For more information about content categories, see the [Content Category Service](content-category-service.md). |
 | `content_category_name` | string | Yes | The name of the content category that the inventory where the impression occurred was associated with. For more information about content categories, see the [Content Category Service](content-category-service.md). |
 | `content_category` | string | Yes | **Deprecated**. |

@@ -634,4 +634,4 @@ When you use the [Report Service](./report-service.md) to request a report, you 
 
 ## Further reading
 
-Dates and Times in Reporting: For more high-level, UI-specific page on this information, see [Dates and times in reporting](../invest/dates-and-times-in-reporting).
+Dates and Times in Reporting: For more high-level, UI-specific page on this information, see [Dates and times in reporting](../invest/dates-and-times-in-reporting.md).

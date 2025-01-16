@@ -54,7 +54,7 @@ The read-only Category Service allows you to view all categories that are regist
 | `brand_id` | int | The ID of the brand. |
 | `brand_name` | string | The name of the brand. |
 | `brand` | multi_object | An object containing information about the brand allowlisted in this region. |
-| `region` | string | A string referencing the region in which the brand is allowlisted. For a list of supported codes, see the [ISO 3166-2](https://dev.maxmind.com/static/maxmind-region-codes.csv). |
+| `region` | string | A string referencing the region in which the brand is allowlisted. For a list of supported codes, see the [ISO 3166-2](https://www.maxmind.com/download/geoip/misc/region_codes.csv). |
 
 ## Examples
 

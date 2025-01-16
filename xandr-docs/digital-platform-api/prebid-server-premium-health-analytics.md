@@ -68,8 +68,8 @@ Data retention period for this report is 99 days.
 | `device_type_id` | int | yes | `1` | The category of device: <br>- `0` = Unknown<br>- `1` = desktops & laptops<br>- `2` = mobile phones<br>- `3` = Tablet<br>- `4` = tv<br>- `5` = game consoles<br>- `6` = media players<br>- `7` = set top box |
 | `device_type_name` | string | yes | `"mobile phones"` | The name of the category of device (desktops & laptops, mobile phones, etc.). |
 | `external_creative_id` | string | yes | `987654` | The external ID associated with the creative served. |
-| `geo_country` | string | yes | `"US"` | The code of the country in which the impression served. For example, US. |
-| `geo_country_name` | string | No | `"United States"` | The name of the country in which the impression served. For example, United States. |
+| `geo_country` | string | yes | `"US"` | The code of the country/region in which the impression served. For example, US. |
+| `geo_country_name` | string | No | `"United States"` | The name of the country/region in which the impression served. For example, United States. |
 | `hour` | date | no | `"2018-02-01-09:54"` | The hour of the auction. |
 | `inventory_url` | string | no | `"myurl.com/(1234)"` | The mapped URL from the detected domain on the ad call and the ID in parentheses. |
 | `inventory_url_id` | string | yes | `1234` | The mapped URL ID from the detected domain on the ad call. |

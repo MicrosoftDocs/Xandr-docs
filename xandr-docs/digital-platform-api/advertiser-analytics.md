@@ -82,8 +82,8 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `deal_code` | string | No | `"External seller deal code"` | The custom code for the deal. For deals with external supply partners, this is generally the string that you use to identify the deal. |
 | `placement_code` | string | No | `"FP 728x90"` | The custom code for the placement. |
 | `size` | string | Yes | `"728x90"` | The size of the placement/creative served. |
-| `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
-| `geo_country_name` | string | No | `"United States"` | The name of the geographic country. |
+| `geo_country` | string | Yes | `"US"` | The code for the geographic country or region. |
+| `geo_country_name` | string | No | `"United States"` | The name of the geographic country or region. |
 | `creative_recency_bucket` | string | Yes | `"15-30 minutes"` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative recency data. |
 | `creative_recency_bucket_id` | string | No | `3` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative recency data. |
 | `creative_frequency_bucket` | string | Yes | `"11-20"` | **Deprecated**. If you request this dimension, only a default value will be returned. Use the [Advertiser Creative Frequency & Recency report](./advertiser-creative-frequency-and-recency.md) to view creative frequency data. |
@@ -111,7 +111,7 @@ In some cases Analytics reports can show delivery that does not match statistics
 | `media_type` | string | No | `"Banner"`, `"Pop"`, `"Interstitial"`, `"Video"`, `"Text"`, `"Expandable"`, `"Skin"` | The general display style of the creative. You can use the [Media Type Service](./media-type-service.md) to view the complete list of media types. |
 | `mediatype_id` | int | Yes | `2` | The unique identification number of the media type to which the subtype belongs. |
 | `user_group_for_campaign` | string | Yes | `"Test"` | The test/control user group for the campaign. See the `"labels"` field in the [Campaign Service](./campaign-service.md) for more details. |
-| `venue` | int | Yes | `321512` | The name of the cluster of domain, site, tag, and user country that Xandr' optimization system uses to determine bid valuations. A campaign cannot target a venue explicitly. |
+| `venue` | int | Yes | `321512` | The name of the cluster of domain, site, tag, and user country/region that Xandr' optimization system uses to determine bid valuations. A campaign cannot target a venue explicitly. |
 | `billing_period_start_date` | datetime | No | `"2015-05-25 19:19:53"` | The earliest date of the insertion order's billing period.<br><br>**Note: Alpha-Beta Notice**<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | `billing_period_end_date` | datetime | No | `"2015-05-30 19:19:53"` | The last date of the insertion order's billing period.<br><br>**Note: Alpha-Beta Notice**<br>This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
 | `billing_period_external_code` | string | No | `"houseware245"` | The custom code for the billing period (`budget_interval`). |

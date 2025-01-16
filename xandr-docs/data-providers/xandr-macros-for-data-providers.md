@@ -21,7 +21,7 @@ Xandr can populate the following information.
 | `${USER_AGENT}` | The user agent string from the request's HTTP header. User agent often identifies such information as the application, operating system, and software vendor acting on behalf of the user (e.g., "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.0.4) Gecko/2008102920 Firefox/3.0.4"). |
 | `${USER_AGENT_ENC}` | The encoded user agent string from the request's HTTP header. |
 | `${SELLER_MEMBER_ID}` | The Xandr member ID for the inventory seller associated with the auction. |
-| `${USER_COUNTRY}` | The country for the impression's user. |
+| `${USER_COUNTRY}` | The country or region for the impression's user. |
 | `${USER_STATE}` | The state for the impression's user. |
 | `${USER_CITY}` | The city for the impression's user. |
 | `${USER_DMA}` | The DMA (Designated Market Area) for the impression's user. |
@@ -44,9 +44,9 @@ Xandr can populate the following information.
 
 | Macro | Description |
 |:---|:---|
-| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country, or if we have a GDPR-required signal passed with the request. 1 if yes, 0 if no.<br><br>**Warning:** A "0" may be received from an EEA country. It is the publisher's choice to signal in this manner. |
+| `${GDPR_APPLIES}` | Designates whether GDPR regulations are applied. Specifically, it indicates whether the user is located in a GDPR impacted country or region, or if we have a GDPR-required signal passed with the request. 1 if yes, 0 if no.<br><br>**Warning:** A "0" may be received from an EEA country or region. It is the publisher's choice to signal in this manner. |
 | `${GDPR_CONSENT_STRING}` | This is the IAB GDPR consent string. If the GDPR applies, then this will have a list of user approved vendors based on the [IAB GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework). |
-| `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country affected by legislation covered by the GPP. |
+| `${GPP_SID}` | Designates whether a section (i.e. regulatory framework) of the [Global Privacy Platform](https://iabtechlab.com/gpp) should be applied. Specifically, it indicates whether the user is located in a country or region affected by legislation covered by the GPP. |
 | `${GPP_STRING_XXXXX*}` | This is the IAB [Global Privacy Platform](https://iabtechlab.com/gpp) (GPP) string. If a section of the GPP applies, then this will contain framework-dependent information reflecting the consent elections of the user.<br><br>**Note:** * XXXXX can represent any numerical ID. |
 
 ## Macros for mobile impressions

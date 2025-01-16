@@ -49,7 +49,7 @@ Data in this report is retained for 90 days.
 | `day` | date | Yes | `"2010-02-01"` | The day of the auction. |
 | `hour` | date | Yes | `"2010-02-01 06:00:00"` | The hour of the auction. |
 | `buyer_member_id` | int | Yes | `123` | The ID of the buying member. |
-| `geo_country` | string | Yes | `"US"` | The targeted country of the advertisement. |
+| `geo_country` | string | Yes | `"US"` | The targeted country or region of the advertisement. |
 | `media_type` | string | No | `"Banner"` | The general display style of the creative. |
 | `media_type_id` | int | Yes | `1` | The ID of the media type. |
 | `supply_type` | string | Yes | `"Mobile App"` | The method of rendering the creative on a device. |

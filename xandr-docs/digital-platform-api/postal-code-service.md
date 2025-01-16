@@ -23,7 +23,7 @@ The Postal Code Service is a read-only service. This service can be used to retr
 |:---|:---|:---|
 | `GET` | [https://api.appnexus.com/postal-code](https://api.appnexus.com/postal-code) | View all postal codes using [pagination](05---throttling-pagination-and-filtering.md). |
 | `GET`  | - [https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED](https://api.appnexus.com/postal-code?min_last_modified=LAST_MODIFIED)<br>- [https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED](https://api.appnexus.com/postal-code?max_last_modified=LAST_MODIFIED) | View all postal codes since last modified. |
-| `GET` | [https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE](https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE) | View postal codes in a specific country. |
+| `GET` | [https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE](https://api.appnexus.com/postal-code?country_code=COUNTRY_CODE) | View postal codes in a specific country/region. |
 | `GET` | [https://api.appnexus.com/postal-code/meta](https://api.appnexus.com/postal-code/meta) | Find out which fields you can filter and sort by. |
 
 ## JSON fields
@@ -32,9 +32,9 @@ The Postal Code Service is a read-only service. This service can be used to retr
 |:---|:---|:---|
 | `id` | int | The ID of the postal code. |
 | `code` | string | The postal code can be an alphanumeric string of up to 14 characters and can contain a space or hyphen. |
-| `country_id` | string | The ID of the country. |
-| `country_code` | string | The ISO Alpha-2 code for the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country codes. |
-| `country_name` | string | The name of the country to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country names. |
+| `country_id` | string | The ID of the country/region. |
+| `country_code` | string | The ISO Alpha-2 code for the country/region to which the city belongs. You can use the [country/region Service](country-service.md) to retrieve a complete list of country codes. |
+| `country_name` | string | The name of the country/region to which the city belongs. You can use the [Country Service](country-service.md) to retrieve a complete list of country/region names. |
 | `last_modified` | timestamp | The date and time when the postal code was last modified. |
 | `active` | Boolean | Designates whether the postal code is active. If `true`, the postal code is active and available for targeting. If `false`, there is no geo-location data for the postal code and so targeting is not possible.<br><br>**Note:**<br>The postal codes may occasionally become active or inactive based on changes to IP addressing or changes in geolocation technologies, as well as changes to geographical borders. |
 

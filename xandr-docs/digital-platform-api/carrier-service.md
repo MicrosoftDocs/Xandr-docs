@@ -17,7 +17,7 @@ Mobile carriers, also known as wireless carriers or mobile network operators, ow
 | HTTP Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | [https://api.appnexus.com/carrier](https://api.appnexus.com/carrier) | View all carriers. |
-| `GET` | [https://api.appnexus.com/carrier?country_code=COUNTRY_CODE](https://api.appnexus.com/carrier?country_code=COUNTRY_CODE) | View all carriers in a specific country. |
+| `GET` | [https://api.appnexus.com/carrier?country_code=COUNTRY_CODE](https://api.appnexus.com/carrier?country_code=COUNTRY_CODE) | View all carriers in a specific country or region. |
 | `GET` | [https://api.appnexus.com/carrier?id=CARRIER_ID](https://api.appnexus.com/carrier?id=CARRIER_ID) | View a specific carrier. |
 | `GET` | [https://api.appnexus.com/carrier/meta](https://api.appnexus.com/carrier/meta) | Find out which fields you can filter and sort by. |
 
@@ -27,8 +27,8 @@ Mobile carriers, also known as wireless carriers or mobile network operators, ow
 |:---|:---|:---|
 | `id` | int | The ID of the mobile carrier. |
 | `name` | string | The name of the mobile carrier. |
-| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country in which the carrier operates. |
-| `country_name` | string | The name of the country in which the carrier operates. |
+| `country_code` | enum | The [ISO code](https://www.maxmind.com/en/iso3166) for the country or region in which the carrier operates. |
+| `country_name` | string | The name of the country or region in which the carrier operates. |
 | `codes` | array of objects | Third-party representations for the mobile carrier. For more details, see [Codes Object](#codes-object) below. |
 
 ### Codes object

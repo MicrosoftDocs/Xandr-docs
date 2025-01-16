@@ -50,8 +50,8 @@ Data retention period for this report is 428 days.
 | `placement_name` | string | no | `"300x250 Business"` | The name of the placement. |
 | `placement` | string | no | `"300x250 Business (546)"` | **Deprecated**. |
 | `publisher_id` | int | yes | `6787` | The ID of the publisher. |
-| `geo_country` | string | yes | `"US"` | The code of the geographical country. |
-| `geo_country_name` | string | no | `"United States"` | The name of the geographical country. |
+| `geo_country` | string | yes | `"US"` | The code of the geographical country/region. |
+| `geo_country_name` | string | no | `"United States"` | The name of the geographical country/region. |
 | `imp_type` | string | yes | `"Kept"` | **Deprecated**. |
 | `imp_type_id` | int | yes | `1` | The ID for the type of impression. Possible values (associated types in parentheses):<br>`1` ("Blank"): No creative served.<br>`2` ("PSA"): A public service announcement served because there were no valid bids and no default creative was available.<br>`3` ("Default Error"): A default creative served due to a timeout issue.<br>`4` ("Default"): A default creative served because there were no valid bids.<br>`5` ("Kept"): Your advertiser's creative served on your publisher's site.<br>`6` ("Resold"): Your publisher's impression was sold to a third-party buyer.<br>`7` ("RTB"): Your advertiser's creative served on third-party inventory.<br>`8` ("PSA Error"): A public service announcement served due to a timeout issue or lack of a default creative.<br>`9` ("External Impression"): An impression from an impression tracker.<br>`10` ("External Click"): A click from a click tracker. |
 | `creative_id` | int | yes | `654` | The ID of the creative. |

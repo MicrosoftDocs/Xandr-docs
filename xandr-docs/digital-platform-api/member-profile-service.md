@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Member Profile service
 
-The Member Profile Service allows you to establish a single, global profile to limit the countries and domains from which you accept third-party impressions. Your campaigns will not bid on third-party impressions that do not match the requirements of the member profile.
+The Member Profile Service allows you to establish a single, global profile to limit the countries/regions and domains from which you accept third-party impressions. Your campaigns will not bid on third-party impressions that do not match the requirements of the member profile.
 
 ## Align campaign profiles with member profile
 
@@ -36,7 +36,7 @@ Be sure to align your campaign [profiles](./profile-service.md) with your member
 | `id` | int | The ID of the member profile. |
 | `domain_list_action` | enum | The action to perform on `domain_list_targets`. <br><br>Possible values:<br> - `"include"` - You will accept third-party impressions only from the domains in the specified domain lists. <br> - `"exclude"` - You will accept third-party impressions from all domains except those in the specified domain lists.<br><br>**Default**: `"exclude"` |
 | `domain_list_targets` | array | The [domain lists](./domain-list-service.md) to include or exclude. See the [examples](#examples) below for formatting. |
-| `country_targets` | array | The countries from which you will accept third-party impressions. You will accept impressions only from these countries. Note that if you do not specify any countries, you will accept third-party impressions from all countries. See [examples](#examples) below.   |
+| `country_targets` | array | The countries/regions from which you will accept third-party impressions. You will accept impressions only from these countries/regions. Note that if you do not specify any countries/regions, you will accept third-party impressions from all countries/regions. See [examples](#examples) below.   |
 | `last_modified` | date | **Read-only**. The date on which the member profile was last modified. |
 | `inventory_url_list_targets` | array of objects | Contains a list of inventory list IDs (allowlists and/or blocklists). Used to attach a single allowlist and/or one or more blocklists to the profile.<br><br> - The allowlist contains a list of domains or apps to be targeted by the line item using the profile. If an allowlist is included, domains and apps not in the allowlist will not be targeted.<br><br> - Each blocklist contains a list of domains or apps that are to be excluded from targeting by line item that uses the profile.<br><br>See **Inventory Lists** in [Profile Service](./profile-service.md) for more details. |
 | `require_transparency_and_consent_framework_string` | boolean | If `true`, only allow associated objects to purchase inventory where valid TCF string is present<br><br>If `false`, allow associated objects to purchase any inventory that falls within pre-defined targeting declarations.<br><br>**Note**: This parameter is only applicable to the traffic coming from territories where GDPR applies.<br><br>**Default**: `false` |

@@ -25,9 +25,9 @@ The read-only Designated Market Area (DMA) Service allows you to retrieve the ID
 |:---|:---|:---|
 | `active` | Boolean | If `true`, the DMA is available for targeting. If false, there is no geolocation data for the DMA and so delivery is not possible. |
 | `code` | string | The code of the DMA. |
-| `country_code` | string | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country to which the DMA belongs. You can use the [Country Service](./country-service.md) to retrieve a complete list of country codes. |
-| `country_id` | int | The ID of the country to which the DMA belongs. You can use the [Country Service](./country-service.md) to retrieve a complete list of country IDs. |
-| `country_name` | string | The name of the country to which the DMA belongs. You can use the [Country Service](./country-service.md) to retrieve a complete list of country names. |
+| `country_code` | string | The [ISO code](https://dev.maxmind.com/geoip/release-notes/2022#geoip-legacy-databases-have-been-retired) for the country/region to which the DMA belongs. You can use the [Country Service](./country-service.md) to retrieve a complete list of country codes. |
+| `country_id` | int | The ID of the country/region to which the DMA belongs. You can use the [Country Service](./country-service.md) to retrieve a complete list of country IDs. |
+| `country_name` | string | The name of the country/region to which the DMA belongs. You can use the [Country Service](./country-service.md) to retrieve a complete list of country/region names. |
 | `id` | int | The ID of the DMA. |
 | `name` | string | The name of the DMA. |
 

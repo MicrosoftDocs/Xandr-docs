@@ -45,8 +45,8 @@ Data retention period for this report is 45 days.
 | `publisher_id` | int | Yes | `321` | The ID of the publisher. |
 | `publisher_name` | string | No | `"Test"` | The name of the publisher. |
 | `publisher` | string | No | `"Test (123)"` | The name and ID of the publisher. |
-| `geo_country` | string | Yes | `"US"` | The code for the geographic country. |
-| `geo_country_name` | string | No | `"United States"` | The name of the geographic country. |
+| `geo_country` | string | Yes | `"US"` | The code for the geographic country/region. |
+| `geo_country_name` | string | No | `"United States"` | The name of the geographic country/region. |
 | `site_id` | int | Yes | `194` | The ID of the site.<br><br>**Note:** For impressions older than 100 days, the `site_id` will be `0`. |
 | `site_name` | string | No | `"Site Name"` | The name of the site. |
 | `site` | string | No | `"Site Name(194)"` | The name and ID of the site. |

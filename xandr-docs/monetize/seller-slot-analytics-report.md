@@ -57,7 +57,7 @@ This report's data is retained for 420 days. For more information about how quic
 | Buyer Seat | string | yes | `My Buyer Seat (DSP Name)` | The display name for the buyer seat code. |
 | Call Type | string | no | `ttj`, `ut`, `mob`, `ptv`, `openrtb` | The type of handler that was used to send the impression to Microsoft Advertising (e.g., ttj, ut, mob, ptv, openrtb). |
 | City | string | yes | `Vienna` | The city in which the user is located. |
-| Country | string | yes | `"France"` | The country of the user's location, both name and code, in the format "France". The string "250" can appear in cases where we don't know the country or if the country doesn't map correctly to a location in our database. |
+| Country | string | yes | `"France"` | The country/region of the user's location, both name and code, in the format "France". The string "250" can appear in cases where we don't know the country/region or if the country/region doesn't map correctly to a location in our database. |
 | Creative | string | yes | `My Creative` | The creative name. |
 | Creative Size | Int |  | `1x1` | The height of the creative. |
 | Deal | string | yes | `My Deal` | The deal name for deals set up in Microsoft Advertising. |

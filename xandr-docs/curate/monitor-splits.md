@@ -24,7 +24,7 @@ The grid has two main column groups:
 
 #### 1. Spend allocations
 
-The Spend Allocations group is the first group of columns in the grid and shows projected revenue data from the last 24 hours:
+The **Spend Allocations** group is the first group of columns in the grid and shows projected revenue data from the last 24 hours:
 
 - **Natural** – The spend each split would have achieved without the spend allocation algorithm. It effectively presents the maximum possible spend for the split.
 - **Configured** – The desired spend allocation set during split creation or editing.

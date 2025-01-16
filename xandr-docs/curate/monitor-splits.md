@@ -22,7 +22,7 @@ The grid has two main column groups:
 
 ### Column groups in the grid
 
-### 1. Spend allocations
+#### 1. Spend allocations
 
 The Spend Allocations group is the first group of columns in the grid and shows projected revenue data from the last 24 hours:
 
@@ -30,7 +30,7 @@ The Spend Allocations group is the first group of columns in the grid and shows 
 - **Configured** – The desired spend allocation set during split creation or editing.
 - **Achieved** – The actual spend delivered due to the allocation algorithm's participation rates.
 
-  Use these columns to identify the limiting splits— the splits where its configured allocation is furthest above the natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must adjust other splits to meet this allocation.
+  Use these columns to identify the limiting split— the split where its configured allocation is furthest above its natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must trim back other splits to meet this allocation.
 
 **Actions to improve deal delivery**
 
@@ -39,7 +39,7 @@ The Spend Allocations group is the first group of columns in the grid and shows 
 - Reduce the margin for the split to enhance bid competitiveness.
 - Investigate and address high ineligible bid rates.
 
-### 2. Analytics
+#### 2. Analytics
 
 This group provides lifetime deal data, including:
 

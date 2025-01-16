@@ -9,13 +9,7 @@ Creating an advertiser object is the first step before you can start running ad 
 
 ## Step 1. Start a new advertiser
 
-On the **Advertisers** screen, select the **+New** button.
-
-This opens the **Create New Advertiser** screen, where you define all relevant details for your advertiser.
-
-> [!TIP]
-> You can expand or collapse each section of the screen. To expand or collapse all sections at once, select
-the **Expand All** or **Collapse All** link in the upper right.
+On the **Advertisers** screen, select the **+New** button. This opens the **Create New Advertiser** screen, where you define all relevant details for your advertiser. You can expand or collapse each section of the screen. To quickly expand or collapse all sections at once, select the **Expand All** or **Collapse All** link in the upper right.
 
 ## Step 2. Fill out basic setup
 
@@ -23,8 +17,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 
 - **Name** - Enter the advertiser's name.
 
-- **External Code** - If you want to report on the advertiser using an external code (rather than the internal ID that
-  Microsoft Advertising assigns automatically), enter the code here.
+- **External Code** - If you want to report on the advertiser using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 
 - **State** - Set the state of the advertiser. "Active" means child insertion orders and line items will be eligible to serve. To avoid accidental spending, you should set the state to "Inactive" until everything related to the buy has been set up and verified.
 
@@ -46,8 +39,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 
 ## Step 3. Create a political advertising details template (optional)
 
-> [!NOTE]
-> The Political Advertising Details Template is only enabled when you have specified that you are running political advertising and that you would like to create a political advertising details template.
+The **Political Advertising Details Template** is only enabled when you have specified that you are running political advertising and that you would like to create a political advertising details template.
 
 The political advertising details entered here will automatically populate all new political advertising insertion orders that require this information. You can modify the details for an individual insertion order at any time. You must still certify that the details you have entered are correct for each individual insertion order.
 

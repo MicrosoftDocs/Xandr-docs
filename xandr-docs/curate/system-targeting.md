@@ -14,8 +14,7 @@ By default, all operating systems, browsers, and languages are targeted. On the 
 
 - The **Browser** tab shows all browsers available for targeting. You can either include or exclude browsers.
   
-  > [!NOTE]
-  > If you want to target the Safari browser on desktop and mobile, make sure to include both "Safari" and "iPhone" browsers in you targeting. Including the "iPhone" browser is necessary to see delivery for your line item.
+  To target the Safari browser on both desktop and mobile, ensure you include both the "Safari" and "iPhone" browsers in your targeting. This step is necessary for accurate delivery.
 
 - The **Language** tab shows all the languages available for targeting. You can either include or exclude languages.
   

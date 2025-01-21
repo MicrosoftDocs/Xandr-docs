@@ -204,13 +204,13 @@ Append the configuration ID as the last component of the URL.
 
 To delete a line item created by the campaign objects endpoint, include the `lineItemId` in the query string.
 
-#### Example call using curl
+#### DELETE: Example call using curl
 
 ```bash
 curl -X DELETE https://api.appnexus.com/prebid/psp-campaign-objects?lineItemId=12345
 ```
 
-#### Response
+#### DELETE: Response
 
 On success, the line item indicated will be returned as a JSON object with the deleted property set to true. It will no longer be available within the system. All sub-objects will also be deleted.
 

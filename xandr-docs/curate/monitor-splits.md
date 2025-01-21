@@ -30,9 +30,9 @@ The **Spend Allocations** group is the first group of columns in the grid and sh
 - **Configured** – The desired spend allocation set during split creation or editing.
 - **Achieved** – The actual spend delivered due to the allocation algorithm's participation rates.
 
-  Use these columns to identify the limiting split— the split where its configured allocation is furthest above its natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must trim back other splits to meet this allocation.
+Use these columns to identify the limiting split— the split where its configured allocation is furthest above its natural allocation (e.g., a natural allocation of 20% versus a configured allocation of 80%). This split restricts the deal’s overall delivery, as the algorithm must trim back other splits to meet this allocation.
 
-**Actions to improve deal delivery**
+**Actions for improving the delivery of the limiting split**
 
 - Lower the configured allocation for this split to bring it closer to its natural allocation.
 - Expand the targeting for this split to give it more potential to generate spend.

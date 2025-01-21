@@ -22,11 +22,14 @@ To configure **Supply Shaping**, you can do the following actions in any order b
 
 ## Custom margins
 
-Follow the steps below to enable and configure custom margins.
+You can customize margins for each split if your Curate seat and user have the necessary permissions. Follow the steps below to enable and configure custom margins:
 
 1. The **Use Custom Margins** checkbox will be available. Check the box to add the **Margin** column to the splits entry grid.
-1. By default, each split will use the same margin value defined for your deal line item in the **Basic Settings** section. You can override this margin value by setting a specific value on each split.
-1. Your splits always use the same **Margin Type**—either percentage or CPM—that you selected for your deal line item in the **Basic Settings** section.
+
+Once enabled, each split will, by default, use the same margin value defined for your deal line item in the **Basic Settings** section. However, you can override this default by specifying a different margin value for individual splits.
+
+> [!NOTE]
+> All splits will use the same **Margin Type**—either percentage or CPM—based on the selection made for your deal line item in the **Basic Settings** section.
 
 ## Custom floors
 

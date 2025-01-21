@@ -200,6 +200,20 @@ Append the configuration ID as the last component of the URL.
 
 3. The PSP campaign objects service will respond with the details of the objects updated.
 
+### DELETE
+
+To delete a line item created by the campaign objects endpoint, include the `lineItemId` in the query string.
+
+#### Example call using curl
+
+```bash
+curl -X DELETE https://api.appnexus.com/prebid/psp-campaign-objects?lineItemId=12345
+```
+
+#### Response
+
+On success, the line item indicated will be returned as a JSON object with the deleted property set to true. It will no longer be available within the system. All sub-objects will also be deleted.
+
 ## Related topics
 
 - [Configuration Service](config-service.md)

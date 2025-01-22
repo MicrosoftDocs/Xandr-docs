@@ -137,7 +137,7 @@ Data retention period for this report is 30 days.
 Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
-    - Alternatively, from the Publishers top menu, select Prebid Server Premium > Analytics > Prebid Server Analytics.
+    - Alternatively, from the Publishers top menu, select **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 1. Select the relevant report from the list. The Report screen shows the available filters, dimensions, and delivery options for the report. The selections you make here determine the data delivered and its format. For details on how grouping and filtering work, refer to [Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md).
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by selecting **Edit**), a selection panel appears. Select items in the **Available** list (left), then select **Add** to include them in the **Chosen** list (right).
 1. Group the data by dimension to display rows of information in your preferred order. Be mindful when grouping by multiple dimensions, as this can increase the size of the returned data set and significantly slow processing.

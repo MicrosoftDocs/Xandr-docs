@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # AST Release History
 
 > [!TIP]
-> To utilize the most current version of AST, link to our CDN at [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/static/0.60.1/ast.js). For a detailed example, see our AST implementation guide. If your implementation requires a specific version of AST, use the following link, where `{VERSION_NUM}` would be replaced with the number of the version you want to use: `https://acdn.adnxs.com/ast/static/{VERSION_NUM}/ast.js`
+> To utilize the most current version of AST, link to our CDN at [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js). For a detailed example, see our AST implementation guide.
 
 | Release | Description | Date |
 |---|---|---|

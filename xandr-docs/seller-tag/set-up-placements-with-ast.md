@@ -12,12 +12,12 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > [!NOTE]
 > See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
 >
-> Xandr now supports a domain, adnxs-simple.com, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+> Xandr now supports the domain `adsdk.bing.net`, which neither sends nor reads browser cookies on requests. Clients can use this cookie-free domain when consent to use personal data is not provided. Relevant calls initiated by Xandr automatically use this domain when consent is not given or cookies are not required for functionality. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 >
 > To use the adnxs-simple.com domain:
 >
-> - If you load `ast.js` directly from Xandr's CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js)
-> - If you load `ast.js` from a local server, update `ast.js` to the latest version (version 0.37.1 or higher)
+> - If you load `ast.js` directly from the CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js).
+> - If you load `ast.js` from a local server, update `ast.js` to the latest version (version 0.37.1 or higher).
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 
@@ -41,7 +41,7 @@ In line 5, we set up an empty AST object. In line 7, we create a function queue 
     (function() {
        var d = document, e = d.createElement('script'), p = d.getElementsByTagName('head')[0];
        e.type = 'text/javascript';  e.async = true;
-       e.src = '//acdn.adnxs.com/ast/ast.js';
+       e.src = 'https://adsdk.microsoft.com/ast/ast.js';
        p.insertBefore(e, p.firstChild);
     })();
 ```

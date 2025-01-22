@@ -12,9 +12,9 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > [!NOTE]
 > See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
 >
-> Xandr has introduced a new cookie-free domain, [adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js), which replaces the previous one, `acdn.adnxs.com/ast.js`. The new domain neither sends nor reads browser cookies on requests, ensuring compliance with privacy standards such as Fledge and CMP policies. Relevant calls initiated by Xandr will automatically use the new domain when consent to use personal data is not provided or when cookies are not required for functionality. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+> Xandr has introduced a new cookie-free domain, [adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js), which replaces the previous one, **acdn.adnxs.com/ast.js**. The new domain neither sends nor reads browser cookies on requests, ensuring compliance with privacy standards such as Fledge and CMP policies. Relevant calls initiated by Xandr will automatically use the new domain when consent to use personal data is not provided or when cookies are not required for functionality. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
 >
-> To use the `adnxs-simple.com` domain:
+> To use the adnxs-simple.com domain:
 >
 > - If you load `ast.js` directly from the CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js).
 > - If you load `ast.js` from a local server, update `ast.js` to the latest version (version 0.37.1 or higher).

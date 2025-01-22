@@ -22,7 +22,8 @@ To configure **Supply Shaping**, you can do the following actions in any order b
 
 ## Custom margins
 
-You can customize margins for each split if your Curate seat and user have the necessary permissions. Follow the steps below to enable and configure custom margins:
+You can customize margins for each split if your Curate seat and user have the necessary permissions.
+Follow the steps below to enable and configure custom margins:
 
 1. The **Use Custom Margins** checkbox will be available. Check the box to add the **Margin** column to the splits entry grid.
 

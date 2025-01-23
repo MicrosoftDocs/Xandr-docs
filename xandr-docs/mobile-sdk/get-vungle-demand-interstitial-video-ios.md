@@ -31,7 +31,7 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
 1. Navigate to your project directory.
 1. Run the following command to create a **Podfile**:
 
-   ```bash
+   ```
    pod init
    ```
 
@@ -57,7 +57,7 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
 1. Save the changes to the **Podfile**.
 1. In Terminal, run the following command to install the pods:
 
-```bash
+```
 pod install
 ```
 

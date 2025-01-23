@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 # AST Release History
 
 > [!TIP]
-> To utilize the most current version of AST, link to our CDN at [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js). For a detailed example, see our AST implementation guide.
+> To utilize the most current version of AST, link to our CDN at [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
 
 | Release | Description | Date |
 |---|---|---|

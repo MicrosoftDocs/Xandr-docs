@@ -10,7 +10,6 @@ ms.date: 10/28/2023
 This page contains a sample web page showing how Xandr's seller tag (AST) functions can be implemented in the header and body of a sample client page.
 
 > [!NOTE]
-> See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
 >
 > Xandr has introduced new domains for the `ast.js` library:
 >
@@ -19,15 +18,16 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 >   - Automatically used when consent for personal data is not provided or when cookies are not required.
 > - **Normal Domain**: [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
 >   - Includes functionality that may rely on cookies.
->
-> **Action Required**:
->
-> - **For direct CDN loading:** Update your web pages to use the new domains for downloading `ast.js`.
-> - **For CSP configurations:** Add the following domains to your Content Security Policy (CSP):
->   - `adsdk.microsoft.com`
->   - `adsdk.bing.net`
->
-> For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
+
+
+**Action Required**:
+
+- **For direct CDN loading:** Update your web pages to use the new domains for downloading `ast.js`.
+- **For CSP configurations:** Add the following domains to your Content Security Policy (CSP):
+  - `adsdk.microsoft.com`
+  - `adsdk.bing.net`
+
+For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 

@@ -17,11 +17,11 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > The new domain neither sends nor reads browser cookies. Relevant calls automatically use this domain when consent for personal data is not provided or when cookies are unnecessary.
 > To use the cookie-free domain:
 >
-- Update your web pages to reference [the new Microsoft CDN URL](https://adsdk.bing.net/ast/ast.js).
-- If applicable, add the following to your Content Security Policy (CSP):
+> - Update your web pages to reference [the new Microsoft CDN URL](https://adsdk.bing.net/ast/ast.js).
+> - If applicable, add the following to your Content Security Policy (CSP):
 >
-> - adsdk.microsoft.com
-> - adsdk.bing.net.
+>   - adsdk.microsoft.com
+>   - adsdk.bing.net.
 >
 > If you use the adnxs-simple.com domain:
 >

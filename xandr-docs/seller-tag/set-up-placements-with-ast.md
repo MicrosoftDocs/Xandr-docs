@@ -17,7 +17,7 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 >   - Ensures compliance with privacy standards such as Fledge and CMP policies.
 >   - Automatically used when consent for personal data is not provided or when cookies are not required.
 > - **Normal Domain**: [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
->   - Includes functionality that may rely on cookies.
+>   - Includes functionality that may rely on cookies.<br>
 >
 > **Action required**
 >

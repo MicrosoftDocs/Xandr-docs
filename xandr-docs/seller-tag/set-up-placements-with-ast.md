@@ -18,6 +18,7 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > To use the cookie-free domain:
 >
 > - Update your web pages to reference [the new Microsoft CDN URL](https://adsdk.bing.net/ast/ast.js).
+>
 > - If applicable, add the following to your Content Security Policy (CSP):
 >
 >   - adsdk.microsoft.com

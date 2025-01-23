@@ -19,7 +19,7 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > - **Normal Domain**: [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
 >   - Includes functionality that may rely on cookies.
 
-## Action required
+**Action required**
 
 - **For direct CDN loading:** Update your web pages to use the new domains for downloading `ast.js`.
 - **For CSP configurations:** Add the following domains to your Content Security Policy (CSP):

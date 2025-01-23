@@ -18,6 +18,7 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 >   - Automatically used when consent for personal data is not provided or when cookies are not required.
 > - **Normal Domain**: [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
 >   - Includes functionality that may rely on cookies.
+>
 > **Action required**
 >
 > - **For direct CDN loading:** Update your web pages to use the new domains for downloading `ast.js`.

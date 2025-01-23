@@ -24,7 +24,9 @@ dependencies {
 
 Initialize the Vungle SDK early in your app's lifecycle to ensure it is ready to use. Replace `YOUR_APP_ID` with the app ID provided by Vungle.
 
-```
+```swift
+
+
 VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
     @Override
     public void onSuccess() {
@@ -38,7 +40,10 @@ VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
 });
 ```
 
-In the onSuccess() callback, confirm that the SDK has been initialized successfully. Use the onError() callback to log any initialization errors.
+On successful initialization of the Vungle SDK, the `ANVungleSettings.setVungleInitialize` method is set to `true`. If initialization fails, the value is set to `false`.
+
+- If the flag is `true` (Vungle SDK is initialized), the `getBidderToken` method will return the Vungle Bidder Token, allowing you to proceed with further steps.
+- If the flag is `false`, the `getBidderToken` method will return `nil`, indicating that the SDK initialization has failed.
 
 ### Step 3: Initialize an interstitial ad and set the required keyword
 

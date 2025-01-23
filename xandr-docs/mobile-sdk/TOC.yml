@@ -33,6 +33,8 @@
       items:
       - name: Overview
         href: ios-mediation.md
+      - name: Get Vungle Demand for Interstitial Video on iOS
+        href: get-vungle-demand-interstitial-video-ios.md
       - name: Mediatation Instructions
         href: mediate-with-ios.md
       - name: Custom Adaptors
@@ -144,6 +146,8 @@
       items:
       #- name: Overview
         #href: mediate-with-android-sdk.md
+      - name: Get Vungle demand for Interstitial Video on Android
+        #href: vungle-demand-interstitial-video-android.md
       - name: Mediatation Instructions
         href: mediate-with-android-sdk-instructions.md
       - name: Custom Adaptors

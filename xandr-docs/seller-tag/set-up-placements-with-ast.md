@@ -10,23 +10,21 @@ ms.date: 10/28/2023
 This page contains a sample web page showing how Xandr's seller tag (AST) functions can be implemented in the header and body of a sample client page.
 
 > [!NOTE]
+> As part of our ongoing transition to enhance performance and align with Microsoft services, we are migrating the AST product from the Xandr CDN to the Microsoft CDN.  
 >
-> Xandr has introduced new domains for the `ast.js` library:
->
-> - **Normal Domain**: [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
->   - Includes functionality that may rely on cookies.
->   - Should be used by all publishers for enhanced performance and functionality.
-> - **Cookie-Free Domain**: [https://adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js)
->   - Ensures compliance with privacy standards such as Fledge and CMP policies.
->   - Automatically used when consent for personal data is not provided or when cookies are not required.
+> This change ensures you continue to receive critical updates, including compliance with evolving privacy standards such as Fledge and CMP policies.  
 >
 >
-> ***Action required***
+> To ensure you receive the latest updates and improvements for the AST product, including essential privacy features, follow these steps to update your web pages with the new Microsoft CDN URLs:
 >
-> - **For direct CDN loading:** Update your web pages to use the new domains for downloading `ast.js`. Use the cookie-free domain only when required by specific privacy scenarios.
-> - **For CSP configurations:** Add the following domains to your Content Security Policy (CSP):
->   - `adsdk.microsoft.com`
->   - `adsdk.bing.net` (if applicable)
+> - **Regular Domain:** [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/ast.js)
+> - **Cookie-Free Domain:** [https://adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js)
+>
+> If you use a Content Security Policy (CSP), ensure the following domains are added to your allowed list:
+>
+> - `adsdk.microsoft.com`
+> - `adsdk.bing.net` (if applicable)
+
 
 For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
 

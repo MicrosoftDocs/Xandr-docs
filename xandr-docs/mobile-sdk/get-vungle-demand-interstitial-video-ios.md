@@ -1,17 +1,17 @@
 ---
-title: Get Vungle Demand for Interstitial Video on iOS
+title: Integrate Vungle Demand for Interstitial Video Ads on iOS
 description: Learn how to integrate Vungle demand for interstitial video ads on iOS using the AppNexus SDK and ANVungleAdapter.
 ms.custom: ios-sdk
 ms.date: 10/28/2023
 ---
 
-# Get Vungle demand for interstitial video ads on iOS
+# Integrate Vungle demand for interstitial video ads on iOS
 
 This page provides detailed steps for integrating and displaying Interstitial Video Ads using the Vungle SDK in your iOS application.
 
 ## Prerequisites
 
-To successfully integrate Vungle Demand, ensure that you have the following SDK versions:
+Before integrating Vungle Demand, ensure that you have the following SDK versions installed:
 
 - **Microsoft Ads SDK**: version 9.3.0
 - **ANVungleAdapter**: required for Vungle integration
@@ -39,7 +39,11 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
 1. Set the platform version to **iOS 12.0** (AppNexus supports two iOS releases back from the current release).
 1. Add the following dependencies to the target section:
 
-   #### Example Podfile Configuration
+```ruby
+pod 'AppNexusSDK'
+```
+
+#### Example Podfile configuration
 
     ```ruby
     
@@ -54,7 +58,7 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
 
 ### Step 3: Install the Pods
 
-1. Save the changes to the **Podfile**.
+1. Save the changes to the **Podfile**, then proceed to install the dependencies.
 1. In Terminal, run the following command to install the pods:
 
 ```
@@ -71,7 +75,7 @@ Once the pods are installed and the workspace is set up, you are ready to procee
 ## Initialize the Vungle SDK
 
 To initialize the Vungle SDK, add the following code to the early lifecycle of your app.
-
+Replace "YOUR_APP_ID" with the App ID provided by Vungle.
 ```swift
 
 VungleAds.initWithAppId("YOUR_APP_ID") { error in
@@ -122,7 +126,7 @@ interstitialAd.load()
 
 ## Render creative
 
-Once the interstitial ad is successfully received, you can display it when appropriate. In the example below, the ad is displayed as soon as it is successfully loaded.
+After the interstitial ad is successfully loaded, you can display it to users based on your app's logic. In the example below, the ad is shown immediately upon loading.
 
 ```swift
 

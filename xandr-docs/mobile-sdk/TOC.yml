@@ -33,7 +33,7 @@
       items:
       - name: Overview
         href: ios-mediation.md
-      - name: Get Vungle Demand for Interstitial Video on iOS
+      - name: Integrate Vungle Demand for Interstitial Video Ads on iOS
         href: get-vungle-demand-interstitial-video-ios.md
       - name: Mediatation Instructions
         href: mediate-with-ios.md

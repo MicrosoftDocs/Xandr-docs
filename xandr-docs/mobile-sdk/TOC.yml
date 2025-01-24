@@ -146,7 +146,7 @@
       items:
       #- name: Overview
         #href: mediate-with-android-sdk.md
-      - name: Get Vungle demand for Interstitial Video on Android
+      - name: Integrate Vungle demand for Interstitial Video on Android
         href: vungle-demand-interstitial-video-android.md
       - name: Mediatation Instructions
         href: mediate-with-android-sdk-instructions.md

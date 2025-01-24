@@ -45,7 +45,7 @@ pod 'AppNexusSDK'
 
 #### Example Podfile configuration
 
-    ```ruby
+```ruby
     
     platform :ios, '12.0'
     project 'SampleApp'

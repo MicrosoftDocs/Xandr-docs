@@ -6,13 +6,15 @@ ms.date: 10/28/2023
 
 # Microsoft Curate - Additional geo restrictions
 
-> [!NOTE]
-> If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal code for the purpose of personalizing advertising, segmenting, or profiling customers.
+If you are advertising in connection with any financial, insurance, education, career and employment, and/or housing services, you may not use postal code for the purpose of personalizing advertising, segmenting, or profiling customers.
 
 In addition to country, you can also restrict the impressions you target based on other geographic details of the users viewing them.
 
-> [!WARNING]
-> Although restricting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes. Also, depending upon which geographic restriction options you choose, you may significantly reduce the likelihood of a match and thus jeopardize delivery.
+## Geographic targeting considerations
+
+Although restricting by country is highly accurate, the more specific the targeting, the more imprecise the results. This is especially true when targeting locations as granular as cities, metro codes, and zip codes. Also, depending upon which geographic restriction options you choose, you may significantly reduce the likelihood of a match and thus jeopardize delivery.
+
+## Geographic restrictions overview
 
 To restrict the impressions you target based on other geographic details of the users viewing them, select **Additional Geo Restrictions** next to **Geography** in the **Audience & Location Targeting** section of your line item and follow the instructions for the relevant geographic targeting option referenced below:
 
@@ -22,6 +24,8 @@ To restrict the impressions you target based on other geographic details of the 
 
 > [!NOTE]
 > If you have not targeted at least one country on your line item, you will be required to target a region, city, metro code, or postal code.
+
+### Third-party buying filters
 
 For third-party buying, geographic targeting is limited by any existing country settings in your Third-Party Buying Filters at the network level. If countries are included in your Third-Party Buying Filters, only those countries and the regions and cities within them will be available for targeting. If you target (include) geographies at the Region, City, Metro Code, or Postal Code level, Microsoft Advertising will use these settings to derive the country target to be compared with your Third-Party Buying filters.
 
@@ -33,8 +37,10 @@ When creating ALIs, you will be required to include at least one geographic loca
 - The **Regions** list is more granular than countries. Generally speaking, regions are based upon whatever method the country in question uses to divide itself into parts. For example, regions within the United States are states. Canada is divided into its provinces, and India is divided into its states and union territories. The **Regions** list shows all of the regions/states that can be targeted. You can either include or exclude regions/states or drill into a region/state to view its cities. When you exclude a region, its cities are not available for further inclusion or exclusion.
 - The **Cities** list shows all of the cities that can be targeted. You can either include or exclude cities.
 
-> [!TIP]
-> Select the column headers to sort counties, regions, or cities by name or ID, or use the search field to find a particular location.
+### Sorting locations
+
+You can sort countries, regions, or cities by name or ID using the column headers, or use the search field to find a specific location.
+
 > [!WARNING]
 > Do not add conflicting geographic targeting at multiple levels. For example, if you are including the United States, Canada, and Mexico, and then you also include US zip codes, only the US zip codes targeted will be served. In this scenario, zip code targeting will automatically limit the targeting to the US only. Similarly, do not target both the region of Arizona and the metro code of New York, because geo restrictions are an AND relationship.
 

@@ -13,20 +13,15 @@ Reach millions of user on desktop, tablet, and phone through Windows AppNetwork 
 ## Availability and volume
 
 Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Microsoft Advertising Exchange (Member 280) and is classified as “Desktop” and “Web” supply type for both Desktop/Tablet, Web and Phone.
-Note that supply type is a targeting attribute designated by the seller and may not reflect the actual device type.
 
- This inventory is available globally, with top markets including:
+Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
 
-- United States
-- Brazil
-- United Kingdom
-- France
-- Vietnam
-
-With 13 billion monthly impressions worldwide, this is a highly scalable advertising opportunity.
+- Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam
+- 13 billion monthly impressions worldwide
 
 > [!TIP]
-> Inventory Research with specific break-downs of Windows App inventory by size and country or region can be accessed via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
+> Inventory Research with specific break-downs of Windows App inventory by size & country can be accessed
+> via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
 
 ## Formats and specifications
 
@@ -55,7 +50,8 @@ Technical attributes:
 - No Flash Allowed on Windows Phone
 - Video
 
-Targeting is supported for the top 1000 app names across the Windows AppNetwork and Windows Phone AppNetwork. For other app names, contact your account manager. App targeting also supports reporting capability.
+> [!TIP]
+> We have mapped the top 1000 app names for targeting on both the Windows AppNetwork and Windows Phone AppNetwork. If you want to target an app name outside of the top 1000, reach out to your account manager. There is reporting capability for App targeting.
 
 Ad Quality:
 

@@ -25,7 +25,9 @@ By default, all operating systems, browsers, and languages are targeted. On the 
 - The **Carrier** tab shows all the carriers and the countries or regions where they are available. You can either include or exclude carriers.
 - The **Summary** tab shows a summary of the selected targeting settings.
 
-> [!WARNING]
-> All system targeting types can be used but with some limitations. Due to inconsistent user agent naming conventions used by app providers and mobile carriers, the device type, device make/model, and OS targeting methods for mobile apps are only available for a small portion of inventory. Targeting these items will limit reach on mobile apps.
->
-> Additionally, since a significant portion of all impressions are delivered to unknown browsers, operating systems, or both, you should consider targeting **Unknown** operating systems and browsers to avoid severely restricting reach.
+## Important considerations
+
+Key considerations for system targeting include:
+
+- **Limitations for mobile apps**: All system targeting types can be used but with some limitations. Due to inconsistent user agent naming conventions used by app providers and mobile carriers, the device type, device make/model, and OS targeting methods for mobile apps are only available for a small portion of inventory. Targeting these items will limit reach on mobile apps.
+- **Targeting unknown systems**: Additionally, since a significant portion of all impressions are delivered to unknown browsers, operating systems, or both, you should consider targeting **Unknown operating systems and browsers** to avoid severely restricting reach.

@@ -62,10 +62,7 @@ In the **Basic Setup** section, enter the basic details for the curated deal lin
 - **External Code** - If you want to report on the curated deal line item using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here. The code can only contain alphanumeric characters, periods, underscores, or dashes. The code you enter is not case-sensitive (i.e., uppercase and lowercase characters are treated the same). No two objects at the same level can use the same code per advertiser.
 - **State** - Set the state of the curated deal line item. If **"Active"**, the line item will be eligible to serve. Best practice for curators is to set the state to **"Active"** so that buyers can serve via the curated deal as quickly as possible.
 - **Insertion Order Details** - Insertion order details for **Budget Type**, **Currency**, **Total Lifetime Budget**, **Pacing**, **Start Date**, and **End Date** display in the gray box (you must select an insertion order to display these values).
-- **Budget Type** - Budget is set on the parent insertion order.
-  
-   > [!NOTE]
-   > When you create a deal via a line item, the line item will inherit its budget from the parent insertion order, and this will impact the revenue types available on the line item.
+- **Budget Type** - Budget is set on the parent insertion order. When you create a deal via a line item, the line item will inherit its budget from the parent insertion order, and this will impact the revenue types available on the line item.
 
 ## Deal details
 

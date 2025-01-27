@@ -107,7 +107,7 @@ While you can change the status of each deal to **Active** or **Declined** using
 
 You can assign a **Deal Alias** to use as a buyer internal name for seller deals so you can manage these deals by a name you provide for it. The alias you assign to a deal appears in the **Deal Alias** column of the **Deals with Sellers** page along with the **Deal Name** that the seller provided for the deal.
 
-The **Deal Alias** you assign to a deal is not viewable by the seller of the deal. The **Deal Alias** field is limited to 254 characters.
+The **Deal Alias** you assign to a deal is **not viewable** by the seller of the deal. The **Deal Alias** field is limited to 254 characters.
 
 To assign a **Deal Alias** to a deal, do the following:
 

@@ -18,16 +18,15 @@ On the **Partner Center** Screen, the **Default Settings** option allows you to 
 
 ## Step 2: Update your default settings
 
-### Changes to the Partner Center
+**Changes to the Partner Center**
 
-New sellers are now eligible by default in Partner Center. As of March 10, 2016:
+- New sellers are eligible (that is, available for buying) by default in Partner Center. We have removed the ability to set default eligibility to Blocked. Though default eligibility options are no longer available, no Partner Center blocks set before March 10, 2016 have changed.
 
-1. Default eligibility to Blocked is no longer available.
-1. Existing blocks set before this date remain unchanged.
-1. AppNexus Direct sellers can only be blocked using domain or campaign exclusions.
+- AppNexus Direct sellers can only be blocked using domain or campaign exclusions.
 
-> [!NOTE]
-> AppNexus Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
+#### AppNexus Direct
+
+AppNexus Direct is a group of 100+ sellers we have identified as mostly selling owned and operated inventory or selling through exclusive relationships with publishers.
 
 For more information, see [AppNexus Direct](appnexus-direct-for-buyers.md) or contact your Microsoft Advertising account manager.
 

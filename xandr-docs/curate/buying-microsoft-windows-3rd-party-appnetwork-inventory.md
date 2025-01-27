@@ -14,14 +14,12 @@ Reach millions of user on desktop, tablet, and phone through Windows AppNetwork 
 
 Microsoft Windows 3rd Party AppNetwork inventory is fully integrated with the Microsoft Advertising Exchange (Member 280) and is classified as “Desktop” and “Web” supply type for both Desktop/Tablet, Web and Phone.
 
-Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
-
+- Supply type is a targeting attribute designated by the seller that may not reflect actual device type.
 - Available globally - top markets are United States, Brazil, United Kingdom, France, Vietnam
 - 13 billion monthly impressions worldwide
 
 > [!TIP]
-> Inventory Research with specific break-downs of Windows App inventory by size & country or region can be accessed.
-> via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
+> Inventory Research with specific break-downs of Windows App inventory by size & country or region can be accessed via the Network tab then filtering for **Supply Type = "App"** within seller Microsoft Advertising Exchange (280).
 
 ## Formats and specifications
 

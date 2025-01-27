@@ -33,12 +33,12 @@
       items:
       - name: Overview
         href: ios-mediation.md
-      - name: Integrate Vungle Demand for Interstitial Video Ads on iOS
-        href: get-vungle-demand-interstitial-video-ios.md
       - name: Mediatation Instructions
         href: mediate-with-ios.md
       - name: Custom Adaptors
         href: ios-custom-adaptors.md
+      - name: Integrate Vungle Demand for Interstitial Video Ads on iOS
+        href: get-vungle-demand-interstitial-video-ios.md
     - name: Ad Units
       items:
       - name: Overview
@@ -146,10 +146,10 @@
       items:
       #- name: Overview
         #href: mediate-with-android-sdk.md
-      - name: Integrate Vungle demand for Interstitial Video on Android
-        href: vungle-demand-interstitial-video-android.md
       - name: Mediatation Instructions
         href: mediate-with-android-sdk-instructions.md
+      - name: Integrate Vungle demand for Interstitial Video on Android
+        href: vungle-demand-interstitial-video-android.md
       - name: Custom Adaptors
         href: android-custom-adaptors.md
       

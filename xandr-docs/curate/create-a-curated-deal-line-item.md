@@ -225,7 +225,7 @@ You can target curated deal line items in the same way you can target augmented 
 
 ### Geography
 
-To quickly target countries, select in the **Geography** field and select the relevant checkboxes. To set up more advanced geography restrictions select **Additional Geo Restrictions**.
+To quickly target countries or regions, select in the **Geography** field and select the relevant checkboxes. To set up more advanced geography restrictions select **Additional Geo Restrictions**.
 See [Additional Geo Restrictions](additional-geo-restrictions-ali.md) for more details.
 
 ## Deal creative criteria

@@ -20,7 +20,7 @@ Supply type is a targeting attribute designated by the seller that may not refle
 - 13 billion monthly impressions worldwide
 
 > [!TIP]
-> Inventory Research with specific break-downs of Windows App inventory by size & country can be accessed
+> Inventory Research with specific break-downs of Windows App inventory by size & country or region can be accessed.
 > via the Network tab then filtering for Supply Type = "App" within seller Microsoft Advertising Exchange (280).
 
 ## Formats and specifications

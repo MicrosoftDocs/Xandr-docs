@@ -111,6 +111,18 @@
     href: curator-margins.md
   - name: Curated Deal Floors
     href: curated-deal-floors.md
+- name: Curator Supply Shaping
+  items:
+  - name: Overview
+    href: curator-supply-shaping.md
+  - name: Introduction to Splits
+    href: intro-to-splits.md
+  - name: Create Splits
+    href: create-splits.md
+  - name: Monitor Splits 
+    href: monitor-splits.md
+  - name: Split Report Details
+    href: report-on-splits.md
 - name: Curation Optimization
   href: curation-optimization.md
 - name: Buying Guide

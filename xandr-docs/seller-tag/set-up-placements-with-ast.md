@@ -14,7 +14,6 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 >
 > This change ensures you continue to receive critical updates, including compliance with evolving privacy standards such as Fledge and CMP policies.  
 >
->
 > To ensure you receive the latest updates and improvements for the AST product, including essential privacy features, follow these steps to update your web pages with the new Microsoft CDN URLs:
 >
 > - **Regular Domain:** [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/ast.js)
@@ -24,7 +23,6 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 >
 > - `adsdk.microsoft.com`
 > - `adsdk.bing.net` (if applicable)
-
 
 For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
 

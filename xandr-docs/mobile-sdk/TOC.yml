@@ -38,7 +38,7 @@
       - name: Custom Adaptors
         href: ios-custom-adaptors.md
       - name: Vungle Demand for iOS
-        href: get-vungle-demand-interstitial-video-ios.md
+        href: vungle-demand-for-ios.md
     - name: Ad Units
       items:
       - name: Overview
@@ -149,7 +149,7 @@
       - name: Mediatation Instructions
         href: mediate-with-android-sdk-instructions.md
       - name: Vungle Demand for Android
-        href: vungle-demand-interstitial-video-android.md
+        href: vungle-demand-for-android.md
       - name: Custom Adaptors
         href: android-custom-adaptors.md
       

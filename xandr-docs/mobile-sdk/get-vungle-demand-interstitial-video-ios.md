@@ -23,28 +23,24 @@ To integrate the Vungle Demand, you will need to install the **Mobile SDK** and 
 
 ### Step 1: Install CocoaPods
 
-If CocoaPods is not installed on your system, follow the instructions at [CocoaPods.org](https://cocoapods.org/) to install it.
+If you haven't installed CocoaPods, follow the [installation guide on CocoaPods.org](https://cocoapods.org/).
 
 ### Step 2: Create and configure the Podfile
 
 1. Open Terminal or your preferred command line editor.
 1. Navigate to your project directory.
-1. Run the following command to create a **Podfile**:
+1. Create a new Podfile by running the command:
 
    ```bash
    pod init
    ```
 
-1. Open the **Podfile** using a text editor.
-1. Set the platform version to **iOS 12.0** (AppNexus supports two iOS releases back from the current release).
-1. Add the following dependencies to the target section.
+1. Open the newly created **Podfile** using a text editor.
+1. Ensure the platform is set to **iOS 12.0**, and include the following dependencies in the `target` section:
 
 #### Example Podfile configuration
 
-```ruby
-
-
-    
+```
     platform :ios, '12.0'
     project 'SampleApp'
 
@@ -92,8 +88,7 @@ After successfully initializing Vungle’s SDK, our SDK will automatically captu
 
 ### Example code
 
-```swift
-
+```
 import VungleAdsSDK
 import AppNexusSDK
 import ANVungleAdapter
@@ -117,7 +112,7 @@ interstitialAd.load()
 
 After the interstitial ad is successfully loaded, you can display it to users based on your app's logic. In the example below, the ad is shown immediately upon loading.
 
-```swift
+```
 
 func adDidReceiveAd(_ ad: Any) {
     self.interstitialAd.display(from: self)

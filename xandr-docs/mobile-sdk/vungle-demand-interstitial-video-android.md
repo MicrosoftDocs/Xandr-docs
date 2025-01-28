@@ -11,7 +11,7 @@ This page provides steps to integrate and display interstitial video ads using V
 
 ## Step 1: Install the SDK
 
-To integrate Vungle demand, include the **AppNexus Mobile SDK** and the **Vungle Demand Adapter** in your project.  Include the following dependencies in the `build.gradle` file under the `dependencies` section:
+To integrate Vungle demand, include the **AppNexus Mobile SDK** and the **ANVungleAdapter** in your project.  Include the following dependencies in the `build.gradle` file under the `dependencies` section:
 
 ```gradle
 

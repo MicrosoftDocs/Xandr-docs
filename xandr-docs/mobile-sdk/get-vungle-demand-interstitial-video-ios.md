@@ -19,7 +19,7 @@ Before integrating Vungle Demand, ensure that you have the following SDK version
 
 ## SDK installation
 
-To integrate the Vungle Demand, you will need to install the **Mobile SDK** and the **Vungle Demand Adapter** package. Follow the steps below to install the required dependencies using CocoaPods.
+To integrate the Vungle Demand, you will need to install the **Mobile SDK** and the **ANVungleAdapter** package. Follow the steps below to install the required dependencies using CocoaPods.
 
 ### Step 1: Install CocoaPods
 
@@ -31,17 +31,13 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
 1. Navigate to your project directory.
 1. Run the following command to create a **Podfile**:
 
-   ```
+   ```bash
    pod init
    ```
 
 1. Open the **Podfile** using a text editor.
 1. Set the platform version to **iOS 12.0** (AppNexus supports two iOS releases back from the current release).
-1. Add the following dependencies to the target section:
-
-```ruby
-pod 'AppNexusSDK'
-```
+1. Add the following dependencies to the target section.
 
 #### Example Podfile configuration
 
@@ -59,24 +55,14 @@ pod 'AppNexusSDK'
 ### Step 3: Install the Pods
 
 1. Save the changes to the **Podfile**, then proceed to install the dependencies.
-1. In Terminal, run the following command to install the pods:
-
-```
-pod install
-```
-
-This will download both **AppNexusSDK** and **ANVungleAdapter**, and create a workspace for your project.
-
-> [!IMPORTANT]
-> If your project is open in Xcode, close it and open the newly created workspace.
-
-Once the pods are installed and the workspace is set up, you are ready to proceed with initializing the SDK.
+1. In Terminal, run the following command to install the pods.
 
 ## Initialize the Vungle SDK
 
 To initialize the Vungle SDK, add the following code to the early lifecycle of your app.
 Replace "YOUR_APP_ID" with the App ID provided by Vungle.
-```swift
+
+```
 
 VungleAds.initWithAppId("YOUR_APP_ID") { error in
     if let error = error {
@@ -104,7 +90,7 @@ After successfully initializing Vungle’s SDK, our SDK will automatically captu
 
 ### Example code
 
-```swift
+```
 import VungleAdsSDK
 import AppNexusSDK
 import ANVungleAdapter
@@ -128,7 +114,7 @@ interstitialAd.load()
 
 After the interstitial ad is successfully loaded, you can display it to users based on your app's logic. In the example below, the ad is shown immediately upon loading.
 
-```swift
+```
 
 func adDidReceiveAd(_ ad: Any) {
     self.interstitialAd.display(from: self)

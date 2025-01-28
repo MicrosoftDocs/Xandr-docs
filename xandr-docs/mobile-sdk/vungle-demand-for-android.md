@@ -28,9 +28,9 @@ Initialize the Vungle SDK early in your app's lifecycle to ensure it is ready to
 
 ### Example
 
-#### [Java](#tab1/java1)
+#### [Java](#tab/java1)
 
-```java
+```
 
 VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
     @Override
@@ -43,12 +43,11 @@ VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
         Log.d("vunglecsr", "Initialization failed: " + vungleError.getErrorMessage());
     }
 });
-
 ```
 
-#### [Kotlin](#tab1/kotlin1)
+#### [Kotlin](#tab/kotlin1)
 
-```kotlin
+```
 VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
     override fun onSuccess() {
         Log.d("vunglecsrlog", "Vungle SDK init onSuccess()")
@@ -73,9 +72,9 @@ Set a custom keyword before calling the loadAd() method. Use the following speci
 
 ### Example
 
-#### [Java](#tab2/java2)
+#### [Java](#tab/java2)
 
-```java
+```
 // Create and configure the interstitial ad object
 interstitialAdView = new InterstitialAdView(this);
 
@@ -92,9 +91,9 @@ interstitialAdView.setAdListener(adListener);
 interstitialAdView.loadAd();
 ```
 
-#### [Kotlin](#tab2/kotlin2)
+#### [Kotlin](#tab/kotlin2)
 
-```kotlin
+```
 interstitialAdView = InterstitialAdView(this)
 interstitialAdView.placementID = "MONETIZE_PLACEMENTID"
 interstitialAdView.addCustomKeywords("VUNGLE_PLACEMENT_ID_FOR_CSR", "VUNGLE_PLACEMENT_123")
@@ -115,9 +114,9 @@ After successfully loading the interstitial ad, render the creative when it fits
 
 ### Example
 
-#### [Java](#tab3/java3)
+#### [Java](#tab/java3)
 
-```java
+```
 public void onAdLoaded(AdView iav) {
     // Display the interstitial ad
     interstitialAdView.show();
@@ -125,9 +124,9 @@ public void onAdLoaded(AdView iav) {
 
 ```
 
-#### [Kotlin](#tab3/kotlin3)
+#### [Kotlin](#tab/kotlin3)
 
-```kotlin
+```
 override fun onAdLoaded(iav: AdView) {
     interstitialAdView.show()
 }

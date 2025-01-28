@@ -26,7 +26,7 @@ dependencies {
 
 Initialize the Vungle SDK early in your app's lifecycle to ensure it is ready to use. Replace `YOUR_APP_ID` with the app ID provided by Vungle.
 
-### Examples
+### Example
 
 #### [Java](#tab/java1)
 
@@ -71,7 +71,7 @@ Set a custom keyword before calling the loadAd() method. Use the following speci
 - **Key**: `"VUNGLE_PLACEMENT_ID_FOR_CSR"`
 - **Value**: Your Vungle placement ID mapped to the Monetize placement.
 
-### Examples
+### Example
 
 #### [Java](#tab/java2)
 

@@ -6,9 +6,7 @@ ms.date: 10/10/2024
 
 # Supply Stream Efficiency
 
-> [!NOTE]
-> This feature is currently in **Alpha** and might undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
-This page provides details about the Supply Stream Efficiency feature, supported by the Xandr platform.
+This page provides details about the Supply Stream Efficiency feature, supported by the Microsoft Advertising platform.
 
 ## Overview
 
@@ -31,7 +29,7 @@ Microsoft Monetize's traffic shaping operates at two levels:
 
 ### Optimize bidder traffic
 
-Supply Stream Efficiency leverages each bidder’s unique buying patterns to deliver the most relevant traffic, optimizing the flow of high-value traffic. This ensures that bidders receive a more targeted stream of valuable opportunities. New and low-scoring traffic is sent in controlled amounts, enabling bidders to explore new opportunities and begin buying inventory they may not have bought before. Bidders might notice a decrease in traffic volume, especially if they are not regularly hitting QPS caps, as low-scoring traffic will be actively filtered out. This solution is opt-in, allowing bidders to decide if it aligns with their needs.
+Supply Stream Efficiency leverages each bidder’s unique buying patterns to deliver the most relevant traffic, optimizing the flow of high-value traffic. This ensures that bidders receive a more targeted stream of valuable opportunities. New and low-scoring traffic is sent in controlled amounts, enabling bidders to explore new opportunities and begin buying inventory they may not have bought before. Bidders might notice a decrease in traffic volume, especially if they are not regularly hitting QPS caps, as low-scoring traffic will be actively filtered out. 
 
 ## Related topic
 

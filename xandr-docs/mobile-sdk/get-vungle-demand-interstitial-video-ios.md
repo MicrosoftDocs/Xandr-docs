@@ -90,7 +90,8 @@ After successfully initializing Vungle’s SDK, our SDK will automatically captu
 
 ### Example code
 
-```
+```swift
+
 import VungleAdsSDK
 import AppNexusSDK
 import ANVungleAdapter
@@ -114,7 +115,7 @@ interstitialAd.load()
 
 After the interstitial ad is successfully loaded, you can display it to users based on your app's logic. In the example below, the ad is shown immediately upon loading.
 
-```
+```swift
 
 func adDidReceiveAd(_ ad: Any) {
     self.interstitialAd.display(from: self)

@@ -10,14 +10,21 @@ ms.date: 10/28/2023
 This page contains a sample web page showing how Xandr's seller tag (AST) functions can be implemented in the header and body of a sample client page.
 
 > [!NOTE]
-> See the [AST API Reference](ast-api-reference.md) for more details on using the functions in this example.
+> As part of our ongoing transition to enhance performance and align with Microsoft services, we are migrating the AST product from the Xandr CDN to the Microsoft CDN.  
 >
-> Xandr now supports a domain, adnxs-simple.com, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Xandr will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](../policies-regulations/index.yml).
+> This change ensures you continue to receive critical updates, including compliance with evolving privacy standards such as Fledge and CMP policies.  
 >
-> To use the adnxs-simple.com domain:
+> To ensure you receive the latest updates and improvements for the AST product, including essential privacy features, follow these steps to update your web pages with the new Microsoft CDN URLs:
 >
-> - If you load `ast.js` directly from Xandr's CDN, update the library tag to start loading from the new cookie-free domain: [https://acdn.adnxs-simple.com/ast/ast.js](https://acdn.adnxs-simple.com/ast/ast.js)
-> - If you load `ast.js` from a local server, update `ast.js` to the latest version (version 0.37.1 or higher)
+> - **Regular Domain:** [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/ast.js)
+> - **Cookie-Free Domain:** [https://adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js)
+>
+> If you use a Content Security Policy (CSP), ensure the following domains are added to your allowed list:
+>
+> - `adsdk.microsoft.com`
+> - `adsdk.bing.net` (if applicable)
+
+For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 
@@ -41,7 +48,7 @@ In line 5, we set up an empty AST object. In line 7, we create a function queue 
     (function() {
        var d = document, e = d.createElement('script'), p = d.getElementsByTagName('head')[0];
        e.type = 'text/javascript';  e.async = true;
-       e.src = '//acdn.adnxs.com/ast/ast.js';
+       e.src = 'https://adsdk.microsoft.com/ast/ast.js';
        p.insertBefore(e, p.firstChild);
     })();
 ```

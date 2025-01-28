@@ -82,9 +82,7 @@ Next, we define all the ad placements we want on this page using the `defineTag`
 - `member`: can override the global page option with member ID for this placement (optional; must be present if not specified in `setPageOpts`)
 
 - `invCode`: the placement code for this placement. (`invCode` OR `tagId` required)
-
 - `tagId`: the placement ID for this placement ( `invCode`  OR  `tagId` required)
-
 - `sizes`: if you are using multiple sizes, the first item in the list is the placement size and other sizes are promo sizes.
 
 - `targetId`: Any unique string; this must correspond to a unique `div` ID in the body of the page.

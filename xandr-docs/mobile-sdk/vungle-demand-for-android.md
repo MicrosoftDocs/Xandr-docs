@@ -28,7 +28,7 @@ Initialize the Vungle SDK early in your app's lifecycle to ensure it is ready to
 
 ### Examples
 
-#### [Java](#tab/java-init)
+#### [Java](#tab/java1)
 
 ```java
 
@@ -46,7 +46,7 @@ VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
 
 ```
 
-#### [Kotlin](#tab/kotlin-init)
+#### [Kotlin](#tab/kotlin1)
 
 ```kotlin
 VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
@@ -113,7 +113,7 @@ By following this process, you ensure the ad request includes the necessary bidd
 
 After successfully loading the interstitial ad, render the creative when it fits your app's flow. In this example, the ad is displayed immediately.
 
-### Examples
+### Example
 
 #### [Java](#tab/java3)
 

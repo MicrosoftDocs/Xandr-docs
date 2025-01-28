@@ -63,13 +63,15 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
 > [!NOTE]
 > To ensure proper monetization and relevant targeting, the SDK should be enabled to send the device information. Setting the `consentRequired` and `purposeConsents` flag correctly will help ensure proper device information is sent. Refer to the table below to determine whether the device details will be passed or not.
 
+### Consent and device info logic table
+
 The table below describes the actions taken for the different `purposeConsents` values in combination with `consentRequired` values.
 
-| deviceAccessConsent | deviceAccessConsent= true | deviceAccessConsent= false | deviceAccessConsent= undefined |
+| deviceAccessConsent|deviceAccessConsent = true|deviceAccessConsent = false| deviceAccessConsent = undefined|
 |--|--|--|--|
-| `consentRequired=undefined<br>(gdprApplies = undefined)` | The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. |
-| `consentRequired=true<br>(gdprApplies = true)` | The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. |
-| `consentRequired=false<br>(gdprApplies = false)` | The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. |
+| `consentRequired=undefined<br>(gdprApplies = undefined)` | The SDK will read and pass IDFA/AAID info to server.| The SDK will **not** read and pass IDFA/AAID info to server.| The SDK will read and pass IDFA/AAID info to server.|
+|`consentRequired=true<br>(gdprApplies = true)`| The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server.|
+| `consentRequired=false<br>(gdprApplies = false)`| The SDK will read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. |
 
 Xandr provides three APIs that enable SDK users to set, retrieve and clear U.S. Privacy User Signal Mechanism controls. The IAB Tech Lab has formalized and adopted the "us_privacy" string as the mechanism to encode data about the information disclosed to the user and user elections under various US privacy laws, starting with the CCPA.
 

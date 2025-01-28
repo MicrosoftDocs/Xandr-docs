@@ -1,5 +1,5 @@
 ---
-title: Get Vungle Demand for Interstitial Video Ads on Android
+title: Vungle Demand for Android
 description: Learn how to integrate and display interstitial video ads using Vungle on Android.
 ms.custom: android-sdk
 ms.date: 10/28/2023

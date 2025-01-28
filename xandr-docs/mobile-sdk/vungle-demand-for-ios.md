@@ -1,5 +1,5 @@
 ---
-title: Vungle demand for iOS
+title: Vungle Demand for iOS
 description: Learn how to integrate Vungle demand for interstitial video ads on iOS using the AppNexus SDK and ANVungleAdapter.
 ms.custom: ios-sdk
 ms.date: 10/28/2023

@@ -42,6 +42,8 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
 #### Example Podfile configuration
 
 ```ruby
+
+
     
     platform :ios, '12.0'
     project 'SampleApp'
@@ -50,7 +52,7 @@ If CocoaPods is not installed on your system, follow the instructions at [CocoaP
         pod 'AppNexusSDK'
         pod 'AppNexusSDK/ANVungleAdapter'
     end
-    ```
+```
 
 ### Step 3: Install the Pods
 

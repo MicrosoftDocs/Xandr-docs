@@ -41,10 +41,17 @@ VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
 });
 ```
 
-On successful initialization of the Vungle SDK, the `ANVungleSettings.setVungleInitialize` method is set to `true`. If initialization fails, the value is set to `false`.
+```kotlin
+VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
+    override fun onSuccess() {
+        Log.d("vunglecsrlog", "Vungle SDK init onSuccess()")
+    }
 
-- If the flag is `true` (Vungle SDK is initialized), the `getBidderToken` method will return the Vungle Bidder Token, allowing you to proceed with further steps.
-- If the flag is `false`, the `getBidderToken` method will return `nil`, indicating that the SDK initialization has failed.
+    override fun onError(vungleError: VungleError) {
+        Log.d("vunglecsrlog", "onError():" + vungleError.errorMessage)
+    }
+})
+```
 
 ### Step 3: Initialize an interstitial ad and set the required keyword
 
@@ -76,6 +83,14 @@ interstitialAdView.setAdListener(adListener);
 interstitialAdView.loadAd();
 ```
 
+```kotlin
+interstitialAdView = InterstitialAdView(this)
+interstitialAdView.placementID = "MONETIZE_PLACEMENTID"
+interstitialAdView.addCustomKeywords("VUNGLE_PLACEMENT_ID_FOR_CSR", "VUNGLE_PLACEMENT_123")
+interstitialAdView.adListener = adListener
+interstitialAdView.loadAd()
+```
+
 > [!NOTE]
 >
 > - Replace "32380589" with your Monetize placement ID.
@@ -91,5 +106,12 @@ After successfully loading the interstitial ad, render the creative when it fits
 public void onAdLoaded(AdView iav) {
     // Display the interstitial ad
     interstitialAdView.show();
+}
+
+```
+
+```kotlin
+override fun onAdLoaded(iav: AdView) {
+    interstitialAdView.show()
 }
 ```

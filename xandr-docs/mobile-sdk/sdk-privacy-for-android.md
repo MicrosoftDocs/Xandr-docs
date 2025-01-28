@@ -69,7 +69,7 @@ ANGDPRSettings.setPurposeConsents(context,"101010001");
 
 The table below describes the actions taken for the different `purposeConsents` values in combination with `consentRequired` values.
 
-| **consentRequired** | **deviceAccessConsent** | **SDK Behavior** |
+| **consentRequired** | **deviceAccessConsent** | **SDK behavior** |
 |-----------------|---------------------|-------------------------|
 | false           | false              | Pass Device Info: Yes   |
 | false           | true               | Pass Device Info: Yes   |

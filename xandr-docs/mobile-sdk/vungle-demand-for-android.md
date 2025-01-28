@@ -26,6 +26,10 @@ dependencies {
 
 Initialize the Vungle SDK early in your app's lifecycle to ensure it is ready to use. Replace `YOUR_APP_ID` with the app ID provided by Vungle.
 
+### Examples
+
+#### [Java](#tab/java1)
+
 ```java
 
 VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
@@ -39,7 +43,10 @@ VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
         Log.d("vunglecsr", "Initialization failed: " + vungleError.getErrorMessage());
     }
 });
+
 ```
+
+#### [Kotlin](#tab/kotlin1)
 
 ```kotlin
 VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
@@ -53,7 +60,7 @@ VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
 })
 ```
 
-### Step 3: Initialize an interstitial ad and set the required keyword
+## Step 3: Initialize an interstitial ad and set the required keyword
 
 After successfully initializing the Vungle SDK, the bidder token is captured by the AppNexus SDK during the ad request and forwarded to the primary supply platform (PSP).
 
@@ -64,7 +71,9 @@ Set a custom keyword before calling the loadAd() method. Use the following speci
 - **Key**: `"VUNGLE_PLACEMENT_ID_FOR_CSR"`
 - **Value**: Your Vungle placement ID mapped to the Monetize placement.
 
-Here’s an example:
+### Examples
+
+#### [Java](#tab/java1)
 
 ```java
 // Create and configure the interstitial ad object
@@ -83,6 +92,8 @@ interstitialAdView.setAdListener(adListener);
 interstitialAdView.loadAd();
 ```
 
+#### [Kotlin](#tab/kotlin1)
+
 ```kotlin
 interstitialAdView = InterstitialAdView(this)
 interstitialAdView.placementID = "MONETIZE_PLACEMENTID"
@@ -98,9 +109,13 @@ interstitialAdView.loadAd()
 
 By following this process, you ensure the ad request includes the necessary bidder token and configuration for displaying interstitial ads.
 
-### Step 4: Render the ad
+## Step 4: Render the ad
 
 After successfully loading the interstitial ad, render the creative when it fits your app's flow. In this example, the ad is displayed immediately.
+
+### Examples
+
+#### [Java](#tab/java1)
 
 ```java
 public void onAdLoaded(AdView iav) {
@@ -109,6 +124,8 @@ public void onAdLoaded(AdView iav) {
 }
 
 ```
+
+#### [Kotlin](#tab/kotlin1)
 
 ```kotlin
 override fun onAdLoaded(iav: AdView) {

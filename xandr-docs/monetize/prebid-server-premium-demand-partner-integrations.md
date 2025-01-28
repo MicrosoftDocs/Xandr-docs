@@ -46,7 +46,7 @@ Additional resources on demand partners:
 | AdsYield | adsyield | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Adtarget | adtarget | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Adtelligent | adtelligent | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| AdAdtonos | adtonos | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
+| Adtonos | adtonos | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | Advangelists | advangelists | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Adview | adview | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | Adserver.Online (ASO) | aso | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |

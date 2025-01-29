@@ -58,3 +58,52 @@ VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
 })
 
 ```
+
+## Step 3: Initialize an interstitial ad and set the required keyword
+
+After successfully initializing the Vungle SDK, the bidder token is captured by the AppNexus SDK during the ad request and forwarded to the primary supply platform (PSP).
+
+To load an interstitial ad, create an instance of the `InterstitialAdView` object. Ensure you retain a reference to this object appropriately.
+
+Set a custom keyword before calling the loadAd() method. Use the following specifications:
+
+- **Key**: `"VUNGLE_PLACEMENT_ID_FOR_CSR"`
+- **Value**: Your Vungle placement ID mapped to the Monetize placement.
+
+### Example
+
+#### [Java](#tab/java2)
+
+```
+// Create and configure the interstitial ad object
+interstitialAdView = new InterstitialAdView(this);
+
+// Set the Monetize placement ID
+interstitialAdView.setPlacementID("32380589");
+
+// Add the custom keyword for Vungle placement
+interstitialAdView.addCustomKeywords("VUNGLE_PLACEMENT_ID_FOR_CSR", "VUNGLE_PLACEMENT_123");
+
+// Set the ad listener to handle ad events
+interstitialAdView.setAdListener(adListener);
+
+// Load the ad
+interstitialAdView.loadAd();
+```
+
+#### [Kotlin](#tab/kotlin2)
+
+```
+interstitialAdView = InterstitialAdView(this)
+interstitialAdView.placementID = "MONETIZE_PLACEMENTID"
+interstitialAdView.addCustomKeywords("VUNGLE_PLACEMENT_ID_FOR_CSR", "VUNGLE_PLACEMENT_123")
+interstitialAdView.adListener = adListener
+interstitialAdView.loadAd()
+```
+
+> [!NOTE]
+>
+> - Replace "32380589" with your Monetize placement ID.
+> - Replace "VUNGLE_PLACEMENT_123" with the Vungle placement ID mapped to your ad configuration.
+
+By following this process, you ensure the ad request includes the necessary bidder token and configuration for displaying interstitial ads.

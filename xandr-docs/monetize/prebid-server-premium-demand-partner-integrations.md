@@ -46,7 +46,7 @@ Additional resources on demand partners:
 | AdsYield | adsyield | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Adtarget | adtarget | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Adtelligent | adtelligent | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| AdAdtonos | adtonos | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
+| Adtonos | adtonos | Yes | **App**: No <br>**Site**:No | **App**: Yes <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | Advangelists | advangelists | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Adview | adview | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | Adserver.Online (ASO) | aso | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
@@ -130,8 +130,8 @@ Additional resources on demand partners:
 | Gothamads | gothamads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | GumGum | gumgum | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | iion | iionads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
-| Insticator | insticator | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | iMedia Digital Services (IMDS) | imds | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
+| Insticator | insticator | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Mediago | mediago | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: Yes |
 | Improve Digital | improvedigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Index Exchange | ix | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
@@ -163,13 +163,13 @@ Additional resources on demand partners:
 | Marsmedia | marsmedia | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Media.net | medianet | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Mediafuse | mediafuse | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+| Microsoft Advertising | appnexus | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+|  Missena | missena | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | Melozen | melozen | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Metax | metax | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | MGID | mgid | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: Yes <br>**Site**: Yes |
 | MGIDX | mgidx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | MinuteMedia | minutemedia | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
-| Microsoft Advertising | appnexus | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
-|  Missena | missena | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
 | MobFox_PB | mobfoxpb | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | MobileFuse | mobilefuse | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | Motorik | motorik | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
@@ -214,11 +214,11 @@ Additional resources on demand partners:
 | Silverpush | silverpush | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Smaato | smaato | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Smart AdServer | smartadserver | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
-| Smrtconnect | smrtconnect | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Smarthub | smarthub | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | SmartRTB | smartrtb | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | smartx | smartx | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | SmartyAds | smartyads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+| Smrtconnect | smrtconnect | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Smilewanted | smilewanted | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Somo Audience | somoaudience | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Sonobi | sonobi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |

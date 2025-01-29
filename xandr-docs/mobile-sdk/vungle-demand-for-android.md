@@ -59,6 +59,33 @@ VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
 })
 ```
 
+### Example
+
+#### [Java](#tab/java1)
+
+##### Regular Init method
+
+```
+SDKSettings.init(this, new SDKSettings.InitListener() {
+    @Override
+    public void onInitFinished() {
+        // Initialisation finished
+    }
+});
+
+#### [Kotlin](#tab/kotlin1)
+
+##### Regular Init method
+
+```
+SDKSettings.init(this) {
+       // Initialization finished
+}
+```
+
+
+
+
 ## Step 3: Initialize an interstitial ad and set the required keyword
 
 After successfully initializing the Vungle SDK, the bidder token is captured by the AppNexus SDK during the ad request and forwarded to the primary supply platform (PSP).

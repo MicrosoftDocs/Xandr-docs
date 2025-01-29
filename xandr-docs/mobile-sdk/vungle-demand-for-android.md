@@ -28,9 +28,9 @@ Initialize the Vungle SDK early in your app's lifecycle to ensure it is ready to
 
 ### Example
 
-#### [Java](#tab/java1)
+:::tab "Java"
 
-```
+```java
 
 VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
     @Override
@@ -45,46 +45,22 @@ VungleAds.init(this, "YOUR_APP_ID", new InitializationListener() {
 });
 ```
 
-#### [Kotlin](#tab/kotlin1)
+:::tab "Kotlin"
+
+```kotlin
+
+
 
 ```
 VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
     override fun onSuccess() {
         Log.d("vunglecsrlog", "Vungle SDK init onSuccess()")
     }
-
     override fun onError(vungleError: VungleError) {
         Log.d("vunglecsrlog", "onError():" + vungleError.errorMessage)
     }
 })
 ```
-
-### Example
-
-#### [Java](#tab/java1)
-
-##### Regular Init method
-
-```
-SDKSettings.init(this, new SDKSettings.InitListener() {
-    @Override
-    public void onInitFinished() {
-        // Initialisation finished
-    }
-});
-
-#### [Kotlin](#tab/kotlin1)
-
-##### Regular Init method
-
-```
-SDKSettings.init(this) {
-       // Initialization finished
-}
-```
-
-
-
 
 ## Step 3: Initialize an interstitial ad and set the required keyword
 

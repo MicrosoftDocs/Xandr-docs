@@ -155,7 +155,7 @@ After the interstitial ad is successfully loaded, you can display it to users ba
 
 ### Example
 
-#### [Java](#tab/swift3)
+#### [Swift](#tab/swift3)
 
 ```swift
 

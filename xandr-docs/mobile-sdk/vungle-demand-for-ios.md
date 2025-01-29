@@ -60,7 +60,11 @@ If you haven't installed CocoaPods, follow the [installation guide on CocoaPods.
 To initialize the Vungle SDK, add the following code to the early lifecycle of your app.
 Replace "YOUR_APP_ID" with the App ID provided by Vungle.
 
-```
+### Example
+
+#### [Swift](#tab/Swift1)
+
+```java
 
 VungleAds.initWithAppId("YOUR_APP_ID") { error in
     if let error = error {
@@ -71,6 +75,26 @@ VungleAds.initWithAppId("YOUR_APP_ID") { error in
     }
 }
 ```
+
+#### [Objective C](#tab/objectivec1)
+
+```objectivec
+
+[VungleAds initWithAppId:@"" completion:^(NSError * _Nullable error) {
+    if (error) {
+        NSLog(@"Error initializing SDK");
+    } else {
+        NSLog(@"Init is complete");
+    }
+}];
+
+if ([VungleAds isInitialized]) {
+    NSLog(@"SDK is initialized");
+} else {
+    NSLog(@"SDK is NOT initialized");
+}
+```
+---
 
 - On successful initialization, `ANVungleSettings.setVungleInitialize(true)` will be set.
 - If initialization fails, `ANVungleSettings.setVungleInitialize(false)` will be set.
@@ -88,7 +112,10 @@ After successfully initializing Vungle’s SDK, our SDK will automatically captu
 
 ### Example code
 
-```
+#### [Swift](#tab/swift2)
+
+```swift
+
 import VungleAdsSDK
 import AppNexusSDK
 import ANVungleAdapter
@@ -108,13 +135,43 @@ interstitialAd.delegate = self
 interstitialAd.load()
 ```
 
+#### [Objective C](#tab/objectivec2)
+
+```objectivec
+
+@property (nonatomic, strong)ANInterstitialAd *interstitialAd;
+
+    self.interstitialAd = [[ANInterstitialAd alloc] initWithPlacementId:@"12345"];
+    self.interstitialAd.delegate = self;
+    [self.interstitialAd addCustomKeywordWithKey:@"VUNGLE_PLACEMENT_ID_FOR_CSR" value: @"VUNGLE_PLACEMENT_123"];
+    [self.interstitialAd loadAd];
+```
+
+---
+
 ## Render creative
 
 After the interstitial ad is successfully loaded, you can display it to users based on your app's logic. In the example below, the ad is shown immediately upon loading.
 
-```
+### Example
+
+#### [Java](#tab/swift3)
+
+```swift
 
 func adDidReceiveAd(_ ad: Any) {
     self.interstitialAd.display(from: self)
 }
 ```
+
+#### [Objective C](#tab/objectivec3)
+
+```objectivec
+
+
+- (void)adDidReceiveAd:(id<ANAdProtocol>)ad {
+    [self.interstitialAd displayAdFromViewController: self];
+}
+```
+
+---

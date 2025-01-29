@@ -81,7 +81,7 @@ Set a custom keyword before calling the loadAd() method. Use the following speci
 interstitialAdView = new InterstitialAdView(this);
 
 // Set the Monetize placement ID
-interstitialAdView.setPlacementID("32380589");
+interstitialAdView.setPlacementID("MONETIZE_PLACEMENTID");
 
 // Add the custom keyword for Vungle placement
 interstitialAdView.addCustomKeywords("VUNGLE_PLACEMENT_ID_FOR_CSR", "VUNGLE_PLACEMENT_123");
@@ -108,7 +108,7 @@ interstitialAdView.loadAd()
 
 > [!NOTE]
 >
-> - Replace "32380589" with your Monetize placement ID.
+> - Replace "MONETIZE_PLACEMENTID" with your Monetize placement ID.
 > - Replace "VUNGLE_PLACEMENT_123" with the Vungle placement ID mapped to your ad configuration.
 
 By following this process, you ensure the ad request includes the necessary bidder token and configuration for displaying interstitial ads.

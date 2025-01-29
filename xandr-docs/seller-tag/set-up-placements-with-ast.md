@@ -16,7 +16,8 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 >
 > To ensure you receive the latest updates and improvements for the AST product, including essential privacy features, follow these steps to update your web pages with the new Microsoft CDN URLs:
 >
-> - **Regular Domain:** [https://acdn.adnxs.com/ast/ast.js](https://acdn.adnxs.com/ast/ast.js)
+>
+> - **Regular Domain:** [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
 > - **Cookie-Free Domain:** [https://adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js)
 >
 > If you use a Content Security Policy (CSP), ensure the following domains are added to your allowed list:

@@ -101,6 +101,10 @@
       href: creative-approval---implementation.md
     - name: Native Creative Smart Image Adjustments
       href: smart-image-adjustments-for-native-creatives---bidders.md
+- name: Traffic Shaping
+  items:
+  - name: Supply Stream Efficiency
+    href: supply-stream-efficiency.md
 - name: Microsoft Monetize Supply for External Demand Partners
   items:
   - name: Overview

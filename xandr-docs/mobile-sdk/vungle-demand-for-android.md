@@ -59,7 +59,7 @@ VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
 ```
 ---
 
-### Step 3: Initialize an interstitial ad and set the required keyword
+## Step 3: Initialize an interstitial ad and set the required keyword
 
 After successfully initializing the Vungle SDK, the bidder token is captured by the AppNexus SDK during the ad request and forwarded to the primary supply platform (PSP).
 

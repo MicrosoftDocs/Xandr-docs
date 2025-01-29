@@ -56,10 +56,10 @@ VungleAds.init(this, "YOUR_APP_ID", object : InitializationListener {
         Log.d("vunglecsrlog", "onError():" + vungleError.errorMessage)
     }
 })
-
 ```
+---
 
-## Step 3: Initialize an interstitial ad and set the required keyword
+### Step 3: Initialize an interstitial ad and set the required keyword
 
 After successfully initializing the Vungle SDK, the bidder token is captured by the AppNexus SDK during the ad request and forwarded to the primary supply platform (PSP).
 
@@ -75,6 +75,7 @@ Set a custom keyword before calling the loadAd() method. Use the following speci
 #### [Java](#tab/java2)
 
 ```
+
 // Create and configure the interstitial ad object
 interstitialAdView = new InterstitialAdView(this);
 
@@ -100,6 +101,7 @@ interstitialAdView.addCustomKeywords("VUNGLE_PLACEMENT_ID_FOR_CSR", "VUNGLE_PLAC
 interstitialAdView.adListener = adListener
 interstitialAdView.loadAd()
 ```
+---
 
 > [!NOTE]
 >

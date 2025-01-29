@@ -60,21 +60,21 @@ ANGDPRSettings.setConsentString(context,"BOMyQRvOMyQRvABABBAAABAAAAAAEA");
  * @param A valid Binary String: The '0' or '1' at position n – where n's indexing begins at 0 – indicates the consent status for purpose ID n+1; false and true respectively. eg. '1' at index 0 is consent true for purpose ID 1
  */
 ANGDPRSettings.setPurposeConsents(context,"101010001");
+
 ```
 
 > [!NOTE]
 > To ensure proper monetization and relevant targeting, the SDK should be enabled to send the device information. Setting the `consentRequired` and `purposeConsents` flag correctly will help ensure proper device information is sent. Refer to the table below to determine whether the device details will be passed or not.
 
-### Consent and device info logic table
+### Consent and device information logic
 
-The table below describes the actions taken for the different `purposeConsents` values in combination with `consentRequired` values.
+The following table describes the SDK behavior based on different `purposeConsents` values in combination with `consentRequired` values:
 
-| **consentRequired** | **deviceAccessConsent** | **SDK behavior** |
-|-----------------|---------------------|-------------------------|
-| false           | false              | Pass Device Info: Yes   |
-| false           | true               | Pass Device Info: Yes   |
-| true            | false              | Pass Device Info: No    |
-| true            | true               | Pass Device Info: Yes   |
+| `deviceAccessConsent` | `true` | `false` | `undefined` |
+|----------------------|--------|---------|------------|
+| `consentRequired=false` | The SDK will pass device info. | **The SDK will pass device info.** | The SDK will pass device info. |
+| `consentRequired=true` | The SDK will pass device info. | The SDK will not pass device info. | The SDK will not pass device info. |
+| `consentRequired=undefined` | The SDK will pass device info. | The SDK will not pass device info. | The SDK will pass device info. |
 
 ## California Consumer Privacy Act (CCPA)
 

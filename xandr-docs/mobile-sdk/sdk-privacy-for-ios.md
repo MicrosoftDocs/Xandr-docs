@@ -63,7 +63,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
 > [!NOTE]
 > To ensure proper monetization and relevant targeting, the SDK should be enabled to send the device information. Setting the `consentRequired` and `purposeConsents` flag correctly will help ensure proper device information is sent. Refer to the table below to determine whether the device details will be passed or not.
 
-### Consent and device info logic table
+### Consent and device information logic
 
 The table below describes the actions taken for the different `purposeConsents` values in combination with `consentRequired` values.
 

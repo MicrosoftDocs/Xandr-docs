@@ -62,10 +62,7 @@ In the **Basic Setup** section, enter the basic details for the curated deal lin
 - **External Code** - If you want to report on the curated deal line item using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here. The code can only contain alphanumeric characters, periods, underscores, or dashes. The code you enter is not case-sensitive (i.e., uppercase and lowercase characters are treated the same). No two objects at the same level can use the same code per advertiser.
 - **State** - Set the state of the curated deal line item. If **"Active"**, the line item will be eligible to serve. Best practice for curators is to set the state to **"Active"** so that buyers can serve via the curated deal as quickly as possible.
 - **Insertion Order Details** - Insertion order details for **Budget Type**, **Currency**, **Total Lifetime Budget**, **Pacing**, **Start Date**, and **End Date** display in the gray box (you must select an insertion order to display these values).
-- **Budget Type** - Budget is set on the parent insertion order.
-  
-   > [!NOTE]
-   > When you create a deal via a line item, the line item will inherit its budget from the parent insertion order, and this will impact the revenue types available on the line item.
+- **Budget Type** - Budget is set on the parent insertion order. When you create a deal via a line item, the line item will inherit its budget from the parent insertion order, and this will impact the revenue types available on the line item.
 
 ## Deal details
 
@@ -115,7 +112,7 @@ Use the **Revenue Type** to define how the buyer will pay you. Select one of
 
 ## Margin type
 
-Use the Margin Type settings to configure the curator margin you wish to take on each impression. 
+Use the Margin Type settings to configure the curator margin you wish to take on each impression.
 
 Select either:
 
@@ -217,9 +214,11 @@ Do not use (not supported for curated deal line items).
 You can target curated deal line items in the same way you can target augmented line items. See [Buy-Side Targeting](buy-side-targeting.md) for detailed setup information on targeting. See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 
 > [!NOTE]
-> Cross-device enhanced by Microsoft will be automatically enabled for your curated deal at no cost if you target a segment. If you prefer not to benefit from cross-device on your curated deal, please contact your account representative to opt out of this feature.
-> [!NOTE]
-> Thresholds (**Viewability Threshold** or **Completion Rate Threshold**) create a hard limit for curated deal line item targeting. Any impressions with a predicted view or completion rate below the threshold won’t be matched on the curated deal. Because the threshold you choose is the minimum view/completion you will achieve, expect to see an average view/completion rate 10-15% higher than the threshold you set.
+>
+> - Cross-device enhanced by Microsoft will be automatically enabled for your curated deal at no cost if you target a segment. If you prefer not to benefit from cross-device on your curated deal, please contact your account representative to opt out of this feature.
+>
+>
+> - Thresholds (**Viewability Threshold** or **Completion Rate Threshold**) create a hard limit for curated deal line item targeting. Any impressions with a predicted view or completion rate below the threshold won’t be matched on the curated deal. Because the threshold you choose is the minimum view/completion you will achieve, expect to see an average view/completion rate 10-15% higher than the threshold you set.
 
 ### Geography
 

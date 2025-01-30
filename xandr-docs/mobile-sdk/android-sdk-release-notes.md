@@ -6,6 +6,16 @@ ms.custom: android-sdk
 
 # Android SDK release notes
 
+## 9.3.0
+
+### New feature
+
+- 7666962: Vungle CSR support for Interstitial video ads. For more information, see [Vungle demand for Android](https://learn.microsoft.com/en-us/xandr/mobile-sdk/vungle-demand-for-android)
+
+### Improvement/Bug Fixes
+
+- 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.
+
 ## 9.2
 
 ### Improvement/Bug Fixes

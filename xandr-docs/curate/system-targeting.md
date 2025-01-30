@@ -14,8 +14,7 @@ By default, all operating systems, browsers, and languages are targeted. On the 
 
 - The **Browser** tab shows all browsers available for targeting. You can either include or exclude browsers.
   
-  > [!NOTE]
-  > If you want to target the Safari browser on desktop and mobile, make sure to include both "Safari" and "iPhone" browsers in you targeting. Including the "iPhone" browser is necessary to see delivery for your line item.
+  To target the Safari browser on both desktop and mobile, ensure you include both the "Safari" and "iPhone" browsers in your targeting. This step is necessary for accurate delivery.
 
 - The **Language** tab shows all the languages available for targeting. You can either include or exclude languages.
   
@@ -26,7 +25,9 @@ By default, all operating systems, browsers, and languages are targeted. On the 
 - The **Carrier** tab shows all the carriers and the countries or regions where they are available. You can either include or exclude carriers.
 - The **Summary** tab shows a summary of the selected targeting settings.
 
-> [!WARNING]
-> All system targeting types can be used but with some limitations. Due to inconsistent user agent naming conventions used by app providers and mobile carriers, the device type, device make/model, and OS targeting methods for mobile apps are only available for a small portion of inventory. Targeting these items will limit reach on mobile apps.
->
-> Additionally, since a significant portion of all impressions are delivered to unknown browsers, operating systems, or both, you should consider targeting **Unknown** operating systems and browsers to avoid severely restricting reach.
+## Important considerations
+
+Key considerations for system targeting include:
+
+- **Limitations for mobile apps**: All system targeting types can be used but with some limitations. Due to inconsistent user agent naming conventions used by app providers and mobile carriers, the device type, device make/model, and OS targeting methods for mobile apps are only available for a small portion of inventory. Targeting these items will limit reach on mobile apps.
+- **Targeting unknown systems**: Additionally, since a significant portion of all impressions are delivered to unknown browsers, operating systems, or both, you should consider targeting **Unknown operating systems and browsers** to avoid severely restricting reach.

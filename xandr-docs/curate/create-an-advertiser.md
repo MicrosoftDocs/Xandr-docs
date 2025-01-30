@@ -9,13 +9,7 @@ Creating an advertiser object is the first step before you can start running ad 
 
 ## Step 1. Start a new advertiser
 
-On the **Advertisers** screen, select the **+New** button.
-
-This opens the **Create New Advertiser** screen, where you define all relevant details for your advertiser.
-
-> [!TIP]
-> You can expand or collapse each section of the screen. To expand or collapse all sections at once, select
-the **Expand All** or **Collapse All** link in the upper right.
+On the **Advertisers** screen, select the **+New** button. This opens the **Create New Advertiser** screen, where you define all relevant details for your advertiser. You can expand or collapse each section of the screen. To quickly expand or collapse all sections at once, select the **Expand All** or **Collapse All** link in the upper right.
 
 ## Step 2. Fill out basic setup
 
@@ -23,8 +17,7 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 
 - **Name** - Enter the advertiser's name.
 
-- **External Code** - If you want to report on the advertiser using an external code (rather than the internal ID that
-  Microsoft Advertising assigns automatically), enter the code here.
+- **External Code** - If you want to report on the advertiser using an external code (rather than the internal ID that Microsoft Advertising assigns automatically), enter the code here.
 
 - **State** - Set the state of the advertiser. "Active" means child insertion orders and line items will be eligible to serve. To avoid accidental spending, you should set the state to "Inactive" until everything related to the buy has been set up and verified.
 
@@ -35,19 +28,17 @@ In the **Basic Setup** section, enter the basic details for the advertiser.
 
 - **Currency** - Select the currency for the advertiser. Typically, this defines the billing currency. This currency will be assigned to all new insertion orders and line items under the advertiser unless a different currency is set on the insertion order or line item level. For more information, see [Currency Support](currency-support.md).
 
-- **Political Advertising** - If you are releasing advertisements related to an election, ballot initiative, or political candidate in
-  the United States, you must specify that here. You must also certify that all such advertising has been paid for, or will be paid for, with U.S. currency from financial institutions in the United States, and that no portion of the payment is provided by foreign nationals or foreign principals
+- **Political Advertising** - If you are releasing advertisements related to an election, ballot initiative, or political candidate in the United States, you must specify that here. You must also certify that all such advertising has been paid for, or will be paid for, with U.S. currency from financial institutions in the United States, and that no portion of the payment is provided by foreign nationals or foreign principals.
 
-  If you select **I'm running political advertising on all IOs under this advertiser**, then all insertion orders will have the **Political Advertising** section enabled by default. You can optionally disable this on an individual insertion order.
+If you select **I'm running political advertising on all IOs under this advertiser**, then all insertion orders will have the **Political Advertising** section enabled by default. You can optionally disable this on an individual insertion order.
 
-  If you select **Use political advertising details template**, then all insertion orders with political advertising enabled will automatically use the political advertising details from the template you will create on the insertion order. You can optionally modify these details on an individual insertion order.
+If you select **Use political advertising details template**, then all insertion orders with political advertising enabled will automatically use the political advertising details from the template you will create on the insertion order. You can optionally modify these details on an individual insertion order.
 
-  You will be asked to specify more details about your political advertisements when you [Create an Insertion Order](create-an-insertion-order.md). For more information about political advertising, see [Political Advertising](political-advertising.md).
+You will be asked to specify more details about your political advertisements when you [Create an Insertion Order](create-an-insertion-order.md). For more information about political advertising, see [Political Advertising](political-advertising.md).
 
 ## Step 3. Create a political advertising details template (optional)
 
-> [!NOTE]
-> The Political Advertising Details Template is only enabled when you have specified that you are running political advertising and that you would like to create a political advertising details template.
+The **Political Advertising Details Template** is only enabled when you have specified that you are running political advertising and that you would like to create a political advertising details template.
 
 The political advertising details entered here will automatically populate all new political advertising insertion orders that require this information. You can modify the details for an individual insertion order at any time. You must still certify that the details you have entered are correct for each individual insertion order.
 
@@ -84,7 +75,7 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 
 - **Frequency & Recency** - Set caps for frequency (how many times a user may see ads from this advertiser) and/or recency (how much time must elapse before the user may see another ad from this advertiser).
 - **Reporting Labels** - Associate a Salesperson, Account Manager, or Advertiser Type to the advertiser. This enables you to report on performance by these labels in Member
-  reporting. For example, you might associate an Account Manager with each advertiser and then run a report grouped by Account Manager to find out which managers are responsible for which advertisers or compare advertiser performance across managers.
+reporting. For example, you might associate an Account Manager with each advertiser and then run a report grouped by Account Manager to find out which managers are responsible for which advertisers or compare advertiser performance across managers.
 - **Billing Information** - Change the information that appears in advertiser and/or insertion order-specific invoices. By default, your member billing information will appear in the "Bill To" section of those invoices.
   - To show your advertiser's name and address in the "Bill To" section instead, complete the fields in the **Billing Information** section. The **Billing Name** field may contain a maximum of 50 characters.
   - To show just the advertiser's name with the member's address, enter the name but leave the rest of the fields blank. For more about receiving advertiser- and/or insertion order-specific invoices, see [Understanding Your Invoice](../monetize/understanding-your-invoice.md).
@@ -97,7 +88,7 @@ In the **Advanced Settings** section, enter any optional advanced settings that 
 - **Insertion Orders** - Select this check box to ensure that all line items under this advertiser also have an insertion order **(Advertiser \> Insertion Order \> Line Items)**. Insertion orders allow you to better represent your financial relationship with an advertiser. This check box must be selected if you want to use [Working with Insertion Orders](working-with-insertion-orders.md).
 
   > [!WARNING]
-  > Warning regarding preexisting line items
+  > **Warning regarding preexisting line items**
   > If you select this option, and you have already created line items before enabling this setting, those line items will stop spending. To allow those line items to continue spending, create an insertion order and associate them with it. All newly created line items will require an insertion order.
 
 ## Step 5. Save advertiser

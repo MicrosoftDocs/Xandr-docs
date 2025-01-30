@@ -10,7 +10,6 @@ You can set the eligibility, allowed payment types, and targeting access for buy
 
 > [!NOTE]
 > While you can manage these settings in the **Partner Center** screen and in the **Partner Controls** tab, you can only view the buyer's current settings in the **Partner Controls** tab.
-> [!TIP]
 > For more information about the settings described on this page, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md)
 
 ## Edit a single buyer's settings

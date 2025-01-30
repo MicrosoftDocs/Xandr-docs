@@ -13,8 +13,7 @@ You can control deals received from sellers on the **Deals** screen. You can:
 - Manage the status of deals at any time by accepting, deactivating, or declining them.
 - Assign a deal alias (internal name) to any seller deal for easier management within your organization.
 
-> [!NOTE]
-> For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
+For more information on managing deals with sellers including viewing basic and advanced deal metrics, monitoring each deal's health, and running detailed reports, see [Manage Your Deals with Sellers](manage-your-deals-with-sellers.md).
 
 ## Access Deals screen
 
@@ -108,13 +107,9 @@ While you can change the status of each deal to **Active** or **Declined** using
 
 You can assign a **Deal Alias** to use as a buyer internal name for seller deals so you can manage these deals by a name you provide for it. The alias you assign to a deal appears in the **Deal Alias** column of the **Deals with Sellers** page along with the **Deal Name** that the seller provided for the deal.
 
-> [!NOTE]
-> The **Deal Alias** you assign to a deal is not viewable by the seller of the deal.
+The **Deal Alias** you assign to a deal is **not viewable** by the seller of the deal. The **Deal Alias** field is limited to 254 characters.
 
 To assign a **Deal Alias** to a deal, do the following:
-
-> [!NOTE]
-> The **Deal Alias** field is limited to 254 characters.
 
 1. Select **Inventory** > **Seller Deals**.
 1. Select anywhere in the row of the deal you want to assign a **Deal Alias** to (you can search by **Deal Name**, **Deal Alias**, **Deal ID**, or **Code** to find a specific deal).

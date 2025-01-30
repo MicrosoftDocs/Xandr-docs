@@ -92,10 +92,9 @@ Data retention period for this report is 1100 days.
 
 ## Metrics
 
-> [!NOTE]
-> When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
->
-> Select metrics are available for impressions bought through Microsoft Invest. Video metrics are available for impressions bought through any DSP.
+When values of a metric are displayed as percentages in the UI, they will appear as decimals when you export the report.
+
+Select metrics are available for impressions bought through Microsoft Invest, while video metrics are available for impressions bought through any DSP.
 
 | Column | Description |
 |:---|:---|

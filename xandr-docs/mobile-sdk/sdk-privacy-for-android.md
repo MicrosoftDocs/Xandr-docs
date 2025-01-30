@@ -15,6 +15,7 @@ The Global Privacy Platform (GPP) enables advertisers, publishers and technology
 > [!WARNING]
 > This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 > [!NOTE]
+>
 > - Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with the [Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
     > - [Register your own CMP](https://register.consensu.org/CMP)
     > - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
@@ -44,7 +45,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
  * @param true if subject to GDPR regulations, false otherwise
  */
 ANGDPRSettings.setConsentRequired(context,true);
-   
+
    
 /**
  * Set the consent string in the SDK
@@ -59,18 +60,21 @@ ANGDPRSettings.setConsentString(context,"BOMyQRvOMyQRvABABBAAABAAAAAAEA");
  * @param A valid Binary String: The '0' or '1' at position n – where n's indexing begins at 0 – indicates the consent status for purpose ID n+1; false and true respectively. eg. '1' at index 0 is consent true for purpose ID 1
  */
 ANGDPRSettings.setPurposeConsents(context,"101010001");
+
 ```
 
 > [!NOTE]
 > To ensure proper monetization and relevant targeting, the SDK should be enabled to send the device information. Setting the `consentRequired` and `purposeConsents` flag correctly will help ensure proper device information is sent. Refer to the table below to determine whether the device details will be passed or not.
 
-The table below describes the actions taken for the different `purposeConsents` values in combination with `consentRequired` values.
+### Consent and device information logic
 
-|  | true | false | undefined |
-|:---|:---|:---|:---|
-| `consentRequired=false` | The SDK will pass device info. | The SDK will **not** pass device info. | The SDK will pass device info. |
-| `consentRequired=true` | The SDK will pass device info. | The SDK will **not** pass device info. | The SDK will **not** pass device info. |
-| `consentRequired=undefined` | The SDK will pass device info. | The SDK will **not** pass device info. | The SDK will pass device info. |
+The following table describes the SDK behavior based on different `purposeConsents` values in combination with `consentRequired` values:
+
+| `deviceAccessConsent` | `true` | `false` | `undefined` |
+|----------------------|--------|---------|------------|
+| `consentRequired=false` | The SDK will pass device info. | **The SDK will pass device info.** | The SDK will pass device info. |
+| `consentRequired=true` | The SDK will pass device info. | The SDK will not pass device info. | The SDK will not pass device info. |
+| `consentRequired=undefined` | The SDK will pass device info. | The SDK will not pass device info. | The SDK will pass device info. |
 
 ## California Consumer Privacy Act (CCPA)
 

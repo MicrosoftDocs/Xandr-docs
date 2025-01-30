@@ -1,6 +1,6 @@
 ---
 title: iOS SDK Release Notes
-description: Explore information about the iOS SDK release notes.
+description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
 ms.date : 11/27/2024
 ---
@@ -14,7 +14,7 @@ ms.date : 11/27/2024
 
 ### New feature
 
-- 7446038: Added Vungle CSR support for interstitial video ads. For more information, see [Vungle demand for iOS](https://learn.microsoft.com/en-us/xandr/mobile-sdk/vungle-demand-for-ios).  
+- 7446038: Added Vungle CSR support for interstitial video ads. For more information, see [Vungle demand for iOS](vungle-demand-for-ios.md).  
 
 ### Improvement/Bug Fixes
 

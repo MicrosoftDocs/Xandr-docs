@@ -2,6 +2,7 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
+ms.date : 11/27/2024
 ---
 
 # Android SDK release notes
@@ -10,7 +11,7 @@ ms.custom: android-sdk
 
 ### New feature
 
-- 7666962: Vungle CSR support for Interstitial video ads. For more information, see [Vungle demand for Android](https://learn.microsoft.com/en-us/xandr/mobile-sdk/vungle-demand-for-android)
+- 7666962: Vungle CSR support for Interstitial video ads. For more information, see [Vungle demand for Android](vungle-demand-for-android.md)
 
 ### Improvement/Bug Fixes
 

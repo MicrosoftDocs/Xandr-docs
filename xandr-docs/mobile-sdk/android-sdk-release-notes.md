@@ -2,9 +2,20 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
+ms.date : 11/27/2024
 ---
 
 # Android SDK release notes
+
+## 9.3.0
+
+### New feature
+
+- 7666962: Vungle CSR support for Interstitial video ads. For more information, see [Vungle demand for Android](vungle-demand-for-android.md)
+
+### Improvement/Bug Fixes
+
+- 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.
 
 ## 9.2
 

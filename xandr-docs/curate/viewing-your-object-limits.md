@@ -28,8 +28,9 @@ The **Object Limits Report** section lists the types of objects that are limited
 - **% Active** - Out of the total number of objects in use, the percent that are active.
 - **% Served or Modified in the Last 90 Days** - The percent of objects that have had impressions, or have been modified, in the last 90 days. For creatives, since expired creatives are not counted, this will always be 100%. If the percentage is low, the client has many objects that are candidates for deletion.
 
-> [!TIP]
-> Line items that have not served or been modified in the last 90 days are good candidates for deletion. Contact your Microsoft Advertising representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
+### Manage unused objects
+
+Line items that have not served or been modified in the last 90 days are good candidates for deletion. Contact your Microsoft Advertising representative if you need assistance in cleaning out old objects or to request that your object limit be increased.
 
 ## FAQs
 

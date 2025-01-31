@@ -1,6 +1,6 @@
 ---
 title: iOS SDK Release Notes
-description: Explore information about the iOS SDK release notes.
+description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
 ms.date : 11/27/2024
 ---
@@ -9,6 +9,16 @@ ms.date : 11/27/2024
 
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
+
+## 9.3.0
+
+### New feature
+
+- 7446038: Added Vungle CSR support for interstitial video ads. For more information, see [Vungle demand for iOS](vungle-demand-for-ios.md).  
+
+### Improvement/Bug Fixes
+
+- 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.  
 
 ## 9.2.1
 

@@ -111,7 +111,6 @@ Once you have registered a Banner Creative and it has passed platform audit, yo
   - If only one of these dimensions is submitted, the bid is rejected.
   
 - The `ver` field is ignored in the bid response.  
-
 - The `adomain` field may be checked occasionally to verify that the ad’s brand aligns with publisher preferences.  
 
 Some publishers periodically audit creatives, which can generate false impression & click tracking events. When Xandr detects audit events:

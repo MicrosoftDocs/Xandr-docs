@@ -109,9 +109,9 @@ Once you have registered a Banner Creative and it has passed platform audit, yo
 - Creative dimensions must be submitted in the `seatbid.bid.w` and `seatbid.bid.h` fields. These dimensions will override the dimensions of the registered creative, and will be subject to the usual size checks performed during the auction.
   - If neither of these dimensions is submitted, the bid is rejected.
   - If only one of these dimensions is submitted, the bid is rejected.
-- The following fields are ignored in the bid response:  `adomain` and  `ver`.
-
-    Brand is set during platform audit of the registered creative, so `adomain` is not needed.
+  
+- The `ver` field is ignored in the bid response.  
+- The `adomain` field may be checked occasionally to verify that the ad’s brand aligns with publisher preferences.  
 
 Some publishers periodically audit creatives, which can generate false impression & click tracking events. When Xandr detects audit events:
 

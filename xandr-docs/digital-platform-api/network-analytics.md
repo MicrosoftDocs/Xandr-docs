@@ -86,7 +86,7 @@ If you are frequently requesting network analytics reports via the API which inc
 | `adjustment_id` | int | Yes | `890` | The ID of the adjustment used to make changes to booked revenue and media cost values. |
 | `adjustment_day` | time | Yes | `"2010-02-01"` | The day of the adjustment. |
 | `adjustment_hour` | time | Yes | `"2010-02-01 06:00:00"` | The hour of the adjustment. |
-| `is_takover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
+| `is_takover` | boolean | Yes | Yes | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `publisher_id` | int | Yes | `321` | The ID of the publisher. |
 | `publisher_name` | string | No | `"Newscorp"` | The name of the publisher. |
 | `publisher_code` | string | No | `"Newscorp Code"` | The custom code for the publisher. |

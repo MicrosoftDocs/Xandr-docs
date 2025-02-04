@@ -64,7 +64,7 @@ Data in this report is retained for 420 days.
 | Column | Filter? | Description |
 |--|--|--|
 | Buyer | Yes | The buyer of this impression. |
-| Is Takeover|Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
+| Is Takeover |Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Seller | Yes | The seller of this impression. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |

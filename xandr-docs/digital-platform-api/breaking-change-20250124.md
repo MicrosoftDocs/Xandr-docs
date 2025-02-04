@@ -3,7 +3,7 @@ title: January 23, 2025 – Update to Context Array Object in Profile Service AP
 description: We are introducing a breaking change to the Outstream Video Targeting options to the Profile service API.
 ms.date: 01/23/2025
 ms.topic: release-notes
-ms.author: shsrinivasan
+ms.author: shivannis
 ---
 
 # January 23, 2025 – Update to Context array object in Profile service API 
@@ -20,7 +20,7 @@ We are introducing a change to the name field within the `video_targets.context`
 
 Please update your API configurations accordingly to uphold continued compatibility and seamless integration. 
 
-For detailed information, refer to our [Profile service](profile-service.md) documentation. 
+For detailed information, please refer to our [Profile service](profile-service.md) documentation. 
 
 To learn more about breaking changes and their implications, see our [Breaking Changes Policy](breaking-changes.md). If you have any questions or require assistance with this update, please reach out to your account representative or contact [Product Support](https://help.xandr.com/s/login/). 
 

@@ -258,7 +258,6 @@ If you are frequently requesting network analytics reports via the API which inc
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `is_takover` | boolean | `Yes` | Yes | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `imps` | int | `2340` | imps | The total number of impressions (served and resold). |
 | `imps_blank` | int | `3` | imps_blank | The number of impressions served with a blank. |
 | `imps_psa` | int | `5` | imps_psa | The number of impressions served a PSA. |
@@ -420,6 +419,7 @@ If you are frequently requesting network analytics reports via the API which inc
 | `marketplace_clearing_event_units_cpm` | double | `11.2` | CPM/marketplace_clearing_event_units | CPM by marketplace clearing event units |
 | `marketplace_clearing_events_booked_revenue_cpm` | double | `2.45` | total revenue/1000 events | The total revenue per 1000 events (for the associated Clearing Event). |
 | `marketplace_clearing_event_buyer_media_cost_ecpm` | double | `2.37` | total media cost/1000 events | The total media cost per 1000 events (for the associated Clearing Event). |
+| `is_takover` | boolean | `Yes` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 ## Custom viewable definition metrics
 

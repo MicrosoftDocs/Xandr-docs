@@ -64,9 +64,9 @@ If you are frequently requesting network analytics reports via the API which inc
 > [!NOTE]
 > Some dimensions have attributes. Dimension attributes are a more granular element of data about the parent dimension. If a dimension has attributes, the name of its attributes will appear below it using the following syntax: `dimension_name.attribute_name`.
 
-| Column | Type | Filter? | Example | Description |
-|:---|:---|:---|:---|:---|
-| `is_takover` | boolean | Yes | `Yes` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. <br> Returns `true` if the impression is part of a takeover request; otherwise, returns `false`. |
+| Column      | Type    | Filter? | Example | Description |
+|------------|--------|---------|---------|-------------|
+| `is_takover` | boolean | Yes     | `Yes`   | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. <br> Returns `true` if the impression is part of a takeover request; otherwise, returns `false`. |
 | `hour` | time | No | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
 | `day` | time | No | `"2010-02-01"` | The day of the auction. |
 | `month` | time | No | `"2010-02"` | The month of the auction. |

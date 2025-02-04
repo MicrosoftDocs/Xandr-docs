@@ -74,7 +74,7 @@ Data retention period for this report is 99 days.
 | `inventory_url` | string | no | `"myurl.com/(1234)"` | The mapped URL from the detected domain on the ad call and the ID in parentheses. |
 | `inventory_url_id` | string | yes | `1234` | The mapped URL ID from the detected domain on the ad call. |
 | `inventory_url_name` | string | yes | `1234` | The mapped URL from the detected domain on the ad call. |
-| `media_type` | string | no | `"Banner"` | The category of creative on transacted impressions. For example: banner, video, native. |
+| `media_type` | string | no | `"Banner"` | The category of creative on transacted impressions. For example: `banner`, `video`, `native`. Unknown media type refers to bid requests that did not result in impressions. The media type is logged only when a creative is served. |
 | `media_type_id` | int | yes | `1` | The ID of the category of creative on transacted impressions. |
 | `month` | date | no | `"2018-02"` | The month of the auction. |
 | `placement_id` | int | yes | `456` | The ID of the placement through which the request originated. |
@@ -108,6 +108,7 @@ Data retention period for this report is 99 days.
 | `bids_submitted_to_ad_server` | int | See Description. | `54021580` | The number of ad requests that had a valid Prebid bid that was not subject to any additional Microsoft rejections returned to the ad server. This number is counted after the Microsoft auction process that evaluates bids received from all sources. The reduced volume between `valid_bid_on_imps` and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](../monetize/integrate-web-mobile-web-with-psp.md). |
 | `bidder_user_matched_requests` | int | See Description. | `1849169240` | The number of requests where a user identifier was present.<br><br>**Note:** This metric currently only includes cookies for web and mobile web. |
 | `imps_delivered` | int | See Description. | `4804540` | The number of impressions successfully delivered and ads rendered.<br><br>**Note:** This report is based on sample log data multiplied to estimate the full volume of PSP activity and does not represent final delivery. |
+| `media_type` | string | See Description. | `banner`, `video`, and `native` | Unknown media type refers to bid requests that did not result in impressions. The media type is logged only when a creative is served. |
 | `no_bid_rate` | double | no_bids / bid_requests_sent | `0.87` | The number of times Demand Partners did not bid divided by the number of bid requests sent to Demand Partners. |
 | `no_bids` | int | See Description. | `3461831640` | The number of times Demand Partners did not bid on a request. This does not include bid errors. |
 | `total_bid_price` | int | See Description. | `171869242` | The sum of the bid values received from Demand Partners. |

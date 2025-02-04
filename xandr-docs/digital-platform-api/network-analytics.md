@@ -86,7 +86,6 @@ If you are frequently requesting network analytics reports via the API which inc
 | `adjustment_id` | int | Yes | `890` | The ID of the adjustment used to make changes to booked revenue and media cost values. |
 | `adjustment_day` | time | Yes | `"2010-02-01"` | The day of the adjustment. |
 | `adjustment_hour` | time | Yes | `"2010-02-01 06:00:00"` | The hour of the adjustment. |
-| `is_takover` | boolean | Yes | Yes | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `publisher_id` | int | Yes | `321` | The ID of the publisher. |
 | `publisher_name` | string | No | `"Newscorp"` | The name of the publisher. |
 | `publisher_code` | string | No | `"Newscorp Code"` | The custom code for the publisher. |
@@ -253,6 +252,7 @@ If you are frequently requesting network analytics reports via the API which inc
 | `code_1` | string | No | `"Code A"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
+| `is_takover` | boolean | Yes | Yes | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 ## Metrics
 

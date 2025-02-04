@@ -168,8 +168,8 @@ Some considerations:
 
 > [!NOTE]
 >
-> - The following fields are ignored in the bid response: `adomain` and `ver`.
-> - Brand is set during platform audit of the registered creative, so `adomain` is not needed.
+> - The `ver` field is ignored in the bid response.  
+> - The `adomain` field may be checked occasionally to verify that the ad’s brand aligns with publisher preferences.  
 
 ### Bid object
 

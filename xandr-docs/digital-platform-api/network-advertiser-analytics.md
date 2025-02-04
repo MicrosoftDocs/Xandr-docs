@@ -62,6 +62,7 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `buyer_member_id` | int | Yes | `123` | The internal ID of the buying member in the impression. |
 | `bidder_id` | int | No | `436537` | The ID of the bidder or DSP (demand side platform) that the buyer used to purchase this impression. |
 | `bidder_name` | string | No | `"Bidder's name"` | The name of the bidder or DSP (demand side platform) that the buyer used to purchase this impression. |
+| `is_takover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `seller_member_id` | int | Yes | `567` | The internal ID of the selling member. |
 | `seller_member_name` | string | No | `"AdMeld"` | The display name of the selling member. |
 | `seller_member` | string | No | `"AdMeld (567)"` | **Deprecated**. |

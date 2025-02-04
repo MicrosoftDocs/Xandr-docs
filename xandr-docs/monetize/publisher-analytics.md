@@ -85,6 +85,7 @@ Real Time Data is a new feature being offered within this report (not all users 
 | Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | External Code | No | The name and ID of the external inventory code passed in the ad call and predefined by the publisher. For more details, see [External Inventory Code Service](../digital-platform-api/external-inventory-code-service.md). |
 | Filtered Request Reason | No | The reason the ad request was filtered out by Microsoft Advertising prior to bidding. |
+| Is Takeover |Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Impression Type | Yes | The type of impression that occurred. For the definitions of each impression type, see the [Impression Type Definitions](#impression-type-definitions) section below. |
 | Line Item | No | The line item under which the impression was purchased. For more information about line items, see [Working with Line Items](working-with-line-items.md). |
 | Media Type | Yes | The media type associated with the creative that served on this impression. |

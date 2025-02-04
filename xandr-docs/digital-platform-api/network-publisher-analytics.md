@@ -70,6 +70,7 @@ Data retention period for the report is 428 days.
 | `brand_id` | int | yes | `3` | The ID of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_id` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `brand_name` | string | no | `"Ace Hardware"` | The name of the brand associated with a creative. For `imp_type_id = 6`, no information is available in the `brand_name` field for this report. See the [Seller Brand Review Report](./seller-brand-review-report.md) instead. |
 | `brand` | string | no | `"Ace Hardware (3)"` | **Deprecated**. |
+| `is_takover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `publisher_id` | int | yes | `6787` | The number to identify the publisher. |
 | `publisher_code` | string | no | `"Publisher Code"` | The custom code to the identify the publisher. |
 | `publisher_currency` | string | yes | `"USD"` | The currency of the publisher. |

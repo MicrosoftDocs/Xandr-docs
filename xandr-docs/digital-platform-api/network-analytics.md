@@ -258,6 +258,7 @@ If you are frequently requesting network analytics reports via the API which inc
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
+| `is_takover` | boolean | `Yes` | Yes | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `imps` | int | `2340` | imps | The total number of impressions (served and resold). |
 | `imps_blank` | int | `3` | imps_blank | The number of impressions served with a blank. |
 | `imps_psa` | int | `5` | imps_psa | The number of impressions served a PSA. |

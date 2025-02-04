@@ -252,7 +252,6 @@ If you are frequently requesting network analytics reports via the API which inc
 | `code_1` | string | No | `"Code A"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
-| `is_takover` | boolean | Yes | Yes | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 ## Metrics
 
@@ -419,8 +418,6 @@ If you are frequently requesting network analytics reports via the API which inc
 | `marketplace_clearing_event_units_cpm` | double | `11.2` | CPM/marketplace_clearing_event_units | CPM by marketplace clearing event units |
 | `marketplace_clearing_events_booked_revenue_cpm` | double | `2.45` | total revenue/1000 events | The total revenue per 1000 events (for the associated Clearing Event). |
 | `marketplace_clearing_event_buyer_media_cost_ecpm` | double | `2.37` | total media cost/1000 events | The total media cost per 1000 events (for the associated Clearing Event). |
-| `is_takover` | boolean | `Yes` |Yes |Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
-
 
 ## Custom viewable definition metrics
 

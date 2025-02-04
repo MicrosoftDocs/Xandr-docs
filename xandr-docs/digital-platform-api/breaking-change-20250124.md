@@ -6,7 +6,7 @@ ms.topic: release-notes
 ms.author: shsrinivasan
 ---
 
-# January 23, 2025 – Update to Context array object in Profile Service API 
+# January 23, 2025 – Update to Context array object in Profile service API 
 
 We are introducing a breaking change to the Outstream Video Targeting options in the [Profile service](profile-service.md) API. This change will take place 60 days from today, on March 24, 2025. 
 

@@ -231,50 +231,39 @@
   items:
     - name: First-Party Data
       items:
-        - name: Segments
-          items:
+        - name: Segment
+          items: 
             - name: Work with Segments
-              items:
-                - name: Overview
-                  href: working-with-segments.md
-                - name: Audience Data
-                  items:
-                    - name: Onboard Your Audience Data
-                      href: onboarding-your-audience-data.md
-                    - name: Client-side Segmentation
-                      href: client-side-segmentation.md
-                    - name: Create a Segment Pixel
-                      href: create-a-segment-pixel.md
-                    - name: Export a Segment Pixel
-                      href: export-a-segment-pixel.md
-                - name: Birthday Cookies
-                  href: birthday-cookies.md
-                - name: Segment Pixels - Advanced
-                  href: segment-pixels-advanced.md
-                - name: Pass in User Data Offline
-                  items:
-                    - name: Overview
-                      href: pass-in-user-data-offline.md
-                    - name: Map User IDs with getUID and mapUID
-                      href: user-id-mapping-with-getuid-and-mapuid.md
-                    - name: View User Mapping Visual and Walk-Through
-                      href: user-mapping-visual-and-walk-through.md
-                - name: Location Manager
-                  items:
-                    - name: Overview
-                      href: location-manager.md
-                    - name: Geo Radius Segments
-                      href: geo-radius-segments.md
-    - name: Third-Party Data
-      items:
-        - name: Data Marketplace
+        - name: Overview
+          href: working-with-segments.md
+        - name: Audience Data
           items:
-            - name: Data Marketplace Overview
-              href: data-marketplace-overview.md
-            - name: Data Marketplace Partners and Contact Information
-              href: data-marketplace-partners-and-contact-information.md
-            - name: Data Cost Calculation Mechanics
-              href: data-cost-calculation-mechanics.md
+            - name: Onboard your Audience Data
+              href: onboarding-your-audience-data.md
+            - name: Client-side Segmentation
+              href: client-side-segmentation.md
+            - name: Create a Segment Pixel
+              href: create-a-segment-pixel.md
+            - name: Export a Segment Pixel
+              href: export-a-segment-pixel.md
+        - name: Birthday Cookies
+          href: birthday-cookies.md
+        - name: Segment pixels - Advanced
+          href: segment-pixels-advanced.md
+        - name: Pass in User Data Offline
+          items: 
+            - name: Overview
+              href: pass-in-user-data-offline.md
+            - name: Map User IDs with getUID and mapUID
+              href: user-id-mapping-with-getuid-and-mapuid.md
+            - name: View User Mapping Visual and Walk-Through
+              href: user-mapping-visual-and-walk-through.md
+        - name: Location Manager
+          items:
+            - name: Overview
+              href: location-manager.md
+            - name: Geo Radius Segments
+              href: geo-radius-segments.md
   - name: Microsoft Inventory
     items:
     - name: Buy Microsoft Inventory
@@ -291,8 +280,6 @@
       href: buying-microsoft-video-inventory.md
     - name: Buy Microsoft Windows 3rd Party AppNetwork Inventory
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
-  - name: Political Advertising
-    href: political-advertising.md
   - name: Political Advertising
     href: political-advertising.md
 - name: Monitoring

@@ -23,7 +23,7 @@ landingContent:
             url: xcs-logging-in-to-the-customer-support-portal.md
           - text: Customer Support Portal - Microsoft Identity Platform Login
             url: microsoft-identity-platform-login.md
-  - title: Functionalites
+  - title: Functionalities
     linkLists:
       - linkListType: reference
         links:           

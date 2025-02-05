@@ -239,7 +239,7 @@
                   href: working-with-segments.md
                 - name: Audience Data
                   items:
-                    - name: Onboard your Audience Data
+                    - name: Onboard Your Audience Data
                       href: onboarding-your-audience-data.md
                     - name: Client-side Segmentation
                       href: client-side-segmentation.md
@@ -249,7 +249,7 @@
                       href: export-a-segment-pixel.md
                 - name: Birthday Cookies
                   href: birthday-cookies.md
-                - name: Segment pixels - Advanced
+                - name: Segment Pixels - Advanced
                   href: segment-pixels-advanced.md
                 - name: Pass in User Data Offline
                   items:
@@ -275,13 +275,14 @@
               href: data-marketplace-partners-and-contact-information.md
             - name: Data Cost Calculation Mechanics
               href: data-cost-calculation-mechanics.md
-  - name: Microsoft Inventory
-    items:
+
+- name: Microsoft Inventory
+  items:
     - name: Buy Microsoft Inventory
       href: buying-microsoft-inventory.md
     - name: Buy MSN Inventory
       href: buying-msn-inventory.md
-    - name: Buy Microsoft Casual Games (Windows O&O Apps)
+    - name: Buy Microsoft Casual Games (Windows O and O Apps)
       href: buying-microsoft-casual-games-windows-o-o-apps.md
     - name: Buy Microsoft Deals
       href: buying-microsoft-deals.md

@@ -8,42 +8,42 @@ ms.date: 01/13/2025
 
 # Open a new case
 
-A case represents a customer’s question, feedback, or issue. The Microsoft Advertising support team uses cases to interact with customers and track issue resolutions. 
+A case represents a customer’s question, feedback, or an issue. The Microsoft Advertising support team uses cases to interact with customers and track issue resolutions. 
 > [!NOTE] 
-> Customers must assign a single point of contact with the authority to submit tickets on their behalf. 
+> Customers must assign a single point of contact with the authority to submit cases on their behalf. 
 
  
 ## Explore knowledge base 
 
 Before submitting a support request, explore the available documentation on product offerings, developer resources, financial tools, and additional services. 
-The knowledge base provides articles that address common questions, troubleshoot issues, and guide you through common tasks. Knowledge base articles link to [Microsoft Learn](https://learn.microsoft.com/en-us/xandr/) for more detailed information, offering comprehensive overviews of concepts, features, product documentation, webinars, and training materials. 
+The knowledge base provides articles that addresses common questions, troubleshoot issues, and guide you through common tasks. Knowledge base articles link to [Microsoft Learn](https://learn.microsoft.com/en-us/xandr/) for more detailed information, offering comprehensive overviews of concepts, features, product documentation, webinars, and training materials. 
 
 
 ## Steps to open a new case 
 
 To open a new case with the Microsoft Advertising support team:
 
-- Log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com)
+- Log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com).
 - In the top-right corner of the page, click **Contact Support** to open a new case. 
 - Select the category that best describes your case: 
-    - **Audit and Anti-Malvertising** – Technical support for issues like such as Creative and domain audits or rejections. 
-    - **Product** - Technical support for products like Microsoft Invest, Microsoft Monetize, Microsoft Curate, Yield Analytics (formerly Yieldex), or Creative inquires. 
+    - **Audit and Anti-Malvertising** – Technical support for issues such as Creative or Domain audits or rejections. 
+    - **Product support** - Technical support for products such as Microsoft Invest, Microsoft Monetize, Microsoft Curate, Yield Analytics (formerly Yieldex), or Creative inquires. 
     - **Bidder, SSP & Data Integrations support** - Technical support for Bidder and Bidder API, Data management and taxonomy, and External supply. 
-    - **Client finance** - Technical support for issues like General billing requests, or questions around Credit, Collections, and Fraud claims. 
-    - **Account services** - Technical support for services like Google Ad Manager seat requests, Client requested terminations, Feature enablement or Credit and debit requests. 
-    - **Programmatic Guaranteed Deals** - Technical support for GAM/AdX Deals or New PG Deal Requests. To open a case for programmatic guaranteed deals, see [here]. 
+    - **Client finance** - Technical support for issues such as General billing requests, or questions around Credit, Collections, and Fraud claims. 
+    - **Account services** - Technical support for services such as Google Ad Manager seat requests, Client requested terminations, Feature enablement or Credit and debit requests. 
+    - **Programmatic Guaranteed Deals** - Technical support for GAM/AdX Deals or New PG Deal Requests. To open a case for programmatic guaranteed deals, see [Open a new case for Programmatic Guaranteed Deal](#open-a-new-case-for-programmatic-guaranteed-deal). 
 - From the dropdown menu, select a support topic that best fits your case. 
 - Enter the details of the case, such as: 
-    - **Subject:** Enter a title for the case you are submitting 
+    - **Subject:** Enter a title for the case you are submitting.
     - **Description:** Enter a brief description of the issue you are submitting. Include all necessary information to help reproduce the issue. Typically, this includes: 
         - A detailed description of the issue and its impact on your business goals. 
-        - Relevant object IDs (e.g., bidder ID, member ID, creative ID). 
-        - Steps to reproduce the issue (e.g., test pages or URLs). 
+        - Relevant object IDs (For example, Bidder ID, Member ID, Creative ID). 
+        - Steps to reproduce the issue (For example, test pages or URLs). 
         - Screenshots for UI-related problems. 
-        - Browser and operating system details (including version numbers). 
+        - Browser and Operating system details (including version numbers). 
         - Enter all required details and an emergency contact phone number for Critical outages. 
   > [!NOTE]
-  > - For Domain audit appeals, submit a separate case for each unique domain being appealed. Appeals for domains not in **Rejected** status will not be prioritized. Decisions not to audit will not be overturned via appeals. 
+  > - For Domain audit appeals, submit a separate case for each unique Domain being appealed. Appeals for Domains not in **Rejected** status will not be prioritized. Decisions not to audit will not be overturned via appeals. 
   > - For Domain or Creative rejection appeals, provide details on the updates made to address the policy violation. 
     - **Appeal justification** (when **Appeal a Creative** or **Domain rejection** is selected)**:** For appealing a Domain or Creative rejection, please share the updates made to your Creative or Domain to address the policy violation. 
     - **Severity:** Select the severity of the case: 
@@ -58,14 +58,14 @@ To open a new case with the Microsoft Advertising support team:
   > - Unavailable reporting or reports delayed by more than six hours.  
        
     - **Add related member ID(s):** From the drop down menu, select the **Member ID** related to your case.  
-    - **Attachments:** Select **Browse** to upload files or drag and drop them into the attachment section. Attach relevant files, such as error logs, problematic creatives, reports, or screenshots that may help troubleshoot the case. 
+    - **Attachments:** Select **Browse** to upload files or drag and drop them into the attachment section. Attach relevant files, such as error logs, problematic Creatives, reports, or screenshots that may help troubleshoot the case. 
   > [!NOTE] 
   > Maximum file size: 300MB 
     - **CC emails:** In the **Contact Information** section, you can add up to ten email addresses to receive case updates. Ensure the email addresses are correct, separated by commas, and that the recipients wish to receive updates.  
   > [!NOTE] 
-  > If anyone you CC’d wants a portal account, contact your Xandr Account Representative. 
+  > If anyone on the CC'd list requires a portal account, contact your Xandr Account Representative.
     - **Country of submission:** From the dropdown, select your country from for case routing. 
-- Once all required fields are completed, select **Submit**. A **Case ID** will be generated, and a confirmation email will be sent. 
+- Once all required fields are completed, select **Submit**. A **Case ID** will be generated, and you will receive a confirmation email.  
 
 ### Open a new case for Programmatic Guaranteed Deal 
 
@@ -73,44 +73,107 @@ To open a new case with the Microsoft Advertising support team:
 - In the top-right corner of the page, click **Contact Support** to open a new case. 
 - Select the category **Programmatic Guaranteed Deals**
 - From the dropdown menu, select a support topic that best fits your case:
-    - GAM/AdX Deals: Technical support provided for GAM/AdX deals by mapping and accepting deals on your behalf that target the AppNexus seat in the Google Ad Manager UI. We ensure accurate mapping within the Xandr system to your seat. 
-    - New PG Deal creation:  Technical support provided to set up a Programmatic Guaranteed (PG) deal in the Xandr/MSFT system based on the details you provide. 
-    - Edit existing PG Deal: Technical support provided to edit an existing Programmatic Guaranteed (PG) deal in the Xandr/MSFT system based on the details from your negotiated deal. 
+    - **GAM/AdX Deals:** Technical support provided for GAM/AdX deals by mapping and accepting deals on your behalf that target the AppNexus seat in the Google Ad Manager UI. We ensure accurate mapping within the Xandr system to your seat. 
+    - **New PG Deal creation:** Technical support provided to set up a Programmatic Guaranteed (PG) deal in the Xandr Microsoft system based on the details you provide. 
+    - **Edit existing PG Deal:** Technical support provided to edit an existing Programmatic Guaranteed (PG) deal in the Xandr or Microsoft system based on the details from your negotiated deal. 
   > [!NOTE]
-  > Please ensure to include the Seller, Deal name, Deal ID, Deal start/End date, Time-zone, CPM (Ask Price), Impression count, Budget and Buyer ID details.
-- Enter the details of the case, such as: 
-    - Subject: Enter a title for the case you are submitting 
-    - Description: Enter a brief description of the case you are submitting 
-    - Deal proposal name: For GAM/AdX Deals only. 
-    - Deal proposal ID: For GAM/AdX Deals only. 
-    - SSP: Supply-Side Platform 
-    - Deal name: Enter the name of the Deal you want to create or edit. 
-    - Deal ID: Enter the ID of the Deal you want to create or edit.  
-    - Deal start date: Enter the Deal start date. Use 23:59:00 for both Start and End Times unless specified. 
-    - Deal end date: Enter the Deal end date. Use 23:59:00 for both Start and End Times unless specified. 
-    - Time zone: 
-    - Attachment: 
-    - Currency: 
-    - Buyer Member ID: For New PG Deal Request only.
-    - CPM: 
-- **Severity:** Select the severity of the case: 
-        - This is major with no workaround; I am blocked. 
-        - This is major, but there is a workaround. 
-        - This is minor. 
-        - This is a critical outage. Please notify all necessary team members immediately. 
+  > Please ensure to include the Seller name, Deal name, Deal ID, Deal start/End date, Time-zone, CPM (Ask price), Impression count, Budget and Buyer ID details.
+- Enter the case details based on the support topic selected in the previous step:
+
+- **GAM/AdX Deals:** <br>
+Enter the following details for GAM/AdX Deals: 
+  - **Subject:** Enter a title for the case you are submitting.
+  - **Buyer Member ID:** Enter the Buyer Member ID that is associated with the deal.
+  - **Description:** Enter a brief description of the case you are submitting.
+  - **Deal proposal name:** Enter the Deal proposal name.
+  - **Deal proposal ID:** Enter the Deal proposal ID.
+  - **Priority:** Select the priority of the case: 
+    - This is major with no workaround; I am blocked. 
+    - This is major, but there is a workaround. 
+    - This is minor. 
+    - This is a critical outage. Please notify all necessary team members immediately. 
   > [!IMPORTANT]
   > Outage alerts are displayed on the portal when you log in, if you are experiencing an outage and don't see an alert, you can report the outage. A critical outage should be created only during the following conditions:
   > - Significant loss of ad serving or severe ad serving delays.  
   > - Inaccessible UI or consistent API timeouts. 
   > - Unavailable reporting or reports delayed by more than six hours.  
-- **Add related member ID(s):** From the drop down menu, select the Member ID related to your case. 
-- **Attachments:** Select Browse to upload files or drag and drop them into the attachment section. Attach relevant files, such as error logs, problematic creatives, reports, or screenshots that may help troubleshoot the case. 
+  - **Add related member ID(s):** From the drop down menu, select the Member ID related to your case. 
+  - **Attachment:** Select **Browse** to upload files or drag and drop them into the attachment section.
   > [!NOTE]
-  > Maximum file size: 300MB 
-- **CC emails:** In the Contact Information section, you can add up to ten email addresses to receive case updates. Ensure the email addresses are correct, separated by commas, and that the recipients wish to receive updates. You can update the CC email addresses after submitting the case, or request an agent to do so. 
+  > Maximum file size: 300MB.
+  - **Company:** Enter the name of your company.
+  - **CC emails:** In the Contact Information section, you can add up to ten email addresses to receive case updates. Ensure the email addresses are correct, separated by commas, and that the recipients wish to receive updates. You can update the CC email addresses after submitting the case, or request an agent to do so. 
   > [!NOTE] 
-  > If anyone you CC’d wants a portal account, contact your Xandr Account Representative. 
-- **Country of submission:** From the dropdown, select your country from for case routing. 
+  > If anyone on the CC'd list requires a portal account, contact your Xandr Account Representative.
+  - **Country of submission:** From the dropdown, select your country from for case routing. 
+
+- **New PG Deal request:** <br>
+Enter the following details for New PG Deal request: 
+  - **Subject:** Enter a title for the case you are submitting.
+  - **SSP:** From the dropdown menu, select the Supply-Side Platform (SSP).
+  - **Deal name:** Enter the name of the Deal you want to create or edit. 
+  - **Deal ID:** Enter the ID of the Deal you want to create or edit. 
+  - **Deal start date:** Enter the Deal start date. Please ensure to use `23:59:00` for Start time unless specified. 
+  - **Deal end date:** Enter the Deal end date. Please ensure to use `23:59:00` for End time unless specified. 
+  - **Time zone:** From the dropdown menu, select the appropriate timezone.
+  - **CPM (Cost Per Mille):** Enter a CPM value. This refers to the CPM value paid for every 1,000 impressions.
+  - **Impression count:** Enter the impression count.
+  - **Currency:** From the dropdown menu, select the appropriate currency.
+  - **Buyer Member ID:** Enter the Buyer Member ID that is associated with the deal.
+  - **Description:** Enter a brief description of the case you are submitting.
+  - **Priority:** Select the priority of the case: 
+    - This is major with no workaround; I am blocked. 
+    - This is major, but there is a workaround. 
+    - This is minor. 
+    - This is a critical outage. Please notify all necessary team members immediately.
+  > [!IMPORTANT]
+  > Outage alerts are displayed on the portal when you log in, if you are experiencing an outage and don't see an alert, you can report the outage. A critical outage should be created only during the following conditions:
+  > - Significant loss of ad serving or severe ad serving delays.  
+  > - Inaccessible UI or consistent API timeouts. 
+  > - Unavailable reporting or reports delayed by more than six hours.  
+  - **Add related member ID(s):** From the drop down menu, select the Member ID related to your case. 
+  - **Attachment:** Select **Browse** to upload files or drag and drop them into the attachment section.
+  > [!NOTE]
+  > Maximum file size: 300MB.
+  - **Company:** Enter the name of your company.
+  - **CC emails:** In the **Contact information** section, you can add up to ten email addresses to receive case updates. Ensure the email addresses are correct, separated by commas, and that the recipients wish to receive updates. You can update the CC email addresses after submitting the case, or request an agent to do so. 
+  > [!NOTE] 
+  > If anyone on the CC'd list requires a portal account, contact your Xandr Account Representative. 
+  - **Country of submission:** From the dropdown, select your country from for case routing. 
+
+- **Edit existing PG Deal:** <br>
+Enter the following details to Edit an existing PG Deal: 
+  - **Subject:** Enter a title for the case you are submitting.
+  - **SSP:** From the dropdown menu, select the Supply-Side Platform (SSP).
+  - **Deal name:** Enter the name of the Deal you want to create or edit. 
+  - **Deal ID:** Enter the ID of the Deal you want to create or edit. 
+  - **Deal start date:** Enter the Deal start date. Please ensure to use `23:59:00` for Start time unless specified. 
+  - **Deal end date:** Enter the Deal end date. Please ensure to use `23:59:00` for End time unless specified. 
+  - **Time zone:** From the dropdown menu, select the appropriate timezone.
+  - **CPM (Cost Per Mille):** Enter a CPM value. This refers to the CPM value paid for every 1,000 impressions.
+  - **Impression count:** Enter the impression count.
+  - **Currency:** From the dropdown menu, select the appropriate currency.
+  - **Buyer Member ID:** Enter the Buyer Member ID that is associated with the deal.
+  - **Description:** Enter a brief description of the case you are submitting.
+  - **Priority:** Select the priority of the case: 
+    - This is major with no workaround; I am blocked. 
+    - This is major, but there is a workaround. 
+    - This is minor. 
+    - This is a critical outage. Please notify all necessary team members immediately.
+  > [!IMPORTANT]
+  > Outage alerts are displayed on the portal when you log in, if you are experiencing an outage and don't see an alert, you can report the outage. A critical outage should be created only during the following conditions:
+  > - Significant loss of ad serving or severe ad serving delays.  
+  > - Inaccessible UI or consistent API timeouts. 
+  > - Unavailable reporting or reports delayed by more than six hours.  
+  - **Add related member ID(s):** From the drop down menu, select the Member ID related to your case. 
+  - **Attachment:** Select **Browse** to upload files or drag and drop them into the attachment section.
+  > [!NOTE]
+  > Maximum file size: 300MB.
+  - **Company:** Enter the name of your company.
+  - **CC emails:** In the **Contact information** section, you can add up to ten email addresses to receive case updates. Ensure the email addresses are correct, separated by commas, and that the recipients wish to receive updates. You can update the CC email addresses after submitting the case, or request an agent to do so. 
+  > [!NOTE] 
+  > If anyone on the CC'd list requires a portal account, contact your Xandr Account Representative.
+  - **Country of submission:** From the dropdown, select your country from for case routing.
 - Once all required fields are completed, select **Submit**. A **Case ID** will be generated, and a confirmation email will be sent. 
 
 <!---
@@ -203,4 +266,5 @@ An on-call team will respond immediately for outages. For non-emergency cases, C
 
 ## Related topic
 
-[Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
+- [Login to Microsoft Advertising Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)
+- [Microsoft Advertising Customer Support Portal FAQs](xcs-customer-support-portal-faqs.md)

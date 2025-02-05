@@ -17,12 +17,21 @@ landingContent:
         links:
           - text: Overview
             url: xcs-xandr-customer-support-home.md
-          - text: Login to Customer Support Portal
-            url: xcs-logging-in-to-the-customer-support-portal.md
       - linkListType: how-to-guide
         links:
-          - text: Report an Outage
-            url: xcs-reporting-outages.md
+          - text: Login to Micosoft Advertising Customer Support portal
+            url: xcs-logging-in-to-the-customer-support-portal.md
+          - text: Customer Support Portal - Microsoft Identity Platform Login
+            url: microsoft-identity-platform-login.md
+  - title: Functionalites
+    linkLists:
+      - linkListType: reference
+        links:           
           - text: Open a New Case
             url: xcs-opening-a-new-case.md
+          - text: Update a Case
+            url: xcs-updating-a-case.md
+          - text: FAQs
+            url: xcs-customer-support-portal-faqs.md
  
+

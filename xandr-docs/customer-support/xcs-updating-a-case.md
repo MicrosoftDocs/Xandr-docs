@@ -12,42 +12,43 @@ Log in to the [Microsoft Advertising Customer Support Portal](support.ads.micr
 
 ## View a case
 
-To view an existing case,  
-- Select the case link based on the assigned **Case ID** from the email confirmation, or in the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied.
+To view an existing case: 
+- In the top-left corner of the portal home page, select the **My cases** link, which displays the following:
     - **My Cases** - Displays all your open cases. 
     - **CC Cases** - Displays the cases where you are copied. 
 - When you select a case tab, a list of matching cases will appear, sorted by the date opened in ascending order. Each case will display the case number, status, subject, and the date and time of creation. 
-- Select any case to view the complete case details, including comments and attachments. You can also see the number of closed cases. 
+- Select any case to view the complete case details, including comments and attachments. 
+- You can also see the number of closed cases. 
 
 ### Add a comment 
 
 To add a comment on any of your cases: 
 
-- Select the case link based on the assigned **Case ID** from the email confirmation, or in the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
+- In the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
 - Select the case where you want to add your comment. 
 - In the bottom pane, add your message in the chat window and select the **Enter** button to submit your comment. 
-- The new comment will appear in the case message thread, and you along with any email addresses you’ve added as CC will receive an email confirmation of the comment. 
+- The new comment will appear in the case message thread, and you along with any email addresses you’ve added as CC will receive an email notification of the comment. 
 
 ### Add an attachment 
 To add an attachment to a case: 
 
-- Select the case link based on the assigned **Case ID** from the email confirmation, or in the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
+- In the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
 - Select the case where you want to upload the attachment. 
-- In the bottom pane, select Upload to attach the file to the case. 
+- In the bottom pane, select **Upload** to attach the file to the case. 
 
 ### Close an open case 
 
 To close an Active case:  
 
-- Select the case link based on the assigned **Case ID** from the email confirmation, or in the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
-- Select the case you want to close. 
+- In the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
+- Select the case you want to Close. 
 - On the top right corner of the page, select **Close** case. The case status updates to **Closed**, and the button changes to **Re-open** case. 
 
 ### Re-open a closed case 
 
 To Re-open a Closed case:  
 
-- Select the case link based on the assigned **Case ID** from the email confirmation, or in the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied.  
+- In the top-left corner of the portal home page, select the **My cases** link, which displays a list of all the open cases and the cases on which you are copied. 
 - Select the case you want to Re-open. 
 - On the top right corner of the page, select Re-open case. The case status updates to **Reopened**, and the button changes to **Close** case. 
 > [!NOTE] 
@@ -109,4 +110,7 @@ The status in the case header changes to "Open" and the button changes to read *
 
 ## Related topic
 
-[Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
+- [Login to Microsoft Advertising Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)
+- [Open a new case](xcs-opening-a-new-case.md)
+- [Microsoft Advertising Customer Support Portal FAQs](xcs-customer-support-portal-faqs.md)
+

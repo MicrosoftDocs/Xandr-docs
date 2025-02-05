@@ -227,7 +227,7 @@
       href: video-targeting.md
     - name: Viewability Targeting
       href: viewability-targeting.md
-  - name: Data
+- name: Data
   items:
     - name: First-Party Data
       items:
@@ -275,14 +275,13 @@
               href: data-marketplace-partners-and-contact-information.md
             - name: Data Cost Calculation Mechanics
               href: data-cost-calculation-mechanics.md
-
-- name: Microsoft Inventory
-  items:
+  - name: Microsoft Inventory
+    items:
     - name: Buy Microsoft Inventory
       href: buying-microsoft-inventory.md
     - name: Buy MSN Inventory
       href: buying-msn-inventory.md
-    - name: Buy Microsoft Casual Games (Windows O and O Apps)
+    - name: Buy Microsoft Casual Games (Windows O&O Apps)
       href: buying-microsoft-casual-games-windows-o-o-apps.md
     - name: Buy Microsoft Deals
       href: buying-microsoft-deals.md
@@ -292,6 +291,8 @@
       href: buying-microsoft-video-inventory.md
     - name: Buy Microsoft Windows 3rd Party AppNetwork Inventory
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
+  - name: Political Advertising
+    href: political-advertising.md
   - name: Political Advertising
     href: political-advertising.md
 - name: Monitoring

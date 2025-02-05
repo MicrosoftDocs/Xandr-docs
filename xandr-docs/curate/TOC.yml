@@ -154,7 +154,17 @@
     - name: Update Insertion Orders
       href: update-insertion-orders.md
   - name: Currency Support
-    href: currency-support.md  
+    href: currency-support.md
+  - name: Universal Pixel
+    items:
+    - name: Overview
+      href: the-universal-pixel.md
+    - name: Universal Pixel Basic Implementation
+      href: universal-pixel-basic-implementation.md
+    - name: Universal Pixel Code Structure
+      href: universal-pixel-code-structure.md
+    - name: Universal Pixel Consent Mode
+      href: set-up-consent-mode-in-universal-pixel.md
     - name: Events and Parameters
       items:
       - name: Use Events and Parameters
@@ -216,38 +226,8 @@
     - name: Video Targeting
       href: video-targeting.md
     - name: Viewability Targeting
-      href: viewability-targeting.md  
-  - name: Microsoft Inventory
-    items:
-    - name: Buy Microsoft Inventory
-      href: buying-microsoft-inventory.md
-    - name: Buy MSN Inventory
-      href: buying-msn-inventory.md
-    - name: Buy Microsoft Casual Games (Windows O&O Apps)
-      href: buying-microsoft-casual-games-windows-o-o-apps.md
-    - name: Buy Microsoft Deals
-      href: buying-microsoft-deals.md
-    - name: Buy Microsoft Outlook.com Inventory
-      href: buying-microsoft-outlook-com-inventory.md
-    - name: Buy Microsoft Video Inventory
-      href: buying-microsoft-video-inventory.md
-    - name: Buy Microsoft Windows 3rd Party AppNetwork Inventory
-      href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
-  - name: Political Advertising
-    href: political-advertising.md
-  - name: Data
-    item: 
-      - name: Universal Pixel
-        items:
-        - name: Overview
-          href: the-universal-pixel.md
-        - name: Universal Pixel Basic Implementation
-          href: universal-pixel-basic-implementation.md
-        - name: Universal Pixel Code Structure
-          href: universal-pixel-code-structure.md
-        - name: Universal Pixel Consent Mode
-          href: set-up-consent-mode-in-universal-pixel.md
-- name: Work with Segments
+      href: viewability-targeting.md
+  - name: Work with Segments
     items:
     - name: Overview
       href: working-with-segments.md
@@ -279,6 +259,24 @@
         href: location-manager.md
       - name: Geo Radius Segments
         href: geo-radius-segments.md
+  - name: Microsoft Inventory
+    items:
+    - name: Buy Microsoft Inventory
+      href: buying-microsoft-inventory.md
+    - name: Buy MSN Inventory
+      href: buying-msn-inventory.md
+    - name: Buy Microsoft Casual Games (Windows O&O Apps)
+      href: buying-microsoft-casual-games-windows-o-o-apps.md
+    - name: Buy Microsoft Deals
+      href: buying-microsoft-deals.md
+    - name: Buy Microsoft Outlook.com Inventory
+      href: buying-microsoft-outlook-com-inventory.md
+    - name: Buy Microsoft Video Inventory
+      href: buying-microsoft-video-inventory.md
+    - name: Buy Microsoft Windows 3rd Party AppNetwork Inventory
+      href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
+  - name: Political Advertising
+    href: political-advertising.md
 - name: Monitoring
   items:
   - name: Overview

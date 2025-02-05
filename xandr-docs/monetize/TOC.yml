@@ -473,107 +473,7 @@
       href: line-item-budgeting-vs-campaign-budgeting.md
     - name: Line Item Pacing vs. Campaign Pacing
       href: line-item-pacing-vs-campaign-pacing.md
-  - name: Segments
-    items:
-    - name: Working with Segments
-      href: working-with-segments.md
-    - name: Onboarding Your Audience Data
-      items:
-      - name: Overview
-        href: onboarding-your-audience-data.md
-      - name: Client-Side Segmentation
-        href: client-side-segmentation.md
-      - name: Create a Segment Pixel
-        href: create-a-segment-pixel.md
-      - name: Export a Segment Pixel
-        href: export-a-segment-pixel.md
-    - name: Birthday Cookies
-      href: birthday-cookies.md
-    - name: Segment Pixels - Advanced
-      href: segment-pixels-advanced.md
-    - name: Segment Modifier
-      items:
-      - name: Overview
-        href: segment-modifier.md
-      - name: Segment Modifier Testing Guidelines
-        href: segment-modifier-testing-guidelines.md
-    - name: Pass in User Data Offline
-      items:
-      - name: Overview
-        href: pass-in-user-data-offline.md
-      - name: User ID Mapping
-        href: user-id-mapping-with-getuid-and-mapuid.md
-      - name: User Mapping Visual
-        href: user-mapping-visual-and-walk-through.md
-      - name: Server Side Cookie Store
-        href: server-side-cookie-store.md
-    - name: Location Manager
-      items:
-      - name: Overview
-        href: location-manager.md
-      - name: Geo Radius Segments
-        href: geo-radius-segments.md
-  - name: The Universal Pixel
-    items:
-    - name: Overview
-      href: the-universal-pixel.md
-    - name: Universal Pixel Basic Implementation
-      href: universal-pixel-basic-implementation.md
-    - name: Universal Pixel Code Structure
-      href: universal-pixel-code-structure.md
-    - name: Universal Pixel Consent Mode
-      href: set-up-consent-mode-in-universal-pixel.md
-    - name: Events and Parameters
-      items:
-      - name: Using Events and Parameters
-        href: using-events-and-parameters.md
-      - name: Create Event Code from the UI
-        href: create-event-code-from-the-ui.md
-      - name: Create Event Code Manually
-        href: create-event-code-manually.md
-      - name: Standard Events and Parameters
-        href: standard-events-and-parameters.md
-      - name: Create Custom Events and Parameters
-        href: create-custom-events-and-parameters.md
-    - name: Universal Pixel Audiences and Conversions
-      items:
-      - name: Overview
-        href: universal-pixel-audiences-and-conversions.md
-      - name: Set Up Audiences with Universal Pixel
-        href: set-up-audiences-with-universal-pixel.md
-      - name: Set Up Conversions with Universal Pixel
-        href: set-up-conversions-with-universal-pixel.md
-      - name: Universal Pixel Rule Conditions
-        href: universal-pixel-rule-conditions.md
-    - name: Universal Pixel Reporting
-      href: universal-pixel-reporting.md
-    - name: Universal Pixel Object Limits
-      href: universal-pixel-object-limits.md
-  - name: Conversion Pixels
-    items:
-    - name: Working with Conversion Pixels
-      href: working-with-conversion-pixels.md
-    - name: Create a Conversion Pixel
-      href: create-a-conversion-pixel.md
-    - name: Export Conversion Pixels
-      href: export-conversion-pixels.md
-    - name: Test Conversion Pixel and Attribution
-      href: test-conversion-pixel-and-attribution.md
-    - name: Conversion Attribution
-      items:
-      - name: Overview
-        href: conversion-attribution.md
-      - name: Offline Conversion Attribution
-        href: offline-conversion-attribution.md
-    - name: Conversion Pixels Advanced
-      href: conversion-pixels-advanced.md
-    - name: Reporting on Conversions
-      href: reporting-on-conversions.md
-    - name: Server-Side Conversion Pixels
-      href: server-side-conversion-pixels.md
-    - name: Set Up a Combined Segment and Conversion Pixel
-      href: set-up-a-combined-segment-and-conversion-pixel.md
-  - name: Impressions and Click Trackers
+    - name: Impressions and Click Trackers
     items:
     - name: Working with Impression and Click Trackers
       href: working-with-impression-and-click-trackers.md
@@ -838,7 +738,123 @@
   - name: Video Targeting
     href: video-targeting.md
   - name: Viewability Targeting
-    href: viewability-targeting.md           
+    href: viewability-targeting.md
+  - name: Data
+  items:
+  - name: First-Party Data
+    items:
+    - name: Segments
+      items:
+      - name: Working with Segments
+        href: working-with-segments.md
+      - name: Onboarding Your Audience Data
+        items:
+        - name: Overview
+          href: onboarding-your-audience-data.md
+        - name: Client-Side Segmentation
+          href: client-side-segmentation.md
+        - name: Create a Segment Pixel
+          href: create-a-segment-pixel.md
+        - name: Export a Segment Pixel
+          href: export-a-segment-pixel.md
+      - name: Birthday Cookies
+        href: birthday-cookies.md
+      - name: Segment Pixels - Advanced
+        href: segment-pixels-advanced.md
+      - name: Segment Modifier
+        items:
+        - name: Overview
+          href: segment-modifier.md
+        - name: Segment Modifier Testing Guidelines
+          href: segment-modifier-testing-guidelines.md
+      - name: Pass in User Data Offline
+        items:
+        - name: Overview
+          href: pass-in-user-data-offline.md
+        - name: User ID Mapping
+          href: user-id-mapping-with-getuid-and-mapuid.md
+        - name: User Mapping Visual
+          href: user-mapping-visual-and-walk-through.md
+        - name: Server Side Cookie Store
+          href: server-side-cookie-store.md
+      - name: Location Manager
+        items:
+        - name: Overview
+          href: location-manager.md
+        - name: Geo Radius Segments
+          href: geo-radius-segments.md
+    - name: The Universal Pixel
+      items:
+      - name: Overview
+        href: the-universal-pixel.md
+      - name: Universal Pixel Basic Implementation
+        href: universal-pixel-basic-implementation.md
+      - name: Universal Pixel Code Structure
+        href: universal-pixel-code-structure.md
+      - name: Universal Pixel Consent Mode
+        href: set-up-consent-mode-in-universal-pixel.md
+      - name: Events and Parameters
+        items:
+        - name: Using Events and Parameters
+          href: using-events-and-parameters.md
+        - name: Create Event Code from the UI
+          href: create-event-code-from-the-ui.md
+        - name: Create Event Code Manually
+          href: create-event-code-manually.md
+        - name: Standard Events and Parameters
+          href: standard-events-and-parameters.md
+        - name: Create Custom Events and Parameters
+          href: create-custom-events-and-parameters.md
+      - name: Universal Pixel Audiences and Conversions
+        items:
+        - name: Overview
+          href: universal-pixel-audiences-and-conversions.md
+        - name: Set Up Audiences with Universal Pixel
+          href: set-up-audiences-with-universal-pixel.md
+        - name: Set Up Conversions with Universal Pixel
+          href: set-up-conversions-with-universal-pixel.md
+        - name: Universal Pixel Rule Conditions
+          href: universal-pixel-rule-conditions.md
+      - name: Universal Pixel Reporting
+        href: universal-pixel-reporting.md
+      - name: Universal Pixel Object Limits
+        href: universal-pixel-object-limits.md
+    - name: Conversion Pixels
+      items:
+      - name: Working with Conversion Pixels
+        href: working-with-conversion-pixels.md
+      - name: Create a Conversion Pixel
+        href: create-a-conversion-pixel.md
+      - name: Export Conversion Pixels
+        href: export-conversion-pixels.md
+      - name: Test Conversion Pixel and Attribution
+        href: test-conversion-pixel-and-attribution.md
+      - name: Conversion Attribution
+        items:
+        - name: Overview
+          href: conversion-attribution.md
+        - name: Offline Conversion Attribution
+          href: offline-conversion-attribution.md
+      - name: Conversion Pixels Advanced
+        href: conversion-pixels-advanced.md
+      - name: Reporting on Conversions
+        href: reporting-on-conversions.md
+      - name: Server-Side Conversion Pixels
+        href: server-side-conversion-pixels.md
+      - name: Set Up a Combined Segment and Conversion Pixel
+        href: set-up-a-combined-segment-and-conversion-pixel.md   
+  - name: Third-Party Data
+    items:
+    - name: Data Marketplace
+      items:
+      - name: Data Marketplace Overview
+        href: data-marketplace-overview.md
+      - name: Data Marketplace Partners and Contact Information
+        href: data-marketplace-partners-and-contact-information.md
+      - name: Data Cost Calculation Mechanics
+        href: data-cost-calculation-mechanics.md
+      - name: Data Marketplace FAQ(s)
+        href: data-marketplace-faq.md             
 - name: Creatives
   items: 
   - name: Working with Creatives

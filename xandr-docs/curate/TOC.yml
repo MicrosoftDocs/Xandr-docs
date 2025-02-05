@@ -227,6 +227,12 @@
       href: video-targeting.md
     - name: Viewability Targeting
       href: viewability-targeting.md
+  - name: Data
+  items:
+  - name: First-Party Data
+    items:
+    - name: Segments
+      items:
   - name: Work with Segments
     items:
     - name: Overview
@@ -259,6 +265,16 @@
         href: location-manager.md
       - name: Geo Radius Segments
         href: geo-radius-segments.md
+  - name: Third-Party Data
+    items:
+    - name: Data Marketplace
+      items:
+      - name: Data Marketplace Overview
+        href: data-marketplace-overview.md
+      - name: Data Marketplace Partners and Contact Information
+        href: data-marketplace-partners-and-contact-information.md
+      - name: Data Cost Calculation Mechanics
+        href: data-cost-calculation-mechanics.md
   - name: Microsoft Inventory
     items:
     - name: Buy Microsoft Inventory

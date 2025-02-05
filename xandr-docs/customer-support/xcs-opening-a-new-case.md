@@ -16,14 +16,14 @@ A case represents a customer’s question, feedback, or an issue. The Microsoft 
 ## Explore knowledge base 
 
 Before submitting a support request, explore the available documentation on product offerings, developer resources, financial tools, and additional services. 
-The knowledge base provides articles that addresses common questions, troubleshoot issues, and guide you through common tasks. Knowledge base articles link to [Microsoft Learn](https://learn.microsoft.com/en-us/xandr/) for more detailed information, offering comprehensive overviews of concepts, features, product documentation, webinars, and training materials. 
+The knowledge base provides articles that addresses common questions, troubleshoot issues, and guide you through common tasks. Knowledge base articles link to [Microsoft Learn](https://learn.microsoft.com/xandr) for more detailed information, offering comprehensive overviews of concepts, features, product documentation, webinars, and training materials. 
 
 
 ## Steps to open a new case 
 
 To open a new case with the Microsoft Advertising support team:
 
-- Log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com).
+- Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 - In the top-right corner of the page, click **Contact Support** to open a new case. 
 - Select the category that best describes your case: 
     - **Audit and Anti-Malvertising** – Technical support for issues such as Creative or Domain audits or rejections. 
@@ -69,7 +69,7 @@ To open a new case with the Microsoft Advertising support team:
 
 ### Open a new case for Programmatic Guaranteed Deal 
 
-- Log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com)
+- Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com)
 - In the top-right corner of the page, click **Contact Support** to open a new case. 
 - Select the category **Programmatic Guaranteed Deals**
 - From the dropdown menu, select a support topic that best fits your case:

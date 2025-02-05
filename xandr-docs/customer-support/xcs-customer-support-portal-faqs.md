@@ -3,12 +3,12 @@ title: Microsoft Advertising Customer Support Portal FAQs
 description: Explore FAQs on the Microsoft Advertising Customer Support Portal, providing insights into common queries for better understanding.
 ms.custom: customer-support
 ms.author: shsrinivasan
-ms.date: 01/13/2025
+ms.date: 01/12/2025
 ---
 
 # Microsoft Advertising customer support portal FAQs 
 
-Frequently Asked Questions about Microsoft Advertising Customer Support Portal FAQs: 
+Frequently Asked Questions about Microsoft Advertising Customer Support Portal: 
 
 ## Why do I need to use the same email address for help.xandr.com and my Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts?
 

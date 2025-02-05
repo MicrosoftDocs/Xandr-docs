@@ -8,7 +8,7 @@ ms.date: 01/13/2025
 
 # Update a case
 
-Log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) to update your case, view all your cases, check the cases where you've been copied, close or reopen cases, and add comments or attachments. 
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to update your case, view all your cases, check the cases where you've been copied, close or reopen cases, and add comments or attachments. 
 
 ## View a case
 

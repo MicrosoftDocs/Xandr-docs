@@ -8,7 +8,7 @@ ms.date: 01/13/2025
 
 # Microsoft Advertising support team
 
-At Microsoft, we aim to provide exceptional customer support to help you navigate our platform seamlessly. Whether you have a technical issue or a general inquiry, our [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) serves as a centralized hub for submitting and routing requests to the appropriate Xandr team for swift resolution. 
+At Microsoft, we aim to provide exceptional customer support to help you navigate our platform seamlessly. Whether you have a technical issue or a general inquiry, our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) serves as a centralized hub for submitting and routing requests to the appropriate Xandr team for swift resolution. 
 > [!NOTE] 
 > For business-related inquiries, such as billing or training, please contact your Xandr Account Representative directly. 
 
@@ -35,10 +35,10 @@ We prioritize your success by resolving technical challenges, offering expert ad
 
 ## Requests handled by Microsoft Advertising support team
 
-The [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) is your single access point for submitting technical issues and inquiries related to the Xandr platform. Our team is dedicated to ensuring that your experience on our platform is seamless and productive. 
+The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) is your single access point for submitting technical issues and inquiries related to the Xandr platform. Our team is dedicated to ensuring that your experience on our platform is seamless and productive. 
  
 > [!NOTE] 
-> The [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) currently supports Microsoft Invest, Microsoft Monetize, Microsoft Curate, Bidder, and Yield Analytics (formerly Yieldex). 
+> The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) currently supports Microsoft Invest, Microsoft Monetize, Microsoft Curate, Bidder, and Yield Analytics (formerly Yieldex). 
 
  | Request type | Example |
 |---|---|
@@ -59,7 +59,7 @@ The [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) i
 
 ## Submit a request
 
-You can submit all requests directly through the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) by completing the [Customer support contact form](support.ads.microsoft.com/contact-support)located at the portal. This ensures your request is routed to the appropriate team for timely assistance. 
+You can submit all requests directly through the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) by completing the [Customer support contact form](https://support.ads.microsoft.com/contact-support)located at the portal. This ensures your request is routed to the appropriate team for timely assistance. 
 
 > [!NOTE]
 > Requests are automatically routed to the appropriate team based on the Request type. 

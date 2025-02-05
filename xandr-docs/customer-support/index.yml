@@ -15,7 +15,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Get started
             url: xcs-xandr-customer-support-home.md
       - linkListType: how-to-guide
         links:
@@ -31,7 +31,7 @@ landingContent:
             url: xcs-opening-a-new-case.md
           - text: Update a Case
             url: xcs-updating-a-case.md
-          - text: FAQs
+          - text: Microsoft Advertising Customer Support Portal FAQs
             url: xcs-customer-support-portal-faqs.md
  
 

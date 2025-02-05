@@ -8,10 +8,10 @@ ms.date: 01/13/2025
 
 # Login to Micosoft Advertising Customer Support portal
 
-This document outlines an overview of how to log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) to create a new case, view your case history, or access knowledge base articles for seamless navigation of our platform. Log in to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) to view your full case history and access knowledge base articles on product offerings, developer resources, financial tools, and additional services to find the information you need. 
+This document outlines an overview of how to log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to create a new case, view your case history, or access knowledge base articles for seamless navigation of our platform. Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to view your full case history and access knowledge base articles on product offerings, developer resources, financial tools, and additional services to find the information you need. 
 
 > [!NOTE] 
-> To use the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com), sign in with your Microsoft Services Account. This enables: 
+> To use the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com), sign in with your Microsoft Services Account. This enables: 
 > - Streamlined sign-in experience.
 > - Enhanced account security.
 > - Faster access to all Members within Xandr products. 

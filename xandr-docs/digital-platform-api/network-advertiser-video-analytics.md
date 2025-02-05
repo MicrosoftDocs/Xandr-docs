@@ -52,7 +52,6 @@ Data in this report is retained for 420 days.
 |:---|:---|:---|:---|:---|
 | `hour` | date | No | `"2010-02-01 06:00:00"` | The hour of the auction.<br><br>**Note**: For impressions older than 100 days, the day will be returned rather than the hour. |
 | `day` | date | No | `2010-02-01` | Day of the month. |
-| `is_takover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `month` | date | date | `2010-02` | Month of the year. |
 | `seller_member_id` | int | Yes | `567` | The internal ID of the selling member. |
 | `seller_member_name` | string | No | `"AdMeld"` | The display name of the selling member. |
@@ -107,6 +106,7 @@ Data in this report is retained for 420 days.
 | `video_content_language` | string | No | `"Spanish"` | The language of the video program in which ad will be played. For example, `Spanish`. |
 | `video_content_network` | string | No | `"AMC"` | The network delivering the video content. For example, `9 Story`, `CBC`, `Disney`, `AMC`, `Fox`, etc. |
 | `video_delivery_type` | string | No | `"vod"` | The type of streaming content delivery. For example, `Video On Demand (VOD)` and `Live`. |
+| `is_takeover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 > [!NOTE]
 > The data for the following dimensions is only available if the publisher has implemented video taxonomy.

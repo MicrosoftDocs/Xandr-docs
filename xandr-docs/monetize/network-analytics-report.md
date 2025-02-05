@@ -98,7 +98,6 @@ If you are frequently requesting Network analytics reports which include dates l
 |--|--|--|
 | Adjustments | No | Changes to Network reported revenue based on factors such as revenue, conversions, clicks, or impressions reported by their advertisers or agencies' ad servers. |
 | Buyer | Yes | The buyer of this impression.<br>**Note**: The name might be "Default"; or "Default Error", which means that there was no buyer for the impression, and a default creative was served. |
-| Is Takeover|Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Seller | Yes | The seller of this impression. |
 | Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information about the different seller types, see "Seller Types" below. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
@@ -122,6 +121,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | IO: Trafficker (reporting label) | Yes | A customer reporting label field used to list the trafficker associated with the insertion order. You may only select one reporting label per report. |
 | Is Curated | Yes | Indicates whether an impression was sold involving a Curator Member. Returns `true` if a Curator Member is involved, otherwise `false`. |
 | Curator member | No | The Curator for the impression. |
+| Is Takeover| Yes | Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Line Item: Type | No | The line item type (e.g., Standard, Augmented). |
 | Line Item: State | No | The state of the line item (e.g., active, inactive). |

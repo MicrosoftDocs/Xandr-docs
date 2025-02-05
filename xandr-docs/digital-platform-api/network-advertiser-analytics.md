@@ -62,7 +62,6 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `buyer_member_id` | int | Yes | `123` | The internal ID of the buying member in the impression. |
 | `bidder_id` | int | No | `436537` | The ID of the bidder or DSP (demand side platform) that the buyer used to purchase this impression. |
 | `bidder_name` | string | No | `"Bidder's name"` | The name of the bidder or DSP (demand side platform) that the buyer used to purchase this impression. |
-| `is_takover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | `seller_member_id` | int | Yes | `567` | The internal ID of the selling member. |
 | `seller_member_name` | string | No | `"AdMeld"` | The display name of the selling member. |
 | `seller_member` | string | No | `"AdMeld (567)"` | **Deprecated**. |
@@ -165,6 +164,7 @@ Some dimensions have attributes. Dimension attributes are a more granular elemen
 | `adjustment_id` | int | Yes | `890` | The ID of the adjustment used to make changes to the media cost and/or impressions, clicks, and conversions you see in reporting for a advertiser. |
 | `revenue_type` | string | No | `"CPA"` | The basis on which the member gets paid. |
 | `revenue_type_id` | int | Yes | `4` | The ID of the revenue type. Possible values: <br> `-1` = No Payment <br> `0` = Flat CPM <br> `1` = Cost Plus CPM <br> `2` = Cost Plus Margin <br> `3` = CPC <br> `4` = CPA <br> `5` = Revshare <br> `6` = Flat Fee <br> `7` = Variable CPM <br> `8` = Estimated CPM. |
+| `is_takeover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 ## Metrics
 

@@ -11,7 +11,7 @@ ms.author: shsrinivasan
 We are introducing a breaking change to the Outstream Video Targeting options in the [Profile service](profile-service.md) API. This change will take place 60 days from today, on March 24, 2025. 
 
 We are introducing a change to the name field within the `video_targets.context` array object in our API. 
-- The possible name value for `Id = 4` within the context array object is being updated from `Outstream` to `In-Article`. 
+- The possible name value for `Id = 4` within the Context array object is being updated from `Outstream` to `In-Article`. 
 - As a part of this change, effective March 24, 2025, to align with industry standards, Line items currently targeting `Outstream Id` 4 will be updated to target the following formats: 
     - In-Article 
     - In-Feed
@@ -23,5 +23,3 @@ Please update your API configurations accordingly to uphold continued compatibil
 For detailed information, please refer to the [Profile service](profile-service.md) documentation. 
 
 To learn more about breaking changes and their implications, see our [Breaking Changes Policy](breaking-changes.md). If you have any questions or require assistance with this update, please reach out to your account representative or contact [Product Support](https://help.xandr.com/s/login/). 
-
- 

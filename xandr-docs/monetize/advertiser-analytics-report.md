@@ -134,6 +134,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 | Insertion Order: Trafficker (reporting label) | Yes | A customer reporting label field used to list the trafficker associated with the insertion order. You may only select one reporting label per report. |
 | Insertion Order: Type | No | The insertion order type (e.g., Legacy IO, Seamless IO). For more information, see [Create an Insertion Order](create-an-insertion-order.md). |
 | Insertion Order: Type (reporting label) | Yes | A custom reporting label field used to list the insertion order type (e.g., Branding IO). This is not the same as the **Type** attribute described above. You may only select one reporting label per report. |
+| Is Takeover |Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Line Item: Comments | No | Any comments that have been entered for the line item. |
 | Line Item: End Date | No | The end date of the line item. |

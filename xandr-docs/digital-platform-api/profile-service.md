@@ -1096,8 +1096,8 @@ The default value is an empty array, and will target any roll position. The `con
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `id` | int | The ID of the context. Possible values:<br>- `1`: position-pre-roll<br>- `2`: position-mid-roll<br>- `3`: position-post-roll<br>- `4`: outstream |
-| `name` | string | **Read-only.** Possible values: `pre-roll`, `mid-roll`, `post-roll`, or `outstream`. |
+| `id` | int | The ID of the context. Possible values:<br>- `1`: position-pre-roll<br>- `2`: position-mid-roll<br>- `3`: position-post-roll<br>- `4`: in-article<br>- `5`: in-banner<br>- `6`: in-feed<br>- `7`: interstitial<br>- `8`: accompanying-content-pre-roll<br>- `9`: accompanying-content-mid-roll<br>- `10`: accompanying-content-post-roll |
+| `name` | string | **Read-only.** Possible values: `pre-roll`, `mid-roll`, `post-roll`, or `in-article`. |
 
 ### Playback methods
 
@@ -1156,7 +1156,7 @@ The `video_frameworks` array is only used by video deal line items. It lets de
             },
             {
                "id":4,
-               "name":"outstream"
+               "name":"in-article"
             }
          ],
          "playback_methods":[

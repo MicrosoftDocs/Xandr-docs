@@ -181,6 +181,7 @@ cpm_publisher_currency: 10,
 publisher_currency_code: '$',
 isExclusive: false,
 isRoadblock: false,
+feedbackUrl: 'https://www.ilikefeedback.com/info?a=1&b=2...'
 source: "rtb",
 creativeId: 26299226,
 targetId : "target_id_123",

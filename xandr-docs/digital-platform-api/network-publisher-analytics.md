@@ -107,6 +107,7 @@ Data retention period for the report is 428 days.
 | `adjustment_id` | int | yes | `890` | The ID of the adjustment used to make changes to the media cost and/or impressions, clicks, and conversions you see in reporting for a publisher. |
 | `venue` | string | yes | `"Venue Name"` | The name of the cluster of domain, site, tag, and user country/region that Xandr' optimization system uses to determine bid valuations. A campaign cannot targeted a venue explicitly. |
 | `predict_rev_type` | int | yes | `2` | The optimization phase of a campaign that served on the publisher's inventory. Possible values:<br>`-2` = No predict phase<br>`-1` = Base predict phase<br>`0` = Learn giveup<br>`1` = Learn<br>`2` = Throttled<br>`3` = Optimized<br>`4` = Biased<br>`5` = Optimized 1<br>`8` = Optimized giveup<br>`9` = Base bid below giveup |
+| `is_takeover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 ## Metrics
 

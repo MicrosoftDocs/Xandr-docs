@@ -121,6 +121,7 @@ Data in this report is retained for 420 days.
 | `code_1` | string | No | `"Code A"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_2` | string | No | `"Code B"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
 | `code_3` | string | No | `"Code C"` | An alias added to the placement object that is reportable as a sub-dimension of Placement. The report shows the current value of the alias and does not reflect historical values. This information is only reportable to Sellers. |
+| `is_takeover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 > [!NOTE]
 > The data for the following dimensions is only available if the publisher has implemented video taxonomy.

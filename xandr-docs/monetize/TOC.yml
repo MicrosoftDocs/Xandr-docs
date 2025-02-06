@@ -844,7 +844,7 @@
             - name: Data Cost Calculation Mechanics
               href: data-cost-calculation-mechanics.md
             - name: Data Marketplace FAQ(s)
-              href: data-marketplace-faq.md            
+              href: data-marketplace-faq.md           
 - name: Creatives
   items: 
   - name: Working with Creatives

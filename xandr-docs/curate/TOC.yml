@@ -226,39 +226,7 @@
     - name: Video Targeting
       href: video-targeting.md
     - name: Viewability Targeting
-      href: viewability-targeting.md
-  - name: Work with Segments
-    items:
-    - name: Overview
-      href: working-with-segments.md
-    - name: Audience Data
-      items:
-      - name: Onboard your Audience Data
-        href: onboarding-your-audience-data.md
-      - name: Client-side Segmentation
-        href: client-side-segmentation.md
-      - name: Create a Segment Pixel
-        href: create-a-segment-pixel.md
-      - name: Export a Segment Pixel
-        href: export-a-segment-pixel.md
-    - name: Birthday Cookies
-      href: birthday-cookies.md
-    - name: Segment pixels - Advanced
-      href: segment-pixels-advanced.md
-    - name: Pass in User Data Offline
-      items: 
-      - name: Overview
-        href: pass-in-user-data-offline.md
-      - name: Map User IDs with getUID and mapUID
-        href: user-id-mapping-with-getuid-and-mapuid.md
-      - name: View User Mapping Visual and Walk-Through
-        href: user-mapping-visual-and-walk-through.md
-    - name: Location Manager
-      items:
-      - name: Overview
-        href: location-manager.md
-      - name: Geo Radius Segments
-        href: geo-radius-segments.md
+      href: viewability-targeting.md  
   - name: Microsoft Inventory
     items:
     - name: Buy Microsoft Inventory
@@ -277,6 +245,42 @@
       href: buying-microsoft-windows-3rd-party-appnetwork-inventory.md
   - name: Political Advertising
     href: political-advertising.md
+- name: Data
+  items:
+    - name: First-Party Data
+      items:
+        - name: Segments
+          items:
+            - name: Overview
+              href: working-with-segments.md
+            - name: Audience Data
+              items:
+                - name: Onboard your Audience Data
+                  href: onboarding-your-audience-data.md
+                - name: Client-side Segmentation
+                  href: client-side-segmentation.md
+                - name: Create a Segment Pixel
+                  href: create-a-segment-pixel.md
+                - name: Export a Segment Pixel
+                  href: export-a-segment-pixel.md
+    - name: Birthday Cookies
+      href: birthday-cookies.md
+    - name: Segment pixels - Advanced
+      href: segment-pixels-advanced.md
+    - name: Pass in User Data Offline
+      items:
+        - name: Overview
+          href: pass-in-user-data-offline.md
+        - name: Map User IDs with getUID and mapUID
+          href: user-id-mapping-with-getuid-and-mapuid.md
+        - name: View User Mapping Visual and Walk-Through
+          href: user-mapping-visual-and-walk-through.md
+    - name: Location Manager
+      items:
+        - name: Overview
+          href: location-manager.md
+        - name: Geo Radius Segments
+          href: geo-radius-segments.md
 - name: Monitoring
   items:
   - name: Overview

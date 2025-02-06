@@ -1,6 +1,6 @@
 - name: Microsoft Advertising Customer Support Portal Guide 
   href: index.yml
-- name: Get Started
+- name: Get started
   items:
   - name: Overview
     href: xcs-xandr-customer-support-home.md

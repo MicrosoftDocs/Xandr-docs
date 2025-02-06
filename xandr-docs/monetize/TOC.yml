@@ -464,26 +464,26 @@
     - name: Key Budgeting and Pacing Concepts
       href: key-budgeting-and-pacing-concepts.md
     - name: Why Use Budgeting?
-  href: why-use-budgeting.md
-- name: Difficulties with Exact Budgeting
-  href: difficulties-with-exact-budgeting.md
-- name: Daily Pacing
-  href: daily-pacing.md
-- name: Line Item Budgeting vs. Campaign Budgeting
-  href: line-item-budgeting-vs-campaign-budgeting.md
-- name: Line Item Pacing vs. Campaign Pacing
-  href: line-item-pacing-vs-campaign-pacing.md
-- name: Impressions and Click Trackers
-  items:
+      href: why-use-budgeting.md
+    - name: Difficulties with Exact Budgeting
+      href: difficulties-with-exact-budgeting.md
+    - name: Daily Pacing
+      href: daily-pacing.md
+    - name: Line Item Budgeting vs. Campaign Budgeting
+      href: line-item-budgeting-vs-campaign-budgeting.md
+    - name: Line Item Pacing vs. Campaign Pacing
+      href: line-item-pacing-vs-campaign-pacing.md
+    - name: Impressions and Click Trackers
+    items:
     - name: Working with Impression and Click Trackers
       href: working-with-impression-and-click-trackers.md
     - name: Create a Click Tracker
       href: create-a-click-tracker.md
     - name: Create an Impression Tracker
       href: create-an-impression-tracker.md
-- name: APAC Supply Information - Platform Inventory by Seller
-  href: apac-supply-information-platform-inventory-by-seller.md
-- name: Trader Home
+  - name: APAC Supply Information - Platform Inventory by Seller
+    href: apac-supply-information-platform-inventory-by-seller.md
+  - name: Trader Home
     items:
     - name: Working with Trader Home
       href: working-with-trader-home.md
@@ -699,7 +699,7 @@
     href: mobile-user-segment-targeting.md
   - name: Page Properties Targeting
     href: page-properties-targeting.md
-  - name: Query String Targeting via Placement Tags and Segments
+  - name: Query String Targeting via Placement Tags and Segment
     href: query-string-targeting-via-placement-tags-and-segments.md
   - name: Segment Targeting
     href: segment-targeting.md

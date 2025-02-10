@@ -312,7 +312,7 @@
   - name: Measurement of Video Viewability using VPAID Wrapper
     href: video-viewability.md
   - name: Description of Methodology (DOM)
-    href: ad-viewability-description-of-methodology-dom.md
+    href: ad-methodology-dom.md
   - name: FAQ
     href: viewability-faq.md
 - name: Reporting Guide

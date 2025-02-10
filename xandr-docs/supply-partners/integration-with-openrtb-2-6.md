@@ -83,7 +83,7 @@ As part of the OpenRTB 2.6 implementation, Xandr has added the following field(s
 | `Video.podseq` | integer <br> **Default**: `0` | The sequence (position) of the video ad pod within a content stream. For guidance on the use of this field, refer to in AdCOM 1.0. |
 | `Video.rqddurs` | integer array | Precise acceptable durations for video creatives in seconds. This field specifically targets the Live TV use case where non-exact ad durations would result in undesirable 'dead air'. <br>This field is mutually exclusive with `minduration` and `maxduration`; if `rqddurs` is specified, `minduration` and `maxduration` must not be specified and vice versa. |
 | `Video.slotinpod` | integer <br> **Default**: `0` | For video ad pods, this value indicates that the seller can guarantee delivery against the indicated slot position in the pod. For guidance on the use of this field, refer to List: Slot Position in Pod in AdCOM 1.0. |
-| `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, see [Use `Plcmt`, `Placement`, and `Context` fields together](#use-plcmt-placement-and-context-fields-together). |
+| `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, see [Use `Plcmt`, `Placement`, and `Context` fields together](#using-plcmt-placement-and-context-fields-together). |
 
 ### Using `Plcmt`, `Placement`, and `Context` fields together
 
@@ -116,7 +116,7 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | Attribute | Type   | Description                                                                 |
 |-----------|--------|-----------------------------------------------------------------------------|
 | id | string | A unique identifier assigned by the publisher. This may not be unique across all supply sources. |
-| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md).                 |
+| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](../bidders/outgoing-bid-request-to-bidders.md).                 |
 | domain| string | The primary domain of the network (e.g., “abc.com” for the network ABC). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
 
 ## Object: Channel

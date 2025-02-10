@@ -18,9 +18,7 @@ All dates and times are given in UTC.
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports. However, all time ranges are not available for every report.
 
 - custom
-- current_hour
 - last_available_day
-- last_hour
 - today
 - last_24_hours
 - last_48_hours
@@ -44,7 +42,6 @@ Time ranges define the time period of the data extracted for the report. The fol
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
-- Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.

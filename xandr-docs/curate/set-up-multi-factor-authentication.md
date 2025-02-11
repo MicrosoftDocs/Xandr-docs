@@ -39,4 +39,4 @@ You can use your MFA credentials to log in to your digital application user acco
 ## Related topics
 
 - [Troubleshoot Multi-Factor Authentication (MFA)](troubleshooting-multi-factor-authentication-mfa.md)
-- [Single Credential Login and Multi-Factor Authentication FAQ](single-credential-login-and-multi-factor-authentication-faq.md)
+- [Single Credential Login and Multi-Factor Authentication FAQ](single-credential-mfa-faq.md)

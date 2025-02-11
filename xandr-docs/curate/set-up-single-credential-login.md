@@ -34,4 +34,4 @@ If your password meets the above criteria, you will receive a notification that 
 
 ## Related topic
 
-[Single Credential Login and Multi-Factor Authentication FAQ](single-credential-login-and-multi-factor-authentication-faq.md)
+[Single Credential Login and Multi-Factor Authentication FAQ](single-credential-mfa-faq.mdF)

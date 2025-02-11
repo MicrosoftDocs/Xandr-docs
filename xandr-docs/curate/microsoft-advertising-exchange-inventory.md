@@ -75,7 +75,7 @@ Provided below are some Windows Apps inventory samples:
 
 ### How to target Windows app inventory and additional information
 
-For more information regarding how to target Windows App inventory, formats, specifications, and legacy SDK ads for Windows apps, see [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
+For more information regarding how to target Windows App inventory, formats, specifications, and legacy SDK ads for Windows apps, see [Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-windows-3p-appnetwork.md).
 
 ## MSN
 

@@ -36,7 +36,7 @@ Use the following documentation to learn more about buying specific Microsoft in
 
   Over 1.4 billion monthly US display impressions, available in 38 markets.
 
-- [Buy Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
+- [Buy Microsoft Windows 3rd Party AppNetwork Inventory](buying-windows-3p-appnetwork.md)
 
   Over 300 million monthly global impressions.
 

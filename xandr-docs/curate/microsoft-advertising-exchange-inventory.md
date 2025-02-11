@@ -164,4 +164,4 @@ Use the targeting parameters below across different regions for your specific re
 
 ## Related topic
 
-[Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
+[Buying Microsoft Windows 3rd Party AppNetwork Inventory](buying-windows-3p-appnetwork.md)

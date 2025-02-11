@@ -4,7 +4,7 @@ description: The article provides an overview about Microsoft Windows 3rd party 
 ms.date: 10/28/2024
 ---
 
-# Microsoft Curate - Buy Microsoft Windows 3rd party AppNetwork inventory
+# Microsoft Curate - Buy Microsoft Windows 3rd party App Network inventory
 
 ## Inventory overview
 

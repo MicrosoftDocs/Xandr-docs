@@ -13,7 +13,10 @@ This page provides high-level guidance on the types of user identifiers availabl
 
 ## Cookies
 
-Publishers do not need to take any specific action regarding PSP to sync user cookies. The integration with Microsoft Monetize will synchronize Microsoft Advertising cookies, along with a rotation of pixels from the Monetize marketplace and Prebid Demand Partners (typically SSPs). Prebid Server Demand Partners are automatically synced through the userSync endpoints they [provide in GitHub](https://github.com/prebid/prebid-server/tree/master/static/bidder-info). If no endpoint is provided in a partner's .yaml file, they must actively contact Microsoft Advertising to supply a URL for implementation.
+Publishers do not need to take any specific action regarding PSP to sync user cookies. The integration with Microsoft Monetize will synchronize Microsoft Advertising cookies, along with a rotation of pixels from the Monetize marketplace and Prebid Demand Partners (typically SSPs).
+
+Prebid Server Demand Partners are automatically synced through the userSync endpoints they [provide in GitHub](https://github.com/prebid/prebid-server/tree/master/static/bidder-info). If no endpoint is provided in a partner's .yaml file, they must actively contact Microsoft Advertising to supply a URL for implementation.
+If a Demand Partner cannot support a redirect URL macro in their endpoint, they can hard-code `https://ib.adnxs.com/prebid/setuid?bidder=BIDDER&uid=NUMBER` where `bidder` is their exact adapter name from GitHub and, `uid` is the user identifier.
 
 > [!NOTE]
 > User-matched request count and rate metrics currently include only cookies, not more persistent identifiers such as industry IDs (e.g., RampID, UID 2.0) or publisher-provided IDs (PPIDs). The presence of device IDs is also not reflected in these metrics.

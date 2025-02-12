@@ -90,7 +90,7 @@ See [Partnership Details Screen - Seller View](partnership-details-screen-seller
 
 ## Related topics
 
-- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md)
+- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-types-targeting.md)
 - [Manage Relationships with Buyers](managing-relationships-with-buyers.md)
 - [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md)
-- [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md)
+- [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-buyer-eligibility-payment-types-targeting.md)

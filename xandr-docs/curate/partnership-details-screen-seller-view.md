@@ -68,8 +68,7 @@ The eligibility, allowed payment types, and targeting access settings you have s
 The **Partner Controls** tab is also visible to the buyer. They can see the settings you have defined for them.
 
 > [!NOTE]
-> If you do not set custom settings for the buyer, your default settings will apply. For more information on
-> setting default settings, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-buyer-eligibility-payment-types-targeting.md).
+> If you do not set custom settings for the buyer, your default settings will apply. For more information on setting default settings, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-buyer-eligibility-payment-types-targeting.md).
 
 ## View the buyer's settings for you
 

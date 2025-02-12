@@ -44,7 +44,7 @@ Additional resources on demand partners:
 | Adrino | adrino | Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: Yes |
 | Adverxo | adverxo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Ads Interactive | adsinteractive | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: No <br>**Site**: No |
-| Ads_Interactive | ad_sinteractive | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+| Ads_Interactive | ads_interactive | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | AdsYield | adsyield | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Adtarget | adtarget | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | Adtelligent | adtelligent | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |

@@ -74,6 +74,8 @@ Depending upon the category the creative falls into, you may choose to mark it a
 - **Banned**: The creative will not serve.
 - **Default**: Reuse the default settings (i.e., mark as **Eligible**).
 
+For information on Ad Quality Model, see [Ad Quality Models](ad-quality-models.md).
+
 ### Technical attributes
 
 You may allow or disallow certain creatives based upon technical attributes such as whether the creative is an expandable, or whether it plays audio. Choose from:

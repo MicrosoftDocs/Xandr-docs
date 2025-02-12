@@ -52,9 +52,9 @@
     - name: Customize your Seller Profile
       href: customize-your-seller-profile.md
     - name: Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
-      href: set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md
+      href: set-buyer-eligibility-payment-types-targeting.md
     - name: Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
-      href: edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md
+      href: edit-buyer-eligibility-payment-types-targeting.md
   - name: Buyer guide
     items:
     - name: Manage Relationships with Sellers

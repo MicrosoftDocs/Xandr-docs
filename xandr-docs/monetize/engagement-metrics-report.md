@@ -21,9 +21,7 @@ Time ranges define the time period of the data extracted for the report. The fol
 However, all time ranges are not available for every report.
 
 - Custom
-- Current Hour
 - Last Available Day
-- Last Hour
 - Today
 - Last 24 Hours
 - Last 48 Hours
@@ -47,7 +45,6 @@ However, all time ranges are not available for every report.
 
 Intervals determine how your data is grouped together into rows in the report response. The following is a complete list of intervals available for reports. However, all intervals are not available for every report.
 
-- Hourly: Data is grouped into rows by the hour.
 - Daily: Data is grouped into rows by the day.
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.

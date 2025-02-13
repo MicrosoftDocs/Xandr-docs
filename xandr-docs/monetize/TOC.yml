@@ -1061,6 +1061,8 @@
         href: monetize-insights-total-revenue.md
       - name: Ad Quality
         href: monetize-insights-ad-quality.md
+      - name: Ad Quality Models
+        href: ad-quality-models.md
       - name: Deals
         href: monetize-insights-deals.md
       - name: Demand Issues

@@ -12,6 +12,7 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [1.3.0](https://adsdk.microsoft.com/ast/ast.js) | - Add `batchId` and `adTrackingId` to AST telemetry events.<br> - Refactored code related to user-agent handling.| 13 February 2025 |
 | [1.2.0](https://adsdk.microsoft.com/ast/ast.js) | - add `feedbackUrl` and `native.custom` fields to `adObject`. <br> - fix sizes passed into AST IG <br> - correct `topic` field name in AST. <br> - remove extra fields in `auctionConfig` for AST. <br> - Private Auction runs for treatment labels <br> - add `removeTag` API function <br> - new AST event `mrcView` | 12 February 2025 |
 | [0.66.0](https://acdn.adnxs.com/ast/static/0.66.0/ast.js) | - Update owner and reference URLs used for Fledge. | 18 November 2024 |
 | [0.65.0](https://acdn.adnxs.com/ast/static/0.65.0/ast.js) | - Update fledge logic to use `deprecateURN` function instead of `auctionConfig` approach. <br> - Include `geooverride` information for AST context Interest Groups.| 4 November 2024 |

@@ -30,7 +30,7 @@ Currently, the Ad Quality Models feature supports the following categories:
 
 These models will expand over time to support additional categories.
 
-### Clickbait Model (category 695)
+#### Clickbait Model (category 695)
 
 Clickbait is a form of online advertising that uses sensational, exaggerated, or misleading headlines, images, or phrases to attract attention and entice users to click on a link. These ads often lead to:
 
@@ -47,7 +47,7 @@ The Clickbait Model applies AI-driven content analysis across various ad categor
 
 The model utilizes advanced language analysis to identify patterns commonly associated with deceptive or misleading ad content. By leveraging sophisticated LLMs, this model detects and filters misleading ad content to maintain high-quality ad experiences.
 
-### Image Sensitivity & Aesthetics Model (category 703)
+#### Image Sensitivity & Aesthetics Model (category 703)
 
 This model checks ads for sensitive topics and visual aesthetics to improve user experience. It scans for content related to:
 

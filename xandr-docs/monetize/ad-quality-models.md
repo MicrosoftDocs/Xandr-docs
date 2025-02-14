@@ -16,13 +16,10 @@ Ad Quality Models are applied to specific categories to ensure comprehensive cov
 
 For detailed instructions on how to apply categories to your Ad Quality rules, please refer to the following resources:
 
-- [Define ad quality rules](network-ad-quality-screen.md)
+- [Network Ad Quality Screen](network-ad-quality-screen.md)
 - [Define ad quality rules](../supply-partners/define-ad-quality-rules.md)
 
-> [!NOTE]
-> Categories 695 and 703 currently require internal enablement. If you are interested in applying these new categories, please reach out to your account manager. Enablement via the Microsoft Monetize UI will be available in the future.
-
-## Categories
+### Categories
 
 Microsoft Monetize has introduced two new ad quality models as part of the integration of the Xandr Platform into Microsoft Advertising. These models leverage AI and deep learning to enhance ad quality management.
 
@@ -64,27 +61,12 @@ This model checks ads for sensitive topics and visual aesthetics to improve user
 - Smoking
 - Cryptocurrency
 
-Additionally, it utilizes the **Multilingual CLIP Embedding Model** from OpenAI to identify unappealing and low-quality images that negatively impact engagement.
-
-By implementing this model, advertisers can maintain a high-quality, appropriate visual experience for their audiences.
-
-### Future developments
-
-As Ad Quality Models evolve, additional categories and features will be introduced to further refine ad quality. This page will be updated with new models as they become available.
-
-## Next steps
-
-- Work is ongoing to expand Ad Quality Models with additional categories.
-- Stay tuned for updates on UI enablement for self-service management.
-
-For more details, reach out to the Microsoft Monetize support team.
-
 ## Related topics
 
 - [Working with Ad Quality](working-with-publisher-ad-quality.md)
 - [Explore Publisher Ad Quality](explore-publisher-ad-quality.md)
 - [Ad quality](monetize-insights-ad-quality.md)
-- [Create Publisher Ad Quality Rules](create-publisher-ad-quality-rules.md) 
+- [Create Publisher Ad Quality Rules](create-publisher-ad-quality-rules.md)
 - [Base and Conditional Rules](base-and-conditional-rules.md)
 - [Network Ad Quality Screen](network-ad-quality-screen.md)
 - [Update Your Network Profile](update-your-network-profile.md)

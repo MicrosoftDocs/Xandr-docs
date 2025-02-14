@@ -28,7 +28,8 @@ Currently, the Ad Quality Models feature supports the following categories:
 - **Clickbait model (Category 695)**
 - **Image sensitivity & aesthetics model (Category 703)**
 
-These models will expand over time to support additional categories.
+> [!NOTE]
+> These models will evolve to support more categories over time. Microsoft Monetize continuously enhances ad quality filtering, and additional topics may be added to these models in the future.
 
 #### Clickbait model (category 695)
 

@@ -6,24 +6,20 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Ad Quality models
 
-Ad quality is a cornerstone of your business, and at Microsoft Monetize, we provide technology to help you manage it effectively. The integration of the Xandr platform into Microsoft Advertising introduces two AI-powered ad quality models that identify and filter low-quality or harmful content.
-
-Ad quality models use large language models (LLMs) and neural networks to detect and filter ads containing misleading, inappropriate, or low-quality content.
+Ad quality is a cornerstone of your business, and at Microsoft Monetize, we provide technology to help you manage it effectively. The integration of the Xandr platform into Microsoft Advertising introduces two AI-powered ad quality models that identify and filter low-quality or harmful content. These models use large language models (LLMs) and neural networks to detect and filter ads containing misleading, inappropriate, or low-quality content.
 
 ## Enable Ad Quality model categories
 
-Ad Quality Models are applied to specific categories to ensure comprehensive coverage and effective filtering. Users have the flexibility to block specific categories at both the network and publisher levels, allowing for tailored ad quality management.
+These ad quality models are available through the Categories in your ad quality rules. You can block these two categories at both the network and publisher levels, allowing for tailored ad quality management.
 
-For detailed instructions on how to apply categories to your Ad Quality rules, please refer to the following resources:
+For detailed instructions on applying categories to your ad quality rules, see the following resources:
 
 - [Network Ad Quality Screen](network-ad-quality-screen.md)
 - [Define ad quality rules](../supply-partners/define-ad-quality-rules.md)
 
 ### Categories
 
-Microsoft Monetize has introduced two new ad quality models as part of the integration of the Xandr Platform into Microsoft Advertising. These models leverage AI and deep learning to enhance ad quality management.
-
-Currently, the Ad Quality Models feature supports the following categories:
+Currently, ad quality models support two categories that leverage AI and deep learning to enhance ad quality management:
 
 - **Clickbait model (Category 695)**
 - **Image sensitivity & aesthetics model (Category 703)**
@@ -39,14 +35,14 @@ Clickbait is a form of online advertising that uses sensational, exaggerated, or
 - Malicious or fraudulent websites
 - Decreased platform credibility
 
-The Clickbait Model applies AI-driven content analysis across various ad categories, including:
+The Clickbait model applies AI-driven content analysis across various ad categories, including:
 
 - Finance
 - Cryptocurrency
 - Health
 - Gaming
 
-The model utilizes advanced language analysis to identify patterns commonly associated with deceptive or misleading ad content. This model uses sophisticated LLMs to detect and filter misleading ad content, ensuring high-quality ad experiences.
+The model uses advanced language analysis to identify patterns commonly associated with deceptive or misleading ad content. This model uses sophisticated LLMs to detect and filter misleading ad content, ensuring high-quality ad experiences.
 
 #### Image sensitivity & aesthetics model (category 703)
 

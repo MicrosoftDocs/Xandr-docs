@@ -54,7 +54,7 @@
     - name: Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access
       href: set-buyer-eligibility-payment-types-targeting.md
     - name: Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
-      href: edit-buyer-eligibility-payment-types-targeting.md
+      href: edit-buyer-eligibility-payment-targeting.md
   - name: Buyer guide
     items:
     - name: Manage Relationships with Sellers
@@ -266,7 +266,7 @@
     - name: Buy MSN Inventory
       href: buying-msn-inventory.md
     - name: Buy Microsoft Casual Games (Windows O&O Apps)
-      href: buying-microsoft-casual-games-windows-o-o-apps.md
+      href: buy-microsoft-casual-games-windows-apps.md
     - name: Buy Microsoft Deals
       href: buying-microsoft-deals.md
     - name: Buy Microsoft Outlook.com Inventory

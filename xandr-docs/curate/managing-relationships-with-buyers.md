@@ -27,6 +27,6 @@ As a seller, you can use the **Partner Center** to:
 - [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-buyer-eligibility-payment-types-targeting.md)  
   
     Step-by-step instructions for establishing default buyer eligibility, allowed payment types, and targeting access for all buyers.
-- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-types-targeting.md)
+- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-targeting.md)
 
     Step-by-step instructions for setting the buyer eligibility, allowed payment types, and targeting access settings for one or more specific buyers.

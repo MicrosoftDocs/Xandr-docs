@@ -1179,6 +1179,8 @@
       href: block-a-brand-using-ad-quality-rules.md
     - name: Explore Publisher Ad Quality
       href: explore-publisher-ad-quality.md
+    - name: Ad Quality Models
+      href: ad-quality-models.md
     - name: Create a Custom Profile
       href: create-a-custom-profile.md
     - name: Create Publisher Ad Quality Rules

@@ -63,7 +63,7 @@ In the **Partner Controls** tab you can view and manage the settings you have se
 
 ## View your settings for buyer
 
-The eligibility, allowed payment types, and targeting access settings you have set for the buyer display in the **My Settings for Buyer** section. For more information on each of these settings, see [Setting Buyer Defaults](set-buyer-eligibility-payment-types-targeting.md). For step-by-step instructions on editing a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-types-targeting.md).
+The eligibility, allowed payment types, and targeting access settings you have set for the buyer display in the **My Settings for Buyer** section. For more information on each of these settings, see [Setting Buyer Defaults](set-buyer-eligibility-payment-targeting.md). For step-by-step instructions on editing a buyer's settings, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-types-targeting.md).
 
 The **Partner Controls** tab is also visible to the buyer. They can see the settings you have defined for them.
 

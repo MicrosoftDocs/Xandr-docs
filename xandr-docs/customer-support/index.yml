@@ -25,12 +25,14 @@ landingContent:
             url: microsoft-identity-platform-login.md
   - title: Functionalities
     linkLists:
-      - linkListType: reference
+      - linkListType: how-to-guide
         links:           
           - text: Open a New Case
             url: xcs-opening-a-new-case.md
           - text: Update a Case
             url: xcs-updating-a-case.md
+      - linkListType: reference
+        links:
           - text: Microsoft Advertising Customer Support Portal FAQs
             url: xcs-customer-support-portal-faqs.md
  

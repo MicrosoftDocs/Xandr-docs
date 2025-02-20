@@ -6,13 +6,13 @@ ms.author: shsrinivasan
 ms.date: 01/12/2025
 ---
 
-# Microsoft Advertising customer support portal FAQs 
+# Microsoft Advertising Customer Support portal FAQs 
 
 Frequently Asked Questions about Microsoft Advertising Customer Support Portal: 
 
-## Why do I need to use the same email address for help.xandr.com and my Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts?
+## Why do I need to use the same email address for the new Customer Support Portal and my Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts?
 
-Previously, help.xandr.com allowed multiple emails to create cases for the same account. This is why you may have used a different email for help.xandr.com than the one linked to your Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts. Going forward, use the same email address you use to log in to your Monetize, Invest, or Curate accounts to create cases. This ensures our support team can respond to your requests more effectively.  
+Previously, `help.xandr.com` allowed multiple emails to create cases for the same account. This is why you may have used a different email for help.xandr.com than the one linked to your Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts. Going forward, use the same email address you use to log in to your Monetize, Invest, or Curate accounts to create cases. This ensures our support team can respond to your requests more effectively.  
 
 ## How can I view cases created under a different email address?   
 
@@ -24,6 +24,21 @@ Going forward, use XYZ@email.com to create new cases in ads.microsoft.com. 
 
 ## What happens to the “Proceed as Guest” option for creating cases? 
 The **Proceed as Guest** option is no longer available. To create a case, set up a personal Microsoft account and log in to the new Microsoft Advertising Customer Support Portal using that account. Once logged in, you can create a case through the portal.  
+
+## Why is there a new Customer Support Portal?
+In February, a new Customer Support Portal became available for opt-in. This updated version offers a more seamless experience across products.
+
+## What happens after I start using the new Customer Support Portal?
+Once you have sign into the new [Customer Support Portal](support.ads.microsoft.com), the [legacy portal](help.xandr.com) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
+
+## Why do I see only some cases in the new Customer Support Portal?
+The new [Customer Support Portal](support.ads.microsoft.com) displays cases from the [legacy portal](help.xandr.com) with the following exceptions:
+- Cases created before February 2024 do not appear.
+- Closed cases do not appear.
+- If missing cases fall under these exceptions, this behavior is expected. You can still view them in the read-only legacy portal at help.xandr.com.
+
+## Can I continue accessing the legacy portal?
+ You can continue accessing the legacy portal (help.xandr.com) for the next few months. However, we recommend transitioning to the new Customer Support Portal (support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
 
 <!--
 
@@ -45,3 +60,4 @@ You'll need to visit the [Login](https://help.xandr.com/s/login/) page, proceed 
 ## Related topic
 
 [Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
+[Microsoft Advertising Support Team](xcs-xandr-customer-support-home.md)

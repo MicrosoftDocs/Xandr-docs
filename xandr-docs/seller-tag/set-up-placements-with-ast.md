@@ -25,7 +25,7 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > - `adsdk.microsoft.com`
 > - `adsdk.bing.net` (if applicable)
 
-For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
+For more details, see the [AST API Reference](ast-api-reference.md).
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 

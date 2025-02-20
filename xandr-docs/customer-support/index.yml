@@ -15,7 +15,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Get started
+          - text: Get Started
             url: xcs-xandr-customer-support-home.md
       - linkListType: how-to-guide
         links:
@@ -29,7 +29,7 @@ landingContent:
         links:           
           - text: Open a New Case
             url: xcs-opening-a-new-case.md
-          - text: Update a Case
+          - text: Update an existing Case
             url: xcs-updating-a-case.md
       - linkListType: reference
         links:

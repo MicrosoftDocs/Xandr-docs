@@ -29,10 +29,10 @@ The **Proceed as Guest** option is no longer available. To create a case, set up
 In February, a new Customer Support Portal became available for opt-in. This updated version offers a more seamless experience across products.
 
 ## What happens after I start using the new Customer Support Portal?
-Once you have sign into the new [Customer Support Portal](support.ads.microsoft.com), the [legacy portal](help.xandr.com) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
+Once you have sign into the new [Customer Support Portal](https://support.ads.microsoft.com), the [legacy portal](https://help.xandr.com) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
 
 ## Why do I see only some cases in the new Customer Support Portal?
-The new [Customer Support Portal](support.ads.microsoft.com) displays cases from the [legacy portal](help.xandr.com) with the following exceptions:
+The new [Customer Support Portal](https://support.ads.microsoft.com) displays cases from the [legacy portal](https://help.xandr.com) with the following exceptions:
 - Cases created before February 2024 do not appear.
 - Closed cases do not appear.
 - If missing cases fall under these exceptions, this behavior is expected. You can still view them in the read-only legacy portal at help.xandr.com.
@@ -59,5 +59,5 @@ You'll need to visit the [Login](https://help.xandr.com/s/login/) page, proceed 
 
 ## Related topic
 
-[Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
-[Microsoft Advertising Support Team](xcs-xandr-customer-support-home.md)
+- [Customer Support Portal Guide](xcs-customer-support-portal-guide.md)
+- [Login to Micosoft Advertising Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)

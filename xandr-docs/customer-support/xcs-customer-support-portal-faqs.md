@@ -12,7 +12,7 @@ Frequently Asked Questions about Microsoft Advertising Customer Support Portal:
 
 ## Why do I need to use the same email address for the new Customer Support Portal and my Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts?
 
-Previously, `help.xandr.com` allowed multiple emails to create cases for the same account. This is why you may have used a different email for help.xandr.com than the one linked to your Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts. Going forward, use the same email address you use to log in to your Monetize, Invest, or Curate accounts to create cases. This ensures our support team can respond to your requests more effectively.  
+Previously, the [legacy portal](https://help.xandr.com) allowed multiple emails to create cases for the same account. This is why you may have used a different email for help.xandr.com than the one linked to your Microsoft Invest, Microsoft Monetize, or Microsoft Curate accounts. Going forward, use the same email address you use to log in to your Monetize, Invest, or Curate accounts to create cases. This ensures our support team can respond to your requests more effectively.  
 
 ## How can I view cases created under a different email address?   
 
@@ -20,7 +20,7 @@ You can access cases created under a different email address by creating a perso
 
 For example, if you logged into help.xandr.com with ABC@email.com but used XYZ@email.com for Microsoft Invest, create a personal Microsoft account with ABC@email.com as the username. Then, log into support.ads.microsoft.com using that account to view the old cases created under ABC@email.com. 
 
-Going forward, use XYZ@email.com to create new cases in ads.microsoft.com.  
+Going forward, use XYZ@email.com to create new cases in the new [Customer Support Portal](https://support.ads.microsoft.com).  
 
 ## What happens to the “Proceed as Guest” option for creating cases? 
 The **Proceed as Guest** option is no longer available. To create a case, set up a personal Microsoft account and log in to the new Microsoft Advertising Customer Support Portal using that account. Once logged in, you can create a case through the portal.  
@@ -38,7 +38,7 @@ The new [Customer Support Portal](https://support.ads.microsoft.com) displays ca
 - If missing cases fall under these exceptions, this behavior is expected. You can still view them in the read-only legacy portal at help.xandr.com.
 
 ## Can I continue accessing the legacy portal?
- You can continue accessing the legacy portal (help.xandr.com) for the next few months. However, we recommend transitioning to the new Customer Support Portal (support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
+ You can continue accessing the [legacy portal](https://help.xandr.com) for the next few months. However, we recommend transitioning to the new [Customer Support Portal](https://support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
 
 <!--
 

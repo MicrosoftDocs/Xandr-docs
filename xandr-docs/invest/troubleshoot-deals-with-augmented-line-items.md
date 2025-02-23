@@ -1,7 +1,8 @@
 ---
 title: Troubleshoot Deals with Augmented Line Items 
-description: In this article, explore detailed steps to troubleshoot and enhance Augmented Line Item (ALI) delivery, bid performance, and impression count.
+description: In this article, explore detailed steps to troubleshoot deals with Augmented Line Item (ALI).
 ms.date: 02/23/2025
+ms.author: shsrinivasan
 ---
 
 # Troubleshoot deals with augmented line items 
@@ -52,8 +53,8 @@ If a **Deal** targeted by a Line Item is not being monetized, follow these steps
     - Apply the following filters and dimensions: 
         - **Filters:** Add the **Creative IDs** and **Deal IDs.**
         - **Dimensions:** Include **Deal, Creative, Error ID, and Error Message.**  
-1. If all of the above does not help identify the underlying issue, please contact Customer Support and submit a request through the [Customer Support Portaal](https.help.xandr.com)
- 
+1. If all of the above does not help identify the underlying issue, please contact Customer Support and submit a request through the [Customer Support Portaal](https://help.xandr.com/)
+
 ## Troubleshooting deal failures
 The **Deals Troubleshooting Report** provides details on failure reasons that may impact Deal performance. Below are common failure types, explanations of their causes, and recommended steps to investigate or resolve them. 
 - **Bid below deal price floors** 

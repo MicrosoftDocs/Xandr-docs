@@ -19,7 +19,7 @@
     - name: Microsoft Identity Platform Login
       href: microsoft-identity-platform-login.md
     - name: Troubleshoot Microsoft Identity Platform Login 
-      href: microsoft-identity-platform-login-troubleshooting.md
+      href: microsoft-identity-platform-login-troubleshoot.md
     - name: Manage User Logins and Permissions
       href: managing-user-logins-and-permissions.md
     - name: Username and Password

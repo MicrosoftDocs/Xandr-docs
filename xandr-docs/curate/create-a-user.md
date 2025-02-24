@@ -20,12 +20,8 @@ Go to **Admin** > **User Management**. This brings up the **Member Users** scree
 
 ### Enter contact information
 
-From the **User Details** tab, enter the user's **Contact Information**.
-
-> [!NOTE]
-> The email ID is enetered here will be the primary username for signing into the Microsoft Advertising products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Microsoft Advertising platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
-> [!NOTE]
-> If the State is set to Inactive, the user will not be able to log in.
+From the **User Details** tab, enter the user's **Contact Information**. The email ID is enetered here will be the primary username for signing into the Microsoft Advertising products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Microsoft Advertising platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
+If the State is set to **Inactive**, the user will not be able to log in.
 
 ### Select number formats
 
@@ -45,8 +41,7 @@ Within the **Contact Information** section you'll also find options for numeric 
 
 ## Roles and permissions
 
-On the **Roles & Permission** tab, select the user role with the appropriate access rights for this particular
-user.
+On the **Roles & Permission** tab, select the user role with the appropriate access rights for this particular user.
 
 > [!NOTE]
 > Once the user has been created, you will not be able to change the user's role. To grant someone a different level of access to Curate, you will have to create a new user.

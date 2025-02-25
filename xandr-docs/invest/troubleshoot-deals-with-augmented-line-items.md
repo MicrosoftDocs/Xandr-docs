@@ -37,7 +37,7 @@ If a **Deal** targeted by a Line Item is not being monetized, follow these steps
         - Ad quality considerations (For example, buyer trust, eligible creative categories, or technical attributes).
         - Bidding below the auction floor.
         - If there is a significant drop from **Bids** to **Imps Won**, you can verify with the seller to check if any of these factors are contributing to bid losses. 
-1. If the Deal is still underdelivering, download the Deals Troubleshooting Report to identify bid performance blockers and gain deeper insights. Follow these steps to diagnose and resolve potential issues: 
+1. If the Deal is still underdelivering, download the **Deals Troubleshooting Report** to identify bid performance blockers and gain deeper insights. Follow these steps to diagnose and resolve potential issues: 
     - Navigate to the **Line item Details** pane. 
     - Select the **Troubleshooting** tab. 
     - Check the **Creative** and **Valuation** bid performance messages. 
@@ -46,7 +46,7 @@ If a **Deal** targeted by a Line Item is not being monetized, follow these steps
     > Failures in the Line item stage are expected, as bid requests blocked at this stage do not fall under the targeted Deals.
     - Verify if there are any blockers in the **Creative** or **Valuation** stages related to Deals. 
     - Identify the specific Deal IDs associated with errors. For more information, refer to the [Troubleshooting Deal failures](#troubleshooting-deal-failures) section below. 
-1. Compare the specific Deal ID from the [Analytics](network-analytics-report.md) report or [Buyer Deal Metrics](buyer-deal-metrics.md) report to verify if any bidding progresses beyond the Creative and Valuation stages of the buying funnel. 
+1. Compare the specific Deal ID from the [Member Analytics Report](network-analytics-report.md) report or [Buyer Deal Metrics](buyer-deal-metrics.md) report to verify if any bidding progresses beyond the Creative and Valuation stages of the buying funnel. 
     - You can pull data for the relevant time period and check for impressions on targeted Deals. 
     - Apply the following filters and dimensions: 
         - **Filters:** Add the **Line item ID** 

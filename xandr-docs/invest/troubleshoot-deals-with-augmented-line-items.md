@@ -37,11 +37,14 @@ If a **Deal** targeted by a Line Item is not being monetized, follow these steps
         - Ad quality considerations (For example, buyer trust, eligible creative categories, or technical attributes).
         - Bidding below the auction floor.
         - If there is a significant drop from **Bids** to **Imps Won**, you can verify with the seller to check if any of these factors are contributing to bid losses. 
-1. If the Deal is still underdelivering, access the **Deals Troubleshooting Report** to identify bid performance blockers and gain deeper insights. Follow these steps to diagnose and resolve potential issues: 
-    - You can review the **Line item Troubleshooting** tab to check for Deal-related blockers in the **Creative** or **Valuation** stages. 
+1. If the Deal is still underdelivering, download the Deals Troubleshooting Report to identify bid performance blockers and gain deeper insights. Follow these steps to diagnose and resolve potential issues: 
+    - Navigate to the **Line item Details** pane. 
+    - Select the **Troubleshooting** tab. 
+    - Check the **Creative** and **Valuation** bid performance messages. 
+    - For deal-specific messages, select the button to download the **Deals Troubleshooting Report**. 
     > [!NOTE]
-    > Failures in the Line Item stage are expected, as bid requests blocked at this stage do not fall under the targeted Deals.
-    - Verify if there are any blockers in the Creative or Valuation stages related to Deals. 
+    > Failures in the Line item stage are expected, as bid requests blocked at this stage do not fall under the targeted Deals.
+    - Verify if there are any blockers in the **Creative** or **Valuation** stages related to Deals. 
     - Identify the specific Deal IDs associated with errors. For more information, refer to the [Troubleshooting Deal failures](#troubleshooting-deal-failures) section below. 
 1. Compare the specific Deal ID from the [Analytics](network-analytics-report.md) report or [Buyer Deal Metrics](buyer-deal-metrics.md) report to verify if any bidding progresses beyond the Creative and Valuation stages of the buying funnel. 
     - You can pull data for the relevant time period and check for impressions on targeted Deals. 
@@ -53,7 +56,7 @@ If a **Deal** targeted by a Line Item is not being monetized, follow these steps
     - Apply the following filters and dimensions: 
         - **Filters:** Add the **Creative IDs** and **Deal IDs.**
         - **Dimensions:** Include **Deal, Creative, Error ID, and Error Message.**  
-1. If all of the above does not help identify the underlying issue, please contact Customer Support and submit a request through the [Customer Support Portaal](https://help.xandr.com/)
+1. If all of the above does not help identify the underlying issue, please contact Customer Support and submit a request through the [Customer Support Portal](https://help.xandr.com/)
 
 ## Troubleshooting deal failures
 The **Deals Troubleshooting Report** provides details on failure reasons that may impact Deal performance. Below are common failure types, explanations of their causes, and recommended steps to investigate or resolve them. 
@@ -85,7 +88,7 @@ The **Deals Troubleshooting Report** provides details on failure reasons that ma
         - At least one creative does not meet this requirement.  
     - **Steps to diagnose and resolve the issue:** You can verify with the Seller that the segment targeting methodology aligns with the Deal’s settings. 
 
-- **Deal segments on click 
+- **Deal segments on click**
     - **Causes**
         - The Seller controls whether the Deal allows users to be added to segments after a click event is recorded by a pixel.  
         - At least one creative does not meet this requirement. 

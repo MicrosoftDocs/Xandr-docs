@@ -19,9 +19,9 @@ The following categories of information can be targeted using Video Content targ
 
 | Category | Description | Targetable Values |
 |--|--|--|
-| Network | The network on which the content is shown | - Network names, such as Fox, BBC, Discovery. |
 | Video Content Duration | The length of the content | - Long-form (greater than or equal to 8 minutes)<br> - Short-form (less than 8 minutes) |
 | Video Content Genre | The genre of the program during which the ad will play | Genre categories such as Cooking, Horror, News, or Football. |
+| Video Content Network | The network on which the content is shown | - Network names, such as Fox, BBC, Discovery. |
 | Video Content Rating | The publisher-identified audience group for which the content is rated. | - All<br> - Children<br> - Teens<br> - Young adults<br> - Adults |
 | Video Delivery Type | The type of streaming content delivery | Live, Video on Demand (VOD) |
 | Video Program Type | The format of the program during which the ad will play | - Clip<br> - Event<br>- Movie<br> - Series<br> - Show<br> - Special |

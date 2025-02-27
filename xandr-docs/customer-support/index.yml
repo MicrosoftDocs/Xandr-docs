@@ -1,28 +1,39 @@
 ### YamlMime:Landing
 
-title: Customer Support Portal Guide
-summary: Welcome to Customer Support Portal Guide! All the information you need about Xandr Customer Support is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+title: Microsoft Advertising Customer Support Portal Guide
+summary: Welcome to Microsoft Advertising Customer Support Portal Guide! All the information you need about Microsoft Advertising Customer Support Portal is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation. 
 metadata:
-  title: Customer Support Portal Guide
-  description: Discover various reference docs for Xandr Customer Support
+  title: Microsoft Advertising Customer Support Portal Guide
+  description: Discover various reference docs for Microsoft Advertising Customer Support
   ms.topic: landing-page
-  ms.author: rupambaruah
+  ms.author: shsrinivasan
   ms.service: microsoft-curate
-  ms.date: 12/07/2023
+  ms.date: 01/13/2024
 
 landingContent:
   - title: Let's Get Started
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: Get Started
             url: xcs-xandr-customer-support-home.md
-          - text: Login to Customer Support Portal
-            url: xcs-logging-in-to-the-customer-support-portal.md
       - linkListType: how-to-guide
         links:
-          - text: Report an Outage
-            url: xcs-reporting-outages.md
+          - text: Login to Micosoft Advertising Customer Support portal
+            url: xcs-logging-in-to-the-customer-support-portal.md
+          - text: Customer Support Portal - Microsoft Identity Platform Login
+            url: microsoft-identity-platform-login.md
+  - title: Functionalities
+    linkLists:
+      - linkListType: how-to-guide
+        links:           
           - text: Open a New Case
             url: xcs-opening-a-new-case.md
+          - text: Update an existing Case
+            url: xcs-updating-a-case.md
+      - linkListType: reference
+        links:
+          - text: Microsoft Advertising Customer Support Portal FAQs
+            url: xcs-customer-support-portal-faqs.md
  
+

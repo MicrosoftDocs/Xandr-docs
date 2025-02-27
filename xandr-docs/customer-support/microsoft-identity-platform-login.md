@@ -1,7 +1,7 @@
 ---
 title: Customer Support Portal - Microsoft Identity Platform Login
 description: In this article, explore an overview of authenticating users for Microsoft Advertising products while setting up the Microsoft Identity Platform login account.
-ms.date: 12/11/2024
+ms.date: 11/11/2024
 ms.author: shsrinivasan
 ---
 
@@ -26,7 +26,7 @@ The following Microsoft Advertising products currently support authentication th
 - Microsoft Monetize
 - Microsoft Invest
 - Microsoft Curate
-- Microsoft Advertising Customer Support Portal (support beginning January 2025)
+- Microsoft Advertising Customer Support Portal
 
 Following Microsoft Advertising products are not supported on the Microsoft Identity Platform currently, but soon will be migrated:
 

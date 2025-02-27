@@ -127,7 +127,7 @@
         },
         {
         "source_path": "xandr-docs/customer-support/xcs-reporting-outages.md",
-        "redirect_url": https://learn.microsoft.com/en-us/xandr/customer-support/xcs-opening-a-new-case",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-opening-a-new-case",
         "redirect_document_id": false
         }
     ]

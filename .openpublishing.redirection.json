@@ -114,7 +114,21 @@
             "source_path": "xandr-docs/log-level-data/auction-segment-feed.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/log-level-data/auction-categories-feed",
             "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/customer-support/xcs-updating-my-profile.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-xandr-customer-support-home",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/customer-support/xcs-searching-the-knowledge-base.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-opening-a-new-case",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/customer-support/xcs-reporting-outages.md",
+        "redirect_url": https://learn.microsoft.com/en-us/xandr/customer-support/xcs-opening-a-new-case",
+        "redirect_document_id": false
         }
-        
     ]
 }

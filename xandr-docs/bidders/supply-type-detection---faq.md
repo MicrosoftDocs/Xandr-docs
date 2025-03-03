@@ -24,7 +24,7 @@ There are no changes to reporting; you can continue to use the supply type filte
 
 ### If I find errors, how do I report them?
 
-Report any issues using our [Customer Support Portal](https://support.ads.microsoft.com).
+Report any issues using our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ### How will Xandr supply type detection differ from the supply type I have set on my inventory?
 

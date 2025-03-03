@@ -218,7 +218,7 @@ $ curl -b cookies 'https://api.appnexus.com/batch-segment?member_id=456'
 >
 > You can read more about pagination on our Documentation Portal [here](../digital-platform-api/05---throttling-pagination-and-filtering.md).
 >
-> If you're still experiencing technical issues, you can submit a request on our [Customer Support Portal](https://support.ads.microsoft.com). Don't forget to include the job ID in your support request.
+> If you're still experiencing technical issues, you can submit a request on our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). Don't forget to include the job ID in your support request.
 
 ## JSON fields
 

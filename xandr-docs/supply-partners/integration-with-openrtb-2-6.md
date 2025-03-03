@@ -25,7 +25,8 @@ x-openrtb-version : 2.6
 -->
 
 > [!NOTE]
-> Supply partners must include a specific header value for OpenRTB 2.6 to start spending on the OpenRTB 2.6 fields listed below. Otherwise, the system will default to version 2.4 or 2.5. To update this setting, contact your account representative or submit a ticket through the support portal.
+>
+> To use OpenRTB 2.6, supply partners must send a specific header value. Otherwise, the system defaults to version 2.4 or 2.5. To update this setting, contact your account representative or submit a ticket through the support portal.
 
 ## Top-level bid request object
 

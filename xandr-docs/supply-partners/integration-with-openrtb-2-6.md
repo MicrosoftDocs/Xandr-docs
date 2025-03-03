@@ -25,7 +25,7 @@ x-openrtb-version : 2.6
 -->
 
 > [!NOTE]
-> Supply partners must be enabled for OpenRTB 2.6 to start secding the OpenRTB 2.6 fields listed below. Otherwise, the system will default to version 2.4 or 2.5. To update this setting, contact your account representative or submit a ticket through the support portal.
+> Supply partners must include a specific header value for OpenRTB 2.6 to start spending on the OpenRTB 2.6 fields listed below. Otherwise, the system will default to version 2.4 or 2.5. To update this setting, contact your account representative or submit a ticket through the support portal.
 
 ## Top-level bid request object
 

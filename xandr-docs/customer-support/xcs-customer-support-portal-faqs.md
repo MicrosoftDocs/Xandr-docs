@@ -29,7 +29,7 @@ The new [Customer Support Portal](https://support.ads.microsoft.com) displays ca
 
 - Cases created before February 2024 do not appear.
 - Closed cases do not appear.
-- If missing cases fall under these exceptions, this behavior is expected. You can still view them in the read-only legacy portal at help.xandr.com.
+- If missing cases fall under these exceptions, this behavior is expected. You can still view them in the read-only legacy portal at [support.ads.microsoft.com](https://support.ads.microsoft.com).
 
 > [!NOTE]
 > If you migrated to the new portal and need to reopen a closed case, create a new case in the new portal and reference the Case ID from the legacy portal.
@@ -40,7 +40,7 @@ The **Proceed as Guest** option is no longer available. To create a case, set up
 
 ## Can I continue accessing the legacy portal?
 
-You can continue accessing the [legacy portal](https://help.xandr.com) for the next few months. However, we recommend transitioning to the new [Customer Support Portal](https://support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
+You can continue accessing the [legacy portal](https://support.ads.microsoft.com) for the next few months. However, we recommend transitioning to the new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
 
 <!--
 

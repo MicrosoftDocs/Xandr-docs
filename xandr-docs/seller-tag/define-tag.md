@@ -61,7 +61,7 @@ For more details, see [OpenRTB](https://microsoftapc.sharepoint.com/teams/TechCo
 
 #### custom
 
-Can contain two sub-objects named **data** and **images**.  See below for further details on these properties.
+Can contain two sub-objects named **data** and **images**. See below for further details on these properties.
 
 #### data
 

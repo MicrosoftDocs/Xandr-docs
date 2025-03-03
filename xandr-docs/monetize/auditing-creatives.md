@@ -128,7 +128,7 @@ Here are some requirements to note:
 
 Creatives submitted to Microsoft Advertising for auditing will be audited using both manual and automated processes. All active creatives regardless of whether they have been submitted for auditing will be continuously monitored for malvertising prevention.
 
-Use the [Support Form](https://help.xandr.com/s/login/) to submit questions about Sherlock automated auditing. Under the **Request Type**, select **Anti-Malvertising**.
+Use the [Support Form](https://support.ads.microsoft.com) to submit questions about Sherlock automated auditing. Under the **Request Type**, select **Anti-Malvertising**.
 
 ## Related topics
 

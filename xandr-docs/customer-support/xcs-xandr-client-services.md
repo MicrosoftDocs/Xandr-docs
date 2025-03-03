@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 Welcome to the Xandr Client Services organization. This guide covers our mission, business relationship with you, issue resolution process, and other helpful resources.
 
-All requests can be submitted and routed to the appropriate Xandr team directly from our Customer Support form located at the [Customer Support Portal](https://help.xandr.com).
+All requests can be submitted and routed to the appropriate Xandr team directly from our Customer Support form located at the [Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Our mission
 
@@ -78,7 +78,7 @@ These are non-emergency product problems. For example, a bug disabling a button 
 #### Step 1: Ticket initiation
 
 1. Customer faces a product problem.
-1. Customer visits the [Support Portal](https://help.xandr.com) and submits request.
+1. Customer visits the [Support Portal](https://support.ads.microsoft.com) and submits request.
 1. To speed resolution time, the customer email should include all items listed earlier in the doc.
 
 #### Step 2: Ticket management
@@ -98,7 +98,7 @@ These are issues where -
 #### Step 1: Ticket initiation
 
 1. Customer faces a product emergency.
-1. Customer visits the [Support Portal](https://help.xandr.com) and submits an emergency request.
+1. Customer visits the [Support Portal](https://support.ads.microsoft.com) and submits an emergency request.
 1. To speed resolution time, the customer email should include all items listed earlier in the doc as well as a phone number for the emergency contact.
 
 #### Step 2: Ticket management

@@ -15,7 +15,7 @@ This document includes the necessary information for supply partners to review, 
 ## Prerequisite checklist
 
 > [!NOTE]
-> If you do not already have a customer support portal account, visit the [Login](https://help.xandr.com) page, proceed as a Guest and request a new user registration.
+> If you do not already have a customer support portal account, visit the [Login](https://support.ads.microsoft.com) page, proceed as a Guest and request a new user registration.
 
 1. Contact your account manager (or open a ticket with our support team) to confirm the following information:  
     - [Member seat ID](./understanding-the-sell-side-object-hierarchy.md) and if not requested yet, new member seat creation and API login credentials for Xandr's API.

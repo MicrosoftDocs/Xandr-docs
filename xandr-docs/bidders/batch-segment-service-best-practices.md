@@ -35,7 +35,7 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
     - EU: `https://ib.ams1.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&uid=USER_ID`
     - Asia: `https://ib.sin1.adnxs.com/cookie?member_id=MEMBER_ID&dongle=DONGLE&uid=USER_ID`
 
-1. Include the job ID in support requests. If you're experiencing technical issues, remember to include all relevant job IDs when submitting your request to the [Xandr Customer Support Portal](https://help.xandr.com/).
+1. Include the job ID in support requests. If you're experiencing technical issues, remember to include all relevant job IDs when submitting your request to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
     > [!TIP]
     > Be sure to wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to minimize the creation of new segments, reuse existing segments where possible, or use segment `"values"` to further subdivide users within existing segments. These practices will ensure successful user uploads to segments. For details on creating segment `"values"`, see [Segment Targeting](../digital-platform-api/profile-service.md).
@@ -111,7 +111,7 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
 
 1. **I don't think this is working. Can you help?**
 
-    Sure! Submit a case through [Xandr Customer Support](https://help.xandr.com/). Note that while the job status reports are kept with 30 days of jobs history, we only save the actual file of data for 3 days. Please be sure to submit your case as soon as possible after uploading so that we can look at the data you uploaded.
+    Sure! Submit a case through [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). Note that while the job status reports are kept with 30 days of jobs history, we only save the actual file of data for 3 days. Please be sure to submit your case as soon as possible after uploading so that we can look at the data you uploaded.
 
 ## Related topics
 

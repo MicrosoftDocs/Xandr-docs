@@ -12,7 +12,7 @@ Full product support is available only to Xandr customers. If you are not yet a 
 > [!NOTE]
 > **For Current Xandr customers:**  
 >
-> All support requests can be submitted and routed to the appropriate Xandr team directly from the Customer Support Request Form located on our [Customer Support Portal](https://help.xandr.com/).
+> All support requests can be submitted and routed to the appropriate Xandr team directly from the Customer Support Request Form located on our [Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Training
 

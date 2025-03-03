@@ -28,7 +28,7 @@ Second, inventory available on our platform may be tagged with content categorie
 - **Sellers**: Auditing may also be done by the network, aggregator, or exchange that represents the publisher.
   
   > [!NOTE]
-  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory or inventory that should be banned under our blocklist criteria, contact us via [Customer Support](https://help.xandr.com/) and select "Inventory Quality" as the request type.
+  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory or inventory that should be banned under our blocklist criteria, contact us via [Customer Support](https://support.ads.microsoft.com) and select "Inventory Quality" as the request type.
 
 ## Standards
 
@@ -61,7 +61,7 @@ Domains listed as "unauditable" will be available for managed line items, any bu
 
 - **Website has no ads on page**: Sites that contain no visible ad units.
 
-  To contest the audit status of a site, contact us via [Customer Support](https://help.xandr.com/) and select "**Inventory Quality**" as the request type. In the request, please detail your relationship with the publisher and add a brief description of why you believe the site has not been audited correctly.
+  To contest the audit status of a site, contact us via [Customer Support](https://support.ads.microsoft.com) and select "**Inventory Quality**" as the request type. In the request, please detail your relationship with the publisher and add a brief description of why you believe the site has not been audited correctly.
 
 ## Inventory categorization standards
 

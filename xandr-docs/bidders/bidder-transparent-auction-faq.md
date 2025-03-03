@@ -121,4 +121,4 @@ In the latter case, the second-price auction appears to function as a first-pric
 
 ## Where do I go if I need help?
 
-Contact your Xandr representative or [Xandr customer support](https://help.xandr.com/) for assistance.
+Contact your Xandr representative or [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) for assistance.

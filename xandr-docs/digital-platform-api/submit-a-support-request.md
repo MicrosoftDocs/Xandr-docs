@@ -7,4 +7,4 @@ ms.custom: digital-platform-api
 
 # Submit a support request
 
-All support requests can be submitted and routed to the appropriate Xandr team directly from our [Customer Support Portal](https://help.xandr.com).
+All support requests can be submitted and routed to the appropriate Xandr team directly from our [Customer Support Portal](https://support.ads.microsoft.com).

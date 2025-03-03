@@ -7,7 +7,7 @@ ms.custom: digital-platform-api
 
 # Digital Platform API - Inventory Availability report
 
-Inventory availability reports offer insight into the types of inventory available on the platform. These reports are available by request only; use the [support portal](https://help.xandr.com/s/login/). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Also note:
+Inventory availability reports offer insight into the types of inventory available on the platform. These reports are available by request only; use the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). Due to the structure of our impression availability databases, reporting dimensions are limited to those outlined below. Also note:
 
 - Our databases contain 30 days worth of historical inventory availability data. Reports are therefore limited to this timeframe.
 - Additional reporting restrictions may apply to mobile impressions. Contact your Xandr representative for further information.

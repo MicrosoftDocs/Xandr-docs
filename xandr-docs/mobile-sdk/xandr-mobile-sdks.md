@@ -79,8 +79,8 @@ Xandr's Mobile SDKs give app developers a fast, convenient way to monetize their
 
 ## Support
 
-The [Xandr Customer Support Portal](https://help.xandr.com/s/login) is for issues that must be addressed by our Support team.
-Examples of issues that should be submitted to the [Xandr Customer Support Portal](https://help.xandr.com/s/login/) include:
+The [Xandr Customer Support Portal](https://support.ads.microsoft.com) is for issues that must be addressed by our Support team.
+Examples of issues that should be submitted to the [Xandr Customer Support Portal](https://support.ads.microsoft.com) include:
 
 - Only PSAs are returned
 - Incorrect ad quality settings for the publisher

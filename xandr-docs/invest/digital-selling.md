@@ -13,7 +13,7 @@ As a Digital Seller, you will receive the following documents:
 - Netting Statement (if opted into netting)
 - Invoice
 
-If you change your billing address, be sure to submit a ticket to the Microsoft Advertising Client Finance team by selecting Contact Support in the [Microsoft Advertising Customer Support Portal](https://help.xandr.com/s/login/).
+If you change your billing address, be sure to submit a ticket to the Microsoft Advertising Client Finance team by selecting Contact Support in the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Related topics
 

@@ -170,7 +170,7 @@ Real Time Data is offered within this report (not all users have access). Tradit
 |---|---|
 | partner | When you purchase inventory from one of our external supply partners, you will be charged your contracted auction service fee. |
 | platform | When you purchase platform inventory, you will be charged your contracted auction service fee. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Microsoft Advertising support from the [Customer Support Portal](https://help.xandr.com/). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact your Microsoft Advertising support from the [Customer Support Portal](https://support.ads.microsoft.com). |
 
 ### Bid types
 

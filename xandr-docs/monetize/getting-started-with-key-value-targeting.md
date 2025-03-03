@@ -78,7 +78,7 @@ The following reports are available:
   This is the same report as the preceding, but available from the API.
 
 - [Key Value Auction Feed](../log-level-data/key-value-auction-feed.md)  
-  This is the log-level data feed for key/value auctions. (Contact your representative or [customer support](https://help.xandr.com) for access to this feed).
+  This is the log-level data feed for key/value auctions. (Contact your representative or [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) for access to this feed).
 
 ## Tagging
 

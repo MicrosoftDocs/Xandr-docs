@@ -22,7 +22,7 @@ Microsoft Advertising can automatically insert the `${CLICK_URL}` and `${CACHEBU
 > [!NOTE]
 > Microsoft Advertising can't auto insert the `${CLICK_URL}` and `${CACHEBUSTER}` macros into Google's DDM tags. However, these third-party tags can still be manually inserted.
 
-Feel free to submit a [support ticket](https://help.xandr.com/) if you'd like to have a specific tag type added to our supported list. When creating the support ticket, be sure to provide:
+Feel free to submit a [support ticket](https://support.ads.microsoft.com) if you'd like to have a specific tag type added to our supported list. When creating the support ticket, be sure to provide:
 
 - the name of the ad server that these tags appear on.
 - the exact parameters used to traffic the `${CLICK_URL}` and `${CACHEBUSTER}` macros.

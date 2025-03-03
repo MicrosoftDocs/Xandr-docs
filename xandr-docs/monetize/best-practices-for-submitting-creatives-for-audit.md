@@ -32,7 +32,7 @@ This process takes time and manpower because the human auditing process is very 
   > [!NOTE]
   > With forewarning, we will be able to devote additional resources to ensuring your creatives are audited as quickly as possible, and keep you up to date if we see problems with your bulk creative uploads. You will not run the risk of having your creatives de-prioritized or completely removed from our queue.
 
-  To keep us informed about your creative submissions, contact either your Microsoft Advertising representative or the Audit Client Services team directly through the support form at [Customer Support](https://help.xandr.com/s/login/).
+  To keep us informed about your creative submissions, contact either your Microsoft Advertising representative or the Audit Client Services team directly through the support form at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Related topics
 

@@ -163,7 +163,7 @@ Creatives are categorized by media type and media subtype. Media type defines th
 >
 > - If you do not specify either supported media types or supported media subtypes, the `"Banner"` media type and all of its subtypes will be allowed by default.
 > - You can combine the `"Banner"` and `"Text"` media types, and any combination of their media subtypes, on a single placement, but you cannot combine any of the other media types and media subtypes. This limitation ensures that only appropriate creatives are served on a placement. For example, a placement that allows creatives of the media type `"Video"` is intended to be fed to a video player; it would not make sense to allow creatives of any other media type, such as `"Interstitial"`, to serve on the placement.
-> - You can set a placement to allow the `"Expandable"` media type or any of its subtypes for direct inventory. If you want to support expandable creatives for placements that are available for reselling to other platform members, please provide the placement's ID to [support](https://help.xandr.com/) for verification.
+> - You can set a placement to allow the `"Expandable"` media type or any of its subtypes for direct inventory. If you want to support expandable creatives for placements that are available for reselling to other platform members, please provide the placement's ID to [Customer Support Portal](https://support.ads.microsoft.com) for verification.
 
 ### Supported mime types
 

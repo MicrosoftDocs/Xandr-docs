@@ -82,7 +82,7 @@ https://ib.adnxs.com/tt?id=3457&size=728x90&dongle=MyPassWord&debug_member=999&r
 ## Important points
 
 > [!NOTE]
-> Placement tag IDs can be found in the UI for your direct inventory, but not for real-time inventory. If you do not have a test publisher and placement to use, contact Microsoft Advertising support at [Customer Care](https://help.xandr.com)for assistance.
+> Placement tag IDs can be found in the UI for your direct inventory, but not for real-time inventory. If you do not have a test publisher and placement to use, contact Microsoft Advertising support at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) for assistance.
 >
 > If an item is out of budget, inactive, or in pacing sleep (i.e. it is spending evenly across the day), it will not appear in the log. Generally, refreshing will cause paced objects to appear (because they will have come out of sleep). But heavily paced objects (e.g. spend $5 evenly with no targeting so there's a lot of sleeping between bids) may not appear in the final list of bidding campaigns.
 

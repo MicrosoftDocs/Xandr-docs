@@ -75,7 +75,7 @@ Using the [Creative Service](creative-service.md), set the allow_audit field to 
 
 **If I disagree with the results of an audit, what should I do?**
 
-Use our Customer Support form at [Customer Care](https://help.xandr.com/s/login/) to contact the Ad Quality team.
+Use our Customer Support form at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to contact the Ad Quality team.
 
 **What does is_expired=1 mean?**
 

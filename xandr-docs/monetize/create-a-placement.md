@@ -59,7 +59,7 @@ The Microsoft Advertising platform categorizes creatives by media type and media
 - **Expandable Placements:** You can set a placement to allow the "Expandable" media type or any of its subtypes for direct (not resellable) inventory only.
 
     > [!NOTE]
-    > If you check this option, you will get an error message if you attempt to save the placement after including this media type for resellable inventory. If you want to support expandable creatives for placements associated with placement groups that have been made available for reselling to other platform members, the placement ID and URL must be provided to [support](https://help.xandr.com/) for verification.
+    > If you check this option, you will get an error message if you attempt to save the placement after including this media type for resellable inventory. If you want to support expandable creatives for placements associated with placement groups that have been made available for reselling to other platform members, the placement ID and URL must be provided to [support](https://support.ads.microsoft.com) for verification.
 
     When exporting and placing an expandable tag on your publisher's page, declare a size in the `size=` parameter as you would in a standard banner tag. When an expandable creative is served to the tag, it will expand outside of the designated size.
 

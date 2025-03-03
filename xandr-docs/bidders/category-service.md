@@ -24,7 +24,7 @@ The read-only Category Service allows you to view all categories that are regist
 > The fields `countries_and_brands` and `countries_and_regions` defined below are being used by our system to allow gambling-related creatives to serve in the countries and regions where they're legally allowed, putting us in compliance with applicable laws.
 >
 > - For more information about our official gambling-related policies, see our buy-side and sell-side gambling policies.
-> - For more information on how allowlisting works by country and region, contact [Customer Support](https://help.xandr.com/s/login/).
+> - For more information on how allowlisting works by country and region, contact [Customer Support](https://support.ads.microsoft.com).
 
 | Field | Type | Description |
 |:---|:---|:---|

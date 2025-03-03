@@ -39,7 +39,7 @@ In addition to applying sensitive categories to your self-audited creatives, the
 > [!NOTE]
 > Brand search is case sensitive. It is advised to start the search with a Capital letter.
 
-When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at [https://help.xandr.com](https://help.xandr.com). Be sure to set the **Request Type** to **Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
+When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at  [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). Be sure to set the **Request Type** to **Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
 
 If you have multiple brands to add, you can submit an Excel spreadsheet that includes the information above for each brand.
 

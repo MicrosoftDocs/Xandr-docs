@@ -7,10 +7,9 @@ ms.date: 10/28/2023
 # Customer support portal guide
 
 > [!NOTE]
-> If you have a portal account, please contact Customer Support only through the [Customer Support Portal](https://help.xandr.com/) instead of using older methods or opening a case by email.
+> If you have a portal account, please contact Customer Support only through the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) instead of using older methods or opening a case by email.
 
-The [Customer Support Portal](https://help.xandr.com/) lets you search a customer support knowledge base of
-common questions and tasks, and create, update, and review support cases.The Support Knowledge Base contains articles that answer common questions and explain how to troubleshoot common issues and perform common tasks. Knowledge base articles often link to the [docs portal](../index.yml) for more detailed information or more complicated tasks. The [docs portal](../index.yml) provides an exhaustive overview of concepts and features. It includes product documentation, developer and API documentation, and other artifacts.
+The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com)lets you search a customer support knowledge base of common questions and tasks, and create, update, and review support cases.The Support Knowledge Base contains articles that answer common questions and explain how to troubleshoot common issues and perform common tasks. Knowledge base articles often link to the [docs portal](../index.yml) for more detailed information or more complicated tasks. The [docs portal](../index.yml) provides an exhaustive overview of concepts and features. It includes product documentation, developer and API documentation, and other artifacts.
 
 This guide provides instructions on how to use the Customer Support Portal.
 

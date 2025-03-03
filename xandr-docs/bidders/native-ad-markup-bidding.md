@@ -317,7 +317,7 @@ Your creative will not be permitted to serve. The audit failure may be due to ro
 
 ### Where do I go for more help?
 
-If you have additional questions, contact your account representative or [customer support](https://help.xandr.com/s/login/).
+If you have additional questions, contact your account representative or [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Related topic
 

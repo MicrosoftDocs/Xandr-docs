@@ -24,7 +24,7 @@ You may want to prevent certain brands from serving on your ad placements, wheth
 1. Navigate to the **Settings** tab and select **Brands**.
 1. In the **Brands** section, search for brands to block.
 
-    If a brand you wish to block does not appear in the search results, submit a support ticket at [Customer Support Portal](https://help.xandr.com) requesting to add the brand to Microsoft Advertising's database.
+    If a brand you wish to block does not appear in the search results, submit a support ticket at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) requesting to add the brand to Microsoft Advertising's database.
 
 1. Select the checkbox for each brand you want to block.
 1. After you select all the brands you want to block, select **Actions** \> **Banned**.

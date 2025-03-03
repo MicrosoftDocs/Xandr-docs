@@ -26,7 +26,7 @@ This documentation provides step by step guide on how to migrate existing authen
 
        :::image type="content" source="media/monetize-login-b.png" alt-text="Screenshot of create a Microsoft Account.":::
 
-1. In the **Sign In page**, enter Email ID associated with your Microsoft Advertising account login and click **Next**. If your have registered a different email ID for Microsoft products, ensure that Microsoft Advertising platform account matches the email used to login to Microsoft. If they do not match, contact the designated person with the role of User Manager from your organization to do the needful or you can raise a ticket in [Microsoft Advertising Support portal](https://help.xandr.com/s/login/).
+1. In the **Sign In page**, enter Email ID associated with your Microsoft Advertising account login and click **Next**. If your have registered a different email ID for Microsoft products, ensure that Microsoft Advertising platform account matches the email used to login to Microsoft. If they do not match, contact the designated person with the role of User Manager from your organization to do the needful or you can raise a ticket in [Microsoft Advertising Support portal](https://support.ads.microsoft.com).
 
     :::image type="content" source="media/monetize-login-c.png" alt-text="Screenshot of Sign In page.":::
 

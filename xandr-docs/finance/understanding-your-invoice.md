@@ -34,10 +34,8 @@ Microsoft Advertising's platform; this is the amount you must
 pay Microsoft Advertising. You can reconcile some of these
 amounts using reports in the UI. For more information see [Reconciling Your Invoice with Reporting](reconciling-your-invoice-with-reporting.md).
 
-
 1. **Invoice Number** - The unique invoice number. Please include your
-    invoice number when using the [Customer
-    Service Portal](https://help.xandr.com/s/login/) to contact the Client Finance group with
+    invoice number when using the [Customer Service Portal](https://support.ads.microsoft.com) to contact the Client Finance group with
     questions. If it's your first time using the Customer Service
     Portal, select "Proceed as a Guest" to submit your case. Then, while
     we answer your first case, we'll also send you an email to setup an
@@ -57,8 +55,7 @@ amounts using reports in the UI. For more information see [Reconciling Your Invo
     your Insertion Order billing period).
 
 1. **Bill To** - The name and address of the customer. To update this
-    information, create a Client Finance case via the [Customer
-    Service Portal](https://help.xandr.com/s/login/).
+    information, create a Client Finance case via the [Customer Service Portal](https://support.ads.microsoft.com).
 
 1. **Payment Terms** - The number of days after the end of the relevant activity billing period when payment is due, as specified in the Payment Terms section of your Microsoft Advertising Service Exhibit.
 

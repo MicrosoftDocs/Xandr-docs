@@ -13,7 +13,7 @@ Bidders receive notifications regarding auction results, bid response time, and 
 
 ## Internal auction
 
-For all auctions we conduct, bidders will receive notifications when an auction is won and when an error occurs. Bidders can also opt into receiving notifications when an auction is lost by [submitting a support request](https://help.xandr.com/s/login/).
+For all auctions we conduct, bidders will receive notifications when an auction is won and when an error occurs. Bidders can also opt into receiving notifications when an auction is lost by [submitting a support request](https://support.ads.microsoft.com).
 
 ## External auction
 
@@ -60,7 +60,7 @@ For all auctions conducted by a third-party, bidders will receive a pending noti
 
 ## Lost notifies
 
-We can send you notify requests when you send a nonzero bid response for an auction, and don't win the auction. This can occur either because you were outbid, or because your bid was rejected. Bids can be rejected for either technical reasons such as a badly formed JSON message or for business-level reasons such as using a creative that is blocked by the seller, or sending a bid price which is below the floor for a deal. If you are having trouble getting delivery on a given creative, lost notify messages are a great way to see why your creative is not winning more impressions. To turn on lost notify messages, please submit a [support request](https://help.xandr.com/s/login/) and a representative can enable this for your bidder.
+We can send you notify requests when you send a nonzero bid response for an auction, and don't win the auction. This can occur either because you were outbid, or because your bid was rejected. Bids can be rejected for either technical reasons such as a badly formed JSON message or for business-level reasons such as using a creative that is blocked by the seller, or sending a bid price which is below the floor for a deal. If you are having trouble getting delivery on a given creative, lost notify messages are a great way to see why your creative is not winning more impressions. To turn on lost notify messages, please submit a [support request](https://support.ads.microsoft.com) and a representative can enable this for your bidder.
 
 ## Error list
 

@@ -15,7 +15,7 @@ In February, a new Customer Support Portal became available for opt-in. This upd
 
 ## What happens after I start using the new Customer Support Portal?
 
-Once you have signed into the new [Customer Support Portal](https://support.ads.microsoft.com), the [legacy portal](hhttps://support.ads.microsoft.com) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
+Once you have signed into the new [Customer Support Portal](https://support.ads.microsoft.com), the [legacy portal](https://support.ads.microsoft.com) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
 
 ## How can I view cases created under a different email address?
 

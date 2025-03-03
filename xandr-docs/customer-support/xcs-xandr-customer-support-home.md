@@ -1,128 +1,87 @@
 ---
-title: Welcome to Xandr Customer Support
-description: In this article, find links resources for Xandr Customer Support.
+title: Microsoft Advertising Support Team
+description: In this article, find useful information on Microsoft Advertising Customer Support.
 ms.custom: customer-support
-ms.date: 10/28/2023
+ms.author: shsrinivasan
+ms.date: 01/13/2025
 ---
 
-# Welcome to Xandr Customer Support
+# Microsoft Advertising support team
 
-All requests for technical support or inquiries can be submitted and routed to the appropriate Xandr team directly from our [Customer Support Portal](https://support.ads.microsoft.com). For business-related questions or issues, please contact your Xandr Account Representative.
+At Microsoft, we aim to provide exceptional customer support to help you navigate our platform seamlessly. Whether you have a technical issue or a general inquiry, our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) serves as a centralized hub for submitting and routing requests to the appropriate Xandr team for swift resolution. 
+> [!NOTE] 
+> For business-related inquiries, such as billing or training, please contact your Xandr Account Representative directly. 
 
 ## Overview
 
-Welcome to the Xandr Client Services organization. This guide covers our mission, business relationship with you, issue resolution process, and other helpful resources.
+The Microsoft Advertising Support Team is committed to delivering a superior customer experience by setting new industry standards for responsiveness and communication.  
 
-All requests can be submitted and routed to the appropriate Xandr team directly from our Customer Support form located at the [Customer Support Portal](https://support.ads.microsoft.com).
+The  Microsoft Advertising Support Team serves as your central point of contact for addressing technical challenges, ensuring platform stability, and driving business success through tailored support.
 
-## Our mission
+Here’s what we do: 
 
-Xandr Client Services is striving to set a new industry standard for customer responsiveness and communication. We achieve our higher standard in a few ways:
+- **Single point of contact:** We manage all technical issues related to the Xandr platform. Whether the issue requires a quick fix or collaboration with engineering teams, we stay in touch with you until it’s resolved. 
+- **Knowledge sharing and best practices:** We reinforce best practices introduced during your initial training and share ongoing tips and insights to improve your experience. Additionally, we offer free product training through the Xandr Customer Webinar Program to help you optimize platform usage. 
+- **Technical assistance:** We assist with day-to-day challenges in buying, selling, or managing your campaigns. 
+- **Configuration support:** We help with critical configurations or provide necessary data, provided there’s a strong business justification, when platform functionality doesn’t fully meet your requirements.
+<!-- - **Delivering value at no additional cost:** Microsoft Advertising Support Team is included in your partnership with us. For any questions, your Xandr Account Representative is available to assist.--> 
 
-1. We are your single point of contact for technical problems with the Xandr platform. Whether the issue can be resolved quickly or requires a long-term engineering fix, we will communicate with you until it's fully resolved.
-1. On an ongoing basis, Client Services shares with you the best practices and helpful tips we've learned. We are a frequent contributor to the email list. We also provide free product training as part of the Xandr Customer Webinar Program.
-1. Xandr Client Services are provided at no additional cost to Xandr customers. If you have any question, please be sure to reach out to your Xandr Account Representative.
+We prioritize your success by resolving technical challenges, offering expert advice, and maintaining a reliable and scalable technology platform. To maximize the value of this partnership, we encourage you to: 
 
-## You and Client Services: A Partnership
+- **Leverage the documentation Help Centre:** Before submitting a support request, explore our [Help documentation](https://learn.microsoft.com/xandr/) on product offerings, developer resources, financial tools, and additional services to find the information you need. 
+- **Conduct preliminary research:** Investigate and triage issues as much as possible before reaching out. This helps us address your concerns more efficiently. 
+- **Collaborate with internal SMEs:** Engage your internal subject matter experts (SMEs) for assistance in confirming issues and preparing detailed support requests. 
+- **Provide complete information:** When submitting a support request, include a detailed description of the issue and its impact on your business goals. 
 
-It is our highest priority to help you succeed, and we aim to surpass your expectations of us as a service organization. This includes resolving technical issues quickly and effectively, giving helpful advice, and working hard to provide a stable and reliable technology platform for your business. We also aim to provide comprehensive and informative documentation to enable our customers to be more self-sufficient. We view our relationship with you as a partnership. In the spirit of that partnership, there are a few things that you can do to help us extend service to you more effectively:
+## Requests handled by Microsoft Advertising support team
 
-1. Please review our relevant articles prior to submitting a support request. The Documentation Help Center is a massive source of information that we have dedicated significant effort into building as a customer resource.
-1. Please do as much research and triaging of issues as possible before submitting a request to our team. Your upfront effort will ultimately help us resolve your issues faster.
-1. Please contact your internal Xandr subject matter expert, or “SME”, with potential technical issues. Your Xandr SME will be able to assist you with confirming the issue and constructing an informative support request to our team.
-1. After you have performed a thorough investigation on your end, please include the following detailed information in your support request:
-    1. Description of the problem, including as much detail as possible, and the impact on your immediate goals
-    1. All relevant object IDs
-    1. Environment details (bidder id, member id, creative id, etc)
-    1. Steps to reproduce the problem, including test pages, URLs, etc.
-    1. Screenshot(s) for all UI-related issues
-    1. Browser and Operating System used (including version numbers)
+The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) is your single access point for submitting technical issues and inquiries related to the Xandr platform. Our team is dedicated to ensuring that your experience on our platform is seamless and productive. 
+ 
+> [!NOTE] 
+> The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) currently supports Microsoft Invest, Microsoft Monetize, Microsoft Curate, Bidder, and Yield Analytics (formerly Yieldex). 
 
-## What types of requests should go to Client Services?
-
-The Client Services team is your single point of contact for all technical issues pertaining to our ad platform. We are excited to help you leverage our technology to drive success for your business. We are here to reinforce best practices taught during your initial training, help to correct day-to-day issues occurring across your buying or selling, and to identify and resolve any product bugs or gaps. We will dig deeply into any unexpected behavior that you may find and work together with our Engineering team to ensure that we provide the most stable and efficient ad platform possible.
-
-The Xandr platform is constantly evolving to meet the varied needs of our growing customer base. Our Product and Engineering teams are dedicated to releasing useful features to help our customers drive more success on the platform, however we recognize that we do not have the capacity to deliver on every product enhancement request that we receive. Our Client Services team is available to make important configuration changes or to pull necessary data sets in cases where specific functionality is not currently available in our product and there is a corresponding strong business justification for the request.
-
-In summary, the request types will be directed via the support form to the following teams as shown below:
-
-| Request Type | Example | Xandr Team |
-|---|---|---|
-| Anti-malvertising questions | Creative loading malware served on owner's inventory | Anti-Malvertising |
-| App bugs | App will not load | App Support |
-| Creative Auditing questions | Creative was rejected but should be approved | Ad Quality |
-| Critical data pulls that cannot be retrieved from the product | N/A | Client Services |
-| Inventory Quality questions | Campaign serving on a site that does not meet inventory standards | Inventory Quality |
-| Issues with technical implementation | Ad calls return errors due to setup problems | Client Services |
-| Necessary manual configuration changes that cannot be accomplished through the product | Data provider segment sharing | Client Services |
-| Observed ad serving issues | Placements start showing blanks without apparent cause | Client Services |
-| Technical difficulties related to purchasing and selling media | Campaign will not serve for any discernible reason | Client Services |
-| Traffic Quality questions | Suspiciously high CTR | Client Services |
-| UI/API bugs and product issues | Button not functioning, API PUT call not making the expected changes | Client Services |
+ | Request type | Example |
+|---|---|
+| Anti-malvertising issues | Malware detected in Creative  |
+| App bugs | Application fails to load  |
+| Creative auditing issues | Creative incorrectly rejected  | 
+| Critical data pulls that cannot be retrieved from the product | N/A | 
+| Inventory quality questions | Campaigns running on non-compliant inventory | 
+| Issues with technical implementation | Ad calls returning errors  | 
+| Necessary manual configuration changes that cannot be accomplished through the product | Data provider segment sharing  | 
+| Observed ad serving issues | Blank placements appearing without explanation | 
+| Technical difficulties related to purchasing and selling Media | Campaign not serving for any discernible reason | 
+| Traffic quality questions | Unusual CTR observed  | 
+| UI or API bugs and product issues | Buttons not functioning or incorrect API responses | 
 
 > [!NOTE]
-> The following request types should be directed to your Xandr Account Representative:
->
-> - Business-related questions
-> - Billing
-> - Training
-> - Requests for enhancement
-> - Product roadmap inquiries
-> - General product usage
-> - Participation in alpha beta testing for a feature or functionality
+> We also continuously evolve our platform to meet the diverse needs of our customers. While we aim to address as many requests as possible, some feature enhancements or customizations may fall outside our immediate capacity. 
 
-## Our issue resolution process
+## Submit a request
 
-Xandr has a Customer Support process for Standard Issues and for Emergency Issues. Customers are expected to identify a Single Point of Contact who is authorized to create tickets on the customer's behalf.
+You can submit all requests directly through the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) by completing the [Customer support contact form](https://support.ads.microsoft.com/contact-support)located at the portal. This ensures your request is routed to the appropriate team for timely assistance. 
 
-### Standard issues
+> [!NOTE]
+> Requests are automatically routed to the appropriate team based on the Request type. 
 
-These are non-emergency product problems. For example, a bug disabling a button in Xandr UI which should be enabled.
+When submitting a request, include: 
+- A detailed description of the issue and its impact on your business goals. 
+- Relevant object IDs (For example, Bidder ID, Member ID, Creative ID). 
+- Steps to reproduce the issue (For example, test pages or URLs). 
+- Screenshots for UI-related problems. 
+- Browser and Operating system details (including version numbers). 
 
-**Step 1: Ticket initiation**
+> [!NOTE] 
+> For the following inquiries, please reach out to your Xandr Account Representative: 
+> - Business-related inquiries 
+> - Product training 
+> - Product enhancement requests 
+> - Roadmap discussions 
+> - General product usage 
+> - Participation in feature testing (Alpha or Beta) 
 
-1. Customer faces a product problem.
-1. Customer visits the [Support Portal](https://support.ads.microsoft.com) and submits request.
-1. To speed resolution time, the customer email should include all items listed earlier in the doc.
 
-**Step 2: Ticket management**
+## Related topics
 
-1. Client Services acknowledges the ticket within 24 hours, generally much faster.
-1. Client Services diagnoses the issue, asks follow-up questions as necessary
-1. If Client Services can resolve the issue for the customer, it will, and then close the ticket.
-1. If the issue requires an engineering bug fix, Client Services will keep the ticket open until the issue is fixed, and then notify the Customer of the resolution.
-
-### Emergency issues
-
-These are issues where -
-
-1. An essential production feature is broken with no available workaround; and/or
-1. The problem will cause significant financial losses for the customer. For example, Widespread ad serving failures or an UI/API not accessible.
-
-**Step 1: Ticket initiation**
-
-1. Customer faces a product emergency.
-1. Customer visits the [Support Portal](https://support.ads.microsoft.com) and submits an emergency request.
-1. To speed resolution time, the customer email should include all items listed earlier in the doc as well as a phone number for the emergency contact.
-
-**Step 2: Ticket management**
-
-1. Client Services acknowledges ticket within 1 hour, generally much faster.
-1. Client Services diagnoses the issue, asks follow-up questions as necessary.
-1. Client Services stays in frequent contact with the customer until the issue is resolved.
-1. The Customer's Xandr Account Representative is notified.
-
-## Response times
-
-Xandr Client Services' expected response times are:
-
-| Issue Type | Expected Response Time |
-|---|---|
-| Standard Issue | No more than 1 business day |
-| Emergency Issue | No more than 1 hour |
-
-Our working hours are 9am to 6pm Eastern Time. Tickets created for Standard Issues outside of our working hours will be responded to no later than the beginning of the next work day.
-
-Xandr makes every effort to respond significantly sooner than the maximum response times.
-
-Thank you for reviewing this introduction to our team and we look forward to helping you be massively successful on our platform!
+- [Login to Microsoft Advertising Customer Support Portal](xcs-logging-in-to-the-customer-support-portal.md)
+- [Microsoft Advertising Customer Support Portal FAQs](xcs-customer-support-portal-faqs.md)

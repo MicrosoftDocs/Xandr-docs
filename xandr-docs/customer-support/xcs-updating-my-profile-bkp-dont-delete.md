@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 ## Update profile
 
-Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base articles, or request support.
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base articles, or request support.
 
 Your Customer Support Portal profile includes your name and photo.
 
@@ -22,7 +22,7 @@ Click on your profile photo to upload a new photo, or update your current one.
 
 ## Update settings
 
-Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base articles, or request support.
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base articles, or request support.
 
 You can update your contact information, password, set email preferences, customize the language, locale, and time zone used for the portal. Go to **Profile** > **My Settings**, and select the appropriate options from the drop-down menus.
 
@@ -51,7 +51,7 @@ Although a number of settings are visible, these features are not currently in u
 
 ## Change password
 
-Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base
 articles, or request support.
 
 You can use the **Forgot your password?** link on the login page to reset your password for the Customer Support

@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Email in the customer support portal
 
-Log in to the [Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base
 articles, or request support.
 
 If you contacted support as a guest, without logging in to the portal, you will only be able to communicate via email.

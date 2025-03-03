@@ -19,7 +19,7 @@ We have developed a [Service Policy](../policies-regulations/index.yml) to ensur
 
 ## Contact our team
 
-If you have any malware related issues or questions, please complete our [Customer Support form](https://help.xandr.com/) and select **Anti-Malvertising** as the **Request Type**. If you feel that your creative has been deactivated erroneously for loading a non-malicious domain, please open a ticket and provide your reasoning as well as contacts for the domain owner so that we are able to further
+If you have any malware related issues or questions, please complete our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and select **Anti-Malvertising** as the **Request Type**. If you feel that your creative has been deactivated erroneously for loading a non-malicious domain, please open a ticket and provide your reasoning as well as contacts for the domain owner so that we are able to further
 investigate.
 
 ## Violation reports and automated emails
@@ -28,7 +28,7 @@ Upon detecting a violation, our system will send an email to the client contact 
 
 ## Remove a domain from our blocklist
 
-We build our blocklists from a variety of sources both internal and external. Our team investigates each of these domains, which remain blocklisted if we are unable to contact the owner and determine the validity. If you feel a domain has been incorrectly blocklisted, use our [Customer Support form](https://help.xandr.com/) to open a ticket. Select **Anti-Malvertising** as the **Request Type** and provide reasons as to why the domain should be removed from our blocklist as well as contacts for the owner of the domain. Here are some examples of the details that we will need:
+We build our blocklists from a variety of sources both internal and external. Our team investigates each of these domains, which remain blocklisted if we are unable to contact the owner and determine the validity. If you feel a domain has been incorrectly blocklisted, use our [Customer Support form](https://support.ads.microsoft.com) to open a ticket. Select **Anti-Malvertising** as the **Request Type** and provide reasons as to why the domain should be removed from our blocklist as well as contacts for the owner of the domain. Here are some examples of the details that we will need:
 
 - Domain owner and their main business website, business address, and any other details
 - Direct contact for the owner of the domain (email is fine)

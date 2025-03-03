@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Reporting outages
 
-Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base articles, or request support.
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base articles, or request support.
 
 An outage occurs when an essential production feature is broken with no viable workaround. Examples include:
 
@@ -26,7 +26,7 @@ If you are experiencing an outage and don't see an alert, you can report the out
 
 ## Step 1: Log in and open a case
 
-Log in to the [Customer Support Portal](https://help.xandr.com) and click **Contact Support**.
+Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and click **Contact Support**.
 
 > [!NOTE]
 >
@@ -71,7 +71,7 @@ Select the **Member ID** related to your request from the drop down menu.
 
 You can add up to ten email addresses to be cc'd on case updates. These users will be emailed the case details and any new comments added to the case. Ensure that the email addresses are correct, separated by "," and that everyone you've cc'd would like to receive updates. You can update the cc addresses after the case is opened or request that an agent do so.
 
-If anyone you've cc'd on a case would like a portal account, they can visit the [Login](https://help.xandr.com) page, proceed as a Guest, and click **Contact Support**.
+If anyone you've cc'd on a case would like a portal account, they can visit the [Login](https://support.ads.microsoft.com) page, proceed as a Guest, and click **Contact Support**.
 
 ## Step 8. Add attachments (Optional)
 

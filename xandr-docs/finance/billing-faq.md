@@ -29,7 +29,7 @@ If you have over-paid, Microsoft Advertising can:
 - send a refund via ACH/Wire payment or
 - apply this credit to an outstanding invoice of your choosing
 
-To notify us that you have overpaid and specify whether you prefer a refund or a credit, login to our [Customer Support Portal](https://help.xandr.com/s/login/) and navigate to the **Client Finance** section to submit a ticket. Microsoft Advertising will then ensure that your credit is applied as desired and processed as quickly as possible.
+To notify us that you have overpaid and specify whether you prefer a refund or a credit, login to our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the **Client Finance** section to submit a ticket. Microsoft Advertising will then ensure that your credit is applied as desired and processed as quickly as possible.
 
 ### When are credits processed? When will I receive a separate credit memo as opposed to an itemized credit on my invoice?
 
@@ -85,11 +85,11 @@ Part of the Microsoft Advertising platform's role is to track, consolidate, and 
 
 ### How do I add or remove recipients from the invoice and statement distribution lists?
 
-To request changes, login to the [Customer Support Portal](https://help.xandr.com/s/login/) and navigate to the **Client Finance** section. The distribution lists will be updated for the following month's invoice cycle.
+To request changes, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the **Client Finance** section. The distribution lists will be updated for the following month's invoice cycle.
 
 ### Can I update the billing name that appears on the invoice and have it resent?
 
-Yes. To request an entity name change, use the [Business Support page](https://help.xandr.com/s/login/) (be sure to select "My Account Questions" as the **Request Type**) to enter your new billing name and/or address and provide a reason for the change.
+Yes. To request an entity name change, use the [Business Support page](https://support.ads.microsoft.com) (be sure to select "My Account Questions" as the **Request Type**) to enter your new billing name and/or address and provide a reason for the change.
 
 ## Reporting
 
@@ -128,9 +128,9 @@ Netting is offered to clients who buy and sell with Microsoft Advertising. Clien
 - apply their revenue to their invoices and then pay what is left on the invoice (e.g., for clients with buy-side costs that exceed their
   sell-side revenue).
 
-If you would like to enable monthly netting on your account, please submit a request through our [Customer Support Portal](https://help.xandr.com/s/login/). To learn more about netting, see the [Understanding Your Seller Statement](understanding-your-seller-statement.md).
+If you would like to enable monthly netting on your account, please submit a request through our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). To learn more about netting, see the [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 
 ### Why was I suspended and when will I get paid?
 
 Reasons for account suspension should be discussed with your Account Manager. Client Finance can help you determine the amount you will be
-paid. It generally requires one month to analyze the account and net out anything that is still owed to Microsoft Advertising (not including finance fees). Once that occurs, Microsoft Advertising will pay any outstanding liability owed to you. Be sure to create a case in our [Customer Support Portal](https://help.xandr.com/s/login/) with your inquiry.
+paid. It generally requires one month to analyze the account and net out anything that is still owed to Microsoft Advertising (not including finance fees). Once that occurs, Microsoft Advertising will pay any outstanding liability owed to you. Be sure to create a case in our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) with your inquiry.

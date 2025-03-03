@@ -15,7 +15,7 @@ This page describes what to do if you discover suspicious traffic affecting your
 
 ## Investigate and report suspicious traffic
 
-If you believe that you are serving on inventory with artificially inflated performance rates, our [support team](https://help.xandr.com/) is happy to investigate. Before submitting a support request, confirm the issue and narrow down the scope as much as possible by following the steps below.
+If you believe that you are serving on inventory with artificially inflated performance rates, our [support team](https://support.ads.microsoft.com) is happy to investigate. Before submitting a support request, confirm the issue and narrow down the scope as much as possible by following the steps below.
 
 ### Step 1: Provide a high-level description of the issue
 
@@ -47,7 +47,7 @@ If the behavior is specific to a limited set of domains, inspect the domains to 
 
 ### Step 6: Send support your findings
 
-After completing the above steps, if you believe you have isolated a specific case, send your findings to [support](https://help.xandr.com).
+After completing the above steps, if you believe you have isolated a specific case, send your findings to [support](https://support.ads.microsoft.com).
 
 This should include the following:
 

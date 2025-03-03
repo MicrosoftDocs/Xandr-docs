@@ -264,7 +264,7 @@ The next major release will be SDK v8.0.0 which will include some breaking chang
 
 ### Announcements (7.21.0)
 
-We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If you are using any of the below API's, we request to migrate to their supported equivalent. If you have any questions reach out to [Xandr support](https://help.xandr.com/s/login/).
+We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If you are using any of the below API's, we request to migrate to their supported equivalent. If you have any questions reach out to [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 | Class | Property(s) and Method(s) |
 |--|--|

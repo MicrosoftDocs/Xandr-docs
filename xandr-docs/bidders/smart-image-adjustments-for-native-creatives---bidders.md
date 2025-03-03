@@ -12,7 +12,7 @@ Buyers can use Smart Image Adjustments to automatically resize their main native
 
 By default, the **Allow Smart Image Adjustments** toggle is enabled for all buyers under a bidder. To keep to our recommended native best practices, see [Buying Native Inventory](../invest/buying-native-inventory.md).
 
-If buyers would like to make adjustments to their Smart Image Adjustment settings, please file a support ticket ([Customer Support](https://help.xandr.com/s/login/)) or reach out to your Xandr representative.
+If buyers would like to make adjustments to their Smart Image Adjustment settings, please file a support ticket ([Customer Support](https://support.ads.microsoft.com)) or reach out to your Xandr representative.
 
 ## Smart image adjustments process
 

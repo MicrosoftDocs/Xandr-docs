@@ -23,8 +23,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:            
-          - text: Customer Support Portal
-            url: https://help.xandr.com/
+          - text: Microsoft Advertising Customer Support Portal
+            url: https://support.ads.microsoft.com
           - text: Customer Support Portal Guide Book
             url: ../customer-support/index.yml
 

@@ -3,6 +3,7 @@ title: DV360 Buying Guide
 description: Explore efficient connection on DV360, linking publishers and buyers for streamlined communication and optimization through inventory access and targeting.
 ms.date: 10/28/2023
 ---
+
 # DV360 buying guide
 
 In partnership with DV360, Xandr has created this guide to help Xandr publishers communicate with their buyers about accessing and targeting Xandr's publisher inventory using DV360 as their DSP. This information has been created in collaboration with and approved by the DV360 team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. Wherever possible, we've provided links to DV360 documentation.
@@ -172,7 +173,7 @@ If a DV360 buyer has issues serving on Xandr inventory, we recommend that they:
 1. Reach out to DV360 support channels as the first step
 1. If they cannot resolve the issue using DV360, they should loop in Xandr support.
 
-Sellers can reach out to their Xandr account manager or escalate through [help.xandr.com](https://help.xandr.com/s/login/).
+Sellers can reach out to their Xandr account manager or escalate through [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## DV360 and TCF compliance
 

@@ -32,5 +32,5 @@ When integrating user-based data such as behavioral and demographic segments, th
 If you are using the Batch Segment API service, there is also an alternative option, mainly used for 1st party segments, that does not require sharing segments from one member to another:
 
 1. Have your client (the data buyer) create segments in their own member, through the [API Segment service](../digital-platform-api/segment-service.md) or Xandr's UI, and tell you the IDs (or codes, if you are using codes) of those segments.
-1. Have the client submit a [support ticket](https://help.xandr.com/s/login/) allowing you (the data provider) to populate their segments using Batch Segment.
+1. Have the client submit a [support ticket](https://support.ads.microsoft.com) allowing you (the data provider) to populate their segments using Batch Segment.
 1. Xandr will then permission you (the data provider) to populate these segments on behalf of the client.

@@ -283,7 +283,7 @@ If you are frequently requesting Member analytics reports which include dates lo
 |:---|:---|
 | direct | When you purchased inventory from a seller with whom you have a managed relationship. |
 | real time | When you purchase inventory from a seller on the open exchange. |
-| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, contact [Microsoft Advertising support](https://help.xandr.com/s/login/). |
+| unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, contact [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). |
 
 ### Revenue types
 

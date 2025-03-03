@@ -23,7 +23,7 @@ To access a particular data provider's segment offering:
 1. Select the data providers for whom you want the data cost to be cleared directly by Microsoft. Each activated data provider (whose data cost will be cleared by Microsoft) will appear checked and highlighted.
 
 > [!NOTE]
-> If you ever choose to deactivate a data provider, you must first remove all active targeting of their segments. Once you have removed any targeting that is using these segments, log in to the [Customer Support Portal](https://help.xandr.com/) and create a ticket to complete the deactivation.
+> If you ever choose to deactivate a data provider, you must first remove all active targeting of their segments. Once you have removed any targeting that is using these segments, log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and create a ticket to complete the deactivation.
 
 ### Determine if a segment will be cleared within the data marketplace
 

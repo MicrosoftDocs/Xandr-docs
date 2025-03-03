@@ -25,7 +25,7 @@ This documentation provides step by step instructions on how to migrate existing
 
     :::image type="content" source="media/account-creation.png" alt-text="A screenshot of the Action Required: Create a Microsoft Account screen.":::
 
-1. In the **Sign in** page, enter Email ID associated with your Microsoft Advertising account login and select **Next**. If you have registered a different email ID for Microsoft products, ensure that the Microsoft Advertising platform account matches the email used to log in to Microsoft. If they do not match, contact the designated person with the role of **User Manager** from your organization to do the needful or you can raise a ticket on the [Microsoft Advertising Customer Support Portal](https://help.xandr.com/s/login/).
+1. In the **Sign in** page, enter Email ID associated with your Microsoft Advertising account login and select **Next**. If you have registered a different email ID for Microsoft products, ensure that the Microsoft Advertising platform account matches the email used to log in to Microsoft. If they do not match, contact the designated person with the role of **User Manager** from your organization to do the needful or you can raise a ticket on the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
     :::image type="content" source="media/sign-in-page.png" alt-text="A screenshot of the Microsoft sign in page.":::
 

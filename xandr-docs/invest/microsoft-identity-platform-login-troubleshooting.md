@@ -31,7 +31,7 @@ Currently Microsoft Advertising APIs do not support Microsoft credentials. To vi
 
 For improved security, Microsoft Advertising discourages the use of shared credential or user accounts. When access is associated with a single person, it helps in easier access management and robust auditing.
 
-Microsoft Advertising suggests updating the account's email address to that of an individual person with the Microsoft Advertising User Manager, or by contacting your Microsoft Advertising Account Representative or Microsoft Advertising Support at [Customer Support Portal](https://support.ads.microsoft.com).
+Microsoft Advertising suggests updating the account's email address to that of an individual person with the Microsoft Advertising User Manager, or by contacting your Microsoft Advertising Account Representative or Microsoft Advertising Support at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## I don't see all the accounts I have access to in the Seat Switcher or Account Settings page
 

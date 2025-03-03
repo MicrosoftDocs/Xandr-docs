@@ -24,7 +24,7 @@ Full product support is available only to Xandr customers. If you are not yet a 
 Xandr periodically sends emails that we think you'll find useful. These can include Marketing Communications (event invitations, white papers), Product and Technical Communications (release notes, service updates), and Training Communications (webinars, live training sessions).
 
 - If you have a Xandr user account, you should receive these communications automatically.
-- If you do not have your own Xandr user account, you can [sign up](https://about.ads.microsoft.com/en-us/solutions/xandr/newsletter-sign-up) to receive these communications.
+- If you do not have your own Xandr user account, you can [sign up](https://about.ads.microsoft.com/en) to receive these communications.
 - If you want to stop receiving Marketing or other Xandr communications, you can update your preferences.
 
 ## Other resources

@@ -9,6 +9,8 @@ ms.date: 10/28/2023
 
 ## Finance charges
 
+The finance fee no longer applies if you have signed a new contract with Microsoft Advertising and have cutover. 
+
 ### How is the finance charge calculated?
 
 On the date your payment is due, the finance fee percentage (specified in your Microsoft Advertising contract) is multiplied by any outstanding past due balances on the account.
@@ -83,7 +85,7 @@ Part of the Microsoft Advertising platform's role is to track, consolidate, and 
 
 ### How do I add or remove recipients from the invoice and statement distribution lists?
 
-To request changes, login to the [Customer Support Portal](https://help.xandr.com/s/login/) and navigate to the **Client Finance** section. The distribution lists will be updated for the following month's invoice cycle.
+To request changes, login to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) and navigate to the "Client finance" section and select "Update of customer information" as the topic. The distribution lists will be updated for the following month's invoice cycle. 
 
 If you have signed a new Microsoft Advertising contract and would like to request changes, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com). The distribution lists will be updated for the following month's invoice cycle.
 

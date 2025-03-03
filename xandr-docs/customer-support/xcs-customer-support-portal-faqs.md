@@ -11,6 +11,7 @@ ms.date: 01/12/2025
 Frequently Asked Questions about Microsoft Advertising Customer Support Portal
 
 ## Why is there a new Customer Support Portal?
+
 In February, a new Customer Support Portal became available for opt-in. This updated version offers a more seamless experience across products.
 
 ## What happens after I start using the new Customer Support Portal?

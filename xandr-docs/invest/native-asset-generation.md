@@ -8,7 +8,7 @@ ms.author: shsrinivasan
 # Microsoft Invest - Native Asset generation
 
 > [!NOTE]
-> This feature is currently in Open Beta and might undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative. Alternatively, you can contact our support team by completing the [Customer Support Form.](https://support.ads.microsoft.com).
+> This feature is currently in Open Beta and might undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative. Alternatively, you can contact our support team by completing the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 This article outlines the process of Native Asset generation, that streamlines the creation of advertising assets by automating the generation of images and text based on user inputs or webpage content.
 

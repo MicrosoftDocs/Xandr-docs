@@ -59,7 +59,7 @@ The Batch Segment Service (BSS) allows you to send bulk feeds of external segmen
 
 - Include the job ID in support requests.
 
-    If you're experiencing technical issues, remember to include all relevant job IDs when submitting your request on our [Customer Support Portal](https://support.ads.microsoft.com).
+    If you're experiencing technical issues, remember to include all relevant job IDs when submitting your request on our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 > [!NOTE]
 > Be sure to wait approximately 20 minutes before trying to add users to any newly created segments (to allow these segments to be propagated to all servers). As a best practice, try to minimize the creation of new segments, reuse existing segments where possible, or use segment `"values"` to further subdivide users within existing segments. These practices will ensure successful user uploads to segments. For details on creating segment `"values"`, see [Segment Targeting](profile-service.md).

@@ -38,12 +38,12 @@ Reporting is currently available exclusively through our APIs. For an in-depth l
 - In order to receive prompt payment for the fees we are clearing on your behalf, be sure you have provided your banking details when signing your contract with Xandr.
 
 > [!NOTE]
-> To notify Xandr of any changes in your banking information or payment entity, visit our [Customer Support Portal](https://support.ads.microsoft.com) and navigate to the Client Finance section to submit a ticket.
+> To notify Xandr of any changes in your banking information or payment entity, visit our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the Client Finance section to submit a ticket.
 
 ## Support
 
-For support issues, submit your issues in our [Customer Support Portal](https://support.ads.microsoft.com).
+For support issues, submit your issues in our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Price changes, taxonomy changes and segment removal
 
-Submit all Taxonomy or price change requests through the [Customer Support Portal](https://support.ads.microsoft.com). We provide up to 45 days notice to all buyers before a price change goes into effect.
+Submit all Taxonomy or price change requests through the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). We provide up to 45 days notice to all buyers before a price change goes into effect.

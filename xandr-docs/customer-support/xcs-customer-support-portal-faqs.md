@@ -16,16 +16,16 @@ In February, a new Customer Support Portal became available for opt-in. This upd
 
 ## What happens after I start using the new Customer Support Portal?
 
-Once you have signed into the new [Customer Support Portal](https://support.ads.microsoft.com), the [legacy portal](https://help.xandr.com/) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
+Once you have signed into the new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com), the [legacy portal](https://help.xandr.com/) switches to read-only mode. The new portal provides a 12-month lookback of active cases.
 
 ## How can I view cases created under a different email address?
 
 You can access cases created under a different email address by creating a personal Microsoft account using the old email address. While we discourage using this email to create new cases, you can use it to view previous cases.
-For example, if you logged into `help.xandr.com` with `ABC@email.com` but used `XYZ@email.com` for Microsoft Invest, create a personal Microsoft account with `ABC@email.com` as the username. Then, log into `support.ads.microsoft.com` using that account to view the old cases created under `ABC@email.com`. However, going forward, use `XYZ@email.com` to create new cases in the new [Customer Support Portal](https://support.ads.microsoft.com).  
+For example, if you logged into `help.xandr.com` with `ABC@email.com` but used `XYZ@email.com` for Microsoft Invest, create a personal Microsoft account with `ABC@email.com` as the username. Then, log into `support.ads.microsoft.com` using that account to view the old cases created under `ABC@email.com`. However, going forward, use `XYZ@email.com` to create new cases in the new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).  
 
 ## Why do I see only some cases in the new Customer Support Portal?
 
-The new [Customer Support Portal](https://support.ads.microsoft.com) displays cases from the [legacy portal](https://help.xandr.com/) with the following exceptions:
+The new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) displays cases from the [legacy portal](https://help.xandr.com/) with the following exceptions:
 
 - Cases created before February 2024 do not appear.
 - Closed cases do not appear.

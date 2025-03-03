@@ -70,7 +70,7 @@ Creatives that do not contain malicious elements or violate any platform buying 
 
 To block specific creatives or set the above ad quality settings in the Xandr system, use the [Ad Profile Service](../digital-platform-api/ad-profile-service.md). For best practices regarding the use of ad quality, see [Define Ad Quality Rules](define-ad-quality-rules.md). Settings applied in the Xandr system will work in conjunction with those sent dynamically in the OpenRTB request; the most restrictive block between the two will always apply. To preview a buyer's creative, you can use the URL present in the **iurl** field of the bid response.
 
-If you're encountering creatives that do not meet these ad quality settings (either passed into the OpenRTB request or set in the Ad Profile service) serving on your inventory, this can be escalated to our Anti-Malvertising Team via the [Customer Portal](https://support.ads.microsoft.com) under the category **Anti-Malvertising**.
+If you're encountering creatives that do not meet these ad quality settings (either passed into the OpenRTB request or set in the Ad Profile service) serving on your inventory, this can be escalated to our Anti-Malvertising Team via the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) under the category **Anti-Malvertising**.
 
 ## HTTP responses
 

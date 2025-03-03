@@ -55,7 +55,7 @@ To change your password either after it expires, or if you have [forgotten your 
 1. Within a few minutes, you'll receive an email including a link. select the link to create a new password as described above. Note that the link remains valid for 16 hours.
 
 > [!NOTE]
-> If you don't see the email in your inbox, be sure to check your spam folder. If you still don't see it, the email address you entered might not be valid. Try again and submit a support request on our [Customer Support Portal](https://support.ads.microsoft.com) if you continue to have problems.
+> If you don't see the email in your inbox, be sure to check your spam folder. If you still don't see it, the email address you entered might not be valid. Try again and submit a support request on our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) if you continue to have problems.
 
 ## Change your password or email address
 

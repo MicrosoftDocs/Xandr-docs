@@ -23,7 +23,7 @@ The standard setup is a simple process that does not require a waiting period. T
 >
 > - The seat in Google Ad Manager must exist as a child of the Microsoft Advertising Google Ad Manager seat - you cannot link any other type of Google Ad Manager seat to an Microsoft Advertising member
 
-To begin the enablement process for your Microsoft Advertising member seat, please submit a ticket to our Business Support team via our [Customer Support Portal](https://support.ads.microsoft.com) and copy in your Account Manager (if applicable). If you have already contacted Google and you do not qualify for an Google Ad Manager seat, reach out to your Account Manager or Business Support to discuss alternate options for buying Google Ad Manager inventory.
+To begin the enablement process for your Microsoft Advertising member seat, please submit a ticket to our Business Support team via our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and copy in your Account Manager (if applicable). If you have already contacted Google and you do not qualify for an Google Ad Manager seat, reach out to your Account Manager or Business Support to discuss alternate options for buying Google Ad Manager inventory.
 
 ## Use of technology vendors
 

@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Integrating in-stream video with header bidding or OpenRTB
 
-If you use header bidding or OpenRTB, you will only need to harvest the Placement IDs for your placements to integrate them with your code. For production-scale ID exports, talk to your account manager or file a support request on our [Customer Support Portal](https://support.ads.microsoft.com).
+If you use header bidding or OpenRTB, you will only need to harvest the Placement IDs for your placements to integrate them with your code. For production-scale ID exports, talk to your account manager or file a support request on our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 For a single placement, it's easy to locate the Placement ID by editing the placement in the Monetize user interface.
 

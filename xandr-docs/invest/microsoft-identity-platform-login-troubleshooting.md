@@ -21,7 +21,7 @@ If you company sets up Federated Sign-in for your corporate email domain, visit 
 
 Upon logging in, if you receive an error saying your email does not match any accounts, that means no user objects in the Microsoft Advertising platform match the email or user principle name provided by the Microsoft Identity Platform. This requires updating the users registered in the Microsoft Advertising platform to match the email address or user principle name that you signed into Microsoft.
 
-You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Microsoft Advertising Account Representative or Microsoft Advertising Support at [Customer Support Portal](https://support.ads.microsoft.com).
+You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Microsoft Advertising Account Representative or Microsoft Advertising Support at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## I can't access the API with my Microsoft credentials
 
@@ -37,7 +37,7 @@ Microsoft Advertising suggests updating the account's email address to that of a
 
 This scenario signifies that the email or user principal name used to sign in to Microsoft does not match the user or account you are looking for. Troubleshooting of this issue requires updating the users registered in the Microsoft Advertising platform to match the email address or user principle name that you use to sign into Microsoft.
 
-You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Microsoft Advertising Account Representative or Microsoft Advertising Support at [Customer Support Portal](https://support.ads.microsoft.com).
+You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Microsoft Advertising Account Representative or Microsoft Advertising Support at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Microsoft Identity Platform says I must have an admin consent to permissions and won't let me sign in
 

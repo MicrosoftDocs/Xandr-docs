@@ -85,7 +85,7 @@ Part of the Microsoft Advertising platform's role is to track, consolidate, and 
 
 ### How do I add or remove recipients from the invoice and statement distribution lists?
 
-To request changes, login to the [Microsoft Advertising Customer Support Portal](support.ads.microsoft.com) and navigate to the "Client finance" section and select "Update of customer information" as the topic. The distribution lists will be updated for the following month's invoice cycle. 
+To request changes, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) and navigate to the "Client finance" section and select "Update of customer information" as the topic. The distribution lists will be updated for the following month's invoice cycle. 
 
 If you have signed a new Microsoft Advertising contract and would like to request changes, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com). The distribution lists will be updated for the following month's invoice cycle.
 

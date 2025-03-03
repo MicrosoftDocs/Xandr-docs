@@ -28,7 +28,7 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |Utiq |[utiq.com](https://utiq.com/) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap | Passthrough (SSP support Only)**  |No  |No  |
 |Panorama ID |[crwdcntrl.net](https://crwdcntrl.net) |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |Passthrough SSP support only**  |No |No |
 |Utiq MartechPass |`utiq-mtp.com` |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |*This ID is used as a publisher first-party ID, not as a cross-publisher universal ID. Monetize member approval and enablement is required to use this ID. Please reach out to your Monetize account manager if interested.* |*Requires enablement*  |*Requires enablement*  |
-|Linkedin ID|[linkedin.com](https://linkedin.com/)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap|Passthrough (SSP support only)**|No|No  |
+|LinkedIn ID|[linkedin.com](https://linkedin.com/)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap|Passthrough (SSP support only)**|No|No  |
 |First ID|[first-id.fr](https://first-id.fr/)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap|This ID is used as a publisher first-party ID, not as a cross-publisher universal ID. Monetize member approval and enablement is required to use this ID. Please reach out to your Monetize account manager if interested.|No|No|
 > [!NOTE]
 >

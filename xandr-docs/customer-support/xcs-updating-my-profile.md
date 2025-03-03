@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 ## Update profile
 
-Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base articles, or request support.
+Log in to the [Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base articles, or request support.
 
 Your Customer Support Portal profile includes your name and photo.
 

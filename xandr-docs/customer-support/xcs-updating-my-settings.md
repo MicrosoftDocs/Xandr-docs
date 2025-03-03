@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Updating my settings
 
-Log in to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) to access your full case history, knowledge base articles, or request support.
+Log in to the [Customer Support Portal](https://help.xandr.com) to access your full case history, knowledge base articles, or request support.
 
 You can update your contact information, password, set email preferences, customize the language, locale, and time zone used for the portal. Go to **Profile** > **My Settings**, and select the appropriate options from the drop-down menus.
 

@@ -9,11 +9,10 @@ ms.date: 10/28/2023
 
 > [!TIP]
 > To utilize the most current version of AST, link to our CDN at [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
-> [!NOTE]
-> Version 1.6.0 included underlying framework enhancements that affected release logic but did not introduce functional changes to AST. Since there were no user-facing updates, this version is not listed in the release history.
 
 | Release | Description | Date |
 |---|---|---|
+| `1.6.0` | - We regularly update the SDK to fix bugs, optimize performance, and improve the user experience. | 27 February 2025 |
 | [1.5.0](https://adsdk.microsoft.com/ast/ast.js) | - Update certain telemetry events to include `tagId`. | 25 February 2025 |
 | [1.4.0](https://adsdk.microsoft.com/ast/ast.js) | - Add support for OpenRTB Native requests and responses. | 21 February 2025 |
 | [1.3.0](https://adsdk.microsoft.com/ast/ast.js) | - add `batchId` and `adTrackingId` to AST telemetry events.<br> - refactor code around user agents. | 13 February 2025 |

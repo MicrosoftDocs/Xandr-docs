@@ -9,6 +9,8 @@ ms.date: 10/28/2023
 
 > [!TIP]
 > To utilize the most current version of AST, link to our CDN at [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
+> [!NOTE]
+> Version 1.6.0 included underlying framework enhancements that affected release logic but did not introduce functional changes to AST. Since there were no user-facing updates, this version is not listed in the release history.
 
 | Release | Description | Date |
 |---|---|---|

@@ -373,12 +373,14 @@
       - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
         href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
     
-    - name: Create a Standard Line Item
-      href: create-a-standard-line-item.md
+    # - name: Create a Standard Line Item
+    #   href: create-a-standard-line-item.md
     - name: Update Line Items
       href: update-line-items.md
-    - name: Viewing Visual Success Data
-      href: viewing-visual-success-data.md
+    # - name: Viewing Visual Success Data
+    #   href: viewing-visual-success-data.md
+    - name: Line Item Analytics
+      href: line-item-analytics.md
     - name: View Line Item Details
       href: view-line-item-details.md
     - name: Add a Performance Goal to a Line Item
@@ -411,8 +413,8 @@
         href: household-attribution-reporting.md
       - name: Household Attribution FAQs
         href: household-attribution-faq.md
-    - name: Explore Global Line Items
-      href: explore-global-line-items.md
+    #- name: Explore Global Line Items
+    #  href: explore-global-line-items.md
   - name: Improve Performance with Visual Success
     href: improve-performance-with-visual-success.md
   - name: Programmable Splits

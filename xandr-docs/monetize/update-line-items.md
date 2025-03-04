@@ -15,16 +15,19 @@ You can edit a line item directly from the **Line Items** screen. To edit common
 
 ## Bulk edit flight dates
 
-You can edit the flight dates of one or more **line items** directly from the Line Items screen. Check the checkbox for each line item whose flight dates you want to edit then click **Actions** \>  **Edit Flight Dates**. You can edit both start and/or end dates for all the line items selected in the **Bulk Change Flight Dates** dialog that appears.
+You can edit the flight dates of one or more **line items** directly from the **SMW Line Items** screen. Check the checkbox for each line item whose flight dates you want to edit then click **Actions** \>  **Edit Flight Dates**. You can edit both start and/or end dates for all the line items selected in the **Bulk Change Flight Dates** dialog that appears.
 
 > [!NOTE]
 > The bulk edit option is currently not available through Microsoft Internet Explorer. If you would like to access this feature, please use another browser.
 
 ## Duplicate line items
 
+You can duplicate line items from the **SMW Line Items** screen or the **Settings** panel in the right pane.
+
 1. Check the box next to each line item that you want to duplicate and click **Actions** \>  **Duplicate**.
+1. Alternatively, open the **Settings** panel by selecting a line item, then click **Duplicate**.
 1. By default, the new line items have the same names as the original line items but with "Copy" as a prefix. If necessary, update the names for the new line items.
-1. Review your choices and then click **Duplicate** to confirm the duplication. The new line items and associated elements will then appear on the line items screen.
+1. Review your choices and then click **Duplicate** to confirm the duplication. The new line items and associated elements will then appear on the **SMW Line Items** screen.
 
 ## Delete line items
 

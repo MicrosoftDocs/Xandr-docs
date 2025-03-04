@@ -3,24 +3,23 @@ title: Navigate to the Create New PG Deal Screen
 description: Explore creating a programmatic guaranteed deal, choose pacing, and proceed on the Create New PG Deal screen for effective implementation.
 ms.date: 10/28/2023
 ---
+
 # Navigate to new PG Deal screen
 
-To create a new programmatic guaranteed (PG) deal, start by pre-selecting a pacing option for your guaranteed deal, then proceed from the **Create New Programmatic Guaranteed Deal** screen.
+To create a new programmatic guaranteed (PG) deal, start by pre-selecting a pacing option for your guaranteed deal. The creation process begins in **Seller Monitoring Workflow (SMW)**.
 
-1. Select  **Advertisers** \> **Monitoring**.
-
+1. Select  **Advertisers** \> **Line Items**.
    The **Line Items** screen displays.
 
-1. Click **+New** \> **Guaranteed Deal**.
-   The **Create New Line Item** screen displays.
+1. Click **+New** \> **Line Item**.
 
 1. Search for and select an advertiser from the **Advertiser** text field.
 
-   Optionally, select the **Make Default Advertiser** checkbox to make this advertiser the default advertiser for future PG deals.
+   (Optional) select the **Make Default Advertiser** checkbox to make this advertiser the default advertiser for future PG deals.
 
 1. Search and select an insertion order from the **Insertion Order** text field.
 
-    Optionally, select the **Make Default Insertion Order** checkbox to make this insertion order your default insertion order for future PG deals.
+    (Optional), select the **Make Default Insertion Order** checkbox to make this insertion order your default insertion order for future PG deals.
 1. Select a **Pacing** option:
 
    | Choice | Description |
@@ -30,7 +29,8 @@ To create a new programmatic guaranteed (PG) deal, start by pre-selecting a paci
 
 1. Click **Next**.
 
-    Depending on your **Pacing** selection, you'll see the **Create New Line** Item screen (if you chose **Pacing in Microsoft Advertising**) or the **Create New Programmatic Guaranteed Deal** screen (if you chose **Pacing in Ad Server of Record**).
+    - If you selected **Pacing in Microsoft Advertising**, the **Create New Line Item** screen appears.
+    - If you selected **Pacing in Ad Server of Record**, the **Create New Programmatic Guaranteed Deal** screen appears.
 
 For instructions on creating a programmatic guaranteed deal with your pacing selection, see
 

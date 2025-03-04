@@ -6,9 +6,7 @@ ms.date: 10/28/2023
 
 # Explore line items
 
-The **Line Items** screen shows you essential metrics about all line items under a specific advertiser, informs you of conditions preventing line items from serving, provides quick access to each insertion order's details and child campaigns, and offers bulk editing and reporting options.
-
-For publishers, the Line Items screen is where you'll go to manage demand from your direct-sold advertisers, including standard and guaranteed delivery line items.
+The **Line Items** screen provides essential metrics for all line items under a specific advertiser. It helps identify conditions preventing line items from serving, offers quick access to insertion order details and child campaigns, and allows you to manage demand, monitor delivery, and make bulk edits.
 
 Things you can do on this page include:
 
@@ -24,19 +22,11 @@ To get to the line items screen:
 
   or
 
-- From the **Advertisers** screen, find the advertiser whose line items you want to see and click the button in the **Line Items** column
-
-Publisher users can:
-
-- Select **Orders** >  **Line Items** from the navigation menu at the top of the screen.
-
-  or
-
-- Click **All Line Items** in the left panel on the Line Items or Orders screens.
+- From the **Advertisers** screen, find the advertiser whose line items you want to see and click the **Line Items** button in the **Order settings** screen.
 
 ## Filter your line items
 
-The column next to the line item's name (on the left) contains an icon that shows the current eligibility of that line item to serve. Possible eligibility icons include:
+The SMW Line Items screen displays an icon next to each line item's name, indicating its current eligibility to serve. Possible eligibility icons include:
 
 | Icon Type | Description |
 |--|--|
@@ -68,7 +58,7 @@ Line items with the **Inactive** state are shown with their IDs, names, and quic
 
 ## View line item details
 
-To view a summary of details about a line item, just click the line item's name. To see a full, detailed summary and a graphical view of delivery and performance, click the graph icon that appears when you hover over the line item (it's next to the pencil).
+To view a summary of details about a line item, just click the line item's name. To see a full, detailed summary and a graphical view of delivery and performance, click the **graph** icon that appears when you hover over the line item (it's next to the pencil).
 
 For more information about line item details, see [View Line Item Details](view-line-item-details.md).
 

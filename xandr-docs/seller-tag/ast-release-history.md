@@ -12,7 +12,7 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
-| `1.6.0` | - We regularly update the SDK to fix bugs, optimize performance, and improve the user experience. | 27 February 2025 |
+| `1.6.0` | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 27 February 2025 |
 | [1.5.0](https://adsdk.microsoft.com/ast/ast.js) | - Update certain telemetry events to include `tagId`. | 25 February 2025 |
 | [1.4.0](https://adsdk.microsoft.com/ast/ast.js) | - Add support for OpenRTB Native requests and responses. | 21 February 2025 |
 | [1.3.0](https://adsdk.microsoft.com/ast/ast.js) | - add `batchId` and `adTrackingId` to AST telemetry events.<br> - refactor code around user agents. | 13 February 2025 |

@@ -8,18 +8,20 @@ ms.date: 10/28/2023
 
 To create a new programmatic guaranteed (PG) deal, start by pre-selecting a pacing option for your guaranteed deal. The creation process begins in **Seller Monitoring Workflow (SMW)**.
 
-1. Select  **Advertisers** \> **Line Items**.
-   The **Line Items** screen displays.
+1. Access the SMW Line Items screen:
+
+- Navigate to **Advertisers** > **Line Items** from the main menu.
+- The **SMW Line Items** screen opens, displaying existing line items.
 
 1. Click **+New** \> **Line Item**.
 
 1. Search for and select an advertiser from the **Advertiser** text field.
 
-   (Optional) select the **Make Default Advertiser** checkbox to make this advertiser the default advertiser for future PG deals.
+   (Optional) Select the *Make Default Advertiser* checkbox to set this advertiser as the default for future PG deals.
 
 1. Search and select an insertion order from the **Insertion Order** text field.
 
-    (Optional), select the **Make Default Insertion Order** checkbox to make this insertion order your default insertion order for future PG deals.
+    (Optional), select the ***Make Default Insertion Order*** checkbox to make this insertion order your default insertion order for future PG deals.
 1. Select a **Pacing** option:
 
    | Choice | Description |

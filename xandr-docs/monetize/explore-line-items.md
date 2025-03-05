@@ -26,31 +26,24 @@ To get to the line items screen:
 
 ## Filter your line items
 
-The SMW Line Items screen displays an icon next to each line item's name, indicating its current eligibility to serve. Possible eligibility icons include:
-
-| Icon Type | Description |
-|--|--|
-| Play | The line item's campaigns are running smoothly. |
-| Pause | Campaigns under the line item are inactive. Hover over |
-| Warning | There are issues with the line item or its campaigns that are keeping it from serving. |
-| Pause/Warning | Campaigns under the line item are inactive, and there are issues with the line item or its campaigns. |
-
-Hover your mouse over the icon for details about that line item's state. Allowed states are:
-
-- **Play** - Line items with the "play" icon are eligible to serve.
-- **Paused** - Line items with the "paused" icon are ineligible to serve due to conditions that are likely intentional and user-driven. When a line item shows this status, hover over the icon to see exactly what conditions are preventing it from serving. The following conditions can provoke this status:
-  - State is set to inactive.
-  - Flight start is in the future.
-  - Flight end is in the past.
-  - Lifetime impression budget has been met.
-  - Lifetime revenue budget has been met.
-  - Daily impression budget has been met.
-  - Daily revenue budget has been met.
-  - All campaigns under this line item are inactive.
+You can filter line items using the **Advanced Filters** available in the SMW Line Items screen.  For more details, see [View Line Item Details (SMW)](view-line-item-details-smw.md).
 
 ## Search by Name/ID
 
-You can use the search field at the top of the screen to find all line items whose names or IDs include a specific string of characters or numbers.
+- Enter a **full or partial** name or ID in the search box.  
+- Use the wildcard symbol `%` to broaden your search.  
+  - Example: Searching for `%deal` will return all line items containing "deal" in their name.  
+
+### Advanced filter options
+
+In addition to searching by Name/ID, you can filter line items using:  
+
+- **Status** – Active, Paused, or Completed  
+- **Date Range** – Filter by flight start or end date  
+- **Campaign Association** – Show only line items linked to specific campaigns  
+- **Budget** – Filter based on remaining or spent budget  
+
+To access these filters, navigate to **Advertisers → Line Items** or select the **Line Items** button on the **Order settings** screen.  
 
 ## Find inactive line items
 
@@ -132,7 +125,7 @@ For line items that meet certain requirements (see below), Microsoft Monetize he
 >
 > For more information about viewability, see our [Introduction to Viewability](introduction-to-viewability.md).
 >
-## Understanding pacing bars
+## Understand pacing bars
 
 Each pacing bar tells you the following. Note that for a line item with a revenue budget, the pacing bar will show revenue rather than impressions.
 
@@ -160,7 +153,7 @@ When you deactivate a line item, the line item will typically stop serving withi
 
 ## Related topics
 
-- [Working with Line Items](working-with-line-items.md)
+- [Work with Line Items](working-with-line-items.md)
 - [View Line Item Details](view-line-item-details.md)
 - [Augmented Line Items (ALI)](augmented-line-items-ali.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)

@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Update line items
 
-From the **Line Items** screen, you can update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
+From the **SMW Line Items** screen, you can update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
 
 ## Edit line items
 
@@ -16,9 +16,6 @@ You can edit a line item directly from the **Line Items** screen. To edit common
 ## Bulk edit flight dates
 
 You can edit the flight dates of one or more **line items** directly from the **SMW Line Items** screen. Check the checkbox for each line item whose flight dates you want to edit then click **Actions** \>  **Edit Flight Dates**. You can edit both start and/or end dates for all the line items selected in the **Bulk Change Flight Dates** dialog that appears.
-
-> [!NOTE]
-> The bulk edit option is currently not available through Microsoft Internet Explorer. If you would like to access this feature, please use another browser.
 
 ## Duplicate line items
 
@@ -42,6 +39,6 @@ You can delete line items from the system. This is particularly useful when you 
 
 ## Related topics
 
-- [Working with Line Items](working-with-line-items.md)
-- [Viewing Your Object Limits](viewing-your-object-limits.md)
+- [Work with Line Items](working-with-line-items.md)
+- [View Your Object Limits](viewing-your-object-limits.md)
 - [Update Creatives](update-creatives-in-bulk.md)

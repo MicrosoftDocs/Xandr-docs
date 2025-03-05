@@ -26,7 +26,14 @@ To get to the line items screen:
 
 ## Filter your line items
 
-You can filter line items using the **Advanced Filters** available in the SMW Line Items screen.  For more details, see [View Line Item Details (SMW)](view-line-item-details-smw.md).
+You can filter line items using the **Advanced Filters** available in the **SMW Line Items** screen.
+
+### How to access Advanced Filters
+
+1. Navigate to **Advertisers → Line Items** from the navigation menu.
+2. Alternatively, click the **Line Items** button on the **Order settings** screen.
+3. In the **SMW Line Items** screen, locate and expand the **Advanced Filters** panel.
+4. Use the available filters to refine your search based on specific criteria.
 
 ## Search by Name/ID
 
@@ -34,16 +41,18 @@ You can filter line items using the **Advanced Filters** available in the SMW Li
 - Use the wildcard symbol `%` to broaden your search.  
   - Example: Searching for `%deal` will return all line items containing "deal" in their name.  
 
-### Advanced filter options
+### Advanced Filter options
 
-In addition to searching by Name/ID, you can filter line items using:  
+In addition to searching by Name/ID, you can filter line items using:
 
-- **Status** – Active, Paused, or Completed  
-- **Date Range** – Filter by flight start or end date  
-- **Campaign Association** – Show only line items linked to specific campaigns  
-- **Budget** – Filter based on remaining or spent budget  
+| Filter Type| Available Options| Description |
+|---------------|----------------------|----------------------|
+| **Status** | Active, Paused, or Completed |Filter based on the status of the line item.|
+| **Date Range**| Flight start or end date| Filter by the flight start or end date. |
+| **Campaign Association** | Specific campaigns | Show only line items linked to specific campaigns.|
+| **Budget** | Remaining or spent budget | Filter based on the remaining or spent budget. |
 
-To access these filters, navigate to **Advertisers → Line Items** or select the **Line Items** button on the **Order settings** screen.  
+To access these filters, navigate to **Advertisers** → **Line Items** or select the **Line Items** button on the **Order settings** screen.  
 
 ## Find inactive line items
 

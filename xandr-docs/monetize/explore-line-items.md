@@ -49,15 +49,15 @@ You can filter line items using the **Advanced Filters** available in the **SMW 
 | Line Status| Filter line items based on their current status. <br> Available statuses: <br> - Reserved – Allocated but not yet active. <br> - Scheduled – Set to start at a future date. <br> - Live – Currently running. <br> - Paused – Temporarily stopped. <br> - Inactive – No active delivery. <br> -Complete – Finished as per schedule. <br> - Canceled – No longer active.|
 | Creative Status | Filter line items based on creative assignment. <br> The options include: <br> 1) Missing creative – No creative assigned. <br> 2) Creative assigned – A creative has been added.|
 | Creative Audit Status | The creative audit status <br> indicates the review status of the creative assigned to a line item. The available statuses are: <br> 1) Needs Review – The creative requires approval. <br> 2) Approved – The creative has passed the audit. <br> 3) Rejected – The creative did not meet the requirements. <br> 4) Mixed – The line item contains creatives with different statuses. <br> 5) Missing Creatives – No creative is assigned. <br> 6) Processing – The creative is being reviewed.|
-| State | Indicates the current status of the item. The states are: <br> 1) Active: The item is currently in use or operational. <br> 2) Inactive: The item is not in use or has been deactivated.|
+| State | Indicates the current status of the item. The states are: <br> 1) Active - The item is currently in use or operational. <br> 2) Inactive - The item is not in use or has been deactivated.|
 | Expected Delivery | Select the checkbox if it is likely to underdeliver.|
 | Pacing | The percentage range from 0% to over 100%, representing the pacing of the delivery or performance. |
 | Priority |A numeric value between 0 and 20, representing the priority level.|
 | Flight Start Date | The specific date when the flight starts. This can be entered manually.|
 | Flight End Date| The specific date when the flight ends. This can be selected.|
 | Last Modified | Indicates when the item was last modified. You can select from rolling options such as today, next, or last, or enter a specific date.|
-| Type | Indicates the type of agreement or arrangement, which could be one of the following: <br> - Augmented <br> - Guaranteed (Imp) <br> - Guaranteed (Exclusive) <br> - Guaranteed (Legacy) <br> - Deal PG (Imp) <br> PG (3rd Party Pacing) <br> Standard
-House|
+| Type | Indicates the type of agreement or arrangement, which could be one of the following: <br> - Augmented <br> - Guaranteed (Imp) <br> - Guaranteed (Exclusive) <br> - Guaranteed (Legacy) <br> - Deal PG (Imp) <br> - PG (3rd Party Pacing) <br> - Standard
+House |
 | Ad Type | Specifies the type of advertisement, such as: <br> - Banner <br> - Video <br> - NativeBanner <br> - Video <br> - Native|
 | Viewability Rate | The percentage of viewability, ranging from 0% to over 100%.|
 | Trafficker | The individual responsible for trafficking the advertisement.|

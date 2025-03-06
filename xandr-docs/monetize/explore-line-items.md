@@ -14,7 +14,7 @@ Things you can do on this page include:
 - See delivery and performance metrics
 - See important line item details and make changes quickly
 
-## Get to the line items screen
+## Access the Line Items screen
 
 To get to the line items screen:
 
@@ -28,7 +28,7 @@ To get to the line items screen:
 
 You can filter line items using the **Advanced Filters** available in the **SMW Line Items** screen.
 
-### How to access advanced filters
+### Access Advanced Filters
 
 1. Navigate to **Advertisers → Line Items** from the navigation menu.
 2. Alternatively, click the **Line Items** button on the **Order settings** screen.
@@ -42,19 +42,19 @@ The following table describes the available fields and their values:
 
 | Field | Description |
 |---|---|
-| Settings | Select settings. It allows you to select predefined filter configurations for quick access. These settings help streamline the filtering process by applying commonly used criteria with a single selection.|
+| Settings | Select predefined filter configurations for quick access.|
 | Advertisers |Search for and select an advertiser associated with the line item. Enter the advertiser’s name or keyword to find results.|
 | Insertion Orders| Search for and select an insertion order linked to the advertiser. Enter the insertion order name or ID to filter results.|
 | Line Item Name| Enter the line item name to identify and filter specific line items. |
 | Deal | Search for and select a deal linked to the advertiser.|
 | Buyer | Select a buyer for the line item. Choose Any Buyer to include all buyers or Selected Buyer to search and add a Demand-Side Platform (DSP) or Deal Buyer.|
-| Line Status| Filter line items based on their current status. <br> Available statuses: <br> 1) Reserved – Allocated but not yet active. <br> 2) Scheduled – Set to start at a future date. <br> 3) Live – Currently running. <br> 4) Paused – Temporarily stopped. <br> 5) Inactive – No active delivery. <br> 6) Complete – Finished as per schedule. <br> 7) Canceled – No longer active.|
-| Creative Status | Filter line items based on creative assignment. <br> The options include: <br> 1) Missing creative – No creative assigned. <br> 2) Creative assigned – A creative has been added.|
-| Creative Audit Status | The creative audit status <br> indicates the review status of the creative assigned to a line item. The available statuses are: <br> 1) Needs Review – The creative requires approval. <br> 2) Approved – The creative has passed the audit. <br> 3) Rejected – The creative did not meet the requirements. <br> 4) Mixed – The line item contains creatives with different statuses. <br> 5) Missing Creatives – No creative is assigned. <br> 6) Processing – The creative is being reviewed.|
-| State | Indicates the current status of the item. The states are: <br> 1) Active - The item is currently in use or operational. <br> 2) Inactive - The item is not in use or has been deactivated.|
+| Line Status| Filter line items based on their current status. <br> Available statuses: <br> **Reserved** – Allocated but not yet active. <br> **Scheduled** – Set to start at a future date. <br> **Live** – Currently running. <br> **Paused** – Temporarily stopped. <br> **Inactive** – No active delivery. <br> **Complete** – Finished as per schedule. <br> **Canceled** – No longer active.|
+| Creative Status | Filter line items based on creative assignment. <br> The options include: <br> 1) **Missing creative** – No creative assigned. <br> 2) **Creative assigned** – A creative has been added.|
+| Creative Audit Status | The creative audit status <br> indicates the review status of the creative assigned to a line item. The available statuses are: <br> 1) **Needs Review** – The creative requires approval. <br> 2) **Approved** – The creative has passed the audit. <br> 3) **Rejected** – The creative did not meet the requirements. <br> 4) **Mixed** – The line item contains creatives with different statuses. <br> 5) **Missing Creatives** – No creative is assigned. <br> 6) **Processing** – The creative is being reviewed.|
+| State | Indicates the current status of the item. The states are: <br> 1) **Active** - The item is currently in use or operational. <br> 2) **Inactive** - The item is not in use or has been deactivated.|
 | Expected Delivery | Select the checkbox if it is likely to underdeliver.|
 | Pacing | The percentage range from 0% to over 100%, representing the pacing of the delivery or performance. |
-| Priority |A numeric value between 0 and 20, representing the priority level.|
+| Priority |A numeric value between **0** and **20**, representing the priority level.|
 | Flight Start Date | The specific date when the flight starts. This can be entered manually.|
 | Flight End Date| The specific date when the flight ends. This can be selected.|
 | Last Modified | Indicates when the item was last modified. You can select from rolling options such as today, next, or last, or enter a specific date.|
@@ -70,41 +70,28 @@ The following table describes the available fields and their values:
 - Use the wildcard symbol `%` to broaden your search.  
   - Example: Searching for `%deal` will return all line items containing "deal" in their name.  
 
-### Advanced filter options
-
-In addition to searching by Name/ID, you can filter line items using:
-
-| Filter Type| Available Options| Description |
-|---------------|----------------------|----------------------|
-| **Status** | Active, Paused, or Completed |Filter based on the status of the line item.|
-| **Date Range**| Flight start or end date| Filter by the flight start or end date. |
-| **Campaign Association** | Specific campaigns | Show only line items linked to specific campaigns.|
-| **Budget** | Remaining or spent budget | Filter based on the remaining or spent budget. |
-
-To access these filters, navigate to **Advertisers** → **Line Items** or select the **Line Items** button on the **Order settings** screen.  
-
 ## Find inactive line items
 
 Line items with the **Inactive** state are shown with their IDs, names, and quickstats in gray italics.
 
 ## View line item details
 
-To view a summary of details about a line item, just click the line item's name. To see a full, detailed summary and a graphical view of delivery and performance, click the **graph** icon that appears when you hover over the line item (it's next to the pencil).
+To view a summary of details about a line item, just click the line item's name. To see a full, detailed summary and a graphical view of delivery and performance, click the **graph** icon next to the pencil when you hover over the line item.
 
 For more information about line item details, see [View Line Item Details](view-line-item-details.md).
 
-## View quickstats
+## View QuickStats
 
-The metrics on the **Line Items** screen help you quickly assess the performance and delivery of your line items. Known as "quickstats", these metrics are faster and more readily accessed than standard reporting data. Quickstats are cached on a regular basis and are shown whenever you open the Line Items screen.
+The metrics on the **Line Items** screen help you quickly assess the performance and delivery of your line items. Known as "QuickStats", these metrics are faster and more readily accessed than standard reporting data. QuickStats are cached on a regular basis and are shown whenever you open the Line Items screen.
 
 > [!NOTE]
-> Quickstats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
+> QuickStats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
 > [!TIP]
 > To sort your line items by any given quickstat, click on the column name, e.g., **Profit**.
 
 ## Intervals
 
-Use the drop-down at the top right of the screen to choose the interval for quickstats. Available intervals include:
+Use the drop-down at the top right of the screen to choose the interval for QuickStats. Available intervals include:
 
 - **Today** Current calendar day up to the last hour.
 - **Yesterday** Full 24-hour period of the previous calendar day.
@@ -113,7 +100,7 @@ Use the drop-down at the top right of the screen to choose the interval for quic
 
 ## Columns
 
-The following quickstats are shown for each line item. Note that the data always reflects the currently selected quickstats interval:
+The following QuickStats are shown for each line item. Note that the data always reflects the currently selected QuickStats interval:
 
 | Line Item | Name of the line item. |
 |--|--|
@@ -150,10 +137,10 @@ This opens the **Configure Columns** dialog. From there you can select or desele
 
 ## Show/hide pacing bars
 
-For line items that meet certain requirements (see below), Microsoft Monetize helps you visualize how well the line items are pacing to their budgets for the selected quickstats interval. When you turn the Pacing toggle on, the Imps or Revenue quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
+For line items that meet certain requirements (see below), Microsoft Monetize helps you visualize how well the line items are pacing to their budgets for the selected QuickStats interval. When you turn the Pacing toggle on, the Imps or Revenue quickstat, depending on the type of budget set for the campaign, is transformed into a pacing bar.
 
 > [!IMPORTANT]
-> It is important to note that pacing bars, like all other quickstats, reflect the currently selected quickstats interval, and for each quickstats interval, there are specific > requirements for pacing to be calculated. See below for more details.
+> It is important to note that pacing bars, like all other QuickStats, reflect the currently selected QuickStats interval, and for each QuickStats interval, there are specific > requirements for pacing to be calculated. See below for more details.
 >
 > For guaranteed line items with a **vCPVM** revenue type, the information displayed in the pacing bars is not based on viewable impressions yet, but we're working on it. For now, you can surface delivered viewed impressions in the grid by:
 >
@@ -172,9 +159,9 @@ Each pacing bar tells you the following. Note that for a line item with a revenu
 - The blue line represents how much of your budget you should have spent: **lifetime budget/total number of days in the flight x actual number of days in the flight.**
 - The percent shows how closely your line item is pacing according to even daily pacing: **actual budget spent/how much of your budget you should have spent.**
 
-The exact requirements for calculating pacing depend on the quickstats interval selected, the type of budget set, and whether or not there's a flight end date. For each quickstats interval, the requirements are as follows:
+The exact requirements for calculating pacing depend on the QuickStats interval selected, the type of budget set, and whether or not there's a flight end date. For each QuickStats interval, the requirements are as follows:
 
-| Quickstats Interval | Requirements |
+| QuickStats Interval | Requirements |
 |--|--|
 | Lifetime | Lifetime Budget and Flight End Date |
 

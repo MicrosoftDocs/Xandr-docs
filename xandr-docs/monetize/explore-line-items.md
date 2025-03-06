@@ -32,8 +32,36 @@ You can filter line items using the **Advanced Filters** available in the **SMW 
 
 1. Navigate to **Advertisers → Line Items** from the navigation menu.
 2. Alternatively, click the **Line Items** button on the **Order settings** screen.
-3. In the **SMW Line Items** screen, locate and expand the **Advanced Filters** panel.
+3. In the **SMW Line Items** screen, locate and expand the **Advanced Filters** panel, at the top center of the screen.
+
+   > [!NOTE]
+   > To save a filter for future use, select **Quick filters** from the dropdown next to **Advanced filters**.
 4. Use the available filters to refine your search based on specific criteria.
+
+| Field | Description |
+|---|---|
+| Settings | Select settings. It allows you to select predefined filter configurations for quick access. These settings help streamline the filtering process by applying commonly used criteria with a single selection.|
+| Advertisers |Search for and select an advertiser associated with the line item. Enter the advertiser’s name or keyword to find results.|
+| Insertion Orders| Search for and select an insertion order linked to the advertiser. Enter the insertion order name or ID to filter results.|
+| Line Item Name| Enter the line item name to identify and filter specific line items. |
+| Deal | Search for and select a deal linked to the advertiser.|
+| Buyer | Select a buyer for the line item. Choose Any Buyer to include all buyers or Selected Buyer to search and add a Demand-Side Platform (DSP) or Deal Buyer.|
+| Line Status| Filter line items based on their current status. <br> Available statuses: <br> - Reserved – Allocated but not yet active. <br> - Scheduled – Set to start at a future date. <br> - Live – Currently running. <br> - Paused – Temporarily stopped. <br> - Inactive – No active delivery. <br> -Complete – Finished as per schedule. <br> - Canceled – No longer active.|
+| Creative Status | Filter line items based on creative assignment. <br> The options include: <br> 1) Missing creative – No creative assigned. <br> 2) Creative assigned – A creative has been added.|
+| Creative Audit Status | The creative audit status <br> indicates the review status of the creative assigned to a line item. The available statuses are: <br> 1) Needs Review – The creative requires approval. <br> 2) Approved – The creative has passed the audit. <br> 3) Rejected – The creative did not meet the requirements. <br> 4) Mixed – The line item contains creatives with different statuses. <br> 5) Missing Creatives – No creative is assigned. <br> 6) Processing – The creative is being reviewed.|
+| State | Indicates the current status of the item. The states are: <br> 1) Active: The item is currently in use or operational. <br> 2) Inactive: The item is not in use or has been deactivated.|
+| Expected Delivery | Select the checkbox if it is likely to underdeliver.|
+| Pacing | The percentage range from 0% to over 100%, representing the pacing of the delivery or performance. |
+| Priority |A numeric value between 0 and 20, representing the priority level.|
+| Flight Start Date | The specific date when the flight starts. This can be entered manually.|
+| Flight End Date| The specific date when the flight ends. This can be selected.|
+| Last Modified | Indicates when the item was last modified. You can select from rolling options such as today, next, or last, or enter a specific date.|
+| Type | Indicates the type of agreement or arrangement, which could be one of the following: <br> - Augmented <br> - Guaranteed (Imp) <br> - Guaranteed (Exclusive) <br> - Guaranteed (Legacy) <br> - Deal PG (Imp) <br> PG (3rd Party Pacing) <br> Standard
+House|
+| Ad Type | Specifies the type of advertisement, such as: <br> - Banner <br> - Video <br> - NativeBanner <br> - Video <br> - Native|
+| Viewability Rate | The percentage of viewability, ranging from 0% to over 100%.|
+| Trafficker | The individual responsible for trafficking the advertisement.|
+| Salesperson | The salesperson associated with the advertisement or campaign.|
 
 ## Search by Name/ID
 

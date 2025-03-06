@@ -46,7 +46,7 @@ You can filter line items using the **Advanced Filters** available in the **SMW 
 | Line Item Name| Enter the line item name to identify and filter specific line items. |
 | Deal | Search for and select a deal linked to the advertiser.|
 | Buyer | Select a buyer for the line item. Choose Any Buyer to include all buyers or Selected Buyer to search and add a Demand-Side Platform (DSP) or Deal Buyer.|
-| Line Status| Filter line items based on their current status. <br> Available statuses: <br> - Reserved – Allocated but not yet active. <br> - Scheduled – Set to start at a future date. <br> - Live – Currently running. <br> - Paused – Temporarily stopped. <br> - Inactive – No active delivery. <br> -Complete – Finished as per schedule. <br> - Canceled – No longer active.|
+| Line Status| Filter line items based on their current status. <br> Available statuses: <br> 1) Reserved – Allocated but not yet active. <br> 2) Scheduled – Set to start at a future date. <br> 3) Live – Currently running. <br> 4) Paused – Temporarily stopped. <br> 5) Inactive – No active delivery. <br> 6) Complete – Finished as per schedule. <br> 7) Canceled – No longer active.|
 | Creative Status | Filter line items based on creative assignment. <br> The options include: <br> 1) Missing creative – No creative assigned. <br> 2) Creative assigned – A creative has been added.|
 | Creative Audit Status | The creative audit status <br> indicates the review status of the creative assigned to a line item. The available statuses are: <br> 1) Needs Review – The creative requires approval. <br> 2) Approved – The creative has passed the audit. <br> 3) Rejected – The creative did not meet the requirements. <br> 4) Mixed – The line item contains creatives with different statuses. <br> 5) Missing Creatives – No creative is assigned. <br> 6) Processing – The creative is being reviewed.|
 | State | Indicates the current status of the item. The states are: <br> 1) Active - The item is currently in use or operational. <br> 2) Inactive - The item is not in use or has been deactivated.|
@@ -56,8 +56,7 @@ You can filter line items using the **Advanced Filters** available in the **SMW 
 | Flight Start Date | The specific date when the flight starts. This can be entered manually.|
 | Flight End Date| The specific date when the flight ends. This can be selected.|
 | Last Modified | Indicates when the item was last modified. You can select from rolling options such as today, next, or last, or enter a specific date.|
-| Type | Indicates the type of agreement or arrangement, which could be one of the following: <br> - Augmented <br> - Guaranteed (Imp) <br> - Guaranteed (Exclusive) <br> - Guaranteed (Legacy) <br> - Deal PG (Imp) <br> - PG (3rd Party Pacing) <br> - Standard
-House |
+| Type | Indicates the type of agreement or arrangement, which could be one of the following: <br> - Augmented <br> - Guaranteed (Imp) <br> - Guaranteed (Exclusive) <br> - Guaranteed (Legacy) <br> - Deal PG (Imp) <br> - PG (3rd Party Pacing) <br> - Standard House |
 | Ad Type | Specifies the type of advertisement, such as: <br> - Banner <br> - Video <br> - NativeBanner <br> - Video <br> - Native|
 | Viewability Rate | The percentage of viewability, ranging from 0% to over 100%.|
 | Trafficker | The individual responsible for trafficking the advertisement.|
@@ -69,7 +68,7 @@ House |
 - Use the wildcard symbol `%` to broaden your search.  
   - Example: Searching for `%deal` will return all line items containing "deal" in their name.  
 
-### Advanced Filter options
+### Advanced filter options
 
 In addition to searching by Name/ID, you can filter line items using:
 
@@ -94,8 +93,7 @@ For more information about line item details, see [View Line Item Details](view-
 
 ## View quickstats
 
-The metrics on the **Line Items** screen help you quickly assess the performance and delivery of your line items. Known as "quickstats", these metrics are faster and more readily
-accessed than standard reporting data. Quickstats are cached on a regular basis and are shown whenever you open the Line Items screen.
+The metrics on the **Line Items** screen help you quickly assess the performance and delivery of your line items. Known as "quickstats", these metrics are faster and more readily accessed than standard reporting data. Quickstats are cached on a regular basis and are shown whenever you open the Line Items screen.
 
 > [!NOTE]
 > Quickstats may not match the data from standard reporting exactly for technical reasons. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).

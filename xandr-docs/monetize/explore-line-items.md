@@ -28,7 +28,7 @@ To get to the line items screen:
 
 You can filter line items using the **Advanced Filters** available in the **SMW Line Items** screen.
 
-### How to access Advanced Filters
+### How to access advanced filters
 
 1. Navigate to **Advertisers → Line Items** from the navigation menu.
 2. Alternatively, click the **Line Items** button on the **Order settings** screen.
@@ -37,6 +37,8 @@ You can filter line items using the **Advanced Filters** available in the **SMW 
    > [!NOTE]
    > To save a filter for future use, select **Quick filters** from the dropdown next to **Advanced filters**.
 4. Use the available filters to refine your search based on specific criteria.
+
+The following table describes the available fields and their values:
 
 | Field | Description |
 |---|---|

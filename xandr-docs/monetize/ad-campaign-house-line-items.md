@@ -43,7 +43,7 @@ You can set the name, state, and ad type of the HLI from the **Basic settings** 
 
 You can change the associated insertion order to the line item by doing the following:
 
-1. Click the pencil icon above the existing insertion order that displays.
+1. Click the **pencil** icon above the existing insertion order that displays.
 2. A list of corresponding insertion orders (if any) will display automatically.
 3. Search for the appropriate insertion order you want to select.
 4. Select the corresponding checkmarks to associate the insertion order with the line item.
@@ -58,7 +58,7 @@ Enter a unique name for the line item that you will use for searching and report
 
 ### External Code (Optional)
 
-If you wish to report on a line item using your own code (rather than the internal ID that Microsoft Advertising assigns automatically), click **+External Code** and enter a code. External codes must follow these guidelines:
+If you wish to report on a line item using your own code (rather than the **internal ID** that Microsoft Advertising assigns automatically), click **+External Code** and enter a code. External codes must follow these guidelines:
 
 - They can only contain alphanumeric characters, periods, underscores, or dashes.
 - Codes are not case-sensitive (uppercase and lowercase characters are treated the same).
@@ -84,7 +84,7 @@ Select the start date and end date for your line item.
 
 ### Daypart
 
-Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](#).
+Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md).
 
 ### Daily pacing allocation
 

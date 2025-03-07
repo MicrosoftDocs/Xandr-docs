@@ -1,59 +1,57 @@
 ---
-title: Microsoft Monetize - Monitor Line Items
-description: This page is an overview on line items. Learn how to access the monitoring feature from any Microsoft Monetize screen, view, search, duplicate, delete and run reports for selected line items. 
-ms.date: 10/28/2023
+title: Microsoft Monetize - Monitor Line items 
+description: This page is an overview on Line items. Learn how to access the Seller Monitoring Workflow (SMW) feature for Line items from any Microsoft Monetize screen.
+ms.date: 03/05/2025
+ms.author: shsrinivasan
 ---
 
 
-# Microsoft Monetize - Monitor line items
+# Microsoft Monetize - Monitor Line items
 
-The **Line Items** screen displays **All**, **Upcoming**, **In Progress**, and **Completed** line items and metrics. It also lets you search for line items and related objects, apply filters, modify display columns, and download reports.
+This document describes the Seller Monitoring Workflow (SMW) feature for Line items.
 
-## Access monitoring
+The **Line Items** screen displays **All**, **Upcoming**, **In Progress**, and **Completed** Line items and metrics. It also lets you search for Line items and related objects, apply filters, modify display columns, and download reports. 
 
-To access the **Monitoring** feature from any Microsoft Monetize screen:
+## Access Seller Monitoring Workflow (SMW) for Line items:
 
-1. Click the **Advertiser** menu and select **Monitoring**.
-1. In the **Line Items** window, select an appropriate progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**) to view line items.
+To access the **Seller Monitoring Workflow (SMW)** feature for Line items:
 
-## View line items
+1. Navigate to **Advertisers** > **Line Items** from the left pane. 
+1. The **Line items** screen displays Line items in rows under four progress tabs: **All**, **Upcoming**, **In Progress**, or **Completed**. In the **Line items** window, select an appropriate progress tab to view the Line items:
+    - **All** - All available Line items (includes upcoming, in progress, and completed Line items)
+    - **Upcoming** - Line items that have not started.
+    - **In Progress** - Line items between flights (start date/time of the first flight and end date/time of the last flight).
+    - **Completed** – Line items that have completed and are past their end date/time of the last flight.
 
-The **Line Items** window displays line items in rows under four progress tabs: **All**, **Upcoming**, **In Progress**, or **Completed**. Line items appear under each progress tab as follows:
+## Understand Line item columns
 
-- **All** - all available line items (includes upcoming, in progress, and completed line items)
-- **Upcoming** - line items that have not started.
-- **In Progress** - line items between flights (start date/time of the first flight and end date/time of the last flight).
-- **Completed** – line items that have completed and are past their end date/time of the last flight.
+The **All**, **Upcoming**, **In Progress**, and **Completed** progress tabs each list Line items in rows. The rows include columns with the line item name and relevant metrics for the Line items.
 
-## Understand line item columns
-
-The **All**, **Upcoming**, **In Progress**, and **Completed** progress tabs each list line items in rows. The rows include columns with the line item name and relevant metrics for the line items.
-
-Hover over the tooltips next to each metric at the top of each column for a brief description of the metric. The metrics provide important information about upcoming, in progress, and completed line items without requiring you to run a report. The metrics are updated regularly.
+Hover over the tooltips next to each metric at the top of each column for a brief description of the metric. The metrics provide important information about upcoming, in progress, and completed Line items without requiring you to run a report. The metrics are updated regularly.
 
 > [!NOTE]
-> There might be discrepancies between the metrics displayed in the **Line Items** monitoring view and reporting data due to slight variations in data syncing. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
+> There might be discrepancies between the metrics displayed in the **Line items** monitoring view and reporting data due to slight variations in data syncing. For more information, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
-## Search for line items
+## Search for Line items
 
-There are several ways to search for line items from the **Line Items** window. You can search for line items by line item name, line item ID, deal name, or deal ID.Inactive line items are listed in gray italic text.
+There are several ways to search for Line items from the **Line items** window. You can search for Line items by Line item name, Line item ID, Deal name, or Deal ID. Inactive Line items are listed in gray italic text.
 
 ## Use pagination
 
-If you don't have a line item name, line item ID, deal name, or deal ID to search with, you can use the pagination feature at the bottom of the **Line Items** window to page through the rows of line items. The pagination feature lets you:
+If you don't have a Line item name, Line item ID, Deal name, or Deal ID to search with, you can use the pagination feature at the bottom of the **Line items** window to page through the rows of Line items. The pagination feature lets you:
 
 - Select the number of rows that you want to display per page by selecting a value from the **Rows per page** menu.
 - Enter a specific page in the designated text field or click the arrows to navigate from page to page.
 
 ## Apply filters
 
-You can create and save filters to search for line items. Once created and saved, you can apply a filter using the **Select a Filter** drop-down list. To create and save a new filter:
+You can create and save filters to search for Line items. Once created and saved, you can apply a filter using the **Select a Filter** drop-down list. To create and save a new filter:
 
-1. In the **Line Items** window, click **Advanced Filters**.
+1. In the **Line items** screen, click **Advanced Filters**.
 
 1. Make your selections.
 
-1. Click the arrow to the right of the **Apply** button.
+1. Click the dropdown arrow on the **Apply** button.
 
 1. Select **Apply and Save As**.
 
@@ -65,7 +63,7 @@ You can create and save filters to search for line items. Once created and saved
 1. Select the **Make Default** checkbox to apply the filter to the rows by default.
 
     > [!NOTE]
-    > The default filter will apply each time you access the **Line Items** window.
+    > The default filter will apply each time you access the **Line items** window.
 
 1. Click **Apply** and **Save As** to save the filter.
 
@@ -73,14 +71,14 @@ You can create and save filters to search for line items. Once created and saved
 
 You can edit saved filters at any time. To edit a saved filter:
 
-1. In the **Line Items** window, click **Advanced Filters**.
-1. In the **Advanced Filters** dialog, select a filter using the **Select a Filter** drop-down.
-1. Once a filter is selected, you have options to **Deselect Filter**, **Make Default, Rename**, or **Delete**. You can also make any changes to the filter configurations displayed as you scroll through the **Advanced Filters** dialog.
+1. In the **Line items** window, click **Advanced Filters**.
+1. In the **Advanced Filters** pane, select a filter using the **Select a Setting** drop-down.
+1. Once a setting is selected, you have options to **Deselect Filter**, **Make Default, Rename**, or **Delete**. You can also make any changes to the filter configurations displayed as you scroll through the **Advanced Filters** pane.
 1. Click **Apply and Save** to apply your changes and save the filter.
 
 ## Sort columns
 
-You can sort most line item rows in the **Line Items** window into ascending or descending order by clicking each column label.
+You can sort most Line item rows in the **Line items** screen into ascending or descending order by clicking each column label.
 
 ## Select column views
 
@@ -90,9 +88,8 @@ You can select any available column views in the **Select a View** drop-down. To
 
 You can modify and save column views. Saving a column view makes it available in the **Select a View** drop-down list. To modify a column view:
 
-1. In the **Line Items** window, click **Modify Columns**.
-1. In the **Modify** Columns dialog, **select an existing** column view from the Select a Setting drop-down or use the current view.
-1. Click the appropriate progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**).
+1. In the **Line items** screen, click **Modify Columns**.
+1. In the **Modify** Columns pane, select the appropriate progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**).
 1. Select (to show) or deselect (to hide) any column checkboxes. You can also choose **Select all**/**Deselect all** to select or deselect all columns for the progress tab.
 1. Optionally, you can rearrange the columns by dragging and dropping them.
 1. Do one of the following:
@@ -103,26 +100,28 @@ You can modify and save column views. Saving a column view makes it available in
       1. Optionally, check **Make Default** if you want this column setting to be the default view.
       1. Click **Apply and Save As**.
 
-## View line item details
+## View Line item details
 
-To view the details of a line item listed in the **Line Items** window, click anywhere in the line item row to display the Line Item Details. See [View Line Item Details](view-line-item-details-smw.md) for more information.
+To view the details of a Line item listed in the **Line items** window, click anywhere in the Line item row to display the Line Item Details. See [View Line Item Details](view-line-item-details-smw.md) for more information.
 
-## Duplicate, cancel reservation, delete, or run report for selected line items
+## Duplicate, Activate, Deactivate, Delete, or Run report for selected Line items
 
-You can duplicate, cancel reservation, delete, or run a report for selected line items by doing the following:
+You can Duplicate, Activate, Deactivate, Delete, or Run a report for selected Line items, by doing the following:
 
-1. In the **Line Items** window for each progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**), select the checkbox to the left of any line items.
-1. When line items are selected, the **Line Items selected** bar is available at the top of the **Line Items** window with the following available actions you can perform by clicking on the action:
-    - **Duplicate** - you can duplicate one or more line items simultaneously.
-    - **Cancel Reservation** - for Guaranteed Delivery Line Items (GDLI) and Programmatic Guaranteed Line Items (PGLI), you can cancel the reservation of one or more of these line items.
-    - **Delete** - you can delete one or more line items simultaneously.
-
+1. In the **Line items** window for each progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**), select the checkbox to the left of any Line items.
+1. When Line items are selected, the **Line items selected** bar is available at the top of the **Line items** window with the following available actions you can perform by clicking on the action:
+    - **Duplicate** - You can duplicate one or more Line items simultaneously.
+    - **Activate** - You can activate one or more Line items simultaneously.
+    - **Deactivate** - You can deactivate one or more Line items simultaneously.
+    - **Delete** - You can delete one or more Line items simultaneously.
       > [!WARNING]
       > Deleting a line item deletes all its child objects, including creatives, conversion pixels, segments, and splits. Deletions are permanent and cannot be reverted
+    - **Run Report** - You can run reports for one or more Line items simultaneously. See [Network Reporting](network-reporting.md) for more information.
+ 
+ <!-- **Cancel Reservation** - for Guaranteed Delivery Line items (GDLI) and Programmatic Guaranteed Line items (PGLI), you can cancel the reservation of one or more of these Line items.-->
 
-    - **Run Report** - you can run reports for one or more line items simultaneously. See [Network Reporting](network-reporting.md) for more information.
 
 ## Related topics
 
-- [Troubleshoot Line Items](troubleshoot-line-items.md)
+- [Troubleshoot Line items](troubleshoot-line-items.md)
 - [View Line Item Details](view-line-item-details-smw.md)

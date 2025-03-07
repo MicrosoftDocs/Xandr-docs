@@ -23,13 +23,13 @@ These campaigns are typically used to increase brand awareness, drive engagement
 House line items can serve as **fallback campaigns** when no other ads are eligible to serve. This ensures that ad space is utilized even when there are no external ads available.
 
 > [!NOTE]
-> If you would like to create HLIs on your seat, please reach out to your account manager to request this.
+> To create HLIs on your seat, contact your account manager.
 
 ## Create a House Line Item on Microsoft Monetize
 
 You can create a new house line item (HLI) from the **Line Items** screen. For more information, see [Monitor Line Items](monitor-line-items.md).
 
-1. On the **Line Items** screen, click the **+New** drop-down menu and select **Line Item**.
+1. On the **Line Items** screen, select **+New** drop-down menu and select **Line Item**.
 2. On the **Create New Line Item** screen, select **House Ad**.
 3. In the **Advertiser** drop-down, select the appropriate advertiser.
 4. In the **Insertion Order** drop-down, select an appropriate insertion order if one is not already selected.
@@ -43,7 +43,7 @@ You can set the name, state, and ad type of the HLI from the **Basic settings** 
 
 You can change the associated insertion order to the line item by doing the following:
 
-1. Click the **pencil** icon above the existing insertion order that displays.
+1. Click the **pencil** icon above the existing insertion order.
 2. A list of corresponding insertion orders (if any) will display automatically.
 3. Search for the appropriate insertion order you want to select.
 4. Select the corresponding checkmarks to associate the insertion order with the line item.
@@ -58,11 +58,11 @@ Enter a unique name for the line item that you will use for searching and report
 
 ### External Code (Optional)
 
-If you wish to report on a line item using your own code (rather than the **internal ID** that Microsoft Advertising assigns automatically), click **+External Code** and enter a code. External codes must follow these guidelines:
+To report on a line item using your own code (rather than the **internal ID** that Microsoft Advertising assigns automatically), click **+External Code** and enter a code. External codes must follow these guidelines:
 
 - They can only contain alphanumeric characters, periods, underscores, or dashes.
 - Codes are not case-sensitive (uppercase and lowercase characters are treated the same).
-- No two objects can use the same code per advertiser. For example, two line items cannot both use the code "ABC."
+- Each advertiser must use a unique code for each object. For example, two line items cannot both use the code "ABC."
 
 ### State
 
@@ -74,7 +74,7 @@ Select one or more appropriate ad types for the line item. The ad type must matc
 
 ### Priority
 
-Set a priority for the line item in the **Priority** drop-down menu. Flexible priorities allow users to manage delivery across line items. HLIs default to priority 1.
+Set a priority for the line item in the **Priority** drop-down menu. Flexible priorities allow users to manage delivery across line items. The default priority for HLIs is 1.
 
 ## Budgeting & scheduling
 
@@ -99,7 +99,7 @@ From the **Inventory and Brand Safety Targeting** section, you can specify the t
 
 ## Geography targeting for a line item
 
-From the **Audience & Location Targeting** section, you must target users based on at least one geographic element such as country, region, city, metro code, or postal code. You may optionally set up other geographic inclusions or exclusions.
+From the **Audience & Location Targeting** section, you must target users based on at least one geographic element such as country, region, city, metro code, or postal code. You can optionally set up other geographic inclusions or exclusions.
 
 ## Enable cross-device targeting and measurement for a Line Item
 

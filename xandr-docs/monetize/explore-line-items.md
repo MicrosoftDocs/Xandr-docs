@@ -149,20 +149,26 @@ Example match:
 
 Pacing bars visually indicate how a line item is delivering against its planned pacing. They help you monitor whether a line item is ahead, behind, or on track with its expected delivery.
 
-The pacing bar appears in the **Pacing** column if the column is enabled. The color and length of the bar represent the delivery status:
+The pacing bar appears in the **Pacing** column if the column is enabled. The color and length of the bar represent the delivery status based on the percentage of the delivered budget relative to the expected budget for the flight duration:
 
-- **Green**: On track  
-- **Yellow**: Slightly behind  
-- **Red**: Significantly behind  
+- **Purple (≥101%)**: Overpacing  
+- **Green (100-101%)**: On track  
+- **Yellow (85-99%)**: Slightly behind  
+- **Orange (<85%)**: Significantly behind  
 
-> [!NOTE]
-> Pacing bars are not available for all line items.
+> [!NOTE]  
+>
+> - Pacing is calculated assuming an even distribution of delivery across all flight hours.  
+> - Roadblock delivery is based on the master creative only.  
+> - A line item must have a defined lifetime budget to display pacing.  
+> - Daypart targeting is not accounted for in pacing calculations, so lines may indicate overpacing.  
+> - Pacing bars are not available for all line items.  
 
-To enable the **Pacing** column:
+### Enable the Pacing column
 
-1. Click **Modify Columns**.
-1. Select **Pacing**.
-1. Save your settings.
+1. Click **Modify Columns**.  
+2. Select **Pacing**.  
+3. Save your settings.  
 
 ## Report on line items
 

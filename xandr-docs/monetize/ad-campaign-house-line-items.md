@@ -27,7 +27,7 @@ House line items can serve as **fallback campaigns** when no other ads are eligi
 
 ## Create a House Line Item on Microsoft Monetize
 
-You can create a new house line item (HLI) from the **Line Items** screen. For more information, see [Monitor Line Items](#).
+You can create a new house line item (HLI) from the **Line Items** screen. For more information, see [Monitor Line Items](monitor-line-items.md).
 
 1. On the **Line Items** screen, click the **+New** drop-down menu and select **Line Item**.
 2. On the **Create New Line Item** screen, select **House Ad**.

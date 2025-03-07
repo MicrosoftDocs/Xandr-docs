@@ -131,7 +131,7 @@ To get information about attributed conversions, rather than just conversion pix
 
 You can customize the columns displayed in the **Line Items** screen.
 
-1. Click the **Configure Columns** button in the upper right corner. 
+1. Click the **Configure Columns** button in the upper right corner.
    This opens the **Configure Columns** panel
 1. Select or deselect columns using the checkboxes.
    Changes are applied immediately, and the selected columns will remain visible across sessions.

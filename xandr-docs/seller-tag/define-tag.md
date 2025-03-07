@@ -55,9 +55,13 @@ The parameters listed below can be sent as arguments in the function.
 
 ### Native Ad resources
 
+### ortb
+
+For more details, see [OpenRTB](https://microsoftapc.sharepoint.com/teams/TechComm/SitePages/Define-Tag(1).aspx?promotedState=0&source=FromAppBar#native-ad-resources).
+
 #### custom
 
-Can contain two sub-objects named **data** and **images**.  See below for further details on these properties.
+Can contain two sub-objects named **data** and **images**. See below for further details on these properties.
 
 #### data
 

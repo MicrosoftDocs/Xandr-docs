@@ -311,7 +311,7 @@
       - name: Add Basic Line Item Details
         href: add-basic-line-item-details.md
       - name: House Line Items
-        -href: ad-campaign-house-line-items.md
+        href: ad-campaign-house-line-items.md
       - name: Set Up Line Item Budgeting and Scheduling
         href: set-up-line-item-budgeting-and-scheduling.md
       - name: Underspend Budget Rollover

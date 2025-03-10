@@ -1,7 +1,7 @@
 ---
 title: Set Up In-Article Inventory
 description: Learn how to configure in-article (formerly outstream) video inventory.
-ms.date: 10/28/2025
+ms.date: 28/10/2025
 ---
 
 # Set up in-article inventory

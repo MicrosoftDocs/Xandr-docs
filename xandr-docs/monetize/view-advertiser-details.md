@@ -19,7 +19,7 @@ To access the Advertisers screen:
     - **Insertion Orders**: It provides a list of Insertion orders currently associated with the Advertiser.
     - **Associated Objects**: It provides a list of associated objects with the Advertiser. See [View Child Object Details](#view-child-object-details) for more information.
 
-## Viewing advertiser settings
+## View advertiser settings
 
 The settings that display here can be edited by clicking **Edit** at the top of the **Advertisers** screen. For more information, see [Create an Advertiser](create-an-advertiser.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Curate - March 10, 2025 - Change log history tool
+title: Microsoft Monetize - March 10, 2025 - Change log history tool
 description: Explore the March 10, 2025 release, delving into Microsoft Monetize History tool, serves as a centralized hub to review and manage changes made to the platform that impacts revenue performance.
 ms.date: 03/10/2025
 ms.topic: release-notes

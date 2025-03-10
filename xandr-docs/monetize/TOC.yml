@@ -1697,10 +1697,14 @@
   items:
   - name: comScore Agent
     href: comscore-agent.md
+- name: Change Log History Tool
+  href: change-log-history-tool.md
 - name: Release Notes
   items:
   - name: Overview
     href: release-notes.md
+  - name: March 10, 2025 - Change Log History Tool
+    href: release-notes-20250310.md
   - name: November 26, 2024 - Enhanced Blocked Bid Value Metric
     href: release-notes-20241126.md
   - name: October 18, 2024 - Household Attribution
@@ -1735,3 +1739,4 @@
     href: release-notes-20210428.md
   - name: April 14, 2021 - New Ad Quality Technical Attribute
     href: release-notes-20210414.md
+

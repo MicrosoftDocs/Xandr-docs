@@ -29,7 +29,7 @@ Insights focus on **incremental blocked bid value above transacted revenue**, pr
 
 **When does the data analysis run?**
 
-Insights are generated **weekly** and are typically available by **9 AM UTC**.  
+Insights are generated **weekly** and are typically available by **9 AM UTC on Mondays**.  
 
 **What is the number of creatives I can preview?**
 

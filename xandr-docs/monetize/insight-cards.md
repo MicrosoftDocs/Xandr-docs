@@ -8,7 +8,7 @@ ms.date: 10/14/2024
 
 Monetize Insights automatically identifies issues and opportunities on a periodic basis across a wide range of objects and settings that affect seller monetization. These help Monetize sellers simplify monitoring and optimizing their potential revenue from using the platform.
 
-## Unblock brands
+### Unblock brands
 
 Monetize Insights automatically scans bid rejection data to find brands that are bidding at higher prices on impressions than the transacted revenue but are blocked due to the brand's parent category. These brands are surfaced directly to sellers for review.
 
@@ -19,19 +19,19 @@ This is particularly helpful when Ad Quality rules apply broad category blocks, 
 - If the brand should always be hidden from Insights, sellers can **archive** it after dismissal to ensure it never appears again.  
 - Sellers can filter insights to view only newly detected brands.  
 
-### FAQ
+#### FAQ
 
-#### Why do I see more blocked brands due to their category in the Seller Bid Error report?
+**Why do I see more blocked brands due to their category in the Seller Bid Error report?**
 
 The **Seller Bid Error report** provides visibility into all bid rejections, which can help with troubleshooting. However, many bid rejections do not impact revenue because the impression did not transact or the bid was below the transacted revenue.  
 
 Insights focus on **incremental blocked bid value above transacted revenue**, providing a clearer view of bid errors likely to impact revenue.  
 
-#### When does the data analysis run?
+**When does the data analysis run?**
 
 Insights are generated **weekly** and are typically available by **9 AM UTC**.  
 
-#### What is the number of creatives I can preview?
+**What is the number of creatives I can preview?**
 
 The insight displays **one** example creative from the brand.  
 

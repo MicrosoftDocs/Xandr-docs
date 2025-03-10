@@ -11,12 +11,12 @@ ms.date: 10/28/2023
 
 A placement is the object in our system that represents (and is used to generate) the tag that is placed on a publisher's page.
 
-When you create a placement, you go through the following steps:
+When you create a placement, follow these steps:
 
-- Select the type of creatives that can serve on the placement
-- Select a size
-- Set a reserve price
-- Self-classify the placement with categories and sensitive attributes for line item targeting and reporting
+- Select the types of creatives that can serve on the placement.
+- Select a size.
+- Set a reserve price.
+- Classify the placement with categories and sensitive attributes for line item targeting and reporting.
 
 ## Step 1. Get started
 
@@ -25,9 +25,9 @@ Depending on which version of Monetize you use, you can access the **Inventory M
 - From the **Publishers** tab, navigate to **Publishers** > **Inventory Manager**.
 - From the **Inventory** tab, navigate to **Partners** > **Placement**.
 
-Select a publisher if prompted, click the **Create New** button and select **Placement**. The **Create New Placement** dialog displays.
+If prompted, select a publisher. Click the **Create New** button, and then select **Placement**. The **Create New Placement** dialog displays.
 
-## Step 2. Define the placement details
+## Step 2. Define the placement details (select the associating placement group for the placement)
 
 Enter a **Name** for the placement and do any of the following:
 
@@ -159,7 +159,7 @@ Once a custom category has at least one placement associated to it, buyers can s
 
 ## Step 6. Self-audit the placement for sensitive categories
 
-On the **Self-Audit Settings** tab, you can self-classify the placement for sensitive attributes and intended audience. Your advertisers and buyers who trust your self-audit can target these settings in their campaigns. Microsoft Advertising may also audit this inventory if it meets volume thresholds.
+On the **Self-Audit Settings** tab, you can self-classify the placement for sensitive attributes and intended audience. Your advertisers and buyers who trust your self-audit can target these settings in their campaigns. Microsoft Advertising may review this inventory if it exceeds a certain volume threshold.
 
 > [!WARNING]
 > You will be notified of undeclared and improperly declared toolbar inventory on a weekly basis. Microsoft Advertising will flag this inventory and declare/properly declare it within 72 hours of notification.

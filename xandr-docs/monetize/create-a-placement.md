@@ -13,19 +13,19 @@ A placement is the object in our system that represents (and is used to generate
 
 When you create a placement, you go through the following steps:
 
+- Select the type of creatives that can serve on the placement
 - Select a size
 - Set a reserve price
-- Select the type of creatives that can serve on the placement
-- Self-classify the placement with categories and sensitive attributes for campaign targeting and reporting
+- Self-classify the placement with categories and sensitive attributes for line item targeting and reporting
 
-## Step 1. Getting started
+## Step 1. Get started
 
 Depending on which version of Monetize you use, you can access the **Inventory Manager** screen by doing one of the following:
 
 - From the **Publishers** tab, navigate to **Publishers** > **Inventory Manager**.
 - From the **Inventory** tab, navigate to **Partners** > **Placement**.
 
-Select a publisher if prompted, click the **Create New** button and select **Placement**, and then select the associating placement group for the placement. The **Create New Placement** dialog displays.
+Select a publisher if prompted, click the **Create New** button and select **Placement**. The **Create New Placement** dialog displays.
 
 ## Step 2. Define the placement details
 
@@ -49,7 +49,7 @@ If you use placement-level pricing, impressions governed by this pricing will ap
 
 ## Step 3. Limit the type and size of creatives that can serve
 
-In the **Allowed Media** section of the **Placement Details** tab, you can limit the creative media types, media subtypes, and sizes that can serve on the placement.
+In the **Allowed Media** section, you can limit the creative media types and sizes that can serve on the placement.
 
 ### Media types and subtypes
 

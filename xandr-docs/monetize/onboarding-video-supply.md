@@ -13,25 +13,29 @@ This page explains how to modify placement settings to accept video creatives an
 
 ## Placements
 
-In order to allow video creatives on your placements, update the media types or media subtypes that the placement allows. To accept all VAST creatives when creating a new placement, under **Placement Details**, set the allowed media type to **Video** \> **Standard VAST**.
+To allow video creatives on your placements, update the **Allowed Media** settings for the placement. Use the [Create a Placement](create-a-placement.md) workflow to navigate to the **Allowed Media** section and select the appropriate media type under the Video section.
 
-Then, set the remaining video placement options in the Video Settings tab.
+New **Video Settings** and **Advanced Video Settings** sections will appear. Configure the remaining video placement options within these sections.
 
-- Enter the acceptable **Max Duration** (in seconds) of video creatives. Creatives under or equal to the specified max duration will be served.
-- Specify whether your player allows Not Skippable or Skippable creatives.
-- Select a Playback Method from the drop-down menu:
-  - Auto-play, sound on
-  - Auto-play, sound off
-  - Click-to-play
-  - Mouse-over
-  - Auto-play, sound unknown (default)
-- Enter the Player Width (in pixels). Unknown is the default option.
-- Select a Roll Position:
-  - Pre-roll
-  - Mid-roll
-  - Post-roll
-  - Unknown (default)
-- Select a Framework. Unknown is the default option if none of the framework options are checked.
+- For **In-stream only**, select a **Position**:
+
+  - **Pre-roll**
+  - **Mid-roll**
+  - **Post-roll**
+
+- Enter the **Player Width** and **Height** (in pixels). **Unknown** is the default option.
+- Enter the acceptable **Max Duration** (in seconds) of video creatives. Creatives that are equal to or shorter than the specified duration will be served.
+- Select a **Playback Method** from the drop-down menu:
+
+  - **Auto-play, sound on**
+  - **Auto-play, sound off**
+  - **Click-to-play**
+  - **Mouse-over**
+  - **Auto-play**, **sound unknown** (default)
+
+- Specify whether your player allows **Not Skippable** or **Skippable** creatives.
+
+- Select a **Framework**. **Unknown** is the default option if none of the framework options are checked.
 
 ## Tagging
 

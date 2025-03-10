@@ -125,6 +125,8 @@
     href: report-on-splits.md
 - name: Curation Optimization
   href: curation-optimization.md
+- name: Change Log History Tool
+  href: change-log-history-tool.md
 - name: Buying Guide
   items:
   - name: Overview
@@ -375,3 +377,5 @@
     href: release-notes-curate-20230626.md
   - name: June 27, 2023 - New Advertiser and Insertion Order Screens in Microsoft Curate UI
     href: release-notes-curate-20230627.md
+  - name: March 10, 2025 - Change Log History Tool
+    href: release-notes-curate-20250310.md

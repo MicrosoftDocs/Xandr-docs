@@ -4,9 +4,9 @@ description: Explore vital metrics, swiftly access individual insertion orders, 
 ms.date: 03/07/2025
 ms.author: shsrinivasan
 ---
-# Microsoft Monetize - Explore insertion orders
+# Microsoft Monetize - Explore Insertion orders
 
-The **Insertion Orders** screen shows you essential metrics about all Insertion orders under a specific advertiser, provides quick access to each insertion order's details, and reporting options.
+The **Insertion Orders** screen shows you essential metrics about all Insertion orders under a specific advertiser, provides quick access to each Insertion order's details, and reporting options.
 
 This document describes the Seller Monitoring Workflow (SMW) feature for Insertion orders.
 
@@ -27,7 +27,7 @@ To access the **Seller Monitoring Workflow (SMW)** feature for Insertion orders:
     - **In Progress** - Insertion orders between flights (start date/time of the first flight and end date/time of the last flight).
     - **Completed** – Insertion orders that have completed and are past their end date/time of the last flight.
 
-## Filter insertion orders
+## Filter Insertion orders
 
 The **Advanced Filters** menu lets you filter for insertion orders based on Advertiser, State, Type, Insertion Order Name, Flight Start and End Date, and External Code. Click on **Apply** or **Apply and Save As**. The **Apply and Save As** option will save your filter for future purposes.
 
@@ -53,7 +53,7 @@ The following stats are shown for each insertion order. Note that the data alway
 
 To get information about attributed conversions, rather than just conversion pixel loads as shown in the Convs column, see [Reporting on Conversions](reporting-on-conversions.md).
 
-<!-->
+<!--
 | **Issues** | Setup issues that may prevent the insertion order or its associated Insertion orders from delivering. |
 | **Billing Period Imps Delivery** | Number of impressions delivered during the current billing period. |
 | **Billing Period Rev Delivery** | Revenue for the current billing period. |
@@ -68,7 +68,8 @@ To get information about attributed conversions, rather than just conversion pix
 | **Insertion orders** | Total number of in-progress, active, and associated Insertion orders under the insertion order. |
 | **Last Hour's Delivery** | Displays the number of impressions delivered on the current calendar day up to the last hour. |
 | **Last 7 Days Delivery** | Displays the number of impressions delivered on full 7 days previous to the current calendar day, i.e., excluding today. |
-| **Yesterday's Delivery** | Displays the number of impressions delivered on full 24-hour period of the previous calendar day. | -->
+| **Yesterday's Delivery** | Displays the number of impressions delivered on full 24-hour period of the previous calendar day. |
+-->
 
 
 
@@ -78,7 +79,7 @@ You can choose the columns that are displayed by clicking the **Modify Columns**
 
 This opens the **Modify Columns** pane. From there you can use the checkboxes to select or deselect the columns you want to display. If you want the columns to appear in a certain order, then you can drag and drop the columns at your desired location.
 
-## View insertion order details
+## View Insertion order details
 
 To view advanced details about an Insertion order, click the Insertion order's name.
 
@@ -88,9 +89,9 @@ See [View Insertion Order Details](view-insertion-order-details.md) for more inf
 
 You can use the search field at the top of the screen to find all Insertion orders whose names or IDs include a specific string of characters or numbers.
 
-## Report on insertion orders
+## Report on Insertion orders
 
-You can initiate a report for one or more insertion orders directly from the SMW grid. Check the box for each insertion order that you want to report on and click **Run Report**. This takes you to the [Advertiser Analytics Report](advertiser-analytics-report.md). For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md).
+You can initiate a report for one or more Insertion orders directly from the SMW grid. Check the box for each Insertion order that you want to report on and click **Run Report**. This takes you to the [Advertiser Analytics Report](advertiser-analytics-report.md). For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md).
 
 ## Related topics
 

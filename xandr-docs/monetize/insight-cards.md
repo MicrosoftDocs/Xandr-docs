@@ -4,7 +4,7 @@ description: Learn about Monetize Insights, which identifies issues and opportun
 ms.date: 10/14/2024
 ---
 
-# Insights cards
+# Insight cards
 
 Monetize Insights automatically identifies issues and opportunities on a periodic basis across a wide range of objects and settings that affect seller monetization. These help Monetize sellers simplify monitoring and optimizing their potential revenue from using the platform.
 

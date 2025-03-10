@@ -8,7 +8,7 @@ ms.date: 10/14/2024
 
 Monetize Insights automatically identifies issues and opportunities on a periodic basis across a wide range of objects and settings that affect seller monetization. These help Monetize sellers simplify monitoring and optimizing their potential revenue from using the platform.
 
-### Unblock brands
+## Unblock brands
 
 Monetize Insights automatically scans bid rejection data to find brands that are bidding at higher prices on impressions than the transacted revenue but are blocked due to the brand's parent category. These brands are surfaced directly to sellers for review.
 

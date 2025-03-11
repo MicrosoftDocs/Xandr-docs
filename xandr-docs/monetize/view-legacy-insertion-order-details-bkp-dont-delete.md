@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 # View legacy Insertion Order details
-
+<!--
 > [!NOTE]
 > Legacy insertion orders are required for [Guaranteed Delivery Line Items](create-a-guaranteed-delivery-line-item.md). For all other line items, we recommend the use of the [default insertion order](create-an-insertion-order.md).
 
@@ -75,3 +75,4 @@ This takes you to the **Advertiser Reporting** screen, where you can select to r
 
 - [Explore Insertion Orders](explore-insertion-orders.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
+-->

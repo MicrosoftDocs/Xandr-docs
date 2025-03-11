@@ -54,7 +54,7 @@ For more information about how quickly report data is processed, see [Availabili
 
 ### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report is retained for 100 days.
 
 ## Currency 2.0
 

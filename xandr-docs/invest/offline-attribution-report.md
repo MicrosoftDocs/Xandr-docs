@@ -34,7 +34,7 @@ Intervals determine how your data is grouped into rows in the report response.
 
 ## Data retention period
 
-This report can retrieve data from the last 120 days.
+This report can retrieve data from the last 100 days.
 
 ## Dimensions
 

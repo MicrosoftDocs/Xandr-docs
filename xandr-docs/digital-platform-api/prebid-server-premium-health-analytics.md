@@ -95,7 +95,7 @@ Data retention period for this report is 99 days.
 | Column | Type | Formula | Example | Description |
 |:---|:---|:---|:---|:---|
 | `average_clear_price` | double | See Description. | `1.00` | The sum of bid price for delivered impressions divided by the number of bid requests sent. |
-| `average_response_time` | double | bid_responses_received / bid_requests_sent. | `0.08` | The number of bid responses received from demand partners divided by the number of bid requests sent. |
+| `average_response_time` | double | bid_responses_received / bid_requests_sent. | `0.08` | The average time demand partners take to respond to bid requests.|
 | `bid_errors` | int | See Description. | `149908040` | The number of errors in bid responses from Demand Partners. |
 | `bid_errors_rate` | double | bid_errors / bid_requests_sent | `0.04` | The number of bid errors divided by the number of bid requests sent to Demand Partners. |
 | `bid_request_error_rate` | double | bid_request_errors / bid_requests_sent | `0.05`| The number of bid request errors divided by the number of bid requests sent to Demand Partners.|

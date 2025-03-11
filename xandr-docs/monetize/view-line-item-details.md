@@ -13,7 +13,7 @@ The **Line Item Details** screen shows you the settings and essential metrics fo
 On the **Line Items** screen, hover over the line item for which you want to view advanced details and click the **graph** button.
 
 This takes you to the **Line Item Details** screen.
-
+<!--
 ## Viewing visual success data
 
 Visual Success is a tool designed to help campaign managers achieve better overall performance. It provides easy access to performance, delivery, and other metrics for your line item. You can use these metrics to see how the campaigns under your line item are performing as a group, and assess for possible trouble spots at the campaign and line item levels.
@@ -28,7 +28,7 @@ With Visual Success, you can:
 Visual Success features appear at the top of the **Line Item Details** screen. The metrics sections and graphs show important information about the line item's flight, delivery, performance and margin.
 
 For more information, see [Improve Performance with Visual Success](improve-performance-with-visual-success.md).
-
+-->
 ## Viewing line item settings
 
 The **Line Item Settings** section shows the basic details, frequency caps, reporting labels, commissions, associated insertion orders (when relevant), and dynamic landing page URL, as well as inventory, geography, and system targeting (if set).

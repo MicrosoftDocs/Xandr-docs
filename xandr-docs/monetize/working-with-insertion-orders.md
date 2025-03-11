@@ -20,7 +20,6 @@ Some useful procedures when creating and working with insertion orders here:
 - **[View Insertion Order Details](view-insertion-order-details.md)** - View the settings and essential metrics for a specific insertion order, analyze visualizations of the insertion order's performance, get quick access to the insertion order's child objects, and more.
 - **[Update Insertion Orders](update-insertion-orders.md)** - Update the details of an insertion order in Microsoft Monetize.
 - **[Reporting on Insertion Orders](explore-insertion-orders.md)** - Initiate an advertiser analytics report for one or more insertion orders.
-- **[Improve Performance with Visual Success](improve-performance-with-visual-success.md)** - View Visual Success data for insertion orders and use it to troubleshoot.
 <!-- - **[Create a Legacy Insertion Order](create-a-legacy-insertion-order.md)** - Set up an old-style insertion order in Microsoft Monetize. Legacy insertion orders do not use billing periods, can't be used with the recommended augmented line item, and are no longer the best practice.
 - **[View Legacy Insertion Order Details](view-legacy-insertion-order-details.md)** - View the settings and essential
   metrics for a specific legacy insertion order, analyze visualizations of the insertion order's performance, get quick access to the insertion order's child objects, and more. -->

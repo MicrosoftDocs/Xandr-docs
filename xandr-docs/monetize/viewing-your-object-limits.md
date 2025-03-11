@@ -1,10 +1,10 @@
 ---
-title: Microsoft Monetize - Viewing Your Object Limits
+title: Microsoft Monetize - View Your Object Limits
 description: Explore efficient line item, creative management with Object Limits Report. Monitor platform usage, ensure compliance, reduce characters.
 ms.date: 10/28/2023
 ---
 
-# Microsoft Monetize - Viewing your object limits
+# Microsoft Monetize - View your object limits
 
 Microsoft Advertising limits the number of object (line items, creatives, etc.) that you can have on the platform. The Object Limits Report allows you to view these limits and proactively monitor your current usage.
 

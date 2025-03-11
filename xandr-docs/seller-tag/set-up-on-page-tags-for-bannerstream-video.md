@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Set up on-page tags for Bannerstream video
 
-Xandr Bannerstream Video uses Xandr's seller tag (AST), an asynchronous JavaScript tag that runs in the header of the page. These tags are defined and loaded in the page header and are activated by "showing" the tags in the page body.
+Xandr Bannerstream Video uses Microsoft Advertising's Seller Tag (AST), an asynchronous JavaScript tag that runs in the header of the page. These tags are defined and loaded in the page header and are activated by "showing" the tags in the page body.
 
 > [!TIP]
 > For select use cases, AST can also be defined, loaded, and shown in the page body.

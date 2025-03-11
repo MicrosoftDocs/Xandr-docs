@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Set up seller tags for native ad types
 
-Xandr's seller tag (AST) is an asynchronous Java script tag that runs in the header of the page. AST tags are defined and loaded in the page header and are activated by "showing" the tags in the page body. For native ads, there are different methods available to help render the ad on the page.
+Microsoft Advertising's Seller Tag (AST) is an asynchronous Java script tag that runs in the header of the page. AST tags are defined and loaded in the page header and are activated by "showing" the tags in the page body. For native ads, there are different methods available to help render the ad on the page.
 
 > [!TIP]
 > For selected use cases, AST can also be defined, loaded, and shown in the page body.

@@ -10,6 +10,12 @@
     href: getting-started-with-adserver.md
   - name: Monetize API
     href: digital-platform-ui-api-info.md
+  - name: Breaking Changes
+    items:
+    - name: Overview
+      href: breaking-changes.md
+    - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
+      href: breaking-change-20250303.md
 - name: Network Guide
   items:
   - name: Overview

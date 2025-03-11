@@ -288,12 +288,6 @@
       href: create-an-insertion-order.md
     - name: Update Insertion Orders
       href: update-insertion-orders.md
-    - name: Explore Global Insertion Orders
-      href: explore-global-insertion-orders.md
-    - name: Create a Legacy Insertion Order
-      href: create-a-legacy-insertion-order.md
-    - name: View Legacy Insertion Order Details
-      href: view-legacy-insertion-order-details.md
   - name: Line items
     items:
     - name: Working with Line Items
@@ -310,6 +304,8 @@
         href: navigate-to-the-create-a-new-line-item-screen-monetize.md
       - name: Add Basic Line Item Details
         href: add-basic-line-item-details.md
+      - name: House Line Items
+        href: ad-campaign-house-line-items.md
       - name: Set Up Line Item Budgeting and Scheduling
         href: set-up-line-item-budgeting-and-scheduling.md
       - name: Underspend Budget Rollover
@@ -413,10 +409,6 @@
         href: household-attribution-reporting.md
       - name: Household Attribution FAQs
         href: household-attribution-faq.md
-    #- name: Explore Global Line Items
-    #  href: explore-global-line-items.md
-  - name: Improve Performance with Visual Success
-    href: improve-performance-with-visual-success.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits
@@ -1061,6 +1053,8 @@
         href: monetize-insights-for-publishers.md
       - name: Monetize Insights for Total Revenue
         href: monetize-insights-total-revenue.md
+      - name: Insight Cards
+        href: insight-cards.md
       - name: Ad Quality
         href: monetize-insights-ad-quality.md
       - name: Deals
@@ -1695,10 +1689,14 @@
   items:
   - name: comScore Agent
     href: comscore-agent.md
+- name: Change Log History Tool
+  href: change-log-history-tool.md
 - name: Release Notes
   items:
   - name: Overview
     href: release-notes.md
+  - name: March 10, 2025 - Change Log History Tool
+    href: release-notes-20250310.md
   - name: November 26, 2024 - Enhanced Blocked Bid Value Metric
     href: release-notes-20241126.md
   - name: October 18, 2024 - Household Attribution
@@ -1733,3 +1731,4 @@
     href: release-notes-20210428.md
   - name: April 14, 2021 - New Ad Quality Technical Attribute
     href: release-notes-20210414.md
+

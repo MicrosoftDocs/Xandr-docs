@@ -129,6 +129,26 @@
         "source_path": "xandr-docs/customer-support/xcs-reporting-outages.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-opening-a-new-case",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/improve-performance-with-visual-success.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/buying-guide",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/explore-global-insertion-orders.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-insertion-orders",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/create-a-legacy-insertion-order.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-insertion-orders",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/view-legacy-insertion-order-details.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-insertion-orders",
+        "redirect_document_id": false
         }
     ]
 }

@@ -14,6 +14,8 @@
     items:
     - name: Overview
       href: breaking-changes.md
+    - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
+      href: breaking-change-20250303.md
     - name: January 23, 2025 – Update to Context Array Object in Profile Service API 
       href: breaking-change-20250124.md
 - name: Tutorials

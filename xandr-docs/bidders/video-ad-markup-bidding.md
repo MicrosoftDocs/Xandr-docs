@@ -6,10 +6,6 @@ ms.date: 10/28/2023
 
 # Video Ad Markup (ADM) in bid responses
 
-## Overview  
-
-This product allows the bidder to send raw video XML via the bid response's `adm` field directly to Xandr servers for bidding.  
-
 ## Requirements for using video ADM  
 
 Video Ad Markup Bidding (ADM) enables your bidder to submit video ad markup via the `adm` field in the OpenRTB bid response. Instead of registering every creative with Microsoft Monetize, register only **one creative** per combination of:  
@@ -27,6 +23,8 @@ Additionally, your bidder must send **XML content** via the bidstream.
 > Custom macros and other required data must be prefilled within the XML content.  
 > [!NOTE]
 > The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.  
+
+To ensure compatibility at bid time and avoid rejection due to missing MIME type support, we recommend **submitting all supported MIME types** when registering the creative. This ensures that the registered creative can serve across all available video inventory. For more details on required fields and supported MIME types, see the [Video Object](outgoing-bid-request-to-bidders.md#video-object-for-the-assets).
 
 ## Get started with video ADM  
 

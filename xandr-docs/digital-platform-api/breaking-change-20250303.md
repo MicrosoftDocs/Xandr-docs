@@ -31,12 +31,12 @@ Most data in Analytics reports remains available, with the following exceptions:
 
 - [Microsoft Monetize - Network Analytics Report](../monetize/network-analytics-report.md)
 - [Microsoft Invest - Network Analytics Report](../invest/network-analytics-report.md)
-- [Digital Platform API - Network Analytics Report](network-analytics-report.md)
+- [Digital Platform API - Network Analytics Report](network-analytics.md)
 - [Microsoft Invest - Advertiser Analytics Report](../invest/advertiser-analytics-report.md)
-- [Digital Platform API - Advertiser Analytics Report](advertiser-analytics-report.md)
+- [Digital Platform API - Advertiser Analytics Report](advertiser-analytics.md)
 - [Microsoft Monetize - Advertiser Analytics Report](../monetize/advertiser-analytics-report.md)
-- [Microsoft Monetize - Publisher Analytics Report](../monetize/publisher-analytics-report.md)
-- [Digital Platform API - Publisher Analytics Report](publisher-analytics-report.md)
+- [Microsoft Monetize - Publisher Analytics Report](../monetize/publisher-analytics.md)
+- [Digital Platform API - Publisher Analytics Report](publisher-analytics.md)
 
 If you use our reporting API, please update your queries to exclude hourly data configurations for data older than six months. To maintain data consistency and accessibility, proactively save any required hourly data before it reaches the six-month limit. 
 

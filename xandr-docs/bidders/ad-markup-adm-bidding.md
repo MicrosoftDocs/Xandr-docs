@@ -35,7 +35,7 @@ Your bidder must be enabled to use this feature for every supported media type: 
 Once enabled, complete the following steps to buy inventory via ADM:
 
 1. **Register your individually branded creatives** – All creative assets associated with this brand will serve through this creative.  
-2. **Bid with your creative assets dynamically.**  
+2. **Bid with your creative assets dynamically**.  
 
 ## Register creatives
 

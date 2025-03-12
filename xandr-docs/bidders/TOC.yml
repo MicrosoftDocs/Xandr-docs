@@ -139,13 +139,13 @@
       href: vast-check.md
     - name: ADM bidding
       items:
-      - name: Ad Markup (ADM) Bidding Overview
+      - name: Overview - ADM Bidding
         href: ad-markup-adm-bidding.md
-      - name: Bid with Native 1.2 Ad Markup (ADM)
+      - name: Native 1.2 Ad Markup Bidding (ADM)
         href: native-ad-markup-bidding.md
-      - name: Banner Ad Markup (ADM) in Bid Responses
+      - name: Banner Ad Markup bidding (ADM)
         href: banner-ad-markup-bidding.md
-      - name: Video Ad Markup (ADM) in Bid Responses
+      - name: Video Ad Markup Bidding (ADM)
         href: video-ad-markup-bidding.md
   - name: Auction Configuration & Feedback
     items:

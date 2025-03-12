@@ -1,10 +1,10 @@
 ---
-title: Banner Ad Markup (ADM) in Bid Responses
+title: Banner Ad Markup Bidding (ADM)
 description: In this article, find information about bidding with a banner ad markup and how to use this feature.
 ms.date: 10/28/2023
 ---
 
-# Banner Ad Markup (ADM) in bid responses
+# Banner Ad Markup bidding (ADM)
 
 ## Requirements for using banner ADM  
 

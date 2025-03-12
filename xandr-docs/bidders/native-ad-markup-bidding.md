@@ -1,10 +1,10 @@
 ---
-title: Bid with Native 1.2 Ad Markup (ADM)
+title: Native 1.2 Ad Markup Bidding (ADM)
 description: This page explains the native ad markup bidding feature, how to enable it, and supported fields, with creative examples.
 ms.date: 10/28/2023
 ---
 
-# Bid with native 1.2 Ad Markup (ADM)
+# Native 1.2 Ad Markup bidding (ADM)
 
 > [!NOTE]
 > This feature does not support bidding with native video ad markup. Only non-video native ad markup is accepted.

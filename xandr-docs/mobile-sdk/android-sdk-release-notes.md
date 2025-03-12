@@ -7,44 +7,56 @@ ms.date : 11/27/2024
 
 # Android SDK release notes
 
+## 9.4.0
+
+### Improvement/Bug Fixes
+
+- 8846449: Updated OMSDK to v1.5.2.  
+- 6036342: Improved 1px-in-view logic for impression.  
+- 8925245: Fixed `onAdImpression` callback issue for **BannerVideo**.  
+- 8058249: Fixed issue with Video Replay in **BannerVideo**.  
+- 8069325: Fixed unhandled events in **BannerAdView**.  
+- 8524834: Updated support for two-click native ads. Publishers can now pass null as clickable views, and impressions will be tracked only once.
+- 8743618: Updated Google Mediation SDK to v24.0.0.  
+
 ## 9.3.0
 
-### New feature
+### New Feature
 
-- 7666962: Vungle CSR support for Interstitial video ads. For more information, see [Vungle demand for Android](vungle-demand-for-android.md)
-
-### Improvement/Bug Fixes
-
-- 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.
-
-## 9.2
+- 7666962: Vungle CSR support for Interstitial video ads. For more information, see [Vungle demand for Android](vungle-demand-for-android.md).  
 
 ### Improvement/Bug Fixes
 
-- 8345772: Added support for [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md)
+- 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.  
+
+## 9.2.0
+
+### Improvement/Bug Fixes
+
+- 8345772: Added support for [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md).  
 
 ## 9.1.0
 
 ### New Feature
 
-- 7667039 - Support for VAST Video Ads in Interstitial Ad Unit.
+- 7667039: Support for VAST Video Ads in Interstitial Ad Unit.  
 
 ## 9.0.1
 
 ### Improvement/Bug Fixes
 
-- 7812193 - Fixed a StackOverflowError crash that occurred when the native ad failed.
+- 7812193: Fixed a `StackOverflowError` crash that occurred when the native ad failed.  
 
-## 9.0
+## 9.0.0
 
 ### New Feature
 
-- 6015104 - Added new parameters enableOMIDOptimization to `NativeAdSDK.registerTracking()` methods [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).
+- 6015104: Added new parameter `enableOMIDOptimization` to `NativeAdSDK.registerTracking()` methods. See [Listen to native ad events on Android](listen-to-native-ad-events-on-android.md).  
 
 ### Improvement/Bug Fixes
 
-- 7390161 Fixed Banner autorefresh when `OnAdFailed()` occurs.
-- 7390147 Fixed OMID AdEvents error messages on autorefresh.
+- 7390161: Fixed Banner auto-refresh when `OnAdFailed()` occurs.  
+- 7390147: Fixed OMID `AdEvents` error messages on auto-refresh.  
 
 ## 8.11
 

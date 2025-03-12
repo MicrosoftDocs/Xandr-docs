@@ -79,7 +79,6 @@ Real Time Data is a new feature being offered within this report (not all users 
 | Advertiser | Yes | The specific advertiser that purchased the impression. |
 | Brand | Yes | The brand associated with the creative that served on the impression. For more information about how to set up your brand preferences, see [Working with Network Ad Quality](working-with-network-ad-quality.md) and [Working with Ad Quality](working-with-publisher-ad-quality.md). For impression type "Resold", no information is available in the **Brand** field for this report. See the [Seller Brand Review Report](seller-brand-review-report.md) instead. |
 | Buyer | Yes | The member whose advertiser purchased the impression. |
-| Campaign | No | The campaign that was used to purchase the impression. For more information about campaigns, see [Working with Campaigns](working-with-campaigns.md). |
 | Country | Yes | The country where the impression occurred. |
 | Deal | Yes | The deal associated with the transaction for the impression. |
 | Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|

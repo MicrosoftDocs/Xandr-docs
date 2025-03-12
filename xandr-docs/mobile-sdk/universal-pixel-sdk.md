@@ -10,5 +10,3 @@ The [Universal Pixel](../monetize/the-universal-pixel.md) provides insights into
 
 - [Universal Pixel SDK for iOS](../mobile-sdk/universal-pixel-sdk-for-ios.md)
 - [Universal Pixel SDK for Android](../mobile-sdk/universal-pixel-sdk-for-android.md)
-- 
-- 

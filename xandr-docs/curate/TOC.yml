@@ -223,6 +223,8 @@
           href: universal-pixel-code-structure.md
         - name: Universal Pixel Consent Mode
           href: set-up-consent-mode-in-universal-pixel.md
+        - name: Transparency and Consent Framework (TCF) for Universal Pixel
+          href: tcf-for-universal-pixel-curate.md
         - name: Events and Parameters
           items:
             - name: Use Events and Parameters

@@ -16,8 +16,8 @@ Native Ad Markup Bidding (ADM) enables your bidder to submit native ad markup vi
 - Unique ad campaign or brand you represent  
 - Unique supported language  
 
-Use BURL for spend and impression tracking on the Monetize server side.
-
+> [!IMPORTANT]
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
 > [!NOTE]
 > The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and that of the registered creative.
 

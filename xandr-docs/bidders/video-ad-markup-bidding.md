@@ -1,10 +1,10 @@
 ---
-title: Video Ad Markup (ADM) in Bid Responses
+title: Video Ad Markup Bidding (ADM)
 description: Learn how to submit raw video XML via ADM for bidding, simplifying creative registration and enabling dynamic ad delivery in OpenRTB.
 ms.date: 10/28/2023
 ---
 
-# Video Ad Markup (ADM) in bid responses
+# Video Ad Markup bidding (ADM)
 
 ## Requirements for using video ADM  
 
@@ -15,7 +15,7 @@ Video Ad Markup Bidding (ADM) enables your bidder to submit video ad markup via 
 - Video creative duration  
 
 > [!IMPORTANT]
-> Use `burl` for **spend and impression tracking** server-side.  
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
 
 Additionally, your bidder must send **XML content** via the bidstream.
 
@@ -44,7 +44,7 @@ Register **one creative per brand** using the [Creative Service](creative-servic
 - The creative must represent an actual ad dynamically passed in the bid response for this brand.  
   - The specific ad chosen for registration does not matter.  
   - The creative must be **eligible to serve** on Monetize inventory.  
-- The creative must **pass a platform audit**. See our audit policies for details.  
+- The creative must **pass a platform audit**. 
 - When registering a creative, only OpenRTB macros are supported. [Monetize macros](xandr-macros.md) are not supported, and OpenRTB macros (such as ${AUCTION_PRICE}) will not be expanded.
 - The `brand_id` field is set by Monetize during the audit.  
 - Use **video creative template 6439**.  

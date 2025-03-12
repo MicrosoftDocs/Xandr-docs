@@ -14,7 +14,7 @@ Banner Ad Markup Bidding (ADM) enables bidders to submit banner ad markup via `a
 - A unique supported language  
 
 > [!IMPORTANT]
-> Use `BURL` for spend and impression tracking on the Monetize server side.  
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
 > [!NOTE]
 > The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.  
 

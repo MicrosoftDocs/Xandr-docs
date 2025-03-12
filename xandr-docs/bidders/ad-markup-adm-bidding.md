@@ -1,10 +1,10 @@
 ---
-title: Ad markup (ADM) Bidding Overview
+title: Overview - ADM Bidding
 description: Learn how to target specific content categories to optimize ad campaigns and improve reach accuracy.
 ms.date: 10/28/2023
 ---
 
-# Ad Markup (ADM) bidding overview
+# Overview - ADM Bidding
 
 ## What is Ad Markup (ADM) bidding?
 
@@ -17,10 +17,16 @@ ADM enables your bidder to submit content via the `adm` field in the OpenRTB bid
 - **Unique ad campaign or brand** you represent
 - **Unique supported language**  
 
-It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
-
+> [!IMPORTANT]
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
 > [!NOTE]  
 > The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.
+
+For additional details on requirements for each creative format, refer to the following:
+
+- [Native ADM Bidding](native-ad-markup-bidding.md)
+- [Banner ADM Bidding](banner-ad-markup-bidding.md)
+- [Video ADM Bidding](video-ad-markup-bidding.md)
 
 ## Get started with ADM
 

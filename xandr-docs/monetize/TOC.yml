@@ -10,12 +10,6 @@
     href: getting-started-with-adserver.md
   - name: Monetize API
     href: digital-platform-ui-api-info.md
-  - name: Breaking Changes
-    items:
-    - name: Overview
-      href: breaking-changes.md
-    - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
-      href: breaking-change-20250303.md
 - name: Network Guide
   items:
   - name: Overview
@@ -294,6 +288,12 @@
       href: create-an-insertion-order.md
     - name: Update Insertion Orders
       href: update-insertion-orders.md
+    - name: Explore Global Insertion Orders
+      href: explore-global-insertion-orders.md
+    - name: Create a Legacy Insertion Order
+      href: create-a-legacy-insertion-order.md
+    - name: View Legacy Insertion Order Details
+      href: view-legacy-insertion-order-details.md
   - name: Line items
     items:
     - name: Working with Line Items
@@ -375,14 +375,12 @@
       - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
         href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
     
-    # - name: Create a Standard Line Item
-    #   href: create-a-standard-line-item.md
+    - name: Create a Standard Line Item
+      href: create-a-standard-line-item.md
     - name: Update Line Items
       href: update-line-items.md
-    # - name: Viewing Visual Success Data
-    #   href: viewing-visual-success-data.md
-    - name: Line Item Analytics
-      href: line-item-analytics.md
+    - name: Viewing Visual Success Data
+      href: viewing-visual-success-data.md
     - name: View Line Item Details
       href: view-line-item-details.md
     - name: Add a Performance Goal to a Line Item
@@ -415,6 +413,10 @@
         href: household-attribution-reporting.md
       - name: Household Attribution FAQs
         href: household-attribution-faq.md
+    - name: Explore Global Line Items
+      href: explore-global-line-items.md
+  - name: Improve Performance with Visual Success
+    href: improve-performance-with-visual-success.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits
@@ -431,22 +433,23 @@
       href: explore-splits.md
     - name: Split FAQ
       href: split-faqs.md
-  - name: Campaigns
-    items:
-    - name: Working with Campaigns
-      href: working-with-campaigns.md
-    - name: Explore Campaigns
-      href: explore-campaigns.md
-    - name: View Campaign Details
-      href: view-campaign-details.md
-    - name: Create a Campaign
-      href: create-a-campaign.md
-    - name: Create a Deal Campaign
-      href: create-a-deal-campaign.md
-    - name: Update Campaigns
-      href: update-campaigns.md
-    - name: Associate Creatives to Campaigns
-      href: associate-creatives-to-campaigns.md
+  # Removing Campaign-related pages as per ticket #Epic 9058674 
+  # - name: Campaigns
+  #  items:
+  #  - name: Working with Campaigns
+  #    href: working-with-campaigns.md
+  #  - name: Explore Campaigns
+  #    href: explore-campaigns.md
+  #  - name: View Campaign Details
+  #    href: view-campaign-details.md
+  #  - name: Create a Campaign
+  #    href: create-a-campaign.md
+  #  - name: Create a Deal Campaign
+  #    href: create-a-deal-campaign.md
+  #  - name: Update Campaigns
+  #    href: update-campaigns.md
+  #  - name: Associate Creatives to Campaigns
+  #    href: associate-creatives-to-campaigns.md
     - name: Buying Strategies
       items:
       - name: Overview
@@ -469,10 +472,11 @@
       href: difficulties-with-exact-budgeting.md
     - name: Daily Pacing
       href: daily-pacing.md
-    - name: Line Item Budgeting vs. Campaign Budgeting
-      href: line-item-budgeting-vs-campaign-budgeting.md
-    - name: Line Item Pacing vs. Campaign Pacing
-      href: line-item-pacing-vs-campaign-pacing.md
+    # Removing Campaign-related pages as per ticket #Epic 9058674
+    #- name: Line Item Budgeting vs. Campaign Budgeting
+    # href: line-item-budgeting-vs-campaign-budgeting.md
+    #- name: Line Item Pacing vs. Campaign Pacing
+    #  href: line-item-pacing-vs-campaign-pacing.md
   - name: Impressions and Click Trackers
     items:
     - name: Working with Impression and Click Trackers
@@ -483,16 +487,17 @@
       href: create-an-impression-tracker.md
   - name: APAC Supply Information - Platform Inventory by Seller
     href: apac-supply-information-platform-inventory-by-seller.md
-  - name: Trader Home
-    items:
-    - name: Working with Trader Home
-      href: working-with-trader-home.md
-    - name: Explore Trader Home
-      href: explore-trader-home.md
-    - name: Update Trader Home
-      href: update-trader-home.md
-    - name: Adding Insertion Orders to Trader Home
-      href: adding-insertion-orders-to-trader-home.md
+   # Removing Trader Home-related pages as per ticket #Epic 9058683 
+  #- name: Trader Home
+  #  items:
+  #  - name: Working with Trader Home
+  #    href: working-with-trader-home.md
+  #  - name: Explore Trader Home
+  #    href: explore-trader-home.md
+  #  - name: Update Trader Home
+  #    href: update-trader-home.md
+  #  - name: Adding Insertion Orders to Trader Home
+  #    href: adding-insertion-orders-to-trader-home.md
   - name: Mobile
     items:
     - name: Welcome to Mobile
@@ -545,8 +550,9 @@
       href: buying-video-inventory.md
     - name: Video Creative Best Practices
       href: video-creative-best-practices.md
-    - name: Video Campaign Best Practices
-      href: video-campaign-best-practices.md
+    # Removing Campaign-related pages as per ticket #Epic 9058674
+    #- name: Video Campaign Best Practices
+    #  href: video-campaign-best-practices.md
     - name: Upload a Hosted Video Creative
       href: upload-a-hosted-video-creative.md
     - name: Troubleshooting VAST Creatives
@@ -607,8 +613,9 @@
       href: buying-seedtag-inventory.md
   - name: Political Advertising
     href: political-advertising.md
-  - name: Campaign Monitor
-    href: campaign-monitor.md
+  # Removing Campaign-related pages as per ticket #Epic 9058674
+  #- name: Campaign Monitor
+    #href: campaign-monitor.md
   - name: Guaranteed Delivery
     items:
     - name: Create a Guaranteed Delivery Line Item
@@ -1059,8 +1066,6 @@
         href: monetize-insights-for-publishers.md
       - name: Monetize Insights for Total Revenue
         href: monetize-insights-total-revenue.md
-      - name: Insight Cards
-        href: insight-cards.md
       - name: Ad Quality
         href: monetize-insights-ad-quality.md
       - name: Deals
@@ -1695,14 +1700,10 @@
   items:
   - name: comScore Agent
     href: comscore-agent.md
-- name: Change Log History Tool
-  href: change-log-history-tool.md
 - name: Release Notes
   items:
   - name: Overview
     href: release-notes.md
-  - name: March 10, 2025 - Change Log History Tool
-    href: release-notes-20250310.md
   - name: November 26, 2024 - Enhanced Blocked Bid Value Metric
     href: release-notes-20241126.md
   - name: October 18, 2024 - Household Attribution
@@ -1737,4 +1738,3 @@
     href: release-notes-20210428.md
   - name: April 14, 2021 - New Ad Quality Technical Attribute
     href: release-notes-20210414.md
-

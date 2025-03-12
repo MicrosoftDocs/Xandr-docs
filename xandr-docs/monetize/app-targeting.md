@@ -59,6 +59,5 @@ To identify specific mobile apps to target, we recommend targeting the region yo
 
 ## Related topics
 
-- [Create a Campaign](create-a-campaign.md)
 - [Working with Targeting Lists](working-with-targeting-lists.md)
 - [Domain Targeting](domain-targeting.md)

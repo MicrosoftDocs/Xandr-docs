@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Create a placement
 
 > [!NOTE]
-> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies]([../policies-regulations/index.yml](https://learn.microsoft.com/en-us/xandr/policies-regulations/)).
+> Microsoft Advertising now supports a domain, `adnxs-simple.com`, which does not send or read browser cookies on requests. Clients can leverage this cookie-free domain when there is no consent to use personal data. Relevant calls initiated by Microsoft Advertising will automatically use this domain when there is no consent or when cookies are not required for the function. For more information, see [Part of Service Policies](https://learn.microsoft.com/en-us/xandr/policies-regulations/).
 
 A placement is the object in our system that represents (and is used to generate) the tag that is placed on a publisher's page.
 

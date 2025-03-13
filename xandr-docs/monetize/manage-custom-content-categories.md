@@ -14,16 +14,13 @@ In the Content Categories area of Microsoft Monetize, you can perform the follow
 - Edit the name and description of an existing custom content category
 - Delete a custom content category
 
-> [!IMPORTANT]
-> You can also create a custom content category when managing a placement. See **Step 3** of [Create a Placement](create-a-placement.md) for more information.
-
 ## Content categories screen
 
 This screen shows the list of custom content categories that you have created. After creating a custom content category, you can associate it with your placements.
 
 ### Location
 
-To reach this screen, select **Network** > **Tools** > **General** and then click on the **Content Categories** tab.
+To reach this screen, select **Network** > **General** and then click on the **Content Categories** tab.
 
 ### Columns
 

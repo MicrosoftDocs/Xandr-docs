@@ -13,9 +13,9 @@ ms.date: 10/28/2023
 | Release | Description | Date |
 |---|---|---|
 | [1.8.0](https://adsdk.microsoft.com/ast/ast.js) | - Add additional consent checks to the Fledge auction workflow. <br> - Improve the release framework and smoke tests. | 10 March 2025 |
-| [1.7.0](https://adsdk.microsoft.com/ast/ast.js) | - Enhance file creation framework. | 6 March 2025 |
+| [1.7.0](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 6 March 2025 |
 | 1.6.0 | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 27 February 2025 |
-| [1.5.0](https://adsdk.microsoft.com/ast/ast.js) | - Update certain telemetry events to include `tagId`. | 25 February 2025 |
+| [1.5.0](https://adsdk.microsoft.com/ast/ast.js) | - - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 25 February 2025 |
 | [1.4.0](https://adsdk.microsoft.com/ast/ast.js) | - Add support for OpenRTB Native requests and responses. | 21 February 2025 |
 | [1.3.0](https://adsdk.microsoft.com/ast/ast.js) | - add `batchId` and `adTrackingId` to AST telemetry events.<br> - refactor code around user agents. | 13 February 2025 |
 | [1.2.0](https://adsdk.microsoft.com/ast/ast.js) | - add `feedbackUrl` and `native.custom` fields to `adObject`. <br> - fix sizes passed into AST IG <br> - correct `topic` field name in AST. <br> - remove extra fields in `auctionConfig` for AST. <br> - Private Auction runs for treatment labels <br> - add `removeTag` API function <br> - new AST event `mrcView` | 12 February 2025 |

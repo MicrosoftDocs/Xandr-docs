@@ -192,7 +192,7 @@ To view the direct and third-party buying strategies of multiple campaigns at on
 
 ### Frequency caps
 
-To view the how frequently creatives associated to campaigns can be shown to a given user, select **Settings >  Frequency Caps**.
+To view the how frequently creatives associated to campaigns can be shown to a given user, select **Settings** >  **Frequency Caps**.
 
 - If frequency caps are set in a campaign, they are represented as inclusions (green icon).
 
@@ -224,10 +224,3 @@ You can initiate an advertiser analytics report for one or more campaigns direct
 click **Actions >  Run Report**.
 
 This takes you to the Advertiser Analytics report, where the campaigns you selected are pre-set as filters and **Campaigns** is pre-set as a dimension. For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md).
-
-### Related topics
-
-- [Working with Campaigns](working-with-campaigns.md)
-- [View Campaign Details](view-campaign-details.md)
-- [Create a Campaign](create-a-campaign.md)
-- [Create a Deal Campaign](create-a-deal-campaign.md)

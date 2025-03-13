@@ -35,18 +35,18 @@ To make in-stream video available, use the following recommendations for placeme
 
 1. Select a playback method. The default value is **Auto-play**, **sound unknown**. For CTV and in-stream placements, the recommended setting is **Auto-play**, **sound on**.
 1. Specify whether your player will allow skippable creatives.
-    a. If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the Skip Offset field.
+If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the Skip Offset field.
 
 1. From the **Player Vast Version** menu, select the video player's VAST version. The default value is VAST 2.0. You should use the most recent VAST version that your player can handle because players are backwards compatible. Therefore, creatives with lower VAST versions can still serve on these placements. For example, a VAST 2.0 creative can serve on a VAST 4.0 player, but a VAST 4.0 creative can't serve on a VAST 2.0 player. The following VAST versions are supported:
-<br>
-    a. **VAST 2.0**
-    b. **VAST 3.0**
-    c. **VAST 4.0**
-    d. **VAST 4.1**
-    e. **VAST 4.2**
-<br>
+
+     1. **VAST 2.0**
+     1. **VAST 3.0**
+     1. **VAST 4.0**
+     1. **VAST 4.1**
+     1. **VAST 4.2**
+
 1. Select a compatible framework.
-<br>
+
    1. **VPAID 1.0** is a flash-only wrapper.
    1. **VPAID 2.0** has a JavaScript VPAID wrapper. It may also include Flash for legacy reasons.
    1. CTV and in-app video placements almost never accept VPAID. We recommend not selecting any frameworks for these placements,  because doing so could block demand.

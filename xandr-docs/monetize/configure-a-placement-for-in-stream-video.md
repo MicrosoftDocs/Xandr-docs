@@ -37,7 +37,9 @@ To make in-stream video available, use the following recommendations for placeme
 1. Specify whether your player will allow skippable creatives.
 If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the Skip Offset field.
 
-1. From the **Player Vast Version** menu, select the video player's VAST version. The default value is VAST 2.0. You should use the most recent VAST version that your player can handle because players are backwards compatible. Therefore, creatives with lower VAST versions can still serve on these placements. For example, a VAST 2.0 creative can serve on a VAST 4.0 player, but a VAST 4.0 creative can't serve on a VAST 2.0 player. The following VAST versions are supported:
+1. From the **Player Vast Version** menu, select the video player's VAST version. The default value is VAST 2.0. You should use the most recent VAST version that your player can handle because players are backwards compatible. Therefore, creatives with lower VAST versions can still serve on these placements. For example, a VAST 2.0 creative can serve on a VAST 4.0 player, but a VAST 4.0 creative can't serve on a VAST 2.0 player.
+
+The following VAST versions are supported:
 
      1. **VAST 2.0**
      2. **VAST 3.0**

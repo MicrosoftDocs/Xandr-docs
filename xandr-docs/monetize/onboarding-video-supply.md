@@ -40,8 +40,10 @@ New **Video Settings** and **Advanced Video Settings** sections will appear. Con
 ## Tagging
 
 When you [export placement tags](export-placement-tags.md) for a placement that allows VAST video creatives, the placement tag generated is a URL that automatically includes the /ptv or /vmap handler (depending on the placement), which ensures that ad calls will return the XML your publisher's video player uses to serve the desired
-creative. For ptv tags, the end result looks something like this: `https://ib.``adnxs``.com/ptv?id=5523324`.
-For vmap tags, the end result should look something like this: `https://ib.``adnxs``.com/vmap?id=11029144`.
+creative. For ptv tags, the end result looks something like this: `https://ib.adnxs`.com/ptv?id=5523324`.
+
+For vmap tags, the end result should look something like this: `https://ib.adnxs`.com/vmap?id=11029144`.
+
 Note that ad pods will only work with vmap tags.
 
 The end result looks something like this:

@@ -11,7 +11,7 @@ ms.date: 10/28/2023
 
 A placement is the object in our system that represents (and is used to generate) the tag that is placed on a publisher's page.
 
-When you create a placement, follow these steps:
+When you create a placement, you can:
 
 - Select the types of creatives that can serve on the placement.
 - Configure settings that may impact monetization, such as size, video requirements, and reserve price
@@ -28,11 +28,11 @@ If prompted, select a publisher. Click the **Create New** button, and then selec
 
 ## Step 2: Define the basic settings
 
-Select the **placement group** for the placement.
+Select the **placement group** to be associated with the placement.
 
-Enter a **Name** and do any of the following:
+Enter a **Name** for the placement and review the following optional fields:
 
-- To assign custom codes, select **Enable Code**, then enter your codes.
+- To assign custom codes, select **Enable Code**, then enter your code(s).
 - To keep the placement inactive after saving, select **Inactive**. Otherwise, the **State** field is set to **Active** by default.
 
     > [!NOTE]
@@ -60,7 +60,9 @@ The Microsoft Advertising platform categorizes creatives by media type and media
     > If you select this option, an error message appears if you try to save the placement with this media type for resellable inventory. If you want to support expandable creatives for placements associated with placement groups that have been made available for reselling to other platform members, the placement ID and URL must be provided to [support](https://support.ads.microsoft.com) for verification.
     When exporting and placing an expandable tag on your publisher's page, declare a size in the `size=` parameter as you would in a standard banner tag. When an expandable creative is served to the tag, it will expand outside of the designated size.
 
-- **Private Media Types:** Private media types and subtypes can be used only for custom deals or packages. Selecting the **Private** checkbox allows the media type or subtype to serve on custom deals and packages you set up.
+### Private media types
+
+Private media types and subtypes can be used only for custom deals or packages. Selecting the **Private** checkbox allows the media type or subtype to serve on custom deals and packages you set up.
 
 ### Sizes
 
@@ -73,7 +75,7 @@ If your placement uses a friendly iFrame and you want the placement to resize to
 
 ### Private sizes
 
-Private sizes are additional placement sizes that can serve for custom deals, packages and managed campaigns. If you want to allow private sizes, select the sizes you want from the **Private Sizes** list, or add a new size below the list.
+Private sizes are additional placement sizes that can serve for custom deals, packages and managed campaigns. If you want to allow private sizes, select the sizes you want from the **Private Sizes** list.
 
 To use these sizes in a deal, check the **Allow deal to include private sizes** checkbox in the [Create a Custom Deal](create-a-custom-deal.md).
 
@@ -84,7 +86,7 @@ To use these sizes in a deal, check the **Allow deal to include private sizes** 
 
 If you are creating a video placement, the **Video Settings** and **Advanced Video Settings** sections appear when you select a Video media type under Allowed Media.
 
-In the **Video Settings** tab, enter details about the video position and ad pod configuration (in-stream only), player size, ad duration, and skipability.
+In the **Video Settings** section, enter details about the video position and ad pod configuration (in-stream only), player size, ad duration, and skipability.
 
 > [!NOTE]
 > If you are working with ad pods (linear groupings of more than one ad designed to fill a single placement), the max duration you select is the maximum duration for the total number of ads in the ad pod. Buyers will be able to target placements that allow ads that fit into the max duration specified for the ad pod, and they can specify the order in the ad pod where they would like their ads to appear.
@@ -100,7 +102,7 @@ However, when trafficking a creative, users can set a **skipoffset_seconds** val
 
 The **Advanced Video Settings** section enables additional video configurations such as VAST versions, supported frameworks and mime types, and player settings, where relevant.
 
-## VAST version
+### VAST version
 
 The creative’s VAST version must be compatible with the VAST player it is served to; otherwise, the system will generate an error, causing the publisher to lose revenue.
 
@@ -130,7 +132,7 @@ To add the VAST player version for an existing placement:
 > [!NOTE]
 > If a creative's VAST contains both VPAID and inline video files, it will be assigned the VPAID frameworks when it's uploaded in Microsoft Advertising. Therefore, certain placements that permit multiple creative types may be blocked in auction. To ensure accurate creative matching, you should follow the steps outlined below.
 
-To set mime type options (recommended), select the **Show Mime Type Options** checkbox. This opens the **Mime Type Options** section. From there, you will need to set two distinct fields: **Handles Mixed Media** and **Video Mime Types**.
+To update mime type options, expand the **Mime Type Options** section. This opens the **Mime Type Options** section. From there, you will see two distinct fields: **Handles Mixed Media** and **Video Mime Types**.
 
 ### Handles mixed media
 
@@ -140,7 +142,7 @@ This checkbox is used to denote if your player can successfully parse a creative
 - If not checked, Microsoft Advertising will not serve a creative unless it only has the media files you do support.
 
 > [!NOTE]
-> Unchecking the handles mixed media option may have meaningful monetization implications from programmatic demand sources. It is recommended that if your video player supports it, that this option remains checked.
+> Unchecking the handles mixed media option may have meaningful monetization implications from programmatic demand sources. It is recommended to keep this option checked if your video player supports it.
 
 ### Video mime types
 
@@ -159,7 +161,7 @@ You can apply up to 20 categories from the Microsoft Advertising universal list 
 
 ### Custom categories
 
-You can apply your own custom categories to sites or placements to create particular slices of inventory. Your managed advertisers can target these categories through their campaigns. You can enable buyers to target only those custom categories you specify in your buyer eligibility settings.
+You can apply your own custom categories to sites or placements to create particular slices of inventory. Your managed advertisers can target these categories through their line items. You can enable buyers to target only those custom categories you specify in your buyer eligibility settings.
 
 You can create a new custom category by navigating to the **Network** tab > General > Content Categories, and selecting **New content category**. See [Manage Custom Content Categories](manage-custom-content-categories.md) for more details.
 
@@ -185,18 +187,18 @@ If you use placement-level pricing, impressions governed by this pricing will ap
 
 ### Limit the advertisers and line items that can serve
 
-In the Advertiser Filtering section, you can include or exclude specific managed advertisers, line items, and campaigns from serving on the placement.
+In the **Advertiser Filtering** section, you can include or exclude specific managed advertisers and line items from serving on the placement.
 
 > [!NOTE]
 > Including or excluding specific advertisers will not prevent RTB Marketplace buyers from serving on this placement. To do this you must use [Working with Ad Quality](working-with-publisher-ad-quality.md) or ensure that the placement's parent [Create a Placement Group](create-a-placement-group.md) is not participating (reselling) in the RTB Marketplace.
 
-## Step 8: Add a piggyback pixel (optional)
+### Add a piggyback pixel (optional)
 
 If you want a piggyback pixel to fire when a creative serves on the placement, enter the pixel's URL or secure URL on the **Piggyback Pixel** tab and specify whether the pixel is a 1x1 image or JavaScript. A piggyback pixel can be an [Impression and Click Tracker](working-with-impression-and-click-trackers.md), a beacon, or any other JavaScript that the publisher needs loaded alongside an ad.
 
 > [!NOTE]
 > Piggyback pixels are currently unsupported for `/ptv` video tags due to how VAST payloads are structured.
 
-## Step 9. Save the placement
+## Step 8. Save the placement
 
-To finish adding the placement to the Microsoft Advertising platform, click the **Save** button. The placement is then added to the **Placement List** in the **Inventory Manager**.
+To finish adding the placement to the Microsoft Advertising platform, click the **Save and Close** button. The placement is then added to the **Placement List** in the **Inventory Manager**.

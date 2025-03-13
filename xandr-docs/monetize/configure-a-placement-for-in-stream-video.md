@@ -11,7 +11,7 @@ To set up an in-stream video placement, use the [Create a Placement](create-a-pl
 To make in-stream video available, use the following recommendations for placement setup. Some of the values defined in the Microsoft Advertising placement definition can be overridden in the query string or on-page code if necessary.
 
 1. On the **Allowed Media** section of the placement, select **In-stream** within the Video section.
-1. Click the **Video Settings** tab.
+1. Expand the **Video Settings** and **Advanced Video Settings** sections.
 1. If you want this placement to define an ad pod (multiple ads within an ad break), select the **Enable Ad Podding** checkbox.
 
    1. If enabled, provide the following information:
@@ -35,23 +35,23 @@ To make in-stream video available, use the following recommendations for placeme
 
 1. Select a playback method. The default value is **Auto-play**, **sound unknown**. For CTV and in-stream placements, the recommended setting is **Auto-play**, **sound on**.
 1. Specify whether your player will allow skippable creatives.
-1. If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the Skip Offset field.
+    a. If you are allowing skippable inventory, and you want users to wait before a skip button is enabled for skippable creatives, enter the number of seconds of delay in the Skip Offset field.
 
 1. From the **Player Vast Version** menu, select the video player's VAST version. The default value is VAST 2.0. You should use the most recent VAST version that your player can handle because players are backwards compatible. Therefore, creatives with lower VAST versions can still serve on these placements. For example, a VAST 2.0 creative can serve on a VAST 4.0 player, but a VAST 4.0 creative can't serve on a VAST 2.0 player. The following VAST versions are supported:
-
+<br>
     a. **VAST 2.0**
     b. **VAST 3.0**
     c. **VAST 4.0**
     d. **VAST 4.1**
     e. **VAST 4.2**
-
+<br>
 1. Select a compatible framework.
+<br>
+   1. **VPAID 1.0** is a flash-only wrapper.
+   1. **VPAID 2.0** has a JavaScript VPAID wrapper. It may also include Flash for legacy reasons.
+   1. CTV and in-app video placements almost never accept VPAID. We recommend not selecting any frameworks for these placements,  because doing so could block demand.
 
-    a. **VPAID 1.0** is a flash-only wrapper.
-    b. **VPAID 2.0** has a JavaScript VPAID wrapper. It may also include Flash for legacy reasons.
-    c. CTV and in-app video placements almost never accept VPAID. We recommend not selecting any frameworks for these placements,  because doing so could block demand.
-
-1. Select the **Show Mime Type Options** checkbox to expand the Mime Type settings and select the appropriate video mime types.
+1. Expand the **Mime Type Options** and select the appropriate video mime types.
 
     > [!TIP]
     >

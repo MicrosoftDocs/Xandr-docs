@@ -6,11 +6,11 @@ ms.date: 10/28/2024
 
 # Set up in-article inventory
 
-To set up your **in-article** (formerly known as **outstream**) inventory: 
+To set up your **in-article** (formerly known as **outstream**) inventory:
 
-1. Navigate to **Publishers > Inventory Manager**. 
-1. If prompted, select a publisher, click **Create New**.
-1. Select **Placement**. In the **Allowed Media** section, select **In-article** under the **Video** section.
+1. Navigate to **Publishers** > **Inventory Manager**. If prompted, select a publisher.
+2. Click **Create New** and select **Placement**.
+3. In the **Allowed Media** section, select **In-article** under the **Video** section.
 
 If you have [Outstream Video Player Options](outstream-video-player-options.md), you can fine-tune your in-article video player settings to enable **waterfall processing** and improve ad fill rates within your timeout period.
 

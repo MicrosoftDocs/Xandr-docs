@@ -40,10 +40,10 @@ If you are allowing skippable inventory, and you want users to wait before a ski
 1. From the **Player Vast Version** menu, select the video player's VAST version. The default value is VAST 2.0. You should use the most recent VAST version that your player can handle because players are backwards compatible. Therefore, creatives with lower VAST versions can still serve on these placements. For example, a VAST 2.0 creative can serve on a VAST 4.0 player, but a VAST 4.0 creative can't serve on a VAST 2.0 player. The following VAST versions are supported:
 
      1. **VAST 2.0**
-     1. **VAST 3.0**
-     1. **VAST 4.0**
-     1. **VAST 4.1**
-     1. **VAST 4.2**
+     2. **VAST 3.0**
+     3. **VAST 4.0**
+     4. **VAST 4.1**
+     5. **VAST 4.2**
 
 1. Select a compatible framework.
 

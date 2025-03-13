@@ -62,7 +62,7 @@ The Microsoft Advertising platform categorizes creatives by media type and media
 
 ### Private media types
 
-Private media types and subtypes can be used only for custom deals or packages. Selecting the **Private** checkbox allows the media type or subtype to serve on custom deals and packages you set up.
+Private media types and subtypes can be used only for custom deals or managed line items. Selecting the **Private** checkbox allows the media type or subtype to serve on the custom deals and managed line items you set up.
 
 ### Sizes
 
@@ -75,7 +75,7 @@ If your placement uses a friendly iFrame and you want the placement to resize to
 
 ### Private sizes
 
-Private sizes are additional placement sizes that can serve for custom deals, packages and managed campaigns. If you want to allow private sizes, select the sizes you want from the **Private Sizes** list.
+Private sizes are additional placement sizes that can serve for custom deals, packages and managed line items. If you want to allow private sizes, select the sizes you want from the **Private Sizes** list.
 
 To use these sizes in a deal, check the **Allow deal to include private sizes** checkbox in the [Create a Custom Deal](create-a-custom-deal.md).
 
@@ -132,7 +132,7 @@ To add the VAST player version for an existing placement:
 > [!NOTE]
 > If a creative's VAST contains both VPAID and inline video files, it will be assigned the VPAID frameworks when it's uploaded in Microsoft Advertising. Therefore, certain placements that permit multiple creative types may be blocked in auction. To ensure accurate creative matching, you should follow the steps outlined below.
 
-To update mime type options, expand the **Mime Type Options** section. This opens the **Mime Type Options** section. From there, you will see two distinct fields: **Handles Mixed Media** and **Video Mime Types**.
+To update mime type options, expand the **Mime Type Options** section. From there, you will see two distinct fields: **Handles Mixed Media** and **Video Mime Types**.
 
 ### Handles mixed media
 
@@ -157,7 +157,7 @@ In the **Categories and auditing** section, you can apply **universal** and **cu
 
 ### Universal categories
 
-You can apply up to 20 categories from the Microsoft Advertising universal list of content categories. Your managed advertisers and other buyers who trust your self-categorization can target these categories through their campaigns.
+You can apply up to 20 categories from the Microsoft Advertising universal list of content categories. Your managed advertisers and other buyers who trust your self-categorization can target these categories through their line items.
 
 ### Custom categories
 
@@ -167,20 +167,20 @@ To create a new custom category, go to the **Network** tab, select **General** >
 
 See [Manage Custom Content Categories](manage-custom-content-categories.md) for more details.
 
-Once a custom category has at least one placement associated to it, buyers can select it when targeting a campaign if they have been given access via your buyer eligibility settings.
+Once a custom category has at least one placement associated to it, buyers can select it when targeting a line item if they have been given access via your buyer eligibility settings.
 
 ## Step 6: Self-audit the placement for sensitive categories
 
-In the **Categories and auditing** section, you can self-classify the placement for sensitive attributes and intended audience. Your advertisers and buyers who trust your self-audit can target these settings in their campaigns. Microsoft Advertising may review this inventory if it exceeds a certain volume threshold.
+In the **Categories and auditing** section, you can self-classify the placement for sensitive attributes and intended audience. Your advertisers and buyers who trust your self-audit can target these settings in their line items. Microsoft Advertising may review this inventory if it exceeds a certain volume threshold.
 
 > [!WARNING]
 > You will be notified of undeclared and improperly declared toolbar inventory on a weekly basis. Microsoft Advertising will flag this inventory and declare/properly declare it within 72 hours of notification.
 > [!NOTE]
-> For compliance with the Children's Online Privacy Protection Act (COPPA), designating your placement as intended for children will indicate to our system to apply special COPPA rules, including that user information will not be collected. Campaigns requiring user information for frequency capping or other targeting purposes will not serve on this placement.
+> For compliance with the Children's Online Privacy Protection Act (COPPA), designating your placement as intended for children will indicate to our system to apply special COPPA rules, including that user information will not be collected. Line items requiring user information for frequency capping or other targeting purposes will not serve on this placement.
 
 ## Step 7: Apply advanced settings to your placement (optional)
 
-**Apply pricing rules**
+### Apply pricing rules
 
 If you want to override publisher-level payment rules, select the Use placement-level pricing checkbox and then enter the CPM amount that the publisher should receive.
 If you'd like to set a reserve price on this placement, select the Set a placement reserve price checkbox and enter a CPM price into the text area. Note that any reserve price you enter here will be applied to all demand for this placement. However, you can change this setting later by editing Reserve Price Setting. For more information, see [Update a Placement](update-a-placement.md).
@@ -194,7 +194,7 @@ In the **Advertiser Filtering** section, you can include or exclude specific man
 > [!NOTE]
 > Including or excluding specific advertisers will not prevent RTB Marketplace buyers from serving on this placement. To do this you must use [Working with Ad Quality](working-with-publisher-ad-quality.md) or ensure that the placement's parent [Create a Placement Group](create-a-placement-group.md) is not participating (reselling) in the RTB Marketplace.
 
-### Add a piggyback pixel (optional)
+### Add a piggyback pixel
 
 If you want a piggyback pixel to fire when a creative serves on the placement, enter the pixel's URL or secure URL on the **Piggyback Pixel** tab and specify whether the pixel is a 1x1 image or JavaScript. A piggyback pixel can be an [Impression and Click Tracker](working-with-impression-and-click-trackers.md), a beacon, or any other JavaScript that the publisher needs loaded alongside an ad.
 

@@ -1423,6 +1423,8 @@
     href: troubleshooting-reports.md
   - name: Sample Bid Requests
     href: sample-bid-requests.md
+  - name: Change Log History Tool
+    href: change-log-history-tool.md
 - name: Optimization Guide
   items: 
   - name: Overview
@@ -1695,8 +1697,6 @@
   items:
   - name: comScore Agent
     href: comscore-agent.md
-- name: Change Log History Tool
-  href: change-log-history-tool.md
 - name: Release Notes
   items:
   - name: Overview

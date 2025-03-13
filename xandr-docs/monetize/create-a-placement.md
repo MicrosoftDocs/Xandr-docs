@@ -163,7 +163,9 @@ You can apply up to 20 categories from the Microsoft Advertising universal list 
 
 You can apply your own custom categories to sites or placements to create particular slices of inventory. Your managed advertisers can target these categories through their line items. You can enable buyers to target only those custom categories you specify in your buyer eligibility settings.
 
-You can create a new custom category by navigating to the **Network** tab > General > Content Categories, and selecting **New content category**. See [Manage Custom Content Categories](manage-custom-content-categories.md) for more details.
+To create a new custom category, go to the **Network** tab, select **General** > **Content Categories**, and then choose **New content category**.
+
+See [Manage Custom Content Categories](manage-custom-content-categories.md) for more details.
 
 Once a custom category has at least one placement associated to it, buyers can select it when targeting a campaign if they have been given access via your buyer eligibility settings.
 
@@ -178,7 +180,7 @@ In the **Categories and auditing** section, you can self-classify the placement 
 
 ## Step 7: Apply advanced settings to your placement (optional)
 
-### Apply pricing rules
+**Apply pricing rules**
 
 If you want to override publisher-level payment rules, select the Use placement-level pricing checkbox and then enter the CPM amount that the publisher should receive.
 If you'd like to set a reserve price on this placement, select the Set a placement reserve price checkbox and enter a CPM price into the text area. Note that any reserve price you enter here will be applied to all demand for this placement. However, you can change this setting later by editing Reserve Price Setting. For more information, see [Update a Placement](update-a-placement.md).
@@ -201,4 +203,4 @@ If you want a piggyback pixel to fire when a creative serves on the placement, e
 
 ## Step 8. Save the placement
 
-To finish adding the placement to the Microsoft Advertising platform, click the **Save and Close** button. The placement is then added to the **Placement List** in the **Inventory Manager**.
+To finish adding the placement to the Microsoft Advertising platform, click the **Save and close** button. The placement is then added to the **Placement List** in the **Inventory Manager**.

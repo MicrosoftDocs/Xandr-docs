@@ -12,9 +12,6 @@ Microsoft Advertising charges an **FX Margin** (Foreign Exchange Margin) for cle
 
 The table below lists the FX Margin Rates per currency. These rates are subject to change and are set by Microsoft Advertising based on currency volatility, transaction volume, and cost to clear.
 
-> [!NOTE]
-> If you have signed a new contract with Microsoft Advertising and completed the cutover, FX margin and Foreign exchange fees will no longer be applicable.
-
 | Currency | FX Margin effective Jun/1/2017 | FX Margin effective Aug/1/2017 | FX Margin effective Oct/9/2017 | FX Margin effective Nov/1/2017 | FX Margin effective Jan/10/2018 | FX Margin effective Jan/29/2018 | FX Margin effective June 1, 2018 | FX Margin effective Feb 1st, 2021 | FX Margin effective Mar 13, 2021 |
 |:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|
 | Argentine Peso (ARS) | -- | -- | -- | -- | -- | -- | -- | 15.00% | 0.00% |

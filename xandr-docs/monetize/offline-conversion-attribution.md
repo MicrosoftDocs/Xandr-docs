@@ -17,13 +17,6 @@ Offline attribution provides:
   > [!IMPORTANT]
   > The below text and diagrams describe lower-level infrastructural details; for a higher-level overview of how we do conversion attribution, see [Conversion Attribution](conversion-attribution.md).
 
-### Data retention period
-
-Data in this report has the following retention period:
-
-- Hourly retention: 100 days
-- Daily retention: 500 days
-
 ## Conversion attribution, "online" vs. "offline"
 
 The following diagram shows the major components involved in the conversion attribution process, as well as the steps that occur between a user converting and that conversion being attributed and made available in reporting. The left side of the diagram shows the previous "online" conversion attribution process. The right side of the diagram shows the current "offline" process.

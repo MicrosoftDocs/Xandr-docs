@@ -155,7 +155,7 @@
       href: create-an-insertion-order.md
     - name: Update Insertion Orders
       href: update-insertion-orders.md
-  - name: Currency support
+  - name: Currency Support
     href: currency-support.md  
   - name: Buy-Side Targeting 
     items:

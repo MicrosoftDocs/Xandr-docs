@@ -14,7 +14,7 @@ As part of a data migration effort, we are updating the data retention policy to
 This change will take effect in 15 days, on **March 18, 2025**. 
 
 **Data retention policy updates:**
-Most data in these reports remains available, with the following exceptions: 
+Most data in Analytics reports remains available, with the following exceptions: 
 - After 6 months, hourly data will no longer be available for reporting. However, some reports may have a shorter hourly data retention period. The following reports will retain data for only 100 days:  
     - [Microsoft Monetize - Network Video Analytics](../monetize/network-video-analytics-report.md) 
     - [Microsoft Invest - Network Video Analytics](network-video-analytics-report.md)

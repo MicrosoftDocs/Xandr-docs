@@ -85,6 +85,9 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ### Direct Cleared Table
 
+> [!NOTE]
+> If you have signed a new contract with Microsoft Advertising and completed the cutover, FX margin and Foreign exchange fees will no longer be applicable.
+
 | Value | Description |
 |--|--|
 | 0 | Microsoft Advertising acts as the clearing house, collecting the cost of media from the buyer and paying the seller |

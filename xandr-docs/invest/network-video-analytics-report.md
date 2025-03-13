@@ -50,7 +50,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report is retained for 100 days.
 
 ## Currency 2.0
 

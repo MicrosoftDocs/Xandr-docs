@@ -75,7 +75,7 @@ If your placement uses a friendly iFrame and you want the placement to resize to
 
 ### Private sizes
 
-Private sizes are additional placement sizes that can serve for custom deals, packages and managed line items. If you want to allow private sizes, select the sizes you want from the **Private Sizes** list.
+Private sizes are additional placement sizes that can serve for custom deals and managed line items. If you want to allow private sizes, select the sizes you want from the **Private Sizes** list.
 
 To use these sizes in a deal, check the **Allow deal to include private sizes** checkbox in the [Create a Custom Deal](create-a-custom-deal.md).
 

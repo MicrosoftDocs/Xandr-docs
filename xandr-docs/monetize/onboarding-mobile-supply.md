@@ -36,18 +36,11 @@ Follow the instructions in this section to set up a server-side integration with
 
 ## Mobile app
 
-### Supply type
-
-In Monetize, ensure that you have marked your placement group with a supply type of **Mobile Application**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
-
-> [!NOTE]
-> Only traffic matching the placement group's supply type can serve within that placement group. For example, if a seller labels their placement group as **Standard Website** but the traffic coming through that placement group is both **standard website** as well as mobile optimized, any campaign targeting **Mobile Application** placement groups will not be able to serve on this inventory.
-
 ### Required parameters
 
 Server-side mobile app traffic should only use the `/ssmob` endpoint. Server-side traffic coming through `/mob` calls runs the risk of being rejected.
 
-Technically, the minimum required URL for a server-side ad call coming from a mobile app looks like
+Technically, the minimum required URL for a server-side ad call coming from a mobile app looks like:
 
 ```
 https://mobile.adnxs.com/ssmob?id=PLACEMENT_ID&size=WIDTHxHEIGHT&format=json 
@@ -66,7 +59,7 @@ We recommend that you include the following parameters (in the table below) on s
 
 | Name | Parameter | Description |
 |--|--|--|
-| App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set campaign targeting and reporting based on app ID. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the `appid` parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
+| App ID | `appid` | The app ID is a string used to identify an app running on Android or iOS. Many buyers set line item targeting and reporting based on app ID. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended**. For more information about the `appid` parameter, see our [Mobile Ad Call Reference](mobile-ad-call-reference.md). |
 | IP Address | `ip` | The IP address parameter provides Microsoft Advertising with the geographic location of the user, as well as the carrier whose network the device is connected to. Many buyers use carrier or geo targeting. Including this information on an ad call is important in order to capture mobile demand. |
 | User Agent | `ua` | The User Agent parameter provides us with the device's operating system as well its make and model. Many buyers are targeting based on these parameters and not including them will restrict demand. |
 | IDFA (for iOS) | `idfa` | This is the user's unique identifier for iOS devices and is tied to a user ID. If you don't provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict demand. |
@@ -74,10 +67,6 @@ We recommend that you include the following parameters (in the table below) on s
 | Unique Device ID (Android) | `md5udid`, `sha1udid` | This is the user's unique identifier for Android devices that do not use Google Play Services and is tied to a user ID. If you do not provide this information on the ad call, demand partners who have implemented frequency capping and/or a buying strategy that requires conversion tracking will not buy your inventory. Not providing the user's unique ID will severely restrict available demand. |
 
 ## Mobile web
-
-### Supply type
-
-In Monetize, ensure that you have marked your site's supply type as **Mobile Optimized Website**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
 
 ### Required parameters for a server-side ad call
 
@@ -108,10 +97,6 @@ Follow the instructions in this section to set up a client-side integration with
 
 ## Mobile app in client-side integration
 
-### Supply type as mobile application
-
-Ensure that you have marked your site's supply type as **Mobile Application**. For instructions on marking a site's supply type, see [Create a Placement Group](create-a-placement-group.md).
-
 ### Required parameters for client-side mobile app integration
 
 To do a client-side mobile app integration, use one of our [Mobile SDKs](../mobile-sdk/xandr-mobile-sdks.md). We have SDKs for Android and iOS, and they are designed so that you don't have to build the correct mobile ad calls yourself. The SDK will generate calls with the required parameters for you.
@@ -131,11 +116,6 @@ For instructions on enabling location permissions and sending user data, see [An
 
 Client-side mobile web integrations should use the `/ttj` placement tag that is exported by Monetize. This is the same ad tag used for display impressions. Our ad server will retrieve the browser's User Agent and the device's IP address using the same methods used for display. For instructions on exporting a placement tag, see [Export Placement
 Tags](export-placement-tags.md).
-
-### Supply type
-
-Ensure that you have marked your site's supply type as **Mobile Optimized Website**. For instructions on marking a site's supply type,
-see [Create a Placement Group](create-a-placement-group.md).
 
 ### Required parameters for a client-side ad calls
 

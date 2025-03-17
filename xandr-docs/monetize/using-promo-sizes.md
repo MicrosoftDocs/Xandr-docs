@@ -16,7 +16,7 @@ There are two main use cases for promo sizes:
 
 ## How do promo sizes work?
 
-When an impression allows multiple sizes (example: `size=300x250&promo_sizes=300x600`), we run a normal auction, but only allow creative sizes specified in the size and promo sizes fields to be eligible to serve. During the auction process, we initially evaluate campaigns to verify that all targeting criteria are met. If so, we look at all eligible creatives associated with the campaigns (based on size and ad-quality attributes) and factor in their individual bid prices. We then take the creative with the highest bid and submit it as a bid in the auction.
+When an impression allows multiple sizes (example: `size=300x250&promo_sizes=300x600`), we run a normal auction, but only allow creative sizes specified in the size and promo sizes fields to be eligible to serve. During the auction process, we initially evaluate line items to verify that all targeting criteria are met. If so, we look at all eligible creatives associated with the line items (based on size and ad-quality attributes) and factor in their individual bid prices. We then take the creative with the highest bid and submit it as a bid in the auction.
 
 ## Enabling promo sizes
 

@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Assign a default creative to a placement
 
+> [!TIP]
+> To promote in-house products, services, or initiatives, use House Line Items to manage creatives across multiple placements or publishers. For more details, see [House line items](ad-campaign-house-line-items.md).
+
 In order to prevent serving blanks or [Default PSAs](default-psas.md), you can set up your own default creative and assign it to a placement. This can either be a hosted creative or a third-party URL or tag that sends the impression to another ad server.
 
 - **Defaulting to a third-party ad server**
@@ -60,7 +63,7 @@ Specify a value in the **Serve the default creative if the maximum eCPM bid is l
 - **File** - Browse for the file to upload. The following file formats are supported: jpg, gif, png, swf.
   
   > [!NOTE]
-  > If your account is enabled for video hosting, these additional file formats are supported: flv, mp4, wmv, f4v, avi, m4v, mov, and mpg. It is recommended to set up a managed campaign at the lowest priority level, and then you can attach a hosted video creative. In that constellation, it is **not** a default creative, but just a normal creative attached to a managed campaign. But it serves as the same function of returning a creative in situations where a blank would otherwise be returned.
+  > If your account is enabled for video hosting, these additional file formats are supported: flv, mp4, wmv, f4v, avi, m4v, mov, and mpg. It is recommended to set up **House Line Item** before attaching a hosted video creative. See [House Line Item](ad-campaign-house-line-items.md) for more details.
 
 - **Landing Page URL** - Set a landing page for the creative.
 - **Flash Click Variable** - If you are uploading a swf file that contains a ClickTag variable for click tracking, enter the exact variable.

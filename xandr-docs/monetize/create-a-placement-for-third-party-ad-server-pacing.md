@@ -20,8 +20,6 @@ PG deals that use a third-party ad server for pacing require a single, exclusive
 
 1. **Optional:** Enter the top level domain name for the placement group.
 
-1. Select the **Standard Website** supply type option.
-
 1. Select **Do not participate** to ensure that your placement group and placement don't participate in real-time bidding.
 
 1. Select the **Allow deal demand for this placement group** checkbox.

@@ -31,7 +31,7 @@
       href: rtb-eligibility-requirements.md
     - name: Deal Eligibility Requirements
       href: deal-eligibility-requirements.md
-    # removed the below page as per the requirement of EPIC 9131520 
+    # Removed the below page as per the requirement of EPIC 9131520 
     #- name: OpenRTB Bid Request Requirements
     #  href: openrtb-bid-request-requirements.md
     

@@ -66,3 +66,4 @@ Universal Pixel tags only accept TCF strings that are correctly implemented acco
 
 - [Universal Pixel Service](..\digital-platform-api\universal-pixel-service.md)
 - [Universal Pixel SDK](..\mobile-sdk\universal-pixel-sdk.md)
+  

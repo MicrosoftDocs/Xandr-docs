@@ -1248,8 +1248,8 @@
       items:
       - name: Quickstart Guide - Set Up Outstream Video
         href: outstream-video-quickstart-guide.md
-      - name: Configure Placements for Outstream Video
-        href: configure-placements-for-outstream-video.md
+      - name: Set Up In-Article Video Inventory
+        href: set-up-in-article-video-inventory.md
       - name: Publisher Notifications for Outstream Video Events
         href: publisher-notifications-for-outstream-video-events.md
       - name: Outstream Video Player Options

@@ -10,12 +10,14 @@ ms.date: 10/28/2023
 Default public service announcement creatives (PSAs or PSA creatives) are actual PSAs that Microsoft Advertising serves in order to prevent serving blanks under certain circumstances.
 
 > [!TIP]
-> To prevent a PSA from serving, it is best practice to set up a default creative or House Line Item for each placement. For more information, see **Assign a Default Creative to a Placement** or [House Line Item](ad-campaign-house-line-items.md).
+> To prevent a PSA from serving, it is best practice to set up a default creative or House Line Item for each placement. For more information, see [Assign a Default Creative to a Placement](assign-a-default-creative-to-a-placement.md) or [House Line Item](ad-campaign-house-line-items.md).
+
+> [!NOTE]
 > **About Flagged Impressions**
 >
 > In the past, filtered impressions on inventory flagged as violating platform standards would serve blanks. Now, these impressions follow seller preferences for impressions with no demand. As with all impressions that follow this workflow, sellers will be charged the applicable fee.
-
-Default PSAs are ads intended for general audiences that Microsoft Advertising serves for various causes and nonprofit organizations at no cost in order to prevent serving a blank when there is no other creative to serve.
+>
+> Default PSAs are ads intended for general audiences that Microsoft Advertising serves for various causes and nonprofit organizations at no cost in order to prevent serving a blank when there is no other creative to serve.
 
 ## Example PSAs
 

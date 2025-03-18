@@ -24,7 +24,7 @@ PG deals that use a third-party ad server for pacing require a single, exclusive
 
 1. Select the **Allow deal demand for this placement group** checkbox.
 
-    Making this selection and creating a unique placement for your PG deal ensures that your PG campaign is the only demand eligible for the placement.
+    Making this selection and creating a unique placement for your PG deal ensures that your PG line item is the only demand eligible for the placement.
 
 1. Click **Save & Add New Placement**.
 

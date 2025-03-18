@@ -1243,7 +1243,7 @@
       items:
       - name: Quickstart Guide - Set Up Outstream Video
         href: outstream-video-quickstart-guide.md
-      - name: Set Up In-Article Inventory
+      - name: Set Up In-Article Video Inventory
         href: configure-placements-for-in-article-video.md
       - name: Publisher Notifications for Outstream Video Events
         href: publisher-notifications-for-outstream-video-events.md

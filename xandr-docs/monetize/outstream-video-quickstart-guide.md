@@ -21,7 +21,7 @@ In order to make use of the outstream video ad unit, there are a few setup steps
 
 Current topics available include the following:
 
-- [Configure Placements for Outstream Video](configure-placements-for-outstream-video.md)
+- [Set up In-Article Video Inventory](set-up-in-article-video-inventory.md)
 - [Set Up On-Page Tags for Outstream Video](../seller-tag/set-up-on-page-tags-for-outstream-video.md)
 - [Outstream Video Player Options](outstream-video-player-options.md)
 - [Publisher Notifications for Outstream Video Events](publisher-notifications-for-outstream-video-events.md)

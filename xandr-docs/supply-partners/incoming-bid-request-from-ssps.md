@@ -447,7 +447,7 @@ any device IDs in the [Bid Request Extension Object](#bid-request-extension-obje
 | `os` | string | This is the code field that you obtain from operating system code. |
 | `carrier` | string | Specifies carrier for the device. Only used if not supported via the `ua` field. |
 | `language` | string | Specifies the browser language; use ISO 639-1 or ISO 3166 alpha-2. |
-| `ifa_type` | string | Identify the source of the IFA, whether that is device-generated (and therefore used across apps) or whether it is a publisher-provided IFA, or a temporary/session IFA. (e.g., `dpid`, `ppid`, `sspid`, `sessionid`, `idfa`, `aaid`, `rida`, `afai`, `tifa`, `vida`, `lgudid`). |
+| `device.ext.ifa_type` | string | Identifies the source of the IFA, whether it is device-generated (used across apps), publisher-provided, or temporary/session-based. Supports a broader range of devices, including CTV platforms such as Roku and Amazon Fire TV. Must be passed inside `device.ext` for compatibility with OpenRTB. An incorrect or missing value may impact bid eligibility, especially for CTV campaigns. (e.g., `dpid`, `ppid`, `sspid`, `sessionid`, `idfa`, `aaid`, `rida`, `afai`, `tifa`, `vida`, `lgudid`) |
 | `ifa` | string | The "identifier for advertising" is an unhashed device ID sanctioned for advertiser use. This will be the IDFA on iOS or AAID on Android.<br>Example: `"ifa": "AA000DFE74168477C70D291f574D344790E0BB12"`. |
 | `didsha1` | string | Specifies the SHA1-encrypted unique identifier for the mobile device. |
 | `didmd5` | string | Specifies the MD5-encrypted unique identifier for the mobile device. |

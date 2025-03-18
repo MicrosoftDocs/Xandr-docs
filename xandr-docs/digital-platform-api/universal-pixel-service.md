@@ -380,7 +380,7 @@ Any field which needs to be changed from existing value to new one. For example:
 | `count_type` | enum | Type of conversion count - `view`, `click`, or `hybrid`. |
 | `min_minutes_per_conversion` | integer | The interval (in minutes) to allow a repeat conversion. Maximum value is `32767` (22 days).<br>- If set to `0`: Count all conversions.<br>- If set to `null` (default): Count one per user. |
 | `post_click_value` | number | The value you attribute to a conversion after a click. |
-| `post_click_expire_minutes` | number | The interval (in minutes) from impression time allowed for a view conversion to be counted as eligible. Maximum value is `43200` (30 days). If set to `0` or `null`, the maximum lookback window applies. |
+| `post_click_expire_minutes` | number | The interval, in minutes, from the impression time within which a click conversion is eligible. The maximum value is **43,200** (30 days). If set to `0` or `null`, the system applies the maximum lookback window. |
 | `post_view_value` | number | The value you attribute to a conversion after a view. |
 | `post_view_expire_minutes` | number | The value you attribute to a conversion after a view. |
 | `rule` | object | Rule set for the audience. This field is an object and contains an array of the rules that must be met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-viewing-a-list-of-conversions-response-body) means the Universal Pixel fire must be on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
@@ -444,7 +444,7 @@ Any field which needs to be changed from existing value to new one. For example:
 | `post_click_value` | number | The value you attribute to a conversion after a click. |
 | `post_click_expire_minutes` | number | The interval (in minutes) from impression time allowed for a view conversion to be counted as eligible. Maximum value is `43200` (30 days). If set to `0` or `null`, the maximum lookback window applies. |
 | `post_view_value` | number | The value you attribute to a conversion after a view. |
-| `post_view_expire_minutes` | number | The value you attribute to a conversion after a view. |
+| `post_view_expire_minutes` | number | The interval, in minutes, from the impression time within which a view conversion is eligible. The maximum value is 43,200 (30 days). If set to `0` or `null`, the system applies the maximum lookback window.|
 | `rule` | object | Rule set for the audience. This is a **required** field and an object. It should contain an array of the rules that must be met to consider a fire of the Universal Pixel to be a conversion. For example, below [rule](#rule-for-creating-a-new-conversion-request-body) means the Universal Pixel fire must be on a website that has a domain that contains [microsoft.com](https://www.microsoft.com/), the event for the pixel fire is Purchase, and `item_id` is `123`. |
 
 ##### `conversion_category_id` values for creating a new conversion (request body)

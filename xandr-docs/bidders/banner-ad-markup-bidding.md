@@ -59,10 +59,10 @@ Register one creative per brand using the [Creative Service](creative-service.md
 
 | **Field**  | **Type**  | **Description**  |  
 |------------|----------|----------------|  
-| `adm`      | string   | Expected to be XML. Supports price macros such as `${AUCTION_PRICE}` and `${PRICE_PAID}`. |  
+| `adm`      | string   | Means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Supports price macros such as `${AUCTION_PRICE}` and `${PRICE_PAID}`. |  
 | `adomain`  | string   | **Required.** The URL representing the brand of the `adm` content in the bid response. |  
 | `adid`     | string   | The registered Monetize creative ID. This can be viewed via the API using the **Creative Service**. |  
-| `crid`     | string   | The creative ID from the bidder's system, used to reference a Monetize creative based on the creative code set via the **Creative Service**. <br> **Note**: If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |  
+| `crid`     | string   | The creative ID from the bidder's system, used to reference a Monetize creative based on the creative code set via the **Creative Service**. <br> **Note**: If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |    
 
 ## Custom macros
 
@@ -95,16 +95,13 @@ Bidders submit the win notification URL in `seatbid.bid.nurl`. The bidder must i
 
 | Field  | Type    | Description |
 |--------|--------|-------------|
-| `nurl` | String | The win notification URL, dropped as a pixel into the web browser or SDK. The server pings this URL upon receiving a client-side notification from the device indicating an auction win. The max length is 2000 characters with macros expanded. <br> For bidders using video adm, it is expected that the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro is included in this URL to receive win price information.|
+| `nurl` | String | The win notification URL, dropped as a pixel into the web browser or SDK. The server pings this URL upon receiving a client-side notification from the device indicating an auction win. The max length is 2000 characters with macros expanded. For bidders using banner adm, it is expected that the ${PRICE_PAID} or ${AUCTION_PRICE} macro is included in this URL to receive win price information. Use ${AUCTION_ID} in order to collate your nurl fire with the corresponding unique Monetize auction.|
 
 ### Tracking macros
 
 - If the following macros are present and unencoded in `adm`, they are stripped out before serving the ad: `${AUCTION_PRICE}`. To use these macros, be sure to URL-encode them in pixels.
 
-- The win notification URL can be optionally submitted in either `seatbid.bid.nurl`.
-
-  - `seatbid.bid.nurl`
-  - `seatbid.bid.burl`
+- We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.
 
 - Creative dimensions must be submitted in the `seatbid.bid.w` and `seatbid.bid.h` fields. These dimensions override the dimensions of the registered creative and are subject to the usual size checks performed during the auction.
 
@@ -131,7 +128,7 @@ Any standard template for banner creatives may be used. See **Creative Service**
 
 ### Request Payload (`banner_creative.json`)  
 
-```
+```json
 {
   "creative": {
     "allow_audit": true,
@@ -161,7 +158,8 @@ curl -b cookies -c cookies -X POST -s @banner_creative.json 'https://api.adnxs.c
 ```
 
 ### Response example
-```
+
+```json
 {
   "response": {
     "status": "OK",
@@ -191,6 +189,9 @@ curl -b cookies -c cookies -X POST -s @banner_creative.json 'https://api.adnxs.c
 
 ### Bid reponse example
 
+```json
+
+
 {
   "seatbid": [
     {
@@ -213,6 +214,8 @@ curl -b cookies -c cookies -X POST -s @banner_creative.json 'https://api.adnxs.c
   "id": "3",
   "cur": "USD"
 }
+```
+
 
 ### Related topics
 

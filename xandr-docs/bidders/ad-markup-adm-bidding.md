@@ -17,20 +17,16 @@ ADM enables your bidder to submit content via the `adm` field in the OpenRTB bid
 - **Unique ad campaign or brand** you represent
 - **Unique supported language**  
 
-> [!IMPORTANT]
-> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
 > [!NOTE]  
-> The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.
-
-For additional details on requirements for each creative format, refer to the following:
-
-- [Native ADM Bidding](native-ad-markup-bidding.md)
-- [Banner ADM Bidding](banner-ad-markup-bidding.md)
-- [Video ADM Bidding](video-ad-markup-bidding.md)
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
+> [!IMPORTANT]  
+> The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.  
+> [!NOTE]  
+> Audio media type is not currently supported for ADM.
 
 ## Get started with ADM
 
-Your bidder must be enabled to use this feature for every supported media type: **native, banner, and video**. If you're unsure whether your bidder is enabled, contact your Monetize account representative or submit a product support ticket.
+Your bidder must be **enabled** to use this feature for every supported media type: **native, banner, and video**. If you're unsure whether your bidder is enabled, contact your Monetize account representative or submit a product support ticket.
 
 Once enabled, complete the following steps to buy inventory via ADM:
 
@@ -39,7 +35,7 @@ Once enabled, complete the following steps to buy inventory via ADM:
 
 ## Register creatives
 
-Register one creative per brand using the [Creative Service](creative-service.md). Consider the following when registering a creative:
+Register one creative per brand and language combination using the [Creative Service](creative-service.md). Consider the following when registering a creative:
 
 - The creative must represent one of the actual ads that will be dynamically passed in the bid response for this brand.
   - The specific ad chosen to register does not matter.
@@ -47,15 +43,7 @@ Register one creative per brand using the [Creative Service](creative-service.md
 - The creative must be submitted for a platform audit.
 - When registering a creative, only [Monetize macros](xandr-macros.md) are supported. OpenRTB macros (such as `${AUCTION_PRICE}`) will not be expanded.
 - You do not need to specify the `brand_id` field; Monetize sets this during the audit.
-
-## Bid with ADM
-
-Bids with your creative will be eligible once it has:
-
-- Been registered with the API.
-- Passed the Monetize platform audit.
-
-Bids must use the [OpenRTB protocol](bidding-protocol.md).  
+- Bids must use the [OpenRTB protocol](bidding-protocol.md).
 
 ## FAQ
 
@@ -70,11 +58,15 @@ A creative template typically includes:
 - Branding requirements – Ensures alignment with Monetize audit policies.
 - Technical constraints – Specifies file size limits, supported file types, and other restrictions.
 
+For more details, see [Creative Template Service](creative-template-service.md).
+
 ### Why do I have to register a creative for each brand I represent?
 
 - Monetize policy prohibits brand rotation on creatives. This is enforced through the creative audit.
 - Monetize ensures that each creative complies with audit policies by performing an initial audit and periodically scanning the creative content that your bidder dynamically passes in the bid response.
 - If there is a misalignment between the registered creative and the bid response (for example, images and text for a different brand), the registered creative will be reaudited and may be rejected.
+
+For more details, see [Creative Audit Feedback](creative-audit-feedback.md).
 
 ### Will I be charged creative audit fees for periodically reaudited creative ad markup?
 

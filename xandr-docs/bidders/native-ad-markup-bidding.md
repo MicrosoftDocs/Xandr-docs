@@ -42,11 +42,11 @@ Native Ad Markup Bidding (ADM) enables your bidder to submit native ad markup vi
 - You must include a registered creative ID in one of the following bid response fields (adid, cridd).
 - The `crid` or `adid` value must match the corresponding branded creative object.
   
-### Fields
+### Bid response fields
 
 | Field  | Type   | Description  |
 |--------|--------|-------------|
-| `adm`  | string | The field is expected to be XML, and supports PRICE macros like `${AUCTION_PRICE}` and `${PRICE_PAID}`. |
+| `adm`  | string | Means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Format should be a JSON-encoded string. The field supports PRICE macros like `${AUCTION_PRICE}` and `${PRICE_PAID}`. |
 | `adomain` | string | **Required**: URL representing the brand of the `adm` content sent in the bid response. |
 | `adid`  | string | The registered Monetize creative ID, viewable via the API using the [Creative Service](creative-service.md). |
 | `crid`  | string | The creative ID from the bidder's system. Used to reference a Monetize creative based on the creative code as set via the [Creative Service](creative-service.md). <br> **Note**: If both values are sent, the `adid` takes precedence over `crid`, and the `crid` is ignored. |
@@ -64,11 +64,11 @@ Native Ad Markup Bidding (ADM) enables your bidder to submit native ad markup vi
 
 ## Event trackers response object
 
-| Field  | Type    | Description  |
-|--------|--------|-------------|
-| `event` | integer | Type of event to track. Supported types: <br> 1. Impression <br> &nbsp;&nbsp;&nbsp; - Impression tracking <br> 2. Viewable-mrc50 <br> &nbsp;&nbsp;&nbsp; - Visible impression using MRC definition at 50% in view for 1 second) <br> 3. Viewable-mcr100 <br> &nbsp;&nbsp;&nbsp; - 100% in view for 1 second <br> 4. Viewable-video50 <br> &nbsp;&nbsp;&nbsp; - Visible impression for video using MRC definition at 50% in view for 2 seconds <br> 5. 500+) Exchange-specific |
-| `method` | integer | Type of tracking requested: <br> 1) `img` <br> &nbsp;&nbsp;&nbsp;  - Image-pixel tracking - URL provided will be inserted as a 1x1 pixel at the time of the event.  <br> 2) `js` <br> &nbsp;&nbsp;&nbsp; - Javascript-based tracking – URL provided will be inserted as a JS tag at the time of the event. <br> 500+) exchange-specific <br> &nbsp;&nbsp;&nbsp; - Could include custom measurement companies such as moat, doubleverify, IAS etc – in this case addition elements will often be passed.|
-| `url` | string | The URL for the image or JS tracker. <br> The following OpenRTB macros are supported in this field: <br> - `${AUCTION_ID}` - Monetize auction_id_64. <br> - `${AUCTION_BID_ID}` - ID of the bid specified in the bidid field in the bid response. <br> - `${AUCTION_IMP_ID}` - ID of the impression, from the impid field in the bid object of the seatbid object. <br> - `${AUCTION_SEAT_ID}` - ID of the winning seat, from the seat field in the seatbid object. <br> - `${AUCTION_AD_ID}` - ID of the buyer's creative, from the adid field in the bid object of the seatbid object. <br> - `${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response. |
+| Field   | Type    | Description  |
+|---------|---------|-------------|
+| `event`  | integer | Type of event to track. Supported types:  <br> 1. **Impression** – Impression tracking  <br> 2. **Viewable-mrc50** – Visible impression using MRC definition (50% in view for 1 second)  <br> 3. **Viewable-mrc100** – 100% in view for 1 second  <br> 4. **Viewable-video50** – Visible impression for video using MRC definition (50% in view for 2 seconds) |
+| `method` | integer | Type of tracking requested:  <br> 1. **`img`** – Image-pixel tracking (URL provided will be inserted as a 1x1 pixel at the time of the event)  <br> 2. **`js`** – JavaScript-based tracking (URL provided will be inserted as a JS tag at the time of the event)  |
+| `url`    | string  | The URL for the image or JS tracker. <br> The following OpenRTB macros are supported in this field:  <br> - `${AUCTION_ID}` – Monetize auction_id_64.  <br> - `${AUCTION_BID_ID}` – ID of the bid specified in the bidid field in the bid response.  <br> - `${AUCTION_IMP_ID}` – ID of the impression, from the impid field in the bid object of the seatbid object.  <br> - `${AUCTION_SEAT_ID}` – ID of the winning seat, from the seat field in the seatbid object.  <br> - `${AUCTION_AD_ID}` – ID of the buyer's creative, from the adid field in the bid object of the seatbid object.  <br> - `${AUCTION_CURRENCY}` – Currency of the clearing price, as specified in the `cur` field in the bid response.  |
 
 ## Native `ext` object
 
@@ -132,14 +132,7 @@ Monetize supports the following fields in the `appnexus` extension object:
 
 ## Data object  
 
-Defines a data asset in `adm` object. Used for miscellaneous elements in a native ad, such as ratings, prices, review counts, downloads, etc.  
-
-### Field definitions  
-
-| Field  | Type    | Description  |  
-|--------|---------|--------------|  
-| `type` | integer | Supported types: <br> - `1`: **Sponsored** <br> &nbsp;&nbsp; - Sponsored by message. |  
-| `value` | string  | The formatted string of data to be displayed (e.g., `"5 stars"` or `"$10"`). |  
+We support all data asset types found in the [IAB OpenRTB Native Ads Specification 1.2](https://www.iab.com/wp-content/uploads/2018/03/OpenRTB-Native-Ads-Specification-Final-1.2.pdf).  
 
 ## Link object  
 
@@ -233,7 +226,7 @@ When an enabled bidder submits ad markup, the `seatbid.bid.ext.appnexus.custom_m
 
 ## Server-side impression tracking  
 
-Bidders submit the win notification URL in `seatbid.bid.nurl`. It is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.  
+For bidders using **native ADM**, submit the win notification URL in `seatbid.bid.nurl`. It is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.  
 
 ### Field definitions
 

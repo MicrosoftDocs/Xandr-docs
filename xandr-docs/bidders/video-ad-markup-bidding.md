@@ -15,7 +15,7 @@ Video Ad Markup Bidding (ADM) enables your bidder to submit video ad markup via 
 - Video creative duration  
 
 > [!IMPORTANT]
-> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
+> Use `burl` for **spend and impression tracking** server-side.  
 
 Additionally, your bidder must send **XML content** via the bidstream.
 
@@ -24,7 +24,7 @@ Additionally, your bidder must send **XML content** via the bidstream.
 > [!NOTE]
 > The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.  
 
-To ensure compatibility at bid time and avoid rejection due to missing MIME type support, we recommend **submitting all supported MIME types** when registering the creative. This ensures that the registered creative can serve across all available video inventory. For more details on required fields and supported MIME types, see the [Video Object](outgoing-bid-request-to-bidders.md#video-object-for-the-assets).
+The registered creative should have all supported MIME types for the brand. However, the dynamically passed XML should only include those MIME types supported in the bid request. For more details on required fields and supported MIME types, see the [Video Object](link-to-video-object).
 
 ## Get started with video ADM  
 
@@ -102,29 +102,18 @@ Bidders submit creative dimensions in the `seatbid.bid.w` and `seatbid.bid.h` fi
 
 Bidders submit the win notification URL in `seatbid.bid.nurl`. This URL must include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro for win price information.  
 
-| Field | Type    | Description |
-|-------|--------|-------------|
+The `nurl` field is used for win notifications and is required for server-side impression tracking. When the auction is won, the Monetize server pings this URL to confirm the win and track the impression.  
+
+| Field  | Type   | Description |
+|--------|--------|-------------|
 | `nurl` | string | The win notification URL is dropped as a pixel into the web browser or SDK. When the device sends a client-side notification indicating that the auction was won, the server pings this URL. Responses are sent server-side while the impression is recorded. The maximum length of this URL is 2,000 characters with macros expanded. For bidders using Video ADM, the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro must be included in this URL to receive win price information.|
 
 ## Tracking Macros  
 
 Some publishers periodically audit creatives, which can generate false impression and click tracking events. When Xandr detects audit events:  
 
-- Any URL-encoded `${AUCTION_PRICE}` macro in `adm` expands to the string `"AUDIT"`.  
-- Any URL-encoded `${AN_IS_AUDIT}` macro expands to `1` macro usage.  
-
-The following macros are supported to facilitate impression and click tracking. See **ADM Macros Example** below for usage details:  
-
-- **`${AN_IMP_URL}`**: Expands to a Xandr impression tracking URL and is intended to prepend the bidder’s impression tracking pixel. When the ad is rendered, the expanded URL redirects to the bidder’s pixel and correctly expands the `${AUCTION_PRICE}` macro. The bidder’s pixel and `${AUCTION_PRICE}` must be URL-encoded in `adm`.  
-
-- **`${AN_CLICK_URL}`**: Expands to a Xandr click tracking URL and is intended to prepend the bidder’s click tracking pixel. When the ad is clicked, the expanded URL redirects to the bidder’s pixel and correctly expands the `${AUCTION_PRICE}` macro. The bidder’s pixel and `${AUCTION_PRICE}` must be URL-encoded in `adm`.  
-
-- **`${AN_IS_AUDIT}`**: Expands to `1` when audit events (impressions and clicks) occur, and `0` otherwise. This macro must be URL-encoded when included in a URL following the `${AN_IMP_URL}` or `${AN_CLICK_URL}` macros.  
-
-If the following macros are present and unencoded in `adm`, they are stripped out before the ad is served:
-
-- `${AUCTION_PRICE}`  
-- `${AN_IS_AUDIT}`  
+- Any URL-encoded `${AUCTION_PRICE}` macro in `adm` expands to the string `"AUDIT"`.
+- If the `${AUCTION_PRICE}` macro is present and unencoded in `adm`, it is stripped out before the ad is served.
 
 To use these macros, ensure they are URL-encoded in pixels as described in the previous section.
 

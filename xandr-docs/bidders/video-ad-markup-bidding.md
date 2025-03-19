@@ -24,7 +24,7 @@ Additionally, your bidder must send **XML content** via the bidstream.
 > [!NOTE]
 > The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.  
 
-The registered creative should have all supported MIME types for the brand. However, the dynamically passed XML should only include those MIME types supported in the bid request. For more details on required fields and supported MIME types, see the [Video Object](link-to-video-object).
+The registered creative should have all supported MIME types for the brand. However, the dynamically passed XML should only include those MIME types supported in the bid request. For more details on required fields and supported MIME types, see the [Video Object](outgoing-bid-request-to-bidders.md#video-object-for-the-assets).
 
 ## Get started with video ADM  
 

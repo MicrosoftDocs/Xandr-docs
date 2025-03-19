@@ -25,8 +25,6 @@ The `regional` endpoint URLs for all RTSS methods is listed below:
 | Americas and EMEA | `https://api.appnexus.com/apd-api-americas/` <br> or `https://api.appnexus.com/apd-api-emea/` | Data published to AMER is automatically replicated to EMEA. Uploads to these datacenters are shared, eliminating the need to upload the same file twice for both regions. |
 | APAC | `https://api.appnexus.com/apd-api-apac/` | APAC datacenters operate independently and are not connected to AMER or EMEA.|
 
-
-
 ### Authentication
 
 Authentication is performed through the [Digital Platform API authentication service](authentication-service.md). The Auth token retrieved from this service must be passed back to the RTSS service via the `Authorization` header, as outlined on the Auth Service page.
@@ -698,4 +696,4 @@ Server responds with information about the job ID specified in the Query Paramet
 
 ## Best upload practices
 
-For more information about Bulk Uploads, see [RTSS Best Practices](./rtss-best-practices.md#bulk-uploads).
+For more information about Bulk Uploads, see [RTSS Best Practices](./rtss-best-practices.md).

@@ -17,12 +17,10 @@ ADM enables your bidder to submit content via the `adm` field in the OpenRTB bid
 - **Unique ad campaign or brand** you represent
 - **Unique supported language**  
 
-> [!NOTE]  
-> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
 > [!IMPORTANT]  
 > The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.  
 > [!NOTE]  
-> Audio media type is not currently supported for ADM.
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
 
 ## Get started with ADM
 
@@ -32,6 +30,9 @@ Once enabled, complete the following steps to buy inventory via ADM:
 
 1. **Register your individually branded creatives** – All creative assets associated with this brand will serve through this creative.  
 2. **Bid with your creative assets dynamically**.  
+
+> [!NOTE]  
+> Audio media type is not currently supported for ADM.
 
 ## Register creatives
 

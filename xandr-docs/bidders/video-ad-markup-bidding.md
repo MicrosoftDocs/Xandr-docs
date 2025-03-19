@@ -10,52 +10,45 @@ ms.date: 10/28/2023
 
 Video Ad Markup Bidding (ADM) enables your bidder to submit video ad markup via the `adm` field in the OpenRTB bid response. Instead of registering every creative with Microsoft Monetize, register only **one creative** per combination of:  
 
-- Unique ad campaign or brand  
-- Unique supported language  
-- Video creative duration  
+- **Unique ad campaign or brand** you represent
+- **Unique supported language**
+- **Video creative duration**  
 
-> [!IMPORTANT]
-> Use `burl` for **spend and impression tracking** server-side.  
+> [!IMPORTANT]  
+> The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.  
+> [!NOTE]  
+> It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
 
-Additionally, your bidder must send **XML content** via the bidstream.
+Additionally, your bidder must send **XML content** via the bidstream –NOT a wrapper URL to the content.
 
 > [!NOTE]
 > Custom macros and other required data must be prefilled within the XML content.  
-> [!NOTE]
-> The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.  
 
 The registered creative should have all supported MIME types for the brand. However, the dynamically passed XML should only include those MIME types supported in the bid request. For more details on required fields and supported MIME types, see the [Video Object](outgoing-bid-request-to-bidders.md#video-object-for-the-assets).
 
 ## Get started with video ADM  
 
-Your bidder must be enabled for this feature. If you're unsure whether your bidder is enabled, **please contact your Monetize account representative or submit a product support ticket**.  
+Your bidder must be **enabled** to use this feature for every supported media type: **native, banner, and video**. If you're unsure whether your bidder is enabled, contact your Monetize account representative or submit a product support ticket.
 
 Once enabled, follow these steps to buy inventory via ADM:  
 
-1. **Register** your branded creatives.  
-   - All creative assets associated with the brand will serve through this creative.  
-
-2. **Bid** dynamically with your creative assets.  
+1. **Register your individually branded creatives** – All creative assets associated with this brand will serve through this creative.  
+2. **Bid with your creative assets dynamically**.  
 
 ## Register video creatives  
 
-Register **one creative per brand** using the [Creative Service](creative-service.md). Consider the following:  
+Register one creative per brand and language combination using the [Creative Service](creative-service.md). Consider the following when registering a creative:  
 
-- The creative must represent an actual ad dynamically passed in the bid response for this brand.  
+- The creative must represent one of the actual ads dynamically passed in the bid response for this brand.  
   - The specific ad chosen for registration does not matter.  
-  - The creative must be **eligible to serve** on Monetize inventory.  
-- The creative must **pass a platform audit**. 
-- When registering a creative, only OpenRTB macros are supported. [Monetize macros](xandr-macros.md) are not supported, and OpenRTB macros (such as ${AUCTION_PRICE}) will not be expanded.
-- The `brand_id` field is set by Monetize during the audit.  
+  - The creative must be eligible to serve on Monetize inventory.  
+- The creative must undergo a platform audit.
+- Only [Monetize macros](xandr-macros.md) are supported when registering a creative. OpenRTB macros (such as `${AUCTION_PRICE}`) are **not** expanded.  
+- You do not need to specify the `brand_id` field; Monetize sets this during the audit.
+- Bids must use the [OpenRTB protocol](bidding-protocol.md).
 - Use **video creative template 6439**.  
 
 ## Bid with video ADM  
-
-Your bids with a registered video creative become eligible once:  
-
-- The creative is registered via the API.  
-- The creative passes the Monetize platform audit.  
-- Bids use the [OpenRTB protocol](bidding-protocol.md).  
 
 ### Specifications  
 
@@ -74,7 +67,7 @@ Your bids with a registered video creative become eligible once:
 
 | Field   | Type    | Description |
 |---------|--------|-------------|
-| `adm`   | string | The field expects XML. Supports macros like `${AUCTION_PRICE}` and `${PRICE_PAID}`. |
+| `adm`   | string | Means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Supports price macros such as `${AUCTION_PRICE}` and `${PRICE_PAID}`. |
 | `adomain` | string | **Required.** URL representing the brand of the `adm` content. |
 | `adid`  | string | The registered Monetize creative ID, viewable via the API using the [Creative Service](creative-service.md). |
 | `crid`  | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md).<br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
@@ -110,12 +103,9 @@ The `nurl` field is used for win notifications and is required for server-side i
 
 ## Tracking Macros  
 
-Some publishers periodically audit creatives, which can generate false impression and click tracking events. When Xandr detects audit events:  
+- If the following macros are present and unencoded in `adm`, they are stripped out before serving the ad: `${AUCTION_PRICE}`. To use these macros, be sure to URL-encode them in pixels.
 
-- Any URL-encoded `${AUCTION_PRICE}` macro in `adm` expands to the string `"AUDIT"`.
-- If the `${AUCTION_PRICE}` macro is present and unencoded in `adm`, it is stripped out before the ad is served.
-
-To use these macros, ensure they are URL-encoded in pixels as described in the previous section.
+- We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.
 
 ### Related topics
 

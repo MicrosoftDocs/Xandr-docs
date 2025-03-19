@@ -10,13 +10,13 @@ ms.date: 10/28/2023
 
 Banner Ad Markup Bidding (ADM) enables bidders to submit banner ad markup via `adm` in the OpenRTB bid response. Instead of registering every creative with Microsoft Monetize, bidders must register only one creative per combination of the following:  
 
-- A unique ad campaign or brand  
-- A unique supported language  
+- **Unique ad campaign or brand** you represent
+- **Unique supported language**  
 
+> [!NOTE]
+> The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.
 > [!IMPORTANT]
 > It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
-> [!NOTE]
-> The `adomain` field is required. The branding of the provided URL must match the content in the `adm` field and the registered creative.  
 
 ## Get started with Banner ADM  
 
@@ -29,12 +29,12 @@ Once enabled, follow these two steps to buy inventory via ADM:
 
 ## Register banner creatives  
 
-Register one creative per brand using the [Creative Service](creative-service.md). Consider the following when registering a creative:  
+Register one creative per brand and language combination using the [Creative Service](creative-service.md). Consider the following when registering a creative:  
 
 - The creative must represent one of the actual ads dynamically passed in the bid response for this brand.  
   - The specific ad chosen for registration does not matter.  
   - The creative must be eligible to serve on Monetize inventory.  
-- The creative must undergo a platform audit. Refer to our full audit policies for details.  
+- The creative must undergo a platform audit.  
 - Only [Monetize macros](xandr-macros.md) are supported when registering a creative. OpenRTB macros (such as `${AUCTION_PRICE}`) are **not** expanded.  
 - The `brand_id` field is **not** required—Monetize sets this during the audit.  
 - Include impression and click trackers when registering your creative. The ad markup in the bid response should use the same set of vendors (or fewer) that were registered with the creative.  
@@ -50,7 +50,7 @@ Register one creative per brand using the [Creative Service](creative-service.md
 
 - Other bid response objects are not listed here. See the [bid response documentation](incoming-bid-response-from-bidders.md) for details.  
 - Bidders should submit ad markup in the standard OpenRTB `seatbid.bid.adm` field.  
-- The crid/adid sent must match that of the corresponding branded creative object.
+- The `crid`/`adid` sent must match that of the corresponding branded creative object.
 
 > [!NOTE]
 > You must include a registered creative ID in **one** of the two bid response fields listed below. The `crid` or `adid` sent must match the corresponding branded creative object.  
@@ -62,7 +62,7 @@ Register one creative per brand using the [Creative Service](creative-service.md
 | `adm`      | string   | Means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Supports price macros such as `${AUCTION_PRICE}` and `${PRICE_PAID}`. |  
 | `adomain`  | string   | **Required.** The URL representing the brand of the `adm` content in the bid response. |  
 | `adid`     | string   | The registered Monetize creative ID. This can be viewed via the API using the **Creative Service**. |  
-| `crid`     | string   | The creative ID from the bidder's system, used to reference a Monetize creative based on the creative code set via the **Creative Service**. <br> **Note**: If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |    
+| `crid`     | string   | The creative ID from the bidder's system, used to reference a Monetize creative based on the creative code set via the **Creative Service**. <br> **Note**: If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
 
 ## Custom macros
 

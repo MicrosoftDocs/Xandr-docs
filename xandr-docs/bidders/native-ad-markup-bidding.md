@@ -6,20 +6,29 @@ ms.date: 10/28/2023
 
 # Native 1.2 Ad Markup bidding (ADM)
 
-> [!NOTE]
-> This feature does not support bidding with native video ad markup. Only non-video native ad markup is accepted.
-
 ## Requirements for using Native 1.2 ADM
 
 Native Ad Markup Bidding (ADM) enables your bidder to submit native ad markup via the `adm` field in the OpenRTB bid response. Instead of registering every creative with Microsoft Monetize, register one creative for each of the following combinations:
 
-- Unique ad campaign or brand you represent  
-- Unique supported language  
+- **Unique ad campaign or brand** you represent
+- **Unique supported language**  
 
-> [!IMPORTANT]
+> [!IMPORTANT]  
+> The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.  
+> [!NOTE]  
 > It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
+
+## Get started with Banner ADM  
+
+Your bidder must be **enabled** for this feature. If you're unsure whether your bidder is enabled, check with your Monetize account representative or open a product support ticket.  
+
+Once enabled, follow these two steps to buy inventory via ADM:  
+
+1. **Register individually branded creatives** – All creative assets associated with this brand will serve through this registered creative.  
+2. **Bid with dynamic creative assets** – The ad markup submitted in the bid response should match the registered creative.  
+
 > [!NOTE]
-> The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and that of the registered creative.
+> This feature does not support bidding with native video ad markup. Only non-video native ad markup is accepted.
 
 ## Bid with native ADM
 
@@ -39,7 +48,7 @@ Native Ad Markup Bidding (ADM) enables your bidder to submit native ad markup vi
 
 - The other bid response objects are not listed here. For more information, see our [bid response documentation](incoming-bid-response-from-bidders.md).
 - Bidders should submit ad markup in the standard OpenRTB `seatbid.bid.adm` field.
-- You must include a registered creative ID in one of the following bid response fields (adid, cridd).
+- You must include a registered creative ID in one of the following bid response fields (`adid`, `crid`).
 - The `crid` or `adid` value must match the corresponding branded creative object.
   
 ### Bid response fields
@@ -232,7 +241,7 @@ For bidders using **native ADM**, submit the win notification URL in `seatbid.bi
 
 | Field       | Type    | Description  |  
 |------------|--------|--------------|  
-| `nurl` / `burl` | integer | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, indicating that we won the auction. Responses will be sent server-side. This occurs concurrently while we record the impression. The max length is 2000 characters with macros expanded. <br> For bidders using video `adm`, it is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.|
+| `nurl` / `burl` | integer | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, indicating that we won the auction. Responses will be sent server-side. This occurs concurrently while we record the impression. The max length is 2000 characters with macros expanded. <br> For bidders using native `adm`, it is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.|
 
 ## Creative example
 

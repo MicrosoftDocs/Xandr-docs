@@ -5,15 +5,11 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# Troubleshooting RTSS
+# Troubleshooting Real-Time Signals Service (RTSS)
 
-> [!WARNING]
->
-> - The Real-Time Signals Service is in Beta, and is subject to change in the future.
-> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, speak to your account manager.
-
-- [Bulk Upload Status](#bulk-upload-status)
-- [Campaigns Buying Against Deactivated Targets](#campaigns-buying-against-deactivated-targets)
+- [Troubleshooting Real-Time Signals Service (RTSS)](#troubleshooting-real-time-signals-service-rtss)
+  - [Bulk upload status](#bulk-upload-status)
+  - [Campaigns buying against deactivated targets](#campaigns-buying-against-deactivated-targets)
 
 ## Bulk upload status
 

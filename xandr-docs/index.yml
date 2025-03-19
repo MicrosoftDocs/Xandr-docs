@@ -14,8 +14,8 @@ metadata:
   author: rupambaruah-xandr
   ms.author: rupambaruah
   ms.date: 12/12/2023
-  featureFlags:
-  - clicktale
+  featureFlags: clicktale
+  
 highlightedContent:
   items:
     # Card

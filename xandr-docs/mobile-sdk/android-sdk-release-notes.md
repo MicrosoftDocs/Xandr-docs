@@ -7,6 +7,12 @@ ms.date : 11/27/2024
 
 # Android SDK release notes
 
+## 9.4.1
+
+### Improvement/Bug Fixes
+
+- 9119900: Updated ProGuard rules with `keeppackagenames` to ensure package names are preserved and not scrambled.
+
 ## 9.4.0
 
 ### Improvement/Bug Fixes

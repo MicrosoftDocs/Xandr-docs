@@ -479,6 +479,8 @@ A successful response will return the new configuration object.
 
 Overwrite an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+
 #### PUT: Example call using curl
 
 ```
@@ -531,6 +533,8 @@ Returns a Prebid configuration object.
 ### PATCH
 
 Partially update an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request. The request must include a top-level `config` object that contains the other elements to be updated.
+
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 #### PATCH: Example call using curl
 

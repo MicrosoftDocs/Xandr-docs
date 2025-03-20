@@ -134,8 +134,7 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
     "last_modified_by": "user123",
     "last_modified": "2024-08-22T22:40:21.000Z"
   }
-]         
-            
+]       
 ```
 
 ## `PUT`

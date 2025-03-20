@@ -28,7 +28,7 @@ The registered creative should have all supported MIME types for the brand. Howe
 
 ## Get started with video ADM  
 
-Your bidder must be **enabled** to use this feature for every supported media type: **native, banner, and video**. If you're unsure whether your bidder is enabled, contact your Monetize account representative or submit a product support ticket.
+Your bidder must be **enabled** to use this feature. If you're unsure whether your bidder is enabled, contact your Monetize account representative or submit a product support ticket.
 
 Once enabled, follow these steps to buy inventory via ADM:  
 

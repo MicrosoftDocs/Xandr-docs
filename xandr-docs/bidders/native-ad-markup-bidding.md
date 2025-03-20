@@ -18,7 +18,7 @@ Native Ad Markup Bidding (ADM) enables your bidder to submit native ad markup vi
 > [!NOTE]  
 > It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.
 
-## Get started with Banner ADM  
+## Get started with Native ADM  
 
 Your bidder must be **enabled** for this feature. If you're unsure whether your bidder is enabled, check with your Monetize account representative or open a product support ticket.  
 
@@ -55,7 +55,7 @@ Once enabled, follow these two steps to buy inventory via ADM:
 
 | Field  | Type   | Description  |
 |--------|--------|-------------|
-| `adm`  | string | Means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Format should be a JSON-encoded string. The field supports PRICE macros like `${AUCTION_PRICE}` and `${PRICE_PAID}`. |
+| `adm`  | string | Means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Format should be a JSON-encoded string. |
 | `adomain` | string | **Required**: URL representing the brand of the `adm` content sent in the bid response. |
 | `adid`  | string | The registered Monetize creative ID, viewable via the API using the [Creative Service](creative-service.md). |
 | `crid`  | string | The creative ID from the bidder's system. Used to reference a Monetize creative based on the creative code as set via the [Creative Service](creative-service.md). <br> **Note**: If both values are sent, the `adid` takes precedence over `crid`, and the `crid` is ignored. |
@@ -77,7 +77,7 @@ Once enabled, follow these two steps to buy inventory via ADM:
 |---------|---------|-------------|
 | `event`  | integer | Type of event to track. Supported types:  <br> 1. **Impression** – Impression tracking  <br> 2. **Viewable-mrc50** – Visible impression using MRC definition (50% in view for 1 second)  <br> 3. **Viewable-mrc100** – 100% in view for 1 second  <br> 4. **Viewable-video50** – Visible impression for video using MRC definition (50% in view for 2 seconds) |
 | `method` | integer | Type of tracking requested:  <br> 1. **`img`** – Image-pixel tracking (URL provided will be inserted as a 1x1 pixel at the time of the event)  <br> 2. **`js`** – JavaScript-based tracking (URL provided will be inserted as a JS tag at the time of the event)  |
-| `url`    | string  | The URL for the image or JS tracker. <br> The following OpenRTB macros are supported in this field:  <br> - `${AUCTION_ID}` – Monetize auction_id_64.  <br> - `${AUCTION_BID_ID}` – ID of the bid specified in the bidid field in the bid response.  <br> - `${AUCTION_IMP_ID}` – ID of the impression, from the impid field in the bid object of the seatbid object.  <br> - `${AUCTION_SEAT_ID}` – ID of the winning seat, from the seat field in the seatbid object.  <br> - `${AUCTION_AD_ID}` – ID of the buyer's creative, from the adid field in the bid object of the seatbid object.  <br> - `${AUCTION_CURRENCY}` – Currency of the clearing price, as specified in the `cur` field in the bid response.  |
+| `url`    | string  | The URL for the image or JS tracker. <br> The following OpenRTB macros are supported in this field:  <br> - `${AUCTION_ID}` – Monetize auction_id_64.  <br> - `${AUCTION_BID_ID}` – ID of the bid specified in the `bidid` field in the bid response.  <br> - `${AUCTION_IMP_ID}` – ID of the impression, from the `impid` field in the bid object of the `seatbid` object.  <br> - `${AUCTION_SEAT_ID}` – ID of the winning seat, from the `seat` field in the `seatbid` object.  <br> - `${AUCTION_AD_ID}` – ID of the buyer's creative, from the `adid` field in the bid object of the seatbid object.  <br> - `${AUCTION_CURRENCY}` – Currency of the clearing price, as specified in the `cur` field in the bid response.  |
 
 ## Native `ext` object
 
@@ -241,7 +241,13 @@ For bidders using **native ADM**, submit the win notification URL in `seatbid.bi
 
 | Field       | Type    | Description  |  
 |------------|--------|--------------|  
-| `nurl` / `burl` | integer | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, indicating that we won the auction. Responses will be sent server-side. This occurs concurrently while we record the impression. The max length is 2000 characters with macros expanded. <br> For bidders using native `adm`, it is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.|
+| `nurl` / `burl` | integer | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, indicating that we won the auction. Responses will be sent server-side. This occurs concurrently while we record the impression. The max length is `2000` characters with macros expanded. <br> For bidders using native `adm`, it is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.|
+
+<!--### Tracking macros
+
+- If the following macros are present and unencoded in `adm`, they are stripped out before serving the ad: `${AUCTION_PRICE}`. To use these macros, be sure to URL-encode them in pixels.
+
+- We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.-->
 
 ## Creative example
 

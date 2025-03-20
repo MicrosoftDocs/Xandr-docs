@@ -302,7 +302,7 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/uploads` | Get a list of active uploads. |
-| `POST` | `/members/{:member_id}/uploads` | Upload a CSV file (can be GZIP compressed). |
+
 
 ### Parameters (Bulk upload)
 
@@ -368,7 +368,7 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 
 | `keytype` ID | Type | `key` Examples |
 |:---|:---|:---|
-| `0` | string | - Single IP address: `"127.0.0.1" |
+| `0` | string | - Single IP address: `"127.0.0.1"` |
 | `2` | string | Geo hashcode in OLC format:<br>[OLC spec](https://openlocationcode.com/) |
 | `3` | string | Postal code<br>**Note:** Postal codes targets will be **deprecated** soon.<br>`"11235"` |
 | `4` | string | Partial URL (up to 3 paths)<br>- `mysampledomain.com`<br>- `mysampledomain.com/en/buyers`<br>- `mysampledomain.com/en/buyers/page` |

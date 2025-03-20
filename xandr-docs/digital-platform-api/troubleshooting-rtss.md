@@ -7,6 +7,8 @@ ms.custom: digital-platform-api
 
 # Troubleshooting Real-Time Signals Service (RTSS)
 
+This section describes key considerations for managing bulk uploads and campaign targeting.
+
 - [Troubleshooting Real-Time Signals Service (RTSS)](#troubleshooting-real-time-signals-service-rtss)
   - [Bulk upload status](#bulk-upload-status)
   - [Campaigns buying against deactivated targets](#campaigns-buying-against-deactivated-targets)

@@ -8,10 +8,7 @@ ms.author: shsrinivasan
 
 # Real-time Signals Service API reference
 
-> [!WARNING]
-> The resources listed on this page are in Beta status, and are subject to change in the future.
-
-The Real-Time Signals Service (RTSS) is used to upload ID-to-segment data or other key:value data used to add segments on bid requests.
+The RTSS is used to upload ID-to-segment data or other key:value data used to add segments on bid requests.
 
 ## API usage
 
@@ -55,8 +52,8 @@ The following segment fields are common to the services listed on this page, and
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/olcs/{:olc}` | Find segment/value pairs associated with an individual OLC code. |
-| `POST` | `/members/{:member_id}/olcs/{:olc}` | Add or replace segment/value pair associated with an individual OLC code. |
-| `DELETE` | `/members/{:member_id}/olcs/{:olc}` | Removes specified segments for a given OLC code. |
+<!--| `POST` | `/members/{:member_id}/olcs/{:olc}` | Add or replace segment/value pair associated with an individual OLC code. |
+| `DELETE` | `/members/{:member_id}/olcs/{:olc}` | Removes specified segments for a given OLC code. |-->
 
 ### Parameters (OLC)
 
@@ -87,7 +84,7 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### HTTP status codes (OLC)
+<!-- ### HTTP status codes (OLC)
 
 | Status Code | Returned On | Reason | Headers | Header Description |
 |:---|:---|:---|:---|:---|
@@ -96,9 +93,9 @@ The following segment fields are common to the services listed on this page, and
 | `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
 
 > [!NOTE]
-> Although any valid OLC code will be accepted, for more detailed information, see the [RTSS Best Practices](rtss-best-practices.md) page.
+> Although any valid OLC code will be accepted, for more detailed information, see the [RTSS Best Practices](rtss-best-practices.md) page. -->
 
-## Geo administrative targeting
+<!--## Geo administrative targeting
 
 ### REST API (country-regions)
 
@@ -106,7 +103,7 @@ The following segment fields are common to the services listed on this page, and
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Find segment/value pairs associated with a region of a country. |
 | `POST` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Add or replace segment/value pair associated with a region of country. |
-| `DELETE` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Removes specified segments for a region of a country. |
+| `DELETE` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Removes specified segments for a region of a country. |-->
 
 ### Parameters (country-regions)
 
@@ -158,8 +155,6 @@ The following segment fields are common to the services listed on this page, and
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/postal-codes/{:pcode}` | Find segment/value pairs associated with an individual postal code. |
-| `POST` | `/members/{:member_id}/postal-codes/{:pcode}` | Add or replace segment/value pair associated with an individual postal code. |
-| `DELETE` | `/members/{:member_id}/postal-codes/{:pcode}` | Removes specified segments for a given postal code. |
 
 ### Parameters (postal codes)
 
@@ -195,15 +190,16 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
+<!--
 ### HTTP status codes (postal codes)
 
 | Status Code | Returned On | Reason | Headers | Header Description |
 |:---|:---|:---|:---|:---|
 | `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
 | `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
+| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID | -->
 
-## IP targeting
+<!--## IP targeting
 
 ### REST API (IP ranges)
 
@@ -212,6 +208,7 @@ The following segment fields are common to the services listed on this page, and
 | `GET` | `/members/{:member_id}/ip-ranges/{:ip_begin}/{:ip_end}` | Find segment/value pairs associated with an IP Range. |
 | `POST` | `/members/{:member_id}/ip-ranges/{:ip_begin}/{:ip_end}` | Add or replace segment/value pair associated with an IP range. |
 | `DELETE` | `/members/{:member_id}/ip-ranges/{:ip_begin}/{:ip_end}` | Removes specified segments for an IP Range. |
+-->
 
 ### Parameters (IP ranges)
 
@@ -264,8 +261,6 @@ The following segment fields are common to the services listed on this page, and
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/ips/{:ip}` | Find segment/value pairs associated with an individual IP. |
-| `POST` | `/members/{:member_id}/ips/{:ip}` | Add or replace segment/value pair associated with an individual IP. |
-| `DELETE` | `/members/{:member_id}/ips/{:ip}` | Removes specified segments for an individual IP. |
 
 ### Parameters (IP address)
 
@@ -301,14 +296,6 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### HTTP status codes (IP address)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
 ## URL targeting
 
 ### REST API (URL components)
@@ -318,8 +305,6 @@ Target URL components with `"OR"` logic, with up to 3 paths.
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/urls/components` | Find segment/value pairs targetable by URL Components. |
-| `POST` | `/members/{:member_id}/urls/components` | Add or replace segment/value pair targetable by URL Components. |
-| `DELETE` | `/members/{:member_id}/urls/components` | Removes specified segments for a URL from the target list of the URL Components. |
 
 ### Parameters (URL components)
 
@@ -380,14 +365,6 @@ mysampledomain.com/en/buyers/mysampledomain-test
 }
 ```
 
-### HTTP status codes (URL components)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
 ## REST API (URL reference)
 
 Target Full URL with exact matching.
@@ -440,6 +417,7 @@ Target Full URL with exact matching.
 | `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
 | `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
 
+<!-->
 ## HTTP status codes
 
 | Status Code | Returned On | Reason | Headers | Header Description |
@@ -447,6 +425,8 @@ Target Full URL with exact matching.
 | `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
 | `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
 | `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
+
+-->
 
 > [!NOTE]
 > Uploaded IDs are converted to lower-case values when stored. Matching is not case-sensitive.

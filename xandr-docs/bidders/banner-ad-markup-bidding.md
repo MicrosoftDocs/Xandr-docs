@@ -36,7 +36,8 @@ Register one creative per brand and language combination using the [Creative Ser
   - The creative must be eligible to serve on Monetize inventory.  
 - The creative must undergo a platform audit.  
 - Only [Monetize macros](xandr-macros.md) are supported when registering a creative. OpenRTB macros (such as `${AUCTION_PRICE}`) are **not** expanded.  
-- The `brand_id` field is **not** required—Monetize sets this during the audit.  
+- You do not need to specify the `brand_id` field; Monetize sets this during the audit.
+- Bids must use the [OpenRTB protocol](bidding-protocol.md).
 - Include impression and click trackers when registering your creative. The ad markup in the bid response should use the same set of vendors (or fewer) that were registered with the creative.  
 
 ## Bid with banner ADM  

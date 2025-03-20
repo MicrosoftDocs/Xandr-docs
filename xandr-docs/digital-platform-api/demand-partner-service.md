@@ -178,6 +178,8 @@ A successful response will return the new demand partner as a JSON object.
 
 Updates an existing Prebid demand partner. Include the id as last component of the path. Pass the update information as JSON in the body of the request.
 
+The demand_partner_config_params.enabled field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+
 ### Example call using curl
 
 ```
@@ -203,6 +205,8 @@ Returns updated Prebid demand partner object.
 ## PATCH
 
 Partially update an existing Prebid demand partner. Include the ID as last component of the path. Pass the update information as JSON in the body of the request.
+
+The demand_partner_config_params.enabled field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 ```
 {
@@ -238,6 +242,7 @@ The success response of the Prebid demand partner object is returned as a JSON o
 ## Managing identity sources
 
 > [!NOTE]
+>
 > - Each identifier source must have permission at the Microsoft member, bidder (Prebid Server Premium, ID 443), and demand partner level in order to successfully pass through in requests to demand partners.
 > - For more information on the identifier registration process and managing identifiers, review the [Identity Service API](./identity-service.md).
 > - In the future, the Identity Management UI will allow for holistic management of identifier permissions.

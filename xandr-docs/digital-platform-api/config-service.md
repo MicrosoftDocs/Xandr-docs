@@ -341,6 +341,8 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 
 Enables the creation of a new configurations object.
 
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+
 #### Example call using curl
 
 ```
@@ -519,8 +521,7 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
             "name": "appnexus",
             "params": {
                 "placement_id": 123456
-            },
-            "enabled": 1
+            }
         }
     ]
 }

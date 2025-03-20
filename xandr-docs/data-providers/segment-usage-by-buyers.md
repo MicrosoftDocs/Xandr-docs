@@ -11,7 +11,7 @@ The way a given client utilizes shared segments, whether contextual, behavioral,
 
 ## Xandr's Bidders
 
-Bidders receive full details of auctions on the bid request (in accordance with applicable privacy regulations and user opt-out preferences). These details include:
+Bidders receive full details of auctions on the bid request (in accordance with applicable privacy regulations and user opt-out preferences). These details can include:
 
 - Auction ID
 - Xandr User ID

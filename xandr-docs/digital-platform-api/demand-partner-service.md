@@ -178,7 +178,7 @@ A successful response will return the new demand partner as a JSON object.
 
 Updates an existing Prebid demand partner. Include the id as last component of the path. Pass the update information as JSON in the body of the request.
 
-The demand_partner_config_params.enabled field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 ### Example call using curl
 
@@ -206,7 +206,7 @@ Returns updated Prebid demand partner object.
 
 Partially update an existing Prebid demand partner. Include the ID as last component of the path. Pass the update information as JSON in the body of the request.
 
-The demand_partner_config_params.enabled field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 ```
 {

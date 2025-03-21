@@ -9,24 +9,28 @@ ms.custom: digital-platform-api
 
 ## Overview
 
-RTSS enables audience targeting using the following real-time signals:  
+RTSS is not generally available to all clients. Please reach out to your account manager for access.  
 
-- **IP address**  
-- **URL path**  
-- **Geo-targeting**  
-- **Open location codes (8-character codes)**  
+- Audience targeting - RTSS enables audience targeting using the following real-time signals:  
 
-It provides a scalable alternative to cookie-based audience targeting.  
+  - **IP address**  
+  - **URL path**  
+  - **Geo-targeting**  
+  - **Open location codes (8-character codes)**  
 
-## GDPR and the Demise of Third-Party Cookies  
+   It provides a scalable alternative to cookie-based audience targeting.  
 
-With tightening privacy regulations and increased scrutiny around user data collection—along with ad-blocking—reliance on cookies and other device IDs will become increasingly difficult in the foreseeable future.  
+- GDPR and the Demise of Third-Party Cookies  
 
-## CTV and the Cookie-less Environment  
+  With tightening privacy regulations and increased scrutiny around user data collection—along with ad-blocking—reliance on cookies and other device IDs will become increasingly difficult in the foreseeable future.  
+
+- CTV and the Cookie-less Environment  
 
 There is no universal or persistent standard for device identification for CTV. The CTV ecosystem is dominated by a handful of "walled gardens." As a result, advertisers and their agencies must work directly with each device maker/platform or buy through PMP.  
 
-## Limitations  
+- Limitations  
+
+The following limitations apply to RTSS:
 
 - Reporting on uploaded targets by segment  
 - Exclusion targeting on RTSS segments  

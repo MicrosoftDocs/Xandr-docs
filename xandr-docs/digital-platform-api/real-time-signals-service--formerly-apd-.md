@@ -26,17 +26,17 @@ RTSS is not generally available to all clients. Please reach out to your account
 
 - CTV and the Cookie-less Environment  
 
-There is no universal or persistent standard for device identification for CTV. The CTV ecosystem is dominated by a handful of "walled gardens." As a result, advertisers and their agencies must work directly with each device maker/platform or buy through PMP.  
+  There is no universal or persistent standard for device identification for CTV. The CTV ecosystem is dominated by a handful of "walled gardens." As a result, advertisers and their agencies must work directly with each device maker/platform or buy through PMP.  
 
 - Limitations  
 
-The following limitations apply to RTSS:
+  The following limitations apply to RTSS:
 
-- Reporting on uploaded targets by segment  
-- Exclusion targeting on RTSS segments  
-- Max TTL of 365 days for a targeting feature  
-- Uploads have regionalized API endpoints/storage  
+  - Reporting on uploaded targets by segment  
+  - Exclusion targeting on RTSS segments  
+  - Max TTL of 365 days for a targeting feature  
+  - Uploads have regionalized API endpoints/storage  
 
-Per **Xandr SLA**, allow up to **24 hours** for uploaded files to process.  
+- Per **Xandr SLA**, allow up to **24 hours** for uploaded files to process.  
 
-- For more details on each endpoint and its capabilities, see the [API reference](real-time-signals-service-api-reference.md).
+  For more details on each endpoint and its capabilities, see the [API reference](real-time-signals-service-api-reference.md).

@@ -340,6 +340,7 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ### POST
 
 Enables the creation of a new configurations object.
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 #### Example call using curl
 
@@ -391,8 +392,8 @@ The media type object determines which formats (currently banner, native, and vi
 {
     "name": "ConfigName1",
     "targeting_level_code": 4,
-    "targeting_id": 25401118,
-    "enabled": true,
+    "targeting_id": 22378872,
+    "enabled": 0,
     "media_types": {
         "sizes": [
             {
@@ -410,14 +411,17 @@ The media type object determines which formats (currently banner, native, and vi
         "priority": 20
     },
     "demand_partner_config_params": [
-        {
+         {
+            "id": 1718542,
+            "member_id": 13859,
+            "prebid_settings_id": 196038,
             "name": "appnexus",
             "params": {
                 "placement_id": 123456
             }
         }
     ]
-}           
+}
             
 ```
 
@@ -479,6 +483,8 @@ A successful response will return the new configuration object.
 
 Overwrite an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
 
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+
 #### PUT: Example call using curl
 
 ```
@@ -517,8 +523,7 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
             "name": "appnexus",
             "params": {
                 "placement_id": 123456
-            },
-            "enabled": 1
+            }
         }
     ]
 }
@@ -531,6 +536,8 @@ Returns a Prebid configuration object.
 ### PATCH
 
 Partially update an existing Prebid configuration. Include the `prebidSettingsId` as the last component of the path. Pass the update information as JSON in the body of the request. The request must include a top-level `config` object that contains the other elements to be updated.
+
+The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 #### PATCH: Example call using curl
 

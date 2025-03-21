@@ -238,6 +238,7 @@ The success response of the Prebid demand partner object is returned as a JSON o
 ## Managing identity sources
 
 > [!NOTE]
+>
 > - Each identifier source must have permission at the Microsoft member, bidder (Prebid Server Premium, ID 443), and demand partner level in order to successfully pass through in requests to demand partners.
 > - For more information on the identifier registration process and managing identifiers, review the [Identity Service API](./identity-service.md).
 > - In the future, the Identity Management UI will allow for holistic management of identifier permissions.

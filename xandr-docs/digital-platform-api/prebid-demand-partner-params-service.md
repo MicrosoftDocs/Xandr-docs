@@ -82,6 +82,7 @@ A successful response will return all parameters for the requested Prebid config
 ## `POST`
 
 Enables the creation of a new Prebid Demand Partner Param object.
+
 The `enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 ### Example call using cURL
@@ -140,7 +141,8 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
 
 ## `PUT`
 
-Overwrites an existing Prebid demand partner parameter. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass the update information as JSON in the body of the request. 
+Overwrites an existing Prebid demand partner parameter. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
+
 The `enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 ### `PUT`: Example call using cURL

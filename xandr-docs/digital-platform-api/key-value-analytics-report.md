@@ -52,7 +52,9 @@ these reports via the API, caching the data and using [Bulk Reporting Feeds](bul
 
 ### Data retention period
 
-Data in this report is retained for 428 days.
+Data in this report has the following retention period:
+- Hourly retention: 100 days
+- Daily retention: 500 days
 
 ## Dimensions
 

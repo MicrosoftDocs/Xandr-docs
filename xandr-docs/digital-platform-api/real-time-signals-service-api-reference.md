@@ -268,31 +268,6 @@ Target Full URL with exact matching.
 > [!NOTE]
 > Uploaded IDs are converted to lower-case values when stored. Matching is not case-sensitive.
 
-### Response (Events)
-
-| Name | Data Type | Description | Returned On | Example |
-|:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-events). |
-
-#### `segments` response example (Events)
-
-```
-{
-"segments": [
-{
-"seg_id": 555,
-"seg_ttl": "30m",
-"seg_val": 5050
-},
-{
-"seg_id": 626,
-"seg_ttl": "1wk",
-"seg_val": 0
-}
-]
-}
-```
-
 ## Uploads
 
 ### REST API (Bulk upload)

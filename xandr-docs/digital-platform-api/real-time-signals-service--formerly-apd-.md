@@ -7,41 +7,35 @@ ms.custom: digital-platform-api
 
 # Real-time Signals Service (formerly APD)
 
-## Overview  
+## Overview
 
-RTSS is not generally available to all clients. Please reach out to your account manager for access.  
+RTSS is not generally available to all clients. To request access, contact your account manager.
 
-RTSS enables audience targeting based on the following real-time signals:  
+- RTSS enables audience targeting using the following real-time signals:  
+  - IP address  
+  - URL path  
+  - Geo-targeting  
+  - Open location codes (8-character codes)  
+  - It is a scalable alternative to cookie-based audience targeting.  
 
-- **IP address**  
-- **URL path**  
-- **Geotargeting**  
-- **Open location codes** (8-character codes)  
+    - **GDPR and the demise of Third-Party Cookies**:  
 
-It is a **scalable alternative** to cookie-based audience targeting.  
+       With evolving privacy regulations, increased scrutiny on user data collection, and the rise of ad-blocking, reliance on cookies and device IDs is becoming increasingly difficult.  
 
-## Privacy Considerations  
+    - **CTV and the cookie-less environment**
 
-### GDPR and the demise of third-party cookies
+      - There is no universal or persistent standard for device identification in CTV.  
+      - The CTV ecosystem is dominated by a few "walled gardens."  
+      - Advertisers and agencies must either collaborate directly with each device maker or platform, or buy through Private Marketplace (PMP) deals.  
 
-With tightening **privacy regulations**, increased scrutiny around **user data collection**, and ad-blocking, reliance on **cookies and device IDs** is becoming increasingly difficult.  
+- **Limitations**
 
-### CTV and the cookieless environment  
+  - Reporting is unavailable for uploaded targets by segment.  
+  - Exclusion targeting is not supported for RTSS segments.  
+  - The maximum time-to-live (TTL) for a targeting feature is 365 days.  
+  - Uploads have regionalized API endpoints and storage.  
 
-There is no universal or persistent standard for **device identification** in **CTV**. The CTV ecosystem is dominated by a handful of "walled gardens," requiring advertisers and agencies to:  
+- **Processing time**  
+  - As per the Xandr SLA, allow up to 24 hours for uploaded files to process.
 
-- Work directly with each device maker/platform.  
-- Buy through **PMP (private marketplace)**.  
-
-## Limitations  
-
-- Reporting on uploaded targets by segment is **not supported**.  
-- Exclusion targeting on RTSS segments is **unavailable**.  
-- Maximum TTL (**time-to-live**) for a targeting feature is **365 days**.  
-- Uploads have **regionalized API endpoints and storage**.  
-
-Per **Xandr SLA**, allow **up to 24 hours** for uploaded files to process.  
-
-## API Reference  
-
-For more details on each endpoint and its capabilities, see the [API reference](real-time-signals-service-api-reference.md).
+- For more details on each endpoint and its capabilities, see the [API reference](real-time-signals-service-api-reference.md).

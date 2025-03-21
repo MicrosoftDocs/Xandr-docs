@@ -393,8 +393,8 @@ The media type object determines which formats (currently banner, native, and vi
 {
     "name": "ConfigName1",
     "targeting_level_code": 4,
-    "targeting_id": 25401118,
-    "enabled": true,
+    "targeting_id": 22378872,
+    "enabled": 0,
     "media_types": {
         "sizes": [
             {
@@ -412,14 +412,17 @@ The media type object determines which formats (currently banner, native, and vi
         "priority": 20
     },
     "demand_partner_config_params": [
-        {
+         {
+            "id": 1718542,
+            "member_id": 13859,
+            "prebid_settings_id": 196038,
             "name": "appnexus",
             "params": {
                 "placement_id": 123456
             }
         }
     ]
-}           
+}
             
 ```
 

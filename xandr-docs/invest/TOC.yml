@@ -142,6 +142,8 @@
     items:
     - name: Work with Line Items
       href: working-with-line-items.md
+    - name: Troubleshoot Deals with Augmented Line Items
+      href: troubleshoot-deals-with-augmented-line-items.md
     - name: Troubleshoot Your Augmented Line Item Delivery and Bid Performance
       href: troubleshoot-your-augmented-line-item-delivery-and-bid-performance.md
     - name: Bid Performance Messages for Augmented Line Items

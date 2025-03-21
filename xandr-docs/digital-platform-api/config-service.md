@@ -340,7 +340,6 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ### POST
 
 Enables the creation of a new configurations object.
-
 The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 #### Example call using curl
@@ -393,8 +392,8 @@ The media type object determines which formats (currently banner, native, and vi
 {
     "name": "ConfigName1",
     "targeting_level_code": 4,
-    "targeting_id": 25401118,
-    "enabled": true,
+    "targeting_id": 22378872,
+    "enabled": 0,
     "media_types": {
         "sizes": [
             {

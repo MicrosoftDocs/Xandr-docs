@@ -393,8 +393,8 @@ The media type object determines which formats (currently banner, native, and vi
 {
     "name": "ConfigName1",
     "targeting_level_code": 4,
-    "targeting_id": 22378872,
-    "enabled": 0,
+    "targeting_id": 25401118,
+    "enabled": true,
     "media_types": {
         "sizes": [
             {

@@ -53,7 +53,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 > [!TIP]
 > For more information about how quickly report data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
->
+
 
 ### Data retention period
 

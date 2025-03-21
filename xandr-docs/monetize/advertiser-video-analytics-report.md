@@ -52,9 +52,14 @@ Intervals determine how your data is grouped together into rows in the report re
 
 For more information about how quickly report data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
+
 ### Data retention period
 
-Data in this report is retained for 100 days.
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
+
 
 ## Currency 2.0
 

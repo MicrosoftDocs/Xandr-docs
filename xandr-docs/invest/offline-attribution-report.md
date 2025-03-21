@@ -34,7 +34,11 @@ Intervals determine how your data is grouped into rows in the report response.
 
 ## Data retention period
 
-This report can retrieve data from the last 100 days.
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
+
 
 ## Dimensions
 

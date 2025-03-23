@@ -149,7 +149,7 @@ The maximum file size for a single upload is **256 MB**. Ensure that you compres
 |--------|---------|-------------|
 | `POST` | `/members/{member_id}/uploads` | Upload a CSV file (can be GZIP compressed). |
 
-#### Example API Request
+#### Example API request
 
 ```sh
 curl -X POST --header 'Content-Type: multipart/form-data' \

@@ -172,13 +172,13 @@ Uploads take up to **24 hours** to process before being available for targeting.
 |--------|---------|-------------|
 | `GET` | `/members/{member_id}/uploads` | Get a list of active uploads. |
 
-#### Example Status Request
+#### Example status request
 
 ```sh
 curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2
 ```
 
-#### Example Response
+#### Example response
 
 ```json
 {
@@ -222,7 +222,7 @@ After successfully uploading targeting features, manage them by looking up assig
 curl https://api.appnexus.com/apd-api-emea/members/1/urls/components?path=acme.com/clothing
 ```
 
-#### Example Response
+#### Example response
 
 ```json
 {

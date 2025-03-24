@@ -10,7 +10,7 @@ This document outlines some scenarios where questions may arise in the minds of 
 
 ## I don't have a Microsoft Account
 
-You can register for a free Microsoft Personal Account with any existing email you have access to. Go to [this link](https://account.microsoft.com/account) to register or manage your Microsoft Account.
+You can register for a free Microsoft Personal Account with any existing email you have access to. Go to [the link](https://account.microsoft.com/account) to register or manage your Microsoft Account.
 
 If your company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
 

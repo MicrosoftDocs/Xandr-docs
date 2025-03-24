@@ -72,7 +72,7 @@ This report can retrieve data for the last 33 days.
 | Item Types | No | The list of item types logged by a Universal Pixel through the Item Type parameter. |
 | Line Item | Yes | The line item under which this impression was purchased. |
 | Order ID | No | The order ID or SKU optionally passed in the conversion pixel. If your advertiser is passing in an order ID when the conversion pixel fires, you could send a full list of order IDs back to them to help with conversion attribution. For more information, see [Conversion Pixels Advanced](conversion-pixels-advanced.md). |
-| Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion. |
+| Post Click/Post View Conversion | Yes | Whether the conversion was a post-click (PC) or post-view (PV) conversion.<br><br> - **Post-view**: Additionally specified, the conversion is attributed to a user viewing a creative.<br> - **Cross-device**: The conversion is attributed to having cross-device enabled.<br> - **IP**: Additionally specified, the conversion is attributed to having IP attribution enabled.  |
 | Post Click/Post View Revenue | No | Whether the revenue generated was from a post-click (PC) or post-view (PV) conversion. |
 | Split | Yes | The name and ID of the split that purchased the impressions in this data set. Splits are only applicable to augmented line items. For any rows with a campaign name, the Split column (if included) will be null. |
 | Traffic Type | Yes | The source of the traffic that caused the Universal Pixel to fire. Possible Values are `WEB` and `APP` |

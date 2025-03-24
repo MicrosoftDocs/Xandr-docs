@@ -11,12 +11,12 @@ ms.custom: digital-platform-api
 
 RTSS is not generally available to all clients. Contact your account manager for access.
 
-RTSS enables audience targeting using the following real-time signals:
+- RTSS enables audience targeting using the following real-time signals:
 
-- **IP address**
-- **URL path**
-- **Geo-targeting**
-- **Open location codes (OLC) (8-character codes)**
+  - **IP address**
+  - **URL path**
+  - **Geo-targeting**
+  - **Open location codes (OLC) (8-character codes)**
 
 It is a scalable alternative to cookie-based audience targeting.
 
@@ -34,6 +34,10 @@ There is no universal or persistent standard for device identification in CTV. T
 - **Exclusion targeting limitations:** RTSS segments do not support exclusion targeting.
 - **TTL restriction:** The maximum time-to-live (TTL) for a targeting feature is 365 days.
 - **Regionalized storage:** Uploads have regionalized API endpoints and storage locations.
+
+Per **Xandr SLA**, allow up to **24 hours** for uploaded files to process.
+
+- See [API reference](real-time-signals-service-api-reference.md) for more details on each endpoint and their capabilities
 
 ## Use cases
 
@@ -80,7 +84,7 @@ Buyers can use RTSS to create their own audiences or access premium publishers' 
 
 - **Exclusion targeting is not supported:** RTSS segments cannot be excluded when applied to line items.
 
-## Regional Support
+## Supported regions
 
 RTSS data is not interoperable across regions. To use RTSS across multiple regions, upload data to the desired regions.
 
@@ -88,18 +92,25 @@ If unsure, reach out to your account manager.
 
 ### Endpoints
 
-| Region    | Endpoint                                           | Notes |
-|-----------|---------------------------------------------------|-------|
-| Global    | `https://api.appnexus.com/apd-api/`              | Default endpoint resolves to either AMER/EMEA or APAC based on uploader origin. |
-| Americas  | `https://api.appnexus.com/apd-api-americas/`     | Data published to AMER is replicated to EMEA. |
-| EMEA      | `https://api.appnexus.com/apd-api-emea/`         | Uploads to these datacenters are shared and do not require duplicate uploads. |
-| APAC      | `https://api.appnexus.com/apd-api-apac/`         | APAC datacenters are isolated from AMER/EMEA. |
+The following API endpoints are available:
+
+- **Default endpoint**: /apd-api (delivers data to all regions except APAC)
+- **Americas endpoint**: /apd-api-americas
+- **EMEA endpoint**: /apd-api-emea
+- **APAC endpoint**: /apd-api-apac
 
 ### Select the right endpoint
 
 - If unsure how to regionalize data but do not need APAC, use the **Default** endpoint.
 - If unsure how to regionalize data but need it globally, including APAC, send data to **both Default and APAC endpoints**.
 - If data is regionalized, send it exclusively to the appropriate regional endpoint.
+
+| Region    | Endpoint                                           | Notes |
+|-----------|---------------------------------------------------|-------|
+| Global    | `https://api.appnexus.com/apd-api/`              | Default endpoint resolves to either AMER/EMEA or APAC based on uploader origin. |
+| Americas  | `https://api.appnexus.com/apd-api-americas/`     | Data published to AMER is replicated to EMEA. |
+| EMEA      | `https://api.appnexus.com/apd-api-emea/`         | Uploads to these datacenters are shared and do not require duplicate uploads. |
+| APAC      | `https://api.appnexus.com/apd-api-apac/`         | APAC datacenters are isolated from AMER/EMEA. |
 
 ## RTSS workflow
 
@@ -111,9 +122,9 @@ The following steps are required for utilizing RTSS:
 | Create a segment via [Segment API](segment-service.md)  | `POST https://api.appnexus.com/segment`    | Segments must be created before uploading RTSS targets. |
 | Upload CSV file via REST API      | `POST /members/{member_id}/uploads`       | Max file size: 256MB (recommended compression: GZIP). |
 | Check upload status               | `GET /members/{member_id}/uploads`        | Uploads take up to 24 hours to process. |
-| Validate targeting features       | `GET /members/{member_id}/olcs/{olc}`     | Reports are accessible by querying uploaded targeting features. |
+| Validate targeting features       | `GET /members/{member_id}/olcs/{olc}` <br> `GET /members/{:member_id}/ips/{:ip}` <br> `GET /members/{:member_id}/urls/components` <br> `GET /members/{:member_id}/urls/reference`  | Reports are accessible by querying uploaded targeting features. |
 
-## Bulk Upload file format
+## Bulk upload file format
 
 ### File format requirements
 
@@ -127,7 +138,7 @@ The requirements for formatting the CSV file are:
 
 ## Example CSV data for bulk upload
 
-The header row in the sample file below is optional. The bulk upload service accepts files with or without a header. Refer to the API documentation for more details.  
+The header row in the sample file below is optional. The bulk upload service accepts files with or without a header. Refer to the [API documentation](real-time-signals-service-api-reference.md#file-format-and-upload-examples) for more details.  
 
 ```
 keytype,key,action,segment 
@@ -174,11 +185,15 @@ Uploads take up to **24 hours** to process before being available for targeting.
 
 #### Example status request
 
+Here’s an example request for checking the status of a processing file:
+
 ```sh
 curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2
 ```
 
 #### Example response
+
+The server responds with details about the specified job ID.
 
 ```json
 {
@@ -201,13 +216,18 @@ curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-86
 ```
 
 > [!NOTE]
-> 
+>
 > - The `rows_failed` field indicates how many lines failed to process.
 > - The `message` field provides an error description for failed lines (maximum 100 errors).
 
 ## Validate targeting features
 
 After successfully uploading targeting features, manage them by looking up assigned segments.
+
+> [!NOTE]
+> Legacy features can be found in the [API reference](real-time-signals-service-api-reference.md).
+
+The following targeting features are used to validate readiness:
 
 | Method | Endpoint | Description |
 |--------|---------|-------------|
@@ -218,11 +238,15 @@ After successfully uploading targeting features, manage them by looking up assig
 
 #### Example request
 
+Here's an example request for segments targeting the URL component "acme.com/clothing":
+
 ```sh
 curl https://api.appnexus.com/apd-api-emea/members/1/urls/components?path=acme.com/clothing
 ```
 
 #### Example response
+
+The server responds with a list of segments actively targeting the URL component.
 
 ```json
 {
@@ -243,7 +267,7 @@ curl https://api.appnexus.com/apd-api-emea/members/1/urls/components?path=acme.c
 
 ## RTSS support
 
-If you encounter issues or need guidance, open a case in the **Xandr support portal**. For feedback on the beta, contact your account management team.
+If you encounter issues or need guidance, open a case in the [Xandr support portal](https://help.xandr.com/). For feedback on the beta, contact your account management team.
 
 ## Bugs and breaking changes
 
@@ -251,6 +275,6 @@ The RTSS beta is updated frequently based on participant feedback. Expect occasi
 
 > [!IMPORTANT]
 >
-> - Standard **Breaking Change** notification policies and timelines do **not** apply to this beta feature.
+> - Standard [Breaking Change](breaking-changes.md) notification policies and timelines do **not** apply to this beta feature.
 > - Monitor all communications from Xandr regarding RTSS beta updates.
 > - Be prepared to modify implementations as needed.

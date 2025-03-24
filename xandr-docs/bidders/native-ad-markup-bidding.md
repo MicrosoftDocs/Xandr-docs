@@ -30,6 +30,19 @@ Once enabled, follow these two steps to buy inventory via ADM:
 > [!NOTE]
 > This feature does not support bidding with native video ad markup. Only non-video native ad markup is accepted.
 
+## Register Native creatives  
+
+Register one creative per brand and language combination using the [Creative Service](creative-service.md). Consider the following when registering a creative:  
+
+- The creative must represent one of the actual ads dynamically passed in the bid response for this brand.  
+  - The specific ad chosen for registration does not matter.  
+  - The creative must be eligible to serve on Monetize inventory.  
+- The creative must undergo a platform audit.  
+- Only [Monetize macros](xandr-macros.md) are supported when registering a creative. OpenRTB macros (such as `${AUCTION_PRICE}`) are **not** expanded.  
+- You do not need to specify the `brand_id` field; Monetize sets this during the audit.
+- Bids must use the [OpenRTB protocol](bidding-protocol.md).
+- Include impression and click trackers when registering your creative. The ad markup in the bid response should use the same set of vendors (or fewer) that were registered with the creative.  
+
 ## Bid with native ADM
 
 ### Specifications
@@ -243,12 +256,12 @@ For bidders using **native ADM**, submit the win notification URL in `seatbid.bi
 |------------|--------|--------------|  
 | `nurl` / `burl` | integer | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, indicating that we won the auction. Responses will be sent server-side. This occurs concurrently while we record the impression. The max length is `2000` characters with macros expanded. <br> For bidders using native `adm`, it is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.|
 
-<!--### Tracking macros
+### Tracking macros
 
 - If the following macros are present and unencoded in `adm`, they are stripped out before serving the ad: `${AUCTION_PRICE}`. To use these macros, be sure to URL-encode them in pixels.
 
-- We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.-->
-
+- We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.
+  
 ## Creative example
 
 This example uses four data assets and two image assets, but you can choose to use a different combination depending on the assets you want to register. (Remember, you must have at least one asset of each type.) For more details on native creative assets, see the [Creative Service](creative-service.md).

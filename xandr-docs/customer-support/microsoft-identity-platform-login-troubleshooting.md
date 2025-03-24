@@ -1,12 +1,6 @@
 ---
-<<<<<<< HEAD
-title: Customer Support Portal - Microsoft Identity Platform Login Troubleshooting
-description: In this article, explore the different scenarios in which users might have questions while setting up the Microsoft Identity Platform login account.
-ms.date: 11/11/2024
-=======
-title: Customer Support Portal - Troubleshhot Microsoft Identity Platform Login description: In this article, explore the different scenarios in which users might have questions while setting up the Microsoft Identity Platform login account.
+title: Customer Support Portal - Troubleshoot Microsoft Identity Platform Login description: In this article, explore the different scenarios in which users might have questions while setting up the Microsoft Identity Platform login account.
 ms.date: 11/12/2024
->>>>>>> 4164210b (BG-Epic-7984896-cs-part2-Br2-PR)
 ms.author: shsrinivasan
 ---
 

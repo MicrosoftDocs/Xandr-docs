@@ -2,7 +2,6 @@
 title: Microsoft Monetize - Microsoft Identity Platform Login (T/S)
 description: This page answers your queries that may arise while using Microsoft Identity Platform. 
 ms.date: 10/28/2023
-
 ---
 
 
@@ -14,7 +13,7 @@ This document outlines some scenarios where questions may arise in the minds of 
 
 You can register for a free Microsoft Personal Account with any existing email you have access to. Go to [this link](https://account.microsoft.com/account) to register or manage your Microsoft Account.
 
-If you company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
+If your company sets up Federated Sign-in for your corporate email domain, visit the following pages for more information:
 
 - [Azure Active Directory](https://azure.microsoft.com/products/active-directory)
 - [Single Sign On](/entra/identity/enterprise-apps/what-is-single-sign-on)

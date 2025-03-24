@@ -40,7 +40,7 @@ Please reach out to your account representative.
 
 **I am having issues with the data marketplace features. How can I get support?**
 
-Submit a support ticket via our [Customer Support Portal](https://help.xandr.com/) and our team will provide assistance shortly.
+Submit a support ticket via our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and our team will provide assistance shortly.
 
 **What are the metrics "Imps" and "Users" in the data marketplace exactly? How is the reach estimation made?**
 

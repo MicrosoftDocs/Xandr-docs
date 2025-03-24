@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Bidders - Passive segment upload using AWS S3
 
-If your Xandr member account is integrated with AWS S3, you can upload segment data into an AWS S3 bucket instead of actively running API commands against the Batch Segment Service. To set up this integration, contact your account support or file an issue at [help.xandr.com](https://help.xandr.com). Xandr will provide upload credentials on initial setup.
+If your Xandr member account is integrated with AWS S3, you can upload segment data into an AWS S3 bucket instead of actively running API commands against the Batch Segment Service. To set up this integration, contact your account support or file an issue at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). This will provide upload credentials on initial setup.
 
 ## Process after member integration
 

@@ -36,7 +36,9 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 ### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report has the following retention period:
+- Hourly retention: 100 days
+- Daily retention: 500 days
 
 ## Dimensions
 

@@ -125,6 +125,8 @@
     href: report-on-splits.md
 - name: Curation Optimization
   href: curation-optimization.md
+- name: Change Log History Tool
+  href: change-log-history-tool.md
 - name: Buying Guide
   items:
   - name: Overview
@@ -153,44 +155,8 @@
       href: create-an-insertion-order.md
     - name: Update Insertion Orders
       href: update-insertion-orders.md
-  - name: Currency Support
-    href: currency-support.md
-  - name: Universal Pixel
-    items:
-    - name: Overview
-      href: the-universal-pixel.md
-    - name: Universal Pixel Basic Implementation
-      href: universal-pixel-basic-implementation.md
-    - name: Universal Pixel Code Structure
-      href: universal-pixel-code-structure.md
-    - name: Universal Pixel Consent Mode
-      href: set-up-consent-mode-in-universal-pixel.md
-    - name: Events and Parameters
-      items:
-      - name: Use Events and Parameters
-        href: using-events-and-parameters.md
-      - name: Create Event Code from the UI
-        href: create-event-code-from-the-ui.md
-      - name: Create Event Code Manually
-        href: create-event-code-manually.md
-      - name: Standard Events and Parameters
-        href: standard-events-and-parameters.md
-      - name: Create Custom Events and Parameters
-        href: create-custom-events-and-parameters.md
-    - name: Universal Pixel Audiences and Conversions
-      items:
-      - name: Overview
-        href: universal-pixel-audiences-and-conversions.md
-      - name: Set up Audiences with Universal Pixel
-        href: set-up-audiences-with-universal-pixel.md
-      - name: Set up Conversions with Universal Pixel
-        href: set-up-conversions-with-universal-pixel.md
-      - name: Universal Pixel Rule Conditions
-        href: universal-pixel-rule-conditions.md
-    - name: Report on Universal Pixels
-      href: universal-pixel-reporting.md
-    - name: Universal Pixel Object Limits
-      href: universal-pixel-object-limits.md
+  - name: Currency support
+    href: currency-support.md  
   - name: Buy-Side Targeting 
     items:
     - name: Overview
@@ -226,39 +192,7 @@
     - name: Video Targeting
       href: video-targeting.md
     - name: Viewability Targeting
-      href: viewability-targeting.md
-  - name: Work with Segments
-    items:
-    - name: Overview
-      href: working-with-segments.md
-    - name: Audience Data
-      items:
-      - name: Onboard your Audience Data
-        href: onboarding-your-audience-data.md
-      - name: Client-side Segmentation
-        href: client-side-segmentation.md
-      - name: Create a Segment Pixel
-        href: create-a-segment-pixel.md
-      - name: Export a Segment Pixel
-        href: export-a-segment-pixel.md
-    - name: Birthday Cookies
-      href: birthday-cookies.md
-    - name: Segment pixels - Advanced
-      href: segment-pixels-advanced.md
-    - name: Pass in User Data Offline
-      items: 
-      - name: Overview
-        href: pass-in-user-data-offline.md
-      - name: Map User IDs with getUID and mapUID
-        href: user-id-mapping-with-getuid-and-mapuid.md
-      - name: View User Mapping Visual and Walk-Through
-        href: user-mapping-visual-and-walk-through.md
-    - name: Location Manager
-      items:
-      - name: Overview
-        href: location-manager.md
-      - name: Geo Radius Segments
-        href: geo-radius-segments.md
+      href: viewability-targeting.md  
   - name: Microsoft Inventory
     items:
     - name: Buy Microsoft Inventory
@@ -277,6 +211,78 @@
       href: buying-windows-3p-appnetwork.md
   - name: Political Advertising
     href: political-advertising.md
+- name: Data
+  items:
+    - name: Universal Pixel
+      items:
+        - name: Overview
+          href: the-universal-pixel.md
+        - name: Universal Pixel Basic Implementation
+          href: universal-pixel-basic-implementation.md
+        - name: Universal Pixel Code Structure
+          href: universal-pixel-code-structure.md
+        - name: Universal Pixel Consent Mode
+          href: set-up-consent-mode-in-universal-pixel.md
+        - name: Transparency and Consent Framework (TCF) for Universal Pixel
+          href: tcf-for-universal-pixel-curate.md
+        - name: Events and Parameters
+          items:
+            - name: Use Events and Parameters
+              href: using-events-and-parameters.md
+            - name: Create Event Code from the UI
+              href: create-event-code-from-the-ui.md
+            - name: Create Event Code Manually
+              href: create-event-code-manually.md
+            - name: Standard Events and Parameters
+              href: standard-events-and-parameters.md
+            - name: Create Custom Events and Parameters
+              href: create-custom-events-and-parameters.md
+        - name: Universal Pixel Audiences and Conversions
+          items:
+            - name: Overview
+              href: universal-pixel-audiences-and-conversions.md
+            - name: Set up Audiences with Universal Pixel
+              href: set-up-audiences-with-universal-pixel.md
+            - name: Set up Conversions with Universal Pixel
+              href: set-up-conversions-with-universal-pixel.md
+            - name: Universal Pixel Rule Conditions
+              href: universal-pixel-rule-conditions.md
+        - name: Report on Universal Pixels
+          href: universal-pixel-reporting.md
+        - name: Universal Pixel Object Limits
+          href: universal-pixel-object-limits.md
+    - name: Work with Segments
+      items:
+        - name: Overview
+          href: working-with-segments.md
+        - name: Audience Data
+          items:
+            - name: Onboard your Audience Data
+              href: onboarding-your-audience-data.md
+            - name: Client-side Segmentation
+              href: client-side-segmentation.md
+            - name: Create a Segment Pixel
+              href: create-a-segment-pixel.md
+            - name: Export a Segment Pixel
+              href: export-a-segment-pixel.md
+        - name: Birthday Cookies
+          href: birthday-cookies.md
+        - name: Segment pixels - Advanced
+          href: segment-pixels-advanced.md
+        - name: Pass in User Data Offline
+          items:
+            - name: Overview
+              href: pass-in-user-data-offline.md
+            - name: Map User IDs with getUID and mapUID
+              href: user-id-mapping-with-getuid-and-mapuid.md
+            - name: View User Mapping Visual and Walk-Through
+              href: user-mapping-visual-and-walk-through.md
+        - name: Location Manager
+          items:
+            - name: Overview
+              href: location-manager.md
+            - name: Geo Radius Segments
+              href: geo-radius-segments.md
 - name: Monitoring
   items:
   - name: Overview
@@ -373,3 +379,5 @@
     href: release-notes-curate-20230626.md
   - name: June 27, 2023 - New Advertiser and Insertion Order Screens in Microsoft Curate UI
     href: release-notes-curate-20230627.md
+  - name: March 10, 2025 - Change Log History Tool
+    href: release-notes-curate-20250310.md

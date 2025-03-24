@@ -27,7 +27,7 @@ By providing unique targeting capabilities in a cookie-less environment, along w
 
 ## RTSS support
 
-If you encounter problems or need guidance while using RTSS, open a case in the [Xandr support portal](https://help.xandr.com/). To provide feedback on the beta, feel free to reach out to your account management team.
+If you encounter problems or need guidance while using RTSS, open a case in the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). To provide feedback on the beta, feel free to reach out to your account management team.
 
 ## Bugs and breaking changes
 

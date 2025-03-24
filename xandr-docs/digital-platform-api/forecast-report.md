@@ -3,7 +3,6 @@ title: Forecast Report
 description: Use the Forecast report to view both buy and sell-side data for a network member.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
-a network member:
 ---
 
 # Forecast report

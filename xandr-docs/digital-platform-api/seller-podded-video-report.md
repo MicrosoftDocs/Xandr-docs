@@ -39,7 +39,9 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 
 ### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report has the following retention period:
+- Hourly retention: 100 days
+- Daily retention: 500 days
 
 ## Dimensions
 | Column | Type | Filter? | Example | Description |

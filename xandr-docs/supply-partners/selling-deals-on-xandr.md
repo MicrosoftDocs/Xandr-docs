@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 # Selling deals on Xandr
 
 > [!NOTE]
-> You must be certified by Xandr to sell deals on our platform. Please contact [support](https://help.xandr.com/s/login/) or your Xandr representative to find out how to become certified.
+> You must be certified by Xandr to sell deals on our platform. Please contact [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) or your Xandr representative to find out how to become certified.
 
 As a supply partner, you can use deals to provide Xandr buyers special access to your inventory and/or data. For example, a deal might provide preferential pricing on inventory, access to exclusive inventory, reduced competition on inventory, or other opportunities.
 

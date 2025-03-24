@@ -1,32 +1,34 @@
 ---
 title: Microsoft Monetize - Update Insertion Orders
 description: This page provides an overview to update Insertion Orders. Learn to edit, Activate/Deactivate, and delete an Insertion Order in this page. 
-ms.date: 10/28/2023
+ms.date: 03/10/2025
+ms.author: shsrinivasan
 ---
 
 
-# Microsoft Monetize - Update insertion orders
+# Microsoft Monetize - Update Insertion orders
 
-There are several actions you can take on existing insertion orders to update them.
+There are several actions you can take on existing Insertion orders to update them.
 
-## Edit an insertion order
+## Edit an Insertion order
 
-You can edit an insertion order directly from the **Insertion Orders** screen. You can also edit insertion orders from the **Insertion Order Details** screen. Click either the **Edit** icon at the top of the screen or the **Edit** link in the **Details** section. (See [View Insertion Order Details](view-insertion-order-details.md) for more information on the **Details** screen.)
+You can edit an Insertion order directly from the **Insertion Orders** screen by selecting the pencil icon next to the Insertion order's name or you can also edit an Insertion order from the SMW grid screen. To do this, hover over the Insertion order you want to edit and select it. In the right pane, navigate to the **Settings** tab and select **Edit**. See [View Insertion Order Details](view-insertion-order-details.md) for more information on the **Settings** screen.
 
-## Activate/Deactivate an insertion order
 
-Check the box next to each insertion order that you want to activate or deactivate and click **Activate** or **Deactivate**.
+## Activate/Deactivate an Insertion order
 
-## Delete an insertion order
+Check the box next to each Insertion order that you want to activate or deactivate and click **Activate** or **Deactivate**.
 
-You can delete insertion orders from the system. This is particularly useful when you want to get rid of unnecessary or accidentally created insertion orders.
+## Delete an Insertion order
+
+You can delete Insertion orders from the system. This is particularly useful when you want to get rid of unnecessary or accidentally created insertion orders.
 
 > [!WARNING]
-> Before you delete an insertion order, make sure that its child line items are associated to other insertion orders. Otherwise, you will orphan the line items and cause the line items to stop serving.
+> Before you delete an Insertion order, make sure that its child Line items are associated to other Insertion orders. Otherwise, you will orphan the Line items and cause the Line items to stop serving.
 
 On the **Insertion Orders** screen, check the box next to each insertion order that you want to delete and then click **Delete**.
 
-A confirmation dialog lists the insertion orders that you selected for deletion. Review the list carefully and then click **OK** to permanently delete the insertion orders from the system.
+A confirmation dialog lists the insertion orders that you selected for deletion. Review the list carefully and then click **OK** to permanently delete the Insertion orders from the system.
 
 ## Related topics
 

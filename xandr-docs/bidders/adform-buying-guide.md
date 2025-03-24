@@ -68,7 +68,7 @@ Most publishers are accessible by targeting the main inventory source “**Xandr
 | Zodiak Active |
 | bRealTime Select |
 
-The above list will help buyers check the Xandr publisher they are trying to deliver on and what inventory source it is included under. For example, if a buyer wants to deliver on Seznam and Microsoft on the open exchange, they should ensure that Seznam.cz and Microsoft Ad Exchange inventory sources are targeted in their Line item. 
+The above list will help buyers check the Xandr publisher they are trying to deliver on and what inventory source it is included under. For example, if a buyer wants to deliver on Seznam and Microsoft on the open exchange, they should ensure that Seznam.cz and Microsoft Ad Exchange inventory sources are targeted in their Line item.
 
 For deal inventory source targeting, please refer to the [Targeting deals](#targeting-deals) section.
 
@@ -341,14 +341,13 @@ If an Adform buyer has issues serving on Xandr inventory, we recommend that they
 
 1. Reach out to [Adform support](mailto:support@adform.com) as the first step. Please include deal ID, campaign ID, line item IDs, and creative IDs where available and relevant.
 1. If they cannot resolve the issue using Adform, Adform will open a ticket with Xandr platform support.
-1. Sellers can reach out to [Xandr Support](https://help.xandr.com/s/) or to their Xandr account manager.
+1. Sellers can reach out to [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) or to their Xandr account manager.
 
 ## Buyer identification using Buyer Seat ID
 
 - Adform supports Xandr's **Buyer Seat ID** feature. Member breakouts and virtual seats are no longer used for each Adform buyer.
 - Deals should be set up using Adform Agency or Advertiser Seat IDs. Buyers should confirm their buyer seat ID when requesting a deal from a publisher. If buyers are not aware of their seat id, please contact [Adform support](mailto:support@adform.com).
-- If a seller is unable to find the seat ID shared by the buyer in the SSP, submit a request to [Xandr Support](https://help.xandr.com/s/) for the buyer seat ID to be added.
-
+- If a seller is unable to find the seat ID shared by the buyer in the SSP, submit a request to [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) for the buyer seat ID to be added.
 
 ## Adform and TCF compliance
 

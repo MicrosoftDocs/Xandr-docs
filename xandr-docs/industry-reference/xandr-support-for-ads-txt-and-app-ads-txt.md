@@ -36,7 +36,7 @@ Xandr supports the `Ads.txt` and `App-Ads.txt` initiatives, and works with publi
 >
 > - For more information about this process, see the IAB's [How To Ads.txt](https://iabtechlab.com/how-to-ads-txt/).
 >
-> - There is no buyer opt-in process as this is default buying behavior. For additional questions regarding how ads.txt adoption may impact Xandr clients, please contact [Xandr Support](https://help.xandr.com).
+> - There is no buyer opt-in process as this is default buying behavior. For additional questions regarding how ads.txt adoption may impact Xandr clients, please contact [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## The Ads.txt and App-Ads.txt file
 
@@ -105,13 +105,13 @@ Publishers on the our platform should follow these steps to create and implemen
    > :::image type="content" source="media/publisher-direct-seats.png" alt-text="Screenshot that explains how sellers can find their member ID in console by navigating to the Monetization Dashboard and looking for the ID at the bottom of the screen.":::
    >
    > Be sure to note that you need your member ID, not your publisher ID.
-   > For further questions, please reach out to [Xandr Client Support](https://help.xandr.com).
+   > For further questions, please reach out to [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 1. For publishers working with partners who have Xandr seats, create lines that look like this, with one partner per line:
 
     `appnexus.com, <partner member ID>, RESELLER`
 
-    Partners should be able to provide their member IDs.
+Partners should be able to provide their member IDs.
 
 1. Save the file with the name **ads.txt** or app-ads.txt - depending on the type of inventory you are declaring the file for - and upload it to the root folder for the publisher domain, or app developer url declared in the relevant app store. (ie./ **example.com/ads.txt** or **appdeveloper.com/app-ads.txt**)
 

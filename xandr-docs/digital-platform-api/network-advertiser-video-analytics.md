@@ -39,9 +39,14 @@ The `report_interval` field can be set to one of the following:
 - last_month
 - last_365_days
 
+
 ### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
+
 
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).
@@ -106,6 +111,7 @@ Data in this report is retained for 420 days.
 | `video_content_language` | string | No | `"Spanish"` | The language of the video program in which ad will be played. For example, `Spanish`. |
 | `video_content_network` | string | No | `"AMC"` | The network delivering the video content. For example, `9 Story`, `CBC`, `Disney`, `AMC`, `Fox`, etc. |
 | `video_delivery_type` | string | No | `"vod"` | The type of streaming content delivery. For example, `Video On Demand (VOD)` and `Live`. |
+| `is_takeover` | boolean | Yes | `"Yes"` | Indicates whether an impression was `Blanked` or `Defaulted` because at least one of the ads in the multi-ad request was a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 
 > [!NOTE]
 > The data for the following dimensions is only available if the publisher has implemented video taxonomy.

@@ -10,7 +10,12 @@ This page explains how to modify placement settings to accept audio creatives an
 
 ## Onboarding audio placements
 
-In the **Placement Details** tab, select the **Audio** media type(s) to include the following:
+1. From the **Publishers** tab, navigate to **Inventory Manager**.
+1. If prompted, select a publisher, then click the **Create New** button, and select **Placement**.
+1. In the **Allowed Media** section, select **Audio**.
+
+> [!NOTE]
+> When Audio is selected, no other media types are allowed.
 
 ## Export placement tag
 
@@ -29,7 +34,7 @@ The following placement tag parameters are highly recommended. You should append
 
 | Parameter | Type | Description |
 |---|---|---|
-| `appid` | string | This string is used to identify a mobile app running on Android or iOS devices.<br> - On Android, this is the app's package name. It's formatted as `com.example.helloworld`.<br> - On iOS, this is the app's iTunes ID. It's formatted as `123456789`.<br>Many buyers set campaign targeting and reporting based on `appid`. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended** when `supply_type` is set to `mobile_app`.<br>**Note**: This is what our Mobile SDKs do when they request an ad.<br>To find the `appid` for a particular Android or iOS app, find the app's detail page in Google Playstore or App Store. The easiest way is to do a web search. The URL of the app store's detail page will show the `appid`. |
+| `appid` | string | This string is used to identify a mobile app running on Android or iOS devices.<br> - On Android, this is the app's package name. It's formatted as `com.example.helloworld`.<br> - On iOS, this is the app's iTunes ID. It's formatted as `123456789`.<br>Many buyers set line item targeting and reporting based on `appid`. Failing to supply a correct `appid` will make your inventory unattractive to these buyers. Therefore, passing this field is **strongly recommended** when `supply_type` is set to `mobile_app`.<br>**Note**: This is what our Mobile SDKs do when they request an ad.<br>To find the `appid` for a particular Android or iOS app, find the app's detail page in Google Playstore or App Store. The easiest way is to do a web search. The URL of the app store's detail page will show the `appid`. |
 | `idfa` | string | The Apple advertising identifier for iOS devices. |
 | `aaid` | string | The Google advertising identifier for Android devices as retrieved from Google Playstore. |
 | `adid` | string | The Windows advertising identifier for Windows devices. |

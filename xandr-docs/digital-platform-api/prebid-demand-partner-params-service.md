@@ -49,7 +49,7 @@ A successful response will return all parameters for the requested Prebid config
 | Property | Type | Description |
 |:---|:---|:---|
 | `deleted` | boolean | Indicates whether the params object for this partner has been deleted. |
-| `enabled` | boolean | Indicates if the Prebid demand partner params are enabled or disabled. |
+| `enabled` | boolean | Indicates if the demand partner is enabled or disabled via the [demand partner service](demand-partner-service.md). |
 | `id` | integer | The unique identifier for the set of parameters associated with the demand partner in the PSP configuration. |
 | `last_modified` | string | The most recent modification date of the demand partner config params. |
 | `last_modified_by` | string | The person who made the last modifications to the demand partner params. |
@@ -83,6 +83,8 @@ A successful response will return all parameters for the requested Prebid config
 
 Enables the creation of a new Prebid Demand Partner Param object.
 
+The `enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
+
 ### Example call using cURL
 
 ```
@@ -101,8 +103,7 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
         "mid": "11111111",
         "mname": null,
         "priceType": null
-    },
-    "enabled": 1
+    }
 }
 ```
 
@@ -111,7 +112,6 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
 | Name | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `name` | string | Required | The name of the Prebid demand partner. |
-| `enabled` | boolean | Required | Indicates if the Prebid demand partner params are enabled or disabled. |
 | `member_id` | integer | Required |  The ID of the member associated with the configuration. |
 | `params` | object | Required | An object containing the parameters supported by the partner and the mapped values. Supported parameters can be found [here](demand-partner-schema-service.md). |
 | `prebid_settings_id` | integer | Required | The unique identifier for the PSP configuration.|
@@ -136,13 +136,14 @@ curl -d @demand-partner-params.json -X POST --header "Content-Type: application/
     "last_modified_by": "user123",
     "last_modified": "2024-08-22T22:40:21.000Z"
   }
-]         
-            
+]       
 ```
 
 ## `PUT`
 
 Overwrites an existing Prebid demand partner parameter. Include the `prebidDemandPartnerParamId` as the last component of the URL path. Pass the update information as JSON in the body of the request.
+
+The `enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
 ### `PUT`: Example call using cURL
 
@@ -162,8 +163,7 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
         "mid": "11111111",
         "mname": null,
         "priceType": null
-    },
-    "enabled": 0
+    }
 }
 ```
 

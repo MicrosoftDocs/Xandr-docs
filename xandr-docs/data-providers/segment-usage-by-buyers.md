@@ -7,11 +7,11 @@ ms.date: 10/28/2023
 
 # Segment usage by buyers
 
-The way a given client utilizes shared segments, whether contextual, behavioral, or otherwise, is highly dependent upon the way the client is integrated with Xandr. Clients who have implemented their own bidder will see the full details for every impression. For more details, see [Xandr's Bidders](#xandrs-bidders). Clients using traffic campaigns will see the segments available for targeting but do not have visibility into the details for each auction. For more details, see [Xandr's UI clients](#xandrs-ui-clients).
+The way a given client utilizes shared segments, whether contextual, behavioral, or otherwise, is highly dependent upon the way the client is integrated with Xandr. Clients who have implemented their own bidder will see the details of impressions (in accordance with applicable privacy regulations and user opt-out preferences). For more details, see [Xandr's Bidders](#xandrs-bidders). Clients using traffic campaigns will see the segments available for targeting but do not have visibility into the details for each auction.  For more details, see [Xandr's UI clients](#xandrs-ui-clients).
 
 ## Xandr's Bidders
 
-Bidders receive full details of every auction on the bid request. These details include:
+Bidders receive full details of auctions on the bid request (in accordance with applicable privacy regulations and user opt-out preferences). These details can include:
 
 - Auction ID
 - Xandr User ID

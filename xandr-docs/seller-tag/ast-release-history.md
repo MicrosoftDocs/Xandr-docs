@@ -12,6 +12,14 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [1.8.0](https://adsdk.microsoft.com/ast/ast.js) | - Add additional consent checks to the Fledge auction workflow. <br> - Improve the release framework and smoke tests. | 10 March 2025 |
+| [1.7.0](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 6 March 2025 |
+| 1.6.0 | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 27 February 2025 |
+| [1.5.0](https://adsdk.microsoft.com/ast/ast.js) | - - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 25 February 2025 |
+| [1.4.0](https://adsdk.microsoft.com/ast/ast.js) | - Add support for OpenRTB Native requests and responses. | 21 February 2025 |
+| [1.3.0](https://adsdk.microsoft.com/ast/ast.js) | - add `batchId` and `adTrackingId` to AST telemetry events.<br> - refactor code around user agents. | 13 February 2025 |
+| [1.2.0](https://adsdk.microsoft.com/ast/ast.js) | - add `feedbackUrl` and `native.custom` fields to `adObject`. <br> - fix sizes passed into AST IG <br> - correct `topic` field name in AST. <br> - remove extra fields in `auctionConfig` for AST. <br> - Private Auction runs for treatment labels <br> - add `removeTag` API function <br> - new AST event `mrcView` | 12 February 2025 |
+|[1.0.0](https://adsdk.microsoft.com/ast/ast.js) | - Transition to Microsoft domain and CDN.|28 January 2025|
 | [0.66.0](https://acdn.adnxs.com/ast/static/0.66.0/ast.js) | - Update owner and reference URLs used for Fledge. | 18 November 2024 |
 | [0.65.0](https://acdn.adnxs.com/ast/static/0.65.0/ast.js) | - Update fledge logic to use `deprecateURN` function instead of `auctionConfig` approach. <br> - Include `geooverride` information for AST context Interest Groups.| 4 November 2024 |
 | [0.64.7](https://acdn.adnxs.com/ast/static/0.64.7/ast.js) | - Various updates to include additional data in AST telemetry. <br> - Update the version of telemetry package used by AST. <br> - Additional updates to (FLEDGE) private auction workflows for Chrome (in beta status). <br> - Support custom native assets for MSN. <br> - Add new AST event `adCodeRenderStart`. | 13 September 2024 |

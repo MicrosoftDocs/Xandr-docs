@@ -20,7 +20,7 @@ You can create a new guaranteed delivery augmented line item (GDALI) from the 
 
 1. Click **Next** to open the **Create New Guaranteed Delivery Line Item** screen.
 
-## Step 2: Basic settings
+## Basic settings
 
 You can set the name, state, and ad type of the GDALI from the **Basic settings** section. You can also optionally assign an external code.
 

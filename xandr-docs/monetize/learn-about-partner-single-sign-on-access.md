@@ -32,4 +32,4 @@ Partner SSO provides additional security and usability by providing:
 
 ## How do I get started
 
-Contact your Account Manager or the [Microsoft Advertising Support Team](https://help.xandr.com/s/login/), and inform them that you would like to sign up for single sign-on.
+Contact your Account Manager or the [Microsoft Advertising Support Team](https://support.ads.microsoft.com), and inform them that you would like to sign up for single sign-on.

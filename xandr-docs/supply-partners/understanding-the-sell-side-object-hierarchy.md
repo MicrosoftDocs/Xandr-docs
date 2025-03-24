@@ -27,7 +27,7 @@ When setting up your account, your Xandr Technical Account Manager (TAM) will c
 - For guidance on using  to map your supply to Xandr, see [Use  to Synchronize Your Inventory Structure](use-the-ui-to-synchronize-your-inventory-structure.md).
 - For guidance on using the API to map your supply to Xandr, see [Use the API to Synchronize Your Inventory Structure](use-the-api-to-synchronize-your-inventory-structure.md).
 - If you want a Xandr representative do a once quarterly bulk mapping upload, you will need
-  to [open a support ticket](https://help.xandr.com/s/login/) and let us know you plan to send a formatted cvs file so that Xandr can create the mapping for you.
+  to [open a support ticket](https://support.ads.microsoft.com) and let us know you plan to send a formatted cvs file so that Xandr can create the mapping for you.
 
 > [!TIP]
 > The best way to synchronize publishers and placements is by creating publishers and placements to correspond to values that will be passed in on bid requests. That's `BidRequest.site.publisher.id` (for publishers) and `BidRequest.site.id` (for placements) in OpenRTB.

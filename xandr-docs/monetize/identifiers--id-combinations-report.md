@@ -101,6 +101,7 @@ This report's data is retained for 90 days. For more information about how quick
 | CTR | Clicks / Imps | The average Click Through Rate (CTR). |
 | Imps | Imps | The total number of transacted impressions. Impression counts are not de-duplicated across ID Types. |
 | Media Cost CPM |  | The media cost per 1000 impressions. |
+| Region/State |  |  The user's [Region](../digital-platform-api/region-service.md) (e.g., Baja California or California). |
 | Reseller Revenue |  | The revenue from resold impressions. This is only populated when the impression type is resold. |
 | Resold CPM | reseller_revenue / imps * 1000 | The resold revenue per 1000 impressions. |
 | Revenue | booked revenue + reseller revenue | The sum of booked revenue and reseller revenue. |

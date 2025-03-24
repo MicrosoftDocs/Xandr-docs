@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 # Seller Tag
 
-Xandr's seller tag (AST) is a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page. AST consolidates all ad slots on a page to be auctioned and sends information about them in a single ad request whenever possible. AST loads asynchronously, meaning that ad calls do not block the page content from loading.
+Microsoft Advertising's Seller Tag (AST) is a lightweight JavaScript SDK that runs in the header or body of a web page in a user's browser and allows publishers to conduct auctions directly from the page. AST consolidates all ad slots on a page to be auctioned and sends information about them in a single ad request whenever possible. AST loads asynchronously, meaning that ad calls do not block the page content from loading.
 
 The following pages provide an overview of AST, how to implement it, an API reference and using AST in specific situations.
 

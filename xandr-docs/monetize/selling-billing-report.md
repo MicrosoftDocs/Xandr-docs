@@ -85,7 +85,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ### Buyer cleared table
 
-|  |  |
+|Code  |Description  |
 |--|--|
 | 0 | Microsoft Advertising acts as the clearing house, collecting the cost of media from the buyer and paying the seller. |
 | 1 | Microsoft Advertising does not clear cash; the buyer pays the seller directly for the cost of media. |
@@ -93,7 +93,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ### Curator cleared table
 
-|  |  |
+|Code  |Description  |
 |--|--|
 | 0 | The seller receives the reseller revenue from Microsoft Advertising. |
 | 1 | The seller receives the reseller revenue from the curator. |
@@ -103,6 +103,9 @@ Intervals determine how your data is grouped together into rows in the report re
 
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
+
+> [!NOTE]
+> If you have signed a new contract with Microsoft Advertising and completed the cutover, FX margin and Foreign exchange fees will no longer be applicable.
 
 | Column | Description |
 |--|--|
@@ -176,4 +179,4 @@ Follow these steps to run your report.
 - [Network Revenue and Billing Your Clients](network-revenue-and-billing-your-clients.md)
 - [Billing](billing.md)
 - [Working with Line Items](working-with-line-items.md)
-- [Working with Campaigns](working-with-campaigns.md)
+<!--- [Working with Campaigns](working-with-campaigns.md)-->

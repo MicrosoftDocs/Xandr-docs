@@ -25,9 +25,13 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - last_30_available_days
 - last_365_days
 
+
 ### Data retention period
 
-This report has a daily time granularity and can retrieve data from the past 120 days.
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
 
 > [!NOTE]
 >

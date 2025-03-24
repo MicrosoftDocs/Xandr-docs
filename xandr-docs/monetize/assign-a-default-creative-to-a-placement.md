@@ -6,6 +6,9 @@ ms.date: 10/28/2023
 
 # Assign a default creative to a placement
 
+> [!TIP]
+> To promote in-house products, services, or initiatives, use House Line Items to manage creatives across multiple placements or publishers. For more details, see [House line items](ad-campaign-house-line-items.md).
+
 In order to prevent serving blanks or [Default PSAs](default-psas.md), you can set up your own default creative and assign it to a placement. This can either be a hosted creative or a third-party URL or tag that sends the impression to another ad server.
 
 - **Defaulting to a third-party ad server**
@@ -60,7 +63,7 @@ Specify a value in the **Serve the default creative if the maximum eCPM bid is l
 - **File** - Browse for the file to upload. The following file formats are supported: jpg, gif, png, swf.
   
   > [!NOTE]
-  > If your account is enabled for video hosting, these additional file formats are supported: flv, mp4, wmv, f4v, avi, m4v, mov, and mpg. It is recommended to set up a managed campaign at the lowest priority level, and then you can attach a hosted video creative. In that constellation, it is **not** a default creative, but just a normal creative attached to a managed campaign. But it serves as the same function of returning a creative in situations where a blank would otherwise be returned.
+  > If your account is enabled for video hosting, these additional file formats are supported: flv, mp4, wmv, f4v, avi, m4v, mov, and mpg. It is recommended to set up **House Line Item** before attaching a hosted video creative. See [House Line Item](ad-campaign-house-line-items.md) for more details.
 
 - **Landing Page URL** - Set a landing page for the creative.
 - **Flash Click Variable** - If you are uploading a swf file that contains a ClickTag variable for click tracking, enter the exact variable.
@@ -87,7 +90,7 @@ Configure the third-party default creative by providing the following informatio
   > When adding an AdSense HTML tag, be sure to uncheck the **Serve in iFrame** box. If this box is checked, AdSense may have difficulty determining the content and location of the tag due to the iFrame, which may result in discrepancies between Microsoft Advertising and AdSense. Microsoft Advertising should automatically populate the domain with the full path. However, if you need to manually add it, include the `${REFERER_URL}` [creative macro](creative-macros.md).
 
 - **URL** and **Output Type** - For a third-party URL, enter the URL pointing to the third-party creative, and select the resource type of the third-party creative.
-- **Landing Page** - For a third-party URL, if you selected "Image" or "Flash" as the output type, set a landing page for the creative. If you plan to associate the creative to more than one campaign or line item with different landing pages, select to set the landing page at the line item or campaign level. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
+- **Landing Page** - For a third-party URL, if you selected "Image" or "Flash" as the output type, set a landing page for the creative. If you want to associate the creative with multiple line items that have different landing pages, set the landing page at the line item level. For more details, see [Dynamic Landing Pages](dynamic-landing-pages.md).
 - **Flash Click Variable** - For a third-party URL, if you selected "Flash" as the output type, if the file contains a ClickTag variable for click tracking, enter the exact variable.
 - **Media Type** - Select the media type for the creative, for example, Standard Banner, In-Banner Video, Standard Interstitial, etc. Note that this must match the media type and media subtype settings on the placement.
 - **Template** - Based on the file format and the media type, the correct rendering template for your creative is selected by default, but you can choose a different template, if available. For more information about rendering templates, see [Creative Templates](creative-templates.md).

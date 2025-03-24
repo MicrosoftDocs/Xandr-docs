@@ -87,6 +87,9 @@ Intervals determine how your data is grouped together into rows in the report re
 > [!NOTE]
 > When values of a metric are displayed as percentages in the UI, they will be displayed as decimals when you export the report.
 
+> [!NOTE]
+> If you have signed a new contract with Microsoft Advertising and completed the cutover, FX margin and Foreign exchange fees will no longer be applicable.
+
 | Column | Description |
 |:-------|:------------|
 | Billable Imps | The total number of impressions billed to the client. |

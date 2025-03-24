@@ -16,7 +16,7 @@ The Xandr internal name for this feed is `auction_kv_labels_feed`.
 
 Impressions with key/value targeting will serve and be reported only for those impressions that were logged by a placement tag containing the **kw_** prefix. For example, a placement tag containing keyname=value1 will not serve and therefore not be logged, whereas a placement tag containing  **kw_keyname=value1** will serve and be logged. This applies to ad calls with the following tag types: */tt*, */ttj*, */fpt*, */jpt*, */pt*, */ptv*, */ssptv*, */mtj*, */map*, and */mob*.
 
-When using Xandr's seller tag, omit the **kw** prefix. AST has the keyword object in the body of the request, so the prefix is not needed.
+When using Microsoft Advertising's Seller Tag, omit the **kw** prefix. AST has the keyword object in the body of the request, so the prefix is not needed.
 
 - Each line returned in the feed represents a single key/value pair. For example, if you target on city = NY or LA, two rows will be returned, one for city/NY and one for city/LA.
 - Each feed is delivered hourly and will be retained for 7 days. The feed will be logged when an auction is complete.

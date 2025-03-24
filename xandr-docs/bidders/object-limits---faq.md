@@ -109,4 +109,4 @@ If you need help identifying objects to delete, contact support for assistance.
 
 ## How can I get my Object Limits adjusted?
 
-In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Contact your Xandr representative to discuss this option or [open a support case](https://help.xandr.com/).
+In exceptional cases, a limit may be temporarily lifted by a small amount at the discretion of our engineering team. Contact your Xandr representative to discuss this option or [open a support case](https://support.ads.microsoft.com).

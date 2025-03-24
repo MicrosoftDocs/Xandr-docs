@@ -16,7 +16,3 @@ You can use the metrics within Visual Success to see how the campaigns under you
 - hover over the visuals to see specific data for a single day.
 
 Visual Success features appear at the top of the **Line Item Details** screen. The metrics sections and graphs show important information about the line item's flight, delivery, performance, and margin.
-
-## Related topic
-
-[Improve Performance with Visual Success](improve-performance-with-visual-success.md)

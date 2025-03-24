@@ -1,7 +1,8 @@
 ---
 title: Third Party Providers
 description: Learn about list of Third Party Providers, Ad-server Partners, Bidder Partners and User Sync Providers. 
-ms.date: 12/11/2013
+ms.date: 03/07/2025
+ms.author: shsrinivasan
 ---
 
 
@@ -32,7 +33,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | Adamatic Inc | Adapt Retail - Advertising Platform | Adara Media | Adbalancer | Adblade |
 | ADBOX | Adbrain Ltd | AdBroker GmbH | Adcade | Adcash |
 | Adchakra | AdClear | Adclouds | AdColony | Adcrowd Bv |
-| Addictive Mobility | Addition Plus | Addmilk.Nl | Addroid | Addthis, Inc. (merged to Oracle Data Cloud) |
+| Addictive Mobility | Addition Plus | Addmilk.Nl | Addroid | - |
 | Addwish Aps | AdElement | Adello | Adelphic, Inc | Adenauer&Co. Online Gmbh |
 | ADEX | Adforgecdn.Com | Adform | Adfox | Adgear Technologies Inc. |
 | AdGibbon BV | Adhese | adhood | Adikteev | Adition (merged to Virtual Minds) |
@@ -79,7 +80,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | Bidswitch | Bidtheatre Ab | Bigabid | Bigpoint GmbH | Bild Gmbh & Co. Kg |
 | Bilendi | Binz Communications Sarl | Bisping & Bisping Gmbh & Co. Kg | Bitdefender Srl | Bitgravity, Inc |
 | Bizible | Blackdesertonline.Com | Blismedia | Blue | Bluecore, Inc. |
-| BlueKai (merged to Oracle Data Cloud) | Bluepixelads.Com | Bluesummit | Blueworks | blurbIQ |
+| - | Bluepixelads.Com | Bluesummit | Blueworks | blurbIQ |
 | Blutonic, Inc. | Bnc Network Consult | Bombora | Bonadza LLC | Bonzai |
 | Booking.com | Booking.Com B.V. | Booming Gmbh | Bootstrapcdn.Com | Bose Corporation |
 | BounceX | Boyd Gaming Corporation | Brainbees Solution Pvt. Ltd. | Brainworkz | Branch |
@@ -156,7 +157,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | Getsentry Llc | GfK | Ghmedia | Giantmedia | Gilead Sciences Inc. |
 | Glassdoor, Inc. | Global Value Commerce, Inc. | GlobalWebIndex | GO.PL | GoldSpot Media |
 | Good Life | Good-Loop | Goodlife Corporation L.P. | Goodme Gmbh | Goodwaygroup.Com |
-| Google | GP One | Grabit Interactive | Grapeshot Ltd | Graphiq |
+| Google | GP One | Grabit Interactive | - | Graphiq |
 | Greenmark It Gmbh | Gridsum | GroovinAds | Grosbill | GroundhogTech |
 | GroundTruth | Group M Worldwide, Inc. (merged to WPP) | Groupon, Inc. | Grupo Isec S.L. | Gruuv Interactive |
 | Gruvi | gskinner | Gssprt.Jp | Guess | Gumgum |
@@ -192,7 +193,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | Keffer Mitsu Select | Kenshoo Tld | Keollia | Kera | Key-Systems Gmbh |
 | Keybank, N.A. | KeyCDN | Kimberly-Clark Corporation | Kimia Group | Kissmetrics |
 | Klois | Knorex | Kochava | Kokteyl A.S. | Kontent Gmbh |
-| KPI Solutions | Kraehe-Versand Gmbh & Co. Kg | Krxd.Net (merged to Oracle Data Cloud) | Kupona | Kvd.Com.Au |
+| KPI Solutions | Kraehe-Versand Gmbh & Co. Kg | - | Kupona | Kvd.Com.Au |
 | Kwanko | Kwanzoo | L'Occitane International Sa | L'Oreal S.A. | La Coutellerie De Laguiole |
 | Lafuma Sa | Lakana, A Division Of Nexstar Broadcasting, Inc. | LANDS END | Lead Alliance Gmbh | LeadBolt |
 | Leitwerk Ag | Lemon Curve | LemonPi | LendGo & Innovative Metrics | Lesson Nine Gmbh |
@@ -223,7 +224,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | Millemedia | Millemercis | Millennial Media Inc | Mim Sa | Mimtid Corp |
 | MindTake Research | Minneapolis Star Tribune | Mintegral | MiQ | Mirapodo GmbH |
 | Mister-Load Gmbh | Mittwald Cm Service Gmbh & Co Kg | Mixmarket Affiliate Network | Mixpo | Mlb Advanced Media, Lp |
-| MLN Advertising, Inc. | Moat Ads (merged to Oracle Data Cloud) | Mobfox | Mobile Innovations | Mobilefuse.Nu |
+| MLN Advertising, Inc. | - | Mobfox | Mobile Innovations | Mobilefuse.Nu |
 | Mobitrans | MobPartner, Inc. | Mobpro | Mobusi | Mobvista/Mintegral |
 | Mocean mobile, Inc. | modellbau universe GbR | Moloco Ads | Molora Srl | Momentum,Inc |
 | Monalbumphoto.Fr | Monarchads.Com | Mopedo | Motesplatsen.Se | Motrixi Media Group LLC |
@@ -248,7 +249,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | One Step Sas | OneDigitalAd Technologies | Onescreen Inc. | OneTag | Onseo |
 | Ooyala | OpenDSP | OpenLedger ApS | OpenSlate | Opentable, Inc. |
 | OpenX Technologies | OpinionAds | Optimal Fusion Inc | Optimatic | Optimise |
-| Optimise Media Group Limited | Optimize LCC D.B.A Genius Monkey | Optimizely | Optomaton | Oracle Data Cloud |
+| Optimise Media Group Limited | Optimize LCC D.B.A Genius Monkey | Optimizely | Optomaton | - |
 | Orange Brand Services Limited | Orangepublicite.Fr | Orbis Video | Orbiz Software Gmbh | Orsay Gmbh |
 | OTHER | OTTO | Outidor | Outvdo | Ovb Media Sarl. |
 | OVC GmbH | Overstock | Owneriq Inc. | Oxford BioChronometrics | Pacific Northwest Section Pga |
@@ -411,7 +412,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | AdDaptive Intelligence, Inc. | AdLede (Data Provider) | Adserver Test (Data Provider) | adsquare GmbH | Amnet UK (Data Provider) |
 | apd_scylla | Beemray OY (Data Provider) | Bering Data Provider | Buzzlogic | Civolution B.V. (Data Provider) |
 | Cross Pixel Media Inc. (Data Provider) | DatMean (Data Provider) | digiseg apn gateway | DoubleVerify | El Toro (Data Provider) |
-| Emetriq GmbH RT (Data Provider) | Factual Inc (Data Provider) | Forensiq, LLC | Grapeshot | GUM GUM Inc (Data Provider) |
+| Emetriq GmbH RT (Data Provider) | Factual Inc (Data Provider) | Forensiq, LLC | - | GUM GUM Inc (Data Provider) |
 | Integral Ad Science | Integral Ad Science (Data Provider 2) | Media IQ Digital Ltd | Meetrics GmbH | Mindlytix SAS |
 | Mobile Listening Bidder | Nano Interactive GmbH (Data Provider) | NetSeer, Inc. (Data Provider) | PageScience (Data Provider) | Peer39 |
 | Platform Integrations Test RTDP (Data Provider) | PLAYGROUND XYZ (Data Provider) | Proximic | Qwarry (Data Provider) | Samba RDP |
@@ -426,9 +427,9 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 | A.Mob | A9.com | Accordant Media - Bidder | Accordant Media, LLC - 2 | Acuity Ads |
 | AdAdvisor by Neustar | Adelphic, Inc. | AdForm | AdForm A/S | AdGear Technologies Inc. |
 | ADITION technologies AG | Adobe Systems Incorporated | Adventori Sas (Data Provider) | AdYouLike S.A. | Amobee |
-| Appier Pte. Ltd. | AppNexus Google AdX Configuration (DO NOT MODIFY!) | AppNexus University | Audience Project Aps | Audiences by Oracle (BlueKai, Datalogix, AddThis) |
+| Appier Pte. Ltd. | AppNexus Google AdX Configuration (DO NOT MODIFY!) | AppNexus University | Audience Project Aps | - |
 | Basis Technologies | Beeswax.io Corporation | Bidtellect, Inc. | Choreograph LLC | Cloud Technologies S.A. |
-| Cognitiv Corp, a Delaware corp (CURATOR) | Conversant, Inc- Enterprise Solutions | Craid Inc. | Criteo Corp | Datalogix, Inc. |
+| Cognitiv Corp, a Delaware corp (CURATOR) | Conversant, Inc- Enterprise Solutions | Craid Inc. | Criteo Corp | - |
 | DataXu | DeepIntent, Inc. | Delta Projects AB | dentsu Programmatic | Doubleclick Bid Manager |
 | Dstillery | EMX Marketplace | Epsilon Core Private Exchange | eq_canary_prebid_server | Exponential Interactive, Inc. |
 | fluct, Inc. | FreeWheel | ID5 Technology Ltd | Improve Digital | Index Exchange |

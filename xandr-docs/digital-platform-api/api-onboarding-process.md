@@ -16,7 +16,7 @@ To know more about Xandr's API, go to [Reference](./reference.md) page.
 
 ## Get API access
 
-The first step you must take to begin using the Xandr API is to [contact the support team](http://help.xandr.com) to gain access to the API endpoints. In order to be granted API access, you must meet the following criteria:
+The first step you must take to begin using the Xandr API is to [contact the support team](https://support.ads.microsoft.com) to gain access to the API endpoints. In order to be granted API access, you must meet the following criteria:
 
 - Be a current Xandr UI customer with a *current* user ID and member ID. Support cannot create a new user to fulfill a request for API access.
 - Be a Network, Network Observer, Advertiser, or Publisher user. We cannot grant API access to Network Advertiser Manager or Network Publisher Manager users. See [User Service](./user-service.md) for more on user types.

@@ -52,7 +52,7 @@ For advertiser’s safety, Xandr provides two modes of inventory auditing. First
   > [!NOTE]
   > **Disclaimer**
   >
-  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory, or inventory that should be banned under our blocklist criteria, contact us via the [Customer Support form](https://help.xandr.com/) (select **Inventory Quality** as the request type). Customer login is required.
+  > While we believe that our audited domains are of a high quality, the nature of the internet is such that we cannot provide any guarantee regarding the nature or content of any inventory sold on the platform. For questions about this, or to report miscategorized inventory, or inventory that should be banned under our blocklist criteria, contact us via the [Customer Support form](https://support.ads.microsoft.com) (select **Inventory Quality** as the request type). Customer login is required.
 
 ### Standards
 
@@ -87,7 +87,7 @@ Domains listed as **unauditable** will be available for managed campaigns, campa
 - **Website does not appear to function**:  Sites that appear to be broken or have no content.
 - **Website has no ads on page**:  Sites that contain no visible ad units.
 
-To contest the audit status of a site, contact us via the [Customer Support form](https://help.xandr.com/s/login/) (select **Inventory Quality** as the request type). In the request, detail your relationship with the publisher and a brief description of why you believe the site has not been audited correctly.
+To contest the audit status of a site, contact us via the [Customer Support form](https://support.ads.microsoft.com) (select **Inventory Quality** as the request type). In the request, detail your relationship with the publisher and a brief description of why you believe the site has not been audited correctly.
 
 ### Inventory categorization standards
 

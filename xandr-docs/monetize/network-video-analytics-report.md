@@ -50,9 +50,12 @@ Intervals determine how your data is grouped together into rows in the report re
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
-**Data retention period**
+### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
 
 **Currency 2.0**
 
@@ -82,6 +85,7 @@ Data in this report is retained for 420 days.
 | Deal Code | Yes | The custom code for the deal. For deals with external supply partners, this is typically the string used to identify the deal.|
 | IO: Trafficker (reporting label) | Yes | The trafficker associated with this insertion order. This is an insertion order reporting label. |
 | IO: Sales Rep (reporting label) | Yes | The sales rep associated with this insertion order. This is an insertion order reporting label. |
+| Is Takeover |Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Site Domain | Yes | The domain where the impression occurred. For mobile applications, this can be the URL of the app's location in the app store. There are two additional values that may appear in place of a domain, specifically: "`deals.unknown`" or "`managed.unknown`". These mean that we didn't receive a valid domain as the referrer. For example, the domain may be blank or otherwise malformed. |
 | Application ID | No | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
 | Impression Type | Yes | See **[Impression Types](network-video-analytics-report.md#impression-types)** below for definitions of the different types of impressions. |

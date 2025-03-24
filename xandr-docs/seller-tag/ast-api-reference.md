@@ -1,13 +1,13 @@
 ---
 title: AST API Reference
-description: In this article, find information about the usage of the functions and variables of Xandr's seller tag (AST) JavaScript library.
+description: In this article, find information about the usage of the functions and variables of Microsoft Advertising's Seller Tag (AST) JavaScript library.
 ms.custom: seller-tag
 ms.date: 10/28/2023
 ---
 
 # AST API reference
 
-This page describes the usage of the functions and variables of Xandr's seller tag (AST) JavaScript library. For an example of a page with these functions implemented, see [Set Up Placements with AST](set-up-placements-with-ast.md).
+This page describes the usage of the functions and variables of Microsoft Advertising's Seller Tag (AST) JavaScript library. For an example of a page with these functions implemented, see [Set Up Placements with AST](set-up-placements-with-ast.md).
 
 > [!WARNING]
 > You cannot load ads from HTML hosted in `localhost`.

@@ -18,7 +18,7 @@ If you're experiencing non-delivery of specific deals, here are some steps to ta
 1. **Requests for this deal must meet our general specifications and point to valid, active objects in our system.** See [General Delivery Troubleshooting](#general-delivery-troubleshooting) below.
 1. **Ensure the buyer is targeting the deal.**
 
-      If you've confirmed steps 1 - 3, the next course of action is to reach out to the buyer and ensure that they are actively targeting the deal. If so, the buyer should then submit a support ticket via the [Customer Portal](https://help.xandr.com/s/login/) in order for our buyside support team to troubleshoot.
+      If you've confirmed steps 1 - 3, the next course of action is to reach out to the buyer and ensure that they are actively targeting the deal. If so, the buyer should then submit a support ticket via the [Customer Portal](https://support.ads.microsoft.com) in order for our buyside support team to troubleshoot.
 
 ## General delivery troubleshooting
 
@@ -41,11 +41,11 @@ The following steps will guide you through troubleshooting non-delivery in the o
     Placements may be deactivated by our system for reasons related to inventory quality. If the site or app ID sent in a request maps to a deactivated placement, this request will not be valid and will receive a 400 MALFORMED HTTP error. For more information on inventory quality deactivations, see [Inventory quality deactivations](#inventory-quality-deactivations).
 1. **Instruct the buyer to submit a support ticket.**
 
-    If the preceding steps did not resolve the issue and there is a specific buyer involved who is unable to transact on your inventory, the next course of action is to have the buyer submit a support ticket via the [Customer Portal](https://help.xandr.com) so our buyside support team can further troubleshoot.
+    If the preceding steps did not resolve the issue and there is a specific buyer involved who is unable to transact on your inventory, the next course of action is to have the buyer submit a support ticket via the [Customer Portal](https://support.ads.microsoft.com) so our buyside support team can further troubleshoot.
 
 ## Malware or policy violation escalations
 
-Any escalations regarding malware or violations of our [Service Policies](../policies-regulations/index.yml) can be submitted to our Anti-Malvertising Team via the [Customer Portal](https://help.xandr.com/s/login/) under the category **Anti-Malvertising**. This team will be able to review the offending creative and domain for platform-blocklist purposes.
+Any escalations regarding malware or violations of our [Service Policies](../policies-regulations/index.yml) can be submitted to our Anti-Malvertising Team via the [Customer Portal](https://support.ads.microsoft.com) under the category **Anti-Malvertising**. This team will be able to review the offending creative and domain for platform-blocklist purposes.
 
 - **Domains**: If the escalation involves a specific domain or list of domains, make sure to include the reason for flagging the domain, as well as a report from a third party scanning vendor (such as [The Media Trust](https://www.themediatrust.com/) or [RiskIQ](https://www.riskiq.com/)) if applicable.
 - **Creatives**: If the escalation involves a specific creative, ensure that one or all of the following is included in your support request (listed here in order of importance):
@@ -70,7 +70,7 @@ Creatives that do not contain malicious elements or violate any platform buying 
 
 To block specific creatives or set the above ad quality settings in the Xandr system, use the [Ad Profile Service](../digital-platform-api/ad-profile-service.md). For best practices regarding the use of ad quality, see [Define Ad Quality Rules](define-ad-quality-rules.md). Settings applied in the Xandr system will work in conjunction with those sent dynamically in the OpenRTB request; the most restrictive block between the two will always apply. To preview a buyer's creative, you can use the URL present in the **iurl** field of the bid response.
 
-If you're encountering creatives that do not meet these ad quality settings (either passed into the OpenRTB request or set in the Ad Profile service) serving on your inventory, this can be escalated to our Anti-Malvertising Team via the [Customer Portal](https://help.xandr.com) under the category **Anti-Malvertising**.
+If you're encountering creatives that do not meet these ad quality settings (either passed into the OpenRTB request or set in the Ad Profile service) serving on your inventory, this can be escalated to our Anti-Malvertising Team via the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) under the category **Anti-Malvertising**.
 
 ## HTTP responses
 
@@ -80,7 +80,7 @@ Expected HTTP responses to bid requests are listed below:
 - 204 NO CONTENT: No bid has been returned.  
 - 400 MALFORMED: The [incoming bid request](incoming-bid-request-from-ssps.md) contains a site ID (tagid, site.id), app ID (app.id), or publisher ID (app.publisher, id or site.publisher.id) that maps to an inactive publisher or placement object in the Xandr system. For more information, see [General delivery troubleshooting Step 2](#general-delivery-troubleshooting) above.
 
-If you are receiving no response at all and/or the request is timing out, check to ensure that your global auction timeout settings provided during the initial integration are correct. If these settings have changed, or if you are unsure of the timeout settings that were initially submitted, submit a support ticket via our [Customer Portal](https://help.xandr.com/s/login/) to confirm and provide the correct settings to our teams.
+If you are receiving no response at all and/or the request is timing out, check to ensure that your global auction timeout settings provided during the initial integration are correct. If these settings have changed, or if you are unsure of the timeout settings that were initially submitted, submit a support ticket via our [Customer Portal](https://support.ads.microsoft.com) to confirm and provide the correct settings to our teams.
 
 ## Discrepancies
 
@@ -125,4 +125,4 @@ To view your current object limits, use the [Object Limit Service](../digital-pl
 
 ## Unexpected behavior
 
-If you are experiencing behavior that is not in line with our documentation or specifications, submit a support ticket via our [Customer Portal](https://help.xandr.com) with relevant logs exhibiting the issue and/or steps to reproduce.
+If you are experiencing behavior that is not in line with our documentation or specifications, submit a support ticket via our [Customer Portal](https://support.ads.microsoft.com) with relevant logs exhibiting the issue and/or steps to reproduce.

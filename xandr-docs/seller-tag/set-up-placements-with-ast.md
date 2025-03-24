@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Set up placements with AST
 
-This page contains a sample web page showing how Xandr's seller tag (AST) functions can be implemented in the header and body of a sample client page.
+This page contains a sample web page showing how Microsoft Advertising's Seller Tag (AST) functions can be implemented in the header and body of a sample client page.
 
 > [!NOTE]
 > As part of our ongoing transition to enhance performance and align with Microsoft services, we are migrating the AST product from the Xandr CDN to the Microsoft CDN.  
@@ -25,7 +25,7 @@ This page contains a sample web page showing how Xandr's seller tag (AST) func
 > - `adsdk.microsoft.com`
 > - `adsdk.bing.net` (if applicable)
 
-For more details, see the [AST API Reference](https://chatgpt.com/c/ast-api-reference.md).
+For more details, see the [AST API Reference](ast-api-reference.md).
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 

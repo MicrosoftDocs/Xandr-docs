@@ -168,8 +168,8 @@ Some considerations:
 
 > [!NOTE]
 >
-> - The following fields are ignored in the bid response: `adomain` and `ver`.
-> - Brand is set during platform audit of the registered creative, so `adomain` is not needed.
+> - The `ver` field is ignored in the bid response.  
+> - The `adomain` field may be checked occasionally to verify that the ad’s brand aligns with publisher preferences.  
 
 ### Bid object
 
@@ -317,7 +317,7 @@ Your creative will not be permitted to serve. The audit failure may be due to ro
 
 ### Where do I go for more help?
 
-If you have additional questions, contact your account representative or [customer support](https://help.xandr.com/s/login/).
+If you have additional questions, contact your account representative or [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 ## Related topic
 

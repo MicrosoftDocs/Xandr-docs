@@ -50,9 +50,14 @@ Intervals determine how your data is grouped together into rows in the report re
 - Monthly: Data is grouped into rows by the month.
 - Cumulative: Data is grouped together in one figure, covering the entire selected time range.
 
+
 ### Data retention period
 
-Data in this report is retained for 420 days.
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
+
 
 ## Currency 2.0
 
@@ -74,6 +79,7 @@ By enabling **Currency 2.0**, you can select a currency for each individual repo
 | Application ID | Yes | A targetable Apple App Store ID, Google Play package name, or Windows application ID. |
 | Selling Currency | No | The seller/publisher currency associated with the video impressions sold. This dimension is available only when Currency 2.0 is disabled. |
 | Creative Duration | No | The duration of the video creative (e.g., 15 seconds). |
+| Is Takeover |Yes| Indicates whether an impression was `Blanked` or `Defaulted` due to at least one ad in the multi-ad request being a takeover. Returns `true` if the impression is part of a takeover request; otherwise, returns `false`.|
 | Supply Type | Yes | The seller-classified channel to denominate supply in terms of web, mobile-optimized web, and mobile app impressions. Possible values are 'web', 'mobile_app', and 'mobile_web'. |
 | Video Context | Yes | When and where the video creative was served. Possible values are Pre-roll, Mid-roll, Post-roll, Outstream, and Unknown. |
 | Video Playback Method | Yes | The playback method for the creative, e.g, ' auto-start, sound on'. |

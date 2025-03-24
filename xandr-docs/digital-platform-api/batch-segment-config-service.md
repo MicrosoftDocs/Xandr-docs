@@ -19,7 +19,7 @@ The Batch Segment Config Service is an internal, admin-only API used to add and 
 
 ## Client access to other members' data
 
-A client who wants access to another member's data will have to ask that member to file a support request via our [Customer Support Portal](https://help.xandr.com/). For example, if client A wants access to client B's data, client B must send in a support request authorizing client A's access.
+A client who wants access to another member's data will have to ask that member to file a support request via our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). For example, if client A wants access to client B's data, client B must send in a support request authorizing client A's access.
 
 ## JSON fields
 

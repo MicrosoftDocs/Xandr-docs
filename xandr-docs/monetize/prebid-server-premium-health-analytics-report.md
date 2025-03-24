@@ -73,7 +73,7 @@ Data in this report is retained for the past 33 days of activity.
 | Device Type | Yes | The category of device. For example, `desktops`, `mobile phones`, etc. |
 | External Creative | Yes | The external ID associated with the creative served. |
 | Inventory URL | Yes | The mapped URL from the detected domain on the ad call and the ID in parentheses. For example, `"myurl.com/(1234)"` |
-| Media Type | Yes | The category of creative on transacted impressions. For example: `banner`, `video`, `native`. |
+| Media Type | Yes | The category of creative on transacted impressions. For example: `banner`, `video`, `native`. Unknown media type refers to bid requests that did not result in impressions. The media type is logged only when a creative is served. |
 | Placement | Yes | The name and ID of the placement through which the request originated. |
 | Placement Group | Yes | The placement group (a collection of placements) that includes the placement through which the request originated. |
 | PSP Config | Yes | Unique identifier for the [PSP configuration](../monetize/add-edit-or-delete-a-psp-configuration.md). Currently only reportable on Bid Responses Received, Valid Bids On Imps, and Imps (delivered). Will be updated to cover other metrics in the future. |
@@ -100,6 +100,7 @@ Data in this report is retained for the past 33 days of activity.
 | Bids Submitted to Ad Server | The number of ad requests that had a valid Prebid bid that was not subject to any additional Microsoft Advertising rejections returned to the ad server. This number is counted after the Microsoft Advertising auction process that evaluates bids received from all sources. The reduced volume between Valid Bids on Imps and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](integrate-web-mobile-web-with-psp.md). |
 | Errors Rate | The number of bid errors divided by the number of bid requests sent to demand partners. |
 | Imps (delivered) | The number of impressions successfully delivered and ads rendered. Note this report is based on sample log data multiplied to estimate the full volume of PSP activity and does not represent final delivery. |
+| Media Type | The category of creative on transacted impressions. For example: `banner`, `video`, `native`. Unknown media type refers to bid requests that did not result in impressions. The media type is logged only when a creative is served.|
 | No Bid Rate | The number of times demand partners did not bid divided by the number of bid requests sent to demand partners. |
 | No Bids | The number of times demand partners did not bid on a request. This does not include bid errors. |
 | Total Bid Price | The sum of the bid values received from demand partners. |

@@ -53,7 +53,14 @@ Intervals determine how your data is grouped together into rows in the report re
 > [!NOTE]
 > For impressions older than 100 days, the day will be returned rather than the hour.
 
-This report's data is retained for 420 days
+
+### Data retention period
+
+Data in this report has the following retention period:
+
+- Hourly retention: 100 days
+- Daily retention: 500 days
+
 
 ## Currency 2.0
 

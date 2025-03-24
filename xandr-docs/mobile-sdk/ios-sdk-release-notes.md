@@ -1,6 +1,6 @@
 ---
 title: iOS SDK Release Notes
-description: Explore information about the iOS SDK release notes.
+description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
 ms.date : 11/27/2024
 ---
@@ -9,6 +9,31 @@ ms.date : 11/27/2024
 
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
+
+## 9.4.0
+
+### Improvement/Bug Fixes
+
+- 8846449: Updated OMSDK to v1.5.2.  
+- 6036342: Improved 1px-in-view logic for impressions.  
+- 8207482: Fixed excessive log messages from `ANBannerView`.  
+- 8504659: Resolved banner performance issues.  
+- 8546971: Corrected double impression and `interstitialAdDisplayed` events in Telemetry for interstitial ads.  
+- 8925271: Fixed the `onAdImpression` callback for **BannerVideo**.  
+- 8962753: Fixed `dismissOnClick` for interstitial ads.  
+- 9049981: Fixed click trackers firing for Vungle CSR interstitial ads.  
+- 9074154: Fixed the **Begin to Render** impression incorrectly applying to HTML ads in `ANInterstitialAd`.  
+- 8839439: Addressed CodeQL scan issues.  
+
+## 9.3.0
+
+### New feature
+
+- 7446038: Added Vungle CSR support for interstitial video ads. For more information, see [Vungle demand for iOS](vungle-demand-for-ios.md).  
+
+### Improvement/Bug Fixes
+
+- 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.  
 
 ## 9.2.1
 
@@ -254,7 +279,7 @@ The next major release will be SDK v8.0.0 which will include some breaking chang
 
 ### Announcements (7.21.0)
 
-We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If you are using any of the below API's, we request to migrate to their supported equivalent. If you have any questions reach out to [Xandr support](https://help.xandr.com/s/login/).
+We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If you are using any of the below API's, we request to migrate to their supported equivalent. If you have any questions reach out to [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).
 
 | Class | Property(s) and Method(s) |
 |--|--|

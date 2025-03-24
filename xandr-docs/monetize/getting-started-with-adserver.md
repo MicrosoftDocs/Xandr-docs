@@ -28,7 +28,6 @@ This is where you set up and maintain your advertisers, as well as manage your c
 
 View and manage your line items and insertion orders from one place. You can also apply and save filtered views of your data.
 
-- [Explore Global Insertion Orders](explore-global-insertion-orders.md)
 - [Explore Global Line Items](explore-global-line-items.md)
 
 ### Guaranteed delivery
@@ -37,7 +36,6 @@ Manage your guaranteed delivery.
 
 **Line items**
 
-- [Explore Global Insertion Orders](explore-global-insertion-orders.md)
 - [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md)
 
 **Forecasting and pacing**

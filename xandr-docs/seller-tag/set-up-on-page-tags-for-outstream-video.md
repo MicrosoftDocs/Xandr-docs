@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Set up on-page tags for Outstream video
 
-Xandr Outstream Video uses Xandr's seller tag (AST). AST is an asynchronous JavaScript tag that runs in the header of the page. AST tags are defined and loaded in the page header and are activated by "showing" the tags in the page body.
+Xandr Outstream Video uses Microsoft Advertising's Seller Tag (AST). AST is an asynchronous JavaScript tag that runs in the header of the page. AST tags are defined and loaded in the page header and are activated by "showing" the tags in the page body.
 
 > [!TIP]
 > For select use cases, AST can also be defined, loaded, and shown in the page body.

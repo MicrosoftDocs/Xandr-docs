@@ -261,6 +261,11 @@ For bidders using **native ADM**, submit the win notification URL in `seatbid.bi
 - If the following macros are present and unencoded in `adm`, they are stripped out before serving the ad: `${AUCTION_PRICE}`. To use these macros, be sure to URL-encode them in pixels.
 
 - We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.
+
+- Creative dimensions must be submitted in the `seatbid.bid.w` and `seatbid.bid.h` fields. These dimensions override the dimensions of the registered creative and are subject to the usual size checks performed during the auction.
+
+  - If neither of these dimensions is submitted, the bid is rejected.
+  - If only one of these dimensions is submitted, the bid is rejected.
   
 ## Creative example
 

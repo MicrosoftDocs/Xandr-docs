@@ -8,6 +8,11 @@
       href: object-hierarchy.md
     - name: Microsoft Invest API
       href: digital-platform-ui-api-info.md
+    - name: Breaking Changes
+      items:
+       - name: Overview
+         href: breaking-changes.md
+       - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
 - name: Member Settings
   items: 
   - name: Work with Member Settings
@@ -1031,8 +1036,9 @@
           href: release-notes-20240923.md
         - name: September 09, 2024 - Microsoft Owned and Operated (O&O) Packages in Inventory Library 
           href: release-notes-20240909.md
-        - name: July 09, 2024 - Trader Home
-          href: release-notes-20240709.md
+        # Removing Trader Home-related pages as per ticket #Epic 9058683
+        #- name: July 09, 2024 - Trader Home
+        #  href: release-notes-20240709.md
         - name: July 8, 2024 - Modeled Audiences
           href: release-notes-20240708.md
     - name: 2022 - 2023

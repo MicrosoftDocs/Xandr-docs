@@ -5,23 +5,18 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# RTSS best practices
-
-> [!WARNING]
-> **Beta Notice**
->
-> - The Real-Time Signals Service is in Beta, and is subject to change in the future.
-> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, speak to your account manager.
+# Real-Time Signals Service (RTSS) best practices
 
 The following best practices will help you be successful using RTSS.
 
-- [API Rate Limits](#api-rate-limits)
-- [Segment Naming](#segment-naming)
-- [Segment Construction](#segment-construction)
-- [Target Expiry](#target-expiry)
-- [OLC and Geo-Targeting](#olc-and-geo-targeting)
-- [Bulk Uploads](#bulk-uploads)
-- [API Retries](#api-retries)
+- [Real-Time Signals Service (RTSS) best practices](#real-time-signals-service-rtss-best-practices)
+  - [API rate limits](#api-rate-limits)
+  - [Segment naming](#segment-naming)
+  - [Segment construction](#segment-construction)
+  - [Target expiry](#target-expiry)
+  - [OLC and geo-targeting](#olc-and-geo-targeting)
+  - [Bulk uploads](#bulk-uploads)
+  - [API retries](#api-retries)
 
 ## API rate limits
 

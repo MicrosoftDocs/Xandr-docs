@@ -50,8 +50,9 @@
       items:
       - name: Overview
         href: ../bidders/creative-service.md
-      - name: Submit Auditable Dynamic Creatives
-        href: ../bidders/submit-auditable-dynamic-creatives.md
+      # Removed this page as per the requirement for Epic 8925016
+      #- name: Submit Auditable Dynamic Creatives
+      #  href: ../bidders/submit-auditable-dynamic-creatives.md
       - name: Xandr Macros
         href: ../bidders/xandr-macros.md
     - name: Creative Template Service

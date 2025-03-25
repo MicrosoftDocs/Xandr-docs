@@ -487,7 +487,7 @@
       href: create-an-impression-tracker.md
   - name: APAC Supply Information - Platform Inventory by Seller
     href: apac-supply-information-platform-inventory-by-seller.md
-   # Removing Trader Home-related pages as per ticket #Epic 9058683 
+  # Removing "Trader Home" references for Monetize as per ticket #Epic 9058683 
   #- name: Trader Home
   #  items:
   #  - name: Working with Trader Home

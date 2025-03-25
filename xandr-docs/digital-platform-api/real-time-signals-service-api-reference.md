@@ -8,10 +8,7 @@ ms.author: shsrinivasan
 
 # Real-time Signals Service API reference
 
-> [!WARNING]
-> The resources listed on this page are in Beta status, and are subject to change in the future.
-
-The Real-Time Signals Service (RTSS) is used to upload ID-to-segment data or other key:value data used to add segments on bid requests.
+The RTSS is used to upload ID-to-segment data or other key:value data used to add segments on bid requests.
 
 ## API usage
 
@@ -25,8 +22,6 @@ The `regional` endpoint URLs for all RTSS methods is listed below:
 | Americas and EMEA | `https://api.appnexus.com/apd-api-americas/` <br> or `https://api.appnexus.com/apd-api-emea/` | Data published to AMER is automatically replicated to EMEA. Uploads to these datacenters are shared, eliminating the need to upload the same file twice for both regions. |
 | APAC | `https://api.appnexus.com/apd-api-apac/` | APAC datacenters operate independently and are not connected to AMER or EMEA.|
 
-
-
 ### Authentication
 
 Authentication is performed through the [Digital Platform API authentication service](authentication-service.md). The Auth token retrieved from this service must be passed back to the RTSS service via the `Authorization` header, as outlined on the Auth Service page.
@@ -38,7 +33,6 @@ The following HTTP headers must be appended to your `regional` endpoint calls:
 | Method | Required HTTP Headers |
 |:---|:---|
 | `GET` | `Accept: application/appnexus.apd.vauxhall.v1.0+json`|
-| `POST`<br>`DELETE` | `Accept: application/appnexus.apd.vauxhall.v1.0+json`<br>`Content-Type: application/appnexus.apd.vauxhall.v1.0+json` |
 
 ## Segment fields
 
@@ -57,17 +51,13 @@ The following segment fields are common to the services listed on this page, and
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/olcs/{:olc}` | Find segment/value pairs associated with an individual OLC code. |
-| `POST` | `/members/{:member_id}/olcs/{:olc}` | Add or replace segment/value pair associated with an individual OLC code. |
-| `DELETE` | `/members/{:member_id}/olcs/{:olc}` | Removes specified segments for a given OLC code. |
 
 ### Parameters (OLC)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL path | All Methods | `123` |
-| `olc` | string | OLC code | URL path | All Methods | `58GR22WM+PW` |
-| `segment_list` | array of ints | A list of segment IDs | JSON body | `DELETE` | `[123, 456]` |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[{"seg_id":123,"seg_ttl":"25s","seg_val":345}]` |
+| `member_id` | long | Member ID | URL path | `GET` | `123` |
+| `olc` | string | OLC code | URL path | `GET` | `58GR22WM+PW` |
 
 ### Response fields (OLC)
 
@@ -89,69 +79,6 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### HTTP status codes (OLC)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
-> [!NOTE]
-> Although any valid OLC code will be accepted, for more detailed information, see the [RTSS Best Practices](rtss-best-practices.md) page.
-
-## Geo administrative targeting
-
-### REST API (country-regions)
-
-| Method | Endpoint | Description |
-|:---|:---|:---|
-| `GET` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Find segment/value pairs associated with a region of a country. |
-| `POST` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Add or replace segment/value pair associated with a region of country. |
-| `DELETE` | `/members/{:member_id}/countries/{:country}/regions/{:region}` | Removes specified segments for a region of a country. |
-
-### Parameters (country-regions)
-
-| Name | Data Type | Description | Parameter Type | Required On | Example |
-|:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL path | All Methods | `123` |
-| `country` | string | Unique country code | URL path | All Methods | `US` |
-| `region` | string | Region name/code | URL path | All Methods | `NJ` |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | List of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
-
-### Response (country-regions)
-
-| Name | Data Type | Description | Returned On | Example |
-|:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example).  |
-
-#### `segments` response example
-
-```
-{
-"segments": [
-{
-"seg_id": 555,
-"seg_ttl": "1w",
-"seg_val": 5050
-},
-{
-"seg_id": 666,
-"seg_val": 0
-}
-]
-}
-```
-
-### HTTP status codes (country-regions)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
 ## REST API (postal codes)
 
 > [!NOTE]
@@ -160,17 +87,13 @@ The following segment fields are common to the services listed on this page, and
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/postal-codes/{:pcode}` | Find segment/value pairs associated with an individual postal code. |
-| `POST` | `/members/{:member_id}/postal-codes/{:pcode}` | Add or replace segment/value pair associated with an individual postal code. |
-| `DELETE` | `/members/{:member_id}/postal-codes/{:pcode}` | Removes specified segments for a given postal code. |
 
 ### Parameters (postal codes)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL path | All Methods | `123` |
-| `pcode` | string | Postal Code | URL path | All Methods | `07302` |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
+| `member_id` | long | Member ID | URL path | `GET` | `123` |
+| `pcode` | string | Postal Code | URL path | `GET` | `07302` |
 
 ### Response (postal codes)
 
@@ -197,86 +120,18 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### HTTP status codes (postal codes)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
-## IP targeting
-
-### REST API (IP ranges)
-
-| Method | Endpoint | Description |
-|:---|:---|:---|
-| `GET` | `/members/{:member_id}/ip-ranges/{:ip_begin}/{:ip_end}` | Find segment/value pairs associated with an IP Range. |
-| `POST` | `/members/{:member_id}/ip-ranges/{:ip_begin}/{:ip_end}` | Add or replace segment/value pair associated with an IP range. |
-| `DELETE` | `/members/{:member_id}/ip-ranges/{:ip_begin}/{:ip_end}` | Removes specified segments for an IP Range. |
-
-### Parameters (IP ranges)
-
-| Name | Data Type | Description | Parameter Type | Required On | Example |
-|:---|:---|:---|:---|:---|:---|
-| `member_id` | long | member id | URL Path | All Methods | `123` |
-| `ip_begin` | string | The first IP in a range | URL Path | All Methods | `192.168.6.235` |
-| `ip_end` | string | The last IP in a range | URL Path | All Methods | `192.168.6.255` |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of segment IDs | A list of Segment IDs | JSON Body | `DELETE` | `[123, 456]` |
-
-### Response (IP ranges)
-
-| Name | Data Type | Description | Returned On | Example |
-|:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-ip-ranges). |
-
-#### `segments` response example (IP ranges)
-
-```
-{
-"segments": [
-{
-"seg_id": 555,
-"seg_ttl": "1w2d",
-"seg_val": 5050
-},
-{
-"seg_id": 626,
-"seg_ttl": "3w2d30m",
-"seg_val": 0
-}
-]
-}
-```
-
-### HTTP status codes (IP ranges)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
-> [!NOTE]
-> Take care when adding or deleting large IP ranges. If a large IP range is added, and a subset of that range is then deleted, the original IP range may not be found in the system.
-
 ## REST API (IP address)
 
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/ips/{:ip}` | Find segment/value pairs associated with an individual IP. |
-| `POST` | `/members/{:member_id}/ips/{:ip}` | Add or replace segment/value pair associated with an individual IP. |
-| `DELETE` | `/members/{:member_id}/ips/{:ip}` | Removes specified segments for an individual IP. |
 
 ### Parameters (IP address)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL Path | All Methods | `123` |
-| `ip` | string | An individual IP address. | URL Path | All Methods | `192.168.0.20` |
-| `segval_list` | array of objects | A list of segments with associated values. | JSON body | `POST` | `[ { "seg_id": 123, "seg_ttl": "25s", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | A list of segment IDs. | JSON Body | `DELETE` | `[123, 456]` |
+| `member_id` | long | Member ID | URL Path | `GET` | `123` |
+| `ip` | string | An individual IP address. | URL Path | `GET` | `192.168.0.20` |
 
 ### Response (IP address)
 
@@ -303,14 +158,6 @@ The following segment fields are common to the services listed on this page, and
 }
 ```
 
-### HTTP status codes (IP address)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
 ## URL targeting
 
 ### REST API (URL components)
@@ -320,17 +167,13 @@ Target URL components with `"OR"` logic, with up to 3 paths.
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/urls/components` | Find segment/value pairs targetable by URL Components. |
-| `POST` | `/members/{:member_id}/urls/components` | Add or replace segment/value pair targetable by URL Components. |
-| `DELETE` | `/members/{:member_id}/urls/components` | Removes specified segments for a URL from the target list of the URL Components. |
 
 ### Parameters (URL components)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL Path | `POST`, `DELETE`, `GET` | `123` |
-| `path` | string | Partial URL<br>- A partial URL should contain only secondary and top level domains of the host section of the authority URL part, and up to 3 segments of the path URL part.<br>- A partial URL may only contain path components.<br>- Partial URLs support `"OR"` matching on paths. | Query string | `POST`, `DELETE`, `GET` | See [example](#path-example).<br>`mysampledomain.com/en` will match both:<br>- `mysampledomain.com/en`<br>- `mysampledomain.com/en/buyers` |
-| `segval_list` | array of objects | A list of segments with associated values | JSON body | `POST`, `DELETE` | See [example](#segval_list-example). |
-| `segment_list` | Array of Segment IDs | A list of segment IDs | JSON Body | `DELETE` | `[123, 456]` |
+| `member_id` | long | Member ID | URL Path | `GET` | `123` |
+| `path` | string | Partial URL | Query string | `GET` |  `mysampledomain.com/en/buyers` |
 
 #### `path` example
 
@@ -382,14 +225,6 @@ mysampledomain.com/en/buyers/mysampledomain-test
 }
 ```
 
-### HTTP status codes (URL components)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
 ## REST API (URL reference)
 
 Target Full URL with exact matching.
@@ -397,17 +232,13 @@ Target Full URL with exact matching.
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/urls/reference` | Find segment/value pairs targetable by URL. |
-| `POST` | `/members/{:member_id}/urls/reference` | Add or replace segment/value pair targetable by URL. |
-| `DELETE` | `/members/{:member_id}/urls/reference` | Removes specified segments for a URL from the target list of the URL. |
 
 ### Parameters (URL reference)
 
 | Name | Data Type | Description | Parameter Type | Required On | Example |
 |:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL Path | `POST`, `DELETE`, `GET` | `123` |
-| `path` | string | Full URL<br>URL should contain only secondary and top level domains of the host section of the authority URL part, and full path that will be matched exactly. | Query Parameter | `POST`, `DELETE`, `GET` | `mysampledomain.com/as/many/paths/as/i/want`<br>URLs will be matched exactly as they have been uploaded. |
-| `segval_list` | array of objects | A list of segments with associated values. | JSON body | `POST`, `DELETE` | `[{"seg_id":123,"seg_ttl":"30m","seg_val":345}]` |
-| `segment_list` | Array of Segment IDs | A list of segment IDs. | JSON Body | `DELETE` | `[123, 456]` |
+| `member_id` | long | Member ID | URL Path | `GET` | `123` |
+| `path` | string | Full URL<br>URL should contain only secondary and top-level domains of the host section of the authority URL part, and full path that will be matched exactly. | Query Parameter | `GET` | `mysampledomain.com/as/many/paths/as/i/want`<br>URLs will be matched exactly as they have been uploaded. |
 
 ### Response (URL reference)
 
@@ -434,88 +265,8 @@ Target Full URL with exact matching.
 }
 ```
 
-### HTTP status codes (URL reference)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
-## HTTP status codes
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
-
 > [!NOTE]
 > Uploaded IDs are converted to lower-case values when stored. Matching is not case-sensitive.
-
-## Events - Instantly activated segments
-
-> [!NOTE]
-> This RTSS functionality is no longer actively supported and is slated to be **deprecated**. You may be able to get the same results from other Xandr products. Contact your account manager for assistance.
-
-Events are segments which could become active instantly across all data centers, and expire within a specified period. **Events are not associated with any targeting.**
-
-> [!NOTE]
-> Given the resources required to enable Events, the following limitations on the service are in place:
->
-> 1. The Number of simultaneously active events per member is: **200**.
-> 1. Events cannot be bulk loaded, though multiple can be activated per single API call.
-> 1. Events must have a TTL.
-> 1. Maximum TTL is: **1 hour**.
-
-## REST API (Events)
-
-| Method | Endpoint | Description |
-|:---|:---|:---|
-| `GET` | `/members/{:member_id}/events` | Gets information on active Events. |
-| `POST` | `/members/{:member_id}/events` | Adds new or replaces existing segment(s), creating Events with TTL. |
-| `DELETE` | `/members/{:member_id}/events` | Removes specified segment(s), immediately deactivating Events. |
-
-### Parameters (Events)
-
-| Name | Data Type | Description | Parameter Type | Required On | Example |
-|:---|:---|:---|:---|:---|:---|
-| `member_id` | long | Member ID | URL Path | All Methods | `123` |
-| `segval_list` | Array of Objects | A list of segments with associated values | JSON Body | `POST` | `[ { "seg_id": 123, "seg_ttl": "20m", "seg_val": 345 } ]` |
-| `segment_list` | Array of Segment IDs | List of segment IDs | Query string | `GET`, `DELETE` | `https://api.appnexus.com/apd-api/members/958/events?segment_list=123,345` <br> or <br> `https://api.appnexus.com/apd-api-emea/members/958/events?segment_list=123,345`|
-
-### Response (Events)
-
-| Name | Data Type | Description | Returned On | Example |
-|:---|:---|:---|:---|:---|
-| `segments` | Array of objects | An array of segments (id: value pairs) | `GET` | See [example](#segments-response-example-events). |
-
-#### `segments` response example (Events)
-
-```
-{
-"segments": [
-{
-"seg_id": 555,
-"seg_ttl": "30m",
-"seg_val": 5050
-},
-{
-"seg_id": 626,
-"seg_ttl": "1wk",
-"seg_val": 0
-}
-]
-}
-```
-
-### HTTP status codes (Events)
-
-| Status Code | Returned On | Reason | Headers | Header Description |
-|:---|:---|:---|:---|:---|
-| `200` | `GET`, `POST` | Success | `X-AuditID` | Reference Audit ID |
-| `204` | `DELETE` | Success | `X-AuditID` | Reference Audit ID |
-| `207` | `DELETE`, `POST` | Partial with Errors | `X-AuditID` | Reference Audit ID |
 
 ## Uploads
 
@@ -526,7 +277,7 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 | Method | Endpoint | Description |
 |:---|:---|:---|
 | `GET` | `/members/{:member_id}/uploads` | Get a list of active uploads. |
-| `POST` | `/members/{:member_id}/uploads` | Upload a CSV file (can be GZIP compressed). |
+
 
 ### Parameters (Bulk upload)
 
@@ -592,8 +343,7 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 
 | `keytype` ID | Type | `key` Examples |
 |:---|:---|:---|
-| `0` | string | - IP range: `"127.0.0.1,127.0.0.10"`<br>- Single IP address: `"127.0.0.1"`<br>*Should be quoted.* |
-| `1` | string | Country: Region<br>- `"US"`<br>- `"US:KY"` |
+| `0` | string | - Single IP address: `"127.0.0.1"` |
 | `2` | string | Geo hashcode in OLC format:<br>[OLC spec](https://openlocationcode.com/) |
 | `3` | string | Postal code<br>**Note:** Postal codes targets will be **deprecated** soon.<br>`"11235"` |
 | `4` | string | Partial URL (up to 3 paths)<br>- `mysampledomain.com`<br>- `mysampledomain.com/en/buyers`<br>- `mysampledomain.com/en/buyers/page` |
@@ -698,4 +448,4 @@ Server responds with information about the job ID specified in the Query Paramet
 
 ## Best upload practices
 
-For more information about Bulk Uploads, see [RTSS Best Practices](./rtss-best-practices.md#bulk-uploads).
+For more information about Bulk Uploads, see [RTSS Best Practices](./rtss-best-practices.md).

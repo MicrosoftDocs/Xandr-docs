@@ -5,13 +5,7 @@ ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---
 
-# RTSS limitations
-
-> [!WARNING]
-> **Beta Notice**
->
-> - The Real-Time Signals Service is in Beta, and is subject to change in the future.
-> - As we transition to open beta, **we will be adding a monthly charge for new and existing clients that use RTSS**. For more information, speak to your account manager.
+# Real-Time Signals Service (RTSS) limitations
 
 This section describes situations and use cases that don't work well with RTSS.
 

@@ -89,8 +89,7 @@ The average metrics section aggregates data across the billing period or lifetim
 
 The line item grid below the Insertion order and **Analytics** section details all Line items associated with a particular Insertion order. It supports features such as search, filtering, and bulk editing. It enables users to pull reports by selecting the **Download Report** button, enabling them to view and gain insights into the campaign's performance during the length of the flight duration.
 
-<!--
 ## Related topics
 
 - [Explore Trader Home](explore-trader-home.md)
-- [Getting Started with Trader Home](getting-started-with-trader-home.md)-->
+- [Getting Started with Trader Home](getting-started-with-trader-home.md)

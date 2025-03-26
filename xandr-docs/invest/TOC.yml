@@ -277,17 +277,16 @@
         href: household-attribution-reporting.md
       - name: Household Attribution FAQs
         href: household-attribution-faq.md
-  # Removing Trader Home-related pages as per ticket #Epic 9058683 
-  #- name: Trader Home
-  #  items:
-  #  - name: Overview
-  #    href: trader-home.md
-  #  - name: Get Started with Trader Home
-  #    href: getting-started-with-trader-home.md
-  #  - name: Explore Trader Home
-  #    href: explore-trader-home.md
-  #  - name: Explore Insertion Orders Page
-  #    href: explore-insertion-orders-page.md
+    name: Trader Home
+    items:
+    - name: Overview
+      href: trader-home.md
+    - name: Get Started with Trader Home
+      href: getting-started-with-trader-home.md
+    - name: Explore Trader Home
+      href: explore-trader-home.md
+    - name: Explore Insertion Orders Page
+      href: explore-insertion-orders-page.md
   - name: Programmable Splits
     items:
     - name: Work with Programmable Splits
@@ -1036,9 +1035,8 @@
           href: release-notes-20240923.md
         - name: September 09, 2024 - Microsoft Owned and Operated (O&O) Packages in Inventory Library 
           href: release-notes-20240909.md
-        # Removing Trader Home-related pages as per ticket #Epic 9058683
-        #- name: July 09, 2024 - Trader Home
-        #  href: release-notes-20240709.md
+        - name: July 09, 2024 - Trader Home
+          href: release-notes-20240709.md
         - name: July 8, 2024 - Modeled Audiences
           href: release-notes-20240708.md
     - name: 2022 - 2023

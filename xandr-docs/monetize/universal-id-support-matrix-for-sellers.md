@@ -30,6 +30,12 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |Utiq MartechPass |`utiq-mtp.com` |AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap |*This ID is used as a publisher first-party ID, not as a cross-publisher universal ID. Monetize member approval and enablement is required to use this ID. Please reach out to your Monetize account manager if interested.* |*Requires enablement*  |*Requires enablement*  |
 |LinkedIn ID|[linkedin.com](https://linkedin.com/)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap|Passthrough (SSP support only)**|No|No  |
 |First ID|[first-id.fr](https://first-id.fr/)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap|This ID is used as a publisher first-party ID, not as a cross-publisher universal ID. Monetize member approval and enablement is required to use this ID. Please reach out to your Monetize account manager if interested.|No|No|
+|LiveIntent - Index Exchange ID | [liveintent.indexexchange.com](https://liveintent.indexexchange.com) | Index Exchange ID | Passthrough for Prebid Server Premium | No | No |
+|LiveIntent - Triplelift ID | [liveintent.triplelift.com](https://liveintent.triplelift.com) | Triplelift SSP ID | Passthrough for Prebid Server Premium | No | No |
+|LiveIntent - Rubicon ID | [rubiconproject.com](https://rubiconproject.com) | Rubicon SSP ID | Passthrough for Prebid Server Premium | No | No |
+|LiveIntent - Openx ID | [openx.net](https://openx.net) | OpenX SSP ID | Passthrough for Prebid Server Premium | No | No |
+|LiveIntent - Pubmatic ID | [pubmatic.com](https://pubmatic.com) | PubMatic SSP ID | Passthrough for Prebid Server Premium | No | No |
+
 > [!NOTE]
 >
 > - Email your ID solution provider and Microsoft Representative to enable Universal IDs, such as RampID, in LLD.

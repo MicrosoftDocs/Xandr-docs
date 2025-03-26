@@ -18,4 +18,4 @@ Permissions are categorized into several related capabilities. The capabilities 
 | Publishers | Publisher capabilities allow you to control access to publishers and their related placement groups and placements, as well as ad quality rules, YM floor rules, and publisher reporting. You can also control access to various dashboards, including the Prebid dashboard and the Microsoft Invest dashboard. |
 | Mediation | Mediation capabilities determine access to creating and viewing bids and viewing ad network data. |
 | Apps | These capabilities allow you to determine what type of access your users have to the Apps Marketplace. |
-| Other | Manage miscellaneous capabilities such as ad server lists.|
+| Other | Manage miscellaneous capabilities such as ad server lists and the **Trader Home** screen. |

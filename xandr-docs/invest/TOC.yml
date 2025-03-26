@@ -277,16 +277,16 @@
         href: household-attribution-reporting.md
       - name: Household Attribution FAQs
         href: household-attribution-faq.md
-    name: Trader Home
-    items:
-    - name: Overview
-      href: trader-home.md
-    - name: Get Started with Trader Home
-      href: getting-started-with-trader-home.md
-    - name: Explore Trader Home
-      href: explore-trader-home.md
-    - name: Explore Insertion Orders Page
-      href: explore-insertion-orders-page.md
+    - name: Trader Home
+      items:
+      - name: Overview
+        href: trader-home.md
+      - name: Get Started with Trader Home
+        href: getting-started-with-trader-home.md
+      - name: Explore Trader Home
+        href: explore-trader-home.md
+      - name: Explore Insertion Orders Page
+        href: explore-insertion-orders-page.md
   - name: Programmable Splits
     items:
     - name: Work with Programmable Splits

@@ -43,7 +43,7 @@ Register one creative per brand and language combination using the [Creative Ser
   - The specific ad chosen for registration does not matter.  
   - The creative must be eligible to serve on Monetize inventory.  
 - The creative must undergo a platform audit.
-- Only [Monetize macros](xandr-macros.md) are supported when registering a creative. OpenRTB macros (such as `${AUCTION_PRICE}`) are **not** expanded.  
+- When registering a creative, several OpenRTB and Microsoft macros are supported. See the [Tracking Macros](#tracking-macros) section below for a list of macros supported in `adm`.
 - You do not need to specify the `brand_id` field; Monetize sets this during the audit.
 - Bids must use the [OpenRTB protocol](bidding-protocol.md).
 - Use **video creative template 6439**.  
@@ -101,11 +101,40 @@ The `nurl` field is used for win notifications and is required for server-side i
 |--------|--------|-------------|
 | `nurl` | string | The win notification URL is dropped as a pixel into the web browser or SDK. When the device sends a client-side notification indicating that the auction was won, the server pings this URL. Responses are sent server-side while the impression is recorded. The maximum length of this URL is 2,000 characters with macros expanded. For bidders using Video ADM, the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro must be included in this URL to receive win price information.|
 
-### Tracking macros
+### Tracking macros  
 
-- If the following macros are present and unencoded in `adm`, they are stripped out before serving the ad: `${AUCTION_PRICE}`. To use these macros, be sure to URL-encode them in pixels.
+Some publishers periodically audit creatives, which can generate false impression and click tracking events. When Microsoft detects audit events:  
 
-- We support both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.
+- Any URL-encoded `${AUCTION_PRICE}` macro in `adm` expands to the string `"AUDIT"`.  
+- Any URL-encoded `${AN_IS_AUDIT}` macro expands to `1`.  
+
+The following macros support impression and click tracking. See ADM macros example below for usage details.
+
+#### Macro reference  
+
+| Macro | Description |
+|-------|------------|
+| `${AN_IMP_URL}` | Expands to a Microsoft impression tracking URL and is intended to prepend the bidder's impression tracking pixel. When the ad is rendered, the expanded URL redirects to the bidder's pixel and correctly expands the `${AUCTION_PRICE}` macro. All macros in the bidder's pixel must be URL-encoded in `adm`. |
+| `${AN_CLICK_URL}` | Expands to a Microsoft click tracking URL and is intended to prepend the bidder's click tracking pixel. When the ad is clicked, the expanded URL redirects to the bidder's pixel and correctly expands the `${AUCTION_PRICE}` macro. The bidder's pixel and `${AUCTION_PRICE}` must be URL-encoded in `adm`. |
+| `${AN_IS_AUDIT}` | Expands to `1` when audit events (impressions and clicks) occur, expands to `0` otherwise. Must be URL-encoded when included in a URL following `${AN_IMP_URL}` or `${AN_CLICK_URL}`. |
+| `${AUCTION_ID}` | Represents the unique identifier for the auction (`auction_id_64`). |
+| `${AUCTION_BID_ID}` | Represents the unique identifier for the bid specified in the `bidid` field in the bid response. |
+| `${AUCTION_IMP_ID}` | Represents the unique identifier for the impression from the `impid` field in the bid object of the `seatbid` object. |
+| `${AUCTION_SEAT_ID}` | Represents the unique identifier for the winning seat from the `seat` field in the `seatbid` object. |
+| `${AUCTION_AD_ID}` | Represents the unique identifier for the buyer’s creative from the `adid` field in the bid object of the `seatbid` object. |
+| `${AUCTION_PRICE}` | Represents the clearing price of the impression in the currency specified in the `cur` field in the bid response. |
+| `${AUCTION_PRICE:HMAC-SHA1-XOR}` | Represents a secure version of the auction price. The clearing price of the impression in the currency specified in the `cur` field in the bid response. |
+| `${AUCTION_CURRENCY}` | Represents the currency of the clearing price as specified in the `cur` field in the bid response. |
+| `${CREATIVE_CODE}` | Represents the `code` field set on the creative object via the API when registering a creative. |
+| `${AN_PAYMENT_TYPE}` | Represents the ID of the payment type of the bid, specified in the `bid_payment_type` field of the bid response. |
+| `${AUCTION_LOSS}` | Represents the loss reason code of the auction. For a full list of supported loss reason codes, see [Loss reason codes](../bidders/loss-reason-codes.md). |
+| `${AN_SOURCE_FD}` | Represents the entity responsible for the final impression sale decision:<br> - `0`: Exchange (default). Microsoft Monetize holds the final auction.<br> - `1`: Upstream source. The bid is passed along to a header bidding auction or external supply. |
+
+### Encoding and notification  
+
+All OpenRTB macros must be URL-encoded. To use these macros, ensure they are properly encoded in pixels as described above.  
+
+Microsoft supports both `seatbid.bid.nurl` and `seatbid.bid.burl` for server-side win notification. These must be submitted in the respective bid response field.  
 
 ### Related topics
 

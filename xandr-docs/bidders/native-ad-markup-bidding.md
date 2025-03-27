@@ -256,7 +256,7 @@ For bidders using **native ADM**, submit the win notification URL in `seatbid.bi
 |------------|--------|--------------|  
 | `nurl` / `burl` | integer | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, indicating that we won the auction. Responses will be sent server-side. This occurs concurrently while we record the impression. The max length is `2000` characters with macros expanded. <br> For bidders using native `adm`, it is expected that the bidder will include the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro in this URL to receive win price information.|
 
-### Tracking macros  
+## Tracking macros  
 
 Some publishers periodically audit creatives, which can generate false impression and click tracking events. When Microsoft detects audit events:  
 
@@ -265,7 +265,7 @@ Some publishers periodically audit creatives, which can generate false impressio
 
 The following macros support impression and click tracking. See ADM macros example below for usage details.
 
-#### Macro reference  
+### Macro reference  
 
 | Macro | Description |
 |-------|------------|

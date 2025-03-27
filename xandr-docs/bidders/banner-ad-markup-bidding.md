@@ -98,7 +98,7 @@ Bidders submit the win notification URL in `seatbid.bid.nurl`. The bidder must i
 |--------|--------|-------------|
 | `nurl` | String | The win notification URL, dropped as a pixel into the web browser or SDK. The server pings this URL upon receiving a client-side notification from the device indicating an auction win. The max length is 2000 characters with macros expanded. For bidders using banner adm, it is expected that the `${PRICE_PAID}` or `${AUCTION_PRICE}` macro is included in this URL to receive win price information. Use `${AUCTION_ID}` in order to collate your nurl fire with the corresponding unique Monetize auction.|
 
-### Tracking macros  
+## Tracking macros  
 
 Some publishers periodically audit creatives, which can generate false impression and click tracking events. When Microsoft detects audit events:  
 
@@ -107,7 +107,7 @@ Some publishers periodically audit creatives, which can generate false impressio
 
 The following macros support impression and click tracking. See ADM macros example below for usage details.
 
-## Macro reference  
+### Macro reference  
 
 | Macro | Description |
 |-------|------------|

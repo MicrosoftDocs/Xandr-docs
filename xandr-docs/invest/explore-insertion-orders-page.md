@@ -14,8 +14,9 @@ The Insertion Orders page is a central hub for advertisers, offering a streamlin
 - Selecting the hamburger icon on the Insertion order sub-navigation causes the Insertion order menu to slide out from the left side of the screen. This action displays all Insertion orders associated with a particular advertiser.
 - Users can search directly for an Insertion order by name or ID, as well as filter by state:
 
-  - Active, or
+  - Active
   - Favourite
+  
 - Selecting another insertion order reloads the page, updating the sub-navigation bar, details section, and grid to reflect the context of the new Insertion order.
 
 ## Analytics and settings buttons

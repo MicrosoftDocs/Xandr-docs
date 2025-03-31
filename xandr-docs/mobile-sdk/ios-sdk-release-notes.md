@@ -10,6 +10,13 @@ ms.date : 11/27/2024
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.5.0
+
+### Improvement/Bug Fixes
+
+- 9095359: Fixed impression tracking logic for interstitial videos.
+- 9171077: Added support for new impbus endpoints used by the SDK to enhance functionality and performance.
+
 ## 9.4.0
 
 ### Improvement/Bug Fixes

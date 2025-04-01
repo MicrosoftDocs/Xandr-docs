@@ -27,6 +27,10 @@ This page contains a sample web page showing how Microsoft Advertising's Seller 
 
 For more details, see the [AST API Reference](ast-api-reference.md).
 
+> [!CAUTION]
+>
+> Beyond the CDN change, we have recently updated the example setup code that loads the `ast.js` file. It now recommends including a `crossOrigin` property in the script element that loads the JavaScript library. We kindly ask that you include this additional code to help AST capture client-side errors related to the AST script.
+
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 
 In line 5, we set up an empty AST object. In line 7, we create a function queue on that object which allows us to push functions into that queue with the information about the tags and be able to request bids from the Xandr ad server. In lines 10–15, we asynchronously load the client-side auction library from the Xandr CDN. If the script exists, we process it; otherwise, it is put in the queue.
@@ -49,11 +53,11 @@ In line 5, we set up an empty AST object. In line 7, we create a function queue 
     (function() {
        var d = document, e = d.createElement('script'), p = d.getElementsByTagName('head')[0];
        e.type = 'text/javascript';  e.async = true;
+       e.crossOrigin = 'anonymous';
        e.src = 'https://adsdk.microsoft.com/ast/ast.js';
        p.insertBefore(e, p.firstChild);
     })();
 ```
-
 ## Step 2: Set global page options
 
 Now we set the global page options with the `setPageOpts` function. Here, we set the member ID to `958` and define the page-wide targeting parameters. `member` is required in either `setPageOpts` or `defineTag` (see below). This example uses age and gender.

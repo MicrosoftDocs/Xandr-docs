@@ -12,6 +12,10 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [1.10.2](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 27 March 2025 |
+| [1.10.1](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 25 March 2025 |
+| [1.10.0](https://adsdk.microsoft.com/ast/ast.js) | - Added support for pxratio, hieght, width, ppi to device fields in AST. | 18 March 2025 |
+| [1.9.0](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 13 March 2025 |
 | [1.8.0](https://adsdk.microsoft.com/ast/ast.js) | - Add additional consent checks to the Fledge auction workflow. <br> - Improve the release framework and smoke tests. | 10 March 2025 |
 | [1.7.0](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 6 March 2025 |
 | 1.6.0 | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 27 February 2025 |

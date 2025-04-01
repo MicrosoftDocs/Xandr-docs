@@ -16,7 +16,6 @@ This page contains a sample web page showing how Microsoft Advertising's Seller 
 >
 > To ensure you receive the latest updates and improvements for the AST product, including essential privacy features, follow these steps to update your web pages with the new Microsoft CDN URLs:
 >
->
 > - **Regular Domain:** [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
 > - **Cookie-Free Domain:** [https://adsdk.bing.net/ast/ast.js](https://adsdk.bing.net/ast/ast.js)
 >
@@ -26,6 +25,10 @@ This page contains a sample web page showing how Microsoft Advertising's Seller 
 > - `adsdk.bing.net` (if applicable)
 
 For more details, see the [AST API Reference](ast-api-reference.md).
+
+> [!IMPORTANT]
+>
+> Beyond the CDN change, we have recently updated the example setup code that loads the `ast.js` file. It now recommends including a `crossOrigin` property in the script element that loads the JavaScript library. We kindly ask that you include this additional code to help AST capture client-side errors related to the AST script.
 
 ## Step 1: Create the APN object and load the Xandr JavaScript library
 
@@ -49,11 +52,11 @@ In line 5, we set up an empty AST object. In line 7, we create a function queue 
     (function() {
        var d = document, e = d.createElement('script'), p = d.getElementsByTagName('head')[0];
        e.type = 'text/javascript';  e.async = true;
+       e.crossOrigin = 'anonymous';
        e.src = 'https://adsdk.microsoft.com/ast/ast.js';
        p.insertBefore(e, p.firstChild);
     })();
 ```
-
 ## Step 2: Set global page options
 
 Now we set the global page options with the `setPageOpts` function. Here, we set the member ID to `958` and define the page-wide targeting parameters. `member` is required in either `setPageOpts` or `defineTag` (see below). This example uses age and gender.

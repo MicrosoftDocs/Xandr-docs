@@ -1,11 +1,11 @@
 ---
-title: Microsoft Invest - Dynamic Consent Updates for Universal Pixel 
-description: Discover how to enable dynamic consent updates for Universal Pixel in Google Tag Manager with JavaScript triggers and event-driven interactions.
+title: Microsoft Curate - Dynamic Consent Updates for Universal Pixel
+description: Learn how to implement dynamic consent updates for Universal Pixel in Google Tag Manager using JavaScript triggers and event-based interactions.
 ms.date: 03/04/2025
 ms.author: shsrinivasan
 ---
 
-# Microsoft Invest - Dynamic consent updates for Universal Pixel
+# Microsoft Curate -  Dynamic consent updates for Universal Pixel
 
 The following steps and code snippets illustrate how you can dynamically update the consent state based on user interactions using JavaScript functions and event listeners such as `onclick` triggers.  
 
@@ -54,6 +54,7 @@ If you use a [consent management platform (CMP) that supports Google’s Consent
 1. Save your changes.  
 
 :::image type="content" source="media\up-custom-html.png" alt-text="Screenshot that explains Universal Event Tracker consent settings.":::
+
 
 > [!NOTE]
 > This setting ensures that Universal pixel only measures events when users grant consent for `ad_storage` via your CMP provider.

@@ -180,6 +180,8 @@ Specifies a mobile device on which the ads will be shown.
 |:---|:---|:---|
 | `deviceId` | object | Object that defines the device identification information; includes the following parameters:<br> - `idfa`: The Apple advertising identifier for iOS devices running iOS 6+.<br> - `aaid`: The Google advertising identifier for Android devices as retrieved from Google Play services.<br> - `sha1udid`: The SHA1 hash of the `ANDROID_ID`.<br> - `md5udid`: The The MD5 hash of the `ANDROID_ID`.<br> - `windowsadid` - The Microsoft advertising identifier for Windows devices. |
 | `deviceType` | string | Specifies the type of device on which the ad will be shown (such as `phone` or `tablet`). |
+| `devHeight` | number | Indicates the device's physical height in pixels. |
+| `devWidth` | number |  Indicates the device's physical width in pixels. |
 | `useragent` | string | The user agent string from the device browser. |
 | `geo` | object | Object that defines the location of the device; includes the following parameters:<br> - `lat`: Device latitude (a number, such as `45.5`).<br> - `lng`: Device longitude (a number, such as `-122.7`).<br> - `country`: Country for the device. Uses the three-character [ISO 3166-1 alpha-3](https://www.iso.org/obp/ui/#iso:pub:PUB500001:en) codes.<br> - `region`: Device region.<br> - `city`: Device city.<br> - `zip`: Device ZIP code. |
 | `ip` | string | The device's IP address. |
@@ -187,6 +189,8 @@ Specifies a mobile device on which the ads will be shown.
 | `model` | string | The device make; for example, `iPhone`. |
 | `os` | string | The device operating system. |
 | `osVersion` | string | The version of the device operating system. |
+| `ppi` | number |  The number of pixels per inch (PPI) of the screen. |
+| `pxratio` | number | The ratio of physical pixels to device-independent pixels (DIPs).|
 | `carrier` | string | The carrier for the device. |
 | `connectionType` | number | The connection type:<br> - `0`: Unknown<br> - `1`: WiFi<br> - `2`: WAN |
 | `mcc` | string | The mobile country code, as specified by the ITU. |
@@ -203,9 +207,9 @@ Specifies a mobile device on which the ads will be shown.
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| `native` | object | Object that contains settings related to native types specifically. |
+| `native` | object | Object that contains settings related to native types specifically.|
 | `native.loadViewabilityScriptAt` | string | Permitted values:<br> - `impression`<br> - `adresponse` <br><br>**Default**: `adresponse`<br>The adresponse time is recorded when the ad is received by AST. It is the historical setting.<br><br>The new impression time is recorded closer to the impression event. This may be more desirable to certain publishers who rely on native viewability metrics. |
-| `userSync` | object | Object that contains settings related to the AST `userSync` feature. |
+| `userSync` | object | Object that contains settings related to the AST `userSync` feature.|
 
 ### RenderingManagement object
 
@@ -230,29 +234,7 @@ Specifies a mobile device on which the ads will be shown.
 Here's an example
 
 ```
-apntag.setPageOpts({
-    member: 958,
-    user: {
-        age: 25,
-        externalUid: '10',   
-                userIds: [{ "type": "criteo", "id": "_fl7bV96WjZsbiUyQnJlQ3g4ckh5a1N", }, // Criteo Identifier
-                  { "type": "ttd", "id": "00000111-91b1-49b2-ae37-17a8173dc36f" }, // Trade Desk Identifier
-                  { "type": "netid", "id": "999888777" }, // NetID Identifier
-                  { "type": "liveramp", "id": "AjfowMv4ZHZQJFM8TpiUnYEyA81Vdgg" }, //Liveramps's Identifier
-                  { "type": "uid2", "id": "234123424" }, //UID2's Identifier
-                  { "type": "extendedIDs", "eids": [{ "id": "abc123def345", "source": "mySampleDomain.com" }] }, // publisher first party IDs
-                ], 
-        segments: [1, 2],
-        gender: 0,
-        dnt: true,
-        language: 'EN'
-    }
-    keywords: {
-        genre: ['rock', 'pop']
-    },
-    disablePsa : true,
-    enableSafeFrame : true,
-    device : {
+device : {
         deviceId : {
             idfa : 'String',
             aaid : 'String',
@@ -278,27 +260,13 @@ apntag.setPageOpts({
         connectionType : 0,
         mcc : 'String',
         mnc : 'String',
-        devTime : 12345
+        devTime : 12345,
+        devHeight: 123,
+        devWidth: 234,
+        ppi: 111,
+        pxratio: 0.50
     },
-    auctionTimeout: 3000,
-    pageUrl: 'http://www.samplesite.com/testpage.html',
-    trackingManagement: {
-     native: {
-       loadViewabilityScriptAt: 'impression'
-     },
-    renderingManagement: {
-      insertWrapperDiv: true,
-      sandboxAdIframe: true,
-      sandboxAttributes: ['allow-same-origin', 'allow-scripts', 'allow-presentation']
-      },
-     userSync: {
-       syncEnabled: true,
-       syncDelay: 4000,
-       publisherId: 12345,
-       sellerId: 123
-      }
-     }
- });
+
 ```
 
 ### Geo override object
@@ -380,9 +348,7 @@ gpp_sid: [5]
 When AST detects TCF 2.0 it will rely on events generated by the CMP. The consent string will be retrieved when any of the following conditions are met:
 
 - The event generated is `useractioncomplete` or `tcloaded`.
-
 - The event generated is `cmpuishown` and `purposeOneTreatment` flag is set to `true` in the available TCF string.
-
 - The only event generated is `cmpuishown` and a time out occurs.
 
   In TCF v2.0 if the `gdprApplies` flag is set to `true` and Purpose One consent is not granted then AST will not include cookies in the `/ut` `POST` request.

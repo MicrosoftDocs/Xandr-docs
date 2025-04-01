@@ -27,7 +27,7 @@ This page contains a sample web page showing how Microsoft Advertising's Seller 
 
 For more details, see the [AST API Reference](ast-api-reference.md).
 
-> [!CAUTION]
+> [!IMPORTANT]
 >
 > Beyond the CDN change, we have recently updated the example setup code that loads the `ast.js` file. It now recommends including a `crossOrigin` property in the script element that loads the JavaScript library. We kindly ask that you include this additional code to help AST capture client-side errors related to the AST script.
 

@@ -96,7 +96,7 @@ Repeat the steps above for the **No** button, naming it `Consent Denied Click`.
 
 #### Example Consent-Granted Trigger
 
-:::image type="content" source="media/example-consent-granted-trigger.md" alt-text="Screenshot that shows the example of consent granted trigger.":::
+:::image type="content" source="media\example-consent-granted-trigger.png" alt-text="Screenshot that shows the example of consent granted trigger.":::
 
 ### Create custom HTML tags for consent updates  
 

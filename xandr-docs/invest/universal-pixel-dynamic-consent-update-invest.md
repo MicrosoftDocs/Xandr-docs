@@ -1,7 +1,8 @@
 ---
-title: Microsoft Invest - Dynamic consent updates for Universal Pixel 
+title: Microsoft Invest - Dynamic Consent Updates for Universal Pixel 
 description: Discover how to enable dynamic consent updates for Universal Pixel in Google Tag Manager with JavaScript triggers and event-driven interactions.
-ms.date: 04/1/2025
+ms.date: 03/04/2025
+ms.author: shsrinivasan
 ---
 
 # Microsoft Invest - Dynamic consent updates for Universal Pixel

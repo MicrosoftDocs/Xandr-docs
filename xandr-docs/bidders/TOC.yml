@@ -137,10 +137,16 @@
       href: selecting-the-correct-template-for-your-creative.md
     - name: VAST Check
       href: vast-check.md
-    - name: Native Ad Markup Bidding
-      href: native-ad-markup-bidding.md
-    - name: Banner Ad Markup Bidding
-      href: banner-ad-markup-bidding.md
+    - name: ADM bidding
+      items:
+      - name: Overview - ADM Bidding
+        href: ad-markup-adm-bidding.md
+      - name: Native 1.2 Ad Markup Bidding (ADM)
+        href: native-ad-markup-bidding.md
+      - name: Banner Ad Markup bidding (ADM)
+        href: banner-ad-markup-bidding.md
+      - name: Video Ad Markup Bidding (ADM)
+        href: video-ad-markup-bidding.md
   - name: Auction Configuration & Feedback
     items:
     - name: Simulate Traffic on a TinyTag

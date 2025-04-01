@@ -164,7 +164,7 @@ document.getElementById('consent-yes').addEventListener('click', function() {
 });
 ```
 
-## Create User Interaction Triggers in GTM  
+### Create User Interaction Triggers in GTM
 
 To track user interactions with your consent banner, create triggers in GTM that fire when users click **Yes** or **No**.  
 
@@ -178,7 +178,7 @@ To track user interactions with your consent banner, create triggers in GTM that
 6. Choose a condition operator and enter the **data layer event name** from your custom JavaScript function.  
 7. Name the trigger (for example, **Consent Granted Click**).  
 
-### Create a click trigger for "No"  
+#### Create a click trigger for "No"  
 
 Repeat the steps above for the **No** button (or its equivalent) and name the trigger (for example, **Consent Denied Click**).
 
@@ -186,7 +186,7 @@ Repeat the steps above for the **No** button (or its equivalent) and name the tr
 
 Create two Custom HTML tags in GTM to update the consent state based on user interaction.  
 
-### Custom HTML tag for granted consent
+#### Custom HTML tag for granted consent
 
 1. In GTM, go to **Tags** and create a new tag.  
 1. Select **Custom HTML Tag**.  

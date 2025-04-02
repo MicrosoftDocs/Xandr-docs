@@ -1563,7 +1563,7 @@
     - name: Impression Counting
       href: impression-counting.md
   - name: Monetize Historical Reporting 
-    href: monetize-historical-reprting.md    
+    href: monetize-historical-reporting.md    
   - name: Analytics Reporting
     items:
     - name: Network Reporting

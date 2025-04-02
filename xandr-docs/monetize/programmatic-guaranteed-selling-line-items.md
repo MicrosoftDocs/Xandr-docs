@@ -36,6 +36,11 @@ PG selling line items offer some of the following advantages:
 - MediaMath
 - The Trade Desk - **CTV only**
 - AdForm
+- Roku OneView
+- Bidtheatre
+- Adobe
+- Yahoo DSP
+- StackAdapt
 
 ## PG Deals for Microsoft Monetize ad server clients
 

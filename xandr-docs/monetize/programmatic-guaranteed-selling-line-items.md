@@ -33,7 +33,7 @@ PG selling line items offer some of the following advantages:
 
 - Microsoft Invest
 - Google DV360
-- MediaMath
+- Infillion (MediaMath)
 - The Trade Desk - **CTV only**
 - AdForm
 - Roku OneView

@@ -798,6 +798,8 @@
               href: set-up-consent-mode-in-universal-pixel.md
             - name: Transparency and Consent Framework (TCF) for Universal Pixel
               href: tcf-for-universal-pixel-monetize.md
+            - name: Universal Pixel - Dynamic Consent Update in Google Tag Manager
+              href: universal-pixel-dynamic-consent-update-monetize.md
             - name: Events and Parameters
               items:
                 - name: Using Events and Parameters

@@ -113,7 +113,7 @@ A line in your campaign can target or block one or more exchanges or available p
     > [!IMPORTANT]
     > Before targeting a deal to a line, register the deal. See the [Create a Deal](Yahoo-buying-guide.md#create-a-deal) section below to learn how to create new deals or search for existing deals in the Registered Deals Dashboard.
 
-1. Add the exchange or deal to the targeting criteria by clicking the **plus sign** next to the exchange or deal name.
+1. Add the exchange or deal to the targeting criteria by clicking the **plus sign** next to the exchange or deal name. The DSP then displays the selected exchange or deal in the field below the buttons.
 
    :::image type="content" source="media/exchanges-deals-targeting-criteria.png" alt-text="Screenshot that shows how to add the exchange or deal to the targeting criteria.":::.
 

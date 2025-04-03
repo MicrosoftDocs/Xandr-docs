@@ -34,7 +34,7 @@ To create your first campaign:
   
 1. To create a campaign manually, click the **New Campaign** button.
 
-   :::image type="content" source="media/yahoo-automative-advertiser.png" alt-text="Screenshot of the New Campaign button in Yahoo DSP.":::.
+   :::image type="content" source="media/yahoo-automotive-advertiser.png" alt-text="Screenshot explains how to creat a campaign manually.":::.
 
 1. Enter the campaign name in the **Campaign Name** field.
 1. To activate your campaign, move the **Status** slider to the right. If you no longer want the campaign to serve, move the slider back to the left.

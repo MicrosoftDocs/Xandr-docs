@@ -12,6 +12,7 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [1.10.3](https://adsdk.microsoft.com/ast/ast.js) | -  Add the new `setPageOpts` parameter, `loadOutstreamUpgradeUrl`. | 1 April 2025 |
 | [1.10.2](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 27 March 2025 |
 | [1.10.1](https://adsdk.microsoft.com/ast/ast.js) | - Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 25 March 2025 |
 | [1.10.0](https://adsdk.microsoft.com/ast/ast.js) | - Added support for `pxratio`, `height`, `width`, and `ppi` to device fields in AST. | 18 March 2025 |

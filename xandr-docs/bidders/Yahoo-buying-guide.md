@@ -54,7 +54,7 @@ To create your first campaign:
 
 You create and manage lines on the **Lines** list view.
 
-### To create your first line
+To create your first line:
 
 1. Select **Advertisers** on the left pane of DSP UI.
 

@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 Once inventory has been [Integrated with Prebid Server Premium (PSP)](integrate-with-psp.md), [Global Settings have been reviewed](add-or-edit-psp-global-settings.md), and [Demand Partners have been enabled](add-or-edit-a-demand-partner.md), inventory must be mapped to Demand Partners via PSP configurations. These mappings allow PSP to send bid requests with demand partners’ parameters so the partners can identify the inventory and better represent it to their buyers, increasing yield and honoring publisher settings such as floors and ad quality.
 
-- Each configuration targets a portion of publisher inventory in Monetize, either by a set of flexible targeting (geography, inventory type, key value, etc.) or by explicitly specifying Monetize objects (placement, placement group, publisher).  
+- Each configuration targets a portion of publisher inventory in Monetize based on one or more dimensions, such as placement, placement group, publisher, geography, inventory type, or key-value.
 - Each configuration includes one or more demand partners the publisher would like to bid on the inventory.  
 - Each demand partner specifies the required and optional parameters they want to receive in their open-source [Prebid Server Go adapter](https://docs.prebid.org/dev-docs/pbs-bidders.html), which are surfaced in PSP. These allow the partner to match the bid request to objects in their platform.  
 - Publishers fill out demand partner parameters with values mapped to objects in each partner’s platform, typically another supply-side platform (SSP).  
@@ -44,28 +44,10 @@ This section determines which publisher bid requests will initiate the PSP confi
 
 Select one or more ad formats (banner, video, native) to request from demand partners. If a bid request includes multiple formats, each demand partner will only receive requests for the [format(s) they support](prebid-server-premium-demand-partner-integrations.md). These selections will also filter the available demand partners in the next section to those that support at least one of the selected media types.
 
-#### Targeting method
-
-Select one of the options below which determine how the inventory is selected.
-
-- **Targeting Profile**: Also known as flexible configurations, using this method is strongly recommended as it offers the most control. A variety of targeting options such as geographic location, system, and key value can be used to specify which inventory is included.
-- **Placement, Placement Group, or Publisher**: This legacy option allows a single object (placement, placement group and all its placements, or a publisher and all its child objects) to be targeted. Each object (ID) can only be targeted in a single configuration.
-
 > [!NOTE]
-> **Auction configuration selection**:
+> **Auction configuration selection**
 >
-> Each auction only uses one PSP configuration and its set of demand partner parameters. If an auction matches multiple configurations, the configuration at the highest level of the hierarchy will be selected. The hierarchy from highest to lowest is:
->
-> 1. Targeting Profile (if available, any lower configurations are ignored)
-> 1. Placement
-> 1. Placement Group
-> 1. Publisher
->
-> When multiple Targeting Profile configurations are eligible, the user-defined **Priority** setting of the configuration is used to determine which configuration to use. When multiple Targeting Profile configurations of the same Priority are present, the configuration with the higher (more recent) ID will be used in the auction.
-
-### Targeting profile options (recommended)
-
-After setting the **Targeting Method** as **Targeting Profile**, proceed with the optional targeting described below.
+> Each auction only uses one PSP configuration and its set of demand partner parameters. If an auction matches multiple configurations, the user-defined Priority setting of the configuration is used to determine which configuration to use. When multiple Targeting Profile configurations of the same Priority are present, the configuration with the higher (more recent) ID will be used in the auction.
 
 #### Targeting profile description
 
@@ -113,22 +95,6 @@ Select bid requests based on varying granularities of geographic targeting, such
 
 After applying all desired targeting, proceed to the **Demand Partners** section below.
 
-## Placement, placement group, publisher options (legacy alternative to Targeting Profile)
-
-After setting the **Targeting Method** as **Placement**, **Placement Group**, or **Publisher**:
-
-1. Click into the box to select from a list of available objects in the Monetize seat, or type within the box to search by object name or ID.
-1. Click to choose the desired object (placement, placement group, or publisher) to associate with the configuration. All bid requests for this object (and any child objects) will initiate this configuration and send its parameters to demand partners.
-1. Optionally, limit which bid requests are sent to demand partners by the dimensions below, then proceed to the Demand Partners section below.
-
-### Banner Ad size targeting (Legacy)
-
-To restrict which banner bid requests demand partners receive by the size of the ad slot, click the selection field to view a list of options. Sizes must first be defined in **Monetize** -> **Network** -> **Tools** -> **General** -> **Custom Sizes** -> **Manage Custom Sizes** via the [Creative Manager](https://monetize.xandr.com/creative-sizes).
-
-#### Operating systems targeting (Legacy)
-
-To restrict which bid requests demand partners receive by the operating system of the user, click the selection field to view a list of options. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md).
-
 ## Demand partners
 
 For a demand partner to receive bid requests for the inventory defined in the section above, they must be added to the configuration. While there is no technical limit to the number of partners that can be included in a configuration, the more partners there are, the lower their win rates tend to be, and some may start to bid less often if at all. Best practice is to start testing with 3 to 4 demand partners then gradually add more, while [continuously optimizing](prebid-server-premium-analytics.md) and removing any under-performing partners.
@@ -160,7 +126,7 @@ Once live, review [Prebid Server Premium Analytics](prebid-server-premium-analyt
 
 ## Run of site configurations
 
-To ensure any inventory not captured by other configurations is sent to demand partners, consider creating a run-of-site or fallback configuration where the **Targeting Method** is **Targeting Profile** with no other, or limited geographic targeting, applied. **Before enabling such a configuration**, ensure:
+To ensure any inventory not captured by other configurations is sent to demand partners, consider creating a run-of-site or fallback configuration with no or limited geographic targeting, where the **Targeting Method** is set to **Targeting Profile**. **Before enabling such a configuration**, ensure:
 
 - **Demand partner parameters** are populated; otherwise, no bid requests will be sent.
 - **Configuration priority level** is set to 1 or another low value.

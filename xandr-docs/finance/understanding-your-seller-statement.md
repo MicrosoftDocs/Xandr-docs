@@ -18,13 +18,14 @@ platform, you receive a monthly statement indicating the amount of revenue you h
 > If you selling activity incurs ad serving charges and/or your contracted terms with Microsoft Advertising has the Seller Auction Service Charge set as a Fee instead of a Deduction, you will also receive an invoice from Microsoft Advertising. For details on seller-specific charges that can appear on an invoice, see [Understanding Your Invoice](understanding-your-invoice.md).
 
 ## Seller activity statement
+This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
 
-This document provides you with seller revenue earned during the prior
+<!--This document provides you with seller revenue earned during the prior
 month. You can view the supporting data by running the Selling Billing
 Report in the UI. Your Seller Activity Statement will be automatically
 emailed to the individual within your organization who is responsible
 for seller activity. If you have any questions, contact
-Microsoft Advertising Client Finance: [billing@xandr.com](mailto:billing@xandr.com).
+Microsoft Advertising Client Finance: [billing@xandr.com](mailto:billing@xandr.com).-->
 
 Here's an example of what a what a typical seller statement looks like:
 

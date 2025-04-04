@@ -40,8 +40,11 @@ The **Proceed as Guest** option is no longer available. To create a case, set up
 
 ## Can I continue accessing the legacy portal?
 
-You can continue accessing the [legacy portal](https://help.xandr.com/) for the next few months. However, we recommend transitioning to the new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
+The [legacy portal](https://help.xandr.com/) will become read-only starting April 8, 2025, and will be fully retired at the end of June 2025. Please use the new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com)  to create and track new cases going forward.
 
+<!--
+You can continue accessing the [legacy portal](https://help.xandr.com/) for the next few months. However, we recommend transitioning to the new [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) as soon as possible, as the legacy portal will be phased out and will no longer be available. If you have no active cases in the legacy portal, we strongly encourage using the new portal to create and track new cases.
+-->
 <!--
 
 Here are a few of our most frequently asked questions about the Customer Support Portal.

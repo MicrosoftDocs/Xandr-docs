@@ -77,7 +77,6 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Ukrainian Hryvnia (UAH) | X |  |
 | United Arab Emirates Dirham (AED) | X |  |
 | United States Dollar (USD) | X | X |
-| Vietnamese Dong (VND) | X | X |
 
 - **Transaction Currency** is the currency used to buy or sell inventory on the platform.
   - For Buyers, this is set at the Line Item level (or inherited from the network/member or Insertion Order level if not explicitly set at the Line Item).

@@ -7,6 +7,13 @@ ms.date : 11/27/2024
 
 # Android SDK release notes
 
+## 9.5.0
+
+### Improvement/Bug Fixes
+
+- **9160938**: Roll back OMSDK to v1.4.9 to fix an NPE on `isDeviceLocked`.  
+- **9171077**: Update and add support for new ImpBus endpoints used by the SDK to improve functionality and performance.  
+
 ## 9.4.1
 
 ### Improvement/Bug Fixes

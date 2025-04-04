@@ -15,7 +15,8 @@ As a member who sells inventory on Microsoft Advertising's platform, you receive
 
 ## Seller activity statement
 
-This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact [Microsoft Advertising Client Finance](mailto:billing@xandr.com).
+This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
+<!--Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact [Microsoft Advertising Client Finance](mailto:billing@xandr.com).-->
 
 Here's an example of what a what a typical seller statement looks like:
 
@@ -55,6 +56,8 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 > You only receive a Netting Statement if you conduct both buying and selling activity with Microsoft Advertising, have contractually agreed to netting, and notified the Client Finance team to enable netting for your account.
 
 This monthly document lists the amount of revenue you have earned as a seller as well as your activity as a buyer. Microsoft Advertising then deducts the amount that you owe as a buyer from the revenue you have earned as a seller to determine the amount you will be paid or that you owe.
+
+To have newly added seats included in your netting calculation, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
 
 To have newly added seats included in your netting calculation, contact [Microsoft Advertising Client Finance](mailto:billing@xandr.com).
 

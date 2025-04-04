@@ -15,7 +15,9 @@ As a member who sells inventory on Microsoft Advertising's platform, you receive
 
 ## Seller activity statement
 
-This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact Microsoft Advertising Client Finance: [Billing](mailto:billing@xandr.com).
+This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
+
+<!--Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact Microsoft Advertising Client Finance: [Billing](mailto:billing@xandr.com).-->
 
 Here's an example of what a what a typical seller statement looks like:
 

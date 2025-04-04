@@ -10,7 +10,7 @@ To serve on the Microsoft Advertising platform and other third-party platforms, 
 
 Adhere to these general specifications when creating video creatives:
 
-- The file size limit is 1 GB for hosted video creatives.
+- The file size limit is 1.8 GB for hosted video creatives.
 - The recommended minimum bit rate is 2500kbps.
 - The recommended minimum video dimensions are 1280px x 720px.
 - The video creative must be created using one of the following file types: 3G2 (3GPP2), 3GP (3GPP), Advanced Systems Format (ASF), Audio Video Interactive (AVI), F4A, F4B, F4P, F4V, FLV, M2V, M4V, MKV, MOV, M4P, MPE, MPEG, MPEG-2 (MP2), MPEG-4 (MP4), MPG, MPV, OGG, OGV, QuickTime (QT), RM, SWF, TS, VOB, WebM, and Windows Media Video (WMV).

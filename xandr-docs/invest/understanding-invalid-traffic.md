@@ -32,6 +32,8 @@ On receipt of the a buyer's report, Client Finance takes the following steps:
 
 Adjustments related to invalid traffic will be quoted on the Seller Remittance Statement, which is sent to the seller when the associated revenue payment is released to them based on the contractual payment terms.
 
-To obtain information on invalid traffic adjustment amounts sooner, the seller can submit a Client Finance case or email [billing@xandr.com](mailto:billing@xandr.com) after the 15th of the month following the activity period in question.
+To obtain information on invalid traffic adjustment amounts sooner, the seller can login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Other billing and financial requests" as the topic after the 15th of the month following the activity period in question.
+
+<!-- To obtain information on invalid traffic adjustment amounts sooner, the seller can submit a Client Finance case or email [billing@xandr.com](mailto:billing@xandr.com) after the 15th of the month following the activity period in question.-->
 
 To dispute the invalid traffic amount claimed by a buyer, the seller may contact the representative or verification partner responsible for the relationship.

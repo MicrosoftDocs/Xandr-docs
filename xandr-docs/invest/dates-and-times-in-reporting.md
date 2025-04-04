@@ -10,6 +10,9 @@ This page explains how our reporting system handles time and date considerations
 
 ## Time zones
 
+> [!NOTE]
+> If you have signed a new contract with Microsoft Advertising and completed the cutover, your billing data is in UTC. Customers who migrate in the future also have their billing data set to UTC. Please ensure to adjust your reporting time period to UTC for continued compatibility with billing data when pulling all future reports.
+
 Currently, most time zones for Microsoft Invest objects are set to Eastern U.S. time by default (UTC - 4 hours or UTC - 5 hours, depending on daylight savings). You can change this time zone for your entire network/member, or for individual advertisers.
 
 - You can select a different time zone for any report using the **Timezone** menu (under **Basic**).

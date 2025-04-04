@@ -1,13 +1,15 @@
 ---
 title: Finance - Getting Paid
-description: This article explains about the process for receiving prompt payment from Microsoft Advertising. The payment is done within a fixed period of time.
+description: This article in the Finance module explains about the process for receiving prompt payment from Microsoft Advertising. The payment is done within a fixed period of time.
 ms.date: 10/28/2023
 ms.custom: finance
 ---
 
 # Finance - Getting paid
 
-In order to receive prompt payment from Microsoft Advertising, you must submit your banking details to your Microsoft Advertising representative upon signing your contract. To update your banking details, contact Client Finance at [billing@xandr.com](mailto:billing@xandr.com).
+In order to receive prompt payment from Microsoft Advertising, you must submit your banking details to your Microsoft Advertising representative upon signing your contract. To update your banking details, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
+
+<!--In order to receive prompt payment from Microsoft Advertising, you must submit your banking details to your Microsoft Advertising representative upon signing your contract. To update your banking details, contact Client Finance at [billing@xandr.com](mailto:billing@xandr.com).-->
 
 Microsoft Advertising pays you within a fixed period of time (e.g. Net 60, Net 90) from the last day of the month in which the reselling activity occurs (so long as the total is at least $50 for that month). If reselling activity for a given month is under $50, we'll hold payment until you are able to compound at least $50. Once you have compounded in excess of $50 in resold revenue, we'll transfer the full amount to the bank account that we have on file.
 

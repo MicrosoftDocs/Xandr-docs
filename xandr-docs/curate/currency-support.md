@@ -75,7 +75,6 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Taiwan Dollar (TWD) | X | X |
 | Ukrainian Hryvnia (UAH) | X |  |
 | United States Dollar (USD) | X | X |
-| Vietnamese Dong (VND) | X | X |
 | South African Rand (ZAR) | X |  |
 
 - **Transaction Currency** is the currency used to buy or sell inventory on the platform.

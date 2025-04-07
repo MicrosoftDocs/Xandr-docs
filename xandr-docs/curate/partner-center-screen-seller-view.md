@@ -27,9 +27,9 @@ For step-by-step instructions on customizing your profile, see [Customize Your S
 
 You can establish default buyer eligibility, allowed payment types, and targeting access settings for all demand partners within the **Default Settings** dialog.
 
-For step-by-step instructions on setting your default settings, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+For step-by-step instructions on setting your default settings, see [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-buyer-eligibility-payment-types-targeting.md).
 
-It is possible to override these settings for individual demand partners. For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+It is possible to override these settings for individual demand partners. For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-targeting.md).
 
 ## Set default buyer eligibility
 
@@ -90,7 +90,7 @@ See [Partnership Details Screen - Seller View](partnership-details-screen-seller
 
 ## Related topics
 
-- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md)
+- [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-targeting.md)
 - [Manage Relationships with Buyers](managing-relationships-with-buyers.md)
 - [Partnership Details Screen - Seller View](partnership-details-screen-seller-view.md)
-- [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md)
+- [Set Default Buyer Eligibility, Allowed Payment Types, and Targeting Access](set-buyer-eligibility-payment-types-targeting.md)

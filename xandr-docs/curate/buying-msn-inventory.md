@@ -58,7 +58,7 @@ To target MSN.com inventory:
 1. Select **Add Domains** to add it to the included domains list.
 1. Select **Add**.
 
-For instructions on how to target the MSN app, see [Buy Microsoft Windows App Ad Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
+For instructions on how to target the MSN app, see [Buy Microsoft Windows App Ad Inventory](buying-windows-3p-appnetwork.md)
 
 ## More questions?
 

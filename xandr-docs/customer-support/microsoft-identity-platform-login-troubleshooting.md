@@ -1,11 +1,11 @@
 ---
-title: Customer Support Portal - Microsoft Identity Platform Login Troubleshooting
-description: In this article, explore the different scenarios in which users might have questions while setting up the Microsoft Identity Platform login account.
-ms.date: 11/11/2024
+title: Customer Support Portal - Troubleshoot Microsoft Identity Platform Login
+description: Explore the different scenarios in which users might have questions while setting up the Microsoft Identity Platform login account.
+ms.date: 11/12/2024
 ms.author: shsrinivasan
 ---
 
-# Customer Support Portal - Microsoft Identity Platform login troubleshooting
+# Customer Support Portal - Troubleshoot Microsoft Identity Platform login
 
 This document outlines some scenarios where questions may arise in the minds of users while using Microsoft Identity Platform.
 
@@ -32,13 +32,9 @@ Currently Microsoft Advertising APIs do not support Microsoft credentials. To vi
 
 For improved security, Microsoft Advertising discourages the use of shared credential or user accounts. When access is associated with a single person, it helps in easier access management and robust auditing.
 
-Microsoft Advertising suggests updating the account's email address to that of an individual person with the Microsoft Advertising User Manager, or by contacting your Microsoft Advertising Account Representative or Microsoft Advertising Support. <!-- at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).-->
-
 ## I don't see all the accounts I have access to in the Seat Switcher or Account Settings page
 
 This scenario signifies that the email or user principal name used to sign in to Microsoft does not match the user or account you are looking for. Troubleshooting of this issue requires updating the users registered in the Microsoft Advertising platform to match the email address or user principle name that you use to sign into Microsoft.
-
-You can contact the designated person with the role of **User Manager** in your seat to update the email ID of your user on your behalf. If you are not aware of the User Manager, you can contact your Microsoft Advertising Account Representative or Microsoft Advertising Support. <!-- at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).-->
 
 ## Microsoft Identity Platform says I must have an admin consent to permissions and won't let me sign in
 

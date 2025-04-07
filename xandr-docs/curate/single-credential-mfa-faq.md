@@ -63,4 +63,4 @@ Product Support can reset the users MFA account via the single credential login 
 
 ## Related topic
 
-[Troubleshooting Multi-Factor Authentication (MFA)](troubleshooting-multi-factor-authentication-mfa.md)
+[Troubleshooting Multi-Factor Authentication (MFA)](troubleshooting-mfa.md)

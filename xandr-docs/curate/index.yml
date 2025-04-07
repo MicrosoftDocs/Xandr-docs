@@ -87,7 +87,7 @@ landingContent:
       - linkListType: concept
         links:            
           - text: Ad Viewability - Description of Methodology (DOM)
-            url: ad-viewability-description-of-methodology-dom.md
+            url: ad-methodology-dom.md
       - linkListType: overview
         links:
           - text: Measurement of Video Viewability using VPAID Wrapper

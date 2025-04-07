@@ -36,7 +36,7 @@ Use the following documentation to learn more about buying specific Microsoft in
 
   Over 1.4 billion monthly US display impressions, available in 38 markets.
 
-- [Buy Microsoft Windows 3rd Party AppNetwork Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md)
+- [Buy Microsoft Windows 3rd Party AppNetwork Inventory](buying-windows-3p-appnetwork.md)
 
   Over 300 million monthly global impressions.
 
@@ -48,6 +48,6 @@ Use the following documentation to learn more about buying specific Microsoft in
 
   Browse Microsoft's pre-made combinations of inventory and/or data and immediately convert them into deals or use them as a starting point for custom deal negotiations.
 
-- [Buy Microsoft Casual Games (Windows O&O Apps)](buying-microsoft-casual-games-windows-o-o-apps.md)
+- [Buy Microsoft Casual Games (Windows O&O Apps)](buy-microsoft-casual-games-windows-apps.md)
 
   Over 2.63 billion monthly global impressions, available in 169 markets.

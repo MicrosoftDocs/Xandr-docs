@@ -5,7 +5,6 @@ ms.date: 11/15/2023
 
 ---
 
-
 #  Microsoft Curate - vCPM payment type
 
 Viewable CPM (vCPM) is a payment type that allows buyers to pay only for impressions that are measured "viewable" (read our [Introduction to Viewability](introduction-to-viewability.md) for more information on viewability measurement). vCPM is similar to CPC and CPA payment types in that the impression does not incur a cost until a post-auction event occurs. For vCPM, the post-auction event is a signal that the impression was viewable. Once that event is received, the buyer will pay the full value of the vCPM bid.

@@ -16,11 +16,11 @@ Network users have access to various areas and functionality of your Network bas
 
 ### Get started
 
-Go to **Admin** > **User Management**. This brings up the **Member Users** screen. Select the **+ New** button to open the **Create User** dialog.
+Go to **Admin** > **User Management**. The **Member Users** screen appears. Select the **+ New** button to open the **Create User** dialog.
 
 ### Enter contact information
 
-From the **User Details** tab, enter the user's **Contact Information**. The email ID is enetered here will be the primary username for signing into the Microsoft Advertising products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Microsoft Advertising platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
+From the **User Details** tab, enter the user's **Contact Information**. The **email ID** is enetered here will be the primary username for signing into the Microsoft Advertising products via the Microsoft Identity Platform. Ensure the email is consistent across any accounts in the Microsoft Advertising platform, and matches the user's email for authenticating to Microsoft products. For more details, visit [Microsoft Identity Platform Login](microsoft-identity-platform-login.md).
 If the State is set to **Inactive**, the user will not be able to log in.
 
 ### Select number formats

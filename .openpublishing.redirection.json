@@ -149,6 +149,51 @@
         "source_path": "xandr-docs/monetize/view-legacy-insertion-order-details.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-insertion-orders",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/view-legacy-insertion-order-details.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-insertion-orders",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/curate/ad-viewability-description-of-methodology-dom.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/ad-methodology-dom",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/curate/buying-microsoft-casual-games-windows-o-o-apps.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/buy-microsoft-casual-games-windows-apps",
+        "redirect_document_id": false   
+        },
+        {
+        "source_path": "xandr/curate/buying-microsoft-windows-3rd-party-appnetwork-inventory.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/buying-windows-3p-appnetwork",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr/curate/edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/edit-buyer-eligibility-payment-targeting",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr/curate/set-default-buyer-eligibility-allowed-payment-types-and-targeting-access.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/set-buyer-eligibility-payment-types-targeting",
+        "redirect_document_id": false  
+        },
+        {
+        "source_path": "xandr/curate/single-credential-login-and-multi-factor-authentication-faq.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/set-buyer-eligibility-payment-types-targeting",
+        "redirect_document_id": false  
+        },
+        {
+        "source_path": "xandr/curate/single-credential-login-and-multi-factor-authentication-mfa.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/single-credential-login-mfa",
+        "redirect_document_id": false   
+        },
+        {
+        "source_path": "xandr/curate/troubleshooting-multi-factor-authentication-mfa.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/troubleshooting-mfa",
+        "redirect_document_id": false   
         }
-    ]
-}
+      ]
+    }

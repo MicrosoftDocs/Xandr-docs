@@ -59,4 +59,4 @@ Many applications (Microsoft Advertising and other vendors, web/desktop/mobile) 
 
 ## Related topic
 
-[Single Credential Login and Multi-Factor Authentication FAQ](single-credential-login-and-multi-factor-authentication-faq.md)
+[Single Credential Login and Multi-Factor Authentication FAQ](single-credential-mfa-faq.md)

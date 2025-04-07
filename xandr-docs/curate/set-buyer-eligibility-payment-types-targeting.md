@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 On the **Partner Center** screen, the **Default Settings** option allows you to establish default buyer eligibility, allowed payment types, and targeting access for all buyers. It is possible to override these settings for individual buyers.
 
-For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-allowed-payment-types-and-targeting-access.md).
+For details, see [Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access](edit-buyer-eligibility-payment-targeting.md).
 
 ## Access Partner Center screen
 

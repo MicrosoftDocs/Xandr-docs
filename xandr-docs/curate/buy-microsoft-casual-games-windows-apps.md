@@ -25,7 +25,7 @@ The Microsoft Solitaire Collection remains the most played computer game of all 
 
 **Home screen** - Below the fold, at the bottom of the first menu screen.
 
-:::image type="content" source="media/solitairehome.png" alt-text="Screenshot of Microsoft Solitaire home screen.":::
+:::image type="content" source="media/solitairehome.png" alt-text="Screenshot that explains Microsoft Solitaire home screen.":::
 
 **Sub-screens** - Above the fold, right side of sub menu screens.
 

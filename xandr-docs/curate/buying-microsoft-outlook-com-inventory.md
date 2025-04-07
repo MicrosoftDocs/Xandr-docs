@@ -48,7 +48,7 @@ To target Outlook.com inventory,
 1. Select **Add Domains** to add it to the included domains list.
 1. Select **Add**.
 
-For instructions on how to target the Outlook app, see [Buy Microsoft Windows App Inventory](buying-microsoft-windows-3rd-party-appnetwork-inventory.md).
+For instructions on how to target the Outlook app, see [Buy Microsoft Windows App Inventory](buying-windows-3p-appnetwork.md).
 
 > [!IMPORTANT]
 > For more information on how to add a Microsoft Outlook versatile creative, see [Add a Microsoft Outlook versatile creative](../industry-reference/add-a-microsoft-outlook-versatile-creative.md).

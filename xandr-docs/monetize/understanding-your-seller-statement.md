@@ -50,7 +50,7 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 
 :::image type="content" source="media/seller-remittance-statement-sanitized.png" alt-text="Screenshot of a typical seller remittance statement with annotations.":::
 
-## Netting statment
+## Netting statement
 
 > [!NOTE]
 > You only receive a Netting Statement if you conduct both buying and selling activity with Microsoft Advertising, have contractually agreed to netting, and notified the Client Finance team to enable netting for your account.
@@ -58,8 +58,6 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 This monthly document lists the amount of revenue you have earned as a seller as well as your activity as a buyer. Microsoft Advertising then deducts the amount that you owe as a buyer from the revenue you have earned as a seller to determine the amount you will be paid or that you owe.
 
 To have newly added seats included in your netting calculation, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
-
-To have newly added seats included in your netting calculation, contact [Microsoft Advertising Client Finance](mailto:billing@xandr.com).
 
 1. **Client Information** - This includes the client name and address.
 

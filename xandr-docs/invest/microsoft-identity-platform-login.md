@@ -25,6 +25,7 @@ Currently, following Microsoft Advertising products support authentication using
 - Microsoft Monetize
 - Microsoft Invest
 - Microsoft Curate
+- Microsoft Advertising Customer Support Portal
 
 Following Microsoft Advertising products are not supported on the Microsoft Identity Platform currently, but soon will be migrated:
 
@@ -32,7 +33,7 @@ Following Microsoft Advertising products are not supported on the Microsoft Iden
 - Impression Bus API
 - Yield Analytics
 - Bidder Platform
-- Microsoft Advertising Customer Support Portal
+
 
 Features that yet to be supported by Microsoft Advertising are:
 

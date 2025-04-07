@@ -18,7 +18,7 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ## Specifications for hosted VAST video creatives
 
-- **Max Video File Size**: 100MB
+- **Max Video File Size**: 180 MB
 - **Minimum Bit Rate**: 2500kbps
 - **Minimum Size**: 1280x720px
 - **File Types**: x-flv, mp4, webm, x-ms-wmv, ogg, x-msvideo, mpeg, quicktime, 3gpp, 3gpp2, x-m4v
@@ -28,14 +28,19 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ## Add a creative
 
-- [Step 1: Get started](#step-1-get-started)
-- [Step 2: Upload the file](#step-2-upload-the-file)
-- [Step 3: Preview the creative](#step-3-preview-the-creative)
-- [Step 4: Define the creative content](#step-4-define-the-creative-content)
-- [Step 5: Select audit options](#step-5-select-audit-options)
-- [Step 6: Add companion banner creatives (optional)](#step-6-add-companion-banner-creatives-optional)
-- [Step 7: Attach third-party tracking pixels (optional)](#step-7-attach-third-party-and-segment-tracking-pixels-optional)
-- [Step 8: Save the creative](#step-8-save-the-creative)
+- [Microsoft Monetize - Upload a hosted video creative](#microsoft-monetize---upload-a-hosted-video-creative)
+  - [Subscribing to video creative hosting](#subscribing-to-video-creative-hosting)
+  - [Specifications for hosted VAST video creatives](#specifications-for-hosted-vast-video-creatives)
+  - [Add a creative](#add-a-creative)
+    - [Step 1. Get started](#step-1-get-started)
+    - [Step 2. Upload the file](#step-2-upload-the-file)
+    - [Step 3. Preview the creative](#step-3-preview-the-creative)
+    - [Step 4. Define the creative content](#step-4-define-the-creative-content)
+    - [Step 5. Select audit options](#step-5-select-audit-options)
+    - [Step 6. Add companion banner creatives (optional)](#step-6-add-companion-banner-creatives-optional)
+    - [Step 7. Attach third-party and segment tracking pixels (optional)](#step-7-attach-third-party-and-segment-tracking-pixels-optional)
+    - [Step 8. Save the creative](#step-8-save-the-creative)
+  - [Related topics](#related-topics)
 
 ### Step 1. Get started
 

@@ -47,7 +47,7 @@ Select one or more ad formats (banner, video, native) to request from demand par
 > [!NOTE]
 > **Auction configuration selection**
 >
-> Each auction only uses one PSP configuration and its set of demand partner parameters. If an auction matches multiple configurations, the user-defined Priority setting of the configuration is used to determine which configuration to use. When multiple Targeting Profile configurations of the same Priority are present, the configuration with the higher (more recent) ID will be used in the auction.
+> Each auction only uses one PSP configuration and its set of demand partner parameters. If an auction matches multiple configurations, the user-defined Priority setting of the configuration is used to determine which configuration to use. When multiple configurations of the same Priority are present, the configuration with the higher (more recent) ID will be used in the auction.
 
 #### Targeting profile description
 
@@ -126,7 +126,7 @@ Once live, review [Prebid Server Premium Analytics](prebid-server-premium-analyt
 
 ## Run of site configurations
 
-To ensure any inventory not captured by other configurations is sent to demand partners, consider creating a run-of-site or fallback configuration with no or limited geographic targeting, where the **Targeting Method** is set to **Targeting Profile**. **Before enabling such a configuration**, ensure:
+To ensure any inventory not captured by other configurations is sent to demand partners, consider creating a run-of-site or fallback configuration with no other, or limited geographic targeting, applied. **Before enabling such a configuration**, ensure:
 
 - **Demand partner parameters** are populated; otherwise, no bid requests will be sent.
 - **Configuration priority level** is set to 1 or another low value.

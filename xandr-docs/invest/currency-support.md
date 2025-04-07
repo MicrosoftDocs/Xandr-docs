@@ -39,12 +39,12 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Chilean Peso (CLP) | X |  |
 | Chinese Yuan (CNY) | X |  |
 | Colombian Peso (COP) | X |  |
-| Czech Koruna (CZK) | X | X |
+| Czech Koruna (CZK) | X | |
 | Danish Krone (DKK) | X | X |
 | Egyptian Pound (EGP) | X |  |
 | Euro (EUR) | X | X |
 | Hong Kong Dollar (HKD) | X | X |
-| Hungarian Forint (HUF) | X | X |
+| Hungarian Forint (HUF) | X | |
 | Indian Rupee (INR) | X | X |
 | Indonesian Rupiah (IDR) | X | X |
 | Israeli Shekel (ILS) | X |  |
@@ -68,13 +68,14 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | South Korean Won (KRW) | X |  |
 | Swedish Krona (SEK) | X | X |
 | Swiss Franc (CHF) | X | X |
-| Taiwan Dollar (TWD) | X | X |
+| Taiwan Dollar (TWD) | X | |
 | Thai Baht (THB) | X | X |
 | Tunisian Dinar (TND) | X |  |
 | Turkish Lira (TRY) | X | X |
 | Ukrainian Hryvnia (UAH) | X |  |
 | United Arab Emirates Dirham (AED) | X |  |
 | United States Dollar (USD) | X | X |
+| Vietnamese Dong (VND) | X | |
 
 - **Transaction Currency** is the currency used to buy or sell inventory on the platform.
   - For Buyers, this is set at the Line Item level (or inherited from the network/member or Insertion Order level if not explicitly set at the Line Item).

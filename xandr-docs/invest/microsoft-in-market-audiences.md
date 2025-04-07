@@ -10,12 +10,20 @@ Microsoft In-market Audiences are curated lists of users determined to be in mar
 
 In-market Audiences are global, and available in more than 90 markets. Take a look at this [up-to-date list](https://download.microsoft.com/download/4/0/0/40099106-6f9f-4b38-8aac-0dc7567404db/In-Market-Audiences-segment-list-Invest.xlsx) for all the available in-market audience segments.
 
-## Set up Microsoft segment targeting on a line item
+## Set up Microsoft segment targeting on a Line item
 
-1. Select on the **Audience & Location Targeting** subsection option on the left pane within the **Create New Line Item** screen or **Edit Line Item** screen.
-1. An **Audience and Location Segments** panel is displayed on the right. Now, select on **Microsoft** from the targeting model.
+1. Select the **Audience & Location Targeting** subsection option on the left pane within the **Create New Line Item** screen or **Edit Line Item** screen.
+1. An **Audience and Location Segments** panel is displayed on the right. Now, select **Microsoft** from the targeting modal.
 1. Select a segment on the left to start building your audience.
-1. Select **Save**.
+
+## Set up Microsoft segment targeting on a split
+1. Select a split by checking the box next to it to edit the **Targeting** 
+1. In the **Edit Split** pane, choose **Segments** from the **Select Targeting** dropdown menu.
+1. Select the **Microsoft** tab to view available audiences.
+    > [!NOTE]
+    > If the **Microsoft** tab isn't visible, click the **horizontal ellipsis** icon and select **Microsoft** from the dropdown menu.
+1. Select a segment on the left to start building your audience.
+1. Click **Apply**.
 
 ## Special considerations for Microsoft In-Market audiences
 

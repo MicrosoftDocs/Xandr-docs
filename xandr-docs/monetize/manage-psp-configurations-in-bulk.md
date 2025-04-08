@@ -15,17 +15,6 @@ Follow these steps to create new PSP configurations in bulk:
 1. In the Monetize UI, go to the **Publishers** menu and click **Prebid Server Premium**. This loads the default **Demand Partner Configurations**.
 1. In the left navigation pane, click **Bulk Upload New Configurations**.
 
-**Configuration filters**
-
-These optional configuration settings may also be included:
-
-| Options | Settings |
-|--|--|
-| **Operating System (OS)** | To set the operating system for the configuration, click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Microsoft Advertising detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
-| **Ad Size Selection** | To specify which ad sizes will be allowed for this configuration, click in the **Ad Size Selection** field and select some ad sizes, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when the auction includes one of the selected ad sizes. The **Ad Size Selection** menu includes all standard sizes as well as any custom sizes saved to the Monetize member seat.<br>Follow these steps to add new custom sizes:<br>- Select **Network** > **Tools** > **General** from the top menu. This will display the **Tools: General** page.<br> - Select **Custom Sizes** from the horizontal sub-menu.<br> - Click the **New custom size** button. This will display the **Custom Size Details** popover.<br> - Enter values for **Width** and **Height** text fields, and select the check box to mark this as a standard size.<br> - Click the **Save** button. |
-
-If these optional settings are left blank, then any auction for the selected Placement/Placement Group/Publisher ID will trigger the corresponding PSP configuration to be used in the auction and enable PSP to call the associated Demand Partners.
-
 **Add a demand partner**
 
 1. Type to search or **select a demand partner** from the **Select a Demand Partner** dropdown.
@@ -50,7 +39,7 @@ If these optional settings are left blank, then any auction for the selected Pla
 **Populate template**
 
 1. Open the template and populate each row, representing one configuration, with the information requested for each column.
-1. Configuration Mapping Object ID is the ID of the placement, placement group, or publisher to be mapped to the demand partner in each row. Each mapping object ID can only be associated with one PSP configuration.
+1. The Configuration Targeting ID is the line item ID in the response from the PSP [campaign objects service](../digital-platform-api/campaign-object-service.md). The targeting of this PSP line item determines which bid requests trigger the PSP configuration and call the associated demand partners in this row. Each Targeting ID can be associated with one configuration.
 1. Each demand partner and its selected (required + any optional chosen) parameters are represented as an additional section of columns to the right.
 1. Each demand partner and its parameter columns can only appear once per row. Additional values for the same demand partner must be applied on a separate row which represents a separate PSP configuration.
 
@@ -75,17 +64,6 @@ Follow below steps to add demand partners to PSP configurations in bulk:
 
 1. Select the **Actions** menu \> **Bulk Add Demand Partner to Configurations**.
 
-**Configuration filters**
-
-These optional configuration settings may also be included:
-
-| Options | Settings |
-|--|--|
-| **Operating System (OS)** | To set the operating system for the configuration, click in the **Search OS** text field and select an OS, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when Microsoft Advertising detects the corresponding OS from the user's device in the auction. For more information, see the [Operating System-Families API Service](../digital-platform-api/operating-system-families-service.md). |
-| **Ad Size Selection** | To specify which ad sizes will be allowed for this configuration, click in the **Ad Size Selection** field and select some ad sizes, or type in the field to see filtered options. This will ensure the PSP configuration is utilized (PSP demand partners are sent ad requests) only when the auction includes one of the selected ad sizes. The **Ad Size Selection** menu includes all standard sizes and any custom sizes saved to the Monetize member seat.<br>Follow these steps to add new custom sizes:<br> - Select **Network** > **Tools** > **General** from the top menu. This will display the **Tools: General** page.<br> - Select **Custom Sizes** from the horizontal sub-menu.<br> - Click the **New custom size** button. This will display the **Custom Size Details** popover.<br> - Enter values for **Width** and **Height** text fields and click the check box to make this a standard size.<br> - Click the **Save** button. |
-
-If these optional settings are left blank, then any auction for the selected Placement/Placement Group/Publisher ID will trigger the corresponding PSP configuration to be used in the auction and enable PSP to call the associated Demand Partners.
-
 **Add a demand partner**
 
 1. Type to search or select a demand partner from the **Select a Demand Partner** dropdown.
@@ -108,7 +86,7 @@ If these optional settings are left blank, then any auction for the selected Pla
 **Populate template**
 
 1. Open the template and populate each row, representing one configuration, with the information requested for each column.
-1. Configuration Mapping Object ID is the ID of the placement, placement group, or publisher to be mapped to the demand partner in each row. Each mapping object ID can only be associated with one PSP configuration.
+1. The Configuration Targeting ID is the line item ID in the response from the PSP [campaign objects service](../digital-platform-api/campaign-object-service.md). The targeting of this PSP line item determines which bid requests trigger the PSP configuration and call the associated demand partners in this row. Each Targeting ID can be associated with only configuration.
 1. The demand partner and its selected (required + any optional chosen) parameters are represented as an additional section of columns to the right.
 1. Each demand partner and its parameter columns can only appear once per row. Additional values for the same demand partner must be applied on a separate row which represents a separate PSP configuration.
 
@@ -122,7 +100,7 @@ If these optional settings are left blank, then any auction for the selected Pla
 Submit the complete template to Microsoft Advertising for processing, unless instructed otherwise.
 
  > [!NOTE]
- > The bulk template cannot yet be used to edit configuration-level details (i.e. media type, size(s), OS family(ies)) or demand partner details (which parameters to utilize or their values). Those capabilities will be added in the future, as well as self-service processing and upload of the templates.
+ > The bulk template does not yet support editing configuration-level details (such as media type) or demand partner details (such as which parameters to use or their values). These capabilities will be added in the future, along with self-service processing and template uploads.
 
 ## Related topics
 

@@ -9,7 +9,7 @@ ms.custom: digital-platform-api
 
 Once inventory has been [Integrated with Prebid Server Premium (PSP)](../monetize/integrate-with-psp.md), [Cross-Partner Settings](../digital-platform-api/cross-partner-settings-service.md) have been reviewed, and [Demand partners](../digital-platform-api/demand-partner-service.md) have been enabled, inventory must be mapped to demand partners via PSP configurations. These mappings allow PSP to send bid requests with demand partners’ parameters so the partners can identify the inventory and better represent it to their buyers, increasing yield and honoring publisher settings such as floors and ad quality.
 
-- Each configuration targets a portion of publisher inventory in Monetize, either by a set of flexible targeting (geography, inventory type, key value, etc.) or by explicitly specifying Monetize objects (placement, placement group, publisher)
+- Each configuration targets a portion of publisher inventory in Monetize by using one or more dimensions—such as placement, placement group, publisher, geography, inventory type, or key-value.
 - Each configuration includes one or more demand partners the publisher would like to bid on the inventory
 - Each demand partner specifies the required and optional parameters they want to receive in their [open-source Prebid Server Go adapter](https://docs.prebid.org/dev-docs/pbs-bidders.html), which are surfaced in PSP. These allow the partner to match the bid request to objects in their platform
 - Publishers fill out demand partner parameters with values mapped to objects in each partner’s platform, typically another supply-side platform (SSP)
@@ -100,28 +100,22 @@ A successful response will return JSON containing the member's cross-partner set
 | `media_types` | object | The media types associated with the configurations. For items contained in a media_types object, see the [media types](#media-types) properties table below. |
 | `member_id` | integer | The ID of the member associated with the configurations.|
 | `name` | string | The name of the configuration. |
-| `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `1` placement  <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile|
-| `targeting_id` | integer | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a "psp" subtype created by the [PSP campaign objects service](campaign-object-service.md), these objects are created and linked automatically.|
-| `targeting_level_name` | string | The name of the level (example: publisher). |
-| `targeting_metadata` | object | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required.** |
+| `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `4` line item/targeting profile|
+| `targeting_id` | integer | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the PSP campaign objects service, which automatically creates and links the line item to the profile.|
+| `targeting_metadata` | object | Includes modifiers for the targeting object. For details about the items contained in the targeting_metadata object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table. The `targeting_metadata.priority` field is required. |
 
 ### Media types
 
-The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand partners.
+The media type object determines which formats (currently banner, native, and video) are included in the requests to demand partners.
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `sizes` | object | Demand Partners will only receive requests for this configuration where these ad sizes are present. |
-| `sizes.width` | integer | Width of the unit. For Example, 300. |
-| `sizes.height` | integer | Height of the unit. For Example, 250. |
-| `sizes.is_standard` | boolean | Denotes whether the size has been defined as standard by the member. |
 | `types` | array | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
 ### Targeting metadata properties
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `os_family_ids` | array | Demand Partners will only receive requests for this configuration where these operating systems are present. Operating systems represented by integer ids from the [Operating System-Families Service](operating-system-families-service.md). |
 | `priority` | integer | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the `targeting_id` is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
 
 ### Demand partner configs properties
@@ -226,22 +220,17 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
       "id": 87053,
       "member_id": 13859,
       "name": "ConfigName1",
-      "targeting_level_code": 1,
+      "targeting_level_code": 4,
       "targeting_id": 25172737,
       "enabled": 1,
       "media_types": {
-        "sizes": [],
         "types": [
           "video"
         ]
       },
-      "targeting_metadata": {
-        "os_family_ids": []
-      },
       "deleted": 0,
       "last_modified_by": "user123",
       "last_modified": "2024-07-17T18:17:56.000Z",
-      "targeting_level_name": "placement",
       "demand_partner_config_params": [
         {
           "id": 619584,
@@ -263,11 +252,10 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
       "id": 87784,
       "member_id": 13859,
       "name": "ConfigName2",
-      "targeting_level_code": 1,
+      "targeting_level_code": 4,
       "targeting_id": 25175861,
       "enabled": 1,
       "media_types": {
-        "sizes": [],
         "types": [
           "banner",
           "video",
@@ -356,9 +344,8 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
 | `media_types` | object | Required | The media_types associated with the configuration. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
 | `name` | string | Required | The name of the configuration. |
-| `targeting_id` | integer | Required | The identifier of the object with which the configuration is associated (e.g., line item, placement, placement group, publisher). Requests will be sent to demand partners when the bid request specifies the same object or matches the targeting of the line item/profile. If a line item ID is used, it must be a “psp” subtype created by the [PSP campaign objects service](campaign-object-service.md). When creating configurations in the [PSP UI](../monetize/create-a-psp-configuration.md), these objects are created and linked automatically. |
-| `targeting_level_code` | integer | Required | The type of object associated with the configuration: <br> - `1` placement <br> - `2` placement group/site <br> - `3` publisher <br> - `4` line item/targeting profile |
-| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#post-targeting-metadata-properties) table for items contained in the targeting_metadata object. **When the `targeting_id` is a line item ID, `targeting_metadata.priority` is required**. |
+| `targeting_id` | integer | Required | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the PSP campaign objects service, which automatically creates and links the line item to the profile.|
+| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the targeting_metadata object. targeting_metadata.priority is required. |
 
 #### POST: Demand partner configs properties
 
@@ -369,38 +356,27 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 
 #### POST: Media types
 
-The media type object determines which formats (currently banner, native, and video) and ad sizes are included in the requests to demand partners.
+The media type object determines which formats (currently banner, native, and video) are included in the requests to demand partners.
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `sizes` | object | Optional | Demand Partners will only receive requests for this configuration where these ad sizes are present. |
-| `sizes.width` | integer | Optional | Width of the unit. For Example, 300. |
-| `sizes.height` | integer | Optional | Height of the unit. For Example, 250. |
-| `sizes.is_standard` | boolean | Optional | Denotes whether the size has been defined as standard by the member. |
 | `types` | array | Required | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
 #### POST: Targeting metadata properties
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `os_family_ids` | array | Optional | Demand Partners will only receive requests for this configuration where these operating systems are present. Operating systems represented by integer ids from the [Operating System-Families Service](operating-system-families-service.md). |
 | `priority` | integer | Optional | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the targeting_id is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
 
 #### Example JSON request
 
 ```
+
 {
     "name": "ConfigName1",
-    "targeting_level_code": 4,
     "targeting_id": 22378872,
     "enabled": 0,
     "media_types": {
-        "sizes": [
-            {
-                "height": 300,
-                "width": 250
-            }
-        ],
         "types": [
             "banner",
             "video",
@@ -411,7 +387,7 @@ The media type object determines which formats (currently banner, native, and vi
         "priority": 20
     },
     "demand_partner_config_params": [
-         {
+        {
             "id": 1718542,
             "member_id": 13859,
             "prebid_settings_id": 196038,
@@ -441,13 +417,7 @@ A successful response will return the new configuration object.
     "targeting_id": 22378872,
     "enabled": 1,
     "media_types": {
-      "sizes": [
-        {
-          "height": 300,
-          "width": 250
-        }
-      ],
-      "types": [
+        "types": [
         "banner",
         "native",
         "video"
@@ -496,16 +466,9 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
 ```
 {
     "name": "ConfigName1",
-    "targeting_level_code": 4,
     "targeting_id": 22378872,
     "enabled": 0,
     "media_types": {
-        "sizes": [
-            {
-                "height": 300,
-                "width": 250
-            }
-        ],
         "types": [
             "banner",
             "native",

@@ -101,8 +101,8 @@ A successful response will return JSON containing the member's cross-partner set
 | `member_id` | integer | The ID of the member associated with the configurations.|
 | `name` | string | The name of the configuration. |
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `4` line item/targeting profile|
-| `targeting_id` | integer | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the PSP campaign objects service, which automatically creates and links the line item to the profile.|
-| `targeting_metadata` | object | Includes modifiers for the targeting object. For details about the items contained in the targeting_metadata object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table. The `targeting_metadata.priority` field is required. |
+| `targeting_id` | integer | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
+| `targeting_metadata` | object | Includes modifiers for the targeting object. For details about the items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table. The `targeting_metadata.priority` field is required. |
 
 ### Media types
 
@@ -116,7 +116,7 @@ The media type object determines which formats (currently banner, native, and vi
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `priority` | integer | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the `targeting_id` is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
+| `priority` | integer | Each auction uses a single PSP configuration and its associated demand partner parameters. If multiple configurations match an auction, the one with the highest user-defined Priority is selected. If there are multiple configurations with the same Priority, the configuration with the higher (more recent) ID is used.|
 
 ### Demand partner configs properties
 
@@ -167,161 +167,162 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ```
 
 {
-  "id": 450,
-  "member_id": 13859,
-  "bidder_timeout_ms": 500,
-  "price_granularity": {
-    "label": "Auto",
-    "currency_code": "USD",
-    "precision": 2,
-    "ranges": [
-      {
-        "max": 5,
-        "increment": 0.05
-      },
-      {
-        "max": 10,
-        "increment": 0.1
-      },
-      {
-        "max": 20,
-        "increment": 0.5
-      }
+    "id": 450,
+    "member_id": 13859,
+    "bidder_timeout_ms": 500,
+    "price_granularity": {
+        "label": "Auto",
+        "currency_code": "USD",
+        "precision": 2,
+        "ranges": [
+            {
+                "max": 5,
+                "increment": 0.05
+            },
+            {
+                "max": 10,
+                "increment": 0.1
+            },
+            {
+                "max": 20,
+                "increment": 0.5
+            }
+        ]
+    },
+    "deleted": 0,
+    "last_modified_by": "user123",
+    "last_modified": "2024-08-21T16:37:24.000Z",
+    "demand_partner_settings": {
+        "appnexus": {
+            "id": 2045,
+            "bid_cpm_adjustment": 0.7,
+            "enabled": 1
+        },
+        "openx": {
+            "id": 2065,
+            "bid_cpm_adjustment": 1,
+            "enabled": 0
+        },
+        "ix": {
+            "id": 2106,
+            "bid_cpm_adjustment": 0.9,
+            "enabled": 1
+        },
+        "adform": {
+            "id": 2110,
+            "bid_cpm_adjustment": 1,
+            "enabled": 1
+        }
+    },
+    "total_configs": 2,
+    "configs": [
+        {
+            "id": 87053,
+            "member_id": 13859,
+            "name": "ConfigName1",
+            "targeting_level_code": 4,
+            "targeting_id": 25172737,
+            "enabled": 1,
+            "media_types": {
+                "types": [
+                    "video"
+                ]
+            },
+            "targeting_metadata": {
+                "priority": 10
+            },
+            "deleted": 0,
+            "last_modified_by": "user123",
+            "last_modified": "2024-07-17T18:17:56.000Z",
+            "demand_partner_config_params": [
+                {
+                    "id": 619584,
+                    "member_id": 13859,
+                    "prebid_settings_id": 87053,
+                    "name": "ix",
+                    "params": {
+                        "size": null,
+                        "siteId": "yyy.com"
+                    },
+                    "enabled": 1,
+                    "deleted": 0,
+                    "last_modified_by": "user123",
+                    "last_modified": "2024-07-17T18:36:40.000Z"
+                }
+            ]
+        },
+        {
+            "id": 87784,
+            "member_id": 13859,
+            "name": "ConfigName2",
+            "targeting_level_code": 4,
+            "targeting_id": 25175861,
+            "enabled": 1,
+            "media_types": {
+                "types": [
+                    "banner",
+                    "video",
+                    "native"
+                ]
+            },
+            "targeting_metadata": {
+                "priority": 10
+            },
+            "deleted": 0,
+            "last_modified_by": "user123",
+            "last_modified": "2024-07-31T21:34:34.000Z",
+            "demand_partner_config_params": [
+                {
+                    "id": 619080,
+                    "member_id": 13859,
+                    "prebid_settings_id": 87784,
+                    "name": "openx",
+                    "params": {
+                        "unit": "3456",
+                        "platform": null,
+                        "delDomain": "abc.com",
+                        "customFloor": null,
+                        "customParams": null
+                    },
+                    "enabled": 0,
+                    "deleted": 0,
+                    "last_modified_by": "user123",
+                    "last_modified": "2024-08-21T21:10:28.000Z"
+                },
+                {
+                    "id": 619081,
+                    "member_id": 13859,
+                    "prebid_settings_id": 87784,
+                    "name": "ix",
+                    "params": {
+                        "size": null,
+                        "siteId": "abc.com"
+                    },
+                    "enabled": 1,
+                    "deleted": 0,
+                    "last_modified_by": "user123",
+                    "last_modified": "2024-07-17T18:36:06.000Z"
+                },
+                {
+                    "id": 625915,
+                    "member_id": 13859,
+                    "prebid_settings_id": 87784,
+                    "name": "adform",
+                    "params": {
+                        "inv": null,
+                        "mid": "1414158",
+                        "mname": null,
+                        "priceType": null
+                    },
+                    "enabled": 1,
+                    "deleted": 0,
+                    "last_modified_by": "user123",
+                    "last_modified": "2024-07-17T18:36:09.000Z"
+                }
+            ]
+        }
     ]
-  },
-  "deleted": 0,
-  "last_modified_by": "user123",
-  "last_modified": "2024-08-21T16:37:24.000Z",
-  "demand_partner_settings": {
-    "appnexus": {
-      "id": 2045,
-      "bid_cpm_adjustment": 0.7,
-      "enabled": 1
-    },
-    "openx": {
-      "id": 2065,
-      "bid_cpm_adjustment": 1,
-      "enabled": 0
-    },
-    "ix": {
-      "id": 2106,
-      "bid_cpm_adjustment": 0.9,
-      "enabled": 1
-    },
-    "adform": {
-      "id": 2110,
-      "bid_cpm_adjustment": 1,
-      "enabled": 1
-    }
-  },
-  "total_configs": 2,
-  "configs": [
-    {
-      "id": 87053,
-      "member_id": 13859,
-      "name": "ConfigName1",
-      "targeting_level_code": 4,
-      "targeting_id": 25172737,
-      "enabled": 1,
-      "media_types": {
-        "types": [
-          "video"
-        ]
-      },
-      "deleted": 0,
-      "last_modified_by": "user123",
-      "last_modified": "2024-07-17T18:17:56.000Z",
-      "demand_partner_config_params": [
-        {
-          "id": 619584,
-          "member_id": 13859,
-          "prebid_settings_id": 87053,
-          "name": "ix",
-          "params": {
-            "size": null,
-            "siteId": "yyy.com"
-          },
-          "enabled": 1,
-          "deleted": 0,
-          "last_modified_by": "user123",
-          "last_modified": "2024-07-17T18:36:40.000Z"
-        }
-      ]
-    },
-    {
-      "id": 87784,
-      "member_id": 13859,
-      "name": "ConfigName2",
-      "targeting_level_code": 4,
-      "targeting_id": 25175861,
-      "enabled": 1,
-      "media_types": {
-        "types": [
-          "banner",
-          "video",
-          "native"
-        ]
-      },
-      "targeting_metadata": {
-        "os_family_ids": []
-      },
-      "deleted": 0,
-      "last_modified_by": "user123",
-      "last_modified": "2024-07-31T21:34:34.000Z",
-      "targeting_level_name": "placement",
-      "demand_partner_config_params": [
-        {
-          "id": 619080,
-          "member_id": 13859,
-          "prebid_settings_id": 87784,
-          "name": "openx",
-          "params": {
-            "unit": "3456",
-            "platform": null,
-            "delDomain": "abc.com",
-            "customFloor": null,
-            "customParams": null
-          },
-          "enabled": 0,
-          "deleted": 0,
-          "last_modified_by": "user123",
-          "last_modified": "2024-08-21T21:10:28.000Z"
-        },
-        {
-          "id": 619081,
-          "member_id": 13859,
-          "prebid_settings_id": 87784,
-          "name": "ix",
-          "params": {
-            "size": null,
-            "siteId": "abc.com"
-          },
-          "enabled": 1,
-          "deleted": 0,
-          "last_modified_by": "user123",
-          "last_modified": "2024-07-17T18:36:06.000Z"
-        },
-        {
-          "id": 625915,
-          "member_id": 13859,
-          "prebid_settings_id": 87784,
-          "name": "adform",
-          "params": {
-            "inv": null,
-            "mid": "1414158",
-            "mname": null,
-            "priceType": null
-          },
-          "enabled": 1,
-          "deleted": 0,
-          "last_modified_by": "user123",
-          "last_modified": "2024-07-17T18:36:09.000Z"
-        }
-      ]
-    }
-  ]
 }
-
        
 ```
 
@@ -344,8 +345,8 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
 | `media_types` | object | Required | The media_types associated with the configuration. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
 | `name` | string | Required | The name of the configuration. |
-| `targeting_id` | integer | Required | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the PSP campaign objects service, which automatically creates and links the line item to the profile.|
-| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the targeting_metadata object. targeting_metadata.priority is required. |
+| `targeting_id` | integer | Required | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
+| `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. `targeting_metadata.priority` is required. |
 
 #### POST: Demand partner configs properties
 
@@ -366,7 +367,7 @@ The media type object determines which formats (currently banner, native, and vi
 
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
-| `priority` | integer | Optional | The rank of the configuration is used only when it is tied to a line item. This rank instructs Monetize which configuration to use when the targeting of multiple line items is eligible for the same bid request. The scale ranges from 1 to 20, with 20 being the highest. **This ranking is required when the targeting_id is a line item ID** and does not apply to placement, placement group, or publisher configurations. When multiple line item configurations have the same priority, the configuration with the higher (more recent) ID will be used in the auction. |
+| `priority` | integer | Optional | Each auction uses one PSP configuration and its set of demand partner parameters. <br> When multiple configurations match an auction: <br> &nbsp; - The configuration with the highest user-defined *Priority* is selected. <br> &nbsp; - If multiple configurations share the same *Priority*, the one with the higher (more recent) ID is used. |
 
 #### Example JSON request
 
@@ -390,7 +391,6 @@ The media type object determines which formats (currently banner, native, and vi
         {
             "id": 1718542,
             "member_id": 13859,
-            "prebid_settings_id": 196038,
             "name": "appnexus",
             "params": {
                 "placement_id": 123456

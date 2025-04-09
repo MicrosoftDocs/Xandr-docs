@@ -1,6 +1,6 @@
 ---
 title: Config Service
-description: In this article, learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
+description: Learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
 ms.date: 10/28/2023
 ms.custom: digital-platform-api
 ---

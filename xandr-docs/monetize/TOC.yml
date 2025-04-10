@@ -16,6 +16,10 @@
       href: breaking-changes.md
     - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
       href: breaking-change-20250303.md
+- name: Microsoft Monetize Home Page
+  href: home-page-microsoft-monetize.md
+- name: Copilot in Microsoft Monetize
+  href: copilot-in-microsoft-monetize.md
 - name: Network Guide
   items:
   - name: Overview
@@ -240,6 +244,8 @@
       href: selling-curated-deals.md
     - name: Curated Deals
       href: curated-deals.md
+    - name: About Microsoft Curate
+      href: about-curate.md
   - name: Buying Deals
     items:
     - name: Overview
@@ -1716,6 +1722,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: April 10, 2025 - Copilot in Microsoft Monetize
+    href: release-notes-20210503.md
   - name: March 10, 2025 - Change Log History tool
     href: release-notes-20250310.md
   - name: November 26, 2024 - Enhanced Blocked Bid Value Metric

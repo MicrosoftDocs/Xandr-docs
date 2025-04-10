@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize Home page
 description: Microsoft Monetize Home page serves as the default landing page for all Microsoft Monetize customers.
-ms.date: 11/04/2025
+ms.date: 04/11/2025
 ms.author: shsrinivasan
 ---
 

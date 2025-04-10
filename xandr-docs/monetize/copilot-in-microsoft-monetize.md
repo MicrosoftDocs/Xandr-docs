@@ -1,7 +1,7 @@
 ---
 title: Copilot in Microsoft Monetize 
 description: Copilot in Microsoft Monetize provides real-time, contextual assistance, helping you to navigate the platform efficiently.
-ms.date: 11/04/2025
+ms.date: 04/11/2025
 ms.author: shsrinivasan
 ---
 

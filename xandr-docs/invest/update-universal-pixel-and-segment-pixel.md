@@ -73,7 +73,7 @@ Segment pixels are a way of tracking user behavior and sending data to us throug
 
 Please note that the value of ```<GDPR-CONSENT-STRING>``` must be replaced by the actual value of the consent string provided by the CMP.
 
-You can find further information on how to pass consent signals for segment pixels in our [documentation](segment-pixels-advanced#privacy-considerations).  
+You can find further information on how to pass consent signals for segment pixels in our [documentation](segment-pixels-advanced).  
 
 ## How to update your Universal Pixel on websites without TCF Consent Management Platforms?
 

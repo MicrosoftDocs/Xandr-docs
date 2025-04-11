@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Household Attribution 
 description: Learn about setting up household attribution on Microsoft Invest.
-ms.date: 08/17/2024
+ms.date: 08/18/2024
 ms.author: shsrinivasan
 ---
 

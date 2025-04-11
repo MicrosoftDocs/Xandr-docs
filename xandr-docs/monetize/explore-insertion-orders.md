@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 The **Insertion Orders** screen shows you essential metrics about all insertion orders under a specific advertiser, provides quick access to each insertion order's details, and reporting options.
 
-This document describes the Insertion Order screen for individual advertisers.
+This document describes the SMW grid for Insertion order for individual advertisers.
 
 Things you can do on this page include:
 

@@ -13,15 +13,15 @@ For more information, see [Configuring a Native Assembly](configuring-a-native-a
 > [!NOTE]
 > The steps outlined here should only be performed by third-party ad server publishers.
 
-1. Navigate to **Publishers** > **All Publishers**.
+1. Navigate to **Publishers** > **Inventory Manager**.
 1. Click the number that is displayed in the **Placements** column for the appropriate publisher.
 1. Find the corresponding placement by scrolling through the **Placement List**.
 1. Click the placement.
 1. Click **Full Edit** at the top of the **Placement Details** pane.
 1. Scroll down to the **Allowed Media** section.
-1. Click the **Other** radio button.
+1. Check the **Native** option.
 1. Click **Include** for the **Native** option within the **Search** pane.
-1. Select the **Enable Server-Side Native Assembly** checkbox that is displayed under the **Search** pane.
+1. The **Media Settings** section will expand below **Allowed Media**. Select the **Enable Server-Side Native Assembly** checkbox.
 1. Click **Save**.
 
 ## Related topic

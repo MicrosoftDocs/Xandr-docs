@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Household Attribution
 description: Learn about household attribution on Microsoft Invest.
-ms.date: 10/18/2024
+ms.date: 10/19/2024
 ms.author: shsrinivasan
 ---
 

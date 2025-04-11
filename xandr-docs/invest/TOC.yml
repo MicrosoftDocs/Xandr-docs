@@ -556,6 +556,8 @@
               href: set-up-consent-mode-in-universal-pixel.md
             - name: Transparency and Consent Framework (TCF) for Universal Pixel
               href: tcf-for-universal-pixel-invest.md
+            - name: Update Universal Pixel and Segment Pixel integrations for user consent signals
+              href: update-universal-pixel-and-segment-pixel.md
             - name: Universal Pixel - Dynamic Consent Update in Google Tag Manager
               href: universal-pixel-dynamic-consent-update-invest.md
             - name: Events and Parameters

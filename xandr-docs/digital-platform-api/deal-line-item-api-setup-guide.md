@@ -238,6 +238,9 @@ You'll need to create the deal you want to associate with the deal line item.
 | `version` | int | Required | This field must be set to `"2"` in order to associate the deal to a deal line item. |
 | `auction_type` | object | Optional | The auction type of the deal (Standard/Fixed/Market). This value must match what's set on the deal line item (via `revenue_type`/`min_revenue_value`/`revenue_value`).<br><br>**Note**: This field must be set upon creation, but it is not used on deal line items. It will not be updated if the line item is updated and in the auction; only the line item values are considered. |
 
+> [!Note]
+> Ensure that "ask_price" and "floor_price" are not set in the deal object. These fields would be automatically populated when the deal is associated with the line item.
+
 #### Useful optional JSON fields
 
 ##### JSON fields for allowed creatives  

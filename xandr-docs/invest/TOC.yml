@@ -144,6 +144,8 @@
       href: update-insertion-orders.md
     - name: Duplicate an Insertion Order
       href: duplicate-an-insertion-order.md
+    - name: Insertion Order Auto Allocation 
+      href: insertion-order-auto-allocation.md
   - name: Working with Line Items
     items:
     - name: Work with Line Items
@@ -1032,6 +1034,8 @@
       href: release-notes.md
     - name: 2024 - 2025
       items:
+        - name: April 12, 2025 - Insertion Order Auto Allocation
+          href: release-notes-20250412.md
         - name: October 21, 2024 - Microsoft Invest DSP UI Localization
           href: release-notes-20241021.md
         - name: October 18, 2024 - Household Attribution

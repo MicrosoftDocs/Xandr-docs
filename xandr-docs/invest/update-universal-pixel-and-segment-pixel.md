@@ -73,7 +73,7 @@ Segment pixels are a way of tracking user behavior and sending data to us throug
 
 Please note that the value of ```<GDPR-CONSENT-STRING>``` must be replaced by the actual value of the consent string provided by the CMP.
 
-You can find further information on how to pass consent signals for segment pixels in our [documentation](segment-pixels-advanced).  
+You can find further information on how to pass consent signals for segment pixels in our [documentation](segment-pixels-advanced.md).  
 
 ## How to update your Universal Pixel on websites without TCF Consent Management Platforms?
 
@@ -110,7 +110,7 @@ To update your UP integrations for binary user consent signals, you need to foll
 </script> 
 ```
 
-You can find further information on how to enable the binary consent mode for Universal Pixel in our [documentation](set-up-consent-mode-in-universal-pixel).  
+You can find further information on how to enable the binary consent mode for Universal Pixel in our [documentation](set-up-consent-mode-in-universal-pixel.md).  
 
 ## What happens if advertisers fail to provide consent signals for Microsoft pixel integrations?
 

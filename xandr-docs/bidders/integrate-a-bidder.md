@@ -207,7 +207,7 @@ IP Address <u>will</u> be configured separately on the "Bidder Instance" object(
 | **notify_uri** |  | the path/filename that specifies the destination for [Notify Requests](./notify-request.md) (e.g. "/notify") |
 | **pixel_uri** | **optional** | the path/filename that specifies the destination |
 | **click_uri** | **optional** | the path/filename that specifies the destination for [Click Requests](./click-request.md) |
-|**audit_notify_uri** | **optional** | the path/filename that specifies the destination for [Audit Notify Requests](./audit-notify-request.md) (For example, "[https://examplebidder.com/audit_notify_endpoint](https://examplebidder.com/audit_notify_endpoint)") |
+|**audit_notify_uri** | **optional** | the path/filename that specifies the destination for [Audit Notify Requests](./audit-notify-request.md) (For example, "`https://examplebidder.com/audit_notify_endpoint`") |
 
 ## View your member object
 

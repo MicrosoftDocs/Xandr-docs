@@ -189,6 +189,21 @@
         "source_path": "xandr-docs/curate/troubleshooting-multi-factor-authentication-mfa.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/curate/troubleshooting-mfa",
         "redirect_document_id": false   
+        },
+        {
+        "source_path": "xandr-docs/customer-support/xcs-updating-my-settings.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-xandr-customer-support-home",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/customer-support/xcs-changing-my-password.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-xandr-customer-support-home",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/customer-support/xcs-customer-support-portal-guide.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/customer-support/xcs-xandr-customer-support-home",
+        "redirect_document_id": false
         }
       ]
     }

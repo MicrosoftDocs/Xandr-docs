@@ -63,7 +63,7 @@ To open a new case with the Microsoft Advertising support team:
   > Maximum file size: 300MB 
     - **CC emails:** In the **Contact Information** section, you can add up to ten email addresses to receive case updates. Ensure the email addresses are correct, separated by commas, and that the recipients wish to receive updates.  
   > [!NOTE] 
-  > If anyone on the CC'd list requires a portal account, contact your Xandr Account Representative.
+  > If you are on the CC'd list and want to access the Microsoft Advertising Customer Support Portal, you can create a [Microsoft Identity Platform account](microsoft-identity-platform-login.md) to login.
     - **Country of submission:** From the dropdown, select your country from for case routing. 
 - Once all required fields are completed, select **Submit**. A **Case ID** will be generated, and you will receive a confirmation email.  
 

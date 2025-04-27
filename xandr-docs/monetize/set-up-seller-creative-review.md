@@ -42,7 +42,7 @@ To be able to review and explicitly approve creatives to run on your inventory f
 
 To create a deal line item configured for the **Seller Creative Review** feature:
 
-1. Create a deal line item that includes the following settings in the **Deal Creative Criteria** section (for more information, see [Create a Deal Line Item](create-a-deal-line-item.md)):
+1. Create a deal line item that includes the following settings in the **Deal Creative Criteria** section (for more information, see [Create a Simplified Deal Line Item](create-a-simplified-deal-line-item.md)):
    1. Next to **Creative Review**, select the **Only allow seller-approved creatives** checkbox so that only creatives that you explicitly approve will run.
    1. Click **Edit** under **Creative Category** and select the **Ad Quality Settings** tab.
    1. Search for the supported creative categories you blocked in the **Ad Quality Network**/**Publisher Template**. For example, to list the three political categories, enter “`politic`“ in the search window and click **Ignore** in the **Ad Quality Settings** column for each creative category.

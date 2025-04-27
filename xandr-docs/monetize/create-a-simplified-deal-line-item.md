@@ -230,6 +230,5 @@ You can create a new deal line item from the pre-selection screen by selecting t
 
 ## Related topics
 
-- [Create a deal line item](create-a-deal-line-item.md)
 - [Set up multi-buyer deals](set-up-multi-buyer-deals.md)
 - [Understanding multi-buyer deals](understanding-multi-buyer-deals.md)

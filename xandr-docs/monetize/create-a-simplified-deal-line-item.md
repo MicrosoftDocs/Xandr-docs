@@ -6,9 +6,6 @@ ms.date: 05/31/2024
 
 # Create a simplified deal line item
 
-> [!NOTE]
-> This feature is currently in **Beta** and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
-
 Publishers using Microsoft Monetize can utilize deal line items to set up deals with their advertisers. This helps them offer the latest features available on the Microsoft Monetize platform to their buyers.
 
 ## Prerequisites
@@ -233,6 +230,5 @@ You can create a new deal line item from the pre-selection screen by selecting t
 
 ## Related topics
 
-- [Create a deal line item](create-a-deal-line-item.md)
 - [Set up multi-buyer deals](set-up-multi-buyer-deals.md)
 - [Understanding multi-buyer deals](understanding-multi-buyer-deals.md)

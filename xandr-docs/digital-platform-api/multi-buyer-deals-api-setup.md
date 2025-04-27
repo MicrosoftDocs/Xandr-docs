@@ -18,7 +18,7 @@ Multi-buyer deals use a combination of three new objects:
 Multi-buyer deals must be implemented using deal line items (Deals v2). The `buyer_bidders` object is only supported using Deals v2 (even if only one buyer is used). If the `buyer_seats` object is used for multiple buyers (whether in `buyer_seats` or across other buyer objects), it must be implemented with Deals v2.
 
 > [!NOTE]
-> Deals v1 can support one buyer seat in the `buyer_seats` object. Additional buyer seats must be implemented using Deals v2 (for more information, see [Create a Deal Line Item](../monetize/create-a-deal-line-item.md)).
+> Deals v1 can support one buyer seat in the `buyer_seats` object. Additional buyer seats must be implemented using Deals v2 (for more information, see [Create a Simplified Deal Line Item](../monetize/create-a-simplified-deal-line-item.md)).
 
 ## JSON fields
 
@@ -105,7 +105,7 @@ The `buyer_members` object contains the following fields:
 
 The `buyer_seats` object is used in multi-buyer deals. Deals with seats can be set up using the `buyer_seats` object via the API. When setting up a new deal via the API, use the `buyer_seats` object, and the API will be populated with this object.
 
-Use the Microsoft Invest buyer's member ID in the `code` and `bidder_id=2` field. New deals with external DSP's can also be set up with buyer seat IDs. You can check which external DSPs are using buyer seat IDs [here](https://monetize.xandr.com/docs/external-dsps-using-buyer-seat-ids).
+Use the Microsoft Invest buyer's member ID in the `code` and `bidder_id=2` field. New deals with external DSP's can also be set up with buyer seat IDs. You can check which external DSPs are using buyer seat IDs [here](../monetize/external-dsps-using-buyer-seat-ids.md).
 
 Some things to note:
 

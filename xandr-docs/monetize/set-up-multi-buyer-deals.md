@@ -11,7 +11,7 @@ You can set up Multi-Buyer Deals in two different ways:
 1. Multi-buyer deals with multiple buyers across various DSPs
 1. Bidder-level deals with all buyers on a DSP
 
-From the **Deal** section of the **Basic Setup** section see [Create a Deal Line Item](create-a-deal-line-item.md):
+From the **Deal** section of the **Basic Setup** section see [Create a Simplified Deal Line Item](create-a-simplified-deal-line-item.md):
 
 1. Click **Edit** under **Buyers** to open the **Buyer Targeting** screen.
 

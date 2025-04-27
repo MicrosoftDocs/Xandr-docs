@@ -18,7 +18,7 @@ This page describes the properties you can define when creating a deal.
 > [!NOTE]
 > Clients of different types may see different options when creating a deal. This page covers all options in the create a deal workflow. If you do not have access to certain settings or options or have any other questions, please reach out to your Microsoft Advertising representative.
 >
-> If you are assigning a deal to a curator account, you must [create a deal line item](create-a-deal-line-item.md). Custom deals are not supported with curator members. See [Curated Deals](curated-deals.md) for more information.
+> If you are assigning a deal to a curator account, you must [create a simplified deal line item](create-a-simplified-deal-line-item.md). Custom deals are not supported with curator members. See [Curated Deals](curated-deals.md) for more information.
 
 ## Start a new custom deal
 

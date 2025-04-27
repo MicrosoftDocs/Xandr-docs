@@ -1334,8 +1334,6 @@
       href: add-reporting-labels-and-comments-to-a-line-item.md
   - name: Deal Line Item
     items:
-    - name: Create a Deal Line Item
-      href: create-a-deal-line-item.md
     - name: Create a Simplified Deal Line Item
       href: create-a-simplified-deal-line-item.md 
     - name: Understanding Multi-Buyer Deals

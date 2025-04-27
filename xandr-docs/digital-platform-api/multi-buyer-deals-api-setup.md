@@ -18,7 +18,7 @@ Multi-buyer deals use a combination of three new objects:
 Multi-buyer deals must be implemented using deal line items (Deals v2). The `buyer_bidders` object is only supported using Deals v2 (even if only one buyer is used). If the `buyer_seats` object is used for multiple buyers (whether in `buyer_seats` or across other buyer objects), it must be implemented with Deals v2.
 
 > [!NOTE]
-> Deals v1 can support one buyer seat in the `buyer_seats` object. Additional buyer seats must be implemented using Deals v2 (for more information, see [Create a Deal Line Item](../monetize/create-a-deal-line-item.md)).
+> Deals v1 can support one buyer seat in the `buyer_seats` object. Additional buyer seats must be implemented using Deals v2 (for more information, see [Create a Simplified Deal Line Item](../monetize/create-a-simplified-deal-line-item.md)).
 
 ## JSON fields
 

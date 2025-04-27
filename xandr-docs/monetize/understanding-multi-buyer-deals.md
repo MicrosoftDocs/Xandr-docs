@@ -30,6 +30,6 @@ For more information, see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md
 
 ## Related topics
 
-- [Create a Deal Line Item](create-a-deal-line-item.md)
+- [Create a Simplified Deal Line Item](create-a-simplified-deal-line-item.md)
 - [Multi-Buyer Seller Deal Metrics](multi-buyer-seller-deal-metrics.md)
 - [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md)

@@ -12,28 +12,11 @@ ms.date: 10/18/2024
 
 ## Overview
 
-Historical report is the primary analytics report in Microsoft Monetize, offering comprehensive data across a wide range of dimensions and metrics. It consolidates more than ten legacy report types, including Network Analytics, Seller Brand Review, and Seller Fill and Delivery. It reduces the number of report types a user needs to interact with, providing features to improve usability such as categorization of Dimensions and Metrics and comprehensive search capabilities. Historical report is built from two datasets accessible through a single interface, with Dimension and Metric incompatibilities surfaced during selection. The expanded range of options provides a more detailed view of data across multiple aspects of delivery and inventory, with additional reportable dimension combinations, such as placement and device. The Historical report includes most of the data available in the legacy reporting system. 
+Historical report is the primary analytics report in Microsoft Monetize, offering comprehensive data across a wide range of dimensions and metrics. It consolidates more than ten legacy report types, including [Network Analytics](network-analytics-report.md), [Seller Brand Review](seller-brand-review-report.md), and [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md). It reduces the number of report types a user needs to interact with, providing features to improve usability such as categorization of `dimensions` and `metrics` and comprehensive search capabilities. <br> Historical report is built from two datasets accessible through a single interface, with `dimension` and `metric` incompatibilities surfaced during selection. The expanded range of options provides a more detailed view of data across multiple aspects of delivery and inventory, with additional reportable dimension combinations, such as placement and device. The Historical report includes most of the data available in the legacy reporting system. 
 
 > [!NOTE]
 > During the Alpha phase, additional dimensions and metrics are added to address key feature gaps compared to the legacy reports. Data in the Historical report is available from 10 October 2024 for general access, with earlier availability in 2024 for clients participating in the Alpha phase. The reporting interface in Microsoft Monetize provides access to the Historical report for Network users. Access to all existing report types is available during the Alpha phase, along with support for Publisher and Advertiser users.
 
-
-<!-->
-The new Microsoft Monetize reporting UI and the Historical report are currently in Alpha, enabled for select clients. Please contact your account manager if you require further information.
-
-The Historical report already includes most of the data that is available in the legacy reporting. During the Alpha phase, we will be adding additional dimensions and metrics to close outstanding key feature gaps compared to the legacy reports. Data in the Historical Report is available from 10th October 2024 generally, and from earlier in 2024 for clients involved in the Alpha.
-
-Currently, the new reporting UI only provides access to the Historical report for Network users. Access to all existing report types will be added during the Alpha, along with support for Publisher and Advertiser users.
-
-### New report types and user interface for Monetize
-
-The new **Historical report** in the new Microsoft Monetize reporting UI offers comprehensive data across a wide range of dimensions and metrics. This report will replace several legacy Network and Advertiser/Publisher reports, enhancing and simplifying reporting capabilities.
-
-The Historical report is built from two datasets that are accessible from one UI, with dimension and metric incompatibilities shown to the user as they make selections. In the API, the datasets are available independently as two report types.
-
-The updated, expanded range enables a more granular understanding of data across multiple aspects of delivery and inventory, with new reportable combinations of dimensions that were not possible before, such as placement and device.
-
-The new UI is a significant upgrade, reducing the number of report types a user needs to interact with, providing features to improve usability such as categorization of Dimensions and Metrics and comprehensive search capability. -->
 
 ### Report mappings
 
@@ -41,7 +24,7 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 - Consolidated reporting for comprehensive performance analysis
 - Broader coverage of metrics and dimensions
 
-| Legacy Report Name      | Mapped Report Name | API Name                           |
+| Legacy Report Name      | Mapped Report Name | API Name                       |
 |---------------------|-------------------|-----------------------------------  |
 | Delivery Analytics  | Historical Report | `monetize_creative_brand_analytics` |
 | Inventory Analytics | Historical Report | `monetize_supply_analytics`         |
@@ -49,46 +32,13 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 > [!NOTE]
 > Coverage of dimensions and metrics is in progress. Additional fields are being added to support the deprecation of legacy report types.
 
-<!--
-## New features
-
-### Report enhancements
-
-- Bringing together the new Delivery and Inventory analytics reports into one **Historical report builder** experience:
-
-  - Consolidated reporting for better performance insights.
-  - Broader coverage of metrics and dimensions.
-
-| Legacy UI Name      | New UI Report Name | API Name                           |
-|---------------------|-------------------|-----------------------------------  |
-| Delivery Analytics  | Historical Report | `monetize_creative_brand_analytics` |
-| Inventory Analytics | Historical Report | `monetize_supply_analytics`         |
-
-> [!NOTE]
-> Coverage of dimensions and metrics is under development. Additional fields are planned to enable the deprecation of legacy report types. 
-
-## New user interface
-
-### Improved navigation
-
-Access reports with fewer clicks for enhanced usability.   -->
-
 ## Legacy reports
 
-Legacy reports will no longer receive Microsoft Monetize data starting mid-2025. Historical data will remain accessible based on each report’s standard retention period or 730 days, whichever is shorter. This is applicable to reports such as Network Analytics and Advertiser Video Analytics. Users should transition to new reports to access data generated after 10 October 2024. These new report types automatically include data for all impression types except for 7=RTB (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
+Legacy reports will no longer receive Microsoft Monetize data starting `mid-2025`. Historical data will remain accessible based on each report’s standard retention period or `730 days`, whichever is shorter. This is applicable to reports such as Network Analytics and Advertiser Video Analytics. Users should transition to new reports to access data generated after `10 October 2024`. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
 > [!NOTE]
 > - Communication will be provided in advance to support the transition process.
 > - Reporting for Microsoft Invest and External SSPs is not included in these datasets.
 
-<!--
-Legacy reports are planned to not be populated with new Monetize data from mid 2025. Historic data will be available up to the individual report's standard retention and or 730 days, whichever is lower. This includes reports like *Network Analytics* and *Advertiser Video Analytics*. Users are encouraged to transition to the new reports as soon as possible for reports accessing data after 10th October 2024.
-
-> [!NOTE]
-> Communication will be sent in advance to support the transition.
-
-### Scope of data
-
-These new report types automatically include data for all impression types except for 7=RTB (a buying transaction on supply from another seat to your own) for Monetize Sellers. Reporting for Invest and External SSPs is not included in these datasets. -->
 
 ## Legacy report types
 
@@ -147,7 +97,6 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - `month_to_date`
 - `month_to_yesterday`
 
-
 - ### Data retention period
 
 > [!NOTE]
@@ -166,14 +115,6 @@ Intervals determine how your data is grouped together into rows in the report re
 - **Monthly:** Data is grouped by the month.
 - **Cumulative:** Data is covered by an entire selected period.
 
-<!--
-:::image type="content" source="media/intervals-cumulative.png" alt-text="The screenshot illustrates Intervals, which define how data is grouped in the report, such as hourly, daily, monthly, or cumulative."::: -->
-
-<!--
-## Data availability
-
-- **Maximum retention:** 2 years and 2 months.
-- **Current maximum data availability:** 90 days (planned extensions forthcoming).-->
 
 ## Filters
 
@@ -183,12 +124,8 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 - Publisher name
 - Impression type
 
-<!--
-:::image type="content" source="media/data-availability-filters.png" alt-text="The screenshot shows filter options to include or exclude data for specific dimensions."::: -->
 
 ### Dimensions
-
-<!-- Users can filter and group data using various **dimensions** and **metrics**.-->
 
 > [!WARNING]
 > Some Dimensions, such as **Device Make** and **Creative**, cannot be used together. An info message will indicate unavailable combinations.
@@ -387,46 +324,6 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `external_click` | int | Clicks as recorded by the external clicktracker. |
 | `external_impression` | int | Imps as recorded by the external impression tracker. |
 | total_revenue_ecpa | money | The total revenue per acquisition. |
-
-<!-->
-### Revenue types
-
-Revenue types supported by the new reports include:
-
-- **Flat CPM**: Fixed payment per 1,000 impressions.
-- **CPC**: Payment per click.
-- **Revshare**: Revenue-sharing model based on CPC or CPA.
-
-| Name               | Description                                             |
-|--------------------|---------------------------------------------------------|
-| **No Payment**     |                                                         |
-| **Flat CPM**       | A flat payment per 1000 impressions.                    |
-| **Cost plus CPM**  | Cost (what you spend on inventory) plus an extra CPM.   |
-| **Cost plus margin**| Cost (what you spend on inventory) plus a percentage of what you spend. |
-| **CPC**            | A flat payment per click.                              |
-| **CPA**            | A flat payment per conversion.                         |
-| **Revshare**       | A payment on a revshare basis (CPC or CPA).             |
-| **Estimated CPM**  | The estimated payment per 1000 impressions.            |
-| **CPVM**           | A flat payment per 1000 viewable impressions.          |
-
-### Impression types
-
-The following impression types are reported:
-
-| Value | Name                 | Definition                                          |
-|-------|----------------------|-----------------------------------------------------|
-| 1     | Blank                | No creative served.                                 |
-| 2     | PSA                  | A public service announcement served because no other creative was eligible. |
-| 3     | Default Error        | A default creative served due to a timeout issue.   |
-| 4     | Default              | A default creative served because no line item bid or no other creative was eligible. |
-| 5     | Kept                 | One of your managed advertisers served a creative.  |
-| 6     | Resold               | The impression was sold to a third-party buyer.     |
-| 7     | RTB                  | Your creative served on third-party inventory.      |
-| 8     | PSA Error            | A public service announcement served due to a timeout issue. |
-| 9     | External Impression  | An impression from an impression tracker.           |
-| 10    | External Click       | A click from a click tracker.                       |
-| 11    | Insertion            | Your creative served on third-party inventory where it persists across page-loads and sessions. |
--->
 
 
 ### Examples

@@ -40,9 +40,9 @@ The Report Center serves as a central location for accessing all your Saved, Sch
     - Select the **Download** button, to download a report. You will be prompted to choose a file format—XLSX, CSV, Excel/TSV, or JSON. Once selected, the file will download directly in your browser. 
 
 
-### Creating New 
+### Create New 
 - To create a new report, select **Create New** from the Reporting sub-menu or click the **Create New** button at the top right corner of the **Report Center** screen. This will take you to the **Create New Report** screen, that displays a selection of report types, organized into two main sections:
-    - Monetize Reports: Microsoft Monetize offers a range of report types that provide metrics across various dimensions under the Monetize Reports. These reports are grouped into the following categories: 
+    - **Monetize Reports:** Microsoft Monetize offers a range of report types that provide metrics across various dimensions under the Monetize Reports. These reports are grouped into the following categories: 
         - **Analytics:** Analytical category contains reports that enable you to analyze platform requests and transactions. 
         - **Billing and Usage:** Billing and Usage category contains reports that provide data for billing, creative audits, and the usage of data and vendors on the platform. 
         - **Reach:** Reach category contains reports that enable you to understand unique user counts, user frequency, and segments. 
@@ -77,7 +77,7 @@ After you select **Run Report**, the interface displays a preview of up to 1,000
 - To resize a column: 
     - Hover over the right edge of the column header until the resize cursor appears. 
     - Click and drag to adjust the column width as needed. 
-- You can update your report by adjusting the **Time Period**, **Interval**, **Filters**, or *8Advanced Settings**, and then select **Run Report** again to refresh the results with the new settings. 
+- You can update your report by adjusting the **Time Period**, **Interval**, **Filters**, or **Advanced Settings**, and then select **Run Report** again to refresh the results with the new settings. 
 - To modify the dimensions, metrics, or reorder columns: 
     - Select the **Edit** button located at the far right of the screen. This opens the selections panel where you can adjust the report fields and column order. 
 
@@ -88,7 +88,7 @@ Historical Report is the primary analytics report in Microsoft Monetize, offerin
 
 ### Legacy reporting 
 
-Legacy Reporting enables you to access the legacy version of the reporting interface, where legacy reports are still available. Legacy reports will no longer be populated with new Microsoft Monetize data starting in mid-2025. Historical data will remain available up to each report’s standard retention period or `730` days, whichever is shorter. This applies to reports such as Network Analytics and Advertiser Video Analytics. 
+Legacy Reporting enables you to access the legacy version of the reporting interface, where legacy reports are still available. Legacy reports will no longer be populated with new Microsoft Monetize data starting in `mid-2025`. Historical data will remain available up to each report’s standard retention period or `730` days, whichever is shorter. This applies to reports such as [Network Analytics](network-analytics-report.md) and [Advertiser Video Analytics](advertiser-video-analytics-report.md). 
 > [!NOTE]
 > Users are strongly encouraged to transition to the new reporting experience for accessing data generated after `10th October 2024`. 
 
@@ -96,3 +96,5 @@ Legacy Reporting enables you to access the legacy version of the reporting inter
 ## In this guide
 
 - [Historical Reporting in Microsoft Monetize](monetize-historical-reporting.md)
+- [Network Analytics](network-analytics-report.md) 
+- [Advertiser Video Analytics](advertiser-video-analytics-report.md)

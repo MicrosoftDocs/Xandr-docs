@@ -12,28 +12,11 @@ ms.date: 10/18/2024
 
 ## Overview
 
-Historical report is the primary analytics report in Microsoft Monetize, offering comprehensive data across a wide range of dimensions and metrics. It consolidates more than ten legacy report types, including Network Analytics, Seller Brand Review, and Seller Fill and Delivery. It reduces the number of report types a user needs to interact with, providing features to improve usability such as categorization of Dimensions and Metrics and comprehensive search capabilities. Historical report is built from two datasets accessible through a single interface, with Dimension and Metric incompatibilities surfaced during selection. The expanded range of options provides a more detailed view of data across multiple aspects of delivery and inventory, with additional reportable dimension combinations, such as placement and device. The Historical report includes most of the data available in the legacy reporting system. 
+Historical report is the primary analytics report in Microsoft Monetize, offering comprehensive data across a wide range of dimensions and metrics. It consolidates more than ten legacy report types, including [Network Analytics](network-analytics.md), [Seller Brand Review](seller-brand-review-report.md), and [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md). It reduces the number of report types a user needs to interact with, providing features to improve usability such as categorization of `Dimensions` and `Metrics` and comprehensive search capabilities. <br> Historical report is built from two datasets accessible through a single interface, with `Dimension` and `Metric` incompatibilities surfaced during selection. The expanded range of options provides a more detailed view of data across multiple aspects of delivery and inventory, with additional reportable dimension combinations, such as placement and device. The Historical report includes most of the data available in the legacy reporting system. 
 
 > [!NOTE]
 > During the Alpha phase, additional dimensions and metrics are added to address key feature gaps compared to the legacy reports. Data in the Historical report is available from 10 October 2024 for general access, with earlier availability in 2024 for clients participating in the Alpha phase. The reporting interface in Microsoft Monetize provides access to the Historical report for Network users. Access to all existing report types is available during the Alpha phase, along with support for Publisher and Advertiser users.
 
-
-<!-->
-The new Microsoft Monetize reporting UI and the Historical report are currently in Alpha, enabled for select clients. Please contact your account manager if you require further information.
-
-The Historical report already includes most of the data that is available in the legacy reporting. During the Alpha phase, we will be adding additional dimensions and metrics to close outstanding key feature gaps compared to the legacy reports. Data in the Historical Report is available from 10th October 2024 generally, and from earlier in 2024 for clients involved in the Alpha.
-
-Currently, the new reporting UI only provides access to the Historical report for Network users. Access to all existing report types will be added during the Alpha, along with support for Publisher and Advertiser users.
-
-### New report types and user interface for Monetize
-
-The new **Historical report** in the new Microsoft Monetize reporting UI offers comprehensive data across a wide range of dimensions and metrics. This report will replace several legacy Network and Advertiser/Publisher reports, enhancing and simplifying reporting capabilities.
-
-The Historical report is built from two datasets that are accessible from one UI, with dimension and metric incompatibilities shown to the user as they make selections. In the API, the datasets are available independently as two report types.
-
-The updated, expanded range enables a more granular understanding of data across multiple aspects of delivery and inventory, with new reportable combinations of dimensions that were not possible before, such as placement and device.
-
-The new UI is a significant upgrade, reducing the number of report types a user needs to interact with, providing features to improve usability such as categorization of Dimensions and Metrics and comprehensive search capability. -->
 
 ### Report mappings
 
@@ -41,7 +24,7 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 - Consolidated reporting for comprehensive performance analysis
 - Broader coverage of metrics and dimensions
 
-| Legacy Report Name      | Mapped Report Name | API Name                           |
+| Legacy Report Name      | Mapped Report Name | API Name                       |
 |---------------------|-------------------|-----------------------------------  |
 | Delivery Analytics  | Historical Report | `monetize_creative_brand_analytics` |
 | Inventory Analytics | Historical Report | `monetize_supply_analytics`         |
@@ -49,50 +32,17 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 > [!NOTE]
 > Coverage of dimensions and metrics is in progress. Additional fields are being added to support the deprecation of legacy report types.
 
-<!--
-## New features
-
-### Report enhancements
-
-- Bringing together the new Delivery and Inventory analytics reports into one **Historical report builder** experience:
-
-  - Consolidated reporting for better performance insights.
-  - Broader coverage of metrics and dimensions.
-
-| Legacy UI Name      | New UI Report Name | API Name                           |
-|---------------------|-------------------|-----------------------------------  |
-| Delivery Analytics  | Historical Report | `monetize_creative_brand_analytics` |
-| Inventory Analytics | Historical Report | `monetize_supply_analytics`         |
-
-> [!NOTE]
-> Coverage of dimensions and metrics is under development. Additional fields are planned to enable the deprecation of legacy report types. 
-
-## New user interface
-
-### Improved navigation
-
-Access reports with fewer clicks for enhanced usability.   -->
-
 ## Legacy reports
 
-Legacy reports will no longer receive Microsoft Monetize data starting mid-2025. Historical data will remain accessible based on each report’s standard retention period or 730 days, whichever is shorter. This is applicable to reports such as Network Analytics and Advertiser Video Analytics. Users should transition to new reports to access data generated after 10 October 2024. These new report types automatically include data for all impression types except for 7=RTB (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
+Legacy reports will no longer receive Microsoft Monetize data starting `mid-2025`. Historical data will remain accessible based on each report’s standard retention period or `730 days`, whichever is shorter. This is applicable to reports such as Network Analytics and Advertiser Video Analytics. Users should transition to new reports to access data generated after `10 October 2024`. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
 > [!NOTE]
 > - Communication will be provided in advance to support the transition process.
 > - Reporting for Microsoft Invest and External SSPs is not included in these datasets.
 
-<!--
-Legacy reports are planned to not be populated with new Monetize data from mid 2025. Historic data will be available up to the individual report's standard retention and or 730 days, whichever is lower. This includes reports like *Network Analytics* and *Advertiser Video Analytics*. Users are encouraged to transition to the new reports as soon as possible for reports accessing data after 10th October 2024.
-
-> [!NOTE]
-> Communication will be sent in advance to support the transition.
-
-### Scope of data
-
-These new report types automatically include data for all impression types except for 7=RTB (a buying transaction on supply from another seat to your own) for Monetize Sellers. Reporting for Invest and External SSPs is not included in these datasets. -->
 
 ## Legacy report types
 
-### Network report types
+#### Network report types
 
 The reports consolidate Delivery and Inventory analytics, streamlining data access. The table below maps the consolidated reports to their legacy counterparts and API names:
 
@@ -392,161 +342,10 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `External Impression` | Imps as recorded by the external impression tracker. |
 | total_revenue_ecpa | The total revenue per acquisition. |
 
-<!--
-### Dimensions
-
-| UI column| API column| Report Type| Type| Filter?| Grouping| Description|
-|---|---|---|---|---|---|---|
-|`Advertiser`| `advertiser`| both| string| No| Buyside | The advertiser that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
-| `Advertiser ID` (Selectable via "Show IDs as separate column" option)| `advertiser_id`| both| int| Yes | Buyside | The ID of the advertiser that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
-| `Advertiser Name` (Selectable via "Show IDs as separate column" option)| `advertiser_name`|both| string | No| Buyside| The name of the advertiser that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
-| `Bidder`| `bidder`| both| int | No| Buyside| The Bidder object (in most cases this is a DSP).|
-| `Bidder ID` (Selectable via "Show IDs as separate column" option)| `bidder_id`| both| int| Yes| Buyside| The ID of the Xandr Bidder object (in most cases this is a DSP).|
-| `Bidder Name` (Selectable via "Show IDs as separate column" option)| `bidder_name`| both| int| No| Buyside | The name of the Xandr Bidder object (in most cases this is a DSP).|
-| `Billing Period`| `billing_period_id` | both | int | Yes| Buyside| The ID of the Billing Period |
-| `Billing Period. Booked Imps Budget Daily`| `billing_period.booked_imps_budget_daily`| both| int| No | Buyside | The daily impression budget of the insertion order's billing period.|
-| `Billing Period.Booked Imps Budget Lifetime`| `billing_period.booked_imps_budget_lifetime` | both | int| No | Buyside | The lifetime impression budget of the insertion order's billing period.|
-| `Billing Period.Start Date`| `billing_period.start_date`| both| datetime| No| Buyside| The earliest date of the insertion order's billing period. Note: Alpha-Beta Notice: This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.|
-| `Billing Period.End Date`| `billing_period.end_date` | both| datetime| No| Buyside| The last date of the insertion order's billing period. Note: Alpha-Beta Notice: This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change. |
-| `Billing Period.External Code`| b`illing_period.external_code`| both| int| No| Buyside| The custom code for the billing period.|
-| `Buyer Member`| `buyer_member`| both| string| No| Buyside| The name with ID in brackets of the Xandr buyer member that purchased the impression 	|
-| `Buyer Member ID` (Selectable via "Show IDs as separate column" option)| `buyer_member_id`| both| int | Yes| Buyside| The ID of the Xandr buyer member that purchased the impression|
-| `Buyer Member Name` (Selectable via "Show IDs as separate column" option)| `buyer_member_name`| both| string | No| Buyside| The Name of the Xandr buyer member that purchased the impression 	|
-| `Buyer Seat`| `buyer_seat`| both | string| No| Buyside| The seat for the Bidder. This enables reporting on sub-seats for bidders that do not have buyer_member_id breakouts.|
-| `Buyer Seat ID` (Selectable via "Show IDs as separate column" option) | `buyer_seat_id` | both| int| Yes| Buyside | The ID of the seat for the Bidder. This enables reporting on sub-seats for bidders that do not have buyer_member_id breakouts. |
-| `Buyer Seat Name` (Selectable via "Show IDs as separate column" option)| `buyer_seat_name`| both | string| No| Buyside| The name of the seat for the Bidder. This enables reporting on sub-seats for bidders that do not have buyer_member_id breakouts.|
-| `Buyer Seat Code`| `buyer_seat_code` | both| string | No | Buyside | The custom buyer seat ID (submitted by DSP) which was used to bid on the impression|
-| `Flight Id`| `flight_id`| both | int | No | Buyside | The ID of the line item flight under which the impression was purchased.|
-| `Flight.Booked Impressions Budget Daily`| `flight.booked_impressions_budget_daily`| both | int| No | Buyside| The daily impression budget for the line item's flight.|
-| `Flight.Booked Impressions Budget Lifetime`| `flight.booked_impressions_budget_lifetime`| both| int| No| Buyside| The lifetime impression budget for the line item's flight.|
-| `Flight.Start Date` | `flight.start_date`| both| datetime| No| Buyside| The start date of the line item's flight.|
-| `Flight.End Date`|` flight.end_date`| both| datetime| No| Buyside| The end date of the line item's flight.|
-| `Insertion Order`| `insertion_order`| both| string | Yes| Buyside| The insertion order that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
-| `Insertion Order ID` (Selectable via "Show IDs as separate column" option)| `insertion_order_id`| both | int| No| Buyside| The insertion order ID that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression. |
-| `Insertion Order Name` (Selectable via "Show IDs as separate column" option)| `insertion_order_name`| both| string | No| Buyside | The insertion order name that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression.|
-| `Insertion Order.Billing Code`| `insertion_order.billing_code`| both| string| No| Buyside| The billing code associated with the insertion order (if there is one).|
-| `Insertion Order.End Date`| `insertion_order.end_date`| both| datetime| No| Buyside| The end date of the insertion order (for legacy insertion orders).|
-| `Insertion Order.Start Date`| `insertion_order.start_date` | both | datetime| No| Buyside 	| The start date of the insertion order (for legacy insertion orders).|
-|`Insertion Order.State`| insertion_order.state| both| string| No | Buyside| The state of the insertion order (e.g., active, inactive).|
-| `Insertion Order.Type` | `insertion_order.type` | both| int| Yes| Buyside| The type of insertion order associated with the impression (e.g. Legacy, Seamless).|
-| `Line Item` | `line_item` | both | string | No| Buyside 	| The line item order that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression. 	|
-| `Line Item Id` (Selectable via "Show IDs as separate column" option) 	| `line_item_id` 	| both 	| int 	| Yes| Buyside| The line item ID that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression. |
-| `Line Item Name` (Selectable via "Show IDs as separate column" option)| `line_item_name`| both 	| string | No | Buyside| The line item name that bought the impression. This will be an object owned by the seller and will be populated for a managed bought or deal v2 impression. |
-| `Line Item.Comments`| `line_item.comments`| both | string | No 	| Buyside 	| Any comments that have been entered for this line item.|
-| `Line Item.Start Date` | `line_item.start_date`| both| datetime | No 	| Buyside 	| The start date of the line item.|
-| `Line Item.End Date`|`line_item.end_date`| both| datetime| No | Buyside 	| The end date of the line item. |
-| `Line Item.Status` | line_item.status | both| string| No| Buyside 	| The state of the line item (e.g., active, inactive).|
-| `Line Item.Code`| `line_item_code`| both| string | No| Buyside| The optional external code applied to the line item.|
-| `Li Priority`| `li_priority`| both| string | Yes | Buyside | The bidding priority for a line item that targets direct inventory. For more information, see Bidding Priority in the UI Documentation. Possible values: 1 - 20, where 20 is the highest priority.|
-| `Li Subtype` | `li_subtype`| both| string | Yes| Buyside| The line item subtype (e.g., Augmented, Deal, Guaranteed). |
-| `Li Subtype ID`(Selectable via "Show IDs as separate column" option) | `li_subtype_id`| both| int| No| Buyside| The line item subtype ID.|
-| `Li Subtype Name` (Selectable via "Show IDs as separate column" option)| `li_subtype_name`| both| string| No | Buyside| The line item subtype name. |
-| `Salesrep For Line Item`| `salesrep_for_line_item` | both| string| Yes| Reporting Labels| A custom reporting label field containing the sales representative. You may only select one reporting label per report.|
-| `Trafficker For Line Item` | `trafficker_for_line_item`| both| string | Yes| Reporting Labels| A custom reporting label field containing the trafficker. You may only select one reporting label per report. |
-| `Type For Line Item` | `type_for_line_item`| both| string | Yes| Reporting Labels| A custom reporting label field used to list the line item type (e.g., Retargeting LI). This is not the same as the Type attribute described above. You may only select one reporting label per report.|
-| `Insertion Order Type Label`| `insertion_order_type` | both| string | Yes| Reporting Labels 	| A custom reporting label field used to list the insertion order type (e.g., Branding IO). This is not the same as the Type attribute described above. You may only select one reporting label per report.|
-| `Insertion Order.Sales Rep Label` | `insertion_order.sales_rep_label`| both| string | Yes| Reporting Labels| A customer reporting label field used to list the sales representative associated with the insertion order. You may only select one reporting label per report.|
-| `Insertion Order.Trafficker Label` | `insertion_order.trafficker_label`| both| string| Yes| Reporting Labels| A customer reporting label field used to list the trafficker associated with the insertion order. You may only select one reporting label per report.|
-| `Placement`| `placement`| both| string | No| Sellside| The Xandr Placement for the impression.|
-| `Placement ID` (Selectable via "Show IDs as separate column" option)| `placement_id`| both| int| Yes| Sellside | The ID of the Xandr Placement for the impression.|
-| `Placement Name` (Selectable via "Show IDs as separate column" option)| `placement_name`| both| string| No | Sellside| The name of the Xandr Placement for the impression.|
-| `Placement.Code`| `placement.code`| both| string| No| Sellside| The code of the Xandr Placement for the impression.|
-| `Placement.Code2`| `placement.code2`| both | string| No| Sellside| The code of the Xandr Placement for the impression. |
-| `Placement.Code3`| `placement.code3`| both| string | No| Sellside| The code of the Xandr Placement for the impression.|
-| `Placement Group`| `plmt_grp`| both | string | No| Sellside| Xandr Placement Group for the impression.|
-| `Placement Group ID` (Selectable via "Show IDs as separate column" option)| `plmt_grp_id`| both| int| Yes | Sellside| The ID of the Xandr Placement Group for the impression. |
-| `Placement Group Name` (Selectable via "Show IDs as separate column" option)| `plmt_grp.name`| both| string| No| Sellside | The name of the Xandr Placement Group for the impression.|
-| `Placement Group.Code`| `plmt_grp.code`| both| string| No| Sellside| The code of the Xandr Placement Group for the impression.|
-| `Publisher` | `publisher`| both | string | No | Sellside | The Xandr Publisher for the impression. |
-| `Publisher ID` (Selectable via "Show IDs as separate column" option)| `publisher_id`| both| int| Yes | Sellside| The ID of the Xandr Publisher for the impression.|
-| `Publisher Name` (Selectable via "Show IDs as separate column" option)| `publisher_name`| both| string | No | Sellside| The name of the Xandr Publisher for the impression. |
-| `Brand`| `brand`| monetize_creative_brand_analytics| string | No| Creative| The Brand as determined by the Xandr creative audit or self assigned for managed traffic |
-| `Brand ID` (Selectable via "Show IDs as separate column" option)| `brand_id`|monetize_creative_brand_analytics| int| Yes | Creative | The ID for the Brand as determined by the Xandr creative audit or self assigned for managed traffic |
-| `Brand Name` (Selectable via "Show IDs as separate column" option)| `brand_name` | monetize_creative_brand_analytics| string | No | Creative | The name for the Brand as determined by the Xandr creative audit or self assigned for managed traffic|
-| `Brand Category ID` | `brand_category_id`| monetize_creative_brand_analytics| int|Yes| Creative| The parent category ID for the creative's assigned brand|
-| `Brand Category Name` | `brand_category_name` | monetize_creative_brand_analytics | string | No   | Creative | The parent category name for the creative's assigned brand                                         |
-| `Creative` | `creative` | monetize_creative_brand_analytics | string | No   | Creative | Creative that served. It will only be populated for managed impressions.|
-| `Creative ID` (Selectable via "Show IDs as separate column" option) | `creative_id`| monetize_creative_brand_analytics | int| Yes| Creative | The Xandr ID for the creative that served.                                                         |
-| `Creative Name` (Selectable via "Show IDs as separate column" option) | `creative_name` | monetize_creative_brand_analytics | string | No | Creative | The Xandr name for the creative that served. The name will only be populated for managed impressions. |
-| `Creative Code`  | `creative_code` | monetize_creative_brand_analytics | string | No| Creative | The code of the creative. |
-| `Creative Media Type` | `creative_type` | both| string | No   | Creative | The media type of the creative that transacted                                                     |
-| `Creative Media Type ID` (Selectable via "Show IDs as separate column" option) | `creative_type_id` | both | int | No | Creative | The media type ID of the creative that transacted                                                  |
-| `Size` | `size` | both  | string | Yes  | Creative | For display creatives, this is the creative width x height in pixels |
-| `Domains Exposed Id` | `domains_exposed_id`| monetize_supply_analytics | int | No   | Visibility | Whether this inventory's domains are exposed for targeting by buyers. Allowed values: "Exposed", "Not exposed" |
-| `Domains Exposed`| `domains_exposed` | monetize_supply_analytics     | int    | No   | Visibility | Whether this inventory's domains are exposed for targeting by buyers. Allowed values: "Exposed", "Not exposed" |
-| `Exposed For Resale` | `exposed_for_resale`       | monetize_supply_analytics     | string | No   | Visibility | Viewability profile, used by sellers to expose/hide their content_categories info to buyers |
-| `Exposed For Resale Id` | `exposed_for_resale_id` | monetize_supply_analytics     | int    | No   | Visibility | Viewability profile, used by sellers to expose/hide their publisher info to buyers |
-| `Allowed Media Types` | `allowed_media_types_bitmap_name` | monetize_supply_analytics | string | No | Inventory | An array of the permitted media types for the impression  |
-| `Audit Type` | `audit_type`| monetize_supply_analytics | string | No | Inventory | The type of audit performed on the domain where the impression occurred.                           |
-| `Audit Type ID` (Selectable via "Show IDs as separate column" option) | `audit_type_id` | monetize_supply_analytics | int | Yes | Inventory | The ID of the type of audit performed on the domain where the impression occurred.|
-| `Audit Type Name` (Selectable via "Show IDs as separate column" option) | `audit_type_name` | monetize_supply_analytics | string | No | Inventory | The name of the type of audit performed on the domain where the impression occurred. |
-| `Browser`| `browser` | monetize_supply_analytics| string  | No   | Inventory   | The Name and ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service. |
-| `Browser ID` (Selectable via "Show IDs as separate column" option) | `browser_id`| monetize_supply_analytics  | int     | Yes    | Inventory   | The ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service.         |
-|`Content Category`| `content_category` | monetize_supply_analytics  | string  | No   | Inventory   | The ID and name of the universal content category associated with the audited domain.                                           |
-| `Content Category ID` (Selectable via "Show IDs as separate column" option) | `content_category_id` | monetize_supply_analytics  | int | Yes    | Inventory   | The ID of the universal content category associated with the audited domain.                                                   |
-| `Content Category Name` (Selectable via "Show IDs as separate column" option) | `content_category_name` | monetize_supply_analytics  | string  | No   | Inventory   | The name of the universal content category associated with the audited domain.|
-| `Fold Position` | `fold_position`| monetize_supply_analytics  | string  | No   | Inventory   | The fold position, i.e. where on the page the placement is located. For allowed values, see fold_position_id.                |
-| `Fold Position Id`| `fold_position_id`  | monetize_supply_analytics  | int     | Yes    | Inventory   | The ID of the fold position, i.e. where on the page the placement is located. Possible values for impressions: 0 = "unknown", 1 = "above", 2 = "below". |
-| `Supply Type` | `supply_type_id` | both | int     | Yes    | Inventory   | The ID of the type of inventory.                                                                                             |
-| `Supply Type Name` | `supply_type_name`     | both  | string  | No   | Inventory   | The type of inventory. Possible values: "web", "mobile_web", "mobile_app", "facebook_sidebar".                                |
-| `Prebid Server Eligible` | `prebid_server_eligible` | both  | int | Yes    | Prebid Server | Yes if PSP was eligible to bid into the auction for the impression. |
-| `Prebid Server Eligible` | `prebid_server_eligible_name` | both  | string  | No   | Prebid Server | Yes if PSP was eligible to bid into the auction for the impression. |
-| `SSP` | `ssp`  | both    | string  | No   | Prebid Server | When the transaction is bought by PSP (bidder_id=443) this field will show the individual SSP that transacted. Otherwise, the SSP will be recorded as Monetize. |
-| `SSP ID` (Selectable via "Show IDs as separate column" option) | `ssp_id` | both  | int | No   | Prebid Server | When the transaction is bought by PSP (bidder_id=443) this field will show the individual SSP that transacted. Otherwise, the SSP will be recorded as Monetize. |
-| `SSP Name` (Selectable via "Show IDs as separate column" option) | `ssp_name` | both                       | string  | No | Prebid Server | When the transaction is bought by PSP (bidder_id=443) this field will show the individual SSP that transacted. Otherwise, the SSP will be recorded as Monetize. |
-| `Deal` | `deal` | both  | string  | No   | Deals | The name and ID of the affected deal. |
-| `Deal ID` (Selectable via "Show IDs as separate column" option) | `deal_id`   | both   | int     | Yes    | Deals | The ID of the deal.|
-| `Deal Name` (Selectable via "Show IDs as separate column" option) | `deal_name` | both  | string  | No   | Deals | The name of the affected deal.|
-| `Deal Type` | `deal_type`  | both | string  | Yes | Deals  | Possible values: Open Auction (1), Private Auction (2), First Look (3), Programmatic Guaranteed (4), Curated (5 - only relevant for Curators). |
-| `Revenue Type` | `revenue_type` | both    | string  | No   | Payment     | For managed line items, this is the basis on which the booked revenue gets recorded for the Seller.  |
-| `Revenue Type` (Selectable via "Show IDs as separate column" option) | `revenue_type_id` | both | int | Yes | Payment | The basis on which the advertiser has agreed to pay you for the impression.   |
-| `Carrier` | `carrier`  | monetize_supply_analytics  | string  | No   | Device      | The carrier for the device on which the impression was served.                                                              |
-| `Carrier ID` (Selectable via "Show IDs as separate column" option) | `carrier_id` | monetize_supply_analytics  | int | Yes    | Device      | The ID of the carrier for the device on which the impression was served.|
-| `Carrier Name` (Selectable via "Show IDs as separate column" option) | `carrier_name` | monetize_supply_analytics| string| No   | Device      | The name of the carrier for the device on which the impression was served.  |
-| `Device Make`| `device_make` | monetize_supply_analytics  | string  | No | Device| The device manufacturer |
-| `Device Make ID (Selectable via "Show IDs as separate column" option)` | `device_make_id`  | monetize_supply_analytics| int| Yes  | Device | The ID of the device make on which the impression was served. The make is generally the manufacturer of the device (i.e., Apple). |
-| `Device Make Name` (Selectable via "Show IDs as separate column" option)| `device_make_name` | monetize_supply_analytics  | string  | No | Device | The name of the device make on which the impression was served. The make is generally the manufacturer of the device (i.e., Apple). To retrieve a complete list of device make IDs and names, use the Device Make Service.|
-| `Device Model` | `device_model`  | monetize_supply_analytics  | string| No   | Device   | The ID and name of the device model on which the impression was served. The model is generally the specific product (i.e., IPhone). |
-| `Device Model ID` (Selectable via "Show IDs as separate column" option) | `device_model_id` | monetize_supply_analytics  | int  | Yes | Device | The ID of the device model on which the impression was served. The model is generally the specific product (i.e., IPhone). |
-| `Device Model Name` (Selectable via "Show IDs as separate column" option) | `device_model_name`| monetize_supply_analytics  | string  | No   | Device | The name of the device model on which the impression was served. The model is generally the specific product (i.e., IPhone). |
-| `Device Type` | `device_type`  | monetize_supply_analytics  | string  | No   | Device | The device type the impression originated from. 0=Unknown, 1=PC, 2=Phone, 3=Tablet, 4=TV, 5=Game Console, 6=Media Player, 7=Set top box |
-| `Device Type ID`| `device_type_id` | monetize_supply_analytics  | int | Yes | Device | The ID of the device type the impression originated from. 0=Unknown, 1=PC, 2=Phone, 3=Tablet, 4=TV, 5=Game Console, 6=Media Player, 7=Set top box |
-| `Operating System` | `operating_system`  | monetize_supply_analytics  | string  | No   | Device  | The name of the operating system of the device followed by the ID (Microsoft Advertising format). |
-| `Operating System ID` (Selectable via "Show IDs as separate column" option) | `operating_system_id` | monetize_supply_analytics  | int | Yes| Device | The ID of the operating system of the device. |
-| `Operating System Name` (Selectable via "Show IDs as separate column" option) | `operating_system_name`  | monetize_supply_analytics  | string  | No| Device  | The name of the operating system of the device. |
-| `Operating System Family` | `operating_system_family` | monetize_supply_analytics  | string  | No   | Device| The name of the operating system family (e.g., Android, Microsoft Windows) of the device followed by the ID (Microsoft Advertising format). |
-| `Operating System Family ID` (Selectable via "Show IDs as separate column" option) | `operating_system_family_id` | monetize_supply_analytics| int | Yes | Device | The ID of the operating system family associated with the device the impression was served on. |
-| `Operating System Family Name` (Selectable via "Show IDs as separate column" option) | `operating_system_family_name` | monetize_supply_analytics  | string  | No   | Device | The name of the operating system family associated with the device the impression was served on. |
-| `Curator Member`| `curator_member` | both| string| No| Curation | The ID of the curator that was present in the transaction |
-| `Curator Member ID` (Selectable via "Show IDs as separate column" option) | `curator_member_id` | both  | int | Yes | Curation  | The ID of the curator that was present in the transaction |
-| `Curator Member Name` (Selectable via "Show IDs as separate column" option) | `curator_member_name` | both  | string  | No| Curation | The name of the curator that was present in the transaction |
-| `Is Curated` | `is_curated`  | both  | boolean | Yes | Curation| Yes if the transaction occurred via a curator |
-| `Demand Channel`  | `demand_channel` | both  | string  | No   | Transaction  | The type of demand that bought the impression. Possible values: Managed (imp_type=5), PSP (bidder_id=443), Standard Deal, Priority Deal, PG Deal, Curation (curator_member_id > 0) and Open Exchange (imp_type=6). |
-| `Demand Channel ID` (Selectable via "Show IDs as separate column" option) | `demand_channel_id`  | both | int | Yes| Transaction  | The type of demand that bought the impression. Possible values: Managed (imp_type=5), PSP (bidder_id=443), Standard Deal, Priority Deal, PG Deal, Curation (curator_member_id > 0) and Open Exchange (imp_type=6). |
-| `Demand Channel Name` (Selectable via "Show IDs as separate column" option) | `demand_channel_name`| both  | string  | No   | Transaction  | The type of demand that bought the impression. Possible values: Managed (imp_type=5), PSP (bidder_id=443), Standard Deal, Priority Deal, PG Deal, Curation (curator_member_id > 0) and Open Exchange (imp_type=6). |
-| `Imp Type` | `imp_type`  | both| string | No| Transaction  | The type of transaction. (1=blank, 2=PSA, 3=Default Error, 4=default, 5=kept, 6=resold, 7=RTB, 8=PSA Error, 9=External Impression, 10=External Click, 11=Insertion) |
-| `Imp Type Id` | `imp_type_id`  | both  | int | Yes | Transaction  | The type of transaction. (1=blank, 2=PSA, 3=Default Error, 4=default, 5=kept, 6=resold, 7=RTB, 8=PSA Error, 9=External Impression, 10=External Click, 11=Insertion) |
-| `Call Type`| `call_type`  | both| string  | Yes | Integration  | The Impbus handler the impression originated from |
-| `Sdk Version`| `sdk_version` | monetize_supply_analytics  | string | No | Integration  | The version of the Xandr SDK (AST or Mobile SDK) used to generate the ad request. |
-| `Mobile Application`| `mobile_application`| both  | string  | No | Domain / App | The application the bundle on the ad request was mapped to |
-| `Mobile Application ID` (Selectable via "Show IDs as separate column" option) | `mobile_application_id`  | both  | int | No | Domain / App | The ID for the application the bundle on the ad request was mapped to |
-| `Mobile Application Name` (Selectable via "Show IDs as separate column" option) | `mobile_application_name` | both| string  | No | Domain / App | The name for the application the bundle on the ad request was mapped to |
-| `Site Domain`| `site_domain` | both | string| No   | Domain / App | The domain detected for the ad request |
-| `Country Code` | `geo_country` | both  | string  | Yes | Geography  | The country/region 2 digit code in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country/region information is not provided. Country/region information is detected by the IP address of the user. Note: Some discrepancies are normal with external data sources due to differences between country/region detection methods. |
-| `Geo Country Name`| `geo_country_name` | both| string  | No | Geography | The country/region name in which the impression took place. For impression requests for which Xandr received no indication that the ad was rendered (i.e., non-transacted), country/region information is not provided. Country/region information is detected by|
-| `Day`  | `day`  | both | date  | No   | Time and Date | The day of the Auction |
-| `Hour` | `hour` | both  | date  | No  | Time and Date | The hour of the auction. Note: For impressions older than 100 days, the day will be returned rather than the hour.|
-| `Month`  | `month`  | both | date  | No   | Time and Date | The month of the auction|
-| `Filtered Request Reason` | `filtered_request_reason`| both | string| No | Request / Response | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
-| `Filtered Request Reason Id`| `filtered_request_reason_id`| both | int| No | Request / Response | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. | -->
 
 ## Revenue types
 
 Revenue types supported by Historical report include:
-<!-->
-- **Flat CPM**: Fixed payment per 1,000 impressions.
-- **CPC**: Payment per click.
-- **Revshare**: Revenue-sharing model based on CPC or CPA. -->
 
 | Name                   | Description                                                             |
 |----------------------- |------------------------------------------------------------------------ |
@@ -595,8 +394,8 @@ Follow these steps to generate your report:
 1. Select the relevant filters to limit the data displayed to just the information you want. For example, rather than running a report that shows impressions for all inventory sources, you may want to list results for just a select few. When you select a filter (by clicking Edit), a selection panel appears. Select items in the Available list (left), then click Add to include them in the Chosen list (right).
 
 1. Group by Dimension. Grouping allows you to display rows of data in the order you prefer. 
-> [!WARNING]
-> The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
+    > [!WARNING]
+    > The more dimensions you group by, the larger the data set that is returned. Larger data sets can take substantially longer to process. Be sure to group using only the dimensions you need.
     
 1. Dimensions are grouped into major categories. Click the arrow next to a category to see all dimensions under it, or use the search bar to find the desired dimension.
 1. **Select Your Metrics**: Metrics are grouped into major categories. Click the arrow next to a category to see all available metrics, or use the search bar to find the metric you need.
@@ -616,131 +415,6 @@ Follow these steps to generate your report:
 > [!TIP]
 > The maximum size of the report that can be downloaded from the UI is 100 MB. Also, there is a limit of 100,000 rows per report when downloading as XLSX and Excel file. If the size of the report is more than that, you can try to download it using the API for that reporting service (The limit here is 10 million rows).
 
-<!--
-## Report results
-
-Once the data is ready, it will be displayed in the report interface. -->
-
-<!--
-### Key features of report results
-
-- **Initial Display**: The first 500 rows of data are shown in the interface.
-- **Downloading Options**: Users can download the full report for comprehensive analysis. 
-
-   > [!TIP]
-   > The maximum size for reports downloaded from the UI is 100 MB, with a limit of 100,000 rows in Excel or xlsx formats. For larger datasets, use the API, which supports up to 10 million rows. -->
-
-<!--
-### Pivot table settings
-
-Users can modify report columns:
-
-- **Add/Remove Dimensions and Metrics**: Use the **Modify Selections** panel.
-- **Reorder Columns**: Drag and drop dimensions and metrics for a custom layout. 
-
-   > [!WARNING]
-   > Large datasets may take longer to process. Group data by only the necessary dimensions to optimize performance.
-<!--
-## API report
-
-### Create a JSON formatted report request
-
-The JSON request should include the following key fields:
-
-- **report_type**: `monetize_supply_analytics` or `monetize_creative_brand_analytics`.
-- **columns**: List of dimensions and metrics.
-- **report_interval**: Time period for the report.
-- **format**: CSV, Excel, or HTML.
-
-For a complete list of fields that can be included in the JSON file, see the Report Service.
-
-### Example JSON request
-
-To create an API report request, format the JSON file as shown below:
-
-```
-
-$ {code}$ cat monetize_supply_analytics
-{
-    "report": {
-        "report_type": "monetize_supply_analytics",
-        "columns": ["hour", "seller_member_name", "buyer_member_name", "advertiser_name", "publisher_name", "imps", "clicks"],
-        "report_interval": "last_48_hours",
-        "format": "csv"
-    }
-}
-```
-
-**Submit the request**.
-
-## POST the request to the reporting service
-
-Use the following *curl* command to submit the request:
-
-```
-
-{code}$ curl -b cookies -X POST -d @ monetize_supply_analytics 'https://api.appnexus.com/report'
-{
-   "response": {
-      "status": "OK",
-      "report_id": "097f59fc3ab7d02c5d60db42081d9b69"
-   }
-}
-```
-
-## GET the report status from the report service
-
-After submitting a report request, use the GET method to check the status.
-
-### Example request
-
-```
-{code}$ curl -b cookies 'https://api.appnexus.com/report?id=097f59fc3ab7d02c5d60db42081d9b69' 
-
-{ 
-
-   "response":{ 
-      "status":"OK", 
-      "report":{ 
-         "name":null, 
-         "created_on":"2010-05-25 19:19:53", 
-         "json_request":"{\"report\":{\"report_type\":\"monetize_supply_analytics\",\"columns\":[\"hour\",\"seller_member_name\", 
-            \"buyer_member_name\",\"advertiser_name\",\"publisher_name\",\"imps\",\"clicks\"], 
-            \"row_per\":[\"hour\",\"seller_member_id\",\"buyer_member_id\",\"advertiser_id\",\"publisher_id\"], 
-            \"report_interval\":\"last_48_hours\"}}", 
-         "url": "report-download?id=b97897a7864dd8f34e7457226c7af592" 
-      }, 
-      "execution_status":"ready" 
-   } 
-}
-```
-
-### Response
-
-  - **execution_status**: Shows the current status (pending, ready, etc.).
-
-> [!TIP]
-> Continue polling until `execution_status` is ready.
-
-## GET the report data from the report download service
- 
-
-Once the report is ready, download the data using the report-download service.
-
-### Example request
-
-```bash
-curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7457226c7af592' > /tmp/monetize_supply_analytics.csv
-
-```
-
-## Notes and tips
-
-- **File Format**: Ensure the downloaded file’s extension (e.g., .csv, .xlsx) matches the format specified in the request.
-- **Error Handling**: Use -i or -v in your curl call to display response headers and identify any HTTP errors.
-- **Limitations**: Reports downloaded as .xlsx or Excel files are limited to 100,000 rows. For larger datasets, use the API limit of 10 million rows.
--->
-
 
 ## Related topics
 
@@ -750,4 +424,3 @@ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7
 - [Microsoft Monetize - Availability of reporting data](availability-of-reporting-data.md)
 - [Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
 - [Microsoft Monetize - Report throttling](report-throttling.md)
-

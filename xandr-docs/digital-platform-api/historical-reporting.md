@@ -90,7 +90,7 @@ Legacy reports are planned to not be populated with new Monetize data from mid 2
 
 These new report types automatically include data for all impression types except for 7=RTB (a buying transaction on supply from another seat to your own) for Monetize Sellers. Reporting for Invest and External SSPs is not included in these datasets. -->
 
-## Legacy reports
+## Legacy report types
 
 ### Network report types
 
@@ -128,8 +128,6 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 
 The Historical report enables streamlined report creation. Users can select from various **Dimensions**, **Metrics**, and **Filters** to customize their reports.
 
-:::image type="content" source="media/create-new-report.png" alt-text="The screenshot shows how to create new reports.":::
-
 ## Time frame and data retention
 
 ### Time ranges
@@ -149,8 +147,6 @@ The `report_interval` field in the JSON request can be set to one of the followi
 - `month_to_date`
 - `month_to_yesterday`
 
-<!-->
-:::image type="content" source="media/time-ranges.png" alt-text="The screenshot shows time ranges that define the period from which data is extracted for reports.":::-->
 
 - ### Data retention period
 
@@ -679,10 +675,9 @@ curl -b cookies 'https://api.appnexus.com/report-download?id=b97897a7864dd8f34e7
 
 ## Related topics
 
-- [Microsoft Monetize - Impression counting](impression-counting.md)
 - [Mobile SDK - Impression counting methods](../mobile-sdk/impression-counting-methods.md)
-- [Microsoft Monetize - Introduction to viewability](introduction-to-viewability.md)
-- [Microsoft Monetize - Availability of reporting data](availability-of-reporting-data.md)
-- [Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](dimensions-metrics-filtering-and-grouping.md)
-- [Microsoft Monetize - Report throttling](report-throttling.md)
+- [Microsoft Monetize - Introduction to viewability](../monetize/introduction-to-viewability.md)
+- [Microsoft Monetize - Availability of reporting data](../monetize/availability-of-reporting-data.md)
+- [Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping](../monetize/dimensions-metrics-filtering-and-grouping.md)
+- [Microsoft Monetize - Report throttling](../monetize/report-throttling.md)
 - [Digital Platform API - Report service](../digital-platform-api/report-service.md)

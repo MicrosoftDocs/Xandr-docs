@@ -90,7 +90,7 @@ Legacy reports are planned to not be populated with new Monetize data from mid 2
 
 These new report types automatically include data for all impression types except for 7=RTB (a buying transaction on supply from another seat to your own) for Monetize Sellers. Reporting for Invest and External SSPs is not included in these datasets. -->
 
-## Legacy reports
+## Legacy report types
 
 ### Network report types
 

@@ -22,7 +22,6 @@ This section describes how to implement the various ad units available within th
 | [High Impact Media](show-high-impact-media-type-on-android.md) | Enables the display of high impact media as banner ad. |
 | [Instream Video](show-instream-video-ads-on-android.md) | Enables the display of in-stream video ads. |
 | [Interstitials Ads](show-interstitials-on-android.md) | Enables the display of an interstitial ad, an interactive, full-screen ad that covers the interface of the app. |
-| [Multiformat Banner Ads](show-multi-format-banner-ads-on-ios.md) | Multi-Format Banner Ads supports serving multiple creative formats (RTB VAST out-stream videos and regular banner ads) through a single banner entry point. |
 | [Native Ads](show-native-ads-on-android.md) | Enables the return of native ad demand. Native advertising is the use of ads that match the look, feel and function of the media format in which they appear. |
 
 ## Interfaces

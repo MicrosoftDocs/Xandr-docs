@@ -56,7 +56,7 @@ The Report Center serves as a central location for accessing all your Saved, Sch
 - Select the **Create New Report** from the category of report you want to pull data from. 
 - Select the desired time period for the report, from the **Date** drop-down menu. The drop-down offers several standard lookback windows, as well as a Custom option for selecting specific start and end dates.  
 - Select the **Filter** button to open a side pane on the right to apply Filters. Here, you can apply restrictions to the data by selecting the **Include** or **Exclude** radio button for each filter object. Available filters are searchable, and you can view possible values for each. The **Show Selected** toggle lets you easily see all current selections. You can also copy and paste a comma-separated list of IDs by toggling the option from Manual Selection to Bulk Add IDs. You can match the IDs against all non-deleted objects or choose to skip validation, which will allow you to filter on objects that were deleted previously but are no longer deleted. 
-- Select the appropriate interval from the drop-down menu. The *8Interval Selection** option to specify how the data should be grouped by date or time. The available options for grouping data are: 
+- Select the appropriate interval from the drop-down menu. The **Interval Selection** option to specify how the data should be grouped by date or time. The available options for grouping data are: 
     - **Hourly:** Data is grouped by the hour. 
     - **Daily:** Data is grouped by the day. 
     - **Monthly:** Data is grouped by the month. 
@@ -88,9 +88,7 @@ Historical Report is the primary analytics report in Microsoft Monetize, offerin
 
 ### Legacy reporting 
 
-Legacy Reporting enables you to access the legacy version of the reporting interface, where legacy reports are still available. Legacy reports will no longer be populated with new Microsoft Monetize data starting in `mid-2025`. Historical data will remain available up to each report’s standard retention period or `730` days, whichever is shorter. This applies to reports such as [Network Analytics](network-analytics-report.md) and [Advertiser Video Analytics](advertiser-video-analytics-report.md). 
-> [!NOTE]
-> Users are strongly encouraged to transition to the new reporting experience for accessing data generated after `10th October 2024`. 
+Legacy Reporting enables you to access the legacy version of the reporting interface, where legacy reports are still available. Legacy reports will no longer be populated with new Microsoft Monetize data starting `early 2026`.
 
 
 ## In this guide

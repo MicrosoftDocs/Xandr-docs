@@ -34,7 +34,7 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 
 ## Legacy reports
 
-Legacy reports will no longer receive Microsoft Monetize data starting `mid-2025`. Historical data will remain accessible based on each report’s standard retention period or `730 days`, whichever is shorter. This is applicable to reports such as Network Analytics and Advertiser Video Analytics. Users should transition to new reports to access data generated after `10 October 2024`. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
+Legacy reports will no longer receive Microsoft Monetize data starting `early 2026`. Historical data will remain accessible based on each report’s standard retention period or `730 days`, whichever is shorter, with some specific dimensions in the report having shorter retentions of `99 days` or `14 months`, mirroring retention of equivalent fields in relevant Legacy reports. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
 > [!NOTE]
 > - Communication will be provided in advance to support the transition process.
 > - Reporting for Microsoft Invest and External SSPs is not included in these datasets.
@@ -159,7 +159,7 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `Start Date`| No | The earliest date of the insertion order's billing period. <br> **NOTE:** This field or feature is part of functionality currently in either Alpha or Beta phase and subject to change.|
 | `End Date`| No | The last date of the insertion order's billing period. <br> **NOTE:** This field or feature is part of functionality currently in either Alpha or Beta phase and subject to change. |
 | `External Code`| No | The custom code for the billing period.|
-| `Buyer Member`| No| Buyside| The name of the Xandr buyer member that purchased the impression. 	|
+| `Buyer Member`| No | The name of the Xandr buyer member that purchased the impression. 	|
 | `Buyer Member ID` (Selectable via "Show IDs as separate column" option)| Yes | The ID of the Xandr buyer member that purchased the impression.|
 | `Buyer Member Name` (Selectable via "Show IDs as separate column" option)| No | The Name of the Xandr buyer member that purchased the impression.|
 | `Buyer Seat`| No | The seat for the Bidder. This enables reporting on sub-seats for bidders that do not have `buyer_member_id` breakouts.|

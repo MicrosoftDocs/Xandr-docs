@@ -1568,7 +1568,9 @@
       href: report-throttling.md
     - name: Impression Counting
       href: impression-counting.md
-  - name: Monetize Historical Reporting 
+  - name: Reporting in Microsoft Monetize
+    href: reporting-in-microsoft-monetize.md
+  - name: Historical Reporting 
     href: monetize-historical-reporting.md    
   - name: Analytics Reporting
     items:

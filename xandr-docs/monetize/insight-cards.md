@@ -19,7 +19,7 @@ This is particularly helpful when Ad Quality rules apply broad category blocks, 
 - If the brand should always be hidden from Insights, sellers can **archive** it after dismissal to ensure it never appears again.  
 - Sellers can filter insights to view only newly detected brands.  
 
-#### FAQ
+### FAQ - Unblock brands
 
 **Why do I see more blocked brands due to their category in the Seller Bid Error report?**
 
@@ -103,15 +103,12 @@ Clicking **Investigate** loads the latest reporting data and offers further opti
 
 Monetize Insights automatically detects **placements** that:  
 
-- Send **ad requests but have no transactions**.  
-- Have a **win rate below 1%**.  
+- Are sending Ad Requests but receiving no responses 
+- Are sending Ad Requests, and receiving responses with no impressions sold
+- Have low win rates 
 
-To reduce noise, only placements with **10K+ ad requests per week** are analyzed.  
-
-Once identified, **initial troubleshooting** determines where in the transaction funnel the issue occurs, such as:  
-
-- **No bids received**.  
-- **Significant bid errors**.  
+Automatic triaging is applied examining the bid rejections that occured on the placement to indicate if there is significant blocked demand and if so, which category of rejections are most prevalent.
+Clicking on **Investigate** button loads the most recent reporting for last 24 hours data showing the impression funnel and blocked bid metrics.
 
 **Insight card generation:**
 
@@ -119,4 +116,12 @@ Once identified, **initial troubleshooting** determines where in the transaction
 - **Availability**: Before **9 AM UTC on Mondays**  
 - **Data range**: Last **7 days**  
 
-Clicking **Investigate** loads the latest reporting data and provides further troubleshooting options.
+### FAQ - Placement issues
+
+**Are all placements evaluated for this insight?**
+
+To reduce noise, only placements that are sending over 10k ad requests in a week are analysed. 
+
+**What is the threshold for low win rate?**
+
+Low win rate is a defined as impressions sold / ad requests being less than 1%. 

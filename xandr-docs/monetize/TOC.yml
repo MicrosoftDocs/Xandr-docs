@@ -1080,6 +1080,8 @@
   #   href: explore-the-monetization-dashboard.md
   - name: Monetize Insights
     items:
+      - name: Monetize Insight Cards
+        href: insight-cards.md
       - name: Monetize Insights for Publishers
         href: monetize-insights-for-publishers.md
       - name: Monetize Insights for Total Revenue

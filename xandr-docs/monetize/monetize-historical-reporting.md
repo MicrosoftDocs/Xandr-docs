@@ -6,10 +6,6 @@ ms.date: 10/18/2024
 
 # Microsoft Monetize -  Historical reporting
 
-
-> [!NOTE]
-> Historical report in Microsoft Monetize is currently in Alpha and may undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
-
 ## Overview
 
 Historical report is the primary analytics report in Microsoft Monetize, offering comprehensive data across a wide range of dimensions and metrics. It consolidates more than ten legacy report types, including [Network Analytics](network-analytics-report.md), [Seller Brand Review](seller-brand-review-report.md), and [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md). It reduces the number of report types a user needs to interact with, providing features to improve usability such as categorization of `Dimensions` and `Metrics` and comprehensive search capabilities. <br><br> Historical report is built from two datasets accessible through a single interface, with `Dimension` and `Metric` incompatibilities surfaced during selection. The expanded range of options provides a more detailed view of data across multiple aspects of delivery and inventory, with additional reportable dimension combinations, such as placement and device. The Historical report includes most of the data available in the legacy reporting system. 
@@ -34,7 +30,7 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 
 ## Legacy reports
 
-Legacy reports will no longer receive Microsoft Monetize data starting `early 2026`. Historical data will remain accessible based on each report’s standard retention period or `730 days`, whichever is shorter, with some specific dimensions in the report having shorter retentions of `99 days` or `14 months`, mirroring retention of equivalent fields in relevant Legacy reports. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
+Legacy reports will no longer receive Microsoft Monetize data starting `early 2026`. Historical data will remain accessible based on each report’s standard retention period or `2 years 6 months`, whichever is shorter, with some specific dimensions in the report having shorter retentions of `99 days` or `14 months`, mirroring retention of equivalent fields in relevant Legacy reports. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
 > [!NOTE]
 > - Communication will be provided in advance to support the transition process.
 > - Reporting for Microsoft Invest and External SSPs is not included in these datasets.

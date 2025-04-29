@@ -445,6 +445,8 @@
         href: forecast-report.md
       - name: Geo Analytics Report
         href: geo-analytics-report.md
+      - name: Historical Reporting 
+        href: historical-reporting.md   
       - name: Identifiers - Distinct ID Report
         href: identifiers--distinct-id-report.md
       - name: Identifiers - ID Combinations Report

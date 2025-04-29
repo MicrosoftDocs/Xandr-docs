@@ -1078,8 +1078,8 @@
       href: prebid-server-premium-request-response-sampler.md
   # - name: Explore the Monetization Dashboard
   #   href: explore-the-monetization-dashboard.md
-    - name: Monetize Insights
-      items:
+  - name: Monetize Insights
+    items:
       - name: Monetize Insights for Publishers
         href: monetize-insights-for-publishers.md
       - name: Monetize Insights for Total Revenue
@@ -1091,7 +1091,7 @@
       - name: Demand Issues
         href: monetize-insights-demand-issues.md
       - name: Floor Rule
-        href: monetize-insights-floor-rules.md
+        href: monetize-insights-floor-rules.md  
   - name: Publishers
     items:
     - name: Working with Publishers

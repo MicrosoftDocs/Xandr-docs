@@ -1,10 +1,10 @@
 ---
-title: Monetize Insights for Total Revenue
+title:  Monetize Insights Total Revenue Dashboard
 description: This page gives an overview of Total Revenue tab of Monetize Insights and how you can use it to monitor business performance and key performance indicators (KPIs).  
 ms.date: 10/14/2024
 ---
 
-# Monetize insights for total revenue
+# Monetize insights total revenue dashboard
 
 The **Total Revenue** tab of **Monetize Insights** offers a convenient method for monitoring business performance and key performance indicators (KPIs), such as:
 

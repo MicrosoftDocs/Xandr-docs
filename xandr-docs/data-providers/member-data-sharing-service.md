@@ -46,7 +46,8 @@ The Member Data Sharing Service allows you to share your segments with other pla
 | `id` | int | The ID of the sharing record.<br>**Default:** Auto-generated number<br>**Required On:** `PUT`/`DELETE`, in query string |
 | `data_member_id` | int | **Read-only.** Your member ID. |
 | `buyer_member_id` | int | The ID of the member with whom you are sharing segments.<br>**Required On:** `POST` |
-| `segment_exposure` | enum | Whether you share all of your segments or a list of specific segments with the member. Possible values: `"all"` or `"list"`.  If you choose `"all"`, any newly created segments will automatically be shared with the buyer member. If you create custom segments that should only be accessible to certain buyers, you should use `"list"` exposure.<br>**Required On:** `POST`<br>**Note:** Data Providers in Data Market Place should not create sharing records by choosing "segment_exposure" value as "all". If there is any such record exists, update the value to "list" and include the appropriate segment list. |
+| `segment_exposure` | enum | Whether you share all of your segments or a list of specific segments with the member. Possible values: `"all"` or `"list"`.  If you choose `"all"`, any newly created segments will automatically be shared with the buyer member. If you create custom segments that should only be accessible to certain buyers, you should use `"list"` exposure.<br>**Required On:** `POST`<br>**Note:** Data Providers in Data Market Place should not create sharing records by choosing "segment_exposure" value as "all". If there is any such record exists, update the value to "list" and include the appropriate segment list.<br>> [!NOTE]
+> ooo |
 | `segments` | array of objects | If `segment_exposure` is `"list"`, the list of segments that you are sharing with the member. See the first example below for formatting.<br>**Required On:** `POST`/`PUT`, if `segment_exposure` is `"list"`. |
 
 ## Examples

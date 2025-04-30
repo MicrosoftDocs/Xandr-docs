@@ -26,7 +26,7 @@ The Member Data Sharing Service allows you to share your segments with other pla
 Note that when you remove a segment from a sharing record, the member cannot add the segment to the targeting profile of any new or existing campaign. If the member is already targeting the segment in an existing campaign, however, the campaign will continue to target the segment until the member manually removes it from the campaign's targeting profile. Once the segment has been removed, the member will not be able to add it to the campaign's targeting profile again.
 
 > [!TIP]
-> If you have custom segments intended for specific members, you should set `segment_exposure` to "list" in each sharing record and use the `segments` array to identify the segments that each member should have access to.
+> If you have custom segments intended for specific members, you should set `segment_exposure` to `"list"` in each sharing record and use the `segments` array to identify the segments that each member should have access to.
 > [!NOTE]
 > The Member Data Sharing service works on BOTH Xandr's API (api.appnexus.com) as well as the impression bus API (api.adnxs.com). Although only api.adnxs.com is used below, it may be replaced with api.appnexus.com for those clients who have access to Xandr's API. Only members who are on Xandr will have access to the API. The majority of data providers can only access the impression bus API.
 
@@ -53,7 +53,7 @@ Note that when you remove a segment from a sharing record, the member cannot add
 | buyer_member_id | int | The ID of the member with whom you are sharing segments.<br>**Required On**: POST |
 | data_member_id | int | **Read-only**. Your member ID. |
 | id | int | The ID of the sharing record.<br>**Default**: Auto-generated number<br>**Required On**: PUT/DELETE, in query string |
-| segment_exposure | enum | Whether you share all of your segments or a list of specific segments with the member. Possible values: "all" or "list".  If you choose "all", any newly created segments will automatically be shared with the buyer member. If you create custom segments that should only be accessible to certain buyers, you should use "list" exposure.<br>**Required On**: POST |
+| segment_exposure | enum | Whether you share all of your segments or a list of specific segments with the member. Possible values: "all" or "list".  If you choose "all", any newly created segments will automatically be shared with the buyer member. If you create custom segments that should only be accessible to certain buyers, you should use "list" exposure.<br>**Required On**: POST<br><br>**Note:** Data Providers in Data Market Place should not create sharing records by choosing `segment_exposure` value as `"all"`. If any such record exists, update the value to `"list"` and include the appropriate segment list. |
 | segments | array of objects | If segment_exposure is "list", the list of segments that you are sharing with the member. See the first example below for formatting.<br>**Required On**: POST/PUT, if segment_exposure is "list". |
 
 ## Examples

@@ -1,7 +1,8 @@
 ---
 title: Prebid Server Premium Ad Quality
-description: In this article, learn how the mobile app features are different from the web features.
-ms.date: 10/28/2023
+description: Prebid Server Premium (PSP) brings demand from other platforms to compete alongside bids from Microsoft Monetize's integrated bidders.
+ms.date: 05/02/2025
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium ad quality

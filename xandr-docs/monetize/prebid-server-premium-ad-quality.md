@@ -40,5 +40,5 @@ Blocking bids through either or both of these settings can impact publisher reve
 
 ## Related topics
 
-- [Ad profile service](ad-profile-service.md)
+- [Ad profile service](../digital-platform-api/ad-profile-service.md)
 - [Working with Ad quality](working-with-publisher-ad-quality.md)

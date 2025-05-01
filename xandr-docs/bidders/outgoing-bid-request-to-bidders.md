@@ -186,7 +186,6 @@ We support the following field(s):
 
 | Field | Type | Description |
 |:---|:---|:---|
-
 | `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, [Use Plcmt, Placement, and Context](integration-with-openrtb-2-6.md#use-plcmt-placement-and-context-fields-together) fields together. |
 
 ### Audio object

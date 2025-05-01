@@ -13,11 +13,13 @@ PSP publishers should use the ad quality controls in each demand partner's platf
 
 ## Microsoft Monetize controls
 
-As a secondary level of control, publishers can choose to enable two Monetize settings on PSP demand via the ad profile service:
-- **`apply_aq_on_psp [plain text]`:** Determines if brand and category blocks in the ad profile or `badv` [plain text] or `bcat` [plain text] fields of the bid request will apply to bids from Prebid Server Premium demand partners. Uses seatbid.bid.adomain [plain text] field to infer brand.
-- **`reject_unknown_adomain_on_psp [plain text]`:** Related to `apply_aq_on_psp`. Determines if `seatbid.bid.adomain` [plain text] values that have not yet been mapped to brands can be auctioned or blocked.
+As a secondary level of control, publishers can choose to enable two Monetize settings on PSP demand via the [ad profile service](../digital-platform-api/ad-profile-service.md):
+- **`apply_aq_on_psp`:** Determines if brand and category blocks in the [ad profile](../digital-platform-api/ad-profile-service.md) or `badv` or `bcat` fields of the bid request will apply to bids from Prebid Server Premium demand partners. Uses `seatbid.bid.adomain` field to infer brand.
+- **`reject_unknown_adomain_on_psp`:** Related to `apply_aq_on_psp`. Determines if `seatbid.bid.adomain` values that have not yet been mapped to brands can be auctioned or blocked.
 
 ## Example
+
+The example request below updates an existing ad profile to include PSP settings. To avoid having to include all of the content from the existing profile in the PUT request, include the `append=true` query string parameter.
 
 ```
 {
@@ -37,6 +39,8 @@ Blocking bids through either or both of these settings can impact publisher reve
 - [Insights ad quality tab](monetize-insights-ad-quality.md)
 - [Seller Bid Error report](seller-bid-error-report.md)
 
+> [!NOTE]
+> If you do not yet have access to Monetize APIs, please reach out to [Product Support](https://support.ads.microsoft.com/sign-in).
 
 ## Related topics
 

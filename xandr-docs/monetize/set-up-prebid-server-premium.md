@@ -20,6 +20,7 @@ Additional guidance for PSP setup:
  - [Price Bucket Currency](price-bucket-currency.md)
  - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
  - [Prebid Server Premium Data Passthrough](prebid-server-premium-data-passthrough.md)
+ - [Prebid Server Premium ad quality](prebid-server-premium-ad-quality.md)
 
   > [!NOTE]
   > At this time, not all clients have access to PSP. If you would like more information, please contact your Microsoft Advertising Representative.

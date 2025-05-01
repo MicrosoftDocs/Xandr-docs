@@ -159,7 +159,7 @@ For video impressions, we support the following fields:
 | `placement` | integer | Placement type for the impression. Possible options:<br> - `1`: In-Stream<br> - `2`: In-banner<br> - `3`: In-article<br> - `4`: In-feed<br> - `5`: Interstitial/Slider/Floating |
 | `linearity` | integer | Indicates if the impression must be linear, nonlinear, etc. If none specified, assume all are allowed.<br> - `1`: Linear / In-Stream<br> - `2`: Non-Linear / Overlay |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the video object. See [Video Extension Object](#video-extension-object) below. |
-| `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, [Use Plcmt, Placement, and Context](integration-with-openrtb-2-6.md#use-plcmt-placement-and-context-fields-together) fields together. |
+
 
 ### Video extension object
 
@@ -176,6 +176,18 @@ We support the following fields in the `appnexus` extension object of the `video
 | Field | Type | Description |
 |:---|:---|:---|
 | `context` | integer | Specifies the video context:<br> - `0`: Unknown<br> - `1`: Pre-roll<br> - `2`:  Mid-roll<br> - `3`:  Post-roll<br> - `4`: Outstream<br> - `5`: BannerStream<br> - `6`: In-feed<br> - `7`: Interstitial |
+
+### Video placement object
+
+We support the following field(s):
+
+> [!NOTE]
+> As of Monday, March 3rd, 2025, Microsoft Monetize supports both reading and sending the `video.plcmt` field in all OpenRTB bid requests, across all versions. This enhancement improves bid accuracy by providing richer contextual information about video ad placements. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Please contact your Microsoft account representative or submit a support ticket to request access.
+
+| Field | Type | Description |
+|:---|:---|:---|
+
+| `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, [Use Plcmt, Placement, and Context](integration-with-openrtb-2-6.md#use-plcmt-placement-and-context-fields-together) fields together. |
 
 ### Audio object
 

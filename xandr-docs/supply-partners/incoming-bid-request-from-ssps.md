@@ -2,7 +2,7 @@
 title: Incoming Bid Request from SSPs
 description: This article provides information on the incoming bid request from SSPs.
 ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 5/02/2025
 ---
 
 # Incoming bid request from SSPs
@@ -297,6 +297,10 @@ Xandr supports the following fields in the `img` object of the `assets` object:
 | `h` | integer | Specifies the height of the image, in pixels. Either `h` or `hmin` must be included. |
 | `hmin` | integer | Specifies the minimum requested height of the image, in pixels. If included, this value should be used for any rescaling of images by the client. Either `h` or `hmin` must be included. If both are included, we will first try to find a creative that matches the exact height. If no creative matches the exact height, we will then use the minimum height. |
 | `mimes` | array of strings | Specifies the image content MIME types supported. Should be empty, as all image types are supported.|
+
+Image aspect ratios are determined by the minimum width and height specified (e.g., wmin:600 hmin:600 implies a 1:1 ratio). For common aspect ratios like 1.91:1 (landscape), users should specify sizes like 1200x627. Aspect ratio is not a separate attribute—it's implied by the dimensions. Larger images are generally preferred, as they scale down better than scaling up.
+ 
+The requested aspect ratio **influences image demand**. A wmin:600 hmin:600 request yields images that are 1:1 or can be resized to 1:1, with both sides at least 600 pixels. A wmin:1200 hmin:627 request yields images that are 1.91:1 or resizable to that ratio, with a minimum height of 627 pixels. This applies similarly for other aspect ratios.
 
 ### Assets data object
 

@@ -31,7 +31,7 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 
 | Currency | Transaction | Billing |
 |:---|:---|:---|
-| United Arab Emirates Dirham (AED) | X |  |
+| United Arab Emirates Dirham (AED) | X | X |
 | Argentine Peso (ARS) | X | X |
 | Australian Dollar (AUD) | X | X |
 | Brazilian Real (BRL) | X | X |
@@ -55,7 +55,7 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Kazakhstani Tenge (KZT) | X |  |
 | Mexican Peso (MXN) | X | X |
 | Malaysian Ringgit (MYR) | X | X |
-| Nigerian Naira (NGN) | X |  |
+| Nigerian Naira (NGN) | X | X |
 | Norwegian Krone (NOK) | X | X |
 | New Zealand Dollar (NZD) | X | X |
 | Peruvian Nuevo Sol (PEN) | X |  |
@@ -74,7 +74,7 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Taiwan Dollar (TWD) | X | |
 | Ukrainian Hryvnia (UAH) | X |  |
 | United States Dollar (USD) | X | X |
-| South African Rand (ZAR) | X |  |
+| South African Rand (ZAR) | X | X |
 | Vietnamese Dong (VND) | X | |
 
 - **Transaction Currency** is the currency used to buy or sell inventory on the platform.

@@ -1070,6 +1070,8 @@
         href: price-bucket-currency.md
       - name: Video Guidance
         href: video-guidance.md
+      - name: Prebid Server Premium Ad Quality
+        href: prebid-server-premium-ad-quality.md
     - name: Prebid Server Premium Demand Partner Integrations
       href: prebid-server-premium-demand-partner-integrations.md
     - name: Prebid Server Premium Analytics

@@ -2,7 +2,7 @@
 title: Incoming Bid Request from SSPs
 description: This article provides information on the incoming bid request from SSPs.
 ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 5/02/2025
 ---
 
 # Incoming bid request from SSPs

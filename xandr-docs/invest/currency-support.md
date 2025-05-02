@@ -53,7 +53,7 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Malaysian Ringgit (MYR) | X | X |
 | Mexican Peso (MXN) | X | X |
 | New Zealand Dollar (NZD) | X | X |
-| Nigerian Naira (NGN) | X |  |
+| Nigerian Naira (NGN) | X | X |
 | Norwegian Krone (NOK) | X | X |
 | Pakistani Rupee (PKR) | X |  |
 | Peruvian Nuevo Sol (PEN) | X |  |
@@ -64,7 +64,7 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Saudi Riyal (SAR) | X |  |
 | Serbian Dinar (RSD) | X |  |
 | Singapore Dollar (SGD) | X | X |
-| South African Rand (ZAR) | X |  |
+| South African Rand (ZAR) | X | X |
 | South Korean Won (KRW) | X |  |
 | Swedish Krona (SEK) | X | X |
 | Swiss Franc (CHF) | X | X |
@@ -73,7 +73,7 @@ If you have signed a contract with Microsoft Advertising, the following non-USD 
 | Tunisian Dinar (TND) | X |  |
 | Turkish Lira (TRY) | X | X |
 | Ukrainian Hryvnia (UAH) | X |  |
-| United Arab Emirates Dirham (AED) | X |  |
+| United Arab Emirates Dirham (AED) | X | X |
 | United States Dollar (USD) | X | X |
 | Vietnamese Dong (VND) | X | |
 

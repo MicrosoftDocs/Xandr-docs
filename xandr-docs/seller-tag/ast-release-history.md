@@ -12,6 +12,8 @@ ms.date: 10/28/2023
 
 | Release | Description | Date |
 |---|---|---|
+| [1.10.10](https://adsdk.microsoft.com/ast/ast.js) | -  update `setPageOpts` field `mobileOmidImpTracking` default value (to false). | 2 May 2025 |
+| [1.10.9](https://adsdk.microsoft.com/ast/ast.js) | -  Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 29 April 2025 |
 | [1.10.8](https://adsdk.microsoft.com/ast/ast.js) | -  Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 22 April 2025 |
 | [1.10.7](https://adsdk.microsoft.com/ast/ast.js) | -  Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 15 April 2025 |
 | [1.10.6](https://adsdk.microsoft.com/ast/ast.js) | -  Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 10 April 2025 |

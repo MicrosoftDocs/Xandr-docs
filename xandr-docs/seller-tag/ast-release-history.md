@@ -2,7 +2,7 @@
 title: AST Release History
 description: In this article, find the release history of AST and the updates made for each release.
 ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 5/2/2025
 ---
 
 # AST Release History

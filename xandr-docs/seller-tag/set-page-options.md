@@ -2,7 +2,7 @@
 title: Set Page Options
 description: Use the set page options function to set page-level options placements. You can use various parameters as arguments in this function.
 ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 5/2/2025
 ---
 
 # Set page options
@@ -39,6 +39,7 @@ The parameters listed below can be sent as arguments in the function.
 | `trackingManagement` | object | Object that specifies values for tracking related features related to the auction and creatives (viewability, usersync, etc). See [TrackingManagement Object](#trackingmanagement-object) details below. |
 | `renderingManagement` | object | Object that specifies values for rendering related features, which influence how ads are rendered onto a webpage. See [RenderingManagement Object](#renderingmanagement-object) details below. |
 | `content` | object | Object that specifies information about the content where the ads will show. See [Content Object](#content-object) for details below. |
+| `mobileOmidImpTracking` | boolean | When enabled, this field changes the conditions for when AST loads the impression URL for a bid that serves in a mobile app environment from the bidder DV360.  In normal conditions, AST would load the impression URL when the creative code is written onto the page (ie Count on Download).  However this field will load an OMID script and setup the needed OMID logic to wait for the ad to be in-view (at least 1%) before the impression URL is loaded.  This behavior is to mimic the type of pixel-view based (or count-on-view) logic used by the DV360 buyer and will ideally reduce any discrepancies between the two systems. |
 
 ## Objects
 

@@ -10,6 +10,10 @@ ms.topic: release-notes
 
 Read about the latest updates to Monetize.
 
+- [May 09, 2025: Reporting in Microsoft Monetize](release-notes-20250509.md)
+- [April 10, 2025: Copilot in Microsoft Monetize](release-notes-20250410.md)
+- [March 10, 2025: Change Log History Tool](release-notes-20250310.md)
+- [November 26, 2024: Enhanced Blocked Bid Value Metric](release-notes-20241126.md)
 - [October 18, 2024: Household Attribution](release-notes-20241018.md)
 - [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)
 - [November 16, 2023: Monetize Insights, Total Revenue](release-notes-20231116.md)

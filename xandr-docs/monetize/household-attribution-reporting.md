@@ -16,9 +16,9 @@ A number of reports and feeds contain information about Household Attribution re
         - Post-click conversions 
         - Post-view conversions 
     - Event types: 
-        - Microsoft’s cookie ID based conversions. 
-        - IP address based conversions. 
-        - Microsoft’s cross-device based conversions. 
+        - Microsoft’s cookie ID based conversions
+        - IP address based conversions
+        - Microsoft’s cross-device based conversions
 
 
 

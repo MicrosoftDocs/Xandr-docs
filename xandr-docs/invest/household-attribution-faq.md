@@ -62,7 +62,7 @@ Yes, this feature is available across all devices, which includes:
 
 ### Is this feature available across all ad formats?
 
-Yes, this feature is available across all ad formats, which includes\
+Yes, this feature is available across all ad formats, which includes
 
 - Banner
 - Video
@@ -71,7 +71,6 @@ Yes, this feature is available across all ad formats, which includes\
   
 > [!NOTE]
 > This feature is available across all ad formats, except DOOH.
- 
  
 
 

@@ -12,11 +12,16 @@ ms.custom: digital-platform-api
 >
 > This field or feature is part of functionality currently in either Alpha or Beta phase. It is therefore subject to change.
 
-The Instant Audience Service is a server-side method that uses a streaming architecture to add individual or small groups of users to segments, via the Digital Platform API. Rather than aggregating and periodically sending large batches of data using the Batch Segment Service, the Instant Audience Service associates' users to segments in close to real-time. Our target SLA for adding users to segments with this service is 2 minutes. This is useful if you have real-time audience remodeling requirements.
+The Instant Audience Service is a server-side method that uses a streaming architecture to add individual or small groups of users to segments, via the Digital Platform API. This is an alternative to the Batch Segment Service API which is used to upload bulk users to audiences. Similar to Batch Segment Service API, the uploads are not processed in real-time and may take up to 24 hours to complete.
 
 ## Configure the service
 
-If you're already using the Batch Segment Service, you can skip this part and proceed to [Authenticate](#authenticate). If you're a brand-new client and wish to start using the Instant Audience Service, you will need to open a ticket with and provide the following information:
+<!--If you're already using the Batch Segment Service, you can skip this part and proceed to [Authenticate](#authenticate).--> 
+
+> [!NOTE]
+> Instant Audience Service (IAS) is a closed service and is not enabled by default. If you are interested in using IAS, your `member_id` must first be explicitly enabled for an IAS configuration. Please contact your Microsoft account representative or support team to request access and initiate the enablement process.
+
+If you're a brand-new client and wish to start using the Instant Audience Service, you will need to open a ticket with and provide the following information:
 
 1. Are you using external user IDs (i.e., you use mapUID to store the mapping with Xandr)? If you use another member's external user IDs, include their `member_id` as well.
 1. Do you need to populate segments belonging to other members? If so, provide the associated `member_ids`.

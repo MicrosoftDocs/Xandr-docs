@@ -18,7 +18,6 @@ With Household Attribution:
 - You can capture more conversions that are influenced by your ads, especially for high-consideration products or services that require further research or comparison. 
 - You can gain more insights into the cross-device behaviour of your target audience and how they interact with your ads across different screens. 
 
-
 ## Household Attribution process 
  
 

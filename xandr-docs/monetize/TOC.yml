@@ -300,12 +300,6 @@
       href: create-an-insertion-order.md
     - name: Update Insertion Orders
       href: update-insertion-orders.md
-    - name: Explore Global Insertion Orders
-      href: explore-global-insertion-orders.md
-    - name: Create a Legacy Insertion Order
-      href: create-a-legacy-insertion-order.md
-    - name: View Legacy Insertion Order Details
-      href: view-legacy-insertion-order-details.md
   - name: Line items
     items:
     - name: Working with Line Items
@@ -427,8 +421,6 @@
         href: household-attribution-faq.md
     - name: Explore Global Line Items
       href: explore-global-line-items.md
-  - name: Improve Performance with Visual Success
-    href: improve-performance-with-visual-success.md
   - name: Programmable Splits
     items:
     - name: Working with Programmable Splits

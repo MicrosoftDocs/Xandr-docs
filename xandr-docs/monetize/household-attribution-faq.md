@@ -32,7 +32,7 @@ In cases where multiple units within the same residential building share the sam
 
  
 ### What happens if someone resets their router or their ISP assigns a new IP address between the impression and conversion events? 
-If someone resets their router or their ISP assigns a new IP address between the impression and conversion events, it can disrupt our ability to attribute the conversion.   
+If someone resets their router or their ISP assigns a new IP address between the impression and conversion events, it can disrupt our ability to attribute the conversion.  
 
  
 ### Does Xandr store or truncate IP addresses? 
@@ -52,7 +52,7 @@ Yes, this feature is available across all devices, which includes:
 - CTV  
 - Mobile 
 - Tablet, and  
-- Desktop. 
+- Desktop
 
 
 ### Is this feature available across all ad formats?  

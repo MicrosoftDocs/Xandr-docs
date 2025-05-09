@@ -1,6 +1,6 @@
 ---
 title: May 09, 2025 - Reporting in Microsoft Monetize
-description: Explore the April 10, 2025 release, delving into Copilot in Microsoft Monetize that provides real-time, contextual assistance, helping users navigate the platform efficiently.
+description: Explore the May 09, 2025 release, delving into Reporting in Microsoft Monetize
 ms.date: 05/09/2025
 ms.topic: release-notes
 ms.author: shsrinivasan

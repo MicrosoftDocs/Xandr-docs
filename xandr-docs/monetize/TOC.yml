@@ -1728,6 +1728,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: May 09, 2025 - Reporting in Microsoft Monetize
+    href: release-notes-20250509.md
   - name: April 10, 2025 - Copilot in Microsoft Monetize
     href: release-notes-20250410.md
   - name: March 10, 2025 - Change Log History tool

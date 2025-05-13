@@ -6,7 +6,7 @@ ms.topic: release-notes
 ms.author: rupambaruah
 ---
 
-# January 09, 2025 - PPrebid Server Premium Brand Blocks
+# January 09, 2025 - Prebid Server Premium Brand Blocks
 
 Prebid Server Premium (PSP) publishers historically have, and still should, use ad quality controls in PSP demand partners' platforms so those partners send eligible bids to the Monetize auction. Publishers can now choose to enable two supplemental Monetize settings on PSP demand via the [ad profile service](../digital-platform-api/ad-profile-service.md):
  

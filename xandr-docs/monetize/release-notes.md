@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Release Notes
 description: Read about the latest updates to Monetize.
-ms.date: 10/28/2023
+ms.date: 05/13/2025
 ms.topic: release-notes
 ---
 
@@ -10,9 +10,11 @@ ms.topic: release-notes
 
 Read about the latest updates to Monetize.
 
+- [May 09, 2025: Prebid Server Premium Brand Blocks](release-notes-psp-20250509.md)
 - [May 09, 2025: Reporting in Microsoft Monetize](release-notes-20250509.md)
 - [April 10, 2025: Copilot in Microsoft Monetize](release-notes-20250410.md)
 - [March 10, 2025: Change Log History Tool](release-notes-20250310.md)
+- [January 09, 2025: Prebid Server Premium Flexible Configurations](release-notes-20250109.md)
 - [November 26, 2024: Enhanced Blocked Bid Value Metric](release-notes-20241126.md)
 - [October 18, 2024: Household Attribution](release-notes-20241018.md)
 - [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)

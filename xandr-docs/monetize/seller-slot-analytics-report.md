@@ -10,8 +10,6 @@ ms.date: 10/28/2023
 > [!NOTE]
 > This functionality currently is in **Alpha**. It is still under development and might change without notice. Contact your Microsoft Advertising Account Representative to get enabled.
 
-## Seller slot analytics
-
 The Seller Slot Analytics report shows metrics for impressions (slots) within groups of ads (pods) delivered sequentially in between segments of non-commercial video programming. You can use this report to gain insight in answering the following questions:
 
 - On average how many seconds per impression are being served for mid-roll slot positions 1, 2 and 3?
@@ -21,6 +19,13 @@ The Seller Slot Analytics report shows metrics for impressions (slots) within gr
 - What is the percentage of slots by position being consumed by my house line item?
 - Which cities did a line item deliver to?
 - How does the completion rate by video context and slot position compare?
+
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
 
 ## Time frame
 

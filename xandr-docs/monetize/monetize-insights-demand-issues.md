@@ -17,7 +17,7 @@ Drill down of this feature includes issue resolution help, timeseries chart, and
 
 ## Navigation
 
-In **Monetize Insight** dashboard, click on **Open Exchange** tab and then click **Demand Issues** tab.
+In **Monetize Insight** dashboard, click on **Open Exchange** tab next to **Total Revenue** and **Deals** and then click **Demand Issues**.
 
 ## Filter
 

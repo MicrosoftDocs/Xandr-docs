@@ -12,6 +12,13 @@ The Distinct IDs Report provides Microsoft Advertising customers with insights o
 
 All dates and times are given in UTC.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ### Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.

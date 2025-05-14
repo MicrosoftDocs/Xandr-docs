@@ -10,7 +10,7 @@ You can optionally assign custom reporting labels (Trafficker, Sales Rep, and Li
 
 It will take new labels about 30 minutes to appear in reporting.
 
-1. Go to the **Reporting Labels** section of the line item.
+1. Go to the **Reporting Labels** section of the line item creation or update screen.
 1. Enter a trafficker, sales rep, or line item type.
 
 ## Related topics

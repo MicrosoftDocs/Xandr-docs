@@ -17,7 +17,10 @@ For a detailed explanation of the fields on your invoice, see [Understanding you
 
 In the UI, run the Buying Billing Report to confirm the cost of media, buyer auction service fee, managed ad serving fee, and creative overage fee amounts on your invoice.
 
-On the Member reporting screen, select **Buying Billing Report** under **Type**. Enter the **Range**, **Interval** (how the data will be grouped), and **Timezone** and then click **Run report**.
+1. Go to **Reporting** > **Report Center**
+2. Click on **Create new**
+3. On the **Create new report** screen, search for Buyer Billing Report and click **Create new report** under it.
+4. Generate the report.
 
 > [!NOTE]
 > Certain fields, such as some fee information for unmet minimums, and log-level data are not currently available in the reporting.

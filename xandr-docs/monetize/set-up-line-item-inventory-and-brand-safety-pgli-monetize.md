@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Set up line item inventory and brand safety (PGLI)
 
-You can use the line item **Inventory and Brand Safety** section to target universal or custom content categories, specify your inventory types.
+You can use the line item **Inventory and Brand Safety** section in **Create New Augmented Line Item** screen to target universal or custom content categories, specify your inventory types.
 
 1. Set **Managed Inventory**.
 

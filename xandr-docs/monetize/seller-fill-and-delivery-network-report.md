@@ -1,11 +1,11 @@
 ---
-title: Microsoft Monetize - Seller Fill and Delivery Network Report
+title: Microsoft Monetize - Seller Fill and Delivery Network Reports
 description: Learn what is a Seller Fill and Delivery Network Report and how it can be used to track untransacted impressions stemming from Improper default/passback tag setup, Inventory blocklists and Video player errors.
 ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Seller fill and delivery network report
+# Microsoft Monetize - Seller fill and delivery network reports
 
 The **Seller Fill and Delivery Report** was designed as a troubleshooting tool to provide sellers granular information regarding all impressions sent to Microsoft Advertising and to help diagnose delivery issues all the way down to the tag and domain level. Using the new descriptive fields, it is possible to see an approximation of overall fill rate on Microsoft Advertising using the "Total Ad Responses" and "Total Ad Requests" metrics. This report provides guidance on areas to troubleshoot but should not be used as a source of truth for billing or transacted impressions.
 

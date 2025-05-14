@@ -12,6 +12,13 @@ ms.date: 10/28/2023
 
 The **Curator Segment Performance Report** provides curators insights into how their targeted segments are contributing to the overall performance of their curated deals. The report provides data on all targeted segments (includes and excludes) that contributed towards transacted impressions. For curators, this includes all curated deal activity.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

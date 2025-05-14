@@ -12,6 +12,13 @@ ms.date: 10/28/2023
 
 The **Curator Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform. Error Count has been multiplied by 100 to account for the 5% sampling. You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors that block spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause, and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

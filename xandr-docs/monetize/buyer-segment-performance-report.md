@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Buyer Segment Performance Report
 description: Learn how a Buyer Segment Performance Report provides buyers with segment performance across multiple ad campaigns and advertisers. This page also explains how you can run the report.  
-ms.date: 10/28/2023
+ms.date: 05/14/2025
 ---
 
 
@@ -14,6 +14,13 @@ This report provides buyers with segment performance across multiple ad campaign
 
 > [!NOTE]
 > **Impressions across user segments:** Since this report aggregates impressions served by user segment, impressions associated with users present in multiple segments will be counted more than once. The purpose of this report is to analyze user segments, not individual user counts. The report is set to automatically group by segment.
+
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
 
 ## Time frame
 

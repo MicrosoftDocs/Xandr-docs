@@ -9,6 +9,13 @@ ms.date: 10/28/2023
 
 Buyers can use the Video Inventory Availability report to determine whether inventory that meets their specific buying requirements is likely to be available for purchase. While most of the data in the report is historical and may not accurately reflect today's available inventory, reviewing recent availability is a good way to predict the success of inventory targeting in the future. To access this report, go to **Network** \> **Inventory** \> **Reporting** and select **Video Inventory Availability** from the **Type** dropdown. For more information on the available data fields and their definitions, see **Dimensions** and **Metrics** below.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

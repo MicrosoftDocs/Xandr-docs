@@ -8,10 +8,17 @@ ms.date: 10/28/2023
 
 The Distinct IDs Report provides Microsoft Advertising customers with insights on delivery, performance, and unique reach across various industry IDs. These IDs include RampID, NetID, and Unified ID 2.0 (UID2), along with cookies and device-based IDs. By using the information in the report, you can make an informed decision about which ID solutions to integrate. Users can access the report either through the platform or the API.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.
-
+   
 ### Time ranges
 
 Time ranges define the time period of the data extracted for the report. The following is a complete list of time ranges available for reports.

@@ -13,6 +13,13 @@ The Prebid Server Premium Health Analytics Report allows users to analyze data r
 
 The data in this report can also be accessed via the [Report Service API](../digital-platform-api/report-service.md). For more information, see [Prebid Server Premium Health Analytics API documentation](../digital-platform-api/prebid-server-premium-health-analytics.md).
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 ### Ranges

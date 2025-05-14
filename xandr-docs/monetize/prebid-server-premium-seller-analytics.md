@@ -16,6 +16,13 @@ Using this report, you can:
 
 For information on other downloadable reports, see the [Reporting Guide](reporting-guide.md). For information on accessing reporting data via API, see [Report Service](../digital-platform-api/report-service.md) and [Prebid Server Premium Seller Analytics](../digital-platform-api/prebid-server-premium-seller-analytics.md).
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 ### Time ranges

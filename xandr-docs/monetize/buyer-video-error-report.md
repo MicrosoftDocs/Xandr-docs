@@ -11,6 +11,13 @@ The Buyer Video Error Report gives insight into video errors and their cause.
 
 You can use this report to troubleshoot video settings and eliminate errors relating to buy-side video advertising. [VAST 3 error codes](https://wiki.iabtechlab.com/index.php?title=VAST_Error_Code_Troubleshooting_Matrix) provide further insight into the source of errors.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

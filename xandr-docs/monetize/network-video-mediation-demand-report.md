@@ -8,6 +8,13 @@ ms.date: 10/28/2023
 
 A mediation bid allows you to specify how much you expect the mediated network will pay for a video impression on a particular placement, thereby allowing the mediated network to compete for the impression against RTB demand in the Microsoft Advertising auction. Video Mediation Demand report can be used to view video mediation demand metrics across multiple buyers and publishers.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

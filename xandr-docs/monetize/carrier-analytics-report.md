@@ -8,6 +8,13 @@ ms.date: 10/28/2023
 
 The **Carrier Analytics** report enables you to retrieve buy-side and sell-side performance data based on carriers for devices. This is especially helpful for analyzing how carriers affect line item or campaign performance and advertiser payment. Also, in cases where advertisers set up specific landing pages for each carrier, this report helps you identify the carriers that a line item or campaign ran on.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

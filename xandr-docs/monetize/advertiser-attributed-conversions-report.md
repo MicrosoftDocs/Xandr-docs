@@ -10,6 +10,13 @@ When a conversion pixel fires, Microsoft Advertising determines if the conversio
 
 The Attributed Conversions Report lets you see conversion pixel IDs, order IDs, when clicks or impressions were attributed, and other information related to your advertisers' attributed conversions.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

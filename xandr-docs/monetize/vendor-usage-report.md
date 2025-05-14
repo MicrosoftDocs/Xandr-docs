@@ -9,6 +9,14 @@ ms.date: 10/28/2023
 
 The Vendor Usage report is a Network-level report that provides details about data or platform usage powered by third party vendors (for example, user segment providers); the costs of that data or feature usage; and the line items/campaigns where vendor costs were applicable.
 
+
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+
 ## Time frame
 
 All dates and times are given in UTC.

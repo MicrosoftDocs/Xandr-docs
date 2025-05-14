@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 You can associate one or more insertion orders to the programmatic guaranteed line item, create a deal for a buyer, as well as set an ad type, name, and state, all from the **Basic Setup** section.
 
 1. Associate insertion orders to the line item by doing the following:
-    1. Click **Edit**.
+    1. Click **Edit** in the line item and in **Edit Line Item** screen, click on pencil icon in the **Insertion Orders** box.
 
         A list of corresponding insertion orders displays automatically.
 

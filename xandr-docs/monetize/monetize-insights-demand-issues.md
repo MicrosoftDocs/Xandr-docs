@@ -15,6 +15,10 @@ ms.date: 10/14/2024
 
 Drill down of this feature includes issue resolution help, timeseries chart, and creative preview.
 
+## Navigation
+
+In **Monetize Insight** dashboard, click on **Open Exchange** tab and then click **Demand Issues** tab.
+
 ## Filter
 
 Clicking on **Filter** next to **Demand Issues**, opens a small window with the following fields:

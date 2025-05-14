@@ -9,6 +9,13 @@ ms.date: 10/28/2023
 
 The Buyer Reach and Frequency Report holds two parameters as reach which is the number of unique devices or persons exposed to ads and frequency which is the average number of times each unique device or person was exposed to advertisements. It helps to draw meaningful conclusions about the impact of cross device on conversion use cases. In short, buyers can have an insight on how cross device impacted the number of times a single person saw their ads across all their devices using this report.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

@@ -5,7 +5,7 @@ ms.date: 10/28/2023
 ---
 
 
-# Microsoft Monetize - Seller fill and delivery network reports
+# Microsoft Monetize - Seller fill and delivery network report
 
 The **Seller Fill and Delivery Report** was designed as a troubleshooting tool to provide sellers granular information regarding all impressions sent to Microsoft Advertising and to help diagnose delivery issues all the way down to the tag and domain level. Using the new descriptive fields, it is possible to see an approximation of overall fill rate on Microsoft Advertising using the "Total Ad Responses" and "Total Ad Requests" metrics. This report provides guidance on areas to troubleshoot but should not be used as a source of truth for billing or transacted impressions.
 
@@ -30,13 +30,6 @@ The diagram below is a representation of how metrics are grouped and counted for
 
 :::image type="content" source="media/create-seller-filler-and-delivery-explanatory-graphic.png" alt-text="Diagram showing how metrics are grouped and counted for Seller Fill and Delivery Network Report.":::
 
-## Navigation
-
-1. Go to **Reporting** > **Report Center** and click **Create New**
-2. In **Search for a Report** search box, type the report name
-3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
-4. Click on **Create new report** button to create the new report.
-   
 ## Navigation
 
 1. Go to **Reporting** > **Report Center** and click **Create New**

@@ -24,6 +24,13 @@ For more information on the available data fields and their definitions, see [Di
 > [!IMPORTANT]
 > There is a limitation to how accurate the geo data is, particularly on impressions bought from external supply partners. Since some external supply partners (such as Google Ad Manager) truncate the last octet of the user's IP, we have a less precise IP to use when performing an IP geo-lookup. As a result, our geo data may not always be completely accurate at granular levels (such as region and metro code) for impressions bought from these supply sources.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

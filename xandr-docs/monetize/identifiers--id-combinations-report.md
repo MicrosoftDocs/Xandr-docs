@@ -8,6 +8,13 @@ ms.date: 10/28/2023
 
 The ID Combinations Report provides users with insights on combinations of cookies, device IDs, and common IDs available in the purchased impressions. It also provides information on impression distribution, performance metrics for combinations of ID types, and what types of IDs are present in the purchased impressions. Users can access the report either through the platform or the Microsoft Advertising API.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

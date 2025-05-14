@@ -18,7 +18,7 @@ Buy-side page caps (advertiser, line item, and campaign) can be used to exclude 
 
 ## Enable page caps for an advertiser
 
-To set up buy-side page caps, select **Advertisers** \>  **All Advertisers**. Click the edit button that appears to the right of the advertiser name.
+To set up buy-side page caps, select **Advertisers** \>  **All Advertisers**. Select the appropriate advertiser and click the **Edit** button that appears to the right of the advertiser name.
 
 On the **Edit Advertiser** page, expand the **Frequency & Recency** section. Toggle to turn **Caps On**. Select **Serve only 1 imp per page**.
 

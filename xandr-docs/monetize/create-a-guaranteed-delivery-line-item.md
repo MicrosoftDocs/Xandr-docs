@@ -10,7 +10,7 @@ This page explains how to create a guaranteed delivery line item to meet deliver
 
 You can create a new guaranteed delivery augmented line item (GDALI) from the **Line Items** screen. For more information, see [Monitor Line Items](monitor-line-items.md):
 
-1. On the **Line Items** screen, click the **+New** drop-down menu and select **Line Item**.
+1. On the **Line Items** screen under **Advertiser** > **Line Items** menu, click the **+New** drop-down menu and select **Line Item**.
 1. On the **Create New Line Item** screen, select **Guaranteed Delivery Line Item**.
 1. In the **Advertiser** drop-down, select the appropriate advertiser.
 1. In the **Insertion Order** drop-down, select an appropriate insertion order if one is not already selected.

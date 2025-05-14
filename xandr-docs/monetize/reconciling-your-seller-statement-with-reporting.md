@@ -10,8 +10,10 @@ ms.date: 10/28/2023
 
 In the UI, run the Selling Billing Report to view your Seller Revenue on your seller activity statement. You can also use the Selling Billing Report to confirm your (Managed) Ad Serving fee on your invoice.
 
-1. On the Member reporting screen, select **Selling Billing Report** in the **Type** dropdown.
-1. Enter a date in the **Range** field that corresponds to the period start and end date on your invoice, and then click **Run report**.
+1. Go to **Reporting** > **Report Center**
+2. Click on **Create new**
+3. On the **Create new report** screen, search for **Seller Billing Report** and click **Create new report** under it.
+4. Generate the report.
 
 ## Confirm invoice values (Selling)
 

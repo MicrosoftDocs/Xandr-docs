@@ -8,6 +8,13 @@ ms.date: 10/28/2023
 
 The Network Audio Analytics report can be used to view audio event metrics across multiple buyers and sellers.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

@@ -21,7 +21,3 @@ Read about the latest updates to Monetize.
 - [November 16, 2023: Monetize Insights, Total Revenue](release-notes-20231116.md)
 - [April 11, 2023: GA for Creative Manager](release-notes-20230411.md)
 - [January 9, 2023: Open Beta for Monetize Insights, Bid Rejections](release-notes-20230109.md)
-- [December 7, 2022: Budget Rollover for Line Items](release-notes-20221207-1.md)
-- [October 27, 2022: Open Beta for Native Assembly](release-notes-20221027.md)
-- [February 17, 2022: Enhancements to the ALI Setup Experience](release-notes-20220217.md)
-- [January 18, 2022: Vendor Usage Report UI](release-notes-20220118.md)

@@ -1,7 +1,7 @@
 ---
 title: Floor Rule
 description: Learn what are Floor Rules and how they enable you to view the floors with the biggest impacting blocks and how much this is changing week over week.
-ms.date: 10/14/2024
+ms.date: 05/14/2025
 ---
 
 # Floor rule
@@ -10,6 +10,10 @@ A floor can be thought of as the minimum price a network or publisher would like
 
 > [!NOTE]
 > We recommend reviewing floors (at least quarterly) so that they are set at parity with other SSP platforms for the same supply.
+
+## Navigation
+
+In **Monetize Insight** dashboard, click on **Open Exchange** tab next to **Total Revenue** and **Deals** and then click **Floor Rules**.
 
 ## Filter
 

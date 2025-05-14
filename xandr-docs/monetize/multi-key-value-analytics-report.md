@@ -22,6 +22,13 @@ Not all impressions from key/value targets will be included in reports. To be in
 - Value is not a numeric range (greater than or less than).
 - Value does not include a wildcard.
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

@@ -13,9 +13,9 @@ You can set up Multi-Buyer Deals in two different ways:
 
 From the **Deal** section of the **Basic Setup** section see [Create a Simplified Deal Line Item](create-a-simplified-deal-line-item.md):
 
-1. Click **Edit** under **Buyers** to open the **Buyer Targeting** screen.
+1. Click **Edit** under **Buyers** to open the **Buyer** screen.
 
-    The **Buyer Targeting** screen has the following tabs:
+    The **Buyer** screen has the following tabs:
     - **DSPs** – lists individual DSPs (bidders) that support bidder-wide deals. Click the “**\>**” after the DSP to display the list of buyers on that DSP. You can search for DSPs by name and ID. (**DSP Name** corresponds to Bidder Name. **DSP ID** corresponds to Bidder ID.)
     - **Buyers** – corresponds to members or seats, depending on which the DSP is using (see [Understanding Buyer Seat IDs](understanding-buyer-seat-ids.md)). You can search for buyers by name and ID (for seat buyers, **Buyer Name** corresponds to Seat Name, **Buyer ID** corresponds to Seat Code, and **DSP Name** corresponds to Bidder
       Name)

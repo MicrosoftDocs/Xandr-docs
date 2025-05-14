@@ -10,7 +10,7 @@ When you create a publisher, you can enter key publisher information, define you
 
 ## Get started
 
-To add a new publisher user, click **Publishers** from the main menu (or select **All Publishers** from the **Publishers** dropdown), then click **+New**. This opens the **Create New Publisher** dialog.
+To add a new publisher user, search **Publishers** from the search box in home page and then select any search result. In the **Publishers** page, click **+New** and it opens the **Create New Publisher** dialog.
 
 ## Step 1. Define publisher details
 

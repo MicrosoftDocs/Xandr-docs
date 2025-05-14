@@ -8,6 +8,13 @@ ms.date: 10/28/2023
 
 The Publisher Analytics Report allows you to view sell-side performance data for a specific publisher. The data available via this report is even more granular than what you can get from the [Network Analytics Report](network-analytics-report.md).
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

@@ -15,6 +15,13 @@ This reporting helps sellers in the following ways:
 - by providing data of performance per segment, so they can analyze which segments are performing well or not well and optimize appropriately
 - facilitating data clearing, so that instead of them being responsible for billing their data providers each month, Microsoft Advertising can do it for them
 
+## Navigation
+
+1. Go to **Reporting** > **Report Center** and click **Create New**
+2. In **Search for a Report** search box, type the report name
+3. The relevant report widget will be shown under its category such as **Analytics**, **Troubleshooting** or **Reach**.
+4. Click on **Create new report** button to create the new report.
+   
 ## Time frame
 
 All dates and times are given in UTC.

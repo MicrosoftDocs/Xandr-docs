@@ -1,7 +1,7 @@
 ---
 title: Config Service
 description: Learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
-ms.date: 10/28/2023
+ms.date: 06/09/2025
 ms.custom: digital-platform-api
 ---
 

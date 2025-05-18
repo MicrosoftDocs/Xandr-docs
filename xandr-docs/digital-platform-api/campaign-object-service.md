@@ -106,7 +106,6 @@ It is recommended to manage these configurations and their targeting in the [PSP
     1. **lineItem**: Includes the `id` value, which will be used as the `targeting_id` in the [PSP Configuration Service](config-service.md).
 
 3. Make a `POST`, `PUT`, or `PATCH` request to [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) [documentation](config-service.md).
-   1. `targeting_level_code` must be **4** (line item).  
    1. `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.  
    1. `targeting_metadata.priority` is an integer **1 through 20**.
         1. Each auction uses one configuration.  
@@ -119,7 +118,6 @@ Append the configuration ID as the last component of the URL.
 ```
 {
     "name": "Test Configuration",
-    "targeting_level_code": 4,
     "targeting_id": 26831593,
     "enabled": true,
     "media_types": {

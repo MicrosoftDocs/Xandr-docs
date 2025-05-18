@@ -116,7 +116,10 @@ The media type object determines which formats (currently banner, native, and vi
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `priority` | integer | Each auction uses a single PSP configuration and its associated demand partner parameters. If multiple configurations match an auction, the one with the highest user-defined Priority is selected. If there are multiple configurations with the same Priority, the configuration with the higher (more recent) ID is used.|
+| `priority` | integer | Each auction uses one PSP configuration and its set of demand partner parameters.
+When multiple configurations match an auction:
+  - The configuration with the highest user-defined Priority is selected.
+  - If multiple configurations share the same Priority, the one with the higher (more recent) ID is used.|
 
 ### Demand partner configs properties
 

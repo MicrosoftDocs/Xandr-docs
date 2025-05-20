@@ -10,7 +10,7 @@ ms.custom : industry-reference
 > [!IMPORTANT]
 > For additional details, see [The Trade Desk Inventory Policies](https://partner.thetradedesk.com/v3/portal/ssp/doc/InventoryPolicies) which are subject to change as The Trade Desk makes updates to their policies.
 
-This page details best practices for Xandr sellers to maximize revenue and optimize their monetization  strategies based on The Trade Desk’s inventory policies.
+This page details best practices for Microsoft Monetize sellers to maximize revenue and optimize their monetization  strategies based on The Trade Desk’s inventory policies.
 
 ## Inventory Transparency  
 

@@ -12,10 +12,10 @@ For more information about partner fees, see [Partner Fees](partner-fees.md).
 
 ## Apply a partner fee to a line item
 
+1. Navigate to **Advertisers > Line Items** from the vertical navigation menu on the left.
 1. Go to the **Fees** section of the line item. Fees required for all of the advertiser's line items are already applied automatically, and are indicated by a lock icon.
-1. Click inside the **Associated Fees** search box to see a list of eligible fees, or search for a fee name, and select the desired fee.
-1. Mouse over an applied fee to see the full details.
-1. Click **Review and Save**.
+1. Click inside the **Associated Fees** search box to see a list of eligible fees, or search for a fee name, and select the desired fee or create a fee by selecting **Create Fee**.
+1. Hover over an applied fee to see the full details.
 
 ## Remove a partner fee from a line item
 

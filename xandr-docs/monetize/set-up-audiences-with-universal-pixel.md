@@ -10,7 +10,7 @@ You can set up audiences for your universal pixel using rules and conditions, th
 
 To configure an audience:
 
-1. From the top menu bar, click **Advertisers** \> **Universal Pixel**.
+1. From the vertical navigation menu on left, click **Advertisers** \> **Universal Pixel**.
 1. Select a pixel from the **Universal Pixels** page.
 
    If no pixels are defined, use the setup instructions in [Universal Pixel Basic Implementation](universal-pixel-basic-implementation.md) to create one.

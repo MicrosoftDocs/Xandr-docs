@@ -10,7 +10,7 @@ Creating an advertiser object is the first step before you can start running ad 
 
 ## Step 1. Start a new advertiser
 
-On the **Advertisers** screen, click the **+ New** button.
+Navigate to **Advertisers > Advertisers** from the vertical navigation menu on left, click the **+New** button.
 
 This opens the **Create New Advertiser** screen, where you define all relevant details for your advertiser.
 

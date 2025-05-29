@@ -10,11 +10,11 @@ To avoid having to create VAST extensions for each video creative, you can creat
 
 VAST extensions are custom XML snippets that video players render.
 
-1. From the **Network** menu, select **Tools** > **VAST Extensions**.
+1. From the **Network** menu, select **VAST Extensions**.
 
     The **Template Manager: VAST Extensions** screen displays.
 
-1. Click the **New Extension** button.
+1. Click the **New Extension** or **Create New Extension** button.
 
 1. Enter a new and unique **Name** for your custom extension.
 

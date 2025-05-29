@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 ## Step 1: Get started
 
-Go to the Segment Pixel list in the **Segments** screen (**Network** >  **Segments** > **Segment Manager**), select the check box next to the segment pixel that you want to export, click **More Actions**, and select **Export** pixels. This displays the **Export Pixels** dialog.
+Go to the Segment Pixel list in the **Segments** screen (**Network** > **Segment Manager**), select the check box next to the segment pixel that you want to export, click **Actions**, and select **Export** pixels. This displays the **Export Pixels** dialog.
 
 ## Step 2: Select the pixel format
 

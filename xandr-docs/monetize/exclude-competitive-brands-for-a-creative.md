@@ -10,8 +10,12 @@ When adding creatives, you can apply competitive exclusions from the **Competiti
 
 You can exclude a maximum of 25 brands for each creative. You can also set brand exclusions at the advertiser level. For more information, see [Competitive Exclusions](competitive-exclusions.md).
 
+1. From the vertical navigation menu on left, click **Advertisers** \> **Creative Manager**.
+1. Select the associated Advertiser
+1. Select the associated Creative and navigate to the **Competitive Exclusion** section.
 1. Click in the **Brand** subsection.
 1. Search for specific brands and select the appropriate checkboxes.
+1. Select **Update**
 
 ## Related topics
 

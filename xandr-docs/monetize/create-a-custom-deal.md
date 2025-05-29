@@ -29,11 +29,11 @@ You can start a new deal from two locations:
 
 ### From the deals screen
 
-On the **Deals** screen (**Partners** \> **Deals**), select the Buyers tab and click **New**.
+On the **Deals** screen (**Partners** \> **Deals (legacy)**), select the **with Buyers** tab and click **+New**.
 
 ### From the partnership details screen
 
-On the **Partner Center** screen (**Partners** \> **Partner Center**), select the **Buyers** tab and click on the buyer for whom you'd like to create a deal. Then on the buyer's **Partnership Details** screen, click the number under **Deals** to display any current deals with the buyer and click **New**.
+On the **Partner Center** screen (**Partners** \> **Partner Center**), select the **View Buyers** tab and click on the buyer for whom you'd like to create a deal. Then on the buyer's **Partnership Details** screen, click the number under **Deals** to display any current deals with the buyer and click **New**.
 
 ## Define deal details
 
@@ -226,7 +226,7 @@ To create an override, click **Edit** in the Creative Category section, then use
 |--|--|
 | Restrict the deal to specific categories | On the **Category** tab, click the categories you want to serve in the deal and click **Add**. |
 | Include all categories, and ignore the ad quality settings | Do not click any categories on the **Category** tab. On the **Ad Quality Settings** tab, click **Ignore** for the categories you want to serve, regardless of ad quality settings. |
-| Restrict the deal to specify categories and ignore ad quality settings | On the **Category** tab, click the categories you want to serve in the deal and click **Add**. On the **Ad Quality Settings** tab, click **Ignor**e for the categories you want to serve, regardless of ad quality settings. |
+| Restrict the deal to specify categories and ignore ad quality settings | On the **Category** tab, click the categories you want to serve in the deal and click **Add**. On the **Ad Quality Settings** tab, click **Ignore** for the categories you want to serve, regardless of ad quality settings. |
 
 > [!TIP]
 > Remember, by default, your network and publisher ad quality settings are used to determine the categories that serve for a deal. Overrides are only needed if you want deals to have access to a different set of categories.

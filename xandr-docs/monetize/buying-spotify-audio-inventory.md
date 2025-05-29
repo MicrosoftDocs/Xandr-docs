@@ -19,7 +19,9 @@ This page provides specific information for **Spotify Audio** which includes, cr
 
 ## Adding an audio creative
 
-On the **Creative Manager** screen, click the **Create New** button, then select **Audio**.
+- Navigate to the **Creative** screen (**Advertisers** > **Creative Manager**)
+- Select the associated Advertiser
+- Select **New**, then select **Audio**
 
 Follow the steps outlined in [Add a Creative](add-a-creative.md) and [Add Creatives in Bulk](add-creatives-in-bulk.md).
 

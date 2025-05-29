@@ -17,18 +17,21 @@ Navigate to the **Member Users** screen (hover over your member name in the uppe
 - **Name:** The user's actual name.
 - **Email:** The user's email address.
 - **User Role:** This is the user's role, which determines the areas and functions that each user can access. For details on available roles, see [Getting Started with Roles](getting-started-with-roles.md).
+- **State** Whether the user is active or inactive.
 
 ## Viewing a specific network user's details
 
 To view the details of a specific Network User, select the user in the table. This reveals the **User Details** section, which provides the following additional details about the user:
 
 - **ID** The unique user ID.
+- **Username** The unique name by which the system knows the user.
 - **Name** The user's name.
 - **Status** Whether the user is active or inactive.
 - **Email** The email address associated with the user.
-- **Phone** The user's phone number.
 - **User Role** The role the user has been assigned to. The role determines the type of access the user has within the system.
-- **Permitted Advertisers/Publishers** If the user's role is Network Advertiser Manager or Network Publisher Manager, this is the list of specific advertisers or publishers that the user is permitted to access.
+- **Teams** The role which enables you the ability to create and modify teams and team membership.
+<!--
+**Permitted Advertisers/Publishers** If the user's role is Network Advertiser Manager or Network Publisher Manager, this is the list of specific advertisers or publishers that the user is permitted to access. -->
 
 ## Editing an existing user
 

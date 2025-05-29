@@ -27,7 +27,9 @@ The limitations per split object are as follows:
 
 Currently, the **Optimization** toggle is disabled once you've set max bids for splits. If you'd like to enable optimization and stop using the max bid in splits, it's not possible to do that through editing the individual splits. Instead, you need to download the splits as a CSV, delete the EV information from the CSV, turn on optimization, and import the edited CSV. This creates disjointed reporting (the optimized splits will have different split IDs than the nonoptimized splits), but preserves all of your setup data.
 
-1. Go to **Line Item** \> **Programmable Splits** and click **Export CSV** under **Actions**.
+1. Navigate to the Line item screen, select the **Programmable Splits** section. For more information on Line item, see [Working with Line Items](working-with-line-items.md).
+1. Choose the number of splits and select **Start**
+1. Click **Actions** > **Export CSV** to export a CSV file.
 1. Click **Save** to save the CSV file.
 1. Go to **Line Item** \> **Optimization** and toggle **Optimization Method** to **Optimization enabled**.
 1. Click **Review and Save** to save your changes to the line item.

@@ -24,7 +24,7 @@ To create a collection of ad servers that are either Eligible or Banned, follow 
 
 ## Step 1. Go to the Ad Servers page
 
-From the **Network Ad Quality** page or the **Publisher Ad Quality** page, under **Ad Servers**, click **Edit** next to **Ad Servers**. This will open the **Ad Servers** page.
+From the **Network Ad Quality** page or the **Publisher Ad Quality** page, select **Ad Servers**. This will open the **Ad Servers** page.
 
 ## Step 2. Set the default eligibility
 
@@ -34,11 +34,12 @@ At the top of the page are two options, **Eligible** and **Banned**. **Eligible*
 
 On the left side of the screen is a list of ad servers with a button next to each one.
 
-- If **Eligible** is selected as the default eligibility, each button will show the **Banned** symbol. Click the button next to each ad server that you want to ban from serving creatives to your network or publisher. This will move the ad server to the set of **Banned Ad Servers** on the right.
-- If **Banned** is selected as the default eligibility, each button will show the **Eligible** symbol. Click the button next to each ad server that you want to trust to serve creatives to your network or publisher. This will move the ad server to the set of **Eligible Ad Servers** on the right.
-
+- If **Eligible** is selected as the default eligibility, each button will show the **Use Default (Eligible)** label. Click the button next to each ad server that you want to ban from serving creatives to your network or publisher. 
+- If **Banned** is selected as the default eligibility, each button will show the **Use Default (Banned)** label. Click the button next to each ad server that you want to trust to serve creatives to your network or publisher. 
 It is possible to create two collections of ad servers, a collection of trusted ad servers and a collection of banned ad servers. However, this isn't necessary because the default will still apply to all ad servers that have not been added to a collection.
 
+<!--
 ## Step 4. Save your ad server settings
 
 Click **Save** to save your changes.
+-->

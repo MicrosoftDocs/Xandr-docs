@@ -11,7 +11,7 @@ This page walks you through the steps required to edit a Network user, including
 
 ## Step 1. Select the user
 
-On the **Member Users** screen (**Network** \>  **User Manager** \> **Users** or hover over your member name in the upper-right corner of the menu bar and click **Member Users**), click the row of the user whose permissions you want to change to expose the **User Details** pane. Then click the pencil (Edit) icon.
+Navigate to **Network** \>  **User** from the vertical navigation menu on left or hover over your member name in the upper-right corner of the menu bar and click **Member Users**, click the row of the user whose permissions you want to change to expose the **User Details** pane. Then click the pencil icon to edit.
 
 This opens the **Edit \[User\]** dialog.
 
@@ -28,7 +28,7 @@ To make the user's experience as intuitive as possible, select the decimal and n
 
 ## Step 3. Edit the user's peer approval settings
 
-In the **Roles & Permissions** tab, make any desired changes to the user's peer approval settings. In the **Peer Approval Status** field, check the **User must have peer approval to activate campaigns** checkbox if you want to require approval from another user on the Network before the new user's campaigns can be set to Active. If peer approval is required for the user and you would like to turn it off, uncheck the checkbox to remove this requirement.
+In the **Role & Permissions** tab, make any desired changes to the user's peer approval settings. In the **Peer Approval Status** field, check the **User must have peer approval to activate campaigns** checkbox if you want to require approval from another user on the Network before the new user's campaigns can be set to Active. If peer approval is required for the user and you would like to turn it off, uncheck the checkbox to remove this requirement.
 
 The campaign peer approval feature allows you to require a user to get approval from another user before campaigns can be set to **Active**. This feature minimizes the risk of user-side errors in campaign activation and can help users identify and change settings to improve campaign performance.
 

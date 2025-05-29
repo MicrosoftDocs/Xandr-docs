@@ -10,15 +10,15 @@ On the Partnership details screen you can review and manage your relationship wi
 
 ## Getting to the Partnership Details screen
 
-To reach this screen, select **Partners** > **Partner Center**.
+Navigate to the **Partner Center** screen (**Partners** \>  **Partner Center**)
 
 ## Switching to seller mode
 
-If you are a network that also represents sellers, the **Buyers** and **Sellers** tabs display. Click **Sellers** to view the **Partner Center** as a buyer looking for sellers.
+If you are a network that also represents sellers, the **View Buyers** and **View Sellers** tabs display. Click **Sellers** to view the **Partner Center** as a buyer looking for sellers.
 
 ## Viewing seller contact info and description
 
-Click on a seller and click **Show Profile** to view profile information the seller has provided, including the main contact's name, phone number, email address, and a description of their business. You can contact the seller directly by sending a message within the **Activity Stream**. For more information about the **Activity Stream**, see the [Communicating with the Seller](#communicating-with-the-seller) section below.
+Click on a seller and click **My Profile** to view profile information the seller has provided, including the main contact's name, phone number, email address, and a description of their business. You can contact the seller directly by sending a message within the **Activity Stream**. For more information about the **Activity Stream**, see the [Communicating with the Seller](#communicating-with-the-seller) section below.
 
 > [!NOTE]
 > If the seller has not entered their contact's name, phone number, email address, or a description of their business, then this information will not be available.

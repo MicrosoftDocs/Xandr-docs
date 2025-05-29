@@ -24,7 +24,7 @@ This page walks you through the process of creating a line item.
 
 ## Select the advertiser
 
-On the **Advertisers** screen (**Advertisers** > **All Advertisers**), click the name of the advertiser under which you want to create a line item.
+On the **Advertisers** screen (**Advertisers** > **Advertisers**), click the name of the advertiser under which you want to create a line item.
 
 You can create line items from the advertiser details screen or from an advertiser's insertion order.
 
@@ -38,7 +38,7 @@ The **Create New Line Item** screen displays, where you define all relevant deta
 
 ### From an insertion order
 
-1. On the **Advertisers** screen (**Advertisers** > **All Advertiser**), click the **Insertion Orders** of the advertiser under which you want to create a line item.
+1. On the **Advertisers** screen (**Advertisers** > **Advertiser**), click the **Orders** of the advertiser under which you want to create a line item.
 1. On the **Insertion Orders** screen, click the insertion order under which you want to create the line item.
 1. Click **New** button in the **Line Items** section. This opens the **Create New Line Item** screen, where you define all relevant details for your line item.
 

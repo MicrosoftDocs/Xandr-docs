@@ -16,7 +16,7 @@ You can also manage your deals with a specific buyer on the [Partnership Details
 
 ## Getting to the deals screen
 
-To reach the **Deals** screen, select **Partners** \>  **Deals** in the main navigation.
+On the **Deals** screen (**Partners** \> **Deals (legacy)**), select the **with Buyers** tab 
 
 ## Viewing basic and advanced deal metrics
 
@@ -103,7 +103,7 @@ If a current or upcoming deal no longer works for you, you can cancel it at any 
 
 ## Reporting on deals
 
-You can run reports to see how your deals are performing. Check the checkbox near the desired deals, and then click **Actions** \> **Show in Reporting**.
+You can run reports to see how your deals are performing. Check the checkbox near the desired deals, and then click **Select** \>  **Show in Reporting**.
 
 A new tab opens displaying the [Network Analytics Report](network-analytics-report.md) with the selected deals as filters and Deal selected as a dimension.
 

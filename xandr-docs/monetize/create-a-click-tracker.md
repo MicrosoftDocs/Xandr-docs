@@ -12,9 +12,9 @@ This document describes how to create and export a click tracker for use with cr
 
 ## Step 1. Create a click tracker
 
-Navigate to the **Click Trackers** screen (**Advertisers** \> **Click Trackers**) and click the **Create Click Tracker** button.
+Navigate to the **Click Trackers** screen (**Advertisers** \> **Click Trackers**), select an associated Advertiser, and click the **New** button.
 
-The **Create new Click Tracker** dialog will appear. In the **Click Tracker Details** section, enter the name of the click tracker. You can click **Advanced Options** if you'd like to assign your own custom **Code** and **Landing Page URL** to this click tracker.
+The **Create New Click Tracker** dialog will appear. Enter the name of the click tracker and if you'd like to assign your own custom **Code** and **Landing Page URL** to this click tracker, you can enter the same.
 
 ## Step 2. Associate with a line item (required)
 

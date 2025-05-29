@@ -13,10 +13,8 @@ This document describes how to create an impression tracker and export it for us
 ## Step 1. Create an impression tracker
 
 1. Navigate to the **Impression Trackers** screen (**Advertisers** > **Impression Trackers**) and select an appropriate advertiser if prompted.
-
-1. On the **Impression Trackers** screen, click **+ New** to open the **Create New Impression Tracker** dialog.
-
-1. In the **Imp Tracker Details** section, enter the name of the impression tracker. You can click **Advanced Options** if you'd like to assign your own custom code to this impression tracker.
+1. Click **New** to open the **Create New Impression Tracker** dialog.
+1. In the **Imp Tracker Details** section, enter the name of the impression tracker. 
 
 ## Step 2. Associate with a line item (required)
 

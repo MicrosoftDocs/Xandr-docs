@@ -8,6 +8,8 @@ ms.date: 10/28/2023
 
 You can define a split by specifying the targeting goals you want it to meet.
 
+1. Navigate to the Line item screen, select the **Programmable Splits** section. For more information on Line item, see [Working with Line Items](working-with-line-items.md)
+1. Choose the number of splits and select **Start**
 1. Click the pencil icon that displays in the **Name** column for the corresponding split.
 1. Click the  **Setup** tab and set the **Bid Multiplier**.
 1. Click the **Targeting** tab and select the types of targeting you want to apply using the dropdown menu.

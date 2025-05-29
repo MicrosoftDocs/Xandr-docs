@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Update line items
 
-From the **SMW Line Items** screen, you can update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
+Navigate to **Advertisers > Line Items** from the vertical navigation menu on the left. From the **SMW Line Items** screen, you can update your line items for an advertiser by editing, deleting, or duplicating any line item in the list.
 
 ## Edit line items
 

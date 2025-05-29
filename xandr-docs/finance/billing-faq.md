@@ -3,6 +3,7 @@ title: Finance - Billing and Settlement FAQ
 description: In this article, find answers for some frequently asked questions regarding Billing.
 ms.date: 10/28/2023
 ms.custom: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Billing and Settlement FAQ

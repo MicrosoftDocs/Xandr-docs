@@ -11,7 +11,7 @@ Although you cannot modify the standard Microsoft Advertising creative templates
 > [!WARNING]
 > Your changes immediately affect any creatives that are already using the template. If your changes cause these creatives to stop rendering properly, their audit status will be changed to "**rejected**" and they will stop serving on most third-party inventory.
 
-1. Navigate to the **Creative Templates** screen by clicking **Network** > **Tools** > **Creative Templates**.
+1. Navigate to the **Creative Templates** screen by clicking **Network** > **Creative Templates**.
 
 1. From the grid, click the custom template that needs to be updated.
 

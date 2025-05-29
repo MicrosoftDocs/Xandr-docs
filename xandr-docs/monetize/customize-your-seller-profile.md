@@ -11,13 +11,14 @@ On the **Partner Center** screen, you can edit the profile information that disp
 
 ## Step 1. Get started
 
-Go to the **Partner Center** screen (**Partners** \>  **Partner Center**), select the **Buyers** tab, and click the **My Profile** button to open the **My Seller Profile** dialog. Basic information about your member displays:
+Go to the **Partner Center** screen (**Partners** \>  **Partner Center**), select the **View Buyers** tab, and click the **My Profile** button to open the **My Seller Profile** dialog. Basic information about your member displays:
 
 - **ID** - The unique identification number for your member.
 - **Name** - Your member name.
 - **Partner Type** - The type of member you are within Monetize:
   - **Buyer** - A member that buys inventory through Microsoft Monetize.
   - **Seller** - A member that sells inventory through Microsoft Monetize.
+- **Primary Market** - The country in which you purchased 50% or more of your total RTB impressions. If you do not purchase 50% or more in a single country you will not have a primary market.
 
 Networks viewing this information can toggle between the buyer and seller view.
 

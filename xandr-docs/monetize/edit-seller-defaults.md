@@ -21,9 +21,9 @@ While you can change your settings for the seller, you cannot change the seller'
 
 ### Step 1. Get started
 
-Go to the **Partner Center** screen (**Partners** >  **Partner Center**) and click on a seller's name:
+Go to the **Partner Center** screen (**Partners** >  **Partner Center**) and click **View Sellers** tab to select a seller:
 
-- To edit a single seller's settings, click **Edit** in the **My Settings for {Seller Name}** section to display seller settings.
+- To edit a single seller's settings, click **Edit Selected Sellers** to display seller settings.
 - To edit multiple sellers, select the checkbox of the sellers you want to edit and click **Edit Selected Sellers** to display the **Edit Partner Controls** section. Any changes you make will be applied to all checked sellers.
 
 ### Step 2. Update settings
@@ -32,9 +32,9 @@ Go to the **Partner Center** screen (**Partners** >  **Partner Center**) and cli
 
 To apply seller defaults [Set Seller Defaults](set-seller-defaults.md):
 
-- For a single seller in the **My Settings for {Seller Name}** section, select **Default** from the drop-down.
+- For a single seller in the **Edit Selected Sellers** section, select **Eligible(Default)**.
 
-- For multiple sellers in the **Edit Partner Controls** section, select **Default**. When **Default** is selected, the current default settings display for reference.
+- For multiple sellers in the **Edit Partner Controls** section, select **Eligible(Default)**. When **Eligible(Default)** is selected, the current default settings display for reference.
 
   > [!NOTE]
   > If you select **Default**, the **Inventory Trust Settings** will follow the default settings.
@@ -42,7 +42,7 @@ To apply seller defaults [Set Seller Defaults](set-seller-defaults.md):
 ## Set custom settings
 
 1. Set custom settings:
-    - For a single seller in the **My Settings for {Seller Name}** section, select **Custom** from the drop-down.
+    - For a single seller in the **Edit Selected Sellers** section, select **Custom** from the drop-down.
     - For multiple sellers, the settings are available in the **Edit Partner Controls** section.
 1. Select the custom settings:
     - **Seller Eligibility** - the transaction eligibility between buyer and seller. A buyer may block a seller, a seller may block a buyer, or both buyer and seller may be blocked by each other, see [Partner Center Screen - Buyer View](partner-center-screen-buyer-view.md).

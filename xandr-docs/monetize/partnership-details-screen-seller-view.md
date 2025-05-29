@@ -14,7 +14,7 @@ On the Partnership details screen you can review and manage your relationship wi
 
 **All other clients**: Select **Partners** > **Partner Center**.
 
-Then click on a buyer.
+Then click on a **Buyer View**.
 
 ## Viewing buyer contact info and description
 

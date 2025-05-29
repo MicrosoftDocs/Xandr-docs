@@ -18,7 +18,7 @@ Things you can do on this page include: - Use filters to quickly identify line i
 
 To get to the line items screen:
 
-- Select **Advertisers** >  **Line Items** from the navigation menu at the top of the screen,
+- Select **Advertisers** >  **Line Items** from the vertical navigation menu on the left.
 
   or
 
@@ -27,11 +27,8 @@ To get to the line items screen:
 
   Publisher users can:
 
-- Select **Orders** >  **Line Items** from the navigation menu at the top of the screen
+- Select **Orders** >  **Line Items** from the vertical navigation menu on the left.
 
-  or
-
-- Click **All Line Items** in the left panel on the Line Items or Orders screens.
 
 ## Filter your line items
 

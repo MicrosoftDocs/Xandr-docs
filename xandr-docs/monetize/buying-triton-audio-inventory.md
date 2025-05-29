@@ -22,6 +22,8 @@ Triton Digital has created a test station where you can test your a2x/Microsoft 
 
 To set up and listen to a test ad:
 
+1. Navigate to the **Creative** screen (**Advertisers** > **Creative Manager**)
+1. Select the associated Advertiser
 1. Upload your ad using the **Creative Manager** and assign it to the **Alpha Test** brand in the **Creative Attributes** section, using the **Self-classify** audit option.
 1. Create a new line item or campaign. In the **Buying Strategies** area of the **Basic Setup** section, set the **Bid a base CPM** to $1.00 CPM.
 

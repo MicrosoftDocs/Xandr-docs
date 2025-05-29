@@ -8,7 +8,7 @@ ms.date: 10/28/2023
 
 You can set up conversions for your universal pixel using rules and conditions, then track conversion activity using Microsoft Monetize reporting.
 
-1. From the top menu bar, click **Advertisers** \> **Universal Pixel**.
+1. From the vertical navigation menu on left, click **Advertisers** \> **Universal Pixel**.
 1. Select a pixel from the **Universal Pixels** page.
 
    If no pixels are defined, use the setup instructions in [Universal Pixel Basic Implementation](universal-pixel-basic-implementation.md) to create one.

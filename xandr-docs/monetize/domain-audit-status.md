@@ -14,7 +14,7 @@ The **Domain Audit Status** tool is available under **Network** > **Tools** > **
 
 To check the audit status of your domains, follow these steps:
 
-1. Go to the **Network** > **Tools** menu and select **Domain Audit Status**. This redirects you to the **Domain Audit Status** screen.
+1. Go to the **Network** > and select **Domain Audit Status** from the vertical navigation on the left. This redirects you to the **Domain Audit Status** screen.
 1. Under **Search Domains**, enter the domains you would like to check. Separate multiple values with commas or line breaks. Alternatively, select the **Upload** button to upload a CSV file containing up to 4,000 domains.
 1. Select **Submit** to run the tool.
 

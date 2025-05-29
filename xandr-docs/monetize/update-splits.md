@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 ## Edit a split
 
-You can edit splits from the **Edit Line Item** screen. Expand the **Programmable Splits** section. Select a split from the Splits table or click on the pencil icon next to the split name.
+Navigate to the Line item screen, select the **Programmable Splits** section. For more information on Line item, see [Working with Line Items](working-with-line-items.md). Expand the **Programmable Splits** section. Select a split from the Splits table or click on the pencil icon next to the split name.
 
 ## Duplicate a split
 

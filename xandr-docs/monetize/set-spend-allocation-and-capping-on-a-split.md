@@ -8,6 +8,8 @@ ms.date: 10/28/2023
 
 Spend allocation is the percentage of the line item daily budget assigned to a split, and capping determines how a split handles conflicts between the spend allocation and line item delivery goals.
 
+1. Navigate to the Line item screen, select the **Programmable Splits** section. For more information on Line item, see [Working with Line Items](working-with-line-items.md)
+1. Choose the number of splits and select **Start**
 1. From the **Split Details** view, select **Use Spend Allocation** to set spend allocation for your splits.
 1. Enter a percentage for each split in the **Spend Allocation** column.
 

@@ -29,11 +29,13 @@ House line items can serve as **fallback campaigns** when no other ads are eligi
 
 You can create a new house line item (HLI) from the **Line Items** screen. For more information, see [Monitor Line Items](monitor-line-items.md).
 
-1. On the **Line Items** screen, select **+New** drop-down menu and select **Line Item**.
-2. On the **Create New Line Item** screen, select **House Ad**.
-3. In the **Advertiser** drop-down, select the appropriate advertiser.
-4. In the **Insertion Order** drop-down, select an appropriate insertion order if one is not already selected.
-5. Click **Next** to open the **Create New House Line Item** screen.
+1. Select **Advertisers** >  **Line Items** from the vertical navigation menu on left
+1. Click **+ New**.
+1. Select **Line Item**
+1. Select the **House Ad** option.
+3. Select the associated **Advertiser**
+4. Select the associated **Insertion Order** drop-down, 
+5. Click **Next** to open the **Create New House Ad Line Item** screen.
 
 ## Basic settings
 

@@ -16,9 +16,7 @@ To create, deploy, and test the pixel:
 
 ## Configure your pixel code using the UI
 
-1. From the top menu bar, click **Advertisers** > **Universal Pixel**.
-1. Click **New**.
-1. Select an advertiser from the list.
+1. From the top menu bar, click **Advertisers** > **Universal Pixel** and select the associated advertiser
 1. Click **Track Your Website Activity** or **Track Your App Activity**.
 1. Type a name for your pixel in the **Name** field and **Save** to continue.
 

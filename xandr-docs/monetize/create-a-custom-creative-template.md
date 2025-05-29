@@ -10,7 +10,7 @@ You can create a new custom creative template from scratch at any time.
 
 You can also duplicate an existing template and then modify it. For more information, see [Duplicate an Existing Custom Creative Template](duplicate-an-existing-custom-creative-template.md).
 
-1. Navigate to the **Creative Templates** screen by clicking **Network** \> **Tools** \> **Creative Templates**.
+1. Navigate to the **Creative Templates** screen by clicking **Network** > **Creative Templates**.
 1. Click **New**.
 1. Provide the following information:
 

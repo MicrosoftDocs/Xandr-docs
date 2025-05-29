@@ -24,7 +24,7 @@ While a safety budget can help prevent accidental overspend, it is not a replace
 
 ## Getting to the safety budget
 
-Safety Budget settings are available under your Network Settings.
+Navigate to **Network** > **General** from the left vertical navigation menu and then select the **Safety Budget** tab.
 
 ## Set Your safety budget
 

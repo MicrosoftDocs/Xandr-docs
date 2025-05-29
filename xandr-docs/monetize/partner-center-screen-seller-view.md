@@ -10,9 +10,7 @@ On the Partner Center screen you can view your partners, search all buyers, mana
 
 ## Getting to the Partner Center screen
 
-**Publisher clients:** Select **Marketplace** > **Partner Center**.
-
-**All other clients:** Select **Partners** > **Partner Center**.
+Navigate to the **Partner Center** screen (**Partners** \>  **Partner Center**)
 
 ## Switching to buyers mode
 

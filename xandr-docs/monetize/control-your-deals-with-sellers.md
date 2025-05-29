@@ -18,7 +18,7 @@ You can control deals received from sellers on the **Deals** screen. You can:
 
 ## Getting to the deals screen
 
-To reach the **Deals with Sellers** screen, select **Partners** \> **Deals**.
+On the **Deals** screen (**Partners** \> **Deals (legacy)**), select the **with Sellers** tab 
 
 ## Setting deal review preferences
 
@@ -34,7 +34,7 @@ Buyers can configure the default manner in which they process new seller deals b
   >
   >  To set the deal review preference for new seller deals, do the following:
 
-1. Select **Partners** \> **Deals**.
+1. Select **Partners** \> **Deals(legacy)**.
 1. On the top right of the **Deals** screen, click the edit icon on **New Deals Do Not Require Approval** (or **New Deals Require Approval** if it’s been changed previously) to open **Review Preferences**.
 1. On the **Review Preferences** page, select either:
     - **Default Active** – to accept all new deals and set their status to **Active**

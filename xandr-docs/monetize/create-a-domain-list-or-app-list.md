@@ -4,18 +4,36 @@ description: In this article, find instructions on how to create a new domain li
 ms.date: 10/28/2023
 ---
 
-# Create a domain list or app list
+# Overview
 
 > [!NOTE]
 > Targeting lists are only available to Standard Line Items. For an overview of which targeting options are available to Standard versus Augmented Line items, see [Buy-Side Targeting](buy-side-targeting.md).
 
 You can create a new domain list or app list by uploading a text file, or by entering domains or apps manually into Monetize. This page walks you through the process. For details about creating a list by duplicating an existing list, see [Explore Domain Lists or App Lists](explore-domain-lists-or-app-lists.md).
 
-## Create a domain list
+## Create a domain or app list
 
 > [!NOTE]
 > Domain targeting applies only to **Web** and **Mobile Web** impressions and does not apply to **Mobile App** impressions. If you have allowed your campaign to serve on mobile apps while targeting a domain list, the campaign will be unrestricted when buying mobile app inventory unless you have also applied App List targeting. To avoid serving on mobile app inventory, switch the **Apps Placements** toggle in your campaign's targeting profile to OFF.
+1. Select **Admin** > **Inventory Lists** 
+1. Click **New** 
+1. In the **Create List** dialog, enter the **Name** and **Description** of the domain or app list.
+1. In the **Add domains & app** section, either:
+    1. Select **Copy and paste domains & apps** into the text area OR
+    1. Select **Import from file**, and select text file to upload.
+        > [!NOTE]
+        > Excel files are not allowed.
+1. Click **Create List** to target this domain or app list in a campaign.
 
+> [!NOTE]
+> - Domains and subdomains must be separated by a comma, space, or line break. See below for [examples for domains and subdomains formatting](#examples-for-domains-and-subdomains-formatting).
+> - Wildcards (for example, `msn.*`) are not allowed in domain lists. However, a top-level domain (TLD) can be added to a domain list by entering it into the domain list text field without leading periods. For example, to block the `.fr` domain, add `fr` without the period to the list.
+> - To restrict or include an entire TLD, enter that TLD in your list. Do not include the leading period "." For example, if you want to serve on any site in the `.de` TLD, you should add `de` (with no leading period) to your allowlist.
+> - You can only target domains (`test4.com`) or sub-domains (`review.test4.com`); you can't target specific directories within domains. For example, targeting `test4.com/review` is not supported.
+> - If you target a domain, it automatically targets all subdomains. For example, targeting `test4.com` automatically targets `review.test4.com.`
+> - Domains which begin with `"www"` will have the `"www"` substring stripped out before being stored in our system. For example, `"www.example.org"` will be shortened to `"example.org"`.
+
+<!--
 1. Go to **Network** > **Inventory** > **Targeting Lists**.
 1. Click **Create New** > **Domain List** OR select the **Domain Lists** tab and click **+ New**.
 1. In the **New Domain List** dialog, enter the **Name** and **Description** of the domain list.
@@ -25,15 +43,9 @@ You can create a new domain list or app list by uploading a text file, or by ent
         > [!NOTE]
         > Excel files are not allowed.
 1. Click **Save**. To target this domain list in a campaign, see [Domain Targeting](domain-targeting.md).
+-->
 
-> [!NOTE]
->
-> - Domains and subdomains must be separated by a comma, space, or line break. See below for [examples for domains and subdomains formatting](#examples-for-domains-and-subdomains-formatting).
-> - Wildcards (for example, `msn.*`) are not allowed in domain lists. However, a top-level domain (TLD) can be added to a domain list by entering it into the domain list text field without leading periods. For example, to block the `.fr` domain, add `fr` without the period to the list.
-> - To restrict or include an entire TLD, enter that TLD in your list. Do not include the leading period "." For example, if you want to serve on any site in the `.de` TLD, you should add `de` (with no leading period) to your allowlist.
-> - You can only target domains (`test4.com`) or sub-domains (`review.test4.com`); you can't target specific directories within domains. For example, targeting `test4.com/review` is not supported.
-> - If you target a domain, it automatically targets all subdomains. For example, targeting `test4.com` automatically targets `review.test4.com.`
-> - Domains which begin with `"www"` will have the `"www"` substring stripped out before being stored in our system. For example, `"www.example.org"` will be shortened to `"example.org"`.
+
 
 ### Examples for domains and subdomains formatting
 
@@ -58,7 +70,7 @@ Examples of acceptable formatting include:
   review.test2.com,
   test3.com
   ```
-
+<!--
 ## Create an app list
 
 1. Go to **Network** > **Inventory** > **Targeting Lists**.
@@ -72,6 +84,7 @@ Examples of acceptable formatting include:
       > The app IDs should be separated by commas or line breaks.
 
 1. Click **Save**. To target this app list in a campaign, see [App Targeting](app-targeting.md).
+-->
 
 ### App bundle ID (App ID)
 

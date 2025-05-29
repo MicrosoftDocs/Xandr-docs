@@ -31,8 +31,12 @@ The following tasks are recommended but not required:
 
 To create a new PG line item, do the following:
 
-1. Click **Create New** in the Line Item.
-1. On the **Choose Line Item** screen, select **Programmatic Guaranteed** under **Type**.
+1. To get to the insertion orders screen:
+
+1. Select **Advertisers** >  **Line Items** from the vertical navigation menu on left
+1. Click **+ New**.
+1. Select **Line Item**
+1. On the **Line Item Type** screen, select **Guaranteed Delivery** under **Type**.
 1. Click **Okay** to open the **Create a Programmatic Guaranteed Line Item** screen.
 
 ## Basic setup

@@ -11,23 +11,30 @@ There are literally billions of chances for buyers to purchase impressions every
 - Including or excluding specific domain lists
 - Including specific countries/regions
 
-You can create these filters in Microsoft Monetize by going to the menu location **Network** \> **Tools** \> **General**. Select the **3rd-Party Buying Filters** tab.
+Navigate to **Network** > **General** from the left vertical navigation menu and then select the **3rd-Party Buying Filters** tab from the top navigation menu.
 
 > [!NOTE]
 > These settings affect third-party inventory only. They have no impact on managed inventory.
 
+<!--
 ## Manage your third-party buying filters
 
-This **3rd-Party Buying Filters** screen shows the two areas in which you can apply member-wide filters. To reach this screen, select **Network** > **Tools** > **General** on the top menu and then select the **3rd-Party Buying Filters** tab.
+This **3rd-Party Buying Filters** screen shows the two areas in which you can apply member-wide filters. To reach this screen, select **Network** > **Tools** > **General** on the top menu and then select the **3rd-Party Buying Filters** tab. -->
 
 ### Targeting: Geography
 
 This section allows you to establish a list of countries/regions that you can choose from when targeting a specific campaign.
 
-- **Search:** You can enter a text string in this field (to the right of the magnifying glass symbol) to locate a country/region in the **Available List**. As you type, countries/regions matching the entered text appear in the field.
-- **Available List:** This section contains the countries/regions that you have not yet selected.
-- **Chosen List:** This section contains the countries/regions that you have selected. Only these countries/regions will be available for campaign targeting by geography (refer to [Geography Targeting](geography-targeting.md) for more information).
+- **Search:** You can enter a text string in this field (to the right of the magnifying glass symbol) to locate a country/region. As you type, countries/regions matching the entered text appear in the field.
+- **Selected Countries:** This section contains the countries/regions that you have selected. Only these countries/regions will be available for campaign targeting by geography (refer to [Geography Targeting](geography-targeting.md) for more information).
 
+### Targeting: Domain Lists
+This section allows you to determine targeting using domain lists.
+
+- **Search:** You can enter a text string in this field (to the right of  the magnifying glass symbol) to locate a country/region.
+- **Selected Domain Lists:** This section contains the lists that you have selected. Depending on your selection for the **Include/Exclude selected domains**, the domains in these lists will either be restricted from bidding, or will be the only domains in which you can bid.
+
+<!--
 ### Inventory: Domain lists
 
 This section allows you to determine targeting using domain lists.
@@ -35,6 +42,7 @@ This section allows you to determine targeting using domain lists.
 - **Search:** You can enter a text string in this field (to the right of  the magnifying glass symbol) to locate a country/region in the Available Domains List.
 - **Available Domain Lists:** This section contains the lists that you have not yet selected.
 - **Chosen Domain Lists:** This section contains the lists that you have selected. Depending on your selection for the **Include/Exclude  specific list of domains** (above), the domains in these lists will either be restricted from bidding, or will be the only domains in which you can bid.
+-->
 
 ## Limit the countries that you can target
 
@@ -48,26 +56,25 @@ Prior to opening this section, the countries/regions which have already been inc
 
 ### Step 2. Choose the countries to add or remove from targeting
 
-You can move countries/regions between the **Available List** and the **Chosen List** to include or exclude them from targeting. Countries/regions that appear in the **Chosen List** are eligible for third-party targeting when creating a campaign. Countries/regions that appear in the **Available List** cannot be selected when creating a campaign.
+You can move countries/regions between the to the **Selected Countries** list to include or exclude them from targeting. Only the countries/regions that appear in the chosen list are eligible for third-party targeting when creating a campaign. C
 
 #### To move countries to the Chosen List
 
 A country/region must be highlighted in the **Available List** before you can move it to the **Chosen List**. There are several ways to highlight and move countries/regions:
 
-- Click on the desired country/region or countries/regions select the **Add** button at the bottom of the list. All highlighted countries/regions move to the **Chosen List**.
-- Type the country/region name in the search field (to the right of the magnifying glass symbol). The list shows only those countries/regions that match your search criteria. Highlight the desired countries/regions and click the **Add** button at the bottom of the list. All highlighted countries/regions move to the **Chosen List**.
-- Click the **Select all** option at the top right of the list. Click the **Add** button at the bottom of the list to move them all to the **Chosen List**.
-
-#### To move countries to the Available List
-
-A country/region must be highlighted in the **Chosen List** before you can move it to the **Available List**. The options for highlighting and moving countries/regions to this list are the same as moving them to the **Chosen List** (with the exception that all movement is in the reverse direction).
+- Click the **green tick mark** on the desired country/region or countries/regions to move the countries/regions to the chosen list.
 
 ### Step 3. Save your settings
 
-Click the **Save** button at the bottom left of the screen when you have finished making changes to the **Targeting: Geography** settings.
+Click the **Save 3rd-Party Buying Filter Settings** button at the bottom left of the screen when you have finished making changes to the **Targeting: Geography** settings.
 
 > [!IMPORTANT]
 > Saving the **Targeting: Geography** settings does not preclude you from making changes to the **Inventory: Domain List** settings.
+
+<!--
+#### To move countries to the Available List
+
+A country/region must be highlighted in the **Chosen List** before you can move it to the **Available List**. The options for highlighting and moving countries/regions to this list are the same as moving them to the **Chosen List** (with the exception that all movement is in the reverse direction). -->
 
 ## Limit the Domain Lists that you can target
 
@@ -113,7 +120,7 @@ This option allows you to choose one or more domain lists at the network level, 
 
 ### Step 3. Choose the domain lists to add or remove from targeting
 
-You can move domain lists between the **Available Domain Lists** and the **Targeted Domain Lists** fields to make them available for targeting or exclusion in a campaign. Domain lists that appear in the **Targeted Domain Lists** are eligible for targeting when creating a campaign. Domain lists that appear in the **Available Domains List** cannot be selected when creating a campaign.
+You can move domain lists to the **Selected Domain Lists** to make them available for targeting or exclusion in a campaign. Only, domains that appear in the **Targeted Domain Lists** are eligible for targeting when creating a campaign. 
 
 #### To move countries to the Targeted Domain List
 

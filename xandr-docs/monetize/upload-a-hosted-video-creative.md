@@ -44,7 +44,10 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ### Step 1. Get started
 
-On the **Creative Manager** screen, click the **Create New** button, then select **Video**. The **Creative: New Creative** screen displays.
+- Navigate to the **Creative** screen (**Advertisers** > **Creative Manager**)
+- Select the associated Advertiser
+- Select **New**, then select **Video**
+
 
 ### Step 2. Upload the file
 

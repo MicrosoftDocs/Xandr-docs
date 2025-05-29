@@ -19,7 +19,7 @@ If you have inventory you'd like to resell to buyers on the platform, you'll pro
 
 ### Getting there
 
-To get to the **Reselling Exposure** screen, select **Network**  \>  **Tools** \> **General** from the top navigation menu. The **Reselling Exposure** tab will be displayed by default.
+To get to the **Reselling Exposure** screen, select **Network** > **General** from the left vertical navigation menu. Select the **Reselling Exposure** tab from the top navigation menu.
 
 ### Reselling priority
 
@@ -32,8 +32,8 @@ For each impression on a managed publisher, if there is a campaign from a manage
 
 In this section, you can expose one or more of your publishers' inventory for targeting by other platform members' campaigns.
 
-- In the **Private Publishers** box, click **Add** next to each publisher you want to expose. This will move that publisher to the **Exposed Publishers** box, making it visible for targeting by other platform members.
-- To return a publisher to private exposure, click **Remove** next to the publisher's name in the **Exposed Publishers** box.
+- In the **Publisher Reselling Exposure** box, select the **green check mark** against each publisher you want to expose. This will move that publisher to the **Exposed Publishers** box, making it visible for targeting by other platform members.
+- To return a publisher to private exposure, select the remove **x** icon next to the publisher's name in the **Exposed Publishers** box.
 
 ## Related topics
 

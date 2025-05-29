@@ -16,9 +16,9 @@ Things you can do on this page include:
 
 ## Access the Line Items screen
 
-To access Line Items screen:
+To get to the insertion orders screen:
 
-- Select **Advertisers** >  **Line Items** from the navigation menu at the top of the screen.
+- Select **Advertisers** >  **Line Items** from the vertical navigation menu on left
 
   or
 
@@ -72,7 +72,7 @@ The following table describes the available fields and their values:
 
 All saved filters are available from the **Select a Filter** pull-down menu. To remove an applied filter, select **Clear All**. You can update any saved filter at any time by selecting the **Edit** link or by accessing **Advanced Filters**. From the **Advanced Filters** dialog, you can rename, delete, or set a saved filter as the default.
 
-## Find inactive line items
+## Find inactive Line items
 
 Line items with the **Inactive** state are shown with their IDs, names, and quickstats in gray italics.
 

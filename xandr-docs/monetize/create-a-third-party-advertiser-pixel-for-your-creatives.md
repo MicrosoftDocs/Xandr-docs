@@ -12,7 +12,7 @@ You can create third-party creative pixels at the advertiser level and then appl
 
 1. Click **Third-party Pixels**.
 
-    The **Third-party Pixels** screen will be displayed.
+1. Select the associated advertiser
 
 1. Click **New** to create a new third-party pixel.
 

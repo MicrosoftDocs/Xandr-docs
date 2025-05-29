@@ -13,7 +13,7 @@ For details on applying a specific template to a new campaign, see [Apply a Targ
 
 ## Accessing the targeting templates screen
 
-To reach the **Targeting Templates** screen, select **Network** \> **Tools** \> **General** from menu bar and then select the **Targeting Templates** tab.
+Navigate to **Network** > **General** from the left vertical navigation menu and then select the **Targeting Templates** tab from the top navigation menu.
 
 ## Viewing template details
 
@@ -24,6 +24,15 @@ To see the details of a template, highlight the row in the **Targeting Templates
 
 You can only see the settings for one template at a time. The following information is displayed in the **Template Details** section (these topics may have multiple settings):
 
+- **ID**
+- **Name**
+- **Inventory Type Targeting**
+- **Inventory Targeting**
+- **Geography Targeting**
+- **Segment Targeting**
+- **System Targeting**
+
+<!--
 - **ID**
 - **Name**
 - **Supply types**
@@ -37,6 +46,7 @@ You can only see the settings for one template at a time. The following informat
 - **Segment**
 - **Demographics**
 - **System (OS and Browsers)**
+-->
 
 ## Specifying a default template
 

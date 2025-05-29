@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - Inventory targeting (ALI)
 
-If you selected **Managed** under **Supply Strategy** (in the **Basic Setup** section of the line item), you can target or exclude the following inventory:
+In the **Inventory & Brand Safety** section, select **Managed Inventory** to target or exclude the following inventory:
 
 - Universal Categories (for more detail, see below)
 - Custom Categories (for more detail, see below)

@@ -12,11 +12,9 @@ You can create users and assign them to various roles. Each role gives the user 
 
 Network users have access to various areas and functionality of your Network based on the roles and permissions you specify. Only users with the **User Manager** role can create a Network User.
 
-### User details
-
 #### Getting there
 
-You add network users in the **Network** section of Monetize. Go to **Network** > **Users** and then click the **+ New** button. This opens the **Create User** dialog.
+You add network users in the **Network** section of Microsoft Monetize. Go to **Network** > **Users** and then click the **+ New** button. This opens the **Create User** dialog.
 
 #### Enter contact information
 
@@ -83,6 +81,7 @@ The following steps walk you through the creation process.
 
 1. To finish creating the new advertiser user, click **Save**. The user is then added to the list of advertiser users.
 
+<!--
 ## Create a publisher user
 
 You can create users for publishers that want to run reports for themselves. Only users with the **User Manager** and/or **Network Publisher Manager** role can create a Publisher User.
@@ -101,3 +100,4 @@ The following steps walk you through the creation process.
 1. In the **Login Credentials** section, enter the username that the user will use to log in to Monetize. The username should not contain any special characters such as $, #, and ". The username and password will be sent to the email address entered in the **Contact Information** section.
 
 1. To finish creating the new publisher user, click **Save**. The user is then added to the list of publisher users.
+-->

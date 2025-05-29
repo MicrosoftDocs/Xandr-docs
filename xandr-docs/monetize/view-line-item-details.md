@@ -6,7 +6,7 @@ ms.date: 10/28/2023
 
 # Microsoft Monetize - View Line Item Details
 
-The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
+Navigate to **Advertisers > Line Items** from the vertical navigation menu on the left. The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
 
 ## Getting to the Line Item Details pane
 
@@ -31,7 +31,7 @@ For more information, see [Improve Performance with Visual Success](improve-perf
 -->
 ## Viewing line item settings
 
-The **Line Item Settings** section shows the basic details, frequency caps, reporting labels, commissions, associated insertion orders (when relevant), and dynamic landing page URL, as well as inventory, geography, and system targeting (if set).
+Click on any of the Line item to open the **Settings**  section on the right pane that shows the basic details, frequency caps, reporting labels, commissions, associated insertion orders (when relevant), and dynamic landing page URL, as well as inventory, geography, and system targeting (if set).
 
 The **Basic Settings** button shows the **Basic Setup**, **Frequency Cap**, **Geography Targeting**, **System Targeting**, **Inventory Targeting**, **Key Value Targeting**, and **Insertion Order Settings** (if applicable).
 

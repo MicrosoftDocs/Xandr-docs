@@ -164,7 +164,7 @@ For information on general inventory targeting, see [Buying Microsoft Inventory]
 
 To target Microsoft Casual Games inventory when setting up a line item or campaign or campaign:
 
-1. In the **Device and Supply Type** section, target all device types (Desktop & Laptops, Tablets, and Phones).
+1. In the **Viewability & Environment Targeting** section, target all device types (Desktop & Laptops, Tablets, and Phones).
 1. In the **Inventory Quality** section, select **Serve on any inventory**.
 1. In the Inventory section, click **Edit**.
 1. On the **3rd Party Inventory** \> search **Microsoft Advertising Exchange (280)**.

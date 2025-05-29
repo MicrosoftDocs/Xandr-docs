@@ -15,12 +15,12 @@ For more information on the relationship between Publisher Templates and Network
 
 ## Step 1. Create a new publisher template
 
-To create a new Publisher Template, navigate to the **Network** tab's **Ad Quality** section and click the **Create New Template** button.
+To create a new Publisher Template, navigate to the **Network** tab's **Ad Quality** section and click the **Create a Template** button.
 
 > [!TIP]
 > You can edit an existing Publisher Template by clicking on its name, then clicking the **Full Edit** button.
 
-The **Create New Template** dialog will appear. This is where you'll enter the template's name and add any notes you'd like to include. After saving, you'll return to the **Network Ad Quality** screen, where you'll edit each of the available options as described in Step 2.
+The **Create a new ad quality template** dialog will appear. This is where you'll enter the template's name and add any notes you'd like to include. After saving, you'll return to the **Ad Quality** screen, where you'll edit each of the available options as described in Step 2.
 
 ## Step 2. Determine which creatives are eligible to serve on your inventory
 
@@ -36,6 +36,7 @@ You can determine which creatives will be eligible to serve on your inventory ba
 - [Brands](#brands)
 - [Languages](#languages)
 - [Ad Servers](#ad-servers)
+- [Frequency Caps](#step-3-apply-frequency-caps-to-attributes)
 
 ### Bidders
 

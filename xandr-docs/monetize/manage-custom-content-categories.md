@@ -26,18 +26,17 @@ To reach this screen, select **Network** > **General** and then click on the **C
 
 The following columns exist for each custom category on the main screen.
 
-**Checkbox**: Use this column to select multiple categories for deletion.
-
-**Category**: The name you have entered for the custom category followed by the category's ID.
-
-**Description**: The description you have entered for the custom category. The description can be used to note the intended purpose of the custom category.
+- **Checkbox**: Use this column to select multiple categories for deletion.
+- **Name**: The name you have entered for the custom category 
+- **ID**: The ID of the custom category 
+- **Description**: The description you have entered for the custom category. The description can be used to note the intended purpose of the custom category.
 
 ### Buttons
 
 The following buttons are available on the main screen.
 
 - **New content category**: Use this button to create a new custom content category. See [Create a Custom Content Category](#create-a-custom-content-category) below for further step-by-step instructions.
-- **Delete a custom content category**: Use this button to delete custom content categories. See [Delete a Custom Content Category](#delete-a-custom-content-category) below for further step-by-step instructions.
+- **More Actions**: Use this button to delete custom content categories. See [Delete a Custom Content Category](#delete-a-custom-content-category) below for further step-by-step instructions.
 
 ## Manage a custom content category
 

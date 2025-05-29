@@ -7,7 +7,7 @@ ms.date: 10/28/2023
 # Microsoft Monetize - Edit default buyer settings
 
 <!--You can set the eligibility, allowed payment types, and targeting access for buyers within the **Partner Center** screen or in the **Partner Controls** tab.-->
-This article explains about the updates you can make to the default buyer settings within the **Partner Center** screen or in the **Partner Controls** tab. The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom settings for the buyer.
+This article explains about the updates you can make to the default buyer settings within the **Partner Center** screen. The **Partner Controls** tab is also visible to the buyer. They can see what you have exposed to and hidden from them. Your default settings will apply if you do not set custom settings for the buyer.
 
 > [!NOTE]
 > While you can manage these settings in the **Partner Center** and in the **Partner Controls** tab, you can only view the buyer's current settings in the **Partner Controls** tab.
@@ -20,17 +20,17 @@ Follow the steps below to edit a buyer's settings.
 
 ### Step 1. Get started
 
-Go to the **Partnership Details** screen (**Partner Center**, then click on a buyer's name) and click on the **Partner Controls** tab.
+Navigate to the **Partner Center** screen (**Partners** \>  **Partner Center**), select the **View Buyers** tab, select the checkbox next to the buyer you want to edit.
 
-Then click **Edit** to make the settings editable.
+Then click **Edit Selected Buyers** to make the settings editable.
 
 ### Step 2. Update buyer eligibility
 
-Select the eligibility you would like to apply to the buyer. This setting indicates whether your inventory is available (Eligible) to the buyer, or not (Blocked). Choose **Default** in the dropdown if you want your default setting to continue to apply to the buyer. When **Default** is selected, the current default setting displays for reference.
+Select the eligibility you would like to apply to the buyer. This setting indicates whether your inventory is available (Eligible) to the buyer, or not (Blocked). Choose **Eligible(Default)** if you want your default setting to continue to apply to the buyer. When **Eligible(Default)** is selected, the current default setting displays for reference.
 
 ### Step 3. Update allowed payment types
 
-Select the payment types you are willing to accept from the buyer. Choose **Default** in the dropdown if you want your default setting to continue to apply to the buyer. When **Default** is selected, the current default setting displays for reference. Otherwise, choose **Custom** in the dropdown and check the checkbox near CPA and/or CPC in addition to CPM.
+Select the payment types you are willing to accept from the buyer. Choose **Default-CPM** in the dropdown if you want your default setting to continue to apply to the buyer. When **Default-CPM** is selected, the current default setting displays for reference. Otherwise, choose **Custom** in the dropdown and check the checkbox near CPA and/or CPC in addition to CPM.
 
 > [!NOTE]
 > The only allowed deal type for external buyers is CPM.
@@ -56,15 +56,15 @@ Follow the steps below to edit the settings of multiple buyers.
 
 ### Step 1. Get started to edit the settings
 
-Go to the **Partner Center** screen (**Network** \> **Partner Center**), select at least one buyer and then click **Edit Selected Buyers** to display the **Edit Buyer Controls** section. The changes you make will be applied to all of the selected buyers.
+Go to the **Partner Center** screen (**Network** \> **Partner Center**), select at least one buyer and then click **Edit Selected Buyers** to display the **Edit Partner Controls** section. The changes you make will be applied to all of the selected buyers.
 
 ### Step 2. Update Buyer Eligibility
 
-Select the eligibility you would like to apply to the buyers. This setting indicates whether your inventory is available (**Eligible**) to a buyer, or not (**Blocked**). Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. The current default value is displayed for reference.
+Select the eligibility you would like to apply to the buyers. This setting indicates whether your inventory is available (**Eligible(Default)**) to a buyer, or not (**Blocked**). Choose the **Eligible(Default)** setting if you want the default value to continue to apply to the selected buyers. The current default value is displayed for reference.
 
 ### Step 3. Update the allowed payment types
 
-Select the payment types you are willing to accept from the buyers. Choose the **Default** setting if you want the default value to continue to apply to the selected buyers. The current default value is displayed for reference. Otherwise, choose the **Custom** setting and then check the checkbox near CPC and/or CPA in addition to CPM.
+Select the payment types you are willing to accept from the buyers. Choose the **Default-CPM** setting if you want the default value to continue to apply to the selected buyers. The current default value is displayed for reference. Otherwise, choose the **Custom** setting and then check the checkbox near CPC and/or CPA in addition to CPM.
 
 > [!NOTE]
 > The only allowed payment type for external buyers is CPM.

@@ -16,15 +16,22 @@ For details about including or excluding targeting lists from a campaign, see [A
 
 ## Choosing a list
 
+1. Select **Admin**\> **Inventory Lists** \> **Advanced Filters** 
+1. In the **Content Type** section, you'll find the **Domain** and **App** tabs. Select either tab to display its corresponding lists.
+1. Click **Apply**
+> [!NOTE]
+> Domain targeting applies only to **Web** and **Mobile Web** impressions and does not apply to **Mobile App** impressions. If you have allowed your campaign to serve on mobile apps while targeting a domain list, the campaign will be unrestricted when buying mobile app inventory unless you have also applied **App List** targeting. To avoid serving on mobile app inventory, switch the **Apps Placements** toggle in your campaign's targeting profile to **OFF**.
+
+<!--
 1. Select **Network**\> **Inventory** \> **Targeting** Lists from the top navigation menu.
 1. In the **Targeting Lists** section, you'll find the **Domain Lists** and **App Lists** tabs. Select either tab to display its corresponding lists.
+-->
 
-   > [!NOTE]
-   > Domain targeting applies only to **Web** and **Mobile Web** impressions and does not apply to **Mobile App** impressions. If you have allowed your campaign to serve on mobile apps while targeting a domain list, the campaign will be unrestricted when buying mobile app inventory unless you have also applied **App List** targeting. To avoid serving on mobile app inventory, switch the **Apps Placements** toggle in your campaign's targeting profile to **OFF**.
+ 
 
 ## Actions on lists
 
-- To create a new list, click **+ New**.
+- To create a new list, click **+New**.
 - To view, update, or remove a targeting list, click on the checkbox next to that list and select an action from the **Actions** drop-down menu. For more detailed instructions, see the **Related Topics** section below.
 
 ## Actions on individual list items

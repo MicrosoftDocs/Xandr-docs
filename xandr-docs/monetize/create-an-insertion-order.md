@@ -12,7 +12,10 @@ For an overview of all buy-side objects, see the [Object Hierarchy](object-hiera
 
 ## Create a new insertion order
 
-1. On the **Insertion Orders** screen, click on the **New** button.
+To get to the insertion orders screen:
+
+1. Navigate to **Advertisers > Orders** from the vertical navigation menu on left
+1. On the **Insertion Orders** screen, click on the **+New** button.
 1. Select the **Advertiser** you want your new insertion order to be associated to.
 
     > [!NOTE]

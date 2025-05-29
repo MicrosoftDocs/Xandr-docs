@@ -12,8 +12,8 @@ ms.date: 10/28/2023
 
 If your campaign is set to buy direct inventory, your campaign will target all of your direct inventory by default. However, you can narrow your targeting to include or exclude specific managed publishers, sites, or placements.
 
-1. In the **Targeting** section, click **Edit** next to **Inventory**.
-1. On the **Direct Inventory** tab, include or exclude direct inventory at the appropriate level:
+1. In the **Inventory & Brand Safety** section, select **Managed Inventory**.
+1. Select the **Direct Inventory** tab, include or exclude direct inventory at the appropriate level:
     - The **Publishers** lists shows all of your managed publishers. You can either include or exclude publishers or drill into a publisher to view its sites.
     - The **Placement Groups** lists shows all of the sites under your managed publishers. You can either include or exclude sites or drill into a site to view its placements. Note that when you exclude a publisher, its sites are not available for further inclusion or exclusion.
     - The **Placements** list shows all placements under your managed publishers and sites. You can either include or exclude placements. Note that when you exclude a publisher or site, its placements are not available for further inclusion or exclusion.

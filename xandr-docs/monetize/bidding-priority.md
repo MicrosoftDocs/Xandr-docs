@@ -25,7 +25,7 @@ As an example, if campaign A is set to priority 6 and all other campaigns across
 
 ## Managed buying and Third-Party buyer prioritization
 
-In addition to the priority setting on the campaign, there is a setting at the Network level for **Reselling Priority** you can set on the **Network Tools** screen (**Network \> Tools \> General**). Reselling Priority is the threshold at which third-party bids (from other networks on the Microsoft Advertising platform and from external buyers) become eligible to serve on your inventory. For example, if you set your Reselling Priority to 8, managed campaigns at Priority 10, 9, and 8 will serve before bids from third parties (RTB bids), even if third-party bids are higher.
+In addition to the priority setting on the campaign, there is a setting at the Network level for **Reselling Priority** (**Network \> General**). Reselling Priority is the threshold at which third-party bids (from other networks on the Microsoft Advertising platform and from external buyers) become eligible to serve on your inventory. For example, if you set your Reselling Priority to 8, managed campaigns at Priority 10, 9, and 8 will serve before bids from third parties (RTB bids), even if third-party bids are higher.
 
 For more details, see [Managing Your Inventory Reselling Exposure](managing-your-inventory-reselling-exposure.md).
 

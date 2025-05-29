@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 
 Instead of creating a creative template from scratch, you can duplicate existing standard or custom creative templates and then modify the rendering code and macros as necessary.
 
-1. Navigate to the **Creative Templates** screen by clicking **Network** \> **Tools** \> **Creative Templates**.
+1. Navigate to the **Creative Templates** screen by clicking **Network** > **Creative Templates**.
 1. Select the checkboxes for the corresponding creative templates that need to be duplicated.
 1. Click the **Actions** pull-down menu and select **Duplicate**.
 1. Enter a new name in the **Duplicate Name** field for each creative template that is being duplicated and click **Duplicate**.

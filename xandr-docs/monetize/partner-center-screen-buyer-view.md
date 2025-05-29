@@ -10,11 +10,11 @@ On the **Partner Center** screen you can view your preferred partners, search al
 
 ## Getting to the Partner Center screen
 
-Go to **Partners** \>  **Partner Center** to reach the **Partner Center** screen.
+Navigate to the **Partner Center** screen (**Partners** \>  **Partner Center**)
 
 ## Switching to seller mode
 
-If you are a network that also represents sellers, the **Buyers** and **Sellers** tabs display. Click **Sellers** to view the **Partner Center** as a buyer looking for sellers.
+If you are a network that also represents sellers, the **View Buyers** and **View Sellers** tabs display. Click **Sellers** to view the **Partner Center** as a buyer looking for sellers.
 
 ## Managing your profile
 
@@ -37,7 +37,7 @@ You can define which portion of an eligible seller's inventory you trust. There 
 
 ## Viewing sellers
 
-The **Sellers** tab lists all sellers, both Monetize members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
+The **View Sellers** tab lists all sellers, both Monetize members and external suppliers. Their member name and ID will display along with statistics for each seller. The **Platform-wide Avails.** columns will display statistics on all of the seller's transactions across the platform. The **Transactions with Seller** columns will display statistics on your transactions with the seller. See [Searching for Sellers](partner-center-screen-buyer-view.md#searching-for-sellers) to find a specific type of seller and then review the statistics to determine if you'd like to partner with the seller.
 
 ## Platform-wide avails
 

@@ -1,7 +1,12 @@
 ### YamlMime:Landing
 
+
 title: Microsoft Invest Product Documentation
-summary: Welcome to Microsoft Invest Product Documentation! All the information you need to work in Invest is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
+summary: |
+  [!IMPORTANT]
+  > Microsoft Advertising will no longer support media buying through Microsoft Invest after February 28, 2026.  You can read more [here](https://about.ads.microsoft.com/en/blog/post/may-2025/empowering-businesses-for-a-future-that-is-conversational-personal-and-agentic). If you have any questions about this news, our account representatives or [Support teams](https://about.ads.microsoft.com/en/support) can help.
+
+  Welcome to Microsoft Invest Product Documentation! All the information you need to work in Invest is right here. You can click one of the titles below or refer to the Table of Contents (TOC) on the left for complete documentation.
 metadata:
   title: Microsoft Invest Product Documentation
   description: Discover various modules of Microsoft Invest
@@ -117,3 +122,4 @@ landingContent:
             url: report-throttling.md
           - text: Impression Counting
             url: impression-counting.md
+

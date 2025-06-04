@@ -1,7 +1,7 @@
 ---
 title: Publisher Reporting
 description: In this article, find links to resources about all publisher-level reports.
-ms.date: 10/28/2023
+ms.date: 06/04/2025
 ---
 
 # Publisher reporting
@@ -15,7 +15,6 @@ In this section of the reporting guide, you'll find documentation for all of our
 - [Seller Fill and Delivery Publisher Report](seller-fill-and-delivery-publisher-report.md)
 - [Seller Deal Metrics](seller-deal-metrics.md)
 - [Seller Site Domain Report](seller-site-domain-report.md)
-- [Video Ad Pod Report](video-ad-pod-report.md)
 - [Seller Video Error Report](seller-video-error-report.md)
 
 ## Related topics

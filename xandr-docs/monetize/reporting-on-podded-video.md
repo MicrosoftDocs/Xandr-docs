@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Reporting on Podded Video
 description: In this page, learn about the two reports that provide insight into how your podded video supply is performing on Microsoft Advertising. 
-ms.date: 10/28/2023
+ms.date: 06/04/2025
 ---
 
 
@@ -35,7 +35,5 @@ There are two reports that provide insight into how your podded video supply is 
 
 ## Related topics
 
-- [Seller Podded Video Service](../digital-platform-api/seller-podded-video-report.md) (This report is deprecated in August, 2023)
 - [Seller Slot Analytics Service](../digital-platform-api/seller-slot-analytics-report.md)
-- [Seller Podded Video Report](seller-podded-video-report.md) (This report is deprecated in August, 2023)
 - [Seller Slot Analytics Report](seller-slot-analytics-report.md)

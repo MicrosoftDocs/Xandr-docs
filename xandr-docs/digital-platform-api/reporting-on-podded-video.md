@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Reporting on Podded Video
 description: Explore the Pod Analytics report, which offers metrics for groups of ads delivered sequentially between segments of non-commercial video content.
-ms.date: 10/28/2023
+ms.date: 06/04/2025
 ms.custom: digital-platform-api
 ---
 
@@ -35,7 +35,5 @@ There are two reports that provide insight into how your podded video supply is 
 
 ## Related topics
 
-- [Seller Podded Video Service](seller-podded-video-report.md) (This report is **deprecated** in August, 2023)
 - [Seller Slot Analytics Service](seller-slot-analytics-report.md)
-- [Seller Podded Video Report](../monetize/seller-podded-video-report.md) (This report is **deprecated** in August, 2023)
 - [Seller Slot Analytics Report](../monetize/seller-slot-analytics-report.md)

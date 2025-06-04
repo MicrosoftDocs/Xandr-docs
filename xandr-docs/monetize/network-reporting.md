@@ -1,7 +1,7 @@
 ---
 title: Network Reporting
 description: Explore network reports for a cross-advertiser, cross-publisher business overview, facilitating comprehensive reporting.
-ms.date: 10/28/2023
+ms.date: 06/04/2025
 ---
 
 # Network reporting
@@ -37,7 +37,6 @@ Network reports are designed to give you a global view of your business, allowin
 - [Seller Detected Site Domain Report](seller-detected-site-domain-report.md)
 - [Seller Site Domain Report](seller-site-domain-report.md)
 - [universal-content-categories-report.md](universal-content-categories-report.md)
-- [Video Ad Pod Report](video-ad-pod-report.md)
 - [Video Inventory Availability Report](video-inventory-availability-report.md)
 
 ## Related topics

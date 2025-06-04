@@ -541,8 +541,6 @@
         href: site-domain-performance-report.md
       - name: Vendor Usage Report
         href: vendor-usage-report.md
-      - name: Video Ad Pod Report
-        href: video-ad-pod-report.md
       - name: Video Mediation Demand Report
         href: video-mediation-demand-report.md
     - name: Saved Report Service

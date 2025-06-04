@@ -209,6 +209,21 @@
         "source_path": "xandr-docs/monetize/create-a-deal-line-item.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/create-a-simplified-deal-line-item",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/video-ad-pod-report.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/reporting-on-podded-video",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/invest/video-ad-pod-report.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/reporting-on-podded-video",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/digital-platform-api/video-ad-pod-report.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/reporting-on-podded-video",
+        "redirect_document_id": false
         }
       ]
     }

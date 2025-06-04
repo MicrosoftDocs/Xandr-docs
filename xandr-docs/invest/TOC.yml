@@ -970,8 +970,6 @@
         href: seller-segment-performance-report.md
       - name: Member Video Error Report
         href: network-video-error-report.md
-      - name: Video Ad Pod Report
-        href: video-ad-pod-report.md
       - name: Video Inventory Availability Report
         href: video-inventory-availability-report.md
       - name: Vendor Usage Report

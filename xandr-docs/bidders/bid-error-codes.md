@@ -113,6 +113,7 @@ The following are error codes you might see from any of the above.
 | 211 | Member `${MEMBER_ID}` is not eligible to bid without deals | Buyer is bidding with a non-deal bid on a deal-only auction | Demand Partner | Demand Partner should only submit deal bids to deal-only auctions. |
 | 212 | Seller member `${MEMBER_ID}` has no contract | Seller's contract isn't set up properly | Supply Partner | Supply Partner should work with Xandr to make sure their seller contract is set up correctly. |
 | 213 | Broker member `${MEMBER_ID}` has no contract | Broker's contract isn't set up properly | Broker Partner | Broker partner should work with Xandr to make sure their broker contract is set up correctly. |
+| 214 | Buyer seat ID bans seller supply | Buyer has banned the purchasing of the seller ID's inventory from the buyer seat through the bseat field. | Demand Partner | Buyer blocks on this inventory are provided in the bseat field. Bidder should contact the buyer to discuss banned sellers. |
 | 301 | No price set on non-exclusive bid response |  |  |  |
 | 302 | Bid from member specifies an invalid currency '`${CURRENCY_CODE}`' | Bid from member specifies an invalid currency | Demand Partner | Seller should notify the Demand Partner that they're having problems. |
 | 304 | Effective revshare less than 0 | Buyer bid minus margin and brasc < 0, so there is nothing to send to the seller auction. (This tends to happen with fixed-price margins only) |  |  |

@@ -10,7 +10,7 @@ ms.author: shsrinivasan
 # Digital Platform API - May 15, 2025: Updated Data Retention Policy for Identifiers and Buyer Reach & Frequency Reports 
 
 As part of a backend data migration initiative aimed at improving performance and system efficiency, we are updating the data retention policy for the following reports: 
-- [Identifiers – Distinct IDs](identifiers-distinct-id-report.md)  
+- [Identifiers – Distinct IDs](identifiers--distinct-id-report.md)  
 - [Buyer Reach and Frequency](buyer-reach-and-frequency-report.md).
 
 This change will take effect on **May 15, 2025**. 

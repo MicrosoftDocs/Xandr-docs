@@ -94,15 +94,33 @@ ABC({"uid":1680598911678123849})
 
 In most cases, it will be necessary to pass the user ID into a specified parameter within the query string of the URL. To accomplish this, you may use the `$UID` macro:
 
+> [!NOTE]
+> In case TCF signals are available on the page, "gdpr" and "gdpr_consent", GET parameters must be included at the end of the /getuid url:
+
+```
+https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&geo=35&referrer=https://www.website.com&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt
+```
+<!--
 ```
  https://ib.adnxs.com/getuid?https://ad.adserver.com/pixel?adnxs_uid=$UID&geo=35&referrer=https://www.website.com 
 ```
+-->
 
 The `$UID` macro will be replaced with the Microsoft Advertising user ID by the Impression Bus and the user will be directed to the following URL:
 
 ```
+https://ad.adserver.com/pixel?adnxs_uid=19241908471992&gdpr=1&geo=35&referrer=https://www.website.com&gdpr_consent=CPaPwEAPaPwEAACAKAFRBWCgAP_AAH_AAAqIHttf_X__b3_j-_59__t0eY1f9_7_v-0zjhfdt
+```
+
+<!--
+```
  https://ad.adserver.com/pixel?adnxs_uid=19241908471992&geo=35&referrer=https://www.website.com 
 ```
+-->
+
+> [!NOTE]
+> For both endpoints, if TCF parameters are passed in the redirect URL, Xandr will utilize these parameters to determine if a cookie sync can be performed. If the signals received are interpreted as having insufficient legal basis, Xandr will be unable to process the cookie sync request, and it will return the following error message: "Request failed due to privacy signals." Additionally, if TCF signals cannot be provided when calling our URLs, partners must append the **consent** parameter to the URL. The **consent** parameter accepts binary values: **1** if the user has given consent, and **0** if consent has been denied. This parameter must be included to perform user syncs in certain geographical areas.
+
 
 ## Use case: Piggyback on a pixel call
 

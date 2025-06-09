@@ -14,9 +14,9 @@ At Microsoft, we aim to provide exceptional customer support to help you navigat
 
 ## Overview
 
-The Microsoft Advertising Support Team is committed to delivering a superior customer experience by setting new industry standards for responsiveness and communication.  
+Microsoft Advertising Support Team is committed to delivering a superior customer experience by setting new industry standards for responsiveness and communication.  
 
-The  Microsoft Advertising Support Team serves as your central point of contact for addressing technical challenges, ensuring platform stability, and driving business success through tailored support.
+Microsoft Advertising Support Team serves as your central point of contact for addressing technical challenges, ensuring platform stability, and driving business success through tailored support.
 
 Here’s what we do: 
 
@@ -35,10 +35,10 @@ We prioritize your success by resolving technical challenges, offering expert ad
 
 ## Requests handled by Microsoft Advertising support team
 
-The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) is your single access point for submitting technical issues and inquiries related to the Xandr platform. Our team is dedicated to ensuring that your experience on our platform is seamless and productive. 
+[Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) is your single access point for submitting technical issues and inquiries related to the Xandr platform. Our team is dedicated to ensuring that your experience on our platform is seamless and productive. 
  
 > [!NOTE] 
-> The [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) currently supports Microsoft Invest, Microsoft Monetize, Microsoft Curate, Bidder, and Yield Analytics (formerly Yieldex). 
+> [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) currently supports Microsoft Invest, Microsoft Monetize, Microsoft Curate, Bidder, and Yield Analytics (formerly Yieldex). 
 
  | Request type | Example |
 |---|---|

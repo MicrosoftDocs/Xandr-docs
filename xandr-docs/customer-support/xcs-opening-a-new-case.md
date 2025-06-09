@@ -8,7 +8,7 @@ ms.date: 01/13/2025
 
 # Open a new case
 
-A case represents a customer’s question, feedback, or an issue. The Microsoft Advertising support team uses cases to interact with customers and track issue resolutions. 
+A case represents a customer’s question, feedback, or an issue. Microsoft Advertising support team uses cases to interact with customers and track issue resolutions. 
 > [!NOTE] 
 > Customers must assign a single point of contact with the authority to submit cases on their behalf. 
 

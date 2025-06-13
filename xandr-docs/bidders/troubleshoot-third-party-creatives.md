@@ -1,11 +1,11 @@
 ---
-title: Bidders - Troubleshoot Third-party Creatives across Microsoft Advertising Inventory 
+title: Troubleshoot Third-party Creatives across Microsoft Advertising Inventory 
 description: Microsoft Advertising supports creatives served by third-party ad servers. These creatives are subject to the same policies and quality standards as hosted creatives on our Bidders platform.
 ms.date: 06/13/2025
 ms.author: shsrinivasan
 ---
 
-# Bidders - Troubleshoot third-party creatives across Microsoft Advertising inventory 
+# Troubleshoot third-party creatives across Microsoft Advertising inventory 
 
 ## Overview
 

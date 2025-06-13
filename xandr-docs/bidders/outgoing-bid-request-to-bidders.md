@@ -40,6 +40,7 @@ Xandr supports the following fields in the top-level bid request object:
 | `imp` | array of objects | (Required) The impressions offered in this bid request. See [Impression Object](#impression-object) below. |
 | `site` | object | Specifies information about the website or subset of inventory (placement group) for the impressions. Applicable for website impressions. See [Site Object](#site-object) below. |
 | `app` | object | Specifies information about the app for the impressions. Applicable for app impressions. See [App Object](#app-object) below. |
+| `bseat` | array of strings | Specifies an array representing a block list of buyer seats restricted from bidding on this impression.|
 | `device` | object | Specifies information about the user's device to which these impressions will be delivered. See [Device Object](#device-object) below. |
 | `user` | object | Specifies information about the person to whom the impressions will be delivered. See [User Object](#user-object) below. |
 | `test` | integer | Indicates that this auction is in test mode and is not billable. If not present, default is used.<br> - `0`: Live mode; billable (default).<br> - `1`: Test mode; not billable. |

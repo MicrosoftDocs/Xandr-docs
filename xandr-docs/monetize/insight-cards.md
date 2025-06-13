@@ -125,3 +125,48 @@ To reduce noise, only placements that are sending over 10k ad requests in a week
 **What is the threshold for low win rate?**
 
 Low win rate is a defined as impressions sold / ad requests being less than 1%. 
+
+## GDPR - TCF Signals
+
+To help publishers operating under General Data Protection Regulation (GDPR) verify whether their integrated Consent Management Platform (CMP) is correctly passing user consent signals in line with the IAB’s Transparency and Consent Framework (TCF), Microsoft Monetize Insight detects or flags publisher domains that meet any of the following criteria:
+
+- Over 25% of ad requests that are blank or missing user consent
+- Over 25% of ad requests that have bad or invalid user consent
+- Less than 5% of ad requests that include extremely low rate of user consent
+
+#### Insight card details:
+
+- Frequency: Weekly
+- Availability: Before 9 AM UTC on Mondays
+- Data range: Past 7 days
+
+Click the TCF String Insight card to view the latest publisher-level reporting. To see domain-specific metrics, generate the Seller CMP Analytics report. For more information, see [Seller CMP Analytics report](seller-cmp-analytics-report.md).
+
+## Deals not spending
+
+Monetize Insights automatically flags active deals that have unexpectedly stopped spending, enabling quick identification and follow-up. Detection runs daily, and newly identified deals are labeled "New" in the UI. A deal will be flagged if:
+
+- The end date has not passed, or there is no end date
+- The deal is active and not deleted
+- No revenue was recorded in the past 24 hours, but revenue was recorded in at least one of the preceding 7 days
+
+
+Deals are triaged based on bid funnel metrics data to identify if:
+- The deal does not send bid requests
+- The deal is sending bid requests but not receiving bids
+- The deal is receiving bids but not transacting
+
+To investigate the issue, click a flagged deal to see other deals with the same issue in the bid funnel such as "Deals receiving bids, but no impressions sold". Each deal listed displays the following::
+
+- Last revenue date
+- Total revenue transacted in the deal over the past 7 days
+- Pressing Investigate to pull 24-hour data from the [Seller Deal Metrics](seller-deal-metrics.md) report, to identify:
+    - Most recent impressions matched
+    - Bid requests sent
+    - Bid rate
+    - Ineligible bid rate
+    - Net win rate
+
+For deeper analysis:
+- Navigate directly into reporting
+- Download a bid request (if the deal is with an external DSP) and share with buyers to troubleshoot bid submission issues.

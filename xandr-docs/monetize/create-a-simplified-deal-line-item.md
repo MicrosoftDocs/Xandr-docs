@@ -1,7 +1,7 @@
 ---
 title: Create a Simplified Deal Line Item
 description: Explore the process of creating a simplified deal line item, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
-ms.date: 05/31/2024
+ms.date: 06/16/2025
 ---
 
 # Create a simplified deal line item
@@ -62,10 +62,12 @@ The **Deal Details** section offers a detailed overview of the key components th
     1. Select **Add Size for this Deal** to apply the custom ad size for this specific deal. Alternatively, select the **Add Size and Save Size to Member** option from the drop-down menu to save your custom ad size for future use.
     1. Select **Save**.
 - **Deal Priority**: Specifies the deal's ranking in the auction. When a deal is created as **Private Auction**, the buyer's bid takes precedence over open exchange. When a deal priority is created as **Open Auction**, the buyer competes with bids from the open exchange.
-  - **Priority Level**: This advanced feature offers the flexibility to prioritize deals within the auction. A higher priority number supersedes a lower one. The selectable priority range is preset based on your **Private Auction** or **Open Auction** selection. Every deal is assigned a default priority, reducing the need for frequent changes.
+  - **Priority Level**: This advanced feature offers the flexibility to prioritize deals within the auction. A higher priority number supersedes a lower one of the same deal priority auction type (private deals will always have priority over open deals regardless of the priority level). The selectable priority range is preset based on your **Private Auction** or **Open Auction** selection. Every deal is assigned a default priority, reducing the need for frequent changes.
   
     > [!NOTE]
-    > If you're using Microsoft Monetize for creating other Line Item types (GDALI, ALI, etc.), this priority system is shared across all Line Item types.
+    > If your member is also running guaranteed campaigns in the Monetize Ad Server, private deals will, by default, be assigned a priority level lower than the member’s reselling priority. This is due to the fact that all line item types operate within a unified priority framework, and this configuration helps mitigate the risk of underdelivery for guaranteed campaigns.
+    > Although the **Prioritize above all** else setting remains available—allowing a private deal to be placed above the member’s reselling priority—its use is strongly discouraged when there are GDALIs configured at a lower priority. Enabling this setting may jeopardize the delivery of those guaranteed line items. To better understand how priority settings impact the auction logic, please refer to this page for a detailed explanation.
+
 - **Pricing Strategy**: Specifies the price agreed upon by the advertiser. You can select one of the following revenue types:
   - **Floor Price**: Enter the hard floor price that will apply to the buyer of the deal.
   - **Fixed Price**: Enter the amount that the advertiser will pay you per thousand impressions.

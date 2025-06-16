@@ -1372,6 +1372,8 @@
   #     href: approve-and-reject-creatives.md
   - name: Universal ID Support Matrix for Sellers
     href: universal-id-support-matrix-for-sellers.md
+  - name: Identity Manager in Microsoft Monetize
+    href: identity-manager.md
 - name: Viewability
   items:
   - name: Introduction to Viewability

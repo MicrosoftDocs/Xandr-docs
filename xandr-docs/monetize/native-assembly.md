@@ -6,7 +6,19 @@ ms.date: 10/28/2023
 
 # Native assembly
 
-By using Native Assembly, publishers can take the guesswork and manual development out of building flawless native experiences. Publishers don't have to worry about whether or not they're keeping to industry standards since Native Assembly validates all native creative assets against IAB's standards. Monetize Ad Server and third-party ad server publishers can both use Native Assembly.
+Native Assembly enables publishers to create and manage native inventory in our Microsoft Monetize marketplace right from Monetize. Native Assembly is available to both Monetize Ad Server and third-party ad server publishers,  through both client-side and server-side integrations. 
+
+<!-- By using Native Assembly, publishers can take the guesswork and manual development out of building flawless native experiences. Publishers don't have to worry about whether or not they're keeping to industry standards since Native Assembly validates all native creative assets against IAB's standards. Monetize Ad Server and third-party ad server publishers can both use Native Assembly.-->
+
+
+## Key highlights of Native assembly 
+
+- Native Assembly supports light to total customization, allowing publishers to specify fonts and colors, and handle assets with JavaScript. 
+- Native Assembly supports enablement and disablement directly from the renderer screen, allowing efficient and seamless management of your native business.
+- Native Assembly includes many out-of-the-box templates, predesigned for popular native styles, which can be customized or used as is to get started quickly. 
+- Native Assembly enables visual customization of fonts and colors via the well-commented CSS, immediately reflected in the Preview, so you can get the look of your renderer just right.trad 
+- The Adaptive renderer leverages Microsoft’s native expertise to handle asset specification and rendering for you. This template optimizes assets and styling based on our performance insights. 
+
 
 ## Native assembly for Microsoft Monetize ad server publishers
 

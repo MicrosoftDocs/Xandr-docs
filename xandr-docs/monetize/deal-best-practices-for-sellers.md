@@ -1,7 +1,7 @@
 ---
 title: Deal Best Practices for Sellers
 description: This page gives an overview on some basic best practices for sellers using deals. This page covers when you should create a deal, when you should avoid creating a deal and setting up a deal.
-ms.date: 10/28/2023
+ms.date: 06/16/2025
 ---
 
 
@@ -58,8 +58,10 @@ Consider the right pricing for each deal to ensure maximum revenue while providi
 
 - We recommend creating open auction deals as often as possible to maintain market competition. An open auction is part of the regular RTB auction where the buyer competes with the larger pool of RTB buyers. Open auctions are used to easily allow the buyer to target the deal inventory without interfering with the pricing. For examples of how an open auction works, see [Deal Auction Mechanics](deal-auction-mechanics.md).
 - We recommend using private auctions conservatively to maintain market competition and avoid overlapping private auction deals. In a private auction, the buyer will only compete with other buyers who have a private auction deal for the impression. If used conservatively, private auctions can command higher prices from buyers who will view the privilege as preferred treatment. For examples of how a private auction works, see [Deal Auction Mechanics](deal-auction-mechanics.md).
-- Buyers will not have any competition in a private auction deal if you can definitively confirm that no overlapping private auction deal exists for other buyers. If this is not the case, then set the buyer's expectations that bidding on a private auction does not guarantee they will win. In order to win, they will have to bid higher than any other private auction buyers.
-- Creating several private deals for the same inventory brings down the value of the private deal. If you have private deals with 2 buyers for the same inventory, those 2 buyers will compete for the inventory. If you have private deals with 20 buyers for the same inventory, those 20 buyers will compete for the inventory.
+- In a private auction, a buyer will encounter no competition only if it can be definitively confirmed that no other overlapping private auction deals are in place for other buyers. If this cannot be guaranteed, it is essential to establish clear expectations: participation in a private auction does not ensure a winning bid. To secure the impression, a buyer must outbid any competing participants in other private auction deals. If prioritization of a specific buyer is required, this can be achieved by appropriately configuring the priority level of their deal.
+- Establishing multiple private deals for the same inventory diminishes the exclusivity—and thus the value—of each individual deal. For example, if private deals are created with two buyers for the same inventory, those two buyers will compete against each other. Similarly, if deals are established with twenty buyers, all twenty will compete for access to the same inventory.
+- We recommend choosing either Open Auction or Private Auction while maintaining the default priority level, which is pre-configured to optimize yield performance. Modifying the priority level is considered an advanced configuration and should be undertaken with care, as improper adjustments may adversely affect revenue outcomes. If it becomes necessary to modify the priority level, our general recommendation for encouraging competition and maximizing yield is to consolidate priorities wherever feasible. This includes aligning the priority levels of both private auction deals and programmatic guaranteed deals.
+- For ad server clients utilizing guaranteed line items in the Monetize Ad Server, it is recommended to configure private deals at a lower priority level than the member’s reselling priority. This approach helps avoid delivery conflicts and minimizes the risk of underdelivery for guaranteed campaigns. For a comprehensive explanation of how priority settings influence delivery and competition, see [Deal Auction Mechanics](deal-auction-mechanics.md) documentation.
 
 ### Creating deals that deliver
 

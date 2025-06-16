@@ -7,7 +7,7 @@ ms.author: shsrinivasan
 
 # Identity manager in Microsoft Monetize 
 
-> [NOTE]
+> [!NOTE]
 > This feature is currently in Beta and might undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative. Alternatively, you can contact our support team by completing the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/sign-in).
 
 Microsoft offers a transparent, secure platform designed to support your identity strategy, prepare for a cookie-less future, and drive maximum value across Windows and Microsoft Edge.  
@@ -33,7 +33,7 @@ PPIDs are publisher-defined, first-party identifiers that can be added via Micro
 
 The advertising industry is adapting to signal loss and the rise of new channels by embracing alternative types of identifiers. These identifiers can be industry-wide, bidder-specific, or publisher-specific and for inventory monetization, publishers typically use multiple identifiers to cover different use cases, needs, and privacy controls. 
 
-Due to this changing landscape, publishers need to have the ability to control the identifiers that they are using (or sharing with partners) at a granular level. Controls are increasingly important to ensure compliance with the privacy or use case requirements of leveraging separate identifiers. Microsoft's Identity Management Framework offers a powerful, intuitive toolset that allows publishers to manage these identifiers with precision — ensuring compliance and enabling monetization without compromise. 
+Due to this changing landscape, publishers need to have the ability to control the identifiers that they are using (or sharing with partners) at a granular level. Controls are increasingly important to ensure compliance with the privacy or use case requirements of leveraging separate identifiers. Microsoft's Identity Management Framework offers a powerful, intuitive toolset that allows publishers to manage these identifiers with precision, ensuring compliance and enabling monetization without compromise. 
 
 ## Identity management framework 
 
@@ -41,7 +41,7 @@ Identity Management Framework enables publishers to monitor and control how iden
 
  ### Navigate the Identity manager 
 
-If you do not yet have Identity Manager enabled in your seat, contact your Microsoft Advertising representative and designate a user who should have access. To access the Identity Manager in Microsoft Monetize, go to the vertical navigation pane on the left and select Network > Identity Manager. It contains two primary sections: 
+If you do not yet have Identity Manager enabled in your seat, contact your Microsoft Advertising representative and designate a user who should have access. To access the Identity Manager in Microsoft Monetize, go to the vertical navigation pane on the left and select **Network > Identity Manager**. It contains two primary sections: 
 - Identity Sources You Own 
 - Identity Sources You Have Access To 
 
@@ -53,7 +53,7 @@ If you do not yet have Identity Manager enabled in your seat, contact your Micro
     - Pass the ID in a request 
     - Onboard the ID in a segment 
     - See the ID in log-level data. For more information, see [Identity Type service](../digital-platform-api/identity-type-service.md).
-> [NOTE]
+> [!NOTE]
 > PPID onboarding is a prerequisite for an ID source to show up in this section, and once it's registered you can then use the Identity manager to manage permissions. 
 - The Identity Sources You Own section includes the following fields: 
     - **ID:** The unique identifier created by Microsoft for the identity source. 

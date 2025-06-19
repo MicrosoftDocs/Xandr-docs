@@ -10,7 +10,7 @@ ms.author: shsrinivasan
 > [!NOTE]
 > This feature is currently in Beta and might undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative. Alternatively, you can contact our support team by completing the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/sign-in).
 
-Microsoft offers a transparent, secure platform designed to support your identity strategy, prepare for a cookie-less future, and drive maximum value across Windows and Microsoft Edge.  
+Microsoft offers a transparent, secure platform designed to support your identity strategy, to manage a wide range of existing and emerging signals and drive maximum value across Windows and Microsoft Edge. 
 
 ## Key highlights 
 - Activate first-party data using Publisher Provided Identifiers (PPIDs) and supported universal IDs. 

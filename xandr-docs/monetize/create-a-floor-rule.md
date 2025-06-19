@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 The **Floor Rules Manager** allows you to set your network's preferred bid amount on a given impression. There are two kinds of floor rules:
 
 - Create a base floor rule to set floors for all of the publisher's inventory.
-- Create a conditional floor rule to set hard and soft floors or enable Floor Optimization for specific impressions. You can target floors based on impression frequency, geography, segment, specific placement, category, placement size, buyer, brand, or creative category.
+- Create a conditional floor rule to set hard and soft floors for specific impressions. You can target floors based on impression frequency, geography, segment, specific placement, category, placement size, buyer, brand, or creative category.
 
 > [!NOTE]
 > For more information on floors and how they work, see [Working with Yield Management](working-with-yield-management.md) and [Update Floor Rules](update-floor-rules.md).
@@ -48,8 +48,6 @@ Under **Basic Settings**, the **Name** is set to **Base Rule** and the **Priorit
 
 ### Step 5. Enter floor pricing
 
-> [!IMPORTANT]
-> Floor Optimization is currently in a closed Beta. We are working to roll this feature out to more clients.
 
 Enter the net floor values for the base rule and select the type of bids that the rule will apply to.
 
@@ -59,10 +57,6 @@ Enter the net floor values for the base rule and select the type of bids that th
   > If you enter a hard floor, be sure to set up a default creative for your placements. If no bid meets your hard floor, your default creative will serve. If you do not have a default creative, a PSA will serve.
 
 - **Soft Floor** - After you enter a hard floor, you can optionally enter a soft floor value, which is the lowest net price you are willing to price-reduce a bid to. In a second-price auction, the winning bidder pays the greater of the two between the soft floor price and the second bidder's bid.
-- **Floor Optimization** - Instead of entering a soft floor, you can turn on Floor Optimization, which use algorithms to move floors up and and down depending on market conditions, but never allow the amount to go below the hard floor.
-  
-  > [!NOTE]
-  > Soft floors are not available when **Floor Optimization** is turned on. Floor Optimization makes soft floors unnecessary because **Optimal Floors** automatically adjust in response to market conditions. For more information, see [Floor Optimization](floor-optimization.md).
 
 - **Floor Price Applies To** - Select the type of bids that the floor rule will apply to:
   - **All demand** - The rule will apply to bids from your managed advertisers as well as third-party bids.
@@ -111,9 +105,6 @@ Under **Basic Settings**, enter the following:
 
 ### Step 5. Enter floor pricing
 
-> [!IMPORTANT]
-> Floor Optimization is currently in a closed Beta. We are working to roll this feature out to more clients.
-
 Enter the net floor values for the base rule and select the type of bids that the rule will apply to.
 
 - **Hard Floor** - (Required) Enter a hard floor value, which is the minimum net amount the network will accept for placing a creative. If this price is not met then no bids are accepted and the auction ends without a winner, or a default creative is served.
@@ -122,10 +113,6 @@ Enter the net floor values for the base rule and select the type of bids that th
   > If you enter a hard floor, be sure to set up a default creative for your placements. If no bid meets your hard floor, your default creative will serve. If you do not have a default creative, a PSA will serve.
 
 - **Soft Floor** - After you enter a hard floor, you can optionally enter a soft floor value, which is the lowest net price you are willing to price-reduce a bid to. In a second-price auction, the winning bidder pays the greater of the two between the soft floor price and the second bidder's bid.
-- **Floor Optimization** - Instead of entering a soft floor, you can turn on Floor Optimization, which use algorithms to move floors up and and down depending on market conditions, but never allow the amount to go below the hard floor.
-  
-  > [!NOTE]
-  > Soft floors are not available when **Floor Optimization** is turned on. Floor Optimization makes soft floors unnecessary because **Optimal Floors** automatically adjust in response to market conditions. For more information, see [Floor Optimization](floor-optimization.md).
 
 - **Floor Price Applies To** - Select the type of bids that the floor rule will apply to:
   - **All demand** - The rule will apply to bids from your managed advertisers as well as third-party bids.

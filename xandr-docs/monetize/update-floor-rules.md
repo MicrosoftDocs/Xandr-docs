@@ -30,9 +30,7 @@ The grid at the top shows basic information about a floor rule, such as its name
 
 - **Hard floor**: The hard floor set within the rule. This is the lowest price you will accept for this inventory.
 
-- **Soft floor**: The soft floor set within the rule. This is the lowest price to which the winning bid will be reduced. (Not applicable if Floor Optimization is turned on.)
-
-- **Floor Optimization**: Whether Floor Optimization is turned on or off. Floor Optimization programmatically sets a new floor for each impression. See [Floor Optimization](floor-optimization.md) for more information.
+- **Soft floor**: The soft floor set within the rule. This is the lowest price to which the winning bid will be reduced.
 
 - **Floor Price Applies To**: The type of impressions, managed, third-party, or both, that the floor rule applies to.
 
@@ -51,8 +49,6 @@ Click the **Actions** button to delete or one or more floor rules. Check the che
 
 A confirmation dialog lists the rule(s) to be edited or deleted. Click **OK** to complete the action.
 
-> [!TIP]
-> You can also enable or disable Floor Optimization for one or more rules from the **Floor Rules** screen. Check the checkbox for each rule that you want to edit and click **Actions** > **Enable Floor Optimization** or **Actions** > **Disable Floor Optimization**.
 
 ## Related topics
 

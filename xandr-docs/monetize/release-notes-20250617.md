@@ -1,6 +1,6 @@
 ---
 title: June 17, 2025 - Updates to Native Assembly
-description: Explore the May 09, 2025 release, delving into Reporting in Microsoft Monetize
+description: Explore the June 17, 2025 release, an enhancement to Native Assembly creation process.
 ms.date: 06/17/2025
 ms.topic: release-notes
 ms.author: shsrinivasan

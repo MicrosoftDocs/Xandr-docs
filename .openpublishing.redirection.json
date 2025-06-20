@@ -224,6 +224,11 @@
         "source_path": "xandr-docs/digital-platform-api/video-ad-pod-report.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/reporting-on-podded-video",
         "redirect_document_id": false
+        },
+         {
+        "source_path": "xandr-docs/monetize/floor-optimization.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-yield-management",
+        "redirect_document_id": false
         }
       ]
     }

@@ -11,7 +11,7 @@ Monetize Ad Server and third-party ad server publishers can configure native ass
 To configure a native assembly:
 
 1. [Navigate to the Native Assembly Gallery](navigate-to-the-native-assembly-gallery.md): You can select from a variety of pre-configured native assemblies or create your own directly from the Native Assembly Gallery.
-1. [Create a Native Assembly](create-a-native-assembly.md): You can modify native assemblies that contain pre-configured native creative asset specifications or create your own from scratch.
+1. [Create a Native Assembly](create-a-native-assembly.md): To create a Native Assembly, you can start by selecting either the Adaptive renderer or a Custom renderer. If you choose the Custom option, you'll then have the choice to use a template from the gallery or create your own from scratch.
 
    > [!WARNING]
    > For the best Microsoft Advertising marketplace performance, third-party ad server publishers should refrain from adding video assets and any custom native assets to their native assemblies.

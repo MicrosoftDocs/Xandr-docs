@@ -6,7 +6,10 @@ ms.date: 10/28/2023
 
 # Enable native assembly for the server side
 
-After creating the necessary native assemblies using the **Native Assembly** > **Setup** screen in Monetize, third-party ad server publishers can enable Native Assembly for the server side at the **Publishers** > **Placements** level for each placement that has been associated to a corresponding native assembly.
+After creating the necessary native assemblies using the **Native Assembly** > **Setup** screen in Monetize, third-party ad server publishers can enable Native Assembly for the server side at the **Publishers** > **Placements** level for each placement that has been associated to a corresponding native assembly. 
+
+> [!NOTE]
+> The easiest way to enable server-side Native Assembly is from the Native Assembly renderer edit workflow. You can still use the checkbox on the Inventory Manager edit screen to enable a placement for server-side Native Assembly. 
 
 For more information, see [Configuring a Native Assembly](configuring-a-native-assembly.md).
 

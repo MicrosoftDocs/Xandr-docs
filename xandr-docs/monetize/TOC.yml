@@ -1226,8 +1226,6 @@
       href: create-a-bias-rule.md
     # - name: Update Bias Rules
     #   href: update-bias-rules.md
-    - name: Floor Optimization
-      href: floor-optimization.md
   - name: Video Inventory
     items:
     - name: Sell-Side Video Overview
@@ -1724,6 +1722,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: June 17, 2025 - Updates to Native Assembly
+    href: release-notes-20250617.md
   - name: May 09, 2025 - Prebid Server Premium Brand Blocks
     href: release-notes-psp-20250509.md
   - name: May 09, 2025 - Reporting in Microsoft Monetize

@@ -26,9 +26,7 @@ and how YM rules are applied. If you are unfamiliar with YM, you should start he
 - [Update Floor Rules](update-floor-rules.md): View all floor rules for a specific publisher, view edit, duplicate, or
 delete floor rules, and use bulk editing options.
 
-- [Create a Floor Rule](create-a-floor-rule.md): Set up a base or conditional floor (minimum bid price) rule.
-
-- [Floor Optimization](floor-optimization.md): When enabled, Floor Optimization adjusts the hard floor for every impression to better protect and value a seller's inventory.
+- [Create a Floor Rule](create-a-floor-rule.md): Set up a base or conditional floor (minimum bid price) rule.    
 
 - [Create a Bias Rule](create-a-bias-rule.md): Set up a base or conditional bias (bid modifying) rule.
 

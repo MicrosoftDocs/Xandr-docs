@@ -56,6 +56,7 @@ To set up Prebid.js with Send All Bids:
 
    > [!NOTE]
    > When using Prebid.js 10 and higher, the anPspParamsConverter module is not necessary.
+   > 
    > When using Prebid.js 9.x, include the anPspParamsConverter module in every Prebid.js build for pages that use Microsoft Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
 
 1. Call the Microsoft Monetize SSP client-side using the `/openrtb2/prebid` endpoint

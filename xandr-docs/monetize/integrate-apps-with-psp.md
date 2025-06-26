@@ -58,10 +58,10 @@ To set up Prebid Mobile SDK with PSP:
 1. Proceed with [PSP Setup](set-up-prebid-server-premium.md) steps.
    > [!NOTE]
    > Prebid Mobile SDK iOS integrations can leverage both tracking and non-tracking domains as detailed [here](https://docs.prebid.org/prebid-mobile/pbm-api/ios/code-integration-ios.html#handling-tracking-domains). The relevant PSP domains are:
-  > ```
-  > trackingURL = "https://ib.adnxs.com/openrtb2/prebid"
-  > nonTrackingURL = "https://adnxs-simple.com"
-  > ```
+   > ```
+   > trackingURL = "https://ib.adnxs.com/openrtb2/prebid"
+   > nonTrackingURL = "https://adnxs-simple.com"
+   > ```
 
 <!--## Non-SDK
 

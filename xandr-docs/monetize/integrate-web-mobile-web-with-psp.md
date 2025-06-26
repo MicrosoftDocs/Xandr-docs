@@ -1,7 +1,7 @@
 ---
 title: Integrate Web/Mobile Web with PSP
 description: In this article, find information about how to integrate web and mobile web inventory with PSP.
-ms.date: 10/28/2023
+ms.date: 06/26/2025
 ---
 
 # Integrate web/mobile web with PSP
@@ -55,14 +55,14 @@ To set up Prebid.js with Send All Bids:
     This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Monetize this way.
 
    > [!NOTE]
-   > When using Prebid.js 9.0 or higher, include the **anPspParamsConverter module in every Prebid.js build** for pages that use Microsoft Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
+   > 
+   > When using Prebid.js 10 and higher, the anPspParamsConverter module is not necessary.
+   > 
+   > When using Prebid.js 9.x, include the anPspParamsConverter module in every Prebid.js build for pages that use Microsoft Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
 
 1. Call the Microsoft Monetize SSP client-side using the `/openrtb2/prebid` endpoint
 
 1. Follow the Prebid GitHub example [here](https://github.com/prebid/Prebid.js/blob/master/integrationExamples/gpt/prebidServer_example.html).
-
-    > [!IMPORTANT]
-    > [Prebid.js version 6.10 or higher](https://github.com/prebid/Prebid.js/releases) is required.
 
 Make the below changes to the s2sConfig:
 

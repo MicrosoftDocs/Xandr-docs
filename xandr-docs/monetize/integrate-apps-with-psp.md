@@ -1,7 +1,7 @@
 ---
 title: Integrate Apps with PSP
 description: Learn how to integrate app inventory with PSP. This article provides detailed information and useful resources for integration.
-ms.date: 09/25/2024
+ms.date: 06/26/2025
 ---
 
 # Integrate apps with PSP
@@ -56,6 +56,12 @@ To set up Prebid Mobile SDK with PSP:
 
 1. When offering native inventory through the Prebid Mobile SDK, set `PrebidMobile.assignNativeAssetID(true)` immediately after SDK initialization.
 1. Proceed with [PSP Setup](set-up-prebid-server-premium.md) steps.
+   > [!NOTE]
+   > Prebid Mobile SDK iOS integrations can leverage both tracking and non-tracking domains as detailed [here](https://docs.prebid.org/prebid-mobile/pbm-api/ios/code-integration-ios.html#handling-tracking-domains). The relevant PSP domains are:
+   > ```
+   > trackingURL = "https://ib.adnxs.com/openrtb2/prebid"
+   > nonTrackingURL = "https://adnxs-simple.com"
+   > ```
 
 <!--## Non-SDK
 

@@ -1,7 +1,7 @@
 ---
 title: Deal Line Item API Setup Guide
 description: Learn the process of setting up an API implementation of a Deal Line Item to target a deal.
-ms.date: 10/28/2023
+ms.date: 06/30/2025
 ms.custom: digital-platform-api
 ---
 
@@ -237,6 +237,8 @@ You'll need to create the deal you want to associate with the deal line item.
 | `buyer_seats` | object | Required | The buying bidder and seat who can target this deal. A deal will only ever use the buyer field or the `buyer_seats` field, not both. For more details, see the **Buyer Seats** section in the [Deal Service](./deal-service.md). |
 | `version` | int | Required | This field must be set to `"2"` in order to associate the deal to a deal line item. |
 | `auction_type` | object | Optional | The auction type of the deal (Standard/Fixed/Market). This value must match what's set on the deal line item (via `revenue_type`/`min_revenue_value`/`revenue_value`).<br><br>**Note**: This field must be set upon creation, but it is not used on deal line items. It will not be updated if the line item is updated and in the auction; only the line item values are considered. |
+| `priority` | int | Optional | Setting a priority value is optional; however, if it's specified on the Line Item, the same value must also be set in the Deal object. The priority values assigned to the Deal and the corresponding Line Item must be identical.<br> Possible values: 1 - 20, where 20 is the highest priority. <br>Default: 5. <br>**Note**: This setting alone does not determine the PG deal priority; the priority must also be set appropriately when creating the [Line Item](line-item-service.md). |
+| `type` | object | Optional | The ID representing the type of deal. <br> Possible values: <br> `1`: Open auction <br> `2`: Private auction <br> Default: `1` <br> **Note**: This setting alone does not determine whether the deal is private or open. Set the `priority` and `deprioritize_rtb` values appropriately when creating the [Line Item](line-item-service.md).
 
 > [!Note]
 > Ensure that "ask_price" and "floor_price" are not set in the deal object. These fields would be automatically populated when the deal is associated with the line item.
@@ -705,9 +707,11 @@ Finally, you'll need to create the deal line item to associate the deal ID and t
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `priority` | int | Set the priority of the deal. Any priority below reselling creates an open deal, any priority above reselling creates a private deal. |
+| `priority` | int | Set the priority of the PG deal. This priority value, in combination with the field `deprioritize_rtb` , determines whether a PG deal is auctioned as open or private. <br> To create an **open PG deal**, set a priority below the Member's Reselling Priority. <br> To create a **private PG deal**, set a priority below the Member's Reselling Priority if the member id is also creating GDALIs (Ad Sever clients); or set a priority above or equal to the Member's Reselling Priority if your member id is not creating GDALIs (SSP clients).|
+| `deprioritize_rtb` | boolean | If set to `true`, the PG deal is considered private and always would has priority over open deals and open RTB bids. <br> If set to `false`, the PG deal is considered open and competes on price with open deals at the same priority and open RTB bids. <br> Check the [Auction Logic for Deals](../monetize/deal-auction-mechanics.md) for further details.|
 | `budget_intervals` | array of objects | Set a budget on the deal using fields within `budget_intervals` including: `daily_budget`, `daily_budget_imps`, `lifetime_budget`, or `lifetime_budget_imps`. Use the fields with no `imp` if the deal line item has revenue budget type or the fields with `_imp` at the end if the deal line item has revenue type impression. You can either have a daily or lifetime budget, not both. A lifetime budget that sits across flights ends up being broken out across each flight via the API. Remember that if your deal has no end date, it can't have a budget.  |
 | `state` | enum | State of the deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
+
 
 **To create a deal line item, do the following (see [Line Item Service](./line-item-service---ali.md) for more information):**
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize Ad Server for Programmatic Guaranteed Deal
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal through Microsoft Monetize Ad Server.
-ms.date: 10/28/2023
+ms.date: 06/30/2025
 ms.custom: digital-platform-api
 ---
 
@@ -217,6 +217,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 | `ask_price` | double | Required | This is the price shown to the buyer. It is the minimum they must bid in order to compete for the inventory. |
 | `currency` | enum | Required | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). The default value for this field is `"USD"`. |
 | `use_deal_floor` | Boolean | Required | This field must be set to `true`. When this field is set to `true`, the `floor_price` is applied for the deal. When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, for example, in placements or yield management profiles.<br><br>**Note:** As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br>- If the API call includes `ask_price` only, this is the value that will be used.<br>- If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value. |
+| `priority` | int | Optional | Setting a priority value is optional; however, if it's specified on the Line Item, the same value must also be set in the Deal object. The priority values assigned to the Deal and the corresponding Line Item must be identical.<br> Possible values: 1 - 20, where 20 is the highest priority. <br>Default: 5. <br>**Note**: This setting alone does not determine the PG deal priority; the priority must also be set appropriately when creating the [Line Item](line-item-service.md). |
 
 ##### Useful optional JSON fields
 
@@ -748,7 +749,8 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `insertion_orders` | array | Required | Array containing the insertion order ID you want to associate this deal line item to.<br><br>**Note:** PG deal line items can only use a single insertion order. |
 | `name` | string | Required | Name of the deal line item (**Note:** the buyer won't see this) |
 | `state` | enum | Required | State of the PG deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
-| `priority` | int | Required | Set this field's value to `"5"` for a PG deal. |
+| `priority` | int | Required | Set the priority of the PG deal. This priority value, in combination with the field `deprioritize_rtb` , determines whether a PG deal is auctioned as open or private. <br> To create an **open PG deal**, set a priority below the Member's Reselling Priority. <br> To create a **private PG deal**, set a priority below the Member's Reselling Priority if the member id is also creating GDALIs (Ad Sever clients); or set a priority above or equal to the Member's Reselling Priority if your member id is not creating GDALIs (SSP clients).|
+| `deprioritize_rtb` | boolean | Required | If set to `true`, the PG deal is considered private and always would has priority over open deals and open RTB bids. <br> If set to `false`, the PG deal is considered open and competes on price with open deals at the same priority and open RTB bids. <br> Check the [Auction Logic for Deals](../monetize/deal-auction-mechanics.md) for further details.|
 | `ad_types` | array | Required | The type of creative used for this deal line item. Possible values:<br>`"banner"`<br><br>**Note:** Currently, you can only use banner (display) creatives for PG deals for SSP (third-party ad server targeting and pacing). |
 | `line_item_type` | enum | Required | Must be set to `"standard_v2"` to create a PG deal line item. |
 | `profile_id` | int | Required | Profile ID associated with the deal line item ([Step 5 - Create a deal line item profile](#step-5-create-a-deal-line-item-profile)). |

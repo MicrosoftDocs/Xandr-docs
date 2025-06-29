@@ -750,8 +750,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `name` | string | Required | Name of the deal line item (**Note:** the buyer won't see this) |
 | `state` | enum | Required | State of the PG deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
 | `priority` | int | Required | Set the priority of the PG deal. This priority value, in combination with the field `deprioritize_rtb` , determines whether a PG deal is auctioned as open or private. <br> To create an **open PG deal**, set a priority below the Member's Reselling Priority. <br> To create a private PG deal, set a priority below the Member's Reselling Priority if the member id is also creating GDALIs (Ad Sever clients); or set a priority above or equal to the Member's Reselling Priority if your member id is not creating GDALIs (SSP clients).|
-| `deprioritize_rtb` | Boolean | Required | If set to `true`, the PG deal is considered private and always would has priority over open deals and open RTB bids.<br> 
-If set to `false`, the PG deal is considered open and competes on price with open deals at the same priority and open RTB bids. Check the [Auction Logic for Deals](../monetize/deal-auction-mechanics.md) for further details.|
+| `deprioritize_rtb` | boolean | Required ||
 | `ad_types` | array | Required | The type of creative used for this deal line item. Possible values:<br>`"banner"`<br><br>**Note:** Currently, you can only use banner (display) creatives for PG deals for SSP (third-party ad server targeting and pacing). |
 | `line_item_type` | enum | Required | Must be set to `"standard_v2"` to create a PG deal line item. |
 | `profile_id` | int | Required | Profile ID associated with the deal line item ([Step 5 - Create a deal line item profile](#step-5-create-a-deal-line-item-profile)). |

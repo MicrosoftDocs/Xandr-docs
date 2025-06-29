@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize Ad Server for Programmatic Guaranteed Deal
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal through Microsoft Monetize Ad Server.
-ms.date: 10/28/2023
+ms.date: 06/30/2025
 ms.custom: digital-platform-api
 ---
 
@@ -217,6 +217,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 | `ask_price` | double | Required | This is the price shown to the buyer. It is the minimum they must bid in order to compete for the inventory. |
 | `currency` | enum | Required | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). The default value for this field is `"USD"`. |
 | `use_deal_floor` | Boolean | Required | This field must be set to `true`. When this field is set to `true`, the `floor_price` is applied for the deal. When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, for example, in placements or yield management profiles.<br><br>**Note:** As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br>- If the API call includes `ask_price` only, this is the value that will be used.<br>- If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value. |
+| `priority` | int | Optional | Setting a priority value is optional; however, if it's specified on the Line Item, the same value must also be set in the Deal object. The priority values assigned to the Deal and the corresponding Line Item must be identical.<br> Possible values: 1 - 20, where 20 is the highest priority. <br>Default: 5 <br>Note that this setting alone does not determine the PG deal priority; the priority must also be set appropriately when creating the Line Item. |
 
 ##### Useful optional JSON fields
 

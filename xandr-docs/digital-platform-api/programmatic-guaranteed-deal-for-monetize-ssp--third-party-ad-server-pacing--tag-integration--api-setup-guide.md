@@ -1,7 +1,7 @@
 ---
 title: Programmatic Guaranteed Deal with Third-Party Ad Server
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal using our API for Microsoft Monetize.
-ms.date: 10/28/2023
+ms.date: 06/30/2025
 ms.custom: digital-platform-api
 ---
 
@@ -214,6 +214,7 @@ To create a deal, do the following (for more information, see [Deal Service](dea
 | `ask_price` | double | Required | This is the price shown to the buyer. It is the minimum they must bid in order to compete for the inventory. |
 | `currency` | enum | Required | The currency for the `floor_price`. For a full list of available currencies, use the read-only [Currency Service](currency-service.md). The default value for this field is `"USD"`. |
 | `use_deal_floor` | Boolean | Required | This field must be set to `true`. When this field is set to `true`, the `floor_price` is applied for the deal. When `use_deal_floor` is `true`, the deal's floor price overrides any other floors you may have, for example, in placements or yield management profiles.<br><br>**Note:** As of 2017, only `ask_price` is used. API `POST` and `PUT` calls referencing `floor_price` and `use_deal_floor` will work as follows:<br>- If the API call includes `ask_price` only, this is the value that will be used.<br>- If the API call includes only a `floor_price` value, this value will be converted into the `ask_price` value. |
+| `priority` | int | Required | Set this field's value to "20" for pacing a PG deal in the third-party ad server. <br> **Note**: This setting alone does not determine the PG deal priority; the priority must also be set appropriately when creating the [Line Item](line-item-service.md). |
 
 ##### `buyer_members` example
 
@@ -756,6 +757,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `name` | string | Required | Name of the deal line item.<br><br>**Note:** The buyer won't see this. |
 | `state` | enum | Required | State of the PG deal line item. Default is `active`, so set to `inactive` if you don't want the deal to go live right away. |
 | `priority` | int | Required | Set this field's value to "20" for pacing a PG deal in the third-party ad server. |
+|`deprioritize_rtb`| boolean | Required | Set this field to TRUE for pacing a PG deal in the third-party ad server. |
 | `ad_types` | array | Required | The type of creative used for this deal line item. Possible values:<br>`"banner"`<br><br>**Note:** Currently, you can only use banner (display) creatives for PG deals for SSP (third-party ad server targeting and pacing). |
 | `line_item_type` | enum | Required | Must be set to `"standard_v2"` to create a PG deal line item. |
 | `profile_id` | int | Required | Profile ID associated with the deal line item ([Step 5 - Create a deal line item profile](#step-5-create-a-deal-line-item-profile)). |

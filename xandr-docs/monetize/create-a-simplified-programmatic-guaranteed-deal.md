@@ -49,16 +49,14 @@ In the **Basic Settings** section, enter the following details for the programma
 The **Deal Details** section offers a detailed overview of the key components that define your deal.
 
 - **Buyer**: Select a buyer for the deal by clicking on the **Edit (pencil icon)** option under **Buyer**. From the **Buyer** screen, choose an available buyer by searching their name or ID.
-
-    > [!TIP]
-    > If the list of buyers is extensive, select the **DSP** first before searching for the **Buyer** to narrow down the options.
+> [!TIP]
+> If the list of buyers is extensive, select the **DSP** first before searching for the **Buyer** to narrow down the options.
 - **Deal Trust Level**: Specifies the level of audit status you want to permit for creatives to serve on a deal. For more information, see the **Trust Level** section in [Override Ad Quality Settings on a Deal](override-ad-quality-settings-on-a-deal.md).
 - **Ad Type**: Select the type of ad you plan to offer. You can select more than one ad type. Possible values are **Banner**, **Video**, **Native**, and **Audio**.
-    > [!NOTE]
-    >
-    > - When you select ad types **Video**, **Native**, and **Audio**, the default ad size is set to 1x1. However, if you select multiple ad types, such as including the **Banner** ad type, ensure that you include the banner ad size as well.
-    > - Selecting **Ad Type** determines the availability of other settings (e.g.,**Targeting \>  Completion Rate Threshold**).
-    > - **Ad Type** selections automatically sync with the **Media Type** of deal impressions.
+> [!NOTE]
+> - When you select ad types **Video**, **Native**, and **Audio**, the default ad size is set to 1x1. However, if you select multiple ad types, such as including the **Banner** ad type, ensure that you include the banner ad size as well.
+> - Selecting **Ad Type** determines the availability of other settings (e.g.,**Targeting \>  Completion Rate Threshold**).
+> - **Ad Type** selections automatically sync with the **Media Type** of deal impressions.
 - **Ad Size**: Select one or more standard sizes, choose from existing custom sizes, or create a new custom ad size according to your requirements. To create a custom ad size:
     1. Select the **Custom** tab.
     1. Select **Add Size**.

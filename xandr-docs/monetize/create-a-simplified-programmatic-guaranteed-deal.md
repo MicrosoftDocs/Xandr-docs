@@ -135,8 +135,8 @@ The **Deal Ad Quality** section defines ad quality settings you wish to establis
     - **Language** tab: Only selected languages will be allowed to serve; any languages not selected will not be allowed. If no languages are selected, all languages that follow ad quality rules are allowed.
     - **Ad Quality Settings** tab: Select the languages in which you want to override ad quality settings. When you select **Ignore**, the language will be allowed on the deal despite ad quality settings. All languages default to **Follow**, so they comply with ad quality settings.
   - **Media Type**: Select the media types you want to include on the deal.
-    > [!NOTE]
-    > **Ad Type** selections automatically sync and pre-populate the **Media Type** selection of deal impressions.
+  > [!NOTE]
+  > **Ad Type** selections automatically sync and pre-populate the **Media Type** selection of deal impressions.
   - **Creative Category**
     - **Creative Category** tab: Only selected creative categories will be allowed to serve; any creative categories not selected will not be allowed. If no creative categories are selected, all creative categories that follow ad quality rules are allowed.
     - **Ad Quality Settings** tab: Select the creative categories in which you want to override ad quality settings. When you select **Ignore**, the creative category will be allowed on the deal despite ad quality settings. All creative categories default to **Follow**, so they comply with ad quality settings.

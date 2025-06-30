@@ -197,13 +197,13 @@ You can create a new programmatic guaranteed deal from the pre-selection screen 
 1. Use the **Deal Template Selection** field to search and select a deal template using either a Line Item ID or name.
 1. Review the summary of settings and select **Select This Template**. This action applies all the template settings to your deal settings.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the programmatic guaranteed deal. Alternatively, select **Save and Duplicate** if you wish to duplicate this programmatic guaranteed deal.
-1. Review your guaranteed deal settings and summary, make any necessary updates, and then select **Save and Reserve** to save the guaranteed deal and reserve the inventory. Alternatively, save by selecting one of the alternatives options in the dropdown as explained in the [**Save the programmatic guaranteed deal**](#save-the-programmatic-guaranteed-deal) section above.
+1. Review your guaranteed deal settings and summary, make any necessary updates, and then select **Save and Reserve** to save the guaranteed deal and reserve the inventory. Alternatively, save by selecting one of the alternatives options in the dropdown as explained in the [Save the programmatic guaranteed deal](#save-the-programmatic-guaranteed-deal) section above.
 
 ### Use the monitoring grid view
 
 1. Search for the programmatic guaranteed deal you wish to use as a template.
 1. In the **Line Name** column, hover over the programmatic guaranteed deal, and two icons will appear. Select the **Use as Template** icon.
-1. Review your guaranteed deal settings and summary, make any necessary updates, and then select **Save and Reserve** to save the guaranteed deal and reserve the inventory. Alternatively, save by selecting one of the alternatives options in the dropdown as explained in the [**Save the programmatic guaranteed deal**](#save-the-programmatic-guaranteed-deal) section above.
+1. Review your guaranteed deal settings and summary, make any necessary updates, and then select **Save and Reserve** to save the guaranteed deal and reserve the inventory. Alternatively, save by selecting one of the alternatives options in the dropdown as explained in the [Save the programmatic guaranteed deal](#save-the-programmatic-guaranteed-deal) section above.
 
 ### Use the monitoring settings pane
 

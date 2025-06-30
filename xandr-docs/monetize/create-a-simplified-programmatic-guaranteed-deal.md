@@ -65,9 +65,9 @@ The **Deal Details** section offers a detailed overview of the key components th
     1. Select **Save**.
 - **Deal Priority**: Specifies the deal's ranking in the auction. When a deal is created as **Private Auction**, the buyer's bid takes precedence over open exchange. When a deal priority is created as **Open Auction**, the buyer competes with bids from the open exchange.
   - **Priority Level**: This advanced feature offers the flexibility to prioritize deals within the auction. A higher priority number supersedes a lower one of the same deal priority auction type (private deals will always have priority over open deals regardless of the priority level). The selectable priority range is preset based on your **Private Auction** or **Open Auction** selection. Every deal is assigned a default priority, reducing the need for frequent changes.
-    > [!NOTE]
-    > If your member is also running guaranteed campaigns in the Monetize Ad Server, private deals will, by default, be assigned a priority level lower than the member’s reselling priority. This is due to the fact that all line item types share the same priority system, and the platform wants to avoid any risk of underdelivery for guaranteed campaigns.
-    > To better understand how priority settings impact the auction logic, please refer to [this page](deal-auction-mechanics.md) for a detailed explanation.
+> [!NOTE]
+> If your member is also running guaranteed campaigns in the Monetize Ad Server, private deals will, by default, be assigned a priority level lower than the member’s reselling priority. This is due to the fact that all line item types share the same priority system, and the platform wants to avoid any risk of underdelivery for guaranteed campaigns.
+> To better understand how priority settings impact the auction logic, please refer to [this page](deal-auction-mechanics.md) for a detailed explanation.
 - **Budget**: Set the programmatic guaranteed deal impression budget
   - **Pacing**: How the budget is allocated over the duration of the advertising campaign. For more information on flight pacing, see [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md).
   - **Underspend Catch-Up**: Select an option:
@@ -105,8 +105,8 @@ The **Advanced Targeting** section offers advanced settings and targeting option
 
 - **Blocklist**: Search and select a blocklist (by default, the Microsoft Advertising blocklist is always applied). Any inventory in the blocklists you apply for is automatically excluded and not bid on by this programmatic guaranteed deal. You can select from network/member-level blocklists or [Inventory Lists](inventory-lists-ali-only.md) directly from the programmatic guaranteed deal. Once applied, you can also view or export the blocklist.
 - **Allowlist**: Search and select an allowlist you would like to apply to this programmatic guaranteed deal. You can select from network/member-level allowlists or [create an allowlist](inventory-targeting-ali.md) directly from the programmatic guaranteed deal. Once applied, you can also view or export the allowlist.
-   > [!NOTE]
-   > The use of Inventory Lists (e.g., allowlists, blocklists) constrains whatever **Inventory Type** selections you make. For example, if you target an allowlist, the **Inventory Type** option you select is limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory Type** option you select serves everything but the domains/apps in that blocklist.
+> [!NOTE]
+> The use of Inventory Lists (e.g., allowlists, blocklists) constrains whatever **Inventory Type** selections you make. For example, if you target an allowlist, the **Inventory Type** option you select is limited to only those domains/apps in that allowlist. If you target a blocklist, the **Inventory Type** option you select serves everything but the domains/apps in that blocklist.
 - **System targeting**: Target users based on their operating systems, browsers, language, device model, or carrier. For more information, see [System targeting](system-targeting.md).
 - **Demographics**: Target specific segments of the audience based on characteristics such as age and gender. For more information, see [Demography targeting](demography-targeting.md).
 - **Page properties**: Target impressions based on the position of the creative tag on the page or based on values passed in the query string of the ad call. For more information, see [Page properties targeting](page-properties-targeting.md).

@@ -211,7 +211,7 @@ You can create a new programmatic guaranteed deal from the pre-selection screen 
 1. In the **Line Name** column, click on the programmatic guaranteed deal to expand the **Settings** pane.
 1. Select the **Use as Template** option located at the upper-right corner of the page.
 1. Review your deal settings and summary, make any necessary updates, and then select **Save** to save the programmatic guaranteed deal. Alternatively, select **Save and Duplicate** if you wish to duplicate this programmatic guaranteed deal.
-1. Review your guaranteed deal settings and summary, make any necessary updates, and then select **Save and Reserve** to save the guaranteed deal and reserve the inventory. Alternatively, save by selecting one of the alternatives options in the dropdown as explained in the [**Save the programmatic guaranteed deal**](#save-the-programmatic-guaranteed-deal) section above.
+1. Review your guaranteed deal settings and summary, make any necessary updates, and then select **Save and Reserve** to save the guaranteed deal and reserve the inventory. Alternatively, save by selecting one of the alternatives options in the dropdown as explained in the [Save the programmatic guaranteed deal](#save-the-programmatic-guaranteed-deal) section above.
 
 > [!NOTE]
 >

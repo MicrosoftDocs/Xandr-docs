@@ -28,12 +28,12 @@ You can create a new programmatic guaranteed deal from the **Line Items** screen
 1. On the **Line Items** screen, select **Guaranteed Deal** from the **+ New** drop-down menu.
 1. Select the **Create from Scratch** option under **Creation Mode**. If you wish to create a new deal from a template, see [Create a programmatic guaranteed deal from a template](#create-a-deal-line-item-from-a-template).
 1. Search (by name or ID) and select the desired advertiser and insertion order for the respective **Advertiser** and **Insertion Order** fields.
-
 > [!NOTE]
 > Programmatic guaranteed deals only support insertion orders with **Flexible Budget Type** or **Impression Budget Type**, **No End Date**, **Unlimited Budget**, **Set pacing** on the line item settings. If you can't find your Insertion Order in the list, check its settings as unsupported Insertion Orders are filtered out.    
+
 > [!TIP]
-    > - When you select the **Make Default Advertiser** and **Make Default Insertion Order** checkboxes, the form automatically saves the advertiser and insertion order details. This information is pre-populated for future deal creation. However, you can still modify it if necessary.
-    > - The advertiser and insertion order details are saved locally and will be cleared when you clear your browser's cookies.
+> - When you select the **Make Default Advertiser** and **Make Default Insertion Order** checkboxes, the form automatically saves the advertiser and insertion order details. This information is pre-populated for future deal creation. However, you can still modify it if necessary.
+> - The advertiser and insertion order details are saved locally and will be cleared when you clear your browser's cookies.
 1. Select **Next**.
 
 ### Basic settings

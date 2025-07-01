@@ -141,6 +141,19 @@ A GDALI is typically used for direct-sold business when an arrangement has been 
 }
 ]
 ```
+> [!NOTE] 
+> The start_date and end_date of each of its budget_intervals array objects fall within the budget intervals defined on the parent Insertion order.  Only a single budget interval can be associated to guaranteed line items
+
+| Field | Type (Length) | Description |
+|---|---|---|
+| `id` | int | The ID of the budget interval |
+| `start_date` | timestamp | The start date of the budget interval. Format must be YYYY-MM-DD hh:mm:ss (hh:mm:ss should be hh:00:00). |
+| `end_date` | timestamp | The end date of the budget interval. Format must be YYYY-MM-DD hh:mm:ss (hh:mm:ss should be set to hh:59:59). |
+| `timezone` | string | The timezone by which budget and spend are counted. For a list of acceptable timezone values, see [API Timezones](api-timezones.md). The default value is "EST5EDT" or the advertiser's timezone. |
+| `lifetime_budget_imps` | double | The lifetime budget in impressions for the budget interval. |
+| `lifetime_pacing` | boolean | If `true`, the line item will attempt to pace the lifetime budget evenly over the budget interval. GDALIs must be defined as `true`. |
+| `lifetime_pacing_pct` | double | A double integer between (and including) 50 and 150, used to set pacing throughout a budget interval. Possible values can be any double between (and including) 50 and 150 on the following scale: <br> - 50: Pace behind schedule. <br> - 100: Pace evenly. <br>- 150: Pace ahead of schedule. <br> **NOTE:** It's recommended to set this field to 105. By default, the value will be set to 100. |
+| `enable_forecast_pacing`| boolean | If true, daily budget will be calculated based on forecasted capacity for the line item. When false, daily budget will be evenly distributed across each day of the flight. <br> **NOTE:**  `lifetime_pacing_pct` will be applied regardless of whether `enable_forecast_pacing` is enabled or disabled. |
 
 ### Supply strategies
 

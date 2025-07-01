@@ -4,8 +4,7 @@ description: Explore Forecast-Shaped Pacing which governs daily pacing schedules
 ms.date: 06/30/2025
 ms.author: shsrinivasan
 ---
-
-# Overview
+# Forecast-Shaped Pacing (FSP)
 
 Microsoft Advertising applies pacing throughout the lifetime of a line item to ensure that each line item meets its delivery goal in full and at a steady rate. Forecast-Shaped Pacing (FSP) enhances pacing logic for impression-based guaranteed line items by aligning delivery rates with forecasted inventory capacity for each line item. 
 

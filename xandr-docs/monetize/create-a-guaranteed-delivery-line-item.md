@@ -111,13 +111,13 @@ The **Budgeting & Scheduling** section defines your financial relationship w
 
 - **Budget** - How much the advertiser has allocated for you to spend (in impressions or percentage).
 - **Revenue Type** - The way the advertiser has agreed to pay you (**CPM**, **Viewable CPM**, or **Fixed Fee**).
-- **Pacing** - How the budget is allocated over the duration of the advertising campaign.
+- **Pacing** - How the budget is allocated over the duration of the line item’s flight.
 
 Depending on the configuration of the parent insertion order, different configuration options will be available to you here. You can view the settings inherited from insertion order(s) in the panel to the right. This includes the **Budget Type**, **Currency**, **Total Lifetime Budget**, **Pacing**, **Start Date**, and **End Date**. If you have multiple insertion orders associated with a line item, use the arrows to scroll through them.
 
 To set up line item budgeting and scheduling:
 
-1. **Revenue Type**: Select a Revenue Type to define how the advertiser has agreed to pay you:
+- **Revenue Type**: Select a Revenue Type to define how the advertiser has agreed to pay you:
 
    | Option | Description |
    |---|---|
@@ -125,39 +125,39 @@ To set up line item budgeting and scheduling:
    | **Viewable CPM** | Select this revenue type if the advertiser will pay you a flat amount per thousand viewable impressions. Only measured viewable impressions will be counted, according to Microsoft Advertising viewability measurement. Enter the amount that the advertiser will pay you per thousand viewable impressions in the **Revenue Value** field.  |
    |**Fixed Fee** | Select this revenue type if the advertiser will pay you a fixed amount on a specified allocation date. That date can be daily (Cost per day) or at the end of the flight (One time allocation). If you pay managed publishers a percentage of your revenue, their share will be paid out on the allocation date, after which the line item will no longer be editable. Note that the fixed fee will not be booked on the allocation date unless the line item has served at least one impression. If you select a revenue type of **Fixed Fee**, you will need to select one of the following: <br> -Cost per day - the advertiser will pay a flat fee each day throughout the flight. The specified daily revenue value will not be allocated on any day that the line item has not served at least one impression. Enter the amount an advertiser will pay you each day in Revenue Value per Day.<br> - One time allocation - the advertiser will pay out the full amount of the fee on the end date of the flight. Revenue will be allocated proportional to impression delivery throughout the line item’s flight. <br>**Note**: The end date must be within 30 days of the start date.<br> Enter an amount an advertiser will pay in **Revenue Value** and select a date in **Allocation Date**. The allocation date must be after the end date of the flight. <br> **Warning**: Guaranteed delivery line items with a Fixed Fee revenue type must have a start date time of 12:00 AM.|
 
-1. **Flight**: Set up a flight by specifying its start and end dates, budgeting, and pacing. Flights are subject to the following constraints:
-
+- **Flight**: Set up a flight by specifying its start and end dates, budgeting, and pacing. Flights are subject to the following constraints:
    - Each line item must have a single flight.
-   - Flight dates must fall inside the billing period dates of the parent insertion order(s).
-
-   To set a flight, enter a start and end date, and adjust the start and end time as required. Both a start and end date are required for GDALIs.
+   - Flight dates must fall inside the billing period dates of the parent insertion order(s). To set a flight: 
+       - enter a start and end date, and adjust the start and end time as required. 
+       - Both a start and end date are required for GDALIs.
    To set flight budgeting, enter a budget in the **Budget** field:
 
    - For **Impression** delivery type, budgets are based on **Impressions** or **Viewable Impressions** based on the **Revenue Type** selected.
 
-      > [!WARNING]
-      > GDALIs are designed to deliver their budgets evenly across their flight dates. Although budgets of any size may be configured on the line item, setting daily impression budgets of 1,000 impressions or less may result in the line item spending its lifetime budget prior to its designated end date.
-      >
-      > For **Exclusive** delivery type, delivery is based on a percentage (%) of targeted impressions. Input the integer value from 1-100 in the appropriate field.
+   > [!WARNING]
+   > GDALIs are designed to deliver their budgets evenly across their flight dates. Although budgets of any size may be configured on the line item, setting daily impression budgets of 1,000 impressions or less may result in the line item spending its lifetime budget prior to its designated end date.
+   >
+   > For **Exclusive** delivery type, delivery is based on a percentage (%) of targeted impressions. Input the integer value from 1-100 in the appropriate field.
 
-    **Pacing**: Set the flight pacing by entering a value in the **Pacing** field. Pacing percent determines how your flight budget is delivered over the lifetime of your flight as follows:
-
+- **Pacing**: Set the flight pacing by entering a value in the **Pacing** field. Pacing percent determines how your flight budget is delivered over the lifetime of your flight as follows:
      - If the pacing is equal to 100%, the budget is split evenly over every day in the flight.
      - If the pacing is higher than 100%, the flight spends more per day at the beginning of the flight and less at the end.
      - If the pacing is lower than 100%, the flight spends less per day at the beginning of the flight and more at the end.
+     - **Day of Week Pacing:** Forecast-Shaped Pacing (FSP) with day-of-week logic distributes a guaranteed line item’s budget across multiple days, rather than spreading it evenly over the duration of the flight. When Day-of-Week Pacing is enabled (default for line items created via the Microsoft Monetize UI), the daily budget is adjusted according to anticipated impression availability for each day. For example, if weekends are forecasted to have higher inventory, a larger portion of the budget will be allocated to Saturday and Sunday. For more information on flight pacing, see Forecast-shaped pacing. 
+> [!NOTE] 
+> Day-of-week pacing and pacing percentage settings work together. While day-of-week pacing allocates daily budgets based on forecasted inventory capacity, the pacing percentage adjusts the distribution across the flight to either frontload or backload the budget accordingly. 
 
-    The **Pacing** value may be 50-150 and defaults to 105%, assisting the delivery of GDALIs.
+> [!NOTE]
+> - The **Pacing** value may be 50-150 and defaults to 105%, assisting the delivery of GDALIs.
+> - The budget overview does not account for day of week pacing.
+> - **Budget Overview**: Once a flight is configured, the **Budget Overview** chart provides a visualization of how the pacing percent is expected to impact delivery. For more information on flight pacing, see  [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md).
 
-    **Budget Overview**: Once a flight is configured, the **Budget Overview** chart provides a visualization of how the pacing percent is expected to impact delivery.
-
-    For more information on flight pacing, see [Guaranteed Delivery Pacing](guaranteed-delivery-pacing.md).
-
-1. **Underspend Catch-Up**: Select an option:
+- **Underspend Catch-Up**: Select an option:
 
    - **Evenly**: Unspent daily budget will be distributed evenly throughout the remainder of the flight.
    - **ASAP** (default): Unspent daily budget will be spent as quickly as possible based on your line item settings to ensure the highest probability of delivering your budget in its entirety.
 
-1. **Daypart**: Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md).
+- **Daypart**: Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md).
 
 ## Inventory and environment targeting
 
@@ -180,13 +180,13 @@ To set up line item budgeting and scheduling:
 
    - **Universal Categories**: These are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the 'Autos & Vehicles' category. Sellers can apply universal categories when self-reviewing inventory as well.
 
-     > [!NOTE]
-     > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
+   > [!NOTE]
+   > When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
    - **Custom Categories**: These are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers to target. Manage your member’s custom categories in the **Network** tab. For more information, see [Manage Custom Content Categories](manage-custom-content-categories.md).
 
-     > [!NOTE]
-     > When targeting more than one custom category, the categories have an OR relationship. For example, if you target two custom categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
+   > [!NOTE]
+   > When targeting more than one custom category, the categories have an OR relationship. For example, if you target two custom categories, you will bid on inventory that is in either category. The inventory does not need to be in both categories.
 
      - **Direct Inventory**: You can narrow your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. Select **Browse** to search by name or ID of an object, or **Text** to paste a list of IDs.
 
@@ -233,8 +233,8 @@ To set up line item budgeting and scheduling:
     - **Serve only 1 imp per page**: Set this to the on position if you want to limit the number of impressions that an individual advertiser can serve on a page in multi-tag auctions.
     - **Include users without cookies**: Set this to the on position if you want to serve impressions to unidentified users.
 
-        > [!NOTE]
-        > Serving to unidentified users ignores frequency and recency caps for those users.
+   > [!NOTE]
+   > Serving to unidentified users ignores frequency and recency caps for those users.
 
 1. **Demographic targeting**: Publishers may optionally pass the age or gender of users in the query string of their ad calls. In these cases, you can target users based on this information. To set up demographic targeting:
 
@@ -289,7 +289,7 @@ To save the GDALI, click one of the following options in the **Save and Reserv
 **Reserve and Duplicate** – When this option is chosen, the line item will be saved and reserved, and you will be redirected to a new **Create New Guaranteed Delivery Line Item** screen with the previous line item's settings pre-populated.
 **Reserve and Create New Line Item** – When this option is chosen, the line item will be saved and reserved, and you will be redirected to a new, blank **Create New Guaranteed Delivery Line Item** screen under the same advertiser.
 
-- ## Related topics
+## Related topics
 
 - [Guaranteed Delivery (GDALI)](guaranteed-delivery-gdali.md)
 - [Guaranteed Delivery Line Item FAQ (GDALI)](guaranteed-delivery-line-item-faq-gdali.md)

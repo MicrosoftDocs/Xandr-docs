@@ -1308,6 +1308,8 @@
       href: navigate-to-the-create-a-new-deal-line-item-screen-monetize.md
   - name: Programmatic Guaranteed Deal
     items:
+    - name: Create a Simplified Programmatic Guaranteed Deal
+      href: create-a-simplified-programmatic-guaranteed-deal.md
     - name: Create a Programmatic Guaranteed Deal
       href: create-a-programmatic-guaranteed-selling-line-item.md
     - name: Navigate to the Create New Programmatic Guaranteed Deal Screen

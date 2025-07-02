@@ -2,7 +2,7 @@
 title: Create a Simplified Programmatic Guaranteed Deal
 
 description: Explore the process of creating a simplified programmatic guaranteed deal, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
-ms.date: 07/01/2025
+ms.date: 07/02/2025
 ---
 
 # Create a simplified programmatic guaranteed deal

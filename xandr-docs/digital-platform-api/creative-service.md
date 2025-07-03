@@ -629,7 +629,7 @@ curl -b cookies -c cookies 'https://api.appnexus.com/creative?advertiser_id=100&
 
 ## Changes that cause re-audit
 
-Once a creative has passed Xandr audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be resubmitted for audit (`allow_audit` is set to `"pending"`):
+Once a creative has passed Xandr audit (`audit_status` is `"audited"`), changing any of the following fields causes the creative to be resubmitted for audit (`audit_status` is set to `"pending"`):
 
 - `width`
 - `height`

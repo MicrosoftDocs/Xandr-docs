@@ -2,7 +2,7 @@
 title: Integration with OpenRTB 2.6 Protocol For Supply Partners 
 description: This page outlines how Xandr's supply partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
 ms.custom: supply-partners
-ms.date: 07/14/2024
+ms.date: 7/3/2025
 ---
 
 # Integration with OpenRTB 2.6 protocol for supply partners
@@ -133,6 +133,16 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | `id` | string   | A unique identifier assigned by the publisher. This may not be a unique identifier across all supply sources. |
 | `name` | string   | Channel the content is on (e.g., a local channel like "WABC-TV"). |
 | `domain`| string   | The primary domain of the channel (e.g., "abc7ny.com" in the case of the local channel WABC-TV). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
+
+## Object: UID
+
+This object contains a single user identifier provided as part of extended identifiers.
+
+| **Attribute** | **Type** | **Description** |
+| --- | --- | --- |
+| `id` | string | The identifier for the user. |
+| `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+
 
 ## Updated field locations
 

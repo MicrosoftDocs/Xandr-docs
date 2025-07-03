@@ -1,7 +1,7 @@
 ---
 title: Outgoing Bid Request to Bidders
 description: Learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
-ms.date: 10/28/2023
+ms.date: 7/3/2025
 ---
 
 # Outgoing bid request to bidders
@@ -565,6 +565,9 @@ We support the following fields in the `ext` object to support platform-specif
 | `appnexus` | object | Specifies the platform-specific extensions to the user object. See below for a list of the extensions for this object. |
 | `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://www.iabeurope.eu/). |
 | `eids` | object | Specifies the information relating to the extended user identifiers. This can be either third party identity solutions (Criteo, TDID, RampID, etc.) or Publisher-provided identifiers (PPIDs). |
+
+> [!NOTE]
+> In addition to `eid` object mentioned above, Microsoft monetize also supports both reading and sending the `atype` field in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
 
 ### Object
 

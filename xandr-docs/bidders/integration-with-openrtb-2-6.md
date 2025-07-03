@@ -4,7 +4,7 @@ description: Explore this article to learn how Xandr's demand partners integrate
 ms.date: 7/3/2025
 ---
 
-# Integration with OpenRTB 2.6 protocol for Bidders
+# Integration with OpenRTB 2.6 protocol for bidders
 
 This page outlines how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for sending and receiving impressions across all media types. This document highlights the top-level objects that have changes or updates, including new fields that are added or implemented. Additionally, it outlines the fields that have been transitioned from their previous location in OpenRTB 2.4/2.5 to their new location in OpenRTB 2.6.
 

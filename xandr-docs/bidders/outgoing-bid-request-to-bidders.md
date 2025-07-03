@@ -1,7 +1,7 @@
 ---
 title: Outgoing Bid Request to Bidders
 description: Learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
-ms.date: 10/28/2023
+ms.date: 7/3/2025
 ---
 
 # Outgoing bid request to bidders
@@ -566,7 +566,15 @@ We support the following fields in the `ext` object to support platform-specif
 | `consent` | string | Optional. Contains the data structure developed by the General Data Protection Regulation (GDPR) Consent Working Group under the auspices of [IAB Europe](https://www.iabeurope.eu/). |
 | `eids` | object | Specifies the information relating to the extended user identifiers. This can be either third party identity solutions (Criteo, TDID, RampID, etc.) or Publisher-provided identifiers (PPIDs). |
 
-### Object
+> [!NOTE]
+> In addition to `eid` object mentioned above, Microsoft monetize also supports both reading and sending the `atype` field in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
+
+| **Attribute** | **Type** | **Description** |
+| --- | --- | --- |
+| `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+
+
+#### Extended user identifier object
 
 > [!NOTE]
 > `eids` is not available if privacy signals indicate personal information cannot be processed.

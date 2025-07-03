@@ -2,11 +2,22 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
-ms.date : 11/27/2024
+ms.date : 7/3/2025
 ---
 
 # Android SDK release notes
 
+## 9.6.0
+
+### New Feature
+
++ 5721216: Added Top-Level custom keyword support. New API introduced `addCustomKeywordsTopLevel(key,value)` in `VideoAd`, `BannerAdView`, `NativeAdRequest` and `InterstitialAdView`.
+
+### Improvement/Bug Fixes
++ 5721103: Facebook SDK was upgraded to v6.20.0.
++ 5495138: Remove Device Model from Telemetry data.
++ 5730490: Fixed NPE in `CSRNativeBannerController`.
+  
 ## 9.5.0
 
 ### Improvement/Bug Fixes

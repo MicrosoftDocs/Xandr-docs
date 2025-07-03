@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date : 11/27/2024
+ms.date : 7/3/2025
 ---
 
 # iOS SDK release notes
@@ -10,6 +10,18 @@ ms.date : 11/27/2024
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.6.0
+
+### New Feature
+ 
++ 5721216: Added Top-Level custom keyword support. New API introduced `addCustomKeywordAtTopLevelWithKey:value` in `ANBannerAdView`, `ANInterstitialAd`, `ANNativeAdRequest` and `ANInstreamVideoAd`.
+
+### Improvement/Bug Fixes
++ 5721103: Facebook SDK was upgraded to v6.20.0.
++ 5495138: Remove Device Model from Telemetry data.
++ 5456279: Fixed issues revealed by static analyzer.
+
+  
 ## 9.5.0
 
 ### Improvement/Bug Fixes

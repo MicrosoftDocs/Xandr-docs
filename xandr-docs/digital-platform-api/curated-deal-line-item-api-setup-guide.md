@@ -42,7 +42,7 @@ For a general list of best practices to follow when working with the API, see [
 
 ## Setup procedure
 
-[!WARNING]
+> [!WARNING]
 > While setting up a curated deal line item, you should not set a priority. If it is required to set a priority, set it to the default 5.
 
 The following steps will guide you through the process of setting up a curated deal line item with typical configurations:

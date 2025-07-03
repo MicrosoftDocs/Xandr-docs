@@ -1,7 +1,7 @@
 ---
 title: Curated Deal Line Item API Setup Guide
 description: Learn the process of setting up an API implementation of a curated deal line item to target a deal.
-ms.date: 10/28/2023
+ms.date: 7/3/2025
 ms.custom: digital-platform-api
 ---
 
@@ -41,6 +41,9 @@ For a general list of best practices to follow when working with the API, see [
 - Note the ID of any objects you create. The IDs of objects you create are returned in the response body of requests. You'll often need these IDs later so copying them when they're returned can reduce the number of additional `GET` requests you have to make to obtain them.
 
 ## Setup procedure
+
+> [!WARNING]
+> While setting up a curated deal line item, you should not set a priority. If it is required to set a priority, set it to the default 5.
 
 The following steps will guide you through the process of setting up a curated deal line item with typical configurations:
 

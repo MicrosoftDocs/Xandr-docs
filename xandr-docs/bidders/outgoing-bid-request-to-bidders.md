@@ -569,7 +569,12 @@ We support the following fields in the `ext` object to support platform-specif
 > [!NOTE]
 > In addition to `eid` object mentioned above, Microsoft monetize also supports both reading and sending the `atype` field in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
 
-### Object
+| **Attribute** | **Type** | **Description** |
+| --- | --- | --- |
+| `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+
+
+#### Extended user identifier object
 
 > [!NOTE]
 > `eids` is not available if privacy signals indicate personal information cannot be processed.

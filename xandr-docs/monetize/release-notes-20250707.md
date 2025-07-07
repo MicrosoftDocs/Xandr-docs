@@ -1,6 +1,6 @@
 ---
 title: July 7, 2025 - Changes to DV360 Deal Sync Functionality
-description: Explore the July 77, 2025 release, changes to DV360 Deal Sync functionality
+description: Explore the July 7, 2025 release, changes to DV360 Deal Sync functionality
 ms.date: 07/07/2025
 ms.topic: release-notes
 ms.author: rupambaruah

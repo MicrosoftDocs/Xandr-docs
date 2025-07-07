@@ -10,7 +10,7 @@ ms.author: rupambaruah
 
 ## Overview:
 
-Starting July 7, 2025, Microsoft Monetize and Curate will no longer support the ability to target multiple DV360 Partner IDs in a single deal. This update aligns with Google DV360's shift toward the use of Central Partner IDs.
+Starting July 7, 2025, Microsoft Monetize and Curate will no longer support the ability to target multiple DV360 Partner IDs in a single deal. This update is due to Google DV360's shift toward the use of Central Partner IDs.
 
 ## What’s Changing:
 
@@ -28,4 +28,4 @@ Microsoft is actively working to support DV360's Central Partner ID model. This 
 ## Action Required:
 Please ensure that all new DV360 deal setups follow the single Partner ID model beginning July 7, 2025.
 
-For questions or support, please contact your Microsoft account representative.
+For questions or support, contact your Microsoft account representative or [Product Support](https://support.ads.microsoft.com/) team.

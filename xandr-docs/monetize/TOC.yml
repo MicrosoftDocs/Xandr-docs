@@ -1724,6 +1724,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: July 7, 2025 - Changes to DV360 Deal Sync Functionality
+    href: release-notes-20250707.md
   - name: June 17, 2025 - Updates to Native Assembly
     href: release-notes-20250617.md
   - name: May 09, 2025 - Prebid Server Premium Brand Blocks

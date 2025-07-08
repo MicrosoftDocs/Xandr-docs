@@ -17,5 +17,5 @@ This enhancement helps align delivery more closely with inventory patterns, redu
 For more information, see:
 - [Forecast-shaped pacing](forecast-shaped-pacing.md)
 - [Guaranteed delivery pacing](guaranteed-delivery-pacing.md)
-- [Budgeting & scheduling](budgeting-scheduling.md)
-- [Budget intervals objects](../digital-platform-api/budget-intervals-objects-api.md)
+- [Budgeting & scheduling](create-a-guaranteed-delivery-line-item.md)
+- [Budget intervals objects](../digital-platform-api/line-item-service---gdali.md)

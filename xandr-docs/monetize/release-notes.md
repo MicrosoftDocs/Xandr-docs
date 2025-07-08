@@ -10,6 +10,8 @@ ms.topic: release-notes
 
 Read about the latest updates to Monetize.
 
+- [July 08, 2025: Enhanced Forecast-Shaped Pacing](release-notes-20250706.md)
+- [July 08, 2025: Updates to Inventory Manager](release-notes-20250708.md)
 - [July 7, 2025: Changes to DV360 Deal Sync Functionality](release-notes-20250707.md)
 - [June 17, 2025: Updates to Native Assembly](release-notes-20250617.md)
 - [May 09, 2025: Prebid Server Premium Brand Blocks](release-notes-psp-20250509.md)

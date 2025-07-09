@@ -93,9 +93,11 @@ If none of the above steps work, you can test to see if the problem is on our en
 Another reason why the creative may not be displaying is the creative contains geotargeting elements that control where the creative is allowed to render. If this is the case, you will have to allow our Audit IPs and Domains:
 
 - LA servers:
-  - Input 68.67.139.192 /26 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](http://magic-cookie.co.uk/iplist.html) for a list of IPs
+  - Input 68.67.139.192 /26 (netblock)
+  - Input 68.67.136.192 /26 (netblock)
+  - Input 68.67.139.0   /26 (netblock)
 - NY office:
-  - Input 207.237.150.0 /24 (netblock) at [https://www.magic-cookie.co.uk/iplist.md](http://magic-cookie.co.uk/iplist.html) for a list of IPs
+  - Input 207.237.150.0 /24 (netblock)
   - 68.67.164.193
   - 68.67.164.194
   - 68.67.164.195
@@ -125,11 +127,13 @@ Another reason why the creative may not be displaying is the creative contains g
   - 45.146.55.72
   - 136.144.42.114
 - Domains:
-  - `http://adnxs.net/`
-  - `http://adnxs.com/`
-  - [creative-preview-an.com](https://about.ads.microsoft.com/en-us/solutions/xandr/xandr-premium-programmatic-advertising)
-  - [audit.adnxs.net](https://cq-auditor.adnxs.net/login?next=%2F)
+  - `adnxs.net`
+  - `adnxs.com`
+  - `creative-preview-an.com`
   - `cq-preview.adnxs.net`
+  - `new-audit.adnxs.net`
+  - `cq-auditor.adnxs.net`
+  
 
 **Why did I receive an email saying my creative was deactivated?**
 

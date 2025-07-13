@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Report Service
 description: Use the Report service to access different types of reports.
-ms.date: 10/28/2023
+ms.date: 07/14/2025
 ms.custom: digital-platform-api
 ---
 
@@ -59,8 +59,7 @@ The available metrics vary depending on the report type, but can include how muc
 | [Buyer Reach And Frequency Report](./buyer-reach-and-frequency-report.md)<br>`buyer_approximate_unique_users_hourly` | Network | Provides the information associated with "reach" which is the number of unique devices or persons exposed to ads and "frequency" which is the average number of times each unique device or person was exposed to advertisements. | 90 days |
 | [Offline Attribution Report](./offline-attribution-report.md)<br>`offline_attribution` | Advertiser | Provides insight into your line item's performance in influencing in-store purchases among your target audiences. The Offline Attribution report is only accessible to clients who have Offline Sales Attribution enabled for their line items. | 120 days |
 | [Seller CMP Analytics Report](./seller-cmp-analytics-report.md)<br>`cmp_analytics` | Network | Provides insight into the number, validity, and content of the IAB Transparency & Consent Framework (IAB TCF) strings on seller ad requests to our endpoints. | 30 days |
-| [Prebid Server Premium Seller Analytics Report](./prebid-server-premium-seller-analytics.md)<br>`prebid_server_analytics` | Network | The Prebid Server Premium Seller Analytics Report contains performance information on configured Prebid Server Premium (PSP) demand partners. Use for final delivery and performance. | 30 days |
-| [Prebid Server Premium Health Analytics Report](./prebid-server-premium-health-analytics.md)<br>`psp_health_analytics` | Network | Data related to [Prebid Server Premium](../monetize/prebid-server-premium.md) bid requests and transactions. Useful for troubleshooting and optimization. Report is based on **sample data multiplied to estimate the full volume of PSP activity**. Use [Prebid Server Premium Analytics Report](./prebid-server-premium-seller-analytics.md) and other Microsoft Monetize reports for those purposes. | 99 days |
+| [Prebid Server Premium Health Analytics Report](./prebid-server-premium-health-analytics.md)<br>`psp_health_analytics` | Network | Data related to [Prebid Server Premium](../monetize/prebid-server-premium.md) bid requests and transactions. Useful for troubleshooting and optimization. Report is based on **sample data multiplied to estimate the full volume of PSP activity**. The [Monetize historical report](../monetize/monetize-historical-reporting.md) or other [Monetize reports](../monetize/reporting-guide.md) should be used for those purposes. | 99 days |
 | [Inventory Availability Report](./inventory-availability-report.md)<br>`platform_inventory_availability` | Advertiser, Publisher | Inventory availability reports offer insight into the types of inventory available on the platform. | 30 days |
 
 ## REST API for viewing metadata

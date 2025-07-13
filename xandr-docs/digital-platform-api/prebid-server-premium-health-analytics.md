@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Health Analytics
 description: Explore the Prebid Server Premium (PSP) Health Analytics report, enabling users to analyze bid requests and transactions with their configured Demand Partners.
-ms.date: 10/28/2023
+ms.date: 07/14/2025
 ms.custom: digital-platform-api
 ---
 
@@ -10,7 +10,7 @@ ms.custom: digital-platform-api
 The Prebid Server Premium (PSP) Health Analytics Report allows users to analyze data related to bid requests and transactions with their configured Demand Partners. This is most useful in troubleshooting known issues and proactively identifying optimization opportunities.
 
 > [!NOTE]
-> The dashboard is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Prebid Server Premium Seller Analytics Report](../monetize/prebid-server-premium-seller-analytics.md) and other [Microsoft Monetize reports](../monetize/reporting-guide.md) should be used for those purposes.
+> The dashboard is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Monetize historical report](../monetize/monetize-historical-reporting.md) or other [Monetize reports](../monetize/reporting-guide.md) should be used for those purposes.
 
 ## Time frame
 
@@ -199,9 +199,9 @@ curl -b cookies -c cookies 'https://api.appnexus.com/report-download?id=97a181df
 
 ## Related topics
 
-- [Prebid Server Premium Seller Analytics Report (UI)](../monetize/prebid-server-premium-seller-analytics.md)
+
 - [Prebid Server Premium Health Analytics Report (UI)](../monetize/prebid-server-premium-health-analytics-report.md)
-- [Prebid Server Premium Seller Analytics (API)](prebid-server-premium-seller-analytics.md)
 - [Reporting Guide](../monetize/reporting-guide.md)
 - [Report Service API](report-service.md)
 - [Bid Error Codes](../bidders/bid-error-codes.md)
+- [Monetize historical report](../monetize/monetize-historical-reporting.md)

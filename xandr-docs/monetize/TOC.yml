@@ -1620,8 +1620,6 @@
         href: network-video-mediation-demand-report.md
       - name: Prebid Server Premium Health Analytics Report
         href: prebid-server-premium-health-analytics-report.md
-      - name: Prebid Server Premium Seller Analytics Report
-        href: prebid-server-premium-seller-analytics.md
       - name: Seller Bid Error Report
         href: seller-bid-error-report.md
       - name: Seller Brand Review Report

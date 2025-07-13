@@ -229,6 +229,16 @@
         "source_path": "xandr-docs/monetize/floor-optimization.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-yield-management",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/prebid-server-premium-seller-analytics.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/prebid-server-premium-analytics",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/digital-platform-api/prebid-server-premium-seller-analytics.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/prebid-server-premium-analytics",
+        "redirect_document_id": false
         }
       ]
     }

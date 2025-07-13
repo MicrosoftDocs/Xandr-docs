@@ -503,8 +503,6 @@
         href: offline-attribution-report.md
       - name: Prebid Server Premium Health Analytics
         href: prebid-server-premium-health-analytics.md
-      - name: Prebid Server Premium Seller Analytics
-        href: prebid-server-premium-seller-analytics.md
       - name: Publisher Analytics
         href: publisher-analytics.md
       - name: Publisher Brand Review Report

@@ -1,14 +1,14 @@
 ---
 title: Microsoft Monetize - Enable Cross-Device Targeting and Measurement for a Line Item
 description: Activate cross-device targeting, set frequency caps, conversion attribution, and audience targeting for users across devices.
-ms.date: 10/28/2023
+ms.date: 07/14/2025
 ---
 
 # Microsoft Monetize - Enable cross-device targeting and measurement for a line item
 
 You can optionally enable the cross-device targeting and measurement feature on a line item to apply frequency caps, conversion attribution, and audience targeting settings for individual users across multiple devices.
 
-The **Cross-Device** pull-down menu appears in the **Audience & Location Targeting** section. It is disabled by default.
+The **Cross-Device** pull-down menu appears in the **Audience & Location Targeting** section. It is disabled by default for EMEA members.
 
 > [!NOTE]
 > Cross-device targeting carries a cost-per-mille (CPM) or cost-per-thousand-impressions charge, which is noted next to the name of the identity provider you select. Microsoft Advertising clears this charge with the data provider, and it is included in your total costs in reporting.

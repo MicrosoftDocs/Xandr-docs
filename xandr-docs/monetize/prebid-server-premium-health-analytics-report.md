@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Health Analytics Report
 description: In this article, learn about the Prebid Server Premium health analytics report along with the dimensions and metrics associated with it.
-ms.date: 10/28/2023
+ms.date: 07/14/2025
 ---
 
 # Prebid Server Premium health analytics report
@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 The Prebid Server Premium Health Analytics Report allows users to analyze data related to bid requests and transactions with their configured demand partners. This report is most useful in troubleshooting known issues and proactively identifying optimization opportunities.
 
 > [!IMPORTANT]
-> The Health Analytics Report is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Prebid Server Premium Seller Analytics Report](prebid-server-premium-seller-analytics.md) and other [Microsoft Monetize reports](reporting-guide.md) should be used for those purposes.
+> The Health Analytics Report is based on **sample data multiplied to estimate the full volume of PSP activity**. It is not intended to be used for delivery and revenue reporting. The [Monetize historical report](monetize-historical-reporting.md) or other [Monetize reports](reporting-guide.md) should be used for those purposes.
 
 The data in this report can also be accessed via the [Report Service API](../digital-platform-api/report-service.md). For more information, see [Prebid Server Premium Health Analytics API documentation](../digital-platform-api/prebid-server-premium-health-analytics.md).
 
@@ -167,6 +167,6 @@ Follow these steps to run your report.
 
 ## Related topics
 
-- [Prebid Server Premium Seller Analytics Report](prebid-server-premium-seller-analytics.md)
 - [Reporting Guide](reporting-guide.md)
 - [Bid Error Codes](../bidders/bid-error-codes.md)
+- [Monetize historical report](monetize-historical-reporting.md)

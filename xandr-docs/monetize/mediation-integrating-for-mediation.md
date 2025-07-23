@@ -1,7 +1,7 @@
 ---
 title: Integrating for Mediation
 description: This page describes the types of integrations supported, how to set them up, and how they work.
-ms.date: 10/28/2023
+ms.date: 07/23/2025
 ---
 
 # Integrating for mediation
@@ -42,7 +42,7 @@ To set up each web Network:
 > For example:
 >
 > - **HTML**: The JavaScript might need to be wrapped in `<script>` tags to upload as HTML
-> - **URL**: If a URL is required, use `http://cdn.adnxs.com/mediation/noad.md` or the secure version: `https://cdn.adnxs.com/mediation/noad.md`
+> - **URL**: If a URL is required, use `https://cdn.adnxs.com/mediation/noad.js` or `https://cdn.adnxs.com/mediation/noad.html`
 
 ### Web request and response process
 

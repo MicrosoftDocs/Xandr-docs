@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Demand Partner Integrations
 description: In this article, find a list of all demand partners currently available through Prebid Server Premium (PSP).
-ms.date: 10/28/2023
+ms.date: 07/23/2025
 ---
 
 # Prebid Server Premium demand partner integrations
@@ -24,6 +24,16 @@ Additional resources on demand partners:
 | Aax | aax | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Aceex | aceex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | AcuityAds | acuityads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+| 1Accord      | 1accord    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| 152Media     | 152media   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| Addigi       | addigi     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| Adagio       | adagio     | Yes              | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  | No     | **App**: Yes <br>**Site**: No  |
+| Adinify      | adinify    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| Admatic GMBH | admeticde  | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| AdPort       | adport     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| AdTarget Teknoloji | adt | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| AdTarget.org | adtg_org   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| Akcelo       | akcelo     | Yes              | **App**: No <br>**Site**: Yes  | **App**: No <br>**Site**: Yes  | No     | **App**: No <br>**Site**: Yes  |
 | AdElement | adelement | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Adform | adform | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | AdformOpenRTB | adf | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |

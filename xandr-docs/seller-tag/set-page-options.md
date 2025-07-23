@@ -40,7 +40,7 @@ The parameters listed below can be sent as arguments in the function.
 | `renderingManagement` | object | Object that specifies values for rendering related features, which influence how ads are rendered onto a webpage. See [RenderingManagement Object](#renderingmanagement-object) details below. |
 | `content` | object | Object that specifies information about the content where the ads will show. See [Content Object](#content-object) for details below. |
 | `mobileOmidImpTracking` | boolean | When enabled, this field changes the conditions for when AST loads the impression URL for a bid that serves in a mobile app environment from the bidder DV360.  In normal conditions, AST would load the impression URL when the creative code is written onto the page (ie Count on Download).  However this field will load an OMID script and setup the needed OMID logic to wait for the ad to be in-view (at least 1%) before the impression URL is loaded.  This behavior is to mimic the type of pixel-view based (or count-on-view) logic used by the DV360 buyer and will ideally reduce any discrepancies between the two systems. |
-| `enableMediationEvents` | Boolean | When enabled, AST will listen and trigger mediation related events when they occur in the auction workflow. The current mediation related events are: adLoadedMediated and adNoBidMediated as documented [here](ad-object-api.md). |
+| `enableMediationEvents` | Boolean | When enabled, AST listens and triggers mediation related events when they occur in the auction workflow. The current mediation related events are: `adLoadedMediated` and `adNoBidMediated` as documented [here](ad-object-api.md). |
 
 ## Objects
 

@@ -1352,6 +1352,8 @@
     href: inventory-standards-and-auditing.md
   - name: Inventory Forecasting
     href: inventory-forecasting.md
+  - name: Forecast Builder in Microsoft Monetize
+    href: forecast-builder-in-microsoft-monetize.md
   - name: Cookie Privacy 
     items:
     - name: Cookie Privacy Settings
@@ -1722,6 +1724,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: July 25th, 2025 - Forecast Builder in Microsoft Monetize
+    href: release-notes-20250725.md
   - name: July 08, 2025 - Enhanced Forecast-Shaped Pacing
     href: release-notes-20250706.md
   - name: July 08, 2025 - Updates to Inventory Manager

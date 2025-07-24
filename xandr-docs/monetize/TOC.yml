@@ -1714,6 +1714,8 @@
       href: prepare-to-file-a-report-discrepancy-support-case.md
     - name: Requirements for Filing a Support case for Report Discrepancies
       href: requirements-for-filing-a-support-case-for-report-discrepancies.md
+- name: Forecast Builder in Microsoft Monetize
+  href: forecast-builder-in-microsoft-monetize.md
 - name: Apps
   items:
   - name: comScore Agent
@@ -1722,6 +1724,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: July 25th, 2025 - Forecast Builder in Microsoft Monetize
+    href: release-notes-20250725.md
   - name: July 08, 2025 - Enhanced Forecast-Shaped Pacing
     href: release-notes-20250706.md
   - name: July 08, 2025 - Updates to Inventory Manager

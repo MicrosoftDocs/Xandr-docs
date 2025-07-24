@@ -8,9 +8,9 @@ ms.author: shsrinivasan
 
 ## Overview
 
-Forecast Builder in Microsoft Monetize enables users to explore inventory and forecasting data directly within the Monetize platform. This feature integrates the forecast-inventory-multi service into the Monetize ad server, streamlining workflows and improving the overall user experience. 
+Forecast Builder in Microsoft Monetize enables users to explore inventory and forecasting data directly within the Monetize platform. This feature ensures the forecast-inventory-multi and and forecast-contention-multi service is part of the Monetize ad server, streamlining workflows and improving the overall user experience. 
 
-With this integration, users can seamlessly transition from data insights to actions, without leaving the Microsoft Monetize platform. Forecast Builder supports inventory analysis at the network level, allowing publishers to gain a deeper understanding of their available inventory and make data-informed decisions to optimize yield. 
+With this interface, users can seamlessly transition from data insights to actions, without leaving the Microsoft Monetize platform. Forecast Builder supports inventory analysis at the network level, allowing publishers to gain a deeper understanding of their available inventory and make data-informed decisions to optimize yield. 
 
 ## Key highlights 
 
@@ -62,20 +62,6 @@ The Forecast Builder helps you analyze inventory availability and identify conte
 > Targeting selected here will be used for forecasting purposes only and will not affect line item delivery. 
 - These fields include: 
     - **Ad Type:** You can select one or more appropriate ad types for the line item. The ad type must match the creative types that you will associate with the line item and will also be used to improve forecasting accuracy. 
-    - **Inventory:** You can target or exclude the following inventory: 
-        - **Universal Categories:** These are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well. 
-        - **Custom Categories:** These are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers to target. Manage your member’s custom categories in the Network tab (for more information, see [Manage Custom Content Categories](manage-custom-content-categories.md)). 
-        **NOTE:** When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will target inventory that is in either category. The inventory does not need to be in both categories. 
-        - **Direct Inventory:** You can narrow your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. Select Browse to search by name or ID of an object, or Text to paste a list of IDs. 
-        **NOTE**: When targeting more than one custom category, the categories have an OR relationship. For example, if you target two custom categories, you will target inventory that is in either category. The inventory does not need to be in both categories. 
-    - **Key Value:** You can select your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key/value sets that can be used in advertising campaigns to target specific types of customers. For more information, see [Key/Value Targeting](key-value-targeting.md). 
-    - **Geography:** You can target users based on one or more geographic elements such as country, region, city, metro code, or postal code. You may optionally set up other geographic inclusions or exclusions. To set up geography targeting, navigate to the Geography field and select any applicable checkboxes for country-level targeting. 
-    - **Daypart:** You can select any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md). 
-    - **Audience & Location Segments:** You can target segments from third-party data providers or segments you've created. To set up audience and location segment, select the My Segments tab in the Audience & Location Segment Targeting screen (for more information, see [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md)). 
-    - **Ad Size:** You can select standard or custom ad sizes for your forecast. To add ad size values: 
-        - Click in the Ad Size field, scroll or search for sizes, and select appropriate sizes (you can select more than one size at a time). You can also add more values to the list of Selected Sizes by clicking in the Ad Size field and selecting additional sizes. 
-        - (Optional) To add custom ad sizes, click + Add Custom Size, enter appropriate values for Width and Height, and click + Add. 
-    - **System:** You can target users based on their operating systems, browsers, language, device model, or carrier. For more information, see System Targeting. 
     - **Device Type:** You can narrow the device types you are targeting by checking any device type you do not want to target. GDALIs target the following device types by default: 
         - Desktops
         - Mobile 
@@ -85,6 +71,20 @@ The Forecast Builder helps you analyze inventory availability and identify conte
         - App & Web - Includes inventory types 
         - App Only - Includes applications installed on mobile tablets, phones, and Windows 8 devices. 
         - Web Only - Includes standard websites and those optimized for browsers on mobile Video Content devices.
+    - **Ad Size:** You can select standard or custom ad sizes for your forecast. To add ad size values: 
+        - Click in the Ad Size field, scroll or search for sizes, and select appropriate sizes (you can select more than one size at a time). You can also add more values to the list of Selected Sizes by clicking in the Ad Size field and selecting additional sizes. 
+        - (Optional) To add custom ad sizes, click + Add Custom Size, enter appropriate values for Width and Height, and click + Add. 
+    - **Inventory:** You can target or exclude the following inventory: 
+        - **Universal Categories:** These are defined by Microsoft Advertising. When Microsoft Advertising reviews inventory, we apply these categories based on the inventory's content. For example, a car dealership placement group would be assigned to the "Autos & Vehicles" category. Sellers can apply universal categories when self-reviewing inventory as well. 
+        - **Custom Categories:** These are defined by sellers. Sellers create these and apply them to slices of their inventory to package their inventory for specific buyers to target. Manage your member’s custom categories in the Network tab (for more information, see [Manage Custom Content Categories](manage-custom-content-categories.md)). 
+        **NOTE:** When targeting more than one universal category, the categories have an OR relationship. For example, if you target the "News" and "Finance" categories, you will target inventory that is in either category. The inventory does not need to be in both categories. 
+        - **Direct Inventory:** You can narrow your targeting to include or exclude specific managed publishers, placement groups (sites), or placements. Select Browse to search by name or ID of an object, or Text to paste a list of IDs. 
+        **NOTE**: When targeting more than one custom category, the categories have an OR relationship. For example, if you target two custom categories, you will target inventory that is in either category. The inventory does not need to be in both categories. 
+    - **Key Value:** You can select your own keys and their corresponding values to make full use of publisher data and help advertisers reach their intended audience. Microsoft Advertising allows you to create custom key/value sets that can be used in advertising campaigns to target specific types of customers. For more information, see [Key/Value Targeting](key-value-targeting.md). 
+    - **Geography:** You can target users based on one or more geographic elements such as country, region, city, metro code, or postal code. You may optionally set up other geographic inclusions or exclusions. To set up geography targeting, navigate to the Geography field and select any applicable checkboxes for country-level targeting. 
+    - **System:** You can target users based on their operating systems, browsers, language, device model, or carrier. For more information, see System Targeting. 
+    - **Audience & Location Segments:** You can target segments from third-party data providers or segments you've created. To set up audience and location segment, select the My Segments tab in the Audience & Location Segment Targeting screen (for more information, see [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md)). 
+    - **Daypart:** You can select any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md). 
     - **Player:** Select video player targeting, which includes:  
         - playback method 
         - ad pod position 
@@ -126,9 +126,9 @@ The Competing Line Items section shows other line items that are contending for 
 
 ## History 
 
-The History feature allows publishers to review and manage previous forecast results and track forecast history over time. Each forecast run by a user is saved automatically and stored for 30 days. The results are stored in the user's local storage and remain there until they are manually cleared. 
+The History feature allows publishers to review and manage previous forecast results and track forecast history over time. 
 > [!NOTE] 
-> Forecast results are temporarily saved. 
+> The results are stored in the user's local storage and remain there until they are manually cleared.
 - Users can:  
     - View and delete previous forecast results. 
     - Re-run a forecast as-is from the results table, if the date range is still in the future. 
@@ -149,5 +149,7 @@ The History feature allows publishers to review and manage previous forecast res
 - [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md) 
 - [Key/Value Targeting](key-value-targeting.md)
 - [Daypart Targeting](daypart-targeting.md)
+- [Inventory Forecasting Services](../digital-platform-api/inventory-forecasting-services.md)
+- [Inventory Forecasting](inventory-forecasting.md)
 
  

@@ -1352,6 +1352,8 @@
     href: inventory-standards-and-auditing.md
   - name: Inventory Forecasting
     href: inventory-forecasting.md
+  - name: Forecast Builder in Microsoft Monetize
+    href: forecast-builder-in-microsoft-monetize.md
   - name: Cookie Privacy 
     items:
     - name: Cookie Privacy Settings
@@ -1714,8 +1716,6 @@
       href: prepare-to-file-a-report-discrepancy-support-case.md
     - name: Requirements for Filing a Support case for Report Discrepancies
       href: requirements-for-filing-a-support-case-for-report-discrepancies.md
-- name: Forecast Builder in Microsoft Monetize
-  href: forecast-builder-in-microsoft-monetize.md
 - name: Apps
   items:
   - name: comScore Agent

@@ -34,9 +34,10 @@ Inventory forecasting provides key metrics to help you evaluate available ad inv
 
 > [!NOTE] 
 > This feature is limited and enabled only to a subset of customers, contact your Microsoft Advertising representative for more information.  
-To access the Forecast builder in Microsoft Monetize, navigate to the vertical navigation pane on the left and select Forecasting.   The Forecast Builder screen opens which contains two primary sections: 
-- Forecast Overview 
-- Competing Line Items 
+- To access the Forecast builder in Microsoft Monetize, navigate to the vertical navigation pane on the left and select Forecasting. 
+-  The Forecast Builder screen opens which contains two primary sections: 
+    - Forecast Overview 
+    - Competing Line Items 
 
 ### Forecast Overview 
 
@@ -109,19 +110,19 @@ The Competing Line Items section shows other line items that are contending for 
 - Details of each line item currently targeting the same inventory 
 - To view more information, select a line item from the list. You’ll be redirected to the Line item screen for further analyzis or editing. 
 - Competing line item fields include: 
-    - Line item Name: The name of the contending Line item 
-    - ID: The ID of the contending Line item 
-    - Advertiser: The associated advertiser 
-    - Status: The status of the Line item 
-    - Start Date: The start date of the Line item 
-    - End Date: The end date of the Line item 
-    - Delivery Type:  Has the following two types: 
-        - Impressions - this delivery type has an impression-based goal and typically has priorities that range from 11-17. 
-        - Exclusive - this delivery type has a percentage-based (or "share-of-voice") goal and typically runs at higher priorities that range from 18-20. 
-    - Priority: The priority associated with the line item. 
-    - Revenue Type: The way the advertiser has agreed to pay you (CPM, Viewable CPM, or Fixed Fee). 
-    - Revenue: The revenue an advertiser has allocated for you to spend in impressions or percentage. 
-    - Overlapping Impressions: The number of contending impressions. 
+    - **Line item Name:** The name of the contending Line item 
+    - **ID:** The ID of the contending Line item 
+    - **Advertiser:** The associated advertiser 
+    - **Status:** The status of the Line item 
+    - **Start Date:** The start date of the Line item 
+    - **End Date:** The end date of the Line item 
+    - **Delivery Type:**  Has the following two types: 
+        - **Impressions:** this delivery type has an impression-based goal and typically has priorities that range from 11-17. 
+        - **Exclusive:** this delivery type has a percentage-based (or "share-of-voice") goal and typically runs at higher priorities that range from 18-20. 
+    - **Priority:** The priority associated with the line item. 
+    - **Revenue Type:** The way the advertiser has agreed to pay you (CPM, Viewable CPM, or Fixed Fee). 
+    - **Revenue:** The revenue an advertiser has allocated for you to spend in impressions or percentage. 
+    - **Overlapping Impressions:** The number of contending impressions. 
 
 ## History 
 
@@ -145,7 +146,7 @@ The History feature allows publishers to review and manage previous forecast res
 
 
 ## Related topics
-[Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md) 
+- [Set Up Segment Targeting on a Line Item](set-up-segment-targeting-on-a-line-item.md) 
 - [Key/Value Targeting](key-value-targeting.md)
 - [Daypart Targeting](daypart-targeting.md)
 

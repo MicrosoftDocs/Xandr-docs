@@ -37,6 +37,8 @@
   
   - name: Curate API
     href: digital-platform-ui-api-info.md
+- name: Copilot in Microsoft Curate
+  href: copilot-in-microsoft-curate.md
 - name: Partner Center Guide
   items:
   - name: Overview
@@ -309,6 +311,8 @@
       href: impression-funnel-seller-deals-curate.md
     - name: Sample Bid Requests
       href: curate-sample-bid-requests.md
+  - name: Automated Deal Archival  
+    href: automated-deal-archival.md
 - name: Viewability
   items:
   - name: Overview
@@ -377,6 +381,8 @@
   items:
   - name: Overview
     href: release-notes-curate.md
+  - name: July 28, 2025 - Copilot in Microsoft Curate
+    href: release-notes-20250728.md
   - name: June 26, 2023 - Troubleshoot Seller Deal in Open Beta
     href: release-notes-curate-20230626.md
   - name: June 27, 2023 - New Advertiser and Insertion Order Screens in Microsoft Curate UI

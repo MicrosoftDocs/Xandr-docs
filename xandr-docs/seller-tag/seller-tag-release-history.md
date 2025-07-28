@@ -12,6 +12,8 @@ ms.date: 7/28/2025
 > - [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
 > - [https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js](https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js)
 
+For information on major changes to SDK, see the [Release Notes]().
+
 | Version | Release Date |
 | --- | --- |
 | v1.10.10 | 2 May 2025 |

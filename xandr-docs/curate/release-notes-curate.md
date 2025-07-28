@@ -11,3 +11,4 @@ Read about the latest updates to Curate.
 
 - [June 26, 2023: Troubleshoot Seller Deal in Open Beta](release-notes-curate-20230626.md)
 - [June 27, 2023: New Advertiser and Insertion Order screens in the Microsoft Curate UI](release-notes-curate-20230627.md)
+- [July 28, 2025 - Copilot in Microsoft Curate](release-notes-20250728.md)

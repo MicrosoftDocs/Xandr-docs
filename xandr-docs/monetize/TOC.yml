@@ -1444,6 +1444,8 @@
       href: troubleshoot-line-items.md
     - name: Impression Funnel
       href: impression-funnel.md
+  - name: Automated Deal Archival  
+    href: automated-deal-archival.md
   - name: Troubleshooting Reports
     href: troubleshooting-reports.md
   - name: Sample Bid Requests

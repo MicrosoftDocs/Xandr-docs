@@ -47,5 +47,5 @@ To ensure a deal’s lifecycle on the Microsoft Advertising platform aligns with
  
 
 ## Related topics
-- [Create a Custom Deal](curated-deals.md) 
+- [Create a Custom Deal](curated-deals.md) 
 - [Microsoft Curate - Monitor Line Items](monitor-line-items.md)

@@ -47,5 +47,5 @@ To ensure a deal’s lifecycle on the Microsoft Advertising platform aligns with
  
 
 ## Related topics
-- [Create a Custom Deal](create-a-custom-deal.md) 
+- [Create a Custom Deal](create-a-custom-deal.md) 
 - [Microsoft Monetize - Monitor Line Items](monitor-line-items.md)

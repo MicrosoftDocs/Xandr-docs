@@ -8,8 +8,7 @@ ms.date: 7/28/2025
 # Seller Tag Release History
 
 > [!Important]
-> AST is deployed to a versioned and a standard urls as mentioned below:<br>
->  - [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
+> AST is deployed to a versioned and a standard urls as mentioned below:
 > - [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
 > - [https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js](https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js)
 

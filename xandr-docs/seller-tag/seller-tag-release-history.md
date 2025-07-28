@@ -8,9 +8,11 @@ ms.date: 7/28/2025
 # Seller Tag Release History
 
 > [!Important]
-> To utilize the most current version of AST, link to our CDN at [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js).
+> AST is deployed to a versioned and a standard urls as mentioned below
+>  - [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
+>  - [https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js](https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js)
 
-| Release | Description | Date |
+| Version | Description | Release Date |
 |---|---|---|
 | [1.10.10](https://adsdk.microsoft.com/ast/ast.js) | -  update `setPageOpts` field `mobileOmidImpTracking` default value (to false). | 2 May 2025 |
 | [1.10.9](https://adsdk.microsoft.com/ast/ast.js) | -  Regular SDK updates to fix bugs, optimize performance, and improve user experience. | 29 April 2025 |

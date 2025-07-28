@@ -7,7 +7,7 @@ ms.date: 7/28/2025
 
 # Seller Tag Release Notes
 
-# Release Notes – DV360 mobile tracking option
+## Release Notes – DV360 mobile tracking option
 ## Version v1.x.x – July 31, 2025
 
 ### New Features

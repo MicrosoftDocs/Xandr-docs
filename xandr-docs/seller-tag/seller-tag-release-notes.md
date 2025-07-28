@@ -10,13 +10,13 @@ ms.date: 7/28/2025
 # Release Notes – DV360 mobile tracking option
 ## Version v1.x.x – July 31, 2025
 
-### 🆕 New Features
-- Introduced `mobileOmidImpTracking` in `setPageOpts`, with default set to `false`.
+### New Features
+- _Enter details_
 
-### 🛠️ Improvements
-- Optimized SDK performance for faster loading in low-bandwidth environments.
-- Enhanced error logging for easier debugging.
+### Improvements
+- _Enter details_
+- _Enter details_
 
-### 🐞 Bug Fixes
-- Fixed an issue where fallback creative was not loading in specific Safari versions.
-- Resolved intermittent crashes related to telemetry batching.
+### Bug Fixes
+- _Enter details_
+- _Enter details_

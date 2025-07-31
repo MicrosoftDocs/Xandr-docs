@@ -1,7 +1,7 @@
 ---
 title: Third-Party Pixel Service
 description: Use the Third-party Pixel service to upload and modify third-party creative pixels, and attach them to advertisers, or creatives.
-ms.date: 10/28/2023
+ms.date: 07/31/2025
 ms.custom: digital-platform-api
 ---
 
@@ -30,7 +30,7 @@ The third-party pixel service allows you to upload and modify third-party creati
 | `audit_status` | string | The audit status of the pixel. Possible values are: <br> - `"pending"` <br> - `"rejected"` <br> - `"approved"` <br> - `"exempt"` <br><br>**Note**:<br> An unaudited pixel will not prevent a creative from serving, but it will not serve along with the creative until it has passed audit.<br><br>**Read Only**<br>**Default**: `"pending"` |
 | `content` | string | If the pixel's `format` is `"raw-js"`, this is the JavaScript content to serve with the creative. The `content` and/or `secure_content` fields are required on `POST` for `raw-js` pixels.<br>You can also add macros to your pixel. For a list of the creative macros that you may append to your pixel, see [Creative Macros](../monetize/creative-macros.md) in the UI documentation .<br><br>**Required On**: `POST` if the pixel's `format` is `"raw-js"`. |
 | `creatives` | array of objects | The creatives to which a pixel is applied. The creatives must belong to the owning member/advertiser. To attach a third-party pixel to a creative, use the [Creative Service](./creative-service.md).<br><br>Example:<br>`"creatives":[{"id":860851}]`<br><br>**Read Only** |
-| format | string | The format of the pixel. Possible values for creatives: <br> - `"raw-js"`<br> - `"url-html"`<br> - `"url-js"`<br> - `"url-image"`<br> - `"raw-url"`<br><br>**Required On**: `POST` and `PUT` if changing `content`, `secure_content`, `url`, or `url_secure` fields.<br><br>**Default**: `"raw-js"` |
+| format | string | The format of the pixel. Possible values for creatives: <br> - `"raw-js"`<br> - `"url-html"`<br> - `"url-js"`<br> - `"url-image"`<br> - `"raw-url"`<br><br>**Required On**: `POST` and `PUT` if changing `content`, `secure_content`, `url`, or `url_secure` fields.<br><br>**Default**: `"raw-js"`<br><br>**Note**:<br> For viewability pixels, use `"url-image"` or `"url-js"` format only.|
 | `id` | int | The ID of the third-party pixel.<br><br>**Required On**: `PUT` and `DELETE`. |
 | `members` | array of objects | **Optional**. If specified, this field will contain the ID of the member that owns the pixel and this pixel will render on all creatives owned by that member.<br><br>Example:<br>`"members":[{"id":1}]` |
 | `member_id` | int | ID of the member/network that owns this pixel.<br><br>**Required On**: `POST` |

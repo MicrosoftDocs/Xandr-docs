@@ -1,7 +1,7 @@
 ---
 title: Bid Error Codes
 description: In this article, learn where bid error codes can be received from, what error codes you might come across, and how to resolve these errors.
-ms.date: 10/28/2023
+ms.date: 08/01/2025
 ---
 
 # Bid error codes
@@ -192,7 +192,7 @@ The following are error codes you might see from any of the above.
 | 416 | Seller unaudited creative banned on member’s ad profile | Creative not approved by the seller and banned by member's ad_profile | Buyer/Seller | Buyer should ensure their creative is audited by the seller, notify the Seller regarding whether the unaudited creative ban is desired, and modify their ad quality settings accordingly. |
 | 417 | Ad profile contains brand or category restrictions, and dynamic brand is unknown | The system expected a brand to be declared in the ad response but couldn’t determine it, which can lead to the bid being rejected or the creative being blocked when Seller's ad profile contains brand or category restrictions. | Buyer | Check your creatives to make sure a valid brand and creative category are specified. If issues persist, reach out to product support for assistance. |
 | 418 | Ad profile contains language restrictions, and dynamic language is unknown | The system expected a language to be declared in the ad response but couldn’t determine it, which can lead to the bid being rejected or the creative being blocked when Seller's ad profile contains language restrictions. | Buyer | Check your creatives to make sure a valid language is specified. If issues persist, reach out to product support for assistance. |
-| 420 | Creative category requires allowlisting | Creative categories that require the Buyer to be enabled on the platform before they start serving. | Buyer | In accordance with [Microsoft policy](https://help.ads.microsoft.com/#apex/ads/en/60216/0/%23exp2115), the bid was rejected due to its classification under the creative category. This category may be restricted in the country/region or require buyer pre-approval. Please review our policy page. If eligible for enablement, contact [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) under "feature enablement". |
+| 420 | Creative category restricted by policy | Creative category has restrictions. |  | Refer [Microsoft Advertising policies](https://help.ads.microsoft.com/#apex/ads/en/n5096/0) to learn more about why your ad is restricted.  |
 | 421 | Bid is rejected due to page cap |  |  |  |
 | 422 | Bid failed DSA checks | Seller has enforced requirements for Digital Services Act and the bid did not contain sufficient information. | Seller | Ensure that bid contains all valid DSA parameters. |
 | 450 | Invalid Creative Dimensions | Dynamic bid has invalid or unspecified dimensions, where either the width or height is 0 | Buyer | Buyer should check their integration and bid response serialization to correctly specify creative dimensions on ad-markup dynamic bids. |

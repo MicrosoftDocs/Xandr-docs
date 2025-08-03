@@ -10,7 +10,8 @@ ms.date: 7/28/2025
 
 AST is deployed to a versioned and a standard urls as mentioned below:
 - [https://adsdk.microsoft.com/ast/ast.js](https://adsdk.microsoft.com/ast/ast.js)
-- [https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js](https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js)
+- `https://adsdk.microsoft.com/ast/versions/v.1.x.x/ast.js` (For example,[https://adsdk.microsoft.com/ast/versions/v.1.10.26/ast.js](https://adsdk.microsoft.com/ast/versions/v.1.10.26/ast.js))
+
 
 We recommend using the standard `ast/ast.js` URL to automatically receive the latest updates. If you require a fixed version, the oldest available version is `v1.10.26`.
 
@@ -18,7 +19,7 @@ For information on major changes to SDK, see the [Release Notes](seller-tag-rele
 
 | Version | Release Date |
 | --- | --- |
-| v1.10.26 | Week of 2 May 2025 |
+| v1.10.26 | 2 May 2025 |
 | v1.10.10 | 2 May 2025 |
 | v1.10.9 | 29 April 2025 |
 | v1.10.8 | 22 April 2025 |

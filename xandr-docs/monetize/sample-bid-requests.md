@@ -36,8 +36,9 @@ To sample bid request data:
     - Copy the generated bid requests by clicking **Copy Request to Clipboard**.
     - Open the generated bid requests in a new browser tab by clicking **Open in New Window**.
   
-   > [!WARNING]Limited PII Visibility in Bid Requests
-    > Bid requests are generated using a 0.001% sampling rate. If you try to generate a bid request and don't see results, Microsoft Advertising will automatically increase the sampling rate to 5%. Wait 30 minutes for this sampling rate change to take effect before you generate another bid request. You don't have to keep the **Bid Request Sampler** section open while you wait 30 minutes before generating a new request. You can leave the section and come back to generate a new request after 30 minutes have passed.
+   > [!WARNING]
+   > Bid requests retrieved using this tool have Personally Identifiable Information (PII) filtered out due to GDPR compliance.
+   > Note that this does not indicate an issue with user data transmission in the actual bid request. PII data is being sent correctly, but will not be visible in the bid requests accessed via this sample tool.
 
 
 ## Related topics

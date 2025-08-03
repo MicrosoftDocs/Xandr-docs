@@ -1,13 +1,13 @@
 ---
 title: Microsoft Monetize - Sample Bid Requests
 description: This page provides step-by-step instructions to sample bid request data.
-ms.date: 10/28/2023
+ms.date: 08/04/2025
 ---
 
 
 # Microsoft Monetize - Sample bid requests
 
-The **Bid Request Sampler** provides sample bid request data under certain time frames and conditions. You can download results as a text file.
+The **Bid Request Sampler** tool provides sample bid request data under certain time frames and conditions. You can download results as a text file.
 
 > [!NOTE]
 > The Microsoft Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select clients.
@@ -35,6 +35,11 @@ To sample bid request data:
     - Download generated bid requests as a text file by clicking **Export All as Text File**. The text file is downloaded to your browser’s downloads folder.
     - Copy the generated bid requests by clicking **Copy Request to Clipboard**.
     - Open the generated bid requests in a new browser tab by clicking **Open in New Window**.
+  
+> [!WARNING]
+> Bid requests retrieved using Bid Request Sampler tool have **Personally Identifiable Information (PII)** filtered out due to **GDPR compliance**.
+> Note that this does not indicate an issue with user data transmission in the actual bid request. PII data is being sent correctly, but will not be visible in the bid requests accessed via this tool.
+
 
 ## Related topics
 

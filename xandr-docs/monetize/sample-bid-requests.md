@@ -38,7 +38,7 @@ To sample bid request data:
   
 > [!WARNING]
 > Bid requests retrieved using this tool have **Personally Identifiable Information (PII)** filtered out due to **GDPR compliance**.
-> Note that this does not indicate an issue with user data transmission in the actual bid request. PII data is being sent correctly, but will not be visible in the bid requests accessed via **Bid Request Sampler** tool.
+> Note that this does not indicate an issue with user data transmission in the actual bid request. PII data is being sent correctly, but will not be visible in the bid requests accessed via Bid Request Sampler tool.
 
 
 ## Related topics

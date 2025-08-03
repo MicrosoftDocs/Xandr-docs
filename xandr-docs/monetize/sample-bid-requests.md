@@ -36,9 +36,9 @@ To sample bid request data:
     - Copy the generated bid requests by clicking **Copy Request to Clipboard**.
     - Open the generated bid requests in a new browser tab by clicking **Open in New Window**.
   
-   > [!WARNING]
-   > Bid requests retrieved using this tool have Personally Identifiable Information (PII) filtered out due to GDPR compliance.
-   > Note that this does not indicate an issue with user data transmission in the actual bid request. PII data is being sent correctly, but will not be visible in the bid requests accessed via this sample tool.
+> [!WARNING]
+> Bid requests retrieved using this tool have **Personally Identifiable Information (PII)** filtered out due to **GDPR compliance**.
+> Note that this does not indicate an issue with user data transmission in the actual bid request. PII data is being sent correctly, but will not be visible in the bid requests accessed via this sample tool.
 
 
 ## Related topics

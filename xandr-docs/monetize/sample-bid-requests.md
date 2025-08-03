@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Sample Bid Requests
 description: This page provides step-by-step instructions to sample bid request data.
-ms.date: 10/28/2023
+ms.date: 08/04/2025
 ---
 
 
@@ -35,6 +35,10 @@ To sample bid request data:
     - Download generated bid requests as a text file by clicking **Export All as Text File**. The text file is downloaded to your browser’s downloads folder.
     - Copy the generated bid requests by clicking **Copy Request to Clipboard**.
     - Open the generated bid requests in a new browser tab by clicking **Open in New Window**.
+  
+   > [!WARNING]Limited PII Visibility in Bid Requests
+    > Bid requests are generated using a 0.001% sampling rate. If you try to generate a bid request and don't see results, Microsoft Advertising will automatically increase the sampling rate to 5%. Wait 30 minutes for this sampling rate change to take effect before you generate another bid request. You don't have to keep the **Bid Request Sampler** section open while you wait 30 minutes before generating a new request. You can leave the section and come back to generate a new request after 30 minutes have passed.
+
 
 ## Related topics
 

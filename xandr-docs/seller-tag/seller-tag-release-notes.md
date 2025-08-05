@@ -2,7 +2,7 @@
 title: Seller Tag Release Notes
 description: In this article, find the release notes of AST and the updates made for each release.
 ms.custom: seller-tag
-ms.date: 7/28/2025
+ms.date: 8/05/2025
 ---
 
 # Seller Tag Release Notes
@@ -13,4 +13,4 @@ This page provides information about production updates to the AST. You can chec
 
 ## Week of May 2, 2025
 
--DV360 mobile tracking option: As part of this release, the `mobileOmidImpTracking` field's default value was set from true to false. The underlying functionality for this feature has not otherwise changed. For additional details about this feature, please visit the [Set page options](set-page-options.md) page.
+-**DV360 mobile tracking option**: As part of this release, the `mobileOmidImpTracking` field's default value was set from true to false. The underlying functionality for this feature has not otherwise changed. For additional details about this feature, please visit the [Set page options](set-page-options.md) page.

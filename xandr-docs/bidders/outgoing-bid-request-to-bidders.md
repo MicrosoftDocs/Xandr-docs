@@ -99,6 +99,9 @@ We support the following fields in the publisher_integration object:
 
 We support the following fields in the `imp` object, which describe the impression being auctioned. A single bid request may contain an array with multiple `imp` objects.
 
+> [!NOTE]
+> Receiving SKADNETWORK in bid requests requires enablement. Please contact Product Support or your client representative. This field will be in `imp.ext.skadn`. 
+
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | string | (Required) Specifies a unique identifier for this impression within the context of the bid request. Set to the value of `auction_id_64`.  |
@@ -344,6 +347,21 @@ We support a single object in the `ext` object to support platform-specific exte
 | Field | Type | Description |
 |:---|:---|:---|
 | `appnexus` | object | Specifies the platform-specific extensions to the impression object. |
+
+### Skadn object
+Xandr supports the following field in the appnexus extension object:
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `skadn` | object array | Array representing the details for Apple’s SKAdNetwork |
+
+### Impression extension appnexus skadn object
+| Field | Type | Description |
+|:---|:---|:---|
+| `versions` | array of strings | Array of strings containing the supported skadnetwork versions. Always "2.0" or higher. Dependent on both the OS version and the SDK version. |
+| `sourceapp` | string | ID of publisher app in Apple’s App Store. Should match app.bundle in OpenRTB 2.x and app.storeid in AdCOM 1.x. | 
+| `skadnetids` | array of strings | A subset of SKAdNetworkItem entries in the publisher app’s Info.plist, expressed as lowercase strings, that are relevant to the bid request. Recommended that this list not exceed 10. |
+
 
 ### Impression AppNexus object
 

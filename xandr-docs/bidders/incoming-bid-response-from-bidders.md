@@ -52,6 +52,8 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
 | `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
 | `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Extension Object](#bid-extension-object). |
+| `cat` | string array | **NOTE:** Available September 1, 2025. If your ad is political, use IAB11-4 and/or IAB11-5 to declare. See 
+[Monetize Creative Standards](../monetize/creative-standards.md)for more details regarding required EU attestations beginning Fall 2025. <br> **NOTE:** IAB content categories of the creative. IAB Content Taxonomy v1.0 is assumed.|
 
 ### Bid extension object
 
@@ -80,40 +82,32 @@ We support the following fields in the `bid.ext` object:
 Sample  OpenRTB 2.6 Bid Response with DSA transparency:
 
 ```
-{ 
-    "id": "1234567890", 
-    "bidid": "abc1123", 
-    "seatbid": [ 
-        { 
-            "seat": "512", 
-            "bid": [ 
-                { 
-                    "id": "1", 
+{
+    "id": "4876290993254515176",
+    "seatbid": [{
+        "bid": [{    
+                "id": "1",
+                "impid": "8278013996604217356",
+                "cat": ["IAB11-4"],  
+                "price": 1,
+                "adid": "16",
+                "nurl": "https://68.67.148.76:10011/notify?TAFFYOpenRTBAuctionID=${AUCTION_ID}&price=${AUCTION_PRICE}",
+                "ext": {
+                    "appnexus": {
+                        "custom_macros": [{
+                            "name": "campaign_id",
+                            "value": "76p23457"
+                        }]
+                    }
+                }
+            }
 
-                    "nurl": "http://adserver.com/winnotice?impid=102", 
-                    "iurl": "http://adserver.com/pathtosampleimage", 
-                    "adomain": [ 
-                        "advertiserdomain.com" 
-                    ], 
-                    "ext": { 
-                        "dsa": { 
-                            "behalf": "Advertiser", 
-                            "paid": "Advertiser", 
-                            "transparency": { 
-                                "domain": "dsp1domain.com", 
-                                "params": [ 
-                                    1, 
-                                    2 
-                                ] 
-                            }, 
-                            "adrender": 1 
-                        } 
-                    } 
-                } 
-            ] 
-        } 
-    ] 
-} 
+        ],
+        "seat": "2739"
+    }],
+    "bidid": "1",
+    "cur": "USD"
+}
 ```
 
 ### AppNexus object

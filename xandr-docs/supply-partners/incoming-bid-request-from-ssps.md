@@ -111,6 +111,21 @@ Xandr supports a single object in the `impression` object's `ext` object to supp
 |:---|:---|:---|
 | `appnexus` | object | Specifies the Xandr-specific extensions to the impression object. |
 
+### Skadn object
+Xandr supports the following field in the appnexus extension object:
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `skadn` | object array | Array representing the details for Apple’s SKAdNetwork |
+
+### Impression extension appnexus skadn object
+| Field | Type | Description |
+|:---|:---|:---|
+| `versions` | array of strings | Array of strings containing the supported skadnetwork versions. Always "2.0" or higher. Dependent on both the OS version and the SDK version. |
+| `sourceapp` | string | ID of publisher app in Apple’s App Store. Should match app.bundle in OpenRTB 2.x and app.storeid in AdCOM 1.x. |
+| `skadnetids` | array of strings | A subset of SKAdNetworkItem entries in the publisher app’s Info.plist, expressed as lowercase strings, that are relevant to the bid request. Recommended that this list not exceed 10 |
+
+
 ### Xandr object
 
 Xandr supports the following field in the `appnexus` extension object:

@@ -43,14 +43,14 @@ Yes, deals created post Trade Desk deal sync enablement will have automatic deal
 
 The following fields cannot be changed in Trade Desk systems after a deal is uploaded:
 
-- Buyers (cannot be removed, can add additional buyers)
+- Buyer
 - Deal Type
 - Seller Member ID
 - Seller Member Name
 
 ## Can I change a buyer for a deal once it has been uploaded to Trade Desk systems?
 
-Publishers cannot remove the primary buyer from a deal once it has been uploaded to Trade Desk systems. You can check which buyer is designated the primary buyer by pulling the buyer-deal-sync object in the API or Database. If your account is enabled for multi-buyer deals, you can add additional buyer seat IDs to an existing deal.
+Publishers cannot remove the primary buyer from a deal once it has been uploaded to Trade Desk systems. You can check which buyer is designated the primary buyer by pulling the buyer-deal-sync object in the API or Database. 
 
 ## Can I create a deal for multiple media types?
 

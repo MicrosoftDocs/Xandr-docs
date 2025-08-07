@@ -43,6 +43,7 @@ Additional resources on demand partners:
 | AdkernelAdn         | adkernelAdn   | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
 | ADman Media         | adman         | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
 | Admatic             | admatic       | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AdMixer | admixer | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 
 
 | Name | Bidder | Active Adapters | Display | Native |

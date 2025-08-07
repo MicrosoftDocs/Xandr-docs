@@ -14,7 +14,8 @@ You can use the Creative Service to add creatives to our system. All creatives m
 - You can attach a creative to a publisher for use as a default creative for a placement. You would then attach the creative to a placement via its ID using the [Placement Service](placement-service.md).
 
 > [!NOTE]
-> Hosted and third-party Video and Audio services can only be accessed using the [Creative Vast Service](creative-vast-service.md). Hosted and third-party HTML creatives can only be accessed using the [Creative HTML Service](creative-html-service.md).
+> Effective September 1, 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. To learn more, please refer to the upcoming updates to [Monetize Creative Standards regarding political ad](../monetize/creative-standards.md).
+
 
 ## Auditing
 
@@ -147,6 +148,8 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `member_id` | int | The ID of the member that owns the creative. |
 | `media_assets` | array of objects | The asset id of the original file and a field describing what the asset must be used for. It is used to associate Xandr hosted files to your creative. This array will auto-populate when uploading files via the API. For more information, see [Media Assets](#media-assets) below. |
 | `ad_type` | string | **Tip:** This field only applies when you are associating creatives to [augmented line items](line-item-service---ali.md).<br>The type of creative used. Possible values:<br> - `banner`<br> - `video` (includes audio types)<br> - `native`<br>This value determines how auction items are tracked for the line item's buying strategy, paying strategy, optimization options, creative association, and targeting options.<br><br>**Note:** All creatives associated to a line item must have the same ad type, which should match the `ad_type` selected in the [Line Item Service - ALI](line-item-service---ali.md). |
+| `is_political_and_eu_targeted` | Boolean | Set to true if the creative contans political content and you intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is not supported in the EU. |
+| `is_political_and_non_eu_targeted` | Boolean | Set to true if the creative contans political content and you do not intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is supported in non-EU countries, only for Microsoft Monetize Adserver clients.  |
 
 ### Brand
 
@@ -698,7 +701,9 @@ $ cat creative
                  AIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxsc
                  Hx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
                  ...
-                 nwj3HrP+oer6/wDPa/tKsOz/AEf8CnxP82z3fTu9VDboP//Z"
+                 nwj3HrP+oer6/wDPa/tKsOz/AEf8CnxP82z3fTu9VDboP//Z",
+       "is_political_and_eu_targeted": false,
+       "is_political_and_non_eu_targeted": false
    }
 }
 
@@ -724,6 +729,12 @@ $ curl -b cookies -c cookies -X POST -d @creative 'https://api.appnexus.com/crea
       ...
       "audit_status": "pending",
       ...
+     "categories":  [
+           {
+                 "id": 37,
+                 "name": "Politics",
+                 "self_declared": true
+          }],
    }
 }
 ```

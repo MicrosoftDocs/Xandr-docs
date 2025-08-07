@@ -2,13 +2,22 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date : 7/3/2025
+ms.date : 8/7/2025
 ---
 
 # iOS SDK release notes
 
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
+
+
+## 9.7.0
+
+### New Feature
++ 9624022: The video frameworks array has been updated, and both OMID and VPAID frameworks are now indicated as supported in the Ad request.
+
+### Improvement/Bug Fixes
++ 9680424: Fixed redundant logging for set lazy load.
 
 ## 9.6.0
 

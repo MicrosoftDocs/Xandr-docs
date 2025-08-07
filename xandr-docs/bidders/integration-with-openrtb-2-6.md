@@ -140,10 +140,10 @@ This object contains a single user identifier provided as part of extended ident
 
 ## Object: Bid
 OpenRTB 2.6 includes the additional capability to declare the taxonomy in use.
-| **Field** | **Type** | **Description** |
-| --- | --- | --- |
-| `cattax` | integer; default 1 | **NOTE** Available September 1, 2025. If your ad is political, you need to declare. See [Monetize Creative Standards](../monetize/creative-standards.md) for more details regarding required EU attestations beginning Fall 2025. <br> The taxonomy in use. <br> **NOTE** IAB Content Taxonomy v1.0 is assumed if the `cat` field is present without `cattax`. Otherwise, the mapping is as such: <br> - 1 - IAB Content Taxonomy v1.0 <br> - 2 - IAB Content Taxonomy v2.0 <br> - 3 - IAB Ad Product Taxonomy v1.0 <br> - 5 - IAB Content Taxonomy v2.1 <br> - 6 - IAB Content Taxonomy v2.2 <br> - 7 - IAB Content Taxonomy v3.0 <br> - 8 - IAB Ad Product Taxonomy v2.0 <br> - 9 - IAB Content Taxonomy v3.1 |
 
+| **Field** | **Type** | **Description** |
+|:---|:---|:---|
+| `cattax` | integer; default 1 | **NOTE:** Available September 1, 2025. If your ad is political, you need to declare. See [Monetize Creative Standards](../monetize/creative-standards.md) for more details regarding required EU attestations beginning Fall 2025. <br> The taxonomy in use. <br> **NOTE** IAB Content Taxonomy v1.0 is assumed if the `cat` field is present without `cattax`. Otherwise, the mapping is as such: <br> - 1 - IAB Content Taxonomy v1.0 <br> - 2 - IAB Content Taxonomy v2.0 <br> - 3 - IAB Ad Product Taxonomy v1.0 <br> - 5 - IAB Content Taxonomy v2.1 <br> - 6 - IAB Content Taxonomy v2.2 <br> - 7 - IAB Content Taxonomy v3.0 <br> - 8 - IAB Ad Product Taxonomy v2.0 <br> - 9 - IAB Content Taxonomy v3.1|
 
 
 ## Updated field locations

@@ -27,7 +27,7 @@ Additional resources on demand partners:
 | Aceex | aceex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | AcuityAds | acuityads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Addigi       | addigi     | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
-| Adagio       | adagio     | Yes              | **App**: Yes <br>**Site**: No  | No     | **App**: Yes <br>**Site**: No  |
+| Adagio       | adagio     | Yes              | **App**: Yes <br>**Site**: No     | **App**: Yes <br>**Site**: No  |
 | Adinify      | adinify    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | Admatic GMBH | admeticde  | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | AdPort       | adport     | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |

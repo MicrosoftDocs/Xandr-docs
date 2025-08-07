@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Demand Partner Integrations
 description: In this article, find a list of all demand partners currently available through Prebid Server Premium (PSP).
-ms.date: 08/04/2025
+ms.date: 08/07/2025
 ---
 
 # Prebid Server Premium demand partner integrations

@@ -29,6 +29,9 @@ Xandr works with members who care deeply about brand and reputation. For this re
 - Only admin can change `audit_status` field.
 - Creatives that are modified after they've been audited will return to an `pending` audit status.
 
+> [NOTE]
+> Effective September 1, 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. 
+
 ## REST API
 
 | HTTP method | End point | Description |
@@ -56,7 +59,7 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `brand` | client | no | object | Contains the id of the brand of the company advertising the creative, the name, and the category_id. Will be audited. <br> **Tip**: To return `category_name` as well, pass `show_category_name=true` in the query string of your call. |
 | `brand_id` | client | no | int | The id of the brand of the company advertising the creative. |
 | `campaign` | client | no | string(50) | The (optional) name of the campaign for this creative - used for reporting/management purposes. |
-| `categories` | audit team | no | List of ints | IDs of categories associated with the creative - see [Category Service](category-service.md). For GET, these are only returned if you use the flag attributes=true in the request URL. |
+| `categories` | audit team (Except for political attestation set by client) | no | List[Object] | ID and names of categories associated with the creative - see [Category Service](category-service.md). For GET, these are only returned if you use the flag attributes=true in the request URL. |
 | `click_action` | no | no | string | The action that the device should take when the creative is clicked. Currently, this field will be set to the only supported click action, "click-to-web" <br> **Default**: click-to-web |
 | `click_target` | no | no | string | The target of the click_action. For click-to-web, this is the `click_url` of the creative.  `click_url` will eventually be deprecated in favor of this field. |
 | `click_trackers` |  |  |  | **Deprecated**. |
@@ -77,6 +80,8 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `is_expired` | internal | no | boolean | Indicates whether the creative has been served or modified in the past 15 days. |
 | `is_prohibited` | internal | no | boolean | True if the Xandr internal auditing system has detected malicious behavior while analyzing the creative. If True, this creative will not be eligible to serve. |
 | `is_suspicious` | internal | no | boolean | True if the Xandr internal auditing system has detected suspect behavior while analyzing the creative. If True, this creative will not be eligible to serve. |
+| `is_political_and_eu_targeted` | client | No | Boolean | Set to true if the creative contans political content and you intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is not supported in the EU. |
+| `is_political_and_non_eu_targeted` | client | No | Boolean | Set to true if the creative contans political content and you do not intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is supported in non-EU countries, only for Microsoft Monetize Adserver clients.  |
 | `language_id` | audit team | no | int | ID of the creative's language - see [Language service](language-service.md) |
 | `last_activity` | internal | no | timestamp | The date and time when the creative was last modified. Timezone is UTC. **Read Only**. |
 | `last_checked` | internal | no | timestamp | The timestamp that the URL was last checked for existence. |
@@ -391,8 +396,10 @@ $ cat creative
         "height" : 250,
         "media_url" : "https://ad.doubleclick.net/adi/ABC.Advertising.com/DEF.40;sz=300x250;click0=",
         "template":{
-           "id": 1 
-        }
+           "id": 1
+        },
+       "is_political_and_eu_targeted": false,
+       "is_political_and_non_eu_targeted": false
   }
 }
 ```
@@ -466,10 +473,18 @@ $ curl -b cookies -c cookies -X POST -d @creative.json "https://api.adnxs.com/cr
       "thirdparty_creative_id": null,
       "thirdparty_campaign_id": null,
       "custom_request_template": null,
+      "categories": 
+     [
+        {
+        "id": 37,
+        "name": "Politics",
+        "self declared": true,
+        }
+     ],
       "brand": {
-        "id": 1,
-        "name": "Unknown",
-        "category_id": 8
+       "id": 1,
+       "name": "Unknown",
+       "category_id": 8
       },
       "language": {
         "id": 1,

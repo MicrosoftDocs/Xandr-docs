@@ -18,6 +18,33 @@ Additional resources on demand partners:
 - [Bidder Info Service](../digital-platform-api/bidder-info-service.md)
 - [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)
 
+| Name                | Bidder        | Active Adapters | Display                           | Native                            |
+|---------------------|---------------|------------------|------------------------------------|------------------------------------|
+| 1Accord             | 1accord       | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| 152Media            | 152media      | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| 33across            | 33across      | Yes              | **App**: No <br>**Site**: Yes      | **App**: No <br>**Site**: No       |
+| Aax                 | aax           | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| Aceex               | aceex         | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AcuityAds           | acuityads     | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| Addigi              | addigi        | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| Adagio              | adagio        | Yes              | **App**: Yes <br>**Site**: No      | **App**: Yes <br>**Site**: No      |
+| Adinify             | adinify       | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| Admatic GMBH        | admeticde     | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AdPort              | adport        | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AdTarget Teknoloji  | adt           | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AdTarget.org        | adtg_org      | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| Akcelo              | akcelo        | Yes              | **App**: No <br>**Site**: Yes      | **App**: No <br>**Site**: Yes      |
+| AdElement           | adelement     | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| Adform              | adform        | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AdformOpenRTB       | adf           | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+| AdGeneration        | adgeneration  | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
+| Adhese              | adhese        | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
+| Adkernel            | adkernel      | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
+| AdkernelAdn         | adkernelAdn   | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
+| ADman Media         | adman         | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No       |
+| Admatic             | admatic       | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes     |
+
+
 | Name | Bidder | Active Adapters | Display | Native |
 |---|---|---|---|---|---|
 | 1Accord      | 1accord    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |

@@ -33,7 +33,7 @@ Additional resources on demand partners:
 | AdPort       | adport     | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | AdTarget Teknoloji | adt | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | AdTarget.org | adtg_org   | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
-| Akcelo       | akcelo     | Yes              | **App**: No <br>**Site**: Yes  | No     | **App**: No <br>**Site**: Yes  |
+| Akcelo       | akcelo     | Yes              | **App**: No <br>**Site**: Yes     | **App**: No <br>**Site**: Yes  |
 | AdElement | adelement | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Adform | adform | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | AdformOpenRTB | adf | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -148,7 +148,7 @@ Additional resources on demand partners:
 | FreeWheel SSP | freewheelssp | Yes | **App**: No <br>**Site**: No | Yes | **App**: No <br>**Site**: No |
 | FRVR Ad Network | frvradn | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Filmzie    | filmzie    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
-| Finative   | finative   | Yes              | **App**: No <br>**Site**: Yes  | No     | **App**: No <br>**Site**: Yes  |
+| Finative   | finative   | Yes              | **App**: No <br>**Site**: Yes     | **App**: No <br>**Site**: Yes  |
 | flatads    | flatads    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | FWSSP      | fwssp      | Yes              | **App**: No <br>**Site**: No   | No     | **App**: No <br>**Site**: No   |
 | Gamma | gamma | Yes | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No |
@@ -213,7 +213,7 @@ Additional resources on demand partners:
 | Magnite    | magnite    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | MadSense   | madsense   | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: No <br>**Site**: No   |
 | MarkApp     | markapp    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
-| Mobkoi      | Mobkoi     | Yes              | **App**: No <br>**Site**: Yes  | No     | **App**: No <br>**Site**: No   |
+| Mobkoi      | Mobkoi     | Yes              | **App**: No <br>**Site**: Yes     | **App**: No <br>**Site**: No   |
 | Mobupps     | mobupps    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | Monetix Ads | monetixads | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | NetAddiction| netaddiction | Yes            | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |

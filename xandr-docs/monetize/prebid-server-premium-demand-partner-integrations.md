@@ -18,8 +18,8 @@ Additional resources on demand partners:
 - [Bidder Info Service](../digital-platform-api/bidder-info-service.md)
 - [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)
 
-| Name | Bidder | Active Adapters | Display | Native |
-|---|---|---|---|---|---|---|
+| Name | Bidder | Active Adapters | Display | Native | RRR |
+|---|---|---|---|---|---|---|---|
 | 1Accord      | 1accord    | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | 152Media     | 152media   | Yes              | **App**: Yes <br>**Site**: Yes     | **App**: Yes <br>**Site**: Yes |
 | 33across | 33across | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |

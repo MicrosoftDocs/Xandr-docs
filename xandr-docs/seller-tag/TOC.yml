@@ -17,10 +17,6 @@
 - name: Release History and Breaking Changes
   items:
     - name: Release History
-      href: ast-release-history.md
-    - name: API Breaking Changes
-      href: breaking-changes-ast-api.md
-    - name: Release History
       href: seller-tag-release-history.md
     - name: Release Notes
       href: seller-tag-release-notes.md

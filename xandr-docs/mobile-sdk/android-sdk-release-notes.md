@@ -2,10 +2,20 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
-ms.date : 7/3/2025
+ms.date : 8/7/2025
 ---
 
 # Android SDK release notes
+
+## 9.7.0
+
+### New Feature
++ 9624022: The video frameworks array has been updated, and both OMID and VPAID frameworks are now indicated as supported in the Ad request.
++ 9656363: SDK now supports disabling WebView text zoom via new API: `SDKSettings.disableWebViewTextZoom(true)`.
+
+### Improvement/Bug Fixes
++ 9572782: Fixed NPE in `CSRNativeBannerController` `onAdImpression`.
++ 9613972: Crash fix when `BannerAdView` is destroyed during click load.
 
 ## 9.6.0
 

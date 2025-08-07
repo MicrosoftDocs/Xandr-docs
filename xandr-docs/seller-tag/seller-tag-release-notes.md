@@ -9,7 +9,8 @@ ms.date: 8/05/2025
 
 This page provides information about production updates to the AST. You can check back periodically for announcements on new or updated features, bug fixes, known issues, and deprecated functionality.
 > [!NOTE]
-> Release dates are approximate. A full rollout may take anywhere from several days to a few weeks, so users might see changes at different times. The dates listed in these release notes indicate the beginning of the week when the rollout was completed for all users.
+> - Release dates are approximate. A full rollout may take anywhere from several days to a few weeks, so users might see changes at different times. The dates listed in these release notes indicate the beginning of the week when the rollout was completed for all users.
+> - This page only documents releases that include breaking changes or new features. For a full list of AST releases, including maintenance updates, please refer to the [version history](seller-tag-release-history.md) page.
 
 ## Week of May 2, 2025
 

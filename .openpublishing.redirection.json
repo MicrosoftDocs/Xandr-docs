@@ -239,6 +239,16 @@
         "source_path": "xandr-docs/digital-platform-api/prebid-server-premium-seller-analytics.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/prebid-server-premium-analytics",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/seller-tag/ast-release-history.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/seller-tag/seller-tag-release-history",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/seller-tag/breaking-changes-ast-api.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/seller-tag/seller-tag-release-notes",
+        "redirect_document_id": false
         }
       ]
     }

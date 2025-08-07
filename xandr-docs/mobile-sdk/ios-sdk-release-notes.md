@@ -14,7 +14,7 @@ ms.date : 8/7/2025
 ## 9.7.0
 
 ### New Feature
-+ 9624022: The video frameworks array has been updated, and both OMID and VPAID frameworks are now indicated as supported in the Ad request.
++ 9624022: The video frameworks array has been updated, and both OMID and VPAID frameworks are now indicated as supported in the ad request.
 
 ### Improvement/Bug Fixes
 + 9680424: Fixed redundant logging for set lazy load.

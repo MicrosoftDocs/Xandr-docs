@@ -18,7 +18,7 @@ Additional resources on demand partners:
 - [Bidder Info Service](../digital-platform-api/bidder-info-service.md)
 - [Add or Edit a Demand Partner](add-or-edit-a-demand-partner.md)
 
-| Name | Bidder | Active Adapters | Display | Video | Ad Pod | Native |
+| Name | Bidder | Enabled in Prebid | Display | Video | Ad Pod | Native |
 |---|---|---|---|---|---|---|
 | 1Accord      | 1accord    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
 | 152Media     | 152media   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
@@ -27,7 +27,7 @@ Additional resources on demand partners:
 | Aceex | aceex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | AcuityAds | acuityads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Addigi       | addigi     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
-| Adagio       | adagio     | Yes              | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  | No     | **App**: Yes <br>**Site**: No  |
+| Adagio       | adagio     | No              | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  | No     | **App**: Yes <br>**Site**: No  |
 | Adinify      | adinify    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
 | Admatic GMBH | admeticde  | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
 | AdPort       | adport     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
@@ -205,12 +205,12 @@ Additional resources on demand partners:
 | Melozen | melozen | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | Metax | metax | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | MGID | mgid | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | No | **App**: Yes <br>**Site**: Yes |
-| MGIDX | mgidx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
+| MGIDX | mgidx | No | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
 | MinuteMedia | minutemedia | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | MobFox_PB | mobfoxpb | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: No <br>**Site**: No |
 | MobileFuse | mobilefuse | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | No | **App**: Yes <br>**Site**: No |
 | Motorik | motorik | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No | **App**: Yes <br>**Site**: Yes |
-| Magnite    | magnite    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
+| Magnite    | magnite    | No              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
 | MadSense   | madsense   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: No <br>**Site**: No   |
 | MarkApp     | markapp    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | No     | **App**: Yes <br>**Site**: Yes |
 | Mobkoi      | Mobkoi     | Yes              | **App**: No <br>**Site**: Yes  | **App**: No <br>**Site**: No   | No     | **App**: No <br>**Site**: No   |

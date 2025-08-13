@@ -14,7 +14,7 @@ You can use the Creative Service to add creatives to our system. All creatives m
 - You can attach a creative to a publisher for use as a default creative for a placement. You would then attach the creative to a placement via its ID using the [Placement Service](placement-service.md).
 
 > [!NOTE]
-> Effective September 1, 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. To learn more, please refer to the upcoming updates to [Monetize Creative Standards regarding political ad](../monetize/creative-standards.md).
+> Effective September 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. To learn more, please refer to the upcoming updates to [Monetize Creative Standards regarding political ad](../monetize/creative-standards.md).
 
 
 ## Auditing

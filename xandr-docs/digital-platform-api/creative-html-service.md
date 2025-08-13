@@ -17,7 +17,7 @@ You can use the Creative HTML Service to add HTML5 creatives to AppNexus. All cr
 > `media_asset_id` is required in order to upload a hosted HTML5 creative. For more details, see the [Examples](#examples) section below.
 
 > [!NOTE]
-> Effective September 1, 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. 
+> Effective September 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. 
 
 
 ## Auditing

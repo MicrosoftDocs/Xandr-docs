@@ -30,7 +30,7 @@ Xandr works with members who care deeply about brand and reputation. For this re
 - Creatives that are modified after they've been audited will return to an `pending` audit status.
 
 > [NOTE]
-> Effective September 1, 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. 
+> Effective September 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. 
 
 ## REST API
 

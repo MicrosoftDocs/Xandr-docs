@@ -52,7 +52,7 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `cid` | string | The campaign ID from the bidder's system. Used for SSP reporting. |
 | `dealid` | string | The deal ID from the `deal` object in the [Bid Request](./outgoing-bid-request-to-bidders.md), if this bid relates to a deal. |
 | `ext` | object | Used for identifying platform-specific extensions to the OpenRTB bid response. See [Bid Extension Object](#bid-extension-object). |
-| `cat` | string array | **NOTE:** Available September 1, 2025. If your ad is political, use IAB11-4 and/or IAB11-5 to declare. See [Monetize Creative Standards](../monetize/creative-standards.md)for more details regarding required EU attestations beginning Fall 2025. <br> **NOTE:** IAB content categories of the creative. IAB Content Taxonomy v1.0 is assumed.|
+| `cat` | string array | **NOTE:** Available September 2025. If your ad is political, use IAB11-4 and/or IAB11-5 to declare. See [Monetize Creative Standards](../monetize/creative-standards.md)for more details regarding required EU attestations beginning Fall 2025. <br> **NOTE:** IAB content categories of the creative. IAB Content Taxonomy v1.0 is assumed.|
 
 ### Bid extension object
 

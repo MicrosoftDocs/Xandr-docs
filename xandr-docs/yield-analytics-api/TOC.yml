@@ -6,6 +6,12 @@
       href: yield-analytics-api.md
     - name: Using Postman with the Yield Analytics API
       href: using-postman-with-the-yield-analytics-api.md
+    - name: Breaking Changes
+      items:
+      - name: Overview
+        href: breaking-changes.md
+      - name: August 14, 2025 – Update to Yield Analytics API service  
+        href: breaking-change-20250814.md  
 - name: API Reference Documentation
   items:
     - name: Attribute Service

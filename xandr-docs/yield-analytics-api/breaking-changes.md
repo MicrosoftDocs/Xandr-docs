@@ -1,11 +1,13 @@
-----
+---
 title: Yield Analytics API - Breaking Changes
-description: In this article, find information on what breaking changes are along with examples for breaking and non-breaking changes for Yield Analytics API.
+description: In this article, find information on what breaking changes are along with examples for breaking and non-breaking changes for YA API.
 ms.date: 08/14/2025
+ms.author: shsrinivasan
+ms.topic: release-notes
 ms.custom: yield-analytics-api
 ---
 
-# Yield Analytics API - Breaking changes
+# Yield Analytics API - Breaking Changes
 
 Our API is continually changing. The vast majority of changes simply add new functionality, but occasionally we introduce *breaking changes* that may require you to adjust your integration.
 

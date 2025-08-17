@@ -69,7 +69,7 @@ Additional resources on demand partners:
 | AJA | aja | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Algorix | algorix | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No |
 | Alkimi | alkimi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
-| AMX RTB | amx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: No | Yes | **App**: No <br>**Site**: No |
+| AMX RTB | amx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No |
 | Apacdex | apacdex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Applogy | applogy | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Appstock | appstock | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -145,7 +145,7 @@ Additional resources on demand partners:
 | FeedAd | feedad | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
 | Finecast | finecast | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Flipp | flipp | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
-| FreeWheel SSP | freewheelssp | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | Yes | **App**: No <br>**Site**: No |
+| FreeWheel SSP | freewheelssp | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | FRVR Ad Network | frvradn | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Filmzie    | filmzie    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Finative   | finative   | Yes              | **App**: No <br>**Site**: Yes  | **App**: No <br>**Site**: No   | **App**: No <br>**Site**: Yes  |
@@ -169,7 +169,7 @@ Additional resources on demand partners:
 | intertech | intertech | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: Yes |
 | Invibes | invibes | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
 | IQX | iqx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
-| Iqzone | iqzone | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | Yes | **App**: Yes <br>**Site**: Yes |
+| Iqzone | iqzone | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | JANet | janet | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Indicue    | indicue    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No   |
 | intenze    | intenze    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -291,7 +291,7 @@ Additional resources on demand partners:
 | Taboola | taboola | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes |
 | Tappx | tappx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Teads | teads | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No |
-| Telaria | telaria | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | Yes | **App**: No <br>**Site**: No |
+| Telaria | telaria | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Telaria_Split | telaria_split | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | TheAdX | theadx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | TheMediaGrid | grid | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |

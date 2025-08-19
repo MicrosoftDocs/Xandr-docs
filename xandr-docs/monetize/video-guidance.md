@@ -1,7 +1,7 @@
 ---
 title: Video Guidance
 description: Learn how to run video inventory through Prebid Server Premium (PSP). This page covers concepts on Instream and Outstream along with examples.   
-ms.date: 10/28/2023
+ms.date: 08/10/2025
 ---
 
 # Video guidance
@@ -57,7 +57,7 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
   ``` 
   pbjs.setConfig({
      "cache":{
-        "url":"https://prebid.adnxs.com/pbc/v1/cache"
+        "useLocal":true
      },
      "debug":true,
      "enableSendAllBids":true,
@@ -208,7 +208,18 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
 
 ## Demand partner response
 
-To ensure Monetize considers a bid, demand partners' bids must include the video creative duration in either bid.dur (for OpenRTB 2.6) or ext.prebid.video.duration (if OpenRTB 2.6 is not yet supported). Please note that the duration is not parsed from XML.
+Demand partners should send duration with all bids to ensure ads fill the expected time for both instream and ad pod opportunities.
+- Instream: Duration is not strictly required. If duration sent is 0 the bid could still win and serve but Monetize cannot ensure the video is the appropriate length.
+- Ad Pod: Bids must include the video creative duration in either `bid.dur` (for OpenRTB 2.6) or `ext.prebid.video.duration` (if OpenRTB 2.6 is not yet supported). Note that the duration is not parsed from XML.
+
+## External ad server setup
+
+When an ad server other than Monetize is used, Prebid line items and the associated creative might require a VAST tag URL or a cache URL. More information about these scenarios are available in Prebid.org [documentation](https://docs.prebid.org/adops/setting-up-prebid-video-in-dfp.html).
+
+When using an external ad server with PSP,
+- configure Prebid.js web: See Prebid.js client-side caching and local client-side caching options documented [here](https://docs.prebid.org/dev-docs/publisher-api-reference/setConfig.html#client-side-caching-of-vast-xml) and configure according to your requirement. Also, see `setConfig` bid cache functions [here](https://docs.prebid.org/dev-docs/publisher-api-reference/setConfig.html) and take appropriate steps.
+- configure Prebid Mobile SDK app: Ideally the ad server combines the `hb_cache_host` and `hb_cache_path` targeting keys from the PSP response to get the full and dynamic cache URL. If that is not supported, the ad server requires a static and hard-coded path. You can use `https://ib.adnxs.com/prebid/cache?uuid=%%PATTERN:hb_uuid_BIDDERCODE%%` as static url.
+
 
 ## Related topics
 

@@ -1,7 +1,7 @@
 ---
 title: Integrate Web/Mobile Web with PSP
 description: In this article, find information about how to integrate web and mobile web inventory with PSP.
-ms.date: 06/26/2025
+ms.date: 08/19/2025
 ---
 
 # Integrate web/mobile web with PSP
@@ -181,6 +181,7 @@ In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed unde
 
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)
 - [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
+- [Video Guidance](video-guidance.md)
 - [Prebid Server Premium Identity & User Syncing](prebid-server-premium-identity-and-user-syncing.md)
 - [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)

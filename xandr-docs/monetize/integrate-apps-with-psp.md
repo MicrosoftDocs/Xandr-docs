@@ -1,7 +1,7 @@
 ---
 title: Integrate Apps with PSP
 description: Learn how to integrate app inventory with PSP. This article provides detailed information and useful resources for integration.
-ms.date: 06/26/2025
+ms.date: 08/19/2025
 ---
 
 # Integrate apps with PSP
@@ -94,6 +94,7 @@ In this scenario, make POST calls to the `/prebid/lfv` endpoint as detailed unde
 
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Integrate Accelerated Mobile Pages with PSP](integrate-accelerated-mobile-pages-with-psp.md)
+- [Video Guidance](video-guidance.md)
 - [Non-prebid Integrations with PSP](non-prebid-integrations-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 - [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)

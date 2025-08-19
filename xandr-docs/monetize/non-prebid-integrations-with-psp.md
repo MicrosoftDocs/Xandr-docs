@@ -1,7 +1,7 @@
 ---
 title: Non-Prebid Integrations With PSP
 description: In this article, learn about the non-prebid integrations with PSP.
-ms.date: 09/25/2024
+ms.date: 08/19/2025
 ---
 
 # Non-prebid integrations with PSP
@@ -24,6 +24,7 @@ In this scenario, maintain the above integration methods and proceed with the [P
 
 - [Integrate with PSP](integrate-with-psp.md)
 - [Integrate Apps with PSP](integrate-apps-with-psp.md)
+- [Video Guidance](video-guidance.md)
 - [Integrate Web/Mobile Web with PSP](integrate-web-mobile-web-with-psp.md)
 - [Long Form Video Service](../digital-platform-api/long-form-video-service.md)
 - [PSP supported formats and integration paths](./prebid-server-premium-supported-formats-and-integration-paths.md)

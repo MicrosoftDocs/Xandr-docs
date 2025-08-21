@@ -19,6 +19,10 @@ ADM enables your bidder to submit content via the `adm` field in the OpenRTB bid
 
 > [!IMPORTANT]  
 > The `adomain` field is required. The branding of the provided URL must match that of the content in the `adm` field and the registered creative.  
+
+> [!IMPORTANT]
+> Effective September 2025: Declare via the `bid.cat` field in OpenRTB whether your dynamic ad is intended for political advertising. Learn more about upcoming updates to [Monetize Creative Standards regarding political ads](../monetize/creative-standards.md). Learn more about how [political advertising](https://help.ads.microsoft.com/#apex/ads/en/60380/-1) is defined.
+
 > [!NOTE]  
 > It is highly recommended to use **BURL** for spend and impression tracking on the Monetize server side.  
 

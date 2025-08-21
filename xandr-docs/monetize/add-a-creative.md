@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Add a Creative
 description: In this article, find step-by-step instructions for how to add a creative.
-ms.date: 10/28/2023
+ms.date: 08/21/2025
 ---
 
 # Microsoft Monetize - Add a creative

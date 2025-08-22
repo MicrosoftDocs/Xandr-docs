@@ -41,6 +41,9 @@ When selecting a brand, be sure to select the brand associated with the landing 
 
 If you have multiple brands to add, you can submit an Excel spreadsheet that includes the information above for each brand.
 
+> [!NOTE]
+> Regardless of your chosen audit type, effective September 2025, you must declare whether your ad is political and is intended to serve in the EU. Learn more about upcoming updates to Monetize Creative Standards regarding political ads [here](creative-standards.md). Learn more about how political advertising is defined [here](https://help.ads.microsoft.com/#apex/ads/en/60380/-1).
+
 ## Related topics
 
 - [Auditing Creatives](auditing-creatives.md)

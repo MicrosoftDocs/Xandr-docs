@@ -7,7 +7,7 @@ ms.date: 08/22/2025
 
 # Microsoft Monetize - Self-Auditing creatives
 
-When adding creatives to Microsoft Advertising, it's to your advantage to submit each creative to Microsoft Advertising for human auditing. The manual audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform.
+When adding creatives to Microsoft Advertising, it's advantageous to submit each creative for auditing. The audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform. 
 
 If you are not able to submit creatives to Microsoft Advertising for audit, either because they do not meet our creative standards or because Microsoft Advertising does not audit your particular creative type (interstitial or pop), we strongly encourage self-auditing in those cases. Be sure to self-audit the technical attributes,sensitive categories, offer category, brand, and language that have been associated with the creative. Whereas very few sellers allow unaudited creatives to run on their publishers' inventory, sellers often do allow self-audited creatives, so self-auditing enables much greater access to supply than unaudited creatives.
 

@@ -49,6 +49,19 @@ The following table outlines reasons why a creative may be rejected from serving
 
 All creatives must meet the Coalition for Better Ads (CBA) standards in order to serve on desktop and mobile inventory. For more information, see [Standards](https://www.betterads.org/standards/).
 
+## Political Declaration & EU Regulations
+> [!NOTE]  
+> The following will go into effect in the platform in September 2025.
+
+The European Union (EU) Regulation 2024/900 about the transparency and targeting of [political advertising](https://eur-lex.europa.eu/eli/reg/2024/900/oj/eng) will go into effect October 10, 2025. To prepare, Microsoft Advertising will introduce a political advertising declaration requirement for all Microsoft Monetize customers in September. 
+
+To comply with EU regulatory requirements, we are required to collect declarations indicating whether creatives are intended for [political advertising](https://help.ads.microsoft.com/#apex/ads/en/60380/-1). Review the links below for updated policy requirements.
+
+- Microsoft Advertising will continue to disallow political advertising. For more information, review our [political advertising policy](https://help.ads.microsoft.com/#apex/ads/en/60380/-1). You can also find a link to this policy in our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx).
+- We have updated policies for Ad Server clients relating to political advertising. For more information, review our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx).
+
+By default, all creatives will be marked as non-political and assumed to be declared as non-political. It is the seller's or buyer's responsibility to declare if the ad is political advertising. We regularly review all creatives to confirm their content is representative of what is declared. Content found to be non-representative of what is declared will be treated as a serious platform violation.
+
 ## Related topics
 
 - [Auditing Creatives](auditing-creatives.md)

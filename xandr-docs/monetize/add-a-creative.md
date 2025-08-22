@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Add a Creative
 description: In this article, find step-by-step instructions for how to add a creative.
-ms.date: 10/28/2023
+ms.date: 08/21/2025
 ---
 
 # Microsoft Monetize - Add a creative
@@ -54,6 +54,7 @@ To serve on our platform, all creatives must adhere to our creative guidelines a
 
     1. For HTML5 creatives, select one of the following media types: **Standard**, **Interstitial**, or **Expandable**.
     1. For HTML5 and banner creatives, select a creative size.
+    1. Beginning in September 2025, fill in the European Union (EU) political declaration. The default declaration available for all new creatives is non-political. However, if your creative is political advertising, you must declare it and also declare whether you intend to serve the ad in the EU.
 
 1. For video and audio creatives, do any of the following:
 

@@ -1,13 +1,13 @@
 ---
 title: Microsoft Monetize - Self-Auditing Creatives
 description: Learn to self-audit the technical attributes, sensitive categories, offer category, brand, and language associated with creatives.
-ms.date: 10/28/2023
+ms.date: 08/22/2025
 ---
 
 
 # Microsoft Monetize - Self-Auditing creatives
 
-When adding creatives to Microsoft Advertising, it's to your advantage to submit each creative to Microsoft Advertising for human auditing. The manual audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform.
+When adding creatives to Microsoft Advertising, it's advantageous to submit each creative for auditing. The audit process includes checking technical attributes, sensitive categories, offer category, brand, and language to enable seller protection features on the platform. 
 
 If you are not able to submit creatives to Microsoft Advertising for audit, either because they do not meet our creative standards or because Microsoft Advertising does not audit your particular creative type (interstitial or pop), we strongly encourage self-auditing in those cases. Be sure to self-audit the technical attributes,sensitive categories, offer category, brand, and language that have been associated with the creative. Whereas very few sellers allow unaudited creatives to run on their publishers' inventory, sellers often do allow self-audited creatives, so self-auditing enables much greater access to supply than unaudited creatives.
 
@@ -40,6 +40,9 @@ In addition to applying sensitive categories to your self-audited creatives, the
 When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at [Customer Support](https://help.xandr.com/s/login/). Be sure to set the **Request Type** to **Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
 
 If you have multiple brands to add, you can submit an Excel spreadsheet that includes the information above for each brand.
+
+> [!NOTE]
+> Regardless of your chosen audit type, effective September 2025, you must declare whether your ad is political and is intended to serve in the EU. Learn more about upcoming updates to Monetize Creative Standards regarding political ads [here](creative-standards.md). Learn more about how political advertising is defined [here](https://help.ads.microsoft.com/#apex/ads/en/60380/-1).
 
 ## Related topics
 

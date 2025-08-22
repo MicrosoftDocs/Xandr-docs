@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Self-Auditing Creatives
 description: This article explains about the self-auditing creatives that are only eligible to run on sellers' inventory with set trust levels.
-ms.date: 10/28/2023
+ms.date: 08/22/2025
 ---
 
 # Microsoft Invest - Self-auditing creatives
@@ -42,6 +42,10 @@ In addition to applying sensitive categories to your self-audited creatives, the
 When selecting a brand, be sure to select the brand associated with the landing page. If a brand is currently not in our system, you can submit a request to have it added at  [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). Be sure to set the **Request Type** to **Creative Auditing**, the **Creative Request** to **Brand Addition**, and provide the brand name (typically the name of the parent company), brand URL (the main landing page), and brand category in the **Request Description** field.
 
 If you have multiple brands to add, you can submit an Excel spreadsheet that includes the information above for each brand.
+
+> [!NOTE]
+> Regardless of your chosen audit type, effective September 2025, you must declare whether your ad is political and is intended to serve in the EU. Learn more about upcoming updates to Monetize Creative Standards regarding political ads [here](creative-standards.md). Learn more about how political advertising is defined [here](https://help.ads.microsoft.com/#apex/ads/en/60380/-1).
+
 
 ## Related topics
 

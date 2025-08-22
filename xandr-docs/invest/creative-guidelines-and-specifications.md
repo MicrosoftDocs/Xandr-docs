@@ -29,6 +29,7 @@ Adhere to these guidelines and specifications when creating creatives of any typ
   objects, and HTML5 Local Storage.
 - Creatives should not set, read, write, modify, or delete any cookie on
   a domain that Microsoft Advertising owns or operates.
+- **Effective September 2025**: Declare whether your ad is political and is intended to serve in the EU. Learn more about upcoming updates to Monetize Creative Standards regarding [political ads](creative-standards.md). Learn more about how political advertising is [defined](https://help.ads.microsoft.com/#apex/ads/en/60380/-1).
 
 For more information about video, audio, and HTML5 guidelines and
 specifications, as well as native creative asset and creative character

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Native Asset Generation
 description: This article outlines the process of Native Asset Generation for Microsoft Invest.
-ms.date: 09/23/2024
+ms.date: 08/22/2025
 ms.author: shsrinivasan
 ---
 
@@ -51,6 +51,7 @@ Follow the step-by-step instructions to add creatives using the Native Asset gen
 1. Provide basic information for the creative in the **Basic Setup** section:
     1. Enter a new name for the Native Asset in the **Name** field.
     1. Select an appropriate **Title**, and **Body Text**, from the text asset recommendations.
+    1. Beginning in September 2025, fill in the EU political declaration. The default declaration for all new creatives is non-political. However, if your creative is political advertising, you must declare it and also declare whether you intend to serve the ad in the EU.
 1. To automatically resize the main Native creative and its icon, select the **Allow smart image adjustment** toggle, then choose one of the available radio buttons:
     1. **Include white bars to fill placement:** Adds white space above and below the image and icon within the placement.
     1. **Crop image to fit placement:** Enlarges or reduces the size of the image and icon so that they fill the entire placement. <br>

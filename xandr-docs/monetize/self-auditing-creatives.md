@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Self-Auditing Creatives
 description: Learn to self-audit the technical attributes, sensitive categories, offer category, brand, and language associated with creatives.
-ms.date: 10/28/2023
+ms.date: 08/22/2025
 ---
 
 

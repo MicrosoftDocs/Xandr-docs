@@ -49,7 +49,7 @@ The following table outlines reasons why a creative may be rejected from serving
 
 All creatives must meet the Coalition for Better Ads (CBA) standards in order to serve on desktop and mobile inventory. For more information, see [Standards](https://www.betterads.org/standards/).
 
-## Political Declaration & EU Regulations
+## Political Declaration and EU Regulations
 > [!NOTE]  
 > The following will go into effect in the platform in September 2025.
 

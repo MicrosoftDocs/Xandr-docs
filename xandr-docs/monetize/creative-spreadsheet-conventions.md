@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Creative Spreadsheet Conventions
 description: In this article, find details about the supported spreadsheet templates along with the different columns to be included for the various creative types.
-ms.date: 10/28/2023
+ms.date: 08/22/2025
 ---
 
 # Microsoft Monetize - Creative spreadsheet conventions

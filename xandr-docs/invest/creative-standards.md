@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Creative Standards
 description: learn about standards that all creative and inventory content must follow. This page lists Prohibited content and reasons why a creative might be rejected from serving in Microsoft Advertising in tabular form. 
-ms.date: 08/22/2025
+ms.date: 08/25/2025
 ---
 
 
@@ -61,7 +61,7 @@ To comply with EU regulatory requirements, we are required to collect declaratio
 - Microsoft Advertising will continue to disallow political advertising. For more information, review our [political advertising policy](https://help.ads.microsoft.com/#apex/ads/en/60380/-1). You can also find a link to this policy in our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx).
 - We have updated policies for Ad Server clients relating to political advertising. For more information, review our [Service Policies](https://microsoftapc.sharepoint.com/teams/XandrServicePolicies/SitePages/Xandr-Service-Policies.aspx).
 
-By default, all creatives will be marked as non-political and assumed to be declared as non-political. It is the seller's or buyer's responsibility to declare if the ad is political advertising. We regularly review all creatives to confirm their content is representative of what is declared. Content found to be non-representative of what is declared will be treated as a serious platform violation.
+By default, all creatives will be marked as non-political and assumed to be declared as non-political. It is the seller's or buyer's responsibility to declare if the ad is political advertising. We regularly review all creatives to confirm their content is representative of what is declared. Content found to be non-representative of what is declared will be treated as an egregious platform violation.
 
 ## Related topics
 

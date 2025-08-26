@@ -35,6 +35,7 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |LiveIntent - Rubicon ID | [rubiconproject.com](https://www.magnite.com/)| Rubicon SSP ID | Passthrough for Prebid Server Premium | No | No |
 |LiveIntent - Openx ID | `openx.net`| OpenX SSP ID | Passthrough for Prebid Server Premium | No | No |
 |LiveIntent - Pubmatic ID | [PubMatic](https://pubmatic.com/)| PubMatic SSP ID | Passthrough for Prebid Server Premium | No | No |
+|Oztam Session ID|[oztam_session_id](https://virtualoz.com.au/)|AST (ut/v3), prebid.js (ut/v3/prebid), openrtb, ptv, ssptv, vmap, ssvmap|Passthrough (SSP support only)**|No |No |
 
 > [!NOTE]
 >

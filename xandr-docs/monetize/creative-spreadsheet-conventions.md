@@ -44,7 +44,7 @@ When you prepare your Excel files for upload, the following information must be 
 
 ## Hosted creatives
 
-When preparing your Excel files for upload, the creative type and name must be included in your file. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
+When preparing your Excel files for upload, the creative type, name, and political declaration must be included in your file. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
 
 | Mapping Option | Column Name |
 |---|---|
@@ -52,11 +52,12 @@ When preparing your Excel files for upload, the creative type and name must be i
 | External Identifier (optional) | For automatic External Identifier mappings, use one of the following column names in your Excel file: <br> - **Placement ID** <br> - **External Identifier** |
 | Landing Page URL (optional) | For automatic Landing Page URL mappings, use one of the following column names in your Excel file: <br> - **Landing Page** <br> - **Landing Page URL** <br> - **Click URL** |
 | Name | For automatic Name mappings, use one of the following column names in your Excel file: <br> - **Name** <br> - **File Name** <br> - **Placement Name** |
+| Political Declaration | For Political Declaration mapping, use the following column name in your Excel file: <br> - **Political Declaration** |
 | Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker <br> - Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel** |
 
 ## Native creatives
 
-When preparing your Excel files for upload, the creative name and image file name must be included in your file. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
+When preparing your Excel files for upload, the creative name, image file name, and political declaration must be included in your file. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
 
 | Mapping Option | Column Name |
 |---|---|
@@ -67,6 +68,7 @@ When preparing your Excel files for upload, the creative name and image file nam
 | Image | For automatic Image mappings, use one of the following column names in your Excel file: <br> - **Image** <br> - **Main Image** <br> - **File Name (Image)** |
 | Landing Page URL (optional) | For automatic Landing Page URL mappings, use one of the following column names in your Excel file: <br> - **Landing Page** <br> - **Landing Page URL** <br> - **URL** |
 | Name | For automatic Name mappings, use one of the following column names in your Excel file: <br> - **Name** <br> - **Creative Name** <br> - **File Name** <br> - **Placement Name** |
+| Political Declaration | For Political Declaration mapping, use the following column name in your Excel file: <br> - **Political Declaration** |
 | Sponsored By (optional) | For automatic Sponsored By mappings, use **Sponsored By** as your column name in your Excel file. |
 | Title (optional) | For automatic Title mappings, use **Title** as your column name in your Excel file. |
 | Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker** <br> - **Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel** |

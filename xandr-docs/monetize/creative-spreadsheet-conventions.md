@@ -31,13 +31,14 @@ New spreadsheet templates:
 
 ## Third-party creatives
 
-When you prepare your Excel files for upload, the following information must be included in your file: creative name, content tag, and secure content tag. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
+When you prepare your Excel files for upload, the following information must be included in your file: creative name, content tag, secure content tag, and political declaration. For automatic column mappings, follow these column name mapping conventions when creating your Excel file:
 
 | Mapping Option | Column Name |
 |---|---|
 | External Identifier (optional) | For automatic External Identifier mappings, use one of the following column names in your Excel file: <br> - **Placement ID** <br> - **External Identifier** |
 | Name | For automatic Name mappings, use one of the following column names in your Excel file: <br> - **Name** <br> - **File Name** <br> - **Placement Name** |
 | Secure Content | For automatic Secure Content mappings, use one of the following column names in your Excel file: <br> - **Tag Content Secure** <br> - **Tag Content** <br> - **JavaScript Tag** <br> - **Legacy JavaScript Tag** <br> - **URL** <br> - **Secure URL** |
+| Political Declaration | For Political Declaration mapping, use the following column name in your Excel file: <br> - **Political Declaration** |
 | Size (optional) | For automatic Size mappings, use one of the following column names in your Excel file: <br> - **Dimensions** <br> - **Size** |
 | Tracker (optional) | For automatic Tracker mappings, use one of the following column names in your Excel file: <br> - **Tracker** <br> - **Pixel** <br> - **Pixel URL** <br> - **Third-Party Pixel**. |
 

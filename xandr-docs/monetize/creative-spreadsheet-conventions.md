@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Creative Spreadsheet Conventions
 description: In this article, find details about the supported spreadsheet templates along with the different columns to be included for the various creative types.
-ms.date: 08/22/2025
+ms.date: 08/25/2025
 ---
 
 # Microsoft Monetize - Creative spreadsheet conventions
@@ -16,6 +16,18 @@ Feel free to leverage the following spreadsheet templates:
 
 > [!NOTE]
 > Only XLS and XLSX file formats are supported with a file size limit of 8 MB.
+
+## New spreadsheet templates
+
+> [!NOTE]
+> Declare whether your ad is political and is intended to serve in the EU, using the new templates below. Learn more about upcoming updates to Monetize Creative Standards regarding [political ads](https://learn.microsoft.com/en-us/xandr/monetize/creative-standards). Learn more about how political advertising is [defined](https://help.ads.microsoft.com/#apex/ads/en/60380/-1). If you continue to use the old templates without the "Political Declaration" column, it will be considered as a declaration that your ad is non-political.
+
+New spreadsheet templates:
+
+- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/08ef68cd-d330-487c-b555-ccd4a9b12e03/third-party-creative-template.xls)
+- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/08ef68cd-d330-487c-b555-ccd4a9b12e03/hosted-creative-template.xls)
+- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/08ef68cd-d330-487c-b555-ccd4a9b12e03/native-creative-template.xls)
+
 
 ## Third-party creatives
 

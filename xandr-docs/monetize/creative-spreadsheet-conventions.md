@@ -20,7 +20,7 @@ Feel free to leverage the following spreadsheet templates:
 ## New spreadsheet templates (For political ads in EU)
 
 > [!NOTE]
-> Declare whether your ad is political and is intended to serve in the EU, using the new templates below. Learn more about upcoming updates to Monetize Creative Standards regarding [political ads](https://learn.microsoft.com/en-us/xandr/monetize/creative-standards). Learn more about how political advertising is [defined](https://help.ads.microsoft.com/#apex/ads/en/60380/-1). If you continue to use the old templates without the "Political Declaration" column, it will be considered as a declaration that your ad is non-political.
+> Declare whether your ad is political and is intended to serve in the EU, using the new templates below. Learn more about upcoming updates to Monetize Creative Standards regarding [political ads](creative-standards.md). Learn more about how political advertising is [defined](https://help.ads.microsoft.com/#apex/ads/en/60380/-1). If you continue to use the old templates without the "Political Declaration" column, it will be considered as a declaration that your ad is non-political.
 
 New spreadsheet templates:
 

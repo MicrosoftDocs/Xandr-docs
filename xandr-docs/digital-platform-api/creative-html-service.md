@@ -108,8 +108,8 @@ AppNexus works with members who care deeply about brand and reputation. For this
 | `member_id` | int | The ID of the member that owns the creative. |
 | `custom_macros` | array of objects | HTML5 creatives will have the `HTML5_INDEX_FILE` custom macro which is set by the API. |
 | `media_assets` | array of objects | It is used to associate AppNexus hosted files to your creative. This field will be auto-populate when uploading files via the API.<br>See [example](#media_assets-example).<br><br>**Note:**<br>`creative_field` should always be null for an HTML5 creative. |
-| `is_political_and_eu_targeted` | Boolean | Set to true if the creative contans political content and you intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is not supported in the EU. |
-| `is_political_and_non_eu_targeted` | Boolean | Set to true if the creative contans political content and you do not intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is supported in non-EU countries, only for Microsoft Monetize Adserver clients.  |
+| `is_political_and_eu_targeted` | Boolean | Set to true if the creative contains political content and you intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is not supported in the EU. |
+| `is_political_and_non_eu_targeted` | Boolean | Set to true if the creative contains political content and you do not intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is supported in non-EU countries, only for Microsoft Monetize Adserver clients.  |
 
 ### `segments` example
 

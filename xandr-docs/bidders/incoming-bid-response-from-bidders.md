@@ -42,6 +42,7 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 
 | Field | Type | Description |
 |:---|:---|:---|
+| `cat`| string array | **NOTE:** Available September 2025. If your ad is political, you need to declare. See [Monetize Creative Standards](../monetize/creative-standards.md) for more details regarding required EU declaration beginning Fall 2025. <br> **Description:** IAB content categories of the creative. IAB Content Taxonomy v1.0 is assumed.|
 | `id` | string | **Required**: The ID for the bid object; this is chosen by the bidder for tracking and debugging purposes. Useful when multiple bids are submitted for a single impression for a given seat. |
 | `impid` | string | **Required**: The ID of the impression object to which this bid applies. Should match the `id` field from the bid request's impression object. Can be used to populate the `${AUCTION_IMP_ID}` macro. |
 | `price` | float | **Required**: The bid price expressed in CPM. Also used to populate the `${AUCTION_PRICE}` macro.<br><br>If the `bid_payment_type` is not set to `"Impression"`, then price will be the eCPM price for the bid, and the `payment_type_price` will be used to populate the `${{AUCTION_PRICE} macro.PRICE}` macro.<br><br>**Note**: `bid_payment_type` is not enabled for all clients. Reach out to your account representative for this feature.<br><br>**Warning**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
@@ -84,7 +85,7 @@ Sample  OpenRTB 2.6 Bid Response with DSA transparency:
 {
     "id": "4876290993254515176",
     "seatbid": [{
-        "bid": [{    
+        "bid": [{
                 "id": "1",
                 "impid": "8278013996604217356",
                 "cat": ["IAB11-4"],  

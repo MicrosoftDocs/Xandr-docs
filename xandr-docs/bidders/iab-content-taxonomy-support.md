@@ -187,12 +187,13 @@ This page contains extensive list of Interactive Advertising Bureau (IAB) conten
 | Political | 37 | 174 | IAB V2.0, V2.1, V2.2 | Events & Attractions | Political Event | |
 | Political | 37 | 386 | IAB V2.0, V2.1, V2.2 | News & Politics | Politics | |
 | Political | 37 | 387 | IAB V2.0, V2.1, V2.2 | News & Politics | Politics | Elections |
-| Political | 37 | 388 | IAB V2.0, V2.1, V2.2 | News & Politics | Politics | Politcal Issue |
+| Political | 37 | 388 | IAB V2.0, V2.1, V2.2 | News & Politics | Politics | Political Issue |
 | Political | 37 | 389 | IAB V2.0, V2.1, V2.2 | News & Politics | Politics | War & Conflicts |
 | Political | 37 | 386 | IAB V3.0, V3.1 | Politics | | |
 | Political | 37 | 387 | IAB V3.0, V3.1 | Politics | Elections | |
 | Political | 37 | 388 | IAB V3.0, V3.1 | Politics | Political issues & policy | |
 | Political | 37 | 8YPBBL | IAB V3.0, V3.1 | Politics | Civic affairs | |
+| Political | 37 | 389 | IAB V3.0, V3.1 | War and Conflicts | War and Conflicts | |
 | Political | 37 | 1474 | IAB Ad Product V2.0 | Politics | | |
 | Political | 37 | 1475 | IAB Ad Product V2.0 | Politics | Ballot measures | |
 | Political | 37 | 1476 | IAB Ad Product V2.0 | Politics | Elections | |

@@ -29,7 +29,7 @@ Xandr works with members who care deeply about brand and reputation. For this re
 - Only admin can change `audit_status` field.
 - Creatives that are modified after they've been audited will return to an `pending` audit status.
 
-> [NOTE]
+> [!NOTE]
 > Effective September 2025: Declare whether your ad is political and intended to be served in the EU via the `is_political_and_eu_targeted` and `is_political_and_non_eu_targeted` fields. 
 
 ## REST API
@@ -80,8 +80,8 @@ Xandr works with members who care deeply about brand and reputation. For this re
 | `is_expired` | internal | no | boolean | Indicates whether the creative has been served or modified in the past 15 days. |
 | `is_prohibited` | internal | no | boolean | True if the Xandr internal auditing system has detected malicious behavior while analyzing the creative. If True, this creative will not be eligible to serve. |
 | `is_suspicious` | internal | no | boolean | True if the Xandr internal auditing system has detected suspect behavior while analyzing the creative. If True, this creative will not be eligible to serve. |
-| `is_political_and_eu_targeted` | client | No | Boolean | Set to true if the creative contans political content and you intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is not supported in the EU. |
-| `is_political_and_non_eu_targeted` | client | No | Boolean | Set to true if the creative contans political content and you do not intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is supported in non-EU countries, only for Microsoft Monetize Adserver clients.  |
+| `is_political_and_eu_targeted` | client | No | Boolean | Set to true if the creative contains political content and you intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is not supported in the EU. |
+| `is_political_and_non_eu_targeted` | client | No | Boolean | Set to true if the creative contains political content and you do not intend to run it in the EU. Assumed default is false if the field is not sent. <br> **NOTE**: Political advertising is supported in non-EU countries, only for Microsoft Monetize Adserver clients.  |
 | `language_id` | audit team | no | int | ID of the creative's language - see [Language service](language-service.md) |
 | `last_activity` | internal | no | timestamp | The date and time when the creative was last modified. Timezone is UTC. **Read Only**. |
 | `last_checked` | internal | no | timestamp | The timestamp that the URL was last checked for existence. |

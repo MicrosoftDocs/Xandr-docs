@@ -121,7 +121,6 @@ The Competing Line Items section shows other line items that are contending for 
         - **Exclusive:** this delivery type has a percentage-based (or "share-of-voice") goal and typically runs at higher priorities that range from 18-20. 
     - **Priority:** The priority associated with the line item. 
     - **Revenue Type:** The way the advertiser has agreed to pay you (CPM, Viewable CPM, or Fixed Fee). 
-    - **Revenue:** The revenue an advertiser has allocated for you to spend in impressions or percentage. 
     - **Overlapping Impressions:** The number of contending impressions. 
 
 ## History 

@@ -24,9 +24,9 @@ Feel free to leverage the following spreadsheet templates:
 
 New spreadsheet templates:
 
-- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/08ef68cd-d330-487c-b555-ccd4a9b12e03/third-party-creative-template.xls)
-- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/08ef68cd-d330-487c-b555-ccd4a9b12e03/hosted-creative-template.xls)
-- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/08ef68cd-d330-487c-b555-ccd4a9b12e03/native-creative-template.xls)
+- [Microsoft Advertising Third-Party Creative Template](https://download.microsoft.com/download/5e5b46ed-2919-4623-821f-6acc60104a8a/Third-Party-Creative-Template.xlsx)
+- [Microsoft Advertising Hosted Creative Template](https://download.microsoft.com/download/5e5b46ed-2919-4623-821f-6acc60104a8a/Hosted-Creative-Template.xlsx)
+- [Microsoft Advertising Native Creative Template](https://download.microsoft.com/download/5e5b46ed-2919-4623-821f-6acc60104a8a/Native-Creative-Template.xlsx)
 
 
 ## Third-party creatives

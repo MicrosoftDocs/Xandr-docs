@@ -2,10 +2,18 @@
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: android-sdk
-ms.date : 8/7/2025
+ms.date : 9/4/2025
 ---
 
 # Android SDK release notes
+
+## 9.8.0
+
+### New Feature
++ 9096087: `NativeAdRequest` now supports OpenRTB Native Ads spec v1.2, allowing for more flexible and standardized ad request/response.
+
+### Improvement/Bug Fixes
++ 9680558: Updated Google Mediation SDK to v24.5.0.
 
 ## 9.7.0
 

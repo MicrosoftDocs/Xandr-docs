@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date : 8/7/2025
+ms.date : 9/4/2025
 ---
 
 # iOS SDK release notes
@@ -10,6 +10,15 @@ ms.date : 8/7/2025
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+
+## 9.8.0
+
+### New Feature
++ 9403605: NuGet package with MacOS SDK is now available.
++ 9096087: `ANNativeAdRequest` now supports OpenRTB Native Ads spec v1.2, allowing for more flexible and standardized ad request/response.
+
+### Improvement/Bug Fixes
++ 9680558: Updated Google Mediation SDK to v12.8.0.
 
 ## 9.7.0
 

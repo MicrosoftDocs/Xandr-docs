@@ -39,7 +39,7 @@ Additional resources on demand partners:
 | AdformOpenRTB | adf | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | AdGeneration | adgeneration | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
 | Adhese | adhese | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
-| Adipolo | adipolo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: No |
+| Adipolo | adipolo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Adkernel | adkernel | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | AdkernelAdn | adkernelAdn | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | ADman Media | adman | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
@@ -144,7 +144,7 @@ Additional resources on demand partners:
 | Easybid      | easybid    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Embi Media   | embimedia  | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Equativ      | equativ    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
-| Exco      | adagio    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
+| Exco      | exco    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | FelixAds     | felixads   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | FeedAd | feedad | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
 | Finecast | finecast | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
@@ -297,7 +297,7 @@ Additional resources on demand partners:
 | StroeerCore | stroeerCore | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
 | SuntContent | suntcontent | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: Yes |
 | Taboola | taboola | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes |
-| Tagoras | tagoras | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
+| Tagoras | tagoras | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Tappx | tappx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Teads | teads | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No |
 | TeqBlaze | teqblaze | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |

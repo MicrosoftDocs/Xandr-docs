@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Creative Character Specifications
 description: In this article, find information about the character specifications to keep in mind when uploading creatives.
-ms.date: 10/28/2023
+ms.date:  09/11/2025
 ---
 
 # Microsoft Monetize - Creative character specifications
@@ -32,7 +32,7 @@ The following table provides the character limit for each field that is availabl
 | **Create New Folder** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 255 |
 | **Duplicate Name** | All | **Creative Templates** | 30 |
 | **External Identifier** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 100 |
-| **Landing Page URL** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | No Limit |
+| **Landing Page URL** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 2000 |
 | **Macro** | All | **Creative Templates** > **Details** > **Custom Macros** | 30 |
 | **Media Type** | All | **Creative Templates** > **Details** | No Limit |
 | **Name** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** <br> - **Creative Templates** > **Details** | 400 |
@@ -40,6 +40,7 @@ The following table provides the character limit for each field that is availabl
 | **Size** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 32,000 |
 | **Template Code** | All | **Creative Templates** > **Details** | 100 |
 | **Trackers** > **Custom Pixels** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | No Limit |
+| **Segment Pixel** | VAST (video, audio) | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 64 |
 
 ## Related topics
 

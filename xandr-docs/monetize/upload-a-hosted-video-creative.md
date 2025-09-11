@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Upload a Hosted Video Creative
 description: Learn how to upload VAST video creatives and other steps to work with this type of creative. This page is a step-by-step guide to add a creative, preview the creative and save the creative. 
-ms.date: 10/28/2023
+ms.date: 09/11/2025
 ---
 
 
@@ -18,7 +18,7 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ## Specifications for hosted VAST video creatives
 
-- **Max Video File Size**: 180 MB
+- **Max Video File Size**: 1.8 GB
 - **Minimum Bit Rate**: 2500kbps
 - **Minimum Size**: 1280x720px
 - **File Types**: x-flv, mp4, webm, x-ms-wmv, ogg, x-msvideo, mpeg, quicktime, 3gpp, 3gpp2, x-m4v

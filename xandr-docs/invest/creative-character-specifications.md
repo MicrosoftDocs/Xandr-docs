@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Creative Character Specifications
 description: This page talks about valid and invalid VAST characters present in the VAST url as well as in the 3rd party segments attached to the creative.   
-ms.date: 10/28/2023
+ms.date: 09/11/2025
 ---
 
 # Microsoft Invest - Creative character specifications 
@@ -34,11 +34,12 @@ The following table provides the character limit for each field that is availabl
 | **Template Code** | All | **Creative Templates > Details** | 100 |
 | **Macro** | All | **Creative Templates > Details > Custom Macros** | 30 |
 | **Size** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | 32,000 |
-| **Landing Page URL** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | No Limit |
+| **Landing Page URL** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | 2000 |
 | **Trackers > Custom Pixels** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | No Limit |
 | **Brand URL** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | No Limit |
 | **External Identifier** | All | **- Creative Manager**<br>**- Creative UI > Create New**<br>**- Creative UI > Edit** | 100 |
 | **- Title**<br>**- Custom Title 1 - 5**<br>**- Body Text**<br>**- Custom Body 1 - 5**<br> **- Sponsored By**<br>**- Call to Action**<br>**- Custom Call to Action 1 - 5**<br>**- Display URL**<br>**- Custom Display URL 1 - 5**<br>**- Price**<br>**- Sales Price**<br>**- Rating**<br>**- Likes**<br>**- Downloads**<br>**- Phone**<br>**- Address**<br>**- Additional Description**<br>**- Social URL**<br>**- Custom Social URL 1 - 5** | Native | **- Creative UI > Create New**<br>**- Creative UI > Edit**<br>**- Native Assembly > Create New**<br>**- Native Assembly > Edit** | 32,000 |
+| **Segment Pixel** | VAST (video, audio) | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 64 |
 
 ## Related topics
 

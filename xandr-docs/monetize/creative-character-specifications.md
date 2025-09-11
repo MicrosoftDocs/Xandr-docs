@@ -40,7 +40,7 @@ The following table provides the character limit for each field that is availabl
 | **Size** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 32,000 |
 | **Template Code** | All | **Creative Templates** > **Details** | 100 |
 | **Trackers** > **Custom Pixels** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | No Limit |
-| **Segment Pixel** | VAST (video, audio) | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 64 |
+| **Segment Pixel (Name)** | VAST (video, audio) | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 64 |
 
 ## Related topics
 

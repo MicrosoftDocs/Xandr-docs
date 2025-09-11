@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Upload a Hosted Video Creative
 description: This page explains steps to upload VAST video creatives and other considerations for working with VAST 2.0 and VAST 3.0 which Microsoft Advertising supports.  
-ms.date: 10/28/2023
+ms.date:  09/11/2025
 ---
 
 # Microsoft Invest - Upload a hosted video creative
@@ -17,7 +17,7 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ## Specifications for hosted VAST video creatives
 
-- **Max Video File Size**: 180 MB
+- **Max Video File Size**: 1.8 GB
 - **Minimum Bit Rate**: 2500kbps
 - **Minimum Size**: 1280x720px
 - **File Types**: x-flv, mp4, webm, x-ms-wmv, ogg, x-msvideo, mpeg, quicktime, 3gpp, 3gpp2, x-m4v

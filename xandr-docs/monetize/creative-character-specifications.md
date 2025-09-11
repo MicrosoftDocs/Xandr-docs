@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Creative Character Specifications
 description: In this article, find information about the character specifications to keep in mind when uploading creatives.
-ms.date: 10/28/2023
+ms.date:  09/11/2025
 ---
 
 # Microsoft Monetize - Creative character specifications

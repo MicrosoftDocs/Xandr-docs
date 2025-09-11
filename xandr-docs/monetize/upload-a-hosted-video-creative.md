@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Upload a Hosted Video Creative
 description: Learn how to upload VAST video creatives and other steps to work with this type of creative. This page is a step-by-step guide to add a creative, preview the creative and save the creative. 
-ms.date: 10/28/2023
+ms.date: 09/11/2025
 ---
 
 

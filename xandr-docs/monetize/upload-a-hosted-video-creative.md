@@ -18,7 +18,7 @@ If you are interested in hosting video creatives on Microsoft Advertising, pleas
 
 ## Specifications for hosted VAST video creatives
 
-- **Max Video File Size**: 180 MB
+- **Max Video File Size**: 1.8 GB
 - **Minimum Bit Rate**: 2500kbps
 - **Minimum Size**: 1280x720px
 - **File Types**: x-flv, mp4, webm, x-ms-wmv, ogg, x-msvideo, mpeg, quicktime, 3gpp, 3gpp2, x-m4v

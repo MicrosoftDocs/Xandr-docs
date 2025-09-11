@@ -32,7 +32,7 @@ The following table provides the character limit for each field that is availabl
 | **Create New Folder** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 255 |
 | **Duplicate Name** | All | **Creative Templates** | 30 |
 | **External Identifier** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 100 |
-| **Landing Page URL** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | No Limit |
+| **Landing Page URL** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** | 2000 |
 | **Macro** | All | **Creative Templates** > **Details** > **Custom Macros** | 30 |
 | **Media Type** | All | **Creative Templates** > **Details** | No Limit |
 | **Name** | All | - **Creative Manager** <br> - **Creative UI** > **Create New** <br> - **Creative UI** > **Edit** <br> - **Creative Templates** > **Details** | 400 |

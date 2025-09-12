@@ -22,13 +22,13 @@ This is a read-only service that shows you the list of currencies that you can s
 | `GET` | `https://api.appnexus.com/currency?show_rate=true&code=CURRENCY_CODE&ymd=2012-03-01` | View a currency's exchange rate for a day in the past |
 
 > [!NOTE]
-> Exchange rates are sourced **once daily** from [Oanda](https://www.oanda.com/) at approximately **3:00 a.m. UTC**.
+> Exchange rates are sourced **once daily** from [Refinitiv](https://www.lseg.com/en/fx) at approximately **3:00 a.m. UTC**. 
 
 ## JSON fields
 
 | Fields | Type | Description |
 |:---|:---|:---|
-| `as_of` | string | The date and time that Oanda last updated the exchange rate in UTC. We pull the rates from [Oanda](https://www.oanda.com/foreign-exchange-data-services/en/) every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
+| `as_of` | string | The date and time that [Refinitiv](https://www.lseg.com/en/fx) last updated the exchange rate in UTC. We pull the rates from [Refinitiv](https://www.lseg.com/en/fx)at approximately 3:00 a.m UTC. This is returned only when you pass `show_rate=true`  in the query string. |
 | `code` | string | The code for the currency. |
 | `description` | string | A description of the currency. |
 | `is_exposed` | boolean | If `true`, the currency is exposed. |

@@ -15,7 +15,7 @@ For buy side Open RTB for bidders, you can send currencies other than USD in the
 
 For sell side Open RTB, by default USD is used as currency where the `"cur"` field is ignored. If the seller member has a member entitlement for `seller_bid_currency` explicitly set up, the `"cur"` field in bid requests is respected.
 
-Exchange rates are sourced **once daily** from [Oanda](https://www.oanda.com/) at approximately **3:00 a.m. UTC**.
+Exchange rates are sourced **once daily** from [Refinitiv](https://www.lseg.com/en/fx) at approximately **3:00 a.m. UTC**. 
 
 ## REST API
 
@@ -30,7 +30,7 @@ Exchange rates are sourced **once daily** from [Oanda](https://www.oanda.com/) a
 
 | Fields | Type | Description |
 |--|--|--|
-| `as_of` | string | The date and time that [Oanda](https://www.oanda.com/foreign-exchange-data-services/en/) last updated the exchange rate in UTC. We pull the rates from Oanda every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
+| `as_of` | string | The date and time that [Refinitiv](https://www.lseg.com/en/fx) last updated the exchange rate in UTC. We pull the rates from [Refinitiv](https://www.lseg.com/en/fx) every day at 3:00 a.m. UTC. This is returned only when you pass `show_rate=true` in the query string. |
 | `code` | string | The code for the currency. |
 | `description` | string | A description of the currency. |
 | `is_exposed` | boolean | If `true`, the currency is exposed. |

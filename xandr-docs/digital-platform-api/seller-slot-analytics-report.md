@@ -55,7 +55,7 @@ Data in this report has the following retention period:
 | `advertiser_default_exchange_rate` | double | yes |  | The exchange rate on day of event. Rate is updated daily at 4 PM GMT. |
 | `buyer_seat` | string | Yes | `My Buyer Seat (DSP Name)` | The display name for the buyer seat code. |
 | `browser` | string | no | `webOS Browser (33)` | The name of the browser. |
-| `billing_exchange_rate` | double | yes |  | Sourced **once daily** from [Oanda](https://www.oanda.com/bvi-en/cfds/) at approximately **3:00 a.m. UTC**. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](./currency-service.md) (also available to clients) to access the latest rates. |
+| `billing_exchange_rate` | double | yes |  | Sourced **once daily** from [Refinitiv](https://www.lseg.com/en/fx) at approximately **3:00 a.m. UTC**. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](./currency-service.md) (also available to clients) to access the latest rates. |
 | `bidder_id` | int | yes |  | The ID of the bidder. |
 | `bidder_name` | string | no | `My Bidder and formatting` | The name of the bidder. |
 | `buyer_member_id` | int | yes | `123` | The ID of the member who can buy the deal. A deal will either be set up with a buyer member ID or a buyer seat code. This is your Xandr member ID. |
@@ -63,7 +63,7 @@ Data in this report has the following retention period:
 | `buyer_member` | string | no | `"My Network (123)"` | The name of the buying member followed by the ID (AppNexus format). |
 | `brand_name` | string | no | `"The Best Wedding Music"` | Brand name associated with the creative. |
 | `billing_currency` | string | yes | `"USD"` | The transaction currency that the buyer used to purchase this impression. This dimension is available only when Currency 2.0 is disabled. |
-| `billing_exchange_rate` | double | yes |  | Sourced **once daily** from [Oanda] at approximately **3:00 a.m. UTC**. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](./currency-service.md) (also available to clients) to access the latest rates. |
+| `billing_exchange_rate` | double | yes |  | Sourced **once daily** from [Refinitiv](https://www.lseg.com/en/fx) at approximately **3:00 a.m. UTC**. All Xandr applications (bidder, budgeting, billing, etc.) use the [API Currency Service](./currency-service.md) (also available to clients) to access the latest rates. |
 | `browser_id` | int | Yes | `8` | The ID of the browser in which the impression was served. To retrieve a complete list of browser IDs and names, use the Browser Service. |
 | `brand` | int | yes | `1234` | The ID of the brand associated with a creative. |
 | `buyer_seat_id` | double | yes |  | The ID of the buyer seat. |

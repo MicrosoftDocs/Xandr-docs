@@ -1,7 +1,7 @@
 ---
 title: Placement Service
 description: Use the Placement service to create and modify ad tags for managed publishers or direct media buys with customizable IDs stored server-side.
-ms.date: 10/28/2023
+ms.date: 09/15/2025
 ms.custom: digital-platform-api
 ---
 

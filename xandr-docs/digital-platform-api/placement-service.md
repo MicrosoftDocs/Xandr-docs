@@ -132,6 +132,7 @@ Once you have the placement ID, you format the placement tag as follows and hand
 | `handles_mixed_media` | boolean | This tells our platform whether the video player can support a VAST file with different mime types.<br><br>**Default**: `true` |
 | `tinytag_renderer_asset_floor_prices` | array of objects | Associates floor prices to native creatives that have been assigned to the placement. For additional information, see [Tinytag Renderer Asset Floor Prices](#tinytag-renderer-asset-floor-prices).<br><br>**Required On**: `PUT` |
 | `is_ss_native_assembly_enabled` | boolean | When enabled, although the original request will be a banner request, the requests that are sent to bidders will have native info set in order to receive native assets back in the responses. The final response will be set back to a banner ad type with a native assembled ad markup attached. If `true` then yes. |
+| `GPID` | string (255) | Global Placement ID (GPID). Global placement-level identifier provided by the publisher to indicate a specific ad placement on page. |
 
 ### Supported media types
 

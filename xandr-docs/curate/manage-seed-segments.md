@@ -1,6 +1,6 @@
 ---
 title: Managing seed segments 
-description: Modeled Audiences is a new feature available for Microsoft Curate that allows curators to take their first-party segments and expand them to similar users for targeting.
+description: Managing seed segments for Modeled Audiences in Microsoft Curate.
 ms.date: 09/16/2025
 ms.author: shsrinivasan
 ---

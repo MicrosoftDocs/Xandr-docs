@@ -102,7 +102,7 @@ The Forecast Builder helps you analyze inventory availability and identify conte
 > [!NOTE]
 > Priority must be set for forecast builder and is defaulted to 14. 
 
-### Competing Line Items 
+### Contending Line Items 
 
 The Competing Line Items section shows other line items that are contending for the same inventory based on your selected targeting, priority, pacing, frequency capping, overlapping impressions, and flight dates. This section displays: 
 
@@ -121,7 +121,7 @@ The Competing Line Items section shows other line items that are contending for 
         - **Exclusive:** this delivery type has a percentage-based (or "share-of-voice") goal and typically runs at higher priorities that range from 18-20. 
     - **Priority:** The priority associated with the line item. 
     - **Revenue Type:** The way the advertiser has agreed to pay you (CPM, Viewable CPM, or Fixed Fee). 
-    - **Overlapping Impressions:** The number of contending impressions. 
+    - **Contending Impressions:** The number of contending impressions. 
 
 ## History 
 

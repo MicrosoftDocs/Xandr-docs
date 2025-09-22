@@ -55,39 +55,12 @@ $ curl -b cookies "https://api.appnexus.com/report-status"
             "network_advertiser_analytics_larry": {
                 "max_hour_closed": "2012-10-31 00:00:00"
             },
-            "site_domain_performance_backup": "",
             "site_domain_daily_uniques": "",
             "clicktrackers": "",
             "network_analytics_feed_test": {
                 "max_hour_closed": "2012-10-31 00:00:00"
             },
-            "advertiser_analytics_daily_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "publisher_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "network_publisher_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "admin_buyer_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "admin_seller_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "opt_dash_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "network_advertiser_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "advertiser_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "network_analytics_test": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
+            
             "advertiser_frequency_recency": "",
             "network_advertiser_frequency_recency": "",
             "pixel_fired": "",
@@ -111,14 +84,6 @@ $ curl -b cookies "https://api.appnexus.com/report-status"
             "network_publisher_analytics": {
                 "max_hour_closed": "2012-10-31 00:00:00"
             },
-            "admin_buyer_analytics": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "admin_seller_analytics": {
-                "max_hour_closed": "2012-10-31 00:00:00"
-            },
-            "admin_platform_billing": "",
-            "admin_platform_seller": "",
             "seller_platform_billing": "",
             "platform_seller": "",
             "platform_buyer": "",

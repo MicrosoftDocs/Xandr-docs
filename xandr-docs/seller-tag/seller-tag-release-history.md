@@ -2,7 +2,7 @@
 title: Seller Tag Release History
 description: In this article, find release history of AST.
 ms.custom: seller-tag
-ms.date: 9/2/2025
+ms.date: 9/12/2025
 ---
 
 # Seller Tag Release History
@@ -20,6 +20,9 @@ For information on major changes to SDK, see the [Release Notes](seller-tag-rele
 
 | Version | Release Date |
 | --- | --- |
+| v1.10.43 | 12 Sep 2025 |
+| v1.10.42 | 11 Sep 2025 |
+| v1.10.41 | 9 Sep 2025 |
 | v1.10.40 | 5 Sep 2025 |
 | v1.10.39 | 2 Sep 2025 |
 | v1.10.38 | 28 Aug 2025 |

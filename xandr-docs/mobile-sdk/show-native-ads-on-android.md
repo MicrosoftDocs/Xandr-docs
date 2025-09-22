@@ -186,6 +186,208 @@ The following is a comprehensive list of native assets supported in the SDKs.
 | Context | Yes | No |  |
 | Full text | Yes | No |  |
 
+## OpenRTB Native
+
+OpenRTB Native refers to using the OpenRTB Native Asset specification in NativeAdRequest and NativeAdResponse classes, allowing for more flexible and standardized ad requests and responses.
+For more information on OpenRTB Native 1.2 spec standards, see [OpenRTB Native Ads Specification.1.2](https://www.iab.com/wp-content/uploads/2018/03/OpenRTB-Native-Ads-Specification-Final-1.2.pdf).
+
+> [!NOTE]
+> OpenRTB Native is not available for all members. Please work with your Account Manager or contact Support if you have any questions.
+
+### ORTB in NativeAdRequest
+
+To use OpenRTB Native, the app needs to specify OpenRTB Native assets in the NativeAdRequest using the setOpenRTBAssets(JSONObject openRTBAssets) method. The contents of this field should be an OpenRTB Native request, following the OpenRTB Native 1.2 request markup.
+
+### Code Sample Java for Request
+
+```
+NativeAdRequest nativeAdRequest = new NativeAdRequest(context, "PLACEMENT_ID");
+String ortbJSONString = "{\"ver\":\"1.2\",\"assets\":[{\"id\":1,\"required\":1,\"title\":{\"len\":300}},{\"id\":2,\"required\":1,\"data\":{\"type\":2}},{\"id\":3,\"required\":1,\"data\":{\"type\":1}},{\"id\":4,\"required\":1,\"image\":{\"type\":3}},{\"id\":5,\"required\":0,\"data\":{\"type\":555,\"len\":45}}]}";
+nativeAdRequest.setOpenRTBAssets(new JSONObject(ortbJSONString));
+```
+
+### Code Sample Kotlin for Request
+
+```
+
+var nativeAdRequest = NativeAdRequest(context, "PLACEMENT_ID")
+val ortbJSONString = "{\"ver\":\"1.2\",\"assets\":[{\"id\":1,\"required\":1,\"title\":{\"len\":300}},{\"id\":2,\"required\":1,\"data\":{\"type\":2}},{\"id\":3,\"required\":1,\"data\":{\"type\":1}},{\"id\":4,\"required\":1,\"image\":{\"type\":3}},{\"id\":5,\"required\":0,\"data\":{\"type\":555,\"len\":45}}]}"
+nativeAdRequest.openRTBAssets = JSONObject(ortbJSONString);
+```
+>[!NOTE]
+> The app does not need to specify the eventtrackers array. SDK automatically populates the eventtrackers array with the values it supports. Even if the app provides a value, it will be overridden by the SDK.
+
+## ORTB in NativeAdResponse
+ORTB in response corresponds to the raw ORTB Native JSON, which is exposed to the app using the public JSONObject getOpenRTBNative() method in the NativeAdResponse class. Like the request, the response JSONObject will follow the OpenRTB Native 1.2 response markup, see [OpenRTB Native Ads Specification.1.2](https://www.iab.com/wp-content/uploads/2018/03/OpenRTB-Native-Ads-Specification-Final-1.2.pdf) for details.
+
+
+In addition to exposing the raw ORTB Native response JSONObject via getOpenRTBNative(), the SDK also parses and makes available standard ORTB Native response assets (img, title, video, and data) using methods such as getTitle(), getDescription(), getImageUrl(), getImage(), getImageSize(), getIconUrl(), getIcon(), getIconSize(), getCallToAction(), getAdStarRating(), getSponsoredBy(), getVastXml(), and getPrivacyLink(). The SDK also automatically handles impression, viewability, and click tracking.
+
+> [!NOTE]
+> The app should register the view in which the native ad is rendered with the SDK. SDK will handle impression, click,
+and viewability tracking. App will not receive eventtrackers, imptrackers, jstracker, or clicktrackers in the ORTB Native response JSONObject.
+
+### Code Sample Java for response
+
+```
+@Override
+public void onAdLoaded(NativeAdResponse nativeAdResponse) {
+
+    // Network type Network.APPNEXUS_ORTB indicates the response is ORTB
+    if (nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS_ORTB) {
+        JSONObject ortbNativeResponseJSON = nativeAdResponse.getOpenRTBNative();
+
+        // App has the option to either
+        // 1. Use the parsed title, description, etc., which the SDK readily makes available
+        // and dip into the ORTB Native response JSON for non-parsed/custom values
+        // OR
+        // 2. Handle all the ORTB Native response JSON response parsing in the app
+
+        // Accessing title, description etc using the getters exposed in
+        // NativeAdResponse class
+        String title = nativeAdResponse.getTitle();
+        String description = nativeAdResponse.getDescription();
+        String imageUrl = nativeAdResponse.getImageUrl();
+        NativeAdResponse.ImageSize imageSize = nativeAdResponse.getImageSize();
+        
+        
+        // Parsing ORTB Native resposnse JSON
+        // Extract "assets" array
+        JSONArray assetsArray = ortbNativeResponseJSON.getJSONArray("assets");
+        for (int i = 0; i < assetsArray.length(); i++) {
+            JSONObject asset = assetsArray.getJSONObject(i);
+            // This id will match the id provided in the request.
+            // This id is essential for matching the various data assets in the request
+            // with the response.            
+            int id = asset.getInt("id");
+            System.out.println("Asset ID: " + id); 
+
+            // Check for "title"
+            if (asset.has("title")) {
+                String assetTitle = asset.getJSONObject("title").getString("text");
+                System.out.println("Title: " + assetTitle);
+            }
+
+            // Check for "data"
+            if (asset.has("data")) {
+                String data = asset.getJSONObject("data").getString("value");
+                System.out.println("Data: " + data);
+            }
+
+            // Check for "image"
+            if (asset.has("image")) {
+                JSONObject image = asset.getJSONObject("image");
+                String url = image.getString("url");
+                int width = image.getInt("w");
+                int height = image.getInt("h");
+                System.out.println("Image URL:"+url+",Width:"+width+",Height:"+height);
+            }
+        }
+    }
+}
+```
+
+### Code Sample Kotlin for response
+
+```
+
+override fun onAdLoaded(nativeAdResponse: NativeAdResponse) {
+
+    // Network type Network.APPNEXUS_ORTB indicate the response is ORTB
+    if(nativeAdResponse.networkIdentifier == NativeAdResponse.Network.APPNEXUS_ORTB) {
+        var ortbNativeResponseJSON = nativeAdResponse.openRTBNative
+
+        // App has the option to either
+        // 1. Use the parsed title,description etc which the SDK readily makes available
+        // and dip into the ORTB Native response JSON for non-parsed/custom values
+        // OR
+        // 2. Handle all the ORTB Native response JSON response parsing in the app
+
+        // Accessing title, description etc using the getters exposed in
+        // NativeAdResponse class
+        nativeAdResponse.title
+        nativeAdResponse.description
+        nativeAdResponse.imageUrl
+        nativeAdResponse.imageSize
+
+
+        // Parsing ORTB Native resposnse JSON
+        // Extract "assets" array
+        val assetsArray = ortbNativeResponseJSON.getJSONArray("assets")
+        for (i in 0 until assetsArray.length()) {
+            val asset = assetsArray.getJSONObject(i)
+            // This id will match the id provide in request,
+            // This id is essential for matching the various data assets in req with response            
+            val id = asset.getInt("id")
+            println("Asset ID: $id") 
+
+            // Check for "title"
+            if (asset.has("title")) {
+                val title = asset.getJSONObject("title").getString("text")
+                println("Title: $title")
+            }
+
+            // Check for "data"
+            if (asset.has("data")) {
+                val data = asset.getJSONObject("data").getString("value")
+                println("Data: $data")
+            }
+
+            // Check for "image"
+            if (asset.has("image")) {
+                val image = asset.getJSONObject("image")
+                val url = image.getString("url")
+                val width = image.getInt("w")
+                val height = image.getInt("h")
+                println("Image URL: $url, Width: $width, Height: $height")
+            }
+        }
+    }
+```
+
+### Example: ORTB Native response JSONObject structure in NativeAdResponse
+
+```
+
+ {
+       "ver": "1.2",
+       "assets": [
+      {
+          "id": 1,
+          "title": {
+              "text": "Sample Title here."
+          }
+       },{    
+          "id": 2,
+          "data": {
+              "value": "Sample description text here."
+           }
+      }, {
+          "id": 3,
+          "data": {
+              "value": "Sample Sponsored by text here."
+          }
+      }, {
+          "id": 4,
+          "image": {
+              "url": "https://sample.img.url/here.jpg",
+              "w": 123,
+              "h": 234
+          }
+      }, {
+          "id": 5,
+          "data": {
+              "value": "Sample disclaimer value here."
+          }
+      }
+   ],
+  // remaining ortb native 1.2 response fields would be here;
+  // ie for link,privacy etc if available
+} 
+```
+
+
+
 ## Related topics
 
 - [Android SDK Integration Instructions](android-sdk-integration-instructions.md)

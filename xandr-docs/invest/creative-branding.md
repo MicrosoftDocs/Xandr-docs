@@ -35,7 +35,7 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Family Planning** | This brand represents all family planning services including preconception counseling, education, and general reproductive and fertility health care. |
 | **Financial** | This brand represents accredited banking, investment, and long-term loan organizations. |
 | **Financial: Forex** | This brand represents Forex trade. This brand applies to creatives that advertise:<br> - Binary trading<br> - Foreign exchange currency markets<br> - FX market |
-| **Firearms and Weapons** | This brand offers weapons, ammunition, and/or firearm sales and services. This brand applies to creatives that advertise:<br> - Firearm stores<br> - Firing ranges<br> - Gun education and licensing<br> - Gun manufacturers<br> - Gun shows |
+| **Firearms and Weapons** | This brand offers compliant weapon-related products and services. This brand applies to creatives that advertise:<br> - Recreational and self-defense weapons <br> - Firing ranges<br> - Gun education and licensing |
 | **Fitness and Health** | This brand represents gyms and personal fitness/health services. This brand applies to creatives that advertise:<br> - Dieticians and health consultants<br> - Fitness machines<br> - Gyms and spas<br> - Personal trainers |
 | **Flowers and Gifts** | This brand primarily sells online and mail-ordered gifts, as well as floral arrangements. |
 | **Food and Drink** | This brand represents restaurants, as well as food and beverage products. This brand applies to creatives that advertise:<br> - Catering<br> - Food companies<br> - Food festivals and events<br> - Grocery stores<br> - Non-alcoholic beverage companies |
@@ -47,11 +47,11 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Gambling: Non-Government Run Lottery** | This brand represents a non-government affiliated lottery. |
 | **Gambling: Online Gambling** | This brand primarily offers the ability to win money through online gambling. |
 | **Gambling: Other** | This brand represents miscellaneous gambling-related creatives that do not fall within other gambling categories. |
-| **Gambling: Penny Auctions** | This brand primarily offers a pay-to-bid auction service. |
 | **Gambling: Scratch Card Site** | This brand primarily offers scratch cards. |
+| **Gambling: Social Casino Games** | Brand offers gambling-style games that simulate activities like slot machines, poker, roulette, or blackjack—but without offering real-money winnings. |
 | **Gambling: Sports Betting** | This brand primarily offers betting/gambling on sports and competitive events. |
 | **Gambling: Tools** | This brand offers gambling tools and gambling-related retail products. |
-| **Government** | This brand represents a branch or body of local/national government. This brand applies to creatives that advertise:<br> - Elections and registration<br> - Governmental forms and services<br> - Politicians and political offices |
+| **Government** | This brand represents a branch or body of local/national government, including national armed forces. |
 | **Health-Care** | This brand represents all health-care related products and services that cannot be more specifically categorized. This brand applies to creatives that advertise:<br> - Medical devices<br> - Medical products for at-home use |
 | **Home and Decor** | This brand sells products and services for use in personal residences. This brand applies to creatives that advertise:<br> - Contractors, plumbers, electricians, and handymen<br> - Interior decorators<br> - Flooring, carpeting, and drapery<br> - Furniture and household decoration<br> - Hardware stores |
 | **Horoscopes and Astrology** | This brand represents any service or site related to horoscopes, astrology, psychic, or tarot readings. |
@@ -76,6 +76,7 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Premium Services: End of Life Services** | This brand represents services related to end-of-life/palliative care, including hospices and funeral homes. |
 | **Premium Services: Power Utilities** | This brand represents utilities. This brand applies to creatives that advertise electric, heat, steam, and water companies. |
 | **Print and Publications** | This brand represents newspapers, magazines, and other publications. This brand applies to creatives that advertise:<br> - Magazines and periodicals<br> - Newspapers<br> - Publishers |
+| **Psychics, Tarot, and Medium** | Brand offers psychics, tarot card reading, mediums, and related services. |
 | **Quizzes and Surveys** | This brand offers questionnaires and survey. |
 | **Real Estate** | This brand represents the sale, rental, and management of property. This brand applies to creatives that advertise:<br> - Apartment and retail buildings for rent or sale<br> - House and apartment classifieds<br> - Realtors and real Estate Agencies |
 | **Religion** | This brand represents religious and faith based organizations. |

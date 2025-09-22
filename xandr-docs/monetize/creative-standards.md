@@ -8,6 +8,9 @@ ms.date: 08/25/2025
 
 Microsoft Advertising has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.
 
+> [!NOTE]
+> Please visit Microsoft Advertising Policies and Guidelines for a full list of disallowed and restricted content. 
+
 ## Prohibited content
 
 Ensure that your creatives and inventory do not contain any of the following.
@@ -17,8 +20,8 @@ Ensure that your creatives and inventory do not contain any of the following.
 | Creative contains deceptive content | - Creative has no clearly defined background nor border. <br> - Creative contains non-functional elements (video player interface, closing icon, etc.) <br> - Creative mimics email/messaging/social media interface implying notification or new message. <br> - Creative claims visitor is a visitor number, ex. “You’re our 100,000th visitor!” <br> - Creative features “Download/Play Now” buttons as majority of creative content |
 | Displays fake errors or warnings to induce user action | - Creative imitates mobile phone interface to drive traffic <br> - Creative imitates a dialogue/OS box, displays fake errors or warnings to drive traffic |
 | Enabling or permitting piracy | - Copyright-infringing pirated media content <br> &nbsp;&nbsp; - Film/TV <br> &nbsp;&nbsp; - Books <br> &nbsp;&nbsp; - Music <br> &nbsp;&nbsp; - Etc. <br> - File-sharing services without a DMCA (Digital Millennium Copyright Act) take-down policy |
-| Features the sale of drugs, pharmaceuticals, or drug paraphernalia that is illegal | - Pro-marijuana content <br> - Promotion or sale of marijuana <br> - Marijuana accessories <br> - Marijuana culture sites <br> - Investment or career opportunities in the marijuana industry <br> - Etc. <br><br> **Note**:  Products derived from marijuana plant that do not contain illegal drug properties will not ban (ex. hemp, CBD oil, etc.) |
-| Features the sale of or instructions to create bombs, guns, ammunition, or other weapons | Creative advertises a site whose main purpose is to sell and promote guns or ammunition |
+| Features the sale of drugs, pharmaceuticals, or drug paraphernalia that is illegal | - Pro-marijuana content <br> - Promotion or sale of marijuana <br> - Marijuana accessories <br> - Marijuana culture sites <br> - Investment or career opportunities in the marijuana industry. |
+| Features the sale of or instructions to create bombs, guns, ammunition, or other weapons | Creative advertises a site whose main purpose is to sell and promote guns or ammunition.|
 | Inappropriately charges for government forms or services | - Charging for government forms or services that are normally free or offering them cheaper than the government. <br> - Any illegal or deceptive service to bypass a public system (ex. fake IDs, evading traffic tickets, etc.) |
 | Misappropriation of a copyright, trademark, trade secret or patent of another party | Creative deceptively uses a major brand’s logo in an offer not affiliated with that brand |
 | Pornography, nudity, obscenity, or other "adult" content | - Major nudity (female nipples, genitalia, etc.) <br> - Depiction of sexual acts <br> - Escort services <br> - Realistic sex toys <br> - Sales or distribution of pornography |

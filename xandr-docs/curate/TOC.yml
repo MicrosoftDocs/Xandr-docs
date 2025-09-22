@@ -125,6 +125,12 @@
     href: monitor-splits.md
   - name: Split Report Details
     href: report-on-splits.md
+- name: Modeled Audiences
+  items:
+  - name: Overview
+    href: modeled-audiences.md
+  - name: Manage Seed Segments
+    href: manage-seed-segments.md
 - name: Curation Optimization
   href: curation-optimization.md
 - name: Change Log History Tool

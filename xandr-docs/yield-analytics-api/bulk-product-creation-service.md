@@ -75,7 +75,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 ### POST: Bulk product creation
 
 ```
-POST /api/products/bulk/create
+POST /api/product/bulk/create
 ```
 
 - **Description**
@@ -208,7 +208,7 @@ POST /api/products/bulk/create
 ### GET: Bulk product creation By date
 
 ```
-GET /api/products/bulk/create/{date}
+GET /api/product/bulk/create/{date}
 ```
 
 - **Description**

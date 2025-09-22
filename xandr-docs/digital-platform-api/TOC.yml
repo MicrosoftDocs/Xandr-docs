@@ -593,32 +593,24 @@
         href: prebid-server-premium-services.md
       - name: Long Form Video Service
         href: long-form-video-service.md
-      - name: Prebid Server Premium Config Services
-        items:
-        - name: Overview
-          href: prebid-server-premium-config-services.md
-        - name: Ad Server Category Mapping Service
-          href: adserver-category-mapping-service.md
-        - name: Ad Sizes Service
-          href: ad-sizes-service.md
-        - name: Bidder Info Service
-          href: bidder-info-service.md
-        - name: Config Service
-          href: config-service.md
-        - name: Campaign Object Service
-          href: campaign-object-service.md
-        - name: Cross-Partner Settings Service
-          href: cross-partner-settings-service.md
-        - name: Demand Partner Schema Service
-          href: demand-partner-schema-service.md
-        - name: Demand Partner Service
-          href: demand-partner-service.md
-        - name: Operating System-Families Service
-          href: operating-system-families-service.md
-        - name: Prebid Demand Partner Params Service
-          href: prebid-demand-partner-params-service.md
-        - name: Primary Ad Server Service
-          href: primary-ad-server-service.md
+      - name: Ad Sizes Service
+        href: ad-sizes-service.md
+      - name: Bidder Info Service
+        href: bidder-info-service.md
+      - name: Config Service
+        href: config-service.md
+      - name: Campaign Object Service
+        href: campaign-object-service.md
+      - name: Cross-Partner Settings Service
+        href: cross-partner-settings-service.md
+      - name: Demand Partner Schema Service
+        href: demand-partner-schema-service.md
+      - name: Demand Partner Service
+        href: demand-partner-service.md
+      - name: Operating System-Families Service
+        href: operating-system-families-service.md
+      - name: Prebid Demand Partner Params Service
+        href: prebid-demand-partner-params-service.md
     - name: Publisher Service
       href: publisher-service.md
     - name: Seller Creative Review Service

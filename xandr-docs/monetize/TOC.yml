@@ -1726,6 +1726,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: September 23rd, 2025 - Unified Sign-In with Microsoft account
+    href: release-notes-20250923.md
   - name: July 25th, 2025 - Forecast Builder in Microsoft Monetize
     href: release-notes-20250725.md
   - name: July 08, 2025 - Enhanced Forecast-Shaped Pacing

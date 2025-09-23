@@ -10,6 +10,7 @@ ms.author: shsrinivasan
 
 Read about the latest updates to Microsoft Invest.
 
+- [September 23, 2025: Unified Sign-In with Microsoft account](release-notes-20250923.md)
 - [October 21, 2024: Microsoft Invest DSP UI Localization](release-notes-20241021.md)
 - [October 18, 2024: Household Attribution](release-notes-20241018.md)
 - [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)

@@ -5,7 +5,7 @@ ms.date: 09/25/2024
 ms.custom: digital-platform-api
 ---
 
-# Long Form Video service
+# Long Form Video Service
 
 Direct Supply customers can integrate their app or web long-form ad pod video inventory with Prebid Server Premium (PSP) using the `/prebid/lfv` endpoint. Long-form video durations are at least 30 minutes with potential pre, mid, and post-roll positions.
 

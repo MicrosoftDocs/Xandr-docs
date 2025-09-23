@@ -10,7 +10,7 @@ ms.date: 08/25/2025
 Microsoft Advertising has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.
 
 > [!NOTE]
-> Please visit Microsoft Advertising Policies and Guidelines for a full list of disallowed and restricted content. 
+> Please visit M[icrosoft Advertising Policies and Guidelines](https://help.ads.microsoft.com/#apex/ads/en/n5096/0) for a full list of disallowed and restricted content. 
 
 ## Prohibited content
 
@@ -25,7 +25,7 @@ Ensure that your creatives and inventory do not contain any of the following.
 | Displays fake errors or warnings to induce user action | - Creative imitates mobile phone interface to drive traffic<br> - Creative imitates a dialogue/OS box, displays fake errors or warnings to drive traffic |
 | Creative contains deceptive content | - Creative has no clearly defined background nor border.<br> - Creative contains non-functional elements (video player interface, closing icon, etc.)<br> - Creative mimics email/messaging/social media interface implying notification or new message.<br> - Creative claims visitor is a visitor number, ex. “You’re our 100,000th visitor!”<br> - Creative features “Download/Play Now” buttons as majority of creative content |
 | Enabling or permitting piracy | - Copyright-infringing pirated media content<br> &nbsp;&nbsp; - Film/TV<br>&nbsp;&nbsp; - Books<br> &nbsp;&nbsp; - Music<br>&nbsp;&nbsp; - Etc.<br> - File-sharing services without a DMCA (Digital Millennium Copyright Act) take-down policy |
-| Inappropriately charges for government forms or services | - Charging for government forms or services that are normally free or offering them cheaper than the government.<br> - Any illegal or deceptive service to bypass a public system (ex. fake IDs, evading traffic tickets, etc.) |
+| Features the sale of third party government services | Advertising for government products and services that is not submitted by the government or by government-authorized entities. |
 
 For more information, see our [Part of Service Policies](../policies-regulations/index.yml).
 

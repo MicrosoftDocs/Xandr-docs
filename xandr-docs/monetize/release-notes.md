@@ -10,6 +10,7 @@ ms.topic: release-notes
 
 Read about the latest updates to Monetize.
 
+- [September 23, 2025: Unified Sign-In with Microsoft account](release-notes-20250923.md)
 - [July 25, 2025 - Forecast Builder in Microsoft Monetize](release-notes-20250725.md)
 - [July 08, 2025: Enhanced Forecast-Shaped Pacing](release-notes-20250706.md)
 - [July 08, 2025: Updates to Inventory Manager](release-notes-20250708.md)

@@ -54,7 +54,7 @@ When a brand is created, it is given a name, an associated URL, and a brand cont
 | **Government** | This brand represents a branch or body of local/national government, including national armed forces. |
 | **Health-Care** | This brand represents all health-care related products and services that cannot be more specifically categorized. This brand applies to creatives that advertise: <br> - Medical devices <br> - Medical products for at-home use |
 | **Home and Decor** | This brand sells products and services for use in personal residences. This brand applies to creatives that advertise: <br> - Contractors, plumbers, electricians, and handymen <br> - Interior decorators <br> - Flooring, carpeting, and drapery <br> - Furniture and household decoration <br> - Hardware stores |
-| **Horoscopes and Astrology** | This brand represents any service or site related to horoscopes, astrology, psychic, or tarot readings. |
+| **Horoscopes and Astrology** | This brand represents any service or site related to horoscopes or astrology. |
 | **Hospitals and Healthcare Facilities** | This brand represents brick and mortar locations that provide health care including: <br> - Hospitals <br> - Clinics <br> - Outpatient care centers <br> - Urgent care centers <br> - Doctors' offices <br> - Specialized care centers, such as birthing centers, surgical or psychiatric care centers |
 | **Hotels** | This brand represents hotels, motels, and extended stay establishments. |
 | **Insurance** | This brand represents insurance providers. |

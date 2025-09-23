@@ -9,7 +9,7 @@ ms.date: 08/25/2025
 Microsoft Advertising has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.
 
 > [!NOTE]
-> Please visit Microsoft Advertising Policies and Guidelines for a full list of disallowed and restricted content. 
+> Please visit M[icrosoft Advertising Policies and Guidelines](https://help.ads.microsoft.com/#apex/ads/en/n5096/0) for a full list of disallowed and restricted content. 
 
 ## Prohibited content
 
@@ -22,7 +22,7 @@ Ensure that your creatives and inventory do not contain any of the following.
 | Enabling or permitting piracy | - Copyright-infringing pirated media content <br> &nbsp;&nbsp; - Film/TV <br> &nbsp;&nbsp; - Books <br> &nbsp;&nbsp; - Music <br> &nbsp;&nbsp; - Etc. <br> - File-sharing services without a DMCA (Digital Millennium Copyright Act) take-down policy |
 | Features the sale of drugs, pharmaceuticals, or drug paraphernalia that is illegal | - Pro-marijuana content <br> - Promotion or sale of marijuana <br> - Marijuana accessories <br> - Marijuana culture sites <br> - Investment or career opportunities in the marijuana industry. |
 | Features the sale of or instructions to create bombs, guns, ammunition, or other weapons | Creative advertises a site whose main purpose is to sell and promote guns or ammunition.|
-| Inappropriately charges for government forms or services | - Charging for government forms or services that are normally free or offering them cheaper than the government. <br> - Any illegal or deceptive service to bypass a public system (ex. fake IDs, evading traffic tickets, etc.) |
+| Features the sale of third party government services | Advertising for government products and services that is not submitted by the government or by government-authorized entities. |
 | Misappropriation of a copyright, trademark, trade secret or patent of another party | Creative deceptively uses a major brand’s logo in an offer not affiliated with that brand |
 | Pornography, nudity, obscenity, or other "adult" content | - Major nudity (female nipples, genitalia, etc.) <br> - Depiction of sexual acts <br> - Escort services <br> - Realistic sex toys <br> - Sales or distribution of pornography |
 

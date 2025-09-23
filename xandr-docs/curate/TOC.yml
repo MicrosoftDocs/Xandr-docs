@@ -113,6 +113,8 @@
     href: curator-margins.md
   - name: Curated Deal Floors
     href: curated-deal-floors.md
+  - name: Bulk Edit Deals
+    href: bulk-edit-deals.md
 - name: Curator Supply Shaping
   items:
   - name: Overview
@@ -387,6 +389,8 @@
   items:
   - name: Overview
     href: release-notes-curate.md
+  - name: September 23, 2025 –  Unified Sign-In with Microsoft account 
+    href: release-notes-curate-20250923.md
   - name: July 28, 2025 - Copilot in Microsoft Curate
     href: release-notes-20250728.md
   - name: June 26, 2023 - Troubleshoot Seller Deal in Open Beta

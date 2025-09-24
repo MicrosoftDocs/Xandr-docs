@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date : 9/4/2025
+ms.date : 9/23/2025
 ---
 
 # iOS SDK release notes
@@ -10,6 +10,13 @@ ms.date : 9/4/2025
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.9.0
+ 
+### New Feature
++ 9736030: Enhanced Native Ads tracking: Introduced support for third-party OMID trackers and OpenRTB event tracking for `event:555, method:2`.
+ 
+### Improvement/Bug Fixes
++ 8869891: Refactored Video Ads implementation and transitioned to using `webview-ads-app`.
 
 ## 9.8.0
 

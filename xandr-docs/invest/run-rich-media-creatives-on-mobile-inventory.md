@@ -9,7 +9,7 @@ ms.date: 09/25/2025
 This document describes how to set up your rich media creatives to serve on mobile devices. It also contains a list of media types supported by each major seller. Note that this is not an exhaustive guide to targeting and running mobile ad campaigns; for a complete description of our mobile targeting, see [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md).
 
 > [!NOTE]
-> For the purposes of this document, rich media creatives are defined as **interstitials** and **MRAID expandables**, but not video _or interscroller_. _At this time interscroller ads are not a platform-offered creative type within the MIC platform and require custom templates, which must be set up independently.  We recommend working directly with your creative provider to ensure proper implementation and compatibility with MIC._
+> For the purposes of this document, rich media creatives are defined as **interstitials** and **MRAID expandables**, but not video or interscroller. At this time interscroller ads are not a platform-offered creative type within the MIC platform and require custom templates, which must be set up independently.  We recommend working directly with your creative provider to ensure proper implementation and compatibility with MIC.
 
 > [!TIP]
 >

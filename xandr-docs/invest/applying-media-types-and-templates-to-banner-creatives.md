@@ -1,12 +1,15 @@
 ---
 title: Microsoft Invest - Apply Media Types and Templates to Banner Creatives
 description: Apply media types, standard Microsoft Advertising, and custom templates to your banner creatives.
-ms.date: 10/28/2023
+ms.date: 09/25/2025
 ---
 
 # Microsoft Invest - Apply media types and templates to banner creatives
 
 You can apply media types, standard Microsoft Advertising, and custom templates to your banner creatives from the **Create New** screen. You can apply the following media types to your banner creatives:
+
+> [!NOTE]
+> At this time interscroller ads are not a platform-offered creative type within the MIC platform and require custom templates, which must be set up independently.  We recommend working directly with your creative provider to ensure proper implementation and compatibility with MIC.
 
 | Media Type | Description |
 |:---|:---|

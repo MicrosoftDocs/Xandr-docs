@@ -10,7 +10,7 @@ This document describes how to set up your rich media creatives to serve on mobi
 
 > [!NOTE]
 > For the purposes of this document, rich media creatives are defined as **interstitials** and **MRAID expandables**, but not video or interscroller. At this time interscroller ads are not a platform-offered creative type within the MIC platform and require custom templates, which must be set up independently.  We recommend working directly with your creative provider to ensure proper implementation and compatibility with MIC.
-_
+
 > [!TIP]
 >
 > - For an introduction to how MRAID and Mobile Video work, see [MRAID and Mobile Video Tutorial](../industry-reference/mraid-and-mobile-video-tutorial.md).

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Run Rich Media Creatives on Mobile Inventory
 description: Learn how to set rich media creatives to serve on mobile devices in this page. This page talks about Interstitials impressions and where MRAID-Certified and Non-MRAID-Certified creatives will serve.  
-ms.date: 10/28/2023
+ms.date: 09/25/2025
 ---
 
 
@@ -10,7 +10,8 @@ ms.date: 10/28/2023
 This document describes how to set up your rich media creatives to serve on mobile devices. It also contains a list of media types supported by each major seller. Note that this is not an exhaustive guide to targeting and running mobile ad campaigns; for a complete description of our mobile targeting, see [Buy Mobile Inventory via RTB](buy-mobile-inventory-via-rtb.md).
 
 > [!NOTE]
-> For the purposes of this document, rich media creatives are defined as **interstitials** and **MRAID expandables**, but not video.
+> For the purposes of this document, rich media creatives are defined as **interstitials** and **MRAID expandables**, but not video _or interscroller_. _At this time interscroller ads are not a platform-offered creative type within the MIC platform and require custom templates, which must be set up independently.  We recommend working directly with your creative provider to ensure proper implementation and compatibility with MIC._
+
 > [!TIP]
 >
 > - For an introduction to how MRAID and Mobile Video work, see [MRAID and Mobile Video Tutorial](../industry-reference/mraid-and-mobile-video-tutorial.md).

@@ -2,7 +2,7 @@
 title: Seller Tag Release History
 description: In this article, find release history of AST.
 ms.custom: seller-tag
-ms.date: 9/12/2025
+ms.date: 9/29/2025
 ---
 
 # Seller Tag Release History

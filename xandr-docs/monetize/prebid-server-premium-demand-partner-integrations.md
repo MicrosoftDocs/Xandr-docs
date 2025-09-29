@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Demand Partner Integrations
 description: In this article, find a list of all demand partners currently available through Prebid Server Premium (PSP).
-ms.date: 09/11/2025
+ms.date: 09/29/2025
 ---
 
 # Prebid Server Premium demand partner integrations
@@ -242,6 +242,7 @@ Additional resources on demand partners:
 | OCM Media   | orangeclickmedia | Yes       | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Optidigital | optidigital| Yes              | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No   | **App**: No <br>**Site**: No   |
 | Pixad       | pixad      | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| PinkLion       | pinkLion      | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Prismassp   | prismassp  | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Pangle | pangle | No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No |
 | PGAM | pgam | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |

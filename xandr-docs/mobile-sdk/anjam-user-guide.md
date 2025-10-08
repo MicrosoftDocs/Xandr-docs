@@ -2,8 +2,7 @@
 title: ANJAM User Guide
 description: In this article, learn what ANJAM is and the functions associated with it with examples.
 ms.custom: android-sdk, ios-sdk
-ms.date: 10/28/2023
-ms.author: shsrinivasan
+ms.date: 10/8/2025
 ---
 
 # ANJAM user guide
@@ -25,7 +24,7 @@ All ANJAM functions are asynchronous. Any function that queries for a result wil
 > In order for a creative to use ANJAM, MRAID from within an iFrame in the SDK (including when "Serve in iFrame" is checked), the creative needs to add this HTML snippet at the beginning:
 >
 > ```
-> <script src="https://acdn.adnxs.com/mobile/anjam/anjam.js"></script>
+> <script src="https://adsdkprod.azureedge.net/assets/anjam/v1.1/anjam.js"></script>
 > ```
 >
 

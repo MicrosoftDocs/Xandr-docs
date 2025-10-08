@@ -20,6 +20,7 @@ For information on major changes to SDK, see the [Release Notes](seller-tag-rele
 
 | Version | Release Date |
 | --- | --- |
+| v1.10.47 | 7 Oct 2025 |
 | v1.10.46 | 1 Oct 2025 |
 | v1.10.45 | 30 Sep 2025 |
 | v1.10.44 | 25 Sep 2025 |

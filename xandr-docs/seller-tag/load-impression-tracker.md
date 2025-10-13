@@ -26,7 +26,7 @@ The parameters listed below can be sent as arguments in the function.
 
 ## Description
 
-Unlike the fireImpressionTrackers function, `loadImpressionTrackerUrls` fires impression trackers only if they exist on the specified native ad object.
+Unlike the [fireImpressionTrackers](fire-impression-trackers.md) function, `loadImpressionTrackerUrls` fires impression trackers only if they exist on the specified native ad object.
 
 This function is typically called in the callback that handles the rendering of a native ad response (for example, in the `adAvailable` callback).
 

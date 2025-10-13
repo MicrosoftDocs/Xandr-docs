@@ -125,6 +125,7 @@ You can Duplicate, Activate, Deactivate, Delete, or Run a report for selected Li
 Object details such as line item name and flight dates are updated immediately in SMW. However, metrics like impressions, revenue, media cost, and CTR are not available in real time. These can lag behind Network Analytics data by up to three hours.
 If you run an analytics report for a line item that’s currently active and includes data from the last three hours (or six hours for real-time analytics metrics), expect discrepancies — SMW may not yet reflect the most recent data.
 Minor differences at the cent level are also normal, as data aggregation methods differ between systems.
+Deal metrics such as Imps Matched, Bid Requests, Bids, Wins, Renders and Ineligible Bids are available in real-time. 
 
 ### Metrics in SMW grid
 

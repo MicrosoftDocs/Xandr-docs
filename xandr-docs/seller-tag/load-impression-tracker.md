@@ -1,5 +1,5 @@
 ---
-title:Load Impression Tracker
+title: Load Impression Tracker
 description: In this article, learn about the Load Impression Tracker function and its parameter with a detailed example.
 ms.custom: seller-tag
 ms.date: 10/13/2025

@@ -20,7 +20,7 @@ loadImpressionTrackerUrls(nativeAdObject, element)
 The parameters listed below can be sent as arguments in the function.
 
 | Parameter | Type | Required | Description |
-|:---|:---|:---|
+|:---|:---|:---| :---|
 | nativeAdObject | object | Yes |The native ad object returned from the ad response. |
 | element | DOM element | No | Optional. A reference to a DOM element (ideally the ad’s container div). If provided, the impression tracker HTML will be rendered inside this element. If not provided, the HTML will be appended to the <body> of the page. |
 

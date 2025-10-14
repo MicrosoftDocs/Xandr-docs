@@ -2,7 +2,7 @@
 title: Load JS Tracker
 description: In this article, learn about the Load JS Tracker function and its parameter with a detailed example.
 ms.custom: seller-tag
-ms.date: 10/13/2025
+ms.date: 10/14/2025
 ---
 
 # Load JS Tracker
@@ -44,7 +44,7 @@ function adAvailable(ad) {
   renderNativeAd(ad, adContainer);
 
   // Fire JS trackers (if any exist)
-  loadJSTrackers(ad, adContainer);
+  apntag.loadJSTrackers(ad, adContainer);
 }
 
 ```

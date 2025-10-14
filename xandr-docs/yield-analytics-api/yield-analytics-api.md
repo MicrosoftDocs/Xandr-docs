@@ -1,7 +1,8 @@
 ---
 title: Yield Analytics API
 description: In this article, understand what Yield Analytics API is, its key objects and terms, and the various features associated with it.
-ms.custom: yield-analytics-api
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-api
 ms.date: 10/28/2023
 ---
 

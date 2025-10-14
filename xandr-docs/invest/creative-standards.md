@@ -10,7 +10,7 @@ ms.date: 08/25/2025
 Microsoft Advertising has foundational policies that all creative and inventory content must follow. Creatives that violate these policies will be removed from the platform, and will be ineligible for both real-time bidding (RTB) and in-network buying. Repeated violation of these policies may result in strikes against offending members.
 
 > [!NOTE]
-> Please visit M[icrosoft Advertising Policies and Guidelines](https://help.ads.microsoft.com/#apex/ads/en/n5096/0) for a full list of disallowed and restricted content. 
+> Please visit [Microsoft Advertising Policies and Guidelines](https://help.ads.microsoft.com/#apex/ads/en/n5096/0) for a full list of disallowed and restricted content. 
 
 ## Prohibited content
 

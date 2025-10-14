@@ -139,6 +139,12 @@
       href: selecting-the-correct-template-for-your-creative.md
     - name: VAST Check
       href: vast-check.md
+    - name: Bidstream Creative Registration (BCR)
+      items:
+      - name: Overview
+        href: bidstream-creative-registration.md
+      - name: Bidstream Creative Registration FAQ
+        href: bidstream-creative-registration-faq.md
     - name: ADM bidding
       items:
       - name: Overview - ADM Bidding

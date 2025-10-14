@@ -1,7 +1,8 @@
 ---
 title: Data Analytics API - Insertion Order Service
 description: In this article, understand what insertion order service is and the various features and functions associated with it.
-ms.custom: yield-analytics-api
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-api
 ms.date: 10/28/2023
 ---
 

@@ -2,7 +2,7 @@
 title: Load Viewability Scripts
 description: In this article, learn about the Load Viewability Scripts function and its parameter with a detailed example.
 ms.custom: seller-tag
-ms.date: 10/13/2025
+ms.date: 10/14/2025
 ---
 
 # Load Viewability Scripts
@@ -45,7 +45,7 @@ function adAvailable(ad) {
   renderNativeAd(ad, adContainer);
 
   // Fire viewability scripts (if any exist)
-  loadViewabilityScripts(ad, adContainer);
+  apntag.loadViewabilityScripts(ad, adContainer);
 }
 
 ```

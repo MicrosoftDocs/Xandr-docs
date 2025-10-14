@@ -56,8 +56,16 @@
       href: get-ast-version.md
     - name: Get Tag
       href: get-tag.md
+    - name: Load Click Trackers
+      href: load-click-trackers.md
+    - name: Load Impression Tracker
+      href: load-impression-tracker.md
+    - name: Load JS Tracker
+      href: load-js-tracker.md
     - name: Load Tags
       href: load-tags.md
+    - name: Load Viewability Scripts
+      href: load-viewability-scripts.md
     - name: Modify Tag
       href: modify-tag.md
     - name: Notify

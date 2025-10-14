@@ -13,7 +13,6 @@ These linked pages contain instructions on using the various API Services relate
 
 | Service | Description |
 |:---|:---|
-| [Ad Server Category Mapping Service](adserver-category-mapping-service.md) | Allows the mapping of Xandr content categories to IAB subcategories. |
 | [Ad Size Service](ad-sizes-service.md) | Returns the acceptable ad sizes for the member associated with the config. |
 | [Bidder Info Service](bidder-info-service.md) | Returns the capabilities of each bidder. |
 | [Campaign Object Service](campaign-object-service.md) | Provides instructions for targeting Monetize inventory as input for the [configuration service](config-service.md). |

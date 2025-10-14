@@ -20,9 +20,9 @@ The following steps outline the long-form video request and response process:
 1. The configurations from Monetize are retrieved and an OpenRTB request with the requested number of ad slots is created by ImpBus.
 1. ImpBus submits the OpenRTB request to all Microsoft Monetize bidders, including PSP demand partners and Microsoft Invest
     1. The Prebid demand partners return bids, each with a unique IAB subcategory.
-    1. Microsoft Invest and external bidders have a unique Microsoft Monetize brand category associated with every bid which are converted to an IAB subcategory. For more information, see [Adserver Category Mapping Service](adserver-category-mapping-service.md).
+    1. Microsoft Invest and external bidders have a unique Microsoft Monetize brand category associated with every bid which are converted to an IAB subcategory.
 1. ImpBus runs the auction for the Microsoft Monetize marketplace to determine the winning Microsoft Monetize bid.
-1. Based on the publisher and ad server configuration retrieved in step three, ImpBus translates the IAB subcategories to the primary ad server categories (Freewheel or Google Ad Manager). For more information, see [Adserver Category Mapping Service](adserver-category-mapping-service.md).
+1. Based on the publisher and ad server configuration retrieved in step three, ImpBus translates the IAB subcategories to the primary ad server categories (Freewheel or Google Ad Manager).
     1. For Microsoft Monetize bids, ImpBus will translate from the Microsoft Monetize category to the IAB subcategory and finally to the primary ad server category.
 1. The bids are deduped based on the tuple values for price bucket, primary ad server category, and duration.
 1. For each unique bid, ImpBus caches the unique VAST XML.

@@ -80,25 +80,25 @@ Mandatory fields vary by creative media type. Please see below for more informat
 
 | Media type | Field | Type | Description |
 |:---|:---|:---|:---|
-| **Banner** | crid | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md). <br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
-| **Banner** | adm | string | It conveys ad markup information for banner creatives. For more information, please see [Banner Ad Markup bidding (ADM)](banner-ad-markup-bidding.md). |
-| **Banner** | adomain | string | The URL representing the brand of the `adm` content sent in the bid response.   |
+| Banner | **crid** | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md). <br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
+| Banner | **adm** | string | It conveys ad markup information for banner creatives. For more information, please see [Banner Ad Markup bidding (ADM)](banner-ad-markup-bidding.md). |
+| Banner | **adomain** | string | The URL representing the brand of the `adm` content sent in the bid response.   |
 
 ### Video creatives
 | Media type | Field | Type | Description |
 |:---|:---|:---|:---|
-| **Video** | crid | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md). <br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
-| **Video** | adm | string | It conveys ad markup information for video creatives. For more information, please see [Video Ad Markup bidding (ADM)](video-ad-markup-bidding.md). |
-| **Video** | adomain | string | The URL representing the brand of the `adm` content sent in the bid response. |
+| Video | **crid** | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md). <br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
+| Video | **adm** | string | It conveys ad markup information for video creatives. For more information, please see [Video Ad Markup bidding (ADM)](video-ad-markup-bidding.md). |
+| Video | **adomain** | string | The URL representing the brand of the `adm` content sent in the bid response. |
 
 ### Native creatives
 | Media type | Field | Type | Description |
 |:---|:---|:---|:---|
-| **Native** | crid | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md). <br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
-| **Native** | ver | string | Specifies the version of the native ad specification in use. Only native version 1.2 is supported. |
-| **Native** | link | object | The URLs associated with the native creative. The URLs must not exceed 2048 characters. For more information, see [Creative Service](creative-service.md). |
-| **Native** | adm | string | It conveys ad markup information for native creatives. For more information, please see [Native 1.2 Ad Markup bidding (ADM)](native-ad-markup-bidding.md). |
-| **Native** | addomain | string | The URL representing the brand of the `adm` content sent in the bid response. |
+| Native | **crid** | string | The bidder's creative ID. Used to reference a Monetize creative based on the creative code set via the [Creative Service](creative-service.md). <br> **Note:** If both `adid` and `crid` are sent, `adid` takes precedence, and `crid` is ignored. |
+| Native | **ver** | string | Specifies the version of the native ad specification in use. Only native version 1.2 is supported. |
+| Native | **link** | object | The URLs associated with the native creative. The URLs must not exceed 2048 characters. For more information, see [Creative Service](creative-service.md). |
+| Native | **adm** | string | It conveys ad markup information for native creatives. For more information, please see [Native 1.2 Ad Markup bidding (ADM)](native-ad-markup-bidding.md). |
+| Native | **addomain** | string | The URL representing the brand of the `adm` content sent in the bid response. |
 
 ## Error responses
 You may encounter the following errors during creative registration or audit. Use the recommended resolutions to troubleshoot issues.

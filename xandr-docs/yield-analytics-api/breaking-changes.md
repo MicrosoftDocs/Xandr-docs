@@ -4,7 +4,8 @@ description: In this article, find information on what breaking changes are alon
 ms.date: 08/14/2025
 ms.author: shsrinivasan
 ms.topic: release-notes
-ms.custom: yield-analytics-api
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-api
 ---
 
 # Yield Analytics API - Breaking Changes

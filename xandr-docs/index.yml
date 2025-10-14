@@ -9,11 +9,11 @@ brand: m365
 metadata:
   title: Xandr Platform Documentation
   description: Discover the documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
-  ms.service: microsoft-invest
+  ms.service: publisher-monetization
   ms.topic: hub-page
   author: rupambaruah-xandr
   ms.author: rupambaruah
-  ms.date: 12/12/2023
+  ms.date: 10/14/2025
   featureFlags: clicktale
   
 highlightedContent:

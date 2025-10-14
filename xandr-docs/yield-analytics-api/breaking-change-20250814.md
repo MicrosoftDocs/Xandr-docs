@@ -3,6 +3,8 @@ title: August 14, 2025 – Update to Yield Analytics API Service
 description: We are introducing a breaking change to our Audio, Video, and Analytics reports in Yield Analytics API.
 ms.date: 08/14/2025
 ms.topic: release-notes
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-api
 ms.author: shsrinivasan
 ---
 

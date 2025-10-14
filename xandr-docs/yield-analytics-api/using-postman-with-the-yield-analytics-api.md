@@ -1,7 +1,8 @@
 ---
 title: Using Postman with the Yield Analytics API
 description: In this article, learn how to use Postman with Yield Analytics APIs and working with templates for API calls.
-ms.custom: yield-analytics-api
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-api
 ms.date: 10/28/2023
 ---
 

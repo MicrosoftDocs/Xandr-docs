@@ -2,7 +2,7 @@
 title: Load Click Trackers
 description: In this article, learn about the Load Click Trackers function and its parameter with a detailed example.
 ms.custom: seller-tag
-ms.date: 10/13/2025
+ms.date: 10/14/2025
 ---
 
 # Load Click Trackers
@@ -45,7 +45,7 @@ function adAvailable(ad) {
   renderNativeAd(ad, adContainer);
 
   // Fire click trackers (if any exist)
-  loadClickTrackerUrls(ad, adContainer);
+  apntag.loadClickTrackerUrls(ad, adContainer);
 }
 
 ```

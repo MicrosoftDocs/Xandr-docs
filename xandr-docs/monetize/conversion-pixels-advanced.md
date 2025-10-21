@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Conversion Pixels Advanced
 description: Define advanced options for conversion pixels, including creation and export details. Explore available advanced features.
-ms.date: 10/09/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Conversion pixels advanced

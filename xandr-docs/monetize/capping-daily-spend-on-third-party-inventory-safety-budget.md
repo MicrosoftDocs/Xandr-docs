@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Capping Daily Spend on Third-Party Inventory (Safety budget)
 description: Explore safety budget that enables you to set a network-wide cap for your daily media cost spent on third-party inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Capping daily spend on third-party inventory (Safety budget)

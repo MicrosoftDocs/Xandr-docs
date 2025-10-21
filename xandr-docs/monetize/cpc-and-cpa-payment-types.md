@@ -1,7 +1,10 @@
 ---
 title: CPC and CPA Payment Types
 description: Explain CPC, CPA payments; networks buy/sell on CPC/CPA basis, allowing payment on clicks/conversions. Includes a risk premium for seller's risk.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # CPC and CPA payment types

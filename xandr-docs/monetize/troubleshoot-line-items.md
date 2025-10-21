@@ -1,7 +1,10 @@
 ---
 title: Troubleshoot Line Items
 description: In this article, find instructions for how to access troubleshooting information and tools for a line item. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Troubleshoot line items

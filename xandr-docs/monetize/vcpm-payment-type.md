@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - vCPM Payment Type
 description: In Viewable CPM (vCPM) buyers pay for impressions which are measured as viewable. Learn about buying inventory on a vCPM basis and how vCPM payment bid calculations are done, along with examples.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

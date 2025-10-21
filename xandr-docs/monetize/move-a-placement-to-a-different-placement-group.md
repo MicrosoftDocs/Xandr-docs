@@ -1,7 +1,10 @@
 ---
 title: Move a Placement to a Different Placement Group
 description: Organize website placements efficiently using placement groups for effective management of open slots on a publisher's site.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Move a placement to a different placement group

@@ -1,7 +1,10 @@
 ---
 title: Working with Video Inventory
 description: Explore concise guides for efficient video inventory management in alpha products, facilitating quickstart learning.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with video inventory

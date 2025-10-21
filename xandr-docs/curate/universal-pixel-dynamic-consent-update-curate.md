@@ -1,7 +1,9 @@
 ---
 title: Microsoft Curate - Dynamic Consent Updates for Universal Pixel
 description: Learn to implement dynamic consent updates for Universal Pixel in Google Tag Manager using JavaScript triggers and event-driven interactions.
-ms.date: 03/04/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 

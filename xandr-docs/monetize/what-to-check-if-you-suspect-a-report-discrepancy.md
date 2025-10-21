@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - What to Check if You Suspect a Discrepancy?
 description: Explore common causes of reporting discrepancies, investigate time frames, zone differences, measurement units, configuration errors, and ad server variations.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - What to check if You suspect a discrepancy?

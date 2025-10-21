@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Target Video Inventory
 description: This page covers two ways to target video inventory, by position or context and by playback method.
-ms.date: 11/14/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

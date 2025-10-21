@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Basic Buy-side Setup Procedures
 description: Learn how to setup your buying objects on the Microsoft Advertising platform. Procedures depend upon whether you will use Standard line items or Augmented Line Items (ALI).  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

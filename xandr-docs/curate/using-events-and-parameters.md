@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Use Events and Parameters
 description: Learn how Standard events allow you to capture the interactions that matter most to an advertiser. You can enhance events by adding additional information in the form of parameters.  
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

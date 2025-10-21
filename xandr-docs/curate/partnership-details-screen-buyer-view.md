@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Partnership Details Screen - Buyer view
 description: The articles describes how you can review and manage your relationship with a specific seller on the Partnership details screen.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Partnership Details screen - Buyer view

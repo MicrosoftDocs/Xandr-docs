@@ -1,7 +1,10 @@
 ---
 title: Prebid Server Premium Health Analytics Report
 description: In this article, learn about the Prebid Server Premium health analytics report along with the dimensions and metrics associated with it.
-ms.date: 07/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium health analytics report

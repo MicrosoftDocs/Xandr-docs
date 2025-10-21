@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Domain Audit Status
 description: Explore the Domain Audit Status tool to check the audit status of your domains and access various associated information.
-ms.date: 04/10/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Domain Audit Status

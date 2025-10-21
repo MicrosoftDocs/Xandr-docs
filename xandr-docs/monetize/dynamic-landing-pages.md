@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Dynamic Landing Pages
 description: Learn about Landing pages in this page. As an advertiser, you may wish to send users to different landing pages or compare the performance of different landing pages. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

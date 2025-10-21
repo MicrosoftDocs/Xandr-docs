@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - View Your Object Limits
 description: On this page, Learn to use the Object Limits Report to view object limits and find FAQs about them on this page.  
-ms.date: 11/16/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - View your object limits

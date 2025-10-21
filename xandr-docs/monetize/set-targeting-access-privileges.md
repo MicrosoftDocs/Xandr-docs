@@ -1,7 +1,10 @@
 ---
 title: Set Targeting Access Privileges
 description: Explore setting buyer-specific access, highlighting the correlation between information exposure and efficient inventory targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Set targeting access privileges

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Transparency and Consent Framework (TCF) for Universal Pixel
 description: Learn Transparency and Consent Framework (TCF) for Universal Pixel and the corresponding set up process in Monetize.
-ms.date: 01/23/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Transparency and Consent Framework (TCF) for Universal Pixel

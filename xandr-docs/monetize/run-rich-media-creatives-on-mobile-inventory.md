@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Run Rich Media Creatives on Mobile Inventory
 description: Learn how to set rich media creatives to serve on mobile devices in this page. This page talks about Interstitials impressions and where MRAID-Certified and Non-MRAID-Certified creatives will serve.  
-ms.date: 09/25/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

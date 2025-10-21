@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Migration to Microsoft Identity Platform Login
 description: In this article, find step-by-step instructions on how to migrate the existing authentication process in Microsoft Advertising products to Microsoft Identity Platform.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Migration to Microsoft Identity Platform login

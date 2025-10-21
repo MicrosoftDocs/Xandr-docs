@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Working with Third-Party Inventory
 description: Explore non-originating third-party inventory. Learn about resold inventory, from other networks to external entities. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Working with third-party inventory

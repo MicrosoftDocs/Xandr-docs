@@ -1,8 +1,10 @@
 ---
 title: Create a Simplified Programmatic Guaranteed Deal
-
 description: Explore the process of creating a simplified programmatic guaranteed deal, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
-ms.date: 07/02/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a simplified programmatic guaranteed deal

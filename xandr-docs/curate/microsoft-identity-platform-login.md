@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Microsoft Identity Platform Login
 description: In this article, learn about using the Microsoft Identity Platform to authenticate users for Microsoft Advertising Advertising Products.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Microsoft Identity Platform login

@@ -1,7 +1,10 @@
 ---
 title: Test Conversion Pixel and Attribution
 description: In this article, find instructions on how to test conversion pixels using a test publisher and placement.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Test conversion pixel and attribution

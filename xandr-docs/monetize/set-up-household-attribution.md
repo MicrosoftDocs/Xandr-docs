@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Setting Up Household Attribution 
 description: Learn about setting up household attribution for Microsoft Monetize.
-ms.date: 10/19/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Daily Pacing
 description: Learn when enabled how Daily Pacing helps campaigns spend their budgets fairly evenly over the day. This page also addresses some common questions related to pacing.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

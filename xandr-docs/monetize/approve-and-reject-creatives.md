@@ -1,7 +1,10 @@
 ---
 title: Approve and Reject Creatives
 description: In this article, find information about how to access creative details and how to accept or reject a creative as a seller.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Approve and reject creatives

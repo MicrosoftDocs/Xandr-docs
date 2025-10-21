@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Universal Pixel
 description: The universal pixel allows for easy segmentation and measurement of user interactions on a website through a central configuration interface and unified pixel code.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Universal pixel

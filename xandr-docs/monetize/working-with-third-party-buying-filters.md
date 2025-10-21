@@ -1,7 +1,10 @@
 ---
 title: Working with Third-Party Buying Filters
 description: Explore third-party filters, manage budgets, strategically select sites—essential for buyers with limited resources.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with third-party buying filters

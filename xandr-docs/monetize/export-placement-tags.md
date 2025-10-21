@@ -1,7 +1,10 @@
 ---
 title: Export Placement Tags
 description: Explore cookie-free Microsoft Ads, ensuring data-consent-free experience with advantages like relevant calls, avoiding extra cookies.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Export placement tags

@@ -1,7 +1,10 @@
 ---
 title: Curator Margins
 description: In this article, learn about the Curator margins, their different types, and how they are calculated.
-ms.date: 09/17/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Curator margins

@@ -1,7 +1,10 @@
 ---
 title: Using Promo Sizes
 description: This page provides FAQs on Promo Sizes. Learn advantages of using promo sizes and steps to enable them in this page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

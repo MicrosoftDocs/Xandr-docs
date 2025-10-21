@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Fee Calculations
 description: Calculate partner fees by percentage or CPM, deducting from revenue. Revshare adjusts net/gross media cost, including media/data cost with BASC. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Fee calculations

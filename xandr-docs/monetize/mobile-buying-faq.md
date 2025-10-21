@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Mobile Buying FAQ
 description: Learn Mobile Reporting and General Mobile FAQs in this page.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

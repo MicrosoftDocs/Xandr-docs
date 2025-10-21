@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Use Segment Targeting with a Split
 description: This page is a step-by-step guide to target splits based on segment presence/absence, age, or value.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

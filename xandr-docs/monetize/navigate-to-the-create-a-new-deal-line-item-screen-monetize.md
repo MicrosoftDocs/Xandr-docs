@@ -1,7 +1,10 @@
 ---
 title: Navigate to the Create New PG Deal Screen
 description: Explore creating a programmatic guaranteed deal, choose pacing, and proceed on the Create New PG Deal screen for effective implementation.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Navigate to new PG Deal screen

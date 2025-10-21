@@ -1,7 +1,10 @@
 ---
 title: About Microsoft Curate
 description: Learn how Microsoft Curate allows curators to enhance sellers' inventory with proprietary assets and create unique offerings for buyers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # About Microsoft Curate

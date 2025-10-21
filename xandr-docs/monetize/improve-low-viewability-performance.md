@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Improve Low Viewability Performance
 description: In this article, learn how you can adjust your line item setup to improve viewability rate performance.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Improve low viewability performance

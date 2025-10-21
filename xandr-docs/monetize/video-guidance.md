@@ -1,7 +1,10 @@
 ---
 title: Video Guidance
 description: Learn how to run video inventory through Prebid Server Premium (PSP). This page covers concepts on Instream and Outstream along with examples.   
-ms.date: 08/10/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Video guidance

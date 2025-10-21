@@ -1,7 +1,10 @@
 ---
 title: Buying Strategies
 description: Explore buying strategies that are are required if your campaign is set to buy third-party inventory (inventory not directly managed by you).
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Buying strategies

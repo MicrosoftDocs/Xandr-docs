@@ -1,7 +1,10 @@
 ---
 title: Google Ad Manager
 description: This page lists different requirements to run ads through Google Ad Manager. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Google Ad manager

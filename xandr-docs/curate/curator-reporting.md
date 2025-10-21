@@ -1,7 +1,10 @@
 ---
 title: Report for Curators
 description: In this article, explore the available Curator reports thoroughly.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Report for Curators

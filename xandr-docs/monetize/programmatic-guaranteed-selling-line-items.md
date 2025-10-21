@@ -1,7 +1,10 @@
 ---
 title: Selling Programmatic Guaranteed Deals
 description: In this article, find information about what PG selling line items are and how to create and sell PG deals to various clients.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Selling Programmatic Guaranteed deals

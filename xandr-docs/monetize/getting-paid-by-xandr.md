@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Getting Paid
 description: Secure prompt Microsoft Ad payments by sharing banking details at contract signing and learn to update this info for timely transactions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Getting paid

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Customize Your Buyer Profile
 description: This page is a step-by-step guide to customize your buyer profile. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

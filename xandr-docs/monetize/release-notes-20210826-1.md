@@ -1,7 +1,10 @@
 ---
 title: Cross Device Targeting for Europe
 description: Find the release note for the updates made to Tapad cross-device targeting for Europe.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Cross device targeting for Europe

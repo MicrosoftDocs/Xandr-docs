@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Credit Limit Overview
 description: This page gives an overview on Credit Limit. Go through FAQs on Credit Limit in this page.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,9 @@
 ---
 title: Reporting in Microsoft Monetize
 description: Reporting in Microsoft Monetize offers a comprehensive and unified access to a broad set of dimensions and metrics, streamlining the reporting experience to enable users to efficiently analyze, troubleshoot, and make data-driven decision. 
-ms.date: 04/29/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

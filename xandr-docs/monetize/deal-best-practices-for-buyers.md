@@ -1,7 +1,10 @@
 ---
 title: Deal Best Practices for Buyers
 description: Learn about some best practices for buyers using the new deal functionality. This page also explains about deal delivery and deals with external sellers. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

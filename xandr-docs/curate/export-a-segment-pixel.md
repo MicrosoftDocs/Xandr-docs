@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Export a Segment Pixel
 description: This article provides steps to export a segment pixel.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Export a segment pixel

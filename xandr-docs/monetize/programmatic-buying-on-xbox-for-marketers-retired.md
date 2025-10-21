@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - Programmatic Buying on Xbox for Marketers
 description: In this article, learn the creative requirements, best practices, and recommendations for banner design in an Xbox environment.
-ms.date: 10/28/2023
-author: rupambaruah-xandr
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Programmatic buying on Xbox for marketers

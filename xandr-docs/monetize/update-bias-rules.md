@@ -1,7 +1,10 @@
 ---
 title: Update Bias Rules
 description: This page provides an overview to update Bias Rules. Learn how to view, create, duplicate and delete bias rule details from the Bias Rule Manager screen.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

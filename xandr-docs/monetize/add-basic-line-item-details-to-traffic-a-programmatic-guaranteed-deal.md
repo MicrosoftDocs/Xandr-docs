@@ -1,7 +1,10 @@
 ---
 title: Add Basic Line Item Details to Traffic a Programmatic Guaranteed Deal
 description: In this article, find step-by-step instructions for how to add basic line item details to a Programmatic Guaranteed deal
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Add basic line item details to traffic a Programmatic Guaranteed deal

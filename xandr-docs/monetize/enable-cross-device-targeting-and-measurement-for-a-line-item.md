@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Enable Cross-Device Targeting and Measurement for a Line Item
 description: Activate cross-device targeting, set frequency caps, conversion attribution, and audience targeting for users across devices.
-ms.date: 07/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Enable cross-device targeting and measurement for a line item

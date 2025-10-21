@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Associate Line Items with a Creative
 description: In this article, learn how to associate a new creative with existing line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Associate line items with a creative

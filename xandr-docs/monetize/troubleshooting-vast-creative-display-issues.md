@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Troubleshooting VAST Creatives
 description: In this article, find information about troubleshooting display issues with VAST creatives.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Troubleshooting VAST creatives

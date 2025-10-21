@@ -1,7 +1,10 @@
 ---
 title: Network Operations
 description: Explore efficient business operation and billing management on our platform. Easily handle all tasks through the listed features.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network operations

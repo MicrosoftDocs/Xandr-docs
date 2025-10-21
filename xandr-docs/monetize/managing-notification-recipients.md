@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Managing Notification Recipients
 description: Learn how you can control who recieves email notifications from Microsoft Advertising using your notification settings. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

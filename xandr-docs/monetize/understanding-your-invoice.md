@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Understand Your Invoice
 description: This page describes the types of invoices generated, their appearance, and the fields included in them.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Understand your invoice

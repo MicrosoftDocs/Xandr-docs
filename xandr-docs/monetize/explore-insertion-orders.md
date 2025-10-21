@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Explore Insertion Orders
 description: Explore vital metrics, swiftly access individual insertion orders, and provide reporting options on the Insertion Orders screen for a specific advertiser. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 # Microsoft Monetize - Explore insertion orders
 

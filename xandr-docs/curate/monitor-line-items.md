@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Monitor Line Items
 description: In this article, learn how to access line item monitoring, understand line item metrics, search for related objects, apply filters, modify display columns, and download reports.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Monitor line items

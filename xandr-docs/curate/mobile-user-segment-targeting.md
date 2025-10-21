@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Mobile User Segment Targeting
 description: In this article, find information on how to create mobile user segments and the best practices and limitations of mobile user targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Mobile user segment targeting

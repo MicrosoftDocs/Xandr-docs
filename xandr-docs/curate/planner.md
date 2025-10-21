@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Planner
 description: Optimize projections with Planner, a dynamic tool for real-time reach and delivery assessments, enabling strategic adjustments for curated deals.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Planner

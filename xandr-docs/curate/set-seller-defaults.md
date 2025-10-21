@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Set Seller Defaults
 description: In this article, learn step-by-step instructions to set seller default settings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Set seller defaults

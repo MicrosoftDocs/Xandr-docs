@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Multi-Buyer Seller Deal Metrics
 description: Explore metrics in the article, revealing insights for sellers on multi-buyer deal performance and rejection reasons.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

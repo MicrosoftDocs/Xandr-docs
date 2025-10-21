@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Video Inventory Availability Report
 description: Learn how buyers can use the Video Inventory Availability Report to know whether an inventory, that meets their specific requirement, is available for buying. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Curator Segment Performance Report
 description: Learn how the Curator Segment Performance Report provides insights to curators into how their targeted segments are contributing to the overall performance of their curated deals. This page also explains how to run your report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Create a Conversion Pixel
 description: Explore creating a conversion pixel, a tool used to monitor user actions related to advertisements crafted by an advertiser.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Create a conversion pixel

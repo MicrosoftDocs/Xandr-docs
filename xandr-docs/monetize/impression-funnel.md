@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Impression Funnel
 description: In this article, find information about the Impression Funnel and details about the metrics associated with it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Impression funnel

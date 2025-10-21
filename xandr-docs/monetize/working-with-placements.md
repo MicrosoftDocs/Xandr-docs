@@ -1,7 +1,10 @@
 ---
 title: Working with Placements
 description: Explore creating Microsoft Advertising placements. Define size, creative types, set prices, classify for targeting, enable reselling.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with placements

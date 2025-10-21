@@ -1,7 +1,10 @@
 ---
 title: Seller Creative Review List
 description: Learn how to assess the Seller Creative Review window from the Monetize screen and how sellers can review pending, approved, and rejected creatives using this window.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

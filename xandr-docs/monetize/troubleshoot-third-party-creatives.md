@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Troubleshoot Third-party Creatives across Microsoft Advertising Inventory 
 description: Microsoft Advertising supports creatives served by third-party ad servers. These creatives are subject to the same policies and quality standards as hosted creatives on our Microsoft Monetize platform.
-ms.date: 06/13/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

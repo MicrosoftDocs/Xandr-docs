@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up multi-factor authentication
 description: Explore setting up Multi-Factor Authentication (MFA) with instructions on using Auth0 Guardian or Google Authenticator for enhanced security.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up multi-factor authentication

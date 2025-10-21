@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Banner and HTML5 Creatives
 description: Learn what are Banner Creatives and HTML5 Creatives and how you can host them. This page gives an overview of what all Banner creatives and HTML5 creatives can provide.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

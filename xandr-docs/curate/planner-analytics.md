@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Planner Analytics
 description: Visualize plan performance for projected deal line-items and explore detailed and interactive projections during plan creation or editing.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Planner analytics

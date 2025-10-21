@@ -1,7 +1,10 @@
 ---
 title: Choosing the Most Useful Ad Quality Rules
 description: Explore optimizing ad display with effective Ad Quality Rules. Adjust settings for technical attributes, content, language, buyer, and brand.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Choosing the most useful ad quality rules

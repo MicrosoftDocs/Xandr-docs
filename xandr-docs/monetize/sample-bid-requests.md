@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Sample Bid Requests
 description: This page provides step-by-step instructions to sample bid request data.
-ms.date: 08/04/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

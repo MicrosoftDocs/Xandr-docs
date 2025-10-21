@@ -1,7 +1,10 @@
 ---
 title: Prebid Server Premium Identity & User Syncing
 description: In this article, find information on the types of user identifiers available for monetization with Prebid Server Premium (PSP).
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium identity & user syncing

@@ -1,19 +1,19 @@
 ### YamlMime:Hub
 
-title: Xandr Platform Documentation
-summary: Discover the documentation for the products and services of Xandr platform so that you may realise the full potential of executing programmatic advertising campaigns across screens and tapping into engaged audiences.
+title: Buying and Selling Platforms
+summary: Explore the documentation for Buying and Selling Platform products and services to unlock the full potential of programmatic advertising across screens and reach highly engaged audiences.
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 # brand: power-bi
 brand: m365
 
 metadata:
-  title: Xandr Platform Documentation
-  description: Discover the documentation of Xandr’s platform offerings - products and services that enable you to unlock the full value of running programmatic advertising campaigns across screens and tapping into engaged audiences.
+  title: Buying and Selling Platforms
+  description: Discover the documentation for Buying and Selling Platform offerings—products and services that help you unlock the full value of programmatic advertising across screens and connect with engaged audiences.
   ms.service: publisher-monetization
   ms.topic: hub-page
   author: rupambaruah-xandr
   ms.author: rupambaruah
-  ms.date: 10/14/2025
+  ms.date: 10/21/2025
   featureFlags: clicktale
   
 highlightedContent:

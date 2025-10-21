@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - OTT Video Creative Specifications
 description: Explore technical specifications of Over-the-Top (OTT) videos, focusing on the requirements for premium digital content.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - OTT video creative specifications

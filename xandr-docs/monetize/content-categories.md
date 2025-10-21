@@ -1,7 +1,10 @@
 ---
 title: Content Categories
 description: Explore categorizing inventory slices, providing metadata to detail contents in this article on content categories.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Content categories

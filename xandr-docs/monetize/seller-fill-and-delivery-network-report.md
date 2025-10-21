@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Fill and Delivery Network Reports
 description: Learn what is a Seller Fill and Delivery Network Report and how it can be used to track untransacted impressions stemming from Improper default/passback tag setup, Inventory blocklists and Video player errors.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set a Frequency Cap
 description: Explore setting frequency caps to strategically limit ad exposure, combining daily, weekly, and monthly caps for controlled creative displays.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set a frequency cap

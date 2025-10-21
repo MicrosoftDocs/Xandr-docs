@@ -1,7 +1,10 @@
 ---
 title:  Microsoft Monetize - Creative Audit Best Practices
 description: Learn best practices to be followed in Creative Auditing in this page, like submitting creatives early, pacing your creative submission and avoiding automated submissions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

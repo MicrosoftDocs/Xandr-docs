@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Migrating from Broker Fees to Partner Fees
 description: Learn the different ways Partner Fees works while migrating from Broker Fees. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

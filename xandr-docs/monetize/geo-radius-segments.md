@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Geo Radius Segments
 description: The article introduces a geo radius segment, which is a collection of data including latitude, longitude, and radius information.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Geo radius segments

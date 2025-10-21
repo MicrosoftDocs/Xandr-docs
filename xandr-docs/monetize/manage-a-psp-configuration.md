@@ -1,7 +1,10 @@
 ---
 title: Manage a PSP Configuration
 description: In this article, find instructions for how to edit, enable, disable, or delete a PSP configuration.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Manage a PSP configuration

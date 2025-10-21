@@ -1,7 +1,10 @@
 ---
 title: Enable Native Assembly for the Server Side
 description: Explore server-side Native Assembly in Monetize and create native assemblies for each associated placement to optimize and monetize efficiently.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Enable native assembly for the server side

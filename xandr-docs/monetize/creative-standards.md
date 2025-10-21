@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Creative Standards
 description: In this article, find details about what our creative standards are along with a list of prohibited content and possible disapproval reasons.
-ms.date: 08/25/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Creative standards

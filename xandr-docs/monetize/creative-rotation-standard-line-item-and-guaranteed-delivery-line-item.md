@@ -1,7 +1,10 @@
 ---
 title: Creative Rotation
 description: In this article, find information on what creative rotation is and how it works for standard line items and guaranteed delivery line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Creative rotation

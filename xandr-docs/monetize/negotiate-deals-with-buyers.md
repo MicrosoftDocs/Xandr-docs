@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Negotiate Deals with Buyers
 description: Explore how Microsoft Advertising sellers negotiate custom deals, offering special rates and inventory access for buyers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Negotiate deals with buyers

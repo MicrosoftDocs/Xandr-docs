@@ -1,8 +1,11 @@
 ---
 title: Microsoft Monetize - Budget Rollover for Line Items
 description: Find the release note for the new feature "Underspend Budget Rollover" for line items.
-ms.date: 10/28/2023
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Budget rollover for line items

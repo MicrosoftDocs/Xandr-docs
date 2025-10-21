@@ -1,7 +1,10 @@
 ---
 title: Buy Mobile Inventory Directly from a Publisher
 description: This guide is a step-by-step guide to buy mobile inventory directly from a publisher. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

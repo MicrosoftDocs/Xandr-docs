@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Availability of Reporting Data
 description: In this article, learn how, when, and for how long reporting data is available to you.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Availability of reporting data

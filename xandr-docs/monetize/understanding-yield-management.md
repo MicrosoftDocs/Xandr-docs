@@ -1,7 +1,10 @@
 ---
 title: Understanding Yield Management
 description: In this article, learn what yield management, floor rule, and bias rules are and how they work.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Understanding yield management

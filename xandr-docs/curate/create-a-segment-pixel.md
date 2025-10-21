@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create a Segment Pixel
 description: Explore user segmentation through online activities, web visits, actions, and demographics. Identify user association with target audience.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Create a segment pixel

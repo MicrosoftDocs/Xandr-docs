@@ -1,7 +1,10 @@
 ---
 title: Planning In-Stream Video Placements
 description: In this article, find information about the factors to be considered while creating placements and placement groups for in-stream video inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Planning in-stream video placements

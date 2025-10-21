@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Line Item Analytics
 description: This page provides line items analytics. Learn about Line Item Analytics, the replacement for Visual Success Data.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Line item analytics  

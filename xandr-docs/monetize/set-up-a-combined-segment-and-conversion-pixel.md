@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up a Combined Segment and Conversion Pixel
 description: Explore simplified pixel creation for unified segmentation and conversion tracking, streamlining advertiser page implementation.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up a combined segment and conversion pixel

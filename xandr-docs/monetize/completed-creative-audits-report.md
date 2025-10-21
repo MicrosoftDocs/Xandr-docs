@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Completed Creative Audits 
 description: Explore Microsoft Advertising audit reports for creatives that passed the Microsoft Advertising audit and associated charges.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Completed creative audits report

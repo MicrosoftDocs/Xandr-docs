@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Deal Auction Mechanics
 description: This article provides information on deal mechanics based on the first-price auction.
-ms.date: 08/13/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Deal auction mechanics

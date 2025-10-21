@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Offline Conversion Attribution
 description: Explore Offline conversion attribution, shifting data processing for tracking to a centralized warehouse, streamlining insights.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Offline conversion attribution

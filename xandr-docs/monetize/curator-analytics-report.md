@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Curator Analytics Report
 description: Learn how Curator Analytics Report provides insight to curators into how money is flowing from demand to supply within their curated marketplace. This page also provides steps to run this report. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

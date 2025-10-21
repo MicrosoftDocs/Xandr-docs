@@ -1,8 +1,10 @@
 ---
 title: July 08, 2025 - Updates to Inventory Manager
 description: We’ve enhanced Inventory Manager in Microsoft Monetize with a modernized, streamlined workflow designed to simplify the creation and editing of placements across all media types.
-ms.date: 07/08/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

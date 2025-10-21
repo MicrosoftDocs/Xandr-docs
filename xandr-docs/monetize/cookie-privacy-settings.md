@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Cookie Privacy Settings
 description: Manage Microsoft Advertising's cookie settings to control user data for segment targeting, frequency capping, and conversion attribution.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Cookie privacy settings

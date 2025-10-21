@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Invalid Postal and ZIP Codes
 description: In this article, learn why certain real ZIP or postal codes can be marked as invalid within the Microsoft Advertising geography targeting system.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Invalid postal and ZIP codes

@@ -1,7 +1,10 @@
 ---
 title: Line Item Pacing vs. Campaign Pacing
 description: In this article, find information about the different methods of setting pacing along with best practice recommendations.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Line item pacing vs. Campaign pacing

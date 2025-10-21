@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buy Mobile Inventory
 description: In this article, learn how to buy and setup your campaign for mobile inventory along with a list of resources on the approaches to work with mobile advertisers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Buy mobile inventory

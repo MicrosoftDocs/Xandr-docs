@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Set Up Conversions with Universal Pixel
 description: In this article, learn step-by-step instructions on how to set up conversions with universal pixel.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Set up conversions with Universal Pixel

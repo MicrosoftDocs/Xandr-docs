@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Explore and Manage Advertisers
 description: Explore advertisers' metrics via an interface managing details, child objects, and reporting options efficiently.
-ms.date: 03/10/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

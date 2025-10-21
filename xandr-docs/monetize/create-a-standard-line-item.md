@@ -1,7 +1,10 @@
 ---
 title: Create a Standard Line Item
 description: In this article, find step-by-step instructions on how to create and set up a standard line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a standard line item

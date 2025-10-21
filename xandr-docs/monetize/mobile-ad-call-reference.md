@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Mobile Ad Call Reference
 description: This document describes our mobile ad calls, the `/ssmob` and `/mob` calls, which are used to request ads for mobile apps. These calls include information about the client device as query string parameters.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

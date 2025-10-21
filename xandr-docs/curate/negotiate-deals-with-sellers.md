@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Negotiate Deals with Sellers
 description: In this page, learn how to negotiate and set up deals with sellers and external supply partners.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Negotiate deals with sellers

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Segment Pixels - Advanced
 description: Explore this article to understand segment pixels, conversion pixels, JavaScript pixels, and parameter lists.
-ms.date: 10/09/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Segment pixels - Advanced

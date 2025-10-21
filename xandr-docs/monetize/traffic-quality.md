@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Traffic Quality
 description: In this article, learn what to do if you discover suspicious traffic and find answers to some frequently asked questions about traffic quality.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Traffic quality

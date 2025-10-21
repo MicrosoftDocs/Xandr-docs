@@ -1,7 +1,10 @@
 ---
 title: Floor Rule Targeting
 description: Explore floor rule creation, using diverse targeting criteria. Subsequent sections detail various floor rule targeting types.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Floor rule targeting

@@ -1,7 +1,10 @@
 ---
 title: Network Analytics Report
 description: The article presents a network analytics report that provides comprehensive insights into both buy and sell-side data for your network.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network analytics report

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Billing Report
 description: Learn how Billing Report can be used to manage internal invoicing for your advertisers across both managed and third-party buying. This page also explains how to run the report.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Report on Viewability
 description: In this article, explore viewability definitions, metrics, reports, best practices, and learn how to incorporate viewability metrics.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Report on viewability

@@ -1,7 +1,10 @@
 ---
 title: Working with Payment Rules
 description: Explore financial pact payment rules, considering geography and frequency, for a nuanced understanding between networks and publishers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with payment rules

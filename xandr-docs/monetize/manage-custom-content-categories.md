@@ -1,7 +1,10 @@
 ---
 title: Manage Custom Content Categories
 description: Learn how you can create a new custom content category, edit the name and description of an existing custom content category and delete a custom content category in the Content Categories area of Microsoft Monetize.    
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Manage custom content categories

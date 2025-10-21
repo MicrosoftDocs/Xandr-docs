@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set up Single Credential Login
 description: Create a single credential login with this step-by-step guide. Receive a welcome email with a password setup link. Complete the process seamlessly.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up single credential login

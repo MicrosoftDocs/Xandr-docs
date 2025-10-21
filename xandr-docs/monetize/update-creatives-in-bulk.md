@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Update Creatives in bulk
 description: In this page, learn to update settings for individual or multiple creatives from the Creative Manager.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

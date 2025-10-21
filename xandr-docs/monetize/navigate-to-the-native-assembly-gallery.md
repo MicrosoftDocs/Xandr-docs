@@ -1,7 +1,10 @@
 ---
 title: Navigate to the Native Assembly Gallery
 description: Learn how to choose pre-configured native assemblies or create your own native assembly directly from the Native Assembly Gallery.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Navigate to the native assembly gallery

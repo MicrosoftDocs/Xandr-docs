@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Billing and Costs for Guaranteed Outcomes
 description: In this article, find information about the billing and costs covered by Guaranteed Outcomes.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Billing and costs for Guaranteed Outcomes

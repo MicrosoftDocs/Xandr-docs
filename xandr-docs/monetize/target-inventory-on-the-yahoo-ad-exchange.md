@@ -1,7 +1,10 @@
 ---
 title: Target Inventory on the Yahoo Ad Exchange
 description: Explore optimizing Yahoo Ad Exchange campaigns, understand target inventory, set up effective campaigns for YAX inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Target inventory on the Yahoo ad exchange

@@ -1,7 +1,10 @@
 ---
 title: Using Pulse to Check Campaign Health
 description: In this page learn to view, understand and troubleshoot Pulse Data. This page also covers how pulse can be used to confirm campaigns are live minutes after they start spending, diagnose delivery issues and confidently optimize.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

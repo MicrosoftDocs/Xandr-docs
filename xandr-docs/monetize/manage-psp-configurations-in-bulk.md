@@ -1,7 +1,10 @@
 ---
 title: Manage PSP Configurations in Bulk
 description: In this page, learn to create new PSP configurations in bulk and adding Demand Partners to existing configurations in bulk.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Manage PSP configurations in bulk

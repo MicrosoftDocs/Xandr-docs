@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Curator Bid Error Report
 description: Learn how Curator Bid Error Report helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

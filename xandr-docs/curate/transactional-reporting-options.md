@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Transactional Reporting Options
 description: This article offers reporting options for clients who need to go beyond the capabilities exposed by Curate.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Transactional reporting options

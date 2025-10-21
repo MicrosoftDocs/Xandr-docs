@@ -1,7 +1,10 @@
 ---
 title: Working with Network Tools
 description: Explore tools for efficient network management. Access General tools under the Network menu for quick setting modifications.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with network tools

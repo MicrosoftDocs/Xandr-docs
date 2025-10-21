@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting (Cross-Device)
 description: Learn how reporting on cross-device targeting and measurement is available across the Network Analytics report, the Device Analytics report, and the Data Usage report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

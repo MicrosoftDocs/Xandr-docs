@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
 description: Learn how a seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers is possible. This page also covers best practices to be followed for deal set up.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

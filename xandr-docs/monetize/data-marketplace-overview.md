@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Data Marketplace Overview
 description: In this article, find information about the workflow, filtering, and data usage for the Data Marketplace.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Data Marketplace overview

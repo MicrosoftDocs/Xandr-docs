@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Charges for Buyers
 description: Explore buyer charges, including Buyer Auction Service Charge (BASC), BASC as Bid Reduction, and related fees.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Charges for buyers

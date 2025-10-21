@@ -1,7 +1,10 @@
 ---
 title: Create and Customize a Video Placement Tag
 description: In this article, find step-by-step instructions on how to create and customize a video placement tag.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create and customize a video placement tag

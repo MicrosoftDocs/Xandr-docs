@@ -1,7 +1,10 @@
 ---
 title: Prebid Server Premium Data Passthrough
 description: In this article, find information about the data passthrough feature of Prebid Server Premium (PSP).
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium data passthrough

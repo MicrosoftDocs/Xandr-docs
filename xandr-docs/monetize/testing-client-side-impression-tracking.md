@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Testing Client-Side Impression Tracking
 description: In this article, learn how client-side impression tracking works and how to test this functionality. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Testing client-side impression tracking

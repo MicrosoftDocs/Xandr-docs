@@ -1,7 +1,10 @@
 ---
 title: Create a PG Deal with Third-Party Ad Server Pacing and Tag Integration
 description: In this article, find information on how to create and set up a PG deal that uses pacing in your ad server of record.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a PG deal with third-party ad server pacing and tag integration

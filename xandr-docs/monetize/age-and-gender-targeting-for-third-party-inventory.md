@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Age and Gender Targeting for Third-Party Inventory
 description: In this article, learn how to target inventory by age and gender for managed and third-party inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Age and gender targeting for third-party inventory

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Understand Bid Rejections
 description: This article lists out error IDs you might encounter when a bid is rejected, the cause of the errors, and the actions you can take to resolve these errors.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Understand bid rejections

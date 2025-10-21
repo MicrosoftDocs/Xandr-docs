@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Use Cases for Cross-Device Targeting and Measurement
 description: This page covers the different goals of advertisers that can be addressed by cross-device targeting, like Frequency Capping per consumer, exapanding an ad's reach to users and attributing conversions that take place on a different device.    
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

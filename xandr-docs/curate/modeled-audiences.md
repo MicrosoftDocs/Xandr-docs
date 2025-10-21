@@ -1,7 +1,9 @@
 ---
 title: Microsoft Curate - Modeled Audiences
 description: Modeled Audiences is a new feature available for Microsoft Curate that allows curators to take their first-party segments and expand them to similar users for targeting.
-ms.date: 09/16/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 

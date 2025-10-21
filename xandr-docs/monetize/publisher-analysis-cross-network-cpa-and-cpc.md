@@ -1,7 +1,10 @@
 ---
 title: Publisher Analysis - Cross Network CPA and CPC
 description: In this article, learn what cross network CPA/CPC is and how it affects the dynamic learn algorithm.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Publisher analysis - Cross network CPA and CPC

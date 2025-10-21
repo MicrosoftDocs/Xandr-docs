@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - DV360 Buyer UI Deal Acceptance Workflows
 description: This page lists steps that the buyers should folllow to accept a deal and start bidding for it once a seller's deal is uploaded to the Display Video 360 (DV360) systems. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Demand Issues
 description: Learn how Demand Issues show the bid rejections caused by buyer behavior, like native creative does not match title, creative does not support required video protocol, the accept URL is too long and creative id was not found.    
-ms.date: 05/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Demand issues

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Buy Microsoft Outlook.com Inventory
 description: In this article, learn about Microsoft Outlook.com inventory's volume, availability, creative specifications, and targeting instructions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Buy Microsoft Outlook.com inventory

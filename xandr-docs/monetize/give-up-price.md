@@ -1,7 +1,10 @@
 ---
 title: Give Up Price
 description: Optimize bids, prioritize Give Up Price. Networks use Optimized/Learn Bids. Revenue Auctions favor accuracy. Learn Auctions prioritize new Bids. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Give up price

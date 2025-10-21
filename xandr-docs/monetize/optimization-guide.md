@@ -1,7 +1,10 @@
 ---
 title: Optimization Guide
 description: Explore Microsoft Advertising for optimization insights. Uncover benefits, processes, and key components for effective utilization.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Optimization guide

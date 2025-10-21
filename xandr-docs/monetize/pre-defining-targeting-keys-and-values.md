@@ -1,7 +1,10 @@
 ---
 title: Pre-Defining Targeting Keys and Values
 description: In this article, find information about how to create and manage keys and values along with the key/value requirements.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Pre-defining targeting keys and values

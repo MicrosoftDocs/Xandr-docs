@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Control Your Deals with Sellers
 description: Manage seller transactions, access deals screen, set review preferences, accept/decline deals, and efficiently handle deal statuses.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Control your deals with sellers

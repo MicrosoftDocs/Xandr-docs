@@ -1,7 +1,10 @@
 ---
 title: Understanding Optimization
 description: In this article, find information about what optimization is, how it works, and when to use optimization.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Understanding optimization

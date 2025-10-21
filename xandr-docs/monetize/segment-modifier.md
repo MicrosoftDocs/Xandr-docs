@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Segment Modifier
 description: Segment Modifier allows you to adjust a campaign's bid at the time of the auction. In this page learn to upload your audience and modifier segments to the Batch Segment API and associate a modifier segment with your campaign via the API.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Native Inventory
 description: Examine Carrier Analytics Report; explore seamlessly integrating native ads into context for effective advertising.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Buying native inventory

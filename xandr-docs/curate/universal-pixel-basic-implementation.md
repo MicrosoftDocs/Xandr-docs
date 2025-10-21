@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Universal Pixel Basic Implementation
 description: Learn how to implement the universal pixel at the basic level. The universal pixel can track page views and identify URLs. 
-ms.date: 11/16/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Universal pixel basic implementation

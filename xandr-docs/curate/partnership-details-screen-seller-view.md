@@ -1,7 +1,10 @@
 ---
 title:  Microsoft Curate - Partnership Details Screen - Seller view
 description: Explore Seller View's Partnership Details screen for effective review and management of buyer relationships.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Partnership Details screen - Seller view

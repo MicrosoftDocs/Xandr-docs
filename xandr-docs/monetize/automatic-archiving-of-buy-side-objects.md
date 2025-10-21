@@ -1,7 +1,10 @@
 ---
 title: Automatic Archiving of Buy-Side Objects
 description: Learn how campaigns are archived once they are identified as stale or unused. This page talks about do's and dont's of Archived campaigns.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: What is an Optimization Node?
 description: Explore enhanced prediction by grouping inventory based on venues. Nodes undergo learning or optimization phases for efficient results.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # What is an optimization node?

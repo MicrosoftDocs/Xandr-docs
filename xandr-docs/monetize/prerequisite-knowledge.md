@@ -1,7 +1,10 @@
 ---
 title: Prerequisite Knowledge
 description: In this article, find information about some foundational concepts to be aware of to use optimization effectively.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Prerequisite knowledge

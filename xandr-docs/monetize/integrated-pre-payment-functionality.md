@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Integrated Pre-Payment Functionality
 description: In this article, find instructions on how to initiate the payment process with the Pre-Payment functionality.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Integrated pre-payment functionality

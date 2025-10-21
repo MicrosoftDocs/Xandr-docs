@@ -1,7 +1,10 @@
 ---
 title: Defer to Line Item
 description: In this page, learn how Defer to Line Item works, and how you can turn it on.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

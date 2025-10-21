@@ -1,7 +1,10 @@
 ---
 title: Global Privacy Platform
 description: Explore a global privacy platform efficiently managing user consent signals across diverse global privacy settings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Global privacy platform

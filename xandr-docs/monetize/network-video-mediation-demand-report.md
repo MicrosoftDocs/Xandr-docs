@@ -1,7 +1,10 @@
 ---
 title: Network Video Mediation Demand Report    
 description: Explore Network Video Mediation Demand Report that can be used to view video mediation demand metrics across multiple buyers and publishers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network video mediation demand report

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Frequency and Recency Caps
 description: Explore controlling creative exposure to users with frequency and recency caps, preventing overexposure by managing displays.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Frequency and recency caps

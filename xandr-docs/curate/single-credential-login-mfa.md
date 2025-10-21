@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Single Credential Login and Multi-Factor Authentication (MFA)
 description: Learn about a single credential login and Multi-factor Authentication (MFA) and the changes associated with it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Single credential login and Multi-factor Authentication (MFA)

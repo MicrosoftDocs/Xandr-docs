@@ -1,7 +1,10 @@
 ---
 title: Create a Custom Deal
 description: Create tailored deals, specify sellers, buyer, inventory, geography, segments, sizes, and attributes. Buyers access deals via line items or campaigns.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a custom deal

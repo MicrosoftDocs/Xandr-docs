@@ -1,9 +1,10 @@
 ---
 title: Microsoft Curate - Viewability FAQ
 description: Discover viewability metrics and reporting insights in this FAQ module, including data and measurement methods.
-ms.date: 11/16/2023
-
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

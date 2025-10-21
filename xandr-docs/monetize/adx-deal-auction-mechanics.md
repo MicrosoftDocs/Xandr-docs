@@ -1,7 +1,10 @@
 ---
 title: Google Ad Manager Deal Auction Mechanics
 description: In this article, find information about how the Google Ad Manager deal auction works, examples of bid requests - bid responses, and how to interpret bid responses on the Google Ad Manager RTB Breakout UI. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Google Ad Manager deal auction mechanics

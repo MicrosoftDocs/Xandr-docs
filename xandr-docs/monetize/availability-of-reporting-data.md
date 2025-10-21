@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Availability of Reporting Data
 description: Learn how and when Reporting Data is accessible to you. Also go through what are the pointers for scheduled reports and how many saved reports you can view in the UI.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Selling Guide
 description: This guide provides step-by-step instructions for working with managed publishers with whom you have a direct financial relationship.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

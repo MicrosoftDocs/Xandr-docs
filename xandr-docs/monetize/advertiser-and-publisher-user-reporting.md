@@ -1,7 +1,10 @@
 ---
 title: Advertiser and Publisher User Reporting
 description: In this article, learn about the Advertiser and publisher user reporting along with the dimensions and metrics associated with them.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Advertiser and publisher user reporting

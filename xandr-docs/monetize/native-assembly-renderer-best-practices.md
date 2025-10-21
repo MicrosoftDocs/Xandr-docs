@@ -1,7 +1,10 @@
 ---
 title: Native Assembly Renderer Best Practices
 description: Explore how Edit code toggle stores HTML, CSS, and JavaScript for native assembly. Changes auto-reflect in the Preview window.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Native assembly renderer best practices

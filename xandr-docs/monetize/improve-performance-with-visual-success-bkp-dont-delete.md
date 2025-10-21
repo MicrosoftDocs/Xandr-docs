@@ -1,7 +1,10 @@
 ---
 title: Improve Performance with Visual Success
 description: In this article, learn how to use the tool Visual Success to improve campaign performance.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Improve performance with Visual Success

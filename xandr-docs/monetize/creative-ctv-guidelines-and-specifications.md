@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Creative CTV Guidelines and Specifications
 description: In this article, find information about the guidelines and specifications for creatives to serve on the CTV inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Creative CTV guidelines and specifications

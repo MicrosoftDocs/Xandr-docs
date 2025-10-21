@@ -1,7 +1,10 @@
 ---
 title: Monetize Insights for Publishers
 description: This page gives an overview of Microsoft Monetize UI for publishers. Learn about demand channels which are clickable navigation tiles, global filters and settings, Ad Quality, Deals and Floor Rules in this module. 
-ms.date: 10/14/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Monetize insights for publishers

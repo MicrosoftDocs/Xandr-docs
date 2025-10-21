@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Split Priority
 description: Explore prioritizing programmable splits with unique priority numbers in Split Details grid for proper impression allocation.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set split priority

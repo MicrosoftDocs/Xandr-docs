@@ -1,7 +1,10 @@
 ---
 title: Selling Deals
 description: In this page, learn about the two ways to offer deals, through packages and by creating custom deals for buyers. Also go through a list Of links to get you started. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Explore Line Items
 description: Explore streamlined management for advertisers and publishers on the Line Items screen. Access metrics, alerts, and bulk editing options effortlessly.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore Line Items

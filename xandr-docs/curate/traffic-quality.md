@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Traffic Quality
 description: This article provides tips for dealing with suspicious traffic and answers frequently asked questions about traffic quality.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Traffic quality

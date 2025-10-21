@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Guaranteed Outcomes Results Over Time (Examples)
 description: In this article, find information about the predicted outcome rate for Guaranteed Outcomes and its impact on the amount billed versus the amount paid with examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Guaranteed outcomes results over time (Examples)

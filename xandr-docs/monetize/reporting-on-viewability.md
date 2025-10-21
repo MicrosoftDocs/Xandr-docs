@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting on viewability
 description: This page provides an overview on viewability metrics and best practices that you should follow while selecting viewable imps and viewability rate.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

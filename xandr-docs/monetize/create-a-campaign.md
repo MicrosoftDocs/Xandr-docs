@@ -1,7 +1,10 @@
 ---
 title: Create a Campaign
 description: Learn to craft web and mobile ad campaigns for effective online advertising. For deal campaigns, check Create a Deal Campaign instructions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a campaign

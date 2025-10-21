@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Change Log History Tool
 description: The Change Log, also known as the Microsoft Monetize History tool, serve as a centralized hub to review and manage changes made to the platform that impacts revenue performance.
-ms.date: 03/10/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 # Microsoft Monetize – Change log history tool

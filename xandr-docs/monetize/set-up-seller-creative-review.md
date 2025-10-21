@@ -1,7 +1,10 @@
 ---
 title: Set Up Seller Creative Review
 description: Explore and approve creatives in the Political category before serving on seller inventory. Seller review will extend to additional categories.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Set up seller creative review

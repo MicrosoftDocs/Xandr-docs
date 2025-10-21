@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Buy Microsoft Deals
 description: In this article, follow our step-by-step instructions on how to buy deals from the Microsoft Advertising Exchange and Microsoft’s Australia and New Zealand inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Buy Microsoft deals

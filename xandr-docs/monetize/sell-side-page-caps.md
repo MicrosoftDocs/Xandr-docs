@@ -1,7 +1,10 @@
 ---
 title: Sell-Side Page Caps
 description: Learn what are Page Caps and how it can be used to restrict brands, advertisers, line items, or campaigns from winning more than one ad slot per AST ad call. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

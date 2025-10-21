@@ -1,7 +1,10 @@
 ---
 title: Edit a Network User
 description: This page provides a step-by-step guide to select a Network user, edit a Network user and edit peer approval settings.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

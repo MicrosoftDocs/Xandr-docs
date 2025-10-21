@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Audio Creatives
 description: Learn about Audio Creatives in this page and information on what it provides, like higher conversion rates and use of voice.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Associate Segment Pixels with Creatives
 description: In this article, learn how to associate specific segment pixels with your creatives.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Associate segment pixels with creatives

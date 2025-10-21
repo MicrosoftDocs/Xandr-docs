@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Report Discrepancies
 description: Learn how to do exploration and analysis of report numbers to verify you have a legitimate discrepancy and prepare the information before filing a case.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

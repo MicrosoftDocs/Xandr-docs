@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - The Universal Pixel
 description: In this article, find information about the universal pixel and how it helps to segment users and track conversions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - The universal pixel

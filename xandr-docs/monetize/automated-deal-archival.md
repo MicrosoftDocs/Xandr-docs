@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Automated Deal Archival  
 description: Automatic deal archival in Microsoft Monetize ensures auctions are running efficiently on the Microsoft Advertising platform.
-ms.date: 07/28/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

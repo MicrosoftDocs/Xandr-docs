@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Mobile Creative Auditing
 description: Learn about the mobile creative Auditing process. This page addresses questions on why there is a need for an alternative landing page URL, how to display rich media creatives from within mobile apps and what are Unbranded and Targeted creatives.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

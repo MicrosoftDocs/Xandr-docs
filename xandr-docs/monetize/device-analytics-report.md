@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Device Analytics Report
 description: Learn how the Device Analytics report enables you to retrieve buy-side and sell-side performance data based on devices where impressions were served.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

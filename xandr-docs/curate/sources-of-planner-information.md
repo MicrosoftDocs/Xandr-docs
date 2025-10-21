@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Sources of Planner Information
 description: This article discusses the sources of planner information and provides estimates based on daily and weekly snapshots of historical data.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Sources of planner information

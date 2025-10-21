@@ -1,9 +1,11 @@
 ---
 title: May 09, 2025 - Prebid Server Premium Brand Blocks
 description: Explore the May 09, 2025 release, delving into Prebid Server Premium Brand Blocks
-ms.date: 05/09/2025
 ms.topic: release-notes
-ms.author: rupambaruah
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # January 09, 2025 - Prebid Server Premium Brand Blocks

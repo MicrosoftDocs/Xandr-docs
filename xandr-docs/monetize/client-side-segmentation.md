@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Client-Side Segmentation
 description: Explore using client-side segment pixels to segment audiences on websites or creatives, a prevalent method discussed in the article. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Client-side segmentation

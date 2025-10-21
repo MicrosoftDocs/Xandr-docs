@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Selling Billing Report
 description: Use this report to analyze your invoice. This page also provides steps to run this report.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

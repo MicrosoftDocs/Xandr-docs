@@ -1,7 +1,10 @@
 ---
 title: Explore Publishers
 description: Explore insights on network and publisher performance by summarizing the Publishers screen, revealing details for each associated publisher. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore publishers

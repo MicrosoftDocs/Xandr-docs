@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create Splits
 description: Learn to enable Supply Shaping, configure splits, set priorities, and activate the catch-all split in the Supply Shaping panel.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Create splits

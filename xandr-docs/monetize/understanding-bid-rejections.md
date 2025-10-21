@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Understanding Bid Rejections
 description: In this article, find a list of reasons a bid might be rejected along with possible resolution steps for buyers and/or sellers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Understanding bid rejections

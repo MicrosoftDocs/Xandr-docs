@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Understand the Debug Auction
 description: Learn how to run a debug auction and read the output you receive.
-ms.date: 11/16/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 # Microsoft Curate - Understand debug auction
 

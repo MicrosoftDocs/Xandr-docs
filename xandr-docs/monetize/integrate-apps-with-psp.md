@@ -1,7 +1,10 @@
 ---
 title: Integrate Apps with PSP
 description: Learn how to integrate app inventory with PSP. This article provides detailed information and useful resources for integration.
-ms.date: 08/19/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Integrate apps with PSP

@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Inventory Lists
 description: This page gives an overview on Inventory lists which are used to group the domains, apps, and app bundle IDs that you want to target or exclude on your insertion orders and line items.  
-ms.date: 11/14/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

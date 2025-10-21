@@ -1,7 +1,10 @@
 ---
 title: Direct Inventory Targeting
 description: In this page learn what is Direct Inventory Targeting and steps that you need to perform to include or exclude specific managed publishers, sites, or placements. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

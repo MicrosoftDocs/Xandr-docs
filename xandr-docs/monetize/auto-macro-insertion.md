@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Auto Macro Insertion
 description: In this page, learn when and why Microsoft Advertising inserts the `${CLICK_URL}` and `${CACHEBUSTER}` macros into your creative third-party tags. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

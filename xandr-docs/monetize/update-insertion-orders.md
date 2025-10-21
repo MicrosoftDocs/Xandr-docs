@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Update Insertion Orders
 description: This page provides an overview to update Insertion Orders. Learn to edit, Activate/Deactivate, and delete an Insertion Order in this page. 
-ms.date: 03/10/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

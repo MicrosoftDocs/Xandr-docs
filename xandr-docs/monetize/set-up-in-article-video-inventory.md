@@ -1,7 +1,10 @@
 ---
 title: Set Up In-Article Video Inventory
 description: Learn how to configure in-article (formerly outstream) video inventory.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Set up in-article video inventory

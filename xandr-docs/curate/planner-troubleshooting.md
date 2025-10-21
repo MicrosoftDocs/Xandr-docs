@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Troubleshoot Planner
 description: Troubleshoot targeting issues - No reach means no match. Check for conflicting parameters and refer to breakdown visualization for insights. Adjust if too restrictive.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Troubleshoot planner

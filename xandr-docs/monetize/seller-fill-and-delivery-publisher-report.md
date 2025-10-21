@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Fill and Delivery Publisher Report
 description: This report provides sellers granular information regarding all impressions sent to Microsoft Advertising and helps diagnose delivery issues all the way down to the tag and domain level. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Seller fill and delivery publisher report

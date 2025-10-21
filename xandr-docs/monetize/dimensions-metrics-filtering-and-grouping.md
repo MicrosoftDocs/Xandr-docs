@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Dimensions, Metrics, Filtering, and Grouping
 description: This page gives insights to properly design your reports along with some filtering examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

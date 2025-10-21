@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Technical Limitations of Mobile Buying
 description: In this article, find information about mobile buying limitations such as, user identification, frequency capping, geographic targeting, and more.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Technical limitations of mobile buying

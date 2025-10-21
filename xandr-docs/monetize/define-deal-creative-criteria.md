@@ -1,7 +1,10 @@
 ---
 title: Define Deal Creative Criteria
 description: Learn about Setting deal creative criteria for your Programmatic Guaranteed selling line item. You can also specify creative attributes allowed for your deal. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

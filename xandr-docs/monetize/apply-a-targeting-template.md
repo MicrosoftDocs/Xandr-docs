@@ -1,7 +1,10 @@
 ---
 title: Apply a Targeting Template
 description: In this article, find out what a targeting template is and how to apply it to a campaign.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Apply a targeting template

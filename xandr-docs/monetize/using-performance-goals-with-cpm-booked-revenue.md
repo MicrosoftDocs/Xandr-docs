@@ -1,7 +1,10 @@
 ---
 title: Using Performance Goals with CPM Booked Revenue
 description: In this page learn why it is better to use performance goals on the line item rather than Optimize to a predicted CPC/CPA goal campaign buying strategies for line items using CPM booked revenue.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

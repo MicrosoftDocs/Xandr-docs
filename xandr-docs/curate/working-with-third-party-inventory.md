@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Work with Third-Party Inventory
 description: This page contains reference material and instructions for researching and discovering Third-Party Inventory on the Microsoft Advertising Platform.
-ms.date: 11/16/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Work with third-party inventory

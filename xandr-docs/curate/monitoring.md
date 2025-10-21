@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Line Item Monitoring
 description: In this article, find links to resources about monitoring and troubleshooting all your line items in one place.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Line item monitoring

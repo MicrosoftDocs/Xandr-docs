@@ -1,7 +1,10 @@
 ---
 title: Opt Out of Gambling Ads
 description: Explore banning illegal gambling ads globally on Microsoft Advertising, control permissions in legal countries to protect publishers' inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Opt out of gambling ads

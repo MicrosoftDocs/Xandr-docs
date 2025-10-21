@@ -1,7 +1,10 @@
 ---
 title: Curator Billing Report
 description: Learn how Curator Billing Report allows you to manage internal invoicing for your curation activities. This page also explains how to run your report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

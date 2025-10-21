@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Introduction to Viewability
 description: In this article, find an overview of viewability in digital media, why viewability is important, how it works, and current Microsoft Advertising support for viewability.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Introduction to viewability

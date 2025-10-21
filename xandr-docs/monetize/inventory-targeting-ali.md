@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Inventory Targeting (ALI)
 description: In this article, find information about inventory targeting and instructions for how to target universal and custom categories.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Inventory targeting (ALI)

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Partner Center Screen - Seller view
 description: Manage partner visibility, search buyers, update profile, adjust default settings, and review buyer statistics on Partner Center screen.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Partner Center screen - Seller view

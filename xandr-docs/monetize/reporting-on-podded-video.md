@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting on Podded Video
 description: In this page, learn about the two reports that provide insight into how your podded video supply is performing on Microsoft Advertising. 
-ms.date: 06/04/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

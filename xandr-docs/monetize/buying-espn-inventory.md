@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying ESPN Inventory
 description: Learn pointers to buy OTT inventory serving on ESPN Video On Demand on CTV or ESPN Live Streaming Video. This page also mentions about a link that explains how to upload video creatives.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

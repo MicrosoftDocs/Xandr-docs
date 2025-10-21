@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - View Line Item Details (SMW)
 description: Explore Line Items Details to optimize settings, troubleshoot, and visualize performance metrics, enhancing overall efficiency. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - View line item details (SMW)

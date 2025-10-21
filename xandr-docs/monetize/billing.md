@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Billing
 description: This page gives you information on understanding and accessing your Billing information. You can view or download your invoices, view your pricing terms, view which users have access to billing information and check your credit status.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

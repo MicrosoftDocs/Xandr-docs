@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Site Domain Report
 description: This page is an overview on Seller Site Domain Report. Learn how you can use this report to see what kind of web or mobile app inventory is coming through a publisher, guarantee inventory quality and understand business impact.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

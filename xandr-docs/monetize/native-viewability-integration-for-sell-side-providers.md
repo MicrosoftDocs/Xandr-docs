@@ -1,7 +1,10 @@
 ---
 title: Native Viewability Integration for Sell-Side Providers
 description: Explore Microsoft Advertising's viewability boost for Sell-Side Providers by configuring websites to modify viewability script payloads.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Native viewability integration for sell-Side providers

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Video Inventory
 description: Explore optimizing buy-side video enhancements with suggested workflow to optimize the new enhancements for a seamless experience.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Buying video inventory

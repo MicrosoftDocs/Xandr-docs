@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Creative Macros
 description: In this article, find information on what creative macros are and a few common use cases for creative macros.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Creative macros

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Buy Microsoft Windows 3rd Party App Network Inventory
 description: The article provides an overview about Microsoft Windows 3rd party AppNetwork inventory, availability and volume, its formats and specifications, and tragetting instructions.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Buy Microsoft Windows 3rd party App Network inventory

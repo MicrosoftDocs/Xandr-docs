@@ -1,7 +1,10 @@
 ---
 title: Supply Type Targeting
 description: Explore supply type targeting specific supply types through the Inventory Type field in line item setup to streamline supply type focus.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Supply type targeting

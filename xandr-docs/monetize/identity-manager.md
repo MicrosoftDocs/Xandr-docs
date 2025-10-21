@@ -1,7 +1,9 @@
 ---
 title: Identity Manager in Microsoft Monetize 
 description: Microsoft offers a transparent, secure platform designed to support your identity strategy, prepare for a cookie-less future, and drive maximum value across Windows and Microsoft Edge.  
-ms.date: 06/16/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

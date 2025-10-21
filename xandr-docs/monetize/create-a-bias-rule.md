@@ -1,7 +1,10 @@
 ---
 title: Create a Bias Rule
 description: Optimize auctions:, apply bias, set buyer rules, use conditional impressions. Define biases (frequency, geography, placement) without altering winning bids.
-ms.date: 10/21/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a bias rule

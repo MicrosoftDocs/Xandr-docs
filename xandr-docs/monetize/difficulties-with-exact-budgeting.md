@@ -1,7 +1,10 @@
 ---
 title: Difficulties with Exact Budgeting
 description: In this page, learn why it can be difficult to spend exactly as much as you budgeted, so you can make allowances for such variations. Learn how Microsoft Advertising deals with these issues.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

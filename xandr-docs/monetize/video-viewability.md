@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Measurement of Video Viewability using VPAID Wrapper
 description: Check IAB standards for viewability. Aim for 50% in-view for 2s with VPAID-wrapped video ads. Use a wrapper to track and measure viewability.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Measurement of video viewability using VPAID wrapper

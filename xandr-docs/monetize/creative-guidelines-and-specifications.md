@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Creative Guidelines and Specifications
 description: In this article, find information about the guidelines and specifications for creatives to serve on the Microsoft Advertising platform and other third-party platforms.
-ms.date: 08/21/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Creative guidelines and specifications

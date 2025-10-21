@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Edit Seller Defaults
 description: This article provides instructions to edit seller defaults such as setting the eligibility and inventory trust for sellers.
-ms.date: 11/14/2023 
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Edit seller defaults

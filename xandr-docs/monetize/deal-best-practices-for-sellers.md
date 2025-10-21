@@ -1,7 +1,10 @@
 ---
 title: Deal Best Practices for Sellers
 description: This page gives an overview on some basic best practices for sellers using deals. This page covers when you should create a deal, when you should avoid creating a deal and setting up a deal.
-ms.date: 06/16/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

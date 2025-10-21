@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Customize your Buyer Profile
 description: This article provides step-by-step instructions to guide you through the process of customizing your buyer profile.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Customize your buyer profile

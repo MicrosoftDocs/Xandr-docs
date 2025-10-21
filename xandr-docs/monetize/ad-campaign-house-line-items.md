@@ -1,7 +1,10 @@
 ---
 title: House Line Items
 description: Learn house line items in Microsoft Monetize to promote internal campaigns, utilizing ad inventory for brand awareness, engagement, and fallback ads.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # House line items

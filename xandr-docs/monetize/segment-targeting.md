@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Segment Targeting
 description: Learn how to target users within segments by using Boolean expressions. This page explains creating boolean expressions between segment groups and segments by listing boolean operators in tabular form. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 
 ---
 

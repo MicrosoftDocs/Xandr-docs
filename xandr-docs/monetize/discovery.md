@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Discovery
 description: Discovery is an optimization component that helps line items meet their goals as quickly as possible. This page will walk you through how discovery works.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

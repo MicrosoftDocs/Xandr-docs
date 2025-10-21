@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Impression Counting
 description: The amount of time between when an impression is requested and when the creative is served varies by media type. This page deals with look-back windows for each media type in a tabular form.  
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 
 ---
 

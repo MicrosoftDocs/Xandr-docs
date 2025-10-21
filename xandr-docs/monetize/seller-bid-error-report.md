@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Bid Error Report
 description: Learn what is the Seller Bid Error Report and how it can be used to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

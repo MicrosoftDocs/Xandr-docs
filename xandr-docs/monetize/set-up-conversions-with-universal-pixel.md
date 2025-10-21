@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up Conversions with Universal Pixel
 description: Explore setting up universal pixel conversions using rules, conditions, and Microsoft Monetize reporting for efficient tracking.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up conversions with universal pixel

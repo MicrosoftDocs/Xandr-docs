@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 10/18/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize -  Historical reporting

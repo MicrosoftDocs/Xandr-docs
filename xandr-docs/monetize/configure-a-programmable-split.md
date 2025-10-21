@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Configure a Programmable Split
 description: Explore enhanced line item targeting with programmable splits. Dynamically adjust bids, budget, and creative allocation for sophisticated targeting needs.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Configure a programmable split

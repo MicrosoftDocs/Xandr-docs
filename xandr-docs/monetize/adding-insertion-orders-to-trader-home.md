@@ -1,7 +1,10 @@
 ---
 title: Adding Insertion Orders to Trader Home
 description: In this article, find out how to track an insertion order from Trader Home.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Adding insertion orders to Trader Home

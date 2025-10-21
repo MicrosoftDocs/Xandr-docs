@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Birthday Cookies
 description: Learn what is a Birthday Cookie and when it is generated. In this page, go through use cases for sellers and buyers for the birthday cookie.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

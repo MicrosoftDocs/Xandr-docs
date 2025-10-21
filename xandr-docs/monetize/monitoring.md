@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Seller Monitoring Workflow (SMW) grid for Line items
 description: Explore streamlined line-item management, monitor, edit, troubleshoot—all in one view for efficient oversight and resolution.
-ms.date: 03/05/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Microsoft Advertising Direct for Buyers
 description: In this article, find information about what Microsoft Advertising Direct is, the selection criteria for sellers, and how to access Microsoft Advertising direct.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Microsoft Advertising direct for buyers

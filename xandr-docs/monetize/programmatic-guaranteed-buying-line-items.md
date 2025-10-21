@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Programmatic Guaranteed Buying Line Items
 description: In this article, understand what a PG buying line item and a PG deal are, the advantages of PG line items, and billing and monitoring for a PG deal.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Programmatic Guaranteed buying line items

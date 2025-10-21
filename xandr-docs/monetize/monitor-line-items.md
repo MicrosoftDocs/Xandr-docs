@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - Monitor Line items 
 description: This page is an overview on Line items. Learn how to access the Seller Monitoring Workflow (SMW) feature for Line items from any Microsoft Monetize screen.
-ms.date: 10/13/2025
-ms.author: rupambaruah
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

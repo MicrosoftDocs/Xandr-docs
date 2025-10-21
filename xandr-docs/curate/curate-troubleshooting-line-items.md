@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Troubleshoot Line Items 
 description: In this article, learn how to use the Troubleshooting tab within the Line Item Details pane to troubleshoot a line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Troubleshoot Line items

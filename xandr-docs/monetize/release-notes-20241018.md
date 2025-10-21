@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - October 18, 2024 - Household Attribution
 description: Find the release note for household attribution Microsoft Monetize.
-ms.date: 10/18/2024
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

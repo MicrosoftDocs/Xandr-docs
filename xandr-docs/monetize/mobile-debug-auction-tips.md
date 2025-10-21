@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Mobile Debug Auction Tips
 description: This page describes how to spoof various mobile ad call parameters so that you can successfully run mobile debug auctions. Learn about two ways to spoof the OS using query string parameters, or using developer tools.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

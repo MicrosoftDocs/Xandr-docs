@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Reporting Guide
 description: Explore the reporting guide to understand general reporting concepts and the functioning of reports, which will help you analyze and optimize your use of Microsoft Curate.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Reporting guide

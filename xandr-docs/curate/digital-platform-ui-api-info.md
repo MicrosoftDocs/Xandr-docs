@@ -1,7 +1,10 @@
 ---
 title: Curate API
 description: Use Microsoft Curate API for automating tasks and reporting. Additional resources are available for more information.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Curate API

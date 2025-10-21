@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Native Creatives
 description: The article guides users on hosting various types of native creatives, including video, audio, banner, carousel, and app install.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Native creatives

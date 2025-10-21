@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Apply a Partner Fee to a Line Item
 description: In this article, learn how to apply a partner fee to a line item to track third-party costs.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Apply a partner fee to a line item

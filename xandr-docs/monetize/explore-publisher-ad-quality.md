@@ -1,7 +1,10 @@
 ---
 title: Explore Publisher Ad Quality
 description: Explore Publisher Ad Quality screen, highlighting network ad settings like Network Profile, Publisher Templates, and so on.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 
 ---
 # Explore publisher ad quality

@@ -1,7 +1,10 @@
 ---
 title: Mediation Bids
 description: A bid repesents the amount you think a mediated network will pay for your inventory. In this page, learn steps to create a Bid page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

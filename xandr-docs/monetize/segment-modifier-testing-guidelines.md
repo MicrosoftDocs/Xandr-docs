@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Segment Modifier Testing Guidelines
 description: In this page, learn about Technical Requirements, Analytical Requirements, recommendations and testing best practices for clients who plan to integrate with their campaigns.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

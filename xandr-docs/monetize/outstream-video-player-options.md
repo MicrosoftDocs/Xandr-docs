@@ -1,7 +1,10 @@
 ---
 title: Outstream Video Player Options
 description: Explore outstream video settings for Microsoft Monetize, configure in page code or on placement. Note that  AST overrides Monetize settings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Outstream video player options

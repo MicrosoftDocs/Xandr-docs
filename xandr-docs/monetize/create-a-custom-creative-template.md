@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Create a Custom Creative Template
 description: Explore creating a new custom creative template anytime by crafting from scratch or duplicating existing ones for modification.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Create a custom creative template

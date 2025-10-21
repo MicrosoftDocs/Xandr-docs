@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Sell Curated Deals
 description: In this article, learn how sellers can create curated deals, understand why they're useful, and how to use them effectively.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 # Microsoft Curate - Sell curated deals
 

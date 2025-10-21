@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Server Side Cookie Store
 description: Explore server-side cookie store for web app control/security. Sync user data across platforms for consistent ad campaign targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Server side cookie store

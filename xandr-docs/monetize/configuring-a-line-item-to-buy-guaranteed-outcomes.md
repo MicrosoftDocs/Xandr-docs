@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Configuring a Line Item to Buy Guaranteed Outcomes
 description: Explore configuring line items for buying guaranteed outcomes on Augmented Line Items (ALI) to streamline the process.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Configuring a line item to buy guaranteed outcomes

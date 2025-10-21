@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Fee Type
 description: Categorize fees by purpose using fee types, including Ad serving, Algorithm, Data, Reporting, Service, Technology, Viewability, and Other. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Fee type

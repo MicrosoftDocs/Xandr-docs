@@ -1,7 +1,10 @@
 ---
 title: Set Up Multi-Buyer Deals
 description: Explore setting up deals with multiple buyers across platforms/DSPs, involving all buyers on a specific platform.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Set up multi-buyer deals

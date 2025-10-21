@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Working with Segments
 description: Explore segment pixels capturing user data (webpages, actions, gender, location) for segment assignment. Reduce character count.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Working with segments

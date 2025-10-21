@@ -1,7 +1,10 @@
 ---
 title: Optimization levers
 description: Explore optimizing legacy line items, override ALI bids with Optimization levers to enhance performance. Reduce character count.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Optimization levers

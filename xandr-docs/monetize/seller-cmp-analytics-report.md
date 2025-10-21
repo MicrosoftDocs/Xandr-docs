@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller CMP Analytics Report
 description: Learn how the Seller CMP analytics report helps sellers get information on how many ad requests contained TCF strings encoded, how many ad requests contained TCF strings that were not encoded properly and information on CMP.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Audio Inventory
 description: Learn what are the prerequisites before you buy Audio Inventory on Microsoft Advertising and what are the steps to buy it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

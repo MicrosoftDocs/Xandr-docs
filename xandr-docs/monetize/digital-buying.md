@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Digital Buying
 description: This page gives a list of documents that you will get as a Digital Buyer. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

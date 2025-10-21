@@ -1,7 +1,10 @@
 ---
 title: Explore Domain Lists or App Lists
 description: Manage domains and apps, add to lists, export for safekeeping and offline use, copy to create new lists, delete existing lists.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore domain lists or app lists

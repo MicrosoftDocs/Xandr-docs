@@ -1,9 +1,11 @@
 ---
 title: Microsoft Monetize - Breaking Changes
 description: In this article, find information on what breaking changes are along with examples for breaking and non-breaking changes for Microsoft Monetize.
-ms.date: 03/11/2025
-ms.author: shsrinivasan
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Breaking changes

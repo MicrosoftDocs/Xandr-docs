@@ -1,7 +1,10 @@
 ---
 title: Required Tag Parameters for CTV Inventory
 description: Learn how you can use a single combined tag or create separate tags for each device type. This page covers additional parameters such as width and height that are used to monetize your inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - Currency Support
 description: This page gives an overview on currency. Learn what are the prerequisite concepts that you need to know and what all currencies Microsoft Advertising supports. 
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
-ms.date: 10/28/2023
 ---
 
 

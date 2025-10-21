@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Manage Relationships with Buyers
 description: This page walks you through different ways by which you can use Partner Center that manages your relationships with specific buyers. 
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

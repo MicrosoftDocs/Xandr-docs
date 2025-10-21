@@ -1,8 +1,10 @@
 ---
 title: April 10, 2025 - Copilot in Microsoft Monetize
 description: Explore the April 10, 2025 release, delving into Copilot in Microsoft Monetize that provides real-time, contextual assistance, helping users navigate the platform efficiently.
-ms.date: 04/10/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

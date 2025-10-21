@@ -1,7 +1,10 @@
 ---
 title: Target Video Attributes via Query String Parameters
 description: Explore versatile VAST XML tags to streamline video targeting. Achieve precise, user-friendly solutions for diverse devices and formats.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Target video attributes via query string parameters

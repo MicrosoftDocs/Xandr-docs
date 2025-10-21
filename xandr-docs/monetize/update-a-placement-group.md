@@ -1,7 +1,10 @@
 ---
 title: Update a Placement Group
 description: This page provides an overview to update a Placement Group. Learn to update, move and delete an existing Placement Group in this page.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

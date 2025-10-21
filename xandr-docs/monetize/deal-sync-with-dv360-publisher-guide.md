@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize -  Publisher Guide for Deal Sync with DV360 
 description: Learn all about Microsoft Advertising's integration with the Display Video 360 (DV360) Seller API in this page. This page also covers steps in deal creation and best practices to be followed during deal set up.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

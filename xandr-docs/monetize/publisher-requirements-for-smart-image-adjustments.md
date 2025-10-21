@@ -1,7 +1,10 @@
 ---
 title: Publisher Requirements for Smart Image Adjustments
 description: In this article, learn the publisher requirements to be met before using smart image adjustments.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Publisher requirements for smart image adjustments

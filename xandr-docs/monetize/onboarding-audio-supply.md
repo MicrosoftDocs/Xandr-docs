@@ -1,7 +1,10 @@
 ---
 title: Onboarding Audio Supply
 description: Leran how to modify and adjust placement settings to accept audio creatives and how to export and test placement tags. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Onboarding audio supply

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Microsoft Advertising Exchange Inventory
 description: In this article, learn how to use Microsoft Advertising Exchange to reach audiences across Microsoft properties.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Microsoft Advertising Exchange inventory

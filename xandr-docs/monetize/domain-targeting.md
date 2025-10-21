@@ -1,7 +1,10 @@
 ---
 title: Domain Targeting
 description: Learn what is Domain Targeting, where it is available and how it can be applied. This page lists steps to target domains, domain lists, or a combination of both. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

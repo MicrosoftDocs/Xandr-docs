@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Broker Fees
 description: Learn what is Broker Fees and how it provides networks to calculate payments and fees for third party brokers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

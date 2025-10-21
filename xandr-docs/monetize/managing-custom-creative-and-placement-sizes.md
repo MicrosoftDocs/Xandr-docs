@@ -1,7 +1,10 @@
 ---
 title: Managing Custom Creative and Placement Sizes
 description: Learn the different tasks that you can perform on Custom Sizes screen, like defining a new creative, editing creative, indicating whether a creative size is standard or non standard and deleting a creative.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

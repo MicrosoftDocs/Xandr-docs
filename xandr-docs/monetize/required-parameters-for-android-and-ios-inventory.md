@@ -1,7 +1,10 @@
 ---
 title: Required Tag Parameters for Android and iOS Inventory
 description: This page gives a list of parameters required by Android and iOS tags. Learn about additional parameters such as width and height to monetize your inventory which are provided in this page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

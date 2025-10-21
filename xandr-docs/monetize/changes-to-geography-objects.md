@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Changes to Geography Objects
 description: Explore recent geography targeting changes, additions, deactivations, modifications in available objects.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Changes to geography objects

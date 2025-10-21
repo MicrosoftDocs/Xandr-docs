@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Deals
 description: Learn what is a Deal. This page explains about the two ways to strike deals with sellers. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Buying deals

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create a User
 description: Create and assign roles to users, determining access levels. Personalize decimal and large number formats for each user. Follow the walkthrough.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Create a user

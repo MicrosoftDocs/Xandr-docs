@@ -1,7 +1,10 @@
 ---
 title: Rich Media and High Impact Formats
 description: Learn about some basic Rich Media formats that you can transact on Microsoft Advertising and that also offers information on app providers that specialize in Rich Media and High Impact formats.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

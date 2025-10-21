@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up Segment Targeting on a Line Item
 description: Explore setting up segment targeting for precise ad campaigns, defining and targeting specific audience segments from various sources.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up segment targeting on a line item

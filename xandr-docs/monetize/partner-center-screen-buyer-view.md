@@ -1,7 +1,10 @@
 ---
 title: Partner Center Screen - Buyer View
 description: Explore Partner Center where you can view preferred partners, search sellers, and review impression and click statistics for each.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Partner Center screen - Buyer view

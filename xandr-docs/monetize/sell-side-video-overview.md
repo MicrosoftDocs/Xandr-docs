@@ -1,7 +1,10 @@
 ---
 title: Sell-Side Video Overview
 description: This page is an overview on Sell-Side Video and discusses about the three key concepts monetization, latency, and cross-device adserving which pose a challenge to sellers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

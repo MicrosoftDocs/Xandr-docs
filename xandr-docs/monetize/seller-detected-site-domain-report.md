@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Detected Site Domain Report
 description: Learn how Seller Detected Site Domain Report helps sellers get insight on the domains being sold. This page also provides steps to run the report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

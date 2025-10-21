@@ -1,7 +1,10 @@
 ---
 title: Override Ad Quality Settings on a Deal
 description: The article guides adjusting ad quality settings in deals, empowering advertisers & publishers for customized quality control.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Override ad quality settings on a deal

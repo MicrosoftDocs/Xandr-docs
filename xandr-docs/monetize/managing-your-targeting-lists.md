@@ -1,7 +1,10 @@
 ---
 title: Managing Your Targeting Lists
 description: Learn how you can target websites by domain or mobile apps using Targeting Lists Screen. This page provides steps to choose the list and actions that you can take on the list and list items.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

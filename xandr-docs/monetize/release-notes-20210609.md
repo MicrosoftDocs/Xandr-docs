@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Open Beta for Video Inventory Recommendations
 description: Find the release note for new line-item-level video inventory recommendations.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Open Beta for video inventory recommendations

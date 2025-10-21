@@ -1,7 +1,10 @@
 ---
 title: Working with Campaigns
 description: Explore effective media buying. define budget, inventory, bidding strategies, and targeting criteria post-line-item setup for campaigns.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with campaigns

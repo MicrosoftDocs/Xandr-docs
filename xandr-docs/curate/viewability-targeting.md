@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Viewability Targeting
 description: In this page, learn how you can buy only impressions that have a certain percentage predicted viewability. 
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

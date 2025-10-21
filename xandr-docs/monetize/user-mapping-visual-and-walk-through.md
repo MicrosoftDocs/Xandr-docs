@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - User Mapping (Visual and Walk-Through)
 description: Learn how to map your internal user IDs and Microsoft Advertising user IDs using an example given in this page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

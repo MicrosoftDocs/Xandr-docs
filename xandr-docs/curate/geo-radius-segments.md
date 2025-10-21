@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Geo Radius Segments
 description: Learn how you can use geo radius segments for geographical targeting of multiple user locations in this page.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Geo Radius Segments

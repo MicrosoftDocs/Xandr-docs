@@ -1,7 +1,10 @@
 ---
 title: Seller Video Error Report
 description: The Seller Video Error Report gives insights into video errors, their causes, and how they can be used to troubleshoot video settings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

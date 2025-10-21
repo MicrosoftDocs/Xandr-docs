@@ -1,7 +1,10 @@
 ---
 title: Network Attributed Conversions Report
 description: The Network Attributed Conversions Report lets you see conversion pixel IDs, order IDs, when clicks or impressions were attributed, and other information related to attributed conversions for your network.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

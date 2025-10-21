@@ -1,8 +1,10 @@
 ---
 title: July 25, 2025 - Forecast Builder in Microsoft Monetize
 description: Forecast Builder in Microsoft Monetize enables users to explore inventory and forecasting data directly within the Monetize platform. This feature integrates the forecast-inventory-multi service into the Monetize ad server, streamlining workflows and improving the overall user experience.
-ms.date: 07/25/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

@@ -1,7 +1,9 @@
 ---
 title: Guaranteed Delivery Pacing
 description: In this article, find information about the pacing algorithm that governs how Guaranteed Delivery line items meet their budgets.
-ms.date: 06/30/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

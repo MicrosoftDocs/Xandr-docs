@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Digital Selling
 description: This page lists the documents that you can avail as a Digital Seller, and Support Contact details in case you change your billing address.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Mobile Targeting and Attribution Challenges
 description: Learn how it's difficult to perform cross-device targeting and conversion attribution on mobile inventory. On this page, we provide an overview of the key challenges that must be overcome.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

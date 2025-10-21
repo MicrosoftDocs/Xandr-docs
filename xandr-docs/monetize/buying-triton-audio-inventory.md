@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Triton Audio Inventory
 description: Explore Triton Audio Ad Exchange, test ads, set up campaigns targeting Triton audio inventory. Specify cookie preferences for player targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Buying Triton audio inventory

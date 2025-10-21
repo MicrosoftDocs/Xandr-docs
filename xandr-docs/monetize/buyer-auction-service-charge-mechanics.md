@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buyer Auction Service Charge Mechanics
 description: Learn what is a Buyer Auction Service Charge (BASC) and how it can be applied as either a fee or a deduction. In case of fee, the BASC is charged separately from Media Cost, and in deduction the BASC is applied as a component of Media Cost.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

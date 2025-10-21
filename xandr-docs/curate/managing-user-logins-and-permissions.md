@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Manage User Logins and Permissions
 description: Learn how to manage users, set up passwords, and integrate authentication with Microsoft Identity Platform.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Manage user logins and permissions

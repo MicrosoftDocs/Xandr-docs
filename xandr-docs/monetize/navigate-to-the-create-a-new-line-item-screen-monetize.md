@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Navigate to the Create New Line Item Screen
 description: Explore Microsoft Monetization. Create augmented line items directly from the Create New Line Item screen.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Navigate to the create new line item screen

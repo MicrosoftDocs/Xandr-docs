@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Configuring Tracking for Creatives
 description: Configure creative tracking by setting parameters like caps and pixels in the Pixels section when adding creatives.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Configuring tracking for creatives

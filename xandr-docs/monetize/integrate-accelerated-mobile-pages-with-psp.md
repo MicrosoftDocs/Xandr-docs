@@ -1,7 +1,10 @@
 ---
 title: Integrate Accelerated Mobile Pages with PSP
 description: In this article, find information about how to set up accelerated mobile pages (AMP) inventory with PSP.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Integrate accelerated mobile pages with PSP

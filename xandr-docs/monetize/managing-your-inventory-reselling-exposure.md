@@ -1,7 +1,10 @@
 ---
 title: Managing Your Inventory Reselling Exposure
 description: Learn how to expose your inventory for resale to other members in this page. This page covers concepts related to exposing your inventory to third-party and buyers, and exploring fields in Reselling Exposure screen.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

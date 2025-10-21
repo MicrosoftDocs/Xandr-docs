@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Managing Mobile Discrepancies
 description: Learn factors causing discrepancies on mobile devices and how to count mobile impressions in this page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

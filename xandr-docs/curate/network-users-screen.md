@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Member Users Screen
 description: Learn how to view information about network-level users and how to edit or activate/deactivate specific network-level users.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Member users screen

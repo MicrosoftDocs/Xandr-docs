@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Ad Quality Models
 description: Learn how Ad Quality Models use AI to detect and filter misleading, sensitive, or low-quality ads, enhancing user experience and platform credibility.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Ad Quality models

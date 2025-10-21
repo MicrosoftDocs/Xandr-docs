@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Video Creatives
 description: Learn what are video creatives and what they provide. This page covers the types of video inventory types on our platform, which publishers manage directly.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

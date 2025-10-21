@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Edit Buyer Eligibility, Allowed Payment Types, and Targeting Access
 description: Set the eligibility, allowed payment types, and targeting access for buyers within the Partner Center screen or on the Partner Controls tab.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Edit buyer eligibility, allowed payment types, and targeting access

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create an Advertiser
 description: Create an advertiser object before you can start running advertising campaigns and serve creatives on behalf of an advertiser.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 # Microsoft Curate - Create an advertiser
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Exploring Creatives
 description: Manage creatives easily on the Creative Manager screen, view, add, and update creatives linked to an advertiser.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Exploring creatives

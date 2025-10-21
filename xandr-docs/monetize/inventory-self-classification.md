@@ -1,7 +1,10 @@
 ---
 title: Inventory Self-Classification
 description: In this article, learn what self-classification is, why it is important, and how to self-classify.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Inventory self-classification

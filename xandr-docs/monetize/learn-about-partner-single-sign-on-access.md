@@ -1,7 +1,10 @@
 ---
 title: Partner Single Sign-on Access
 description: In this article, learn about Partner single sign-on and how it works.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Partner single sign-on access

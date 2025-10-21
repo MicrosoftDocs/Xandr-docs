@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up Audiences with Universal Pixel
 description: Explore maximizing ads using a universal pixel. Effortlessly create audience segments, set rules, and optimize targeting in line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up audiences with universal pixel

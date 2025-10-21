@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Adapting Display Strategies to Mobile Buying
 description: In this article, understand how the technical limitations of mobile buying affects your overall strategy and what you can do to adapt.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Adapting display strategies to mobile buying

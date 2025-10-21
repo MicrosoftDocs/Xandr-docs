@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Update a Custom Creative Template
 description: In this article, find instructions for how to modify the code and macros in a custom creative template.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Update a custom creative template

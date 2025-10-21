@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Adaptive Pacing
 description: In this article, learn what adaptive pacing is and its benefits.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Adaptive pacing

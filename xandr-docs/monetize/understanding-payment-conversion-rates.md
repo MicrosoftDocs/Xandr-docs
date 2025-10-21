@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Understanding Payment Conversion Rates
 description: In this article, find information about payment conversion rates, auction outcome predictions, and market-making fee.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Understanding payment conversion rates

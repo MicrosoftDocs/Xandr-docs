@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting on Conversions
 description: This page gives an overview on concepts related to conversion pixels for troubleshooting, like time taken by pixel to load, Attributed URLs that displays the URL of the website on which a conversion pixel has been placed and Attributed conversions report.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

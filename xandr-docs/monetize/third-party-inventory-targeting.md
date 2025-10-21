@@ -1,7 +1,10 @@
 ---
 title: Third-Party Inventory Targeting
 description: In this article, find instructions on how to implement third-party inventory targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Third-party inventory targeting

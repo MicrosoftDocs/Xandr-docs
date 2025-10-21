@@ -1,7 +1,10 @@
 ---
 title: Default PSAs
 description: Learn how Microsoft Advertising serves Default public service announcement creatives (PSAs or PSA creatives) to prevent serving blanks. Also, this page covers some example PSAs. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

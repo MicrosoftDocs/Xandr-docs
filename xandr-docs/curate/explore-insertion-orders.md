@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Explore Insertion Orders
 description: The Insertion Orders screen provides metrics and reporting options for individual advertisers. It allows quick access to insertion orders and line item configuration.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Explore insertion orders

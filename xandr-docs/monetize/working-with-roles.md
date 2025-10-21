@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Working with Roles
 description: Explore defining user access roles in the system at Platform or Feature level. Customize roles to meet business needs.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Working with roles

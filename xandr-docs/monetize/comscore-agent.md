@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - comScore Agent
 description: Explore optimizing Microsoft Ads via comScore Agent app, employing keywords, categorization, and brand protection for premium, brand-safe inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - comScore agent

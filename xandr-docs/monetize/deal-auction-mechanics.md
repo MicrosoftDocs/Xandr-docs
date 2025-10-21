@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Deal Auction Mechanics
 description: A deal auction can be open or private, depending on how the seller defined the deal. Learn about open and private auctions with examples in this page.
-ms.date: 08/13/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Deal auction mechanics

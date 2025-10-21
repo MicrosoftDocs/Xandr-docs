@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Bid Performance Messages for Programmatic Guaranteed Buying Line Items
 description: Learn about Bid Performance Messages and how to access them. This page also provides a link to get information about how to view bid performance messages for a specific programmatic guaranteed buying line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

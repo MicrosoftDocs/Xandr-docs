@@ -1,7 +1,10 @@
 ---
 title: Managing Targeting Templates
 description: Learn how you can use the Targeting Templates screen to view the details of each template and choose one template to act as the default for all new campaigns. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting (Mobile-Specific)
 description: This page lists reports created by Microsoft Advertising that helps you focus on mobile-specific data. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

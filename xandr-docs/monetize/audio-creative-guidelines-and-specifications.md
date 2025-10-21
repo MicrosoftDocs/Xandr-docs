@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Audio Creative Guidelines and Specifications
 description: In this page, learn about the guidelines and specifications that you must adhere to when creating audio creatives.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

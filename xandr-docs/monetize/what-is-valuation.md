@@ -1,7 +1,10 @@
 ---
 title: What is Valuation?
 description: Explore bid valuation, calculating success event bids. Advertisers gain when impressions cost less than successful actions' earnings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # What is Valuation?

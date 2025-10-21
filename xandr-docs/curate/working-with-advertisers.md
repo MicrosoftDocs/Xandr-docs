@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Work with Advertisers
 description: Learn who is an Advertiser, and why Advertiser object is placed at the top level of the buy side of the Object Hierarchy. 
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

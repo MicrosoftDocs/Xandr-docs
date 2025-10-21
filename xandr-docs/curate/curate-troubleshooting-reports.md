@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Troubleshoot Reports 
 description: In this article, learn step-by-step instructions to set up and run Troubleshooting reports that can help you troubleshoot deal line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Troubleshoot reports

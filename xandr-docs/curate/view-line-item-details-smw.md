@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - View Line Item Details
 description: Learn how to access, select, view, edit and troubleshoot line item objects in this page.  
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

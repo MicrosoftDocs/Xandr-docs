@@ -1,7 +1,10 @@
 ---
 title: Onboarding video supply
 description: Explore onboarding video strategies, adjust placements, update media types, test tags for seamless integration in learning.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Onboarding video supply

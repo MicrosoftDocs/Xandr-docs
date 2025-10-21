@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Introducing a New ALI
 description: Find the release note for the updated 'Create New Line Item' and 'Edit Line Item' screens.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Introducing a new ALI

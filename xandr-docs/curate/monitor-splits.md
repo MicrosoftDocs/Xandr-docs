@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Monitor Splits
 description: Learn about monitoring curated deal splits using the Supply Shaping grid. Analyze spend, performance, and optimize delivery effectively.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Monitor splits

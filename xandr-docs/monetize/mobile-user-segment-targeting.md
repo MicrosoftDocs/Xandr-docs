@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Mobile User Segment Targeting
 description: This page covers three methods for creating mobile in-app user segments on Microsoft Advertising along with best practices and limitations of targeting mobile users.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

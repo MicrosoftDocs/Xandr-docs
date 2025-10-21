@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Import or Export Split CSVs
 description: In this article, learn how to create or edit splits in bulk by importing a CSV specifying the details of your splits.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Import or export split CSVs

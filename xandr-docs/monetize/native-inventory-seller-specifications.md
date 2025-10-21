@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Native Inventory Seller Specifications
 description: Explore using Native Inventory Seller Specs for a global approach. Reach all sellers at once with a single campaign for efficient advertising.
-ms.date: 10/17/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Native inventory seller specifications

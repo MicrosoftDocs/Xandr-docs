@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Split Report Details
 description: Learn about the Curator Analytics report's Split dimension to analyze curated impressions and refine targeting or create new splits.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Split report details

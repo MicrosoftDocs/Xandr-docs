@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Introduction to Splits
 description: Learn how Supply Shaping refines targeting for curated deals using prioritized splits processed during ad calls.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Introduction to splits

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Create an Advertiser
 description: In this article, find step-by-step instructions on how to create and set up an advertiser object.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Create an advertiser

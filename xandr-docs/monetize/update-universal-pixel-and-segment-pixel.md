@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - Update Universal Pixel and Segment Pixel integrations for user consent signals 
 description: A guide for advertiser who operate in EEA on how to provide Microsoft with user consent signals for Universal Pixel and Segment Pixel integrations.
-ms.date: 04/10/2025
-ms.author: rupambaruah
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Update Universal Pixel and Segment Pixel integrations for user consent signals

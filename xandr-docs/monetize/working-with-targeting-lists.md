@@ -1,7 +1,10 @@
 ---
 title: Working with Targeting Lists
 description: Explore targeting lists to easily group domains/apps with similar characteristics for campaign inclusion or exclusion.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with targeting lists

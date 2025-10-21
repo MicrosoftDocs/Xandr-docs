@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Budgeting and Scheduling
 description: Explore enhanced budgeting/scheduling; define parameters, revenue type, payment model, budget, flight duration for optimal campaign management.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up line item budgeting and scheduling

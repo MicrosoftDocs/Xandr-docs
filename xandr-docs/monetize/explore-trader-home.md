@@ -1,7 +1,10 @@
 ---
 title: Explore Trader Home
 description: Explore limited-access Trader Home, showcasing insertion order metrics and facilitating quick access to details and child line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore trader home

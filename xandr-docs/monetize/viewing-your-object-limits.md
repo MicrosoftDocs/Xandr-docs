@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - View Your Object Limits
 description: Explore efficient line item, creative management with Object Limits Report. Monitor platform usage, ensure compliance, reduce characters.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - View your object limits

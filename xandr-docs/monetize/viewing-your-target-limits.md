@@ -1,7 +1,10 @@
 ---
 title: Viewing Your Target Limits 
 description: Explore Target Limits Report for target insights. Learn target type maximums to optimize campaigns for success.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Viewing your target limits

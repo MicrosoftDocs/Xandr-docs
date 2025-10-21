@@ -1,7 +1,10 @@
 ---
 title: Optimization Buying Strategies
 description: Explore legacy line items, focusing on optimizing buying strategies through two main approaches, managed and RTB.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Optimization buying strategies

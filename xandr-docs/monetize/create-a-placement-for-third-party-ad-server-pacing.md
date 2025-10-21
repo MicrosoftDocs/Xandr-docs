@@ -1,7 +1,10 @@
 ---
 title: Create a Placement for Third-Party Ad Server Pacing
 description: In this article, find information on how to create and set up a placement that is third-party pacing compliant.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a placement for third-party ad server pacing

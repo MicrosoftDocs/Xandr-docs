@@ -1,7 +1,10 @@
 ---
 title: Role Capabilities
 description: The Role capabilities define the accesses and privileges to different functions for a custom role. This page lists different role types and gives their description.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

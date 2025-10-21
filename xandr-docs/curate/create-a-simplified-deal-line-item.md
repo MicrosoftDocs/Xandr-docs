@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create a Simplified Deal Line Item
 description: In this article, explore the process of creating a simplified deal line item, either from scratch or with a template.
-ms.date: 09/05/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Create a simplified deal line item

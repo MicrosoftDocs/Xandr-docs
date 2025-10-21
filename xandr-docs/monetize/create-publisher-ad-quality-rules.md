@@ -1,7 +1,10 @@
 ---
 title: Create Publisher Ad Quality Rules
 description: In this article, find instructions on how to create publisher base and conditional rules to determine ad quality settings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create Publisher ad quality rules

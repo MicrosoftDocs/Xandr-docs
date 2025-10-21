@@ -1,7 +1,10 @@
 ---
 title: Insight Cards 
 description: Learn about Monetize Insights, which identifies issues and opportunities to help sellers monitor and optimize revenue on the platform.
-ms.date: 10/14/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Insight cards

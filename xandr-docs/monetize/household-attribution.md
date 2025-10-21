@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Household Attribution
 description: Learn about household attribution Microsoft Monetize.
-ms.date: 10/19/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

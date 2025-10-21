@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buyer Segment Performance Report
 description: Learn how a Buyer Segment Performance Report provides buyers with segment performance across multiple ad campaigns and advertisers. This page also explains how you can run the report.  
-ms.date: 05/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

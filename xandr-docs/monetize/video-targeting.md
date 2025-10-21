@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Video Targeting
 description: Explore optimizing video inventory targeting by playback method, player size, and position for effective advertising.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Video targeting

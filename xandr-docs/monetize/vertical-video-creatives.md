@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Vertical Video Creatives
 description: Learn how Vertical videos can be displayed either in a "native" or full-screen mode. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

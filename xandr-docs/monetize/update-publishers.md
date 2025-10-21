@@ -1,7 +1,10 @@
 ---
 title: Update Publishers
 description: In this page learn to update, edit, activate/deactivate and delete a Publisher in the Microsoft Advertising system.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

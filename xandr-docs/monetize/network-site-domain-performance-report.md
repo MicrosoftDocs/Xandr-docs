@@ -1,7 +1,10 @@
 ---
 title: Network Site Domain Performance Report
 description: The article discusses a report aimed at presenting performance and optimization data categorized by domain or mobile app for all advertisers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network site domain performance report

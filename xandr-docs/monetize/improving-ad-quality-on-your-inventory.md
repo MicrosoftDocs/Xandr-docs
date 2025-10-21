@@ -1,7 +1,10 @@
 ---
 title: Improving Ad Quality on Your Inventory
 description: In this article, find information about the options offered by Monetize to control what content can serve on your inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Improving ad quality on your inventory

@@ -1,9 +1,11 @@
 ---
 title: January 09, 2025 - Prebid Server Premium Flexible Configurations
 description: Explore the January 09, 2025 release, delving into PSP flexible configurations
-ms.date: 01/09/2025
 ms.topic: release-notes
-ms.author: rupambaruah
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # January 09, 2025 - Prebid Server Premium Flexible Configurations

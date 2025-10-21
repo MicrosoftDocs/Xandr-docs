@@ -1,7 +1,10 @@
 ---
 title: Reinforcing Privacy Controls Through a Cookie-Free Domain
 description: Find the release note for the new domain introduced to facilitate improved consumer privacy controls.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Reinforcing privacy controls through a cookie-free domain

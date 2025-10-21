@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Troubleshoot Multi-Factor Authentication (MFA)
 description: This article provides solutions to the most common issues associated with MFA. 
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Troubleshoot Multi-Factor Authentication (MFA)

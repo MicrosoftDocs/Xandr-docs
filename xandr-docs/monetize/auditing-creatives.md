@@ -1,7 +1,10 @@
 ---
 title:  Microsoft Monetize - Auditing Creatives
 description: Learn how Microsoft Advertising does auditing of creatives before its run on real-time inventory. This page covers when the creatives are audited and how their auditing can get prioritized.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

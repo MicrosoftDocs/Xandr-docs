@@ -1,7 +1,10 @@
 ---
 title: Explore Global Line Items
 description: Explore Global Line Item Management, uncover metrics, get alerts on serving, swiftly access details, manage child campaigns, and perform bulk editing/reporting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore global line items

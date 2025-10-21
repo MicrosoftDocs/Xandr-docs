@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - System Targeting
 description: Target users based on their operating systems, browsers, language, device model, or carrier. By default, all operating systems, browsers, and languages are targeted.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - System targeting

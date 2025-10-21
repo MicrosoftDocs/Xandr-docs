@@ -1,7 +1,10 @@
 ---
 title: Open Dynamic Allocation and Flexible Priorities
 description: Explore open dynamic allocation, flexible priorities, and adaptive ad-serving strategies for optimized resource allocation.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Open dynamic allocation and flexible priorities

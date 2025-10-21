@@ -1,7 +1,10 @@
 ---
 title: Create a Floor Rule
 description: In this article, find step-by-step instructions for how to create a base floor rule and a conditional floor rule.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a floor rule

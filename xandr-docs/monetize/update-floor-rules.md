@@ -1,7 +1,10 @@
 ---
 title: Update Floor Rules
 description: This page provides an overview to update Floor Rules. Learn how to view, edit and delete from the Floor Rules screen.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

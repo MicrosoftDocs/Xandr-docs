@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create Event Code from the UI
 description: Generate event code using universal pixel UI, instructing web developer without punctuation constraints.
-ms.date: 10/28/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Create event code from UI

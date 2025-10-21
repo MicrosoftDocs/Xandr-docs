@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Add Reporting Labels and Comments to a Line Item
 description: In this article, learn how to assign custom reporting labels and add comments to a line item for your reference.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Add reporting labels and comments to a line item

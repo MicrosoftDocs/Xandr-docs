@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Universal Pixel Audiences and Conversions
 description: Learn about universal pixel audiences and conversions. The universal pixel allows for setting up specific audiences and conversions based on complex rules. 
-ms.date: 11/16/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Universal Pixel audiences and conversions

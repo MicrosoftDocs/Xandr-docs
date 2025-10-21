@@ -1,7 +1,6 @@
 ---
 title: Managing seed segments 
 description: Managing seed segments for Modeled Audiences in Microsoft Curate.
-ms.date: 09/16/2025
 ms.date: 10/21/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate

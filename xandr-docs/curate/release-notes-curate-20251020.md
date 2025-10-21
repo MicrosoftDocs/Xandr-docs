@@ -2,7 +2,6 @@
 title: Microsoft Curate - October 20, 2025 - Bulk Edit Deals 
 description: Starting October 20, 2025, we are pleased to announce that bulk deal editing for Microsoft Curate is now available to all customers.
 ms.topic: release-notes
-ms.author: shsrinivasan
 ms.date: 10/20/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate

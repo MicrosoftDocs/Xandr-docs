@@ -1,7 +1,10 @@
 ---
 title: Associate Creatives to Campaigns
 description: In this article, find step-by-step instructions on how to associate creatives to a single campaign or multiple campaigns.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Associate creatives to campaigns

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Troubleshoot PG Buying Line Item Bid Performance
 description: In this article, find instructions on how to improve your PG buying line item's impression count and bid performance.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Troubleshoot PG buying line item bid performance

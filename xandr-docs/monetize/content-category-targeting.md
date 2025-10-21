@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Content Category Targeting
 description: Explore content category targeting for Standard Line Items; it defines exclusive targeting options, enhancing precision.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Content category targeting

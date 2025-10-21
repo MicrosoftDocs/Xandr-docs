@@ -1,7 +1,10 @@
 ---
 title: Targeting Ad Pods
 description: In this article, learn how to target ad pod slot positions through profiles.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Targeting ad pods

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Running Cost per Install Offers
 description: This page covers procedures for integrating with an external app install tracker, setting up the right creative click URLs and reporting on your installs.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

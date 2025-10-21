@@ -1,8 +1,10 @@
 ---
 title: July 08, 2025 - Enhanced Forecast-Shaped Pacing
 description: An update to the Forecast-Shaped Pacing (FSP) feature enhances how budgets are allocated for Guaranteed line items (GDLIs) and Programmatic Guaranteed (PG).
-ms.date: 07/08/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

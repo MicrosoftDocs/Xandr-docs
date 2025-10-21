@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Brand Review Report
 description: Learn how you can review what creative has served, the performance of creative and client brand category using the Seller Brand Review Report.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

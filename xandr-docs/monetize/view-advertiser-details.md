@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - View the SMW grid for Advertisers
 description: Explore Advertiser Details for insights. Optimize through settings, metrics, and visualizations. Unlock valuable data.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - View the SMW grid for Advertisers

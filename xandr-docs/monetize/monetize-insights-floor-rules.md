@@ -1,7 +1,10 @@
 ---
 title: Floor Rule
 description: Learn what are Floor Rules and how they enable you to view the floors with the biggest impacting blocks and how much this is changing week over week.
-ms.date: 05/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Floor rule

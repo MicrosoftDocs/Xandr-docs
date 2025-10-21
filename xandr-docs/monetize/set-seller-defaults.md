@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Seller Defaults
 description: Explore customizing default inventory trust settings on Partner Center Screen for all sellers, with options to override for individuals.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set seller defaults

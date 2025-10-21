@@ -1,7 +1,10 @@
 ---
 title: Monetize API
 description: The Digital Platform API is the only API shared across all digital platform products. Learn about API and the services that are available using the links given in this page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Monetize API

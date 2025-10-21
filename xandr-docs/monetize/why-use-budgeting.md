@@ -1,7 +1,10 @@
 ---
 title: Why Use Budgeting?
 description: The article explains budget that is client's spend or impressions goal for insertion order, line item, or campaign. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Why use budgeting?

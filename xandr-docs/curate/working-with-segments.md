@@ -1,8 +1,12 @@
 ---
 title: Microsoft Curate - Work with Segments
 description: Learn how Segment pixels use user information, like gender, location, visited webpages, and actions, to assign users to segments.
-ms.date: 11/16/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
+
 # Microsoft Curate - Work with segments
 
 Segment pixels use information about a user, such as webpages they visit, actions they take, or qualities such as gender, location, and wealth, to assign that user to a group called a segment. Segment data is written to and extracted from the server-side cookie store via segment pixels.

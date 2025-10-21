@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - User ID Mapping with getUID and mapUID
 description: Learn how getUID and mapUID can be used to map your internal user IDs and Microsoft Advertising user IDs in order to match user IDs on future requests.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

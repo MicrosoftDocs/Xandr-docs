@@ -1,7 +1,10 @@
 ---
 title: Deal Auction Mechanics for Second-Price Auction
 description: Learn how a deal auction can be open or private. This page gives an overview on open and private auctions along with examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

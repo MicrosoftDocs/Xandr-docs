@@ -1,7 +1,10 @@
 ---
 title: Explore Global Insertion Orders
 description: Explore global insertion orders, showcase metrics for direct-sold advertisers, enable swift access to details, and offer bulk editing/reporting options.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore global insertion orders

@@ -1,7 +1,10 @@
 ---
 title: PSP Common Issues and Best Practices
 description: Navigate PSP integration with tips on maximizing performance, troubleshooting errors, and optimizing collaboration with demand partners.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # PSP common issues and best practices

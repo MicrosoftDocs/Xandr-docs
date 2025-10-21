@@ -1,7 +1,10 @@
 ---
 title: Floor Prices
 description: Explore the auction dynamics, the seller's minimum accepted net bid, known as the floor price and winning requires bidding at or above this set amount.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Floor prices

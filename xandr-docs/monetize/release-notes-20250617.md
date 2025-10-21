@@ -1,8 +1,10 @@
 ---
 title: June 17, 2025 - Updates to Native Assembly
 description: Explore the June 17, 2025 release, an enhancement to Native Assembly creation process.
-ms.date: 06/17/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

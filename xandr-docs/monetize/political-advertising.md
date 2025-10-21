@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Political Advertising
 description: In this article, find information about political advertising on Microsoft Advertising, how to enable political advertising, and the requirements for political advertising.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Political advertising

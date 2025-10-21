@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Create a Segment Pixel
 description: In this article, find step-by-step instructions on how to create and set up a segment pixel.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Create a segment pixel

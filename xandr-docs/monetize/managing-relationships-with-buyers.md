@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Managing Relationships with Buyers
 description: Learn how sellers can use the Partner center to strengthen relationships with specific buyers. This page explains how sellers can use Partner Center. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Managing relationships with buyers

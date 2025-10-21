@@ -1,7 +1,10 @@
 ---
 title: Network Revenue and Billing Your Clients
 description: The article guides readers in comprehending Network Revenue, media cost, network profit, and client billing processes.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network revenue and billing your clients

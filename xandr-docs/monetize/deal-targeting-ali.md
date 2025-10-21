@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Deal Targeting (ALI)
 description: This page provides a step-by-step guide to target all deals available to you. You can select Deals in the Create New Line Item or Edit Line Item screen.    
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

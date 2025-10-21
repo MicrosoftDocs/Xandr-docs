@@ -1,7 +1,10 @@
 ---
 title: Selling In-Stream Video
 description: This page covers advantages of trafficking in-stream video placements via the Microsoft Advertising platform.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Device Type Targeting
 description: This article provides instructions to access device type targeting options.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Device type targeting

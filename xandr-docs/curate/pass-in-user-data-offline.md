@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Pass in User Data (Offline)
 description: Enable data accessibility for Microsoft Advertising campaigns by keeping it in your ad server or data warehouse.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Pass in user data offline

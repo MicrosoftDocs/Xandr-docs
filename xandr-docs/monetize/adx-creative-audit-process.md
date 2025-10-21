@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Google Ad Manager Creative Audit Process
 description: In this article, find information about the creative audit process on Google Ad Manager.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Google Ad Manager creative audit process

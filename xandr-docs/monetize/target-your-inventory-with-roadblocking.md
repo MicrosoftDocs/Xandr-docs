@@ -1,7 +1,10 @@
 ---
 title: Target Your Inventory with Roadblocking
 description: In this article, find information about roadblocking, the different categories and types of roadblocks, and how to set up roadblocks.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Target your inventory with roadblocking

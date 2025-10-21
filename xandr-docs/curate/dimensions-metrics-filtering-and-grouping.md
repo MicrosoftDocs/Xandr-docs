@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Dimensions, Metrics, Filtering, and Grouping
 description: Learn how to design reports to reduce data set size, increase relevance, and get results quickly. Requesting smaller data sets increases reporting performance.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Dimensions, metrics, filtering, and grouping

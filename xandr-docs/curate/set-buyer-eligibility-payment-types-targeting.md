@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Set Buyer Eligibility, Payment Types, and Targeting Access
 description: In this article, learn how to set the default buyer eligibility and the default allowed payment type settings.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Set buyer eligibility, payment types, and targeting access

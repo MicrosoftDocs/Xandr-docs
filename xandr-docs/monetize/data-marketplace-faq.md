@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Data Marketplace FAQ(s)
 description: In this article, find answers to frequently asked questions regarding the Data Marketplace.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Data Marketplace FAQ(s)

@@ -1,7 +1,10 @@
 ---
 title: Integrate with PSP
 description: In this article, find information about how to integrate publisher inventory with Prebid Server Premium (PSP).
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Integrate with PSP

@@ -1,7 +1,10 @@
 ---
 title: Curation Optimization
 description: In this article, learn about the Curation optimization process in detail.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Curation optimization

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Report Throttling
 description: Manage report requests by throttling at member and user levels, ensuring smooth system operation for all users.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Report throttling

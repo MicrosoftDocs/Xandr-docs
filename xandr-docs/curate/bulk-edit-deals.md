@@ -1,7 +1,9 @@
 ---
 title:  Microsoft Curate – Bulk edit deals   
 description: Certain aspects of curated deals can be edited in bulk through the Curate UI to efficiently manage monetization.
-ms.date: 09/23/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 

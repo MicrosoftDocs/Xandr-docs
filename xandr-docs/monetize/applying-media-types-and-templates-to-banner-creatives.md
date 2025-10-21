@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Applying Media Types and Templates to Banner Creatives
 description: In this article, find information on the media types and standard Microsoft Advertising and custom templates to your banner creatives.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Applying media types and templates to banner creatives

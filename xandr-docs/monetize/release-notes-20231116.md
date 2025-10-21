@@ -1,8 +1,11 @@
 ---
 title: Microsoft Monetize insights and total revenue
 description: Learn how the Total Revenue tab can be used by the Microsoft Monetize SSP and Ad Server clients.  
-ms.date: 10/28/2023
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

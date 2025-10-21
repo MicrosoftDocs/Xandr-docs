@@ -1,7 +1,10 @@
 ---
 title: Buy-Side Page Caps
 description: Learn what is a Page Cap and how it can be used. This page also covers examples to show in more detail how buy-side page caps work.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

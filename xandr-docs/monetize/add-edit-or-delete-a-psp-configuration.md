@@ -1,7 +1,10 @@
 ---
 title: Add, Edit, or Delete a PSP Configuration
 description: In this article, find information about how to add, edit, or delete a PSP configuration, and find links to resources about managing PSP configurations.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Add, edit, or delete a PSP configuration

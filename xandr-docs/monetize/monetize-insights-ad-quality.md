@@ -1,7 +1,10 @@
 ---
 title: Ad Quality
 description: In this page, learn what is an Ad Quality and how it gets configured when the client joins our platform.
-ms.date: 10/14/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Ad quality

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Microsoft Video Inventory
 description: Learn advantages of buying video on Microsoft in this page. This page covers four types of video inventory that are available programmatically.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

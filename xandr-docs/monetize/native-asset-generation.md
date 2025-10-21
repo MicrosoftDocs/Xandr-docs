@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Native Asset Generation
 description: This article outlines the process of Native Asset Generation for Microsoft Monetize.
-ms.date: 08/25/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Native Asset generation 

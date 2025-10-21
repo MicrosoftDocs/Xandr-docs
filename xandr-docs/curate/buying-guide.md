@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Buying Guide
 description: In this article, understand Microsoft Curate's buy-side capabilities and find links to resources on how to manage direct and third-party media buying for your advertisers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Buying guide

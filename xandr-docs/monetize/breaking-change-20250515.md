@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - May 15, 2025 – Updated Data Retention Policy for Identifiers and Buyer Reach & Frequency Reports   
 description: As part of a backend data migration initiative aimed at improving performance and system efficiency, we are updating the data retention policy for the Microsoft Monetize Identifiers – Distinct IDs and Microsoft Monetize Buyer Reach and Frequency reports.
-ms.date: 05/15/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

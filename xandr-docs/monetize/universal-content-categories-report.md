@@ -1,7 +1,10 @@
 ---
 title: Universal Content Categories Report
 description: In this article, learn about the universal content categories report along with the dimensions and metrics associated with it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Universal content categories report

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Single Credential Login and Multi-Factor Authentication FAQ
 description: In this article, explore the answers to frequently asked questions (FAQ) about single credential login and multi-factor authentication.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Single credential login and multi-factor authentication FAQ

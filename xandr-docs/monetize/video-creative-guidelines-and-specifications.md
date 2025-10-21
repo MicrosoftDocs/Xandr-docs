@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Video Creative Guidelines and Specifications
 description: Learn about the guidelines that all video creatives must adhere to. The guidelines gives specifications on the file size limit, recommended minimum bit rate and video dimensions, and file types to be used for video creatives. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Configuring a Native Assembly
 description: Configure native assemblies easily, select creative assets in UI or create custom HTML, CSS, and Javascript for publishers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Configuring a native assembly

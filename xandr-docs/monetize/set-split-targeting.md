@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Split Targeting
 description: Explore split targeting, define, set bid multipliers, apply goals, customize categories, toggle inclusion/exclusion.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set split targeting

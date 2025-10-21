@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Pass in User Data Offline
 description: In this article, learn about the server-side integration that allows you to make user data accessible to Microsoft Advertising ad campaigns.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Pass in user data offline

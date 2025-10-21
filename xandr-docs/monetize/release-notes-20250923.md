@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - September 23, 2025 - Unified Sign-In with Microsoft account 
 description: Starting October 20, 2025, username/password logins in Microsoft Monetize will be retired.
-ms.date: 09/23/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

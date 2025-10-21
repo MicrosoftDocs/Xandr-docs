@@ -1,7 +1,10 @@
 ---
 title: Add a Performance Goal to a Line Item
 description: In this article, find step-by-step instructions for how to add a performance goal to a line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Add a performance goal to a line item

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - User Mapping Visual and Walk-Through
 description: This page provides a visual illustration of how to map your internal user IDs and Microsoft Advertising user IDs using an example.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

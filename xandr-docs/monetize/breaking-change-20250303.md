@@ -1,8 +1,10 @@
 ---
 title: Microsoft Monetize - March 03, 2025 – Update to Data retention period in Audio, Video, and Analytics report   
 description: We are introducing a breaking change to our Audio, Video, and Analytics reports in Microsoft Monetize.
-ms.date: 03/03/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

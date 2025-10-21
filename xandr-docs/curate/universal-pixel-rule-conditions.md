@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Universal Pixel Rule Conditions
 description: Learn about Universal Pixel Rule available conditions along with examples in this page. 
-ms.date: 11/16/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

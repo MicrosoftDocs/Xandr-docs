@@ -1,7 +1,10 @@
 ---
 title: Impression Funnel (Seller Deals)
 description: Learn how the Impression Funnel panel shows curated deal metrics, including time, columns, and values.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 
 ---
 

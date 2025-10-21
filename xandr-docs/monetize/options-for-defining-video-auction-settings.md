@@ -1,7 +1,10 @@
 ---
 title: Options for Defining Video Auction Settings
 description: Explore factors for successful video auctions on a placement, transmitted via HTTP headers or bid request parameters.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Options for defining video auction settings

@@ -1,7 +1,10 @@
 ---
 title: What is a Venue?
 description: Explore optimizing predictions by grouping platform inventory into venues for uniform performance assessments based on user behavior variations. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # What is a venue?

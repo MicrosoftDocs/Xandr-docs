@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting on Guaranteed Outcomes
 description: Transaction data from Guaranteed Outcomes is identifiable by the Clearing Event associated with the type of outcome purchased. Learn how column Clearing Event is available as both a filter and a dimension in Network and Video Analytics reports and Billing report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Deals
 description: This page provides an overview on Deals in Monetize and FAQs on Bid Rejections in UI dashboard.
-ms.date: 10/14/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Deals

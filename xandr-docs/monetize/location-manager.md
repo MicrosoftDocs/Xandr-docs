@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Location Manager
 description: In this article, find information about the Location manager and the features that you can manage through it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Location manager

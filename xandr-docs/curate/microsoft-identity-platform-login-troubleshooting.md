@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Troubleshoot Microsoft Identity Platform login
 description: In this article, find answers to some of the most common scenarios that might occur while using the Microsoft Identity Platform.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Troubleshoot Microsoft Identity Platform login

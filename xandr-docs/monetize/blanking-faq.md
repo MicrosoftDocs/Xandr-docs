@@ -1,7 +1,10 @@
 ---
 title: Blanking FAQ
 description: This page covers concepts related to Blanking, like what is Blanking, why it is served, why it is charged, where to see it, how to avoid it and how it will appear on your invoice.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

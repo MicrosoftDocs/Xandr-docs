@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Create a Curated Deal Line Item 
 description: Establish curated deals where users create buyer-specific agreements, negotiating with curators to merge assets with Microsoft Advertising Marketplace supply.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Create a curated deal line item

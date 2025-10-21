@@ -1,7 +1,10 @@
 ---
 title: Viewing Visual Success Data
 description: Explore Visual Success, a tool for efficient campaign monitoring, issue detection, and goal tracking. Check top-line features in Line Item Details.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Viewing visual success data

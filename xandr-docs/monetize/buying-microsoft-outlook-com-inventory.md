@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Microsoft Outlook.com Inventory
 description: Learn how to buy Microsoft Outlook.com inventory on the Microsoft Advertising platform and adding Outlook.com creatives. This page also focuses on four key points for advertisers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

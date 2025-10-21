@@ -1,7 +1,10 @@
 ---
 title: Video Players
 description: Explore video player options, discover optimal uses, and understand Instream and Outstream Video distinctions for effective ad placement.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Video players

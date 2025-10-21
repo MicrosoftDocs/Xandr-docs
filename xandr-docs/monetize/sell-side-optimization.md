@@ -1,7 +1,10 @@
 ---
 title: Sell-Side Optimization
 description: Learn how optimization gives sellers several controls that can be leveraged to minimize risk and maximize return. This page also explains about uncertain revenue and certain revenue.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

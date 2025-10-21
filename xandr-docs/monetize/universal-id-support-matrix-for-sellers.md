@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Universal ID Support
 description: This article provides summary of the Universal IDs that are supported by Microsoft Monetize.
-ms.date: 03/04/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

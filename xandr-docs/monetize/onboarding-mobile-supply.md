@@ -1,7 +1,10 @@
 ---
 title: Onboarding Mobile Supply
 description: Explore mobile supply integration via ad calls, detailing supported integrations, including supply type and query parameters.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Onboarding mobile supply

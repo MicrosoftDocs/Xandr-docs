@@ -1,7 +1,9 @@
 ---
 title: Copilot in Microsoft Curate 
 description: Copilot in Microsoft Curate provides real-time, contextual assistance, helping you to navigate the platform efficiently.
-ms.date: 07/28/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 

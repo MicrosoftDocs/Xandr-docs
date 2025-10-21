@@ -1,7 +1,10 @@
 ---
 title: Prebid Server Premium Analytics
 description: In this article, find information about the reports that can retrieve Prebid Server Premium (PSP) activity.
-ms.date: 07/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium analytics

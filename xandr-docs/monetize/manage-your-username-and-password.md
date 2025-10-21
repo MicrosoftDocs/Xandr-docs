@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Manage Your Username and Password
 description: This page explains how to manage your username and password in Microsoft Monetize. Learn how to login after being locked out, retrieve your username, reset your password and create a new password in this page.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

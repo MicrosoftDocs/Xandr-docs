@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Get Started with Roles
 description: Learn what are roles and how it defines the actions a user is allowed to take depending upon the permissions granted to the user. 
-ms.date: 11/14/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Get started with roles

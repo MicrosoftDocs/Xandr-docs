@@ -1,7 +1,10 @@
 ---
 title: Curated Deal Floors
 description: In this article, learn about curated deal floors, fixed and standard floor types, and floor type prices.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Curated deal floors

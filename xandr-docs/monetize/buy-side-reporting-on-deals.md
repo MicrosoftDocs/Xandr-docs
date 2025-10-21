@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reporting on Deals (Buy-Side)
 description: Learn running reports to assess the performance of deals. This page lists reports that you can group by Deal to report on multiple deals at once, or you can filter by Deal to report on specific deals.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

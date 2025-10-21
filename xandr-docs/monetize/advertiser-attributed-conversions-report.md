@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Advertiser Attributed Conversions Report
 description: In this article, learn about the Advertiser attributed conversions report along with the dimensions and metrics associated with it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Advertiser attributed conversions report

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Data Usage Report
 description: The Data Usage report gives details related to your usage of data provided by third parties, the costs of that data usage and campaigns in which that data was used to target users. This page also explains steps to run this report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

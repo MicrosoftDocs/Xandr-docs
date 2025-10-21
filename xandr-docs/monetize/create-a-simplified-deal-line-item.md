@@ -1,7 +1,10 @@
 ---
 title: Create a Simplified Deal Line Item
 description: Explore the process of creating a simplified deal line item, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
-ms.date: 06/16/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Create a simplified deal line item

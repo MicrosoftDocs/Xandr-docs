@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Create Event Code from the UI
 description: In this article, find instructions on how to use the universal pixel UI to generate an event code.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Create event code from the UI

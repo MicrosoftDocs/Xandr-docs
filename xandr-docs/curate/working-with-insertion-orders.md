@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Work with Insertion Orders
 description: In this page, learn what is an Insertion Order, and how you can easily manage collections of line items, time span, and business terms with the help of Insertion Orders.
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Work with insertion orders

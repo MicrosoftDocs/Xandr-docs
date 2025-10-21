@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Valuation
 description: In this page, learn what is valuation and how it can be used to determine bid amount. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

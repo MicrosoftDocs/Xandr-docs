@@ -1,7 +1,10 @@
 ---
 title: Publisher Notifications for Outstream Video Events
 description: In this article, learn how notifications are sent to the publisher when video and ad-related events occur and how to implement them.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Publisher notifications for outstream video events

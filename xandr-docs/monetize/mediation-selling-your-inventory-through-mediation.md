@@ -1,7 +1,10 @@
 ---
 title: Selling Your Inventory Through Mediation
 description: Learn how mediation works, and walks you through the process of using our system to set up mediation with external ad networks. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Selling your inventory through mediation

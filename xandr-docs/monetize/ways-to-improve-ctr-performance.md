@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Ways to Improve Click-Through Rate (CTR) Performance
 description: Explore ways to boost CTR performance, adjust line item setup post-goal setting. Cut characters for effective strategies.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Ways to improve Click-Through Rate (CTR) performance

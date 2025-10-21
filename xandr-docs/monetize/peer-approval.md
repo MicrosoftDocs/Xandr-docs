@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Peer Approval
 description: In this article, find information about the peer approval feature and the workflow of line items that require peer approval.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Peer approval

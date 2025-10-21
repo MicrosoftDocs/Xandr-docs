@@ -1,7 +1,10 @@
 ---
 title: Impression-to-Click, Click-To-Conversion Optimization
 description: In this article, find information about the impression-to-click, click-to-conversion enhancement to our optimization logic.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Impression-to-click, Click-to-conversion optimization

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Dates and Times in Reporting
 description: This article explains how the reporting system handles time and date considerations such as time zones and daylight savings time.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Dates and times in reporting

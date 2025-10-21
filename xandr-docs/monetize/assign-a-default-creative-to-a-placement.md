@@ -1,7 +1,10 @@
 ---
 title: Assign a Default Creative to a Placement
 description: In this article, find step-by-step instructions on how to assign a default creative to a placement.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Assign a default creative to a placement

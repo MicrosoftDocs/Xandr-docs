@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - Dynamic Consent Updates for Universal Pixel
 description: Use JavaScript triggers and event-driven interactions in Google Tag Manager to update Universal Pixel consent dynamically.
-ms.date: 03/04/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

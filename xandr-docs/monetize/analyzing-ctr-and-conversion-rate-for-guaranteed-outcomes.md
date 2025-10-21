@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Analyzing CTR and Conversion Rate for Guaranteed Outcomes
 description: In this article, find information about how to analyze CTR and conversion rate using Clearing Event Units.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Analyzing CTR and conversion rate for guaranteed outcomes

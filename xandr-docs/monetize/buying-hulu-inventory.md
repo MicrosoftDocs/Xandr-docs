@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Hulu Inventory
 description: This page gives an overview on buying OTT inventory serving on Hulu.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

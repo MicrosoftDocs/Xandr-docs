@@ -1,7 +1,10 @@
 ---
 title: Guaranteed Delivery (GDALI)
 description: In this article, learn about Guaranteed delivery augmented line items and the different delivery types that they have.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Guaranteed delivery (GDALI)

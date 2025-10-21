@@ -1,7 +1,10 @@
 ---
 title: Working with Network Ad Quality
 description: Explore managing ad quality, set rules for creative attributes, size, or user session frequency to control inventory display. Reduce characters.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with network ad quality

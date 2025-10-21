@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Device Type Targeting
 description: Learn how to access Device Type Targeting options in this page. This page lists different devices and terms to which they correspond.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

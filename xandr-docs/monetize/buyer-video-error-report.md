@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buyer Video Error Report
 description: Learn about The Buyer Video Error Report and how it gives insight into video errors and their causes. This page also covers steps to run this report.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

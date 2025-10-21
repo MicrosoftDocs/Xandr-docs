@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Inventory and Brand Safety
 description: Explore line item setup with supply source, content categories, inventory preferences, block/allowlists, brand safety, and ads.txt.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set up line item inventory and brand safety

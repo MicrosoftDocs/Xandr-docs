@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Understanding the Debug Auction
 description: In this article, find information about what debug auction is, the parameters associated with it, and how to interpret a debug log along with a sample.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Understanding the debug auction

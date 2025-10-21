@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Data Cost Calculation Mechanics
 description: In this article, find information about how buyers are billed for the segments they acquire through the Data Marketplace.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Data cost calculation mechanics

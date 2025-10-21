@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Partner Center Guide
 description: Unlock potential by leveraging a Partner Center to connect with buyers and sellers, as detailed in the article.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Partner Center guide

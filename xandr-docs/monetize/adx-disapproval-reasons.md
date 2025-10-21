@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Google Ad Manager Disapproval Reasons
 description: In this article, find a list of reasons why your creative might be rejected by the Google Ad Manager along with the recommended action to resolve the rejection reason.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Google Ad Manager disapproval reasons

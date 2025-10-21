@@ -1,7 +1,10 @@
 ---
 title: Native Assembly Object Placeholders
 description: Learn adding diverse data, images, and placeholders to HTML text box in Renderer tab for native assemblies in this article.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Native assembly object placeholders

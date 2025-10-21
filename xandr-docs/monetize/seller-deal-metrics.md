@@ -1,7 +1,10 @@
 ---
 title: Seller Deal Metrics
 description: Learn what is Seller Deal Metrics and how it provides information about deal metrics, performance, and rejection reasons that is relevant to sellers. This page provides steps to run the Seller Deal Metrics report.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

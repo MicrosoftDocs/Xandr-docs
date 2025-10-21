@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Targeting and Measurement (Cross-Device)
 description: Learn how Cross-device capability enhances targeting and attribution using information from an identity graph and a database of customer information. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

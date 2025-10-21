@@ -1,7 +1,10 @@
 ---
 title: Mediation Networks
 description: Our mediation tools let you allocate inventory to networks that are not directly integrated with our platform. This page is a step-by-step guide to add a network.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

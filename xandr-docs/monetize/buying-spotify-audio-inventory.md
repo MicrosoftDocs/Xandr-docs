@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying Spotify Audio Inventory
 description: Explore Spotify Audio, grasp creative specs, campaign setup, target inventory, access supply info, leverage data, and utilize reporting options.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Buying spotify audio inventory

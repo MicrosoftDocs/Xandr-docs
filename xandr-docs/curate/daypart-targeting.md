@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Daypart Targeting
 description: Target users based on the day and time when they see impressions. You can also define whether targeting should be based on each user's timezone.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Daypart targeting

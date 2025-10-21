@@ -1,7 +1,10 @@
 ---
 title: Network Reporting
 description: Explore network reports for a cross-advertiser, cross-publisher business overview, facilitating comprehensive reporting.
-ms.date: 06/04/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network reporting

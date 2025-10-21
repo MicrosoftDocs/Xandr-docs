@@ -1,7 +1,9 @@
 ---
 title: Prebid Server Premium Ad Quality
 description: Prebid Server Premium (PSP) brings demand from other platforms to compete alongside bids from Microsoft Monetize's integrated bidders.
-ms.date: 05/02/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

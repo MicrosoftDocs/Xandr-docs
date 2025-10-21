@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Reconciling your Seller Statement with Reporting
 description: In this article, learn how to use the Selling Billing Report to assess and confirm the (Managed) Ad Serving charges on your invoice.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Reconciling your seller statement with reporting

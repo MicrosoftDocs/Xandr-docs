@@ -1,9 +1,11 @@
 ---
 title: July 7, 2025 - Changes to DV360 Deal Sync Functionality
 description: Explore the July 7, 2025 release, changes to DV360 Deal Sync functionality
-ms.date: 07/07/2025
 ms.topic: release-notes
-ms.author: rupambaruah
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # July 7, 2025 - Changes to DV360 Deal Sync Functionality

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Guaranteed Outcomes
 description: In this article, learn what Guaranteed Outcomes are and find links to resources for more information about Guaranteed Outcomes.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Guaranteed outcomes

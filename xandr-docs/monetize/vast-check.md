@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - VAST Check
 description: Learn about the different outputs you may see and corrective action that can be taken when adding a third-party VAST or VPAID video creative.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

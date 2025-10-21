@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Site Domain Performance
 description: Explore performance and optimization data by domain or mobile app with the Site Domain Performance Report for advertisers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Site domain performance

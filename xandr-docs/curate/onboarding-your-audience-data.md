@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Onboard Your Audience Data
 description: This article provides links to resources detailing three effective methods for onboarding your audience data seamlessly.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Onboard your audience data

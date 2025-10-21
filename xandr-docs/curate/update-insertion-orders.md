@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Update Insertion Orders
 description: In this page, learn about the different actions that you can take on insertion orders like how to edit, activate/deactivate and delete an insertion order.  
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

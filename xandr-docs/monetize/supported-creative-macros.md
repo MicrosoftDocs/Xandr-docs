@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Supported Creative Macros
 description: Explore creative macros that can be used for all, mobile, and video impressions. Additionally, privacy and function macros are supported as well.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Supported creative macros

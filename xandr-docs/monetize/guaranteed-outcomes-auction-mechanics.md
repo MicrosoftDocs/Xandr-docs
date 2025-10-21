@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Guaranteed Outcomes Auction Mechanics
 description: In this article, find information about how an auction works when a buyer submits a bid using Guaranteed Outcomes.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Guaranteed outcomes auction mechanics

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Manage Your Deals with Sellers
 description: Learn how to explore the Deals screen in this page. This page covers viewing, searching, reporting deals and switching to the seller mode.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

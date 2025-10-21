@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Comparison of Video Complete Buying Strategies
 description: Explore Video Complete Buying Strategies (CPCV), highlighting their related features, benefits, and applications.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Comparison of video complete buying strategies

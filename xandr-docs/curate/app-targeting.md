@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - App Targeting
 description: In this article, understand what App Targeting is and the different ways you can target apps. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - App target options

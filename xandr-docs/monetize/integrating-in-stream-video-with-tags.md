@@ -1,7 +1,10 @@
 ---
 title: Integrating In-Stream Video with Tags
 description: In this article, find resources for how to integrate in-stream video using a placement tag solution.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Integrating in-stream video with tags

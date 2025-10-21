@@ -1,7 +1,10 @@
 ---
 title: Programmatic Guaranteed Selling Line Item Targeting
 description: In this article, find information about setting up targeting settings for Programmatic Guaranteed selling line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Programmatic Guaranteed selling line item targeting

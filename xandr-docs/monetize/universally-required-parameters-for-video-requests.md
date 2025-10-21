@@ -1,7 +1,10 @@
 ---
 title: Universally Required Information for Video Requests
 description: In this article, find information about the minimum required information that all video requests must include.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Universally required information for video requests

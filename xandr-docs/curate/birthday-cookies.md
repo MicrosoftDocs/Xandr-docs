@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Birthday Cookies
 description: In this article, understand what birthday cookies are and how these segments can be useful to buyers and sellers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Birthday cookies

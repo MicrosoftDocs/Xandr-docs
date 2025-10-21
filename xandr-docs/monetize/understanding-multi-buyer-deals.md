@@ -1,7 +1,10 @@
 ---
 title: Understanding Multi-Buyer Deals
 description: In this article, find information about multi-buyer deals and the advantages that they offer to sellers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Understanding multi-buyer deals

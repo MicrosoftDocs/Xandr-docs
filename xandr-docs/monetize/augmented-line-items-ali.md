@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Augmented Line Items (ALI)
 description: Learn how Augmented line items (ALI) streamline a trader's workflow on the Microsoft Advertising platform, and what are the advantages of using it.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

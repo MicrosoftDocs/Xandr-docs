@@ -1,8 +1,10 @@
 ---
 title: May 09, 2025 - Reporting in Microsoft Monetize
 description: Explore the May 09, 2025 release, delving into Reporting in Microsoft Monetize
-ms.date: 05/09/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

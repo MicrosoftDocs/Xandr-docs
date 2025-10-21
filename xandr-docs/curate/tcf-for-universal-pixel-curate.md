@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Transparency and Consent Framework (TCF) for Universal Pixel
 description: Learn Transparency and Consent Framework (TCF) for Universal Pixel and the set up process in Curate.
-ms.date: 01/23/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Cuarte - Transparency and Consent Framework (TCF) for Universal Pixel

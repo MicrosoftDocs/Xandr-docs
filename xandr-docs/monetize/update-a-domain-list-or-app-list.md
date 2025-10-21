@@ -1,7 +1,10 @@
 ---
 title: Update a Domain List or App List
 description: This page provides an overview to update a Domain List or App List. Learn to edit name and description, add or delete domain/apps for Domain List and App List.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

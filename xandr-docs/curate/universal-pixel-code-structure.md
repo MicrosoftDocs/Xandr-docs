@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Universal Pixel Code Structure
 description: Learn the code structure of the universal Pixel for general and custom event deployments on advertiser websites.
-ms.date: 11/16/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Universal Pixel code structure

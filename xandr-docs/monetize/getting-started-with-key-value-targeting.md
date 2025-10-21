@@ -1,7 +1,10 @@
 ---
 title: Getting Started with Key/Value Targeting
 description: Explore diverse user targeting with Buy-Side options, geography, domain, and inventory. Customize using defined keys for precise targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Getting started with key/value targeting

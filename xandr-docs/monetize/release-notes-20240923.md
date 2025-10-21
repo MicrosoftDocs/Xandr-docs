@@ -1,8 +1,11 @@
 ---
 title: Microsoft Monetize - Open Beta for Native Asset Generation 
 description: Find the release note for Native Asset Generation in Microsoft Monetize
-ms.date: 09/23/2024
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Open Beta for Native Asset generation 

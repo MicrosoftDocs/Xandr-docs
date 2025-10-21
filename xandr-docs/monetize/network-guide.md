@@ -1,7 +1,10 @@
 ---
 title: Network Guide
 description: Explore universal network features for all advertisers and publishers. Understand account-wide settings for seamless operations.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network guide

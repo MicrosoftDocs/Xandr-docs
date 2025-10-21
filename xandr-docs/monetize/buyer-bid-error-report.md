@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buyer Bid Error Report
 description: Learn how Buyer Bid Error Report can be used to assess rejected demand after going through 5% of the errors logged on the Microsoft Advertising platform. 
-ms.date: 05/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

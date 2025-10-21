@@ -1,7 +1,10 @@
 ---
 title: Ad Quality and Creative Standards
 description: In this article, find information about how Ad Quality and Creative Standards interact.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Ad quality and creative standards

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Selling Curated Deals
 description: learn how you can create Curated Deals to provide buyers special access to inventory and/or data. Also, this page lists links that helps you to get you started.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

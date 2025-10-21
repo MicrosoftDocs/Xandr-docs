@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Charges for Sellers
 description: Explore seller charges, encompassing Seller Auction Service Charge, Managed Ad Serving Fee, Seller Revenue Share Minimum Fee, and other fees.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Charges for sellers

@@ -1,7 +1,10 @@
 ---
 title: Ad Server Settings
 description: In this article, find information about what ad servers are and instructions on how to create a collection of ad servers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Ad server settings

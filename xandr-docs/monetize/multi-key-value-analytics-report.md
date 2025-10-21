@@ -1,7 +1,10 @@
 ---
 title: Multi-Key Value Analytics Report
 description: Explore analytics report for Multi-Key values in your network, revealing info linked to various targeting keys and values.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Multi-key value analytics report

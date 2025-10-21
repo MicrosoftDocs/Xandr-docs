@@ -1,7 +1,10 @@
 ---
 title: Integrating for Mediation
 description: This page describes the types of integrations supported, how to set them up, and how they work.
-ms.date: 07/23/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Integrating for mediation

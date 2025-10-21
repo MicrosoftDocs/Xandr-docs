@@ -1,7 +1,10 @@
 ---
 title: Serve Default Creatives Instead of PSAs
 description: Explore default creatives over PSAs, emphasizing benefits, sustained ad revenue, user engagement in absence of suitable targeted ads.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Serve default creatives instead of PSAs

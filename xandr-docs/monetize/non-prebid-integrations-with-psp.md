@@ -1,7 +1,10 @@
 ---
 title: Non-Prebid Integrations With PSP
 description: In this article, learn about the non-prebid integrations with PSP.
-ms.date: 08/19/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Non-prebid integrations with PSP

@@ -1,7 +1,10 @@
 ---
 title: Set up Prebid Server Premium
 description: Explore Prebid Server Premium setup, prioritize resources for optimal setup, emphasizing specific order importance.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Set up Prebid Server Premium

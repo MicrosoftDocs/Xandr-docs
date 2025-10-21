@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Line Item Frequency and Recency Caps
 description: Explore managing creative display frequency/recency by setting caps at various levels; item, advertiser, order, and creative to reduce characters.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set line item frequency and recency caps

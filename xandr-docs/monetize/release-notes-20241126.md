@@ -1,8 +1,11 @@
 ---
 title: Microsoft Monetize - November 26, 2024 - Household Attribution
 description: Learn about the enhanced Blocked Bid Value metric in Microsoft Monetize Insight, helping identify impactful bid rejections to increase revenue.
-ms.date: 11/26/2024
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - November 26, 2024: Enhanced blocked bid value metric

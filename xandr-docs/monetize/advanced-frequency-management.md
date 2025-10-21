@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Advanced Frequency Management
 description: In this article, learn what Advanced Frequency Management (AFM) is, how to enable AFM, and how to get reports on AFM capping.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Advanced frequency management

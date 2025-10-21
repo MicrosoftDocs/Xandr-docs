@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Third-Party Tracking Pixels for Creatives
 description: In this article, learn about third-party tracking pixels for creatives and their advantages.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Third-party tracking pixels for creatives

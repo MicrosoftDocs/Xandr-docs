@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Political Advertising
 description: Explore US political ad compliance with laws for elections, ballot initiatives, or candidates in the article.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Political advertising

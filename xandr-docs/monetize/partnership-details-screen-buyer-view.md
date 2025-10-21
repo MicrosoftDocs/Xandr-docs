@@ -1,7 +1,10 @@
 ---
 title: Partnership Details Screen - Buyer View
 description: In this article, find information about the settings that you can manage from the buyer view of the Partnership Details screen.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Partnership Details screen - Buyer view

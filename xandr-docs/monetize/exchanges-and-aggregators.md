@@ -1,7 +1,10 @@
 ---
 title: Exchanges and Aggregators
 description: Explore inventory partnerships with major ad networks, exchanges, and SSPs, key components in the outlined article.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Exchanges and aggregators

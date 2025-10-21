@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Explore and Manage Advertisers
 description: Use the Advertisers screen to view metrics about your advertisers. It provides quick access to each advertiser's details and child objects, and reporting options.
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Explore and manage advertisers

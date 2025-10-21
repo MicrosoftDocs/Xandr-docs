@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - A Comparison of Mobile App vs. Web
 description: In this article, learn how the mobile app features are different from the web features.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - A comparison of mobile app vs. web

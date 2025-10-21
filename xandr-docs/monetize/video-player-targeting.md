@@ -1,7 +1,10 @@
 ---
 title: Video Player Targeting
 description: Optimize your video inventory targeting with expert insights on playback methods, player size, position, creative duration, and framework. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Video player targeting

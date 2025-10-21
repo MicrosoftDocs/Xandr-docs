@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Targeting (Buy-Side)
 description: This page lists the types of user and inventory targeting you can apply on your line items or campaigns. Go through a list of links for user targeting and Inventory targeting. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

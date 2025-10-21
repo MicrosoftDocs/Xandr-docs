@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Managing Relationships with Sellers
 description: Learn how a Partner Center screen can be used by buyers and sellers. Using Partner Center is important to buyers as you can manage relationships with specific sellers.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

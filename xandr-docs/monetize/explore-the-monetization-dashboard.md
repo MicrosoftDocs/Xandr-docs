@@ -1,7 +1,10 @@
 ---
 title: Explore the Monetization Dashboard
 description: Learn how the Monetization Dashboard provides a quick overview of key publisher performance metrics through various sections.
-ms.date: 10/28/2023 
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Explore the monetization dashboard

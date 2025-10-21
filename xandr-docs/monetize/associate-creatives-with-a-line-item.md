@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Associate Creatives with a Line Item
 description: In this article, find step-by-step instructions on how to associate creatives to a line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Associate creatives with a line item

@@ -1,7 +1,10 @@
 ---
 title: Ad Podding for Publishers
 description: In this article, find information on what ad pods are, what video bumpers are, and how to enable ad podding for a placement.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Ad podding for publishers

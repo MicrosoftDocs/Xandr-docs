@@ -1,7 +1,10 @@
 ---
 title: Video Content Targeting
 description: When a publisher is integrated with video taxonomy, video content can be targeted on a deal. You can target video inventory based on criteria such as the network on which the content is shown, the genre of the content, content duration, the type of program, and delivery type.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Video content targeting

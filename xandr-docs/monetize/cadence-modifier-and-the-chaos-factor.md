@@ -1,7 +1,10 @@
 ---
 title: Cadence Modifier and the Chaos Factor
 description: Explore how Cadence Modifier shapes bids, factoring in frequency and recency for precise bid amount determination.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Cadence modifier and the chaos factor

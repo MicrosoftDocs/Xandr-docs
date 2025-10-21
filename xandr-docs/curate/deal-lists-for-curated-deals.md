@@ -1,7 +1,10 @@
 ---
 title: Deal Lists for Curated Deals
 description: This article provides details on the deal lists for curated deals. A deal list is a group of deal IDs categorized for targeting across curated deal line items.
-ms.date: 11/10/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Deal lists for curated deals

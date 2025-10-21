@@ -1,7 +1,10 @@
 ---
 title: Working with Ad Quality
 description: Explore managing Ad Quality by setting rules for attributes (buyer, brand), size, or session frequency to enhance creative effectiveness.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with Ad quality

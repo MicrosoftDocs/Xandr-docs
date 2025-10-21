@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Manage Your Deals with Buyers
 description: This page provides an overview to manage your deal with buyers. Learn creating, editing, duplicating and cancelling a deal in this page. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

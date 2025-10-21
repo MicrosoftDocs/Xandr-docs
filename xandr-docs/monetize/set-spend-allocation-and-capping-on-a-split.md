@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Set Spend Allocation and Capping on a Split
 description: Explore daily budget, cap settings, and manage conflicts in spending allocation versus line item delivery goals.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Set spend allocation and capping on a split

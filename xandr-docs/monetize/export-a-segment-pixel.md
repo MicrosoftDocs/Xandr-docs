@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Export a Segment Pixel
 description: The article displays how to export a segment pixel.Export segment pixel. Choose the pixel format, recommend JavaScript tag. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Export a segment pixel

@@ -1,7 +1,9 @@
 ---
 title: Microsoft Monetize - View the SMW Grid for Insertion Orders
 description: Explore vital settings, metrics, and visuals in Insertion Order Details. Boost video viewability by using the VPAID wrapper. Learn how to access the Seller Monitoring Workflow (SMW) feature for Insertion Orders from any Microsoft Monetize screen.
-ms.date: 03/10/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 

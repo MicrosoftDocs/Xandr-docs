@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Lifetime Pacing
 description: In this article, find information on lifetime pacing and the different ways to implement it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Lifetime pacing

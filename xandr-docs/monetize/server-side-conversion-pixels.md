@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Server-Side Conversion Pixels
 description: Explore server-side pixels, crucial for mobile conversions and overcoming app sandboxing. Reference an attribution server for data capture and conversion.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Server-side conversion pixels

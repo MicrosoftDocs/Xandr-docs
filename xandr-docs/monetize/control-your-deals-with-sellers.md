@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Control Your Deals with Sellers
 description: Streamline seller deals on Deals screen, set preferences, accept/decline, and manage status using internal names for efficient organization.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Control your deals with sellers

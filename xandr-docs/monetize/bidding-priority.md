@@ -1,7 +1,10 @@
 ---
 title: Bidding Priority
 description: This page covers descriptions of methods to control the Bidding Priority. The page explains managing priority at a Campaign-Specific level, manage buying and Third-Party buyer prioritization and combining reselling priority and campaign priority.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Buy-Side Targeting
 description: This article lists the types of user and inventory targeting you can apply on your line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Buy-side targeting

@@ -1,7 +1,10 @@
 ---
 title: Configure a Placement for In-Stream Video
 description: The article shows how to set up an in-stream video placement. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Configure a placement for in-stream video

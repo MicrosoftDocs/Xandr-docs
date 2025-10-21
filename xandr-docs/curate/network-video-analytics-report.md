@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Member Video Analytics Report
 description: In this article, learn how to run the Member Video Analytics report to view video event metrics across multiple buyers and sellers for a network member.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Member video analytics report

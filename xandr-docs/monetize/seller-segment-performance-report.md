@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Seller Segment Performance Report
 description: Learn how Seller Segment Performance Report helps sellers by providing data on the usage per segment, performance per segment and facilitating data clearing.  
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

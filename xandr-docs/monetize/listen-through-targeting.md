@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Listen-Through Targeting
 description: In this article, find information about what Listen-through targeting is and how to set it up for a line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Listen-through targeting

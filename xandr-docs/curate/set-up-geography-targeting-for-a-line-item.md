@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Set Up Geography Targeting for a Line Item
 description: In this article, learn step-by-step instructions on how to set up geography targeting for a line item.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Set up geography targeting for a line item

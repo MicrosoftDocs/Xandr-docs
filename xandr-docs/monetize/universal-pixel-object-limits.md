@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Universal Pixel Object Limits
 description: In this article, find a list of limits for the different objects and requests for universal pixel.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Universal Pixel object limits

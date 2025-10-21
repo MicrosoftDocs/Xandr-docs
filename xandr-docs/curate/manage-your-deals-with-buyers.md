@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Manage Your Deals with Buyers
 description: Learn how as a seller, you can manage all deals you have with buyers on the Deals screen. This page covers exploring, filtering, monitoring, creating, editing, deleting, cancelling and reporting deals. 
-ms.date: 11/14/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 

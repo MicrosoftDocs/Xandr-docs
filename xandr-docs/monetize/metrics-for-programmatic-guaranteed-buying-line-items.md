@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Metrics for PG Buying Line Items
 description: Learn analyzing the line item's performance in bidding and delivering toward a targeted PG deal using Programmatic guaranteed (PG) buying line items. This page covers PG buying line item metrics and their descriptions. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

@@ -1,7 +1,10 @@
 ---
 title: Shorten the Targeted Learn Phase Using Bid Type Reports
 description: Explore Bid Type reports to expedite learning for new goals in campaigns and this is applicable solely to legacy line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Shorten the targeted learn phase using bid type reports

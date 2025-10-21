@@ -1,8 +1,10 @@
 ---
 title: July 28, 2025 - Copilot in Microsoft Curate
 description: Explore the July 28, 2025 release, delving into Copilot in Microsoft Curate that provides real-time, contextual assistance, helping users navigate the platform efficiently.
-ms.date: 07/28/2025
 ms.topic: release-notes
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 

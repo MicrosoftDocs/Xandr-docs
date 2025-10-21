@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Key Value Analytics Report
 description: In this article, learn about the Key Value Analytics report along with the dimensions and metrics associated with it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Key value analytics report

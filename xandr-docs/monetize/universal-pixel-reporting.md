@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Universal Pixel Reporting
 description: In this article, find links to resources regarding the additional activity reporting available for universal pixels.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Universal Pixel reporting

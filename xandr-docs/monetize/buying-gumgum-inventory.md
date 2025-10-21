@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Buying GumGum Inventory
 description: GumGum ad campaigns involve a few adjustments to the process of uploading standard display campaigns. This page will guide you through this process and explain how to display your creative via GumGum's inventory.   
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

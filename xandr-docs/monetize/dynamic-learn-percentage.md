@@ -1,7 +1,10 @@
 ---
 title: Dynamic Learn Percentage
 description: Learn about Dynamic Learn and how it can used to accelerate the learning process and improve publisher revenue eCPM. This page lists steps to show how dynamic learn is used. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

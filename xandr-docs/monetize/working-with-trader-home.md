@@ -1,7 +1,10 @@
 ---
 title: Working with Trader Home
 description: Explore Trader Home, a central hub for daily insights empowering users with insertion order details, aiding quick decision-making.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Working with Trader Home

@@ -1,8 +1,10 @@
 ---
 title: Microsoft Curate - Report on Universal Pixels
 description: Find Universal Pixel Reporting details on the Universal Pixels page, including a link to a report on pixel activity.  
-ms.date: 11/15/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Report on Universal Pixels

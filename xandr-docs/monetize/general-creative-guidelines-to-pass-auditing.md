@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - General Guidelines for Passing Creative Audits
 description: Explore key tips for successful creative audits. Gain insights and adopt best practices to ensure your work meets high standards.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - General guidelines for passing creative audits

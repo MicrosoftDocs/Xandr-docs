@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Getting Started with Roles
 description: Explore role initiation for Microsoft Advertising users, ensuring precise access control aligns with diverse business needs.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Microsoft Monetize - Getting started with roles

@@ -1,7 +1,10 @@
 ---
 title: Seller Podded Video
 description: Learn how you can use Seller Podded Video to determine the number of pods, average number of impressions sold per pod, estimate of revenue per pre-roll in comparison to mid-roll, seconds sold per pod, fill rate in seconds and number of opportunities to serve impressions if a pod was unfilled.     
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Seller podded video

@@ -1,7 +1,10 @@
 ---
 title: Guaranteed Delivery Auction Mechanics
 description: Explore the Guaranteed Delivery Auction Mechanics option which available only to Microsoft Advertising Ad Server customers.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Guaranteed delivery auction mechanics

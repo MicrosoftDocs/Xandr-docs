@@ -1,7 +1,10 @@
 ---
 title: Microsoft Monetize - Update Line Items
 description: This page provides an overview to update line items. Learn to edit, bulk edit flight dates, duplicate and delete line items in this page.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

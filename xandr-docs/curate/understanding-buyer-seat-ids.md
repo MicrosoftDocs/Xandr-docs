@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Understand Buyer Seat IDs
 description: Learn about Buyer Seat IDs, which let external DSPs use proprietary buyer IDs instead of Microsoft Advertising member IDs.
-ms.date: 11/15/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Understand buyer seat IDs

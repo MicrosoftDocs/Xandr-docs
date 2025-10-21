@@ -1,7 +1,10 @@
 ---
 title: Prebid Server Premium
 description: Learn how Microsoft Advertising's Prebid Server Premium boosts publisher revenue with unified auctions and access to 200+ demand partners.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium

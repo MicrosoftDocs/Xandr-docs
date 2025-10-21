@@ -1,7 +1,10 @@
 ---
 title: Using Minimum Margin to Balance Margin and Delivery
 description: Learn how using minimum margin you can attain right balance between delivery and margin. This page explores steps to set up the line item so that you make as much margin as possible.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 

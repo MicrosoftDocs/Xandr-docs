@@ -1,7 +1,10 @@
 ---
 title: Integrate Web/Mobile Web with PSP
 description: In this article, find information about how to integrate web and mobile web inventory with PSP.
-ms.date: 08/19/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Integrate web/mobile web with PSP

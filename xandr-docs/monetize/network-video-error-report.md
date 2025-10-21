@@ -1,7 +1,10 @@
 ---
 title: Network Video Error Report
 description: The article shows the Network Video Error Reports which you can use to troubleshoot video settings and eliminate errors relating to buy- and sell-side video advertising.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # Network video error report

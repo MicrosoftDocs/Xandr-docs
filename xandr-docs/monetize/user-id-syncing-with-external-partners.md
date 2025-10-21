@@ -1,7 +1,10 @@
 ---
 title: User ID Syncing with External Partners
 description: In this page learn about user ID syncing that Microsoft Advertising initiates to have a user ID associated with all users in all ad calls. 
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-monetize
+ms.author: shsrinivasan
 ---
 
 # User ID syncing with external partners

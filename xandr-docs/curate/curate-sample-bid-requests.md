@@ -1,7 +1,10 @@
 ---
 title: Microsoft Curate - Sample Bid Requests
 description: In this article, learn about sample bid requests and how you can download the sample bid request data results as a text file.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: microsoft-curate
+ms.author: shsrinivasan
 ---
 
 # Microsoft Curate - Sample bid requests

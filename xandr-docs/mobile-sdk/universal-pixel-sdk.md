@@ -1,8 +1,10 @@
 ---
 title: Universal pixel SDK
 description: The article covers user interactions on websites through a pixel and how the Universal Pixel SDK (Pixie SDK) allows easy integration within applications.
-ms.custom: android-sdk, ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 # Universal pixel SDK
 

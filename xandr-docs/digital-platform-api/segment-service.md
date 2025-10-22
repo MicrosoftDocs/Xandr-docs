@@ -1,8 +1,10 @@
 ---
 title: Segment Service
 description: Use the Segment service to create segment IDs for inventory page placement and store them in the server-side cookie store.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Segment service

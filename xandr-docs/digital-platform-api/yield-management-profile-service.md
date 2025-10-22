@@ -1,8 +1,10 @@
 ---
 title: Yield Management Profile Service
 description: Explore the Yield Management Profile service, to create and update profiles that define dynamic price floors, bid biases, and auction tiers for a publisher.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Yield Management Profile service

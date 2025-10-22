@@ -1,7 +1,10 @@
 ---
 title: Dynamic TinyTag Parameters
 description: Explore dynamic database parameter management; enable adding or overwriting with TinyTag ID, linking to static data for ad calls.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Dynamic TinyTag parameters

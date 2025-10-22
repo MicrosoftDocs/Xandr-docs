@@ -1,8 +1,10 @@
 ---
 title: Lookup Service
 description: Explore the read-only Lookup service, enabling you to fetch the ID, name, code, state, and, in some cases, descriptions of objects within your account.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Lookup service

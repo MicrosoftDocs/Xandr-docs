@@ -1,8 +1,10 @@
 ---
 title: Profile Summary Service
 description: Explore the read-only Profile Summary service that retrieves the campaign IDs associated with the line item and profiles targeting the specified target types.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Profile Summary service

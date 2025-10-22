@@ -1,7 +1,10 @@
 ---
 title: Guaranteed Outcomes Bidder Integration Guide
 description: This article outlines the Guaranteed Outcome feature of Xandr's Exchange.
-ms.date: 11/23/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Guaranteed Outcomes Bidder Integration Guide

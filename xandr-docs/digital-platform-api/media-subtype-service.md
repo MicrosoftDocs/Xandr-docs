@@ -1,8 +1,10 @@
 ---
 title: Media Subtype Service
 description: Explore the Media Subtype service, its supported media subtypes, along with information about the media types they are associated with.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Media Subtype service

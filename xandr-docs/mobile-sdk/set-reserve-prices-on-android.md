@@ -2,7 +2,10 @@
 title: Set Reserve Prices on Android
 description: This page covers reserve price which is the minimum bid amount you'll accept to show an ad.  
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

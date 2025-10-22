@@ -1,8 +1,10 @@
 ---
 title: Bidders - Troubleshooting Invalid Users
 description: This page covers how to lessen incidence of invalid users and removing old expired users from the database. Learn about different reasons why a user ID can be termed invalid. 
-ms.date: 11/28/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

@@ -1,8 +1,10 @@
 ---
 title: Ways of Buying Ad Inventory
 description: Explore industry reference, various ways of buying as inventory, and how advertisers acquire publisher inventory.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Ways of buying ad inventory

@@ -1,8 +1,10 @@
 ---
 title: Client Side Segment Calls
 description: Segment data is written to and read from the server-side cookies store as well as to and from each user's browser cookie. Learn how a client side segment pixel call will always return a 1x1 invisible GIF image unless piggyback pixels are specified. 
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 

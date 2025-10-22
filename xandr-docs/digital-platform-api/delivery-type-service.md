@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Delivery Type Service
 description: Use the read-only Delivery Type service to see what video content delivery types are registered in the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Delivery Type service

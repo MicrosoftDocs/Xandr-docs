@@ -1,8 +1,10 @@
 ---
 title: Insertion Orders and Line Items
 description: In this article, learn how to create an insertion order and a line item by providing the necessary fields and details.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Insertion orders and line items

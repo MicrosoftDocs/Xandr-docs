@@ -2,7 +2,9 @@
 title: Receive Ad View Status Events on iOS
 description: Learn how to receive ad view status events from the SDK using the ANAdDelegate protocol.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

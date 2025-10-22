@@ -6,9 +6,10 @@ metadata:
   title: Digital Platform API
   description: Discover various resources for Digital Platform API
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 01/10/2024
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: digital-platform-api
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

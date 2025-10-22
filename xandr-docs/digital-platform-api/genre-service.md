@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Genre Service
 description: Use the read-only Genre service to see what video content genres are registered in the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Genre service

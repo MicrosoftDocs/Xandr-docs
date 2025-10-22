@@ -1,8 +1,10 @@
 ---
 title: Seller Creative Review Service
 description: Use the Seller Creative Review service report to get an insight into how seller members audit the creatives.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Seller Creative Review service

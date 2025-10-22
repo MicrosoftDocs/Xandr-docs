@@ -1,8 +1,10 @@
 ---
 title: Bidders - Creative Format Service
 description: Learn how Xandr categorizes creatives by format, media type, and media subtype. This page also provides examples for viewing all creatives and specific creatives.
-ms.date: 11/21/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

@@ -2,7 +2,10 @@
 title: Support to Pass Traffic Source and External Inventory Codes in Ad Request for iOS
 description: Learn what is an external inventory code and how it provides publishers the ability to break out data on their inventory more granularly than the placement level.  
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

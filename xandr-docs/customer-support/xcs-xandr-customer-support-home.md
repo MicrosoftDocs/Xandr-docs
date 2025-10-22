@@ -1,9 +1,10 @@
 ---
 title: Microsoft Advertising Support Team
 description: In this article, find useful information on Microsoft Advertising Customer Support.
-ms.custom: customer-support
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
 ms.author: shsrinivasan
-ms.date: 01/13/2025
 ---
 
 # Microsoft Advertising support team

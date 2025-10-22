@@ -1,8 +1,10 @@
 ---
 title: Ad Tags
 description: In this article, learn about Ad tags and how does an ad tag work with detailed set of examples.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Ad tags

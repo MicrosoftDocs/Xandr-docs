@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Linear-Log Bucketing
 description: Learn about the linear-log bucketing feature, which combines the approaches taken by linear bucketing and log bucketing.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Linear-log bucketing

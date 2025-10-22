@@ -1,9 +1,10 @@
 ---
 title: Login to Micosoft Advertising Customer Support Portal
 description: This document outlines an overview of how to log in to the Microsoft Advertising Customer Support Portal.
-ms.custom: customer-support
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
 ms.author: shsrinivasan
-ms.date: 01/13/2025
 ---
 
 # Login to Micosoft Advertising Customer Support portal

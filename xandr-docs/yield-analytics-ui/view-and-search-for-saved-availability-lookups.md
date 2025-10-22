@@ -1,8 +1,10 @@
 ---
 title: View and Search for Saved Availability Lookups
 description: Learn how to view saved availability lookups if you have administrative permissions.
-ms.date: 11/07/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View and search for saved availability lookups

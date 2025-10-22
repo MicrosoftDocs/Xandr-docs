@@ -1,8 +1,10 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol For Supply Partners 
 description: This page outlines how Xandr's supply partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.custom: supply-partners
-ms.date: 7/3/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Integration with OpenRTB 2.6 protocol for supply partners

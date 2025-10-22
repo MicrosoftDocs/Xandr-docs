@@ -1,8 +1,10 @@
 ---
 title: Identity Service
 description: Learn about the Identity service, the Identity Management Framework, and how publishers can monitor and control the identifiers for monetization purposes.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Identity service

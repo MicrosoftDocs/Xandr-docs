@@ -1,7 +1,10 @@
 ---
 title: Debugging - FAQ
 description: Explore valuable debugging insights in FAQs for common issues and solutions, providing useful information for effective problem-solving.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Debugging - FAQ

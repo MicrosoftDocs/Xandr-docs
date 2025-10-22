@@ -1,8 +1,10 @@
 ---
 title: Work With Saved Availability Lookups
 description: Using your administrative permissions, you can manage, remove the scheduling from, and delete saved availability lookups.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Work with saved availability lookups

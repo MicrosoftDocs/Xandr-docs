@@ -1,7 +1,10 @@
 ---
 title: API Use Cases for Enhanced Bidder Profiles
 description: In this article, find some common use cases with Enhanced Bidder Profiles.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # API use cases for enhanced bidder profiles

@@ -1,8 +1,10 @@
 ---
 title: Run an Existing Order Line through Scenario Manager
 description: Use Scenario Manager to simulate changes to an order line to troubleshoot under or over delivering orders.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Run an existing order line through Scenario Manager

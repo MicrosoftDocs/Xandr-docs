@@ -2,7 +2,10 @@
 title: SDK integration instructions v9.1.0
 description: Learn how to integrate the AppNexusSDK into your iOS app using CocoaPods, Carthage, or XCFramework with detailed instructions.
 ms.custom: ios-sdk
-ms.date : 9/23/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # SDK integration instructions v9.x

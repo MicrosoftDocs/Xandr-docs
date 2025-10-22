@@ -1,7 +1,10 @@
 ---
 title: Columns
 description: This page shows steps to configure which columns the table displays, along with a list of available columns. In this list, all of the creative attributes are checked except Is Suspicious and Is Prohibited. 
-ms.date: 11/20/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

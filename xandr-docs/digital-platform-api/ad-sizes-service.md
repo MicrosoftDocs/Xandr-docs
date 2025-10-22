@@ -1,8 +1,10 @@
 ---
 title: Ad Sizes Service
 description: Learn about the Ad Sizes service. The service returns accepted ad sizes from the Member service, which cannot be set in PSP.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Ad Sizes service

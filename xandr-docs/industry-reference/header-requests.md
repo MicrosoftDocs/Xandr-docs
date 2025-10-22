@@ -1,8 +1,10 @@
 ---
 title: Header Requests
 description: In this article, find information on header requests and each element of a request.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Header requests

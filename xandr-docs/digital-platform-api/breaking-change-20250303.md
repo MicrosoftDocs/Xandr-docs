@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - March 03, 2025 – Update to Data retention period in Audio, Video, and Analytics report   
-description: We are introducing a breaking change to our Audio, Video, and Analytics reports in Digital Platform API.
-ms.date: 03/03/2025
+description: We are introducing a breaking change to our Audio, Video, and Analytics reports in Digital Platform API
 ms.topic: release-notes
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
 ms.author: shsrinivasan
 ---
 

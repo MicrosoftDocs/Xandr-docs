@@ -1,8 +1,10 @@
 ---
 title : Completed Creatives Audits Report
 description : This page discusses about Completed Creative Audits Report and how it allows bidders to see why your creative was audited, and how many creatives were audited over a period of time.  
-ms.date : 11/21/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

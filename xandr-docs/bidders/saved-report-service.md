@@ -1,7 +1,10 @@
 ---
 title: Bidders - Saved Report Service
 description: In this article, find information about the Saved Report Service and the fields associated with it along with examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Saved report service

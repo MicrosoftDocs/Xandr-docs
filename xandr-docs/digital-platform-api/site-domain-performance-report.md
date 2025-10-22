@@ -1,8 +1,10 @@
 ---
 title: Site Domain Performance Report
 description: Use the Site Domain Performance report to view performance and optimization data by domain for a specific advertiser.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Site Domain Performance report

@@ -1,7 +1,10 @@
 ---
 title: Outgoing Bid Response to SSPs
 description: Learn about different fields like Native object, Bid object, Asset object, that Xandr supports in the bid response object. 
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Outgoing bid response to SSPs

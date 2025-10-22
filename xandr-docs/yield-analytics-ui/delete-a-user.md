@@ -1,8 +1,10 @@
 ---
 title: Delete a User
 description: Learn to delete user accounts with administrative permissions. You must delete users who have not logged in to Yield Analytics.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Delete a user

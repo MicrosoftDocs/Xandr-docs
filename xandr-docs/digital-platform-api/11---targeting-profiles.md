@@ -1,8 +1,10 @@
 ---
 title: Targeting Profiles
 description: In this article, learn about targeting profiles and explore detailed information about the most common targeting parameters.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Targeting profiles

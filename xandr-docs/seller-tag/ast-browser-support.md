@@ -1,8 +1,10 @@
 ---
 title: Browser Support
 description: In this article, find the browsers and versions currently supported by AST.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Browser support

@@ -1,8 +1,10 @@
 ---
 title: Hacks-Hackers Developer Glossary
 description: In this article, find information about what the Hacks/Hackers Survival Glossary is and how it is helpful.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Hacks-Hackers developer glossary

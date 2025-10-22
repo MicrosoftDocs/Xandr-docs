@@ -1,8 +1,10 @@
 ---
 title: Client Services
 description: In this article, find information about Xandr Client Services and find out how they function.
-ms.custom: customer-support
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
+ms.author: shsrinivasan
 ---
 
 # Client services

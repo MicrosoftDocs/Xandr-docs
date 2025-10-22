@@ -1,7 +1,10 @@
 ---
 title: IAB Content Taxonomy Support
 description: This article lists Interactive Advertising Bureau content categories that are supported by Xandr.
-ms.date: 10/09/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # IAB content taxonomy support

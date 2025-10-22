@@ -1,8 +1,10 @@
 ---
 title: Creative Setup & Audit
 description: This page lists links for Creative Setup & Audit.
-ms.date: 11/21/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

@@ -1,8 +1,10 @@
 ---
 title: Create a Custom Role using the API
 description: In this article, learn step-by-step instructions on how to create a custom role using the API.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Create a custom role using the API

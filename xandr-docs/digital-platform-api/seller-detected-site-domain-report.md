@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Seller Detected Site Domain Report
 description: Use the Seller Detected Site Domain report to view details about actual domains being sold without affecting the auction itself.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Seller Detected Site Domain report

@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Selecting the Correct Template for Your Creative
 description: This article guides you to select the correct template for your creative.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Selecting the correct template for your creative

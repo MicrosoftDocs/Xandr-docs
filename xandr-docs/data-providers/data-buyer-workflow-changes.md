@@ -1,8 +1,10 @@
 ---
 title: Data Buyer Workflow
 description: To access a particular data provider's segment offering, a workflow is available to make that process easier, like selecting the data providers you want to access and running campaigns targeting these third-party segments.  
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data buyer workflow

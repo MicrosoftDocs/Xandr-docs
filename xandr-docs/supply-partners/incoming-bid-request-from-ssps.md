@@ -1,8 +1,10 @@
 ---
 title: Incoming Bid Request from SSPs
 description: This article provides information on the incoming bid request from SSPs.
-ms.custom: supply-partners
-ms.date: 5/02/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Incoming bid request from SSPs

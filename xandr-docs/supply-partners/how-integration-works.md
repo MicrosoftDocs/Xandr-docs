@@ -1,8 +1,10 @@
 ---
 title: How Integration Works
 description: This article explains the outcome of receiving an ad call by an integrated supply partner.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # How integration works

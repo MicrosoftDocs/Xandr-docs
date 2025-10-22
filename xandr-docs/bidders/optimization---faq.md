@@ -1,7 +1,10 @@
 ---
 title: Optimization - FAQ
 description: In this article, explore answers to frequently asked questions (FAQs) about optimization.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Optimization - FAQ

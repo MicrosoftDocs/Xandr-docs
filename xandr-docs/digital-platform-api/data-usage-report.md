@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Data Usage Report
 description: Use the Data Usage report to view details related to third-party data usage and associated costs, as well as campaigns used to target users.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Data Usage report

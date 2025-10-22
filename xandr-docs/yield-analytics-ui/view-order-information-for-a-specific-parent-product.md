@@ -1,8 +1,10 @@
 ---
 title: View Order Information for a Specific Parent Product
 description: This article provides steps to view order information for a specific parent product.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View order information for a specific parent product

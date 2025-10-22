@@ -1,8 +1,10 @@
 ---
 title: Get AST Version
 description: In this article, learn about the Get AST Version function, which provides the AST version as a string. Explore a detailed example that demonstrates its usage.
-ms.custom: seller-tag 
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Get AST Version

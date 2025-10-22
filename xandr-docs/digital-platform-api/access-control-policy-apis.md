@@ -1,8 +1,10 @@
 ---
 title: Access Control Policy APIs
 description: In this article, explore information about Access Control Policy APIs and its related topics.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Access control policy APIs

@@ -1,8 +1,10 @@
 ---
 title: Advertiser Creative Frequency and Recency
 description: Use the Advertiser Creative Frequency and Recency report to view creative data for a specific advertiser based on the frequency and recency of user views.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Advertiser creative frequency and recency

@@ -1,8 +1,10 @@
 ---
 title: Finance - Charges for Buyers
 description: This article explains about the buyer auction service charge.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Charges for Buyers

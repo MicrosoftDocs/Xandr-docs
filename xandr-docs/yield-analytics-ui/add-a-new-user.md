@@ -1,8 +1,10 @@
 ---
 title: Add a New User
 description: In this article, follow our step-by-step instructions to add a new user account.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Add a new user

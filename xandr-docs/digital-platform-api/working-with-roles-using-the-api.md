@@ -1,8 +1,10 @@
 ---
 title: Working with Roles using the API
 description: In this article, learn about the two types of roles using the API.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Working with roles using the API

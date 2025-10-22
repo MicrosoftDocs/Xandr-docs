@@ -1,8 +1,10 @@
 ---
 title: Finance - Billing
 description: This article provides resources for accessing and understanding your billing information.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Billing

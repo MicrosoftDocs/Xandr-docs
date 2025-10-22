@@ -1,8 +1,10 @@
 ---
 title: Refresh
 description: Learn how this function initiates a new ad server call and refreshes ads on the page. This page also lists parameter that can be sent as an argument in the function.  
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Refresh

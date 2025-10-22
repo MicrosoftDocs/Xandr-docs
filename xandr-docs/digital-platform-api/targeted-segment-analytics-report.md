@@ -1,8 +1,10 @@
 ---
 title: Targeted Segment Analytics Report
 description: Use the Targeted Segment Analytics report to identify the segments that are driving impressions, clicks, and conversions in in-flight campaigns.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Targeted Segment Analytics report

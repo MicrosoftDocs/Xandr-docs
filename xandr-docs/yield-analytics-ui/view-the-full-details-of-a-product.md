@@ -1,8 +1,10 @@
 ---
 title: View the Full Details of a Product
 description: View the product details on the Product Visibility page, from any page within Yield Analytics that displays product information.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View the full details of a product

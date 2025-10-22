@@ -1,8 +1,10 @@
 ---
 title: Integrating the Xandr HTML5 Library with Adobe Edge Ads
 description: In this article, find instructions on how to modify an ad created in Adobe Edge to work with the Xandr HTML5 Library.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Integrating the Xandr HTML5 Library with Adobe Edge ads

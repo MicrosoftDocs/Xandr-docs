@@ -1,7 +1,10 @@
 ---
 title: December 21, 2015 - UTF-8 Encoding of Reporting Data
 description: Explore enhanced UTF-8 encoding for reporting since Dec 21, 2015; from Jan 15, 2016, include all UTF-8 characters in returned data, incorporating Log-Level Data.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # December 21, 2015 - UTF-8 encoding of reporting data

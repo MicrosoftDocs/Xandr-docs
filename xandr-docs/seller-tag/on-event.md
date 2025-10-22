@@ -1,8 +1,10 @@
 ---
 title: On Event
 description: Learn how this function defines a callback function to execute on the given `event_type`. This page also lists parameters that can be sent as arguments in the function along with an example.  
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 

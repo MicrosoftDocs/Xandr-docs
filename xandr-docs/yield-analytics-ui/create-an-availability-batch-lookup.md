@@ -1,8 +1,10 @@
 ---
 title: Create an Availability Batch Lookup
 description: The article describes how you can run multiple availability lookups as part of a single Availability report, by creating a batch lookup.
-ms.date : 10/28/2023
-ms.custom : yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Create an availability batch lookup

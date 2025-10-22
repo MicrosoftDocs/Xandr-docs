@@ -1,8 +1,10 @@
 ---
 title: Switch between the Calendar and List Views
 description: Display the View Calendar page as a calendar view or list view.
-ms.date: 11/07/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Switch between the calendar and list views

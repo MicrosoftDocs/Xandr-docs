@@ -1,9 +1,10 @@
 ---
 title: API Segment Management
 description: Learn creating, modifying and deleting segments. This page also covers best practices for managing data provider segments. 
-ms.custom: data-providers
-ms.date: 11/29/2023
-
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 

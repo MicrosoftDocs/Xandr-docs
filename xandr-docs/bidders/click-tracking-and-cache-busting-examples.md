@@ -1,8 +1,10 @@
 ---
 title: Click Tracking and Cache-Busting Examples for Top Ad Servers
 description: Learn about the appropriate locations in which to insert the click tracking macro in your third-party ad tags in order for Xandr to track clicks properly.
-ms.date: 11/20/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

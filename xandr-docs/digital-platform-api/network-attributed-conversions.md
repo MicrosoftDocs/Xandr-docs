@@ -1,8 +1,10 @@
 ---
 title: Network Attributed Conversions
 description: Use the Network Attributed Conversions report to view information on conversion pixel IDs, order IDs, and times of attributed clicks or impressions for members or networks.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network attributed conversions

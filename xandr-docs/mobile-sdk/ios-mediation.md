@@ -2,7 +2,9 @@
 title: iOS Mediation Overview
 description: In this article, learn about iOS mediation and how to mediate an iOS app for the latest release.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

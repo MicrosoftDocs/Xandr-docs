@@ -1,8 +1,10 @@
 ---
 title: Interpreting Scenario Manager Results
 description: In this article, understand how to interpret the results from Scenario Manager.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Interpreting scenario manager results

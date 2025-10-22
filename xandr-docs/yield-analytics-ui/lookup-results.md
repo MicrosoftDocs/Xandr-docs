@@ -1,8 +1,10 @@
 ---
 title: Lookup Results
 description: In this article, explore a detailed understanding of how to interpret lookup results.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Lookup results

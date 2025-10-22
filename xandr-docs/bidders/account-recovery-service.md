@@ -1,7 +1,10 @@
 ---
 title: Bidders - Account Recovery Service
 description: In this article, learn how to reset your Xandr password or retrieve your Xandr username using the Account Recovery Service.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Account recovery service

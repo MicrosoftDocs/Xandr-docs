@@ -2,7 +2,9 @@
 title: Resize the Banner Ad View to the Size of the Winning Creative on Android
 description: Resize the banner ad view on Android to the size of the winning creative using methods for height and width retrieval.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

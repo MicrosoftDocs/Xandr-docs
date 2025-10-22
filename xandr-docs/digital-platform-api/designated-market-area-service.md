@@ -1,8 +1,10 @@
 ---
 title: Designated Market Area Service
 description: Use the read-only Designated Market Area service to retrieve the IDs of designated market areas for targeting in campaigns.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Designated Market Area service

@@ -1,7 +1,10 @@
 ---
 title: FAQs
 description: Explore a compiled list (category-wise) of frequently asked questions based on specific categories for easy reference.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # FAQs

@@ -1,8 +1,10 @@
 ---
 title: Benefits of AST
 description: In this article, understand the benefits of AST to legacy tags.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Benefits of AST

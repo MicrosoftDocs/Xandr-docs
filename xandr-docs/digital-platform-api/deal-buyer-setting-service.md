@@ -1,8 +1,10 @@
 ---
 title: Deal Buyer Setting Service
 description: Learn about the Deal Buyer Setting service. It allows buyers to give deals an alias and assign a status, giving them more control.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Deal Buyer Setting service

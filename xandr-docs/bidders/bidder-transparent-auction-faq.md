@@ -1,7 +1,10 @@
 ---
 title: Bidder Transparent Auction FAQ
 description: Explore answers to FAQs about the bidder transparent auction, gaining a clear understanding of the auction type you're engaging in.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder transparent auction FAQ

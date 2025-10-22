@@ -1,8 +1,10 @@
 ---
 title: Email Communications
 description: In this article, find information about email communications from Xandr.
-ms.custom: customer-support
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
+ms.author: shsrinivasan
 ---
 
 # Xandr Email Communications

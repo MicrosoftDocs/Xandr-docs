@@ -1,8 +1,10 @@
 ---
 title: Removing Shared Segments
 description: Explore the complex dependencies associated with the removal of a shared segment.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Removing shared segments

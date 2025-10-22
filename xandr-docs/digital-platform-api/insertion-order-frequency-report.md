@@ -1,8 +1,10 @@
 ---
 title: Insertion Order Frequency Report
 description: In this article, explore the Insertion Order Frequency report, providing insights into the frequency of users viewing specific insertion order creatives. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Insertion Order Frequency report

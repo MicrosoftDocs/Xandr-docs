@@ -1,7 +1,10 @@
 ---
 title: Bidders - Deal Sync with DV360 - Publisher Guide 
 description: Explore streamlined transactions by integrating Microsoft Monetize deals with Google DV360 via DV360 Seller API, improving publisher-buyer interaction.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Deal sync with DV360 - Publisher guide

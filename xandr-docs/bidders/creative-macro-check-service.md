@@ -1,8 +1,10 @@
 ---
 title: Bidders - Creative Macro Check Service
 description: Learn how you can use the Creative Macro Check Service to check third party tags while running third party creatives. This page also provides examples where you replace macros within a third-party tag (content) and Replace macros within a third-party URL (media URL). 
-ms.date: 11/22/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

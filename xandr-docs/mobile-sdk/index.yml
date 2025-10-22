@@ -6,9 +6,10 @@ metadata:
   title: Mobile SDK Developer Documentation
   description: Discover various modules of Mobile SDK
   ms.topic: landing-page
-  ms.author: shivanni srinivasan
-  ms.service: microsoft-monetize
-  ms.date: 10/30/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: mobile-sdk
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Lets Get Started

@@ -1,8 +1,10 @@
 ---
 title: Conversion Pixel Last Fire
 description: In this article, learn about the Conversion Pixel Last Fire report, their time frame, dimensions, and metrics with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Conversion Pixel Last Fire

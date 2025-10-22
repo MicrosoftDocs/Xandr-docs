@@ -1,7 +1,10 @@
 ---
 title: Creative - FAQ
 description: This page covers FAQs on Creatives.
-ms.date: 11/22/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Creative - FAQ

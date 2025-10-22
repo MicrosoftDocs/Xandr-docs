@@ -1,8 +1,10 @@
 ---
 title: API Timezones
 description: This article provides information on API timezones. Advertisers take on their member's timezone by default.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # API timezones

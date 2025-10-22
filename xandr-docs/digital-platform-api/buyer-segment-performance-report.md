@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Buyer Segment Performance Report
 description: In this article, learn about the Buyer Segment Performance report, their time frame, data retention period, dimensions, and metrics with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Buyer Segment Performance report

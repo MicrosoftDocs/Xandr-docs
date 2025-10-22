@@ -1,7 +1,10 @@
 ---
 title: Geo Variable Information
 description: This article provides geo variable information. Digital Envoy is used for country and regional data. 
-ms.date: 11/23/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Geo variable information

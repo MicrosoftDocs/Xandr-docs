@@ -1,8 +1,10 @@
 ---
 title: Advertiser Analytics
 description: Use the Advertiser Analytics report to view performance, revenue, and profit data across a specific advertiser's creatives and campaigns.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Advertiser analytics

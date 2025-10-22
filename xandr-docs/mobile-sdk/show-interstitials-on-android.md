@@ -2,7 +2,10 @@
 title: Show Interstitials on Android
 description: This page gives an overview on instructions and code samples for showing interstitial ads on Android.
 ms.custom: android-sdk
-ms.date: 09/27/2024
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Show interstitials on Android

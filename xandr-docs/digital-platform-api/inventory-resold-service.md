@@ -1,8 +1,10 @@
 ---
 title: Inventory Resold Service
 description: Explore the Inventory Resold service, providing visibility into inventory exposed for resale by networks on the platform.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Inventory Resold service

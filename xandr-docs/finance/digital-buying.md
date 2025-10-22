@@ -1,8 +1,10 @@
 ---
 title: Finance - Digital Buying
 description: In this article, learn about digital buying and learn the details of the documents that a digital buyer is set to receive.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Digital buying

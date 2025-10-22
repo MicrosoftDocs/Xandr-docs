@@ -1,8 +1,10 @@
 ---
 title: Operating System Extended Service
 description: The Operating System Extended service provides a list of specific operating system versions to target in the profile service.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Operating System Extended service

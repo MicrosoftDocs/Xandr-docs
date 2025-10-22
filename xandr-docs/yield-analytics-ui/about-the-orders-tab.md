@@ -1,8 +1,10 @@
 ---
 title: About the Orders Tab
 description: In this article, understand how to use the Orders tab, how to evaluate orders, and learn the terminology associated with it.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # About Orders tab

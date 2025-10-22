@@ -1,8 +1,10 @@
 ---
 title: Supply Integration (ASI)
 description: This page tells you where you need to migrate your supply, as Supply Integration (ASI) has been disabled for server-side supply integrations beginning on October 1st, 2017.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 

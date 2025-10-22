@@ -1,7 +1,10 @@
 ---
 title: Xandr Bidder Release Notes
 description: Explore the product releases, updates, and deprecations, with a listed table that accommodates potential date shifts.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Xandr Bidder Release Notes

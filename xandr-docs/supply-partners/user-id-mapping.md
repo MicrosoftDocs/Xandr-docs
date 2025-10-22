@@ -1,8 +1,10 @@
 ---
 title: Supply Partners - User ID Mapping
 description: In this article, learn how to store the user ID mapping in your system.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Supply Partners - User ID mapping

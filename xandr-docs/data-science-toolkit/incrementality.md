@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Incrementality
 description: Learn what is Incrementality and why advertisers need to measure incrementality. This page also explains how Xandr helps customers to plan their incrementality strategies and testing.     
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 

@@ -2,7 +2,10 @@
 title: Show Banner Native on Android
 description: This page covers concepts on Banner Native and changes in the procedure of handling banner and video ad objects via the Banner class.  
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Show banner native on Android

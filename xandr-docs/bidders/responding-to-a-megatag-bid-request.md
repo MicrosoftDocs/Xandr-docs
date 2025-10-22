@@ -1,7 +1,10 @@
 ---
 title: Responding to a MegaTag Bid Request
 description: In this article, find information about how a MegaTag auction works and how to respond to a multi-tag request.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Responding to a MegaTag bid request

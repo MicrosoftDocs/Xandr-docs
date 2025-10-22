@@ -6,9 +6,10 @@ metadata:
   title: Ad Tech Industry Reference
   description: Discover various reference docs about the Ad Tech Industry
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 12/11/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: industry-reference
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

@@ -2,7 +2,10 @@
 title: Support for Overriding Country Codes and Zip Codes on Android
 description: This page covers setter methods like setGeoOverrideCountryCode, setGeoOverrideZipCode and getter methods like getGeoOverrideCountryCode and getGeoOverrideZipCode which are used by publishers to override the country codes and zip codes.      
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

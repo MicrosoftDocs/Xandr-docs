@@ -6,9 +6,10 @@ metadata:
   title: Yield Analytics UI
   description: Discover various modules of the Yield Analytics UI
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 10/28/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: yield-analytics-ui
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

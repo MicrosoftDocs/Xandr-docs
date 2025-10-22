@@ -1,8 +1,10 @@
 ---
 title: Publisher Page-Level Options for Outstream
 description: This page describes different settings available for configuring outstream video in page code. Some of the settings described in this page are Disable Collapse settings, End Card settings, Player Skinning settings, Sidestream settings to name a few.   
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 

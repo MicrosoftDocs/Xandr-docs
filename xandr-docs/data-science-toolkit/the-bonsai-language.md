@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Bonsai Language
 description: Use the Bonsai language to write decision tree logic for custom predictive models. A decision tree is structured as a branch or a series of branches written as if/elif/else and/or switch expressions.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Bonsai language

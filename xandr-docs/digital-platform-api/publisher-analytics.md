@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Publisher Analytics
 description: Explore the Publisher Analytics report to view revenue and profit data across a specific publisher's sites and placements.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Publisher Analytics

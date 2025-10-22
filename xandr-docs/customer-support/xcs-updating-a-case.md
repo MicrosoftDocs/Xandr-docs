@@ -1,9 +1,10 @@
 ---
 title: Update a Case
 description: In this article, learn step-by-step instructions on how to update a case in Microsoft Advertising Customer Support Portal.
-ms.custom: customer-support
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
 ms.author: shsrinivasan
-ms.date: 01/13/2025
 ---
 
 # Update a case

@@ -1,8 +1,10 @@
 ---
 title: Plugin Service
 description: Developing an app for Apps Marketplace involves building an umbrella app and specific app instances, which can be controlled through the Plugin service.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Plugin service

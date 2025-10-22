@@ -1,7 +1,10 @@
 ---
 title: Bidder API Services
 description: In this article, explore the parameters related to bidder and its API services.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder API services

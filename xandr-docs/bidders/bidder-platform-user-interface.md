@@ -1,7 +1,10 @@
 ---
 title: Bidder Platform User Interface
 description: In this article, learn how to login to Bidder Platform User Interface that allows you to manage your bidder integration.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder Platform User Interface

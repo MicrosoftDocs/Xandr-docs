@@ -1,7 +1,10 @@
 ---
 title: Bidders - User ID Mapping
 description: Integrate user IDs for seamless data aggregation, optimize ad sales, enhance targeting, and unify processes for mutual buyer-seller benefits.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - User ID mapping

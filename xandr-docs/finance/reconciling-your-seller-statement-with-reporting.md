@@ -1,8 +1,10 @@
 ---
 title: Finance - Reconciling your Seller Statement with Reporting
 description: In this article, learn how to confirm the (Managed) Ad Serving fee on your invoice using the Selling Billing Report.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Reconciling your seller statement with reporting

@@ -1,8 +1,10 @@
 ---
 title: View Availability Batch Lookups
 description: This article provides steps to check the status of your batch availability lookups and view the resulting Availability reports.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View availability batch lookups

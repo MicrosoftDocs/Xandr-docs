@@ -2,7 +2,10 @@
 title: Show Instream Video Ads on Android
 description: On this page learn how to use the SDK to fetch and display instream video ads in Android.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Show instream video ads on Android

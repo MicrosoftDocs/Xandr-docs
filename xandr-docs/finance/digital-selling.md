@@ -1,8 +1,10 @@
 ---
 title: Finance - Digital Selling
 description: In this article, learn about digital selling, explore the processes, and learn the details of the documents that a digital seller is set to receive.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Digital selling

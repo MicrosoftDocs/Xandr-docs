@@ -1,8 +1,10 @@
 ---
 title: Integrating the Xandr HTML5 Library with Google Web Designer Ads
 description: In this article, find instructions on how to modify an ad created in Google Web Designer to work with the Xandr HTML5 Library. 
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Integrating the Xandr HTML5 Library with Google Web Designer ads

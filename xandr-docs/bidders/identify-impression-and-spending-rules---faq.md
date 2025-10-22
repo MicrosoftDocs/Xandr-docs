@@ -1,7 +1,10 @@
 ---
 title: Identify Impression and Spending Rules - FAQ
 description: This article provides answers to the frequently asked questions on how to identify impression and spending rules.
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Identify impression and spending rules - FAQ

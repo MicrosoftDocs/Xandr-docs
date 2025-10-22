@@ -1,8 +1,10 @@
 ---
 title: DFP sales managers Yield Analytics extension
 description: Learn how to install the Yield Analytics Sales Manager Extension and how it automatically updates.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # DFP sales managers Yield Analytics extension

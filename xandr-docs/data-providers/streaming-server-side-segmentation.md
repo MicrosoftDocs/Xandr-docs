@@ -1,8 +1,10 @@
 ---
 title: Streaming Server-Side Segmentation
 description: In this article, learn about the use cases and workflow for streaming server-side segmentation.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Streaming server-side segmentation

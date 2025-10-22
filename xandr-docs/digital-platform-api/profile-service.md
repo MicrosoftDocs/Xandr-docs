@@ -1,8 +1,10 @@
 ---
 title: Profile Service Overview
 description: Explore the Profile service, its JSON fields, REST API, parameters with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Profile service overview

@@ -1,8 +1,10 @@
 ---
 title: Industry Reference - Impression Counting
 description: In this article, find information on impression counting and how it is performed for different types of ads.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Industry Reference - Impression counting

@@ -1,8 +1,10 @@
 ---
 title: Use the API to Synchronize Your Inventory Structure
 description: In this article, learn how to use the API to map your supply to the corresponding Xandr objects.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Use the API to synchronize your inventory structure

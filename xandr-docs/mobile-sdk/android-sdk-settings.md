@@ -2,7 +2,9 @@
 title: Android SDK Settings
 description: In this article, find information about the various Android SDK settings to help you in the development of your app. 
 ms.custom: android-sdk
-ms.date : 04/22/2024
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: Streaming Server Side Segmentation - Overview
 description: Use the Instant Audience service to stream user data to the platform via API for real-time audience remodeling requirements.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Streaming server side segmentation - Overview

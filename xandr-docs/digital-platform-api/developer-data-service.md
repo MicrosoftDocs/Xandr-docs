@@ -1,8 +1,10 @@
 ---
 title: Developer Data Service
 description: Use the Developer Data service to add data about API objects.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Developer Data service

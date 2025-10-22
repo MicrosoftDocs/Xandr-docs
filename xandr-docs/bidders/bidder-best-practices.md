@@ -1,7 +1,10 @@
 ---
 title: Bidder Best Practices
 description: In this article, explore information about a number of services, bidder fields, and best practices recommended for our partners.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder best practices

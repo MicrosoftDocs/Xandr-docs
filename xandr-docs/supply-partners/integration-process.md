@@ -1,8 +1,10 @@
 ---
 title: Integration Process
 description: This article provides information for supply partners to implement OpenRTB integration or migrate from a custom SSP protocol integration.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Integration process

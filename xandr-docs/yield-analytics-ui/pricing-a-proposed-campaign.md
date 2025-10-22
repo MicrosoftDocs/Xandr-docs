@@ -1,8 +1,10 @@
 ---
 title: Price a Proposed Campaign
 description: In this article, learn information about the pricing of a proposed campaign.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui 
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Price a proposed campaign

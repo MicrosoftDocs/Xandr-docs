@@ -1,8 +1,10 @@
 ---
 title: Long Form Video Service
 description: In this article, learn about the Long Form Video service, their request and response process, and parameters with an example.
-ms.date: 09/25/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Long Form Video Service

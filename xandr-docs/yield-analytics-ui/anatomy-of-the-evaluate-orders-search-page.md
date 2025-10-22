@@ -1,8 +1,10 @@
 ---
 title: Anatomy of Evaluate Orders Search Page
 description: In this article, learn the layout of the Evaluate Orders Search page.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Anatomy of Evaluate Orders Search page

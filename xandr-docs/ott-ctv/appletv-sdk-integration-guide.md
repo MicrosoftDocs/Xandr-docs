@@ -1,8 +1,10 @@
 ---
 title: AppleTV SDK Integration Guide
 description: In this article, learn how to integrate Xandr's AppleTV SDK into your AppleTV application, the available customization options, best practices, and recommendations.
-ms.custom: ott-ctv
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: ott-ctv
+ms.author: shsrinivasan
 ---
 
 # AppleTV SDK integration guide

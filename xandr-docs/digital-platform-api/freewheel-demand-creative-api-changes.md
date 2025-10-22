@@ -1,7 +1,10 @@
 ---
 title: Freewheel change in Demand Creative API
 description: Avoid updating Freewheel creatives via API from Jan 29 to Mar 5, 2024, due to suspension for implementing new logic, causing errors. Consider creating new creatives instead.
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Freewheel change in demand creative API

@@ -1,7 +1,9 @@
 ---
 title: Customer Support Portal - Microsoft Identity Platform Login
 description: In this article, explore an overview of authenticating users for Microsoft Advertising products while setting up the Microsoft Identity Platform login account.
-ms.date: 11/11/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
 ms.author: shsrinivasan
 ---
 

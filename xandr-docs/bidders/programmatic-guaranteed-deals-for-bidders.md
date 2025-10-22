@@ -1,7 +1,10 @@
 ---
 title: Programmatic Guaranteed Deals for Bidders
 description: In this article, learn about the bidding process to buy guaranteed deal inventory, along with examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Programmatic guaranteed deals for bidders

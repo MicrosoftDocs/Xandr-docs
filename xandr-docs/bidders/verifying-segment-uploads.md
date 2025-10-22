@@ -1,7 +1,10 @@
 ---
 title: Bidders - Verifying Segment Uploads
 description: Explore upload success, confirm file status, and ensure essential parameters validate successful uploads.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Verifying segment uploads

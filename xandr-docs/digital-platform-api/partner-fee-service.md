@@ -1,8 +1,10 @@
 ---
 title: Partner Fee Service
 description: Use the Partner Fee service to reserve budget for third-party costs owed to parties other than the publisher.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Partner Fee service

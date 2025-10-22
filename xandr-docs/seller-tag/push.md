@@ -1,8 +1,10 @@
 ---
 title: Push
 description: Learn how this function adds a given function to the `apntag` command queue. This page also lists a parameter that can be sent as an argument in the function along with an example. 
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 

@@ -1,8 +1,10 @@
 ---
 title: Native Custom Key Service
 description: Use the Native Custom Key service to view and store custom key values for members' ads with a creative format ID of 12.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Native Custom Key service

@@ -1,8 +1,10 @@
 ---
 title: Deal Service
 description: Use the deal service to let buyers, sellers, and external bidders set up and manage negotiated deals.
-ms.date: 06/30/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Deal service

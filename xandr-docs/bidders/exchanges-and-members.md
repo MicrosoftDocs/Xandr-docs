@@ -1,7 +1,10 @@
 ---
 title: Exchanges and Members
 description: Explore exchange services, select members, and include/exclude exchanges using icons on the Exchanges and Members tab for efficient supply targeting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Exchanges and members

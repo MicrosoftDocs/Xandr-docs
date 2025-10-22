@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Instant Audience Service
 description: In this article, learn about the Instant Audience service, their JSON fields, and ways to authenticate and configure the service.
-ms.date: 08/16/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Instant Audience service

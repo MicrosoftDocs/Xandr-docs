@@ -1,7 +1,10 @@
 ---
 title: Research Discrepancies
 description: In this article, find instructions for researching and resolving discrepancy issues.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Research discrepancies

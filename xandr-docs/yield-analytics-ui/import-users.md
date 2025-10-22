@@ -1,8 +1,10 @@
 ---
 title: Import Users
 description: In this article, explore detailed step-by-step instructions on how to import users.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Import users

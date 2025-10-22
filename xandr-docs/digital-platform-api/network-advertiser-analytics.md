@@ -1,8 +1,10 @@
 ---
 title: Network Advertiser Analytics
 description: Use the Network Advertiser Analytics report to get detailed performance data for specific advertisers. It is only available to network users.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network advertiser analytics

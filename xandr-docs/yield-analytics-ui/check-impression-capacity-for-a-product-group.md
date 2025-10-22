@@ -1,8 +1,10 @@
 ---
 title: Check Impression Capacity for a Product Group
 description: Explore network capacity snapshot or click a product for a full forecast with the Impression Capacity widget.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Check impression capacity for a product group

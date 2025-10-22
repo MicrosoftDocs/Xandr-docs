@@ -1,8 +1,10 @@
 ---
 title: Seller Member Group Service
 description: Buyers can use the Seller Member Group service to target seller member groups for access to a wider variety of inventory from newer and smaller publishers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Seller Member Group service

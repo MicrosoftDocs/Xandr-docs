@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Curator Segment Performance Report
 description: Use the Curator Segment Performance report to get curators insights into how their targeted segments are contributing to the overall performance of their curated deals.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Curator Segment Performance report

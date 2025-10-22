@@ -7,8 +7,9 @@ metadata:
   description: Discover various reference docs about Finance Reference Documentation
   ms.topic: landing-page
   ms.author: shsrinivasan
-  ms.service: microsoft-monetize
-  ms.date: 12/01/2023
+  ms.service: publisher-monetization
+  ms.subservice: finance
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

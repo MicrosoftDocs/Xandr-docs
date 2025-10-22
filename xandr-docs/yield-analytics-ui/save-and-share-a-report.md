@@ -1,8 +1,10 @@
 ---
 title: Save and Share a Report
 description: Learn how to save reports to share them with other people.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Save and share a report

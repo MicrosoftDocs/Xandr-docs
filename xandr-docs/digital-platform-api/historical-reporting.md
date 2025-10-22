@@ -1,7 +1,10 @@
 ---
 title: Digital Platform API  - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights in Digital Platform API.
-ms.date: 10/18/2024
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API  - Historical reporting

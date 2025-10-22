@@ -1,8 +1,10 @@
 ---
 title: Industry Reference - Introduction to Viewability
 description: Learn about viewability and how it can be measured in Digital Media. This page covers different aspects of viewability and how it is useful to advertisers and publishers.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Industry Reference - Introduction to viewability

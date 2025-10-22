@@ -1,8 +1,10 @@
 ---
 title: Impression Tracker Service
 description: Learn about the Impression Tracker service, its JSON fields, and methods for tracking impressions with third-party ad servers, along with detailed examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Impression Tracker service

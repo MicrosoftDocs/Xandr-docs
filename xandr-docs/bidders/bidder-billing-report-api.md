@@ -1,7 +1,10 @@
 ---
 title: Bidder Billing Report API
 description: Explore this article to understand the Bidder Billing report API, including its metrics, dimensions, and a detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder Billing report API

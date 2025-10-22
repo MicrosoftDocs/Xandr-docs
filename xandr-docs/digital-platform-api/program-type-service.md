@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Program Type Service
 description: Explore the read-only Program Type service to view video content fields that can be added to line item or deal line item targeting.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Program Type service

@@ -1,8 +1,10 @@
 ---
 title: Data Providers - Segment Modifier
 description: In this article, learn step-by-step instructions on how you can associate a Segment Modifier with an audience segment.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data Providers - Segment Modifier

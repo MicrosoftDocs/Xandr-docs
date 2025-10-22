@@ -1,8 +1,10 @@
 ---
 title: Ad Quality Rule Service
 description: In this article, learn about the Ad Quality Rule service, their JSON parameters, and REST API with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Ad quality rule service

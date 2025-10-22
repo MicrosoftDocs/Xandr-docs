@@ -1,8 +1,9 @@
 ---
 title: Real-Time Signals Service API Reference
 description: Explore the Real-Time Signals Service (RTSS) for uploading ID-to-segment data or other key-value data, facilitating the addition of segments to bid requests.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
 ms.author: shsrinivasan
 ---
 
@@ -276,7 +277,8 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 
 | Method | Endpoint | Description |
 |:---|:---|:---|
-| `GET` | `/members/{:member_id}/uploads` | Get a list of active uploads. |
+| `POST` | `/members/{:member_id}/uploads` | Bulk upload endpoint. |
+| `GET` | `/members/{:member_id}/uploads/{upload_job_id}` | Get job status of a single upload job. |
 
 
 ### Parameters (Bulk upload)
@@ -285,35 +287,30 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 |:---|:---|:---|:---|:---|:---|
 | `member_id` | long | Member ID | URL Path | All Methods | `123` |
 | `id` | string | UUID of Accepted File Job | Query string |  | `102951` |
+| `Upload_job_id` | string | UUID of Accepted File Job  | URL path | GET | a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2 |
 | `Content-Type` | string | The Content-Type HTTP Header | HTTP Header | `POST` | `'Content-Type: multipart/form-data'` |
 | `file` | file | The data file to be processed. Max file size of 256 MB | Form Data | `POST` | See [File Format and Examples](#file-format-and-upload-examples) section below. |
-| `expiry` | date | The fixed time and date when the segments in the file should expire, taking into account any processing time required to meet the deadline. For more information about using this parameter, see "Target Expiry" in [RTSS Best Practices](rtss-best-practices.md). | [RFC 339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) |  | `expiry=2022-03-01T17:32:28Z` |
+| `expiry` | date | The fixed time and date when the segments in the file should expire, taking into account any processing time required to meet the deadline. For more information about using this parameter, see "Target Expiry" in [RTSS Best Practices](rtss-best-practices.md). | [RFC 339](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) | POST (Optional) | `expiry=2022-03-01T17:32:28Z` |
 
 ### Response (Bulk upload)
 
 | Name | Data Type | Description | Returned On | Example |
 |:---|:---|:---|:---|:---|
-| `uploads` | Array of Objects | An array of upload infos | `GET` | See [example](#uploads-response-example-bulk-upload). |
+| `uploads` | Object | Object containing upload info for the specified job id  | `GET` | See [example](#uploads-response-example-bulk-upload). |
 | `id` | string | uuid of accepted file which will be processed asynchronously | `POST` | See [example](#id-response-example-bulk-upload). |
 
 #### `uploads` response example (Bulk upload)
 
 ```
-{
-"uploads": [
-{
-"added": "string",
-"id": "string",
-"member_id": 0,
-"message": "string",
-"rows_failed": 0,
-"rows_total": 0,
-"started": "string",
-"status": "string",
-"stopped": "string"
-}
-]
-}
+{ 
+  "added": "string", 
+  "id": "string", 
+  "member_id": 0, 
+  "records_failed": 0, 
+  "records_total": 0, 
+  "status": "string", 
+  "stopped": "string" 
+} 
 ```
 
 #### `id` response example (Bulk upload)
@@ -323,6 +320,46 @@ The maximum size for a single upload may not exceed 256 MB. Ensure that you comp
 "id": "a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2"
 }
 ```
+
+### REST API (job errors) 
+
+This method provides a gzipped errors file containing job error details for a completed upload job, if errors occurred in the submitted data. 
+
+> [!NOTE] 
+> Error files are retained for 7 days after processing. 
+| Method | Endpoint | Description |
+|:---|:---|:---|
+| `GET` | `/members/{member_id}/uploads/{upload_job_id}/errors` | Get job errors file for a single upload job. |
+
+#### Parameters (job errors) 
+
+| Name | Parameter type | Data type | Required? | Description | Example usage |
+|:---|:---|:---|:---|:---|:---|
+| `member_id` | path | long | yes | ID of the member | /members/1/uploads/66f0cc9e-161b-11f0-b84c-00163e21c952/errors |
+| `upload_job_id` | path | string (uuid) | yes | UUID of Accepted Uploaded File Job | /members/1/uploads/66f0cc9e-161b-11f0-b84c-00163e21c952/errors |
+
+#### Response (job errors) 
+
+Successful response (200) returns gzip file (Response content type: application/gzip) containing detailed information about job errors. 
+
+Alternative possible response codes: 
+-  403
+- 404
+- 500 
+
+The gzip errors file is a csv file with the following fields: 
+
+| Field | Description |
+|:---|:---|
+| `member_id` | The member ID of the member who submitted the job. |
+| `job_id` | The job ID of the job. |
+| `submitted_at` | The submission time at which the member submitted the job. |
+| `error` | An error string describing the error that was encountered. |
+| `line_number` | The line number of the line in the original uploaded file at which the error was encountered. |
+
+The csv file has one row for each error that was encountered during the processing of the customer job (up to 10 rows). 
+
+
 
 ### HTTP status codes (Bulk upload)
 
@@ -364,7 +401,7 @@ The segment column can contain:
 - `segment_id:segment_value`
 - `segment_id:segment_value:segment_ttl`
 
-When only the `segment_id` is provided, RTSS will assume that segment value is `0`, and segment a TTL of `default` (180 days).
+When only the `segment_id` is provided, RTSS will assume that segment value is `0`, and segment a TTL of `default` (30 days).
 
 `segment_ttl` must be an integer, indicating TTL duration in **seconds** only.
 
@@ -413,7 +450,7 @@ Server responds with the job ID.
 ##### `GET` request using cURL
 
 ```
-curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2
+curl https://api.appnexus.com/apd-api/members/1/uploads/a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2 
 ```
 
 ##### `GET`: JSON response
@@ -423,28 +460,27 @@ Server responds with information about the job ID specified in the Query Paramet
 ```
 {
     "uploads": [
-        {
-            "added": "2016-10-07T19:52:49Z",
-            "id": "a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2",
-            "member_id": 1,
-            "rows_total": 6, // total number of processed lines in the file
-            "rows_failed": 1, // total number of failed lines in the file
-            "records_total": 8, // total number of processed "segment records" in the file                          
-                                // "records_total" > "rows_total" ==> there were several segments on at least one line in the file
-            "records_failed": 2, // total number of failed "segment records" in the file (could be many on a single line)
-            "message": "5: bad ip range",
-            "started": "2016-10-07T19:52:49Z",
-            "status": "completed_with_errors",
-            "stopped": "2016-10-07T19:52:49Z"
-        }
+        { 
+
+          "added": "2016-10-07T19:52:49Z", 
+          "id": " a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2", 
+          "member_id": 1, 
+          "records_failed": 2, 
+          "records_total": 3, 
+          "status": " completed_with_errors", 
+          "stopped": "2016-10-07T19:52:49Z" 
+
+        } 
     ]
 }
 ```
-
+<!--
 > [!NOTE]
 >
 > - The `rows_failed` field indicates how many lines failed to process.
 > - The `message` field is an error description for failed lines. It returns a maximum of 100 errors.
+-->
+
 
 ## Best upload practices
 

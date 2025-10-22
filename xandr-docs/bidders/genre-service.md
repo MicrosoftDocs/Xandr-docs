@@ -1,7 +1,10 @@
 ---
 title: Bidders - Genre Service
 description: Genre Service helps you to view the registered video content genres in the system. Video content fields can be added to line item or deal line item targeting.
-ms.date: 11/23/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Genre service

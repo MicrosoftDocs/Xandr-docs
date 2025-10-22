@@ -1,8 +1,10 @@
 ---
 title: Data Usage Report for Data Providers
 description: This page talks about your data usage information provided by third parties, costs of that data usage, and the campaigns in which that data was used.    
-ms.custom: data-providers
-ms.date: 11/30/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data usage report for data providers

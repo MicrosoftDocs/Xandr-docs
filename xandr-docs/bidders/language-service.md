@@ -1,7 +1,10 @@
 ---
 title: Bidders - Language Service
 description: In this article, learn about bidders language service, their JSON fields, and REST API with an example.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Language service

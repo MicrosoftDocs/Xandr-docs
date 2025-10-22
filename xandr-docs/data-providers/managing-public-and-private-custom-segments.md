@@ -1,8 +1,10 @@
 ---
 title: Managing Public and Private (Custom) Segments
 description: The Data Marketplace supports both public and private segments. This page covers creating a new segment object, a new private segment, changing a public segment to private and a private segment to public segment.   
-ms.custom: data-providers
-ms.date: 11/30/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Managing public and private (custom) segments

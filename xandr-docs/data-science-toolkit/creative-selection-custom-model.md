@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Creative Selection Custom Model
 description: Explore the process of assigning creatives using a custom model, with syntax explanations, detailed API workflow instructions, and illustrative examples.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Creative selection custom model

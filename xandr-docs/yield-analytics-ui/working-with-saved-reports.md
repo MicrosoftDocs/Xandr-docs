@@ -1,8 +1,10 @@
 ---
 title: Working with Saved Reports
 description: In this article, learn actions that you can take on Saved Reports like adding, editing, filtering and scheduling of saved reports.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Work with saved reports

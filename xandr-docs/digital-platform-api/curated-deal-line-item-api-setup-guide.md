@@ -1,8 +1,10 @@
 ---
 title: Curated Deal Line Item API Setup Guide
 description: Learn the process of setting up an API implementation of a curated deal line item to target a deal.
-ms.date: 9/11/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Curated Deal Line Item API setup guide

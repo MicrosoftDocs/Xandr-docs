@@ -2,7 +2,9 @@
 title: forceCreativeId for Android
 description: In this article, discover how to use forceCreativeId on Android devices. Learn about its scope, method, and an example for better understanding.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

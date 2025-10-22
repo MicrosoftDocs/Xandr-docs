@@ -1,8 +1,10 @@
 ---
 title: Show Tag
 description: Use the showTag function to indicate that an ad placement has been fully defined and is ready for an ad to be shown in its space.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Show tag

@@ -1,8 +1,10 @@
 ---
 title: Placement Set Service
 description: Use the Placement Set service to support the creation and management of ad pods and linear groupings of ads designed to fit within a single video placement.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Placement Set service

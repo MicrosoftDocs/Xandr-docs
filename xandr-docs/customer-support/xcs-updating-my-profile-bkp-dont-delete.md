@@ -1,8 +1,10 @@
 ---
 title: Update profile, settings and password
 description: In this article, learn step-by-step instructions on how to update My Profile, Settings and Password in Customer Support Portal.
-ms.custom: customer-support
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
+ms.author: shsrinivasan
 ---
 
 # Update profile, settings and password

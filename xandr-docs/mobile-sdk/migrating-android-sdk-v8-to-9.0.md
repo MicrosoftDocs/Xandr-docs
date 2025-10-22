@@ -2,7 +2,9 @@
 title: Migrating Android SDK v8 to 9.0
 description: Publishers using SDK v9.0 must initialize Xandr SDK before making an ad request to avoid exceptions.
 ms.custom: android-sdk
-ms.date: 06/10/2024
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

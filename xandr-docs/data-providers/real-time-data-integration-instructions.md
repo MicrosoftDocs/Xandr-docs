@@ -1,8 +1,10 @@
 ---
 title: Real Time Data Integration Instructions
 description: In this article, explore step-by-step real time data integration instructions.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Real time data integration instructions

@@ -1,8 +1,10 @@
 ---
 title: Sync Report Service
 description: This article lists the reports that use the Sync Report service. This service is currently under-development.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Sync Report service

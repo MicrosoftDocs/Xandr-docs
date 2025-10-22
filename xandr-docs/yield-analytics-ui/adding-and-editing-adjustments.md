@@ -1,8 +1,10 @@
 ---
 title: Add and Edit Adjustments
 description: In this article, learn how to add or edit seasonal adjustments and manual adjustments.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Add and edit adjustments

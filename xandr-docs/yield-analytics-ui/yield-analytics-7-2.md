@@ -1,8 +1,10 @@
 ---
 title: Yield Analytics 7.2
 description: Learn about enhancements made to the Reporting Screen and what are the highlights of this release. 
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Yield Analytics 7.2

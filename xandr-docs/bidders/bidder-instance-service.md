@@ -1,7 +1,10 @@
 ---
 title: Bidder Instance Service
 description: Explore this article to understand the Bidder Instance service, including its JSON fields, REST API, and a detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder Instance service

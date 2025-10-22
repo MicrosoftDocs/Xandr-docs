@@ -1,8 +1,10 @@
 ---
 title: OTT and CTV Video Integrations
 description: In this article, get an overview of the supported integrations with various OTT hardware platforms, including CTV.
-ms.custom: ott-ctv
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: ott-ctv
+ms.author: shsrinivasan
 ---
 
 # OTT and CTV video integrations

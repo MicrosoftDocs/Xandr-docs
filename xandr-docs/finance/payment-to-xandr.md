@@ -1,8 +1,10 @@
 ---
 title: Finance - Payment
 description: Learn about invoices, payment instructions and billing reports in UI.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 

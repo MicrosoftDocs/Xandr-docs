@@ -1,8 +1,10 @@
 ---
 title: Availability Lookup - Quick Start Guide
 description: Optimize with tab-based access in Availability Lookup. Streamline actions in Lookup Builder, Results, Batch Builder, and Queue management.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Availability lookup - Quick start guide

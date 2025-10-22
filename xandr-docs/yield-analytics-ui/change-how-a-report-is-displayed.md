@@ -1,8 +1,10 @@
 ---
 title: Change Report Display
 description: Explore report customization options for enhanced data display, modifying visual representation effectively.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Change report display

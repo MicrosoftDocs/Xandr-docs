@@ -1,8 +1,10 @@
 ---
 title: Working with Channel Metrics
 description: Use the Channels tab to view high-level metrics for integrated supply-side platform along with the adserver data.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Work with channel metrics

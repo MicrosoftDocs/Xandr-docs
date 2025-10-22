@@ -1,8 +1,10 @@
 ---
 title: Add a Microsoft Outlook Creative via the API
 description: This article provides specifications for Outlook creatives and shows you how to add them to the system via the creative service.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Add a Microsoft Outlook creative via the API

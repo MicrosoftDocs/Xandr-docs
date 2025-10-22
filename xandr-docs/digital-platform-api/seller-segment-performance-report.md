@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Seller Segment Performance Report
 description: Use the Seller Segment Performance Report to track targeted segments' impact on overall performance and transacted impressions to understand usage per segment.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Seller Segment Performance report

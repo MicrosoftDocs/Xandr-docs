@@ -1,8 +1,10 @@
 ---
 title: Smart Line Item Service 
 description: The Smart line item represents the agreed-upon strategies that is executed for the advertiser.
-ms.date: 04/27/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Smart line item service

@@ -1,8 +1,10 @@
 ---
 title: FAQ - Supply Partner Inventory Relationship
 description: This article addresses the frequently asked questions about supply partner inventory relationship.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # FAQ - Supply partner inventory relationship

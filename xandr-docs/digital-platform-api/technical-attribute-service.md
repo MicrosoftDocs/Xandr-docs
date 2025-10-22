@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Technical Attribute Service
 description: Use the Technical Attribute service to view the list of technical attributes that you can target in the ad profile service via ID.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Technical Attribute service

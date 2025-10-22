@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Buy Microsoft Outlook.com Inventory
 description: In this article, learn about Microsoft Outlook.com inventory and how to add Outlook creatives and run them in the free Outlook.com webmail service.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Buy Microsoft Outlook.com inventory

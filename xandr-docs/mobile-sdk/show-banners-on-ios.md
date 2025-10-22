@@ -2,7 +2,10 @@
 title: Show Banners on iOS
 description: In this page, learn about steps and code samples that you need to follow and use to show banner ads. 
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

@@ -1,8 +1,10 @@
 ---
 title: Dealing with Campaign Under-Delivery
 description: The article discusses diagnosing and fixing under-delivery issues in different scenarios, exploring root causes and noting how political obstacles complicate solutions.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Deal with campaign under-delivery

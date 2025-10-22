@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Seller Bid Error Report
 description: Use the Seller Bid Error report to get an insight into rejected demand through a randomly selected set of errors. Helps troubleshoot sell-side and buy-side settings.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Seller Bid Error report

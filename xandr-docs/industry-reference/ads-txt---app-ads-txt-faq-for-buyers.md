@@ -1,8 +1,10 @@
 ---
 title: Ads.txt/App-Ads.txt Buyer FAQ
 description: In this article, explore answers to frequently asked questions (FAQs) about Ads.txt/App-Ads.txt for buyers.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Ads.txt/App-Ads.txt buyer FAQ

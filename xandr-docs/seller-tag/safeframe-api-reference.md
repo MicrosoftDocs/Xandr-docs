@@ -1,8 +1,10 @@
 ---
 title: SafeFrame API Reference
 description: SafeFrame—API-enabled iframe ensures secure communication, data safety, and efficient interaction with Microsoft's sf-ext.js on a secondary domain.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # SafeFrame API reference

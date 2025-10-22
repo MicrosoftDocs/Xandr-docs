@@ -1,8 +1,10 @@
 ---
 title: Privacy Service
 description: Explore the Privacy Service, which enables customers to create personalized consumer privacy experiences and respond to data subject access requests.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Privacy service

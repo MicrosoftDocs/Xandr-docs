@@ -1,7 +1,10 @@
 ---
 title: International Creatives
 description: The auditing team accepts multinational and multilingual creatives and adds them to the brand list if they are of a major multinational brand.
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # International creatives

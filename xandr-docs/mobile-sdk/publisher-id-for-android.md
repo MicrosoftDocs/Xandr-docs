@@ -2,7 +2,9 @@
 title: Publisher ID for Android
 description: Use the publisher_id parameter of the Universal Tag service to indicate what action should occur when an ad request fails at the placement level.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

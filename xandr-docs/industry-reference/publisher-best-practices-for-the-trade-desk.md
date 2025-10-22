@@ -1,9 +1,10 @@
 ---
 title: Publisher Best Practices for The Trade Desk
 description: Outline the best practices for publishers and optimize revenue for Trade Desk publishers with updated inventory policies.
-ms.date: 05/20/2025
-ms.custom : industry-reference
-ms.author: rupambaruah
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Publisher best practices for The Trade Desk

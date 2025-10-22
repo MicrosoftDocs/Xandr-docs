@@ -1,8 +1,10 @@
 ---
 title: Seller Tag Release Notes
 description: In this article, find the release notes of AST and the updates made for each release.
-ms.custom: seller-tag
-ms.date: 8/05/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Seller Tag Release Notes

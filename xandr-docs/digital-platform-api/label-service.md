@@ -1,8 +1,10 @@
 ---
 title: Label Service
 description: Discover the Label service, providing the ability to view and apply labels to your advertisers, insertion orders, line items, campaigns, and publishers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Label service

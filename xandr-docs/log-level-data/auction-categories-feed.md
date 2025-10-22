@@ -1,8 +1,10 @@
 ---
 title: Auction Categories Feed
 description: In this article, find information about the Auction categories feed and details about the columns associated with this data feed.
-ms.custom: log level-data
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: log-level-data
+ms.author: shsrinivasan
 ---
 
 # Auction categories feed

@@ -1,8 +1,10 @@
 ---
 title: Segment Modifier Data Provider Integration
 description: In this article, learn how to do a server-side integration for a segment modifier.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Segment modifier data provider integration

@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - BSS AVRO File Format
 description: In this article, find information about the best practices and the steps to be followed to prepare your audience files using the AVRO file format
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - BSS AVRO file format

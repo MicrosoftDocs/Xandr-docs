@@ -1,7 +1,10 @@
 ---
 title: Process the Bid Request
 description: In this article, learn how the bid requests are processed along with some sample bid requests.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Process the bid request

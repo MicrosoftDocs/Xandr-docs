@@ -1,7 +1,10 @@
 ---
 title: Outgoing Bid Request to Bidders
 description: Learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
-ms.date: 7/3/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Outgoing bid request to bidders

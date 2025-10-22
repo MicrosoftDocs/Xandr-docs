@@ -1,8 +1,10 @@
 ---
 title: Off Event
 description: Learn how this function clears the event listeners on the given `eventType` and `targetId`. This page also lists parameters that can be sent as arguments in the function along with an example.   
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 

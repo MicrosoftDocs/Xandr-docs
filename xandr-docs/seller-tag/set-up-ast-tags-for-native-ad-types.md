@@ -1,8 +1,10 @@
 ---
 title: Set Up AST Tags for Native Ad Types
 description: Set up seller tag (AST) for native ad types. AST tags are defined and loaded in the page header and are activated by showing the tags in the page body.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Set up seller tags for native ad types

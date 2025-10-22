@@ -1,8 +1,10 @@
 ---
 title: Reset a User's Password
 description: Learn how to reset a user's password if you have administrative permissions.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Reset a user's password

@@ -1,8 +1,10 @@
 ---
 title: View the Full Details of an Order or Order Line
 description: View the details of an order or order line on the Order Visibility and Order Line Visibility pages, from any page within yield analytics that displays order information.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View the full details of an order or order line

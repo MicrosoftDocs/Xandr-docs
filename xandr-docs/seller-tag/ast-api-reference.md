@@ -1,8 +1,10 @@
 ---
 title: AST API Reference
 description: In this article, find information about the usage of the functions and variables of Microsoft Advertising's Seller Tag (AST) JavaScript library.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # AST API reference

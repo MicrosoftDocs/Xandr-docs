@@ -1,8 +1,10 @@
 ---
 title: Ad Server Category Mapping Service
 description: Learn about Ad Server Category Mapping service. It returns all or a specific ad server category mapping.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Ad Server Category Mapping service

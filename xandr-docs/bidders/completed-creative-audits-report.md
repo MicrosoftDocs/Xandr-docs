@@ -1,7 +1,10 @@
 ---
 title: Bidders - Completed Creative Audits Report
 description: Completed Creative Audits Report gives you insight into how your creatives are moving through the audit process. Learn the advantages of using this report in this page and steps to retrieve the report.
-ms.date: 11/22/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Completed creative audits report

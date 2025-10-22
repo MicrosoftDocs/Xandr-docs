@@ -1,8 +1,10 @@
 ---
 title: Run a Potential Order through Scenario Manager
 description: Scenario Manager allows testing sales proposals by creating new order lines for a product and analyzing potential revenue consequences.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Run a potential order through Scenario Manager

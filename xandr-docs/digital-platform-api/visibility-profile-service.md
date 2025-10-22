@@ -1,8 +1,10 @@
 ---
 title: Visibility Profile Service
 description: Explore the Visibility Profile service, enabling you to control the level of detail you pass to buyers in your bid requests.
-ms.date: 08/11/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Visibility Profile service

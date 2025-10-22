@@ -1,8 +1,10 @@
 ---
 title: Example Setup
 description: This article walks you through setup steps and common operations for network users using the API.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Example setup

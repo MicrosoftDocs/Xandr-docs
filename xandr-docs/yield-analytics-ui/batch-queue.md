@@ -1,8 +1,10 @@
 ---
 title: Batch Queue
 description: Monitor and manage daily batches using Batch Queue tab, including instructions for retrieving or canceling.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Batch queue

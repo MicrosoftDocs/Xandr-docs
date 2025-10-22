@@ -1,8 +1,10 @@
 ---
 title: Frequency for the API
 description: This article provides information on frequency and recency targeting through the API with an example of how to use it and where to apply it.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Frequency for the API

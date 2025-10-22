@@ -1,8 +1,10 @@
 ---
 title: Schedule an Availability Lookup
 description: This article provides instructions to schedule an availability lookup. You can send a report immediately or on a recurring schedule.
-ms.date: 11/07/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Schedule an availability lookup

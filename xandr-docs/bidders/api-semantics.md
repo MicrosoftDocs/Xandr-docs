@@ -1,7 +1,10 @@
 ---
 title: Bidders - API Semantics
 description: In this article, learn how to work with our impression bus REST API.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - API semantics

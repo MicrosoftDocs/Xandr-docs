@@ -1,8 +1,10 @@
 ---
 title: Creative Custom Request Partner Service
 description: In this article, learn about the Creative Custom Request Partner service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/07/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Creative Custom Request Partner service

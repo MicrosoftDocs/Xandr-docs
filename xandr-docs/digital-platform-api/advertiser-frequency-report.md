@@ -1,8 +1,10 @@
 ---
 title: Advertiser Frequency Report
 description: Use the Advertiser Frequency report to view how frequently users are viewing a specific advertiser's creatives.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Advertiser Frequency report

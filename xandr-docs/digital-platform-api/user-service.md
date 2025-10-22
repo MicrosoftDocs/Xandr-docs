@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - User Service
 description: Explore the User service, enabling member-level users to create, modify, and retrieve information about existing users.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - User service

@@ -13,6 +13,7 @@ ms.author: shsrinivasan
 
 Read about the latest updates to Monetize.
 
+- [October 22, 2025: Automated Deal Archival](release-notes-20251022.md)
 - [September 23, 2025: Unified Sign-In with Microsoft account](release-notes-20250923.md)
 - [July 25, 2025 - Forecast Builder in Microsoft Monetize](release-notes-20250725.md)
 - [July 08, 2025: Enhanced Forecast-Shaped Pacing](release-notes-20250706.md)

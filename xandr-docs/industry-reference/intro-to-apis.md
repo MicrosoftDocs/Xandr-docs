@@ -1,8 +1,10 @@
 ---
 title: Introduction to APIs
 description: In this article, find basic information about what APIs are, examples of APIs, and advantages of using APIs.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Introduction to APIs

@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Reporting on Podded Video
 description: Explore the Pod Analytics report, which offers metrics for groups of ads delivered sequentially between segments of non-commercial video content.
-ms.date: 06/04/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Reporting on Podded video

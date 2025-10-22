@@ -2,7 +2,9 @@
 title: iOS SDK Ad Units Overview
 description: In this article, learn about iOS SDK ad units and explore how to incorporate different ad units or interact with our interfaces within your iOS application.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

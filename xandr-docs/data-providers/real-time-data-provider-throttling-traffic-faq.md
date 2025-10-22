@@ -1,8 +1,10 @@
 ---
 title: Real Time Data Provider Throttling Traffic FAQ
 description: In this article, explore answers to frequently asked questions (FAQS) about real time data provider throttling traffic.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Real time data provider throttling traffic FAQ

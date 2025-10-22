@@ -1,8 +1,10 @@
 ---
 title: Introduction to Video Inventory and Formats
 description: Learn about different types of creatives like In-stream video, out-stream video, in-banner video, VAST, VPAID, MRAID and VMAP in this module.     
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 

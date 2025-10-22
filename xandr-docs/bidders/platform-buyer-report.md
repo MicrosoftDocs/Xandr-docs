@@ -1,7 +1,10 @@
 ---
 title: Platform Buyer Report
 description: In this article, find information about the Platform buyer report, the metrics and dimensions associated with it, and delivery methods for the report.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Platform buyer report

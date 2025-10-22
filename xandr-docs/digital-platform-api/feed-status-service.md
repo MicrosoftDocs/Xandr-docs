@@ -1,8 +1,10 @@
 ---
 title: Feed Status Service
 description: Use the Feed Status service to check when new reporting data is available via the network analytics feed.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Feed Status service

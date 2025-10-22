@@ -1,8 +1,10 @@
 ---
 title: Import Order Template
 description: In this article, explore information about template fields, important notes for template usage, and instructions on importing an order template.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Import order template

@@ -1,8 +1,10 @@
 ---
 title: TCP-IP
 description: Illustrate HTTP exchange, likening it to ordering cheese online - browsers, clients, and responses explained.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # TCP-IP

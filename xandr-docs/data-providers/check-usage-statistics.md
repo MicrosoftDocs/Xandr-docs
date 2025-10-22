@@ -1,8 +1,10 @@
 ---
 title: Data Providers - Check Usage Statistics
 description: The statistics are deduplicated per request made to the service. This page explains about the fields that can be set in the query string when making a call to the API to retrieve statistics.
-ms.custom: data-providers
-ms.date: 11/30/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 

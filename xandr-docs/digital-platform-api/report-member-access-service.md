@@ -1,8 +1,10 @@
 ---
 title: Report Member Access Service
 description: Explore the Report Member Access service, allowing users to modify access permissions for restricted reports.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Report Member Access service

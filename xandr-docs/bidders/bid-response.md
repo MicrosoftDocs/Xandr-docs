@@ -1,7 +1,10 @@
 ---
 title: Bidders - Bid Response
 description: Explore this article to understand bid responses, their implementation, fields, types, and detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Bid response

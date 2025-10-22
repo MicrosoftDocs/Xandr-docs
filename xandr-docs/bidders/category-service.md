@@ -1,7 +1,10 @@
 ---
 title: Bidders - Category Service
 description: In this article, learn about bidders category service, their JSON fields, REST API, along with a detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Category service

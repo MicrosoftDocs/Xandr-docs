@@ -1,8 +1,10 @@
 ---
 title: ANJAM User Guide
 description: In this article, learn what ANJAM is and the functions associated with it with examples.
-ms.custom: android-sdk, ios-sdk
-ms.date: 10/8/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # ANJAM user guide

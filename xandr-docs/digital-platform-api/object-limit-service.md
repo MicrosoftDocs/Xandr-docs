@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Object Limit Service
 description: Learn about the Object Limit service. Limits are set for various categories of content on the platform, including line items, campaigns, creatives, and domains.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Object Limit service

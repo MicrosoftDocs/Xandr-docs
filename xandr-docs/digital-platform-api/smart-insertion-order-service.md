@@ -1,8 +1,10 @@
 ---
 title: Smart Insertion Order Service 
 description: The Smart insertion order allows you to configure basic settings of the insertion order along with campaign budgeting parameters.
-ms.date: 04/27/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Smart insertion order service

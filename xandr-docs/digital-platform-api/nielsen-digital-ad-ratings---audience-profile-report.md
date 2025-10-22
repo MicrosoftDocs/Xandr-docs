@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Nielsen Digital Ad Ratings - Audience Profile Report
 description: The Nielsen Digital Ad Ratings (DAR) Audience Profile report tracks impressions and demographics of digital ads. Demographic measuring must be enabled for use.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Nielsen Digital Ad Ratings - Audience Profile report

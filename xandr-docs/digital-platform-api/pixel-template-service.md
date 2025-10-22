@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Pixel Template Service
 description: Use the Pixel Template service to find and add AppNexus-approved creative pixels from trusted providers using the pixels array.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Pixel Template service

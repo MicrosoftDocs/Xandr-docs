@@ -1,8 +1,10 @@
 ---
 title: Open and Edit an Existing Report
 description: In this article, explore step-by-step instructions on how to open and edit an existing report.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Open and edit an existing report

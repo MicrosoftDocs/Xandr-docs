@@ -1,8 +1,10 @@
 ---
 title: Industry Reference - Online Advertising Organizations (Self-Regulatory)
 description: There are several organizations active in the online advertising sector. This page describes what the key organizations are, what they do, and key projects, working groups, and objectives of each.   
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 

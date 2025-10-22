@@ -1,8 +1,10 @@
 ---
 title :  Online Advertising Self-Regulatory Organizations
 description : Online advertising self-regulatory organizations are independent bodies
-ms.date : 10/28/2023
-ms.custom : industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: policies-regulation
+ms.author: shsrinivasan
 ---
 
 

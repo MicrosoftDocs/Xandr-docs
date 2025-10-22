@@ -1,8 +1,10 @@
 ---
 title: Sites and Placements
 description: In this article, learn how to create a site and set up the placement by providing the necessary fields and details.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Sites and placements

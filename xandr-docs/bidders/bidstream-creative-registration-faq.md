@@ -1,7 +1,9 @@
 ---
 title: Bidstream Creative Registration FAQ
 description: Learn about Bidstream Creative Registration (BCR) FAQ(s)
-ms.date: 10/14/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -6,9 +6,10 @@ metadata:
   title: Data Science Toolkit Reference Documentation
   description: Discover various products of the Data Science Toolkit
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 10/18/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: data-science-toolkit
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

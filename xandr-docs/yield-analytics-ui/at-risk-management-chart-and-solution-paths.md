@@ -1,8 +1,10 @@
 ---
 title: At-Risk Management Chart and Solution Paths
 description: Optimize risk management with charts, adjust parameters, extend flight time, and reassess strategies for enhanced performance.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # At-risk management chart and solution paths

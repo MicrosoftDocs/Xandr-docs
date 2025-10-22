@@ -1,8 +1,10 @@
 ---
 title: Edit a User Group
 description: In this article, explore step-by-step instructions on how to edit a user group.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Edit a user group

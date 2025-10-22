@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Incrementality and Xandr
 description: In this page, learn what is incrementality and how Xandr offers clients with data science capabilities, like the ability to measure incrementality. 
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 

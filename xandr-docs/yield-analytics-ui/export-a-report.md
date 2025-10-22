@@ -1,8 +1,10 @@
 ---
 title: Export a Report
 description: In this article, learn how to export a report into an Excel worksheet or comma-separated values (CSV) file.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Export a report

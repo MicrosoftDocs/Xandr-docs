@@ -1,8 +1,10 @@
 ---
 title: Create a New Report
 description: Access Reports tab, input metrics, set panel options (dimension, primary metric, group by, trend lines, sort), and use filters for thorough analysis.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Create a new report

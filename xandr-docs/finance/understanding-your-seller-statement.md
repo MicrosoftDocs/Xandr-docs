@@ -1,8 +1,10 @@
 ---
 title: Finance - Understanding Your Seller Statement
 description: As a member who sells inventory on Microsoft Advertising's platform, you receive a monthly statement indicating the amount of revenue you have earned.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 

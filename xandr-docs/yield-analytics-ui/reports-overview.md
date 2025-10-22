@@ -1,8 +1,10 @@
 ---
 title: Reports Overview
 description: The Reports tab offers flexible analytics for inventory and yield analysis, integrating data from multiple sources for a centralized view.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Reports overview

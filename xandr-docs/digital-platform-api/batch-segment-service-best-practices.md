@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Batch Segment Service Best Practices
 description: In this article, find information about the recommended best practices regarding Batch Segment Service (BSS) and answers to some frequently asked questions regarding BSS.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Batch Segment Service best practices

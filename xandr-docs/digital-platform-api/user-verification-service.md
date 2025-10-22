@@ -1,8 +1,10 @@
 ---
 title: User Verification Service
 description: Use the User Verification service to ensure that the accurate (paying) customer is logging into the App.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # User Verification service

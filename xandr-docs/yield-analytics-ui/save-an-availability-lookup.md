@@ -1,8 +1,10 @@
 ---
 title: Save an Availability Lookup
 description: Learn how to save a lookup for available inventory to run again later.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Save an availability lookup

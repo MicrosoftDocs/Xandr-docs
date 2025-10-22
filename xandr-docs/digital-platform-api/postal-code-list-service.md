@@ -1,8 +1,10 @@
 ---
 title: Postal Code List Service
 description: Explore the features of Postal Code List service, enabling users to search, create, fetch, and delete a specific postal code list.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Postal Code List service

@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Buyer Engagement Report
 description: In this article, learn about the Buyer Engagement report and the dimensions and metrics associated with it.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Buyer engagement report

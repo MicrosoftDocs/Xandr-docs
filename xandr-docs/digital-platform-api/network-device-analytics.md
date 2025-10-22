@@ -1,8 +1,10 @@
 ---
 title: Network Device Analytics
 description: Use the Network Device Analytics report to view performance data for buy-side and sell-side ads targeting compatible devices, useful for networks working with in-app advertisers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network device analytics

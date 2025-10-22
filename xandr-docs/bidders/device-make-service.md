@@ -1,7 +1,10 @@
 ---
 title: Bidders - Device Make Service
 description: Explore the Device Make Service that categorizes mobile devices by manufacturer and model, offering read-only access to view and map make IDs.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Device make service

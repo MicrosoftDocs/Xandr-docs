@@ -1,8 +1,10 @@
 ---
 title: Network Analytics
 description: Use the Network Analytics report to view the buy and sell-side data for network members, including direct advertiser impressions and direct publishers sold across platforms.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network analytics

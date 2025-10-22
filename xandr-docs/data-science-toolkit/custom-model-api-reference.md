@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Custom Model API Reference
 description: In this article, explore the reference information about the API services used to implement custom models.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Custom model API reference

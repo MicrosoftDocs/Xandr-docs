@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Selling Billing Report
 description: Use the Selling Billing report to view billing data across direct publishers, advertisers, and platform buyers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Selling Billing report

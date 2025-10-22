@@ -2,7 +2,9 @@
 title: Listener for AdAboutToExpire on iOS
 description: In this article, learn about the Listener for AdAboutToExpire in iOS, including its properties, methods, and examples.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

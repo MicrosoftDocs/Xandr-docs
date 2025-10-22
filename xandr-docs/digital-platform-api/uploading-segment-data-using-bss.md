@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Uploading Segment Data Using BSS
 description: Explore the multi-step process on how to add your segment file to the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Uploading segment data using BSS

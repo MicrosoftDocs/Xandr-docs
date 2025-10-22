@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Guide
 description: This page explains what is a Data Science Toolkit, what products are included in it and concepts to get you started with Data Science Toolkit products. 
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 

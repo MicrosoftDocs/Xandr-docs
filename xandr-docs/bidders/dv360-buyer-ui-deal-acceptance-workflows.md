@@ -1,7 +1,10 @@
 ---
 title: Bidders - DV360 Buyer UI Deal Acceptance Workflows
 description: Explore DV360 Buyer UI deal acceptance workflows. Open for testing by selected sellers. Contact your account representative to participate.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - DV360 Buyer UI deal acceptance workflows

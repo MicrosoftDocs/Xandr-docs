@@ -1,8 +1,10 @@
 ---
 title: Splits Service Troubleshooting
 description: This article explains error messages and common issues that may occur when using the Splits service.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Splits service troubleshooting

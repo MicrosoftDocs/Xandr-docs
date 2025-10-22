@@ -1,8 +1,10 @@
 ---
 title: Identity Type Participant Service
 description: Learn about the Identity Type Participant service, their JSON fields, ways to manage permissions for all identity solutions, and REST API with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Identity Type Participant service

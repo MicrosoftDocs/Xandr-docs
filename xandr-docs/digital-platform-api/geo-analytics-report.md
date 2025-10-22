@@ -1,8 +1,10 @@
 ---
 title: Geo Analytics Report
 description: Use the Geo Analytics report to break down campaign delivery and performance by geographic area.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Geo Analytics report

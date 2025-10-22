@@ -1,8 +1,10 @@
 ---
 title: Submit Auditable Dynamic Creatives
 description: Learn to submit your creatives using custom Macros that can reduce the number of audits performed by consolidating any creative with the same size and brand. 
-ms.date: 11/24/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

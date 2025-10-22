@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Legacy BSS File Format
 description: Learn about the Legacy Batch Segment Service (BSS) file format and how to upload segment data files in a variety of formats with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Legacy BSS file format

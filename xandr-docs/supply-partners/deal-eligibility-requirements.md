@@ -1,8 +1,10 @@
 ---
 title: Deal eligibility requirements setting up deals
 description: In this article, learn about the deal eligibility requirements and ways to set up a deal for test buyer members AN Talent (882) and AN Challenge (1370).
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Deal eligibility requirements: setting up deals

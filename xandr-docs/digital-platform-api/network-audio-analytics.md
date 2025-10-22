@@ -1,8 +1,10 @@
 ---
 title: Network Audio Analytics
 description: Use the Network Audio Analytics report to view audio event metrics for network members.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network audio analytics

@@ -1,8 +1,10 @@
 ---
 title: Helpful JSON Tools
 description: Learn about a few tools and tricks when using the APIs.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Helpful JSON tools

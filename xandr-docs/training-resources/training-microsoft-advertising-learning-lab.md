@@ -1,7 +1,10 @@
 ---
 title : Training Microsoft Advertising's Learning Lab
 description : Learn using Microsoft Advertising's Learning Lab.
-ms.date: 12/12/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: training-resources
+ms.author: shsrinivasan
 ---
 
 

@@ -1,8 +1,10 @@
 ---
 title: MRAID and Mobile Video Tutorial
 description: This page gives an overview on MRAID and mobile video. Go through MRAID use cases and functionality along with complications with HTML5 video. 
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 

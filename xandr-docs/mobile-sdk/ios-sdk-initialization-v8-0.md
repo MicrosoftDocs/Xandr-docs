@@ -2,7 +2,9 @@
 title: iOS SDK Initialization
 description: In this article, learn about iOS SDK initialization v8.0, API signatures, and examples for better understanding.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

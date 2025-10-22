@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Multi-Buyer Seller Deal Metrics
 description: Use the Multi-Buyer Seller Deal Metrics report to view key information about deal metrics, performance, and rejection reasons that is relevant to seller.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Multi-buyer seller deal metrics

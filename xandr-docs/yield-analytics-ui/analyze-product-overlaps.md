@@ -1,8 +1,10 @@
 ---
 title: Analyze Product Overlaps
 description: In this article, follow our step-by-step instructions for analyzing overlapping impressions.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Analyze product overlaps

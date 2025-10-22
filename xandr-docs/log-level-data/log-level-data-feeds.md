@@ -1,8 +1,10 @@
 ---
 title: Log Level Data Feeds
 description: In this article, learn about what Log level data feeds are, their use cases, and a list of all the log level feeds available.
-ms.custom: log-level-data
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: log-level-data
+ms.author: shsrinivasan
 ---
 
 # Log level data feeds

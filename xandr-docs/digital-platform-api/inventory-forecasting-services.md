@@ -1,8 +1,10 @@
 ---
 title: Inventory Forecasting Services
 description: In this article, explore about the Inventory Forecasting services that are designed to help you learn about inventory availability and contention.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Inventory Forecasting services

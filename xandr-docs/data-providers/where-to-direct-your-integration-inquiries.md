@@ -1,8 +1,10 @@
 ---
 title: Integration Help
 description: In this article, learn step-by-step instructions on where you can direct your integration inquiries.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Integration help

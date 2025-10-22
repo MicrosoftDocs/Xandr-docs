@@ -2,7 +2,9 @@
 title: Request Ads over HTTPS on iOS
 description: This article provides information on requesting ads over HTTPS on iOS.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

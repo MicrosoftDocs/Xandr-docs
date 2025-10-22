@@ -1,8 +1,10 @@
 ---
 title: Creating and Managing Segments
 description: Learn how data providers can create and manage their own segments using API and bidder UI. This page explains how data providers will require Xandr's impression bus API and what are the best practices that need to be adhered to.
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Creating and managing segments

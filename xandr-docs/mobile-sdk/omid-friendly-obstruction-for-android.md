@@ -2,7 +2,9 @@
 title: OMID Friendly Obstruction for Android
 description: The Open Measurement SDK enables third-party viewability and verification measurement for mobile ads without multiple SDKs. It is an API provided by IAB.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

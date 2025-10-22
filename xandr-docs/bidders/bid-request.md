@@ -1,7 +1,10 @@
 ---
 title: Bidders - Bid Request
 description: In this article, learn about the different types of bid requests and their implementation with examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Bid request

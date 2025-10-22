@@ -1,7 +1,10 @@
 ---
 title: Object Limits - FAQ
 description: In this article, explore answers to frequently asked questions about the object limits.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Object limits - FAQ

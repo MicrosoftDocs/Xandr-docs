@@ -1,8 +1,10 @@
 ---
 title: Advertiser Attributed Conversions
 description: Use the Advertiser Attributed Conversions report to view conversion pixel IDs, order IDs, times of attributed clicks or impressions, and other related information.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Advertiser attributed conversions

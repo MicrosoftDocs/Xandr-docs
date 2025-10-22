@@ -1,8 +1,10 @@
 ---
 title: Entitlement Type Service
 description: Use the Entitlement Type service to assign specific code features to members through the member service, such as keyword targeting or deal discovery.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Entitlement Type service

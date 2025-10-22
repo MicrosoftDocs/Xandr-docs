@@ -1,8 +1,10 @@
 ---
 title: GDLI to GDALI Migration
 description: This article explains the differences between the legacy GDLI and the new GDALI, and provides links to the resources needed to migrate to GDALIs.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # GDLI to GDALI migration

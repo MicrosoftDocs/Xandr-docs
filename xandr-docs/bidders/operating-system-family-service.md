@@ -1,7 +1,10 @@
 ---
 title: Bidders - Operating System Family Service
 description: In this article, learn about bidders operating system family service, their JSON fields, and REST API with a detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Operating system family service

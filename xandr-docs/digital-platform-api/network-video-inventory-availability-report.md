@@ -1,8 +1,10 @@
 ---
 title: Network Video Inventory Availability Report
 description: Use the Network Video Inventory Availability report to check if inventory meets your buying requirements and predict future success of inventory targeting.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network Video Inventory Availability report

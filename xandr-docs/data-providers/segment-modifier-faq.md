@@ -1,8 +1,10 @@
 ---
 title: Segment Modifier FAQ
 description: In this article, explore answers to frequently asked questions about Segment Modifier.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Segment Modifier FAQ

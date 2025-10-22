@@ -1,8 +1,10 @@
 ---
 title: Lookup Builder
 description: In this article, learn about lookup builders, their filters, how to build lookups, and how to run them individually or in batches.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Lookup builder

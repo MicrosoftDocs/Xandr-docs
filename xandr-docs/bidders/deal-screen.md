@@ -1,7 +1,10 @@
 ---
 title: Deal Screen
 description: Highlight the deals screen, informing bidders about publisher deals. Utilize buyer Access Service for additional details.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Deal screen

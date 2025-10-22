@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Batch Segment Service
 description: In this article, find information about the Batch Segment Service, the possible errors that might occur, and the fields associated with it.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Batch Segment Service

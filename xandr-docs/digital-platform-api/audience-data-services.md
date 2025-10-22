@@ -1,8 +1,10 @@
 ---
 title: Audience Data Services
 description: In this article, find links to resources about the various Audience Data Services available.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Audience data services

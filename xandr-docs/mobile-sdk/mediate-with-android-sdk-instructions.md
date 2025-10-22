@@ -2,7 +2,9 @@
 title: Mediate with Android SDK Instructions
 description: Mediate with Android SDK instructions. Mediation allows selling ad impressions through multiple networks initiated by the main SDK.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

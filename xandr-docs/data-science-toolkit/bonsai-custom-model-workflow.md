@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Bonsai Custom Model Process Overview
 description: In this article, explore a detailed guide to the Bonsai custom model process overview with step-by-step instructions and code examples.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Bonsai custom model process overview

@@ -1,8 +1,10 @@
 ---
 title: Capacity Overview
 description: Analyze product delivery capacity by exploring Impression Capacity, Manual Adjustments & Holidays, and trended Capacity in this article.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Capacity overview

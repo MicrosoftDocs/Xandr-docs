@@ -1,7 +1,10 @@
 ---
 title: Integrate a Bidder
 description: This article provides instructions to integrate a bidder with Xandr.
-ms.date: 11/27/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Integrate a bidder

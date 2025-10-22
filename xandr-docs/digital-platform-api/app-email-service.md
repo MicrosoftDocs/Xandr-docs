@@ -1,8 +1,10 @@
 ---
 title: App Email Service
 description: The App Email service manages automatic email notifications sent to admin users when apps are installed, modified, or deleted.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # App email service

@@ -1,8 +1,10 @@
 ---
 title: Mobile App Store Service
 description: Use the Mobile App Store service to see all of the mobile app stores that are registered in the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Mobile App Store service

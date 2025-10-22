@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Key Value Analytics Report
 description: Explore the Key Value Analytics report, offering insights into the information associated with your network's designated targeting keys and values.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Key Value Analytics report

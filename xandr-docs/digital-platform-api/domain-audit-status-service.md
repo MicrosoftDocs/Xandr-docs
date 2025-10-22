@@ -1,8 +1,10 @@
 ---
 title: Domain Audit Status Service
 description: Use the Domain Audit Status service to check whether specific domains are on the platform and how Xandr has classified them.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Domain Audit Status service

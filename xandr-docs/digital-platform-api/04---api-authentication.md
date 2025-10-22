@@ -1,8 +1,10 @@
 ---
 title: API Authentication
 description: In this article, learn step-by-step instructions on how to authenticate an API service with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # API authentication

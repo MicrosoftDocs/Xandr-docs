@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Offline Attribution Report
 description: Use the Offline Attribution report to track in-store purchases. It is only available to clients with offline sales attribution enabled for their line items.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Offline Attribution report

@@ -1,8 +1,10 @@
 ---
 title: Mobile App Instance List Service
 description: The Mobile App Instance List service provides a list of mobile app instances for campaigns that can be used to create new mobile apps in the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Mobile App Instance List service

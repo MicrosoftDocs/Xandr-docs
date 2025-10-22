@@ -1,8 +1,10 @@
 ---
 title: Real Time Data Integrations Best Practices
 description: Learn what are the best practices in real time data provider integrations, data provider bidder performance and Connection management. 
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Real time data integrations best practices

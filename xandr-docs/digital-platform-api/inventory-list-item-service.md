@@ -1,8 +1,10 @@
 ---
 title: Inventory List Item Service
 description: Learn about the Inventory List Item service that lets you add app bundle IDs and raw URLs (domain or app) to an existing inventory list.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Inventory List Item service

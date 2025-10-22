@@ -1,8 +1,10 @@
 ---
 title: Native Layout Service
 description: The Native Layout service allows sellers to specify and retrieve layouts for native creatives from a database using renderer and layout IDs.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Native Layout service

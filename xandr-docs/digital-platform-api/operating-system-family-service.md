@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Operating System Family Service
 description: Use the Operating System Family service to view registered operating systems for targeting in profiles, including Android, Apple iOS, and Microsoft Windows.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Operating System Family service

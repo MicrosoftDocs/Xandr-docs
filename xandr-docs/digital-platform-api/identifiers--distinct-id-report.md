@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Identifiers - Distinct ID Report
 description: Explore the Distinct ID Identifiers report, providing insights into the total count of unique entries grouped by UID2, RampID, No cookies, and Cookies/Device IDs.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Identifiers - Distinct ID report

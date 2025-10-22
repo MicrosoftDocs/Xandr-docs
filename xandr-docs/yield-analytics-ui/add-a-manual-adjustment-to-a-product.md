@@ -1,8 +1,10 @@
 ---
 title: Add a Manual Adjustment to a Product
 description: In this article, follow our step-by-step instructions to add a manual adjustment to a specific product.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Add a manual adjustment to a product

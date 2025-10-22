@@ -1,7 +1,10 @@
 ---
 title: Bidder Profile Migration Guide
 description: In this article, explore step-by-step guidance for the Bidder profile migration process, ensuring a seamless transition for optimal performance.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidder profile migration guide

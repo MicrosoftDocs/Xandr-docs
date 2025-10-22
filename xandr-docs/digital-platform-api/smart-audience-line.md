@@ -1,8 +1,10 @@
 ---
 title: Smart Audience Line
 description: This document outlines how the Smart audience line serves performance campaigns for Microsoft Invest to enhance ROAS.
-ms.date: 04/17/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Smart audience line

@@ -6,9 +6,10 @@ metadata:
   title: Policies and Regulations
   description: Xandr policies and general industry regulations
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 09/12/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: policies-regulation
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Disclosure and Regulation

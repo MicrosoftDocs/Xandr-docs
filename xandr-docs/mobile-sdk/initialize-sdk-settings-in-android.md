@@ -2,7 +2,9 @@
 title: Initialize SDK Settings in Android
 description: In this article, learn how to initialize SDK settings on Android devices using a method and an example for better understanding.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

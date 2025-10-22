@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Account Recovery Service
 description: In this article, learn about the Account Recovery service and step-by-step instructions on how to reset your acoount password or retrieve your username.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Account Recovery service

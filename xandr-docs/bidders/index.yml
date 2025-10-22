@@ -6,9 +6,10 @@ metadata:
   title: Bidder Reference Documentation
   description: Discover various resources for Bidder
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: bidder
-  ms.date: 11/25/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: bidder
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

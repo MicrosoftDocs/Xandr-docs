@@ -1,8 +1,10 @@
 ---
 title: Yield Analytics 7.16
 description: Learn about different enhancements made in the Permissions page.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Yield Analytics 7.16

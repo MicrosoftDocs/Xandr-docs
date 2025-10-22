@@ -2,7 +2,10 @@
 title: Show Banner Native on iOS
 description: Banner Native is the capability of Mobile SDK Banner class to return native demand. This page talks about banner object (ANBannerAdView) and how it is used.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

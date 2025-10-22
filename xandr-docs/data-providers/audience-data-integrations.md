@@ -1,8 +1,10 @@
 ---
 title: Audience Data Integrations
 description: Learn steps involved in integrating user-based data into the Xandr platform. This page explains steps in the integration process. 
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Audience data integrations

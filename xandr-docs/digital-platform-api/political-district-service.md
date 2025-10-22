@@ -1,8 +1,10 @@
 ---
 title: Political District Service
 description: Explore the Political District service, enabling political buyers to target geographies based on legislative district boundaries.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Political District service

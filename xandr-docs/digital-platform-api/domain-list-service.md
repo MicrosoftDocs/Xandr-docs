@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Domain List Service
 description: Use the Domain List service to define a list of domains that can be included or excluded from a campaign's targeting profile.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Domain List service

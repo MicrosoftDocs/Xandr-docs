@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Custom Models
 description: This page provides an overview of how to get started with Custom Models for various use cases, including Bid Valuation, Creative Selection, and Non-Valuation Purposes.    
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 

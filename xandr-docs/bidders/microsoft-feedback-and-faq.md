@@ -1,7 +1,10 @@
 ---
 title: Microsoft Guidelines and Restrictions
 description: In this article, explore Microsoft's feedback and FAQ information in the Microsoft Advertising policies.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Microsoft guidelines and restrictions

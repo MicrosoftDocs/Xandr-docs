@@ -2,7 +2,9 @@
 title: Listen to Native Ad Events on Android
 description: In this article, learn about the NativeAdEventListener feature in Android, including its scope, methods, and examples.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

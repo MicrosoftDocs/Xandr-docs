@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Curator Bid Error Report
 description: Use the Curator Bid Error report to gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the platform.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Curator Bid Error report

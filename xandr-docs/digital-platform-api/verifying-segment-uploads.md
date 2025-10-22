@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Verifying Segment Uploads
 description: Learn how to verify the success of your segment uploads.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Verifying segment uploads

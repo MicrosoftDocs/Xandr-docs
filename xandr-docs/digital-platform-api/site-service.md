@@ -1,8 +1,10 @@
 ---
 title: Site Service
 description: Use the Site service to group placements for management purposes, allowing ad quality and inventory categorization to be set at the site level.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Site service

@@ -1,8 +1,10 @@
 ---
 title: App Contract Service
 description: Use the App Contract service to record or update client contracts. It can only be accessed by sales ops.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # App Contract service

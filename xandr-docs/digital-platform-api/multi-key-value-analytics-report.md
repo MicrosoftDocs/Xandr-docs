@@ -1,8 +1,10 @@
 ---
 title: Multi Key Value Analytics Report
 description: The Multi Key Value Analytics report provides information on network targeting keys and values, allowing sellers to view different keys associated with the same bid. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Multi Key Value Analytics report

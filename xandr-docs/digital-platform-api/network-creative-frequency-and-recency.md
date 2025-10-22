@@ -1,8 +1,10 @@
 ---
 title: Network Creative Frequency and Recency
 description: Use the Network Creative Frequency and Recency report to view granular creative data for specific advertisers based on user views.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network creative frequency and recency

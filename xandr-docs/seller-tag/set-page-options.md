@@ -1,8 +1,10 @@
 ---
 title: Set Page Options
 description: Use the set page options function to set page-level options placements. You can use various parameters as arguments in this function.
-ms.custom: seller-tag
-ms.date: 07/23/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Set page options

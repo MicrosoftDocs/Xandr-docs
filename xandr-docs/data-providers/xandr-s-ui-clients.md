@@ -1,8 +1,10 @@
 ---
 title: Xandr's UI Clients
 description: In this article, learn about Xandr's UI clients and its shared segments.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Xandr's UI clients

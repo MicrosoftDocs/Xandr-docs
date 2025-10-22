@@ -1,8 +1,10 @@
 ---
 title: Add a User to a Role using the API
 description: This article provides instructions for adding a user to a role using the API.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Add a user to a role using the API

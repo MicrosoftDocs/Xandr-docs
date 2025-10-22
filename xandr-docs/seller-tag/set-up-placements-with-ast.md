@@ -1,8 +1,10 @@
 ---
 title: Set Up Placements with AST
 description: This article contains a sample web page showing how AST functions can be implemented in the header and body of a sample client page.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Set up placements with AST

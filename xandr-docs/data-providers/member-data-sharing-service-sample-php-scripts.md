@@ -1,8 +1,10 @@
 ---
 title: Member Data Sharing Service - Sample PHP Scripts
 description: In this article, learn about the sample PHP scripts for the member data sharing service with a detailed set of examples.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Member data sharing service - Sample PHP scripts

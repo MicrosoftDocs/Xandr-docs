@@ -1,8 +1,10 @@
 ---
 title: Finance - Foreign Exchange Margin
 description: Foreign exchange margin charges clear media costs in non-USD currencies. This offsets the risk of currency fluctuations during buying or selling activity.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Foreign exchange margin

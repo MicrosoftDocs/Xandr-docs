@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Logistic Regression Model API Resources
 description: This article is a temporary API resource for data science toolkit services to create logistic regression models, lookup tables, and hashed table predictors. 
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Logistic regression model API resources

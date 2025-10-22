@@ -1,8 +1,10 @@
 ---
 title: Searching the Knowledge Base
 description: In this article, learn about the Support Knowledge Base, which answers common questions and explains how to troubleshoot common issues and perform common tasks.
-ms.custom: customer-support
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
+ms.author: shsrinivasan
 ---
 
 # Searching the Knowledge Base

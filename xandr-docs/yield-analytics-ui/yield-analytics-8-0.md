@@ -1,8 +1,10 @@
 ---
 title: Yield Analytics 8.0
 description: In this page, learn about the new features added in the Availabilty Lookup Screen and webinars links that cover client demonstrations also available in Help Docs.   
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Yield Analytics 8.0

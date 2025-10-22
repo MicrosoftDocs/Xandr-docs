@@ -2,7 +2,9 @@
 title: Allow Multiple Ad Sizes to Serve into a Banner Ad View on iOS
 description: In this article, learn how to allow multiple ad sizes to serve into a banner ad view on iOS.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

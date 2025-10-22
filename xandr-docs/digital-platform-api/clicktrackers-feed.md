@@ -1,8 +1,10 @@
 ---
 title: Clicktrackers Feed
 description: In this article, learn about the Clicktrackers feed, their Dimensions, and Metrics.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Clicktrackers feed

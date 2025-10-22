@@ -1,8 +1,10 @@
 ---
 title: Network Video Error Analytics Report
 description: Use the Network Video Error Analytics report to troubleshoot video settings and eliminate errors related to buy-side and sell-side video advertising.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network Video Error Analytics report

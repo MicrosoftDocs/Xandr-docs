@@ -1,8 +1,10 @@
 ---
 title: RTB Eligibility Requirements
 description: Learn about RTB Eligibility Requirements that need to be met to do transaction on Xandr's open exchange. 
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 

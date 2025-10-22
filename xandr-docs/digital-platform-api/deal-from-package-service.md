@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Deal From Package Service
 description: Buyers can browse packages and generate deals with sellers using the Deal From Package service. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Deal From Package service

@@ -1,8 +1,10 @@
 ---
 title: Impression Bus API Usage Constraints
 description: Learn about the constraints in Impression Bus API usage.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Impression Bus API Usage Constraints

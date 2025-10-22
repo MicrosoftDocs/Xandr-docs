@@ -1,8 +1,10 @@
 ---
 title: Ad Object API
 description: In this article, find information about the various eventType fields and examples for adType objects.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Ad Object API

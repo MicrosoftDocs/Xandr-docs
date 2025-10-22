@@ -1,8 +1,10 @@
 ---
 title: Advertiser Configuration
 description: In this article, learn about advertiser configuration and explore detailed information about the various parameters configured at the advertiser level.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Advertiser configuration

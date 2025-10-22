@@ -1,8 +1,10 @@
 ---
 title: Programmatic Guaranteed Deal with Third-Party Ad Server
 description: Explore the API setup guide to understand the process of creating and configuring a programmatic guaranteed (PG) deal using our API for Microsoft Monetize.
-ms.date: 06/30/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Programmatic Guaranteed deal with third-party ad server

@@ -1,8 +1,10 @@
 ---
 title: Member Currency Service
 description: Member Currency service is read-only and shows you the list of currencies used by a member's publisher.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Member Currency service

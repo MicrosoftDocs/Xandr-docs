@@ -1,8 +1,10 @@
 ---
 title: Log Level Data - Install and Configure Protocol Buffers
 description: In this article, learn what protocol buffers is and find instructions for installation and configuration.
-ms.custom: log-level-data
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: log-level-data
+ms.author: shsrinivasan
 ---
 
 # Log level data - Install and Configure Protocol Buffers

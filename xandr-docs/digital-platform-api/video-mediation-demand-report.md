@@ -1,8 +1,10 @@
 ---
 title: Video Mediation Demand Report
 description: Explore the Video Mediation Demand report to evaluate performance of mediated networks and optimize waterfall priorities.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Video Mediation Demand report

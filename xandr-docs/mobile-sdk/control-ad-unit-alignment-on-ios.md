@@ -2,7 +2,9 @@
 title: Control Ad Unit Alignment on iOS
 description: In this article, explore detailed instructions on how to control ad unit alignment on iOS devices.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

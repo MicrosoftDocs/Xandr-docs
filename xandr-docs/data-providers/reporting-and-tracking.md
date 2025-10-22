@@ -1,8 +1,10 @@
 ---
 title: Reporting and Tracking Overview
 description: In this article, learn about reporting and tracking methods used for tracking the user of shared segments.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Reporting and tracking overview

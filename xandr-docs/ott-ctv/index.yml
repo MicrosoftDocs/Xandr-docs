@@ -6,9 +6,10 @@ metadata:
   title: OTT and CTV Integration Guide
   description: OTT and CTV Integration Guide
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 11/25/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: ott-ctv
+  ms.date: 10/22/2025
 
 landingContent:
   - title: OTT and CTV Video Integrations

@@ -1,7 +1,10 @@
 ---
 title: Creating a New Bidder Profile
 description: This page is a step-by-step guide to create a new bidder profile. 
-ms.date: 11/20/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

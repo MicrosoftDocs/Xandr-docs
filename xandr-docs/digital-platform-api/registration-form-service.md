@@ -1,8 +1,10 @@
 ---
 title: Registration Form Service
 description: Explore the Registration Form service to upload the registration forms required by certain states for political advertising purchased by independent expenditure committees.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Registration Form service

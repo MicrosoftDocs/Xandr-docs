@@ -2,7 +2,10 @@
 title: Set Test Mode for iOS
 description: This page is an overview to set test mode for IOS.
 ms.custom: ios-sdk 
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

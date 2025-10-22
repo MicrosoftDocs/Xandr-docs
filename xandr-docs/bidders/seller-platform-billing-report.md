@@ -1,7 +1,10 @@
 ---
 title: Seller Platform Billing Report
 description: Learn how Suppliers gather transaction information using the Seller Platform Billing Report to invoice buyers. This page covers an example on retrieving a report.
-ms.date: 11/27/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Seller platform billing report

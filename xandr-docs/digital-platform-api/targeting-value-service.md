@@ -1,8 +1,10 @@
 ---
 title: Targeting Value Service
 description: Use the Targeting Value and Targeting Key services to create your own key/value combinations for targeting line items and campaigns. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Targeting Value service

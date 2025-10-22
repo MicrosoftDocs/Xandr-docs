@@ -1,8 +1,10 @@
 ---
 title: Bidders - City Service
 description: Learn how the read-only City Service allows you to see information about the cities registered in the Xandr system.  
-ms.date: 11/20/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 

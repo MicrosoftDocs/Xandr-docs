@@ -1,8 +1,10 @@
 ---
 title: VAST Extension Template Service
 description: Explore the VAST Extension Template service, offering a template for entering and saving custom extensions from a VAST file.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # VAST Extension Template service

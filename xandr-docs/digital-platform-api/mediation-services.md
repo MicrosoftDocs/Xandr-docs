@@ -1,8 +1,10 @@
 ---
 title: Mediation Services
 description: This article describes the Mediation services and how these API services connect with each other and the outside world.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Mediation services

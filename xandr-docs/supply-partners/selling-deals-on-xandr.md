@@ -1,8 +1,10 @@
 ---
 title: Selling Deals on Xandr
 description: This page walks you through steps so that as a supply partner you can use deals to provide Xandr buyers special access to your inventory. 
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 

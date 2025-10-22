@@ -1,8 +1,10 @@
 ---
 title: Creatives
 description: In this article, learn about creatives, their types, CDNs, impressions, and ways to track clicks and conversions.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Creatives

@@ -1,8 +1,10 @@
 ---
 title: Introduction to Ad Serving
 description: This page gives an overview on Ad Serving along with a list of different parties that get involved in online advertising.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 

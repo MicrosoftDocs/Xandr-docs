@@ -1,7 +1,10 @@
 ---
 title: Bidders - Operating System Service
 description: In this article, learn about bidders operating system service, their JSON parameters, and REST API with an example.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Bidders - Operating system service

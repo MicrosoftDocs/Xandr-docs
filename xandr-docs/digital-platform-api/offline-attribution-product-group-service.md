@@ -1,8 +1,10 @@
 ---
 title: Offline Attribution Product Group Service
 description: The Offline Attribution Product Group service helps track offline sales performance against specific products and their categories, brands, or product lines.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Offline Attribution Product Group service

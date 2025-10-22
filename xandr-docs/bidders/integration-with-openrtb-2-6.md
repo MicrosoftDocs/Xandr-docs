@@ -1,7 +1,10 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol for Bidders
 description: Explore this article to learn how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 7/3/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidder
+ms.author: shsrinivasan
 ---
 
 # Integration with OpenRTB 2.6 protocol for bidders

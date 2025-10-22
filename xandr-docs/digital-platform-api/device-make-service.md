@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Device Make Service
 description: Use the Device Make service to allow users to see registered makes of mobile devices in the system for targeting in mobile campaigns.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Device Make service

@@ -1,8 +1,10 @@
 ---
 title: Prebid Server Premium Services
 description: Explore the API services available for Prebid Server Premium (PSP).
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Prebid Server Premium services

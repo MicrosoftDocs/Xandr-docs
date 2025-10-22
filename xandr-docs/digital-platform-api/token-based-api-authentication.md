@@ -1,8 +1,10 @@
 ---
 title: Token-Based API Authentication
 description: A signed token-based authentication system using JSON Web Tokens has been implemented to enhance the security of interactions with the Digital Platform API.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Token-based API authentication

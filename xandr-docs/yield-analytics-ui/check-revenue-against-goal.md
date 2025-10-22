@@ -1,8 +1,10 @@
 ---
 title: Check Revenue Against Goal
 description: Navigate to Revenue Against Goal widget, choose view preference, adjust date range if needed, and inspect order or order line details for insights.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Check revenue against goal

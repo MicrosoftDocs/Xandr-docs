@@ -1,8 +1,10 @@
 ---
 title: Network Creative Search
 description: Use the Network Creative Search report to view the list of creatives that have served on inventory within a network. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network creative search

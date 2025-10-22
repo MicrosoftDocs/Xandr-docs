@@ -1,8 +1,10 @@
 ---
 title: Add a Proposal to a Scenario
 description: In this article, follow our step-by-step instructions to add a proposal or an order on Scenario Manager.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Add a proposal to a scenario

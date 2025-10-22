@@ -1,8 +1,10 @@
 ---
 title: User Agent Client Hints for SSP Clients
 description: In this article, learn about the user-agent client hints API for SSP clients and the supported Open RTB for maximum performance and optimal device targeting.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # User agent client hints for SSP clients

@@ -1,8 +1,10 @@
 ---
 title: Understanding the Sell-Side Object Hierarchy
 description: This page deals with sell-side Object hierarchy and the relationship between objects like Publishers and placements. 
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 

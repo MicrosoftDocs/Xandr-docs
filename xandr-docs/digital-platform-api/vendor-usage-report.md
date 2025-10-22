@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Vendor Usage Report
 description: Explore the Vendor Usage report, offering details on your data usage or platform powered by third-party vendors.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Vendor Usage report

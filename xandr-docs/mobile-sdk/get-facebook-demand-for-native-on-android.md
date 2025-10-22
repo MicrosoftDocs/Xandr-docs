@@ -2,7 +2,9 @@
 title: Get Facebook Demand for Native on Android
 description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on Android devices.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

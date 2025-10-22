@@ -5,7 +5,8 @@ ms.date: 10/22/2025
 ms.service: publisher-monetization
 ms.subservice: seller-tag
 ms.author: shsrinivasan
----
+=======
+
 
 # Seller Tag Release History
 
@@ -22,6 +23,7 @@ For information on major changes to SDK, see the [Release Notes](seller-tag-rele
 
 | Version | Release Date |
 | --- | --- |
+| v1.10.49 | 21 Oct 2025 |
 | v1.10.48 | 16 Oct 2025 |
 | v1.10.47 | 8 Oct 2025 |
 | v1.10.46 | 1 Oct 2025 |

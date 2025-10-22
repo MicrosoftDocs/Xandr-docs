@@ -5,8 +5,7 @@ ms.date: 10/22/2025
 ms.service: publisher-monetization
 ms.subservice: seller-tag
 ms.author: shsrinivasan
-=======
-
+---
 
 # Seller Tag Release History
 

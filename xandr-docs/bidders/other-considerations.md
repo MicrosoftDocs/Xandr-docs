@@ -3,7 +3,7 @@ title: Other Considerations
 description: Explore information about Bidders documentation.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

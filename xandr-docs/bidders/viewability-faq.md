@@ -3,7 +3,7 @@ title: Bidders - Viewability FAQ
 description: Explore FAQs on viewability metrics, methods, troubleshooting. Check Console reporting for reliable data. Ensure optimal creative functionality.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

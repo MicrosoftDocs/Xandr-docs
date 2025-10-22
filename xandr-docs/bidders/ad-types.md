@@ -3,7 +3,7 @@ title: Ad Types
 description: In this article, find information about the Ad Types tab where you can select the various ad types and banner sizes that you want to receive.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

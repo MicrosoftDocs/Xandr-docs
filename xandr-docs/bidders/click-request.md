@@ -3,7 +3,7 @@ title: Click Request
 description: Learn how the Impression bus inserts our clicktracking URL into the creative at serve time and report any clicks that occur. This page covers implementation along with an example of the click request.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

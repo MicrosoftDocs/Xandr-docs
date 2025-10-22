@@ -3,7 +3,7 @@ title: Sensitive Attributes
 description: Learn navigating Sensitive Attributes screen. You can select the desired sensitive attributes by clicking the green checkmark icon. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

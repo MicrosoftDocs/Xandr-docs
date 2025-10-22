@@ -3,7 +3,7 @@ title: Click Response
 description: On recieving a Click Request, Bidder writes a Click Response which is passed to userdata_json field of Bid Requests. This page covers implementation and an example of a pixel response.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: AppNexus Bidding Protocol
 description: In this article, find information about the AppNexus bidding protocol and its process for request/responses.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

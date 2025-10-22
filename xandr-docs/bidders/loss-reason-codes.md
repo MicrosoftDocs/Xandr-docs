@@ -3,7 +3,7 @@ title: Loss Reason Codes
 description: In this article, explore the bid loss codes and its corresponding description enabled for `lurl`.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

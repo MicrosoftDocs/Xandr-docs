@@ -3,7 +3,7 @@ title: Bidders - Ad Server Service
 description: In this article, learn about the Ad Server service along with a list of supported JSON fields and an example.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

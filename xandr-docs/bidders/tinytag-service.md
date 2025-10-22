@@ -3,7 +3,7 @@ title: TinyTag Service
 description: Learn how TinyTag Service enables you to create TinyTag IDs as well as modify and view them. This page also covers how TinyTag IDs can be used in TinyTags, which are placed directly on publisher pages.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

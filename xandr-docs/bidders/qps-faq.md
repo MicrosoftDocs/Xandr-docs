@@ -3,7 +3,7 @@ title: QPS FAQ
 description: In this article, find information about QPS and how the final bid request traffic is calculated..
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Bidders - Legacy BSS File Format
 description: In this article, learn about legacy Batch Segment Service (BSS) file format and how to upload segment data files in a variety of formats with a detailed set of examples.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

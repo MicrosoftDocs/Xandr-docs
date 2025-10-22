@@ -3,7 +3,7 @@ title: Bidders - Deal Auction Mechanics
 description: Explore the digital advertising auction process, emphasizing open auctions where advertisers bid for available inventory.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 # Bidders - Deal auction mechanics

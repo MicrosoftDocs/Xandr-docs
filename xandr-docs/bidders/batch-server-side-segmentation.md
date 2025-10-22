@@ -3,7 +3,7 @@ title: Bidders - Batch Server-Side Segmentation
 description: In this article, understand what Batch Segment Service is and how to implement it for batch server-side segmentation.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

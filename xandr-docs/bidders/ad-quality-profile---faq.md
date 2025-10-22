@@ -3,7 +3,7 @@ title: Ad Quality Profile - FAQ
 description: In this article, find answers to some frequently asked questions regarding Ad Quality Profile.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

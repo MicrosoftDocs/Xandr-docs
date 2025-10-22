@@ -3,7 +3,7 @@ title: Bidders - Deal Sync with Trade Desk - FAQ
 description: Explore FAQs on deal synchronization in beta trade tasks. Enabled for selected sellers. Contact your  account representative to test the product.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

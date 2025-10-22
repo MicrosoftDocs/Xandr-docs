@@ -3,7 +3,7 @@ title: Mobile for Bidders
 description: In this article, learn about mobile inventory for bidders, their creative specifications, and step-by-step instructions on how to buy a mobile inventory.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

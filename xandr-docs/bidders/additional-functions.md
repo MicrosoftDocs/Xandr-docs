@@ -3,7 +3,7 @@ title: Additional Functions
 description: In this article, find out about the additional functions that you can perform from the Profiles screen.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

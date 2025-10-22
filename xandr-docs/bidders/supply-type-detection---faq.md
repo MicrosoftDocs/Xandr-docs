@@ -3,7 +3,7 @@ title: Supply Type Detection - FAQ
 description: Learn FAQs on Supply Type Detection.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

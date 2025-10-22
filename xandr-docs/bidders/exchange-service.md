@@ -3,7 +3,7 @@ title: Exchange Service
 description: Explore seller groups for efficient supply targeting, effortlessly target inventory, combine domain and member targeting, exclude/include members individually.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

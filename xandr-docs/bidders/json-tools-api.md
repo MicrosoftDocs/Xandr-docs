@@ -3,7 +3,7 @@ title: Helpful JSON Tools for APIs
 description: Learn about a few tools and tricks when using the Impression Bus APIs.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

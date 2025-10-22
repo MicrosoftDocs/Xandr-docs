@@ -3,7 +3,7 @@ title: Bidstream Creative Registration (BCR)
 description: Bidstream Creative Registration (BCR) is a feature in Microsoft Moentize platform that enables external bidder clients to register creatives in real time directly through the bidstream
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Datacenter (FAQ)
 description: Learn how client-side routing can be used to send the bid request from the datacenter closest to the user.   
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

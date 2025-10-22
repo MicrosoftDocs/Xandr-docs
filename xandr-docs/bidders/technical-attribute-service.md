@@ -3,7 +3,7 @@ title: Bidders - Technical Attribute Service
 description: Learn about Technical Attribute Service to see what technical attributes are registered in the Xandr system. This page also provides a code example to View all technical attributes.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

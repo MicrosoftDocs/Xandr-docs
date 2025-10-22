@@ -3,7 +3,7 @@ title: Inventory - FAQ
 description: This article provides answers to the frequently asked questions on the inventory audits.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Bidders - Postal Code Service
 description: In this article, find information about the Postal code service and the fields associated with it along with examples.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

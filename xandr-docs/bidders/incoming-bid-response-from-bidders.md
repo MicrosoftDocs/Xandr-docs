@@ -3,7 +3,7 @@ title: Incoming Bid Response from Bidder
 description: This article explains the process of implementing and receiving the bid response from bidder.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

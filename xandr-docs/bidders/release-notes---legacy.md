@@ -3,7 +3,7 @@ title: Release Notes - Legacy
 description: In this article, find links to the legacy release notes for the new impression bus API and Bidding Protocol features.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

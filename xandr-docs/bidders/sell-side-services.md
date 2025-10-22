@@ -3,7 +3,7 @@ title: Bidders - Services (Sell-Side)
 description: Learn how publishers use ad tags on their pages. Some will keep preexisting ad while others will use new Xandr tags. Also, this page covers two main implementations for selling inventory through Xandr.   
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

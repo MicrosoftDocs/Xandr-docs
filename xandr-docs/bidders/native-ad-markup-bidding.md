@@ -3,7 +3,7 @@ title: Native 1.2 Ad Markup Bidding (ADM)
 description: This page explains the native ad markup bidding feature, how to enable it, and supported fields, with creative examples.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

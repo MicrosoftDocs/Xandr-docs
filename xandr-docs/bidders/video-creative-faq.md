@@ -3,7 +3,7 @@ title: Video Creative FAQ
 description: Learn about Xandr's video ad capabilities—supporting in-stream and in-banner videos. Understand VAST, VPAID, and technical specifications. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Banner Ad Markup Bidding (ADM)
 description: In this article, find information about bidding with a banner ad markup and how to use this feature.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

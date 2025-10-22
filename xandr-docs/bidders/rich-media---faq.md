@@ -3,7 +3,7 @@ title: Rich Media - FAQ
 description: In this article, find answers to frequently asked questions regarding Rich Media.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

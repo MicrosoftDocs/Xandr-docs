@@ -3,7 +3,7 @@ title: Bidders - Buy Microsoft Outlook.com Inventory
 description: Learn how to buy Microsoft Outlook.com inventory and explore information about their volume, availability, creative specifications, and targeting instructions.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

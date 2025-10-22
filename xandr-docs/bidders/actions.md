@@ -3,7 +3,7 @@ title: Actions
 description : In this article, learn how to activate, deactivate, delete, or resubmit a creative using Actions.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Impression Bus API
 description: Integrate your bidder with the Xandr platform via the API services provided in this article.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

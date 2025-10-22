@@ -3,7 +3,7 @@ title: Bidders - Troubleshooting BSS Uploads
 description: Learn troublshooting any problems with your segment data upload. This page covers different phases of Batch Segment Service and possible uploading and processing errors that you can come across.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

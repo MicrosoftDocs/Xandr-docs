@@ -3,7 +3,7 @@ title: Bidders - Report Service
 description: In this article, find information about the Report Service, the fields associated with it, and the process for retrieving reports.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Impression Bus API Timezones
 description: This article provides information on Impression Bus API timezones. Advertisers take on their member's timezone by default.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

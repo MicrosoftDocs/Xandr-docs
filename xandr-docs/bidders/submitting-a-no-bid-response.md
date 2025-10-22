@@ -3,7 +3,7 @@ title: Submitting a No-Bid Response
 description: Learn when to submit a "no-bid" response. This page also talks about the two types of no-bids, Global no-bids and Tag-based no-bids.   
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Bidders - Buy Microsoft Deals
 description: In this article, learn how to buy Microsoft deals from both the Microsoft Advertising Exchange and Microsoft's Australia and New Zealand inventory.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

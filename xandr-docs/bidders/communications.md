@@ -3,7 +3,7 @@ title: Communications
 description: Learn how we keep our clients informed on breaking changes and new releases. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: September 30, 2015 
 description: Learn about enhancements to the bidding protocol and to version 1.16 of the AppNexus Impression Bus API. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

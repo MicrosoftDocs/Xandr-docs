@@ -3,7 +3,7 @@ title: Bidders - Brand Service
 description: In this article, learn about bidders brand service, their JSON fields, and REST API with an example.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

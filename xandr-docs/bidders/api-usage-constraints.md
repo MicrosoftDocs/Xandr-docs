@@ -3,7 +3,7 @@ title: Bidders - API Usage Constraints
 description: In this article, find information about the constraints placed on API usage.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

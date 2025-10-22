@@ -3,7 +3,7 @@ title: Supply Stream Efficiency
 description: In this article, explore information about Supply Stream Efficiency and its various key features.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

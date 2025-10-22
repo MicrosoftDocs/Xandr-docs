@@ -3,7 +3,7 @@ title: March 9, 2016 - Creative Macro Breaking Change
 description: In this article, explore the breaking change that deprecates the `${REFERER_URL}` macro.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Bidder Instance - FAQ
 description: In this article, explore answers to frequently asked questions about bidder instance, offering a clear and concise resource for optimizing your bidding strategy.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

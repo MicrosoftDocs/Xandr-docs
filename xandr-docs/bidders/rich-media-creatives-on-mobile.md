@@ -3,7 +3,7 @@ title: Rich Media Creatives on Mobile
 description: In this article, find information on how to set up rich media creatives to serve on mobile devices.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

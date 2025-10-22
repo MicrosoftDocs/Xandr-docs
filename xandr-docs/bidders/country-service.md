@@ -3,7 +3,7 @@ title: Bidders - Country Service
 description: Learn how the Country Service allows you to see information about the countries or regions registered in the Xandr system. This page covers examples with code to view all countries or regions, view by ID and view by country code.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Reporting Screen
 description: In this article, find information about how to access the Reporting screen and links to resources regarding the various types of reports you can access.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

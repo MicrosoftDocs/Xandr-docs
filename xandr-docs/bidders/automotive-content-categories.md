@@ -3,7 +3,7 @@ title: Bidders - Automotive Content Categories
 description: In this article, find lists of our new automotive content categories and auto manufacturer brands.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

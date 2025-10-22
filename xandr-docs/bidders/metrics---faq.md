@@ -3,7 +3,7 @@ title: Metrics - FAQ
 description: In this article, explore answers to frequently asked questions about the metrics, their availability, and other related topics.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

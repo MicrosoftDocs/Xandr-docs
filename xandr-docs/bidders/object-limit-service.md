@@ -3,7 +3,7 @@ title: Bidders - Object Limit Service
 description: In this article, learn about bidders Object Limit service, their JSON fields, and REST API with a detailed set of examples.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

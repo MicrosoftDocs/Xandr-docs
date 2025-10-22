@@ -3,7 +3,7 @@ title: Legacy Bidder Profile Service
 description: In this article, learn about legacy bidder profile service, their filtering criteria, JSON fields, and REST API with a detailed set of examples.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

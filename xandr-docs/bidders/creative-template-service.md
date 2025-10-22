@@ -3,7 +3,7 @@ title: Bidders - Creative Template Service
 description: Learn how Xandr categorizes creatives by format, media type, and media subtype. For each format, media type, and media subtype combination, Xandr provides a standard creative or you can build your own.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

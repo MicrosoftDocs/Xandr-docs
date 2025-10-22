@@ -3,7 +3,7 @@ title: Bidders - Deal From Package Service
 description: Explore packages, select via buyer access, create deals with package service, streamlining buyer-seller transactions.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

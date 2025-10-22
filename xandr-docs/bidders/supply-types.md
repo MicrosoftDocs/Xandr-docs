@@ -3,7 +3,7 @@ title: Supply Types
 description: Learn browsing through the **Supply Types** tab in this page.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

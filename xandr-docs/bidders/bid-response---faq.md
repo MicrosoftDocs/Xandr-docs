@@ -3,7 +3,7 @@ title: Bid Response - FAQ
 description: In this article, explore answers to frequently asked questions about the process of responding to bids, bid preparation, and submission.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

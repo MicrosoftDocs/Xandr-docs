@@ -3,7 +3,7 @@ title: Bidders - Deal Sync with Trade Desk - Publisher Guide
 description: Explore synchronizing deals between Microsoft Monetize publishers and Trade Desk buyers through integration with the Trade Desk Proposal API.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

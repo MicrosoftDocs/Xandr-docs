@@ -3,7 +3,7 @@ title: Price Reduction Mechanics
 description: In this article, learn about Price Reduction Mechanics and the Estimated Clear Price (ECP) mechanism.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

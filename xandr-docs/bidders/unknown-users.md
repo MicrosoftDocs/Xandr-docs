@@ -3,7 +3,7 @@ title: Unknown Users
 description: Learn about the **Allow Unknown Users** toggle and how it allows you to select if you want to receive traffic from unknown users. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

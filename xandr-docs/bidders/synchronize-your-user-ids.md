@@ -3,7 +3,7 @@ title: Synchronize Your User IDs
 description: This page covers steps for Storing the mapping with Xandr.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

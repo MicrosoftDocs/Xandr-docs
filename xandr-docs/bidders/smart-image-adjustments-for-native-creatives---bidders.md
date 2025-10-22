@@ -3,7 +3,7 @@ title: Native creative smart image adjustments - Bidder
 description: Learn how Buyers can use Smart Image Adjustments to resize their main native creative image and icon with a few clicks of the mouse. This page covers the process for Smart image adjustments.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

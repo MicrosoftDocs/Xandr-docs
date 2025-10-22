@@ -3,7 +3,7 @@ title: Bidders - Device Model Service
 description: Explore a device model service categorizing mobiles by make and model, citing Apple as an example for make and iPhone for model.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

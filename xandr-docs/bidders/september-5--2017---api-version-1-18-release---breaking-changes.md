@@ -3,7 +3,7 @@ title: September 5, 2017 - API Version 1.18 Release - Breaking Changes
 description: This page announces the release of version 1.18 of the AppNexus Imp Bus API and the breaking changes.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

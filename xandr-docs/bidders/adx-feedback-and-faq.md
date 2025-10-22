@@ -3,7 +3,7 @@ title: AdX Guidelines and Restrictions
 description: In this article, find information about the guidelines and restrictions of the Google Ad Manager platform.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

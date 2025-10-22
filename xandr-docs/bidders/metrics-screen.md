@@ -3,7 +3,7 @@ title: Metrics Screen
 description: In this article, learn about the Metrics screen and gain a thorough understanding of its three main sections.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: User Data - FAQ
 description: Explore addressing user data concerns, synchronize user IDs by storing mapping tables on servers, utilize /getuid pixel, incorporate user ID in redirect URL.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Platform Operations
 description: In this article, learn about Xandr's Platform Operations and its advantages.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

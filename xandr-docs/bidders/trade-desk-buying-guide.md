@@ -3,7 +3,7 @@ title: Trade Desk Buying Guide
 description: This page is an overview about Trade Desk Buying Guide to help Xandr publishers communicate with their buyers. This page provides a step-by-step guide to create Deal workflow and Programmatic guaranteed (PG) workflow. Additionally, information on Deal troubleshooting tips & FAQs is given.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

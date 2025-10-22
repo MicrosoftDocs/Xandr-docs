@@ -3,7 +3,7 @@ title: Creative API Services
 description: In this page, learn how bidders uses Creative Service to register, and Creative Search Service to search creatives.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Bidders - BSS Avro File Format
 description: In this article, learn step-by-step instructions on how to prepare the audience files using the AVRO file format and onboard the data into the platform.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

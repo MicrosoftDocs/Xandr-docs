@@ -3,7 +3,7 @@ title: Bidders - Add a Creative
 description: In this article, find information about registering a creative using the Creative Service.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

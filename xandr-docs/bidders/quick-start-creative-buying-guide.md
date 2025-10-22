@@ -3,7 +3,7 @@ title: Quick Start Creative Buying Guide
 description: In this article, find information on getting a Xandr bidder customer started with creatives.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

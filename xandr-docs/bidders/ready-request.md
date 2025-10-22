@@ -3,7 +3,7 @@ title: Ready Requests
 description: In this article, learn what the Ready Request is and how to receive and respond to ready requests.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

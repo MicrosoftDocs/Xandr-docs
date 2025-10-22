@@ -3,7 +3,7 @@ title: Bidders - Read-Only Services
 description: In this article, find links to resources regarding the read-only services available on the API for bidders. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -3,7 +3,7 @@ title: Bidder Bid Error Report API
 description: Explore this article to understand the Bidder Bid Error report API, including its metrics, dimensions, and a detailed set of examples.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

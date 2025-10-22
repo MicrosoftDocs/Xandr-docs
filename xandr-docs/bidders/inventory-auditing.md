@@ -3,7 +3,7 @@ title: Inventory Auditing
 description: Learn about inventory auditing process, procedure, and standards.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

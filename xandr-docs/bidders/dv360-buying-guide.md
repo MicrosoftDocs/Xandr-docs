@@ -3,7 +3,7 @@ title: DV360 Buying Guide
 description: Explore efficient connection on DV360, linking publishers and buyers for streamlined communication and optimization through inventory access and targeting.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

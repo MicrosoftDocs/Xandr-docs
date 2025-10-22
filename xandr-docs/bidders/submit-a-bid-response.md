@@ -3,7 +3,7 @@ title: Submit a Bid Response
 description: Learn how for every Bid Request, the Imp Bus allows you to submit a Bid Response, which in turn must include the auction_id_64 in the Bid Request, and the member_id of the member for each response.  
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

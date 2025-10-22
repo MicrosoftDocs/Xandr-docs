@@ -3,7 +3,7 @@ title: Bidder Bid Error Report
 description: Explore this article to understand the Bidder Bid Error report, including its metrics, filters, delivery, dimensions, and how to run a report.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

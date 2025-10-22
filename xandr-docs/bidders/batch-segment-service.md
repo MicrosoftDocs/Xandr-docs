@@ -3,7 +3,7 @@ title: Bidders - Batch Segment Service API
 description: In this article, find information about the Batch Segment Service (BSS), how to use the feature, possible errors you might face, and the JSON fields associated with BSS.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

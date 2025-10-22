@@ -3,7 +3,7 @@ title: Simulate Traffic on a TinyTag
 description: Learn how When a TinyTag is created, the API returns its ID that is used to create the URL that simulates traffic on this TinyTag.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

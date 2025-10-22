@@ -3,7 +3,7 @@ title: Yahoo Buying Guide
 description: Learn how to access and target Xandr inventory in Yahoo DSP, including deal registration, campaign setup, and targeting options.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

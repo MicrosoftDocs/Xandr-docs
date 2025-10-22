@@ -3,7 +3,7 @@ title: Bidder Profile Targeting Options
 description: In this article, explore the seven bidder profile targeting options that you can set up for your bidder profile.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

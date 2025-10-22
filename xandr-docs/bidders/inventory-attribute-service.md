@@ -3,7 +3,7 @@ title: Bidder - Inventory Attribute Service
 description: Use the Inventory Attribute Service to view the inventory attributes that are registered in the system. 
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

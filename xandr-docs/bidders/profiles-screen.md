@@ -3,7 +3,7 @@ title: Profiles Screen
 description: In this article, find links to resources regarding how to create and manage your bidder profiles using the Profiles screen.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

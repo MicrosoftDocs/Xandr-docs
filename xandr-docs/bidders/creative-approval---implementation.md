@@ -3,7 +3,7 @@ title: Creative Approval - Implementation
 description: Learn what is an ad profile and how many elements it consists of. Also, this page covers what is a trusted brand and banned brand.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

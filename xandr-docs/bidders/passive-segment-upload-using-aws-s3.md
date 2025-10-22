@@ -3,7 +3,7 @@ title: Bidders - Segment Upload Using AWS S3
 description: In this article, learn how to upload segment data into an AWS S3 bucket instead of actively running API commands against the Batch Segment Service.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

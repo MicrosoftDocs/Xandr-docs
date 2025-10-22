@@ -3,7 +3,7 @@ title: Bidders - Program Type Service
 description: In this article, find information about the Program-Type Service and the fields associated with it along with an example.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

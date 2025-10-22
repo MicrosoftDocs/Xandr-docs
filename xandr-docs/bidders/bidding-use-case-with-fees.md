@@ -3,7 +3,7 @@ title: Bidding Use Case with Fees
 description: In this article, learn about bidding use case with fees and the stages of the bidding process.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

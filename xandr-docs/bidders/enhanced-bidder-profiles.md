@@ -3,7 +3,7 @@ title: Enhanced Bidder Profiles
 description: Enhance bidder profiles for targeted traffic. Xandr collaborates to tailor profiles, ensuring alignment with business requirements.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

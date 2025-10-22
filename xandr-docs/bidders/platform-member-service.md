@@ -3,7 +3,7 @@ title: Bidders - Platform Member Service
 description: In this article, find information about the Platform Member service and the variables associated with it along with an example.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

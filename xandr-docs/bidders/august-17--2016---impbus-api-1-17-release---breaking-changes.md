@@ -3,7 +3,7 @@ title: August 17, 2016 - ImpBus API 1.17 Release - Breaking Changes
 description: Find release notes for AppNexus ImpBus API version 1.17 and the breaking changes introduced in this version.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

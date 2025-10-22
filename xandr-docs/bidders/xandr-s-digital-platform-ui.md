@@ -3,7 +3,7 @@ title: Xandr's Digital Platform UI
 description: Explore the UI, empower advertisers with real-time tools, effortlessly buy platform inventory via web/API. Contact the representative for details.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

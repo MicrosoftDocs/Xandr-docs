@@ -3,7 +3,7 @@ title: Supported Currencies
 description: This page lists currencies that are supported by the Xandr platform.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

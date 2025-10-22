@@ -3,7 +3,7 @@ title: Bidders - API Best Practices
 description: In this article, find information on the best practices for using the API services to build and integrate your bidder.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
-ms.subservice: bidders
+ms.subservice: bidder
 ms.author: shsrinivasan
 ---
 

@@ -1,8 +1,10 @@
 ---
 title: Data Providers - Segment Loads Report
 description: In this article, learn about Segment Loads report, their time frame, dimensions, and metrics with a detailed set of examples.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data Providers - Segment Loads report

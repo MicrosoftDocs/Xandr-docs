@@ -1,7 +1,10 @@
 ---
 title: Bidders - Currency Service
 description: This page covers Currency service that shows you the list of currencies that you can set a line-item or insertion-order to use. This page also lists code examples for viewing all available currencies.
-ms.date: 11/21/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Currency service

@@ -1,8 +1,10 @@
 ---
 title: Reports as Pivot Table
 description: Yield Analytics reporting is easy to use if you are familiar with using pivot tables. Both systems essentially work the same way.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Reports as pivot table

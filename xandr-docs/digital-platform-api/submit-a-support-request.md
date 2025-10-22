@@ -1,8 +1,10 @@
 ---
 title: Submit a Support Request
 description: Submit and route support requests to the appropriate team directly from the customer support portal.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Submit a support request

@@ -1,8 +1,10 @@
 ---
 title: View Availability in a Calendar
 description: View daily availability in a calendar for a given month to find openings for new deals.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View availability in a calendar

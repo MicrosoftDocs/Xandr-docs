@@ -1,8 +1,10 @@
 ---
 title: Intro to HTTP
 description: Learn the basics of HTTP and how it is important for online advertising. This page covers different concepts related to HTTP like URL, Scheme, Hostname, Port and DNS.   
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 

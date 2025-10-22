@@ -1,7 +1,10 @@
 ---
 title: Bidders - Selecting the Correct Template for Your Creative
 description: In this article, find information on how to determine which template to use for your creative.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Selecting the correct template for your creative

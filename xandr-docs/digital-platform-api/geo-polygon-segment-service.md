@@ -1,8 +1,10 @@
 ---
 title: Geo Polygon Segment Service
 description: Use the Geo Polygon Segment service to create, view, upload, and delete segments, and check job statuses. Includes detailed API documentation.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Geo Polygon Segment service

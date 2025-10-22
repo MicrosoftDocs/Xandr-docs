@@ -1,8 +1,10 @@
 ---
 title: Developer Service
 description: Use the Developer service to get the address and billing information for each developer as reference information.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Developer service

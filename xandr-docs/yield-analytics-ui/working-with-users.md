@@ -1,8 +1,10 @@
 ---
 title: Working With Users
 description: Learn how with administrative permissions you can add, import, disable, delete and reset password of a User. 
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Work with users

@@ -1,7 +1,10 @@
 ---
 title: Changelog for Buyer Seat ID
 description: This page explains Legacy Member ID Integration Behavior and Buyer Seat ID Integration Behavior in tabular form.  
-ms.date: 11/20/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Changelog for buyer seat ID

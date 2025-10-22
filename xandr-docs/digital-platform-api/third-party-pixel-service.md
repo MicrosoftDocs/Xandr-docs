@@ -1,8 +1,10 @@
 ---
 title: Third-Party Pixel Service
 description: Use the Third-party Pixel service to upload and modify third-party creative pixels, and attach them to advertisers, or creatives.
-ms.date: 07/31/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Third-party Pixel service

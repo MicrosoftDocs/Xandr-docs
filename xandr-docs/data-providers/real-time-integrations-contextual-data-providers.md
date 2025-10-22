@@ -1,8 +1,10 @@
 ---
 title: Real Time Integrations (Contextual Data Providers)
 description: In this article, explore step-by-step real time integration instructions about contextual data providers with a detailed set of examples.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Real time integrations (contextual data providers)

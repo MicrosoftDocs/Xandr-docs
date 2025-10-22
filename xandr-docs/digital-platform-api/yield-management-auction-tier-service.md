@@ -1,8 +1,10 @@
 ---
 title: Yield Management Auction Tier Service
 description: Explore the Yield Management Auction Tier service, allowing you to modify the standard auction mechanics.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Yield Management Auction Tier service

@@ -1,8 +1,10 @@
 ---
 title: Supply Partners - IAB Content Taxonomy Support
 description: This article provides an extensive list of supported Interactive Advertising Bureau (IAB) content categories.
-ms.custom: supply-partners
-ms.date: 10/09/2024
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Supply Partners - IAB content taxonomy support

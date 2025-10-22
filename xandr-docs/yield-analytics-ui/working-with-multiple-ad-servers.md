@@ -1,8 +1,10 @@
 ---
 title: Working With Multiple Ad Servers
 description: This article provides details about how you can work with multiple ad servers.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Work with multiple ad servers

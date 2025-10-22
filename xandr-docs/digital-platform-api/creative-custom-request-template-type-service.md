@@ -1,8 +1,10 @@
 ---
 title: Creative Custom Request Template Type Service
 description: In this article, learn about the Creative Custom Request Template Type service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/04/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Creative Custom Request Template Type service

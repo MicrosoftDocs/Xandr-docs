@@ -1,8 +1,10 @@
 ---
 title: Segment Usage by Buyers
 description: Explore this article to understand how clients can get detailed auction information from their bidder or view available segments using traffic campaigns. 
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Segment usage by buyers

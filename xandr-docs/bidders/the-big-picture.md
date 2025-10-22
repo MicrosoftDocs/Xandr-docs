@@ -1,7 +1,10 @@
 ---
 title: Bidder - Auction Overview
 description: This page is an overview on how Impression bus holds an auction when an ad call from one of the Xandr tags or from an Xandr supply partner hits the impression bus. 
-ms.date: 11/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidder - Auction overview

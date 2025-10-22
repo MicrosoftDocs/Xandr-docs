@@ -1,8 +1,10 @@
 ---
 title: Yield Analytics 8.16
 description: In version 8.16 of Yield Analytics, learn about the updated Product Creation and Edit Screen. 
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Yield Analytics 8.16

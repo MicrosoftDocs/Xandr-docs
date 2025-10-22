@@ -1,8 +1,10 @@
 ---
 title: Operating System-Families Service
 description: Use the Operating System-Families service to list all available operating systems for caller's member that are not maintained by Prebid Server Premium. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Operating System-Families service

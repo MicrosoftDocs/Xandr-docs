@@ -1,8 +1,10 @@
 ---
 title: Overview - Creative Standards and Auditing
 description: Learn how Xandr addresses channel conflicts. Xandr understands the value of advertiser relationships and how crucial these relationships are to a publisher's business.  
-ms.date: 11/21/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

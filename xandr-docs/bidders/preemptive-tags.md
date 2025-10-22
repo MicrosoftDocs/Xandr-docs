@@ -1,7 +1,10 @@
 ---
 title: Preemptive Tags
 description: In this article, learn about Preemptive tags and how they work.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Preemptive tags

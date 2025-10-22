@@ -1,8 +1,10 @@
 ---
 title: Report Service - Internal
 description: Explore the report service available only to internal employees.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Report service - Internal

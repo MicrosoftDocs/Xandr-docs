@@ -1,8 +1,10 @@
 ---
 title: User Group Pattern Service
 description: Explore the User Group Pattern service, allowing you to segment a hypothetical audience into five distinct buckets.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # User Group Pattern service

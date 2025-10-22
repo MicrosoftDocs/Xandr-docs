@@ -1,8 +1,10 @@
 ---
 title: Network Publisher Video Analytics
 description: Use the Network Publisher Video Analytics report to view granular video event metrics for specific publishers within a network, available to network users only.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network publisher video analytics

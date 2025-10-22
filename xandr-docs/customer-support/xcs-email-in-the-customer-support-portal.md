@@ -1,8 +1,10 @@
 ---
 title: Email in the Customer Support Portal
 description: Log in to the Customer Support Portal for case history, articles, and support. Encourage account creation for full access.
-ms.custom: customer-support
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
+ms.author: shsrinivasan
 ---
 
 # Email in the customer support portal

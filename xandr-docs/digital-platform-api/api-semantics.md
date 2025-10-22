@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - API Semantics
 description: Learn about the semantics of REST API. It also provides information on how to ask a service about itself and filter and sort information.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - API semantics

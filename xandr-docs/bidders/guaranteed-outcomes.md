@@ -1,7 +1,10 @@
 ---
 title: Bidder - Guaranteed Outcomes
 description: This article describes how an auction works when a buyer submits an outcome-based bid using Guaranteed Outcomes.
-ms.date: 11/23/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidder - Guaranteed Outcomes

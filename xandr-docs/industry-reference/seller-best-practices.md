@@ -1,8 +1,10 @@
 ---
 title: Seller Best Practices
 description: The article provides optimal practices for Microsoft Monetize sellers, guiding them on maximizing revenue and optimizing monetization strategies.
-ms.date: 08/21/2025
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Seller best practices

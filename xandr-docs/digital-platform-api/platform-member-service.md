@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Platform Member Service
 description: Use the Platform Member service to view public information about platform members and data providers for buying and selling.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Platform Member service

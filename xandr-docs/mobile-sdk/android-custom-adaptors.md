@@ -2,7 +2,9 @@
 title: Android Custom Adaptors
 description: In this article, learn what custom adaptors are, how to create your own custom adaptors, and the callbacks to be implemented by the custom adaptors.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

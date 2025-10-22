@@ -1,8 +1,10 @@
 ---
 title: Tag Parser Service
 description: Use the Tag Parser service to parse ad tags from Atlas, Mediamind, or DoubleClick files, but base64-encode the file first.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Tag Parser service

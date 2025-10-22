@@ -1,8 +1,10 @@
 ---
 title: Xandr's Bidders
 description: In this article, learn how Bidders receive full auction information on their bid request.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Xandr's Bidders

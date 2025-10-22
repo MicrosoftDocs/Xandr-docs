@@ -1,7 +1,9 @@
 ---
 title: Third Party Providers
 description: Learn about list of Third Party Providers, Ad-server Partners, Bidder Partners and User Sync Providers. 
-ms.date: 03/07/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: policies-regulation
 ms.author: shsrinivasan
 ---
 

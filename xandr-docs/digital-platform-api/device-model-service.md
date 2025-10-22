@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Device Model Service
 description: Use the read-only Device Model service to view the registered models of mobile devices in the system, the make, device type, device screen size, and other details.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Device Model service

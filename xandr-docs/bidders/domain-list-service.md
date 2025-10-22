@@ -1,7 +1,10 @@
 ---
 title: Bidders - Domain List Service
 description: Explore customizing domain preferences, use a domain list service to create allowlists/blocklists, specify domains for or against user activities.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Domain list service

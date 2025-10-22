@@ -1,8 +1,10 @@
 ---
 title: Overlap Types
 description: In this article, explore the various types of overlaps through a detailed example.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Overlap types

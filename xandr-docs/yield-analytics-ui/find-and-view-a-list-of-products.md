@@ -1,8 +1,10 @@
 ---
 title: Find and View a List of Products
 description: In this article, explore step-by-step instructions on how to find and view a list of products.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Find and view a list of products

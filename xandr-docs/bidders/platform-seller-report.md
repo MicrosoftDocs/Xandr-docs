@@ -1,7 +1,10 @@
 ---
 title: Platform Seller Report
 description: In this article, find information about the Platform seller report, the metrics and dimensions associated with it, along with an example.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Platform seller report

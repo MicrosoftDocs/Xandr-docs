@@ -1,7 +1,10 @@
 ---
 title: Bidders - Uploading Segment Data Using BSS
 description: This page is a step-by-step guide to add your segment file to the system with examples.
-ms.date: 11/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

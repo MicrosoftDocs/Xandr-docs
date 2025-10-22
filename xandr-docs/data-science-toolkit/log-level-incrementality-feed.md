@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Log-Level Incrementality Feed
 description: The log-level incrementality feed provides data on ad impressions for a random audience split between test and control groups.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Log-level incrementality feed

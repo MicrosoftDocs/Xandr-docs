@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Passive Segment Upload Using AWS S3
 description: Upload segment data into an AWS S3 bucket instead of actively running API commands against the batch segment service. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Passive segment upload using AWS S3

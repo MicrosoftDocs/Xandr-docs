@@ -2,7 +2,9 @@
 title: Configure SDK Logging on iOS
 description: In this article, find the instructions to turn logging on and off, and to set logging levels on iOS SDK.
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

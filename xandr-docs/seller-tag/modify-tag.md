@@ -1,8 +1,10 @@
 ---
 title: Modify Tag
 description: In this article, learn about the Modify Tag function and its parameters with a detailed example.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Modify Tag

@@ -1,8 +1,10 @@
 ---
 title: Data Marketplace Overview
 description: Buyers on the Xandr platform often use third-party data made available by our data providers to target particular audience or inventory. Learn how Xandr helps by directly invoicing the buyers on your behalf. 
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data marketplace overview

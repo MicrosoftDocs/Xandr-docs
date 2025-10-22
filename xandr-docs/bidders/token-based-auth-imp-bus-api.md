@@ -1,7 +1,10 @@
 ---
 title: Token-Based API Authentication - Impression Bus API
 description: A signed token-based authentication system using JSON Web Tokens has been implemented to enhance the security of interactions with the Impression Bus API.
-ms.date: 07/01/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Token-based authentication - Impression Bus API

@@ -1,7 +1,10 @@
 ---
 title: Bidders - Member Service
 description: In this article, learn about bidders member service, their members and contracts, JSON fields, and REST API with a detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Member service

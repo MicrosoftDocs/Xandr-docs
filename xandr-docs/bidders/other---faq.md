@@ -1,7 +1,10 @@
 ---
 title: Other - FAQ
 description: In this article, explore answers to frequently asked questions (FAQs) about data providers, requests, responses, sample code, selling inventory, and partner inventory.
-ms.date : 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Other - FAQ

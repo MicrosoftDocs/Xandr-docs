@@ -1,8 +1,10 @@
 ---
 title: Finance - Credit Limit Overview
 description: Learn how to offer credit management to support enhanced level of service.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 

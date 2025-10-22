@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Bonsai Language Features
 description: Explore Bonsai Language features used for assessing impressions in your custom models with syntax explanations and usage examples.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Bonsai language features

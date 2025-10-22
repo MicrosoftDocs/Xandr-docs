@@ -1,8 +1,10 @@
 ---
 title: Mediated Bid Service
 description: Use the Mediated Bid service to create and view mediated bids.
-ms.date: 10/07/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Mediated Bid service

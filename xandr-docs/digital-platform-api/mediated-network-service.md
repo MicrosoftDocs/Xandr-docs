@@ -1,8 +1,10 @@
 ---
 title: Mediated Network Service
 description: Use the Mediated Network service to create and maintain mediated networks.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Mediated Network service

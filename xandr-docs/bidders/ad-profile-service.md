@@ -1,7 +1,10 @@
 ---
 title: Bidders - Ad Profile Service
 description: In this article, learn how to create ad approval profiles using the Ad Profile Service.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Ad profile service

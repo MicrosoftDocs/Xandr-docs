@@ -1,8 +1,10 @@
 ---
 title: Solve Delivery Issues with Order Line Visibility
 description: Use the Order Line Visibility page as a tool for troubleshooting order line delivery.
-ms.date: 11/07/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Solve delivery issues with Order Line Visibility

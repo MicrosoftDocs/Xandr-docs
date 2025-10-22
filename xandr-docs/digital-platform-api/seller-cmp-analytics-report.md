@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Seller CMP Analytics Report
 description: Analyze Seller CMP Analytics report for insights on IAB transparency and consent framework strings on ad requests to endpoints.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Seller CMP Analytics report

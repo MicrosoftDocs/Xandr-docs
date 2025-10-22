@@ -1,7 +1,10 @@
 ---
 title: Bidder - Impression Counting
 description: Learn about impression counting. Xandr counts impressions and pays sellers after an accept call.
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidder - Impression counting

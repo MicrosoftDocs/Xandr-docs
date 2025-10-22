@@ -1,8 +1,10 @@
 ---
 title: Custom Key Value Targeting
 description: Publishers can use custom key/value targeting to help advertisers reach their intended audience through API services.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Custom key value targeting

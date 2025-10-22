@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Seller Brand Review Report
 description: Use the Seller Brand Review report to analyze brand and creative performance across all inventory, including audit status and client brand category performance.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Seller Brand Review report

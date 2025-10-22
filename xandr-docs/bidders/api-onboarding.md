@@ -1,7 +1,10 @@
 ---
 title: Impression Bus API onboarding process
 description: Integrate with Impression Bus APIs by following the instructions in the API onboarding process.
-ms.date: 07/01/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Impression Bus API onboarding process

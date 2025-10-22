@@ -1,8 +1,10 @@
 ---
 title: Xandr Data Providers Support
 description: In this article, explore information about the Data Providers product support.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Xandr Data Providers support

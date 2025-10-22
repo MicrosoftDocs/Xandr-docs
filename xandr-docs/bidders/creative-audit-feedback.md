@@ -1,7 +1,10 @@
 ---
 title: Creative Audit Feedback
 description: Learn about the creative standards set by Xandr, Google Ad Manager, and Microsoft. The page lists dos and dont's for creatives and inventory, and reasons why a creative can get rejected. 
-ms.date: 11/22/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Creative audit feedback

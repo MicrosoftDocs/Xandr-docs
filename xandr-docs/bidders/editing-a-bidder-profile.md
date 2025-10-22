@@ -1,7 +1,10 @@
 ---
 title: Editing a Bidder Profile
 description: Edit bidder profile by selecting it from left table on Profiles screen. Access Bidder Profile Targeting Options to make changes and save.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Editing a Bidder's profile

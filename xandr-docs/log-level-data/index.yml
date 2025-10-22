@@ -6,9 +6,10 @@ metadata:
   title: Log Level Data Feeds
   description: Discover various reference docs about Log-Level Data Feeds
   ms.topic: landing-page
-  ms.author: rupambaruah
-  ms.service: microsoft-monetize
-  ms.date: 12/01/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: log-level-data
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

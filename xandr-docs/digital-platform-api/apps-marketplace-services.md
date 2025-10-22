@@ -1,8 +1,10 @@
 ---
 title: Apps Marketplace Services
 description: Apps Marketplace services allow app developers to view and control certain aspects of the apps they have added to the marketplace.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Apps Marketplace services

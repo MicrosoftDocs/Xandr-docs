@@ -1,8 +1,10 @@
 ---
 title: Integrating Your Data
 description: In this page, learn steps involved in typical data provider integration. 
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Integrating your data

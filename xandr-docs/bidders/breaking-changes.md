@@ -1,7 +1,10 @@
 ---
 title: Bidders - Breaking Changes
 description: In this article, learn the types of changes that are considered 'breaking changes' when it comes to the impression bus API and bidding protocol.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Breaking changes

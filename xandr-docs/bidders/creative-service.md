@@ -1,8 +1,10 @@
 ---
 title : Bidders - Creative Service
 description : Learn how Creative Service can be used for quality assurance of all creatives that pass through our system. The page covers different stages that a creative goes through so that it's accepted.
-ms.date : 11/22/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

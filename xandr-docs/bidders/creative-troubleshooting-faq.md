@@ -1,7 +1,10 @@
 ---
 title: Creative Troubleshooting FAQ
 description: This topic covers Creative Troubleshooting FAQs. 
-ms.date: 07/10/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Creative troubleshooting FAQ

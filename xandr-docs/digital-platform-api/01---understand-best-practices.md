@@ -1,8 +1,10 @@
 ---
 title: Understand Best Practices
 description: In this article, understand and implement the best practices for Digital Platform APIs that ensure a smoothly operating integration.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Understand best practices

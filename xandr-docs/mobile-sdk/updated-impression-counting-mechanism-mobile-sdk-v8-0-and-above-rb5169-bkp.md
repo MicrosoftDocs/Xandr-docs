@@ -1,8 +1,10 @@
 ---
 title: Impression Counting Mechanism - Mobile SDK v8.0 and above
 description: Learn the updated impression counting mechanism for the Mobile SDK and the change is included in Xandr’s Mobile SDK version 8.0 and above.
-ms.custom: android-sdk, ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Impression counting mechanism - Mobile SDK v8.0 and above

@@ -1,8 +1,10 @@
 ---
 title: Network Analytics Feed
 description: Use the network analytics feed to get detailed information on a network's buy-side and sell-side performance.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network analytics feed

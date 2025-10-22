@@ -1,8 +1,10 @@
 ---
 title: Universal Pixel Service
 description: Explore the Universal Pixel service, enabling access to one or more Universal Pixels and any associated audiences and conversions.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Universal Pixel service

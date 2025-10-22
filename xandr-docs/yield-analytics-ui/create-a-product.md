@@ -1,8 +1,10 @@
 ---
 title: Create a Product
 description: The article explains how to create a product. You can choose the product type and associate any product with product groups.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Create a product

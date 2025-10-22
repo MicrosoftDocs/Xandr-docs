@@ -1,7 +1,10 @@
 ---
 title: Bidder - Inventory Availability Report
 description: Use the Inventory Availability report to get an insight into the types of inventory available on the platform.
-ms.date: 11/27/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidder - Inventory Availability report

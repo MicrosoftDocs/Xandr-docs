@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Segment Loads Report
 description: Explore the Segment Loads report to view metrics about your segments, such as the total segment pixel loads and the count of unique user IDs at specific time points.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Segment Loads report

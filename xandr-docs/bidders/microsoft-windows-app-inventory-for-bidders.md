@@ -1,7 +1,10 @@
 ---
 title: Microsoft Windows App Inventory for Bidders
 description: In this article, learn about Microsoft Windows app inventory for bidders, their availability, inventory volume, specifications, and how to buy a mobile inventory.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Microsoft Windows app inventory for bidders

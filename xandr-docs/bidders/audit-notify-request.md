@@ -1,7 +1,10 @@
 ---
 title: Audit Notify Request
 description: In this article, learn what an audit notify request is and the JSON fields associated with this request along with an example.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Audit notify request

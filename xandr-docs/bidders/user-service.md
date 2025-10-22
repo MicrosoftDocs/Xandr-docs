@@ -1,7 +1,10 @@
 ---
 title: Bidders - User Service
 description: Explore managing API access for individuals or groups with the User Service. Categorize users as bidders or members.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - User service

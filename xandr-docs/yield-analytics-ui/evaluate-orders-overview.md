@@ -1,8 +1,10 @@
 ---
 title: Evaluate Orders Overview
 description: In this article, explore information about Evaluate Orders to evaluate the yield of an order.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Evaluate orders overview

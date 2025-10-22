@@ -1,8 +1,10 @@
 ---
 title: Validate Inventory Item Service
 description: Explore the Validate Inventory Item service to check if the app bundle IDs and/or raw URLs (domains or apps) in your lists are currently supported by the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Validate Inventory Item service

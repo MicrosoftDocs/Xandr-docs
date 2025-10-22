@@ -1,8 +1,10 @@
 ---
 title: Set SafeFrame Configuration
 description: Use the setSafeFrameConfig function to configure SafeFrame, which is a managed iframe that provides additional consumer protection and publisher control. 
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Set SafeFrame configuration

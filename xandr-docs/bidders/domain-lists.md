@@ -1,7 +1,10 @@
 ---
 title: Domain Lists
 description: Explore customizable blocklist options by selecting or excluding bidder-created domain lists, enhancing control over your blocklist selections.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Domain lists

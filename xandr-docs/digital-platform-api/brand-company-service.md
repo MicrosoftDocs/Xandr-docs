@@ -1,8 +1,10 @@
 ---
 title: Brand Company Service
 description: In this article, find information about the Brand Company Service and the fields associated with it.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Brand company service

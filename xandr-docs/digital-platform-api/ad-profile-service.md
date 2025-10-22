@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Ad Profile Service
 description: In this article, learn about Digital Platform API's Ad Profile service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Ad profile service

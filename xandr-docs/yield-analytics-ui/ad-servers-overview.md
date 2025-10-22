@@ -1,8 +1,10 @@
 ---
 title: Ad Servers Overview
 description: In this article, find links to resources that contain information on working with specific ad servers.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Ad servers overview

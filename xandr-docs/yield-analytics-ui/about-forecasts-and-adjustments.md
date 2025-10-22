@@ -1,8 +1,10 @@
 ---
 title: Forecasts and Adjustments
 description: In this article, learn what forecasts are, the types of adjustments you can make, and their use cases.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Forecasts and adjustments

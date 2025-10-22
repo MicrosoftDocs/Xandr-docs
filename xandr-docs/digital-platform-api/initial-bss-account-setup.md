@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Initial BSS Account Setup
 description: In this article, learn about the Batch Segment Service (BSS) account setup.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Initial BSS account setup

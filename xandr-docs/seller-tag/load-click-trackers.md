@@ -1,8 +1,10 @@
 ---
 title: Load Click Trackers
 description: In this article, learn about the Load Click Trackers function and its parameter with a detailed example.
-ms.custom: seller-tag
-ms.date: 10/14/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Load Click Trackers

@@ -1,8 +1,10 @@
 ---
 title: Network Site Domain Performance
 description: Use the Network Site Domain Performance report to view performance and optimization data by domain for all of a network's advertisers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network site domain performance

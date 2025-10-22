@@ -1,8 +1,10 @@
 ---
 title: Creatives Screen
 description: Learn steps to access the Creatives screen in this page. Also this page covers a table with bidder and their associated attributes/metadata listed.
-ms.date: 11/23/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

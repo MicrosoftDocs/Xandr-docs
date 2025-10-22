@@ -1,8 +1,10 @@
 ---
 title: Tango Email Service
 description: Use the Tango Email and Email Template services to manage system emails for Tango without relying on API team for quick iteration and deployment of changes.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Tango Email service

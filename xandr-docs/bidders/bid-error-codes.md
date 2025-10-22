@@ -1,7 +1,10 @@
 ---
 title: Bid Error Codes
 description: In this article, learn where bid error codes can be received from, what error codes you might come across, and how to resolve these errors.
-ms.date: 08/01/2025
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bid error codes

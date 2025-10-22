@@ -1,8 +1,10 @@
 ---
 title: Mobile App Service
 description: Use the Mobile App service to retrieve audited mobile apps and their associated instances, with mobile apps being the canonical representation.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Mobile App service

@@ -1,7 +1,10 @@
 ---
 title: Bidding Protocol
 description: In this article, learn about the bidding protocol and explore documentation that describes the protocol implementation for bidders.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidding protocol

@@ -1,8 +1,10 @@
 ---
 title: Standard Feed
 description: In this article, find information about the Standard feed and details about the columns associated with this data feed.
-ms.custom: log-level-data
-ms.date: 09/04/2025
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: log-level-data
+ms.author: shsrinivasan
 ---
 
 # Standard feed

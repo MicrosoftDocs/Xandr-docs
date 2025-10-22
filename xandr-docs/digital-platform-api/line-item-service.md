@@ -1,8 +1,10 @@
 ---
 title: Line Item Service
 description: Explore the Line Item service, their JSON fields, REST API, and functions with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Line Item Service

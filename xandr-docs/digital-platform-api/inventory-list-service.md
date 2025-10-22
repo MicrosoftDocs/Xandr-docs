@@ -1,8 +1,10 @@
 ---
 title: Inventory List Service
 description: Explore the Inventory List service, designed for creating lists of inventory that include the domains and apps you intend to target.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Inventory List service

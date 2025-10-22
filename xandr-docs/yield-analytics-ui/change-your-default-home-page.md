@@ -1,8 +1,10 @@
 ---
 title: Change Your Default Home Page
 description: The article explains how you can change the page that loads by default when you log in to Yield Analytics. You can also customize the default login page.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Change your default home Page

@@ -1,7 +1,10 @@
 ---
 title: Mobile App Lists
 description: Use the Bidder UI to manage mobile app bundle ID lists for targeting or blocking app traffic using unique app identifiers from app stores.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Mobile app lists

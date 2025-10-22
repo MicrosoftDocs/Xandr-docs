@@ -1,8 +1,10 @@
 ---
 title: Sld Use Subdomain Service
 description: The SLD Use Subdomain service allows users to add rows to the api.sld_use_subdomain table for tracking subdomains.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # SLD Use Subdomain service

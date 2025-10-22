@@ -2,7 +2,10 @@
 title: Support for Overriding Country and Zip Codes for iOS
 description: Mobile SDK allows the publishers to override the country codes and zip codes. Learn how you can overwrite these values from reverser geocoded latitude and longitude data.   
 ms.custom: ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 

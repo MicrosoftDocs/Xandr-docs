@@ -1,8 +1,10 @@
 ---
 title: Availability Lookup
 description: Explore new Availability Lookup, coexisting with old Check Availability. Quick Start Guide eases yor navigation.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Availability lookup

@@ -1,8 +1,10 @@
 ---
 title: RTSS Use Cases
 description: In this article, explore the supported use cases for the Real-Time Signals Service (RTSS).
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # RTSS use cases

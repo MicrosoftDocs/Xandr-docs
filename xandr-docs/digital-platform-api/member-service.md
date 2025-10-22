@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Member Service
 description: This article provides information on Member service. Each member has multiple users with their own UI and API credentials managed by the User Service.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Member service

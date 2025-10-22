@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Bonsai Smart Leaves
 description: Explore the concept of Bonsai Smart Leaves, with syntax explanations, input fields, and a comprehensive set of examples.
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - Bonsai smart leaves

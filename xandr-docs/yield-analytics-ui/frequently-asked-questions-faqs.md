@@ -1,8 +1,10 @@
 ---
 title: Ad-Juster Discrepancy
 description: In this article, explore several possible reasons for a Ad-Juster discrepancy.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Ad-Juster discrepancy

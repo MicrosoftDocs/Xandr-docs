@@ -7,8 +7,9 @@ metadata:
   description: Discover various reference docs for Microsoft Advertising Customer Support
   ms.topic: landing-page
   ms.author: shsrinivasan
-  ms.service: microsoft-curate
-  ms.date: 01/13/2024
+  ms.service: publisher-monetization
+  ms.subservice: customer-support
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

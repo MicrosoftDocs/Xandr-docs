@@ -1,7 +1,10 @@
 ---
 title: Bidders - Buy Microsoft Casual Games (Windows O&O Apps)
 description: In this article, learn how to buy and target Microsoft Casual Games within the Windows O&O apps, offering a range of fun and engaging options for users.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Buy Microsoft Casual Games (Windows O&O apps)

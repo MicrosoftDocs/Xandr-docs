@@ -6,9 +6,10 @@ metadata:
   title: Seller Tag Developer Documentation
   description: Discover various modules of Seller Tag
   ms.topic: landing-page
-  ms.author: shivanni srinivasan
-  ms.service: microsoft-monetize
-  ms.date: 10/16/2023
+  ms.author: shsrinivasan
+  ms.service: publisher-monetization
+  ms.subservice: seller-tag
+  ms.date: 10/22/2025
 
 landingContent:
   - title: Let's Get Started

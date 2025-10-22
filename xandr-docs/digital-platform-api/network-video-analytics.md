@@ -1,8 +1,10 @@
 ---
 title: Network Video Analytics
 description: Use the Network Video Analytics report to view video event metrics for network members and granular analytics for specific advertisers/publishers.
-ms.date: 08/01/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network video analytics

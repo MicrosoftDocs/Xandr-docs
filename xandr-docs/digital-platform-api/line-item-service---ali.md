@@ -1,8 +1,10 @@
 ---
 title: Line Item Service - ALI
 description: Explore the Line Item Service for Augmented Line Items (ALI), which defines your financial relationship with an advertiser.
-ms.date: 7/3/2025
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Line Item service - ALI

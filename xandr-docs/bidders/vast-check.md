@@ -1,7 +1,10 @@
 ---
 title: Bidders - VAST Check
 description: Explore VAST and VPAID video creative checks for bidders, understanding potential outputs, and implementing corrective actions with third-party XML.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - VAST check

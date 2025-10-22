@@ -1,8 +1,10 @@
 ---
 title: Common Discrepancy Causes - FAQ
 description: Learn FAQs on Common Discrepancy Causes. 
-ms.date: 11/20/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

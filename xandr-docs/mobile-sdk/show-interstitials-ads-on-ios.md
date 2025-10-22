@@ -2,7 +2,10 @@
 title: Show Interstitial Ads on iOS
 description: This page gives an overview on the instructions and code samples that are required for showing interstitial ads on iOS.
 ms.custom: ios-sdk
-ms.date: 10/01/2024
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Show interstitial ads on iOS

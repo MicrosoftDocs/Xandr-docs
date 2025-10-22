@@ -1,8 +1,10 @@
 ---
 title: Remove the Scheduling from a Saved Lookup
 description: Learn how to remove the scheduling from saved availability lookups. This keeps the lookup saved in the system, but removes its schedules.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Remove the scheduling from a saved lookup

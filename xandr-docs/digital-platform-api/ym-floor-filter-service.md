@@ -1,8 +1,10 @@
 ---
 title: YM Floor Filter Service
 description: Explore the YM Floor Filter service to view a list of yield management (YM) floor rules that apply to a specific member.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # YM Floor Filter service

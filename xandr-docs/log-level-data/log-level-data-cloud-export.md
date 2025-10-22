@@ -1,8 +1,10 @@
 ---
 title: Log Level Data - Cloud Export
 description: In this article, find information about Cloud Export, Cloud Export setup, manifest files, and troubleshooting.
-ms.custom: log-level-data
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: log-level-data
+ms.author: shsrinivasan
 ---
 
 # Log level data - Cloud export

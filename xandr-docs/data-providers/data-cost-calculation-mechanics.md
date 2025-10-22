@@ -1,8 +1,10 @@
 ---
 title: Data Cost Calculation
 description: Learn about key steps in assessing data cost. This page illustrates segment targeting using *AND* and *OR* boolean along with examples.
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data cost calculation

@@ -1,7 +1,10 @@
 ---
 title: Bidders - Delivery Type Service
 description: Explore the Delivery Type Service, enabling users to identify video delivery types and add content fields for precise targeting in line items.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Delivery type service

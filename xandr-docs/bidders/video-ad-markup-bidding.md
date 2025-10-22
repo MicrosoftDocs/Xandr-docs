@@ -1,7 +1,10 @@
 ---
 title: Video Ad Markup Bidding (ADM)
 description: Learn how to submit raw video XML via ADM for bidding, simplifying creative registration and enabling dynamic ad delivery in OpenRTB.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Video Ad Markup bidding (ADM)

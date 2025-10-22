@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - Custom Models Pre-Implementation and Troubleshooting Guide
 description: This page provides an overview of Custom Models Pre-Implementation best practices and Troubleshooting guide.  
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 

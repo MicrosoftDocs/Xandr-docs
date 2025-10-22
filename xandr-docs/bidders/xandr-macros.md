@@ -1,7 +1,10 @@
 ---
 title: Xandr Macros
 description: Explain how macros populate URLs, acting as variables for useful information in ad creatives, revealing their replaced values during ad calls.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Xandr macros

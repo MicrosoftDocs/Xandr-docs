@@ -1,7 +1,10 @@
 ---
 title: October 2, 2015 - Bid Request Breaking Change
 description: In this article, learn about the bid request breaking change and more information about it.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # October 2, 2015 - Bid request breaking change

@@ -2,7 +2,10 @@
 
 title: Overview - Inventory quality and auditing
 description: Xandr controls inventory quality with baseline standards and offers buyers tools to choose inventory. 
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Overview - Inventory quality and auditing

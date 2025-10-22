@@ -1,8 +1,10 @@
 ---
 title: Bidders - Content Category Service
 description: This page tells us what content categories are registered in the Xandr system. 
-ms.date: 11/20/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

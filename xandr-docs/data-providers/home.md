@@ -1,8 +1,10 @@
 ---
 title: Data Providers - Home
 description: Learn how our technical team helps data providers integrate with the platform and assist purchasers in using the data they have purchased. 
-ms.custom: data-providers
-ms.date: 11/29/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Data Providers - Home

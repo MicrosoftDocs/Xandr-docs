@@ -1,7 +1,10 @@
 ---
 title: Supply Type Detection - FAQ
 description: Learn FAQs on Supply Type Detection.  
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

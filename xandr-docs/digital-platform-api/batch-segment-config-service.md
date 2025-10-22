@@ -1,8 +1,10 @@
 ---
 title: Batch Segment Config Service
 description: In this article, find information on the Batch Segment Config service and the fields associated with it.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Batch Segment Config service

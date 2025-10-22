@@ -1,8 +1,10 @@
 ---
 title: Network Carrier Analytics
 description: Use the Network Carrier Analytics report to view data on carrier impact on campaign performance and advertiser payment for buy-side and sell-side performance analysis.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network carrier analytics

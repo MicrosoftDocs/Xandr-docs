@@ -1,8 +1,10 @@
 ---
 title: Synchronize Your Inventory Structure
 description: Learn why its important to synchronize your inventory structure with Xandr on a regular basis as not doing so can lead to the inventory being unsellable via Xandr.   
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Synchronize your inventory structure

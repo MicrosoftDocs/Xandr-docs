@@ -1,9 +1,10 @@
 ---
 title: Finance - Currency Support
 description: In this article, learn about the currencies supported, covering all essential concepts, and intricate processes.
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
 ms.author: shsrinivasan
-ms.custom: finance
 ---
 
 # Finance - Currency support

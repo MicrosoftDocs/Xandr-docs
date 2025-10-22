@@ -1,8 +1,10 @@
 ---
 title: Common Report Configurations
 description: Explore common Yield Analytics reports, identify At-Risk items, review Zombie Order Lines, track Advertiser and Sales performance, analyze Pricing trends.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Common report configurations

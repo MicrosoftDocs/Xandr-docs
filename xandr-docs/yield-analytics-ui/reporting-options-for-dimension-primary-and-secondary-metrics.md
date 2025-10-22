@@ -1,8 +1,10 @@
 ---
 title: Reporting Options for Dimension, Primary, and Secondary Metrics
 description: This article lists the reporting options for dimension, primary and secondary metrics.
-ms.date: 11/06/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Report options for dimension, primary and secondary metrics

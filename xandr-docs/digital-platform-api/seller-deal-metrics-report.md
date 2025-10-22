@@ -1,8 +1,10 @@
 ---
 title: Seller Deal Metrics Report
 description: Use the Seller Deal Metrics report to view relevant information on deal metrics, performance, and rejection reasons for sellers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Seller Deal Metrics report

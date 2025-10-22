@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Curator Analytics Report
 description: Use the Curator Analytics report to get curators insight into how money flows from demand to supply within their curated marketplace.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Curator Analytics report

@@ -1,8 +1,10 @@
 ---
 title: Hourly Pacing Overrides Service
 description: Use the Hourly Pacing Overrides service to customize your line item's budget distribution within a day.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Hourly Pacing Overrides service

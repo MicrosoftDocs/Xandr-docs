@@ -1,8 +1,10 @@
 ---
 title: Set Up On-Page Tags for Outstream Video
 description: Set up on-page tags for Outstream video. Outstream Video uses AST tags that can be defined, loaded, and shown in the page body.
-ms.custom: seller-tag
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: seller-tag
+ms.author: shsrinivasan
 ---
 
 # Set up on-page tags for Outstream video

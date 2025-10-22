@@ -2,7 +2,9 @@
 title: Migrating Android SDK v7 to 8.0
 description: Publishers using SDK v8.0 must initialize Xandr SDK before making an ad request to avoid exceptions.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

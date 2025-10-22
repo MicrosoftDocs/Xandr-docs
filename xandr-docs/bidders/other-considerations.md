@@ -1,7 +1,10 @@
 ---
 title: Other Considerations
 description: Explore information about Bidders documentation.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Other considerations

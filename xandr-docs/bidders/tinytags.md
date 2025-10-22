@@ -1,7 +1,10 @@
 ---
 title: TinyTags
 description: This page provides an overview on the working of TinyTags. Learn about various sample tags through which TinyTags are called.
-ms.date: 11/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # TinyTags

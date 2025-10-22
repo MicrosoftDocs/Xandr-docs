@@ -1,7 +1,10 @@
 ---
 title: Overview - ADM Bidding
 description: Learn how to target specific content categories to optimize ad campaigns and improve reach accuracy.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Overview - ADM Bidding

@@ -1,8 +1,10 @@
 ---
 title: Plugin Instance Service
 description: Use the Plugin Instance service to create and manage umbrella and specific app instances for Apps marketplace.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Plugin Instance service

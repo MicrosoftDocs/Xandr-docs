@@ -1,8 +1,10 @@
 ---
 title: Changelog for Enhanced Bidder Profiles
 description: This page covers changes in Legacy Bidder Profile Behavior and Enhanced Bidder Profile Behavior in tabular form.   
-ms.date: 11/20/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

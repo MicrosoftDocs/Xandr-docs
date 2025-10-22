@@ -1,8 +1,10 @@
 ---
 title: Search Service
 description: Explore the Search service to search for objects without specifying an object type.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Search service

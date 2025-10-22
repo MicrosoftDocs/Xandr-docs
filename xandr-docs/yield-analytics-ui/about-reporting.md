@@ -1,8 +1,10 @@
 ---
 title: About Reports
 description: In this article, learn what reports are, how to create reports, and the different criteria to create reports.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # About reports

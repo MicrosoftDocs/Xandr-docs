@@ -1,7 +1,10 @@
 ---
 title: Sherlock - Creative Quality Control
 description: Learn how we use Sherlock to detect malicious content and assist our human auditors with ad quality. 
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Sherlock - Creative quality control

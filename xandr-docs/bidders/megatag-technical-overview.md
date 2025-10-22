@@ -1,7 +1,10 @@
 ---
 title: MegaTag Technical Overview
 description: In this article, learn about MegaTag program and its operation during a single page load through a detailed walkthrough.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # MegaTag technical overview

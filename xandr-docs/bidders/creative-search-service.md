@@ -1,8 +1,10 @@
 ---
 title: Bidders - Creative Search Service
 description: Learn how this service allows you to search for creatives based on specific criteria such as audit status, ID, size, etc. This page also covers an example where you search for all banner creatives that have passed Xandr's audit. 
-ms.date: 11/21/2023
-
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 

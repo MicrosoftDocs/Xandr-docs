@@ -1,7 +1,10 @@
 ---
 title: Bidders - Monthly Prediction Variability Data
 description: In this article, explore the resulting monthly prediction variability rates for applicable transactions on the platform.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Monthly prediction variability data

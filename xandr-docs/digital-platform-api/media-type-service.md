@@ -1,8 +1,10 @@
 ---
 title: Media Type Service
 description: Explore the read-only Media Type service and ways to view all of its supported media types.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Media Type service

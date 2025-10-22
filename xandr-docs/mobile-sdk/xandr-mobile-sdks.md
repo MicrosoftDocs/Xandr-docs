@@ -1,8 +1,10 @@
 ---
 title: Xandr Mobile SDKs
 description: Learn Xandr's Mobile SDKs streamline app monetization with open-source code, extensive documentation, MRAID 2.0 support, and efficient mediation options.
-ms.custom: android-sdk, ios-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Overview: Xandr mobile SDKs

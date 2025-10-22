@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Region Service
 description: Explore the read-only Region service to view information about the regions and states registered in the system.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Region service

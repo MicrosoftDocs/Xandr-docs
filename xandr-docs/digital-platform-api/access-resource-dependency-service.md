@@ -1,8 +1,10 @@
 ---
 title: Access Resource Dependency Service
 description: In this article, learn about the Access Resource Dependency service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Access Resource Dependency service

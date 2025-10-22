@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Insertion Order Service
 description: Learn about the Insertion Order service, their JSON fields, and how it enables you to better organize, track, and allocate budget to your line items.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Insertion Order service

@@ -1,7 +1,10 @@
 ---
 title: Deals for Bidders
 description: Explore bidding deals, learn the process with platform sellers, and seize opportunities to bid effectively on this page.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Deals for Bidders

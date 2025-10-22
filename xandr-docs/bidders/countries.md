@@ -1,9 +1,10 @@
 ---
 title: Countries
 description: Learn how using the Countries tab you can select countries or regions you want to receive. This page covers different icons that you need to select to include or exclude countries or regions, and icon with which you can search for countries.   
-ms.date: 11/20/2023
-
----
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan---
 
 
 # Countries

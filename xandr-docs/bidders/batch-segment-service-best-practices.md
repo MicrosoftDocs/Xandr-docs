@@ -1,7 +1,10 @@
 ---
 title: Bidders - Batch Segment Service Best Practices 
 description: In this article, find information about the best practices to use Batch Segment Service (BSS) and answers to some frequently asked questions about BSS.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Batch segment service best practices

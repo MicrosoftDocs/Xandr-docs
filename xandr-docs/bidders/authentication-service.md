@@ -1,7 +1,10 @@
 ---
 title: Impression Bus API authentication
 description: In this article, learn about the authentication service with an example.
-ms.date: 07/01/2024
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Impression Bus API authentication

@@ -1,8 +1,10 @@
 ---
 title: Primary Ad Server Service
 description: Explore the Primary Ad Server service, which enables the creation, updating, and deletion of primary ad servers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Primary Ad Server service

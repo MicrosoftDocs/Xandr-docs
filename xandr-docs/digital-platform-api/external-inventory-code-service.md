@@ -1,8 +1,10 @@
 ---
 title: External Inventory Code Service
 description: The External Inventory Code service allows sellers to register their own codes for granular inventory breakdown and report on them during ad calls.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # External Inventory Code service

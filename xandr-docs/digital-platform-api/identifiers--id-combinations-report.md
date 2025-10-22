@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Identifiers - ID Combinations Report
 description: Explore the ID Combinations Identifiers report, providing insights on the breakout and overlap of cookies and IDs across impressions.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Identifiers - ID Combinations report

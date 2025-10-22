@@ -1,8 +1,10 @@
 ---
 title: Add a Microsoft Outlook Versatile Creative
 description: In this article, learn step-by-step instructions on how to add a Microsoft Outlook versatile creative.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Add a Microsoft Outlook versatile creative

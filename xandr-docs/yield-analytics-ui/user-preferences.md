@@ -1,8 +1,10 @@
 ---
 title: User Preferences
 description: Change your password and the default page that loads when you log in to the system.
-ms.date: 11/07/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # User preferences

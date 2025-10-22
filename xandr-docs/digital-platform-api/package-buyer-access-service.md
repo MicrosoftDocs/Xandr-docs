@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Package Buyer Access Service
 description: Buyers can view and generate deals for sellers' packages through Package Buyer Access service. Packages are deals sellers are prepared to offer to buyers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Package Buyer Access service

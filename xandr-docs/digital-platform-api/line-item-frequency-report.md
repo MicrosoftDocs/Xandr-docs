@@ -1,8 +1,10 @@
 ---
 title: Line Item Frequency Report
 description: Learn about the Line Item Frequency report, providing the ability to view how frequently users are viewing a specific line item's creatives.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Line Item Frequency report

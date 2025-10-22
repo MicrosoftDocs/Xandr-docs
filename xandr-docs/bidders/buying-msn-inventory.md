@@ -1,7 +1,10 @@
 ---
 title: Bidders - Buy MSN Inventory
 description: Learn about Microsoft MSN inventory's volume, availability, creative specifications, and targeting instructions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Buy MSN inventory

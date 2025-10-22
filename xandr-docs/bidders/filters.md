@@ -1,7 +1,10 @@
 ---
 title: Filters
 description: Apply filters to modify creative lists. Access Filters screen, select preferences, and click Apply Filters. Cancel button undoes all entries.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Filters

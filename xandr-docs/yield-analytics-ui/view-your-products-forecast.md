@@ -1,8 +1,10 @@
 ---
 title: View your Products Forecast
 description: Use the Forecast Management page to view a snapshot of your products' impressions forecast for the month specified by the time period filter.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View your products forecast

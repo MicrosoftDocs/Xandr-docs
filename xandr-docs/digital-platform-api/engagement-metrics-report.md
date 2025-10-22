@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Engagement Metrics Report
 description: Use the Engagement Metrics report to get information about ad viewability and identify problems that might prevent measuring an impression's viewability.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Engagement Metrics report

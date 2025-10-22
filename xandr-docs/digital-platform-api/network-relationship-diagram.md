@@ -1,8 +1,10 @@
 ---
 title: Network Relationship Diagram
 description: The network relationship diagram shows the relationships between Ad Networks' API services, except for the profile object.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network relationship diagram

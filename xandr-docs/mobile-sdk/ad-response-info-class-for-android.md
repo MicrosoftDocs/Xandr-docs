@@ -2,7 +2,9 @@
 title: adResponseInfo Class for Android
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for Android Mobile SDK.
 ms.custom: android-sdk
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

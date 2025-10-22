@@ -1,8 +1,10 @@
 ---
 title: Under the Hood of your Browser
 description: Explore optimizing online ad transactions, emphasizing browser operations understanding. Maximize revenue with Xandr's best practices.
-ms.date: 10/28/2023
-ms.custom: industry-reference
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: industry-reference
+ms.author: shsrinivasan
 ---
 
 # Under the hood of your browser

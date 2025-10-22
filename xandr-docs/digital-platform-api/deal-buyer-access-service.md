@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API - Deal Buyer Access Service
 description: The Deal Buyer Access service allows buyers to view negotiated deals with UI sellers and external supply partners for preferential pricing, exclusive inventory, and reduced competition. 
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Deal Buyer Access service

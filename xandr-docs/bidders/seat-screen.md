@@ -1,7 +1,10 @@
 ---
 title: Seat Screen
 description: In this article, find information about how to access the Seat screen, seat-related attributes, and how to perform seat-related actions.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Seat screen

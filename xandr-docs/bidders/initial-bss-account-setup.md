@@ -1,7 +1,10 @@
 ---
 title: Bidder - Initial BSS Account Setup
 description: Learn about the Batch Segment Service account setup.
-ms.date: 11/24/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidder - Initial BSS account setup

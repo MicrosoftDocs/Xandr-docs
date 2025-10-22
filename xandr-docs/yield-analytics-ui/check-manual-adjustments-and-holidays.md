@@ -1,8 +1,10 @@
 ---
 title: Check Manual Adjustments and Holidays
 description: Update holiday adjustments in the Manual Adjustments & Holidays widget. Navigate, view, and modify details. Customize and export forecasts as needed.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Check manual adjustments and holidays

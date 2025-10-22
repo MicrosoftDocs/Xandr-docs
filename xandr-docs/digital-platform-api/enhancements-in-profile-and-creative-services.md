@@ -1,8 +1,10 @@
 ---
 title: Enhancements in Profile and Creative Services
 description: A profile consists of targeting parameters, while creatives are the ads that are attached to the Smart line item.
-ms.date: 04/28/2024
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Enhancements in profile and creative services 

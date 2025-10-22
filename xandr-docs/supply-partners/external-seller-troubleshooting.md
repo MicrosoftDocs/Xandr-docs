@@ -1,8 +1,10 @@
 ---
 title: External Seller Troubleshooting
 description: In this article, explore the common challenges encountered by external sellers, along with troubleshooting guidance to help resolve them.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # External seller troubleshooting

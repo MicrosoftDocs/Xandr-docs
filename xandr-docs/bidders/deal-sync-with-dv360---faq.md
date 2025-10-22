@@ -1,7 +1,10 @@
 ---
 title: Bidders - Deal Sync with DV360 - FAQ
 description: Explore Deal Sync with DV360 FAQs. Beta product for selected sellers testing. Contact account representative to participate.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Deal sync with DV360 - FAQ

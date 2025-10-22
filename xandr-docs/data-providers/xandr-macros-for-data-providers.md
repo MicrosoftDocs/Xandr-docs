@@ -1,8 +1,10 @@
 ---
 title: Xandr Macros for Data Providers
 description: In this article, learn about macros for impressions, ad inventory, mobile impressions, and content object targeting.
-ms.custom: data-providers
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-providers
+ms.author: shsrinivasan
 ---
 
 # Xandr macros for Data Providers

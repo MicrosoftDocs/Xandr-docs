@@ -1,7 +1,10 @@
 ---
 title: Bidders - Package Buyer Access Service
 description: In this article, learn about bidders package buyer access service, their JSON fields, and REST API with a detailed set of examples.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Package buyer access service

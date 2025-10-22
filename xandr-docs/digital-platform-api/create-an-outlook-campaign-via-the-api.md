@@ -1,8 +1,10 @@
 ---
 title: Create an Outlook Campaign via the API
 description: In this article, learn step-by-step instructions on how to create an Outlook campaign via the API.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Create an Outlook campaign via the API

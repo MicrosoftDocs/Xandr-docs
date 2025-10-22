@@ -1,7 +1,10 @@
 ---
 title: Your Reports
 description: Explore recent reports, covering report queries and saved reports, that require immediate attention and action.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Your reports

@@ -1,7 +1,10 @@
 ---
 title: Reporting Timezones
 description: In this article, find information about the Reporting timezones and a list of supported timezone values for reporting.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Reporting timezones

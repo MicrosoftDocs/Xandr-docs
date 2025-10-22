@@ -1,8 +1,10 @@
 ---
 title: Data Science Toolkit - ALI Workflow with Custom Models
 description: Explore a detailed guide on how to create and seamlessly associate custom models with an Augmented Line Item (ALI).
-ms.custom: data-science
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: data-science-toolkit
+ms.author: shsrinivasan
 ---
 
 # Data Science Toolkit - ALI workflow with custom models

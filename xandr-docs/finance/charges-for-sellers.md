@@ -1,8 +1,10 @@
 ---
 title: Finance - Charges for Sellers
 description: This article explains about the seller auction service charge for selling inventory to third-party buyers.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Charges for sellers

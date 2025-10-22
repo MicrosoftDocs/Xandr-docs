@@ -1,8 +1,11 @@
 ---
 title: Digital Platform API - Breaking Changes
 description: In this article, find information on what breaking changes are along with examples for breaking and non-breaking changes.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.topic: release-notes
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API - Breaking changes

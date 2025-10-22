@@ -1,8 +1,10 @@
 ---
 title: Network Advertiser Video Analytics
 description: Use the Network Advertiser Video Analytics report to get detailed video event metrics for specific advertisers. It is only available to network users.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Network advertiser video analytics

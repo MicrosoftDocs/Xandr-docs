@@ -2,7 +2,9 @@
 title: iOS SDK Code Samples Overview
 description: In this article, explore detailed information about iOS SDK code samples.
 ms.custom: ios-sdk
-ms.date : 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 

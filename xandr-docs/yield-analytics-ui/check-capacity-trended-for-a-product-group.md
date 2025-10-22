@@ -1,8 +1,10 @@
 ---
 title: Check Capacity Trended for a Product Group
 description: Track trends with Capacity Trended widget on Dashboard. Hover over green bars for details, filter by product, and review Consumed Impressions report.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Check capacity trended for a product group

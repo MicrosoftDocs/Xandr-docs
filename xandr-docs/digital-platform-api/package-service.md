@@ -1,8 +1,10 @@
 ---
 title: Package Service
 description: Sellers can use the Package Service to create and manage their packages.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Package service

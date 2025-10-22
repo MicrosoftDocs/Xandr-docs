@@ -1,8 +1,10 @@
 ---
 title: Digital Platform API Support
 description: Explore the API services and full product support available for current customers.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Digital Platform API support

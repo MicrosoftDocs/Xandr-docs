@@ -1,8 +1,10 @@
 ---
 title: Real-Time Signals Service (Formerly APD)
 description: Explore the Real-Time Signals Service (RTSS) that enables segment creation and targeting based on real-time signals.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # RTSS Overview
@@ -121,7 +123,7 @@ The following steps are required for utilizing RTSS:
 | Authenticate via [Auth API](authentication-service.md)         | `POST https://api.appnexus.com/auth`       |       |
 | Create a segment via [Segment API](segment-service.md)  | `POST https://api.appnexus.com/segment`    | Segments must be created before uploading RTSS targets. |
 | Upload CSV file via REST API      | `POST /members/{member_id}/uploads`       | Max file size: 256MB (recommended compression: GZIP). |
-| Check upload status               | `GET /members/{member_id}/uploads`        | Uploads take up to 24 hours to process. |
+| Check upload status               | `GET /members/{member_id}/uploads/{upload_job_id`        | Uploads take up to 24 hours to process. |
 | Validate targeting features       | `GET /members/{member_id}/olcs/{olc}` <br> `GET /members/{:member_id}/ips/{:ip}` <br> `GET /members/{:member_id}/urls/components` <br> `GET /members/{:member_id}/urls/reference`  | Reports are accessible by querying uploaded targeting features. |
 
 ## Bulk upload file format
@@ -181,14 +183,14 @@ Uploads take up to **24 hours** to process before being available for targeting.
 
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| `GET` | `/members/{member_id}/uploads` | Get a list of active uploads. |
+| `GET` | `/members/{member_id}/uploads/{upload_job_id` | Get job status of a single upload job using job id path. |
 
 #### Example status request
 
 Here’s an example request for checking the status of a processing file:
 
 ```sh
-curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2
+curl https://api.appnexus.com/apd-api/members/1/uploads/a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2 
 ```
 
 #### Example response
@@ -196,29 +198,22 @@ curl https://api.appnexus.com/apd-api/members/1/uploads?id=a04d88c3-8cc7-11e6-86
 The server responds with details about the specified job ID.
 
 ```json
-{
-  "uploads": [
-    {
-      "added": "2016-10-07T19:52:49Z",
-      "id": "a04d88c3-8cc7-11e6-868d-7cd30ab7f6e2",
-      "member_id": 1,
-      "rows_total": 6,
-      "rows_failed": 1,
-      "records_total": 8,
-      "records_failed": 2,
-      "message": "5: bad ip range",
-      "started": "2016-10-07T19:52:49Z",
-      "status": "completed_with_errors",
-      "stopped": "2016-10-07T19:52:49Z"
-    }
-  ]
-}
+{ 
+  "added": "string", 
+  "id": "string", 
+  "member_id": 0, 
+  "records_failed": 0, 
+  "records_total": 0, 
+  "status": "string", 
+  "stopped": "string" 
+} 
 ```
-
+<!--
 > [!NOTE]
->
 > - The `rows_failed` field indicates how many lines failed to process.
 > - The `message` field provides an error description for failed lines (maximum 100 errors).
+-->
+
 
 ## Validate targeting features
 

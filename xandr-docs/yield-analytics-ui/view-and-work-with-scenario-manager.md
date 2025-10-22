@@ -1,8 +1,10 @@
 ---
 title: View and Work with Scenario Manager
 description: This article provides instructions to access Scenario Manger and to add an order line to a scenario.
-ms.date: 11/08/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # View and work with Scenario Manager

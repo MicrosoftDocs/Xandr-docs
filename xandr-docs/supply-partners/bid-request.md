@@ -1,8 +1,10 @@
 ---
 title: Supply Partners - Bid Request
 description: Learn about a bid request, their JSON fields, the placement mapping sequence, and examples to help you understand better.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # Supply Partners - Bid request

@@ -1,8 +1,10 @@
 ---
 title: SDK Privacy for iOS
 description: This page provides an overview on Global Privacy Platform (GPP), General Data Protection Regulations and California Consumer Protection Act.  
-ms.custom: ios-sdk 
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 
 ---
 

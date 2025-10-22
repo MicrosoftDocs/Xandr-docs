@@ -1,9 +1,10 @@
 ---
 title: Microsoft Advertising Customer Support Portal FAQs 
 description: Explore FAQs on the Microsoft Advertising Customer Support Portal, providing insights into common queries for better understanding.
-ms.custom: customer-support
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: customer-support
 ms.author: shsrinivasan
-ms.date: 01/12/2025
 ---
 
 # Microsoft Advertising Customer Support portal FAQs 

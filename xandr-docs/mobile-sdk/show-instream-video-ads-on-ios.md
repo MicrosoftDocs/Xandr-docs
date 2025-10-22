@@ -2,8 +2,10 @@
 title: Show Instream Video Ads on iOS
 description: This page is a step-by-step guide to show instream ads. The steps include how to Initialize the video ad Object, Load the video ad, Show the video ad and few others which are explained in this page.   
 ms.custom: ios-sdk
-ms.date: 10/28/2023
-
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Show instream video ads on iOS

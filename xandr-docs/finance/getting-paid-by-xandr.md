@@ -1,8 +1,10 @@
 ---
 title: Finance - Getting Paid
 description: This article in the Finance module explains about the process for receiving prompt payment from Microsoft Advertising. The payment is done within a fixed period of time.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Getting paid

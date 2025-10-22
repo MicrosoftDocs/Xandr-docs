@@ -1,8 +1,10 @@
 ---
 title: FAQ - Supply Partner Integration Process
 description: This article addresses the frequently asked questions on the process of integrating supply partners.
-ms.custom: supply-partners
-ms.date: 10/28/2023
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: supply-partners
+ms.author: shsrinivasan
 ---
 
 # FAQ - Supply partner integration process

@@ -1,7 +1,10 @@
 ---
 title: Mediate with iOS
 description: This article provides information on mediation with iOS. Mediation lets you sell ad impressions through multiple networks to generate more revenue.
-ms.custom: ios-sdk
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: mobile-sdk
+ms.author: shsrinivasan
 ---
 
 # Mediate with iOS

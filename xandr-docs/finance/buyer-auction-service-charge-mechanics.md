@@ -1,8 +1,10 @@
 ---
 title: Finance - Buyer Auction Service Charge Mechanics
 description: In this article, understand how Buyer Auction Service Charge (BASC) is calculated.
-ms.date: 10/28/2023
-ms.custom: finance
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: finance
+ms.author: shsrinivasan
 ---
 
 # Finance - Buyer auction service charge mechanics

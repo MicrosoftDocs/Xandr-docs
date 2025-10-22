@@ -1,8 +1,10 @@
 ---
 title: Yield Analytics 7.20
 description: In this page, learn how to build and use the new advanced filter in the Availability screen called Roadblock.
-ms.date: 10/28/2023
-ms.custom: yield-analytics-ui
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: yield-analytics-ui
+ms.author: shsrinivasan
 ---
 
 # Yield Analytics 7.20

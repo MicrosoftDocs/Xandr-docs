@@ -1,8 +1,10 @@
 ---
 title: Advertiser Service
 description: Networks can use the advertiser service to add, modify, and view the advertisers that interact with Xandr.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Advertiser service

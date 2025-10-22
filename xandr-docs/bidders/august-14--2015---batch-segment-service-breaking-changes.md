@@ -1,7 +1,10 @@
 ---
 title: August 14, 2015 - Batch Segment Service Breaking Changes
 description: Find the release notes for the breaking changes made to the Batch Segment Service.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # August 14, 2015 - Batch segment service breaking changes

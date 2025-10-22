@@ -1,7 +1,10 @@
 ---
 title: Bidders - Browser Service
 description: In this article, learn about bidders browser service, their JSON fields, and REST API with an example.
-ms.date: 10/28/2023
+ms.date: 10/21/2025
+ms.service: publisher-monetization
+ms.subservice: bidders
+ms.author: shsrinivasan
 ---
 
 # Bidders - Browser service

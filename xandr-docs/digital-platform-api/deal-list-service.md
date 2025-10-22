@@ -1,8 +1,10 @@
 ---
 title: Deal List Service
 description: Deal List service facilitates search and fetching a specific or different deal lists. You can create, append and replace a deal list with comma-separated deal IDs.
-ms.date: 10/28/2023
-ms.custom: digital-platform-api
+ms.date: 10/22/2025
+ms.service: publisher-monetization
+ms.subservice: digital-platform-api
+ms.author: shsrinivasan
 ---
 
 # Deal List service

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Monitor Line items 
 description: This page is an overview on Line items. Learn how to access the Seller Monitoring Workflow (SMW) feature for Line items from any Microsoft Monetize screen.
-ms.date: 10/21/2025
+ms.date: 10/28/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -112,7 +112,7 @@ You can Duplicate, Activate, Deactivate, Delete, or Run a report for selected Li
 
 1. In the **Line items** window for each progress tab (**All**, **Upcoming**, **In Progress**, or **Completed**), select the checkbox to the left of any Line items.
 1. When Line items are selected, the **Line items selected** bar is available at the top of the **Line items** window with the following available actions you can perform by clicking on the action:
-    - **Duplicate** - You can duplicate one or more Line items simultaneously.
+    - **Duplicate** - You can duplicate one or more Line items simultaneously.<br>**Note**:When duplicating a line item with a start date in the past, the duplicate line item's start date will be set to ‘Today.’ For PG line items, it will be set to ’Tomorrow.’ All other line items will retain the original flight dates.
     - **Activate** - You can activate one or more Line items simultaneously.
     - **Deactivate** - You can deactivate one or more Line items simultaneously.
     - **Delete** - You can delete one or more Line items simultaneously.

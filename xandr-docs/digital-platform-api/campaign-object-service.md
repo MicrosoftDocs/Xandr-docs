@@ -1,7 +1,7 @@
 ---
 title: Campaign Object Service
 description: Learn about the Campaign Object Service API for creating PSP configurations with targeting, demand mapping, and automation in Monetize.
-ms.date: 10/22/2025
+ms.date: 10/28/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

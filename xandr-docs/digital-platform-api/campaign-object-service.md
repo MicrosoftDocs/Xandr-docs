@@ -62,7 +62,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 1. Make a `POST` request to [`https://api.appnexus.com/prebid/psp-campaign-objects`](https://api.appnexus.com/prebid/psp-campaign-objects).
     1. Include a top-level [profile object](profile-service.md).
-    1. The profile object must include a `name` string.
+    1. The profile object must include a `name` string an `ad_type_targets` array of objects.
     1. The profile object must contain any desired targeting as documented in the [profile service](profile-service.md).
         > [!NOTE]
         > In the [profile service documenatation](profile-service.md) certain fields, such as `country_targets`, include a corresponding `_action` field, like `country_action`. The _action field can be set to either **include** or **exclude**. If set to **include**, the corresponding object or array (e.g., country_targets) must be populated for the targeting to work properly.
@@ -76,6 +76,14 @@ It is recommended to manage these configurations and their targeting in the [PSP
 {
     "profile": {
         "name": "Test Profile",
+        "ad_type_targets": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+        ],
         "country_action": "include",
         "country_targets": [
             {
@@ -124,13 +132,6 @@ Append the configuration ID as the last component of the URL.
     "name": "Test Configuration",
     "targeting_id": 26831593,
     "enabled": true,
-    "media_types": {
-        "types": [
-            "banner",
-            "video",
-            "native"
-        ]
-    },
     "targeting_metadata": {
         "priority": 18
     },
@@ -168,6 +169,11 @@ Append the configuration ID as the last component of the URL.
     
 {
     "profile": {
+        "ad_type_targets": [
+            {
+                "id": 1
+            }
+        ],
         "country_action": "include",
         "country_targets": [
             {

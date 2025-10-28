@@ -47,10 +47,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 |---|---|---|
 |`profile` | object| Determines which publisher bid requests will initiate the PSP configuration. See [profile service documentation](profile-service.md) for structure and details.|
 |`profile.name`|string| User-facing description of the targeting included in this profile. Differentiates from other sets of targeting used in PSP configurations.|
-|`profile.ad_type_targets`|array of objects|REQUIRED for every POST and PUT to this service. Array of objects including the IDs representing each media type the PSP configuration will send to demand partners. See structure in example POST below.
-1 = banner
-2 = video
-3 = native|
+|`profile.ad_type_targets`|array of objects|REQUIRED for every POST and PUT to this service. Array of objects including the IDs representing each media type the PSP configuration will send to demand partners. See structure in example POST below.<br>1 = banner<br>2 = video<br>3 = native|
 
 #### POST Response
 

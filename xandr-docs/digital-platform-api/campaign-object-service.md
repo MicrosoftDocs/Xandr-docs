@@ -19,7 +19,7 @@ The new PSP campaign objects service:
 - Creates an **insertion order** (if a PSP insertion order does not exist).
 - For each call, creates a **new profile and line item pair**.
 
-These are PSP-specific shell objects that do not deliver but are necessary for the targeting profile to be evaluated by the **Monetize Platform**. Only the profile portion is relevant to the publisher for any `POST`/`PUT`/`PATCH` calls to this PSP service.
+These are PSP-specific shell objects that do not deliver but are necessary for the targeting profile to be evaluated by the **Monetize Platform**. Only the profile portion is relevant to the publisher for any `POST`/`PUT` calls to this PSP service.
 
 It is recommended to manage these configurations and their targeting in the [PSP UI](../monetize/create-a-psp-configuration.md), but for large publishers or those with automation, **API interaction** is required or at least preferred.
 
@@ -27,7 +27,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 1. Make a `POST` request to `https://api.appnexus.com/prebid/psp-campaign-objects` with the desired targeting.
 1. Record the `lineItem.id` value.
-1. Make a `POST`/`PUT`/`PATCH` request to `https://api.appnexus.com/prebid/config` where the `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.
+1. Make a `POST`/`PUT` request to `https://api.appnexus.com/prebid/config` where the `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.
 
 > [!NOTE]
 > **Do not delete the line items or profiles associated with PSP configurations**. That would break the configurations, prevent bid requests from being sent to demand partners, and prevent monetization of the affected inventory through PSP. PSP advertiser and insertion order deletion is blocked at the platform level.
@@ -107,7 +107,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
     1. **profile**: Contains all of the targeting.  
     1. **lineItem**: Includes the `id` value, which will be used as the `targeting_id` in the [PSP Configuration Service](config-service.md).
 
-3. Make a `POST`, `PUT`, or `PATCH` request to [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) [documentation](config-service.md).
+3. Make a `POST` or `PUT` request to [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) [documentation](config-service.md).
    1. `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.  
    1. `targeting_metadata.priority` is an integer **1 through 20**.
         1. Each auction uses one configuration.  

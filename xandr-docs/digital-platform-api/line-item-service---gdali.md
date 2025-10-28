@@ -1,7 +1,7 @@
 ---
 title: Line Item Service - GDALI
 description: Explore the Line Item Service for a Guaranteed Delivery Augmented Line Item (GDALI), which defines your financial relationship with an advertiser.
-ms.date: 10/22/2025
+ms.date: 10/28/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -254,7 +254,7 @@ The `flat_fee` object contains the following fields.
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `lat_fee_status` | enum | **Read-only.** The status of the flat fee disbursement. Possible values: `"pending"`, `"processing"`, `"allocated"`, or `"error"`. |
+| `flat_fee_status` | enum | **Read-only.** The status of the flat fee disbursement. Possible values: `"pending"`, `"processing"`, `"allocated"`, or `"error"`. |
 | `flat_fee_allocation_date` | timestamp | The date when the flat fee revenue is scheduled to be allocated to publishers. <br>**Example:** `"2019-06-08 00:00:00"`.<br>This value will be `null` if the `flat_fee_type` is `daily`. |
 | `flat_fee_adjustment_id` | int | **Read-only.** The ID for any adjustments required to this flat fee. |
 

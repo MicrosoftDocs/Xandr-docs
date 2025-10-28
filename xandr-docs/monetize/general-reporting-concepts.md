@@ -38,8 +38,8 @@ The **Saved reports** table includes the following columns. You can sort the tab
 | Report Interval | The time range used in the saved report. |
 | Date Created | The date when the report was originally created. |
 | Created By | The user who created the report.
-> [!Note:]
-> Reports can’t currently be shared with other team members. |
+  > [!Note:]
+  > Reports can’t currently be shared with other team members. |
 | Report Type | The report type associated with the saved report.|
 | Schedule |You can schedule the report to run at regular intervals by adjusting this setting. The schedule updates automatically after you make your selection.|
 | Expiry |Saved and scheduled reports expire after six months. After the expiration date, you can’t save edits or apply scheduling. To reuse the report configuration, run the report and save the results as a new copy.|

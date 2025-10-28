@@ -1,7 +1,7 @@
 ---
 title: Profile Service Overview
 description: Explore the Profile service, its JSON fields, REST API, parameters with thorough examples.
-ms.date: 10/22/2025
+ms.date: 10/28/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -189,6 +189,7 @@ When multiple targets are set, only inventory that satisfies all targeting crite
 | `inventory_url_allowlist_settings` | object | This object contains fields used to determine how allowlists are applied to line item buying.  Users within Curate can ensure that Allowlists are not enabled to seller deals if Seller Deals & Open Exchange are selected as Supply Strategies  to ensure allowlists are applied specifically to the open exchange. See [Inventory URL Allowlist Settings](#inventory-url-allowlist-settings).|
 | `ads_txt_authorized_only` | Boolean | When `true`, the line item will only target web inventory from authorized sellers of domains that have an ads.txt file.<br><br>**Note:** The `ads_txt_authorized_only` targeting parameter only applies to Open Exchange inventory. It does not affect targeting of deal inventory. It also does not apply to app inventory (since use of an `ads.txt` file for app inventory has not yet been adopted by the industry). For more information, see [Ads.txt FAQ for Buyers](../industry-reference/ads-txt---app-ads-txt-faq-for-buyers.md).<br>**Default:** `false` |
 | `political_district_targets` | array of objects | The political district IDs to target.<br> See [example](#political_district_targets-example).<br>IDs can be fetched using the [Political District Service](political-district-service.md). |
+| `ad_type_targets` | array | Array of objects including the IDs representing different media types. See structure in example below.<br>1 = banner<br>2 = video<br>3 = native<br>4 = audio |
 
 #### `dma_targets` format
 

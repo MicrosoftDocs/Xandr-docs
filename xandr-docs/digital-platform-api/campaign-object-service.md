@@ -1,7 +1,7 @@
 ---
 title: Campaign Object Service
 description: Learn about the Campaign Object Service API for creating PSP configurations with targeting, demand mapping, and automation in Monetize.
-ms.date: 10/22/2025
+ms.date: 10/28/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -19,7 +19,7 @@ The new PSP campaign objects service:
 - Creates an **insertion order** (if a PSP insertion order does not exist).
 - For each call, creates a **new profile and line item pair**.
 
-These are PSP-specific shell objects that do not deliver but are necessary for the targeting profile to be evaluated by the **Monetize Platform**. Only the profile portion is relevant to the publisher for any `POST`/`PUT`/`PATCH` calls to this PSP service.
+These are PSP-specific shell objects that do not deliver but are necessary for the targeting profile to be evaluated by the **Monetize Platform**. Only the profile portion is relevant to the publisher for any `POST`/`PUT` calls to this PSP service.
 
 It is recommended to manage these configurations and their targeting in the [PSP UI](../monetize/create-a-psp-configuration.md), but for large publishers or those with automation, **API interaction** is required or at least preferred.
 
@@ -27,7 +27,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 1. Make a `POST` request to `https://api.appnexus.com/prebid/psp-campaign-objects` with the desired targeting.
 1. Record the `lineItem.id` value.
-1. Make a `POST`/`PUT`/`PATCH` request to `https://api.appnexus.com/prebid/config` where the `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.
+1. Make a `POST`/`PUT` request to `https://api.appnexus.com/prebid/config` where the `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.
 
 > [!NOTE]
 > **Do not delete the line items or profiles associated with PSP configurations**. That would break the configurations, prevent bid requests from being sent to demand partners, and prevent monetization of the affected inventory through PSP. PSP advertiser and insertion order deletion is blocked at the platform level.
@@ -46,6 +46,8 @@ It is recommended to manage these configurations and their targeting in the [PSP
 | Property | Type| Description|
 |---|---|---|
 |`profile` | object| Determines which publisher bid requests will initiate the PSP configuration. See [profile service documentation](profile-service.md) for structure and details.|
+|`profile.name`|string| User-facing description of the targeting included in this profile. Differentiates from other sets of targeting used in PSP configurations.|
+|`profile.ad_type_targets`|array of objects|REQUIRED for every POST and PUT to this service. Array of objects including the IDs representing each media type the PSP configuration will send to demand partners. See structure in example POST below.<br>1 = banner<br>2 = video<br>3 = native|
 
 #### POST Response
 
@@ -60,7 +62,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
 
 1. Make a `POST` request to [`https://api.appnexus.com/prebid/psp-campaign-objects`](https://api.appnexus.com/prebid/psp-campaign-objects).
     1. Include a top-level [profile object](profile-service.md).
-    1. The profile object must include a `name` string.
+    1. The profile object must include a `name` string an `ad_type_targets` array of objects.
     1. The profile object must contain any desired targeting as documented in the [profile service](profile-service.md).
         > [!NOTE]
         > In the [profile service documenatation](profile-service.md) certain fields, such as `country_targets`, include a corresponding `_action` field, like `country_action`. The _action field can be set to either **include** or **exclude**. If set to **include**, the corresponding object or array (e.g., country_targets) must be populated for the targeting to work properly.
@@ -74,6 +76,14 @@ It is recommended to manage these configurations and their targeting in the [PSP
 {
     "profile": {
         "name": "Test Profile",
+        "ad_type_targets": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+        ],
         "country_action": "include",
         "country_targets": [
             {
@@ -107,7 +117,7 @@ It is recommended to manage these configurations and their targeting in the [PSP
     1. **profile**: Contains all of the targeting.  
     1. **lineItem**: Includes the `id` value, which will be used as the `targeting_id` in the [PSP Configuration Service](config-service.md).
 
-3. Make a `POST`, `PUT`, or `PATCH` request to [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) [documentation](config-service.md).
+3. Make a `POST` or `PUT` request to [https://api.appnexus.com/prebid/config](https://api.appnexus.com/prebid/config) [documentation](config-service.md).
    1. `targeting_id` is the `lineItem.id` from the PSP campaign objects service response.  
    1. `targeting_metadata.priority` is an integer **1 through 20**.
         1. Each auction uses one configuration.  
@@ -122,13 +132,6 @@ Append the configuration ID as the last component of the URL.
     "name": "Test Configuration",
     "targeting_id": 26831593,
     "enabled": true,
-    "media_types": {
-        "types": [
-            "banner",
-            "video",
-            "native"
-        ]
-    },
     "targeting_metadata": {
         "priority": 18
     },
@@ -166,6 +169,11 @@ Append the configuration ID as the last component of the URL.
     
 {
     "profile": {
+        "ad_type_targets": [
+            {
+                "id": 1
+            }
+        ],
         "country_action": "include",
         "country_targets": [
             {

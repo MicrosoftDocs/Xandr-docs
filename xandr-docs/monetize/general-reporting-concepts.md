@@ -71,7 +71,7 @@ After selecting **New report**, you can choose a report type. A summary descript
 ### Report Builder Screen
 
 The **Report Builder** screen lets you select dimensions (data categories), metrics (quantitative values), and filters (data scope). You can search for dimensions and metrics using their respective search bars. Select the checkbox next to an item’s name to include it in the report.
-The Monetize Historical Report groups dimensions and metrics by category, making it easier to find and bulk-select related fields.
+The [Monetize Historical Report](monetize-historical-reporting.md) groups dimensions and metrics by category, making it easier to find and bulk-select related fields.
 You can select the data date range from the leftmost option below the report name. For convenience, several predefined time ranges are available. Next to the date range selector is the **Date** grouping option, that lets you view data as cumulative totals or broken down by hour, day, or month.
 
 You can apply filters by selecting the button next to the **Date grouping** option. This opens a side panel where you can choose a dimension to filter. After selecting a dimension, a list of filterable values appears. Select values by clicking their rows. You can include or exclude the selected values in your filter.

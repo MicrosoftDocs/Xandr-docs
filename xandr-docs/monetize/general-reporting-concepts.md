@@ -71,8 +71,6 @@ After selecting **New report**, you can choose a report type. A summary descript
 ### Report Builder Screen
 
 The **Report Builder** screen lets you select dimensions (data categories), metrics (quantitative values), and filters (data scope). You can search for dimensions and metrics using their respective search bars. Select the checkbox next to an item’s name to include it in the report.
-The Curator Analytics Report groups dimensions and metrics by category, making it easier to find and bulk-select related fields.
-Or
 The Monetize Historical Report groups dimensions and metrics by category, making it easier to find and bulk-select related fields.
 You can select the data date range from the leftmost option below the report name. For convenience, several predefined time ranges are available. Next to the date range selector is the **Date** grouping option, that lets you view data as cumulative totals or broken down by hour, day, or month.
 

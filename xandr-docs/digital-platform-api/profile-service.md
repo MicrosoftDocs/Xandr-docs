@@ -191,7 +191,7 @@ When multiple targets are set, only inventory that satisfies all targeting crite
 | `political_district_targets` | array of objects | The political district IDs to target.<br> See [example](#political_district_targets-example).<br>IDs can be fetched using the [Political District Service](political-district-service.md). |
 | `ad_type_targets` | array | Array of objects including the IDs representing different media types. See structure in example below.<br>1 = banner<br>2 = video<br>3 = native<br>4 = audio |
 
-#### `dma_targets` format
+#### `dma_targets` example
 
 ```
 {
@@ -206,7 +206,7 @@ When multiple targets are set, only inventory that satisfies all targeting crite
 }
 ```
 
-#### `domain_targets` format
+#### `domain_targets` example
 
 ```
 {
@@ -331,6 +331,23 @@ When multiple targets are set, only inventory that satisfies all targeting crite
       ]
    }
 }
+```
+### `ad_type_targets` example
+
+```
+{
+    "profile": {
+        "ad_type_targets": [
+            {
+                "id": 1
+            },
+            {
+                "id": 2
+            }
+        ]
+    }
+}
+
 ```
 
 ### Targeting results for `deal_action_include` AND `deal_targets` fields

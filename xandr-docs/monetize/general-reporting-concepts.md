@@ -42,4 +42,4 @@ The **Saved reports** table includes the following columns. You can sort the tab
 | Schedule |You can schedule the report to run at regular intervals by adjusting this setting. The schedule updates automatically after you make your selection.|
 | Expiry |Saved and scheduled reports expire after six months. After the expiration date, you can’t save edits or apply scheduling. To reuse the report configuration, run the report and save the results as a new copy.|
 | Edit |Select this button to open the report builder. The report builder lets you modify report dimensions, metrics, and filters.|
-| Delete |Select this button to delete the saved report.[!Note:] Deleted reports can’t be restored.|
+| Delete |Select this button to delete the saved report.<br>**Note**:<br>Deleted reports can’t be restored.|

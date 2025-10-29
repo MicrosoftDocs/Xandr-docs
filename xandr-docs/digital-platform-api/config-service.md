@@ -313,7 +313,7 @@ Enables the creation of a new configurations object.
 The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
  > [!NOTE]
- > Media type selections are no longer defined in the configuration service. Use the [PSP campaign objects service](campaign-objects-service.md) `ad_type_targets` array to define those values.
+ > Media type selections are no longer defined in the configuration service. Use the [PSP campaign object service's](campaign-object-service.md) `ad_type_targets` array to define those values.
 
 #### Example call using curl
 

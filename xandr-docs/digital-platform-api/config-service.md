@@ -99,20 +99,11 @@ A successful response will return JSON containing the member's cross-partner set
 | `id` | integer | This ID is referred to as `prebid_settings_id` in other endpoints of the API.|
 | `last_modified` | string | The most recent modification date of the configuration. Formatted as date-time. |
 | `last_modified_by` | string | The user who made the last modification to the configuration object.|
-| `media_types` | object | The media types associated with the configurations. For items contained in a media_types object, see the [media types](#media-types) properties table below. |
 | `member_id` | integer | The ID of the member associated with the configurations.|
 | `name` | string | The name of the configuration. |
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `4` line item/targeting profile|
 | `targeting_id` | integer | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
 | `targeting_metadata` | object | Includes modifiers for the targeting object. For details about the items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table. The `targeting_metadata.priority` field is required. |
-
-### Media types
-
-The media type object determines which formats (currently banner, native, and video) are included in the requests to demand partners.
-
-| Property | Type | Description |
-|:---|:---|:---|
-| `types` | array | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
 ### Targeting metadata properties
 
@@ -333,6 +324,9 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 Enables the creation of a new configurations object.
 The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
+[NOTE]!
+>Media type selections are no longer defined in the configuration service. Use the [PSP campaign objects service](campaign-objects-service.md) `ad_type_targets` array to define those values.
+
 #### Example call using curl
 
 ```
@@ -345,7 +339,6 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 |:---|:---|:---|:---|
 | `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#post-demand-partner-configs-properties) table below.|
 | `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
-| `media_types` | object | Required | The media_types associated with the configuration. For items contained in a `media_type` object, see the [media type](#post-media-types) properties table below. |
 | `name` | string | Required | The name of the configuration. |
 | `targeting_id` | integer | Required | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. `targeting_metadata.priority` is required. |
@@ -356,14 +349,6 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 |:---|:---|:---|:---|
 | `name` | string | Required | The [Prebid bidder name](../monetize/prebid-server-premium-demand-partner-integrations.md) for the Demand Partner. |
 | `params` | object | Required | The partner-specific parameters and mapped values. For more information, see the [Demand Partner Params Service](prebid-demand-partner-params-service.md). |
-
-#### POST: Media types
-
-The media type object determines which formats (currently banner, native, and video) are included in the requests to demand partners.
-
-| Property | Type | Scope | Description |
-|:---|:---|:---|:---|
-| `types` | array | Required | Includes the media type(s) eligible for the configuration. Only these types will be passed to demand partners in requests. Values are banner, native, video. |
 
 #### POST: Targeting metadata properties
 

@@ -1,7 +1,7 @@
 ---
 title: Config Service
 description: Learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
-ms.date: 10/22/2025
+ms.date: 10/28/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -216,11 +216,6 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
             "targeting_level_code": 4,
             "targeting_id": 25172737,
             "enabled": 1,
-            "media_types": {
-                "types": [
-                    "video"
-                ]
-            },
             "targeting_metadata": {
                 "priority": 10
             },
@@ -251,13 +246,6 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
             "targeting_level_code": 4,
             "targeting_id": 25175861,
             "enabled": 1,
-            "media_types": {
-                "types": [
-                    "banner",
-                    "video",
-                    "native"
-                ]
-            },
             "targeting_metadata": {
                 "priority": 10
             },
@@ -324,8 +312,8 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 Enables the creation of a new configurations object.
 The `demand_partner_config_params.enabled` field must not be included in any requests to this service. The value is inherited from the status of the partner in the [demand partner service](demand-partner-service.md).
 
-[NOTE]!
->Media type selections are no longer defined in the configuration service. Use the [PSP campaign objects service](campaign-objects-service.md) `ad_type_targets` array to define those values.
+ > [!NOTE]
+ > Media type selections are no longer defined in the configuration service. Use the [PSP campaign objects service](campaign-objects-service.md) `ad_type_targets` array to define those values.
 
 #### Example call using curl
 
@@ -364,13 +352,6 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
     "name": "ConfigName1",
     "targeting_id": 22378872,
     "enabled": 0,
-    "media_types": {
-        "types": [
-            "banner",
-            "video",
-            "native"
-        ]
-    },
     "targeting_metadata": {
         "priority": 20
     },
@@ -395,44 +376,35 @@ A successful response will return the new configuration object.
 #### POST: Example JSON response
 
 ```
-[
-  {
+{
     "id": 196038,
     "member_id": 13859,
     "name": "ConfigName1",
     "targeting_level_code": 4,
     "targeting_id": 22378872,
     "enabled": 1,
-    "media_types": {
-        "types": [
-        "banner",
-        "native",
-        "video"
-      ]
-    },
     "targeting_metadata": {
-      "priority": 20
+        "priority": 20
     },
     "deleted": 0,
     "last_modified_by": "user123",
     "last_modified": "2024-08-22T21:24:40.000Z",
     "demand_partner_config_params": [
-      {
-        "id": 1718542,
-        "member_id": 13859,
-        "prebid_settings_id": 196038,
-        "name": "appnexus",
-        "params": {
-          "placement_id": 123456
-        },
-        "enabled": 1,
-        "deleted": 0,
-        "last_modified_by": "user123",
-        "last_modified": "2024-08-22T21:24:40.000Z"
-      }
+        {
+            "id": 1718542,
+            "member_id": 13859,
+            "prebid_settings_id": 196038,
+            "name": "appnexus",
+            "params": {
+                "placement_id": 123456
+            },
+            "enabled": 1,
+            "deleted": 0,
+            "last_modified_by": "user123",
+            "last_modified": "2024-08-22T21:24:40.000Z"
+        }
     ]
-  }
-]          
+}
                 
 ```
 
@@ -455,13 +427,6 @@ curl -d @config-update.json -X PUT --header "Content-Type: application/json http
     "name": "ConfigName1",
     "targeting_id": 22378872,
     "enabled": 0,
-    "media_types": {
-        "types": [
-            "banner",
-            "native",
-            "video"
-        ]
-    },
     "targeting_metadata": {
         "priority": 20
     },
@@ -500,12 +465,7 @@ curl -d @config-update.json -X PATCH --header "Content-Type: application/json ht
 ```
 {
     "config": {
-        "enabled": 0,
-        "media_types": {
-            "types": [
-                "banner"
-            ]
-        }
+        "enabled": 0
     }
 }
 ```

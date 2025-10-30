@@ -1,7 +1,7 @@
 ---
 title: Profile Service Overview
 description: Explore the Profile service, its JSON fields, REST API, parameters with thorough examples.
-ms.date: 10/28/2025
+ms.date: 10/30/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

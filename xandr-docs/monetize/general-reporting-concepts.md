@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - General Reporting Concepts
 description: Explore reporting concepts, system's date/time handling, efficient report requests, data types/operations, and diverse data delivery methods.
-ms.date: 10/28/2025
+ms.date: 10/30/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan

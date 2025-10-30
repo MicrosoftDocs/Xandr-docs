@@ -1,7 +1,7 @@
 ---
 title: Config Service
 description: Learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
-ms.date: 10/28/2025
+ms.date: 10/30/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

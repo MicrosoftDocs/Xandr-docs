@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Demand Partner Integrations
 description: In this article, find a list of all demand partners currently available through Prebid Server Premium (PSP).
-ms.date: 10/21/2025
+ms.date: 11/03/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -26,11 +26,12 @@ Additional resources on demand partners:
 | 1Accord      | 1accord    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | 152Media     | 152media   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | 33across | 33across | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
+| 360playvid | 360playvid | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Aax | aax | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Aceex | aceex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | AcuityAds | acuityads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Addigi       | addigi     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
-| Adagio       | adagio     | No              | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  |
+| Adagio       | adagio     | Yes              | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  | **App**: Yes <br>**Site**: No  |
 | Adinify      | adinify    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Admatic GMBH | admeticde  | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | AdPort       | adport     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -78,6 +79,7 @@ Additional resources on demand partners:
 | Apacdex | apacdex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Applogy | applogy | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Appstock | appstock | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| AppStockSSP | appStockSSP | No | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Appush | appush | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Audience Network | audienceNetwork | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No |
 | Automatad | automatad | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
@@ -119,6 +121,7 @@ Additional resources on demand partners:
 | Connatix | connatix | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | ConnectAd | connectad | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
 | Consumable | consumable | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
+| Contxtful | contxtful | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Conversant | conversant | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Copper 6 | copper6 | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Copper 6 SSP | copper6ssp | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -168,6 +171,7 @@ Additional resources on demand partners:
 | iMedia Digital Services (IMDS) | imds | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Insticator | insticator | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Mediago | mediago | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: Yes |
+| MediaYo | mediayo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Improve Digital | improvedigital | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Index Exchange | ix | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | InfyTV | infytv | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
@@ -218,7 +222,7 @@ Additional resources on demand partners:
 | MobFox_PB | mobfoxpb | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | MobileFuse | mobilefuse | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No |
 | Motorik | motorik | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
-| Magnite    | magnite    | No              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| Magnite    | magnite    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | MadSense   | madsense   | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No   |
 | MarkApp     | markapp    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Mobkoi      | Mobkoi     | Yes              | **App**: No <br>**Site**: Yes  | **App**: No <br>**Site**: No   | **App**: No <br>**Site**: No   |
@@ -227,6 +231,7 @@ Additional resources on demand partners:
 | NetAddiction| netaddiction | Yes            | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Nexx360     | nexx360    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Nano Interactive | nanointeractive | Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
+| Nativery | nativery | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes |
 | Nativo | nativo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | NextMillenium | nextmillenium | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | NinthDecimal | ninthdecimal | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
@@ -266,6 +271,7 @@ Additional resources on demand partners:
 | RhythmOne | rhythmone | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Rich Audience | richaudience | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Rise | rise | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
+| RobustApps | robustApps | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | RocketLab | rocketlab | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Roulax | roulax | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | RTBHouse | rtbhouse | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
@@ -307,6 +313,7 @@ Additional resources on demand partners:
 | TeqBlaze | teqblaze | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Telaria | telaria | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Telaria_Split | telaria_split | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
+| The Trade Desk |thetradedesk | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | TheAdX | theadx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | TheMediaGrid | grid | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | TPMN | tpmn | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -317,6 +324,7 @@ Additional resources on demand partners:
 | Trustedstack | trustedstack | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | TGM        | tgm        | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Tredio     | tredio     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| ttd     | ttd     | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Ucfunnel | ucfunnel | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Undertone | undertone | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Unicorn | unicorn | Yes | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
@@ -333,6 +341,7 @@ Additional resources on demand partners:
 | Vox | vox | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | VRTCAL Markets | vrtcal | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Vungle (Liftoff) | vungle | Yes | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: Yes |
+| Xapads | xapads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Xeworks | xeworks | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | XTRM QB | xtrmqb | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Yobee     | yobee    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |

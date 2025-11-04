@@ -1,6 +1,6 @@
 ---
 title: Audit Best Practices
-description: In this article, learn about the auction procedure step by step.
+description: When working with Xandr audits, there are a couple of best practices to ensure that your creatives display properly during the audit process.
 ms.date: 11/04/2025
 ms.service: publisher-monetization
 ms.subservice: bidder

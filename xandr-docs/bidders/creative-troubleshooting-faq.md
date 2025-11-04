@@ -93,7 +93,7 @@ If none of the above steps work, you can test to see if the problem is on our en
 
 **Allowing our audit IPs and domains**
 
-For more information on why your creative may not be displaying during audit, see [Audit best practices](audit-best-practices.md).
+For more information on why your creative may not be displaying or audits may be failing, see [Audit best practices](audit-best-practices.md).
 
 <!--
 Another reason why the creative may not be displaying is the creative contains geotargeting elements that control where the creative is allowed to render. If this is the case, you will have to allow our Audit IPs and Domains:

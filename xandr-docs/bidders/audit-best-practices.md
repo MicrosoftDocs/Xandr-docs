@@ -13,7 +13,7 @@ When working with Xandr audits, there are a couple of best practices to ensure t
 
 **Allowlist - IPs and domains**
 
-A creative may fail to display if it includes geotargeting restrictions that limit where it can render. In such cases, you’ll need to allow our audit IPs and domains to ensure proper review and rendering.
+In order to ensure proper review, allow list our audit IPs and domains. This is also important for creative display, because a creative may fail to display if it includes geotargeting restrictions that limit where it can render.
 
 - LA servers:
   - Input 68.67.139.192 /26 (netblock)

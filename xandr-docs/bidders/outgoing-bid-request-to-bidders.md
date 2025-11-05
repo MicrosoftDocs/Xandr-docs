@@ -131,7 +131,7 @@ For banner impressions, we support the following fields:
 | `id` | string | Specifies a unique identifier for the banner object. Useful for tracking multiple banner objects (such as with a companion banner array). Typically, the first banner in the array is `1` and subsequent objects increment from there. Currently hardcoded to `1`. |
 | `btype` | array of integers | Specifies the banner creative types to block. Refer to section 5.2 of the IAB specification for a list of types. |
 | `battr` | array of integers | Specifies the banner creative attributes to block. Refer to section 5.3 of the IAB specification for a list of attributes. |
-| `pos` | integer | Specifies the position of the banner on the screen.<br> - `0`: Unknown (default)<br> - `1`: Above the fold<br> - `3`: Below the fold |
+| `pos` | integer | Specifies the video ad position on screen. <br> - `0`: Unknown (default).<br> - `1`: Above The Fold.<br> - `2`: Locked (i.e., fixed postion) <br> - `3`: Below The Fold <br> - `4`: Header <br> - `5`: Footer <br> - `6`: Sidebar <br> - `7`: Fullscreen |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported. Refer to section 5.6 of the IAB specification for a list of API frameworks. |
 | `format` | array of objects | The `format` objects that represent the banner sizes permitted. See [Format Object](#format-object) below. <br><br>**Note:** The banner sizes called out in the format object are not representative of allowed sizes via deals. |
 | `ext` | object | Not supported. |
@@ -160,6 +160,7 @@ For video impressions, we support the following fields:
 | `battr` | array of integers | Specifies the video creative attributes to block. Refer to section 5.3 of the IAB specification for a list of attributes. |
 | `minbitrate` | integer | The minimum bit rate, in kilobytes per second. |
 | `maxbitrate` | integer | The maximum bit rate, in kilobytes per second. |
+| `pos` | integer | Specifies the video ad position on screen. <br> - `0`: Unknown (default).<br> - `1`: Above The Fold.<br> - `2`: Locked (i.e., fixed postion) <br> - `3`: Below The Fold <br> - `4`: Header <br> - `5`: Footer <br> - `6`: Sidebar <br> - `7`: Fullscreen |
 | `playbackmethod` | array of integers | Specifies the allowed playback methods. If not specified, all are assumed to be allowed. Currently supported values are:<br>- `1`: Autoplay, sound on.<br> - `2`: Autoplay, sound off.<br> - `3`: Click to play.<br> - `4`: Mouse over to play. |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported. Currently supported values are:<br> - `1`: VPAID 1.0<br> - `2`: VPAID 2.0<br> - `3`: MRAID-1<br> - `4`: ORMMA<br> - `5`: MRAID-2<br> - `6`: MRAID-3<br> - `7`: OMID-1 |
 | `protocols` | array of integers | Array of supported video protocols. Currently supported values are:<br> - `1`: VAST 1.0<br> - `2`: VAST 2.0<br> - `3`: VAST 3.0<br> - `4`: VAST 1.0 Wrapper<br> - `5`: VAST 2.0 Wrapper<br> - `6`: VAST 3.0 Wrapper<br> - `7`: VAST 4.0<br> - `8`: DAAST 1.0 |
@@ -449,7 +450,7 @@ Xandr supports the following fields in the Content object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `genre` | string | Genre that best describes the content (e.g., rock, pop, etc). |
+| `genre` | string | Genre that best describes the content (e.g., rock, pop, etc). <br> **NOTE:** Beginning on or after June 30th, 2025, Monetize sends both the standardized mapped values as well as the unstandardized raw values that we receive from partners in a unified comma-delimited list for this field. This will be formatted as [mapped value], [raw value]. |
 | `id` | string | ID uniquely identifying the content. |
 | `language` | string | Content language using ISO-639-1-alpha-2. |
 | `ext` | object | Placeholder for exchange-specific extensions to OpenRTB. |
@@ -466,7 +467,7 @@ Xandr supports the following fields in the Content object:
 | `prodq`  | integer | Production quality. Refer to List 5.11 in the IAB specification. |
 | `videoquality` | integer | **Deprecated** in favor of prodq. Video quality. Refer to List 5.11 in the IAB specification. |
 | `context` | integer | Type of content (game, video, text, etc.). Refer to List 5.16  in the IAB specification. |
-| `contentrating` | string | Content rating (e.g., MPAA). |
+| `contentrating` | string | Content rating (e.g., MPAA). <br> **NOTE:** Beginning on or after June 30th, 2025, Monetize sends both the standardized mapped values as well as the unstandardized raw values that we receive from partners in a unified comma-delimited list for this field. This will be formatted as [mapped value], [raw value]. |
 | `userrating`  | string  | User rating of the content (e.g., number of stars, likes, etc.). |
 | `qagmediarating`  | integer | Media rating per IQG guidelines. Refer to List 5.17 in the IAB specification. |
 | `keywords`  | string  | Comma separated list of keywords describing the content. |
@@ -481,7 +482,7 @@ Xandr supports the following field in the ext object:
 
 | Field | Type | Description |
 |:---|:---|:---|
-| `network` | string | The top-level parent company or, where relevant, a sub-brand which owns multiple TV-like channels, d2c content brands, or digital properties on which the content is being viewed. |
+| `network` | string | The top-level parent company or, where relevant, a sub-brand which owns multiple TV-like channels, d2c content brands, or digital properties on which the content is being viewed. <br> **NOTE:** Beginning on or after June 30th, 2025, Monetize sends both the standardized mapped values as well as the unstandardized raw values that we receive from partners in a unified comma-delimited list for this field. This will be formatted as [mapped value], [raw value]. |
 
 ### App extension object
 

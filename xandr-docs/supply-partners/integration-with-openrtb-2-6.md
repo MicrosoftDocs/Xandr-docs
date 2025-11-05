@@ -119,7 +119,7 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | Attribute | Type   | Description                                                                 |
 |-----------|--------|-----------------------------------------------------------------------------|
 | id | string | A unique identifier assigned by the publisher. This may not be unique across all supply sources. |
-| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](../bidders/outgoing-bid-request-to-bidders.md).                 |
+| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **IMPORTANT**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](../bidders/outgoing-bid-request-to-bidders.md). <br> **NOTE:** Beginning on or after June 30th, 2025, Monetize sends both the standardized mapped values as well as the unstandardized raw values that we receive from partners in a unified comma-delimited list for this field. This will be formatted as [mapped value], [raw value]. |
 | domain| string | The primary domain of the network (e.g., “abc.com” for the network ABC). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
 
 ## Object: Channel
@@ -144,6 +144,13 @@ This object contains a single user identifier provided as part of extended ident
 | --- | --- | --- |
 | `id` | string | The identifier for the user. |
 | `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+
+## Object: Bid
+OpenRTB 2.6 includes the additional capability to declare the taxonomy in use.
+
+| **Field** | **Type** | **Description** |
+|:---|:---|:---|
+| `dur` | integer | Duration of the video or audio creative in seconds. |
 
 
 ## Updated field locations

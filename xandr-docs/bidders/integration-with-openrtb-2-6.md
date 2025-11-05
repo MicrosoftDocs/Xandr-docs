@@ -112,7 +112,7 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | Attribute | Type   | Description                                                                 |
 |-----------|--------|-----------------------------------------------------------------------------|
 | id | string | A unique identifier assigned by the publisher. This may not be unique across all supply sources. |
-| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md).                 |
+| name | string | Network the content is on (e.g., a TV network like “ABC”). <br> **Note**: This field was previously supported through an extension of the **content object** in older OpenRTB versions. For more details, see [OpenRTB 2.4 documentation](outgoing-bid-request-to-bidders.md). <br> **NOTE:** Beginning on or after June 30th, 2025, Monetize sends both the standardized mapped values as well as the unstandardized raw values that we receive from partners in a unified comma-delimited list for this field. This will be formatted as [mapped value], [raw value].|
 | domain| string | The primary domain of the network (e.g., “abc.com” for the network ABC). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
 
 ## Object: Channel
@@ -147,6 +147,7 @@ OpenRTB 2.6 includes the additional capability to declare the taxonomy in use.
 | **Field** | **Type** | **Description** |
 |:---|:---|:---|
 | `cattax` | integer; default 1 | **NOTE:** Available September 2025. If your ad is political, you need to declare. See [Monetize Creative Standards](../monetize/creative-standards.md) for more details regarding required EU declaration beginning Fall 2025. <br> The taxonomy in use. <br> **NOTE** IAB Content Taxonomy v1.0 is assumed if the `cat` field is present without `cattax`. Otherwise, the mapping is as such: <br> - 1 - IAB Content Taxonomy v1.0 <br> - 2 - IAB Content Taxonomy v2.0 <br> - 3 - IAB Ad Product Taxonomy v1.0 <br> - 5 - IAB Content Taxonomy v2.1 <br> - 6 - IAB Content Taxonomy v2.2 <br> - 7 - IAB Content Taxonomy v3.0 <br> - 8 - IAB Ad Product Taxonomy v2.0 <br> - 9 - IAB Content Taxonomy v3.1|
+| `dur` | integer | Duration of the video or audio creative in seconds. |
 
 
 ## Updated field locations

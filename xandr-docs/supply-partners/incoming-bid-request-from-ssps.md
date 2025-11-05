@@ -146,7 +146,7 @@ For banner impressions, Xandr supports the following fields:
 | `h` | integer | (Recommended) Specifies the exact height of the banner in pixels. Must be set if the placement object in Xandr does not have a height set. |
 | `btype` | array of integers | Specifies the banner creative types to block. Refer to section 5.2 of the IAB specification for a list of types. |
 | `battr` | array of integers | Specifies the banner creative attributes to block. Refer to section 5.3 of the IAB specification for a list of attributes. |
-| `pos` | integer | Specifies the position of the banner on the screen. Currently supported values are:<br>`0`: Unknown (default)<br>`1`: Above the fold<br>`3`: Below the fold |
+| `pos` | integer | Specifies the video ad position on screen. <br> - `0`: Unknown (default).<br> - `1`: Above The Fold.<br> - `2`: Locked (i.e., fixed postion) <br> - `3`: Below The Fold <br> - `4`: Header <br> - `5`: Footer <br> - `6`: Sidebar <br> - `7`: Fullscreen |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. Parsed, but not used. If an API is not explicitly listed, vpaid support is deduced from mime types sent:  VPAID 1 and 2 would be allowed for javascript and flash mimes. Refer to section 5.6 of the IAB specification for a list of API frameworks. |
 | `format` | object array | Array of format objects representing the banner sizes permitted. If none are specified, then use of the `h` and `w` attributes is highly recommended. |
 
@@ -178,7 +178,7 @@ For video impressions, Xandr supports the following fields:
 | `minbitrate` | integer | Specifies the minimum bit rate, in kilobytes per second. If specified, only return creatives having at least one media file within the appropriate bit range. |
 | `maxbitrate` | integer | Specifies the maximum bit rate, in kilobytes per second. If specified, only return creatives having at least one media file within the appropriate bit range. |
 | `playbackmethod` | array of integers | Specifies the allowed playback methods. If not specified, all are assumed to be allowed. Currently supported values are:<br>`1`: Autoplay, sound on<br>`2`: Autoplay, sound off<br>`3`: Click to play<br>`4`: Mouse over to play |
-| `pos` | integer | Specifies the position of the video on the screen. Currently supported values are:<br>`0`: Unknown (default)<br>`1`: Above the fold<br>`3`: Below the fold |
+| `pos` | integer | Specifies the video ad position on screen. <br> - `0`: Unknown (default).<br> - `1`: Above The Fold.<br> - `2`: Locked (i.e., fixed postion) <br> - `3`: Below The Fold <br> - `4`: Header <br> - `5`: Footer <br> - `6`: Sidebar <br> - `7`: Fullscreen |
 | `companionad` | array of objects | Specifies an array of banner objects if companion ads are available. See [Banner Object](#banner-object) above. |
 | `api` | array of integers | Specifies the supported API frameworks for this impression. If an API is not explicitly listed, it is assumed not to be supported. Currently supported values are:<br>`1`: VPAID 1.0<br>`2`: VPAID 2.0<br>`3`: MRAID-1<br>`4`: ORMMA<br>`5`: MRAID-2<br>`6`: MRAID-3<br>`7`: OMID-1 |
 | `companiontype` | array of integers | Specifies the VAST companion ad types. Recommended if one or more companionad objects are included. Currently supported values are:<br>`1`: Static resource<br>`2`: HTML resource<br>`3`: iframe resource |

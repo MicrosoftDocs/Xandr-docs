@@ -193,7 +193,7 @@ You can create a new deal from scratch, from a template, or by duplicating an ex
 
 1. Choose the type of deal you want to create:
 
-    - [Regular deal](create-a-simplified-deal-line-item.md)
+    - [Standard deal](create-a-simplified-deal-line-item.md)
 
     - [Guaranteed deal](create-a-simplified-programmatic-guaranteed-deal.md)
 

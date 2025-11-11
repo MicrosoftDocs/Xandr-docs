@@ -193,9 +193,9 @@ You can create a new deal from scratch, from a template, or by duplicating an ex
 
 1. Choose the type of deal you want to create:
 
-    - Regular deal
+    - [Regular deal](create-a-simplified-deal-line-item.md)
 
-    - Guaranteed deal
+    - [Guaranteed deal](create-a-simplified-programmatic-guaranteed-deal.md)
 
     - [Code-mapped deal](create-a-code-mapped-deal.md)
 
@@ -219,7 +219,7 @@ If the deal doesn’t appear immediately, select **Refresh** in the upper-right 
    
 ### Save and duplicate
 
-After saving a deal, select** Save and duplicate** to create another deal prepopulated with the current deal’s details.
+After saving a deal, select ** Save and duplicate** to create another deal prepopulated with the current deal’s details.
 Repeat as needed to streamline bulk deal creation.
 
 ## Edit Deals and Side Pane
@@ -316,4 +316,5 @@ Drag and drop from the list of selected columns to set the display order in the 
 
 - [Microsoft Monetize – Impression funnel](impression-funnel.md)  
 - [Troubleshooting reports](troubleshooting-reports.md)  
-- [Microsoft Monetize – Sample bid requests](sample-bid-requests.md) 
+- [Microsoft Monetize – Sample bid requests](sample-bid-requests.md)
+- [Deal Archival](automated-deal-archival.md) 

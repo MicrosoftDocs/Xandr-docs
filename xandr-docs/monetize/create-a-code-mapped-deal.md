@@ -27,7 +27,7 @@ For this use case, no additional targeting settings are required. All targeting 
 
 - You can also create a **Code-mapped deal** from an existing deal by selecting Use as template in the Deals grid.
 
-For detailed steps, see [Create a code-mapped deal from a template](#Create-a-code-mapped-deal-from-a-template) section below.
+For detailed steps, see [Create a code-mapped deal from a template](#create-a-code-mapped-deal-from-a-template) section below.
 
 ## Create a Code-Mapped Deal from scratch
 

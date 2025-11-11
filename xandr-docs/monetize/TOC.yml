@@ -208,8 +208,12 @@
     items:
     - name: Overview
       href: selling-deals.md
+    - name: Deals Screen
+      href: deals-screen-in-microsoft-monetize.md
     - name: Create a Custom Deal
       href: create-a-custom-deal.md
+    - name: Create a Code-Mapped Deal
+      href: create-a-code-mapped-deal.md
     - name: Override Ad Quality Settings on a Deal
       href: override-ad-quality-settings-on-a-deal.md
     - name: Manage Your Deals with Buyers

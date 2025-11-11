@@ -2,10 +2,10 @@
 title: Microsoft Monetize - Release Notes
 description: Read about the latest updates to Monetize.
 ms.topic: release-notes
-ms.date: 10/21/2025
+ms.date: 11/11/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 
@@ -13,6 +13,7 @@ ms.author: shsrinivasan
 
 Read about the latest updates to Monetize.
 
+- [November 11, 2025: New Deals Screen in Microsoft Monetize](release-notes-2025-11-11.md)
 - [October 22, 2025: Automated Deal Archival](release-notes-20251022.md)
 - [September 23, 2025: Unified Sign-In with Microsoft account](release-notes-20250923.md)
 - [July 25, 2025 - Forecast Builder in Microsoft Monetize](release-notes-20250725.md)
@@ -25,9 +26,3 @@ Read about the latest updates to Monetize.
 - [April 10, 2025: Copilot in Microsoft Monetize](release-notes-20250410.md)
 - [March 10, 2025: Change Log History Tool](release-notes-20250310.md)
 - [January 09, 2025: Prebid Server Premium Flexible Configurations](release-notes-20250109.md)
-- [November 26, 2024: Enhanced Blocked Bid Value Metric](release-notes-20241126.md)
-- [October 18, 2024: Household Attribution](release-notes-20241018.md)
-- [September 23, 2024: Open Beta for Native Asset Generation](release-notes-20240923.md)
-- [November 16, 2023: Monetize Insights, Total Revenue](release-notes-20231116.md)
-- [April 11, 2023: GA for Creative Manager](release-notes-20230411.md)
-- [January 9, 2023: Open Beta for Monetize Insights, Bid Rejections](release-notes-20230109.md)

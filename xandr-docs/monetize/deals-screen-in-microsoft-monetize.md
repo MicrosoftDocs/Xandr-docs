@@ -197,7 +197,7 @@ You can create a new deal from scratch, from a template, or by duplicating an ex
 
     - Guaranteed deal
 
-    - Code-mapped deal (see Code-mapped deals for details)
+    - [Code-mapped deal](create-a-code-mapped-deal.md)
 
 1. Complete all required fields.
 

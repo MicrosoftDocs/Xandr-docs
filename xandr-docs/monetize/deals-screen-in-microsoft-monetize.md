@@ -219,7 +219,7 @@ If the deal doesn’t appear immediately, select **Refresh** in the upper-right 
    
 ### Save and duplicate
 
-After saving a deal, select ** Save and duplicate** to create another deal prepopulated with the current deal’s details.
+After saving a deal, select **Save and duplicate** to create another deal prepopulated with the current deal’s details.
 Repeat as needed to streamline bulk deal creation.
 
 ## Edit Deals and Side Pane

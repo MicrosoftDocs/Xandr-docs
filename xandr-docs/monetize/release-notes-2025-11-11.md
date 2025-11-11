@@ -10,7 +10,7 @@ ms.author: rupambaruah
 
 # New Deals Screen in Microsoft Monetize
 
-**Release date:** November 11, 2025  
+**Release date:** November 12, 2025  
 **Product:** Microsoft Monetize – Deals screen  
 
 ## Overview

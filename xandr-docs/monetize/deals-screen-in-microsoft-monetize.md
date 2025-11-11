@@ -1,7 +1,7 @@
 ---
 title: Deals screen in Microsoft Monetize
 description: In this article, find information on Deals acreen in Microsoft Monetize and its features along with technical details.
-ms.date: 11/10/2025
+ms.date: 11/11/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah

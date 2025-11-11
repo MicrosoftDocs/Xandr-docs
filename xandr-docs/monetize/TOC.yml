@@ -1730,6 +1730,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: November 12, 2025 - New Deals Screen in Microsoft Monetize
+    href: release-notes-2025-11-11.md
   - name: October 22nd, 2025 - Automated Deal Archival
     href: release-notes-20251022.md
   - name: September 23rd, 2025 - Unified Sign-In with Microsoft account

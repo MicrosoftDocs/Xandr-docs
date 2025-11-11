@@ -92,7 +92,7 @@ For detailed steps, see [Create a code-mapped deal from a template](#Create-a-co
     > [!NOTE]
     > The price you enter represents the gross amount. To estimate your actual earnings, factor in the revenue fee specified in your Microsoft Advertising contract.
 
-- **Start date**: Enter the date when the deal should begin.
+- **Start date**: Enter the date when the deal should begin. By default, the start date is set as the time the deal is being created.
 
 - **End date**: (Optional) Enter the deal’s end date. If no end date is set, the deal remains active until you cancel it.
 
@@ -159,7 +159,7 @@ The summary panel on the right side of the screen provides a real-time overview 
 
 ## Create a code-mapped deal from a template
 
-You can create a new deal using an existing deal as a template.
+You can create a new deal using an existing code-mapped deal as a template.
 
 1. Search for the deal you want to use as a template.
 

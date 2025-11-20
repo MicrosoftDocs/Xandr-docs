@@ -85,5 +85,5 @@ The data marketplace contains the data of a large number of partners which suppo
 > [!NOTE]
 >
 > - When multiple data providers are used, Microsoft will charge the buyer the maximum of all data provider charges. For information regarding how each data provider charges for multiple segment usage, contact your data provider or Microsoft representative.
-> - Data rates are not inclusive of applicable sales, use, gross receipts, exercise, goods and services, value added, and other transaction-based taxes. Such applicable taxes will be reflected when your data costs are calculated.
+> - The amounts payable (e.g. Data Rates etc.) pursuant to this Agreement do not include any sales, value added, goods and services or similar taxes (Transaction Taxes) and each party shall pay to the other party any Transaction Taxes that are owed by that party and which are legally permissible by law to be collected.
 > - If a Data Provider you use is not on this list, contact your Microsoft Account Manager.

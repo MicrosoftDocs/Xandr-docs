@@ -91,7 +91,7 @@ For more information about how quickly report data is processed, see [Availabili
 | Column | Description |
 |--|--|
 | Imps | The number of impressions where a cost was incurred for third-party vendor data. If multiple third-party vendors were used for a single impression, that impression will be listed for each third-party vendor. |
-| Sales Tax | The amount of sales tax collected. This field is only populated when the buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Microsoft Advertising is required to collect this tax by the relevant local state regulator. |
+| Transaction Tax | Applicable sales, value added, goods and services or similar taxes (Transaction Taxes) will be applied to your transactions with Microsoft based on the Customer’s Account Business Location provided in the onboarding experience. |
 | Vendor Costs | The total costs, including but not limited to segment data costs,and feature costs. |
 
 > [!WARNING]

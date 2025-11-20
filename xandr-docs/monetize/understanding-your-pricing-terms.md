@@ -25,15 +25,15 @@ Some pricing rates in your Microsoft Advertising contract (e.g., BASC, SASC, ad 
 
 ## Near-real time tiered pricing (for clients who opt-in)
 
-For clients who have opted into Near-Real Time Tiered Pricing, the discounted pricing rates will be applied immediately before or just as you reach the contracted threshold. This will allow you to apply the savings of these pricing rates in near-real time:
+For clients who have opted into Near-Real Time Tiered Pricing, the discounted pricing rates will be applied immediately before or just as you reach the contracted threshold. This will allow you to apply the savings of these pricing rates in near-real time directly to your media cost budget.
 
 - (for buyers) directly to your media cost budget (instead of having them credited to the Invoice that is generated at the end of the month).
 - (for sellers) directly to your seller revenue (without waiting for an adjustment on your Seller Statement or Invoice).
 
 > [!NOTE]
-> If there is any discrepancy between when you actually reached the contracted threshold and when our system applied the discounted rate, you may see a credit for a pricing adjustment on your Invoice or additional funds on your Seller Statement or Invoice.
+> If there is any discrepancy between when you actually reached the contracted threshold and when our system applied the discounted rate, you may see a credit for a pricing adjustment on your Invoice.
 
-Contact your Microsoft Advertising representative if you want to opt-in for Near-Real Time Tiered Pricing.
+Contact your Microsoft Advertising representative if you want to opt-in for Near-Real Time Tiered Pricing. 
 
 ## Related topics
 

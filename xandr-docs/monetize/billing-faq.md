@@ -12,18 +12,19 @@ ms.author: shsrinivasan
 
 ## Finance charges
 
-The finance fee no longer applies if you have signed a new contract with Microsoft Advertising and have cutover. 
+The finance fee no longer applies if you have signed a new contract with Microsoft Advertising and have cutover.
 
 ### How is the finance charge calculated?
 
-On the date your payment is due, the finance fee percentage (specified in your Microsoft Advertising contract) is multiplied by any outstanding past due balances on the account.
+On the date your payment is due, the finance fee percentage (specified in your Xandr contract) is multiplied by any outstanding past due balances on the account.
 
 > [!NOTE]
 > It can take several business days for your payment to be applied. When paying by wire transfer or ACH, your bank may require a several business days to send a bank receipt. In addition, the Client Finance team may require up to 2 business days to apply your payment. It is therefore recommended that you submit payments a few days before the due date so as not to incur finance charges.
 
 ### Is the finance charge cumulative?
-
 No. The finance charge is calculated using the amount currently past due (excluding any previously assessed finance charges).
+
+
 
 ## Credits
 
@@ -32,9 +33,10 @@ No. The finance charge is calculated using the amount currently past due (exclud
 If you have over-paid, Microsoft Advertising can:
 
 - send a refund via ACH/Wire payment or
+
 - apply this credit to an outstanding invoice of your choosing
 
-To notify us that you have overpaid and specify whether you prefer a refund or a credit, login to our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) and navigate to the **Client Finance** section to submit a ticket. Microsoft Advertising will then ensure that your credit is applied as desired and processed as quickly as possible.
+To notify us that you have overpaid and specify whether you prefer a refund or a credit, login to our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/), select Contact Support and navigate to the Client Finance section to submit a ticket. Microsoft Advertising will then ensure that your credit is applied as desired and processed as quickly as possible.
 
 ### When are credits processed? When will I receive a separate credit memo as opposed to an itemized credit on my invoice?
 
@@ -61,7 +63,7 @@ See the [relevant section of Reconciling your Invoice](reconciling-your-invoice-
 
 ### Why am I being charged a minimum when my overall spend is above my monthly minimum commitment?
 
-You minimum monthly commitment may be met via service fees, deductions or revenue share. Cost of media purchased (a component of total spend) does not contribute to meeting your monthly minimum. Please consult your contract for details.
+There are 2 types of minimums: A monthly minimum met via service fees, deductions or revenue share, and a minimum based on the cost of media purchased. Please consult your contract for details. 
 
 ### How do I determine the amount that Microsoft Advertising will pay me for the inventory I sold?
 
@@ -88,13 +90,13 @@ Part of the Microsoft Advertising platform's role is to track, consolidate, and 
 
 ### How do I add or remove recipients from the invoice and statement distribution lists?
 
-To request changes, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) and navigate to the "Client finance" section and select "Update of customer information" as the topic. The distribution lists will be updated for the following month's invoice cycle. 
+To request changes to your existing Xandr contract, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) and navigate to the "Client finance" section and select "Update of customer information" as the topic. The distribution lists will be updated for the following month's invoice cycle.
 
 If you have signed a new Microsoft Advertising contract and would like to request changes, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com). The distribution lists will be updated for the following month's invoice cycle.
 
 ### Can I update the billing name that appears on the invoice and have it resent?
 
-Yes. To request an entity name change, use the [Business Support page](https://support.ads.microsoft.com/) (be sure to select "My Account Questions" as the **Request Type**) to enter your new billing name and/or address and provide a reason for the change.
+Yes. To request an entity name change to your existing Xandr contract, use the [Business Support page](https://support.ads.microsoft.com/) be sure to select "My Account Questions" as the Request Type) to enter your new billing name and/or address and provide a reason for the change.
 
 If you have signed a new Microsoft Advertising contract and would like to request an entity name change, please send an email to [gfsmastr@microsoft.com](mailto:gfsmastr@microsoft.com) with the reason for the change.
 
@@ -125,15 +127,33 @@ You can purchase data through Microsoft Advertising or directly from your data p
 
 ### How can I set up netting if we buy and sell through Microsoft Advertising?
 
-Netting is offered to clients who buy and sell with Microsoft Advertising. Clients can then either:
+Netting is offered to clients who buy and sell with Microsoft Advertising. Clients can then either: 
 
 - apply the amounts due in invoices to their platform revenue and be paid the difference (e..g, for clients with sell-side revenue that exceeds their buy-side invoices) or
-- apply their revenue to their invoices and then pay what is left on the invoice (e.g., for clients with buy-side costs that exceed their sell-side revenue)
+- apply their revenue to their invoices and then pay what is left on the invoice (e.g., for clients with buy-side costs that exceed their sell-side revenue) 
 
-If you would like to enable monthly netting on your account, please submit a request through our  our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/). To learn more about netting, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
+If you would like to enable monthly netting on your account, please submit a request through our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/). To learn more about netting, see [Understanding Your Seller Statement](understanding-your-seller-statement.md).
 
-If you are a customer who has migrated to a new Microsoft Advertising contract, please note that, as Invest and Monetize now have separate contracts and invoices, netting will be discontinued. You will need to review both invoices.
+If you are a customer that has migrated to a new Microsoft Advertising contract, please note that netting will be discontinued.
 
 ### Why was I suspended and when will I get paid?
 
 Reasons for account suspension should be discussed with your Account Manager. Client Finance can help you determine the amount you will be paid. It generally requires one month to analyze the account and net out anything that is still owed to Microsoft Advertising (not including finance fees). Once that occurs, Microsoft Advertising will pay any outstanding liability owed to you. Be sure to create a case in our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) with your inquiry.
+
+###  How can I access historical billing documents (e.g., Invoices, Activity Statements, Tax Invoice, Remittance Statements and Pricing)? 
+To access the Billing tab in Microsoft Monetize, a user must have the Finance Observer role. Ensure the user account is created in Monetize, then follow the steps below to assign the role:
+- Navigate to the appropriate Seat ID in the Microsoft Monetize platform. 
+- From the **Actions** menu, select **View Users**
+- Locate and select the user, then choose the Edit (pencil) icon in the **User Details** section.
+- Select the **Roles & Permissions** tab.
+- From the role dropdown, select **Finance Observer** to extend the required permissions.
+
+### Where can I find historical billing documents (e.g., Invoices, Activity Statements, Tax Invoice, Remittance Statements and Pricing)?
+You can locate historical billing documents by following the below steps:
+- Once logged into Monetize, hover over “Network” on the far left menu option. It will pop out a list of options to select from. Select “Billing” 
+- Once on the Billing page, you will see the below screen with tabs for “Credit Status, Invoice/Statements, Pricing and soon to be added payout status tab. 
+- Depending on the type of account you have (Buyer, Seller, Curator) you will be able to click on the relevant tab to see your: 
+    - Credit Limit status
+    - Buying invoices 
+    - Seller Statements 
+    - Pricing 

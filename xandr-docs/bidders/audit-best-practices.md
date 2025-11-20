@@ -15,15 +15,14 @@ When working with Xandr audits, there are a couple of best practices to ensure t
 
 In order to ensure proper review, allow list our audit IPs and domains. This is also important for creative display, because a creative may fail to display if it includes geotargeting restrictions that limit where it can render.
 
-- LA servers:
+- Western US:
   - Input 68.67.139.192 /26 (netblock)
   - Input 68.67.136.192 /26 (netblock)
   - Input 68.67.139.0   /26 (netblock)
-- Westen US:
-    - 128.85.76.18/31  
-    - 128.24.139.140/31
-    - 128.85.77.64/31
-    - 172.208.223.42/31
+  - 128.85.76.18/31
+  - 28.24.139.140/31
+  - 8.85.77.64/31
+  - 2.208.223.42/31
 - NY office:
   - Input 207.237.150.0 /24 (netblock)
   - 68.67.164.193

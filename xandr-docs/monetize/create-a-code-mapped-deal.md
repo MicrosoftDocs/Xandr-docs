@@ -128,15 +128,11 @@ For more information, see [Override ad quality settings on a deal](override-ad-q
 
 **Creative attributes**: Configure which creative attributes are allowed for this deal. You can define restrictions or permissions for the following:
 
-  - [Brand](https://learn.microsoft.com/en-us/xandr/monetize/create-a-custom-deal#override-brand-ad-quality-settings)
-
-  - [Language](https://learn.microsoft.com/en-us/xandr/monetize/create-a-custom-deal#override-language-ad-quality-settings)
-
-  - [Media type](https://learn.microsoft.com/en-us/xandr/monetize/create-a-custom-deal#set-media-types)
-
-  - [Creative category](https://learn.microsoft.com/en-us/xandr/monetize/create-a-custom-deal#override-creative-category-ad-quality-settings)
-
-  - [Technical attributes](https://learn.microsoft.com/en-us/xandr/monetize/create-a-custom-deal#override-technical-attributes-ad-quality-settings)
+  - [Brand](create-a-custom-deal.md)
+  - [Language](create-a-custom-deal.md)
+  - [Media type](create-a-custom-deal.md)
+  - [Creative category](create-a-custom-deal.md)
+  - [Technical attributes](create-a-custom-deal.md)
 
 ## Save the deal
 

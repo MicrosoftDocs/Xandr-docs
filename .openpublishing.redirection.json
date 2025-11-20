@@ -264,6 +264,21 @@
         "source_path": "xandr-docs/digital-platform-api/prebid-server-premium-config-services.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/prebid-server-premium-services",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/finance/integrated-pre-payment-functionality.md",
+        "redirect_url": "https://learn.microsoft.com/de-de/xandr/finance/digital-buying",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/integrated-pre-payment-functionality.md",
+        "redirect_url": "https://learn.microsoft.com/de-de/xandr/monetize/digital-buying",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/invest/integrated-pre-payment-functionality.md",
+        "redirect_url": "https://learn.microsoft.com/de-de/xandr/invest/digital-buying",
+        "redirect_document_id": false
         }
       ]
     }

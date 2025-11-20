@@ -56,7 +56,7 @@ To run a report for a custom time frame, set the `start_date` and `end_date` fie
 |:---|:---|:---|:---|:---|
 | `imps` | int | `34534` | imps | The total number of impressions that used third-party data to serve the ad. |
 | `data_costs` | money | `3.50` |  | The monetary value of the data segments that were purchased from third-party data providers. |
-| `sales_tax` | money | `.43` |  | The amount of sales tax collected. This field is only populated when the Buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Xandr is required (by the relevant local state regulator) to collect this tax. |
+| `transaction_tax` | money | `.43` |  | Applicable sales, value added, goods and services or similar taxes (Transaction Taxes) will be applied to your transactions with Microsoft based on the Customer’s Account Business Location provided in the onboarding experience. |
 | `data_type` | string | `Segment` |  | The available choices are Segment and Cross Device |
 | **Metrics available in local currency** |  |  |  |  |
 | `data_costs_buying_currency` | money | `3.50` |  | The monetary value of the data segments that were purchased from third-party data providers. Represented in the Advertiser's currency |

@@ -13,7 +13,7 @@ As a member who sells inventory on Microsoft Advertising's platform, you receive
 
 > [!NOTE]
 >
-> - Your statement is delivered in your default currency. Although all transactions are recorded in US dollars, those dollar amounts are converted to your default currency (at the end of the the activity period reflected in the statement). Microsoft Advertising uses the Reuters conversion rate at the end of the activity period to prepare your statement. We also account for hedging cost as per your contract. The amounts on your statement are converted by multiplying the US dollar amount by the conversion rate less the hedging cost.
+> - Your statement is delivered in your default currency. Although all transactions are recorded in US dollars, those dollar amounts are converted to your default currency (at the end of the activity period reflected in the statement). Microsoft Advertising uses the Refinitiv conversion rate at the end of the activity period to prepare your statement.
 > - If you selling activity incurs ad serving charges and/or your contracted terms with Microsoft Advertising has the Seller Auction Service Charge set as a Fee instead of a Deduction, you will also receive an invoice from Microsoft Advertising. For details on seller-specific charges that can appear on an invoice, see [Understanding Your Invoice](understanding-your-invoice.md).
 
 ## Seller activity statement
@@ -56,7 +56,7 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 ## Netting statement
 
 > [!NOTE]
-> You only receive a Netting Statement if you conduct both buying and selling activity with Microsoft Advertising, have contractually agreed to netting, and notified the Client Finance team to enable netting for your account.
+> You only receive a Netting Statement if you conduct both buying and selling activity with Microsoft Advertising, have contractually agreed to netting, and notified the Client Finance team to enable netting for your account. If you are a customer that has migrated to a new Microsoft Advertising contract, please note that netting will be discontinued.  
 
 This monthly document lists the amount of revenue you have earned as a seller as well as your activity as a buyer. Microsoft Advertising then deducts the amount that you owe as a buyer from the revenue you have earned as a seller to determine the amount you will be paid or that you owe.
 

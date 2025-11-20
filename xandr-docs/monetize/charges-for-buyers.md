@@ -39,4 +39,4 @@ Your creative overage fee is calculated as follows: `[[(a)60KB - (b)40KB ] x 100
 
 ## Creative audit
 
-The charge for each creative audit performed by Microsoft Advertising, both initial audits and re-audits. The creative audit fee is the standard audit rate with standard turnaround time. Priority audit is a higher fee with expedited turnaround time. You can view the creative audit amount for a specific invoice period using the **Completed Creative Audits Report** in the UI.
+The charge for each creative audit performed by Microsoft Advertising, both initial audits and re-audits. The creative audit fee is waived with standard turnaround time. Priority audit is charged a fee with expedited turnaround time. You can view the creative audit amount for a specific invoice period using the **Completed Creative Audits Report** in the UI. 

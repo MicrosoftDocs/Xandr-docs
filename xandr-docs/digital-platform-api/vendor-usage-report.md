@@ -78,7 +78,7 @@ Data retention period for this report is 60 days.
 |:---|:---|:---|:---|:---|:---|
 | `imps` | int | yes | `34534` | imps | The total number of impressions that used third-party data to serve the ad. |
 | `third_party_costs` | money | yes | `5.20` | third_party_costs | Total monetary value of data segment costs, feature costs or others. |
-| `sales_tax` | money | no | `.43` | sales_tax | The amount of sales tax collected in USD. This field is only populated when the Buyer's billing address is located in one of the following U.S. states: NY, TX or NJ. Xandr is required (by the relevant local state regulator) to collect this tax. |
+| `transaction_tax` | money | no | `.43` | transaction_tax | Applicable sales, value added, goods and services or similar taxes (Transaction Taxes) will be applied to your transactions with Microsoft based on the Customer’s Account Business Location provided in the onboarding experience. |
 | `vendor_costs` | money | no | `5.00` | vendor_costs | The total costs, including but not limited to segment data costs, and feature costs.<br>**Feature Costs:** Costs incurred when using a platform feature such as Nielsen Digital Ad Ratings (DAR), Nielsen Catalina Solutions (NCS) and Cross Device.<br>**Segment Data Costs:** All costs related to using segments in the data marketplace. Applicable when specific segments are applied in line items and associated pricing is displayed in the platform. |
 | `vendor_costs_buying_currency` | money | no | `1.50` | vendor_costs_buying_currency | The vendor costs expressed in the transaction currency used by the buyer. |
 

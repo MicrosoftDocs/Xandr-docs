@@ -123,7 +123,7 @@ Depending on which product you use, you can located historical billing documents
 
 ### Why am I getting an invoice for data from both the data provider and Microsoft Advertising?
 
-You can purchase data through Microsoft Advertising or directly from your data provider. If you purchased data through Microsoft Advertising you will see that activity in our **Data Usage Report** in the UI. Otherwise, you will be billed by the Data Provider. For more information on Data Clearing, see [Data Marketplace Overview](data-marketplace-overview.md).
+You can purchase data through Microsoft Advertising or directly from your data provider. If you purchased data through Microsoft Advertising you will see that activity in our **Data Usage Report** in the UI. Otherwise, you will be billed by the Data Provider. For more information on Data Clearing, see [Data Marketplace Overview](../data-providers/data-marketplace-data-partner-overview.md).
 
 ### How can I set up netting if we buy and sell through Microsoft Advertising?
 
@@ -139,21 +139,3 @@ If you are a customer that has migrated to a new Microsoft Advertising contract,
 ### Why was I suspended and when will I get paid?
 
 Reasons for account suspension should be discussed with your Account Manager. Client Finance can help you determine the amount you will be paid. It generally requires one month to analyze the account and net out anything that is still owed to Microsoft Advertising (not including finance fees). Once that occurs, Microsoft Advertising will pay any outstanding liability owed to you. Be sure to create a case in our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com/) with your inquiry.
-
-###  How can I access historical billing documents (e.g., Invoices, Activity Statements, Tax Invoice, Remittance Statements and Pricing)? 
-To access the Billing tab in Microsoft Monetize, a user must have the Finance Observer role. Ensure the user account is created in Monetize, then follow the steps below to assign the role:
-- Navigate to the appropriate Seat ID in the Microsoft Monetize platform. 
-- From the **Actions** menu, select **View Users**
-- Locate and select the user, then choose the Edit (pencil) icon in the **User Details** section.
-- Select the **Roles & Permissions** tab.
-- From the role dropdown, select **Finance Observer** to extend the required permissions.
-
-### Where can I find historical billing documents (e.g., Invoices, Activity Statements, Tax Invoice, Remittance Statements and Pricing)?
-You can locate historical billing documents by following the below steps:
-- Once logged into Monetize, hover over “Network” on the far left menu option. It will pop out a list of options to select from. Select “Billing” 
-- Once on the Billing page, you will see the below screen with tabs for “Credit Status, Invoice/Statements, Pricing and soon to be added payout status tab. 
-- Depending on the type of account you have (Buyer, Seller, Curator) you will be able to click on the relevant tab to see your: 
-    - Credit Limit status
-    - Buying invoices 
-    - Seller Statements 
-    - Pricing 

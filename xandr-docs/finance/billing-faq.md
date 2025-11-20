@@ -122,7 +122,7 @@ Depending on which product you use, you can located historical billing documents
 
 ### Why am I getting an invoice for data from both the data provider and Microsoft Advertising?
 
-You can purchase data through Microsoft Advertising or directly from your data provider. If you purchased data through Microsoft Advertising you will see that activity in our **Data Usage Report** in the UI. Otherwise, you will be billed by the Data Provider. For more information on Data Clearing, see [Data Marketplace Overview](data-marketplace-overview.md).
+You can purchase data through Microsoft Advertising or directly from your data provider. If you purchased data through Microsoft Advertising you will see that activity in our **Data Usage Report** in the UI. Otherwise, you will be billed by the Data Provider. For more information on Data Clearing, see [Data Marketplace Overview](../data-providers/data-marketplace-overview.md).
 
 ### How can I set up netting if we buy and sell through Microsoft Advertising?
 

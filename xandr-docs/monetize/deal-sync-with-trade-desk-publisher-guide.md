@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
 description: Learn how a seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers is possible. This page also covers best practices to be followed for deal set up.  
-ms.date: 10/21/2025
+ms.date: 11/28/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -52,7 +52,6 @@ Updates to newly created deals (post deal sync enablement) automatically get upl
 While there are no changes to how a publisher create deals in Microsoft Monetize UI, publishers should be aware of which type of deals are automatically synchronized and which deals still continue to follow the manual workflow.
 
 - All new deals created in the alpha are synchronized with Trade Desk, with the exceptions of:
-  - Multi-Buyer Deals that are created at the Bidder level.
   - Deals created with a Trade Desk Buyer Member ID instead of a Bidder Seat ID Trade Desk Partner ID.
   - Deals created prior to the seller's enablement of deal sync with Trade Desk.
 
@@ -72,10 +71,3 @@ While there are no changes to how a publisher create deals in Microsoft Monetize
 - Banner/Display PG deals must have at least one allowed creative size declared.
 - Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the Trade Desk UI.
 
-**Multi-Buyer deals**
-
-- Deals set up with multiple Trade Desk seat IDs automatically get synchronized.
-- Bidder-level deals (set up with ALL Trade Desk buyers) are not supported in automatic deal synchronizing.
-- Microsoft Advertising systems will randomly assign one buyer to be the primary buyer on the multi-buyer deal. This primary buyer will be the only account allowed to approve the deal. You can check the primary buyer assigned to the deal in the buyer-deal-sync API or database tables.
-- The primary buyer on a multi-buyer deal cannot be changed or removed
-- Multi-buyer deals set up with Trade Desk member IDs will not sync. This includes deals set up with Trade Desk member ID 1088.

@@ -153,7 +153,7 @@ Adjustments revenue is available in reports for any adjustments created on or af
 
 The following dimensions are available when reporting on adjustment revenue.
 
-| name_ui               | name_api             |
+| Name in UI            | Name in API          |
 |-----------------------|----------------------|
 | Advertiser            | advertiser           |
 | Advertiser ID         | advertiser_id        |

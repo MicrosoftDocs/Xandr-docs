@@ -1,10 +1,10 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 10/21/2025
+ms.date: 12/1/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 # Microsoft Monetize -  Historical reporting
@@ -126,6 +126,27 @@ Intervals determine how your data is grouped together into rows in the report re
 
 - **Maximum retention:** 2 years and 2 months.
 - **Current maximum data availability:** 90 days (planned extensions forthcoming). -->
+
+## Adjustments
+
+Adjustments allocate revenue from fixed-fee line items for reporting. The allocation timing depends on the line item settings, which determine whether the fixed fee is distributed daily or at the end of the flight. Revenue is allocated proportionally to the number of impressions served during the day or flight, calculated on an hourly basis. At least one impression must be served on a given day for revenue to be allocated.
+
+In Historical reports, these adjustments appear with the **Revenue Type** set to **Flat Fee**.
+
+### Example
+
+For example, line item 1234 has a fixed fee of $1,000 per day. Following is the adjustments for the line item:
+
+| Hour         | Impressions | Revenue Allocated |
+|--------------|-------------|-------------------|
+| 2025-11-03 12 | 250         | $250              |
+| 2025-11-03 13 | 500         | $500              |
+| 2025-11-03 15 | 200         | $200              |
+| 2025-11-03 18 | 50          | $50               |
+| 2025-11-04 08 | 80          | $800              |
+| 2025-11-04 09 | 20          | $200              |
+
+
 
 ## Filters
 

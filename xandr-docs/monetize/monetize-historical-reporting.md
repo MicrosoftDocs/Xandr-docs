@@ -412,7 +412,7 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `Filtered Requests` | The number of unique auctions that Xandr filtered due to inventory quality checks |
 | `External Click` | Clicks as recorded by the external clicktracker. |
 | `External Impression` | Imps as recorded by the external impression tracker. |
-| total_revenue_ecpa | The total revenue per acquisition. |
+| `total_revenue_ecpa` | The total revenue per acquisition. |
 
 ## Metric filters
 
@@ -428,6 +428,135 @@ Metric filters let you return data that’s greater than or less than a specifie
 > [!NOTE]
 > - For percentage metrics, enter the value as a decimal. For example, enter 0.0025 for 0.25%.
 > - Filter logic always uses **AND**. You can’t apply threshold filters with **OR** logic.
+
+### Metrics supported
+
+| Metrics Category | Metric in API | Metric in UI |
+|----------|------------|-------------|
+| Core Performance | imps | Impressions |
+| Core Performance | revenue | Revenue |
+| Core Performance | clicks | Clicks |
+| Core Performance | ctr | Click Through Rate |
+| Core Performance | view_rate | View Rate |
+| Revenue & Cost | sold_network_rpm | Sold Imps eCPM |
+| Revenue & Cost | total_revenue_ecpm | Total Imps eCPM |
+| Revenue & Cost | total_revenue_ecpc | eCPC (Total Revenue per Click) |
+| Revenue & Cost | total_revenue_ecpa | eCPA (Total Revenue per Acquisition) |
+| Revenue & Cost | total_revenue_vcpm | Viewable eCPM |
+| Revenue & Cost | media_cost | Media Cost |
+| Revenue & Cost | total_cost | Total Cost |
+| Revenue & Cost | total_cost_ecpm | Total Cost eCPM |
+| Revenue & Cost | total_cost_ecpc | Total Cost eCPC |
+| Revenue & Cost | total_cost_ecpa | Total Cost eCPA |
+| Revenue & Cost | cpm | Media CPM |
+| Revenue & Cost | seller_revenue | Programmatic Revenue |
+| Revenue & Cost | booked_revenue | Managed Revenue |
+| Video Analytics | starts | Starts |
+| Video Analytics | skips | Skips |
+| Video Analytics | completions | Completions |
+| Video Analytics | 25_pcts | 25% Video Complete |
+| Video Analytics | 50_pcts | 50% Video Complete |
+| Video Analytics | 75_pcts | 75% Video Complete |
+| Video Analytics | errors | Errors |
+| Video Analytics | start_rate | Start Rate |
+| Video Analytics | video_skip_rate | Skip Rate |
+| Video Analytics | started_video_completion_rate | Started Video Completion Rate |
+| Video Analytics | video_25_pct_completion_rate | 25% Completion Rate |
+| Video Analytics | video_50_pct_completion_rate | 50% Completion Rate |
+| Video Analytics | video_75_pct_completion_rate | 75% Completion Rate |
+| Video Analytics | revenue_per_video_complete | Revenue Per Video Complete |
+| Viewability | imps_viewed | Imps Viewed |
+| Viewability | view_measured_imps | View Measured Imps |
+| Viewability | view_measurement_rate | View Measurement Rate |
+| Conversion | post_click_ip_conv | Post Click Conversions: IP |
+| Conversion | post_view_ip_conv | Post View Conversions: IP |
+| Conversion | post_click_crossdevice_conv | Post Click Conversions: Cross Device |
+| Conversion | post_view_crossdevice_conv | Post View Conversions: Cross Device |
+| Conversion | post_view_convs | Post View Conversions |
+| Conversion | post_click_convs | Post Click Conversions |
+| Conversion | total_convs | Total Conversions |
+| Conversion | convs_rate | Conversions Rate |
+| Conversion | convs_per_mm | Conversions Per MM |
+| Conversion | post_view_convs_rate | Post View Conversion Rate |
+| Conversion | post_click_convs_rate | Post Click Conversion Rate |
+| Conversion | external_click | External Click |
+| Conversion | external_impression | External Impression |
+| Impression Type | imps_blank | Imps (blank) |
+| Impression Type | imps_default | Imps (default) |
+| Impression Type | imps_default_error | Imps (default error) |
+| Impression Type | imps_kept | Imps (managed) |
+| Impression Type | imps_primary_creative | Imps (primary creative) |
+| Impression Type | imps_psa | Imps (PSA) |
+| Impression Type | imps_psa_error | Imps (PSA error) |
+| Impression Type | imps_resold | Imps (programmatic) |
+| Supply & Demand | ad_requests | Ad Requests |
+| Supply & Demand | bid_sent_no_responses | Bid Sent No Responses |
+| Supply & Demand | ad_responses | Ad Responses |
+| Supply & Demand | filtered_requests | Filtered Requests |
+
+All threshold filters support two operators:
+
+- > :  greater than
+- <= : less than or equal to
+
+### API JSON example 
+
+**Syntax**
+```
+{
+  "report": {
+    "group_filters": [
+      {
+        "view_rate": {
+          "operator": "<=",
+          "value": 0.4
+        }
+      }
+    ]
+  }
+}
+```
+**Example**
+```
+{
+  "report": {
+    "report_type": "monetize_creative_brand_analytics",
+    "name": "Placement Viewability under 40%",
+    "timezone": "EST5EDT",
+    "columns": [
+      "placement",
+      "view_rate"
+    ],
+    "emails": null,
+    "orders": [
+      {
+        "order_by": "placement",
+        "direction": "DESC"
+      }
+    ],
+    "format": "csv",
+    "report_interval": "today",
+    "filters": [
+      {
+        "seller_member_id": "958"
+      }
+    ],
+    "time_granularity": "cumulative",
+    "ui_columns": [
+      "placement",
+      "view_rate"
+    ],
+    "group_filters": [
+      {
+        "view_rate": {
+          "operator": "<=",
+          "value": 0.4
+        }
+      }
+    ]
+  }
+}
+```
 
 ## Revenue types
 

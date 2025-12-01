@@ -1,10 +1,10 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 10/21/2025
+ms.date: 12/1/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 # Microsoft Monetize -  Historical reporting
@@ -126,6 +126,79 @@ Intervals determine how your data is grouped together into rows in the report re
 
 - **Maximum retention:** 2 years and 2 months.
 - **Current maximum data availability:** 90 days (planned extensions forthcoming). -->
+
+## Adjustments
+
+Adjustments allocate revenue from fixed-fee line items for reporting. The allocation timing depends on the line item settings, which determine whether the fixed fee is distributed daily or at the end of the flight. Revenue is allocated proportionally to the number of impressions served during the day or flight, calculated on an hourly basis. At least one impression must be served on a given day for revenue to be allocated.
+
+In Historical reports, these adjustments appear with the **Revenue Type** set to **Flat Fee**.
+
+### Example
+
+For example, line item 1234 has a fixed fee of $1,000 per day. Following is the adjustments for the line item:
+
+| Hour         | Impressions | Revenue Allocated |
+|--------------|-------------|-------------------|
+| 2025-11-03 12 | 250         | $250              |
+| 2025-11-03 13 | 500         | $500              |
+| 2025-11-03 15 | 200         | $200              |
+| 2025-11-03 18 | 50          | $50               |
+| 2025-11-04 08 | 80          | $800              |
+| 2025-11-04 09 | 20          | $200              |
+
+### Supported date 
+Adjustments revenue is available in reports for any adjustments created on or after January 28, 2025.
+
+### Dimensions/filters reportable with adjustment revenue
+
+The following dimensions are available when reporting on adjustment revenue.
+
+| Name in UI            | Name in API          |
+|-----------------------|----------------------|
+| Advertiser            | advertiser           |
+| Advertiser ID         | advertiser_id        |
+| Advertiser Name       | advertiser_name      |
+| Buyer Member          | buyer_member         |
+| Buyer Member ID       | buyer_member_id      |
+| Buyer Member Name     | buyer_member_name    |
+| Buyer Seat            | buyer_seat           |
+| Buyer Seat ID         | buyer_seat_id        |
+| Buyer Seat Name       | buyer_seat_name      |
+| Country Code          | geo_country          |
+| Country/region Name          | geo_country_name     |
+| Impression Type       | imp_type             |
+| Impression Type ID    | imp_type_id          |
+| Impression Type Name  | imp_type_name        |
+| Insertion Order       | insertion_order      |
+| Insertion Order ID    | insertion_order_id   |
+| Insertion Order Name  | insertion_order_name |
+| Is Curated            | is_curated           |
+| Line Item             | line_item            |
+| Line Item ID          | line_item_id         |
+| Line Item Name        | line_item_name       |
+| Payment Type          | payment_type         |
+| Payment Type ID       | payment_type_id      |
+| Placement             | placement            |
+| Placement ID          | placement_id         |
+| Placement Name        | placement_name       |
+| Publisher             | publisher            |
+| Publisher ID          | publisher_id         |
+| Publisher Name        | publisher_name       |
+| Revenue Type          | revenue_type    |
+| Revenue Type ID       | revenue_type_id |
+| Placement Group       | site            |
+| Placement Group ID    | plmt_grp_id     |
+| Placement Group Name  | plmt_grp.name   |
+
+If you apply a filter that isn’t included in this list, the adjusted revenue won’t be returned in the report. Similarly, if you add a dimension that isn’t in this list, the adjusted revenue for rows containing that dimension value will be zero.
+
+### Adjustment Processing Timelines 
+
+Adjustments are processed at the end of the line item’s day or flight and may take up to nine hours to complete and appear in reporting.
+
+**Example**
+
+If a line item is set to the CET time zone and allocates a fixed fee of $1,000 per day, the adjustment processing will begin at 01:00 UTC. The revenue is expected to appear in reporting by 10:00 UTC.
 
 ## Filters
 
@@ -339,8 +412,151 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `Filtered Requests` | The number of unique auctions that Xandr filtered due to inventory quality checks |
 | `External Click` | Clicks as recorded by the external clicktracker. |
 | `External Impression` | Imps as recorded by the external impression tracker. |
-| total_revenue_ecpa | The total revenue per acquisition. |
+| `total_revenue_ecpa` | The total revenue per acquisition. |
 
+## Metric filters
+
+Metric filters let you return data that’s greater than or less than a specified threshold. You can apply multiple threshold filters, and you can combine them with standard filters to get more precise results. This is especially useful for scenarios such as:
+
+| Task                                                        | Dimension | Filter                   |
+|-------------------------------------------------------------|-----------|---------------------------|
+| Report on line items with a CTR above 0.25%                 | Line Item | CTR > 0.0025             |
+| Report on placements with viewability less than 40%         | Placement | Viewability <= 0.40       |
+| Report on buyers with more than $1000 in revenue            | Buyer     | Revenue > 1000           |
+| Report on buyers with CPM < $1.00 and viewability > 40%     | Buyer     | CPM <= 1.00<br>Viewability > 0.40 |
+
+> [!NOTE]
+> - For percentage metrics, enter the value as a decimal. For example, enter 0.0025 for 0.25%.
+> - Filter logic always uses **AND**. You can’t apply threshold filters with **OR** logic.
+
+### Metrics supported
+
+| Metrics Category | Metric in API | Metric in UI |
+|----------|------------|-------------|
+| Core Performance | imps | Impressions |
+| Core Performance | revenue | Revenue |
+| Core Performance | clicks | Clicks |
+| Core Performance | ctr | Click Through Rate |
+| Core Performance | view_rate | View Rate |
+| Revenue & Cost | sold_network_rpm | Sold Imps eCPM |
+| Revenue & Cost | total_revenue_ecpm | Total Imps eCPM |
+| Revenue & Cost | total_revenue_ecpc | eCPC (Total Revenue per Click) |
+| Revenue & Cost | total_revenue_ecpa | eCPA (Total Revenue per Acquisition) |
+| Revenue & Cost | total_revenue_vcpm | Viewable eCPM |
+| Revenue & Cost | media_cost | Media Cost |
+| Revenue & Cost | total_cost | Total Cost |
+| Revenue & Cost | total_cost_ecpm | Total Cost eCPM |
+| Revenue & Cost | total_cost_ecpc | Total Cost eCPC |
+| Revenue & Cost | total_cost_ecpa | Total Cost eCPA |
+| Revenue & Cost | cpm | Media CPM |
+| Revenue & Cost | seller_revenue | Programmatic Revenue |
+| Revenue & Cost | booked_revenue | Managed Revenue |
+| Video Analytics | starts | Starts |
+| Video Analytics | skips | Skips |
+| Video Analytics | completions | Completions |
+| Video Analytics | 25_pcts | 25% Video Complete |
+| Video Analytics | 50_pcts | 50% Video Complete |
+| Video Analytics | 75_pcts | 75% Video Complete |
+| Video Analytics | errors | Errors |
+| Video Analytics | start_rate | Start Rate |
+| Video Analytics | video_skip_rate | Skip Rate |
+| Video Analytics | started_video_completion_rate | Started Video Completion Rate |
+| Video Analytics | video_25_pct_completion_rate | 25% Completion Rate |
+| Video Analytics | video_50_pct_completion_rate | 50% Completion Rate |
+| Video Analytics | video_75_pct_completion_rate | 75% Completion Rate |
+| Video Analytics | revenue_per_video_complete | Revenue Per Video Complete |
+| Viewability | imps_viewed | Imps Viewed |
+| Viewability | view_measured_imps | View Measured Imps |
+| Viewability | view_measurement_rate | View Measurement Rate |
+| Conversion | post_click_ip_conv | Post Click Conversions: IP |
+| Conversion | post_view_ip_conv | Post View Conversions: IP |
+| Conversion | post_click_crossdevice_conv | Post Click Conversions: Cross Device |
+| Conversion | post_view_crossdevice_conv | Post View Conversions: Cross Device |
+| Conversion | post_view_convs | Post View Conversions |
+| Conversion | post_click_convs | Post Click Conversions |
+| Conversion | total_convs | Total Conversions |
+| Conversion | convs_rate | Conversions Rate |
+| Conversion | convs_per_mm | Conversions Per MM |
+| Conversion | post_view_convs_rate | Post View Conversion Rate |
+| Conversion | post_click_convs_rate | Post Click Conversion Rate |
+| Conversion | external_click | External Click |
+| Conversion | external_impression | External Impression |
+| Impression Type | imps_blank | Imps (blank) |
+| Impression Type | imps_default | Imps (default) |
+| Impression Type | imps_default_error | Imps (default error) |
+| Impression Type | imps_kept | Imps (managed) |
+| Impression Type | imps_primary_creative | Imps (primary creative) |
+| Impression Type | imps_psa | Imps (PSA) |
+| Impression Type | imps_psa_error | Imps (PSA error) |
+| Impression Type | imps_resold | Imps (programmatic) |
+| Supply & Demand | ad_requests | Ad Requests |
+| Supply & Demand | bid_sent_no_responses | Bid Sent No Responses |
+| Supply & Demand | ad_responses | Ad Responses |
+| Supply & Demand | filtered_requests | Filtered Requests |
+
+All threshold filters support two operators:
+
+- > :  greater than
+- <= : less than or equal to
+
+### API JSON example 
+
+**Syntax**
+```
+{
+  "report": {
+    "group_filters": [
+      {
+        "view_rate": {
+          "operator": "<=",
+          "value": 0.4
+        }
+      }
+    ]
+  }
+}
+```
+**Example**
+```
+{
+  "report": {
+    "report_type": "monetize_creative_brand_analytics",
+    "name": "Placement Viewability under 40%",
+    "timezone": "EST5EDT",
+    "columns": [
+      "placement",
+      "view_rate"
+    ],
+    "emails": null,
+    "orders": [
+      {
+        "order_by": "placement",
+        "direction": "DESC"
+      }
+    ],
+    "format": "csv",
+    "report_interval": "today",
+    "filters": [
+      {
+        "seller_member_id": "958"
+      }
+    ],
+    "time_granularity": "cumulative",
+    "ui_columns": [
+      "placement",
+      "view_rate"
+    ],
+    "group_filters": [
+      {
+        "view_rate": {
+          "operator": "<=",
+          "value": 0.4
+        }
+      }
+    ]
+  }
+}
+```
 
 ## Revenue types
 

@@ -165,7 +165,7 @@ The following dimensions are available when reporting on adjustment revenue.
 | Buyer Seat ID         | buyer_seat_id        |
 | Buyer Seat Name       | buyer_seat_name      |
 | Country Code          | geo_country          |
-| Country Name          | geo_country_name     |
+| Country/region Name          | geo_country_name     |
 | Impression Type       | imp_type             |
 | Impression Type ID    | imp_type_id          |
 | Impression Type Name  | imp_type_name        |

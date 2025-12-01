@@ -146,7 +146,59 @@ For example, line item 1234 has a fixed fee of $1,000 per day. Following is the 
 | 2025-11-04 08 | 80          | $800              |
 | 2025-11-04 09 | 20          | $200              |
 
+### Supported date 
+Adjustments revenue is available in reports for any adjustments created on or after January 28, 2025.
 
+### Dimensions/filters reportable with adjustment revenue
+
+The following dimensions are available when reporting on adjustment revenue.
+
+| name_ui               | name_api             |
+|-----------------------|----------------------|
+| Advertiser            | advertiser           |
+| Advertiser ID         | advertiser_id        |
+| Advertiser Name       | advertiser_name      |
+| Buyer Member          | buyer_member         |
+| Buyer Member ID       | buyer_member_id      |
+| Buyer Member Name     | buyer_member_name    |
+| Buyer Seat            | buyer_seat           |
+| Buyer Seat ID         | buyer_seat_id        |
+| Buyer Seat Name       | buyer_seat_name      |
+| Country Code          | geo_country          |
+| Country Name          | geo_country_name     |
+| Impression Type       | imp_type             |
+| Impression Type ID    | imp_type_id          |
+| Impression Type Name  | imp_type_name        |
+| Insertion Order       | insertion_order      |
+| Insertion Order ID    | insertion_order_id   |
+| Insertion Order Name  | insertion_order_name |
+| Is Curated            | is_curated           |
+| Line Item             | line_item            |
+| Line Item ID          | line_item_id         |
+| Line Item Name        | line_item_name       |
+| Payment Type          | payment_type         |
+| Payment Type ID       | payment_type_id      |
+| Placement             | placement            |
+| Placement ID          | placement_id         |
+| Placement Name        | placement_name       |
+| Publisher             | publisher            |
+| Publisher ID          | publisher_id         |
+| Publisher Name        | publisher_name       |
+| Revenue Type          | revenue_type    |
+| Revenue Type ID       | revenue_type_id |
+| Placement Group       | site            |
+| Placement Group ID    | plmt_grp_id     |
+| Placement Group Name  | plmt_grp.name   |
+
+If you apply a filter that isn’t included in this list, the adjusted revenue won’t be returned in the report. Similarly, if you add a dimension that isn’t in this list, the adjusted revenue for rows containing that dimension value will be zero.
+
+### Adjustment Processing Timelines 
+
+Adjustments are processed at the end of the line item’s day or flight and may take up to nine hours to complete and appear in reporting.
+
+**Example**
+
+If a line item is set to the CET time zone and allocates a fixed fee of $1,000 per day, the adjustment processing will begin at 01:00 UTC. The revenue is expected to appear in reporting by 10:00 UTC.
 
 ## Filters
 

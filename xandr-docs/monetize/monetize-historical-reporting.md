@@ -414,6 +414,20 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `External Impression` | Imps as recorded by the external impression tracker. |
 | total_revenue_ecpa | The total revenue per acquisition. |
 
+## Metric filters
+
+Metric filters let you return data that’s greater than or less than a specified threshold. You can apply multiple threshold filters, and you can combine them with standard filters to get more precise results. This is especially useful for scenarios such as:
+
+| Task                                                        | Dimension | Filter                   |
+|-------------------------------------------------------------|-----------|---------------------------|
+| Report on line items with a CTR above 0.25%                 | Line Item | CTR > 0.0025             |
+| Report on placements with viewability less than 40%         | Placement | Viewability <= 0.40       |
+| Report on buyers with more than $1000 in revenue            | Buyer     | Revenue > 1000           |
+| Report on buyers with CPM < $1.00 and viewability > 40%     | Buyer     | CPM <= 1.00<br>Viewability > 0.40 |
+
+> [!NOTE]
+> - For percentage metrics, enter the value as a decimal. For example, enter 0.0025 for 0.25%.
+> - Filter logic always uses **AND**. You can’t apply threshold filters with **OR** logic.
 
 ## Revenue types
 

@@ -21,7 +21,11 @@
 - name: Microsoft Monetize Home Page
   href: home-page-microsoft-monetize.md
 - name: Copilot in Microsoft Monetize
-  href: copilot-in-microsoft-monetize.md
+  items:
+  - name: Overview
+    href: copilot-in-microsoft-monetize.md
+  - name: Performance Metrics with Copilot in Microsoft Monetize 
+    href: performance-metrics-with-copilot-in-microsoft-monetize.md
 - name: Network Guide
   items:
   - name: Overview

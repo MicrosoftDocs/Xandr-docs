@@ -37,7 +37,7 @@ Copilot supports the following performance insights:
 > [!NOTE]
 > If no specific object ID is provided, Copilot verifies the object and may ask for a date.
 
-## Access Copilot in Microsoft Monetize 
+## Access performance metrics with Copilot in Microsoft Monetize 
 
 Copilot icon is available on every screen within the Microsoft Monetize, providing real-time assistance and contextual guidance. You can access Copilot at any time to ask questions, explore prepopulated prompts, and retrieve relevant performance data. 
 

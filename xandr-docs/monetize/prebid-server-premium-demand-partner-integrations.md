@@ -168,7 +168,6 @@ Additional resources on demand partners:
 | Goldbach        | goldbach       | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        |
 | Gothamads | gothamads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Gravite         | gravite        | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        |
-
 | GumGum | gumgum | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | iion | iionads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | iMedia Digital Services (IMDS) | imds | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |

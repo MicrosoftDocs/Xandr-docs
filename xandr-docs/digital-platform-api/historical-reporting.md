@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API  - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights in Digital Platform API.
-ms.date: 10/22/2025
+ms.date: 12/7/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -17,6 +17,39 @@ Historical report is the primary analytics report in Microsoft Monetize, offerin
 > [!NOTE]
 > This report is GA and includes data starting from `October 10, 2024`. Planned updates will extend its functionality to align with the Network Analytics, Seller Fill and Delivery, and Video Analytics reports. Additional dimensions, metrics, and adjustment data will be introduced in future updates.
 
+## Timing of Report Events
+
+The Historical report enables metrics to be attributed to the **hour of the originating ad request**, rather than the time when each subsequent event occurs. This ensures consistency when calculating rates for events that may occur hours after the initial ad call, such as video impressions, native impressions, and conversions.
+
+### Example
+
+In the example below, a video ad request has a 6-hour TTL, and its related events occur over several hours:
+
+| Event                 | Event Time |
+|----------------------|------------|
+| Ad Request           | 08:00      |
+| Impression           | 10:00      |
+| Post-View Conversion | 11:00      |
+
+In the **Historical report**, all these events are attributed back to the **08:00** hour when the ad request was made.
+
+#### Historical Report View
+
+| Hour | Ad Requests | Imps | Post-View Conversions | Fill Rate | Conversion Rate |
+|------|-------------|------|------------------------|-----------|------------------|
+| 08:00 | 1 | 1 | 1 | 100% | 100% |
+
+### Differences Compared to Legacy Reports
+
+Legacy reports attribute events to the **actual event time**. Using the same example, the legacy reporting view would look like this:
+
+| Hour | Ad Requests | Imps | Post-View Conversions | Fill Rate | Conversion Rate |
+|------|-------------|------|------------------------|-----------|------------------|
+| 08:00 | 1 | 0 | 0 | 0% | 0% |
+| 10:00 | 0 | 1 | 0 | 0% | 0% |
+| 11:00 | 0 | 0 | 1 | 0% | 0% |
+
+Because timestamps are handled differently, **metric counts will not match exactly** between Historical reports and legacy reports when viewed at the day or hour level. This difference is expected and reflects the underlying attribution logic.
 
 ### Report mappings
 

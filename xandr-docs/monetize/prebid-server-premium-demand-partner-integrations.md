@@ -294,7 +294,6 @@ Additional resources on demand partners:
 | ShowHeroes      | showheroes     | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: No <br> **Site**: No          |
 | ShowHeroes-bs   | showheroes-bs  | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: No <br> **Site**: No          |
 | ShowHeroesBs    | showheroesBs   | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: No <br> **Site**: No          |
-
 | Silverpush | silverpush | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Smaato | smaato | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Smart AdServer | smartadserver | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |

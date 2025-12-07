@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Dates and Times in Reporting
 description: This page gives an overview on different timezones and daylight savings and reporting along with examples.
-ms.date: 10/21/2025
+ms.date: 12/7/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -52,13 +52,92 @@ However, if you observe DST, note that for each of the two annual changes, repor
 > [!NOTE]
 > Stats will switch to EST at the time of the change (November 4, 02:00 EDT), but changes may take up to a few hours to propagate. The required processing time is likely to result in a temporary discrepancy between Stats and ET reporting.
 
-### Example: Beginning of DST
+<!-- ### Example: Beginning of DST
 
 Let's imagine that I took a trip in March, 2018 to visit an Microsoft Advertising datacenter in Europe for a month. On March 25, 2018 at 01:00 UTC, I observe the flip from 02:00 CET to 03:00 CEST and note that I have one hour less that day (i.e., 23 hours) as a result. If I were to run a report for the day of the change (2018-03-25) that begins at 00:00 CET, I would see a "missing" hour at the end of the report, corresponding with 2018-03-25 23:00 CET (now 2018-03-26 00:00 CEST).
 
 ### Example: End of DST
 
-Let's look at an example from New York City. On Sunday, November 4, 2018 at 06:00 UTC, 02:00 EDT reverts to 01:00 EST. Therefore, November 4, 2018 is a 25-hour day. If I were to run a report for the day of the change (2018-11-04) that begins at 00:00 EDT, I would see an extra hour (2018-11-05 00:00 EDT) at the end of the report.
+Let's look at an example from New York City. On Sunday, November 4, 2018 at 06:00 UTC, 02:00 EDT reverts to 01:00 EST. Therefore, November 4, 2018 is a 25-hour day. If I were to run a report for the day of the change (2018-11-04) that begins at 00:00 EDT, I would see an extra hour (2018-11-05 00:00 EDT) at the end of the report. -->
+
+## Beginning of DST (Spring Forward)
+
+When Daylight Saving Time (DST) begins, clocks move **forward one hour**, effectively *skipping* an hour of local time. Because our backend data is stored in **UTC**, this affects only how data is presented when reporting in a timezone that observes DST — not how it is stored.
+
+### What Happens under the Hood
+- All data is recorded in **UTC timestamps**.  
+- UTC does **not change**, even if local timezone observes DST.  
+- Consequently, there is no missing or duplicate data at the storage level.
+
+### What Users See in Local Time Reporting
+On the day DST begins, when local clocks jump ahead, one local hour disappears. If you run a report in a timezone that observes DST (e.g., CET → CEST), the report will reflect a **23-hour day** (instead of 24).
+
+For example:  
+- At **01:00 UTC** on March 25, 2018, local time in Central Europe jumps from **02:00 CET → 03:00 CEST** 
+- That missing hour (02:00–02:59 local time) will not appear in the report.
+
+If you run a report for the DST-change date in local time (starting at 00:00 local time), you will notice that the final hour of the day appears to end one hour sooner than a normal 24-hour day. In the example above, you’d see 23 hours of data, with the local-time **23:00 CET** effectively becoming **00:00 CEST (next day)**. 
+
+> [!IMPORTANT]
+> This behavior is expected: because local time “skips” the DST-forward hour, data for that hour does *not* exist — and the day is reported as 23 hours long, even though UTC still reflects a full 24-hour span.
+
+### Recommendation for Accurate Analysis
+- If you need consistent hourly granularity (e.g., for automated tooling, QA, or charting), prefer reporting in **UTC** — this ensures a full 24-hour view without missing hours.  
+- If you report in local timezone, be aware of the DST shift: one hour will be missing on the DST-start day, and reports will reflect 23 hours.
+
+## End of DST (Fall Back)
+
+When Daylight Saving Time (DST) ends, clocks move **back one hour**, creating two occurrences of the same local hour (for example, **01:00–02:00** appears twice). All Monetize reporting data is stored in **UTC**, so this transition affects only how timestamps are **displayed** when you run reports in a local timezone.
+
+### How Data Is Stored
+- All data is stored using **UTC timestamps**.  
+- UTC hours remain **distinct** even during DST transitions.  
+- No data is lost or duplicated at the storage layer.
+
+During the fall-back transition, the following UTC timestamps are separate records:
+
+| UTC Hour | Notes |
+|----------|--------|
+| 05:00 | Occurs before the fall-back shift in US/Eastern |
+| 06:00 | Occurs after the fall-back shift in US/Eastern |
+
+### How Timezone Conversion Works
+Timezone conversion happens at the **query/reporting** level.
+
+When you run a report in a timezone that undergoes a fall-back shift (for example, **US/Eastern**):
+
+- Both UTC 05:00 and UTC 06:00 convert to the **same local hour: 01:00**.  
+- Because both hours are valid, Monetize **aggregates** all metrics for that repeated local hour.  
+- This is **expected behavior**, reflecting real-world repeated local time.
+
+### Example: Fall Back Hour Aggregation
+
+**UTC Reporting**
+If you run the report in UTC, the hours remain distinct:
+
+- **UTC 05:00:** 3,000,000 impressions  
+- **UTC 06:00:** 4,000,000 impressions  
+- **Total:** 7,000,000 impressions
+
+**US/Eastern Reporting**
+When the same data is viewed in **US/Eastern** during fall back:
+
+- **Local 01:00** receives impressions from:
+  - UTC 05:00 → Local 01:00  
+  - UTC 06:00 → Local 01:00  
+
+- **Displayed value for Local 01:00:**  
+  **7,000,000 impressions** (3,000,000 + 4,000,000)
+
+> [!IMPORTANT]
+> This combined value is expected because the local hour occurs twice. To avoid repeated-hour aggregation, run reports in **UTC** during DST transitions.
+
+### Reporting Recommendations
+- Use **UTC** when you need precise hourly visibility (for example, pacing, anomaly detection, or hourly QA).  
+- Use local timezone reporting when business workflows require local time interpretation, understanding that:
+  - **Fall back** results in one repeated hour (aggregated).  
+  - **Spring forward** results in one missing hour (skipped).
+
 
 ### Further complications of DST
 

@@ -165,7 +165,9 @@ Additional resources on demand partners:
 | Gamoshi | gamoshi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | GreedyGame | greedygame | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Global Sun | globalsun | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| Goldbach        | goldbach       | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        |
 | Gothamads | gothamads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| Gravite         | gravite        | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        |
 | GumGum | gumgum | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | iion | iionads | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | iMedia Digital Services (IMDS) | imds | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
@@ -256,6 +258,7 @@ Additional resources on demand partners:
 | PGAM | pgam | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | PGAMSSP | pgamssp | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Playdigo | playdigo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| Performist      | performist     | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        |
 | ProgrammaticX | progx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | PubMatic | pubmatic | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | PubNative | pubnative | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -271,7 +274,7 @@ Additional resources on demand partners:
 | RhythmOne | rhythmone | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Rich Audience | richaudience | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Rise | rise | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
-| RobustApps | robustApps | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| RobustApps | robustApps | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | RocketLab | rocketlab | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Roulax | roulax | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | RTBHouse | rtbhouse | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No | **App**: No <br>**Site**: No |
@@ -288,6 +291,9 @@ Additional resources on demand partners:
 |  seedtag | seedtag | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | ShareThrough | sharethrough | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | SilverMob | silvermob | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No |
+| ShowHeroes      | showheroes     | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: No <br> **Site**: No          |
+| ShowHeroes-bs   | showheroes-bs  | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: No <br> **Site**: No          |
+| ShowHeroesBs    | showheroesBs   | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: No <br> **Site**: No          |
 | Silverpush | silverpush | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Smaato | smaato | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Smart AdServer | smartadserver | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |

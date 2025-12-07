@@ -85,11 +85,11 @@ If you run a report for the DST-change date in local time (starting at 00:00 loc
 - If you need consistent hourly granularity (e.g., for automated tooling, QA, or charting), prefer reporting in **UTC** — this ensures a full 24-hour view without missing hours.  
 - If you report in local timezone, be aware of the DST shift: one hour will be missing on the DST-start day, and reports will reflect 23 hours.
 
-# End of DST (Fall Back)
+## End of DST (Fall Back)
 
 When Daylight Saving Time (DST) ends, clocks move **back one hour**, creating two occurrences of the same local hour (for example, **01:00–02:00** appears twice). All Monetize reporting data is stored in **UTC**, so this transition affects only how timestamps are **displayed** when you run reports in a local timezone.
 
-## How Data Is Stored
+### How Data Is Stored
 - All data is stored using **UTC timestamps**.  
 - UTC hours remain **distinct** even during DST transitions.  
 - No data is lost or duplicated at the storage layer.
@@ -101,7 +101,7 @@ During the fall-back transition, the following UTC timestamps are separate recor
 | 05:00 | Occurs before the fall-back shift in US/Eastern |
 | 06:00 | Occurs after the fall-back shift in US/Eastern |
 
-## How Timezone Conversion Works
+### How Timezone Conversion Works
 Timezone conversion happens at the **query/reporting** level.
 
 When you run a report in a timezone that undergoes a fall-back shift (for example, **US/Eastern**):
@@ -110,16 +110,16 @@ When you run a report in a timezone that undergoes a fall-back shift (for exampl
 - Because both hours are valid, Monetize **aggregates** all metrics for that repeated local hour.  
 - This is **expected behavior**, reflecting real-world repeated local time.
 
-## Example: Fall Back Hour Aggregation
+### Example: Fall Back Hour Aggregation
 
-### UTC Reporting
+**UTC Reporting**
 If you run the report in UTC, the hours remain distinct:
 
 - **UTC 05:00:** 3,000,000 impressions  
 - **UTC 06:00:** 4,000,000 impressions  
 - **Total:** 7,000,000 impressions
 
-### US/Eastern Reporting
+**US/Eastern Reporting**
 When the same data is viewed in **US/Eastern** during fall back:
 
 - **Local 01:00** receives impressions from:
@@ -132,7 +132,7 @@ When the same data is viewed in **US/Eastern** during fall back:
 > [!IMPORTANT]
 > This combined value is expected because the local hour occurs twice. To avoid repeated-hour aggregation, run reports in **UTC** during DST transitions.
 
-## Reporting Recommendations
+### Reporting Recommendations
 - Use **UTC** when you need precise hourly visibility (for example, pacing, anomaly detection, or hourly QA).  
 - Use local timezone reporting when business workflows require local time interpretation, understanding that:
   - **Fall back** results in one repeated hour (aggregated).  

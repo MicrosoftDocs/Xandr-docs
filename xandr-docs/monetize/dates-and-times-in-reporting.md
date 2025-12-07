@@ -78,7 +78,7 @@ For example:
 
 If you run a report for the DST-change date in local time (starting at 00:00 local time), you will notice that the final hour of the day appears to end one hour sooner than a normal 24-hour day. In the example above, you’d see 23 hours of data, with the local-time **23:00 CET** effectively becoming **00:00 CEST (next day)**. 
 
-> **Important**  
+> [!IMPORTANT]
 > This behavior is expected: because local time “skips” the DST-forward hour, data for that hour does *not* exist — and the day is reported as 23 hours long, even though UTC still reflects a full 24-hour span.
 
 ### Recommendation for Accurate Analysis
@@ -129,7 +129,7 @@ When the same data is viewed in **US/Eastern** during fall back:
 - **Displayed value for Local 01:00:**  
   **7,000,000 impressions** (3,000,000 + 4,000,000)
 
-> **Important**  
+> [!IMPORTANT]
 > This combined value is expected because the local hour occurs twice. To avoid repeated-hour aggregation, run reports in **UTC** during DST transitions.
 
 ## Reporting Recommendations

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 12/1/2025
+ms.date: 12/7/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -78,6 +78,40 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 The Historical report enables streamlined report creation. Users can select from various **Dimensions**, **Metrics**, and **Filters** to customize their reports.
 
 :::image type="content" source="media/create-new-report.png" alt-text="The screenshot shows how to create new reports.":::
+
+## Timing of Report Events
+
+The Historical report enables metrics to be attributed to the **hour of the originating ad request**, rather than the time when each subsequent event occurs. This ensures consistency when calculating rates for events that may occur hours after the initial ad call, such as video impressions, native impressions, and conversions.
+
+### Example
+
+In the example below, a video ad request has a 6-hour TTL, and its related events occur over several hours:
+
+| Event                 | Event Time |
+|----------------------|------------|
+| Ad Request           | 08:00      |
+| Impression           | 10:00      |
+| Post-View Conversion | 11:00      |
+
+In the **Historical report**, all these events are attributed back to the **08:00** hour when the ad request was made.
+
+#### Historical Report View
+
+| Hour | Ad Requests | Imps | Post-View Conversions | Fill Rate | Conversion Rate |
+|------|-------------|------|------------------------|-----------|------------------|
+| 08:00 | 1 | 1 | 1 | 100% | 100% |
+
+### Differences Compared to Legacy Reports
+
+Legacy reports attribute events to the **actual event time**. Using the same example, the legacy reporting view would look like this:
+
+| Hour | Ad Requests | Imps | Post-View Conversions | Fill Rate | Conversion Rate |
+|------|-------------|------|------------------------|-----------|------------------|
+| 08:00 | 1 | 0 | 0 | 0% | 0% |
+| 10:00 | 0 | 1 | 0 | 0% | 0% |
+| 11:00 | 0 | 0 | 1 | 0% | 0% |
+
+Because timestamps are handled differently, **metric counts will not match exactly** between Historical reports and legacy reports when viewed at the day or hour level. This difference is expected and reflects the underlying attribution logic.
 
 ## Time frame and data retention
 

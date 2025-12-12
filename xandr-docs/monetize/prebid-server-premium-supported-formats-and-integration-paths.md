@@ -1,10 +1,10 @@
 ---
 title: PSP Supported Formats and Integration Paths
 description: In this article, learn about the advertising formats and integration methods supported by Prebid Server Premium across devices.
-ms.date: 10/21/2025
+ms.date: 12/`2/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 # PSP supported formats and integration paths
@@ -28,7 +28,7 @@ Prebid Server Premium (PSP) supports a variety of advertising formats and integr
 | [Video Tag (/ptv or /ssptv)](non-prebid-integrations-with-psp.md) |  |  |  | Y | Y | Y |
 | [VMAP (/vmap or /ssvmap)](non-prebid-integrations-with-psp.md) |  |  |  |  |  | Y |
 | **Microsoft Monetize** |  |  |  |  |  |  |
-| [Client-Side Prebid (ut/v3/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
+| [Client-Side Prebid (openrtb2/prebidjs)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [Server-Side Prebid (openrtb2/prebid)](integrate-web-mobile-web-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [OpenRTB (/openrtb2)](non-prebid-integrations-with-psp.md) | Y | Y | Y | Y | Y |  |
 | [TinyTag (ttj)](../bidders/tinytags.md) | Y |  |  |  |  |  |

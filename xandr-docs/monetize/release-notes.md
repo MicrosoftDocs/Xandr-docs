@@ -23,6 +23,7 @@ Read about the latest updates to Monetize.
 - [June 17, 2025: Updates to Native Assembly](release-notes-20250617.md)
 - [May 09, 2025: Prebid Server Premium Brand Blocks](release-notes-psp-20250509.md)
 - [May 09, 2025: Reporting in Microsoft Monetize](release-notes-20250509.md)
+- [April 30, 2025 - Deprecation of public Prebid Cache in Microsoft Monetize](release-notes-2025-04-29.md)
 - [April 10, 2025: Copilot in Microsoft Monetize](release-notes-20250410.md)
 - [March 10, 2025: Change Log History Tool](release-notes-20250310.md)
 - [January 09, 2025: Prebid Server Premium Flexible Configurations](release-notes-20250109.md)

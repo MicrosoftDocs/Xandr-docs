@@ -1,7 +1,7 @@
 ---
 title: PSP Supported Formats and Integration Paths
 description: In this article, learn about the advertising formats and integration methods supported by Prebid Server Premium across devices.
-ms.date: 12/`2/2025
+ms.date: 12/12/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah

@@ -8,7 +8,7 @@ ms.subservice: microsoft-monetize
 ms.author: rupambaruah
 ---
 
-# December 12, 2025 - Deprecation of public Prebid Cache
+# December 12, 2025 - Upcoming deprecation of public Prebid Cache
 
 On upcoming April 30, 2026, the Microsoft-hosted (formerly AppNexus) public Prebid Cache will be deprecated. Prebid.js and Prebid Server implementations using this cache to store and retrieve video creatives need to migrate to another solution.
 

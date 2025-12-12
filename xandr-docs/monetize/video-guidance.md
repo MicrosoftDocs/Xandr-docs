@@ -13,9 +13,9 @@ This page includes guidance on running video inventory through Prebid Server Pre
 
 ## Web **Prebid.js** send top bid
 
-Guidance on setting up the Prebid.js "send top bid" integration can be found [here](integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `/ut/v3/prebid` integration:
+Guidance on setting up the Prebid.js "send top bid" integration can be found [here](integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `openrtb2/prebidjs` integration:
 
-1. Ensure the **Prebid.js** version is 8.47.0 or higher is being used.
+1. Ensure the **Prebid.js** version is 10.13.0 or higher is being used.
 1. Set `tags.video.context` based on the [values listed in the table](../supply-partners/integration-with-openrtb-2-6.md) under the section **Using "Plcmt and Placement fields together" > Xandr extensions** column.
 1. Set `tags.video.startdelay`.
 1. Configure other fields, such as `minduration`, `maxduration`, `playback_method`, `skippable`, and so on, as normal.
@@ -25,7 +25,7 @@ Guidance on setting up the Prebid.js "send top bid" integration can be found [he
 
 Guidance on setting up the *Prebid.js* send all bids integration [can be found here](../monetize/integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `/openrtb2/prebid` integration:
 
-1. Ensure the *Prebid.js* version is 8.47.0 or higher is being used.
+1. Ensure the *Prebid.js* version is 10.13.0 or higher is being used.
 1. Include the header `x-openrtb-version: 2.6`.
 2. Set `video.plcmt` based on the [values listed here](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--plcmt-subtypes---video-):
 
@@ -67,9 +67,8 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
      "s2sConfig":{
         "accountId":9325,
         "bidders":[
-           "appnexus"
-        ],
-        "defaultVendor":"appnexuspsp"
+           "msft"
+        ]
      }
   });                        
                           
@@ -83,7 +82,7 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
         "cache":{
            "bids":[
               {
-                 "bidder":"appnexus",
+                 "bidder":"msft",
                  "params":{
                     "placementId":1234567
                  }
@@ -147,7 +146,7 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
         },
         "bids":[
            {
-              "bidder":"appnexus",
+              "bidder":"msft",
               "params":{
                  "placementId":1234567,
                  "//first_comment":"Your placement ID."
@@ -192,7 +191,7 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
         },
         "bids":[
            {
-              "bidder":"appnexus",
+              "bidder":"msft",
               "params":{
                  "placementId":21230286,
                  "keywords":{

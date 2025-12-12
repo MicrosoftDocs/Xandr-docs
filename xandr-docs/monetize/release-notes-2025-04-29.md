@@ -2,15 +2,15 @@
 title: April 30, 2025 - Deprecation of public Prebid Cache
 description: Explore the April 30, 2025 release, Deprecation of public Prebid Cache
 ms.topic: release-notes
-ms.date: 04/29/2025
+ms.date: 12/12/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
 ---
 
-# April 30, 2025 - Deprecation of public Prebid Cache
+# December 12, 2025 - Upcoming deprecation of public Prebid Cache
 
-On April 30, 2025, the Microsoft-hosted (formerly AppNexus) public Prebid Cache will be deprecated. Prebid.js and Prebid Server implementations using this cache to store and retrieve video creatives need to migrate to another solution.
+On upcoming April 30, 2026, the Microsoft-hosted (formerly AppNexus) public Prebid Cache will be deprecated. Prebid.js and Prebid Server implementations using this cache to store and retrieve video creatives need to migrate to another solution.
 
 The specific cache URL is `http://prebid.adnxs.com/pbc`.
  

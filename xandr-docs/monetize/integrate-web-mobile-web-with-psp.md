@@ -1,10 +1,10 @@
 ---
 title: Integrate Web/Mobile Web with PSP
 description: In this article, find information about how to integrate web and mobile web inventory with PSP.
-ms.date: 10/21/2025
+ms.date: 12/12/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 # Integrate web/mobile web with PSP
@@ -27,13 +27,13 @@ In general, Send Top Bid should be used by default when publishers do not have b
 
 To set up Prebid.js with Send Top Bid:
 
-1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid/prebidjs.html) that uses the [Microsoft Monetize (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
+1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid/prebidjs.html) that uses the [Microsoft Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/msft.html).
 
-    This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Monetize this way.
+    This should not require any changes to the "msft" adapter setup on page if already integrated through Microsoft Monetize this way.
 
-1. Call the Microsoft Monetize SSP client-side using the `/ut/v3/prebid` endpoint.
+1. Call the Microsoft Monetize SSP client-side using the `openrtb2/prebidjs` endpoint.
 
-1. If Demand Partners are already being called client-side, remove partners other than 'appnexus' (Microsoft Monetize) from the Prebid.js client-side instance.
+1. If Demand Partners are already being called client-side, remove partners other than 'msft' (Microsoft Monetize) from the Prebid.js client-side instance.
 
 1. Configure those, and any additional SSP Demand Partners, in Microsoft Monetize via **Publishers** > **Prebid Server Premium** > **Demand Partner Configurations**.
 
@@ -53,15 +53,14 @@ Send All Bids should be used if Demand Partner-specific line items in the ad ser
 
 To set up Prebid.js with Send All Bids:
 
-1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Microsoft Monetize (AppNexus) Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/appnexus.html).
+1. [Integrate with a Prebid.js instance](https://docs.prebid.org/prebid-server/use-cases/pbs-pbjs.html) that uses the [Microsoft Prebid.js adapter](https://docs.prebid.org/dev-docs/bidders/msft.html).
 
-    This should not require any changes to the "appnexus" adapter setup on page if already integrated through Microsoft Monetize this way.
+    This should not require any changes to the "msft" adapter setup on page if already integrated through Microsoft Monetize this way.
 
    > [!NOTE]
    > 
-   > When using Prebid.js 10 and higher, the anPspParamsConverter module is not necessary.
-   > 
-   > When using Prebid.js 9.x, include the anPspParamsConverter module in every Prebid.js build for pages that use Microsoft Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
+   > When using Prebid.js 10.12 or lower, the legacy 'appnexus' adapter must be used instead of 'msft'.
+   > When using Prebid.js 9.x or lower, include the anPspParamsConverter module in every Prebid.js build for pages that use Microsoft Monetize for PSP demand. This module converts client-side calls to the format required for server-side endpoints.
 
 1. Call the Microsoft Monetize SSP client-side using the `/openrtb2/prebid` endpoint
 
@@ -72,8 +71,6 @@ Make the below changes to the s2sConfig:
 1. Set the **accountId** to your Microsoft Monetize Seller Member ID.
 
 1. Set **enabled** to **true**.
-
-1. Set **defaultVendor** to **'appnexuspsp'**.
 
 1. Set **allowUnknownBidderCodes** to **true**.
 
@@ -92,7 +89,7 @@ Make the below changes to the s2sConfig:
                 
     ```
 
-1. Include **'appnexus'** in **bidders**.
+1. Include **'msft'** in **bidders**.
 
 1. Set the timeout value to the number of ms the browser should wait for a response from Microsoft Monetize.
 
@@ -106,12 +103,19 @@ Make the below changes to the s2sConfig:
    "s2sConfig":{
       "accountId":9325,
       "bidders":[
-         "appnexus"
+         "msft"
       ],
-      "defaultVendor":"appnexuspsp",
       "enabled":true,
       "allowUnknownBidderCodes":true,
       "timeout":1000,
+      "endpoint": {
+           "p1Consent": "https://ib.adnxs.com/openrtb2/prebid",
+           "noP1Consent": "https://ib.adnxs-simple.com/openrtb2/prebid"
+       },
+       "syncEndpoint": {
+       "p1Consent": "https://prebid.adnxs.com/pbs/v1/cookie_sync",
+       "noP1Consent": "https://prebid.adnxs-simple.com/pbs/v1/cookie_sync"
+       }
       "extPrebid":{
          "targeting":{
             "pricegranularity":"dense",
@@ -138,19 +142,19 @@ In the `s2sConfig`, at least one of `includewinners` or `includebidderkeys` must
 
 If `includewinners` is true, the following targeting keys will be received:
 
-- `"hb_bidder": "appnexus"`,
+- `"hb_bidder": "msft"`,
 - `"hb_pb": "0.00"`,
 - `"hb_size": "600x500"`
 
 If `includebidderkeys` is true, the following targeting keys will be received:
 
-- `"hb_bidder_appnexus": "appnexus"`,
-- `"hb_pb_appnexus": "0.00"`,
-- `"hb_size_appnexus": "600x500"`
+- `"hb_bidder_msft": "msft"`,
+- `"hb_pb_msft": "0.00"`,
+- `"hb_size_msft": "600x500"`
 
 If `includeformat` is also set to true **in addition to either of the above parameters**, this key will be received as well:
 
-- `"hb_format_appnexus": "banner"`
+- `"hb_format_msft": "banner"`
 
 <!--## Non-prebid
 

@@ -13,6 +13,7 @@ ms.author: rupambaruah
 
 Read about the latest updates to Monetize.
 
+- [December 12, 2025: Upcoming deprecation of public Prebid Cache](release-notes-2025-04-29.md)
 - [November 12, 2025: New Deals Screen in Microsoft Monetize](release-notes-2025-11-11.md)
 - [October 22, 2025: Automated Deal Archival](release-notes-20251022.md)
 - [September 23, 2025: Unified Sign-In with Microsoft account](release-notes-20250923.md)

@@ -1,7 +1,7 @@
 ---
 title:  Microsoft Monetize - Base and Conditional Rules
 description: Learn what are Conditional rules and how you can establish priority settings for each of your onditional rules. This page also talks about Base rule to which Monetize defaults to in case none of the conditions of the impression meet the criteria of any conditional rules for a publisher. 
-ms.date: 10/21/2025
+ms.date: 12/15/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -65,6 +65,11 @@ In this situation, Monetize was unable to match the impression criteria to any e
 
 > [!IMPORTANT]
 > The use of geo targeting by state is only one condition used as an example. You could substitute placement, size, or frequency conditions and get the same result.
+
+> [!NOTE]  
+> Demand filtering applies only to managed demand and is evaluated at the start of the auction. Placement-level demand filtering overrides payment rule–level settings.  
+>  
+> For details, see [Demand filtering in payment rules](https://learn.microsoft.com/xandr/monetize/create-payment-rules?branch=main#demand-filtering).
 
 ## Related topics
 

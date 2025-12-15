@@ -26,6 +26,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "xandr-docs/monetize/manage-your-packages-rb5169-bkp.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "xandr-docs/monetize/share-your-packages-with-buyers.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
             "redirect_document_id": false
@@ -279,6 +284,17 @@
         "source_path": "xandr-docs/invest/integrated-pre-payment-functionality.md",
         "redirect_url": "https://learn.microsoft.com/de-de/xandr/invest/digital-buying",
         "redirect_document_id": false
-        }
+        },
+        {
+        "source_path": "xandr-docs/digital-platform-api/package-service.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/bidders/deal-from-package-service.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/impression-bus",
+        "redirect_document_id": false
+        },
+        
       ]
     }

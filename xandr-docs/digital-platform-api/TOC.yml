@@ -579,8 +579,6 @@
         href: creative-custom-request-template-type-service.md
     - name: Native Layout Service
       href: native-layout-service.md
-    - name: Package Service
-      href: package-service.md
     - name: Payment Rule Service
       href: payment-rule-service.md
     - name: Placement Service

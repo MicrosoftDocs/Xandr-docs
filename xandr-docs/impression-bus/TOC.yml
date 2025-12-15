@@ -73,8 +73,6 @@
       href: ../bidders/deal-buyer-access-service.md
     - name: Package Buyer Access Service
       href: ../bidders/package-buyer-access-service.md
-    - name: Deal From Package Service
-      href: ../bidders/deal-from-package-service.md
 - name: Domain List Service
   href: ../bidders/domain-list-service.md
 - name: Enhanced Bidder Profiles

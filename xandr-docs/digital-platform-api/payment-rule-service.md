@@ -1,7 +1,7 @@
 ---
 title: Payment Rule Service
 description: Learn about Payment Rule service. A payment rule sets terms for networks to pay managed publishers.
-ms.date: 10/22/2025
+ms.date: 12/15/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -12,7 +12,7 @@ ms.author: shsrinivasan
 A payment rule defines the terms by which a network pays one of its managed publishers. A network may have more than one set of payment terms with a publisher. For instance, traffic originating from certain geographic areas may have different revenue sharing agreement terms.
 
 > [!NOTE]
-> Targeting of advertisers, line items, or campaigns via the [Placement Service](./placement-service.md) will override any targeting of those objects via this service's optional `profile_id`.
+> Targeting of advertisers, or line items via the [Placement Service](./placement-service.md) will override any targeting of those objects via this service's optional `profile_id`.
 
 ## REST API
 
@@ -48,11 +48,26 @@ A payment rule defines the terms by which a network pays one of its managed publ
 | `last_modified` | timestamp | The time of the last modification to this payment rule. |
 | `filtered_advertisers` | array of objects | A list of advertisers that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Advertisers](#filtered-advertisers) below. |
 | `filtered_line_items` | array of objects | A list of line items that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Line Items](#filtered-line-items) below. |
-| `filtered_campaigns` | array of objects | A list of campaigns that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Campaigns](#filtered-campaigns) below. |
+| `filtered_campaigns` | array of objects | Deprecated. A list of campaigns that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Campaigns](#filtered-campaigns) below. |
 | `buyer_type` | enum | Which buyer types to apply this payment rule to.<br>Possible values:<br> - `"direct"`: your own, managed inventory<br> - `"external"`: 3rd party, managed inventory<br> - `"both"`<br><br>**Default**: `"both"` |
 | `max_revshare` | double | If `pricing_type` is `"dynamic"`, this is the maximum revshare percentage paid to the publisher.<br><br>**Required On**: `POST`, if `pricing_type` is `"dynamic"`. |
 | `apply_cost_on_default` | boolean | Whether or not the publisher is paid even if the auction defaults. |
-| `demand_filter_action` | enum | Decide whether to include or exclude the advertisers, line items and/or campaigns listed in the `filtered_advertisers`, `filtered_line_items`, or `filtered_campaigns` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"` |
+| `demand_filter_action` | enum | Decide whether to include or exclude the advertisers and/or line items listed in the `filtered_advertisers`, or `filtered_line_items` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"` |
+
+### Demand filtering
+
+Demand filtering can be a useful targeting capability, but it’s important to understand how it works before using it in payment rules or placements.
+
+#### Key considerations #####
+
+1. Applies only to managed demand: Demand filtering in payment rules or placements applies only to managed demand. If a placement is enabled for reselling, campaigns from third-party demand sources are not affected by demand filtering.
+2. One payment rule applies per impression: Each impression uses a single payment rule, which is selected at the start of the auction. Once selected, the payment rule determines which demand is eligible to participate.
+Because of this behavior, you can’t use payment rule demand filtering to adjust publisher payouts based on which demand source wins the auction. Specifically:
+  - **Including a line item**: 
+    When a payment rule _includes_ a specific line item, that line item is excluded from the auction when the payment rule is applied. Only other managed line items and RTB        demand are eligible to serve. For example, if filtered_line_items = `1234` and demand_filter_action = `include`, line item `1234` won’t be eligible to bid when this            payment rule is selected.
+  - **Excluding a line item**:
+    When a payment rule excludes a specific line item, only that line item is eligible to bid from managed demand. All other managed line items are excluded, while RTB demand      remains eligible. For example, if filtered_line_items = `1234` and demand_filter_action = `exclude`, only line item `1234` can bid from managed demand when this payment        rule is selected. If that line item reaches its frequency cap, is pacing, or is otherwise ineligible, no managed demand will be eligible to serve while the payment rule        remains selected.
+3. Placement-level filtering takes precedence: Demand filtering configured at the placement level overrides demand filtering configured at the payment rule level. If demand inclusions or exclusions are set on a placement, all payment rule–level demand filtering is ignored. For more information, see [Placement demand filtering](https://learn.microsoft.com/xandr/monetize/create-a-placement#step-7-apply-advanced-settings-to-your-placement-optional).
 
 ### Filtered advertisers
 
@@ -191,8 +206,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       },
       {
         "id": 95480,
@@ -219,8 +233,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       },
       {
         "id": 98434,
@@ -247,8 +260,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       },
       {
         "id": 98435,
@@ -275,8 +287,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       }
     ]
   }

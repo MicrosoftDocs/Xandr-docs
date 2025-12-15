@@ -12,7 +12,7 @@ ms.author: shsrinivasan
 A payment rule defines the terms by which a network pays one of its managed publishers. A network may have more than one set of payment terms with a publisher. For instance, traffic originating from certain geographic areas may have different revenue sharing agreement terms.
 
 > [!NOTE]
-> Targeting of advertisers, line items, or campaigns via the [Placement Service](./placement-service.md) will override any targeting of those objects via this service's optional `profile_id`.
+> Targeting of advertisers, or line items via the [Placement Service](./placement-service.md) will override any targeting of those objects via this service's optional `profile_id`.
 
 ## REST API
 
@@ -48,11 +48,11 @@ A payment rule defines the terms by which a network pays one of its managed publ
 | `last_modified` | timestamp | The time of the last modification to this payment rule. |
 | `filtered_advertisers` | array of objects | A list of advertisers that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Advertisers](#filtered-advertisers) below. |
 | `filtered_line_items` | array of objects | A list of line items that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Line Items](#filtered-line-items) below. |
-| `filtered_campaigns` | array of objects | A list of campaigns that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Campaigns](#filtered-campaigns) below. |
+| `filtered_campaigns` | array of objects | Deprecated. A list of campaigns that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Campaigns](#filtered-campaigns) below. |
 | `buyer_type` | enum | Which buyer types to apply this payment rule to.<br>Possible values:<br> - `"direct"`: your own, managed inventory<br> - `"external"`: 3rd party, managed inventory<br> - `"both"`<br><br>**Default**: `"both"` |
 | `max_revshare` | double | If `pricing_type` is `"dynamic"`, this is the maximum revshare percentage paid to the publisher.<br><br>**Required On**: `POST`, if `pricing_type` is `"dynamic"`. |
 | `apply_cost_on_default` | boolean | Whether or not the publisher is paid even if the auction defaults. |
-| `demand_filter_action` | enum | Decide whether to include or exclude the advertisers, line items and/or campaigns listed in the `filtered_advertisers`, `filtered_line_items`, or `filtered_campaigns` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"` |
+| `demand_filter_action` | enum | Decide whether to include or exclude the advertisers and/or line items listed in the `filtered_advertisers`, or `filtered_line_items` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"` |
 
 ### Filtered advertisers
 
@@ -191,8 +191,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       },
       {
         "id": 95480,
@@ -219,8 +218,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       },
       {
         "id": 98434,
@@ -247,8 +245,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       },
       {
         "id": 98435,
@@ -275,8 +272,7 @@ $ curl -c cookies -b cookies 'https://api.appnexus.com/payment-rule?publisher_id
         "daily_budget": null,
         "daily_budget_imps": null,
         "filtered_advertisers": null,
-        "filtered_line_items": null,
-        "filtered_campaigns": null
+        "filtered_line_items": null
       }
     ]
   }

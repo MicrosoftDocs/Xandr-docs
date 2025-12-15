@@ -1,7 +1,7 @@
 ---
 title: Payment Rule Service
 description: Learn about Payment Rule service. A payment rule sets terms for networks to pay managed publishers.
-ms.date: 10/22/2025
+ms.date: 12/15/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

@@ -1,7 +1,7 @@
 ---
 title: Set Page Options
 description: Use the set page options function to set page-level options placements. You can use various parameters as arguments in this function.
-ms.date: 10/22/2025
+ms.date: 12/15/2025
 ms.service: publisher-monetization
 ms.subservice: seller-tag
 ms.author: shsrinivasan
@@ -234,7 +234,7 @@ Specifies a mobile device on which the ads will be shown.
 | `syncEnabled` | boolean | Enables or disables the logic in AST that loads the `userSync` script after the auction ends.<br>**Default**: `true` |
 | `syncDelay` | number | Specifies the amount of time (in milliseconds) that AST waits after the auction ends before loading the `userSync` script.<br>**Default**: `3000` |
 | `publisherId` | number | Numeric identifier for the publisher entity used for the auction on this page. It includes the value that is passed to the `userSync` script, which provides more information downstream. |
-| `sellerId` | number | Numeric identifier of the seller entity used for the auction on this page. It includes the value that is passed to the `userSync` script, which provides more information downstream. |
+| `sellerId` | number | Numeric identifier of the seller entity used for the auction on this page. It includes the value that is passed to the `userSync` script, which provides more information downstream. Note the `sellerId` value is the same as the optional top-level member value, if set, but the `sellerId` is not automatically inherited. |
 
 Here's an example
 

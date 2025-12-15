@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Identity & User Syncing
 description: In this article, find information on the types of user identifiers available for monetization with Prebid Server Premium (PSP).
-ms.date: 10/21/2025
+ms.date: 12/15/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -38,7 +38,7 @@ Generally, iframe or all syncs must be enabled with all bidders or at least Xand
 
 ### AST
 
-Monetize Ad Server publishers using AST that prefer to maximize cookie sync opportunities by syncing on page load, instead of only syncing when Microsoft Advertising delivers an ad, must set the userSync object following the example below. The sellerId and publisherId must be replaced with the relevant values and the syncDelay may be changed from the value in the example. For more information, see [Set Page Options](../seller-tag/set-page-options.md).
+Monetize Ad Server publishers using AST that want to maximize PSP user sync opportunities must set the userSync object following the example below. The sellerId and publisherId must be replaced with the relevant values and the syncDelay may be changed from the value in the example. For more information, see [Set Page Options](../seller-tag/set-page-options.md). Note the `userSync` `sellerId` value is the same as the optional top-level member value, if set, but the `sellerId` is not automatically inherited.
 
 ```
 apntag.setPageOpts({

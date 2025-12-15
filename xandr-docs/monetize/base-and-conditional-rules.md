@@ -66,6 +66,11 @@ In this situation, Monetize was unable to match the impression criteria to any e
 > [!IMPORTANT]
 > The use of geo targeting by state is only one condition used as an example. You could substitute placement, size, or frequency conditions and get the same result.
 
+> [!NOTE]  
+> Demand filtering applies only to managed demand and is evaluated at the start of the auction. Placement-level demand filtering overrides payment rule–level settings.  
+>  
+> For details, see [Demand filtering in payment rules](https://learn.microsoft.com/xandr/monetize/create-payment-rules?branch=main#demand-filtering).
+
 ## Related topics
 
 - [Working with Payment Rules](working-with-payment-rules.md)

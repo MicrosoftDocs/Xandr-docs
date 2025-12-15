@@ -54,6 +54,21 @@ A payment rule defines the terms by which a network pays one of its managed publ
 | `apply_cost_on_default` | boolean | Whether or not the publisher is paid even if the auction defaults. |
 | `demand_filter_action` | enum | Decide whether to include or exclude the advertisers and/or line items listed in the `filtered_advertisers`, or `filtered_line_items` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"` |
 
+### Demand filtering
+
+Demand filtering can be a useful targeting capability, but it’s important to understand how it works before using it in payment rules or placements.
+
+#### Key considerations #####
+
+1. Applies only to managed demand: Demand filtering in payment rules or placements applies only to managed demand. If a placement is enabled for reselling, campaigns from third-party demand sources are not affected by demand filtering.
+2. One payment rule applies per impression: Each impression uses a single payment rule, which is selected at the start of the auction. Once selected, the payment rule determines which demand is eligible to participate.
+Because of this behavior, you can’t use payment rule demand filtering to adjust publisher payouts based on which demand source wins the auction. Specifically:
+  - **Including a line item**: 
+    When a payment rule _includes_ a specific line item, that line item is excluded from the auction when the payment rule is applied. Only other managed line items and RTB        demand are eligible to serve. For example, if filtered_line_items = `1234` and demand_filter_action = `include`, line item `1234` won’t be eligible to bid when this            payment rule is selected.
+  - **Excluding a line item**:
+    When a payment rule excludes a specific line item, only that line item is eligible to bid from managed demand. All other managed line items are excluded, while RTB demand      remains eligible. For example, if filtered_line_items = `1234` and demand_filter_action = `exclude`, only line item `1234` can bid from managed demand when this payment        rule is selected. If that line item reaches its frequency cap, is pacing, or is otherwise ineligible, no managed demand will be eligible to serve while the payment rule        remains selected.
+3. Placement-level filtering takes precedence: Demand filtering configured at the placement level overrides demand filtering configured at the payment rule level. If demand inclusions or exclusions are set on a placement, all payment rule–level demand filtering is ignored. For more information, see [Placement demand filtering](https://learn.microsoft.com/xandr/monetize/create-a-placement#step-7-apply-advanced-settings-to-your-placement-optional).
+
 ### Filtered advertisers
 
 | Field | Type | Description |

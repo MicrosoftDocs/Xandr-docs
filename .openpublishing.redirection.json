@@ -26,6 +26,11 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "xandr-docs/monetize/manage-your-packages-rb5169-bkp.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "xandr-docs/monetize/share-your-packages-with-buyers.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
             "redirect_document_id": false

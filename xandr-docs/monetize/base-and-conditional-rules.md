@@ -1,7 +1,7 @@
 ---
 title:  Microsoft Monetize - Base and Conditional Rules
 description: Learn what are Conditional rules and how you can establish priority settings for each of your onditional rules. This page also talks about Base rule to which Monetize defaults to in case none of the conditions of the impression meet the criteria of any conditional rules for a publisher. 
-ms.date: 10/21/2025
+ms.date: 12/15/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan

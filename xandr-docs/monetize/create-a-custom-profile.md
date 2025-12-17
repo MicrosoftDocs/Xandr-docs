@@ -69,6 +69,10 @@ In the Buyers section, click the Edit button. You'll be presented with a dialog 
 | Maximum | Bypass ad quality standards, do not require platform audit. |
 | Banned | Ban all creatives from this buyer. |
 
+### Bidders and Buyers
+
+_lorem ipsum_
+
 ### Categories
 
 Depending upon the category the creative falls into, you may choose to mark it as:

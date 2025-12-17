@@ -1,6 +1,6 @@
 ---
 title: Yahoo Buying Guide
-description: Learn how to access and target Xandr inventory in Yahoo DSP, including deal registration, campaign setup, and targeting options.
+description: Learn how to access and target Microsoft Monetize inventory in Yahoo DSP, including deal registration, campaign setup, and targeting options.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
 ms.subservice: bidder
@@ -9,13 +9,13 @@ ms.author: shsrinivasan
 
 # Yahoo buying guide
 
-In partnership with Yahoo DSP, Xandr has created this page to help Xandr publishers communicate with their buyers about accessing and targeting Xandr’s publisher inventory using Yahoo DSP. This information has been created in collaboration with and approved by the Yahoo DSP team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. Wherever possible, we've provided links to Yahoo DSP documentation.
+In partnership with Yahoo DSP, Microsoft Monetize has created this page to help Microsoft Monetize publishers communicate with their buyers about accessing and targeting Microsoft Monetize's publisher inventory using Yahoo DSP. This information has been created in collaboration with and approved by the Yahoo DSP team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. Wherever possible, we've provided links to Yahoo DSP documentation.
 
 We recommend that if buyers are experiencing issues or need assistance using the Yahoo DSP platform, their first point of outreach should be the Yahoo DSP support team.
 
-## Target Xandr in Yahoo DSP
+## Target Microsoft Monetize in Yahoo DSP
 
-This section explains how to create campaigns and lines in **Yahoo DSP** and target Xandr inventory.  
+This section explains how to create campaigns and lines in **Yahoo DSP** and target Microsoft Monetize inventory.  
 
 ### Set Up a campaign and line  
 
@@ -90,7 +90,7 @@ To create your first line:
 
 Complete the rest of the line/ad setup.
 
-## Targeting Xandr inventory
+## Target Microsoft Monetize inventory
 
 A line in your campaign can target or block one or more exchanges or available private marketplace deals. There are specific rules about line item targeting of exchanges and deals.
 

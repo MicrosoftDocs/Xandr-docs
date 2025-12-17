@@ -1,7 +1,7 @@
 ---
 title: Create a Custom Profile
 description: Explore creating a distinct Ad Quality Profile for a publisher, either from scratch or using a template, ensuring immunity to future template modifications.
-ms.date: 10/21/2025
+ms.date: 12/17/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan

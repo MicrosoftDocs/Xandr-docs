@@ -29,7 +29,7 @@ You can determine which creatives will be eligible to serve on your inventory ba
 
 - [Bidders](create-a-custom-profile.md#bidders)
 - [Buyers](create-a-custom-profile.md#buyers)
-- [Bidders and Buyers](create-a-custom-profile.md##bidders-and-buyers) (Limited Beta)
+- [Bidders and Buyers](create-a-custom-profile.md#bidders-and-buyers) (Limited Beta)
 - [Categories](create-a-custom-profile.md#categories)
 - [Technical Attributes](create-a-custom-profile.md#technical-attributes)
 - [Brands](create-a-custom-profile.md#brands)

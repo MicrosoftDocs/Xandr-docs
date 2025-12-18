@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Understanding Buyer Seat IDs
 description: In this article, find information about buyer seat IDs and their advantages.
-ms.date: 10/21/2025
+ms.date: 12/18/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan

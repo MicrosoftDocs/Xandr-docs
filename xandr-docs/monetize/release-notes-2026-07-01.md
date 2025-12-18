@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monetize - January 7, 2026 - Ad Quality: Enhanced bidder blocks (Closed Beta)
+title: Microsoft Monetize (January 7, 2026) Ad Quality - Enhanced bidder blocks (Closed Beta)
 description: Learn about the new Enhanced bidder blocks in Microsoft Monetize
 ms.topic: release-notes
 ms.date: 01/07/2026

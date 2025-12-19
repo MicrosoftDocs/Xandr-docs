@@ -1,7 +1,7 @@
 ---
 title: Video Guidance
 description: Learn how to run video inventory through Prebid Server Premium (PSP). This page covers concepts on Instream and Outstream along with examples.   
-ms.date: 10/21/2025
+ms.date: 12/19/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -11,7 +11,7 @@ ms.author: shsrinivasan
 
 This page includes guidance on running video inventory through Prebid Server Premium (PSP).
 
-## Web **Prebid.js** send top bid
+<!--## Web **Prebid.js** send top bid
 
 Guidance on setting up the Prebid.js "send top bid" integration can be found [here](integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `openrtb2/prebidjs` integration:
 
@@ -19,11 +19,11 @@ Guidance on setting up the Prebid.js "send top bid" integration can be found [he
 1. Set `tags.video.context` based on the [values listed in the table](../supply-partners/integration-with-openrtb-2-6.md) under the section **Using "Plcmt and Placement fields together" > Xandr extensions** column.
 1. Set `tags.video.startdelay`.
 1. Configure other fields, such as `minduration`, `maxduration`, `playback_method`, `skippable`, and so on, as normal.
-1. For more information about Monetize's support for OpenRTB 2.6, see [Integration with OpenRTB 2.6](../supply-partners/integration-with-openrtb-2-6.md).
+1. For more information about Monetize's support for OpenRTB 2.6, see [Integration with OpenRTB 2.6](../supply-partners/integration-with-openrtb-2-6.md).-->
 
-## Web **Prebid.js** send all bids
+## Web **Prebid.js** integrations
 
-Guidance on setting up the *Prebid.js* send all bids integration [can be found here](../monetize/integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through the `/openrtb2/prebid` integration:
+Guidance on setting up the **Prebid.js** integrations [can be found here](integrate-web-mobile-web-with-psp.md). To ensure video inventory is accurately represented to demand partners through either the `/openrtb2/prebidjs` or /`openrtb2/prebid` integrations:
 
 1. Ensure the *Prebid.js* version is 10.13.0 or higher is being used.
 1. Include the header `x-openrtb-version: 2.6`.
@@ -49,9 +49,9 @@ Guidance on setting up the *Prebid.js* send all bids integration [can be found h
     - `-1` generic mid-roll
     - `-2` generic post-roll
 
-5. If needed or preferred, instead of setting `video.plcmt` and `video.placement` in the bid request, the `imp.video.ext.appnexus.context` field can be used based on [values listed here](../supply-partners/integration-with-openrtb-2-6.md). The final request to demand partners will include `video.placement` and `video.plcmt` based on the logic [in the documentation](../supply-partners/integration-with-openrtb-2-6.md).
-6. Set other fields, such as `minduration`, `maxduration`, `playbackmethod`, `skip`, and so on, as normal.
-7. For more information on Monetize's support for OpenRTB 2.6, [see this page](../supply-partners/integration-with-openrtb-2-6.md).
+<!--5. If needed or preferred, instead of setting `video.plcmt` and `video.placement` in the bid request, the `imp.video.ext.appnexus.context` field can be used based on [values listed here](../supply-partners/integration-with-openrtb-2-6.md). The final request to demand partners will include `video.placement` and `video.plcmt` based on the logic [in the documentation](../supply-partners/integration-with-openrtb-2-6.md).-->
+5. Set other fields, such as `minduration`, `maxduration`, `playbackmethod`, `skip`, and so on, as normal.
+6. For more information on Monetize's support for OpenRTB 2.6, [see this page](../supply-partners/integration-with-openrtb-2-6.md).
 
 ### Instream
 

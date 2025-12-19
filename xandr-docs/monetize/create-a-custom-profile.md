@@ -1,7 +1,7 @@
 ---
 title: Create a Custom Profile
 description: Explore creating a distinct Ad Quality Profile for a publisher, either from scratch or using a template, ensuring immunity to future template modifications.
-ms.date: 10/21/2025
+ms.date: 12/17/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -29,6 +29,7 @@ You can determine which creatives will be eligible to serve on your inventory ba
 
 - [Bidders](create-a-custom-profile.md#bidders)
 - [Buyers](create-a-custom-profile.md#buyers)
+- [Bidders and Buyers](create-a-custom-profile.md#bidders-and-buyers) (Limited Beta)
 - [Categories](create-a-custom-profile.md#categories)
 - [Technical Attributes](create-a-custom-profile.md#technical-attributes)
 - [Brands](create-a-custom-profile.md#brands)
@@ -68,6 +69,43 @@ In the Buyers section, click the Edit button. You'll be presented with a dialog 
 | High | Bypass ad quality standards, require platform audit. |
 | Maximum | Bypass ad quality standards, do not require platform audit. |
 | Banned | Ban all creatives from this buyer. |
+
+### Bidders and Buyers
+
+> [!NOTE]
+> The combined Bidders and Buyers feature in Ad Quality rules is currently in Limited Beta.
+
+You can manage bidders, their associated members, and individual buyer seats that serve on your inventory by configuring trust level settings.
+
+**Trust levels**
+
+Choose from the following trust levels:
+
+| Trust level  | Description                                                     |
+| ------------ | --------------------------------------------------------------- |
+| **Standard** | Apply ad quality standards and require platform audit.          |
+| **Medium**   | Apply ad quality standards and trust buyer self-classification. |
+| **High**     | Bypass ad quality standards and require platform audit.         |
+| **Maximum**  | Bypass ad quality standards and don’t require platform audit.   |
+| **Banned**   | Block all creatives from this buyer.                            |
+
+**Inheritance and overrides**
+- **Bidders** inherit the **Default Trust** by default. You can set the Default Trust to **Standard**, **Medium**, or **Banned**, and override trust levels for specific bidders.
+- **Members** inherit the trust level of their parent bidder. You can configure member-level overrides to apply a different trust level.
+- **Buyer seats** inherit the trust level of their parent member. You can configure seat-level overrides to apply a different trust level.
+
+**Important information**
+
+- Every bidder is mapped to at least one **Microsoft Monetize Member ID**. A bidder can be mapped to multiple Member IDs.
+- If a bidder has transitioned to bidding with buyer seats, those buyer seat IDs are also mapped to an existing Microsoft Monetize Member ID.
+- A Microsoft Monetize Member ID can be mapped to multiple buyer seats, but each buyer seat ID maps to only one Member ID.
+- Sellers participating in this **Limited Beta** won’t see separate **Bidders and Buyers** sections.
+
+> [!NOTE]
+> Not all bidders define buyers using buyer seat IDs. Some bidders define buyers only through Microsoft Monetize Member IDs.
+> For more information, see [Understanding buyer seat IDs](understanding-buyer-seat-ids.md).
+
+
 
 ### Categories
 

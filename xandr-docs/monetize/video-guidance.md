@@ -49,7 +49,7 @@ Guidance on setting up the **Prebid.js** integrations [can be found here](integr
     - `-1` generic mid-roll
     - `-2` generic post-roll
 
-5. If needed or preferred, instead of setting `video.plcmt` and `video.placement` in the bid request, the `imp.video.ext.appnexus.context` field can be used based on [values listed here](../supply-partners/integration-with-openrtb-2-6.md). The final request to demand partners will include `video.placement` and `video.plcmt` based on the logic [in the documentation](../supply-partners/integration-with-openrtb-2-6.md).
+<!--5. If needed or preferred, instead of setting `video.plcmt` and `video.placement` in the bid request, the `imp.video.ext.appnexus.context` field can be used based on [values listed here](../supply-partners/integration-with-openrtb-2-6.md). The final request to demand partners will include `video.placement` and `video.plcmt` based on the logic [in the documentation](../supply-partners/integration-with-openrtb-2-6.md).-->
 6. Set other fields, such as `minduration`, `maxduration`, `playbackmethod`, `skip`, and so on, as normal.
 7. For more information on Monetize's support for OpenRTB 2.6, [see this page](../supply-partners/integration-with-openrtb-2-6.md).
 

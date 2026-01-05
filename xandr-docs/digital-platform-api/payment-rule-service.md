@@ -46,13 +46,14 @@ A payment rule defines the terms by which a network pays one of its managed publ
 | `priority` | int | You can optionally provide a priority which defines the level at which this rule should that be applied relative to other payment rules.<br><br>**Default**: `5` |
 | `timezone` | string | The timezone used to calculate pricing data. For a list of timezones, see [API Timezones](./api-timezones.md).<br><br>**Default**: `'EST5EDT'` |
 | `last_modified` | timestamp | The time of the last modification to this payment rule. |
+| `demand_filter_action` | enum | Decide whether to include or exclude the advertisers and/or line items listed in the `filtered_advertisers`, or `filtered_line_items` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"`. <br> For more details, see [Demand Filtering](#demand-filtering) below. |
 | `filtered_advertisers` | array of objects | A list of advertisers that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Advertisers](#filtered-advertisers) below. |
 | `filtered_line_items` | array of objects | A list of line items that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Line Items](#filtered-line-items) below. |
-| `filtered_campaigns` | array of objects | Deprecated. A list of campaigns that you'd like to apply the action specified by `demand_filter_action` to. See [Filtered Campaigns](#filtered-campaigns) below. |
+| `filtered_campaigns` | array of objects | Deprecated. A list of campaigns that you'd like to apply the action specified by `demand_filter_action` to.|
 | `buyer_type` | enum | Which buyer types to apply this payment rule to.<br>Possible values:<br> - `"direct"`: your own, managed inventory<br> - `"external"`: 3rd party, managed inventory<br> - `"both"`<br><br>**Default**: `"both"` |
 | `max_revshare` | double | If `pricing_type` is `"dynamic"`, this is the maximum revshare percentage paid to the publisher.<br><br>**Required On**: `POST`, if `pricing_type` is `"dynamic"`. |
 | `apply_cost_on_default` | boolean | Whether or not the publisher is paid even if the auction defaults. |
-| `demand_filter_action` | enum | Decide whether to include or exclude the advertisers and/or line items listed in the `filtered_advertisers`, or `filtered_line_items` arrays.<br>Possible values:<br> - `"include"`<br> - `"exclude"`<br>- `"default"` |
+
 
 ### Demand filtering
 
@@ -83,12 +84,12 @@ Because of this behavior, you can’t use payment rule demand filtering to adjus
 | `id` | int | The ID of the line item. |
 | `name` | string | The name of the line item. |
 
-### Filtered campaigns
+<!-- ### Filtered campaigns
 
 | Field | Type | Description |
 |:---|:---|:---|
 | `id` | int | The ID of the campaign. |
-| `name` | string | The name of the campaign. |
+| `name` | string | The name of the campaign. | -->
 
 ## Examples
 

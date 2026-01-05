@@ -130,7 +130,7 @@ Demand filtering can be a useful targeting capability, but it’s important to u
 Because of this behavior, you can’t use payment rule demand filtering to adjust publisher payouts based on which demand source wins the auction. Specifically:
     - **Including a line item**:
       If a payment rule _includes_ a specific line item, that line item is excluded from the auction when the payment rule is applied. Only other managed line items are eligible     to serve. For example, if you include line item `1234`, line item `1234` will not be eligible to bid when this payment rule is selected.
-      - **Excluding a line item**:
+    - **Excluding a line item**:
         If a payment rule _excludes_ a specific line item, only that line item is eligible to bid from managed demand. All other managed line items are excluded, while RTB demand      remains eligible. For example, if you exclude line item `1234`, only line item `1234` can bid from managed demand when this payment rule is selected. If that line item         reaches its frequency cap, is pacing, or is otherwise ineligible, no managed demand will be able to serve as long as the payment rule remains selected.
 3. Placement-level filtering takes precedence: Demand filtering configured at the placement level overrides demand filtering set at the payment rule level. If a placement includes demand inclusions or exclusions, all payment rule–level demand filtering is ignored. For more information, see [Placement demand filtering](https://learn.microsoft.com/xandr/monetize/create-a-placement#step-7-apply-advanced-settings-to-your-placement-optional).
 

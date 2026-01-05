@@ -48,6 +48,13 @@ In this situation, two rules (**Conditional Rule 6** and **Conditional Rule 8**)
 
 See [Create Payment Rules](create-payment-rules.md) for more information.
 
+> [!NOTE]  
+> Demand filtering applies only to managed demand and is evaluated at the start of the auction. Placement-level demand filtering overrides payment rule–level settings.  
+>  
+> For details, see [Demand filtering in payment rules](https://learn.microsoft.com/xandr/monetize/create-payment-rules?branch=main#demand-filtering).
+
+## Related topics
+
 ## Base rules
 
 It is possible that none of the conditions of the impression meet the criteria of any conditional rules for a publisher. In that case, Monetize defaults to the base rule. For example, assume that you have an impression that was served in Utah.
@@ -66,12 +73,7 @@ In this situation, Monetize was unable to match the impression criteria to any e
 > [!IMPORTANT]
 > The use of geo targeting by state is only one condition used as an example. You could substitute placement, size, or frequency conditions and get the same result.
 
-> [!NOTE]  
-> Demand filtering applies only to managed demand and is evaluated at the start of the auction. Placement-level demand filtering overrides payment rule–level settings.  
->  
-> For details, see [Demand filtering in payment rules](https://learn.microsoft.com/xandr/monetize/create-payment-rules?branch=main#demand-filtering).
 
-## Related topics
 
 - [Working with Payment Rules](working-with-payment-rules.md)
 - [Create Payment Rules](create-payment-rules.md)

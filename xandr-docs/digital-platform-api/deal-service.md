@@ -1,7 +1,7 @@
 ---
 title: Deal Service
 description: Use the deal service to let buyers, sellers, and external bidders set up and manage negotiated deals.
-ms.date: 10/22/2025
+ms.date: 1/5/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -228,6 +228,10 @@ Each `brands` object contains the following fields:
 ### Allowed media types
 
 You can use this array to limit the media type, the general display style of creatives, that can serve on placements that are part of this deal.
+
+If specified, the deal is added only to auctions where the selected media type is available.
+
+Some auctions support multiple media types. If the selected media type is supported in the auction, the deal is eligible to participate.
 
 Each `allowed_media_types` object contains the following fields:
 

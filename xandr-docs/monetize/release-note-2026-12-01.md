@@ -12,7 +12,7 @@ ms.author: rupambaruah
 
 **Release date:** January 12, 2026  
 **Product:** Microsoft Monetize
-**Area**: Seller Monitoring Workflow (SMW)
+<br>**Area**: Seller Monitoring Workflow (SMW)
 **Status**: Phased rollout
 
 ## Overview

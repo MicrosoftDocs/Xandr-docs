@@ -8,7 +8,7 @@ ms.subservice: microsoft-monetize
 ms.author: rupambaruah
 ---
 
-# Ad Quality: Enhanced bidder blocks (Limited Beta)
+# Seller Monitoring Workflow (SMW) UI Modernization (Fluent UI)
 
 **Release date:** January 12, 2026  
 **Product:** Microsoft Monetize

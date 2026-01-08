@@ -13,7 +13,7 @@ ms.author: rupambaruah
 **Release date:** January 12, 2026  
 **Product:** Microsoft Monetize
 <br>**Area**: Seller Monitoring Workflow (SMW)
-**Status**: Phased rollout
+<br>**Status**: Phased rollout
 
 ## Overview
 Microsoft Monetize is modernizing the Seller Monitoring Workflow (SMW) by migrating the user interface from anxreact to Fluent UI. This update improves accessibility, aligns Monetize with Microsoft-wide UI standards, and lays the foundation for future enhancements.

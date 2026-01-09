@@ -45,6 +45,20 @@ Sometimes, your goal can be achieved with other tools in Monetize rather than a 
   - help buyers with deal troubleshooting
 - In general, we recommend creating deals that run indefinitely (no deal end date). End dates can be used for seasonal or time-sensitive type deals such as a Cyber Monday special.
 
+### Deal library inclusion
+#### Microsoft Monetize deal library naming requirements
+
+> [!IMPORTANT]
+> Deals must follow a specific naming format to appear in Microsoft Monetize deal catalogs. If you want a deal to surface in libraries curated by Microsoft Monetize, download the taxonomy generator [here](https://download.microsoft.com/download/cf42d5d7-6802-4fd4-b2c0-4f1805fc328d/Display%20and%20Native%20Taxonomy%20Generator%2022.xlsx) to create a deal name with the correct naming convention. Paste the generated name into the **Deal name** field during deal creation.
+
+#### Curator seat as a buyer
+> [!NOTE]
+> In order to be eligible to be included in our deal library, you must add the relevant Microsoft Curator seat as a buyer on the deal, based on your account geolocation. The relevant seats are:
+> - US sellers: 10652
+> - CAN sellers: 12414
+> - Rest-of-World sellers: 15069
+
+
 ### Setting deal pricing
 
 Consider the right pricing for each deal to ensure maximum revenue while providing value to your buyers.

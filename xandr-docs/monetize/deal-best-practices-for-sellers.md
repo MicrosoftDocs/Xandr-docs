@@ -53,7 +53,7 @@ Sometimes, your goal can be achieved with other tools in Monetize rather than a 
 
 #### Curator seat as a buyer
 > [!NOTE]
-> In order to be eligible to be included in our deal library, you must add the relevant Microsoft Curator seat as a buyer on the deal, based on your account country. The relevant seats are:
+> In order to be eligible to be included in our deal library, you must add the relevant Microsoft Curator seat as a buyer on the deal, based on your account geolocation. The relevant seats are:
 > - US sellers: 10652
 > - CAN sellers: 12414
 > - Rest-of-World sellers: 15069

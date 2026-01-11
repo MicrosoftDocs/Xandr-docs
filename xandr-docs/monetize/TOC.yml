@@ -290,14 +290,13 @@
     items:
     - name: Working with Advertisers
       href: working-with-advertisers.md
+    - name: View Advertiser Details
+      href: view-advertiser-details.md
     - name: Create an Advertiser
       href: create-an-advertiser.md
     - name: Digital Services Act
       href: digital-services-act.md
-    - name: Explore and Manage Advertisers
-      href: explore-and-manage-advertisers.md
-    - name: View Advertiser Details
-      href: view-advertiser-details.md
+    
   - name: Insertion Orders
     items:
     - name: Working with Insertion Orders
@@ -1732,6 +1731,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: January 12, 2026 - Seller Monitoring Workflow (SMW) UI Modernization (Fluent UI)
+    href: release-note-2026-12-01.md
   - name: January 6, 2026 - Enhanced bidder blocks in Ad Quality (Limited Beta)
     href: release-notes-2026-06-01.md
   - name: December 12, 2025 - Upcoming deprecation of public Prebid Cache

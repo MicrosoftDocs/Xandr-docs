@@ -17,7 +17,7 @@ To access the Advertisers screen:
 - Navigate to **Advertisers >Advertisers** from the left pane  
 - Select an Advertiser whose details you want to view.
 - The screen contains the following sections:
-    - **Settings**: It provides basic information about the Advertiser such as basic setup, associated fees, associated insertion orders, and frequency and recency. See [View Advertiser Settings](#view-advertiser-settings) for more information.
+    - **Settings**: It provides basic information about the Advertiser such as basic setup, associated fees, associated insertion orders, and frequency and recency. 
     - **Edit**: It helps you edit an Advertiser.
     - **Go to reporting**: Navigates to reporting screen.
 

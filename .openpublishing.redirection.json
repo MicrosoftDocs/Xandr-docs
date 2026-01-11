@@ -295,6 +295,11 @@
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/impression-bus",
         "redirect_document_id": false
         },
+        {
+        "source_path": "xandr-docs/monetize/explore-and-manage-advertisers.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/working-with-advertisers",
+        "redirect_document_id": false
+        }
         
       ]
     }

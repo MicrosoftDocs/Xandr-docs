@@ -91,3 +91,8 @@ To view advanced details about an advertiser, click on the advertiser you want t
 
 You can download advertiser details by selecting the advertiser(s) and clicking on **Download** button.
 
+### Related topics
+
+- [View Advertiser Details](view-advertiser-details.md)
+- [Create an Advertiser](create-an-advertiser.md)
+

@@ -1,13 +1,24 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 10/22/2025
+ms.date: 1/13/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 
 # Android SDK release notes
+
+## 9.10.0
+
+### New Feature
+
++ 10173606: Enhancement that adds bulk custom keyword support to address performance issues.
++ 10149666: Added Publisher Provided ID (PPID) support for Google Mediation.
+
+
+### Improvement/Bug Fixes
++ 10145721: Add Device Screen Information to ut/v3 Request.
 
 ## 9.9.0
 

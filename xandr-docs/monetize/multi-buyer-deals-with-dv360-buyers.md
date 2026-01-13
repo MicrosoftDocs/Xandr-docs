@@ -56,7 +56,7 @@ Deals targeted to a Central Partner ID are accessible to all Partner IDs that fa
 
 A deal can target only **one Central Partner ID**. However, you can also include additional buyers from other DSPs within the same deal.
 
-![Note]
+> ![Note]
 > A Central Partner ID often includes the term *Central Partner ID* in its name, but this is not guaranteed. You are responsible for confirming with the buyer whether the provided ID is a Partner ID or a Central Partner ID.
 
 ---

@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 1/13/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -13,6 +13,26 @@ ms.author: shsrinivasan
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+
+
+## 9.10.0
+ 
+### New Feature
+
++ 10092391: Enhancement that adds bulk custom keyword support to address performance issues.
++ 10149666: Added Publisher Provided ID (PPID) support for Google Mediation.
+ 
+### Improvement/Bug Fixes
++ 10121001: Fixed crash EXC_CRASH crash in [ANUniversalTagRequestBuilder request].
++ 10121017: Bug fix addressing incorrect banner video sizes.
++ 10121017: Bug fix addressing initialAudio in banner video.
++ 10145721: Add Device Screen Information to ut/v3 Request.
+
+## 9.9.1
+
+### Improvement/Bug Fixes
++ 10096941: Fixed crash when ut/v3 response contains oRTB assets and native elements at the same time.
+  
 ## 9.9.0
  
 ### New Feature

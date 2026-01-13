@@ -1,5 +1,5 @@
 ---
-title: Create Deals from the Native Assembly Gallery
+title: Create Deals from Native Assembly Gallery
 description: You can now create deals directly from Native assembly gallery, streamlining the workflow between native inventory configuration and deal creation.
 ms.date: 01/13/2026
 ms.service: publisher-monetization
@@ -7,11 +7,9 @@ ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 
-# Create deals from the Native assembly gallery
+# Create deals from Native assembly gallery
 
-## Overview
-
-You can now create deals directly from Native assembly gallery, streamlining the workflow between native inventory configuration and deal creation. This capability reduces setup time by prepopulating key deal fields and automatically associating relevant inventory, while still allowing full flexibility to make changes as needed. This workflow enables you to:
+You can create deals directly from Native assembly gallery, streamlining the workflow between native inventory configuration and deal creation. This capability reduces setup time by prepopulating key deal fields and automatically associating relevant inventory, while still allowing full flexibility to make changes as needed. This workflow enables you to:
 - Create a deal using one or more Native Assembly renderers
 - Automatically associate relevant placements and configurations
 - Start with a preformatted deal name that aligns with library taxonomy requirements

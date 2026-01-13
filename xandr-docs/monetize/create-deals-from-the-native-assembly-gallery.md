@@ -34,6 +34,6 @@ You can create deals directly from Native assembly gallery, streamlining the wor
 
 ## Related topics
 
-- [Overview ofNative Assembly](native-assembly.md)
+- [Overview of Native Assembly](native-assembly.md)
 - [Create a Native Assembly](create-a-native-assembly.md)
 

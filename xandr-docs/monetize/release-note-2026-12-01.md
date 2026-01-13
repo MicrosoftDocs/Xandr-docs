@@ -64,3 +64,7 @@ At initial GA, the following limitations may apply:
 - **Saved views**: Saved views are not available at GA and are planned as a fast-follow update.
 
 These limitations **do not** block primary SMW workflows.
+
+## Related topics
+- [Working with advertisers](working-with-advertisers.md)
+- [View advertiser details](view-advertiser-details.md)

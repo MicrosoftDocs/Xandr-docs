@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
 description: Learn how a seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers is possible. This page also covers best practices to be followed for deal set up.  
-ms.date: 11/28/2025
+ms.date: 1/14/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -10,15 +10,15 @@ ms.author: shsrinivasan
 
 # Microsoft Monetize - Publisher guide for deal Sync with Trade Desk 
 
-> [!NOTE]
-> This feature is in **Beta**. It is only available to select clients. Please consult your Account Manager if you'd like to be added to the beta test.
+<!-- > [!NOTE]
+> This feature is in **Beta**. It is only available to select clients. Please consult your Account Manager if you'd like to be added to the beta test. -->
 
 ## Overview
 
 Microsoft Advertising's integration with the Trade Desk Proposal API automatically synchronizes the deals created in Microsoft Monetize with the Trade Desk system. This enables a more seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers.
 
-> [!IMPORTANT]
-> You can manually set up deals with Trade Desk, but this requires buyers to manually register publisher deals in the Trade Desk user interface. (Details of the manual process can be found in [Trade Desk Buying Guide](../bidders/trade-desk-buying-guide.md)) The manual process of setting up deals can result in delays and issues due to human error.
+<!-- > [!IMPORTANT]
+> You can manually set up deals with Trade Desk, but this requires buyers to manually register publisher deals in the Trade Desk user interface. (Details of the manual process can be found in [Trade Desk Buying Guide](../bidders/trade-desk-buying-guide.md)) The manual process of setting up deals can result in delays and issues due to human error. -->
 
 The key benefits of using an automatic synchronization process are:
 
@@ -47,13 +47,29 @@ Updates to newly created deals (post deal sync enablement) automatically get upl
 - Updates to existing deals will be will be uploaded up to 3 hours after updates are done (depending on when the last sync script ran).
 - Buyer acceptance statuses will take a few hours to properly sync.
 
-## What is changing
+<!-- ## What is changing
 
 While there are no changes to how a publisher create deals in Microsoft Monetize UI, publishers should be aware of which type of deals are automatically synchronized and which deals still continue to follow the manual workflow.
 
 - All new deals created in the alpha are synchronized with Trade Desk, with the exceptions of:
   - Deals created with a Trade Desk Buyer Member ID instead of a Bidder Seat ID Trade Desk Partner ID.
-  - Deals created prior to the seller's enablement of deal sync with Trade Desk.
+  - Deals created prior to the seller's enablement of deal sync with Trade Desk. -->
+
+## Checking deal sync status
+
+You can view a deal’s sync status in the **Deal screen** under the **Buyer** column. For **single-buyer deals**, the sync status appears directly in the grid. For **multi-buyer deals**, buyer-specific sync details are available in the **Settings** side pane. Sync status is not displayed for deals targeted to the entire DSP.
+
+The following sync status labels may appear:
+
+- **Syncing** – The deal is queued for synchronization in the next hourly batch.  
+- **Syncing Error** – The deal attempted to sync but an error occurred. The system will retry in the next batch.  
+- **Pending** – The deal was successfully sent to the DSP and is awaiting buyer acceptance.  
+- **Accepted** – The buyer has accepted the deal in their DSP.
+- **Targeted** - The buyer is actively targeting the deal with at least one line item.
+- **Archived** – The buyer archived the deal in the DSP and can no longer buy against it.  
+- **Declined** – The buyer declined the deal. Contact the buyer directly for more information.
+
+You can also filter deals by sync status using the **Filters** option at the top of the Deal screen, next to the search bar.
 
 ## Best practices for deal set up
 

@@ -5,10 +5,10 @@ ms.topic: release-notes
 ms.date: 01/14/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: rupambaruah
+ms.author: rbaruah
 ---
 
-## Deal Sync Status available in the new Deal screen  
+# Deal Sync Status available in the new Deal screen  
 
 **Release date:** January 14, 2026  
 **Product:** Microsoft Monetize  
@@ -23,5 +23,5 @@ Available sync statuses include **Syncing**, **Syncing Error**, **Pending**, **A
 This update improves transparency into deal readiness, reduces activation delays, and minimizes the need for manual validation through support or buyer outreach.
 
 ## Related topics
-- []()
+- [Publisher guide for deal sync with DV360](deal-sync-with-dv360-publisher-guide.md)
 - [Setup multi buyer deals with DV360 buyers](multi-buyer-deals-with-dv360-buyers.md)

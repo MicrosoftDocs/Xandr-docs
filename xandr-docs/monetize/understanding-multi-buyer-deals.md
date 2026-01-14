@@ -1,7 +1,7 @@
 ---
 title: Understanding Multi-Buyer Deals
 description: In this article, find information about multi-buyer deals and the advantages that they offer to sellers.
-ms.date: 10/21/2025
+ms.date: 1/14/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -36,3 +36,4 @@ For more information, see [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md
 - [Create a Simplified Deal Line Item](create-a-simplified-deal-line-item.md)
 - [Multi-Buyer Seller Deal Metrics](multi-buyer-seller-deal-metrics.md)
 - [Set Up Multi-Buyer Deals](set-up-multi-buyer-deals.md)
+- [Set Up Multi-Buyer Deals with DV360 buyers](multi-buyer-deals-with-dv360-buyers.md)

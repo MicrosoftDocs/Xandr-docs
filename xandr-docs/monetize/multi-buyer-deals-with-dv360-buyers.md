@@ -47,7 +47,7 @@ The deal configuration process remains the same as for a single-buyer deal. The 
 
 To set up a multi-buyer deal:
 
-1. Create a new deal or edit an existing deal.
+1. Create a new deal.
 2. In the **Buyer** section, select a **Central Partner ID** instead of a Partner ID.
 3. Complete the remaining deal settings as required.
 4. Save the deal.

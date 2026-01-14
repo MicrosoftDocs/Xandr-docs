@@ -1,7 +1,7 @@
 ---
 title: DV360 Buying Guide
 description: Explore efficient connection on DV360, linking publishers and buyers for streamlined communication and optimization through inventory access and targeting.
-ms.date: 10/21/2025
+ms.date: 1/14/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -22,6 +22,7 @@ In a few cases, DV360 and Xandr use different terminology, as shown in the follo
 | [Non-Guaranteed Fixed Deals](https://support.google.com/displayvideo/answer/3289692) (formerly known as Preferred Deals) | Private Deal involving one publisher and one buyer. |
 | [Non-Guaranteed Auctions](https://support.google.com/displayvideo/answer/3289702) (formerly known as Private Auctions) | Multi-Buyer Deal involving one publisher and many buyers. |
 | Partner ID | Buyer Seat ID |
+| Central Partner ID | Buyer Seat ID (Group Seat). For more information, see [Set Up Multi-Buyer Deals with DV360 Buyers](../monetize/multi-buyer-deals-with-dv360-buyers.md) | 
 
 ## Use DV360 to buy Xandr open auction and deals inventory
 

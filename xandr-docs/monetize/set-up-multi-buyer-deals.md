@@ -1,13 +1,16 @@
 ---
 title: Set Up Multi-Buyer Deals
 description: Explore setting up deals with multiple buyers across platforms/DSPs, involving all buyers on a specific platform.
-ms.date: 10/21/2025
+ms.date: 1/14/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 
 # Set up multi-buyer deals
+
+> [!NOTE]
+> If you want to create a deal that is accessible to multiple DV360 buyers, see [Set up multi-buyer deals with DV360 buyers](multi-buyer-deals-with-dv360-buyers.md) instead.
 
 You can set up Multi-Buyer Deals in two different ways:
 

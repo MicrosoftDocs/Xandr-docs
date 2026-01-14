@@ -238,6 +238,8 @@
       href: deal-auction-mechanics-for-second-price-auction.md
     - name: Deal Sync with DV360 - Publisher Guide
       href: deal-sync-with-dv360-publisher-guide.md
+    - name: Set Up Multi Buyer Deal with DV360
+      href: multi-buyer-deals-with-dv360-buyers.md
     - name: DV360 Buyer UI Deal Acceptance Workflows
       href: dv360-buyer-deal-acceptance-wf.md
     - name: Deal Sync with DV360 - FAQ
@@ -1731,6 +1733,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: January 14, 2026 - Deal Sync Status available in the new Deal screen
+    href: release-notes-2026-01-14.md
   - name: January 12, 2026 - Seller Monitoring Workflow (SMW) UI Modernization (Fluent UI)
     href: release-note-2026-12-01.md
   - name: January 6, 2026 - Enhanced bidder blocks in Ad Quality (Limited Beta)

@@ -10,7 +10,7 @@ ms.author: shsrinivasan
 # Set up multi-buyer deals
 
 > [NOTE]!
-> If you want to create a deal that is accessible to multiple DV360 buyers, see Set up multi-buyer deals with DV360 buyers instead.
+> If you want to create a deal that is accessible to multiple DV360 buyers, see [Set up multi-buyer deals with DV360 buyers](multi-buyer-deals-with-dv360-buyers.md) instead.
 
 You can set up Multi-Buyer Deals in two different ways:
 

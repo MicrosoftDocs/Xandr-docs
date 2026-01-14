@@ -8,7 +8,7 @@ ms.subservice: microsoft-monetize
 ms.author: rupambaruah
 ---
 
-## Deal Sync Status available in the new Deal screen  
+# Deal Sync Status available in the new Deal screen  
 
 **Release date:** January 14, 2026  
 **Product:** Microsoft Monetize  

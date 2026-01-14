@@ -5,7 +5,7 @@ ms.topic: release-notes
 ms.date: 01/14/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-ms.author: rupambaruah
+ms.author: rbaruah
 ---
 
 # Deal Sync Status available in the new Deal screen  

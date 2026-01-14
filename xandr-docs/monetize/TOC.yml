@@ -1121,7 +1121,7 @@
         href: navigate-to-the-native-assembly-gallery.md
       - name: Create a Native Assembly
         href: create-a-native-assembly.md
-      - name: Create Deals from the Native Assembly Gallery
+      - name: Create Deals from Native Assembly
         href: create-deals-from-the-native-assembly-gallery.md
       - name: Native Assembly Renderer Best Practices
         href: native-assembly-renderer-best-practices.md

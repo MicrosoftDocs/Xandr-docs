@@ -13,6 +13,7 @@ ms.author: rupambaruah
 
 Read about the latest updates to Monetize.
 
+- [January 14, 2026: Deal Sync Status available in the new Deal screen](release-notes-2026-01-14.md)
 - [January 12, 2026: Seller Monitoring Workflow (SMW) UI Modernization (Fluent UI)](release-note-2026-12-01.md)
 - [January 6, 2026: Ad Quality: Enhanced bidder blocks (Limited Beta)](release-notes-2026-06-01.md)
 - [December 12, 2025: Upcoming deprecation of public Prebid Cache](release-notes-2025-04-29.md)

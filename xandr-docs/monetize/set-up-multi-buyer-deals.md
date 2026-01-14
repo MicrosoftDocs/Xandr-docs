@@ -10,7 +10,9 @@ ms.author: shsrinivasan
 # Set up multi-buyer deals
 
 > [NOTE]!
-> If you want to create a deal that is accessible to multiple DV360 buyers, see Set up multi-buyer deals with DV360 buyers instead. You can set up Multi-Buyer Deals in two different ways:
+> If you want to create a deal that is accessible to multiple DV360 buyers, see Set up multi-buyer deals with DV360 buyers instead.
+
+You can set up Multi-Buyer Deals in two different ways:
 
 1. Multi-buyer deals with multiple buyers across various DSPs
 1. Bidder-level deals with all buyers on a DSP

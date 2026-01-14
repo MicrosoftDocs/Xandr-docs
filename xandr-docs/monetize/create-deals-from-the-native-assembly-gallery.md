@@ -12,7 +12,7 @@ ms.author: shsrinivasan
 You can create deals directly from Native assembly, streamlining the workflow between native inventory configuration and deal creation. This capability reduces setup time by prepopulating key deal fields and automatically associating relevant inventory, while still allowing full flexibility to make changes as needed. This workflow enables you to:
 - Create a deal using one or more Native Assembly renderers
 - Automatically associate relevant placements and configurations
-- Start with a [preformatted deal name](deal-best-practices-for-sellers#deal-library-inclusion.md) that aligns with library taxonomy requirements
+- Start with a [preformatted deal name](deal-best-practices-for-sellers.md#deal-library-inclusion) that aligns with library taxonomy requirements
 - Accelerate deal setup while retaining full control over final configurations
 
 

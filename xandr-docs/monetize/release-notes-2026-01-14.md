@@ -1,8 +1,8 @@
 ---
-title: Microsoft Monetize (January 13, 2026) Deal Sync Status available in the new Deal screen 
+title: Microsoft Monetize (January 14, 2026) Deal Sync Status available in the new Deal screen 
 description: Learn about the new deal Sync Status available in the new Deal screen 
 ms.topic: release-notes
-ms.date: 01/13/2026
+ms.date: 01/14/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -10,7 +10,7 @@ ms.author: rupambaruah
 
 ## Deal Sync Status available in the new Deal screen  
 
-**Release date:** January 13, 2026  
+**Release date:** January 14, 2026  
 **Product:** Microsoft Monetize  
 **Area:** Deals  
 

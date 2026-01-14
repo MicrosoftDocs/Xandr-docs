@@ -23,5 +23,5 @@ Available sync statuses include **Syncing**, **Syncing Error**, **Pending**, **A
 This update improves transparency into deal readiness, reduces activation delays, and minimizes the need for manual validation through support or buyer outreach.
 
 ## Related topics
-- []()
+- [Publisher guide for deal sync with DV360](deal-sync-with-dv360-publisher-guide.md)
 - [Setup multi buyer deals with DV360 buyers](multi-buyer-deals-with-dv360-buyers.md)

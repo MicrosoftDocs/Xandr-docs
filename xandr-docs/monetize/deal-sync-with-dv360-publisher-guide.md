@@ -65,8 +65,7 @@ The following sync status labels may appear:
 - **Syncing** – The deal is queued for synchronization in the next hourly batch.  
 - **Syncing Error** – The deal attempted to sync but an error occurred. The system will retry in the next batch.  
 - **Pending** – The deal was successfully sent to the DSP and is awaiting buyer acceptance.  
-- **Accepted** – The buyer has accepted the deal in their DSP.  
-- **Targeted** – The buyer is actively targeting the deal with at least one line item.  
+- **Accepted** – The buyer has accepted the deal in their DSP. 
 - **Archived** – The buyer archived the deal in the DSP and can no longer buy against it.  
 - **Declined** – The buyer declined the deal. Contact the buyer directly for more information.
 

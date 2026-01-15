@@ -25,3 +25,4 @@ This update improves transparency into deal readiness, reduces activation delays
 ## Related topics
 - [Publisher guide for deal sync with DV360](deal-sync-with-dv360-publisher-guide.md)
 - [Setup multi buyer deals with DV360 buyers](multi-buyer-deals-with-dv360-buyers.md)
+- [Publisher guide for deal Sync with Trade Desk](deal-sync-with-trade-desk-publisher-guide.md)

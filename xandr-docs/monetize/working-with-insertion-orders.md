@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Working with Insertion Orders
 description: Explore simplified line item management, sharing budgets & diverse targeting through Insertion Orders in the Object Hierarchy.
-ms.date: 10/21/2025
+ms.date: 1/16/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan

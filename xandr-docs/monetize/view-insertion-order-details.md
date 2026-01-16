@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - View the SMW Grid for Insertion Orders
 description: Explore vital settings, metrics, and visuals in Insertion Order Details. Boost video viewability by using the VPAID wrapper. Learn how to access the Seller Monitoring Workflow (SMW) feature for Insertion Orders from any Microsoft Monetize screen.
-ms.date: 10/21/2025
+ms.date: 1/16/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -31,7 +31,7 @@ The settings that display here are read-only and can be edited by selecting **Ed
 
 | Setting | Description |
 |---|---|
-| Associated Line Items | Displays a list of the Line items currently associated with the Insertion order.|
+| Associated Line Items | Displays a list of the Line items currently associated with the Insertion order. You can click on the line item name to see its details. |
 | Budgeting | Displays budget and fee information associated with the insertion order. |
 | Billing | Displays billing code and any billing periods set up on the insertion order. |
 | Teams | Displays the teams that has been associated with the insertion orders. |
@@ -42,12 +42,12 @@ The settings that display here are read-only and can be edited by selecting **Ed
 
 <!-- Political Advertising | If political advertising is enabled, displays the political organization associated with the insertion order, along with required disclosures and forms. -->
 
-## View child object details
+<!-- ## View child object details
 
 To view child object details:
 
 1. Select the **Associated Objects** menu on the top right corner of the SMW grid.
-1. Select the appropriate object category such as **Creatives** or **Inventory Lists**.
+1. Select the appropriate object category such as **Creatives** or **Inventory Lists**. -->
 
 ## View change history
 
@@ -83,4 +83,3 @@ This audit history helps ensure transparency and accountability by providing a c
 
 - [Working with Insertion Orders](working-with-insertion-orders.md)
 - [Create an Insertion Order](create-an-insertion-order.md)
-- [Change Log History Tool](change-log-history-tool.md)

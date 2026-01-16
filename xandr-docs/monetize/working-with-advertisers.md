@@ -46,6 +46,7 @@ The following stats are shown for each advertiser. Note that the data always ref
 ## Edit columns and sort
 You can customize the columns that appear on the Advertisers screen. Use **Edit columns and sorts** to add, remove, or reorder columns in the grid.
 
+## Columns
 Columns are grouped into the following categories.
 
 ### Basic info
@@ -74,6 +75,35 @@ Columns are grouped into the following categories.
 | **Line Items** | The number of line items associated with the advertiser.       |
 
 Click on **Apply** to save your settings.
+
+## Sorts
+
+You can sort the data displayed on the screen by selecting one or more fields. Use **Edit columns and sorts**, then select the **Sorts** tab to add, remove, or reorder sorts.
+
+Sorts are applied in the order shown, from top to bottom.
+
+---
+
+### Basic info
+
+| Sort | Description |
+|-----|-------------|
+| **Advertiser ID** | Sorts advertisers by their unique ID. |
+| **External Code** | Sorts advertisers by their external identifier. |
+
+---
+
+### Performance
+
+| Sort | Description |
+|-----|-------------|
+| **Rev Delivery (Last 7 Days)** | Sorts advertisers by the amount of revenue delivered in the last seven days. |
+| **Imp Delivery (Last 7 Days)** | Sorts advertisers by the number of impressions delivered in the last seven days. |
+| **CTR (Last 7 Days)** | Sorts advertisers by click-through rate in the last seven days. |
+| **Deal Revenue** | Sorts advertisers by revenue generated from deals. |
+| **Viewability Rate IAB (Last 7 Days)** | Sorts advertisers by IAB viewability rate in the last seven days. |
+| **Viewability Rate Custom (Last 7 Days)** | Sorts advertise
+
 
 ## Managing advertisers - bulk action toolbar
 

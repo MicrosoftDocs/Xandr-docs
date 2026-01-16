@@ -303,8 +303,6 @@
     items:
     - name: Working with Insertion Orders
       href: working-with-insertion-orders.md
-    - name: Explore Insertion Orders
-      href: explore-insertion-orders.md
     - name: View Insertion Order Details
       href: view-insertion-order-details.md
     - name: Create an Insertion Order

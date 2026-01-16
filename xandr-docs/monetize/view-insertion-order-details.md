@@ -19,13 +19,9 @@ To access the [Insertion Order](explore-insertion-orders.md) screen:
 - The SMW grid for the **Insertion Order** details will be displayed. 
 
 The screen contains the following sections:
-    - **Settings**: It provides basic information about the Insertions order such as budgeting, billing, supply strategy, reporting labels, etc.. See [View Insertion Order Settings](#view-insertion-order-settings) for more information.
-    - **History**: The **History** tab displays a detailed audit log of changes made to the object. It helps you track when changes were made, what fields were updated, and who made the updates. See [View Change History](#view-change-history) for more information.
-
-
-
-
-    - **Edit**: It helps you edit an Insertion order.
+- **Settings**: It provides basic information about the Insertions order such as budgeting, billing, supply strategy, reporting labels, etc.. See [View Insertion Order Settings](#view-insertion-order-settings) for more information.
+- **History**: The **History** tab displays a detailed audit log of changes made to the object. It helps you track when changes were made, what fields were updated, and who made the updates. See [View Change History](#view-change-history) for more information.
+- **Edit**: It helps you edit an Insertion order.
     <!-- - **Line Items**: It provides a list of the Line items currently associated with the Insertion order.
     - **Associated Objects**: It provides a list of associated objects with the Insertion order. See [View Child Object Details](#view-child-object-details) for more information.-->
 

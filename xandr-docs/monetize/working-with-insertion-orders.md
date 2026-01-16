@@ -96,7 +96,7 @@ This opens the **Modify Columns** dialog. From there you can use the checkboxes 
 
 You can customize the columns that appear on the Insertion Order screen. Use **Edit columns and sorts** to add, remove, or reorder columns in the grid.
 
-### Columns
+### Edit columns
 
 You can customize the columns that appear on the screen. Use Edit columns and sorts to add, remove, or reorder columns in the grid.
 
@@ -128,19 +128,11 @@ Columns are grouped into the following categories.
 | -------------- | ------------------------------------------------------------- |
 | **Line Items** | The number of line items associated with the insertion order. |
 
-### Sorts
+### Edit sorts
 
 You can sort the data displayed on the screen by selecting one or more fields. Use Edit columns and sorts, then select the Sorts tab to add, remove, or reorder sorts.
 
 Sorts are applied in the order shown, from top to bottom.
-
-## Sorts
-
-You can sort the data displayed on the screen by selecting one or more fields. Use **Edit columns and sorts**, then select the **Sorts** tab to add, remove, or reorder sorts.
-
-Sorts are applied in the order shown, from top to bottom.
-
-
 
 **Basic info**
 
@@ -148,15 +140,11 @@ Sorts are applied in the order shown, from top to bottom.
 |-----|-------------|
 | **Insertion Order ID** | Sorts insertion orders by their unique ID. |
 
-
-
 **Billing period**
 
 | Sort | Description |
 |-----|-------------|
 | **Budget Interval End Date** | Sorts insertion orders by the end date of the current budget interval. |
-
-
 
 **Performance**
 
@@ -170,14 +158,11 @@ Sorts are applied in the order shown, from top to bottom.
 | **Lifetime Clicks** | Sorts insertion orders by total lifetime clicks. |
 | **Lifetime Revenue** | Sorts insertion orders by total lifetime revenue. |
 
-
-
 **Related objects**
 
 | Sort | Description |
 |-----|-------------|
 | **Line Items** | Sorts insertion orders by the number of associated line items. |
-
 
 Click on **Apply** to save your settings.
 
@@ -193,7 +178,7 @@ See [View Insertion Order Details](view-insertion-order-details.md) for more inf
 - To delete one or more insertion orders, check the box next to each insertion order you want to delete and click **Delete**.
 - To run a report on one or more insertion orders, check the box for each insertion order you want to report on and click **Run Report**. This takes you to the [Advertiser Analytics Report](advertiser-analytics-report.md),  For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md). 
   > [!WARNING]
-  > Deleting an advertiser deletes all of its child objects as well, including insertion orders, line items, campaigns, creatives, conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (revenue budget for line items, cost budget and targeting for campaigns, etc.).
+  > Deleting an insertion order deletes all of its child objects as well.
 
 <!-- ## Search by name/ID
 

@@ -96,7 +96,7 @@ This opens the **Modify Columns** dialog. From there you can use the checkboxes 
 
 You can customize the columns that appear on the Insertion Order screen. Use **Edit columns and sorts** to add, remove, or reorder columns in the grid.
 
-### Columns
+### Edit columns
 
 You can customize the columns that appear on the screen. Use Edit columns and sorts to add, remove, or reorder columns in the grid.
 
@@ -128,19 +128,11 @@ Columns are grouped into the following categories.
 | -------------- | ------------------------------------------------------------- |
 | **Line Items** | The number of line items associated with the insertion order. |
 
-### Sorts
+### Edit sorts
 
 You can sort the data displayed on the screen by selecting one or more fields. Use Edit columns and sorts, then select the Sorts tab to add, remove, or reorder sorts.
 
 Sorts are applied in the order shown, from top to bottom.
-
-## Sorts
-
-You can sort the data displayed on the screen by selecting one or more fields. Use **Edit columns and sorts**, then select the **Sorts** tab to add, remove, or reorder sorts.
-
-Sorts are applied in the order shown, from top to bottom.
-
-
 
 **Basic info**
 

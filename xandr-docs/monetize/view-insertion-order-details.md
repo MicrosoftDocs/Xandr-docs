@@ -59,12 +59,11 @@ Use the filters at the top of the page to narrow down results:
 You can expand or collapse individual entries, or use **Collapse All** to manage visibility.
 
 **Change details**
-
 Each history entry includes:
 - **Date and time** the change was made
 - **Object type and ID** (for example, insertion order)
 - **Number of fields changed**
-
+  
 When expanded, each entry shows a comparison table with the following columns:
 
 | Column | Description |
@@ -75,9 +74,7 @@ When expanded, each entry shows a comparison table with the following columns:
 
 Complex fields (such as objects or lists) can be expanded to view detailed JSON-level changes.
 
-
 This audit history helps ensure transparency and accountability by providing a complete record of configuration and delivery changes.
-
 
 ## Related topics
 

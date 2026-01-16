@@ -140,15 +140,11 @@ Sorts are applied in the order shown, from top to bottom.
 |-----|-------------|
 | **Insertion Order ID** | Sorts insertion orders by their unique ID. |
 
-
-
 **Billing period**
 
 | Sort | Description |
 |-----|-------------|
 | **Budget Interval End Date** | Sorts insertion orders by the end date of the current budget interval. |
-
-
 
 **Performance**
 
@@ -162,14 +158,11 @@ Sorts are applied in the order shown, from top to bottom.
 | **Lifetime Clicks** | Sorts insertion orders by total lifetime clicks. |
 | **Lifetime Revenue** | Sorts insertion orders by total lifetime revenue. |
 
-
-
 **Related objects**
 
 | Sort | Description |
 |-----|-------------|
 | **Line Items** | Sorts insertion orders by the number of associated line items. |
-
 
 Click on **Apply** to save your settings.
 

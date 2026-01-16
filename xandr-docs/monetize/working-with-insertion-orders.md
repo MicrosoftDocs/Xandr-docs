@@ -235,7 +235,7 @@ You can initiate a report for one or more insertion orders directly from this sc
 
 - **Legacy** - Legacy insertion order required for legacy guaranteed and non-guaranteed line items.
 - **Seamless** - Seamless insertion order compatible with augmented line items (ALI), guaranteed delivery augmented line items (GDALI), and programmatic guaranteed line items (PGLI). -->
-
+<!-- 
 Some useful procedures when creating and working with insertion orders here:
 
 - **[Create an Insertion Order](create-an-insertion-order.md)** - Set up an insertion order (formerly "seamless insertion order") in Microsoft Monetize.

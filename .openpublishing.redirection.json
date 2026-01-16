@@ -299,6 +299,11 @@
         "source_path": "xandr-docs/monetize/explore-and-manage-advertisers.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/working-with-advertisers",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize//explore-insertion-orders.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/working-with-insertion-orders",
+        "redirect_document_id": false
         }
         
       ]

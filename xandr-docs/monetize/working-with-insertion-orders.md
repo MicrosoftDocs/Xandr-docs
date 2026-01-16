@@ -178,7 +178,7 @@ See [View Insertion Order Details](view-insertion-order-details.md) for more inf
 - To delete one or more insertion orders, check the box next to each insertion order you want to delete and click **Delete**.
 - To run a report on one or more insertion orders, check the box for each insertion order you want to report on and click **Run Report**. This takes you to the [Advertiser Analytics Report](advertiser-analytics-report.md),  For further information about running the report, see [Advertiser Reporting](advertiser-reporting.md). 
   > [!WARNING]
-  > Deleting an advertiser deletes all of its child objects as well, including insertion orders, line items, campaigns, creatives, conversion pixels, and segments. The deletions are permanent and cannot be reverted. Although deleted objects continue to be available in reporting, you will no longer have visibility into their specific settings (revenue budget for line items, cost budget and targeting for campaigns, etc.).
+  > Deleting an insertion order deletes all of its child objects as well.
 
 <!-- ## Search by name/ID
 

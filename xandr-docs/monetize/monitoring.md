@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Seller Monitoring Workflow (SMW) grid for Line items
 description: Explore streamlined line-item management, monitor, edit, troubleshoot—all in one view for efficient oversight and resolution.
-ms.date: 10/21/2025
+ms.date: 1/16/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -10,9 +10,9 @@ ms.author: shsrinivasan
 # Microsoft Monetize - Seller Monitoring Workflow (SMW) grid for Line items
 
 Seller Monitoring Workflow (SMW) grid for Line items lets you monitor and troubleshoot your line items all in one place. You can create, edit, monitor, and troubleshoot line items from a single view.
-<!-->
+<!--
 > [!NOTE]
-> The Microsoft Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select clients.-->
+> The Microsoft Monetize Monitoring feature is in **Open Beta** and currently only supports deal line items, augmented line items (ALI), and guaranteed delivery augmented line items (GDALI). It is subject to change without notice and is only available to select clients. -->
 
 The following topics provide more details about the SMW workflow and troubleshooting:
 

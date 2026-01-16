@@ -28,7 +28,7 @@ Things you can do on this page include:
 
 To get to the insertion orders screen:
 
-Navigate to **Advertisers > Orders** from the vertical navigation menu on left
+Navigate to **Advertisers > Insertion Orders** from the vertical navigation menu on left.
 
 ## Search
 

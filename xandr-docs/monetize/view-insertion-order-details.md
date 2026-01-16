@@ -12,15 +12,22 @@ ms.author: shsrinivasan
 The **Insertion Order** screen on the Seller Monitoring Workflow (SMW) grid displays settings for a specific Insertion order, essential metrics, and performance visualizations.
 
 ## Locate the Insertion order screen
+
 To access the [Insertion Order](explore-insertion-orders.md) screen: 
-- Navigate to **Advertisers > Orders** from the left pane  
+- Navigate to **Advertisers > Insertion Orders** from the vertical navigation menu on left pane.
 - Select an Insertion Order whose details you want to view. 
 - The SMW grid for the **Insertion Order** details will be displayed. 
-- The screen contains the following sections:
-    - **Settings**: It provides basic information about the Insertions order such as budgeting, billing, supply strategy, and reporting labels. See [View Insertion Order Settings](#view-insertion-order-settings) for more information.
+
+The screen contains the following sections:
+    - **Settings**: It provides basic information about the Insertions order such as budgeting, billing, supply strategy, reporting labels, etc.. See [View Insertion Order Settings](#view-insertion-order-settings) for more information.
+    - **History**: The **History** tab displays a detailed audit log of changes made to the object. It helps you track when changes were made, what fields were updated, and who made the updates. See [View Change History](#view-change-history) for more information.
+
+
+
+
     - **Edit**: It helps you edit an Insertion order.
-    - **Line Items**: It provides a list of the Line items currently associated with the Insertion order.
-    - **Associated Objects**: It provides a list of associated objects with the Insertion order. See [View Child Object Details](#view-child-object-details) for more information.
+    <!-- - **Line Items**: It provides a list of the Line items currently associated with the Insertion order.
+    - **Associated Objects**: It provides a list of associated objects with the Insertion order. See [View Child Object Details](#view-child-object-details) for more information.-->
 
 ## View Insertion order settings
 
@@ -46,11 +53,35 @@ To view child object details:
 1. Select the **Associated Objects** menu on the top right corner of the SMW grid.
 1. Select the appropriate object category such as **Creatives** or **Inventory Lists**.
 
-## View Change log history
-To view Change log history for the Insertion order:
-1. Select the **History** tab on the right pane.
-1. From the dropdown menu, select the appropriate date range and users.
-1. This displays a list of all field changes, showing old and new values, along with the user and the last modified date or time. For more information, see [Change Log History Tool](change-log-history-tool.md).
+## View change history
+
+Use the filters at the top of the page to narrow down results:
+- **Select Date** – Filter changes by date range.
+- **Select Users** – Filter changes made by specific users.
+- **Time Zone** – All timestamps are displayed in UTC.
+
+You can expand or collapse individual entries, or use **Collapse All** to manage visibility.
+
+**Change details**
+
+Each history entry includes:
+- **Date and time** the change was made
+- **Object type and ID** (for example, insertion order)
+- **Number of fields changed**
+
+When expanded, each entry shows a comparison table with the following columns:
+
+| Column | Description |
+|------|-------------|
+| **Field Name** | The name of the field that was changed. |
+| **Old Value** | The value of the field before the change. |
+| **New Value** | The value of the field after the change. |
+
+Complex fields (such as objects or lists) can be expanded to view detailed JSON-level changes.
+
+
+This audit history helps ensure transparency and accountability by providing a complete record of configuration and delivery changes.
+
 
 ## Related topics
 

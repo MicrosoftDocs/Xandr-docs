@@ -2,7 +2,7 @@
 title: Microsoft Monetize - Release Notes
 description: Read about the latest updates to Monetize.
 ms.topic: release-notes
-ms.date: 1/14/2026
+ms.date: 1/21/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -13,6 +13,7 @@ ms.author: rupambaruah
 
 Read about the latest updates to Monetize.
 
+- [January 21, 2026: DV360 Central Partner ID Support for Multi-Buyer Deals](release-notes-2026-01-21.md)
 - [January 14, 2026: Deal Sync Status available in the new Deal screen](release-notes-2026-01-14.md)
 - [January 12, 2026: Seller Monitoring Workflow (SMW) UI Modernization (Fluent UI)](release-note-2026-12-01.md)
 - [January 6, 2026: Ad Quality: Enhanced bidder blocks (Limited Beta)](release-notes-2026-06-01.md)

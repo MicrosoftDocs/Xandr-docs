@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monetize (January 21, 2026) DV360 Central Partner ID Support for Multi-Buyer Deals
+title: Microsoft Monetize (January 21, 2026) DV360 Central Partner ID Support for Multi-Buyer Deals - Microsoft Curate
 description: Learn about the new DV360 Central Partner ID Support for Multi-Buyer Deals
 ms.topic: release-notes
 ms.date: 01/26/2026
@@ -8,7 +8,7 @@ ms.subservice: microsoft-monetize
 ms.author: rbaruah
 ---
 
-# DV360 Central Partner ID Support for Multi-Buyer Deals
+# DV360 Central Partner ID Support for Multi-Buyer Deals - Microsoft Curate
 
 **Release date:** January 21, 2026  
 **Product:** Microsoft Monetize and Curate<br>

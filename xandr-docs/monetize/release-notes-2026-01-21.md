@@ -15,7 +15,7 @@ ms.author: rbaruah
 **Area:** Deals  
 
 
-Microsoft Monetize and Curatenow now fully support targeting **DV360 Central Partner IDs**, enabling streamlined and DV360-compliant multi-buyer deal workflows.
+Microsoft Monetize and Curate now fully support targeting **DV360 Central Partner IDs**, enabling streamlined and DV360-compliant multi-buyer deal workflows.
 
 This enhancement restores multi-buyer deal functionality with DV360 buyers while significantly reducing operational complexity.
 
@@ -24,7 +24,7 @@ This enhancement restores multi-buyer deal functionality with DV360 buyers while
 ## What’s New
 
 - You can now create **a single deal** that is automatically eligible for **all DV360 Partner IDs** associated with a selected **Central Partner ID**.
-- Deal permissions are managed directly within **:contentReference[oaicite:2]{index=2} (DV360)**, eliminating the need for manual buyer seat listing.
+- Deal permissions are managed directly within **Display & Video 360 (DV360)**, eliminating the need for manual buyer seat listing.
 - Supports DV360’s latest buying standards for agency and buying-group deal execution.
 
 

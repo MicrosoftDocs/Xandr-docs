@@ -19,7 +19,7 @@ Microsoft Monetize and Curatenow now fully support targeting **DV360 Central Par
 
 This enhancement restores multi-buyer deal functionality with DV360 buyers while significantly reducing operational complexity.
 
----
+
 
 ## What’s New
 
@@ -27,7 +27,7 @@ This enhancement restores multi-buyer deal functionality with DV360 buyers while
 - Deal permissions are managed directly within **:contentReference[oaicite:2]{index=2} (DV360)**, eliminating the need for manual buyer seat listing.
 - Supports DV360’s latest buying standards for agency and buying-group deal execution.
 
----
+
 
 ## Why This Matters
 
@@ -40,7 +40,7 @@ This enhancement restores multi-buyer deal functionality with DV360 buyers while
 - **Future-Ready & Compliant**  
   Aligns with DV360’s current deal-buying model and supports agency-level buying strategies.
 
----
+
 
 ## How to Use It
 
@@ -52,7 +52,6 @@ When creating deals for DV360 buyers:
    - A **Central Partner ID** (multi-buyer scope).
 3. Each deal can target **only one Central Partner ID**.
 
----
 
 ## Reporting & Measurement
 
@@ -66,17 +65,6 @@ When creating deals for DV360 buyers:
 - To view buyer-level performance breakdowns, use the **Multi-Buyer Seller Deal Metrics** report with:
   - **Buyer Seat Name**
   - **Buyer Seat Code**
-
----
-
-## Additional Resources
-
-- DV360 Central Partner ID Support Documentation (coming soon)
-- Contact your Microsoft account team or support representative for assistance
-
----
-
-This update continues our commitment to simplifying programmatic deal management while maximizing scale and buyer access across leading DSPs.
 
 
 ## Related topics

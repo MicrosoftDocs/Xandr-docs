@@ -11,7 +11,7 @@ ms.author: rbaruah
 # DV360 Central Partner ID Support for Multi-Buyer Deals
 
 **Release date:** January 21, 2026  
-**Product:** Microsoft Monetize and Curate 
+**Product:** Microsoft Monetize and Curate<br>
 **Area:** Deals  
 
 

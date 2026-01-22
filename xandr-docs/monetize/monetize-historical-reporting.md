@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 12/7/2025
+ms.date: 1/22/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -183,7 +183,7 @@ Impressions can be:
 
 **Video Player Errors** are counted when a video error is reported after the auction completes.
 
-> **Note**  
+> [!Note]  
 > This metric may not align with the Seller Fill and Delivery report due to updates in processing logic.
 
 ---
@@ -261,7 +261,7 @@ The dimensions listed below are **not reportable** and only populate when an imp
 - Curator  
 - Audit Status  
 
-> **Example**  
+> [!Note]   
 > It is not possible to report Ad Requests by browser or carrier because these dimensions are only available for transacted impressions.
 
 ## Time frame and data retention

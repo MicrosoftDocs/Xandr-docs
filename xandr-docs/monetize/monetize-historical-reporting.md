@@ -117,7 +117,7 @@ Because timestamps are handled differently, **metric counts will not match exact
 
 The **Historical Report**, starting **12 November 2025**, includes metrics that help analyze the **impression request funnel** and troubleshoot integrations.
 
-These metrics were previously available in the **Seller Fill and Delivery** report. They are now exposed with **more granular dimensions and filters** to support deeper analysis.
+These metrics were previously available in the [Seller Fill and Delivery](seller-fill-and-delivery-network-report) report. They are now exposed with **more granular dimensions and filters** to support deeper analysis.
 
 > [!Note]  
 > Non-transactional metrics such as **Ad Requests**, **Ad Responses**, and **Filtered Requests** are provided for **directional troubleshooting only** and **must not be used for billing or financial reconciliation**.

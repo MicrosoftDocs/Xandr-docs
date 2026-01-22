@@ -128,7 +128,7 @@ These metrics were previously available in the **Seller Fill and Delivery** repo
 
 The following diagram illustrates how an ad request progresses through Microsoft Monetize, from receipt to final outcome.
 
-> *(Insert Microsoft Style Guide–compliant flowchart here)*
+:::image type="content" source="media/ad-request-flow.png" alt-text="The screenshot shows ad request flow.":::
 
 ---
 

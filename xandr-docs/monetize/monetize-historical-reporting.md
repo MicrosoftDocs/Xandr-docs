@@ -261,9 +261,6 @@ The dimensions listed below are **not reportable** and only populate when an imp
 - Curator  
 - Audit Status  
 
-> [!Note]   
-> It is not possible to report Ad Requests by browser or carrier because these dimensions are only available for transacted impressions.
-
 ## Time frame and data retention
 
 All dates and times are given in UTC.

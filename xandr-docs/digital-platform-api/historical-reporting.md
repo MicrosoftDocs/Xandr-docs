@@ -90,8 +90,6 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 | Device Analytics                    | network_device_analytics              |
 | Carrier Analytics                   | network_carrier_analytics             |
 | Prebid Server Analytics             | prebid_server_analytics               |
-| Video Analytics                     | video_analytics_network               |
-| Video Error Analytics               | video_error_analytics_network         |
 | Audio Analytics                     | audio_analytics_network               |
 
 ### Advertiser or Publisher report types
@@ -100,12 +98,9 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 |-----------------------------------|-------------------------------------|
 | Advertiser Analytics              | advertiser_analytics                |
 | Site Domain Performance           | site_domain_performance             |
-| Advertiser Video Analytics        | video_analytics_network_advertiser  |
 | Publisher Analytics               | network_publisher_analytics         |
 | Not Available                     | publisher_brand_review              |
 | Seller Fill and Delivery Publisher| seller_fill_and_delivery_publisher  |
-| Publisher Video Analytics Report  | video_analytics_network_publisher   |
-| Publisher Video Error Report      | video_error_analytics_network       |
 
 ## Historical report creation
 

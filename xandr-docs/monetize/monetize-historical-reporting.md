@@ -56,8 +56,6 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 | Device Analytics                    | network_device_analytics              |
 | Carrier Analytics                   | network_carrier_analytics             |
 | Prebid Server Analytics             | prebid_server_analytics               |
-| Video Analytics                     | video_analytics_network               |
-| Video Error Analytics               | video_error_analytics_network         |
 | Audio Analytics                     | audio_analytics_network               |
 
 ### Advertiser or Publisher report types
@@ -70,8 +68,6 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 | Publisher Analytics               | network_publisher_analytics         |
 | Not Available                     | publisher_brand_review              |
 | Seller Fill and Delivery Publisher| seller_fill_and_delivery_publisher  |
-| Publisher Video Analytics Report  | video_analytics_network_publisher   |
-| Publisher Video Error Report      | video_error_analytics_network       |
 
 ## Historical report creation
 
@@ -113,11 +109,11 @@ Legacy reports attribute events to the **actual event time**. Using the same exa
 
 Because timestamps are handled differently, **metric counts will not match exactly** between Historical reports and legacy reports when viewed at the day or hour level. This difference is expected and reflects the underlying attribution logic.
 
-# Understanding the ad request to impression funnel
+## Understanding the ad request to impression funnel
 
 The **Historical Report**, starting **12 November 2025**, includes metrics that help analyze the **impression request funnel** and troubleshoot integrations.
 
-These metrics were previously available in the [Seller Fill and Delivery](seller-fill-and-delivery-network-report) report. They are now exposed with **more granular dimensions and filters** to support deeper analysis.
+These metrics were previously available in the [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md) report. They are now exposed with **more granular dimensions and filters** to support deeper analysis.
 
 > [!Note]  
 > Non-transactional metrics such as **Ad Requests**, **Ad Responses**, and **Filtered Requests** are provided for **directional troubleshooting only** and **must not be used for billing or financial reconciliation**.
@@ -595,6 +591,20 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `External Click` | Clicks as recorded by the external clicktracker. |
 | `External Impression` | Imps as recorded by the external impression tracker. |
 | `total_revenue_ecpa` | The total revenue per acquisition. |
+| `ad_requests` | Total count of unique impressions sent to Microsoft Monetize |
+| `ad_requests_auctioned` | Total count of unique impressions evaluated for auction |
+| `filtered_requests` | Total count of auctioned requests filtered pre-bid for inventory quality |
+| `ad_requests_no_creative` | Total count of requests with no eligible managed, programmatic, or default demand |
+| `ad_responses_total` | Total count of auctions with at least one eligible bid |
+| `ad_responses` | Total count of auctions with at least one eligible video bid |
+| `bid_sent_no_responses` | Bid responses returned but where the creative ultimately did not render |
+| `defaults_no_responses` | Requests where a default creative was sent but no response was received |
+| `video_default_errors` | Errors reported when a default video creative should have served |
+| `video_player_errors` | Errors reported after VAST XML delivery (maximum 1 per auction) |
+| `response_rate` | Total ad responses ÷ (Ad Requests − Filtered Requests) |
+| `win_rate` | (Kept + Resold impressions) ÷ Total Ad Responses |
+| `fill_rate` | (Kept + Resold impressions) ÷ Ad Requests Auctioned |
+| `ad_request_rpm` | Seller revenue per 1,000 auctioned ad requests |
 
 ## Metric filters
 

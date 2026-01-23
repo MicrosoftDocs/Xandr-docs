@@ -90,8 +90,6 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 | Device Analytics                    | network_device_analytics              |
 | Carrier Analytics                   | network_carrier_analytics             |
 | Prebid Server Analytics             | prebid_server_analytics               |
-| Video Analytics                     | video_analytics_network               |
-| Video Error Analytics               | video_error_analytics_network         |
 | Audio Analytics                     | audio_analytics_network               |
 
 ### Advertiser or Publisher report types
@@ -100,16 +98,161 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 |-----------------------------------|-------------------------------------|
 | Advertiser Analytics              | advertiser_analytics                |
 | Site Domain Performance           | site_domain_performance             |
-| Advertiser Video Analytics        | video_analytics_network_advertiser  |
 | Publisher Analytics               | network_publisher_analytics         |
 | Not Available                     | publisher_brand_review              |
 | Seller Fill and Delivery Publisher| seller_fill_and_delivery_publisher  |
-| Publisher Video Analytics Report  | video_analytics_network_publisher   |
-| Publisher Video Error Report      | video_error_analytics_network       |
 
 ## Historical report creation
 
 The Historical report enables streamlined report creation. Users can select from various **Dimensions**, **Metrics**, and **Filters** to customize their reports.
+
+## Understanding the ad request to impression funnel
+
+The **Historical Report**, starting **12 November 2025**, includes metrics that help analyze the **impression request funnel** and troubleshoot integrations.
+
+These metrics were previously available in the [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md) report. They are now exposed with **more granular dimensions and filters** to support deeper analysis.
+
+> [!Note]  
+> Non-transactional metrics such as **Ad Requests**, **Ad Responses**, and **Filtered Requests** are provided for **directional troubleshooting only** and **must not be used for billing or financial reconciliation**.
+
+---
+
+## Ad request flow
+
+The following diagram illustrates how an ad request progresses through Microsoft Monetize, from receipt to final outcome.
+
+:::image type="content" source="media/ad-request-flow.png" alt-text="The screenshot shows ad request flow.":::
+
+---
+
+## Ad request lifecycle
+
+### Ad requests received
+
+**Ad Requests Received** counts the total number of **unique impressions** sent to Microsoft Monetize.
+
+- Each impression is counted individually.
+- This count is independent of message structure. For example, if multiple impressions are included in a single OpenRTB request, each impression is counted separately.
+- This metric supports a **limited set of dimensions** and is not reportable with certain dimensions, such as **Operating System**.
+
+---
+
+### Ad requests auctioned
+
+**Ad Requests Auctioned** counts impressions that were **submitted to the auction process**.
+
+- Impressions are counted using the same methodology as *Ad Requests Received*.
+- Only impressions that enter the auction are included.
+
+---
+
+### Filtering
+
+The first step of the auction process evaluates **inventory quality**.
+
+- If an impression is filtered before bidding, it is counted as a **Filtered Request**.
+- Filtered requests are logged with a **filtered request reason**.
+- Filtered requests do not proceed to bidding.
+
+---
+
+### Ad responses
+
+If the auction results in at least one **eligible bid** from managed or third-party demand, an **Ad Response** is counted.
+
+---
+
+### Impressions sold
+
+Impressions are considered sold when an **impression tracker** is received within the **TTL (time to live)** for the creative media type.
+
+Impressions can be:
+- **Kept impressions** (managed demand)
+- **Resold impressions** (third-party demand)
+
+---
+
+### Video player errors
+
+**Video Player Errors** are counted when a video error is reported after the auction completes.
+
+> [!Note]  
+> This metric may not align with the Seller Fill and Delivery report due to updates in processing logic.
+
+---
+
+### Default impressions and no responses
+
+If the impression returned is a **default creative**, it is counted separately, including:
+- Default impressions
+- Default no responses (non-video)
+- Video default no responses
+
+If an **impression tracker is not received within the TTL**, the outcome is counted as **Bid Sent No Responses**.  
+This behavior applies to both standard and default creatives.
+
+---
+
+### No eligible demand
+
+When no managed, programmatic, or default demand is eligible, the request is counted as **Ad Requests No Eligible Demand**.
+
+- **Blank impressions** are recorded for specific integrations (for example, `/UT`).
+- Blank impressions are not recorded for integrations where a downstream auction is expected (for example, Prebid).
+- **PSAs** are recorded when no eligible demand exists and PSAs are enabled for the placement.
+
+---
+
+## Metrics
+
+| UI name | API field | Description |
+|-------|----------|-------------|
+| Ad Requests Received | `ad_requests` | Total count of unique impressions sent to Microsoft Monetize |
+| Ad Requests Auctioned | `ad_requests_auctioned` | Total count of unique impressions evaluated for auction |
+| Filtered Requests | `filtered_requests` | Total count of auctioned requests filtered pre-bid for inventory quality |
+| Ad Requests No Eligible Demand | `ad_requests_no_creative` | Total count of requests with no eligible managed, programmatic, or default demand |
+| Ad Responses | `ad_responses_total` | Total count of auctions with at least one eligible bid |
+| Video Ad Responses | `ad_responses` | Total count of auctions with at least one eligible video bid |
+| Bid Sent No Responses | `bid_sent_no_responses` | Bid responses returned but where the creative ultimately did not render |
+| Default No Responses | `defaults_no_responses` | Requests where a default creative was sent but no response was received |
+| Video Default Errors | `video_default_errors` | Errors reported when a default video creative should have served |
+| Video Player Errors | `video_player_errors` | Errors reported after VAST XML delivery (maximum 1 per auction) |
+| Response Rate | `response_rate` | Total ad responses ÷ (Ad Requests − Filtered Requests) |
+| Win Rate | `win_rate` | (Kept + Resold impressions) ÷ Total Ad Responses |
+| Fill Rate | `fill_rate` | (Kept + Resold impressions) ÷ Ad Requests Auctioned |
+| Ad Request RPM | `ad_request_rpm` | Seller revenue per 1,000 auctioned ad requests |
+
+---
+
+## Bid sent no responses: common scenarios
+
+This metric typically occurs when Microsoft Advertising returns a bid, but the creative does not render. Common scenarios include:
+
+- An external system (for example, Prebid or a waterfall-based ad server) selects a different bid.
+- The user leaves the page before the impression tracker fires.
+- Lazy loading prevents the ad from rendering.
+- A video ad is requested but never plays.
+
+---
+
+## Dimensions available only for transacted impressions
+
+For the following metrics:
+- **Ad Requests Received**
+- **Ad Requests Auctioned**
+- **Filtered Requests**
+- **Bid Sent No Responses**
+
+The dimensions listed below are **not reportable** and only populate when an impression is transacted:
+
+- Viewability metrics  
+- Browser  
+- Creative  
+- Brand  
+- Carrier  
+- Deal Type  
+- Curator  
+- Audit Status  
 
 ## Time frame and data retention
 
@@ -355,7 +498,21 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `filtered_requests` | int | The number of unique auctions that Xandr filtered due to inventory quality checks |
 | `external_click` | int | Clicks as recorded by the external clicktracker. |
 | `external_impression` | int | Imps as recorded by the external impression tracker. |
-| total_revenue_ecpa | money | The total revenue per acquisition. |
+| `total_revenue_ecpa` | money | The total revenue per acquisition. |
+| `ad_requests` | Total count of unique impressions sent to Microsoft Monetize |
+| `ad_requests_auctioned` | Total count of unique impressions evaluated for auction |
+| `filtered_requests` | Total count of auctioned requests filtered pre-bid for inventory quality |
+| `ad_requests_no_creative` | Total count of requests with no eligible managed, programmatic, or default demand |
+| `ad_responses_total` | Total count of auctions with at least one eligible bid |
+| `ad_responses` | Total count of auctions with at least one eligible video bid |
+| `bid_sent_no_responses` | Bid responses returned but where the creative ultimately did not render |
+| `defaults_no_responses` | Requests where a default creative was sent but no response was received |
+| `video_default_errors` | Errors reported when a default video creative should have served |
+| `video_player_errors` | Errors reported after VAST XML delivery (maximum 1 per auction) |
+| `response_rate` | Total ad responses ÷ (Ad Requests − Filtered Requests) |
+| `win_rate` | (Kept + Resold impressions) ÷ Total Ad Responses |
+| `fill_rate` | (Kept + Resold impressions) ÷ Ad Requests Auctioned |
+| `ad_request_rpm` | Seller revenue per 1,000 auctioned ad requests |
 
 
 ### Examples

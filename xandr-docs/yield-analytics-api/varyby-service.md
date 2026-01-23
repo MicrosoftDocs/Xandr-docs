@@ -362,7 +362,7 @@ Headers:
 
 ## Batch method
 
-Batch enables you to submit multiple inventory availability lookups in one request, each with different attribute variations (e.g., country, placement, size, priority, roadblock, etc.). 
+Batch enables you to submit multiple inventory availability lookups in one request, each with different attribute variations (e.g. placement, size, priority, roadblock, etc.). 
 Instead of making separate calls for each variation, you send them as a batch, and the system processes them concurrently for efficiency. 
 
 ### REST API
@@ -392,7 +392,7 @@ POST /api/v1/rest/product/inventory/batch/varyby
 | BodyParameter | batchRunFilters | Contains filters that you can apply to your lookup. | true | array of objects |
 | BodyParameter | email | Email notification settings for batch completion. | true | array of objects |
 | PathParameter | batch | Enables you to request groups multiple inventory availability checks into one API call for efficiency. | true | string |
-| PathParameter | varyby | Enables you to request multiple inventory slices in one batch by varying specific attributes (For example, country, browser, device). | true | string |
+| PathParameter | varyby | Enables you to request multiple inventory slices in one batch by varying specific attributes (For example, browser, device). | true | string |
 | HeaderParameter | content-type | Specifies your request body format. | true | string | 
 
 **varybyExpression object**
@@ -445,7 +445,7 @@ Headers:
 }
 Body:
 {
-  "targetExpression": "country in ('DEF') and placement in ('ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111)",
+  "targetExpression": placement in ('ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111)",
   "varybyExpression": {
     "terms": [
       {
@@ -595,7 +595,7 @@ Headers:
   "results": [
     {
       "pageeffects": "Yes",
-      "targetexpression": "country in ('DEF') and placement in ('ABC - 111, 'ABC – 111', 'XYZ – 111', 'DEF - 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'DEF– 111') and size in ('300x100')",
+      "targetexpression": placement in ('ABC - 111, 'ABC – 111', 'XYZ – 111', 'DEF - 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'DEF– 111') and size in ('300x100')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -606,13 +606,13 @@ Headers:
       "contractedcpm": "1 - 2",
       "capacity": 111,
       "viewable": 111,
-      "name": "country in ('DEF') and placement in ('military_desktop_fparticle2 – 111', 'ABC – 111', 'DEF – 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('300x100')",
+      "name": placement in ('military_desktop_fparticle2 – 111', 'ABC – 111', 'DEF – 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('300x100')",
       "roadblock": "As Many",
       "frequencycap": "15 per 1 Week(s)"
     },
     {
       "pageeffects": "Yes",
-      "targetexpression": "country in ('DEF') and placement in ('ABC – 111', 'XYZ – 111', 'ABC – 111', 'DEF – 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111') and size in ('320x50')",
+      "targetexpression": placement in ('ABC – 111', 'XYZ – 111', 'ABC – 111', 'DEF – 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111') and size in ('320x50')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -623,13 +623,13 @@ Headers:
       "contractedcpm": "1 - 2",
       "capacity": 111,
       "viewable": 111,
-      "name": "country in ('DEF') and placement in ('ABC – 111', 'XYZ – 111', 'DEF – 111', 'ABC – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('320x50')",
+      "name": placement in ('ABC – 111', 'XYZ – 111', 'DEF – 111', 'ABC – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('320x50')",
       "roadblock": "As Many",
       "frequencycap": "15 per 1 Week(s)"
     },
     {
       "pageeffects": "Yes",
-      "targetexpression": "country in ('DEF') and placement in ('ABC – 111', 'XYZ – 111', 'DEF – 111', 'ABC - 111', 'XYZ – 111', 'ABC – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('728x90')",
+      "targetexpression": placement in ('ABC – 111', 'XYZ – 111', 'DEF – 111', 'ABC - 111', 'XYZ – 111', 'ABC – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('728x90')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -640,7 +640,7 @@ Headers:
       "contractedcpm": "1 - 2",
       "capacity": 111,
       "viewable": 111,
-      "name": "country in ('DEF') and placement in ('ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'DEF - 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC - 111') and size in ('728x90')",
+      "name": placement in ('ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'DEF - 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC - 111') and size in ('728x90')",
       "roadblock": "As Many",
       "frequencycap": "15 per 1 Week(s)"
     }

@@ -205,7 +205,7 @@ When no managed, programmatic, or default demand is eligible, the request is cou
 
 ---
 
-## Metrics
+## Seller fill and delivery metrics
 
 | UI name | API field | Description |
 |-------|----------|-------------|

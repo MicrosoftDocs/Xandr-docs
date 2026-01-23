@@ -1,6 +1,6 @@
 ---
 title: GraphQL Service
-description: In this article, understand what data service is and the various features and functions associated with it.
+description: GraphQL is a query language for APIs and a runtime that executes queries against existing data. It enables you to request only the data you need, in a precise and efficient way.
 ms.service: publisher-monetization
 ms.subservice: yield-analytics-api
 ms.author: shsrinivasan
@@ -85,7 +85,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 | HTTP method | Endpoint | Description |
 |---|---|---|
-| POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Retrieve Product names and ID listings according to the selected filter criteria. |
+| POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Retrieve product names and ID listings according to the selected filter criteria. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Create multiple products using file upload. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Analyze product overlap and capacity relationships using simple queries (product IDs/names/groups) or dynamic targeting expressions. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Manage Manual Forecast Adjustments (MFA) - List, Add, Edit, and Delete forecast overrides for ad inventory capacity. |
@@ -555,11 +555,11 @@ map: { "0": ["variables.input.file"] }
 
 ### Product or overlap analysis query 
 
-The Product or overlap analysis query interacts with the Yield Analytics application’s by analyzing overlapping impressions, you can compare how impressions are shared between a selected focus product or set of target attributes and the products that overlap it. 
+The product or overlap analysis query in Yield Analytics examines how impressions overlap across products. By analyzing these overlapping impressions, you can compare how impressions are shared between a selected focus product. or a set of target attributes, and the products that overlap with it. 
 
 The service supports two query methods:
-- **Simple queries:** Allows you to compare product names/ids, against other product names or product IDs. 
-- **Dynamic queries:** Allows you to compare a target expression, against product ID. 
+- **Simple queries:** Compare product names or IDs with other product names or IDs. 
+- **Dynamic queries:** Compare a target expression with a product ID. 
  
 
 #### Json fields
@@ -569,7 +569,7 @@ The service supports two query methods:
 | focusProductIds | array | Array of product IDs that represent the primary products for which overlap analysis is requested. |
 | focusProductNames | array | Array of names corresponding to the focus product IDs. . |
 | focusProductGroupNames | string | Names of product groups (e.g., bundles or categories) that the focus products belong to. |
-| focusProductIdsOrTargetExpressions | string | It enables you to define the “focus” of an overlap analysis either by listing product IDs or by providing a targeting expression. |
+| focusProductIdsOrTargetExpressions | string | It enables you to define the focus of an overlap analysis either by listing product IDs or by providing a targeting expression. |
 | overlapsToAnalyzeProductIds | array | Array of product IDs that should be compared against the focus products for overlap. |
 | overlapsToAnalyzeProductNames | string | Names corresponding to the related product IDs. |
 | overlapsToAnalyzeProductGroupNames | string | Names of product groups for the related products. |
@@ -581,7 +581,7 @@ The service supports two query methods:
 | RELATED_PRODUCT_CAPACITY | integer | The total available impression capacity for the related product within the same date range. |
 | OVERLAPPING_CAPACITY | integer | The number of impressions that both products share (i.e., inventory that qualifies for both targeting sets). |
 | PERCENT_OVERLAP | float | The percentage of the related product’s capacity that overlaps with the focus product. |
-| TargetExpressions | string | TargetExpressions refers to the set of targeting criteria or conditions that define which inventory qualifies for a product or target in the context of IMF/Yield Analytics and ad forecasting. |
+| TargetExpressions | string | The set of targeting criteria or conditions that define which inventory qualifies for a product or target in the context of IMF/Yield Analytics and ad forecasting. |
 | PERCENT_OVERLAP_FOCUS | float | The percentage of the focus product’s capacity that overlaps with the related product. |
 
 

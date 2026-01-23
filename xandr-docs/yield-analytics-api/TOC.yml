@@ -30,3 +30,5 @@
       href: query-engine-service.md
     - name: GraphQL Service
       href: graphql-service.md
+    - name: VaryBy Service
+      href: varyby-service.md

@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 1/13/2026
+ms.date: 1/23/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -12,6 +12,12 @@ ms.author: shsrinivasan
 
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
+## 9.10.1
++ 10314531: OMSDK updated to v1.6.2.
+
+
+### Improvement/Bug Fixes
++ 10096941: Fixed crash when ut/v3 response contains oRTB assets and native elements at the same time.
 
 
 

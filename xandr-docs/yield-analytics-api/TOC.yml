@@ -28,3 +28,5 @@
       href: product-and-inventory-service.md
     - name: Query Engine Service
       href: query-engine-service.md
+    - name: GraphQL Service
+      href: graphql-service.md

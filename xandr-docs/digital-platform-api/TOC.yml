@@ -14,10 +14,6 @@
     items:
     - name: Overview
       href: breaking-changes.md
-    - name: May 15, 2025 - Updated Data Retention Policy for Identifiers and Buyer Reach & Frequency Reports 
-      href: breaking-change-20250515.md
-    - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
-      href: breaking-change-20250303.md
 - name: Tutorials
   items:
   - name: Authentication

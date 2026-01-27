@@ -75,9 +75,7 @@ $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'
 ```
 
 > [!NOTE]
->
-> - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-> - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
+> 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
 
 
 ##### Example

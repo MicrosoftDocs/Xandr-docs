@@ -22,9 +22,38 @@ GraphQL also addresses several limitations of REST-based architectures, includin
 
 ## Prerequisites 
 
-Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages. These concepts are essential prerequisites before delving into Curated Deal Ad Quality Settings. 
+Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages:
 - **[API Getting Started](../digital-platform-api/api-getting-started.md)** - It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices. 
 - **[Authentication Service](../digital-platform-api/authentication-service.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
+
+### Authentication
+
+- **Example cURL authentication**
+
+  Authentication occurs by passing credentials via http headers on each request.
+
+  ```
+  - username: curl -H "username:username"
+  - password: curl -H "password:password"      
+  ```
+
+- **Example HTTPS authentication**
+
+  ```
+  GET /api/v1/rest/
+  HTTPS/1.1
+  Host: xandr.imf.com
+  Accept: application/xml, application/json
+  Content-Type: application/json
+  username: {{username}}
+  password: {{password}}      
+  ```
+
+> [!NOTE]
+>
+> - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
+> - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
+
 
 ## Content types
 
@@ -38,44 +67,6 @@ Selecting the desired content type is a choice the API developer should make on 
 
 API developers should check the HTTP response codes returned from the service REST API to detect errors propagated from API calls. Successful calls to the service will result in 200 range response codes. 400 and 500 range http responses denote errors. The specific response codes and text will likely undergo change during BETA development of the API, however, the ranges will not.
 
-## Security
-
-The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
-
-- **Example cURL authentication**
-
-  Authentication occurs by passing credentials via http headers on each request.
-
-  ```
-  - username: curl -H "username:username"
-  - password: curl -H "password:password"
-  - source: curl -H "source:client_id"
-          
-  ```
-
-- **Example HTTPS authentication**
-
-  ```
-  GET /api/v1/rest/
-  HTTPS/1.1
-  Host: yieldanalytics.xandr.com
-  Accept: application/xml, application/json
-  Content-Type: application/json
-  username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
-  ```
-
-- **Example POSTMAN authentication**
-
-  Find an example of header settings in Postman below:
-
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
-
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
 
 ## Confidentiality
 
@@ -86,7 +77,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 | HTTP method | Endpoint | Description |
 |---|---|---|
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Retrieve product names and ID listings according to the selected filter criteria. |
-| POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Create multiple products using file upload. |
+| POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Create, modify, or update multiple products using file upload. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Analyze product overlap and capacity relationships using simple queries (product IDs/names/groups) or dynamic targeting expressions. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Manage Manual Forecast Adjustments (MFA) - List, Add, Edit, and Delete forecast overrides for ad inventory capacity. |
 
@@ -475,6 +466,18 @@ map: { "0": ["variables.input.file"] }
 0: upload the file here
 ```
 
+**`validateOnly":false,"processNow":false`**
+
+```
+curl `https://api.appnexus.com/imf/api/v1/rest/graphql`
+-H 'Authorization: Bearer <token>' \
+-H 'Content-Type: multipart/form-data' \
+operations: {"query":"mutation UploadFile($input: CustomSeasonalModelInput!) { uploadCustomSeasonalModels(input: $input) { success messages { lineNumber message } } }","variables":{"input":{"file":null,"validateOnly":false,"processNow":false}}}
+map: { "0": ["variables.input.file"] }
+0: upload the file here
+```
+
+
 #### Example cURL response 
  
 **`validateOnly":false,"processNow":true`**
@@ -670,7 +673,7 @@ $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 {
   query {
     getOverlapAnalysis(
-      focusProductIdsOrTargetExpressions: ["publisher in ('xbox console')"]
+      focusProductIdsOrTargetExpressions: ["publisher in ('ABC')"]
       overlapsToAnalyzeProductNames: ["ProductName1", "ProductName2"]
       startDate: "2025-12-15"
       endDate: "2025-12-31"
@@ -760,46 +763,46 @@ The GraphQL API supports the following MFA operations:
 ```
 $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 {
-  "data": {
+  "query": "query {
     "getManualForecastAdjustments": [
       {
-        "manualForecastAdjustmentId": "111",
-        "name": "Test111",
-        "productId": "538",
-        "adjustmentStatus": "Active",
-        "adjustmentType": "Absolute",
-        "adjustmentValue": 1,
-        "creationDate": "2025-11-21",
-        "lastModifiedDate": "2025-11-21",
-        "fromDate": "2025-12-21",
-        "toDate": "2025-12-25",
-        "product": {
-          "productId": "538",
-          "productName": "Test publisher + placement",
-          "externalId": null,
-          "priority": 0
+        manualForecastAdjustmentId
+        name
+        productId
+        adjustmentStatus
+        adjustmentType
+        adjustmentValue
+        creationDate
+        lastModifiedDate
+        fromDate
+        toDatex
+        product: {
+          productId
+          productName
+          externalId
+          priority
         }
       },
       {
-        "manualForecastAdjustmentId": "111",
-        "name": "Test 11",
-        "productId": "539",
-        "adjustmentStatus": "Active",
-        "adjustmentType": "Absolute",
-        "adjustmentValue": 1,
-        "creationDate": "2026-01-20",
-        "lastModifiedDate": "2026-01-20",
-        "fromDate": "2025-12-21",
-        "toDate": "2025-12-25",
-        "product": {
-          "productId": "538",
-          "productName": "Test publisher + placement",
-          "externalId": null,
-          "priority": 0
+        manualForecastAdjustmentId
+        name
+        productId
+        adjustmentStatus
+        adjustmentType
+        adjustmentValue
+        creationDate
+        lastModifiedDate
+        fromDate
+        toDate
+        product: {
+          productId
+          productName
+          externalId
+          priority
         }
       }
     ]
-  }
+  }"
 }
 ```
 
@@ -808,28 +811,28 @@ $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 ```
 $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 {
-  "data": {
-    "getManualForecastAdjustments": [
+  "query": "query {
+    getManualForecastAdjustments(productId: \"538\") [
       {
-        "manualForecastAdjustmentId": "11",
-        "name": "Test 11",
-        "productId": "538",
-        "adjustmentStatus": "Active",
-        "adjustmentType": "Absolute",
-        "adjustmentValue": 1,
-        "creationDate": "2025-11-21",
-        "lastModifiedDate": "2025-11-21",
-        "fromDate": "2025-12-21",
-        "toDate": "2025-12-25",
-        "product": {
-          "productId": "538",
-          "productName": "Test publisher + placement",
-          "externalId": null,
-          "priority": 0
+        manualForecastAdjustmentId
+        name
+        productId
+        adjustmentStatus
+        adjustmentType
+        adjustmentValue
+        creationDate
+        lastModifiedDate
+        fromDate
+        toDate
+        product: {
+          productId
+          productName
+          externalId
+          priority
         }
       }
     ]
-  }
+  }"
 }
 ```
 
@@ -842,17 +845,25 @@ $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 ```
 $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 {
-  "data": {
-    "addManualForecastAdjustment": {
-      "manualForecastAdjustmentId": "111",
-      "productId": "538",
-      "adjustmentStatus": "Active",
-      "adjustmentType": "Absolute",
-      "adjustmentValue": 1,
-      "fromDate": "2025-12-21",
-      "toDate": "2025-12-25"
+  "query": "mutation {
+    addManualForecastAdjustment (
+      productId: 538,
+      name: \"Test\",
+      adjustmentStatus: \"Active\",
+      adjustmentType: \"Absolute\",
+      adjustmentValue: 1.0,
+      fromDate: \"2025-12-21\",
+      toDate: \"2025-12-25\"
+    ) {
+    manualForecastAdjustmentId
+      productId
+      adjustmentStatus
+      adjustmentType
+      adjustmentValue
+      fromDate
+      toDate
     }
-  }
+  }"
 }
 ```
 
@@ -867,17 +878,26 @@ $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 ```
 $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 {
-  "data": {
-    "updateManualForecastAdjustment": {
-      "manualForecastAdjustmentId": "111",
-      "productId": "538",
-      "adjustmentStatus": "Active",
-      "adjustmentType": "Relative",
-      "adjustmentValue": 100,
-      "fromDate": "2025-10-25",
-      "toDate": "2025-10-26"
+  "query": "mutation {
+    updateManualForecastAdjustment(
+      manualForecastAdjustmentId: \"6c45e5e3-3759-463a-815f-0a2ad900f362\"
+      productId: 538,
+      name: \"Test MFA Edited\",
+      adjustmentStatus: \"Active\",
+      adjustmentType: \"Relative\",
+      adjustmentValue: 100.0,
+      fromDate: \"2025-10-25\",
+      toDate: \"2025-10-26\"
+    ) {
+      manualForecastAdjustmentId
+      productId
+      adjustmentStatus
+      adjustmentType
+      adjustmentValue
+      fromDate
+      toDate
     }
-  }
+  }"
 }
 ```
 

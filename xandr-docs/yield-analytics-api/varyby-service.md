@@ -18,50 +18,36 @@ This allows you to vary base targeting criteria by selected variant targeting cr
 
 ## Prerequisites 
 
-Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages. These concepts are essential prerequisites before delving into Curated Deal Ad Quality Settings. 
+Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages:
 - **[API Getting Started](../digital-platform-api/api-getting-started.md)** - It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices. 
 - **[Authentication Service](../digital-platform-api/authentication-service.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
 
-## Content types
-
-The Service REST API is currently designed to support the following content type:
-
-- JSON - using `Content-type: application/json`
-
-Selecting the desired content type is a choice the API developer should make on a case by case basis. API functionality is symmetrical across content types. API developers may specify the desired content type in the HTTP GET or POST method parameters or via their AJAX or HTTP client library.
-
-## Error checking and status codes
-
-API developers should check the HTTP response codes returned from the service REST API to detect errors propagated from API calls. Successful calls to the service will result in 200 range response codes. 400 and 500 range http responses denote errors. The specific response codes and text will likely undergo change during BETA development of the API, however, the ranges will not.
-
-## Security
-
+### Authentication
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
-- **Example cURL authentication**
+- **cURL authentication**
 
   Authentication occurs by passing credentials via http headers on each request.
 
   ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
-  - source: curl -H "source:client_id"
           
   ```
 
-- **Example HTTPS authentication**
+- **HTTPS authentication**
 
   ```
   GET /api/v1/rest/
   HTTPS/1.1
-  Host: yieldanalytics.xandr.com
+  Host: xandr.imf.com
   Accept: application/xml, application/json
   Content-Type: application/json
   username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
+  password: {{password}}      
   ```
-- **Examples HTTPS authentication response**
+
+- **HTTPS authentication response**
 The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie. For a more in-depth tutorial of using Postman, see Using Postman with the Yield Analytics API. 
 
 ```
@@ -82,49 +68,10 @@ $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'
 } 
 ```
 
-- **Example POSTMAN authentication**
-
-  Find an example of header settings in Postman below:
-
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
-
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
-
-## Confidentiality
-
-Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
-
-## REST API
-
-| HTTP method | Endpoint | Description |
-|---|---|---|
-| GET | `https://api.appnexus.com/imf/api/v1 /rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/ attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}` | Returns a paginated list of attribute values for a given attribute ID. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/ operators/{attribute}` | Returns a list of operators for a given attribute. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/filters/{filter_name}` | Returns filter details to use in create batch body. |
-
-
-
-## Paths
-
-### Returns a list of attributes matching the given query (getAttributes) 
-
-```
-GET /api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery} 
-```
-
-#### JSON fields 
-
-| Type | Name | Description | Required | Schema |
-|---|---|---| ---|---|
-| PathParameter | getAttributes | Returns a list of attributes matching the given query. | true | string |
-| PathParameter | pageIndex | Specifies the "page" of results you want to retrieve. | true | integer |
-| PathParameter | pageSize | Specifies how many items (or records) are included in each page of results. | true | integer |
-| PathParameter | attrNameQuery | The name of the attribute you want to query. | true | string |
-| HeaderParameter | content-type | Specifies your request body format. | true | string |
+> [!NOTE]
+>
+> - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
+> - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
 
 
 ##### Example
@@ -184,6 +131,57 @@ Headers:
   }
 ]
 ```
+
+
+
+## Content types
+
+The Service REST API is currently designed to support the following content type:
+
+- JSON - using `Content-type: application/json`
+
+Selecting the desired content type is a choice the API developer should make on a case by case basis. API functionality is symmetrical across content types. API developers may specify the desired content type in the HTTP GET or POST method parameters or via their AJAX or HTTP client library.
+
+## Error checking and status codes
+
+API developers should check the HTTP response codes returned from the service REST API to detect errors propagated from API calls. Successful calls to the service will result in 200 range response codes. 400 and 500 range http responses denote errors. The specific response codes and text will likely undergo change during BETA development of the API, however, the ranges will not.
+
+
+## Confidentiality
+
+Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
+
+## REST API
+
+| HTTP method | Endpoint | Description |
+|---|---|---|
+| GET | `https://api.appnexus.com/imf/api/v1 /rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
+| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}` | Returns a paginated list of attribute values for a given attribute ID. |
+| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/operators/{attribute}` | Returns a list of operators for a given attribute. |
+| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/filters/{filter_name}` | Returns filter details to use in create batch body. |
+
+
+
+## Paths
+
+### Returns a list of attributes matching the given query (getAttributes) 
+
+```
+GET /api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery} 
+```
+
+#### JSON fields 
+
+| Type | Name | Description | Required | Schema |
+|---|---|---| ---|---|
+| PathParameter | getAttributes | Returns a list of attributes matching the given query. | true | string |
+| PathParameter | pageIndex | Specifies the "page" of results you want to retrieve. | true | integer |
+| PathParameter | pageSize | Specifies how many items (or records) are included in each page of results. | true | integer |
+| PathParameter | attrNameQuery | The name of the attribute you want to query. | true | string |
+| HeaderParameter | content-type | Specifies your request body format. | true | string |
+
+> [!Note] 
+> These endpoints allow you to explore how to construct a varyBy query and explain the supported operators and attributes. Their usage is not limited to filters alone.
 
 ### Get attributes values 
 
@@ -363,7 +361,7 @@ Headers:
 ## Batch method
 
 Batch enables you to submit multiple inventory availability lookups in one request, each with different attribute variations (e.g. placement, size, priority, roadblock, etc.). 
-Instead of making separate calls for each variation, you send them as a batch, and the system processes them concurrently for efficiency. 
+Instead of making separate calls for each variation, you send them as a batch, and the system processes them concurrently for efficiency. The batch method leverages varyBy endpoint to define how attributes should vary across the different lookups within the batch. This allows you to explore how different attribute combinations impact inventory availability in a single API call.
 
 ### REST API
 

@@ -29,8 +29,10 @@ Before beginning this setup, familialize yourself with the foundational concepts
 ### Authentication
 
 - **Example cURL authentication**
+> [!NOTE]
+> The authentication username and password are the same credentials used for the Digital Platform API and/or Monetize.
 
-  Authentication occurs by passing credentials via http headers on each request.
+Authentication occurs by passing credentials via http headers on each request.
 
   ```
   - username: curl -H "username:username"
@@ -42,7 +44,7 @@ Before beginning this setup, familialize yourself with the foundational concepts
   ```
   GET /api/v1/rest/
   HTTPS/1.1
-  Host: xandr.imf.com
+  Host: api.appnexus.com/imf
   Accept: application/xml, application/json
   Content-Type: application/json
   username: {{username}}
@@ -54,6 +56,26 @@ Before beginning this setup, familialize yourself with the foundational concepts
 > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
 > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
 
+- **HTTPS authentication response**
+The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie. For a more in-depth tutorial of using Postman, see Using Postman with the Yield Analytics API. 
+
+```
+$ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'  
+{  
+   "response": {  
+
+          "status": "OK",  
+
+          "token": "h20hbtptiv3vlp1rkm3ve1qig0",  
+
+          "dbg_info": {  
+
+                ...  
+
+        }  
+    } 
+} 
+```
 
 ## Content types
 

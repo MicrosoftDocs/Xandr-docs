@@ -15,6 +15,9 @@ VaryBy functionality allows you to run availability lookups by varying one or mo
  
 This allows you to vary base targeting criteria by selected variant targeting criteria. It builds multiple targeting strings by combining each variant with the base targeting. This results in a set of targeting strings that represent all possible combinations, enabling more detailed and flexible analysis. 
 
+VaryBy works in conjunction with Batch processing. While VaryBy defines the attributes and values that vary, Batch determines how those combinations are executed as a single request. The Batch workflow is where the final varyBy-based request structure is constructed and submitted.
+
+For more details, see the [Batch section](#batch-method), which walks through the request structure and execution flow in detail.
 
 ## Prerequisites 
 
@@ -27,7 +30,10 @@ The service API exposes application data in a secure manner. Use of API function
 
 - **cURL authentication**
 
-  Authentication occurs by passing credentials via http headers on each request.
+> [!NOTE]
+> The authentication username and password are the same credentials used for the Digital Platform API and/or Monetize.
+
+Authentication occurs by passing credentials via http headers on each request.
 
   ```
   - username: curl -H "username:username"
@@ -40,7 +46,7 @@ The service API exposes application data in a secure manner. Use of API function
   ```
   GET /api/v1/rest/
   HTTPS/1.1
-  Host: xandr.imf.com
+  Host: api.appnexus.com/imf
   Accept: application/xml, application/json
   Content-Type: application/json
   username: {{username}}
@@ -153,6 +159,9 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 ## REST API
 
+> [!NOTE]
+> Each of these endpoints return the attribute or value options needed to construct a Batch request body.
+
 | HTTP method | Endpoint | Description |
 |---|---|---|
 | GET | `https://api.appnexus.com/imf/api/v1 /rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
@@ -210,10 +219,6 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/ attributeValues/0/
 
 ```
 GET /api/imf/api/v1/test/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}
-Headers:
-{
-  "Authorization": "{{auth-token}}"
-}
 ```
 
 **Example cURL response**
@@ -254,10 +259,6 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/operators/size \` -
 
 ```
 GET /api /imf/api/v1/test/rest/product/inventory/operators/size
-Headers:
-{
-  "Authorization": "{{auth-token}}"
-}
 ```
 
 **Example cURL response**
@@ -303,10 +304,6 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/filters/GROUP_BY  \
 
 ```
 GET /api /imf/api/v1/test/rest/product/inventory/filters/GROUP_BY
-Headers:
-{
-  "Authorization": "{{auth-token}}"
-}
 ```
 
 **Example cURL response**
@@ -361,7 +358,7 @@ Headers:
 ## Batch method
 
 Batch enables you to submit multiple inventory availability lookups in one request, each with different attribute variations (e.g. placement, size, priority, roadblock, etc.). 
-Instead of making separate calls for each variation, you send them as a batch, and the system processes them concurrently for efficiency. The batch method leverages varyBy endpoint to define how attributes should vary across the different lookups within the batch. This allows you to explore how different attribute combinations impact inventory availability in a single API call.
+Instead of making separate calls for each variation, you send them as a batch, and the system processes them concurrently for efficiency. Batch requests are constructed using the VaryBy endpoints, which define how specific attributes should vary across each lookup within the batch. This allows you to explore how different attribute combinations impact inventory availability in a single API call.
 
 ### REST API
 
@@ -436,12 +433,6 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 
 ```
 GET /api/imf/api/v1/test/rest/product/inventory/batch/varyby
-Headers:
-{
-  "authorization": "{auth_token}",
-  "content-type": "application/json"
-}
-Body:
 {
   "targetExpression": placement in ('ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111)",
   "varybyExpression": {
@@ -538,10 +529,6 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 
 ```
 GET /api/imf/api/v1/test/rest/product/inventory/batch/varyby
-Headers:
-{
-  "Authorization": "{auth-token}"
-}
 ```
 
 **Example HTTP response**
@@ -579,10 +566,6 @@ $ curl `https://{client_url}/api/v1/rest/product/inventory/batch/results/3  \ ` 
 
 ```
 GET / api/v1/rest/product/inventory/batch/results/3 
-Headers:
-{
-  "Authorization": "{auth-token}"
-}
 ```
 
 **Example HTTP response**
@@ -671,10 +654,6 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 
 ```
 GET /api /imf/api/v1/test/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true 
-Headers:
-{
-  "Authorization": "{auth-token}"
-}
 ```
 
 **Example HTTP response**
@@ -724,10 +703,6 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 
 ```
 GET /api /imf/api/v1/test/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx 
-Headers:
-{
-  "Authorization": "{auth-token}"
-}
 ```
 
 **Example HTTP response**
@@ -737,6 +712,6 @@ Headers:
 ```
 
 
-## Related topic
+## Related topics
 
 - [Yield Analytics API](yield-analytics-api.md)

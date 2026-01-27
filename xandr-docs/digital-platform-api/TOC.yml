@@ -18,8 +18,6 @@
       href: breaking-change-20250515.md
     - name: March 03, 2025 - Update to Data Retention Period in Audio, Video, and Analytics Reports
       href: breaking-change-20250303.md
-    - name: January 23, 2025 – Update to Context Array Object in Profile Service API 
-      href: breaking-change-20250124.md
 - name: Tutorials
   items:
   - name: Authentication
@@ -225,8 +223,6 @@
         href: vast-extension-template-service.md
     - name: Deal Buyer Setting Service
       href: deal-buyer-setting-service.md
-    - name: Deal From Package Service
-      href: deal-from-package-service.md
     - name: Deal List Service
       href: deal-list-service.md
     - name: Domain List Service

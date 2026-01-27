@@ -304,6 +304,16 @@
         "source_path": "xandr-docs/monetize/explore-insertion-orders.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/working-with-insertion-orders",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/digital-platform-api/deal-from-package-service.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/reference",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/digital-platform-api/breaking-change-20250124.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/breaking-changes",
+        "redirect_document_id": false
         }
         
       ]

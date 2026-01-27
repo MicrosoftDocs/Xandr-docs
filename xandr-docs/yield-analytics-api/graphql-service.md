@@ -52,9 +52,7 @@ Authentication occurs by passing credentials via http headers on each request.
   ```
 
 > [!NOTE]
->
-> - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-> - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
+> 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
 
 - **HTTPS authentication response**
 The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie. For a more in-depth tutorial of using Postman, see Using Postman with the Yield Analytics API. 

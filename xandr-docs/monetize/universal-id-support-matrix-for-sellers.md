@@ -37,6 +37,8 @@ This page summarizes the Universal IDs supported by Microsoft Monetize. All inte
 |LiveIntent - Rubicon ID | [rubiconproject.com](https://www.magnite.com/)| Rubicon SSP ID | Passthrough for Prebid Server Premium | No | No |
 |LiveIntent - Openx ID | `openx.net`| OpenX SSP ID | Passthrough for Prebid Server Premium | No | No |
 |LiveIntent - Pubmatic ID | [PubMatic](https://pubmatic.com/)| PubMatic SSP ID | Passthrough for Prebid Server Premium | No | No |
+| LiveIntent - Nexxen ID | `liveintent.unrulymedia.com` | Nexxen SSP ID | Passthrough for Prebid Server Premium | No | No |
+| LiveIntent - Sovrn ID | `liveintent.sovrn.com` | Sovrn SSP ID | Passthrough for Prebid Server Premium | No | No |
 
 > [!NOTE]
 >

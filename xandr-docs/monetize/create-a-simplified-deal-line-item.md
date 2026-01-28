@@ -76,7 +76,6 @@ The **Deal Details** section offers a detailed overview of the key components th
   - **Fixed Price**: Enter the amount that the advertiser will pay you per thousand impressions.
     > [!NOTE]
     > After a deal is saved with a **Fixed Price**, its pricing model cannot be changed to **Floor Price** or **Market Price**, to preserve the buyer agreement. However, the fixed price amount can still be updated, allowing publishers to maintain the same deal ID during global price reviews.
-    > You can now modify a **Fixed Price** even after saving the deal line item.
   - **Market Price**: Select this option to use yield management floors if they are available; if they are not available, no floors will be applied to the auction.
 
 #### Deal targeting

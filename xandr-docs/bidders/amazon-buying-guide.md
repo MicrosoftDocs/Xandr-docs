@@ -59,7 +59,7 @@ To access Microsoft Monetize's open auction inventory on a line item, a buyer sh
 1. Select your Order or Campaign in the DSP UI. From there, navigate to the line-item section where you'll select "Create Line Item."  
 :::image type="content" source="media/create-line-item.png" alt-text="Screenshot that illustrates how to create a line item.":::
 1. Within the 'Inventory' section of your line-item setup, you'll find the ‘Manually select Publishers' field. Click the 'Change' button adjacent to this field to access the supply selection interface.  
-:::image type="content" source="media/inventory-type-selection.png" alt-text="Screenshot that illustrates how to select your inventory type."::: 
+:::image type="content" source="media/inventory-type-selection.png" alt-text="Screenshot that illustrates how to manually select publishers."::: 
 1. From here, you can search for Microsoft, then click 'Add' to incorporate it into your line-item settings.
 :::image type="content" source="media/choose-inventories.png" alt-text="Screenshot illustrates how to choose inventories."::: 
 1. After adding ‘Microsoft Monetize’, ensure you save all changes and proceed with configuring additional line-item parameters including budget allocation, pacing settings, and targeting criteria to align with your campaign's strategic objectives.
@@ -82,7 +82,7 @@ To access Microsoft Monetize's open auction inventory on a line item, a buyer sh
     1. Select your Order or Campaign in the DSP UI. From there, navigate to the line-item section where you'll select "Create Line Item." 
     :::image type="content" source="media/create-line-item.png" alt-text="Screenshot that illustrates how you can select your Order or Campaign in the DSP UI."::: 
     1. Within the 'Inventory' section of your line-item setup, you'll find the 'Deals' field. Click the 'Change' button adjacent to this field to access the deal selection interface. 
-    :::image type="content" source="media/select-your-inventory-type.png" alt-text="Screenshot that illustrates how to select your inventory type.":::
+    :::image type="content" source="media/select-your-inventory-type.png" alt-text="Screenshot that illustrates deal selection interface.":::
     1. From here, you can search for your previously negotiated deal using the deal name or ID, then click 'Add' to incorporate it into your line-item settings.
     :::image type="content" source="media/select-your-deals.png" alt-text="Screenshot that illustrates how to select your deals.":::
     1. After selecting the deal, ensure you save all changes and proceed with configuring additional line-item parameters including budget allocation, pacing settings, and targeting criteria to align with your campaign's strategic objectives. 

@@ -58,6 +58,7 @@ dependencies {
 This section has information about how to set up other networks' SDKs for mediation, including code samples (when special setup is required) and links to that SDK's documentation.
 
 - [AdMob](#admob)
+- [Google mediation adapter for PPID](#google-mediation-adapter-for-ppid)
 - [SmartAdServer](#smartadserver)
 
 ### AdMob

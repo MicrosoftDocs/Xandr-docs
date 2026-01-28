@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Curator Analytics Report
 description: Use the Curator Analytics report to get curators insight into how money flows from demand to supply within their curated marketplace.
-ms.date: 10/22/2025
+ms.date: 1/28/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -132,7 +132,7 @@ If you create Curator Analytics reports with the `report_interval` set to `"life
 | `video_completions` | int | `1800` | video_completions | The total number of times the video played for the entire duration. |
 | `video_completion_rate` | double | `0.76923` | video_completions / imps | The proportion of Video Completions versus Imps. |
 | `buyer_cost_per_video_complete` | money | `0.014315` | curator_revenue / video_completions | Curator Revenue divided by Video Completions. |
-| `buyer_cpm` | money | `11.01164` | curator_revenue / imps * 1000 | Curator Revenue divided by Imps expressed as a CPM. |
+| `buyer_cpm` | money | `11.01164` | curator_revenue / imps * 1000 | Curator Revenue divided by Imps expressed as a CPM. If a **Fixed Price** curated deal sources impressions from a seller using second-price auctions, the curated deal’s clearing price may be lower than the configured fixed price. |
 
 ## Example
 

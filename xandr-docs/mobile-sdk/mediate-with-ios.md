@@ -1,7 +1,7 @@
 ---
 title: Mediate with iOS
 description: This article provides information on mediation with iOS. Mediation lets you sell ad impressions through multiple networks to generate more revenue.
-ms.date: 10/22/2025
+ms.date: 1/28/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -127,6 +127,28 @@ Additionally, publishers should load the ad from `viewDidAppear` method instead
 [ANGoogleMediationSettings setIPadMultiSceneSupport:YES];
 ```
 
+## Google mediation adapter for PPID
+
+The Google Mediation adapter supports **Publisher Provided ID (PPID)**. PPID enables publishers to pass a publisher-defined identifier to Google Ad Manager to support enhanced ad targeting and reporting.
+
+### Set the PPID for Google Mediation
+
+To configure PPID for Google Mediation, call the following method provided by the adapter. The PPID value is sent to Google Ad Manager with ad requests.
+
+```
+[ANGoogleMediationSettings setGooglePublisherProvidedId:@"your-ppid-value"];
+```
+> [!NOTE]
+> - Set the PPID before making any ad requests to ensure it is included.
+> - PPID applies only to **Google Mediation** and does not impact other mediated networks.
+
+### Example
+```
+// Set PPID before loading ads
+[ANGoogleMediationSettings setGooglePublisherProvidedId:@"example-ppid-123"];
+
+// Proceed with loading ads as usual
+```
 ## Custom mobile networks
 
 Microsoft Monetize has built-in support for a number of popular mobile ad networks. If you want to mediate a network it doesn't support, you must:

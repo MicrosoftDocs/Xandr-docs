@@ -1,7 +1,7 @@
 ---
 title: Microsoft Curate - Curator Analytics Report
 description: Explore this article to understand the Curator Analytics report, including its metrics, dimensions, and a detailed guide on running a report.
-ms.date: 10/21/2025
+ms.date: 1/28/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate
 ms.author: shsrinivasan
@@ -123,7 +123,7 @@ Select metrics are available for impressions bought through Microsoft Invest, wh
 | Video Completions | The total number of times the video played for the entire duration. |
 | Video Completion Rate % | The proportion of Video Completions versus Imps. |
 | Buyer Cost Per Video Complete | Curator Revenue divided by Video Completions. |
-| Buyer CPM | Curator Revenue divided by Imps, expressed as a CPM. |
+| Buyer CPM | Curator Revenue divided by Imps, expressed as a CPM. If a **Fixed Price** curated deal sources impressions from a seller using second-price auctions, the curated deal’s clearing price may be lower than the configured fixed price. |
 
 ## Run your report
 

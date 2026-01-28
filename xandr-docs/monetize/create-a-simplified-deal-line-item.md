@@ -1,7 +1,7 @@
 ---
 title: Create a Simplified Deal Line Item
 description: Explore the process of creating a simplified deal line item, either from scratch or with a template. Also, learn about the various settings and targeting options associated with it.
-ms.date: 10/21/2025
+ms.date: 10/28/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -75,6 +75,7 @@ The **Deal Details** section offers a detailed overview of the key components th
   - **Floor Price**: Enter the hard floor price that will apply to the buyer of the deal.
   - **Fixed Price**: Enter the amount that the advertiser will pay you per thousand impressions.
     > [!NOTE]
+    > After a deal is saved with a **Fixed Price**, its pricing model cannot be changed to **Floor Price** or **Market Price**, to preserve the buyer agreement. However, the fixed price amount can still be updated, allowing publishers to maintain the same deal ID during global price reviews.
     > You can now modify a **Fixed Price** even after saving the deal line item.
   - **Market Price**: Select this option to use yield management floors if they are available; if they are not available, no floors will be applied to the auction.
 

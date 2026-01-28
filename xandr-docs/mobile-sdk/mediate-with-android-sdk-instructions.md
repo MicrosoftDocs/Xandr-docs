@@ -162,6 +162,29 @@ adView.addCustomKeywords("content_url", "www.appnexus.com");
 
 For more information about the Google SDK, see the [Google Mobile Ads SDK](https://developers.google.com/mobile-ads-sdk/docs/).
 
+### Google mediation adapter for PPID
+
+The Google Mediation adapter supports **Publisher Provided ID (PPID)**. PPID enables publishers to pass a publisher-defined identifier to Google Ad Manager to support enhanced ad targeting and reporting.
+
+#### Set the PPID for Google Mediation
+
+To configure PPID for Google Mediation, call the following method provided by the adapter. The PPID value is sent to Google Ad Manager with ad requests.
+
+```
+GooglePlayAdsSettings.setGooglePublisherProvidedId("your-ppid-value");
+```
+> [!NOTE]
+> - Set the PPID before making any ad requests to ensure it is included.
+> - PPID applies only to **Google Mediation** and does not impact other mediated networks.
+
+#### Example
+```
+// Set PPID before loading ads
+GooglePlayAdsSettings.setGooglePublisherProvidedId("example-ppid-123");
+
+// Proceed with loading ads
+```
+
 ### SmartAdServer
 
 No special setup is required.

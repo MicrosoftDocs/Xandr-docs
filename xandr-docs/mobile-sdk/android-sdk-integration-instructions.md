@@ -2,7 +2,7 @@
 title: Android SDK Integration Instructions
 description: In this article, find step-by-step instructions on how to integrate our Android SDK with your project.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 1/29/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -21,7 +21,7 @@ This section provides instructions to set up the SDK to display ads in your app.
 
 ## Requirements
 
-This SDK requires Android 4 or later, and Android SDK version 14 or higher.
+This SDK requires Android 5.0 (Lollipop) or later, and Android SDK version 21 or higher.
 
 In order to show ads, you must have a valid Xandr placement ID. This is a numeric ID that represents a context in an app where ads can be shown.
 

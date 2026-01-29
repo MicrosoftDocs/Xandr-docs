@@ -1,13 +1,21 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 1/13/2026
+ms.date: 1/29/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
 ---
 
 # Android SDK release notes
+
+## 9.10.1
+
+
+### Improvement/Bug Fixes
+
++ 10330091: Fixed telemetry data issues for Android Interstitial ads.
++ 10319084: Resolved missing video controls and progress bar in Interstitial Video ads, and added a default video poster image.
 
 ## 9.10.0
 

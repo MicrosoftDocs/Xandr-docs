@@ -110,7 +110,7 @@ Because timestamps are handled differently, **metric counts will not match exact
 
 ## Understanding the ad request to impression funnel
 
-The **Historical Report**, starting **12 November 2025**, includes metrics that help analyze the **impression request funnel** and troubleshoot integrations.
+The **Historical Report**, starting **12 January 2026**, includes metrics that help analyze the **impression request funnel** and troubleshoot integrations.
 
 These metrics were previously available in the [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md) report. They are now exposed with **more granular dimensions and filters** to support deeper analysis.
 

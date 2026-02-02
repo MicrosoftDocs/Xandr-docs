@@ -7,8 +7,9 @@ metadata:
   description: Discover various modules of Microsoft Invest
   ms.topic: landing-page
   ms.author: rupambaruah
-  ms.service: microsoft-invest
+  ms.service: publisher-monetization
   ms.date: 10/10/2023
+  ms.subservice: microsoft-invest
 
 landingContent:
   - title: Lets Get Started

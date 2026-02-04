@@ -89,7 +89,7 @@ Authorization: {{auth-token}}
 **Example cURL request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/attributes/0/100000/%25
+GET /api/imf/api/v1/rest/product/inventory/attributes/0/100000/%25
 Headers:
 {
   "Authorization": "{{auth-token}}"
@@ -162,10 +162,10 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 | HTTP method | Endpoint | Description |
 |---|---|---|
-| GET | `https://api.appnexus.com/imf/api/v1 /rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}` | Returns a paginated list of attribute values for a given attribute ID. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/operators/{attribute}` | Returns a list of operators for a given attribute. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/filters/{filter_name}` | Returns filter details to use in create batch body. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}` | Returns a paginated list of attribute values for a given attribute ID. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/operators/{attribute}` | Returns a list of operators for a given attribute. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{filter_name}` | Returns filter details to use in create batch body. |
 
 
 
@@ -210,13 +210,13 @@ GET /api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/ product/inventory/ attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://{client_url}/api/v1/rest/ product/inventory/ attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example cURL request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}
+GET /api/imf/api/v1/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}
 ```
 
 **Example cURL response**
@@ -256,7 +256,7 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/operators/size \` -
 **Example cURL request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/operators/size
+GET /api /imf/api/v1/rest/product/inventory/operators/size
 ```
 
 **Example cURL response**
@@ -301,7 +301,7 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/filters/GROUP_BY  \
 **Example cURL request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/filters/GROUP_BY
+GET /api /imf/api/v1/rest/product/inventory/filters/GROUP_BY
 ```
 
 **Example cURL response**
@@ -342,7 +342,7 @@ GET /api /imf/api/v1/test/rest/product/inventory/filters/GROUP_BY
 
 > [!NOTE]
 > NOTE: This endpoint pattern can be used with any supported filter name, not only GROUP_BY. Use the following general format: 
-> GET https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/filters/{FILTER_NAME} 
+> GET https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{FILTER_NAME} 
 > Supported filter names include: 
 > - GROUP_BY 
 > - PRIORITY 
@@ -362,8 +362,8 @@ Instead of making separate calls for each variation, you send them as a batch, a
 
 | HTTP method | Endpoint | Description |
 |---|---|---|
-| POST | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/batch/varyby` | Submits a batch request for varying by attributes. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/batch/{batchqueueId}` | Fetches details of a specific batch by its ID. |
+| POST | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/varyby` | Submits a batch request for varying by attributes. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/{batchqueueId}` | Fetches details of a specific batch by its ID. |
 | GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true` | Lists all batches with summary information. |
 | GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/download?fileName={filename}` | Downloads a CSV or Excel file from ADLS. |
 
@@ -424,13 +424,13 @@ POST /api/v1/rest/product/inventory/batch/varyby
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/varyby \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://{client_url}/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/varyby \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/batch/varyby
+POST /api/imf/api/v1/test/rest/product/inventory/batch/varyby
 {
   "targetExpression": placement in ('ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111)",
   "varybyExpression": {
@@ -526,7 +526,7 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 **Example request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/batch/varyby
+GET /api/imf/api/v1/rest/product/inventory/batch/varyby
 ```
 
 **Example HTTP response**
@@ -651,7 +651,7 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 **Example HTTP request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true 
+GET /api /imf/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true 
 ```
 
 **Example HTTP response**
@@ -700,7 +700,7 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 **Example HTTP request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx 
+GET /api /imf/api/v1/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx 
 ```
 
 **Example HTTP response**

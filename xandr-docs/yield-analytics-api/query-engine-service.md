@@ -37,7 +37,6 @@ The service API exposes application data in a secure manner. Use of API function
   ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
-  - source: curl -H "source:client_id"
   ```
 
 - **Example HTTPS authentication**
@@ -49,20 +48,32 @@ The service API exposes application data in a secure manner. Use of API function
   Accept: application/xml, application/json
   Content-Type: application/json
   username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
+  password: {{password}}     
   ```
 
-- **Example POSTMAN authentication**
+- **HTTPS authentication response**
+The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie.
 
-  Find an example of header settings in Postman below:
+```
+$ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'  
+{  
+   "response": {  
 
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
+          "status": "OK",  
 
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
+          "token": "h20hbtptiv3vlp1rkm3ve1qig0",  
+
+          "dbg_info": {  
+
+                ...  
+
+        }  
+    } 
+} 
+```
+
+> [!NOTE]
+> - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
 
 ## Confidentiality
 
@@ -87,7 +98,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
   | PathParameter | savedAnalysisId | savedAnalysisId | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -114,7 +124,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -125,7 +135,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -164,7 +173,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
   | PathParameter | rowCount | rowCount | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -189,7 +197,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100/1' -i -H 'Content-Type: application/json' -H 
-  'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -200,7 +208,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -240,7 +247,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
   | PathParameter | startRow | startRow | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -265,7 +271,7 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100/1/2' -i -H 'Content-Type: application/json' 
-  -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -276,7 +282,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}/{startRow}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -314,7 +319,6 @@ POST /api/v1/rest/queryengine/analysisdynamic
   | BodyParameter | reportDefinition | reportDefinition | true | [Report](#report) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -545,7 +549,6 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}
   | BodyParameter | reportDefinition | reportDefinition | true | [Report](#report) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -775,7 +778,6 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}
   | PathParameter | rowCount | rowCount | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1006,7 +1008,6 @@ GET /api/v1/rest/queryengine/analysisdynamic/{reportDefinition}/{rowCount}/{star
   | PathParameter | startRow | startRow | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1236,7 +1237,7 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}
   | PathParameter | rowCount | rowCount | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -1468,7 +1469,6 @@ POST /api/v1/rest/queryengine/analysisdynamic/{rowCount}/{startRow}
   | PathParameter | startRow | startRow | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1698,7 +1698,6 @@ POST /api/v1/rest/queryengine/analysisdynamicchart
   | BodyParameter | reportDefinition | reportDefinition | true | [Report](#report) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -1737,7 +1736,6 @@ GET /api/v1/rest/queryengine/analysisdynamicchart/{reportDefinition}
   | BodyParameter | reportDefinition | reportDefinition | true | [Report](#report) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1962,7 +1960,6 @@ POST /api/v1/rest/queryengine/batch
   | BodyParameter | queryStringRequest | queryStringRequest | true | [QueryStringRequest](#querystringrequest) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2061,7 +2058,6 @@ GET /api/v1/rest/queryengine/batch/{queries}/{query}
   | PathParameter | query | query | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -2151,7 +2147,6 @@ GET /api/v1/rest/queryengine/execute/{statement}
   | PathParameter | statement | statement | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2177,8 +2172,7 @@ GET /api/v1/rest/queryengine/execute/{statement}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/execute/select%20*%20from%20list_aliases()%20where%
   20data_source_type%20=%20'ORDER_LINE'' -i -H 'Content-Type: application/json' -H 'Accept: application/json' 
-  -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
-  ```
+  -H 'username: {{username}}' -H 'password: {{password}}'
 
 - **Example HTTP Request**
 
@@ -2189,7 +2183,6 @@ GET /api/v1/rest/queryengine/execute/{statement}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2223,7 +2216,6 @@ POST /api/v1/rest/queryengine/execute/{statement}
   | PathParameter | statement | statement | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
   
 - **Responses**
   
@@ -2250,8 +2242,7 @@ POST /api/v1/rest/queryengine/execute/{statement}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/execute/select%20*%20from%20list_aliases()%20
   where%20data_source_type%20=%20'ORDER_LINE'' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' 
-  -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
-  ```
+  -H 'username: {{username}}' -H 'password: {{password}}'
 
 - **Example HTTP Request**
 
@@ -2262,7 +2253,6 @@ POST /api/v1/rest/queryengine/execute/{statement}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2296,7 +2286,6 @@ POST /api/v1/rest/queryengine/executerequest
   | BodyParameter | statementHolder | statementHolder | true | [QueryRequest](#queryrequest) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2376,7 +2365,6 @@ POST /api/v1/rest/queryengine/query
   | BodyParameter | query | query | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2456,7 +2444,6 @@ GET /api/v1/rest/queryengine/query/{query}
   | BodyParameter | query | query | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
   
 - **Responses**
   
@@ -2484,7 +2471,7 @@ GET /api/v1/rest/queryengine/query/{query}
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/query/select%20consumption_date,%20sum(consumed)%20
   from%20OLPCS(network_products(),'2010-07-01','2010-07-31')%20group%20by%20consumption_date%20order%20by%20consumption_date%20asc' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}'
+  -H 'password: {{password}}'
   ```
 
 - **Example HTTP Request**
@@ -2496,7 +2483,6 @@ GET /api/v1/rest/queryengine/query/{query}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2534,7 +2520,6 @@ POST /api/v1/rest/queryengine/query/{query}
   | PathParameter | query | query | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2562,7 +2547,7 @@ POST /api/v1/rest/queryengine/query/{query}
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/query/select%20consumption_date,
   %20sum(consumed)%20from%20OLPCS(network_products(),'2010-07-01','2010-07-31')%20group%20by%20consumption_date%20order%20by
   %20consumption_date%20asc' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' 
-  -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP Request**
@@ -2574,7 +2559,6 @@ POST /api/v1/rest/queryengine/query/{query}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2613,7 +2597,6 @@ POST /api/v1/rest/queryengine/queryrequest/{decode}
   | QueryParameter | decode | decode | false | boolean | true |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |  |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |  |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |  |
 
 - **Responses**
   
@@ -2693,7 +2676,6 @@ GET /api/v1/rest/queryengine/queryset
   | BodyParameter | querySet | querySet | true | [QuerySet](#queryset) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2784,7 +2766,6 @@ POST /api/v1/rest/queryengine/queryset
   | BodyParameter | querySet | querySet | true | [QuerySet](#queryset) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2876,7 +2857,6 @@ GET /api/v1/rest/queryengine/xml/{query}
   | PathParameter | query | query that needs to be run | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   

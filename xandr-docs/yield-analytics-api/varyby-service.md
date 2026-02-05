@@ -27,13 +27,17 @@ Before beginning this setup, familialize yourself with the foundational concepts
 
 ### Authentication
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
+- Authentication is performed by passing credentials (username and password) in the HTTP headers with each request. A successful authentication returns a token that remains valid for two hours. We recommend using `-b cookies -c cookies` in the POST request to store the token as a cookie.
+- The issued token can then be used to access all endpoints available under the host endpoint `api.appnexus.com/imf`.
+
+
 
 - **cURL authentication**
 
 > [!NOTE]
 > The authentication username and password are the same credentials used for the Digital Platform API and/or Monetize.
 
-Authentication occurs by passing credentials via http headers on each request.
+
 
   ```
   - username: curl -H "username:username"
@@ -54,7 +58,6 @@ Authentication occurs by passing credentials via http headers on each request.
   ```
 
 - **HTTPS authentication response**
-The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie.
 
 ```
 $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'  
@@ -430,9 +433,9 @@ $ curl `https://{client_url}/api/v1/rest/product/inventory/attributes/api/v1/res
 **Example request**
 
 ```
-POST /api/imf/api/v1/test/rest/product/inventory/batch/varyby
+POST /api/imf/api/v1/rest/product/inventory/batch/varyby
 {
-  "targetExpression": placement in ('ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111)",
+  "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')",
   "varybyExpression": {
     "terms": [
       {

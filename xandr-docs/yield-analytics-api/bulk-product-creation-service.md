@@ -171,7 +171,7 @@ POST /api/product/bulk/create
   ```
   POST /api/v1/rest/product/bulk/create HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://api-host
+  Host: api.appnexus.com/imf
   Content-Length: 184
 
   {"bulkProductCreation":{
@@ -248,33 +248,57 @@ GET /api/product/bulk/create/{date}
   
   application/json
 
-- **Example cURL request**
+### Authentication
+The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
+- Authentication is performed by passing credentials (username and password) in the HTTP headers with each request. A successful authentication returns a token that remains valid for two hours. We recommend using `-b cookies -c cookies` in the POST request to store the token as a cookie.
+- The issued token can then be used to access all endpoints available under the host endpoint `api.appnexus.com/imf`.
+
+
+
+- **cURL authentication**
+
+> [!NOTE]
+> The authentication username and password are the same credentials used for the Digital Platform API and/or Monetize.
+
+
 
   ```
-  $ curl 'https://api-host/api/v1/rest/product/bulk/create/2017-01-01' -i -H 'Content-Type: application/json;charset=UTF-8'
+  - username: curl -H "username:username"
+  - password: curl -H "password:password"
+          
   ```
 
-- **Example HTTP request**
+- **HTTPS authentication**
 
   ```
-  GET /api/v1/rest/product/bulk/create/2017-01-01 HTTP/1.1
-  Content-Type: application/json;charset=UTF-8
-  Host: https://api-host
+  GET /api/v1/rest/
+  HTTPS/1.1
+  Host: api.appnexus.com/imf
+  Accept: application/xml, application/json
+  Content-Type: application/json
+  username: {{username}}
+  password: {{password}}      
   ```
 
-- **Example HTTP response**
+- **HTTPS authentication response**
 
-  ```
-  HTTP/1.1 200 OK
-  Content-Type: application/json;charset=UTF-8
-  Content-Length: 111
+```
+$ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'  
+{  
+   "response": {  
 
-  {"bulkProductCreationResponse":{"products":[
-     {"productName":"Test Product New", "externalId": "1", productId:"", status:"PENDING"},
-     {"productName":"A second product", "externalId": "2", productId:"3364", status:"CREATED"}
-  ]}
-  }
-  ```
+          "status": "OK",  
+
+          "token": "h20hbtptiv3vlp1rkm3ve1qig0",  
+
+          "dbg_info": {  
+
+                ...  
+
+        }  
+    } 
+} 
+```
 
 ## Types
 

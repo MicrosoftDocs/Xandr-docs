@@ -120,7 +120,7 @@ After authenticating, your token remains valid for 2 hours. You do not need to r
 
 ## Related topics
 
-- [Account Recovery Service](account-recovery-service.md)
-- [API Best Practices](api-best-practices.md)
-- [API Usage Constraints](api-usage-constraints.md)
-- [API Semantics](api-semantics.md)
+- [Account Recovery Service](../digital-platform-api/account-recovery-service.md)
+- [API Best Practices](../digital-platform-api/api-best-practices.md)
+- [API Usage Constraints](../digital-platform-api/api-usage-constraints.md)
+- [API Semantics](../digital-platform-api/api-semantics.md)

@@ -23,8 +23,9 @@ For more details, see the [Batch section](#batch-method), which walks through th
 
 Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages:
 - **[API Getting Started](../digital-platform-api/api-getting-started.md)** - It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices. 
-- **[Authentication Service](../digital-platform-api/authentication-service.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
+- **[Authentication](api-authentication.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
 
+<!--
 ### Authentication
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 - Authentication is performed by passing credentials (username and password) in the HTTP headers with each request. A successful authentication returns a token that remains valid for two hours. We recommend using `-b cookies -c cookies` in the POST request to store the token as a cookie.
@@ -138,7 +139,7 @@ Headers:
   }
 ]
 ```
-
+-->
 
 
 ## Content types
@@ -213,7 +214,7 @@ GET /api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1/rest/ product/inventory/ attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://{client_url}/api/v1/rest/product/inventory/attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example cURL request**
@@ -577,7 +578,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
   "results": [
     {
       "pageeffects": "Yes",
-      "targetexpression": placement in ('ABC - 111, 'ABC – 111', 'XYZ – 111', 'DEF - 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'DEF– 111') and size in ('300x100')",
+      "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')" and size in ('300x100')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -594,7 +595,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
     },
     {
       "pageeffects": "Yes",
-      "targetexpression": placement in ('ABC – 111', 'XYZ – 111', 'ABC – 111', 'DEF – 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111') and size in ('320x50')",
+      "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')" and size in ('320x50')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -611,7 +612,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
     },
     {
       "pageeffects": "Yes",
-      "targetexpression": placement in ('ABC – 111', 'XYZ – 111', 'DEF – 111', 'ABC - 111', 'XYZ – 111', 'ABC – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('728x90')",
+      "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')" and size in ('728x90')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,

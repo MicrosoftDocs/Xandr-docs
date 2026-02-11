@@ -28,6 +28,10 @@ API developers should check the HTTP response codes returned from the service RE
 
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
+## Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md
+
+<!--
 - **Example cURL authentication**
 
   Authentication occurs by passing credentials via http headers on each request.
@@ -71,7 +75,7 @@ $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'
 
 > [!NOTE]
 > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-
+-->
 
 ## Confidentiality
 

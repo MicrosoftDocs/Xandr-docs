@@ -9,6 +9,7 @@ ms.author: shsrinivasan
 
 # Working with campaigns
 
+<!--
 Once you have created a line item to define your financial agreement with an advertiser, you can set up campaigns to buy media based on your agreement. Setting up a campaign involves defining how much you are willing to spend (media budget), whether you want to buy both direct, third-party, or both types of inventory, how you want to bid (buying strategies), and how you want to target inventory and users.
 
 - [Explore Campaigns](explore-campaigns.md): View essential metrics about all campaigns under an advertiser or
@@ -23,3 +24,4 @@ Once you have created a line item to define your financial agreement with an adv
   for a campaign.
 - [Buying Strategies](buying-strategies.md): Understand how to optimize third-party buying using CPM, CPA, or CPC.
 - [Bidding Priority](bidding-priority.md): Control how campaigns are prioritized in relation to each other.
+-->

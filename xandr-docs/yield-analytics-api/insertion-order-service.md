@@ -33,39 +33,9 @@ API developers should check the HTTP response codes returned from the service RE
 
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
-- **Example cURL authentication**
+### Authentication
+For more infromation on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md).
 
-  Authentication occurs by passing credentials via http headers on each request.
-
-  ```
-  - username: curl -H "username:username"
-  - password: curl -H "password:password"
-  - source: curl -H "source:client_id"        
-  ```
-
-- **Example HTTPS authentication**
-
-  ```
-  GET /api/v1/rest/
-  HTTPS/1.1
-  Host: yieldanalytics.xandr.com
-  Accept: application/xml, application/json
-  Content-Type: application/json
-  username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
-  ```
-
-- **Example POSTMAN authentication**
-
-  Find an example of header settings in Postman below:
-
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
-
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
 
 ## Confidentiality
 
@@ -91,7 +61,6 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
   | PathParameter | nbDays | nbDays | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -115,7 +84,7 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/future/1/1' -i -H 'Content-Type: application/json' 
-    -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+    -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -126,7 +95,6 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -209,7 +177,6 @@ GET /api/v1/rest/order/capacity/guaranteed/future/csv/{nbDays}/{timeZone}
   | PathParameter | nbDays | nbDays | true | integer (int32) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -249,7 +216,6 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZo
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -288,7 +254,6 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZo
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -328,7 +293,6 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/csv/{nbDays}/{timeZo
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -367,7 +331,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
 
@@ -494,7 +458,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
 
@@ -621,7 +585,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
 
@@ -748,7 +712,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   | BodyParameter | externalOrderIdPool | externalOrderIdPool | true | [ExternalOrderIdPool](#externalorderidpool) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
 
@@ -773,7 +737,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/1/Australia/Sydney' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' 
-  -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'    
+  -H 'username: {{username}}' -H 'password: {{password}}' 
   ```
 
 - **Example HTTP request**
@@ -784,7 +748,6 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -860,7 +823,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   | PathParameter | endDate | endDate | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -885,7 +848,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/delivery/1/2016-06-01/2016-07-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' 
-  -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'    
+  -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -896,7 +859,6 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -944,7 +906,6 @@ POST /api/v1/rest/order/inventory/apas/{startDate}/{endDate}/{consumptionFilter}
   | BodyParameter | body | body | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -985,7 +946,6 @@ POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consu
   | BodyParameter | body | body | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 

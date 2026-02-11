@@ -11,9 +11,9 @@ ms.date: 01/23/2026
 
 ## Overview
 
-VaryBy functionality allows you to run availability lookups by varying one or more targeting attributes such as city, browser, or device, across a defined range of values. It essentially allows you to vary base targeting criteria by selected variant targeting criteria. VaryBy helps build multiple targeting strings by combining each variant with the base targeting. Instead of checking availability for a single static target, VaryBy automatically generates and evaluates multiple combinations of attribute values, returning results for each combination in a single batch. This helps you better understand how different attribute variations influence availability, performance, or inventory. 
+VaryBy functionality allows you to run availability lookups by varying one or more targeting attributes such as city, browser, and device, across a defined range of values. It allows you to vary base targeting criteria by selected variant targeting criteria. VaryBy helps build multiple targeting strings by combining each variant with the base targeting. Instead of checking availability for a single static target, VaryBy automatically generates and evaluates multiple combinations of attribute values, returning results for each combination in a single batch. This helps you better understand how different attribute variations influence availability, performance, or inventory. 
  
-This allows you to vary base targeting criteria by selected variant targeting criteria. It builds multiple targeting strings by combining each variant with the base targeting. This results in a set of targeting strings that represent all possible combinations, enabling more detailed and flexible analysis. 
+You can vary base targeting criteria by selected variant targeting criteria. It builds multiple targeting strings by combining each variant with the base targeting. This results in a set of targeting strings that represent all possible combinations, enabling more detailed and flexible analysis. 
 
 VaryBy works in conjunction with Batch processing. While VaryBy defines the attributes and values that vary, Batch determines how those combinations are executed as a single request. The Batch workflow is where the final varyBy-based request structure is constructed and submitted.
 
@@ -23,17 +23,22 @@ For more details, see the [Batch section](#batch-method), which walks through th
 
 Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages:
 - **[API Getting Started](../digital-platform-api/api-getting-started.md)** - It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices. 
-- **[Authentication Service](../digital-platform-api/authentication-service.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
+- **[Authentication](api-authentication.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
 
+<!--
 ### Authentication
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
+- Authentication is performed by passing credentials (username and password) in the HTTP headers with each request. A successful authentication returns a token that remains valid for two hours. We recommend using `-b cookies -c cookies` in the POST request to store the token as a cookie.
+- The issued token can then be used to access all endpoints available under the host endpoint `api.appnexus.com/imf`.
+
+
 
 - **cURL authentication**
 
 > [!NOTE]
 > The authentication username and password are the same credentials used for the Digital Platform API and/or Monetize.
 
-Authentication occurs by passing credentials via http headers on each request.
+
 
   ```
   - username: curl -H "username:username"
@@ -54,7 +59,6 @@ Authentication occurs by passing credentials via http headers on each request.
   ```
 
 - **HTTPS authentication response**
-The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie.
 
 ```
 $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'  
@@ -89,7 +93,7 @@ Authorization: {{auth-token}}
 **Example cURL request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/attributes/0/100000/%25
+GET /api/imf/api/v1/rest/product/inventory/attributes/0/100000/%25
 Headers:
 {
   "Authorization": "{{auth-token}}"
@@ -135,7 +139,7 @@ Headers:
   }
 ]
 ```
-
+-->
 
 
 ## Content types
@@ -144,7 +148,7 @@ The Service REST API is currently designed to support the following content type
 
 - JSON - using `Content-type: application/json`
 
-Selecting the desired content type is a choice the API developer should make on a case by case basis. API functionality is symmetrical across content types. API developers may specify the desired content type in the HTTP GET or POST method parameters or via their AJAX or HTTP client library.
+Selecting the desired content type is a choice the API developer should make on a case-by-case basis. API functionality is symmetrical across content types. API developers may specify the desired content type in the HTTP GET or POST method parameters or via their AJAX or HTTP client library.
 
 ## Error checking and status codes
 
@@ -162,10 +166,10 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 
 | HTTP method | Endpoint | Description |
 |---|---|---|
-| GET | `https://api.appnexus.com/imf/api/v1 /rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}` | Returns a paginated list of attribute values for a given attribute ID. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/operators/{attribute}` | Returns a list of operators for a given attribute. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/filters/{filter_name}` | Returns filter details to use in create batch body. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` | Returns a list of attributes matching the given query. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}` | Returns a paginated list of attribute values for a given attribute ID. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/operators/{attribute}` | Returns a list of operators for a given attribute. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{filter_name}` | Returns filter details to use in create batch body. |
 
 
 
@@ -182,7 +186,7 @@ GET /api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQu
 | Type | Name | Description | Required | Schema |
 |---|---|---| ---|---|
 | PathParameter | getAttributes | Returns a list of attributes matching the given query. | true | string |
-| PathParameter | pageIndex | Specifies the "page" of results you want to retrieve. | true | integer |
+| PathParameter | pageIndex | Specifies the page of results you want to retrieve. | true | integer |
 | PathParameter | pageSize | Specifies how many items (or records) are included in each page of results. | true | integer |
 | PathParameter | attrNameQuery | The name of the attribute you want to query. | true | string |
 | HeaderParameter | content-type | Specifies your request body format. | true | string |
@@ -201,7 +205,7 @@ GET /api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId
 | Type | Name | Description | Required | Schema |
 |---|---|---| ---|---|
 | PathParameter | getAttributeValues | Returns a paginated list of attribute values for a given attribute ID. | true | string |
-| PathParameter | pageIndex | Specifies the "page" of results you want to retrieve. | true | integer |
+| PathParameter | pageIndex | Specifies the page of results you want to retrieve. | true | integer |
 | PathParameter | pageSize | Specifies how many items (or records) are included in each page of results. | true | integer |
 | PathParameter | attributeId | The ID of the attribute for which you want to retrieve values. | true | integer |
 | HeaderParameter | content-type | Specifies your request body format. | true | string |
@@ -210,13 +214,13 @@ GET /api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/ product/inventory/ attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://{client_url}/api/v1/rest/product/inventory/attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example cURL request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}
+GET /api/imf/api/v1/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}
 ```
 
 **Example cURL response**
@@ -241,7 +245,7 @@ GET /api/v1/rest/product/inventory/operators/{attribute}
 | Type | Name | Description | Required | Schema |
 |---|---|---| ---|---|
 | PathParameter | getOperators | Returns a list of operators for a given attribute. | true | string |
-| PathParameter | operators | Returns a list of operators for a specific attributeId. | true | integer |
+| PathParameter | operators | Returns a list of operators for a specific `attributeId`. | true | integer |
 | PathParameter | attribute | Enables you to understand the operators that are allowed for an attributeId. | true | integer |
 | PathParameter | attributeId | The ID of the attribute for which you want to retrieve values. | true | integer |
 | HeaderParameter | content-type | Specifies your request body format. | true | string |
@@ -256,7 +260,7 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/operators/size \` -
 **Example cURL request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/operators/size
+GET /api /imf/api/v1/rest/product/inventory/operators/size
 ```
 
 **Example cURL response**
@@ -282,13 +286,13 @@ GET /api/v1/rest/product/inventory/filters/{filter_name}
 | Type | Name | Description | Required | Schema |
 |---|---|---| ---|---|
 | PathParameter | getFilters| Returns filter details to use in create batch body.| true | string |
-| PathParameter | group_by | Specifies how the data is aggregated and displayed. <br> To see all possible values using GROUP_BY <br> `GET /api/v1/rest/product/inventory/filters/GROUP_BY` <br> **Example response:** <br> ```{ "total": 6, "name": "Group By", "options": [ { "name": "Daily", "value": "daily" }, { "name": "Weekly", "value": "weekly" }, { "name": "Monthly", "value": "monthly" }, { "name": "Quarterly", "value": "quarterly" }, { "name": "Yearly", "value": "yearly" }, { "name": "All", "value": "all" } ], "id": "GROUP_BY" } ``` <br> **NOTE:** This filter helps you identify the available GROUP_BY options and understand how they can be applied. | true | string |
+| PathParameter | group_by | Specifies how the data is aggregated and displayed. <br> To see all possible values using GROUP_BY <br> `GET /api/v1/rest/product/inventory/filters/GROUP_BY` <br> **Example response:** <br> ```{ "total": 6, "name": "Group By", "options": [ { "name": "Daily", "value": "daily" }, { "name": "Weekly", "value": "weekly" }, { "name": "Monthly", "value": "monthly" }, { "name": "Quarterly", "value": "quarterly" }, { "name": "Yearly", "value": "yearly" }, { "name": "All", "value": "all" } ], "id": "GROUP_BY" } ``` <br> **NOTE:** This filter helps you identify the available GROUP_BY options and understand how to apply them. | true | string |
 | PathParameter | priority  | Indicates the priority that you want to use for your lookup. For more information on filters see, [Lookup builder](../yield-analytics-ui/lookup-builder.md). <br> **Example response:** <br> ```{ "total": 20, "name": "Priority", "options": [ { "name": "20", "value": "20" }, { "name": "19", "value": "19" }, { "name": "18", "value": "18" }, { "name": "17", "value": "17" }, { "name": "16", "value": "16" }, { "name": "15", "value": "15" }, { "name": "14", "value": "14" }, { "name": "13", "value": "13" }, { "name": "12", "value": "12" }, { "name": "11", "value": "11" }, { "name": "10", "value": "10" }, { "name": "9", "value": "9" }, { "name": "8", "value": "8" }, { "name": "7", "value": "7" }, { "name": "6", "value": "6" }, { "name": "5", "value": "5" }, { "name": "4", "value": "4" }, { "name": "3", "value": "3" }, { "name": "2", "value": "2" }, { "name": "1", "value": "1" } ], "id": "PRIORITY" } ``` <br> **NOTE:** This filter helps you identify the available options and understand how they can be applied when the priority filter is used. | true | string |
 | PathParameter | roadblock | Indicates whether to include roadblocked inventory in the lookup. <br> **Example response:** <br> ```{ "total": 4, "name": "Roadblock", "options": [ { "name": "All", "value": "all" }, { "name": "As Many", "value": "as_many" }, { "name": "Only One", "value": "only_one" }, { "name": "One Or More", "value": "one_or_more" } ], "id": "ROADBLOCK" } ``` <br> **NOTE:** This filter helps you identify the available options and understand how they can be applied when the roadblock filter is used. | true | string |
 | PathParameter | page_effects | A flag indicating whether page-level constraints (such as “one impression per page” or displacement rules) should be applied during availability checks. When enabled, the forecast assumes stricter serving rules, reducing projected inventory. <br> **NOTE:** This filter helps you identify and return the available options when it’s used. | true | string |
 | PathParameter | viewable | This setting allows you to run an availability check that includes additional viewability metrics. These are based on the historical viewable rate for a set of inventories that you are checking. <br> **Example response:** <br> ```{ "total": 2, "name": "Viewable", "options": [ { "name": "Yes", "value": "YES" }, { "name": "No", "value": "NO" } ], "id": "VIEWABLE" } ``` <br> **NOTE:** This filter helps you identify and return the available options when it's used. | true | string |
 | PathParameter | frequency_cap | **Example response:** <br> ```{ "name": "Frequency Cap", "timePeriodOptions": [ "MINUTE", "HOUR", "DAY", "WEEK", "MONTH", "LIFETIME" ], "id": "FREQUENCY_CAP" } ``` <br> **NOTE:** This filter helps you identify and return the available options when a frequency cap is applied. | true | string |
-| PathParameter | competitive_separation | This enables for refinements in availability lookups results by considering delivery restrictions due to advertiser and advertiser group restrictions. Competitive Separation will exclude competitors' order lines from showing on the same page. For more information on filters see, [Lookup builder](../yield-analytics-ui/lookup-builder.md). <br> **NOTE:** This filter helps you identify and return the available options when it’s used. | true | string |
+| PathParameter | competitive_separation | This enables for refinements in availability lookup results by considering delivery restrictions due to advertiser and advertiser group restrictions. `competitive_separation` will exclude competitors' order lines from showing on the same page. For more information on filters see, [Lookup builder](../yield-analytics-ui/lookup-builder.md). <br> **NOTE:** This filter helps you identify and return the available options when it’s used. | true | string |
 | PathParameter | order_line_exclusion | Allows exclusion of specific order lines from availability calculations or delivery. <br> NOTE: This filter helps you identify and return the available options when it’s used. | true | string |
 | HeaderParameter | content-type | Specifies your request body format. | true | string |
 
@@ -301,7 +305,7 @@ $ curl `https://{client_url}/api/v1 /rest/ product/inventory/filters/GROUP_BY  \
 **Example cURL request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/filters/GROUP_BY
+GET /api /imf/api/v1/rest/product/inventory/filters/GROUP_BY
 ```
 
 **Example cURL response**
@@ -341,8 +345,8 @@ GET /api /imf/api/v1/test/rest/product/inventory/filters/GROUP_BY
 ```
 
 > [!NOTE]
-> NOTE: This endpoint pattern can be used with any supported filter name, not only GROUP_BY. Use the following general format: 
-> GET https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/filters/{FILTER_NAME} 
+> NOTE: This endpoint pattern can be used with any supported filter name, not just `GROUP_BY`. Use the following general format: 
+> GET https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{FILTER_NAME} 
 > Supported filter names include: 
 > - GROUP_BY 
 > - PRIORITY 
@@ -362,8 +366,8 @@ Instead of making separate calls for each variation, you send them as a batch, a
 
 | HTTP method | Endpoint | Description |
 |---|---|---|
-| POST | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/batch/varyby` | Submits a batch request for varying by attributes. |
-| GET | `https://api.appnexus.com/imf/api/v1/test/rest/product/inventory/batch/{batchqueueId}` | Fetches details of a specific batch by its ID. |
+| POST | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/varyby` | Submits a batch request for varying by attributes. |
+| GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/{batchqueueId}` | Fetches details of a specific batch by its ID. |
 | GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true` | Lists all batches with summary information. |
 | GET | `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/download?fileName={filename}` | Downloads a CSV or Excel file from ADLS. |
 
@@ -408,7 +412,7 @@ POST /api/v1/rest/product/inventory/batch/varyby
 | viewable | Specifies if the forecast needs to be applied to the lookup or not. When set to true, only inventory meeting viewability criteria is included in availability. | true | string |
 | roadblock | Indicates whether to include roadblocked inventory in the lookup. | true | string |
 | page_effects | A flag indicating whether page-level constraints (such as “one impression per page” or displacement rules) should be applied during availability checks. | true | string |
-| contracted_cpm | Refers to the minimum and maximum CPM (Cost Per Mille) | true | string |
+| contracted_cpm | Refers to the minimum and maximum Cost per mille (CPM) | true | string |
 | order_line_exclusion | Allows exclusion of specific order lines from availability calculations or delivery. Useful for avoiding conflicts with other campaigns or honoring contractual obligations. | true | string |
 | competitive_separation | Specifies if you want to apply a competitive separation to your lookup. This enables for refinements in availability lookups results by considering delivery restrictions due to advertiser and advertiser group restrictions. Competitive Separation will exclude competitors' order lines from showing on the same page. For more information on filters see, [Lookup builder](../yield-analytics-ui/lookup-builder.md). | true | string |
 
@@ -424,15 +428,15 @@ POST /api/v1/rest/product/inventory/batch/varyby
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/varyby \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://{client_url}/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/varyby \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/batch/varyby
+POST /api/imf/api/v1/rest/product/inventory/batch/varyby
 {
-  "targetExpression": placement in ('ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111, 'ABC - 111, 'XYZ - 111, 'DEF - 111)",
+  "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')",
   "varybyExpression": {
     "terms": [
       {
@@ -526,7 +530,7 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 **Example request**
 
 ```
-GET /api/imf/api/v1/test/rest/product/inventory/batch/varyby
+GET /api/imf/api/v1/rest/product/inventory/batch/varyby
 ```
 
 **Example HTTP response**
@@ -574,7 +578,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
   "results": [
     {
       "pageeffects": "Yes",
-      "targetexpression": placement in ('ABC - 111, 'ABC – 111', 'XYZ – 111', 'DEF - 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111', 'DEF– 111') and size in ('300x100')",
+      "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')" and size in ('300x100')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -591,7 +595,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
     },
     {
       "pageeffects": "Yes",
-      "targetexpression": placement in ('ABC – 111', 'XYZ – 111', 'ABC – 111', 'DEF – 111', 'ABC – 111', 'DEF – 111', 'XYZ – 111', 'ABC – 111', 'XYZ – 111') and size in ('320x50')",
+      "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')" and size in ('320x50')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -608,7 +612,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
     },
     {
       "pageeffects": "Yes",
-      "targetexpression": placement in ('ABC – 111', 'XYZ – 111', 'DEF – 111', 'ABC - 111', 'XYZ – 111', 'ABC – 111', 'ABC – 111', 'XYZ – 111', 'ABC – 111') and size in ('728x90')",
+      "targetExpression": "placement in ('ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111', 'ABC - 111', 'XYZ - 111', 'DEF - 111')" and size in ('728x90')",
       "roadblockcapacity": 111,
       "viewabledeliverymultiplier": 0,
       "viewablecapacity": 111,
@@ -651,7 +655,7 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 **Example HTTP request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true 
+GET /api /imf/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true 
 ```
 
 **Example HTTP response**
@@ -700,7 +704,7 @@ $ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/re
 **Example HTTP request**
 
 ```
-GET /api /imf/api/v1/test/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx 
+GET /api /imf/api/v1/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx 
 ```
 
 **Example HTTP response**

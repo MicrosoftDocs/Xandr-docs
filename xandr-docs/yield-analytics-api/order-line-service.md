@@ -32,39 +32,9 @@ API developers should check the HTTP response codes returned from the service RE
 
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
-- **Example cURL authentication**
+### Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md).
 
-  Authentication occurs by passing credentials via http headers on each request.
-
-  ```
-  - username: curl -H "username:username"
-  - password: curl -H "password:password"
-  - source: curl -H "source:client_id"        
-  ```
-
-- **Example HTTPS authentication**
-
-  ```
-  GET /api/v1/rest/
-  HTTPS/1.1
-  Host: yieldanalytics.xandr.com
-  Accept: application/xml, application/json
-  Content-Type: application/json
-  username: {{username}}
-  password: {{password}}
-  source: {{client_id}}
-  ```
-
-- **Example POSTMAN authentication**
-
-  Find an example of header settings in Postman below:
-
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
-
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
 
 ## Confidentiality
 
@@ -90,7 +60,7 @@ DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
   | PathParameter | externalOrderLineIds | externalOrderLineIds | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -160,7 +130,6 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -311,7 +280,7 @@ GET /api/v1/rest/orderLine/inventoryandcontention/{externalOrderLineId}/{startDa
   | PathParameter | endDate | endDate | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -354,7 +323,7 @@ GET /api/v1/rest/orderLine/inventoryandcontention/{externalOrderLineId}/{startDa
   | PathParameter | matrixVars | matrixVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   

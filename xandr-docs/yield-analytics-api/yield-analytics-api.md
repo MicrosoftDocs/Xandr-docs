@@ -29,39 +29,8 @@ API developers should check the HTTP response codes returned from the service RE
 
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
-- **Example cURL authentication**
-
-  Authentication occurs by passing credentials via http headers on each request.
-
-  ```
-  - username: curl -H "username:username"
-  - password: curl -H "password:password"
-  - source: curl -H "source:client_id"        
-  ```
-
-- **Example HTTPS authentication**
-
-  ```
-  GET /api/v1/rest/
-  HTTPS/1.1
-  Host: yieldanalytics.xandr.com
-  Accept: application/xml, application/json
-  Content-Type: application/json
-  username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
-  ```
-
-- **Example POSTMAN authentication**
-
-  Find an example of header settings in Postman below:
-
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
-
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
+### Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md).
 
 ## Confidentiality
 

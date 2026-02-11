@@ -11,20 +11,21 @@ ms.date: 01/21/2026
 
 ## Overview
 
-GraphQL is a query language for APIs and a runtime that executes queries against existing data. It enables you to request only the data you need, in a precise and efficient way. 
+GraphQL is a query language for APIs and a runtime that lets you request only the data you need. It provides precise, efficient data retrieval and reduces the overhead often associated with Representational State Transfer API (REST).
 
 GraphQL also addresses several limitations of REST-based architectures, including: 
 
-- Reducing the number of API calls by allowing you to retrieve all required data in a single query. 
-- Preventing over-fetching, since REST endpoints typically return fixed field sets that may include unnecessary data. 
-- Supporting multi-resource retrieval in one request, improving both efficiency and performance. 
-- GraphQL ensures safer, more modern, and more scalable access patterns while preserving the flexibility you need.
+- Allowing you to get all required data in a single query.
+- Preventing over‑fetching by returning only the fields you ask for.
+- Supporting multi‑resource requests to improve performance.
+
+GraphQL ensures safer, more modern, and more scalable access patterns while preserving the flexibility you need.
 
 ## Prerequisites 
 
-Before beginning this setup, familialize yourself with the foundational concepts outlined in the following pages:
-- **[API Getting Started](../digital-platform-api/api-getting-started.md)** - It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices. 
-- **[Authentication Service](../digital-platform-api/authentication-service.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
+Before you start this setup, review the foundational concepts outlined in the referenced pages :
+- **[API Getting Started](../digital-platform-api/api-getting-started.md)** - Covers testing environments, usage constraints, API semantics such as running commands, filtering, and sorting, as well as recommended best practices. 
+- **[Authentication Service](../digital-platform-api/authentication-service.md)** - Always complete authentication first when using the API services. After you authenticate, write the token to your cookie file for future requests.
 
 ### Authentication
 
@@ -99,7 +100,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Retrieve product names and ID listings according to the selected filter criteria. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Create, modify, or update multiple products using file upload. |
 | POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Analyze product overlap and capacity relationships using simple queries (product IDs/names/groups) or dynamic targeting expressions. |
-| POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Manage Manual Forecast Adjustments (MFA) - List, Add, Edit, and Delete forecast overrides for ad inventory capacity. |
+| POST | `https://api.appnexus.com/imf/api/v1/rest/graphql` | Manage Manual forecast adjustments (MFA) - List, Add, Edit, and Delete forecast overrides for ad inventory capacity. |
 
 
 
@@ -144,7 +145,7 @@ $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 **Active products with product type set to Custom - ACTIVE_CUSTOM_PRODUCTS**
 
 > [!NOTE]
-> All query responses use a consistent format rather than different variations of the sample answers.
+> All query responses follow a single, consistent format rather than using different variations of sample answers.
 
 ```
 $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
@@ -457,8 +458,8 @@ To create or update products:
 |---|---|---|
 | productId | string | Valid product ID from the application. <br> **NOTE:** This field is required only within the file, when an existing product is being updated. |
 | mutation UploadFile | string | Refers to a GraphQL mutation operation used to upload a file to a server or API endpoint.|
-| validateOnly | boolean | If set to true, GraphQL app will only validate the text file. It will not insert the data from the text file into the table, so product creation will not occur. This process is solely for validating the data in the text file. If set to false, the products would be queued to be created during the next nightly processing run. Other fields however, in the query, for example, like mutation or UploadFile do not change and will always be the same in the query. <br> **NOTE:** The only inputs allowed are: <br> - validateOnly: true or false <br> - processNow: true or false <br>  - 0: file |
-| processNow | boolean | If set to true, the product creation job will immediately trigger the creation of products in the actual table. Instead of waiting for the next processing run, which causes a delay, this will create the product right away. If set to false, the products would be queued to be created during the next nightly processing run. Other fields however, in the query, for example, like mutation or UploadFile do not change and will always be the same in the query. <br> **NOTE:** The only inputs allowed are: <br> - validateOnly: true or false <br> - processNow: true or false <br>  - 0: file |
+| validateOnly | boolean | If set to true, GraphQL app will only validate the text file. It will not insert the data from the text file into the table, so product creation will not occur. This process is solely for validating the data in the text file. If set to false, the products would be queued to be created during the next nightly processing run. Other fields in the query, such as, like mutation or UploadFile do not change and will always be the same in the query. <br> **NOTE:** The only inputs allowed are: <br> - validateOnly: true or false <br> - processNow: true or false <br>  - 0: file |
+| processNow | boolean | If set to true, the product creation job will immediately trigger the creation of products in the actual table. Instead of waiting for the next processing run, this creates the product immediately. If set to false, the products would be queued to be created during the next nightly processing run. Other fields in the query, such as mutation or UploadFile, don't change. <br> **NOTE:** The only inputs allowed are: <br> - validateOnly: true or false <br> - processNow: true or false <br>  - 0: file |
 | map | string | Refers to the variable in the GraphQL operation that should receive the uploaded file(s).<br> **NOTE:** The value here will always be `{ "0": ["variables.input.file"] }` |
 
 
@@ -578,7 +579,7 @@ map: { "0": ["variables.input.file"] }
 
 ### Product or overlap analysis query 
 
-The product or overlap analysis query in Yield Analytics examines how impressions overlap across products. By analyzing these overlapping impressions, you can compare how impressions are shared between a selected focus product. or a set of target attributes, and the products that overlap with it. 
+The product or overlap analysis query in Yield Analytics examines how impressions overlap across products. By analyzing these overlapping impressions, you can compare how impressions are shared between a selected focus product, or a set of target attributes, and the products that overlap with it. 
 
 The service supports two query methods:
 - **Simple queries:** Compare product names or IDs with other product names or IDs. 
@@ -750,7 +751,7 @@ $ curl 'https://api.appnexus.com/imf/api/v1/rest/graphql'
 ```
 ### Manual forecast adjustment (MFA)
 
-Manual Forecast Adjustment (MFA) enables you enables you to make one-time changes to the forecast for specific events that will impact traffic for a particular product. 
+Manual Forecast Adjustment (MFA) enables you to make one-time changes to the forecast for specific events that will impact traffic for a particular product. 
 The GraphQL API supports the following MFA operations: 
 
 - List MFAs 
@@ -765,8 +766,8 @@ The GraphQL API supports the following MFA operations:
 | manualForecastAdjustmentId | integer | Unique identifier for the manual forecast adjustment entry. |
 | name | string |  Descriptive name for the adjustment (e.g., “Holiday Boost Q4”). |
 | productId | integer | The ID of the product to which the adjustment applies. |
-| adjustmentStatus | string | Current status of the adjustment. <br> The values included are: <br> - ACTIVE: The change takes effect on the dates you select.  <br> - INACTIVE: The change doesn't take effect until you edit and set the adjustment status to “active”.  |
-| adjustmentType | string | Type of adjustment applied, such as: <br> - Absolute: Adds/subtracts a specific number of impressions to the Yield Analytics generated forecast. It changes the forecast by adding or subtracting the value you enter. <br> - Relative: Adds/subtracts a percentage of impressions to the Yield Analytics generated forecast. It changes the forecast based on the percentage that you enter. <br> - Replace: Replaces the Yield Analytics forecast with a manually supplied forecast value. It changes the actual forecast value (number of impressions) with the value you enter. <br> - Ceiling: Caps the Yield Analytics forecast at a supplied forecast value. It creates an impressions cap over a period of time, above and beyond spike detection and mitigation. |
+| adjustmentStatus | string | Current adjustment status. <br> The values included are: <br> - ACTIVE: The change takes effect on the dates you select.  <br> - INACTIVE: The change doesn't take effect until you edit and set the adjustment status to “active”.  |
+| adjustmentType | string | Indicates the adjustment type that is applied, Possible values are: <br> - Absolute: Adds/subtracts a specific number of impressions to the Yield Analytics generated forecast. It changes the forecast by adding or subtracting the value you enter. <br> - Relative: Adds/subtracts a percentage of impressions to the Yield Analytics generated forecast. It changes the forecast based on the percentage that you enter. <br> - Replace: Replaces the Yield Analytics forecast with a manually supplied forecast value. It changes the actual forecast value (number of impressions) with the value you enter. <br> - Ceiling: Caps the Yield Analytics forecast at a supplied forecast value. It creates an impressions cap over a period of time, above and beyond spike detection and mitigation. |
 | adjustmentValue | integer | The numeric value of the adjustment (e.g., +10% or 500000 impressions). |
 | creationDate | string | Timestamp when the adjustment was created.  |
 | lastModifiedDate | string | Timestamp of the most recent update to the adjustment. |

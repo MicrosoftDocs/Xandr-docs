@@ -28,6 +28,10 @@ API developers should check the HTTP response codes returned from the service RE
 
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
+## Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md
+
+<!--
 - **Example cURL authentication**
 
   Authentication occurs by passing credentials via http headers on each request.
@@ -35,8 +39,6 @@ The service API exposes application data in a secure manner. Use of API function
   ```
   - username: curl -H "username:username"
   - password: curl -H "password:password"
-  - source: curl -H "source:client_id"
-          
   ```
 
 - **Example HTTPS authentication**
@@ -48,20 +50,32 @@ The service API exposes application data in a secure manner. Use of API function
   Accept: application/xml, application/json
   Content-Type: application/json
   username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
+  password: {{password}}      
   ```
+- **HTTPS authentication response**
+The request returns a token that remains valid for 2 hours. We suggest using "-b cookies -c cookies" in the POST request to store the token in a cookie.
 
-- **Example POSTMAN authentication**
+```
+$ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'  
+{  
+   "response": {  
 
-  Find an example of header settings in Postman below:
+          "status": "OK",  
 
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
+          "token": "h20hbtptiv3vlp1rkm3ve1qig0",  
 
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
+          "dbg_info": {  
+
+                ...  
+
+        }  
+    } 
+} 
+```
+
+> [!NOTE]
+> - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
+-->
 
 ## Confidentiality
 
@@ -85,7 +99,6 @@ GET /api/v1/rest/data/aliasColumns
   |---|---|---|---|---|
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -110,7 +123,7 @@ GET /api/v1/rest/data/aliasColumns
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -121,7 +134,6 @@ GET /api/v1/rest/data/aliasColumns
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -159,7 +171,6 @@ GET /api/v1/rest/data/aliasFunctions
   |---|---|---|---|---|
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -184,7 +195,7 @@ GET /api/v1/rest/data/aliasFunctions
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -195,7 +206,6 @@ GET /api/v1/rest/data/aliasFunctions
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -233,7 +243,6 @@ GET /api/v1/rest/data/consumptionFilters
   |---|---|---|---|---|
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -258,7 +267,7 @@ GET /api/v1/rest/data/consumptionFilters
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/consumptionFilters' -i -H 'Content-Type: application/json' -H 
-  'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -269,7 +278,6 @@ GET /api/v1/rest/data/consumptionFilters
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 

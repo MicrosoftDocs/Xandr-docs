@@ -34,39 +34,9 @@ API developers should check the HTTP response codes returned from the service RE
 
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
-- **Example cURL authentication**
+### Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md).
 
-  Authentication occurs by passing credentials via http headers on each request.
-
-  ```
-  - username: curl -H "username:username"
-  - password: curl -H "password:password"
-  - source: curl -H "source:client_id"
-  ```
-
-- **Example HTTPS authentication**
-
-  ```
-  GET /api/v1/rest/
-  HTTPS/1.1
-  Host: yieldanalytics.xandr.com
-  Accept: application/xml, application/json
-  Content-Type: application/json
-  username: {{username}}
-  password: {{password}}
-  source: {{client_id}}        
-  ```
-
-- **Example POSTMAN authentication**
-
-  Find an example of header settings in Postman below:
-
-    > [!NOTE]
-    >
-    > - 'Authorization' is set to "No Auth"; the settings below are to be placed in the 'Headers' tab.
-    > - For a more in depth tutorial of using Postman, see [Using Postman with the Yield Analytics API](using-postman-with-the-yield-analytics-api.md).
-
-  :::image type="content" source="media/postman-header-variables.png" alt-text="A screenshot of the Headers tab with standard keys and values in Postman.":::
 
 ## Confidentiality
 
@@ -109,7 +79,7 @@ POST /api/v1/rest/product/bulk/create
   | BodyParameter | bulkProductCreation | bulkProductCreation | true | [BulkProductCreation](#bulk-product-creation) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -134,7 +104,7 @@ POST /api/v1/rest/product/bulk/create
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}' -d '{
+  'password: {{password}}' -d '{
     "bulkProductCreation" : {
       "products" : [ {
         "productName" : "Test Product",
@@ -156,7 +126,6 @@ POST /api/v1/rest/product/bulk/create
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 264
 
@@ -220,7 +189,6 @@ GET /api/v1/rest/product/bulk/create/{date}
   | PathParameter | date | date | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -245,7 +213,7 @@ GET /api/v1/rest/product/bulk/create/{date}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create/2017-06-15' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -256,7 +224,6 @@ GET /api/v1/rest/product/bulk/create/{date}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -300,7 +267,6 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
   | BodyParameter | groupingInfoVars | groupingInfoVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -325,7 +291,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,
   2017-03-31;q=322,2017-03-01,2017-03-31/groupInfo;groupBy=salesperson' -i -H 'Content-Type: application/json' -H 
-  'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -337,7 +303,6 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -430,7 +395,6 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
   | PathParameter | matrixVars | matrixVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -455,7 +419,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;
   groupBy=salesperson' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -466,7 +430,6 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -553,7 +516,6 @@ GET /api/v1/rest/product/create/target/{target}
   | PathParameter | target | target | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -577,8 +539,7 @@ GET /api/v1/rest/product/create/target/{target}
 
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/target/ad_server%20in%20('TEST')' -i -H 
-  'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 
-  'source: {{source}}'
+  'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   ```
 
 - **Example HTTP request**
@@ -589,7 +550,6 @@ GET /api/v1/rest/product/create/target/{target}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -642,7 +602,6 @@ POST /api/v1/rest/product/create/targetexpression
   | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -737,7 +696,6 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
   | PathParameter | matchphrase | matchphrase | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -762,7 +720,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/matchphrase/testingMatchphrase' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}' 
   ```
 
 - **Example HTTP request**
@@ -773,7 +731,6 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -854,7 +811,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
   | PathParameter | matrixVars | matrixVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -879,7 +836,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/targetingcharacteristics/target;category=food;
   size=350x200;category=cooking' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -890,7 +847,6 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -970,7 +926,7 @@ GET /api/v1/rest/product/discover/{productLocator}
   | PathParameter | productLocator | productLocator | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -995,7 +951,7 @@ GET /api/v1/rest/product/discover/{productLocator}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -1006,7 +962,6 @@ GET /api/v1/rest/product/discover/{productLocator}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -1087,7 +1042,6 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
   | PathParameter | date | date | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1112,7 +1066,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/forecast/1/2017-03-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}' 
   ```
 
 - **Example HTTP request**
@@ -1123,7 +1077,6 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -1159,7 +1112,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
   | PathParameter | matrixVars | matrixVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -1184,7 +1137,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/externalids/queries;
   q=12345,2017-03-01,2017-03-31;q=23456,2017-03-01,2017-03-31' -i -H 'Content-Type: application/json' 
-  -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -1196,7 +1149,6 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -1287,7 +1239,6 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1313,7 +1264,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}' -d '{
+  'password: {{password}}' -d '{
     "batchInventoryQuery" : {
       "queryCriteria" : [ {
         "targetExpression" : "size in ('300x250') and state in ('co')",
@@ -1337,7 +1288,6 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 348
 
@@ -1443,7 +1393,6 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1469,8 +1418,8 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 
-  'source: {{source}}' -d '{
+  'password: {{password}}'
+  ' -d '{
     "batchInventoryQuery" : {
       "queryCriteria" : [ {
         "targetExpression" : "size in ('300x250') and state in ('co')",
@@ -1494,7 +1443,6 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 348
 
@@ -1604,7 +1552,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -1630,7 +1578,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/targetexpression/
   2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;
   PRIORITY%3E=5' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}' -d '{
+  'password: {{password}}' ' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
     }
@@ -1646,7 +1594,6 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 75
 
@@ -1744,7 +1691,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   | PathParameter | endDate | endDate | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -1769,7 +1716,6 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
-  -H 'source: {{source}}'
   ```
 
 - **Example HTTP request**
@@ -1780,7 +1726,6 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -1871,7 +1816,6 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   | PathParameter | matrixVars | matrixVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -1897,7 +1841,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -1909,7 +1853,6 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -1998,7 +1941,6 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   | PathParameter | endDate | endDate | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2023,7 +1965,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01' 
   -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}' -d '{
+  -H 'password: {{password}}' ' -d '{
     "targetingOptionFlatList" : [ {
       "mappedField" : "",
       "mappedValue" : "",
@@ -2049,7 +1991,6 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 370
 
@@ -2158,7 +2099,6 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2184,7 +2124,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}' -d '{
+  'password: {{password}}' -H ' -d '{
     "targetingOptionFlatList" : [ {
       "mappedField" : "",
       "mappedValue" : "",
@@ -2211,7 +2151,6 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 370
 
@@ -2320,7 +2259,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -2346,7 +2285,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}'
+  -H 'password: {{password}}' 
   ```
 
 - **Example HTTP request**
@@ -2358,7 +2297,6 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2449,7 +2387,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -2474,7 +2412,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;
   ROADBLOCK=all' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}' -d '{
+  -H 'password: {{password}}' ' -d '{
     "roadblock" : {
       "targetExpressions" : [ "ad_server in ('TEST') and size in ('180x70'), ad_server in ('TEST') and size in ('1010x150')" ]
     }
@@ -2489,7 +2427,6 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 150
 
@@ -2534,7 +2471,6 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
   | PathParameter | target | target | true | string |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -2559,7 +2495,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
-  -H 'source: {{source}}'
+  
   ```
 
 - **Example HTTP request**
@@ -2570,7 +2506,6 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2661,7 +2596,6 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
 
@@ -2687,7 +2621,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}'
+  'password: {{password}}' 
   ```
 
 - **Example HTTP request**
@@ -2699,7 +2633,6 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -2788,7 +2721,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   | BodyParameter | targetExpression | targetExpression | true | [TargetExpression](#targetexpression) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -2813,7 +2746,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}' -d '{
+  -H 'password: {{password}}' ' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
     }
@@ -2828,7 +2761,6 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 75
 
@@ -2926,7 +2858,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -2952,7 +2884,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
-  -H 'source: {{source}}' -d '{
+  ' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
     }
@@ -2968,7 +2900,6 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 75
 
@@ -3067,7 +2998,6 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -3092,8 +3022,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
-  'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 
-  'source: {{source}}' -d '{
+  'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' ' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
     }
@@ -3109,7 +3038,6 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 75
 
@@ -3263,7 +3191,6 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   | BodyParameter | characteristicsVars | characteristicsVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -3287,7 +3214,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -3299,7 +3226,6 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -3391,7 +3317,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -3417,7 +3343,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;
   city=Boulder;country=USA/2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}'
+  'username: {{username}}' -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -3430,7 +3356,6 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -3522,7 +3447,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -3549,7 +3474,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
-  -H 'source: {{source}}' -d '{
+  ' -d '{
     "batchInventoryQuery" : {
       "queryCriteria" : [ {
         "targetExpression" : "size in ('TEST')",
@@ -3570,7 +3495,6 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 181
 
@@ -3670,7 +3594,6 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -3697,7 +3620,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
-  -H 'source: {{source}}' -d '{
+  ' -d '{
     "batchInventoryQuery" : {
       "queryCriteria" : [ {
         "targetExpression" : "size in ('TEST')",
@@ -3718,7 +3641,6 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 181
 
@@ -3826,7 +3748,6 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -3853,7 +3774,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
-  'password: {{password}}' -H 'source: {{source}}' -d '{
+  'password: {{password}}' ' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
     }
@@ -3870,7 +3791,6 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 75
 
@@ -3968,7 +3888,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -3995,7 +3915,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   /2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}'
+  -H 'password: {{password}}'
   ```
 
 - **Example HTTP request**
@@ -4008,7 +3928,6 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   ```
 
@@ -4098,7 +4017,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   | PathParameter | consumptionFilterVars | consumptionFilterVars | false | object |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
+
 
 - **Responses**
   
@@ -4124,7 +4043,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/
   2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 'Content-Type: application/json' 
-  -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -H 'source: {{source}}' -d '{
+  -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' ' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
     }
@@ -4141,7 +4060,6 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 75
 
@@ -4228,7 +4146,6 @@ POST /api/v1/rest/product/targeting/operativeadapter
   | BodyParameter | targets | targets | true | [OperativeTargetingOptions](#operativetargetingoptions) |
   | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
   | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | source | Your client source for accessing the Yield Analytics API | true | string |
 
 - **Responses**
   
@@ -4253,7 +4170,7 @@ POST /api/v1/rest/product/targeting/operativeadapter
   ```
   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/targeting/operativeadapter' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
-  -H 'password: {{password}}' -H 'source: {{source}}' -d '{
+  -H 'password: {{password}}' ' -d '{
     "targetingOptionFlatList" : [ {
       "mappedField" : "",
       "mappedValue" : "",
@@ -4279,7 +4196,6 @@ POST /api/v1/rest/product/targeting/operativeadapter
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  source: {{source}}
   Host: https://{{client_url}}/api/v1/rest
   Content-Length: 370
 

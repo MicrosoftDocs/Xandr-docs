@@ -7,8 +7,9 @@ metadata:
   description: Discover various resources for the Internal Services provided for Digital Platform API
   ms.topic: landing-page
   ms.author: rupambaruah
-  ms.service: microsoft-monetize
+  ms.service: publisher-monetization
   ms.date: 01/10/2024
+  ms.subservice: microsoft-monetize
 
 landingContent:
   - title: Access Control Policy APIs

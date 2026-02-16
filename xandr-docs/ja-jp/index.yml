@@ -7,8 +7,9 @@ metadata:
   description: Discover various reference docs for Japanese Reference Documentation
   ms.topic: landing-page
   ms.author: shsrinivasan
-  ms.service: microsoft-monetize
+  ms.service: publisher-monetization
   ms.date: 12/01/2023
+  ms.subservice: microsoft-monetize
 
 landingContent:
   - title: Let's Get Started

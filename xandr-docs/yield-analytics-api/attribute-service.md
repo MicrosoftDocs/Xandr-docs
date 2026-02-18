@@ -41,6 +41,14 @@ For more information on authentication, see [Yield Analytics API - Authenticatio
 
 Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
+## Host
+
+```
+https://api.appnexus.com/imf
+```
+
+
+
 ## Paths
 
 ### Convert external IDs to Yield Analytics expression lexicon
@@ -82,7 +90,7 @@ POST /api/v1/rest/attributes/convert
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/attributes/create' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -d '{
+  $ curl 'https://api.appnexus.com/imf/api/v1/rest/attributes/create' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -d '{
   "attributeTranslation" : {
   "inputAttribute" : "attribute1",
   "inputValue" : "value1",
@@ -102,7 +110,7 @@ POST /api/v1/rest/attributes/convert
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf
   Content-Length: 235
           
   {
@@ -168,7 +176,7 @@ POST /api/v1/rest/attributes/create
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/attributes/create' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -d '{
+  $ curl 'https://api.appnexus.com/imf/api/v1/rest/attributes/create' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' -d '{
   "attributeTranslation" : {
   "inputAttribute" : "attribute1",
   "inputValue" : "value1",
@@ -188,7 +196,7 @@ POST /api/v1/rest/attributes/create
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf
   Content-Length: 235
 
   {

@@ -40,6 +40,13 @@ For more information on authentication, see [Yield Analytics API - Authenticatio
 
 Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
+## Host
+
+```
+https://api.appnexus.com/imf/
+```
+
+
 ## Paths
 
 ### Delete order lines by external IDs
@@ -85,7 +92,7 @@ DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/orderLine/delete/XFP/1,2' -i -X 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/orderLine/delete/XFP/1,2' -i -X 
   DELETE -H 'Content-Type: application/json;charset=UTF-8'
   ```
 
@@ -94,7 +101,7 @@ DELETE /api/v1/rest/orderLine/delete/{sourceSystem}/{externalOrderLineIds}
   ```
   DELETE /api/v1/rest/orderLine/delete/XFP/1,2 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -154,7 +161,7 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/orderLine/inventoryandcontention/batch/aliasFunctions;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/orderLine/inventoryandcontention/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d '{
@@ -179,7 +186,7 @@ POST /api/v1/rest/orderLine/inventoryandcontention/batch/{aliasFunctions}/{consu
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 286
 
   {

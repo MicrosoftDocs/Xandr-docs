@@ -8,11 +8,17 @@ ms.date: 10/28/2023
 
 # Query engine service
 
-## Overview
+## Saved analysis execution
 
+### Overview
+
+You can use the Query Engine service to run pre-defined saved analyses by their identifier. The service doesn't support dynamic SQL execution, batch query execution, or arbitrary statement execution.
+
+<!--
 The Yield Analytics API and services are exposed via a REST based interface. It is intended to make development of custom functionality comfortable to developers experienced with Web 2.0, AJAX, REST, and service oriented development platforms. Developers should have familiarity with web based application paradigms including AJAX, XML, JSON, and the HTTP(S) protocol prior to attempting development with the Yield Analytics API and services.
 
 The Query Engine service permits the API developer access to a very flexible engine for querying data from the Yield Analytics system to accomplish use cases not accounted for with the Product Discovery and Inventory APIs. While the Query Engine Service’s flexibility and power permit many use cases to be accomplished, only deeply knowledgeable users should attempt to form a Query Engine query to insure valid data is extracted. Please contact your Yield Analytics customer service contact to help develop the query expressions required to achieve your data goal.
+-->
 
 ## Content types
 
@@ -38,6 +44,13 @@ For more information on authentication, see [Yield Analytics API - Authenticatio
 
 Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
+## Host
+
+```
+https://api.appnexus.com/imf/
+```
+
+
 ## Paths
 
 ### Execute saved analysis
@@ -48,53 +61,32 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
 
 - **Description**
 
-  Look up a saved analysis. These reports can be configured within the Yield Analytics UI or through the Yield Analytics API and then referenced by report ID.
+  Look up a saved analysis using its report ID.
 
 - **Parameters**
   
   | Type | Name | Description | Required | Schema |
   |---|---|---|---|---|
-  | PathParameter | savedAnalysisId | savedAnalysisId | true | string |
-  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | PathParameter | savedAnalysisId | Identifier of the saved analysis | true | string |
 
-- **Responses**
-  
-  | HTTP Code | Description | Schema |
-  |---|---|---|
-  | 200 | OK | [QueryResultData](#queryresultdata) |
-
-- **Consumes**
-  
-  application/json
-
-- **Produces**
-
-  - application/xml
-  - application/json
-
-- **Tags**
-
-  Query Engine Resource
 
 
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/queryengine/analysis/100' 
-  -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
-  'username: {{username}}' -H 'password: {{password}}'
+  $ curl --request GET \
+    --url https://api.appnexus.com/imf/api/v1/rest/queryengine/analysis/100 \
+    --header 'Authorization: {{auth-token}}' \
+    --header 'content-type: application/json'
   ```
 
 - **Example HTTP request**
 
   ```
-  GET /api/v1/rest/queryengine/analysis/100 HTTP/1.1
+  GET /imf/api/v1/rest/queryengine/analysis/100 HTTP/1.1
   Content-Type: application/json
-  Accept: application/json
-  username: {{username}}
-  password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Authorization: {{auth-token}}
+  Host: api.appnexus.com
   ```
 
 - **Example HTTP response**
@@ -102,37 +94,77 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
   ```
   HTTP/1.1 200 OK
   Content-Type: application/json;charset=UTF-8
-  Content-Length: 115
-
   {
-    "row" : [ {
-      "columnData" : [ {
-        "name" : "sample name",
-        "value" : "sample value"
-      } ]
-    } ]
+    "row": [
+      {
+        "columnData": [
+          {
+            "name": "sample name",
+            "value": "sample value"
+          }
+        ]
+      }
+    ]
   }
   ```
 
-### Execute saved analysis with row count
+### Execute saved analysis with custom date range 
 
 ```
-GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}/{rowCount}
+GET api/v1/rest/queryengine/analysis/{savedAnalysisId}?start_date= {startDate}&end_date={endDate} 
 ```
 
 - **Description**
 
-  Look up a saved analysis with a row count. These reports can be configured within the Yield Analytics UI or through the Yield Analytics API and then referenced by report ID and the result can be limited to the desired number of rows.
+Look up a saved analysis using a custom date range. The provided start and end dates override the date configuration stored with the report.
 
 - **Parameters**
   
   | Type | Name | Description | Required | Schema |
   |---|---|---|---|---|
-  | PathParameter | savedAnalysisId | savedAnalysisId | true | string |
-  | PathParameter | rowCount | rowCount | true | integer (int32) |
-  | HeaderParameter | username | Your username for accessing the Yield Analytics API | true | string |
-  | HeaderParameter | password | Your password for accessing the Yield Analytics API | true | string |
+  | PathParameter | savedAnalysisId | Identifier of the saved analysis | true | string |
+  | PathParameter | startDate | The start date of the requested data range (YYYY-MM-DD) | true | string |
+  | PathParameter | endDate | The end date of the requested data range (YYYY-MM-DD) | true | string |
+  
+- **Example cURL request**
 
+  ```
+  $ curl --request GET \
+    --url 'https://api.appnexus.com/imf/api/v1/rest/queryengine/analysis/100?start_date=2026-01-01&end_date=2026-01-31' \
+    --header 'Authorization: {{auth-token}}' \
+    --header 'content-type: application/json'
+  ```
+ 
+
+- **Example HTTP request**
+
+  ```
+  GET /imf/api/v1/rest/queryengine/analysis/100?start_date=2026-01-01&end_date=2026-01-31 HTTP/1.1
+  Content-Type: application/json
+  Authorization: {{auth-token}}
+  Host: api.appnexus.com
+  ```
+
+- **Example HTTP response**
+
+  ```
+  HTTP/1.1 200 OK
+  Content-Type: application/json;charset=UTF-8
+  {
+    "row": [
+      {
+        "columnData": [
+          {
+            "name": "sample name",
+            "value": "sample value"
+          }
+        ]
+      }
+    ]
+  }
+  ```
+
+<!--
 - **Responses**
   
   | HTTP Code | Description | Schema |
@@ -3358,7 +3390,20 @@ A JSON object to hold the results of WidgetFilter of Analyzer Report.
 | reportParamType | The report param type of the widget filter | true | string |
 | selectionLabels | The selection labels of the widget filter | true | string |
 | selectionValues | The selection values of the widget filter | true | string |
+-->
 
-## Related topic
+## Unsupported functionality 
 
-[Yield Analytics API](yield-analytics-api.md)
+The following Query Engine capabilities are not supported: 
+
+- Execute dynamic analysis 
+- Batch query execution 
+- Direct SQL statement execution 
+- Arbitrary query submission 
+
+> [!NOTE]
+> The Query Engine service is restricted to execution of saved analyses only.
+
+## Related topics
+
+Product listing functionality is available via the [GraphQL API](graphql-service.md). Use GraphQL to retrieve a list of products and access product-level metadata using structured queries and filters. Refer to the GraphQL API documentation for supported queries and schema details. 

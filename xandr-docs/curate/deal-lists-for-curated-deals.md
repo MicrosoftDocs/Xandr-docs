@@ -50,6 +50,9 @@ Select **All Deals**.
 
 ### Target specific available deals
 
+> [!IMPORTANT]
+> Curated Deal line items should not target other curated deals. Ensure that the deal list does not include curated deals.
+
 1. Select **Specific Deals**.
 1. A pull-down menu displays with **Deals** selected by default.
 1. To target specific deals, select one of the following targeting options and complete the corresponding steps:

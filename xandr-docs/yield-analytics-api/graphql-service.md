@@ -28,6 +28,10 @@ Before you start this setup, review the foundational concepts outlined in the re
 - **[Authentication Service](../digital-platform-api/authentication-service.md)** - Always complete authentication first when using the API services. After you authenticate, write the token to your cookie file for future requests.
 
 ### Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md).
+
+<!--
+### Authentication
 
 - **Example cURL authentication**
 > [!NOTE]
@@ -75,6 +79,7 @@ $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'
     } 
 } 
 ```
+-->
 
 ## Content types
 

@@ -42,6 +42,13 @@ For more information on authentication, see [Yield Analytics API - Authenticatio
 
 Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
+## Host
+
+```
+https://api.appnexus.com/imf
+```
+
+
 ## Paths
 
 ### Bulk product creation
@@ -102,7 +109,7 @@ POST /api/v1/rest/product/bulk/create
 - **Example cURL request**
   
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create' -i -X POST -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/bulk/create' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -d '{
     "bulkProductCreation" : {
@@ -126,7 +133,7 @@ POST /api/v1/rest/product/bulk/create
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 264
 
   {
@@ -211,7 +218,7 @@ GET /api/v1/rest/product/bulk/create/{date}
 - **Example cURL request**
   
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/bulk/create/2017-06-15' -i -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/bulk/create/2017-06-15' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}'
   ```
@@ -224,7 +231,7 @@ GET /api/v1/rest/product/bulk/create/{date}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -289,7 +296,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/consumption/batch/externalids/queries;q=321,2017-03-01,
   2017-03-31;q=322,2017-03-01,2017-03-31/groupInfo;groupBy=salesperson' -i -H 'Content-Type: application/json' -H 
   'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
@@ -303,7 +310,7 @@ GET /api/v1/rest/product/consumption/batch/externalids/{queries}/{groupingInfo}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -417,7 +424,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
 - **Example cURL request**
   
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/consumption/externalid/321/2017-03-01/2017-03-31/groupinfo;
   groupBy=salesperson' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}'
   ```
@@ -430,7 +437,7 @@ GET /api/v1/rest/product/consumption/externalid/{externalId}/{startDate}/{endDat
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -538,7 +545,7 @@ GET /api/v1/rest/product/create/target/{target}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/target/ad_server%20in%20('TEST')' -i -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/create/target/ad_server%20in%20('TEST')' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   ```
 
@@ -550,7 +557,7 @@ GET /api/v1/rest/product/create/target/{target}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -624,7 +631,7 @@ POST /api/v1/rest/product/create/targetexpression
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/create/targetexpression' -i -X POST -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/create/targetexpression' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d '{
     "targetExpression" : {
       "expression" : "ad_server in ('TEST')"
@@ -637,7 +644,7 @@ POST /api/v1/rest/product/create/targetexpression
   ```
   POST /api/v1/rest/product/create/targetexpression HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -718,7 +725,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/matchphrase/testingMatchphrase' -i -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/discover/matchphrase/testingMatchphrase' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' 
   ```
@@ -731,7 +738,7 @@ GET /api/v1/rest/product/discover/matchphrase/{matchphrase}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -834,7 +841,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/targetingcharacteristics/target;category=food;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/discover/targetingcharacteristics/target;category=food;
   size=350x200;category=cooking' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}'
   ```
@@ -847,7 +854,7 @@ GET /api/v1/rest/product/discover/targetingcharacteristics/{characteristics}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -949,7 +956,7 @@ GET /api/v1/rest/product/discover/{productLocator}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D' -i 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/discover/%7B%22productId%22:%221%22,%22externalId%22:%221%22%7D' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}'
   ```
@@ -962,7 +969,7 @@ GET /api/v1/rest/product/discover/{productLocator}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -1064,7 +1071,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/forecast/1/2017-03-01' -i -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/forecast/1/2017-03-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' 
   ```
@@ -1077,7 +1084,7 @@ GET /api/v1/rest/product/forecast/{targets}/{date}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -1135,7 +1142,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/externalids/queries;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/batch/externalids/queries;
   q=12345,2017-03-01,2017-03-31;q=23456,2017-03-01,2017-03-31' -i -H 'Content-Type: application/json' 
   -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
@@ -1149,7 +1156,7 @@ GET /api/v1/rest/product/inventory/batch/externalids/{queries}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -1261,7 +1268,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/batch/consumptionFilter;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -d '{
@@ -1288,7 +1295,7 @@ POST /api/v1/rest/product/inventory/batch/{consumptionFilter}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 348
 
   {
@@ -1415,7 +1422,7 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/batch/consumptionFilter;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/displacement/batch/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}'
@@ -1443,7 +1450,7 @@ POST /api/v1/rest/product/inventory/displacement/batch/{consumptionFilter}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 348
 
   {
@@ -1575,7 +1582,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/displacement/targetexpression/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/displacement/targetexpression/
   2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;
   PRIORITY%3E=5' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' ' -d '{
@@ -1594,7 +1601,7 @@ POST /api/v1/rest/product/inventory/displacement/targetexpression/{startDate}/{e
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -1714,7 +1721,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31' -i -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   ```
 
@@ -1726,7 +1733,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -1838,7 +1845,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/externalid/12345/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}'
@@ -1853,7 +1860,7 @@ GET /api/v1/rest/product/inventory/externalid/{externalId}/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -1963,7 +1970,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01' 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01' 
   -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' ' -d '{
     "targetingOptionFlatList" : [ {
@@ -1991,7 +1998,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 370
 
   {
@@ -2121,7 +2128,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/operativeadapter/targeting/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' -H ' -d '{
@@ -2151,7 +2158,7 @@ POST /api/v1/rest/product/inventory/operativeadapter/targeting/{startDate}/{endD
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 370
 
   {
@@ -2282,7 +2289,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/productid/-2147483646/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' 
@@ -2297,7 +2304,7 @@ GET /api/v1/rest/product/inventory/productid/{productId}/{startDate}/{endDate}/{
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -2410,7 +2417,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/roadblock/product/2017-03-01/2017-03-01/consumptionFilter;
   ROADBLOCK=all' -i -X POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' ' -d '{
     "roadblock" : {
@@ -2427,7 +2434,7 @@ POST /api/v1/rest/product/inventory/roadblock/product/{startDate}/{endDate}/{con
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 150
 
   {
@@ -2493,7 +2500,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01' -i 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01' -i 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   
   ```
@@ -2506,7 +2513,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -2618,7 +2625,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/target/city=Boulder;country=USA/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
   'password: {{password}}' 
@@ -2633,7 +2640,7 @@ GET /api/v1/rest/product/inventory/target/{target}/{startDate}/{endDate}/{consum
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -2744,7 +2751,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01' -i -X 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01' -i -X 
   POST -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' ' -d '{
     "targetExpression" : {
@@ -2761,7 +2768,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -2881,7 +2888,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/targetexpression/2017-03-01/2017-03-01/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
   ' -d '{
@@ -2900,7 +2907,7 @@ POST /api/v1/rest/product/inventory/targetexpression/{startDate}/{endDate}/{cons
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -3020,7 +3027,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/targetexpressioncombined/2017-03-01/2017-03-01/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' ' -d '{
     "targetExpression" : {
@@ -3038,7 +3045,7 @@ POST /api/v1/rest/product/inventory/targetexpressioncombined/{startDate}/{endDat
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -3212,7 +3219,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/targetingcharacteristics/characteristics;city=Boulder;
   country=USA/2017-03-01/2017-03-01' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}'
   ```
@@ -3226,7 +3233,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -3340,7 +3347,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventory/targetingcharacteristics/characteristics;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventory/targetingcharacteristics/characteristics;
   city=Boulder;country=USA/2017-03-01/2017-03-01/consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;
   CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}'
@@ -3356,7 +3363,7 @@ GET /api/v1/rest/product/inventory/targetingcharacteristics/{characteristics}/{s
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -3470,7 +3477,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/batch/aliasFunctions;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventoryandcontention/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
@@ -3495,7 +3502,7 @@ POST /api/v1/rest/product/inventoryandcontention/batch/{aliasFunctions}/{consump
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 181
 
   {
@@ -3616,7 +3623,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/displacement/batch/aliasFunctions;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventoryandcontention/displacement/batch/aliasFunctions;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' 
@@ -3641,7 +3648,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/batch/{aliasFuncti
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 181
 
   {
@@ -3770,7 +3777,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/displacement/targetexpression/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventoryandcontention/displacement/targetexpression/
   2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 
@@ -3791,7 +3798,7 @@ POST /api/v1/rest/product/inventoryandcontention/displacement/targetexpression/{
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -3911,7 +3918,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/target/ad_server%20in%20('TEST')
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventoryandcontention/target/ad_server%20in%20('TEST')
   /2017-03-01/2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/
   consumptionFilter;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
@@ -3928,7 +3935,7 @@ GET /api/v1/rest/product/inventoryandcontention/target/{target}/{startDate}/{end
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -4040,7 +4047,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/inventoryandcontention/targetexpression/2017-03-01/
   2017-03-01/aliasFunctions;INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED' -i -X POST -H 'Content-Type: application/json' 
   -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}' ' -d '{
@@ -4060,7 +4067,7 @@ POST /api/v1/rest/product/inventoryandcontention/targetexpression/{startDate}/{e
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 75
 
   {
@@ -4168,7 +4175,7 @@ POST /api/v1/rest/product/targeting/operativeadapter
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/product/targeting/operativeadapter' -i -X POST 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/product/targeting/operativeadapter' -i -X POST 
   -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' 
   -H 'password: {{password}}' ' -d '{
     "targetingOptionFlatList" : [ {
@@ -4196,7 +4203,7 @@ POST /api/v1/rest/product/targeting/operativeadapter
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 370
 
   {

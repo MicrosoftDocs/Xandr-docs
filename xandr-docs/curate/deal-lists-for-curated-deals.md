@@ -1,7 +1,7 @@
 ---
 title: Deal Lists for Curated Deals
 description: This article provides details on the deal lists for curated deals. A deal list is a group of deal IDs categorized for targeting across curated deal line items.
-ms.date: 10/21/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate
 ms.author: shsrinivasan
@@ -49,6 +49,9 @@ After creating a deal list you can target it on the curated deal line item setup
 Select **All Deals**.
 
 ### Target specific available deals
+
+> [!IMPORTANT]
+> Curated Deal line items should not target other curated deals. Ensure that the deal list does not include curated deals.
 
 1. Select **Specific Deals**.
 1. A pull-down menu displays with **Deals** selected by default.

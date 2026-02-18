@@ -1,7 +1,7 @@
 ---
 title: Curated Deal Line Item API Setup Guide
 description: Learn the process of setting up an API implementation of a curated deal line item to target a deal.
-ms.date: 10/22/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -41,6 +41,8 @@ For a general list of best practices to follow when working with the API, see [
 
 - Set the `state` field of the curated deal line item to `"inactive"` until the line item is fully configured and ready for testing.
 - Note the ID of any objects you create. The IDs of objects you create are returned in the response body of requests. You'll often need these IDs later so copying them when they're returned can reduce the number of additional `GET` requests you have to make to obtain them.
+- Do not target curated deals within a Curated Deal line item. This configuration is not supported and may cause delivery issues.
+
 
 ## Setup procedure
 

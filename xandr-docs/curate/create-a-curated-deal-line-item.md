@@ -1,7 +1,7 @@
 ---
 title: Microsoft Curate - Create a Curated Deal Line Item 
 description: Establish curated deals where users create buyer-specific agreements, negotiating with curators to merge assets with Microsoft Advertising Marketplace supply.
-ms.date: 10/21/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate
 ms.author: shsrinivasan
@@ -213,6 +213,9 @@ Select an allowlist you would like to apply to this line item. You may select fr
 Do not use (not supported for curated deal line items).
 
 ## Targeting options
+
+> [!IMPORTANT]
+> Curated Deal line items should not target other curated deals. Targeting curated deals within another curated deal line item may result in unexpected delivery behavior.
 
 You can target curated deal line items in the same way you can target augmented line items. See [Buy-Side Targeting](buy-side-targeting.md) for detailed setup information on targeting. See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 

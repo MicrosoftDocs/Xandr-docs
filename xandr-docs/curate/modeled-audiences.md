@@ -13,7 +13,7 @@ Modeled Audiences is a new feature available for Microsoft Curate that allows cu
 
 ## Set up a modeled audience
 - In the Microsoft Curate user interface, select the **curated deal line item**.
-- Ensure at least one country is selected under the Geography targeting option.
+- Ensure at least one geolocation is selected under the Geography targeting option.
 - Select the **Edit** option, and then select the **Segments** targeting option.
 - A **Segment Targeting** dialog is displayed.
 - Select **Create Modeled Audience**.
@@ -29,7 +29,7 @@ Modeled Audiences is a new feature available for Microsoft Curate that allows cu
 - Select **Save Modeled Segment** to save your modeled segment. The newly generated segment model will be available within the next 48-72 hours, along with its estimated size.
 > [!NOTE]
 > - A modeled audience can only be created and edited in the curated deal line item view.
-> - The curated deal line item must be inclusively targeting at least one country for modeled segments to be processed.
+> - The curated deal line item must be inclusively targeting at least one geolocation for modeled segments to be processed.
 > - Modeled Audiences are not supported for Data Marketplace or third-party segments. The seed segment must be a first-party segment.
 > - Only one segment can be used as the seed for a modeled audience.
 > - The start date of the curated deal line items is used to determine when to start modeling.

@@ -70,25 +70,6 @@ GET /api/v1/rest/queryengine/analysis/{savedAnalysisId}
   | PathParameter | savedAnalysisId | Identifier of the saved analysis | true | string |
 
 
-- **Responses**
-  
-  | HTTP Code | Description | Schema |
-  |---|---|---|
-  | 200 | OK | [QueryResultData](#queryresultdata) |
-
-- **Consumes**
-  
-  application/json
-
-- **Produces**
-
-  - application/xml
-  - application/json
-
-- **Tags**
-
-  Query Engine Resource
-
 
 - **Example cURL request**
 

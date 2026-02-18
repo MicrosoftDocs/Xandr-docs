@@ -84,7 +84,7 @@ Each deal is valid for a single buyer.
 | `visibility_profile_id` | int | The unique ID of the visibility profile that will be applied to a deal. This ID can be retrieved from the [Visibility Profile Service](./visibility-profile-service.md). |
 | `line_item_ids` | array of int | A list consists of line items' IDs present in a deal. This array is filled when deal version is 2, otherwise this is a null array. This is a **read-only** field returned in a `GET` request. |
 | `seller_targeting_restriction` | object | Indicates whether the deal restricts which attributes an Invest buyer can target whilst also targeting this deal. See [Seller Restricted Targeting](#seller-restricted-targeting) below. |
-|`is_archived`|Boolean|True if the deal has been archived. Archived deals do not participate in auctions and do not generate bid requests. However, they continue to be available in the UI, via APIs and in reporting.<br><br>**Default:** false|
+|`is_archived`|Boolean|True if the deal has been archived. Archived deals do not participate in auctions and do not generate bid requests. However, they continue to be available in the UI, via APIs and in reporting.<br>**Default:** `false`|
 
 ### Seller
 

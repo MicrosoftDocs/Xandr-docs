@@ -12,8 +12,7 @@ ms.author: shsrinivasan
 
 `ANVideoPlayerSettings` class lets the publisher app to customize some of the Ad Video Player UI/Controls.
 
-When a placement is integrated using the iOS SDK, video settings configured in the Monetize UI or API are not applied. Video player behavior—including playback method (auto-play, sound on or off), volume control visibility, player size, and controls such as skip—is managed entirely by the SDK through the `ANVideoPlayerSettings` class.
-<br>Configure all video player options explicitly in `ANVideoPlayerSettings` within the app. For more information, see [Customize video player options on iOS](https://learn.microsoft.com/en-us/xandr/mobile-sdk/configure-video-player-options-on-ios?tabs=objectivec1).
+
 
 > [!NOTE]
 > The customization is applied to all the Video ads served through Xandr SDK both Instream and Banner Video (Outstream).

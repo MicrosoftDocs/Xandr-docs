@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Deal Buyer Access Service
 description: The Deal Buyer Access service allows buyers to view negotiated deals with UI sellers and external supply partners for preferential pricing, exclusive inventory, and reduced competition. 
-ms.date: 10/22/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -57,6 +57,7 @@ Buyers can use the `deal_targets` field in the [Profile Service](./profile-servi
 | `technical_attribute_restrict` | Boolean | Specifies whether the deal is restricted only to the technical attributes listed in the [Technical Attributes](#technical-attributes) object.<br> - `true`: Deal is restricted only to the listed technical attributes.<br>- `false`: Other technical attributes are also allowed to serve. |
 | `type` | object | The type of deal. For sellers, a deal can be an open auction or a private auction. For external supply partners, a deal can also be first-look access. For more details, see [Type](#type) below. |
 | `use_deal_floor` | Boolean | If true, the `floor_price` is applied for the deal.<br><br>**Note**:<br>When `use_deal_floor` is `true`, the deal's floor price overrides any other floors the seller may have, i.e., in placements or yield management profiles. |
+|`is_archived`| Boolean | True if the deal has been archived. Archived deals do not participate in auctions and do not generate bid requests. However, they continue to be available in the UI, via APIs and in reporting.|
 
 ### Seller
 

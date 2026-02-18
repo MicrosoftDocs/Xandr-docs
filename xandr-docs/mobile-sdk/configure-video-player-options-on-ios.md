@@ -2,7 +2,7 @@
 title: Customize Video Player Options on iOS
 description: In this article, find information about the video player controls that you can customize on iOS SDK.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -11,6 +11,8 @@ ms.author: shsrinivasan
 # Customize video player options on iOS
 
 `ANVideoPlayerSettings` class lets the publisher app to customize some of the Ad Video Player UI/Controls.
+
+
 
 > [!NOTE]
 > The customization is applied to all the Video ads served through Xandr SDK both Instream and Banner Video (Outstream).

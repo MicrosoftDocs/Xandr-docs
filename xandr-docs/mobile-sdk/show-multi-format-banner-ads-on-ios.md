@@ -2,7 +2,7 @@
 title: Banner Video / OutStream Ads on iOS
 description: The AppNexus mobile SDK supports serving multiple creative formats through a single banner entry point. This page talks about constraints in doing so. Also, learn steps to enable a mix of VAST video and HTML banner Ads.  
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -18,7 +18,8 @@ As of version 4.5 for iOS, the mobile SDK supports serving multiple creative for
 Some constraints:
 
 - Video mediation is not yet supported.
-- You cannot currently configure video player options, such as starting video with audio on/off or the presence of a volume button, for a mobile placement with the application UI.
+- When a placement is integrated using the iOS SDK, video settings configured in the Monetize UI or API are not applied. Video player behavior—including playback method (auto-play, sound on or off), volume control visibility, player size, and controls such as skip—is managed entirely by the SDK through the `ANVideoPlayerSettings` class.
+<br>Configure all video player options explicitly in `ANVideoPlayerSettings` within the app. For more information, see [Customize video player options on iOS](https://learn.microsoft.com/en-us/xandr/mobile-sdk/configure-video-player-options-on-ios?tabs=objectivec1).
 
 ## Show a mix of VAST video and HTML banner ads
 

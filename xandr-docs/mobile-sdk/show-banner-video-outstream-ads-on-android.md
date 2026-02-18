@@ -2,7 +2,7 @@
 title: Show Banner Video / OutStream Ads on Android
 description: This page explains the steps by which Xandr mobile SDK supports serving multiple creative formats through a single banner entry point. 
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 2/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -13,12 +13,14 @@ ms.author: shsrinivasan
 > [!NOTE]
 > This offering is currently in Alpha and is subject to change.
 
-As of Version 4.6 the Xandr mobile SDK supports serving multiple creative formats (RTB VAST outstream videos and regular banner ads) through a single banner entry point.
+As of Version 4.6 the mobile SDK supports serving multiple creative formats (RTB VAST outstream videos and regular banner ads) through a single banner entry point.
 
 Some constraints:
 
 - Video mediation is not yet supported.
 - You cannot currently configure video player options, such as starting video with audio on/off or the presence of a volume button, for a mobile placement with the Console UI.
+- When a placement is integrated using the Android SDK, video settings configured in the Monetize UI or API are not applied. Video player behavior—including playback method (auto-play, sound on or off), volume control visibility, player size, and controls such as skip—is managed entirely by the SDK through the `ANVideoPlayerSettings` class.
+<br>Configure all video player options explicitly in `ANVideoPlayerSettings` within the app. For more information, see [Customize video player options on Android](https://learn.microsoft.com/en-us/xandr/mobile-sdk/customize-video-player-options-on-android?tabs=java1).
 
 ## Show a mix of VAST Video and HTML banner ads
 

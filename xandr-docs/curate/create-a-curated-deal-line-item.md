@@ -214,6 +214,9 @@ Do not use (not supported for curated deal line items).
 
 ## Targeting options
 
+> [!IMPORTANT]
+> Curated Deal line items should not target other curated deals. Targeting curated deals within another curated deal line item may result in unexpected delivery behavior.
+
 You can target curated deal line items in the same way you can target augmented line items. See [Buy-Side Targeting](buy-side-targeting.md) for detailed setup information on targeting. See [Inventory Performance Targeting](inventory-performance-targeting.md) for more information on best practices for inventory performance targeting.
 
 > [!NOTE]

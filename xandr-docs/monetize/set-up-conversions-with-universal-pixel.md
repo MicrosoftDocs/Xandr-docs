@@ -26,7 +26,7 @@ You can set up conversions for your universal pixel using rules and conditions, 
 
 1. Under **Lookback**, specify the time between an ad view or click and the conversion event during which you will attribute conversions to the ad view or click.
 
-   For example, if you want to attribute any shopping cart adds that occurred in the month after viewing an ad to the ad view event, set the post view lookback to 31 days.<br><br><br>If set to "0" or "null", it will be 30 days.
+   For example, if you want to attribute any shopping cart adds that occurred in the month after viewing an ad to the ad view event, set the post view lookback to 31 days.<br><br>If set to "0" or "null", it will be 30 days.
 
 1. Under **Count**, determine if you will limit the number of attributed conversions per user. You can also limit the number of conversions counted within a period of time.
 

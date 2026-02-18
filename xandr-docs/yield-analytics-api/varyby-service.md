@@ -25,6 +25,9 @@ Before beginning this setup, familialize yourself with the foundational concepts
 - **[API Getting Started](../digital-platform-api/api-getting-started.md)** - It provides information on testing environments, usage constraints, API semantics (running commands, filtering, sorting, etc.), and best practices. 
 - **[Authentication](api-authentication.md)** - is always the first step when using the API Services. The authentication token can then be written to our cookie file for future use.
 
+### Authentication
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md).
+
 <!--
 ### Authentication
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
@@ -178,7 +181,7 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 ### Returns a list of attributes matching the given query (getAttributes) 
 
 ```
-GET /api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery} 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQuery}` 
 ```
 
 #### JSON fields 
@@ -197,7 +200,7 @@ GET /api/v1/rest/product/inventory/attributes/{pageIndex}/{pageSize}/{attrNameQu
 ### Get attributes values 
 
 ```
-GET /api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId:{attributeId}`
 ```
 
 #### JSON fields 
@@ -214,13 +217,13 @@ GET /api/v1/rest/product/inventory/attributeValues/{pageIndex}/{pageSize}/attrId
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1/rest/product/inventory/attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributeValues/0/1000/0/1000/attrId:{attributeID}?query={queryID}` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example cURL request**
 
 ```
-GET /api/imf/api/v1/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributeValues/0/1000/attrId:{attributeID}?query={queryID}`
 ```
 
 **Example cURL response**
@@ -237,7 +240,7 @@ GET /api/imf/api/v1/rest/product/inventory/attributeValues/0/1000/attrId:{attrib
 ### Get operators 
 
 ```
-GET /api/v1/rest/product/inventory/operators/{attribute} 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/operators/{attribute}` 
 ```
 
 #### JSON fields 
@@ -254,13 +257,14 @@ GET /api/v1/rest/product/inventory/operators/{attribute}
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/ product/inventory/operators/size \` -i -H 'Content-Type: application/json;charset=UTF-8'  
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/operators/size` -i -H 'Content-Type: application/json;charset=UTF-8'  
 ```
+
 
 **Example cURL request**
 
 ```
-GET /api /imf/api/v1/rest/product/inventory/operators/size
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/operators/size`
 ```
 
 **Example cURL response**
@@ -279,14 +283,14 @@ GET /api /imf/api/v1/rest/product/inventory/operators/size
 ### Get filters by name  
 
 ```
-GET /api/v1/rest/product/inventory/filters/{filter_name} 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{filter_name}`
 ```
 
 #### JSON fields
 | Type | Name | Description | Required | Schema |
 |---|---|---| ---|---|
 | PathParameter | getFilters| Returns filter details to use in create batch body.| true | string |
-| PathParameter | group_by | Specifies how the data is aggregated and displayed. <br> To see all possible values using GROUP_BY <br> `GET /api/v1/rest/product/inventory/filters/GROUP_BY` <br> **Example response:** <br> ```{ "total": 6, "name": "Group By", "options": [ { "name": "Daily", "value": "daily" }, { "name": "Weekly", "value": "weekly" }, { "name": "Monthly", "value": "monthly" }, { "name": "Quarterly", "value": "quarterly" }, { "name": "Yearly", "value": "yearly" }, { "name": "All", "value": "all" } ], "id": "GROUP_BY" } ``` <br> **NOTE:** This filter helps you identify the available GROUP_BY options and understand how to apply them. | true | string |
+| PathParameter | group_by | Specifies how the data is aggregated and displayed. <br> To see all possible values using GROUP_BY <br> `$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/GROUP_BY` <br> **Example response:** <br> ```{ "total": 6, "name": "Group By", "options": [ { "name": "Daily", "value": "daily" }, { "name": "Weekly", "value": "weekly" }, { "name": "Monthly", "value": "monthly" }, { "name": "Quarterly", "value": "quarterly" }, { "name": "Yearly", "value": "yearly" }, { "name": "All", "value": "all" } ], "id": "GROUP_BY" } ``` <br> **NOTE:** This filter helps you identify the available GROUP_BY options and understand how to apply them. | true | string |
 | PathParameter | priority  | Indicates the priority that you want to use for your lookup. For more information on filters see, [Lookup builder](../yield-analytics-ui/lookup-builder.md). <br> **Example response:** <br> ```{ "total": 20, "name": "Priority", "options": [ { "name": "20", "value": "20" }, { "name": "19", "value": "19" }, { "name": "18", "value": "18" }, { "name": "17", "value": "17" }, { "name": "16", "value": "16" }, { "name": "15", "value": "15" }, { "name": "14", "value": "14" }, { "name": "13", "value": "13" }, { "name": "12", "value": "12" }, { "name": "11", "value": "11" }, { "name": "10", "value": "10" }, { "name": "9", "value": "9" }, { "name": "8", "value": "8" }, { "name": "7", "value": "7" }, { "name": "6", "value": "6" }, { "name": "5", "value": "5" }, { "name": "4", "value": "4" }, { "name": "3", "value": "3" }, { "name": "2", "value": "2" }, { "name": "1", "value": "1" } ], "id": "PRIORITY" } ``` <br> **NOTE:** This filter helps you identify the available options and understand how they can be applied when the priority filter is used. | true | string |
 | PathParameter | roadblock | Indicates whether to include roadblocked inventory in the lookup. <br> **Example response:** <br> ```{ "total": 4, "name": "Roadblock", "options": [ { "name": "All", "value": "all" }, { "name": "As Many", "value": "as_many" }, { "name": "Only One", "value": "only_one" }, { "name": "One Or More", "value": "one_or_more" } ], "id": "ROADBLOCK" } ``` <br> **NOTE:** This filter helps you identify the available options and understand how they can be applied when the roadblock filter is used. | true | string |
 | PathParameter | page_effects | A flag indicating whether page-level constraints (such as “one impression per page” or displacement rules) should be applied during availability checks. When enabled, the forecast assumes stricter serving rules, reducing projected inventory. <br> **NOTE:** This filter helps you identify and return the available options when it’s used. | true | string |
@@ -299,13 +303,13 @@ GET /api/v1/rest/product/inventory/filters/{filter_name}
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/ product/inventory/filters/GROUP_BY  \` -i -H 'Content-Type: application/json;charset=UTF-8'  
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/GROUP_BY  \` -i -H 'Content-Type: application/json;charset=UTF-8'  
 ```
 
 **Example cURL request**
 
 ```
-GET /api /imf/api/v1/rest/product/inventory/filters/GROUP_BY
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/GROUP_BY
 ```
 
 **Example cURL response**
@@ -346,7 +350,7 @@ GET /api /imf/api/v1/rest/product/inventory/filters/GROUP_BY
 
 > [!NOTE]
 > NOTE: This endpoint pattern can be used with any supported filter name, not just `GROUP_BY`. Use the following general format: 
-> GET https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{FILTER_NAME} 
+> $ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/filters/{FILTER_NAME} 
 > Supported filter names include: 
 > - GROUP_BY 
 > - PRIORITY 
@@ -428,7 +432,7 @@ POST /api/v1/rest/product/inventory/batch/varyby
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/varyby \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/varyby \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example request**
@@ -510,7 +514,7 @@ POST /api/imf/api/v1/rest/product/inventory/batch/varyby
 
 
 ```
-GET /api/v1/rest/product/inventory/batch/{queueId} 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/{queueId}` 
 ```
 
 **JSON fields**
@@ -524,13 +528,13 @@ GET /api/v1/rest/product/inventory/batch/{queueId}
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/0  \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/batch/0  \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example request**
 
 ```
-GET /api/imf/api/v1/rest/product/inventory/batch/varyby
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/varyby
 ```
 
 **Example HTTP response**
@@ -546,7 +550,7 @@ GET /api/imf/api/v1/rest/product/inventory/batch/varyby
 
 
 ```
-GET /api/v1/rest/product/inventory/batch/results/{queueID}  
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/results/{queueID}` 
 ```
 
 **JSON fields**
@@ -561,13 +565,13 @@ GET /api/v1/rest/product/inventory/batch/results/{queueID}
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1/rest/product/inventory/batch/results/3  \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/results/3  \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example HTTP request**
 
 ```
-GET / api/v1/rest/product/inventory/batch/results/3 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/results/3 
 ```
 
 **Example HTTP response**
@@ -634,7 +638,7 @@ GET / api/v1/rest/product/inventory/batch/results/3
 **Get multiple batches**
 
 ```
-GET /api/v1/rest/product/inventory/batch/ 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/` 
 ```
 
 **JSON fields**
@@ -649,13 +653,13 @@ GET /api/v1/rest/product/inventory/batch/
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true' \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true' \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example HTTP request**
 
 ```
-GET /api /imf/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSize=100&sort=&filter=&noSpinner=true`
 ```
 
 **Example HTTP response**
@@ -684,7 +688,7 @@ GET /api /imf/api/v1/rest/product/inventory/ batch?take=100&skip=0&page=1&pageSi
 **Download batch (CSV, xlsx)**
 
 ```
-GET /api/v1/rest/product/inventory/batch/download 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/download` 
 ```
 
 **JSON fields**
@@ -698,13 +702,13 @@ GET /api/v1/rest/product/inventory/batch/download
 ##### Example
 
 ```
-$ curl `https://{client_url}/api/v1 /rest/product/inventory/attributes/api/v1/rest/product/inventory/ batch/download?fileName=Abc%40PL11716-Sep_02_2025_20_42_49PM%200000-3_rows.csv' \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/attributes/api/v1/rest/product/inventory/ batch/download?fileName=Abc%40PL11716-Sep_02_2025_20_42_49PM%200000-3_rows.csv' \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example HTTP request**
 
 ```
-GET /api /imf/api/v1/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx 
+$ curl `https://api.appnexus.com/imf/api/v1/rest/product/inventory/batch/download?fileName=abc@contoso.com-Oct_27_2025_20_53_38PM+0000-3_rows.xlsx' \ ` -i -H 'Content-Type: application/json;charset=UTF-8' 
 ```
 
 **Example HTTP response**

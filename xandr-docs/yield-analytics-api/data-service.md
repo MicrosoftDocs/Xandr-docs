@@ -29,7 +29,7 @@ API developers should check the HTTP response codes returned from the service RE
 The service API exposes application data in a secure manner. Use of API functionality is restricted to authenticated users and is exposed over secure transport protocols. Access to the API must take place within the following context:
 
 ## Authentication
-For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md
+For more information on authentication, see [Yield Analytics API - Authentication Process](api-authentication.md)
 
 <!--
 - **Example cURL authentication**
@@ -81,6 +81,13 @@ $ curl -b cookies -c cookies -X POST -d @auth 'https://api.appnexus.com/auth'
 
 Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
+## Host
+
+```
+https://api.appnexus.com/imf/
+```
+
+
 ## Paths
 
 ### Get alias columns
@@ -122,7 +129,7 @@ GET /api/v1/rest/data/aliasColumns
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}'
   ```
 
@@ -134,7 +141,7 @@ GET /api/v1/rest/data/aliasColumns
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -194,7 +201,7 @@ GET /api/v1/rest/data/aliasFunctions
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/data/aliasColumns' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 
   'username: {{username}}' -H 'password: {{password}}'
   ```
 
@@ -206,7 +213,7 @@ GET /api/v1/rest/data/aliasFunctions
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -266,7 +273,7 @@ GET /api/v1/rest/data/consumptionFilters
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/data/consumptionFilters' -i -H 'Content-Type: application/json' -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/data/consumptionFilters' -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
@@ -278,7 +285,7 @@ GET /api/v1/rest/data/consumptionFilters
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**

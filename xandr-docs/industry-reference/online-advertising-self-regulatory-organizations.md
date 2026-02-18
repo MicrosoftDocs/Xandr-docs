@@ -57,6 +57,9 @@ Research etc. of IAB Tech Lab.**-->
 
 ## The network advertising initiative (NAI)
 
+Founded in 2000, the [Network Advertising Initiative (NAI)](https://thenai.org/) is the leading self-regulatory association dedicated to responsible data collection and use for digital advertising, with nearly 100 advertising technology businesses as members. The NAI works closely with its members, leading advertisers and publishers, and other key stakeholders to promote policies and voluntary practices for responsible data-driven advertising across digital media. The NAI is a champion of strong industry self-regulation and co-regulation, whereby industry efforts can play a complementary role to maximize industry compliance, and reduce the burden on enforcement. To learn more, visit [Network Advertising Initiative (NAI)](https://thenai.org/) organization.
+
+<!--
 The [Network Advertising Initiative (NAI)](https://thenai.org/) is the leading non-profit self-regulatory association focused on responsible data collection and use in online advertising, with an emphasis on third-party advertising technology companies.
 
 In 2013, they released a [Code of Conduct](https://thenai.org/accountability/code-of-conduct/) that assesses types of data used by member companies for advertising purposes, and imposes clear and firm restrictions on members' data collection, use, and transfer for online advertising, as well as a [Mobile Application Code](https://thenai.org/wp-content/uploads/2021/07/NAI_MobileCode15_NLT.pdf), which was last updated in 2015.
@@ -64,7 +67,8 @@ In 2013, they released a [Code of Conduct](https://thenai.org/accountability/co
 The NAI also offers a [Consumer Opt-out page](https://optout.networkadvertising.org/?c=1), where Internet users can opt out of receiving online advertising from NAI members who use HTTP cookies on computer browsers.
 
 <!--**Xandr is an NAI member and sits on NAI's Board
-of Directors.**-->
+of Directors.**
+-->
 
 ## Prebid.org
 

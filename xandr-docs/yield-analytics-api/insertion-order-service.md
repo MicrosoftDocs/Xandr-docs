@@ -41,6 +41,12 @@ For more infromation on authentication, see [Yield Analytics API - Authenticatio
 
 Confidentiality is maintained by using Secure Socket Layer based communication to interact with the Yield Analytics API. API developers should prefer use of HTTPS over HTTP insecure communication whenever possible. Consult your HTTP Client library on how to enable HTTP over SSL when developing outside of a web browser context.
 
+## Host
+
+```
+https://api.appnexus.com/imf/
+```
+
 ## Paths
 
 ### Get guaranteed capacity for single order
@@ -83,7 +89,7 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/future/1/1' -i -H 'Content-Type: application/json' 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/order/capacity/future/1/1' -i -H 'Content-Type: application/json' 
     -H 'Accept: application/json' -H 'username: {{username}}' -H 'password: {{password}}'
   ```
 
@@ -95,7 +101,7 @@ GET /api/v1/rest/order/capacity/future/{externalId}/{nbDays}
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -354,7 +360,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
 - **Example cURL request**
 
   ```
-   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/orderids/1/EST' -i -X 
+   $ curl 'https://api.appnexus.com/imf/v1/rest/order/capacity/guaranteed/future/orderids/1/EST' -i -X 
    POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
    "externalOrderIdPool" : 
    {
@@ -368,7 +374,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}
   ```
   POST /api/v1/rest/order/capacity/guaranteed/future/orderids/1/EST HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 60
             
   {
@@ -481,7 +487,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/orderids/1/Australia/Sydney' -i -X 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/order/capacity/guaranteed/future/orderids/1/Australia/Sydney' -i -X 
     POST -H 'Content-Type: application/json;charset=UTF-8' -d '{
     "externalOrderIdPool" : 
     {
@@ -495,7 +501,7 @@ POST /api/v1/rest/order/capacity/guaranteed/future/orderids/{nbDays}/{timeZone}/
   ```
   POST /api/v1/rest/order/capacity/guaranteed/future/orderids/1/Australia/Sydney HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 60
 
   {
@@ -608,7 +614,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
 - **Example cURL request**
 
   ```
-   $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/orderids/1/EST' -i -X POST 
+   $ curl 'https://api.appnexus.com/imf/v1/rest/order/capacity/guaranteed/future/orderids/1/EST' -i -X POST 
      -H 'Content-Type: application/json;charset=UTF-8' -d '{
      "externalOrderIdPool" : 
     {
@@ -622,7 +628,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}
   ```
   POST /api/v1/rest/order/capacity/guaranteed/future/orderids/1/EST HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 60
 
   {
@@ -735,7 +741,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/capacity/guaranteed/future/1/Australia/Sydney' 
+  $ https://api.appnexus.com/imf/v1/rest/order/capacity/guaranteed/future/1/Australia/Sydney' 
   -i -H 'Content-Type: application/json' -H 'Accept: application/json' 
   -H 'username: {{username}}' -H 'password: {{password}}' 
   ```
@@ -748,7 +754,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -846,7 +852,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/delivery/1/2016-06-01/2016-07-01' -i -H 
+  $ curl 'https://api.appnexus.com/imf/v1/rest/order/delivery/1/2016-06-01/2016-07-01' -i -H 
   'Content-Type: application/json' -H 'Accept: application/json' 
   -H 'username: {{username}}' -H 'password: {{password}}'
   ```
@@ -859,7 +865,7 @@ GET /api/v1/rest/order/capacity/guaranteed/future/{nbDays}/{timeZone}/{timeZoneS
   Accept: application/json
   username: {{username}}
   password: {{password}}
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   ```
 
 - **Example HTTP response**
@@ -968,7 +974,7 @@ POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consu
 - **Example cURL request**
 
   ```
-  $ curl 'https://{{client_url}}/api/v1/rest/v1/rest/order/inventoryandcontention/apas/2017-03-01/2017-03-31/consumptionFilter;
+  $ curl 'https://api.appnexus.com/imf/v1/rest/order/inventoryandcontention/apas/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5' -i -X POST -H 
   'Content-Type: application/json;charset=UTF-8' -d 
   '{
@@ -982,7 +988,7 @@ POST /api/v1/rest/order/inventoryandcontention/apas/{startDate}/{endDate}/{consu
   POST /api/v1/rest/order/inventoryandcontention/apas/2017-03-01/2017-03-31/consumptionFilter;
   INVENTORY_CLASS=GUARANTEED;CONSUMPTION_TYPE=DIRECT;CONSUMPTION_TYPE=CONTAINED;PRIORITY%3E=5 HTTP/1.1
   Content-Type: application/json;charset=UTF-8
-  Host: https://{{client_url}}/api/v1/rest
+  Host: https://api.appnexus.com/imf/
   Content-Length: 44
 
   {

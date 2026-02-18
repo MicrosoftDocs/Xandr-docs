@@ -7,8 +7,9 @@ metadata:
   description: Discover various reference docs about Impression Bus API
   ms.topic: landing-page
   ms.author: rupambaruah
-  ms.service: microsoft-monetize
+  ms.service: publisher-monetization
   ms.date: 11/30/2023
+  ms.subservice: microsoft-monetize
 
 landingContent:
   - title: Let's Get Started

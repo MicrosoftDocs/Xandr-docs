@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Set Up Conversions with Universal Pixel
 description: Learn how to set up conversions for universal pixel by using rules and conditions. You can then track conversion activity by using Microsoft Invest reporting.
-ms.date: 10/28/2023
+ms.date: 2/18/2026
 ---
 
 # Microsoft Invest - Set up conversions with universal pixel

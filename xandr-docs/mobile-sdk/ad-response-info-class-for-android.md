@@ -52,12 +52,6 @@ public ANAdResponseInfo getAdResponseInfo()
 > AdResponseInfo adResponseInfo = nativeAdResponse.getAdResponseInfo()
 > //Insterstitial Ad View
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
-> boolean isSov = banner.getAdResponseInfo().isSov();
-> int mediaTypeId = banner.getAdResponseInfo().getMediaTypeId();
-> int mediaSubtypeId = banner.getAdResponseInfo().getMediaSubtypeId();
-> int brandCategoryId = banner.getAdResponseInfo().getBrandCategoryId();
-> int dealId = banner.getAdResponseInfo().getDealId();
-> boolean isRoadblock = banner.getAdResponseInfo().isRoadblock();
 > ```
 
 #### Code sample (Kotlin)
@@ -69,12 +63,6 @@ public ANAdResponseInfo getAdResponseInfo()
 > val adResponseInfo = nativeAdResponse.adResponseInfo
 > //Insterstitial Ad View
 > val adResponseInfo = interstitial.adResponseInfo
-> val isSov = banner.adResponseInfo.isSov
-> val mediaTypeId = banner.adResponseInfo.mediaTypeId
-> val mediaSubtypeId = banner.adResponseInfo.mediaSubtypeId
-> val brandCategoryId = banner.adResponseInfo.brandCategoryId
-> val dealId = banner.adResponseInfo.dealId
->val isRoadblock = banner.adResponseInfo.isRoadblock
 > ```
 
 
@@ -99,6 +87,12 @@ public void onAdLoaded(AdView bav) {
     Double cpm = bav.getAdResponseInfo().getCpm();
     Double cpmpublisherCurrency = bav.getAdResponseInfo().getCpmPublisherCurrency();
     String publishercurrencyCode = bav.getAdResponseInfo().getPublisherCurrencyCode();
+    boolean isSov = banner.getAdResponseInfo().isSov();
+    int mediaTypeId = banner.getAdResponseInfo().getMediaTypeId();
+    int mediaSubtypeId = banner.getAdResponseInfo().getMediaSubtypeId();
+    int brandCategoryId = banner.getAdResponseInfo().getBrandCategoryId();
+    int dealId = banner.getAdResponseInfo().getDealId();
+    boolean isRoadblock = banner.getAdResponseInfo().isRoadblock();
 }
 ```
 
@@ -121,6 +115,12 @@ override fun onAdLoaded(ad: AdView?) {
     val cpm = banner.adResponseInfo.cpm
     val cpmPublisherCurrency = banner.adResponseInfo.cpmPublisherCurrency
     val publisherCurrencyCode = banner.adResponseInfo.publisherCurrencyCode
+    val isSov = banner.adResponseInfo.isSov
+    val mediaTypeId = banner.adResponseInfo.mediaTypeId
+    val mediaSubtypeId = banner.adResponseInfo.mediaSubtypeId
+    val brandCategoryId = banner.adResponseInfo.brandCategoryId
+    val dealId = banner.adResponseInfo.dealId
+    val isRoadblock = banner.adResponseInfo.isRoadblock
 }
 ```
 

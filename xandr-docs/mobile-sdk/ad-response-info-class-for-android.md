@@ -58,7 +58,6 @@ public ANAdResponseInfo getAdResponseInfo()
 > int brandCategoryId = banner.getAdResponseInfo().getBrandCategoryId();
 > int dealId = banner.getAdResponseInfo().getDealId();
 > boolean isRoadblock = banner.getAdResponseInfo().isRoadblock();
-
 > ```
 
 #### Code sample (Kotlin)
@@ -76,7 +75,6 @@ public ANAdResponseInfo getAdResponseInfo()
 > val brandCategoryId = banner.adResponseInfo.brandCategoryId
 > val dealId = banner.adResponseInfo.dealId
 >val isRoadblock = banner.adResponseInfo.isRoadblock
-
 > ```
 
 

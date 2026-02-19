@@ -9,7 +9,7 @@ ms.author: shsrinivasan
 
 # Android SDK release notes
 
-## 9.10.1
+## 9.11.0
 
 
 ### New Feature
@@ -27,6 +27,9 @@ ms.author: shsrinivasan
 ### Improvement/Bug Fixes
 
 + 10314529: OMSDK updated to  v1.6.2.
+
+## 9.10.1
+
 ### Improvement/Bug Fixes
 
 + 10330091: Fixed telemetry data issues for Android Interstitial ads.

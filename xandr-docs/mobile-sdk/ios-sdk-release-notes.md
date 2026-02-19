@@ -19,7 +19,13 @@ ms.author: shsrinivasan
 
 ### New Feature
 
-+ 10385727: Following fields are now available in  ANAdResponseInfo: isSov, mediaSubtypeId, mediaTypeId, brandCategoryId, dealId, isRoadblock.
++ 10385727: Following fields are now available in `ANAdResponseInfo`:
+  - `isSov`
+  - `mediaSubtypeId`
+  - `mediaTypeId`
+  - `brandCategoryId`
+  - `dealId`
+  - `isRoadblock`
 
  
 
@@ -47,7 +53,7 @@ ms.author: shsrinivasan
 + 10149666: Added Publisher Provided ID (PPID) support for Google Mediation.
  
 ### Improvement/Bug Fixes
-+ 10121001: Fixed crash EXC_CRASH crash in [ANUniversalTagRequestBuilder request].
++ 10121001: Fixed crash `EXC_CRASH` in `[ANUniversalTagRequestBuilder request]`.
 + 10121017: Bug fix addressing incorrect banner video sizes.
 + 10121017: Bug fix addressing initialAudio in banner video.
 + 10145721: Add Device Screen Information to ut/v3 Request.

@@ -54,12 +54,6 @@ To retrieve the `adResponseInfo` object from the ad response, use the following 
 >  // For nativeAd once didReceiveResponse is callback
 >   ANAdResponseInfo nativeAdResponseInfo = nativeAdResponse;
 >    NSString* nativeAdCreativeId = nativeAdResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
-> BOOL bannerISOValue = self.banner.adResponseInfo.isSov;
-> NSInteger bannerMediaTypeIdValue = self.banner.adResponseInfo.mediaTypeId;
-> NSInteger bannerMediaSubtypeIdValue = self.banner.adResponseInfo.mediaSubtypeId;
-> NSInteger bannerBrandCategoryIdValue = self.banner.adResponseInfo.brandCategoryId;
-> NSInteger bannerDealIdValue = self.banner.adResponseInfo.dealId;
-> BOOL bannerIsRoadblockValue = self.banner.adResponseInfo.isRoadblock;
 > ```
 
 #### Code sample (Swift)
@@ -71,12 +65,6 @@ To retrieve the `adResponseInfo` object from the ad response, use the following 
 >   let videoAdCreativeId : String = (self.videoAd.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from videoAd
 >  // For nativeAd once didReceiveResponse is callback
 >   let nativeAdCreativeId : String = (self.nativeAdResponse.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from nativeAd
-> let bannerISOValue: Bool = (self.banner?.adResponseInfo?.isSov)!
-> let bannerMediaTypeIdValue: Int = (self.banner?.adResponseInfo?.mediaTypeId)!
-> let bannerMediaSubtypeIdValue: Int = (self.banner?.adResponseInfo?.mediaSubtypeId)!
-> let bannerBrandCategoryIdValue: Int = (self.banner?.adResponseInfo?.brandCategoryId)!
-> let bannerDealIdValue: Int = (self.banner?.adResponseInfo?.dealId)!
-> let bannerIsRoadblockValue: Bool = (self.banner?.adResponseInfo?.isRoadblock)!
 > ```
 
 
@@ -102,6 +90,12 @@ To retrieve the `adResponseInfo` object from the ad response, use the following 
   NSNumber* bannerCPM = self.banner.adResponseInfo.cpm;
   NSNumber* bannerCPMPublisherCurrency = self.banner.adResponseInfo.cpmPublisherCurrency;
   NSString* bannerPublisherCurrencyCode = self.banner.adResponseInfo.publisherCurrencyCode;
+  BOOL bannerISOValue = self.banner.adResponseInfo.isSov;
+  NSInteger bannerMediaTypeIdValue = self.banner.adResponseInfo.mediaTypeId;
+  NSInteger bannerMediaSubtypeIdValue = self.banner.adResponseInfo.mediaSubtypeId;
+  NSInteger bannerBrandCategoryIdValue = self.banner.adResponseInfo.brandCategoryId;
+  NSInteger bannerDealIdValue = self.banner.adResponseInfo.dealId;
+  BOOL bannerIsRoadblockValue = self.banner.adResponseInfo.isRoadblock;
 }
 ```
 
@@ -125,5 +119,11 @@ func requestBannerAd() {
        let bannerCPM = (self.banner?.adResponseInfo?.cpm)!
        let bannerCPMPublisherCurrency = (self.banner?.adResponseInfo?.cpmPublisherCurrency)!
        let bannerPublisherCurrencyCode = (self.banner?.adResponseInfo?.publisherCurrencyCode)!
+       let bannerISOValue: Bool = (self.banner?.adResponseInfo?.isSov)!
+       let bannerMediaTypeIdValue: Int = (self.banner?.adResponseInfo?.mediaTypeId)!
+       let bannerMediaSubtypeIdValue: Int = (self.banner?.adResponseInfo?.mediaSubtypeId)!
+       let bannerBrandCategoryIdValue: Int = (self.banner?.adResponseInfo?.brandCategoryId)!
+       let bannerDealIdValue: Int = (self.banner?.adResponseInfo?.dealId)!
+       let bannerIsRoadblockValue: Bool = (self.banner?.adResponseInfo?.isRoadblock)!
 }
 ```

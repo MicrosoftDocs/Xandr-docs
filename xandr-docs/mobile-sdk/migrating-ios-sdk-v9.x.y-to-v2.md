@@ -2,7 +2,7 @@
 title: SDK integration instructions v9.1.0
 description: Learn how to integrate the AppNexusSDK into your iOS app using CocoaPods, Carthage, or XCFramework with detailed instructions.
 ms.custom: ios-sdk
-ms.date: 1/23/2026
+ms.date: 2/19/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -99,7 +99,7 @@ Once you've installed Carthage on your computer, follow these steps:
   
 ## XCFramework
 
-Download the latest iOS SDK v9.x from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.10.1/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
+Download the latest iOS SDK v9.x from [Azure CDN](https://adsdkprod.azureedge.net/mobile/ios/releases/9.11.0/static/sdks.zip). The downloaded zip file contains the following frameworks and resources bundle. Ensure that you are using the appropriate framework that best suits your needs. The **AppNexusSDK** is the recommendation for general use.
 
 | Framework | Description |
 |---|---|

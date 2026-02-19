@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 1/23/2026
+ms.date: 2/19/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -12,6 +12,30 @@ ms.author: shsrinivasan
 
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
+
+
+
+## 9.11.0
+
+### New Feature
+
++ 10385727: Following fields are now available in `ANAdResponseInfo`:
+  - `isSov`
+  - `mediaSubtypeId`
+  - `mediaTypeId`
+  - `brandCategoryId`
+  - `dealId`
+  - `isRoadblock`
+
+ 
+
+### Improvement/Bug Fixes
+
++ 10364467: Fix incorrect video player sizing and initial audio state.
+
+
+
+
 ## 9.10.1
 + 10314531: OMSDK updated to v1.6.2.
 
@@ -29,7 +53,7 @@ ms.author: shsrinivasan
 + 10149666: Added Publisher Provided ID (PPID) support for Google Mediation.
  
 ### Improvement/Bug Fixes
-+ 10121001: Fixed crash EXC_CRASH crash in [ANUniversalTagRequestBuilder request].
++ 10121001: Fixed crash `EXC_CRASH` in `[ANUniversalTagRequestBuilder request]`.
 + 10121017: Bug fix addressing incorrect banner video sizes.
 + 10121017: Bug fix addressing initialAudio in banner video.
 + 10145721: Add Device Screen Information to ut/v3 Request.

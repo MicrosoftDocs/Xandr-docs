@@ -2,7 +2,7 @@
 title: adResponseInfo Class for iOS
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for iOS Mobile SDK.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 2/19/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -33,12 +33,19 @@ To retrieve the `adResponseInfo` object from the ad response, use the following 
 | `cpm` | NSNumber | The bid price of the current auction expressed as Cost per mille, or thousand (mille = thousand in Latin). A pricing model in which advertisers pay for every 1000 impressions of their advertisement served. This is the standard basic pricing model for online advertising. |
 | `cpmPublisherCurrency` | NSNumber | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | NSString | The currency code of the publishers' currency. For example, USD |
+| `isSov`            | BOOL       | Indicates whether the ad is sold on an exclusive basis. Exclusive (also known as Share of Voice (SOV)) means the advertiser has purchased 100% of the placement’s inventory for a given time period. |
+| `mediaTypeId `     | NSInteger  | Media Type ID associated with the response. |
+| `mediaSubtypeId`  | NSInteger  | Media Subtype ID associated with the response. |
+| `brandCategoryId` | NSInteger  | Brand Category ID associated with the response. |
+| `dealId`         | NSInteger  | Deal ID associated with the response. |
+| `isRoadblock`      | BOOL       | Indicates whether this is a roadblock ad. |
+
 
 > [!NOTE]
 > AdResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View.
->
-> #### Code sample (Objective C)
->
+
+#### Code sample (Objective C)
+
 > ```
 > // For interstitialAd once adDidReceiveAd is callback
 >   NSString* interstitialAdCreativeId = self.interstitialAd.adResponseInfo.creativeId; // same will be followed to get other adResponseInfo from interstitialAd
@@ -47,10 +54,16 @@ To retrieve the `adResponseInfo` object from the ad response, use the following 
 >  // For nativeAd once didReceiveResponse is callback
 >   ANAdResponseInfo nativeAdResponseInfo = nativeAdResponse;
 >    NSString* nativeAdCreativeId = nativeAdResponseInfo.creativeId; // same will be followed to get other adResponseInfo from videoAd
+> BOOL bannerISOValue = self.banner.adResponseInfo.isSov;
+> NSInteger bannerMediaTypeIdValue = self.banner.adResponseInfo.mediaTypeId;
+> NSInteger bannerMediaSubtypeIdValue = self.banner.adResponseInfo.mediaSubtypeId;
+> NSInteger bannerBrandCategoryIdValue = self.banner.adResponseInfo.brandCategoryId;
+> NSInteger bannerDealIdValue = self.banner.adResponseInfo.dealId;
+> BOOL bannerIsRoadblockValue = self.banner.adResponseInfo.isRoadblock;
 > ```
->
-> #### Code sample (Swift)
->
+
+#### Code sample (Swift)
+
 > ```
 > // For interstitialAd once adDidReceiveAd is callback
 >   let interstitialAdCreativeId : String = (self.interstitialAd.?.adResponseInfo?.creativeId)! // same will be followed to get other adResponseInfo from interstitialAd
@@ -58,6 +71,12 @@ To retrieve the `adResponseInfo` object from the ad response, use the following 
 >   let videoAdCreativeId : String = (self.videoAd.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from videoAd
 >  // For nativeAd once didReceiveResponse is callback
 >   let nativeAdCreativeId : String = (self.nativeAdResponse.?.adResponseInfo?.creativeId)!  // same will be followed to get other adResponseInfo from nativeAd
+> let bannerISOValue: Bool = (self.banner?.adResponseInfo?.isSov)!
+> let bannerMediaTypeIdValue: Int = (self.banner?.adResponseInfo?.mediaTypeId)!
+> let bannerMediaSubtypeIdValue: Int = (self.banner?.adResponseInfo?.mediaSubtypeId)!
+> let bannerBrandCategoryIdValue: Int = (self.banner?.adResponseInfo?.brandCategoryId)!
+> let bannerDealIdValue: Int = (self.banner?.adResponseInfo?.dealId)!
+> let bannerIsRoadblockValue: Bool = (self.banner?.adResponseInfo?.isRoadblock)!
 > ```
 
 

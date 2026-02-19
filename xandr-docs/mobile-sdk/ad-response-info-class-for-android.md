@@ -2,7 +2,7 @@
 title: adResponseInfo Class for Android
 description: In this article, understand what the adResponseInfo class is, its properties, and find code samples of this class for Android Mobile SDK.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 2/19/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -33,12 +33,18 @@ public ANAdResponseInfo getAdResponseInfo()
 | `cpm` | Double | The bid price of the current auction expressed as Cost per mille, or thousand (mille = thousand in Latin). A pricing model in which advertisers pay for every 1000 impressions of their advertisement served. This is the standard basic pricing model for online advertising. |
 | `cpmPublisherCurrency` | Double | The cpm expressed in publishers' currency. |
 | `publisherCurrencyCode` | String | The currency code of the publishers' currency. For example, USD |
+| `isSov`           | Boolean  | Indicates whether the ad is sold on an exclusive basis. Exclusive (also known as Share of Voice (SOV)) means the advertiser has purchased 100% of the placement’s inventory for a given time period. |
+| `mediaTypeId`      | Integer  | Media Type ID associated with the response. |
+| `mediaSubtypeId`  | Integer  | Media Subtype ID associated with the response. |
+| `brandCategoryId` | Integer  | Brand Category ID associated with the response. |
+| `dealId`          | Integer  | Deal ID associated with the response. |
+| `isRoadblock`      | Boolean  | Indicates whether this is a roadblock ad. |
 
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
->
-> #### Code sample (Java)
->
+
+#### Code sample (Java)
+
 > ```
 > //Video Ad
 > AdResponseInfo adResponseInfo = videoAd.getAdResponseInfo()
@@ -46,10 +52,16 @@ public ANAdResponseInfo getAdResponseInfo()
 > AdResponseInfo adResponseInfo = nativeAdResponse.getAdResponseInfo()
 > //Insterstitial Ad View
 > AdResponseInfo adResponseInfo = interstitial.getAdResponseInfo()
+> boolean isSov = banner.getAdResponseInfo().isSov();
+> int mediaTypeId = banner.getAdResponseInfo().getMediaTypeId();
+> int mediaSubtypeId = banner.getAdResponseInfo().getMediaSubtypeId();
+> int brandCategoryId = banner.getAdResponseInfo().getBrandCategoryId();
+> int dealId = banner.getAdResponseInfo().getDealId();
+> boolean isRoadblock = banner.getAdResponseInfo().isRoadblock();
 > ```
->
-> #### Code sample (Kotlin)
->
+
+#### Code sample (Kotlin)
+
 > ```
 > //Video Ad
 > val adResponseInfo = videoAd.adResponseInfo
@@ -57,6 +69,12 @@ public ANAdResponseInfo getAdResponseInfo()
 > val adResponseInfo = nativeAdResponse.adResponseInfo
 > //Insterstitial Ad View
 > val adResponseInfo = interstitial.adResponseInfo
+> val isSov = banner.adResponseInfo.isSov
+> val mediaTypeId = banner.adResponseInfo.mediaTypeId
+> val mediaSubtypeId = banner.adResponseInfo.mediaSubtypeId
+> val brandCategoryId = banner.adResponseInfo.brandCategoryId
+> val dealId = banner.adResponseInfo.dealId
+>val isRoadblock = banner.adResponseInfo.isRoadblock
 > ```
 
 

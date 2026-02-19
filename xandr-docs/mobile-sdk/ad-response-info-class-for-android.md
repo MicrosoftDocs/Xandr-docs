@@ -42,9 +42,9 @@ public ANAdResponseInfo getAdResponseInfo()
 
 > [!NOTE]
 > `AdResponseInfo` can be retrieved using Video Ad instance, Interstitial Ad View instance, and Native Ad Response also apart from Banner Ad View.
->
-> #### Code sample (Java)
->
+
+#### Code sample (Java)
+
 > ```
 > //Video Ad
 > AdResponseInfo adResponseInfo = videoAd.getAdResponseInfo()
@@ -61,8 +61,8 @@ public ANAdResponseInfo getAdResponseInfo()
 
 > ```
 
-> #### Code sample (Kotlin)
->
+#### Code sample (Kotlin)
+
 > ```
 > //Video Ad
 > val adResponseInfo = videoAd.adResponseInfo

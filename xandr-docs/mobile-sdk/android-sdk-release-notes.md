@@ -14,7 +14,13 @@ ms.author: shsrinivasan
 
 ### New Feature
 
-+ 10385727: Following methods are now available in  ANAdResponseInfo: isSov(), getMediaSubtypeId(), getMediaTypeId(), getBrandCategoryId(), getDealId(), isRoadblock().
++ 10385727: Following methods are now available in `ANAdResponseInfo`:
+  - `isSov()`
+  - `getMediaSubtypeId()`
+  - `getMediaTypeId()`
+  - `getBrandCategoryId()`
+  - `getDealId()`
+  - `isRoadblock()`
 
  
 

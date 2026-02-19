@@ -1,7 +1,7 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 1/29/2026
+ms.date: 2/19/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -12,6 +12,15 @@ ms.author: shsrinivasan
 ## 9.10.1
 
 
+### New Feature
+
++ 10385727: Following methods are now available in  ANAdResponseInfo: isSov(), getMediaSubtypeId(), getMediaTypeId(), getBrandCategoryId(), getDealId(), isRoadblock().
+
+ 
+
+### Improvement/Bug Fixes
+
++ 10314529: OMSDK updated to  v1.6.2.
 ### Improvement/Bug Fixes
 
 + 10330091: Fixed telemetry data issues for Android Interstitial ads.

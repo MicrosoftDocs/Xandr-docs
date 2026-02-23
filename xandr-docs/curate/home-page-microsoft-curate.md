@@ -1,6 +1,6 @@
 ---
 title: Microsoft Curate Home Page
-description: The Microsoft Curate Home page is the default landing experience for all Microsoft Curate customers. 
+description: The Microsoft Curate Home page is the default landing experience for all Microsoft Curate customers. It provides a centralized, action-oriented view of business performance, (KPIs), and actionable insights.
 ms.date: 02/23/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate

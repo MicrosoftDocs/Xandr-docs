@@ -47,7 +47,7 @@ The following stats are shown for each advertiser. Note that the data always ref
 You can customize the columns that appear on the Advertisers screen. Use **Edit columns and sorts** to add, remove, or reorder columns in the grid.
 
 ### Columns
-Columns are grouped into the following categories.
+Columns are grouped into the following categories:
 
 ### Basic info
 

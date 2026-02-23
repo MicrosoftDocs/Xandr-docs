@@ -19,7 +19,7 @@ Some constraints:
 
 - Video mediation is not yet supported.
 - When a placement is integrated using the Android SDK, video settings configured in the Monetize UI or API are not applied. Video player behavior—including playback method (auto-play, sound on or off), volume control visibility, player size, and controls such as skip—is managed entirely by the SDK through the `ANVideoPlayerSettings` class.
-<br>Configure all video player options explicitly in `ANVideoPlayerSettings` within the app. For more information, see [Customize video player options on Android](https://learn.microsoft.com/en-us/xandr/mobile-sdk/customize-video-player-options-on-android?tabs=java1).
+- Configure all video player options explicitly in `ANVideoPlayerSettings` within the app. For more information, see [Customize video player options on Android](customize-video-player-options-on-android.md).
 
 ## Show a mix of VAST Video and HTML banner ads
 

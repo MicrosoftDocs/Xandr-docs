@@ -35,7 +35,7 @@ The **Filters** menu lets you filter for advertisers based on Advertiser Name, E
 The following stats are shown for each advertiser. Note that the data always reflects the currently selected stats interval:
 
 - **ID:** The unique identifier of advertiser.
-- **External Code**: The user defined code for the advertiser (rather than the internal ID that Microsoft Advertising assigns automatically) used in reporting
+- **External Code**: The user defined code for the advertiser (rather than the internal ID that Microsoft Advertising assigns automatically) used in reporting.
 - **Ins Orders:** Number of insertion orders under the advertiser.
 - **Line Items:** Number of line items under the advertiser.
 - **Rev Delivery (Last 7 days):** Money the advertiser has paid or will pay your network for clicks or conversions for full 7 days previous to the current calendar day, i.e., excluding today. This is based on revenue settings at the line item level.

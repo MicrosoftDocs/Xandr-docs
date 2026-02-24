@@ -34,9 +34,10 @@
         href: getting-started-with-roles.md
       - name: Member Users Screen
         href: network-users-screen.md
-  
   - name: Curate API
     href: digital-platform-ui-api-info.md
+- name: Microsoft Curate Home Page
+  href: home-page-microsoft-curate.md
 - name: Copilot in Microsoft Curate
   href: copilot-in-microsoft-curate.md
 - name: Partner Center Guide

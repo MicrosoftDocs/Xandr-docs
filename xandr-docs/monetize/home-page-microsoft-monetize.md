@@ -1,5 +1,5 @@
 ---
-title: Microsoft Monetize Home page
+title: Microsoft Monetize Home Page
 description: Microsoft Monetize Home page serves as the default landing page for all Microsoft Monetize customers.
 ms.date: 10/21/2025
 ms.service: publisher-monetization
@@ -7,13 +7,13 @@ ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 
-# Microsoft Monetize Home page 
+# Microsoft Monetize home page 
 
 Microsoft Monetize Home page serves as the default landing page for all Microsoft Monetize customers. It provides a centralized experience through key modals such as SMW Line items and Insights, delivering actionable content to help customers stay informed and enabling them to take effective measures towards achieving their daily goals. 
 
 Microsoft Monetize Home offers insights into business performance, key performance indicators (KPIs), and workflow shortcuts. It’s designed to support all stakeholders in efficiently navigating their daily tasks. 
 
-## Navigating the Home page 
+## Navigate the home page 
 When you sign in to Microsoft Monetize, the Home page is displayed by default. It contains two primary sections: 
 - Performance 
 - For You

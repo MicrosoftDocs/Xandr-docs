@@ -7,9 +7,9 @@ ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 
-# Microsoft Curate Home Page
+# Microsoft Curate home page
 
-The Microsoft Curate Home page is the default landing experience for all Microsoft Curate customers. It provides a centralized, action-oriented view of business performance, key performance indicators (KPIs), workflow shortcuts, and actionable insights. The page is designed to help stakeholders quickly understand performance trends, stay informed, and take effective action toward achieving daily business goals. 
+The Microsoft Curate home page is the default landing experience for all Microsoft Curate customers. It provides a centralized, action-oriented view of business performance, key performance indicators (KPIs), workflow shortcuts, and actionable insights. The page is designed to help stakeholders quickly understand performance trends, stay informed, and take effective action toward achieving daily business goals. 
 
 The Home page consolidates key modules, including Seller Monitoring Workflow (SMW) line items and insights, and enables users to efficiently navigate tasks while maintaining visibility into revenue and margin performance. 
  
@@ -65,12 +65,12 @@ The Saved Reports panel displays the five most recently run saved reports as
 
 The Top spend increases section highlights deals where spend has increased significantly over a selected timeframe. This section surfaces unexpected growth or new demand and provides visibility into meaningful performance shifts. This section helps curators: 
 
-- Identify deals that recently started spending 
-- Detect deals scaling faster than expected 
-- Validate successful performance 
-- Confirm supply and demand health 
-- Ensure margins remain acceptable 
-- Proactively communicate performance wins 
+- Identify deals that recently started spending.
+- Detect deals scaling faster than expected.
+- Validate successful performance.
+- Confirm supply and demand health.
+- Ensure margins remain acceptable.
+- Proactively communicate performance wins.
 
 Selecting any row opens the corresponding Seller Monitoring Workflow (SMW) Line Items grid. From there, you can review line item settings and make updates to ensure they continue serving as expected. To adjust the timeframe for the top spend increases data, use the date range selector located at the top-right of the top send increases section. The available options are: 
 
@@ -78,7 +78,6 @@ Selecting any row opens the corresponding Seller Monitoring Workflow (SMW) Line 
 - Last 28 days 
 - Yesterday 
  
-
 #### Top spend decreases  
 
 The Top spend decreases section highlights deals where spend has declined sharply over a selected timeframe. These declines may indicate delivery issues, demand fluctuations, or revenue risk. This section helps answer: 

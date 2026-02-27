@@ -60,8 +60,8 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 | `categories` | array of objects | Array of categories with their status. For more details, see [Categories](#categories) below. |
 | `technical_attributes` | array of objects | Array of technical attributes with their status. For more details, see [Technical Attributes](#technical-attributes) below. |
 | `frequency_caps` | array of objects | Array of frequency/recency caps. For more details, see [Frequency Caps](#frequency-caps) below. |
-| `bidders` | array of objects | Array of bidders. For more details, see [Frequency Caps](#bidders) below. |
-| `seats` | array of objects | Array of seats. For more details, see [Frequency Caps](#seats) below. |
+| `bidders` | array of objects | Array of bidders. For more details, see [Bidders](#bidders) below. |
+| `seats` | array of objects | Array of seats. For more details, see [Seats](#seats) below. |
 | `total_creative_count` | int | Number of creatives. |
 | `approved_creative_count` | int | Number of approved creatives. |
 | `banned_creative_count` | int | Number of banned creatives. |
@@ -171,6 +171,7 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 | Field | Type | Description |
 |:---|:---|:---|
 | `bidder_id` | int | **Required**. The ID of the bidder under a seat. |
+| `seat_code` | string | **Required**. Seat code registered for the bidder.|
 | `status` | string | **Required**. Whether the bidder can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this bidder's creatives may serve.<br> - `"case-by-case"`: This bidder's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this bidder's creatives are allowed to serve. |
 | `require_audit_type` | string | The type of audit you will require in order to serve creatives from this bidder. Allowed values:<br> - `"platform"`: Creatives must have undergone Microsoft Advertising platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the bidder, or undergone Microsoft Advertising audit. |
 | `require_seller_audit_status` | string | Whether the bidder can require its own audit for creatives from a given buyer:<br> - `"always"`: This bidder can always require audit for creatives from a given buyer.<br> - `"never"`: This bidder can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
@@ -220,6 +221,40 @@ $ cat ad_profile
                 "approved": true
             }
         ],
+        
+        "bidders": [
+            {
+                "id": 2,
+                "status": "trusted",
+                "require_audit_type": "platform",
+                "require_seller_audit_status": "always"
+            },
+            {
+                "id": 5,
+                "status": "banned"
+            },
+            {
+                "id": 10,
+                "status": "case-by-case",
+                "require_audit_type": "platform_or_self",
+                "require_seller_audit_status": "never"
+            }
+        ],
+        "seats": [
+          {
+                "bidder_id": 2,
+                "seat_code": "ABC123",
+                "status": "trusted",
+                "require_audit_type": "platform",
+                "require_seller_audit_status": "always"
+          },
+          {
+                "bidder_id": 5,
+                "seat_code": "XYZ789",
+                "status": "banned"
+          }
+        ],
+
         "notes": "This is a great ad profile",
         "default_language_status": "banned",
         "default_ad_server_status": "trusted",
@@ -352,6 +387,46 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/ad-profile?id=1317"
           "approved": true
         }
       ],
+        
+    "bidders": [
+        {
+          "id": 2,
+          "status": "trusted",
+          "block_unaudited_creatives": false,
+          "allow_pending_creatives": false,
+          "require_audit_type": "platform",
+          "require_seller_audit_status": "always"
+        },
+        {
+          "id": 5,
+          "status": "banned",
+          "block_unaudited_creatives": null,
+          "allow_pending_creatives": null,
+          "require_audit_type": null,
+          "require_seller_audit_status": null
+        }
+      ],
+      "seats": [
+        {
+          "seat_code": "ABC123",
+          "bidder_id": 2,
+          "status": "trusted",
+          "block_unaudited_creatives": false,
+          "allow_pending_creatives": false,
+          "require_audit_type": "platform",
+          "require_seller_audit_status": "always"
+        },
+        {
+          "seat_code": "XYZ789",
+          "bidder_id": 5,
+          "status": "banned",
+          "block_unaudited_creatives": null,
+          "allow_pending_creatives": null,
+          "require_audit_type": null,
+          "require_seller_audit_status": null
+        }
+      ]
+
       "total_creative_count": 8369,
       "approved_creative_count": 1,
       "banned_creative_count": 8368,

@@ -259,7 +259,8 @@ Additional resources on demand partners:
 | PGAMSSP | pgamssp | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Playdigo | playdigo | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Performist      | performist     | Yes               | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        | **App**: Yes <br> **Site**: Yes        |
-| ProgrammaticX | progx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
+| ProgX | progx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| ProgrammaticX | programmaticX | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | PubMatic | pubmatic | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | PubNative | pubnative | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Pubrise | pubrise | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |

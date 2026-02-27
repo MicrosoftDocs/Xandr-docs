@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Ad Profile Service
 description: In this article, learn about Digital Platform API's Ad Profile service, their JSON fields, and REST API with thorough examples.
-ms.date: 10/22/2025
+ms.date: 2/27/2025
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -60,6 +60,8 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 | `categories` | array of objects | Array of categories with their status. For more details, see [Categories](#categories) below. |
 | `technical_attributes` | array of objects | Array of technical attributes with their status. For more details, see [Technical Attributes](#technical-attributes) below. |
 | `frequency_caps` | array of objects | Array of frequency/recency caps. For more details, see [Frequency Caps](#frequency-caps) below. |
+| `bidders` | array of objects | Array of bidders. For more details, see [Bidders](#bidders) below. |
+| `seats` | array of objects | Array of seats. For more details, see [Seats](#seats) below. |
 | `total_creative_count` | int | Number of creatives. |
 | `approved_creative_count` | int | Number of approved creatives. |
 | `banned_creative_count` | int | Number of banned creatives. |
@@ -82,7 +84,7 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 |:---|:---|:---|
 | `id` | int | The ID of the member. |
 | `status` | enum | Whether the member can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this member's creatives may serve.<br> - `"case-by-case"`: This member's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this member's creatives are allowed to serve. |
-| `audit_type` | enum | The type of audit you will require in order to serve creatives from this member. Allowed values:<br> - `"platform"`: Creatives must have undergone Xandr platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the member, or undergone Xandr audit. |
+| `audit_type` | enum | The type of audit you will require in order to serve creatives from this member. Allowed values:<br> - `"platform"`: Creatives must have undergone Microsoft Advertising platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the member, or undergone Microsoft Advertising audit. |
 | `exclude_unaudited` | boolean | If `true`, unaudited creatives are excluded from this member. |
 | `require_seller_audit_status` | enum | Whether the member can require its own audit for creatives from a given buyer:<br> - `"always"`: This member can always require audit for creatives from a given buyer.<br> - `"never"`: This member can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
 
@@ -153,6 +155,31 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 | `technical_attributes` | array | The IDs of the technical attributes that you are limiting. You can use the [Technical Attribute Service](technical-attribute-service.md) to get a complete list of technical attributes. The `technical_attributes` and `categories` fields have an OR-relationship. |
 | `categories` | array | The IDs of the categories that you are limiting. You can use the [Category Service](category-service.md) to get a complete list of categories. The `technical_attributes` and `categories` fields have an OR-relationship. |
 
+### Bidders
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | **Required**. The ID of the bidder. |
+| `status` | string | **Required**. Whether the bidder can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this bidder's creatives may serve.<br> - `"case-by-case"`: This bidder's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this bidder's creatives are allowed to serve. |
+| `require_audit_type` | string | The type of audit you will require in order to serve creatives from this bidder. Allowed values:<br> - `"platform"`: Creatives must have undergone Microsoft Advertising platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the bidder, or undergone Microsoft Advertising audit. |
+| `require_seller_audit_status` | string | Whether the bidder can require its own audit for creatives from a given buyer:<br> - `"always"`: This bidder can always require audit for creatives from a given buyer.<br> - `"never"`: This bidder can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
+| `block_unaudited_creatives` | boolean | If `true`, the platform will block all unaudited creatives from running on your publishers' pages. |
+| `allow_pending_creatives` | boolean | If `true`, the platform will allow all pending creatives from audit to run on your publishers' pages. |
+
+### Seats
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `bidder_id` | int | **Required**. The ID of the bidder under a seat. |
+| `seat_code` | string | **Required**. Seat code registered for the bidder.|
+| `status` | string | **Required**. Whether the bidder can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this bidder's creatives may serve.<br> - `"case-by-case"`: This bidder's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this bidder's creatives are allowed to serve. |
+| `require_audit_type` | string | The type of audit you will require in order to serve creatives from this bidder. Allowed values:<br> - `"platform"`: Creatives must have undergone Microsoft Advertising platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the bidder, or undergone Microsoft Advertising audit. |
+| `require_seller_audit_status` | string | Whether the bidder can require its own audit for creatives from a given buyer:<br> - `"always"`: This bidder can always require audit for creatives from a given buyer.<br> - `"never"`: This bidder can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
+| `block_unaudited_creatives` | boolean | If `true`, the platform will block all unaudited creatives from running on your publishers' pages. |
+| `allow_pending_creatives` | boolean | If `true`, the platform will allow all pending creatives from audit to run on your publishers' pages. |
+
+
+
 ## Examples
 
 > [!WARNING]
@@ -194,6 +221,40 @@ $ cat ad_profile
                 "approved": true
             }
         ],
+        
+        "bidders": [
+            {
+                "id": 2,
+                "status": "trusted",
+                "require_audit_type": "platform",
+                "require_seller_audit_status": "always"
+            },
+            {
+                "id": 5,
+                "status": "banned"
+            },
+            {
+                "id": 10,
+                "status": "case-by-case",
+                "require_audit_type": "platform_or_self",
+                "require_seller_audit_status": "never"
+            }
+        ],
+        "seats": [
+          {
+                "bidder_id": 2,
+                "seat_code": "ABC123",
+                "status": "trusted",
+                "require_audit_type": "platform",
+                "require_seller_audit_status": "always"
+          },
+          {
+                "bidder_id": 5,
+                "seat_code": "XYZ789",
+                "status": "banned"
+          }
+        ],
+
         "notes": "This is a great ad profile",
         "default_language_status": "banned",
         "default_ad_server_status": "trusted",
@@ -326,6 +387,46 @@ $ curl -b cookies -c cookies "https://api.appnexus.com/ad-profile?id=1317"
           "approved": true
         }
       ],
+        
+    "bidders": [
+        {
+          "id": 2,
+          "status": "trusted",
+          "block_unaudited_creatives": false,
+          "allow_pending_creatives": false,
+          "require_audit_type": "platform",
+          "require_seller_audit_status": "always"
+        },
+        {
+          "id": 5,
+          "status": "banned",
+          "block_unaudited_creatives": null,
+          "allow_pending_creatives": null,
+          "require_audit_type": null,
+          "require_seller_audit_status": null
+        }
+      ],
+      "seats": [
+        {
+          "seat_code": "ABC123",
+          "bidder_id": 2,
+          "status": "trusted",
+          "block_unaudited_creatives": false,
+          "allow_pending_creatives": false,
+          "require_audit_type": "platform",
+          "require_seller_audit_status": "always"
+        },
+        {
+          "seat_code": "XYZ789",
+          "bidder_id": 5,
+          "status": "banned",
+          "block_unaudited_creatives": null,
+          "allow_pending_creatives": null,
+          "require_audit_type": null,
+          "require_seller_audit_status": null
+        }
+      ]
+
       "total_creative_count": 8369,
       "approved_creative_count": 1,
       "banned_creative_count": 8368,

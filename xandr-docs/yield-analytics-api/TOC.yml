@@ -6,8 +6,6 @@
       href: yield-analytics-api.md
     - name: Authentication Service
       href: api-authentication.md
-    - name: Using Postman with the Yield Analytics API
-      href: using-postman-with-the-yield-analytics-api.md
     - name: Breaking Changes
       items:
       - name: Overview

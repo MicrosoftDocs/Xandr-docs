@@ -41,7 +41,6 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 https://api.appnexus.com/imf/
 ```
 
-
 ## Endpoint    
 
 ```
@@ -49,7 +48,6 @@ GET /api/v1/rest/reporting/reports
 ```
 
 - **Parameters**
-  
   | HTTP method | Endpoint | Description | 
   |---|---|---|
   | GET | `https://api.appnexus.com/imf/api/v1/rest/reporting/reports` | Retrieves all Yield Analytics saved reports, including report ID, name, description, and report definition. |
@@ -96,4 +94,4 @@ GET /api/v1/rest/reporting/reports
 
 ## Related topic
 
-See [Query Engine Service](query-engine-service.md) to execute a saved report via the API using report id. 
+See [Query Engine Service](query-engine-service.md) to execute a saved report via the API using report ID. 

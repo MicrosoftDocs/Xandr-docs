@@ -42,15 +42,13 @@ Confidentiality is maintained by using Secure Socket Layer based communication t
 https://api.appnexus.com/imf
 ```
 
-
 ## Endpoint    
 
 ```
 GET /api/v1/rest/reporting/reports 
 ```
 
-- **Parameters**
-  
+- **Parameters**  
   | HTTP method | Endpoint | Description | 
   |---|---|---|
   | GET | `https://api.appnexus.com/imf/api/v1/rest/ui/buildinfo` | Retrieves Yield Analytics build and refresh metadata. |

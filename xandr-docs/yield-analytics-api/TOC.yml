@@ -34,3 +34,7 @@
       href: graphql-service.md
     - name: VaryBy Service
       href: varyby-service.md
+    - name: Environment Metadata Service - Build Info
+      href: build-info-service.md
+    - name: Reporting Service - List Reports
+      href: list-report-service.md

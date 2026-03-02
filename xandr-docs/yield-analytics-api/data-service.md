@@ -346,4 +346,4 @@ A JSON object to hold the request for ConsumptionFilters.
 
 ## Related topic
 
-[Yield Analytics API](yield-analytics-api.md)
+- [Yield Analytics API](yield-analytics-api.md)

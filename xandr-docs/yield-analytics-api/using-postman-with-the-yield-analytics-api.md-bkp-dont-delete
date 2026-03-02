@@ -9,7 +9,7 @@ ms.date: 10/28/2023
 # Using Postman with the Yield Analytics API
 
 ## Overview
-
+<!--
 The goal of this tutorial is to take a new Postman install and walk away with a template for every API call available in the public Yield Analytics API. This will prove a basis by API calls can be tailored to specific clients data without the need to repeatedly build out the boilerplate parameter of an API call. By the end of the tutorial you should have a solid base for interacting with the API via:
 
 - A Template for every API Call in the Yield Analytics Public API
@@ -83,3 +83,4 @@ The goal of this tutorial is to take a new Postman install and walk away with a 
 Postman provides a quick and easy way to convert these HTTPS API calls into other formats. Simply click on the "Code" link on the right hand side of your active API call and then select the conversion you want as depicted in the following image:
 
 :::image type="content" source="media/postman-convert-to-curl.png" alt-text="A screenshot that shows how to convert a http call to a cURL command on Postman.":::
+-->

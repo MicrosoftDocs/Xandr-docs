@@ -6,8 +6,6 @@
       href: yield-analytics-api.md
     - name: Authentication Service
       href: api-authentication.md
-    - name: Using Postman with the Yield Analytics API
-      href: using-postman-with-the-yield-analytics-api.md
     - name: Breaking Changes
       items:
       - name: Overview
@@ -34,3 +32,7 @@
       href: graphql-service.md
     - name: VaryBy Service
       href: varyby-service.md
+    - name: Environment Metadata Service - Build Info
+      href: build-info-service.md
+    - name: Reporting Service - List Reports
+      href: list-report-service.md

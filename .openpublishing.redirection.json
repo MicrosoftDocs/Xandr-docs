@@ -319,6 +319,11 @@
         "source_path": "xandr-docs/monetize/working-with-campaigns.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/about-monetize",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/yield-analytics-api/using-postman-with-the-yield-analytics-api.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/yield-analytics-api/yield-analytics-api",
+        "redirect_document_id": false
         }
       ]
     }

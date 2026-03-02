@@ -18,10 +18,6 @@ landingContent:
         links:
           - text: Overview
             url: yield-analytics-api.md  
-      - linkListType: tutorial
-        links:
-          - text: Using Postman with Yield Analytics API
-            url: using-postman-with-the-yield-analytics-api.md 
   - title: API Reference Documentation
     linkLists:
       - linkListType: reference

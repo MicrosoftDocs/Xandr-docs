@@ -1,7 +1,7 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 2/19/2026
+ms.date: 3/2/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -9,6 +9,11 @@ ms.author: shsrinivasan
 
 # Android SDK release notes
 
+## 9.11.1 
+### Improvement/Bug Fixes
+
++ 10434704: Roll back OMSDK to v1.4.9 to fix R8 minification issue.
+  
 ## 9.11.0
 
 

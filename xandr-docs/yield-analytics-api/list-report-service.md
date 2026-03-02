@@ -96,4 +96,4 @@ GET /api/v1/rest/reporting/reports
 
 ## Related topic
 
-See [Query Engine documentation](query-engine.md) to execute a saved report via the API using report id. 
+See [Query Engine Service](query-engine-service.md) to execute a saved report via the API using report id. 

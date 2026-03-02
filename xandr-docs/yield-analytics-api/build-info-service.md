@@ -49,6 +49,7 @@ GET /api/v1/rest/reporting/reports
 ```
 
 - **Parameters**  
+
   | HTTP method | Endpoint | Description | 
   |---|---|---|
   | GET | `https://api.appnexus.com/imf/api/v1/rest/ui/buildinfo` | Retrieves Yield Analytics build and refresh metadata. |

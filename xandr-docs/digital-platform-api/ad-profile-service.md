@@ -78,6 +78,67 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 | `last_modified` | timestamp | **Read Only.** The timestamp of last modification to this ad profile. |
 | `require_seller_audit_default` | boolean | Whether or not seller audit is required.<br>**Default:** false |
 
+### Ad servers
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the ad server. You can use the [Ad Server Service](ad-server-service.md) to retrieve ad server IDs. |
+| `status` | enum | Whether the ad server can or cannot run creatives on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
+
+### Bidders
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | **Required**. The ID of the bidder. |
+| `status` | string | **Required**. Whether the bidder can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this bidder's creatives may serve.<br> - `"case-by-case"`: This bidder's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this bidder's creatives are allowed to serve. |
+| `require_audit_type` | string | The type of audit you will require in order to serve creatives from this bidder. Allowed values:<br> - `"platform"`: Creatives must have undergone Microsoft Advertising platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the bidder, or undergone Microsoft Advertising audit. |
+| `require_seller_audit_status` | string | Whether the bidder can require its own audit for creatives from a given buyer:<br> - `"always"`: This bidder can always require audit for creatives from a given buyer.<br> - `"never"`: This bidder can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
+| `block_unaudited_creatives` | boolean | If `true`, the platform will block all unaudited creatives from running on your publishers' pages. |
+| `allow_pending_creatives` | boolean | If `true`, the platform will allow all pending creatives from audit to run on your publishers' pages. |
+
+### Brands
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | int | The ID of the brand. You can use the [Brand Service](brand-service.md) to retrieve brand IDs. |
+| `status` | enum | Whether creatives of this brand can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`.<br><br>**Note:** If a brand is marked as Eligible, creatives associated with this brand will serve even if the brand's category is Banned. For example, if you mark the brand "1 and 1 Internet (17310)" as Eligible it will serve even if you ban its overall category, "Telecommunications (27)". |
+| `parent_brand_id` | int | When a brand has a parent brand, the default value is set to `null`.  |
+
+### Categories
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the category. You can use the [Category Service](category-service.md) to retrieve category IDs. |
+| `status` | enum | Whether creatives with this category can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
+
+
+### Creatives
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the creative. You can use the [Creative Service](creative-service.md) to retrieve creative IDs. |
+| `approved` | boolean | If `true`, the creative can run on your publishers' pages. |
+
+### Frequency caps
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | **Read Only.** The ID of the frequency cap definition. |
+| `member_id` | int | **Read Only.** The ID of the member that owns the ad profile. |
+| `max_session_imps` | int | The maximum number of impressions per person per session for creatives with the specified `technical_attributes` or `categories`. If set, this value must be between `0` and `255`. |
+| `max_day_imps` | int | The maximum number of impressions per person per day for creatives with the specified `technical_attributes` or `categories`. If set, this value must be between `0` and `255`. |
+| `min_minutes_per_imp` | int | The minimum number of minutes between impressions per user for creatives with the specified `technical_attributes` or `categories`. |
+| `cap_users_without_cookie` | boolean | If `true`, users without cookies will never be shown creatives with the specified `technical_attributes` or `categories`. They will be treated as if they've reached the frequency cap.<br>If `false`, no frequency cap for the specific `technical_attributes` or `categories` will apply to users without cookies. It will be possible for them to see an unlimited number of creatives with the specified `technical_attributes` or `categories`. |
+| `technical_attributes` | array | The IDs of the technical attributes that you are limiting. You can use the [Technical Attribute Service](technical-attribute-service.md) to get a complete list of technical attributes. The `technical_attributes` and `categories` fields have an OR-relationship. |
+| `categories` | array | The IDs of the categories that you are limiting. You can use the [Category Service](category-service.md) to get a complete list of categories. The `technical_attributes` and `categories` fields have an OR-relationship. |
+
+### Languages
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the language. You can use the [Language Service](language-service.md) to retrieve language IDs. |
+| `status` | enum | Whether creatives of this language can or cannot run creatives on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
+
 ### Members
 
 | Field | Type | Description |
@@ -99,73 +160,6 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 > | `trusted` | `platform` | `true` | High |
 > | `trusted` | `platform` | `false` | Maximum |
 
-### Brands
-
-| Field | Type | Description |
-|---|---|---|
-| `id` | int | The ID of the brand. You can use the [Brand Service](brand-service.md) to retrieve brand IDs. |
-| `status` | enum | Whether creatives of this brand can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`.<br><br>**Note:** If a brand is marked as Eligible, creatives associated with this brand will serve even if the brand's category is Banned. For example, if you mark the brand "1 and 1 Internet (17310)" as Eligible it will serve even if you ban its overall category, "Telecommunications (27)". |
-| `parent_brand_id` | int | When a brand has a parent brand, the default value is set to `null`.  |
-
-### Creatives
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | The ID of the creative. You can use the [Creative Service](creative-service.md) to retrieve creative IDs. |
-| `approved` | boolean | If `true`, the creative can run on your publishers' pages. |
-
-### Languages
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | The ID of the language. You can use the [Language Service](language-service.md) to retrieve language IDs. |
-| `status` | enum | Whether creatives of this language can or cannot run creatives on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
-
-### Ad servers
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | The ID of the ad server. You can use the [Ad Server Service](ad-server-service.md) to retrieve ad server IDs. |
-| `status` | enum | Whether the ad server can or cannot run creatives on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
-
-### Categories
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | The ID of the category. You can use the [Category Service](category-service.md) to retrieve category IDs. |
-| `status` | enum | Whether creatives with this category can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
-
-### Technical attributes
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | The ID of the technical attribute. You can use the [Technical Attribute Service](technical-attribute-service.md) to retrieve technical attribute IDs. |
-| `status` | enum | Whether creatives with this technical attribute can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
-
-### Frequency caps
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | **Read Only.** The ID of the frequency cap definition. |
-| `member_id` | int | **Read Only.** The ID of the member that owns the ad profile. |
-| `max_session_imps` | int | The maximum number of impressions per person per session for creatives with the specified `technical_attributes` or `categories`. If set, this value must be between `0` and `255`. |
-| `max_day_imps` | int | The maximum number of impressions per person per day for creatives with the specified `technical_attributes` or `categories`. If set, this value must be between `0` and `255`. |
-| `min_minutes_per_imp` | int | The minimum number of minutes between impressions per user for creatives with the specified `technical_attributes` or `categories`. |
-| `cap_users_without_cookie` | boolean | If `true`, users without cookies will never be shown creatives with the specified `technical_attributes` or `categories`. They will be treated as if they've reached the frequency cap.<br>If `false`, no frequency cap for the specific `technical_attributes` or `categories` will apply to users without cookies. It will be possible for them to see an unlimited number of creatives with the specified `technical_attributes` or `categories`. |
-| `technical_attributes` | array | The IDs of the technical attributes that you are limiting. You can use the [Technical Attribute Service](technical-attribute-service.md) to get a complete list of technical attributes. The `technical_attributes` and `categories` fields have an OR-relationship. |
-| `categories` | array | The IDs of the categories that you are limiting. You can use the [Category Service](category-service.md) to get a complete list of categories. The `technical_attributes` and `categories` fields have an OR-relationship. |
-
-### Bidders
-
-| Field | Type | Description |
-|:---|:---|:---|
-| `id` | int | **Required**. The ID of the bidder. |
-| `status` | string | **Required**. Whether the bidder can or cannot run creatives on your publishers' pages. Allowed values:<br> - `"trusted"`: Any of this bidder's creatives may serve.<br> - `"case-by-case"`: This bidder's creatives must pass all brand, language, technical attribute, category, and ad server filtering defined on the ad profile.<br> - `"banned"`: None of this bidder's creatives are allowed to serve. |
-| `require_audit_type` | string | The type of audit you will require in order to serve creatives from this bidder. Allowed values:<br> - `"platform"`: Creatives must have undergone Microsoft Advertising platform audit.<br> - `"platform_or_self"`: Creatives must have been self-audited by the bidder, or undergone Microsoft Advertising audit. |
-| `require_seller_audit_status` | string | Whether the bidder can require its own audit for creatives from a given buyer:<br> - `"always"`: This bidder can always require audit for creatives from a given buyer.<br> - `"never"`: This bidder can never require audit for creatives from a given buyer.<br> - `"case-by-case"`: Fall back to `ad_profile.require_seller_audit_default` for audit required status. |
-| `block_unaudited_creatives` | boolean | If `true`, the platform will block all unaudited creatives from running on your publishers' pages. |
-| `allow_pending_creatives` | boolean | If `true`, the platform will allow all pending creatives from audit to run on your publishers' pages. |
-
 ### Seats
 
 | Field | Type | Description |
@@ -178,7 +172,12 @@ Ad profiles consist of several elements: members, brands, creatives, language, t
 | `block_unaudited_creatives` | boolean | If `true`, the platform will block all unaudited creatives from running on your publishers' pages. |
 | `allow_pending_creatives` | boolean | If `true`, the platform will allow all pending creatives from audit to run on your publishers' pages. |
 
+### Technical attributes
 
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | int | The ID of the technical attribute. You can use the [Technical Attribute Service](technical-attribute-service.md) to retrieve technical attribute IDs. |
+| `status` | enum | Whether creatives with this technical attribute can or cannot run on your publishers' pages. Possible values: `"trusted"` or `"banned"`. |
 
 ## Examples
 

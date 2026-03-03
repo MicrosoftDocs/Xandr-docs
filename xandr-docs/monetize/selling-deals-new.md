@@ -67,7 +67,7 @@ Define commercial terms with the buyer:
 - Volume expectations  
 - Auction mechanics  
 
-➡ See: **Negotiate Deals with Buyers**
+➡ See: [Negotiate Deals with Buyers](negotiate-deals-with-buyers.md)
 
 ---
 

@@ -161,7 +161,7 @@ Additional resources on demand partners:
 | Filmzie    | filmzie    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Finative   | finative   | Yes              | **App**: No <br>**Site**: Yes  | **App**: No <br>**Site**: No   | **App**: No <br>**Site**: Yes  |
 | flatads    | flatads    | Yes              | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
-| Freewheel-SSP    | freewheel-ssp    | Yes              | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| Freewheel-SSP    | freewheel-ssp    | Yes              | **App**: No <br>**Site**: No | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | FWSSP      | fwssp      | Yes              | **App**: No <br>**Site**: No   | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No   |
 | Gamma | gamma | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No |
 | Gamoshi | gamoshi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |

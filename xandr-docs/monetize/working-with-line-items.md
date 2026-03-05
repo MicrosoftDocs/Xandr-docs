@@ -11,7 +11,9 @@ ms.author: shsrinivasan
 
 A line item defines your financial agreement with an advertiser, including how much the advertiser has allocated for you to spend (budget), the basis on which the advertiser has agreed to pay you (revenue type), and performance requirements the advertiser expects you to meet (performance goals). You can manage line items in the **Seller Monitoring Workflow (SMW) Line Items**.
 
-<!-- - [Create a Standard Line Item](create-a-standard-line-item.md) - Set up a standard line item in Microsoft Monetize. -->
+<!-- 
+
+<!-- - [Create a Standard Line Item](create-a-standard-line-item.md) - Set up a standard line item in Microsoft Monetize. 
 - [Augmented Line Items (ALI)](augmented-line-items-ali.md) - Augmented line item overview.
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) - Set up an augmented line item in Microsoft Monetize.
 - [Explore Line Items](explore-line-items.md) - View essential metrics about all line items under a specific advertiser, find out about conditions preventing line items from serving, get quick access to each line item's details and child
@@ -25,3 +27,5 @@ A line item defines your financial agreement with an advertiser, including how m
   item and fine-tune performance goal settings to ensure your campaigns are succeeding.
 - [Improve Performance with Visual Succes](improve-performance-with-visual-success.md) - View Visual
   Success data for line items and use it to troubleshoot. -->
+
+ 

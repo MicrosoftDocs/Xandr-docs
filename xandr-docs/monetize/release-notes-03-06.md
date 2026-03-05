@@ -58,3 +58,8 @@ This allows you to quickly identify deals that are:
 - Awaiting buyer acceptance
 - Experiencing synchronization issues
 - Actively targeted by buyers
+
+## Related topics
+
+- [Explore and manage deals](explore-and-manage-deals.md)
+- [View deal details](view-deal-details.md)

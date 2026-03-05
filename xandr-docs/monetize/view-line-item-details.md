@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - View Line Item Details
 description: Explore Line Item Details for insights—settings, metrics, visualizations. Swiftly access child campaigns' performance.
-ms.date: 10/21/2025
+ms.date: 5/3/2025
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -9,7 +9,205 @@ ms.author: shsrinivasan
 
 # Microsoft Monetize - View Line Item Details
 
-Navigate to **Advertisers > Line Items** from the vertical navigation menu on the left. The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
+The **Line Item details** page provides a consolidated view of a line item's configuration, delivery settings, targeting rules, and associated resources. This page allows you to review the current configuration of a line item and navigate to related components such as creatives, segments, and pixels.
+
+## Access line item details
+
+To view the details of a line item:
+
+1. In the left navigation menu, select **Line Items**.
+2. Locate the line item in the grid.
+3. Select the **line item name**.
+
+The line item's detail page opens and displays its configuration.
+
+---
+
+## Page layout
+
+The line item details page contains the following main sections:
+
+- **Header information**
+- **Settings tab**
+- **History tab**
+- **Associated resources menu**
+
+---
+
+## Header information
+
+At the top of the page, the header displays key identifiers and status information for the line item.
+
+
+::contentReference[oaicite:0]{index=0}
+
+
+The header includes:
+
+- **Advertiser** – The advertiser associated with the line item.
+- **Insertion Order** – The parent insertion order.
+- **Line Item Name and ID** – The unique identifier for the line item.
+- **Status** – Indicates whether the line item is active or inactive.
+- **Delete** – Deletes the line item.
+
+---
+
+## Settings tab
+
+The **Settings** tab displays the current configuration of the line item, organized into several sections.
+
+### Details
+
+The **Details** section provides basic information about the line item.
+
+| Field | Description |
+|------|-------------|
+| **Line Name** | The name of the line item. |
+| **Type** | The line item type (for example, Standard). |
+| **Ad Type** | The ad format used by the line item. |
+
+---
+
+### Budgeting and Scheduling
+
+The **Budgeting and Scheduling** section defines the line item's delivery budget and flight schedule.
+
+| Field | Description |
+|------|-------------|
+| **Budget Type** | The budget configuration applied to the line item. |
+| **Payment Model** | The pricing model used for delivery (for example, CPM). |
+| **Revenue** | The revenue associated with the line item. |
+| **Budget** | The total budget allocated to the line item. |
+| **Current Flights** | The active delivery time period for the line item. |
+| **Underspend Catch-Up** | Determines how the system compensates for underdelivery. |
+| **Daily Pacing Allocation** | Defines how delivery is paced throughout the day. |
+
+---
+
+### Insertion Order Summary
+
+The **Insertion Order Summary** section displays information inherited from the parent insertion order.
+
+| Field | Description |
+|------|-------------|
+| **Name** | The name of the insertion order. |
+| **State** | The status of the insertion order. |
+| **Currency** | The currency used for the insertion order. |
+| **Budget Type** | The budget type configured at the insertion order level. |
+| **Total Lifetime** | The total lifetime budget for the insertion order. |
+| **Pacing** | The pacing strategy applied to the insertion order. |
+| **Billing Periods** | The billing periods defined for the insertion order. |
+| **Budget** | The budget allocated for the billing period. |
+
+---
+
+### Optimization
+
+The **Optimization** section controls delivery optimization settings.
+
+| Field | Description |
+|------|-------------|
+| **Optimization Method** | Defines the optimization strategy used for delivery. |
+| **Goal Priority** | Specifies the priority of delivery goals. |
+| **Conversion Pixel** | Indicates whether conversion tracking is associated with the line item. |
+
+---
+
+### Key Value Targeting
+
+The **Key Value Targeting** section displays any custom key-value targeting rules applied to the line item.
+
+These rules determine which inventory matches the targeting criteria.
+
+---
+
+### Creative Rotation
+
+The **Creative Rotation** section defines how creatives rotate during delivery.
+
+| Field | Description |
+|------|-------------|
+| **Creative Rotation** | Specifies the creative rotation strategy (for example, Even). |
+| **Associated Creatives** | Displays creatives assigned to the line item. |
+
+---
+
+### Fees
+
+The **Fees** section lists any fees associated with the line item.
+
+| Field | Description |
+|------|-------------|
+| **Associated Fees** | Displays fees applied to the line item. |
+
+---
+
+### Inventory & Environment Targeting
+
+This section defines where the line item is eligible to deliver.
+
+| Field | Description |
+|------|-------------|
+| **Geography** | Targeted geographic locations. |
+| **Device Type** | Devices eligible for delivery. |
+| **Inventory Type** | The type of inventory targeted (for example, app or web). |
+| **Inventory** | Specific inventory sources targeted. |
+| **System** | System-level targeting conditions. |
+| **Page Properties** | Additional page-level targeting rules. |
+
+---
+
+### Audience Targeting
+
+The **Audience Targeting** section defines audience-based delivery rules.
+
+| Field | Description |
+|------|-------------|
+| **Audience and Location Segments** | Target audience segments. |
+| **Anonymous Reach Expansion** | Determines whether delivery can expand beyond selected segments. |
+
+---
+
+### Reporting Labels and Comments
+
+This section allows you to add reporting metadata.
+
+| Field | Description |
+|------|-------------|
+| **Reporting Labels** | Custom labels used for reporting and organization. |
+| **Comments** | Internal comments associated with the line item. |
+
+---
+
+## Associated resources
+
+The **Associated resources menu** provides quick access to related components used by the line item.
+
+Available options include:
+
+- **Creatives**
+- **Inventory Lists**
+- **Conversion Pixels**
+- **Segments**
+- **3rd Party Pixels**
+
+Selecting one of these options opens the corresponding management interface.
+
+---
+
+## History tab
+
+The **History** tab provides an audit log of all changes made to the line item.
+
+The history log includes:
+
+- Timestamp of each change
+- User who made the change
+- Fields modified
+- Previous and updated values
+
+This allows administrators to track configuration updates and troubleshoot delivery issues.
+<!-- Navigate to **Advertisers > Line Items** from the vertical navigation menu on the left. The **Line Item Details** screen shows you the settings and essential metrics for a specific line item, informs you of conditions preventing the line item from serving, provides visualizations of the line item's performance and delivery, offers quick access to the line item's child campaigns, and more.
 
 ## Getting to the Line Item Details pane
 
@@ -31,7 +229,7 @@ With Visual Success, you can:
 Visual Success features appear at the top of the **Line Item Details** screen. The metrics sections and graphs show important information about the line item's flight, delivery, performance and margin.
 
 For more information, see [Improve Performance with Visual Success](improve-performance-with-visual-success.md).
--->
+
 ## Viewing line item settings
 
 Click on any of the Line item to open the **Settings**  section on the right pane that shows the basic details, frequency caps, reporting labels, commissions, associated insertion orders (when relevant), and dynamic landing page URL, as well as inventory, geography, and system targeting (if set).
@@ -122,4 +320,4 @@ To view child object details:
 ## Related topics
 
 - [Explore Line Items](explore-line-items.md)
-- [Create a Standard Line Item](create-a-standard-line-item.md)
+- [Create a Standard Line Item](create-a-standard-line-item.md) -->

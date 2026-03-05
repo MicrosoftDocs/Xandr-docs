@@ -193,6 +193,9 @@ To create a new line item:
 
 For detailed instructions, see **Create a line item**.
 
+## Related Topics
+- [Create an augmented line item](create-an-augmented-line-item-ali.md)
+
 <!-- 
 
 <!-- - [Create a Standard Line Item](create-a-standard-line-item.md) - Set up a standard line item in Microsoft Monetize. 

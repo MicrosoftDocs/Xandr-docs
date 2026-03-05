@@ -309,8 +309,6 @@
     items:
     - name: Working with Line Items
       href: working-with-line-items.md
-    - name: Explore Line Items
-      href: explore-line-items.md
     - name: Augmented Line Items (ALI)
       href: augmented-line-items-ali.md
     - name: Creating an Augmented Line Item

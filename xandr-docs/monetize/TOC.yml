@@ -309,6 +309,8 @@
     items:
     - name: Working with Line Items
       href: working-with-line-items.md
+    - name: View Line Item Details
+      href: view-line-item-details.md
     - name: Augmented Line Items (ALI)
       items:
       - name: Overview
@@ -386,8 +388,7 @@
     
     - name: Standard Line Item
       href: create-a-standard-line-item.md
-    - name: View Line Item Details
-      href: view-line-item-details.md
+   
     - name: Update Line Items
       href: update-line-items.md
     - name: Viewing Visual Success Data

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Work with Line Items
 description: Explore advertiser agreements, defining line item, budget, revenue type, and goals. Utilize campaigns for precise spending fulfillment.
-ms.date: 10/21/2025
+ms.date: 03/05/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan

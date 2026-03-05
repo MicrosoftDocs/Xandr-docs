@@ -1730,7 +1730,9 @@
 - name: Release Notes
   items:
   - name: Overview
-    href: release-notes.md
+    href: release-notes.md 
+  - name: March 6, 2026 - Deal sync status visibility and filtering
+    href: release-notes-03-06.md
   - name: January 21, 2026 - DV360 Central Partner ID Support for Multi-Buyer Deals
     href: release-notes-2026-01-21.md
   - name: January 14, 2026 - Deal Sync Status available in the new Deal screen

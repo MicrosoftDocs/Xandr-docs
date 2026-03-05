@@ -310,9 +310,9 @@
     - name: Working with Line Items
       href: working-with-line-items.md
     - name: Augmented Line Items (ALI)
-      href: augmented-line-items-ali.md
-    - name: Creating an Augmented Line Item
       items:
+      - name: Overview
+        href: augmented-line-items-ali.md
       - name: Create an Augmented Line Item
         href: create-an-augmented-line-item-ali.md
       - name: Navigate to the Create New Line Item Screen
@@ -384,20 +384,23 @@
       - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
         href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
     
-    - name: Create a Standard Line Item
+    - name: Standard Line Item
       href: create-a-standard-line-item.md
+    - name: View Line Item Details
+      href: view-line-item-details.md
     - name: Update Line Items
       href: update-line-items.md
     - name: Viewing Visual Success Data
       href: viewing-visual-success-data.md
-    - name: View Line Item Details
-      href: view-line-item-details.md
-    - name: Add a Performance Goal to a Line Item
-      href: add-a-performance-goal-to-a-line-item.md
-    - name: Understanding Performance Goals
-      href: understanding-performance-goals.md
-    - name: Using Performance Goals with CPM Booked Revenue
-      href: using-performance-goals-with-cpm-booked-revenue.md
+   
+    - name: Performance Goal
+      items:
+      - name: Add a Performance Goal to a Line Item
+        href: add-a-performance-goal-to-a-line-item.md
+      - name: Understanding Performance Goals
+        href: understanding-performance-goals.md
+      - name: Using Performance Goals with CPM Booked Revenue
+        href: using-performance-goals-with-cpm-booked-revenue.md
     - name: Using Minimum Margin to Balance Margin and Delivery
       href: using-minimum-margin-to-balance-margin-and-delivery.md
     - name: Peer Approval

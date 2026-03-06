@@ -13,6 +13,7 @@ ms.author: rupambaruah
 
 Read about the latest updates to Monetize.
 
+- [March 9, 2026: Seller Monitoring Workflow (SMW) UI modernization now generally available](release-notes-9-march.md)
 - [January 21, 2026: DV360 Central Partner ID Support for Multi-Buyer Deals](release-notes-2026-01-21.md)
 - [January 14, 2026: Deal Sync Status available in the new Deal screen](release-notes-2026-01-14.md)
 - [January 12, 2026: Seller Monitoring Workflow (SMW) UI Modernization (Fluent UI)](release-note-2026-12-01.md)

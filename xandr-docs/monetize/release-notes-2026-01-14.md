@@ -9,8 +9,7 @@ ms.author: rbaruah
 ---
 
 # Deal Sync Status available in the new Deal screen  
-
-**Release date:** January 14, 2026  
+ 
 **Product:** Microsoft Monetize  
 **Area:** Deals  
 

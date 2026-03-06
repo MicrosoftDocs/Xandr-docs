@@ -10,8 +10,6 @@ ms.author: rbaruah
 
 ## Seller Monitoring Workflow (SMW) UI modernization now generally available
 
-## Seller Monitoring Workflow (SMW) UI modernization now generally available
-
 **Release date:** March 9, 2026  
 **Product:** Microsoft Monetize  
 **Area:** Seller Monitoring Workflow (SMW)  
@@ -38,7 +36,7 @@ The Fluent UI experience is now fully available across the **Advertisers**, **In
 |-----|-----|-----|
 | Advertisers | Fluent UI update complete | January 12, 2026 |
 | Insertion Orders | Fluent UI update complete | January 22, 2026 |
-| Line Items | Fluent UI update complete | March 5, 2026 |
+| Line Items | Fluent UI update complete | March 9, 2026 |
 
 ---
 

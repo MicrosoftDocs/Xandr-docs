@@ -8,14 +8,14 @@ ms.subservice: microsoft-monetize
 ms.author: rbaruah
 ---
 
-## Seller Monitoring Workflow (SMW) UI modernization now generally available
+# Seller Monitoring Workflow (SMW) UI modernization now generally available
 
 **Release date:** March 9, 2026  
 **Product:** Microsoft Monetize  
 **Area:** Seller Monitoring Workflow (SMW)  
 **Status:** General Availability (GA)
 
-### Overview
+## Overview
 
 Microsoft Monetize has completed the modernization of the **Seller Monitoring Workflow (SMW)** by migrating the user interface from **anxreact** to **Fluent UI**. This update improves accessibility, aligns Monetize with Microsoft-wide UI standards, and provides a foundation for future product enhancements.
 
@@ -30,7 +30,7 @@ The Fluent UI experience is now fully available across the **Advertisers**, **In
 
 ---
 
-### Availability
+## Availability
 
 | Area | Status | GA Date |
 |-----|-----|-----|
@@ -40,7 +40,7 @@ The Fluent UI experience is now fully available across the **Advertisers**, **In
 
 ---
 
-### What’s new
+## What’s new
 
 The updated SMW experience introduces a modern Fluent UI interface across all workflow screens.
 
@@ -57,7 +57,7 @@ These improvements provide a more consistent and accessible experience across Mi
 
 ---
 
-### What remains unchanged
+## What remains unchanged
 
 The UI update does not change core platform functionality. The following remain unchanged:
 
@@ -69,7 +69,7 @@ Users can continue managing their inventory and delivery without disruption to e
 
 ---
 
-### Known limitations
+## Known limitations
 
 At initial GA, the following limitations may apply:
 

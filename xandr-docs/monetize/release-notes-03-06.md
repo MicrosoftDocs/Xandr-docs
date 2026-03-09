@@ -8,14 +8,14 @@ ms.subservice: microsoft-monetize
 ms.author: rbaruah
 ---
 
-## Deal sync status visibility and filtering
+# Deal sync status visibility and filtering
 
 **Release date:** March 6, 2025  
 **Product:** Microsoft Monetize  
 **Area:** Deals  
 **Status:** General Availability (GA)
 
-### Overview
+## Overview
 
 Microsoft Monetize now provides visibility into **deal synchronization status with DSP buyers**. This update allows users to view the current sync state of a deal directly in the **Deals screen** and track whether buyers have accepted, targeted, or declined the deal.
 
@@ -23,7 +23,7 @@ This feature helps sellers quickly understand whether a deal has successfully sy
 
 ---
 
-### Checking deal sync status
+## Checking deal sync status
 
 You can view a deal’s sync status in the **Deals screen** under the **Buyer** column.
 
@@ -33,7 +33,7 @@ You can view a deal’s sync status in the **Deals screen** under the **Buyer** 
 
 ---
 
-### Sync status labels
+## Sync status labels
 
 The following sync statuses may appear:
 
@@ -49,7 +49,7 @@ The following sync statuses may appear:
 
 ---
 
-### Filtering by sync status
+## Filtering by sync status
 
 You can filter deals based on their sync status using the **Filters** located at the top of the **Deals screen**, next to the search bar.
 

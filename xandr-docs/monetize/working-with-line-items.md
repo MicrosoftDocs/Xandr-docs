@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Work with Line Items
 description: Explore advertiser agreements, defining line item, budget, revenue type, and goals. Utilize campaigns for precise spending fulfillment.
-ms.date: 10/21/2025
+ms.date: 03/05/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -11,7 +11,194 @@ ms.author: shsrinivasan
 
 A line item defines your financial agreement with an advertiser, including how much the advertiser has allocated for you to spend (budget), the basis on which the advertiser has agreed to pay you (revenue type), and performance requirements the advertiser expects you to meet (performance goals). You can manage line items in the **Seller Monitoring Workflow (SMW) Line Items**.
 
-<!-- - [Create a Standard Line Item](create-a-standard-line-item.md) - Set up a standard line item in Microsoft Monetize. -->
+## Explore line items
+
+The **Line Items** screen in Microsoft Monetize allows you to view, search, filter, and manage line items across insertion orders. From this screen, you can quickly identify delivery status, review performance indicators, and navigate to individual line item settings.
+
+## Access the Line Items screen
+
+To access the Line Items screen:
+
+1. In the left navigation menu, select **Line Items**.
+2. The Line Items grid appears displaying all line items associated with the current network.
+
+---
+
+## Line Items grid
+
+The Line Items grid provides an overview of line items and their delivery status.
+
+
+
+
+
+Each row in the grid represents a line item and displays key information such as:
+
+- **Line Name** – The name of the line item.
+- **Line ID** – The unique identifier for the line item.
+- **Type** – The line item type (for example, Standard).
+- **Flight Dates** – The configured start and end dates for the line item.
+- **Last Archived Date** – The date when the line item was last archived.
+- **Last 60 Minutes Delivery** – Indicates whether the line item has delivered impressions in the last 60 minutes.
+
+You can select a line item name to open its configuration and view detailed settings.
+
+---
+
+## Line item status tabs
+
+The top of the page displays tabs that group line items by delivery status:
+
+- **All** – Displays all line items.
+- **Upcoming** – Line items that have not yet started delivering.
+- **In Progress** – Line items that are currently active.
+- **Completed** – Line items whose flight dates have ended.
+
+Each tab also displays the number of line items within that category.
+
+---
+
+## Search line items
+
+Use the **Search** field to quickly locate a specific line item.
+
+You can search using:
+- Line item name
+- Line item ID
+
+Search results update dynamically in the grid.
+
+---
+
+## Quick filters
+
+Quick filters provide predefined filtering options to help you quickly locate specific line items.
+
+
+
+
+
+To use quick filters:
+
+1. Select **Quick Filters**.
+2. Choose one of the available filters.
+
+Quick filters include:
+
+### Bulk filters
+- **Filter Bulk Line Items by Deal ID**
+- **Filter Bulk Line Items by ID**
+
+### Custom filters
+Custom filters saved by users or administrators may also appear in this list.
+
+---
+
+## Advanced filters
+
+Advanced filters allow you to refine the grid using multiple filter conditions.
+
+
+
+
+
+To apply advanced filters:
+
+1. Select **Advanced Filters**.
+2. Select a setting from **Select a Setting**.
+3. Enter the desired filter values.
+4. Select **Apply**.
+
+Available filters include:
+
+| Filter | Description |
+|------|-------------|
+| **Advertiser** | Filter line items by advertiser. |
+| **Insertion Order** | Filter line items by insertion order. |
+| **Line Item Name** | Filter line items by name. |
+| **Deal** | Filter line items associated with a deal. |
+
+Select **Clear All** to remove all applied filters.
+
+---
+
+## Column views
+
+You can customize how the grid is displayed by selecting different column views.
+
+
+
+
+
+To switch column views:
+
+1. Select the **column view dropdown** (for example, *Empty Columns*).
+2. Choose a saved view from the list.
+
+Saved views allow users to quickly switch between different column configurations.
+
+---
+
+## Modify columns
+
+You can customize which columns appear in the grid.
+
+
+
+
+
+To modify columns:
+
+1. Select **Modify Columns**.
+2. Select or deselect the columns you want displayed.
+3. Select **Apply and Save**.
+
+### Available columns
+
+| Column | Description |
+|------|-------------|
+| **Line ID** | The unique ID of the line item. |
+| **Deal Name** | The name of the deal associated with the line item. |
+| **Deal ID** | The unique ID of the associated deal. |
+| **Type** | The type of line item. |
+| **Priority** | The priority assigned to the line item. |
+| **Deal Buyer** | The buyer associated with the deal. |
+| **Flight Dates** | The start and end dates of the line item. |
+| **Last Archived Date** | The date the line item was last archived. |
+| **Issues** | Indicates whether the line item has delivery issues. |
+| **Flight Budget** | The budget allocated for the line item flight. |
+| **Revenue Value** | The total revenue generated by the line item. |
+
+---
+
+## Download reports
+
+You can export line item data for analysis.
+
+To download a report:
+
+1. Select **Download Report**.
+2. Choose the desired format.
+3. The report will be generated and downloaded.
+
+---
+
+## Create a line item
+
+To create a new line item:
+
+1. Select **New**.
+2. Configure the line item settings.
+3. Save your changes.
+
+For detailed instructions, see **Create a line item**.
+
+## Related Topics
+- [Create an augmented line item](create-an-augmented-line-item-ali.md)
+
+<!-- 
+
+<!-- - [Create a Standard Line Item](create-a-standard-line-item.md) - Set up a standard line item in Microsoft Monetize. 
 - [Augmented Line Items (ALI)](augmented-line-items-ali.md) - Augmented line item overview.
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) - Set up an augmented line item in Microsoft Monetize.
 - [Explore Line Items](explore-line-items.md) - View essential metrics about all line items under a specific advertiser, find out about conditions preventing line items from serving, get quick access to each line item's details and child
@@ -25,3 +212,5 @@ A line item defines your financial agreement with an advertiser, including how m
   item and fine-tune performance goal settings to ensure your campaigns are succeeding.
 - [Improve Performance with Visual Succes](improve-performance-with-visual-success.md) - View Visual
   Success data for line items and use it to troubleshoot. -->
+
+ 

@@ -217,8 +217,7 @@ For native impressions, we support the following field, which contains the creat
 |  Field | Type | Description |
 |:---|:---|:---|
 | `request` | string | The rendered creative markup to be delivered; native creatives can be returned in this field as a JSON-encoded string. The first value in the string must be `native`. For examples of native bid requests, see [Request Object](#request-object) below and [Example Bid Requests](#example-bid-requests). |
-| `api` | integer array | List of supported API frameworks for this impression. Refer to List: [API]Frameworks](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--api-frameworks-) in AdCOM 1.0. If an API is not explicitly listed, it is assumed
-not to be supported.|
+| `api` | integer array | List of supported API frameworks for this impression. Refer to List: [API Frameworks](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md#list--api-frameworks-) in AdCOM. If an API is not explicitly listed, it is assumed not to be supported.|
 
 ### Request object
 

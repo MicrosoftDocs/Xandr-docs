@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Mobile Ad Call Reference
 description: This document describes our mobile ad calls, the `/ssmob` and `/mob` calls, which are used to request ads for mobile apps. These calls include information about the client device as query string parameters.
-ms.date: 10/21/2025
+ms.date: 3/11/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -141,9 +141,23 @@ $ curl "https://mobile.adnxs.com/mob?id=1281482&idfa=610B91D7-8F0D-423A-A98E-333
 
 ## Native Ads
 
-> [!NOTE]
-> Native ads are not available from the `/ssmob` endpoint.
+### Request
 
+```
+$ curl "https://ib.adnxs.com/ssmob?member_id=958&id=37264632&psa=0&cb=1641930961049&ip=77.12.28.48&format=json&native=1"
+```
+**Example Request URL**
+
+```
+https://ib.adnxs.com/ssmob
+  ?member_id=958
+  &id=37264632
+  &psa=0
+  &cb=1641930961049
+  &ip=77.12.28.48
+  &format=json
+  &native=1
+```
 ### Empty response
 
 ``` 

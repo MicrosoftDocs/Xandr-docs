@@ -73,11 +73,11 @@ Check the boxes for all the placements you want to move to another new placement
 ## Delete the old placement group
 
 > [!WARNING]
-> If you plan to delete a placement group but do not want to delete the placements associated to it, you must first move its placements to another placement group. Otherwise the placements will be deleted along with it. -->
+> If you plan to delete a placement group but do not want to delete the placements associated to it, you must first move its placements to another placement group. Otherwise the placements will be deleted along with it. 
 
-Check the checkbox for the placement group you want to delete and then select **More Actions** \> **Delete**. A confirmation dialog shows you the placement groups that you have selected for deletion. Click **Confirm** to finalize the deletion.
+Check the checkbox for the placement group you want to delete and then select **More Actions** \> **Delete**. A confirmation dialog shows you the placement groups that you have selected for deletion. Click **Confirm** to finalize the deletion. -->
 
 ## Related topics
 
-- [Working with Placement Groups](working-with-placement-groups.md)
+
 - [Create a Placement Group](create-a-placement-group.md)

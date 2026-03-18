@@ -1,7 +1,7 @@
 ---
 title: Deal Service
 description: Use the deal service to let buyers, sellers, and external bidders set up and manage negotiated deals.
-ms.date: 2/18/2026
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -246,7 +246,11 @@ Each `allowed_media_types` object contains the following fields:
 
 ### Allowed media subtypes
 
-You can use this array to limit the media subtype, the specific display style of creatives, that can serve on placements that are part of this deal.
+You can use this array to limit the media subtype, the specific display style of creatives, that can serve on placements that are part of this deal. If specified, the deal participates only in auctions where the selected media subtype is available.
+
+Some auctions support multiple media types and subtypes. If the specified media subtype is supported in the auction, the deal is eligible to participate.
+
+You can create a deal via the API without setting `allowed_media_types` and by specifying only `allowed_media_subtypes`. In this case, the deal participates in auctions that support the specified media subtype.
 
 Each `allowed_media_subtypes` object contains the following fields:
 

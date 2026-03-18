@@ -52,7 +52,7 @@ Indicates whether the **SCHAIN object** in the ad request is marked as complete.
 
 Indicates whether a **Global Placement ID (GPID)** was present on the impression.
 
-> **Note**
+> [!Note]
 > This field is a reporting-only characteristic and does not affect the GPID value used at auction time.
 >
 > The field is supported for **Impressions metrics only**. Because some ad requests do not result in a transacted impression, those requests are not GPID-reportable. As a result, using this field together with **Ad Request** or **Response** metrics may not accurately reflect GPID coverage and is not recommended.

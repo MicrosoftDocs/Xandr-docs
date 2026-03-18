@@ -10,9 +10,9 @@ ms.author: rupambaruah
 
 # Historical Reporting adds new supply chain and GPID fields
 
-**Release date:** March 20, 2026
-**Product:** Microsoft Monetize
-**Area:** Historical Reporting
+**Release date:** March 20, 2026<br>
+**Product:** Microsoft Monetize<br>
+**Area:** Historical Reporting<br>
 **Status:** General Availability (GA)
 
 ## Overview

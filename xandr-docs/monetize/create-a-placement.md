@@ -40,6 +40,8 @@ Enter a **Name** for the placement and review the following optional fields:
     > [!NOTE]
     > If an inactive placement is used, the impression will be blank, and Microsoft Advertising won’t redirect it.
 
+- **Global Placement ID (GPID)**: Enter the **Global Placement ID** value for this placement. The **Global Placement ID (GPID)** is a publisher-defined identifier that represents a specific ad placement on a page. This field is optional. The same GPID value can be used across multiple placements. The GPID value is passed to bidders in the bid request. If a GPID value is also provided in the ad request, the value in the ad request overrides the value configured here.
+We recommend specifying the GPID either in the impression request or in this field, but not both.
 - Enable **Rewarded Content** if the user receives a reward (such as in-app currency or in-game powerups) after viewing an ad.
 
 > [!NOTE]

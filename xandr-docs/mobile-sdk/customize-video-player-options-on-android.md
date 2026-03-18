@@ -2,7 +2,7 @@
 title: Customize Video Player Options on Android
 description: In this article, find information about the video player controls that you can customize on Android devices.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -29,6 +29,7 @@ ms.author: shsrinivasan
 | `void setSkipDescription` (**String** `skipDescription`) | "Skip in %%TIME%%s" | Customizes Skip Description. | Instream / Interstitial |
 | `void setSkipLabelName` (**String** `skipLabelName`) | "Skip ad" | Customizes Skip Label. | Instream / Interstitial |
 | `void setSkipOffset` (**Integer** `skipOffset`) | "5 seconds" | Customizes Skip Offset.| Instream / Interstitial |
+| `void shouldForceControlBarVisible` (**boolean** `forceControlBarVisible`)| true | When set to `true`, the video control bar (play/pause, seek, volume, and other controls) remains permanently visible, regardless of user interaction. When set to `false`, the player uses the auto-hide behavior, where the control bar hides after a period of inactivity.| Instream / Banner Video / Interstitial |
 
 ## Example
 
@@ -70,6 +71,10 @@ ANVideoPlayerSettings.getVideoPlayerSettings().setSkipLabelName("Test");
  
 // Configure the skip offset on the video player
 ANVideoPlayerSettings.getVideoPlayerSettings().setSkipOffset(2);
+
+// Show or hide the control bar permanently (default is true to always show). If set to false, the player will auto-hide the control bar after inactivity.
+ANVideoPlayerSettings.getVideoPlayerSettings().shouldForceControlBarVisible(false);
+
 ```
 
 ### [Kotlin](#tab/kotlin1)
@@ -93,6 +98,9 @@ ANVideoPlayerSettings.getVideoPlayerSettings().adText = "Video Ad"
  
 // Show or hide the volume control on the player
 ANVideoPlayerSettings.getVideoPlayerSettings().shouldShowVolumeControl(true)
+
+// Show or hide the control bar permanently (default is true to always show). If set to false, the player will auto-hide the control bar after inactivity.
+ANVideoPlayerSettings.getVideoPlayerSettings().shouldForceControlBarVisible(false)
  
 // Decide how the ad video sound starts initially (sound on or off). By default, Instream Video will have sound enabled, while Banner Video will have sound disabled
 ANVideoPlayerSettings.getVideoPlayerSettings().initialAudio = ANInitialAudioSetting.DEFAULT

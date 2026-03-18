@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API  - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights in Digital Platform API.
-ms.date: 12/7/2025
+ms.date: 03/18/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -15,7 +15,7 @@ ms.author: shsrinivasan
 Historical report is the primary analytics report in Microsoft Monetize, offering comprehensive data across a wide range of dimensions and metrics. It consolidates more than ten legacy report types, including [Network Analytics](network-analytics.md), [Seller Brand Review](seller-brand-review-report.md), and [Seller Fill and Delivery](seller-fill-and-delivery-network-report.md). It reduces the number of report types a user needs to interact with, providing features to improve usability such as categorization of `dimensions` and `metrics` and comprehensive search capabilities. <br> <br> Historical report is built from two datasets accessible through a single interface, with `dimension` and `metric` incompatibilities surfaced during selection. The expanded range of options provides a more detailed view of data across multiple aspects of delivery and inventory, with additional reportable dimension combinations, such as placement and device. The Historical report includes most of the data available in the legacy reporting system. 
 
 > [!NOTE]
-> This report is GA and includes data starting from `October 10, 2024`. Planned updates will extend its functionality to align with the Network Analytics, Seller Fill and Delivery, and Video Analytics reports. Additional dimensions, metrics, and adjustment data will be introduced in future updates.
+> This report is GA and includes data starting from `October 10, 2024`. Planned updates will extend its functionality to align with the Network Analytics, Seller Fill and Delivery, and Video Analytics reports. Additional , metrics, and adjustment data will be introduced in future updates.
 
 ## Timing of Report Events
 
@@ -449,6 +449,12 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `month` | date  | No | The month of the auction|
 | `filtered_request_reason` | string| No | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
 | `filtered_request_reason_id` | int| No | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
+| `supply_chain_node_count` | Int | Y | The number of nodes in the Ad Request SCHAIN. |
+| `supply_chain_is_complete` | String | Y | Indicates whether the SCHAIN is marked as complete on the Ad Request. |
+| `is_gpid_present` | String | Y | Indicates whether a Global Placement ID (GPID) was present on the impression.<br>> [!NOTE]
+> This field is a reporting-only characteristic and does not affect the value of GPID at auction time. It is supported for **Impressions** metrics only. A subset of ad requests that do not result in a transacted impression are not GPID-reportable. As a result, using this field together with **Ad Request** or **Response** metrics may not accurately reflect true GPID coverage and is not recommended. |
+
+
 
 ### Metrics
 

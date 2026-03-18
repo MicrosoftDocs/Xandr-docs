@@ -1,13 +1,122 @@
 ---
 title: Update a Placement
 description: This page provides an overview to update a placement. Learn to edit, delete, duplicate, and move placements in this page. 
-ms.date: 10/21/2025
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 
+# Update a placement
 
+You can update placements to modify placement settings, move placements between placement groups, duplicate placements, or delete placements that are no longer needed.
+
+Placements are managed from **Inventory Manager**, where you can view placement groups and their associated placements.
+
+---
+
+# Edit a placement
+
+You can edit a placement using the **Placement Details** pane.
+
+To edit a placement:
+
+1. Navigate to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Switch to **Tree view** using the top-right table header to see **Placement Groups** and their associated **Placements**.
+4. Expand the placement group that contains the placement you want to edit.
+5. Click the placement row to select and highlight it.
+
+The **Placement Details** pane appears.
+
+You can edit a placement by clicking the placement row to select and highlight it, then clicking either the **Edit** or **Edit Inline** button in the **Placement Details** pane that appears.
+
+* **Edit** opens the full placement editor where you can modify all placement settings.
+* **Edit Inline** allows you to update selected placement fields directly in the Placement Details pane.
+
+After making changes, select **Save**.
+
+---
+
+# Move placements
+
+You can move placements from one placement group to another placement group.
+
+To move placements:
+
+1. Navigate to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Switch to **Tree view** using the top-right table header to see **Placement Groups** and their associated **Placements**.
+4. Expand the placement group that contains the placements you want to move.
+5. Check the boxes for all the placements you want to move.
+6. Select **Move** in the table header.
+7. In the dialog that appears, select the placement group you want to move the placements to.
+8. Select **Move** to confirm.
+
+The placements are moved to the selected placement group.
+
+---
+
+# Duplicate placements
+
+You can duplicate a placement to create a new placement with the same configuration.
+
+This can be useful when you want to create multiple placements with similar settings.
+
+To duplicate a placement:
+
+1. Navigate to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Switch to **Tree view** using the top-right table header to see **Placement Groups** and their associated **Placements**.
+4. Expand the placement group that contains the placement you want to duplicate.
+5. Check the box for the placement you want to duplicate.
+6. Select **Duplicate** in the table header.
+
+A new placement is created using the same configuration as the original placement.
+
+After duplicating the placement, you can update the placement name, reserve price, or other settings as needed.
+
+## Set reserve price for duplicated placements
+
+You can set a reserve price for the duplicated placement to define the minimum CPM buyers must meet to serve an ad on the placement.
+
+To set or update the reserve price:
+
+1. Select the duplicated placement.
+2. In the **Placement Details** pane, select **Edit**.
+3. Locate the **Reserve Price** field.
+4. Enter the desired CPM value.
+5. Select **Save**.
+
+The updated reserve price applies to all demand sources bidding on the placement.
+
+
+---
+
+# Delete placements
+
+You can delete placements that are no longer needed.
+
+Deleting a placement permanently removes it from Inventory Manager.
+
+## Step 1. Select placements
+
+1. Navigate to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Switch to **Tree view** using the top-right table header to see **Placement Groups** and their associated **Placements**.
+4. Expand the placement group containing the placements you want to delete.
+5. Check the boxes for the placement or placements you want to delete.
+
+## Step 2. Confirm deletion
+
+1. Select **Delete** in the table header.
+2. Confirm the deletion when prompted.
+
+The selected placements are removed from Inventory Manager.
+
+
+
+<!-- 
 # Update a placement
 
 There are many actions you can perform on placements. This page explains how to edit, delete, duplicate, and move placements.

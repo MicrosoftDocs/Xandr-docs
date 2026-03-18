@@ -9,6 +9,171 @@ ms.author: shsrinivasan
 
 # Create a placement group
 
+The placement group object is the middle level of the sell-side hierarchy (**Publishers** \> **Placement Groups** \> **Placements**). Placement groups provide a way for you to organize placements for management purposes and apply inventory categorization and self-auditing criteria to child placements by default. Publishers use placement groups to organize and manage placements. Settings applied to a placement group apply to all placements within that group. Each placement must belong to a placement group, and a placement can belong to only one group.
+
+---
+
+## Step 1. Start a new placement group
+
+You can create a placement group from either the **Publishers** tab or the **Inventory** tab.
+
+### From the Publishers tab
+
+1. Go to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Select **Create > Placement Group**.
+4. The **Create Placement Group** dialog appears.
+
+### From the Inventory tab
+
+1. Go to **Inventory > Placements**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+
+You can also:
+
+- Select **Inventory** from the main navigation.
+- Locate the publisher.
+- Select **Placements** for that publisher to open **Inventory Manager**.
+
+3. Select **Create > Placement Group**.
+4. The **Create Placement Group** dialog appears.
+
+---
+
+## Step 2. Define placement group details
+
+In the **Create Placement Group** dialog, on the **Placement Group Details** tab, complete the following fields:
+
+- **Name**  
+  Enter a name for the placement group.
+
+- **Code**  
+  Enter an internal code for organizational or reference purposes. This value is not shared with buyers.  
+  This field appears only when the **Code (Advanced)** option is enabled.
+
+- **Domain**  
+  Enter the top-level domain for the placement group. This field is optional and is not shared with buyers.
+
+---
+
+## Step 3. Configure marketplace settings
+
+Specify how inventory in this placement group participates in Microsoft Advertising marketplaces.
+
+### RTB marketplace
+
+Choose one of the following options:
+
+- **Participate**  
+  Makes inventory in this placement group available in the RTB marketplace. This allows both third-party buyers and direct buyers to access the inventory.  
+  This is the default setting.
+
+- **Do not participate**  
+  Makes inventory available only to direct demand. The inventory will not participate in RTB resale.
+
+If you select **Do not participate** and enable **Allow Deal demand for this placement group**, buyers can access this inventory only through deals.
+
+---
+
+## Step 4. Apply universal categories
+
+Use the **Content Categories** tab to apply Microsoft Advertising universal categories to the placement group. These categories help buyers discover and target your inventory.
+
+Choose one of the following options:
+
+- **Categorize as mixed/unknown**  
+  Leaves category settings unselected. Buyers cannot target this placement group by category.
+
+- **Include selected universal categories**  
+  Allows you to select categories to assign to the placement group.
+
+To add categories:
+
+1. Select a category in **Available Universal Categories**.
+2. Select **Add** to move it to **Selected Universal Categories**.
+
+You can also use the search field to filter the list of categories.
+
+> **Note**
+>
+> - Top-level categories are shown first.
+> - Selecting **Add** next to a top-level category applies all of its subcategories.
+> - Selecting the category name displays its individual subcategories.
+
+---
+
+## Step 5. Apply custom categories
+
+You can also assign custom categories that your organization has defined.
+
+Choose one of the following options:
+
+- **Don't apply custom categories**  
+  Leaves custom categories unassigned.
+
+- **Include selected custom categories**  
+  Allows you to select custom categories for the placement group.
+
+To add categories:
+
+1. Select a category in **Available Custom Categories**.
+2. Select **Add** to move it to **Selected Custom Categories**.
+
+You can also search for categories using the search field.
+
+You can create new custom categories directly from this screen:
+
+1. Enter the category name in **New custom category**.
+2. Select **Create**.
+
+> **Note**
+>
+> Buyers with whom you have a managed relationship can target these categories in campaigns.
+
+---
+
+## Step 6. Configure self-auditing
+
+On the **Self-Auditing Criteria** tab, define how auditing is applied to the placement group.
+
+Microsoft recommends that publishers self-audit inventory to make it accessible to more buyers.
+
+Choose one of the following options:
+
+- **Do not self-audit this placement group**  
+  Auditing is configured individually at the placement level.
+
+- **Self-audit this placement group**  
+  Auditing is applied at the placement group level and inherited by all placements in the group.
+
+If you select **Self-audit this placement group**, additional fields appear.
+
+### Sensitive attributes
+
+Indicate whether the placement group contains sensitive attributes.
+
+- If applicable, select **This placement group has the following sensitive attributes** and choose the appropriate options.
+- If none apply, select **No Sensitive Attributes apply**.
+
+### Intended audience
+
+Select the intended audience for the placement group:
+
+- General audience  
+- Children  
+- Young adults  
+- Ages 16 and up
+
+> **Note**
+>
+> Age ranges for these categories can be configured through the Profile Service.
+
+### Always banned
+
+These attributes are informational and cannot be selected. Placements containing these topics cannot be included in the placement group.
+<!-- 
+# Create a placement group
+
 The placement group object is the middle level of the sell-side hierarchy (**Publishers** \> **Placement Groups** \> **Placements**). Placement groups provide a way for you to organize placements for management purposes and apply inventory categorization and self-auditing criteria to child placements by default.
 Publishers create placement groups to organize and maintain placements. Values and settings assigned to a placement group apply to all placements in that group. Each placement must be associated with a placement group, but no placement can be associated to multiple groups.
 
@@ -118,3 +283,4 @@ You must check the **checkbox** in this section to confirm that you have done th
 ## Step 8. Save the placement group
 
 To finish adding the placement group to the Microsoft Advertising platform, click the **Save** button. Alternately, if you want to save the placement group and immediately create a new placement under it, click the **Save and Add New Placement** button.
+-->

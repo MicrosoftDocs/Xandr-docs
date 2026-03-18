@@ -2,7 +2,7 @@
 title: Customize Video Player Options on iOS
 description: In this article, find information about the video player controls that you can customize on iOS SDK.
 ms.custom: ios-sdk
-ms.date: 2/18/2026
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -31,6 +31,7 @@ ms.author: shsrinivasan
 | **NSString** `*skipDescription` | "Skip in %%TIME%%s" | Customizes Skip Description. | Instream |
 | **NSString** `*skipLabelName` | "Skip ad" | Customizes Skip Label. | Instream |
 | **NSInteger** `*skipOffset` | "5 seconds" | Customizes Skip Offset. | Instream |
+| **BOOL** `forceControlBarVisible` | true | When set to `true`, the video control bar (play/pause, seek, volume, and other controls) remains permanently visible, regardless of user interaction. When set to `false`, the player uses the auto-hide behavior, where the control bar hides after a period of inactivity. | Instream/Banner Video/Interstitial |
 
 ## Example
 
@@ -64,6 +65,9 @@ ms.author: shsrinivasan
 // Show or hide the Skip control on the player
 [[ANVideoPlayerSettings sharedInstance] setShowSkip:YES];
 
+// Show or hide the control bar permanently (default is YES to always show). If set to NO, the player will auto-hide the control bar after inactivity.
+[ANVideoPlayerSettings sharedInstance].forceControlBarVisible = NO;
+
 // Change the skip description on the video player
 [[ANVideoPlayerSettings sharedInstance] setSkipDescription:@"Video Skip Demo"];
 
@@ -95,6 +99,9 @@ ANVideoPlayerSettings.sharedInstance().adText = "Video Ad"
  
 // Show or hide the volume control on the player
 ANVideoPlayerSettings.sharedInstance().showVolumeControl = true
+
+// Show or hide the control bar permanently (default is true to always show). If set to false, the player will auto-hide the control bar after inactivity.
+ANVideoPlayerSettings.sharedInstance().forceControlBarVisible = false
  
 // Decide how the ad video sound starts initially (sound on or off). By default, Instream Video will have sound enabled, while Banner Video will have sound disabled
 ANVideoPlayerSettings.sharedInstance().initalAudio = ANInitialAudioSetting.Default

@@ -9,6 +9,7 @@ ms.author: shsrinivasan
 
 # Create a placement group
 
+The placement group object is the middle level of the sell-side hierarchy (**Publishers** \> **Placement Groups** \> **Placements**). Placement groups provide a way for you to organize placements for management purposes and apply inventory categorization and self-auditing criteria to child placements by default.
 Publishers create placement groups to organize and maintain placements. Values and settings assigned to a placement group apply to all placements in that group. Each placement must be associated with a placement group, but no placement can be associated to multiple groups.
 
 ## Step 1. Start a new placement group

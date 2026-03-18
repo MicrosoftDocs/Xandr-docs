@@ -108,7 +108,7 @@ Configure the third-party default creative by providing the following informatio
 To finish assigning the default creative to the placement, click the **Save** button. The default creative will be visible in the **Default Creatives** pane for the placement.
 
 > [!NOTE]
-> An error may be displayed when saving if the size of the default creative does not match the size configured on the placement. Check and update the size and try saving again
+> An error may be displayed when saving if the size of the default creative does not match the size configured on the placement. Check and update the size and try saving again.
 
 ## Troubleshooting default creatives
 

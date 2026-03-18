@@ -46,7 +46,7 @@ You can move placements from one placement group to another.
 
 You can delete a placement group when it is no longer needed.
 
-> [NOTE!]
+> [!NOTE]
 > A placement group cannot be deleted if it still contains placements. Move or delete the placements before deleting the placement group.
 
 1. Navigate to **Publishers > Inventory Manager**.

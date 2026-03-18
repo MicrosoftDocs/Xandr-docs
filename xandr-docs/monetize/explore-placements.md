@@ -95,23 +95,12 @@ The selected columns appear in the grid.
 
 ## Available columns
 
-**ID**
-The unique ID number of the placement.
-
-**Name**
-The name of the placement.
-
-**Impressions**
-The number of impressions recorded for the placement.
-
-**Revenue**
-Network revenue booked through direct advertisers and resold to real-time buyers.
-
-**Placement Group Name**
-The parent placement group that the placement belongs to.
-
-**Self-Audit**
-Indicates whether the publisher has enabled **Self-Auditing Creatives** for the placement group inventory.
+- **ID**: The unique ID number of the placement.
+- **Name**: The name of the placement.
+- **Impressions**: The number of impressions recorded for the placement.
+- **Revenue**: Network revenue booked through direct advertisers and resold to real-time buyers.
+- **Placement Group Name**: The parent placement group that the placement belongs to.
+- **Self-Audit**: Indicates whether the publisher has enabled **Self-Auditing Creatives** for the placement group inventory.
 
 ---
 
@@ -203,9 +192,9 @@ The reporting interface opens with the selected placements applied as filters.
 # Related topics
 
 - [Create a Placement](create-a-placement.md)
-* Update a placement
-* Assign a default creative to a placement
-* Export placement tags
+- [Update a placement](update-a-placement.md)
+- [Assign a default creative to a placement](assign-a-default-creative-to-a-placement.md)
+- [Export placement tags](export-placement-tags.md)
 
 <!-- 
 # Explore placements

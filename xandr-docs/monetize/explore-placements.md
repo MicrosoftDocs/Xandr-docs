@@ -100,7 +100,7 @@ The selected columns appear in the grid.
 - **Impressions**: The number of impressions recorded for the placement.
 - **Revenue**: Network revenue booked through direct advertisers and resold to real-time buyers.
 - **Placement Group Name**: The parent placement group that the placement belongs to.
-- **Self-Audit**: Indicates whether the publisher has enabled **Self-Auditing Creatives** for the placement group inventory.
+- **Self-Audit**: Indicates whether the publisher has enabled [**Self-Auditing Creatives**](self-auditing-creatives.md) for the placement group inventory.
 
 ---
 

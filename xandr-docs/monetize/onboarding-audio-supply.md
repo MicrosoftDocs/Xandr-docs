@@ -13,9 +13,10 @@ This page explains how to modify placement settings to accept audio creatives an
 
 ## Onboarding audio placements
 
-1. From the **Publishers** tab, navigate to **Inventory Manager**.
-1. If prompted, select a publisher, then click the **Create New** button, and select **Placement**.
-1. In the **Allowed Media** section, select **Audio**.
+1. Navigate to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Select **Create**, and then select **Placement**.
+4. In the **Allowed Media** section, select **Audio**.
 
 > [!NOTE]
 > When Audio is selected, no other media types are allowed.

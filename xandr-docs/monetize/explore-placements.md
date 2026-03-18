@@ -202,7 +202,7 @@ The reporting interface opens with the selected placements applied as filters.
 
 # Related topics
 
-* Create a placement
+- [Create a Placement](create-a-placement.md)
 * Update a placement
 * Assign a default creative to a placement
 * Export placement tags

@@ -1,7 +1,7 @@
 ---
 title: Assign a Default Creative to a Placement
 description: In this article, find step-by-step instructions on how to assign a default creative to a placement.
-ms.date: 10/21/2025
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -106,6 +106,9 @@ Configure the third-party default creative by providing the following informatio
 ## Step 5. Save the default creative
 
 To finish assigning the default creative to the placement, click the **Save** button. The default creative will be visible in the **Default Creatives** pane for the placement.
+
+> [!NOTE]
+> An error may be displayed when saving if the size of the default creative does not match the size configured on the placement. Check and update the size and try saving again
 
 ## Troubleshooting default creatives
 

@@ -9,6 +9,11 @@ ms.author: shsrinivasan
 
 # Android SDK release notes
 
+## 9.12.0 
+### New Features
++ 10424605: Video player's bottom progress/controlbar now always visible. Added a new setting option (shouldForceControlBarVisible) to control it.
++ 10447642: Upgraded Facebook Audience Network dependency to 6.21.0.​
+
 ## 9.11.1 
 ### Improvement/Bug Fixes
 

@@ -1,7 +1,7 @@
 ---
 title: Create a Placement
 description: In this article, find information on how to create and set up a placement.
-ms.date: 10/21/2025
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -20,14 +20,13 @@ When you create a placement, you can:
 - Configure settings that may impact monetization, such as size, video requirements, and reserve price
 - Self-classify the placement with categories and sensitive attributes for line item targeting and reporting
 
+
 ## Step 1: Get started
 
-Depending on which version of Monetize you use, you can access the **Inventory Manager** screen by doing one of the following:
-
-- From the **Publishers** tab, navigate to **Publishers** > **Inventory Manager**.
-- From the **Inventory** tab, navigate to **Partners** > **Placement**.
-
-If prompted, select a publisher. Click the **Create New** button, and then select **Placement**.
+1. Navigate to **Publishers > Inventory Manager**.
+2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
+3. Select **Create**, and then select **Placement**.
+4. The **Create Placement** dialog appears.
 
 ## Step 2: Define the basic settings
 
@@ -41,6 +40,8 @@ Enter a **Name** for the placement and review the following optional fields:
     > [!NOTE]
     > If an inactive placement is used, the impression will be blank, and Microsoft Advertising won’t redirect it.
 
+- **Global Placement ID (GPID)**: Enter the **Global Placement ID** value for this placement. The **Global Placement ID (GPID)** is a publisher-defined identifier that represents a specific ad placement on a page. This field is optional. The same GPID value can be used across multiple placements. The GPID value is passed to bidders in the bid request. If a GPID value is also provided in the ad request, the value in the ad request overrides the value configured here.
+We recommend specifying the GPID either in the impression request or in this field, but not both.
 - Enable **Rewarded Content** if the user receives a reward (such as in-app currency or in-game powerups) after viewing an ad.
 
 > [!NOTE]

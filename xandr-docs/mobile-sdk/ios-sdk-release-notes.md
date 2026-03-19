@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 3/2/2026
+ms.date: 3/19/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -13,6 +13,13 @@ ms.author: shsrinivasan
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.12.0
+
+### New Features
++ 10424605: Video player's bottom progress/controlbar now always visible. Added a new setting option (forceControlBarVisible) to control it.
++ 10447642: Upgraded Facebook Audience Network dependency to 6.21.1.
+
+  
 ## 9.11.1
 
 ### Improvement/Bug Fixes

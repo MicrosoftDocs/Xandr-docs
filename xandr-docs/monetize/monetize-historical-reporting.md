@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 1/23/2026
+ms.date: 3/18/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -538,6 +538,11 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `Month`  | No | The month of the auction|
 | `Filtered Request Reason` |  No | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. Possible reasons are: "Invalid Domain" (1), "Invalid IP" (2), "Suspected Domain Detection Tampering" (3, 4, 5), "Unknown" (6, 7), “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks, “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify, "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
 | `Filtered Request Reason ID`|  No | The reason why the impression request was filtered out by Xandr's inventory quality controls and the auction was not held. <br> **Possible reasons are:** <br> - "Invalid Domain" (1) <br> - "Invalid IP" (2) <br> - "Suspected Domain Detection Tampering" (3, 4, 5) <br> - "Unknown" (6, 7) <br> - “White Ops: General IVT” (17) - consists of traffic identified through routine means of filtration, executed through application of lists or with other standardized parameter checks <br> - “White Ops: Sophisticated IVT” (18) - consists of more difficult to detect situations that require advanced analytics, multi-point corroboration/coordination, significant human intervention, etc., to analyze and identify. <br> - "Valid Impression" (0) is also a valid filtered request reason, but in that case, an auction was held and it was not filtered. |
+| `Supply Chain Node Count` | Yes | The number of nodes in the Ad Request SCHAIN. |
+| `Is Supply Chain Complete` | Yes | Indicates whether the SCHAIN is marked as complete on the Ad Request. |
+| `Is GPID Present` | Yes | Indicates whether a Global Placement ID (GPID) was present on the impression. <br>**Note:**<br>This field is a reporting-only characteristic and does not affect the value of GPID at auction time. It is supported for **Impressions** metrics only. A subset of ad requests that do not result in a transacted impression are not GPID-reportable. As a result, using this field together with **Ad Request** or **Response** metrics may not accurately reflect true GPID coverage and is not recommended. |
+
+
 
 
 ## Metrics

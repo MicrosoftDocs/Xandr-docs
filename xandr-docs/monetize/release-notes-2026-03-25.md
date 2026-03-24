@@ -2,7 +2,7 @@
 title: Microsoft Monetize (March 25, 2026) Inventory Manager UI modernization now generally available
 description: Learn about the new Inventory Manager UI modernization 
 ms.topic: release-notes
-ms.date: 03/25/2026
+ms.date: 04/1/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -10,9 +10,9 @@ ms.author: rupambaruah
 
 # Inventory Manager UI modernization now generally available
 
-**Release date:** March 25, 2026
-**Product:** Microsoft Monetize
-**Area:** Inventory Manager
+**Release date:** April 1, 2026<br>
+**Product:** Microsoft Monetize<br>
+**Area:** Inventory Manager<br>
 **Status:** General Availability (GA)
 
 ## Overview

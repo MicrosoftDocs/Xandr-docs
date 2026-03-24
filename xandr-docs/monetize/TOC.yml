@@ -1731,6 +1731,8 @@
   items:
   - name: Overview
     href: release-notes.md
+  - name: Historical Reporting adds new supply chain and GPID fields
+    href: release-notes-20-mar-2026.md
   - name: March 9, 2026 - Seller Monitoring Workflow (SMW) UI modernization now generally available
     href: release-notes-9-march.md
   - name: January 21, 2026 - DV360 Central Partner ID Support for Multi-Buyer Deals

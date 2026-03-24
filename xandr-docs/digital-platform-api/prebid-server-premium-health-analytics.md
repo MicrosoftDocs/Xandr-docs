@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Health Analytics
 description: Explore the Prebid Server Premium (PSP) Health Analytics report, enabling users to analyze bid requests and transactions with their configured Demand Partners.
-ms.date: 10/22/2025
+ms.date: 3/20/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -46,13 +46,14 @@ Data retention period for this report is 99 days.
 | `ad_size` | string | yes | `300x250` | The dimensions of the ad slot. |
 | `allowed_media_types_bitmap_name` | string | no | `"Banner"` | The category of creative enabled by the publisher on the Monetize placement. For example: banner, video, native. |
 | `application_id` | string | yes | `"vizio.pluto"` | The specific application used on the device. |
-| `bid_error_type` | int | yes | `21` | The ID of the category of error related to the bid response. For more detail, see the [Bid request error types](#bid-request-error-types) table below. |
-| `bid_error_type_name` | string | no | `"NO_BID_PRICE"` | The category of error related to the bid response. For more detail, see the [Bid request error types](#bid-request-error-types) table below. |
-| `bid_reject_error_code` | string | yes | `"31"` | The specific error generated from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for descriptions and potential resolution for each value.|
 | `bidder_id` | int | yes | `443` | The ID of the bidder (443). |
 | `bidder_name` | string | no | `Prebid Server` | The name of the bidder (Prebid Server). |
+| `bid_reject_error_id` | int | no | `347` | The ID of the specific error generated from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for descriptions and potential resolution for each value. |
+| `bid_reject_error_name` | string | no | `"Bid is below ym_floor price"` | The specific error message generated from the demand partner's bid response. See [bid error codes](../bidders/bid-error-codes.md) for descriptions and potential resolution for each value. |
+| `bid_reject_error` | string | no | `Error name (123)` | A string consisting of the bid rejection error name and ID. |
 | `browser_code_id` | int | yes | `5414` | The ID of the specific version of the browser. |
 | `browser_code_name` | string | no | `"da-chrome-107.0"` | The name of the specific version of the browser. |
+| `browser_code` | string | no | `"da-chrome-107.0 (5414)"` | A string consisting of the ID and name of the specific version of the browser. |
 | `call_type` | string | yes | `/ut/v3/prebid` |The [type of handler](../monetize/prebid-server-premium-supported-formats-and-integration-paths.md) used to send the bid request to Monetize "(e.g., `/ut/v3/prebid`, `openrtb2/prebid`)".|
 | `cookies_present` | boolean | yes | yes |Indicates whether or not a cookie was present in the bid request.|
 | `datacenter_id` | string | yes | `"ams3"` | The ID of the data center used to route the request to demand partners. |
@@ -81,7 +82,13 @@ Data retention period for this report is 99 days.
 | `month` | date | no | `"2018-02"` | The month of the auction. |
 | `placement_id` | int | yes | `456` | The ID of the placement through which the request originated. |
 | `placement_name` | string | no | `"My Placement"` | The name of the placement through which the request originated. |
+| `placement.code` | string | no | `"placement_code_1"` | The code of the Monetize placement for the impression.|
+| `placement.code2` | string | no | `"placement_code_2"` | The code of the Monetize placement for the impression.|
+| `placement.code3` | string | no | `"placement_code_3"` | The code of the Monetize placement for the impression.|
+| `placement_name` | string | no | `"My Placement"` | The name of the placement through which the request originated. |
 | `psp_config_id` | int | yes | `10000` |  Unique identifier for the PSP configuration via the [config service](../digital-platform-api/config-service.md). Currently only reportable on `bid_responses_received`, `valid_bid_on_imps`, and `imps_delivered`. Will be updated to cover other metrics in the future. |
+| `psp_config_name` | string | yes | `"my_psp_config"` |  The name of the PSP configuration.|
+| `psp_config` | string | no | `"config_name (12345)"` |  A string consisting of the PSP config name and ID.|
 | `publisher_id` | int | yes | `789` | The ID of the publisher on whose inventory the request originated. |
 | `publisher_name` | string | no | `"Neat Publisher Ltd"` | The name of the publisher on whose inventory the request originated. |
 | `sdk_version` | string | yes | `"pbjs-5.20.3"` | The version of the software development kit present in the app. |
@@ -96,7 +103,7 @@ Data retention period for this report is 99 days.
 
 | Column | Type | Formula | Example | Description |
 |:---|:---|:---|:---|:---|
-| `average_clear_price` | double | See Description. | `1.00` | The sum of bid price for delivered impressions divided by the number of bid requests sent. |
+| `average_clear_price` | double | total_buyer_spend / imps_delivered | `1.00` | The sum of buyer spend divided by the number of impressions delivered. |
 | `average_response_time` | double | See Description. | `0.08` | The average time demand partners take to respond to bid requests.|
 | `bid_errors` | int | See Description. | `149908040` | The number of errors in bid responses from Demand Partners. |
 | `bid_errors_rate` | double | bid_errors / bid_requests_sent | `0.04` | The number of bid errors divided by the number of bid requests sent to Demand Partners. |
@@ -110,7 +117,6 @@ Data retention period for this report is 99 days.
 | `bids_submitted_to_ad_server` | int | See Description. | `54021580` | The number of ad requests that had a valid Prebid bid that was not subject to any additional Microsoft rejections returned to the ad server. This number is counted after the Microsoft auction process that evaluates bids received from all sources. The reduced volume between `valid_bid_on_imps` and this metric could be due to creative requirements not being met, being outbid by other bidders, or due to the option to [send only the top bid back to the ad server](../monetize/integrate-web-mobile-web-with-psp.md). |
 | `bidder_user_matched_requests` | int | See Description. | `1849169240` | The number of requests where a user identifier was present.<br><br>**Note:** This metric currently only includes cookies for web and mobile web. |
 | `imps_delivered` | int | See Description. | `4804540` | The number of impressions successfully delivered and ads rendered.<br><br>**Note:** This report is based on sample log data multiplied to estimate the full volume of PSP activity and does not represent final delivery. |
-| `media_type` | string | See Description. | `banner`, `video`, and `native` | Unknown media type refers to bid requests that did not result in impressions. The media type is logged only when a creative is served. |
 | `no_bid_rate` | double | no_bids / bid_requests_sent | `0.87` | The number of times Demand Partners did not bid divided by the number of bid requests sent to Demand Partners. |
 | `no_bids` | int | See Description. | `3461831640` | The number of times Demand Partners did not bid on a request. This does not include bid errors. |
 | `total_bid_price` | int | See Description. | `171869242` | The sum of the bid values received from Demand Partners. |

@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Buyer Bid Error Report
 description: In this article, learn about the Buyer Bid Error Report and the dimensions and metrics associated with it.
-ms.date: 10/22/2025
+ms.date: 3/24/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -9,7 +9,7 @@ ms.author: shsrinivasan
 
 # Digital Platform API - Buyer bid error report
 
-The Buyer Bid Error Report helps you to troubleshoot buy-side and sell-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md). The Buyer Bid Error Report helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count has been multiplied by 100 to account for the 5% sampling.
+The Buyer Bid Error Report helps you to troubleshoot buy-side and sell-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md). The Buyer Bid Error Report helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Xandr platform. Error Count has been multiplied by 20 to account for the 5% sampling.
 
 For instructions on retrieving a report, see [Report Service](report-service.md) or the [example](#example) below.
 

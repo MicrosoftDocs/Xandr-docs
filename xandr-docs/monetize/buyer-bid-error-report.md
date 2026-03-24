@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Buyer Bid Error Report
 description: Learn how Buyer Bid Error Report can be used to assess rejected demand after going through 5% of the errors logged on the Microsoft Advertising platform. 
-ms.date: 10/21/2025
+ms.date: 3/24/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -10,7 +10,7 @@ ms.author: shsrinivasan
 
 # Microsoft Monetize - Buyer bid error report
 
-The **Buyer Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform. Error Count has been multiplied by 100 to account for the 5% sampling.
+The **Buyer Bid Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the Microsoft Advertising platform. Error Count has been multiplied by 20 to account for the 5% sampling.
 
 You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 

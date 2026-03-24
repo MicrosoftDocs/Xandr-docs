@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Seller Bid Error Report
 description: Use the Seller Bid Error report to get an insight into rejected demand through a randomly selected set of errors. Helps troubleshoot sell-side and buy-side settings.
-ms.date: 10/22/2025
+ms.date: 3/24/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -9,7 +9,7 @@ ms.author: shsrinivasan
 
 # Digital Platform API - Seller Bid Error report
 
-The **Seller Bid** **Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the AppNexus platform. Error Count has been multiplied by 100 to account for the 5% sampling.
+The **Seller Bid** **Error Report** helps you gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the AppNexus platform. Error Count has been multiplied by 20 to account for the 5% sampling.
 
 Use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future. You can find information on the owner, cause and recommended resolution for each error in [Bid Error Codes](../bidders/bid-error-codes.md).
 

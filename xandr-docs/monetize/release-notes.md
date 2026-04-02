@@ -2,7 +2,7 @@
 title: Microsoft Monetize - Release Notes
 description: Read about the latest updates to Monetize.
 ms.topic: release-notes
-ms.date: 1/21/2026
+ms.date: 4/1/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -12,7 +12,7 @@ ms.author: rupambaruah
 # Microsoft Monetize - Release notes
 
 Read about the latest updates to Monetize.
-
+- [April 1, 2026: Inventory Manager UI modernization now generally available](release-notes-2026-03-25.md)
 - [March 24, 2026: Historical Reporting adds new supply chain and GPID fields](release-notes-20-mar-2026.md)
 - [March 9, 2026: Seller Monitoring Workflow (SMW) UI modernization now generally available](release-notes-9-march.md)
 - [January 21, 2026: DV360 Central Partner ID Support for Multi-Buyer Deals](release-notes-2026-01-21.md)

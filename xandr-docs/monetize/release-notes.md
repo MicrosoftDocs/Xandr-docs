@@ -2,7 +2,7 @@
 title: Microsoft Monetize - Release Notes
 description: Read about the latest updates to Monetize.
 ms.topic: release-notes
-ms.date: 1/21/2026
+ms.date: 4/1/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah

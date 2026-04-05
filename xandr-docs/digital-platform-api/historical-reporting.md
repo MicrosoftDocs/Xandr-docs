@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API  - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights in Digital Platform API.
-ms.date: 03/18/2026
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -276,6 +276,7 @@ The `report_interval` field in the JSON request can be set to one of the followi
 
 > [!NOTE]
 > To run a report for a custom time frame, set the start_date and end_date fields in your report request. For more details about these fields, see [Report Service](report-service.md).
+> For reports with a start date before the hourly-to-daily cutoff, UTC is enforced.
 
 - **Hourly data:** Data is retained for the last 100 days.
 - **Cumulative data:** Data is retained for up to 2 years and 2 months.

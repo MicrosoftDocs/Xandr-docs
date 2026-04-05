@@ -1,7 +1,7 @@
 ---
 title: Network Analytics
 description: Use the Network Analytics report to view the buy and sell-side data for network members, including direct advertiser impressions and direct publishers sold across platforms.
-ms.date: 10/22/2025
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -37,6 +37,9 @@ The `report_interval` field can be set to one of the following:
 - lifetime
 
 ### Data retention period
+
+> [!NOTE]
+> For reports with a start date before the hourly-to-daily cutoff, UTC is enforced.
 
 Most data in this report is maintained permanently (exceptions noted below). After:
 

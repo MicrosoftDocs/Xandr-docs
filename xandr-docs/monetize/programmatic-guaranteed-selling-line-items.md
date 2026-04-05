@@ -1,7 +1,7 @@
 ---
 title: Selling Programmatic Guaranteed Deals
 description: In this article, find information about what PG selling line items are and how to create and sell PG deals to various clients.
-ms.date: 10/21/2025
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -49,8 +49,8 @@ PG selling line items offer some of the following advantages:
 
 Creating PG deals as a Microsoft Monetize Ad Server client entails wide-scale deal customization. These types of PG deals are handled through header bidding, and they allow guaranteed deals, sales, and reporting to all take place within Monetize. PG deals created and sold through Microsoft Monetize Ad Server are especially advantageous when your deal buyers use Microsoft Invest. For information on creating a PG deal through Microsoft Monetize Ad Server, see [Create a Programmatic Guaranteed Deal](create-a-programmatic-guaranteed-selling-line-item.md).
 
-> [!IMPORTANT]
-> Creating and selling PG deals through Microsoft Monetize Ad Server is currently a **beta** feature.
+<!-- > [!IMPORTANT]
+> Creating and selling PG deals through Microsoft Monetize Ad Server is currently a **beta** feature. -->
 
 ## PG Deals for Microsoft Monetize clients
 

@@ -1,7 +1,7 @@
 ---
 title: Seller Tag Release History
 description: In this article, find release history of AST.
-ms.date: 3/24/2026
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: seller-tag
 ---
@@ -21,6 +21,7 @@ For information on major changes to SDK, see the [Release Notes](seller-tag-rele
 
 | Version | Release Date |
 | --- | --- |
+| v1.10.79 | 31 Mar 2026 |
 | v1.10.78 | 24 Mar 2026 |
 | v1.10.77 | 16 Mar 2026 |
 | v1.10.76 | 12 Mar 2026 |

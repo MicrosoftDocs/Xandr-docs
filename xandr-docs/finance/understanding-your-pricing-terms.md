@@ -1,7 +1,7 @@
 ---
 title: Finance - Understanding Your Pricing Terms
 description: Learn about charges and fees for common activity on Microsoft Advertising's platform that can be found in the Billing section of the UI. 
-ms.date: 10/22/2025
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: finance
 ms.author: shsrinivasan
@@ -21,6 +21,10 @@ See [Charges for Buyers](charges-for-buyers.md)
 ## Charges for sellers
 
 See [Charges for Sellers](charges-for-sellers.md)
+
+## Charges for curators
+
+Broker Auction Service Charge (BrASC) is a fee that enables curators to use Curate’s packaging and audience tools and access supply. When configured as a percentage, it’s calculated on the buyer’s media cost after applying other buy-side charges.
 
 ## Tiered pricing (applicable to both buyers and sellers)
 

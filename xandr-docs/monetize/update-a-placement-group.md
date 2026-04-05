@@ -1,7 +1,7 @@
 ---
 title: Update a Placement Group
 description: This page provides an overview to update a Placement Group. Learn to update, move and delete an existing Placement Group in this page.
-ms.date: 3/18/2026
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -22,8 +22,9 @@ To modify the settings of an existing placement group:
 3. Switch to **Tree view** using the top-right table header to see **Placement Groups** and their associated **Placements**.
 4. Locate the placement group you want to update.
 5. Select the placement group name to open its settings.
-6. Update the fields as needed.
-7. Select **Save** to apply your changes.
+6. Click the **Edit** button.
+7. Update the fields as needed.
+8. Select **Save** to apply your changes.
 
 ---
 

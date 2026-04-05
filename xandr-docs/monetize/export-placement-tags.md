@@ -1,7 +1,7 @@
 ---
 title: Export Placement Tags
 description: Explore cookie-free Microsoft Ads, ensuring data-consent-free experience with advantages like relevant calls, avoiding extra cookies.
-ms.date: 3/18/2026
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -19,9 +19,9 @@ The following steps will guide you through exporting placement tags.
 
 ## Step 1. Select the placements to export
 
-**For Publisher clients:** Navigate to **Partners** >  **Placements** and select a publisher. Check the boxes next to placements that you want to export, click **More Actions**, then select **Export Tags** in the table header. This displays the **Export Placement Tags** dialog.
+**For Publisher clients:** Navigate to **Partners** >  **Placements** and select a publisher. Check the boxes next to placements that you want to export, and then select **Export Tags** in the table header. This displays the **Export Placement Tags** dialog.
 
-**For all other clients:** Navigate to **Publisher** >  **Inventory Manager**, check the boxes next to placements that you want to export, click **More Actions**, then select **Export Tags**. This displays the **Export Placement Tags** dialog.
+**For all other clients:** Navigate to **Publisher** >  **Inventory Manager**, check the boxes next to placements that you want to export, and then select **Export Tags**. This displays the **Export Placement Tags** dialog.
 
 ## Step 2. Modify the tag options
 

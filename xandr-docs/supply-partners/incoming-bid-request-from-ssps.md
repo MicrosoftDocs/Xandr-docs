@@ -32,8 +32,6 @@ Any other query string value will be ignored.
 ### Bid request object
 
 > [!NOTE]
-> **Note**
->
 > - The `tmax` field isn’t supported. Contact your Integrations Consultant to configure auction timeout limits.  
 > - Multi-format impressions are supported but require enablement. To send multi-format requests, contact Product Support or your client representative.
 

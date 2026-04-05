@@ -1,7 +1,7 @@
 ---
 title: Incoming Bid Request from SSPs
 description: This article provides information on the incoming bid request from SSPs.
-ms.date: 10/22/2025
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: supply-partners
 ms.author: shsrinivasan
@@ -32,12 +32,10 @@ Any other query string value will be ignored.
 ### Bid request object
 
 > [!NOTE]
-> The `tmax` field is not supported. Speak with your Integrations Consultant to configure auction timeout limits. **Multi-format impressions** are not supported. The format's precedence if we receive multi-format impression is as following:
+> **Note**
 >
-> - video
-> - audio
-> - banner
-> - native
+> - The `tmax` field isn’t supported. Contact your Integrations Consultant to configure auction timeout limits.  
+> - Multi-format impressions are supported but require enablement. To send multi-format requests, contact Product Support or your client representative.
 
 Xandr supports the following fields in the top-level bid request object:
 

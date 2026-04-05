@@ -21,16 +21,16 @@ From this page you can:
 
 ---
 
-# Access the Inventory Manager
+## Access the Inventory Manager
 
 You can open Inventory Manager from either of the following navigation paths.
 
-## From the Publishers tab
+### From the Publishers tab
 
 1. Navigate to **Publishers > Inventory Manager**.
 2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
 
-## From the Inventory tab
+### From the Inventory tab
 
 1. Navigate to **Partners > Placement**.
 2. Use the **Select Publisher** dropdown to search for the publisher you want to work with.
@@ -39,11 +39,11 @@ The Inventory Manager grid displays placements associated with the selected publ
 
 ---
 
-# Customize the data view
+## Customize the data view
 
 You can customize how placement performance data is displayed.
 
-## Time interval
+### Time interval
 
 Use the **Interval** dropdown in the top-right corner to select the reporting time range.
 
@@ -56,7 +56,7 @@ Available intervals include:
 
 ---
 
-## Currency
+### Currency
 
 Use the **Currency** dropdown to choose which currency is used for revenue values.
 
@@ -71,7 +71,7 @@ Exchange rates are automatically applied and updated hourly.
 
 ---
 
-## Time zone
+### Time zone
 
 Use the **Time Zone** dropdown to select the time zone used to calculate reporting intervals.
 
@@ -79,7 +79,7 @@ This affects how data is grouped for intervals such as **Today**, **Yesterday**,
 
 ---
 
-# Manage displayed columns
+## Manage displayed columns
 
 You can customize which columns appear in the Inventory Manager grid.
 
@@ -91,7 +91,7 @@ To modify the columns:
 4. Drag columns to reorder them if needed.
 5. Save your changes.
 
-## Available columns
+### Available columns
 
 **ID**
 The unique ID number of the placement.
@@ -113,11 +113,11 @@ Indicates whether the publisher has enabled **[Self-Auditing Creatives](self-aud
 
 ---
 
-# Placement display modes
+## Placement display modes
 
 Inventory Manager supports two viewing modes.
 
-## Tree view
+### Tree view
 
 Tree view displays inventory in a hierarchical structure.
 
@@ -136,7 +136,7 @@ Use this view when managing placements within specific placement groups.
 
 ---
 
-## Direct view
+### Direct view
 
 Direct view displays placements in a flat list.
 
@@ -155,11 +155,11 @@ Use this view when analyzing performance across all placements.
 
 ---
 
-# Filter placements
+## Filter placements
 
 Inventory Manager provides both search and filtering options to help you locate placements.
 
-## Search
+### Search
 
 Use the **Search** field at the top of the page to quickly locate placements.
 
@@ -172,7 +172,7 @@ Matching results appear in the grid as you search.
 
 ---
 
-## Filter by placement group
+### Filter by placement group
 
 To filter placements by placement group:
 
@@ -186,7 +186,7 @@ To remove a filter, select the **X** next to the filter.
 
 ---
 
-# Assign a default creative
+## Assign a default creative
 
 You can assign a default creative to a placement.
 
@@ -200,7 +200,7 @@ To assign a default creative:
 
 ---
 
-# Run reports for placements
+## Run reports for placements
 
 You can generate reports for one or more placements directly from Inventory Manager.
 
@@ -216,7 +216,7 @@ The reporting interface opens with the selected placements applied as filters.
 
 
 
-# Related topics
+## Related topics
 
 - [Create a Placement](create-a-placement.md)
 - [Update a placement](update-a-placement.md)

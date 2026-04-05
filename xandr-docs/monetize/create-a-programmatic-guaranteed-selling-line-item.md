@@ -11,9 +11,9 @@ ms.author: shsrinivasan
 
 Learn step by step how to create and customize a programmatic guaranteed (PG) deal through Microsoft Monetize Ad Server.
 
-> [!IMPORTANT]
+<!-- > [!IMPORTANT]
 > Creating PG deals through Monetize Ad Server is a **beta** feature. For more information, see [Selling Programmatic Guaranteed Deals](programmatic-guaranteed-selling-line-items.md).
-
+-->
 ## Before you begin
 
 Before you begin creating a line item, you must have performed the following tasks:

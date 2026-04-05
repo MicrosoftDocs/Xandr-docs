@@ -1,7 +1,7 @@
 ---
 title: Network Analytics Report
 description: The article presents a network analytics report that provides comprehensive insights into both buy and sell-side data for your network.
-ms.date: 10/21/2025
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -62,6 +62,9 @@ Intervals determine how your data is grouped together into rows in the report re
   entire selected time range.
 
 ### Data retention period
+
+> [!NOTE]
+> For reports with a start date before the hourly-to-daily cutoff, UTC is enforced.
 
 Most data in this report is maintained permanently (exceptions noted below). After:
 

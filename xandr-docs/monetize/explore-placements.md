@@ -1,7 +1,7 @@
 ---
 title: Explore Placements
 description: Explore Inventory Manager, discover key metrics, quick access to details, and default creatives for all placements. 
-ms.date: 3/18/2026
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -109,7 +109,7 @@ Network revenue booked through direct advertisers and resold to real-time buyers
 The parent placement group that the placement belongs to.
 
 **Self-Audit**
-Indicates whether the publisher has enabled **[Self-Auditing Creatives]**(self-auditing-creatives.md) for the placement group inventory.
+Indicates whether the publisher has enabled **[Self-Auditing Creatives](self-auditing-creatives.md)** for the placement group inventory.
 
 ---
 

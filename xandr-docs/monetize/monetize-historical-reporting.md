@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights.
-ms.date: 3/18/2026
+ms.date: 4/5/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: rupambaruah
@@ -282,6 +282,9 @@ However, all time ranges are not available for every report.
 :::image type="content" source="media/time-ranges.png" alt-text="The screenshot shows time ranges that define the period from which data is extracted for reports.":::
 
 ### Data retention period
+
+> [!NOTE]
+> For reports with a start date before the hourly-to-daily cutoff, UTC is enforced.
 
 - **Hourly data:** Data is retained for the last 100 days.
 - **Cumulative data:** Data is retained for up to 2 years and 2 months.

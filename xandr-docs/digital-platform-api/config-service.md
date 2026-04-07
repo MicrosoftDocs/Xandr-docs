@@ -1,7 +1,7 @@
 ---
 title: Config Service
 description: Learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
-ms.date: 10/30/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -104,6 +104,13 @@ A successful response will return JSON containing the member's cross-partner set
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `4` line item/targeting profile|
 | `targeting_id` | integer | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
 | `targeting_metadata` | object | Includes modifiers for the targeting object. For details about the items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table. The `targeting_metadata.priority` field is required. |
+|`psp_profile`|object|The `profile` object defines the inventory targeting attributes used to match bid requests to PSP configurations.
+
+<br>The profile is either:
+<br>- Automatically generated when using the PSP UI, or  
+<br>- Created based on user input through the `psp-campaign-objects` API.
+
+<br>To modify a profile, use the [`psp-campaign-objects` API](campaign-object-service.md). The configuration service returns the `psp_profile` object in `GET` responses only.|
 
 ### Targeting metadata properties
 
@@ -160,149 +167,239 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ```
 
 {
-    "id": 450,
-    "member_id": 13859,
-    "bidder_timeout_ms": 500,
-    "price_granularity": {
-        "label": "Auto",
-        "currency_code": "USD",
-        "precision": 2,
-        "ranges": [
-            {
-                "max": 5,
-                "increment": 0.05
-            },
-            {
-                "max": 10,
-                "increment": 0.1
-            },
-            {
-                "max": 20,
-                "increment": 0.5
-            }
-        ]
-    },
-    "deleted": 0,
-    "last_modified_by": "user123",
-    "last_modified": "2024-08-21T16:37:24.000Z",
-    "demand_partner_settings": {
-        "appnexus": {
-            "id": 2045,
-            "bid_cpm_adjustment": 0.7,
-            "enabled": 1
-        },
-        "openx": {
-            "id": 2065,
-            "bid_cpm_adjustment": 1,
-            "enabled": 0
-        },
-        "ix": {
-            "id": 2106,
-            "bid_cpm_adjustment": 0.9,
-            "enabled": 1
-        },
-        "adform": {
-            "id": 2110,
-            "bid_cpm_adjustment": 1,
-            "enabled": 1
-        }
-    },
-    "total_configs": 2,
-    "configs": [
-        {
-            "id": 87053,
-            "member_id": 13859,
-            "name": "ConfigName1",
-            "targeting_level_code": 4,
-            "targeting_id": 25172737,
-            "enabled": 1,
-            "targeting_metadata": {
-                "priority": 10
-            },
-            "deleted": 0,
-            "last_modified_by": "user123",
-            "last_modified": "2024-07-17T18:17:56.000Z",
-            "demand_partner_config_params": [
-                {
-                    "id": 619584,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87053,
-                    "name": "ix",
-                    "params": {
-                        "size": null,
-                        "siteId": "yyy.com"
-                    },
-                    "enabled": 1,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-07-17T18:36:40.000Z"
-                }
-            ]
-        },
-        {
-            "id": 87784,
-            "member_id": 13859,
-            "name": "ConfigName2",
-            "targeting_level_code": 4,
-            "targeting_id": 25175861,
-            "enabled": 1,
-            "targeting_metadata": {
-                "priority": 10
-            },
-            "deleted": 0,
-            "last_modified_by": "user123",
-            "last_modified": "2024-07-31T21:34:34.000Z",
-            "demand_partner_config_params": [
-                {
-                    "id": 619080,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87784,
-                    "name": "openx",
-                    "params": {
-                        "unit": "3456",
-                        "platform": null,
-                        "delDomain": "abc.com",
-                        "customFloor": null,
-                        "customParams": null
-                    },
-                    "enabled": 0,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-08-21T21:10:28.000Z"
-                },
-                {
-                    "id": 619081,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87784,
-                    "name": "ix",
-                    "params": {
-                        "size": null,
-                        "siteId": "abc.com"
-                    },
-                    "enabled": 1,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-07-17T18:36:06.000Z"
-                },
-                {
-                    "id": 625915,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87784,
-                    "name": "adform",
-                    "params": {
-                        "inv": null,
-                        "mid": "1414158",
-                        "mname": null,
-                        "priceType": null
-                    },
-                    "enabled": 1,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-07-17T18:36:09.000Z"
-                }
-            ]
-        }
+  "id": 450,
+  "member_id": 13859,
+  "bidder_timeout_ms": 500,
+  "price_granularity": {
+    "label": "Auto",
+    "currency_code": "USD",
+    "precision": 2,
+    "ranges": [
+      {
+        "max": 5,
+        "increment": 0.05
+      },
+      {
+        "max": 10,
+        "increment": 0.1
+      },
+      {
+        "max": 20,
+        "increment": 0.5
+      }
     ]
+  },
+  "deleted": 0,
+  "last_modified_by": "user123",
+  "last_modified": "2024-08-21T16:37:24.000Z",
+  "demand_partner_settings": {
+    "appnexus": {
+      "id": 2045,
+      "bid_cpm_adjustment": 0.7,
+      "enabled": 1
+    },
+    "openx": {
+      "id": 2065,
+      "bid_cpm_adjustment": 1,
+      "enabled": 0
+    },
+    "ix": {
+      "id": 2106,
+      "bid_cpm_adjustment": 0.9,
+      "enabled": 1
+    },
+    "adform": {
+      "id": 2110,
+      "bid_cpm_adjustment": 1,
+      "enabled": 1
+    }
+  },
+  "total_configs": 2,
+  "configs": [
+    {
+      "id": 87053,
+      "member_id": 13859,
+      "name": "ConfigName1",
+      "targeting_level_code": 4,
+      "targeting_id": 25172737,
+      "enabled": 1,
+      "targeting_metadata": {
+        "priority": 10
+      },
+      "deleted": 0,
+      "last_modified_by": "user123",
+      "last_modified": "2024-07-17T18:17:56.000Z",
+      "demand_partner_config_params": [
+        {
+          "id": 619584,
+          "member_id": 13859,
+          "prebid_settings_id": 87053,
+          "name": "ix",
+          "params": {
+            "size": null,
+            "siteId": "yyy.com"
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:40.000Z"
+        }
+      ],
+      "psp_profile": {
+        "id": 147870841,
+        "description": "",
+        "country_action": "include",
+        "supply_type_action": "include",
+        "advertiser_id": 11125655,
+        "created_on": "2025-10-23 18:02:50",
+        "country_targets": [
+          {
+            "id": 59,
+            "name": "Germany",
+            "code": "DE",
+            "active": true
+          },
+          {
+            "id": 233,
+            "name": "United States",
+            "code": "US",
+            "active": true
+          }
+        ],
+        "supply_type_targets": [
+          "mobile_app",
+          "mobile_web",
+          "web"
+        ],
+        "ad_type_targets": [
+          {
+            "id": 2,
+            "name": "video"
+          }
+        ],
+        "placement_targets": [
+          {
+            "id": 36707024,
+            "action": "include",
+            "name": "Placement Name 1",
+            "deleted": false,
+            "site_id": 7908985,
+            "site_name": "Placement Group 1",
+            "publisher_id": 2545613,
+            "publisher_name": "Publisher 1"
+          }
+        ]
+      }
+    },
+    {
+      "id": 87784,
+      "member_id": 13859,
+      "name": "ConfigName2",
+      "targeting_level_code": 4,
+      "targeting_id": 25175861,
+      "enabled": 1,
+      "targeting_metadata": {
+        "priority": 10
+      },
+      "deleted": 0,
+      "last_modified_by": "user123",
+      "last_modified": "2024-07-31T21:34:34.000Z",
+      "demand_partner_config_params": [
+        {
+          "id": 619080,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "openx",
+          "params": {
+            "unit": "3456",
+            "platform": null,
+            "delDomain": "abc.com",
+            "customFloor": null,
+            "customParams": null
+          },
+          "enabled": 0,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-08-21T21:10:28.000Z"
+        },
+        {
+          "id": 619081,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "ix",
+          "params": {
+            "size": null,
+            "siteId": "abc.com"
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:06.000Z"
+        },
+        {
+          "id": 625915,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "adform",
+          "params": {
+            "inv": null,
+            "mid": "1414158",
+            "mname": null,
+            "priceType": null
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:09.000Z"
+        }
+      ],
+      "psp_profile": {
+        "id": 147870841,
+        "description": "",
+        "country_action": "include",
+        "supply_type_action": "include",
+        "advertiser_id": 11125655,
+        "created_on": "2025-10-23 18:02:50",
+        "country_targets": [
+          {
+            "id": 59,
+            "name": "Germany",
+            "code": "DE",
+            "active": true
+          },
+          {
+            "id": 233,
+            "name": "United States",
+            "code": "US",
+            "active": true
+          }
+        ],
+        "supply_type_targets": [
+          "mobile_app",
+          "mobile_web",
+          "web"
+        ],
+        "ad_type_targets": [
+          {
+            "id": 2,
+            "name": "video"
+          }
+        ],
+        "placement_targets": [
+          {
+            "id": 36707024,
+            "action": "include",
+            "name": "Placement Name 2",
+            "deleted": false,
+            "site_id": 7908985,
+            "site_name": "Placement Group 2",
+            "publisher_id": 2545613,
+            "publisher_name": "Publisher 2"
+          }
+        ]
+      }
+    }
+  ]
 }
        
 ```

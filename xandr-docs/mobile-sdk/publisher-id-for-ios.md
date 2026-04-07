@@ -16,8 +16,8 @@ This article describes how to use `publisherId` to control which default creativ
 
 Setting `publisherId` on an ad unit determines which default creative is served when an ad request fails at the placement level:
 
-- If `publisherId` is set, a failed request is rerouted to the publisher level default placement.
-- If `publisherId` is not set, a failed request is rerouted to the member level default placement.
+- If `publisherId` is set, a failed request is rerouted to the publisher-level default creative.
+- If `publisherId` is not set, a failed request is rerouted to the member-level default creative.
 
 ## Properties
 
@@ -32,17 +32,25 @@ Set `publisherId` on any ad unit before calling `loadAd`.
 ### [Objective-C](#tab/objectivec1)
 
 ```objectivec
+// Banner
 ANBannerAdView *banner = [ANBannerAdView adViewWithFrame:rect placementId:@"123456" adSize:size];
-banner.publisherId = 12345;
-[banner loadAd];
+banner.publisherId = 12345; // Set publisher ID
+[banner loadAd]; // Load the ad
+// Native
+ANNativeAdRequest *nativeAdRequest = [[ANNativeAdRequest alloc] init];
+nativeAdRequest.publisherId = 12345; // Set publisher ID
 ```
 
 ### [Swift](#tab/swift1)
 
 ```swift
+// Banner
 let banner = ANBannerAdView(frame: rect, placementId: "123456", adSize: size)
-banner.publisherId = 12345
-banner.loadAd()
+banner.publisherId = 12345 // Set publisher ID
+banner.loadAd() // Load the ad
+// Native
+let nativeAdRequest = ANNativeAdRequest()
+nativeAdRequest.publisherId = 12345 // Set publisher ID
 ```
 
 ---
@@ -52,13 +60,19 @@ To retrieve the currently set publisher ID:
 ### [Objective-C](#tab/objectivec2)
 
 ```objectivec
-NSInteger publisherId = banner.publisherId;
+// Banner
+NSInteger publisherId = banner.publisherId; // Get publisher ID
+// Native
+NSInteger nativePublisherId = nativeAdRequest.publisherId; // Get publisher ID
 ```
 
 ### [Swift](#tab/swift2)
 
 ```swift
-let publisherId = banner.publisherId
+// Banner
+let publisherId = banner.publisherId // Get publisher ID
+// Native
+let nativePublisherId = nativeAdRequest.publisherId // Get publisher ID
 ```
 
 ---

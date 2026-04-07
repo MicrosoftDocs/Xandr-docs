@@ -16,8 +16,8 @@ This article describes how to use `publisherId` to control which default creativ
 
 Setting `publisherId` on an ad unit determines which default creative is served when an ad request fails at the placement level:
 
-- If `publisherId` is set, a failed request is rerouted to the publisher level default placement.
-- If `publisherId` is not set, a failed request is rerouted to the member level default placement.
+- If `publisherId` is set, a failed request is rerouted to the publisher-level default creative.
+- If `publisherId` is not set, a failed request is rerouted to the member-level default creative.
 
 ## Methods
 
@@ -33,19 +33,27 @@ Set `publisherId` on any ad unit before calling `loadAd`.
 ### [Java](#tab/java1)
 
 ```java
-BannerAdView adView = new BannerAdView(this);
-adView.setPlacementID("123456");
-adView.setPublisherId(12345);
-adView.loadAd();
+// Banner
+BannerAdView banner = new BannerAdView(this);
+banner.setPlacementID("123456"); // Set placement ID
+banner.setPublisherId(12345); // Set publisher ID
+banner.loadAd(); // Load the ad
+// Native
+NativeAdRequest nativeAdRequest = new NativeAdRequest(this, "123456");
+nativeAdRequest.setPublisherId(12345); // Set publisher ID
 ```
 
 ### [Kotlin](#tab/kotlin1)
 
 ```kotlin
-val adView = BannerAdView(this)
-adView.setPlacementID("123456")
-adView.publisherId = 12345
-adView.loadAd()
+// Banner
+val banner = BannerAdView(this)
+banner.setPlacementID("123456") // Set placement ID
+banner.publisherId = 12345 // Set publisher ID
+banner.loadAd() // Load the ad
+// Native
+val nativeAdRequest = NativeAdRequest(this, "123456")
+nativeAdRequest.publisherId = 12345 // Set publisher ID
 ```
 
 ---
@@ -55,13 +63,19 @@ To retrieve the currently set publisher ID:
 ### [Java](#tab/java2)
 
 ```java
-int publisherId = adView.getPublisherId();
+// Banner
+int publisherId = banner.getPublisherId(); // Get publisher ID
+// Native
+int nativePublisherId = nativeAdRequest.getPublisherId(); // Get publisher ID
 ```
 
 ### [Kotlin](#tab/kotlin2)
 
 ```kotlin
-val publisherId = adView.publisherId
+// Banner
+val publisherId = banner.publisherId // Get publisher ID
+// Native
+val nativePublisherId = nativeAdRequest.publisherId // Get publisher ID
 ```
 
 ---

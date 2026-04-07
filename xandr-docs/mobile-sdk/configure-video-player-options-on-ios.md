@@ -18,27 +18,27 @@ ms.author: shsrinivasan
 > The customization is applied to all the Video ads served through Xandr SDK both Instream, Banner Video (Outstream) and Interstitial Video.
 
 | Property | Default Setting | Description | Ad Units supporting the Setting |
-|---|---|---|
-| **BOOL** `showClickThruControl` | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. | Instream/Banner Video |
-| **NSString** `*clickThruText` | "Learn More" | Customizes the text associated with the ClickThrough Control. |Instream/Banner Video |
+|:---|:---|:---|:---|
+| **BOOL** `showClickThruControl` | true | Determines whether the ClickThrough Control is displayed. Setting it to false makes the entire video clickable. | Instream / Banner Video / Interstitial |
+| **NSString** `*clickThruText` | "Learn More" | Customizes the text associated with the ClickThrough Control. | Instream / Banner Video / Interstitial |
 | **BOOL** `showFullScreenControl` (Banner Video Only) | false | Controls the visibility of the fullscreen button. | Banner Video |
-| **BOOL** `showTopBar` | true | **Deprecated.** Determines whether the top bar, containing ClickThrough and Skip controls, is displayed. This property is no longer functional and will be removed in a future SDK version. | Instream/Banner Video |
-| **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream/Banner Video/Interstitial |
-| **NSString** `*adText` | "Ad" | Customizes the ad text on the video player. | Instream/Banner Video/Interstitial |
-| **BOOL** `showVolumeControl` | true | Controls the visibility of the mute/unmute control. | Instream/Banner Video |
-| **ANInitialAudioSetting** `initialAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state. | Instream/Banner Video |
-| **BOOL** `showSkip` | true | Controls the visibility of the Skip control. | Instream |
-| **NSString** `*skipDescription` | "Skip ad in %%TIME%%" | Customizes Skip Description. | Instream |
-| **NSString** `*skipLabelName` | "Skip ad" | Customizes Skip Label. | Instream |
-| **NSInteger** `*skipOffset` | "5 seconds" | Customizes Skip Offset. | Instream |
-| **BOOL** `forceControlBarVisible` | true | When set to `true`, the video control bar (play/pause, seek, volume, and other controls) remains permanently visible, regardless of user interaction. When set to `false`, the player uses the auto-hide behavior, where the control bar hides after a period of inactivity. | Instream/Banner Video/Interstitial |
+| **BOOL** `showTopBar` | true | **Deprecated.** Determines whether the top bar, containing ClickThrough and Skip controls, is displayed. This property is no longer functional and will be removed in a future SDK version. | Instream / Banner Video |
+| **BOOL** `showAdText` | true | Controls the visibility of the ad text next to the ClickThrough control. | Instream / Banner Video / Interstitial |
+| **NSString** `*adText` | "Ad" | Customizes the ad text on the video player. | Instream / Banner Video / Interstitial |
+| **BOOL** `showVolumeControl` | true | Controls the visibility of the mute/unmute control. | Instream / Banner Video / Interstitial |
+| **ANInitialAudioSetting** `initialAudio` | Sound On (Instream Video), Sound Off ( Banner Video) | Sets the initial audio state. | Instream / Banner Video / Interstitial |
+| **BOOL** `showSkip` | true | Controls the visibility of the Skip control. | Instream / Interstitial |
+| **NSString** `*skipDescription` | "Skip ad in %%TIME%%" | Customizes Skip Description. | Instream / Interstitial |
+| **NSString** `*skipLabelName` | "Skip ad" | Customizes Skip Label. | Instream / Interstitial |
+| **NSInteger** `*skipOffset` | "5 seconds" | Customizes Skip Offset. | Instream / Interstitial |
+| **BOOL** `forceControlBarVisible` | true | When set to `true`, the video control bar (play/pause, seek, volume, and other controls) remains permanently visible, regardless of user interaction. When set to `false`, the player uses the auto-hide behavior, where the control bar hides after a period of inactivity. | Instream / Banner Video / Interstitial |
 
 ## Example
 
 ### [Objective C](#tab/objectivec1)
 
 ```
-// Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
+// Show or hide the ClickThrough control on the video player. Default is YES; setting it to NO makes the entire video clickable
 [[ANVideoPlayerSettings sharedInstance] setShowClickThruControl:NO];
 
 // Change the ClickThrough text on the video player
@@ -47,7 +47,7 @@ ms.author: shsrinivasan
 // Show or hide fullscreen control on the player. This is applicable only for Banner Video
 [[ANVideoPlayerSettings sharedInstance] setShowFullScreenControl:YES];
 
-// Show or hide the top bar that has (ClickThrough & Skip control)
+// Deprecated: this property is no longer functional and will be removed in a future SDK version
 [[ANVideoPlayerSettings sharedInstance] setShowTopBar:YES];
 
 // Show or hide the "Ad" text next to the ClickThrough control
@@ -74,14 +74,14 @@ ms.author: shsrinivasan
 // Change the skip button text on the video player
 [[ANVideoPlayerSettings sharedInstance] setSkipLabelName:@"Test"];
 
-// Configure the skip offset on the video player
+// Configure the skip offset on the video player. Minimum value is 5 seconds; lower values are clamped to 5
 [[ANVideoPlayerSettings sharedInstance] setSkipOffset:2];
 ```
 
 ### [Swift](#tab/swift)
 
 ```
-// Show or Hide the ClickThrough control on the video player. Default is YES, setting it to NO will make the entire video clickable
+// Show or hide the ClickThrough control on the video player. Default is true; setting it to false makes the entire video clickable
 ANVideoPlayerSettings.sharedInstance().showClickThruControl = false
  
 // Change the ClickThrough text on the video player
@@ -90,7 +90,7 @@ ANVideoPlayerSettings.sharedInstance().clickThruText = "SampleText"
 // Show or hide fullscreen control on the player. This is applicable only for Banner Video
 ANVideoPlayerSettings.sharedInstance().showFullScreenControl = true
  
-// Show or hide the top bar that has (ClickThrough & Skip control)
+// Deprecated: this property is no longer functional and will be removed in a future SDK version
 ANVideoPlayerSettings.sharedInstance().showTopBar = true
  
 // Show or hide the "Ad" text next to the ClickThrough control
@@ -117,6 +117,6 @@ ANVideoPlayerSettings.sharedInstance().skipDescription = "Video Skip Demo"
 // Change the skip button text on the video player
 ANVideoPlayerSettings.sharedInstance().skipLabelName = "Test"
  
-// Configure the skip offset on the video player
+// Configure the skip offset on the video player. Minimum value is 5 seconds; lower values are clamped to 5
 ANVideoPlayerSettings.sharedInstance().skipOffset = 2
 ```

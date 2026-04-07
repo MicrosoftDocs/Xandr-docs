@@ -71,7 +71,7 @@ A successful response will return JSON containing the member's cross-partner set
 |:---|:---|:---|
 | `bidder_timeout_ms` | integer | This is defined in the [cross-partner-settings service](cross-partner-settings-service.md). |
 | `configs` | array | Container with the configs objects for the member or a specific configuration object. For items contained in a configuration object, see the [configuration properties](#config-properties) table below. |
-| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
+| `deleted` | integer | Indicates if the object has been deleted. Permitted values are: <br>`0` = active, <br>`1` = deleted |
 | `demand_partner_settings` | array | The demand partner properties. For the items contained in the `demand_partner_settings` object, see the [demand partner settings](#demand-partner-settings) table below. |
 | `id` | integer |  - When the request does not specify a `prebidSettingsId`, the first ID in the response represents the unique [cross-partner settings ID](cross-partner-settings-service.md) for the member. The [configs object](#config-properties) includes the id values of each configuration. <br> - When the request specifies a `prebidSettingsId`, that will be the unique identifier in the response. This id is referred to as prebid_settings_id in other endpoints of this API. |
 | `last_modified` | string | The most recent modification date of the configuration object. |

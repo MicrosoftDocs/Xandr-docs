@@ -1,7 +1,7 @@
 ---
 title: Cross-Partner Settings Service
 description: In this article, learn about the Cross-Partner Settings service, their parameters, session data, and responses with thorough examples.
-ms.date: 10/22/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -31,7 +31,7 @@ A successful response will return JSON containing the member-wide settings.
 | Property | Type | Description |
 |---|---|---|
 | `bidder_timeout_ms` | integer | The maximum time, in milliseconds, that Prebid Server Premium partners and other bidders in our marketplace are given to respond. |
-| `deleted` | boolean | Indicates if the cross-partner setting has been deleted. |
+| `deleted` | integer | Indicates if the cross-partner setting has been deleted. Permitted values are: <br>`0` = active, <br>`1` = deleted|
 | `id` | integer | Unique identifier for the cross-partner setting object. |
 | `last_modified` | string | The last modification date of the cross-partner setting object. |
 | `last_modified_by` | string | The user who last modified the cross-partner setting object. |
@@ -93,7 +93,7 @@ Price granularity defines the CPM price buckets into which demand partner bids w
    },
    "last_modified":"2019-10-31T17:37:50Z",
    "last_modified_by":"user123",
-   "deleted":false
+   "deleted":0
 }            
             
 ```

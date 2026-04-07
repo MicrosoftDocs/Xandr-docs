@@ -23,6 +23,83 @@ The response is a JSON object containing bidder info objects.
 
 ```
 {
+  "1accord": {
+    "status": "ACTIVE",
+    "usesHttps": false,
+    "maintainer": {
+      "email": "tech@nexx360.io"
+    },
+    "capabilities": {
+      "app": {
+        "mediaTypes": [
+          "banner",
+          "video",
+          "native",
+          "audio"
+        ]
+      },
+      "site": {
+        "mediaTypes": [
+          "banner",
+          "video",
+          "native",
+          "audio"
+        ]
+      }
+    },
+    "aliasOf": "nexx360"
+  },
+  "triplelift": {
+    "status": "ACTIVE",
+    "usesHttps": true,
+    "maintainer": {
+      "email": "prebid@triplelift.com"
+    },
+    "capabilities": {
+      "app": {
+        "mediaTypes": [
+          "banner",
+          "video"
+        ]
+      },
+      "site": {
+        "mediaTypes": [
+          "banner",
+          "video"
+        ]
+      }
+    },
+    "pubmatic": {
+      "status": "ACTIVE",
+      "usesHttps": true,
+      "maintainer": {
+        "email": "header-bidding@pubmatic.com"
+      },
+      "capabilities": {
+        "app": {
+          "mediaTypes": [
+            "banner",
+            "video",
+            "native"
+          ]
+        },
+        "site": {
+          "mediaTypes": [
+            "banner",
+            "video",
+            "native"
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+<!-- 
+
+```
+{
   "33across": {
     "capabilities": {
       "app": {
@@ -99,3 +176,4 @@ The response is a JSON object containing bidder info objects.
   },
   ...
 ```
+--> 

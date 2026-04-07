@@ -1,7 +1,7 @@
 ---
 title: Bidder Info Service
 description: In this article, find information about the Bidder Info Service along with an example response.
-ms.date: 10/22/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

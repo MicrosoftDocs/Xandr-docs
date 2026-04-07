@@ -50,8 +50,8 @@ A successful response will return all parameters for the requested Prebid config
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `deleted` | boolean | Indicates whether the params object for this partner has been deleted. |
-| `enabled` | boolean | Indicates if the demand partner is enabled or disabled via the [demand partner service](demand-partner-service.md). |
+| `deleted` | integer | Indicates whether the params object for this partner has been deleted. Values are: <br>0 = active, <br>1 = deleted |
+| `enabled` | integer | Indicates if the demand partner is enabled or disabled via the [demand partner service](demand-partner-service.md). VAlues are:<br> enabled (1), <br> disabled (0) |
 | `id` | integer | The unique identifier for the set of parameters associated with the demand partner in the PSP configuration. |
 | `last_modified` | string | The most recent modification date of the demand partner config params. |
 | `last_modified_by` | string | The person who made the last modifications to the demand partner params. |

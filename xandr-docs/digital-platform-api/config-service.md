@@ -85,7 +85,7 @@ A successful response will return JSON containing the member's cross-partner set
 | Property | Type | Description |
 |:---|:---|:---|
 | `bid_cpm_adjustment` | float | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in the auction. See the [Demand Partner Service](demand-partner-service.md) for more information. |
-| `enabled` | boolean | Indicates if the demand partner has been enabled or disabled. |
+| `enabled` | integer | Indicates if the demand partner has been enabled or disabled. Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `id` | integer | The id for the demand partner settings. |
 | `name` | string | The name of the demand partner. See the [Demand Partner Service](demand-partner-service.md) for more information.|
 
@@ -93,9 +93,9 @@ A successful response will return JSON containing the member's cross-partner set
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `deleted` | boolean | If `true`, indicates that the configuration object is not available for use but its data is still viewable. |
+| `deleted` | integer | Indicates that the configuration object is not available for use but its data is still viewable. Permitted values are: <br>`0` = active, <br>`1` = deleted |
 | `demand_partner_config_params` | array | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#demand-partner-configs-properties) table below. |
-| `enabled` | boolean | Indicates if the configuration is enabled or disabled. |
+| `enabled` | integer | Indicates if the configuration is enabled or disabled. Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `id` | integer | This ID is referred to as `prebid_settings_id` in other endpoints of the API.|
 | `last_modified` | string | The most recent modification date of the configuration. Formatted as date-time. |
 | `last_modified_by` | string | The user who made the last modification to the configuration object.|
@@ -116,8 +116,8 @@ A successful response will return JSON containing the member's cross-partner set
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `deleted` | boolean | If `true`, indicates that the configuration object is not available for use but its data is still viewable. |
-| `enabled` | boolean | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md). |
+| `deleted` | integer | Indicates that the configuration object is not available for use but its data is still viewable. Permitted values are: <br>`0` = active, <br>`1` = deleted |
+| `enabled` | integer | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md).<br>Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `id` | integer | The id of the parameter mappings for the specific demand partner. |
 | `last_modified` | string | The most recent modification date of the `demand_partner_config`. |
 | `last_modified_by` | string | The person who made the last modifications to the `demand_partner_config`. |
@@ -276,7 +276,7 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
             "id": 36707024,
             "action": "include",
             "name": "Placement Name 1",
-            "deleted": false,
+            "deleted": 0,
             "site_id": 7908985,
             "site_name": "Placement Group 1",
             "publisher_id": 2545613,
@@ -384,7 +384,7 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
             "id": 36707024,
             "action": "include",
             "name": "Placement Name 2",
-            "deleted": false,
+            "deleted": 0,
             "site_id": 7908985,
             "site_name": "Placement Group 2",
             "publisher_id": 2545613,
@@ -417,7 +417,7 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#post-demand-partner-configs-properties) table below.|
-| `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
+| `enabled` | integer | Required | Indicates whether the configuration is enabled or disabled. Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `name` | string | Required | The name of the configuration. |
 | `targeting_id` | integer | Required | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. `targeting_metadata.priority` is required. |
@@ -577,7 +577,7 @@ curl -X DELETE https://api.appnexus.com/prebid/config/{prebidSettingsId}
 
 #### DELETE: Response
 
-On success, the configuration indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
+On success, the configuration indicated will be returned as a JSON object with the deleted property set to `1`. It will no longer be available within the system. All sub-objects will also be deleted.
 
 ## Related topics
 

@@ -1,7 +1,7 @@
 ---
 title: Prebid Demand Partner Params Service
 description: Explore the Prebid Demand Partner Params service to manage specific partners on PSP configurations by adding, removing, enabling, disabling, and viewing them.
-ms.date: 10/22/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

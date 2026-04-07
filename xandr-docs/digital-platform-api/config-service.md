@@ -139,6 +139,20 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 | `ranges.max` | integer | The maximum length of the range. |
 | `ranges.increment` | float | The amount to increment through the range. |
 
+### Profile
+
+The `profile` object contains the inventory targeting attributes used to match bid requests to PSP configurations.
+
+The profile is:
+- Automatically generated when using the PSP UI, or  
+- Created from user input through the `psp-campaign-objects` API.
+
+To update a profile, use the [`psp-campaign-objects`](campaign-object-service.md) API. The configuration service returns the `psp_profile` object in `GET` responses only.
+
+| Property | Type | Description |
+|:---|:---|:---|
+| `psp_profile` | object | Determines which publisher bid requests trigger the PSP configuration. For structure and details, see the [profile service](profile-service.md) documentation. This object is created and updated through the PSP UI or the `psp-campaign-objects` service. |
+
 ### Pagination
 
 The number of responses can be limited by passing the `num_elements` argument. Which element to start viewing can be set through the `start_element` argument.

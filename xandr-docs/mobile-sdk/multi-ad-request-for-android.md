@@ -93,7 +93,7 @@ public boolean load()
 
 ### `addAdUnit(Ad adUnit)`
 
-Adds an `AdUnit` to the `ANMultiAdRequest`. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `ANMultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. Returns `true` on success and `false` on failure.
+Adds an `AdUnit` to the `ANMultiAdRequest`. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `ANMultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. If a `publisherId` is set on the `ANMultiAdRequest`, any `AdUnit` with a different `publisherId` will also be rejected. Returns `true` on success and `false` on failure.
 
 ```
 public boolean addAdUnit(Ad adUnit)

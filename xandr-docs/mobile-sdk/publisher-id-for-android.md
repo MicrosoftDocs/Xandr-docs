@@ -1,6 +1,6 @@
 ---
 title: Publisher ID for Android
-description: Use the publisher_id parameter of the Universal Tag service to indicate what action should occur when an ad request fails at the placement level.
+description: Learn how to use publisherId to control which default creative is served when an ad request fails at the placement level on Android.
 ms.custom: android-sdk
 ms.date: 10/22/2025
 ms.service: publisher-monetization
@@ -10,43 +10,62 @@ ms.author: shsrinivasan
 
 # Publisher ID for Android
 
-This article describes the `publisher_id` parameter of the Universal Tag service.  
+This article describes how to use `publisherId` to control which default creative is served when an ad request fails.
 
 ## Overview
 
-The Publisher ID parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. Previously, if the request failed, the Member ID would be used to determine which default creative to return with the request. With the addition of the Publisher ID parameter publishers now have two options for resolving default placements when the request fails, the publisher and the member default placement.
+Setting `publisherId` on an ad unit determines which default creative is served when an ad request fails at the placement level:
 
-## How it works
+- If `publisherId` is set, a failed request is rerouted to the publisher level default placement.
+- If `publisherId` is not set, a failed request is rerouted to the member level default placement.
 
-When an invalid placement code is called:
+## Methods
 
-- If a `publisher_id` is present in the JSON request, the request will be rerouted to the publisher level default  placement.
-- When there is no `publisher_id` in the JSON request, the request will be rerouted to the member level default placement.
+| Method | Description |
+|:---|:---|
+| `public void setPublisherId(int publisherId)` | Sets the publisher ID on the ad unit. |
+| `public int getPublisherId()` | Returns the currently set publisher ID. |
 
-## Ad unit methods for publisher ID
+## Example
 
-The [AdUnit](./android-sdk-ad-units.md) class has two methods for setting and retrieving `publisherId`.
+Set `publisherId` on any ad unit before calling `loadAd`.
 
-### Setter method
+### [Java](#tab/java1)
 
-```
-public void setPublisherId(int publisherId)
-```
-
-### Getter method
-
-```
-public int getPublisherId() 
-```
-
-## Multi ad request changes
-
-Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` be initialized, `publisherId` is an optional setting. The `memberId`, `delegate` and `publisherId` may only be set during initialization. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process. See [ANMultiAdRequest](./multi-ad-request-for-android.md) for more details.
-
-```
-public ANMultiAdRequest(Context context, int memberId, int publisherId, MultiAdRequestListener multiAdRequestListener, boolean loadOnInit, Ad... ads)
-public ANMultiAdRequest(Context context, int memberId, int publisherId, MultiAdRequestListener multiAdRequestListener)
+```java
+BannerAdView adView = new BannerAdView(this);
+adView.setPlacementID("123456");
+adView.setPublisherId(12345);
+adView.loadAd();
 ```
 
-> [!NOTE]
-> The `addAdUnit` method of the `ANMultiAdRequest` will read the attached `publisher_id` of the `AdUnit`. If that value does not match the `publisherId` set to the `ANMultiAdRequest` instance, the `ANMultiAdRequest` instance will reject the `AdUnit`.
+### [Kotlin](#tab/kotlin1)
+
+```kotlin
+val adView = BannerAdView(this)
+adView.setPlacementID("123456")
+adView.publisherId = 12345
+adView.loadAd()
+```
+
+---
+
+To retrieve the currently set publisher ID:
+
+### [Java](#tab/java2)
+
+```java
+int publisherId = adView.getPublisherId();
+```
+
+### [Kotlin](#tab/kotlin2)
+
+```kotlin
+val publisherId = adView.publisherId
+```
+
+---
+
+## Multi ad request
+
+`publisherId` can optionally be set when initializing `ANMultiAdRequest`. For initialization options and full usage, see [Multi Ad Request for Android](./multi-ad-request-for-android.md).

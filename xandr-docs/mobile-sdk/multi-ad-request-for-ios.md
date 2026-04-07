@@ -167,7 +167,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 - **`addAdUnit`**  
 
-  Adds an `AdUnit` to the ANMultiAdRequest. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `MultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. Returns `YES` on success and `NO` on failure.
+  Adds an `AdUnit` to the ANMultiAdRequest. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `MultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. If a `publisherId` is set on the `ANMultiAdRequest`, any `AdUnit` with a different `publisherId` will also be rejected. Returns `YES` on success and `NO` on failure.
 
   ```
   - (BOOL)addAdUnit:(nonnull id<ANAdProtocolFoundation>)adunit;

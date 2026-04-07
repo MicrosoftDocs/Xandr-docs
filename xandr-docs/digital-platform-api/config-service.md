@@ -1,7 +1,7 @@
 ---
 title: Config Service
 description: Learn about the Configuration service, their REST API, parameters, JSON requests, and responses with thorough examples.
-ms.date: 10/30/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -71,7 +71,7 @@ A successful response will return JSON containing the member's cross-partner set
 |:---|:---|:---|
 | `bidder_timeout_ms` | integer | This is defined in the [cross-partner-settings service](cross-partner-settings-service.md). |
 | `configs` | array | Container with the configs objects for the member or a specific configuration object. For items contained in a configuration object, see the [configuration properties](#config-properties) table below. |
-| `deleted` | boolean | If `true`, indicates that the config object is not available for use but its data is still viewable. |
+| `deleted` | integer | Indicates if the object has been deleted. Permitted values are: <br>`0` = active, <br>`1` = deleted |
 | `demand_partner_settings` | array | The demand partner properties. For the items contained in the `demand_partner_settings` object, see the [demand partner settings](#demand-partner-settings) table below. |
 | `id` | integer |  - When the request does not specify a `prebidSettingsId`, the first ID in the response represents the unique [cross-partner settings ID](cross-partner-settings-service.md) for the member. The [configs object](#config-properties) includes the id values of each configuration. <br> - When the request specifies a `prebidSettingsId`, that will be the unique identifier in the response. This id is referred to as prebid_settings_id in other endpoints of this API. |
 | `last_modified` | string | The most recent modification date of the configuration object. |
@@ -85,7 +85,7 @@ A successful response will return JSON containing the member's cross-partner set
 | Property | Type | Description |
 |:---|:---|:---|
 | `bid_cpm_adjustment` | float | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in the auction. See the [Demand Partner Service](demand-partner-service.md) for more information. |
-| `enabled` | boolean | Indicates if the demand partner has been enabled or disabled. |
+| `enabled` | integer | Indicates if the demand partner has been enabled or disabled. Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `id` | integer | The id for the demand partner settings. |
 | `name` | string | The name of the demand partner. See the [Demand Partner Service](demand-partner-service.md) for more information.|
 
@@ -93,9 +93,9 @@ A successful response will return JSON containing the member's cross-partner set
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `deleted` | boolean | If `true`, indicates that the configuration object is not available for use but its data is still viewable. |
+| `deleted` | integer | Indicates that the configuration object is not available for use but its data is still viewable. Permitted values are: <br>`0` = active, <br>`1` = deleted |
 | `demand_partner_config_params` | array | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#demand-partner-configs-properties) table below. |
-| `enabled` | boolean | Indicates if the configuration is enabled or disabled. |
+| `enabled` | integer | Indicates if the configuration is enabled or disabled. Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `id` | integer | This ID is referred to as `prebid_settings_id` in other endpoints of the API.|
 | `last_modified` | string | The most recent modification date of the configuration. Formatted as date-time. |
 | `last_modified_by` | string | The user who made the last modification to the configuration object.|
@@ -104,6 +104,7 @@ A successful response will return JSON containing the member's cross-partner set
 | `targeting_level_code` | integer | The type of object associated with the configuration: <br> - `4` line item/targeting profile|
 | `targeting_id` | integer | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
 | `targeting_metadata` | object | Includes modifiers for the targeting object. For details about the items contained in the `targeting_metadata` object, see the [Targeting Metadata Properties](#targeting-metadata-properties) table. The `targeting_metadata.priority` field is required. |
+|`psp_profile`|object|The `profile` object defines the inventory targeting attributes used to match bid requests to PSP configurations.<br><br>The profile is either:<br>1. Automatically generated when using the PSP UI, or  <br>2. Created based on user input through the `psp-campaign-objects` API. <br><br>To modify a profile, use the [`psp-campaign-objects`](campaign-object-service.md) API. The configuration service returns the `psp_profile` object in `GET` responses only.|
 
 ### Targeting metadata properties
 
@@ -115,8 +116,8 @@ A successful response will return JSON containing the member's cross-partner set
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `deleted` | boolean | If `true`, indicates that the configuration object is not available for use but its data is still viewable. |
-| `enabled` | boolean | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md). |
+| `deleted` | integer | Indicates that the configuration object is not available for use but its data is still viewable. Permitted values are: <br>`0` = active, <br>`1` = deleted |
+| `enabled` | integer | Indicates if the Demand Partner has been enabled or disabled. For more information, see the [Demand Partner Service](demand-partner-service.md).<br>Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `id` | integer | The id of the parameter mappings for the specific demand partner. |
 | `last_modified` | string | The most recent modification date of the `demand_partner_config`. |
 | `last_modified_by` | string | The person who made the last modifications to the `demand_partner_config`. |
@@ -137,6 +138,20 @@ Price granularity defines the CPM price buckets into which demand partner bids w
 | `ranges` | object | Container object describing the price granularity range. |
 | `ranges.max` | integer | The maximum length of the range. |
 | `ranges.increment` | float | The amount to increment through the range. |
+
+### Profile
+
+The `profile` object contains the inventory targeting attributes used to match bid requests to PSP configurations.
+
+The profile is:
+- Automatically generated when using the PSP UI, or  
+- Created from user input through the `psp-campaign-objects` API.
+
+To update a profile, use the [`psp-campaign-objects`](campaign-object-service.md) API. The configuration service returns the `psp_profile` object in `GET` responses only.
+
+| Property | Type | Description |
+|:---|:---|:---|
+| `psp_profile` | object | Determines which publisher bid requests trigger the PSP configuration. For structure and details, see the [profile service](profile-service.md) documentation. This object is created and updated through the PSP UI or the `psp-campaign-objects` service. |
 
 ### Pagination
 
@@ -160,149 +175,239 @@ GET https://api.appnexus.com/prebid/config?num_element=15&start_element=10
 ```
 
 {
-    "id": 450,
-    "member_id": 13859,
-    "bidder_timeout_ms": 500,
-    "price_granularity": {
-        "label": "Auto",
-        "currency_code": "USD",
-        "precision": 2,
-        "ranges": [
-            {
-                "max": 5,
-                "increment": 0.05
-            },
-            {
-                "max": 10,
-                "increment": 0.1
-            },
-            {
-                "max": 20,
-                "increment": 0.5
-            }
-        ]
-    },
-    "deleted": 0,
-    "last_modified_by": "user123",
-    "last_modified": "2024-08-21T16:37:24.000Z",
-    "demand_partner_settings": {
-        "appnexus": {
-            "id": 2045,
-            "bid_cpm_adjustment": 0.7,
-            "enabled": 1
-        },
-        "openx": {
-            "id": 2065,
-            "bid_cpm_adjustment": 1,
-            "enabled": 0
-        },
-        "ix": {
-            "id": 2106,
-            "bid_cpm_adjustment": 0.9,
-            "enabled": 1
-        },
-        "adform": {
-            "id": 2110,
-            "bid_cpm_adjustment": 1,
-            "enabled": 1
-        }
-    },
-    "total_configs": 2,
-    "configs": [
-        {
-            "id": 87053,
-            "member_id": 13859,
-            "name": "ConfigName1",
-            "targeting_level_code": 4,
-            "targeting_id": 25172737,
-            "enabled": 1,
-            "targeting_metadata": {
-                "priority": 10
-            },
-            "deleted": 0,
-            "last_modified_by": "user123",
-            "last_modified": "2024-07-17T18:17:56.000Z",
-            "demand_partner_config_params": [
-                {
-                    "id": 619584,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87053,
-                    "name": "ix",
-                    "params": {
-                        "size": null,
-                        "siteId": "yyy.com"
-                    },
-                    "enabled": 1,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-07-17T18:36:40.000Z"
-                }
-            ]
-        },
-        {
-            "id": 87784,
-            "member_id": 13859,
-            "name": "ConfigName2",
-            "targeting_level_code": 4,
-            "targeting_id": 25175861,
-            "enabled": 1,
-            "targeting_metadata": {
-                "priority": 10
-            },
-            "deleted": 0,
-            "last_modified_by": "user123",
-            "last_modified": "2024-07-31T21:34:34.000Z",
-            "demand_partner_config_params": [
-                {
-                    "id": 619080,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87784,
-                    "name": "openx",
-                    "params": {
-                        "unit": "3456",
-                        "platform": null,
-                        "delDomain": "abc.com",
-                        "customFloor": null,
-                        "customParams": null
-                    },
-                    "enabled": 0,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-08-21T21:10:28.000Z"
-                },
-                {
-                    "id": 619081,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87784,
-                    "name": "ix",
-                    "params": {
-                        "size": null,
-                        "siteId": "abc.com"
-                    },
-                    "enabled": 1,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-07-17T18:36:06.000Z"
-                },
-                {
-                    "id": 625915,
-                    "member_id": 13859,
-                    "prebid_settings_id": 87784,
-                    "name": "adform",
-                    "params": {
-                        "inv": null,
-                        "mid": "1414158",
-                        "mname": null,
-                        "priceType": null
-                    },
-                    "enabled": 1,
-                    "deleted": 0,
-                    "last_modified_by": "user123",
-                    "last_modified": "2024-07-17T18:36:09.000Z"
-                }
-            ]
-        }
+  "id": 450,
+  "member_id": 13859,
+  "bidder_timeout_ms": 500,
+  "price_granularity": {
+    "label": "Auto",
+    "currency_code": "USD",
+    "precision": 2,
+    "ranges": [
+      {
+        "max": 5,
+        "increment": 0.05
+      },
+      {
+        "max": 10,
+        "increment": 0.1
+      },
+      {
+        "max": 20,
+        "increment": 0.5
+      }
     ]
+  },
+  "deleted": 0,
+  "last_modified_by": "user123",
+  "last_modified": "2024-08-21T16:37:24.000Z",
+  "demand_partner_settings": {
+    "appnexus": {
+      "id": 2045,
+      "bid_cpm_adjustment": 0.7,
+      "enabled": 1
+    },
+    "openx": {
+      "id": 2065,
+      "bid_cpm_adjustment": 1,
+      "enabled": 0
+    },
+    "ix": {
+      "id": 2106,
+      "bid_cpm_adjustment": 0.9,
+      "enabled": 1
+    },
+    "adform": {
+      "id": 2110,
+      "bid_cpm_adjustment": 1,
+      "enabled": 1
+    }
+  },
+  "total_configs": 2,
+  "configs": [
+    {
+      "id": 87053,
+      "member_id": 13859,
+      "name": "ConfigName1",
+      "targeting_level_code": 4,
+      "targeting_id": 25172737,
+      "enabled": 1,
+      "targeting_metadata": {
+        "priority": 10
+      },
+      "deleted": 0,
+      "last_modified_by": "user123",
+      "last_modified": "2024-07-17T18:17:56.000Z",
+      "demand_partner_config_params": [
+        {
+          "id": 619584,
+          "member_id": 13859,
+          "prebid_settings_id": 87053,
+          "name": "ix",
+          "params": {
+            "size": null,
+            "siteId": "yyy.com"
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:40.000Z"
+        }
+      ],
+      "psp_profile": {
+        "id": 147870841,
+        "description": "",
+        "country_action": "include",
+        "supply_type_action": "include",
+        "advertiser_id": 11125655,
+        "created_on": "2025-10-23 18:02:50",
+        "country_targets": [
+          {
+            "id": 59,
+            "name": "Germany",
+            "code": "DE",
+            "active": true
+          },
+          {
+            "id": 233,
+            "name": "United States",
+            "code": "US",
+            "active": true
+          }
+        ],
+        "supply_type_targets": [
+          "mobile_app",
+          "mobile_web",
+          "web"
+        ],
+        "ad_type_targets": [
+          {
+            "id": 2,
+            "name": "video"
+          }
+        ],
+        "placement_targets": [
+          {
+            "id": 36707024,
+            "action": "include",
+            "name": "Placement Name 1",
+            "deleted": 0,
+            "site_id": 7908985,
+            "site_name": "Placement Group 1",
+            "publisher_id": 2545613,
+            "publisher_name": "Publisher 1"
+          }
+        ]
+      }
+    },
+    {
+      "id": 87784,
+      "member_id": 13859,
+      "name": "ConfigName2",
+      "targeting_level_code": 4,
+      "targeting_id": 25175861,
+      "enabled": 1,
+      "targeting_metadata": {
+        "priority": 10
+      },
+      "deleted": 0,
+      "last_modified_by": "user123",
+      "last_modified": "2024-07-31T21:34:34.000Z",
+      "demand_partner_config_params": [
+        {
+          "id": 619080,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "openx",
+          "params": {
+            "unit": "3456",
+            "platform": null,
+            "delDomain": "abc.com",
+            "customFloor": null,
+            "customParams": null
+          },
+          "enabled": 0,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-08-21T21:10:28.000Z"
+        },
+        {
+          "id": 619081,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "ix",
+          "params": {
+            "size": null,
+            "siteId": "abc.com"
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:06.000Z"
+        },
+        {
+          "id": 625915,
+          "member_id": 13859,
+          "prebid_settings_id": 87784,
+          "name": "adform",
+          "params": {
+            "inv": null,
+            "mid": "1414158",
+            "mname": null,
+            "priceType": null
+          },
+          "enabled": 1,
+          "deleted": 0,
+          "last_modified_by": "user123",
+          "last_modified": "2024-07-17T18:36:09.000Z"
+        }
+      ],
+      "psp_profile": {
+        "id": 147870841,
+        "description": "",
+        "country_action": "include",
+        "supply_type_action": "include",
+        "advertiser_id": 11125655,
+        "created_on": "2025-10-23 18:02:50",
+        "country_targets": [
+          {
+            "id": 59,
+            "name": "Germany",
+            "code": "DE",
+            "active": true
+          },
+          {
+            "id": 233,
+            "name": "United States",
+            "code": "US",
+            "active": true
+          }
+        ],
+        "supply_type_targets": [
+          "mobile_app",
+          "mobile_web",
+          "web"
+        ],
+        "ad_type_targets": [
+          {
+            "id": 2,
+            "name": "video"
+          }
+        ],
+        "placement_targets": [
+          {
+            "id": 36707024,
+            "action": "include",
+            "name": "Placement Name 2",
+            "deleted": 0,
+            "site_id": 7908985,
+            "site_name": "Placement Group 2",
+            "publisher_id": 2545613,
+            "publisher_name": "Publisher 2"
+          }
+        ]
+      }
+    }
+  ]
 }
        
 ```
@@ -326,7 +431,7 @@ curl -d @config.json -X POST --header "Content-Type: application/json" 'https://
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `demand_partner_config_params` | array | Required | A container with the demand partner's adapter parameters and the values they will receive in bid requests from PSP. For items contained in the `demand_partner_config_params` object, see the [demand partner configs properties](#post-demand-partner-configs-properties) table below.|
-| `enabled` | boolean | Required | Indicates whether the configuration is enabled or disabled. |
+| `enabled` | integer | Required | Indicates whether the configuration is enabled or disabled. Permitted values are:<br>`1`= enabled, <br>`0`= disabled |
 | `name` | string | Required | The name of the configuration. |
 | `targeting_id` | integer | Required | The identifier of the object that the configuration is associated with (for example, a line item). Requests are sent to demand partners when the bid request matches the targeting of the line item or profile. The line item must be a 'psp' subtype, created by the [PSP campaign objects service](campaign-object-service.md), which automatically creates and links the line item to the profile.|
 | `targeting_metadata` | object | Optional | Includes modifiers for the targeting object. See the [Targeting Metadata Properties](#targeting-metadata-properties) table for items contained in the `targeting_metadata` object. `targeting_metadata.priority` is required. |
@@ -486,7 +591,7 @@ curl -X DELETE https://api.appnexus.com/prebid/config/{prebidSettingsId}
 
 #### DELETE: Response
 
-On success, the configuration indicated will be returned as a JSON object with the deleted property set to `true`. It will no longer be available within the system. All sub-objects will also be deleted.
+On success, the configuration indicated will be returned as a JSON object with the deleted property set to `1`. It will no longer be available within the system. All sub-objects will also be deleted.
 
 ## Related topics
 

@@ -1,7 +1,7 @@
 ---
 title: Demand Partner Service
 description: Use the Demand Partner service to return all demand partners for the caller's member.
-ms.date: 10/22/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -13,7 +13,7 @@ The Demand Partner Service returns all demand partners for the caller's member. 
 
 In the context of PSP, demand partners, usually supply-side platforms (SSPs) like, create adapters for Prebid Server that receive and interpret header bidding ad requests. Demand partners hold an auction among their demand sources (usually demand-side-platforms (DSPs)) to collect bids on those ad requests and send the bids back to PSP, which holds another auction.
 
-Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner.md). Setting a demand partner to `enabled: false` pauses all bid requests to that partner across all configurations until the setting is restored to `true`. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations.md).
+Before a demand partner can be added to a configuration, they must be enabled via this service or [through the UI](../monetize/add-or-edit-a-demand-partner.md). Setting a demand partner to `enabled: 0` pauses all bid requests to that partner across all configurations until the setting is restored to `1`. The list of demand partners compatible with PSP [can be found here](../monetize/prebid-server-premium-demand-partner-integrations.md).
 
 ## REST API
 
@@ -34,8 +34,8 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
 | Property | Type | Description |
 |:---|:---|:---|
 | `bid_cpm_adjustment` | integer | A multiplier value applied to the Demand Partner's CPM bid price to adjust how the bids compete in auction. This does not change the actual bid or revenue payout, only the ranking of the bid in the auction. The default value is 1.00. In this case all partners' bids compete equally with no adjustments. The adjustment can be used to account for partner fees or for optimization. If you need CPM adjustments at a level more granular than Demand Partner, see [Create a Bias Rule](../monetize/create-a-bias-rule.md). |
-| `deleted` | boolean | This indicates that the demand partner object has been deleted from the system. |
-| `enabled` | boolean | Indicates if the demand partner is enabled or disabled. |
+| `deleted` | integer | This indicates that the demand partner object has been deleted from the system. Permitted values are:<br> `0` = active, <br> `1` = deleted |
+| `enabled` | integer | Indicates if the demand partner is enabled or disabled. Permitted values are:<br> `0` = disabled, <br>`1` = enabled  |
 | `id` | integer | The demand partner ID specific to the caller's member. |
 | `last_modified` | string | The date that the demand partner object was modified. |
 | `last_modified_by` | string | The user who last modified the demand partner object. |
@@ -58,8 +58,8 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
 [
     {
         "bid_cpm_adjustment": 2,
-        "deleted": false,
-        "enabled": true,
+        "deleted": 0,
+        "enabled": 1,
         "id": 102,
         "last_modified": "2019-09-13T17:39:36Z",
         "last_modified_by":"user123",
@@ -125,7 +125,7 @@ curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-par
 | Property | Type | Scope | Description |
 |:---|:---|:---|:---|
 | `bid_cpm_adjustment` | integer | Required | The bid CPM adjustment. |
-| `enabled` | boolean | Required | Indicates if the demand partner is enabled or disabled. |
+| `enabled` | integer | Required | Indicates if the demand partner is enabled or disabled. Permitted values are:<br> `0` = disabled, <br>`1` = enabled|
 | `name` | string | Required | The name of the demand partner. |
 | `pub_id_settings` | object | Required | The options relevant to the publisher-provided user ids. See [publisher provided ID settings table](#publisher-provided-id-settings) above. |
 
@@ -134,7 +134,7 @@ curl -d @demand-partner.json -X POST 'https://api.appnexus.com/prebid/demand-par
 ```
 {
     "bid_cpm_adjustment": 1,
-    "enabled": true,
+    "enabled": 1,
     "name": "test-demand-partner",
     "pub_id_settings": {
         "sources": [
@@ -156,8 +156,8 @@ A successful response will return the new demand partner as a JSON object.
 ```
 {
     "bid_cpm_adjustment": 1,
-    "deleted": false,
-    "enabled": true,
+    "deleted": 0,
+    "enabled": 1,
     "id": 999,
     "last_modified": "2020-02-25T18:32:31Z",
     "last_modified_by":"user123",

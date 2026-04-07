@@ -1,7 +1,7 @@
 ---
 title: Prebid Demand Partner Params Service
 description: Explore the Prebid Demand Partner Params service to manage specific partners on PSP configurations by adding, removing, enabling, disabling, and viewing them.
-ms.date: 10/22/2025
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -50,8 +50,8 @@ A successful response will return all parameters for the requested Prebid config
 
 | Property | Type | Description |
 |:---|:---|:---|
-| `deleted` | boolean | Indicates whether the params object for this partner has been deleted. |
-| `enabled` | boolean | Indicates if the demand partner is enabled or disabled via the [demand partner service](demand-partner-service.md). |
+| `deleted` | integer | Indicates whether the params object for this partner has been deleted. Permitted values are: <br>`0` = active, <br>`1` = deleted |
+| `enabled` | integer | Indicates if the demand partner is enabled or disabled via the [demand partner service](demand-partner-service.md). Permitted values are:<br> `1` = enabled, <br> `0` = disabled |
 | `id` | integer | The unique identifier for the set of parameters associated with the demand partner in the PSP configuration. |
 | `last_modified` | string | The most recent modification date of the demand partner config params. |
 | `last_modified_by` | string | The person who made the last modifications to the demand partner params. |
@@ -185,7 +185,7 @@ curl -X DELETE https://api.appnexus.com/prebid/prebid-demand-partner-params/{pre
 
 ### `DELETE`: Response
 
-On success the Prebid demand partner param object is returned as a JSON object with the deleted property set to true. The Prebid demand partner params will no longer be available in the system. Any sub-objects will also be deleted.
+On success the Prebid demand partner param object is returned as a JSON object with the deleted property set to `1`. The Prebid demand partner params will no longer be available in the system. Any sub-objects will also be deleted.
 
 ## Related topics
 

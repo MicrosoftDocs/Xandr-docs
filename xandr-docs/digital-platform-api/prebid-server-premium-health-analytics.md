@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Health Analytics
 description: Explore the Prebid Server Premium (PSP) Health Analytics report, enabling users to analyze bid requests and transactions with their configured Demand Partners.
-ms.date: 3/20/2026
+ms.date: 4/7/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan

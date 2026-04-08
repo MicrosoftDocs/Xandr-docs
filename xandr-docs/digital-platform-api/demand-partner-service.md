@@ -78,8 +78,8 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     },
     {
         "bid_cpm_adjustment": 1,
-        "deleted": false,
-        "enabled": true,
+        "deleted": 0,
+        "enabled": 1,
         "id": 65,
         "last_modified": "2018-11-02T15:33:54Z",
         "last_modified_by":"user123",
@@ -89,8 +89,8 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     },
     {
         "bid_cpm_adjustment": 1,
-        "deleted": false,
-        "enabled": true,
+        "deleted": 0,
+        "enabled": 1,
         "id": 68,
         "last_modified": "2018-11-02T18:32:03Z",
         "last_modified_by":"user123",
@@ -100,8 +100,8 @@ Get all or a specific demand partner. To retrieve a specific demand partner, app
     },
     {
         "bid_cpm_adjustment": 1,
-        "deleted": false,
-        "enabled": true,
+        "deleted": 0,
+        "enabled": 1,
         "id": 69,
         "last_modified": "2018-11-02T18:32:31Z",
         "last_modified_by":"user123",

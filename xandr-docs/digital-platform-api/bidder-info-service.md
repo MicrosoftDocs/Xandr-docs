@@ -68,112 +68,31 @@ The response is a JSON object containing bidder info objects.
           "video"
         ]
       }
+    }
+  },
+  "pubmatic": {
+    "status": "ACTIVE",
+    "usesHttps": true,
+    "maintainer": {
+      "email": "header-bidding@pubmatic.com"
     },
-    "pubmatic": {
-      "status": "ACTIVE",
-      "usesHttps": true,
-      "maintainer": {
-        "email": "header-bidding@pubmatic.com"
+    "capabilities": {
+      "app": {
+        "mediaTypes": [
+          "banner",
+          "video",
+          "native"
+        ]
       },
-      "capabilities": {
-        "app": {
-          "mediaTypes": [
-            "banner",
-            "video",
-            "native"
-          ]
-        },
-        "site": {
-          "mediaTypes": [
-            "banner",
-            "video",
-            "native"
-          ]
-        }
+      "site": {
+        "mediaTypes": [
+          "banner",
+          "video",
+          "native"
+        ]
       }
     }
   }
 }
 ```
 
-<!-- 
-
-```
-{
-  "33across": {
-    "capabilities": {
-      "app": {
-        "mediaTypes": [
-          "banner"
-        ]
-      },
-      "site": {
-        "mediaTypes": [
-          "banner"
-        ]
-      }
-    },
-    "maintainer": {
-      "email": "dev@33across.com"
-    },
-    "status": "ACTIVE"
-  },
-  "adform": {
-    "capabilities": {
-      "app": {
-        "mediaTypes": [
-          "banner"
-        ]
-      },
-      "site": {
-        "mediaTypes": [
-          "banner"
-        ]
-      }
-    },
-    "maintainer": {
-      "email": "scope.sspp@adform.com"
-    },
-    "status": "ACTIVE"
-  },
-  "adkernel": {
-    "capabilities": {
-      "app": {
-        "mediaTypes": [
-          "banner"
-        ]
-      },
-      "site": {
-        "mediaTypes": [
-          "banner",
-          "video"
-        ]
-      }
-    },
-    "maintainer": {
-      "email": "prebid-dev@adkernel.com"
-    },
-    "status": "ACTIVE"
-  },
-  "adkernelAdn": {
-    "capabilities": {
-      "app": {
-        "mediaTypes": [
-          "banner"
-        ]
-      },
-      "site": {
-        "mediaTypes": [
-          "banner",
-          "video"
-        ]
-      }
-    },
-    "maintainer": {
-      "email": "prebid-dev@adkernel.com"
-    },
-    "status": "ACTIVE"
-  },
-  ...
-```
---> 

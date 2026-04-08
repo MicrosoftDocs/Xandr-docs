@@ -74,10 +74,10 @@ All `ANMultiAdRequest` configuration properties and methods are the same in ty
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| `memberId` | int | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | int | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected by Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
 | `age` | String | The user's age. |
 | `gender` | AdView.GENDER | The user's gender. |
-| `externalUid` | String | User generated ID that can be mapped with Xandr's internal IDs and that mapping shared amongst the members of clients with multiple seats. |
+| `externalUid` | String | User generated ID that can be mapped with Monetize UUID2 and that mapping shared amongst the members of clients with multiple seats. |
 | `customKeyword` | ArrayList<Pair<String, String>> | Custom keywords applied to the `ANMultiAdRequest`. These keywords will be inherited by the attached AdUnits. This list can be supplemented within each `AdUnit` with additional custom keywords. |
 | `AdUnit` | Ad | An AdUnit item to add to the `ANMultiAdRequest`. |
 
@@ -85,7 +85,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in ty
 
 ### `load()`
 
-Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `Listner` methods is fired. Returns `true` on success and `false` on failure.
+Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `Listner` methods is fired. Returns `true` on success and `false` on failure.
 
 ```
 public boolean load()

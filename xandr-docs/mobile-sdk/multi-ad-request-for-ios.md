@@ -114,7 +114,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 | Parameter | Type | Attributes | Description |
 |:---|:---|:---|:---|
-| `memberId` | NSInteger | readonly | A member ID. Any `AdUnits` contained within the `MultiAdRequest` must have identical `memberIds` or the `MultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | NSInteger | readonly | A member ID. Any `AdUnits` contained within the `MultiAdRequest` must have identical `memberIds` or the `MultiAdRequest` will be rejected by Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
 | `location` | ANLocation | readwrite | The user location. `Location` can be set with `horizontalAccuracy` and a `precision` level. See [Location Methods](#location-methods) below. |
 | `age` | NSString | readwrite | The user's age. |
 | `gender` | ANGender | readwrite | The user's gender. |
@@ -159,7 +159,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 - **`load`**  
 
-  Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `MultiAdRequestDelegate` methods is fired. Returns `YES` on success and `NO` on failure.
+  Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `MultiAdRequestDelegate` methods is fired. Returns `YES` on success and `NO` on failure.
 
   ```
   - (BOOL)load;

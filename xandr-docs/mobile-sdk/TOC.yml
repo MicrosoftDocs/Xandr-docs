@@ -55,7 +55,7 @@
         href: show-interstitials-ads-on-ios.md
       - name: Show Native Ads
         href: show-native-ads-on-ios.md
-      - name: Show Banner Video/OutStream Ads
+      - name: Show Banner Video (Outstream) ads
         href: show-multi-format-banner-ads-on-ios.md
       - name: Show Instream Video Ads
         href: show-instream-video-ads-on-ios.md
@@ -169,7 +169,7 @@
         href: show-instream-video-ads-on-android.md
       - name: Show Interstitials
         href: show-interstitials-on-android.md
-      - name: Show Banner Video/OutStream Ads
+      - name: Show Banner Video (Outstream) ads
         href: show-banner-video-outstream-ads-on-android.md
       - name: Show Native Ads
         href: show-native-ads-on-android.md

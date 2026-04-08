@@ -63,13 +63,16 @@ Data retention period for this report is 99 days.
 | `demand_partner_name` | string | no | `"PubMatic (PSP)"` | The name of the partner to which the request was sent and from which the response (if any) was received. |
 | `device_browser_id` | int | yes | `8` | The ID of the browser used on the device. For example, Chrome, Safari, etc. |
 | `device_browser_name` | string | no | `"Chrome (all versions)"` | The name of the browser used on the device. For example, Chrome, Safari, etc. |
+| `device_browser` | string | no | `"Chrome (all versions)(8)"` | A string consisting of the device type name and ID. |
 | `device_os_extended_id` | int | yes | `137` | The ID of the specific version of the operating system. For example, iOS 16.0.0. |
 | `device_os_extended_name` | string | no | `"Windows 10"` | The name of the specific version of the operating system. For example, iOS 16.0.0. |
+| `device_os_extended` | string | no | `"Windows 10 (137)"` | A string consisting of the specific OS version name and ID. |
 | `device_os_family` | string | no | `"Android (2)"` | A string consisting of the device OS family name and ID. |
 | `device_os_family_id` | int | yes | `2` | The ID of the operating system of the device. For example, Microsoft Windows, Apple iOS, etc. |
 | `device_os_family_name` | string | no | `"Android"` | The name of the operating system of the device. For example, Microsoft Windows, Apple iOS, etc. |
 | `device_type_id` | int | yes | `1` | The category of device: <br>- `0` = Unknown<br>- `1` = desktops & laptops<br>- `2` = mobile phones<br>- `3` = Tablet<br>- `4` = tv<br>- `5` = game consoles<br>- `6` = media players<br>- `7` = set top box |
 | `device_type_name` | string | yes | `"mobile phones"` | The name of the category of device (desktops & laptops, mobile phones, etc.). |
+| `device_type` | string | yes | `"mobile phones(2)"` | A string consisting of the device type name and ID. |
 | `external_creative_id` | string | yes | `987654` | The external ID associated with the creative served. |
 | `geo_country` | string | yes | `"US"` | The code of the country/region in which the impression served. For example, US. |
 | `geo_country_name` | string | No | `"United States"` | The name of the country/region in which the impression served. For example, United States. |
@@ -87,7 +90,7 @@ Data retention period for this report is 99 days.
 | `placement.code3` | string | no | `"placement_code_3"` | The code of the Monetize placement for the impression.|
 | `placement_name` | string | no | `"My Placement"` | The name of the placement through which the request originated. |
 | `psp_config_id` | int | yes | `10000` |  Unique identifier for the PSP configuration via the [config service](../digital-platform-api/config-service.md). Currently only reportable on `bid_responses_received`, `valid_bid_on_imps`, and `imps_delivered`. Will be updated to cover other metrics in the future. |
-| `psp_config_name` | string | yes | `"my_psp_config"` |  The name of the PSP configuration.|
+| `psp_config_name` | string | no | `"my_psp_config"` |  The name of the PSP configuration.|
 | `psp_config` | string | no | `"config_name (12345)"` |  A string consisting of the PSP config name and ID.|
 | `publisher_id` | int | yes | `789` | The ID of the publisher on whose inventory the request originated. |
 | `publisher_name` | string | no | `"Neat Publisher Ltd"` | The name of the publisher on whose inventory the request originated. |

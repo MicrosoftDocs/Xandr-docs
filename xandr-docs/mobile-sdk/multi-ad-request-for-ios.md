@@ -18,7 +18,7 @@ This article provides instructions and code samples for initiating and configuri
 
 ## Initialization
 
-Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` be initialized. The `memberId` and `delegate` may only be set once per instance. An optional [Publisher ID parameter](./publisher-id-for-ios.md) can be set at this time. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process. `AdUnits` containing `placementIds` will use the associated `memberId` of that placement. Upon successful initialization, an `ANMultiAdRequest` class instance is returned.
+Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` to be initialized. The `memberId` and `delegate` may only be set once per instance. An optional [Publisher ID parameter](./publisher-id-for-ios.md) can be set at this time. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process. `AdUnits` containing `placementIds` will use the associated `memberId` of that placement. Upon successful initialization, an `ANMultiAdRequest` class instance is returned.
 
 > [!NOTE]
 > The `ANMultiAdRequest` instance will reject `AdUnits` with `memberId` values different from their own.
@@ -86,7 +86,7 @@ This basic initialization returns an instance of the class but takes no action. 
                               andDelegate:(nonnull id<ANMultiAdRequestDelegate>)
 ```
 
-**Without publisher ID**
+**With publisher ID**
 
 ```
 - (nullable instancetype)

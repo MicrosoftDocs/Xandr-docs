@@ -37,7 +37,7 @@ banner.allowVideoDemand = true
 
 ---
 
-If you have specified Video as a Media Type for your placement in Console, it is still necessary to use the preceding code to activate video ads. Without explicitly enabling video ads through the SDK, only banner ads will be served. On the other hand, if you haven't included Video as a Media Type for your placement in Console, you can still enable video ads to be served by calling the above commands to set **AllowVideoDemand** to true.
+If you have specified Video as a Media Type for your placement in Console, it is still necessary to use the preceding code to activate video ads. Without explicitly enabling video ads through the SDK, only banner ads will be served. On the other hand, if you haven't included Video as a Media Type for your placement in Console, you can still enable video ads to be served by using the preceding code to set **AllowVideoDemand** to `true`.
 
 The selection of either VAST Video or regular HTML Banner Ads in the app is determined automatically by the SDK based on the creative with the highest bid.
 

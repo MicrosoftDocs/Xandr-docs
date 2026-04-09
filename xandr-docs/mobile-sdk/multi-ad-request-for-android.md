@@ -1,6 +1,6 @@
 ---
 title: Multi Ad Request for Android
-description: This article has instructions and code samples for initiating and configuring multi ad reqguest for Android.
+description: This article has instructions and code samples for initiating and configuring multi ad request for Android.
 ms.custom: android-sdk
 ms.date: 10/22/2025
 ms.service: publisher-monetization
@@ -12,7 +12,7 @@ ms.author: shsrinivasan
 
 ## Overview
 
-This page has instructions and code samples for initiating and configuring a `ANMultiAdRequest`. `ANMultiAdRequest` enables the user to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
+This page has instructions and code samples for initiating and configuring an `ANMultiAdRequest`. `ANMultiAdRequest` enables the user to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
 
 `ANMultiAdRequest` is a concrete class and does not implement any interface. The class adopts the type and behavior of different `AdUnits` ([banner](./show-banners-on-android.md), [native](./show-native-ads-on-android.md), [video](./show-instream-video-ads-on-android.md), etc.) using the same specifications of each `AdUnit` type. Custom keywords can be assigned to a `ANMultiAdRequest` and will be inherited by the contained `AdUnits`. An `ANMultiAdRequest` has a public facing listener which observes for `onMultiAdRequestCompleted()` or `onMultiAdRequestFailed()`.
 
@@ -25,7 +25,6 @@ Users can select from one of two initialization methods. Both require a memberI
 
 ### Initialization methods
 The following methods are supported in this feature:
-
 
 #### Initialize with a list of `AdUnits` and call the `load` method
 

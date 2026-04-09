@@ -10,7 +10,7 @@ ms.author: shsrinivasan
 
 # Customize video player options on Android
 
-The `ANVideoPlayerSettings` class lets publisher apps customize some of the Ad Video Player UI/Controls.
+The `ANVideoPlayerSettings` class lets publisher apps customize some of the ad video player UI controls.
 
 > [!NOTE]
 > These settings apply to all video ads served through the Mobile SDK: Instream Video, Banner Video (Outstream), and Interstitial Video.

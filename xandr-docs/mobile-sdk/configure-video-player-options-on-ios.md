@@ -10,7 +10,7 @@ ms.author: shsrinivasan
 
 # Customize video player options on iOS
 
-`ANVideoPlayerSettings` class lets the publisher app to customize some of the Ad Video Player UI/Controls.
+The `ANVideoPlayerSettings` class lets publisher apps customize some of the ad video player UI controls.
 
 
 

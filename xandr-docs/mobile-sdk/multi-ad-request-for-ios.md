@@ -18,7 +18,7 @@ This article provides instructions and code samples for initiating and configuri
 
 ## Initialization
 
-Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` be initialized. The `memberId` and `delegate` may only be set once per instance. An optional [Publisher ID parameter](./publisher-id-for-ios.md) can be set at this time. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process. `AdUnits` containing `placementIds` will use the associated `memberId` of that placement. Upon successful initialization, an `ANMultiAdRequest` class instance is returned.
+Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` to be initialized. The `memberId` and `delegate` may only be set once per instance. An optional [Publisher ID parameter](./publisher-id-for-ios.md) can be set at this time. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process. `AdUnits` containing `placementIds` will use the associated `memberId` of that placement. Upon successful initialization, an `ANMultiAdRequest` class instance is returned.
 
 > [!NOTE]
 > The `ANMultiAdRequest` instance will reject `AdUnits` with `memberId` values different from their own.
@@ -86,7 +86,7 @@ This basic initialization returns an instance of the class but takes no action. 
                               andDelegate:(nonnull id<ANMultiAdRequestDelegate>)
 ```
 
-**Without publisher ID**
+**With publisher ID**
 
 ```
 - (nullable instancetype)
@@ -114,7 +114,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 | Parameter | Type | Attributes | Description |
 |:---|:---|:---|:---|
-| `memberId` | NSInteger | readonly | A member ID. Any `AdUnits` contained within the `MultiAdRequest` must have identical `memberIds` or the `MultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | NSInteger | readonly | A member ID. Any `AdUnits` contained within the `MultiAdRequest` must have identical `memberIds` or the `MultiAdRequest` will be rejected by Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
 | `location` | ANLocation | readwrite | The user location. `Location` can be set with `horizontalAccuracy` and a `precision` level. See [Location Methods](#location-methods) below. |
 | `age` | NSString | readwrite | The user's age. |
 | `gender` | ANGender | readwrite | The user's gender. |
@@ -159,7 +159,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 - **`load`**  
 
-  Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `MultiAdRequestDelegate` methods is fired. Returns `YES` on success and `NO` on failure.
+  Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `MultiAdRequestDelegate` methods is fired. Returns `YES` on success and `NO` on failure.
 
   ```
   - (BOOL)load;
@@ -167,7 +167,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in type
 
 - **`addAdUnit`**  
 
-  Adds an `AdUnit` to the ANMultiAdRequest. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `MultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. Returns `YES` on success and `NO` on failure.
+  Adds an `AdUnit` to the ANMultiAdRequest. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `MultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. If a `publisherId` is set on the `ANMultiAdRequest`, any `AdUnit` with a different `publisherId` will also be rejected. Returns `YES` on success and `NO` on failure.
 
   ```
   - (BOOL)addAdUnit:(nonnull id<ANAdProtocolFoundation>)adunit;

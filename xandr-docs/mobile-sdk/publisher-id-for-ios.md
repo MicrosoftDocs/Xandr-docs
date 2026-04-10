@@ -1,6 +1,6 @@
 ---
 title: Publisher ID for iOS
-description: The publisher_id parameter provides publishers two options for resolving default placements when an ad request fails at the placement level.
+description: Learn how to use publisherId to control which default creative is served when an ad request fails at the placement level on iOS.
 ms.custom: ios-sdk
 ms.date: 10/22/2025
 ms.service: publisher-monetization
@@ -10,91 +10,73 @@ ms.author: shsrinivasan
 
 # Publisher ID for iOS
 
-This article explains about the `publisher_id` parameter of the Universal Tag service.  
+This article describes how to use `publisherId` to control which default creative is served when an ad request fails.
 
 ## Overview
 
-The `publisher_id` parameter enables publishers to indicate what action should occur when an ad request fails at the placement level. In older versions of mobile SDK, if the request failed, the member ID was be used to determine which default creative to return with the request. With the addition of the `publisher_id` parameter, publishers now have two following options to resolve default placements when the request fails:
+Setting `publisherId` on an ad unit determines which default creative is served when an ad request fails at the placement level:
 
-1. publisher level default placement
-1. member level default placement
+- If `publisherId` is set, a failed request is rerouted to the publisher-level default creative.
+- If `publisherId` is not set, a failed request is rerouted to the member-level default creative.
 
-### Process
+## Properties
 
-When an invalid placement code is called:
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `publisherId` | NSInteger | readwrite, assign | The publisher ID associated with the ad unit. |
 
-- If a `publisher_id` is present in the JSON request, the request will be rerouted to the publisher level default placement.
-- When there is no `publisher_id` in the JSON request, the request will be rerouted to the member level default placement.
+## Example
 
-## Ad unit methods for publisher ID
+Set `publisherId` on any ad unit before calling `loadAd`.
 
-The [AdUnit](./ios-sdk-ad-units.md) class has following two methods for setting and retrieving `publisherId`:
+### [Objective-C](#tab/objectivec1)
 
-### Setter method
-
-#### [Swift](#tab/swift1)
-
-```
-public func setPublisherId (publisherId:Int)
-```
-
-#### [Objective C](#tab/objectivec1)
-
- ```
-- (void)setPublisherId:(NSInteger)publisherId;
- ```
-
-### Getter method
-
-#### [Swift](#tab/swift2)
-
-```
-publisherId:Int
+```objectivec
+// Banner
+ANBannerAdView *banner = [ANBannerAdView adViewWithFrame:rect placementId:@"123456" adSize:size];
+banner.publisherId = 12345; // Set publisher ID
+[banner loadAd]; // Load the ad
+// Native
+ANNativeAdRequest *nativeAdRequest = [[ANNativeAdRequest alloc] init];
+nativeAdRequest.publisherId = 12345; // Set publisher ID
 ```
 
-#### [Objective C](#tab/objectivec2)
+### [Swift](#tab/swift1)
 
-```
-(NSInteger) publisherId;
-```
-
-## Multi ad request changes
-
-Users can select from one of three initialization methods. All require a `memberId` and a `delegate` object as arguments in order for `ANMultiAdRequest` be initialized, `publisherId` is an optional setting. The `memberId`, `delegate` and `publisherId` may only be set during initialization. All `AdUnits` must contain the same `memberId` as the one passed in the initialization process. See [ANMultiAdRequest](./multi-ad-request-for-ios.md) for more details.
-
-### Code Sample (Objective C)
-
-```
-- (nullable instancetype)
-    initWithMemberId:(NSInteger)memberId
-            delegate:(nullable id<ANMultiAdRequestDelegate>)delegate
-             adUnits:(nonnull id<ANAdProtocolFoundationCore>)firstAdUnit,
-                     ... NS_REQUIRES_NIL_TERMINATION;
-- (nullable instancetype)
-    initWithMemberId:(NSInteger)memberId
-         publisherId:(NSInteger)publisherId
-            delegate:(nullable id<ANMultiAdRequestDelegate>)delegate
-             adUnits:(nonnull id<ANAdProtocolFoundationCore>)firstAdUnit,
-                     ... NS_REQUIRES_NIL_TERMINATION;
-- (nullable instancetype)
-    initAndLoadWithMemberId:(NSInteger)memberId
-                   delegate:(nullable id<ANMultiAdRequestDelegate>)delegate
-                    adUnits:(nonnull id<ANAdProtocolFoundationCore>)firstAdUnit,
-                            ... NS_REQUIRES_NIL_TERMINATION;
-- (nullable instancetype)
-    initAndLoadWithMemberId:(NSInteger)memberId
-                publisherId:(NSInteger)publisherId
-                   delegate:(nullable id<ANMultiAdRequestDelegate>)delegate
-                    adUnits:(nonnull id<ANAdProtocolFoundationCore>)firstAdUnit,
-                            ... NS_REQUIRES_NIL_TERMINATION;
-- (nullable instancetype)
-    initWithMemberId:(NSInteger)memberId
-         andDelegate:(nullable id<ANMultiAdRequestDelegate>)delegate;
-- (nullable instancetype)
-    initWithMemberId:(NSInteger)memberId
-         publisherId:(NSInteger)publisherId
-         andDelegate:(nullable id<ANMultiAdRequestDelegate>)delegate;
+```swift
+// Banner
+let banner = ANBannerAdView(frame: rect, placementId: "123456", adSize: size)
+banner.publisherId = 12345 // Set publisher ID
+banner.loadAd() // Load the ad
+// Native
+let nativeAdRequest = ANNativeAdRequest()
+nativeAdRequest.publisherId = 12345 // Set publisher ID
 ```
 
-> [!NOTE]
-> The `addAdUnit` method of the `ANMultiAdRequest` will read the attached `publisherId` of the `AdUnit`. If that value does not match the `publisherId` set to the `ANMultiAdRequest` instance, the `ANMultiAdRequest` instance will reject the `AdUnit`.
+---
+
+To retrieve the currently set publisher ID:
+
+### [Objective-C](#tab/objectivec2)
+
+```objectivec
+// Banner
+NSInteger publisherId = banner.publisherId; // Get publisher ID
+// Native
+NSInteger nativePublisherId = nativeAdRequest.publisherId; // Get publisher ID
+```
+
+### [Swift](#tab/swift2)
+
+```swift
+// Banner
+let publisherId = banner.publisherId // Get publisher ID
+// Native
+let nativePublisherId = nativeAdRequest.publisherId // Get publisher ID
+```
+
+---
+
+## Multi ad request
+
+`publisherId` can optionally be set when initializing `ANMultiAdRequest`. For initialization options and full usage, see [Multi Ad Request for iOS](./multi-ad-request-for-ios.md).

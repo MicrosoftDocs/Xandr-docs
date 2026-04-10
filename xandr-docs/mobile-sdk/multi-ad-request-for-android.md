@@ -1,6 +1,6 @@
 ---
 title: Multi Ad Request for Android
-description: This article has instructions and code samples for initiating and configuring multi ad reqguest for Android.
+description: This article has instructions and code samples for initiating and configuring multi ad request for Android.
 ms.custom: android-sdk
 ms.date: 10/22/2025
 ms.service: publisher-monetization
@@ -12,7 +12,7 @@ ms.author: shsrinivasan
 
 ## Overview
 
-This page has instructions and code samples for initiating and configuring a `ANMultiAdRequest`. `ANMultiAdRequest` enables the user to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
+This page has instructions and code samples for initiating and configuring an `ANMultiAdRequest`. `ANMultiAdRequest` enables the user to use a single universal tag (UTv3) request to initiate multiple auctions, the results of which are returned in a single server response.
 
 `ANMultiAdRequest` is a concrete class and does not implement any interface. The class adopts the type and behavior of different `AdUnits` ([banner](./show-banners-on-android.md), [native](./show-native-ads-on-android.md), [video](./show-instream-video-ads-on-android.md), etc.) using the same specifications of each `AdUnit` type. Custom keywords can be assigned to a `ANMultiAdRequest` and will be inherited by the contained `AdUnits`. An `ANMultiAdRequest` has a public facing listener which observes for `onMultiAdRequestCompleted()` or `onMultiAdRequestFailed()`.
 
@@ -25,7 +25,6 @@ Users can select from one of two initialization methods. Both require a memberI
 
 ### Initialization methods
 The following methods are supported in this feature:
-
 
 #### Initialize with a list of `AdUnits` and call the `load` method
 
@@ -74,10 +73,10 @@ All `ANMultiAdRequest` configuration properties and methods are the same in ty
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| `memberId` | int | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected by Xandr's Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
+| `memberId` | int | A member ID. Any `AdUnits` contained within the `ANMultiAdRequest` must have identical `memberIds` or the `ANMultiAdRequest` will be rejected by Impression Bus. The `memberId` can also be attained by passing in a `placementId`. |
 | `age` | String | The user's age. |
 | `gender` | AdView.GENDER | The user's gender. |
-| `externalUid` | String | User generated ID that can be mapped with Xandr's internal IDs and that mapping shared amongst the members of clients with multiple seats. |
+| `externalUid` | String | User generated ID that can be mapped with Monetize UUID2 and that mapping shared amongst the members of clients with multiple seats. |
 | `customKeyword` | ArrayList<Pair<String, String>> | Custom keywords applied to the `ANMultiAdRequest`. These keywords will be inherited by the attached AdUnits. This list can be supplemented within each `AdUnit` with additional custom keywords. |
 | `AdUnit` | Ad | An AdUnit item to add to the `ANMultiAdRequest`. |
 
@@ -85,7 +84,7 @@ All `ANMultiAdRequest` configuration properties and methods are the same in ty
 
 ### `load()`
 
-Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Xandr's Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `Listner` methods is fired. Returns `true` on success and `false` on failure.
+Loads all contained `AdUnits` by sending a `multi-tag UTv3` request to Impression Bus. For each `ANMultiAdRequest` instance, only one load may be active at a time. Loads are complete when one of the `Listner` methods is fired. Returns `true` on success and `false` on failure.
 
 ```
 public boolean load()
@@ -93,7 +92,7 @@ public boolean load()
 
 ### `addAdUnit(Ad adUnit)`
 
-Adds an `AdUnit` to the `ANMultiAdRequest`. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `ANMultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. Returns `true` on success and `false` on failure.
+Adds an `AdUnit` to the `ANMultiAdRequest`. `AdUnits` will be rejected if their `memberId` does not match the `memberId` assigned to the `ANMultiAdRequest` or does not match the `memberId` of the other `AdUnits` contained within the `ANMultiAdRequest`. If a `publisherId` is set on the `ANMultiAdRequest`, any `AdUnit` with a different `publisherId` will also be rejected. Returns `true` on success and `false` on failure.
 
 ```
 public boolean addAdUnit(Ad adUnit)

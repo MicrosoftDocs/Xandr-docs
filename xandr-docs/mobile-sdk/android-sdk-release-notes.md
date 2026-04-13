@@ -9,18 +9,22 @@ ms.author: shsrinivasan
 
 # Android SDK release notes
 
-## 9.12.0 
+## 9.12.0
+*Released: March 18, 2026*
+
 ### New Features
 + 10424605: Video player's bottom progress/controlbar now always visible. Added a new setting option (shouldForceControlBarVisible) to control it.
 + 10447642: Upgraded Facebook Audience Network dependency to 6.21.0.​
 
-## 9.11.1 
+## 9.11.1
+*Released: March 2, 2026*
+
 ### Improvement/Bug Fixes
 
 + 10434704: Roll back OMSDK to v1.4.9 to fix R8 minification issue.
   
 ## 9.11.0
-
+*Released: February 17, 2026*
 
 ### New Feature
 
@@ -39,6 +43,7 @@ ms.author: shsrinivasan
 + 10314529: OMSDK updated to  v1.6.2.
 
 ## 9.10.1
+*Released: January 29, 2026*
 
 ### Improvement/Bug Fixes
 
@@ -46,6 +51,7 @@ ms.author: shsrinivasan
 + 10319084: Resolved missing video controls and progress bar in Interstitial Video ads, and added a default video poster image.
 
 ## 9.10.0
+*Released: January 12, 2026*
 
 ### New Feature
 
@@ -57,6 +63,7 @@ ms.author: shsrinivasan
 + 10145721: Add Device Screen Information to ut/v3 Request.
 
 ## 9.9.0
+*Released: September 22, 2025*
 
 ### New Feature
 + 9736030: Enhanced Native Ads tracking: Introduced support for third-party OMID trackers and OpenRTB event tracking for `event:555, method:2`
@@ -65,6 +72,7 @@ ms.author: shsrinivasan
 + 8869891: Refactored Video Ads implementation and transitioned to using `webview-ads-app`.
   
 ## 9.8.0
+*Released: September 3, 2025*
 
 ### New Feature
 + 9096087: `NativeAdRequest` now supports OpenRTB Native Ads spec v1.2, allowing for more flexible and standardized ad request/response.
@@ -73,6 +81,7 @@ ms.author: shsrinivasan
 + 9680558: Updated Google Mediation SDK to v24.5.0.
 
 ## 9.7.0
+*Released: August 5, 2025*
 
 ### New Feature
 + 9624022: The video frameworks array has been updated, and both OMID and VPAID frameworks are now indicated as supported in the Ad request.
@@ -83,6 +92,7 @@ ms.author: shsrinivasan
 + 9613972: Crash fix when `BannerAdView` is destroyed during click load.
 
 ## 9.6.0
+*Released: July 4, 2025*
 
 ### New Feature
 
@@ -94,6 +104,7 @@ ms.author: shsrinivasan
 + 5730490: Fixed NPE in `CSRNativeBannerController`.
   
 ## 9.5.0
+*Released: April 2, 2025*
 
 ### Improvement/Bug Fixes
 
@@ -101,12 +112,14 @@ ms.author: shsrinivasan
 - **9171077**: Update and add support for new ImpBus endpoints used by the SDK to improve functionality and performance.  
 
 ## 9.4.1
+*Released: March 14, 2025*
 
 ### Improvement/Bug Fixes
 
 - 9119900: Updated ProGuard rules with `keeppackagenames` to ensure package names are preserved and not scrambled.
 
 ## 9.4.0
+*Released: March 12, 2025*
 
 ### Improvement/Bug Fixes
 
@@ -119,6 +132,7 @@ ms.author: shsrinivasan
 - 8743618: Updated Google Mediation SDK to v24.0.0.  
 
 ## 9.3.0
+*Released: January 30, 2025*
 
 ### New Feature
 
@@ -129,24 +143,28 @@ ms.author: shsrinivasan
 - 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.  
 
 ## 9.2.0
+*Released: November 6, 2024*
 
 ### Improvement/Bug Fixes
 
 - 8345772: Added support for [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md).  
 
 ## 9.1.0
+*Released: September 26, 2024*
 
 ### New Feature
 
 - 7667039: Support for VAST Video Ads in Interstitial Ad Unit.  
 
 ## 9.0.1
+*Released: August 6, 2024*
 
 ### Improvement/Bug Fixes
 
 - 7812193: Fixed a `StackOverflowError` crash that occurred when the native ad failed.  
 
 ## 9.0.0
+*Released: June 12, 2024*
 
 ### New Feature
 
@@ -158,6 +176,7 @@ ms.author: shsrinivasan
 - 7390147: Fixed OMID `AdEvents` error messages on auto-refresh.  
 
 ## 8.11
+*Released: February 15, 2024*
 
 ### Announcement
 
@@ -172,6 +191,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - 6273738 - Fixed HTML ad that automatically open image resources in an external browser.
 
 ## 8.10
+*Released: January 10, 2024*
 
 ### New feature
 
@@ -187,6 +207,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - 5622337 Upgraded Facebook Audience Network SDK from 6.13.7 to 6.16.0
 
 ## 8.9
+*Released: October 18, 2023*
 
 ### New feature
 
@@ -202,6 +223,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - 5622334 Upgraded Smart Ad Server SDK from 7.17.0 to 7.23.0
 
 ## 8.8
+*Released: August 22, 2023*
 
 ### New features
 
@@ -212,6 +234,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5371 Added additional information for INVALID_REQUEST code error messages
 
 ## 8.7
+*Released: July 6, 2023*
 
 ### New features
 
@@ -223,12 +246,14 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5332 Update to AAID fetch logic
 
 ## 8.6.1
+*Released: June 7, 2023*
 
 ### Improvement/Bug fixes
 
 - MS-5321 Fixed ArrayIndexOutOfBoundsException in XandrAd.init()
 
 ## 8.6
+*Released: April 6, 2023*
 
 ### Improvement/Bug fixes
 
@@ -240,6 +265,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5297 Upgraded Facebook Audience Network SDK from 6.12.0 to 6.13.7
 
 ## 8.5
+*Released: March 7, 2023*
 
 ### Improvement/Bug fixes
 
@@ -248,6 +274,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5258 Fixed NullPointerException for Interstitial ad media type
 
 ## 8.4
+*Released: February 10, 2023*
 
 ### Improvement/Bug fixes
 
@@ -256,6 +283,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5229 Added missing equals/hashcode for ANUserId ([Github #78](https://github.com/appnexus/mobile-sdk-android/pull/78))
 
 ## 8.3.0
+*Released: December 20, 2022*
 
 ### Improvement/Bug fixes
 
@@ -266,6 +294,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5210 Upgraded Google AdMob SDK from 20.6.0 to 21.3.0
 
 ## 8.2
+*Released: December 1, 2022*
 
 ### Improvement/Bug fixes
 
@@ -279,12 +308,14 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 - MS-5195 Upgraded Facebook Audience Network SDK from 6.5.0 to 6.12.0
 
 ## 8.1
+*Released: October 7, 2022*
 
 ### Improvement/Bug fixes
 
 - MS-5080 Enable support for high impact media type creatives in BannerAdView
 
 ## 8.0.1
+*Released: August 17, 2022*
 
 ### Improvement/Bug fixes
 
@@ -301,6 +332,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
   - Updated ProGuard rules
 
 ## 8.0
+*Released: July 28, 2022*
 
 ### Announcements
 
@@ -314,6 +346,7 @@ We have completed the removal of the APIs referenced in the 7.21 release. Please
 - MS-5014 Upgraded to OMSDK v1.3.31
 
 ## 7.22
+*Released: May 17, 2022*
 
 ### Announcements
 
@@ -336,6 +369,7 @@ The next major release will be SDK v8.0 which will include some breaking changes
 - MS-4872 Discontinued support for Facebook SDK mediation Adapter
 
 ## 7.21
+*Released: March 31, 2022*
 
 ### Announcements
 
@@ -367,6 +401,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - setExternalUserIds and getExternalUserIds methods in SDKSettings class and ANExternalUserIdSource enum are deprecated, use setUserIds and getUserIds in SDKSettings class and ANUserId class instead
 
 ## 7.20
+*Released: February 2, 2022*
 
 ### Improvement/Bug fixes
 
@@ -380,6 +415,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4943 NullPointerException thrown in RequestManager for certain scenarios
 
 ## 7.19.1
+*Released: November 16, 2021*
 
 ### Improvement/Bug fixes
 
@@ -392,6 +428,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4879 ConcurrentModificationException in UTAdRequest
 
 ## 7.18
+*Released: September 30, 2021*
 
 ### New features
 
@@ -405,6 +442,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4850 Memory Leak caused by VisibilityDetector
 
 ## 7.17
+*Released: August 31, 2021*
 
 ### New features
 
@@ -422,6 +460,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4834 Issue with too many broadcast receivers getting registered, leading to performance degradation
 
 ## 7.16
+*Released: August 6, 2021*
 
 ### Bug fixes
 
@@ -434,6 +473,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4823 Issue caused by ANBackgroundThread initialization with Multi Ad Requests
 
 ## 7.15
+*Released: June 29, 2021*
 
 ### New feature
 
@@ -455,6 +495,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4797 Disabled autoDismissDelay when the Interstitial Ad is interacted ([Github #62](https://github.com/appnexus/mobile-sdk-android/issues/62))
 
 ## 7.14
+*Released: May 26, 2021*
 
 ### New feature
 
@@ -467,18 +508,21 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4747 Added initialization check before fetching Bidder Token from Facebook SDK
 
 ## 7.13.1
+*Released: May 18, 2021*
 
 ### Improvements/Bug fixes
 
 - MS-4716 Blocked selection of non-supported 3GPP video type for rendering
 
 ## 7.13
+*Released: April 28, 2021*
 
 ### New feature
 
 - MS-4693 Added support for Cookieless domain requests
 
 ## 7.12
+*Released: April 19, 2021*
 
 ### Improvements/Bug fixes
 
@@ -486,6 +530,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4727 Added support for custom assets in Native Assembly Renderer
 
 ## 7.11
+*Released: March 25, 2021*
 
 ### Improvements/Bug fixes
 
@@ -494,6 +539,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4699 Added Accept-Language parameter in the HTTP header for Ad Request.
 
 ## 7.10
+*Released: February 23, 2021*
 
 ### New feature
 
@@ -509,6 +555,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - setExternalUid and getExternalUid methods in NativeAdRequest, VideoAd, BannerAdView, and InterstitialAdView classes are deprecated, use setPublisherUserId and getPublisherUserId in SDKSettings instead ([User ID(s) Mapping on Android](user-id-s-mapping-on-android.md))
 
 ## 7.9
+*Released: January 28, 2021*
 
 ### New feature
 
@@ -523,12 +570,14 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-3911 Fetch SDK Version Dynamically in ad request
 
 ## 7.8.2
+*Released: December 21, 2020*
 
 ### Improvements/Bug fixes
 
 - MS-4622 Fixed an Ad load issue with Last Look (Second Price)
 
 ## 7.8.1
+*Released: December 15, 2020*
 
 ### Improvements/Bug fixes
 
@@ -536,6 +585,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4620 Added null check for adListener for LazyLoad ([Github #55](https://github.com/appnexus/mobile-sdk-android/pull/55))
 
 ## 7.8
+*Released: December 4, 2020*
 
 ### New feature
 
@@ -552,12 +602,14 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4598 Fixed issue for BannerAdView with ReactNative FlatList
 
 ## 7.7.1
+*Released: October 26, 2020*
 
 ### Improvements/Bug fixes
 
 - MS-4575 Updated getCreativeHeight() and getCreativeWidth() to return mediation creative ad size
 
 ## 7.7
+*Released: October 8, 2020*
 
 ### New feature
 
@@ -577,6 +629,7 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4550 Updated GDPR logic. Now priority will be given to IAB TCF2.0 strings
 
 ## 7.6
+*Released: August 27, 2020*
 
 ### New feature
 
@@ -590,12 +643,14 @@ We intend to remove all the deprecated APIs listed below in Xandr SDK v8.0. If y
 - MS-4499 Google AdMob SDK v19.3.0
 
 ## 7.5.1
+*Released: August 6, 2020*
 
 ### Improvements/Bug fixes
 
 MS-4464 Fixed crashes with OMID in v7.5
 
 ## 7.5
+*Released: August 5, 2020*
 
 ### New features
 
@@ -607,12 +662,14 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4360: Ad ResultCode is now a class instead of enum - this fixes issue with result codes getting overridden for concurrent Ad requests
 
 ## 7.4.1
+*Released: July 15, 2020*
 
 ### Improvements/Bug fixes
 
 - MS-4440: Fixed issue with empty TCF 2.0 purpose consent string
 
 ## 7.4
+*Released: June 29, 2020*
 
 ### New feature
 
@@ -628,12 +685,14 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4404 Fixed GDPR reset method to clear Purpose Consent
 
 ## 7.3.1
+*Released: May 8, 2020*
 
 ### Improvements/Bug fixes
 
 - MS-4342 Fixed issue with User Agent string not being passed for Native Ad requests
 
 ## 7.3
+*Released: April 30, 2020*
 
 ### New feature
 
@@ -645,6 +704,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4287 Support MAR instance initialization without Publisher ID
 
 ## 7.2
+*Released: March 26, 2020*
 
 ### Improvements/Bug fixes
 
@@ -652,6 +712,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4267: All network calls will be made only using secure endpoint
 
 ## 7.1
+*Released: March 5, 2020*
 
 ### New feature
 
@@ -669,12 +730,14 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4166 Fixed VideoAd OMID session tracker firing bug
 
 ## 7.0
+*Released: January 23, 2020*
 
 ### New features
 
 - MS-3885 Added support for Multi Ad Request (MAR) ([Multi Ad Request for Android](multi-ad-request-for-android.md))
 
 ## 6.2
+*Released: December 9, 2019*
 
 ### New features
 
@@ -688,6 +751,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4086 Fixed OMID Pause multiple calls during application background state
 
 ## 6.1.1
+*Released: October 29, 2019*
 
 ### New features
 
@@ -698,6 +762,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4079: Fixed incorrect percentageInView when OMID geometryChange event is called.
 
 ## 6.1
+*Released: October 3, 2019*
 
 ### New features
 
@@ -716,6 +781,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-4060: Added getCurrentAppOrientation support for MRAID
 
 ## 6.0
+*Released: August 28, 2019*
 
 ### Mediation partner upgrades
 
@@ -729,12 +795,14 @@ MS-4464 Fixed crashes with OMID in v7.5
 - Open Measurement SDK is now supported only on phones running Android Kitkat and above (MS-3962, MS-3978, [Github #43](https://github.com/appnexus/mobile-sdk-android/issues/43))
 
 ## 5.5.1
+*Released: August 12, 2019*
 
 ### Bug fixes/Improvements
 
 - MS-3958: Added Security check to see if it's a valid HTTP URL before loading it.
 
 ## 5.5
+*Released: July 10, 2019*
 
 ### New features
 
@@ -755,6 +823,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3790: Fixed viewability issue
 
 ## 5.4
+*Released: June 5, 2019*
 
 ### New features
 
@@ -769,6 +838,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3800: Added new API to enable publishers to configure skip options for video player
 
 ## 5.3
+*Released: May 1, 2019*
 
 ### New features
 
@@ -788,18 +858,21 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3812: Fixed crashes with Interstitial Ads
 
 ## 5.2
+*Released: April 3, 2019*
 
 ### New features
 
 - MS-3720: Open Measurement SDK support for Native Ads
 
 ## 5.1.2
+*Released: March 20, 2019*
 
 ### Bug fixes
 
 - MS-3763: Do not allow BannerAdView/InterstitialAdView to load an Ad if initialized with ApplicationContext.(ActivityContext is required)
 
 ## 5.1.1
+*Released: February 26, 2019*
 
 ### New features
 
@@ -810,6 +883,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3755: Fixed Assertion Error that occurred while initializing Settings
 
 ## 5.1
+*Released: January 31, 2019*
 
 ### Mediation partner upgrades/changes
 
@@ -823,6 +897,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3607: Fixed an issue with BannerAd's where AdWebView was getting garbage collected too soon preventing onAdLoaded from getting called.
 
 ## 5.0
+*Released: December 6, 2018*
 
 ### New features
 
@@ -840,6 +915,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - Resolve problems with Interstitial display caused by use of Flavors (MS-3668)
 
 ## 4.12
+*Released: October 31, 2018*
 
 ### New features and Bug fixes
 
@@ -852,16 +928,19 @@ MS-4464 Fixed crashes with OMID in v7.5
     *Beta release - please contact your Account Manager for more information about this feature.
 
 ## 4.11.2
+*Released: August 28, 2018*
 
 - MS-3401: Added an API for enabling/disabling the location access to the creative.
 - MS-3406: Updated the Mobile Vast Player.
 
 ## 4.11.1
+*Released: August 9, 2018*
 
 - MS-3470: Fixed NullPointerException in OM Banner HTML Ad Session
 - MS-3457: Fixed NullPointerException in AdFetcher observed in v4.10
 
 ## 4.11
+*Released: August 3, 2018*
 
 - MS-3199: Added impression count api for Mediated Native creatives
 - MS-3444: Added api to restrict allowed media types for Banner Ad
@@ -870,11 +949,13 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3427: Changed the default values for shouldLoadIcon and shouldLoadImage to false
 
 ## 4.10
+*Released: June 28, 2018*
 
 - MS-3234: Open Measurement SDK Support for HTML Banner Ad's
 - MS-3354: Fix for duplicate adLoad when loaded offScreen
 
 ## 4.9
+*Released: June 19, 2018*
 
 - MS-3083 -- Native for Banner Ad View
 - MS-3115 -- Function to set external user id in the SDK for user syncing
@@ -882,27 +963,32 @@ MS-4464 Fixed crashes with OMID in v7.5
 - Update Facebook SDK to v4.28.2.
 
 ## 4.8.1
+*Released: May 24, 2018*
 
 - MS-3262,MS-3272 - WebView loadUrl NPE fix.
 - Update InMobi SDK to v7.1.0
 
 ## 4.8
+*Released: May 10, 2018*
 
 - MS-3221 - GDPR support for SDK
 - MS-3188 - Android Interstitial Crash.
 
 ## 4.7
+*Released: April 12, 2018*
 
 - MS-2113 -- Support autocollapse of interstitials
 - MS-3178 -- Implement exposureChange event
 
 ## 4.6
+*Released: February 26, 2018*
 
 - MS-3024 -- MultiFormat Banner + Video.
 - MS-3096 -- getCreativeId() new API for BannerAdView, InterstitialAdView, VideoAd and NativeAdResponse
 - MS-3179 -- Fixed NullPointerException in RequestManager
 
 ## 4.5
+*Released: January 24, 2018*
 
 ### Updates
 
@@ -910,12 +996,14 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3172 -- Typecasting issue in getAdPlayElapsedTime()
 
 ## 4.4
+*Released: December 20, 2017*
 
 ### Updates
 
 - MS-3097 -- Instream Video new API's to provide info on the video creatives loaded & playing
 
 ## 4.3
+*Released: November 22, 2017*
 
 - MS-3081 Fixed memory leak issue with Native SDK and Mediation Adapters
 - MS-3089 Fixed NullPointerException in continueWaterfall
@@ -923,31 +1011,37 @@ MS-4464 Fixed crashes with OMID in v7.5
 - Update Facebook SDK to v4.26.1.
 
 ## 4.2
+*Released: October 19, 2017*
 
 - MS-3079 Milennial Media SDK causing app crashes in Android
 - MS-2862 Support newly added standard fields on the native creative object
 
 ## 4.1
+*Released: October 10, 2017*
 
 - MS-3070 Upgraded AdMob and fixed Memory leak issue with ad expiry handler in admob mediation
 - Updated Rubicon to 6.3.2
 - Updated Facebook to 4.26.0
 
 ## 4.0
+*Released: September 25, 2017*
 
 - MS-2964 migrate from /mob to /ut/v2 endpoint in SDK
 - MS-2898 Request with size bigger than the available space should be possible
 
 ## 3.5
+*Released: August 3, 2017*
 
 - Update AdColony SDK to v3.1.2
 - MS-3018 setResizeAdToFitContainer fails when BannerAdView width/height is 0
 
 ## 3.4
+*Released: July 7, 2017*
 
 - Update Facebook SDK to v4.24.0.
 
 ## 3.3
+*Released: June 13, 2017*
 
 - Support for VPAID.
 - MS-2986 Fix MRAID case where request for portrait orientation resulted in reverse portrait.
@@ -955,6 +1049,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 - MS-3013 Crash where internal utility failed to return proper result.
 
 ## 3.2
+*Released: May 10, 2017*
 
 - MS-2999 Renamed mraid.js to avoid conflicts with other SDK's in the app.
 - MS-3011 Fixed Fatal crash IllegalArgumentException in android v4.x
@@ -963,6 +1058,7 @@ MS-4464 Fixed crashes with OMID in v7.5
 Rubicon SDK updated to 6.3.0
 
 ## 3.1
+*Released: March 15, 2017*
 
 - MS-2853 Updated ANJAM to update position on the fly
 - MS-2957 Fixed a crash with setOrientationProperties in MRAID
@@ -971,6 +1067,7 @@ Rubicon SDK updated to 6.3.0
 Facebook SDK update to 4.20.0
 
 ## 3.0
+*Released: February 21, 2017*
 
 - MS-2826 Mobile Instream SDK
 - MS-2914 Removed provider information from Admarvel mediation adapter AndroidManifest.xml
@@ -978,6 +1075,7 @@ Facebook SDK update to 4.20.0
 InMobi SDK update to 6.1.0
 
 ## 2.16
+*Released: February 21, 2017*
 
 - MS-2839 Fixed Anjam and sdk communication for creative served in iframe
 - MS-2841 Add a "ping" feature to the SDK without anjam.js injection
@@ -988,6 +1086,7 @@ MillennialMedia SDK update to 6.3.1
 GooglePlay SDK update to 10.0.1
 
 ## RC 2.15.1
+*Released: November 22, 2016*
 
 - MS-2789 Removed registerActivityLifecycleCallbacks from Google Banner Mediation.
 - MS-2794 Removed deprecated methods setAdHeight and setAdWidth from BannerAdView
@@ -995,6 +1094,7 @@ GooglePlay SDK update to 10.0.1
 - MS-2831 Fixed SDK crashes.
 
 ## RC 2.15
+*Released: September 22, 2016*
 
 - MS-2581 Added HTTPS support for SDK. New API introduced SDKSettings.useHttps(true).
 - MS-2708 Fixed bugs in MutableContextWrapper implementation.
@@ -1013,6 +1113,7 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry SDK update to 6.4.2
 
 ## RC 2.14
+*Released: August 23, 2016*
 
 - MS-2631 Support for new AdSizes in FaceBook banner mediation
 - MS-2586 WebView security improved.
@@ -1025,6 +1126,7 @@ GooglePlay SDK update to 10.0.1
   - FaceBook SDK update to 4.14.1
 
 ## RC 2.13
+*Released: June 27, 2016*
 
 - MS-2332 Fixed interstitial FullScreen videoplayer issue
 - MS-2383 MRAID CustomClose
@@ -1035,12 +1137,14 @@ GooglePlay SDK update to 10.0.1
   - FaceBook SDK update to 4.12.1
 
 ## RC 2.12
+*Released: June 10, 2016*
 
 - MS-2319 Allowed creative to trigger MRAID open click through even when MRAID not enabled in SDK.
 - MS-2290 Handled VideoEnabledWebChromeClient crash
 - MS-2289 Fixed resizeToFitContainer expanding too much logic.
 
 ## RC 2.11
+*Released: May 27, 2016*
 
 - MS-2242 Added Facebook AdChoices icon and url to the nativeElements
 
@@ -1057,17 +1161,20 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry SDK update to 6.3.1
 
 ## RC 2.10
+*Released: April 19, 2016*
 
 - Fix gradle build settings
 - MS-2136 Dismiss interstitial on click
 - MS-2034 Resize Ad for BannerAdview
 
 ## RC 2.9.1
+*Released: April 6, 2016*
 
 - MS-2101 Bug fix in AdWebView
 - MS-2016 Fixed the AdSize issue in onLayout method of BannerAdview
 
 ## RC 2.9
+*Released: February 5, 2016*
 
 - MS-1813 AdMarvel Integration - Banner and Interstitial ads
 - MS-2030 AdMob Integration - Native ads
@@ -1081,6 +1188,7 @@ GooglePlay SDK update to 10.0.1
   - GooglePlay 8.4.0 - banner, interstitial, native
 
 ## RC 2.8
+*Released: November 20, 2015*
 
 - MS-1702 Support for requesting ads with inventory code and member id
 - MS-1745 Update unit tests for inventory code and member id
@@ -1098,6 +1206,7 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry 6.1.0 banner, interstitial, native
 
 ## RC 2.7.1
+*Released: November 3, 2015*
 
 - MS-1688 InMobi mediation adapters upgraded to support InMobi SDK 5.0.0
 - MS-1669 MoPub SDK update to 3.13.0
@@ -1116,6 +1225,7 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry 6.1.0 banner, interstitial, native
 
 ## RC 2.6
+*Released: October 9, 2015*
 
 - MS-1627 Bug fix for concurrency modification in RequestParams
 - MS-1629 Bug fix for using comma as decimal points when user sets certain languages
@@ -1135,6 +1245,7 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry 6.1.0 banner, interstitial, native
 
 ## RC 2.5
+*Released: September 1, 2015*
 
 - MS-1512 NPE fix in AdRequest
 - MS-1426 Change interstitial timeout from 60 seconds to 4.5 minutes
@@ -1154,6 +1265,7 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry 6.0.0 banner, interstitial, native
 
 ## RC 2.4
+*Released: August 6, 2015*
 
 - MS-1370 AdColony totation fix
 - MS-1307 AdFetcher refactor
@@ -1173,10 +1285,12 @@ GooglePlay SDK update to 10.0.1
   - Yahoo Flurry 5.6.0 banner, interstitial, native
 
 ## RC 2.3.1
+*Released: July 6, 2015*
 
 - MS-1350 fix native ad response expiration time
 
 ## RC 2.3
+*Released: June 17, 2015*
 
 - MS-1225 Legacy AdMob/DFP adapter update
 - MS-1135 AdColony In-feed video phase 1
@@ -1194,6 +1308,7 @@ GooglePlay SDK update to 10.0.1
   - Vungle 3.3.0, interstitials
 
 ## RC 2.2
+*Released: May 15, 2015*
 
 - MS-1145 Separate invalid networks based on media type
 - MS-1110 Chartboost interstitial mediation
@@ -1204,6 +1319,7 @@ GooglePlay SDK update to 10.0.1
 - MS-1076 1080 Vdopia mediation, banner and interstitial
 
 ## RC 2.1
+*Released: March 11, 2015*
 
 - MS-857 MS-920 MS-866 AN native response, click handling, cookie management
 - MS-874 offline impression tracking
@@ -1220,6 +1336,7 @@ GooglePlay SDK update to 10.0.1
 - MS-790 Fix lint error in HTTPGet
 
 ## RC 2.0
+*Released: November 24, 2014*
 
 - MS-885 Facebook adapter exception handling
 - MS-751 by default the android SDK now uses a modal dialog box loading animation during conversion loading.
@@ -1232,6 +1349,7 @@ GooglePlay SDK update to 10.0.1
 - MS-855 location_precision change
 
 ## RC 1.20
+*Released: October 6, 2014*
 
 ### New public APIs
 

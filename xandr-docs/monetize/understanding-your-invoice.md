@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Understand Your Invoice
 description: This page describes the types of invoices generated, their appearance, and the fields included in them.
-ms.date: 10/21/2025
+ms.date: 4/13/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -93,6 +93,10 @@ If you have signed a contract with Microsoft Advertising, your invoice will come
 | 10 | Tax | The charge for any applicable local taxes. |
 | 11 | Total | The total amount due to Microsoft Advertising (e.g., all charges plus taxes). |
 | 12 | Payment instructions | Information to help you submit your payment. To ensure your wire payment is applied correctly, submit it to the account listed on your statement.|
+
+## Do Not Pay Invoice
+
+:::image type="content" source="media/do-not-pay-invoice.png" alt-text="The screenshot shows a Do Not Pay Invoice in Microsoft Advertising.":::
 
 ## Advertiser-specific, Insertion order-specific, and billing period-specific invoices
 

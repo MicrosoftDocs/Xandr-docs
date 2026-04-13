@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Understanding Your Seller Statement
 description: In this article, find descriptions for all components of typical seller statements.
-ms.date: 10/21/2025
+ms.date: 4/13/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -21,7 +21,9 @@ As a member who sells inventory on Microsoft Advertising's platform, you receive
 This document provides you with seller revenue earned during the prior month. You can view the supporting data by running the Selling Billing Report in the UI. Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, login to the [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) and navigate to the "Client finance" Category and select "Resold revenue or seller payments" as the topic.
 <!--Your Seller Activity Statement will be automatically emailed to the individual within your organization who is responsible for seller activity. If you have any questions, contact [Microsoft Advertising Client Finance](mailto:billing@xandr.com).-->
 
-Here's an example of what a what a typical seller statement looks like:
+### Xandr seller activity statement
+
+Here's an example of what a what a typical Xandr seller statement looks like:
 
 :::image type="content" source="media/seller-activity-statement.png" alt-text="Screenshot of a typical seller activity statement with annotations.":::
 
@@ -34,6 +36,43 @@ Here's an example of what a what a typical seller statement looks like:
 1. **Activity End** - The end date for the period of activity (Seller Revenue) reported in the statement.
 1. **Description** - A brief description of what the statement contains.
 1. **Net Due to Seller** - This is the total amount to be issued to the seller in accordance with contractual payment terms. Note that this amount does not include any adjustments that may be included at the time of payment.
+
+### Microsoft Ads seller activity statement
+
+Here's an example of what a what a typical Xandr seller statement looks like:
+
+:::image type="content" source="media/seller-activity-statement-ms-ads.png" alt-text="Screenshot of a typical MS Ads seller activity statement with annotations.":::
+
+1. **Legal Entity** – Contracting MSFT Legal Entity  
+
+2. **Statement Title** = Seller Activity Statement  
+
+3. **Seller Name**: The name based on the legal company name that appears in the agreement  
+
+4. **Seller Address** - ABL (Account Business Location) address that appears in the agreement.  
+
+5. **Statement number**: The unique identifier for the Seller Activity statement. Be sure to use this number in all communications with Microsoft Advertising Client Finance.  
+
+6. **Date**: Date/Month of the activity Statement (Reporting Period)  
+
+7. **Activity Period** - The month of activity for which the statement is reporting.  
+
+8. **Member ID** – Member Seat No  
+   a. **BP** = Parent Account (SAP ID)  
+   b. **CA** – Contract Account ID  
+
+9. **Payment Terms** – The time period allowed for Microsoft Advertising to pay off the amount that is due following the applicable service period (as specified in the Payment Terms section of your Microsoft Advertising Service Exhibit).  
+
+10. **Payment Currency** – Payment Currency for the member.  
+
+11. **Activity Start** - The start date for the period of activity (Seller Revenue) reported in the statement.  
+
+12. **Activity End** - The end date for the period of activity (Seller Revenue) reported in the statement.  
+
+13. **Description** - A brief description of what the statement contains.  
+
+14. **Seller Activity Total** - This is the total amount to be issued to the seller in accordance with contractual payment terms. Note that this amount does not include any adjustments that may be included at the time of payment.  
+
 
 ## Seller remittance statement
 

@@ -339,6 +339,11 @@
         "source_path": "xandr-docs/monetize/move-a-placement-to-a-different-placement-group.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/update-a-placement-group",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/digital-platform-api/mobile-app-store-service.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/digital-platform-api/reference",
+        "redirect_document_id": false
         }
       ]
     }

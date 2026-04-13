@@ -78,7 +78,7 @@ Here's an example of what a what a typical Xandr seller statement looks like:
 
 This document lists the amount of revenue due to be paid, along with any adjustments. The total difference between the revenue and adjustments is the amount you will be paid on the referenced payment cycle date. Sellers typically gather revenue information by using the Selling Billing Report.
 
-## Xandr Seller remittance statement
+### Xandr Seller remittance statement
 
 :::image type="content" source="media/seller-remittance-statement-sanitized.png" alt-text="Screenshot of a typical seller remittance statement with annotations.":::
 
@@ -94,7 +94,7 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 1. **Seller Revenue** - The amount that Microsoft Advertising owes the Seller for inventory sold on Microsoft Advertising's platform during the activity period.
 1. **Net to be Paid to Seller on (DATE)** - The difference between the **Seller Revenue** and any **Adjustments**. This is the exact amount the Seller will receive in payment from Microsoft Advertising less any bank fees incurred from the Seller’s bank (which Microsoft Advertising can't know in advance).
 
-## MS Ads Seller remittance statement
+### MS Ads Seller remittance statement
 
 :::image type="content" source="media/seller-remittance-statement-ms-ads.png" alt-text="Screenshot of a typical seller remittance statement with annotations.":::
 

@@ -349,8 +349,6 @@
       href: mobile-app-instance-service.md
     - name: Mobile App Service
       href: mobile-app-service.md
-    - name: Mobile App Store Service
-      href: mobile-app-store-service.md
     - name: Native Custom Key Service
       href: native-custom-key-service.md
     - name: Network Service

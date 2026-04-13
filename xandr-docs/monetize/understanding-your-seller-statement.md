@@ -96,7 +96,7 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 
 ### MS Ads Seller remittance statement
 
-:::image type="content" source="media/seller-remittance-statement-ms-ads.png" alt-text="Screenshot of a typical seller remittance statement with annotations.":::
+:::image type="content" source="media/seller-remittance-statement-ms-ads.png" alt-text="Screenshot of a typical MS Ads seller remittance statement with annotations.":::
 
 1. **Legal Entity** – Contracting MSFT Legal Entity  
 

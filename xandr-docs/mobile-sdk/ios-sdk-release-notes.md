@@ -14,6 +14,7 @@ ms.author: shsrinivasan
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
 ## 9.12.0
+*Released: March 18, 2026*
 
 ### New Features
 + 10424605: Video player's bottom progress/controlbar now always visible. Added a new setting option (forceControlBarVisible) to control it.
@@ -21,12 +22,14 @@ ms.author: shsrinivasan
 
   
 ## 9.11.1
+*Released: March 3, 2026*
 
 ### Improvement/Bug Fixes
 
 + 10428700: Fix banner video click callbacks.
 
 ## 9.11.0
+*Released: February 18, 2026*
 
 ### New Feature
 
@@ -48,6 +51,8 @@ ms.author: shsrinivasan
 
 
 ## 9.10.1
+*Released: January 23, 2026*
+
 + 10314531: OMSDK updated to v1.6.2.
 
 
@@ -57,7 +62,8 @@ ms.author: shsrinivasan
 
 
 ## 9.10.0
- 
+*Released: January 9, 2026*
+
 ### New Feature
 
 + 10092391: Enhancement that adds bulk custom keyword support to address performance issues.
@@ -70,12 +76,14 @@ ms.author: shsrinivasan
 + 10145721: Add Device Screen Information to ut/v3 Request.
 
 ## 9.9.1
+*Released: November 13, 2025*
 
 ### Improvement/Bug Fixes
 + 10096941: Fixed crash when ut/v3 response contains oRTB assets and native elements at the same time.
   
 ## 9.9.0
- 
+*Released: September 22, 2025*
+
 ### New Feature
 + 9736030: Enhanced Native Ads tracking: Introduced support for third-party OMID trackers and OpenRTB event tracking for `event:555, method:2`.
  
@@ -83,6 +91,7 @@ ms.author: shsrinivasan
 + 8869891: Refactored Video Ads implementation and transitioned to using `webview-ads-app`.
 
 ## 9.8.0
+*Released: September 4, 2025*
 
 ### New Feature
 + 9403605: NuGet package with MacOS SDK is now available.
@@ -92,6 +101,7 @@ ms.author: shsrinivasan
 + 9680558: Updated Google Mediation SDK to v12.8.0.
 
 ## 9.7.0
+*Released: August 5, 2025*
 
 ### New Feature
 + 9624022: The video frameworks array has been updated, and both OMID and VPAID frameworks are now indicated as supported in the ad request.
@@ -100,6 +110,7 @@ ms.author: shsrinivasan
 + 9680424: Fixed redundant logging for set lazy load.
 
 ## 9.6.0
+*Released: July 2, 2025*
 
 ### New Feature
  
@@ -112,6 +123,7 @@ ms.author: shsrinivasan
 
   
 ## 9.5.0
+*Released: March 26, 2025*
 
 ### Improvement/Bug Fixes
 
@@ -119,6 +131,7 @@ ms.author: shsrinivasan
 - 9171077: Added support for new impbus endpoints used by the SDK to enhance functionality and performance.
 
 ## 9.4.0
+*Released: March 12, 2025*
 
 ### Improvement/Bug Fixes
 
@@ -134,6 +147,7 @@ ms.author: shsrinivasan
 - 8839439: Addressed CodeQL scan issues.  
 
 ## 9.3.0
+*Released: January 30, 2025*
 
 ### New feature
 
@@ -144,12 +158,14 @@ ms.author: shsrinivasan
 - 8613201: Updated SDK behavior—if `GDPRApplies` is false, the SDK no longer applies `ConsentString` or `PurposeConsent`.  
 
 ## 9.2.1
+*Released: November 26, 2024*
 
 ### Improvement/Bug Fixes
 
 - 8489975: Resolved an issue with static framework integration when uploading to the App Store.
 
 ## 9.2.0
+*Released: November 6, 2024*
 
 ### Improvement/Bug Fixes
 
@@ -157,6 +173,7 @@ ms.author: shsrinivasan
 - 8191691: Addressed several memory leaks.
 
 ## 9.1.1
+*Released: October 15, 2024*
 
 ### Improvement/Bug Fixes
 
@@ -164,6 +181,7 @@ ms.author: shsrinivasan
 - 8235734: Fixed an issue where both adDidReceivedAd and adDidReceiveNativeAd callbacks were triggered for Banner Native ads.
 
 ## 9.1.0
+*Released: October 2, 2024*
 
 ### New feature
 
@@ -180,6 +198,7 @@ ms.author: shsrinivasan
 - 8202865: Updated SmartAdServer dependency to 7.24.2.
 
 ## 9.0.0
+*Released: July 9, 2024*
 
 > [!NOTE]
 > As of v9.0.0 release, the source code is moved to private repositories as already announced. You can refer to the [migration guide](migrating-ios-sdk-v8.x.y-to-v9.x.y.md) to understand how to utilize the binary framework.
@@ -195,24 +214,28 @@ ms.author: shsrinivasan
 - 6891512: Fixed Cocoapod integration in Flutter environment.
 
 ## 8.11.4
+*Released: April 29, 2024*
 
 ### Improvement/Bug fixes
 
 - 7295371: Privacy Manifest update and fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ## 8.11.3
+*Released: April 26, 2024*
 
 ### Improvement/Bug fixes
 
 - 7295362: Privacy Manifest update.
 
 ## 8.11.2
+*Released: April 22, 2024*
 
 ### Improvement/Bug fixes
 
 - 7112599: Fixed issues with Cocoapods for [privacy manifest files](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
 
 ## 8.11.1
+*Released: April 9, 2024*
 
 ### Improvement/Bug fixes
 
@@ -224,6 +247,7 @@ ms.author: shsrinivasan
 - 7151765: Upgraded Google AdMob SDK from 10.10.0 to 11.2.0.
 
 ## 8.11.0
+*Released: February 16, 2024*
 
 ### Announcement
 
@@ -234,6 +258,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - 6273926 - [Support for Digital Services Act (DSA)](sdk-privacy-for-ios.md)
 
 ## 8.10.0
+*Released: January 10, 2024*
 
 ### New feature
 
@@ -246,6 +271,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - 5992098: Optimise user agent synchronisation to minimise delays Mediation partner updates MS-5392 Upgrade of the Facebook Audience Network to version 6.14.0.
 
 ## 8.9.0
+*Released: October 19, 2023*
 
 ### Improvement/Bug fixes
 
@@ -258,6 +284,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - 5622334: Upgraded Smart Ad Server SDK from 7.17.1 to 7.22.0.
 
 ## 8.8.1
+*Released: September 1, 2023*
 
 ### Improvement/Bug fixes (8.8.1)
 
@@ -265,6 +292,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - MS-5385: Addressed issue while installing SDK via Cocoapods.
 
 ## 8.8.0
+*Released: August 23, 2023*
 
 ### New features (8.8.0)
 
@@ -277,6 +305,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - MS-5266: Addressed issue where impression tracker did not fire when creative is scrolled in a collection view.
 
 ## 8.7.0
+*Released: July 6, 2023*
 
 ### Improvement/Bug fixes (8.7.0)
 
@@ -286,6 +315,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - MS-5340: Fixed ModuleMap XCFramework Warning.
 
 ## 8.6.0
+*Released: April 26, 2023*
 
 ### Improvement/Bug fixes (8.6.0)
 
@@ -296,16 +326,19 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0.0 wi
 - Upgraded Google AdMob SDK from 9.14.0 to 10.3.0.
 
 ## 8.5.0
+*Released: March 8, 2023*
 
 ### Improvement/Bug fixes (8.5.0)
 
 - MS-5227: Fixed issue with loading multiple outstream video ads simultaneously.
 
 ## 8.4.0
+*Released: March 7, 2023*
 
 Update version to match Android SDK. No changes from 8.3.0.
 
 ## 8.3.0
+*Released: December 20, 2022*
 
 ### Improvement/Bug fixes (8.3.0)
 
@@ -317,6 +350,7 @@ Update version to match Android SDK. No changes from 8.3.0.
 - MS-5210, MS-5213: Upgraded Google AdMob SDK from 9.4.0 to 9.14.0.
 
 ## 8.2.0
+*Released: December 1, 2022*
 
 ### Improvement/Bug fixes (8.2.0)
 
@@ -329,6 +363,7 @@ Update version to match Android SDK. No changes from 8.3.0.
 - MS-5195: Upgraded Facebook Audience Network SDK from 6.5.0 to 6.12.0.
 
 ## 8.1.1
+*Released: October 28, 2022*
 
 ### Improvement/Bug fixes for macOS SDK (8.1.1)
 
@@ -337,6 +372,7 @@ Update version to match Android SDK. No changes from 8.3.0.
 - MS-5149: Fixed Impression tracking issue when app is on secondary displays.
 
 ## 8.1.0
+*Released: October 6, 2022*
 
 ### New feature (8.1.0)
 
@@ -348,6 +384,7 @@ Update version to match Android SDK. No changes from 8.3.0.
 - MS-5108: Added localization configuration option for SDK browser dismiss button "OK" (Github PR #80).
 
 ## 8.0.0
+*Released: July 28, 2022*
 
 ### Announcements
 
@@ -361,6 +398,7 @@ We have completed the removal of the APIs referenced in the 7.21.0 release. Note
 - MS-5013: Upgraded to OMSDK v1.3.31.
 
 ## 7.22.0
+*Released: May 17, 2022*
 
 ### Announcements (7.22.0)
 
@@ -384,6 +422,7 @@ The next major release will be SDK v8.0.0 which will include some breaking chang
 - Discontinued support for Facebook SDK mediation Adapter.
 
 ## 7.21.0
+*Released: March 31, 2022*
 
 ### Announcements (7.21.0)
 
@@ -410,6 +449,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 `ANSDKSettings.externalUserIdArray` property and `ANExternalUserId` class are now deprecated, use the equivalent `ANSDKSettings.userIdArray` property and `ANUserId` class instead.
 
 ## 7.20.0
+*Released: February 2, 2022*
 
 ### Improvement/Bug fixes (7.20.0)
 
@@ -417,12 +457,14 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4851: Improved OMSDK performance.
 
 ## 7.19.0
+*Released: November 12, 2021*
 
 ### Improvement/Bug fixes 7.19.0
 
 - MS-4884: Improved impression tracking methodology for Native Ads, trackers to be fired on render.
 
 ## 7.18.0
+*Released: September 30, 2021*
 
 ### New features (7.18.0)
 
@@ -430,6 +472,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4759: Automatically pass Identifier for Vendors (IDFV) in Ad request. ([Set IDFA usage for iOS](set-idfa-usage-for-ios.md)).
 
 ## 7.17.0
+*Released: September 3, 2021*
 
 ### New features (7.17.0)
 
@@ -442,6 +485,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4828: Memory leak related to 1 pixel tracking.
 
 ## 7.16.0
+*Released: August 6, 2021*
 
 ### Bug fixes/changes (7.16.0)
 
@@ -454,12 +498,14 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4802: ANSDKSettings.optionalSDKInitialization API ([Initialize SDK Settings in iOS](initialize-sdk-settings-in-ios.md)).
 
 ## 7.15.1
+*Released: July 15, 2021*
 
 ### Improvements/Bug fixes (7.15.1)
 
 - MS-4818: Fixed Swift package manager installation error (Github issue #67).
 
 ## 7.15
+*Released: June 29, 2021*
 
 ### New feature (7.15)
 
@@ -481,6 +527,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4777: Added initialization check before fetching Bidder Token from Facebook SDK ([Get Facebook Demand for Native on iOS](get-facebook-demand-for-native-on-ios.md)).
 
 ## 7.14
+*Released: May 26, 2021*
 
 ### New feature (7.14)
 
@@ -493,6 +540,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4769: Removed duplicate calls to dispatch_async function from a couple of places.
 
 ## 7.13
+*Released: April 28, 2021*
 
 ### New feature (7.13)
 
@@ -500,6 +548,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4618: Fixed issue where the OMID SDK was causing high CPU usage for certain Ad formats - Github issue #57.
 
 ## 7.12
+*Released: April 16, 2021*
 
 ### Improvements/Bug fixes (7.12)
 
@@ -511,6 +560,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4729: Removed strong reference on views to avoid cyclic reference for NativeAds.
 
 ## 7.11
+*Released: March 26, 2021*
 
 ### Improvements/Bug fixes (7.11)
 
@@ -523,6 +573,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4656: Upgraded Google AdMob SDK from v7.69.0 to v8.0.0.
 
 ## 7.10
+*Released: February 23, 2021*
 
 ### New feature (7.10)
 
@@ -538,6 +589,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - externalUid property in ANAdProtocol has been deprecated, use publisherUserId in ANSDKSettings instead ([Publisher ID for iOS](publisher-id-for-ios.md)).
 
 ## 7.9
+*Released: January 28, 2021*
 
 ### New feature (7.9)
 
@@ -554,6 +606,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4633: Moved User-Agent/WebView caching from load() to ANSDKSettings.optionalSDKInitialization().
 
 ## 7.8
+*Released: December 4, 2020*
 
 ### New feature (7.8)
 
@@ -572,6 +625,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4587: Fixed issue with OMID sessionFinish event not being returned for Native ads.
 
 ## 7.7.1
+*Released: October 22, 2020*
 
 ### Improvements/Bug fixes (7.7.1)
 
@@ -579,6 +633,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4574: Add support for Cocoapods version 1.10.0.
 
 ## 7.7
+*Released: October 8, 2020*
 
 ### New feature (7.7)
 
@@ -600,6 +655,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4522: Fixed caching issues with ANAdvertisingIdentifier. Now it will be fetched for every single request.
 
 ## 7.6.2
+*Released: September 17, 2020*
 
 ### New feature (7.6.2)
 
@@ -610,12 +666,14 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4523: Changed sizesThatShouldConstrainToSuperview to a block (Github #54).
 
 ## 7.6.1
+*Released: September 4, 2020*
 
 ### Improvements/Bug fixes (7.6.1)
 
 - MS-4520: Rollback iOS 14 AppTrackingTransparency changes. For the latest updates on Xandr Mobile SDK's support for iOS 14, see [iOS 14.0 FAQ](ios-14-0-faq.md).
 
 ## 7.6
+*Released: August 27, 2020*
 
 ### New features (7.6)
 
@@ -633,6 +691,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4362: Ad ResultCode is now a class instead of enum - this fixes issue with result codes getting overridden for concurrent Ad requests.
 
 ## 7.5
+*Released: August 5, 2020*
 
 ### New feature (7.5)
 
@@ -649,6 +708,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4405: Fixed issue with NSHTTPCookieStorage being set based on purposeConsent value.
 
 ## 7.4.1
+*Released: July 15, 2020*
 
 ### Improvements/Bug fixes (7.4.1)
 
@@ -656,6 +716,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4437: Fixed cocoapods build for Facebook CSR Adapter.
 
 ## 7.4
+*Released: June 29, 2020*
 
 ### New feature (7.4)
 
@@ -674,18 +735,21 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4335: Improved Banner Ad performance.
 
 ## 7.3.2
+*Released: May 27, 2020*
 
 ### Improvements/Bug fixes (7.3.2)
 
 - MS-4352: Fixed NSHTTPCookieStorage setting.
 
 ## 7.3.1
+*Released: May 7, 2020*
 
 ### Improvements/Bug fixes (7.3.1)
 
 - MS-4326: Fix for ANMultiAdRequest crashes when UT Response is not received due to Internet connectivity issues/device being offline.
 
 ## 7.3
+*Released: April 30, 2020*
 
 ### New feature (7.3)
 
@@ -697,6 +761,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4275: Fixed BannerAd OMID session tracker firing.
 
 ## 7.2
+*Released: March 26, 2020*
 
 ### Improvements/Bug fixes (7.2)
 
@@ -704,6 +769,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4267: All network calls will be made only using secure endpoint.
 
 ## 7.1
+*Released: February 28, 2020*
 
 ### New feature (7.1)
 
@@ -720,6 +786,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4166: Fixed VideoAd OMID session tracker firing bug.
 
 ## 7.0
+*Released: January 23, 2020*
 
 ### New feature (7.0)
 
@@ -735,6 +802,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4094: Code clean up to fix issue with OMID SDK video implementation.
 
 ## 6.2
+*Released: December 9, 2019*
 
 ### New features (6.2)
 
@@ -747,12 +815,14 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4095: Updated OMID partner name.
 
 ## 6.1.2
+*Released: October 29, 2019*
 
 ### Improvements/Bug fixes (6.1.2)
 
 - MS-4092: Fix for SKStoreProductViewController crash on iOS 13.
 
 ## 6.1.1
+*Released: October 25, 2019*
 
 ### New features (6.1.1)
 
@@ -763,6 +833,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4091: Improved DFP second price option.
 
 ## 6.1
+*Released: October 3, 2019*
 
 ### New features (6.1)
 
@@ -787,6 +858,7 @@ We intend to remove all the deprecated API's listed below in Xandr SDK v8.0. If 
 - MS-4036: Fixed interstitial crash on orientation change if orientation not supported by host application (Github #47).
 
 ## 6.0
+*Released: August 28, 2019*
 
 At Xandr we listen to our users' feedback to help us develop the products that provide the best solutions for their needs. Based on that feedback, we are proud to announce the release of v6.0, a major upgrade to our iOS Mobile SDK.
 
@@ -827,6 +899,7 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 > If you are currently using a static library version of AppNexus SDK(libANSDK.a) or a mediation adapter follow our [migration guide](ios-mediation.md).
 
 ## 6.0-Beta
+*Released: August 7, 2019*
 
 > [!NOTE]
 > This is a beta release of the AppNexus SDK, and will be open for feedback/comments for at least the next 14 days.
@@ -852,6 +925,7 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 > Cocoapods integration remains the same from v5.x:> 6.X so it has not been included as a part of Beta release. But will be available as a part of final release.
 
 ## 5.5.1
+*Released: July 10, 2019*
 
 ### New features (5.5.1)
 
@@ -874,6 +948,7 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 - MS-3311: Improved Objective-C API Declarations for Swift compatibility.
 
 ## 5.4
+*Released: June 5, 2019*
 
 ### New features (5.4)
 
@@ -891,6 +966,7 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 - Improved Open Measurement Event(Session Finish) for RTB ads.
 
 ## 5.3
+*Released: May 1, 2019*
 
 ### New features (5.3)
 
@@ -907,18 +983,21 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 - MS-3808: Removed videoAdDidClose method to prevent Video Player removal (Github #22).
 
 ## 5.2
+*Released: April 3, 2019*
 
 ### New features (5.2)
 
 - MS-3720: Open Measurement SDK support for Native Ads.
 
 ## 5.1.2
+*Released: February 26, 2019*
 
 ### New features (5.1.2)
 
 - Added new API for setting Custom User Agent.
 
 ## 5.1.1
+*Released: January 31, 2019*
 
 ### Mediation partner SDK upgrades/changes
 
@@ -928,6 +1007,7 @@ A list of supported versions of [third-party mediation networks](mediate-with-io
 Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386 and x86_64 architectures in order to be able to push to appstore. Cocoapods integration will work as-is.
 
 ## 5.1
+*Released: January 31, 2019*
 
 ### New features (5.1)
 
@@ -945,12 +1025,14 @@ Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386
 - MS-3598, MS-3599: Fixed MRAID and Video Ads to respect Safe Area on Top notch devices when running in FullScreen/Expanded mode.
 
 ## 5.0.1
+*Released: January 9, 2019*
 
 ### Bug fix (5.0.1)
 
 - Allow ANNativeAdRequest to download image assets in background (MS-3714).
 
 ## 5.0
+*Released: December 6, 2018*
 
 ### New features (5.0)
 
@@ -969,6 +1051,7 @@ Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386
 - Prevent crashes by preventing ANBannerAdView from loading when width or height are improperly configured (MS-3685).
 
 ## 4.12
+*Released: October 31, 2018*
 
 ### New features and bug fixes (4.12)
 
@@ -981,6 +1064,7 @@ Known issue: Apps integrating Smart Adapter from Code/Binary need to remove i386
 Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to be fixed in a future release.
 
 ## 4.11.1
+*Released: September 27, 2018*
 
 ### New features and bug fixes (4.11.1)
 
@@ -988,6 +1072,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3461: Update logic to center video display when video player is expanded to fill the full screen of the device.
 
 ## 4.11
+*Released: August 29, 2018*
 
 ### New features and bug fixes (4.11)
 
@@ -998,6 +1083,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3406: Updated the Mobile Vast Player.
 
 ## 4.10
+*Released: August 3, 2018*
 
 ### New features and bug fixes (4.10)
 
@@ -1009,12 +1095,14 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3444: Add API to restrict allowed media types for Banner Ad.
 
 ## 4.9
+*Released: June 29, 2018*
 
 ### New features (4.9)
 
 - MS-3234: Open Measurement SDK Support for HTML Banner Ads.
 
 ## 4.8
+*Released: June 21, 2018*
 
 ### New features (4.8)
 
@@ -1037,6 +1125,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - FacebookSDK 4.28.1
 
 ## 4.7.1
+*Released: May 10, 2018*
 
 ### New features and bug fixes (4.7.1)
 
@@ -1044,6 +1133,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3193: [iOS SDK] crash
 
 ## 4.6
+*Released: April 12, 2018*
 
 ### New features (4.6)
 
@@ -1051,24 +1141,28 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3178: Implement exposureChange event.
 
 ## 4.5
+*Released: March 30, 2018*
 
 ### New features (4.5)
 
 - Banner Video
 
 ## 4.4.2
+*Released: March 26, 2018*
 
 ### Bug fixes (4.4.2)
 
 - MS-3200: Fixed ANLocalizations overriding parent app localizations.
 
 ## 4.4.1
+*Released: March 16, 2018*
 
 ### Bug fixes (4.4.1)
 
 - MS-3197: Fixed a crash in Creative ID changeset.
 
 ## 4.4
+*Released: March 2, 2018*
 
 ### Updates (4.4)
 
@@ -1077,6 +1171,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3187: iPhone X : WKWebView scrollView gets undesired insets fixed.
 
 ## 4.3
+*Released: January 24, 2018*
 
 ### Updates (4.3)
 
@@ -1088,12 +1183,14 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-3170: SDK Crash.
 
 ## 4.2
+*Released: December 20, 2017*
 
 ### Updates (4.2)
 
 - MS-3097: Instream Video new API's to provide info on the video creatives loaded & playing.
 
 ## 4.1
+*Released: November 27, 2017*
 
 ### Updates (4.1)
 
@@ -1106,12 +1203,14 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-2983: `MPMoviePlayerViewController` has been deprecated as per iOS 9 but is being used in ANMRAIDUtil.
 
 ## 4.0.1
+*Released: October 31, 2017*
 
 ### Bug fixes (4.0.1)
 
 - Resolve CocoaPods build issues.
 
 ## 4.0
+*Released: October 31, 2017*
 
 ### New features (4.0)
 
@@ -1128,6 +1227,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - (Github Issue #13): Stop using EKEventStore.
 
 ## 3.6
+*Released: October 10, 2017*
 
 ### Mediated SDKs
 
@@ -1140,12 +1240,14 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
   - FacebookSDK v4.26.0
 
 ## 3.5.1
+*Released: August 4, 2017*
 
 ### Bug fixes and updates (3.5.1)
 
 - Removed files related to AdColony Native Mediation. It is no longer supported.
 
 ## 3.5
+*Released: August 2, 2017*
 
 ### Bug fixes and updates (3.5)
 
@@ -1157,6 +1259,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - AdColony SDK v3.1.1
 
 ## 3.4
+*Released: July 6, 2017*
 
 ### Bug fixes and updates (3.4)
 
@@ -1167,18 +1270,21 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - Facebook SDK v4.24.0
 
 ## 3.3
+*Released: June 13, 2017*
 
 ### Bug fixes and updates (3.3)
 
 - MS-2828: VPAID support for Instream-Video.
 
 ## 3.2.1
+*Released: May 12, 2017*
 
 ### Bug fixes and updates (3.2.1)
 
 - MS-3016: Fixed podspec configuration and fake framework import issue in Rubicon mediation adapter.
 
 ## 3.2
+*Released: May 11, 2017*
 
 ### Bug fixes and updates (3.2)
 
@@ -1189,12 +1295,14 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - Rubicon SDK v6.3.0
 
 ## 3.1.2
+*Released: March 30, 2017*
 
 ### Bug fixes (3.1.2)
 
 - MS-2984: Video Rendering issue on iOS 10.3.
 
 ## 3.1
+*Released: March 15, 2017*
 
 ### Bug fixes and updates (3.1)
 
@@ -1209,6 +1317,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - Update the custom targeting params format.
 
 ## 3.0
+*Released: February 21, 2017*
 
 ### New features (3.0)
 
@@ -1220,6 +1329,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - Minimum supported iOS version is now v8.0.
 
 ## 2.14
+*Released: January 19, 2017*
 
 ### Mediated SDKs (2.14)
 
@@ -1236,6 +1346,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - MS-2841: Add a "ping" feature to the SDK without anjam.js injection.
 
 ## RC 2.13.2
+*Released: November 23, 2016*
 
 ### Bug fixes (RC 2.13.2)
 
@@ -1244,11 +1355,13 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - PR-10: Integrate third party PR: project and schema updates per Xcode 8.
 
 ## RC 2.13.1
+*Released: September 23, 2016*
 
 - Expose ANAdAdapterMillennialMediaBase.h In ANSDKMillennialMediaAdapter Binary Target.
 - Expose ANSDKSettings.h In ANSDK Binary Target.
 
 ## RC 2.13
+*Released: September 23, 2016*
 
 ### New features (RC 2.13)
 
@@ -1276,12 +1389,14 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 - Yahoo Flurry SDK v7.6.4
 
 ## RC 2.12.1
+*Released: July 26, 2016*
 
 ### Mediated SDKs (RC 2.12.1)
 
 - Facebook SDK Version 4.14.0
 
 ## RC 2.12
+*Released: June 27, 2016*
 
 ### Bug fixes (RC 2.12)
 
@@ -1296,6 +1411,7 @@ Known Issue: Rubicon Mediation Adapter compatibility issues with iOS 12.0 - to b
 No change.
 
 ## RC 2.11
+*Released: June 10, 2016*
 
 ### New features (RC 2.11)
 
@@ -1314,6 +1430,7 @@ No change.
 No change.
 
 ## RC 2.10
+*Released: May 26, 2016*
 
 ### New features (RC 2.10)
 
@@ -1335,6 +1452,7 @@ MS-2316 contains the following mediated SDKs:
 - Yahoo Flurry SDK 7.6.3
 
 ## RC 2.9
+*Released: February 5, 2016*
 
 ### New features (RC 2.9)
 
@@ -1359,6 +1477,7 @@ MS-1913 contains the following mediated SDKs:
 - Yahoo Flurry SDK 7.3.0
 
 ## RC 2.8
+*Released: November 20, 2015*
 
 ### New features (RC 2.8)
 
@@ -1382,9 +1501,8 @@ MS-1712 contains the following mediated SDKs:
 
 - Amazon SDK 2.2.11 emits warnings in Xcode 7 of the following kind: "Warning: Could not resolve external type c:objc(cs)". These will be addressed in a subsequent release.
 
-## ~~RC 2.7~~
-
 ## RC 2.6
+*Released: October 16, 2015*
 
 ### Bug fixes (RC 2.6)
 
@@ -1410,6 +1528,7 @@ MS-1654 contains the following mediated SDKs:
 - Yahoo Flurry SDK 7.2.1
 
 ## RC 2.5
+*Released: September 1, 2015*
 
 ### Bug fixes (RC 2.5)
 
@@ -1435,6 +1554,7 @@ MS-1519 contains the following mediated SDKs:
 - Yahoo Flurry SDK 7.0.0
 
 ## RC 2.4
+*Released: August 3, 2015*
 
 ### Bug fixes (RC 2.4)
 
@@ -1468,12 +1588,14 @@ MS-1413 contains the following mediated SDKs:
 - Yahoo Flurry SDK 6.5.0
 
 ## RC 2.3.1
+*Released: June 25, 2015*
 
 ### Bug fixes (RC 2.3.1)
 
 - MS-1317: Addressed iPad in-app browser compile issue.
 
 ## RC 2.3
+*Released: June 16, 2015*
 
 ### Bug fixes (RC 2.3)
 
@@ -1499,6 +1621,7 @@ Contains the following mediated SDKs:
 - Chartboost SDK 5.4.0
 
 ## RC 2.2
+*Released: May 14, 2015*
 
 ### Feature additions (RC 2.2)
 
@@ -1552,6 +1675,7 @@ Contains the following mediated SDKs:
 - Chartboost SDK 5.2.1
 
 ## RC 2.1
+*Released: February 20, 2015*
 
 - MS-856, MS-868, MS-875, MS-916, MS-918, MS-925: Implemented AppNexus Native Ad Console Support.
 - MS-932: Introduced namespaced `ANGender` enum values (e.g. `ANGenderMale`). Deprecated existing values (e.g. `MALE`).
@@ -1581,6 +1705,7 @@ Includes the following mediated network SDKs:
 > The AdMob and DFP mediation adapters have been updated to work with the new framework distribution mechanism for the Google Ads SDK (in version 7.0.0).
 
 ## RC 1.21 (2.0)
+*Released: November 21, 2014*
 
 - AppNexus Native API 1.0, with support for MoPub and Facebook mediation.
 
@@ -1599,6 +1724,7 @@ Includes the following mediated network SDKs:
 - MoPub 3.2.0
 
 ## RC 1.20
+*Released: October 6, 2014*
 
 - `ANAdProtocol landingPageLoadsInBackground`: Controls the SDK's behavior when an ad is clicked. The default behavior (`YES`) is to load the landing page in the background until the initial payload finishes loading and then present a fully rendered page to the user. Setting this to `NO` will cause the in-app browser to immediately become visible and display the unrendered landing page. Note that setting this to `NO` when an ad redirects to the app store may cause the in-app browser to briefly flash on the screen.
 - `ANAdProtocol setLocationWithLatitude:longitude:timestamp:horizontalAccuracy:precision:`: Provide a precision parameter when passing a user's location from a `CoreLocation` instance that will cause all location information to be internally rounded to the specified number of digits after the decimal before being passed to the ad server. The nominal resolution of digits after the decimal to distance is 2 digits to ~1 km, 3 digits to ~100m, 4 digits to ~10m. If set to -1, then full resolution is passed.

@@ -45,9 +45,37 @@ To connect an MCP client:
 1. Configure a remote HTTP MCP server that points to either the Monetize or Curate endpoint  
 2. Provide a valid Xandr API authentication token  
 
+### Authentication
+
+Xandr MCP requires a valid Xandr API authentication token. Token format, lifetime, refresh behavior, and all other authentication mechanics are defined by the Xandr Authentication Service.
+
+MCP does not introduce a separate authentication model—it uses the same token flow as the standard Xandr API.
+
+- [Authentication Service](../digital-platform-api/authentication-service.md)
+
+To authenticate requests, include the token in the `Authorization` header:
+
+```http
+Authorization: Bearer <your-xandr-token>
+```
+If the token expires, refresh it using the standard Xandr authentication flow and update it in your MCP client as needed.
+
+## Permissions and access control
+
+Xandr MCP does not introduce a separate permission model.
+- Does not grant new platform access
+- Respects existing permissions assigned to the authenticated user or token
+- Enforces access through the underlying Xandr APIs
+
+In practice, MCP can only expose data and capabilities that the authenticated identity is already authorized to use in Monetize or Curate.
+
+MCP does not enable platform functionality that is not already available to your account, member, or seat. For example, if forecasting is not enabled for your seat, forecasting-related MCP tools will not be available.
+
+---
+
 ### Configuration files
 
-The configuration method depends on the client. For more information about authentication, see **Authentication**.
+The configuration method depends on the client. Configuration files (such as `mcp.json`) define MCP servers, endpoints, and authentication settings. See the client-specific sections below for details.
 
 - **VS Code** uses `mcp.json`  
 - **Claude Code** uses `.mcp.json`  
@@ -96,7 +124,7 @@ You can configure MCP servers in:
   ]
 }
 ```
-VS Code also supports adding a server through the Command Palette using MCP: Add Server. However, a checked-in .vscode/mcp.json file is typically the clearest option for shared team setups.
+VS Code also supports adding a server through the Command Palette (**MCP: Add Server**). However, a checked-in `.vscode/mcp.json` file is typically the clearest option for shared team setups.
 
 After configuration:
 1. Open the workspace in VS Code
@@ -172,34 +200,6 @@ For a repository example with additional local and staging configurations, see `
 
 ---
 
-## Authentication
-
-Xandr MCP requires a valid Xandr API authentication token. Token format, lifetime, refresh behavior, and all other authentication mechanics are defined by the Xandr Authentication Service.
-
-MCP does not introduce a separate authentication model—it uses the same token flow as the standard Xandr API.
-
-- [Authentication Service](../digital-platform-api/authentication-service.md)
-
-To authenticate requests, include the token in the `Authorization` header:
-
-```http
-Authorization: Bearer <your-xandr-token>
-```
-If the token expires, refresh it using the standard Xandr authentication flow and update it in your MCP client as needed.
-
-## Permissions and access control
-
-Xandr MCP does not introduce a separate permission model.
-- Does not grant new platform access
-- Respects existing permissions assigned to the authenticated user or token
-- Enforces access through the underlying Xandr APIs
-
-In practice, MCP can only expose data and capabilities that the authenticated identity is already authorized to use in Monetize or Curate.
-
-MCP does not enable platform functionality that is not already available to your account, member, or seat. For example, if forecasting is not enabled for your seat, forecasting-related MCP tools will not be available.
-
----
-
 ## Rate limits
 
 Xandr MCP requests are subject to rate limiting. The same throttling principles that apply to the Xandr API also apply to MCP.
@@ -248,3 +248,183 @@ Depending on the report, MCP may expose:
 
 - **Direct report tools** for commonly used report types  
 - **Discovery-style tools** for exploring report metadata and executing queries  
+
+---
+
+### Typical object discovery workflow
+
+For object exploration, a common workflow is:
+
+1. Discover supported object types using `xandr_list_objects`  
+2. Inspect the schema and available filters for a specific object using `xandr_describe_object`  
+3. Query objects using `xandr_search_object` or an object-specific search tool  
+
+#### Examples
+
+- Discover whether `advertiser`, `line-item`, `publisher`, or `deal` is available as a supported object type  
+- Inspect available fields and filters for a `profile` or `publisher` object before querying  
+- Search for a specific advertiser, publisher, deal, or profile after identifying the appropriate filters
+
+Some commonly used entities (such as advertisers or publishers) may have dedicated search tools for simpler and faster queries. Other entities use a general workflow where you first discover available object types, inspect their schema, and then query them using standard search tools.
+
+---
+
+### Other common tool patterns
+
+- **Reference data**: Follows a discover → describe → search pattern for datasets such as geography, device, language, and media classifications  
+- **Report management**: Check asynchronous report status, inspect saved reports, and download completed output  
+- **Change history**: Review audit and change-log information for supported entities  
+- **Planning, forecasting, and troubleshooting**: Available only when the corresponding platform capability is enabled for the authenticated user  
+
+> [!NOTE]  
+> Tool names, schemas, coverage, and availability may change without notice during closed beta.
+
+---
+
+## MCP and model responsibilities
+
+When troubleshooting, distinguish between the responsibilities of the MCP server and the model or client.
+
+### MCP server responsibilities
+
+- Exposes tools  
+- Validates inputs  
+- Calls underlying Xandr APIs  
+- Returns structured results or errors  
+
+### Model or client responsibilities
+
+- Interprets the prompt  
+- Selects which tools to use  
+- Chooses parameters  
+- Sequences tool calls  
+- Summarizes results  
+
+### Understanding different outcomes
+
+Issues can originate from different layers:
+
+- **Model or client layer**: Incorrect tool selection, invalid filters, or misinterpretation of the prompt  
+- **MCP layer**: Unexpected input validation failures, incorrect API calls, or inconsistent tool output  
+- **Platform layer**: Access denied, missing data, or unavailable features based on account permissions  
+
+Similar prompts may produce different results across models or clients, even when using the same MCP server. This is because tool selection and reasoning are handled by the model, not MCP.
+
+### Troubleshooting guidance
+
+For effective troubleshooting, capture:
+
+- What the user asked the model to do  
+- What the model attempted through MCP  
+
+This helps determine whether the issue originates from prompt interpretation, model reasoning, client integration, MCP behavior, or the underlying platform capability.
+
+---
+
+## Product scope
+
+The current product scope is intentionally limited:
+
+- **Read-only access**: Supports data retrieval only  
+- **No write operations**: Does not create, update, or delete objects  
+- **Future extensibility**: Write operations may be added with explicit enablement  
+- **Closed beta**: Availability is limited during rollout  
+- **Permission-bound access**: Limited to existing authenticated permissions  
+
+Some capabilities may be available only for specific products, users, environments, or beta cohorts.
+
+---
+
+## Support requests
+
+When reporting an issue or requesting support, provide concise but specific information to help speed up investigation.
+
+Include the following details:
+
+- **Platform**: Monetize or Curate  
+- **MCP client**: For example, VS Code, Claude Code, or another MCP-compatible client  
+- **Model**: If known  
+- **Original prompt**: Or a close equivalent that reproduces the issue  
+- **Tool usage**: Which tools the model attempted to use  
+- **Tool results**: Whether each tool call succeeded, failed, or returned incomplete data  
+- **Relevant identifiers**: Such as report type, object type, object ID, deal ID, advertiser ID, or date range  
+- **Errors or behavior**: Exact error message or a summary of incorrect behavior  
+- **Reproducibility**: Whether the issue is reproducible or intermittent  
+
+Keep the report concise, but include enough detail for others to understand and reproduce the issue without reconstructing the entire session.
+
+---
+
+### Suggested support template
+
+You can provide the following template to your LLM and ask it to summarize the session before submitting a support request.
+
+```md
+# Xandr MCP support summary
+
+## Issue summary
+- Short description:
+- Impact:
+- Reproducible: Yes / No / Unknown
+
+## Environment
+- Platform: Monetize / Curate
+- MCP client:
+- Model:
+- Environment: Production / Staging / Unknown
+- Approximate time of issue:
+
+## User intent
+- Original prompt:
+- Expected outcome:
+- Actual outcome:
+
+## Tool usage
+| Tool | Purpose | Result | Notes |
+|------|---------|--------|-------|
+| tool_name | reason for use | Success / Failed / Partial | short detail |
+
+## Relevant inputs
+- Report type:
+- Object type:
+- IDs or names used:
+- Date range:
+- Filters or grouping:
+
+## Errors or suspicious output
+- Exact error message(s):
+- If no formal error, describe the incorrect or incomplete result:
+
+## Reasoning context
+- Why the model chose those tools:
+- Whether the model misunderstood the prompt, platform, or available capability:
+
+## Additional context
+- Whether the capability works outside MCP:
+- Whether the account or seat has access to the underlying platform feature:
+- Any additional information that may help reproduce or debug the issue:
+```
+---
+
+### Suggested instruction for your LLM
+
+You can provide the following instruction to your LLM to generate a support summary:
+
+```md
+Summarize this Xandr MCP issue for a support ticket. Be concise, but include:
+- Platform  
+- MCP client  
+- Model (if known)  
+- Original prompt  
+- Tools used  
+- Whether each tool succeeded or failed  
+- Relevant IDs and date ranges  
+- Exact errors  
+- Any context needed to reproduce or debug the issue
+```
+
+---
+
+## Additional resources
+
+- [Authentication Service](../digital-platform-api/authentication-service.md)   

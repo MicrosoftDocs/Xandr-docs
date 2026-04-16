@@ -1,7 +1,7 @@
 ---
 title: Hourly Pacing Overrides Service
 description: Use the Hourly Pacing Overrides service to customize your line item's budget distribution within a day.
-ms.date: 10/22/2025
+ms.date: 4/16/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -25,11 +25,14 @@ The Hourly Pacing Overrides Service is used to customize your line item's budget
 | Field | Type | Description |
 |:---|:---|:---|
 | `line_item_id` | int | The ID of the line item. <br>**Required On**: `GET`, `PUT`, and `DELETE`. |
-| `pacing_strategies` | array of objects | The pacing strategies associated with the line item. The `pacing_strategies` object array is defined in the table below. <br>**Required On**: `PUT` |
+| `pacing_strategies` | array of objects | The gies associated with the line item. The `pacing_strategies` object array is defined in the table below. <br>**Required On**: `PUT` |
 
 ### Pacing strategies
 
 The `pacing_strategies` object is used to define a customized pacing strategy for your line item. You're able to customize pacing within a single day and within a single hour.
+
+> [!NOTE]  
+> For Programmatic Guaranteed line items, hourly pacing is fixed to ensure delivery commitments. You can apply additional pacing rules; however, the default **Always** pacing cannot be disabled.
 
 | Field | Type | Description |
 |:---|:---|:---|

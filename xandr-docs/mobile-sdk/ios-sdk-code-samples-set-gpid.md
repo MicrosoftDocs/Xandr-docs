@@ -2,7 +2,7 @@
 title: Set GPID for iOS (Global Placement ID)
 description: Learn how to set a Global Placement ID (GPID) for iOS platforms, with code samples to assist in your app development.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 4/20/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan

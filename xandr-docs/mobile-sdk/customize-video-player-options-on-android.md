@@ -2,7 +2,7 @@
 title: Customize Video Player Options on Android
 description: In this article, find information about the video player controls that you can customize on Android devices.
 ms.custom: android-sdk
-ms.date: 3/18/2026
+ms.date: 4/20/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan

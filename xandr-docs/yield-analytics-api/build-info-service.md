@@ -45,7 +45,7 @@ https://api.appnexus.com/imf
 ## Endpoint    
 
 ```
-GET /api/v1/rest/reporting/reports 
+GET api/v1/rest/ui/buildinfo
 ```
 
 - **Parameters**  
@@ -67,7 +67,7 @@ GET /api/v1/rest/reporting/reports
 - **Example HTTP request**
 
   ```
-  GET /imf/api/v1/rest/reporting/reports HTTP/1.1
+  GET /imf/api/v1/rest/ui/buildinfo HTTP/1.1
   Content-Type: application/json
   Authorization: {{auth-token}}
   Host: api.appnexus.com

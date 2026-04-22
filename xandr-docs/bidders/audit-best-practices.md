@@ -60,6 +60,7 @@ In order to ensure proper review, allow list our audit IPs and domains. This is 
   - `cq-preview.adnxs.net`
   - `new-audit.adnxs.net`
   - `cq-auditor.adnxs.net`
+  - `trinity.ads.microsoft.com`
 
 
 ## Related topics

@@ -30,7 +30,7 @@ The `ANVideoPlayerSettings` class lets publisher apps customize some of the ad v
 | `void setSkipLabelName` (**String** `skipLabelName`) | "Skip ad" | Customizes Skip Label. | Instream / Interstitial |
 | `void setSkipOffset` (**Integer** `skipOffset`) | "5 seconds" | Customizes Skip Offset.| Instream / Interstitial |
 | `void shouldForceControlBarVisible` (**boolean** `forceControlBarVisible`)| true | When set to `true`, the video control bar (play/pause, seek, volume, and other controls) remains permanently visible, regardless of user interaction.<br> When set to `false`, the player uses the auto-hide behavior, where the control bar hides after a period of inactivity.| Instream / Banner Video / Interstitial |
-| `void shouldClickBehaviorPausePlay(boolean clickBehaviorPausePlay)` | true | When set to `true` (default), clicking or tapping the video toggles pause/play. When set to `false`, clicks are passed to other handlers (for example, click-through). | Instream / Banner Video / Interstitial |
+| `void shouldClickBehaviorPausePlay(boolean clickBehaviorPausePlay)` | true | When set to `true` (default), tapping the video toggles play/pause. When set to `false`, taps are passed to other handlers (for example, click-through). | Instream / Banner Video / Interstitial |
 
 ## Example
 
@@ -76,7 +76,7 @@ ANVideoPlayerSettings.getVideoPlayerSettings().setSkipOffset(2);
 // Show or hide the control bar permanently (default is true to always show). If set to false, the player will auto-hide the control bar after inactivity.
 ANVideoPlayerSettings.getVideoPlayerSettings().shouldForceControlBarVisible(false);
 
-// When set to true (default), clicking the video toggles pause/play. Set to false to pass clicks to other handlers (e.g. click-through)
+// When set to true (default), tapping the video toggles play/pause. Set to false to pass taps to other handlers (for example, click-through)
 ANVideoPlayerSettings.getVideoPlayerSettings().shouldClickBehaviorPausePlay(false);
 
 ```
@@ -106,7 +106,7 @@ ANVideoPlayerSettings.getVideoPlayerSettings().shouldShowVolumeControl(true)
 // Show or hide the control bar permanently (default is true to always show). If set to false, the player will auto-hide the control bar after inactivity.
 ANVideoPlayerSettings.getVideoPlayerSettings().shouldForceControlBarVisible(false)
 
-// When set to true (default), clicking the video toggles pause/play. Set to false to pass clicks to other handlers (e.g. click-through)
+// When set to true (default), tapping the video toggles play/pause. Set to false to pass taps to other handlers (for example, click-through)
 ANVideoPlayerSettings.getVideoPlayerSettings().shouldClickBehaviorPausePlay(false)
  
 // Decide how the ad video sound starts initially (sound on or off). By default, Instream Video will have sound enabled, while Banner Video will have sound disabled

@@ -11,7 +11,9 @@ ms.author: shsrinivasan
 
 In partnership with Yahoo DSP, Microsoft Monetize has created this page to help Microsoft Monetize publishers communicate with their buyers about accessing and targeting Microsoft Monetize's publisher inventory using Yahoo DSP. This information has been created in collaboration with and approved by the Yahoo DSP team. Note that platforms can and will change regularly. We will do our best to update this guide as needed. Wherever possible, we've provided links to Yahoo DSP documentation.
 
-We recommend that if buyers are experiencing issues or need assistance using the Yahoo DSP platform, their first point of outreach should be the Yahoo DSP support team.
+We recommend that if buyers are experiencing issues or need assistance using the Yahoo DSP platform, their first point of outreach should be the Yahoo DSP support team. In addition, please refer to the link below for details on Yahoo DSP’s Supply Policy, including the [Auction Integrity Policy](https://adspecs.yahooinc.com/pages/policies-guidelines/yahoo-supply-policy/yahoo-ad-policy-supply/auction-integrity-policy?mkt_tok=MTE4LU9FVy0xODEAAAGfND43gaTnz_bK41oDXfFV94urQSsIag3XLHGPdMJw9CyB1HWrCmbuGbbxho3QVjjfWfP_aokTigIgHgp5KahPvpP0WnHFvamlAbxvqKQ5y609XK8&guccounter=1&guce_referrer=aHR0cHM6Ly9tc2FzZy52aXN1YWxzdHVkaW8uY29tLw&guce_referrer_sig=AQAAACupzfcUoD0LZGCYnWqDGRqdbwJ8eR6GGLd62YZotbo8C3r4gaidQIGBiaBDjWiRdllBQ7zGAOL-88NcIlmZFfVgmH0bwmdGS6p4EJ9fXd29ihbRxdMSnkyjGUXVvKgbBFUTplEuq_rBLXzIFnQxC7nAcAOcXo53DsvrfpYNIKDR).
+
+
 
 ## Target Microsoft Monetize in Yahoo DSP
 

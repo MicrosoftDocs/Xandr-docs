@@ -33,15 +33,15 @@ See below for Microsoft-specific instructions.
 
 ## Troubleshooting deals
 
-**You are not receiving any avails on the StackAdapt platform.**
+- **You are not receiving any avails on the StackAdapt platform.**
 Ensure that the seat ID is not the client account ID - the seat ID should be SSP specific, and can be found above. 
 You should also ensure that the correct SSP is selected and that the deal_id information is inputted correctly. If you are still not receiving any avails, provide a sample bid request in a .txt file for StackAdapt’s inventory team to investigate further.
 
-**You are receiving avails but not bidding**
+- **You are receiving avails but not bidding**
 You should look at your campaign’s drop-off-funnel to troubleshoot why the campaign is not bidding. Campaign targeting preferences like geo-targeting, audience-targeting, or other goals may be limiting bids. If you target additional inventory and bid high enough for other inventory, but not for this specific deal, you may not see any issues in the drop-off funnel. 
 
-**You are bidding but not winning**
+- **You are bidding but not winning**
 If you are bidding and not winning, StackAdapt has no insight into why bids are lost. The publisher and/or the SSP should be able to provide more insights on why bids are lost
 
-**You are seeing minimal spend on the deal**
+- **You are seeing minimal spend on the deal**
 If there are no technical issues with the deal but you are seeing minimal spend, try to send more avails to see how pacing metrics improve. You may be running on other inventory lines and are preferring other inventory over the publisher’s / SSP’s. 

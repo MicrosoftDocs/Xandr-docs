@@ -1,7 +1,7 @@
 ---
 title: Xandr Macros
 description: Explain how macros populate URLs, acting as variables for useful information in ad creatives, revealing their replaced values during ad calls.
-ms.date: 10/21/2025
+ms.date: 05/21/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -30,7 +30,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 |--|--|
 | `${CLICK_URL}` | The click tracking URL. |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third party adservers) |
-| `${AUCTION_ID}` | The 64-bit character string representing the individual auction that led to the impression. |
+| `${AUCTION_ID}` | A unique 64-bit identifier for the specific auction that resulted in the impression. Each `placement_id` in a bid request will have its own unique auction ID, which will also match the corresponding bid response(s) for that placement.<br>This macro is recommended for reconciliation and discrepancy tracking. |
 | `${TAG_ID}` | The Xandr TinyTag ID that originated the Bid Request |
 | `${EXT_APP_ID}` | The external identifier for the application requesting the impression. This is most useful for impressions from mobile apps. |
 | `${CREATIVE_ID}` | The creative ID that won the impression. |

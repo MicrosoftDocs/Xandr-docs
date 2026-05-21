@@ -23,6 +23,9 @@ Bid error codes can be received from several different sources:
 - [Buyer Bid Error Report](../digital-platform-api/buyer-bid-error-report.md)
   
     You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future.  You can find information on the owner, cause and recommended resolution for each error below.
+- [Curator Bid Error Report](../curate/curator-bid-error-report.md)
+
+  You can use this report to troubleshoot curator, sell-side, and buy-side configuration issues that lead to auction errors for bids on curated deals. The report helps identify the root cause of each error and provides guidance to prevent similar issues in the future. Detailed information about the owner, cause, and recommended resolution for each error is provided below.
 
 The following are error codes you might see from any of the above.
 

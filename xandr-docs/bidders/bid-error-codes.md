@@ -23,6 +23,9 @@ Bid error codes can be received from several different sources:
 - [Buyer Bid Error Report](../digital-platform-api/buyer-bid-error-report.md)
   
     You can use this report to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend. The goal is to help you eliminate the error in the future.  You can find information on the owner, cause and recommended resolution for each error below.
+- [Curator Bid Error Report](../curate/curator-bid-error-report.md)
+
+  You can use this report to troubleshoot curator, sell-side, and buy-side configuration issues that lead to auction errors for bids on curated deals. The report helps identify the root cause of each error and provides guidance to prevent similar issues in the future. Detailed information about the owner, cause, and recommended resolution for each error is provided below.
 
 The following are error codes you might see from any of the above.
 
@@ -180,6 +183,10 @@ The following are error codes you might see from any of the above.
 | 362 | Creative ad server banned on curated member | Curator implemented a setting on its profile to block certain ad servers. | Curator | Speak with the Curator to ensure that the blocked creative ad server is in the Curator's approved list. If the Curator won't alter its ad server allowlist, then alter the creative by removing the call to banned ad server. | 
 | 363 | Creative language banned on curated member | Creative language banned on curated member | Curator | Change the creative or contact the Curator for an exception. | 
 | 364 | Creative duration ms fails allowed durations | Creative duration doe not fall within the specified range of the bid request | Buyer | Use a creative with a different duration or consider clarifying with the seller that the min and max duration settings were set correctly.|
+| 367 | Creative banned on curated deal ad profile | The curator has explicitly banned the creative from serving through their curated deal. | Curator | Buyer should use an alternative creative, or the Curator should update their curated deal ad profile. |
+| 368 | Creative banned on curated member ad profile | The curator has explicitly banned the creative from serving through their curator member as a whole. | Curator | Buyer should use an alternative creative, or the Curator should update their curator member ad profile. |
+| 369 | Unaudited creative banned on curated deal ad profile | The curator only allows audited creatives to serve through their curated deal, and the buyer is attempting to bid with an unaudited creative. | Curator | Buyer should submit their creative for platform audit. |
+| 370 | Unaudited creative banned on curated member ad profile | The curator only allows audited creatives to serve through their curator member as a whole, and the buyer is attempting to bid with an unaudited creative. | Curator | Buyer should submit their creative for platform audit. |
 | 403 | Buying member banned by seller's ad profile | Seller's ad quality is set to ban the buying member | Seller | Buyer should discuss ad quality settings with the Seller or considering setting up a deal with the Seller to obtain an ad quality exception. |
 | 404 | Creative banned by member's ad profile | Seller's ad quality is set to ban the creative | Seller | Buyer should change the creative, discuss ad quality settings with the Seller, or consider setting up a deal with the Seller to obtain an ad quality exception. |
 | 405 | Platform unaudited creative banned on member's ad profile | Creative not approved by Xandr and banned by member's ad profile | Buyer/Seller | Buyer should ensure their creative is audited by Xandr, notify the Seller regarding whether the unaudited creative ban is desired, and modify their ad quality settings accordingly. |

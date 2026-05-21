@@ -1,7 +1,7 @@
 ---
 title: Click Tracking and Cache-Busting Examples for Top Ad Servers
 description: Learn about the appropriate locations in which to insert the click tracking macro in your third-party ad tags in order for Xandr to track clicks properly.
-ms.date: 10/21/2025
+ms.date: 5/21/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -24,6 +24,10 @@ If you want to track clicks and you are hosting your creatives on one of the ad 
 **Cache-busting**
 
 The cache-buster macro ensures that a fresh call is made to the ad server every time the tag is called, so you’re accurately counting impressions. If you don't add the cache-busting macro to the tag, you will be more likely to see impression counting discrepancies. If you want to perform cache-busting and you are hosting your creatives on one of the ad servers below, use the examples on this page to find the appropriate locations in which to insert the cache-busting macro in your third-party ad tags. To locate it in the samples below, search for `CACHEBUSTER`.
+
+> [!NOTE]
+> - `${CACHEBUSTER}` macro is a randomly generated string used to prevent URL caching. The value is generated once per bid response, so if a bid request contains multiple `placement_id` values, the same cachebuster value will be used across them. For reconciliation and discrepancy tracking, we recommend using `${AUCTION_ID}` instead.<br>
+> - `${AUCTION_ID}` is an unique 64-bit identifier for the specific auction that resulted in the impression. Each `placement_id` in a bid request will have its own unique auction ID, which will also match the corresponding bid response(s) for that placement.
 
 > [!NOTE]
 > All examples on this page were provided by clients or a third-party server. As a result, Xandr has no control over any changes made by those third-party servers that may cause these macros not to function. If the macro you are using is not working correctly, please contact your third-party server. If the third-party server you use is not listed here, Xandr will be unable to confirm the proper placement of these macros in their tag as the location of the tag in which you place the macro must be provided by your third-party server (Xandr only provides the click URL by filling the macro). For troubleshooting tips, see the [Click Tracking page](../monetize/click-tracking.md) in the UI.

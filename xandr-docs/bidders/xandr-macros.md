@@ -40,7 +40,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${SESSION_FREQ}` | The session frequency for the user. |
 | `${AGE}` | The age of the user (if available). Integer (e.g., 26) or 0. |
 | `${GENDER}` | The gender of the user (if available). Values are 'f','m','u'. |
-| `${CACHEBUSTER}` | A random number string used to limit caching of the URL |
+| `${CACHEBUSTER}` | A randomly generated string used to prevent URL caching. The value is generated once per bid response, so if a bid request contains multiple `placement_id` values, the same cachebuster value will be used across them.<br>For reconciliation and discrepancy tracking, we recommend using `${AUCTION_ID}` instead. |
 | `${PRICE_PAID}` | The price paid for this impression. (As opposed to the price bid, before price reduction.) |
 | `${SECOND_PRICE}` | The price that represent the second highest bid in auction. Expressed in floating point number format (e.g. 1.23) |
 | `${REFERER_URL}` | If available, the referring URL for this inventory. <br>**Note**: This field is deprecated (as of May 2016). Use ${REFERER_URL_ENC} instead. |

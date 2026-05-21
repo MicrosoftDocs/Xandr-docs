@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Click Tracking
 description: Explore click tracking's key role in optimizing Microsoft Advertising for CPC and CPA goals, bidding, and gauging campaign success.
-ms.date: 10/21/2025
+ms.date: 5/21/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -92,6 +92,9 @@ https://ad.doubleclick.net/adi/N5364.Ivillage.com/B2965815.5;sz=728x90;click=htt
 ```
 
 The creative will first direct the browser to the impression bus where the click will be recorded, and then to the landing page (the landing page is specified after our `clickenc=` variable). In this example, DoubleClick will use our click URL and `${CACHEBUSTER}` macro when delivering the final creative content to the user's page. The `${CACHEBUSTER}` macro ensures that a fresh call is made to the ad server every time the tag is called, so you are accurately counting impressions. If you don't add the `${CACHEBUSTER}` macro to the tag, you may see inaccurate impression totals. For more information, see [Table 2](supported-creative-macros.md).
+> [!NOTE]
+> - `${CACHEBUSTER}` macro is a randomly generated string used to prevent URL caching. The value is generated once per bid response, so if a bid request contains multiple `placement_id` values, the same cachebuster value will be used across them. For reconciliation and discrepancy tracking, we recommend using `${AUCTION_ID}` instead.<br>
+> - `${AUCTION_ID}` is an unique 64-bit identifier for the specific auction that resulted in the impression. Each `placement_id` in a bid request will have its own unique auction ID, which will also match the corresponding bid response(s) for that placement.
 
 ## Examples of failures
 

@@ -1,7 +1,7 @@
 ---
 title: Xandr Macros
 description: Explain how macros populate URLs, acting as variables for useful information in ad creatives, revealing their replaced values during ad calls.
-ms.date: 10/21/2025
+ms.date: 05/21/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -30,7 +30,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 |--|--|
 | `${CLICK_URL}` | The click tracking URL. |
 | `${CLICK_URL_ENC}` | The encoded click tracking URL (only necessary for some third party adservers) |
-| `${AUCTION_ID}` | The 64-bit character string representing the individual auction that led to the impression. |
+| `${AUCTION_ID}` | A unique 64-bit identifier for the specific auction that resulted in the impression. Each `placement_id` in a bid request will have its own unique auction ID, which will also match the corresponding bid response(s) for that placement.<br>This macro is recommended for reconciliation and discrepancy tracking. |
 | `${TAG_ID}` | The Xandr TinyTag ID that originated the Bid Request |
 | `${EXT_APP_ID}` | The external identifier for the application requesting the impression. This is most useful for impressions from mobile apps. |
 | `${CREATIVE_ID}` | The creative ID that won the impression. |
@@ -40,7 +40,7 @@ Xandr supports the following creative macros when adding creatives using the [C
 | `${SESSION_FREQ}` | The session frequency for the user. |
 | `${AGE}` | The age of the user (if available). Integer (e.g., 26) or 0. |
 | `${GENDER}` | The gender of the user (if available). Values are 'f','m','u'. |
-| `${CACHEBUSTER}` | A random number string used to limit caching of the URL |
+| `${CACHEBUSTER}` | A randomly generated string used to prevent URL caching. The value is generated once per bid response, so if a bid request contains multiple `placement_id` values, the same cachebuster value will be used across them.<br>For reconciliation and discrepancy tracking, we recommend using `${AUCTION_ID}` instead. |
 | `${PRICE_PAID}` | The price paid for this impression. (As opposed to the price bid, before price reduction.) |
 | `${SECOND_PRICE}` | The price that represent the second highest bid in auction. Expressed in floating point number format (e.g. 1.23) |
 | `${REFERER_URL}` | If available, the referring URL for this inventory. <br>**Note**: This field is deprecated (as of May 2016). Use ${REFERER_URL_ENC} instead. |

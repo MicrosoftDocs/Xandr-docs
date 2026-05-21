@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Supported Creative Macros
 description: Explore creative macros that can be used for all, mobile, and video impressions. Additionally, privacy and function macros are supported as well.
-ms.date: 10/21/2025
+ms.date: 5/21/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -32,10 +32,10 @@ The following macros can be used in creative third-party tags and landing page U
 | `${ADV_ID}` | The ID of the advertiser to which the creative belongs. |
 | `${AGE}` | The age of the user if available. Supported values are an integer or 0. |
 | `${APPNEXUS_AUCTION_ID}` | This macro is an alias for `${AUCTION_ID}`, and behaves in the same manner. |
-| `${AUCTION_ID}` | The 64-bit character string representing the individual auction that led to the impression. |
+| `${AUCTION_ID}` | A unique 64-bit identifier for the specific auction that resulted in the impression. Each `placement_id` in a bid request will have its own unique auction ID, which will also match the corresponding bid response(s) for that placement.<br>This macro is recommended for reconciliation and discrepancy tracking. |
 | `${BID_PRICE}` | The first price bid for this impression, as opposed to the price paid after price reduction. |
 | `${BIDPRICE}` | This macro is an alias for `${BID_PRICE}`, and behaves in the same manner. |
-| `${CACHEBUSTER}` | A random number string used to limit caching of the URL.<br><br>**Note**: This macro ensures that a fresh call is made to the ad server every time the tag is called to accurately count all impressions. If you don't add this macro to the tag, you may see inaccurate impression totals. |
+| `${CACHEBUSTER}` | A randomly generated string used to prevent URL caching. The value is generated once per bid response, so if a bid request contains multiple `placement_id` values, the same cachebuster value will be used across them.<br>For reconciliation and discrepancy tracking, we recommend using `${AUCTION_ID}` instead. |
 | `${CP_CODE}` | The campaign code of the served impression. |
 | `${CP_ID}` | The campaign or split ID of the served impression. |
 | `${CPG_CODE}` | The line item code of the served impression. |

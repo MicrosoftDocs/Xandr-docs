@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API  - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights in Digital Platform API.
-ms.date: 4/5/2026
+ms.date: 5/25/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -67,7 +67,10 @@ Delivery Analytics and Inventory Analytics reports are consolidated into a singl
 
 ## Legacy reports
 
-Legacy reports will no longer receive Microsoft Monetize data starting `early 2026`. Historical data will remain accessible based on each report’s standard retention period or `2 years 6 months`, whichever is shorter, with some specific dimensions in the report having shorter retentions of `99 days` or `14 months`, mirroring retention of equivalent fields in relevant Legacy reports. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. 
+<!--Legacy reports will no longer receive Microsoft Monetize data starting `early 2026`. Historical data will remain accessible based on each report’s standard retention period or `2 years 6 months`, whichever is shorter, with some specific dimensions in the report having shorter retentions of `99 days` or `14 months`, mirroring retention of equivalent fields in relevant Legacy reports. These new report types automatically include data for all impression types except for `7=RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers. -->
+
+Starting in early 2027, Legacy reports will no longer include Microsoft Monetize data. Historical reporting data is retained for `2 years and 6 months`. Some report dimensions have shorter retention periods of `99 days` or `14 months`, consistent with the retention policies of equivalent fields in corresponding Legacy reports.
+These report types automatically include data for all impression types, except `7 = RTB` (a buying transaction on supply from another seat to your own) for Microsoft Monetize sellers.
 > [!NOTE]
 > - Communication will be provided in advance to support the transition process.
 > - Reporting for Microsoft Invest and External SSPs is not included in these datasets.

@@ -1,7 +1,7 @@
 ---
 title: Standard Feed
 description: In this article, find information about the Standard feed and details about the columns associated with this data feed.
-ms.date: 2/18/2026
+ms.date: 6/1/2026
 ms.service: publisher-monetization
 ms.subservice: log-level-data
 ms.author: shsrinivasan
@@ -196,6 +196,7 @@ For `string` data types, the recommended length of the field varies depending on
 | 138 | is_private_auction | int32 | Indicates whether the auction was conducted within a Protected Audience API auction.<br>The possible values are: <br> - `0` = False <br> - `1` = True | Both |
 | 139 | private_auction_eligible | int32 | Indicates whether the inventory associated with this auction was eligible for a Protected Audience API auction.<br>The possible values are: <br> - `0` = False <br> - `1` = True| Both |
 | 140 | chrome_traffic_label | Enum | The Chrome label assigned for Privacy Sandbox testing, as explained [here](https://developers.google.com/privacy-sandbox/relevance/setup/web/chrome-facilitated-testing?mkt_tok=MjA0LUtaRy02ODUAAAGSpRSDWhlrfehHwCpqN8M4QmgkQgWXDQjbHOkEzJN5au1qzg2LxHPVs2EI9upbZLpE3d6O7J97Q2F1Y7-1HchIEfSb3pKGyyKyWEt3FbNGACfTFg). The type of context. The possible values are: <br> - `0` = NONE <br> - `1` = CONTROL_1_1 <br> - `2` = CONTROL_1_2 <br> - `3` = CONTROL_1_3 <br> - `4` = CONTROL_1_4 <br> - `5` = ONLY_1 <br> - `6` = ONLY_2 <br> - `7` = ONLY_3 <br> - `8` = ONLY_4 <br> - `9` = ONLY_5 <br> - `10` = TREATMENT_1_1 <br> - `11` = TREATMENT_1_2 <br> - `12` = TREATMENT_1_3 <br> - `13` = CONTROL_2 <br> - `14` = INVALID <br>**Note**: A null value may indicate that either none were sent or that the user is not associated with any labels.| Both |
+| 141 | curator_member_id | int32 | The member ID of the curator associated with the auction when the impression was intermediated by a curator. A value of `0` (or `null`) indicates that no curator was involved. For click tracker rows, this field is always `0`. | Both |
 
 ### extended_ids
 

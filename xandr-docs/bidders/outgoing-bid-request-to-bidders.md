@@ -1,7 +1,7 @@
 ---
 title: Outgoing Bid Request to Bidders
 description: Learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
-ms.date: 3/10/2026
+ms.date: 6/1/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -305,7 +305,11 @@ We support the following fields in the `pmp` object of the `imp` object to suppo
 
 ### Deal object
 
-We support the following fields in the `deal` object of the `pmp` object:
+> [!NOTE]
+> Microsoft Advertising supports the OpenRTB 2.6 `deal.guar` field. For backward compatibility, the same value is also available in the `deal.ext.appnexus.gtd` extension field.
+
+This object constitutes a specific deal that was struck between a buyer and a seller. Its presence within the `pmp` collection indicates that the impression is available under the terms of that deal. Deal-specific attributes, including whether the deal is guaranteed (`guar`), are provided in this object.
+<!-- We support the following fields in the `deal` object of the `pmp` object:-->
 
 | Field | Type | Description |
 |:---|:---|:---|
@@ -314,6 +318,9 @@ We support the following fields in the `deal` object of the `pmp` object:
 | `at` | integer | Optional override of the overall auction type of the bid request. If omitted, default is `2`.<br> - `1`: First price.<br> - `2`: Second price plus one cent (default).<br> - `3`: Bid floor is the agreed upon deal price (fixed price). |
 | `wseat` | array of strings | Specifies a list of buyer seat IDs that are allowed to bid on this deal. If no seat is specified, all buyers are eligible. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the deal object. See [Deal Extension Object](#deal-extension-object) below. |
+| `guar` | integer; default `0` | Indicates whether the deal is a guaranteed deal and the bidder must bid on the deal. Values: `0` = not a guaranteed deal, `1` = guaranteed deal. |
+
+
 
 ### Deal extension object
 

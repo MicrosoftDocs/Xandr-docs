@@ -1,7 +1,7 @@
 ---
 title: Batch Log Level Data
 description: In this article, find information about the Batch Log Level Data (LLD) and details about the supported file formats and schemas.
-ms.date: 10/22/2025
+ms.date: 6/1/2026
 ms.service: publisher-monetization
 ms.subservice: log-level-data
 ms.author: shsrinivasan

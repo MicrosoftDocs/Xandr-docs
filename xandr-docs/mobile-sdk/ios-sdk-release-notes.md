@@ -13,6 +13,20 @@ ms.author: shsrinivasan
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.13.0
+*Released: June 10, 2026*
+
+### New Feature
++ 10578599: Tapping a video ad now pauses or resumes playback instead of triggering a click-through. Added `ANVideoPlayerSettings.clickBehaviorPausePlay` to control this; defaults to `YES`, pass `NO` to keep the previous click-through behavior.
++ 10589382: Adding tests coverage.
++ 10727165: Upgrade OMID 1.6.5.
+
+### Improvement/Bug Fixes
++ 10703388: Fixed banner video ads auto-resuming after a user-initiated pause.
++ 10601476: Execute delegate's callback methods always on main thread.
++ 10783555: Fixed a memory leak caused by a retain cycle in the video player.
++ 10600963: Fixed BannerAd delegate to consistently invoke `adDidLogImpression` when impression trackers fire.
+
 ## 9.12.0
 *Released: March 18, 2026*
 

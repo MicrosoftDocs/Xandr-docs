@@ -4,7 +4,7 @@ description: Explore Android SDK releases, discover release versions, announceme
 ms.date: 3/2/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 # Android SDK release notes

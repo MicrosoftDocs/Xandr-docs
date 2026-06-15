@@ -4,10 +4,20 @@ description: Explore Android SDK releases, discover release versions, announceme
 ms.date: 3/2/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: rupambaruah
 ---
 
 # Android SDK release notes
+
+## 9.13.0
+*Released: June 10, 2026*
+
+### New Feature
++ 10578599: Tapping a video ad now pauses or resumes playback instead of triggering a click-through. Added `ANVideoPlayerSettings.shouldClickBehaviorPausePlay(boolean)` to control this; defaults to `true`, pass `false` to keep the previous click-through behavior.
+
+### Improvement/Bug Fixes
++ 10604973: Fixed banner video ads auto-resuming after a user-initiated pause.
++ 10677247: Added a debug logging option for OMID obstructions.
 
 ## 9.12.0
 *Released: March 18, 2026*

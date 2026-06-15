@@ -123,7 +123,7 @@ Xandr supports the following fields in the `appnexus` extension object.
 | `min_price` | float | The minimum price to which the bid should be reduced in the second price auction. |
 | `spend_protection_pixel_ids` | array of integers | **Deprecated**. |
 | `custom_notify_data` | string | **Note**: This feature is not enabled by default. You must request to have this field enabled.<br><br>Use this field to pass information to the [Notify Request](./notify-request.md). The string is entered as freeform text and will be automatically URL- and/or cookie-encoded by ImpBus. |
-| `click_url` | string | The click URL to be associated with the creative. This field should contain a redirect link. For example, [https://mydomain.com/abcd?redir=](https://mydomain.com/abcd?redir=) |
+| `click_url` | string | The click URL to be associated with the creative. This field should contain a redirect link. For example, `https://mydomain.com/abcd?redir=` |
 | `enable_bid_shading` | integer | **Note**: This field is in the process of being deprecated. It is set as **false** irrespective of the value sent in the bid response. |
 | `bid_payment_type` | array of objects | **Note**: This feature is not enabled by default. You must request to have this field enabled.<br><br>Specifies the payment type for which the Bidder is bidding and will be billed. If omitted, then we will consider the payment type to be `'impression'`. |
 

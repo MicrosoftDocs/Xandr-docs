@@ -1,7 +1,7 @@
 ---
 title: Seller Tag Release History
 description: In this article, find release history of AST.
-ms.date: 6/1/2026
+ms.date: 6/16/2026
 ms.service: publisher-monetization
 ms.subservice: seller-tag
 ---

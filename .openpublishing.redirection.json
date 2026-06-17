@@ -354,6 +354,16 @@
         "source_path": "xandr-docs/monetize/adding-insertion-orders-to-trader-home.md",
         "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/working-with-insertion-orders",
         "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/monetize/comscore-agent.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/about-monetize",
+        "redirect_document_id": false
+        },
+        {
+        "source_path": "xandr-docs/invest/comscore-agent.md",
+        "redirect_url": "https://learn.microsoft.com/en-us/xandr/invest/about-invest",
+        "redirect_document_id": false
         }
       ]
     }

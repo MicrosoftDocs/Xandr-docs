@@ -1721,10 +1721,6 @@
       href: prepare-to-file-a-report-discrepancy-support-case.md
     - name: Requirements for Filing a Support case for Report Discrepancies
       href: requirements-for-filing-a-support-case-for-report-discrepancies.md
-- name: Apps
-  items:
-  - name: comScore Agent
-    href: comscore-agent.md
 - name: Release Notes
   items:
   - name: Overview

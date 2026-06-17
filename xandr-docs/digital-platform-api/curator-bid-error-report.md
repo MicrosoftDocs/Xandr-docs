@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Curator Bid Error Report
 description: Use the Curator Bid Error report to gain insight into rejected demand through a randomly selected set of 5% of the errors logged on the platform.
-ms.date: 3/24/2026
+ms.date: 6/17/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -94,7 +94,7 @@ Data in this report is retained for 33 days.
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `error_count` | int | `2340` | sum(error_count)*100 | The amount of errors logged on the Xandr platform over the timeframe selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| `error_count` | int | `2340` | sum(error_count)*100 | The amount of errors logged on the Xandr platform over the timeframe selected (a randomly selected set of 5% of the errors multiplied by 20 to account for the sampling). |
 
 ## Examples
 

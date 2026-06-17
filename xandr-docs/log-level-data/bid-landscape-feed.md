@@ -1,7 +1,7 @@
 ---
 title: Bid Landscape Feed
 description: In this article, find information about the Bid landscape feed and details about the columns associated with this data feed.
-ms.date: 10/22/2025
+ms.date: 6/17/2026
 ms.service: publisher-monetization
 ms.subservice: log-level-data
 ms.author: shsrinivasan
@@ -219,6 +219,8 @@ The following codes appear in the `bid_reject_reason` column to indicate why a b
 | `418` | NEC_AD_PROFILE_UNKNOWN_DYNAMIC_LANGUAGE | `706` | BRR_AD_PROFILE_UNKNOWN_DYNAMIC_LANGUAGE | Ad profile contains language restrictions, and dynamic language is unknown |
 | `420` | NEC_CATEGORY_REQ_ALLOWLIST | `304` | BRR_BLOCKED_BY_AP_CATEGORY | Creative category requires allow-listing |
 | `421` | NEC_BID_PAGE_CAPPED | `402` | BRR_PAGE_CAPPED | Bid is rejected due to page cap |
+| `423` | NEC_CATEGORY_REQ_WHITELIST_MEMBER | `310` | BRR_CATEGORY_REQ_WHITELIST_MEMBER | Creative category restricted by policy - member not allowlisted |
+| `424` | NEC_CATEGORY_REQ_WHITELIST_BRAND | `311` | BRR_CATEGORY_REQ_WHITELIST_BRAND | Creative category restricted by policy - brand not allowlisted |
 | `1000` | NEC_NO_MEMBERS | `235` | BRR_NO_MEMBERS | No eligible members |
 | `1001` | NEC_BIDDER_UNAVAILABLE | `236` | BRR_BIDDER_UNAVAILABLE | Bidder not available |
 | `1002` | NEC_NO_BID_URI | `237` | BRR_NO_BID_URI | No bid URI set |

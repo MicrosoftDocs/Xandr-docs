@@ -85,7 +85,7 @@ This report's data is retained for 90 days. For more information about how quick
 | Flight End Date | No | The end date of the flight within the billing period. |
 | Flight Start Date | No | The start date of the flight within the billing period. |
 | ID Type Combinations | No | Concatenated list of identifier types displayed in each row include: <br> - `UID2` <br> - `RampID` <br> - `NetID` <br> - `TradeDeskID` <br> - `CriteoID` <br> - `Cookie / Device ID` <br> - `Unidentified` |
-| Impression Type | Yes | The type of impression served. For details, see [Impression Types](prebid-server-premium-seller-analytics.md#impression-types). |
+| Impression Type | Yes | The type of impression served. For details, see [Impression Types](network-analytics-report.md#impression-types). |
 | Insertion Order | Yes | The id of the insertion order for which impression was purchased. |
 | Line Item | Yes | The ID of the line item under which the impression was purchased. For more information about line items, see our documentation on [Working with Line Items](working-with-line-items.md). |
 | Media Type | No | The media type is the general display style of the creative. |
@@ -123,7 +123,6 @@ Follow these steps to run your report.
 
 1. Select **Reporting** from the appropriate top menu (depending on how your account has been configured).
 
-    Or, from the **Publishers** top menu, click on **Prebid Server Premium** > **Analytics** > **Prebid Server Analytics**.
 
 1. Select the relevant report from the list. The **Report** screen shows the available filters, dimensions, and delivery options for the report. The selections you make here will determine what report data is delivered to you, and how.
 

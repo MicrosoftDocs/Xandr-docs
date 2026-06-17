@@ -1,7 +1,7 @@
 ---
 title: Microsoft Curate - Curator Bid Error Report
 description: Explore this article to understand the Curator Bid Error report, including its metrics, dimensions, and a detailed guide on running a report.
-ms.date: 10/21/2025
+ms.date: 6/17/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate
 ms.author: shsrinivasan
@@ -99,7 +99,7 @@ For more information about how quickly reporting data is processed, see [Availab
 
 | Column | Description |
 |:---|:---|
-| Error Count | The amount of errors logged on the Microsoft Advertising Platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| Error Count | The amount of errors logged on the Microsoft Advertising Platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 20 to account for the sampling). |
 
 ## Run your report
 

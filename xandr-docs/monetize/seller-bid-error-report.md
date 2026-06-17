@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Seller Bid Error Report
 description: Learn what is the Seller Bid Error Report and how it can be used to troubleshoot sell-side and buy-side settings that result in auction errors, thereby blocking spend.  
-ms.date: 3/24/2026
+ms.date: 6/17/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -100,7 +100,7 @@ This report's data is retained for 403 days. For more information about how quic
 
 | Column | Description |
 |--|--|
-| Error Count | The amount of errors logged on the Microsoft Advertising platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| Error Count | The amount of errors logged on the Microsoft Advertising platform over the time range selected (a randomly selected set of 5% of the errors multiplied by 20 to account for the sampling). |
 | Blocked bid CPM | The bid price of the blocked bid. |
 
 ## How to run your report

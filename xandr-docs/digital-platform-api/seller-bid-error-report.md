@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Seller Bid Error Report
 description: Use the Seller Bid Error report to get an insight into rejected demand through a randomly selected set of errors. Helps troubleshoot sell-side and buy-side settings.
-ms.date: 3/24/2026
+ms.date: 6/17/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -65,7 +65,7 @@ Data retention period for this report is 403 days.
 
 | Column | Type | Example | Formula | Description |
 |:---|:---|:---|:---|:---|
-| `error_count` | int | `2340` | sum(error_count)*100 | The amount of errors logged on the AppNexus platform over the timeframe selected (a randomly selected set of 5% of the errors multiplied by 100 to account for the sampling). |
+| `error_count` | int | `2340` | sum(error_count)*100 | The amount of errors logged on the AppNexus platform over the timeframe selected (a randomly selected set of 5% of the errors multiplied by 20 to account for the sampling). |
 | `blocked_bid_cpm` | double | `5.68` | sum(blocked_bid_value) / sum (error_count) | The bid price of the blocked bid. |
 
 ## Example

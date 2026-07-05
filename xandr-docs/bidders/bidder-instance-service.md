@@ -1,7 +1,7 @@
 ---
 title: Bidder Instance Service
 description: Explore this article to understand the Bidder Instance service, including its JSON fields, REST API, and a detailed set of examples.
-ms.date: 10/21/2025
+ms.date: 7/6/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -32,7 +32,7 @@ You will need to register the hostname/IP/port combination for each of your bidd
 | `id` | yes (on `PUT`) | int | The ID of the bidder instance. |
 | `bidder_id` | yes | int | The ID of the bidder. |
 | `active` | no, default is true | boolean | Whether the bidder instance is active or not. |
-| `datacenter_id` | yes (on `POST`) | int | The datacenter ID with which your instance is associated NYM = 6, LAX = 4, , AMS = 15 , FRA = 7, SIN = 13. Legacy IDs: AMS = 12 (until July 12, 2022), SIN = 8 (until October 15, 2019) |
+| `datacenter_id` | yes (on `POST`) | int | The datacenter ID with which your instance is associated NYM = 6, LAX = 4, , AMS = 15 , FRA = 7, SIN = 13. Legacy IDs: AMS = 12 (until July 12, 2022), SIN = 8 (until October 15, 2019), ZKS = 17 |
 | `ip_address` | yes | string | IP address for the bidder instance. |
 | `port` | yes | int | Port for the bidder instance. |
 | `last_activity` | no | timestamp | The timestamp of last modification to this bidder instance. |

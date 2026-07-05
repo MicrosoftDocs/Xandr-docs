@@ -112,7 +112,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | Adjustments | No | Changes to Network reported revenue based on factors such as revenue, conversions, clicks, or impressions reported by their advertisers or agencies' ad servers. |
 | Buyer | Yes | The buyer of this impression.<br>**Note**: The name might be "Default"; or "Default Error", which means that there was no buyer for the impression, and a default creative was served. |
 | Seller | Yes | The seller of this impression. |
-| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information about the different seller types, see "Seller Types" below. |
+| Seller Type | Yes | Microsoft Advertising buckets sellers into different types for billing purposes. For more information about the different seller types, see [Seller Types](#seller-types) below. |
 | Advertiser | Yes | The advertiser whose creative served on this impression. |
 | Publisher | Yes | The publisher on whose inventory this impression occurred. |
 | Placement Group | Yes | The placement group (simply a collection of placements) which includes the placement through which this impression occurred.<br>For impressions older than 100 days, the ID will be 0. |
@@ -162,13 +162,13 @@ If you are frequently requesting Network analytics reports which include dates l
 | Brand | Yes | The brand associated with the creative. Microsoft Advertising keeps a list of advertiser brands in our systems that can be applied to a creative when it's uploaded. For impression type "Resold", no information is available in the **Brand** field for this report. |
 | Country | Yes | The country in which the impression took place. For impression requests for which we received no indication that the ad was rendered (i.e., non-transacted), country information **is not** provided. |
 | Size | Yes | The size of the creative (e.g., 320x50). |
-| Bid Type | Yes | See "Bid Types" below for definitions of the different types of bids. |
+| Bid Type | Yes | See [Bid Types](#bid-types) below for definitions of the different types of bids. |
 | Advertiser Currency | Yes | The default currency of the advertiser in this impression. This dimension is available only when Currency 2.0 is disabled. |
 | Publisher Currency | Yes | The default currency of the publisher in this impression. This dimension is available only when Currency 2.0 is disabled. |
-| Impression Type | Yes | See **Impression Types** below for definitions of the different types of impressions. |
+| Impression Type | Yes | See [Impression Types](#impression-types) below for definitions of the different types of impressions. |
 | Payment Rule | Yes | The payment rule in effect for this impression's auction, if any. |
-| Revenue Type | Yes | The basis on which the advertiser has agreed to pay you for the impression. For more information, see **Revenue Types**. |
-| Payment Type | Yes | How the buyer is paying for the impression. See **Payment Types** for definitions of the different payment types. |
+| Revenue Type | Yes | The basis on which the advertiser has agreed to pay you for the impression. For more information, see [Revenue Types](#revenue-types). |
+| Payment Type | Yes | How the buyer is paying for the impression. See [Payment Types](#payment-types) for definitions of the different payment types. |
 | Campaign Priority | Yes | The bidding priority of the campaign that purchased this impression. (Does not apply to all advertisers.) |
 | Billing Period | Yes | The insertion order's billing period. |
 | Billing Period: Start Date | No | The start date of the insertion order's billing period. |
@@ -247,8 +247,8 @@ If you are frequently requesting Network analytics reports which include dates l
 | vCPM | Media Cost per thousand viewable impressions. |
 | Commissions | Commissions for standard line items, $0 for ALIs. |
 | Serving Fees | Serving fees for standard line items, $0 for ALIs. This value will be displayed in USD as well as potentially the Buying Currency (if you've selected that dimension). |
-| Total Network RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see **Impression Types** below. |
-| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see **Impression Types** below. |
+| Total Network RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see [Impression Types](#impression-types) below. |
+| Total RPM | The revenue per 1000 impressions, including defaults, PSAs, and errors. For more information about these impression types, see [Impression Types](#impression-types) below. |
 | CPM | The total media cost per 1000 impressions. |
 | CPM Including Fees | **Deprecated**. The cost per 1000 impressions including serving fees (does not include commissions or data costs). |
 | PPM | **Deprecated**. The total profit per 1000 impressions. |
@@ -295,7 +295,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | Segment Data Costs Buying Currency | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the buyer used to purchase the inventory. |
 | Segment Data Costs Selling Currency | All costs related to usage of segments in the data marketplace. It is applicable when specific segments are applied in line items and associated pricing is displayed in the platform. It is in the currency the seller used to sell the inventory. |
 
-**Seller types**
+### Seller types
 
 | Name | Definition |
 |---|---|
@@ -303,7 +303,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | real time | When you purchase inventory from a seller on the open exchange. |  
 | unknown | The seller type is not identifiable. You shouldn't see this turn up in your reports. If you do, please contact [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com). |  
 
-**Revenue types**
+### Revenue types
 
 | Name | Description |
 |---|---|
@@ -317,7 +317,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | Estimated CPM | The estimated payment per 1000 impressions. |
 | CPVM | A flat payment per 1000 viewable impressions. |
 
-**Payment types**
+### Payment types
 
 | Name | Description |
 |---|---|
@@ -329,7 +329,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | Owner revshare | Publisher is paid on a Revshare basis (CPC or CPA). |
 | CPVM | Payment per 1000 viewable impressions. |
 
-**Impression types**
+### Impression types
 
 | Value | Name | Definition |
 |---|---|---|
@@ -345,7 +345,7 @@ If you are frequently requesting Network analytics reports which include dates l
 | 10 | External Click | A click from a click tracker. |
 | 11 | Insertion | Your creative served on third-party inventory where it persists across page-loads and sessions. |
 
-**Bid types**
+### Bid types
 
 > [!NOTE]
 > The term "give up" is appended to the bid types below if the valuation of the line item for that impression falls below the venue's "give up price".

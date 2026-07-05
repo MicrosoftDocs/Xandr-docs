@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Identifiers - ID Combinations Report
 description: In this article, learn about the ID Combinations report along with the dimensions and metrics associated with it.
-ms.date: 10/21/2025
+ms.date: 7/6/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -85,7 +85,7 @@ This report's data is retained for 90 days. For more information about how quick
 | Flight End Date | No | The end date of the flight within the billing period. |
 | Flight Start Date | No | The start date of the flight within the billing period. |
 | ID Type Combinations | No | Concatenated list of identifier types displayed in each row include: <br> - `UID2` <br> - `RampID` <br> - `NetID` <br> - `TradeDeskID` <br> - `CriteoID` <br> - `Cookie / Device ID` <br> - `Unidentified` |
-| Impression Type | Yes | The type of impression served. For details, see [Impression Types](prebid-server-premium-seller-analytics.md#impression-types). |
+| Impression Type | Yes | The type of impression served. For details, see [Impression Types](network-analytics-report.md#impression-types). |
 | Insertion Order | Yes | The id of the insertion order for which impression was purchased. |
 | Line Item | Yes | The ID of the line item under which the impression was purchased. For more information about line items, see our documentation on [Working with Line Items](working-with-line-items.md). |
 | Media Type | No | The media type is the general display style of the creative. |

@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API  - Historical Reporting
 description: Learn how Monetize Historical Reporting consolidates legacy reports, offering enhanced analytics, streamlined navigation, and improved performance insights in Digital Platform API.
-ms.date: 5/25/2026
+ms.date: 7/6/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -92,7 +92,6 @@ The reports consolidate Delivery and Inventory analytics, streamlining data acce
 | Site Domain Performance             | network_site_domain_performance       |
 | Device Analytics                    | network_device_analytics              |
 | Carrier Analytics                   | network_carrier_analytics             |
-| Prebid Server Analytics             | prebid_server_analytics               |
 | Audio Analytics                     | audio_analytics_network               |
 
 ### Advertiser or Publisher report types

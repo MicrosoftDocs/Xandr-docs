@@ -17,7 +17,7 @@ A case represents a customer’s question, feedback, or an issue. Microsoft Adve
 ## Explore knowledge base 
 
 Before submitting a support request, explore the available documentation on product offerings, developer resources, financial tools, and additional services. 
-The knowledge base provides articles that addresses common questions, troubleshoot issues, and guide you through common tasks. Knowledge base articles link to [Microsoft Learn](https://learn.microsoft.com/xandr) for more detailed information, offering comprehensive overviews of concepts, features, product documentation, webinars, and training materials. 
+The knowledge base provides articles that addresses common questions, troubleshoot issues, and guide you through common tasks. Knowledge base articles link to [Microsoft Learn](/xandr) for more detailed information, offering comprehensive overviews of concepts, features, product documentation, webinars, and training materials. 
 
 
 ## Steps to open a new case 
@@ -31,7 +31,7 @@ To open a new case with the Microsoft Advertising support team:
     - **Product support** - Technical support for products such as Microsoft Invest, Microsoft Monetize, Microsoft Curate, Yield Analytics (formerly Yieldex), or Creative inquires. 
     - **Bidder, SSP & Data Integrations support** - Technical support for Bidder and Bidder API, Data management and taxonomy, and External supply. 
     - **Client finance** - Technical support for issues such as General billing requests, or questions around Credit, Collections, and Fraud claims. 
-    - **Account services** - Technical support for services such as Google Ad Manager seat requests, Client requested terminations, Feature enablement or Credit and debit requests. 
+    - **Account services** - Technical support for services such as Google Ad Manager seat requests, Client requested terminations, unmanaged account billing and agreement support, Feature enablement or Credit and debit requests. 
     - **Programmatic Guaranteed Deals** - Technical support for GAM/AdX Deals or New PG Deal Requests. To open a case for programmatic guaranteed deals, see [Open a new case for Programmatic Guaranteed Deal](#open-a-new-case-for-programmatic-guaranteed-deal). 
 - From the dropdown menu, select a support topic that best fits your case. 
 - Enter the details of the case, such as: 

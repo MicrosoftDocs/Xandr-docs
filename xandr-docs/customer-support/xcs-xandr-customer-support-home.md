@@ -11,7 +11,7 @@ ms.author: shsrinivasan
 
 At Microsoft, we aim to provide exceptional customer support to help you navigate our platform seamlessly. Whether you have a technical issue or a general inquiry, our [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com) serves as a centralized hub for submitting and routing requests to the appropriate Xandr team for swift resolution. 
 > [!NOTE] 
-> For business-related inquiries, such as billing or training, please contact your Xandr Account Representative directly. 
+> For business-related inquiries, including billing and training, contact your Xandr account representative. If you have an unmanaged account, submit a request through the Customer Support Portal under **Account Services**.
 
 ## Overview
 
@@ -29,7 +29,7 @@ Here’s what we do:
 
 We prioritize your success by resolving technical challenges, offering expert advice, and maintaining a reliable and scalable technology platform. To maximize the value of this partnership, we encourage you to: 
 
-- **Leverage the documentation Help Centre:** Before submitting a support request, explore our [Help documentation](https://learn.microsoft.com/xandr/) on product offerings, developer resources, financial tools, and additional services to find the information you need. 
+- **Leverage the documentation Help Centre:** Before submitting a support request, explore our [Help documentation](/xandr) on product offerings, developer resources, financial tools, and additional services to find the information you need. 
 - **Conduct preliminary research:** Investigate and triage issues as much as possible before reaching out. This helps us address your concerns more efficiently. 
 - **Collaborate with internal SMEs:** Engage your internal subject matter experts (SMEs) for assistance in confirming issues and preparing detailed support requests. 
 - **Provide complete information:** When submitting a support request, include a detailed description of the issue and its impact on your business goals. 

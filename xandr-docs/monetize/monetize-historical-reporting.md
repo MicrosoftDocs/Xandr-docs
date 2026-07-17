@@ -347,7 +347,7 @@ The following dimensions are available when reporting on adjustment revenue.
 | Buyer Seat ID         | buyer_seat_id        |
 | Buyer Seat Name       | buyer_seat_name      |
 | Country Code          | geo_country          |
-| Country/region Name          | geo_country_name     |
+| Country/region Name   | geo_country_name     |
 | Impression Type       | imp_type             |
 | Impression Type ID    | imp_type_id          |
 | Impression Type Name  | imp_type_name        |
@@ -494,7 +494,6 @@ Filters allow you to limit displayed data by specific dimensions. Available filt
 | `Supply Type` | Yes | The ID of the type of inventory.|
 | `Supply Type Name` | No | The type of inventory. **Possible values:** <br> - "web" <br> - "mobile_web" <br> - "mobile_app" <br> - "facebook_sidebar". |
 | `Prebid Server Eligible` | Yes | Yes if PSP was eligible to bid into the auction for the impression. |
-| `Prebid Server Eligible` | No | Yes if PSP was eligible to bid into the auction for the impression. |
 | `SSP` | No | When the transaction is bought by PSP (bidder_id=443) this field will show the individual SSP that transacted. Otherwise, the SSP will be recorded as Monetize. |
 | `SSP ID` (Selectable via "Show IDs as separate column" option) | No | When the transaction is bought by PSP (bidder_id=443) this field will show the individual SSP that transacted. Otherwise, the SSP will be recorded as Monetize. |
 | `SSP Name` (Selectable via "Show IDs as separate column" option) | No | When the transaction is bought by PSP (bidder_id=443) this field will show the individual SSP that transacted. Otherwise, the SSP will be recorded as Monetize. |

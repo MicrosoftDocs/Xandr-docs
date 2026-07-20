@@ -131,6 +131,18 @@ Xandr supports the following field in the `appnexus` extension object:
 | Field | Type | Description |
 |:---|:---|:---|
 | `predicted_view_rate` | double | Specifies the probability that the impression will be viewable by the user, based on historical data. |
+| `use_pmt_rule` | boolean | For OpenRTB bid requests associated with a paid-in-net placement, set the `use_pmt_rule` field to *true*.<br/><br/>When `use_pmt_rule=true`, the bid price returned in the OpenRTB response reflects the applicable revenue share defined by the payment rule: *Net Price = Gross Bid × Revenue Share Percentage*<br/><br/>For example, a winning bid of $10.00 with a 75% revenue share returns a bid price of $7.50.|
+
+> [!NOTE]
+> Before enabling `use_pmt_rule`, ensure that:
+>
+> - A Payment Rule is configured for the Publisher ID with the appropriate revenue share settings.
+> - The Payment Rule pricing type is set to revshare and uses the desired revenue share percentage (for example, 0.75 for a 75% publisher share).
+
+> [!IMPORTANT]
+>
+> - **Owned & Operated (O&O) publishers**: Payment Rules don't apply to publishers flagged as O&O. In these cases, 100% of revenue is returned by design.
+> - **Placement-level overrides**: If a placement has a fixed cost_cpm configured, the placement-level cost_cpm takes precedence over the Payment Rule.
 
 ### Banner object
 

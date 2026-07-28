@@ -36,7 +36,7 @@ Let's take a moment to explore what, exactly, key/value sets are. The key is the
 
 ## Setting up key/value targeting - overview
 
-At the top of the **Key/Value Targeting** dialog you'll have the option to **Target any** or **all of the following key/value groups**. This option allows you to define whether the user must meet all the key/value requirements you specify, or whether you're targeting users who meet any one of the requirements. (In mathematical terms, it's the difference between an OR relationship and an AND relationship.) We'll explain this option in more detail in the next sections.
+At the top of the **Key/Value Targeting** dialog you'll have the option to select **and** or **or between the following Key/Values**. This option allows you to define whether the user must meet all the key/value requirements you specify, or whether you're targeting users who meet any one of the requirements. (In mathematical terms, it's the difference between an OR relationship and an AND relationship.) We'll explain this option in more detail in the next sections.
 
 When you first open the **Key/Value Targeting** dialog you'll see a group with a **Select Key** dropdown. When you click **Select Key**, you'll choose a key from the list. This will open a new section where you can select the values for that key. You can choose to **Select Pre-Defined Values** or **Bulk Select Values**.
 
@@ -119,7 +119,7 @@ We're going to start our key/value target from the bottom-right of our expressio
 
     :::image type="content" source="media/uioperator-diagram-step-c.png" alt-text="The expression tree with the and relationship between the entries of the right side group highlighted.":::
   
-    To change this relationship, at the top of the **Key/Value Targeting** dialog, select a **Target** of **any** **of the following key/value groups**. This will change the **or** to **and**.
+    To change this relationship, at the top of the **Key/Value Targeting** dialog, select **and** or **or between the following Key/Values**. This will change the relationship accordingly.
 
     We've now completed our group on the right side of our expression diagram.
 

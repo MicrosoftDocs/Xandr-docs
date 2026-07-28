@@ -17,12 +17,13 @@ The ad quality settings are specified within a dedicated object known as an ad p
 
 The primary benefits of utilizing ad profiles with curated deals include:
 
-- These settings can be configured to permit or restrict attributes such as brands, brand categories, creative ad servers, landing pages, and languages at either the curator deal or curator member level. Unlike legacy ad quality settings, which could only be configured to allow brands.
+- These settings can be configured to permit or restrict attributes such as brands, brand categories, creative ad servers, and languages at either the curator deal or curator member level. Unlike legacy ad quality settings, which could only be configured to allow brands.
 - Curators can easily discern which ad quality controls were employed for a specific deal.
->[!NOTE]
->Ad quality controls are implemented in an auction either at the member-level or deal-level, but not through a combination of both. Refer the table below for more details.
+> [!NOTE]
+> Ad quality controls are implemented in an auction either at the member-level or deal-level, but not through a combination of both. Refer the table below for more details.
 - Curators can assess the potential revenue impact of their ad quality controls.
 - They offer the ability to allow or block creative ad servers, granting curators control over which creative pixels can serve through their deals.
+- If a curator wants to grant an exception, creatives can be explicitly configured so they can always serve.
 
 | Auction | Curator member's ad profile | Curator deal's ad profile | Ad profile used to evaluate bids against curated deals |
 |:---|:---|:---|:---|
@@ -31,16 +32,18 @@ The primary benefits of utilizing ad profiles with curated deals include:
 | C | 123 | 456 | 456 |
 
 >[!NOTE]
+>
 > - In an auction, only one ad profile will be utilized and an ad profile associated with your deal supersedes an ad profile associated with your member.
 > - In auction C, the platform does not combine ad profiles 123 and 456. Instead, only ad profile 456 is utilized to assess eligible bids against the deal.
+> - The curator’s ad profile doesn't override the seller’s own ad profiles. Curators can only be more restrictive than what the seller allows.
 
 ## REST API
 
 | API Endpoint | API Object | Detailed Reference |
 |:---|:---|:---|
-| https://api.appnexus.com/auth | auth | [Authentication Service](./authentication-service.md) |
-| https://api.appnexus.com/ad-profile | ad-profile | [Ad Profile Service](./ad-profile-service.md) |
-| https://api.appnexus.com/deal | deal | [Deal Service](./deal-service.md) |
+| `https://api.appnexus.com/auth` | auth | [Authentication Service](./authentication-service.md) |
+| `https://api.appnexus.com/ad-profile` | ad-profile | [Ad Profile Service](./ad-profile-service.md) |
+| `https://api.appnexus.com/deal` | deal | [Deal Service](./deal-service.md) |
 
 
 ## Prerequisites
@@ -71,8 +74,10 @@ Before beginning this setup, familialize yourself with the foundational concepts
     | `default_category_status` | enum | The brand category status to be used by default when no explicit selection is made. Possible values: <br> - trusted <br> - banned |
     | `default_language_status` | enum | The language status to be used by default when no explicit selection is made. Possible values: <br> - trusted <br> - banned |
     | `default_ad_server_status` | enum | The creative ad server status to be used by default when no explicit selection is made. Possible values: <br> - trusted <br> - banned |
+    | `exclude_unaudited` | boolean | When *true*, only creatives which have passed Microsoft's creative audit can serve through the curated deal. When *false*, unaudited creatives can serve. |
     | `brands` | array of objects | Array of brands with their status. See Brands below for more details. |
     | `categories` | array of objects | Array of brand categories with their status. See Brand Categories below for more details. |
+    | `creatives` | array of objects | Array of creatives with their status. See Creatives below for more details. |
     | `languages` | array of objects | Array of languages with their status. See Languages below for more details. |
     | `ad_servers` | array of objects | Array of creative ad servers with their status. See Creative Ad Servers below for more details. |
     
@@ -99,6 +104,12 @@ Before beginning this setup, familialize yourself with the foundational concepts
     |:---|:---|:---|
     | `id` | int | The ID of the creative ad server. You can use the [Ad Server Service](./ad-server-service.md) to retrieve ad server IDs. |
     | `status` | enum | Determines if the creatives with this creative ad server can or cannot serve through the curated deal or curator member associated with this ad profile. Possible values: <br> - trusted <br> - banned |
+
+    ### Creatives
+    | Field | Type | Description |
+    |:---|:---|:---|
+    | `id` | int | The ID of the creative. You can use the [Creative Search Service](./creative-search-service.md) to retrieve creative IDs.<br>This must refer to the creative's ID on the Microsoft platform, not the creative's ID in its DSP. |
+    | `approved` | boolean | When true, the creative can always serve, regardless of the other settings in the ad profile. When false, the creative can never serve. |
 
 1. Associate the ad profile with a curated deal or curator member
    **To associate the ad profile with a curated deal:**
@@ -192,4 +203,37 @@ $ cat deal.json
 }
  
 $ curl -b cookies -c cookies -X PUT -d ‘@deal.json’ ‘https://api.appnexus.com/deal?id=123456’
+```
+**Always allow creative 123456 to serve through curated deal 9876**
+
+Create the ad profile and associate it with the curated deal:
+```
+$ cat ad-profile.json
+ 
+{
+  "ad-profile": {
+    "description": "Exception for creative 123456",
+    "creatives": [
+        {
+            "id": 123456,
+            "approved": true
+        }
+    ]
+  }
+}
+ 
+$ curl -b cookies -c cookies -X POST -d ‘@ad-profile.json’ ‘https://api.appnexus.com/ad-profile’
+ 
+ 
+#response.ad-profile.id = 5432
+ 
+$ cat deal.json
+ 
+{
+  “deal”: {
+    “ad_profile_id”: 5432
+  }
+}
+ 
+$ curl -b cookies -c cookies -X PUT -d ‘@deal.json’ ‘https://api.appnexus.com/deal?id=9876’
 ```

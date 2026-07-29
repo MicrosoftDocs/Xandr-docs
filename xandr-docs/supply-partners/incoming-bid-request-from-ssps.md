@@ -1,7 +1,7 @@
 ---
 title: Incoming Bid Request from SSPs
 description: This article provides information on the incoming bid request from SSPs.
-ms.date: 4/5/2026
+ms.date: 07/29/2026
 ms.service: publisher-monetization
 ms.subservice: supply-partners
 ms.author: shsrinivasan
@@ -365,6 +365,7 @@ Xandr supports the following fields in the `deal` object of the `pmp` object:
 | `id` | string | (Required) Specifies a unique identifier for the deal.<br><br>**Note**: The `id` must match the `deal.code` you registered using the Deal Service. See [Selling Deals](./selling-deals-on-xandr.md) for more details. The inclusion of a deal ID on the bid request implies that the buyer permitted to buy that deal is permitted to bid in the auction, even if that buyer is not included the bidrequest.wseat field. |
 | `bidfloor` | float | Specifies the minimum bid price for the deal, in CPM using the default currency (`USD`). This field is only respected if the Deal object has configured with a `floor_price` and `use_deal_floor` is true. If so, this overrides `imp.bidfloor` for deal bids. |
 | `bidfloorcur` | string | Specifies the currency for this bid using ISO-4217 alphabetic codes. Defaults to `USD` if not specified. |
+| `guar` | integer; default `0` | Indicates whether the deal is guaranteed and the bidder must bid on the deal. A value of `0` indicates a non-guaranteed deal, and `1` indicates a guaranteed deal. |
 
 ### Site object
 
@@ -382,6 +383,7 @@ Xandr supports the following fields in the `site` object:
 | `publisher` | object | Specifies information about the publisher. See [Publisher Object](#publisher-object) below. |
 | `keywords` | string | Comma separated list of keywords about the site. Keywords are global to the request and apply to all imp objects.<br>Example:<br>`"keywords":"car_make=ford,my_other_value"`<br><br>In this example, we look for<br>- a querystring mapping segment for `car_make` and set the value to ford (based on the segment's settings).<br>- a querystring key/value segment for `car_make=ford`.<br>- a querystring mapping segment with `my_other_value` as the key and set no value.<br><br>**Note**: The keywords feature is not available by default. Contact your Xandr representative to enable this feature. |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
+| `mobile` | integer | Indicates whether the site is designed and optimized for mobile devices. A value of `0` indicates no, and `1` indicates yes. |
 
 ### App object
 
@@ -478,6 +480,10 @@ any device IDs in the [Bid Request Extension Object](#bid-request-extension-obje
 | `language` | string | Specifies the browser language; use ISO 639-1 or ISO 3166 alpha-2. |
 | `device.ext.ifa_type` | string | Identifies the source of the IFA, whether it is device-generated (used across apps), publisher-provided, or temporary/session-based. Supports a broader range of devices, including CTV platforms such as Roku and Amazon Fire TV. Must be passed inside `device.ext` for compatibility with OpenRTB. An incorrect or missing value may impact bid eligibility, especially for CTV campaigns. (e.g., `dpid`, `ppid`, `sspid`, `sessionid`, `idfa`, `aaid`, `rida`, `afai`, `tifa`, `vida`, `lgudid`) |
 | `ifa` | string | The "identifier for advertising" is an unhashed device ID sanctioned for advertiser use. This will be the IDFA on iOS or AAID on Android.<br>Example: `"ifa": "AA000DFE74168477C70D291f574D344790E0BB12"`. |
+| `w` | integer | Physical width of the device screen in pixels. |
+| `h` | integer | Physical height of the device screen in pixels. |
+| `ppi` | integer | Screen size as pixels per linear inch. |
+| `pxratio` | float | Ratio of physical pixels to device-independent pixels. |
 | `didsha1` | string | Specifies the SHA1-encrypted unique identifier for the mobile device. |
 | `didmd5` | string | Specifies the MD5-encrypted unique identifier for the mobile device. |
 | `dpidsha1` | string | Specifies the SHA1-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device. |
@@ -501,11 +507,23 @@ Xandr supports the following fields in the `user` object:
 
 ### eid object
 
+The `uids` array contains UID objects with the following supported fields:
+
 | Field | Type | Description |
 |:---|:---|:---|
 | `source` | string | Source of technology provider responsible for the set of included IDs.  |
 | `uids` | object array; | Array of extended ID UID objects from the given source. |
 | `ext` | object | Placeholder for vendor specific extensions to this object. |
+
+#### UID object
+
+| Field | Type | Description |
+|:---|:---|:---|
+| `id` | string | The identifier for the user. |
+| `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this because many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. |
+| `ext.mm` | integer | Match method used to obtain the extended identifier. A value of `0` indicates an unknown method, `1` indicates a deterministic match, and `2` indicates a probabilistic match. |
+| `ext.inserter` | string | Domain of the entity that added the extended identifier to the bid request. |
+| `ext.matcher` | string | Domain of the entity that matched the extended identifier. |
 
 ### Geo object
 

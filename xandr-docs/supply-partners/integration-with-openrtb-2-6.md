@@ -1,7 +1,7 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol For Supply Partners 
 description: This page outlines how Xandr's supply partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 10/22/2025
+ms.date: 07/29/2026
 ms.service: publisher-monetization
 ms.subservice: supply-partners
 ms.author: shsrinivasan
@@ -144,6 +144,17 @@ This object contains a single user identifier provided as part of extended ident
 | --- | --- | --- |
 | `id` | string | The identifier for the user. |
 | `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+| `ext.mm` | integer | Match method used to obtain the extended identifier. A value of `0` indicates an unknown method, `1` indicates a deterministic match, and `2` indicates a probabilistic match. |
+| `ext.inserter` | string | Domain of the entity that added the extended identifier to the bid request. |
+| `ext.matcher` | string | Domain of the entity that matched the extended identifier. |
+
+## Object: Deal
+
+The `Deal` object defines a deal that applies to an impression.
+
+| **Field** | **Type** | **Description** |
+|:---|:---|:---|
+| `guar` | integer; default `0` | Indicates whether the deal is guaranteed and the bidder must bid on the deal. A value of `0` indicates a non-guaranteed deal, and `1` indicates a guaranteed deal. |
 
 ## Object: Bid
 OpenRTB 2.6 includes the additional capability to declare the taxonomy in use.

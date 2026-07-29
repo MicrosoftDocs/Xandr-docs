@@ -136,6 +136,27 @@ The **name** is a human-readable field, while **domain** and **id** can be used 
 | `name` | string   | Channel the content is on (e.g., a local channel like "WABC-TV"). |
 | `domain`| string   | The primary domain of the channel (e.g., "abc7ny.com" in the case of the local channel WABC-TV). It is recommended to include the top private domain (PSL+1) for DSP targeting normalization purposes. |
 
+## Object: User
+
+We support the following fields in the `user` object:
+
+| **Field** | **Type** | **Description** |
+| --- | --- | --- |
+| `user.consent` | string | When GDPR regulations are in effect, this attribute holds the Transparency and Consent Framework's Consent String data structure. |
+| `user.eids` | object array | This section details the support of a standard protocol for multiple third-party identity providers. See [Object: EID](#object-eid) for more details. |
+
+## Object: EID
+
+The `EID` object contains extended identifiers from a source or technology provider. We support the following fields in the `EID` object:
+
+| **Attribute** | **Type** | **Description** |
+| --- | --- | --- |
+| `inserter` | string | The canonical domain name of the entity that added the ID array element. For ad tech intermediaries, use the domain listed in ads.txt. For publishers, use the domain in the `site` or `app` object. |
+| `source` | string | Canonical domain of the ID. |
+| `matcher` | string | Technology provider responsible for the match method specified in `mm`. When omitted, `matcher` is assumed to equal `source`. This field may be omitted when `mm` is `0`, `1`, or `2`. |
+| `mm` | integer | Match method used by the `matcher`. Refer to *List: ID Match Methods* in AdCOM 1.0. |
+| `uids` | object array | Array of extended ID `UID` objects from the given source. See [Object: UID](#object-uid) for more details. |
+
 ## Object: UID
 
 This object contains a single user identifier provided as part of extended identifiers.
@@ -143,10 +164,7 @@ This object contains a single user identifier provided as part of extended ident
 | **Attribute** | **Type** | **Description** |
 | --- | --- | --- |
 | `id` | string | The identifier for the user. |
-| `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
-| `ext.mm` | integer | Match method used to obtain the extended identifier. A value of `0` indicates an unknown method, `1` indicates a deterministic match, and `2` indicates a probabilistic match. |
-| `ext.inserter` | string | Domain of the entity that added the extended identifier to the bid request. |
-| `ext.matcher` | string | Domain of the entity that matched the extended identifier. |
+| `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0. |
 
 ## Object: Deal
 
@@ -193,7 +211,7 @@ A number of fields have moved from the old location in OpenRTB 2.4/2.5 to the ne
 | `device.ext.user_agent_data.browsers.brand` |  `BrandVersion.brand` | string | The brand identifier, such as "Chrome" or "Windows", originates from the User-Agent Client Hints headers. It represents either the user agent brand, extracted from the Sec-CH-UA-Full-Version header, or the platform brand, derived from the Sec-CH-UA-Platform header. |
 | `device.ext.user_agent_data.browsers.version` | `BrandVersion.version` | array of string | It comprises a sequence of version components arranged in descending hierarchical order: major, minor, micro, and so forth. |
 | `user.ext.consent` | `user.consent` | string | When GDPR regulations are in effect, this attribute holds the Transparency and Consent Framework's Consent String data structure. |
-| `user.ext.eids` | `user.eids` | object array | This section details the support of a standard protocol for multiple third-party identity providers. See [Object EID](https://github.com/InteractiveAdvertisingBureau/openrtb2.x/blob/main/2.6.md#objecteid) for more details. |
+| `user.ext.eids` | `user.eids` | object array | This section details the support of a standard protocol for multiple third-party identity providers. See [Object: EID](#object-eid) for more details. |
 | `user.ext.eids.source` | `EID.source` | string | The source or technology provider responsible for the set of included IDs is represented as a top-level domain. |
 | `user.ext.eids.uids` | `EID.uids` | object array | It consists of an array of extended ID UID objects sourced from the specified origin. [Object UID](https://github.com/InteractiveAdvertisingBureau/openrtb2.x/blob/main/2.6.md#3228---object-uid-) for more details. |
 | `user.ext.eids.uids.id` | `UID.id` | string | This represents the user's identifier. |

@@ -1,7 +1,7 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol for Bidders
 description: Explore this article to learn how Xandr's demand partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 10/21/2025
+ms.date: 07/29/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -137,9 +137,23 @@ This object contains a single user identifier provided as part of extended ident
 | --- | --- | --- |
 | `id` | string | The identifier for the user. |
 | `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+| `ext.mm` | integer | Match method used to obtain the extended identifier. A value of `0` indicates an unknown method, `1` indicates a deterministic match, and `2` indicates a probabilistic match. |
+| `ext.inserter` | string | Domain of the entity that added the extended identifier to the bid request. |
+| `ext.matcher` | string | Domain of the entity that matched the extended identifier. |
 
 > [!NOTE]
-> Microsoft Monetize supports both reading and sending the `atype` field in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
+> Microsoft Monetize supports sending the `atype`, `ext.mm`, `ext.inserter`, and `ext.matcher` fields in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive these fields. Contact your Microsoft account representative or submit a support ticket to request access.
+
+## Object: Deal
+
+The `Deal` object defines a deal that applies to an impression.
+
+| **Field** | **Type** | **Description** |
+|:---|:---|:---|
+| `guar` | integer; default `0` | Indicates whether the deal is guaranteed and the bidder must bid on the deal. A value of `0` indicates a non-guaranteed deal, and `1` indicates a guaranteed deal. |
+
+> [!NOTE]
+> Microsoft Monetize supports sending the `deal.guar` field in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
 
 ## Object: Bid
 OpenRTB 2.6 includes the additional capability to declare the taxonomy in use.

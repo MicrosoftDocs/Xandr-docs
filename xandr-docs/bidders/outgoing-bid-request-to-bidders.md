@@ -1,7 +1,7 @@
 ---
 title: Outgoing Bid Request to Bidders
 description: Learn about outgoing bid request to bidders that offers all the necessary information for a bidder to produce a bid price and a creative to serve.
-ms.date: 6/1/2026
+ms.date: 07/29/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -306,7 +306,7 @@ We support the following fields in the `pmp` object of the `imp` object to suppo
 ### Deal object
 
 > [!NOTE]
-> Microsoft Advertising supports the OpenRTB 2.6 `deal.guar` field. For backward compatibility, the same value is also available in the `deal.ext.appnexus.gtd` extension field.
+> Microsoft Advertising supports the OpenRTB 2.6 `deal.guar` field. For backward compatibility, the same value is also available in the `deal.ext.appnexus.gtd` extension field. Microsoft Monetize supports sending `deal.guar` in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
 
 This object constitutes a specific deal that was struck between a buyer and a seller. Its presence within the `pmp` collection indicates that the impression is available under the terms of that deal. Deal-specific attributes, including whether the deal is guaranteed (`guar`), are provided in this object.
 <!-- We support the following fields in the `deal` object of the `pmp` object:-->
@@ -419,6 +419,7 @@ Sites (also known as placement groups) are a subset of inventory for a publisher
 | `page` | string | Specifies the full URL of the page where the impression is shown (for example, `page.publishersite.com/path/to/page`). Omitted if seller visibility settings prohibit sharing. Contains the domain instead of the full URL if only domain is exposed in the visibility profile. |
 | `publisher` | object | Specifies information about the publisher. Omitted if seller visibility settings prohibit sharing. See [Publisher Object](#publisher-object) below. |
 | `content` | object | Details about the Content within the site. See [Content Object](#content-object) below. |
+| `mobile` | integer | Indicates whether the site is designed and optimized for mobile devices. A value of `0` indicates no, and `1` indicates yes. |
 | `ext` | object | Used for holding app extension fields. See [Site extension object](#site-extension-object) below.  |
 
 ### Site extension object
@@ -520,6 +521,10 @@ We support the following fields in the `device` object.
 | `carrier` | string | Specifies carrier for the device.  |
 | `connectiontype` | integer | Specifies the detected data connection type for the device using IAB values. We support the following values today:<br> - `0`: Unknown<br> - `3`: Cellular Network – Unknown Generation |
 | `ifa` | string | Specifies the ID sanctioned for advertiser use in the clear. Set to iOS `idfa`, Android `aaid`, or Windows `adid` if available. Is also set for CTV impressions, using device-provided, publisher-provided, or other device ID types as applicable. For more information, see **ext.ifa_type**. Omitted if seller visibility settings prohibit sharing. |
+| `w` | integer | Physical width of the device screen in pixels. |
+| `h` | integer | Physical height of the device screen in pixels. |
+| `ppi` | integer | Screen size as pixels per linear inch. |
+| `pxratio` | float | Ratio of physical pixels to device-independent pixels. |
 | `dpidsha1` | string | Specifies the SHA1-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device. Omitted if seller visibility settings prohibit sharing. |
 | `dpidmd5` | string | Specifies the MD5-encrypted, platform-specific (e.g., `ANDROID_ID` or `UDID` for iOS) unique identifier for the mobile device.Omitted if seller visibility settings prohibit sharing. |
 | `ext` | object | Used for identifying platform-specific extensions to OpenRTB for the geo object. See [Geo Extension Object](#geo-extension-object) below. |
@@ -597,11 +602,14 @@ We support the following fields in the `ext` object to support platform-specif
 | `eids` | object | Specifies the information relating to the extended user identifiers. This can be either third party identity solutions (Criteo, TDID, RampID, etc.) or Publisher-provided identifiers (PPIDs). |
 
 > [!NOTE]
-> In addition to `eid` object mentioned above, Microsoft monetize also supports both reading and sending the `atype` field in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive this field. Contact your Microsoft account representative or submit a support ticket to request access.
+> In addition to the `eid` object mentioned above, Microsoft Monetize supports sending the `atype`, `ext.mm`, `ext.inserter`, and `ext.matcher` fields in all OpenRTB bid requests, across all versions. For bidders using OpenRTB versions earlier than 2.6, enablement is required to receive these fields. Contact your Microsoft account representative or submit a support ticket to request access.
 
 | **Attribute** | **Type** | **Description** |
 | --- | --- | --- |
 | `atype` | integer | Type of user agent the ID is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to [List: Agent Types](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list_agenttypes) in AdCOM 1.0 |
+| `ext.mm` | integer | Match method used to obtain the extended identifier. A value of `0` indicates an unknown method, `1` indicates a deterministic match, and `2` indicates a probabilistic match. |
+| `ext.inserter` | string | Domain of the entity that added the extended identifier to the bid request. |
+| `ext.matcher` | string | Domain of the entity that matched the extended identifier. |
 
 
 #### Extended user identifier object

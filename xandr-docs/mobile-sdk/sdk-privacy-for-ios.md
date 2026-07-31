@@ -1,21 +1,21 @@
 ---
 title: SDK Privacy for iOS
-description: This page provides an overview on Global Privacy Platform (GPP), General Data Protection Regulations and California Consumer Protection Act.  
-ms.date: 10/22/2025
+description: iOS SDK includes client support for Global Privacy Platform, General Data Protection Regulations, the California Consumer Privacy Act, and the Children's Online Privacy Protection Act.
+ms.date: 07/21/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 
 ---
 
 # SDK Privacy for iOS
 
-Xandr's mobile SDKs include client support for Global Privacy Platform (GPP), the [General Data Protection Regulations](https://gdpr-info.eu/) (GDPR), and the [California Consumer Protection Act](https://oag.ca.gov/privacy/ccpa) (CCPA) and [Digital Services Act](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-services-act_en) (DSA).
+The iOS SDK includes client support for Global Privacy Platform (GPP), the [General Data Protection Regulations](https://gdpr-info.eu/) (GDPR), and the [California Consumer Protection Act](https://oag.ca.gov/privacy/ccpa) (CCPA) and [Digital Services Act](https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-services-act_en) (DSA).
 
 The Global Privacy Platform (GPP) enables advertisers, publishers and technology vendors to adapt to regulatory demands across markets. GDPR provides regulations for the processing, movement, and protection of personal data within the European Union. CCPA creates new consumer rights relating to the access to, deletion of, and sharing of personal information that is collected by organizations. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
 
 > [!WARNING]
-> This resource should not be construed as legal advice and Xandr makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
+> This resource should not be construed as legal advice and Microsoft makes no guarantees about compliance with any law or regulation. Please note that because every company and its collection, use, and storage of personal data is different, you should also seek independent legal advice relating to obligations under European regulations, including the GDPR and the existing ePrivacy Directive. Only a lawyer can provide you with legal advice specifically tailored to your situation. Nothing in this guide is intended to provide you with, or should be used as a substitute for, legal advice tailored to your business.
 >
 > [!NOTE]
 > Publishers are responsible for providing notice, transparency, and choice and for collecting consent from their users in accordance with the [Framework policies](https://iabeurope.eu/transparency-consent-framework/), either using their own Consent Management Provider or working with a vendor.
@@ -24,15 +24,15 @@ The Global Privacy Platform (GPP) enables advertisers, publishers and technology
 > - [List of registered CMPs](https://iabeurope.eu/cmp-list/)
 >
 > - Note our Service Policies (for Buying, Selling, and Data Providers) include privacy-specific obligations of which you should be aware.
-> - All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Xandr does not pass this information to these SDKs.
+> - All vendor SDKs (including mediation SDKs) are responsible for looking up approved vendor and consent information on their own; Microsoft Monetize does not pass this information to these SDKs.
 
 ## General data protection regulations (GDPR)
 
-In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Xandr supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/)(the "Framework").
+In order for our clients to meet their transparency, notice and choice/consent requirements under the GDPR and the existing ePrivacy Directive, Microsoft Monetize supports [the IAB Europe Transparency &amp; Consent Framework](https://iabeurope.eu/transparency-consent-framework/)(the "Framework").
 
-This is a reference for mobile app publishers using Xandr's Mobile SDK to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Xandr and demand sources and their vendors through the Xandr platform.
+This is a reference for mobile app publishers using the iOS SDK to surface notice, transparency and choice to end users located in the EEA and signal approved vendors and, where necessary, pass consent, to Microsoft Monetize and demand sources and their vendors through the Monetize platform.
 
-Xandr provides three APIs in the Mobile SDK for mobile app publishers to use the Framework. (These  APIs are available in Mobile SDK version 4.8+ for Android and 4.7.1+ for iOS.) These APIs allow you to:
+The iOS SDK provides three APIs for mobile app publishers to use the Framework. These APIs allow you to:
 
 - define whether the user is located in the European Economic Area (the "EEA") and that European privacy regulations should apply
 - set the [IAB Europe](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/commit/a32574941ce201708e30e78702278efe1ce6cd59)(IAB) consent string
@@ -41,26 +41,41 @@ This information will be persisted by the SDK and will be added to each ad call 
 
 Publishers/Consent Management Platforms (CMPs) are free to store these values in a SharedPreferences interface (as defined by [Mobile In-App CMP API v2.0: Transparency &amp; Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/README.md)) instead of passing them via the new APIs, and the SDK will read the values as a fallback.
 
+Use the following methods on `ANGDPRSettings`:
+
+| Method | Description |
+|:---|:---|
+| `+ (void)setConsentRequired:(nonnull NSNumber *)consentRequired` | Set whether the user is subject to GDPR regulations. |
+| `+ (void)setConsentString:(nonnull NSString *)consentString` | Set the IAB Base64-encoded consent string. |
+| `+ (void)setPurposeConsents:(nonnull NSString *)purposeConsents` | Set the IAB purpose consents binary string. `'0'` or `'1'` at position `n` (indexing from 0) indicates the consent status for purpose ID `n+1`. |
+
+### [Swift](#tab/swift1)
+
 ```
-/** * Set the consentRequired value in the SDK
- *
- * @param true if subject to GDPR regulations, false otherwise
- */
- [ANGDPRSettings setConsentRequired:1];
-      
-/**
- * Set the consent string in the SDK
- *
- * @param A valid Base64 encode consent string as per https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework
- */
+// Set whether the user is subject to GDPR regulations
+ANGDPRSettings.setConsentRequired(true)
+
+// Set the IAB Base64-encoded consent string
+ANGDPRSettings.setConsentString("BOMyQRvOMyQRvABABBAAABAAAAAAEA")
+
+// Set the IAB purpose consents (binary string; '1' at index n = consent for purpose ID n+1)
+ANGDPRSettings.setPurposeConsents("10101001")
+```
+
+### [Objective-C](#tab/objectivec1)
+
+```
+// Set whether the user is subject to GDPR regulations
+[ANGDPRSettings setConsentRequired:1];
+
+// Set the IAB Base64-encoded consent string
 [ANGDPRSettings setConsentString:@"BOMyQRvOMyQRvABABBAAABAAAAAAEA"];
-/**
- * Set the purpose consents in the SDK
- *
- * @param A valid Binary String: The '0' or '1' at position n – where n's indexing begins at 0 – indicates the consent status for purpose ID n+1; false and true respectively. eg. '1' at index 0 is consent true for purpose ID 1
- */
+
+// Set the IAB purpose consents (binary string; '1' at index n = consent for purpose ID n+1)
 [ANGDPRSettings setPurposeConsents:@"10101001"];
 ```
+
+---
 
 > [!NOTE]
 > To ensure proper monetization and relevant targeting, the SDK should be enabled to send the device information. Setting the `consentRequired` and `purposeConsents` flag correctly will help ensure proper device information is sent. Refer to the table below to determine whether the device details will be passed or not.
@@ -75,7 +90,7 @@ The table below describes the actions taken for the different `purposeConsents`
 |`consentRequired=true<br>(gdprApplies = true)`| The SDK will read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server. | The SDK will **not** read and pass IDFA/AAID info to server.|
 | `consentRequired=false<br>(gdprApplies = false)`| The SDK will read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. | The SDK will read and pass IDFA/AAID info to server. |
 
-Xandr provides three APIs that enable SDK users to set, retrieve and clear U.S. Privacy User Signal Mechanism controls. The IAB Tech Lab has formalized and adopted the "us_privacy" string as the mechanism to encode data about the information disclosed to the user and user elections under various US privacy laws, starting with the CCPA.
+The iOS SDK provides three APIs that enable SDK users to set, retrieve and clear U.S. Privacy User Signal Mechanism controls. The IAB Tech Lab has formalized and adopted the "us_privacy" string as the mechanism to encode data about the information disclosed to the user and user elections under various US privacy laws, starting with the CCPA.
 
 ## California Consumer Privacy Act (CCPA)
 
@@ -83,26 +98,75 @@ This information will be persisted by the SDK and will be added to each ad call 
 
 Publishers/Consent Management Platforms (CMPs) are free to store these values in a SharedPreferences interface (as defined by IAB's CCPA Compliance Mechanism) instead of passing them via the new APIs, and the SDK will read the values as a fallback.
 
-``` 
-/**
- * Set the IAB US Privacy String in the SDK
- */
+Use the following methods on `ANUSPrivacySettings`:
+
+| Method | Description |
+|:---|:---|
+| `+ (void)setUSPrivacyString:(nonnull NSString *)privacyString` | Set the IAB US Privacy String in the SDK. |
+| `+ (nonnull NSString *)getUSPrivacyString` | Get the IAB US Privacy String currently in the SDK. |
+| `+ (void)reset` | Reset the previously set IAB US Privacy String. |
+
+### [Swift](#tab/swift2)
+
+```
+// Set the IAB US Privacy String in the SDK
+ANUSPrivacySettings.setUSPrivacyString("1YNN")
+
+// Get the IAB US Privacy String currently in the SDK
+let privacyString: String? = ANUSPrivacySettings.getUSPrivacyString()
+
+// Reset the previously set IAB US Privacy String
+ANUSPrivacySettings.reset()
+```
+
+### [Objective-C](#tab/objectivec2)
+
+```
+// Set the IAB US Privacy String in the SDK
 [ANUSPrivacySettings setUSPrivacyString:@"1YNN"];
- 
- 
- 
-/**
- * Get the IAB US Privacy String in the SDK.
-*/
-[ANUSPrivacySettings getUSPrivacyString]
- 
- 
- 
-/**
- * Reset the value of IAB US Privacy String that was previously set using setUSPrivacyString
-*/
+
+// Get the IAB US Privacy String currently in the SDK
+NSString *privacyString = [ANUSPrivacySettings getUSPrivacyString];
+
+// Reset the previously set IAB US Privacy String
 [ANUSPrivacySettings reset];
 ```
+
+---
+
+## Children's Online Privacy Protection Act (COPPA)
+
+The [U.S. Children's Online Privacy Protection Act](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) (COPPA) applies when your app's ad requests are directed to children under the age of 13. When COPPA is enabled, the SDK sends `user.coppa = true` in the ad request so downstream systems can restrict the collection of personal information for those users.
+
+Set the `coppa` property on `[ANSDKSettings sharedInstance]` to signal that the current session is subject to COPPA. The value is applied to every subsequent ad request until it is changed. Default value is `NO`.
+
+Use the following property on `ANSDKSettings`:
+
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `coppa` | `BOOL` | readwrite | Signal that the current session is subject to COPPA. Default value is `NO`. |
+
+### [Swift](#tab/swift3)
+
+```
+// Enable or disable COPPA for the current session
+ANSDKSettings.sharedInstance().coppa = true
+
+// Check whether COPPA is currently enabled
+let coppa: Bool = ANSDKSettings.sharedInstance().coppa
+```
+
+### [Objective-C](#tab/objectivec3)
+
+```
+// Enable or disable COPPA for the current session
+[ANSDKSettings sharedInstance].coppa = YES;
+
+// Check whether COPPA is currently enabled
+BOOL coppa = [ANSDKSettings sharedInstance].coppa;
+```
+
+---
 
 ## Global Privacy Platform (GPP)
 
@@ -116,7 +180,7 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
   > [!NOTE]
   > If a Publisher chooses to remove a CMP SDK from their app they are responsible for clearing all IABGPP\_\* vestigial values for users so that vendors do not continue to use the GPP data therein.
 
-  Xandr SDK will then read the values from NSUserDefault which is then passed to the ad call. Following are the strings SDK will query from :
+  The iOS SDK will then read the values from NSUserDefault which is then passed to the ad call. Following are the strings SDK will query from :
 
   | Key Name | Data type | Description |
   |--|--|--|
@@ -127,223 +191,121 @@ Publishers/Consent Management Platforms (CMPs) are free to store these values i
 
 The Digital Services Act (DSA) oversees online intermediaries and platforms, where its primary objective is to curb illegal and harmful activities on the internet and to mitigate the dissemination of disinformation. The DSA is a key legislative measure by the European Union aimed at enhancing transparency in digital advertising, with a core objective of promoting transparency, accountability, and user protection in online services.
 
-### Set DSA Values in SDK:
+### Set and retrieve DSA values in the SDK
 
-SDK will then pass these values to the ad call.
+The SDK passes these values to the ad call.
 
-### Code sample
+Use the following properties on `ANDSASettings`:
 
-#### [Objective C](#tab/objectivec1)
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `dsaRequired` | `NSInteger` | readwrite, assign | DSA information requirement. `0` = Not required, `1` = Supported, `2` = Required, `3` = Required + Publisher is an Online Platform. |
+| `pubRender` | `NSInteger` | readwrite, assign | Whether the publisher renders DSA transparency info. `0` = Publisher can't render, `1` = Publisher could render depending on adrender, `2` = Publisher will render. |
+| `transparencyList` | `NSArray<ANDSATransparencyInfo *> *` | strong, nullable | Transparency list of `ANDSATransparencyInfo` entries. |
 
-```
-/**
- * Set the DSA information requirement.
- * 0 = Not required
- * 1 = Supported, bid responses with or without DSA object will be accepted
- * 2 = Required, bid responses without DSA object will not be accepted
- * 3 = Required, bid responses without DSA object will not be accepted, Publisher is an Online Platform
- */
-[ANDSASettings.sharedInstance setDsaRequired:1];
- 
-/**
- * Set if the publisher renders the DSA transparency info.
- * 0 = Publisher can't render
- * 1 = Publisher could render depending on adrender
- * 2 = Publisher will render
- */
-[ANDSASettings.sharedInstance setPubRender:0];
- 
-/**
-Set the transparency list using the provided list of ANDSATransparencyInfo.
-Initializes an ANDSATransparencyInfo instance with the specified domain and params.
-*/
-NSMutableArray<ANDSATransparencyInfo *> *transparencyList = [NSMutableArray array];
-[transparencyList addObject:[[ANDSATransparencyInfo alloc] initWithDomain:@"example.com" andDSAParams:@[@1, @2, @3]]];
-[transparencyList addObject:[[ANDSATransparencyInfo alloc] initWithDomain:@"example.net" andDSAParams:@[@4, @5, @6]]];
- 
-[ANDSASettings.sharedInstance setTransparencyList:transparencyList];
-```
-
-#### [Swift](#tab/swift1)
+#### [Swift](#tab/swift4)
 
 ```
-/**
- * Set the DSA information requirement.
- * 0 = Not required
- * 1 = Supported, bid responses with or without DSA object will be accepted
- * 2 = Required, bid responses without DSA object will not be accepted
- * 3 = Required, bid responses without DSA object will not be accepted, Publisher is an Online Platform
- */
+// Set DSA information requirement (0=Not required, 1=Supported, 2=Required, 3=Required + Online Platform)
 ANDSASettings.sharedInstance().dsaRequired = 1
-  
-/**
- * Set if the publisher renders the DSA transparency info.
- * 0 = Publisher can't render
- * 1 = Publisher could render depending on adrender
- * 2 = Publisher will render
- */
+
+// Set publisher render behavior (0=Can't render, 1=Depends on adrender, 2=Will render)
 ANDSASettings.sharedInstance().pubRender = 0
-  
-/**
-Set the transparency list using the provided list of ANDSATransparencyInfo.
-Initializes an ANDSATransparencyInfo instance with the specified domain and params.
-*/
-var transparencyList : [ANDSATransparencyInfo] = []
-  
-let info1 = ANDSATransparencyInfo(domain: "example.com", andDSAParams: [1, 2, 3])
-transparencyList.append(info1)
-  
-let info2 = ANDSATransparencyInfo(domain: "example.net", andDSAParams: [4, 5, 6])
-transparencyList.append(info2)
-  
-ANDSASettings.sharedInstance().transparencyList = transparencyList
+
+// Set the transparency list
+ANDSASettings.sharedInstance().transparencyList = [
+    ANDSATransparencyInfo(domain: "example.com", andDSAParams: [1, 2, 3]),
+    ANDSATransparencyInfo(domain: "example.net", andDSAParams: [4, 5, 6])
+]
 ```
 
-### Retrieve DSA values set in SDK
+#### [Objective-C](#tab/objectivec4)
 
 ```
-// Objective C
-NSInteger dsaRequired = ANDSASettings.sharedInstance.dsaRequired;
-NSInteger pubRender = ANDSASettings.sharedInstance.pubRender;
-NSMutableArray<ANDSATransparencyInfo *> *transparencyList = [ANDSASettings.sharedInstance.transparencyList mutableCopy];
-for (ANDSATransparencyInfo *transparencyInfo in transparencyList) {
-NSString *domain = transparencyInfo.domain ?: @"";
-NSArray<NSNumber *> *params = transparencyInfo.dsaparams ?: @[];
-}
+// Set DSA information requirement (0=Not required, 1=Supported, 2=Required, 3=Required + Online Platform)
+[ANDSASettings.sharedInstance setDsaRequired:1];
 
-// Swift
-let dsaRequired = ANDSASettings.sharedInstance().dsaRequired
-let pubRender = ANDSASettings.sharedInstance().pubRender
+// Set publisher render behavior (0=Can't render, 1=Depends on adrender, 2=Will render)
+[ANDSASettings.sharedInstance setPubRender:0];
 
-if let transparencyList = ANDSASettings.sharedInstance().transparencyList {
-for transparencyInfo in transparencyList {
-let domain = transparencyInfo.domain ?? ""
-let params = transparencyInfo.dsaparams ?? []
-}
-}
+// Set the transparency list
+ANDSASettings.sharedInstance.transparencyList = @[
+    [[ANDSATransparencyInfo alloc] initWithDomain:@"example.com" andDSAParams:@[@1, @2, @3]],
+    [[ANDSATransparencyInfo alloc] initWithDomain:@"example.net" andDSAParams:@[@4, @5, @6]]
+];
 ```
 
-### Retrieve DSA Response values:
+---
 
-#### [Objective C](#tab/objectivec2)
+### Retrieve DSA Response values
 
+Use the following properties on `ANDSAResponseInfo`:
 
-```
-- (void)requestBannerAd
-{
-// Make a banner ad view.
-self.banner = [ANBannerAdView adViewWithFrame:CGRectMake(0, 0, 300, 250) placementId:@“1” adSize:CGSizeMake(300,250)];
-self.banner.delegate = self;
-//... Add required configurations
-[self.banner loadAd];
-}
-// On Ad Loaded
-- (void)adDidReceiveAd:(id)ad {
-NSLog(@“Ad did receive ad”);
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `behalf` | `NSString *` | readwrite, strong, nullable | On whose behalf the ad is displayed. |
+| `paid` | `NSString *` | readwrite, strong, nullable | Who paid for the ad. |
+| `transparencyList` | `NSMutableArray<ANDSATransparencyInfo *> *` | strong, nullable | Transparency user parameters info. |
+| `adRender` | `NSInteger` | readwrite, assign | Whether the buyer/advertiser will render DSA transparency info. `0` = will not render, `1` = will render. |
 
-/**
-* Retrieve on whose behalf the ad is displayed.
-*/
-NSString *behalf = self.banner.adResponseInfo.dsaResponseInfo.behalf;
-
-/**
-* Retrieve who paid for the ad.
-*/
-NSString *paid = self.banner.adResponseInfo.dsaResponseInfo.paid;
-
-/**
-* Retrieve the transparency user parameters info
-*/
-for (ANDSATransparencyInfo *transparencyInfo in self.banner.adResponseInfo.dsaResponseInfo.transparencyList) {
-NSString *domain = transparencyInfo.domain;
-NSArray<NSNumber *> *params = transparencyInfo.dsaparams;
-}
-
-/**
-* Retrieve indicating if the buyer/advertiser will render DSA transparency info.
-* 0 = buyer/advertiser will not render
-* 1 = buyer/advertiser will render
-*/
-NSInteger adRender = self.banner.adResponseInfo.dsaResponseInfo.adRender;
-}
+#### [Swift](#tab/swift5)
 
 ```
+banner = ANBannerAdView(frame: CGRect(x: 0, y: 0, width: 300, height: 250), placementId: "1")
+banner?.delegate = self
+banner?.loadAd()
 
-#### [Swift](#tab/swift2)
-
-```
-
-func requestBannerAd() {
-// Make a banner ad view.
-self.banner = ANBannerAdView(frame: CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 300, height: 250)), placementId: “1”, adSize: CGSize(width: 300, height: 250))
-self.banner!.rootViewController = self
-self.banner!.delegate = self
-//... Add required configurations
-self.banner!.loadAd()
-}
-// On Ad Loaded
 func adDidReceiveAd(_ ad: Any) {
-print(“Ad did receive ad”)
- 
-/**
- * Retrieve on whose behalf the ad is displayed.
- */
-let behalf : String = (self.banner?.adResponseInfo?.dsaResponseInfo?.behalf)!
- 
-/**
- * Retrieve who paid for the ad.
- */
-let paid : String = (self.banner?.adResponseInfo?.dsaResponseInfo?.paid)!
- 
-/**
- * Retrieve the transparency user parameters info
- */
-if let transparencyList = self.banner?.adResponseInfo?.dsaResponseInfo?.transparencyList as? [ANDSATransparencyInfo] {
- for transparencyInfo in transparencyList {
- let domain = transparencyInfo.domain
- let params = transparencyInfo.dsaparams as? [Int]
- }
-}
- 
-/**
- * Retrieve indicating if the buyer/advertiser will render DSA transparency info.
- * 0 = buyer/advertiser will not render
- * 1 = buyer/advertiser will render
- */
-let adRender : NSInteger = (self.banner?.adResponseInfo?.dsaResponseInfo?.adRender)!
+    //   The example uses `banner`. For other ad units, use:
+    //   interstitialAd?.adResponseInfo?.dsaResponseInfo
+    //   videoAd?.adResponseInfo?.dsaResponseInfo
+    //   nativeAdResponse.adResponseInfo?.dsaResponseInfo  (in ANNativeAdRequestDelegate.adRequest(_:didReceiveResponse:))
+    if let info = banner?.adResponseInfo?.dsaResponseInfo {
+        let behalf = info.behalf                   // Advertised on behalf of
+        let paid = info.paid                       // Paid by
+        let adRender = info.adRender               // 0 = won't render, 1 = will render
+        for t in info.transparencyList ?? [] {
+            let domain = t.domain
+            let params = t.dsaparams as? [NSNumber]
+        }
+    }
 }
 ```
 
-> [!NOTE]
-> ANDSAResponseInfo can be retrieved using VideoAd instance, Interstitial Ad View instance and Native Ad Response also apart from Banner Ad View
-
-### Code sample
-
-#### [Objective C](#tab/objectivec3)
+#### [Objective-C](#tab/objectivec5)
 
 ```
+ANBannerAdView *banner = [ANBannerAdView adViewWithFrame:CGRectMake(0, 0, 300, 250) placementId:@"1"];
+banner.delegate = self;
+[banner loadAd];
+self.banner = banner;
 
-// For interstitialAd once adDidReceiveAd is callback
-NSString* interstitialAdDSAResponseInfo = self.interstitialAd.adResponseInfo.dsaResponseInfo; // same will be followed to get other dsaResponseInfo from interstitialAd
-// For videoAd once adDidReceiveAd is callback
-NSString* videoAdDSAResponseInfo = self.videoAd.adResponseInfo.dsaResponseInfo; // same will be followed to get other dsaResponseInfo from videoAd
-// For nativeAd once didReceiveResponse is callback
-ANAdResponseInfo nativeAdResponseInfo = nativeAdResponse;
-NSString* nativeAdDSAResponseInfo = nativeAdResponseInfo.dsaResponseInfo; // same will be followed to get other dsaResponseInfo from videoAd
+- (void)adDidReceiveAd:(id)ad {
+    ANBannerAdView *banner = self.banner;
+    //   The example uses `banner`. For other ad units, use:
+    //   interstitialAd.adResponseInfo.dsaResponseInfo
+    //   videoAd.adResponseInfo.dsaResponseInfo
+    //   nativeAdResponse.adResponseInfo.dsaResponseInfo  (in [ANNativeAdRequestDelegate adRequest:didReceiveResponse:])
+    ANDSAResponseInfo *info = banner.adResponseInfo.dsaResponseInfo;
+    if (info) {
+        NSString *behalf = info.behalf;            // Advertised on behalf of
+        NSString *paid = info.paid;                // Paid by
+        NSInteger adRender = info.adRender;        // 0 = won't render, 1 = will render
+        for (ANDSATransparencyInfo *t in info.transparencyList) {
+            NSString *domain = t.domain;
+            NSArray<NSNumber *> *params = t.dsaparams;
+        }
+    }
+}
 ```
 
-#### [Swift](#tab/swift3)
+---
 
-```
-
-// For interstitialAd once adDidReceiveAd is callback
-let interstitialAdDSAResponseInfo? : String = (self.interstitialAd.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from interstitialAd
-// For videoAd once adDidReceiveAd is callback
-let videoAdDSAResponseInfo? : String = (self.videoAd.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from videoAd
-// For nativeAd once didReceiveResponse is callback
-let nativeAdDSAResponseInfo : String = (self.nativeAdResponse.?.adResponseInfo?.dsaResponseInfo?)! // same will be followed to get other dsaResponseInfo from nativeAd
-```
 
 ## Apple privacy manifest
 
-Apple privacy manifest describe the data your app or third-party SDK collects. Starting with SDK version 8.11.4, we have added support for the Apple Privacy Manifest file requirement for third-party SDKs. To automatically receive the Privacy Manifest file, publishers' apps must use SDK version 8.11.4 or higher. For more information, see [Apple privacy manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift)
+The Apple Privacy Manifest describes the data your app or third-party SDK collects. The iOS SDK includes support for the Apple Privacy Manifest file requirement for third-party SDKs, and the Privacy Manifest file is delivered automatically with the SDK. For more information, see [Apple privacy manifest](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files?language=swift).
+
+## Related
+
+- [Publisher-side user opt-out (Do Not Track) for iOS](publisher-side-user-opt-out-for-ios.md)

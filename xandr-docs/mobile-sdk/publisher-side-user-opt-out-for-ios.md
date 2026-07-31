@@ -2,36 +2,40 @@
 title: Publisher-side User Opt-Out for iOS
 description: The publisher-side user opt-out feature allows publishers to set users' choice of opt-in/out for iOS from tracking in ad requests.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 07/17/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Publisher side user opt-out for iOS
 
-The publisher-side user opt-out feature provides a new API call in Mobile SDK that enables the publishers to set the information of users' choice of opt-in/out from tracking in the `AdRequests`. For any `AdRequest`, Xandr Mobile SDK checks in the device or OS environment level and populates the value for `limitAdTracking` (LMT) in the background automatically (If `LMT=true`, it indicates that the user opts out from tracking at the device or OS settings). However, the publishers retain information about their users' opt-in/out of tracking and thus are required to pass that information if their user has opted out in order to comply with their privacy regulations. To facilitate this, publisher side user opt-out feature has been introduced to the Mobile SDK.
+The publisher-side user opt-out feature exposes an API in the iOS SDK that lets publishers pass the users' opt-in/out tracking choice with every `AdRequest`. For any `AdRequest`, the iOS SDK populates `limitAdTracking` (LMT), read from [`AppTrackingTransparency`](https://developer.apple.com/documentation/apptrackingtransparency). However, the publishers retain information about their users' opt-in/out of tracking and thus are required to pass that information if their user has opted out in order to comply with applicable privacy regulations. Use the `doNotTrack` property to pass this opt-out choice to the iOS SDK.
 
 ## Property
 
-The publisher side user opt-out feature enhances the MobileSDK API with a property which indicates whether the feature is enabled or not and if not enable the same.
+Use the following property on `ANSDKSettings`:
 
 | Property | Type | Attribute | Description |
 |:---|:---|:---|:---|
-| `doNotTrack` | BOOL | readwrite | Indicates if you have information in the app about user opt-out. If set to `YES`, tracking cookies and IDFA will be disabled for all future auctions.<br>Default value is `NO`. |
-
-```
-/**
- Do not track flag. Set this to YES/NO if you have information in the app about user opt-out. If set to YES, tracking cookies and IDF will be disabled for all future auctions. Default value is NO.
-*/
-@property (nonatomic, readwrite) BOOL doNotTrack;
-```
+| `doNotTrack` | BOOL | readwrite | Set to `YES` to indicate opt-out from tracking, or `NO` to indicate opt-in. When set to `YES`, tracking cookies and IDFA are disabled for all future auctions.<br>Default value is `NO`. |
 
 ## Example
 
+### [Swift](#tab/swift1)
+
 ```
-//Swift
 ANSDKSettings.sharedInstance().doNotTrack = true
-//Objective-C
+```
+
+### [Objective-C](#tab/objectivec1)
+
+```
 [ANSDKSettings sharedInstance].doNotTrack = YES;
 ```
+
+---
+
+## Related
+
+- [SDK privacy for iOS](sdk-privacy-for-ios.md)

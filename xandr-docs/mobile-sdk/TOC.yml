@@ -105,6 +105,8 @@
         href: open-ad-clicks-in-the-native-browser-on-ios.md
       - name: Pass Custom Keywords
         href: pass-custom-keywords-on-ios.md
+      - name: Publisher Side User Opt-Out
+        href: publisher-side-user-opt-out-for-ios.md
       - name: Receive Ad View Status Events
         href: receive-ad-view-status-events-on-ios.md
       - name: Request Ads Over HTTPS
@@ -225,6 +227,8 @@
         href: open-ad-clicks-in-the-native-browser-on-android.md
       - name: Pass Custom Keywords
         href: pass-custom-keywords-on-android.md
+      - name: Publisher Side User Opt-Out
+        href: publisher-side-user-opt-out-for-android.md
       - name: Receive Ad View Status Events
         href: receive-ad-view-status-events-on-android.md
       - name: Request Ads Over HTTPS

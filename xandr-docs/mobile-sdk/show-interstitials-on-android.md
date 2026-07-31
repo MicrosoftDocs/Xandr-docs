@@ -2,10 +2,10 @@
 title: Show Interstitials on Android
 description: This page gives an overview on instructions and code samples for showing interstitial ads on Android.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 07/17/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Show interstitials on Android
@@ -25,107 +25,215 @@ This page has instructions and code samples for showing interstitial ads on Andr
 
 ## Overview
 
-Showing interstitial ads is a little more work. In addition to setting up an `InterstitialAdView` with your placement ID, you must implement the `AdListener` interface, which includes methods that tell you when an interstitial ad has successfully finished loading, or when the request has failed.
+Showing interstitial ads requires a bit more work than banners. In addition to setting up an `InterstitialAdView` with your placement ID, you must implement the `AdListener` interface, which includes methods that tell you when an interstitial ad has successfully finished loading, or when the request has failed.
 
-Furthermore, actually showing interstitial ads to users is a two-step process:
-
-1. Call `InterstitialAdView.loadAd()` to fetch the ad contents from our server and cache them locally. Note that any ad content is rendered in a WebView at the time it is fetched from the ad server and cached. This means that any third-party tracking pixels that are part of the ad content will be fired at the time of the call to `loadAd()`, not when the call to `show()` is made at a later time.
-1. When you're ready to show the interstitial ad to the user, call `show()`. This needs to happen within approximately 4 minutes of the call to `loadAd()` in order for the impression to be counted by Xandr. <!-- (For the exact timing in milliseconds, see the value of `InterstitialAdView.MAX_AGE` in the source code.) -->
-
-> [!NOTE]
-> The close button appears after ten seconds by default. You can set the delay using `InterstitialAdView.setCloseButtonDelay(int closeButtonDelay)`.
+When you're ready to show the interstitial ad to the user, call `show()`. This needs to happen within approximately 4 minutes of the call to `loadAd()` for the impression to be counted.
 
 For more information, see the code sample below.
 
-## Creative media types supported in Interstitial Ad Unit
+## Creative media types supported by the Interstitial ad unit
+
+The `InterstitialAdView` can render creatives of the following media types, which map to the media types Monetize categorizes creatives by (see [Create a Placement — Media types and subtypes](../monetize/create-a-placement.md#media-types-and-subtypes)):
 
 | Media Type | Description |
 |:---|:---|
-| Banner | Recommended for most interstitial placements to maximize demand. Suitable for static or animated banners. |
-| Interstitial | Used for full-screen ads, including static images, MRAID, and HTML responsive formats.<br><ul><li>[Ad Ops - Set Up MRAID Full Screen Interstitials](ad-ops-set-up-mraid-full-screen-interstitials.md)</li><li>[Ad Ops - Set Up Static Image Full Screen Interstitials](ad-ops-set-up-static-image-full-screen-interstitials.md)</li><li> [Ad Ops - Set Up HTML Responsive Interstitials (non-MRAID)](ad-ops-set-up-html-responsive-interstitials-non-mraid.md)</li></ul> |
-| VAST Video | Supports video ads as of version 9.1.0. Ideal for serving video creatives when placement is enabled for video demand. |
+| Banner (`1`) | Static or animated display banner creatives. |
+| Interstitial (`3`) | Full-screen creatives, including MRAID, static image, and HTML responsive formats. For creative setup, see:<br><ul><li>[Set Up MRAID Full Screen Interstitials](ad-ops-set-up-mraid-full-screen-interstitials.md)</li><li>[Set Up Static Image Full Screen Interstitials](ad-ops-set-up-static-image-full-screen-interstitials.md)</li><li>[Set Up HTML Responsive Interstitials (non-MRAID)](ad-ops-set-up-html-responsive-interstitials-non-mraid.md)</li></ul> |
+| Video (`4`) | VAST video creatives. See [Customize video player options on Android](customize-video-player-options-on-android.md) to customize the video player UI. |
 
-## Code sample
+> [!IMPORTANT]
+> Each media type must be **explicitly enabled** in the placement's **Allowed Media** configuration in Monetize to be eligible to serve. Configure **Allowed Media** in the Monetize UI or via the API to include every media type you want the interstitial to receive — if no compatible media type is allowed on the placement, no ads will serve. For details, see [Create a Placement — Limit the type and size of creatives that can serve](../monetize/create-a-placement.md#step-3-limit-the-type-and-size-of-creatives-that-can-serve).
 
-> [!NOTE]
-> Beginning with version RC2.8, you can also use an inventory code and member ID to request an ad (placement ID is still supported). Currently this is only available from Java (not XML). Note that if both inventory code and placement ID are passed in, the inventory code will be passed to the server instead of the placement ID.
-
-```
-// Android: Java code that uses inventory code and member ID instead of placement ID (optional)
-adview.setInventoryCodeAndMemberID(int memberID, String inventoryCode)
-```
+## Basic integration
 
 > [!NOTE]
 > As best practices:
 >
 > - All SDK methods must be called on the main thread.
-> - `activityOnDestroy()` must be called for the Interstitial that is expected to be destroyed.
+> - `activityOnDestroy()` must be called for the Interstitial that is expected to be destroyed.
+
+### [Kotlin](#tab/kotlin1)
 
 ```
-// Android: Java code to show an interstitial ad
-package com.example.simpleinterstitial;
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.util.Log;
-import com.appnexus.opensdk.*;
-public class MainActivity extends Activity implements AdListener {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+// Android: Kotlin code to show an interstitial ad
+package com.example.simpleinterstitial
+
+import android.app.Activity
+import android.os.Bundle
+import android.util.Log
+import com.appnexus.opensdk.*
+
+class MainActivity : Activity(), AdListener {
+
+    private var interstitial: InterstitialAdView? = null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         // Set up an ad view with our placement ID.
-        InterstitialAdView iav = new InterstitialAdView(this);
-        iav.setPlacementID("1326299");
-        iav.setAdListener(this);
-        // Fetch an ad from the server.  If this works, `onAdLoaded' will
+        interstitial = InterstitialAdView(this).apply {
+            placementID = "1326299"
+            setAdListener(this@MainActivity)
+        }
+        // Fetch an ad from the server. If this works, `onAdLoaded` will
         // be called, and we can show the ad.
-        iav.loadAd();
+        interstitial?.loadAd()
     }
-        @Override
-        protected void onDestroy() {
-        if (iav != null) {
-                iav.activityOnDestroy();
-        }
-        super.onDestroy();
-        }
-    @Override
-    public void onAdLoaded(AdView av) {
-        Log.d("onAdLoaded", "The ad has loaded, now we can show it...");
-        // Now that the ad has loaded, we can show it to the user.
-        InterstitialAdView iav = (InterstitialAdView) av;
-        iav.show();
+
+    override fun onDestroy() {
+        interstitial?.activityOnDestroy()
+        super.onDestroy()
     }
- 
-    @Override
-        public void onAdLoaded(NativeAdResponse nativeAdResponse) {
-        // JUST ignore it. This callback is for Native in Banner. 
-        }
-    @Override
-    public void onAdRequestFailed(AdView av, ResultCode rc) {
-        Log.d("onAdRequestFailed", "Not sure why the ad request failed; try again? Return code ==> " + rc);
+
+    override fun onAdLoaded(av: AdView) {
+        Log.d("onAdLoaded", "The ad has loaded, now we can show it...")
+        (av as? InterstitialAdView)?.show()
     }
-    @Override
-    public void onAdClicked(AdView av) {
-        Log.d("onAdClicked", "The user clicked your ad.  Congrats!");
+
+    override fun onAdLoaded(nativeAdResponse: NativeAdResponse) {
+        // Ignore. This callback is for Native in Banner.
     }
-        @Override
-        public void onAdClicked(AdView adView, String clickUrl) {
-        // This will be getting called if you have set setClickThroughAction(ANClickThroughAction.RETURN_URL);
-        // Handle the URL appropriately
-        }
-     @Override
-    public void onAdCollapsed(AdView av) {
+
+    override fun onAdRequestFailed(av: AdView, rc: ResultCode) {
+        Log.d("onAdRequestFailed", "The ad request failed: $rc")
+    }
+
+    override fun onAdClicked(av: AdView) {
+        Log.d("onAdClicked", "The user clicked your ad.")
+    }
+
+    override fun onAdClicked(adView: AdView, clickUrl: String) {
+        // Called only if setClickThroughAction(ANClickThroughAction.RETURN_URL) is set.
+        // Handle the URL appropriately.
+    }
+
+    override fun onAdCollapsed(av: AdView) {
         // Do something here.
     }
-    @Override
-    public void onAdExpanded(AdView av) {
+
+    override fun onAdExpanded(av: AdView) {
+        // Do something here as well.
+    }
+
+    override fun onAdImpression(av: AdView) {
         // Do something here as well.
     }
 }
 ```
 
-## Use custom interstitial sizes
+### [Java](#tab/java1)
+
+```
+// Android: Java code to show an interstitial ad
+package com.example.simpleinterstitial;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import com.appnexus.opensdk.*;
+
+public class MainActivity extends Activity implements AdListener {
+
+    private InterstitialAdView interstitial;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        // Set up an ad view with our placement ID.
+        interstitial = new InterstitialAdView(this);
+        interstitial.setPlacementID("1326299");
+        interstitial.setAdListener(this);
+        // Fetch an ad from the server. If this works, `onAdLoaded` will
+        // be called, and we can show the ad.
+        interstitial.loadAd();
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (interstitial != null) {
+            interstitial.activityOnDestroy();
+        }
+        super.onDestroy();
+    }
+
+    @Override
+    public void onAdLoaded(AdView av) {
+        Log.d("onAdLoaded", "The ad has loaded, now we can show it...");
+        ((InterstitialAdView) av).show();
+    }
+
+    @Override
+    public void onAdLoaded(NativeAdResponse nativeAdResponse) {
+        // Ignore. This callback is for Native in Banner.
+    }
+
+    @Override
+    public void onAdRequestFailed(AdView av, ResultCode rc) {
+        Log.d("onAdRequestFailed", "The ad request failed: " + rc);
+    }
+
+    @Override
+    public void onAdClicked(AdView av) {
+        Log.d("onAdClicked", "The user clicked your ad.");
+    }
+
+    @Override
+    public void onAdClicked(AdView adView, String clickUrl) {
+        // Called only if setClickThroughAction(ANClickThroughAction.RETURN_URL) is set.
+        // Handle the URL appropriately.
+    }
+
+    @Override
+    public void onAdCollapsed(AdView av) {
+        // Do something here.
+    }
+
+    @Override
+    public void onAdExpanded(AdView av) {
+        // Do something here as well.
+    }
+
+    @Override
+    public void onAdImpression(AdView av) {
+        // Do something here as well.
+    }
+}
+```
+
+---
+
+## Advanced settings
+
+The following sections describe optional configuration and callbacks you can use to customize how your interstitial ad requests and displays creatives.
+
+### Initialize with member ID and inventory code
+
+As an alternative to a placement ID, you can request an interstitial ad using a member ID and an inventory code by calling `setInventoryCodeAndMemberID(int memberID, String inventoryCode)` on the `InterstitialAdView`. If both an inventory code and a placement ID are set, the inventory code takes precedence.
+
+#### [Kotlin](#tab/kotlin2)
+
+```
+// Android: Kotlin code to request an interstitial using member ID and inventory code
+val interstitial = InterstitialAdView(this)
+interstitial.setInventoryCodeAndMemberID(123, "your-inventory-code")
+interstitial.setAdListener(this)
+interstitial.loadAd()
+```
+
+#### [Java](#tab/java2)
+
+```
+// Android: Java code to request an interstitial using member ID and inventory code
+InterstitialAdView interstitial = new InterstitialAdView(this);
+interstitial.setInventoryCodeAndMemberID(123, "your-inventory-code");
+interstitial.setAdListener(this);
+interstitial.loadAd();
+```
+
+---
+
+### Use custom interstitial sizes
 
 By default, if you don't specify an ad size, the SDK will fetch ads in any of the sizes below that are less than or equal to the size of the device's screen.
 
@@ -136,25 +244,130 @@ By default, if you don't specify an ad size, the SDK will fetch ads in any of th
 - 900x500
 - 1024x1024
 
-If you want to show interstitial ads in sizes other than the defaults, use the `setAllowedSizes` method on the interstitial ad view as shown below. Note that the detected size of the screen will still be passed as the primary size. The sizes set using `setAllowedSizes` will be passed in as additional size on the interstitial ad view and will replace the defaults of 300x250, 320x480, 900x500, and 1024x1024.
+If you want to show interstitial ads in sizes other than the defaults, use the `setAllowedSizes` method on the interstitial ad view as shown below. Note that the detected size of the screen will still be passed as the primary size. The sizes set using `setAllowedSizes` will be passed in as additional size on the interstitial ad view and will replace the defaults of 300x250, 320x480, 900x500, and 1024x1024.
+
+#### [Kotlin](#tab/kotlin3)
 
 ```
-// Android: Java code to show interstitial ads in sizes other than the defaults (optional)
-InterstitialAdView iav = new InterstitialAdView(this);
-iav.setPlacementID("1326299");
-AdSize test_size1 = new AdSize(320,480);
-AdSize test_size2 = new AdSize(768,1024);
-ArrayList test_array_list = new ArrayList() {};
-test_array_list.add(test_size1);
-test_array_list.add(test_size2);
-iav.setAllowedSizes(test_array_list);
+// Android: Kotlin code to show interstitial ads in sizes other than the defaults
+val interstitial = InterstitialAdView(this)
+interstitial.placementID = "1326299"
+interstitial.setAllowedSizes(arrayListOf(AdSize(320, 480), AdSize(768, 1024)))
 ```
 
-## Auto-close an interstitial
+#### [Java](#tab/java3)
 
-If you want to auto-close an interstitial ad after a specific timeout period, do not call `show()` as described in the above sections. Instead call `showWithAutoDismissDelay(delayinseconds)`, where `delayinseconds` is the number of seconds the ad will be displayed before it closes.
-
-``` 
-// This will show an interstitial ad, wait for 10 seconds, then auto close it.
-interstitialAdView.showWithAutoDismissDelay(10);
 ```
+// Android: Java code to show interstitial ads in sizes other than the defaults
+InterstitialAdView interstitial = new InterstitialAdView(this);
+interstitial.setPlacementID("1326299");
+ArrayList<AdSize> sizes = new ArrayList<>();
+sizes.add(new AdSize(320, 480));
+sizes.add(new AdSize(768, 1024));
+interstitial.setAllowedSizes(sizes);
+```
+
+---
+
+### Set the close button delay
+
+For **Banner** and **Interstitial** creatives, the close button appears on the interstitial ad ten seconds after it is displayed by default. To change the delay, call `setCloseButtonDelay(int closeButtonDelay)` on the `InterstitialAdView`, passing the delay in **milliseconds**. The maximum is 10000 ms (10 seconds); values above that are clamped to 10 seconds. Passing `0` allows the close button to appear immediately. This setting has no effect on **Video** creatives, which use the video's own skip/close controls.
+
+#### [Kotlin](#tab/kotlin4)
+
+```
+// Show the close button after 5 seconds instead of the default 10.
+interstitial.setCloseButtonDelay(5000)
+```
+
+#### [Java](#tab/java4)
+
+```
+// Show the close button after 5 seconds instead of the default 10.
+interstitial.setCloseButtonDelay(5000);
+```
+
+---
+
+### Auto-close an interstitial
+
+To auto-close a **Banner** or **Interstitial** creative after a specific timeout, do not call `show()`. Instead, call `showWithAutoDismissDelay(delayinseconds)`, where `delayinseconds` is the number of seconds the ad will be displayed before it closes. This setting has no effect on **Video** creatives, which run until they complete or are skipped.
+
+#### [Kotlin](#tab/kotlin5)
+
+```
+// Show an interstitial ad, wait for 10 seconds, then auto-close it.
+interstitial.showWithAutoDismissDelay(10)
+```
+
+#### [Java](#tab/java5)
+
+```
+// Show an interstitial ad, wait for 10 seconds, then auto-close it.
+interstitial.showWithAutoDismissDelay(10);
+```
+
+---
+
+### Customize video player options
+
+To customize the video player UI — skip controls, mute, click-through text, and other playback controls — see [Customize video player options on Android](customize-video-player-options-on-android.md).
+
+---
+
+### Receive video completion callbacks
+
+Register a `VideoEventListener` on your `InterstitialAdView` via `setVideoEventListener(...)` to be notified how a **Video** interstitial ad ended — `VideoCompletionState.COMPLETED`, `SKIPPED`, or `ERROR`. The callback fires only for RTB interstitial video ads (not mediated or CSR) and runs alongside the existing close callbacks.
+
+#### [Kotlin](#tab/kotlin6)
+
+```
+// Android: Kotlin code to receive interstitial video completion callbacks
+val interstitial = InterstitialAdView(this) // Create the interstitial ad view
+interstitial.placementID = "1326299" // Set placement ID
+
+interstitial.setVideoEventListener { adView, state -> // Register the video completion listener
+    when (state) {
+        VideoCompletionState.COMPLETED -> {
+            // The video played to its natural end
+        }
+        VideoCompletionState.SKIPPED -> {
+            // The user skipped the video before it ended
+        }
+        VideoCompletionState.ERROR -> {
+            // Playback ended because of an error or timeout
+        }
+    }
+}
+
+interstitial.loadAd() // Load the ad
+```
+
+#### [Java](#tab/java6)
+
+```
+// Android: Java code to receive interstitial video completion callbacks
+InterstitialAdView interstitial = new InterstitialAdView(this); // Create the interstitial ad view
+interstitial.setPlacementID("1326299"); // Set placement ID
+
+interstitial.setVideoEventListener(new VideoEventListener() { // Register the video completion listener
+    @Override
+    public void onAdCompleted(InterstitialAdView adView, VideoCompletionState state) {
+        switch (state) {
+            case COMPLETED:
+                // The video played to its natural end
+                break;
+            case SKIPPED:
+                // The user skipped the video before it ended
+                break;
+            case ERROR:
+                // Playback ended because of an error or timeout
+                break;
+        }
+    }
+});
+
+interstitial.loadAd(); // Load the ad
+```
+
+---

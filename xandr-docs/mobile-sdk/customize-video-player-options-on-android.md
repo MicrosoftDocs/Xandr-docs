@@ -2,18 +2,20 @@
 title: Customize Video Player Options on Android
 description: In this article, find information about the video player controls that you can customize on Android devices.
 ms.custom: android-sdk
-ms.date: 4/20/2026
+ms.date: 07/17/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Customize video player options on Android
 
-The `ANVideoPlayerSettings` class lets publisher apps customize some of the ad video player UI controls.
+`ANVideoPlayerSettings` lets your app customize video-player UI controls. These settings apply to all video ads served by the Android SDK — Instream Video, Banner Video (Outstream), and Interstitial Video.
 
-> [!NOTE]
-> These settings apply to all video ads served through the Mobile SDK: Instream Video, Banner Video (Outstream), and Interstitial Video.
+The Monetize placement settings page (UI and API) exposes similar options, but only some take effect:
+
+- **Video-player UI options** — ignored. The SDK uses only the client-side values below.
+- **Non-UI settings** (VAST version, MIME types, allowed durations, etc.) — applied. These determine which ads Monetize can serve.
 
 | Function | Default Setting | Description | Ad Units supporting the Setting |
 |:---|:---|:---|:---|
@@ -126,3 +128,5 @@ ANVideoPlayerSettings.getVideoPlayerSettings().skipLabelName = "Test"
 // Configure the skip offset on the video player. Minimum value is 5 seconds; lower values are clamped to 5
 ANVideoPlayerSettings.getVideoPlayerSettings().skipOffset = 2
 ```
+
+---

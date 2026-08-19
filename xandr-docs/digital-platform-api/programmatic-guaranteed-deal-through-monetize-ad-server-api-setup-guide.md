@@ -766,7 +766,7 @@ To create a PG deal line item, do the following (for more information, see [Line
 | `bid_object_type` | enum | Required | Must be set to `"deal"` for a PG deal line item. |
 | `delivery_goal` | enum | Required | For a PG deal, set this field to `null`. |
 | `delivery_model_type` | enum | Required | Set this field's value to `"guaranteed"`. |
-| `line_item_subtype` | enum | Required | Set this field's value to `"pg_deal_3p_pacing"`. |
+| `line_item_subtype` | enum | Required | Set this field's value to `"pg_deal_imp"`. |
 
 ##### `budget_intervals` example
 

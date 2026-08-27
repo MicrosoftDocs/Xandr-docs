@@ -8,7 +8,9 @@ author: v-garittar
 ms.author: v-garittar
 ---
 
-# Connect an AI assistant to the Xandr MCP Server for Microsoft Monetize or Microsoft Curate
+# Xandr MCP – Getting started
+
+## Connect an AI assistant to the Xandr MCP Server for Microsoft Monetize or Microsoft Curate
 
 The Xandr MCP Server lets you query your Microsoft Monetize or Microsoft Curate platform data using plain language from an MCP-compatible AI assistant. Instead of navigating the UI or writing API calls, you can ask for reports, search for objects, inspect configurations, and review change history from your AI client.
 

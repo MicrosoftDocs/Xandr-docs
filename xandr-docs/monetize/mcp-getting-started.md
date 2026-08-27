@@ -1,430 +1,331 @@
 ---
 title: Xandr MCP – Getting started
 description: In this article, learn about Xandr MCP
-ms.date: 4/14/2026
+ms.date: 8/19/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
+author: v-garittar
+ms.author: v-garittar
 ---
 
-# Xandr MCP – Getting started
+# Connect an AI assistant to the Xandr MCP Server for Microsoft Monetize or Microsoft Curate
 
-The Xandr MCP provides read-only access to Xandr data through the Model Context Protocol (MCP). It is designed for AI clients that need to discover, retrieve, and summarize data from Xandr without making platform changes.
+The Xandr MCP Server lets you query your Microsoft Monetize or Microsoft Curate platform data using plain language from an MCP-compatible AI assistant. Instead of navigating the UI or writing API calls, you can ask for reports, search for objects, inspect configurations, and review change history from your AI client.
 
-The service currently supports the following Xandr product surfaces:
+The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, Curate deal plans, or other objects through the Xandr MCP Server.
 
-- **Monetize**: https://monetize.xandr.com/mcp  
-- **Curate**: https://curate.xandr.com/mcp  
+## What you can do with the Xandr MCP Server
 
-These endpoint URLs are stable and are not versioned. They will not change.
+The Xandr MCP Server supports read-only access to platform data for Microsoft Monetize and Microsoft Curate. The tools, reports, and objects available to you depend on the endpoint you connect to and the permissions associated with your Xandr seat.
 
-> [!IMPORTANT]  
-> Xandr MCP is currently in closed beta. Tool coverage, schemas, and behavior may change without notice.
+| Capability | What you can ask | Microsoft Monetize | Microsoft Curate |
+|---|---|---:|---:|
+| Reporting | Run reports available to your account, explore metrics and dimensions, download results, and generate time-series charts. | Yes | Yes |
+| Report templates | Run pre-built report templates with curated column sets for common analysis workflows. | Yes | Yes |
+| Object search | Search and inspect deals, line items, advertisers, insertion orders, targeting profiles, segments, publishers, and placements. | Yes | Yes |
+| Reference data | Look up currencies, device types, geo segments, ad categories, and other platform-managed lists. | Yes | Yes |
+| Change history | See what changed on an object, when it changed, and who made the change. | Yes | Yes |
+| Configuration troubleshooting | Check a deal's configuration chain and surface blocking issues with a structured verdict. | Yes | Yes |
+| Inventory forecasting | Estimate available impressions for a given set of targeting criteria. Available to ad server clients only. | Yes | No |
+| Deal plan estimates | Retrieve plan details and reach estimates for curated deals. | No | Yes |
 
----
+## Choose the right endpoint
 
-## Introduction
+Connect to the endpoint that matches your Xandr seat.
 
-Xandr MCP is intended for data retrieval, discovery, and analysis workflows. MCP-compatible clients can:
+| Platform | MCP URL |
+|---|---|
+| Microsoft Monetize | `https://monetize.xandr.com/mcp` |
+| Microsoft Curate | `https://curate.xandr.com/mcp](https://curate.xandr.com/mcp` |
 
-- Query reporting and analytics data  
-- Inspect object metadata and platform entities  
-- Retrieve reference and lookup data  
-- Review change history and saved report information  
-- Access selected planning, forecasting, or troubleshooting experiences (where enabled)  
+Authentication uses your Microsoft identity. You don't need separate Xandr API credentials.
 
-Xandr MCP is currently a **read-only** product. It does not create, update, or delete Xandr objects.
+## Prerequisites
 
-Write operations may be added in the future but would require explicit enablement.
+Before you connect your AI assistant, make sure you have:
 
----
+- An active Xandr account on Microsoft Monetize or Microsoft Curate.
+- Alpha access granted by your account team.
+- A Microsoft Entra ID identity with access to your Xandr member seat.
+- An MCP-compatible AI assistant, such as VS Code, Claude Code, or MCP Inspector.
+- The ability to add an MCP server configuration, such as `mcp.json` or an equivalent configuration file.
 
-## Using Xandr MCP
+No SDK installation, local server, or API key setup is required. Authentication is handled on first connection through a browser sign-in prompt.
 
-To connect an MCP client:
+## Connect with VS Code
 
-1. Configure a remote HTTP MCP server that points to either the Monetize or Curate endpoint  
-2. Provide a valid Xandr API authentication token  
+1. Open your workspace in VS Code.
 
-### Authentication
+1. Add a `.vscode/mcp.json` file to your workspace.
 
-Xandr MCP requires a valid Xandr API authentication token. Token format, lifetime, refresh behavior, and all other authentication mechanics are defined by the Xandr Authentication Service.
+1. Add this configuration:
 
-MCP does not introduce a separate authentication model—it uses the same token flow as the standard Xandr API.
+   ```json
+   {
+     "servers": {
+       "xandr": {
+         "type": "http",
+         "url": "https://monetize.xandr.com/mcp"
+       }
+     }
+   }
+   ```
 
-- [Authentication Service](../digital-platform-api/authentication-service.md)
+1. If you're a Microsoft Curate user, replace the URL with `https://curate.xandr.com/mcp`.
 
-To authenticate requests, include the token in the `Authorization` header:
+1. Reload the VS Code window.
 
-```http
-Authorization: Bearer <your-xandr-token>
-```
-If the token expires, refresh it using the standard Xandr authentication flow and update it in your MCP client as needed.
+1. On first connection, sign in with your Microsoft Entra ID identity when your client opens the browser sign-in prompt.
 
-## Permissions and access control
+## Connect with Claude Code
 
-Xandr MCP does not introduce a separate permission model.
-- Does not grant new platform access
-- Respects existing permissions assigned to the authenticated user or token
-- Enforces access through the underlying Xandr APIs
+1. Add this configuration to `~/.claude.json` globally, or to `.mcp.json` in your project:
 
-In practice, MCP can only expose data and capabilities that the authenticated identity is already authorized to use in Monetize or Curate.
+   ```json
+   {
+     "mcpServers": {
+       "xandr": {
+         "url": "https://monetize.xandr.com/mcp",
+         "transport": "http"
+       }
+     }
+   }
+   ```
 
-MCP does not enable platform functionality that is not already available to your account, member, or seat. For example, if forecasting is not enabled for your seat, forecasting-related MCP tools will not be available.
+1. If you're a Microsoft Curate user, replace the URL with `https://curate.xandr.com/mcp`.
 
----
+1. On first connection, sign in with your Microsoft Entra ID identity when prompted.
 
-### Configuration files
+## Test with MCP Inspector
 
-The configuration method depends on the client. Configuration files (such as `mcp.json`) define MCP servers, endpoints, and authentication settings. See the client-specific sections below for details.
+Use MCP Inspector for ad hoc testing before you integrate the Xandr MCP Server with an AI client.
 
-- **VS Code** uses `mcp.json`  
-- **Claude Code** uses `.mcp.json`  
-- **Claude.ai and Claude Desktop** use connector configuration in the UI instead of a file  
+1. Run this command in a terminal:
 
-> `mcp.json` is a client-specific configuration file used to define MCP servers, endpoints, and authentication settings.
+   ```bash
+   npx @modelcontextprotocol/inspector
+   ```
 
-Other MCP-compatible tools may support different configuration models, authentication requirements, or setup flows. Refer to the documentation for your client.
+1. Enter the endpoint URL when prompted.
 
----
+1. Explore the available tools before integrating with an AI client.
 
-## VS Code
+## Verify your connection
 
-You can configure MCP servers in:
+After you connect, ask your AI assistant one of these questions:
 
-- A workspace file at `.vscode/mcp.json`  
-- Your user profile via the **MCP: Open User Configuration** command  
+- "List my active deals"
+- "Show me last week's impressions by publisher"
 
-### Example `.vscode/mcp.json`
+If your client returns data, the connection is working correctly.
 
-```json
-{
-  "servers": {
-    "xandr-monetize": {
-      "type": "http",
-      "url": "https://monetize.xandr.com/mcp",
-      "headers": {
-        "authorization": "Bearer ${input:xandrAuthToken}"
-      }
-    },
-    "xandr-curate": {
-      "type": "http",
-      "url": "https://curate.xandr.com/mcp",
-      "headers": {
-        "authorization": "Bearer ${input:xandrAuthToken}"
-      }
-    }
-  },
-  "inputs": [
-    {
-      "id": "xandrAuthToken",
-      "type": "promptString",
-      "description": "Xandr API authentication token",
-      "password": true
-    }
-  ]
-}
-```
-VS Code also supports adding a server through the Command Palette (**MCP: Add Server**). However, a checked-in `.vscode/mcp.json` file is typically the clearest option for shared team setups.
+## Run reports effectively
 
-After configuration:
-1. Open the workspace in VS Code
-2. Open .vscode/mcp.json or run MCP: Open User Configuration
-3. Save the configuration
-4. Allow VS Code to start the server when prompted
-5. Use Chat—MCP tools are discovered automatically
+The Xandr MCP Server gives you access to more than 100 metrics and dimensions. Before you run a report, ask your AI assistant to list available report types or describe the columns available for a report.
 
-If your client supports input prompts, this approach avoids hard-coding the authentication token in the file.
+This helps avoid validation errors because report types, metrics, dimensions, columns, filters, and time ranges can vary by platform and account configuration.
 
----
+Example prompt:
 
-## Claude Code
+> Show me impressions, revenue, and CPM by publisher for the last 7 days.
 
-Claude Code supports project-scoped MCP configuration using a `.mcp.json` file at the project root. Its JSON structure differs from VS Code and uses `mcpServers` instead of `servers`.
+For smaller queries, results are returned directly in chat. For larger result sets, reports are processed asynchronously. Your AI client polls for completion and returns the results when they're ready.
 
-### Example `.mcp.json`
+## Search and inspect objects
 
-```json
-{
-  "mcpServers": {
-    "xandr-monetize": {
-      "type": "http",
-      "url": "https://monetize.xandr.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${XANDR_AUTH_TOKEN}"
-      }
-    },
-    "xandr-curate": {
-      "type": "http",
-      "url": "https://curate.xandr.com/mcp",
-      "headers": {
-        "Authorization": "Bearer ${XANDR_AUTH_TOKEN}"
-      }
-    }
-  }
-}
-```
-Claude Code also supports adding MCP servers using the CLI instead of manually editing the JSON file.
+You can search by name, ID, or partial name across major object types. When the object type isn't known in advance, the server resolves it automatically.
 
-### Example CLI commands
+Example prompts:
 
-```
-claude mcp add --transport http --scope project xandr-monetize https://monetize.xandr.com/mcp --header "Authorization: Bearer your-token"
-claude mcp add --transport http --scope project xandr-curate https://curate.xandr.com/mcp --header "Authorization: Bearer your-token"
-```
+> Find all active line items under advertiser 12345.
 
-After adding the server:
+> Show me the targeting profile on line item 67890.
 
-1. Use `/mcp` inside Claude Code to inspect server status
-2. Complete any required authentication flow prompted by the client
+If you have an ID, use it directly. Numeric IDs are unambiguous and faster than name-based lookups. If you only have a name or partial information, search first to get the ID, then use the ID in follow-up questions.
 
----
+Related objects can be retrieved in follow-up questions without repeating the full context.
 
-## Claude.ai and Claude Desktop
+## Troubleshoot deal delivery
 
-For remote MCP usage in Claude.ai and Claude Desktop, configuration is done through a custom connector flow rather than a local `mcp.json` file.
+When a deal isn't delivering, ask the server to check its configuration. The server evaluates the deal and its related configuration chain, including the linked line item, insertion order, advertiser, and targeting profile.
 
-### Set up a remote connector
+Example prompt:
 
-1. Open **Customize > Connectors** in Claude  
-2. Select **Add a custom connector**  
-3. Enter the MCP endpoint URL (for example, `https://monetize.xandr.com/mcp` or `https://curate.xandr.com/mcp`)  
-4. Complete authentication if prompted  
-5. Enable the connector for the conversation where you want to use MCP  
+> Deal 987654 is not delivering. What's wrong with the configuration?
 
-For Team and Enterprise plans, connector creation may be restricted to organization owners or admins.
+The response includes a structured verdict with plain-language descriptions of any issues found, such as a paused line item, expired flight dates, or an archived profile.
 
-> [!NOTE]  
-> Claude Desktop also supports local MCP servers through `claude_desktop_config.json`. However, current Anthropic guidance for remote MCP connectors uses the connector UI rather than `mcp.json`.
+For best results, troubleshoot deals by ID. Providing a deal ID or line item ID gives the troubleshooting tool enough context to return a diagnosis in one step.
 
-For a repository example with additional local and staging configurations, see `mcp.json` example above.
+## Review change history
 
----
+You can ask what changed on major object types and review field-level change detail.
 
-## Rate limits
+Example prompts:
 
-Xandr MCP requests are subject to rate limiting. The same throttling principles that apply to the Xandr API also apply to MCP.
+> What changed on line item 67890 in the last 48 hours?
 
-For more information, see:
+> Who last modified deal 987654 and when?
 
-- [Throttling, Pagination, and Filtering](../digital-platform-api/05---throttling-pagination-and-filtering.md)
+Change history is available for major object types and includes field-level detail.
 
-MCP usage consumes a portion of the API rate limits available to the authenticated client.
+## Understand the object hierarchy
 
-- Typical interactive usage is unlikely to reach these limits  
-- Automated or high-frequency integrations should handle throttling appropriately  
+Understanding how Xandr objects relate to each other can help you ask clearer questions and interpret results.
 
----
+### Buy-side hierarchy
 
-## Available tools
-
-Xandr MCP exposes tools across the following functional areas:
-
-- **Reporting and analytics**: Run supported reports, retrieve dimensions and metrics, and analyze performance data  
-- **Report management**: Check report status, download completed reports, and inspect saved report definitions  
-- **Object discovery and lookup**: Search supported Xandr entities and inspect available object fields  
-- **Reference data**: Retrieve lookup datasets such as geography, device, media, and other classification data  
-- **Change history**: Review audit and change-log information for supported entities  
-- **Planning and forecasting**: Access selected planning or forecasting data where available for your account  
-- **Troubleshooting**: Use diagnostic tools for supported workflows where available
-
----
-
-### Typical reporting workflow
-
-For reporting scenarios, a common workflow is:
-
-1. Identify the report to use  
-2. Inspect available dimensions, metrics, and filters  
-3. Run the report with the required grouping, filters, and date range  
-
-#### Examples
-
-- Analyze Monetize inventory performance for the last 7 days by publisher or placement  
-- Retrieve Curate deal metrics for a specific buyer or seller deal  
-- Check provisional network analytics for same-day delivery trends  
-- Inspect a report catalog to understand available columns and filters before running a query  
-
-Depending on the report, MCP may expose:
-
-- **Direct report tools** for commonly used report types  
-- **Discovery-style tools** for exploring report metadata and executing queries  
-
----
-
-### Typical object discovery workflow
-
-For object exploration, a common workflow is:
-
-1. Discover supported object types using `xandr_list_objects`  
-2. Inspect the schema and available filters for a specific object using `xandr_describe_object`  
-3. Query objects using `xandr_search_object` or an object-specific search tool  
-
-#### Examples
-
-- Discover whether `advertiser`, `line-item`, `publisher`, or `deal` is available as a supported object type  
-- Inspect available fields and filters for a `profile` or `publisher` object before querying  
-- Search for a specific advertiser, publisher, deal, or profile after identifying the appropriate filters
-
-Some commonly used entities (such as advertisers or publishers) may have dedicated search tools for simpler and faster queries. Other entities use a general workflow where you first discover available object types, inspect their schema, and then query them using standard search tools.
-
----
-
-### Other common tool patterns
-
-- **Reference data**: Follows a discover → describe → search pattern for datasets such as geography, device, language, and media classifications  
-- **Report management**: Check asynchronous report status, inspect saved reports, and download completed output  
-- **Change history**: Review audit and change-log information for supported entities  
-- **Planning, forecasting, and troubleshooting**: Available only when the corresponding platform capability is enabled for the authenticated user  
-
-> [!NOTE]  
-> Tool names, schemas, coverage, and availability may change without notice during closed beta.
-
----
-
-## MCP and model responsibilities
-
-When troubleshooting, distinguish between the responsibilities of the MCP server and the model or client.
-
-### MCP server responsibilities
-
-- Exposes tools  
-- Validates inputs  
-- Calls underlying Xandr APIs  
-- Returns structured results or errors  
-
-### Model or client responsibilities
-
-- Interprets the prompt  
-- Selects which tools to use  
-- Chooses parameters  
-- Sequences tool calls  
-- Summarizes results  
-
-### Understanding different outcomes
-
-Issues can originate from different layers:
-
-- **Model or client layer**: Incorrect tool selection, invalid filters, or misinterpretation of the prompt  
-- **MCP layer**: Unexpected input validation failures, incorrect API calls, or inconsistent tool output  
-- **Platform layer**: Access denied, missing data, or unavailable features based on account permissions  
-
-Similar prompts may produce different results across models or clients, even when using the same MCP server. This is because tool selection and reasoning are handled by the model, not MCP.
-
-### Troubleshooting guidance
-
-For effective troubleshooting, capture:
-
-- What the user asked the model to do  
-- What the model attempted through MCP  
-
-This helps determine whether the issue originates from prompt interpretation, model reasoning, client integration, MCP behavior, or the underlying platform capability.
-
----
-
-## Product scope
-
-The current product scope is intentionally limited:
-
-- **Read-only access**: Supports data retrieval only  
-- **No write operations**: Does not create, update, or delete objects  
-- **Future extensibility**: Write operations may be added with explicit enablement  
-- **Closed beta**: Availability is limited during rollout  
-- **Permission-bound access**: Limited to existing authenticated permissions  
-
-Some capabilities may be available only for specific products, users, environments, or beta cohorts.
-
----
-
-## Support requests
-
-When reporting an issue or requesting support, provide concise but specific information to help speed up investigation.
-
-Include the following details:
-
-- **Platform**: Monetize or Curate  
-- **MCP client**: For example, VS Code, Claude Code, or another MCP-compatible client  
-- **Model**: If known  
-- **Original prompt**: Or a close equivalent that reproduces the issue  
-- **Tool usage**: Which tools the model attempted to use  
-- **Tool results**: Whether each tool call succeeded, failed, or returned incomplete data  
-- **Relevant identifiers**: Such as report type, object type, object ID, deal ID, advertiser ID, or date range  
-- **Errors or behavior**: Exact error message or a summary of incorrect behavior  
-- **Reproducibility**: Whether the issue is reproducible or intermittent  
-
-Keep the report concise, but include enough detail for others to understand and reproduce the issue without reconstructing the entire session.
-
----
-
-### Suggested support template
-
-You can provide the following template to your LLM and ask it to summarize the session before submitting a support request.
-
-```md
-# Xandr MCP support summary
-
-## Issue summary
-- Short description:
-- Impact:
-- Reproducible: Yes / No / Unknown
-
-## Environment
-- Platform: Monetize / Curate
-- MCP client:
-- Model:
-- Environment: Production / Staging / Unknown
-- Approximate time of issue:
-
-## User intent
-- Original prompt:
-- Expected outcome:
-- Actual outcome:
-
-## Tool usage
-| Tool | Purpose | Result | Notes |
-|------|---------|--------|-------|
-| tool_name | reason for use | Success / Failed / Partial | short detail |
-
-## Relevant inputs
-- Report type:
-- Object type:
-- IDs or names used:
-- Date range:
-- Filters or grouping:
-
-## Errors or suspicious output
-- Exact error message(s):
-- If no formal error, describe the incorrect or incomplete result:
-
-## Reasoning context
-- Why the model chose those tools:
-- Whether the model misunderstood the prompt, platform, or available capability:
-
-## Additional context
-- Whether the capability works outside MCP:
-- Whether the account or seat has access to the underlying platform feature:
-- Any additional information that may help reproduce or debug the issue:
-```
----
-
-### Suggested instruction for your LLM
-
-You can provide the following instruction to your LLM to generate a support summary:
-
-```md
-Summarize this Xandr MCP issue for a support ticket. Be concise, but include:
-- Platform  
-- MCP client  
-- Model (if known)  
-- Original prompt  
-- Tools used  
-- Whether each tool succeeded or failed  
-- Relevant IDs and date ranges  
-- Exact errors  
-- Any context needed to reproduce or debug the issue
+```text
+Member
+└── Advertiser
+    └── Insertion Order
+        └── Line Item
+            ├── Profile
+            └── Deal
 ```
 
----
+A deal connects a buyer to inventory. It is attached to a line item, which sits inside an insertion order under an advertiser. When a deal isn't delivering, any object in that chain can be the cause.
 
-## Additional resources
+A profile holds the targeting criteria for a line item, such as geo, device, segment, and frequency cap settings. It is a separate object, but it is treated as part of the line item configuration for troubleshooting.
 
-- [Authentication Service](../digital-platform-api/authentication-service.md)   
+Segments and splits are used for audience targeting and budget allocation within a line item.
+
+### Sell-side hierarchy for Microsoft Monetize
+
+```text
+Member
+└── Publisher
+    └── Placement Group
+        └── Placement
+```
+
+## Use effective tool patterns
+
+The Xandr MCP Server organizes tools into reusable patterns. You don't need to call these tools directly unless your AI client exposes them, but understanding the patterns can help you ask better questions.
+
+### Discover, then run reports
+
+For reports, ask what is available before running. Discovery helps you confirm which report types, columns, filters, and time ranges are valid.
+
+Common reporting tool patterns include:
+
+- `list_reports`
+- `describe_report`
+- `run_report`
+- `get_report_status`
+- `download_report`
+- `run_chart_report`
+
+### Search, then describe objects
+
+For objects, search first when you don't have an ID. If you already have an ID, go directly to object details.
+
+Common object tool patterns include:
+
+- `search_<object_type>`
+- `describe_object`
+- `get_object_meta`
+- `identify_object`
+
+### Validate configuration
+
+For troubleshooting, use the validation pattern with a deal ID or line item ID. The validation tool resolves the related parent chain internally.
+
+Common troubleshooting tool pattern:
+
+- `validate_object_config`
+
+### Review change history
+
+For change history, start with a high-level summary, then inspect grouped or field-level change details if needed.
+
+Common change history tool patterns include:
+
+- `get_change_history`
+- `get_change_log_group`
+- `get_change_log_detail`
+
+## Example questions you can ask
+
+Use these examples as starting points after you're connected.
+
+### Troubleshoot delivery
+
+> Deal 987654 is not delivering. What's wrong with the configuration?
+
+### Run a performance report
+
+> Show me impressions, revenue, and CPM by publisher for the last 7 days.
+
+### Search and inspect objects
+
+> Find all active line items under advertiser 12345.
+
+> Show me the targeting profile on line item 67890.
+
+### Understand recent changes
+
+> What changed on line item 67890 in the last 48 hours?
+
+> Who last modified deal 987654 and when?
+
+### Explore available inventory in Microsoft Monetize
+
+> How much inventory is available for US mobile web, 300x250, targeting finance content?
+
+### Analyze curated deal performance in Microsoft Curate
+
+> Show me the curator analytics report for last month broken down by deal.
+
+> What is the bid rejection rate across my active deals?
+
+### Review network performance trends
+
+> How did my total revenue compare this week vs last week?
+
+> Which 10 publishers drove the most impressions last month?
+
+You can also combine reporting and chart tools by asking for a trend chart, then following up with a breakdown question.
+
+## Alpha scope and limitations
+
+The alpha release surfaces your existing platform data and respects the same permissions, roles, and reporting capabilities your account already has.
+
+The following actions aren't available in this release:
+
+- Creating or modifying objects through the Xandr MCP Server.
+- Creating or editing deals, line items, advertisers, or other objects.
+- Creating or modifying Microsoft Curate deal plans.
+
+Reading existing Microsoft Curate plan details and retrieving reach estimates is supported.
+
+Alpha access is by invitation only. Contact your account team to request access.
+
+## Common questions
+
+### Can I create or edit deals and line items through my AI assistant?
+
+No. The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, or other objects through the Xandr MCP Server.
+
+### Do I need separate Xandr API credentials?
+
+No. Authentication uses your Microsoft identity. You don't need separate Xandr API credentials.
+
+### Which endpoint should I use?
+
+Use the endpoint that matches your Xandr seat:
+
+- Microsoft Monetize: `https://monetize.xandr.com/mcp`
+- Microsoft Curate: `https://curate.xandr.com/mcp](https://curate.xandr.com/mcp`
+
+### Why am I getting a validation error when I run a report?
+
+Report types and available columns vary by platform and account configuration. Before you run a report, ask your AI assistant to list available report types or describe the report you want to run.
+
+### Does the Xandr MCP Server respect my existing permissions?
+
+Yes. The server surfaces existing platform data and respects the same permissions, roles, and reporting capabilities your account already has.
+
+### How do I get alpha access?
+
+Alpha access is by invitation only. Contact your account team to request access.

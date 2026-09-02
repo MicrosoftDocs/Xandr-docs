@@ -35,9 +35,9 @@ There are five booked revenue types:
 - **Fixed Fee** - This type of revenue does not require any kind of budgeting, as it represents a one time payment on a certain date and nothing more.
 
 > [!NOTE]
-> When working with CPM booked revenue on the line item, setting a performance goal can help prevent you from buying inventory that does not meet the advertiser's performance goal, and gives you a greater degree of control by enabling you to adjust either campaign performance or margin to improve delivery. For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up performance goals, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
+> When working with CPM booked revenue on the line item, selecting an optimization method can help prevent you from buying inventory that does not meet the advertiser's goal and gives you greater control by enabling you to adjust either campaign performance or margin to improve delivery. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
-Refer to the **Set the booked revenue** section on the [Create a Standard Line Item](create-a-standard-line-item.md) page for more information.
+For more information about configuring a line item, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 
 ### Cost (campaign)
 
@@ -54,9 +54,7 @@ Cost is the budgeting method by which you record the money that you spend to pur
 > - When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, we no longer recommend using the Optimize to a CPC/CPA Goal buying strategy. For best results, use the **Performance Goals** section on your line item (from **Create New Line Item**, select **Basic Settings** and go to **Performance Goals** or from **Edit Line Item**, go to **Basic Settings** and select **Performance Goals**) to set a CPC or CPA performance goal.
 > - In addition, the ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated. Although this combination will remain functional for existing campaigns, you will no longer be able to use it on new campaigns or when duplicating existing campaigns. For best results, use the **Performance Goals** section on your line item (from **Create New Line Item**, select **Basic Settings** and go to **Performance Goals** or from **Edit Line Item**, go to **Basic Settings** and select **Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
 >
-> For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
->
-> To learn about setting up **Performance Goals**, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
+> For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 Review the [Buying Strategies](buying-strategies.md) page for more information.
 

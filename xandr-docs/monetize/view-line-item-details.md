@@ -243,10 +243,10 @@ The **All Settings** button shows these settings as well as **Commissions**, **C
 - **State**: The state of the line item (active or inactive).
 - **Lifetime Budget**: The lifetime budget for the line item (in impressions or revenue).
 - **Daily Budget**: The daily budget for the line item, in impressions or revenue.
-- **Revenue Type**: The basis on which the advertiser has agreed to pay you. For example, CPM (per thousand impressions) or CPA (per conversion). For more information about each revenue type, see [Create a Standard Line Item](create-a-standard-line-item.md).
+- **Revenue Type**: The basis on which the advertiser has agreed to pay you. For example, CPM (per thousand impressions) or CPA (per conversion). For more information, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 - **Revenue Value**: The amount that the advertiser will pay you for the specified revenue type.
 - **Conversion Tracking**: The name and ID of each conversion pixel associated to this line item.
-- **Performance Goal Type**: The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you. For example, the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal. For more information about performance goals, see [Create a Standard Line Item](create-a-standard-line-item.md).
+- **Performance Goal Type**: The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you. For example, the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 - **Performance Goal Tracking**: The amount for the performance goal.
 
 ## Frequency caps
@@ -320,4 +320,4 @@ To view child object details:
 ## Related topics
 
 - [Explore Line Items](explore-line-items.md)
-- [Create a Standard Line Item](create-a-standard-line-item.md) -->
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) -->

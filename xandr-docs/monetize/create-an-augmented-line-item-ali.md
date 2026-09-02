@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Create an Augmented Line Item
 description: In this article, find step-by-step instructions on how to create and set up augmented line items (ALIs).
-ms.date: 10/21/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -39,7 +39,7 @@ If you've created an advertiser and an insertion order, you're ready to create a
 
 1. [Set Up Line Item Optimization](set-up-line-item-optimization.md)
 
-    From the **Optimization** section, you can enable or disable Microsoft Advertising optimization for a line item. If you enable Microsoft Advertising optimization, you must first set a performance goal and goal priority, and then associate the line item with conversion pixels for those goals.
+    From the **Optimization** section, you can enable or disable Microsoft Advertising optimization for a line item. If you enable Microsoft Advertising optimization, you must first set an optimization method and goal priority, and then associate the line item with conversion pixels as needed.
 
 1. [Set Up Line Item Inventory and Brand Safety](set-up-line-item-inventory-and-brand-safety.md)
 

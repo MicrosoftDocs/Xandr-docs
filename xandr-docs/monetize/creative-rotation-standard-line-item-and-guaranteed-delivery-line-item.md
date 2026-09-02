@@ -61,6 +61,6 @@ Microsoft Advertising assigns weights per creative for nodes (tag and inventory 
 
 ## Related topics
 
-- [Create a Standard Line Item](create-a-standard-line-item.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Using Promo Sizes](using-promo-sizes.md)
-- [Understanding Performance Goals](understanding-performance-goals.md)
+- [Set Up Line Item Optimization](set-up-line-item-optimization.md)

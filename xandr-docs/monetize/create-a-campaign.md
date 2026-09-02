@@ -22,7 +22,7 @@ Creating campaign involves defining:
 
 ## Before you begin
 
-- **Prerequisite** - You have already created the line item under which you want to create your campaign. The line item defines your financial agreement with an advertiser, whereas the campaign specifies how to spend the money to make good on your agreement. See [Create a Standard Line Item](create-a-standard-line-item.md) for more details.
+- **Prerequisite** - You have already created the line item under which you want to create your campaign. The line item defines your financial agreement with an advertiser, whereas the campaign specifies how to spend the money to make good on your agreement. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) for more details.
 - **Recommendations** - If you plan to target user segments and/or domain lists, make sure the relevant segments and domain lists have been created before you start campaign setup. See [Create a Segment Pixel](create-a-segment-pixel.md) and [Working with Targeting Lists](working-with-targeting-lists.md) for more details.
 
 ### Retargeting versus audience buying campaigns
@@ -161,9 +161,8 @@ To run the campaign on inventory from other members of the Microsoft Advertising
 > - Post-click conversion tracking works in mobile browsers just like it does in web browsers. In mobile apps, however, post-click conversions can be tracked only when the user performs the action (the conversion) from an app's built-in web view. After clicking an ad in an app, if the user converts in a separate mobile browser (after having closed
 >   the app), the correlation to the click in the app cannot be tracked.
 > [!NOTE]
-> - When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, set a Performance Goal on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
-> - For more information, please see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
-> - To learn about setting up Performance Goals on the line item, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
+> - When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, select an optimization method on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+> - For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 - **Pay on a Per-impression (CPM) basis** - Select this option to pay publishers for every impression. This payment type is accepted by all sellers (Microsoft Advertising sellers and external sellers)
 
@@ -214,12 +213,11 @@ To run the campaign on inventory from other members of the Microsoft Advertising
      >
      > - To learn how to enable minimum margin for campaigns targeting direct inventory, see [Manage Network Priorities](manage-network-priorities.md).
      > - To learn about how to balance margin and delivery, see our [Using Minimum Margin to Balance Margin and Delivery](using-minimum-margin-to-balance-margin-and-delivery.md).
-     > - To learn how to set minimum margin on the line item, see [Create a Standard Line Item](create-a-standard-line-item.md).
+    > - To learn how to configure the line item, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
      >
-     > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategies is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, set a **Performance Goal** on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
+    > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategies is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, select an optimization method on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
     >
-    > - For more information, please see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
-    > - To learn about setting up Performance Goals on the line item, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
+      > - For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 ### Step 8. Show to users without cookies
 

@@ -21,7 +21,7 @@ In the **Buying Strategies** section, click **Edit** under **OTHER OPTIONS**.
 > [!NOTE]
 > The **OTHER OPTIONS** section (which includes the **Edit** option) is only visible if you have selected a buying strategy against which optimization levers can be applied:
 >
-> - When you set a **Performance Goal** on a Line Item. For more information, see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
+> - When you select an **Optimization Method** on a line item. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 > - When you optimize to a **Predicted CPC** or **CPA** goal.
 
 ## Defer to Line Item revenue with a \_ % margin

@@ -169,9 +169,9 @@ This section shows you essential details about the parent line item.
 - **Name/ID** - The name and id of the line item appears at the top of this section. You can click this to navigate to [View Line Item Details](view-line-item-details.md) for the line item.
 - **Lifetime** How much the advertiser has allocated for you to spend over the lifetime of the line item, in money or impressions.
 - **Daily** - How much the advertiser has allocated for you to spend on any given day, in money or impressions.
-- **Revenue Type** - The basis on which the advertiser has agreed to pay you, for example, CPM (per thousand impressions) or CPA (per conversion). For details about each revenue type, see [Create a Standard Line Item](create-a-standard-line-item.md).
+- **Revenue Type** - The basis on which the advertiser has agreed to pay you, for example, CPM (per thousand impressions) or CPA (per conversion). For more information, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 - **Revenue Value** - The amount that the advertiser will pay you for the specified revenue type.
-- **Performance Goal Type** - The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you (e.g., the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal). For more details about performance goals, see [Create a  Standard Line Item](create-a-standard-line-item.md).
+- **Performance Goal Type** - The type of goal that the advertiser wants you to achieve (CPC, CPA, CTR). A performance goal is used to achieve a goal that is different from how the advertiser has agreed to pay you (e.g., the advertiser wants to pay a CPM but expects you to meet a $50 CPA goal). For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 - **Performance Goal Tracking** - The amount for the performance goal.
 
 ## Serving fees

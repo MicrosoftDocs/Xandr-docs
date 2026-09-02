@@ -90,7 +90,7 @@ Since multi-tag requests are required for roadblocking, you will need to set up 
 In order to run roadblock campaigns, you need to target the tag(s) you just created. For instructions on targeting a specific placement, see the **Target specific slices of direct inventory** section of [Create a Campaign](create-a-campaign.md). Then, enable roadblocking as follows:
 
 - For campaign-level roadblocking, follow the instructions in the **Enable Roadblocking** section of [Create a Campaign](create-a-campaign.md).
-- For line item-level roadblocking, follow the instructions in [Create a Standard Line Item](create-a-standard-line-item.md).
+- For line item-level roadblocking, follow the instructions in [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 - If you are a publisher client with access to [Guaranteed Delivery](guaranteed-delivery.md), turn on roadblocking when you [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
 
 ## Related topics

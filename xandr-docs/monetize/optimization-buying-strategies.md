@@ -34,9 +34,9 @@ The following buying strategies work for buying third party inventory that utili
    > [!NOTE]
    > When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, use the **Performance Goals** section on your line item to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
   >
-  > For more information, see [Understanding Performance Goals](understanding-performance-goals.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
+   > For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
   >
-  > To learn about setting up **Performance Goals,** see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md).
+   > To learn about selecting an optimization method, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 - **Optimize to a % margin of booked revenue**: There are two types of booked revenue:
   - **CPM booked revenue** This strategy does not use optimization.
@@ -50,9 +50,9 @@ The following buying strategies work for buying third party inventory that utili
    > [!NOTE]
    > The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the Performance Goals section on your line item (**Create New Line Item**  \>  **Basic Settings** \>  **Performance Goals** or **Edit Line Item**  \>  **Basic Settings**  \>  **Performance Goals**) to set a CPC or CPA performance goal. Then use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy.
    >
-   > For more information, see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
+   > For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
    >
-   > To learn about setting up **Performance Goals,** see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
+   > To learn about selecting an optimization method, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 For all RTB pay-per-impression optimization buying strategies, you have the option of specifying a **min CPM** and a **max CPM**.
 
@@ -63,7 +63,7 @@ The [Cadence Modifier and the Chaos Factor](cadence-modifier-and-the-chaos-facto
 
 ## Performance goals
 
-When creating a Line Item, you can track how well the campaigns that belong to that line item are doing against the performance goals give to you by your advertiser. If you elect to set a bidding limit with your **Performance Goal**, all campaigns buying underneath that line item will go through a bid decisioning logic. The bid decisioning applies to all buying strategies, regardless if they are an optimization buying strategy or not. For more information, see Step 6 of [Create a Standard Line Item](create-a-standard-line-item.md).
+When creating a line item, you can track how well the campaigns that belong to that line item are doing against the goals given to you by your advertiser. If you set a bidding limit with an optimization method, all campaigns buying underneath that line item will go through bid decisioning logic. The bid decisioning applies to all buying strategies, regardless of whether they are an optimization buying strategy. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 ## Related topic
 

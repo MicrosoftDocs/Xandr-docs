@@ -177,7 +177,7 @@ To add a new commission:
 >
 > - Commissions at the line item level override commissions at the insertion order level.
 > - Per broker, you can add no more than one CPM commission and one Revenue Share commission.
-> - The commissions here apply to all line items under the insertion order. If you prefer, you can add commissions to specific line items instead. See [Create a Standard Line Item](create-a-standard-line-item.md) for more details.
+> - The commissions here apply to all line items under the insertion order. If you prefer, you can add commissions to specific line items instead. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) for more details.
 > - The decimal position support for the broker fees is for 1 place after the decimal. For example, if you set 16.67% as a broker fee in the **Commissions** section, after saving, the value would round off to 16.7%. However, there is no restriction on number of places after the decimal if the [Insertion Order service API](../digital-platform-api/insertion-order-service.md) is used to create the broker fee.
 
 ## Associate line items (optional)
@@ -208,5 +208,5 @@ You can also click the arrow next to the **Save** button and choose to **Save an
 - [Working with Insertion Orders](working-with-insertion-orders.md)
 - [Explore Insertion Orders](explore-insertion-orders.md)
 - [Create an Advertiser](create-an-advertiser.md)
-- [Create a Standard Line Item](create-a-standard-line-item.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Political Advertising](political-advertising.md)

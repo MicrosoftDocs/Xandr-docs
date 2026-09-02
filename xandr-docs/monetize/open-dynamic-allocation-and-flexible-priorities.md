@@ -23,7 +23,7 @@ You can set priority on both standard and guaranteed delivery line items to any 
 
 Historically, standard line items have been restricted to lower priority settings than guaranteed delivery line items. This ensured that eligible guaranteed line items would always deliver before standard line items. In most cases this is the desired behavior: we need guaranteed line items to always deliver in full, so prioritizing them above standard line items is one logical way of making that happen. However, there are cases where, due to various customer commitments, it is important that standard line items be prioritized at or even above line items with guaranteed delivery goals.
 
-For more information on setting priorities, see [Create a Standard Line Item](create-a-standard-line-item.md) and [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
+For more information on setting priorities, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) and [Create a Guaranteed Delivery Line Item](create-a-guaranteed-delivery-line-item.md).
 
 ## The impact of flexible priorities on open dynamic allocation
 

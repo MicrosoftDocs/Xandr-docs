@@ -47,7 +47,7 @@ Xandr suggests associating your line items with insertion orders to preserve his
 >
 > To set performance goals for line items with `goal_type` `"cpa"`, use the `goal_pixels` array. This array contains information about performance goal targets and thresholds. To set performance goals for line items with the `goal_type` `"cpc"` or `"ctr"`, use the `valuation` object. This object contains the performance goal threshold, which determines the bid/no bid cutoff on optimized campaigns, and the performance goal target, which represents the desired clicks or click-through rate.
 >
-> To learn more about performance goals, see [Understanding Performance Goals](../monetize/understanding-performance-goals.md) in the UI documentation.
+> To learn more about optimization methods, see [Set Up Line Item Optimization](../monetize/set-up-line-item-optimization.md) in the UI documentation.
 
 ## REST API
 

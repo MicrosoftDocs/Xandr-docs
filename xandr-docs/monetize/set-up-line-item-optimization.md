@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Set Up Line Item Optimization
 description: Explore optimizing line items, set goals, priorities, and link with conversion pixels for effective performance control.
-ms.date: 10/21/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -9,22 +9,25 @@ ms.author: shsrinivasan
 
 # Microsoft Monetize - Set up line item optimization
 
-You can enable or disable Microsoft Advertising optimization for a line item. If you enable Microsoft Advertising optimization,you must first set a performance goal and goal priority, then associate
-the line item with conversion pixels for those goals.
+You can select an **Optimization Method** and goal priority for a supported standard augmented line item (ALI), and then associate the line item with conversion pixels as needed.
 
-The **Optimization** section provides several settings related to optimization, goals, goal priority, and conversion tracking and viewability (if enabled). For more information, see the [Optimization Guide ALI](optimization-guide-ali.md).
+The **Optimization** section provides settings related to optimization methods, goal priority, conversion tracking, and viewability (if enabled). Optimization is **Disabled** by default. When optimization is enabled for the first time, the initial optimization method is **CPC**, and the default **Goal Priority** is **Performance**. For more information, see the [Optimization Guide ALI](optimization-guide-ali.md).
 
-1. Turn on optimization.
+Standard ALIs support **CPC**, **CPA**, **CTR**, and **Viewable CPM** optimization methods when they are compatible with the line item configuration. **CPCV**, **VCR**, and **ROAS** are conditional methods that may also appear when the applicable video, revenue, supply, and account-configuration requirements are met.
 
-   If the **Optimization Method** toggle has been turned on, the Microsoft Advertising optimization engine will consider your goal value and goal type when bidding on inventory.
+Guaranteed Delivery Augmented Line Items (GDALIs) do not support an **Optimization Method** or **Goal Priority**. The **Optimization** section for a GDALI supports selecting conversion pixels for tracking.
 
-   If the **Optimization Method** toggle is turned off, automatic optimization is disabled, including the algorithms for bid valuation, inventory discovery, and allocation. When optimization is off, adaptive pacing will still shade bids in response to delivery.
+1. Enable or disable optimization.
 
-1. Set a goal type.
+  When the **Optimization Method** toggle is **Enabled**, the Microsoft Advertising optimization engine considers your goal value and optimization method when bidding on inventory.
 
-   This option is visible only if optimization is turned on.
+  When the **Optimization Method** toggle is **Disabled**, automatic optimization is disabled, including the algorithms for bid valuation, inventory discovery, and allocation. When optimization is disabled, adaptive pacing will still shade bids in response to delivery.
 
-   Goal types can be used in conjunction with revenue types if an advertiser wants to track and report against a goal that is different from the payment types that they have chosen (e.g., an advertiser wants to pay CPM but would like you to track against a $50 CPA goal).
+1. Select an **Optimization Method**.
+
+  This option is visible only if optimization is **Enabled**.
+
+  Optimization methods can be used in conjunction with revenue types if an advertiser wants to track and report against a goal that is different from the payment type that they have chosen (for example, an advertiser wants to pay CPM but would like you to track against a $50 CPA goal).
 
     You can optimize to:
 
@@ -34,7 +37,7 @@ The **Optimization** section provides several settings related to optimization, 
 
     - **CPCV**
 
-      Select this option if your advertiser wants to track and report against a goal based on video completes. A video complete requires  the video ad to play for its full duration. Set the **CPCV** field to the goal your advertiser has given you. This option is only available if you selected **Video** as the **Ad Type** in **Basic Settings**. When your revenue type is also **CPCV**, optimization will inherit the goal value from your revenue value.
+      Select this option if your advertiser wants to track and report against a goal based on video completes. A video complete requires the video ad to play for its full duration. Set the **CPCV** field to the goal your advertiser has given you. This option is only available if you selected **Video** as the **Ad Type** in **Basic Settings**. When your revenue type is also **CPCV**, optimization will inherit the goal value from your revenue value.
 
     - **VCR**
 
@@ -45,15 +48,15 @@ The **Optimization** section provides several settings related to optimization, 
 
     - **CTR**
 
-      Select this type if your advertiser wants to optimize to a clickthrough rate percentage. Enter the desired percentage in the text field.
+      Select this method if your advertiser wants to optimize to a clickthrough rate percentage. Enter the desired percentage in the text field.
 
     - **CPC**
 
-      Select this type if your advertiser wants to track and report against a cost per click goal. Enter the CPC amount in the text field. If your revenue type is **CPC**, optimization will inherit the goal value from your revenue value.
+      Select this method if your advertiser wants to track and report against a cost per click goal. Enter the CPC amount in the text field. If your revenue type is **CPC**, optimization will inherit the goal value from your revenue value.
 
     - **CPA**
 
-      Select this type if your advertiser wants to achieve a cost per action goal. When choosing this goal type, you have the option to optimize to only post-click conversions or to both post-click and post-view conversions.
+      Select this method if your advertiser wants to achieve a cost per action goal. When choosing this optimization method, you have the option to optimize to only post-click conversions or to both post-click and post-view conversions.
 
     If your advertiser wants to optimize to both post-click and post-view conversions:
 
@@ -61,7 +64,7 @@ The **Optimization** section provides several settings related to optimization, 
 
    1. If this is a retargeting line item (a line item that targets users who have already shown interest in the advertiser), select **Retargeting** and ensure that the line item targets at least one retargeting segment (a segment not in the Data Marketplace).
 
-   1. If this is a prospecting line item (a line item that targets a wide spread of users who may become interested in the dadvertiser's brand), select **Prospecting**.
+    1. If this is a prospecting line item (a line item that targets a wide spread of users who may become interested in the advertiser's brand), select **Prospecting**.
 
       > [!NOTE]
       > CPA prospecting optimization is not recommended if you're optimizing to a rare event (an event with infrequent conversions). In that case, we recommend that you optimize to a higher-level conversion event that has more data.

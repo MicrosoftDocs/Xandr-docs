@@ -13,6 +13,21 @@ ms.author: rupambaruah
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.14.0
+*Released: August 27, 2026*
+
+> [!NOTE]
+> Starting with the next release, CocoaPods support will be discontinued. Swift Package Manager (SPM) will become the primary distribution method. For instructions, see [Integrating the SDK via SPM](migrating-ios-sdk-v9.x.y-to-v2.md#swift-package-manager).
+
+### New Feature
++ 10947763: Added an in-app install experience for supported app store ad clicks.
++ 10904454: Added COPPA flag support to signal COPPA-applicable ad requests.
++ 10904371: Added interstitial video completion callback API (complete/skip/error).
+
+### Improvement/Bug Fixes
++ 11096400: Upgraded Facebook Audience Network SDK to v6.22.0.
+
+
 ## 9.13.0
 *Released: June 10, 2026*
 

@@ -1,13 +1,25 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 3/2/2026
+ms.date: 8/27/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: rupambaruah
 ---
 
 # Android SDK release notes
+
+## 9.14.0
+*Released: August 27, 2026*
+
+### New Feature
++ 10947763: Added an in-app install experience for supported app store ad clicks.
++ 10904454: Added COPPA flag support to signal COPPA-applicable ad requests.
++ 10904371: Added interstitial video completion callback API (complete/skip/error).
+
+### Improvement/Bug Fixes
++ 11096400: Upgraded Facebook Audience Network SDK to v6.22.0.
++ 11068149: Prevent banner video autoplay outside the viewport.
 
 ## 9.13.0
 *Released: June 10, 2026*

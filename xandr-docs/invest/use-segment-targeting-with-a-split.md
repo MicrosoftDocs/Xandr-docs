@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Use Segment Targeting with a Split
 description: In this page, learn the criterias on the basis of which you can target splits, and the steps to do so. 
-ms.date: 10/28/2023
+ms.date: 09/01/2026
 ---
 
 # Microsoft Invest - Use segment targeting with a split
@@ -10,6 +10,10 @@ You can target splits based on segment presence/absence, age, or value.
 
 > [!NOTE]
 > A segment value of zero (0) is supported.
+
+## Targeting limitation
+
+Don't combine segment targeting and key/value targeting within the same split condition, including an **AND** condition with an included or excluded segment. The split can't be saved and returns a validation error. Configure the targeting types in separate supported conditions or structures.
 
 1. In the **Splits** table, select the pencil icon in the **Segment** column for the corresponding split.
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Split FAQ
 description: Explore FAQs on split objects, covering spend allocation, limitations, and optimize line items with prior max bids using CSV export/import.
-ms.date: 10/21/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -25,6 +25,12 @@ The limitations per split object are as follows:
 - Maximum number of creatives per split: 100
 - Maximum number of items per feature: 200 (For example, you can specify
   200 domains per split or 200 postal codes per split)
+
+## Can I combine key/value targeting and segment targeting in the same split condition?
+
+No. Programmable splits don't support combining key/value targeting and segment targeting within the same split condition. This limitation also applies when key/value targeting is combined with an included or excluded segment using an **AND** condition. A split that contains both targeting types can't be saved and returns a validation error.
+
+To use both targeting types, configure them in separate supported targeting conditions or structures instead of in the same programmable split. If you need this combined behavior, contact Microsoft Advertising about feature availability or enhancement requests.
 
 ## I'd like to enable optimization on a line item where I've previously disabled optimization and used max bids in splits
 

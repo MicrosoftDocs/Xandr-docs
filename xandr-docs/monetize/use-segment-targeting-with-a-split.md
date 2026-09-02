@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Use Segment Targeting with a Split
 description: This page is a step-by-step guide to target splits based on segment presence/absence, age, or value.
-ms.date: 10/21/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -14,6 +14,10 @@ You can target splits based on segment presence/absence, age, or value.
 
 > [!NOTE]
 > A segment value of zero (0) is supported.
+
+## Targeting limitation
+
+Don't combine segment targeting and key/value targeting within the same split condition, including an **AND** condition with an included or excluded segment. The split can't be saved and returns a validation error. Configure the targeting types in separate supported conditions or structures.
 
 1. In the **Splits** table, click the pencil icon in the **Segment** column for the corresponding split.
 

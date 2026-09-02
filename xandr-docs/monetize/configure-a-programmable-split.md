@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Configure a Programmable Split
 description: Explore enhanced line item targeting with programmable splits. Dynamically adjust bids, budget, and creative allocation for sophisticated targeting needs.
-ms.date: 10/21/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -20,6 +20,10 @@ When you create an [augmented line item (ALI)](create-an-augmented-line-item-ali
 
 You define a split by specifying the inventory you want available for it, using any combination of split settings. These include geography, inventory performance, and segment information. If you choose, you can also specify bidding or valuation rules, budget allocations, bidding priority, and/or creative selection for each split. For more background
 information on how splits work, see [Understanding Splits](understanding-splits.md).
+
+## Targeting limitation
+
+Programmable splits don't support combining key/value targeting and segment targeting within the same split condition, including an **AND** condition with an included or excluded segment. A split that contains both targeting types can't be saved and returns a validation error. Configure the targeting types in separate supported conditions or structures. Contact Microsoft Advertising about feature availability or enhancement requests if you need to combine these targeting types.
 
 > [!NOTE]
 > Split changes are only applied when you click **Review and Save** on the line item.

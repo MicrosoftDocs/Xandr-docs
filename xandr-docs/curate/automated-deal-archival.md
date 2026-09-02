@@ -9,9 +9,6 @@ ms.author: shsrinivasan
 
 # Microsoft Curate - Automated Deal Archival 
 
-> [!NOTE]
-> This feature is currently in pilot and may change without notice. A notification appears in the UI when the feature is enabled for an account. For more information, contact your Microsoft Advertising account representative. 
-
 ## Overview
 Automatic deal archival ensures auctions are running efficiently on the Microsoft Advertising platform. The platform archives deals that buyers have not been using for an extended period of time. Archived deals remain visible in monitoring tools and reports but do not participate in auctions or generate bid requests. This page outlines the archival criteria and provides guidance on how to monitor and manage archived deals. 
 

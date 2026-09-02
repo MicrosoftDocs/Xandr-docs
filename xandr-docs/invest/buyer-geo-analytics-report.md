@@ -1,7 +1,7 @@
 ---
 title: Microsoft Invest - Buyer Geo Analytics Report
 description: Learn about the Buyer Geo Analytics report that allows you to break down delivery and performance based on specific geographic area.
-ms.date: 10/28/2023
+ms.date: 09/01/2026
 ---
 
 # Microsoft Invest - Buyer Geo Analytics report
@@ -67,7 +67,7 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Data retention period
 
-This report's data is retained for 45 days. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
+This report's data is retained for 180 days. For more information about how quickly reporting data is processed, see [Availability of Reporting Data](availability-of-reporting-data.md).
 
 ## Dimensions
 

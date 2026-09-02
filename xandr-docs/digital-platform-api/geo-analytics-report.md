@@ -1,7 +1,7 @@
 ---
 title: Geo Analytics Report
 description: Use the Geo Analytics report to break down campaign delivery and performance by geographic area.
-ms.date: 10/22/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -39,7 +39,7 @@ The `report_interval` field in the request can be set to one of the following:
 
 ### Data retention period
 
-Data retention period for this report is 45 days.
+Data retention period for this report is 180 days.
 
 > [!NOTE]
 > To run a report for a custom time frame, set the `start_date` and `end_date` fields in your report request. For more details about these fields, see [Report Service](./report-service.md).

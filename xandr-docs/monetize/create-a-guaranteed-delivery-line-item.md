@@ -1,7 +1,7 @@
 ---
 title: Create a Guaranteed Delivery Line Item
 description: In this article, find information on how to create and set up a guaranteed delivery line item.
-ms.date: 10/21/2025
+ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -161,6 +161,10 @@ To set up line item budgeting and scheduling:
    - **ASAP** (default): Unspent daily budget will be spent as quickly as possible based on your line item settings to ensure the highest probability of delivering your budget in its entirety.
 
 - **Daypart**: Add any necessary settings to target users based on the day and time when they see impressions. For more information, see [Daypart Targeting](daypart-targeting.md).
+
+## Optimization
+
+In the **Optimization** section, optionally select the conversion pixels to associate with the GDALI. Conversion pixels are for reporting only; GDALIs do not support an **Optimization Method**. Optimization methods and goal priorities are available only for supported standard Augmented Line Items. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 ## Inventory and environment targeting
 

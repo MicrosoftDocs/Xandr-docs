@@ -103,7 +103,7 @@ Post-view conversions cannot currently be tracked across Safari mobile browsers 
 
 Post-click conversion tracking works in mobile browsers just like it does in web browsers. In mobile apps, however, post-click conversions can be tracked only when the user performs the action (the conversion) from an app's built-in web view. After clicking an ad in an app, if the user converts in a separate mobile browser (after having closed the app), the correlation to the click in the app cannot be tracked.
 
-When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, set a **Performance Goal** on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, please see [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md). To learn about setting up **Performance Goals** on the line item, see Step 6 of [Create a Line Item](create-a-standard-line-item.md).
+When your line item booked revenue is CPM but you want your campaign to optimize to a CPC or CPA goal, for best results, select an optimization method on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 ### Pay on a Per-impression (CPM) basis
 

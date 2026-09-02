@@ -14,7 +14,7 @@ Networks are often paid on a CPC and CPA basis by their advertisers and would li
 ## Buying inventory on a CPC/CPA basis
 
 > [!NOTE]
-> The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, use the **Performance Goals** section on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, please see [Add a Performance Goal to a Line Item](add-a-performance-goal-to-a-line-item.md) and [Using Performance Goals with CPM Booked Revenue](using-performance-goals-with-cpm-booked-revenue.md).
+> The ability to combine CPM booked revenue with either the **Pay on a Per-click (CPC) Basis** or the **Pay on a Per-conversion (CPA) Basis** buying strategy is being deprecated soon. Although this combination will remain functional for existing campaigns, you will no longer be able to use this combination on new campaigns or duplicate existing campaigns that use it. For best results, select an optimization method on your line item and use **Optimize to a % Margin of Booked Revenue** as your campaign buying strategy. For more information, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 In the **Buying Strategies** section of a campaign, you can choose to bid on inventory outside of your network on a CPC or CPA basis. You can continue to bid on a CPM basis as well.
 

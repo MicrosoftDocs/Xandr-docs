@@ -19,7 +19,7 @@ This is the amount paid to the network by the advertiser. When line items are cr
 
 Performance goals are applicable if your advertiser's goal for earnings from a campaign are different than how they are paying you. For example, an advertiser may pay on a CPM basis but tell their network they want to meet a $20 CPA goal. This $20 CPA goal is used as a benchmark to determine whether to bid or not bid (i.e., the bid is checked to ensure that the specified amount will result in meeting the performance goal before it is actually submitted).
 
-For more details, see [Understanding Performance Goals](understanding-performance-goals.md).
+For more details, see [Set Up Line Item Optimization](set-up-line-item-optimization.md).
 
 ## Campaign budgets (media cost)
 
@@ -73,6 +73,6 @@ There are two main sources of data used by the optimization engine: **Historical
 - [Optimization Guide](optimization-guide.md)
 - [Understanding Optimization](understanding-optimization.md)
 - [Optimization In-Depth](optimization-in-depth.md)
-- [Understanding Performance Goals](understanding-performance-goals.md)
+- [Set Up Line Item Optimization](set-up-line-item-optimization.md)
 - [Conversion Attribution](conversion-attribution.md)
 - [Optimization Levers](optimization-levers.md)

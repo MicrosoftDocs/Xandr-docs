@@ -15,7 +15,7 @@ The **Network Priorities** screen (**Network** \>  **Tools** \> **Network Priori
 > [!IMPORTANT]
 > This network-wide setting should be enabled when you have made a business decision to prioritize margin (the profit margin on booked revenue) on managed campaigns for all line items on the network over delivery (the frequency and number of campaigns served) on managed publishers.
 >
-> To learn about how to set up minimum margin on the line item, see [Create a Standard Line Item](create-a-standard-line-item.md).
+> To learn how to configure a line item, see [Create an Augmented Line Item](create-an-augmented-line-item-ali.md).
 
 ## To make changes to your network priorities settings
 
@@ -25,11 +25,11 @@ The **Network Priorities** screen (**Network** \>  **Tools** \> **Network Priori
 
 ## Next steps
 
-Now you can set minimum margin during [creation of a standard line item](create-a-standard-line-item.md), under **Tracking Revenue Type**. This effectively sets a bid cap on your campaigns. For your campaigns targeting direct inventory, you can also choose to do a minimum margin check as part of the [campaign creation](create-a-campaign.md) process to ensure they do not serve on publishers that are not profitable for your line items.
+You can set minimum margin during [creation of an augmented line item](create-an-augmented-line-item-ali.md), under **Tracking Revenue Type**. This effectively sets a bid cap on your campaigns. For your campaigns targeting direct inventory, you can also choose to do a minimum margin check as part of the [campaign creation](create-a-campaign.md) process to ensure they do not serve on publishers that are not profitable for your line items.
 
 ## Related topics
 
-- [Create a Standard Line Item](create-a-standard-line-item.md)
+- [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Create an Augmented Line Item](create-an-augmented-line-item-ali.md)
 - [Create a Campaign](create-a-campaign.md)
   (Standard Line Items only)

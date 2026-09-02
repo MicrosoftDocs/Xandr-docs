@@ -40,7 +40,7 @@ Create placement tags in our system and export them using the instructions in [E
 
 ### Before you begin campaign setup
 
-- **Prerequisite** - You have already created the line item under which you want to create your campaign. The line item defines your financial agreement with an advertiser, whereas the campaign specifies how to spend the money to make good on your agreement. See [Create a Standard Line Item](create-a-standard-line-item.md) for more details.
+- **Prerequisite** - You have already created the line item under which you want to create your campaign. The line item defines your financial agreement with an advertiser, whereas the campaign specifies how to spend the money to make good on your agreement. See [Create an Augmented Line Item](create-an-augmented-line-item-ali.md) for more details.
 - **Recommendations** - If you plan to target user segments and/or domain lists, make sure the relevant segments and domain lists have been created before you start campaign setup. See [Create a Segment Pixel](create-a-segment-pixel.md) and [Working with Targeting Lists](working-with-targeting-lists.md) for more details.
 
 ## Step 3. Set up your campaign (standard line items only)

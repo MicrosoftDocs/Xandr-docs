@@ -16,6 +16,8 @@
       href: breaking-changes.md
 - name: Microsoft Monetize Home Page
   href: home-page-microsoft-monetize.md
+- name: Microsoft Monetize Platform Categories
+  href: platform-categories.md
 - name: Copilot in Microsoft Monetize
   items:
   - name: Overview
@@ -1329,6 +1331,8 @@
     items:
     - name: Create a Simplified Deal Line Item
       href: create-a-simplified-deal-line-item.md 
+    - name: Deals Troubleshooting Guide
+      href: deals-troubleshooting-guide.md
     - name: Understanding Multi-Buyer Deals
       href: understanding-multi-buyer-deals.md
     - name: Set Up Multi-Buyer Deals

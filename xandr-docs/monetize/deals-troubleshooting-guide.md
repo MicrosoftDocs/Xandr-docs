@@ -5,7 +5,6 @@ ms.date: 09/01/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: v-garittar
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Deals troubleshooting guide

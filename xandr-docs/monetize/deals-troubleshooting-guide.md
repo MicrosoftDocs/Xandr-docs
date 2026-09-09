@@ -41,6 +41,8 @@ Before reviewing delivery or spend, confirm the deal is eligible to transact end
 
 Confirm that the deal has been synced with the buyer platform.
 
+Deal Sync Status is now available in the new Deal screen, providing sellers with visibility into whether a deal has successfully synchronized with supported DSPs, including Display & Video 360 (DV360) and The Trade Desk (TTD). For more information, see [Microsoft Monetize (January 14, 2026) Deal Sync Status available in the new Deal screen](release-notes-2026-01-14.md).
+
 > [!TIP]
 > Microsoft provides automated deal synchronization only for DV360 and The Trade Desk (TTD). These integrations use Microsoft's deal sync services to automatically synchronize deals between platforms.
 
@@ -58,7 +60,7 @@ Remember that some DSPs might still require manual creation of the deal from the
 Confirm that the deal acceptance status is “Accepted” or “Activated.” A “Pending” status indicates the deal is awaiting buyer acceptance.
 
 > [!TIP]
-> The acceptance status is only relevant for the DSPs Microsoft is syncing the deals with, for all the other DSPs the Acceptance Status is automatically set to “Accepted”.
+> Acceptance Status only applies to DSPs integrated with Microsoft's deal sync process. For all other DSPs, the status is automatically marked as “Accepted.”
 
 ### 2.4 Date range & flight dates
 
@@ -73,29 +75,23 @@ When evaluating deal delivery, the following deal metrics should be reviewed. Fi
 
 ### Relevant metrics from Deal Metrics Report
 
+**Troubleshooting approach:** Start at Imps Matched and move sequentially through each metric. The first metric showing a significant drop typically indicates where the delivery issue originates.
+
 #### 01. Imps Matched
 
 The number impressions eligible for the deal. This is calculated by looking at the available imps from the seller that match the targeting profile of the deal. This does not mean that these available impressions are sent to the buyer. Also called: available imps, avails, imps seen.
-
-- **Are there imps matched on the deal? (Yes / No / Low)**
 
 #### 02. Bid Requests
 
 Imps Matched that are sent to the buyer. Bid requests are controlled by the settings the bidder has on their bidder profile, which determines what supply they've instructed Microsoft/Xandr to send them. Also called: requests, imp requests, ad requests.
 
-- **Are there bid requests on the deal? (Yes / No / Low)**
-
 #### 03. Bids
 
 The number of bids the buyer sends in response to bid requests. Buyers only send bid responses if the bid request matches the targeting on their line item / campaign, whether on our platform or through a bidder. Also called: Bid responses.
 
-- **Are there bids on the deal? (Yes / No / Low)**
-
 #### 04. Imps Won (Sold)
 
 The number of bids that the buyer won the auction for. Buyers might not always win the impression because of external factors at play in the auction such as a competing bid (by price or priority), ad quality, or bidding below the auction floor. Also called: imps, imps sold.
-
-- **Are there imps won (sold) on the deal? Yes or No? Low?**
 
 #### 05. Ineligible Bids
 
@@ -111,9 +107,7 @@ Review the [Bid Error Report](seller-bid-error-report.md) to identify bids that 
 
 Refer to the [Bid Error Codes](../bidders/bid-error-codes.md) for additional guidance.
 
-- **Are there ineligible bids on the deal? (Yes / No / Low)**
-
-Answering these questions in sequence will help you determine the starting point for identifying the root cause of the issue: whether it lies with the seller object, the curator object, or the buyer object. It's crucial to pinpoint which of these steps is causing your deal to be stopped.
+Reviewing these metrics in sequence will help you determine the starting point for identifying the root cause of the issue: whether it lies with the seller object, the curator object, or the buyer object. It's crucial to pinpoint which of these steps is causing your deal to be stopped.
 
 > [!TIP]
 > To verify this, review the relevant columns in the [Monetize Deal Screen](deals-screen-in-microsoft-monetize.md) or access the [Seller Deal Metrics report](seller-deal-metrics.md) in Reporting.
@@ -287,7 +281,7 @@ Bugs or integration issues (e.g. sync failures, incorrect mapping) may require e
 >
 > The Bid Request Sampler provides sample bid request data under certain time frames and conditions. You can download results as a text file.
 >
-> Find more details here: [Microsoft Monetize - Sample Bid Requests](sample-bid-requests.md) / [Microsoft Curate - Sample Bid Requests](../curate/curate-sample-bid-requests.md).
+> Find more details here: [Microsoft Monetize - Sample Bid Requests](sample-bid-requests.md).
 
 ## Appendix B: External DSPs troubleshooting tools
 

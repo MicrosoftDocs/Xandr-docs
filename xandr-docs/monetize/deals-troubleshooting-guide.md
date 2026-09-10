@@ -277,7 +277,7 @@ Bugs or integration issues (e.g. sync failures, incorrect mapping) may require e
 > [!TIP]
 > **Bid Request Sampler**
 >
-> Alternatively, where possible, provide a sample bid request to the DSP buyer contact for further analysis. Supplying a sample bid request can assist the DSP’s technical support team in identifying why the buyer line item is unable to bid. The bid request can be captured in Monetize or Curate UI.
+> Alternatively, where possible, provide a sample bid request to the DSP buyer contact for further analysis. Supplying a sample bid request can assist the DSP’s technical support team in identifying why the buyer line item is unable to bid. The bid request can be captured in Monetize.
 >
 > The Bid Request Sampler provides sample bid request data under certain time frames and conditions. You can download results as a text file.
 >

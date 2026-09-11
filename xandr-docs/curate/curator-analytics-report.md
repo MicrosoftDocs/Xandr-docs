@@ -109,6 +109,8 @@ Select metrics are available for impressions bought through Microsoft Invest, wh
 | Curator Net Media Cost | The amount of spend a curator sends to exchange sellers, net of curator fees and margins, if applicable. This is the same as gross seller revenue, inclusive of seller rev share (SASC). |
 | Curator Margin | The profit a curator makes on a transaction.<br><br>**Note:** When taken as a percentage, Curator Margin is calculated based on Curator Revenue. |
 | Curator Total Cost | The amount of spend a curator sends to the exchange and exchange sellers, net of curator margin but gross of curator fees. |
+| Vendor Costs | The amount of data costs accumulated by using Data Marketplace segments. |
+| Incremental Curator Margin | The amount of additional margin optionally taken to cover vendor costs. |
 | Clicks | The total number of clicks across all impressions. For Invest DSP, clicks from all media types are supported. For external DSPs, only clicks from Native and Video media types are supported. |
 | CTR % | The proportion of Clicks versus Imps. |
 | Buyer CPC | Curator Revenue divided by Clicks. |

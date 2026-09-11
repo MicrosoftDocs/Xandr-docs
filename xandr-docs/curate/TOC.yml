@@ -106,7 +106,7 @@
     href: curated-deals.md
   - name: Deal Lists for Curated Deals
     href: deal-lists-for-curated-deals.md
-  - name: Create a simplified deal line item
+  - name: Create a Simplified Deal Line Item
     href: create-a-simplified-deal-line-item.md
   - name: Create a Curated Deal Line Item
     href: create-a-curated-deal-line-item.md
@@ -224,6 +224,8 @@
     href: political-advertising.md
 - name: Data
   items:
+  - name: First-Party Data
+    items:
     - name: Universal Pixel
       items:
         - name: Overview
@@ -296,6 +298,16 @@
               href: location-manager.md
             - name: Geo Radius Segments
               href: geo-radius-segments.md
+  - name: Third-Party Data
+    items:
+    - name: Data Marketplace
+      items:
+        - name: Overview
+          href: data-marketplace-overview.md
+        - name: Data Marketplace Partners
+          href: data-marketplace-partners.md
+        - name: Data Cost Calculation
+          href: data-cost-calculation.md
 - name: Monitoring
   items:
   - name: Overview
@@ -364,6 +376,8 @@
       href: buyer-deal-metrics.md
     - name: Curator Analytics Report
       href: curator-analytics-report.md
+    - name: Curator Vendor Usage Report
+      href: curator-vendor-usage-report.md
     - name: Curator Bid Error Report
       href: curator-bid-error-report.md
     - name: Curate Billing Report

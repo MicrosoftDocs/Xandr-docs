@@ -1,13 +1,13 @@
 ---
 title: Microsoft Curate - Create a Simplified Deal Line Item
 description: In this article, explore the process of creating a simplified deal line item, either from scratch or with a template.
-ms.date: 10/21/2025
+ms.date: 09/10/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate
 ms.author: shsrinivasan
 ---
 
-# Microsoft Curate - Create a simplified deal line item
+# Microsoft Curate - Create a Simplified Deal Line Item
 
 > [!NOTE]
 > This feature is currently in **Beta** and might undergo changes without notice. To enable this feature, contact your Microsoft Advertising Account Representative.
@@ -71,10 +71,11 @@ The **Deal Details** section offers a detailed overview of the key components th
     > [!NOTE]
     > You can now modify a **Fixed Price** even after saving the deal line item.
   - **Market Price**: Select this option to use yield management floors if they are available; if they are not available, no floors will be applied to the auction.
-- **Margin Type**: Curator margin types are configured on a [curated deal line item](create-a-curated-deal-line-item.md). There are two types of curated margins corresponding to the curated deal line item. For more information, see [Curated deal floors](curated-deal-floors.md).
+- **Margin Type**: Curator margin types are configured on a [curated deal line item](create-a-curated-deal-line-item.md). There are two types of curated margins corresponding to the curated deal line item. For more information, see [Curated deal floors](curated-deal-floors.md). Choose from the following options:
 
   - **Percentage**: The percentage of the buyer’s bid (Curator Revenue) which will be taken as curator margin.
   - **Cost per mille (CPM)**: A fixed minimum CPM deducted from the buyer’s bid which will be taken as curator margin.
+  - **Automatically increase margin to cover vendor costs**: If enabled, in each auction your margin will automatically be increased to cover the data cost you incurred from using any Data Marketplace segments. It can be used with either the percentage or CPM margin types. See [Data Marketplace Overview](../invest/data-marketplace-overview.md) for more details.
 - **Supply Strategy**: Shows which types of targeted inventory perform best for your line item.
   - **Open Exchange**: Allows you to curate the suppliers that sellers make available to buyers on the open exchange.
   - **Deals**: Allows you to select specific deals associated with your account in the **Targeting** section.
@@ -94,7 +95,7 @@ A deal line item has the following targeting options:
   - **Web**: To run on standard websites and those optimized for browsers on mobile devices.
   - **App**: To run applications installed on mobile tablets, phones, and Windows 8 devices.
 - **Allowlists and Blocklists**: Allow or block any domains and apps.
-- **Segment Targeting**: Set which first-party or third-party segments you wish to target. For more information, see [Segment Targeting](segment-targeting.md).
+- **Segment Targeting**: Set which first-party or third-party segments you wish to target, including those from the Data Marketplace. For more information, see [Segment Targeting](segment-targeting.md) and [Data Marketplace Overview](../invest/data-marketplace-overview.md).
 - **Cross-Device Targeting**: Enhances targeting and attribution using information from an identity graph, a customer information database that helps Microsoft Advertising identify users across multiple devices.
 - **Geography Targeting**: Target impressions based on the geographic location of the users viewing them. For more information, see [Geography Targeting](set-up-geography-targeting-for-a-line-item.md).
 <!-- - **Inventory Targeting**: Select **Edit (pencil icon)** to select the inventory you wish to target or exclude.

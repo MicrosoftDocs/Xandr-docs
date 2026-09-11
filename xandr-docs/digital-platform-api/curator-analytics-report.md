@@ -113,6 +113,8 @@ If you create Curator Analytics reports with the `report_interval` set to `"life
 | `curator_revenue` | money | `25.767257` | curator_revenue | The amount of spend a buyer sends to the curator, net of buyer fees, if applicable. This is the same as buyer media cost, exclusive of buyer fees. |
 | `curator_tech_fees` | money | `2.5767257` | curator_tech_fees | The fees Xandr charges to a curator on a transaction |
 | `curator_total_cost` | money | `23.1905313` | curator_revenue - curator_margin | The amount of spend a curator sends to the exchange and exchange sellers, net of curator margin but gross of curator fees |
+| `vendor_costs` | money | `1.23` | vendor_costs | The amount of data costs accumulated by using Data Marketplace segments. |
+| `incremental_curator_margin` | money | n/a | incremental_curator_margin | The amount of additional margin optionally taken to cover vendor costs. |
 | `imps` | int | `2340` | imps | The number of delivered impressions |
 | `viewdef_viewed_imps` | int | `1638` | viewdef_viewed_imps | The number of measured impressions that were viewable, per the buyer's viewability definition |
 | `viewdef_view_rate` | double | `0.70` | viewdef_view_rate | The number of measured impressions that were viewable, per the buyer's viewability definition, divided by the number of measured impressions |

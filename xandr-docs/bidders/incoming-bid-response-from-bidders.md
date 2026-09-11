@@ -1,7 +1,7 @@
 ---
 title: Incoming Bid Response from Bidder
 description: This article explains the process of implementing and receiving the bid response from bidder.
-ms.date: 10/21/2025
+ms.date: 09/22/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -43,6 +43,9 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 
 ### Bid object
 
+> [!NOTE]
+> Implement `burl` (billing notify URL) as the primary method for tracking impressions and spend. This helps minimize reporting discrepancies between Monetize and bidder reporting.
+
 | Field | Type | Description |
 |:---|:---|:---|
 | `cat`| string array | **NOTE:** Available September 2025. If your ad is political, you need to declare. See [Monetize Creative Standards](../monetize/creative-standards.md) for more details regarding required EU declaration beginning Fall 2025. <br> **Description:** IAB content categories of the creative. IAB Content Taxonomy v1.0 is assumed.|
@@ -50,6 +53,7 @@ Xandr supports the following fields in the `seatbid` object, each of which repre
 | `impid` | string | **Required**: The ID of the impression object to which this bid applies. Should match the `id` field from the bid request's impression object. Can be used to populate the `${AUCTION_IMP_ID}` macro. |
 | `price` | float | **Required**: The bid price expressed in CPM. Also used to populate the `${AUCTION_PRICE}` macro.<br><br>If the `bid_payment_type` is not set to `"Impression"`, then price will be the eCPM price for the bid, and the `payment_type_price` will be used to populate the `${{AUCTION_PRICE} macro.PRICE}` macro.<br><br>**Note**: `bid_payment_type` is not enabled for all clients. Reach out to your account representative for this feature.<br><br>**Warning**: Although this value is a float, OpenRTB strongly suggests using integer math for accounting to avoid rounding errors. |
 | `adid` | string | The Xandr creative ID, viewable via the API using the [Creative Service](./creative-service.md). This ID references the actual ad to be served if the bid wins. Can be used to populate the $`{AUCTION_AD_ID}` macro. If both `adid` and `crid` are passed, `adid` takes precedence. |
+| `burl` | string | The billing notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, which indicates that we won the auction. Responses will be sent server side. This occurs at the same time when we record the impression. The max length is 2000 characters with macros expanded.<br><br>The following macros are supported in the notify URL:<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the bid object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative<br>`${AN_PAYMENT_TYPE}` - ID of the payment type of bid specified in the `bid_payment_type` field of the bid response<br><br>**Note**:<br> - This field is not enabled for all clients. Please reach out to your account representative for this feature.<br> - Only the macros in the preceding list can be used in the notify URL, no other macros are supported in the bid response. |
 | `nurl` | string | The win notify URL, which is dropped as a pixel into the web browser or SDK. Our server pings this URL when it receives a client-side notification from the device, which indicates that we won the auction. Responses will be sent server side. This occurs at the same time when we record the impression. The max length is 2000 characters with macros expanded.<br><br>The following macros are supported in the notify URL:<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the bid object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_PRICE}` - Clearing price of the impression in the currency specified in the `cur` field in the bid response<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cur` field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative<br>`${AN_PAYMENT_TYPE}` - ID of the payment type of bid specified in the `bid_payment_type` field of the bid response<br><br>**Note**: <br> - This macro is not enabled for all clients. Please reach out to your account representative for this feature.<br> - Only the macros in the preceding list can be used in the notify URL, no other macros are supported in the bid response. |
 | `lurl` | string | **Warning**: This feature is currently in closed beta testing and is not available to all bidder integrations. If you would like to use this field in the bid response, please reach out to your account representative or file a support ticket at [Microsoft Advertising Customer Support Portal](https://support.ads.microsoft.com).<br><br>Loss notice URL called by Xandr when a bid is known to have been lost. Substitution macros may be included. Responses will be sent server side.<br><br>The following macros are supported in the loss notice URL.<br>`${AUCTION_ID}` - Xandr `auction_id_64`<br>`${AUCTION_BID_ID}` - ID of the bid specified in the `bidid` field in the bid response<br>`${AUCTION_IMP_ID}` - ID of the impression, from the `impid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_SEAT_ID}` - ID of the winning seat, from the `seat` field in the `seatbid` object<br>`${AUCTION_AD_ID}` - ID of the buyer's creative, from the `adid` field in the `bid` object of the `seatbid` object<br>`${AUCTION_LOSS}` - Loss reason codes. For the full list of supported loss reason codes, see [Loss Reason Codes](./loss-reason-codes.md).<br>`${AUCTION_CURRENCY}` - Currency of the clearing price, as specified in the `cu`r field in the bid response<br>`${CREATIVE_CODE}` - The `code` field set on the `creative` object via the API when registering a creative.<br>`${AUCTION_MIN_TO_WIN}` - The lowest bid required to win the exchange’s auction, expressed in the same currency and units as the original bid. This feature requires separate enablement, contact your account representative or submit a support ticket if you're interested. |
 | `crid` | string | The creative ID from the bidder's system. Used to reference a Xander creative based on the creative code as set via the [Creative Service](./creative-service.md). If both `adid` and `crid` are passed, `adid` takes precedence. |
@@ -149,13 +153,6 @@ Xandr supports the following fields in the `bid_payment_type` object of the `app
 | `price` | double | Specifies the bid price for the payment type. For the `'Viewable Impression'` payment type, the bid price will be vCPM. |
 
 For more information, check the [Overview](./guaranteed-outcomes.md) page.
-
-> [!NOTE]
-> **Why we don't support the `adm` field?**
->
-> Xandr works with members who care deeply about brand and reputation. For this reason, we are careful to ensure that the advertisements (creatives) that pass through our system are acceptable to all parties. For quality assurance, all creatives that serve on third-party inventory must be pre-registered using the [Creative Service](./creative-service.md).
->
-> For these reasons, Xandr does not support the `adm` field (which allows bidders to pass in the actual ad markup). Instead, we construct the ad markup using the provided `adid` and `nurl` for win notification.
 
 ## Example for bid response
 
@@ -307,7 +304,7 @@ Multi-bid response for multiple seat values
 
 ## Win notification
 
-For more information, see the definition of the `nurl` field above.
+For more information, see the definitions of the `burl` and `nurl` fields above.
 
 > [!NOTE]
 > In certain auction types, a lost or pending notification may be generated prior to the win notification. Win notifications are always authoritative and override any other notifications previously received for that auction.

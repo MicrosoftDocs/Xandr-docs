@@ -1,7 +1,7 @@
 ---
 title: Integrate a Bidder
 description: This article provides instructions to integrate a bidder with Xandr.
-ms.date: 10/21/2025
+ms.date: 09/22/2026
 ms.service: publisher-monetization
 ms.subservice: bidder
 ms.author: shsrinivasan
@@ -9,7 +9,7 @@ ms.author: shsrinivasan
 
 # Integrate a bidder
 
-This page describes how to integrate a bidder with Xandr. It begins with an overview of the different "layers" of the integration, and ends with a worked example (using actual API calls) of a simple integration that will get you up and running quickly in our testing environment. It also provides links to more detailed information elsewhere on our Wiki.
+This page describes how to integrate a bidder with Xandr. It begins with an overview of the different "layers" of the integration, and ends with a worked example (using actual API calls) of a simple integration that will get you up and running quickly. It also provides links to more detailed information elsewhere on our Wiki.
 
 ## System overview
 
@@ -72,13 +72,11 @@ In this section we'll walk through the entire process of setting up a bidder on 
 > [!TIP]
 > **APIs**
 >
-> Most client testing is done in our production APIs. We also have a testing environment API which allows for testing of your object creation and updating workflows.
->
-> Most of the examples calls below are done in the production API environment.
+> The example calls below use the production API environment.
 
 ## Authenticate with the API
 
-Before we can do anything else, we have to log in. Below is an example of the authentication json you can use. The authentication process for our production and testing environment is the same. The only difference is the endpoint.
+Before we can do anything else, we have to log in. Below is an example of the authentication JSON you can use.
 
 > [!TIP]
 > For more detailed information about authenticating via our API, see the [Authentication Service](./authentication-service.md).
@@ -108,18 +106,6 @@ $ curl -b cookies -c cookies -X POST -d @auth.json $IB/auth
         
 { response": { "status": "OK", ... } }
         
-      
-```
-
-Similarly, post to the test environment to authenticate:
-
-### Example auth call in testing API
-
-```
-$ export IB_TESTING="https://api-test.adnxs.com";
-$ curl -b cookies -c cookies -X POST -d @auth.json $IB_TESTING/auth
-        
-{ response": { "status": "OK", ... } }
       
 ```
 
@@ -415,8 +401,6 @@ In this step, we'll add a creative. After we upload this creative, you will need
 > For some tips on getting your creative set up, see our [Quick Start Creative Buying Guide](quick-start-creative-buying-guide.md).
 
 - This example shows a (very) old fashioned car design using the content field of the creative object. It uses our standard banner raw-html template.
-- For more information on using the Client Testing environment to test the uploading of creatives, see [Using the Client Testing environment](#using-the-client-testing-environment) below.
-
 > [!NOTE]
 > **Statuses**
 >
@@ -652,6 +636,8 @@ $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/12
 
   > [!NOTE]
   > Since you are integrating with buyer seat ID, the seatbid.seat field should be your own internal IDs.
+  >
+  > Implement `burl` (billing notify URL) as the primary method for tracking impressions and spend. This helps minimize reporting discrepancies between Monetize and bidder reporting.
 
 - If you require an example of a bid request to use, your Xandr representative should be able to provide you with one. The supported bid request fields with examples can be found [here](./outgoing-bid-request-to-bidders.md).
 
@@ -694,17 +680,9 @@ $ curl -b cookies -X POST -d @create-bidder-instance.json $IB/bidder-instance/12
     - `ssl_status`: this field indicates if the creative has passed our automates SSL scanner.
     - `is_prohibited`: this field indicates if the creative has violated one of our policies.
   - Adjusts the creatives to correct any issues, as needed, based on the status fields.
-- You can use our client testing environment to test your upload workflows.
-  - Creatives submitted to our client testing environment are not audited. Please coordinate with your Xandr Integrations Engineer to test your creatives.
 - Your creative submission workflows can be worked on in parallel with bid stream testing.
 
 If you are still not seeing the bid requests you expect, double-check your configuration against the instructions on this page. Contact your Xandr representative if the problem persists.
-
-## Using the client testing environment
-
-The Client Testing environment provides a version of the Impbus and Impbus API that you can use to test your workflows and API implementations. The Client Testing environment's codebase and data are now updated every month. This means your testing environment will never be more than 30 days (and often less) behind the version of Xandr code that is running in Production. In addition, all Production data will also automatically be copied over to the Client Testing environment (including your member accounts and credentials) each month. This will allow far more robust testing against the latest features.
-
-For reference, here are the endpoints for the Production and Client Testing environments.
 
 ## Example updates
 

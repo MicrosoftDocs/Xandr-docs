@@ -1,7 +1,7 @@
 ---
 title: Curated Deal Line Item API Setup Guide
 description: Learn the process of setting up an API implementation of a curated deal line item to target a deal.
-ms.date: 2/18/2026
+ms.date: 09/10/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -440,48 +440,8 @@ To create a curated deal line item, do the following (see [Line Item Service](
                     "profile_id": 113067333,
                     "valuation": {
                             "min_revenue_value": 10
-                    }
-            }
-    }
-    ```
-
-    **Example JSON: Curated deal line item daily revenue budget**
-
-    ```
-    > cat curated_deal_line_item_daily.json
-    {
-            "line-item": {
-                    "ad_types": ["video"],
-                    "auction_event": {
-                            "kpi_auction_type_id": 1,
-                            "payment_auction_type_id": 1,
-                            "revenue_auction_type_id": 1
                     },
-                    "budget_intervals": [{
-                            "daily_budget_imps": 270,
-                            "end_date": "2019-10-18 23:59:59",
-                            "start_date": "2019-10-11 12:00:00",
-                            "timezone": "US/Pacific"
-                    }],
-                    "deals": [{
-                            "id": 618159
-                    }],
-                    "insertion_orders": [{
-                            "id": 1363850
-                    }],
-                    "line_item_subtype": "standard_curated",
-                    "name": "Curated Deal Line Item Example Line Item",
-                    "revenue_type": "vcpm",
-                    "revenue_value": null,
-                    "supply_strategies": {
-                            "managed": true,
-                            "deals": true,
-                            "rtb": false
-                    },
-                    "profile_id": 113067333,
-                    "valuation": {
-                            "min_revenue_value": 10
-                    }
+                    "increment_margin_for_costs": true
             }
     }
     ```
@@ -519,6 +479,7 @@ To create a curated deal line item, do the following (see [Line Item Service](
 | `revenue_type` |  enum | `cpm` for Fixed Price (CPM) deal, `vcpm` for Standard Price (Dynamic CPM) deal. |
 | `revenue_value` |  double | If you set the `revenue_type` to `cpm` (Fixed), set the fixed price using `revenue_value`. If you're using Standard, set this value to `null`. |
 | `valuation` | object | For curated deals, use the following valuation object fields:<br> - `min_revenue_value` <br> - If you set the `revenue_type` to `vcpm` (Standard), set the floor price in `min_revenue_value`.<br> - If you set the `revenue_type` to `cpm` (Fixed), set the value of `min_revenue_value` to `null`. <br><br> - `min_margin_cpm` - Set the margin value in `min_margin_cpm` when using CPM as a margin type.<br><br> - `min_margin_pct` - Set the margin value in `min_margin_pct` when using percentage as a margin type.<br><br>**Note**: The `min_margin_cpm` and `min_margin_pct` fields cannot both be set at the same time. If one is set, the other must be `null`.  |
+| `increment_margin_for_costs` | boolean | If your curated deal is targeting Data Marketplace segments and this setting is `true`, at auction time the margin you take will automatically be increased to cover the data costs you incurred.<br><br>If `false`, your margin won't automatically be adjusted to cover data costs.<br><br>This setting can be `true` even if you are not using Data Marketplace segments on your curated deal. |
 | `auction_event` | object | Object for auction event type properties: The `kpi_auction_type_id`, `payment_auction_type_id`, and `revenue_auction_type_id` fields of the auction_event object must all be set to `1`. |
 
 ##### Note for `line_item_subtype` field

@@ -35,8 +35,8 @@ Connect to the endpoint that matches your Microsoft Monetize/Curate seat.
 
 | Platform | MCP URL |
 |---|---|
-| Microsoft Monetize | `https://monetize.Microsoft Monetize/Curate MCP.com/mcp` |
-| Microsoft Curate | `https://curate.Microsoft Monetize/Curate MCP.com/mcp` |
+| Microsoft Monetize | `https://monetize.xandr.com/mcp` |
+| Microsoft Curate | `https://curate.xandr.com/mcp` |
 
 Authentication uses your Microsoft identity. You don't need separate Microsoft Monetize/Curate API credentials.
 

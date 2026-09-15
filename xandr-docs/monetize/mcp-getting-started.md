@@ -1,24 +1,24 @@
 ---
-title: Xandr MCP – Getting started
-description: In this article, learn about Xandr MCP
+title: Microsoft Monetize/Curate MCP – Getting started
+description: In this article, learn about Microsoft Monetize/Curate MCP
 ms.date: 8/19/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
-author: v-garittar
+author: rgaritta
 ms.author: v-garittar
 ---
 
-# Xandr MCP – Getting started
+# Microsoft Monetize/Curate MCP – Getting started
 
-## Connect an AI assistant to the Xandr MCP Server for Microsoft Monetize or Microsoft Curate
+## Connect an AI assistant to the Microsoft Monetize/Curate MCP Server for Microsoft Monetize or Microsoft Curate
 
-The Xandr MCP Server lets you query your Microsoft Monetize or Microsoft Curate platform data using plain language from an MCP-compatible AI assistant. Instead of navigating the UI or writing API calls, you can ask for reports, search for objects, inspect configurations, and review change history from your AI client.
+The Microsoft Monetize/Curate MCP Server lets you query your Microsoft Monetize or Microsoft Curate platform data using plain language from an MCP-compatible AI assistant. Instead of navigating the UI or writing API calls, you can ask for reports, search for objects, inspect configurations, and review change history from your AI client.
 
-The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, Curate deal plans, or other objects through the Xandr MCP Server.
+The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, Curate deal plans, or other objects through the Microsoft Monetize/Curate MCP Server.
 
-## What you can do with the Xandr MCP Server
+## What you can do with the Microsoft Monetize/Curate MCP Server
 
-The Xandr MCP Server supports read-only access to platform data for Microsoft Monetize and Microsoft Curate. The tools, reports, and objects available to you depend on the endpoint you connect to and the permissions associated with your Xandr seat.
+The Microsoft Monetize/Curate MCP Server supports read-only access to platform data for Microsoft Monetize and Microsoft Curate. The tools, reports, and objects available to you depend on the endpoint you connect to and the permissions associated with your Microsoft Monetize/Curate seat.
 
 | Capability | What you can ask | Microsoft Monetize | Microsoft Curate |
 |---|---|---:|---:|
@@ -33,22 +33,22 @@ The Xandr MCP Server supports read-only access to platform data for Microsoft Mo
 
 ## Choose the right endpoint
 
-Connect to the endpoint that matches your Xandr seat.
+Connect to the endpoint that matches your Microsoft Monetize/Curate seat.
 
 | Platform | MCP URL |
 |---|---|
-| Microsoft Monetize | `https://monetize.xandr.com/mcp` |
-| Microsoft Curate | `https://curate.xandr.com/mcp](https://curate.xandr.com/mcp` |
+| Microsoft Monetize | `https://monetize.Microsoft Monetize/Curate MCP.com/mcp` |
+| Microsoft Curate | `https://curate.Microsoft Monetize/Curate MCP.com/mcp` |
 
-Authentication uses your Microsoft identity. You don't need separate Xandr API credentials.
+Authentication uses your Microsoft identity. You don't need separate Microsoft Monetize/Curate API credentials.
 
 ## Prerequisites
 
 Before you connect your AI assistant, make sure you have:
 
-- An active Xandr account on Microsoft Monetize or Microsoft Curate.
+- An active account on Microsoft Monetize or Microsoft Curate.
 - Alpha access granted by your account team.
-- A Microsoft Entra ID identity with access to your Xandr member seat.
+- A Microsoft Entra ID identity with access to your Microsoft Monetize/Curate member seat.
 - An MCP-compatible AI assistant, such as VS Code, Claude Code, or MCP Inspector.
 - The ability to add an MCP server configuration, such as `mcp.json` or an equivalent configuration file.
 
@@ -100,7 +100,7 @@ No SDK installation, local server, or API key setup is required. Authentication 
 
 ## Test with MCP Inspector
 
-Use MCP Inspector for ad hoc testing before you integrate the Xandr MCP Server with an AI client.
+Use MCP Inspector for ad hoc testing before you integrate the Microsoft Monetize/Curate MCP Server with an AI client.
 
 1. Run this command in a terminal:
 
@@ -123,7 +123,7 @@ If your client returns data, the connection is working correctly.
 
 ## Run reports effectively
 
-The Xandr MCP Server gives you access to more than 100 metrics and dimensions. Before you run a report, ask your AI assistant to list available report types or describe the columns available for a report.
+The Microsoft Monetize/Curate MCP Server gives you access to more than 100 metrics and dimensions. Before you run a report, ask your AI assistant to list available report types or describe the columns available for a report.
 
 This helps avoid validation errors because report types, metrics, dimensions, columns, filters, and time ranges can vary by platform and account configuration.
 
@@ -173,7 +173,7 @@ Change history is available for major object types and includes field-level deta
 
 ## Understand the object hierarchy
 
-Understanding how Xandr objects relate to each other can help you ask clearer questions and interpret results.
+Understanding how objects relate to each other can help you ask clearer questions and interpret results.
 
 ### Buy-side hierarchy
 
@@ -203,7 +203,7 @@ Member
 
 ## Use effective tool patterns
 
-The Xandr MCP Server organizes tools into reusable patterns. You don't need to call these tools directly unless your AI client exposes them, but understanding the patterns can help you ask better questions.
+The Microsoft Monetize/Curate MCP Server organizes tools into reusable patterns. You don't need to call these tools directly unless your AI client exposes them, but understanding the patterns can help you ask better questions.
 
 ### Discover, then run reports
 
@@ -295,7 +295,7 @@ The alpha release surfaces your existing platform data and respects the same per
 
 The following actions aren't available in this release:
 
-- Creating or modifying objects through the Xandr MCP Server.
+- Creating or modifying objects through the Microsoft Monetize/Curate MCP Server.
 - Creating or editing deals, line items, advertisers, or other objects.
 - Creating or modifying Microsoft Curate deal plans.
 
@@ -307,15 +307,15 @@ Alpha access is by invitation only. Contact your account team to request access.
 
 ### Can I create or edit deals and line items through my AI assistant?
 
-No. The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, or other objects through the Xandr MCP Server.
+No. The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, or other objects through the Microsoft Monetize/Curate MCP Server.
 
-### Do I need separate Xandr API credentials?
+### Do I need separate Microsoft Monetize/Curate API credentials?
 
-No. Authentication uses your Microsoft identity. You don't need separate Xandr API credentials.
+No. Authentication uses your Microsoft identity. You don't need separate Microsoft Monetize/Curate API credentials.
 
 ### Which endpoint should I use?
 
-Use the endpoint that matches your Xandr seat:
+Use the endpoint that matches your Microsoft Monetize/Curate seat:
 
 - Microsoft Monetize: `https://monetize.xandr.com/mcp`
 - Microsoft Curate: `https://curate.xandr.com/mcp](https://curate.xandr.com/mcp`
@@ -324,7 +324,7 @@ Use the endpoint that matches your Xandr seat:
 
 Report types and available columns vary by platform and account configuration. Before you run a report, ask your AI assistant to list available report types or describe the report you want to run.
 
-### Does the Xandr MCP Server respect my existing permissions?
+### Does the Microsoft Monetize/Curate MCP Server respect my existing permissions?
 
 Yes. The server surfaces existing platform data and respects the same permissions, roles, and reporting capabilities your account already has.
 

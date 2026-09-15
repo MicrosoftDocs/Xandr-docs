@@ -14,6 +14,8 @@
     items:
     - name: Overview
       href: breaking-changes.md
+  - name:  Microsoft Monetize/Curate MCP
+    href: mcp-getting-started.md
 - name: Microsoft Monetize Home Page
   href: home-page-microsoft-monetize.md
 - name: Microsoft Monetize Platform Categories

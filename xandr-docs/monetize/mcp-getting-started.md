@@ -10,8 +10,6 @@ ms.author: v-garittar
 
 # Microsoft Monetize/Curate MCP – Getting started
 
-## Connect an AI assistant to the Microsoft Monetize/Curate MCP Server for Microsoft Monetize or Microsoft Curate
-
 The Microsoft Monetize/Curate MCP Server lets you query your Microsoft Monetize or Microsoft Curate platform data using plain language from an MCP-compatible AI assistant. Instead of navigating the UI or writing API calls, you can ask for reports, search for objects, inspect configurations, and review change history from your AI client.
 
 The alpha release is read-only. You can search, inspect, and report on existing data, but you can't create or edit deals, line items, advertisers, Curate deal plans, or other objects through the Microsoft Monetize/Curate MCP Server.

@@ -1,7 +1,7 @@
 ---
 title: Third Party Providers
 description: Learn about list of Third Party Providers, Ad-server Partners, Bidder Partners and User Sync Providers. 
-ms.date: 10/22/2025
+ms.date: 09/17/2026
 ms.service: publisher-monetization
 ms.subservice: policies-regulation
 ms.author: shsrinivasan
@@ -19,10 +19,10 @@ Xandr’s technology. Individuals and customers
 may share such information with these partners using
 Xandr technology depending on their specific
 circumstances, settings and controls in place. If you would like to
-opt-out or exercise other privacy rights, please visit [https://privacycenter.xandr.com](https://monetize.xandr.com/privacy-center/).
+opt-out or exercise other privacy rights, please visit the [Microsoft privacy dashboard](https://account.microsoft.com/privacy/).
 
 ## Ad-server partners
-|  |  |  |  |  |
+| Partner 1 | Partner 2 | Partner 3 | Partner 4 | Partner 5 |
 |---|---|---|---|---|
 | [24]7.ai (successor to EngageClick) | 1-2-3.Tv Gmbh | 12M Limited | 1Blu Ag | 1trn |
 | 21 Productions | 22-Visions | 24-Ads Gmbh | 2KDirect Inc. | 2Mobile Digital |
@@ -379,7 +379,7 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 
 ## Bidder partners
 
-|  |  |  |  |  |
+| Partner 1 | Partner 2 | Partner 3 | Partner 4 | Partner 5 |
 |---|---|---|---|---|
 | 4Info, Inc. | A.Mob | Accordant Media, LLC | Accordant Media, LLC - 2 | Active Agent |
 | AcuityAds | Addictive Mobility | AdElement, Inc. | Adello Group AG | Adelphic |
@@ -409,22 +409,21 @@ opt-out or exercise other privacy rights, please visit [https://privacycenter.xa
 
 ## Data provider's partners
 
-|  |  |  |  |  |
+| Partner 1 | Partner 2 | Partner 3 | Partner 4 | Partner 5 |
 |---|---|---|---|---|
-| AdDaptive Intelligence, Inc. | AdLede (Data Provider) | Adserver Test (Data Provider) | adsquare GmbH | Amnet UK (Data Provider) |
+| AdDaptive Intelligence, Inc. | Experian | Adserver Test (Data Provider) | adsquare GmbH | Amnet UK (Data Provider) |
 | apd_scylla | Beemray OY (Data Provider) | Bering Data Provider | Buzzlogic | Civolution B.V. (Data Provider) |
-| Cross Pixel Media Inc. (Data Provider) | DatMean (Data Provider) | digiseg apn gateway | DoubleVerify | El Toro (Data Provider) |
-| Emetriq GmbH RT (Data Provider) | Factual Inc (Data Provider) | Forensiq, LLC | - | GUM GUM Inc (Data Provider) |
-| Integral Ad Science | Integral Ad Science (Data Provider 2) | Media IQ Digital Ltd | Meetrics GmbH | Mindlytix SAS |
-| Mobile Listening Bidder | Nano Interactive GmbH (Data Provider) | NetSeer, Inc. (Data Provider) | PageScience (Data Provider) | Peer39 |
-| Platform Integrations Test RTDP (Data Provider) | PLAYGROUND XYZ (Data Provider) | Proximic | Qwarry (Data Provider) | Samba RDP |
+| DatMean (Data Provider) | digiseg apn gateway | DoubleVerify | El Toro (Data Provider) | Emetriq GmbH RT (Data Provider) |
+| Factual Inc (Data Provider) | Forensiq, LLC | - | GUM GUM Inc (Data Provider) | Media IQ Digital Ltd |
+| Meetrics GmbH | Mindlytix SAS | Mobile Listening Bidder | Nano Interactive GmbH (Data Provider) | NetSeer, Inc. (Data Provider) |
+| PageScience (Data Provider) | Peer39 | Platform Integrations Test RTDP (Data Provider) | Proximic | Samba RDP |
 | Schibsted | Seedtag Advertising SL (Data Provider) | Semasio GmbH (Data Provider) | Semcasting | Silver Bullet Media Services (Data Provider) |
 | Sirdata SAS (Data Provider) | Spiketrap Contextual Data Provider | test-1 | Test1Bdr | Test2 |
 | The Weather Channel, LLC (Data Provider) | TradeLab (Data Provider) | TradeLab2 | Vibrant Media Inc. (Data Provider) | whiteBULLET Solutions Ltd. (Data Provider) |
 
 ## User sync providers
 
-|  |  |  |  |  |
+| Partner 1 | Partner 2 | Partner 3 | Partner 4 | Partner 5 |
 |---|---|---|---|---|
 | A.Mob | A9.com | Accordant Media - Bidder | Accordant Media, LLC - 2 | Acuity Ads |
 | AdAdvisor by Neustar | Adelphic, Inc. | AdForm | AdForm A/S | AdGear Technologies Inc. |

@@ -1,397 +1,463 @@
 ---
-title: Show Native Ads on Android
-description: Native ads give you the ability to create ads that are customized to match the look and feel of the rest of your application. This page describes our Native Ads API at a high level with usage examples.
+title: Show native ads on Android
+description: Learn how to request, render, track, and release native ads in an Android app.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 09/21/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
-
 
 # Show native ads on Android
 
-> [!NOTE]
-> Native impression counting methodology follows the count-on-render methodology that is used for banner creatives - an impression will fire as soon as the native advertisement renders, regardless of its length of time on the screen. This will ensure greater accuracy and better deliverability thus improving overall yield.
+This article describes how to use `NativeAdRequest` and `NativeAdResponse` to show native ads in your Android app.
 
-Native ads give you the ability to create ads that are customized to match the look and feel of the rest of your application. This page describes our Native Ads API at a high level, and includes a usage example.
+## Overview
 
-Native networks supported through **mediation**:
+Native ads let you render ad assets in views that match your app's design. To support this workflow, the Android SDK exposes the following classes, interfaces, and methods:
 
-- Facebook
-- AdMob and DFP
+- `NativeAdRequest` loads an ad for a placement, and `NativeAdRequestListener` receives the result.
+- `NativeAdResponse` provides the native assets returned by a successful request.
+- `NativeAdSDK.registerTracking()` associates the rendered container with the response, while `NativeAdEventListener` receives impression and click events.
 
-In order to serve native ads, you will send a native ad request, and receive a native ad response. For Android 9 and above and API v. 28 and above, the request must be HTTPS by default in order to accurately track viewability. You can enable HTTPS with `useHttps(true)`.
+In the standard SDK flow, create and load a request, render the assets from the response, and then register the container for tracking.
 
-In the example code below, we:
+- Keep references to the request, response, and container while the ad is displayed.
+- Unregister the container before reusing it for another native ad and when the view is destroyed.
 
-- Set up a request object and supply it with either:
-  - The placement ID (as shown in the example code below), OR
-
-  - A combination of inventory code and member ID:
-
-    ``` 
-    public NativeAdRequest nativeAdRequest= new NativeAdRequest(context, "PLACEMENT_ID");
-    //public NativeAdRequest nativeAdRequest= new NativeAdRequest(context, "INVENTORY_CODE", MEMBER_ID);
-    ```
-
-- Optionally, you can set the `renderer_id`  for this `NativeAdRequest`. (For more on `renderer_id` see [Native Layout Service](../digital-platform-api/native-layout-service.md).) The `renderer_id` needs to be specified in order for vastxml, likes, downloads, saleprice, phone, address, and display URL to be returned in the `NativeAdResponse`.  
-
-  ``` 
-  nativeAdRequest.setRendererId(RENDERER_ID);
-  ```
-
-- Register a listener that will signal native ad events such as clicks (NativeAdEventListener).
-
-- Register a listener to signal the state of the native request: success or failure. The listener must implement the `NativeAdRequestListener` interface.
-
-- If the request is successful (i.e., `NativeAdListener.onAdLoaded()` fires), native ad assets are loaded in the `NativeAdResponse` object which can be used in views that match the native look of the app. Then register the parent or container view of these views to enable impression and click tracking.
-
-- Unregister the native ad view after you have completed the workflow. When the unregister method is called, OMID viewability script of Xandr Mobile SDK generates a bulk report of the OMID session during the worflow. Therefore, it is important for the publishers to implement this API which facilitates an accurate measure on the viewability.
+To customize the assets returned in a native ad response, see [Request specific assets with OpenRTB Native](#request-specific-assets-with-openrtb-native) or [Request specific assets with Native Assembly](#request-specific-assets-with-native-assembly).
 
 > [!NOTE]
-> Maintain references to native views and native response objects. Maintain references to native views and native response objects.
->
-> It is your responsibility to keep a reference to the native ad view and `NativeAdResponse` object if necessary.
+> For information about native impression counting, see [Impression counting methods](impression-counting-methods.md).
 
-``` 
-public class MyActivity extends Activity {
- 
-    Context activityContext;
-    NativeAdResponse nativeAdResponse;
-    LinearLayout container;
- 
+## Request a native ad
+
+Use the following methods on `NativeAdRequest`:
+
+| Method | Description |
+|:---|:---|
+| `NativeAdRequest(Context context, String placementId)` | Creates a native ad request for a placement ID. |
+| `void setListener(NativeAdRequestListener listener)` | Sets the listener that receives the request result. |
+| `void loadAd()` | Loads one native ad. |
+
+## Access standard native response data
+
+To use the standard native flow, load a `NativeAdRequest` without calling `setOpenRTBAssets()`. `NativeAdResponse` contains the assets and related metadata available for the selected ad.
+
+Use the following methods on `NativeAdResponse`:
+
+| Asset | Method | Default | Description |
+|:---|:---|:---|:---|
+| Title | `getTitle()` | Empty string | Returns the ad title. |
+| Sponsored by | `getSponsoredBy()` | Empty string | Returns the advertiser or sponsor name. |
+| Body text | `getDescription()` | Empty string | Returns the primary ad description. |
+| Additional description | `getAdditionalDescription()` | Empty string | Returns the additional ad description. |
+| Call to action | `getCallToAction()` | Empty string | Returns text for the call-to-action control. |
+| Main image URL | `getImageUrl()` | Empty string | Returns the URL for loading the main image. |
+| Main image size | `getImageSize()` | Width and height are `-1` | Returns the main image dimensions. |
+| Main image | `getImage()` | `null` | Returns the preloaded main image. See [Configure image loading](#configure-image-loading). |
+| Icon image URL | `getIconUrl()` | Empty string | Returns the URL for loading the icon image. |
+| Icon image size | `getIconSize()` | Width and height are `-1` | Returns the icon image dimensions. |
+| Icon image | `getIcon()` | `null` | Returns the preloaded icon image. See [Configure image loading](#configure-image-loading). |
+| Rating | `getAdStarRating()` | `null` | Returns the rating value and scale for the advertised product or app. |
+| Privacy URL | `getPrivacyLink()` | Empty string | Returns the privacy information URL supplied for the ad, when available. |
+
+## Register tracking
+
+After rendering the assets from `NativeAdResponse`, use `NativeAdSDK` to register the container for impression and click tracking:
+
+| Method | Description |
+|:---|:---|
+| <code>void registerTracking(<wbr>NativeAdResponse response, <wbr>View container, <wbr>NativeAdEventListener listener)</code> | Registers the rendered container for impression tracking and makes the container clickable. |
+| <code>void registerTracking(<wbr>NativeAdResponse response, <wbr>View container, <wbr>List&lt;View&gt; clickableViews, <wbr>NativeAdEventListener listener)</code> | Registers the rendered container for impression tracking and makes the listed views clickable. |
+| <code>void registerTracking(<wbr>NativeAdResponse response, <wbr>View container, <wbr>NativeAdEventListener listener, <wbr>List&lt;View&gt; friendlyObstructions)</code> | Registers tracking with friendly obstructions. |
+| <code>void registerTracking(<wbr>NativeAdResponse response, <wbr>View container, <wbr>List&lt;View&gt; clickableViews, <wbr>NativeAdEventListener listener, <wbr>List&lt;View&gt; friendlyObstructions)</code> | Registers tracking with specific clickable views and friendly obstructions. |
+| `void unRegisterTracking(View container)` | Stops tracking the registered container and completes its viewability session. |
+
+For information about registering friendly obstructions, see [Viewability measurement on Android](viewability-measurement-on-android.md).
+
+## Example
+
+### [Kotlin](#tab/kotlin1)
+
+```kotlin
+class NativeAdActivity : AppCompatActivity(), NativeAdRequestListener, NativeAdEventListener {
+    private lateinit var nativeAdRequest: NativeAdRequest
+    private var nativeAdResponse: NativeAdResponse? = null
+    private lateinit var nativeContainer: View
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_native)
+
+        nativeContainer = findViewById(R.id.native_ad_container)
+        nativeAdRequest = NativeAdRequest(this, "123456") // Create a request for the placement ID
+        nativeAdRequest.listener = this // Set the request listener
+        nativeAdRequest.loadAd() // Load the ad
+    }
+
+    override fun onAdLoaded(response: NativeAdResponse) {
+        nativeAdResponse = response
+        val mainImageUrl = response.imageUrl // Pass the main image URL to your app's image-loading implementation
+        val iconImageUrl = response.iconUrl // Pass the icon image URL to your app's image-loading implementation
+        findViewById<TextView>(R.id.native_ad_title).text = response.title // Render the title
+        findViewById<TextView>(R.id.native_ad_sponsored_by).text = response.sponsoredBy // Render the sponsor name
+        findViewById<TextView>(R.id.native_ad_body).text = response.description // Render the body text
+        response.adStarRating?.let { rating ->
+            findViewById<TextView>(R.id.native_ad_rating).text = "${rating.value}/${rating.scale}" // Render the rating
+        }
+        val privacyUrl = response.privacyLink // Get the privacy URL
+        val callToActionButton = findViewById<Button>(R.id.native_ad_call_to_action)
+        callToActionButton.text = response.callToAction // Render the call-to-action text
+
+        NativeAdSDK.unRegisterTracking(nativeContainer) // Stop tracking any previous ad in the container
+        NativeAdSDK.registerTracking(
+            response,
+            nativeContainer,
+            listOf(callToActionButton),
+            this
+        ) // Track impressions and CTA clicks
+        nativeContainer.visibility = View.VISIBLE
+    }
+
+    override fun onAdFailed(errorCode: ResultCode, adResponseInfo: ANAdResponseInfo?) {
+        Log.e("NativeAdActivity", "Native ad failed to load: ${errorCode.message}")
+    }
+
+    override fun onAdImpression() = Unit
+    override fun onAdWasClicked() = Unit
+    override fun onAdWasClicked(clickUrl: String, fallbackURL: String) = Unit
+    override fun onAdWillLeaveApplication() = Unit
+    override fun onAdAboutToExpire() = Unit
+    override fun onAdExpired() = Unit
+
+    override fun onDestroy() {
+        NativeAdSDK.unRegisterTracking(nativeContainer) // Stop tracking and complete the viewability session
+        nativeAdResponse = null
+        super.onDestroy()
+    }
+}
+```
+
+### [Java](#tab/java1)
+
+```java
+public class NativeAdActivity extends AppCompatActivity
+        implements NativeAdRequestListener, NativeAdEventListener {
+    private NativeAdRequest nativeAdRequest;
+    private NativeAdResponse nativeAdResponse;
+    private View nativeContainer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
- 
-        activityContext = this;
- 
-        // Create a NativeAdRequest object
-        NativeAdRequest adRequest = new NativeAdRequest(activityContext, "123456"); // Placement ID
-         
-        // Optionally set the renderer_id
-        //adRequest.setRendererId(123);
- 
-        // Create a listener for ad events
-        NativeAdEventListener adEventListener = new
-                NativeAdEventListener() {
-                    @Override
-                    public void onAdWasClicked() {
-                        // Do something when the view is clicked
-                    }
- 
-                    @Override
-                    public void onAdWillLeaveApplication() {
-                        // Do something when the ad is taking user away from current app
-                    }
- 
-                    @Override
-                    public void onAdWasClicked(String clickUrl, String fallbackURL) {
-                        // Handle Click URL
-                    }
-                };
- 
-        // Whether to pre-load the native ad's icon and main image
-        adRequest.shouldLoadIcon(true);
-        adRequest.shouldLoadImage(true);
- 
-        adRequest.setListener(new NativeAdRequestListener() {
-            @Override
-            public void onAdLoaded(NativeAdResponse response) {
-                nativeAdResponse = response;
-                // Cover image
-                ImageView imageView = new ImageView(activityContext);
-                imageView.setImageBitmap(response.getImage());
- 
-                // Icon image
-                ImageView iconView = new ImageView(activityContext);
-                iconView.setImageBitmap(response.getIcon());
- 
-                // Title
-                TextView title = new TextView(activityContext);
-                title.setText(response.getTitle());
- 
-                // Main text
-                TextView description = new TextView(activityContext);
-                description.setText(response.getDescription());
- 
-                // Text that indicates a call to action -- for example, to install an app
-                TextView callToAction = new TextView(activityContext);
-                callToAction.setText(response.getCallToAction());
- 
-                // Create a container (a parent view that holds all the
-                // views for native ads)
-                LinearLayout container = new LinearLayout(activityContext);
-                container.addView(iconView);
-                container.addView(title);
- 
-                // Add the native ad container to the view hierarchy
-                LinearLayout ad_frame = findViewById(R.id.native_ad_frame);
-                ad_frame.addView(container);
-            }
- 
-            @Override
-            public void onAdFailed(ResultCode errorcode) {
- 
-            }
-        });
- 
-        // Call loadAd() to request a response once
-        adRequest.loadAd();
- 
-        // Register native views for click and impression tracking.  The
-        // adEventListener is the listener created above; it can be null if
-        // you don't want to receive notifications about click events.
-        // Impressions and clicks won't be counted if the view is not registered.
-        NativeAdSDK.registerTracking(nativeAdResponse, container, adEventListener);
- 
-        // It's your responsibility to keep a reference to the view
-        // and NativeAdResponse object if necessary.
-        // Once done with the native ad view, call the following method to
-        // unregister that view.
-        NativeAdSDK.unRegisterTracking(container);
+        setContentView(R.layout.activity_native);
+
+        nativeContainer = findViewById(R.id.native_ad_container);
+        nativeAdRequest = new NativeAdRequest(this, "123456"); // Create a request for the placement ID
+        nativeAdRequest.setListener(this); // Set the request listener
+        nativeAdRequest.loadAd(); // Load the ad
+    }
+
+    @Override
+    public void onAdLoaded(NativeAdResponse response) {
+        nativeAdResponse = response;
+        String mainImageUrl = response.getImageUrl(); // Pass the main image URL to your app's image-loading implementation
+        String iconImageUrl = response.getIconUrl(); // Pass the icon image URL to your app's image-loading implementation
+        ((TextView) findViewById(R.id.native_ad_title)).setText(response.getTitle()); // Render the title
+        ((TextView) findViewById(R.id.native_ad_sponsored_by)).setText(response.getSponsoredBy()); // Render the sponsor name
+        ((TextView) findViewById(R.id.native_ad_body)).setText(response.getDescription()); // Render the body text
+        NativeAdResponse.Rating rating = response.getAdStarRating();
+        if (rating != null) {
+            ((TextView) findViewById(R.id.native_ad_rating)).setText(
+                rating.getValue() + "/" + rating.getScale()); // Render the rating
+        }
+        String privacyUrl = response.getPrivacyLink(); // Get the privacy URL
+        Button callToActionButton = findViewById(R.id.native_ad_call_to_action);
+        callToActionButton.setText(response.getCallToAction()); // Render the call-to-action text
+
+        NativeAdSDK.unRegisterTracking(nativeContainer); // Stop tracking any previous ad in the container
+        NativeAdSDK.registerTracking(
+            response,
+            nativeContainer,
+            Arrays.asList(callToActionButton),
+            this
+        ); // Track impressions and CTA clicks
+        nativeContainer.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void onAdFailed(ResultCode errorCode, ANAdResponseInfo adResponseInfo) {
+        Log.e("NativeAdActivity", "Native ad failed to load: " + errorCode.getMessage());
+    }
+
+    @Override public void onAdImpression() {}
+    @Override public void onAdWasClicked() {}
+    @Override public void onAdWasClicked(String clickUrl, String fallbackURL) {}
+    @Override public void onAdWillLeaveApplication() {}
+    @Override public void onAdAboutToExpire() {}
+    @Override public void onAdExpired() {}
+
+    @Override
+    protected void onDestroy() {
+        NativeAdSDK.unRegisterTracking(nativeContainer); // Stop tracking and complete the viewability session
+        nativeAdResponse = null;
+        super.onDestroy();
     }
 }
-    
 ```
 
-## Fields supported in native
+---
 
-As of version 5.0 of the Mobile SDK, support for native assets is aligned with how native creatives are set up in Xandr's UI.
+## Extended Native Ad Assets
 
-If you are still using Legacy Native in, you will need to move to "New" Native for your creatives.
+In addition to the standard native ad flow, your app can optionally access extended assets through OpenRTB Native or Native Assembly. If you set `openRTBAssets`, the OpenRTB Native request takes precedence over the Native Assembly configuration associated with the placement.
 
-The following is a comprehensive list of native assets supported in the SDKs.
+For either workflow, your app can parse the exposed asset object directly instead of using the normalized asset accessors on `NativeAdResponse`. Keep the `NativeAdResponse` instance to register the rendered container for tracking and receive native ad events.
 
-| Asset | Supported Pre 5.0? | Supported Post 5.0? | v5.0+ API-Usage Example |
-|--|--|--|--|
-| Image, Width, Height | Yes, Yes, Yes | Yes, Yes, Yes | `nativeAdResponse.getImage()`;<br> `nativeAdResponse.getImageSize()`; <br> `nativeAdResponse.getImageUrl();` |
-| Icon+Width+Height | Yes, No, No | Yes, Yes, Yes | `nativeAdResponse.getIcon()`; <br> `nativeAdResponse.getIconSize()`; <br> `nativeAdResponse.getIconUrl();` |
-| Title | Yes | Yes | `nativeAdResponse.getTitle();` |
-| Sponsored by | Yes | Yes | `nativeAdResponse.getSponsoredBy();` |
-| Body text | Yes | Yes | `nativeAdResponse.getDescription();` |
-| Desc2 | Yes | Yes | `nativeAdResponse.getAdditionalDescription();` |
-| Call-to-action | Yes | Yes | `nativeAdResponse.getCallToAction();` |
-| Rating, Scale | Yes, Yes | Yes, No | `nativeAdResponse.getAdStarRating();` |
-| Likes | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```; <br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Downloads | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Price | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Sale Price | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Phone | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Address | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Display URL | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Click URL | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Click Fallback URL | No | Yes (json only) | ```if((nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS) &&. (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)) instanceof JSONObject){ JSONObject nativeResponseJSON = (JSONObject) (nativeAdResponse.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT))```;<br><br>```String likes = JsonUtil.getJSONString(nativeResponseJSON,"likes"); String downloads = JsonUtil.getJSONString(nativeResponseJSON,"downloads"); String price = JsonUtil.getJSONString(nativeResponseJSON,"price"); String saleprice = JsonUtil.getJSONString(nativeResponseJSON,"saleprice"); String phone = JsonUtil.getJSONString(nativeResponseJSON,"phone"); String address = JsonUtil.getJSONString(nativeResponseJSON,"address"); String displayurl = JsonUtil.getJSONString(nativeResponseJSON,"displayurl"); // To Get clickUrl String clickUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("url"); //To Get clickFallbackUrl String clickFallbackUrl = JsonUtil.getJSONObject(nativeResponseJSON,"link").getString("fallback_url"); }``` |
-| Privacy URL | No | Yes | `nativeAdResponse.getPrivacyLink();` |
-| Video | No | Yes | `nativeAdResponse.getVastXml();` |
-| Custom | Yes | No |  |
-| Context | Yes | No |  |
-| Full text | Yes | No |  |
+| Asset | [OpenRTB Native](#request-specific-assets-with-openrtb-native) access | [Native Assembly](#request-specific-assets-with-native-assembly) access | Description |
+|:---|:---|:---|:---|
+| VAST video | `getVastXml()` | `getVastXml()` | Returns the VAST video markup. |
+| Likes | `getOpenRTBNative()` by request ID | `getNativeElements()` with `likes` | Returns the number of likes. |
+| Downloads | `getOpenRTBNative()` by request ID | `getNativeElements()` with `downloads` | Returns the number of downloads. |
+| Price | `getOpenRTBNative()` by request ID | `getNativeElements()` with `price` | Returns the product price. |
+| Sale price | `getOpenRTBNative()` by request ID | `getNativeElements()` with `saleprice` | Returns the discounted product price. |
+| Phone | `getOpenRTBNative()` by request ID | `getNativeElements()` with `phone` | Returns the advertiser phone number. |
+| Address | `getOpenRTBNative()` by request ID | `getNativeElements()` with `address` | Returns the advertiser address. |
+| Display URL | `getOpenRTBNative()` by request ID | `getNativeElements()` with `displayurl` | Returns the advertiser-facing display URL. |
+| Click URL | `getOpenRTBNative()` with `link.url` | `getNativeElements()` with `link.url` | Returns the primary click destination. |
+| Click fallback URL | `getOpenRTBNative()` with `link.fallback` | `getNativeElements()` with `link.fallback_url` | Returns the fallback click destination. |
+| Custom extension | `getOpenRTBNative()` with `ext` | Not applicable | Returns response-level extension data defined by the demand partner. |
 
-## OpenRTB Native
-
-OpenRTB Native refers to using the OpenRTB Native Asset specification in NativeAdRequest and NativeAdResponse classes, allowing for more flexible and standardized ad requests and responses.
-For more information on OpenRTB Native 1.2 spec standards, see [OpenRTB Native Ads Specification.1.2](https://www.iab.com/wp-content/uploads/2018/03/OpenRTB-Native-Ads-Specification-Final-1.2.pdf).
+### Request specific assets with OpenRTB Native
 
 > [!NOTE]
-> OpenRTB Native is not available for all members. Please work with your Account Manager or contact Support if you have any questions.
+> OpenRTB Native isn't available for all members. Contact your account representative or Microsoft Advertising Support to confirm availability. Don't include `eventtrackers` in `openRTBAssets`; the Android SDK adds the supported event trackers.
 
-### ORTB in NativeAdRequest
+**`NativeAdRequest`:** Use `openRTBAssets` to describe the assets your app needs according to OpenRTB Native 1.2. You can specify image sizes, text lengths, video, and custom assets. Assign each asset an `id` so you can match it to the value returned in the response. You can also add custom data through `ext` using keys and values agreed with your demand partner. For available fields and values, see the [IAB OpenRTB Native Ads Specification 1.2](https://www.iab.com/wp-content/uploads/2018/03/OpenRTB-Native-Ads-Specification-Final-1.2.pdf). Set `openRTBAssets` before calling `loadAd()`.
 
-To use OpenRTB Native, the app needs to specify OpenRTB Native assets in the NativeAdRequest using the setOpenRTBAssets(JSONObject openRTBAssets) method. The contents of this field should be an OpenRTB Native request, following the OpenRTB Native 1.2 request markup.
+Use the following method on `NativeAdRequest`:
 
-### Code Sample Java for Request
+| Method | Description |
+|:---|:---|
+| `void setOpenRTBAssets(JSONObject openRTBAssets)` | Sets the OpenRTB Native 1.2 request object that defines the requested assets and constraints. |
 
+**`NativeAdResponse`:** Whenever possible, the SDK maps standard assets to the corresponding accessors. The complete OpenRTB Native response is also available through `getOpenRTBNative()`, where you can find returned assets by the IDs used in the request.
+
+Use the following method on `NativeAdResponse`:
+
+| Method | Description |
+|:---|:---|
+| `JSONObject getOpenRTBNative()` | Returns the complete OpenRTB Native response, or an empty `JSONObject` when unavailable. |
+
+### [Kotlin](#tab/kotlin2)
+
+```kotlin
+private fun loadOpenRTBNativeAd() {
+    nativeAdRequest = NativeAdRequest(this, "123456") // Create a request for the placement ID
+    nativeAdRequest.listener = this // Set the request listener
+    val openRTBAssets = JSONObject().apply {
+        put("ver", "1.2") // Set the OpenRTB Native version
+        put("privacy", 1) // Request privacy information
+        put("ext", JSONObject().put("foo", "bar")) // Add a custom request extension
+        put("assets", JSONArray().apply {
+            put(JSONObject("""{"id":1,"required":1,"title":{"len":300}}""")) // Request title
+            put(JSONObject("""{"id":2,"required":1,"data":{"type":2}}""")) // Request body text
+            put(JSONObject("""{"id":3,"required":0,"data":{"type":1}}""")) // Request sponsor name
+            put(JSONObject("""{"id":4,"required":0,"img":{"type":3}}""")) // Request main image
+            put(JSONObject("""{"id":5,"required":0,"data":{"type":12}}""")) // Request CTA text
+            put(JSONObject("""{"id":6,"required":0,"img":{"type":1,"hmin":50,"wmin":50}}""")) // Request icon
+            put(JSONObject("""{"id":7,"required":0,"data":{"type":4}}""")) // Request likes
+            put(JSONObject("""{"id":8,"required":0,"data":{"type":6}}""")) // Request price
+            put(JSONObject("""{"id":9,"required":0,"data":{"type":11}}""")) // Request display URL
+        })
+    }
+    nativeAdRequest.openRTBAssets = openRTBAssets // Set requested OpenRTB Native assets
+    nativeAdRequest.loadAd() // Load the ad
+}
+
+override fun onAdLoaded(response: NativeAdResponse) {
+    val openRTBNative = response.openRTBNative
+    val responseAssets = openRTBNative.optJSONArray("assets")
+    val assetsById = mutableMapOf<Int, JSONObject>()
+    for (index in 0 until (responseAssets?.length() ?: 0)) {
+        val asset = responseAssets?.optJSONObject(index)
+        if (asset != null) {
+            assetsById[asset.optInt("id")] = asset
+        }
+    }
+    val title = response.title // Or: assetsById[1]?.optJSONObject("title")?.optString("text")
+    val body = response.description // Or: assetsById[2]?.optJSONObject("data")?.optString("value")
+    val mainImageUrl = response.imageUrl // Or: assetsById[4]?.optJSONObject("img")?.optString("url")
+    val callToAction = response.callToAction // Or: assetsById[5]?.optJSONObject("data")?.optString("value")
+    val iconImageUrl = response.iconUrl // Or: assetsById[6]?.optJSONObject("img")?.optString("url")
+    val likes = assetsById[7]?.optJSONObject("data")?.optString("value") // Match request ID 7
+    val price = assetsById[8]?.optJSONObject("data")?.optString("value") // Match request ID 8
+    val displayUrl = assetsById[9]?.optJSONObject("data")?.optString("value") // Match request ID 9
+    val customExtension = openRTBNative.optJSONObject("ext")
+    val customValue = customExtension?.optString("foo") // Read a custom response extension
+    val link = openRTBNative.optJSONObject("link")
+    val clickUrl = link?.optString("url")
+    val clickFallbackUrl = link?.optString("fallback")
+}
 ```
-NativeAdRequest nativeAdRequest = new NativeAdRequest(context, "PLACEMENT_ID");
-String ortbJSONString = "{\"ver\":\"1.2\",\"assets\":[{\"id\":1,\"required\":1,\"title\":{\"len\":300}},{\"id\":2,\"required\":1,\"data\":{\"type\":2}},{\"id\":3,\"required\":1,\"data\":{\"type\":1}},{\"id\":4,\"required\":1,\"image\":{\"type\":3}},{\"id\":5,\"required\":0,\"data\":{\"type\":555,\"len\":45}}]}";
-nativeAdRequest.setOpenRTBAssets(new JSONObject(ortbJSONString));
-```
 
-### Code Sample Kotlin for Request
+### [Java](#tab/java2)
 
-```
+```java
+private void loadOpenRTBNativeAd() {
+    nativeAdRequest = new NativeAdRequest(this, "123456"); // Create a request for the placement ID
+    nativeAdRequest.setListener(this); // Set the request listener
+    JSONArray assets = new JSONArray()
+        .put(new JSONObject().put("id", 1).put("required", 1)
+            .put("title", new JSONObject().put("len", 300))) // Request title
+        .put(new JSONObject().put("id", 2).put("required", 1)
+            .put("data", new JSONObject().put("type", 2))) // Request body text
+        .put(new JSONObject().put("id", 3).put("required", 0)
+            .put("data", new JSONObject().put("type", 1))) // Request sponsor name
+        .put(new JSONObject().put("id", 4).put("required", 0)
+            .put("img", new JSONObject().put("type", 3))) // Request main image
+        .put(new JSONObject().put("id", 5).put("required", 0)
+            .put("data", new JSONObject().put("type", 12))) // Request CTA text
+        .put(new JSONObject().put("id", 6).put("required", 0)
+            .put("img", new JSONObject().put("type", 1).put("hmin", 50).put("wmin", 50))) // Request icon
+        .put(new JSONObject().put("id", 7).put("required", 0)
+            .put("data", new JSONObject().put("type", 4))) // Request likes
+        .put(new JSONObject().put("id", 8).put("required", 0)
+            .put("data", new JSONObject().put("type", 6))) // Request price
+        .put(new JSONObject().put("id", 9).put("required", 0)
+            .put("data", new JSONObject().put("type", 11))); // Request display URL
+    JSONObject openRTBAssets = new JSONObject()
+        .put("ver", "1.2")
+        .put("privacy", 1)
+        .put("ext", new JSONObject().put("foo", "bar")) // Add a custom request extension
+        .put("assets", assets);
+    nativeAdRequest.setOpenRTBAssets(openRTBAssets); // Set requested OpenRTB Native assets
+    nativeAdRequest.loadAd(); // Load the ad
+}
 
-var nativeAdRequest = NativeAdRequest(context, "PLACEMENT_ID")
-val ortbJSONString = "{\"ver\":\"1.2\",\"assets\":[{\"id\":1,\"required\":1,\"title\":{\"len\":300}},{\"id\":2,\"required\":1,\"data\":{\"type\":2}},{\"id\":3,\"required\":1,\"data\":{\"type\":1}},{\"id\":4,\"required\":1,\"image\":{\"type\":3}},{\"id\":5,\"required\":0,\"data\":{\"type\":555,\"len\":45}}]}"
-nativeAdRequest.openRTBAssets = JSONObject(ortbJSONString);
-```
->[!NOTE]
-> The app does not need to specify the eventtrackers array. SDK automatically populates the eventtrackers array with the values it supports. Even if the app provides a value, it will be overridden by the SDK.
-
-## ORTB in NativeAdResponse
-ORTB in response corresponds to the raw ORTB Native JSON, which is exposed to the app using the public JSONObject getOpenRTBNative() method in the NativeAdResponse class. Like the request, the response JSONObject will follow the OpenRTB Native 1.2 response markup, see [OpenRTB Native Ads Specification.1.2](https://www.iab.com/wp-content/uploads/2018/03/OpenRTB-Native-Ads-Specification-Final-1.2.pdf) for details.
-
-
-In addition to exposing the raw ORTB Native response JSONObject via getOpenRTBNative(), the SDK also parses and makes available standard ORTB Native response assets (img, title, video, and data) using methods such as getTitle(), getDescription(), getImageUrl(), getImage(), getImageSize(), getIconUrl(), getIcon(), getIconSize(), getCallToAction(), getAdStarRating(), getSponsoredBy(), getVastXml(), and getPrivacyLink(). The SDK also automatically handles impression, viewability, and click tracking.
-
-> [!NOTE]
-> The app should register the view in which the native ad is rendered with the SDK. SDK will handle impression, click,
-and viewability tracking. App will not receive eventtrackers, imptrackers, jstracker, or clicktrackers in the ORTB Native response JSONObject.
-
-### Code Sample Java for response
-
-```
 @Override
-public void onAdLoaded(NativeAdResponse nativeAdResponse) {
-
-    // Network type Network.APPNEXUS_ORTB indicates the response is ORTB
-    if (nativeAdResponse.getNetworkIdentifier() == NativeAdResponse.Network.APPNEXUS_ORTB) {
-        JSONObject ortbNativeResponseJSON = nativeAdResponse.getOpenRTBNative();
-
-        // App has the option to either
-        // 1. Use the parsed title, description, etc., which the SDK readily makes available
-        // and dip into the ORTB Native response JSON for non-parsed/custom values
-        // OR
-        // 2. Handle all the ORTB Native response JSON response parsing in the app
-
-        // Accessing title, description etc using the getters exposed in
-        // NativeAdResponse class
-        String title = nativeAdResponse.getTitle();
-        String description = nativeAdResponse.getDescription();
-        String imageUrl = nativeAdResponse.getImageUrl();
-        NativeAdResponse.ImageSize imageSize = nativeAdResponse.getImageSize();
-        
-        
-        // Parsing ORTB Native resposnse JSON
-        // Extract "assets" array
-        JSONArray assetsArray = ortbNativeResponseJSON.getJSONArray("assets");
-        for (int i = 0; i < assetsArray.length(); i++) {
-            JSONObject asset = assetsArray.getJSONObject(i);
-            // This id will match the id provided in the request.
-            // This id is essential for matching the various data assets in the request
-            // with the response.            
-            int id = asset.getInt("id");
-            System.out.println("Asset ID: " + id); 
-
-            // Check for "title"
-            if (asset.has("title")) {
-                String assetTitle = asset.getJSONObject("title").getString("text");
-                System.out.println("Title: " + assetTitle);
-            }
-
-            // Check for "data"
-            if (asset.has("data")) {
-                String data = asset.getJSONObject("data").getString("value");
-                System.out.println("Data: " + data);
-            }
-
-            // Check for "image"
-            if (asset.has("image")) {
-                JSONObject image = asset.getJSONObject("image");
-                String url = image.getString("url");
-                int width = image.getInt("w");
-                int height = image.getInt("h");
-                System.out.println("Image URL:"+url+",Width:"+width+",Height:"+height);
+public void onAdLoaded(NativeAdResponse response) {
+    JSONObject openRTBNative = response.getOpenRTBNative();
+    JSONArray responseAssets = openRTBNative.optJSONArray("assets");
+    Map<Integer, JSONObject> assetsById = new HashMap<>();
+    if (responseAssets != null) {
+        for (int index = 0; index < responseAssets.length(); index++) {
+            JSONObject asset = responseAssets.optJSONObject(index);
+            if (asset != null) {
+                assetsById.put(asset.optInt("id"), asset);
             }
         }
     }
+    String title = response.getTitle(); // Or: assetsById.get(1).optJSONObject("title").optString("text")
+    String body = response.getDescription(); // Or: assetsById.get(2).optJSONObject("data").optString("value")
+    String mainImageUrl = response.getImageUrl(); // Or: assetsById.get(4).optJSONObject("img").optString("url")
+    String callToAction = response.getCallToAction(); // Or: assetsById.get(5).optJSONObject("data").optString("value")
+    String iconImageUrl = response.getIconUrl(); // Or: assetsById.get(6).optJSONObject("img").optString("url")
+    JSONObject likesAsset = assetsById.get(7);
+    JSONObject priceAsset = assetsById.get(8);
+    JSONObject displayUrlAsset = assetsById.get(9);
+    JSONObject likesData = likesAsset != null ? likesAsset.optJSONObject("data") : null;
+    JSONObject priceData = priceAsset != null ? priceAsset.optJSONObject("data") : null;
+    JSONObject displayUrlData = displayUrlAsset != null ? displayUrlAsset.optJSONObject("data") : null;
+    String likes = likesData != null ? likesData.optString("value") : null; // Match request ID 7
+    String price = priceData != null ? priceData.optString("value") : null; // Match request ID 8
+    String displayUrl = displayUrlData != null ? displayUrlData.optString("value") : null; // Match request ID 9
+    JSONObject customExtension = openRTBNative.optJSONObject("ext");
+    String customValue = customExtension != null ? customExtension.optString("foo") : null; // Read a custom response extension
+    JSONObject link = openRTBNative.optJSONObject("link");
+    String clickUrl = link != null ? link.optString("url") : null;
+    String clickFallbackUrl = link != null ? link.optString("fallback") : null;
 }
 ```
 
-### Code Sample Kotlin for response
+---
 
+### Request specific assets with Native Assembly
+
+**`NativeAdRequest`:** No Native Assembly-specific request configuration is required in your app. Native Assembly is configured for the placement in Microsoft Monetize and is used when `openRTBAssets` isn't set. For this workflow, the SDK uses only the **Creative Asset Specifications** from the Native Assembly associated with the placement. The HTML, CSS, and JavaScript from the **Renderer** tab aren't used; your app renders the returned assets. Renderer code applies only to the Banner Native rendering workflow. For more information, see [Native Assembly Renderer for Android](native-assembly-renderer-for-android.md). We recommend using OpenRTB Native when it's available. For setup instructions, see [Configuring a Native Assembly](../monetize/configuring-a-native-assembly.md).
+
+**`NativeAdResponse`:** Get the value for `NativeAdResponse.NATIVE_ELEMENT_OBJECT` from `getNativeElements()`, cast it to a `JSONObject`, and then read each asset by its field name. Check that a field exists before using it because the creative might omit it.
+
+Use the following method on `NativeAdResponse`:
+
+| Method | Description |
+|:---|:---|
+| `HashMap<String, Object> getNativeElements()` | Returns all elements in the native ad response. |
+
+### [Kotlin](#tab/kotlin3)
+
+```kotlin
+val nativeElements = response.nativeElements[NativeAdResponse.NATIVE_ELEMENT_OBJECT] as? JSONObject
+val title = response.title // Or: nativeElements?.optString("title")
+val body = response.description // Or: nativeElements?.optString("desc")
+val mainImageUrl = response.imageUrl // Or: nativeElements?.optJSONObject("main_img")?.optString("url")
+val iconImageUrl = response.iconUrl // Or: nativeElements?.optJSONObject("icon")?.optString("url")
+val callToAction = response.callToAction // Or: nativeElements?.optString("ctatext")
+val likes = nativeElements?.optString("likes")
+val price = nativeElements?.optString("price")
+val link = nativeElements?.optJSONObject("link")
+val clickUrl = link?.optString("url")
+val clickFallbackUrl = link?.optString("fallback_url")
 ```
 
-override fun onAdLoaded(nativeAdResponse: NativeAdResponse) {
+### [Java](#tab/java3)
 
-    // Network type Network.APPNEXUS_ORTB indicate the response is ORTB
-    if(nativeAdResponse.networkIdentifier == NativeAdResponse.Network.APPNEXUS_ORTB) {
-        var ortbNativeResponseJSON = nativeAdResponse.openRTBNative
-
-        // App has the option to either
-        // 1. Use the parsed title,description etc which the SDK readily makes available
-        // and dip into the ORTB Native response JSON for non-parsed/custom values
-        // OR
-        // 2. Handle all the ORTB Native response JSON response parsing in the app
-
-        // Accessing title, description etc using the getters exposed in
-        // NativeAdResponse class
-        nativeAdResponse.title
-        nativeAdResponse.description
-        nativeAdResponse.imageUrl
-        nativeAdResponse.imageSize
-
-
-        // Parsing ORTB Native resposnse JSON
-        // Extract "assets" array
-        val assetsArray = ortbNativeResponseJSON.getJSONArray("assets")
-        for (i in 0 until assetsArray.length()) {
-            val asset = assetsArray.getJSONObject(i)
-            // This id will match the id provide in request,
-            // This id is essential for matching the various data assets in req with response            
-            val id = asset.getInt("id")
-            println("Asset ID: $id") 
-
-            // Check for "title"
-            if (asset.has("title")) {
-                val title = asset.getJSONObject("title").getString("text")
-                println("Title: $title")
-            }
-
-            // Check for "data"
-            if (asset.has("data")) {
-                val data = asset.getJSONObject("data").getString("value")
-                println("Data: $data")
-            }
-
-            // Check for "image"
-            if (asset.has("image")) {
-                val image = asset.getJSONObject("image")
-                val url = image.getString("url")
-                val width = image.getInt("w")
-                val height = image.getInt("h")
-                println("Image URL: $url, Width: $width, Height: $height")
-            }
-        }
-    }
+```java
+Object element = response.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT);
+if (element instanceof JSONObject) {
+    JSONObject nativeElements = (JSONObject) element;
+    String title = response.getTitle(); // Or: nativeElements.optString("title")
+    String body = response.getDescription(); // Or: nativeElements.optString("desc")
+    String mainImageUrl = response.getImageUrl(); // Or: nativeElements.optJSONObject("main_img").optString("url")
+    String iconImageUrl = response.getIconUrl(); // Or: nativeElements.optJSONObject("icon").optString("url")
+    String callToAction = response.getCallToAction(); // Or: nativeElements.optString("ctatext")
+    String likes = nativeElements.optString("likes");
+    String price = nativeElements.optString("price");
+    JSONObject link = nativeElements.optJSONObject("link");
+    String clickUrl = link != null ? link.optString("url") : null;
+    String clickFallbackUrl = link != null ? link.optString("fallback_url") : null;
+}
 ```
 
-### Example: ORTB Native response JSONObject structure in NativeAdResponse
+---
 
+## Configure image loading
+
+Native ad responses can include URLs for a main image and an icon. Use these URLs with your app's image-loading implementation, or enable SDK preloading before calling `loadAd()` to receive downloaded `Bitmap` objects. Preloading is disabled by default.
+
+Use the following methods on `NativeAdRequest`:
+
+| Method | Description |
+|:---|:---|
+| `void shouldLoadImage(boolean shouldLoadImage)` | Sets whether the SDK preloads the main image. |
+| `void shouldLoadIcon(boolean shouldLoadIcon)` | Sets whether the SDK preloads the icon image. |
+
+### [Kotlin](#tab/kotlin4)
+
+```kotlin
+nativeAdRequest.shouldLoadImage(true) // Preload the main image
+nativeAdRequest.shouldLoadIcon(true) // Preload the icon image
+nativeAdRequest.loadAd() // Load the ad
+
+val mainImage = response.image // Get the preloaded main image
+val iconImage = response.icon // Get the preloaded icon image
 ```
 
- {
-       "ver": "1.2",
-       "assets": [
-      {
-          "id": 1,
-          "title": {
-              "text": "Sample Title here."
-          }
-       },{    
-          "id": 2,
-          "data": {
-              "value": "Sample description text here."
-           }
-      }, {
-          "id": 3,
-          "data": {
-              "value": "Sample Sponsored by text here."
-          }
-      }, {
-          "id": 4,
-          "image": {
-              "url": "https://sample.img.url/here.jpg",
-              "w": 123,
-              "h": 234
-          }
-      }, {
-          "id": 5,
-          "data": {
-              "value": "Sample disclaimer value here."
-          }
-      }
-   ],
-  // remaining ortb native 1.2 response fields would be here;
-  // ie for link,privacy etc if available
-} 
+### [Java](#tab/java4)
+
+```java
+nativeAdRequest.shouldLoadImage(true); // Preload the main image
+nativeAdRequest.shouldLoadIcon(true); // Preload the icon image
+nativeAdRequest.loadAd(); // Load the ad
+
+Bitmap mainImage = response.getImage(); // Get the preloaded main image
+Bitmap iconImage = response.getIcon(); // Get the preloaded icon image
 ```
 
+---
 
-
-## Related topics
+## Related
 
 - [Android SDK Integration Instructions](android-sdk-integration-instructions.md)
 - [Get Facebook Demand for Native on Android](get-facebook-demand-for-native-on-android.md)

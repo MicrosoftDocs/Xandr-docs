@@ -1,185 +1,212 @@
 ---
-title: Get Facebook Demand for Native on iOS
-description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on iOS devices.
+title: Get Facebook demand for native on iOS
+description: Learn how to use the iOS SDK Facebook adapter to request, render, and track Facebook native ads.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 09/03/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Get Facebook demand for native on iOS
 
-This document describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK.
+This article describes how to use the iOS SDK Facebook adapter to retrieve and display native ads from Meta Audience Network.
 
 > [!NOTE]
-> This SDK requires Xcode version 15.0 or higher and your app should target iOS version 12.0 or higher.
+> The Facebook adapter requires iOS 15.0 or later.
 
 ## SDK installation
 
-The Xandr SDK and Xandr-FAN-Demand Package will need to be installed. Use [CocoaPods](https://cocoapods.org/).
-<!-- There are two ways to install our SDK:
+Install the Facebook CSR adapter by using Swift Package Manager. The adapter package includes compatible versions of the iOS SDK and Meta Audience Network SDK as dependencies.
 
-1. Download and unzip the latest release of our SDK from our [Github Releases](https://github.com/appnexus/mobile-sdk-ios/releases/latest) page. If you don't want the binary release, you can clone the source code from our [Github repo](https://github.com/appnexus/mobile-sdk-ios) and build it yourself. Drag and drop the FacebookCSRAdapter folder into Xcode Project.
-1. Use [CocoaPods](https://cocoapods.org/). -->
+1. Open your project in Xcode.
+1. Select the project in the Project navigator, and then select **Package Dependencies**.
+1. Select the **+** button to add a package dependency.
+1. Enter the following package URL in the search box, and then press **Return**:
 
-Once you have CocoaPods installed.
+   ```text
+   https://github.com/appnexus/mobile-sdk-ios-mediation-facebook
+   ```
 
-1. Use Terminal or your command line editor of choice and navigate to the project directory and create a podfile.
-
-    ``` 
-    pod init
-    ```
-
-1. Using a text editor, open the newly created podfile. Set the platform to 12.0 (AppNexus always supports two iOS releases back from the current release) and add pod 'AppNexusSDX' to the target.
-
-    ``` 
-    # iOS: Podfile config to include our SDK
-    platform :ios, '12.0'
-         
-    project 'SampleApp'
-         
-    target 'SampleApp' do
-        
-      pod 'AppNexusSDK'
-      pod 'AppNexusSDK/FacebookCSRAdapter'
-        
-    end 
-    ```
-
-1. Save your changes and return to Terminal and enter:
-
-    ``` 
-    pod install
-    ```
-
-1. Cocoapods will download both the AppNexus SDK and FacebookCRSAdapter and also create a workspace in the project directory. If your project is currently open, close it and open the workspace.
+1. Choose the version setting that fits your project. For new projects, select **Up to Next Major Version**. Then select **Add Package**.
+1. Select the **ANFacebookCSRAdapter** product and your app target, and then select **Add Package**.
+1. Verify that **ANFacebookCSRAdapter** appears under **Package Dependencies**.
 
 ## Initialize Facebook's Audience Network SDK
 
-Early in the lifecycle of your app, initialize Facebook's Audience Network SDK (`FBAudienceNetworkAds`) as shown in the code-block below.
+Early in your app lifecycle, initialize Meta Audience Network and pass the result to `ANFBSettings`.
 
-``` 
-[FBAudienceNetworkAds 
-  initializeWithSettings:fbAdSettingObject  
-  completionHandler:^(FBAdInitResults *results) {
-         if (results.success) {
-             [ANFBSettings setFBAudienceNetworkInitialize:YES];
-             complete(nil);
-         } else {
-             [ANFBSettings setFBAudienceNetworkInitialize:NO];
-             complete(error); 
-        }
-     }];
+### [Swift](#tab/swift1)
+
+```swift
+FBAudienceNetworkAds.initialize(with: nil) { results in
+    ANFBSettings.setFBAudienceNetworkInitialize(results.isSuccess) // Store the initialization result
+}
 ```
 
-On successful initialization of `FBAudienceNetworkAds`, `setFBAudienceNetworkInitialize` is set to `YES`, otherwise it is set as `NO`. If the value is set as `YES` i.e. Audience Network SDK is initialized, `getBidderToken` method of Audience Network SDK would return the Facebook Bidder Token to proceed further. For values set as `NO`, `getBidderToken` method will return nil.
+### [Objective-C](#tab/objectivec1)
 
-Starting with iOS 14, Publisher App need to set a new API **setAdvertiserTrackingEnabled**  to fulfil the iOS policy obligations for using the Audience Network SDK. A new API **setAdvertiserTrackingEnabled** was added to **FBAdSettings** that is functional on only iOS 14 (and later) with FacebookAd SDK 6.0.0.
-
-``` 
-// Set the flag as true if a user provides consent
- [FBAdSettings setAdvertiserTrackingEnabled:YES];
- // Set the flag as false if a user disallows tracking
- [FBAdSettings setAdvertiserTrackingEnabled:NO];
+```objectivec
+[FBAudienceNetworkAds initializeWithSettings:nil
+                           completionHandler:^(FBAdInitResults *results) {
+    [ANFBSettings setFBAudienceNetworkInitialize:results.isSuccess]; // Store the initialization result
+}];
 ```
 
-## Create native ad request and load ad
+---
+
+When initialization succeeds, the adapter can retrieve the Meta bidder token. Otherwise, `getBidderToken` returns `nil`.
+
+Set advertiser tracking according to the user's tracking choice before requesting ads. Replace the example value with the result from your consent flow.
+
+### [Swift](#tab/swift2)
+
+```swift
+let userAllowedTracking = true
+FBAdSettings.setAdvertiserTrackingEnabled(userAllowedTracking) // Set the user's tracking choice
+```
+
+### [Objective-C](#tab/objectivec2)
+
+```objectivec
+BOOL userAllowedTracking = YES;
+[FBAdSettings setAdvertiserTrackingEnabled:userAllowedTracking]; // Set the user's tracking choice
+```
+
+---
+
+## Request and render a native ad
 
 > [!NOTE]
-> Retain a reference to the request until a response has been returned.
+> Retain the request and response while the ad is loading or displayed. Releasing the response unregisters its view.
 
-``` 
-self.nativeAdRequest= [[ANNativeAdRequest alloc] init];
-self.nativeAdRequest.placementId = @"18793423";
-self.nativeAdRequest.delegate = self;
-[self.nativeAdRequest loadAd];
-```
+The following example assumes that your view controller has a native ad container with icon and call-to-action outlets. It registers the call-to-action control as the clickable view.
 
-## Handle response for FBNativeBanner
+### [Swift](#tab/swift3)
 
-Create a layout for FBNativeBanner. You can follow the example provided by [Facebook](https://developers.facebook.com/docs/audience-network/guides/initialize-sdk).
+```swift
+final class FacebookNativeAdViewController: UIViewController, ANNativeAdRequestDelegate {
+    @IBOutlet private weak var nativeAdView: UIView!
+    @IBOutlet private weak var iconImageView: UIImageView!
+    @IBOutlet private weak var callToActionButton: UIButton!
 
-If a successful response is returned:
+    private var nativeAdRequest: ANNativeAdRequest?
+    private var nativeAdResponse: ANNativeAdResponse?
 
-``` 
-- (void)adRequest:(ANNativeAdRequest *)request didReceiveResponse:(ANNativeAdResponse *)response {
-    // (code which loads the view)
-    self.nativeAdResponse = response;
-    self.adTitleLabel.text = self.nativeAdResponse.title;
-    self.bodyLabel.text = self.nativeAdResponse.body;
-    self.adSponsoredLabel.text = self.nativeAdResponse.sponsoredBy;
- 
- 
-     if(self.nativeAdResponse.customElements[kANNativeCSRObject] && self.nativeAdResponse.customElements[kANNativeCSRObject] isKindOfClass:[ANAdAdapterCSRNativeBannerFacebook class]) {
-        ANAdAdapterCSRNativeBannerFacebook *fbNativeBanner = (ANAdAdapterCSRNativeBannerFacebook *)response.customElements[kANNativeCSRObject];
-        // CSR registerViewForTracking (see example below)
-    }else {
-        //  Non CSR registerViewForTracking
-            //  See native ad examples here: show-native-ads-on-ios.md
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let request = ANNativeAdRequest()
+        request.placementId = "18793423" // Set placement ID
+        request.delegate = self // Set the request delegate
+        nativeAdRequest = request
+        request.loadAd() // Load the ad
+    }
+
+    func adRequest(_ request: ANNativeAdRequest, didReceive response: ANNativeAdResponse) {
+        nativeAdResponse = response
+        iconImageView.image = response.iconImage
+        callToActionButton.setTitle(response.callToAction, for: .normal) // Render the call-to-action text
+
+        if let facebookAdapter = response.customElements?[kANNativeCSRObject]
+            as? ANAdAdapterCSRNativeBannerFacebook {
+            facebookAdapter.registerView(
+                forTracking: nativeAdView,
+                withRootViewController: self,
+                iconImageView: iconImageView,
+                clickableViews: [callToActionButton]
+            ) // Register the Facebook response
+        } else {
+            do {
+                try response.registerView(
+                    forTracking: nativeAdView,
+                    withRootViewController: self,
+                    clickableViews: [callToActionButton]
+                ) // Register other native responses
+            } catch {
+                print("Unable to register the native ad view: \(error)")
+            }
+        }
+    }
+
+    func adRequest(
+        _ request: ANNativeAdRequest,
+        didFailToLoadWithError error: Error,
+        with adResponseInfo: ANAdResponseInfo?
+    ) {
+        print("Native ad failed to load: \(error.localizedDescription)")
     }
 }
 ```
 
-On a response error:
+### [Objective-C](#tab/objectivec3)
 
-``` 
-- (void)adRequest:(ANNativeAdRequest *)request didFailToLoadWithError:(NSError *)error withAdResponseInfo:(ANAdResponseInfo *)adResponseInfo{
-    NSLog(@"didFailToLoadWithError");
+```objectivec
+@interface FacebookNativeAdViewController () <ANNativeAdRequestDelegate>
+@property (nonatomic, weak) IBOutlet UIView *nativeAdView;
+@property (nonatomic, weak) IBOutlet UIImageView *iconImageView;
+@property (nonatomic, weak) IBOutlet UIButton *callToActionButton;
+@property (nonatomic, strong) ANNativeAdRequest *nativeAdRequest;
+@property (nonatomic, strong) ANNativeAdResponse *nativeAdResponse;
+@end
+
+@implementation FacebookNativeAdViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.nativeAdRequest = [[ANNativeAdRequest alloc] init];
+    self.nativeAdRequest.placementId = @"18793423"; // Set placement ID
+    self.nativeAdRequest.delegate = self; // Set the request delegate
+    [self.nativeAdRequest loadAd]; // Load the ad
 }
-```
 
-## Register the view for tracking
+- (void)adRequest:(ANNativeAdRequest *)request
+        didReceiveResponse:(ANNativeAdResponse *)response {
+    self.nativeAdResponse = response;
+    self.iconImageView.image = response.iconImage;
+    [self.callToActionButton setTitle:response.callToAction forState:UIControlStateNormal]; // Render the call-to-action text
 
-Call the registerViewForTracking method of the ANAdAdapterCSRNativeBannerFacebook object.
-
-### For MediaView with clickableViews
-
-``` 
-/*registerViewForTracking using MediaView with Click Tracker */
-[fbNativeBanner registerViewForTracking:self.adUIView
-                 withRootViewController:self
-                          iconView:self.adIconView
-                         clickableViews:@[self.adUIView]];          
-```
-
-### For MediaView with no clickableViews
-
-``` 
-/*registerViewForTracking using MediaView without Click Tracker */
-[fbNativeBanner registerViewForTracking:self.adUIView
-                 withRootViewController:self
-                          iconView:self.adIconView];          
-```
-
-### For ImageView with clickableViews (no MediaView)
-
-``` 
-/* registerViewForTracking using Image View with Click Tracker */
-  [fbNativeBanner registerViewForTracking:self.adUIView
+    id csrObject = response.customElements[kANNativeCSRObject];
+    if ([csrObject isKindOfClass:[ANAdAdapterCSRNativeBannerFacebook class]]) {
+        ANAdAdapterCSRNativeBannerFacebook *facebookAdapter = csrObject;
+        [facebookAdapter registerViewForTracking:self.nativeAdView
+                          withRootViewController:self
+                                   iconImageView:self.iconImageView
+                                  clickableViews:@[self.callToActionButton]]; // Register the Facebook response
+    } else {
+        NSError *registrationError = nil;
+        [response registerViewForTracking:self.nativeAdView
                    withRootViewController:self
-                            iconImageView:self.imageView
-                           clickableViews:@[self.adUIView]];     
+                           clickableViews:@[self.callToActionButton]
+                        error:&registrationError]; // Register other native responses
+        if (registrationError != nil) {
+            NSLog(@"Unable to register the native ad view: %@", registrationError);
+        }
+    }
+}
+
+- (void)adRequest:(ANNativeAdRequest *)request
+        didFailToLoadWithError:(NSError *)error
+        withAdResponseInfo:(ANAdResponseInfo *)adResponseInfo {
+    NSLog(@"Native ad failed to load: %@", error.localizedDescription);
+}
+
+@end
 ```
 
-### For ImageView with no clickableViews (no MediaView)
+---
 
-``` 
-/*registerViewForTracking using Image View without Click Tracker */
-[fbNativeBanner registerViewForTracking:self.adUIView
-                     withRootViewController:self
-                              iconImageView:self.imageView];
-```
+The Facebook adapter provides registration overloads for these combinations:
 
-## Unregister the view
+| Icon view | Clickable views |
+|:---|:---|
+| `FBMediaView` | Entire native ad view |
+| `FBMediaView` | Selected subviews |
+| `UIImageView` | Entire native ad view |
+| `UIImageView` | Selected subviews |
 
-When the ad is finished being displayed, the view must be unregistered.
-
-``` 
-self.nativeAdResponse = nil; // It will handle ad unregister views
-```
-
-## Related topics
+## Related
 
 - [iOS SDK Integration Instructions](ios-sdk-integration-instructions.md)
 - [Show Banner Native on iOS](show-banner-native-on-ios.md)

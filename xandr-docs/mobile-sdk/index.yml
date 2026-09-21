@@ -9,7 +9,7 @@ metadata:
   ms.author: shsrinivasan
   ms.service: publisher-monetization
   ms.subservice: mobile-sdk
-  ms.date: 10/22/2025
+  ms.date: 09/03/2026
 
 landingContent:
   - title: Lets Get Started
@@ -41,11 +41,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Integration Guide
-            url: ios-sdk-integration.md
+            url: ios-sdk-integration-instructions.md
           - text: Mediation Guide
             url: ios-mediation.md
-          - text: Migration Guide
-            url: migrating-ios-sdk-v7-to-8-0.md
       - linkListType: sample
         links:
           - text: iOS SDK Code Samples
@@ -70,11 +68,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Integration Guide
-            url: android-sdk-integration.md
+            url: android-sdk-integration-instructions.md
           - text: Mediation Guide
             url: mediate-with-android-sdk.md
-          - text: Migration Guide
-            url: migrating-android-sdk-v7-to-8-0.md
       - linkListType: sample
         links:
           - text: Android SDK Code Samples

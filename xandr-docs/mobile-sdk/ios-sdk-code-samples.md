@@ -2,7 +2,7 @@
 title: iOS SDK Code Samples Overview
 description: In this article, explore detailed information about iOS SDK code samples.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -29,6 +29,7 @@ This section contains various code samples to help you in the development of you
 | [Lazy Loading an Ad Unit](lazy-load-for-ios.md) | How to lazy load an ad unit to control when trackers, including 3rd party trackers, are fired. |
 | [Listen to Native Ad Events](listen-to-native-ad-events-on-ios.md) | How to listen to events, such as Ad Click, in native ads. |
 | [Listener for Ad About To Expire](listener-for-adabouttoexpire-on-ios.md) | Listener for ads which are about to expire and are expired. |
+| [Viewability Measurement](viewability-measurement-on-ios.md) | Explains default viewability measurement and how to manage friendly obstructions. |
 | [Localize Browser OK Button](localize-browser-button.md) | How to add localization to a browser's OK button. |
 | [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-ios.md) | How to choose if native browser will open if the ad is clicked. |
 | [Pass Custom Keywords](pass-custom-keywords-on-ios.md) | How to pass custom keywords to the request body. |

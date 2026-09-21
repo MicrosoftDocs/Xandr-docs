@@ -2,7 +2,7 @@
 title: iOS ANSDK Settings
 description: In this article, find information about the various iOS ANSDK settings to help you in the development of your app. 
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -26,7 +26,7 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
 | `BOOL disableIDFAUsage` | Excludes the IDFA field in ad request. <br><br> See [Set IDFA usage](#set-idfa-usage) below for more details. |
 | `NSUInteger auctionTimeout` | Sets the timeout period in milliseconds. <br><br> See [Set the Auction Timeout](#set-the-auction-timeout) below for more details. |
 | `BOOL enableTestMode` | Sets YES or NO for the AdRequests to be executed in the test mode. <br><br> See [Set Test Mode](#set-test-mode) below for more details. |
-| `BOOL enableOMIDOptimization` | Enables Open-Measurement Optimization. <br><br> See [OMID Optimization](#omid-optimization) below for more details. |
+| `BOOL enableOMIDOptimization` | Enables Open Measurement optimization. <br><br> See [OMID optimization](#omid-optimization) below for more details. |
 | `NSString *contentlanguage` | Sets the code for the content's language. <br><br> See [Set Content Language](#set-content-language) below for more details. |
 
 ## Initialize SDK settings
@@ -313,35 +313,7 @@ ANSDKSettings.sharedInstance().enableTestMode = true
 
 ---
 
-## OMID Optimization
-
-The IAB's Open Measurement SDK (OM SDK) enhances third party ad viewability and verification measurement in mobile apps by allowing publishers to use a single SDK,  eliminating the need for multiple SDKs. For more details, visit the [IAB OM SDK page](https://iabtechlab.com/standards/open-measurement-sdk/).
-
-To address reported performance issues when using OMSDK for viewability measurement, we’ve introduced an OMID optimization option, which is off by default. Enabling this option causes the stopOMIDAdSession function to trigger when 100% of the ad is on screen. This improves app performance but reduces the duration of ad viewability measurement.
-
-| Property | Description |
-|--|--|
-| `BOOL enableOMIDOptimization` | Set YES or NO for the OMID Optimization to be enabled. Default value is NO. <br><br> **Note**: This API supports only banner and native ad types. |
-
-### Example
-
-#### [Objective C](#tab/objectivec9)
-
-```
-ANSDKSettings.sharedInstance.enableOMIDOptimization = true;
-
-```
-
-#### [Swift](#tab/swift9)
-
-```
-ANSDKSettings.sharedInstance().enableOMIDOptimization = true
- 
-```
-
----
-
-### Set content language
+## Set content language
 
 | Property | Description |
 |--|--|
@@ -362,5 +334,17 @@ ANSDKSettings.sharedInstance.contentLanguage = @"EN";
 ```
 ANSDKSettings.sharedInstance().contentLanguage = "EN"
 ```
+
+---
+
+## OMID optimization
+
+Use the following property on `ANSDKSettings`:
+
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `enableOMIDOptimization` | BOOL | readwrite, assign | Controls OMID session-lifecycle optimization for banner and native ads. The default is `NO`. |
+
+For behavior, scope, and examples, see [Enable OMID optimization](viewability-measurement-on-ios.md#enable-omid-optimization).
 
 ---

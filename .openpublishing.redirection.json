@@ -16,6 +16,21 @@
             "redirect_document_id": false
         },
         {
+            "source_path": "xandr-docs/mobile-sdk/omid-friendly-obstruction-for-ios.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/mobile-sdk/viewability-measurement-on-ios",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/mobile-sdk/omid-friendly-obstruction-for-android.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/mobile-sdk/viewability-measurement-on-android",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "xandr-docs/mobile-sdk/migrating-ios-sdk-v9.x.y-to-v2.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/xandr/mobile-sdk/ios-sdk-integration-instructions",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "xandr-docs/monetize/create-a-package.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/monetize/selling-deals",
             "redirect_document_id": false
@@ -48,11 +63,6 @@
         {
             "source_path": "xandr-docs/invest/release-notes-20240701.md",
             "redirect_url": "https://learn.microsoft.com/en-us/xandr/invest/release-notes",
-            "redirect_document_id": false
-        },
-        {
-            "source_path": "xandr-docs/mobile-sdk/ios-sdk-integration-instructions.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/xandr/mobile-sdk/migrating-ios-sdk-v9.x.y-to-v2",
             "redirect_document_id": false
         },
         {

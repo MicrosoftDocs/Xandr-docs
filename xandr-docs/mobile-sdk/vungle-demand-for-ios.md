@@ -2,7 +2,7 @@
 title: Vungle Demand for iOS
 description: Learn how to integrate Vungle demand for interstitial video ads on iOS using the AppNexus SDK and ANVungleAdapter.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -14,49 +14,27 @@ This page provides detailed steps for integrating and displaying Interstitial Vi
 
 ## Prerequisites
 
-Before integrating Vungle Demand, ensure that you have the following SDK versions installed:
+Before integrating Vungle demand, ensure that you have the following:
 
-- **Microsoft Ads SDK**: version 9.3.0
-- **ANVungleAdapter**: required for Vungle integration
-- **VungleAds SDK**: version 7.3.2
+- An app that targets iOS 15.0 or later.
+- A Vungle app ID and placement ID.
 
 ## SDK installation
 
-To integrate the Vungle Demand, you will need to install the **Mobile SDK** and the **ANVungleAdapter** package. Follow the steps below to install the required dependencies using CocoaPods.
+Install the Vungle adapter by using Swift Package Manager. The adapter package includes compatible versions of the iOS SDK and Vungle Ads SDK as dependencies.
 
-### Step 1: Install CocoaPods
+1. Open your project in Xcode.
+1. Select the project in the Project navigator, and then select **Package Dependencies**.
+1. Select the **+** button to add a package dependency.
+1. Enter the following package URL in the search box, and then press **Return**:
 
-If you haven't installed CocoaPods, follow the [installation guide on CocoaPods.org](https://cocoapods.org/).
-
-### Step 2: Create and configure the Podfile
-
-1. Open Terminal or your preferred command line editor.
-1. Navigate to your project directory.
-1. Create a new Podfile by running the command:
-
-   ```bash
-   pod init
+   ```text
+   https://github.com/appnexus/mobile-sdk-ios-mediation-vungle
    ```
 
-1. Open the newly created **Podfile** using a text editor.
-1. Ensure the platform is set to **iOS 12.0**, and include the following dependencies in the `target` section:
-
-#### Example Podfile configuration
-
-```
-    platform :ios, '12.0'
-    project 'SampleApp'
-
-    target 'SampleApp' do
-        pod 'AppNexusSDK'
-        pod 'AppNexusSDK/ANVungleAdapter'
-    end
-```
-
-### Step 3: Install the Pods
-
-1. Save the changes to the **Podfile**, then proceed to install the dependencies.
-1. In Terminal, run the following command to install the pods.
+1. Choose the version setting that fits your project. For new projects, select **Up to Next Major Version**. Then select **Add Package**.
+1. Select the **ANVungleAdapter** product and your app target, and then select **Add Package**.
+1. Verify that **ANVungleAdapter** appears under **Package Dependencies**.
 
 ## Initialize the Vungle SDK
 
@@ -65,13 +43,14 @@ Replace "YOUR_APP_ID" with the App ID provided by Vungle.
 
 ### Example
 
-#### [Swift](#tab/Swift1)
+#### [Swift](#tab/swift1)
 
-```java
+```swift
 
 VungleAds.initWithAppId("YOUR_APP_ID") { error in
     if let error = error {
         print("VUNGLE - Error initializing SDK: \(error.localizedDescription)")
+        ANVungleSettings.setVungleInitialize(false)
     } else {
         print("VUNGLE - SDK initialization successful")
         ANVungleSettings.setVungleInitialize(true)
@@ -79,23 +58,19 @@ VungleAds.initWithAppId("YOUR_APP_ID") { error in
 }
 ```
 
-#### [Objective C](#tab/objectivec1)
+#### [Objective-C](#tab/objectivec1)
 
 ```objectivec
 
-[VungleAds initWithAppId:@"" completion:^(NSError * _Nullable error) {
+[VungleAds initWithAppId:@"YOUR_APP_ID" completion:^(NSError * _Nullable error) {
     if (error) {
         NSLog(@"Error initializing SDK");
+        [ANVungleSettings setVungleInitialize:NO];
     } else {
         NSLog(@"Init is complete");
+        [ANVungleSettings setVungleInitialize:YES];
     }
 }];
-
-if ([VungleAds isInitialized]) {
-    NSLog(@"SDK is initialized");
-} else {
-    NSLog(@"SDK is NOT initialized");
-}
 ```
 ---
 
@@ -138,7 +113,7 @@ interstitialAd.delegate = self
 interstitialAd.load()
 ```
 
-#### [Objective C](#tab/objectivec2)
+#### [Objective-C](#tab/objectivec2)
 
 ```objectivec
 
@@ -167,7 +142,7 @@ func adDidReceiveAd(_ ad: Any) {
 }
 ```
 
-#### [Objective C](#tab/objectivec3)
+#### [Objective-C](#tab/objectivec3)
 
 ```objectivec
 

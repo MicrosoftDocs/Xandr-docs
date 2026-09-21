@@ -1,7 +1,7 @@
 ---
 title: Mediate with iOS
-description: This article provides information on mediation with iOS. Mediation lets you sell ad impressions through multiple networks to generate more revenue.
-ms.date: 1/28/2026
+description: Learn how to add and set up mediation adapters for the iOS SDK.
+ms.date: 09/21/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -9,154 +9,189 @@ ms.author: shsrinivasan
 
 # Mediate with iOS
 
-<!--Mediation lets you sell ad impressions through multiple networks to generate more revenue. This is initiated by your main (mediating) SDK which calls out to one or more mediated SDKs in a "waterfall"-like process. If your main SDK can't show an ad for some reason, it can iterate over the list of mediated SDKs and contact them in the order you specify. This will continue until the impression is filled or you've run out of mediated SDKs.
+This article describes how to install and configure mediation adapters for the iOS SDK.
 
-Reasons to mediate to another SDK include the following:
+## Overview
 
-- To provide better monetization under specific circumstances
-- To provide access to information such as a unique user ID or the device's operating system, location, or ID
-- Some networks only accept requests from their own SDKs, forcing you to use their SDK to access their demand -->
+Mediation enables your app to request ads from multiple ad networks through the iOS SDK. Each adapter connects the iOS SDK to a network SDK. During an ad request, mediation checks the configured demand sources until one fills the request or no demand remains.
 
 ## Supported networks and media types
 
-This section lists the networks that we provide mediation adaptors for, and the media types that each adaptor supports. For each adaptor, we show whether it supports banners, interstitials, native, or all three.
+The following mediation adapters and media types are supported:
 
-| Adaptor | Version | Banner | Interstitial | Native | Docs |
+| Demand source | Network SDK version | Banner | Interstitial | Native | Docs |
 |:---|:---|:---|:---|:---|:---|
-| AdMob and DFP | 10.10.0  | Yes | Yes | Yes | [Google Mobile Ads - iOS Document](https://developers.google.com/admob/ios/mediation) |
-| SmartAdServer | 7.24.2  | Yes | Yes | No | [SmartAdServer Documentation](https://documentation.smartadserver.com/displaySDK/) |
+| Google AdMob | 12.8.0 | Yes | Yes | Yes | [AdMob mediation](https://developers.google.com/admob/ios/mediation) |
+| Google Ad Manager | 12.8.0 | Yes | Yes | No | [Google Ad Manager mediation](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/mediation) |
+| SmartAdServer | 7.24.2 | Yes | Yes | No | [SmartAdServer SDK documentation](https://documentation.smartadserver.com/displaySDK/) |
 
-## Prerequisites
+## Requirements
 
-To mediate these networks, you'll need the following:
+- Your app must target iOS 15.0 or later.
+- Install a supported iOS SDK release. For instructions, see [iOS SDK integration instructions](ios-sdk-integration-instructions.md).
+- Add an adapter for each network you want to mediate.
 
-- A supported release of our SDK. For instructions on installing our SDK, see [Integrate with iOS](./ios-sdk-integration.md).
-- The SDK of the network you want to mediate.
-- A mediation adaptor that allows our SDK to communicate with the network's SDK. If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list:
+## Install mediation adapters
 
-    ```
-    platform :ios, '12.0'
-       
-    target 'SimpleBanner' do
-      pod 'AppNexusSDK/GoogleAdapter'
-      pod 'AppNexusSDK/SmartAdAdapter'
-    end   
-    ```
+Use Swift Package Manager to add one or both mediation adapter packages. Each package declares compatible iOS SDK and third-party network SDK dependencies, which Swift Package Manager resolves automatically.
 
-<!-- - There are two ways to get our mediation adaptors:
-  - You can install the binary builds of the adaptors that are included with our [official releases](https://github.com/appnexus/mobile-sdk-ios/releases). You can also build the adaptors yourself from [source](https://github.com/appnexus/mobile-sdk-ios/tree/master/mediation/mediatedviews).
-  - If you use [CocoaPods](https://cocoapods.org/), use the code below in your project directory's PodFile. You can include as many or as few adaptors as you like from this list: -->
+For Google AdMob or Google Ad Manager, add the following package and select the `ANGoogleAdapter` product:
 
-## Instantiate mediation adaptors
-
-If you use the following adaptor, you need to initialize the adaptor's SDK as early as possible in the lifecycle of the application. A perfect place to do this is in the app delegate. The code samples below show how to do this.
-
-### AdMob native mediation
-
-> [!NOTE]
-> The instructions in this section are only needed if you are doing native mediation. Mediating banners and interstitials should not require any initialization code or further work.
-
-To handle AdMob native ads, you need to:
-
-1. Create a native ad view that inherits from `GADNativeAdView`:
-
-    ```
-    #pragma mark - ANNativeAdRequestDelegate
-    - (void)adRequest:(ANNativeAdRequest *)request didReceiveResponse:(ANNativeAdResponse *)response
-    {
-       ...
-       if (self.nativeAdResponse.networkCode == ANNativeAdNetworkCodeAdMob) {
-        // If ANNativeAdNetworkCodeAdMob, special Steps are there for creating a View which supports Google's MediaView Requirements.
-            
-        GADNativeAdView *nativeAdView = // Pass your Google Admob View(Step 2)for rendering Native Ad response ;
-        ...
-        // All the native components will be set as regular Ad  
-        // Main Image is automatically added by GoogleSDK in the MediaView
-       }else{
-         ...
-          // If not ANNativeAdNetworkCodeAdMob, create a regular View for all others.
-       }
-    }
-    ```
-
-    > [!NOTE]
-    > For SDK v5.3 and higher, you need to specify the `GADIsADManagerApp` key in the app's `info.plist` with a boolean `YES` value.
-    >
-    > ```
-    > <key>GADIsAdManagerApp</key>
-    >  <true/>
-    > ```
-
-1. Set up the custom keyword.
-
-    For passing the content URL to the Google SDK, the content URL needs to be passed as a custom keyword with the requester ad object (`BannerAdView`, `InterstitialAdView`, `NativeAdRequest`). The key to be used is `content_url`. Here is an example:
-
-    ```
-    // Add key content_url with a value (www.appnexus.com).
-    [adView addCustomKeywordWithKey:@"content_url" value:@"www.appnexus.com"];
-    ```
-
-### AdMob banner mediation  
-
-> [!NOTE]
-> The instructions in this section are only needed to load AdMob banner ads in iPads for the apps that support multi-window capability.
-
-To handle AdMob banner ads for the apps that support multi-window capability in iPads, Xandr Mobile SDK provides a public class `ANGoogleMediationSettings`. This class contains:
-
-- Boolean method `setIPadMultiSceneSupport` that needs to be set as `YES`, if the app supports multi-screen in iPads.
-- Getter method `getIPadMultiSceneSupport` to fetch the value set for the apps.
-
-  **Code Sample (Objective C)**
-
-  ```
-  /**
-   Set setIPadMultiScreenSupport to YES if the application will support multiscene in iPad.
-   */
-  + (void)setIPadMultiSceneSupport:(BOOL)setIPadMultiSceneSupport;
-  + (BOOL)getIPadMultiSceneSupport;
-  ```
-
-Additionally, publishers should load the ad from `viewDidAppear` method instead of `viewDidLoad` in the app.
-
-#### Example of use (Objective C)
-
-```
-/**
- Set setIPadMultiScreenSupport to YES if the application will support multiscene in iPad.
- */
-[ANGoogleMediationSettings setIPadMultiSceneSupport:YES];
+```text
+https://github.com/appnexus/mobile-sdk-ios-mediation-google
 ```
 
-## Google mediation adapter for PPID
+For SmartAdServer, add the following package and select the `ANSmartAdapter` product:
 
-The Google Mediation adapter supports **Publisher Provided ID (PPID)**. PPID enables publishers to pass a publisher-defined identifier to Google Ad Manager to support enhanced ad targeting and reporting.
-
-### Set the PPID for Google Mediation
-
-To configure PPID for Google Mediation, call the following method provided by the adapter. The PPID value is sent to Google Ad Manager with ad requests.
-
+```text
+https://github.com/appnexus/mobile-sdk-ios-mediation-smartadserver
 ```
-[ANGoogleMediationSettings setGooglePublisherProvidedId:@"your-ppid-value"];
+
+For each adapter:
+
+1. Open your project in Xcode.
+1. Select the project in the Project navigator, and then select **Package Dependencies**.
+1. Select the **+** button, enter one of the package URLs shown above, and then press **Return**.
+1. Choose the version setting that fits your project. For new projects, select **Up to Next Major Version**. Then select **Add Package**.
+1. Select the adapter product identified above and your app target, and then select **Add Package**.
+1. Verify that the adapter appears under **Package Dependencies**.
+
+After installing the adapters, complete the configuration for each adapter before loading ads.
+
+## Google Mobile Ads SDK
+
+The `ANGoogleAdapter` package supports Google AdMob and Google Ad Manager demand. Both demand sources support banner and interstitial ads. Native mediation is available only for AdMob.
+
+***Add the Google app ID (AdMob and Google Ad Manager)***
+
+Add the `GADApplicationIdentifier` key to your app's `Info.plist`. Set its value to your AdMob or Google Ad Manager app ID. This app-level setting applies to all Google ad formats:
+
+```xml
+<key>GADApplicationIdentifier</key>
+<string>ca-app-pub-################~##########</string>
 ```
-> [!NOTE]
-> - Set the PPID before making any ad requests to ensure it is included.
-> - PPID applies only to **Google Mediation** and does not impact other mediated networks.
 
-### Example
+***Pass a content URL (AdMob and Google Ad Manager)***
+
+To pass the URL of the content surrounding an ad to Google, add `content_url` as a custom keyword to the ad unit. This applies to banner and interstitial requests for AdMob and Google Ad Manager, and native requests for AdMob. The following example uses `ANBannerAdView`:
+
+#### [Swift](#tab/swift1)
+
+```swift
+let size = CGSize(width: 320, height: 50)
+let banner = ANBannerAdView(frame: CGRect(origin: .zero, size: size), placementId: "123456", adSize: size) // Create the banner ad view
+banner.addCustomKeywords(withKey: "content_url", values: ["https://www.example.com"]) // Set the content URL
 ```
-// Set PPID before loading ads
-[ANGoogleMediationSettings setGooglePublisherProvidedId:@"example-ppid-123"];
 
-// Proceed with loading ads as usual
+#### [Objective-C](#tab/objectivec1)
+
+```objectivec
+CGSize size = CGSizeMake(320, 50);
+ANBannerAdView *banner = [ANBannerAdView adViewWithFrame:CGRectMake(0, 0, 320, 50) placementId:@"123456" adSize:size]; // Create the banner ad view
+[banner addCustomKeywordsWithKey:@"content_url" values:@[@"https://www.example.com"]]; // Set the content URL
 ```
-## Custom mobile networks
 
-Microsoft Monetize has built-in support for a number of popular mobile ad networks. If you want to mediate a network it doesn't support, you must:
+---
 
-- Write a [custom mediation adaptor](./ios-custom-adaptors.md) that lets our SDK receive events from the SDK you want to mediate.
-- Set up a **Custom Mobile Network** using the instructions in [Add a Network](../digital-platform-api/mediated-network-service.md).
+***Support multiple iPad windows (AdMob and Google Ad Manager)***
+
+To load Google-mediated banner ads in an iPad app that supports multiple windows, enable multi-scene support before loading ads. Load the banner from `viewDidAppear(_:)` instead of `viewDidLoad()`. This configuration applies only to Google-mediated banner ads in multi-window iPad apps:
+
+#### [Swift](#tab/swift2)
+
+```swift
+ANGoogleMediationSettings.setIPadMultiSceneSupport(true) // Enable iPad multi-scene support
+```
+
+#### [Objective-C](#tab/objectivec2)
+
+```objectivec
+[ANGoogleMediationSettings setIPadMultiSceneSupport:YES]; // Enable iPad multi-scene support
+```
+
+---
+
+***Set a Publisher Provided ID (Google Ad Manager only)***
+
+To pass a publisher-defined identifier to Google Ad Manager for ad targeting and reporting, set a **Publisher Provided ID (PPID)** before making ad requests. This applies only to Google Ad Manager demand:
+
+#### [Swift](#tab/swift3)
+
+```swift
+ANGoogleMediationSettings.setGooglePublisherProvidedId("example-ppid-123") // Set the Google PPID
+```
+
+#### [Objective-C](#tab/objectivec3)
+
+```objectivec
+[ANGoogleMediationSettings setGooglePublisherProvidedId:@"example-ppid-123"]; // Set the Google PPID
+```
+
+---
+
+***Set up native mediation (AdMob only)***
+
+To render an AdMob native response, load the native ad view from a XIB. Set the XIB's root view to `NativeAdView` in Swift or `GADNativeAdView` in Objective-C. The following example verifies that AdMob filled the request, renders the title, and registers the view for tracking:
+
+#### [Swift](#tab/swift4)
+
+```swift
+func adRequest(_ request: ANNativeAdRequest, didReceive response: ANNativeAdResponse) {
+  guard response.networkCode == .adMob else { return }
+
+  let adNib = UINib(nibName: "NativeAdView", bundle: .main)
+  guard let nativeAdView = adNib.instantiate(withOwner: self).first as? NativeAdView else { return }
+  (nativeAdView.headlineView as? UILabel)?.text = response.title // Render the native ad title
+
+  do {
+    try response.registerView(
+      forTracking: nativeAdView,
+      withRootViewController: self,
+      clickableViews: [nativeAdView.callToActionView as Any]
+    ) // Register the AdMob native view
+  } catch {
+    print("Unable to register the AdMob native view: \(error)")
+  }
+}
+```
+
+#### [Objective-C](#tab/objectivec4)
+
+```objectivec
+- (void)adRequest:(ANNativeAdRequest *)request
+    didReceiveResponse:(ANNativeAdResponse *)response {
+  if (response.networkCode != ANNativeAdNetworkCodeAdMob) {
+    return;
+  }
+
+  NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"NativeAdView"
+                           owner:self
+                           options:nil];
+  GADNativeAdView *nativeAdView = objects.firstObject;
+  ((UILabel *)nativeAdView.headlineView).text = response.title; // Render the native ad title
+
+  NSError *registrationError = nil;
+  [response registerViewForTracking:nativeAdView
+         withRootViewController:self
+             clickableViews:@[nativeAdView.callToActionView]
+                error:&registrationError]; // Register the AdMob native view
+}
+```
+
+---
+
+## SmartAdServer
+
+The SmartAdServer adapter doesn't require additional configuration after you add its package dependency.
+
+## Custom mediation networks
+
+Microsoft Monetize provides built-in support for several mobile ad networks. To mediate another network:
+
+- Write a [custom mediation adaptor](./ios-custom-adaptors.md) that enables the iOS SDK to receive events from the network SDK.
+- Follow the instructions in [Add a Network](../digital-platform-api/mediated-network-service.md) to create a **Custom Mobile Network**.
 
 ## Related topics
 
-- [Integrate with iOS](./ios-sdk-integration.md)
+- [iOS SDK integration instructions](ios-sdk-integration-instructions.md)
 - [iOS Custom Adaptors](./ios-custom-adaptors.md)

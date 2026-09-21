@@ -2,7 +2,7 @@
 title: Android SDK Settings
 description: In this article, find information about the various Android SDK settings to help you in the development of your app. 
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -27,6 +27,8 @@ Xandr Mobile SDK provides various settings you can use to help you in the develo
 | `void setAuctionTimeout(long auctionTimeout)` | Sets the timeout period in milliseconds. <br><br> See [Set the Auction Timeout](#set-the-auction-timeout) below for more details. |
 | `void enableTestMode(Boolean enabled)` | Sets true or false for the AdRequests to be executed in the test mode. <br><br> See [Set Test Mode](#set-test-mode) below for more details. |
 | `void setContentLanguage(String contentLanguage)` | Sets the code for the content's language. <br><br> See [Set Content Language](#set-content-language) below for more details. |
+| `void setOMIDOptimizationEnabled(boolean enabled)` | Enables or disables OMID session-lifecycle optimization for native ads. <br><br> See [OMID optimization](#omid-optimization) below for more details. |
+| `boolean isOMIDOptimizationEnabled()` | Returns whether OMID session-lifecycle optimization is enabled. |
 
 ## Initialize SDK settings
 
@@ -377,5 +379,18 @@ SDKSettings.setContentLanguage("EN")
 ```
 SDKSettings.setContentLanguage("EN")
 ```
+
+---
+
+## OMID optimization
+
+Use the following methods on `SDKSettings`:
+
+| Method | Description |
+|:---|:---|
+| `public static void setOMIDOptimizationEnabled(boolean enabled)` | Enables or disables OMID session-lifecycle optimization for native ads. The default is `false`. |
+| `public static boolean isOMIDOptimizationEnabled()` | Returns whether OMID session-lifecycle optimization is enabled. |
+
+For behavior, scope, and examples, see [Enable OMID optimization](viewability-measurement-on-android.md#enable-omid-optimization).
 
 ---

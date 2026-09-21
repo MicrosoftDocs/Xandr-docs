@@ -1,7 +1,7 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 8/27/2026
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: rupambaruah
@@ -358,7 +358,7 @@ This marks the final minor release within SDK v8.x. Looking ahead, SDK v9.0 will
 
 ### Announcements
 
-We have completed the removal of the APIs referenced in the 7.21 release. Please note there are breaking changes to some of our APIs, particularly for our init methods which is required for ad calls to be successful- XandrAd.init(). See our [8.0 integration guide](migrating-android-sdk-v7-to-8-0.md), as well as our [SDK initialization guide](android-sdk-initialization-v8-0.md) for further details.
+We have completed the removal of the APIs referenced in the 7.21 release. Note that there are breaking changes to some APIs, particularly the initialization methods required before making ad calls. For more information, see the [SDK initialization guide](android-sdk-initialization-v8-0.md).
 
 ### Improvement/Bug fixes
 

@@ -1,51 +1,65 @@
 ---
-title: Get Facebook Demand for Native on Android
-description: In this article, learn how to retrieve native ad assets for display in Facebook's Audience Network SDK on Android devices.
+title: Get Facebook demand for native on Android
+description: Learn how to use the Android SDK Facebook adapter to request, render, and track Facebook native ads.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Get Facebook demand for native on Android
 
-This article describes the process for retrieving native ad assets to display in Facebook's Audience Network SDK in following steps:
+This article describes how to use the Android SDK Facebook adapter to retrieve and display native ads from Meta Audience Network.
 
 ## SDK installation
 
-The Mobile SDK and Xandr-FAN-Demand Package will need to be installed. To know more about the details of the releases, see our [release page](android-sdk-release-notes.md). In the dependencies section of the `build.gradle` of your project add these two lines:
+Add the Android SDK and Facebook CSR adapter to your app module's `build.gradle` file. The adapter version combines the Android SDK version and its supported Meta Audience Network version. For other releases, see [Android SDK release notes](android-sdk-release-notes.md).
 
-``` 
+```groovy
 dependencies {
-    implementation 'com.appnexus.opensdk:appnexus-sdk:[8,9)'
-    implementation 'com.appnexus.opensdk.csr:appnexus-facebook-csr:[8,9)'
+    implementation 'com.appnexus.opensdk:appnexus-sdk:9.12.0'
+    implementation 'com.appnexus.opensdk.csr:appnexus-facebook-csr:9.12.0-6.22.0'
 }
 ```
 
 ## Initialize Facebook's Audience Network SDK
 
-Early in the lifecycle of your app, initialize `Audience Network` like so:
+Early in your app lifecycle, initialize Meta Audience Network.
 
-``` 
+### [Kotlin](#tab/kotlin1)
+
+```kotlin
+AudienceNetworkAds.buildInitSettings(this)
+    .withInitListener {
+        // Load ads after initialization completes
+    }
+    .initialize()
+```
+
+### [Java](#tab/java1)
+
+```java
 AudienceNetworkAds.buildInitSettings(this).withInitListener(new AudienceNetworkAds.InitListener() {
     @Override
     public void onInitialized(AudienceNetworkAds.InitResult initResult) {
-        // do something, load ad or else
+        // Load ads after initialization completes
     }
 }).initialize();
 ```
 
+---
+
 > [!NOTE]
-> To ensure a successful implementation of a native ad with `Audience Network` your custom native view must include [MediaView](https://developers.facebook.com/docs/audience-network/setting-up/ad-setup/android/native#mediaview) for the main asset.
+> When you register the native ad, provide either a Meta `MediaView` or an Android `ImageView` for the icon. Choose the corresponding `FBNativeBannerAdResponse.registerView` overload.
 
 ## Create a native banner ad layout
 
-In the activity layout's `activity_main.xml` of your app, add a container for your native ad. This container should be of type `com.facebook.ads.NativeAdLayout`, which is a wrapper on top of a `FrameLayout`. This wrapper provides extra functionality that enables Mobile SDK to render a native `Ad Reporting Flow` on top of the ad.
+In your activity layout, add a `com.facebook.ads.NativeAdLayout` container. This class wraps `FrameLayout` and enables Meta Audience Network to render its ad reporting flow.
 
-``` 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="https://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     ...
@@ -65,131 +79,127 @@ In the activity layout's `activity_main.xml` of your app, add a container for yo
 > [!NOTE]
 > Hold a reference to the request until you receive a response.
 
-Check the type of response returned from the `NativeAdRequest`. If the response type is `FBNativeBannerAdResponse`, cast the initial response to an `FBNativeBannerAdResponse` and call the `inflateAndRegisterFB` method. For other native ad types, call the `inflateAndRegisterNonFB`.
+Check the response returned from `NativeAdRequest`. Register `FBNativeBannerAdResponse` directly with the Facebook adapter. Register other native responses with `NativeAdSDK`.
 
-``` 
-NativeAdRequest request = new NativeAdRequest(MainActivity.this, "17823252");
-request.setListener(new NativeAdRequestListener() {
-    @Override
-    public void onAdLoaded(NativeAdResponse response) {
-        Log.d("NativeBanner", "loaded");
-        MainActivity.this.response = response;
-        if (response instanceof FBNativeBannerAdResponse) {
-            FBNativeBannerAdResponse fbResponse = (FBNativeBannerAdResponse) response;
-            inflateAndRegisterFB(fbResponse);
+The following example assumes that `adView`, `nativeAdIconView`, and `nativeAdCallToAction` are initialized from your native ad layout.
+
+### [Kotlin](#tab/kotlin2)
+
+```kotlin
+class MainActivity : AppCompatActivity(), NativeAdRequestListener, NativeAdEventListener {
+    private lateinit var request: NativeAdRequest
+    private var response: NativeAdResponse? = null
+    private lateinit var adView: View
+    private lateinit var nativeAdIconView: ImageView
+    private lateinit var nativeAdCallToAction: Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        request = NativeAdRequest(this, "17823252") // Create the native ad request
+        request.listener = this // Set the request listener
+        request.loadAd() // Load the ad
+    }
+
+    override fun onAdLoaded(response: NativeAdResponse) {
+        this.response = response
+        nativeAdCallToAction.text = response.callToAction // Render the call-to-action text
+        val clickableViews = listOf<View>(nativeAdCallToAction)
+
+        if (response is FBNativeBannerAdResponse) {
+            response.registerView(adView, nativeAdIconView, clickableViews, this) // Register the Facebook response
         } else {
-            inflateAndRegisterNonFB(response);
+            NativeAdSDK.registerTracking(response, adView, clickableViews, this) // Register other native responses
         }
     }
- 
-    @Override
-    public void onAdFailed(ResultCode errorcode) {
-        Log.d("NativeBanner", "failed");
+
+    override fun onAdFailed(errorCode: ResultCode, adResponseInfo: ANAdResponseInfo?) {
+        Log.d("NativeBanner", "Failed: ${errorCode.message}")
     }
-});
-request.loadAd();
-```
 
-## Inflate and register the native ad
+    override fun onAdWasClicked() = Unit
+    override fun onAdWillLeaveApplication() = Unit
+    override fun onAdWasClicked(clickUrl: String, fallbackURL: String) = Unit
+    override fun onAdImpression() = Unit
+    override fun onAdAboutToExpire() = Unit
+    override fun onAdExpired() = Unit
 
-The process for creating the NativeAdRequest and loading the ad uses one of these methods, depending on the native ad object returned in the response:
-
-- `inflateAndRegisterFB`
-- `inflateAndRegisterNonFB`
-
-These methods are identical in function except for the registration process. If the object returned in the response is a `FBNativeBannerAdResponse` the response would call the `registerView` method to register the ad. If it was not a `FBNativeBannerAdResponse` object the response would then call `NativeAdSDK.registerTracking` to register the ad.
-
-### `inflateAndRegisterFB` example
-
-Retrieve and display the call to action text for the call to action button:
-
-``` 
-Button nativeAdCallToAction = adView.findViewById(R.id.native_ad_call_to_action);
-nativeAdCallToAction.setText(fbResponse.getCallToAction());
-```
-
-Once the button text has been retrieved, register the native ad so the click action and impression tracking can be activated:
-
-``` 
-fbResponse.registerView(adView, nativeAdIconView, clickableViews, new NativeAdEventListener() {
-    @Override
-    public void onAdWasClicked() {
-     
-    }
- 
-    @Override
-    public void onAdWillLeaveApplication() {
- 
-    }
- 
-    @Override
-    public void onAdWasClicked(String clickUrl, String fallbackURL) {
- 
-    }
-});
-```
-
-### `inflateAndRegisterNonFB` example
-
-Retrieve the call to action text to display on the call to action button and display that text:
-
-``` 
-Button nativeAdCallToAction = adView.findViewById(R.id.native_ad_call_to_action);
-nativeAdCallToAction.setText(response.getCallToAction());
-```
-
-Once the button text has been retrieved register the native ad so the click action and impression tracking can be activated:
-
-```
-NativeAdSDK.registerTracking(response, adView, clickableViews, new NativeAdEventListener() {
-    @Override
-    public void onAdWasClicked() {
-         
-    }
- 
-    @Override
-    public void onAdWillLeaveApplication() {
- 
-    }
- 
-    @Override
-    public void onAdWasClicked(String clickUrl, String fallbackURL) {
- 
-    }
-});
-```
-
-### Access the original native object
-
-Publishers can access the original native object through the `getNativeElements` method:
-
-``` 
-nativeAdCallToAction.setText(fbResponse.getCallToAction());
-nativeAdSocialContext.setText(((NativeAdBase) 
-response.getNativeElements().get(NativeAdResponse.NATIVE_ELEMENT_OBJECT)).getAdSocialContext());
-```
-
-## Unregister the views
-
-When the app is finished displaying the ads you must unregister the views.
-
-``` 
-if (this.response != null) {
-    if (this.response instanceof FBNativeBannerAdResponse) {
-        FBNativeBannerAdResponse fbresponse = (FBNativeBannerAdResponse) response;
-        fbresponse.unregisterView();
-        this.response = null;
-    } else {
-        NativeAdSDK.unRegisterTracking(nativeAdView);
+    override fun onDestroy() {
+        when (val currentResponse = response) {
+            is FBNativeBannerAdResponse -> currentResponse.unregisterView() // Unregister the Facebook response
+            null -> Unit
+            else -> NativeAdSDK.unRegisterTracking(adView) // Unregister other native responses
+        }
+        response = null
+        super.onDestroy()
     }
 }
 ```
 
-## Example app
+### [Java](#tab/java2)
 
-Xandr has provided an [example app](https://github.com/appnexus/AppExamples/tree/master/Android/Java/FacebookDemand) on our Github repo.
+```java
+public class MainActivity extends AppCompatActivity
+        implements NativeAdRequestListener, NativeAdEventListener {
+    private NativeAdRequest request;
+    private NativeAdResponse response;
+    private View adView;
+    private ImageView nativeAdIconView;
+    private Button nativeAdCallToAction;
 
-## Related topics
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        request = new NativeAdRequest(this, "17823252"); // Create the native ad request
+        request.setListener(this); // Set the request listener
+        request.loadAd(); // Load the ad
+    }
+
+    @Override
+    public void onAdLoaded(NativeAdResponse response) {
+        this.response = response;
+        nativeAdCallToAction.setText(response.getCallToAction()); // Render the call-to-action text
+        List<View> clickableViews = Arrays.asList(nativeAdCallToAction);
+
+        if (response instanceof FBNativeBannerAdResponse) {
+            FBNativeBannerAdResponse facebookResponse = (FBNativeBannerAdResponse) response;
+            facebookResponse.registerView(adView, nativeAdIconView, clickableViews, this); // Register the Facebook response
+        } else {
+            NativeAdSDK.registerTracking(response, adView, clickableViews, this); // Register other native responses
+        }
+    }
+
+    @Override
+    public void onAdFailed(ResultCode errorCode, ANAdResponseInfo adResponseInfo) {
+        Log.d("NativeBanner", "Failed: " + errorCode.getMessage());
+    }
+
+    @Override public void onAdWasClicked() {}
+    @Override public void onAdWillLeaveApplication() {}
+    @Override public void onAdWasClicked(String clickUrl, String fallbackURL) {}
+    @Override public void onAdImpression() {}
+    @Override public void onAdAboutToExpire() {}
+    @Override public void onAdExpired() {}
+
+    @Override
+    protected void onDestroy() {
+        if (response instanceof FBNativeBannerAdResponse) {
+            ((FBNativeBannerAdResponse) response).unregisterView(); // Unregister the Facebook response
+        } else if (response != null) {
+            NativeAdSDK.unRegisterTracking(adView); // Unregister other native responses
+        }
+        response = null;
+        super.onDestroy();
+    }
+}
+```
+
+---
+
+## Related
 
 - [Android SDK Integration Instructions](android-sdk-integration-instructions.md)
 - [Show Banner Native on Android](show-banner-native-on-android.md)

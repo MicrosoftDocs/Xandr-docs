@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 6/15/2026
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: rupambaruah
@@ -17,7 +17,7 @@ ms.author: rupambaruah
 *Released: August 27, 2026*
 
 > [!NOTE]
-> Starting with the next release, CocoaPods support will be discontinued. Swift Package Manager (SPM) will become the primary distribution method. For instructions, see [Integrating the SDK via SPM](migrating-ios-sdk-v9.x.y-to-v2.md#swift-package-manager).
+> Starting with the next release, CocoaPods support will be discontinued. Swift Package Manager (SPM) will become the primary distribution method. For instructions, see [Integrating the SDK via SPM](ios-sdk-integration-instructions.md#swift-package-manager).
 
 ### New Feature
 + 10947763: Added an in-app install experience for supported app store ad clicks.
@@ -230,7 +230,7 @@ ms.author: rupambaruah
 *Released: July 9, 2024*
 
 > [!NOTE]
-> As of v9.0.0 release, the source code is moved to private repositories as already announced. You can refer to the [migration guide](migrating-ios-sdk-v8.x.y-to-v9.x.y.md) to understand how to utilize the binary framework.
+> As of v9.0.0, SDK updates are distributed as binary frameworks. For installation options, see the [iOS SDK integration instructions](ios-sdk-integration-instructions.md).
 
 ### New feature
 

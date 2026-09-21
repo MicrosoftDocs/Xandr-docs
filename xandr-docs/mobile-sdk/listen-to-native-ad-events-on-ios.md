@@ -1,8 +1,8 @@
 ---
-title: Listen to Native Ad Events on iOS
-description: In this article, learn about the NativeAdEventListener feature in iOS, including its scope, methods, and examples.
+title: Listen to native ad events on iOS
+description: Learn how to use ANNativeAdDelegate to receive impression, click, navigation, presentation, and expiration events on iOS.
 ms.custom: ios-sdk
-ms.date: 10/22/2025
+ms.date: 09/17/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -10,161 +10,215 @@ ms.author: shsrinivasan
 
 # Listen to native ad events on iOS
 
+This article describes how to use `ANNativeAdDelegate` to receive events for native ads.
+
 ## Overview
 
-A publisher can opt for the SDK to handle various ad events such as AdClick, occurrence of impressions etc., by registering into **NativeAdEventListener** API. Using the API, SDK handles all the mentioned events and notify the publishers whether the impression trackers are fired or not for the creatives. To listen to the Ad events, publishers need to register first using **registerViewForTracking**, after which SDK uses **NativeAdEventListener** to track the ad events. Publishers need to unregister using **NativeAdResponse** when they are finished with the views for the response or wish to reuse the vieww object(s) for a new **NativeAdResponse**.
+`ANNativeAdDelegate` notifies your app about native ad impressions, clicks, navigation away from the app, presentation changes, and expiration. After rendering the assets from `ANNativeAdResponse`, set its delegate and register the native ad view for tracking. For registration options, see [Show native ads on iOS](show-native-ads-on-ios.md#register-tracking).
 
-## Scope of listen to native ad events
+## Properties
 
-The scope of this feature is limited to native creatives only.
+Use the following property on `ANNativeAdResponse`:
+
+| Property | Type | Attribute | Description |
+|:---|:---|:---|:---|
+| `delegate` | `id<ANNativeAdDelegate>` | readwrite, weak | Assigns the delegate that receives impression, click, presentation, navigation, and expiration events for the registered native ad view. |
 
 ## Methods
-The following methods are supported in this feature:
 
+Use the following methods on `ANNativeAdDelegate`:
 
-### Register for tracking of ad events - registerViewForTracking
-
-Method that registers a single or a list of the developer views that will track impressions and respond to clicks for the native ad.
-
-```
-- (BOOL)registerViewForTracking:(nonnull UIView *)view
-         withRootViewController:(nonnull UIViewController *)rvc
-                 clickableViews:(nullable NSArray *)views
-                          error:(NSError *__nullable*__nullable)error
-```
-
-You can pass friendly obstruction list also in this method. For more information about Friendly Obstructions, see [OMID-Friendly Obstruction for iOS](omid-friendly-obstruction-for-ios.md).
-
-```
-- (BOOL)registerViewForTracking:(nonnull UIView *)view
-         withRootViewController:(nonnull UIViewController *)rvc
-                 clickableViews:(nullable NSArray<UIView *> *)views
-                 openMeasurementFriendlyObstructions:(nonnull NSArray<UIView *> *)obstructionViews
-                          error:(NSError *__nullable*__nullable)error;
-```
-
-### Tracking of ad events - NativeAdEventListener
-
-API with methods to track the ad events such as:
-
-- when the native view is clicked by the user.
-- when native view returns the click-through URL and click-through fallback URL.
-- when the native view was clicked, and the click through destination is about to open in the in-app browser.
-- when the in-app browser has finished presenting and taken control from the application.
-- when the in-app browser will close and control will be returned to the application.
-- when the in-app browser has closed and control has been returned to the application.
-- when the ad is about to leave the app or when an impression is recorded for a native creative.
-
-  ```
-  /*!
-   * Sent when the native view is clicked by the user.
-   */
-  - (void)adWasClicked:(nonnull id)response;
-   
-   
-  /*!
-   * Sent when the native view returns the click-through URL and click-through fallback URL
-   *   to the user instead of opening it in a browser.
-   */
-  - (void)adWasClicked: (nonnull id)response
-               withURL: (nonnull NSString *)clickURLString
-           fallbackURL: (nonnull NSString *)clickFallbackURLString;
-   
-   
-  /*!
-   * Sent when the native view was clicked, and the click through
-   * destination is about to open in the in-app browser.
-   *
-   * @note If it is preferred that the destination open in the
-   * native browser instead, then set clickThroughAction to ANClickThroughActionOpenDeviceBrowser.
-   */
-  - (void)adWillPresent:(nonnull id)response;
-   
-   
-  /*!
-   * Sent when the in-app browser has finished presenting and taken
-   * control from your application.
-   */
-  - (void)adDidPresent:(nonnull id)response;
-   
-   
-  /*!
-   * Sent when the in-app browser will close and before
-   * control has been returned to your application.
-   */
-  - (void)adWillClose:(nonnull id)response;
-   
-   
-  /*!
-   * Sent when the in-app browser has closed and control
-   * has been returned to your application.
-   */
-  - (void)adDidClose:(nonnull id)response;
-   
-   
-  /*!
-   * Sent when the ad is about to leave the app.
-   * This will happen in a number of cases, including when
-   *   clickThroughAction is set to ANClickThroughActionOpenDeviceBrowser.
-   */
-  - (void)adWillLeaveApplication:(nonnull id)response;
-   
-   
-   
-  /*!
-  * Sent when  an impression is recorded for an native ad
-  */
-  - (void)adDidLogImpression:(nonnull id)response;
-  ```
-
-### Unregister for tracking of ad events - unregisterTracking
-
-Method to unregister a native creative from tracking.
-
-```
-self.nativeAdResponse = nil
-```
+| Method | Description |
+|:---|:---|
+| `adWasClicked:` | Called after a native ad click when `clickThroughAction` is `ANClickThroughActionOpenSDKBrowser` or `ANClickThroughActionOpenDeviceBrowser`. The SDK opens the click-through destination. |
+| `adWasClicked:withURL:fallbackURL:` | Called after a native ad click when `clickThroughAction` is `ANClickThroughActionReturnURL`. Your app is responsible for handling the returned click-through URL or fallback URL. |
+| `adWillPresent:` | Called before the SDK presents the click-through destination in the in-app browser. |
+| `adDidPresent:` | Called after the in-app browser is presented and takes control from your app. |
+| `adWillClose:` | Called before the in-app browser closes and returns control to your app. |
+| `adDidClose:` | Called after the in-app browser closes and control returns to your app. |
+| `adWillLeaveApplication:` | Called before the click-through action moves the user from your app to another app, such as the device browser. |
+| `adDidLogImpression:` | Called after the SDK records the native ad impression and fires its impression trackers. |
+| `adWillExpire:` | Called shortly before the native ad response expires, allowing your app to prepare a replacement ad. |
+| `adDidExpire:` | Called when the native ad response expires and can no longer be registered for tracking. |
 
 ## Example
 
+### [Swift](#tab/swift1)
+
+```swift
+final class NativeAdViewController: UIViewController, ANNativeAdRequestDelegate, ANNativeAdDelegate {
+    @IBOutlet private weak var nativeAdView: UIView!
+    @IBOutlet private weak var titleLabel: UILabel!
+
+    private var nativeAdRequest: ANNativeAdRequest?
+    private var nativeAdResponse: ANNativeAdResponse?
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let request = ANNativeAdRequest()
+        request.placementId = "123456" // Set placement ID
+        request.delegate = self // Set the request delegate
+        nativeAdRequest = request
+        request.loadAd() // Load the ad
+    }
+
+    func adRequest(_ request: ANNativeAdRequest, didReceive response: ANNativeAdResponse) {
+        nativeAdResponse = response
+        titleLabel.text = response.title // Render the native ad title
+        response.delegate = self // Set the native ad event delegate
+
+        do {
+            try response.registerView(
+                forTracking: nativeAdView,
+                withRootViewController: self
+            ) // Register tracking and event callbacks
+        } catch {
+            print("Unable to register the native ad view: \(error)")
+        }
+    }
+
+    func adRequest(
+        _ request: ANNativeAdRequest,
+        didFailToLoadWithError error: Error,
+        with adResponseInfo: ANAdResponseInfo?
+    ) {
+        print("Native ad failed to load: \(error.localizedDescription)")
+    }
+
+    func adWasClicked(_ response: Any) {
+        print("Native ad clicked")
+    }
+
+    func adWasClicked(_ response: Any, withURL clickURL: String, fallbackURL: String) {
+        print("Native ad clicked: \(clickURL)")
+    }
+
+    func adWillPresent(_ response: Any) {
+        print("In-app browser will open")
+    }
+
+    func adDidPresent(_ response: Any) {
+        print("In-app browser opened")
+    }
+
+    func adWillClose(_ response: Any) {
+        print("In-app browser will close")
+    }
+
+    func adDidClose(_ response: Any) {
+        print("In-app browser closed")
+    }
+
+    func adWillLeaveApplication(_ response: Any) {
+        print("Native ad will leave the app")
+    }
+
+    func adDidLogImpression(_ response: Any) {
+        print("Native ad impression recorded")
+    }
+
+    func adWillExpire(_ response: Any) {
+        print("Native ad is about to expire")
+    }
+
+    func adDidExpire(_ response: Any) {
+        print("Native ad expired")
+    }
+}
 ```
-- (void)adWasClicked: (nonnull id)response
-             withURL: (nonnull NSString *)clickURLString
-         fallbackURL: (nonnull NSString *)clickFallbackURLString
-{
-    NSLog(@"adWasClicked callback called wadWillExpireithURLString");
+
+### [Objective-C](#tab/objectivec1)
+
+```objectivec
+@interface NativeAdViewController () <ANNativeAdRequestDelegate, ANNativeAdDelegate>
+@property (nonatomic, weak) IBOutlet UIView *nativeAdView;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
+@property (nonatomic, strong) ANNativeAdRequest *nativeAdRequest;
+@property (nonatomic, strong) ANNativeAdResponse *nativeAdResponse;
+@end
+
+@implementation NativeAdViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.nativeAdRequest = [[ANNativeAdRequest alloc] init];
+    self.nativeAdRequest.placementId = @"123456"; // Set placement ID
+    self.nativeAdRequest.delegate = self; // Set the request delegate
+    [self.nativeAdRequest loadAd]; // Load the ad
 }
-- (void)adWasClicked:(nonnull id)response {
-    NSLog(@"adWasClicked callback called");
+
+- (void)adRequest:(ANNativeAdRequest *)request
+        didReceiveResponse:(ANNativeAdResponse *)response {
+    self.nativeAdResponse = response;
+    self.titleLabel.text = response.title; // Render the native ad title
+    response.delegate = self; // Set the native ad event delegate
+
+    NSError *registrationError = nil;
+    BOOL registered = [response registerViewForTracking:self.nativeAdView
+                                 withRootViewController:self
+                                                  error:&registrationError]; // Register tracking and event callbacks
+    if (!registered) {
+        NSLog(@"Unable to register the native ad view: %@", registrationError);
+    }
 }
- 
- 
-- (void)adWillPresent:(nonnull id)response {
-    NSLog(@"adWillPresent callback called");
+
+- (void)adRequest:(ANNativeAdRequest *)request
+        didFailToLoadWithError:(NSError *)error
+        withAdResponseInfo:(ANAdResponseInfo *)adResponseInfo {
+    NSLog(@"Native ad failed to load: %@", error.localizedDescription);
 }
- 
- 
-- (void)adDidPresent:(nonnull id)response {
-    NSLog(@"adDidPresent callback called");
+
+- (void)adWasClicked:(id)response {
+    NSLog(@"Native ad clicked");
 }
- 
- 
-- (void)adWillClose:(nonnull id)response {
-    NSLog(@"adWillClose callback called");
+
+- (void)adWasClicked:(id)response
+             withURL:(NSString *)clickURL
+         fallbackURL:(NSString *)fallbackURL {
+    NSLog(@"Native ad clicked: %@", clickURL);
 }
- 
- 
-- (void)adDidClose:(nonnull id)response {
-    NSLog(@"adDidClose callback called");
+
+- (void)adWillPresent:(id)response {
+    NSLog(@"In-app browser will open");
 }
- 
- 
-- (void)adWillLeaveApplication:(nonnull id)response {
-    NSLog(@"adWillLeaveApplication callback called");
+
+- (void)adDidPresent:(id)response {
+    NSLog(@"In-app browser opened");
 }
- 
- 
-- (void)adDidLogImpression:(id)ad {
-    NSLog(@"adDidLogImpression callback called");
+
+- (void)adWillClose:(id)response {
+    NSLog(@"In-app browser will close");
 }
+
+- (void)adDidClose:(id)response {
+    NSLog(@"In-app browser closed");
+}
+
+- (void)adWillLeaveApplication:(id)response {
+    NSLog(@"Native ad will leave the app");
+}
+
+- (void)adDidLogImpression:(id)response {
+    NSLog(@"Native ad impression recorded");
+}
+
+- (void)adWillExpire:(id)response {
+    NSLog(@"Native ad is about to expire");
+}
+
+- (void)adDidExpire:(id)response {
+    NSLog(@"Native ad expired");
+}
+
+@end
 ```
+
+---
+
+## Related
+
+- [Show native ads on iOS](show-native-ads-on-ios.md)
+- [Listener for adWillExpire on iOS](listener-for-adabouttoexpire-on-ios.md)
+- [Viewability measurement on iOS](viewability-measurement-on-ios.md)

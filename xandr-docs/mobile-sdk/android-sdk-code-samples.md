@@ -2,7 +2,7 @@
 title: Android SDK Code Samples Overview
 description: In this article, find links to various code samples to help you in the development of your app. 
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 09/18/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: shsrinivasan
@@ -31,7 +31,7 @@ This section contains various code samples to help you in the development of you
 | [GPID (Global Placement Id)](android-sdk-code-samples-set-gpid.md) | Describes the method for publishers to define their own global publisher identifier to represent a placement on Android. |
 | [Lazy Loading an Ad Unit](lazy-load-for-android.md) | Describes the process to lazy load an ad unit to control when trackers, including 3rd party trackers, are fired. |
 | [Listener for Ad About To Expire](listener-for-onadabouttoexpire-on-android.md) | Listener for ads which are about to expire and are expired. |
-| [OMID Friendly Obstruction](omid-friendly-obstruction-for-android.md) | Describes the process to obstruct views from the Open Measurement Software Development Kit. |
+| [Viewability Measurement](viewability-measurement-on-android.md) | Explains default viewability measurement and how to manage friendly obstructions. |
 | [Open Ad Clicks in the Native Browser](open-ad-clicks-in-the-native-browser-on-android.md) | Describes the process open ad clicks in the native. |
 | [Pass Custom Keywords](pass-custom-keywords-on-android.md) | Describes the process to pass custom keywords to the request body. |
 | [Receive Ad View Status Events](receive-ad-view-status-events-on-android.md) | Describes the process to receive status events for the ad unit. |

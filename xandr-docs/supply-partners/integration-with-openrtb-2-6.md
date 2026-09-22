@@ -1,7 +1,7 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol For Supply Partners 
 description: This page outlines how Xandr's supply partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 07/29/2026
+ms.date: 09/22/2026
 ms.service: publisher-monetization
 ms.subservice: supply-partners
 ms.author: shsrinivasan
@@ -70,23 +70,72 @@ As part of the OpenRTB 2.6 implementation, Xandr has added the following field(s
 
 ### Video ad pods
 
-Starting in version 2.6, OpenRTB now supports "pod bidding" for video and audio content streams. An ad pod refers to an ad break, similar to those seen in TV or heard on radio, containing one or more in-stream creative assets that play sequentially within the content stream. OpenRTB 2.6 enhances previous versions' capabilities by allowing multiple ad requests within a single bid request, indicating they are related.
+Starting in version 2.6, OpenRTB supports pod bidding for video and audio content streams. An ad pod is an ad break containing one or more in-stream creatives that play sequentially. For an introduction to structured and dynamic pods, see [Video ad pods](../monetize/video-ad-pods.md).
 
-Pod bidding signals provide additional information about the pod and its impression opportunities, such as the sequence of ad impressions, total pod length, maximum number of ads per pod, multiple pod associations, and more.
+A structured pod defines its slots in advance. To send a dynamic pod, provide the total fillable duration in `video.poddur` and the maximum number of ads in `video.maxseq`. The presence of `podid` alone doesn't make a pod dynamic, and Microsoft Monetize doesn't convert a structured pod into a dynamic one.
 
-#### Implementation caveat
+> [!IMPORTANT]
+> No supply-side enablement is required. Include `x-openrtb-version: 2.6` in each request. Your ad server must be able to consume a response containing multiple ads for one pod. Dynamic pod fields are passed only to bidders enabled for OpenRTB 2.6, so sending a dynamic pod doesn't guarantee that every buyer receives it in that form.
 
-We currently support all pod types on the sell side; however, on the buy side, all requests are converted to structured pods in bid requests sent to bidders. This is because our platform currently only processes structured pods.
+The following definitions align with the September 2026 release of the [IAB Tech Lab OpenRTB 2.6 specification](https://github.com/InteractiveAdvertisingBureau/openrtb2.x/blob/main/2.6.md).
 
-As part of the OpenRTB 2.6 implementation, Xandr has added the following field(s) to the `Video` Object:
+#### Bid request fields
 
 | Field | Type | Description |
-|:---|:---|:---|
-| `Video.podid` | string | Unique identifier indicating that an impression opportunity belongs to a video ad pod. If multiple impression opportunities within a bid request share the same `podid`, this indicates that those impression opportunities belong to the same video ad pod. |
-| `Video.podseq` | integer <br> **Default**: `0` | The sequence (position) of the video ad pod within a content stream. For guidance on the use of this field, refer to in AdCOM 1.0. |
-| `Video.rqddurs` | integer array | Precise acceptable durations for video creatives in seconds. This field specifically targets the Live TV use case where non-exact ad durations would result in undesirable 'dead air'. <br>This field is mutually exclusive with `minduration` and `maxduration`; if `rqddurs` is specified, `minduration` and `maxduration` must not be specified and vice versa. |
-| `Video.slotinpod` | integer <br> **Default**: `0` | For video ad pods, this value indicates that the seller can guarantee delivery against the indicated slot position in the pod. For guidance on the use of this field, refer to List: Slot Position in Pod in AdCOM 1.0. |
-| `plcmt` | integer | The video placement type for the impression references to the List: Plcmt Subtypes - Video in AdCOM 1.0. For further implementation guide, see [Use `Plcmt`, `Placement`, and `Context` fields together](#using-plcmt-placement-and-context-fields-together). |
+| --- | --- | --- |
+| `video.podid` | string | Unique identifier marking an impression opportunity as belonging to a video ad pod. Opportunities within a bid request that share a `podid` belong to the same pod. |
+| `video.podseq` | integer; default `0` | The sequence, or position, of the ad pod within the content stream. Refer to AdCOM 1.0 for guidance on use. |
+| `video.poddur` | integer; recommended | The total number of seconds advertisers may fill in a dynamic video ad pod, or in the dynamic portion of a hybrid pod. Required only for the dynamic portion. It describes the length of the entire break, whereas `minduration`, `maxduration`, and `rqddurs` constrain the individual slots. |
+| `video.maxseq` | integer; recommended | The maximum number of ads that may be served into a dynamic video ad pod, where the seller has not predetermined the precise number. |
+| `video.rqddurs` | integer array | Precise acceptable creative durations in seconds. Aimed at the live TV case, where inexact durations leave dead air. Mutually exclusive with `minduration` and `maxduration`. |
+| `video.slotinpod` | integer; default `0` | Indicates a slot position the seller can guarantee delivery against. Refer to [List: Slot Position in Pod](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md) in AdCOM 1.0, where `-1` is the last ad in the pod, `0` any ad, `1` the first ad, and `2` the first or last ad. |
+| `imp.video.plcmt` | integer | The video placement subtype for the impression. Refer to [List: Plcmt Subtypes - Video](https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/main/AdCOM%20v1.0%20FINAL.md) in AdCOM 1.0. For implementation guidance, see [Using `Plcmt`, `Placement`, and `Context` fields together](#using-plcmt-placement-and-context-fields-together). |
+
+If you use `video.rqddurs`, don't send `video.minduration` or `video.maxduration`. Otherwise, use `minduration` and `maxduration` to constrain each creative; `poddur` always describes the total fillable duration of the break.
+
+#### Transaction IDs
+
+Send one impression-level transaction ID for one logical ad break. If you don't provide an ID, Microsoft Monetize can generate one. The generated ID's type depends on the supply path.
+
+| Field | Type | Description |
+| --- | --- | --- |
+| `source.tid` | string; recommended | Transaction ID that must be common across all participants in this bid request, including any other exchanges involved. |
+| `imp[].ext.tid` | string | Impression-level transaction ID, carried as an extension. Buyer guidance for long-form video is that one transaction ID corresponds to one logical ad break. |
+| `source.ext.tidt` and `imp[].ext.tidt` | integer | Transaction ID type, carried as an extension alongside the ID itself. |
+
+The transaction ID type tells a bidder how far the identity can be trusted across the supply chain and whether it can be used to deduplicate an opportunity that arrives by more than one path.
+
+| Value | Meaning | When a bidder sees it |
+| --- | --- | --- |
+| `1` | Publisher or globally unique | The transaction ID is unique to the ad break across the supply chain, so it can be used to deduplicate the opportunity. Transaction IDs that Microsoft Monetize generates for first-party supply carry this value. |
+| `2` | Non-unique, or unique only per demand source | The same ad break may appear under different IDs on different paths, so the ID must not be used for cross-path deduplication. Transaction IDs that Microsoft Monetize generates for third-party supply carry this value. |
+
+The following request describes a dynamic pod that can contain at most three ads totaling no more than 60 seconds:
+
+```json
+{
+  "source": {
+    "tid": "break-123",
+    "ext": { "tidt": 1 }
+  },
+  "imp": [{
+    "id": "pod-imp-1",
+    "video": {
+      "podid": "pod-123",
+      "poddur": 60,
+      "maxseq": 3,
+      "minduration": 15,
+      "maxduration": 30
+    },
+    "ext": {
+      "tid": "break-123",
+      "tidt": 1
+    }
+  }]
+}
+```
+
+Microsoft Monetize can return up to `video.maxseq` ads whose combined `bid.dur` values fit within `video.poddur`. The response can contain fewer ads or less total duration than the maximums in the request. To confirm that requests are reaching eligible buyers as dynamic pods, inspect the outgoing bidder request with your Microsoft account representative or support contact and verify that it contains `video.poddur` and `video.maxseq`.
 
 ### Using `Plcmt`, `Placement`, and `Context` fields together
 

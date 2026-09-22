@@ -1267,6 +1267,8 @@
         href: publisher-notifications-for-outstream-video-events.md
       - name: Outstream Video Player Options
         href: outstream-video-player-options.md
+    - name: Video Ad Pods
+      href: video-ad-pods.md
     - name: Ad Podding for Publishers
       href: ad-podding-for-publishers.md
     - name: Video Players

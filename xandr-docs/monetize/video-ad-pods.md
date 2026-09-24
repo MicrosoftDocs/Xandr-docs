@@ -1,7 +1,7 @@
 ---
 title: Video Ad Pods
 description: Learn how structured and dynamic video ad pods work in Microsoft Monetize and what publishers, supply partners, and bidders need to support them.
-ms.date: 09/22/2026
+ms.date: 09/24/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -42,6 +42,10 @@ Yes. Supply partners can send dynamic pods to Microsoft Monetize with OpenRTB 2.
 ### What do I need to do as a publisher or SSP to send ad pods?
 
 Send the OpenRTB version header with a value of `2.6`, describe the break with the supported pod fields, and make sure your ad server can consume a response containing multiple ads. For a dynamic pod, provide both the total fillable duration and the maximum number of ads. No separate supply-side enablement is required.
+
+### Can I send ad pods if I am on an OpenRTB version earlier than 2.6?
+
+The dynamic ad pod fields require OpenRTB 2.6. Privacy, consent, identity, and supply chain objects are different: Microsoft Monetize reads those objects from the location that matches the version you declare, so they continue to be received while you migrate. No enablement is required. For the supported locations, see [Supported field locations by OpenRTB version](../supply-partners/integration-with-openrtb-2-6.md#supported-field-locations-by-openrtb-version).
 
 ### What do I need to do as a bidder to buy them?
 

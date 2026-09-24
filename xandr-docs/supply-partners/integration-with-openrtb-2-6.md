@@ -1,7 +1,7 @@
 ---
 title: Integration with OpenRTB 2.6 Protocol For Supply Partners 
 description: This page outlines how Xandr's supply partners integrate using the OpenRTB protocol. Xandr supports the OpenRTB 2.6 protocol for receiving impressions across all media types.
-ms.date: 09/22/2026
+ms.date: 09/24/2026
 ms.service: publisher-monetization
 ms.subservice: supply-partners
 ms.author: shsrinivasan
@@ -136,6 +136,25 @@ The following request describes a dynamic pod that can contain at most three ads
 ```
 
 Microsoft Monetize can return up to `video.maxseq` ads whose combined `bid.dur` values fit within `video.poddur`. The response can contain fewer ads or less total duration than the maximums in the request. To confirm that requests are reaching eligible buyers as dynamic pods, inspect the outgoing bidder request with your Microsoft account representative or support contact and verify that it contains `video.poddur` and `video.maxseq`.
+
+#### Supported field locations by OpenRTB version
+
+If you send ad pods on an OpenRTB version earlier than 2.6, Microsoft Monetize still reads the objects below from the location your version uses. Use the path that matches the version you declare in the `x-openrtb-version` header. This applies by default, and no enablement is required.
+
+If the same value is present in more than one location, Microsoft Monetize uses the location that matches the OpenRTB version declared in your request header.
+
+The OpenRTB 2.5 and 2.4 columns list locations that Microsoft Monetize supports on incoming requests. These locations aren't necessarily defined in the base specification for those versions.
+
+| Object | OpenRTB 2.6 | OpenRTB 2.5 | OpenRTB 2.4 |
+| --- | --- | --- | --- |
+| `schain` | `source.schain` | `ext.schain` | `ext.schain` |
+| `gdpr` | `regs.gdpr` | `regs.ext.gdpr` | `regs.ext.gdpr` |
+| `us_privacy` | `regs.us_privacy` | `regs.ext.us_privacy` | `regs.ext.us_privacy` |
+| `gpp` | `regs.gpp` | `regs.ext.gpp` | `regs.ext.gpp` |
+| `consent` | `user.consent` | `user.ext.consent` | `user.ext.consent` |
+| `eids` | `user.eids` | `user.ext.eids` | `user.ext.eids` |
+
+This support applies only to the objects listed above. The dynamic ad pod fields aren't included and must be sent in their OpenRTB 2.6 locations: `video.podid`, `video.podseq`, `video.rqddurs`, `video.slotinpod`, `video.poddur`, and `video.maxseq`. The `imp.video.plcmt` field isn't supported for supply partners below OpenRTB 2.6.
 
 ### Using `Plcmt`, `Placement`, and `Context` fields together
 

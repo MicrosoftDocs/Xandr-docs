@@ -147,6 +147,10 @@ Another reason why the creative may not be displaying is the creative contains g
 
 If your creative (1) has not run and (2) has not been modified in 15 days, then it will be automatically deactivated and will not serve on any inventory. Email notifications will go out automatically to the corresponding member(s) of any deactivated creatives. As of March 2018 expired creatives will be automatically reactivating if your bidder resumes bidding with the creative.
 
+**What happens if my expired creative remains unused?**
+
+If an expired creative remains inactive for 18 months, it is automatically deleted and later permanently purged from the platform. Once purged, the creative can't be restored. To retain an inactive creative, modify it or resume bidding with it before it becomes eligible for deletion.
+
 **Ad verification services**
 
 If your client is using Ad Verification services, the creative may not display, by default, in our Audit UI or in the impbus preview url. We have created the macro, ${IS_PREVIEW}, to signal the ad verification vendor that the creative should render. This macro will be replaced with a 1 when we are previewing it.

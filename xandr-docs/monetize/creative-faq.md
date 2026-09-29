@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Creative FAQ
 description: In this article, find answers to frequently asked questions regarding creatives.
-ms.date: 10/21/2025
+ms.date: 09/29/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -56,3 +56,9 @@ Currently, the creative preview in Full Edit is not intended to be fully functio
 ## Gambling creatives
 
 Please see our [Part of Service Policies](../policies-regulations/index.yml) for information on what kinds of gambling ads are allowed to serve and under what conditions.
+
+## What happens if I don't use my creative?
+
+If a creative hasn't served or been modified for more than 45 days, it expires and becomes inactive. To use the creative again, set it to *active* and submit it for re-audit.
+
+Expired creatives that remain unused for 18 months are automatically deleted and later permanently purged. Purged creatives can't be restored. To retain an inactive creative, modify it before it becomes eligible for deletion. Historical reporting and creative analytics aren't affected.

@@ -185,9 +185,11 @@ $ curl -b cookies $IB/bidder/123
 
 ## Bidder object configurations
 
+### Endpoint configurations
+
 **For the following fields of the "Bidder" object, IP Address/Hostname should not be included preceding the path.**
 
-IP Address <u>will</u> be configured separately on the "Bidder Instance" object(s) in the next step of the integration process.
+IP Address will be configured separately on the "Bidder Instance" object(s) in the next step of the integration process.
 
 | Field | Required | Description |
 |---|---|---|
@@ -196,7 +198,16 @@ IP Address <u>will</u> be configured separately on the "Bidder Instance" object(
 | **notify_uri** |  | the path/filename that specifies the destination for [Notify Requests](./notify-request.md) (e.g. "/notify") |
 | **pixel_uri** | **optional** | the path/filename that specifies the destination |
 | **click_uri** | **optional** | the path/filename that specifies the destination for [Click Requests](./click-request.md) |
-|**audit_notify_uri** | **optional** | the path/filename that specifies the destination for [Audit Notify Requests](./audit-notify-request.md) (For example, "`https://examplebidder.com/audit_notify_endpoint`") |
+| **audit_notify_uri** | **optional** | the path/filename that specifies the destination for [Audit Notify Requests](./audit-notify-request.md) (For example, "`https://examplebidder.com/audit_notify_endpoint`") |
+
+### Other configurations
+
+| Field | Required | Description |
+|---|---|---|
+| **vendor_id** |  | IAB TCF vendor ID. Required if accessing EMEA inventory. |
+
+> [!NOTE]
+> It is important to provide `vendor_id` during the integration. Failure to do so can result in a reduced matched user rate in EMEA.
 
 ## View your member object
 

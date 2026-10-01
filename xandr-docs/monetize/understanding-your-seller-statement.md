@@ -140,6 +140,8 @@ This document lists the amount of revenue due to be paid, along with any adjustm
 ## Netting statement
 
 > [!NOTE]
+> Not everyone has this feature.
+>
 > You only receive a Netting Statement if you conduct both buying and selling activity with Microsoft Advertising, have contractually agreed to netting, and notified the Client Finance team to enable netting for your account. If you are a customer that has migrated to a new Microsoft Advertising contract, please note that netting will be discontinued.  
 
 This monthly document lists the amount of revenue you have earned as a seller as well as your activity as a buyer. Microsoft Advertising then deducts the amount that you owe as a buyer from the revenue you have earned as a seller to determine the amount you will be paid or that you owe.

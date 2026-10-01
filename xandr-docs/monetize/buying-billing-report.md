@@ -70,12 +70,12 @@ Intervals determine how your data is grouped together into rows in the report re
 
 ## Dimensions
 
-| Column | Filter? | Description |  |
+| Column | Filter? | Description |
 |--|--|--|
 | Advertiser | Yes | The advertiser that purchased the impression. |
 | Advertiser Code | No | The external ID of the advertiser. |
 | BP External Code | No | The optional external code supplied for the insertion order's billing period. |
-| Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the **Booked Revenue**, **Buyer Media Cost**, **Auction Service Deduction**, **Net Media Cost Auction Service Fees** and **Creative average Fees** metrics to be displayed in the buying currency. |  |
+| Buying Currency | No | The transaction currency that the buyer used to purchase this impression. Including this dimension will cause the **Booked Revenue**, **Buyer Media Cost**, **Auction Service Deduction**, **Net Media Cost Auction Service Fees** and **Creative average Fees** metrics to be displayed in the buying currency. |
 | Campaign | Yes | The campaign which purchased this impression. (Does not apply to all advertisers.) |
 | Campaign Code | No | The external ID of the campaign. (Does not apply to all advertisers.) |
 | Clearing Event | Yes | The underlying auction event that was transacted (e.g., impression, viewable impression, completed video). |
@@ -96,6 +96,8 @@ Intervals determine how your data is grouped together into rows in the report re
 ### Direct Cleared Table
 
 > [!NOTE]
+> Not everyone has this feature.
+>
 > If you have signed a new contract with Microsoft Advertising and completed the cutover, FX margin and Foreign exchange fees will no longer be applicable.
 
 | Value | Description |

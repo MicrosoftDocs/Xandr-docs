@@ -75,6 +75,8 @@ You can find this value in your report in the Creative Overage Fees column. The 
 The table below lists charges that can commonly appear on your invoice and which billing report to use to reconcile those charges. For some charges, you may need to consult your contract with Microsoft Advertising.
 
 > [!NOTE]
+> Not everyone has this feature.
+>
 > If you have signed a new contract with Microsoft Advertising and completed the cutover, FX margin and Foreign exchange fees will no longer be applicable.
 
 | Charge Description | Report to Use |

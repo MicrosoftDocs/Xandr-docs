@@ -42,7 +42,6 @@ The Data Marketplace brings together third-party data providers in one place. To
 | Eyeota | [https://www.eyeota.com/](https://www.eyeota.com/) | NA, SA, APAC, EMEA | Audience |
 | Foursquare | [https://foursquare.com/](https://foursquare.com/) | NA, SA, APAC, EMEA | Audience |
 | Goldfish Ads | [https://www.goldfishads.com/](https://www.goldfishads.com/) | NA, EMEA, APAC | Cookieless |
-| Gourmet Ads & Healthy Ads | [https://www.gourmetads.com/](https://www.gourmetads.com/) | Global | Audience |
 | Hybrid Theory Global LTD (Azerion) | [https://www.azerion.com/](https://www.azerion.com/) | Global | Audience and Contextual |
 | hyScore.io GmbH | [https://hyscore.io/](https://hyscore.io/) | Germany | Contextual |
 | ID Ward Ltd (Anonymised) | [https://www.anonymised.io/](https://www.anonymised.io/) | EMEA | ID-Less |

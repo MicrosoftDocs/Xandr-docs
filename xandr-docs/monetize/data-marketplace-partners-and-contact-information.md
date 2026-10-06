@@ -1,7 +1,7 @@
 ---
 title: Microsoft Monetize - Data Marketplace Partners and Contact Information
 description: In this article, find a list of data provider partners along with links to their home pages.
-ms.date: 09/17/2026
+ms.date: 10/06/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -16,7 +16,6 @@ The data marketplace contains the data of a large number of partners which suppo
 | Adsquare GmbH | [https://adsquare.com/](https://adsquare.com/) |NA, EMEA|Audience|
 | Adstra | [https://adstradata.com/](https://adstradata.com/) |NA|Audience|
 | AlikeAudience | [https://www.alikeaudience.com/](https://www.alikeaudience.com/) |NA, APAC|Audience|
-| Analytics IQ | [https://analytics-iq.com/](https://analytics-iq.com/) |NA|Audience|
 | Bombora | [https://bombora.com/](https://bombora.com/) |Global|Audience|
 | Captify Technologies Ltd | [https://www.captifytechnologies.com/](https://www.captifytechnologies.com/) |NA|Audience|
 | ComScore | [https://www.comscore.com/](https://www.comscore.com/) |Global|Audience and Contextual|
@@ -25,16 +24,10 @@ The data marketplace contains the data of a large number of partners which suppo
 | DoubleVerify | [https://doubleverify.com/](https://doubleverify.com/) |NA, SA, APAC, EMEA|Contextual|
 | Dstillery | [https://dstillery.com/](https://dstillery.com/) |NA|Contextual|
 | Emetriq GmbH | [https://www.emetriq.com/](https://www.emetriq.com/) |DACH|Audience|
-| Epsilon | [https://www.epsilon.com/](https://www.epsilon.com/) |NA|Audience|
 | Experian | [https://www.experian.com/](https://www.experian.com/) |NA|Audience|
-| Eyeota | [https://www.eyeota.com/](https://www.eyeota.com/) |NA, SA, APAC, EMEA|Audience|
-| Goldfish Ads | [https://www.goldfishads.com/](https://www.goldfishads.com/) |NA, EMEA, APAC|Cookieless|
 | hyScore.io GmbH | [https://hyscore.io/](https://hyscore.io/) |Germany|Contextual|
-| ID Ward Ltd (Anonymised) | [https://www.anonymised.io/](https://www.anonymised.io/) |EMEA|ID-Less|
 | Illuma | [https://www.weareilluma.com/](https://www.weareilluma.com/) |Global|Contextual|
 | Lasso Marketing, Inc | [https://www.lassoplatform.io/](https://www.lassoplatform.io/) |NA|Audience|
-| LiveRamp Data Store | [https://liveramp.com/](https://liveramp.com/) |NA, SA, APAC, EMEA|Audience|
-| PlaceIQ | [https://www.placeiq.com/](https://www.placeiq.com/) |NA|Audience|
 | Nano Interactive | [https://www.nanointeractive.com/](https://www.nanointeractive.com/) |EMEA|Contextual|
 | OS Data Solutions | [https://osdatasolutions.de](https://osdatasolutions.de)/ |Germany|Audience|
 | Peer39 | [https://www.peer39.com/](https://www.peer39.com/) |NA, SA, APAC, EMEA|Contextual|
@@ -43,7 +36,6 @@ The data marketplace contains the data of a large number of partners which suppo
 | Semcasting | [https://www.semcasting.com/](https://www.semcasting.com/) |NA|Audience|
 | ShareThis | [https://sharethis.com/](https://sharethis.com/) |Global|Audience and Contextual|
 | Sirdata | [https://www.sirdata.com/](https://www.sirdata.com/) |EMEA|Audience and Cookieless|
-| Skimlinks | [https://skimlinks.com/](https://skimlinks.com/) |NA, SA, EMEA|Audience and Contextual|
 | The ADEX | [https://theadex.com/](https://theadex.com/) |EMEA|Audience and Contextual|
 | The Weather Channel (an IBM Watson Company) | [https://www.ibm.com/weather](https://www.ibm.com/weather) |US, CA, UK, Spain, FR, Germany|Contextual|
 | Throtle, Inc. | [https://www.throtle.io/](https://www.throtle.io/) |NA|Audience|

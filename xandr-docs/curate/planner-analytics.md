@@ -1,7 +1,7 @@
 ---
 title: Microsoft Curate - Planner Analytics
 description: Visualize plan performance for projected deal line-items and explore detailed and interactive projections during plan creation or editing.
-ms.date: 10/21/2025
+ms.date: 10/15/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-curate
 ms.author: shsrinivasan
@@ -14,7 +14,7 @@ The article outlines the functionality of Planner visualizations, emphasizing th
 Planner's visualizations can guide your media plan and help you understand the capability of specific deals. As you try out different configurations in the left pane while you create or edit a plan, you can update the analytics and visualizations to show the projected results, so you can adjust your strategy before making a final decision.
 
 > [!NOTE]
-> Planner relies on data that is collected over time for its forecasts. For the most accurate results, audiences should be onboarded and deals should be live for a week before you begin forecasting in Planner.
+> Planner relies on data that is collected over time for its forecasts. For the most accurate results, audiences should be onboarded and deals should be live for a week before you begin forecasting in Planner. Audiences, deals, and deal lists without sufficient traffic may be ineligible for forecasting.
 
 A user is a device ID, not an actual person: often a person has multiple user IDs. If you've enabled cross-device, Planner returns estimates for all the device IDs linked to a user. For impression estimates, we sample auction logs and generate sketches that include dimensions (supply type, ad type, inventory URL, and so on) specific to the auction. For user estimates, we sample users and include geo region, segments, and other data. We also find all associated auctions and related dimensions, and use all this data to generate sketches.
 

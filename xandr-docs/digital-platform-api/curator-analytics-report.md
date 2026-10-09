@@ -1,7 +1,7 @@
 ---
 title: Digital Platform API - Curator Analytics Report
 description: Use the Curator Analytics report to get curators insight into how money flows from demand to supply within their curated marketplace.
-ms.date: 1/28/2026
+ms.date: 10/15/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -100,6 +100,12 @@ If you create Curator Analytics reports with the `report_interval` set to `"life
 | `video_content_genre` | string | Yes | `"Action"` | The main genre of the program on which the ad will be played. |
 | `video_program_type` | string | Yes | `"Movie"` | The higher level categorization of the program on which the ad will be played. |
 | `video_content_rating` | string | Yes | `"Children(7+)"` | The type of rating of the content. |
+| `type_for_line_item` | string | Yes | `"Branding LI"` | A custom reporting field describing the type of line item. See the `labels` field in the [Line Item Service](./line-item-service.md) for more information. You may only select one reporting label per report. |
+| `salesrep_for_line_item` | string | Yes | `"Patricia Martin"` | A custom reporting field containing the sales representative for the line item. See the `labels` field in the [Line Item Service](./line-item-service.md) for more information. You may only select one reporting label per report. |
+| `trafficker_for_line_item` | string | Yes | `"George Martin"` | A custom reporting field containing the trafficker for the line item. See the `labels` field in the [Line Item Service](./line-item-service.md) for more information. You may only select one reporting label per report. |
+| `insertion_order_type_no_imp_type` | string | Yes | `"Branding IO"` | A custom reporting field describing the type of insertion order. See the `labels` field in the [Insertion Order Service](./insertion-order-service.md) for more information. You may only select one reporting label per report. |
+| `salesrep_for_insertion_order_no_imp_type` | string | Yes | `"Camila Martin"` | A custom reporting field containing the sales representative for the insertion order. See the `labels` field in the [Insertion Order Service](./insertion-order-service.md) for more information. You may only select one reporting label per report. |
+| `trafficker_for_insertion_order_no_imp_type` | string | Yes | `"Maria Martin"` | A custom reporting field containing the trafficker for the insertion order. See the `labels` field in the [Insertion Order Service](./insertion-order-service.md) for more information. You may only select one reporting label per report. |
 
 ## Metrics
 

@@ -41,6 +41,7 @@ The `report_interval` field in the JSON request must be set to one of the foll
 | hour | date | yes | yes | `"2010-02-01 05:00:00"` | The hour at which the auction associated with the impression occurred. |
 | buyer_member_id | int | yes | yes | `643` | The ID of the member that used the third-party data. |
 | buyer_member_name | string | yes | yes | `"Buyer A"` | The name of the member that used the third-party data. |
+| buyer_member_type | string | yes | yes | `"Curator"` | The type of member who purchased the data, `"Buyer"` or `"Curator"`. |
 | advertiser_name | string | yes | yes | `"Advertiser"` | The name of the advertiser that used the third-party-data. |
 | geo_country | string | yes | yes | `"US"` | The code of the geographical country or region associated with the impression. |
 | geo_country_name | string | no | no | `"United States"` | The name of the geographical country or region associated with the impression. |

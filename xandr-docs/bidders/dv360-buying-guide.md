@@ -89,9 +89,6 @@ Refer the buyer to the following topics in the DV360 help for more information a
 
 Programmatic guaranteed buying is currently available with DV360. The DV360 team has detailed information on available programmatic guaranteed publishers and associated contacts. Talk to your Xandr account manager about being included in Xandr's programmatic guaranteed product release.
 
-> [!NOTE]
-> Publishers can download the following document and share it with buyers directly: [Leverage Programmatic Guaranteed](../monetize/programmatic-guaranteed-buying-line-items.md).
-
 ## Target audiences and content
 
 DV360 allows targeted buying based on audiences and content. To learn more about targeting in DV360, see [Introduction to Targeting](https://support.google.com/displayvideo/topic/3033780?hl=en).
@@ -181,7 +178,7 @@ Sellers can reach out to their Xandr account manager or escalate through [Micros
 
 ## DV360 and TCF compliance
 
-Google has officially joined the TCF v2. Full guidance from Google can be found [here](https://support.google.com/displayvideo/answer/9496576?hl=en).
+Google has officially joined the TCF v2. Full guidance from Google can be found [here](https://support.google.com/authorizedbuyers/answer/9496576?hl=en).
 
 > [!NOTE]
 > Google DV 360 is a part of the Global Vendor List v2.0 in the update released on July 23, 2020. If you have adopted TCF v2.0, and you have not re-established legal basis with your users using a version of the Global Vendor List released after this date, you risk losing access to some or all Google DV360 demand . We recommend taking this action promptly to avoid any potential disruption to your business.

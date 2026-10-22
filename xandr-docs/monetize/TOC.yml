@@ -377,19 +377,6 @@
         href: apply-a-partner-fee-to-a-line-item.md
       - name: Add Reporting Labels and Comments to a Line Item
         href: add-reporting-labels-and-comments-to-a-line-item.md
-    - name: Programmatic Guaranteed Buying Line Items
-      items:
-      - name: Overview
-        href: programmatic-guaranteed-buying-line-items.md
-      - name: Create a Programmatic Guaranteed Buying Line Item
-        href: create-a-programmatic-guaranteed-buying-line-item.md
-      - name: Metrics for PG Buying Line Items
-        href: metrics-for-programmatic-guaranteed-buying-line-items.md
-      - name: Troubleshoot your PG Buying Line Item Bid Performance
-        href: troubleshoot-your-programmatic-guaranteed-buying-line-item-bid-performance.md
-      - name: Bid Performance Messages for Programmatic Guaranteed Buying Line Items
-        href: bid-performance-messages-for-programmatic-guaranteed-buying-line-items.md
-    
     - name: Update Line Items
       href: update-line-items.md
     - name: Viewing Visual Success Data

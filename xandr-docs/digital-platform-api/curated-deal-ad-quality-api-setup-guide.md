@@ -1,7 +1,7 @@
 ---
 title: Curated Deal Ad Quality API Setup Guide
 description: Learn the process of creating and configuring a curated deal ad quality through the API
-ms.date: 10/22/2025
+ms.date: 10/27/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -9,7 +9,7 @@ ms.author: shsrinivasan
 
 # Curated deal ad quality API setup guide
 
-Curated deals offer a range of ad quality settings, granting control over what demand can serve through a curated deal. The updated suite of ad quality settings for curators provide robust controls at both the deal and member levels. Configured uniquely, these updated ad quality settings are currently accessible solely through the API. This guide explains how you can start using them.
+Curated deals offer a range of ad quality settings, granting control over what demand can serve through a curated deal. The updated suite of ad quality settings provides controls at both the deal and member levels. This guide explains how to configure these settings through the API. To configure deal-level audit requirements, brands, creative ad servers, and creative exceptions in the user interface, see [Advanced Deal Ad Quality](../curate/advanced-deal-ad-quality.md). Member-level settings must be configured through the API.
 
 ## Overview
 

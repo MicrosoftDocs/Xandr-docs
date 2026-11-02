@@ -1,7 +1,7 @@
 ---
 title: Prebid Server Premium Demand Partner Integrations
 description: In this article, find a list of all demand partners currently available through Prebid Server Premium (PSP).
-ms.date: 2/27/2026
+ms.date: 11/02/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
@@ -74,6 +74,7 @@ Additional resources on demand partners:
 | AJA | aja | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Algorix | algorix | Yes | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No | **App**: Yes <br>**Site**: No |
 | Alkimi | alkimi | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
+| [Amazon Publisher Services (APS)](#amazon-publisher-services-aps) | aps | Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | AMX RTB | amx | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: No | **App**: No <br>**Site**: No |
 | Apacdex | apacdex | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 | Applogy | applogy | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
@@ -364,3 +365,13 @@ Additional resources on demand partners:
 | ZeroClickFraud | zeroclickfraud | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes |
 | Zeta Global SSP | zeta_global_ssp | Yes | **App**: Yes <br>**Site**: Yes | **App**: Yes <br>**Site**: Yes | **App**: No <br>**Site**: No |
 
+## Amazon Publisher Services (APS)
+
+The APS Prebid Server adapter is currently in limited beta and requires an APS account. To request access for testing, contact your APS Account Manager or use the Help button in your APS portal. For more information, see the [APS Prebid documentation](https://docs.prebid.org/dev-docs/bidders/aps.html#prebid-server).
+
+The APS adapter uses the following parameters:
+
+| Parameter | Required | Type | Description |
+|---|---|---|---|
+| `accountID` | Yes | String | APS-provided publisher account ID. |
+| `region` | No | String | User region: `na`, `eu`, or `fe`. Defaults to `na`. |

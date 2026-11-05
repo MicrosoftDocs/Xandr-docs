@@ -2,10 +2,10 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 09/18/2026
+ms.date: 11/5/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: rupambaruah
+ms.author: subramaniank
 ---
 
 # iOS SDK release notes
@@ -13,11 +13,31 @@ ms.author: rupambaruah
 <!-- [!NOTE]
 > Please visit [https://github.com/appnexus/mobile-sdk-ios/releases](https://github.com/appnexus/mobile-sdk-ios/releases)for our most recent release notes for iOS SDK.-->
 
+## 9.15.0
+*Released: November 5, 2026*
+
+### Announcements
+
+This will be the final major release in the SDK v9.x.x series. The next major release will be SDK v10.0.0.
+
+SDK v10.0.0 and later releases will not be available through CocoaPods. SDK v10.0.0 will support Swift Package Manager (SPM), Carthage, and direct downloads. Starting with SDK v10.0.0, the iOS SDK and mediation adapters will be distributed as separate packages for SPM integrations. The [main iOS SDK SPM package](https://github.com/appnexus/mobile-sdk-ios-spm) will include only the iOS SDK, while each mediation adapter will be available through its own SPM package.
+
+To preview this packaging change, configure the [main iOS SDK SPM package](https://github.com/appnexus/mobile-sdk-ios-spm) to use the `10.0.0-beta` branch. Then add the required mediation adapter SPM packages listed in the [iOS Mediation Integration](mediate-with-ios.md) documentation.
+
+### New Feature
++ 11237886: Add Additional Consent v2 support to IAB TCF/GDPR.
+
+### Improvement/Bug Fixes
++ 11237946: Upgraded Open Measurement SDK to v1.6.11.
++ 11387203: Skip automatic downloads of HTTP and invalid native image URLs.
++ 11164809: Fixed incorrect banner video player sizing on Android and iOS.
++ 11228850: Prevent duplicate impression callbacks for multiple trackers.
+
 ## 9.14.0
 *Released: August 27, 2026*
 
 > [!NOTE]
-> Starting with the next release, CocoaPods support will be discontinued. Swift Package Manager (SPM) will become the primary distribution method. For instructions, see [Integrating the SDK via SPM](ios-sdk-integration-instructions.md#swift-package-manager).
+> Starting with SDK v10.0.0, the SDK will no longer be available through CocoaPods. SDK v10.0.0 will remain available through Swift Package Manager (SPM), Carthage, and direct downloads. For SPM instructions, see [Integrating the SDK via SPM](ios-sdk-integration-instructions.md#swift-package-manager).
 
 ### New Feature
 + 10947763: Added an in-app install experience for supported app store ad clicks.

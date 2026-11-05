@@ -1,13 +1,34 @@
 ---
 title: Android SDK Release Notes
 description: Explore Android SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
-ms.date: 09/18/2026
+ms.date: 11/5/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: rupambaruah
+ms.author: subramaniank
 ---
 
 # Android SDK release notes
+
+## 9.15.0
+*Released: November 4, 2026*
+
+### Announcements
+
+This will be the final major release in the SDK v9.x series. The next major release will be SDK v10.0.0.
+
+> [!IMPORTANT]
+> The standalone Android In-Stream Video SDK artifact is deprecated as of SDK 9.15.0. The `appnexus-instreamvideo` artifact will no longer be published separately after SDK 9.15.x. Beginning with SDK 10.0.0, all in-stream video functionality will be included in the core `appnexus-sdk` artifact. Applications upgrading to 10.0.0 must remove their `appnexus-instreamvideo` dependency. Existing `com.appnexus.opensdk.instreamvideo` APIs and imports will remain unchanged.
+
+### New Feature
++ 11237886: Add Additional Consent v2 support to IAB TCF/GDPR.
+
+### Improvement/Bug Fixes
++ 11237946: Upgraded Open Measurement SDK to v1.6.11.
++ 11387203: Skip automatic downloads of HTTP and invalid native image URLs.
++ 11164809: Fixed incorrect banner video player sizing on Android and iOS.
++ 11228850: Prevent duplicate impression callbacks for multiple trackers.
++ 11110669: Pause banner auto-refresh while detached.
++ 11178965: Added SDKSettings.setOMIDOptimizationEnabled(), SDKSettings.isOMIDOptimizationEnabled() and deprecated NativeAdSDK OMID boolean overloads.
 
 ## 9.14.0
 *Released: August 27, 2026*

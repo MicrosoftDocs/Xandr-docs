@@ -2,22 +2,28 @@
 title: Show Instream Video Ads on Android
 description: On this page learn how to use the SDK to fetch and display instream video ads in Android.
 ms.custom: android-sdk
-ms.date: 10/22/2025
+ms.date: 10/7/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Show instream video ads on Android
 
 This page describes how to use the SDK to fetch and display instream video ads.
 
+> [!IMPORTANT]
+> The standalone Android In-Stream Video SDK artifact is deprecated as of SDK 9.15.0. The `appnexus-instreamvideo` artifact will no longer be published separately after SDK 9.15.x. Beginning with SDK 10.0.0, all in-stream video functionality will be included in the core `appnexus-sdk` artifact. Applications upgrading to 10.0.0 must remove their `appnexus-instreamvideo` dependency. Existing `com.appnexus.opensdk.instreamvideo` APIs and imports will remain unchanged.
+
+> [!WARNING]
+> Do not use an SDK 10.x core artifact together with any 9.x `appnexus-instreamvideo` artifact. Doing so will introduce duplicate classes.
+
 > [!NOTE]
 > **Maintain references to VideoAd objects**: It is your responsibility to keep a reference to the `VideoAd` object. It is not cached by the SDK.
 
 ## Step 1. Include the SDK in your project
 
-If you use Maven, use the following Gradle config to install the version of the SDK with instream video support:
+For SDK 9.x, use the following Gradle configuration to include the In-Stream Video SDK:
 
 ```
 // Android: Gradle config to install the SDK and the Video SDK
@@ -25,9 +31,20 @@ repositories {
      mavenCentral()
 }
 dependencies {
-     compile  'com.appnexus.opensdk:appnexus-instreamvideo:[8,9)'
+     implementation 'com.appnexus.opensdk:appnexus-instreamvideo:[9,10)'
 }
 ```
+
+Beginning with SDK 10.0.0, depend only on the core SDK:
+
+```
+dependencies {
+     implementation 'com.appnexus.opensdk:appnexus-sdk:[10,11)'
+}
+```
+
+> [!NOTE]
+> For SDK 10.x and later, remove the `appnexus-instreamvideo` dependency and use only the corresponding version of the core `appnexus-sdk` artifact. Do not add a separate In-Stream Video SDK dependency. No source-code migration is required for existing in-stream integrations because the `com.appnexus.opensdk.instreamvideo` APIs and imports remain unchanged.
 
 <!-- If you prefer to download the source code, you [can get the latest release from Github](https://github.com/appnexus/mobile-sdk-android/releases/tag/8.9). -->
 

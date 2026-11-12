@@ -1,7 +1,7 @@
 ---
 title: Placement Service
 description: Use the Placement service to create and modify ad tags for managed publishers or direct media buys with customizable IDs stored server-side.
-ms.date: 10/22/2025
+ms.date: 11/12/2026
 ms.service: publisher-monetization
 ms.subservice: digital-platform-api
 ms.author: shsrinivasan
@@ -99,6 +99,7 @@ Once you have the placement ID, you format the placement tag as follows and hand
 | `exclusive` | Boolean | **Read-only**.<br>To designate whether a placement's inventory is to be made available for resale, use the `rtb` field in the `marketplace_map` object of the placement's site. See [Site Service](./site-service.md) for a description of this field. All inventory made available for resale is part of the RTB Marketplace.<br><br>**Default**: `False` |
 | `pixel_url` | string | Piggyback call upon user loading placement.<br><br>**Default**: `null` |
 | `pixel_type` | enum | Identifies the type of pixel. Possible values are `"javascript"` or `"image"`.<br><br>**Default**: `image` |
+| `pixel_throttle_rate` | int | Controls the percentage of traffic on which the pixel fires. Enter a whole number from 1 to 100 to set the traffic percentage. For example, `50` means the pixel fires on 50% of traffic.<br><br>**Default**: `100` (the pixel fires on 100% of traffic). |
 | `content_categories` | array | A list of Content Categories associated with this placement. At most 20 categories can be specified for a placement. |
 | `filtered_advertisers` | array | A list of advertisers that are allowed to target the placement. |
 | `filtered_line_items` | array | A list of line items that are allowed to target the placement. |

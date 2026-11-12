@@ -2,10 +2,10 @@
 title: Mediate with Android
 description: Learn how to add and set up mediation adapters for the Android SDK.
 ms.custom: android-sdk
-ms.date: 09/21/2026
+ms.date: 11/10/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Mediate with Android
@@ -24,7 +24,7 @@ The following mediation adapters and media types are supported:
 |:---|:---|:---|:---|:---|:---|
 | Google AdMob | 24.5.0 | Yes | Yes | Yes | [AdMob mediation](https://developers.google.com/admob/android/mediation) |
 | Google Ad Manager | 24.5.0 | Yes | Yes | No | [Google Ad Manager mediation](https://developers.google.com/ad-manager/mobile-ads-sdk/android/mediation) |
-| SmartAdServer | 7.23.0 | Yes | Yes | No | [SmartAdServer SDK documentation](https://documentation.smartadserver.com/displaySDK/) |
+| SmartAdServer (deprecated) | 7.23.0 | Yes | Yes | No | [SmartAdServer SDK documentation](https://documentation.smartadserver.com/displaySDK/) |
 
 ## Requirements
 
@@ -37,6 +37,8 @@ Gradle automatically merges each adapter's required manifest entries and consume
 ## Install mediation adapters
 
 Make sure Maven Central is included in your project's repositories. Then add the Android SDK and the required mediation adapters to your app module's `build.gradle` file:
+
+The deprecated SmartAdServer dependency is shown only for existing integrations.
 
 ```gradle
 repositories {
@@ -148,7 +150,9 @@ nativeAdRequest.loadAd(); // Load the native ad
 
 ## SmartAdServer
 
-The SmartAdServer adapter doesn't require additional configuration after you add its dependency.
+The Smart Ad Server mediation SDK is deprecated. Android SDK v9.15.x is the last release series for which it will be published. Starting with Android SDK v10.0.0, the Smart Ad Server mediation SDK will no longer be published, updated, or supported. The integration instructions are retained for existing integrations only.
+
+For existing integrations, the SmartAdServer adapter doesn't require additional configuration after you add its dependency.
 
 ## Custom mediation networks
 

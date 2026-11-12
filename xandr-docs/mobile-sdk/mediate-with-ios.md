@@ -1,10 +1,10 @@
 ---
 title: Mediate with iOS
 description: Learn how to add and set up mediation adapters for the iOS SDK.
-ms.date: 09/21/2026
+ms.date: 11/10/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # Mediate with iOS
@@ -23,7 +23,7 @@ The following mediation adapters and media types are supported:
 |:---|:---|:---|:---|:---|:---|
 | Google AdMob | 12.8.0 | Yes | Yes | Yes | [AdMob mediation](https://developers.google.com/admob/ios/mediation) |
 | Google Ad Manager | 12.8.0 | Yes | Yes | No | [Google Ad Manager mediation](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/mediation) |
-| SmartAdServer | 7.24.2 | Yes | Yes | No | [SmartAdServer SDK documentation](https://documentation.smartadserver.com/displaySDK/) |
+| SmartAdServer (deprecated) | 7.24.2 | Yes | Yes | No | [SmartAdServer SDK documentation](https://documentation.smartadserver.com/displaySDK/) |
 
 ## Requirements
 
@@ -33,7 +33,7 @@ The following mediation adapters and media types are supported:
 
 ## Install mediation adapters
 
-Use Swift Package Manager to add one or both mediation adapter packages. Each package declares compatible iOS SDK and third-party network SDK dependencies, which Swift Package Manager resolves automatically.
+Use Swift Package Manager to add the mediation adapter packages you need. Each package declares compatible iOS SDK and third-party network SDK dependencies, which Swift Package Manager resolves automatically.
 
 For Google AdMob or Google Ad Manager, add the following package and select the `ANGoogleAdapter` product:
 
@@ -41,7 +41,7 @@ For Google AdMob or Google Ad Manager, add the following package and select the 
 https://github.com/appnexus/mobile-sdk-ios-mediation-google
 ```
 
-For SmartAdServer, add the following package and select the `ANSmartAdapter` product:
+For existing SmartAdServer integrations only, add the following deprecated package and select the `ANSmartAdapter` product:
 
 ```text
 https://github.com/appnexus/mobile-sdk-ios-mediation-smartadserver
@@ -182,7 +182,9 @@ func adRequest(_ request: ANNativeAdRequest, didReceive response: ANNativeAdResp
 
 ## SmartAdServer
 
-The SmartAdServer adapter doesn't require additional configuration after you add its package dependency.
+The Smart Ad Server mediation SDK is deprecated. iOS SDK v9.15.x is the last release series for which it will be published. Starting with iOS SDK v10.0.0, the Smart Ad Server mediation SDK will no longer be published, updated, or supported. The integration instructions are retained for existing integrations only.
+
+For existing integrations, the SmartAdServer adapter doesn't require additional configuration after you add its package dependency.
 
 ## Custom mediation networks
 

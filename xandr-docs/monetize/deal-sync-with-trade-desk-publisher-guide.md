@@ -1,59 +1,70 @@
 ---
-title: Microsoft Monetize - Publisher Guide for Deal Sync with Trade Desk 
-description: Learn how a seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers is possible. This page also covers best practices to be followed for deal set up.  
-ms.date: 1/14/2026
+title: Microsoft Monetize - Publisher Guide for Deal Sync with The Trade Desk
+description: Learn how a seamless deal transaction between Microsoft Advertising Monetize publishers and The Trade Desk buyers is possible. This page also covers best practices to be followed for deal set up.
+ms.date: 11/12/2026
 ms.service: publisher-monetization
 ms.subservice: microsoft-monetize
 ms.author: shsrinivasan
 ---
 
 
-# Microsoft Monetize - Publisher guide for deal Sync with Trade Desk 
+# Microsoft Monetize - Publisher guide for deal Sync with The Trade Desk 
 
 <!-- > [!NOTE]
 > This feature is in **Beta**. It is only available to select clients. Please consult your Account Manager if you'd like to be added to the beta test. -->
 
 ## Overview
 
-Microsoft Advertising's integration with the Trade Desk Proposal API automatically synchronizes the deals created in Microsoft Monetize with the Trade Desk system. This enables a more seamless deal transaction between Microsoft Advertising Monetize publishers and Trade Desk buyers.
+Microsoft Advertising's integration with The Trade Desk Price Discovery and Provisioning API automatically synchronizes the deals created in Microsoft Monetize with The Trade Desk system. This enables a more seamless deal transaction between Microsoft Advertising Monetize publishers and The Trade Desk buyers.
 
 <!-- > [!IMPORTANT]
-> You can manually set up deals with Trade Desk, but this requires buyers to manually register publisher deals in the Trade Desk user interface. (Details of the manual process can be found in [Trade Desk Buying Guide](../bidders/trade-desk-buying-guide.md)) The manual process of setting up deals can result in delays and issues due to human error. -->
+> You can manually set up deals with The Trade Desk, but this requires buyers to manually register publisher deals in The Trade Desk user interface. (Details of the manual process can be found in [The Trade Desk Buying Guide](../bidders/trade-desk-buying-guide.md)) The manual process of setting up deals can result in delays and issues due to human error. -->
 
 The key benefits of using an automatic synchronization process are:
 
-- Seamless deal set up process with Trade Desk buyers.
-- Elimination of requirement for buyers to manually register deals in the Trade Desk UI.
-- Automatic deal synchronization of deals and deal updates from Microsoft Monetize to Trade Desk (with some restrictions, which are explained below).
+- Seamless deal set up process with The Trade Desk buyers.
+- Elimination of requirement for buyers to manually register deals in The Trade Desk UI.
+- Automatic deal synchronization of deals and deal updates from Microsoft Monetize to The Trade Desk (with some restrictions, which are explained below).
 
 ## Process
 
 **New deal creation**
 
-New seat ID deals created in the Microsoft Monetize UI automatically get uploaded to Trade Desk systems for buyer acceptance, as shown here:
+New seat ID deals created in the Microsoft Monetize UI automatically get uploaded to The Trade Desk systems for buyer acceptance, as shown here:
 
 :::image type="content" source="media/image-a.png" alt-text="Screenshot of new deal created.":::
 
 **Deal update**
 
-Updates to newly created deals (post deal sync enablement) automatically get uploaded to Trade Desk systems for buyer acceptance:
+Updates to existing deals automatically get uploaded to The Trade Desk systems for buyer acceptance:
 
 :::image type="content" source="media/imagee-b.png" alt-text="Diagram of deal update.":::  
 
+Updates to the following fields trigger a new deal revision and initiate a re-sync:
+
+- Deal name
+- Start date
+- End date
+- Deal price
+- Media type
+- Device targeting
+- Creative sizes
+
+If any of these fields are updated, the buyer must review and re-accept the revised deal in The Trade Desk UI. We recommend notifying the buyer when making these changes. The only exception is updates to the deal name, which are automatically accepted and don't require buyer approval.
+
 **Frequency of deal sync**
 
-- Deals will take up to 3 hours to sync with Trade desk systems.
-- New deals will be uploaded up to 3 hours after being created.
-- Updates to existing deals will be will be uploaded up to 3 hours after updates are done (depending on when the last sync script ran).
+- New deals will take up to 3 hours to sync with The Trade Desk systems.
+- Updates to existing deals will be uploaded up to 3 hours after updates are done (depending on when the last sync script ran).
 - Buyer acceptance statuses will take a few hours to properly sync.
 
 <!-- ## What is changing
 
 While there are no changes to how a publisher create deals in Microsoft Monetize UI, publishers should be aware of which type of deals are automatically synchronized and which deals still continue to follow the manual workflow.
 
-- All new deals created in the alpha are synchronized with Trade Desk, with the exceptions of:
-  - Deals created with a Trade Desk Buyer Member ID instead of a Bidder Seat ID Trade Desk Partner ID.
-  - Deals created prior to the seller's enablement of deal sync with Trade Desk. -->
+- All new deals created in the alpha are synchronized with The Trade Desk, with the exceptions of:
+  - Deals created with a Buyer Member ID for The Trade Desk instead of a Bidder Seat ID (The Trade Desk Partner ID).
+  - Deals created prior to the seller's enablement of deal sync with The Trade Desk. -->
 
 ## Checking deal sync status
 
@@ -71,19 +82,20 @@ The following sync status labels may appear:
 
 You can also filter deals by sync status using the **Filters** option at the top of the Deal screen, next to the search bar.
 
-## Best practices for deal set up
+## Best practices for deal set up with The Trade Desk
 
 **1:1 Deals and exchange curated deals (ECDs)**
 
-- Deals must be set up with Trade Desk partner IDs. This deal synchronizing process does not support member ID deals.
+- Deals must be set up with The Trade Desk partner IDs. This deal synchronizing process does not support member ID deals.
 - Once a partner ID is selected for a deal, it cannot be changed in subsequent updates.
-- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the Trade Desk UI.
+- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in The Trade Desk UI.
 
 **Programmatic guaranteed (PG) deals**
 
-- Deals must be set up with Trade Desk partner IDs. This deal sync process does not support member ID deals.
-- You cannot change the Trade Desk partner ID once the deal is created.
+- PG deals can have a maximum flight duration of two years. If this limit is exceeded, the deal sync fails and returns an error.
+- Deals must be set up with The Trade Desk partner IDs. This deal sync process does not support member ID deals.
+- You cannot change The Trade Desk partner ID once the deal is created.
 - The deal must have only **ONE** declared media type (video, banner, native, audio).
 - Banner/Display PG deals must have at least one allowed creative size declared.
-- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in the Trade Desk UI.
+- Always have active communication with the buyer during the deal negotiation and setup process to ensure the buyer knows to approve the deal in The Trade Desk UI.
 

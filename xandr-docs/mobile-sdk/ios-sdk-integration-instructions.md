@@ -2,10 +2,10 @@
 title: iOS SDK integration instructions
 description: Learn how to integrate the current iOS SDK into your Xcode project using Swift Package Manager or alternative installation methods.
 ms.custom: ios-sdk
-ms.date: 09/03/2026
+ms.date: 11/05/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
-ms.author: shsrinivasan
+ms.author: subramaniank
 ---
 
 # iOS SDK integration instructions
@@ -20,7 +20,7 @@ This article describes how to integrate iOS SDK v9.x into your Xcode project. Fo
 ## Installation
 
 > [!IMPORTANT]
-> Swift Package Manager (SPM) is the primary and recommended method for integrating the iOS SDK. CocoaPods support will be discontinued in the next SDK release.
+> Swift Package Manager (SPM) is the primary and recommended method for integrating the iOS SDK. CocoaPods support will be discontinued in SDK v10.0.0.
 
 Choose an installation method:
 
@@ -60,14 +60,14 @@ Use these methods only when Swift Package Manager doesn't meet your project's re
 
 #### XCFramework
 
-Download [iOS SDK v9.14.0](https://adsdk.bing.net/mobile/ios/releases/9.14.0/static/sdks.zip). The ZIP file contains the following frameworks and resource bundle. Use **AppNexusSDK** for a general integration.
+Download [iOS SDK v9.15.0](https://adsdk.bing.net/mobile/ios/releases/9.15.0/static/sdks.zip). The ZIP file contains the following frameworks and resource bundle. Use **AppNexusSDK** for a general integration.
 
 | Framework | Description |
 |---|---|
 | AppNexusSDK | Supports all ad types. |
 | AppNexusNativeSDK | This framework only supports native ads on **iOS**. |
 | AppNexusNativeMacOSSDK | This framework only supports native ads on **macOS**. |
-| ANSmartAdapter | A mediation adapter for Smart Ad Server. |
+| ANSmartAdapter | A deprecated mediation adapter for Smart Ad Server. For details, see [SmartAdServer mediation](mediate-with-ios.md#smartadserver). |
 | ANGoogleAdapter | A mediation adapter for Google's AdMob. |
 | ANFacebookCSRAdapter | A client side rendering adapter for Facebook Audience Network. |
 | ANVungleAdapter | A mediation adapter for Vungle. |
@@ -132,7 +132,7 @@ If you are unfamiliar with Carthage, review the [Carthage documentation](https:/
 #### CocoaPods
 
 > [!WARNING]
-> CocoaPods support will be discontinued in the next SDK release. Use Swift Package Manager for new integrations.
+> CocoaPods support will be discontinued in SDK v10.0.0. Use Swift Package Manager for new integrations.
 
 If you are unfamiliar with CocoaPods, review the [CocoaPods documentation](https://cocoapods.org/). After installing CocoaPods, follow these steps:
 

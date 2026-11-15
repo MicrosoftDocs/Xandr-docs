@@ -2,7 +2,7 @@
 title: iOS SDK Release Notes
 description: Explore iOS SDK releases, discover release versions, announcements, improvements, bug fixes, deprecated APIs, in the latest release notes.
 ms.custom: ios-sdk
-ms.date: 11/10/2026
+ms.date: 11/5/2026
 ms.service: publisher-monetization
 ms.subservice: mobile-sdk
 ms.author: subramaniank
@@ -19,8 +19,6 @@ ms.author: subramaniank
 ### Announcements
 
 This will be the final major release in the SDK v9.x.x series. The next major release will be SDK v10.0.0.
-
-The Smart Ad Server mediation SDK is being deprecated and will no longer be supported. For details, see [SmartAdServer mediation](mediate-with-ios.md#smartadserver).
 
 SDK v10.0.0 and later releases will not be available through CocoaPods. SDK v10.0.0 will support Swift Package Manager (SPM), Carthage, and direct downloads. Starting with SDK v10.0.0, the iOS SDK and mediation adapters will be distributed as separate packages for SPM integrations. The [main iOS SDK SPM package](https://github.com/appnexus/mobile-sdk-ios-spm) will include only the iOS SDK, while each mediation adapter will be available through its own SPM package.
 

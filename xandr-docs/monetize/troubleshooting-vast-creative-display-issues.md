@@ -15,13 +15,13 @@ Currently, our support for VAST creatives is limited to third-party URL type cre
 
 When placing the URL in a browser, it should return VAST compliant XML as per IAB Standards.
 
-If the response is empty, the URL may no longer be live. Contact your third-party hosting service to confirm.
+Check the HTTP status and response body for the affected request. An empty body and a VAST document with no `<Ad>` element have different meanings. An ad server can return HTTP 200 with a valid, empty VAST document when it has no eligible ad. Confirm expected fill and targeting with the hosting service. If the response contains a `<Wrapper>`, follow its `<VASTAdTagURI>` and check the next response.
 
 If otherwise malformed, the URL may no longer be returning the correct content, or a change was made on the third party end. If this has changed since the creation of the creative, you can re-run the [VAST Check](vast-check.md) to clarify any issues. Contact your third party hosting service with this information.
 
 ## Test your URL in a VAST validator
 
-Place the URL in a third party VAST validator (such as [JWPlayer](http://demo.jwplayer.com/ad-tester/)). Confirm with your third party adserver whether content will be returned in both Flash and HTML5 player types, and test accordingly.
+For an XML error, validate a sanitized copy of the captured response with a tool such as [VASTlint](https://vastlint.org/validate/) and include the affected element in your report to the ad server. To check playback, open a QA tag URL in the [JWX Ad Tester](https://developer-tools.jwplayer.com/ad-tester) and select the ad client used by your integration.
 
 :::image type="content" source="media/third-party-vast-validator.png" alt-text="Screenshot of JW Player Ad Tester that shows the ad tag field.":::
 
@@ -34,7 +34,7 @@ If no ad is returned or any errors are seen, reach out to your third party hosti
 :::image type="content" source="media/vast-validation-error.png" alt-text="Screenshot of JW Player Ad Tester that shows the ad events log for a failed validation.":::
 
 > [!NOTE]
-> Since these are in-stream video creatives, they must be delivered before, between, or after another video, therefore each VAST validator will have its own video content that will play regardless of whether an ad has served. Each validator will have an ad events log that will confirm whether your ad has been delivered, or if there were any errors.
+> The test player can play its content video even when no ad plays. Check its ad events log to see whether an ad started or the player reported an error.
 
 ## Correct URL but creative is not displaying/displaying incorrectly in Monetize
 
